@@ -1,0 +1,565 @@
+{
+  "spec": {
+    "title": "MathML Core",
+    "url": "https://w3c.github.io/mathml-core/"
+  },
+  "algorithms": [
+    {
+      "html": "Boxes used for MathML elements rely on several parameters in order to perform layout\n            in a way that is compatible with CSS but also to take into account\n            very accurate positions and spacing within math formulas:",
+      "rationale": "block",
+      "steps": [
+        {
+          "html": "Inline metrics.\n              <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#min-content-inline-size\">min-content inline size</a>,\n              <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-inline-size\">max-content inline size</a> and\n              <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a>\n              from CSS. See <a href=\"https://w3c.github.io/mathml-core/#box-model-generic\" class=\"fig-ref\" title=\"Generic Box Model for MathML elements\">Figure <bdi class=\"\">1</bdi></a>.\n              <figure id=\"box-model-generic\">\n                <img src=\"https://w3c.github.io/mathml-core/figures/horizontal-tb-ltr.svg\">\n                <figcaption><a class=\"self-link\" href=\"https://w3c.github.io/mathml-core/#box-model-generic\">Figure <bdi class=\"figno\">1</bdi></a> <span class=\"fig-title\">Generic Box Model for MathML elements</span></figcaption>\n              </figure>"
+        },
+        {
+          "html": "<p>\n                Block metrics.\n                The <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#block-size\">block size</a>,\n                <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-align-3/#first-baseline-set\">first baseline set</a>\n                and\n                <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-align-3/#last-baseline-set\">last baseline set</a>.\n                The following <a data-type=\"dfn\" href=\"https://www.w3.org/TR/SVG/text.html#TermBaseline\">baselines</a> are defined for MathML boxes:\n              </p>\n              \n              \n              Unless specified otherwise, the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-align-3/#last-baseline-set\">last baseline set</a> is equal to the\n              <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-align-3/#first-baseline-set\">first baseline set</a> for MathML boxes.",
+          "ignored": [
+            "The alphabetic baseline which typically aligns with the bottom of uppercase Latin glyphs. The algebraic distance from the alphabetic baseline to the line-over edge of the box is called the line-ascent. The algebraic distance from the line-under edge to the alphabetic baseline of the box is called the line-descent. The mathematical baseline, also called math axis, which typically aligns with the fraction bar, middle of fences and binary operators. It is shifted away from the alphabetic baseline by AxisHeight towards the line-over. The ink-over baseline, indicating the line-over theorical limit of the math content drawn, excluding any extra space. If not specified, it is aligned with the line-over edge. The algebraic distance from the alphabetic baseline to the ink-over baseline is called the ink line-ascent. The ink-under baseline, indicating the line-under theorical limit of the math content drawn, excluding any extra space. If not specified, it is aligned with the line-under edge. The algebraic distance from the ink-under baseline to the alphabetic baseline is called the ink line-descent."
+          ]
+        },
+        {
+          "html": "An optional <dfn id=\"dfn-italic-correction\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">italic correction</dfn>\n              which provides a measure of how much the text of a box is\n              slanted along the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-axis\">inline axis</a>.\n              See <a href=\"https://w3c.github.io/mathml-core/#figure-italic-correction\" class=\"fig-ref\" title=\"Examples of italic correction for italic f and large integral\">Figure <bdi class=\"\">2</bdi></a>.\n              <figure id=\"figure-italic-correction\">\n                <img src=\"https://w3c.github.io/mathml-core/figures/italcorr.svg\">\n                <figcaption><a class=\"self-link\" href=\"https://w3c.github.io/mathml-core/#figure-italic-correction\">Figure <bdi class=\"figno\">2</bdi></a> <span class=\"fig-title\">Examples of italic correction for italic f and large integral</span></figcaption>\n              </figure>\n              If it is requested during calculation of\n              <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#min-content-inline-size\">min-content inline size</a> and\n              <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-inline-size\">max-content inline size</a> or during layout\n              then 0 is used as a fallback value."
+        },
+        {
+          "html": "An optional <dfn id=\"dfn-top-accent-attachment\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">top accent attachment</dfn>\n              which provides a reference offset on the\n              <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-axis\">inline axis</a> of a box that should be used when\n              positioning that box as an accent.\n              See <a href=\"https://w3c.github.io/mathml-core/#figure-top-accent-attachment\" class=\"fig-ref\" title=\"Example of top accent attachment for a circumflex accent\">Figure <bdi class=\"\">3</bdi></a>.\n              <figure id=\"figure-top-accent-attachment\">\n                <img src=\"https://w3c.github.io/mathml-core/figures/topaccent.svg\">\n                <figcaption><a class=\"self-link\" href=\"https://w3c.github.io/mathml-core/#figure-top-accent-attachment\">Figure <bdi class=\"figno\">3</bdi></a> <span class=\"fig-title\">Example of top accent attachment for a circumflex accent</span></figcaption>\n              </figure>\n              If it is requested during calculation of\n              <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#min-content-inline-size\">min-content inline size</a>\n              (respectively <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-inline-size\">max-content inline size</a>) then half the\n              <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#min-content-inline-size\">min-content inline size</a> (respectively <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-inline-size\">max-content inline size</a>) is used as a\n              fallback value.\n              If it is requested during layout then half the\n              inline size of the box is used as a fallback value."
+        }
+      ]
+    },
+    {
+      "name": "embellished operator/core operator",
+      "href": "https://w3c.github.io/mathml-core/#dfn-core-operator",
+      "html": "The <dfn data-dfn-for=\"embellished operator\" id=\"dfn-core-operator\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">core operator</dfn> of an <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-4\">embellished operator</a>\n              is the <code>&lt;mo&gt;</code> element defined recursively as\n              follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "The core operator of an <code><a data-link-type=\"element\" href=\"https://w3c.github.io/mathml-core/#dfn-mo\" class=\"internalDFN\" id=\"ref-for-dfn-mo-4\">mo</a></code>\n                element; is the element itself."
+        },
+        {
+          "html": "The core operator of an embellished\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-scripted-elements\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-scripted-elements-2\">scripted element</a> or\n                <code><a data-link-type=\"element\" href=\"https://w3c.github.io/mathml-core/#dfn-mfrac\" class=\"internalDFN\" id=\"ref-for-dfn-mfrac-3\">mfrac</a></code>\n                element is the core operator of its first <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> child."
+        },
+        {
+          "html": "The core operator of an embellished\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-grouping-elements\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-grouping-elements-2\">grouping element</a> or <code><a data-link-type=\"element\" href=\"https://w3c.github.io/mathml-core/#dfn-mpadded\" class=\"internalDFN\" id=\"ref-for-dfn-mpadded-3\">mpadded</a></code>\n                is the core operator of its unique <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-5\">embellished operator</a>\n                <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> child."
+        }
+      ]
+    },
+    {
+      "name": "algorithm for determining the form of an embellished operator",
+      "href": "https://w3c.github.io/mathml-core/#dfn-algorithm-for-determining-the-form-of-an-embellished-operator",
+      "html": "The <dfn class=\"abstract-op\" data-dfn-type=\"abstract-op\" id=\"dfn-algorithm-for-determining-the-form-of-an-embellished-operator\" tabindex=\"0\" aria-haspopup=\"dialog\" data-export=\"\">algorithm for determining the <code>form</code> of an <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-9\">embellished operator</a></dfn> is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the <code>form</code> attribute is present and valid\n                on the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-core-operator\" class=\"internalDFN\" id=\"ref-for-dfn-core-operator-4\">core operator</a>, then its\n                <a data-lt=\"ASCII lowercase\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\">ASCII lowercased value</a>\n                is used."
+        },
+        {
+          "html": "If the embellished operator is the first <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> child of a\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-grouping-elements\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-grouping-elements-4\">grouping element</a>,\n                <code><a data-link-type=\"element\" href=\"https://w3c.github.io/mathml-core/#dfn-mpadded\" class=\"internalDFN\" id=\"ref-for-dfn-mpadded-4\">mpadded</a></code> or\n                <code><a data-link-type=\"element\" href=\"https://w3c.github.io/mathml-core/#dfn-msqrt\" class=\"internalDFN\" id=\"ref-for-dfn-msqrt-4\">msqrt</a></code> with more than one <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> child\n                (ignoring all <a href=\"https://w3c.github.io/mathml-core/#dfn-space-like\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-space-like-2\">space-like</a> children) then it has\n                form <code>prefix</code>."
+        },
+        {
+          "html": "Or, if the embellished operator is the last <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> child of\n                a\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-grouping-elements\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-grouping-elements-5\">grouping element</a>,\n                <code><a data-link-type=\"element\" href=\"https://w3c.github.io/mathml-core/#dfn-mpadded\" class=\"internalDFN\" id=\"ref-for-dfn-mpadded-5\">mpadded</a></code> or\n                <code><a data-link-type=\"element\" href=\"https://w3c.github.io/mathml-core/#dfn-msqrt\" class=\"internalDFN\" id=\"ref-for-dfn-msqrt-5\">msqrt</a></code>\n                with more than one <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> child\n                (ignoring all <a href=\"https://w3c.github.io/mathml-core/#dfn-space-like\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-space-like-3\">space-like</a> children) then it has\n                form <code>postfix</code>."
+        },
+        {
+          "html": "Or, if the embellished operator is an <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> child of a\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-scripted-elements\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-scripted-elements-3\">scripted element</a>, other than the first <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a>\n                child, then it has form <code>postfix</code>."
+        },
+        {
+          "html": "Otherwise, the embellished operator has form\n                <code>infix</code>."
+        }
+      ]
+    },
+    {
+      "name": "algorithm for determining the properties of an embellished operator",
+      "href": "https://w3c.github.io/mathml-core/#algorithm-for-determining-the-properties-of-an-embellished-operator",
+      "html": "The <dfn id=\"algorithm-for-determining-the-properties-of-an-embellished-operator\" class=\"abstract-op\" data-dfn-type=\"abstract-op\" tabindex=\"0\" aria-haspopup=\"dialog\" data-export=\"\">algorithm for determining the properties of\n              an <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-14\">embellished operator</a></dfn> is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the corresponding\n                <code>stretchy</code>,\n                <code>symmetric</code>,\n                <code>largeop</code>,\n                <code>movablelimits</code>,\n                <code>lspace</code>,\n                <code>rspace</code>,\n                <code>maxsize</code> or\n                <code>minsize</code>\n                attribute is present and valid\n                on the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-core-operator\" class=\"internalDFN\" id=\"ref-for-dfn-core-operator-5\">core operator</a>, then the\n                <a data-lt=\"ASCII lowercase\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\">ASCII lowercased value</a>\n                of this property is used."
+        },
+        {
+          "html": "Otherwise, run the <a href=\"https://w3c.github.io/mathml-core/#dfn-algorithm-for-determining-the-form-of-an-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-algorithm-for-determining-the-form-of-an-embellished-operator-1\">algorithm for determining the <code>form</code> of an embellished operator</a>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-core-operator\" class=\"internalDFN\" id=\"ref-for-dfn-core-operator-6\">core operator</a> contains only text\n                content <code>Content</code>, then set <code>Category</code>\n                to the result of the\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-algorithm-to-determine-the-category-of-an-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-algorithm-to-determine-the-category-of-an-operator-1\">algorithm to determine the category of an operator</a>\n                <code>(Content, Form)</code>\n                where <code>Form</code> is the <a data-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\"><code>form</code></a>\n                calculated at the previous step."
+        },
+        {
+          "html": "If <code>Category</code> is <code>Default</code> and\n                the <a data-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\"><code>form</code></a>\n                of <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-15\">embellished operator</a> was not explicitly specified\n                as an attribute on its <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-core-operator\" class=\"internalDFN\" id=\"ref-for-dfn-core-operator-7\">core operator</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>Category</code> to the result of the\n                  <a href=\"https://w3c.github.io/mathml-core/#dfn-algorithm-to-determine-the-category-of-an-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-algorithm-to-determine-the-category-of-an-operator-2\">algorithm to determine the category of an operator</a>\n                  <code>(Content, Form)</code> where <code>Form</code> is\n                  <code>infix</code>."
+            },
+            {
+              "html": "If <code>Category</code> is <code>Default</code>, then\n                    run the algorithm again with <code>Form</code> set to\n                    <code>postfix</code>."
+            },
+            {
+              "html": "If <code>Category</code> is <code>Default</code>, then\n                    run the algorithm again with <code>Form</code> set to\n                    <code>prefix</code>."
+            }
+          ]
+        },
+        {
+          "html": "Run the\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-algorithm-to-set-the-properties-of-an-operator-from-its-category\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-algorithm-to-set-the-properties-of-an-operator-from-its-category-1\">algorithm to set the properties of an operator from its\n                category</a> <code>Category</code>."
+        }
+      ]
+    },
+    {
+      "html": "Operators are laid out as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the content of the <code>&lt;mo&gt;</code> element is not\n                made\n                of a single character <code>c</code> then fall back to the\n                layout algorithm of <a href=\"https://w3c.github.io/mathml-core/#layout-of-mtext\" class=\"sec-ref\"><bdi class=\"secno\">3.2.1.1 </bdi>Layout of <code>&lt;mtext&gt;</code></a>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-stretch-axis\" class=\"internalDFN\" id=\"ref-for-dfn-stretch-axis-1\">stretch axis</a> of the operator is inline:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If it is not possible to <a href=\"https://w3c.github.io/mathml-core/#dfn-shape-a-stretchy-glyph\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shape-a-stretchy-glyph-1\">shape a stretchy glyph</a>\n                        corresponding to <code>c</code> in the inline direction\n                        with the\n                        <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-fonts-4/#first-available-font\">first available font</a>\n                        then fall back to the\n                        layout algorithm of <a href=\"https://w3c.github.io/mathml-core/#layout-of-mtext\" class=\"sec-ref\"><bdi class=\"secno\">3.2.1.1 </bdi>Layout of <code>&lt;mtext&gt;</code></a>."
+            },
+            {
+              "html": "The <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#min-content-inline-size\">min-content inline size</a> and\n                        <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-inline-size\">max-content inline size</a> of the math content\n                        are set to the one obtained by the layout algorithm of\n                        <a href=\"https://w3c.github.io/mathml-core/#layout-of-mtext\" class=\"sec-ref\"><bdi class=\"secno\">3.2.1.1 </bdi>Layout of <code>&lt;mtext&gt;</code></a>."
+            },
+            {
+              "html": "If there is not any\n                        <a href=\"https://w3c.github.io/mathml-core/#dfn-inline-stretch-size-constraint\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inline-stretch-size-constraint-1\">inline stretch size constraint</a>\n                        <code>T<sub>inline</sub></code>\n                        then\n                        fall back to the\n                        layout algorithm of <a href=\"https://w3c.github.io/mathml-core/#layout-of-mtext\" class=\"sec-ref\"><bdi class=\"secno\">3.2.1.1 </bdi>Layout of <code>&lt;mtext&gt;</code></a>."
+            },
+            {
+              "html": "The <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> and (ink) block metrics of the math content\n                        are given by algorithm to\n                        <a href=\"https://w3c.github.io/mathml-core/#dfn-shape-a-stretchy-glyph\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shape-a-stretchy-glyph-2\">shape a stretchy glyph</a> to <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-dimension\">inline dimension</a>\n                        <code>T<sub>inline</sub></code>."
+            },
+            {
+              "html": "The painting of the operator is performed by the\n                        algorithm\n                        to <a href=\"https://w3c.github.io/mathml-core/#dfn-shape-a-stretchy-glyph\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shape-a-stretchy-glyph-3\">shape a stretchy glyph</a>\n                        stretched to <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-dimension\">inline dimension</a>\n                        <code>T<sub>inline</sub></code> and\n                        at position determined by the previous box metrics."
+            }
+          ],
+          "additional": [
+            {
+              "html": "Otherwise, the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-stretch-axis\" class=\"internalDFN\" id=\"ref-for-dfn-stretch-axis-2\">stretch axis</a> of the operator is\n                    block. The following steps are performed:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If it is not possible to <a href=\"https://w3c.github.io/mathml-core/#dfn-shape-a-stretchy-glyph\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shape-a-stretchy-glyph-4\">shape a stretchy glyph</a>\n                        corresponding to <code>c</code> in the block direction\n                        with the\n                        <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-fonts-4/#first-available-font\">first available font</a>\n                        then fall back to the\n                        layout algorithm of <a href=\"https://w3c.github.io/mathml-core/#layout-of-mtext\" class=\"sec-ref\"><bdi class=\"secno\">3.2.1.1 </bdi>Layout of <code>&lt;mtext&gt;</code></a>."
+                },
+                {
+                  "html": "The <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#min-content-inline-size\">min-content inline size</a> and\n                        <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-inline-size\">max-content inline size</a> of the math content\n                        are set to the\n                        <a href=\"https://w3c.github.io/mathml-core/#dfn-preferred-inline-size-of-a-glyph-stretched-along-the-block-axis\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-preferred-inline-size-of-a-glyph-stretched-along-the-block-axis-1\">preferred inline size of a glyph stretched\n                          along the block axis</a>."
+                },
+                {
+                  "html": "If there is not any\n                        <a href=\"https://w3c.github.io/mathml-core/#dfn-block-stretch-size-constraint\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-block-stretch-size-constraint-1\">block stretch size constraint</a>\n                        <code>(U<sub>ascent</sub>, U<sub>descent</sub>)</code>\n                        then\n                        fall back to the\n                        layout algorithm of <a href=\"https://w3c.github.io/mathml-core/#layout-of-mtext\" class=\"sec-ref\"><bdi class=\"secno\">3.2.1.1 </bdi>Layout of <code>&lt;mtext&gt;</code></a>."
+                },
+                {
+                  "html": "If the operator has the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-symmetric\" class=\"internalDFN\" id=\"ref-for-dfn-symmetric-2\"><code>symmetric</code></a> property\n                        then set the target sizes\n                        <code>T<sub>ascent</sub></code> and\n                        <code>T<sub>descent</sub></code> to\n                        <code>S<sub>ascent</sub></code> and\n                        <code>S<sub>descent</sub></code> respectively:\n                        <ul>\n                          <li>\n                            <code>S<sub>ascent</sub></code> =\n                            max(\n                            <code>U<sub>ascent</sub></code> − <a href=\"https://w3c.github.io/mathml-core/#dfn-axisheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-axisheight-2\">AxisHeight</a>,\n                            <code>U<sub>descent</sub></code> + <a href=\"https://w3c.github.io/mathml-core/#dfn-axisheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-axisheight-3\">AxisHeight</a>\n                            ) + <a href=\"https://w3c.github.io/mathml-core/#dfn-axisheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-axisheight-4\">AxisHeight</a>\n                          </li>\n                          <li>\n                            <code>S<sub>descent</sub></code> =\n                            max(\n                            <code>U<sub>ascent</sub></code> − <a href=\"https://w3c.github.io/mathml-core/#dfn-axisheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-axisheight-5\">AxisHeight</a>,\n                            <code>U<sub>descent</sub></code> + <a href=\"https://w3c.github.io/mathml-core/#dfn-axisheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-axisheight-6\">AxisHeight</a>\n                            ) − <a href=\"https://w3c.github.io/mathml-core/#dfn-axisheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-axisheight-7\">AxisHeight</a>\n                          </li>\n                        </ul>\n\n                        Otherwise set them to\n                        <code>U<sub>ascent</sub></code> and\n                        <code>U<sub>descent</sub></code> respectively."
+                },
+                {
+                  "html": "Let <code>minsize</code> and <code>maxsize</code>\n                        be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-minsize\" class=\"internalDFN\" id=\"ref-for-dfn-minsize-2\"><code>minsize</code></a> and <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-maxsize\" class=\"internalDFN\" id=\"ref-for-dfn-maxsize-1\"><code>maxsize</code></a> properties on the\n                        operator. Percentage values are interpreted relative\n                        to the height of the glyph for <code>c</code>.\n                        Let <code>T</code> =\n                        <code>T<sub>ascent</sub></code> +\n                        <code>T<sub>descent</sub></code> be the target size.\n                        If <code>minsize</code> &lt; 0 then set <code>minsize</code>\n                        to 0.\n                        If <code>maxsize</code> &lt; <code>minsize</code> then\n                        set <code>maxsize</code> to <code>minsize</code>.\n                        With 0 ≤ <code>minsize</code> ≤ <code>maxsize</code>:\n                        <ul>\n                          <li>\n                            If <code>T</code> ≤ 0 then set\n                            <code>T<sub>ascent</sub></code> to\n                            <code>minsize</code> / 2 + <a href=\"https://w3c.github.io/mathml-core/#dfn-axisheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-axisheight-10\">AxisHeight</a> and\n                            then set <code>T<sub>descent</sub></code>\n                            to <code>minsize</code> −\n                            <code>T<sub>ascent</sub></code>.                            \n                          </li>\n                          <li>\n                            Otherwise, if\n                            0 &lt; <code>T</code> &lt; <code>minsize</code>\n                            then set <code>T<sub>ascent</sub></code> to\n                            max(0, (<code>T<sub>ascent</sub></code> − <a href=\"https://w3c.github.io/mathml-core/#dfn-axisheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-axisheight-11\">AxisHeight</a>) × <code>minsize</code> / <code>T</code> + <a href=\"https://w3c.github.io/mathml-core/#dfn-axisheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-axisheight-12\">AxisHeight</a>) and\n                            <code>T<sub>descent</sub></code>\n                            to <code>minsize</code> −\n                            <code>T<sub>ascent</sub></code>.\n                          </li>\n                          <li>\n                            Otherwise, if <code>maxsize</code> &lt; <code>T</code>\n                            then set <code>T<sub>ascent</sub></code> to\n                            max(0, (<code>T<sub>ascent</sub></code> − <a href=\"https://w3c.github.io/mathml-core/#dfn-axisheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-axisheight-13\">AxisHeight</a>) × <code>maxsize</code> / <code>T</code> + <a href=\"https://w3c.github.io/mathml-core/#dfn-axisheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-axisheight-14\">AxisHeight</a>) and\n                            <code>T<sub>descent</sub></code>\n                            to <code>maxsize</code> −\n                            <code>T<sub>ascent</sub></code>.\n                          </li>\n                        </ul>"
+                },
+                {
+                  "html": "The <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a>,\n                        <a href=\"https://w3c.github.io/mathml-core/#dfn-ink-line-ascent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ink-line-ascent-5\">ink line-ascent</a>,\n                        <a href=\"https://w3c.github.io/mathml-core/#dfn-ink-line-descent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ink-line-descent-5\">ink line-descent</a>,\n                        <a href=\"https://w3c.github.io/mathml-core/#dfn-line-ascent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-line-ascent-6\">line-ascent</a> and\n                        <a href=\"https://w3c.github.io/mathml-core/#dfn-line-descent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-line-descent-4\">line-descent</a>\n                        of the math content\n                        are obtained by the algorithm to\n                        <a href=\"https://w3c.github.io/mathml-core/#dfn-shape-a-stretchy-glyph\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shape-a-stretchy-glyph-5\">shape a stretchy glyph</a>\n                        to <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#block-dimension\">block dimension</a>\n                        <code>T<sub>ascent</sub></code> +\n                        <code>T<sub>descent</sub></code>.\n                        The <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the math content is the width of\n                        the stretchy glyph. The stretchy glyph is shifted\n                        towards the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#line-under\">line-under</a> by a value Δ so that its\n                        center aligns with the center of the target:\n                        the ink ascent of the math content is\n                        the ascent of the stretchy glyph − Δ\n                        and the ink descent of the math content is\n                        the descent of the stretchy glyph + Δ.\n                        These centers have coordinates \"½(ascent − descent)\"\n                        so Δ = [(ascent of stretchy glyph − descent of stretchy glyph) − (<code>T<sub>ascent</sub></code> − <code>T<sub>descent</sub></code>)] / 2."
+                },
+                {
+                  "html": "The painting of the operator is performed by the\n                        algorithm to <a href=\"https://w3c.github.io/mathml-core/#dfn-shape-a-stretchy-glyph\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shape-a-stretchy-glyph-6\">shape a stretchy glyph</a>\n                        stretched to <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#block-dimension\">block dimension</a>\n                        <code>T<sub>ascent</sub></code> +\n                        <code>T<sub>descent</sub></code>\n                        and at position determined by the previous box metrics\n                        shifted by Δ towards the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#line-over\">line-over</a>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If the operator has the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-largeop\" class=\"internalDFN\" id=\"ref-for-dfn-largeop-2\"><code>largeop</code></a> property and\n                if <a href=\"https://w3c.github.io/mathml-core/#propdef-math-style\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-propdef-math-style-3\"><code>math-style</code></a> on\n                the <code>&lt;mo&gt;</code> element is <code>normal</code>,\n                then:",
+          "rationale": "use",
+          "steps": [
+            {
+              "html": "<p>\n                      Use the\n                      <code>MathVariants</code>\n                      table to try and find a glyph of height at least\n                      <a href=\"https://w3c.github.io/mathml-core/#dfn-displayoperatorminheight\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-displayoperatorminheight-1\">DisplayOperatorMinHeight</a>.\n                      If none is found, fall back to the\n                      largest non-base glyph. If none is found, fall back to\n                      the layout algorithm of <a href=\"https://w3c.github.io/mathml-core/#layout-of-mtext\" class=\"sec-ref\"><bdi class=\"secno\">3.2.1.1 </bdi>Layout of <code>&lt;mtext&gt;</code></a>.\n                    </p>"
+            },
+            {
+              "html": "The <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#min-content-inline-size\">min-content inline size</a>,\n                    <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-inline-size\">max-content inline size</a>,\n                    <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> and block metrics of the math content\n                    are given by the\n                    glyph found."
+            },
+            {
+              "html": "Paint the glyph."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise fall back to the\n                layout algorithm of <a href=\"https://w3c.github.io/mathml-core/#layout-of-mtext\" class=\"sec-ref\"><bdi class=\"secno\">3.2.1.1 </bdi>Layout of <code>&lt;mtext&gt;</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "algorithm for stretching operators along the block axis",
+      "href": "https://w3c.github.io/mathml-core/#dfn-algorithm-for-stretching-operators-along-the-block-axis",
+      "html": "The <dfn class=\"abstract-op\" data-dfn-type=\"abstract-op\" id=\"dfn-algorithm-for-stretching-operators-along-the-block-axis\" tabindex=\"0\" aria-haspopup=\"dialog\" data-export=\"\">algorithm for stretching operators along the block axis</dfn>\n              consists in the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If there is a <a href=\"https://w3c.github.io/mathml-core/#dfn-block-stretch-size-constraint\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-block-stretch-size-constraint-2\">block stretch size constraint</a>\n                or an <a href=\"https://w3c.github.io/mathml-core/#dfn-inline-stretch-size-constraint\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inline-stretch-size-constraint-2\">inline stretch size constraint</a>\n                then the element being laid out is an\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-17\">embellished operator</a>. Lay out the one <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> child that\n                is an <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-18\">embellished operator</a>\n                with the same stretch size constraint and\n                all the other <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> children\n                without any stretch size constraint\n                and stop."
+        },
+        {
+          "html": "Otherwise,\n                split the list of <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> children into a first list\n                <code>L<sub>ToStretch</sub></code> containing\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-19\">embellished operators</a> with\n                a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-stretchy\" class=\"internalDFN\" id=\"ref-for-dfn-stretchy-3\"><code>stretchy</code></a> property and block <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-stretch-axis\" class=\"internalDFN\" id=\"ref-for-dfn-stretch-axis-3\">stretch axis</a>;\n                and a second list <code>L<sub>NotToStretch</sub></code>."
+        },
+        {
+          "html": "Perform layout without any stretch size constraint on\n                all the items of <code>L<sub>NotToStretch</sub></code>.\n                If <code>L<sub>ToStretch</sub></code> is empty then stop.\n                If <code>L<sub>NotToStretch</sub></code> is empty, perform\n                layout with <a href=\"https://w3c.github.io/mathml-core/#dfn-block-stretch-size-constraint\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-block-stretch-size-constraint-3\">block stretch size constraint</a>\n                <code>(0, 0)</code> for\n                all the items of <code>L<sub>ToStretch</sub></code>."
+        },
+        {
+          "html": "Calculate the unconstrained target sizes\n                <code>U<sub>ascent</sub></code>\n                and <code>U<sub>descent</sub></code> as respectively the maximum\n                ink ascent and maximum ink descent of the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin boxes</a> of\n                <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> children that\n                have been laid out in the previous step."
+        },
+        {
+          "html": "Lay out or relayout all the elements of\n                <code>L<sub>ToStretch</sub></code> with\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-block-stretch-size-constraint\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-block-stretch-size-constraint-4\">block stretch size constraint</a>\n                <code>(U<sub>ascent</sub>, U<sub>descent</sub>)</code>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#min-content-inline-size\">min-content inline size</a>\n              (respectively <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-inline-size\">max-content inline size</a>) are\n              calculated using the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <code>add-space</code> to true if\n                the box corresponds to a <code><a data-link-type=\"element\" href=\"https://w3c.github.io/mathml-core/#dfn-math\" class=\"internalDFN\" id=\"ref-for-dfn-math-7\">math</a></code> element\n                or is not an\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-22\">embellished operator</a>; and to false otherwise."
+        },
+        {
+          "html": "Set <code>inline-offset</code> to 0."
+        },
+        {
+          "html": "Set <code>previous-italic-correction</code> to 0."
+        },
+        {
+          "html": "For each <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> child:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the child is not <a href=\"https://w3c.github.io/mathml-core/#dfn-slanted\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-slanted-1\">slanted</a>, then increment\n                    <code>inline-offset</code> by\n                    <code>previous-italic-correction</code>."
+            },
+            {
+              "html": "If the child is an <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-23\">embellished operator</a>\n                    and <code>add-space</code> is true then\n                    increment <code>inline-offset</code> by\n                    its <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-lspace\" class=\"internalDFN\" id=\"ref-for-dfn-lspace-3\"><code>lspace</code></a> property."
+            },
+            {
+              "html": "Increment <code>inline-offset</code> by\n                    the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#min-content-inline-size\">min-content inline size</a>\n                    (respectively <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-inline-size\">max-content inline size</a>) of\n                    the child's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>."
+            },
+            {
+              "html": "If the child is <a href=\"https://w3c.github.io/mathml-core/#dfn-slanted\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-slanted-2\">slanted</a> then\n                    set <code>previous-italic-correction</code> to\n                    its <a href=\"https://w3c.github.io/mathml-core/#dfn-italic-correction\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-italic-correction-9\">italic correction</a>. Otherwise set it to 0."
+            },
+            {
+              "html": "If the child is an <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-24\">embellished operator</a>\n                    and <code>add-space</code> is true then\n                    increment <code>inline-offset</code> by\n                    its <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-rspace\" class=\"internalDFN\" id=\"ref-for-dfn-rspace-3\"><code>rspace</code></a> property."
+            }
+          ]
+        },
+        {
+          "html": "Increment <code>inline-offset</code> by\n                <code>previous-italic-correction</code>."
+        },
+        {
+          "html": "Return <code>inline-offset</code>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> children are positioned using the following\n              algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <code>add-space</code> to true if\n                the box corresponds to a <code><a data-link-type=\"element\" href=\"https://w3c.github.io/mathml-core/#dfn-math\" class=\"internalDFN\" id=\"ref-for-dfn-math-8\">math</a></code> element\n                or is not an\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-25\">embellished operator</a>; and to false otherwise."
+        },
+        {
+          "html": "Set <code>inline-offset</code> to 0."
+        },
+        {
+          "html": "Set <code>previous-italic-correction</code> to 0."
+        },
+        {
+          "html": "For each <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> child:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the child is not <a href=\"https://w3c.github.io/mathml-core/#dfn-slanted\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-slanted-3\">slanted</a>, then increment\n                    <code>inline-offset</code> by\n                    <code>previous-italic-correction</code>."
+            },
+            {
+              "html": "If the child is an <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-26\">embellished operator</a>\n                    and <code>add-space</code> is true then\n                    increment <code>inline-offset</code> by\n                    its <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-lspace\" class=\"internalDFN\" id=\"ref-for-dfn-lspace-4\"><code>lspace</code></a> property."
+            },
+            {
+              "html": "Set the <a href=\"https://w3c.github.io/mathml-core/#dfn-inline-offset\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inline-offset-3\">inline offset</a> of the child\n                    to <code>inline-offset</code> and its <a href=\"https://w3c.github.io/mathml-core/#dfn-block-offset\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-block-offset-3\">block offset</a> such\n                    that the <a href=\"https://w3c.github.io/mathml-core/#dfn-alphabetic-baseline\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-alphabetic-baseline-12\">alphabetic baseline</a> of the child is aligned with the <a href=\"https://w3c.github.io/mathml-core/#dfn-alphabetic-baseline\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-alphabetic-baseline-13\">alphabetic baseline</a>."
+            },
+            {
+              "html": "Increment <code>inline-offset</code> by\n                    the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the child's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>."
+            },
+            {
+              "html": "If the child is <a href=\"https://w3c.github.io/mathml-core/#dfn-slanted\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-slanted-4\">slanted</a> then\n                    set <code>previous-italic-correction</code> to\n                    its <a href=\"https://w3c.github.io/mathml-core/#dfn-italic-correction\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-italic-correction-10\">italic correction</a>. Otherwise set it to 0."
+            },
+            {
+              "html": "If the child is an <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-27\">embellished operator</a>\n                    and <code>add-space</code> is true then\n                    increment <code>inline-offset</code> by\n                    its <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-rspace\" class=\"internalDFN\" id=\"ref-for-dfn-rspace-4\"><code>rspace</code></a> property."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "<code>SubSuperGap</code> is the gap between the two scripts\n              along the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#block-axis\">block axis</a> and is defined by\n              (<code>SubShift</code> − the <a href=\"https://w3c.github.io/mathml-core/#dfn-ink-line-ascent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ink-line-ascent-14\">ink line-ascent</a> of the <a href=\"https://w3c.github.io/mathml-core/#dfn-msubsup-subscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-msubsup-subscript-1\">msubsup subscript</a>'s\n              <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>) +\n              (<code>SuperShift</code> − the <a href=\"https://w3c.github.io/mathml-core/#dfn-ink-line-descent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ink-line-descent-12\">ink line-descent</a> of the\n              <a href=\"https://w3c.github.io/mathml-core/#dfn-msubsup-superscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-msubsup-superscript-1\">msubsup superscript</a>'s <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>).\n              If <code>SubSuperGap</code> is not at least\n              <a href=\"https://w3c.github.io/mathml-core/#dfn-subsuperscriptgapmin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-subsuperscriptgapmin-1\">SubSuperscriptGapMin</a> then the following steps are\n              performed to ensure that the condition holds:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let Δ be <a href=\"https://w3c.github.io/mathml-core/#dfn-superscriptbottommaxwithsubscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-superscriptbottommaxwithsubscript-1\">SuperscriptBottomMaxWithSubscript</a>\n                − (<code>SuperShift</code> − the <a href=\"https://w3c.github.io/mathml-core/#dfn-ink-line-descent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ink-line-descent-13\">ink line-descent</a> of the\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-msubsup-superscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-msubsup-superscript-2\">msubsup superscript</a>'s <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>).\n                If Δ &gt; 0 then set Δ to the minimum between Δ set\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-subsuperscriptgapmin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-subsuperscriptgapmin-2\">SubSuperscriptGapMin</a> − <code>SubSuperGap</code> and\n                increase <code>SuperShift</code> (and so\n                <code>SubSuperGap</code> too) by Δ."
+        },
+        {
+          "html": "Let Δ be <a href=\"https://w3c.github.io/mathml-core/#dfn-subsuperscriptgapmin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-subsuperscriptgapmin-3\">SubSuperscriptGapMin</a> − <code>SubSuperGap</code>.\n                If Δ &gt; 0 then\n                increase <code>SubscriptShift</code> (and so\n                <code>SubSuperGap</code> too) by Δ."
+        }
+      ]
+    },
+    {
+      "name": "algorithm for stretching operators along the inline axis",
+      "href": "https://w3c.github.io/mathml-core/#dfn-algorithm-for-stretching-operators-along-the-inline-axis",
+      "html": "The <dfn class=\"abstract-op\" data-dfn-type=\"abstract-op\" id=\"dfn-algorithm-for-stretching-operators-along-the-inline-axis\" tabindex=\"0\" aria-haspopup=\"dialog\" data-export=\"\">algorithm for stretching operators along the inline\n                axis</dfn>\n              is as follows.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If there is an\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-inline-stretch-size-constraint\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inline-stretch-size-constraint-9\">inline stretch size constraint</a> or\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-block-stretch-size-constraint\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-block-stretch-size-constraint-11\">block stretch size constraint</a>\n                then the element being laid out is an\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-31\">embellished operator</a>. Lay out the base\n                with the same stretch size constraint."
+        },
+        {
+          "html": "Split the list of <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> children that have not been\n                laid out yet into a first list\n                <code>L<sub>ToStretch</sub></code> containing\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-32\">embellished operators</a> with\n                a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-stretchy\" class=\"internalDFN\" id=\"ref-for-dfn-stretchy-4\"><code>stretchy</code></a> property and inline <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-stretch-axis\" class=\"internalDFN\" id=\"ref-for-dfn-stretch-axis-4\">stretch axis</a>;\n                and a second list <code>L<sub>NotToStretch</sub></code>."
+        },
+        {
+          "html": "Perform layout without any stretch size constraint on\n                all the items of <code>L<sub>NotToStretch</sub></code>.\n                If <code>L<sub>ToStretch</sub></code> is empty then stop.\n                If <code>L<sub>NotToStretch</sub></code> is empty, perform\n                layout with <a href=\"https://w3c.github.io/mathml-core/#dfn-inline-stretch-size-constraint\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inline-stretch-size-constraint-10\">inline stretch size constraint</a> 0 for\n                all the items of <code>L<sub>ToStretch</sub></code>."
+        },
+        {
+          "html": "Calculate the target size <code>T</code> to\n                the maximum <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the\n                <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin boxes</a> of child boxes that have been laid out in the\n                previous step."
+        },
+        {
+          "html": "Lay out or relayout all the elements of\n                <code>L<sub>ToStretch</sub></code>\n                with <a href=\"https://w3c.github.io/mathml-core/#dfn-inline-stretch-size-constraint\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inline-stretch-size-constraint-11\">inline stretch size constraint</a> <code>T</code>."
+        }
+      ]
+    },
+    {
+      "html": "Parameters\n              <code>UnderShift</code> and <code>UnderExtraDescender</code>\n              are determined by considering three cases in the following order:",
+      "rationale": "/^otherwise(\\,| )/i",
+      "steps": [
+        {
+          "html": "<p>\n                  The <a href=\"https://w3c.github.io/mathml-core/#dfn-munder-base\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-munder-base-7\">munder base</a> is an\n                  <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-34\">embellished operator</a> with the\n                  <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-largeop\" class=\"internalDFN\" id=\"ref-for-dfn-largeop-6\"><code>largeop</code></a> property.\n                  <code>UnderShift</code> is the maximum of\n                </p>\n                <ul>\n                  <li><a href=\"https://w3c.github.io/mathml-core/#dfn-lowerlimitbaselinedropmin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-lowerlimitbaselinedropmin-1\">LowerLimitBaselineDropMin</a></li>\n                  <li><a href=\"https://w3c.github.io/mathml-core/#dfn-lowerlimitgapmin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-lowerlimitgapmin-1\">LowerLimitGapMin</a> + the ascent of the\n                    <a href=\"https://w3c.github.io/mathml-core/#dfn-munder-underscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-munder-underscript-7\">munder underscript</a>.</li>\n                </ul>\n                <p>\n                  <code>UnderExtraDescender</code> is 0.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  The <a href=\"https://w3c.github.io/mathml-core/#dfn-munder-base\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-munder-base-8\">munder base</a> is an\n                  <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-35\">embellished operator</a> with the\n                  <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-stretchy\" class=\"internalDFN\" id=\"ref-for-dfn-stretchy-5\"><code>stretchy</code></a> property\n                  and <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-stretch-axis\" class=\"internalDFN\" id=\"ref-for-dfn-stretch-axis-5\">stretch axis</a> inline.\n                  <code>UnderShift</code> is the maximum of:\n                </p>\n                <ul>\n                  <li><a href=\"https://w3c.github.io/mathml-core/#dfn-stretchstackbottomshiftdown\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-stretchstackbottomshiftdown-1\">StretchStackBottomShiftDown</a></li>\n                  <li><a href=\"https://w3c.github.io/mathml-core/#dfn-stretchstackgapabovemin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-stretchstackgapabovemin-1\">StretchStackGapAboveMin</a> + the ascent of the\n                    <a href=\"https://w3c.github.io/mathml-core/#dfn-munder-underscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-munder-underscript-8\">munder underscript</a>.</li>\n                </ul>\n                <code>UnderExtraDescender</code> is 0."
+        },
+        {
+          "html": "Otherwise,\n                <code>UnderShift</code> is equal to <a href=\"https://w3c.github.io/mathml-core/#dfn-underbarverticalgap\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-underbarverticalgap-1\">UnderbarVerticalGap</a>\n                if the <code><a data-link-type=\"element-attr\" href=\"https://w3c.github.io/mathml-core/#dfn-accentunder\" class=\"internalDFN\" id=\"ref-for-dfn-accentunder-3\">accentunder</a></code> attribute is not an\n                <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\">ASCII case-insensitive</a> match to <code>true</code>\n                and to zero otherwise.\n                <code>UnderExtraAscender</code> is\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-underbarextradescender\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-underbarextradescender-1\">UnderbarExtraDescender</a>."
+        }
+      ]
+    },
+    {
+      "html": "Parameters\n              <code>OverShift</code> and <code>OverExtraDescender</code>\n              are determined by considering three cases in the following order:",
+      "rationale": "/^otherwise(\\,| )/i",
+      "steps": [
+        {
+          "html": "<p>\n                  The <a href=\"https://w3c.github.io/mathml-core/#dfn-mover-base\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mover-base-7\">mover base</a> is an\n                  <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-37\">embellished operator</a> with the\n                  <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-largeop\" class=\"internalDFN\" id=\"ref-for-dfn-largeop-8\"><code>largeop</code></a> property.\n                  <code>OverShift</code> is the maximum of\n                </p>\n                <ul>\n                  <li><a href=\"https://w3c.github.io/mathml-core/#dfn-upperlimitbaselinerisemin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-upperlimitbaselinerisemin-1\">UpperLimitBaselineRiseMin</a></li>\n                  <li><a href=\"https://w3c.github.io/mathml-core/#dfn-upperlimitgapmin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-upperlimitgapmin-1\">UpperLimitGapMin</a> + the descent of the\n                    <a href=\"https://w3c.github.io/mathml-core/#dfn-mover-overscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mover-overscript-8\">mover overscript</a>.</li>\n                </ul>\n                <p>\n                  <code>OverExtraAscender</code> is 0.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  The <a href=\"https://w3c.github.io/mathml-core/#dfn-mover-base\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mover-base-8\">mover base</a> is an\n                  <a href=\"https://w3c.github.io/mathml-core/#dfn-embellished-operator\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embellished-operator-38\">embellished operator</a> with the\n                  <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-stretchy\" class=\"internalDFN\" id=\"ref-for-dfn-stretchy-6\"><code>stretchy</code></a> property and\n                  <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/mathml-core/#dfn-stretch-axis\" class=\"internalDFN\" id=\"ref-for-dfn-stretch-axis-6\">stretch axis</a> inline.\n                  <code>OverShift</code> is the maximum of:\n                </p>\n                <ul>\n                  <li><a href=\"https://w3c.github.io/mathml-core/#dfn-stretchstacktopshiftup\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-stretchstacktopshiftup-1\">StretchStackTopShiftUp</a></li>\n                  <li><a href=\"https://w3c.github.io/mathml-core/#dfn-stretchstackgapbelowmin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-stretchstackgapbelowmin-1\">StretchStackGapBelowMin</a> + the descent of the\n                    <a href=\"https://w3c.github.io/mathml-core/#dfn-mover-overscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mover-overscript-9\">mover overscript</a>.</li>\n                </ul>\n                <code>OverExtraDescender</code> is 0."
+        },
+        {
+          "html": "<p>\n                  Otherwise, <code>OverShift</code> is equal to</p>\n                \n                <p>\n                  <code>OverExtraAscender</code> is <a href=\"https://w3c.github.io/mathml-core/#dfn-overbarextraascender\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-overbarextraascender-1\">OverbarExtraAscender</a>.\n                </p>",
+          "ignored": [
+            "OverbarVerticalGap if the accent attribute is not an ASCII case-insensitive match to true. Or AccentBaseHeight minus the line-ascent of the mover base's margin box if this difference is nonnegative. Or 0 otherwise."
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the math content\n              is calculated with the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <code>inline-offset</code> to 0."
+        },
+        {
+          "html": "<p>\n                  For each <a href=\"https://w3c.github.io/mathml-core/#dfn-subscript-superscript-pair\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-subscript-superscript-pair-3\">subscript/superscript pair</a> of\n                  <a href=\"https://w3c.github.io/mathml-core/#dfn-mmultiscripts-prescripts\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mmultiscripts-prescripts-1\">mmultiscripts prescripts</a>, increment\n                  <code>inline-offset</code> by <a href=\"https://w3c.github.io/mathml-core/#dfn-spaceafterscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-spaceafterscript-5\">SpaceAfterScript</a> + the\n                  maximum of\n                </p>\n                <ul>\n                  <li>The <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the subscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>.</li>\n                  <li>The inline size of the superscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>.</li>\n                </ul>"
+        },
+        {
+          "html": "Increment <code>inline-offset</code> by the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-mmultiscripts-base\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mmultiscripts-base-3\">mmultiscripts base</a>'s <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a> and\n                set <code>inline-size</code> to <code>inline-offset</code>."
+        },
+        {
+          "html": "<p>\n                  For each <a href=\"https://w3c.github.io/mathml-core/#dfn-subscript-superscript-pair\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-subscript-superscript-pair-4\">subscript/superscript pair</a> of\n                  <a href=\"https://w3c.github.io/mathml-core/#dfn-mmultiscripts-postscripts\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mmultiscripts-postscripts-2\">mmultiscripts postscripts</a>, modify\n                  <code>inline-size</code> to be at least:\n                </p>\n                <ul>\n                  <li>\n                    x + the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the subscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a> +\n                    <code>LargeOpItalicCorrection</code>.\n                  </li>\n                  <li>\n                    x + the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the superscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a> −\n                    <code>ItalicCorrection</code>.\n                  </li>\n                </ul>\n                <p>Increment <code>inline-offset</code> to the maximum of:</p>\n                <ul>\n                  <li>\n                    the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the subscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>.\n                  </li>\n                  <li>\n                    the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the superscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>.\n                  </li>\n                </ul>\n                <p>\n                  Increment <code>inline-offset</code> by\n                  <a href=\"https://w3c.github.io/mathml-core/#dfn-spaceafterscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-spaceafterscript-6\">SpaceAfterScript</a>.\n                </p>"
+        },
+        {
+          "html": "Return <code>inline-size</code>."
+        }
+      ]
+    },
+    {
+      "html": "Finally, the placement of the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#in-flow\">in-flow</a> children is performed using\n              the\n              following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <code>inline-offset</code> to 0."
+        },
+        {
+          "html": "For each <a href=\"https://w3c.github.io/mathml-core/#dfn-subscript-superscript-pair\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-subscript-superscript-pair-8\">subscript/superscript pair</a> of\n                  <a href=\"https://w3c.github.io/mathml-core/#dfn-mmultiscripts-prescripts\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mmultiscripts-prescripts-2\">mmultiscripts prescripts</a>:",
+          "rationale": "increment",
+          "steps": [
+            {
+              "html": "Increment <code>inline-offset</code> by\n                    <a href=\"https://w3c.github.io/mathml-core/#dfn-spaceafterscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-spaceafterscript-7\">SpaceAfterScript</a>."
+            },
+            {
+              "html": "Set <code>pair-inline-size</code> to the maximum of\n                    <ul>\n                      <li>\n                        the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the subscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>.\n                      </li>\n                      <li>\n                        the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the superscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>.\n                      </li>\n                    </ul>"
+            },
+            {
+              "html": "Place the subscript at inline-start position\n                    <code>inline-offset</code> + <code>pair-inline-size</code>\n                    − the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the subscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>."
+            },
+            {
+              "html": "Place the superscript at inline-start position\n                    <code>inline-offset</code> + <code>pair-inline-size</code>\n                    − the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the superscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>."
+            },
+            {
+              "html": "Place the subscript (respectively superscript) so its\n                    <a href=\"https://w3c.github.io/mathml-core/#dfn-alphabetic-baseline\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-alphabetic-baseline-48\">alphabetic baseline</a> is\n                    shifted away from the <a href=\"https://w3c.github.io/mathml-core/#dfn-alphabetic-baseline\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-alphabetic-baseline-49\">alphabetic baseline</a> by\n                    <code>SubShift</code> (respectively <code>SuperShift</code>)\n                    towards the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#line-under\">line-under</a> (respectively <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#line-over\">line-over</a>)."
+            },
+            {
+              "html": "Increment <code>inline-offset</code> by\n                    <code>pair-inline-size</code>."
+            }
+          ]
+        },
+        {
+          "html": "Place the <a href=\"https://w3c.github.io/mathml-core/#dfn-mmultiscripts-base\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mmultiscripts-base-4\">mmultiscripts base</a>\n                and <code>&lt;mprescripts&gt;</code> boxes\n                at <a href=\"https://w3c.github.io/mathml-core/#dfn-inline-offset\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-inline-offset-21\">inline offsets</a>\n                <code>inline-offset</code> and with their <a href=\"https://w3c.github.io/mathml-core/#dfn-alphabetic-baseline\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-alphabetic-baseline-50\">alphabetic baselines</a>\n                aligned with the <a href=\"https://w3c.github.io/mathml-core/#dfn-alphabetic-baseline\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-alphabetic-baseline-51\">alphabetic baseline</a>."
+        },
+        {
+          "html": "For each <a href=\"https://w3c.github.io/mathml-core/#dfn-subscript-superscript-pair\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-subscript-superscript-pair-9\">subscript/superscript pair</a> of\n                  <a href=\"https://w3c.github.io/mathml-core/#dfn-mmultiscripts-postscripts\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mmultiscripts-postscripts-3\">mmultiscripts postscripts</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>pair-inline-size</code> to the maximum of\n                    <ul>\n                      <li>\n                        the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the subscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>.\n                      </li>\n                      <li>\n                        the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-size\">inline size</a> of the superscript's <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#margin-box\">margin box</a>.\n                      </li>\n                    </ul>"
+            },
+            {
+              "html": "Place the subscript\n                    at inline-start position <code>inline-offset</code>\n                    − <code>LargeOpItalicCorrection</code>."
+            },
+            {
+              "html": "Place the superscript\n                    at inline-start position <code>inline-offset</code>\n                    + <code>ItalicCorrection</code>."
+            },
+            {
+              "html": "Place the subscript (superscript) so its <a href=\"https://w3c.github.io/mathml-core/#dfn-alphabetic-baseline\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-alphabetic-baseline-52\">alphabetic baseline</a> is\n                    shifted away from the <a href=\"https://w3c.github.io/mathml-core/#dfn-alphabetic-baseline\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-alphabetic-baseline-53\">alphabetic baseline</a> by\n                    <code>SubShift</code> (respectively <code>SuperShift</code>)\n                    towards the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#line-under\">line-under</a> (respectively <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#line-over\">line-over</a>)."
+            },
+            {
+              "html": "Increment <code>inline-offset</code> by\n                    <code>pair-inline-size</code>."
+            },
+            {
+              "html": "Increment <code>inline-offset</code> by\n                    <a href=\"https://w3c.github.io/mathml-core/#dfn-spaceafterscript\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-spaceafterscript-8\">SpaceAfterScript</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "If the specified value of \n          <a data-type=\"css-property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-size\">font-size</a>\n          is <code>math</code> then the\n          computed value of\n          <a data-type=\"css-property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-size\">font-size</a>\n          is obtained by multiplying the inherited value of\n          <a data-type=\"css-property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-size\">font-size</a>\n          by a nonzero scale factor calculated by the\n          following procedure:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let A be the inherited <a href=\"https://w3c.github.io/mathml-core/#propdef-math-depth\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-propdef-math-depth-12\">math-depth</a> value,\n            B the computed <a href=\"https://w3c.github.io/mathml-core/#propdef-math-depth\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-propdef-math-depth-13\">math-depth</a> value,\n            C be 0.71 and S be 1.0"
+        },
+        {
+          "html": "<ul>\n              <li>If A = B then return S.</li>\n              <li>If B &lt; A, swap A and B and set <code>InvertScaleFactor</code> to true.</li>\n              <li>Otherwise B &gt; A and set <code>InvertScaleFactor</code> to false.</li>\n            </ul>"
+        },
+        {
+          "html": "Let E be B - A &gt; 0."
+        },
+        {
+          "html": "If the inherited <a data-type=\"dfn\" href=\"https://www.w3.org/TR/css-fonts-4/#first-available-font\">first available font</a> has an OpenType MATH table:\n            <ul>\n              <li>If A ≤ 0 and B ≥ 2 then multiply S by <a href=\"https://w3c.github.io/mathml-core/#dfn-scriptscriptpercentscaledown\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-scriptscriptpercentscaledown-1\">scriptScriptPercentScaleDown</a> and\n                decrement E by 2.</li>\n              <li>Otherwise if A = 1 then multiply S by\n                <a href=\"https://w3c.github.io/mathml-core/#dfn-scriptscriptpercentscaledown\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-scriptscriptpercentscaledown-2\">scriptScriptPercentScaleDown</a> / <a href=\"https://w3c.github.io/mathml-core/#dfn-scriptpercentscaledown\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-scriptpercentscaledown-1\">scriptPercentScaleDown</a> and\n                decrement E by 1.</li>\n              <li>Otherwise if B = 1 then multiply S by <a href=\"https://w3c.github.io/mathml-core/#dfn-scriptpercentscaledown\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-scriptpercentscaledown-2\">scriptPercentScaleDown</a>\n                and decrement E by 1.</li>\n            </ul>"
+        },
+        {
+          "html": "Multiply S by C<sup>E</sup>."
+        },
+        {
+          "html": "Return S if <code>InvertScaleFactor</code> is false and 1/S otherwise."
+        }
+      ]
+    },
+    {
+      "name": "shaping of the glyph assembly",
+      "href": "https://w3c.github.io/mathml-core/#dfn-shaping-of-the-glyph-assembly",
+      "html": "The <dfn id=\"dfn-shaping-of-the-glyph-assembly\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">shaping of the glyph assembly</dfn>\n            is performed with the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Calculate <a href=\"https://w3c.github.io/mathml-core/#dfn-rmin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-rmin-6\">r<sub>min</sub></a> and\n              <a href=\"https://w3c.github.io/mathml-core/#dfn-omax\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-omax-2\">o<sub>max</sub></a>."
+        },
+        {
+          "html": "Set <code>(x, y)</code> to <code>(0, 0)</code>,\n              <code>RepetitionCounter</code> to 0 and\n              <code>PartIndex</code> to -1."
+        },
+        {
+          "html": "Repeat the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <code>RepetitionCounter</code> is 0:",
+              "rationale": "increment",
+              "steps": [
+                {
+                  "html": "Increment <code>PartIndex</code>."
+                },
+                {
+                  "html": "If <code>PartIndex</code> is\n                      <code>GlyphAssembly.partCount</code>\n                      then stop."
+                },
+                {
+                  "html": "Otherwise, set\n                      <code>Part</code> to\n                      <code>GlyphAssembly.partRecords[PartIndex]</code>.\n                      Set <code>RepetitionCounter</code> to\n                      <a href=\"https://w3c.github.io/mathml-core/#dfn-rmin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-rmin-7\">r<sub>min</sub></a> if\n                      <code>Part</code> is an extender and to 1 otherwise."
+                }
+              ]
+            },
+            {
+              "html": "<ul>\n                    <li>If the glyph assembly is horizontal then\n                      draw the glyph of ID\n                      <code>Part.glyphID</code>\n                      so that its (left, baseline) coordinates\n                      are at position <code>(x, y)</code>.\n                      Set <code>x</code> to\n                      <code>x + Part.fullAdvance −\n                        <a href=\"https://w3c.github.io/mathml-core/#dfn-omax\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-omax-3\">o<sub>max</sub></a>.</code>\n                    </li>\n                    <li>Otherwise (if the glyph assembly is vertical),\n                      then\n                      draw the glyph of id\n                      <code>Part.glyphID</code>\n                      so that its (left, bottom) coordinates\n                      are at position <code>(x, y)</code>.\n                      Set <code>y</code> to\n                      <code>y − Part.fullAdvance +\n                        <a href=\"https://w3c.github.io/mathml-core/#dfn-omax\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-omax-4\">o<sub>max</sub></a>.</code>\n                    </li>\n                  </ul>"
+            },
+            {
+              "html": "Decrement <code>RepetitionCounter</code>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "preferred inline size of a glyph stretched along the block axis",
+      "href": "https://w3c.github.io/mathml-core/#dfn-preferred-inline-size-of-a-glyph-stretched-along-the-block-axis",
+      "html": "The <dfn id=\"dfn-preferred-inline-size-of-a-glyph-stretched-along-the-block-axis\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">preferred inline size of a glyph stretched along the block\n            axis</dfn>\n            is calculated using the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <code>S</code> to the glyph's advance width."
+        },
+        {
+          "html": "If there is a <code>MathGlyphConstruction</code> table\n              in the <code>MathVariants.vertGlyphConstructionOffsets</code>\n              table for the given glyph:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "For each <code>MathGlyphVariantRecord</code> in\n                  <code>MathGlyphConstruction.mathGlyphVariantRecord</code>,\n                  ensure that <code>S</code> is at least\n                  the advance width of the glyph of id\n                  <code>MathGlyphVariantRecord.variantGlyph</code>."
+            },
+            {
+              "html": "If there is valid <code>GlyphAssembly</code> subtable,\n                  then ensure\n                  that <code>S</code> is at least the\n                  <a href=\"https://w3c.github.io/mathml-core/#dfn-glyph-assembly-width\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-glyph-assembly-width-1\">glyph assembly width</a>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>S</code>."
+        }
+      ]
+    },
+    {
+      "name": "shape a stretchy glyph",
+      "href": "https://w3c.github.io/mathml-core/#dfn-shape-a-stretchy-glyph",
+      "html": "The algorithm to <dfn id=\"dfn-shape-a-stretchy-glyph\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">shape a stretchy glyph</dfn> to inline\n            (respectively block) dimension <code>T</code>\n            is the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If there is not any <code>MathGlyphConstruction</code> table\n              in the <code>MathVariants.horizGlyphConstructionOffsets</code>\n              table  (respectively\n              <code>MathVariants.vertGlyphConstructionOffsets</code> table)\n              for the given glyph then exit with failure."
+        },
+        {
+          "html": "If the glyph's advance width\n              (respectively height) is at least <code>T</code>\n              then use normal shaping and bounding box for that glyph,\n              the <a href=\"https://w3c.github.io/mathml-core/#dfn-mathitalicscorrectioninfo\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mathitalicscorrectioninfo-2\">MathItalicsCorrectionInfo</a> for that glyph as\n              italic correction and exit with success."
+        },
+        {
+          "html": "Browse the list of <code>MathGlyphVariantRecord</code> in\n              <code>MathGlyphConstruction.mathGlyphVariantRecord</code>.\n              If one <code>MathGlyphVariantRecord.advanceMeasurement</code>\n              is at least <code>T</code> then use\n              normal shaping and bounding box\n              for <code>MathGlyphVariantRecord.variantGlyph</code>,\n              the <a href=\"https://w3c.github.io/mathml-core/#dfn-mathitalicscorrectioninfo\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-mathitalicscorrectioninfo-3\">MathItalicsCorrectionInfo</a> for that glyph as\n              italic correction and exit with success."
+        },
+        {
+          "html": "If there is valid <code>GlyphAssembly</code> subtable\n              then use the bounding box given by\n              <a href=\"https://w3c.github.io/mathml-core/#dfn-glyph-assembly-width\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-glyph-assembly-width-2\">glyph assembly width</a>,\n              <a href=\"https://w3c.github.io/mathml-core/#dfn-glyph-assembly-height\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-glyph-assembly-height-1\">glyph assembly height</a>,\n              <a href=\"https://w3c.github.io/mathml-core/#dfn-glyph-assembly-ascent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-glyph-assembly-ascent-2\">glyph assembly ascent</a>,\n              <a href=\"https://w3c.github.io/mathml-core/#dfn-glyph-assembly-descent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-glyph-assembly-descent-2\">glyph assembly descent</a>, the value\n              <code>GlyphAssembly.italicsCorrection</code> as italic\n              correction, perform <a href=\"https://w3c.github.io/mathml-core/#dfn-shaping-of-the-glyph-assembly\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shaping-of-the-glyph-assembly-1\">shaping of the glyph assembly</a> and\n              exit with success."
+        },
+        {
+          "html": "If none of the stretch options above allowed to cover the target\n              size <code>T</code>, then choose last one that was tried and exit\n              with success."
+        }
+      ]
+    },
+    {
+      "name": "algorithm to determine the category of an operator",
+      "href": "https://w3c.github.io/mathml-core/#dfn-algorithm-to-determine-the-category-of-an-operator",
+      "html": "The <dfn class=\"abstract-op\" data-dfn-type=\"abstract-op\" id=\"dfn-algorithm-to-determine-the-category-of-an-operator\" tabindex=\"0\" aria-haspopup=\"dialog\" data-export=\"\">algorithm to determine the category of an operator</dfn>\n          (<code>Content</code>, <code>Form</code>) is as folllows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <code>Content</code> as an UTF-16 string does not have length\n            or 1 or 2 then exit with category <code>Default</code>."
+        },
+        {
+          "html": "If <code>Content</code> is a single character in the\n            range U+0320–U+03FF\n            then exit with category <code>Default</code>. Otherwise,\n            if it has two characters:\n            <ul>\n              <li>If <code>Content</code> is the surrogate pairs corresponding\n                to\n                U+1EEF0 ARABIC MATHEMATICAL OPERATOR MEEM WITH HAH WITH TATWEEL\n                or U+1EEF1 ARABIC MATHEMATICAL OPERATOR HAH WITH DAL and\n                <code>Form</code> is <code>postfix</code>, exit with category\n                <code>I</code>.</li>\n              <li>If the second character is\n                U+0338 COMBINING LONG SOLIDUS OVERLAY or\n                U+20D2 COMBINING LONG VERTICAL LINE OVERLAY then replace\n                <code>Content</code> with the first character and move to step\n                3.</li>\n              <li>Otherwise, if <code>Content</code> is listed in\n                <a href=\"https://w3c.github.io/mathml-core/#operator-dictionary-compact-special-tables\"><code>Operators_2_ascii_chars</code></a> then\n                replace <code>Content</code> with the\n                Unicode character\n                \"U+0320 plus the index of <code>Content</code> in\n                <code>Operators_2_ascii_chars</code>\" and move to step\n                3.\n              </li>\n              <li>Otherwise exit with category <code>Default</code>.</li>\n            </ul>"
+        },
+        {
+          "html": "If <code>Form</code> is infix and <code>Content</code> corresponds\n            to one of U+007C VERTICAL LINE or U+223C TILDE OPERATOR then exit\n            with category <code>ForceDefault</code>. If the category of\n            (<code>Content</code>, <code>Form</code>)\n            provided by table\n            <a href=\"https://w3c.github.io/mathml-core/#operator-dictionary-category-table\" class=\"fig-ref\" title=\"Mapping from operator (Content, Form) to a category.Total size: 725 entries, 639 bytes(assuming characters are UTF-16 and 1-byte range lengths).\">Figure <bdi class=\"\">25</bdi></a>\n            has N/A encoding in table\n            <a href=\"https://w3c.github.io/mathml-core/#operator-dictionary-categories-values\" class=\"fig-ref\" title=\"Operators values for each category.The third column provides a 4-bit encoding of the categorieswhere the 2 least significant bits encode the form infix (0), prefix (1) and postfix (2).\">Figure <bdi class=\"\">26</bdi></a>\n            (namely if it has category <code>L</code> or <code>M</code>), then\n            exit with that category.\n            Otherwise:\n                <ul>\n                  <li>Set <code>Key</code> to <code>Content</code> if it is in\n                    range U+0000–U+03FF; or to <code>Content</code> − 0x1C00\n                    if it is in range U+2000–U+2BFF. Otherwise, exit with\n                    category <code>Default</code>.\n                  </li>\n                  <li>Add 0x0000, 0x1000, 0x2000\n                    to <code>Key</code> according to whether <code>Form</code>\n                    is <code>infix</code>, <code>prefix</code>,\n                    <code>postfix</code> respectively.\n                  </li>\n                  <li class=\"assert\"><a href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <code>Key</code> is at most 0x2FFF.</li>\n                  <li>Search an <code>Entry</code> in table\n                    <a href=\"https://w3c.github.io/mathml-core/#operator-dictionary-categories-hexa-table\" class=\"fig-ref\" title=\"List of entries for the largest categories, sorted by key.Key is Entry % 0x4000, category encoding is Entry / 0x1000.Total size: 716 entries, 590 bytes(assuming 4 bits for range lengths).\">Figure <bdi class=\"\">27</bdi></a>\n                    such that <code>Entry</code> % 0x4000 is equal to\n                    <code>Key</code>. If one is found then return the category\n                    corresponding to encoding <code>Entry</code> / 0x1000 in\n                    <a href=\"https://w3c.github.io/mathml-core/#operator-dictionary-categories-values\" class=\"fig-ref\" title=\"Operators values for each category.The third column provides a 4-bit encoding of the categorieswhere the 2 least significant bits encode the form infix (0), prefix (1) and postfix (2).\">Figure <bdi class=\"\">26</bdi></a>.\n                    Otherwise, return category <code>Default</code>.\n\t\t  </li>\n                </ul>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "spec": {
+    "title": "Get Installed Related Apps API",
+    "url": "https://wicg.github.io/get-installed-related-apps/spec/"
+  },
+  "algorithms": [
+    {
+      "name": "match an installed app",
+      "href": "https://wicg.github.io/get-installed-related-apps/spec/#match-an-installed-app",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"match-an-installed-app\">match an installed app</dfn> for <var>relatedApp</var> (an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource\" id=\"ref-for-dom-externalapplicationresource\">ExternalApplicationResource</a></code>) and <var>manifestURL</var> (a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url①\">URL</a></code>), run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>platform</var> be <var>relatedApp</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-platform\" id=\"ref-for-dom-externalapplicationresource-platform\">platform</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#installed-apps\" id=\"ref-for-installed-apps\">installed apps</a>[<var>platform</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exist</a>, return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>installedApps</var> be <a data-link-type=\"dfn\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#installed-apps\" id=\"ref-for-installed-apps①\">installed apps</a>[<var>platform</var>].</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"match-an-installed-app\">match an installed app</dfn> for <var>relatedApp</var> (an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource\" id=\"ref-for-dom-externalapplicationresource\">ExternalApplicationResource</a></code>) and <var>manifestURL</var> (a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url①\">URL</a></code>), run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>relatedApp</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-id\" id=\"ref-for-dom-externalapplicationresource-id\">id</a></code> is not equal to <var>installedApp</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#installed-app-id\" id=\"ref-for-installed-app-id\">id</a>, and <var>relatedApp</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-url\" id=\"ref-for-dom-externalapplicationresource-url\">url</a></code> is not equal to <var>installedApp</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#installed-app-id\" id=\"ref-for-installed-app-id①\">id</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>minVersion</var> be <var>relatedApp</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-min_version\" id=\"ref-for-dom-externalapplicationresource-min_version\">min_version</a></code> if present, otherwise the empty string.</p>"
+            },
+            {
+              "html": "<p>If <var>minVersion</var> is not the empty string and <var>minVersion</var> is greater than <var>installedApp</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#installed-app-version\" id=\"ref-for-installed-app-version\">version</a>, return null.</p>"
+            },
+            {
+              "html": "<p>Let <var>fingerprints</var> be <var>relatedApp</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-fingerprints\" id=\"ref-for-dom-externalapplicationresource-fingerprints\">fingerprints</a></code> if present, otherwise an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"match-an-installed-app\">match an installed app</dfn> for <var>relatedApp</var> (an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource\" id=\"ref-for-dom-externalapplicationresource\">ExternalApplicationResource</a></code>) and <var>manifestURL</var> (a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url①\">URL</a></code>), run these steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>installedApp</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#installed-app-fingerprints\" id=\"ref-for-installed-app-fingerprints\">fingerprints</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>fingerprint</var>, return null.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>installedApp</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#installed-app-relatedurls\" id=\"ref-for-installed-app-relatedurls\">relatedURLs</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contain</a> <var>manifestURL</var>, return null.</p>"
+            },
+            {
+              "html": "<p>Return <var>installedApp</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "getInstalledRelatedApps()",
+      "href": "https://wicg.github.io/get-installed-related-apps/spec/#dom-navigator-getinstalledrelatedapps",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Navigator\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigator-getinstalledrelatedapps\"><code>getInstalledRelatedApps()</code></dfn> method, when invoked, runs these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>relevantBrowsingContext</var> be the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\" id=\"ref-for-context-object\">context object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn\">responsible browsing context</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>relevantBrowsingContext</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a>, then return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Navigator\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigator-getinstalledrelatedapps\"><code>getInstalledRelatedApps()</code></dfn> method, when invoked, runs these steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>manifest</var> and <var>manifestURL</var> be the results of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/appmanifest/#obtaining\" id=\"ref-for-obtaining\">obtaining the manifest</a>. If this fails, <a data-link-type=\"dfn\">resolve</a> promise with an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>relatedApplications</var> be <var>manifest</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-webappmanifest-related_applications\" id=\"ref-for-dom-webappmanifest-related_applications\">related_applications</a></code>.</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Navigator\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigator-getinstalledrelatedapps\"><code>getInstalledRelatedApps()</code></dfn> method, when invoked, runs these steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>maxRelatedApps</var> be a user agent determined number.</p>"
+                },
+                {
+                  "html": "<p>If <var>relatedApplications</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is greater than <var>maxRelatedApps</var>, truncate <var>relatedApplications</var> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> of <var>maxRelatedApps</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>installedApps</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a>.</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Navigator\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigator-getinstalledrelatedapps\"><code>getInstalledRelatedApps()</code></dfn> method, when invoked, runs these steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>matchedApp</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#match-an-installed-app\" id=\"ref-for-match-an-installed-app\">match an installed app</a> with <var>relatedApplication</var> and <var>manifestURL</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>matchedApp</var> is null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>installedApp</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#dictdef-relatedapplication\" id=\"ref-for-dictdef-relatedapplication②\">RelatedApplication</a></code> with:</p>\n           <dl>\n            <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#dom-relatedapplication-platform\" id=\"ref-for-dom-relatedapplication-platform\">platform</a></code>\n            </dt><dd data-md=\"\">\n             <p><var>relatedApplication</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-platform\" id=\"ref-for-dom-externalapplicationresource-platform①\">platform</a></code></p>\n            </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#dom-relatedapplication-url\" id=\"ref-for-dom-relatedapplication-url\">url</a></code>\n            </dt><dd data-md=\"\">\n             <p><var>relatedApplication</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-url\" id=\"ref-for-dom-externalapplicationresource-url①\">url</a></code></p>\n            </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#dom-relatedapplication-id\" id=\"ref-for-dom-relatedapplication-id\">id</a></code>\n            </dt><dd data-md=\"\">\n             <p><var>relatedApplication</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-id\" id=\"ref-for-dom-externalapplicationresource-id①\">id</a></code></p>\n            </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#dom-relatedapplication-version\" id=\"ref-for-dom-relatedapplication-version\">version</a></code>\n            </dt><dd data-md=\"\">\n             <p><var>matchedApp</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#installed-app-version\" id=\"ref-for-installed-app-version①\">version</a></p>\n           </dd></dl>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>installedApp</var> to <var>installedApps</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\">Resolve</a> <var>promise</var> with <var>installedApps</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

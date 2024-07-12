@@ -1,0 +1,348 @@
+{
+  "spec": {
+    "title": "Web Preferences API",
+    "url": "https://wicg.github.io/web-preferences-api/"
+  },
+  "algorithms": [
+    {
+      "name": "get valid values for colorScheme",
+      "href": "https://wicg.github.io/web-preferences-api/#get-valid-values-for-colorscheme",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-valid-values-for-colorscheme\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get valid values for colorScheme</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm, when invoked, must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>validValues</var> be a new empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence\">sequence</a>.</p>"
+        },
+        {
+          "html": "<p>Add <code>\"light\"</code> to <var>validValues</var>.</p>"
+        },
+        {
+          "html": "<p>Add <code>\"dark\"</code> to <var>validValues</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>validValues</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get valid values for contrast",
+      "href": "https://wicg.github.io/web-preferences-api/#get-valid-values-for-contrast",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-valid-values-for-contrast\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get valid values for contrast</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm, when invoked, must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>validValues</var> be a new empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①\">sequence</a>.</p>"
+        },
+        {
+          "html": "<p>Add <code>\"more\"</code> to <var>validValues</var>.</p>"
+        },
+        {
+          "html": "<p>Add <code>\"less\"</code> to <var>validValues</var>.</p>"
+        },
+        {
+          "html": "<p>Add <code>\"no-preference\"</code> to <var>validValues</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>validValues</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get valid values for reducedMotion",
+      "href": "https://wicg.github.io/web-preferences-api/#get-valid-values-for-reducedmotion",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-valid-values-for-reducedmotion\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get valid values for reducedMotion</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm, when invoked, must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>validValues</var> be a new empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence②\">sequence</a>.</p>"
+        },
+        {
+          "html": "<p>Add <code>\"reduce\"</code> to <var>validValues</var>.</p>"
+        },
+        {
+          "html": "<p>Add <code>\"no-preference\"</code> to <var>validValues</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>validValues</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get valid values for reducedTransparency",
+      "href": "https://wicg.github.io/web-preferences-api/#get-valid-values-for-reducedtransparency",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-valid-values-for-reducedtransparency\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get valid values for reducedTransparency</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm, when invoked, must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>validValues</var> be a new empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence③\">sequence</a>.</p>"
+        },
+        {
+          "html": "<p>Add <code>\"reduce\"</code> to <var>validValues</var>.</p>"
+        },
+        {
+          "html": "<p>Add <code>\"no-preference\"</code> to <var>validValues</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>validValues</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get valid values for reducedData",
+      "href": "https://wicg.github.io/web-preferences-api/#get-valid-values-for-reduceddata",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-valid-values-for-reduceddata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get valid values for reducedData</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm, when invoked, must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>validValues</var> be a new empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence④\">sequence</a>.</p>"
+        },
+        {
+          "html": "<p>Add <code>\"reduce\"</code> to <var>validValues</var>.</p>"
+        },
+        {
+          "html": "<p>Add <code>\"no-preference\"</code> to <var>validValues</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>validValues</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get preference override",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferenceobject-override",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-preferenceobject-override\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>override</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> attribute, when accessed, must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>preference</var> be the preference object’s name.</p>"
+        },
+        {
+          "html": "<p>Let <var>override</var> be null.</p>"
+        },
+        {
+          "html": "<p>If an override for <var>preference</var> exists, set <var>override</var> to the value of that override.</p>"
+        },
+        {
+          "html": "<p>Return <var>override</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get preference value",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferenceobject-value",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-preferenceobject-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>value</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> attribute, when accessed, must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>preference</var> be the preference object’s name.</p>"
+        },
+        {
+          "html": "<p>Let <var>value</var> be null.</p>"
+        },
+        {
+          "html": "<p>If an override for <var>preference</var> exists, set <var>value</var> to the value of that override.</p>"
+        },
+        {
+          "html": "<p>If <var>value</var> is null, set <var>value</var> to the UA value of the preference.</p>"
+        },
+        {
+          "html": "<p>Return <var>value</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PreferenceObject/validValues",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferenceobject-validvalues",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-preferenceobject-validvalues\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>validValues</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> attribute, when accessed, must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>preference</var> be the preference object’s name.</p>"
+        },
+        {
+          "html": "<p>Let <var>validValues</var> be a new empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑤\">sequence</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>preference</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferencemanager-colorscheme\" id=\"ref-for-dom-preferencemanager-colorscheme②\">colorScheme</a></code>\", set <var>validValues</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-preferences-api/#get-valid-values-for-colorscheme\" id=\"ref-for-get-valid-values-for-colorscheme\">get valid values for colorScheme</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>preference</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferencemanager-contrast\" id=\"ref-for-dom-preferencemanager-contrast②\">contrast</a></code>\", set <var>validValues</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-preferences-api/#get-valid-values-for-contrast\" id=\"ref-for-get-valid-values-for-contrast\">get valid values for contrast</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>preference</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferencemanager-reducedmotion\" id=\"ref-for-dom-preferencemanager-reducedmotion②\">reducedMotion</a></code>\", set <var>validValues</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-preferences-api/#get-valid-values-for-reducedmotion\" id=\"ref-for-get-valid-values-for-reducedmotion\">get valid values for reducedMotion</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>preference</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferencemanager-reducedtransparency\" id=\"ref-for-dom-preferencemanager-reducedtransparency②\">reducedTransparency</a></code>\", set <var>validValues</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-preferences-api/#get-valid-values-for-reducedtransparency\" id=\"ref-for-get-valid-values-for-reducedtransparency\">get valid values for reducedTransparency</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>preference</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferencemanager-reduceddata\" id=\"ref-for-dom-preferencemanager-reduceddata②\">reducedData</a></code>\", set <var>validValues</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-preferences-api/#get-valid-values-for-reduceddata\" id=\"ref-for-get-valid-values-for-reduceddata\">get valid values for reducedData</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>validValues</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update steps",
+      "href": "https://wicg.github.io/web-preferences-api/#preferenceobject-preferenceobject-update-steps",
+      "html": "Whenever the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent\">user agent</a> is aware that the state of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#preferenceobject\" id=\"ref-for-preferenceobject①①\">PreferenceObject</a></code> instance <var>value</var> has changed, it asynchronously runs the <dfn class=\"algorithm\" data-algorithm=\"PreferenceObject update steps\" data-algorithm-for=\"PreferenceObject\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"dfn\" data-lt=\"PreferenceObject update steps\" data-noexport=\"\" id=\"preferenceobject-preferenceobject-update-steps\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#preferenceobject\" id=\"ref-for-preferenceobject①②\">PreferenceObject</a></code> update steps<a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#preferenceobject-preferenceobject-update-steps\"></a></dfn>: \n    \n    <h4 class=\"heading settled\" data-level=\"3.6.5\" id=\"request-override-method\"><span class=\"secno\">3.6.5. </span><span class=\"content\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferenceobject-requestoverride\" id=\"ref-for-dom-preferenceobject-requestoverride①\">requestOverride()</a></code> method</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#request-override-method\"></a></h4>\n    <div class=\"algorithm\" data-algorithm=\"request preference override\">\n      The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-preferenceobject-requestoverride\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestOverride(value)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps: \n     \n    </div>\n    \n    \n    \n    <h4 class=\"heading settled\" data-level=\"3.6.6\" id=\"clear-override-method\"><span class=\"secno\">3.6.6. </span><span class=\"content\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferenceobject-clearoverride\" id=\"ref-for-dom-preferenceobject-clearoverride②\">clearOverride</a></code> method</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#clear-override-method\"></a></h4>\n    <div class=\"algorithm\" data-algorithm=\"clear preference override\">\n      The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-preferenceobject-clearoverride\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>clearOverride()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps: \n     \n    </div>\n    \n    <h4 class=\"heading settled\" data-level=\"3.6.7\" id=\"garbage-collection\"><span class=\"secno\">3.6.7. </span><span class=\"content\">Garbage Collection</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#garbage-collection\"></a></h4>\n    <p>A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#preferenceobject\" id=\"ref-for-preferenceobject①④\">PreferenceObject</a></code> object MUST NOT be garbage collected if it has an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\" id=\"ref-for-concept-event-listener\">event listener</a> whose type is <code>change</code>.</p>\n    <h2 class=\"heading settled\" data-level=\"4\" id=\"usage-examples\"><span class=\"secno\">4. </span><span class=\"content\">Usage Examples</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#usage-examples\"></a></h2>\n    <p><em>This section is non-normative.</em></p>\n    <p>Each preference the browser supports will be exposed as a property on the <code>navigator.preferences</code> object.</p>\n    <p>Feature detection for a given preference is as simple as:</p>\n<pre class=\"language-js highlight\"><c- a=\"\">const</c-> colorSchemeSupported <c- o=\"\">=</c-> <c- t=\"\">'colorScheme'</c-> <c- ow=\"\">in</c-> navigator<c- p=\"\">.</c->preferences<c- p=\"\">;</c->\n</pre>\n    <h3 class=\"heading settled\" data-level=\"4.1\" id=\"usage-request-a-preference-override\"><span class=\"secno\">4.1. </span><span class=\"content\">Requesting a preference override</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#usage-request-a-preference-override\"></a></h3>\n    <p>To request a preference override, the <code class=\"idl\"><a data-link-type=\"idl\">requestOverride</a></code> method can be called.</p>\n<pre class=\"language-js highlight\">navigator<c- p=\"\">.</c->preferences<c- p=\"\">.</c->colorScheme<c- p=\"\">.</c->requestOverride<c- p=\"\">(</c-><c- t=\"\">'dark'</c-><c- p=\"\">)</c->\n    <c- p=\"\">.</c->then<c- p=\"\">(()</c-> <c- p=\"\">=&gt;</c-> <c- p=\"\">{</c->\n         <c- c1=\"\">// The preference override was successful.</c->\n    <c- p=\"\">})</c->\n    <c- p=\"\">.</c-><c- k=\"\">catch</c-><c- p=\"\">((</c->error<c- p=\"\">)</c-> <c- p=\"\">=&gt;</c-> <c- p=\"\">{</c->\n         <c- c1=\"\">// The preference override request was rejected.</c->\n    <c- p=\"\">});</c->\n</pre>\n    <h3 class=\"heading settled\" data-level=\"4.2\" id=\"usage-clearing-a-preference-override\"><span class=\"secno\">4.2. </span><span class=\"content\">Clearing a preference override</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#usage-clearing-a-preference-override\"></a></h3>\n    <p>To clear an override and return the preference to the browser default, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferenceobject-clearoverride\" id=\"ref-for-dom-preferenceobject-clearoverride③\">clearOverride</a></code> method can be called.</p>\n<pre class=\"language-js highlight\">navigator<c- p=\"\">.</c->preferences<c- p=\"\">.</c->colorScheme<c- p=\"\">.</c->clearOverride<c- p=\"\">();</c->\n</pre>\n    <h3 class=\"heading settled\" data-level=\"4.3\" id=\"usage-getting-a-preference-override\"><span class=\"secno\">4.3. </span><span class=\"content\">Getting a preference override</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#usage-getting-a-preference-override\"></a></h3>\n    <p>To get the value of a preference override, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferenceobject-override\" id=\"ref-for-dom-preferenceobject-override②\">override</a></code> property can be read.\nEach preference property’s override property will return the string value indicating the preference, or null if no override is set.</p>\n<pre class=\"language-js highlight\"><c- a=\"\">const</c-> colorScheme <c- o=\"\">=</c-> navigator<c- p=\"\">.</c->preferences<c- p=\"\">.</c->colorScheme<c- p=\"\">.</c->override<c- p=\"\">;</c-> <c- c1=\"\">// \"light\" | \"dark\" | null</c->\n</pre>\n    <h3 class=\"heading settled\" data-level=\"4.4\" id=\"get-validValues\"><span class=\"secno\">4.4. </span><span class=\"content\">Getting valid values for a preference</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#get-validValues\"></a></h3>\n    <p>Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#preferenceobject\" id=\"ref-for-preferenceobject①⑤\">PreferenceObject</a></code> contains a validValues attribute that can be used to determine the valid values for a preference.</p>\n    <p>This is useful for sites that want to dynamically generate UI for overriding preferences.</p>\n    <p>It also allows sites to determine if a preference value is supported before attempting to set it.</p>\n<pre class=\"language-js highlight\"><c- a=\"\">const</c-> validValues <c- o=\"\">=</c-> navigator<c- p=\"\">.</c->preferences<c- p=\"\">.</c->colorScheme<c- p=\"\">.</c->validValues<c- p=\"\">;</c-> <c- c1=\"\">// [\"light\", \"dark\"]</c->\n</pre>\n    <h2 class=\"heading settled\" data-level=\"5\" id=\"sec-security\"><span class=\"secno\">5. </span><span class=\"content\">Security and Privacy Considerations</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#sec-security\"></a></h2>\n    <p><em>This section is non-normative.</em></p>\n    <h3 class=\"heading settled\" data-level=\"5.1\" id=\"storage\"><span class=\"secno\">5.1. </span><span class=\"content\">Storage of preference overrides</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#storage\"></a></h3>\n    <p>The overrides set by this API are intended to be persisted by the browser. These settings are clearable by any means the browser sees fit to implement.</p>\n    \n    <h3 class=\"heading settled\" data-level=\"5.2\" id=\"fingerprinting\"><span class=\"secno\">5.2. </span><span class=\"content\">Avoiding fingerprinting</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#fingerprinting\"></a></h3>\n    <p>This API exposes no new fingerprinting surfaces beyond that which already exist in the platform.</p>\n    <h3 class=\"heading settled\" data-level=\"5.3\" id=\"permissions\"><span class=\"secno\">5.3. </span><span class=\"content\">Permissions &amp; User Activation</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#permissions\"></a></h3>\n    <p>As the <code class=\"idl\"><a data-link-type=\"idl\">requestOverride</a></code> method is a promise it gives user agents more control over the process of overriding a preference.</p>\n    <p>The <code class=\"idl\"><a data-link-type=\"idl\">requestOverride</a></code> method is gated behind a UA defined algorithm for determining if the action can proceed.</p>\n    <p>This could include a user prompt, or it could be a simple check to see if the user has interacted with the page.</p>\n    <h3 class=\"heading settled\" data-level=\"5.4\" id=\"sub-resources\"><span class=\"secno\">5.4. </span><span class=\"content\">Sub-resources</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#sub-resources\"></a></h3>\n    \n    <p>For the spec we can probably find an existing definition to reference, but for the purposes of this explainer:</p>\n    <ul>\n     <li data-md=\"\">\n      <p>Any <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> subresource (e.g. iframes) should get the overridden value.</p>\n     </li><li data-md=\"\">\n      <p>Any cross-origin subresource that already has communication with the parent (e.g. <code>postMessage</code>) should get the override value.</p>\n     </li><li data-md=\"\">\n      <p>Any cross-origin subresource with no external communication (e.g. an SVG loaded as an image) should get the override value.</p>\n     </li><li data-md=\"\">\n      <p>Any cross-origin subresource that has no communication with parent but can communicate externally should <strong>NOT</strong> get the override value.</p>\n    </li></ul>\n    <p>Wherever the override value is passed down it should probably be done so in an opaque manner.</p>\n    \n    \n    <h2 class=\"heading settled\" data-level=\"6\" id=\"sec-acknowledgements\"><span class=\"secno\">6. </span><span class=\"content\">Acknowledgements</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#sec-acknowledgements\"></a></h2>\n    <p><em>This section is non-normative.</em></p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>preference</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#preferenceobject\" id=\"ref-for-preferenceobject①③\">PreferenceObject</a></code> object that <var>value</var> is associated with.</p>"
+        },
+        {
+          "html": "Whenever the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent\">user agent</a> is aware that the state of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#preferenceobject\" id=\"ref-for-preferenceobject①①\">PreferenceObject</a></code> instance <var>value</var> has changed, it asynchronously runs the <dfn class=\"algorithm\" data-algorithm=\"PreferenceObject update steps\" data-algorithm-for=\"PreferenceObject\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"dfn\" data-lt=\"PreferenceObject update steps\" data-noexport=\"\" id=\"preferenceobject-preferenceobject-update-steps\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#preferenceobject\" id=\"ref-for-preferenceobject①②\">PreferenceObject</a></code> update steps<a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#preferenceobject-preferenceobject-update-steps\"></a></dfn>: \n    \n    <h4 class=\"heading settled\" data-level=\"3.6.5\" id=\"request-override-method\"><span class=\"secno\">3.6.5. </span><span class=\"content\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferenceobject-requestoverride\" id=\"ref-for-dom-preferenceobject-requestoverride①\">requestOverride()</a></code> method</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#request-override-method\"></a></h4>\n    <div class=\"algorithm\" data-algorithm=\"request preference override\">\n      The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-preferenceobject-requestoverride\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestOverride(value)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps: \n     \n    </div>\n    \n    \n    \n    <h4 class=\"heading settled\" data-level=\"3.6.6\" id=\"clear-override-method\"><span class=\"secno\">3.6.6. </span><span class=\"content\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferenceobject-clearoverride\" id=\"ref-for-dom-preferenceobject-clearoverride②\">clearOverride</a></code> method</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#clear-override-method\"></a></h4>\n    <div class=\"algorithm\" data-algorithm=\"clear preference override\">\n      The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-preferenceobject-clearoverride\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>clearOverride()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps: \n     \n    </div>\n    \n    <h4 class=\"heading settled\" data-level=\"3.6.7\" id=\"garbage-collection\"><span class=\"secno\">3.6.7. </span><span class=\"content\">Garbage Collection</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#garbage-collection\"></a></h4>\n    <p>A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#preferenceobject\" id=\"ref-for-preferenceobject①④\">PreferenceObject</a></code> object MUST NOT be garbage collected if it has an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\" id=\"ref-for-concept-event-listener\">event listener</a> whose type is <code>change</code>.</p>\n    <h2 class=\"heading settled\" data-level=\"4\" id=\"usage-examples\"><span class=\"secno\">4. </span><span class=\"content\">Usage Examples</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#usage-examples\"></a></h2>\n    <p><em>This section is non-normative.</em></p>\n    <p>Each preference the browser supports will be exposed as a property on the <code>navigator.preferences</code> object.</p>\n    <p>Feature detection for a given preference is as simple as:</p>\n<pre class=\"language-js highlight\"><c- a=\"\">const</c-> colorSchemeSupported <c- o=\"\">=</c-> <c- t=\"\">'colorScheme'</c-> <c- ow=\"\">in</c-> navigator<c- p=\"\">.</c->preferences<c- p=\"\">;</c->\n</pre>\n    <h3 class=\"heading settled\" data-level=\"4.1\" id=\"usage-request-a-preference-override\"><span class=\"secno\">4.1. </span><span class=\"content\">Requesting a preference override</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#usage-request-a-preference-override\"></a></h3>\n    <p>To request a preference override, the <code class=\"idl\"><a data-link-type=\"idl\">requestOverride</a></code> method can be called.</p>\n<pre class=\"language-js highlight\">navigator<c- p=\"\">.</c->preferences<c- p=\"\">.</c->colorScheme<c- p=\"\">.</c->requestOverride<c- p=\"\">(</c-><c- t=\"\">'dark'</c-><c- p=\"\">)</c->\n    <c- p=\"\">.</c->then<c- p=\"\">(()</c-> <c- p=\"\">=&gt;</c-> <c- p=\"\">{</c->\n         <c- c1=\"\">// The preference override was successful.</c->\n    <c- p=\"\">})</c->\n    <c- p=\"\">.</c-><c- k=\"\">catch</c-><c- p=\"\">((</c->error<c- p=\"\">)</c-> <c- p=\"\">=&gt;</c-> <c- p=\"\">{</c->\n         <c- c1=\"\">// The preference override request was rejected.</c->\n    <c- p=\"\">});</c->\n</pre>\n    <h3 class=\"heading settled\" data-level=\"4.2\" id=\"usage-clearing-a-preference-override\"><span class=\"secno\">4.2. </span><span class=\"content\">Clearing a preference override</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#usage-clearing-a-preference-override\"></a></h3>\n    <p>To clear an override and return the preference to the browser default, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferenceobject-clearoverride\" id=\"ref-for-dom-preferenceobject-clearoverride③\">clearOverride</a></code> method can be called.</p>\n<pre class=\"language-js highlight\">navigator<c- p=\"\">.</c->preferences<c- p=\"\">.</c->colorScheme<c- p=\"\">.</c->clearOverride<c- p=\"\">();</c->\n</pre>\n    <h3 class=\"heading settled\" data-level=\"4.3\" id=\"usage-getting-a-preference-override\"><span class=\"secno\">4.3. </span><span class=\"content\">Getting a preference override</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#usage-getting-a-preference-override\"></a></h3>\n    <p>To get the value of a preference override, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferenceobject-override\" id=\"ref-for-dom-preferenceobject-override②\">override</a></code> property can be read.\nEach preference property’s override property will return the string value indicating the preference, or null if no override is set.</p>\n<pre class=\"language-js highlight\"><c- a=\"\">const</c-> colorScheme <c- o=\"\">=</c-> navigator<c- p=\"\">.</c->preferences<c- p=\"\">.</c->colorScheme<c- p=\"\">.</c->override<c- p=\"\">;</c-> <c- c1=\"\">// \"light\" | \"dark\" | null</c->\n</pre>\n    <h3 class=\"heading settled\" data-level=\"4.4\" id=\"get-validValues\"><span class=\"secno\">4.4. </span><span class=\"content\">Getting valid values for a preference</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#get-validValues\"></a></h3>\n    <p>Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#preferenceobject\" id=\"ref-for-preferenceobject①⑤\">PreferenceObject</a></code> contains a validValues attribute that can be used to determine the valid values for a preference.</p>\n    <p>This is useful for sites that want to dynamically generate UI for overriding preferences.</p>\n    <p>It also allows sites to determine if a preference value is supported before attempting to set it.</p>\n<pre class=\"language-js highlight\"><c- a=\"\">const</c-> validValues <c- o=\"\">=</c-> navigator<c- p=\"\">.</c->preferences<c- p=\"\">.</c->colorScheme<c- p=\"\">.</c->validValues<c- p=\"\">;</c-> <c- c1=\"\">// [\"light\", \"dark\"]</c->\n</pre>\n    <h2 class=\"heading settled\" data-level=\"5\" id=\"sec-security\"><span class=\"secno\">5. </span><span class=\"content\">Security and Privacy Considerations</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#sec-security\"></a></h2>\n    <p><em>This section is non-normative.</em></p>\n    <h3 class=\"heading settled\" data-level=\"5.1\" id=\"storage\"><span class=\"secno\">5.1. </span><span class=\"content\">Storage of preference overrides</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#storage\"></a></h3>\n    <p>The overrides set by this API are intended to be persisted by the browser. These settings are clearable by any means the browser sees fit to implement.</p>\n    \n    <h3 class=\"heading settled\" data-level=\"5.2\" id=\"fingerprinting\"><span class=\"secno\">5.2. </span><span class=\"content\">Avoiding fingerprinting</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#fingerprinting\"></a></h3>\n    <p>This API exposes no new fingerprinting surfaces beyond that which already exist in the platform.</p>\n    <h3 class=\"heading settled\" data-level=\"5.3\" id=\"permissions\"><span class=\"secno\">5.3. </span><span class=\"content\">Permissions &amp; User Activation</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#permissions\"></a></h3>\n    <p>As the <code class=\"idl\"><a data-link-type=\"idl\">requestOverride</a></code> method is a promise it gives user agents more control over the process of overriding a preference.</p>\n    <p>The <code class=\"idl\"><a data-link-type=\"idl\">requestOverride</a></code> method is gated behind a UA defined algorithm for determining if the action can proceed.</p>\n    <p>This could include a user prompt, or it could be a simple check to see if the user has interacted with the page.</p>\n    <h3 class=\"heading settled\" data-level=\"5.4\" id=\"sub-resources\"><span class=\"secno\">5.4. </span><span class=\"content\">Sub-resources</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#sub-resources\"></a></h3>\n    \n    <p>For the spec we can probably find an existing definition to reference, but for the purposes of this explainer:</p>\n    <ul>\n     <li data-md=\"\">\n      <p>Any <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> subresource (e.g. iframes) should get the overridden value.</p>\n     </li><li data-md=\"\">\n      <p>Any cross-origin subresource that already has communication with the parent (e.g. <code>postMessage</code>) should get the override value.</p>\n     </li><li data-md=\"\">\n      <p>Any cross-origin subresource with no external communication (e.g. an SVG loaded as an image) should get the override value.</p>\n     </li><li data-md=\"\">\n      <p>Any cross-origin subresource that has no communication with parent but can communicate externally should <strong>NOT</strong> get the override value.</p>\n    </li></ul>\n    <p>Wherever the override value is passed down it should probably be done so in an opaque manner.</p>\n    \n    \n    <h2 class=\"heading settled\" data-level=\"6\" id=\"sec-acknowledgements\"><span class=\"secno\">6. </span><span class=\"content\">Acknowledgements</span><a class=\"self-link\" href=\"https://wicg.github.io/web-preferences-api/#sec-acknowledgements\"></a></h2>\n    <p><em>This section is non-normative.</em></p>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>document</var> be <var>preference</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>document</var> is null or <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, terminate this algorithm.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <code>change</code> at <var>preference</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "request preference override",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferenceobject-requestoverride",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-preferenceobject-requestoverride\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestOverride(value)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>allowed</var> be <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>allowed</var> to the result of executing a UA defined algorithm for deciding whether the request is allowed.</p>"
+        },
+        {
+          "html": "<p>If <var>allowed</var> is <code>false</code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>value</var> be the method’s argument.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-preferenceobject-requestoverride\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestOverride(value)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "<p>Run <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferenceobject-clearoverride\" id=\"ref-for-dom-preferenceobject-clearoverride①\">clearOverride</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> and return <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>currentValue</var> be the preference object’s <var>value</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>validValues</var> be null.</p>"
+        },
+        {
+          "html": "<p>If <var>preference</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferencemanager-colorscheme\" id=\"ref-for-dom-preferencemanager-colorscheme③\">colorScheme</a></code>\", set <var>validValues</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-preferences-api/#get-valid-values-for-colorscheme\" id=\"ref-for-get-valid-values-for-colorscheme①\">get valid values for colorScheme</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>preference</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferencemanager-contrast\" id=\"ref-for-dom-preferencemanager-contrast③\">contrast</a></code>\", set <var>validValues</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-preferences-api/#get-valid-values-for-contrast\" id=\"ref-for-get-valid-values-for-contrast①\">get valid values for contrast</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>preference</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferencemanager-reducedmotion\" id=\"ref-for-dom-preferencemanager-reducedmotion③\">reducedMotion</a></code>\", set <var>validValues</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-preferences-api/#get-valid-values-for-reducedmotion\" id=\"ref-for-get-valid-values-for-reducedmotion①\">get valid values for reducedMotion</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>preference</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferencemanager-reducedtransparency\" id=\"ref-for-dom-preferencemanager-reducedtransparency③\">reducedTransparency</a></code>\", set <var>validValues</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-preferences-api/#get-valid-values-for-reducedtransparency\" id=\"ref-for-get-valid-values-for-reducedtransparency①\">get valid values for reducedTransparency</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>preference</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/web-preferences-api/#dom-preferencemanager-reduceddata\" id=\"ref-for-dom-preferencemanager-reduceddata③\">reducedData</a></code>\", set <var>validValues</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-preferences-api/#get-valid-values-for-reduceddata\" id=\"ref-for-get-valid-values-for-reduceddata①\">get valid values for reducedData</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-preferenceobject-requestoverride\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestOverride(value)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>result</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+            },
+            {
+              "html": "<p>Return <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>previousOverride</var> be null.</p>"
+        },
+        {
+          "html": "<p>If an override for <var>preference</var> exists, set <var>previousOverride</var> to the value of that override.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-preferenceobject-requestoverride\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestOverride(value)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set the preference override for <var>preference</var> to <var>value</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-preferenceobject-requestoverride\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestOverride(value)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-preferenceobject-requestoverride\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestOverride(value)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">Fire an event</a> named <code>change</code> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> and return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "clear preference override",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferenceobject-clearoverride",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PreferenceObject\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-preferenceobject-clearoverride\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>clearOverride()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>preference</var> be the preference object’s name.</p>"
+        },
+        {
+          "html": "<p>Let <var>override</var> be null.</p>"
+        },
+        {
+          "html": "<p>If an override for <var>preference</var> exists, set <var>override</var> to the value of that override.</p>"
+        },
+        {
+          "html": "<p>If <var>override</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p>Clear the override for <var>preference</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>newValue</var> be the preference object’s <var>value</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>newValue</var> is equal to <var>override</var>, then:</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire②\">Fire an event</a> named <code>change</code> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

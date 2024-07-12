@@ -1,0 +1,46 @@
+{
+  "spec": {
+    "title": "CSS Conditional Rules Module Level 5",
+    "url": "https://drafts.csswg.org/css-conditional-5/"
+  },
+  "algorithms": [
+    {
+      "html": "The <code class=\"highlight\">conditionText</code> attribute (defined on the <code class=\"highlight\">CSSConditionRule</code> parent rule),\n\t\t\ton getting, must return a value as follows:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "The @container rule has an associated <container-name>",
+              "html": "The result of getting the <code class=\"highlight\">containerName</code> and <code class=\"highlight\">containerQuery</code> attributes, joined by a single whitespace."
+            },
+            {
+              "case": "Otherwise",
+              "html": "The result of getting the <code class=\"highlight\">containerQuery</code> attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"highlight\">containerName</code> attribute, on getting, must return a value as follows:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "The @container rule has an associated <container-name>",
+              "html": "The result of serializing that <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-name\" id=\"ref-for-typedef-container-name⑤\">&lt;container-name&gt;</a>."
+            },
+            {
+              "case": "Otherwise",
+              "html": "An empty string."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "spec": {
+    "title": "CSS Anchor Positioning",
+    "url": "https://drafts.csswg.org/css-anchor-position-1/"
+  },
+  "algorithms": [
+    {
+      "name": "target anchor element",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#target-anchor-element",
+      "html": "To determine the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"target-anchor-element\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">target <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#anchor-element\" id=\"ref-for-anchor-element④\">anchor element</a></dfn> given a querying element <var>query el</var> and an optional <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#anchor-specifier\" id=\"ref-for-anchor-specifier\">anchor specifier</a> <var>anchor spec</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>anchor spec</var> was not passed,\nreturn the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#target-anchor-element\" id=\"ref-for-target-anchor-element②\">target anchor element</a> for <var>query el</var> given the <var>query el</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#default-anchor-specifier\" id=\"ref-for-default-anchor-specifier\">default anchor specifier</a>.</p>"
+        },
+        {
+          "html": "To determine the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"target-anchor-element\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">target <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#anchor-element\" id=\"ref-for-anchor-element④\">anchor element</a></dfn> given a querying element <var>query el</var> and an optional <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#anchor-specifier\" id=\"ref-for-anchor-specifier\">anchor specifier</a> <var>anchor spec</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the Popover API defines an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#implicit-anchor-element\" id=\"ref-for-implicit-anchor-element④\">implicit anchor element</a> for <var>query el</var> which is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#acceptable-anchor-element\" id=\"ref-for-acceptable-anchor-element①\">acceptable anchor element</a> for <var>query el</var>,\nreturn that element.</p>"
+            },
+            {
+              "html": "<p>Otherwise, return nothing.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Otherwise, <var>anchor spec</var> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#typedef-dashed-ident\" id=\"ref-for-typedef-dashed-ident⑤\">&lt;dashed-ident&gt;</a>.\nReturn the last element <var>el</var> in tree order\nthat satisfies the following conditions:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>el</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#anchor-element\" id=\"ref-for-anchor-element⑤\">anchor element</a> with an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#anchor-name\" id=\"ref-for-anchor-name①③\">anchor name</a> of <var>anchor spec</var>.</p>\n       </li><li data-md=\"\">\n        <p><var>el</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#anchor-name\" id=\"ref-for-anchor-name①④\">anchor name</a> and <var>anchor spec</var> are both associated with the same <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree\" id=\"ref-for-concept-tree\">tree</a> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root\">root</a>.</p>\n        \n       </li><li data-md=\"\">\n        <p><var>el</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#acceptable-anchor-element\" id=\"ref-for-acceptable-anchor-element②\">acceptable anchor element</a> for <var>query el</var>.</p>\n      </li></ul>\n      <p>If no element satisfies these conditions,\nreturn nothing.</p>"
+        }
+      ]
+    },
+    {
+      "name": "swap due to a try-tactic",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#swap-due-to-a-try-tactic",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"swap-due-to-a-try-tactic\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">swap due to a try-tactic</dfn> the styles of an element <var>el</var> between two directions <var>directions</var>,\n\treturning a set of styles:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>directions</var> are opposites along the same axis,\nthey are \"opposing\".\nOtherwise (when they are specifying different axises),\nthey are \"perpendicular\".</p>"
+        },
+        {
+          "html": "<p>Determine the specified values of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#accepted-position-try-properties\" id=\"ref-for-accepted-position-try-properties①\">accepted @position-try properties</a> on <var>el</var>,\nand let <var>styles</var> be the result.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-2/#substitute-a-var\" id=\"ref-for-substitute-a-var\">Substitute variables</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-env-1/#funcdef-env\" id=\"ref-for-funcdef-env\">env()</a> functions,\nand similar substitution functions\nin <var>styles</var>.</p>"
+        },
+        {
+          "html": "<p>Swap the values of the <var>styles</var> between\nthe associated properties\ncorresponding to <var>directions</var>.</p>"
+        },
+        {
+          "html": "<p>Modify the values of the properties\nas they swap to match the new directions,\nas follows:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>For <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#inset-properties\" id=\"ref-for-inset-properties①⑧\">inset properties</a>,\nchange the specified side in <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor\" id=\"ref-for-funcdef-anchor②⓪\">anchor()</a> functions\nto maintain the same relative relationship to the new direction\nthat they had to the old.</p>\n        <p>If a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#percentage-value\" id=\"ref-for-percentage-value②\">&lt;percentage&gt;</a> is used,\nand <var>directions</var> are opposing,\nchange it to <span class=\"css\">100%</span> minus the original percentage.</p>\n        \n       </li><li data-md=\"\">\n        <p>For <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#sizing-property\" id=\"ref-for-sizing-property④\">sizing properties</a>,\nchange the specified axis in <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor-size\" id=\"ref-for-funcdef-anchor-size⑨\">anchor-size()</a> functions\nto maintain the same relative relationship to the new direction\nthat they had to the old.</p>\n        \n       </li><li data-md=\"\">\n        <p>For the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-align-3/#self-alignment-properties\" id=\"ref-for-self-alignment-properties④\">self-alignment properties</a>,\nif <var>directions</var> are opposing,\nchange the specified <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-align-3/#typedef-self-position\" id=\"ref-for-typedef-self-position\" title=\"Expands to: center | end | flex-end | flex-start | self-end | self-start | start\">&lt;self-position&gt;</a> (or <span class=\"css\">left</span>/<span class=\"css\">right</span> keywords),\nif any,\nto maintain the same relative relationship to the new direction\nthat they had to the old.</p>\n        \n       </li><li data-md=\"\">\n        <p>For <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-anchor-position-1/#propdef-inset-area\" id=\"ref-for-propdef-inset-area①⓪\">inset-area</a>,\nchange the value\nso that the selected rows/columns of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#inset-area-grid\" id=\"ref-for-inset-area-grid③\">inset-area grid</a> maintain the same relative relationship to the new direction\nthat they had to the old.</p>\n        \n      </li></ul>"
+        },
+        {
+          "html": "<p>Return <var>styles</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "apply a position option",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#apply-a-position-option",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"apply-a-position-option\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">apply a position option</dfn> to an element <var>el</var>,\n\tgiven a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#position-option\" id=\"ref-for-position-option⑦\">position option</a> <var>new styles</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>With <var>new styles</var> inserted into the cascade\nin the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#position-fallback-origin\" id=\"ref-for-position-fallback-origin\">position fallback origin</a>,\nresolve the cascade,\nand perform enough layout to determine <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value①\">used styles</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value②\">used styles</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "determine the position fallback styles",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#determine-the-position-fallback-styles",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-position-fallback-styles\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the position fallback styles</dfn> of an element <var>el</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>base styles</var> be the current used styles of <var>el</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-position-fallback-styles\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the position fallback styles</dfn> of an element <var>el</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>adjusted styles</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#apply-a-position-option\" id=\"ref-for-apply-a-position-option①\">applying a position option</a> <var>option</var> to <var>el</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>el rect</var> be the size and position of <var>el</var>’s margin box,\nwhen laid out with <var>adjusted styles</var>.</p>\n        <p>Let <var>cb rect</var> be the size and position of <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#inset-modified-containing-block\" id=\"ref-for-inset-modified-containing-block⑦\">inset-modified containing block</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-position-fallback-styles\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the position fallback styles</dfn> of an element <var>el</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>el rect</var> to the result of shifting it\nby the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#snapshotted-scroll-offset\" id=\"ref-for-snapshotted-scroll-offset③\">snapshotted scroll offset</a>.</p>"
+                },
+                {
+                  "html": "<p>Recalculate <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#inset-modified-containing-block\" id=\"ref-for-inset-modified-containing-block⑧\">inset-modified containing block</a>,\nwith any non-<a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-top-auto\" id=\"ref-for-valdef-top-auto②\">auto</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#inset-properties\" id=\"ref-for-inset-properties②⓪\">inset</a> values\nshifted by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#snapshotted-scroll-offset\" id=\"ref-for-snapshotted-scroll-offset④\">snapshotted scroll offset</a>.</p>\n          <p>If <var>el</var> has a non-<a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-none\" id=\"ref-for-valdef-inset-area-none\">none</a> <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-anchor-position-1/#propdef-inset-area\" id=\"ref-for-propdef-inset-area①④\">inset-area</a> value,\nthen for the purpose of the preceding calculation,\nshift the value of <span class=\"css\">anchor(start)</span> and <span class=\"css\">anchor(end)</span> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#inset-area-grid\" id=\"ref-for-inset-area-grid④\">inset-area grid</a> by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#snapshotted-scroll-offset\" id=\"ref-for-snapshotted-scroll-offset⑤\">snapshotted scroll offset</a> as well.</p>\n          \n          <p>Set <var>cb rect</var> to this result.</p>"
+                },
+                {
+                  "html": "<p>If <var>cb rect</var> was negative-size in either axis\nand corrected into zero-size, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>el rect</var> is not fully contained within <var>cb rect</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Return <var>adjusted styles</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: The previous step finished without finding a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#position-option\" id=\"ref-for-position-option⑧\">position option</a> that avoids overflow.</p>"
+        },
+        {
+          "html": "<p>If <var>el</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#last-successful-position-option\" id=\"ref-for-last-successful-position-option\">last successful position option</a>,\nreturn the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-anchor-position-1/#apply-a-position-option\" id=\"ref-for-apply-a-position-option②\">applying a position option</a>,\nusing that option,\nto <var>el</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>base styles</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

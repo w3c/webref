@@ -1,0 +1,589 @@
+{
+  "spec": {
+    "title": "Device Orientation and Motion",
+    "url": "https://w3c.github.io/deviceorientation/"
+  },
+  "algorithms": [
+    {
+      "name": "DeviceOrientationEvent/requestPermission(absolute)",
+      "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-requestpermission",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceOrientationEvent\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestPermission(absolute)|requestPermission()\" id=\"dom-deviceorientationevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission(<var>absolute</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>global</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object\">current global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>hasTransientActivation</var> be true if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, and false otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>permissions</var> be « <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-accelerometer\" id=\"ref-for-permissiondef-accelerometer③\">\"accelerometer\"</a>, <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-gyroscope\" id=\"ref-for-permissiondef-gyroscope③\">\"gyroscope\"</a> ».</p>"
+        },
+        {
+          "html": "<p>If <var>absolute</var> is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">append</a> <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-magnetometer\" id=\"ref-for-permissiondef-magnetometer②\">\"magnetometer\"</a> » to <var>permissions</var>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceOrientationEvent\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestPermission(absolute)|requestPermission()\" id=\"dom-deviceorientationevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission(<var>absolute</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceOrientationEvent\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestPermission(absolute)|requestPermission()\" id=\"dom-deviceorientationevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission(<var>absolute</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceOrientationEvent\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestPermission(absolute)|requestPermission()\" id=\"dom-deviceorientationevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission(<var>absolute</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+                  "rationale": "queue",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#device-motion-and-orientation-task-source\" id=\"ref-for-device-motion-and-orientation-task-source\">device motion and orientation task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Return.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>permissionState</var> be \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted\">granted</a></code>\".</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceOrientationEvent\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestPermission(absolute)|requestPermission()\" id=\"dom-deviceorientationevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission(<var>absolute</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceOrientationEvent\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestPermission(absolute)|requestPermission()\" id=\"dom-deviceorientationevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission(<var>absolute</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>permissionState</var> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied\">denied</a></code>\".</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">Break</a>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#device-motion-and-orientation-task-source\" id=\"ref-for-device-motion-and-orientation-task-source①\">device motion and orientation task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>promise</var> with <var>permissionState</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "fire an orientation event",
+      "href": "https://w3c.github.io/deviceorientation/#fire-an-orientation-event",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>orientation</var> be null.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevelTraversable</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable\">navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>virtualSensorType</var> be \"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#relative-orientation-virtual-sensor-type\" id=\"ref-for-relative-orientation-virtual-sensor-type\">relative-orientation</a></code>\" if <var>absolute</var> is false, and \"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#absolute-orientation-virtual-sensor-type\" id=\"ref-for-absolute-orientation-virtual-sensor-type\">absolute-orientation</a></code>\" otherwise.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>virtualSensor</var> be <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping①\">virtual sensor mapping</a>[<var>virtualSensorType</var>].</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>orientation</var> to the latest readings provided to <var>virtualSensor</var> with the \"<code>alpha</code>\", \"<code>beta</code>\", and \"<code>gamma</code>\" keys.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>orientation</var> to the device’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#relative-device-orientation\" id=\"ref-for-relative-device-orientation②\">relative orientation</a> in the tridimensional plane.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>orientation</var> to the device’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#absolute-orientation\" id=\"ref-for-absolute-orientation②\">absolute orientation</a> in the tridimensional plane.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>permissions</var> be null.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>permissions</var> to « <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-accelerometer\" id=\"ref-for-permissiondef-accelerometer④\">\"accelerometer\"</a>, <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-gyroscope\" id=\"ref-for-permissiondef-gyroscope④\">\"gyroscope\"</a> ».</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>permissions</var> to « <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-accelerometer\" id=\"ref-for-permissiondef-accelerometer⑤\">\"accelerometer\"</a>, <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-gyroscope\" id=\"ref-for-permissiondef-gyroscope⑤\">\"gyroscope\"</a>, <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-magnetometer\" id=\"ref-for-permissiondef-magnetometer③\">\"magnetometer\"</a> ».</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>environment</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>state</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-getting-the-current-permission-state\" id=\"ref-for-dfn-getting-the-current-permission-state\">getting the current permission state</a> with <var>permission</var> and <var>environment</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>state</var> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted②\">granted</a></code>\", return.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-orientation-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an orientation event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> <var>event</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code> <var>window</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-boolean\" id=\"ref-for-idl-boolean③\">boolean</a></code> <var>absolute</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>z</var> be <var>orientation</var>’s representation as intrinsic Tait-Bryan angles Z - X' - Y'' along the Z axis, or null if the implementation cannot provide an angle value.</p>"
+                },
+                {
+                  "html": "<p>If <var>z</var> is not null, limit <var>z</var>’s precision to 0.1 degrees.</p>"
+                },
+                {
+                  "html": "<p>Let <var>x</var> be <var>orientation</var>’s representation as intrinsic Tait-Bryan angles Z - X' - Y'' along the X' axis, or null if the implementation cannot provide an angle value.</p>"
+                },
+                {
+                  "html": "<p>If <var>x</var> is not null, limit <var>x</var>’s precision to 0.1 degrees.</p>"
+                },
+                {
+                  "html": "<p>Let <var>y</var> be <var>orientation</var>’s representation as intrinsic Tait-Bryan angles Z - X' - Y'' along the Y'' axis, or null if the implementation cannot provide an angle value.</p>"
+                },
+                {
+                  "html": "<p>If <var>y</var> is not null, limit <var>y</var>’s precision to 0.1 degrees.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">Fire an event</a> named <var>event</var> at <var>window</var>, using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#deviceorientationevent\" id=\"ref-for-deviceorientationevent\">DeviceOrientationEvent</a></code>, with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-alpha\" id=\"ref-for-dom-deviceorientationevent-alpha⑥\">alpha</a></code> attribute initialized to <var>z</var>, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-beta\" id=\"ref-for-dom-deviceorientationevent-beta⑤\">beta</a></code> attribute initialized to <var>x</var>, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-gamma\" id=\"ref-for-dom-deviceorientationevent-gamma⑤\">gamma</a></code> attribute initialized to <var>y</var>, and the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-absolute\" id=\"ref-for-dom-deviceorientationevent-absolute①\">absolute</a></code> attribute initialized to <var>absolute</var>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "deviceorientation firing steps",
+      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#significant-change-in-orientation\" id=\"ref-for-significant-change-in-orientation②\">significant change in orientation</a> occurs, the user agent must execute the following steps on a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable\">navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window\">active window</a> <var>window</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#visibility-state\" id=\"ref-for-visibility-state\">visibility state</a> is not <code>\"visible\"</code>, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>absolute</var> be false.</p>"
+        },
+        {
+          "html": "<p>Let <var>features</var> be « <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-accelerometer\" id=\"ref-for-permissiondef-accelerometer⑥\">\"accelerometer\"</a>, <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-gyroscope\" id=\"ref-for-permissiondef-gyroscope⑥\">\"gyroscope\"</a> ».</p>"
+        },
+        {
+          "html": "If the implementation cannot provide <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#relative-device-orientation\" id=\"ref-for-relative-device-orientation③\">relative orientation</a> or the resulting <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#absolute-orientation\" id=\"ref-for-absolute-orientation③\">absolute orientation</a> data is more accurate:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>absolute</var> to true.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-magnetometer\" id=\"ref-for-permissiondef-magnetometer④\">\"magnetometer\"</a> to <var>features</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>feature</var> of <var>features</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> <var>feature</var>, return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#fire-an-orientation-event\" id=\"ref-for-fire-an-orientation-event\">Fire an orientation event</a> with <a class=\"idl-code\" data-link-type=\"event\" href=\"https://w3c.github.io/deviceorientation/#def-deviceorientation\" id=\"ref-for-def-deviceorientation④\">deviceorientation</a>, <var>window</var>, and <var>absolute</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "deviceorientationabsolute firing steps",
+      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#significant-change-in-orientation\" id=\"ref-for-significant-change-in-orientation③\">significant change in orientation</a> occurs, the user agent must execute the following steps on a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable①\">navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a> <var>window</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#fire-an-orientation-event\" id=\"ref-for-fire-an-orientation-event①\">Fire an orientation event</a> with <a class=\"idl-code\" data-link-type=\"event\" href=\"https://w3c.github.io/deviceorientation/#def-deviceorientationabsolute\" id=\"ref-for-def-deviceorientationabsolute⑤\">deviceorientationabsolute</a>, <var>window</var>, and true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DeviceMotionEvent/requestPermission()",
+      "href": "https://w3c.github.io/deviceorientation/#dom-devicemotionevent-requestpermission",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceMotionEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-devicemotionevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>global</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object①\">current global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>hasTransientActivation</var> be true if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a>, and false otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceMotionEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-devicemotionevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>permissions</var> be « <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-accelerometer\" id=\"ref-for-permissiondef-accelerometer⑦\">\"accelerometer\"</a>, <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-gyroscope\" id=\"ref-for-permissiondef-gyroscope⑦\">\"gyroscope\"</a> ».</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceMotionEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-devicemotionevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceMotionEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-devicemotionevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+                  "rationale": "queue",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task③\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#device-motion-and-orientation-task-source\" id=\"ref-for-device-motion-and-orientation-task-source③\">device motion and orientation task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>result</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Return.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>permissionState</var> be \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted③\">granted</a></code>\".</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceMotionEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-devicemotionevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DeviceMotionEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-devicemotionevent-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>permissionState</var> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied①\">denied</a></code>\".</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break①\">Break</a>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#device-motion-and-orientation-task-source\" id=\"ref-for-device-motion-and-orientation-task-source④\">device motion and orientation task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>result</var> with <var>permissionState</var>.</p>\n       <p></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "devicemotion firing steps",
+      "html": "At an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a> interval <var>interval</var>, the user agent must execute the following steps on a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable②\">navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window②\">active window</a> <var>window</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#visibility-state\" id=\"ref-for-visibility-state①\">visibility state</a> is not \"<code>visible</code>\", return.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>policy</var> of « <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-accelerometer\" id=\"ref-for-permissiondef-accelerometer⑧\">\"accelerometer\"</a>, <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-gyroscope\" id=\"ref-for-permissiondef-gyroscope⑧\">\"gyroscope\"</a> »:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use①\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①\">policy-controlled feature</a> named <var>policy</var>, return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>topLevelTraversable</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①\">navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①\">top-level traversable</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>platformLinearAcceleration</var> be null.</p>"
+        },
+        {
+          "html": "If <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping②\">virtual sensor mapping</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">contains</a> \"<code>linear-acceleration</code>\":",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>virtualSensor</var> be <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping③\">virtual sensor mapping</a>[\"<code>linear-acceleration</code>\"].</p>"
+            },
+            {
+              "html": "<p>If <var>virtualSensor</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#virtual-sensor-can-provide-readings-flag\" id=\"ref-for-virtual-sensor-can-provide-readings-flag①\">can provide readings flag</a> is true, then set <var>platformLinearAcceleration</var> to the latest readings provided to <var>virtualSensor</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if the implementation is able to provide <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#linear-device-acceleration\" id=\"ref-for-linear-device-acceleration④\">linear acceleration</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>platformLinearAcceleration</var> to the device’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#linear-device-acceleration\" id=\"ref-for-linear-device-acceleration⑤\">linear acceleration</a> along the X, Y and Z axes.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>acceleration</var> be null.</p>"
+        },
+        {
+          "html": "If <var>platformLinearAcceleration</var> is not null:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>acceleration</var> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration\" id=\"ref-for-devicemotioneventacceleration③\">DeviceMotionEventAcceleration</a></code> created in <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\" id=\"ref-for-concept-global-object-realm\">realm</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>acceleration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-x-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-x-axis-acceleration①\">x axis acceleration</a> to <var>platformLinearAcceleration</var>’s value along the X axis, or null if it cannot be provided.</p>"
+            },
+            {
+              "html": "<p>If <var>acceleration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-x-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-x-axis-acceleration②\">x axis acceleration</a> is not null, limit its precision to no more than 0.1 m/s<sup>2</sup>.</p>"
+            },
+            {
+              "html": "<p>Set <var>acceleration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-y-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-y-axis-acceleration①\">y axis acceleration</a> to <var>platformLinearAcceleration</var>’s value along the Y axis, or null if it cannot be provided.</p>"
+            },
+            {
+              "html": "<p>If <var>acceleration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-y-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-y-axis-acceleration②\">y axis acceleration</a> is not null, limit its precision to no more than 0.1 m/s<sup>2</sup>.</p>"
+            },
+            {
+              "html": "<p>Set <var>acceleration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-z-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-z-axis-acceleration①\">z axis acceleration</a> to <var>platformLinearAcceleration</var>’s value along the Z axis, or null if it cannot be provided.</p>"
+            },
+            {
+              "html": "<p>If <var>acceleration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-z-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-z-axis-acceleration②\">z axis acceleration</a> is not null, limit its precision to no more than 0.1 m/s<sup>2</sup>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>platformAccelerationIncludingGravity</var> be null.</p>"
+        },
+        {
+          "html": "If <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping④\">virtual sensor mapping</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">contains</a> \"<code>accelerometer</code>\":",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>virtualSensor</var> be <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping⑤\">virtual sensor mapping</a>[\"<code>accelerometer</code>\"].</p>"
+            },
+            {
+              "html": "<p>If <var>virtualSensor</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#virtual-sensor-can-provide-readings-flag\" id=\"ref-for-virtual-sensor-can-provide-readings-flag②\">can provide readings flag</a> is true, then set <var>platformAccelerationIncludingGravity</var> to the latest readings provided to <var>virtualSensor</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if the implementation is able to provide <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#acceleration-with-gravity\" id=\"ref-for-acceleration-with-gravity②\">acceleration with gravity</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>platformAccelerationIncludingGravity</var> to the device’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#linear-device-acceleration\" id=\"ref-for-linear-device-acceleration⑥\">linear acceleration</a> along the X, Y and Z axes.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>accelerationIncludingGravity</var> be null.</p>"
+        },
+        {
+          "html": "If <var>platformAccelerationIncludingGravity</var> is not null:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>accelerationIncludingGravity</var> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration\" id=\"ref-for-devicemotioneventacceleration④\">DeviceMotionEventAcceleration</a></code> created in <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\" id=\"ref-for-concept-global-object-realm①\">realm</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>accelerationIncludingGravity</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-x-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-x-axis-acceleration③\">x axis acceleration</a> to <var>platformAccelerationIncludingGravity</var>’s value along the X axis, or null if it cannot be provided.</p>"
+            },
+            {
+              "html": "<p>If <var>accelerationIncludingGravity</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-x-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-x-axis-acceleration④\">x axis acceleration</a> is not null, limit its precision to no more than 0.1 m/s<sup>2</sup>.</p>"
+            },
+            {
+              "html": "<p>Set <var>accelerationIncludingGravity</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-y-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-y-axis-acceleration③\">y axis acceleration</a> to <var>platformAccelerationIncludingGravity</var>’s value along the Y axis, or null if it cannot be provided.</p>"
+            },
+            {
+              "html": "<p>If <var>accelerationIncludingGravity</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-y-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-y-axis-acceleration④\">y axis acceleration</a> is not null, limit its precision to no more than 0.1 m/s<sup>2</sup>.</p>"
+            },
+            {
+              "html": "<p>Set <var>accelerationIncludingGravity</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-z-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-z-axis-acceleration③\">z axis acceleration</a> to <var>platformAccelerationIncludingGravity</var>’s value along the Z axis, or null if it cannot be provided.</p>"
+            },
+            {
+              "html": "<p>If <var>accelerationIncludingGravity</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventacceleration-z-axis-acceleration\" id=\"ref-for-devicemotioneventacceleration-z-axis-acceleration④\">z axis acceleration</a> is not null, limit its precision to no more than 0.1 m/s<sup>2</sup>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>platformRotationRate</var> be null.</p>"
+        },
+        {
+          "html": "If <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping⑥\">virtual sensor mapping</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">contains</a> \"<code>gyroscope</code>\":",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>virtualSensor</var> be <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping⑦\">virtual sensor mapping</a>[\"<code>gyroscope</code>\"].</p>"
+            },
+            {
+              "html": "<p>If <var>virtualSensor</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#virtual-sensor-can-provide-readings-flag\" id=\"ref-for-virtual-sensor-can-provide-readings-flag③\">can provide readings flag</a> is true, then set <var>platformRotationRate</var> to the latest readings provided to <var>virtualSensor</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if the implementation is able to provide <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#rotation-rate\" id=\"ref-for-rotation-rate③\">rotation rate</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>platformRotationRate</var> to the device’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#rotation-rate\" id=\"ref-for-rotation-rate④\">rotation rate</a> about the X, Y and Z axes.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>rotationRate</var> be null.</p>"
+        },
+        {
+          "html": "If <var>platformRotationRate</var> is not null:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>rotationRate</var> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new②\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventrotationrate\" id=\"ref-for-devicemotioneventrotationrate②\">DeviceMotionEventRotationRate</a></code> created in <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\" id=\"ref-for-concept-global-object-realm②\">realm</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>rotationRate</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventrotationrate-x-axis-rotation-rate\" id=\"ref-for-devicemotioneventrotationrate-x-axis-rotation-rate①\">x axis rotation rate</a> to <var>platformRotationRate</var>’s value about the X axis, or null if it cannot be provided.</p>"
+            },
+            {
+              "html": "<p>If <var>rotationRate</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventrotationrate-x-axis-rotation-rate\" id=\"ref-for-devicemotioneventrotationrate-x-axis-rotation-rate②\">x axis rotation rate</a> is not null, limit its precision to no more than 0.1 deg/s.</p>"
+            },
+            {
+              "html": "<p>Set <var>rotationRate</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventrotationrate-y-axis-rotation-rate\" id=\"ref-for-devicemotioneventrotationrate-y-axis-rotation-rate①\">y axis rotation rate</a> to <var>platformRotationRate</var>’s value about the Y axis, or null if it cannot be provided.</p>"
+            },
+            {
+              "html": "<p>If <var>rotationRate</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventrotationrate-y-axis-rotation-rate\" id=\"ref-for-devicemotioneventrotationrate-y-axis-rotation-rate②\">y axis rotation rate</a> is not null, limit its precision to no more than 0.1 deg/s.</p>"
+            },
+            {
+              "html": "<p>Set <var>rotationRate</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventrotationrate-z-axis-rotation-rate\" id=\"ref-for-devicemotioneventrotationrate-z-axis-rotation-rate①\">z axis rotation rate</a> to <var>platformRotationRate</var>’s value about the Z axis, or null if it cannot be provided.</p>"
+            },
+            {
+              "html": "<p>If <var>rotationRate</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#devicemotioneventrotationrate-z-axis-rotation-rate\" id=\"ref-for-devicemotioneventrotationrate-z-axis-rotation-rate②\">z axis rotation rate</a> is not null, limit its precision to no more than 0.1 deg/s.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>environment</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>permission</var> in « <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-accelerometer\" id=\"ref-for-permissiondef-accelerometer⑨\">\"accelerometer\"</a>, <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/deviceorientation/#permissiondef-gyroscope\" id=\"ref-for-permissiondef-gyroscope⑨\">\"gyroscope\"</a> »:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>state</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-getting-the-current-permission-state\" id=\"ref-for-dfn-getting-the-current-permission-state①\">getting the current permission state</a> with <var>permission</var> and <var>environment</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>state</var> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted⑤\">granted</a></code>\", return.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑤\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/deviceorientation/#device-motion-and-orientation-task-source\" id=\"ref-for-device-motion-and-orientation-task-source⑤\">device motion and orientation task source</a> given <var>window</var> to run the following steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">Fire an event</a> named \"<a class=\"idl-code\" data-link-type=\"event\" href=\"https://w3c.github.io/deviceorientation/#def-devicemotion\" id=\"ref-for-def-devicemotion③\">devicemotion</a>\" at <var>window</var>, using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#devicemotionevent\" id=\"ref-for-devicemotionevent\">DeviceMotionEvent</a></code>, with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#dom-devicemotionevent-acceleration\" id=\"ref-for-dom-devicemotionevent-acceleration③\">acceleration</a></code> attribute initialized to <var>acceleration</var>, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#dom-devicemotionevent-accelerationincludinggravity\" id=\"ref-for-dom-devicemotionevent-accelerationincludinggravity④\">accelerationIncludingGravity</a></code> attribute initialized to <var>accelerationIncludingGravity</var>, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#dom-devicemotionevent-rotationrate\" id=\"ref-for-dom-devicemotionevent-rotationrate②\">rotationRate</a></code> attribute initialized to <var>rotationRate</var>, and the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/deviceorientation/#dom-devicemotionevent-interval\" id=\"ref-for-dom-devicemotionevent-interval①\">interval</a></code> attribute initialized to <var>interval</var>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "parse orientation data reading",
+      "href": "https://w3c.github.io/deviceorientation/#parse-orientation-data-reading",
+      "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-orientation-data-reading\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse orientation data reading</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> algorithm, given a JSON <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects\" id=\"ref-for-sec-object-objects\">Object</a></code> <var>parameters</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>alpha</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties\">get a property</a> from <var>parameters</var> with \"alpha\".</p>"
+        },
+        {
+          "html": "<p>If <var>alpha</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects\" id=\"ref-for-sec-number-objects\">Number</a></code>, or its value is NaN, +∞, or −∞, return <code>undefined</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>alpha</var> is not in the range [0, 360), then return <code>undefined</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>beta</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties①\">get a property</a> from <var>parameters</var> with \"beta\".</p>"
+        },
+        {
+          "html": "<p>If <var>beta</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects\" id=\"ref-for-sec-number-objects①\">Number</a></code>, or its value is NaN, +∞, or −∞, return <code>undefined</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>beta</var> is not in the range [-180, 180), then return <code>undefined</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>gamma</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties②\">get a property</a> from <var>parameters</var> with \"gamma\".</p>"
+        },
+        {
+          "html": "<p>If <var>gamma</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects\" id=\"ref-for-sec-number-objects②\">Number</a></code>, or its value is NaN, +∞, or −∞, return <code>undefined</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>gamma</var> is not in the range [-90, 90), then return <code>undefined</code>.</p>"
+        },
+        {
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">ordered map</a> «[ \"alpha\" → <var>alpha</var>, \"beta\" → <var>beta</var>, \"gamma\" → <var>gamma</var> ]».</p>"
+        }
+      ]
+    }
+  ]
+}

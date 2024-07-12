@@ -1053,7 +1053,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder"
       },
       "MLArgMinMaxOptions": {
-        "fragment": "dictionary MLArgMinMaxOptions {\n  sequence<[EnforceRange] unsigned long> axes;\n  boolean keepDimensions = false;\n  boolean selectLastIndex = false;\n};",
+        "fragment": "dictionary MLArgMinMaxOptions {\n  sequence<[EnforceRange] unsigned long> axes;\n  boolean keepDimensions = false;\n};",
         "type": "dictionary",
         "name": "MLArgMinMaxOptions",
         "inheritance": null,
@@ -1108,25 +1108,6 @@
             },
             "required": false,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlargminmaxoptions-keepdimensions"
-          },
-          {
-            "type": "field",
-            "name": "selectLastIndex",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlargminmaxoptions-selectlastindex"
           }
         ],
         "extAttrs": [],

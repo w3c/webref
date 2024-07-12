@@ -1,0 +1,147 @@
+{
+  "spec": {
+    "title": "Fetch Metadata Request Headers",
+    "url": "https://w3c.github.io/webappsec-fetch-metadata/"
+  },
+  "algorithms": [
+    {
+      "name": "set `Sec-Fetch-Dest`",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-set-dest",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"set-dest\" id=\"abstract-opdef-set-dest\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the <code>Sec-Fetch-Dest</code> header</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③\">request</a> <var>r</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">url</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url\">potentially trustworthy URL</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#\" id=\"ref-for-something①\">Structured Header</a> whose value is a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#section-3.7\" id=\"ref-for-section-3.7①\">token</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination②\">destination</a> is the empty string, set <var>header</var>’s value to the string\n\"<code>empty</code>\". Otherwise, set <var>header</var>’s value to <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination③\">destination</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">Set a structured field value</a> `<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-dest\" id=\"ref-for-http-headerdef-sec-fetch-dest\"><code>Sec-Fetch-Dest</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "set `Sec-Fetch-Mode`",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-set-mode",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"set-mode\" id=\"abstract-opdef-set-mode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the <code>Sec-Fetch-Mode</code> header</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤\">request</a> <var>r</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">url</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url①\">potentially trustworthy URL</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#\" id=\"ref-for-something③\">Structured Header</a> whose value is a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#section-3.7\" id=\"ref-for-section-3.7④\">token</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>header</var>’s value to <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode①\">mode</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header①\">Set a structured field value</a> `<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-mode\" id=\"ref-for-http-headerdef-sec-fetch-mode\"><code>Sec-Fetch-Mode</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "set `Sec-Fetch-Site`",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-set-site",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"set-site\" id=\"abstract-opdef-set-site\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the <code>Sec-Fetch-Site</code> header</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑦\">request</a> <var>r</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url②\">url</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url②\">potentially trustworthy URL</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#\" id=\"ref-for-something⑤\">Structured Header</a> whose value is a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#section-3.7\" id=\"ref-for-section-3.7⑥\">token</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>header</var>’s value to <code>same-origin</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>r</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#navigation-request\" id=\"ref-for-navigation-request\">navigation request</a> that was explicitly caused by a user’s interaction with\nthe user agent (by typing an address into the user agent directly, for example, or by\nclicking a bookmark, etc.), then set <var>header</var>’s value to <code>none</code>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"set-site\" id=\"abstract-opdef-set-site\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the <code>Sec-Fetch-Site</code> header</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑦\">request</a> <var>r</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>url</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>header</var>’s value to <code>cross-site</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin①\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-site-same-site\" id=\"ref-for-concept-site-same-site\">same site</a> with <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>header</var>’s value to <code>same-site</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header②\">Set a structured field value</a> `<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-site\" id=\"ref-for-http-headerdef-sec-fetch-site\"><code>Sec-Fetch-Site</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②\">header list</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "set `Sec-Fetch-User`",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-set-user",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"set-user\" id=\"abstract-opdef-set-user\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the <code>Sec-Fetch-User</code> header</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑧\">request</a> <var>r</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url③\">url</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url③\">potentially trustworthy URL</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>r</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#navigation-request\" id=\"ref-for-navigation-request③\">navigation request</a>, or if <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-user-activation\" id=\"ref-for-request-user-activation\">user-activation</a> is <code>false</code>, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#\" id=\"ref-for-something⑦\">Structured Header</a> whose value is a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#section-3.7\" id=\"ref-for-section-3.7⑦\">token</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>header</var>’s value to <code>true</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header③\">Set a structured field value</a> `<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-user\" id=\"ref-for-http-headerdef-sec-fetch-user\"><code>Sec-Fetch-User</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list③\">header list</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "append fetch metadata headers",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-append-the-fetch-metadata-headers-for-a-request",
+      "html": "To <dfn data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-append-the-fetch-metadata-headers-for-a-request\">append the Fetch metadata headers for a request<a class=\"self-link\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-append-the-fetch-metadata-headers-for-a-request\"></a></dfn>, given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⓪\">request</a> <var>r</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url④\">url</a> is not an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url④\">potentially trustworthy URL</a>, return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-set-dest\" id=\"ref-for-abstract-opdef-set-dest\">Set the <code>Sec-Fetch-Dest</code> header</a> for <var>r</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-set-mode\" id=\"ref-for-abstract-opdef-set-mode\">Set the <code>Sec-Fetch-Mode</code> header</a> for <var>r</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-set-site\" id=\"ref-for-abstract-opdef-set-site\">Set the <code>Sec-Fetch-Site</code> header</a> for <var>r</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-set-user\" id=\"ref-for-abstract-opdef-set-user\">Set the <code>Sec-Fetch-User</code> header</a> for <var>r</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "With these goals in mind, user agents are encouraged to implement the following behaviors:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If an extension does not have permission to access to a given URL, its requests to that URL could\ncontain a <code>Sec-Fetch-Site</code> header whose value is <code>cross-site</code>, just as a normal web request would.\nIf the extension does have access to a given URL, the <code>Sec-Fetch-Site</code> value could be <code>same-origin</code>.</p>"
+        },
+        {
+          "html": "<p>The <code>Origin</code> header could be included with outgoing requests from extension contexts, with an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> value that allows servers to distinguish extension-initiated requests\nfrom web-initiated requests.</p>"
+        }
+      ]
+    }
+  ]
+}

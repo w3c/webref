@@ -1,0 +1,174 @@
+{
+  "spec": {
+    "title": "requestIdleCallback()",
+    "url": "https://w3c.github.io/requestidlecallback/"
+  },
+  "algorithms": [
+    {
+      "name": "IdleRequestCallback",
+      "href": "https://w3c.github.io/requestidlecallback/#dom-idlerequestcallback",
+      "html": "When <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Window\" data-xref-for=\"Window\" href=\"https://w3c.github.io/requestidlecallback/#dom-window-requestidlecallback\" class=\"internalDFN\" id=\"ref-for-dom-window-requestidlecallback-8\"><code>requestIdleCallback</code></a><code>(<var>callback</var>, <var>options</var>)</code> is\n      invoked with a given <dfn data-export=\"\" data-dfn-type=\"callback\" id=\"dom-idlerequestcallback\" data-idl=\"callback\" data-title=\"IdleRequestCallback\" data-dfn-for=\"\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>IdleRequestCallback</code></dfn>\n      and optional <dfn data-export=\"\" data-dfn-type=\"dictionary\" id=\"dom-idlerequestoptions\" data-idl=\"dictionary\" data-title=\"IdleRequestOptions\" data-dfn-for=\"\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>IdleRequestOptions</code></dfn>, the user agent\n      <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>window</var> be this <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Window\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\"><code>Window</code></a> object."
+        },
+        {
+          "html": "Increment the <var>window</var>'s <a href=\"https://w3c.github.io/requestidlecallback/#dfn-idle-callback-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-idle-callback-identifier-1\">idle callback identifier</a>\n        by one."
+        },
+        {
+          "html": "Let <var>handle</var> be the current value of <var>window</var>'s\n        <a href=\"https://w3c.github.io/requestidlecallback/#dfn-idle-callback-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-idle-callback-identifier-2\">idle callback identifier</a>."
+        },
+        {
+          "html": "Push <var>callback</var> to the end of <var>window</var>'s <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-idle-request-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-idle-request-callbacks-1\">list\n        of idle request callbacks</a>, associated with <var>handle</var>."
+        },
+        {
+          "html": "Return <var>handle</var> and then continue running this algorithm\n        asynchronously."
+        },
+        {
+          "html": "If the <code><dfn data-dfn-for=\"IdleRequestOptions\" data-export=\"\" data-dfn-type=\"dict-member\" id=\"dom-idlerequestoptions-timeout\" data-idl=\"field\" data-title=\"timeout\" data-type=\"unsigned long\" tabindex=\"0\" aria-haspopup=\"dialog\">timeout</dfn>\n        </code> property is present in <var>options</var> and has a positive\n        value:",
+          "rationale": "wait",
+          "steps": [
+            {
+              "html": "Wait for <var>timeout</var> milliseconds."
+            },
+            {
+              "html": "Wait until all invocations of this algorithm, whose\n            <var>timeout</var> added to their posted time occurred before this\n            one's, have completed."
+            },
+            {
+              "html": "Optionally, wait a further user-agent defined length of time."
+            },
+            {
+              "html": "<a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on the queue associated with the idle-task\n            <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"task-source\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#task-source\">task source</a>, which performs the <a href=\"https://w3c.github.io/requestidlecallback/#dfn-invoke-idle-callback-timeout-algorithm\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invoke-idle-callback-timeout-algorithm-1\">invoke idle callback\n            timeout algorithm</a>, passing <var>handle</var> and\n            <var>window</var> as arguments."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"Window\" data-xref-for=\"Window\" data-lt=\"cancelIdleCallback()\" href=\"https://w3c.github.io/requestidlecallback/#dom-window-cancelidlecallback\" class=\"internalDFN\" id=\"ref-for-dom-window-cancelidlecallback-2\"><code>cancelIdleCallback</code></a><code>()</code> method is used to cancel a\n      previously made request to schedule an idle callback. When\n      <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Window\" data-xref-for=\"Window\" href=\"https://w3c.github.io/requestidlecallback/#dom-window-cancelidlecallback\" class=\"internalDFN\" id=\"ref-for-dom-window-cancelidlecallback-3\"><code>cancelIdleCallback</code></a><code>(<var>handle</var>)</code> is invoked, the user agent\n      <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>window</var> be this <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Window\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\"><code>Window</code></a> object."
+        },
+        {
+          "html": "Find the entry in either the <var>window</var>'s <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-idle-request-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-idle-request-callbacks-2\">list of idle\n        request callbacks</a> or <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-runnable-idle-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-runnable-idle-callbacks-1\">list of runnable idle callbacks</a> that is\n        associated with the value <var>handle</var>."
+        },
+        {
+          "html": "If there is such an entry, remove it from both <var>window</var>'s\n        <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-idle-request-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-idle-request-callbacks-3\">list of idle request callbacks</a> and the <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-runnable-idle-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-runnable-idle-callbacks-2\">list of runnable idle\n        callbacks</a>."
+        }
+      ]
+    },
+    {
+      "name": "IdleDeadline/timeRemaining()",
+      "href": "https://w3c.github.io/requestidlecallback/#dom-idledeadline-timeremaining",
+      "html": "When the <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-idledeadline-timeremaining\" data-idl=\"operation\" data-title=\"timeRemaining()\" data-dfn-for=\"IdleDeadline\" data-type=\"DOMHighResTimeStamp\" data-lt=\"timeRemaining()\" data-local-lt=\"IdleDeadline.timeRemaining|IdleDeadline.timeRemaining()|timeRemaining\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>timeRemaining()</code></dfn> method is invoked on\n      an <a href=\"https://w3c.github.io/requestidlecallback/#dom-idledeadline\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-idledeadline-4\"><code>IdleDeadline</code></a> object it <em class=\"rfc2119\">MUST</em> return the remaining duration before\n      the deadline expires as a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMHighResTimeStamp\" data-cite=\"hr-time\" data-cite-path=\"/\" data-cite-frag=\"dom-domhighrestimestamp\" data-type=\"typedef\" href=\"https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a>, which <em class=\"rfc2119\">SHOULD</em> be\n      enough to allow measurement while preventing timing attack - see\n      \"Privacy and Security\" section of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/requestidlecallback/#bib-hr-time\" title=\"High Resolution Time\">HR-TIME</a></cite>]. This value is calculated\n      by performing the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>now</var> be a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMHighResTimeStamp\" data-cite=\"hr-time\" data-cite-path=\"/\" data-cite-frag=\"dom-domhighrestimestamp\" data-type=\"typedef\" href=\"https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a> representing\n        <a data-cite=\"hr-time\" data-cite-path=\"/\" data-cite-frag=\"dfn-current-high-resolution-time\" data-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\">current high resolution time</a> in milliseconds."
+        },
+        {
+          "html": "Let <var>deadline</var> be the result of calling <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"IdleDeadline\" href=\"https://w3c.github.io/requestidlecallback/#dom-idledeadline\" class=\"internalDFN\" id=\"ref-for-dom-idledeadline-5\"><code>IdleDeadline</code></a>'s <a href=\"https://w3c.github.io/requestidlecallback/#dfn-get-deadline-time\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-deadline-time-1\">get deadline time</a> algorithm."
+        },
+        {
+          "html": "Let <var>timeRemaining</var> be <var>deadline</var> -\n        <var>now</var>."
+        },
+        {
+          "html": "If <var>timeRemaining</var> is negative, set it to 0."
+        },
+        {
+          "html": "Return <var>timeRemaining</var>."
+        }
+      ]
+    },
+    {
+      "name": "start an idle period",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-start-an-idle-period",
+      "html": "To <dfn class=\"export\" data-export=\"\" id=\"dfn-start-an-idle-period\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">start an idle period</dfn> given <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Window\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\"><code>Window</code></a> <var>window</var> and\n      <var>getDeadline</var>, an algorithm that returns a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMHighResTimeStamp\" data-cite=\"hr-time\" data-cite-path=\"/\" data-cite-frag=\"dom-domhighrestimestamp\" data-type=\"typedef\" href=\"https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a>: [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/requestidlecallback/#bib-hr-time\" title=\"High Resolution Time\">HR-TIME</a></cite>]",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Optionally, if the user agent determines the idle period should\n        be delayed, return from this algorithm."
+        },
+        {
+          "html": "Let <var>pending_list</var> be <var>window</var>'s <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-idle-request-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-idle-request-callbacks-5\">list of idle\n        request callbacks</a>."
+        },
+        {
+          "html": "Let <var>run_list</var> be <var>window</var>'s <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-runnable-idle-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-runnable-idle-callbacks-4\">list of runnable\n        idle callbacks</a>."
+        },
+        {
+          "html": "Append all entries from <var>pending_list</var> into\n        <var>run_list</var> preserving order."
+        },
+        {
+          "html": "Clear <var>pending_list</var>."
+        },
+        {
+          "html": "<a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on the queue associated with the idle-task\n        <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"task-source\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#task-source\">task source</a>, which performs the steps defined in the <a href=\"https://w3c.github.io/requestidlecallback/#dfn-invoke-idle-callbacks-algorithm\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invoke-idle-callbacks-algorithm-1\">invoke\n        idle callbacks algorithm</a> with <var>window</var> and <var>getDeadline</var> as\n        parameters."
+        }
+      ]
+    },
+    {
+      "name": "invoke idle callbacks algorithm",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-invoke-idle-callbacks-algorithm",
+      "html": "To <dfn id=\"dfn-invoke-idle-callbacks-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">invoke idle callbacks algorithm</dfn> given <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Window\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\"><code>Window</code></a> <var>window</var> and\n      <var>getDeadline</var>, an algorithm returning a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMHighResTimeStamp\" data-cite=\"hr-time\" data-cite-path=\"/\" data-cite-frag=\"dom-domhighrestimestamp\" data-type=\"typedef\" href=\"https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a>: [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/requestidlecallback/#bib-hr-time\" title=\"High Resolution Time\">HR-TIME</a></cite>].",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the user-agent believes it should end the idle period early due\n        to newly scheduled high-priority work, return from the algorithm."
+        },
+        {
+          "html": "Let <var>now</var> be the current time."
+        },
+        {
+          "html": "If <var>now</var> is less than the result of calling <var>getDeadline</var> and the\n        <var>window</var>'s <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-runnable-idle-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-runnable-idle-callbacks-5\">list of runnable idle callbacks</a> is not empty:",
+          "rationale": "pop",
+          "steps": [
+            {
+              "html": "Pop the top <var>callback</var> from <var>window</var>'s\n            <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-runnable-idle-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-runnable-idle-callbacks-6\">list of runnable idle callbacks</a>."
+            },
+            {
+              "html": "Let <var>deadlineArg</var> be a new <a href=\"https://w3c.github.io/requestidlecallback/#dom-idledeadline\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-idledeadline-7\"><code>IdleDeadline</code></a> whose\n             is <var>getDeadline</var>."
+            },
+            {
+              "html": "Call <var>callback</var> with <var>deadlineArg</var> as its\n            argument. If an uncaught runtime script error occurs, then <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"report-the-exception\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\">report the exception</a>."
+            },
+            {
+              "html": "If <var>window</var>'s <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-runnable-idle-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-runnable-idle-callbacks-7\">list of runnable idle callbacks</a>\n            is not empty, <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queue a task</a> which performs the steps in the\n            <a href=\"https://w3c.github.io/requestidlecallback/#dfn-invoke-idle-callbacks-algorithm\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invoke-idle-callbacks-algorithm-2\">invoke idle callbacks algorithm</a> with <var>getDeadline</var>\n            and <var>window</var> as a parameters and return from this\n            algorithm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "invoke idle callback timeout algorithm",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-invoke-idle-callback-timeout-algorithm",
+      "html": "The <dfn id=\"dfn-invoke-idle-callback-timeout-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">invoke idle callback timeout algorithm</dfn>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>callback</var> be the result of finding the entry in <var>\n          window</var>'s <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-idle-request-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-idle-request-callbacks-6\">list of idle request callbacks</a> or the <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-runnable-idle-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-runnable-idle-callbacks-8\">list\n          of runnable idle callbacks</a> that is associated with the value\n          given by the <var>handle</var> argument passed to the algorithm."
+        },
+        {
+          "html": "If <var>callback</var> is not undefined:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "Remove <var>callback</var> from both <var>window</var>'s <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-idle-request-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-idle-request-callbacks-7\">list\n            of idle request callbacks</a> and the <a href=\"https://w3c.github.io/requestidlecallback/#dfn-list-of-runnable-idle-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-runnable-idle-callbacks-9\">list of runnable idle\n            callbacks</a>."
+            },
+            {
+              "html": "Let <var>now</var> be the current time."
+            },
+            {
+              "html": "Let <var>deadlineArg</var> be a new <a href=\"https://w3c.github.io/requestidlecallback/#dom-idledeadline\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-idledeadline-8\"><code>IdleDeadline</code></a>.\n            Set the <a href=\"https://w3c.github.io/requestidlecallback/#dfn-get-deadline-time\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-deadline-time-2\">get deadline time</a> algorithm associated with <var>deadlineArg</var> to\n            an algorithm returning <var>now</var> and set the <a href=\"https://w3c.github.io/requestidlecallback/#dfn-timeout\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-timeout-3\">timeout</a> associated with\n            <var>deadlineArg</var> to <code>true</code>."
+            },
+            {
+              "html": "Call <var>callback</var> with <var>deadlineArg</var> as its\n            argument. If an uncaught runtime script error occurs, then <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"report-the-exception\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\">report the exception</a>."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

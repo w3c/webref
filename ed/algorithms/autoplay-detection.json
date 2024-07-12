@@ -1,0 +1,66 @@
+{
+  "spec": {
+    "title": "Autoplay Policy Detection",
+    "url": "https://w3c.github.io/autoplay/"
+  },
+  "algorithms": [
+    {
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy\" id=\"ref-for-dom-navigator-getautoplaypolicy①\">getAutoplayPolicy(type)</a></code> method is called, the user agent MUST run\n      the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy-type-type\" id=\"ref-for-dom-navigator-getautoplaypolicy-type-type\">type</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/autoplay/#dom-autoplaypolicymediatype-mediaelement\" id=\"ref-for-dom-autoplaypolicymediatype-mediaelement①\">mediaelement</a></code>, return a\n          result that represents the current status for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#htmlmediaelement\" id=\"ref-for-htmlmediaelement⑤\">HTMLMediaElement</a></code> and its extensions, such as <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement\" id=\"ref-for-htmlvideoelement②\">HTMLVideoElement</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#htmlaudioelement\" id=\"ref-for-htmlaudioelement②\">HTMLAudioElement</a></code>, which exist in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-2\" id=\"ref-for-dom-document-2②\">document</a></code> contained in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window②\">Window</a></code> object associated with the queried <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#navigator\" id=\"ref-for-navigator④\">Navigator</a></code> object."
+        },
+        {
+          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy-type-type\" id=\"ref-for-dom-navigator-getautoplaypolicy-type-type①\">type</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/autoplay/#dom-autoplaypolicymediatype-audiocontext\" id=\"ref-for-dom-autoplaypolicymediatype-audiocontext①\">audiocontext</a></code>, return a\n          result that represents the current status for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext②\">AudioContext</a></code>,\n          which exist in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-2\" id=\"ref-for-dom-document-2③\">document</a></code> contained in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window③\">Window</a></code> object\n          associated with the queried <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#navigator\" id=\"ref-for-navigator⑤\">Navigator</a></code> object."
+        }
+      ]
+    },
+    {
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy\" id=\"ref-for-dom-navigator-getautoplaypolicy①\">getAutoplayPolicy(type)</a></code> method is called, the user agent MUST run\n      the following steps:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If the return value is allowed",
+              "html": "All media, corresponding with the given type, are allowed to autoplay."
+            },
+            {
+              "case": "If the return value is allowed-muted",
+              "html": "All inaudible media, corresponding with the given type, are allowed to\n        autoplay."
+            },
+            {
+              "case": "If the return value is disallowed",
+              "html": "<strong>None</strong> of media, corresponding with the given type, are allowed to\n        autoplay."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/autoplay/#dom-navigator-getautoplaypolicy\" id=\"ref-for-dom-navigator-getautoplaypolicy①\">getAutoplayPolicy(type)</a></code> method is called, the user agent MUST run\n      the following steps:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If the return value is allowed",
+              "html": "This element is allowed to autoplay within the current execution\n        context."
+            },
+            {
+              "case": "If the return value is allowed-muted",
+              "html": "This element will only be allowed to autoplay if it’s inaudible."
+            },
+            {
+              "case": "If the return value is disallowed",
+              "html": "This element is not allowed to autoplay."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

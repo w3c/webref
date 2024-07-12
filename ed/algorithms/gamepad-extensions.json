@@ -1,0 +1,125 @@
+{
+  "spec": {
+    "title": "Gamepad Extensions",
+    "url": "https://w3c.github.io/gamepad/extensions.html"
+  },
+  "algorithms": [
+    {
+      "name": "Gamepad/touchEvents",
+      "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-touchevents",
+      "html": "The <a data-xref-type=\"attribute|dict-member\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepad-touchevents\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>touchEvents</code></code></a> getter steps are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[touchEvents]]\" href=\"https://w3c.github.io/gamepad/extensions.html#dfn-touchevents\" class=\"internalDFN\" data-link-type=\"dfn\"><code>[[touchEvents]]</code></a> not <code>null</code> and not\n            empty, return <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[touchEvents]]\" href=\"https://w3c.github.io/gamepad/extensions.html#dfn-touchevents\" class=\"internalDFN\" data-link-type=\"dfn\"><code>[[touchEvents]]</code></a>."
+        },
+        {
+          "html": "Otherwise return <code>null</code>."
+        }
+      ]
+    },
+    {
+      "name": "updating touchEvents",
+      "href": "https://w3c.github.io/gamepad/extensions.html#dfn-updating-touchevents",
+      "html": "In addtion to the steps defined in the main <a href=\"https://w3c.github.io/gamepad/\">Gamepad specification</a>. When the\n          user agent modifies the list of <var>active touch points</var> for a touch\n          surface by adding touch points, removing touch points, or updating\n          the values of existing touch points, <dfn data-lt=\"updating touchEvents|update touchEvents\" data-dfn-type=\"dfn\" id=\"dfn-updating-touchevents\">update touchEvents</dfn> by running the\n          following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"unsigned long\">surfaceId</var> be 0."
+        },
+        {
+          "html": "Remove any existing events from\n          <a data-xref-type=\"_IDL_\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepad\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>Gamepad</code></code></a>.<a data-xref-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[touchEvents]]\" href=\"https://w3c.github.io/gamepad/extensions.html#dfn-touchevents\" class=\"internalDFN\" data-link-type=\"dfn\"><code>[[touchEvents]]</code></a>."
+        },
+        {
+          "html": "Repeat the following steps for each <a href=\"https://w3c.github.io/gamepad/extensions.html#dfn-touch-surface\" class=\"internalDFN\" data-link-type=\"dfn\">touch surface</a> on\n          <var>gamepad</var> in <a href=\"https://w3c.github.io/gamepad/extensions.html#dfn-touch-surface-enumeration-order\" class=\"internalDFN\" data-link-type=\"dfn\">touch surface enumeration order</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>surfaceDimensions</var> be an <code>null</code>."
+            },
+            {
+              "html": "If the touch surface exposes maximum surface dimensions in\n              device units:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var>touchEvent</var>.<a data-xref-type=\"attribute|dict-member\" data-link-for=\"GamepadTouch\" data-xref-for=\"GamepadTouch\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-surfacedimensions\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>surfaceDimensions</code></code></a>[0] to\n                  the maximum X dimension on the <a href=\"https://w3c.github.io/gamepad/extensions.html#dfn-touch-surface\" class=\"internalDFN\" data-link-type=\"dfn\">touch surface</a> in device\n                  units."
+                },
+                {
+                  "html": "Set <var>touchEvent</var>.<a data-xref-type=\"attribute|dict-member\" data-link-for=\"GamepadTouch\" data-xref-for=\"GamepadTouch\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-surfacedimensions\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>surfaceDimensions</code></code></a>[1] to\n                  the maximum Y dimension on the <a href=\"https://w3c.github.io/gamepad/extensions.html#dfn-touch-surface\" class=\"internalDFN\" data-link-type=\"dfn\">touch surface</a> in device\n                  units."
+                }
+              ]
+            },
+            {
+              "html": "Repeat the following steps for each <a href=\"https://w3c.github.io/gamepad/extensions.html#dfn-active-touch-point\" class=\"internalDFN\" data-link-type=\"dfn\">active touch point</a>\n              reported by the <var>gamepad</var> for the current <a href=\"https://w3c.github.io/gamepad/extensions.html#dfn-touch-surface\" class=\"internalDFN\" data-link-type=\"dfn\">touch surface</a>.",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var data-type=\"unsigned long\">nextTouchId</var> be the next available\n                  touchId for the <var>gamepad</var>."
+                },
+                {
+                  "html": "Let <var data-type=\"GamepadTouch\">touchEvent</var> be a <a data-xref-type=\"_IDL_\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>GamepadTouch</code></code></a>."
+                },
+                {
+                  "html": "Set <var data-type=\"GamepadTouch\">touchEvent</var>.<a data-xref-type=\"attribute|dict-member\" data-link-for=\"GamepadTouch\" data-xref-for=\"GamepadTouch\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-surfaceid\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>surfaceId</code></code></a> to be\n                  <var data-type=\"unsigned long\">surfaceId</var>."
+                },
+                {
+                  "html": "If the touch data is part of an existing <a href=\"https://w3c.github.io/gamepad/extensions.html#dfn-active-touch-point\" class=\"internalDFN\" data-link-type=\"dfn\">active touch\n                  point</a> tracked by the user agent:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set <var data-type=\"GamepadTouch\">touchEvent</var>.<a data-xref-type=\"attribute|dict-member\" data-link-for=\"GamepadTouch\" data-xref-for=\"GamepadTouch\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-touchid\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>touchId</code></code></a> to the\n                      touchId of the <a href=\"https://w3c.github.io/gamepad/extensions.html#dfn-active-touch-point\" class=\"internalDFN\" data-link-type=\"dfn\">active touch point</a>."
+                    },
+                    {
+                      "html": "Otherwise, set touchId to nextTouchId and increment\n                      nextTouchId."
+                    }
+                  ]
+                },
+                {
+                  "html": "Let <var>position</var> be a <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"new\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a> <a data-xref-type=\"_IDL_\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-Float32Array\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-Float32Array\"><code>Float32Array</code></a> with length\n                  2."
+                },
+                {
+                  "html": "<p>\n                      <var>position</var>[0] should be set to the device X coordinate\n                      relative to the device <a href=\"https://w3c.github.io/gamepad/extensions.html#dfn-touch-surface\" class=\"internalDFN\" data-link-type=\"dfn\">touch surface</a> and normalized\n                      to [-1.0,1.0] where -1.0 is the leftmost coordinate and\n                      1.0 is the rightmost coordinate.\n                    </p>"
+                },
+                {
+                  "html": "<p>\n                      <var>position</var>[1] should be set to the device Y coordinate\n                      relative to the device <a href=\"https://w3c.github.io/gamepad/extensions.html#dfn-touch-surface\" class=\"internalDFN\" data-link-type=\"dfn\">touch surface</a> and normalized\n                      to [-1.0,1.0] where -1.0 is the topmost coordinate and\n                      1.0 is the bottommost coordinate.\n                    </p>"
+                }
+              ]
+            },
+            {
+              "html": "Set <var data-type=\"GamepadTouch\">touchEvent</var>.<a data-xref-type=\"attribute|dict-member\" data-link-for=\"GamepadTouch\" data-xref-for=\"GamepadTouch\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepadtouch-position\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>position</code></code></a> to be\n              <var data-type=\"Float32Array\">position</var>."
+            },
+            {
+              "html": "Add <var data-type=\"GamepadTouch\">touchEvent</var> to <a data-xref-type=\"_IDL_\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepad\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>Gamepad</code></code></a>.<a data-xref-type=\"attribute\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" data-lt=\"[[touchEvents]]\" href=\"https://w3c.github.io/gamepad/extensions.html#dfn-touchevents\" class=\"internalDFN\" data-link-type=\"dfn\"><code>[[touchEvents]]</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "Increment <var data-type=\"unsigned long\">surfaceId</var>"
+        },
+        {
+          "html": "Increment <var data-type=\"unsigned long\">surfaceId</var>"
+        }
+      ]
+    },
+    {
+      "name": "a new Gamepad",
+      "href": "https://w3c.github.io/gamepad/extensions.html#dfn-a-new-gamepad",
+      "html": "In addtion to the steps defined in the main <a href=\"https://w3c.github.io/gamepad/\">Gamepad specification</a>. When\n          constructing <dfn data-dfn-type=\"dfn\" id=\"dfn-a-new-gamepad\">a new <code>Gamepad</code></dfn> representing a connected\n          gamepad device perform the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Gamepad\">gamepad</var> be a newly created <a data-xref-type=\"_IDL_\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepad\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>Gamepad</code></code></a> instance:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <var data-type=\"Gamepad\">gamepad</var> has touch surfaces, initialize <var data-type=\"Gamepad\">gamepad</var>'s\n              <a data-xref-type=\"attribute|dict-member\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepad-touchevents\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>touchEvents</code></code></a> to an empty <a data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+            },
+            {
+              "html": "Otherwise, initialize <var data-type=\"Gamepad\">gamepad</var>'s <a data-xref-type=\"attribute|dict-member\" data-link-for=\"Gamepad\" data-xref-for=\"Gamepad\" href=\"https://w3c.github.io/gamepad/extensions.html#dom-gamepad-touchevents\" class=\"internalDFN\" data-link-type=\"idl\"><code><code>touchEvents</code></code></a>\n              <code>null</code>."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

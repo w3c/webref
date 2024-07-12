@@ -1,0 +1,707 @@
+{
+  "spec": {
+    "title": "AV1 Bitstream & Decoding Process Specification",
+    "url": "https://aomediacodec.github.io/av1-spec/"
+  },
+  "algorithms": [
+    {
+      "html": "<strong>load_previous_segment_ids( )</strong> is a function call that indicates that a segmentation map from a\nprevious frame may be loaded for use in decoding the current frame.\nWhen this function is invoked the segmentation map contained in PrevSegmentIds is set as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The variable prevFrame is set equal to ref_frame_idx[ primary_ref_frame ].</p>"
+        },
+        {
+          "html": "<p>If segmentation_enabled is equal to 1, RefMiCols[ prevFrame ] is equal to MiCols, and\nRefMiRows[ prevFrame ] is equal to MiRows, PrevSegmentIds[ row ][ col ] is set equal to\nSavedSegmentIds[ prevFrame ][ row ][ col ] for row = 0..MiRows-1, for col = 0..MiCols-1.</p>\n\n    <p>Otherwise, PrevSegmentIds[ row ][ col ] is set equal to 0 for row = 0..MiRows-1, for col = 0..MiCols-1.</p>"
+        }
+      ]
+    },
+    {
+      "html": "For each tile list entry in the tile list OBU, the following ordered steps are applied:",
+      "rationale": "parse",
+      "steps": [
+        {
+          "html": "<p>Parse the syntax elements within the tile_list_entry</p>"
+        },
+        {
+          "html": "<p>Set the bitstream position indicator to point to the the start of the coded_tile_data syntax element</p>"
+        },
+        {
+          "html": "<p>Set the variable last equal to ref_frame_idx[ 0 ]</p>"
+        },
+        {
+          "html": "<p>Set FrameStore[ last ] equal to AnchorFrames[ anchor_frame_idx ]</p>"
+        },
+        {
+          "html": "<p>RefValid[ last ] is set equal to 1.</p>"
+        },
+        {
+          "html": "<p>RefUpscaledWidth[ last ] is set equal to UpscaledWidth.</p>"
+        },
+        {
+          "html": "<p>RefFrameWidth[ last ] is set equal to FrameWidth.</p>"
+        },
+        {
+          "html": "<p>RefFrameHeight[ last ] is set equal to FrameHeight.</p>"
+        },
+        {
+          "html": "<p>RefMiCols[ last ] is set equal to MiCols.</p>"
+        },
+        {
+          "html": "<p>RefMiRows[ last ] is set equal to MiRows.</p>"
+        },
+        {
+          "html": "<p>RefSubsamplingX[ last ] is set equal to subsampling_x.</p>"
+        },
+        {
+          "html": "<p>RefSubsamplingY[ last ] is set equal to subsampling_y.</p>"
+        },
+        {
+          "html": "<p>RefBitDepth[ last ] is set equal to BitDepth.</p>"
+        },
+        {
+          "html": "<p>Invoke the decode camera tile process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#decode-camera-tile-process\">section 7.3.2</a>\nand write the decoded tiles into an output frame in raster order, in the order that they occur in the tile list OBU.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If show_existing_frame is equal to 0, the process first performs any post processing filtering by the following ordered steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If loop_filter_level[ 0 ] is not equal to 0 or loop_filter_level[ 1 ] is not equal to 0, the loop\nfilter process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#loop-filter-process\">section 7.14</a> is invoked (this process modifies the contents of CurrFrame).</p>"
+        },
+        {
+          "html": "<p>The CDEF process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#cdef-process\">section 7.15</a> is invoked (this process takes CurrFrame and produces CdefFrame).</p>"
+        },
+        {
+          "html": "<p>The upscaling process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#upscaling-process\">section 7.16</a> is invoked with CdefFrame as input and the output is assigned to UpscaledCdefFrame.</p>"
+        },
+        {
+          "html": "<p>The upscaling process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#upscaling-process\">section 7.16</a> is invoked with CurrFrame as input and the output is assigned to UpscaledCurrFrame.</p>"
+        },
+        {
+          "html": "<p>The loop restoration process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#loop-restoration-process\">section 7.17</a> is invoked (this process takes UpscaledCurrFrame and UpscaledCdefFrame and produces LrFrame).</p>"
+        },
+        {
+          "html": "<p>The motion field motion vector storage process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#motion-field-motion-vector-storage-process\">section 7.19</a> is invoked.</p>"
+        },
+        {
+          "html": "<p>If segmentation_enabled is equal to 1 and segmentation_update_map is equal to 0,\nSegmentIds[ row ][ col ] is set equal to\nPrevSegmentIds[ row ][ col ] for row = 0..MiRows-1, for col = 0..MiCols-1.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following ordered steps now apply:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The reference frame update process as specified in <a href=\"https://aomediacodec.github.io/av1-spec/#reference-frame-update-process\">section 7.20</a> is\ninvoked (this process saves the current frame state into the reference frames).</p>"
+        },
+        {
+          "html": "<p>If show_frame is equal to 1 or show_existing_frame is equal to 1, the output process as specified in <a href=\"https://aomediacodec.github.io/av1-spec/#output-process\">section 7.18</a> is invoked (this will output the\ncurrent frame or a saved frame).</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following ordered steps apply:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The variable NumMvFound (representing the number of motion vector candidates in RefStackMv) is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>The variable NewMvCount (representing the number of candidates found that used NEWMV encoding) is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>The setup global mv process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#setup-global-mv-process\">section 7.10.2.1</a> is invoked with the input 0 and the output is assigned to GlobalMvs[ 0 ].</p>"
+        },
+        {
+          "html": "<p>If isCompound is equal to 1, the setup global mv process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#setup-global-mv-process\">section 7.10.2.1</a> is invoked with the input 1 and the output is assigned to GlobalMvs[ 1 ].</p>"
+        },
+        {
+          "html": "<p>The variable FoundMatch is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>The scan row process in <a href=\"https://aomediacodec.github.io/av1-spec/#scan-row-process\">section 7.10.2.2</a> is invoked with deltaRow equal to -1 and isCompound as inputs.</p>"
+        },
+        {
+          "html": "<p>The variable foundAboveMatch is set equal to FoundMatch, and FoundMatch is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>The scan col process in <a href=\"https://aomediacodec.github.io/av1-spec/#scan-col-process\">section 7.10.2.3</a> is invoked with deltaCol equal to -1 and isCompound as inputs.</p>"
+        },
+        {
+          "html": "<p>The variable foundLeftMatch is set equal to FoundMatch, and FoundMatch is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>If Max( bw4, bh4 ) is less than or equal to 16, the scan point process in <a href=\"https://aomediacodec.github.io/av1-spec/#scan-point-process\">section 7.10.2.4</a> is invoked with deltaRow equal to -1, deltaCol equal to\nbw4, and isCompound as inputs.</p>"
+        },
+        {
+          "html": "<p>If FoundMatch is equal to 1, the variable foundAboveMatch is set equal to 1.</p>"
+        },
+        {
+          "html": "<p>The variable CloseMatches (representing candidates found in the immediate neighborhood) is set equal to foundAboveMatch + foundLeftMatch.</p>"
+        },
+        {
+          "html": "<p>The variable numNearest (representing the number of motion vectors found in the immediate neighborhood) is set equal to NumMvFound</p>"
+        },
+        {
+          "html": "<p>The variable numNew (representing the number of times a NEWMV candidate was found in the immediate neighborhood) is set equal to NewMvCount</p>"
+        },
+        {
+          "html": "<p>If numNearest is greater than 0, WeightStack[ idx ] is incremented by REF_CAT_LEVEL for idx = 0..(numNearest-1).</p>"
+        },
+        {
+          "html": "<p>The variable ZeroMvContext is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>If use_ref_frame_mvs is equal to 1,\nthe temporal scan process in <a href=\"https://aomediacodec.github.io/av1-spec/#temporal-scan-process\">section 7.10.2.5</a> is invoked with isCompound as input (the temporal scan process affects ZeroMvContext).</p>"
+        },
+        {
+          "html": "<p>The scan point process in <a href=\"https://aomediacodec.github.io/av1-spec/#scan-point-process\">section 7.10.2.4</a> is invoked with deltaRow equal to -1, deltaCol equal to -1, and isCompound as inputs.</p>"
+        },
+        {
+          "html": "<p>If FoundMatch is equal to 1, the variable foundAboveMatch is set equal to 1.</p>"
+        },
+        {
+          "html": "<p>The variable FoundMatch is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>The scan row process in <a href=\"https://aomediacodec.github.io/av1-spec/#scan-row-process\">section 7.10.2.2</a> is invoked with deltaRow equal to -3 and isCompound as inputs.</p>"
+        },
+        {
+          "html": "<p>If FoundMatch is equal to 1, the variable foundAboveMatch is set equal to 1.</p>"
+        },
+        {
+          "html": "<p>The variable FoundMatch is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>The scan col process in <a href=\"https://aomediacodec.github.io/av1-spec/#scan-col-process\">section 7.10.2.3</a> is invoked with deltaCol equal to -3 and isCompound as inputs.</p>"
+        },
+        {
+          "html": "<p>If FoundMatch is equal to 1, the variable foundLeftMatch is set equal to 1.</p>"
+        },
+        {
+          "html": "<p>The variable FoundMatch is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>If bh4 is greater than 1, the scan row process in <a href=\"https://aomediacodec.github.io/av1-spec/#scan-row-process\">section 7.10.2.2</a> is invoked with deltaRow equal to -5 and isCompound as inputs.</p>"
+        },
+        {
+          "html": "<p>If FoundMatch is equal to 1, the variable foundAboveMatch is set equal to 1.</p>"
+        },
+        {
+          "html": "<p>The variable FoundMatch is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>If bw4 is greater than 1, the scan col process in <a href=\"https://aomediacodec.github.io/av1-spec/#scan-col-process\">section 7.10.2.3</a> is invoked with deltaCol equal to -5 and isCompound as inputs.</p>"
+        },
+        {
+          "html": "<p>If FoundMatch is equal to 1, the variable foundLeftMatch is set equal to 1.</p>"
+        },
+        {
+          "html": "<p>The variable TotalMatches (representing all found candidates) is set equal to foundAboveMatch + foundLeftMatch.</p>"
+        },
+        {
+          "html": "<p>The sorting process in <a href=\"https://aomediacodec.github.io/av1-spec/#sorting-process\">section 7.10.2.11</a> is invoked with start equal to 0, end equal to numNearest, and isCompound as input.</p>"
+        },
+        {
+          "html": "<p>The sorting process in <a href=\"https://aomediacodec.github.io/av1-spec/#sorting-process\">section 7.10.2.11</a> is invoked with start equal to numNearest, end equal to NumMvFound, and isCompound as input.</p>"
+        },
+        {
+          "html": "<p>If NumMvFound is less than 2, the extra search process in <a href=\"https://aomediacodec.github.io/av1-spec/#extra-search-process\">section 7.10.2.12</a> is invoked with isCompound as input.</p>"
+        },
+        {
+          "html": "<p>The context and clamping process in <a href=\"https://aomediacodec.github.io/av1-spec/#context-and-clamping-process\">section 7.10.2.14</a> is invoked with isCompound and numNew as input.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If isCompound is equal to 0, the following applies for candList = 0..1:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If RefFrames[ mvRow ][ mvCol ][ candList ] is equal to RefFrame[ 0 ], the search stack process in <a href=\"https://aomediacodec.github.io/av1-spec/#search-stack-process\">section 7.10.2.8</a> is invoked with mvRow, mvCol, weight, and candList as inputs."
+        }
+      ]
+    },
+    {
+      "html": "Otherwise (isCompound is equal to 1), the following applies:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If RefFrames[ mvRow ][ mvCol ][ 0 ] is equal to RefFrame[ 0 ] and RefFrames[ mvRow ][ mvCol ][ 1 ] is equal to RefFrame[ 1 ],\nthe compound search stack process in <a href=\"https://aomediacodec.github.io/av1-spec/#compound-search-stack-process\">section 7.10.2.9</a> is invoked with mvRow, mvCol, and weight as inputs."
+        }
+      ]
+    },
+    {
+      "html": "The following ordered steps apply:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>NumSamplesScanned is increased by 1.</p>"
+        },
+        {
+          "html": "<p>If valid is equal to 0 and NumSamplesScanned is greater than 1, the process exits.</p>"
+        },
+        {
+          "html": "<p>CandList[ NumSamples ][ j ] is set equal to cand[ j ] for j=0..3.</p>"
+        },
+        {
+          "html": "<p>If valid is equal to 1, NumSamples is increased by 1.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following ordered steps apply for i = 0..h-1, for j = 0..w-1:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The variable base is set equal to AboveRow[ j ] + LeftCol[ i ] -\nAboveRow[ -1 ].</p>"
+        },
+        {
+          "html": "<p>The variable pLeft is set equal to Abs( base - LeftCol[ i ]).</p>"
+        },
+        {
+          "html": "<p>The variable pTop is set equal to Abs( base - AboveRow[ j ]).</p>"
+        },
+        {
+          "html": "<p>The variable pTopLeft is set equal to Abs( base - AboveRow[ -1 ] ).</p>"
+        },
+        {
+          "html": "<p>If pLeft &lt;= pTop and pLeft &lt;= pTopLeft, pred[ i ][ j ] is set equal to\nLeftCol[ i ].</p>"
+        },
+        {
+          "html": "<p>Otherwise, if pTop &lt;= pTopLeft, pred[ i ][ j ] is set equal to AboveRow[ j ].</p>"
+        },
+        {
+          "html": "<p>Otherwise, pred[ i ][ j ] is set equal to AboveRow[ -1 ].</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following ordered steps apply:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The variable angleDelta is derived as follows:</p>\n\n    <ul>\n      <li>\n        <p>If plane is equal to 0, angleDelta is set equal to AngleDeltaY.</p>\n      </li>\n      <li>\n        <p>Otherwise (plane is not equal to 0), angleDelta is set equal to AngleDeltaUV.</p>\n      </li>\n    </ul>"
+        },
+        {
+          "html": "<p>The variable pAngle is set equal to ( Mode_To_Angle[ mode ] + angleDelta * ANGLE_STEP ).</p>"
+        },
+        {
+          "html": "<p>The variables upsampleAbove and upsampleLeft are set equal to 0.</p>"
+        },
+        {
+          "html": "<p>If enable_intra_edge_filter is equal to 1, the following applies:</p>\n\n    <ul>\n      <li>\n        <p>If pAngle is not equal to 90 and pAngle is not equal to 180, the following applies:</p>\n\n        <ul>\n          <li>\n            <p>If (pAngle &gt; 90) and (pAngle &lt; 180) and (w + h) &gt;= 24), the\nfilter corner process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#filter-corner-process\">section 7.11.2.7</a> is invoked and the output assigned to both LeftCol[ -1 ] and AboveRow[ -1 ].</p>\n          </li>\n          <li>\n            <p>The intra filter type process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#intra-filter-type-process\">section 7.11.2.8</a> is invoked with the input variable plane and the output assigned to\nfilterType.</p>\n          </li>\n          <li>\n            <p>If haveAbove is equal to 1, the following steps apply:</p>\n\n            <ul>\n              <li>\n                <p>The intra edge filter strength selection process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#intra-edge-filter-strength-selection-process\">section 7.11.2.9</a> is invoked\nwith w, h, filterType, and pAngle - 90 as inputs, and the output assigned to the variable strength.</p>\n              </li>\n              <li>\n                <p>The variable numPx is set equal to Min( w, ( maxX - x + 1 ) ) + ( pAngle &lt; 90 ? h : 0 ) + 1.</p>\n              </li>\n              <li>\n                <p>The intra edge filter process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#intra-edge-filter-process\">section 7.11.2.12</a> is invoked with the parameters\nnumPx, strength, and 0 as inputs.</p>\n              </li>\n            </ul>\n          </li>\n          <li>\n            <p>If haveLeft is equal to 1, the following steps apply:</p>\n\n            <ul>\n              <li>\n                <p>The intra edge filter strength selection process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#intra-edge-filter-strength-selection-process\">section 7.11.2.9</a> is invoked\nwith w, h, filterType, and pAngle - 180 as inputs, and the output assigned to the variable strength.</p>\n              </li>\n              <li>\n                <p>The variable numPx is set equal to Min( h, ( maxY - y + 1 ) ) + ( pAngle &gt; 180 ? w : 0 ) + 1.</p>\n              </li>\n              <li>\n                <p>The intra edge filter process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#intra-edge-filter-process\">section 7.11.2.12</a> is invoked with the parameters\nnumPx, strength, and 1 as inputs.</p>\n              </li>\n            </ul>\n          </li>\n        </ul>\n      </li>\n      <li>\n        <p>The intra edge upsample selection process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#intra-edge-upsample-selection-process\">section 7.11.2.10</a> is invoked with w, h, filterType, and pAngle - 90 as inputs,\nand the output assigned to the variable upsampleAbove.</p>\n      </li>\n      <li>\n        <p>The variable numPx is set equal to ( w + (pAngle &lt; 90 ? h : 0) ).</p>\n      </li>\n      <li>\n        <p>If upsampleAbove is equal to 1, the intra edge upsample process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#intra-edge-upsample-process\">section 7.11.2.11</a> is invoked with the parameters numPx and 0 as inputs.</p>\n      </li>\n      <li>\n        <p>The intra edge upsample selection process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#intra-edge-upsample-selection-process\">section 7.11.2.10</a> is invoked with w, h, filterType, and pAngle - 180 as inputs,\nand the output assigned to the variable upsampleLeft.</p>\n      </li>\n      <li>\n        <p>The variable numPx is set equal to ( h + (pAngle &gt; 180 ? w : 0) ).</p>\n      </li>\n      <li>\n        <p>If upsampleLeft is equal to 1, the intra edge upsample process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#intra-edge-upsample-process\">section 7.11.2.11</a> is invoked with the parameters numPx and 1 as inputs.</p>\n      </li>\n    </ul>"
+        },
+        {
+          "html": "<p>The variable dx is derived as follows:</p>\n\n    <ul>\n      <li>\n        <p>If pAngle is less than 90, dx is set equal to Dr_Intra_Derivative[ pAngle ].</p>\n      </li>\n      <li>\n        <p>Otherwise, if pAngle is greater than 90 and less than 180, dx is set equal to Dr_Intra_Derivative[ 180 - pAngle ].</p>\n      </li>\n      <li>\n        <p>Otherwise, dx is undefined.</p>\n      </li>\n    </ul>"
+        },
+        {
+          "html": "<p>The variable dy is derived as follows:</p>\n\n    <ul>\n      <li>\n        <p>If pAngle is greater than 90 and less than 180, dy is set equal to Dr_Intra_Derivative[ pAngle - 90 ].</p>\n      </li>\n      <li>\n        <p>Otherwise, if pAngle is greater than 180, dy is set equal to Dr_Intra_Derivative[ 270 - pAngle ].</p>\n      </li>\n      <li>\n        <p>Otherwise, dy is undefined.</p>\n      </li>\n    </ul>"
+        },
+        {
+          "html": "<p>If pAngle is less than 90, the following steps apply for i = 0..h-1, for j = 0..w-1:</p>\n\n    <ul>\n      <li>\n        <p>The variable idx is set equal to ( i + 1 ) * dx.</p>\n      </li>\n      <li>\n        <p>The variable base is set equal to (idx &gt;&gt; ( 6 - upsampleAbove ) ) + (j &lt;&lt; upsampleAbove).</p>\n      </li>\n      <li>\n        <p>The variable shift is set equal to ( (idx &lt;&lt; upsampleAbove) &gt;&gt; 1 ) &amp; 0x1F.</p>\n      </li>\n      <li>\n        <p>The variable maxBaseX is set equal to (w + h - 1) &lt;&lt; upsampleAbove.</p>\n      </li>\n      <li>\n        <p>If base is less than maxBaseX, pred[ i ][ j ] is set equal to Round2( AboveRow[ base ] * ( 32 - shift ) + AboveRow[ base + 1 ] * shift, 5 ).</p>\n      </li>\n      <li>\n        <p>Otherwise (base is greater than or equal to maxBaseX), pred[ i ][ j ] is set equal to AboveRow[ maxBaseX ].</p>\n      </li>\n    </ul>"
+        },
+        {
+          "html": "<p>Otherwise, if pAngle is greater than 90 and pAngle is less than 180, the following steps apply for i = 0..h-1, for j = 0..w-1:</p>\n\n    <ul>\n      <li>\n        <p>The variable idx is set equal to ( j &lt;&lt; 6 ) - ( i + 1 ) * dx.</p>\n      </li>\n      <li>\n        <p>The variable base is set equal to idx &gt;&gt; ( 6 - upsampleAbove ).</p>\n      </li>\n      <li>\n        <p>If base is greater than or equal to -(1 &lt;&lt; upsampleAbove), the following steps apply:</p>\n\n        <ul>\n          <li>\n            <p>The variable shift is set equal to ( ( idx &lt;&lt; upsampleAbove ) &gt;&gt; 1 ) &amp; 0x1F.</p>\n          </li>\n          <li>\n            <p>pred[ i ][ j ] is set equal to Round2( AboveRow[ base ] * ( 32 - shift ) + AboveRow[ base + 1 ] * shift, 5 ).</p>\n          </li>\n        </ul>\n      </li>\n      <li>\n        <p>Otherwise (base is less than -(1 &lt;&lt; upsampleAbove), the following steps apply:</p>\n\n        <ul>\n          <li>\n            <p>The variable idx is set equal to ( i &lt;&lt; 6 ) - ( j + 1 ) * dy.</p>\n          </li>\n          <li>\n            <p>The variable base is set equal to idx &gt;&gt; ( 6 - upsampleLeft ).</p>\n          </li>\n          <li>\n            <p>The variable shift is set equal to ( ( idx &lt;&lt; upsampleLeft ) &gt;&gt; 1 ) &amp; 0x1F.</p>\n          </li>\n          <li>\n            <p>pred[ i ][ j ] is set equal to Round2( LeftCol[ base ] * ( 32 - shift ) + LeftCol[ base + 1 ] * shift, 5 ).</p>\n          </li>\n        </ul>\n      </li>\n    </ul>"
+        },
+        {
+          "html": "<p>Otherwise, if pAngle is greater than 180, the following steps apply for i = 0..h-1, for j = 0..w-1:</p>\n\n    <ul>\n      <li>\n        <p>The variable idx is set equal to ( j + 1 ) * dy.</p>\n      </li>\n      <li>\n        <p>The variable base is set equal to ( idx &gt;&gt; ( 6 - upsampleLeft ) ) + ( i &lt;&lt; upsampleLeft ).</p>\n      </li>\n      <li>\n        <p>The variable shift is set equal to ( ( idx &lt;&lt; upsampleLeft ) &gt;&gt; 1 ) &amp; 0x1F.</p>\n      </li>\n      <li>\n        <p>pred[ i ][ j ] is set equal to Round2( LeftCol[ base ] * ( 32 - shift ) + LeftCol[ base + 1 ] * shift, 5 ).</p>\n      </li>\n    </ul>"
+        },
+        {
+          "html": "<p>Otherwise, if pAngle is equal to 90, pred[ i ][ j ] is set equal to AboveRow[ j ] with j = 0..w-1 and i = 0..h-1 (each row of the block is filled with\na copy of AboveRow).</p>"
+        },
+        {
+          "html": "<p>Otherwise, if pAngle is equal to 180, pred[ i ][ j ] is set equal to LeftCol[ i ] with j = 0..w-1 and i = 0..h-1 (each column of the block is filled with\na copy of LeftCol).</p>"
+        }
+      ]
+    },
+    {
+      "html": "Otherwise (strength is not equal to 0), the following ordered steps apply for i = 1..sz-1:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The variable s is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>The following steps now apply for j = 0..INTRA_EDGE_TAPS-1.</p>\n\n    <p>a. The variable k is set equal to Clip3( 0, sz - 1, i - 2 + j ).</p>\n\n    <p>b. The variable s is incremented by Intra_Edge_Kernel[ strength - 1 ][ j ] * edge[ k ].</p>"
+        },
+        {
+          "html": "<p>If left is equal to 1, LeftCol[ i - 1 ] is set equal to ( s + 8 ) &gt;&gt; 4.</p>"
+        },
+        {
+          "html": "<p>If left is equal to 0, AboveRow[ i - 1 ] is set equal to ( s + 8 ) &gt;&gt; 4.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The prediction arrays are formed by\nthe following ordered steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The rounding variables derivation process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#rounding-variables-derivation-process\">section 7.11.3.2</a> is invoked with the variable isCompound as input.</p>"
+        },
+        {
+          "html": "<p>If plane is equal to 0 and motion_mode is equal to LOCALWARP, the warp estimation process in <a href=\"https://aomediacodec.github.io/av1-spec/#warp-estimation-process\">section 7.11.3.8</a> is invoked.</p>"
+        },
+        {
+          "html": "<p>If plane is equal to 0 and motion_mode is equal to LOCALWARP and LocalValid is equal to 1, the setup shear process\nspecified in <a href=\"https://aomediacodec.github.io/av1-spec/#setup-shear-process\">section 7.11.3.6</a> is invoked with LocalWarpParams as input,\nand the output warpValid is assigned to LocalValid (the other outputs are discarded).</p>"
+        },
+        {
+          "html": "<p>The variable refList is set equal to 0.</p>"
+        },
+        {
+          "html": "<p>The variable refFrame is set equal to RefFrames[ candRow ][ candCol ][ refList ].</p>"
+        },
+        {
+          "html": "<p>If (YMode == GLOBALMV || YMode == GLOBAL_GLOBALMV) and GmType[ refFrame ] &gt; TRANSLATION, the setup shear process\nspecified in <a href=\"https://aomediacodec.github.io/av1-spec/#setup-shear-process\">section 7.11.3.6</a> is invoked with gm_params[ refFrame ] as input,\nand the output warpValid is assigned to globalValid (the other outputs are discarded).</p>"
+        },
+        {
+          "html": "<p>The variable useWarp (a value of 1 indicates local warping, 2 indicates global warping) is derived as follows:</p>\n\n    <ul>\n      <li>\n        <p>If w &lt; 8 or h &lt; 8, useWarp is set equal to 0.</p>\n      </li>\n      <li>\n        <p>Otherwise, if force_integer_mv is equal to 1, useWarp is set equal to 0.</p>\n      </li>\n      <li>\n        <p>Otherwise, if motion_mode is equal to LOCALWARP and LocalValid is equal to 1, useWarp is set equal to 1.</p>\n      </li>\n      <li>\n        <p>Otherwise, if all of the following are true, useWarp is set equal to 2.</p>\n\n        <ul>\n          <li>\n            <p>(YMode == GLOBALMV || YMode == GLOBAL_GLOBALMV).</p>\n          </li>\n          <li>\n            <p>GmType[ refFrame ] &gt; TRANSLATION.</p>\n          </li>\n          <li>\n            <p>is_scaled( refFrame ) is equal to 0.</p>\n          </li>\n          <li>\n            <p>globalValid is equal to 1.</p>\n          </li>\n        </ul>\n      </li>\n      <li>\n        <p>Otherwise, useWarp is set equal to 0.</p>\n      </li>\n    </ul>"
+        },
+        {
+          "html": "<p>The motion vector array mv is set equal to Mvs[ candRow ][ candCol ][ refList ].</p>"
+        },
+        {
+          "html": "<p>The variable refIdx specifying which reference frame is being used is set as follows:</p>\n\n    <ul>\n      <li>\n        <p>If use_intrabc is equal to 0, refIdx is set equal to ref_frame_idx[ refFrame - LAST_FRAME ].</p>\n      </li>\n      <li>\n        <p>Otherwise (use_intrabc is equal to 1), refIdx is set equal to -1 and RefFrameWidth[ -1 ] is set equal to FrameWidth, RefFrameHeight[ -1 ] is set equal\nto FrameHeight, and RefUpscaledWidth[ -1 ] is set equal to UpscaledWidth.\n(These values ensure that the motion vector scaling has no effect.)</p>\n      </li>\n    </ul>"
+        },
+        {
+          "html": "<p>The motion vector scaling process in <a href=\"https://aomediacodec.github.io/av1-spec/#motion-vector-scaling-process\">section 7.11.3.3</a> is invoked with\n     plane, refIdx, x, y, mv as inputs and the output being the\n     initial location startX, startY, and the step sizes stepX, stepY.</p>"
+        },
+        {
+          "html": "<p>If use_intrabc is equal to 1, RefFrameWidth[ -1 ] is set equal to  MiCols * MI_SIZE,\nRefFrameHeight[ -1 ] is set equal to MiRows * MI_SIZE,\nand RefUpscaledWidth[ -1 ] is set equal to  MiCols * MI_SIZE.\n(These values are needed to avoid intrabc prediction being cropped to the frame boundaries.)</p>"
+        },
+        {
+          "html": "<p>If useWarp is not equal to 0, the block warp process in <a href=\"https://aomediacodec.github.io/av1-spec/#block-warp-process\">section 7.11.3.5</a> is invoked with\n     useWarp, plane, refList, x, y, i8, j8, w, h as inputs and the\n     output is merged into the 2D array preds[ refList ] for i8 = 0..((h-1) &gt;&gt; 3) and for j8 = 0..((w-1) &gt;&gt; 3).\n     (Each invocation fills in a block of output of size w by h at x offset j8 * 8 and y offset i8 * 8.)</p>"
+        },
+        {
+          "html": "<p>If useWarp is equal to 0, the block inter prediction process in <a href=\"https://aomediacodec.github.io/av1-spec/#block-inter-prediction-process\">section 7.11.3.4</a> is invoked with\n     plane, refIdx, startX, startY, stepX, stepY, w, h, candRow, candCol as inputs and the\n     output is assigned to the 2D array preds[ refList ].</p>"
+        },
+        {
+          "html": "<p>If isCompound is equal to 1, then the variable refList is set equal\n     to 1 and steps 5 to 13 are repeated to form the prediction for\n     the second reference.</p>"
+        }
+      ]
+    },
+    {
+      "html": "For i = 0..(predH - 1) and j = 0..(predW - 1), the following ordered steps apply:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The variable m specifying the blending factor is specifed as follows:</p>\n\n    <ul>\n      <li>\n        <p>If pass is equal to 0 (blend from above), m is set equal to mask[ i ].</p>\n      </li>\n      <li>\n        <p>Otherwise (pass is equal to 1 meaning blend from left), m is set equal to mask[ j ].</p>\n      </li>\n    </ul>"
+        },
+        {
+          "html": "<p>CurrFrame[ plane ][ predY + i ][ predX + j ] is set equal to\n    Round2( m * CurrFrame[ plane ][ predY + i ][ predX + j ] + (64 - m) * obmcPred[ i ][ j ], 6)</p>"
+        }
+      ]
+    },
+    {
+      "html": "If seg_feature_active_idx( segmentId, SEG_LVL_ALT_Q ) is equal to 1 the following ordered steps apply:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set the variable data equal to FeatureData[ segmentId ][ SEG_LVL_ALT_Q ].</p>"
+        },
+        {
+          "html": "<p>Set qindex equal to base_q_idx + data.</p>"
+        },
+        {
+          "html": "<p>If ignoreDeltaQ is equal to 0 and delta_q_present is equal to 1, set qindex equal to CurrentQIndex + data.</p>"
+        },
+        {
+          "html": "<p>Return Clip3( 0, 255, qindex ).</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following ordered steps apply:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p>For i = 0..(th-1), for j = 0..(tw-1), the following ordered steps apply:</p>\n\n    <p>a. The variable q is derived as follows:</p>\n\n    <ul>\n      <li>\n        <p>If i is equal to 0 and j is equal to 0, the variable q is set equal to get_dc_quant( plane ).</p>\n      </li>\n      <li>\n        <p>Otherwise (i, j or both are not equal to 0), the variable q is set equal to get_ac_quant( plane ).</p>\n      </li>\n    </ul>\n\n    <p>b. The variable q2 is derived as follows:</p>\n\n    <ul>\n      <li>\n        <p>If using_qmatrix is equal to 1, PlaneTxType is less than IDTX, and SegQMLevel[ plane ][ segment_id ] is less than 15, q2 is set\n    equal to Round2( q * Quantizer_Matrix[ SegQMLevel[ plane ][ segment_id ] ][ plane &gt; 0 ][ Qm_Offset[ txSz ] + i * tw + j ], 5 ).</p>\n      </li>\n      <li>\n        <p>Otherwise, q2 is set equal to q.</p>\n      </li>\n    </ul>\n\n    <p>c. The variable dq is set equal to Quant[ i * tw + j ] * q2.</p>\n\n    <p>d. The variable sign is set equal to ( dq &lt; 0 ) ? -1 : 1.</p>\n\n    <p>e. The variable dq2 is set equal to sign * ( Abs( dq ) &amp; 0xFFFFFF ) / dqDenom.</p>\n\n    <p>f. Dequant[ i ][ j ] is set equal to Clip3( - ( 1 &lt;&lt; ( 7 + BitDepth ) ), ( 1 &lt;&lt; ( 7 + BitDepth ) ) - 1, dq2 ).</p>"
+        },
+        {
+          "html": "<p>Invoke the 2D inverse transform block process defined in <a href=\"https://aomediacodec.github.io/av1-spec/#2d-inverse-transform-process\">section 7.13.3</a>\nwith the variable txSz as input. The inverse transform outputs are stored\nin the Residual buffer.</p>"
+        },
+        {
+          "html": "<p>For i = 0..(h-1), for j = 0..(w-1), the following applies:</p>\n\n    <ul>\n      <li>\n        <p>The variable xx is set equal to flipLR ? ( w - j - 1 ) : j.</p>\n      </li>\n      <li>\n        <p>The variable yy is set equal to flipUD ? ( h - i - 1 ) : i.</p>\n      </li>\n      <li>\n        <p>CurrFrame[ plane ][ y + yy ][ x + xx ] is set equal to\nClip1( CurrFrame[ plane ][ y + yy ][ x + xx ] + Residual[ i ][ j ] ).</p>\n      </li>\n    </ul>"
+        }
+      ]
+    },
+    {
+      "html": "The function cos128( angle ) is specified for integer values of the input angle\nby the following ordered steps:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set a variable angle2 equal to angle &amp; 255.</p>"
+        },
+        {
+          "html": "<p>If angle2 is greater than or equal to 0 and less than or equal to 64,\nreturn Cos128_Lookup[ angle2 ].</p>"
+        },
+        {
+          "html": "<p>If angle2 is greater than 64 and less than or equal to 128, return\nCos128_Lookup[ 128 - angle2 ] * -1.</p>"
+        },
+        {
+          "html": "<p>If angle2 is greater than 128 and less than or equal to 192, return\nCos128_Lookup[ angle2 - 128 ] * -1.</p>"
+        },
+        {
+          "html": "<p>Otherwise (if angle2 is greater than 192 and less than 256), return\nCos128_Lookup[ 256 - angle2 ].</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following ordered steps apply:",
+      "rationale": "invoke",
+      "steps": [
+        {
+          "html": "<p>Invoke the inverse DCT permutation process as specified in <a href=\"https://aomediacodec.github.io/av1-spec/#inverse-dct-array-permutation-process\">section 7.13.2.2</a> with the input variable n.</p>"
+        },
+        {
+          "html": "<p>If n is equal to 6, invoke B( 32 + i, 63 - i, 63 - 4 * brev( 4, i ), 0, r ) for i = 0..15.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 5, invoke B( 16 + i, 31 - i, 6 + ( brev( 3, 7 - i ) &lt;&lt; 3 ), 0, r )\nfor i = 0..7.</p>"
+        },
+        {
+          "html": "<p>If n is equal to 6, invoke H( 32 + i * 2, 33 + i * 2, i &amp; 1, r ) for i = 0..15.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 4, invoke B( 8 + i, 15 - i, 12 + ( brev( 2, 3 - i ) &lt;&lt; 4 ),\n0, r ) for i = 0..3.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 5, invoke H( 16 + 2 * i, 17 + 2 * i, i &amp; 1, r ) for i = 0..7.</p>"
+        },
+        {
+          "html": "<p>If n is equal to 6, invoke B( 62 - i * 4 - j, 33 + i * 4 + j, 60 - 16 * brev( 2, i ) + 64 * j, 1, r )\nfor i = 0..3, for j = 0..1.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 3, invoke B( 4 + i, 7 - i, 56 - 32 * i, 0, r )\nfor i = 0..1.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 4, invoke H( 8 + 2 * i, 9 + 2 * i, i &amp; 1, r ) for i = 0..3.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 5, invoke B( 30 - 4 * i - j, 17 + 4 * i + j, 24 + (j &lt;&lt; 6) + ( ( 1 - i ) &lt;&lt; 5 ),\n1, r ) for i = 0..1, for j=0..1.</p>"
+        },
+        {
+          "html": "<p>If n is equal to 6, invoke H( 32 + i * 4 + j, 35 + i * 4 - j, i &amp; 1, r ) for i = 0..7, for j = 0..1.</p>"
+        },
+        {
+          "html": "<p>Invoke B( 2 * i, 2 * i + 1, 32 + 16 * i, 1 - i, r ) for i = 0..1.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 3, invoke H( 4 + 2 * i, 5 + 2 * i, i, r ) for i = 0..1.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 4, invoke B( 14 - i, 9 + i, 48 + 64 * i, 1, r ) for\n     i = 0..1.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 5, invoke H( 16 + 4 * i + j, 19 + 4 * i - j, i &amp; 1, r ) for i = 0..3, for j = 0..1.</p>"
+        },
+        {
+          "html": "<p>If n is equal to 6, invoke B( 61 - i * 8 - j, 34 + i * 8 + j, 56 - i * 32 + ( j &gt;&gt; 1 ) * 64, 1, r )\nfor i = 0..1, for j = 0..3.</p>"
+        },
+        {
+          "html": "<p>Invoke H( i, 3 - i, 0, r ) for i = 0..1.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 3, invoke B( 6, 5, 32, 1, r ).</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 4, invoke H( 8 + 4 * i + j, 11 + 4 * i - j, i, r ) for i = 0..1,\nfor j = 0..1.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 5, invoke B( 29 - i, 18 + i, 48 + ( i &gt;&gt; 1 ) * 64, 1, r ) for i = 0..3.</p>"
+        },
+        {
+          "html": "<p>If n is equal to 6, invoke H( 32 + 8 * i + j, 39 + 8 * i - j, i &amp; 1, r ) for i = 0..3, for j = 0..3.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 3, invoke H( i, 7 - i, 0, r ) for i = 0..3.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 4, invoke B( 13 - i, 10 + i, 32, 1, r ) for i = 0..1.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 5, invoke H( 16 + i * 8 + j, 23 + i * 8 - j, i, r ) for i = 0..1, for j = 0..3.</p>"
+        },
+        {
+          "html": "<p>If n is equal to 6, invoke B( 59 - i, 36 + i, i &lt; 4 ? 48 : 112, 1, r ) for i = 0..7.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 4, invoke H( i, 15 - i, 0, r ) for i = 0..7.</p>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 5, invoke B( 27 - i, 20 + i, 32, 1, r ) for i = 0..3.</p>"
+        },
+        {
+          "html": "<p>If n is equal to 6, the following steps apply for i = 0..7:</p>\n\n    <ul>\n      <li>\n        <p>Invoke H( 32 + i, 47 - i, 0, r ).</p>\n      </li>\n      <li>\n        <p>Invoke H( 48 + i, 63 - i, 1, r ).</p>\n      </li>\n    </ul>"
+        },
+        {
+          "html": "<p>If n is greater than or equal to 5, invoke H( i, 31 - i, 0, r ) for i = 0..15.</p>"
+        },
+        {
+          "html": "<p>If n is equal to 6, invoke B( 55 - i, 40 + i, 32, 1, r ) for i = 0..7.</p>"
+        },
+        {
+          "html": "<p>If n is equal to 6, invoke H( i, 63 - i, 0, r ) for i = 0..31.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following ordered steps apply:",
+      "rationale": "invoke",
+      "steps": [
+        {
+          "html": "<p>Invoke the ADST input array permutation process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#inverse-adst-input-array-permutation-process\">section 7.13.2.4</a> with the \ninput variable n set to 3.</p>"
+        },
+        {
+          "html": "<p>Invoke B( 2 * i, 2 * i + 1, 60 - 16 * i, 1, r ) for i = 0..3.</p>"
+        },
+        {
+          "html": "<p>Invoke H( i, 4 + i, 0, r ) for i = 0..3.</p>"
+        },
+        {
+          "html": "<p>Invoke B( 4 + 3 * i, 5 + i, 48 - 32 * i, 1, r ) for i = 0..1.</p>"
+        },
+        {
+          "html": "<p>Invoke H( 4 * j + i, 2 + 4 * j + i, 0, r ) for i = 0..1, for j = 0..1.</p>"
+        },
+        {
+          "html": "<p>Invoke B( 2 + 4 * i, 3 + 4 * i, 32, 1, r ) for i = 0..1.</p>"
+        },
+        {
+          "html": "<p>Invoke the ADST output array permutation process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#inverse-adst-output-array-permutation-process\">section 7.13.2.5</a> with the \ninput variable n set to 3.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following ordered steps apply:",
+      "rationale": "invoke",
+      "steps": [
+        {
+          "html": "<p>Invoke the ADST input array permutation process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#inverse-adst-input-array-permutation-process\">section 7.13.2.4</a> with the \ninput variable n set to 4.</p>"
+        },
+        {
+          "html": "<p>Invoke B( 2 * i, 2 * i + 1, 62 - 8 * i, 1, r ) for i = 0..7.</p>"
+        },
+        {
+          "html": "<p>Invoke H( i, 8 + i, 0, r ) for i = 0..7.</p>"
+        },
+        {
+          "html": "<p>Invoke B( 8 + 2 * i, 9 + 2 * i, 56 - 32 * i, 1, r ) and B( 13 + 2 * i, 12 + 2 * i, 8 + 32 * i, 1, r )\nfor i = 0..1.</p>"
+        },
+        {
+          "html": "<p>Invoke H( 8 * j + i, 4 + 8 * j + i, 0, r ) for i = 0..3, for j = 0..1.</p>"
+        },
+        {
+          "html": "<p>Invoke B( 4 + 8 * j + 3 * i, 5 + 8 * j + i, 48 - 32 * i, 1, r ) for i = 0..1, for j = 0..1.</p>"
+        },
+        {
+          "html": "<p>Invoke H( 4 * j + i, 2 + 4 * j + i, 0, r ) for i = 0..1, for j = 0..3.</p>"
+        },
+        {
+          "html": "<p>Invoke B( 2 + 4 * i, 3 + 4 * i, 32, 1, r ) for i = 0..3.</p>"
+        },
+        {
+          "html": "<p>Invoke the ADST output array permutation process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#inverse-adst-output-array-permutation-process\">section 7.13.2.5</a> with the \ninput variable n set to 4.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The variable modeType is derived as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If mode is greater than or equal to NEARESTMV,\nand not equal to GLOBALMV,\nand not equal to GLOBAL_GLOBALMV, modeType is set equal\nto 1.</p>"
+        },
+        {
+          "html": "<p>Otherwise (if mode is an intra type or GLOBALMV or GLOBAL_GLOBALMV), modeType is set equal\nto 0.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The variable deltaLF is derived as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If delta_lf_multi is equal to 0, deltaLF is set equal to DeltaLFs[ row ][ col ][ 0 ].</p>"
+        },
+        {
+          "html": "<p>Otherwise (delta_lf_multi is equal to 1), deltaLF is set equal to\nDeltaLFs[ row ][ col ][ ( plane == 0 ) ? pass : ( plane + 1 ) ].</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following ordered steps apply:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The variable lvlSeg is set equal to baseFilterLevel.</p>"
+        },
+        {
+          "html": "<p>The variable feature is set equal to SEG_LVL_ALT_LF_Y_V + i.</p>"
+        },
+        {
+          "html": "<p>If seg_feature_active_idx( segment, feature ) is equal to 1 the following\nordered steps apply:</p>\n\n    <p>a. lvlSeg is set equal to FeatureData[ segment ][ feature ] + lvlSeg.</p>\n\n    <p>b. lvlSeg is set equal to Clip3( 0, MAX_LOOP_FILTER, lvlSeg ).</p>"
+        },
+        {
+          "html": "<p>If loop_filter_delta_enabled is equal to 1, then the following ordered steps apply:</p>\n\n    <p>a. The variable nShift is set equal to lvlSeg &gt;&gt; 5.</p>\n\n    <p>b. If ref is equal to INTRA_FRAME, then lvlSeg is set equal to lvlSeg +\n   ( loop_filter_ref_deltas[ INTRA_FRAME ] &lt;&lt; nShift ).</p>\n\n    <p>c. Otherwise, if ref is not equal to INTRA_FRAME, then lvlSeg is set equal to\n   lvlSeg +\n   ( loop_filter_ref_deltas[ ref ] &lt;&lt; nShift ) +\n   ( loop_filter_mode_deltas[ modeType ] &lt;&lt; nShift ).</p>\n\n    <p>d. lvlSeg is set equal to Clip3(0, MAX_LOOP_FILTER, lvlSeg).</p>"
+        },
+        {
+          "html": "<p>Return lvlSeg.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If skip is equal to 0, the following ordered steps apply:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The variable priStr is set equal to cdef_y_pri_strength[ idx ] &lt;&lt; coeffShift.</p>"
+        },
+        {
+          "html": "<p>The variable secStr is set equal to cdef_y_sec_strength[ idx ] &lt;&lt; coeffShift.</p>"
+        },
+        {
+          "html": "<p>The variable dir is set equal to ( priStr == 0 ) ? 0 : yDir.</p>"
+        },
+        {
+          "html": "<p>The variable varStr is set equal to ( var &gt;&gt; 6 ) ? Min( FloorLog2( var &gt;&gt; 6 ), 12) : 0.</p>"
+        },
+        {
+          "html": "<p>The variable priStr is set equal to ( var ? ( priStr * ( 4 + varStr ) + 8 ) &gt;&gt; 4 : 0 ).</p>"
+        },
+        {
+          "html": "<p>The variable damping is set equal to CdefDamping + coeffShift.</p>"
+        },
+        {
+          "html": "<p>The CDEF filter process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#cdef-filter-process\">section 7.15.3</a> is invoked with plane equal to 0, r, c, priStr, secStr, damping, and dir as input.</p>"
+        },
+        {
+          "html": "<p>If NumPlanes is equal to 1, the process terminates at this point (i.e. filtering is not done for the U and V planes).</p>"
+        },
+        {
+          "html": "<p>The variable priStr is set equal to cdef_uv_pri_strength[ idx ] &lt;&lt; coeffShift.</p>"
+        },
+        {
+          "html": "<p>The variable secStr is set equal to cdef_uv_sec_strength[ idx ] &lt;&lt; coeffShift.</p>"
+        },
+        {
+          "html": "<p>The variable dir is set equal to ( priStr == 0 ) ? 0 :\nCdef_Uv_Dir[ subsampling_x ][ subsampling_y ][ yDir ].</p>"
+        },
+        {
+          "html": "<p>The variable damping is set equal to CdefDamping + coeffShift - 1.</p>"
+        },
+        {
+          "html": "<p>The CDEF filter process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#cdef-filter-process\">section 7.15.3</a> is invoked with plane equal to 1, r, c, priStr, secStr, damping, and dir as input.</p>"
+        },
+        {
+          "html": "<p>The CDEF filter process specified in <a href=\"https://aomediacodec.github.io/av1-spec/#cdef-filter-process\">section 7.15.3</a> is invoked with plane equal to 2, r, c, priStr, secStr, damping, and dir as input.</p>"
+        }
+      ]
+    }
+  ]
+}

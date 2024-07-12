@@ -1,0 +1,20 @@
+{
+  "spec": {
+    "title": "A Well-Known URL for Passkey Endpoints",
+    "url": "https://w3c.github.io/webappsec-passkey-endpoints/passkey-endpoints.html"
+  },
+  "algorithms": [
+    {
+      "html": "Given a passkey’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webauthn-2#relying-party-identifier\" id=\"ref-for-relying-party-identifier①\">relying party identifier</a>, generate a passkey endpoints URL by running these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>url</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url\">URL</a></code> with values set as follows:</p>\n     <dl>\n      <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a>\n      </dt><dd data-md=\"\">\n       <p>\"https\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host\">host</a>\n      </dt><dd data-md=\"\">\n       <p>the passkey’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webauthn-2#relying-party-identifier\" id=\"ref-for-relying-party-identifier②\">relying party identifier</a></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port\">port</a>\n      </dt><dd data-md=\"\">\n       <p>null</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path\">path</a>\n      </dt><dd data-md=\"\">\n       <p>« \".well-known\", \"passkey-endpoints\" ».</p>\n     </dd></dl>"
+        },
+        {
+          "html": "<p>Return <var>url</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

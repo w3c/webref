@@ -1,0 +1,254 @@
+{
+  "spec": {
+    "title": "CSS Fonts Module Level 4",
+    "url": "https://drafts.csswg.org/css-fonts-4/"
+  },
+  "algorithms": [
+    {
+      "name": "render with a fallback font face",
+      "href": "https://drafts.csswg.org/css-fonts-4/#render-with-a-fallback-font-face",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"render-with-a-fallback-font-face\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">render with a fallback font face</dfn> for a given element,\n\tthe user agent must find the first font face\n\tspecified in the element’s <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-family\" id=\"ref-for-propdef-font-family⑧\">font-family</a> list\n\twhich is already loaded,\n\tand use that for rendering text.\n\tDoing this must not trigger loads of any of the fallback fonts.",
+      "rationale": "To <dfn>"
+    },
+    {
+      "name": "render with an invisible fallback font face",
+      "href": "https://drafts.csswg.org/css-fonts-4/#render-with-an-invisible-fallback-font-face",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"render-with-an-invisible-fallback-font-face\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">render with an invisible fallback font face</dfn> for a given element,\n\tfind a font face as per \"<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-fonts-4/#render-with-a-fallback-font-face\" id=\"ref-for-render-with-a-fallback-font-face①\">render with a fallback font face</a>\".\n\tCreate an anonymous font face\n\twith the same metrics as the selected font face\n\tbut with all glyphs \"invisible\" (containing no \"ink\"),\n\tand use that for rendering text.\n\tDoing this must not trigger loads of any of the fallback fonts.",
+      "rationale": "To <dfn>"
+    },
+    {
+      "name": "fetch a font",
+      "href": "https://drafts.csswg.org/css-fonts-4/#fetch-a-font",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-a-font\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch a font</dfn> given a selected <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#url-value\" id=\"ref-for-url-value①\" title=\"Expands to: local url flag\">&lt;url&gt;</a> <var>url</var> for <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#at-font-face-rule\" id=\"ref-for-at-font-face-rule④④\">@font-face</a> <var>rule</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#fetch-a-style-resource\" id=\"ref-for-fetch-a-style-resource\">fetch</a> <var>url</var>,\n\twith stylesheet being <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-style-sheet\" id=\"ref-for-concept-css-rule-parent-css-style-sheet\">parent CSS style sheet</a>,\n\tdestination \"font\",\n\tCORS mode \"cors\",\n\tand processResponse being the following steps given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>res</var> and null, failure or a\n\tbyte stream <var>stream</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>stream</var> is null, return.</p>"
+        },
+        {
+          "html": ""
+        }
+      ]
+    },
+    {
+      "name": "default face",
+      "href": "https://drafts.csswg.org/css-fonts-4/#default-face",
+      "html": "For this procedure,\nthe <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"default-face\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">default face</dfn> for a given font family\nis defined to be the face that would be selected\nif all font style properties were set to their initial value.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Using the computed font property values for a given element,\nthe user agent starts with the first family name\nspecified by the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-family\" id=\"ref-for-propdef-font-family①②\">font-family</a> property.</p>"
+        },
+        {
+          "html": "<p>If the family name is a generic family keyword, the user agent\nlooks up the appropriate font family name to be used.  User\nagents may choose the generic font family to use based on the\nlanguage of the containing element or the Unicode range of the\ncharacter.</p>"
+        },
+        {
+          "html": "<p>For other family names, the user agent attempts to find the\nfamily name among fonts defined via <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑤⑥\">@font-face</a> rules and then\namong available installed fonts\n(this may include font aliases),\nmatching names with a <a href=\"https://drafts.csswg.org/css-fonts-4/#localized-name-matching\">§ 5.1 Localized name matching</a> as outlined\nin the section above.\nIf the font\nresources defined for a given face in an <span class=\"css\" id=\"ref-for-at-font-face-rule⑤⑦\">@font-face</span> rule are either\nnot available or contain invalid font data, then the face should be\ntreated as not present in the family. If no faces are present for a\nfamily defined via <span class=\"css\" id=\"ref-for-at-font-face-rule⑤⑧\">@font-face</span> rules, the family should be treated as\nmissing; matching a platform font with the same name must not occur\nin this case.</p>"
+        },
+        {
+          "html": "If a font family match occurs, the user agent assembles the set\nof font faces in that family and then narrows the set to a single\nface using other font properties in the order given below. Fonts might be\npresent in this group which can support a range of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-width\" id=\"ref-for-propdef-font-width①⑧\">font-width</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-style\" id=\"ref-for-propdef-font-style①③\">font-style</a>, or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-weight\" id=\"ref-for-propdef-font-weight①⑨\">font-weight</a> properties. In\nthis case, the algorithm proceeds as if each supported combination of\nvalues is a unique font in the set. If such a font is ultimately\nselected by this algorithm, particular values for <span class=\"property\" id=\"ref-for-propdef-font-width①⑨\">font-width</span>, <span class=\"property\" id=\"ref-for-propdef-font-style①④\">font-style</span>, and <span class=\"property\" id=\"ref-for-propdef-font-weight②⓪\">font-weight</span> must be applied\nbefore any layout or rendering occurs. The application of these values\nmust be applied in the <a href=\"https://drafts.csswg.org/css-fonts-4/#apply-font-matching-variations\">Apply\nfont matching variations</a> step detailed in <a href=\"https://drafts.csswg.org/css-fonts-4/#font-feature-variation-resolution\">§ 7 Font Feature and Variation Resolution</a>.\nA group\nof faces defined via <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑤⑨\">@font-face</a> rules with identical font\ndescriptor values but differing <a class=\"property css\" data-link-type=\"descriptor\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range\" id=\"ref-for-descdef-font-face-unicode-range④\">unicode-range</a> values are considered to be\na single <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"composite-face\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">composite face</dfn> for this step:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p><a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-width\" id=\"ref-for-propdef-font-width②⓪\">font-width</a> is tried first. If a font\ndoes not have any concept of varying strengths of width values, its width value\nis mapped according table in the <a href=\"https://drafts.csswg.org/css-fonts-4/#widthmappings\">property definition</a>.\nIf the matching set includes faces with width values\ncontaining the <span class=\"property\" id=\"ref-for-propdef-font-width②①\">font-width</span> desired value, faces with width values which do not include the desired width value\nare removed from the matching set. If there is no face\nwhich contains the desired value, a width value is chosen using the rules below:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>If the desired width value is less than or equal to 100%, width values below the\ndesired width value are checked in descending order followed by\nwidth values above the desired width value in ascending order until a\nmatch is found.</p>\n        </li><li data-md=\"\">\n         <p>Otherwise, width values above the\ndesired width value are checked in ascending order followed by\nwidth values below the desired width value in descending order until a\nmatch is found.</p>\n       </li></ul>\n       <p>Once the\nclosest matching width has been determined by this process,\nfaces with widths which do not include this determined width are removed from the matching set.</p>"
+            },
+            {
+              "html": "If the value of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-style\" id=\"ref-for-propdef-font-style①⑦\">font-style</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic\" id=\"ref-for-valdef-font-style-italic③\">italic</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If the matching set includes faces with italic values containing the mapped value of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic\" id=\"ref-for-valdef-font-style-italic④\">italic</a>,\nthen faces with italic values which do not include the desired italic mapped value are removed from the matching set.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, italic values above the desired italic value are checked in ascending order followed by\nitalic values below the desired italic value, until 0 is hit. Only positive values of italic values are checked\nin this stage.</p>"
+                },
+                {
+                  "html": "<p>If no match is found, oblique values greater than or equal to 11deg are checked in ascending order\nfollowed by oblique values below 11deg in descending order, until 0 is hit. Only positive values of oblique values\nare checked in this stage.</p>"
+                },
+                {
+                  "html": "<p>If no match is found, italic values less than or equal to 0 are checked in descending order until a match is found.</p>"
+                },
+                {
+                  "html": "<p>If no match is found, oblique values less than or equal to 0deg are checked in descending order until a match is found.</p>"
+                }
+              ],
+              "additional": [
+                {
+                  "html": "If the value of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-style\" id=\"ref-for-propdef-font-style①⑧\">font-style</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-font-style-oblique\" id=\"ref-for-valdef-font-style-oblique①\">oblique</a> and the requested angle is greater than or equal to 11deg,",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If the matching set includes faces with oblique values containing the value of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-font-style-oblique\" id=\"ref-for-valdef-font-style-oblique②\">oblique</a>,\nfaces with oblique values which do not include the desired oblique value are removed from the matching set.</p>"
+                    },
+                    {
+                      "html": "<p>Otherwise, oblique values above the desired oblique value are checked in ascending order followed by\noblique values below the desired oblique value, until 0 is hit. Only positive values of oblique values are checked in this stage.</p>"
+                    },
+                    {
+                      "html": "<p>For variable fonts with a slnt axis,\na match is created by setting the slnt value\nwith the specified oblique value.\nOtherwise, if <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-synthesis-style\" id=\"ref-for-propdef-font-synthesis-style⑤\">font-synthesis-style</a> has the value <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#valdef-font-synthesis-style-auto\" id=\"ref-for-valdef-font-synthesis-style-auto\">auto</a>,\nthen a fallback match is produced\nby geometric shearing to the specified oblique value.</p>"
+                    },
+                    {
+                      "html": "<p>If no match is found, italic values greater than or equal to 1 are checked in ascending order\nfollowed by italic values below 1 in descending order, until 0 is hit. Only positive values of italic values are checked in this stage.</p>"
+                    },
+                    {
+                      "html": "<p>If no match is found, oblique values less than or equal to 0deg are checked in descending order until a match is found.</p>"
+                    },
+                    {
+                      "html": "<p>If no match is found, italic values less than or equal to 0 are checked in descending order until a match is found.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "If the value of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-style\" id=\"ref-for-propdef-font-style①⑨\">font-style</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-font-style-oblique\" id=\"ref-for-valdef-font-style-oblique③\">oblique</a> and the requested angle is greater than or equal to 0deg and less than 11deg,",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If the matching set includes faces with oblique values containing the value of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-font-style-oblique\" id=\"ref-for-valdef-font-style-oblique④\">oblique</a>,\nfaces with oblique values which do not include the desired oblique value are removed from the matching\nset.</p>"
+                    },
+                    {
+                      "html": "<p>Otherwise, oblique values below the desired oblique value are checked in descending order until 0 is hit, followed by\noblique values above the desired oblique value. Only positive values of oblique values are checked\nin this stage.</p>"
+                    },
+                    {
+                      "html": "<p>For variable fonts with a slnt axis,\na match is created by setting the slnt value\nwith the specified oblique value.\nOtherwise, if <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-synthesis-style\" id=\"ref-for-propdef-font-synthesis-style⑥\">font-synthesis-style</a> has the value <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#valdef-font-synthesis-style-auto\" id=\"ref-for-valdef-font-synthesis-style-auto①\">auto</a>,\nthen a fallback match is produced\nby geometric shearing to the specified oblique value.</p>"
+                    },
+                    {
+                      "html": "<p>If no match is found, italic values less than 1 are checked in descending order until 0 is hit,\nfollowed by italic values above 1 in ascending order. Only positive values of italic values\nare checked in this stage.</p>"
+                    },
+                    {
+                      "html": "<p>If no match is found, oblique values less than or equal to 0deg are checked in descending order until a match is found.</p>"
+                    },
+                    {
+                      "html": "<p>If no match is found, italic values less than or equal to 0 are checked in descending order until a match is found.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "If the value of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-style\" id=\"ref-for-propdef-font-style②②\">font-style</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#valdef-font-style-normal\" id=\"ref-for-valdef-font-style-normal②\">normal</a>,",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>Oblique values greater than or equal to 0 are checked in ascending order.</p>"
+                    },
+                    {
+                      "html": "<p>If no match is found, italic values greater than or equal to 0 are checked in ascending</p>"
+                    },
+                    {
+                      "html": "<p>If no match is found, oblique values less than 0deg are checked in descending order until a match is found.</p>"
+                    },
+                    {
+                      "html": "<p>If no match is found, italic values less than 0 are checked in descending order until a match is found.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p><a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-weight\" id=\"ref-for-propdef-font-weight②①\">font-weight</a> is matched next. If a font does not have any concept of varying strengths of weights, its weight is mapped according list in the <a href=\"https://drafts.csswg.org/css-fonts-4/#font-weight-numeric-values\">property definition</a>. If bolder/lighter relative weights are used, the effective weight is calculated based on the inherited weight value, as described in the definition of the <span class=\"property\" id=\"ref-for-propdef-font-weight②②\">font-weight</span> property. If the matching set after performing the steps above includes faces with weight values containing the font-weight desired value, faces with weight values which do not include the desired font-weight value are removed from the matching set. If there is no face which contains the desired value, a weight value is chosen using the rules below:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>If the desired weight is inclusively between 400 and 500, weights greater than or equal to the target weight are checked in ascending order until 500 is hit and checked, followed by weights less than the target weight in descending order, followed by weights greater than 500, until a match is found.</p>\n        </li><li data-md=\"\">\n         <p>If the desired weight is less than 400, weights less than or equal to the\ndesired weight are checked in descending order followed by\nweights above the desired weight in ascending order until a\nmatch is found.</p>\n        </li><li data-md=\"\">\n         <p>If the desired weight is greater than 500, weights greater than or equal to the\ndesired weight are checked in ascending order followed by\nweights below the desired weight in descending order until a\nmatch is found.</p>\n       </li></ul>\n       \n       \n       \n       \n       <p>Once the closest matching weight has been determined by this process,\nfaces with weights which do not include this determined weight are removed from the matching set.</p>"
+            },
+            {
+              "html": "<p><a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-size\" id=\"ref-for-propdef-font-size①⑦\">font-size</a> must be\nmatched within a UA-dependent margin of tolerance. (Typically, sizes\nfor scalable fonts are rounded to the nearest whole pixel, while the\ntolerance for bitmapped fonts could be as large as 20%.) Further\ncomputations, e.g., by <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-4/#em\" id=\"ref-for-em①\">em</a> values in other properties, are based on\nthe <span class=\"property\" id=\"ref-for-propdef-font-size①⑧\">font-size</span> value that\nis used, not the one that is specified.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If the matched face is defined via <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑥①\">@font-face</a> rules, user agents must use the procedure below to select a single\nfont:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the font resource has not been loaded and the range of\ncharacters defined by the <a class=\"property css\" data-link-type=\"descriptor\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range\" id=\"ref-for-descdef-font-face-unicode-range⑤\">unicode-range</a> descriptor value\nincludes the character in question, load the font.</p>"
+            },
+            {
+              "html": "<p>After downloading, if the <em>effective character map</em> supports the character in question, select that font.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If no matching face exists or the matched face does not contain\na glyph for the character to be rendered, the next family name is\nselected and the previous three steps repeated.  Glyphs from other\nfaces in the family are not considered.  The only exception is that\nuser agents may optionally substitute a synthetically obliqued version of the <em>default face</em> if that face supports a given glyph and synthesis\nof these faces is permitted by the value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-synthesis\" id=\"ref-for-propdef-font-synthesis⑥\">font-synthesis</a> property.\nFor example, a synthetic italic version of the regular face might be used if the\nitalic face doesn’t support glyphs for Arabic.</p>"
+        },
+        {
+          "html": "<p>If there are no more font families to be evaluated and no matching\nface has been found, then the user agent performs an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"installed font fallback\" data-noexport=\"\" id=\"installed-font-fallback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">installed font\nfallback</dfn> procedure to find the best match for the character to be\nrendered.  The result of this procedure can vary across user agents.</p>"
+        },
+        {
+          "html": "<p>If a particular character cannot be displayed using any\nfont, the user agent should indicate by some means that a\ncharacter is not being displayed, displaying either a\nsymbolic representation of the missing glyph (e.g. using a <a href=\"https://en.wikipedia.org/wiki/Last_resort_font\">Last\nResort Font</a>) or using the missing character glyph from\na default font.</p>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each family in the font list,\n\t\t\ta face is chosen using the style selection rules\n\t\t\tdefined in the previous section.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If all characters in the sequence <em>b + c1 + c2 …</em> are completely supported by the font,\n\t\tselect this font for the sequence."
+            },
+            {
+              "html": "If a sequence of multiple codepoints\n\t\t\tis canonically equivalent to a single character\n\t\t\tand the font <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-fonts-4/#support\" id=\"ref-for-support\">supports</a> that character,\n\t\t\tselect this font for the sequence\n\t\t\tand use the glyph associated with\n\t\t\tthe canonically equivalent character\n\t\t\tfor the entire cluster."
+            }
+          ]
+        },
+        {
+          "html": "If no font was found in the font list in step 1:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <em>c1</em> is a variation selector,\n\t\t\tsystem fallback must be used\n\t\t\tto find a font that <em title=\"support\">supports</em> the full sequence of <em>b + c1</em>.\n\t\t\tIf no font on the system <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-fonts-4/#support\" id=\"ref-for-support①\">supports</a> the full sequence,\n\t\t\tmatch the single character <em>b</em> using the normal procedure for matching\n\t\t\tsingle characters\n\t\t\tand ignore the variation selector.\n\t\t\tNote: a sequence with more than one variation selector\n\t\t\tmust be treated as an encoding error\n\t\t\tand the trailing selectors must be ignored. <a data-link-type=\"biblio\" href=\"https://drafts.csswg.org/css-fonts-4/#biblio-unicode\" title=\"The Unicode Standard\">[UNICODE]</a>"
+            },
+            {
+              "html": "Otherwise, the user agent may optionally use\n\t\t\tinstalled font fallback\n\t\t\tto match a font that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-fonts-4/#support\" id=\"ref-for-support②\">supports</a> the entire cluster."
+            }
+          ]
+        },
+        {
+          "html": "If no font is found in step 2,\n\t\t\tuse the matching sequence\n\t\t\tfrom step 1 to determine the longest sequence\n\t\t\tthat is completely <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-fonts-4/#support\" id=\"ref-for-support③\">supported</a> by a font in the font list\n\t\t\tand attempt to match the remaining combining characters\n\t\t\tseparately using the rules for single characters."
+        }
+      ]
+    },
+    {
+      "html": "General and <em>font specific</em> font feature property settings are\nresolved in the order below, in ascending order of precedence.  This ordering is\nused to construct a combined list of font features that affect a given\ntext run.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Font features enabled by default are applied, including features required for a given script.\n    See <a href=\"https://drafts.csswg.org/css-fonts-4/#default-features\">§ 7.1 Default features</a> for a description of these.</p>"
+        },
+        {
+          "html": "<p><span id=\"apply-font-matching-variations\">Font variations as enabled by the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-weight\" id=\"ref-for-propdef-font-weight②④\">font-weight</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-width\" id=\"ref-for-propdef-font-width②③\">font-width</a>, and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-style\" id=\"ref-for-propdef-font-style②④\">font-style</a> properties are applied.</span></p>\n     <p>The application of the value enabled by <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-style\" id=\"ref-for-propdef-font-style②⑤\">font-style</a> is affected by font selection, because this property might select an\nitalic or an oblique font. The value applied is the closest matching value as determined\nby the <a href=\"https://drafts.csswg.org/css-fonts-4/#font-style-matching\">font matching algorithm</a>. User agents must apply\nat most one value due to the <span class=\"property\" id=\"ref-for-propdef-font-style②⑥\">font-style</span> property; both \"ital\" and \"slnt\" values must\nnot be set together.</p>\n     <p>If the selected font is defined in an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑥④\">@font-face</a> rule, then the values applied at this step\nshould be clamped to the value of the <a class=\"property css\" data-link-type=\"descriptor\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-weight\" id=\"ref-for-descdef-font-face-font-weight①\">font-weight</a>, <a class=\"property css\" data-link-type=\"descriptor\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-width\" id=\"ref-for-descdef-font-face-font-width②\">font-width</a>,\nand <a class=\"property css\" data-link-type=\"descriptor\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-style\" id=\"ref-for-descdef-font-face-font-style②\">font-style</a> descriptors in that <span class=\"css\" id=\"ref-for-at-font-face-rule⑥⑤\">@font-face</span> rule.</p>\n     <p>Then, the values applied in this step should be clamped (possibly again) to the values\nthat are supported by the font.</p>"
+        },
+        {
+          "html": "<p>The language specified by the inherited value of lang/xml:lang is applied.</p>"
+        },
+        {
+          "html": "<p>If the font is defined via an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑥⑥\">@font-face</a> rule, the font language override\nimplied by the <a class=\"property css\" data-link-type=\"descriptor\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-language-override\" id=\"ref-for-descdef-font-face-font-language-override①\">font-language-override</a> descriptor in the <span class=\"css\" id=\"ref-for-at-font-face-rule⑥⑦\">@font-face</span> rule is applied.</p>"
+        },
+        {
+          "html": "<p>If the font is defined via an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑥⑧\">@font-face</a> rule, that <span class=\"css\" id=\"ref-for-at-font-face-rule⑥⑨\">@font-face</span> rule includes\nat least one valid <a class=\"property css\" data-link-type=\"property\">font-named-instance</a> descriptor\nwith a value other than <span class=\"property\">none</span>,\nand the loaded font resource includes a named instance with that name\naccording to the <a href=\"https://drafts.csswg.org/css-fonts-4/#localized-name-matching\">§ 5.1 Localized name matching</a> rules,\nthen all the variation values represented by that named instance are applied.\nThese values are clamped to the values that are supported by the font.</p>"
+        },
+        {
+          "html": "<p>If the font is defined via an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑦⓪\">@font-face</a> rule, the font variations\nimplied by the <a class=\"property css\" data-link-type=\"descriptor\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-variation-settings\" id=\"ref-for-descdef-font-face-font-variation-settings①\">font-variation-settings</a> descriptor in the <span class=\"css\" id=\"ref-for-at-font-face-rule⑦①\">@font-face</span> rule are applied.</p>"
+        },
+        {
+          "html": "<p>If the font is defined via an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑦②\">@font-face</a> rule, the font features\nimplied by the <a class=\"property css\" data-link-type=\"descriptor\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-feature-settings\" id=\"ref-for-descdef-font-face-font-feature-settings①\">font-feature-settings</a> descriptor in the <span class=\"css\" id=\"ref-for-at-font-face-rule⑦③\">@font-face</span> rule are applied.</p>"
+        },
+        {
+          "html": "<p>The font language override implied by the value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-language-override\" id=\"ref-for-propdef-font-language-override⑨\">font-language-override</a> property is applied.</p>"
+        },
+        {
+          "html": "<p>Font variations implied by the value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-optical-sizing\" id=\"ref-for-propdef-font-optical-sizing①\">font-optical-sizing</a> property are applied.</p>"
+        },
+        {
+          "html": "<p>Font features implied by the value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-variant\" id=\"ref-for-propdef-font-variant①⑤\">font-variant</a> property,\nthe related <span class=\"property\" id=\"ref-for-propdef-font-variant①⑥\">font-variant</span> subproperties and any other CSS property\nthat uses OpenType features (e.g. the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-kerning\" id=\"ref-for-propdef-font-kerning⑤\">font-kerning</a> property) are applied.</p>"
+        },
+        {
+          "html": "<p>Feature settings determined by properties other than <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-variant\" id=\"ref-for-propdef-font-variant①⑦\">font-variant</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-feature-settings\" id=\"ref-for-propdef-font-feature-settings①②\">font-feature-settings</a> are applied. For example, setting a\nnon-default value for the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-text-4/#propdef-letter-spacing\" id=\"ref-for-propdef-letter-spacing①\">letter-spacing</a> property disables optional ligatures.</p>"
+        },
+        {
+          "html": "<p>Font variations implied by the value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-variation-settings\" id=\"ref-for-propdef-font-variation-settings④\">font-variation-settings</a> property are applied.\nThese values should be clamped to the values that are supported by the font.</p>"
+        },
+        {
+          "html": "<p>Font features implied by the value of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-feature-settings\" id=\"ref-for-propdef-font-feature-settings①③\">font-feature-settings</a> property are applied.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@
       "title": "Protected Audience (formerly FLEDGE)",
       "url": "https://wicg.github.io/turtledove/"
     },
-    "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n  required long recency;\n  required long adComponentsLimit;\n  required unsigned short multiBidLimit;\n\n  record<DOMString, DOMString> requestedSize;\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
+    "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n  required long recency;\n  required long adComponentsLimit;\n  required unsigned short multiBidLimit;\n\n  record<DOMString, DOMString> requestedSize;\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n  unsigned long crossOriginDataVersion;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
     "href": "https://wicg.github.io/turtledove/#dictdef-biddingbrowsersignals"
   },
   "extended": [],

@@ -1,0 +1,133 @@
+{
+  "spec": {
+    "title": "CSS Overflow Module Level 5",
+    "url": "https://drafts.csswg.org/css-overflow-5/"
+  },
+  "algorithms": [
+    {
+      "html": "The computed value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-overflow-4/#propdef-continue\" id=\"ref-for-propdef-continue⑥\">continue</a> for a given element or pseudo element is determined as follow:",
+      "rationale": "/^otherwise(\\,| )/i",
+      "steps": [
+        {
+          "html": "On elements or pseudo elements with <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#layout-containment\" id=\"ref-for-layout-containment\">layout containment</a> (see <a data-link-type=\"biblio\" href=\"https://drafts.csswg.org/css-overflow-5/#biblio-css-contain-1\" title=\"CSS Containment Module Level 1\">[CSS-CONTAIN-1]</a>),\n\tif the specified value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-4/#valdef-continue-auto\" id=\"ref-for-valdef-continue-auto②\">auto</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-5/#valdef-continue-fragments\" id=\"ref-for-valdef-continue-fragments\">fragments</a> then the computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-5/#valdef-continue-overflow\" id=\"ref-for-valdef-continue-overflow\">overflow</a>."
+        },
+        {
+          "html": "Otherwise, if the specified value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-4/#valdef-continue-auto\" id=\"ref-for-valdef-continue-auto③\">auto</a>",
+          "rationale": "/^otherwise(\\,| )/i",
+          "steps": [
+            {
+              "html": "On a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-regions-1/#css-region\" id=\"ref-for-css-region①\">CSS Region</a> other than the last one in a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-regions-1/#region-chain\" id=\"ref-for-region-chain①\">region chain</a>,\n\t\tthe computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-4/#valdef-continue-auto\" id=\"ref-for-valdef-continue-auto④\">auto</a>"
+            },
+            {
+              "html": "On a page\n\t\tthe computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-5/#valdef-continue-paginate\" id=\"ref-for-valdef-continue-paginate\">paginate</a>"
+            },
+            {
+              "html": "On a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#fragment-box\" id=\"ref-for-fragment-box\">fragment box</a> the computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-5/#valdef-continue-fragments\" id=\"ref-for-valdef-continue-fragments①\">fragments</a>"
+            },
+            {
+              "html": "Otherwise, the computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-5/#valdef-continue-overflow\" id=\"ref-for-valdef-continue-overflow①\">overflow</a>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if the specified value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-5/#valdef-continue-fragments\" id=\"ref-for-valdef-continue-fragments②\">fragments</a>",
+          "rationale": "/^otherwise(\\,| )/i",
+          "steps": [
+            {
+              "html": "On a page\n\t\tthe computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-5/#valdef-continue-paginate\" id=\"ref-for-valdef-continue-paginate①\">paginate</a>"
+            },
+            {
+              "html": "Otherwise, the computed value is the specified value"
+            }
+          ]
+        },
+        {
+          "html": "In all other cases, the computed value is the specified value"
+        }
+      ]
+    },
+    {
+      "html": "To be more precise,\n\t\twhen a rule’s selector has <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-5/#selectordef-nth-fragment\" id=\"ref-for-selectordef-nth-fragment①③\">::nth-fragment()</a> pseudo-elements\n\t\tattached to parts of the selector other than the subject,\n\t\tthe declarations in that rule apply to\n\t\ta fragment (or pseudo-element thereof) when:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "the declarations are for properties that apply to the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter\" id=\"ref-for-selectordef-first-letter③\">::first-letter</a> pseudo-element,"
+        },
+        {
+          "html": "the declarations would apply to\n\t\t\tthat fragment (or pseudo-element thereof)\n\t\t\thad those <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-5/#selectordef-nth-fragment\" id=\"ref-for-selectordef-nth-fragment①④\">::nth-fragment()</a> pseudo-elements been removed,\n\t\t\twith a particular association between\n\t\t\teach sequence of simple selectors and the element it matched,\n\t\t\tand"
+        },
+        {
+          "html": "for each removed <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-5/#selectordef-nth-fragment\" id=\"ref-for-selectordef-nth-fragment①⑤\">::nth-fragment()</a> pseudo-element,\n\t\t\tthe fragment lives within a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#fragment-box\" id=\"ref-for-fragment-box②⓪\">fragment box</a> of the element associated in that association\n\t\t\twith the selector that the pseudo-element was attached to,\n\t\t\tand whose index matches the pseudo-element."
+        }
+      ]
+    },
+    {
+      "name": "scrollTargetElement activation",
+      "html": "When a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-marker-control\" id=\"ref-for-scroll-marker-control②\">scroll marker control</a> is activated:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>element</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-overflow-5/#dom-htmlbuttonelement-scrolltargetelement\" id=\"ref-for-dom-htmlbuttonelement-scrolltargetelement④\">scrollTargetElement</a></code> of the control.</p>"
+        },
+        {
+          "html": "<p>Let <var>block</var> be \"<code>start</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>inline</var> be \"<code>start</code>\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-a-target-into-view\" id=\"ref-for-scroll-a-target-into-view\">Scroll the element into view</a> with <var>behavior</var>, <var>block</var>, and <var>inline</var>.</p>"
+        },
+        {
+          "html": "<p>If activated by invocation, move focus to <var>element</var>.\nIf <var>element</var> is not focusable this will result in there being no active element,\nbut the next focus change will proceed from this <var>element</var> as if it were focused.</p>"
+        }
+      ]
+    },
+    {
+      "name": "scroll tracking",
+      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container①②\">scroll container</a> is scrolled, or layout changes the scroll position, the user agent must run these steps to determine the active marker:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>position</var> be the 'eventual scroll position' for the scrolling operation.</p>"
+        },
+        {
+          "html": "<p>Let <var>markers</var> be all of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-marker-control\" id=\"ref-for-scroll-marker-control③\">scroll marker control</a> elements which are a part of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-marker-group%E2%91%A0\" id=\"ref-for-scroll-marker-group①①\">scroll marker group</a> for the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container①③\">scroll container</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>targets</var> be the set of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-overflow-5/#dom-htmlbuttonelement-scrolltargetelement\" id=\"ref-for-dom-htmlbuttonelement-scrolltargetelement⑤\">scrollTargetElement</a></code> for those controls sorted in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order①\">tree order</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>selected</var> be the first element in <var>targets</var>, or null if <var>targets</var> is empty.</p>"
+        },
+        {
+          "html": "For each <var>target</var> in <var>targets</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>selected</var> to <var>target</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>targetPosition</var> be the position that would be scrolled to if we scroll <var>target</var> into view.</p>"
+            },
+            {
+              "html": "<dl>\n         <dt data-md=\"\">If <var>targetPosition</var>’s scroll block offset is less than or equal to <var>position</var>’s scroll block offset, and <var>targetPosition</var>’s scroll inline offset is less than or equal to <var>position</var>’s scroll inline offset.\n         </dt><dd data-md=\"\">\n          <p>Update <var>selected</var> to <var>target</var>.\nBreak.</p>\n        </dd></dl>"
+            }
+          ]
+        },
+        {
+          "html": "<dl>\n       <dt data-md=\"\">If <var>selected</var> is not null,\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">Otherwise,\n       </dt><dd data-md=\"\">\n        <p>Set the <a class=\"property css\" data-link-type=\"property\">checked</a> state of all controls in <var>markers</var> to false.</p>\n      </dd></dl>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>marker</var> be the first control in <var>markers</var> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-overflow-5/#dom-htmlbuttonelement-scrolltargetelement\" id=\"ref-for-dom-htmlbuttonelement-scrolltargetelement⑥\">scrollTargetElement</a></code> is <var>selected</var>.</p>"
+            },
+            {
+              "html": "<p>Set the <a class=\"property css\" data-link-type=\"property\">checked</a> state of <var>marker</var> to true.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

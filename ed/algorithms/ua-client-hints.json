@@ -1,0 +1,482 @@
+{
+  "spec": {
+    "title": "User-Agent Client Hints",
+    "url": "https://wicg.github.io/ua-client-hints/"
+  },
+  "algorithms": [
+    {
+      "name": "return the Sec-CH-UA value for a request",
+      "href": "https://wicg.github.io/ua-client-hints/#abstract-opdef-return-the-sec-ch-ua-value-for-a-request",
+      "html": "To <dfn data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-return-the-sec-ch-ua-value-for-a-request\">return the <code>Sec-CH-UA</code> value for a request<a class=\"self-link\" href=\"https://wicg.github.io/ua-client-hints/#abstract-opdef-return-the-sec-ch-ua-value-for-a-request\"></a></dfn>, perform the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>brands</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#create-brands\" id=\"ref-for-create-brands\">create brands</a> with \"significant version\".</p>"
+        },
+        {
+          "html": "<p>Let <var>list</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#create-a-brand-version-list\" id=\"ref-for-create-a-brand-version-list\">creating a brand-version list</a>,\nwith <var>brands</var> and \"significant version\".</p>"
+        },
+        {
+          "html": "<p>Return the output of running <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc8941#section-4.1.1\" id=\"ref-for-section-4.1.1\">serializing a list</a> with <var>list</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "return the Sec-CH-UA-Full-Version-List value for a request",
+      "href": "https://wicg.github.io/ua-client-hints/#abstract-opdef-return-the-sec-ch-ua-full-version-list-value-for-a-request",
+      "html": "To <dfn data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-return-the-sec-ch-ua-full-version-list-value-for-a-request\">return the <code>Sec-CH-UA-Full-Version-List</code> value for a request<a class=\"self-link\" href=\"https://wicg.github.io/ua-client-hints/#abstract-opdef-return-the-sec-ch-ua-full-version-list-value-for-a-request\"></a></dfn>, perform the\nfollowing steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>brands</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#create-brands\" id=\"ref-for-create-brands①\">create brands</a> with \"full version\".</p>"
+        },
+        {
+          "html": "<p>Let <var>list</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#create-a-brand-version-list\" id=\"ref-for-create-a-brand-version-list①\">create a brand-version list</a>, with <var>brands</var> and \"full version\".</p>"
+        },
+        {
+          "html": "<p>Return the output of running <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc8941#section-4.1.1\" id=\"ref-for-section-4.1.1①\">serializing a list</a> with <var>list</var> as input.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get the platform version",
+      "href": "https://wicg.github.io/ua-client-hints/#get-the-platform-version",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-platform-version\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the platform version</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a string <var>platform</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>platform</var> is \"Linux\":",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return the empty string.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>platform</var> is \"Android\":",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>platformReturnedVersionString</var> be the result of querying the OS’s <code>android.os.Build.VERSION.RELEASE</code> string.</p>"
+            },
+            {
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#create-a-unified-platform-version-string\" id=\"ref-for-create-a-unified-platform-version-string\">creating a unified platform version string</a> with <var>platformReturnedVersionString</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>platform</var> is \"iOS\":",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>platformReturnedVersionString</var> be the result of querying the <code>UIDevice</code> object\nreturned by <code>currentDevice</code> and reading its <code>systemVersion</code>.</p>"
+            },
+            {
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#create-a-unified-platform-version-string\" id=\"ref-for-create-a-unified-platform-version-string①\">creating a unified platform version string</a> with <var>platformReturnedVersionString</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>platform</var> is \"Windows\":",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If available (i.e., on Windows 10 or higher), let <var>platformReturnedVersionString</var> be\nthe result of querying the <code>Windows.Foundation.UniversalApiContract</code> integer version\nand converting it to a string. Otherwise, let <var>platformReturnedVersionString</var> be the\nresult of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#get-the-legacy-windows-version-number\" id=\"ref-for-get-the-legacy-windows-version-number\">getting the legacy Windows version number</a>.</p>"
+            },
+            {
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#create-a-unified-platform-version-string\" id=\"ref-for-create-a-unified-platform-version-string②\">creating a unified platform version string</a> with <var>platformReturnedVersionString</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>platformVersionComponentList</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
+        },
+        {
+          "html": "If <var>platform</var> is \"macOS\":",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>macOSVersion</var> be the <code>operatingSystemVersion</code> property of the <code>NSProcessInfo</code> object\nreturned by getting the <code>processInfo</code> information agent.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>macOSVersion</var>’s <code>majorVersion</code>, <code>minorVersion</code>, and <code>patchVersion</code> components (in that order) to <var>platformVersionComponentList</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>platform</var> is some other value:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> one to three version parts based on the format most likely to lead to\ninteroperability with other browsers running on <var>platform</var> to <var>platformVersionComponentList</var>.</p>"
+            },
+            {
+              "html": "<p>While <var>platformVersionComponentList</var>’s length is less than 3, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">append</a> \"0\" to <var>platformVersionComponentList</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the result of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate\">concatenation</a> of <var>platformVersionComponentList</var> with a U+002E\n  FULL STOP (<code>.</code>) separator.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get the legacy Windows version number",
+      "href": "https://wicg.github.io/ua-client-hints/#get-the-legacy-windows-version-number",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-legacy-windows-version-number\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the legacy Windows version number</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>major</var> be the value of <code>OSVERSIONINFO</code>’s <code>dwMajorVersion</code> member returned from the\n Win32 <code>GetVersionEx</code> API.</p>"
+        },
+        {
+          "html": "<p>Let <var>minor</var> be the value of <code>OSVERSIONINFO</code>’s <code>dwMinorVersion</code> member returned from the\n Win32 <code>GetVersionEx</code> API.</p>"
+        },
+        {
+          "html": "<p>If <var>major</var> is <code>6</code> and <var>minor</var> is <code>3</code> (i.e., Windows 8.1), return \"0.3\".</p>"
+        },
+        {
+          "html": "<p>If <var>major</var> is <code>6</code> and <var>minor</var> is <code>2</code> (i.e., Windows 8), return \"0.2\".</p>"
+        },
+        {
+          "html": "<p>If <var>major</var> is <code>6</code> and <var>minor</var> is <code>1</code> (i.e., Windows 7), return \"0.1\".</p>"
+        },
+        {
+          "html": "<p>Otherwise, return \"0\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a unified platform version string",
+      "href": "https://wicg.github.io/ua-client-hints/#create-a-unified-platform-version-string",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-unified-platform-version-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a unified platform version string</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a string <var>input</var>, run the following\nsteps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>platformVersionComponentList</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> and <var>index</var> be 0.</p>"
+        },
+        {
+          "html": "<p>Let <var>platformVersionUnprocessedTokenList</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> returned by <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#strictly-split\" id=\"ref-for-strictly-split\">strictly splitting</a> <var>input</var> on the U+002E FULL STOP character (<code>.</code>):</p>"
+        },
+        {
+          "html": "While <var>index</var> is less than 3:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>index</var> is less than the length of <var>platformVersionUnprocessedTokenList</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>platformVersionUnprocessedTokenList</var>[<var>index</var>] is an unsigned integer, convert it\nto a string and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">append</a> it to <var>platformVersionComponentList</var>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">append</a> \"0\" to <var>platformVersionComponentList</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, if <var>index</var> is greater than or equal to the length of <var>platformVersionUnprocessedTokenList</var>:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑤\">Append</a> \"0\" to <var>platformVersionComponentList</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Increment <var>index</var> by 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the result of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate①\">concatenation</a> of <var>platformVersionComponentList</var> with a U+002E\nFULL STOP (<code>.</code>) separator.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create brands",
+      "href": "https://wicg.github.io/ua-client-hints/#create-brands",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-brands\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create brands</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with <var>version type</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>list</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a> <var>version type</var> is either \"full version\" or \"significant version\".</p>"
+        },
+        {
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-brand\" id=\"ref-for-user-agent-brand①\">brand</a> that represents the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent③③\">user agent</a>—or an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-equivalence-class\" id=\"ref-for-user-agent-equivalence-class①\">equivalence class</a>—as <var>brand</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>version</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a>, initialized accordingly:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>version type</var> is \"full version\", set <var>version</var> to a string that corresponds to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-full-version\" id=\"ref-for-user-agent-full-version⑤\">full version</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>version type</var> is \"significant version\", set <var>version</var> to a string that corresponds to\nthe <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-significant-version\" id=\"ref-for-user-agent-significant-version②\">significant version</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>dict</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dictdef-navigatoruabrandversion\" id=\"ref-for-dictdef-navigatoruabrandversion⑥\">NavigatorUABrandVersion</a></code> dictionary, with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-navigatoruabrandversion-brand\" id=\"ref-for-dom-navigatoruabrandversion-brand\">brand</a></code> set to <var>brand</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-navigatoruabrandversion-version\" id=\"ref-for-dom-navigatoruabrandversion-version\">version</a></code> set to <var>version</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">Append</a> <var>dict</var> to <var>list</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent③④\">user agent</a> SHOULD execute the following steps:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">Append</a> one additional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a> to <var>list</var> containing a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dictdef-navigatoruabrandversion\" id=\"ref-for-dictdef-navigatoruabrandversion⑦\">NavigatorUABrandVersion</a></code> dictionary, initialized with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-navigatoruabrandversion-brand\" id=\"ref-for-dom-navigatoruabrandversion-brand①\">brand</a></code> set to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#create-an-arbitrary-brand\" id=\"ref-for-create-an-arbitrary-brand\">arbitrary brand</a> and set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-navigatoruabrandversion-version\" id=\"ref-for-dom-navigatoruabrandversion-version①\">version</a></code> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#create-an-arbitrary-version\" id=\"ref-for-create-an-arbitrary-version\">create an arbitrary version</a> with <var>version type</var>.</p>"
+            },
+            {
+              "html": "<p>Randomize the order of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①\">items</a> in <var>list</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>list</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create an arbitrary brand",
+      "href": "https://wicg.github.io/ua-client-hints/#create-an-arbitrary-brand",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-arbitrary-brand\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an arbitrary brand</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent③⑥\">user agent</a> MUST run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>arbitraryBrand</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> composed of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-alpha\" id=\"ref-for-ascii-alpha①\">ASCII alpha</a> and 0x20 (SP). <var>arbitraryBrand</var> MUST contain one or more 0x20 (SP) bytes and be no longer than twenty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte\">ASCII bytes</a>, and MUST not start or end with 0x20 (SP).</p>"
+        },
+        {
+          "html": "<p>Let <var>arbitraryBrandList</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#split-on-ascii-whitespace\" id=\"ref-for-split-on-ascii-whitespace\">splitting <var>arbitraryBrand</var> on ASCII whitespace</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>greaseyStack</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\" id=\"ref-for-stack\">stack</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>greaseyChars</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-byte\" id=\"ref-for-ascii-byte①\">ASCII bytes</a> « 0x20 (SP), 0x28 (left parenthesis),\n0x29 (right parenthesis), 0x2D (-), 0x2E (.), 0x2F (/), 0x3A (:), 0x3B (;), 0x3D (=), 0x3F\n(?), 0x5F (_) ».</p>"
+        },
+        {
+          "html": "<p>Let <var>index</var> be 0.</p>"
+        },
+        {
+          "html": "While <var>index</var> is less than the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> of <var>arbitraryBrandList</var> minus one:",
+          "rationale": "push",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-push\" id=\"ref-for-stack-push\">Push</a> a randomly selected <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②\">item</a> from <var>greaseyChars</var> onto <var>greaseyStack</var>.</p>"
+            },
+            {
+              "html": "<p>Increment <var>index</var> by 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>greaseyBrandList</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a> and set <var>index</var> to 0.</p>"
+        },
+        {
+          "html": "While <var>greaseyStack</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is not empty</a>:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">Append</a> <var>arbitraryBrandList</var>[<var>index</var>] to <var>greaseyBrandList</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>item</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-pop\" id=\"ref-for-stack-pop\">popping</a> from <var>greaseyStack</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">Append</a> <var>item</var> to <var>greaseyBrandList</var>.</p>"
+            },
+            {
+              "html": "<p>Increment <var>index</var> by 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⓪\">Append</a> <var>arbitraryBrandList</var>[<var>index</var>] to <var>greaseyBrandList</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#strip-leading-and-trailing-ascii-whitespace\" id=\"ref-for-strip-leading-and-trailing-ascii-whitespace\"> stripping leading\nand trailing ASCII whitespace</a> from the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate②\">concatenation</a> of <var>greaseyBrandList</var> (with no\nseparator).</p>"
+        }
+      ]
+    },
+    {
+      "name": "create an arbitrary version",
+      "href": "https://wicg.github.io/ua-client-hints/#create-an-arbitrary-version",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-arbitrary-version\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an arbitrary version</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>version type</var>, run the following steps:",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a> <var>version type</var> is either \"full version\" or \"significant version\".</p>"
+        },
+        {
+          "html": "Let <var>arbitrary version</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a>, initialized accordingly:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>version type</var> is \"full version\", set <var>arbitrary version</var> to a string that matches the\nformat of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-full-version\" id=\"ref-for-user-agent-full-version⑥\">full version</a>, but not the value.</p>"
+            },
+            {
+              "html": "<p>If <var>version type</var> is \"significant version\", set <var>arbitrary version</var> to a string that\nmatches the format of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-significant-version\" id=\"ref-for-user-agent-significant-version③\">significant version</a>, but not the value.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>arbitrary version</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a brand-version list",
+      "href": "https://wicg.github.io/ua-client-hints/#create-a-brand-version-list",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-brand-version-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a brand-version list</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>brands</var> and <var>version type</var>, perform the following\nsteps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>list</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>, initially empty.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a> <var>version type</var> is either \"full version\" or \"significant version\".</p>"
+        },
+        {
+          "html": "For each <var>brand</var> in <var>brands</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>version</var> be a string, initialized accordingly:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>version type</var> is \"full version\", set <var>version</var> to a string that corresponds to\nthe <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-full-version\" id=\"ref-for-user-agent-full-version⑦\">full version</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>version type</var> is \"significant version\", set <var>version</var> to a string that\ncorresponds to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-significant-version\" id=\"ref-for-user-agent-significant-version④\">significant version</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>parameter</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary\">dictionary</a>, initially empty.</p>"
+            },
+            {
+              "html": "<p>Set <var>parameter</var>[\"param_key\"] to \"v\".</p>"
+            },
+            {
+              "html": "<p>Set <var>parameter</var>[\"param_value\"] to <var>version</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>pair</var> be a tuple comprised of <var>brand</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-navigatoruabrandversion-brand\" id=\"ref-for-dom-navigatoruabrandversion-brand②\">brand</a></code> and <var>parameter</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①①\">Append</a> <var>pair</var> to <var>list</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>list</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NavigatorUA/getHighEntropyValues(hints)",
+      "href": "https://wicg.github.io/ua-client-hints/#dom-navigatorua-gethighentropyvalues",
+      "html": "The <dfn class=\"idl-code\" data-dfn-for=\"NavigatorUA\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigatorua-gethighentropyvalues\"><code>getHighEntropyValues(<var>hints</var>)</code><a class=\"self-link\" href=\"https://wicg.github.io/ua-client-hints/#dom-navigatorua-gethighentropyvalues\"></a></dfn> method MUST run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>p</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> created in the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm\">current realm</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent③⑨\">user agent</a> decides one or more values in <var>hints</var> should not be returned, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> and return <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "NavigatorUA/getHighEntropyValues(hints)",
+      "href": "https://wicg.github.io/ua-client-hints/#dom-navigatorua-gethighentropyvalues",
+      "html": "The <dfn class=\"idl-code\" data-dfn-for=\"NavigatorUA\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigatorua-gethighentropyvalues\"><code>getHighEntropyValues(<var>hints</var>)</code><a class=\"self-link\" href=\"https://wicg.github.io/ua-client-hints/#dom-navigatorua-gethighentropyvalues\"></a></dfn> method MUST run these steps:",
+      "rationale": "in parallel",
+      "steps": [
+        {
+          "html": "Otherwise, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>uaData</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dictdef-uadatavalues\" id=\"ref-for-dictdef-uadatavalues①\">UADataValues</a></code>.</p>"
+            },
+            {
+              "html": "<p>set <var>uaData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-uadatavalues-brands\" id=\"ref-for-dom-uadatavalues-brands\">brands</a></code>\"] to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#windoworworkerglobalscope-brands-frozen-array\" id=\"ref-for-windoworworkerglobalscope-brands-frozen-array①\">brands frozen array</a>.</p>"
+            },
+            {
+              "html": "<p>set <var>uaData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-uadatavalues-mobile\" id=\"ref-for-dom-uadatavalues-mobile\">mobile</a></code>\"] to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④⓪\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-mobileness\" id=\"ref-for-user-agent-mobileness③\">mobileness</a>.</p>"
+            },
+            {
+              "html": "<p>set <var>uaData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-uadatavalues-platform\" id=\"ref-for-dom-uadatavalues-platform\">platform</a></code>\"] to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④①\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-platform-brand\" id=\"ref-for-user-agent-platform-brand②\">platform brand</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>hints</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> \"architecture\", set <var>uaData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-uadatavalues-architecture\" id=\"ref-for-dom-uadatavalues-architecture\">architecture</a></code>\"] to\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④②\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-platform-architecture\" id=\"ref-for-user-agent-platform-architecture③\">platform architecture</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>hints</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> \"bitness\", set <var>uaData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-uadatavalues-bitness\" id=\"ref-for-dom-uadatavalues-bitness\">bitness</a></code>\"] to\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④③\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-platform-bitness\" id=\"ref-for-user-agent-platform-bitness③\">platform bitness</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>hints</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contains</a> \"formFactors\", set <var>uaData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-uadatavalues-formfactors\" id=\"ref-for-dom-uadatavalues-formfactors\">formFactors</a></code>\"] to\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④④\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-form-factors\" id=\"ref-for-user-agent-form-factors①\">form-factors</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>hints</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contains</a> \"fullVersionList\", set <var>uaData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-uadatavalues-fullversionlist\" id=\"ref-for-dom-uadatavalues-fullversionlist\">fullVersionList</a></code>\"]\nto <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#windoworworkerglobalscope-full-version-list-frozen-array\" id=\"ref-for-windoworworkerglobalscope-full-version-list-frozen-array\">full version list frozen array</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>hints</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contains</a> \"model\", set <var>uaData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-uadatavalues-model\" id=\"ref-for-dom-uadatavalues-model\">model</a></code>\"] to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④⑤\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-model\" id=\"ref-for-user-agent-model③\">model</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>hints</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑤\">contains</a> \"platformVersion\", set <var>uaData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-uadatavalues-platformversion\" id=\"ref-for-dom-uadatavalues-platformversion\">platformVersion</a></code>\"]\nto the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#get-the-platform-version\" id=\"ref-for-get-the-platform-version①\">getting the platform version</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-platform-brand\" id=\"ref-for-user-agent-platform-brand③\">platform brand</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>hints</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contains</a> \"uaFullVersion\", set <var>uaData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-uadatavalues-uafullversion\" id=\"ref-for-dom-uadatavalues-uafullversion\">uaFullVersion</a></code>\"]</p>"
+            },
+            {
+              "html": "<p>If <var>hints</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑦\">contains</a> \"wow64\", set <var>uaData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-uadatavalues-wow64\" id=\"ref-for-dom-uadatavalues-wow64\">wow64</a></code>\"]\nto the user agent’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-wow64-ness\" id=\"ref-for-user-agent-wow64-ness①\">wow64-ness</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permissions-task-source\" id=\"ref-for-dfn-permissions-task-source\">permission task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>p</var> with <var>uaData</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NavigatorUA/toJSON()",
+      "href": "https://wicg.github.io/ua-client-hints/#dom-navigatorua-tojson",
+      "html": "The <dfn class=\"idl-code\" data-dfn-for=\"NavigatorUA\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigatorua-tojson\"><code>toJSON()</code><a class=\"self-link\" href=\"https://wicg.github.io/ua-client-hints/#dom-navigatorua-tojson\"></a></dfn> method MUST run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>uaLowEntropyData</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dictdef-ualowentropyjson\" id=\"ref-for-dictdef-ualowentropyjson①\">UALowEntropyJSON</a></code></p>"
+        },
+        {
+          "html": "<p>set <var>uaLowEntropyData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-ualowentropyjson-brands\" id=\"ref-for-dom-ualowentropyjson-brands\">brands</a></code>\"] to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#windoworworkerglobalscope-brands-frozen-array\" id=\"ref-for-windoworworkerglobalscope-brands-frozen-array②\">brands frozen array</a>.</p>"
+        },
+        {
+          "html": "<p>set <var>uaLowEntropyData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-ualowentropyjson-mobile\" id=\"ref-for-dom-ualowentropyjson-mobile\">mobile</a></code>\"] to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④⑥\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-mobileness\" id=\"ref-for-user-agent-mobileness④\">mobileness</a>.</p>"
+        },
+        {
+          "html": "<p>set <var>uaLowEntropyData</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/ua-client-hints/#dom-ualowentropyjson-platform\" id=\"ref-for-dom-ualowentropyjson-platform\">platform</a></code>\"] to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④⑦\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/ua-client-hints/#user-agent-platform-brand\" id=\"ref-for-user-agent-platform-brand④\">platform brand</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>uaLowEntropyData</var></p>"
+        }
+      ]
+    }
+  ]
+}

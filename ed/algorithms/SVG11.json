@@ -1,0 +1,116 @@
+{
+  "spec": {
+    "title": "Scalable Vector Graphics (SVG) 1.1 (Second Edition)",
+    "url": "https://www.w3.org/TR/SVG11/"
+  },
+  "algorithms": [
+    {
+      "html": "The values used for the x- and y-axis rounded corner radii are\ndetermined implicitly if the <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRXAttribute\"><span class=\"attr-name\">‘rx’</span></a> or <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRYAttribute\"><span class=\"attr-name\">‘ry’</span></a> attributes (or both)\nare not specified, or are specified but with invalid values.\nThe values are also subject to clamping so that the lengths of\nthe straight segments of the rectangle are never negative.  The\neffective values for <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRXAttribute\"><span class=\"attr-name\">‘rx’</span></a> and <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRYAttribute\"><span class=\"attr-name\">‘ry’</span></a> are determined by following\nthese steps in order:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>rx</var> and <var>ry</var> be length values."
+        },
+        {
+          "html": "If neither <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRXAttribute\"><span class=\"attr-name\">‘rx’</span></a> nor <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRYAttribute\"><span class=\"attr-name\">‘ry’</span></a> are properly specified, then set both\n  <var>rx</var> and <var>ry</var> to 0.  (This will result in square corners.)"
+        },
+        {
+          "html": "Otherwise, if a properly specified value is provided for <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRXAttribute\"><span class=\"attr-name\">‘rx’</span></a>, but\n  not for <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRYAttribute\"><span class=\"attr-name\">‘ry’</span></a>, then set both <var>rx</var> and <var>ry</var> to the value of <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRXAttribute\"><span class=\"attr-name\">‘rx’</span></a>."
+        },
+        {
+          "html": "Otherwise, if a properly specified value is provided for <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRYAttribute\"><span class=\"attr-name\">‘ry’</span></a>, but\n  not for <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRXAttribute\"><span class=\"attr-name\">‘rx’</span></a>, then set both <var>rx</var> and <var>ry</var> to the value of <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRYAttribute\"><span class=\"attr-name\">‘ry’</span></a>."
+        },
+        {
+          "html": "Otherwise, both <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRXAttribute\"><span class=\"attr-name\">‘rx’</span></a> and <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRYAttribute\"><span class=\"attr-name\">‘ry’</span></a> were specified properly.  Set <var>rx</var> to\n  the value of <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRXAttribute\"><span class=\"attr-name\">‘rx’</span></a> and <var>ry</var> to the value of <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRYAttribute\"><span class=\"attr-name\">‘ry’</span></a>."
+        },
+        {
+          "html": "If <var>rx</var> is greater than half of <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementWidthAttribute\"><span class=\"attr-name\">‘width’</span></a>, then set\n  <var>rx</var> to half of <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementWidthAttribute\"><span class=\"attr-name\">‘width’</span></a>."
+        },
+        {
+          "html": "If <var>ry</var> is greater than half of <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementHeightAttribute\"><span class=\"attr-name\">‘height’</span></a>, then set\n  <var>ry</var> to half of <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementHeightAttribute\"><span class=\"attr-name\">‘height’</span></a>."
+        },
+        {
+          "html": "The effective values of <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRXAttribute\"><span class=\"attr-name\">‘rx’</span></a> and <a href=\"https://www.w3.org/TR/SVG11/shapes.html#RectElementRYAttribute\"><span class=\"attr-name\">‘ry’</span></a> are <var>rx</var> and\n  <var>ry</var>, respectively."
+        }
+      ]
+    },
+    {
+      "html": "Indicates how the marker is rotated.<br>\n          <br>\n           A value of <span class=\"attr-value\">'auto'</span> indicates that the marker is\n          oriented such that its positive x-axis is pointing as\n          follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If there is a path segment coming into the\n              vertex and another path segment going out of the vertex,\n              the marker's positive x-axis should point toward the\n              angle bisector for the angle at the given vertex, where\n              that angle has one side consisting of tangent vector for\n              the path segment going into the vertex and the other side\n              the tangent vector for the path segment going out of the\n              vertex. Note:\n              <ul><li>If the tangent vectors are the same, the angle bisector equals the two tangent vectors.</li><li>If an incoming and an outgoing vertex produce a zero vector the direction of marker is undefined.</li></ul>"
+        },
+        {
+          "html": "If there is only a path segment going into the vertex (e.g.,\n              the last vertex on an open path), the marker's positive\n              x-axis should point in the same direction as the tangent\n              vector for the path segment going into the vertex."
+        },
+        {
+          "html": "If there is only a path segment going out of the vertex\n              (e.g., the first vertex on an open path), the marker's\n              positive x-axis should point in the same direction as the\n              tangent vector for the path segment going out of the\n              vertex. (Refer to <a href=\"https://www.w3.org/TR/SVG11/implnote.html#PathElementImplementationNotes\"><span class=\"element-name\">‘path’</span>\n              element implementation notes</a> for a more thorough\n              discussion of the directionality of path segments.)"
+        }
+      ]
+    },
+    {
+      "html": "An element which is the target of a user interface event may have\n    particular interaction behaviors, depending upon the type of element and\n    whether it has explicit associated interactions, such as scripted event\n    listeners, CSS pseudo-classes matches, or declarative animations\n    with event-based timing.  The algorithm and order for processing\n    user interface events for a given target element, after dispatching the\n    DOM event, is as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If an event handler registered on this element invokes the <code>preventDefault()</code> DOM method, then no further processing for this element is performed, and the event follows the <a href=\"https://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/events.html#Events-flow\">event flow processing</a> as described in <a href=\"https://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/events.html\">DOM Level 2 Events</a> [<a href=\"https://www.w3.org/TR/SVG11/refs.html#ref-DOM2EVENTS\">DOM2EVENTS</a>] (or its successor);"
+        },
+        {
+          "html": "If the element has an associated title or description, such as a <a href=\"https://www.w3.org/TR/SVG11/struct.html#TitleElement\"><span class=\"element-name\">‘title’</span></a> element or an <a href=\"https://www.w3.org/TR/SVG11/linking.html#XLinkTitleAttribute\"><span class=\"attr-name\">‘xlink:title’</span></a> attribute, and the user agent supports the display of such information (e.g. via a tooltip or status-bar message), that information should be displayed, as appropriate to the type of pointer event;"
+        },
+        {
+          "html": "If the element matches any relevant <a href=\"https://www.w3.org/TR/2008/REC-CSS2-20080411/selector.html#q15\">dynamic pseudo-class selectors</a> appropriate to the type of pointer event, such as <code>:hover</code>, <code>:active</code>, or <code>:focus</code> as described in [<a href=\"https://www.w3.org/TR/SVG11/refs.html#ref-CSS2\">CSS2</a>], section 5.11, then the relevant class properties are applied;"
+        },
+        {
+          "html": "If the element and the event type are associated with the activation\n      or cancelation of declarative animation though the use of\n      <a href=\"https://www.w3.org/TR/SVG11/animate.html#EventValueSyntax\">event-value</a> timing specifiers,\n      any corresponding instance times must be resolved, and any conseqential\n      actions of this instance time resolution (such as immediately starting\n      or stopping the animation) must be performed;"
+        },
+        {
+          "html": "If the element is a hyperlink (e.g., it is a descendant element of an <a href=\"https://www.w3.org/TR/SVG11/linking.html#AElement\"><span class=\"element-name\">‘a’</span></a> element), and the pointer event is of a type that activates that hyperlink (e.g. via a mouse click), and if the hyperlink traversal changes the context of the content (e.g. opens a different document, or moves the pointer away from this element by moving to another part of the same document), then no further processing for this element is performed;"
+        },
+        {
+          "html": "If the element is a <a href=\"https://www.w3.org/TR/SVG11/intro.html#TermTextContentElement\"><span class=\"svg-term\">text content element</span></a>, and the event type is one which the user agent recognizes as part of a text-selection operation (e.g., a mouse click and drag, or a double-click), then the <a href=\"https://www.w3.org/TR/SVG11/text.html#TextSelection\">text selection</a> algorithm is performed;"
+        },
+        {
+          "html": "If the event type is one which the user agent associates with the evocation of special user-interface controls (e.g., a right-click or command-click evoking a context menu), the user agent should evoke such user-agent-specific behavior, such as presenting a context menu or controls to allow zooming and panning of an SVG document fragment."
+        }
+      ]
+    },
+    {
+      "html": "and the document fragment is determined to be valid as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>E</var> be the encoding of the XML document in which the SVG document fragment resides."
+        },
+        {
+          "html": "Let <var>V</var> be the XML version of the document in which the SVG document fragment resides."
+        },
+        {
+          "html": "Let <var>D</var> be an XML document constructed by concatenating:\n        <ul><li>an XML declaration identifying version <var>V</var> and encoding <var>E</var> (that is, <code>&lt;?xml version=\"<var>V</var>\" encoding=\"<var>E</var>\"?&gt;</code>),</li><li>the DOCTYPE declaration <code>&lt;!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" SYSTEM \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"&gt;</code>, and</li><li>the SVG document fragment with any entities expanded.</li></ul>"
+        },
+        {
+          "html": "Remove from <var>D</var> any subtree rooted by an element that is not in the SVG namespace."
+        },
+        {
+          "html": "Remove from <var>D</var> any attribute that is in a namespace that is not the XLink namespace or the Namespaces in XML namespace."
+        },
+        {
+          "html": "Remove the prefix from the name of any element in <var>D</var> that uses one."
+        },
+        {
+          "html": "Let <var>A</var> be the set of all attributes in <var>D</var> that are in the XLink namespace."
+        },
+        {
+          "html": "Set the attributes <span class=\"attr-value\">xmlns=\"http://www.w3.org/2000/svg\"</span> and <span class=\"attr-value\">xmlns:xlink=\"http://www.w3.org/1999/xlink\"</span> on <var>D</var>'s document element and remove any other attributes in the Namespaces in XML namespace from <var>D</var>."
+        },
+        {
+          "html": "Change the prefix of every attribute <var>A</var> to be <code>xlink</code>."
+        },
+        {
+          "html": "The document fragment is valid if <var>D</var> is a <a href=\"https://www.w3.org/TR/2008/REC-xml-20081126/#dt-valid\">valid XML document</a> ([<a href=\"https://www.w3.org/TR/SVG11/refs.html#ref-XML10\">XML10</a>], section 2.8)."
+        }
+      ]
+    }
+  ]
+}

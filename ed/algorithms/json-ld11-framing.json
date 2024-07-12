@@ -1,0 +1,388 @@
+{
+  "spec": {
+    "title": "JSON-LD 1.1 Framing",
+    "url": "https://w3c.github.io/json-ld-framing/"
+  },
+  "algorithms": [
+    {
+      "name": "4.1 Framing Algorithm",
+      "href": "https://w3c.github.io/json-ld-framing/#x4-1-framing-algorithm",
+      "html": "The algorithm adds elements to <var>parent</var> either by appending\n  the element to <var>parent</var>, if it is an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>, or by appending it\n  to an array associated with <var>active property</var> in <var>parent</var>, if it is a <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>.\n  Note that if <var>parent</var> is an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>, <var>active property</var> <em class=\"rfc2119\">MUST</em> be <code>null</code>,\n  and if it is a <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>, it <em class=\"rfc2119\">MUST NOT</em> be <code>null</code>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>frame</var> is an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>, set <var>frame</var> to the value of the <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>, which <em class=\"rfc2119\">MUST</em> be a valid <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame\">frame</a>.\n    If <var>frame</var> is determined to be invalid,\n    an <a data-link-for=\"JsonLdFramingErrorCode\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldframingerrorcode-invalid-frame\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-jsonldframingerrorcode-invalid-frame-1\"><code>invalid frame</code></a>\n    error has been detected and processing is aborted.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<var>Frame</var> <em class=\"rfc2119\">MUST</em> be a <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>."
+            },
+            {
+              "html": "If <var>frame</var> has an <code>@id</code> <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a>, its value <em class=\"rfc2119\">MUST</em> be\n        either an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a> containing a single empty <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> as a value,\n        a valid <a data-cite=\"RFC3987#section-2\" data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc3987#section-2\"><abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a>\n        or an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a> where all values are valid <a data-cite=\"RFC3987#section-2\" data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc3987#section-2\">IRIs</a>."
+            },
+            {
+              "html": "If <var>frame</var> has a <code>@type</code> <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a>, its value <em class=\"rfc2119\">MUST</em> be\n        either an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a> containing a single empty <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> as a value,\n        an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a> containing a <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> with a <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a> whose key is <code>@default</code>,\n        a valid <a data-cite=\"RFC3987#section-2\" data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc3987#section-2\"><abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a>\n        or an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a> where all values are valid <a data-cite=\"RFC3987#section-2\" data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc3987#section-2\">IRIs</a>."
+            }
+          ]
+        },
+        {
+          "html": "Initialize flags <var>embed</var>, <var>explicit</var>, and <var>requireAll</var> from\n    <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-object-embed-flag\">object embed flag</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-explicit-inclusion-flag\">explicit inclusion flag</a>, and\n    <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-require-all-flag\">require all flag</a> in <var>state</var> overriding from any property values\n    for <code>@embed</code>, <code>@explicit</code>, and <code>@requireAll</code> in <var>frame</var>."
+        },
+        {
+          "html": "Create a list of matched subjects by filtering <var>subjects</var> against <var>frame</var>\n    using the <a href=\"https://w3c.github.io/json-ld-framing/#frame-matching\">Frame Matching algorithm</a>\n    with <var>state</var>, <var>subjects</var>, <var>frame</var>, and <var>requireAll</var>."
+        },
+        {
+          "html": "For each <var>id</var> and associated <a data-cite=\"JSON-LD11#dfn-node-object\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-node-object\">node object</a> <var>node</var>\n    from the set of matched subjects, in <a data-cite=\"XPATH-FUNCTIONS#codepoint-collation\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/xpath-functions/#codepoint-collation\">code point order</a> by <var>id</var>\n    <span class=\"changed\">if the optional <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldoptions-ordered\" data-type=\"dict-member\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-ordered\"><code>ordered</code></a> flag is <code>true</code></span>:",
+          "rationale": "initialize",
+          "steps": [
+            {
+              "html": "Initialize <var>output</var> to a new <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> with <code>@id</code> and <var>id</var>."
+            },
+            {
+              "html": "If the <a href=\"https://w3c.github.io/json-ld-framing/#dfn-embedded-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embedded-flag-1\">embedded flag</a> in <var>state</var> is <code>false</code>\n        and there is an existing embedded node in <var>parent</var> associated with\n        <var>graph name</var> and <var>id</var> in <var>state</var>,\n        do not perform additional processing for this <var>node</var>."
+            },
+            {
+              "html": "Otherwise, if the <a href=\"https://w3c.github.io/json-ld-framing/#dfn-embedded-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embedded-flag-2\">embedded flag</a> in <var>state</var> is <code>true</code>\n        and either <var>embed</var> is <code>@never</code> or if a\n        circular reference would be created by an embed,\n        add <var>output</var> to <var>parent</var>\n        and do not perform additional processing for this <var>node</var>."
+            },
+            {
+              "html": "Otherwise, if the <a href=\"https://w3c.github.io/json-ld-framing/#dfn-embedded-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embedded-flag-3\">embedded flag</a> in <var>state</var> is <code>true</code>,\n        <var>embed</var> is <code>@once</code>,\n        and there is an existing embedded node in <var>parent</var> associated with\n        <var>graph name</var> and <var>id</var> in <var>state</var>,\n        add <var>output</var> to <var>parent</var>\n        and do not perform additional processing for this <var>node</var>."
+            },
+            {
+              "html": "If <var>graph map</var> in <var>state</var> has an entry for <var>id</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>frame</var> does not have a <code>@graph</code> <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a>,\n            set <var>recurse</var> to <code>true</code>, unless <var>graph name</var> in <var>state</var> is <code>@merged</code>\n            and set <var>subframe</var> to a new empty <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>."
+                },
+                {
+                  "html": "Otherwise, set <var>subframe</var> to the first entry for <code>@graph</code> in <var>frame</var>,\n            or a new empty <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>, if it does not exist, and\n            set <var>recurse</var> to <code>true</code>, unless <var>id</var>\n            is <code>@merged</code> or <code>@default</code>."
+                },
+                {
+                  "html": "If <var>recurse</var> is <code>true</code>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set the value of <var>graph name</var> in <var>state</var> to <var>id</var>."
+                    },
+                    {
+                      "html": "Set the value of <a href=\"https://w3c.github.io/json-ld-framing/#dfn-embedded-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embedded-flag-4\">embedded flag</a> in <var>state</var> to <code>false</code>."
+                    },
+                    {
+                      "html": "Invoke the algorithm\n                using a copy of <var>state</var>\n                with the value of <var>graph name</var> set to <var>id</var>\n                and the value of <a href=\"https://w3c.github.io/json-ld-framing/#dfn-embedded-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embedded-flag-5\">embedded flag</a> set to <code>false</code>,\n                the keys from the <var>graph map</var> in <var>state</var> associated with id as <var>subjects</var>,\n                <var>subframe</var> as <var>frame</var>,\n                <var>output</var> as <var>parent</var>, and <code>@graph</code> as <var>active property</var>."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If <var>frame</var> has an <code>@included</code> <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a>,\n        invoke the algorithm\n        using a copy of <var>state</var> with the value of <a href=\"https://w3c.github.io/json-ld-framing/#dfn-embedded-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embedded-flag-6\">embedded flag</a> set to <code>false</code>,\n        <var>subjects</var>, <var>frame</var>,\n        <var>output</var> as <var>parent</var>, and <code>@included</code> as <var>active property</var>."
+            },
+            {
+              "html": "For each <var>property</var> and <var>objects</var> in <var>node</var>,\n        in <a data-cite=\"XPATH-FUNCTIONS#codepoint-collation\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/xpath-functions/#codepoint-collation\">code point order</a> by <var>property</var>\n        <span class=\"changed\">if the optional <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldoptions-ordered\" data-type=\"dict-member\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-ordered\"><code>ordered</code></a> flag is <code>true</code></span>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>property</var> is a <a data-cite=\"JSON-LD11#dfn-keyword\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-keyword\">keyword</a>, add <var>property</var> and <var>objects</var>\n            to <var>output</var>."
+                },
+                {
+                  "html": "Otherwise, if <var>property</var> is not in <var>frame</var>, and <var>explicit</var> is <code>true</code>,\n            <a data-cite=\"JSON-LD11-API#dfn-json-ld-processor\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11-api/#dfn-json-ld-processor\">processors</a> <em class=\"rfc2119\">MUST NOT</em> add any values for <var>property</var> to <var>output</var>, and the following\n            steps are skipped."
+                },
+                {
+                  "html": "For each <var>item</var> in <var>objects</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>item</var> is a <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> with the property <code>@list</code>, then each\n                <var>listitem</var> in the list is processed in sequence and added to a new list <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>\n                in output:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "If <var>listitem</var> is a <a data-cite=\"JSON-LD11#dfn-node-reference\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-node-reference\">node reference</a>,\n                    invoke the algorithm\n                    <span class=\"changed\">using a copy of <var>state</var> with the value of <a href=\"https://w3c.github.io/json-ld-framing/#dfn-embedded-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embedded-flag-7\">embedded flag</a> set to <code>true</code></span>,\n                    the value of <code>@id</code> from <var>listitem</var>\n                    as the sole item in a new <var>subjects</var> <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>,\n                    the first value from <code>@list</code> in <var>frame</var> as <var>frame</var>,\n                    <var>list</var> as <var>parent</var>, and <code>@list</code> as <var>active property</var>.\n                    If <var>frame</var> does not exist, create a new <var>frame</var> using a new <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>\n                    with properties for <code>@embed</code>, <code>@explicit</code> and <code>@requireAll</code>\n                    taken from <var>embed</var>, <var>explicit</var> and <var>requireAll</var>."
+                        },
+                        {
+                          "html": "Otherwise, append a copy of <var>listitem</var> to <code>@list</code> in <var>list</var>."
+                        }
+                      ]
+                    },
+                    {
+                      "html": "If <var>item</var> is a <a data-cite=\"JSON-LD11#dfn-node-reference\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-node-reference\">node reference</a>,\n                invoke the algorithm\n                <span class=\"changed\">using a copy of <var>state</var> with the value of <a href=\"https://w3c.github.io/json-ld-framing/#dfn-embedded-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embedded-flag-8\">embedded flag</a> set to <code>true</code></span>,\n                the value of <code>@id</code> from <var>item</var>\n                as the sole item in a new <var>subjects</var> <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>,\n                the first value from <var>property</var> in <var>frame</var> as <var>frame</var>,\n                <var>output</var> as <var>parent</var>, and <var>property</var> as <var>active property</var>.\n                If <var>frame</var> does not exist, create a new <var>frame</var> using a new <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>\n                with properties for <code>@embed</code>, <code>@explicit</code> and <code>@requireAll</code>\n                taken from <var>embed</var>, <var>explicit</var> and <var>requireAll</var>."
+                    },
+                    {
+                      "html": "Otherwise, append a copy of <var>item</var> to <a data-cite=\"JSON-LD11-API#dfn-active-property\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11-api/#dfn-active-property\">active property</a> in\n                <var>output</var>."
+                    }
+                  ]
+                },
+                {
+                  "html": "For each non-<a data-cite=\"JSON-LD11#dfn-keyword\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-keyword\">keyword</a> <var>property</var> and <var>objects</var> in <var>frame</var>\n            <span class=\"changed\">(other than `@type)</span>\n            that is not in <var>output</var>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var>item</var> be the first value in <var>objects</var>, which <em class=\"rfc2119\">MUST</em> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame-object\">frame object</a>."
+                    },
+                    {
+                      "html": "Set <var>property frame</var> to the first value in <var>objects</var> or a newly created <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame-object\">frame object</a> if value is <var>objects</var>.\n                <var>property frame</var> <em class=\"rfc2119\">MUST</em> be a <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>."
+                    },
+                    {
+                      "html": "Skip <var>property</var> and <var>property frame</var> if <var>property frame</var> contains\n                <code>@omitDefault</code> with a value of <code>true</code>,\n                or does not contain <code>@omitDefault</code> and the value of\n                the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-omit-default-flag\">omit default flag</a> in <var>state</var> is <code>true</code>."
+                    },
+                    {
+                      "html": "Add <var>property</var> to <var>output</var> with a\n                new <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> having a property <code>@preserve</code> and\n                a value that is a copy of the value of <code>@default</code> in\n                <var>frame</var> if it exists, or the string <code>@null</code>\n                otherwise."
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>frame</var> has the property <code>@reverse</code>, then\n            for each <var>reverse property</var> and <var>sub frame</var> that are the values of <code>@reverse</code> in <var>frame</var>:",
+                  "rationale": "create",
+                  "steps": [
+                    {
+                      "html": "Create a <code>@reverse</code> property in <var>output</var> with a new <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>reverse dict</var> as its value."
+                    },
+                    {
+                      "html": "For each <var>reverse id</var> and <var>node</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-map-of-flattened-subjects\">map of flattened subjects</a> that has the property\n                <var>reverse property</var> containing a <a data-cite=\"JSON-LD11#dfn-node-reference\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-node-reference\">node reference</a> with an <code>@id</code> of <var>id</var>:",
+                      "rationale": "add",
+                      "steps": [
+                        {
+                          "html": "Add <var>reverse property</var> to <var>reverse dict</var> with a new empty <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a> as its value."
+                        },
+                        {
+                          "html": "Invoke the algorithm\n                    <span class=\"changed\">using a copy of <var>state</var> with the value of <a href=\"https://w3c.github.io/json-ld-framing/#dfn-embedded-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-embedded-flag-9\">embedded flag</a> set to <code>true</code></span>,\n                    the <var>reverse id</var>\n                    as the sole item in a new <var>subjects</var> <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>,\n                    <var>sub frame</var> as <var>frame</var>,\n                    <code>null</code> as <var>active property</var>,\n                    and the <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a> value of <var>reverse property</var> in <var>reverse dict</var> as <var>parent</var>."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "Once output has been set are required in the previous steps,\n            add <var>output</var> to <var>parent</var>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "match none",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-match-none",
+      "html": "All properties, including <code>@id</code> and <code>@type</code>, but no other <a data-cite=\"JSON-LD11#dfn-keyword\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-keyword\">keywords</a> are considered\n  when matching a frame.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<var>node</var> matches if frame has no properties."
+        },
+        {
+          "html": "If <var>requireAll</var> is <strong>true</strong>, <var>node</var> matches if all properties (<var>property</var>)\n    in <var>frame</var> match any of the following conditions.\n    Or, if <var>requireAll</var> is <strong>false</strong>, if any of the properties (<var>property</var>)\n    in <var>frame</var> match any of the following conditions.\n    For the <var>values</var> of each <var>property</var> from <var>frame</var> in <var>node</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>property</var> is <code>@id</code>:",
+              "rationale": "/^otherwise(\\,| )/i",
+              "steps": [
+                {
+                  "html": "<var>property</var> matches if the <code>@id</code> property in frame includes any <a data-cite=\"RFC3987#section-2\" data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc3987#section-2\"><abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a> in <var>values</var>."
+                },
+                {
+                  "html": "Otherwise, <var>property</var> matches if the <code>@type</code> property in <var>frame</var> is <code><a href=\"https://w3c.github.io/json-ld-framing/#dfn-wildcard\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-wildcard-3\"><code>wildcard</code></a></code> or <code><a href=\"https://w3c.github.io/json-ld-framing/#dfn-match-none\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-match-none-2\"><code>match none</code></a></code>."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, if <var>property</var> is <code>@type</code>:",
+              "rationale": "/^otherwise(\\,| )/i",
+              "steps": [
+                {
+                  "html": "<var>property</var> matches if the <code>@type</code> property in frame includes any <a data-cite=\"RFC3987#section-2\" data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc3987#section-2\"><abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a> in <var>values</var>."
+                },
+                {
+                  "html": "Otherwise, <var>property</var> matches if <var>values</var> is not empty and the <code>@type</code> property in <var>frame</var> is <code><a href=\"https://w3c.github.io/json-ld-framing/#dfn-wildcard\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-wildcard-4\"><code>wildcard</code></a></code>."
+                },
+                {
+                  "html": "Otherwise, <var>property</var> matches if <var>values</var> is empty and the <code>@type</code> property in <var>frame</var> is <code><a href=\"https://w3c.github.io/json-ld-framing/#dfn-match-none\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-match-none-3\"><code>match none</code></a></code>."
+                },
+                {
+                  "html": "Otherwise, <var>property</var> matches if the <code>@type</code> property in frame is a <a data-cite=\"JSON-LD11#dfn-default-object\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-default-object\">default object</a>."
+                },
+                {
+                  "html": "Otherwise, <var>property</var> does not match."
+                }
+              ]
+            },
+            {
+              "html": "If <var>property</var> is <code>@id</code> or <code>@type</code> and does not match,\n        <var>node</var> does not match, and processing is terminated."
+            },
+            {
+              "html": "Otherwise, the value of <var>property</var> in <var>frame</var> <em class=\"rfc2119\">MUST</em> be empty, or an array\n        containing a valid <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame\">frame</a>."
+            },
+            {
+              "html": "<var>property</var> matches if <var>values</var> is empty, or non existent,\n        the value of <var>property</var> in <var>frame</var>\n        is a <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> containing only the <code>@default</code> <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a> with any value,\n        and any other property in <var>node</var> has a non-default match."
+            },
+            {
+              "html": "<var>node</var> does not match if <var>values</var> is not empty and the value of <var>property</var> in <var>frame</var> is <code><a href=\"https://w3c.github.io/json-ld-framing/#dfn-match-none\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-match-none-4\"><code>match none</code></a></code>, and further matching is aborted."
+            },
+            {
+              "html": "Otherwise, <var>property</var> matches if <var>values</var> is not empty and the value of <var>property</var> in <var>frame</var> is <code><a href=\"https://w3c.github.io/json-ld-framing/#dfn-wildcard\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-wildcard-5\"><code>wildcard</code></a></code>."
+            },
+            {
+              "html": "Otherwise, if the value of <var>property</var> in <var>frame</var> is a <a href=\"https://w3c.github.io/json-ld-framing/#dfn-value-pattern\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-value-pattern-1\"><code>value pattern</code></a> (<var>value pattern</var>):\n        property matching is determined using the <a href=\"https://w3c.github.io/json-ld-framing/#value-matching\">Value matching algorithm</a>."
+            },
+            {
+              "html": "Otherwise, for any <strong>node pattern</strong> (<var>node pattern</var>) which is one of the values of <var>property</var> in <var>frame</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>value subjects</var> be the list of subjects from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-map-of-flattened-subjects\">map of flattened subjects</a> matching the <a data-cite=\"JSON-LD11#dfn-node-object\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-node-object\">node object</a> values from <var>values</var>."
+                },
+                {
+                  "html": "Let <var>matched subjects</var> be the result of calling this algorithm recursively using\n            <var>state</var>, <var>value subjects</var> for <var>subjects</var>,\n            <var>node pattern</var> for <var>frame</var>, and the <var>requireAll</var> flag."
+                },
+                {
+                  "html": "<var>property</var> matches if <var>matched subjects</var> is not empty."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, <var>property</var> does not match."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "4.3 Value Pattern Matching Algorithm",
+      "href": "https://w3c.github.io/json-ld-framing/#x4-3-value-pattern-matching-algorithm",
+      "html": "The algorithm takes a <a href=\"https://w3c.github.io/json-ld-framing/#dfn-value-pattern\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-value-pattern-2\"><code>value pattern</code></a> (<var>pattern</var>) and <a data-cite=\"JSON-LD11#dfn-value-object\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-value-object\">value object</a> (<var>value</var>) as parameters.\n    Value matches pattern using the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>v1</var>, <var>t1</var>, and <var>l1</var> be the values of <code>@value</code>, <code>@type</code>, and <code>@language</code> in <var>value</var>, or <strong>null</strong> if none exists,\n      <span class=\"changed\">where values of <code>@language</code> are normalized to lower case.</span>."
+        },
+        {
+          "html": "Let <var>v2</var>, <var>t2</var>, and <var>l2</var> be the values of <code>@value</code>, <code>@type</code>, and <code>@language</code> in <var>value pattern</var>, or <strong>null</strong> if none exists,\n      <span class=\"changed\">where string values of <code>@language</code> are normalized to lower case.</span>."
+        },
+        {
+          "html": "<var>Value</var> matches <var>pattern</var> when <var>pattern</var> is <code><a href=\"https://w3c.github.io/json-ld-framing/#dfn-wildcard\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-wildcard-7\"><code>wildcard</code></a></code>, or:",
+          "ignored": [
+            "v1 is in v2, or v1 is not null and v2 is wildcard, and t1 is in t2, or t1 is not null and t2 is wildcard, or null, or t1 is null and t2 is null or match none, and l1 is in l2, or l1 is not null and l2 is wildcard, or null, or l1 is null and l2 is null or match none."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JsonLdProcessor/frame()",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldprocessor-frame",
+      "html": "The <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"JsonLdProcessor\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldprocessor\" data-type=\"interface\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor\"><code>JsonLdProcessor</code></a> interface\n      <dfn data-dfn-for=\"JsonLdProcessor\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-jsonldprocessor-frame\" data-idl=\"operation\" data-title=\"frame()\" data-type=\"Promise\" data-lt=\"frame()|frame(input, frame)|frame(input, frame, options)\" data-local-lt=\"JsonLdProcessor.frame|JsonLdProcessor.frame()|frame\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>frame()</code></dfn> method\n      <a href=\"https://w3c.github.io/json-ld-framing/#framing\">Frames</a>\n      the given <code>input</code> using <a data-lt=\"JsonLdProcessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-1\">frame</a>\n      according to the steps in the <a href=\"https://w3c.github.io/json-ld-framing/#framing-algorithm\">Framing\n      Algorithm</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Create a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Promise\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\"><code>Promise</code></a> <var>promise</var> and return it. The\n        following steps are then executed asynchronously."
+        },
+        {
+          "html": "If the provided <a data-lt=\"jsonldprocessor-frame-input\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-input\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-input-1\">input</a>\n        is a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"RemoteDocument\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-remotedocument\" data-type=\"interface\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-remotedocument\"><code>RemoteDocument</code></a>,\n        initialize <var>remote document</var> to <a data-lt=\"jsonldprocessor-frame-input\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-input\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-input-2\">input</a>."
+        },
+        {
+          "html": "Otherwise, if the provided <a data-lt=\"jsonldprocessor-frame-input\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-input\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-input-3\">input</a>\n        is a <a data-cite=\"INFRA#javascript-string\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string\">string</a> representing the <a data-cite=\"RFC3987#section-2\" data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc3987#section-2\"><abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a> of a remote document, await and dereference it as <var>remote document</var>\n        using <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"LoadDocumentCallback\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-loaddocumentcallback\" data-type=\"callback\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-loaddocumentcallback\"><code>LoadDocumentCallback</code></a>, passing <a data-lt=\"jsonldprocessor-frame-input\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-input\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-input-4\">input</a>\n        for <var>url</var>,\n        and the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"LoadDocumentOptions\" data-xref-for=\"LoadDocumentOptions\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-loaddocumentoptions-extractallscripts\" data-type=\"dict-member\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-loaddocumentoptions-extractallscripts\"><code>extractAllScripts</code></a> option from <a data-lt=\"jsonldprocessor-frame-options\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-options\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-options-1\">options</a>\n        for <var>extractAllScripts</var>."
+        },
+        {
+          "html": "Set <var>expanded input</var> to the result of using the\n        <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"JsonLdProcessor\" data-xref-for=\"JsonLdProcessor\" data-lt=\"expand()\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldprocessor-expand\" data-type=\"method\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor-expand\"><code>expand</code></a><code>()</code>\n        method either <var>remote document</var>\n        or <a data-lt=\"jsonldprocessor-frame-input\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-input\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-input-5\">input</a>\n        if there is no <var>remote document</var>\n        for <a data-cite=\"JSON-LD11-API#dfn-jsonldprocessor-expand-input\" href=\"https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-expand-input\">input</a>\n        and <a data-lt=\"JsonLdProcessor-frame-options\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-options\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-options-2\">options</a>\n        <span class=\"changed\">with <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldoptions-ordered\" data-type=\"dict-member\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-ordered\"><code>ordered</code></a> set to <code>false</code></span>."
+        },
+        {
+          "html": "If the provided <a data-lt=\"jsonldprocessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-2\">frame</a>\n        is a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"RemoteDocument\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-remotedocument\" data-type=\"interface\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-remotedocument\"><code>RemoteDocument</code></a>,\n        initialize <var>remote frame</var> to <a data-lt=\"jsonldprocessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-3\">frame</a>."
+        },
+        {
+          "html": "Otherwise, if the provided <a data-lt=\"jsonldprocessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-4\">frame</a>\n        is a <a data-cite=\"INFRA#javascript-string\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string\">string</a> representing the <a data-cite=\"RFC3987#section-2\" data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc3987#section-2\"><abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a> of a remote document, await and dereference it as <var>remote frame</var>\n        using <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"LoadDocumentCallback\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-loaddocumentcallback\" data-type=\"callback\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-loaddocumentcallback\"><code>LoadDocumentCallback</code></a>, passing <a data-lt=\"jsonldprocessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-5\">frame</a>\n        for <var>url</var>,\n        and the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"LoadDocumentOptions\" data-xref-for=\"LoadDocumentOptions\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-loaddocumentoptions-extractallscripts\" data-type=\"dict-member\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-loaddocumentoptions-extractallscripts\"><code>extractAllScripts</code></a> option from <a data-lt=\"jsonldprocessor-frame-options\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-options\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-options-3\">options</a>\n        for <var>extractAllScripts</var>."
+        },
+        {
+          "html": "Set <var>expanded frame</var> to the result of using the\n        <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"JsonLdProcessor\" data-xref-for=\"JsonLdProcessor\" data-lt=\"expand()\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldprocessor-expand\" data-type=\"method\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor-expand\"><code>expand</code></a><code>()</code>\n        method either <var>remote frame</var>\n        or <a data-lt=\"jsonldprocessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-6\">frame</a>\n        if there is no <var>remote frame</var>\n        for <a data-cite=\"JSON-LD11-API#dfn-jsonldprocessor-expand-input\" href=\"https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-expand-input\">input</a>\n        <a data-lt=\"JsonLdProcessor-frame-options\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-options\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-options-4\">options</a>\n        the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldoptions-frameexpansion\" data-type=\"dict-member\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-frameexpansion\"><code>frameExpansion</code></a> option set to <code>true</code>,\n        <span class=\"changed\">and the<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldoptions-ordered\" data-type=\"dict-member\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-ordered\"><code>ordered</code></a> set to <code>false</code></span>."
+        },
+        {
+          "html": "Set <var>context</var> to the value of <code>@context</code>\n        from <var>remote frame</var> or <a data-lt=\"JsonLdProcessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-7\">frame</a>, if it exists, or to\n        a new empty <a data-cite=\"JSON-LD11#dfn-context\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-context\">context</a>, otherwise."
+        },
+        {
+          "html": "Set <var>context base</var> to the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RemoteDocument\" data-xref-for=\"RemoteDocument\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-remotedocument-documenturl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-remotedocument-documenturl\"><code>documentUrl</code></a>\n        from <var>remote frame</var>, if available, otherwise to the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldoptions-base\" data-type=\"dict-member\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-base\"><code>base</code></a> option\n        from <a data-lt=\"jsonldprocessor-frame-options\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-options\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-options-5\">options</a>."
+        },
+        {
+          "html": "Initialize <var>active context</var>\n        to the result of the <a data-cite=\"JSON-LD11-API#context-processing-algorithm\" href=\"https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm\">Context Processing algorithm</a>\n        passing a new empty <a data-cite=\"JSON-LD11#dfn-context\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-context\">context</a> as <var>active context</var>\n        <var>context</var> as <var>local context</var>,\n        and <var>context base</var> as <var>base URL</var>."
+        },
+        {
+          "html": "Initialize an <a data-cite=\"JSON-LD11#dfn-active-context\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-active-context\">active context</a> using <var>context</var>;\n        the <a data-cite=\"RDF11-CONCEPTS#dfn-base-iri\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/rdf11-concepts/#dfn-base-iri\">base <abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a> is set to\n        the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldoptions-base\" data-type=\"dict-member\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-base\"><code>base</code></a> option from\n        <a data-lt=\"jsonldprocessor-frame-options\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-options\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-options-6\">options</a>, if set;\n        otherwise, if the\n        <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldoptions-compacttorelative\" data-type=\"dict-member\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-compacttorelative\"><code>compactToRelative</code></a> option is\n        <strong>true</strong>, to the <abbr title=\"Internationalized Resource Identifier\">IRI</abbr> of the currently being processed\n        document, if available; otherwise to <code>null</code>."
+        },
+        {
+          "html": "Initialize <var>inverse context</var> to the result of performing the\n        <a data-cite=\"JSON-LD11-API#inverse-context-creation\" href=\"https://www.w3.org/TR/json-ld11-api/#inverse-context-creation\">Inverse Context Creation algorithm</a>."
+        },
+        {
+          "html": "If <a data-lt=\"JsonLdProcessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-8\">frame</a> has a top-level\n        property which expands to <code>@graph</code> set the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-framedefault\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-framedefault-1\"><code>frameDefault</code></a>\n        option to <a data-lt=\"JsonLdProcessor-frame-options\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-options\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-options-7\">options</a> with the\n        value <code>true</code>."
+        },
+        {
+          "html": "The <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"JsonLdProcessor\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldprocessor\" data-type=\"interface\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor\"><code>JsonLdProcessor</code></a> interface\n      <dfn data-dfn-for=\"JsonLdProcessor\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-jsonldprocessor-frame\" data-idl=\"operation\" data-title=\"frame()\" data-type=\"Promise\" data-lt=\"frame()|frame(input, frame)|frame(input, frame, options)\" data-local-lt=\"JsonLdProcessor.frame|JsonLdProcessor.frame()|frame\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>frame()</code></dfn> method\n      <a href=\"https://w3c.github.io/json-ld-framing/#framing\">Frames</a>\n      the given <code>input</code> using <a data-lt=\"JsonLdProcessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-1\">frame</a>\n      according to the steps in the <a href=\"https://w3c.github.io/json-ld-framing/#framing-algorithm\">Framing\n      Algorithm</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-object-embed-flag\">object embed flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-embed\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-embed-2\"><code>embed</code></a>\n            with the default value <code>@once</code>."
+            },
+            {
+              "html": "Set the <dfn id=\"dfn-embedded-flag\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">embedded flag</dfn> in <var>state</var> to <code>false</code>"
+            },
+            {
+              "html": "Set <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-explicit-inclusion-flag\">explicit inclusion flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-explicit\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-explicit-2\"><code>explicit</code></a>\n            with the default value <code>false</code>."
+            },
+            {
+              "html": "Set <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-require-all-flag\">require all flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-requireall\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-requireall-1\"><code>requireAll</code></a>\n            with the default value <code>false</code>."
+            },
+            {
+              "html": "Set <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-omit-default-flag\">omit default flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-omitdefault\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-omitdefault-2\"><code>omitDefault</code></a>\n            with the default value <code>false</code>."
+            },
+            {
+              "html": "Set the <var>graph name</var> in <var>state</var> to\n            either <code>@default</code> if <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-framedefault\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-framedefault-2\"><code>frameDefault</code></a> is <code>true</code>,\n            otherwise to <code>false</code>."
+            },
+            {
+              "html": "The <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"JsonLdProcessor\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldprocessor\" data-type=\"interface\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor\"><code>JsonLdProcessor</code></a> interface\n      <dfn data-dfn-for=\"JsonLdProcessor\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-jsonldprocessor-frame\" data-idl=\"operation\" data-title=\"frame()\" data-type=\"Promise\" data-lt=\"frame()|frame(input, frame)|frame(input, frame, options)\" data-local-lt=\"JsonLdProcessor.frame|JsonLdProcessor.frame()|frame\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>frame()</code></dfn> method\n      <a href=\"https://w3c.github.io/json-ld-framing/#framing\">Frames</a>\n      the given <code>input</code> using <a data-lt=\"JsonLdProcessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-1\">frame</a>\n      according to the steps in the <a href=\"https://w3c.github.io/json-ld-framing/#framing-algorithm\">Framing\n      Algorithm</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>graph name</var> in <var>state</var> is <code>@merged</code>,\n                add an entry for <code>@merged</code> in <var>graph map</var> set\n                to the result of the <a data-cite=\"JSON-LD11-API#merge-node-maps\" href=\"https://www.w3.org/TR/json-ld11-api/#merge-node-maps\">Merge Node Maps</a> algorithm\n                passing <var>graph map</var>."
+                }
+              ]
+            },
+            {
+              "html": "Set <var>subject map</var> in <var>state</var>\n            to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-map-of-flattened-subjects\">map of flattened subjects</a> which is the value of <var>graph name</var>\n            in <var>graph map</var>."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var>results</var> as an empty <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>."
+        },
+        {
+          "html": "Invoke the\n        <a href=\"https://w3c.github.io/json-ld-framing/#framing-algorithm\">Framing algorithm</a>, passing\n        <var>state</var>,\n        the keys from <var>subject map</var> in <var>state</var> for <var>subjects</var>,\n        <var>expanded frame</var>,\n        <var>results</var> for <var>parent</var>,\n        and <code>null</code> as <var>active property</var>."
+        },
+        {
+          "html": "If the <a data-cite=\"JSON-LD11#dfn-processing-mode\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-processing-mode\">processing mode</a> is not <code>json-ld-1.0</code>,\n        remove the <code>@id</code> <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a> of each <a data-cite=\"JSON-LD11#dfn-node-object\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-node-object\">node object</a> in <var>results</var>\n        where the <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a> value is a <a data-cite=\"RDF11-CONCEPTS#dfn-blank-node-identifier\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/rdf11-concepts/#dfn-blank-node-identifier\">blank node identifier</a> which appears only once\n        in any property value within <var>results</var>."
+        },
+        {
+          "html": "Recursively, replace all <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entries</a> in <var>results</var>\n        where the key is <code>@preserve</code> with the first value of that <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a>."
+        },
+        {
+          "html": "The <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"JsonLdProcessor\" data-cite=\"json-ld11-api\" data-cite-path=\"/\" data-cite-frag=\"dom-jsonldprocessor\" data-type=\"interface\" href=\"https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor\"><code>JsonLdProcessor</code></a> interface\n      <dfn data-dfn-for=\"JsonLdProcessor\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-jsonldprocessor-frame\" data-idl=\"operation\" data-title=\"frame()\" data-type=\"Promise\" data-lt=\"frame()|frame(input, frame)|frame(input, frame, options)\" data-local-lt=\"JsonLdProcessor.frame|JsonLdProcessor.frame()|frame\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>frame()</code></dfn> method\n      <a href=\"https://w3c.github.io/json-ld-framing/#framing\">Frames</a>\n      the given <code>input</code> using <a data-lt=\"JsonLdProcessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-1\">frame</a>\n      according to the steps in the <a href=\"https://w3c.github.io/json-ld-framing/#framing-algorithm\">Framing\n      Algorithm</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>compacted results</var> is an empty <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>,\n            replace it with a new <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>."
+            },
+            {
+              "html": "Otherwise, if <var>compacted results</var> is an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>,\n            replace it with a new <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> with a single <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a>\n            whose key is the result of\n            <span class=\"changed\"><a data-cite=\"JSON-LD11-API#dfn-iri-compacting\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11-api/#dfn-iri-compacting\"><abbr title=\"Internationalized Resource Identifier\">IRI</abbr> compacting</a> <code>@graph</code></span>\n            and value is <var>compacted results</var>."
+            },
+            {
+              "html": "Add an <code>@context</code> <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a> to <var>compacted results</var> and set its value\n            to the provided <var>context</var>."
+            }
+          ]
+        },
+        {
+          "html": "Recursively, replace all <code>@null</code> values in <var>compacted results</var> with <code>null</code>.\n        If, after replacement, an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a> contains only the value <code>null</code> remove that value, leaving\n        an empty array."
+        },
+        {
+          "html": "If <span class=\"changed\"><a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-omitgraph\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-omitgraph-2\"><code>omitGraph</code></a> is <code>false</code> and</span>\n        <var>compacted results</var> does not have a top-level <code>@graph</code> <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a>, or its value is\n        not an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>, modify <var>compacted results</var> to place the non <code>@context</code> <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a>\n        of <var>compacted results</var> into a <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> contained within the <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a> value of\n        <code>@graph</code>. If <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-omitgraph\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-omitgraph-3\"><code>omitGraph</code></a> is <code>true</code>, a\n        top-level <code>@graph</code> <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a> is used only to contain multiple <a data-cite=\"JSON-LD11#dfn-node-object\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-node-object\">node objects</a>."
+        },
+        {
+          "html": "Resolve the <var>promise</var> with <var>compacted results</var>,\n         transforming <var>compacted results</var> from the <a data-cite=\"JSON-LD11-API#dfn-internal-representation\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11-api/#dfn-internal-representation\">internal representation</a> to a JSON serialization."
+        }
+      ]
+    }
+  ]
+}

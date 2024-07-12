@@ -1,0 +1,1585 @@
+{
+  "spec": {
+    "title": "File System Standard",
+    "url": "https://fs.spec.whatwg.org/"
+  },
+  "algorithms": [
+    {
+      "name": "file entry/lock/take",
+      "href": "https://fs.spec.whatwg.org/#file-entry-lock-take",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"file entry/lock\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"file-entry-lock-take\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">take</dfn> a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock\" id=\"ref-for-file-entry-lock\">lock</a> with a <var>value</var> of\n\"<code>exclusive</code>\" or \"<code>shared</code>\" on a given <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file①\">file entry</a> <var>file</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>lock</var> be the <var>file</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock\" id=\"ref-for-file-entry-lock①\">lock</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>count</var> be the <var>file</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-shared-lock-count\" id=\"ref-for-file-entry-shared-lock-count\">shared lock count</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"file entry/lock\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"file-entry-lock-take\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">take</dfn> a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock\" id=\"ref-for-file-entry-lock\">lock</a> with a <var>value</var> of\n\"<code>exclusive</code>\" or \"<code>shared</code>\" on a given <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file①\">file entry</a> <var>file</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"file entry/lock\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"file-entry-lock-take\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">take</dfn> a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock\" id=\"ref-for-file-entry-lock\">lock</a> with a <var>value</var> of\n\"<code>exclusive</code>\" or \"<code>shared</code>\" on a given <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file①\">file entry</a> <var>file</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set lock to \"<code>taken-exclusive</code>\".</p>"
+                },
+                {
+                  "html": "<p>Return \"<code>success</code>\".</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"file entry/lock\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"file-entry-lock-take\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">take</dfn> a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock\" id=\"ref-for-file-entry-lock\">lock</a> with a <var>value</var> of\n\"<code>exclusive</code>\" or \"<code>shared</code>\" on a given <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file①\">file entry</a> <var>file</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"file entry/lock\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"file-entry-lock-take\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">take</dfn> a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock\" id=\"ref-for-file-entry-lock\">lock</a> with a <var>value</var> of\n\"<code>exclusive</code>\" or \"<code>shared</code>\" on a given <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file①\">file entry</a> <var>file</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>lock</var> to \"<code>taken-shared</code>\".</p>"
+                },
+                {
+                  "html": "<p>Set <var>count</var> to 1.</p>"
+                },
+                {
+                  "html": "<p>Return \"<code>success</code>\".</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"file entry/lock\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"file-entry-lock-take\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">take</dfn> a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock\" id=\"ref-for-file-entry-lock\">lock</a> with a <var>value</var> of\n\"<code>exclusive</code>\" or \"<code>shared</code>\" on a given <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file①\">file entry</a> <var>file</var>:",
+              "rationale": "increase",
+              "steps": [
+                {
+                  "html": "<p>Increase <var>count</var> by 1.</p>"
+                },
+                {
+                  "html": "<p>Return \"<code>success</code>\".</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>failure</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "file entry/lock/release",
+      "href": "https://fs.spec.whatwg.org/#file-entry-lock-release",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"file entry/lock\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"file-entry-lock-release\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">release</dfn> a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock\" id=\"ref-for-file-entry-lock②\">lock</a> on a given <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file②\">file entry</a> <var>file</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>lock</var> be the <var>file</var>’s associated <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock\" id=\"ref-for-file-entry-lock③\">lock</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>count</var> be the <var>file</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-shared-lock-count\" id=\"ref-for-file-entry-shared-lock-count①\">shared lock count</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"file entry/lock\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"file-entry-lock-release\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">release</dfn> a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock\" id=\"ref-for-file-entry-lock②\">lock</a> on a given <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file②\">file entry</a> <var>file</var>:",
+          "rationale": "decrease",
+          "steps": [
+            {
+              "html": "<p>Decrease <var>count</var> by 1.</p>"
+            },
+            {
+              "html": "<p>If <var>count</var> is 0, set <var>lock</var> to \"<code>open</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Otherwise, set <var>lock</var> to \"<code>open</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "file system locator/resolve",
+      "href": "https://fs.spec.whatwg.org/#locator-resolve",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"file system locator\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"locator-resolve\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">resolve</dfn> a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-locator\" id=\"ref-for-file-system-locator\">file system locator</a> <var>child</var> relative to a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory-locator\" id=\"ref-for-directory-locator\">directory locator</a> <var>root</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"file system locator\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"locator-resolve\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">resolve</dfn> a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-locator\" id=\"ref-for-file-system-locator\">file system locator</a> <var>child</var> relative to a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory-locator\" id=\"ref-for-directory-locator\">directory locator</a> <var>root</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator\">locator</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-root\" id=\"ref-for-locator-root\">root</a> is not <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator①\">locator</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-root\" id=\"ref-for-locator-root①\">root</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>result</var> with null, and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>childPath</var> be <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator②\">locator</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-path\" id=\"ref-for-locator-path\">path</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>rootPath</var> be <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator③\">locator</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-path\" id=\"ref-for-locator-path①\">path</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>childPath</var> is <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-path-the-same-path-as\" id=\"ref-for-file-system-path-the-same-path-as\">the same path as</a> <var>rootPath</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>result</var> with « », and abort these steps.</p>"
+            },
+            {
+              "html": "<p>If <var>rootPath</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is greater than <var>childPath</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> <var>result</var> with null, and abort these steps.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"file system locator\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"locator-resolve\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">resolve</dfn> a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-locator\" id=\"ref-for-file-system-locator\">file system locator</a> <var>child</var> relative to a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory-locator\" id=\"ref-for-directory-locator\">directory locator</a> <var>root</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>rootPath</var>.\\[[<var>index</var>]] is not <var>childPath</var>.\\[[<var>index</var>]], then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">resolve</a> <var>result</var> with null, and abort these steps.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>relativePath</var> be « ».</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>index</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the range</a> from <var>rootPath</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> to <var>rootPath</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③\">size</a>, exclusive, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>childPath</var>.\\[[<var>index</var>]] to <var>relativePath</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve④\">Resolve</a> <var>result</var> with <var>relativePath</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "serialization steps",
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps\">serialization steps</a>, given <var>value</var>, <var>serialized</var> and <var>forStorage</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>serialized</var>.[[Origin]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[Locator]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator⑤\">locator</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "deserialization steps",
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps\">deserialization steps</a>, given <var>serialized</var> and <var>value</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>serialized</var>.[[Origin]] is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>,\n then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror\">DataCloneError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator⑥\">locator</a> to <var>serialized</var>.[[Locator]].</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemHandle/isSameEntry(other)",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemhandle-issameentry",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemhandle-issameentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>isSameEntry(<var>other</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> in <var>realm</var>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemhandle-issameentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>isSameEntry(<var>other</var>)</code></dfn> method steps are:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator①⓪\">locator</a> is <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-locator-the-same-locator-as\" id=\"ref-for-file-system-locator-the-same-locator-as①\">the same locator as</a> <var>other</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator①①\">locator</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑤\">resolve</a> <var>p</var> with true.</p>"
+            },
+            {
+              "html": "<p>Otherwise <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑥\">resolve</a> <var>p</var> with false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "creating a child FileSystemFileHandle",
+      "href": "https://fs.spec.whatwg.org/#creating-a-child-filesystemfilehandle",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"creating a child FileSystemFileHandle\" data-noexport=\"\" id=\"creating-a-child-filesystemfilehandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a child <code>FileSystemFileHandle</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory-locator\" id=\"ref-for-directory-locator⑤\">directory locator</a> <var>parentLocator</var> and a string <var>name</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm\">Realm</a> <var>realm</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>handle</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemfilehandle\" id=\"ref-for-filesystemfilehandle③\">FileSystemFileHandle</a></code> in <var>realm</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>childType</var> be \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-filesystemhandlekind-file\" id=\"ref-for-dom-filesystemhandlekind-file④\">file</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>childRoot</var> be a copy of <var>parentLocator</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-root\" id=\"ref-for-locator-root⑤\">root</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>childPath</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone\">cloning</a> <var>parentLocator</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-path\" id=\"ref-for-locator-path①③\">path</a> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">appending</a> <var>name</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator①③\">locator</a> to a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-locator\" id=\"ref-for-file-system-locator①③\">file system locator</a> whose <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-kind\" id=\"ref-for-locator-kind⑦\">kind</a> is <var>childType</var>, <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-root\" id=\"ref-for-locator-root⑥\">root</a> is <var>childRoot</var>, and <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-path\" id=\"ref-for-locator-path①④\">path</a> is <var>childPath</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>handle</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "creating a new FileSystemFileHandle",
+      "href": "https://fs.spec.whatwg.org/#creating-a-new-filesystemfilehandle",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"creating a new FileSystemFileHandle\" id=\"creating-a-new-filesystemfilehandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a new <code>FileSystemFileHandle</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-root\" id=\"ref-for-file-system-root①\">file system root</a> <var>root</var> and a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-path\" id=\"ref-for-file-system-path④\">file system path</a> <var>path</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm①\">Realm</a> <var>realm</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>handle</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemfilehandle\" id=\"ref-for-filesystemfilehandle④\">FileSystemFileHandle</a></code> in <var>realm</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator①④\">locator</a> to a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-locator\" id=\"ref-for-file-system-locator①④\">file system locator</a> whose <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-kind\" id=\"ref-for-locator-kind⑧\">kind</a> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-filesystemhandlekind-file\" id=\"ref-for-dom-filesystemhandlekind-file⑤\">file</a></code>\", <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-root\" id=\"ref-for-locator-root⑦\">root</a> is <var>root</var>, and <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-path\" id=\"ref-for-locator-path①⑤\">path</a> is <var>path</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>handle</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemFileHandle/getFile()",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemfilehandle-getfile",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemFileHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemfilehandle-getfile\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFile()</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>locator</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator①⑥\">locator</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemFileHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemfilehandle-getfile\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFile()</code></dfn> method steps are:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locating-an-entry\" id=\"ref-for-locating-an-entry③\">locating an entry</a> given <var>locator</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>accessResult</var> be the result of running <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-query-access\" id=\"ref-for-entry-query-access③\">query access</a> given \"<code>read</code>\".</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemFileHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemfilehandle-getfile\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFile()</code></dfn> method steps are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-permission-state\" id=\"ref-for-file-system-access-result-permission-state④\">permission state</a> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted②\">granted</a></code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>result</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> of <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-error-name\" id=\"ref-for-file-system-access-result-error-name③\">error name</a> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p>If <var>entry</var> is null, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>result</var> with a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror\">NotFoundError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>entry</var> is a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file⑧\">file entry</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>f</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-file\" id=\"ref-for-dfn-file③\">File</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>f</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#snapshot-state\" id=\"ref-for-snapshot-state\">snapshot state</a> to the current state of <var>entry</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>f</var>’s underlying byte sequence to a copy of <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data①\">binary data</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>f</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-name\" id=\"ref-for-dfn-name\">name</a></code> to <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name②\">name</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>f</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-lastModified\" id=\"ref-for-dfn-lastModified\">lastModified</a></code> to <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-modification-timestamp\" id=\"ref-for-file-entry-modification-timestamp①\">modification timestamp</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>f</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type\">type</a></code> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> value, based on\n for example <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name③\">name</a> or its file extension.</p>\n          <p class=\"XXX\"> The reading and snapshotting behavior needs to be better specified in the <a data-link-type=\"biblio\" href=\"https://fs.spec.whatwg.org/#biblio-file-api\" title=\"File API\">[FILE-API]</a> spec,\n for now this is kind of hand-wavy.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑦\">Resolve</a> <var>result</var> with <var>f</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemFileHandle/createWritable(options)",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemfilehandle-createwritable",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemFileHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"createWritable(options)|createWritable()\" id=\"dom-filesystemfilehandle-createwritable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createWritable(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>locator</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator②⓪\">locator</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemFileHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"createWritable(options)|createWritable()\" id=\"dom-filesystemfilehandle-createwritable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createWritable(<var>options</var>)</code></dfn> method steps are:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locating-an-entry\" id=\"ref-for-locating-an-entry⑦\">locating an entry</a> given <var>locator</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>accessResult</var> be the result of running <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-request-access\" id=\"ref-for-entry-request-access③\">request access</a> given \"<code>readwrite</code>\".</p>"
+            },
+            {
+              "html": "<p>If <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-permission-state\" id=\"ref-for-file-system-access-result-permission-state⑤\">permission state</a> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted③\">granted</a></code>\", <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#queue-a-storage-task\" id=\"ref-for-queue-a-storage-task②\">queue a storage task</a> with <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>result</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> of <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-error-name\" id=\"ref-for-file-system-access-result-error-name④\">error name</a> and\n abort these steps.</p>"
+            },
+            {
+              "html": "<p>If <var>entry</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#queue-a-storage-task\" id=\"ref-for-queue-a-storage-task③\">queue a storage task</a> with <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>result</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror①\">NotFoundError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>entry</var> is a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file①②\">file entry</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>lockResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock-take\" id=\"ref-for-file-entry-lock-take①\">taking a lock</a> with \"<code>shared</code>\" on <var>entry</var>.</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemFileHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"createWritable(options)|createWritable()\" id=\"dom-filesystemfilehandle-createwritable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createWritable(<var>options</var>)</code></dfn> method steps are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>lockResult</var> is \"<code>failure</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">reject</a> <var>result</var> with a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\" id=\"ref-for-nomodificationallowederror\">NoModificationAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p>Let <var>stream</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#create-a-new-filesystemwritablefilestream\" id=\"ref-for-create-a-new-filesystemwritablefilestream\">creating a new <code>FileSystemWritableFileStream</code></a> for <var>entry</var> in <var>realm</var>.</p>"
+                },
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemFileHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"createWritable(options)|createWritable()\" id=\"dom-filesystemfilehandle-createwritable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createWritable(<var>options</var>)</code></dfn> method steps are:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer\">[[buffer]]</a> to a copy of <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data②\">binary data</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑧\">Resolve</a> <var>result</var> with <var>stream</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemFileHandle/createSyncAccessHandle()",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemfilehandle-createsyncaccesshandle",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemFileHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemfilehandle-createsyncaccesshandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createSyncAccessHandle()</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise④\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>locator</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator②③\">locator</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>isInABucketFileSystem</var> be true if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a> <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-is-in-a-bucket-file-system\" id=\"ref-for-filesystemhandle-is-in-a-bucket-file-system①\">is in a bucket file system</a>;\n otherwise false.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemFileHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemfilehandle-createsyncaccesshandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createSyncAccessHandle()</code></dfn> method steps are:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locating-an-entry\" id=\"ref-for-locating-an-entry①⓪\">locating an entry</a> given <var>locator</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>accessResult</var> be the result of running <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-request-access\" id=\"ref-for-entry-request-access④\">request access</a> given \"<code>readwrite</code>\".</p>"
+            },
+            {
+              "html": "<p>If <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-permission-state\" id=\"ref-for-file-system-access-result-permission-state⑥\">permission state</a> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted④\">granted</a></code>\", <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#queue-a-storage-task\" id=\"ref-for-queue-a-storage-task⑤\">queue a storage task</a> with <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">reject</a> <var>result</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> of <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-error-name\" id=\"ref-for-file-system-access-result-error-name⑤\">error name</a> and\n abort these steps.</p>"
+            },
+            {
+              "html": "<p>If <var>isInABucketFileSystem</var> is false, <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#queue-a-storage-task\" id=\"ref-for-queue-a-storage-task⑥\">queue a storage task</a> with <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">reject</a> <var>result</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code> and\n abort these steps.</p>"
+            },
+            {
+              "html": "<p>If <var>entry</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#queue-a-storage-task\" id=\"ref-for-queue-a-storage-task⑦\">queue a storage task</a> with <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">reject</a> <var>result</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror②\">NotFoundError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>entry</var> is a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file①⑤\">file entry</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>lockResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock-take\" id=\"ref-for-file-entry-lock-take③\">taking a lock</a> with \"<code>exclusive</code>\" on <var>entry</var>.</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemFileHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemfilehandle-createsyncaccesshandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createSyncAccessHandle()</code></dfn> method steps are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>lockResult</var> is \"<code>failure</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">reject</a> <var>result</var> with a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\" id=\"ref-for-nomodificationallowederror①\">NoModificationAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p>Let <var>handle</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#create-a-new-filesystemsyncaccesshandle\" id=\"ref-for-create-a-new-filesystemsyncaccesshandle\">creating a new <code>FileSystemSyncAccessHandle</code></a> for <var>entry</var> in <var>realm</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑨\">Resolve</a> <var>result</var> with <var>handle</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "creating a child FileSystemDirectoryHandle",
+      "href": "https://fs.spec.whatwg.org/#creating-a-child-filesystemdirectoryhandle",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"creating a child FileSystemDirectoryHandle\" data-noexport=\"\" id=\"creating-a-child-filesystemdirectoryhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a child <code>FileSystemDirectoryHandle</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory-locator\" id=\"ref-for-directory-locator⑥\">directory locator</a> <var>parentLocator</var> and a string <var>name</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm②\">Realm</a> <var>realm</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>handle</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new②\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemdirectoryhandle\" id=\"ref-for-filesystemdirectoryhandle④\">FileSystemDirectoryHandle</a></code> in <var>realm</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>childType</var> be \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-filesystemhandlekind-directory\" id=\"ref-for-dom-filesystemhandlekind-directory③\">directory</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>childRoot</var> be a copy of <var>parentLocator</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-root\" id=\"ref-for-locator-root⑧\">root</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>childPath</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone①\">cloning</a> <var>parentLocator</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-path\" id=\"ref-for-locator-path①⑥\">path</a> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">appending</a> <var>name</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator②⑤\">locator</a> to a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-locator\" id=\"ref-for-file-system-locator①⑤\">file system locator</a> whose <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-kind\" id=\"ref-for-locator-kind①⓪\">kind</a> is <var>childType</var>, <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-root\" id=\"ref-for-locator-root⑨\">root</a> is <var>childRoot</var>, and <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-path\" id=\"ref-for-locator-path①⑦\">path</a> is <var>childPath</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>handle</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "creating a new FileSystemDirectoryHandle",
+      "href": "https://fs.spec.whatwg.org/#creating-a-new-filesystemdirectoryhandle",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"creating a new FileSystemDirectoryHandle\" id=\"creating-a-new-filesystemdirectoryhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a new <code>FileSystemDirectoryHandle</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-root\" id=\"ref-for-file-system-root②\">file system root</a> <var>root</var> and a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-path\" id=\"ref-for-file-system-path⑤\">file system path</a> <var>path</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm③\">Realm</a> <var>realm</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>handle</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new③\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemdirectoryhandle\" id=\"ref-for-filesystemdirectoryhandle⑤\">FileSystemDirectoryHandle</a></code> in <var>realm</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator②⑥\">locator</a> to a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-locator\" id=\"ref-for-file-system-locator①⑥\">file system locator</a> whose <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-kind\" id=\"ref-for-locator-kind①①\">kind</a> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-filesystemhandlekind-directory\" id=\"ref-for-dom-filesystemhandlekind-directory④\">directory</a></code>\", <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-root\" id=\"ref-for-locator-root①⓪\">root</a> is <var>root</var>, and <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locator-path\" id=\"ref-for-locator-path①⑧\">path</a> is <var>path</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>handle</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "iterator initialization",
+      "href": "https://fs.spec.whatwg.org/#filesystemdirectoryhandle-iterator-past-results",
+      "html": "Set <var>iterator</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle-iterator\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"filesystemdirectoryhandle-iterator-past-results\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">past results</dfn> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>iterator</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle-iterator\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"filesystemdirectoryhandle-iterator-past-results\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">past results</dfn> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "next iteration result",
+      "html": "To <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-the-next-iteration-result\" id=\"ref-for-dfn-get-the-next-iteration-result\">get the next iteration result</a> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemdirectoryhandle\" id=\"ref-for-filesystemdirectoryhandle⑧\">FileSystemDirectoryHandle</a></code> <var>handle</var> and its async iterator <var>iterator</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑤\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps⑤\">Enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-queue\" id=\"ref-for-file-system-queue⑧\">file system queue</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>directory</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locating-an-entry\" id=\"ref-for-locating-an-entry①②\">locating an entry</a> given <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator②⑧\">locator</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>accessResult</var> be the result of running <var>directory</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-query-access\" id=\"ref-for-entry-query-access④\">query access</a> given \"<code>read</code>\".</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#queue-a-storage-task\" id=\"ref-for-queue-a-storage-task⑨\">Queue a storage task</a> with <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a> to\n run these steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-permission-state\" id=\"ref-for-file-system-access-result-permission-state⑦\">permission state</a> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted⑤\">granted</a></code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪\">DOMException</a></code> of <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-error-name\" id=\"ref-for-file-system-access-result-error-name⑥\">error name</a> and abort these steps.:</p>"
+                },
+                {
+                  "html": "If <var>directory</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①①\">reject</a> <var>result</var> with a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror③\">NotFoundError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①①\">DOMException</a></code> and abort these steps.",
+                  "rationale": "assert",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>directory</var> is a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory\" id=\"ref-for-directory⑥\">directory entry</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>child</var> be a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry\" id=\"ref-for-entry①⑤\">file system entry</a> in <var>directory</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory-entry-children\" id=\"ref-for-directory-entry-children②\">children</a>, such that <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name④\">name</a> is not contained in <var>iterator</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemdirectoryhandle-iterator-past-results\" id=\"ref-for-filesystemdirectoryhandle-iterator-past-results\">past results</a>, or <code>null</code> if no such entry exists.</p>"
+                },
+                {
+                  "html": "<p>If <var>child</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①⓪\">resolve</a> <var>promise</var> with <code>undefined</code> and\n abort these steps.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name⑤\">name</a> to <var>iterator</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemdirectoryhandle-iterator-past-results\" id=\"ref-for-filesystemdirectoryhandle-iterator-past-results①\">past results</a>.</p>"
+                },
+                {
+                  "html": "If <var>child</var> is a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file①⑥\">file entry</a>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#creating-a-child-filesystemfilehandle\" id=\"ref-for-creating-a-child-filesystemfilehandle\">creating a child <code>FileSystemFileHandle</code></a> with <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator②⑨\">locator</a> and <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name⑥\">name</a> in <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③\">relevant Realm</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "Otherwise:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#creating-a-child-filesystemdirectoryhandle\" id=\"ref-for-creating-a-child-filesystemdirectoryhandle\">creating a child <code>FileSystemDirectoryHandle</code></a> with <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator③⓪\">locator</a> and <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name⑦\">name</a> in <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm④\">relevant Realm</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①①\">Resolve</a> <var>promise</var> with\n (<var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name⑧\">name</a>, <var>result</var>).</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemDirectoryHandle/getFileHandle(name, options)",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemdirectoryhandle-getfilehandle",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getFileHandle(name, options)|getFileHandle(name)\" id=\"dom-filesystemdirectoryhandle-getfilehandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFileHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑥\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑤\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>locator</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator③③\">locator</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getFileHandle(name, options)|getFileHandle(name)\" id=\"dom-filesystemdirectoryhandle-getfilehandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFileHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>name</var> is not a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#valid-file-name\" id=\"ref-for-valid-file-name②\">valid file name</a>, <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#queue-a-storage-task\" id=\"ref-for-queue-a-storage-task①⓪\">queue a storage task</a> with <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①②\">reject</a> <var>result</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code> and\n abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locating-an-entry\" id=\"ref-for-locating-an-entry①⑤\">locating an entry</a> given <var>locator</var>.</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getFileHandle(name, options)|getFileHandle(name)\" id=\"dom-filesystemdirectoryhandle-getfilehandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFileHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>accessResult</var> be the result of running <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-request-access\" id=\"ref-for-entry-request-access⑤\">request access</a> given \"<code>readwrite</code>\".</p>"
+                }
+              ]
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getFileHandle(name, options)|getFileHandle(name)\" id=\"dom-filesystemdirectoryhandle-getfilehandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFileHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>accessResult</var> be the result of running <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-query-access\" id=\"ref-for-entry-query-access⑤\">query access</a> given \"<code>read</code>\".</p>"
+                }
+              ]
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getFileHandle(name, options)|getFileHandle(name)\" id=\"dom-filesystemdirectoryhandle-getfilehandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFileHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-permission-state\" id=\"ref-for-file-system-access-result-permission-state⑧\">permission state</a> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted⑥\">granted</a></code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①③\">reject</a> <var>result</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①②\">DOMException</a></code> of <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-error-name\" id=\"ref-for-file-system-access-result-error-name⑦\">error name</a> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p>If <var>entry</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①④\">reject</a> <var>result</var> with a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror④\">NotFoundError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①③\">DOMException</a></code> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>entry</var> is a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory\" id=\"ref-for-directory⑨\">directory entry</a>.</p>"
+                },
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getFileHandle(name, options)|getFileHandle(name)\" id=\"dom-filesystemdirectoryhandle-getfilehandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFileHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getFileHandle(name, options)|getFileHandle(name)\" id=\"dom-filesystemdirectoryhandle-getfilehandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFileHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getFileHandle(name, options)|getFileHandle(name)\" id=\"dom-filesystemdirectoryhandle-getfilehandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFileHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                          "rationale": "reject",
+                          "steps": [
+                            {
+                              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑤\">Reject</a> <var>result</var> with a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#typemismatcherror\" id=\"ref-for-typemismatcherror\">TypeMismatchError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①④\">DOMException</a></code> and abort these steps.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①②\">Resolve</a> <var>result</var> with the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#creating-a-child-filesystemfilehandle\" id=\"ref-for-creating-a-child-filesystemfilehandle①\">creating a child <code>FileSystemFileHandle</code></a> with <var>locator</var> and <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name①⓪\">name</a> in <var>realm</var> and\n abort these steps.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getFileHandle(name, options)|getFileHandle(name)\" id=\"dom-filesystemdirectoryhandle-getfilehandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getFileHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "rationale": "reject",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑥\">Reject</a> <var>result</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror⑤\">NotFoundError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑤\">DOMException</a></code> and\n abort these steps.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>child</var> be a new <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file①⑦\">file entry</a> whose <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-query-access\" id=\"ref-for-entry-query-access⑥\">query access</a> and <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-request-access\" id=\"ref-for-entry-request-access⑥\">request access</a> algorithms are those of <var>entry</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name①①\">name</a> to <var>name</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data③\">binary data</a> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-modification-timestamp\" id=\"ref-for-file-entry-modification-timestamp②\">modification timestamp</a> to the current time.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>child</var> to <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory-entry-children\" id=\"ref-for-directory-entry-children④\">children</a>.</p>"
+                },
+                {
+                  "html": "<p>If creating <var>child</var> in the underlying file system throws an exception, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑦\">reject</a> <var>result</var> with that exception and abort these steps.</p>\n          <p class=\"XXX\" data-remote-issue-id=\"11\"> Better specify what possible exceptions this could throw.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①③\">Resolve</a> <var>result</var> with the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#creating-a-child-filesystemfilehandle\" id=\"ref-for-creating-a-child-filesystemfilehandle②\">creating a child <code>FileSystemFileHandle</code></a> with <var>locator</var> and <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name①②\">name</a> in <var>realm</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemDirectoryHandle/getDirectoryHandle(name, options)",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemdirectoryhandle-getdirectoryhandle",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getDirectoryHandle(name, options)|getDirectoryHandle(name)\" id=\"dom-filesystemdirectoryhandle-getdirectoryhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectoryHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑦\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>locator</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator③⑥\">locator</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getDirectoryHandle(name, options)|getDirectoryHandle(name)\" id=\"dom-filesystemdirectoryhandle-getdirectoryhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectoryHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>name</var> is not a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#valid-file-name\" id=\"ref-for-valid-file-name③\">valid file name</a>, <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#queue-a-storage-task\" id=\"ref-for-queue-a-storage-task①②\">queue a storage task</a> with <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑧\">reject</a> <var>result</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code> and\n abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locating-an-entry\" id=\"ref-for-locating-an-entry①⑧\">locating an entry</a> given <var>locator</var>.</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getDirectoryHandle(name, options)|getDirectoryHandle(name)\" id=\"dom-filesystemdirectoryhandle-getdirectoryhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectoryHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>accessResult</var> be the result of running <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-request-access\" id=\"ref-for-entry-request-access⑦\">request access</a> given \"<code>readwrite</code>\".</p>"
+                }
+              ]
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getDirectoryHandle(name, options)|getDirectoryHandle(name)\" id=\"dom-filesystemdirectoryhandle-getdirectoryhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectoryHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>accessResult</var> be the result of running <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-query-access\" id=\"ref-for-entry-query-access⑦\">query access</a> given \"<code>read</code>\".</p>"
+                }
+              ]
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getDirectoryHandle(name, options)|getDirectoryHandle(name)\" id=\"dom-filesystemdirectoryhandle-getdirectoryhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectoryHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-permission-state\" id=\"ref-for-file-system-access-result-permission-state⑨\">permission state</a> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted⑦\">granted</a></code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑨\">reject</a> <var>result</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥\">DOMException</a></code> of <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-error-name\" id=\"ref-for-file-system-access-result-error-name⑧\">error name</a> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p>If <var>entry</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⓪\">reject</a> <var>result</var> with a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror⑥\">NotFoundError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑦\">DOMException</a></code> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>entry</var> is a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory\" id=\"ref-for-directory①③\">directory entry</a>.</p>"
+                },
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getDirectoryHandle(name, options)|getDirectoryHandle(name)\" id=\"dom-filesystemdirectoryhandle-getdirectoryhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectoryHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getDirectoryHandle(name, options)|getDirectoryHandle(name)\" id=\"dom-filesystemdirectoryhandle-getdirectoryhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectoryHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getDirectoryHandle(name, options)|getDirectoryHandle(name)\" id=\"dom-filesystemdirectoryhandle-getdirectoryhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectoryHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                          "rationale": "reject",
+                          "steps": [
+                            {
+                              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②①\">Reject</a> <var>result</var> with a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#typemismatcherror\" id=\"ref-for-typemismatcherror①\">TypeMismatchError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑧\">DOMException</a></code> and abort these steps.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①④\">Resolve</a> <var>result</var> with the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#creating-a-child-filesystemdirectoryhandle\" id=\"ref-for-creating-a-child-filesystemdirectoryhandle①\">creating a child <code>FileSystemDirectoryHandle</code></a> with <var>locator</var> and <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name①④\">name</a> in <var>realm</var> and\n abort these steps.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getDirectoryHandle(name, options)|getDirectoryHandle(name)\" id=\"dom-filesystemdirectoryhandle-getdirectoryhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectoryHandle(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "rationale": "reject",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②②\">Reject</a> <var>result</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror⑦\">NotFoundError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑨\">DOMException</a></code> and\n abort these steps.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>child</var> be a new <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory\" id=\"ref-for-directory①④\">directory entry</a> whose <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-query-access\" id=\"ref-for-entry-query-access⑧\">query access</a> and <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-request-access\" id=\"ref-for-entry-request-access⑧\">request access</a> algorithms are those of <var>entry</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name①⑤\">name</a> to <var>name</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory-entry-children\" id=\"ref-for-directory-entry-children⑥\">children</a> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">Append</a> <var>child</var> to <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory-entry-children\" id=\"ref-for-directory-entry-children⑦\">children</a>.</p>"
+                },
+                {
+                  "html": "<p>If creating <var>child</var> in the underlying file system throws an exception, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②③\">reject</a> <var>result</var> with that exception and abort these steps.</p>\n          <p class=\"XXX\" data-remote-issue-id=\"11\"> Better specify what possible exceptions this could throw.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①⑤\">Resolve</a> <var>result</var> with the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#creating-a-child-filesystemdirectoryhandle\" id=\"ref-for-creating-a-child-filesystemdirectoryhandle②\">creating a child <code>FileSystemDirectoryHandle</code></a> with <var>locator</var> and <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name①⑥\">name</a> in <var>realm</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemDirectoryHandle/removeEntry(name, options)",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemdirectoryhandle-removeentry",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"removeEntry(name, options)|removeEntry(name)\" id=\"dom-filesystemdirectoryhandle-removeentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>removeEntry(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑧\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>locator</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator③⑨\">locator</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"removeEntry(name, options)|removeEntry(name)\" id=\"dom-filesystemdirectoryhandle-removeentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>removeEntry(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>name</var> is not a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#valid-file-name\" id=\"ref-for-valid-file-name④\">valid file name</a>, <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#queue-a-storage-task\" id=\"ref-for-queue-a-storage-task①④\">queue a storage task</a> with <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②④\">reject</a> <var>result</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code> and\n abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locating-an-entry\" id=\"ref-for-locating-an-entry②①\">locating an entry</a> given <var>locator</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>accessResult</var> be the result of running <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-request-access\" id=\"ref-for-entry-request-access⑨\">request access</a> given \"<code>readwrite</code>\".</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"removeEntry(name, options)|removeEntry(name)\" id=\"dom-filesystemdirectoryhandle-removeentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>removeEntry(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-permission-state\" id=\"ref-for-file-system-access-result-permission-state①⓪\">permission state</a> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted⑧\">granted</a></code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑤\">reject</a> <var>result</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⓪\">DOMException</a></code> of <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-error-name\" id=\"ref-for-file-system-access-result-error-name⑨\">error name</a> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p>If <var>entry</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑥\">reject</a> <var>result</var> with a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror⑧\">NotFoundError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②①\">DOMException</a></code> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>entry</var> is a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory\" id=\"ref-for-directory①⑦\">directory entry</a>.</p>"
+                },
+                {
+                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"removeEntry(name, options)|removeEntry(name)\" id=\"dom-filesystemdirectoryhandle-removeentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>removeEntry(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"removeEntry(name, options)|removeEntry(name)\" id=\"dom-filesystemdirectoryhandle-removeentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>removeEntry(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"removeEntry(name, options)|removeEntry(name)\" id=\"dom-filesystemdirectoryhandle-removeentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>removeEntry(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                          "rationale": "if",
+                          "steps": [
+                            {
+                              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemDirectoryHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"removeEntry(name, options)|removeEntry(name)\" id=\"dom-filesystemdirectoryhandle-removeentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>removeEntry(<var>name</var>, <var>options</var>)</code></dfn> method steps are:",
+                              "rationale": "reject",
+                              "steps": [
+                                {
+                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑦\">Reject</a> <var>result</var> with an\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror\">InvalidModificationError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②②\">DOMException</a></code> and\n abort these steps.</p>"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> <var>child</var> from <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory-entry-children\" id=\"ref-for-directory-entry-children①⓪\">children</a>.</p>"
+                        },
+                        {
+                          "html": "<p>If removing <var>child</var> in the underlying file system throws an\n exception, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑧\">reject</a> <var>result</var> with that exception and\n abort these steps.</p>\n              \n              <p class=\"XXX\" data-remote-issue-id=\"11\"> Better specify what possible exceptions this could throw.</p>"
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①⑥\">Resolve</a> <var>result</var> with <code>undefined</code>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑨\">Reject</a> <var>result</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror⑨\">NotFoundError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②③\">DOMException</a></code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a new FileSystemWritableFileStream",
+      "href": "https://fs.spec.whatwg.org/#create-a-new-filesystemwritablefilestream",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-local-lt=\"creating a new FileSystemWritableFileStream\" data-noexport=\"\" id=\"create-a-new-filesystemwritablefilestream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a new <code>FileSystemWritableFileStream</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file②⓪\">file entry</a> <var>file</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm④\">Realm</a> <var>realm</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new④\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①②\">FileSystemWritableFileStream</a></code> in <var>realm</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-file\" id=\"ref-for-filesystemwritablefilestream-file\">[[file]]</a> to <var>file</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>writeAlgorithm</var> be an algorithm which takes a <var>chunk</var> argument\n and returns the result of running the <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#write-a-chunk\" id=\"ref-for-write-a-chunk\">write a chunk</a> algorithm with <var>stream</var> and <var>chunk</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-local-lt=\"creating a new FileSystemWritableFileStream\" data-noexport=\"\" id=\"create-a-new-filesystemwritablefilestream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a new <code>FileSystemWritableFileStream</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file②⓪\">file entry</a> <var>file</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm④\">Realm</a> <var>realm</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>closeResult</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑨\">a new promise</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-local-lt=\"creating a new FileSystemWritableFileStream\" data-noexport=\"\" id=\"create-a-new-filesystemwritablefilestream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a new <code>FileSystemWritableFileStream</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file②⓪\">file entry</a> <var>file</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm④\">Realm</a> <var>realm</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>accessResult</var> be the result of running <var>file</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-query-access\" id=\"ref-for-entry-query-access⑨\">query access</a> given \"<code>readwrite</code>\".</p>"
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-local-lt=\"creating a new FileSystemWritableFileStream\" data-noexport=\"\" id=\"create-a-new-filesystemwritablefilestream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a new <code>FileSystemWritableFileStream</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file②⓪\">file entry</a> <var>file</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm④\">Realm</a> <var>realm</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-permission-state\" id=\"ref-for-file-system-access-result-permission-state①①\">permission state</a> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted⑨\">granted</a></code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③⓪\">reject</a> <var>closeResult</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②④\">DOMException</a></code> of <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-error-name\" id=\"ref-for-file-system-access-result-error-name①⓪\">error name</a> and abort these steps.</p>"
+                    },
+                    {
+                      "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a> malware scans and safe browsing checks.\n If these checks fail, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③①\">reject</a> <var>closeResult</var> with an\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑤\">DOMException</a></code> and abort these steps.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-file\" id=\"ref-for-filesystemwritablefilestream-file①\">[[file]]</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data④\">binary data</a> to <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer①\">[[buffer]]</a>.\n If that throws an exception, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③②\">reject</a> <var>closeResult</var> with that\n exception and abort these steps.</p>"
+                    },
+                    {
+                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-local-lt=\"creating a new FileSystemWritableFileStream\" data-noexport=\"\" id=\"create-a-new-filesystemwritablefilestream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a new <code>FileSystemWritableFileStream</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file②⓪\">file entry</a> <var>file</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm④\">Realm</a> <var>realm</var>:",
+                      "rationale": "release",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock-release\" id=\"ref-for-file-entry-lock-release\">Release the lock</a> on <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-file\" id=\"ref-for-filesystemwritablefilestream-file②\">[[file]]</a>.</p>"
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#queue-a-storage-task\" id=\"ref-for-queue-a-storage-task①⑦\">Queue a storage task</a> with <var>file</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①⑦\">resolve</a> <var>closeResult</var> with <code>undefined</code>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Return <var>closeResult</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-local-lt=\"creating a new FileSystemWritableFileStream\" data-noexport=\"\" id=\"create-a-new-filesystemwritablefilestream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a new <code>FileSystemWritableFileStream</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file②⓪\">file entry</a> <var>file</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm④\">Realm</a> <var>realm</var>:",
+          "rationale": "enqueue",
+          "steps": [
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-local-lt=\"creating a new FileSystemWritableFileStream\" data-noexport=\"\" id=\"create-a-new-filesystemwritablefilestream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a new <code>FileSystemWritableFileStream</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file②⓪\">file entry</a> <var>file</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm④\">Realm</a> <var>realm</var>:",
+              "rationale": "release",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock-release\" id=\"ref-for-file-entry-lock-release①\">Release the lock</a> on <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-file\" id=\"ref-for-filesystemwritablefilestream-file③\">[[file]]</a>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>highWaterMark</var> be 1.</p>"
+        },
+        {
+          "html": "<p>Let <var>sizeAlgorithm</var> be an algorithm that returns <code>1</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up\" id=\"ref-for-writablestream-set-up\">Set up</a> <var>stream</var> with <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-writealgorithm\" id=\"ref-for-writablestream-set-up-writealgorithm\"><var>writeAlgorithm</var></a> set to <var>writeAlgorithm</var>, <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-closealgorithm\" id=\"ref-for-writablestream-set-up-closealgorithm\"><var>closeAlgorithm</var></a> set to <var>closeAlgorithm</var>, <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-abortalgorithm\" id=\"ref-for-writablestream-set-up-abortalgorithm\"><var>abortAlgorithm</var></a> set to <var>abortAlgorithm</var>, <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-highwatermark\" id=\"ref-for-writablestream-set-up-highwatermark\"><var>highWaterMark</var></a> set to <var>highWaterMark</var>, and <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-sizealgorithm\" id=\"ref-for-writablestream-set-up-sizealgorithm\"><var>sizeAlgorithm</var></a> set to <var>sizeAlgorithm</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>stream</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "write a chunk",
+      "href": "https://fs.spec.whatwg.org/#write-a-chunk",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write a chunk</dfn> algorithm,\ngiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①③\">FileSystemWritableFileStream</a></code> <var>stream</var> and <var>chunk</var>,\nruns these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>input</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value\">converting</a> <var>chunk</var> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#typedefdef-filesystemwritechunktype\" id=\"ref-for-typedefdef-filesystemwritechunktype①\">FileSystemWriteChunkType</a></code>.\n If this throws an exception, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> that exception.</p>"
+        },
+        {
+          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①⓪\">a new promise</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write a chunk</dfn> algorithm,\ngiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①③\">FileSystemWritableFileStream</a></code> <var>stream</var> and <var>chunk</var>,\nruns these steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>accessResult</var> be the result of running <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-file\" id=\"ref-for-filesystemwritablefilestream-file④\">[[file]]</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-query-access\" id=\"ref-for-entry-query-access①⓪\">query access</a> given \"<code>readwrite</code>\".</p>"
+            },
+            {
+              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write a chunk</dfn> algorithm,\ngiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①③\">FileSystemWritableFileStream</a></code> <var>stream</var> and <var>chunk</var>,\nruns these steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-permission-state\" id=\"ref-for-file-system-access-result-permission-state①②\">permission state</a> is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted①⓪\">granted</a></code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③③\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑥\">DOMException</a></code> of <var>accessResult</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-error-name\" id=\"ref-for-file-system-access-result-error-name①①\">error name</a> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p>Let <var>command</var> be <var>input</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-type\" id=\"ref-for-dom-writeparams-type\">type</a></code>\"] if <var>input</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary\">dictionary</a>; otherwise \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writecommandtype-write\" id=\"ref-for-dom-writecommandtype-write\">write</a></code>\".</p>"
+                },
+                {
+                  "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write a chunk</dfn> algorithm,\ngiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①③\">FileSystemWritableFileStream</a></code> <var>stream</var> and <var>chunk</var>,\nruns these steps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>input</var> is <code>undefined</code> or <var>input</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary①\">dictionary</a> and <var>input</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-data\" id=\"ref-for-dom-writeparams-data\">data</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exist</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③④\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code> and abort these steps.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>data</var> be <var>input</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-data\" id=\"ref-for-dom-writeparams-data①\">data</a></code>\"] if <var>input</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary②\">dictionary</a>; otherwise <var>input</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>writePosition</var> be <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-seekoffset\" id=\"ref-for-filesystemwritablefilestream-seekoffset\">[[seekOffset]]</a>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>input</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary③\">dictionary</a> and <var>input</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-position\" id=\"ref-for-dom-writeparams-position\">position</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, set <var>writePosition</var> to <var>input</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-position\" id=\"ref-for-dom-writeparams-position①\">position</a></code>\"].</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>oldSize</var> be <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer②\">[[buffer]]</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length\">length</a>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>data</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource②\">BufferSource</a></code>,\n let <var>dataBytes</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy\">a copy of</a> <var>data</var>.</p>"
+                    },
+                    {
+                      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write a chunk</dfn> algorithm,\ngiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①③\">FileSystemWritableFileStream</a></code> <var>stream</var> and <var>chunk</var>,\nruns these steps:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>dataBytes</var> be the result of performing the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#readOperation\" id=\"ref-for-readOperation\">read operation</a> on <var>data</var>.\n  If this throws an exception, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③⑤\">reject</a> <var>p</var> with that exception\n  and abort these steps.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write a chunk</dfn> algorithm,\ngiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①③\">FileSystemWritableFileStream</a></code> <var>stream</var> and <var>chunk</var>,\nruns these steps:",
+                      "rationale": "assert",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>data</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString⑧\">USVString</a></code>.</p>"
+                        },
+                        {
+                          "html": "<p>Let <var>dataBytes</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoding</a> <var>data</var>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>If <var>writePosition</var> is larger than <var>oldSize</var>,\n append <var>writePosition</var> - <var>oldSize</var> 0x00 (NUL) bytes to the end of <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer③\">[[buffer]]</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>head</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence③\">byte sequence</a> containing the first <var>writePosition</var> bytes of <var>stream</var>’s<a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer④\">[[buffer]]</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>tail</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence④\">byte sequence</a>.</p>"
+                    },
+                    {
+                      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write a chunk</dfn> algorithm,\ngiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①③\">FileSystemWritableFileStream</a></code> <var>stream</var> and <var>chunk</var>,\nruns these steps:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>tail</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑤\">byte sequence</a> containing the last <var>oldSize</var> - (<var>writePosition</var> + <var>data</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length②\">length</a>)\n  bytes of <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer⑤\">[[buffer]]</a>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Set <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer⑥\">[[buffer]]</a> to the concatenation of <var>head</var>, <var>data</var> and <var>tail</var>.</p>"
+                    },
+                    {
+                      "html": "<p>If the operations modifying <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer⑦\">[[buffer]]</a> in the\n previous steps failed due to exceeding the <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-quota\" id=\"ref-for-storage-quota\">storage quota</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③⑥\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror\" id=\"ref-for-quotaexceedederror\">QuotaExceededError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑦\">DOMException</a></code> and abort these steps, leaving <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer⑧\">[[buffer]]</a> unmodified.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-seekoffset\" id=\"ref-for-filesystemwritablefilestream-seekoffset①\">[[seekOffset]]</a> to <var>writePosition</var> + <var>data</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length③\">length</a>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①⑧\">Resolve</a> <var>p</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write a chunk</dfn> algorithm,\ngiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①③\">FileSystemWritableFileStream</a></code> <var>stream</var> and <var>chunk</var>,\nruns these steps:",
+                  "rationale": "assert",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>chunk</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary④\">dictionary</a>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>chunk</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-position\" id=\"ref-for-dom-writeparams-position②\">position</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exist</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③⑦\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code> and abort these steps.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-seekoffset\" id=\"ref-for-filesystemwritablefilestream-seekoffset②\">[[seekOffset]]</a> to <var>chunk</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-position\" id=\"ref-for-dom-writeparams-position③\">position</a></code>\"].</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①⑨\">Resolve</a> <var>p</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write a chunk</dfn> algorithm,\ngiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①③\">FileSystemWritableFileStream</a></code> <var>stream</var> and <var>chunk</var>,\nruns these steps:",
+                  "rationale": "assert",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: <var>chunk</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary⑤\">dictionary</a>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>chunk</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-size\" id=\"ref-for-dom-writeparams-size\">size</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exist</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③⑧\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code> and abort these steps.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>newSize</var> be <var>chunk</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-size\" id=\"ref-for-dom-writeparams-size①\">size</a></code>\"].</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>oldSize</var> be <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer⑨\">[[buffer]]</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length④\">length</a>.</p>"
+                    },
+                    {
+                      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write a chunk</dfn> algorithm,\ngiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①③\">FileSystemWritableFileStream</a></code> <var>stream</var> and <var>chunk</var>,\nruns these steps:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "<p>Set <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer①⓪\">[[buffer]]</a> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑥\">byte sequence</a> formed by\n  concating <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer①①\">[[buffer]]</a> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑦\">byte sequence</a> containing <var>newSize</var>-<var>oldSize</var> <code>0x00</code> bytes.</p>"
+                        },
+                        {
+                          "html": "<p>If the operation in the previous step failed due to exceeding the <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-quota\" id=\"ref-for-storage-quota②\">storage quota</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③⑨\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror\" id=\"ref-for-quotaexceedederror①\">QuotaExceededError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑧\">DOMException</a></code> and\n  abort these steps, leaving <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer①②\">[[buffer]]</a> unmodified.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write a chunk</dfn> algorithm,\ngiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream\" id=\"ref-for-filesystemwritablefilestream①③\">FileSystemWritableFileStream</a></code> <var>stream</var> and <var>chunk</var>,\nruns these steps:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "<p>Set <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer①③\">[[buffer]]</a> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑧\">byte sequence</a> containing the\n  first <var>newSize</var> bytes in <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-buffer\" id=\"ref-for-filesystemwritablefilestream-buffer①④\">[[buffer]]</a>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>If <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-seekoffset\" id=\"ref-for-filesystemwritablefilestream-seekoffset③\">[[seekOffset]]</a> is bigger than <var>newSize</var>,\n set <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemwritablefilestream-seekoffset\" id=\"ref-for-filesystemwritablefilestream-seekoffset④\">[[seekOffset]]</a> to <var>newSize</var>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②⓪\">Resolve</a> <var>p</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemWritableFileStream/write(data)",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemwritablefilestream-write",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemWritableFileStream\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemwritablefilestream-write\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>write(<var>data</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>writer</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-get-a-writer\" id=\"ref-for-writablestream-get-a-writer\">getting a writer</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultwriter-write-a-chunk\" id=\"ref-for-writablestreamdefaultwriter-write-a-chunk\">writing a chunk</a> to <var>writer</var> given <var>data</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultwriter-release\" id=\"ref-for-writablestreamdefaultwriter-release\">Release</a> <var>writer</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemWritableFileStream/seek(position)",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemwritablefilestream-seek",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemWritableFileStream\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemwritablefilestream-seek\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>seek(<var>position</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>writer</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-get-a-writer\" id=\"ref-for-writablestream-get-a-writer①\">getting a writer</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultwriter-write-a-chunk\" id=\"ref-for-writablestreamdefaultwriter-write-a-chunk①\">writing a chunk</a> to <var>writer</var> given\n  «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-type\" id=\"ref-for-dom-writeparams-type⑤\">type</a></code>\" → \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writecommandtype-seek\" id=\"ref-for-dom-writecommandtype-seek②\">seek</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-position\" id=\"ref-for-dom-writeparams-position⑥\">position</a></code>\" → <var>position</var> ]».</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultwriter-release\" id=\"ref-for-writablestreamdefaultwriter-release①\">Release</a> <var>writer</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemWritableFileStream/truncate(size)",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemwritablefilestream-truncate",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemWritableFileStream\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemwritablefilestream-truncate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>truncate(<var>size</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>writer</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-get-a-writer\" id=\"ref-for-writablestream-get-a-writer②\">getting a writer</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultwriter-write-a-chunk\" id=\"ref-for-writablestreamdefaultwriter-write-a-chunk②\">writing a chunk</a> to <var>writer</var> given\n  «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-type\" id=\"ref-for-dom-writeparams-type⑥\">type</a></code>\" → \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writecommandtype-truncate\" id=\"ref-for-dom-writecommandtype-truncate④\">truncate</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-writeparams-size\" id=\"ref-for-dom-writeparams-size③\">size</a></code>\" → <var>size</var> ]».</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultwriter-release\" id=\"ref-for-writablestreamdefaultwriter-release②\">Release</a> <var>writer</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a new FileSystemSyncAccessHandle",
+      "href": "https://fs.spec.whatwg.org/#create-a-new-filesystemsyncaccesshandle",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-local-lt=\"creating a new FileSystemSyncAccessHandle\" data-noexport=\"\" id=\"create-a-new-filesystemsyncaccesshandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a new <code>FileSystemSyncAccessHandle</code></dfn> given a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file②②\">file entry</a> <var>file</var> in a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm⑤\">Realm</a> <var>realm</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>handle</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑤\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle\" id=\"ref-for-filesystemsyncaccesshandle①④\">FileSystemSyncAccessHandle</a></code> in <var>realm</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file\">[[file]]</a> to <var>file</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-state\" id=\"ref-for-filesystemsyncaccesshandle-state\">[[state]]</a> to \"<code>open</code>\".</p>"
+        },
+        {
+          "html": "<p>Return <var>handle</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemSyncAccessHandle/read(buffer, FileSystemReadWriteOptions: options)",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-read-buffer-filesystemreadwriteoptions-options",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-read-buffer-filesystemreadwriteoptions-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>read(<var>buffer</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dictdef-filesystemreadwriteoptions\" id=\"ref-for-dictdef-filesystemreadwriteoptions②\">FileSystemReadWriteOptions</a></code>: <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-state\" id=\"ref-for-filesystemsyncaccesshandle-state①\">[[state]]</a> is \"<code>closed</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑨\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>bufferSize</var> be <var>buffer</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-byte-length\" id=\"ref-for-buffersource-byte-length\">byte length</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>fileContents</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file①\">[[file]]</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data⑤\">binary data</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>fileSize</var> be <var>fileContents</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length⑤\">length</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>readStart</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-filesystemreadwriteoptions-at\" id=\"ref-for-dom-filesystemreadwriteoptions-at①\">at</a></code>\"] if <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-filesystemreadwriteoptions-at\" id=\"ref-for-dom-filesystemreadwriteoptions-at②\">at</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>; otherwise <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file-position-cursor\" id=\"ref-for-filesystemsyncaccesshandle-file-position-cursor\">file position cursor</a>.</p>"
+        },
+        {
+          "html": "<p>If the underlying file system does not support reading from a file offset of <var>readStart</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑥\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-read-buffer-filesystemreadwriteoptions-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>read(<var>buffer</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dictdef-filesystemreadwriteoptions\" id=\"ref-for-dictdef-filesystemreadwriteoptions②\">FileSystemReadWriteOptions</a></code>: <var>options</var>)</code></dfn> method steps are:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file-position-cursor\" id=\"ref-for-filesystemsyncaccesshandle-file-position-cursor①\">file position cursor</a> to <var>fileSize</var>.</p>"
+            },
+            {
+              "html": "<p>Return 0.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>readEnd</var> be <var>readStart</var> + (<var>bufferSize</var> − 1).</p>"
+        },
+        {
+          "html": "<p>If <var>readEnd</var> is larger than <var>fileSize</var>, set <var>readEnd</var> to <var>fileSize</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>bytes</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑨\">byte sequence</a> containing the bytes from <var>readStart</var> to <var>readEnd</var> of <var>fileContents</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be <var>bytes</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length⑥\">length</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-read-buffer-filesystemreadwriteoptions-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>read(<var>buffer</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dictdef-filesystemreadwriteoptions\" id=\"ref-for-dictdef-filesystemreadwriteoptions②\">FileSystemReadWriteOptions</a></code>: <var>options</var>)</code></dfn> method steps are:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If there were partial reads and the number of bytes that were read into <var>bytes</var> is known,\n set <var>result</var> to the number of read bytes.</p>"
+            },
+            {
+              "html": "<p>Otherwise set <var>result</var> to 0.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>arrayBuffer</var> be <var>buffer</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-underlying-buffer\" id=\"ref-for-buffersource-underlying-buffer\">underlying buffer</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybuffer-write\" id=\"ref-for-arraybuffer-write\">Write</a> <var>bytes</var> into <var>arrayBuffer</var>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file-position-cursor\" id=\"ref-for-filesystemsyncaccesshandle-file-position-cursor②\">file position cursor</a> to <var>readStart</var> + <var>result</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemSyncAccessHandle/write(buffer, FileSystemReadWriteOptions: options)",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-write-buffer-filesystemreadwriteoptions-options",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-write-buffer-filesystemreadwriteoptions-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>write(<var>buffer</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dictdef-filesystemreadwriteoptions\" id=\"ref-for-dictdef-filesystemreadwriteoptions③\">FileSystemReadWriteOptions</a></code>: <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-state\" id=\"ref-for-filesystemsyncaccesshandle-state②\">[[state]]</a> is \"<code>closed</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⓪\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>writePosition</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-filesystemreadwriteoptions-at\" id=\"ref-for-dom-filesystemreadwriteoptions-at④\">at</a></code>\"] if <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dom-filesystemreadwriteoptions-at\" id=\"ref-for-dom-filesystemreadwriteoptions-at⑤\">at</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exists</a>; otherwise <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file-position-cursor\" id=\"ref-for-filesystemsyncaccesshandle-file-position-cursor③\">file position cursor</a>.</p>"
+        },
+        {
+          "html": "<p>If the underlying file system does not support writing to a file offset of <var>writePosition</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>fileContents</var> be a copy of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file②\">[[file]]</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data⑥\">binary data</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>oldSize</var> be <var>fileContents</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length⑦\">length</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>bufferSize</var> be <var>buffer</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-byte-length\" id=\"ref-for-buffersource-byte-length①\">byte length</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>writePosition</var> is larger than <var>oldSize</var>,\n append <var>writePosition</var> − <var>oldSize</var> 0x00 (NUL) bytes to the end of <var>fileContents</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>head</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⓪\">byte sequence</a> containing the first <var>writePosition</var> bytes of <var>fileContents</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>tail</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①①\">byte sequence</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-write-buffer-filesystemreadwriteoptions-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>write(<var>buffer</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dictdef-filesystemreadwriteoptions\" id=\"ref-for-dictdef-filesystemreadwriteoptions③\">FileSystemReadWriteOptions</a></code>: <var>options</var>)</code></dfn> method steps are:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>tail</var> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①②\">byte sequence</a> containing the last <var>oldSize</var> − (<var>writePosition</var> + <var>bufferSize</var>) bytes of <var>fileContents</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>newSize</var> be <var>head</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length⑧\">length</a> + <var>bufferSize</var> + <var>tail</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length⑨\">length</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>newSize</var> − <var>oldSize</var> exceeds the available <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-quota\" id=\"ref-for-storage-quota④\">storage quota</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror\" id=\"ref-for-quotaexceedederror②\">QuotaExceededError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file③\">[[file]]</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data⑦\">binary data</a> to the concatenation of <var>head</var>, the contents of <var>buffer</var> and <var>tail</var>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-write-buffer-filesystemreadwriteoptions-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>write(<var>buffer</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dictdef-filesystemreadwriteoptions\" id=\"ref-for-dictdef-filesystemreadwriteoptions③\">FileSystemReadWriteOptions</a></code>: <var>options</var>)</code></dfn> method steps are:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-write-buffer-filesystemreadwriteoptions-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>write(<var>buffer</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#dictdef-filesystemreadwriteoptions\" id=\"ref-for-dictdef-filesystemreadwriteoptions③\">FileSystemReadWriteOptions</a></code>: <var>options</var>)</code></dfn> method steps are:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>bytesWritten</var> be the number of bytes that were written from <var>buffer</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file-position-cursor\" id=\"ref-for-filesystemsyncaccesshandle-file-position-cursor④\">file position cursor</a> to <var>writePosition</var> + <var>bytesWritten</var>.</p>"
+                },
+                {
+                  "html": "<p>Return <var>bytesWritten</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③②\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file-position-cursor\" id=\"ref-for-filesystemsyncaccesshandle-file-position-cursor⑤\">file position cursor</a> to <var>writePosition</var> + <var>bufferSize</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>bufferSize</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemSyncAccessHandle/truncate(newSize)",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-truncate",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-truncate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>truncate(<var>newSize</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-state\" id=\"ref-for-filesystemsyncaccesshandle-state③\">[[state]]</a> is \"<code>closed</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③③\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>fileContents</var> be a copy of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file⑤\">[[file]]</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data⑨\">binary data</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>oldSize</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length①⓪\">length</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file⑥\">[[file]]</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data①⓪\">binary data</a>.</p>"
+        },
+        {
+          "html": "<p>If the underlying file system does not support setting a file’s size to <var>newSize</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-truncate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>truncate(<var>newSize</var>)</code></dfn> method steps are:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>newSize</var> − <var>oldSize</var> exceeds the available <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-quota\" id=\"ref-for-storage-quota⑤\">storage quota</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror\" id=\"ref-for-quotaexceedederror③\">QuotaExceededError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③④\">DOMException</a></code>.</p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file⑦\">[[file]]</a>'s to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①③\">byte sequence</a> formed by concatenating <var>fileContents</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①④\">byte sequence</a> containing <var>newSize</var> − <var>oldSize</var> 0x00 bytes.</p>"
+            },
+            {
+              "html": "<p>If the operations modifying the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file⑧\">[[file]]</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data①①\">binary data</a> in the previous steps failed, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑤\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-truncate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>truncate(<var>newSize</var>)</code></dfn> method steps are:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file⑨\">[[file]]</a>'s to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑤\">byte sequence</a> containing the first <var>newSize</var> bytes in <var>fileContents</var>.</p>"
+            },
+            {
+              "html": "<p>If the operations modifying the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file①⓪\">[[file]]</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data①②\">binary data</a> in the previous steps failed, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑥\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file-position-cursor\" id=\"ref-for-filesystemsyncaccesshandle-file-position-cursor⑥\">file position cursor</a> is greater than <var>newSize</var>, then set <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file-position-cursor\" id=\"ref-for-filesystemsyncaccesshandle-file-position-cursor⑦\">file position cursor</a> to <var>newSize</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemSyncAccessHandle/getSize()",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-getsize",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-getsize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getSize()</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-state\" id=\"ref-for-filesystemsyncaccesshandle-state④\">[[state]]</a> is \"<code>closed</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①②\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑦\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file①①\">[[file]]</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-binary-data\" id=\"ref-for-file-entry-binary-data①③\">binary data</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length①①\">length</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemSyncAccessHandle/flush()",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-flush",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-flush\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>flush()</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-state\" id=\"ref-for-filesystemsyncaccesshandle-state⑤\">[[state]]</a> is \"<code>closed</code>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①③\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑧\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑧\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Attempt to transfer all cached modifications of the file’s content to the\n file system’s underlying storage device.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FileSystemSyncAccessHandle/close()",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-close",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-close\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>close()</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-state\" id=\"ref-for-filesystemsyncaccesshandle-state⑥\">[[state]]</a> is \"<code>closed</code>\", return.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-state\" id=\"ref-for-filesystemsyncaccesshandle-state⑦\">[[state]]</a> to \"<code>closed</code>\".</p>"
+        },
+        {
+          "html": "<p>Set <var>lockReleased</var> to false.</p>"
+        },
+        {
+          "html": "<p>Let <var>file</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file\" id=\"ref-for-filesystemsyncaccesshandle-file①③\">[[file]]</a>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemSyncAccessHandle\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-filesystemsyncaccesshandle-close\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>close()</code></dfn> method steps are:",
+          "rationale": "release",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-entry-lock-release\" id=\"ref-for-file-entry-lock-release③\">Release the lock</a> on <var>file</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>lockReleased</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#pause\" id=\"ref-for-pause\">Pause</a> until <var>lockReleased</var> is true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "StorageManager/getDirectory()",
+      "href": "https://fs.spec.whatwg.org/#dom-storagemanager-getdirectory",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storagemanager-getdirectory\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectory()</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>environment</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object\">current settings object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>map</var> be the result of running <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#obtain-a-local-storage-bottle-map\" id=\"ref-for-obtain-a-local-storage-bottle-map\">obtain a local storage bottle map</a> with <var>environment</var> and <code>\"fileSystem\"</code>. If this returns failure,\n return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⑨\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storagemanager-getdirectory\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getDirectory()</code></dfn> method steps are:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>dir</var> be a new <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory\" id=\"ref-for-directory①⑨\">directory entry</a> whose <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-query-access\" id=\"ref-for-entry-query-access①①\">query access</a> and <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-request-access\" id=\"ref-for-entry-request-access①⓪\">request access</a> algorithms always return\n a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result\" id=\"ref-for-file-system-access-result④\">file system access result</a> with a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-permission-state\" id=\"ref-for-file-system-access-result-permission-state①③\">permission state</a> of \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted①①\">granted</a></code>\" and\n with an <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-access-result-error-name\" id=\"ref-for-file-system-access-result-error-name①②\">error name</a> of the empty string.</p>"
+            },
+            {
+              "html": "<p>Set <var>dir</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry-name\" id=\"ref-for-entry-name①⑧\">name</a> to the empty string.</p>"
+            },
+            {
+              "html": "<p>Set <var>dir</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory-entry-children\" id=\"ref-for-directory-entry-children①①\">children</a> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">set</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>map</var>[\"root\"] to <var>dir</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>root</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> opaque <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑥\">string</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>path</var> be « the empty string ».</p>"
+        },
+        {
+          "html": "<p>Let <var>handle</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#creating-a-new-filesystemdirectoryhandle\" id=\"ref-for-creating-a-new-filesystemdirectoryhandle\">creating a new <code>FileSystemDirectoryHandle</code></a>.\n given <var>root</var> and <var>path</var> in the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm\">current realm</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#locating-an-entry\" id=\"ref-for-locating-an-entry②②\">locating an entry</a> given <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator④②\">locator</a> returns a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory\" id=\"ref-for-directory②⓪\">directory entry</a> that is <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file-system-entry-the-same-entry-as\" id=\"ref-for-file-system-entry-the-same-entry-as\">the same entry as</a> <var>map</var>[\"root\"].</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> <var>handle</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,745 @@
+{
+  "spec": {
+    "title": "Presentation API",
+    "url": "https://w3c.github.io/presentation-api/"
+  },
+  "algorithms": [
+    {
+      "html": "When the <a href=\"https://w3c.github.io/presentation-api/#dom-presentationrequest\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationrequest-14\"><code>PresentationRequest</code></a> constructor is called, the\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-user-agent-11\">controlling user agent</a> <em class=\"rfc2119\">MUST</em> run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the document object's <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-sandboxing-flag-set\" id=\"ref-for-index-term-active-sandboxing-flag-set-for-document-1\">active sandboxing flag set</a> has the <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#sandboxed-presentation-browsing-context-flag\" id=\"ref-for-index-term-sandboxed-presentation-browsing-context-flag-1\">sandboxed presentation browsing context flag</a>\n            set, then throw a <a data-link-type=\"idl\" data-lt=\"SecurityError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-index-term-securityerror-exception-1\"><code>SecurityError</code></a> and abort these steps."
+        },
+        {
+          "html": "If <var>urls</var> is an empty sequence, then\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-index-term-throw-for-exception-1\">throw</a> a <a data-link-type=\"idl\" data-lt=\"NotSupportedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-index-term-notsupportederror-exception-1\"><code>NotSupportedError</code></a> and abort all remaining\n            steps."
+        },
+        {
+          "html": "If a single <var>url</var> was provided, let <var>urls</var> be\n            a one item array containing <var>url</var>."
+        },
+        {
+          "html": "Let <var>presentationUrls</var> be an empty list of URLs."
+        },
+        {
+          "html": "For each URL <var>U</var> in <var>urls</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>A</var> be an absolute URL that is the result of\n                parsing <var>U</var> relative to the API base URL specified by\n                the <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-index-term-current-settings-object-1\">current settings object</a>."
+            },
+            {
+              "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-parse-a-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-parse-a-url-1\">parse a URL</a> algorithm failed, then\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-index-term-throw-for-exception-2\">throw</a> a <a data-link-type=\"idl\" data-lt=\"SyntaxError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-index-term-syntaxerror-exception-1\"><code>SyntaxError</code></a> exception and abort all\n                remaining steps."
+            },
+            {
+              "html": "If <var>A</var>'s scheme is supported by the <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-user-agent-12\">controlling\n                user agent</a>, add <var>A</var> to\n                <var>presentationUrls</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>presentationUrls</var> is an empty list, then throw a\n            <a data-link-type=\"idl\" data-lt=\"NotSupportedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-index-term-notsupportederror-exception-2\"><code>NotSupportedError</code></a> and abort all remaining steps."
+        },
+        {
+          "html": "If any member of <var>presentationUrls</var> is not a\n            <a data-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-index-term-potentially-trustworthy-url-1\">potentially trustworthy URL</a>, then throw a <a data-link-type=\"idl\" data-lt=\"SecurityError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-index-term-securityerror-exception-2\"><code>SecurityError</code></a>\n            and abort these steps."
+        },
+        {
+          "html": "Construct a new <a href=\"https://w3c.github.io/presentation-api/#dom-presentationrequest\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationrequest-16\"><code>PresentationRequest</code></a> object with\n            <var>presentationUrls</var> as its <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-request-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-request-url-2\">presentation request URLs</a>\n            and return it."
+        }
+      ]
+    },
+    {
+      "name": "PresentationRequest/start()",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-start",
+      "html": "When the <code><dfn data-dfn-for=\"PresentationRequest\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-presentationrequest-start\" data-idl=\"operation\" data-title=\"start\" data-type=\"Promise\" data-lt=\"start()\" data-local-lt=\"PresentationRequest.start|PresentationRequest.start()|start\" tabindex=\"0\" aria-haspopup=\"dialog\">start</dfn></code> method is called, the\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-2\">user agent</a> <em class=\"rfc2119\">MUST</em> run the following steps to <dfn id=\"dfn-select-a-presentation-display\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">select a\n            presentation display</dfn>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the document's <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-index-term-active-window-for-navigable-1\">active window</a> does not have\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-index-term-transient-activation-1\">transient activation</a>, return a <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-index-term-promise-interface-7\"><code>Promise</code></a> rejected with an\n            <a data-link-type=\"idl\" data-lt=\"InvalidAccessError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\" id=\"ref-for-index-term-invalidaccesserror-exception-1\"><code>InvalidAccessError</code></a> exception and abort these steps."
+        },
+        {
+          "html": "Let <var>topContext</var> be the <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-index-term-top-level-browsing-context-1\">top-level browsing\n            context</a> of the <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-browsing-context-16\">controlling browsing context</a>."
+        },
+        {
+          "html": "If there is already an unsettled <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-index-term-promise-interface-8\"><code>Promise</code></a> from a previous\n            call to <a href=\"https://w3c.github.io/presentation-api/#dom-presentationrequest-start\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationrequest-start-7\"><code>start</code></a> in\n            <var>topContext</var> or any <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\" id=\"ref-for-index-term-browsing-context-4\">browsing context</a> in the\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#descendant-navigables\" id=\"ref-for-index-term-descendant-navigables-for-document-1\">descendant navigables</a> of <var>topContext</var>, return\n            a new <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-index-term-promise-interface-9\"><code>Promise</code></a> rejected with an <a data-link-type=\"idl\" data-lt=\"OperationError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-index-term-operationerror-exception-1\"><code>OperationError</code></a> exception and\n            abort all remaining steps."
+        },
+        {
+          "html": "Let <var>P</var> be a new <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-index-term-promise-interface-10\"><code>Promise</code></a>."
+        },
+        {
+          "html": "Return <var>P</var>, but continue running these steps <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-index-term-in-parallel-1\">in\n            parallel</a>."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-3\">user agent</a> is not <a data-lt=\"monitor the list of available presentation displays\" href=\"https://w3c.github.io/presentation-api/#dfn-monitor-the-list-of-available-presentation-displays\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-presentation-displays-1\">monitoring\n            the list of available presentation displays</a>, run the steps to\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-monitor-the-list-of-available-presentation-displays\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-presentation-displays-2\">monitor the list of available presentation displays</a> <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-index-term-in-parallel-2\">in\n            parallel</a>."
+        },
+        {
+          "html": "Let <var>presentationUrls</var> be the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-request-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-request-url-3\">presentation request\n            URLs</a> of <var>presentationRequest</var>."
+        },
+        {
+          "html": "Request user permission for the use of a <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-display\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-display-10\">presentation\n            display</a> and selection of one presentation display."
+        },
+        {
+          "html": "If either of the following is true:\n              Then run the following steps:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-rejectpromise\" id=\"ref-for-index-term-rejected-2\">Reject</a> <var>P</var> with a <a data-link-type=\"idl\" data-lt=\"NotFoundError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-index-term-notfounderror-exception-1\"><code>NotFoundError</code></a>\n                  exception."
+            },
+            {
+              "html": "Abort all remaining steps."
+            }
+          ],
+          "ignored": [
+            "The list of available presentation displays is empty and will remain so before the request for user permission is completed. No member in the list of available presentation displays is an available presentation display for any member of presentationUrls."
+          ]
+        },
+        {
+          "html": "If the user <em>denies permission</em> to use a display, reject\n            <var>P</var> with an <a data-link-type=\"idl\" data-lt=\"NotAllowedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-index-term-notallowederror-exception-1\"><code>NotAllowedError</code></a> exception, and abort all\n            remaining steps."
+        },
+        {
+          "html": "Otherwise, the user <em>grants permission</em> to use a\n            display; let <var>D</var> be that display."
+        },
+        {
+          "html": "Run the steps to <a href=\"https://w3c.github.io/presentation-api/#dfn-start-a-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-start-a-presentation-connection-1\">start a presentation connection</a> with\n            <var>presentationRequest</var>, <var>D</var>, and <var>P</var>."
+        }
+      ]
+    },
+    {
+      "name": "starting a presentation from a default presentation request",
+      "href": "https://w3c.github.io/presentation-api/#dfn-starting-a-presentation-from-a-default-presentation-request",
+      "html": "When the user expresses an intent to start presentation of a\n            document on a presentation display using the browser chrome (via a\n            dedicated button, user gesture, or other signal), that user agent\n            <em class=\"rfc2119\">MUST</em> run the following steps to <dfn data-lt=\"starting a presentation from a default presentation request|start a presentation from a default presentation request\" id=\"dfn-starting-a-presentation-from-a-default-presentation-request\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">start\n            a presentation from a default presentation request</dfn>. If no\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-default-presentation-request\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-default-presentation-request-6\">default presentation request</a> is set on the document, these\n            steps <em class=\"rfc2119\">MUST</em> not be run.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>presentationUrls</var> be the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-request-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-request-url-4\">presentation request\n            URLs</a> of <var>presentationRequest</var>."
+        },
+        {
+          "html": "If there is no <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-request-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-request-url-5\">presentation request URL</a> for\n            <var>presentationRequest</var> for which <var>D</var> is an\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-available-presentation-display\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-available-presentation-display-2\">available presentation display</a>, then abort these steps."
+        },
+        {
+          "html": "Run the steps to <a href=\"https://w3c.github.io/presentation-api/#dfn-start-a-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-start-a-presentation-connection-2\">start a presentation connection</a> with\n            <var>presentationRequest</var> and <var>D</var>."
+        }
+      ]
+    },
+    {
+      "name": "start a presentation connection",
+      "href": "https://w3c.github.io/presentation-api/#dfn-start-a-presentation-connection",
+      "html": "When the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-4\">user agent</a> is to <dfn id=\"dfn-start-a-presentation-connection\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">start a presentation\n            connection</dfn>, it <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>I</var> be a new <a href=\"https://w3c.github.io/presentation-api/#dfn-valid-presentation-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-valid-presentation-identifier-1\">valid presentation identifier</a>\n            unique among all <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-identifier-4\">presentation identifiers</a> for known\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-11\">presentation connections</a> in the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-controlled-presentations\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-controlled-presentations-2\">set of controlled\n            presentations</a>. To avoid fingerprinting, implementations <em class=\"rfc2119\">SHOULD</em>\n            set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-identifier-5\">presentation identifier</a> to a <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc4122#section-1\" id=\"ref-for-index-term-uuid-2\">UUID</a> generated\n            by following forms 4.4 or 4.5 of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/presentation-api/#bib-rfc4122\" title=\"A Universally Unique IDentifier (UUID) URN Namespace\">rfc4122</a></cite>]."
+        },
+        {
+          "html": "Create a new <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-15\"><code>PresentationConnection</code></a> <var>S</var>."
+        },
+        {
+          "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-identifier-6\">presentation identifier</a> of <var>S</var> to <var>\n              I</var>."
+        },
+        {
+          "html": "Let <var>presentationUrls</var> be the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-request-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-request-url-6\">presentation request\n            URLs</a> of <var>presentationRequest</var>."
+        },
+        {
+          "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-url-6\">presentation URL</a> for <var>S</var> to the first\n            <var>presentationUrl</var> in <var>presentationUrls</var> for which\n            there exists an entry <var>(presentationUrl, D)</var> in the\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-list-of-available-presentation-displays\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-available-presentation-displays-3\">list of available presentation displays</a>."
+        },
+        {
+          "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-1\">presentation connection state</a> of <var>S</var> to\n            <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connecting-1\"><code>connecting</code></a>."
+        },
+        {
+          "html": "Add <var>S</var> to the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-controlled-presentations\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-controlled-presentations-3\">set of controlled presentations</a>."
+        },
+        {
+          "html": "If <var>P</var> is provided, <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-promise-resolve-functions\" id=\"ref-for-index-term-resolved-2\">resolve</a> <var>P</var> with\n            <var>S</var>."
+        },
+        {
+          "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-1\">Queue a task</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-index-term-fire-an-event-1\">fire an event</a> named <a href=\"https://w3c.github.io/presentation-api/#dfn-connectionavailable\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-connectionavailable-3\"><code>connectionavailable</code></a>, that uses the\n              <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionavailableevent-3\"><code>PresentationConnectionAvailableEvent</code></a> interface, with the\n              <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent-connection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionavailableevent-connection-1\"><code>connection</code></a> attribute\n              initialized to <var>S</var>, at <var>presentationRequest</var>.\n              The event must not bubble and must not be cancelable."
+        },
+        {
+          "html": "Let <var>U</var> be the user agent connected to D."
+        },
+        {
+          "html": "If the next step fails, abort all remaining steps and <a href=\"https://w3c.github.io/presentation-api/#dfn-close-the-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-close-the-presentation-connection-1\">close\n            the presentation connection</a> <var>S</var> with\n              <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason-error\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionclosereason-error-1\"><code>error</code></a> as\n              <var>closeReason</var>, and a human readable message describing\n              the failure as <var>closeMessage</var>."
+        },
+        {
+          "html": "Using an implementation specific mechanism, tell <var>U</var>\n            to <a href=\"https://w3c.github.io/presentation-api/#dfn-create-a-receiving-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-create-a-receiving-browsing-context-3\">create a receiving browsing context</a> with <var>D</var>,\n            <var>presentationUrl</var>, and <var>I</var> as parameters."
+        },
+        {
+          "html": "<a href=\"https://w3c.github.io/presentation-api/#dfn-establish-a-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-establish-a-presentation-connection-1\">Establish a presentation connection</a> with <var>S</var>."
+        }
+      ]
+    },
+    {
+      "name": "PresentationRequest/reconnect()",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-reconnect",
+      "html": "When the <dfn data-dfn-for=\"PresentationRequest\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-presentationrequest-reconnect\" data-idl=\"operation\" data-title=\"reconnect\" data-type=\"Promise\" data-lt=\"reconnect()|reconnect(presentationId)\" data-local-lt=\"PresentationRequest.reconnect|PresentationRequest.reconnect()|reconnect\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>reconnect</code></dfn>\n            method is called, the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-5\">user agent</a> <em class=\"rfc2119\">MUST</em> run the following\n            steps to reconnect to a presentation:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>P</var> be a new <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-index-term-promise-interface-13\"><code>Promise</code></a>."
+        },
+        {
+          "html": "Return <var>P</var>, but continue running these steps in\n            parallel."
+        },
+        {
+          "html": "Search the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-controlled-presentations\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-controlled-presentations-4\">set of controlled presentations</a> for a\n            <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-16\"><code>PresentationConnection</code></a> that meets the following criteria:\n              <ul>\n                <li>Its <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-browsing-context-17\">controlling browsing context</a> is the current <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\" id=\"ref-for-index-term-browsing-context-5\">\n                  browsing context</a>\n                </li>\n                <li>Its <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-2\">presentation connection state</a> is not\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-terminated\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-terminated-1\"><code>terminated</code></a>\n                </li>\n                <li>Its <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-url-7\">presentation URL</a> is equal to one of the\n                <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-request-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-request-url-7\">presentation request URLs</a> of\n                <var>presentationRequest</var>\n                </li>\n                <li>Its <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-identifier-8\">presentation identifier</a> is equal to\n                <var>presentationId</var>\n                </li>\n              </ul>"
+        },
+        {
+          "html": "If such a <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-17\"><code>PresentationConnection</code></a> exists, run the\n            following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>existingConnection</var> be that\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-18\"><code>PresentationConnection</code></a>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-promise-resolve-functions\" id=\"ref-for-index-term-resolved-3\">Resolve</a> <var>P</var> with\n                  <var>existingConnection</var>."
+            },
+            {
+              "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-3\">presentation connection state</a> of\n                <var>existingConnection</var> is <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connecting-2\"><code>connecting</code></a> or\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connected-2\"><code>connected</code></a>,\n                then abort all remaining steps."
+            },
+            {
+              "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-4\">presentation connection state</a> of\n                <var>existingConnection</var> to <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connecting-3\"><code>connecting</code></a>."
+            },
+            {
+              "html": "<a href=\"https://w3c.github.io/presentation-api/#dfn-establish-a-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-establish-a-presentation-connection-2\">Establish a presentation connection</a> with\n                  <var>existingConnection</var>."
+            },
+            {
+              "html": "Abort all remaining steps."
+            }
+          ]
+        },
+        {
+          "html": "Search the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-controlled-presentations\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-controlled-presentations-5\">set of controlled presentations</a> for the first\n            <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-19\"><code>PresentationConnection</code></a> that meets the following criteria:\n              <ul>\n                <li>Its <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-browsing-context-18\">controlling browsing context</a> is not the current\n                <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\" id=\"ref-for-index-term-browsing-context-6\">browsing context</a>\n                </li>\n                <li>Its <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-5\">presentation connection state</a> is not\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-terminated\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-terminated-2\"><code>terminated</code></a>\n                </li>\n                <li>Its <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-url-8\">presentation URL</a> is equal to one of the\n                <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-request-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-request-url-8\">presentation request URLs</a> of\n                <var>presentationRequest</var>\n                </li>\n                <li>Its <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-identifier-9\">presentation identifier</a> is equal to\n                <var>presentationId</var>\n                </li>\n              </ul>"
+        },
+        {
+          "html": "If such a <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-20\"><code>PresentationConnection</code></a> exists, run the\n            following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>existingConnection</var> be that\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-21\"><code>PresentationConnection</code></a>."
+            },
+            {
+              "html": "Create a new <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-22\"><code>PresentationConnection</code></a>\n                <var>newConnection</var>."
+            },
+            {
+              "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-identifier-10\">presentation identifier</a> of\n                <var>newConnection</var> to <var>presentationId</var>."
+            },
+            {
+              "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-url-9\">presentation URL</a> of <var>newConnection</var>\n                to the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-url-10\">presentation URL</a> of\n                <var>existingConnection</var>."
+            },
+            {
+              "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-6\">presentation connection state</a> of\n                <var>newConnection</var> to <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connecting-4\"><code>connecting</code></a>."
+            },
+            {
+              "html": "Add <var>newConnection</var> to the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-controlled-presentations\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-controlled-presentations-6\">set of controlled\n                presentations</a>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-promise-resolve-functions\" id=\"ref-for-index-term-resolved-4\">Resolve</a> <var>P</var> with <var>newConnection</var>."
+            },
+            {
+              "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-2\">Queue a task</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-index-term-fire-an-event-2\">fire an event</a> named\n                  <a href=\"https://w3c.github.io/presentation-api/#dfn-connectionavailable\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-connectionavailable-4\"><code>connectionavailable</code></a>, that uses the\n                  <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionavailableevent-4\"><code>PresentationConnectionAvailableEvent</code></a> interface, with\n                  the <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent-connection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionavailableevent-connection-2\"><code>connection</code></a>\n                  attribute initialized to <var>newConnection</var>, at\n                  <var>presentationRequest</var>. The event must not bubble and\n                  must not be cancelable."
+            },
+            {
+              "html": "<a href=\"https://w3c.github.io/presentation-api/#dfn-establish-a-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-establish-a-presentation-connection-3\">Establish a presentation connection</a> with\n                  <var>newConnection</var>."
+            },
+            {
+              "html": "Abort all remaining steps."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-rejectpromise\" id=\"ref-for-index-term-rejected-3\">Reject</a> <var>P</var> with a <a data-link-type=\"idl\" data-lt=\"NotFoundError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-index-term-notfounderror-exception-2\"><code>NotFoundError</code></a> exception."
+        }
+      ]
+    },
+    {
+      "name": "PresentationRequest/getAvailability()",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationrequest-getavailability",
+      "html": "When the <dfn data-dfn-for=\"PresentationRequest\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-presentationrequest-getavailability\" data-idl=\"operation\" data-title=\"getAvailability\" data-type=\"Promise\" data-lt=\"getAvailability()\" data-local-lt=\"PresentationRequest.getAvailability|PresentationRequest.getAvailability()|getAvailability\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>getAvailability</code></dfn> method is called, the\n            user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If there is an unsettled <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-index-term-promise-interface-16\"><code>Promise</code></a> from a previous call to\n            <a href=\"https://w3c.github.io/presentation-api/#dom-presentationrequest-getavailability\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationrequest-getavailability-7\"><code>getAvailability</code></a> on <var>\n              presentationRequest</var>, return that <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-index-term-promise-interface-17\"><code>Promise</code></a> and abort\n              these steps."
+        },
+        {
+          "html": "Otherwise, let <var>P</var> be a new <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-index-term-promise-interface-18\"><code>Promise</code></a> constructed in\n            the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-code-realms\" id=\"ref-for-index-term-javascript-realm-6\">JavaScript realm</a> of <var>presentationRequest</var>."
+        },
+        {
+          "html": "Return <var>P</var>, but continue running these steps <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-index-term-in-parallel-3\">in\n            parallel</a>."
+        },
+        {
+          "html": "If the user agent is unable to continuously <a href=\"https://w3c.github.io/presentation-api/#dfn-monitor-the-list-of-available-presentation-displays\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-presentation-displays-9\">monitor the list\n            of available presentation displays</a> in the background, but can\n            later find presentation displays in order to start a connection,\n            then:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-rejectpromise\" id=\"ref-for-index-term-rejected-5\">Reject</a> <var>P</var> with a <a data-link-type=\"idl\" data-lt=\"NotSupportedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-index-term-notsupportederror-exception-3\"><code>NotSupportedError</code></a>\n                  exception."
+            },
+            {
+              "html": "Abort all the remaining steps."
+            }
+          ]
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-display-availability\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-display-availability-3\">presentation display availability</a> for\n            <var>presentationRequest</var> is not <code>null</code>, then:",
+          "rationale": "resolve",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-promise-resolve-functions\" id=\"ref-for-index-term-resolved-5\">Resolve</a> <var>P</var> with the request's\n                  <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-display-availability\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-display-availability-4\">presentation display availability</a>."
+            },
+            {
+              "html": "Abort all the remaining steps."
+            }
+          ]
+        },
+        {
+          "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-display-availability\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-display-availability-5\">presentation display availability</a> for\n            <var>presentationRequest</var> to a newly created\n            <a href=\"https://w3c.github.io/presentation-api/#dom-presentationavailability\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationavailability-11\"><code>PresentationAvailability</code></a> object constructed in the\n            <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-code-realms\" id=\"ref-for-index-term-javascript-realm-7\">JavaScript realm</a> of <var>presentationRequest</var>, and let\n            <var>A</var> be that object."
+        },
+        {
+          "html": "Create a tuple <em>(<var>A</var>,\n            <var>presentationUrls</var>)</em> and add it to the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-presentation-availability-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-presentation-availability-objects-4\">set of\n            presentation availability objects</a>."
+        },
+        {
+          "html": "Run the algorithm to <a href=\"https://w3c.github.io/presentation-api/#dfn-monitor-the-list-of-available-presentation-displays\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-presentation-displays-10\">monitor the list of available\n            presentation displays</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-promise-resolve-functions\" id=\"ref-for-index-term-resolved-6\">Resolve</a> <var>P</var> with <var>A</var>."
+        }
+      ]
+    },
+    {
+      "name": "monitor the list of available presentation displays",
+      "href": "https://w3c.github.io/presentation-api/#dfn-monitor-the-list-of-available-presentation-displays",
+      "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-presentation-availability-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-presentation-availability-objects-6\">set of presentation availability objects</a> is\n            non-empty, or there is a pending request to <a data-lt=\"start\" href=\"https://w3c.github.io/presentation-api/#dom-presentationrequest-start\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationrequest-start-9\">select a presentation\n            display</a>, the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-11\">user agent</a> <em class=\"rfc2119\">MUST</em> <dfn id=\"dfn-monitor-the-list-of-available-presentation-displays\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">monitor the list of\n            available presentation displays</dfn> by running the following\n            steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>availabilitySet</var> be a shallow copy of the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-presentation-availability-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-presentation-availability-objects-7\">set\n            of presentation availability objects</a>."
+        },
+        {
+          "html": "If there is a pending request to <a data-lt=\"start\" href=\"https://w3c.github.io/presentation-api/#dom-presentationrequest-start\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationrequest-start-10\">select a presentation\n            display</a> for a <a href=\"https://w3c.github.io/presentation-api/#dom-presentationrequest\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationrequest-24\"><code>PresentationRequest</code></a> and if the\n            <a href=\"https://w3c.github.io/presentation-api/#dom-presentationrequest\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationrequest-25\"><code>PresentationRequest</code></a>'s <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-display-availability\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-display-availability-6\">presentation display\n            availability</a> is <code>null</code>, then run the following\n            substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>A</var> be a newly created\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationavailability\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationavailability-12\"><code>PresentationAvailability</code></a> object."
+            },
+            {
+              "html": "Create a tuple <em>(<var>A</var>,\n                <var>presentationUrls</var>)</em> where\n                <var>presentationUrls</var> is the <a href=\"https://w3c.github.io/presentation-api/#dom-presentationrequest\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationrequest-26\"><code>PresentationRequest</code></a>'s\n                <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-request-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-request-url-11\">presentation request URLs</a> and add it to\n                <var>availabilitySet</var>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>newDisplays</var> be an empty list."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-12\">user agent</a> is unable to retrieve <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-display\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-display-17\">presentation\n            displays</a> (e.g., because the user has disabled this capability),\n            then skip the following step."
+        },
+        {
+          "html": "Retrieve <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-display\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-display-18\">presentation displays</a> (using an implementation\n            specific mechanism) and set <var>newDisplays</var> to this list."
+        },
+        {
+          "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-list-of-available-presentation-displays\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-available-presentation-displays-5\">list of available presentation displays</a> to the\n            empty list."
+        },
+        {
+          "html": "For each member <em>(<var>A</var>,\n            <var>availabilityUrls</var>)</em> of <var>availabilitySet</var>,\n            run the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>previousAvailability</var> to the value of\n                <var>A</var>'s <a href=\"https://w3c.github.io/presentation-api/#dom-presentationavailability-value\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationavailability-value-3\"><code>value</code></a> property."
+            },
+            {
+              "html": "Let <var>newAvailability</var> be <code>false</code>."
+            },
+            {
+              "html": "For each <var>availabilityUrl</var> in\n                <var>availabilityUrls</var>, run the following step:",
+              "rationale": "for",
+              "steps": [
+                {
+                  "html": "For each <var>display</var> in <var>newDisplays</var>,\n                    if <var>display</var> is an <a href=\"https://w3c.github.io/presentation-api/#dfn-available-presentation-display\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-available-presentation-display-5\">available presentation\n                    display</a> for <var>availabilityUrl</var>, then run the\n                    following steps:",
+                  "rationale": "insert",
+                  "steps": [
+                    {
+                      "html": "Insert a tuple <var>(availabilityUrl,\n                        display)</var> into the <a href=\"https://w3c.github.io/presentation-api/#dfn-list-of-available-presentation-displays\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-available-presentation-displays-6\">list of available\n                        presentation displays</a>, if no identical tuple\n                        already exists."
+                    },
+                    {
+                      "html": "Set <var>newAvailability</var> to\n                        <code>true</code>."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If <var>A</var>'s <a href=\"https://w3c.github.io/presentation-api/#dom-presentationavailability-value\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationavailability-value-4\"><code>value</code></a> property has not yet been\n                initialized, then set <var>A</var>'s <a href=\"https://w3c.github.io/presentation-api/#dom-presentationavailability-value\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationavailability-value-5\"><code>value</code></a> property to\n                <var>newAvailability</var> and skip the following step."
+            },
+            {
+              "html": "If <var>previousAvailability</var> is not equal to\n                <var>newAvailability</var>, then <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-3\">queue a task</a> to run the\n                following steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var>A</var>'s <a href=\"https://w3c.github.io/presentation-api/#dom-presentationavailability-value\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationavailability-value-6\"><code>value</code></a> property to\n                    <var>newAvailability</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-index-term-fire-an-event-3\">Fire an event</a> named <a href=\"https://w3c.github.io/presentation-api/#dfn-change\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-change-2\"><code>change</code></a> at <var>A</var>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "When a <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-display-availability\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-display-availability-7\">presentation display availability</a> object is eligible\n            for garbage collection, the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-13\">user agent</a> <em class=\"rfc2119\">SHOULD</em> run the\n            following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>A</var> be the newly deceased\n            <a href=\"https://w3c.github.io/presentation-api/#dom-presentationavailability\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationavailability-13\"><code>PresentationAvailability</code></a> object"
+        },
+        {
+          "html": "Find and remove any entry <em>(<var>A</var>,\n            <var>availabilityUrl</var>)</em> in the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-presentation-availability-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-presentation-availability-objects-8\">set of presentation\n            availability objects</a>."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-presentation-availability-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-presentation-availability-objects-9\">set of presentation availability objects</a> is now\n            empty and there is no pending request to <a data-lt=\"start\" href=\"https://w3c.github.io/presentation-api/#dom-presentationrequest-start\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationrequest-start-12\">select a presentation\n            display</a>, cancel any pending task to <a href=\"https://w3c.github.io/presentation-api/#dfn-monitor-the-list-of-available-presentation-displays\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-presentation-displays-12\">monitor the list of\n            available presentation displays</a> for power saving purposes, and\n            set the <a href=\"https://w3c.github.io/presentation-api/#dfn-list-of-available-presentation-displays\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-available-presentation-displays-7\">list of available presentation displays</a> to the empty\n            list."
+        }
+      ]
+    },
+    {
+      "name": "establish a presentation connection",
+      "href": "https://w3c.github.io/presentation-api/#dfn-establish-a-presentation-connection",
+      "html": "When the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-21\">user agent</a> is to <dfn id=\"dfn-establish-a-presentation-connection\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">establish a presentation\n            connection</dfn> using a <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-19\">presentation connection</a>, it <em class=\"rfc2119\">MUST</em>\n            run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-8\">presentation connection state</a> of\n            <var>presentationConnection</var> is not <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connecting-7\"><code>connecting</code></a>, then abort all\n            remaining steps."
+        },
+        {
+          "html": "Request connection of <var>presentationConnection</var> to the\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-browsing-context-23\">receiving browsing context</a>. The <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-identifier-12\">presentation\n            identifier</a> of <var>presentationConnection</var> <em class=\"rfc2119\">MUST</em> be sent\n            with this request."
+        },
+        {
+          "html": "If connection completes successfully, <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-4\">queue a task</a> to\n            run the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-9\">presentation connection state</a> of\n                <var>presentationConnection</var> to <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connected-6\"><code>connected</code></a>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-index-term-fire-an-event-6\">Fire an event</a> named <a class=\"PresentationConnectionEvent internalDFN\" href=\"https://w3c.github.io/presentation-api/#dfn-connect\" data-link-type=\"dfn\" id=\"ref-for-dfn-connect-1\"><code>connect</code></a> at\n                <var>presentationConnection</var>."
+            }
+          ]
+        },
+        {
+          "html": "If the connection cannot be completed, <a href=\"https://w3c.github.io/presentation-api/#dfn-close-the-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-close-the-presentation-connection-3\">close the\n            presentation connection</a> <var>S</var> with <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason-error\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionclosereason-error-2\"><code>error</code></a> as\n            <var>closeReason</var>, and a human readable message describing the\n            failure as <var>closeMessage</var>."
+        }
+      ]
+    },
+    {
+      "name": "send-algorithm",
+      "href": "https://w3c.github.io/presentation-api/#dfn-send-algorithm",
+      "html": "When the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-22\">user agent</a> is to <dfn data-lt=\"send-algorithm|send a message\" id=\"dfn-send-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">send\n            a message</dfn> through a <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-20\">presentation connection</a>, it <em class=\"rfc2119\">MUST</em>\n            run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection-state\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-state-2\"><code>state</code></a> property of\n            <var>presentationConnection</var> is not <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connected-7\"><code>connected</code></a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-index-term-throw-for-exception-3\">throw</a> an\n            <a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-index-term-invalidstateerror-exception-1\"><code>InvalidStateError</code></a> exception."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-start-closing-the-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-start-closing-the-presentation-connection-3\">closing procedure</a> of\n            <var>presentationConnection</var> has started, then abort these\n            steps."
+        },
+        {
+          "html": "Let <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-message-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-message-type-1\">presentation message type</a> <var>messageType</var> be\n            <code>binary</code> if <var>messageOrData</var> is of type\n            <a data-link-type=\"idl\" data-lt=\"ArrayBuffer\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-index-term-arraybuffer-interface-3\"><code>ArrayBuffer</code></a>, <a data-link-type=\"idl\" data-lt=\"ArrayBufferView\" data-type=\"typedef\" href=\"https://webidl.spec.whatwg.org/#ArrayBufferView\" id=\"ref-for-index-term-arraybufferview-2\"><code>ArrayBufferView</code></a>, or <a data-link-type=\"idl\" data-lt=\"Blob\" data-type=\"interface\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-index-term-blob-interface-3\"><code>Blob</code></a>. Let\n            <var>messageType</var> be <code>text</code> if\n            <var>messageOrData</var> is of type <code>DOMString</code>."
+        },
+        {
+          "html": "Using an implementation specific mechanism, transmit the\n            contents of <var>messageOrData</var> as the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-message-data\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-message-data-2\">presentation message\n            data</a> and <var>messageType</var> as the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-message-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-message-type-2\">presentation message\n            type</a> to the <a href=\"https://w3c.github.io/presentation-api/#dfn-destination-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-destination-browsing-context-3\">destination browsing context</a>."
+        },
+        {
+          "html": "If the previous step encounters an unrecoverable error, then\n            abruptly <a href=\"https://w3c.github.io/presentation-api/#dfn-close-the-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-close-the-presentation-connection-4\">close the presentation connection</a>\n            <var>presentationConnection</var> with <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason-error\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionclosereason-error-3\"><code>error</code></a> as\n            <var>closeReason</var>, and a <var>closeMessage</var> describing\n            the error encountered."
+        }
+      ]
+    },
+    {
+      "name": "receive-algorithm",
+      "href": "https://w3c.github.io/presentation-api/#dfn-receive-algorithm",
+      "html": "When the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-23\">user agent</a> has received a transmission from the\n            remote side consisting of <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-message-data\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-message-data-3\">presentation message data</a> and\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-message-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-message-type-3\">presentation message type</a>, it <em class=\"rfc2119\">MUST</em> run the following steps\n            to <dfn data-lt=\"receive-algorithm|receive a message\" id=\"dfn-receive-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">receive a message</dfn> through\n            a <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-42\"><code>PresentationConnection</code></a>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection-state\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-state-3\"><code>state</code></a> property of\n            <var>presentationConnection</var> is not <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connected-8\"><code>connected</code></a>, abort these steps."
+        },
+        {
+          "html": "Let <var>event</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-create\" id=\"ref-for-index-term-creating-an-event-1\">creating an event</a>\n            using the <a data-link-type=\"idl\" data-lt=\"MessageEvent\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/comms.html#messageevent\" id=\"ref-for-index-term-messageevent-interface-1\"><code>MessageEvent</code></a> interface, with the event type\n            <code>message</code>, which does not bubble and is not cancelable."
+        },
+        {
+          "html": "Initialize the <var>event</var>'s data attribute as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>messageType</var> is <code>text</code>, then\n                initialize <var>event</var>'s <code>data</code> attribute to\n                <var>messageData</var> with type <code>DOMString</code>."
+            },
+            {
+              "html": "If <var>messageType</var> is <code>binary</code>, and\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection-binarytype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-binarytype-4\"><code>binaryType</code></a> attribute is set to \"<code>blob</code>\", then\n                initialize <var>event</var>'s <code>data</code> attribute to a\n                new <a data-link-type=\"idl\" data-lt=\"Blob\" data-type=\"interface\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-index-term-blob-interface-5\"><code>Blob</code></a> object with <var>messageData</var> as its raw\n                data."
+            },
+            {
+              "html": "If <var>messageType</var> is <code>binary</code>, and\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection-binarytype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-binarytype-5\"><code>binaryType</code></a> attribute is set to\n                \"<code>arraybuffer</code>\", then initialize <var>event</var>'s\n                <code>data</code> attribute to a new <a data-link-type=\"idl\" data-lt=\"ArrayBuffer\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-index-term-arraybuffer-interface-5\"><code>ArrayBuffer</code></a> object\n                whose contents are <var>messageData</var>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-5\">Queue a task</a> to <a data-link-type=\"dfn|abstract-op\" data-lt=\"fire an event\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-index-term-fire-an-event-7\">fire</a> <var>event</var> at\n              <var>presentationConnection</var>."
+        }
+      ]
+    },
+    {
+      "name": "start closing the presentation connection",
+      "href": "https://w3c.github.io/presentation-api/#dfn-start-closing-the-presentation-connection",
+      "html": "When the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-26\">user agent</a> is to <dfn data-lt=\"start closing the presentation connection|closing procedure|start closing a presentation connection\" id=\"dfn-start-closing-the-presentation-connection\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">start\n            closing a presentation connection</dfn>, it <em class=\"rfc2119\">MUST</em> do the following:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-10\">presentation connection state</a> of\n            <var>presentationConnection</var> is not <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connecting-8\"><code>connecting</code></a> or <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connected-9\"><code>connected</code></a> then abort the\n            remaining steps."
+        },
+        {
+          "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-11\">presentation connection state</a> of\n            <var>presentationConnection</var> to <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-closed\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-closed-3\"><code>closed</code></a>."
+        },
+        {
+          "html": "Start to signal to the <a href=\"https://w3c.github.io/presentation-api/#dfn-destination-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-destination-browsing-context-4\">destination browsing context</a> the\n            intention to close the corresponding <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-45\"><code>PresentationConnection</code></a>,\n            passing the <var>closeReason</var> to that context. The user agent\n            does not need to wait for acknowledgement that the corresponding\n            <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-46\"><code>PresentationConnection</code></a> was actually closed before proceeding\n            to the next step."
+        },
+        {
+          "html": "If <var>closeReason</var> is not <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionclosereason-wentaway\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionclosereason-wentaway-4\"><code>wentaway</code></a>, then locally run\n            the steps to <a href=\"https://w3c.github.io/presentation-api/#dfn-close-the-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-close-the-presentation-connection-6\">close the presentation connection</a> with\n            <var>presentationConnection</var>, <var>closeReason</var>, and\n            <var>closeMessage</var>."
+        }
+      ]
+    },
+    {
+      "name": "close the presentation connection",
+      "href": "https://w3c.github.io/presentation-api/#dfn-close-the-presentation-connection",
+      "html": "When the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-27\">user agent</a> is to <dfn data-lt=\"close the presentation connection|close a presentation connection\" id=\"dfn-close-the-presentation-connection\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">close a presentation\n            connection</dfn>, it <em class=\"rfc2119\">MUST</em> do the following:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If there is a pending <a href=\"https://w3c.github.io/presentation-api/#dfn-close-the-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-close-the-presentation-connection-7\">close the presentation connection</a>\n            task for <var>presentationConnection</var>, or a <a href=\"https://w3c.github.io/presentation-api/#dfn-close-the-presentation-connection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-close-the-presentation-connection-8\">close the\n            presentation connection</a> task has already run for\n            <var>presentationConnection</var>, then abort the remaining steps."
+        },
+        {
+          "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-6\">Queue a task</a> to run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-12\">presentation connection state</a> of\n                <var>presentationConnection</var> is not <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connecting-9\"><code>connecting</code></a>,\n                  <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connected-10\"><code>connected</code></a>,\n                  or <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-closed\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-closed-4\"><code>closed</code></a>,\n                  then abort the remaining steps."
+            },
+            {
+              "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-13\">presentation connection state</a> of\n                <var>presentationConnection</var> is not <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-closed\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-closed-5\"><code>closed</code></a>, set it to\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-closed\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-closed-6\"><code>closed</code></a>."
+            },
+            {
+              "html": "If the <var>presentationConnection</var> was created as a\n                result of <a href=\"https://w3c.github.io/presentation-api/#dfn-monitoring-incoming-presentation-connections\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitoring-incoming-presentation-connections-2\">monitoring incoming presentation connections</a>\n                in a <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-browsing-context-26\">receiving browsing context</a>, run the following\n                sub-steps.",
+              "rationale": "remove",
+              "steps": [
+                {
+                  "html": "Remove <var>presentationConnection</var> from the\n                    <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-presentation-controllers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-presentation-controllers-3\">set of presentation controllers</a>."
+                },
+                {
+                  "html": "Populate the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-monitor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-monitor-5\">presentation controllers monitor</a>\n                    with the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-presentation-controllers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-presentation-controllers-4\">set of presentation controllers</a>."
+                }
+              ]
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-index-term-fire-an-event-8\">Fire an event</a> named <code>close</code>, that uses the\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectioncloseevent-7\"><code>PresentationConnectionCloseEvent</code></a> interface, with the\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-reason\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectioncloseevent-reason-4\"><code>reason</code></a>\n                attribute initialized to <var>closeReason</var> and the\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-message\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectioncloseevent-message-3\"><code>message</code></a>\n                attribute initialized to <var>closeMessage</var>, at\n                <var>presentationConnection</var>. The event must not bubble\n                and must not be cancelable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "terminate-algorithm-controlling",
+      "href": "https://w3c.github.io/presentation-api/#dfn-terminate-algorithm-controlling",
+      "html": "When a <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-user-agent-19\">controlling user agent</a> is to <dfn data-lt=\"terminate-algorithm-controlling|terminate a presentation in a controlling browsing context\" id=\"dfn-terminate-algorithm-controlling\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">terminate a presentation in a\n            controlling browsing context</dfn> using <var>connection</var>, it\n            <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-14\">presentation connection state</a> of\n            <var>connection</var> is not <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connected-11\"><code>connected</code></a> or <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connecting-10\"><code>connecting</code></a>, then abort these\n            steps."
+        },
+        {
+          "html": "Otherwise, for each <var>known connection</var> in the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-controlled-presentations\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-controlled-presentations-7\">set\n            of controlled presentations</a> in the <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-user-agent-20\">controlling user\n            agent</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-identifier-13\">presentation identifier</a> of <var>known\n                connection</var> and <var>connection</var> are equal, and the\n                <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-15\">presentation connection state</a> of <var>known\n                connection</var> is <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connected-12\"><code>connected</code></a> or\n                  <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connecting-11\"><code>connecting</code></a>,\n                  then <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-7\">queue a task</a> to run the following steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-16\">presentation connection state</a> of\n                    <var>known connection</var> to <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-terminated\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-terminated-4\"><code>terminated</code></a>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-index-term-fire-an-event-9\">Fire an event</a> named <code>terminate</code> at <var>\n                      known connection</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<dfn id=\"dfn-send-a-termination-request\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Send a termination request</dfn> for the presentation to its\n              <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-user-agent-9\">receiving user agent</a> using an implementation specific\n              mechanism."
+        }
+      ]
+    },
+    {
+      "name": "terminate-algorithm-receiving",
+      "href": "https://w3c.github.io/presentation-api/#dfn-terminate-algorithm-receiving",
+      "html": "When a <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-user-agent-15\">receiving user agent</a> is to <dfn data-lt=\"terminate-algorithm-receiving|terminate a presentation in a receiving browsing context\" id=\"dfn-terminate-algorithm-receiving\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">terminate a presentation in a\n            receiving browsing context</dfn>, it <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>P</var> be the presentation to be terminated, let\n            <var>allControllers</var> be the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-presentation-controllers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-presentation-controllers-5\">set of presentation\n            controllers</a> that were created for <var>P</var>, and\n            <var>connectedControllers</var> an empty list."
+        },
+        {
+          "html": "For each <var>connection</var> in <var>allControllers</var>,\n            run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-17\">presentation connection state</a> of\n                <var>connection</var> is <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connected-13\"><code>connected</code></a>, then add\n                <var>connection</var> to <var>connectedControllers</var>."
+            },
+            {
+              "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-18\">presentation connection state</a> of\n                <var>connection</var> to <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-terminated\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-terminated-5\"><code>terminated</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "If there is a <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-browsing-context-28\">receiving browsing context</a> for\n            <var>P</var>, and it has a document for <var>P</var> that is not\n            unloaded, <a href=\"https://w3c.github.io/presentation-api/#dfn-unload-a-document\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-unload-a-document-2\">unload a document</a> corresponding to that\n            <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\" id=\"ref-for-index-term-browsing-context-8\">browsing context</a>, remove that <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\" id=\"ref-for-index-term-browsing-context-9\">browsing context</a> from\n            the user interface and discard it."
+        },
+        {
+          "html": "For each <var>connection</var> in\n            <var>connectedControllers</var>, <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-8\">queue a task</a> to send a\n            termination confirmation for <var>P</var> using an implementation\n            specific mechanism to the <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-user-agent-22\">controlling user agent</a> that owns\n            the <a href=\"https://w3c.github.io/presentation-api/#dfn-destination-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-destination-browsing-context-5\">destination browsing context</a> for <var>connection</var>."
+        }
+      ]
+    },
+    {
+      "html": "When a <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-user-agent-16\">receiving user agent</a> is to send a termination\n            confirmation for a presentation <var>P</var>, and that confirmation\n            was received by a <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-user-agent-24\">controlling user agent</a>, the <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-user-agent-25\">controlling\n            user agent</a> <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <var>connection</var> in the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-controlled-presentations\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-controlled-presentations-8\">set of controlled\n            presentations</a> that was connected to <var>P</var>, <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-9\">queue a\n            task</a> to run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-19\">presentation connection state</a> of\n                <var>connection</var> is not <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connected-14\"><code>connected</code></a> or\n                  <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connecting\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connecting-12\"><code>connecting</code></a>,\n                  then abort the following steps."
+            },
+            {
+              "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-20\">presentation connection state</a> of\n                <var>connection</var> to <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-terminated\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-terminated-6\"><code>terminated</code></a>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-index-term-fire-an-event-10\">Fire an event</a> named <code>terminate</code> at\n                <var>connection</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PresentationReceiver/connectionList",
+      "href": "https://w3c.github.io/presentation-api/#dom-presentationreceiver-connectionlist",
+      "html": "On getting, the <dfn data-dfn-for=\"PresentationReceiver\" data-export=\"\" data-dfn-type=\"attribute\" id=\"dom-presentationreceiver-connectionlist\" data-idl=\"attribute\" data-title=\"connectionList\" data-type=\"Promise\" data-lt=\"connectionList\" data-local-lt=\"PresentationReceiver.connectionList\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>connectionList</code></dfn> attribute <em class=\"rfc2119\">MUST</em> return the\n          result of running the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-promise\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-promise-2\">presentation controllers promise</a> is not\n          <code>null</code>, return the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-promise\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-promise-3\">presentation controllers promise</a>\n          and abort all remaining steps."
+        },
+        {
+          "html": "Otherwise, let the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-promise\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-promise-4\">presentation controllers promise</a> be a\n          new <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-index-term-promise-interface-20\"><code>Promise</code></a> constructed in the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-code-realms\" id=\"ref-for-index-term-javascript-realm-8\">JavaScript realm</a> of this\n          <a href=\"https://w3c.github.io/presentation-api/#dom-presentationreceiver\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationreceiver-8\"><code>PresentationReceiver</code></a> object."
+        },
+        {
+          "html": "Return the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-promise\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-promise-5\">presentation controllers promise</a>."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-monitor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-monitor-6\">presentation controllers monitor</a> is not\n          <code>null</code>, <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-promise-resolve-functions\" id=\"ref-for-index-term-resolved-7\">resolve</a> the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-promise\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-promise-6\">presentation controllers\n          promise</a> with the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-monitor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-monitor-7\">presentation controllers monitor</a>."
+        }
+      ]
+    },
+    {
+      "name": "create a receiving browsing context",
+      "href": "https://w3c.github.io/presentation-api/#dfn-create-a-receiving-browsing-context",
+      "html": "When the <a href=\"https://w3c.github.io/presentation-api/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-28\">user agent</a> is to <dfn id=\"dfn-create-a-receiving-browsing-context\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">create a receiving browsing\n            context</dfn>, it <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "<a data-lt=\"creating a new browsing context\" href=\"https://w3c.github.io/presentation-api/#dfn-creating-a-new-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-creating-a-new-browsing-context-1\">Create</a> a new\n              <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-index-term-top-level-browsing-context-2\">top-level browsing context</a> <var>C</var>, set to display\n              content on <var>D</var>."
+        },
+        {
+          "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-session-history\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-session-history-1\">session history</a> of <var>C</var> to be the empty\n            list."
+        },
+        {
+          "html": "Set the <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#sandboxed-modals-flag\" id=\"ref-for-index-term-sandboxed-modals-flag-1\">sandboxed modals flag</a> and the <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#sandboxed-auxiliary-navigation-browsing-context-flag\" id=\"ref-for-index-term-sandboxed-auxiliary-navigation-browsing-context-flag-1\">sandboxed\n            auxiliary navigation browsing context flag</a> on <var>C</var>."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-user-agent-18\">receiving user agent</a> implements [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/presentation-api/#bib-permissions\" title=\"Permissions\">PERMISSIONS</a></cite>],\n            set the <a data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-state\" id=\"ref-for-index-term-permission-state-1\">permission state</a> of all <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-descriptor-type\" id=\"ref-for-index-term-permission-descriptor-types-for-powerful-feature-1\">permission descriptor types</a> for <var>C</var> to\n            <code>\"denied\"</code>."
+        },
+        {
+          "html": "Create a new empty <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc6265.html#section-5.3\" id=\"ref-for-index-term-cookie-store-2\">cookie store</a> for <var>C</var>."
+        },
+        {
+          "html": "Create a new empty store for <var>C</var> to hold <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9110#section-11\" id=\"ref-for-index-term-http-authentication-2\">HTTP\n            authentication</a> states."
+        },
+        {
+          "html": "Create a new empty storage for <a href=\"https://w3c.github.io/presentation-api/#dfn-session-storage-area\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-session-storage-area-1\">session storage areas</a> and\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-local-storage-area\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-storage-area-1\">local storage areas</a> for <var>C</var>."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-user-agent-19\">receiving user agent</a> implements [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/presentation-api/#bib-indexeddb\" title=\"Indexed Database API\">INDEXEDDB</a></cite>],\n            create a new empty storage for IndexedDB <a href=\"https://w3c.github.io/presentation-api/#dfn-database\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-database-1\">databases</a> for <var>\n              C</var>."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-user-agent-20\">receiving user agent</a> implements\n            [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/presentation-api/#bib-service-workers\" title=\"Service Workers\">SERVICE-WORKERS</a></cite>], create a new empty list of registered\n            <a data-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-registration\" id=\"ref-for-index-term-service-worker-registrations-1\">service worker registrations</a> and a new empty set of\n            <a data-link-type=\"idl\" data-lt=\"Cache\" data-type=\"interface\" href=\"https://www.w3.org/TR/service-workers/#cache\" id=\"ref-for-index-term-cache-interface-1\"><code>Cache</code></a> objects for <var>C</var>."
+        },
+        {
+          "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-index-term-navigate-2\">Navigate</a> <var>C</var> to <var>presentationUrl</var>."
+        },
+        {
+          "html": "Start <a href=\"https://w3c.github.io/presentation-api/#dfn-monitoring-incoming-presentation-connections\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitoring-incoming-presentation-connections-3\">monitoring incoming presentation connections</a> for\n            <var>C</var> with <var>presentationId</var> and\n            <var>presentationUrl</var>."
+        }
+      ]
+    },
+    {
+      "name": "monitoring incoming presentation connections",
+      "href": "https://w3c.github.io/presentation-api/#dfn-monitoring-incoming-presentation-connections",
+      "html": "When the <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-user-agent-25\">receiving user agent</a> is to start <dfn id=\"dfn-monitoring-incoming-presentation-connections\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">monitoring\n            incoming presentation connections</dfn> in a <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-browsing-context-38\">receiving browsing\n            context</a> from <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-browsing-context-28\">controlling browsing contexts</a>, it <em class=\"rfc2119\">MUST</em>\n            listen to and accept incoming connection requests from a\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-browsing-context-29\">controlling browsing context</a> using an implementation\n            specific mechanism. When a new connection request is received from\n            a <a href=\"https://w3c.github.io/presentation-api/#dfn-controlling-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-controlling-browsing-context-30\">controlling browsing context</a>, the <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-user-agent-26\">receiving user\n            agent</a> <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>presentationId</var> and <var>I</var> are not equal,\n            refuse the connection and abort all remaining steps."
+        },
+        {
+          "html": "Create a new <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnection-50\"><code>PresentationConnection</code></a> <var>S</var>."
+        },
+        {
+          "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-identifier-17\">presentation identifier</a> of <var>S</var> to <var>\n              I</var>."
+        },
+        {
+          "html": "Set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-url\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-url-12\">presentation URL</a> of <var>S</var> to\n            <var>presentationUrl</var>."
+        },
+        {
+          "html": "Establish the connection between the controlling and\n            <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-browsing-context-39\">receiving browsing contexts</a> using an implementation specific\n            mechanism."
+        },
+        {
+          "html": "If connection establishment completes successfully, set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-21\">\n              presentation connection state</a> of <var>S</var> to\n              <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-connected\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-connected-15\"><code>connected</code></a>.\n              Otherwise, set the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-connection-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-connection-state-22\">presentation connection state</a> of\n              <var>S</var> to <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionstate-closed\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionstate-closed-7\"><code>closed</code></a> and abort all remaining\n              steps."
+        },
+        {
+          "html": "Add <var>S</var> to the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-presentation-controllers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-presentation-controllers-7\">set of presentation controllers</a>."
+        },
+        {
+          "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-monitor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-monitor-8\">presentation controllers monitor</a> is\n            <code>null</code>, run the following steps <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-index-term-in-parallel-4\">in parallel</a>.",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-monitor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-monitor-9\">presentation controllers monitor</a> be a new\n                <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionlist\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionlist-5\"><code>PresentationConnectionList</code></a> constructed in the\n                <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-code-realms\" id=\"ref-for-index-term-javascript-realm-9\">JavaScript realm</a> of the <a href=\"https://w3c.github.io/presentation-api/#dom-presentationreceiver\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationreceiver-9\"><code>PresentationReceiver</code></a>\n                object of the <a href=\"https://w3c.github.io/presentation-api/#dfn-receiving-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-receiving-browsing-context-40\">receiving browsing context</a>."
+            },
+            {
+              "html": "Populate the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-monitor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-monitor-10\">presentation controllers monitor</a> with\n                the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-presentation-controllers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-presentation-controllers-8\">set of presentation controllers</a>."
+            },
+            {
+              "html": "If the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-promise\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-promise-7\">presentation controllers promise</a> is not\n                <code>null</code>, <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#sec-promise-resolve-functions\" id=\"ref-for-index-term-resolved-8\">resolve</a> the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-promise\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-promise-8\">presentation\n                controllers promise</a> with the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-monitor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-monitor-11\">presentation controllers\n                monitor</a>."
+            },
+            {
+              "html": "Abort all remaining steps."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, run the following steps <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-index-term-in-parallel-5\">in parallel</a>.",
+          "rationale": "populate",
+          "steps": [
+            {
+              "html": "Populate the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-monitor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-monitor-12\">presentation controllers monitor</a> with\n                the <a href=\"https://w3c.github.io/presentation-api/#dfn-set-of-presentation-controllers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-presentation-controllers-9\">set of presentation controllers</a>."
+            },
+            {
+              "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-10\">Queue a task</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-index-term-fire-an-event-11\">fire an event</a> named\n                  <a href=\"https://w3c.github.io/presentation-api/#dfn-connectionavailable\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-connectionavailable-7\"><code>connectionavailable</code></a>, that\n                  uses the <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionavailableevent-10\"><code>PresentationConnectionAvailableEvent</code></a>\n                  interface, with the <a href=\"https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent-connection\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-presentationconnectionavailableevent-connection-7\"><code>connection</code></a>\n                  attribute initialized to <var>S</var>, at the <a href=\"https://w3c.github.io/presentation-api/#dfn-presentation-controllers-monitor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-presentation-controllers-monitor-13\">presentation\n                  controllers monitor</a>. The event must not bubble and must\n                  not be cancelable."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

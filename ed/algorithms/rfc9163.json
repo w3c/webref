@@ -1,0 +1,50 @@
+{
+  "spec": {
+    "title": "RFC 9163: Expect-CT Extension for HTTP",
+    "url": "https://www.rfc-editor.org/rfc/rfc9163"
+  },
+  "algorithms": [
+    {
+      "html": "The directives defined in this specification are described below. The overall\nrequirements for directives are:<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-2.1-4\" class=\"pilcrow\">¶</a>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The order of appearance of directives is not significant.<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-2.1-5.1\" class=\"pilcrow\">¶</a>"
+        },
+        {
+          "html": "A given directive <span class=\"bcp14\">MUST NOT</span> appear more than once in a given header\nfield. Directives are either optional or required, as stipulated in their\ndefinitions.<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-2.1-5.2\" class=\"pilcrow\">¶</a>"
+        },
+        {
+          "html": "Directive names are case insensitive.<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-2.1-5.3\" class=\"pilcrow\">¶</a>"
+        },
+        {
+          "html": "UAs <span class=\"bcp14\">MUST</span> ignore any header fields containing\n          directives, or other header field value data that does not conform to\n          the syntax defined in this specification.  In particular, UAs\n          <span class=\"bcp14\">MUST NOT</span> attempt to fix malformed header fields.<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-2.1-5.4\" class=\"pilcrow\">¶</a>"
+        },
+        {
+          "html": "If a header field contains any directive(s) the UA does not\n          recognize, the UA <span class=\"bcp14\">MUST</span> ignore those directives.<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-2.1-5.5\" class=\"pilcrow\">¶</a>"
+        },
+        {
+          "html": "If the Expect-CT header field otherwise satisfies the above\n          requirements (1 through 5), and Expect-CT is not disabled for local\n          policy reasons (as discussed in <a href=\"https://www.rfc-editor.org/rfc/rfc9163#skipping-ct-compliance-checks\" class=\"xref\">Section 2.4.1</a>), the UA\n          <span class=\"bcp14\">MUST</span> process the directives it recognizes.<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-2.1-5.6\" class=\"pilcrow\">¶</a>"
+        }
+      ]
+    },
+    {
+      "html": "The steps to report an Expect-CT failure are as follows.<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-3.2-3\" class=\"pilcrow\">¶</a>",
+      "rationale": "prepare",
+      "steps": [
+        {
+          "html": "Prepare a JSON object <code>report object</code> with the single key\n   \"expect-ct-report\", whose value is the result of generating a\n   violation <code>report object</code> as described in <a href=\"https://www.rfc-editor.org/rfc/rfc9163#generating-a-violation-report\" class=\"xref\">Section 3.1</a>.<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-3.2-4.1\" class=\"pilcrow\">¶</a>"
+        },
+        {
+          "html": "Let <code>report body</code> be the JSON stringification of <code>report object</code>.<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-3.2-4.2\" class=\"pilcrow\">¶</a>"
+        },
+        {
+          "html": "Let <code>report-uri</code> be the value of the <code>report-uri</code> directive in the Expect-CT\nheader field.<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-3.2-4.3\" class=\"pilcrow\">¶</a>"
+        },
+        {
+          "html": "Send an HTTP POST request to <code>report-uri</code> with a\n          <code>Content-Type</code> header field of\n          <code>application/expect-ct-report+json</code> and an entity body\n          consisting of <code>report body</code>.<a href=\"https://www.rfc-editor.org/rfc/rfc9163#section-3.2-4.4\" class=\"pilcrow\">¶</a>"
+        }
+      ]
+    }
+  ]
+}

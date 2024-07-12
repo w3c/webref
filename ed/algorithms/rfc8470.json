@@ -1,0 +1,23 @@
+{
+  "spec": {
+    "title": "RFC 8470 - Using Early Data in HTTP",
+    "url": "https://httpwg.org/specs/rfc8470.html"
+  },
+  "algorithms": [
+    {
+      "html": "",
+      "rationale": "reject",
+      "steps": [
+        {
+          "html": "The server can reject early data at the TLS layer. A server cannot selectively reject early data, so this results in all requests sent in early data being discarded."
+        },
+        {
+          "html": "The server can choose to delay processing of early data until after the TLS handshake completes. By deferring processing, it can ensure that only a successfully completed connection is used for the request(s) therein. This provides the server with some assurance that the early data was not replayed. If the server receives multiple requests in early data, it can determine whether to defer HTTP processing on a per-request basis."
+        },
+        {
+          "html": "The server can cause a client to retry individual requests and not use early data by responding with the 425 (Too Early) status code (<a href=\"https://httpwg.org/specs/rfc8470.html#status\" title=\"The 425 (Too Early) Status Code\">Section 5.2</a>) in cases where the risk of replay is judged too great."
+        }
+      ]
+    }
+  ]
+}

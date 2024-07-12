@@ -1,0 +1,105 @@
+{
+  "spec": {
+    "title": "CSS Lists and Counters Module Level 3",
+    "url": "https://drafts.csswg.org/css-lists-3/"
+  },
+  "algorithms": [
+    {
+      "html": "The contents of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#marker\" id=\"ref-for-marker⑧\">marker box</a> are determined by the first of these conditions that is true:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "content on the ::marker itself is not normal",
+              "html": "The contents of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#marker\" id=\"ref-for-marker⑨\">marker box</a> are determined as defined by the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-content-3/#propdef-content\" id=\"ref-for-propdef-content③\">content</a> property,\n\t\t\texactly as for <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-pseudo-4/#selectordef-before\" id=\"ref-for-selectordef-before②\">::before</a>."
+            },
+            {
+              "case": "list-style-image on the originating element defines a marker image",
+              "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#marker\" id=\"ref-for-marker①⓪\">marker box</a> contains\n\t\t\tan <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#anonymous\" id=\"ref-for-anonymous\">anonymous</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#inline\" id=\"ref-for-inline\">inline</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#replaced-element\" id=\"ref-for-replaced-element\">replaced element</a> representing the specified <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#marker-image\" id=\"ref-for-marker-image①\">marker image</a>,\n\t\t\tfollowed by a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#css-text-sequence\" id=\"ref-for-css-text-sequence\">text sequence</a> consisting of a single space (U+0020 SPACE)."
+            },
+            {
+              "case": "list-style-type on the originating element defines a marker string",
+              "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#marker\" id=\"ref-for-marker①①\">marker box</a> contains\n\t\t\ta <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#css-text-sequence\" id=\"ref-for-css-text-sequence①\">text sequence</a> consisting of the specified <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#marker-string\" id=\"ref-for-marker-string①\">marker string</a>."
+            },
+            {
+              "case": "otherwise",
+              "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#marker\" id=\"ref-for-marker①②\">marker box</a> has no contents\n\t\t\tand <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-pseudo-4/#selectordef-marker\" id=\"ref-for-selectordef-marker①④\">::marker</a> does not generate a box."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inherit counters",
+      "href": "https://drafts.csswg.org/css-lists-3/#inherit-counters",
+      "html": "An element <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#inherit-counters\" id=\"ref-for-inherit-counters①\">inherits</a> its initial set of counters\n\t\tfrom its parent and preceding <em>sibling</em>.\n\t\tIt then takes the values for those counters\n\t\tfrom the values of the matching counters\n\t\ton its preceding <em>element in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order\">tree order</a></em> (which might be its parent,\n\t\tits preceding sibling,\n\t\tor a descendant of its previous sibling).\n\t\tTo <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inherit-counters\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">inherit counters</dfn> into an <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>element</var> is the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root\">root</a> of its document tree,\nthe element has an initially-empty <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#css-counters-set\" id=\"ref-for-css-counters-set\">CSS counters set</a>.\nReturn.</p>"
+        },
+        {
+          "html": "<p>Let <var>element counters</var>,\nrepresenting <var>element</var>’s own <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#css-counters-set\" id=\"ref-for-css-counters-set①\">CSS counters set</a>,\nbe a copy of the <span id=\"ref-for-css-counters-set②\">CSS counters set</span> of <var>element</var>’s parent element.</p>"
+        },
+        {
+          "html": "<p>Let <var>sibling counters</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#css-counters-set\" id=\"ref-for-css-counters-set③\">CSS counters set</a> of <var>element</var>’s preceding sibling (if it has one),\nor an empty <span id=\"ref-for-css-counters-set④\">CSS counters set</span> otherwise.</p>\n      <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>counter</var> of <var>sibling counters</var>,\nif <var>element counters</var> does not already contain a counter with the same <a data-link-type=\"dfn\">name</a>,\nappend a copy of <var>counter</var> to <var>element counters</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>value source</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#css-counters-set\" id=\"ref-for-css-counters-set⑤\">CSS counters set</a> of the element immediately preceding <var>element</var> in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order①\">tree order</a>.</p>\n      <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate①\">For each</a> <var>source counter</var> of <var>value source</var>,\nif <var>element counters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#counter\" id=\"ref-for-counter①⓪\">counter</a> with the same <a data-link-type=\"dfn\">name</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#css-counter-creator\" id=\"ref-for-css-counter-creator①\">creator</a>,\nthen set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#css-counter-value\" id=\"ref-for-css-counter-value①\">value</a> of that counter\nto <var>source counter</var>’s <span id=\"ref-for-css-counter-value②\">value</span>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "instantiate counter",
+      "href": "https://drafts.csswg.org/css-lists-3/#instantiate-counter",
+      "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#counter\" id=\"ref-for-counter①①\">Counters</a> are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#instantiate-counter\" id=\"ref-for-instantiate-counter⑧\">instantiated</a> when named in <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-lists-3/#propdef-counter-reset\" id=\"ref-for-propdef-counter-reset⑤\">counter-reset</a>,\n\t\tand also when not otherwise present if named in <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-lists-3/#propdef-counter-increment\" id=\"ref-for-propdef-counter-increment⑦\">counter-increment</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-lists-3/#propdef-counter-set\" id=\"ref-for-propdef-counter-set⑦\">counter-set</a>, or the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-lists-3/#funcdef-counter\" id=\"ref-for-funcdef-counter③\">counter()</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-lists-3/#funcdef-counters\" id=\"ref-for-funcdef-counters③\">counters()</a> notations.\n\t\t(Newly <span id=\"ref-for-instantiate-counter⑨\">instantiated</span> <span id=\"ref-for-counter①②\">counters</span> replace identically-named <span id=\"ref-for-counter①③\">counters</span> originating from previous siblings,\n\t\tbut are added in addition to identically-named <span id=\"ref-for-counter①④\">counters</span> originating from ancestor elements,\n\t\tsee <a href=\"https://drafts.csswg.org/css-lists-3/#nested-counters\">§ 4.3 Nested Counters and Scope</a>.)\n\t\tTo <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-local-lt=\"instantiate\" data-lt=\"instantiate counter\" data-noexport=\"\" id=\"instantiate-counter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">instantiate a counter</dfn> of a given <var>name</var> on an <var>element</var>,\n\t\toptionally <var>reversed</var>,\n\t\twith an optional starting <var>value</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>counters</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#css-counters-set\" id=\"ref-for-css-counters-set⑥\">CSS counters set</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>innermost counter</var> be the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#counter\" id=\"ref-for-counter①⑤\">counter</a> in <var>counters</var> with the name <var>name</var>.\nIf <var>innermost counter</var>’s originating element\nis <var>element</var> or a previous sibling of <var>element</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">remove</a> <var>innermost counter</var> from <var>counters</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> a new <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#counter\" id=\"ref-for-counter①⑥\">counter</a> to <var>counters</var> with name <var>name</var>,\noriginating element <var>element</var>,\nreversed being <var>reversed</var>,\nand initial value <var>value</var> (if given)</p>"
+        }
+      ]
+    },
+    {
+      "html": "When a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#counter\" id=\"ref-for-counter①⑦\">counter</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#instantiate-counter\" id=\"ref-for-instantiate-counter①⓪\">instantiated</a> without an initial value,\n\tthe user agent must dynamically calculate the initial value at layout-time\n\tto be the value returned by the following algorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>num</var> be 0.</p>"
+        },
+        {
+          "html": "<p>Let <var>first</var> be true.</p>"
+        },
+        {
+          "html": "For each element or pseudo-element <var>el</var> that increments or\nsets the same counter in the same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#counter-scope\" id=\"ref-for-counter-scope①\">scope</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>incrementNegated</var> be <var>el</var>’s <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-lists-3/#propdef-counter-increment\" id=\"ref-for-propdef-counter-increment⑧\">counter-increment</a> integer value for this counter,\nmultiplied by -1.</p>"
+            },
+            {
+              "html": "<p>If <var>first</var> is true,\nthen add <var>incrementNegated</var> to <var>num</var> and\nset <var>first</var> to false.</p>"
+            },
+            {
+              "html": "<p>If <var>el</var> sets this counter with <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-lists-3/#propdef-counter-set\" id=\"ref-for-propdef-counter-set⑧\">counter-set</a>,\nthen add that integer value to <var>num</var> and\nbreak this loop.</p>"
+            },
+            {
+              "html": "<p>Add <var>incrementNegated</var> to <var>num</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>num</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "spec": {
+    "title": "CSS Shadow Parts",
+    "url": "https://drafts.csswg.org/css-shadow-parts-1/"
+  },
+  "algorithms": [
+    {
+      "name": "calculate the part element map",
+      "href": "https://drafts.csswg.org/css-shadow-parts-1/#calculate-the-part-element-map",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-the-part-element-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map③\">part element map</a></dfn> of a shadow root, <var>outerRoot</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-the-part-element-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map③\">part element map</a></dfn> of a shadow root, <var>outerRoot</var>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p>For each <var>name</var> in <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#element-part-name-list\" id=\"ref-for-element-part-name-list①\">part name list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>el</var> to <var>outerRoot</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map④\">part element map</a>[<var>name</var>].</p>"
+            },
+            {
+              "html": "<p>If <var>el</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#element-shadow-host\" id=\"ref-for-element-shadow-host③\">shadow host</a> itself\nthen let <var>innerRoot</var> be its shadow root.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#calculate-the-part-element-map\" id=\"ref-for-calculate-the-part-element-map\">Calculate</a> <var>innerRoot</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map⑤\">part element map</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-the-part-element-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map③\">part element map</a></dfn> of a shadow root, <var>outerRoot</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>innerParts</var> be <var>innerRoot</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map⑥\">part element map</a>[<var>innerName</var>]</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> the elements in <var>innerParts</var> to <var>outerRoot</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map⑦\">part element map</a>[<var>outerName</var>]</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The exportparts attribute is parsed as a comma-separated list of part mappings.\nEach part mapping is one of:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "innerIdent : outerIdent",
+              "html": "<p>Adds <code>innerIdent</code>/<code>outerIdent</code> to el’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#element-forwarded-part-name-list\" id=\"ref-for-element-forwarded-part-name-list②\">forwarded part name list</a>.</p>"
+            },
+            {
+              "case": "ident",
+              "html": "<p>Adds <code>ident</code>/<code>ident</code> to el’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#element-forwarded-part-name-list\" id=\"ref-for-element-forwarded-part-name-list③\">forwarded part name list</a>.</p>"
+            },
+            {
+              "case": "anything else",
+              "html": "<p>Ignored for error-recovery / future compatibility.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The rules for parsing a part mapping are as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>input</var> be the string being parsed.</p>"
+        },
+        {
+          "html": "<p>Let <var>position</var> be a pointer into <var>input</var>, initially pointing at the start of the string.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points\">Collect a sequence of code points</a> that are space characters</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points①\">Collect a sequence of code points</a> that are not space characters or U+003A COLON characters,\nand let <var>first token</var> be the result.</p>"
+        },
+        {
+          "html": "<p>If <var>first token</var> is empty then return error.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points②\">Collect a sequence of code points</a> that are space characters.</p>"
+        },
+        {
+          "html": "<p>If the end of the <var>input</var> has been reached, return the <a data-link-type=\"dfn\">pair</a> <var>first token</var>/<var>first token</var></p>"
+        },
+        {
+          "html": "<p>If character at <var>position</var> is not a U+003A COLON character, return error.</p>"
+        },
+        {
+          "html": "<p>Consume the U+003A COLON character.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points③\">Collect a sequence of code points</a> that are space characters.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points④\">Collect a sequence of code points</a> that are not space characters or U+003A COLON characters.\nand let <var>second token</var> be the result.</p>"
+        },
+        {
+          "html": "<p>If <var>second token</var> is empty then return error.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points⑤\">Collect a sequence of code points</a> that are space characters.</p>"
+        },
+        {
+          "html": "<p>If <var>position</var> is not past the end of <var>input</var> then return error.</p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\">pair</a> <var>first token</var>/<var>second token</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The rules for parsing a list of part mappings are as follow:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>input</var> be the string being parsed.</p>"
+        },
+        {
+          "html": "<p><span data-x=\"split a string on commas\">Split the string <var>input</var> on\ncommas</span>. Let <var>unparsed mappings</var> be the resulting list of strings.</p>"
+        },
+        {
+          "html": "<p>Let <var>mappings</var> be an initially empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\">pairs</a> of tokens.\nThis <span id=\"ref-for-list②\">list</span> will be the result of this algorithm.</p>"
+        },
+        {
+          "html": "For each string <var>unparsed mapping</var> in <var>unparsed mappings</var>,\nrun the following substeps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>unparsed mapping</var> is empty or contains only space characters,\ncontinue to the next iteration of the loop.</p>"
+            },
+            {
+              "html": "<p>Let <var>mapping</var> be the result of parsing <var>unparsed mapping</var> using the <span>rules for parsing part mappings</span>.</p>"
+            },
+            {
+              "html": "<p>If <var>mapping</var> is an error then continue to the next iteration of the loop.\nThis allows clients to skip over new syntax that is not understood.</p>"
+            },
+            {
+              "html": "<p>Append <var>mapping</var> to <var>mappings</var>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "spec": {
+    "title": "CSS Functions and Mixins Module",
+    "url": "https://drafts.csswg.org/css-mixins-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-mixins-1/#title",
+      "level": 1,
+      "title": "CSS Functions and Mixins Module"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-mixins-1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-mixins-1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-mixins-1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-mixins-1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "defining-custom-functions",
+      "href": "https://drafts.csswg.org/css-mixins-1/#defining-custom-functions",
+      "level": 2,
+      "title": "Defining Custom Functions",
+      "number": "2"
+    },
+    {
+      "id": "function-rule",
+      "href": "https://drafts.csswg.org/css-mixins-1/#function-rule",
+      "level": 3,
+      "title": "The @function Rule",
+      "number": "2.1"
+    },
+    {
+      "id": "the-result-descriptor",
+      "href": "https://drafts.csswg.org/css-mixins-1/#the-result-descriptor",
+      "level": 3,
+      "title": "The result Descriptor",
+      "number": "2.2"
+    },
+    {
+      "id": "using-custom-functions",
+      "href": "https://drafts.csswg.org/css-mixins-1/#using-custom-functions",
+      "level": 2,
+      "title": "Using Custom Functions",
+      "number": "3"
+    },
+    {
+      "id": "evaluating-custom-functions",
+      "href": "https://drafts.csswg.org/css-mixins-1/#evaluating-custom-functions",
+      "level": 3,
+      "title": "Evaluating Custom Functions",
+      "number": "3.1"
+    },
+    {
+      "id": "parameters",
+      "href": "https://drafts.csswg.org/css-mixins-1/#parameters",
+      "level": 3,
+      "title": "Parameters and Locals",
+      "number": "3.2"
+    },
+    {
+      "id": "cycles",
+      "href": "https://drafts.csswg.org/css-mixins-1/#cycles",
+      "level": 3,
+      "title": "Cycles",
+      "number": "3.3"
+    },
+    {
+      "id": "execution-model",
+      "href": "https://drafts.csswg.org/css-mixins-1/#execution-model",
+      "level": 2,
+      "title": "Execution Model of Custom Functions",
+      "number": "4"
+    },
+    {
+      "id": "conditional-rules",
+      "href": "https://drafts.csswg.org/css-mixins-1/#conditional-rules",
+      "level": 3,
+      "title": "Conditional Rules",
+      "number": "4.1"
+    },
+    {
+      "id": "cssom",
+      "href": "https://drafts.csswg.org/css-mixins-1/#cssom",
+      "level": 2,
+      "title": "CSSOM",
+      "number": "5"
+    },
+    {
+      "id": "syntax",
+      "href": "https://drafts.csswg.org/css-mixins-1/#syntax",
+      "level": 2,
+      "title": "Appendix: The <syntax> Production",
+      "number": "6"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-mixins-1/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-mixins-1/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-mixins-1/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-mixins-1/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-mixins-1/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-mixins-1/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-mixins-1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-mixins-1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-mixins-1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-mixins-1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-mixins-1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-mixins-1/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-mixins-1/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "function-descriptor-table",
+      "href": "https://drafts.csswg.org/css-mixins-1/#function-descriptor-table",
+      "level": 3,
+      "title": "@function Descriptors"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://drafts.csswg.org/css-mixins-1/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://drafts.csswg.org/css-mixins-1/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

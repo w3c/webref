@@ -1,0 +1,58 @@
+{
+  "spec": {
+    "title": "Secure Contexts",
+    "url": "https://w3c.github.io/webappsec-secure-contexts/"
+  },
+  "algorithms": [
+    {
+      "html": "Given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> (<var>origin</var>), the following algorithm\n  returns \"<code>Potentially Trustworthy</code>\" or \"<code>Not Trustworthy</code>\" as appropriate.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>origin</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, return \"<code>Not Trustworthy</code>\".</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>origin</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-tuple\" id=\"ref-for-concept-origin-tuple\">tuple origin</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme\">scheme</a> is either \"<code>https</code>\" or \"<code>wss</code>\",\n  return \"<code>Potentially Trustworthy</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host\">host</a> matches one of the CIDR\n  notations <code>127.0.0.0/8</code> or <code>::1/128</code> <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webappsec-secure-contexts/#biblio-rfc4632\" title=\"Classless Inter-domain Routing (CIDR): The Internet Address Assignment and Aggregation Plan\">[RFC4632]</a>, return \"<code>Potentially       Trustworthy</code>\".</p>"
+        },
+        {
+          "html": "<p>If the user agent conforms to the name resolution rules in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webappsec-secure-contexts/#biblio-let-localhost-be-localhost\" title=\"Let 'localhost' be localhost.\">[let-localhost-be-localhost]</a> and one of the following is true:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host①\">host</a> is \"<code>localhost</code>\" or \"<code>localhost.</code>\"</p>\n       </li><li data-md=\"\">\n        <p><var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host②\">host</a> ends with \"<code>.localhost</code>\" or \"<code>.localhost.</code>\"</p>\n      </li></ul>\n      <p>then return \"<code>Potentially Trustworthy</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme①\">scheme</a> is \"<code>file</code>\", return\n  \"<code>Potentially Trustworthy</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme②\">scheme</a> component is one which the user\n  agent considers to be authenticated, return \"<code>Potentially Trustworthy</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>origin</var> has been configured as a trustworthy origin, return\n  \"<code>Potentially Trustworthy</code>\".</p>"
+        },
+        {
+          "html": "<p>Return \"<code>Not Trustworthy</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "potentially trustworthy URL",
+      "href": "https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url",
+      "html": "A <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"potentially-trustworthy-url\">potentially trustworthy URL<a class=\"self-link\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url\"></a></dfn> is one which either inherits\n  context from its creator (<code>about:blank</code>, <code>about:srcdoc</code>, <code>data</code>) or one whose <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin②\">potentially trustworthy origin</a>.\n  Given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL record</a> (<var>url</var>), the following algorithm returns \"<code>Potentially   Trustworthy</code>\" or \"<code>Not Trustworthy</code>\" as appropriate:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>url</var> is \"<code>about:blank</code>\" or \"<code>about:srcdoc</code>\", return \"<code>Potentially       Trustworthy</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is \"<code>data</code>\", return \"<code>Potentially       Trustworthy</code>\".</p>"
+        },
+        {
+          "html": "<p>Return the result of executing <a href=\"https://w3c.github.io/webappsec-secure-contexts/#is-origin-trustworthy\" id=\"ref-for-is-origin-trustworthy①\">§ 3.1 Is origin potentially trustworthy?</a> on <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①\">origin</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

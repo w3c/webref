@@ -1,0 +1,169 @@
+{
+  "spec": {
+    "title": "CSS Images Module Level 4",
+    "url": "https://drafts.csswg.org/css-images-4/"
+  },
+  "algorithms": [
+    {
+      "name": "fetch an external image for a stylesheet",
+      "href": "https://drafts.csswg.org/css-images-4/#fetch-an-external-image-for-a-stylesheet",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-an-external-image-for-a-stylesheet\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch an external image for a stylesheet</dfn>,\n\tgiven a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#url-value\" id=\"ref-for-url-value④\" title=\"Expands to: local url flag\">&lt;url&gt;</a> <var>url</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-1/#cssstylesheet\" id=\"ref-for-cssstylesheet\">CSSStyleSheet</a></code> sheet, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#fetch-a-style-resource\" id=\"ref-for-fetch-a-style-resource\">fetch a style resource</a> given <var>url</var>,\n\twith stylesheet <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-1/#cssstylesheet\" id=\"ref-for-cssstylesheet①\">CSSStyleSheet</a></code>,\n\tdestination \"image\",\n\tCORS mode \"no-cors\",\n\tand processResponse being the following steps\n\tgiven <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>res</var> and null, failure or\n\ta byte stream <var>byteStream</var>:\n\t\tIf <var>byteStream</var> is a byte stream, load the image from the byte stream.",
+      "rationale": "To <dfn>"
+    },
+    {
+      "html": "An <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-image-set\" id=\"ref-for-funcdef-image-set⑧\">image-set()</a> function contains a list of one or more <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image-set-option\" id=\"ref-for-typedef-image-set-option⑦\">&lt;image-set-option&gt;</a>s,\n\tand must select only one of them\n\tto determine what image it will represent:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>First, remove any <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image-set-option\" id=\"ref-for-typedef-image-set-option⑧\">&lt;image-set-option&gt;</a>s from the list\nthat specify an unknown or unsupported MIME type in their <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-image-set-type\" id=\"ref-for-funcdef-image-set-type\">type()</a> value.</p>"
+        },
+        {
+          "html": "<p>Second, remove any <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image-set-option\" id=\"ref-for-typedef-image-set-option⑨\">&lt;image-set-option&gt;</a>s from the list\nthat have the same <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#resolution-value\" id=\"ref-for-resolution-value②\" title=\"Expands to: dpcm | dpi | dppx | x\">&lt;resolution&gt;</a> as a previous option in the list.</p>"
+        },
+        {
+          "html": "<p>If there are no <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image-set-option\" id=\"ref-for-typedef-image-set-option①⓪\">&lt;image-set-option&gt;</a> left at this point,\nthe function represents an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#invalid-image\" id=\"ref-for-invalid-image③\">invalid image</a>.</p>"
+        },
+        {
+          "html": "<p>Finally, among the remaining <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image-set-option\" id=\"ref-for-typedef-image-set-option①①\">&lt;image-set-option&gt;</a>s,\nmake a UA-specific choice of which to load,\nbased on whatever criteria deemed relevant\n(such as the resolution of the display,\n\tconnection speed,\n\tetc).</p>"
+        },
+        {
+          "html": "<p>The <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-image-set\" id=\"ref-for-funcdef-image-set⑨\">image-set()</a> function then represents the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image\" id=\"ref-for-typedef-image①①\">&lt;image&gt;</a> of the chosen <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image-set-option\" id=\"ref-for-typedef-image-set-option①②\">&lt;image-set-option&gt;</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "natural dimensions of a cross-fade()",
+      "href": "https://drafts.csswg.org/css-images-4/#natural-dimensions-of-a-cross-fade",
+      "html": "To determine the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"natural-dimensions-of-a-cross-fade\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-dimensions\" id=\"ref-for-natural-dimensions④\">natural dimensions</a> of a cross-fade()</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>images</var> be an empty list.</p>"
+        },
+        {
+          "html": "To determine the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"natural-dimensions-of-a-cross-fade\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-dimensions\" id=\"ref-for-natural-dimensions④\">natural dimensions</a> of a cross-fade()</dfn>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>item</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple\">tuple</a> consisting of a width, a height, and a percentage.</p>"
+            },
+            {
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#object-size-negotiation\" id=\"ref-for-object-size-negotiation\">object size negotiation</a> algorithm for the <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image\" id=\"ref-for-typedef-image①⑤\">&lt;image&gt;</a>,\nas appropriate for the context in which the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade⑧\">cross-fade()</a> appears,\nand set <var>item</var>’s width and height\nto the width and height of the resulting <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#concrete-object-size\" id=\"ref-for-concrete-object-size\">concrete object size</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>item</var>’s percentage to the <var>argument</var>’s percentage.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>images</var> is empty,\nreturn no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-dimensions\" id=\"ref-for-natural-dimensions⑤\">natural dimensions</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>percentage sum</var> be the sum of all the percentages of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">items</a> in <var>images</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>item</var> in <var>images</var>,\ndivide <var>item</var>’s percentage by <var>percentage sum</var>,\nand set <var>item</var>’s percentage to the result.</p>\n      <p class=\"assertion\">Assert: The percentages in <var>images</var> now sum to <span class=\"css\">100%</span>.</p>"
+        },
+        {
+          "html": "<p>Let <var>final width</var> and <var>final height</var> be <span class=\"css\">0px</span>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>item</var> in <var>images</var>,\nmultiply <var>item</var>’s width by <var>item</var>’s percentage\nand add the result to <var>final width</var>,\nand multiply <var>item</var>’s height by <var>item</var>’s percentage\nand add the result to <var>final height</var>.</p>"
+        },
+        {
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-width\" id=\"ref-for-natural-width\">natural width</a> of <var>final width</var> and a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-height\" id=\"ref-for-natural-height\">natural height</a> of <var>final height</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "appearance of a cross-fade()",
+      "href": "https://drafts.csswg.org/css-images-4/#appearance-of-a-cross-fade",
+      "html": "To determine the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"appearance-of-a-cross-fade\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">appearance of a cross-fade()</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>images</var> be an empty list.</p>"
+        },
+        {
+          "html": "<p>Let <var>size</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①\">tuple</a> of width and height,\ninitialized to the result of finding the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#concrete-object-size\" id=\"ref-for-concrete-object-size①\">concrete object size</a> of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade①①\">cross-fade()</a> function\n(using the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#natural-dimensions-of-a-cross-fade\" id=\"ref-for-natural-dimensions-of-a-cross-fade\">natural dimensions of a cross-fade()</a>).</p>"
+        },
+        {
+          "html": "To determine the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"appearance-of-a-cross-fade\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">appearance of a cross-fade()</dfn>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>item</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple②\">tuple</a> consisting of an image and a percentage.</p>"
+            },
+            {
+              "html": "<p>If <var>argument</var> has an <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-images-4/#typedef-image\" id=\"ref-for-typedef-image①⑥\">&lt;image&gt;</a>,\nrescale it to <var>size</var>’s width and height\nand set <var>item</var>’s image to the result.\nOtherwise, <var>argument</var> has a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-color-5/#typedef-color\" id=\"ref-for-typedef-color⑧\" title=\"Expands to: <alpha-value> | accentcolor | accentcolortext | activeborder | activecaption | activetext | aliceblue | antiquewhite | appworkspace | aqua | aquamarine | azure | background | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | buttonborder | buttonface | buttonhighlight | buttonshadow | buttontext | cadetblue | canvas | canvastext | captiontext | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | field | fieldtext | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | graytext | green | greenyellow | grey | highlight | highlighttext | honeydew | hotpink | inactiveborder | inactivecaption | inactivecaptiontext | indianred | indigo | infobackground | infotext | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | linktext | magenta | mark | marktext | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | menu | menutext | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | none | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | scrollbar | seagreen | seashell | selecteditem | selecteditemtext | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | threeddarkshadow | threedface | threedhighlight | threedlightshadow | threedshadow | tomato | transparent | turquoise | violet | visitedtext | wheat | white | whitesmoke | window | windowframe | windowtext | yellow | yellowgreen\">&lt;color&gt;</a>;\nset <var>item</var>’s image to a solid-color image of the <span class=\"production\" id=\"ref-for-typedef-color⑨\">&lt;color&gt;</span>,\nwith <var>size</var>’s dimensions.</p>"
+            },
+            {
+              "html": "<p>Set <var>item</var>’s percentage to the <var>argument</var>’s percentage.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>percentage sum</var> be the sum of all the percentages of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①\">items</a> in <var>images</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>percentage sum</var> is less than <span class=\"css\">100%</span>,\nappend a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple③\">tuple</a> to <var>images</var> consisting of a solid-color transparent-black image\nwith <var>size</var>’s dimensions,\nand a percentage equal to <span class=\"css\">100%</span> minus <var>percentage sum</var>.</p>\n      <p>Otherwise,\nif <var>percentage sum</var> is greater than <span class=\"css\">100%</span>,\nthen <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">for each</a> <var>item</var> in <var>images</var>,\ndivide <var>item</var>’s percentage by <var>percentage sum</var>,\nand set <var>item</var>’s percentage to the result.</p>"
+        },
+        {
+          "html": "<p>Let <var>final image</var> be an image\nwith <var>size</var>’s dimensions,\nand every pixel being the weighted linear average of the corresponding pixels of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">each</a> <var>item</var>’s image in <var>images</var>,\nweighted according to the <var>item</var>’s percentage.\n(Average both the color channels and the alpha channel of the pixels.)\nFor the purpose of this calculation,\neach pixel’s color must be in pre-multiplied sRGB.</p>"
+        },
+        {
+          "html": "<p>Return <var>final image</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "interpolate with a color hint",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Determine the location of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-transition-hint\" id=\"ref-for-color-transition-hint④\">transition hint</a> as a percentage of the distance between the two <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-stop\" id=\"ref-for-color-stop①⑧\">color stops</a>,\n\t\t\t\tdenoted as a number between 0 and 1,\n\t\t\t\twhere 0 indicates the hint is placed right on the first <span id=\"ref-for-color-stop①⑨\">color stop</span>,\n\t\t\t\tand 1 indicates the hint is placed right on the second <span id=\"ref-for-color-stop②⓪\">color stop</span>.\n\t\t\t\tLet this percentage be <var>H</var>."
+        },
+        {
+          "html": "For any given point between the two color stops,\n\t\t\t\tdetermine the point’s location as a percentage of the distance between the two <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-stop\" id=\"ref-for-color-stop②①\">color stops</a>,\n\t\t\t\tin the same way as the previous step.\n\t\t\t\tLet this percentage be <var>P</var>."
+        },
+        {
+          "html": "Let <var>C</var>, the color weighting at that point,\n\t\t\t\tbe equal to <code class=\"highlight\"><var><c- nf=\"\">P</c-></var><sup><c- nf=\"\">log</c-><sub><var><c- nf=\"\">H</c-></var></sub><c- p=\"\">(</c-><c- m=\"\">.5</c-><c- p=\"\">)</c-></sup></code>."
+        },
+        {
+          "html": "The color at that point is then a linear blend between the colors of the two <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-stop\" id=\"ref-for-color-stop②②\">color stops</a>,\n\t\t\t\tblending <code class=\"highlight\"><c- p=\"\">(</c-><c- m=\"\">1</c-> - <var>C</var><c- p=\"\">)</c-></code> of the first stop and <var>C</var> of the second stop."
+        }
+      ]
+    },
+    {
+      "html": "When resolving the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#used-value\" id=\"ref-for-used-value\">used</a> positions of each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-stop\" id=\"ref-for-color-stop②⑤\">color stop</a>,\n\tthe following steps must be applied <em>in order</em>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the first <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-stop\" id=\"ref-for-color-stop②⑥\">color stop</a> does not have a position,\n\t\t\tset its position to 0%.\n\t\t\tIf the last <span id=\"ref-for-color-stop②⑦\">color stop</span> does not have a position,\n\t\t\tset its position to 100%."
+        },
+        {
+          "html": "If a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-stop\" id=\"ref-for-color-stop②⑧\">color stop</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-transition-hint\" id=\"ref-for-color-transition-hint⑦\">transition hint</a> has a position\n\t\t\tthat is less than the specified position\n\t\t\tof any <span id=\"ref-for-color-stop②⑨\">color stop</span> or <span id=\"ref-for-color-transition-hint⑧\">transition hint</span> before it in the list,\n\t\t\tset its position to be equal to the largest specified position\n\t\t\tof any <span id=\"ref-for-color-stop③⓪\">color stop</span> or <span id=\"ref-for-color-transition-hint⑨\">transition hint</span> before it."
+        },
+        {
+          "html": "If any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-stop\" id=\"ref-for-color-stop③①\">color stop</a> still does not have a position,\n\t\t\tthen, for each run of adjacent <span id=\"ref-for-color-stop③②\">color stops</span> without positions,\n\t\t\tset their positions so that they are evenly spaced\n\t\t\tbetween the preceding and following <span id=\"ref-for-color-stop③③\">color stops</span> with positions."
+        }
+      ]
+    },
+    {
+      "html": "If the two gradients satisfy all of those constraints,\n\tthey must be interpolated as described below.\n\tIf they fail the third one only,\n\tthey must be abruptly transitioned at 50%\n\t(unless otherwise specified by a future specification).\n\tIf they fail either of the first two constraints,\n\tthey must be interpolated using <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-images-4/#funcdef-cross-fade\" id=\"ref-for-funcdef-cross-fade①⑦\">cross-fade()</a> as for generic images.",
+      "rationale": "convert",
+      "steps": [
+        {
+          "html": "<p>Convert both the start and end gradients to their explicit forms:</p>\n     <dl>\n      <dt data-md=\"\">For linear gradients:\n      </dt><dd data-md=\"\">\n       <ul>\n        <li data-md=\"\">\n         <p>If the direction is specified as an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#angle-value\" id=\"ref-for-angle-value⑥\" title=\"Expands to: deg | grad | rad | turn\">&lt;angle&gt;</a>,\nit is already in its explicit form.</p>\n        </li><li data-md=\"\">\n         <p>Otherwise,\nchange its direction to an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#angle-value\" id=\"ref-for-angle-value⑦\" title=\"Expands to: deg | grad | rad | turn\">&lt;angle&gt;</a> in [<span class=\"css\">0deg</span>,<span class=\"css\">360deg</span>)\nthat would produce an equivalent rendering.</p>\n         <p>If both the start and end gradients had their direction specified with keywords,\nand the absolute difference between the angles their directions mapped to is greater than 180deg,\nadd 360deg to the direction of the gradient with the smaller angle. </p>\n       </li></ul>\n      </dd><dt data-md=\"\">For radial gradients:\n      </dt><dd data-md=\"\">\n       <ul>\n        <li data-md=\"\">\n         <p>If the size is specified as two <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#length-value\" id=\"ref-for-length-value⑤\" title=\"Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | lvb | lvh | lvi | lvmax | lvmin | lvw | mm | pc | pt | px | q | rcap | rch | rem | rex | ric | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw\">&lt;length&gt;</a>s or <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#percentage-value\" id=\"ref-for-percentage-value⑥\">&lt;percentage&gt;</a>s,\nit is already in its explicit form.</p>\n        </li><li data-md=\"\">\n         <p>Otherwise, the size must be changed to a pair of <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#length-value\" id=\"ref-for-length-value⑥\" title=\"Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | lvb | lvh | lvi | lvmax | lvmin | lvw | mm | pc | pt | px | q | rcap | rch | rem | rex | ric | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw\">&lt;length&gt;</a>s\nthat would produce an equivalent ending-shape.\nIf the <a class=\"production css\" data-link-type=\"type\">&lt;rg-ending-shape&gt;</a> was specified as <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/css-images-3/#valdef-radial-shape-circle\" id=\"ref-for-valdef-radial-shape-circle\">circle</a>,\nchange it to <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-images-3/#valdef-radial-shape-ellipse\" id=\"ref-for-valdef-radial-shape-ellipse\">ellipse</a>.</p>\n       </li></ul>\n     </dd></dl>"
+        },
+        {
+          "html": "<p>Interpolate each component and color-stop of the gradients independently.\nFor linear gradients,\nthe only component is the angle.\nFor radial gradients,\nthe components are the horizontal and vertical position of the center\nand the horizontal and vertical axis lengths.</p>"
+        },
+        {
+          "html": "<p>To interpolate a color-stop,\nfirst match each color-stop in the start gradient\nto the corresponding color-stop at the same index in the end gradient.\nFor repeating gradients,\nthe first specified color-stop in the start and end gradients\nare considered to be at the same index,\nand all other color-stops following and preceding are indexed appropriately,\nrepeating and shifting each gradient’s list of color-stops as needed.\nThen, for each pair of color-stops,\ninterpolate the position and color independently.</p>"
+        }
+      ]
+    }
+  ]
+}

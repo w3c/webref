@@ -1,0 +1,375 @@
+{
+  "spec": {
+    "title": "Measure Memory API",
+    "url": "https://wicg.github.io/performance-measure-memory/"
+  },
+  "algorithms": [
+    {
+      "name": "Performance/measureUserAgentSpecificMemory()",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-performance-measureuseragentspecificmemory",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Performance\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-performance-measureuseragentspecificmemory\"><code>measureUserAgentSpecificMemory()</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-agent\" id=\"ref-for-sec-agent\">the current Realm</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object\">settings objects</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-cross-origin-isolated-capability\" id=\"ref-for-concept-settings-object-cross-origin-isolated-capability①\">cross-origin isolated capability</a> is true.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Performance\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-performance-measureuseragentspecificmemory\"><code>measureUserAgentSpecificMemory()</code></dfn> method steps are:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>the current agent cluster</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-agent\" id=\"ref-for-sec-agent②\">the current Realm</a>'s <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-agents\" id=\"ref-for-sec-agents\">agent</a>'s <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" id=\"ref-for-sec-agent-clusters②\">agent cluster</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>agent clusters</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#getting-all-agent-clusters\" id=\"ref-for-getting-all-agent-clusters\">getting all agent clusters</a> given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-agent\" id=\"ref-for-sec-agent③\">the current Realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-promise\" id=\"ref-for-idl-promise③\">Promise</a></code>.</p>"
+        },
+        {
+          "html": "<p>Start asynchronous <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#implementation-defined-memory-measurement\" id=\"ref-for-implementation-defined-memory-measurement\">implementation-defined memory measurement</a> given <var>the current agent cluster</var>, <var>agent clusters</var>, and <var>promise</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "memory measurement allowed predicate",
+      "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-allowed-predicate",
+      "html": "To evaluate <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"memory-measurement-allowed-predicate\">memory measurement allowed predicate</dfn> given a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-code-realms\" id=\"ref-for-sec-code-realms⑨\">JavaScript realm</a> <var>realm</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>global object</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>global object</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#sharedworkerglobalscope\" id=\"ref-for-sharedworkerglobalscope\">SharedWorkerGlobalScope</a></code>, then return true.</p>"
+        },
+        {
+          "html": "<p>If <var>global object</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope\" id=\"ref-for-serviceworkerglobalscope\">ServiceWorkerGlobalScope</a></code>, then return true.</p>"
+        },
+        {
+          "html": "To evaluate <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"memory-measurement-allowed-predicate\">memory measurement allowed predicate</dfn> given a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-code-realms\" id=\"ref-for-sec-code-realms⑨\">JavaScript realm</a> <var>realm</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>settings object</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object①\">settings object</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>settings object</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a> is the same as <var>settings object</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin\">top-level origin</a>, then return true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "getting all agent clusters",
+      "href": "https://wicg.github.io/performance-measure-memory/#getting-all-agent-clusters",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"getting all agent clusters|get all agent clusters\" data-noexport=\"\" id=\"getting-all-agent-clusters\">get all agent clusters</dfn> given an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-code-realms\" id=\"ref-for-sec-code-realms①⓪\">JavaScript realm</a> <var>realm</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"getting all agent clusters|get all agent clusters\" data-noexport=\"\" id=\"getting-all-agent-clusters\">get all agent clusters</dfn> given an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-code-realms\" id=\"ref-for-sec-code-realms①⓪\">JavaScript realm</a> <var>realm</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>group</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context-group\" id=\"ref-for-browsing-context-group\">browsing context group</a> that contains <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global②\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#window-bc\" id=\"ref-for-window-bc\">browsing context</a>.</p>"
+            },
+            {
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values\">getting the values</a> of <var>group</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#agent-cluster-map\" id=\"ref-for-agent-cluster-map\">agent cluster map</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return « <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-agents\" id=\"ref-for-sec-agents①\">agent</a>'s <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" id=\"ref-for-sec-agent-clusters③\">agent cluster</a> ».</p>"
+        }
+      ]
+    },
+    {
+      "name": "implementation-defined memory measurement",
+      "href": "https://wicg.github.io/performance-measure-memory/#implementation-defined-memory-measurement",
+      "html": "To perform <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"implementation-defined-memory-measurement\">implementation-defined memory measurement</dfn> given given an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" id=\"ref-for-sec-agent-clusters④\">agent cluster</a> <var>the current agent cluster</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">set</a> of <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" id=\"ref-for-sec-agent-clusters⑤\">agent clusters</a> <var>agent clusters</var>, and\n  a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-promise\" id=\"ref-for-idl-promise④\">Promise</a></code> <var>promise</var> run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>intermediate memory measurement</var> be <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#intermediate-memory-measurement\" id=\"ref-for-intermediate-memory-measurement①\">intermediate memory measurement</a> performed for <var>the current agent cluster</var> and <var>agent clusters</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">Queue a global task</a> on the TODO task source given <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> to <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>promise</var> with the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#creating-a-new-memory-measurement\" id=\"ref-for-creating-a-new-memory-measurement\">creating a new memory measurement</a> given <var>intermediate memory measurement</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "creating a new memory measurement",
+      "href": "https://wicg.github.io/performance-measure-memory/#creating-a-new-memory-measurement",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"creating a new memory measurement|create a new memory measurement\" data-noexport=\"\" id=\"creating-a-new-memory-measurement\">create a new memory measurement</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#intermediate-memory-measurement\" id=\"ref-for-intermediate-memory-measurement②\">intermediate memory measurement</a> <var>intermediate measurement</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>bytes</var> be 0.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"creating a new memory measurement|create a new memory measurement\" data-noexport=\"\" id=\"creating-a-new-memory-measurement\">create a new memory measurement</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#intermediate-memory-measurement\" id=\"ref-for-intermediate-memory-measurement②\">intermediate memory measurement</a> <var>intermediate measurement</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>bytes</var> to <var>bytes</var> plus <var>intermediate entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#intermediate-memory-breakdown-entry-bytes\" id=\"ref-for-intermediate-memory-breakdown-entry-bytes\">bytes</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>breakdown</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> to <var>breakdown</var> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dictdef-memorybreakdownentry\" id=\"ref-for-dictdef-memorybreakdownentry①\">MemoryBreakdownEntry</a></code> whose:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-bytes\" id=\"ref-for-dom-memorybreakdownentry-bytes①\">bytes</a></code> is 0,</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-attribution\" id=\"ref-for-dom-memorybreakdownentry-attribution①\">attribution</a></code> is « »,</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-types\" id=\"ref-for-dom-memorybreakdownentry-types①\">types</a></code> is « ».</p>\n      </li></ul>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"creating a new memory measurement|create a new memory measurement\" data-noexport=\"\" id=\"creating-a-new-memory-measurement\">create a new memory measurement</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#intermediate-memory-measurement\" id=\"ref-for-intermediate-memory-measurement②\">intermediate memory measurement</a> <var>intermediate measurement</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>breakdown entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#creating-a-new-memory-breakdown-entry\" id=\"ref-for-creating-a-new-memory-breakdown-entry\">creating a new memory breakdown entry</a> given <var>intermediate entry</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>breakdown entry</var> to <var>breakdown</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Randomize the order of the items in <var>breakdown</var>.</p>"
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dictdef-memorymeasurement\" id=\"ref-for-dictdef-memorymeasurement③\">MemoryMeasurement</a></code> whose:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memorymeasurement-bytes\" id=\"ref-for-dom-memorymeasurement-bytes②\">bytes</a></code> is <var>bytes</var>,</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memorymeasurement-breakdown\" id=\"ref-for-dom-memorymeasurement-breakdown①\">breakdown</a></code> is <var>breakdown</var>.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "creating a new memory breakdown entry",
+      "href": "https://wicg.github.io/performance-measure-memory/#creating-a-new-memory-breakdown-entry",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"creating a new memory breakdown entry|create a new memory breakdown entry\" data-noexport=\"\" id=\"creating-a-new-memory-breakdown-entry\">create a new memory breakdown entry</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#intermediate-memory-breakdown-entry\" id=\"ref-for-intermediate-memory-breakdown-entry④\">intermediate memory breakdown entry</a> <var>intermediate entry</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>attribution</var> a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"creating a new memory breakdown entry|create a new memory breakdown entry\" data-noexport=\"\" id=\"creating-a-new-memory-breakdown-entry\">create a new memory breakdown entry</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#intermediate-memory-breakdown-entry\" id=\"ref-for-intermediate-memory-breakdown-entry④\">intermediate memory breakdown entry</a> <var>intermediate entry</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>attribution entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#creating-a-new-memory-attribution\" id=\"ref-for-creating-a-new-memory-attribution\">creating a new memory attribution</a> given <var>realm</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>attribution entry</var> to <var>attribution</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>types</var> be <var>intermediate entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#intermediate-memory-breakdown-entry-types\" id=\"ref-for-intermediate-memory-breakdown-entry-types\">types</a>.</p>"
+        },
+        {
+          "html": "<p>Randomize the order of the items in <var>types</var>.</p>"
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dictdef-memorybreakdownentry\" id=\"ref-for-dictdef-memorybreakdownentry②\">MemoryBreakdownEntry</a></code> whose:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-bytes\" id=\"ref-for-dom-memorybreakdownentry-bytes②\">bytes</a></code> is <var>intermediate entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#intermediate-memory-breakdown-entry-bytes\" id=\"ref-for-intermediate-memory-breakdown-entry-bytes①\">bytes</a>,</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-attribution\" id=\"ref-for-dom-memorybreakdownentry-attribution②\">attribution</a></code> is <var>attribution</var>,</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-types\" id=\"ref-for-dom-memorybreakdownentry-types②\">types</a></code> is <var>types</var>.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "creating a new memory attribution",
+      "href": "https://wicg.github.io/performance-measure-memory/#creating-a-new-memory-attribution",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"creating a new memory attribution|create a new memory attribution\" data-noexport=\"\" id=\"creating-a-new-memory-attribution\">create a new memory attribution</dfn> given a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-code-realms\" id=\"ref-for-sec-code-realms①②\">JavaScript realm</a> <var>realm</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>token</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global③\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#windoworworkerglobalscope-memory-attribution-token\" id=\"ref-for-windoworworkerglobalscope-memory-attribution-token\">memory attribution token</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"creating a new memory attribution|create a new memory attribution\" data-noexport=\"\" id=\"creating-a-new-memory-attribution\">create a new memory attribution</dfn> given a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-code-realms\" id=\"ref-for-sec-code-realms①②\">JavaScript realm</a> <var>realm</var>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dictdef-memoryattribution\" id=\"ref-for-dictdef-memoryattribution①\">MemoryAttribution</a></code> whose:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-url\" id=\"ref-for-dom-memoryattribution-url①\">url</a></code> is \"<code>cross-origin-url</code>\",</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-container\" id=\"ref-for-dom-memoryattribution-container①\">container</a></code> is <var>token</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token-container\" id=\"ref-for-memory-attribution-token-container\">container</a> if it is not null; otherwise, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-container\" id=\"ref-for-dom-memoryattribution-container②\">container</a></code> entry is omitted,</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-scope\" id=\"ref-for-dom-memoryattribution-scope①\">scope</a></code> is \"<code>cross-origin-aggregated</code>\".</p>\n        </li></ul>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>scope name</var> be <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-identifier\" id=\"ref-for-dfn-identifier\">identifier</a> of <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global④\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-interface\" id=\"ref-for-dfn-interface\">interface</a>.</p>"
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dictdef-memoryattribution\" id=\"ref-for-dictdef-memoryattribution②\">MemoryAttribution</a></code> whose:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-url\" id=\"ref-for-dom-memoryattribution-url②\">url</a></code> is <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object②\">settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-creation-url\" id=\"ref-for-concept-environment-creation-url\">creation URL</a>,</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-container\" id=\"ref-for-dom-memoryattribution-container③\">container</a></code> is <var>token</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token-container\" id=\"ref-for-memory-attribution-token-container①\">container</a> if it is not null, otherwise, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-container\" id=\"ref-for-dom-memoryattribution-container④\">container</a></code> entry is omitted,</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-scope\" id=\"ref-for-dom-memoryattribution-scope②\">scope</a></code> is <var>scope name</var>.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "obtain a window memory attribution token",
+      "href": "https://wicg.github.io/performance-measure-memory/#obtain-a-window-memory-attribution-token",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"obtain a window memory attribution token|obtaining a window memory attribution token\" data-noexport=\"\" id=\"obtain-a-window-memory-attribution-token\">obtain a window memory attribution token</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> <var>origin</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> <var>parent origin</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>top-level origin</var>,\n  an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/dom.html#htmlelement\" id=\"ref-for-htmlelement\">HTMLElement</a></code> <var>container element</var>, and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token\" id=\"ref-for-memory-attribution-token\">memory attribution token</a> <var>parent token</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"obtain a window memory attribution token|obtaining a window memory attribution token\" data-noexport=\"\" id=\"obtain-a-window-memory-attribution-token\">obtain a window memory attribution token</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> <var>origin</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> <var>parent origin</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>top-level origin</var>,\n  an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/dom.html#htmlelement\" id=\"ref-for-htmlelement\">HTMLElement</a></code> <var>container element</var>, and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token\" id=\"ref-for-memory-attribution-token\">memory attribution token</a> <var>parent token</var>:",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>parent origin</var> is null.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>parent token</var> is null.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>origin</var> is equal to <var>parent origin</var></p>"
+            },
+            {
+              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token\" id=\"ref-for-memory-attribution-token①\">memory attribution token</a> whose:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token-container\" id=\"ref-for-memory-attribution-token-container②\">container</a> is null,</p>\n         </li><li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token-cross-origin-aggregated-flag\" id=\"ref-for-memory-attribution-token-cross-origin-aggregated-flag①\">cross-origin aggregated flag</a> is false.</p>\n        </li></ul>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"obtain a window memory attribution token|obtaining a window memory attribution token\" data-noexport=\"\" id=\"obtain-a-window-memory-attribution-token\">obtain a window memory attribution token</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> <var>origin</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> <var>parent origin</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>top-level origin</var>,\n  an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/dom.html#htmlelement\" id=\"ref-for-htmlelement\">HTMLElement</a></code> <var>container element</var>, and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token\" id=\"ref-for-memory-attribution-token\">memory attribution token</a> <var>parent token</var>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <var>parent token</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>container</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#extract-container-element-attributes\" id=\"ref-for-extract-container-element-attributes\">extracting container element attributes</a> given <var>container element</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"obtain a window memory attribution token|obtaining a window memory attribution token\" data-noexport=\"\" id=\"obtain-a-window-memory-attribution-token\">obtain a window memory attribution token</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> <var>origin</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> <var>parent origin</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>top-level origin</var>,\n  an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/dom.html#htmlelement\" id=\"ref-for-htmlelement\">HTMLElement</a></code> <var>container element</var>, and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token\" id=\"ref-for-memory-attribution-token\">memory attribution token</a> <var>parent token</var>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token\" id=\"ref-for-memory-attribution-token②\">memory attribution token</a> whose:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token-container\" id=\"ref-for-memory-attribution-token-container③\">container</a> is <var>container</var>,</p>\n         </li><li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token-cross-origin-aggregated-flag\" id=\"ref-for-memory-attribution-token-cross-origin-aggregated-flag②\">cross-origin aggregated flag</a> is false.</p>\n        </li></ul>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token\" id=\"ref-for-memory-attribution-token③\">memory attribution token</a> whose:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token-container\" id=\"ref-for-memory-attribution-token-container④\">container</a> is <var>container</var>,</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token-cross-origin-aggregated-flag\" id=\"ref-for-memory-attribution-token-cross-origin-aggregated-flag③\">cross-origin aggregated flag</a> is true.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "obtain a worker memory attribution token",
+      "href": "https://wicg.github.io/performance-measure-memory/#obtain-a-worker-memory-attribution-token",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"obtain a worker memory attribution token|obtaining a worker memory attribution token\" data-noexport=\"\" id=\"obtain-a-worker-memory-attribution-token\">obtain a worker memory attribution token</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope\">WorkerGlobalScope</a></code> <var>worker global scope</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>outside settings</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>worker global scope</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope\" id=\"ref-for-dedicatedworkerglobalscope\">DedicatedWorkerGlobalScope</a></code>, then\n return <var>outside settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#windoworworkerglobalscope-memory-attribution-token\" id=\"ref-for-windoworworkerglobalscope-memory-attribution-token①\">memory attribution token</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>worker global scope</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#sharedworkerglobalscope\" id=\"ref-for-sharedworkerglobalscope①\">SharedWorkerGlobalScope</a></code> or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope\" id=\"ref-for-serviceworkerglobalscope①\">ServiceWorkerGlobalScope</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token\" id=\"ref-for-memory-attribution-token④\">memory attribution token</a> whose:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token-container\" id=\"ref-for-memory-attribution-token-container⑤\">container</a> is null,</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token-cross-origin-aggregated-flag\" id=\"ref-for-memory-attribution-token-cross-origin-aggregated-flag④\">cross-origin aggregated flag</a> is false.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "extract container element attributes",
+      "href": "https://wicg.github.io/performance-measure-memory/#extract-container-element-attributes",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"extract container element attributes|extracting container element attributes\" data-noexport=\"\" id=\"extract-container-element-attributes\">extract container element attributes</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/dom.html#htmlelement\" id=\"ref-for-htmlelement①\">HTMLElement</a></code> <var>container element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"extract container element attributes|extracting container element attributes\" data-noexport=\"\" id=\"extract-container-element-attributes\">extract container element attributes</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/dom.html#htmlelement\" id=\"ref-for-htmlelement①\">HTMLElement</a></code> <var>container element</var>:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "\"iframe\"",
+                  "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dictdef-memoryattributioncontainer\" id=\"ref-for-dictdef-memoryattributioncontainer②\">MemoryAttributionContainer</a></code> whose:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattributioncontainer-id\" id=\"ref-for-dom-memoryattributioncontainer-id①\">id</a></code> is <var>container element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute\" id=\"ref-for-the-id-attribute\">id</a></code> attribute,</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattributioncontainer-src\" id=\"ref-for-dom-memoryattributioncontainer-src①\">src</a></code> is <var>container element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src\" id=\"ref-for-attr-iframe-src\">src</a></code> attribute,</p>\n        </li></ul>"
+                },
+                {
+                  "case": "\"frame\"",
+                  "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dictdef-memoryattributioncontainer\" id=\"ref-for-dictdef-memoryattributioncontainer③\">MemoryAttributionContainer</a></code> whose:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattributioncontainer-id\" id=\"ref-for-dom-memoryattributioncontainer-id②\">id</a></code> is <var>container element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute\" id=\"ref-for-the-id-attribute①\">id</a></code> attribute,</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattributioncontainer-src\" id=\"ref-for-dom-memoryattributioncontainer-src②\">src</a></code> is <var>container element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/obsolete.html#dom-frame-src\" id=\"ref-for-dom-frame-src\">src</a></code> attribute,</p>\n        </li></ul>"
+                },
+                {
+                  "case": "\"object\"",
+                  "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dictdef-memoryattributioncontainer\" id=\"ref-for-dictdef-memoryattributioncontainer④\">MemoryAttributionContainer</a></code> whose:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattributioncontainer-id\" id=\"ref-for-dom-memoryattributioncontainer-id③\">id</a></code> is <var>container element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute\" id=\"ref-for-the-id-attribute②\">id</a></code> attribute,</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/performance-measure-memory/#dom-memoryattributioncontainer-src\" id=\"ref-for-dom-memoryattributioncontainer-src③\">src</a></code> is <var>container element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-data\" id=\"ref-for-attr-object-data①\">data</a></code> attribute,</p>\n        </li></ul>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let realm execution context be the result of creating a new JavaScript realm given agent\n and the following customizations:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>...</p>\n       </li><li data-md=\"\">\n        <p>Set global object’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#windoworworkerglobalscope-memory-attribution-token\" id=\"ref-for-windoworworkerglobalscope-memory-attribution-token③\">memory attribution token</a> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#obtain-a-worker-memory-attribution-token\" id=\"ref-for-obtain-a-worker-memory-attribution-token\">obtaining a worker memory attribution token</a> given\n the global object and <var>outside settings</var>.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Otherwise:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>token</var> be an empty <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#memory-attribution-token\" id=\"ref-for-memory-attribution-token⑥\">memory attribution token</a>.</p>"
+            },
+            {
+              "html": "If <var>browsingContext</var> is not a top-level browsing context, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>parentToken</var> be <var>parentEnvironment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#windoworworkerglobalscope-memory-attribution-token\" id=\"ref-for-windoworworkerglobalscope-memory-attribution-token⑤\">memory attribution token</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>token</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#obtain-a-window-memory-attribution-token\" id=\"ref-for-obtain-a-window-memory-attribution-token\">obtaining a window memory attribution token</a> with <var>origin</var>, <var>parentEnvironment</var>’s origin, <var>topLevelOrigin</var>, <var>browsingContext</var>’s container, <var>parentToken</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Else, set <var>token</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#obtain-a-window-memory-attribution-token\" id=\"ref-for-obtain-a-window-memory-attribution-token①\">obtaining a window memory attribution token</a> with <var>origin</var>, null <var>topLevelOrigin</var>, null, null.</p>"
+            },
+            {
+              "html": "<p>Let <var>window global scope</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑤\">global object</a> of <var>realm execution context</var>’s Realm component.</p>"
+            },
+            {
+              "html": "<p>Set <var>window global scope</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#windoworworkerglobalscope-memory-attribution-token\" id=\"ref-for-windoworworkerglobalscope-memory-attribution-token⑥\">memory attribution token</a> to <var>token</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>token</var> be an empty token.</p>"
+        },
+        {
+          "html": "<p>If <var>embedder</var> is null, then set <var>token</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#obtain-a-window-memory-attribution-token\" id=\"ref-for-obtain-a-window-memory-attribution-token②\">obtaining a window memory attribution token</a> with <var>origin</var>,\n  null, <var>topLevelOrigin</var>, null, null.</p>"
+        },
+        {
+          "html": "<p>Else, set <var>token</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#obtain-a-window-memory-attribution-token\" id=\"ref-for-obtain-a-window-memory-attribution-token③\">obtaining a window memory attribution token</a> with <var>origin</var>, <var>embedder</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>'s origin, <var>topLevelOrigin</var>, <var>embedder</var>, <var>embedder</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#windoworworkerglobalscope-memory-attribution-token\" id=\"ref-for-windoworworkerglobalscope-memory-attribution-token⑧\">memory attribution token</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>window global scope</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑥\">global object</a> of <var>realm execution context</var>’s Realm component.</p>"
+        },
+        {
+          "html": "<p>Set <var>window global scope</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/performance-measure-memory/#windoworworkerglobalscope-memory-attribution-token\" id=\"ref-for-windoworworkerglobalscope-memory-attribution-token⑨\">memory attribution token</a> to <var>token</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

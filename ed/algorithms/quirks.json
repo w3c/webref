@@ -1,0 +1,80 @@
+{
+  "spec": {
+    "title": "Quirks Mode Standard",
+    "url": "https://quirks.spec.whatwg.org/"
+  },
+  "algorithms": [
+    {
+      "html": "In <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\" id=\"ref-for-concept-document-quirks③\">quirks mode</a>, for the purpose of calculating the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height\">height</a> of an element <var>element</var>, if the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed value</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-position\" id=\"ref-for-propdef-position\">position</a> property of <var>element</var> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-position-relative\" id=\"ref-for-valdef-position-relative\">relative</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-position-static\" id=\"ref-for-valdef-position-static\">static</a>, the specified value for the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height①\">height</a> property of <var>element</var> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#percentage-value\" id=\"ref-for-percentage-value\">&lt;percentage&gt;</a>, and <var>element</var> does not have a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed value</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-display-4/#propdef-display\" id=\"ref-for-propdef-display\">display</a> property that is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-display-4/#valdef-display-table-row\" id=\"ref-for-valdef-display-table-row\">table-row</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-display-4/#valdef-display-table-row-group\" id=\"ref-for-valdef-display-table-row-group\">table-row-group</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-display-4/#valdef-display-table-header-group\" id=\"ref-for-valdef-display-table-header-group\">table-header-group</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-display-4/#valdef-display-table-footer-group\" id=\"ref-for-valdef-display-table-footer-group\">table-footer-group</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-display-4/#valdef-display-table-cell\" id=\"ref-for-valdef-display-table-cell\">table-cell</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-display-4/#valdef-display-table-caption\" id=\"ref-for-valdef-display-table-caption\">table-caption</a>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block\">containing block</a> of <var>element</var> must be calculated using the following algorithm, aborting on\nthe first step that returns a value:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>element</var> be the nearest ancestor <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block①\">containing block</a> of <var>element</var>, if there is\n one. Otherwise, return the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#initial-containing-block\" id=\"ref-for-initial-containing-block\">initial containing block</a>. </p>"
+        },
+        {
+          "html": "<p>If <var>element</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②\">computed value</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-display-4/#propdef-display\" id=\"ref-for-propdef-display①\">display</a> property that is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-display-4/#valdef-display-table-cell\" id=\"ref-for-valdef-display-table-cell①\">table-cell</a>, then return a UA-defined value. </p>"
+        },
+        {
+          "html": "<p>If <var>element</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value③\">computed value</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height②\">height</a> property that is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto\">auto</a>, then return <var>element</var>. </p>"
+        },
+        {
+          "html": "<p>If <var>element</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value④\">computed value</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-3/#propdef-position\" id=\"ref-for-propdef-position①\">position</a> property that is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-3/#valdef-position-absolute\" id=\"ref-for-valdef-position-absolute\">absolute</a>, or if <var>element</var> is a not a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#block-container\" id=\"ref-for-block-container\">block container</a> or a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-tables-3/#table-wrapper-box\" id=\"ref-for-table-wrapper-box\">table wrapper box</a>, then return <var>element</var>. </p>"
+        },
+        {
+          "html": "<p>Jump to the first step. </p>"
+        }
+      ]
+    },
+    {
+      "html": "...then <var>element</var> must have its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/box.html#border-edge\" id=\"ref-for-border-edge\">border box</a> size in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction\" id=\"ref-for-block-flow-direction\">block flow direction</a> set\nusing the following algorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>margins</var> be sum of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value②\">used values</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-left\" id=\"ref-for-propdef-margin-left\">margin-left</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-right\" id=\"ref-for-propdef-margin-right\">margin-right</a> properties of <var>element</var> if <var>element</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode\" id=\"ref-for-vertical-writing-mode②\">vertical writing mode</a>, otherwise let <var>margins</var> be\n the sum of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value③\">used values</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top\">margin-top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom\">margin-bottom</a> properties of <var>element</var>. </p>"
+        },
+        {
+          "html": "<p>Let <var>size</var> be the size of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#initial-containing-block\" id=\"ref-for-initial-containing-block①\">initial containing block</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction\" id=\"ref-for-block-flow-direction①\">block flow\n direction</a> minus <var>margins</var>. </p>"
+        },
+        {
+          "html": "<p>Return the bigger value of <var>size</var> and the normal <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/box.html#border-edge\" id=\"ref-for-border-edge①\">border box</a> size the element would\n have according to the CSS specification. </p>"
+        }
+      ]
+    },
+    {
+      "html": "...then <var>body</var> must have its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/box.html#border-edge\" id=\"ref-for-border-edge②\">border box</a> size in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction\" id=\"ref-for-block-flow-direction②\">block flow direction</a> set using\nthe following algorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>margins</var> be the sum of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value④\">used values</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-left\" id=\"ref-for-propdef-margin-left①\">margin-left</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-right\" id=\"ref-for-propdef-margin-right①\">margin-right</a> properties of <var>body</var> if <var>body</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode\" id=\"ref-for-vertical-writing-mode④\">vertical writing mode</a>, otherwise let <var>margins</var> be the\n sum of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value⑤\">used values</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top①\">margin-top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-box-4/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom①\">margin-bottom</a> properties of <var>body</var>. </p>"
+        },
+        {
+          "html": "<p>Let <var>size</var> be the size of <var>body</var>’s parent element’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/box.html#content-edge\" id=\"ref-for-content-edge\">content box</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction\" id=\"ref-for-block-flow-direction③\">block flow\n direction</a> minus <var>margins</var>. </p>"
+        },
+        {
+          "html": "<p>Return the bigger value of <var>size</var> and the normal <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/box.html#border-edge\" id=\"ref-for-border-edge③\">border box</a> size the element would\n have according to the CSS specification. </p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①⑤\">computed value</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-color-4/#propdef-color\" id=\"ref-for-propdef-color①\">color</a> property of an element <var>element</var> must be calculated\nusing the following algorithm:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the specified value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-color-4/#propdef-color\" id=\"ref-for-propdef-color②\">color</a> property of <var>element</var> is not <span class=\"css\">quirk-inherit</span>, jump to the last step. </p>"
+        },
+        {
+          "html": "<p>If <var>element</var> is not a <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/tables.html#the-table-element\" id=\"ref-for-the-table-element①\">table</a></code> element, jump to the last step. </p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://quirks.spec.whatwg.org/#documents-body-element\" id=\"ref-for-documents-body-element②\">document’s body element</a> is null, jump to the last step. </p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value⑧\">used value</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-color-4/#propdef-color\" id=\"ref-for-propdef-color③\">color</a> property of the <a data-link-type=\"dfn\" href=\"https://quirks.spec.whatwg.org/#documents-body-element\" id=\"ref-for-documents-body-element③\">document’s body element</a>.\n Abort these steps. </p>"
+        },
+        {
+          "html": "<p>If the specified value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-color-4/#propdef-color\" id=\"ref-for-propdef-color④\">color</a> property of <var>element</var> is <span class=\"css\">quirk-inherit</span>, let the\n specified value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-color-4/#propdef-color\" id=\"ref-for-propdef-color⑤\">color</a> property of <var>element</var> be the initial value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-color-4/#propdef-color\" id=\"ref-for-propdef-color⑥\">color</a> property\n according to the CSS specification. Return the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①⑥\">computed value</a> of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-color-4/#propdef-color\" id=\"ref-for-propdef-color⑦\">color</a> property of <var>element</var> as specified in the CSS specification. </p>"
+        }
+      ]
+    }
+  ]
+}

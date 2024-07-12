@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "title": "Verifiable Credentials Data Model v2.0",
+    "url": "https://w3c.github.io/vc-data-model/"
+  },
+  "algorithms": [
+    {
+      "html": "The verification algorithm is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Ensure that the securing mechanism has properly protected the\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-model/#dfn-conforming-document\" class=\"internalDFN\" id=\"ref-for-dfn-conforming-document-30\">conforming document</a> by performing the following steps:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set the <var>verifyProof</var> function by using the <var>inputMediaType</var> and the\n<a data-cite=\"?VC-SPECS#securing-mechanisms\" href=\"https://w3c.github.io/vc-specs-dir/#securing-mechanisms\">Securing Mechanisms</a> section of\nthe <cite><a data-cite=\"?VC-SPECS\" data-matched-text=\"[[[?VC-SPECS]]]\" href=\"https://w3c.github.io/vc-specs-dir/\">Verifiable Credential Specifications Directory</a></cite> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-data-model/#bib-vc-specs\" title=\"Verifiable Credential Specifications Directory\">VC-SPECS</a></cite>], or other mechanisms known to the\nimplementation, to determine the cryptographic suite to use when verifying\nthe securing mechanism. The <var>verifyProof</var> function <em class=\"rfc2119\">MUST</em> implement the interface\ndescribed in <a href=\"https://w3c.github.io/vc-data-model/#securing-mechanism-specifications\" class=\"sec-ref\"><bdi class=\"secno\">5.12 </bdi>Securing Mechanism Specifications</a>."
+            },
+            {
+              "html": "Set <var>result</var> to the result of passing <var>inputBytes</var> and\n<var>inputMediaType</var> to the <var>verifyProof</var> function. If the call was\nsuccessful, <var>result</var> will contain the <var>status</var>,\n<var>document</var>, <var>mediaType</var>, <var>controller</var>,\n<var>controllerDocument</var>, <var>warnings</var>, and <var>errors</var>\nproperties."
+            },
+            {
+              "html": "If <var>result</var>.<var>status</var> is set to <code>false</code>, add a\n<a href=\"https://w3c.github.io/vc-data-model/#CRYPTOGRAPHIC_SECURITY_ERROR\">CRYPTOGRAPHIC_SECURITY_ERROR</a> to\n<var>result</var>.<var>errors</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>result</var>.<var>status</var> is set to <code>true</code>, ensure that\n<var>result</var>.<var>document</var> is a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-model/#dfn-conforming-document\" class=\"internalDFN\" id=\"ref-for-dfn-conforming-document-31\">conforming document</a>. If it is\nnot, set <var>result</var>.<var>status</var> to <code>false</code>, remove the\n<var>document</var> property from <var>result</var>, and add at least\none <a href=\"https://w3c.github.io/vc-data-model/#MALFORMED_VALUE_ERROR\">MALFORMED_VALUE_ERROR</a> to\n<var>result</var>.<var>errors</var>. Other warnings and errors <em class=\"rfc2119\">MAY</em> be included\nto aid any debugging process."
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
+    }
+  ]
+}

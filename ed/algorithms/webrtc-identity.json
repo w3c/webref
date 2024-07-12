@@ -1,0 +1,213 @@
+{
+  "spec": {
+    "title": "Identity for WebRTC 1.0",
+    "url": "https://w3c.github.io/webrtc-identity/"
+  },
+  "algorithms": [
+    {
+      "html": "An IdP is used to generate an identity assertion as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code>setIdentityProvider()</code> method has been called,\n          the IdP provided shall be used."
+        },
+        {
+          "html": "If the <code>setIdentityProvider()</code> method has not been\n          called, then the user agent <em class=\"rfc2119\">MAY</em> use an IdP configured into the\n          browser."
+        }
+      ]
+    },
+    {
+      "html": "The identity assertion request process is triggered by a call to\n      <code>createOffer</code>, <code>createAnswer</code>, or\n      <code>getIdentityAssertion</code>. When these calls are invoked and an\n      identity provider has been set, the following steps are executed:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> instantiates an IdP as\n          described in <a href=\"https://w3c.github.io/webrtc-identity/#sec.identity-proxy-communications\">Identity\n          Provider Selection</a> and <a href=\"https://w3c.github.io/webrtc-identity/#sec.register-idp\">Registering an\n          IdP Proxy</a>. If the IdP cannot be loaded, instantiated, or the IdP\n          proxy is not registered, this process fails.</p>"
+        },
+        {
+          "html": "<p>If the <code>RTCPeerConnection</code> was not constructed with a set\n          of certificates, and one has not yet been generated, wait\n          for it to be generated.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> invokes the <code><a data-link-for=\"RTCIdentityProvider\" href=\"https://w3c.github.io/webrtc-identity/#dom-rtcidentityprovider-generateassertion\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-rtcidentityprovider-generateassertion-2\"><code>generateAssertion</code></a></code> method on the\n          <code><a href=\"https://w3c.github.io/webrtc-identity/#dom-rtcidentityprovider\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-rtcidentityprovider-7\"><code>RTCIdentityProvider</code></a></code> methods registered by the\n          IdP.</p>\n          <p>The <code>RTCPeerConnection</code> generates the\n          <var>contents</var> parameter to this method as described in\n          [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-identity/#bib-rtcweb-security-arch\" title=\"WebRTC Security Architecture\">RTCWEB-SECURITY-ARCH</a></cite>]. The value of <var>contents</var> includes\n          the fingerprint of the certificate that was selected or generated\n          during the construction of the <code>RTCPeerConnection</code>. The\n          <var>origin</var> parameter contains the origin of the script that\n          calls the <code>RTCPeerConnection</code> method that triggers this\n          behavior. The <var>usernameHint</var> value is the same value that is\n          provided to <code>setIdentityProvider</code>, if any such value\n          was provided.</p>"
+        },
+        {
+          "html": "<p>The IdP proxy returns a Promise to the\n          <code>RTCPeerConnection</code>. The IdP proxy is expected to generate\n          the identity assertion asynchronously.</p>\n          <p>If the user has been authenticated by the IdP, and the IdP is able\n          to generate an identity assertion, the IdP <a data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"resolve\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolves</a> the promise with\n          an identity assertion in the form of an\n          <code><a href=\"https://w3c.github.io/webrtc-identity/#dom-rtcidentityassertionresult\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-rtcidentityassertionresult-5\"><code>RTCIdentityAssertionResult</code></a></code>.</p>\n          <p>This step depends entirely on the IdP. The methods by which an IdP\n          authenticates users or generates assertions is not specified, though\n          they could involve interacting with the IdP server or other\n          servers.</p>"
+        },
+        {
+          "html": "<p>If the IdP proxy produces an error or returns a promise that does\n          not <a data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"resolve\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> to a valid\n          <code><a href=\"https://w3c.github.io/webrtc-identity/#dom-rtcidentityassertionresult\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-rtcidentityassertionresult-6\"><code>RTCIdentityAssertionResult</code></a></code> (see <a href=\"https://w3c.github.io/webrtc-identity/#sec.idp-error-handling\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">8. </bdi>IdP Error Handling</a>), then assertion generation fails.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> <em class=\"rfc2119\">MAY</em> store the identity\n          assertion for use with future offers or answers. If a fresh identity\n          assertion is needed for any reason, applications can create a new\n          <code>RTCPeerConnection</code>.</p>"
+        },
+        {
+          "html": "<p>If the identity request was triggered by a\n          <code>createOffer()</code> or <code>createAnswer()</code>, then the\n          assertion is converted to a JSON string, base64-encoded and inserted\n          into an <code>a=identity</code> attribute in the session\n          description.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The identity assertion request process involves the following\n      asynchronous steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> awaits any prior identity\n          validation. Only one identity validation can run at a time for an\n          <code>RTCPeerConnection</code>. This can happen because the\n          resolution of <code>setRemoteDescription</code> is not blocked by\n          identity validation unless there is a <a href=\"https://w3c.github.io/webrtc-identity/#target-peer-identity\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-target-peer-identity-1\">target peer\n          identity</a>.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> loads the identity assertion\n          from the session description and decodes the base64 value, then\n          parses the resulting JSON. The <var>idp</var> parameter of the\n          resulting dictionary contains a <var>domain</var> and an optional\n          <var>protocol</var> value that identifies the IdP, as described in\n          [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-identity/#bib-rtcweb-security-arch\" title=\"WebRTC Security Architecture\">RTCWEB-SECURITY-ARCH</a></cite>].</p>"
+        },
+        {
+          "html": "<p>If the identity assertion is malformed, or if <var>protocol</var>\n          includes the character <code>'/'</code> or <code>'\\'</code>,\n          this process fails.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> instantiates the identified IdP\n          as described in <a href=\"https://w3c.github.io/webrtc-identity/#sec.identity-proxy-communications\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">4.1 </bdi>Identity Provider\n        Selection</a> and\n          <a href=\"https://w3c.github.io/webrtc-identity/#sec.register-idp\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">5. </bdi>Registering an IdP Proxy</a>. If the IdP cannot be loaded,\n          instantiated or the IdP proxy is not registered, this process\n          fails.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> invokes the <code><a data-link-for=\"RTCIdentityProvider\" href=\"https://w3c.github.io/webrtc-identity/#dom-rtcidentityprovider-validateassertion\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-rtcidentityprovider-validateassertion-2\"><code>validateAssertion</code></a></code> method registered\n          by the IdP.</p>\n          <p>The <var>assertion</var> parameter is taken from the decoded\n          identity assertion. The <var>origin</var> parameter contains the\n          origin of the script that calls the <code>RTCPeerConnection</code>\n          method that triggers this behavior.</p>"
+        },
+        {
+          "html": "<p>The IdP proxy returns a promise and performs the validation\n          process asynchronously.</p>\n          <p>The IdP proxy verifies the identity assertion using whatever means\n          necessary. Depending on the authentication protocol this could\n          involve interacting with the IdP server.</p>"
+        },
+        {
+          "html": "<p>If the IdP proxy produces an error or returns a promise that does\n          not <a data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"resolve\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> to a valid\n          <code><a href=\"https://w3c.github.io/webrtc-identity/#dom-rtcidentityvalidationresult\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-rtcidentityvalidationresult-4\"><code>RTCIdentityValidationResult</code></a></code> (see <a href=\"https://w3c.github.io/webrtc-identity/#sec.idp-error-handling\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">8. </bdi>IdP Error Handling</a>), then identity validation fails.</p>"
+        },
+        {
+          "html": "<p>Once the assertion is successfully verified, the IdP proxy\n          <a data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"resolve\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolves</a> the promise with an\n          <code><a href=\"https://w3c.github.io/webrtc-identity/#dom-rtcidentityvalidationresult\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-rtcidentityvalidationresult-5\"><code>RTCIdentityValidationResult</code></a></code> containing the\n          validated identity and the original contents that are the payload of\n          the assertion.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> decodes the <code><a data-link-for=\"RTCIdentityValidationResult\" href=\"https://w3c.github.io/webrtc-identity/#dom-rtcidentityvalidationresult-contents\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-rtcidentityvalidationresult-contents-2\"><code>contents</code></a></code> and validates that\n          it contains a fingerprint value for every <code>a=fingerprint</code>\n          attribute in the session description. This ensures that the\n          certificate used by the remote peer for communications is covered by\n          the identity assertion.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> validates that the domain\n          portion of the identity matches the domain of the IdP as described in\n          [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-identity/#bib-rtcweb-security-arch\" title=\"WebRTC Security Architecture\">RTCWEB-SECURITY-ARCH</a></cite>]. If this check fails then the identity\n          validation fails.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> resolves the <code><a data-link-for=\"RTCPeerConnection\" href=\"https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-peeridentity\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-rtcpeerconnection-peeridentity-1\"><code>peerIdentity</code></a></code> attribute with a new\n          instance of <code>RTCIdentityAssertion</code> that includes the IdP\n          domain and peer identity.</p>"
+        },
+        {
+          "html": "<p>The <a href=\"https://w3c.github.io/webrtc-identity/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-3\">user agent</a> <em class=\"rfc2119\">MAY</em> display identity information to a user\n          in its UI. Any user identity information that is displayed in this\n          fashion <em class=\"rfc2119\">MUST</em> use a mechanism that cannot be spoofed by content.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCPeerConnection/setIdentityProvider()",
+      "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-setidentityprovider",
+      "html": "When the <dfn data-idl=\"operation\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-rtcpeerconnection-setidentityprovider\" data-title=\"setIdentityProvider\" data-dfn-for=\"RTCPeerConnection\" data-type=\"undefined\" data-lt=\"setIdentityProvider()|setIdentityProvider(provider)|setIdentityProvider(provider, options)\" data-local-lt=\"RTCPeerConnection.setIdentityProvider|RTCPeerConnection.setIdentityProvider()|setIdentityProvider\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>setIdentityProvider</code></dfn> method is\n              invoked, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"RTCPeerConnection\" data-cite=\"webrtc\" data-cite-path=\"/\" data-cite-frag=\"dom-rtcpeerconnection\" data-type=\"interface\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection\"><code>RTCPeerConnection</code></a> object's\n                  <a data-xref-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[IsClosed]]\" data-cite=\"webrtc\" data-cite-path=\"/\" data-cite-frag=\"dfn-isclosed\" data-type=\"attribute\" href=\"https://www.w3.org/TR/webrtc/#dfn-isclosed\"><code>[[IsClosed]]</code></a> slot is <code>true</code>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n                  <code>InvalidStateError</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>options.protocol</var> includes the the character\n                  <code>'/'</code> or <code>'\\'</code>, throw a\n                  <code>SyntaxError</code>.</p>"
+        },
+        {
+          "html": "<p>Set the current identity provider values to the tuple\n                  (<code>provider</code>, <code>options</code>).</p>"
+        },
+        {
+          "html": "<p>If any identity provider value has changed, discard any\n                  stored identity assertion.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCPeerConnection/getIdentityAssertion()",
+      "href": "https://w3c.github.io/webrtc-identity/#dom-rtcpeerconnection-getidentityassertion",
+      "html": "When <code>getIdentityAssertion</code> is invoked, queue a\n              task to run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"RTCPeerConnection\" data-cite=\"webrtc\" data-cite-path=\"/\" data-cite-frag=\"dom-rtcpeerconnection\" data-type=\"interface\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection\"><code>RTCPeerConnection</code></a> object's\n                  <a data-xref-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[IsClosed]]\" data-cite=\"webrtc\" data-cite-path=\"/\" data-cite-frag=\"dfn-isclosed\" data-type=\"attribute\" href=\"https://www.w3.org/TR/webrtc/#dfn-isclosed\"><code>[[IsClosed]]</code></a> slot is <code>true</code>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n                  <code>InvalidStateError</code>.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://w3c.github.io/webrtc-identity/#sec.identity-proxy-assertion-request\">Request an\n                  identity assertion</a> from the IdP.</p>"
+        },
+        {
+          "html": "<p><a data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"resolve\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> the promise with the base64 and JSON encoded\n                  assertion.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Whenever the <a href=\"https://www.w3.org/TR/webrtc/#set-pc-configuration\">set a configuration</a>\n        algorithm is invoked, run the following steps instead:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>configuration</var> be the\n          <code><a href=\"https://w3c.github.io/webrtc-identity/#dom-rtcconfiguration\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-rtcconfiguration-5\"><code>RTCConfiguration</code></a></code> dictionary to be\n          processed.</p>"
+        },
+        {
+          "html": "<p>If <code><var>configuration</var>.peerIdentity</code> is\n          set and its value differs from the <a href=\"https://w3c.github.io/webrtc-identity/#target-peer-identity\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-target-peer-identity-8\">target peer\n          identity</a>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <code>InvalidModificationError</code>.</p>"
+        },
+        {
+          "html": "<p>Return the result of running the original <a href=\"https://www.w3.org/TR/webrtc/#set-pc-configuration\">set a\n            configuration</a> algorithm.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Whenever the <a href=\"https://w3c.github.io/webrtc-pc/#dfn-create-an-offer\">create an offer</a>\n        algorithm is invoked, run the following steps instead:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>connection</var>'s\n            <a href=\"https://w3c.github.io/webrtc-pc/#dfn-signaling-state\">\n            signaling state</a> is neither <code>\"stable\"</code> nor\n            <code>\"have-local-offer\"</code>, return a promise <a data-link-type=\"dfn\" data-lt=\"reject\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"reject\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">rejected</a>\n            with a newly <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-create-exception\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\">created</a> <code>InvalidStateError</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>connection</var> is configured with an identity\n            provider, then begin <a href=\"https://w3c.github.io/webrtc-identity/#sec.identity-verify-assertion\">\n            the identity assertion request process</a> if it has not already\n            begun.</p>"
+        },
+        {
+          "html": "<p>Return the result of running the original <a href=\"https://w3c.github.io/webrtc-pc/#dfn-create-an-offer\">create an\n              offer</a> algorithm.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Whenever the <a href=\"https://w3c.github.io/webrtc-pc/#dfn-in-parallel-steps-to-create-an-offer\">\n        in-parallel steps to create an offer</a> algorithm is invoked, run the\n        following steps instead:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>connection</var> was not constructed with a set\n            of certificates, and one has not yet been generated, wait\n            for it to be generated.</p>"
+        },
+        {
+          "html": "<p>Let <var>provider</var> be <var>connection</var>'s\n            currently configured identity provider if one has been\n            configured, or <code>null</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>If <var>provider</var> is non-null, wait for\n            <a href=\"https://w3c.github.io/webrtc-identity/#sec.identity-verify-assertion\">the identity assertion\n            request process</a> to complete.</p>"
+        },
+        {
+          "html": "<p>If <var>provider</var> was unable to produce an\n            identity assertion, <a data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"reject\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>p</var> with a newly\n            <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-create-exception\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\">created</a>\n            <code>NotReadableError</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Return the result of running the original <a href=\"https://w3c.github.io/webrtc-pc/#dfn-in-parallel-steps-to-create-an-offer\">\n            in-parallel steps to create an offer</a> algorithm.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Whenever the <a href=\"https://w3c.github.io/webrtc-pc/#dfn-create-an-answer\">create an answer</a>\n        algorithm is invoked, run the following steps instead:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>connection</var>'s\n            <a href=\"https://w3c.github.io/webrtc-pc/#dfn-signaling-state\">\n            signaling state</a> is neither <code>\"have-remote-offer\"</code> nor\n            <code>\"have-local-pranswer\"</code>, return a promise <a data-link-type=\"dfn\" data-lt=\"reject\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"reject\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">rejected</a>\n            with a newly <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-create-exception\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\">created</a> <code>InvalidStateError</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>connection</var> is configured with an identity\n            provider, then begin <a href=\"https://w3c.github.io/webrtc-identity/#sec.identity-verify-assertion\">\n            the identity assertion request process</a> if it has not already\n            begun.</p>"
+        },
+        {
+          "html": "<p>Return the result of running the original <a href=\"https://w3c.github.io/webrtc-pc/#dfn-create-an-answer\">create an\n              answer</a> algorithm.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Whenever the <a href=\"https://w3c.github.io/webrtc-pc/#dfn-in-parallel-steps-to-create-an-answer\">\n        in-parallel steps to create an answer</a> algorithm is invoked, run the\n        following steps instead:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>connection</var> was not constructed with a set\n            of certificates, and one has not yet been generated, wait\n            for it to be generated.</p>"
+        },
+        {
+          "html": "<p>Let <var>provider</var> be <var>connection</var>'s\n            currently configured identity provider if one has been\n            configured, or <code>null</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>If <var>provider</var> is non-null, wait for\n            <a href=\"https://w3c.github.io/webrtc-identity/#sec.identity-verify-assertion\">the identity assertion\n            request process</a> to complete.</p>"
+        },
+        {
+          "html": "<p>If <var>provider</var> was unable to produce an\n            identity assertion, <a data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"reject\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>p</var> with a newly\n            <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dfn-create-exception\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\">created</a>\n            <code>NotReadableError</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Return the result of running the original <a href=\"https://w3c.github.io/webrtc-pc/#dfn-in-parallel-steps-to-create-an-answer\">\n            in-parallel steps to create an answer</a> algorithm.</p>"
+        }
+      ]
+    }
+  ]
+}

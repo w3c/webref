@@ -1,0 +1,56 @@
+{
+  "spec": {
+    "title": "CSS Page Floats",
+    "url": "https://drafts.csswg.org/css-page-floats-3/"
+  },
+  "algorithms": [
+    {
+      "html": "The placement of a single page float is a process that has to be terminated\n  entirely before the placement of a subsequent page float can be initiated. The\n  placement process consists of the following steps:",
+      "rationale": "determine",
+      "steps": [
+        {
+          "html": "Determine the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-page-floats-3/#initial-float-reference\" id=\"ref-for-initial-float-reference⑨\">initial float reference</a> by considering the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-container\" id=\"ref-for-fragmentation-container①⑥\">fragmentation container</a> in which the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-page-floats-3/#float-anchor\" id=\"ref-for-float-anchor①⑧\">float anchor</a> is placed and\n    the `float-defer` property of the page float. The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-page-floats-3/#float-reference\" id=\"ref-for-float-reference③⑤\">float reference</a> is\n    initially set to be the same as the <span id=\"ref-for-initial-float-reference①⓪\">initial float reference</span>."
+        },
+        {
+          "html": "Determine if the given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-page-floats-3/#float-reference\" id=\"ref-for-float-reference③⑥\">float reference</a> has enough space or can be\n    expanded to host the page float, if the rules of <a href=\"https://drafts.csswg.org/css-page-floats-3/#float-stacking\"> float stacking</a> and <a href=\"https://drafts.csswg.org/css-page-floats-3/#float-reference-growth\">float reference\n    growth</a> are to be followed. If this is not the case, and the <span id=\"ref-for-float-reference③⑦\">float\n    reference</span> is not the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-container\" id=\"ref-for-fragmentation-container①⑦\">fragmentation container</a> within the given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-context\" id=\"ref-for-fragmentation-context⑦\">fragmentation context</a>, then make the following <span id=\"ref-for-fragmentation-container①⑧\">fragmentation\n    container</span> within the given <span id=\"ref-for-fragmentation-context⑧\">fragmentation context</span> the <span id=\"ref-for-float-reference③⑧\">float\n    reference</span>. Repeat this step until the <span id=\"ref-for-float-reference③⑨\">float reference</span> can be\n    expanded enough to host the page float or it is the last <span id=\"ref-for-fragmentation-container①⑨\">fragmentation\n    container</span> within the given <span id=\"ref-for-fragmentation-context⑨\">fragmentation context</span>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-page-floats-3/#float-reference\" id=\"ref-for-float-reference④⓪\">float reference</a> is the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-container\" id=\"ref-for-fragmentation-container②⓪\">fragmentation container</a> within\n    the given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-context\" id=\"ref-for-fragmentation-context①⓪\">fragmentation context</a>, and it has not enough space and cannot be\n    expanded to host the page float, then do the following:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-context\" id=\"ref-for-fragmentation-context①①\">fragmentation context</a> allows for the addition of another <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-container\" id=\"ref-for-fragmentation-container②①\">fragmentation container</a> and an additional <span id=\"ref-for-fragmentation-container②②\">fragmentation container</span> would have the needed size to host the page float, a new <span id=\"ref-for-fragmentation-container②③\">fragmentation\n      container</span> is added to the end of the <span id=\"ref-for-fragmentation-context①②\">fragmentation context</span>. The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-page-floats-3/#float-reference\" id=\"ref-for-float-reference④①\">float reference</a> is set the newly created <span id=\"ref-for-fragmentation-container②④\">fragmentation\n      container</span>."
+            },
+            {
+              "html": "Otherwise, if the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-container\" id=\"ref-for-fragmentation-container②⑤\">fragmentation container</a> is a region, then the\n      'regionOverset` attribute of the <span id=\"ref-for-fragmentation-container②⑥\">fragmentation container</span> is set to\n      `overset`."
+            }
+          ]
+        },
+        {
+          "html": "The page float is placed in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-page-floats-3/#float-reference\" id=\"ref-for-float-reference④②\">float reference</a> according to the rules\n    of 'float stacking' and 'float reference growth'."
+        }
+      ]
+    },
+    {
+      "html": "When resolving over-constrained layouts, the order of importance for defined\n  goals are:",
+      "rationale": "display",
+      "steps": [
+        {
+          "html": "honor 'clear: top/bottom'"
+        },
+        {
+          "html": "honor <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-page-floats-3/#propdef-float-defer\" id=\"ref-for-propdef-float-defer②\">float-defer</a>"
+        },
+        {
+          "html": "honor 'float: top/bottom'"
+        },
+        {
+          "html": "display all content (as described by other CSS properties)"
+        },
+        {
+          "html": "keep the number of pages to a minimum"
+        }
+      ]
+    }
+  ]
+}

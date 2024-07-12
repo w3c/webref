@@ -1,0 +1,20 @@
+{
+  "spec": {
+    "title": "A Method for Writing Testable Conformance Requirements",
+    "url": "https://www.w3.org/TR/test-methodology/"
+  },
+  "algorithms": [
+    {
+      "html": "In the case the user agent is asked to ignore an [XML] element\nor node, a user agent:",
+      "rationale": "make",
+      "steps": [
+        {
+          "html": "<p>Stops processing the current <var>element</var>, ignoring all of\nthe <var>element</var>‘s attributes and child nodes (if any), and\nproceed to the next <var>element</var> in the <var>elements\nlist</var>.</p>"
+        },
+        {
+          "html": "<p>Make a record that it has attempted to process an element of\nthat type.</p>"
+        }
+      ]
+    }
+  ]
+}

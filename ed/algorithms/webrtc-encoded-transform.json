@@ -1,0 +1,733 @@
+{
+  "spec": {
+    "title": "WebRTC Encoded Transform",
+    "url": "https://w3c.github.io/webrtc-encoded-transform/"
+  },
+  "algorithms": [
+    {
+      "html": "At construction of each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender②\">RTCRtpSender</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver②\">RTCRtpReceiver</a></code>, run the following steps:",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>.<code>[[transform]]</code> to null.</p>"
+        },
+        {
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>.<code>[[readable]]</code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream\">ReadableStream</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up\" id=\"ref-for-readablestream-set-up\">Set up</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>.<code>[[readable]]</code>. <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>.<code>[[readable]]</code> is provided frames using the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-readencodeddata\" id=\"ref-for-abstract-opdef-readencodeddata\">readEncodedData</a> algorithm given <var>this</var> as parameter.</p>"
+        },
+        {
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>.<code>[[writable]]</code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#writablestream\" id=\"ref-for-writablestream\">WritableStream</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up\" id=\"ref-for-writablestream-set-up\">Set up</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>.<code>[[writable]]</code> with its <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-writealgorithm\" id=\"ref-for-writablestream-set-up-writealgorithm\">writeAlgorithm</a> set to <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-writeencodeddata\" id=\"ref-for-abstract-opdef-writeencodeddata\">writeEncodedData</a> given <var>this</var> as parameter and its <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-highwatermark\" id=\"ref-for-writablestream-set-up-highwatermark\">highWaterMark</a> set to <code>Infinity</code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>.<code>[[pipeToController]]</code> to null.</p>"
+        },
+        {
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.<code>[[lastReceivedFrameCounter]]</code> to <code>0</code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>.<code>[[lastEnqueuedFrameCounter]]</code> to <code>0</code>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> to run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>.<code>[[pipeToController]]</code> is not null, abort these steps.</p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>.<code>[[pipeToController]]</code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller\">AbortController</a></code>.</p>"
+            },
+            {
+              "html": "<p>Call <a href=\"https://streams.spec.whatwg.org/#readable-stream-pipe-to\">pipeTo</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>.<code>[[readable]]</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>.<code>[[writable]]</code>, preventClose equal to true, preventAbort equal to true, preventCancel equal to true and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>.<code>[[pipeToController]]</code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal\">signal</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "readEncodedData",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-readencodeddata",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-readencodeddata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">readEncodedData</dfn> algorithm is given a <var>rtcObject</var> as parameter. It is defined by running the following steps:",
+      "rationale": "wait",
+      "steps": [
+        {
+          "html": "<p>Wait for a frame to be produced by <var>rtcObject</var>’s encoder if it is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender③\">RTCRtpSender</a></code> or <var>rtcObject</var>’s packetizer if it is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver③\">RTCRtpReceiver</a></code>.</p>"
+        },
+        {
+          "html": "<p>Increment <var>rtcObject</var>.<code>[[lastEnqueuedFrameCounter]]</code> by <code>1</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>frame</var> be the newly produced frame.</p>"
+        },
+        {
+          "html": "<p>Set <var>frame</var>.<code>[[owner]]</code> to <var>rtcObject</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>frame</var>.<code>[[counter]]</code> to <var>rtcObject</var>.<code>[[lastEnqueuedFrameCounter]]</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-enqueue\" id=\"ref-for-readablestream-enqueue\">Enqueue</a> <var>frame</var> in <var>rtcObject</var>.<code>[[readable]]</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "writeEncodedData",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-writeencodeddata",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-writeencodeddata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">writeEncodedData</dfn> algorithm is given a <var>rtcObject</var> as parameter and a <var>frame</var> as input. It is defined by running the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>frame</var>.<code>[[owner]]</code> is not equal to <var>rtcObject</var>, abort these steps and return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> undefined. A processor cannot create frames, or move frames between streams.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>.<code>[[counter]]</code> is equal or smaller than <var>rtcObject</var>.<code>[[lastReceivedFrameCounter]]</code>, abort these steps and return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with①\">a promise resolved with</a> undefined. A processor cannot reorder frames, although it may delay them or drop them.</p>"
+        },
+        {
+          "html": "<p>Set <var>rtcObject</var>.<code>[[lastReceivedFrameCounter]]</code> to <var>frame</var><code>[[counter]]</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>data</var> be <var>frame</var>.<code>[[data]]</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>serializedFrame</var> be <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializewithtransfer\" id=\"ref-for-structuredserializewithtransfer\">StructuredSerializeWithTransfer</a>(<var>frame</var>, « <var>data</var> »).</p>"
+        },
+        {
+          "html": "<p>Let <var>frameCopy</var> be <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserialize\" id=\"ref-for-structureddeserialize\">StructuredDeserialize</a>(<var>serializedFrame</var>, <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>).</p>"
+        },
+        {
+          "html": "<p>Enqueue <var>frameCopy</var> for processing as if it came directly from the encoded data source, by running one of the following steps:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender④\">RTCRtpSender</a></code>, enqueue <var>frameCopy</var> to <var>rtcObject</var>’s packetizer, to be processed <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>\n      </li><li data-md=\"\">\n       <p>If <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver④\">RTCRtpReceiver</a></code>, enqueue <var>frameCopy</var> it to <var>rtcObject</var>’s decoder, to be processed <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with②\">a promise resolved with</a> undefined.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpSender/transform",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-transform",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpSender,RTCRtpReceiver\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-rtcrtpsender-transform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>transform</code></dfn> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>.<code>[[transform]]</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code>transform</code> setter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>transform</var> be the argument to the setter.</p>"
+        },
+        {
+          "html": "<p>Let <var>checkedTransform</var> set to <var>transform</var> if it is not null or to an <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#identity-transform-stream\" id=\"ref-for-identity-transform-stream\">identity transform stream</a> otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader\">getting a reader</a> for <var>checkedTransform</var>.<code>[[readable]]</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>writer</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-get-a-writer\" id=\"ref-for-writablestream-get-a-writer\">getting a writer</a> for <var>checkedTransform</var>.<code>[[writable]]</code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>newPipeToController</var> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortcontroller\" id=\"ref-for-abortcontroller①\">AbortController</a></code>.</p>"
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.<code>[[pipeToController]]</code> is not null, run the following steps:",
+          "rationale": "add",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">Add</a> the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-chain-transform-algorithm\" id=\"ref-for-abstract-opdef-chain-transform-algorithm\">chain transform algorithm</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>.<code>[[pipeToController]]</code>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal①\">signal</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal-abort\" id=\"ref-for-abortcontroller-signal-abort\">signal abort</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>.<code>[[pipeToController]]</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Else, run the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-chain-transform-algorithm\" id=\"ref-for-abstract-opdef-chain-transform-algorithm①\">chain transform algorithm</a> steps.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>.<code>[[pipeToController]]</code> to <var>newPipeToController</var>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>.<code>[[transform]]</code> to <var>transform</var>.</p>"
+        },
+        {
+          "html": "<p>Run the steps in the set of <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-rtcrtptransform-association-steps\" id=\"ref-for-abstract-opdef-rtcrtptransform-association-steps\">association steps</a> of <var>transform</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "chain transform algorithm",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-chain-transform-algorithm",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-chain-transform-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">chain transform algorithm</dfn> steps are defined as:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>newPipeToController</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal②\">signal</a> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>, abort these steps.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader-release\" id=\"ref-for-readablestreamdefaultreader-release\">Release</a> <var>reader</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultwriter-release\" id=\"ref-for-writablestreamdefaultwriter-release\">Release</a> <var>writer</var>.</p>"
+        },
+        {
+          "html": "<p>Assert that <var>newPipeToController</var> is the same object as <var>rtcObject</var>.<code>[[pipeToController]]</code>.</p>"
+        },
+        {
+          "html": "<p>Call <a href=\"https://streams.spec.whatwg.org/#readable-stream-pipe-to\">pipeTo</a> with <var>rtcObject</var>.<code>[[readable]]</code>, <var>checkedTransform</var>.<code>[[writable]]</code>, preventClose equal to false, preventAbort equal to false, preventCancel equal to true and <var>newPipeToController</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal③\">signal</a>.</p>"
+        },
+        {
+          "html": "<p>Call <a href=\"https://streams.spec.whatwg.org/#readable-stream-pipe-to\">pipeTo</a> with <var>checkedTransform</var>.<code>[[readable]]</code>, <var>rtcObject</var>.<code>[[writable]]</code>, preventClose equal to true, preventAbort equal to true, preventCancel equal to false and <var>newPipeToController</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal④\">signal</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "SFrameTransform/SFrameTransform(options)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-sframetransform",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SFrameTransform\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"SFrameTransform(options)|constructor(options)|SFrameTransform()|constructor()\" id=\"dom-sframetransform-sframetransform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new SFrameTransform(<var>options</var>)</code></dfn> constructor steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>transformAlgorithm</var> be an algorithm which takes a <var>frame</var> as input and runs the <a href=\"https://w3c.github.io/webrtc-encoded-transform/#sframe-transform-algorithm\">SFrame transform algorithm</a> with <var>this</var> and <var>frame</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code>[[transform]]</code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#transformstream\" id=\"ref-for-transformstream\">TransformStream</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up\" id=\"ref-for-readablestream-set-up①\">Set up</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a>.<code>[[transform]]</code> with <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-set-up-transformalgorithm\" id=\"ref-for-transformstream-set-up-transformalgorithm\">transformAlgorithm</a> set to <var>transformAlgorithm</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>options</var> be the method’s first argument.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code>[[role]]</code> to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformoptions-role\" id=\"ref-for-dom-sframetransformoptions-role\">role</a></code>\"].</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code>[[readable]]</code> to <var>this</var>.<code>[[transform]]</code>.<code>[[readable]]</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code>[[writable]]</code> to <var>this</var>.<code>[[transform]]</code>.<code>[[writable]]</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The SFrame transform algorithm, given <var>sframe</var> as a SFrameTransform object and <var>frame</var>, runs these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>role</var> be <var>sframe</var>.<code>[[role]]</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>.<code>[[owner]]</code> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender⑦\">RTCRtpSender</a></code>, set <var>role</var> to 'encrypt'.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>.<code>[[owner]]</code> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver⑦\">RTCRtpReceiver</a></code>, set <var>role</var> to 'decrypt'.</p>"
+        },
+        {
+          "html": "<p>Let <var>data</var> be undefined.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource\">BufferSource</a></code>, set <var>data</var> to <var>frame</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe\" id=\"ref-for-rtcencodedaudioframe\">RTCEncodedAudioFrame</a></code>, set <var>data</var> to <var>frame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-data\" id=\"ref-for-dom-rtcencodedaudioframe-data\">data</a></code></p>"
+        },
+        {
+          "html": "<p>If <var>frame</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe\" id=\"ref-for-rtcencodedvideoframe\">RTCEncodedVideoFrame</a></code>, set <var>data</var> to <var>frame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-data\" id=\"ref-for-dom-rtcencodedvideoframe-data\">data</a></code></p>"
+        },
+        {
+          "html": "<p>If <var>data</var> is undefined, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>buffer</var> be the result of running the SFrame algorithm with <var>data</var> and <var>role</var> as parameters. This algorithm is defined by the <a href=\"https://datatracker.ietf.org/doc/draft-omara-sframe/\">SFrame specification</a> and returns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer\">ArrayBuffer</a></code>.</p>"
+        },
+        {
+          "html": "If the SFrame algorithm exits abruptly with an error, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">queue a task</a> to run the following sub steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the processing fails on decryption side due to <var>data</var> not following the SFrame format, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-onerror\" id=\"ref-for-dom-sframetransform-onerror\">error</a></code> at <var>sframe</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-syntax\" id=\"ref-for-dom-sframetransformerroreventtype-syntax\">syntax</a></code> and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame\">frame</a></code> attribute set to <var>frame</var>.</p>"
+            },
+            {
+              "html": "<p>If the processing fails on decryption side due to the key identifier parsed in <var>data</var> being unknown, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-onerror\" id=\"ref-for-dom-sframetransform-onerror①\">error</a></code> at <var>sframe</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent①\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype①\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-keyid\" id=\"ref-for-dom-sframetransformerroreventtype-keyid\">keyID</a></code>,\nits <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame①\">frame</a></code> attribute set to <var>frame</var> and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-keyid\" id=\"ref-for-dom-sframetransformerrorevent-keyid\">keyID</a></code> attribute set to the keyID value parsed in the SFrame header.</p>"
+            },
+            {
+              "html": "<p>If the processing fails on decryption side due to validation of the authentication tag, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire②\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-onerror\" id=\"ref-for-dom-sframetransform-onerror②\">error</a></code> at <var>sframe</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent②\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype②\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-authentication\" id=\"ref-for-dom-sframetransformerroreventtype-authentication\">authentication</a></code> and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame②\">frame</a></code> attribute set to <var>frame</var>.</p>"
+            },
+            {
+              "html": "<p>Abort these steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>frame</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource①\">BufferSource</a></code>, set <var>frame</var> to <var>buffer</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe\" id=\"ref-for-rtcencodedaudioframe①\">RTCEncodedAudioFrame</a></code>, set <var>frame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-data\" id=\"ref-for-dom-rtcencodedaudioframe-data①\">data</a></code> to <var>buffer</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe\" id=\"ref-for-rtcencodedvideoframe①\">RTCEncodedVideoFrame</a></code>, set <var>frame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-data\" id=\"ref-for-dom-rtcencodedvideoframe-data①\">data</a></code> to <var>buffer</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-enqueue\" id=\"ref-for-readablestream-enqueue①\">Enqueue</a> <var>frame</var> in <var>sframe</var>.<code>[[transform]]</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The SFrame transform algorithm, given <var>sframe</var> as a SFrameTransform object and <var>frame</var>, runs these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>keyID</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-bigint\" id=\"ref-for-idl-bigint①\">bigint</a></code> which cannot be represented as a integer between 0 and 2<sup>64</sup>-1 inclusive, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code> exception.</p>"
+        },
+        {
+          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>, run the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>key</var> with its optional <var>keyID</var> as key material to use for the SFrame transform algorithm, as defined by the <a href=\"https://datatracker.ietf.org/doc/draft-omara-sframe/\">SFrame specification</a>.</p>"
+            },
+            {
+              "html": "<p>If setting the key material fails, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror\">InvalidModificationError</a></code> exception and abort these steps.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>promise</var> with undefined.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCEncodedVideoFrame/constructor()",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-constructor",
+      "html": "When called, run the following steps:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set this.<code>[[type]]</code> to <var>originalFrame</var>.<code>[[type]]</code>.</p>"
+        },
+        {
+          "html": "<p>Let this.<code>[[data]]</code> be the result of <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-clonearraybuffer\" title=\"CloneArrayBuffer\">[CloneArrayBuffer]</a>(<var>originalFrame</var>.<code>[[data]]</code>, 0, <var>originalFrame</var>.<code>[[data]]</code>.<code>[[ArrayBufferByteLength]]</code>).</p>"
+        },
+        {
+          "html": "Let <code>[[metadata]]</code> represent the metadata associated with this newly constructed frame.",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p>For each {<code>[[key]]</code>,<code>[[value]]</code>} pair of <var>originalFrame</var>.<code>[[getMetadata()]]</code>, set <code>[[metadata]]</code>.<code>[[key]]</code> to a deep copy of <code>[[value]]</code>.</p>"
+            },
+            {
+              "html": "<p>For each {<code>[[key]]</code>,<code>[[value]]</code>} pair of <var>options</var>.<code>[metadata]</code>, set <code>[[metadata]]</code>.<code>[[key]]</code> to a deep copy of <code>[[value]]</code>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe\" id=\"ref-for-rtcencodedvideoframe⑤\">RTCEncodedVideoFrame</a></code> objects are serializable objects <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-html\" title=\"HTML Standard\">[HTML]</a>.\nTheir <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps\">serialization steps</a>, given <var>value</var>, <var>serialized</var>, and <var>forStorage</var>, are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>forStorage</var> is true, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror\">DataCloneError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.<code>[[type]]</code> to the value of <var>value</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-type\" id=\"ref-for-dom-rtcencodedvideoframe-type①\">type</a></code></p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.<code>[[metadata]]</code> to an internal representation of <var>value</var>’s metadata.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.<code>[[data]]</code> to <var>value</var>.<code>[[data]]</code></p>"
+        }
+      ]
+    },
+    {
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps\">deserialization steps</a>, given <var>serialized</var>, <var>value</var> and <var>realm</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>value</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-type\" id=\"ref-for-dom-rtcencodedvideoframe-type②\">type</a></code> to <var>serialized</var>.<code>[[type]]</code></p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s metadata to the platform object representation of <var>serialized</var>.<code>[[metadata]]</code></p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>.<code>[[data]]</code> to <var>serialized</var>.<code>[[data]]</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCEncodedAudioFrame/constructor()",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-constructor",
+      "html": "When called, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let this.<code>[[data]]</code> be the result of <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-clonearraybuffer\" title=\"CloneArrayBuffer\">[CloneArrayBuffer]</a>(<var>originalFrame</var>.<code>[[data]]</code>, 0, <var>originalFrame</var>.<code>[[data]]</code>.<code>[[ArrayBufferByteLength]]</code>).</p>"
+        },
+        {
+          "html": "Let <code>[[metadata]]</code> represent the metadata associated with this newly constructed frame.",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p>For each {<code>[[key]]</code>,<code>[[value]]</code>} pair of <var>originalFrame</var>.<code>[[getMetadata()]]</code>, set <code>[[metadata]]</code>.<code>[[key]]</code> to a deep copy of <code>[[value]]</code>.</p>"
+            },
+            {
+              "html": "<p>For each {<code>[[key]]</code>,<code>[[value]]</code>} pair of <var>options</var>.<code>[metadata]</code>, set <code>[[metadata]]</code>.<code>[[key]]</code> to a deep copy of <code>[[value]]</code>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe\" id=\"ref-for-rtcencodedaudioframe⑤\">RTCEncodedAudioFrame</a></code> objects are serializable objects <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-html\" title=\"HTML Standard\">[HTML]</a>.\nTheir <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps①\">serialization steps</a>, given <var>value</var>, <var>serialized</var>, and <var>forStorage</var>, are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>forStorage</var> is true, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror①\">DataCloneError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.<code>[[metadata]]</code> to an internal representation of <var>value</var>’s metadata.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.<code>[[data]]</code> to <var>value</var>.<code>[[data]]</code></p>"
+        }
+      ]
+    },
+    {
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps①\">deserialization steps</a>, given <var>serialized</var>, <var>value</var> and <var>realm</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>value</var>’s metadata to the platform object representation of <var>serialized</var>.<code>[[metadata]]</code></p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>.<code>[[data]]</code> to <var>serialized</var>.<code>[[data]]</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpScriptTransform/RTCRtpScriptTransform(worker, options, transfer)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpScriptTransform\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"RTCRtpScriptTransform(worker, options, transfer)|constructor(worker, options, transfer)|RTCRtpScriptTransform(worker, options)|constructor(worker, options)|RTCRtpScriptTransform(worker)|constructor(worker)\" id=\"dom-rtcrtpscripttransform-rtcrtpscripttransform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new RTCRtpScriptTransform(<var>worker</var>, <var>options</var>, <var>transfer</var>)</code></dfn> constructor steps are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>t1</var> to an <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#identity-transform-stream\" id=\"ref-for-identity-transform-stream①\">identity transform stream</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>t2</var> to an <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#identity-transform-stream\" id=\"ref-for-identity-transform-stream②\">identity transform stream</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code>[[writable]]</code> to <var>t1</var>.<code>[[writable]]</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code>[[readable]]</code> to <var>t2</var>.<code>[[readable]]</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>serializedOptions</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializewithtransfer\" id=\"ref-for-structuredserializewithtransfer①\">StructuredSerializeWithTransfer</a>(<var>options</var>, <var>transfer</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>serializedReadable</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializewithtransfer\" id=\"ref-for-structuredserializewithtransfer②\">StructuredSerializeWithTransfer</a>(<var>t1</var>.<code>[[readable]]</code>, « <var>t1</var>.<code>[[readable]]</code> »).</p>"
+        },
+        {
+          "html": "<p>Let <var>serializedWritable</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializewithtransfer\" id=\"ref-for-structuredserializewithtransfer③\">StructuredSerializeWithTransfer</a>(<var>t2</var>.<code>[[writable]]</code>, « <var>t2</var>.<code>[[writable]]</code> »).</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">Queue a task</a> on the DOM manipulation <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#task-source\" id=\"ref-for-task-source\">task source</a> <var>worker</var>’s global scope to run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>transformerOptions</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserialize\" id=\"ref-for-structureddeserialize①\">StructuredDeserialize</a>(<var>serializedOptions</var>, the current Realm).</p>"
+            },
+            {
+              "html": "<p>Let <var>readable</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserialize\" id=\"ref-for-structureddeserialize②\">StructuredDeserialize</a>(<var>serializedReadable</var>, the current Realm).</p>"
+            },
+            {
+              "html": "<p>Let <var>writable</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserialize\" id=\"ref-for-structureddeserialize③\">StructuredDeserialize</a>(<var>serializedWritable</var>, the current Realm).</p>"
+            },
+            {
+              "html": "<p>Let <var>transformer</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransformer\" id=\"ref-for-rtcrtpscripttransformer①\">RTCRtpScriptTransformer</a></code>.</p>"
+            },
+            {
+              "html": "<p>Set <var>transformer</var>.<code>[[options]]</code> to <var>transformerOptions</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>transformer</var>.<code>[[readable]]</code> to <var>readable</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>transformer</var>.<code>[[writable]]</code> to <var>writable</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">Fire an event</a> named <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DedicatedWorkerGlobalScope\" data-dfn-type=\"event\" data-export=\"\" id=\"eventdef-dedicatedworkerglobalscope-rtctransform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>rtctransform</code></dfn> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtctransformevent\" id=\"ref-for-rtctransformevent\">RTCTransformEvent</a></code> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtctransformevent-transformer\" id=\"ref-for-dom-rtctransformevent-transformer\">transformer</a></code> set to <var>transformer</var> on <var>worker</var>’s global scope.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Each RTCRtpScriptTransform has the following set of <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-rtcrtptransform-association-steps\" id=\"ref-for-abstract-opdef-rtcrtptransform-association-steps①\">association steps</a>, given <var>rtcObject</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>transform</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransform\" id=\"ref-for-rtcrtpscripttransform①\">RTCRtpScriptTransform</a></code> object that owns the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-rtcrtptransform-association-steps\" id=\"ref-for-abstract-opdef-rtcrtptransform-association-steps②\">association steps</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>encoder</var> be <var>rtcObject</var>’s encoder if <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender⑧\">RTCRtpSender</a></code> or undefined otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>depacketizer</var> be <var>rtcObject</var>’s depacketizer if <var>rtcObject</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver⑧\">RTCRtpReceiver</a></code> or undefined otherwise.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">Queue a task</a> on the DOM manipulation <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#task-source\" id=\"ref-for-task-source①\">task source</a> <var>worker</var>’s global scope to run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>transformer</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransformer\" id=\"ref-for-rtcrtpscripttransformer②\">RTCRtpScriptTransformer</a></code> object associated to <var>transform</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>transformer</var>.<code>[[encoder]]</code> to <var>encoder</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>transformer</var>.<code>[[depacketizer]]</code> to <var>depacketizer</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpScriptTransform/generateKeyFrame(rid)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-generatekeyframe",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpScriptTransform\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-rtcrtpscripttransform-generatekeyframe\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>generateKeyFrame(<var>rid</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "<p>Run the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-generate-key-frame-algorithm\" id=\"ref-for-abstract-opdef-generate-key-frame-algorithm\">generate key frame algorithm</a> with <var>promise</var>, <var>this</var>.<code>[[encoder]]</code> and <var>rid</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpScriptTransform/sendKeyFrameRequest()",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-sendkeyframerequest",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpScriptTransform\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-rtcrtpscripttransform-sendkeyframerequest\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>sendKeyFrameRequest()</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "<p>Run the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-send-request-key-frame-algorithm\" id=\"ref-for-abstract-opdef-send-request-key-frame-algorithm\">send request key frame algorithm</a> with <var>promise</var> and <var>this</var>.<code>[[depacketizer]]</code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpScriptTransformer/options",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-options",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpScriptTransformer\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-rtcrtpscripttransformer-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>options</code></dfn> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>.<code>[[options]]</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpScriptTransform/readable",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-readable",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpScriptTransform\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-rtcrtpscripttransform-readable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>readable</code></dfn> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>.<code>[[readable]]</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpScriptTransform/writable",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-writable",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpScriptTransform\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-rtcrtpscripttransform-writable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>writable</code></dfn> getter steps are:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>.<code>[[writable]]</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When <var>transform</var>’s <code>[[encoder]]</code> receives a keyframe request, for instance from an incoming RTCP Picture Loss Indication (PLI)\nor Full Intra Refresh (FIR), queue a task to perform the following steps:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>rid</var> to the RID of the appropriate layer, or undefined if the request is not for a specific layer.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire④\">Fire an event</a> named <code>keyframerequest</code> at <var>transform</var> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#keyframerequestevent\" id=\"ref-for-keyframerequestevent②\">KeyFrameRequestEvent</a></code> with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-cancelable\" id=\"ref-for-dom-event-cancelable\">cancelable</a></code> attribute initialized to \"true\", and with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-keyframerequestevent-rid\" id=\"ref-for-dom-keyframerequestevent-rid\">rid</a></code> set to <var>rid</var>.</p>"
+        },
+        {
+          "html": "<p>If the event’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#canceled-flag\" id=\"ref-for-canceled-flag\">canceled flag</a> is true, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Run the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-generate-key-frame-algorithm\" id=\"ref-for-abstract-opdef-generate-key-frame-algorithm①\">generate key frame algorithm</a> with a new promise, <var>transform</var>.<code>[[encoder]]</code> and <var>rid</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "generate key frame algorithm",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-generate-key-frame-algorithm",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-generate-key-frame-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate key frame algorithm</dfn>, given <var>promise</var>, <var>encoder</var> and <var>rid</var>, is defined by running these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>encoder</var> is undefined, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>encoder</var> is not processing video frames, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>rid</var> is defined, but does not conform to the grammar requirements specified\nin Section 10 of <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-rfc8851\" title=\"RTP Payload Format Restrictions\">[RFC8851]</a>, then reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code> and abort\nthese steps.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">In parallel</a>, run the following steps:",
+          "rationale": "gather",
+          "steps": [
+            {
+              "html": "<p>Gather a list of video encoders, named <var>videoEncoders</var> from <var>encoder</var>, ordered according negotiated RIDs if any.</p>"
+            },
+            {
+              "html": "<p>If <var>rid</var> is defined, remove from <var>videoEncoders</var> any video encoder that does not match <var>rid</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>rid</var> is undefined, remove from <var>videoEncoders</var> all video encoders except the first one.</p>"
+            },
+            {
+              "html": "<p>If <var>videoEncoders</var> is empty, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror\">NotFoundError</a></code> and abort these steps. <var>videoEncoders</var> is expected to be empty if the corresponding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender⑨\">RTCRtpSender</a></code> is not active, or the corresponding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender①⓪\">RTCRtpSender</a></code> track is ended.</p>"
+            },
+            {
+              "html": "<p>Let <var>videoEncoder</var> be the first encoder in <var>videoEncoders</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>rid</var> is undefined, set <var>rid</var> to the RID value corresponding to <var>videoEncoder</var>.</p>"
+            },
+            {
+              "html": "<p>Create a pending key frame task called <var>task</var> with <var>task</var>.<code>[[rid]]</code> set to rid and <var>task</var>.<code>[[promise]]</code>| set to <var>promise</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code> is undefined, initialize <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code> to an empty set.</p>"
+            },
+            {
+              "html": "<p>Let <var>shouldTriggerKeyFrame</var> be <code>false</code> if <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code> contains a task whose <code>[[rid]]</code> value is equal to <var>rid</var>, and <code>true</code> otherwise.</p>"
+            },
+            {
+              "html": "<p>Add <var>task</var> to <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>shouldTriggerKeyFrame</var> is <code>true</code>, instruct <var>videoEncoder</var> to generate a key frame for the next provided video frame.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "For any <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransformer\" id=\"ref-for-rtcrtpscripttransformer⑧\">RTCRtpScriptTransformer</a></code> named <var>transformer</var>, the following steps are run just before any <var>frame</var> is enqueued in <var>transformer</var>.<code>[[readable]]</code>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>encoder</var> be <var>transformer</var>.<code>[[encoder]]</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>encoder</var> or <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code> is undefined, abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var> is not a video <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframetype-key\" id=\"ref-for-dom-rtcencodedvideoframetype-key①\">\"key\"</a></code> frame, abort these steps.</p>"
+        },
+        {
+          "html": "For each <var>task</var> in <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code>, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>frame</var> was generated by a video encoder identified by <var>task</var>.<code>[[rid]]</code>, run the following steps:",
+              "rationale": "remove",
+              "steps": [
+                {
+                  "html": "<p>Remove <var>task</var> from <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code>.</p>"
+                },
+                {
+                  "html": "<p>Resolve <var>task</var>.<code>[[promise]]</code> with <var>frame</var>’s timestamp.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "send request key frame algorithm",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-send-request-key-frame-algorithm",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-send-request-key-frame-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">send request key frame algorithm</dfn>, given <var>promise</var> and <var>depacketizer</var>, is defined by running these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>depacketizer</var> is undefined, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>depacketizer</var> is not processing video packets, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>, abort these steps.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">In parallel</a>, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If sending a Full Intra Request (FIR) by <var>depacketizer</var>’s receiver is not deemed appropriate, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>promise</var> with undefined and abort these steps.\nSection 4.3.1 of <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-rfc5104\" title=\"Codec Control Messages in the RTP Audio-Visual Profile with Feedback (AVPF)\">[RFC5104]</a> provides guidelines of how and when it is appropriate to sending a Full Intra Request.</p>"
+            },
+            {
+              "html": "<p>Generate a Full Intra Request (FIR) packet as defined in section 4.3.1 of <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-rfc5104\" title=\"Codec Control Messages in the RTP Audio-Visual Profile with Feedback (AVPF)\">[RFC5104]</a> and send it through <var>depacketizer</var>’s receiver.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>promise</var> with undefined.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpSender/generateKeyFrame(rids)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-generatekeyframe",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpSender\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"generateKeyFrame(rids)|generateKeyFrame()\" id=\"dom-rtcrtpsender-generatekeyframe\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>generateKeyFrame(<var>rids</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">In parallel</a>, run the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webrtc-encoded-transform/#abstract-opdef-generate-key-frame-algorithm\" id=\"ref-for-abstract-opdef-generate-key-frame-algorithm②\">generate key frame algorithm</a> with <var>promise</var>, <var>this</var>’s encoder and <var>rids</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

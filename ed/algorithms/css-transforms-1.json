@@ -1,0 +1,41 @@
+{
+  "spec": {
+    "title": "CSS Transforms Module Level 1",
+    "url": "https://drafts.csswg.org/css-transforms-1/"
+  },
+  "algorithms": [
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-transforms-1/#transformation-matrix\" id=\"ref-for-transformation-matrix①\">transformation matrix</a> is computed from the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-transforms-1/#propdef-transform\" id=\"ref-for-propdef-transform④\">transform</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-transforms-1/#propdef-transform-origin\" id=\"ref-for-propdef-transform-origin①\">transform-origin</a> properties as follows:",
+      "rationale": "start",
+      "steps": [
+        {
+          "html": "<p>Start with the identity matrix.</p>"
+        },
+        {
+          "html": "<p>Translate by the computed X and Y of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-transforms-1/#propdef-transform-origin\" id=\"ref-for-propdef-transform-origin②\">transform-origin</a></p>"
+        },
+        {
+          "html": "<p>Multiply by each of the transform functions in <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-transforms-1/#propdef-transform\" id=\"ref-for-propdef-transform⑤\">transform</a> property from left to right</p>"
+        },
+        {
+          "html": "<p>Translate by the negated computed X and Y values of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-transforms-1/#propdef-transform-origin\" id=\"ref-for-propdef-transform-origin③\">transform-origin</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "When the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed value</a> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-transforms-1/#typedef-transform-list\" id=\"ref-for-typedef-transform-list①\">&lt;transform-list&gt;</a>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#resolved-value\" id=\"ref-for-resolved-value\">resolved value</a> is one <a class=\"production css\" data-link-type=\"function\" href=\"https://drafts.csswg.org/css-transforms-1/#funcdef-transform-matrix\" id=\"ref-for-funcdef-transform-matrix\">&lt;matrix()&gt;</a> function\ncomputed by the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>transform</var> be a 4x4 matrix initialized to the identity matrix. The elements <var>m11</var>, <var>m22</var>, <var>m33</var> and <var>m44</var> of <var>transform</var> must be set to <span class=\"css\">1</span>; all other elements of <var>transform</var> must be set to <span class=\"css\">0</span>.</p>"
+        },
+        {
+          "html": "<p>Post-multiply all <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-transforms-1/#typedef-transform-function\" id=\"ref-for-typedef-transform-function⑤\">&lt;transform-function&gt;</a>s in <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-transforms-1/#typedef-transform-list\" id=\"ref-for-typedef-transform-list②\">&lt;transform-list&gt;</a> to <var>transform</var>.</p>"
+        },
+        {
+          "html": "<p>Serialize <var>transform</var> to a <a class=\"production css\" data-link-type=\"function\" href=\"https://drafts.csswg.org/css-transforms-1/#funcdef-transform-matrix\" id=\"ref-for-funcdef-transform-matrix①\">&lt;matrix()&gt;</a> function.</p>"
+        }
+      ]
+    }
+  ]
+}

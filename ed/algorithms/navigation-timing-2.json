@@ -1,0 +1,112 @@
+{
+  "spec": {
+    "title": "Navigation Timing Level 2",
+    "url": "https://w3c.github.io/navigation-timing/"
+  },
+  "algorithms": [
+    {
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceResourceTiming\" data-xref-for=\"PerformanceResourceTiming\"><code>redirectStart</code></a> getter steps are to perform the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>this</var>'s [=PerformanceNavigationTiming/redirect count] is 0, return 0."
+        },
+        {
+          "html": "Otherwise return <var>this</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceResourceTiming\" data-xref-for=\"PerformanceResourceTiming\"><code>redirectStart</code></a>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceResourceTiming\" data-xref-for=\"PerformanceResourceTiming\"><code>redirectEnd</code></a> getter steps are to perform the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>this</var>'s [=PerformanceNavigationTiming/redirect count] is 0, return 0."
+        },
+        {
+          "html": "Otherwise return <var>this</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceResourceTiming\" data-xref-for=\"PerformanceResourceTiming\"><code>redirectEnd</code></a>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceResourceTiming\" data-xref-for=\"PerformanceResourceTiming\"><code>workerStart</code></a> getter steps are to perform the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>workerTiming</var> be <var>this</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"PerformanceNavigationTiming\" data-xref-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-service-worker-timing\" class=\"internalDFN\" id=\"ref-for-dfn-service-worker-timing-1\">service worker timing</a>."
+        },
+        {
+          "html": "If <var>workerTiming</var> is null, then return <var>this</var>'s prototype's <code>workerStart</code>."
+        },
+        {
+          "html": "Return <var>workerTiming</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"service worker timing info\" data-xref-for=\"service worker timing info\">start time</a>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceResourceTiming\" data-xref-for=\"PerformanceResourceTiming\"><code>fetchStart</code></a> getter steps are to perform the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>workerTiming</var> be <var>this</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"PerformanceNavigationTiming\" data-xref-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-service-worker-timing\" class=\"internalDFN\" id=\"ref-for-dfn-service-worker-timing-2\">service worker timing</a>."
+        },
+        {
+          "html": "If <var>workerTiming</var> is null, then return <var>this</var>'s prototype's <code>fetchStart</code>."
+        },
+        {
+          "html": "Return <var>workerTiming</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"service worker timing info\" data-xref-for=\"service worker timing info\">fetch event dispatch time</a>."
+        }
+      ]
+    },
+    {
+      "name": "create the navigation timing entry",
+      "href": "https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry",
+      "html": "To <dfn data-export=\"\" id=\"dfn-create-the-navigation-timing-entry\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">create the navigation timing entry</dfn> for <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Document\"><code>Document</code></a> <var>document</var>,\n      given a <a data-link-type=\"dfn|abstract-op\">fetch timing info</a> <var>fetchTiming</var>, a number <var>redirectCount</var>, a\n      <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NavigationTimingType\" href=\"https://w3c.github.io/navigation-timing/#dom-navigationtimingtype\" class=\"internalDFN\" id=\"ref-for-dom-navigationtimingtype-4\"><code>NavigationTimingType</code></a> <var>navigationType</var>, a null or <a data-link-type=\"dfn|abstract-op\">service worker timing info</a> <var>serviceWorkerTiming</var>,\n      a DOMString <var>cacheMode</var>, a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMHighResTimeStamp\"><code>DOMHighResTimeStamp</code></a> <var>criticalCHRestart</var>, and a <a data-link-type=\"dfn|abstract-op\">response body info</a> <var>bodyInfo</var>, do the following:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>global</var> be <var>document</var>'s <a data-link-type=\"dfn|abstract-op\">relevant global object</a>."
+        },
+        {
+          "html": "Let <var>navigationTimingEntry</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming\" class=\"internalDFN\" id=\"ref-for-dom-performancenavigationtiming-18\"><code>PerformanceNavigationTiming</code></a> object in <var>global</var>'s\n        <a data-link-type=\"dfn|abstract-op\" data-link-for=\"global object\" data-xref-for=\"global object\">realm</a>."
+        },
+        {
+          "html": "<a data-cite=\"RESOURCE-TIMING-2#dfn-setup-the-resource-timing-entry\" href=\"https://www.w3.org/TR/resource-timing/#dfn-setup-the-resource-timing-entry\">Setup the resource\n        timing entry</a> for <var>navigationTimingEntry</var> given \"<code>navigation</code>\", <var>document</var>'s\n        <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Document\" data-xref-for=\"Document\"><code>URL</code></a>, <var>fetchTiming</var>, <var>cacheMode</var>, and <var>bodyInfo</var>."
+        },
+        {
+          "html": "Set <var>navigationTimingEntry</var>'s <a data-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-document-load-timing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-document-load-timing-8\">document load\n        timing</a> to <var>document</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\">load timing info</a>"
+        },
+        {
+          "html": "Set <var>navigationTimingEntry</var>'s <a data-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-previous-document-unload-timing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-previous-document-unload-timing-4\">previous\n        document unload timing</a> to <var>document</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" href=\"https://w3c.github.io/navigation-timing/#dfn-previous-document-unload-timing\" class=\"internalDFN\" id=\"ref-for-dfn-previous-document-unload-timing-5\">previous document unload timing</a>."
+        },
+        {
+          "html": "Set <var>navigationTimingEntry</var>'s <a data-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-redirect-count\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-redirect-count-2\">redirect\n        count</a> to <var>redirectCount</var>."
+        },
+        {
+          "html": "Set <var>navigationTimingEntry</var>'s <a data-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-navigation-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-navigation-type-3\">navigation\n        type</a> to <var>navigationType</var>."
+        },
+        {
+          "html": "Set <var>navigationTimingEntry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"PerformanceNavigationTiming\" data-xref-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-service-worker-timing\" class=\"internalDFN\" id=\"ref-for-dfn-service-worker-timing-3\">service worker timing</a>\n        to <var>serviceWorkerTiming</var>."
+        },
+        {
+          "html": "Set <var>document</var>'s <span>navigation timing entry</span> to <var>navigationTimingEntry</var>."
+        },
+        {
+          "html": "Set <var>navigationTimingEntry</var>'s <a data-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-critical-ch-restart-time\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-critical-ch-restart-time-2\"><code>Critical-CH</code> restart time</a>\n        to <var>criticalCHRestart</var>."
+        },
+        {
+          "html": "Set <var>navigationTimingEntry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"PerformanceNavigationTiming\" data-xref-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-not-restored-reasons\" class=\"internalDFN\" id=\"ref-for-dfn-not-restored-reasons-2\">not restored reasons</a>\n        to the result of <a data-lt=\"create a notrestoredreasons object\">creating a\n        NotRestoredReasons object</a> given <var>document</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" href=\"https://w3c.github.io/navigation-timing/#dfn-not-restored-reasons\" class=\"internalDFN\" id=\"ref-for-dfn-not-restored-reasons-3\">not restored reasons</a>."
+        },
+        {
+          "html": "add <var>navigationTimingEntry</var> to <var>global</var>'s\n        <a data-cite=\"performance-timeline-2#dfn-performance-entry-buffer\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\">performance entry buffer</a>."
+        }
+      ]
+    },
+    {
+      "name": "queue the navigation timing entry",
+      "href": "https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry",
+      "html": "To <dfn data-export=\"\" id=\"dfn-queue-the-navigation-timing-entry\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">queue the navigation timing entry</dfn> for <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"Document\"><code>Document</code></a> <var>document</var>,\n      <a data-lt=\"queue a navigation performanceentry\">queue</a> <var>document</var>'s\n      <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/navigation-timing/#dfn-navigation-timing-entry\" class=\"internalDFN\" id=\"ref-for-dfn-navigation-timing-entry-1\">navigation timing entry</a>.",
+      "rationale": "To <dfn>"
+    }
+  ]
+}

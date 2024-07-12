@@ -1,0 +1,23 @@
+{
+  "spec": {
+    "title": "CSS Viewport Module Level 1",
+    "url": "https://drafts.csswg.org/css-viewport/"
+  },
+  "algorithms": [
+    {
+      "html": "<span class=\"method-name\">Set-Property</span> matches the <a href=\"https://drafts.csswg.org/css-viewport/#meta-properties\">listed property names</a> case-insensitively.\nThe <code class=\"variable\">property-value</code> strings are interpreted\nas follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If a prefix of <code class=\"variable\">property-value</code> can be converted to a number using <code>strtod</code>, the\n\t\tvalue will be that number. The remainder of the string is\n\t\tignored."
+        },
+        {
+          "html": "If the value can not be converted to a number as described above,\n\t\tthe whole <code class=\"variable\">property-value</code> string\n\t\twill be matched with the following strings\n\t\tcase-insensitively: <code class=\"index\">yes</code>, <code class=\"index\">no</code>, <code class=\"index\" data-lt=\"device-width!!viewport meta\">device-width</code>, <code class=\"index\" data-lt=\"device-height!!viewport meta\">device-height</code>"
+        },
+        {
+          "html": "If the string did not match any of the known strings, the\n\t\tvalue is unknown."
+        }
+      ]
+    }
+  ]
+}

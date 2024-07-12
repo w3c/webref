@@ -1,0 +1,206 @@
+{
+  "spec": {
+    "title": "RFC 9110 - HTTP Semantics",
+    "url": "https://httpwg.org/specs/rfc9110.html"
+  },
+  "algorithms": [
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the request method is HEAD or the response status code is <a href=\"https://httpwg.org/specs/rfc9110.html#status.204\" class=\"smpl\">204 (No Content)</a> or <a href=\"https://httpwg.org/specs/rfc9110.html#status.304\" class=\"smpl\">304 (Not Modified)</a>, there is no content in the response."
+        },
+        {
+          "html": "If the request method is GET and the response status code is <a href=\"https://httpwg.org/specs/rfc9110.html#status.200\" class=\"smpl\">200 (OK)</a>, the content is a representation of the <a href=\"https://httpwg.org/specs/rfc9110.html#target.resource\" class=\"smpl\">target resource</a> (<a href=\"https://httpwg.org/specs/rfc9110.html#target.resource\" title=\"Determining the Target Resource\">Section 7.1</a>)."
+        },
+        {
+          "html": "If the request method is GET and the response status code is <a href=\"https://httpwg.org/specs/rfc9110.html#status.203\" class=\"smpl\">203 (Non-Authoritative Information)</a>, the content is a potentially modified or enhanced representation of the <a href=\"https://httpwg.org/specs/rfc9110.html#target.resource\" class=\"smpl\">target resource</a> as provided by an intermediary."
+        },
+        {
+          "html": "If the request method is GET and the response status code is <a href=\"https://httpwg.org/specs/rfc9110.html#status.206\" class=\"smpl\">206 (Partial Content)</a>, the content is one or more parts of a representation of the target resource."
+        },
+        {
+          "html": "If the response has a <a href=\"https://httpwg.org/specs/rfc9110.html#field.content-location\" class=\"smpl\">Content-Location</a> header field and its field value is a reference to the same URI as the target URI, the content is a representation of the target resource."
+        },
+        {
+          "html": "If the response has a <a href=\"https://httpwg.org/specs/rfc9110.html#field.content-location\" class=\"smpl\">Content-Location</a> header field and its field value is a reference to a URI different from the target URI, then the sender asserts that the content is a representation of the resource identified by the Content-Location field value. However, such an assertion cannot be trusted unless it can be verified by other means (not defined by this specification)."
+        },
+        {
+          "html": "Otherwise, the content is unidentified by HTTP, but a more specific identifier might be supplied within the content itself."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "reject",
+      "steps": [
+        {
+          "html": "reconfigure the target resource to reflect the new media type;"
+        },
+        {
+          "html": "transform the PUT representation to a format consistent with that of the resource before saving it as the new resource state; or,"
+        },
+        {
+          "html": "reject the request with a <a href=\"https://httpwg.org/specs/rfc9110.html#status.415\" class=\"smpl\">415 (Unsupported Media Type)</a> response indicating that the target resource is limited to \"text/html\", perhaps including a link to a different resource that would be a suitable target for the new representation."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If no Accept-Encoding header field is in the request, any content coding is considered acceptable by the user agent."
+        },
+        {
+          "html": "If the representation has no content coding, then it is acceptable by default unless specifically excluded by the Accept-Encoding header field stating either \"identity;q=0\" or \"*;q=0\" without a more specific entry for \"identity\"."
+        },
+        {
+          "html": "If the representation's content coding is one of the content codings listed in the Accept-Encoding field value, then it is acceptable unless it is accompanied by a qvalue of 0. (As defined in <a href=\"https://httpwg.org/specs/rfc9110.html#quality.values\" title=\"Quality Values\">Section 12.4.2</a>, a qvalue of 0 means \"not acceptable\".)"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the field value is \"*\", the condition is true if the origin server has a current representation for the target resource."
+        },
+        {
+          "html": "If the field value is a list of entity tags, the condition is true if any of the listed tags match the entity tag of the selected representation."
+        },
+        {
+          "html": "Otherwise, the condition is false."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the field value is \"*\", the condition is false if the origin server has a current representation for the target resource."
+        },
+        {
+          "html": "If the field value is a list of entity tags, the condition is false if one of the listed tags matches the entity tag of the selected representation."
+        },
+        {
+          "html": "Otherwise, the condition is true."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the selected representation's last modification date is earlier or equal to the date provided in the field value, the condition is false."
+        },
+        {
+          "html": "Otherwise, the condition is true."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the selected representation's last modification date is earlier than or equal to the date provided in the field value, the condition is true."
+        },
+        {
+          "html": "Otherwise, the condition is false."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://httpwg.org/specs/rfc9110.html#http.date\" class=\"smpl\">HTTP-date</a> validator provided is not a strong validator in the sense defined by <a href=\"https://httpwg.org/specs/rfc9110.html#lastmod.comparison\" title=\"Comparison\">Section 8.8.2.2</a>, the condition is false."
+        },
+        {
+          "html": "If the <a href=\"https://httpwg.org/specs/rfc9110.html#http.date\" class=\"smpl\">HTTP-date</a> validator provided exactly matches the <a href=\"https://httpwg.org/specs/rfc9110.html#field.last-modified\" class=\"smpl\">Last-Modified</a> field value for the selected representation, the condition is true."
+        },
+        {
+          "html": "Otherwise, the condition is false."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://httpwg.org/specs/rfc9110.html#field.etag\" class=\"smpl\">entity-tag</a> validator provided exactly matches the <a href=\"https://httpwg.org/specs/rfc9110.html#field.etag\" class=\"smpl\">ETag</a> field value for the selected representation using the strong comparison function (<a href=\"https://httpwg.org/specs/rfc9110.html#entity.tag.comparison\" title=\"Comparison\">Section 8.8.3.2</a>), the condition is true."
+        },
+        {
+          "html": "Otherwise, the condition is false."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<div class=\"avoidbreakafter\"><p>When recipient is the origin server and <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-match\" class=\"smpl\">If-Match</a> is present, evaluate the <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-match\" class=\"smpl\">If-Match</a> precondition:</p></div> <div><ul><li>if true, continue to step <a href=\"https://httpwg.org/specs/rfc9110.html#precedence3\">3</a></li><li>if false, respond <a href=\"https://httpwg.org/specs/rfc9110.html#status.412\" class=\"smpl\">412 (Precondition Failed)</a> unless it can be determined that the state-changing request has already succeeded (see <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-match\" id=\"rfc.xref.field.if-match.1\" title=\"If-Match\">Section 13.1.1</a>)</li></ul></div>"
+        },
+        {
+          "html": "<div class=\"avoidbreakafter\"><p>When recipient is the origin server, <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-match\" class=\"smpl\">If-Match</a> is not present, and <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-unmodified-since\" class=\"smpl\">If-Unmodified-Since</a> is present, evaluate the <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-unmodified-since\" class=\"smpl\">If-Unmodified-Since</a> precondition:</p></div> <div><ul><li>if true, continue to step <a href=\"https://httpwg.org/specs/rfc9110.html#precedence3\">3</a></li><li>if false, respond <a href=\"https://httpwg.org/specs/rfc9110.html#status.412\" class=\"smpl\">412 (Precondition Failed)</a> unless it can be determined that the state-changing request has already succeeded (see <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-unmodified-since\" id=\"rfc.xref.field.if-unmodified-since.1\" title=\"If-Unmodified-Since\">Section 13.1.4</a>)</li></ul></div>"
+        },
+        {
+          "html": "<div class=\"avoidbreakafter\"><p>When <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-none-match\" class=\"smpl\">If-None-Match</a> is present, evaluate the <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-none-match\" class=\"smpl\">If-None-Match</a> precondition:</p></div> <div><ul><li>if true, continue to step <a href=\"https://httpwg.org/specs/rfc9110.html#precedence5\">5</a></li><li>if false for GET/HEAD, respond <a href=\"https://httpwg.org/specs/rfc9110.html#status.304\" class=\"smpl\">304 (Not Modified)</a></li><li>if false for other methods, respond <a href=\"https://httpwg.org/specs/rfc9110.html#status.412\" class=\"smpl\">412 (Precondition Failed)</a></li></ul></div>"
+        },
+        {
+          "html": "<div class=\"avoidbreakafter\"><p>When the method is GET or HEAD, <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-none-match\" class=\"smpl\">If-None-Match</a> is not present, and <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-modified-since\" class=\"smpl\">If-Modified-Since</a> is present, evaluate the <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-modified-since\" class=\"smpl\">If-Modified-Since</a> precondition:</p></div> <div><ul><li>if true, continue to step <a href=\"https://httpwg.org/specs/rfc9110.html#precedence5\">5</a></li><li>if false, respond <a href=\"https://httpwg.org/specs/rfc9110.html#status.304\" class=\"smpl\">304 (Not Modified)</a></li></ul></div>"
+        },
+        {
+          "html": "<div class=\"avoidbreakafter\"><p>When the method is GET and both <a href=\"https://httpwg.org/specs/rfc9110.html#field.range\" class=\"smpl\">Range</a> and <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-range\" class=\"smpl\">If-Range</a> are present, evaluate the <a href=\"https://httpwg.org/specs/rfc9110.html#field.if-range\" class=\"smpl\">If-Range</a> precondition:</p></div> <div><ul><li>if true and the <a href=\"https://httpwg.org/specs/rfc9110.html#field.range\" class=\"smpl\">Range</a> is applicable to the <a href=\"https://httpwg.org/specs/rfc9110.html#selected.representation\" class=\"smpl\">selected representation</a>, respond <a href=\"https://httpwg.org/specs/rfc9110.html#status.206\" class=\"smpl\">206 (Partial Content)</a></li><li>otherwise, ignore the <a href=\"https://httpwg.org/specs/rfc9110.html#field.range\" class=\"smpl\">Range</a> header field and respond <a href=\"https://httpwg.org/specs/rfc9110.html#status.200\" class=\"smpl\">200 (OK)</a></li></ul></div>"
+        },
+        {
+          "html": "<div><p>Otherwise,</p></div> <div><ul><li>perform the requested method and respond according to its success or failure.</li></ul></div>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "replace",
+      "steps": [
+        {
+          "html": "<div><p>Replace the target URI with the URI referenced by the redirection response's <a href=\"https://httpwg.org/specs/rfc9110.html#field.location\" class=\"smpl\">Location</a> header field value after resolving it relative to the original request's target URI.</p></div>"
+        },
+        {
+          "html": "<div class=\"avoidbreakafter\"><p>Remove header fields that were automatically generated by the implementation, replacing them with updated values as appropriate to the new request. This includes:</p></div> <div></div>",
+          "ignored": [
+            "Connection-specific header fields (see Section 7.6.1),Header fields specific to the client's proxy configuration, including (but not limited to) Proxy-Authorization,Origin-specific header fields (if any), including (but not limited to) Host,Validating header fields that were added by the implementation's cache (e.g., If-None-Match, If-Modified-Since), andResource-specific header fields, including (but not limited to) Referer, Origin, Authorization, and Cookie."
+          ]
+        },
+        {
+          "html": "<div><p>Consider removing header fields that were not automatically generated by the implementation (i.e., those present in the request because they were added by the calling context) where there are security implications; this includes but is not limited to <a href=\"https://httpwg.org/specs/rfc9110.html#field.authorization\" class=\"smpl\">Authorization</a> and Cookie.</p></div>"
+        },
+        {
+          "html": "<div><p>Change the request method according to the redirecting status code's semantics, if applicable.</p></div>"
+        },
+        {
+          "html": "<div><p>If the request method has been changed to GET or HEAD, remove content-specific header fields, including (but not limited to) <a href=\"https://httpwg.org/specs/rfc9110.html#field.content-encoding\" class=\"smpl\">Content-Encoding</a>, <a href=\"https://httpwg.org/specs/rfc9110.html#field.content-language\" class=\"smpl\">Content-Language</a>, <a href=\"https://httpwg.org/specs/rfc9110.html#field.content-location\" class=\"smpl\">Content-Location</a>, <a href=\"https://httpwg.org/specs/rfc9110.html#field.content-type\" class=\"smpl\">Content-Type</a>, <a href=\"https://httpwg.org/specs/rfc9110.html#field.content-length\" class=\"smpl\">Content-Length</a>, Digest, <a href=\"https://httpwg.org/specs/rfc9110.html#field.last-modified\" class=\"smpl\">Last-Modified</a>.</p></div>"
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "use",
+      "steps": [
+        {
+          "html": "use this document as \"Reference\", and"
+        },
+        {
+          "html": "when currently unspecified, set \"Assignee\" to \"IESG\" and \"Contact\" to \"IETF_Chair\"."
+        }
+      ]
+    }
+  ]
+}

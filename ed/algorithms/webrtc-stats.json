@@ -1,0 +1,22 @@
+{
+  "spec": {
+    "title": "Identifiers for WebRTC's Statistics API",
+    "url": "https://w3c.github.io/webrtc-stats/"
+  },
+  "algorithms": [
+    {
+      "name": "exposing hardware is allowed",
+      "href": "https://w3c.github.io/webrtc-stats/#dfn-exposing-hardware-is-allowed",
+      "html": "To <dfn data-lt=\"exposing hardware is allowed|check if hardware exposure is allowed\" id=\"dfn-exposing-hardware-is-allowed\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">check if hardware\n          exposure is allowed</dfn>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>\n                If the <a href=\"https://w3c.github.io/mediacapture-main/#context-capturing-state\">\n                context capturing state</a> is true, return true.\n              </p>"
+        },
+        {
+          "html": "<p>\n                Otherwise return false.\n              </p>"
+        }
+      ]
+    }
+  ]
+}

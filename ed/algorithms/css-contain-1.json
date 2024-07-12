@@ -1,0 +1,64 @@
+{
+  "spec": {
+    "title": "CSS Containment Module Level 1",
+    "url": "https://drafts.csswg.org/css-contain-1/"
+  },
+  "algorithms": [
+    {
+      "name": "layout containment",
+      "href": "https://drafts.csswg.org/css-contain-1/#layout-containment",
+      "html": "Giving an element <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"layout-containment\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">layout containment</dfn> makes its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#principal-box\" id=\"ref-for-principal-box④\">principal box</a> a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"layout-containment-box\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">layout containment box</dfn> and has the following effects:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#layout-containment-box\" id=\"ref-for-layout-containment-box①\">layout containment box</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#establish-an-independent-formatting-context\" id=\"ref-for-establish-an-independent-formatting-context\">establishes an independent formatting context</a>.</p>"
+        },
+        {
+          "html": "<p>If at least one <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\" id=\"ref-for-fragmentation-container\">fragmentation container</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-context\" id=\"ref-for-fragmentation-context\">fragmentation context</a> has <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#layout-containment\" id=\"ref-for-layout-containment③\">layout containment</a>,\nor if at least one <span id=\"ref-for-fragmentation-container①\">fragmentation container</span> of a <span id=\"ref-for-fragmentation-context①\">fragmentation context</span> is a descendant of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#layout-containment-box\" id=\"ref-for-layout-containment-box②\">layout containment box</a> <strong>and</strong> at least one subsequent <span id=\"ref-for-fragmentation-container②\">fragmentation container</span> of the same <span id=\"ref-for-fragmentation-context②\">fragmentation context</span> is not a descendant of that same element with layout containment,\nthen the first <span id=\"ref-for-layout-containment-box③\">layout containment box</span> which is either a <span id=\"ref-for-fragmentation-container③\">fragmentation container</span> itself\nor is an ancestor of a <span id=\"ref-for-fragmentation-container④\">fragmentation container</span> must “trap” the remainder of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmented-flow\" id=\"ref-for-fragmented-flow\">fragmented flow</a>: <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation\" id=\"ref-for-fragmentation\">fragmentation</a> must not continue past the <span id=\"ref-for-layout-containment④\">layout containment</span> boundary,\nand the last <span id=\"ref-for-fragmentation-container⑤\">fragmentation container</span> within the first <span id=\"ref-for-layout-containment⑤\">layout containment</span> boundary\nis treated as if it is the last <span id=\"ref-for-fragmentation-container⑥\">fragmentation container</span> in its <span id=\"ref-for-fragmentation-context③\">fragmentation context</span>.</p>\n     <p>If subsequent <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\" id=\"ref-for-fragmentation-container⑦\">fragmentation containers</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-context\" id=\"ref-for-fragmentation-context④\">fragmentation context</a> are only generated when more content remains in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmented-flow\" id=\"ref-for-fragmented-flow①\">fragmented flow</a>,\nthen they are not generated.\nIf they would exist regardless,\nthey remain part of the <span id=\"ref-for-fragmentation-context⑤\">fragmentation context</span>,\nbut do not receive any content from the <span id=\"ref-for-fragmented-flow②\">fragmented flow</span>.</p>"
+        },
+        {
+          "html": "<p>If the computed value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-overflow-3/#propdef-overflow\" id=\"ref-for-propdef-overflow①\">overflow</a> property is\neither <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-3/#valdef-overflow-visible\" id=\"ref-for-valdef-overflow-visible\">visible</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-3/#valdef-overflow-clip\" id=\"ref-for-valdef-overflow-clip\">clip</a> or a combination thereof,\nany overflow must be treated as <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#ink-overflow\" id=\"ref-for-ink-overflow\">ink overflow</a>.</p>"
+        },
+        {
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#layout-containment-box\" id=\"ref-for-layout-containment-box⑤\">layout containment box</a> establishes an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#absolute-positioning-containing-block\" id=\"ref-for-absolute-positioning-containing-block\">absolute positioning containing block</a> and a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-3/#fixed-positioning-containing-block\" id=\"ref-for-fixed-positioning-containing-block\">fixed positioning containing block</a>.</p>"
+        },
+        {
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#layout-containment-box\" id=\"ref-for-layout-containment-box⑥\">layout containment box</a> creates a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/visuren.html#x43\" id=\"ref-for-x43\">stacking context</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#forced-break\" id=\"ref-for-forced-break\">Forced breaks</a> are allowed within <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#layout-containment-box\" id=\"ref-for-layout-containment-box⑦\">layout containment boxes</a> but do not propagate to the parent as otherwise described in <a href=\"https://drafts.csswg.org/css-break-3/#break-between\"><cite>CSS Fragmentation 3</cite> § 3.1 Breaks Between Boxes: the break-before and break-after properties</a>.</p>"
+        },
+        {
+          "html": "<p>For the purpose of the <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/CSS2/visudet.html#propdef-vertical-align\" id=\"ref-for-propdef-vertical-align\">vertical-align</a> property,\nor any other property whose effects\nneed to relate the position of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#layout-containment-box\" id=\"ref-for-layout-containment-box⑧\">layout containment box</a>'s baseline\nto something other than its descendants,\nthe <span id=\"ref-for-layout-containment-box⑨\">containment box</span> is treated as having no baseline.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Possible optimizations that can be enabled by <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#layout-containment\" id=\"ref-for-layout-containment⑧\">layout containment</a> include (but are not limited to):",
+      "rationale": "in parallel",
+      "steps": [
+        {
+          "html": "<p>When laying out the page,\nthe contents of separate <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#layout-containment-box\" id=\"ref-for-layout-containment-box①⓪\">containment boxes</a> can be laid out in parallel,\nas they’re guaranteed not to affect each other.</p>"
+        },
+        {
+          "html": "<p>When laying out the page,\nif the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#layout-containment-box\" id=\"ref-for-layout-containment-box①①\">containment box</a> is off-screen or obscured\nand the layout of the visible parts of the screen do not depend on the size of the <span id=\"ref-for-layout-containment-box①②\">containment box</span> (for example, if the <span id=\"ref-for-layout-containment-box①③\">containment box</span> is near the end of a block container,\nand you’re viewing the beginning of the block container),\nthe layout of the <span id=\"ref-for-layout-containment-box①④\">containment box</span>' contents can be delayed or done at a lower priority.</p>\n     <p>(When paired with <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#size-containment\" id=\"ref-for-size-containment⑥\">size containment</a>,\nthis optimization can be applied more liberally.)</p>"
+        }
+      ]
+    },
+    {
+      "html": "Possible optimizations that can be enabled by <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#paint-containment\" id=\"ref-for-paint-containment②\">paint containment</a> include (but are not limited to):",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-1/#paint-containment-box\" id=\"ref-for-paint-containment-box⑤\">containment box</a> is off-screen or obscured,\nthe UA can usually skip trying to paint its contents,\nas they’re guaranteed to be off-screen/obscured as well.</p>"
+        },
+        {
+          "html": "<p>Unless the clipped content is made accessible via a separate mechanism\nsuch as the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-overflow-3/#propdef-overflow\" id=\"ref-for-propdef-overflow③\">overflow</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-ui-4/#propdef-resize\" id=\"ref-for-propdef-resize①\">resize</a>, or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-ui-3/#propdef-text-overflow\" id=\"ref-for-propdef-text-overflow①\">text-overflow</a> properties,\nthe UA can reserve \"canvas\" space for the box exactly the box’s size.\n(In similar, scrollable, situations, like <span class=\"css\" id=\"ref-for-propdef-overflow④\">overflow: hidden</span>,\nit’s possible to scroll to the currently-clipped content,\nso UAs often predictively overpaint somewhat\nso there’s something to see as soon as the scroll happens,\nrather than a frame later.)</p>"
+        },
+        {
+          "html": "<p>Because they are guaranteed to be stacking contexts,\nscrolling elements can be painted into a single GPU layer.</p>"
+        }
+      ]
+    }
+  ]
+}

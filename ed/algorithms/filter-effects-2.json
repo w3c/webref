@@ -1,0 +1,55 @@
+{
+  "spec": {
+    "title": "Filter Effects Module Level 2",
+    "url": "https://drafts.fxtf.org/filter-effects-2/"
+  },
+  "algorithms": [
+    {
+      "html": "An element (call it B) with a backdrop-filter property other than <span class=\"css\">none</span> is rendered as if\nthe following steps are performed:",
+      "rationale": "copy",
+      "steps": [
+        {
+          "html": "<p>Copy the <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/filter-effects-2/#backdrop-root-image\" id=\"ref-for-backdrop-root-image\">Backdrop Root Image</a> into a temporary buffer, such as a raster image. Call this buffer T’.</p>"
+        },
+        {
+          "html": "<p>Apply the backdrop-filter’s filter operations to the entire contents of T'.</p>"
+        },
+        {
+          "html": "<p>If element B has any transforms (between B and the Backdrop Root), apply the <b>inverse</b> of those transforms to the contents of T’.</p>"
+        },
+        {
+          "html": "<p>Apply a clip to the contents of T’, using the border box of element B, including <a href=\"https://drafts.csswg.org/css-backgrounds-3/#border-radius\">border-radius</a> if specified. Note that the children of B are not considered for the sizing or location of this clip.</p>"
+        },
+        {
+          "html": "<p>Draw all of element B, including its background, border, and any children elements, into T’.</p>"
+        },
+        {
+          "html": "<p>If element B has any transforms, effects, or clips, apply those to T’.</p>"
+        },
+        {
+          "html": "<p>Composite the contents of T’ into element B’s parent, using source-over compositing.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Backdrop Root Image",
+      "href": "https://drafts.fxtf.org/filter-effects-2/#backdrop-root-image",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"backdrop-root-image\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Backdrop Root Image</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an element E is the final image that would be produced by the following steps:",
+      "rationale": "start",
+      "steps": [
+        {
+          "html": "<p>Start at the <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/filter-effects-2/#backdrop-root\" id=\"ref-for-backdrop-root\">Backdrop Root</a> element that is the nearest ancestor of E.</p>"
+        },
+        {
+          "html": "<p>Paint all content, in <a href=\"https://www.w3.org/TR/CSS2/zindex.html#painting-order\">painting order</a>, between (and including) the ancestor Backdrop Root element and element E.</p>"
+        },
+        {
+          "html": "<p>Flatten the painted content into a 2D screen-space buffer.</p>"
+        },
+        {
+          "html": "<p>Transform the border box of element E to 2D screen-space, and clip the final painted output to this border quad.</p>"
+        }
+      ]
+    }
+  ]
+}

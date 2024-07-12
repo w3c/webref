@@ -1,0 +1,216 @@
+{
+  "spec": {
+    "title": "JS Self-Profiling API",
+    "url": "https://wicg.github.io/js-self-profiling/"
+  },
+  "algorithms": [
+    {
+      "name": "take a sample",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-take-a-sample",
+      "html": "To <dfn id=\"dfn-take-a-sample\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">take a sample</dfn> given a <a href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-profiling-session-1\">profiling session</a>, perform the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the length of <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilertrace-samples\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilertrace-samples-1\">ProfilerTrace.samples</a> is greater than or equal to the <a href=\"https://wicg.github.io/js-self-profiling/#dfn-sample-buffer-size-limit\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-sample-buffer-size-limit-1\">sample buffer size limit</a> associated with the profiling session, fire a new event of type <dfn id=\"dfn-samplebufferfull\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\" class=\"respec-offending-element\" title=\"Found definition for &quot;samplebufferfull&quot;, but nothing links to it. This is usually a spec bug!\">samplebufferfull</dfn> to the associated <a href=\"https://wicg.github.io/js-self-profiling/#dom-profiler\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profiler-1\"><code>Profiler</code></a>, move the state to <code>stopped</code>, and return."
+        },
+        {
+          "html": "Let <var>sample</var> be a new <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilersample\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilersample-1\"><code>ProfilerSample</code></a>."
+        },
+        {
+          "html": "Set the <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilersample-timestamp\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilersample-timestamp-1\">ProfilerSample.timestamp</a> property of <var>sample</var> to the <dfn data-cite=\"!hr-time-2#dfn-current-high-resolution-time\" id=\"dfn-current-high-resolution-time\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://www.w3.org/TR/hr-time-2/#dfn-current-high-resolution-time\" data-cite=\"hr-time-2\" data-cite-path=\"\" data-cite-frag=\"#dfn-current-high-resolution-time\">current high resolution time</a></dfn> relative to the <a href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-profiling-session-2\">profiling session</a>'s <a data-cite=\"!HR-TIME-2#dfn-time-origin\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-2/#dfn-time-origin\">time origin</a>."
+        },
+        {
+          "html": "Let <var>stack</var> be the <dfn data-cite=\"!ECMA-262#execution-context-stack\" id=\"dfn-execution-context-stack\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://tc39.es/ecma262/multipage/#execution-context-stack\" data-cite=\"ECMA-262\" data-cite-path=\"\" data-cite-frag=\"#execution-context-stack\">execution context stack</a></dfn> associated with the profiling session's <a data-cite=\"!ECMA-262#agent\" data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#agent\">agent</a>."
+        },
+        {
+          "html": "Set the <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilersample-stackid\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilersample-stackid-1\">ProfilerSample.stackId</a> property of <var>sample</var> to the result of the <a href=\"https://wicg.github.io/js-self-profiling/#dfn-get-a-stack-id\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-a-stack-id-1\">get a stack ID</a> algorithm on <var>stack</var>."
+        },
+        {
+          "html": "Add <var>sample</var> to the <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilertrace-samples\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilertrace-samples-2\">ProfilerTrace.samples</a> associated with the session's <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilertrace\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilertrace-2\"><code>ProfilerTrace</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "get a stack ID",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-get-a-stack-id",
+      "html": "To <dfn id=\"dfn-get-a-stack-id\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">get a stack ID</dfn> given an <a data-cite=\"!ECMA-262#execution-context-stack\" data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#execution-context-stack\">execution context stack</a> bound to <var>stack</var>, perform the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>stack</var> is empty, return <code>undefined</code>."
+        },
+        {
+          "html": "Let <var>head</var> be the top element of <var>stack</var>, and <var>tail</var> be the remainder of <var>stack</var> after removing its top element."
+        },
+        {
+          "html": "Let <var>parentId</var> be the result of calling <a href=\"https://wicg.github.io/js-self-profiling/#dfn-get-a-stack-id\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-a-stack-id-2\">get a stack ID</a> recursively on <var>tail</var>."
+        },
+        {
+          "html": "Let <var>frameId</var> be the result of calling <a href=\"https://wicg.github.io/js-self-profiling/#dfn-get-a-frame-id\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-a-frame-id-1\">get a frame ID</a> on <var>head</var>."
+        },
+        {
+          "html": "If <var>frameId</var> is <code>undefined</code>, return <var>parentId</var>."
+        },
+        {
+          "html": "Let <var>profilerStack</var> be a new <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilerstack\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilerstack-1\"><code>ProfilerStack</code></a> with <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilerstack-frameid\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilerstack-frameid-1\">ProfilerStack.frameId</a> equal to <var>frameId</var>, and <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilerstack-parentid\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilerstack-parentid-1\">ProfilerStack.parentId</a> equal to <var>parentId</var>."
+        },
+        {
+          "html": "Return the result of running <a href=\"https://wicg.github.io/js-self-profiling/#dfn-get-an-element-id\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-an-element-id-1\">get an element ID</a> on <var>profilerStack</var> and <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilertrace-stacks\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilertrace-stacks-1\">ProfilerTrace.stacks</a>."
+        }
+      ]
+    },
+    {
+      "name": "get a frame ID",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-get-a-frame-id",
+      "html": "To <dfn id=\"dfn-get-a-frame-id\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">get a frame ID</dfn> given an <dfn data-cite=\"!ECMA-262#sec-execution-contexts\" id=\"dfn-execution-context\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://tc39.es/ecma262/multipage/#sec-execution-contexts\" data-cite=\"ECMA-262\" data-cite-path=\"\" data-cite-frag=\"#sec-execution-contexts\">execution context</a></dfn> bound to <var>context</var>, perform the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" data-cite=\"!ECMA-262#realm\" href=\"https://tc39.es/ecma262/multipage/#realm\">realm</a> associated with <var>context</var> does not match the realm associated with the profiling session, return <code>undefined</code>."
+        },
+        {
+          "html": "Let <var>instance</var> be equal to the <dfn data-cite=\"!ECMA-262#sec-function-instances\" id=\"dfn-function-instance\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://tc39.es/ecma262/multipage/#sec-function-instances\" data-cite=\"ECMA-262\" data-cite-path=\"\" data-cite-frag=\"#sec-function-instances\">function instance</a></dfn> associated with <var>context</var>."
+        },
+        {
+          "html": "Let <var>scriptOrModule</var> be equal to the <code>ScriptOrModule</code> associated with <var>context</var>."
+        },
+        {
+          "html": "Let <var data-type=\"ScriptOrModule\">attributedScriptOrModule</var> be equal to the result of running the following algorithm:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>scriptOrModule</var> is non-null, return <var>scriptOrModule</var>."
+            },
+            {
+              "html": "If <var>instance</var> is a built-in function object, return the <code>ScriptOrModule</code> containing the function that invoked <var>instance</var>."
+            },
+            {
+              "html": "Otherwise, return null."
+            }
+          ]
+        },
+        {
+          "html": "If <var data-type=\"ScriptOrModule\">attributedScriptOrModule</var> is null, return <code>undefined</code>."
+        },
+        {
+          "html": "Let <var data-type=\"Script\">attributedScript</var> be the <a data-link-type=\"dfn|abstract-op\" data-cite=\"HTML5#concept-script\" href=\"https://www.w3.org/TR/html5/#concept-script\">script</a> obtained from <var data-type=\"ScriptOrModule\">attributedScriptOrModule</var>.[[HostDefined]]."
+        },
+        {
+          "html": "If <var data-type=\"Script\">attributedScript</var> is a <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"classic-script\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#classic-script\">classic script</a> and its <dfn data-cite=\"HTML5#muted-errors\" id=\"dfn-muted-errors\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://www.w3.org/TR/html5/#muted-errors\" data-cite=\"HTML5\" data-cite-path=\"\" data-cite-frag=\"#muted-errors\">muted errors</a></dfn> boolean is equal to <code>true</code>, return <code>undefined</code>.\n          <p>\n        </p>"
+        },
+        {
+          "html": "Let <var>frame</var> be a new <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilerframe\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilerframe-1\"><code>ProfilerFrame</code></a>."
+        },
+        {
+          "html": "Set <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilerframe-name\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilerframe-name-1\">ProfilerFrame.name</a> of <var>frame</var> to the <dfn data-cite=\"!ECMA-262#sec-function-instances-name\" id=\"dfn-function-instance-name\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://tc39.es/ecma262/multipage/#sec-function-instances-name\" data-cite=\"ECMA-262\" data-cite-path=\"\" data-cite-frag=\"#sec-function-instances-name\">function instance name</a></dfn> associated with <var>instance</var>."
+        },
+        {
+          "html": "If <var>scriptOrModule</var> is non-null:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>script</var> be the <dfn data-cite=\"HTML5#concept-script\" id=\"dfn-script\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://www.w3.org/TR/html5/#concept-script\" data-cite=\"HTML5\" data-cite-path=\"\" data-cite-frag=\"#concept-script\">script</a></dfn> obtained from <var>scriptOrModule</var>.[[HostDefined]]."
+            },
+            {
+              "html": "Let <var>resourceString</var> be equal to the <dfn data-cite=\"HTML5#concept-script-base-url\" id=\"dfn-base-url\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://www.w3.org/TR/html5/#concept-script-base-url\" data-cite=\"HTML5\" data-cite-path=\"\" data-cite-frag=\"#concept-script-base-url\">base URL</a></dfn> of <var>script</var>."
+            },
+            {
+              "html": "Set <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilerframe-resourceid\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilerframe-resourceid-1\">ProfilerFrame.resourceId</a> to the result of running <a href=\"https://wicg.github.io/js-self-profiling/#dfn-get-an-element-id\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-an-element-id-2\">get an element ID</a> on <var>resourceString</var> and <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilertrace-resources\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilertrace-resources-1\">ProfilerTrace.resources</a>."
+            },
+            {
+              "html": "Set <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilerframe-line\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilerframe-line-1\">ProfilerFrame.line</a> of <var>frame</var> to the 1-based index of the line at which <var>instance</var> is defined in <var>script</var>."
+            },
+            {
+              "html": "Set <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilerframe-column\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilerframe-column-1\">ProfilerFrame.column</a> of <var>frame</var> to the 1-based index of the column at which <var>instance</var> is defined in <var>script</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return the result of running <a href=\"https://wicg.github.io/js-self-profiling/#dfn-get-an-element-id\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-an-element-id-3\">get an element ID</a> on <var>frame</var> and <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilertrace-frames\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilertrace-frames-1\">ProfilerTrace.frames</a>."
+        }
+      ]
+    },
+    {
+      "name": "get an element ID",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-get-an-element-id",
+      "html": "To <dfn id=\"dfn-get-an-element-id\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">get an element ID</dfn> for an <var>item</var> in a <var>list</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If there exists an element in <var>list</var> component-wise equal to <var>item</var>, return its index."
+        },
+        {
+          "html": "Otherwise, append <var>item</var> to the end of <var>list</var> and return its index."
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>options</var>' <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"ProfilerInitOptions\" data-xref-for=\"ProfilerInitOptions\" href=\"https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions-sampleinterval\" class=\"internalDFN\" id=\"ref-for-dom-profilerinitoptions-sampleinterval-1\"><code>sampleInterval</code></a> is less than 0, throw a <code>RangeError</code>."
+        },
+        {
+          "html": "<a href=\"https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value\">Get the policy value</a> for <code>\"js-profiling\"</code> in the <a data-cite=\"!HTML5#document\" href=\"https://www.w3.org/TR/html5/#document\">Document</a>. If the result is false, throw a <code>\"NotAllowedError\"</code> DOMException."
+        },
+        {
+          "html": "Create a new <a href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-profiling-session-6\">profiling session</a> where:"
+        },
+        {
+          "html": "Return a new <a href=\"https://wicg.github.io/js-self-profiling/#dom-profiler\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profiler-5\"><code>Profiler</code></a> associated with the newly created <a href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-profiling-session-7\">profiling session</a>."
+        }
+      ]
+    },
+    {
+      "html": "Stops the profiler and returns a trace. This method <em class=\"rfc2119\">MUST</em> run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the associated <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" id=\"ref-for-dfn-profiling-session-8\">profiling session</a>'s state is <code>stopped</code>, return <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"a-promise-rejected-with\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> an <code>\"InvalidStateError\"</code> DOMException."
+        },
+        {
+          "html": "Set the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" id=\"ref-for-dfn-profiling-session-9\">profiling session</a>'s state to <code>stopped</code>."
+        },
+        {
+          "html": "Let <var data-type=\"Promise\">p</var> be <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"a-new-promise\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "perform",
+          "steps": [
+            {
+              "html": "Perform any <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"implementation-defined\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\">implementation-defined</a> work to stop the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" id=\"ref-for-dfn-profiling-session-10\">profiling session</a>."
+            },
+            {
+              "html": "Resolve <var data-type=\"Promise\">p</var> with the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"ProfilerTrace\" href=\"https://wicg.github.io/js-self-profiling/#dom-profilertrace\" class=\"internalDFN\" id=\"ref-for-dom-profilertrace-5\"><code>ProfilerTrace</code></a> associated with the profiler's <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" id=\"ref-for-dfn-profiling-session-11\">profiling session</a>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">p</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-cite=\"webdriver#dfn-remote-end-steps\" href=\"https://www.w3.org/TR/webdriver1/#dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"list\">sessions</var> be a <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> of all <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" id=\"ref-for-dfn-profiling-session-14\">profiling sessions</a> created in the <a data-cite=\"webdriver#dfn-current-browsing-context\" href=\"https://www.w3.org/TR/webdriver1/#dfn-current-browsing-context\">current browsing context</a>."
+        },
+        {
+          "html": "For each <var data-type=\"profiling session\">session</var> of <var data-type=\"list\">sessions</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/js-self-profiling/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-1\">state</a> of <var data-type=\"profiling session\">session</var> is <code>started</code>, <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/js-self-profiling/#dfn-take-a-sample\" class=\"internalDFN\" id=\"ref-for-dfn-take-a-sample-7\">take a sample</a> with <var data-type=\"profiling session\">session</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <a data-cite=\"webdriver#dfn-success\" href=\"https://www.w3.org/TR/webdriver1/#dfn-success\">success</a> with data <code>null</code>."
+        }
+      ]
+    }
+  ]
+}

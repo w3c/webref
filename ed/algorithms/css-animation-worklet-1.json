@@ -1,0 +1,397 @@
+{
+  "spec": {
+    "title": "CSS Animation Worklet API",
+    "url": "https://drafts.css-houdini.org/css-animationworklet-1/"
+  },
+  "algorithms": [
+    {
+      "name": "register-animator",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-animationworkletglobalscope-registeranimator",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AnimationWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-animationworkletglobalscope-registeranimator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerAnimator(<var>name</var>, <var>animatorCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is called in a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope④\">AnimationWorkletGlobalScope</a></code>, the user agent <em>must</em> run the\nfollowing steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>name</var> is not a valid <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#typedef-ident\" id=\"ref-for-typedef-ident①\">&lt;ident&gt;</a>, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a> and abort all these\nsteps.</p>"
+        },
+        {
+          "html": "<p>Let <var>animatorDefinitions</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope⑤\">AnimationWorkletGlobalScope</a></code>'s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-definitions\" id=\"ref-for-animator-definitions\">animator definitions</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②\">map</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>animatorDefinitions</var>[<var>name</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-isconstructor\" id=\"ref-for-sec-isconstructor\">IsConstructor</a>(<var>animatorCtor</var>) is <b>false</b>, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①\">TypeError</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>prototype</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>animatorCtor</var>, \"prototype\").</p>"
+        },
+        {
+          "html": "<p>Let <var>animateFuncValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p①\">Get</a>(<var>prototype</var>, \"animate\").</p>"
+        },
+        {
+          "html": "<p>Let <var>animateFunc</var> be the result of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#es-type-mapping\" id=\"ref-for-es-type-mapping\">converting</a> <var>animateFuncValue</var> to the <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#Function\" id=\"ref-for-Function②\">Function</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-function\" id=\"ref-for-dfn-callback-function③\">callback function</a> type. If an exception is thrown, rethrow the exception and abort\nall these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>stateFuncValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p②\">Get</a>(<var>prototype</var>, \"state\").</p>"
+        },
+        {
+          "html": "<p>Let <var>stateFunc</var> be the result of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#es-type-mapping\" id=\"ref-for-es-type-mapping①\">converting</a> <var>stateFuncValue</var> to the <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#Function\" id=\"ref-for-Function③\">Function</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-function\" id=\"ref-for-dfn-callback-function④\">callback function</a> type, If an exception is thrown, set <var>stateful</var> to be <b>false</b>,\notherwise set <var>stateful</var> to be <b>true</b> and <var>stateFunc</var> to be undefined.</p>"
+        },
+        {
+          "html": "<p>Let <var>definition</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-definition\" id=\"ref-for-animator-definition①\">animator definition</a> with:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-name\" id=\"ref-for-animator-name\">animator name</a> being <var>name</var></p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#class-constructor\" id=\"ref-for-class-constructor\">class constructor</a> being <var>animatorCtor</var></p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animate-function\" id=\"ref-for-animate-function\">animate function</a> being <var>animateFunc</var></p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#state-function\" id=\"ref-for-state-function①\">state function</a> being <var>stateFunc</var></p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-definition-stateful-flag\" id=\"ref-for-animator-definition-stateful-flag①\">stateful flag</a> being <var>stateful</var></p>\n      </li></ul>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a> the <var>animatorDefinitions</var>[<var>name</var>] to <var>definition</var>.</p>"
+        },
+        {
+          "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AnimationWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-animationworkletglobalscope-registeranimator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerAnimator(<var>name</var>, <var>animatorCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is called in a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope④\">AnimationWorkletGlobalScope</a></code>, the user agent <em>must</em> run the\nfollowing steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>documentAnimatorDefinitions</var> be the associated <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">document’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#document-animator-definitions\" id=\"ref-for-document-animator-definitions\">document animator definitions</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>documentDefinition</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#document-animator-definition\" id=\"ref-for-document-animator-definition\">document animator definition</a> with:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-definition-stateful-flag\" id=\"ref-for-animator-definition-stateful-flag②\">stateful flag</a> being <var>stateful</var></p>\n        </li></ul>"
+            },
+            {
+              "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AnimationWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-animationworkletglobalscope-registeranimator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerAnimator(<var>name</var>, <var>animatorCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is called in a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope④\">AnimationWorkletGlobalScope</a></code>, the user agent <em>must</em> run the\nfollowing steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>existingDocumentDefinition</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get\">get</a> <var>documentAnimatorDefinitions</var>[<var>name</var>].</p>"
+                },
+                {
+                  "html": "<p>If <var>existingDocumentDefinition</var> is <code>\"invalid\"</code>, abort all these steps.</p>"
+                },
+                {
+                  "html": "<p>If <var>existingDocumentDefinition</var> and <var>documentDefinition</var> are not equivalent, (that is\ntheir <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#document-animator-definition-stateful-flag\" id=\"ref-for-document-animator-definition-stateful-flag\">stateful flag</a>s are\ndifferent), then:</p>\n          <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">set</a> <var>documentAnimatorDefinitions</var>[<var>name</var>] to <code>\"invalid\"</code>.</p>\n          <p>Log an error to the debugging console stating that the same class was registered\nwith different <code>stateful flag</code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">set</a> <var>documentAnimatorDefinitions</var>[<var>name</var>] to <var>documentDefinition</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "WorkletAnimationEffect/localTime",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-workletanimationeffect-localtime",
+      "html": "Getting the attribute returns the corresponding <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#local-time\" id=\"ref-for-local-time①\">local time</a>.\nSetting the attribute updates the local time given this effect as <var>effect</var> and the attribute value as <var>time</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <var>time</var> is the same as <var>effect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#local-time\" id=\"ref-for-local-time②\">local time</a> then skip following steps.</p>"
+        },
+        {
+          "html": "<p>Set the <var>effect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#local-time\" id=\"ref-for-local-time③\">local time</a> to <var>time</var>.</p>"
+        },
+        {
+          "html": "<p>Set the <var>effect</var>’s animator instance’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#sync-requested-flag\" id=\"ref-for-sync-requested-flag\">sync requested flag</a> to <b>true</b>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-animator",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#create-a-new-animator-instance",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-new-animator-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a new animator instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <var>name</var>, <var>timeline</var>, <var>effect</var>, <var>serializedOptions</var>, <var>serializedState</var>, and <var>workletGlobalScope</var>, the user agent <em>must</em> run\nthe following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let the <var>definition</var> be the result of looking up <var>name</var> on the <var>workletGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-definitions\" id=\"ref-for-animator-definitions①\">animator definitions</a>.</p>\n      <p>If <var>definition</var> does not exist abort the following steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>animatorCtor</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#class-constructor\" id=\"ref-for-class-constructor①\">class constructor</a> of <var>definition</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>options</var> be <a data-link-type=\"dfn\" href=\"http://w3c.github.io/html/infrastructure.html#structureddeserialize\" id=\"ref-for-structureddeserialize\">StructuredDeserialize</a>(<var>serializedOptions</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>state</var> be <a data-link-type=\"dfn\" href=\"http://w3c.github.io/html/infrastructure.html#structureddeserialize\" id=\"ref-for-structureddeserialize①\">StructuredDeserialize</a>(<var>serializedState</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>animatorInstance</var> be the result of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#construct-a-callback-function\" id=\"ref-for-construct-a-callback-function\">constructing</a> <var>animatorCtor</var> with\n«<var>options</var>, <var>state</var>» as arguments. If an exception is thrown, rethrow the exception and\nabort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>animatorEffect</var> be the result of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#construct-a-callback-function\" id=\"ref-for-construct-a-callback-function①\">constructing</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#workletanimationeffect\" id=\"ref-for-workletanimationeffect②\">WorkletAnimationEffect</a></code> with its <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#corresponding-effect\" id=\"ref-for-corresponding-effect\">corresponding effect</a> being <var>effect</var>.</p>"
+        },
+        {
+          "html": "<p>Set the following on <var>animatorInstance</var> with:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-name\" id=\"ref-for-animator-name②\">animator name</a> being <var>name</var></p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#frame-requested-flag\" id=\"ref-for-frame-requested-flag①\">frame requested flag</a> being <b>false</b></p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#sync-requested-flag\" id=\"ref-for-sync-requested-flag①\">sync requested flag</a> being <b>false</b></p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-current-time\" id=\"ref-for-animator-current-time\">animator current time</a> being unresolved</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#effect\" id=\"ref-for-effect\">effect</a> being <var>animatorEffect</var></p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-timeline\" id=\"ref-for-animator-timeline\">animator timeline</a> being <var>timeline</var></p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-serialized-options\" id=\"ref-for-animator-serialized-options\">animator serialized options</a> being <var>options</var></p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Add <var>animatorInstance</var> to <var>workletGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-instance-set\" id=\"ref-for-animator-instance-set\">animator instance set</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "run-animators",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#run-animators",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-animators\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run animators</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> in a given <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-animators\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run animators</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> in a given <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>animatorName</var> be <var>animator</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-name\" id=\"ref-for-animator-name③\">animator name</a></p>"
+            },
+            {
+              "html": "<p>Let the <var>definition</var> be the result of looking up <var>animatorName</var> on the <var>workletGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-definitions\" id=\"ref-for-animator-definitions②\">animator definitions</a>.</p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-animators\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run animators</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> in a given <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#frame-requested-flag\" id=\"ref-for-frame-requested-flag③\">frame requested flag</a> for <var>animator</var> is <b>false</b> or the effect belonging\nto the <var>animator</var> will not be visible within the visual viewport of the current frame\nthe user agent <em>may</em> abort all the following steps.</p>"
+                },
+                {
+                  "html": "<p>Let <var>animateFunction</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animate-function\" id=\"ref-for-animate-function①\">animate function</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>currentTime</var> be <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-current-time\" id=\"ref-for-animator-current-time①\">animator current time</a> of <var>animator</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>effect</var> be <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#effect\" id=\"ref-for-effect①\">effect</a> of <var>animator</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">Invoke</a> <var>animateFunction</var> with arguments «<var>currentTime</var>, <var>effect</var>»,\nand with <var>animator</var> as the <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-callback-this-value\" id=\"ref-for-dfn-callback-this-value\">callback this value</a>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-instance\" id=\"ref-for-animator-instance⑦\">animator instance</a>s in the <var>workletGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-instance-set\" id=\"ref-for-animator-instance-set②\">animator instance set</a> has its <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#sync-requested-flag\" id=\"ref-for-sync-requested-flag②\">sync requested flag</a> set to <b>true</b> then <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#sync-local-times-to-document\" id=\"ref-for-sync-local-times-to-document\">sync local times to document</a> given <var>workletGlobalScope</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "remove-animator",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#remove-an-animator-instance",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"remove-an-animator-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove an animator instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>animator</var> and <var>workletGlobalScope</var> the user agent <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Remove <var>animator</var> from <var>workletGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-instance-set\" id=\"ref-for-animator-instance-set③\">animator instance set</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "migrate-animator",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#migrate-an-animator-instance",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"migrate-an-animator-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">migrate an animator instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from one <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope①②\">AnimationWorkletGlobalScope</a></code> to another,\ngiven <var>animator</var>, <var>sourceWorkletGlobalScope</var>, <var>destinationWorkletGlobalScope</var>, the user agent <em>must</em> run the following steps :",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>serializedState</var> be undefined.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"migrate-an-animator-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">migrate an animator instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from one <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope①②\">AnimationWorkletGlobalScope</a></code> to another,\ngiven <var>animator</var>, <var>sourceWorkletGlobalScope</var>, <var>destinationWorkletGlobalScope</var>, the user agent <em>must</em> run the following steps :",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>animatorName</var> be <var>animator</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-name\" id=\"ref-for-animator-name④\">animator name</a></p>"
+            },
+            {
+              "html": "<p>Let <var>definition</var> be the result of looking up <var>animatorName</var> on <var>sourceWorkletGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-definitions\" id=\"ref-for-animator-definitions③\">animator definitions</a>.</p>\n        <p>If <var>definition</var> does not exist then abort the following steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>stateful</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-definition-stateful-flag\" id=\"ref-for-animator-definition-stateful-flag③\">stateful flag</a> of <var>definition</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>stateful</var> is <b>false</b> then abort the following steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>stateFunction</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#state-function\" id=\"ref-for-state-function②\">state function</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>state</var> be the result of <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function①\">Invoke</a> <var>stateFunction</var> with <var>animator</var> as the <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-callback-this-value\" id=\"ref-for-dfn-callback-this-value①\">callback this value</a>.  If any exception is thrown, rethrow the exception and abort\nthe following steps.</p>"
+            },
+            {
+              "html": "<p>Set <var>serializedState</var> to be the result of <a data-link-type=\"dfn\" href=\"http://w3c.github.io/html/infrastructure.html#structuredserialize\" id=\"ref-for-structuredserialize\">StructuredSerialize</a>(<var>state</var>).\nIf any exception is thrown, then abort the following steps.</p>"
+            },
+            {
+              "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#remove-an-animator-instance\" id=\"ref-for-remove-an-animator-instance\">remove an animator instance</a> given <var>animator</var>, and <var>sourceWorkletGlobalScope</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Wait for the above task to complete. If the task is aborted, abort the following steps.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"migrate-an-animator-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">migrate an animator instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from one <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope①②\">AnimationWorkletGlobalScope</a></code> to another,\ngiven <var>animator</var>, <var>sourceWorkletGlobalScope</var>, <var>destinationWorkletGlobalScope</var>, the user agent <em>must</em> run the following steps :",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#create-a-new-animator-instance\" id=\"ref-for-create-a-new-animator-instance\">create a new animator instance</a> given:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>The <var>animator</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-name\" id=\"ref-for-animator-name⑤\">animator name</a> as name.</p>\n         </li><li data-md=\"\">\n          <p>The <var>animator</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-timeline\" id=\"ref-for-animator-timeline①\">animator timeline</a> as timeline.</p>\n         </li><li data-md=\"\">\n          <p>The <var>animator</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#effect\" id=\"ref-for-effect②\">effect</a> as effect.</p>\n         </li><li data-md=\"\">\n          <p>The <var>animator</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-serialized-options\" id=\"ref-for-animator-serialized-options①\">animator serialized options</a> as options.</p>\n         </li><li data-md=\"\">\n          <p>The <var>serializedState</var> as state.</p>\n         </li><li data-md=\"\">\n          <p>The <var>destinationWorkletGlobalScope</var> as workletGlobalScope.</p>\n        </li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "create-worklet-animation",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#dom-workletanimation-workletanimation",
+      "html": "<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WorkletAnimation\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"WorkletAnimation(animatorName, effects, timeline, options)|constructor(animatorName, effects, timeline, options)|WorkletAnimation(animatorName, effects, timeline)|constructor(animatorName, effects, timeline)|WorkletAnimation(animatorName, effects)|constructor(animatorName, effects)|WorkletAnimation(animatorName)|constructor(animatorName)\" id=\"dom-workletanimation-workletanimation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>WorkletAnimation(<var>animatorName</var>, <var>effects</var>, <var>timeline</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> \n    <p>Creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#workletanimation\" id=\"ref-for-workletanimation②\">WorkletAnimation</a></code> object using the following procedure:</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>documentAnimatorDefinitions</var> be the associated <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">document’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#document-animator-definitions\" id=\"ref-for-document-animator-definitions①\">document animator\ndefinitions</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">map</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>documentAnimatorDefinitions</var>[<var>animatorName</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> an <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a> and abort the following steps.</p>"
+        },
+        {
+          "html": "<p>If <var>documentAnimatorDefinitions</var>[<var>animatorName</var>] is <code>\"invalid\"</code>, <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> an <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③\">TypeError</a> and abort the following steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>workletAnimation</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#workletanimation\" id=\"ref-for-workletanimation③\">WorkletAnimation</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#set-the-timeline-of-an-animation\" id=\"ref-for-set-the-timeline-of-an-animation\">set the timeline of an animation</a> on <var>workletAnimation</var> passing <var>timeline</var> as the new timeline or, if a <var>timeline</var> argument is not provided,\npassing the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#the-documents-default-timeline\" id=\"ref-for-the-documents-default-timeline\">default document timeline</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code> associated with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code> that is the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object\">current global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>effect</var> be the result corresponding to the first matching condition from below.</p>\n      <dl>\n       <dt data-md=\"\">If <var>effects</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#animationeffect\" id=\"ref-for-animationeffect③\">AnimationEffect</a></code> object,\n       </dt><dd data-md=\"\">\n        <p>Let effect be <var>effects</var>.</p>\n       </dd><dt data-md=\"\">If <var>effects</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#animationeffect\" id=\"ref-for-animationeffect④\">AnimationEffect</a></code> objects,\n       </dt><dd data-md=\"\">\n        <p>Let <var>effect</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#workletgroupeffect\" id=\"ref-for-workletgroupeffect\">WorkletGroupEffect</a></code> with its children set to <var>effects</var>.</p>\n       </dd><dt data-md=\"\">Otherwise,\n       </dt><dd data-md=\"\">\n        <p>Let <var>effect</var> be undefined.</p>\n      </dd></dl>"
+        },
+        {
+          "html": "<p>Let <var>serializedOptions</var> be the result of <a data-link-type=\"dfn\" href=\"http://w3c.github.io/html/infrastructure.html#structuredserialize\" id=\"ref-for-structuredserialize①\">StructuredSerialize</a>(<var>options</var>).\nRethrow any exceptions.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#serialized-options\" id=\"ref-for-serialized-options\">serialized options</a> of <var>workletAnimation</var> to <var>serializedOptions</var>.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animation-animator-name\" id=\"ref-for-animation-animator-name\">animation animator name</a> of <var>workletAnimation</var> to <var>animatorName</var>.</p>"
+        },
+        {
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#set-the-target-effect-of-an-animation\" id=\"ref-for-set-the-target-effect-of-an-animation\">set the target effect of an animation</a> on <var>workletAnimation</var> passing <var>effect</var> as the new effect. Note that this may trigger action to <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#set-animator-instance-of-worklet-animation\" id=\"ref-for-set-animator-instance-of-worklet-animation\">set animator instance of worklet animation</a>. See <a href=\"https://drafts.css-houdini.org/css-animationworklet-1/#web-animation-overrides\">§ 5.4 Web Animations Overrides</a> for more\ndetails.</p>"
+        }
+      ]
+    },
+    {
+      "name": "sync-local-times",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#sync-local-times-to-document",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sync-local-times-to-document\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sync local times to document</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <var>workletGlobalScope</var> the user agent <em>must</em> perform the action that corresponds to the first matching condition from the\nfollowing:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sync-local-times-to-document\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sync local times to document</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <var>workletGlobalScope</var> the user agent <em>must</em> perform the action that corresponds to the first matching condition from the\nfollowing:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>animator</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#sync-requested-flag\" id=\"ref-for-sync-requested-flag③\">sync requested flag</a> is <b>false</b> skip the rest of the steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>animatorEffect</var> be <var>animator</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#effect\" id=\"ref-for-effect③\">effect</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>effect</var> be <var>animatorEffect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#corresponding-effect\" id=\"ref-for-corresponding-effect①\">corresponding effect</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>effect</var>’s local time to <var>animatorEffect</var>’s local time.</p>"
+            },
+            {
+              "html": "<p>Set <var>animator</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#sync-requested-flag\" id=\"ref-for-sync-requested-flag④\">sync requested flag</a> to <b>false</b>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sync-animation-timings",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#sync-animation-timings-to-worklet",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sync-animation-timings-to-worklet\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sync animation timings to worklet</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <var>workletAnimation</var> the user agent <em>must</em> perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>workletAnimation</var> does not have a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#corresponding-animator-instance\" id=\"ref-for-corresponding-animator-instance②\">corresponding animator instance</a>, abort the\n following steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>animator</var> be <var>workletAnimation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#corresponding-animator-instance\" id=\"ref-for-corresponding-animator-instance③\">corresponding animator instance</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>workletGlobalScope</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope①③\">AnimationWorkletGlobalScope</a></code> associated with <var>workletAnimation</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sync-animation-timings-to-worklet\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sync animation timings to worklet</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <var>workletAnimation</var> the user agent <em>must</em> perform the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>animator</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-current-time\" id=\"ref-for-animator-current-time②\">animator current time</a> to <var>workletAnimation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#current-time\" id=\"ref-for-current-time⑤\">current time</a></p>"
+            },
+            {
+              "html": "<p>Let <var>animatorEffect</var> be <var>animator</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#effect\" id=\"ref-for-effect④\">effect</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>effect</var> be <var>animatorEffect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#corresponding-effect\" id=\"ref-for-corresponding-effect②\">corresponding effect</a>.</p>"
+            },
+            {
+              "html": "<p>Set the following properties on <var>animatorEffect</var> to be the same as <var>effect</var>:</p>\n          <ul>\n           <li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#start-delay\" id=\"ref-for-start-delay①\">start delay</a>,</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#end-delay\" id=\"ref-for-end-delay①\">end delay</a>,</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#fill-mode\" id=\"ref-for-fill-mode①\">fill mode</a>,</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#iteration-start\" id=\"ref-for-iteration-start①\">iteration start</a>,</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#iteration-count\" id=\"ref-for-iteration-count①\">iteration count</a>,</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#iteration-duration\" id=\"ref-for-iteration-duration①\">iteration duration</a>,</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#playback-direction\" id=\"ref-for-playback-direction①\">playback direction</a>, and</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#timing-function\" id=\"ref-for-timing-function①\">timing function</a>.</p>\n          </li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "associate-animator-instance",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#associate-animator-instance-of-worklet-animation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"associate-animator-instance-of-worklet-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">associate animator instance of worklet animation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>workletAnimation</var>,\nthe user agent <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>workletAnimation</var> has a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#corresponding-animator-instance\" id=\"ref-for-corresponding-animator-instance⑤\">corresponding animator instance</a>, abort the following steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>workletGlobalScope</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope①④\">AnimationWorkletGlobalScope</a></code> associated with <var>workletAnimation</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">Queue a task</a> on <var>workletGlobalScope</var> to run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#create-a-new-animator-instance\" id=\"ref-for-create-a-new-animator-instance①\">create a new animator\n   instance</a>, passing:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The <var>workletAnimation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animation-animator-name\" id=\"ref-for-animation-animator-name①\">animation animator name</a> as name.</p>\n       </li><li data-md=\"\">\n        <p>The <var>workletAnimation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#timeline\" id=\"ref-for-timeline④\">timeline</a> as timeline.</p>\n       </li><li data-md=\"\">\n        <p>The <var>workletAnimation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations#animation-effect\" id=\"ref-for-animation-effect⑦\">animation effect</a> as effect.</p>\n       </li><li data-md=\"\">\n        <p>The <var>workletAnimation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#serialized-options\" id=\"ref-for-serialized-options①\">serialized options</a> as options.</p>\n       </li><li data-md=\"\">\n        <p>The <var>workletGlobalScope</var> as workletGlobalScope.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>If the procedure was successful, set the resulting <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-instance\" id=\"ref-for-animator-instance①⑥\">animator instance</a> to be the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#corresponding-animator-instance\" id=\"ref-for-corresponding-animator-instance⑥\">corresponding animator instance</a> of <var>workletAnimation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "disassociate-animator-instance",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#disassociate-animator-instance-of-worklet-animation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"disassociate-animator-instance-of-worklet-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">disassociate animator instance of worklet animation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>workletAnimation</var>, the user age <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>workletAnimation</var> does not have a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#corresponding-animator-instance\" id=\"ref-for-corresponding-animator-instance⑦\">corresponding animator instance</a>, abort the\nfollowing steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>workletGlobalScope</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope①⑤\">AnimationWorkletGlobalScope</a></code> associated with <var>workletAnimation</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>animatorInstance</var> be <var>workletAnimation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#corresponding-animator-instance\" id=\"ref-for-corresponding-animator-instance⑧\">corresponding animator instance</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑥\">Queue a task</a> on the <var>workletGlobalScope</var> to run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#remove-an-animator-instance\" id=\"ref-for-remove-an-animator-instance①\">remove an animator\n instance</a>, passing <var>animatorInstance</var> as instance and <var>workletGlobalScope</var> as\n workletGlobalScope.</p>"
+        },
+        {
+          "html": "<p>Set <var>workletAnimation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#corresponding-animator-instance\" id=\"ref-for-corresponding-animator-instance⑨\">corresponding animator instance</a> as undefined.</p>"
+        }
+      ]
+    },
+    {
+      "name": "set-animator-instance",
+      "href": "https://drafts.css-houdini.org/css-animationworklet-1/#set-animator-instance-of-worklet-animation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-animator-instance-of-worklet-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set animator instance of worklet animation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>workletAnimation</var>, the user agent <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#disassociate-animator-instance-of-worklet-animation\" id=\"ref-for-disassociate-animator-instance-of-worklet-animation①\">disassociate animator instance of worklet animation</a> given <var>workletAnimation</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#associate-animator-instance-of-worklet-animation\" id=\"ref-for-associate-animator-instance-of-worklet-animation①\">associate animator instance of worklet animation</a> given <var>workletAnimation</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

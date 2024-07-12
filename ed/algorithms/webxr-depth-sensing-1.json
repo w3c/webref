@@ -1,0 +1,369 @@
+{
+  "spec": {
+    "title": "WebXR Depth Sensing Module",
+    "url": "https://immersive-web.github.io/depth-sensing/"
+  },
+  "algorithms": [
+    {
+      "name": "find-supported-configuration",
+      "href": "https://immersive-web.github.io/depth-sensing/#find-supported-configuration-combination",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-supported-configuration-combination\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find supported configuration combination</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for depth sensing API given <var>usagePreference</var> and <var>dataFormatPreference</var> sequences, the user agent MUST run the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>selectedUsage</var> be <code>null</code>.</p>"
+        },
+        {
+          "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-supported-configuration-combination\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find supported configuration combination</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for depth sensing API given <var>usagePreference</var> and <var>dataFormatPreference</var> sequences, the user agent MUST run the following algorithm:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the usagePreference sequence is empty",
+                  "html": "Initialize <var>selectedUsage</var> to the device’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#preferred-native-depth-sensing-capability\" id=\"ref-for-preferred-native-depth-sensing-capability\">preferred native depth sensing capability</a>."
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-supported-configuration-combination\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find supported configuration combination</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for depth sensing API given <var>usagePreference</var> and <var>dataFormatPreference</var> sequences, the user agent MUST run the following algorithm:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>usage</var> is not considered a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#support-depth-sensing-usage\" id=\"ref-for-support-depth-sensing-usage\">supported depth sensing usage</a> by the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#native-depth-sensing\" id=\"ref-for-native-depth-sensing①\">native depth sensing</a> capabilities of the device, continue to the next entry.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>selectedUsage</var> to <var>usage</var> and abort these nested steps.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>selectedUsage</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>selectedDataFormat</var> be <code>null</code>.</p>"
+        },
+        {
+          "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-supported-configuration-combination\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find supported configuration combination</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for depth sensing API given <var>usagePreference</var> and <var>dataFormatPreference</var> sequences, the user agent MUST run the following algorithm:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the usagePreference sequence is empty",
+                  "html": "Initialize <var>selectedDataFormat</var> to the device’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#preferred-native-depth-sensing-format\" id=\"ref-for-preferred-native-depth-sensing-format\">preferred native depth sensing format</a>."
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-supported-configuration-combination\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find supported configuration combination</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for depth sensing API given <var>usagePreference</var> and <var>dataFormatPreference</var> sequences, the user agent MUST run the following algorithm:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>selectedUsage</var>,<var>dataFormat</var> is not considered a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#support-depth-sensing-usage-and-data-format-combination\" id=\"ref-for-support-depth-sensing-usage-and-data-format-combination\">supported depth sensng usage and data format combination</a> by the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#native-depth-sensing\" id=\"ref-for-native-depth-sensing②\">native depth sensing</a> capabilities of the device, continue to the next entry.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>selectedDataFormat</var> to <var>dataFormat</var> and abort these nested steps.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>selectedDataFormat</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Return <var>selectedUsage</var>,<var>selectedDataFormat</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "accessing-depth-buffer-members",
+      "href": "https://immersive-web.github.io/depth-sensing/#attempting-to-access-the-depth-buffer",
+      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"attempting-to-access-the-depth-buffer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attempting to access the depth buffer</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#xrdepthinformation\" id=\"ref-for-xrdepthinformation③\">XRDepthInformation</a></code> or any interface that inherits from it, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>depthInformation</var> be the instance whose member is accessed.</p>"
+        },
+        {
+          "html": "<p>Let <var>view</var> be the <var>depthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view\">view</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>frame</var> be the <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame\">frame</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active\">active</a>, throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var> is not an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe\">animationFrame</a>, throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Proceed with normal steps required to access the member of <var>depthInformation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "obtain-depth-at-coordinates",
+      "href": "https://immersive-web.github.io/depth-sensing/#obtain-depth-at-coordinates",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrcpudepthinformation-getdepthinmeters\" id=\"ref-for-dom-xrcpudepthinformation-getdepthinmeters②\">getDepthInMeters(x, y)</a></code> method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#xrcpudepthinformation\" id=\"ref-for-xrcpudepthinformation①\">XRCPUDepthInformation</a></code> <var>depthInformation</var> with <var>x</var>, <var>y</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-depth-at-coordinates\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain depth at coordinates</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>view</var> be the <var>depthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view②\">view</a>, <var>frame</var> be <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame①\">frame</a>, and <var>session</var> be the <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session\">session</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>x</var> is greater than <code>1.0</code> or less than <code>0.0</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>y</var> is greater than <code>1.0</code> or less than <code>0.0</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>normalizedViewCoordinates</var> be a vector representing 3-dimensional point in space, with <code>x</code> coordinate set to <var>x</var>, <code>y</code> coordinate set to <var>y</var>, <code>z</code> coordinate set to <code>0.0</code>, and <code>w</code> coordinate set to <code>1.0</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>normalizedDepthCoordinates</var> be a result of premultiplying <var>normalizedViewCoordinates</var> vector from the left by <var>depthInformation</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-normdepthbufferfromnormview\" id=\"ref-for-dom-xrdepthinformation-normdepthbufferfromnormview②\">normDepthBufferFromNormView</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>depthCoordinates</var> be a result of scaling <var>normalizedDepthCoordinates</var>, with <code>x</code> coordinate multiplied by <var>depthInformation</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-width\" id=\"ref-for-dom-xrdepthinformation-width②\">width</a></code> and <code>y</code> coordinate multiplied by <var>depthInformation</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-height\" id=\"ref-for-dom-xrdepthinformation-height②\">height</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>column</var> be the value of <var>depthCoordinates</var>’ <code>x</code> coordinate, truncated to an integer, and clamped to <code>[0, width-1]</code> integer range.</p>"
+        },
+        {
+          "html": "<p>Let <var>row</var> be the value of <var>depthCoordinates</var>’ <code>y</code> coordinate, truncated to an integer, and clamped to <code>[0, height-1]</code> integer range.</p>"
+        },
+        {
+          "html": "<p>Let <var>index</var> be equal to <var>row</var> multiplied by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-width\" id=\"ref-for-dom-xrdepthinformation-width③\">width</a></code> &amp; added to <var>column</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>byteIndex</var> be equal to <var>index</var> multiplied by the size of the depth data format.</p>"
+        },
+        {
+          "html": "<p>Let <var>rawDepth</var> be equal to a value found at index <var>byteIndex</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrcpudepthinformation-data\" id=\"ref-for-dom-xrcpudepthinformation-data⑥\">data</a></code>, interpreted as a number accordingly to <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat③\">depthDataFormat</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>rawValueToMeters</var> be equal to <var>depthInformation</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-rawvaluetometers\" id=\"ref-for-dom-xrdepthinformation-rawvaluetometers②\">rawValueToMeters</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>rawDepth</var> multiplied by <var>rawValueToMeters</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "obtain-depth-information",
+      "href": "https://immersive-web.github.io/depth-sensing/#obtain-cpu-depth-information",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrframe-getdepthinformation\" id=\"ref-for-dom-xrframe-getdepthinformation①\">getDepthInformation(view)</a></code> method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface②\">XRFrame</a></code> <var>frame</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrview\" id=\"ref-for-xrview②\">XRView</a></code> <var>view</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-cpu-depth-information\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain CPU depth information</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session①\">session</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#depth-sensing\" id=\"ref-for-depth-sensing①\">depth-sensing</a> feature descriptor is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contained</a> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device\">XR device</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-device-list-of-enabled-features\" id=\"ref-for-xr-device-list-of-enabled-features\">list of enabled features</a> for <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode\">mode</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror②\">NotSupportedError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active①\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe①\">animationFrame</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var> does not match <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame②\">frame</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If the <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage②\">depthUsage</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthusage-cpu-optimized\" id=\"ref-for-dom-xrdepthusage-cpu-optimized①\">\"cpu-optimized\"</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>depthInformation</var> be a result of <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#create-a-cpu-depth-information-instance\" id=\"ref-for-create-a-cpu-depth-information-instance\">creating a CPU depth information instance</a> given <var>frame</var> and <var>view</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>depthInformation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-cpu-depth-information",
+      "href": "https://immersive-web.github.io/depth-sensing/#create-a-cpu-depth-information-instance",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-cpu-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a CPU depth information instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface③\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrview\" id=\"ref-for-xrview③\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be a new instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#xrcpudepthinformation\" id=\"ref-for-xrcpudepthinformation③\">XRCPUDepthInformation</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>time</var> be <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-time\" id=\"ref-for-xrframe-time\">time</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session②\">session</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>device</var> be the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①\">XR device</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>nativeDepthInformation</var> be a result of querying <var>device</var> for the depth information valid as of <var>time</var>, for specified <var>view</var>, taking into account <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage③\">depthUsage</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat④\">depthDataFormat</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>nativeDepthInformation</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If the depth buffer present in <var>nativeDepthInformation</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#block-access\" id=\"ref-for-block-access\">block access</a> to the depth data, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If the depth buffer present in <var>nativeDepthInformation</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#limit-the-amount-of-information\" id=\"ref-for-limit-the-amount-of-information\">limit the amount of information</a> available in depth buffer, adjust the depth buffer accordingly.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-width\" id=\"ref-for-dom-xrdepthinformation-width④\">width</a></code> to the width of the depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-height\" id=\"ref-for-dom-xrdepthinformation-height③\">height</a></code> to the height of the depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-normdepthbufferfromnormview\" id=\"ref-for-dom-xrdepthinformation-normdepthbufferfromnormview③\">normDepthBufferFromNormView</a></code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrrigidtransform\" id=\"ref-for-xrrigidtransform②\">XRRigidTransform</a></code>, based on <var>nativeDepthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#depth-coordinates-transformation-matrix\" id=\"ref-for-depth-coordinates-transformation-matrix\">depth coordinates transformation matrix</a>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrcpudepthinformation-data\" id=\"ref-for-dom-xrcpudepthinformation-data⑦\">data</a></code> to the raw depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view③\">view</a> to <var>view</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "obtain-webgl-depth-information",
+      "href": "https://immersive-web.github.io/depth-sensing/#obtain-webgl-depth-information",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrwebglbinding-getdepthinformation\" id=\"ref-for-dom-xrwebglbinding-getdepthinformation\">getDepthInformation(view)</a></code> method is invoked on a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding②\">XRWebGLBinding</a></code> <var>binding</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrview\" id=\"ref-for-xrview⑤\">XRView</a></code> <var>view</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-webgl-depth-information\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain WebGL depth information</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>session</var> be <var>binding</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding-session\" id=\"ref-for-xrwebglbinding-session\">session</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>frame</var> be <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame③\">frame</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>session</var> does not match <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑧\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#depth-sensing\" id=\"ref-for-depth-sensing②\">depth-sensing</a> feature descriptor is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contained</a> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②\">XR device</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-device-list-of-enabled-features\" id=\"ref-for-xr-device-list-of-enabled-features①\">list of enabled features</a> for <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode①\">mode</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③\">NotSupportedError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If the <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage④\">depthUsage</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthusage-gpu-optimized\" id=\"ref-for-dom-xrdepthusage-gpu-optimized①\">\"gpu-optimized\"</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑨\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active②\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⓪\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe②\">animationFrame</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①①\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>depthInformation</var> be a result of <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#create-a-webgl-depth-information-instance\" id=\"ref-for-create-a-webgl-depth-information-instance\">creating a WebGL depth information instance</a> given <var>frame</var> and <var>view</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>depthInformation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-webgl-depth-information",
+      "href": "https://immersive-web.github.io/depth-sensing/#create-a-webgl-depth-information-instance",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-webgl-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a WebGL depth information instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface④\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrview\" id=\"ref-for-xrview⑥\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be a new instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#xrwebgldepthinformation\" id=\"ref-for-xrwebgldepthinformation②\">XRWebGLDepthInformation</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>time</var> be <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-time\" id=\"ref-for-xrframe-time①\">time</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session④\">session</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>device</var> be the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device③\">XR device</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>nativeDepthInformation</var> be a result of querying <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#native-depth-sensing\" id=\"ref-for-native-depth-sensing③\">native depth sensing</a> for the depth information valid as of <var>time</var>, for specified <var>view</var>, taking into account <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage⑤\">depthUsage</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat⑥\">depthDataFormat</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>nativeDepthInformation</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If the depth buffer present in <var>nativeDepthInformation</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#block-access\" id=\"ref-for-block-access①\">block access</a> to the depth data, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If the depth buffer present in <var>nativeDepthInformation</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#limit-the-amount-of-information\" id=\"ref-for-limit-the-amount-of-information①\">limit the amount of information</a> available in depth buffer, adjust the depth buffer accordingly.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-width\" id=\"ref-for-dom-xrdepthinformation-width⑤\">width</a></code> to the width of the depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-height\" id=\"ref-for-dom-xrdepthinformation-height④\">height</a></code> to the height of the depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrdepthinformation-normdepthbufferfromnormview\" id=\"ref-for-dom-xrdepthinformation-normdepthbufferfromnormview⑤\">normDepthBufferFromNormView</a></code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrrigidtransform\" id=\"ref-for-xrrigidtransform③\">XRRigidTransform</a></code>, based on <var>nativeDepthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#depth-coordinates-transformation-matrix\" id=\"ref-for-depth-coordinates-transformation-matrix①\">depth coordinates transformation matrix</a>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrwebgldepthinformation-texture\" id=\"ref-for-dom-xrwebgldepthinformation-texture②\">texture</a></code> to an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#opaque-texture\" id=\"ref-for-opaque-texture①\">opaque texture</a> containing the depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/depth-sensing/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view⑤\">view</a> to <var>view</var>.</p>"
+        },
+        {
+          "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-webgl-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a WebGL depth information instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface④\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrview\" id=\"ref-for-xrview⑥\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the result’s texture was created with a textureType of texture-array:",
+                  "html": "Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrwebgldepthinformation-texturetype\" id=\"ref-for-dom-xrwebgldepthinformation-texturetype③\">textureType</a></code> to \"<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#dom-xrtexturetype-texture-array\" id=\"ref-for-dom-xrtexturetype-texture-array①\">texture-array</a>\"."
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrwebgldepthinformation-texturetype\" id=\"ref-for-dom-xrwebgldepthinformation-texturetype④\">textureType</a></code> to \"<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#dom-xrtexturetype-texture\" id=\"ref-for-dom-xrtexturetype-texture\">texture</a>\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-webgl-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a WebGL depth information instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface④\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrview\" id=\"ref-for-xrview⑥\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If textureType is texture",
+                  "html": "Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrwebgldepthinformation-imageindex\" id=\"ref-for-dom-xrwebgldepthinformation-imageindex②\">imageIndex</a></code> to <code>null</code>."
+                },
+                {
+                  "case": "Else if view’s eye is \"right\"",
+                  "html": "Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrwebgldepthinformation-imageindex\" id=\"ref-for-dom-xrwebgldepthinformation-imageindex③\">imageIndex</a></code> to <code>1</code>."
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/depth-sensing/#dom-xrwebgldepthinformation-imageindex\" id=\"ref-for-dom-xrwebgldepthinformation-imageindex④\">imageIndex</a></code> to <code>0</code>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

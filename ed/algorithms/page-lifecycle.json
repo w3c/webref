@@ -1,0 +1,311 @@
+{
+  "spec": {
+    "title": "Page Lifecycle",
+    "url": "https://wicg.github.io/page-lifecycle/"
+  },
+  "algorithms": [
+    {
+      "name": "update document frozenness steps",
+      "href": "https://wicg.github.io/page-lifecycle/#update-document-frozenness-steps",
+      "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"update-document-frozenness-steps\">update document frozenness steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>document</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-document-bc\" id=\"ref-for-concept-document-bc③\">browsing context</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#nested-browsing-context\" id=\"ref-for-nested-browsing-context④\">nested browsing context</a>, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#current-document-readiness\" id=\"ref-for-current-document-readiness\">readiness</a> is not \"<code>complete</code>\", then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>element</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-document-bc\" id=\"ref-for-concept-document-bc④\">browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context-container\" id=\"ref-for-browsing-context-container②\">browsing context container</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>frozenness</var> be false.</p>"
+        },
+        {
+          "html": "<p>Let <var>auto resume media</var> be false.</p>"
+        },
+        {
+          "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"update-document-frozenness-steps\">update document frozenness steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>document</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>element</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/rendering.html#being-rendered\" id=\"ref-for-being-rendered②\">being rendered</a>,  set <var>frozenness</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"update-document-frozenness-steps\">update document frozenness steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>document</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>element</var> does not intersect the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#viewport\" id=\"ref-for-viewport②\">viewport</a> according to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IntersectionObserver/#calculate-intersection-rect-algo\" id=\"ref-for-calculate-intersection-rect-algo①\">compute the intersection of a target element and the root</a>, set <var>frozenness</var> to true and set <var>auto resume media</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>frozenness</var> does not equal <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#document-frozenness\" id=\"ref-for-document-frozenness\">frozenness</a> state, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#change-the-frozenness-of-a-document\" id=\"ref-for-change-the-frozenness-of-a-document\">change the frozenness of a document</a> given <var>document</var>, <var>frozenness</var>, and <var>auto resume media</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DedicatedWorkerGlobalScope/owning document",
+      "href": "https://wicg.github.io/page-lifecycle/#dedicatedworkerglobalscope-owning-document",
+      "html": "To determine the <dfn class=\"dfn-paneled\" data-dfn-for=\"DedicatedWorkerGlobalScope\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dedicatedworkerglobalscope-owning-document\">owning document</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope\" id=\"ref-for-dedicatedworkerglobalscope\">DedicatedWorkerGlobalScope</a></code> <var>workerGlobalScope</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>workerGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#concept-WorkerGlobalScope-owner-set\" id=\"ref-for-concept-WorkerGlobalScope-owner-set\">owner set</a> consists of a single <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code> <var>document</var>, then return <var>document</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>workerGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#concept-WorkerGlobalScope-owner-set\" id=\"ref-for-concept-WorkerGlobalScope-owner-set①\">owner set</a> consists of a single <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope\" id=\"ref-for-dedicatedworkerglobalscope①\">DedicatedWorkerGlobalScope</a></code> <var>parentWorkerGlobalScope</var>, then return <var>parentWorkerGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#dedicatedworkerglobalscope-owning-document\" id=\"ref-for-dedicatedworkerglobalscope-owning-document①\">owning document</a>.</p>"
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Rename variable in Step #4.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>matchedClientData</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Before Step #2.5.1 insert",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>lifecycleState</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#get-client-lifecycle-state\" id=\"ref-for-get-client-lifecycle-state\">Get Client Lifecycle State</a> with <var>client</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Append lifecycleState to list in Step #5.3.1",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>windowData</var> be «[ \"client\" → <var>client</var>, \"ancestorOriginsList\" → a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>, \"lifecycleState\" → <var>lifecycleState</var> ]».</p>"
+        }
+      ]
+    },
+    {
+      "html": "Append lifecycleState to matchedClientData in Step #5.4",
+      "rationale": "add",
+      "steps": [
+        {
+          "html": "<p>Add «[ \"client\" → <var>client</var>, \"lifecycleState\" → <var>lifecycleState</var> ]» to <var>matchedClientData</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Pass windowData lifecycleState into Create Window Client algorithm in Step #6.2",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>windowClient</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#create-windowclient-algorithm\" id=\"ref-for-create-windowclient-algorithm\">Create Window Client</a> algorithm with <var>windowData</var>[\"<code>client</code>\"], <var>windowData</var>[\"<code>frameType</code>\"], <var>windowData</var>[\"<code>visibilityState</code>\"], <var>windowData</var>[\"<code>focusState</code>\"], <var>windowData</var>[\"<code>ancestorOriginsList</code>\"], and <var>windowData</var>[\"<code>lifecycleState</code>\"] as the arguments.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Adjust Step #6.3",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>clientData</var> in <var>matchedClientData</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>clientObject</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#create-client-algorithm\" id=\"ref-for-create-client-algorithm\">Create Client</a> algorithm with <var>clientData</var>[\"<code>client</code>\"], and <var>clientData</var>[\"<code>lifecycleState</code>\"] as the arguments.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>clientObject</var> to <var>clientObjects</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Before Step #7.5 insert",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>lifecycleState</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#get-client-lifecycle-state\" id=\"ref-for-get-client-lifecycle-state①\">Get Client Lifecycle State</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-client\" id=\"ref-for-dfn-service-worker-client\">service worker client</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Adjust Step #7.8.2 to provide lifecycleState",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>client</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#create-windowclient-algorithm\" id=\"ref-for-create-windowclient-algorithm①\">Create Window Client</a> with <var>newContext</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#window\" id=\"ref-for-window⑤\">Window</a></code> object’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a>, <var>frameType</var>, <var>visibilityState</var>, <var>focusState</var>, <var>ancestorOriginsList</var>, and <var>lifecycleState</var> as the arguments.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Get Client Lifecycle State",
+      "href": "https://wicg.github.io/page-lifecycle/#get-client-lifecycle-state",
+      "html": "Append the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>state</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/page-lifecycle/#dom-clientlifecyclestate-active\" id=\"ref-for-dom-clientlifecyclestate-active\">\"active\"</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>client</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#dedicatedworkerglobalscope-owning-document\" id=\"ref-for-dedicatedworkerglobalscope-owning-document②\">owning document</a> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#frozen\" id=\"ref-for-frozen⑥\">frozen</a>, set <var>state</var> to be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/page-lifecycle/#dom-clientlifecyclestate-frozen\" id=\"ref-for-dom-clientlifecyclestate-frozen\">\"frozen\"</a></code></p>"
+        },
+        {
+          "html": "<p>Return <var>state</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-client-monkeypatch",
+      "href": "https://wicg.github.io/page-lifecycle/#serviceworker-createclient-dfn",
+      "html": "After Step #2 in Output append",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>clientObject</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#dfn-service-worker-client-lifecycle-state\" id=\"ref-for-dfn-service-worker-client-lifecycle-state①\">lifecycle state</a> to <var>lifecycleState</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-window-client-monkeypatch",
+      "href": "https://wicg.github.io/page-lifecycle/#serviceworker-createwindowclient-dfn",
+      "html": "After Step #5 in Output append",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>windowClient</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#dfn-service-worker-client-lifecycle-state\" id=\"ref-for-dfn-service-worker-client-lifecycle-state②\">lifecycle state</a> to <var>lifecycleState</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "change the frozenness of a top-level document",
+      "href": "https://wicg.github.io/page-lifecycle/#change-the-frozenness-of-a-top-level-document",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"change-the-frozenness-of-a-top-level-document\">change the frozenness of a top-level document</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> <var>topLevelDoc</var> and boolean <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#document-frozenness\" id=\"ref-for-document-frozenness④\">frozenness</a> state <var>frozenness</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-document-bc\" id=\"ref-for-concept-document-bc⑤\">browsing context</a> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#change-the-frozenness-of-a-document\" id=\"ref-for-change-the-frozenness-of-a-document③\">Change the frozenness of a document</a> given <var>topLevelDoc</var>, <var>frozenness</var>, and false.</p>"
+        },
+        {
+          "html": "<p>Let <var>descendants</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#list-of-the-descendant-browsing-contexts\" id=\"ref-for-list-of-the-descendant-browsing-contexts\">list of the descendant browsing contexts</a> of <var>doc</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"change-the-frozenness-of-a-top-level-document\">change the frozenness of a top-level document</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> <var>topLevelDoc</var> and boolean <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#document-frozenness\" id=\"ref-for-document-frozenness④\">frozenness</a> state <var>frozenness</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>descendantDocument</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\" id=\"ref-for-active-document\">active document</a> of <var>b</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#change-the-frozenness-of-a-document\" id=\"ref-for-change-the-frozenness-of-a-document④\">Change the frozenness of a document</a> given <var>descendantDocument</var>, <var>frozenness</var>, and false.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "change the frozenness of a document",
+      "href": "https://wicg.github.io/page-lifecycle/#change-the-frozenness-of-a-document",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"change-the-frozenness-of-a-document\">change the frozenness of a document</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code> <var>doc</var>, a boolean <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#document-frozenness\" id=\"ref-for-document-frozenness⑤\">frozenness</a> state <var>frozenness</var>, and a boolean <var>auto resume frozen media</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>frozenness</var> is true, run the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#freeze-steps\" id=\"ref-for-freeze-steps①\">freeze steps</a> for <var>doc</var> given <var>auto resume frozen media</var>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, run the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#resume-steps\" id=\"ref-for-resume-steps\">resume steps</a> given <var>doc</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "freeze steps",
+      "href": "https://wicg.github.io/page-lifecycle/#freeze-steps",
+      "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"freeze-steps\">freeze steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①①\">Document</a></code> <var>doc</var>, given a boolean <var>auto resume frozen media</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#document-frozenness\" id=\"ref-for-document-frozenness⑥\">frozenness</a> state to true.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">Fire an event</a> named <code>freeze</code> at <var>doc</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>elements</var> be all <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#media-element\" id=\"ref-for-media-element\">media elements</a> that are <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-descendant\" id=\"ref-for-concept-shadow-including-descendant\">shadow-including descendants</a> of <var>doc</var>, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order\">shadow-including tree order</a>.</p>"
+        },
+        {
+          "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"freeze-steps\">freeze steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①①\">Document</a></code> <var>doc</var>, given a boolean <var>auto resume frozen media</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"freeze-steps\">freeze steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①①\">Document</a></code> <var>doc</var>, given a boolean <var>auto resume frozen media</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#htmlmediaelement-resume-frozen-flag\" id=\"ref-for-htmlmediaelement-resume-frozen-flag\">resume frozen flag</a> to <var>auto resume frozen media</var>.</p>"
+                },
+                {
+                  "html": "<p>Execute <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#internal-pause-steps\" id=\"ref-for-internal-pause-steps\">media pause</a> on <var>element</var>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resume steps",
+      "href": "https://wicg.github.io/page-lifecycle/#resume-steps",
+      "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resume-steps\">resume steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①②\">Document</a></code> <var>doc</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resume-steps\">resume steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①②\">Document</a></code> <var>doc</var>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resume-steps\">resume steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①②\">Document</a></code> <var>doc</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resume-steps\">resume steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①②\">Document</a></code> <var>doc</var>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>elements</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#htmlmediaelement-resume-frozen-flag\" id=\"ref-for-htmlmediaelement-resume-frozen-flag②\">resume frozen flag</a> to false.</p>"
+                    },
+                    {
+                      "html": "<p>Execute <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#internal-play-steps\" id=\"ref-for-internal-play-steps\">media play</a> on <var>element</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">Fire an event</a> named <code>resume</code> at <var>doc</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#document-frozenness\" id=\"ref-for-document-frozenness⑦\">frozenness</a> state to false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "discarded",
+      "href": "https://wicg.github.io/page-lifecycle/#discarded",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"discarded|discard\" id=\"discarded\">discard</dfn> a browsing context, <a href=\"https://html.spec.whatwg.org/multipage/window-object.html#a-browsing-context-is-discarded\">destroy the browsing context</a>, and make note of the fact that the reason it and any descendant browsing contents were destroyed was because of discarding.",
+      "rationale": "To <dfn>"
+    }
+  ]
+}

@@ -1,0 +1,869 @@
+{
+  "spec": {
+    "title": "CSS Layout API Level 1",
+    "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+  },
+  "algorithms": [
+    {
+      "name": "LayoutWorkletGlobalScope/registerLayout(name, layoutCtor)",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutworkletglobalscope-registerlayout",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LayoutWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-layoutworkletglobalscope-registerlayout\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerLayout(<var>name</var>, <var>layoutCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method\nis called, the user agent <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the <var>name</var> is an empty string, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>layoutDefinitionMap</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutworkletglobalscope\" id=\"ref-for-layoutworkletglobalscope④\">LayoutWorkletGlobalScope</a></code>'s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definitions\" id=\"ref-for-layout-definitions\">layout definitions</a> map.</p>"
+        },
+        {
+          "html": "<p>If <var>layoutDefinitionMap</var>[<var>name</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror\">InvalidModificationError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputProperties</var> be an empty <code>sequence&lt;DOMString&gt;</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputPropertiesIterable</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>layoutCtor</var>, \"inputProperties\").</p>"
+        },
+        {
+          "html": "<p>If <var>inputPropertiesIterable</var> is not undefined, then set <var>inputProperties</var> to the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert\">converting</a> <var>inputPropertiesIterable</var> to a <code>sequence&lt;DOMString&gt;</code>. If an\nexception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">thrown</a>, rethrow the exception and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Filter <var>inputProperties</var> so that it only contains <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#supported-css-property\" id=\"ref-for-supported-css-property\">supported CSS properties</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-2/#custom-property\" id=\"ref-for-custom-property\">custom\nproperties</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>childInputProperties</var> be an empty <code>sequence&lt;DOMString&gt;</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>childInputPropertiesIterable</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p①\">Get</a>(<var>layoutCtor</var>,\n\"childInputProperties\").</p>"
+        },
+        {
+          "html": "<p>If <var>childInputPropertiesIterable</var> is not undefined, then set <var>childInputProperties</var> to the\nresult of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert①\">converting</a> <var>childInputPropertiesIterable</var> to a <code>sequence&lt;DOMString&gt;</code>. If an exception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">thrown</a>, rethrow the exception\nand abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Filter <var>childInputProperties</var> so that it only contains <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#supported-css-property\" id=\"ref-for-supported-css-property①\">supported CSS properties</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-2/#custom-property\" id=\"ref-for-custom-property①\">custom\nproperties</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>layoutOptionsValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p②\">Get</a>(<var>layoutCtor</var>, \"layoutOptions\").</p>"
+        },
+        {
+          "html": "<p>Let <var>layoutOptions</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert②\">converting</a> <var>layoutOptionsValue</var> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dictdef-layoutoptions\" id=\"ref-for-dictdef-layoutoptions②\">LayoutOptions</a></code>. If an exception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">thrown</a>, rethrow the exception and abort all these\nsteps.</p>"
+        },
+        {
+          "html": "<p>Let <var>prototype</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p③\">Get</a>(<var>layoutCtor</var>, \"prototype\").</p>"
+        },
+        {
+          "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values\">Type</a>(<var>prototype</var>) is not Object, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①\">TypeError</a> and abort\nall these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>intrinsicSizesValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p④\">Get</a>(<var>prototype</var>, \"intrinsicSizes\").</p>"
+        },
+        {
+          "html": "<p>Let <var>intrinsicSizes</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert③\">converting</a> <var>intrinsicSizesValue</var> to the <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-terms-and-definitions-function\" id=\"ref-for-sec-terms-and-definitions-function②\">Function</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-function\" id=\"ref-for-dfn-callback-function\">callback function</a> type. Rethrow any exceptions from the conversion.</p>"
+        },
+        {
+          "html": "<p>Let <var>layoutValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p⑤\">Get</a>(<var>prototype</var>, <code>\"layout\"</code>).</p>"
+        },
+        {
+          "html": "<p>Let <var>layout</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert④\">converting</a> <var>layoutValue</var> to the <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-terms-and-definitions-function\" id=\"ref-for-sec-terms-and-definitions-function③\">Function</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-function\" id=\"ref-for-dfn-callback-function①\">callback\nfunction</a> type. Rethrow any exceptions from the conversion.</p>"
+        },
+        {
+          "html": "<p>Let <var>definition</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition\" id=\"ref-for-layout-definition\">layout definition</a> with:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-class-constructor\" id=\"ref-for-layout-definition-class-constructor\">class constructor</a> being <var>layoutCtor</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-layout-function\" id=\"ref-for-layout-definition-layout-function\">layout function</a> being <var>layout</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-intrinsic-sizes-function\" id=\"ref-for-layout-definition-intrinsic-sizes-function\">intrinsic sizes function</a> being <var>intrinsicSizes</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-constructor-valid-flag\" id=\"ref-for-layout-definition-constructor-valid-flag\">constructor valid flag</a> being <b>true</b>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-child-input-properties\" id=\"ref-for-layout-definition-child-input-properties\">child input properties</a> being <var>childInputProperties</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-input-properties\" id=\"ref-for-layout-definition-input-properties\">input properties</a> being <var>inputProperties</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-layout-options\" id=\"ref-for-layout-definition-layout-options\">layout options</a> being <var>layoutOptions</var>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>layoutDefinitionMap</var>[<var>name</var>] to <var>definition</var>.</p>"
+        },
+        {
+          "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LayoutWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-layoutworkletglobalscope-registerlayout\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerLayout(<var>name</var>, <var>layoutCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method\nis called, the user agent <em>must</em> run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>documentLayoutDefinitionMap</var> be the associated <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">document’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definitions\" id=\"ref-for-document-layout-definitions\">document layout\ndefinitions</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>documentDefinition</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition\" id=\"ref-for-document-layout-definition\">document layout definition</a> with:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition-child-input-properties\" id=\"ref-for-document-layout-definition-child-input-properties\">child input properties</a> being <var>childInputProperties</var>.</p>\n         </li><li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition-input-properties\" id=\"ref-for-document-layout-definition-input-properties①\">input properties</a> being <var>inputProperties</var>.</p>\n         </li><li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition-layout-options\" id=\"ref-for-document-layout-definition-layout-options③\">layout options</a> being <var>layoutOptions</var>.</p>\n        </li></ul>"
+            },
+            {
+              "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LayoutWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-layoutworkletglobalscope-registerlayout\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerLayout(<var>name</var>, <var>layoutCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method\nis called, the user agent <em>must</em> run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>existingDocumentDefinition</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get\">get</a> <var>documentLayoutDefinitionMap</var>[<var>name</var>].</p>"
+                },
+                {
+                  "html": "<p>If <var>existingDocumentDefinition</var> is <code>\"invalid\"</code>, abort all these steps.</p>"
+                },
+                {
+                  "html": "<p>If <var>existingDocumentDefinition</var> and <var>documentDefinition</var> are not equivalent, (that is <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition-input-properties\" id=\"ref-for-document-layout-definition-input-properties②\">input properties</a>, <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition-child-input-properties\" id=\"ref-for-document-layout-definition-child-input-properties①\">child\ninput properties</a>, and <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition-layout-options\" id=\"ref-for-document-layout-definition-layout-options④\">layout options</a> are\ndifferent), then:</p>\n          <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> <var>documentLayoutDefinitionMap</var>[<var>name</var>] to <code>\"invalid\"</code>.</p>\n          <p>Log an error to the debugging console stating that the same class was registered\nwith different <code>inputProperties</code>, <code>childInputProperties</code>, or <code>layoutOptions</code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">set</a> <var>documentLayoutDefinitionMap</var>[<var>name</var>] to <var>documentDefinition</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LayoutChild/styleMap",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-stylemap",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LayoutChild\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-layoutchild-stylemap\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>styleMap</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, on getting from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutchild\" id=\"ref-for-layoutchild①⑤\">LayoutChild</a></code> <var>this</var>, the\nuser agent must perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LayoutChild\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-layoutchild-stylemap\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>styleMap</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, on getting from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutchild\" id=\"ref-for-layoutchild①⑤\">LayoutChild</a></code> <var>this</var>, the\nuser agent must perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>box</var> be <var>this</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-box-slot\" id=\"ref-for-dom-layoutchild-box-slot①\">[[box]]</a></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>definition</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-definition\" id=\"ref-for-get-a-layout-definition\">get a layout definition</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>childInputProperties</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-child-input-properties\" id=\"ref-for-layout-definition-child-input-properties②\">child input\nproperties</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>styleMap</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#stylepropertymapreadonly\" id=\"ref-for-stylepropertymapreadonly⑤\">StylePropertyMapReadOnly</a></code> populated with <em>only</em> the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value④\">computed values</a> for properties listed in <var>childInputProperties</var> for <var>box</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>this</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-stylemap-slot\" id=\"ref-for-dom-layoutchild-stylemap-slot②\">[[styleMap]]</a></code> internal slot to <var>styleMap</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>this</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#stylepropertymapreadonly\" id=\"ref-for-stylepropertymapreadonly⑥\">StylePropertyMapReadOnly</a></code> contained in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-stylemap-slot\" id=\"ref-for-dom-layoutchild-stylemap-slot④\">[[styleMap]]</a></code> internal slot.</p>"
+        }
+      ]
+    },
+    {
+      "name": "LayoutChild/intrinsicSizes()",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-intrinsicsizes",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LayoutChild\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-layoutchild-intrinsicsizes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>intrinsicSizes()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is called on a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutchild\" id=\"ref-for-layoutchild①⑦\">LayoutChild</a></code> <var>this</var>, the user agent must perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>p</var> be a new promise.</p>"
+        },
+        {
+          "html": "<p>Let <var>context</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout②\">current layout’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context\" id=\"ref-for-layout-api-context①\">layout API context</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>this</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-unique-id-slot\" id=\"ref-for-dom-layoutchild-unique-id-slot\">[[unique id]]</a></code> is not equal to <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-unique-id\" id=\"ref-for-layout-api-context-unique-id①\">unique id</a>, reject <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>, and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>task</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task\" id=\"ref-for-layout-api-work-task\">layout API work task</a> with:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-layout-child\" id=\"ref-for-layout-api-work-task-layout-child\">layout child</a> being <var>this</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-task-type\" id=\"ref-for-layout-api-work-task-task-type\">task type</a> being <code>\"intrinsic-sizes\"</code>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-promise\" id=\"ref-for-layout-api-work-task-promise\">promise</a> being <var>p</var>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>task</var> to <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-work-queue\" id=\"ref-for-layout-api-context-work-queue\">work queue</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "LayoutChild/layoutNextFragment(constraints, breakToken)",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-layoutnextfragment",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LayoutChild\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-layoutchild-layoutnextfragment\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>layoutNextFragment(<var>constraints</var>, <var>breakToken</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is\ncalled on a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutchild\" id=\"ref-for-layoutchild②⓪\">LayoutChild</a></code> <var>this</var>, the user agent must perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>p</var> be a new promise.</p>"
+        },
+        {
+          "html": "<p>Let <var>context</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout③\">current layout’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context\" id=\"ref-for-layout-api-context②\">layout API context</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>this</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-unique-id-slot\" id=\"ref-for-dom-layoutchild-unique-id-slot①\">[[unique id]]</a></code> is not equal to <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-unique-id\" id=\"ref-for-layout-api-context-unique-id②\">unique id</a>, reject <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>, and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>breakToken</var>’s {{ChildBreakToken/[[unique id]]} is not equal to <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-unique-id\" id=\"ref-for-layout-api-context-unique-id③\">unique id</a>,\nreject <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>, and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-mode\" id=\"ref-for-layout-api-context-mode\">mode</a> is <code>\"intrinsic-sizes\"</code>, reject <var>p</var> with\na \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>task</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task\" id=\"ref-for-layout-api-work-task①\">layout API work task</a> with:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-layout-constraints\" id=\"ref-for-layout-api-work-task-layout-constraints\">layout constraints</a> being <var>constraints</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-layout-child\" id=\"ref-for-layout-api-work-task-layout-child①\">layout child</a> being <var>this</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-child-break-token\" id=\"ref-for-layout-api-work-task-child-break-token\">child break token</a> being <var>breakToken</var>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-task-type\" id=\"ref-for-layout-api-work-task-task-type①\">task type</a> being <code>\"layout\"</code>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-promise\" id=\"ref-for-layout-api-work-task-promise①\">promise</a> being <var>p</var>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>task</var> to <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-work-queue\" id=\"ref-for-layout-api-context-work-queue①\">work queue</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get a layout child",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-child",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-layout-child\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a layout child</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>workletGlobalScope</var>, <var>name</var>, <var>box</var>, and <var>uniqueId</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Assert that:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>box</var> is currently attached to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#box-tree\" id=\"ref-for-box-tree③\">box tree</a>.</p>\n       </li><li data-md=\"\">\n        <p><var>box</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block\">containing block</a> is a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-container\" id=\"ref-for-layout-api-container⑧\">layout API container</a>.</p>\n       </li><li data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block①\">containing block’s</a> <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#valdef-display-layout\" id=\"ref-for-valdef-display-layout④\">layout()</a> function’s first argument is <var>name</var>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Let <var>layoutChildMap</var> be <var>box</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-box-layoutchildmap-slot\" id=\"ref-for-dom-box-layoutchildmap-slot\">[[layoutChildMap]]</a></code>.</p>"
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-layout-child\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a layout child</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>workletGlobalScope</var>, <var>name</var>, <var>box</var>, and <var>uniqueId</var>, it <em>must</em> run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>definition</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-definition\" id=\"ref-for-get-a-layout-definition①\">get a layout definition</a> given <var>name</var>, and <var>workletGlobalScope</var>.</p>\n        <p>Assert that <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-definition\" id=\"ref-for-get-a-layout-definition②\">get a layout definition</a> succeeded, and <var>definition</var> is not <code>\"invalid\"</code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>childInputProperties</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-child-input-properties\" id=\"ref-for-layout-definition-child-input-properties③\">child input\nproperties</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>layoutChild</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutchild\" id=\"ref-for-layoutchild②④\">LayoutChild</a></code> with internal slot(s):</p>\n        <ul>\n         <li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-box-slot\" id=\"ref-for-dom-layoutchild-box-slot②\">[[box]]</a></code> set to <var>box</var>.</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-stylemap-slot\" id=\"ref-for-dom-layoutchild-stylemap-slot⑤\">[[styleMap]]</a></code> set to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#stylepropertymapreadonly\" id=\"ref-for-stylepropertymapreadonly⑦\">StylePropertyMapReadOnly</a></code> populated with <em>only</em> the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑤\">computed values</a> for properties listed in <var>childInputProperties</var>.</p>\n        </li></ul>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③\">Set</a> <var>layoutChildMap</var>[<var>workletGlobalScope</var>] to <var>layoutChild</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>layoutChild</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get①\">get</a> <var>layoutChildMap</var>[<var>workletGlobalScope</var>].</p>"
+        },
+        {
+          "html": "<p>Set <var>layoutChild</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-unique-id-slot\" id=\"ref-for-dom-layoutchild-unique-id-slot②\">[[unique id]]</a></code> internal slot to <var>uniqueId</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>layoutChild</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update a layout child style",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#update-a-layout-child-style",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-a-layout-child-style\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update a layout child style</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>box</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Assert that:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>box</var> is currently attached to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#box-tree\" id=\"ref-for-box-tree⑥\">box tree</a>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>If <var>box</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block②\">containing block</a> is not a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-container\" id=\"ref-for-layout-api-container⑨\">layout API container</a>, abort all these\nsteps.</p>"
+        },
+        {
+          "html": "<p>Let <var>layoutChildMap</var> be <var>box</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-box-layoutchildmap-slot\" id=\"ref-for-dom-box-layoutchildmap-slot④\">[[layoutChildMap]]</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>layoutChild</var> in <var>layoutChildMap</var>:</p>",
+          "ignored": [
+            "layoutChild’s [[styleMap]] to null."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "create a layout constraints object",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#create-a-layout-constraints-object",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-layout-constraints-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a layout constraints object</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>sizingMode</var>, <var>box</var>,\nand <var>internalLayoutConstraints</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-layout-constraints-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a layout constraints object</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>sizingMode</var>, <var>box</var>,\nand <var>internalLayoutConstraints</var>, it <em>must</em> run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>fixedInlineSize</var> be the result of calculating <var>box</var>’s <b>border-box</b> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#inline-size\" id=\"ref-for-inline-size\">inline size</a> (relative to <var>box</var>’s writing mode) exactly like block containers do.</p>"
+            },
+            {
+              "html": "<p>Let <var>fixedBlockSize</var> be null if <var>box</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#block-size\" id=\"ref-for-block-size\">block size</a> is unable to be calculated at this\nstage, (e.g. <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#block-size\" id=\"ref-for-block-size①\">block size</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto\">auto</a>), otherwise the result of calculating <var>box</var>’s <b>border-box</b> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#block-size\" id=\"ref-for-block-size②\">block size</a> exactly like block containers do.</p>"
+            },
+            {
+              "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutconstraints\" id=\"ref-for-layoutconstraints⑥\">LayoutConstraints</a></code> object with:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-fixedinlinesize\" id=\"ref-for-dom-layoutconstraints-fixedinlinesize②\">fixedInlineSize</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-availableinlinesize\" id=\"ref-for-dom-layoutconstraints-availableinlinesize①\">availableInlineSize</a></code> set to <var>fixedInlineSize</var>.</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-percentageinlinesize\" id=\"ref-for-dom-layoutconstraints-percentageinlinesize①\">percentageInlineSize</a></code> set to <var>internalLayoutConstraints</var>’\npercentage resolution size in the inline axis (relative to <var>box</var>’s writing mode).</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-fixedblocksize\" id=\"ref-for-dom-layoutconstraints-fixedblocksize②\">fixedBlockSize</a></code> set to <var>fixedBlockSize</var>.</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-availableblocksize\" id=\"ref-for-dom-layoutconstraints-availableblocksize①\">availableBlockSize</a></code> set to <var>fixedBlockSize</var> if not null,\notherwise <var>internalLayoutConstraints</var>’ <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#available\" id=\"ref-for-available①\">available space</a> in the block axis\n(relative to <var>box</var>’s writing mode).</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-percentageblocksize\" id=\"ref-for-dom-layoutconstraints-percentageblocksize①\">percentageBlockSize</a></code> set to <var>internalLayoutConstraints</var>’\npercentage resolution size in the block axis (relative to <var>box</var>’s writing mode).</p>\n        </li></ul>"
+            }
+          ]
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-layout-constraints-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a layout constraints object</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>sizingMode</var>, <var>box</var>,\nand <var>internalLayoutConstraints</var>, it <em>must</em> run the following steps:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutconstraints\" id=\"ref-for-layoutconstraints⑦\">LayoutConstraints</a></code> object with:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-fixedinlinesize\" id=\"ref-for-dom-layoutconstraints-fixedinlinesize③\">fixedInlineSize</a></code>/<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-fixedblocksize\" id=\"ref-for-dom-layoutconstraints-fixedblocksize③\">fixedBlockSize</a></code> set to <var>internalLayoutConstraints</var>’ fixed inline/block size (relative to <var>box</var>’s writing\nmode) imposed by the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#parent-layout\" id=\"ref-for-parent-layout②\">parent layout</a>. Either may be null.</p>\n          \n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-availableinlinesize\" id=\"ref-for-dom-layoutconstraints-availableinlinesize②\">availableInlineSize</a></code>/<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-availableblocksize\" id=\"ref-for-dom-layoutconstraints-availableblocksize②\">availableBlockSize</a></code> set\nto <var>internalLayoutConstraints</var>’ <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#available\" id=\"ref-for-available②\">available space</a>.</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-percentageinlinesize\" id=\"ref-for-dom-layoutconstraints-percentageinlinesize②\">percentageInlineSize</a></code>/<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-percentageblocksize\" id=\"ref-for-dom-layoutconstraints-percentageblocksize②\">percentageBlockSize</a></code> set to <var>internalLayoutConstraints</var>’ percentage resolution size.</p>\n        </li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "translate a LayoutConstraintsOptions to internal constraints",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#translate-a-layoutconstraintsoptions-to-internal-constraints",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"translate-a-layoutconstraintsoptions-to-internal-constraints\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">translate a LayoutConstraintsOptions to internal constraints</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>options</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#available\" id=\"ref-for-available③\">available space</a> in the inline direction (with respect to the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout①⑤\">current layout</a>,\nbe the result of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>If <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableinlinesize\" id=\"ref-for-dom-layoutconstraintsoptions-availableinlinesize\">availableInlineSize</a></code> is not null, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableinlinesize\" id=\"ref-for-dom-layoutconstraintsoptions-availableinlinesize①\">availableInlineSize</a></code> is greater than zero, let the result be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableinlinesize\" id=\"ref-for-dom-layoutconstraintsoptions-availableinlinesize②\">availableInlineSize</a></code>.</p>\n       </li><li data-md=\"\">\n        <p>Otherwhise, let the result be zero.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#available\" id=\"ref-for-available④\">available space</a> in the block direction (with respect to the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout①⑥\">current layout</a>),\nbe the result of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>If <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableblocksize\" id=\"ref-for-dom-layoutconstraintsoptions-availableblocksize\">availableBlockSize</a></code> is not null, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableblocksize\" id=\"ref-for-dom-layoutconstraintsoptions-availableblocksize①\">availableBlockSize</a></code> is greater than zero, let the result be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableblocksize\" id=\"ref-for-dom-layoutconstraintsoptions-availableblocksize②\">availableBlockSize</a></code>.</p>\n       </li><li data-md=\"\">\n        <p>Otherwhise, let the result be zero.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Let the override size in the inline direction (with respect to the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout①⑦\">current layout</a>, be the\nresult of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Let the result be <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-fixedinlinesize\" id=\"ref-for-dom-layoutconstraintsoptions-fixedinlinesize\">fixedInlineSize</a></code>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Let the override size in the block direction (with respect to the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout①⑧\">current layout</a>, be the\nresult of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Let the result be <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-fixedblocksize\" id=\"ref-for-dom-layoutconstraintsoptions-fixedblocksize\">fixedBlockSize</a></code>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Let the percentage resultion size in the inline direction (with respect to the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout①⑨\">current\nlayout</a>, be the result of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>If <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-percentageinlinesize\" id=\"ref-for-dom-layoutconstraintsoptions-percentageinlinesize\">percentageInlineSize</a></code> is not null, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-percentageinlinesize\" id=\"ref-for-dom-layoutconstraintsoptions-percentageinlinesize①\">percentageInlineSize</a></code> is greater than zero, let the result\nbe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-percentageinlinesize\" id=\"ref-for-dom-layoutconstraintsoptions-percentageinlinesize②\">percentageInlineSize</a></code>.</p>\n       </li><li data-md=\"\">\n        <p>If <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableinlinesize\" id=\"ref-for-dom-layoutconstraintsoptions-availableinlinesize③\">availableInlineSize</a></code> is not null, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableinlinesize\" id=\"ref-for-dom-layoutconstraintsoptions-availableinlinesize④\">availableInlineSize</a></code> is greater than zero, let the result be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableinlinesize\" id=\"ref-for-dom-layoutconstraintsoptions-availableinlinesize⑤\">availableInlineSize</a></code>.</p>\n       </li><li data-md=\"\">\n        <p>Otherwhise, let the result be zero.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Let the percentage resultion size in the block direction (with respect to the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout②⓪\">current\nlayout</a>, be the result of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>If <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-percentageblocksize\" id=\"ref-for-dom-layoutconstraintsoptions-percentageblocksize\">percentageBlockSize</a></code> is not null, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-percentageblocksize\" id=\"ref-for-dom-layoutconstraintsoptions-percentageblocksize①\">percentageBlockSize</a></code> is greater than zero, let the result\nbe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-percentageblocksize\" id=\"ref-for-dom-layoutconstraintsoptions-percentageblocksize②\">percentageBlockSize</a></code>.</p>\n       </li><li data-md=\"\">\n        <p>If <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableblocksize\" id=\"ref-for-dom-layoutconstraintsoptions-availableblocksize③\">availableBlockSize</a></code> is not null, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableblocksize\" id=\"ref-for-dom-layoutconstraintsoptions-availableblocksize④\">availableBlockSize</a></code> is greater than zero, let the result be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-availableblocksize\" id=\"ref-for-dom-layoutconstraintsoptions-availableblocksize⑤\">availableBlockSize</a></code>.</p>\n       </li><li data-md=\"\">\n        <p>Otherwhise, let the result be zero.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#child-layout\" id=\"ref-for-child-layout\">child layout</a> is a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-container\" id=\"ref-for-layout-api-container①②\">layout API container</a>, then let the store the data (passed by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraints-data\" id=\"ref-for-dom-layoutconstraints-data\">data</a></code>) be the result of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Invoking <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#structuredserializeforstorage\" id=\"ref-for-structuredserializeforstorage\">StructuredSerializeForStorage</a> on <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutconstraintsoptions-data\" id=\"ref-for-dom-layoutconstraintsoptions-data\">data</a></code>.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "create a layout api context",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#create-a-layout-api-context",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-layout-api-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a layout API context</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>mode</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context\" id=\"ref-for-layout-api-context⑤\">layout API context</a> with:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-work-queue\" id=\"ref-for-layout-api-context-work-queue②\">work queue</a> being a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a>.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-unique-id\" id=\"ref-for-layout-api-context-unique-id⑥\">unique id</a> being a unique id.</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-mode\" id=\"ref-for-layout-api-context-mode①\">mode</a> being <var>mode</var>.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "FragmentResult/inlineSize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-inlinesize",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FragmentResult\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-fragmentresult-inlinesize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>inlineSize</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, on getting from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#fragmentresult\" id=\"ref-for-fragmentresult⑤\">FragmentResult</a></code> <var>this</var>,\nthe user agent must perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return <var>this</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-inline-size-slot\" id=\"ref-for-dom-fragmentresult-inline-size-slot\">[[inline size]]</a></code> internal slot.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FragmentResult/blockSize",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-blocksize",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FragmentResult\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-fragmentresult-blocksize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>blockSize</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, on getting from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#fragmentresult\" id=\"ref-for-fragmentresult⑥\">FragmentResult</a></code> <var>this</var>,\nthe user agent must perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return <var>this</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-block-size-slot\" id=\"ref-for-dom-fragmentresult-block-size-slot\">[[block size]]</a></code> internal slot.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FragmentResult/FragmentResult(options)",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-fragmentresult",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FragmentResult\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"FragmentResult(options)|constructor(options)|FragmentResult()|constructor()\" id=\"dom-fragmentresult-fragmentresult\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>FragmentResult(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor is called,\nthe user agent must perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>context</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout②④\">current layout’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context\" id=\"ref-for-layout-api-context⑦\">layout API context</a>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#construct-a-fragment-result\" id=\"ref-for-construct-a-fragment-result\">construct a fragment result</a> given <var>context</var>, and <var>options</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "construct a fragment result",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#construct-a-fragment-result",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-fragment-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a fragment result</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>context</var>, and <var>options</var> the user agent must perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>uniqueId</var> be <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-unique-id\" id=\"ref-for-layout-api-context-unique-id⑧\">unique id</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>box</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout②⑤\">current layout’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-3/#box\" id=\"ref-for-box①⑨\">box</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>breakTokenOptions</var> be <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-breaktoken\" id=\"ref-for-dom-fragmentresultoptions-breaktoken\">breakToken</a></code>.</p>"
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-fragment-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a fragment result</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>context</var>, and <var>options</var> the user agent must perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>childFragment</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-unique-id-slot\" id=\"ref-for-dom-layoutfragment-unique-id-slot\">[[unique id]]</a></code> internal slot is not equal to <var>uniqueId</var>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a>, and abort all these steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-fragment-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a fragment result</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>context</var>, and <var>options</var> the user agent must perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>childBreakToken</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-childbreaktoken-unique-id-slot\" id=\"ref-for-dom-childbreaktoken-unique-id-slot\">[[unique id]]</a></code> internal slot is not equal to <var>uniqueId</var>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③\">TypeError</a>, and abort all these steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-fragment-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a fragment result</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>context</var>, and <var>options</var> the user agent must perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>inlineSize</var> be the result of calculating <var>box</var>’s <b>border-box</b> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#inline-size\" id=\"ref-for-inline-size②\">inline\nsize</a> (relative to <var>box</var>’s writing mode) exactly like block containers do.</p>"
+            },
+            {
+              "html": "<p>Let <var>blockSize</var> be the result of calculating <var>box</var>’s <b>border-box</b> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#block-size\" id=\"ref-for-block-size④\">block size</a> (relative to <var>box</var>’s writing mode) exactly like block containers do,\ngiven <var>fragment</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-autoblocksize\" id=\"ref-for-dom-fragmentresultoptions-autoblocksize\">autoBlockSize</a></code> as the \"intrinsic\nblock size\".</p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-fragment-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a fragment result</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>context</var>, and <var>options</var> the user agent must perform the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>inlineSize</var> be <var>fragment</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-inlinesize\" id=\"ref-for-dom-fragmentresultoptions-inlinesize\">inlineSize</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>blockSize</var> be <var>fragment</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-blocksize\" id=\"ref-for-dom-fragmentresultoptions-blocksize\">blockSize</a></code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>clonedData</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#structuredserializeforstorage\" id=\"ref-for-structuredserializeforstorage①\">StructuredSerializeForStorage</a> on <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-data\" id=\"ref-for-dom-fragmentresultoptions-data①\">data</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>clonedBreakTokenData</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#structuredserializeforstorage\" id=\"ref-for-structuredserializeforstorage②\">StructuredSerializeForStorage</a> on <var>breakTokenOptions</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-breaktokenoptions-data\" id=\"ref-for-dom-breaktokenoptions-data\">data</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>internalBreakToken</var> be the internal representation of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-break\" id=\"ref-for-fragmentation-break\">fragmentation break</a> containing <var>clonedBreakTokenData</var>, and <var>breakTokenOptions</var>.</p>"
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#fragmentresult\" id=\"ref-for-fragmentresult⑦\">FragmentResult</a></code> with:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-box-slot\" id=\"ref-for-dom-fragmentresult-box-slot\">[[box]]</a></code> being <var>box</var>.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-inline-size-slot\" id=\"ref-for-dom-fragmentresult-inline-size-slot①\">[[inline size]]</a></code> being <var>inlineSize</var>.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-block-size-slot\" id=\"ref-for-dom-fragmentresult-block-size-slot①\">[[block size]]</a></code> being <var>blockSize</var>.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-child-fragments-slot\" id=\"ref-for-dom-fragmentresult-child-fragments-slot\">[[child fragments]]</a></code> being <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresultoptions-childfragments\" id=\"ref-for-dom-fragmentresultoptions-childfragments③\">childFragments</a></code>.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-data-slot\" id=\"ref-for-dom-fragmentresult-data-slot\">[[data]]</a></code> being <var>clonedData</var>.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-internal-break-token-slot\" id=\"ref-for-dom-fragmentresult-internal-break-token-slot\">[[internal break token]]</a></code> being <var>internalBreakToken</var>.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-unique-id-slot\" id=\"ref-for-dom-fragmentresult-unique-id-slot\">[[unique id]]</a></code> being <var>uniqueId</var>.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "determine the intrinsic sizes",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#determine-the-intrinsic-sizes",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-intrinsic-sizes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the intrinsic sizes</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-formatting-context\" id=\"ref-for-layout-api-formatting-context\">layout API formatting\ncontext</a> for a given <var>box</var>, <var>childBoxes</var> it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>layoutFunction</var> be the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#valdef-display-layout\" id=\"ref-for-valdef-display-layout⑤\">layout()</a> for the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑦\">computed value</a> of <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-display-4/#typedef-display-inside\" id=\"ref-for-typedef-display-inside②\" title=\"Expands to: flex | flow | flow-root | grid | ruby | table\">&lt;display-inside&gt;</a> for <var>box</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>name</var> be the first argument of the <var>layoutFunction</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>documentDefinition</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-document-layout-definition\" id=\"ref-for-get-a-document-layout-definition\">get a document layout definition</a> given <var>name</var>.</p>\n      <p>If <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-document-layout-definition\" id=\"ref-for-get-a-document-layout-definition①\">get a document layout definition</a> returned failure, or if <var>documentDefinition</var> is <code>\"invalid\"</code>, then let <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout①\">flow layout</a> and abort all these\nsteps.</p>"
+        },
+        {
+          "html": "<p>Let <var>workletGlobalScope</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutworkletglobalscope\" id=\"ref-for-layoutworkletglobalscope⑧\">LayoutWorkletGlobalScope</a></code> from the layout <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#worklet\" id=\"ref-for-worklet③\">Worklet</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-global-scopes\" id=\"ref-for-concept-worklet-global-scopes\">global scopes</a>, following the rules defined in <a href=\"https://drafts.css-houdini.org/css-layout-api-1/#global-scope-selection\">§ 6.2.3 Global Scope Selection</a>.</p>\n      <p>The user agent <em>may</em> also <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#create-a-worklet-global-scope\" id=\"ref-for-create-a-worklet-global-scope\">create a worklet global scope</a> at this time, given the\nlayout <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#worklet\" id=\"ref-for-worklet④\">Worklet</a></code>.</p>"
+        },
+        {
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#invoke-an-intrinsic-sizes-callback\" id=\"ref-for-invoke-an-intrinsic-sizes-callback\">invoke an intrinsic sizes callback</a> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, and <var>workletGlobalScope</var> optionally <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "invoke an intrinsic sizes callback",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#invoke-an-intrinsic-sizes-callback",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-an-intrinsic-sizes-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke an intrinsic sizes callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>definition</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-definition\" id=\"ref-for-get-a-layout-definition③\">get a layout definition</a> given <var>name</var>, and <var>workletGlobalScope</var>.</p>\n      <p>If <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-definition\" id=\"ref-for-get-a-layout-definition④\">get a layout definition</a> returned failure, let the <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout②\">flow\nlayout</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>layoutInstance</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-class-instance\" id=\"ref-for-get-a-layout-class-instance\">get a layout class instance</a> given <var>box</var>, <var>definition</var>, <var>workletGlobalScope</var>.</p>\n      <p>If <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-class-instance\" id=\"ref-for-get-a-layout-class-instance①\">get a layout class instance</a> returned failure, let the <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout③\">flow\nlayout</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputProperties</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-input-properties\" id=\"ref-for-layout-definition-input-properties①\">input properties</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>children</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a>.</p>"
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-an-intrinsic-sizes-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke an intrinsic sizes callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>layoutChild</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-child\" id=\"ref-for-get-a-layout-child①\">get a layout child</a> given <var>workletGlobalScope</var>, <var>name</var>, <var>childBox</var>, and <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-unique-id\" id=\"ref-for-layout-api-context-unique-id⑨\">unique id</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>layoutChild</var> to <var>children</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>edges</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutedges\" id=\"ref-for-layoutedges④\">LayoutEdges</a></code> populated with the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑧\">computed value</a> for all the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/box.html#box-dimensions\" id=\"ref-for-box-dimensions①\">box\nmodel edges</a> for <var>box</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>styleMap</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-style-map\" id=\"ref-for-get-a-style-map\">get a style map</a> given <var>box</var>, and <var>inputProperties</var>.</p>"
+        },
+        {
+          "html": "<p>At this stage the user agent may re-use the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#intrinsic-size\" id=\"ref-for-intrinsic-size①\">intrinsic sizes</a> from a previous invocation if <var>children</var>, <var>edges</var>, and <var>styleMap</var> are equivalent to that previous invocation. If so let\nthe intrinsic sizes the cached intrinsic sizes and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>context</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#create-a-layout-api-context\" id=\"ref-for-create-a-layout-api-context\">create a layout API context</a> given <code>\"intrinsic-sizes\"</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>intrinsicSizesFunction</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-intrinsic-sizes-function\" id=\"ref-for-layout-definition-intrinsic-sizes-function①\">intrinsic sizes function</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>value</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">Invoke</a>(<var>intrinsicSizesFunction</var>, <var>layoutInstance</var>,\n    «<var>children</var>, <var>edges</var>, <var>styleMap</var>»).</p>\n      <p>If an exception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">thrown</a> the let <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout④\">flow layout</a> and abort all\nthese steps.</p>"
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-an-intrinsic-sizes-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke an intrinsic sizes callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>intrinsicSizesValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#run-a-work-queue\" id=\"ref-for-run-a-work-queue\">run a work queue</a> given <var>value</var>, and <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-work-queue\" id=\"ref-for-layout-api-context-work-queue③\">work queue</a>.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#run-a-work-queue\" id=\"ref-for-run-a-work-queue①\">run a work queue</a> returns failure, let the <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout⑤\">flow\nlayout</a> and abort all these steps.</p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-an-intrinsic-sizes-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke an intrinsic sizes callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>intrinsicSizesValue</var> be <var>value</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>intrinsicSizes</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert⑤\">converting</a> <var>intrinsicSizesValue</var> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dictdef-intrinsicsizesresultoptions\" id=\"ref-for-dictdef-intrinsicsizesresultoptions\">IntrinsicSizesResultOptions</a></code>. If an exception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">thrown</a>, let <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout⑥\">flow layout</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#intrinsic-size\" id=\"ref-for-intrinsic-size②\">intrinsic sizes</a> of <var>box</var>:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Let <var>intrinsicSizes</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizesresultoptions-mincontentsize\" id=\"ref-for-dom-intrinsicsizesresultoptions-mincontentsize\">minContentSize</a></code> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#min-content\" id=\"ref-for-min-content①\">min-content\nsize</a> of <var>box</var>.</p>\n       </li><li data-md=\"\">\n        <p>Let <var>intrinsicSizes</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizesresultoptions-maxcontentsize\" id=\"ref-for-dom-intrinsicsizesresultoptions-maxcontentsize\">maxContentSize</a></code> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#max-content\" id=\"ref-for-max-content①\">max-content\nsize</a> of <var>box</var>.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "generate a fragment",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#generate-a-fragment",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-a-fragment\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a fragment</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-formatting-context\" id=\"ref-for-layout-api-formatting-context①\">layout API formatting context</a> for a given <var>box</var>, <var>childBoxes</var>, <var>internalLayoutConstraints</var>, and an optional <var>internalBreakToken</var> it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>layoutFunction</var> be the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#valdef-display-layout\" id=\"ref-for-valdef-display-layout⑥\">layout()</a> for the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑨\">computed value</a> of <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-display-4/#typedef-display-inside\" id=\"ref-for-typedef-display-inside③\" title=\"Expands to: flex | flow | flow-root | grid | ruby | table\">&lt;display-inside&gt;</a> for <var>box</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>name</var> be the first argument of the <var>layoutFunction</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>documentDefinition</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-document-layout-definition\" id=\"ref-for-get-a-document-layout-definition②\">get a document layout definition</a> given <var>name</var>.</p>\n      <p>If <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-document-layout-definition\" id=\"ref-for-get-a-document-layout-definition③\">get a document layout definition</a> returned failure, or if <var>documentDefinition</var> is <code>\"invalid\"</code>, then let <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout⑦\">flow layout</a> and abort all these\nsteps.</p>"
+        },
+        {
+          "html": "<p>Let <var>workletGlobalScope</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutworkletglobalscope\" id=\"ref-for-layoutworkletglobalscope⑨\">LayoutWorkletGlobalScope</a></code> from the layout <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#worklet\" id=\"ref-for-worklet⑤\">Worklet</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-global-scopes\" id=\"ref-for-concept-worklet-global-scopes①\">global scopes</a>, following the rules defined in <a href=\"https://drafts.css-houdini.org/css-layout-api-1/#global-scope-selection\">§ 6.2.3 Global Scope Selection</a>.</p>\n      <p>The user agent <em>may</em> also <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#create-a-worklet-global-scope\" id=\"ref-for-create-a-worklet-global-scope①\">create a worklet global scope</a> at this time, given the\nlayout <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#worklet\" id=\"ref-for-worklet⑥\">Worklet</a></code>.</p>"
+        },
+        {
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#invoke-a-layout-callback\" id=\"ref-for-invoke-a-layout-callback\">invoke a layout callback</a> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, <var>internalLayoutConstraints</var>, <var>internalBreakToken</var>, and <var>workletGlobalScope</var> optionally <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in\nparallel</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "invoke a layout callback",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#invoke-a-layout-callback",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-a-layout-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke a layout callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, <var>internalLayoutConstraints</var>, <var>internalBreakToken</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the\nfollowing steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>definition</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-definition\" id=\"ref-for-get-a-layout-definition⑤\">get a layout definition</a> given <var>name</var>, and <var>workletGlobalScope</var>.</p>\n      <p>If <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-definition\" id=\"ref-for-get-a-layout-definition⑥\">get a layout definition</a> returned failure, let the <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout⑧\">flow\nlayout</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>layoutInstance</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-class-instance\" id=\"ref-for-get-a-layout-class-instance②\">get a layout class instance</a> given <var>box</var>, <var>definition</var>, <var>workletGlobalScope</var>.</p>\n      <p>If <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-class-instance\" id=\"ref-for-get-a-layout-class-instance③\">get a layout class instance</a> returned failure, let the <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout⑨\">flow\nlayout</a> and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>context</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#create-a-layout-api-context\" id=\"ref-for-create-a-layout-api-context①\">create a layout API context</a> given <code>\"layout\"</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>sizingMode</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-layout-options\" id=\"ref-for-layout-definition-layout-options①\">layout options</a>' <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutoptions-sizing\" id=\"ref-for-dom-layoutoptions-sizing④\">sizing</a></code> property.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputProperties</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-input-properties\" id=\"ref-for-layout-definition-input-properties②\">input properties</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>children</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-a-layout-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke a layout callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, <var>internalLayoutConstraints</var>, <var>internalBreakToken</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the\nfollowing steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>layoutChild</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-child\" id=\"ref-for-get-a-layout-child②\">get a layout child</a> given <var>workletGlobalScope</var>, <var>name</var>, <var>childBox</var>, and <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-context-unique-id\" id=\"ref-for-layout-api-context-unique-id①⓪\">unique id</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>layoutChild</var> to <var>children</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>edges</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutedges\" id=\"ref-for-layoutedges⑤\">LayoutEdges</a></code> populated with the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①⓪\">computed value</a> for all the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/box.html#box-dimensions\" id=\"ref-for-box-dimensions②\">box\nmodel edges</a> for <var>box</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>layoutConstraints</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#create-a-layout-constraints-object\" id=\"ref-for-create-a-layout-constraints-object①\">create a layout constraints object</a> given <var>internalLayoutConstraints</var>, <var>box</var>, and <var>sizingMode</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>styleMap</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#get-a-style-map\" id=\"ref-for-get-a-style-map①\">get a style map</a> given <var>box</var>, and <var>inputProperties</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>breakToken</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#breaktoken\" id=\"ref-for-breaktoken\">BreakToken</a></code> populated with the appropriate information from <var>internalBreakToken</var>.</p>\n      <p>If <var>internalBreakToken</var> is null, let <var>breakToken</var> be null.</p>"
+        },
+        {
+          "html": "<p>At this stage the user agent may re-use a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragment\" id=\"ref-for-fragment⑤\">fragment</a> from a previous invocation if <var>children</var>, <var>styleMap</var>, <var>layoutConstraints</var>, <var>breakToken</var> are equivalent to that previous\ninvocation. If so let the fragment output be that cached fragment and abort all these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>layoutFunction</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-layout-function\" id=\"ref-for-layout-definition-layout-function①\">layout function</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>value</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function①\">Invoke</a>(<var>layoutFunction</var>, <var>layoutInstance</var>, «<var>children</var>, <var>edges</var>, <var>layoutConstraints</var>, <var>styleMap</var>, <var>breakToken</var>»).</p>\n      <p>If an exception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪\">thrown</a> the let <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout①⓪\">flow layout</a> and abort all\nthese steps.</p>"
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-a-layout-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke a layout callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, <var>internalLayoutConstraints</var>, <var>internalBreakToken</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the\nfollowing steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>fragmentResultValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#run-a-work-queue\" id=\"ref-for-run-a-work-queue②\">run a work queue</a> given <var>value</var>.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#run-a-work-queue\" id=\"ref-for-run-a-work-queue③\">run a work queue</a> returns failure, let the <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout①①\">flow\nlayout</a> and abort all these steps.</p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-a-layout-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke a layout callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, <var>internalLayoutConstraints</var>, <var>internalBreakToken</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the\nfollowing steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>fragmentResultValue</var> be <var>value</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-a-layout-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke a layout callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, <var>internalLayoutConstraints</var>, <var>internalBreakToken</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the\nfollowing steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>fragmentResult</var> be the result <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert⑥\">converting</a> <var>fragmentResultValue</var> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#fragmentresult\" id=\"ref-for-fragmentresult⑧\">FragmentResult</a></code>.</p>\n          <p>If an exception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">thrown</a>, let <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout①②\">flow layout</a> and abort all\nthese steps.</p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"invoke-a-layout-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke a layout callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, <var>box</var>, <var>childBoxes</var>, <var>internalLayoutConstraints</var>, <var>internalBreakToken</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the\nfollowing steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>fragmentResultOptions</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert⑦\">converting</a> <var>fragmentResultValue</var> to\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dictdef-fragmentresultoptions\" id=\"ref-for-dictdef-fragmentresultoptions⑥\">FragmentResultOptions</a></code>.</p>\n          <p>If an exception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①②\">thrown</a>, let <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout①③\">flow layout</a> and abort\nall these steps.</p>"
+                },
+                {
+                  "html": "<p>Let <var>fragmentResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#construct-a-fragment-result\" id=\"ref-for-construct-a-fragment-result②\">construct a fragment result</a> given <var>fragmentResultOptions</var>.</p>\n          <p>If an exception is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①③\">thrown</a>, let <var>box</var> fallback to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#flow-layout\" id=\"ref-for-flow-layout①④\">flow layout</a> and abort\nall these steps.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return an internal representation of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragment\" id=\"ref-for-fragment⑥\">fragment</a> with:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#inline-size\" id=\"ref-for-inline-size③\">inline size</a> set to <var>fragmentResult</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-inline-size-slot\" id=\"ref-for-dom-fragmentresult-inline-size-slot②\">[[inline size]]</a></code>.</p>\n       </li><li data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#block-size\" id=\"ref-for-block-size⑤\">block size</a> set to <var>fragmentResult</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-inline-size-slot\" id=\"ref-for-dom-fragmentresult-inline-size-slot③\">[[inline size]]</a></code>.</p>\n       </li><li data-md=\"\">\n        <p>The child fragments set to <var>fragmentResult</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-child-fragments-slot\" id=\"ref-for-dom-fragmentresult-child-fragments-slot①\">[[child fragments]]</a></code>.</p>\n        <p>The ordering <em>is</em> important as this dictates their paint order (described in <a href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-containers\">§ 2 Layout API Containers</a>). Their position relative to the <b>border box</b> of the\nfragment should be based off the author specified <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-inlineoffset\" id=\"ref-for-dom-layoutfragment-inlineoffset⑤\">inlineOffset</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-blockoffset\" id=\"ref-for-dom-layoutfragment-blockoffset⑤\">blockOffset</a></code>.</p>\n       </li><li data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragmentation-break\" id=\"ref-for-fragmentation-break①\">fragmentation break</a> information set to <var>fragmentResult</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-internal-break-token-slot\" id=\"ref-for-dom-fragmentresult-internal-break-token-slot①\">[[internal break token]]</a></code>.</p>\n       </li><li data-md=\"\">\n        <p>Store <var>fragmentResult</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-fragmentresult-data-slot\" id=\"ref-for-dom-fragmentresult-data-slot①\">[[data]]</a></code> with the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragment\" id=\"ref-for-fragment⑦\">fragment</a>.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "get a document layout definition",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#get-a-document-layout-definition",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-document-layout-definition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a document layout definition</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>documentLayoutDefinitionMap</var> be the associated <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">document’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definitions\" id=\"ref-for-document-layout-definitions①\">document layout\ndefinitions</a> map.</p>"
+        },
+        {
+          "html": "<p>If <var>documentLayoutDefinitionMap</var>[<var>name</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exist</a>, return failure and\nabort all these steps.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get②\">get</a> <var>documentLayoutDefinitionMap</var>[<var>name</var>].</p>"
+        }
+      ]
+    },
+    {
+      "name": "get a layout definition",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-definition",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-layout-definition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a layout definition</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>layoutDefinitionMap</var> be <var>workletGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definitions\" id=\"ref-for-layout-definitions①\">layout definitions</a> map.</p>"
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-layout-definition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a layout definition</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-layout-definition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a layout definition</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>name</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>documentLayoutDefinitionMap</var> be the associated <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">document’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#document-layout-definition\" id=\"ref-for-document-layout-definition③\">document layout\ndefinition</a> map.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">Set</a> <var>documentLayoutDefinitionMap</var>[<var>name</var>] to <code>\"invalid\"</code>.</p>"
+                },
+                {
+                  "html": "<p>The user agent <em>should</em> log an error to the debugging console stating that a\nclass wasn’t registered in all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutworkletglobalscope\" id=\"ref-for-layoutworkletglobalscope①④\">LayoutWorkletGlobalScope</a></code>s.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return failure, and abort all these steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p⑥\">get</a> <var>layoutDefinitionMap</var>[<var>name</var>].</p>"
+        }
+      ]
+    },
+    {
+      "name": "get a layout class instance",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#get-a-layout-class-instance",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-layout-class-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a layout class instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>box</var>, <var>definition</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>layoutClassInstanceMap</var> be <var>box</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-class-instances\" id=\"ref-for-layout-class-instances\">layout class instances</a> map.</p>"
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-layout-class-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a layout class instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>box</var>, <var>definition</var>, and <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-constructor-valid-flag\" id=\"ref-for-layout-definition-constructor-valid-flag①\">constructor valid flag</a> on <var>definition</var> is false, then return failure and\nabort all these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>layoutCtor</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-class-constructor\" id=\"ref-for-layout-definition-class-constructor①\">class constructor</a> on <var>definition</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>layoutInstance</var> be the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-construct\" id=\"ref-for-sec-construct\">Construct</a>(<var>layoutCtor</var>).</p>\n        <p>If <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-construct\" id=\"ref-for-sec-construct①\">construct</a> throws an exception, set the <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-definition-constructor-valid-flag\" id=\"ref-for-layout-definition-constructor-valid-flag②\">constructor valid flag</a> to false, then return failure and abort all these steps.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑤\">Set</a> <var>layoutClassInstanceMap</var>[<var>workletGlobalScope</var>] to <var>layoutInstance</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>layoutInstance</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get a style map",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#get-a-style-map",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-style-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a style map</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>box</var>, and <var>inputProperties</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-style-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a style map</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>box</var>, and <var>inputProperties</var>, it <em>must</em> run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>styleMap</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#stylepropertymapreadonly\" id=\"ref-for-stylepropertymapreadonly⑧\">StylePropertyMapReadOnly</a></code> populated with <em>only</em> the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①①\">computed values</a> for properties listed in <var>inputProperties</var> for <var>box</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>box</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#stylemap\" id=\"ref-for-stylemap②\">styleMap</a> internal slot to <var>styleMap</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>box</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#stylepropertymapreadonly\" id=\"ref-for-stylepropertymapreadonly⑨\">StylePropertyMapReadOnly</a></code> contained in the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#stylemap\" id=\"ref-for-stylemap③\">styleMap</a> internal slot.</p>"
+        }
+      ]
+    },
+    {
+      "name": "run a work queue",
+      "href": "https://drafts.css-houdini.org/css-layout-api-1/#run-a-work-queue",
+      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-a-work-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run a work queue</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>promise</var>, and <var>workQueue</var>, it <em>must</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>promise</var> is not a promise, return failure.</p>"
+        },
+        {
+          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-a-work-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run a work queue</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>promise</var>, and <var>workQueue</var>, it <em>must</em> run the following steps:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-a-work-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run a work queue</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>promise</var>, and <var>workQueue</var>, it <em>must</em> run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>layoutChild</var> be <var>task</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-layout-child\" id=\"ref-for-layout-api-work-task-layout-child②\">layout child</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>box</var> be <var>layoutChild</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-3/#box\" id=\"ref-for-box②②\">box</a> in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-box-slot\" id=\"ref-for-dom-layoutchild-box-slot③\">[[box]]</a></code> internal slot.</p>"
+                },
+                {
+                  "html": "<p>Let <var>childPromise</var> be <var>task</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-promise\" id=\"ref-for-layout-api-work-task-promise②\">promise</a>.</p>"
+                },
+                {
+                  "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-a-work-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run a work queue</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>promise</var>, and <var>workQueue</var>, it <em>must</em> run the following steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>childConstraints</var> be <var>task</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-layout-constraints\" id=\"ref-for-layout-api-work-task-layout-constraints①\">layout constraints</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>childBreakToken</var> be <var>task</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layout-api-work-task-child-break-token\" id=\"ref-for-layout-api-work-task-child-break-token①\">child break token</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>targetRealm</var> be <var>layoutChild</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\" id=\"ref-for-concept-global-object-realm\">Realm</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>internalFragment</var> be the result of the user agent producing a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragment\" id=\"ref-for-fragment⑧\">fragment</a> based on <var>box</var>, <var>childConstraints</var>, and <var>childBreakToken</var>.</p>\n              <p>Invoking <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#translate-a-layoutconstraintsoptions-to-internal-constraints\" id=\"ref-for-translate-a-layoutconstraintsoptions-to-internal-constraints①\">translate a LayoutConstraintsOptions to internal constraints</a> given <var>childConstraints</var>, must be run to translate the given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dictdef-layoutconstraintsoptions\" id=\"ref-for-dictdef-layoutconstraintsoptions⑤\">LayoutConstraintsOptions</a></code> into the internal constraints for the user\nagent’s layout engine.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>fragment</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#layoutfragment\" id=\"ref-for-layoutfragment②⑥\">LayoutFragment</a></code> with:</p>\n              <ul>\n               <li data-md=\"\">\n                <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-inlinesize\" id=\"ref-for-dom-layoutfragment-inlinesize③\">inlineSize</a></code> being <var>internalFragment</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#inline-size\" id=\"ref-for-inline-size④\">inline size</a> relative to the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout②⑥\">current layout’s</a> writing mode.</p>\n               </li><li data-md=\"\">\n                <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-blocksize\" id=\"ref-for-dom-layoutfragment-blocksize③\">blockSize</a></code> being <var>internalFragment</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#block-size\" id=\"ref-for-block-size⑥\">block size</a> relative to the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout②⑦\">current layout’s</a> writing mode.</p>\n               </li><li data-md=\"\">\n                <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-inlineoffset\" id=\"ref-for-dom-layoutfragment-inlineoffset⑥\">inlineOffset</a></code> initially set to 0.</p>\n               </li><li data-md=\"\">\n                <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-blockoffset\" id=\"ref-for-dom-layoutfragment-blockoffset⑥\">blockOffset</a></code> initially set to 0.</p>\n               </li><li data-md=\"\">\n                <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-breaktoken\" id=\"ref-for-dom-layoutfragment-breaktoken⑥\">breakToken</a></code> being a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#childbreaktoken\" id=\"ref-for-childbreaktoken⑧\">ChildBreakToken</a></code> representing <var>internalFragment</var>’s internal break token, if any.</p>\n               </li><li data-md=\"\">\n                <p>If <var>internalFragment</var> has a <var>clonedData</var> object stored with it, let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutfragment-data\" id=\"ref-for-dom-layoutfragment-data①\">data</a></code> being the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#structureddeserialize\" id=\"ref-for-structureddeserialize\">StructuredDeserialize</a>(<var>clonedData</var>, <var>targetRealm</var>), otherwise null.</p>\n              </li></ul>"
+                    },
+                    {
+                      "html": "<p>Resolve <var>childPromise</var> with <var>fragment</var>.</p>"
+                    }
+                  ],
+                  "additional": [
+                    {
+                      "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-a-work-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run a work queue</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>promise</var>, and <var>workQueue</var>, it <em>must</em> run the following steps:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>internalIntrinsicSizes</var> be the result of the user agent calculating the <b>border box</b> min/max content contribution of <var>box</var>.</p>"
+                        },
+                        {
+                          "html": "<p>Let <var>intrinsicSizes</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#intrinsicsizes\" id=\"ref-for-intrinsicsizes②\">IntrinsicSizes</a></code> with:</p>\n              <ul>\n               <li data-md=\"\">\n                <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizes-mincontentsize\" id=\"ref-for-dom-intrinsicsizes-mincontentsize②\">minContentSize</a></code> being <var>internalIntrinsicSizes</var>’ <b>border box</b> min-content contribution, relative to the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout②⑧\">current\nlayout’s</a> writing mode.</p>\n               </li><li data-md=\"\">\n                <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-intrinsicsizes-maxcontentsize\" id=\"ref-for-dom-intrinsicsizes-maxcontentsize②\">maxContentSize</a></code> being <var>internalIntrinsicSizes</var>’s <b>border box</b> max-content contribution, relative to the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#current-layout\" id=\"ref-for-current-layout②⑨\">current\nlayout’s</a> writing mode.</p>\n              </li></ul>"
+                        },
+                        {
+                          "html": "<p>Resolve <var>childPromise</var> with <var>intrinsicSizes</var>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Wait (optionally <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>) for all of the above tasks to complete.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty②\">Empty</a> <var>workQueue</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#perform-a-microtask-checkpoint\" id=\"ref-for-perform-a-microtask-checkpoint\">Perform a microtask checkpoint</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>promise</var> isn’t fulfilled (it is pending, or got rejected), return failure.</p>"
+        },
+        {
+          "html": "<p>Return the fulfilled value of <var>promise</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

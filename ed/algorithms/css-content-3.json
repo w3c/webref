@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "title": "CSS Generated Content Module Level 3",
+    "url": "https://drafts.csswg.org/css-content-3/"
+  },
+  "algorithms": [
+    {
+      "html": "Consider a line which contains the content before the leader (the “before content”),\n\tthe leader,\n\tand the content after the leader (the “after content”).\n\tLeaders obey the following rules:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Lay out the <var>before content</var>,\nuntil reaching the line where the <var>before content</var> ends.</p>\n<pre class=\"highlight\">BBBBBBBBBB\nBBB\n</pre>"
+        },
+        {
+          "html": "<p>The leader string consists of one or more glyphs,\nand is thus an inline box.\nA leader is a row of these boxes,\ndrawn from the end edge to the start edge,\nwhere only those boxes not overlaid by the before or after content.\nOn this line,\ndraw the leader string,\nstarting from the end edge,\nrepeating as many times as possible until reaching the start edge.</p>\n<pre class=\"highlight\">BBBBBBBBBB\n..........\n</pre>"
+        },
+        {
+          "html": "<p>Draw the before and after content on top of the leader.\nIf any part of the <var>before content</var> or <var>after content</var> overlaps a glyph in a leader string box,\nthat glyph is not displayed.</p>\n<pre class=\"highlight\">BBBBBBBBBB\nBBB....AAA\n</pre>"
+        },
+        {
+          "html": "<p>If one full copy of the leader string is not visible:</p>\n<pre class=\"highlight\">BBBBBBB\nBBBBBBA\n</pre>\n     <p>Insert a line break after the <var>before content</var>,\ndraw the leader on the next line,\nand draw the <var>after content</var> on top,\nand hide any leader strings that are not fully displayed.</p>\n<pre class=\"highlight\">BBBBBBB\nBBBBBB\n......A\n</pre>"
+        }
+      ]
+    }
+  ]
+}

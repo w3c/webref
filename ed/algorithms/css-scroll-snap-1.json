@@ -1,0 +1,62 @@
+{
+  "spec": {
+    "title": "CSS Scroll Snap Module Level 1",
+    "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+  },
+  "algorithms": [
+    {
+      "html": "When <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap\" id=\"ref-for-scroll-snap②⓪\">snapping</a> to a scroll position\n    that is aligned with multiple <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-area\" id=\"ref-for-scroll-snap-area②⑧\">scroll snap areas</a>,\n    the following algorithm procedure is used to determined which box is <span id=\"ref-for-scroll-snap②①\">snapped</span> on the block and inline axes\n    for a particular <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container④④\">scroll container</a>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>scroll position</var> be the scroll position of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container④⑤\">scroll container</a></p>"
+        },
+        {
+          "html": "<p>Let <var>inline</var> be the set of boxes whose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-area\" id=\"ref-for-scroll-snap-area②⑨\">scroll snap areas</a> are aligned at this <var>scroll position</var> in the inline axis.</p>"
+        },
+        {
+          "html": "<p>Let <var>block</var> be the set of boxes whose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-area\" id=\"ref-for-scroll-snap-area③⓪\">scroll snap areas</a> are aligned at this <var>scroll position</var> in the block axis.</p>"
+        },
+        {
+          "html": "For each <var>list</var> of <var>block</var> and <var>inline</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>list</var> contains the focused box, remove all other boxes from <var>list</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>list</var> contains the targeted box, remove all other boxes from <var>list</var>.</p>"
+            },
+            {
+              "html": "For each <var>box</var> in <var>list</var>:",
+              "rationale": "remove",
+              "steps": [
+                {
+                  "html": "<p>Remove any box from <var>list</var> which is an ancestor of <var>box</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If <var>inline</var> and <var>block</var> are overlapping sets:",
+          "rationale": "replace",
+          "steps": [
+            {
+              "html": "<p>Replace <var>inline</var> with the intersection of <var>inline</var> and <var>block</var>.</p>"
+            },
+            {
+              "html": "<p>Replace <var>block</var> with the intersection of <var>inline</var> and <var>block</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Select the first element in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order\">tree order</a> from <var>inline</var> as the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap\" id=\"ref-for-scroll-snap②②\">snapped</a> inline axis box.</p>"
+        },
+        {
+          "html": "<p>Select the first element in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order①\">tree order</a> from <var>block</var> as the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap\" id=\"ref-for-scroll-snap②③\">snapped</a> block axis box.</p>"
+        }
+      ]
+    }
+  ]
+}

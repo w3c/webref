@@ -1,0 +1,574 @@
+{
+  "spec": {
+    "title": "Scripting Policy",
+    "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+  },
+  "algorithms": [
+    {
+      "html": "The <a data-link-type=\"biblio\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#biblio-artur\">[ARTUR]</a> proposal is a tounge-in-cheek proposal that’s a fairly bad idea as specified, but\nseems like an interesting foundation conceptually. If we step back from CSP’s current syntax, and\nthe contortions it takes to remain backwards compatible, it seems like we could extract a concise\nand comprehensible mechanism that would encompass the kinds of requirements that hard experience\nhas taught us can be effective (e.g. those expressed in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#biblio-strict-csp\">[STRICT-CSP]</a>):",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "<p>Turn off dangerous parts of the platform that influence scripting (e.g. <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-base-element\" id=\"ref-for-the-base-element\">base</a></code>, <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element\" id=\"ref-for-the-embed-element\">embed</a></code>,\nand <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element\" id=\"ref-for-the-object-element\">object</a></code>.</p>"
+        },
+        {
+          "html": "<p>Create an out-of-band signal that a given script is intended to execute (e.g. the aforementioned\nnonces and hashes).</p>"
+        },
+        {
+          "html": "<p>Allow developers to roll the above out in a report-only manner.</p>"
+        }
+      ]
+    },
+    {
+      "html": "This mechanism assumes an attacker can:",
+      "rationale": "cause",
+      "steps": [
+        {
+          "html": "<p>Cause a server to output unexpected content directly into the body of any given response,\nleading to \"reflected\" cross-site scripting.</p>"
+        },
+        {
+          "html": "<p>Manipulate the inputs to client-side code, causing \"stored\" or \"DOM-based\" cross-site scripting.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse policy pair from response",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-obtain-a-scripting-policy-pair-from-a-response",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-obtain-a-scripting-policy-pair-from-a-response\">obtain a Scripting Policy pair from a response</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> (<var>r</var>), execute the following steps. This algorithm will return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair\" id=\"ref-for-scripting-policy-pair\">Scripting Policy pair</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>headers</var> be <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair\" id=\"ref-for-scripting-policy-pair①\">Scripting Policy pair</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get\">getting</a> <code>Scripting-Policy</code> from <var>headers</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>header</var> is not <code>null</code>, set <var>result</var>’ <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-enforced\" id=\"ref-for-scripting-policy-pair-enforced\">enforced</a> to the result\nof <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-obtain-a-scripting-policy-from-a-structured-header\" id=\"ref-for-abstract-opdef-obtain-a-scripting-policy-from-a-structured-header\">obtaining a\nScripting Policy</a> from <var>header</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get①\">getting</a> <code>Scripting-Policy-Report-Only</code> from <var>headers</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>header</var> is not <code>null</code>, set <var>result</var>’ <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-report-only\" id=\"ref-for-scripting-policy-pair-report-only\">report-only</a> to the result\nof <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-obtain-a-scripting-policy-from-a-structured-header\" id=\"ref-for-abstract-opdef-obtain-a-scripting-policy-from-a-structured-header①\">obtaining a\nScripting Policy</a> from <var>header</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse policy from structured header",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-obtain-a-scripting-policy-from-a-structured-header",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-obtain-a-scripting-policy-from-a-structured-header\">obtain a Scripting Policy from a Structured Header</dfn>, given a serialized <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#\" id=\"termref-for-②\">Structured Header</a> (<var>header</var>), execute the following steps. The algorithm will return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy\" id=\"ref-for-scripting-policy①①\">Scripting Policy</a>, or <code>null</code> if no policy can be parsed successfully.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>policy</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy\" id=\"ref-for-scripting-policy①②\">Scripting Policy</a> object.</p>"
+        },
+        {
+          "html": "<p>Let <var>struct</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#section-4.2\" id=\"ref-for-section-4.2\">parsing a Structured Header</a> with\nan <code>input_bytes</code> of <var>header</var> and a <code>header_type</code> of <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#section-3.2\" id=\"ref-for-section-3.2④\">dictionary</a>.</p>\n      <p>If parsing fails, return <code>null</code>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-obtain-a-scripting-policy-from-a-structured-header\">obtain a Scripting Policy from a Structured Header</dfn>, given a serialized <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#\" id=\"termref-for-②\">Structured Header</a> (<var>header</var>), execute the following steps. The algorithm will return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy\" id=\"ref-for-scripting-policy①①\">Scripting Policy</a>, or <code>null</code> if no policy can be parsed successfully.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#section-3.7\" id=\"ref-for-section-3.7⑥\">token</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>value</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contained in</a> the list\n« \"<code>allow-non-parser-inserted</code>\", \"<code>check-non-parser-inserted</code>\" », <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-dynamic-loading\" id=\"ref-for-scripting-policy-dynamic-loading①\">dynamic-loading</a> member to <var>value</var>.</p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-obtain-a-scripting-policy-from-a-structured-header\">obtain a Scripting Policy from a Structured Header</dfn>, given a serialized <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#\" id=\"termref-for-②\">Structured Header</a> (<var>header</var>), execute the following steps. The algorithm will return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy\" id=\"ref-for-scripting-policy①①\">Scripting Policy</a>, or <code>null</code> if no policy can be parsed successfully.",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#section-3.7\" id=\"ref-for-section-3.7⑦\">token</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>value</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contained in</a> the list\n« \"<code>allow</code>\", \"<code>allow-trustedscript</code>\", \"<code>block</code>\" », <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-eval\" id=\"ref-for-scripting-policy-eval①\">eval</a> member to <var>value</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-obtain-a-scripting-policy-from-a-structured-header\">obtain a Scripting Policy from a Structured Header</dfn>, given a serialized <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#\" id=\"termref-for-②\">Structured Header</a> (<var>header</var>), execute the following steps. The algorithm will return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy\" id=\"ref-for-scripting-policy①①\">Scripting Policy</a>, or <code>null</code> if no policy can be parsed successfully.",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#section-3.7\" id=\"ref-for-section-3.7⑧\">token</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-nonce\" id=\"ref-for-scripting-policy-nonce②\">nonce</a> member to <var>value</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-obtain-a-scripting-policy-from-a-structured-header\">obtain a Scripting Policy from a Structured Header</dfn>, given a serialized <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#\" id=\"termref-for-②\">Structured Header</a> (<var>header</var>), execute the following steps. The algorithm will return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy\" id=\"ref-for-scripting-policy①①\">Scripting Policy</a>, or <code>null</code> if no policy can be parsed successfully.",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#section-3.7\" id=\"ref-for-section-3.7⑨\">token</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-report-to\" id=\"ref-for-scripting-policy-report-to①\">report-to</a> member to <var>value</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-obtain-a-scripting-policy-from-a-structured-header\">obtain a Scripting Policy from a Structured Header</dfn>, given a serialized <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#\" id=\"termref-for-②\">Structured Header</a> (<var>header</var>), execute the following steps. The algorithm will return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy\" id=\"ref-for-scripting-policy①①\">Scripting Policy</a>, or <code>null</code> if no policy can be parsed successfully.",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/draft-ietf-httpbis-header-structure#section-3.7\" id=\"ref-for-section-3.7①⓪\">token</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>value</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contained in</a> the list « \"<code>script</code>\" », <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑦\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-trusted-types-required-for\" id=\"ref-for-scripting-policy-trusted-types-required-for①\">trusted-types-required-for</a> member to <var>value</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>policy</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "initialize document",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-initialize-a-documents-scripting-policy",
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document④\">Document</a></code> (<var>document</var>), a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> (<var>response</var>), and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> or <code>null</code> (<var>request</var>), the user agent can <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-initialize-a-documents-scripting-policy\">initialize a <code>Document</code>'s Scripting Policy</dfn> by executing the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document④\">Document</a></code> (<var>document</var>), a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> (<var>response</var>), and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> or <code>null</code> (<var>request</var>), the user agent can <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-initialize-a-documents-scripting-policy\">initialize a <code>Document</code>'s Scripting Policy</dfn> by executing the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#document-scripting-policy\" id=\"ref-for-document-scripting-policy②\">scripting policy</a> to a copy of <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#environment-settings-object-scripting-policy\" id=\"ref-for-environment-settings-object-scripting-policy③\">scripting policy</a>.</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#document-scripting-policy\" id=\"ref-for-document-scripting-policy③\">scripting policy</a> to the result of <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-obtain-a-scripting-policy-pair-from-a-response\" id=\"ref-for-abstract-opdef-obtain-a-scripting-policy-pair-from-a-response\">obtaining a Scripting Policy pair</a> from <var>response</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "<strong>Monkeypatching <a data-link-type=\"biblio\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#biblio-html\">[HTML]</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#initialise-the-document-object\" id=\"ref-for-initialise-the-document-object①\">create and initialize a Document object</a> algorithm:</strong>",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-initialize-a-documents-scripting-policy\" id=\"ref-for-abstract-opdef-initialize-a-documents-scripting-policy\">Initialize a <code>Document</code>'s\n  Scripting Policy</a> given <var>document</var>, <var>response</var>, and <var>request</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "initialize global",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-initialize-a-global-objects-scripting-policy",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①\">global object</a> (<var>global</var>) and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④\">response</a> (<var>response</var>), the user agent can <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-initialize-a-global-objects-scripting-policy\">initialize a global object’s Scripting Policy</dfn> by executing the following\n    steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①\">global object</a> (<var>global</var>) and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④\">response</a> (<var>response</var>), the user agent can <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-initialize-a-global-objects-scripting-policy\">initialize a global object’s Scripting Policy</dfn> by executing the following\n    steps:",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<p class=\"assertion\">Assert: <var>global</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope\" id=\"ref-for-dedicatedworkerglobalscope\">DedicatedWorkerGlobalScope</a></code>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope\" id=\"ref-for-workletglobalscope⑤\">WorkletGlobalScope</a></code>, or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#sharedworkerglobalscope\" id=\"ref-for-sharedworkerglobalscope\">SharedWorkerGlobalScope</a></code> with one <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a> in its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#concept-WorkerGlobalScope-owner-set\" id=\"ref-for-concept-WorkerGlobalScope-owner-set\">owner set</a>.</p>"
+            },
+            {
+              "html": "<p>With the single <var>owner</var> in <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#concept-WorkerGlobalScope-owner-set\" id=\"ref-for-concept-WorkerGlobalScope-owner-set①\">owner set</a>, set <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#workerglobalscope-scripting-policy\" id=\"ref-for-workerglobalscope-scripting-policy②\">scripting policy</a> to a copy of <var>owner</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#environment-settings-object-scripting-policy\" id=\"ref-for-environment-settings-object-scripting-policy④\">scripting policy</a>.</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#workerglobalscope-scripting-policy\" id=\"ref-for-workerglobalscope-scripting-policy③\">scripting policy</a> to the result of <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-obtain-a-scripting-policy-pair-from-a-response\" id=\"ref-for-abstract-opdef-obtain-a-scripting-policy-pair-from-a-response①\">obtaining a Scripting Policy pair</a> from <var>response</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "<strong>Monkeypatching <a data-link-type=\"biblio\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#biblio-html\">[HTML]</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#run-a-worker\" id=\"ref-for-run-a-worker①\">run a worker</a> algorithm:</strong>",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "In both cases, ...",
+          "rationale": "initialize",
+          "steps": [
+            {
+              "html": "<p>...</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-initialize-a-global-objects-scripting-policy\" id=\"ref-for-abstract-opdef-initialize-a-global-objects-scripting-policy\">Initialize a global\n  object’s Scripting Policy</a> given <var>worker global scope</var> and <var>response</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "block script element",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-determine-whether-a-script-element-should-be-blocked-by-scripting-policy",
+      "html": "To <dfn data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"block script element\" data-lt=\"determine whether a script element should be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-a-script-element-should-be-blocked-by-scripting-policy\">determine whether a script element should\n    be blocked by Scripting Policy<a class=\"self-link\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-determine-whether-a-script-element-should-be-blocked-by-scripting-policy\"></a></dfn>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> (<var>el</var>), execute the following\n    algorithm. It will return \"<code>Blocked</code>\" or \"<code>Allowed</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <var>el</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement\" id=\"ref-for-htmlscriptelement\">HTMLScriptElement</a></code> or an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://svgwg.org/svg2-draft/interact.html#InterfaceSVGScriptElement\" id=\"ref-for-InterfaceSVGScriptElement\">SVGScriptElement</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>enforced</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#document-scripting-policy\" id=\"ref-for-document-scripting-policy④\">scripting policy</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-enforced\" id=\"ref-for-scripting-policy-pair-enforced①\">enforced</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>report-only</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#document-scripting-policy\" id=\"ref-for-document-scripting-policy⑤\">scripting policy</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-report-only\" id=\"ref-for-scripting-policy-pair-report-only①\">report-only</a>.</p>"
+        },
+        {
+          "html": "To <dfn data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"block script element\" data-lt=\"determine whether a script element should be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-a-script-element-should-be-blocked-by-scripting-policy\">determine whether a script element should\n    be blocked by Scripting Policy<a class=\"self-link\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-determine-whether-a-script-element-should-be-blocked-by-scripting-policy\"></a></dfn>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> (<var>el</var>), execute the following\n    algorithm. It will return \"<code>Blocked</code>\" or \"<code>Allowed</code>\".",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>report-only</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-nonce\" id=\"ref-for-scripting-policy-nonce④\">nonce</a> is not <code>null</code>, and <var>el</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cryptographicnonce\" id=\"ref-for-cryptographicnonce\">[[CryptographicNonce]]</a> slot is <var>report-only</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-nonce\" id=\"ref-for-scripting-policy-nonce⑤\">nonce</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑧\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>list</var> be <var>report-only</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-integrity\" id=\"ref-for-scripting-policy-integrity④\">integrity</a>, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> if <var>report-only</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-integrity\" id=\"ref-for-scripting-policy-integrity⑤\">integrity</a> is <code>null</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>handler</var> <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-matches-an-integrity-metadata-list\" id=\"ref-for-abstract-opdef-matches-an-integrity-metadata-list\">matches</a> <var>list</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑨\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-report-a-scripting-policy-violation\" id=\"ref-for-abstract-opdef-report-a-scripting-policy-violation\">Report</a> a Scripting Policy violation, using <var>report-only</var> and <var>el</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"block script element\" data-lt=\"determine whether a script element should be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-a-script-element-should-be-blocked-by-scripting-policy\">determine whether a script element should\n    be blocked by Scripting Policy<a class=\"self-link\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-determine-whether-a-script-element-should-be-blocked-by-scripting-policy\"></a></dfn>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> (<var>el</var>), execute the following\n    algorithm. It will return \"<code>Blocked</code>\" or \"<code>Allowed</code>\".",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>enforced</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-nonce\" id=\"ref-for-scripting-policy-nonce⑥\">nonce</a> is not <code>null</code>, and <var>el</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cryptographicnonce\" id=\"ref-for-cryptographicnonce①\">[[CryptographicNonce]]</a> slot is <var>enforced</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-nonce\" id=\"ref-for-scripting-policy-nonce⑦\">nonce</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⓪\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>list</var> be <var>enforced</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-integrity\" id=\"ref-for-scripting-policy-integrity⑥\">integrity</a>, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> if <var>enforced</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-integrity\" id=\"ref-for-scripting-policy-integrity⑦\">integrity</a> is <code>null</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>handler</var> <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-matches-an-integrity-metadata-list\" id=\"ref-for-abstract-opdef-matches-an-integrity-metadata-list①\">matches</a> <var>list</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-report-a-scripting-policy-violation\" id=\"ref-for-abstract-opdef-report-a-scripting-policy-violation①\">Report</a> a Scripting Policy violation, using <var>enforced</var> and <var>el</var>.</p>"
+            },
+            {
+              "html": "<p>Return \"<code>Blocked</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Allowed</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "match metadata",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-matches-an-integrity-metadata-list",
+      "html": "A string (<var>value</var>) <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-matches-an-integrity-metadata-list\">matches an integrity metadata list</dfn> (<var>list</var>) if the\n    following algorithm returns \"<code>Match</code>\":",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>source</var> to the result of executing <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encode</a> on the result of executing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert\">JavaScript string converstion</a> on <var>value</var>.</p>"
+        },
+        {
+          "html": "A string (<var>value</var>) <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-matches-an-integrity-metadata-list\">matches an integrity metadata list</dfn> (<var>list</var>) if the\n    following algorithm returns \"<code>Match</code>\":",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>expected</var> be <var>integrity metadata</var>’s digest.</p>"
+            },
+            {
+              "html": "A string (<var>value</var>) <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-matches-an-integrity-metadata-list\">matches an integrity metadata list</dfn> (<var>list</var>) if the\n    following algorithm returns \"<code>Match</code>\":",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>expected</var> is a <a data-link-type=\"dfn\">case-sensitive</a> match with the result of <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc4648#section-4\" id=\"ref-for-section-4\">base64 encoding</a> the result of applying <a data-link-type=\"dfn\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"termref-for-⑤\">SHA-256</a> to <var>source</var>, return\n\"<code>Matches</code>\".</p>"
+                }
+              ],
+              "additional": [
+                {
+                  "html": "A string (<var>value</var>) <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-matches-an-integrity-metadata-list\">matches an integrity metadata list</dfn> (<var>list</var>) if the\n    following algorithm returns \"<code>Match</code>\":",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>expected</var> is a <a data-link-type=\"dfn\">case-sensitive</a> match with the result of <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc4648#section-4\" id=\"ref-for-section-4①\">base64 encoding</a> the result of applying <a data-link-type=\"dfn\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"termref-for-⑥\">SHA-384</a> to <var>source</var>, return\n\"<code>Matches</code>\".</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "A string (<var>value</var>) <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-matches-an-integrity-metadata-list\">matches an integrity metadata list</dfn> (<var>list</var>) if the\n    following algorithm returns \"<code>Match</code>\":",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>expected</var> is a <a data-link-type=\"dfn\">case-sensitive</a> match with the result of <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc4648#section-4\" id=\"ref-for-section-4②\">base64 encoding</a> the result of applying <a data-link-type=\"dfn\" href=\"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf#\" id=\"termref-for-⑦\">SHA-512</a> to <var>source</var>, return\n\"<code>Matches</code>\".</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Does Not Match</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "event handler",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-determine-whether-an-event-handler-be-blocked-by-scripting-policy",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"check event handler\" data-lt=\"determine whether an event handler be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-an-event-handler-be-blocked-by-scripting-policy\">determine whether an event handler be\n    blocked by Scripting Policy</dfn>, given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a> (<var>el</var>) and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> (<var>handler</var>):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>enforced</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#document-scripting-policy\" id=\"ref-for-document-scripting-policy⑥\">scripting policy</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-enforced\" id=\"ref-for-scripting-policy-pair-enforced②\">enforced</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>report-only</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document③\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#document-scripting-policy\" id=\"ref-for-document-scripting-policy⑦\">scripting policy</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-report-only\" id=\"ref-for-scripting-policy-pair-report-only②\">report-only</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"check event handler\" data-lt=\"determine whether an event handler be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-an-event-handler-be-blocked-by-scripting-policy\">determine whether an event handler be\n    blocked by Scripting Policy</dfn>, given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a> (<var>el</var>) and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> (<var>handler</var>):",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>list</var> be <var>report-only</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-integrity\" id=\"ref-for-scripting-policy-integrity⑨\">integrity</a>, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a> if <var>report-only</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-integrity\" id=\"ref-for-scripting-policy-integrity①⓪\">integrity</a> is <code>null</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>handler</var> <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-matches-an-integrity-metadata-list\" id=\"ref-for-abstract-opdef-matches-an-integrity-metadata-list②\">matches</a> <var>list</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-report-a-scripting-policy-violation\" id=\"ref-for-abstract-opdef-report-a-scripting-policy-violation②\">Report</a> a Scripting Policy violation, using <var>report-only</var>, <var>handler</var>,\nand <var>el</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"check event handler\" data-lt=\"determine whether an event handler be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-an-event-handler-be-blocked-by-scripting-policy\">determine whether an event handler be\n    blocked by Scripting Policy</dfn>, given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a> (<var>el</var>) and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> (<var>handler</var>):",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>list</var> be <var>enforced</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-integrity\" id=\"ref-for-scripting-policy-integrity①①\">integrity</a>, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a> if <var>enforced</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-integrity\" id=\"ref-for-scripting-policy-integrity①②\">integrity</a> is <code>null</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>handler</var> <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-matches-an-integrity-metadata-list\" id=\"ref-for-abstract-opdef-matches-an-integrity-metadata-list③\">matches</a> <var>list</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①③\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-report-a-scripting-policy-violation\" id=\"ref-for-abstract-opdef-report-a-scripting-policy-violation③\">Report</a> a Scripting Policy violation, using <var>report-only</var>, <var>handler</var>,\nand <var>el</var>.</p>"
+            },
+            {
+              "html": "<p>Return \"<code>Blocked</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Allowed</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "<strong>Monkeypatching <a data-link-type=\"biblio\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#biblio-html\">[HTML]</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes\" id=\"ref-for-event-handler-content-attributes\">event handler content attribute</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attributes-change-ext\" id=\"ref-for-concept-element-attributes-change-ext\">attribute change steps</a></strong>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Otherwise:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>...</p>"
+            },
+            {
+              "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-determine-whether-an-event-handler-be-blocked-by-scripting-policy\" id=\"ref-for-abstract-opdef-determine-whether-an-event-handler-be-blocked-by-scripting-policy\">Should an event handler be blocked by Scripting Policy?</a> returns \"<code>Blocked</code>\" when executed upon <var>element</var> and <var>value</var>, then return.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "evaluate eval",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-ensurescriptingpolicydoesnotblockscriptexecution-callerrealm-calleerealm-source",
+      "html": "Given two <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262#realm\" id=\"ref-for-realm\">realms</a> (<var>callerRealm</var> and <var>calleeRealm</var>), and a string (<var>source</var>), <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"ensure eval\" id=\"abstract-opdef-ensurescriptingpolicydoesnotblockscriptexecution-callerrealm-calleerealm-source\">EnsureScriptingPolicyDoesNotBlockScriptExecution(callerRealm, calleeRealm, source)</dfn> returns normally if\n    string compilation is allowed, and throws an <code>EvalError</code> if not:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>globals</var> be a list containing <var>callerRealm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a> and <var>calleeRealm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global①\">global object</a>.</p>"
+        },
+        {
+          "html": "Given two <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262#realm\" id=\"ref-for-realm\">realms</a> (<var>callerRealm</var> and <var>calleeRealm</var>), and a string (<var>source</var>), <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"ensure eval\" id=\"abstract-opdef-ensurescriptingpolicydoesnotblockscriptexecution-callerrealm-calleerealm-source\">EnsureScriptingPolicyDoesNotBlockScriptExecution(callerRealm, calleeRealm, source)</dfn> returns normally if\n    string compilation is allowed, and throws an <code>EvalError</code> if not:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>enforced</var> be <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#environment-settings-object-scripting-policy\" id=\"ref-for-environment-settings-object-scripting-policy⑤\">scripting policy</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-enforced\" id=\"ref-for-scripting-policy-pair-enforced③\">enforced</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>report-only</var> be <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#environment-settings-object-scripting-policy\" id=\"ref-for-environment-settings-object-scripting-policy⑥\">scripting policy</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-report-only\" id=\"ref-for-scripting-policy-pair-report-only③\">report-only</a>.</p>"
+            },
+            {
+              "html": "Given two <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262#realm\" id=\"ref-for-realm\">realms</a> (<var>callerRealm</var> and <var>calleeRealm</var>), and a string (<var>source</var>), <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"ensure eval\" id=\"abstract-opdef-ensurescriptingpolicydoesnotblockscriptexecution-callerrealm-calleerealm-source\">EnsureScriptingPolicyDoesNotBlockScriptExecution(callerRealm, calleeRealm, source)</dfn> returns normally if\n    string compilation is allowed, and throws an <code>EvalError</code> if not:",
+              "rationale": "report",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-report-a-scripting-policy-violation\" id=\"ref-for-abstract-opdef-report-a-scripting-policy-violation④\">Report</a> a Scripting Policy violation, using <var>report-only</var>, <var>source</var>, and <var>global</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Given two <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262#realm\" id=\"ref-for-realm\">realms</a> (<var>callerRealm</var> and <var>calleeRealm</var>), and a string (<var>source</var>), <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"ensure eval\" id=\"abstract-opdef-ensurescriptingpolicydoesnotblockscriptexecution-callerrealm-calleerealm-source\">EnsureScriptingPolicyDoesNotBlockScriptExecution(callerRealm, calleeRealm, source)</dfn> returns normally if\n    string compilation is allowed, and throws an <code>EvalError</code> if not:",
+              "rationale": "report",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-report-a-scripting-policy-violation\" id=\"ref-for-abstract-opdef-report-a-scripting-policy-violation⑤\">Report</a> a Scripting Policy violation, using <var>enforced</var>, <var>source</var>,\nand <var>global</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-throw\" id=\"ref-for-dfn-throw\">Throw</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#exceptiondef-evalerror\" id=\"ref-for-exceptiondef-evalerror\">EvalError</a></code> exception.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return.</p>"
+        }
+      ]
+    },
+    {
+      "html": "<strong>Monkeypatching <a data-link-type=\"biblio\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#biblio-html\">[HTML]</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#hostensurecancompilestrings(callerrealm,-calleerealm)\" id=\"ref-for-hostensurecancompilestrings(callerrealm,-calleerealm)②\">HostEnsureCanCompileStrings()</a></strong>:",
+      "rationale": "perform",
+      "steps": [
+        {
+          "html": "<p>Perform ? <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#can-compile-strings\" id=\"ref-for-can-compile-strings\">EnsureCSPDoesNotBlockStringCompilation</a>(<var>callerRealm</var>, <var>calleeRealm</var>). <a data-link-type=\"biblio\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#biblio-csp\">[CSP]</a></p>"
+        },
+        {
+          "html": "<p>Perform ? <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-ensurescriptingpolicydoesnotblockscriptexecution-callerrealm-calleerealm-source\" id=\"ref-for-abstract-opdef-ensurescriptingpolicydoesnotblockscriptexecution-callerrealm-calleerealm-source\">EnsureScriptingPolicyDoesNotBlockStringCompilation</a>(<var>callerRealm</var>, <var>calleeRealm</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "block base element",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-determine-whether-a-base-element-should-be-blocked-by-scripting-policy",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"block base element\" data-lt=\"determine whether a base element should be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-a-base-element-should-be-blocked-by-scripting-policy\">determine whether a base element should be\n    blocked by Scripting Policy</dfn>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①\">Element</a></code> (<var>el</var>) and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a> (<var>url</var>), execute\n    the following algorithm. It will return \"<code>Blocked</code>\" or \"<code>Allowed</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>, return \"<code>Allowed</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>enforced</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑤\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#document-scripting-policy\" id=\"ref-for-document-scripting-policy⑧\">scripting policy</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-enforced\" id=\"ref-for-scripting-policy-pair-enforced④\">enforced</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>report-only</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#document-scripting-policy\" id=\"ref-for-document-scripting-policy⑨\">scripting policy</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-report-only\" id=\"ref-for-scripting-policy-pair-report-only④\">report-only</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"block base element\" data-lt=\"determine whether a base element should be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-a-base-element-should-be-blocked-by-scripting-policy\">determine whether a base element should be\n    blocked by Scripting Policy</dfn>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①\">Element</a></code> (<var>el</var>) and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a> (<var>url</var>), execute\n    the following algorithm. It will return \"<code>Blocked</code>\" or \"<code>Allowed</code>\".",
+          "rationale": "report",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-report-a-scripting-policy-violation\" id=\"ref-for-abstract-opdef-report-a-scripting-policy-violation⑥\">Report</a> a Scripting Policy violation, using <var>report-only</var>, <var>handler</var>,\nand <var>el</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"block base element\" data-lt=\"determine whether a base element should be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-a-base-element-should-be-blocked-by-scripting-policy\">determine whether a base element should be\n    blocked by Scripting Policy</dfn>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①\">Element</a></code> (<var>el</var>) and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a> (<var>url</var>), execute\n    the following algorithm. It will return \"<code>Blocked</code>\" or \"<code>Allowed</code>\".",
+          "rationale": "report",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-report-a-scripting-policy-violation\" id=\"ref-for-abstract-opdef-report-a-scripting-policy-violation⑦\">Report</a> a Scripting Policy violation, using <var>enforced</var>, <var>handler</var>,\nand <var>el</var>.</p>"
+            },
+            {
+              "html": "<p>Return \"<code>Blocked</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Allowed</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "Insert the algorithm above into the current step 3, as follows:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>\n       Set element’s frozen base URL to <var>document</var>’s <code>fallback base URL</code>, if <var>urlRecord</var> is failure or \n       <del>running Is base allowed for Document? on\n  the resulting URL record and document returns \"Blocked\"</del>\n       <ins>either <code>Is base allowed by Content Security Policy?</code> or <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-determine-whether-a-base-element-should-be-blocked-by-scripting-policy\" id=\"ref-for-abstract-opdef-determine-whether-a-base-element-should-be-blocked-by-scripting-policy\">Is base allowed by Scripting Policy?</a> return \"<code>Blocked</code>\" when executed upon the <code>resulting URL record</code> and <var>document</var>,</ins>\n        and to urlRecord otherwise.\n      </p>"
+        }
+      ]
+    },
+    {
+      "name": "block plugin element",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-determine-whether-a-plugin-element-should-be-blocked-by-scripting-policy",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"block plugin element\" data-lt=\"determine whether a plugin element should be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-a-plugin-element-should-be-blocked-by-scripting-policy\">determine whether a plugin element should be\n    blocked by Scripting Policy</dfn>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element②\">Element</a></code> (<var>el</var>), execute the following algorithm.\n    It will return \"<code>Blocked</code>\" or \"<code>Allowed</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>enforced</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑦\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#document-scripting-policy\" id=\"ref-for-document-scripting-policy①⓪\">scripting policy</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-enforced\" id=\"ref-for-scripting-policy-pair-enforced⑤\">enforced</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>report-only</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑧\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#document-scripting-policy\" id=\"ref-for-document-scripting-policy①①\">scripting policy</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy-pair-report-only\" id=\"ref-for-scripting-policy-pair-report-only⑤\">report-only</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"block plugin element\" data-lt=\"determine whether a plugin element should be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-a-plugin-element-should-be-blocked-by-scripting-policy\">determine whether a plugin element should be\n    blocked by Scripting Policy</dfn>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element②\">Element</a></code> (<var>el</var>), execute the following algorithm.\n    It will return \"<code>Blocked</code>\" or \"<code>Allowed</code>\".",
+          "rationale": "report",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-report-a-scripting-policy-violation\" id=\"ref-for-abstract-opdef-report-a-scripting-policy-violation⑧\">Report</a> a Scripting Policy violation, using <var>report-only</var>, <var>handler</var>,\nand <var>el</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"block plugin element\" data-lt=\"determine whether a plugin element should be blocked by Scripting Policy\" id=\"abstract-opdef-determine-whether-a-plugin-element-should-be-blocked-by-scripting-policy\">determine whether a plugin element should be\n    blocked by Scripting Policy</dfn>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element②\">Element</a></code> (<var>el</var>), execute the following algorithm.\n    It will return \"<code>Blocked</code>\" or \"<code>Allowed</code>\".",
+          "rationale": "report",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-report-a-scripting-policy-violation\" id=\"ref-for-abstract-opdef-report-a-scripting-policy-violation⑨\">Report</a> a Scripting Policy violation, using <var>enforced</var>, <var>handler</var>,\nand <var>el</var>.</p>"
+            },
+            {
+              "html": "<p>Return \"<code>Blocked</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Allowed</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "Insert the algorithm above into the current step 2, as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>\n       If the element has an ancestor media element, or has an ancestor object element that is not\n  showing its fallback content, or if the element is not in a document whose browsing context\n  is non-null, or if the element’s node document is not fully active, or if the element is\n  still in the stack of open elements of an HTML parser or XML parser, or if the element is\n  not being rendered, or if the Should element be blocked a priori by Content Security Policy?\n  algorithm returns \"Blocked\" when executed on the element, \n       <ins>or if the <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-determine-whether-a-plugin-element-should-be-blocked-by-scripting-policy\" id=\"ref-for-abstract-opdef-determine-whether-a-plugin-element-should-be-blocked-by-scripting-policy\">Should a plugin element be blocked by Scripting Policy?</a> algorithm\n  returns \"<code>Blocked</code>\" when executed on the element,</ins>\n        then jump to the step below labeled\n  fallback.\n      </p>"
+        }
+      ]
+    },
+    {
+      "name": "report",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html#abstract-opdef-report-a-scripting-policy-violation",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"send report\" id=\"abstract-opdef-report-a-scripting-policy-violation\">report a Scripting Policy violation</dfn>, given\n    a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/csp-next/scripting-policy.html#scripting-policy\" id=\"ref-for-scripting-policy①⑦\">Scripting Policy</a> (<var>policy</var>), string (<var>source</var>), and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object②\">global object</a> (<var>global</var>):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": ""
+        }
+      ]
+    }
+  ]
+}

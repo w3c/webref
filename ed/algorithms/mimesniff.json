@@ -1,0 +1,1104 @@
+{
+  "spec": {
+    "title": "MIME Sniffing Standard",
+    "url": "https://mimesniff.spec.whatwg.org/"
+  },
+  "algorithms": [
+    {
+      "name": "minimize a supported MIME type",
+      "href": "https://mimesniff.spec.whatwg.org/#minimize-a-supported-mime-type",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"minimize-a-supported-mime-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">minimize a supported MIME type</dfn> given a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type⑧\">MIME type</a> <var>mimeType</var>,\nrun these steps. They return an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string③\">ASCII string</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>mimeType</var> is a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#javascript-mime-type\" id=\"ref-for-javascript-mime-type\">JavaScript MIME type</a>, then return\n \"<code>text/javascript</code>\". </p>"
+        },
+        {
+          "html": "<p>If <var>mimeType</var> is a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#json-mime-type\" id=\"ref-for-json-mime-type\">JSON MIME type</a>, then return\n \"<code>application/json</code>\". </p>"
+        },
+        {
+          "html": "<p>If <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence\">essence</a> is \"<code>image/svg+xml</code>\", then\n  return \"<code>image/svg+xml</code>\". </p>"
+        },
+        {
+          "html": "<p>If <var>mimeType</var> is an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#xml-mime-type\" id=\"ref-for-xml-mime-type①\">XML MIME type</a>, then return\n \"<code>application/xml</code>\". </p>"
+        },
+        {
+          "html": "<p>If <var>mimeType</var> is <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supported-by-the-user-agent\" id=\"ref-for-supported-by-the-user-agent\">supported by the user agent</a>, then return <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence①\">essence</a>. </p>"
+        },
+        {
+          "html": "<p>Return the empty string. </p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a MIME type",
+      "href": "https://mimesniff.spec.whatwg.org/#parse-a-mime-type",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-mime-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a MIME type</dfn>, given a string <var>input</var>, run these steps:",
+      "rationale": "remove",
+      "steps": [
+        {
+          "html": "<p>Remove any leading and trailing <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-whitespace\" id=\"ref-for-http-whitespace\">HTTP whitespace</a> from <var>input</var>. </p>"
+        },
+        {
+          "html": "<p>Let <var>position</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-position-variable\" id=\"ref-for-string-position-variable\">position variable</a> for <var>input</var>,\n initially pointing at the start of <var>input</var>. </p>"
+        },
+        {
+          "html": "<p>Let <var>type</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points\">collecting a sequence of code points</a> that are\n not U+002F (/) from <var>input</var>, given <var>position</var>. </p>"
+        },
+        {
+          "html": "<p>If <var>type</var> is the empty string or does not solely contain <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#http-token-code-point\" id=\"ref-for-http-token-code-point①\">HTTP token code points</a>, then return failure. </p>"
+        },
+        {
+          "html": "<p>If <var>position</var> is past the end of <var>input</var>, then return failure. </p>"
+        },
+        {
+          "html": "<p>Advance <var>position</var> by 1. (This skips past U+002F (/).) </p>"
+        },
+        {
+          "html": "<p>Let <var>subtype</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points①\">collecting a sequence of code points</a> that are\n not U+003B (;) from <var>input</var>, given <var>position</var>. </p>"
+        },
+        {
+          "html": "<p>Remove any trailing <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-whitespace\" id=\"ref-for-http-whitespace①\">HTTP whitespace</a> from <var>subtype</var>. </p>"
+        },
+        {
+          "html": "<p>If <var>subtype</var> is the empty string or does not solely contain <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#http-token-code-point\" id=\"ref-for-http-token-code-point②\">HTTP token code points</a>, then return failure. </p>"
+        },
+        {
+          "html": "<p>Let <var>mimeType</var> be a new <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type①⓪\">MIME type record</a> whose <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#type\" id=\"ref-for-type①\">type</a> is <var>type</var>, in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase\">ASCII lowercase</a>, and <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#subtype\" id=\"ref-for-subtype①\">subtype</a> is <var>subtype</var>, in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase①\">ASCII lowercase</a>. </p>"
+        },
+        {
+          "html": "While <var>position</var> is not past the end of <var>input</var>:",
+          "rationale": "advance",
+          "steps": [
+            {
+              "html": "<p>Advance <var>position</var> by 1. (This skips past U+003B (;).) </p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points②\">Collect a sequence of code points</a> that are <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-whitespace\" id=\"ref-for-http-whitespace②\">HTTP whitespace</a> from <var>input</var> given <var>position</var>. </p>"
+            },
+            {
+              "html": "<p>Let <var>parameterName</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points③\">collecting a sequence of code points</a> that are not U+003B (;) or U+003D (=) from <var>input</var>, given <var>position</var>. </p>"
+            },
+            {
+              "html": "<p>Set <var>parameterName</var> to <var>parameterName</var>, in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase②\">ASCII lowercase</a>. </p>"
+            },
+            {
+              "html": "If <var>position</var> is not past the end of <var>input</var>, then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point②\">code point</a> at <var>position</var> within <var>input</var> is U+003B (;),\n     then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>. </p>"
+                },
+                {
+                  "html": "<p>Advance <var>position</var> by 1. (This skips past U+003D (=).) </p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>position</var> is past the end of <var>input</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>. </p>"
+            },
+            {
+              "html": "<p>Let <var>parameterValue</var> be null. </p>"
+            },
+            {
+              "html": "If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point③\">code point</a> at <var>position</var> within <var>input</var> is U+0022 (\"),\n    then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>parameterValue</var> to the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#collect-an-http-quoted-string\" id=\"ref-for-collect-an-http-quoted-string\">collecting an HTTP quoted string</a> from <var>input</var>, given <var>position</var> and true. </p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points④\">Collect a sequence of code points</a> that are not U+003B (;) from <var>input</var>,\n      given <var>position</var>. </p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>parameterValue</var> to the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points⑤\">collecting a sequence of code points</a> that are not U+003B (;) from <var>input</var>,\n     given <var>position</var>. </p>"
+                },
+                {
+                  "html": "<p>Remove any trailing <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-whitespace\" id=\"ref-for-http-whitespace④\">HTTP whitespace</a> from <var>parameterValue</var>. </p>"
+                },
+                {
+                  "html": "<p>If <var>parameterValue</var> is the empty string, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>. </p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If all of the following are true </p>\n       <ul class=\"brief\">\n        <li><var>parameterName</var> is not the empty string \n        </li><li><var>parameterName</var> solely contains <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#http-token-code-point\" id=\"ref-for-http-token-code-point③\">HTTP token code points</a> \n        </li><li><var>parameterValue</var> solely contains <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#http-quoted-string-token-code-point\" id=\"ref-for-http-quoted-string-token-code-point①\">HTTP quoted-string token code points</a> \n        </li><li><var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parameters\" id=\"ref-for-parameters①\">parameters</a>[<var>parameterName</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">does not exist</a> \n       </li></ul>\n       <p>then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a> <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parameters\" id=\"ref-for-parameters②\">parameters</a>[<var>parameterName</var>] to <var>parameterValue</var>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>mimeType</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a MIME type from bytes",
+      "href": "https://mimesniff.spec.whatwg.org/#parse-a-mime-type-from-bytes",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-mime-type-from-bytes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a MIME type from bytes</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> <var>input</var>,\nrun these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>string</var> be <var>input</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-decode\" id=\"ref-for-isomorphic-decode\">isomorphic decoded</a>. </p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parse-a-mime-type\" id=\"ref-for-parse-a-mime-type①\">parse a MIME type</a> with <var>string</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a MIME type",
+      "href": "https://mimesniff.spec.whatwg.org/#serialize-a-mime-type",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-mime-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a MIME type</dfn>, given a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type①①\">MIME type</a> <var>mimeType</var>, run\nthese steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>serialization</var> be the concatenation of <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#type\" id=\"ref-for-type②\">type</a>, U+002F (/), and <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#subtype\" id=\"ref-for-subtype②\">subtype</a>. </p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>name</var> → <var>value</var> of <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parameters\" id=\"ref-for-parameters③\">parameters</a>:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p>Append U+003B (;) to <var>serialization</var>. </p>"
+            },
+            {
+              "html": "<p>Append <var>name</var> to <var>serialization</var>. </p>"
+            },
+            {
+              "html": "<p>Append U+003D (=) to <var>serialization</var>. </p>"
+            },
+            {
+              "html": "If <var>value</var> does not solely contain <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#http-token-code-point\" id=\"ref-for-http-token-code-point④\">HTTP token code points</a> or <var>value</var> is the empty string, then:",
+              "rationale": "prepend",
+              "steps": [
+                {
+                  "html": "<p>Precede each occurrence of U+0022 (\") or U+005C (\\) in <var>value</var> with U+005C (\\). </p>"
+                },
+                {
+                  "html": "<p>Prepend U+0022 (\") to <var>value</var>. </p>"
+                },
+                {
+                  "html": "<p>Append U+0022 (\") to <var>value</var>. </p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Append <var>value</var> to <var>serialization</var>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>serialization</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a MIME type to bytes",
+      "href": "https://mimesniff.spec.whatwg.org/#serialize-a-mime-type-to-bytes",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-mime-type-to-bytes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a MIME type to bytes</dfn>, given a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type①②\">MIME type</a> <var>mimeType</var>, run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>stringSerialization</var> be the result of <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#serialize-a-mime-type\" id=\"ref-for-serialize-a-mime-type\">serialize a MIME type</a> with <var>mimeType</var>. </p>"
+        },
+        {
+          "html": "<p>Return <var>stringSerialization</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode\">isomorphic encoded</a>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "supplied MIME type detection algorithm",
+      "href": "https://mimesniff.spec.whatwg.org/#supplied-mime-type-detection-algorithm",
+      "html": "To determine the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type①\">supplied MIME type</a> of a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource⑧\">resource</a>,\n user agents must use the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"supplied MIME type detection algorithm\" data-noexport=\"\" id=\"supplied-mime-type-detection-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">supplied MIME type detection\n algorithm</dfn>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>supplied-type</var> be null."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource⑨\">resource</a> is retrieved via HTTP, execute the following\n   steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If one or more <code>Content-Type</code> headers are associated with the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource①⓪\">resource</a>, execute the following steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var>supplied-type</var> to the value of the last <code>Content-Type</code> header associated with the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource①①\">resource</a>."
+                },
+                {
+                  "html": "Set the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#check-for-apache-bug-flag\" id=\"ref-for-check-for-apache-bug-flag\">check-for-apache-bug flag</a> if <var>supplied-type</var> is <strong>exactly</strong> equal to one of\n       the values in the following table: \n         <table>\n          <thead>\n           <tr>\n            <th>Bytes in Hexadecimal \n            </th><th>Bytes in ASCII \n          </th></tr></thead><tbody>\n           <tr>\n            <td> 74 65 78 74 2F 70 6C 61 69 6E \n            </td><td> <code>text/plain</code> \n           </td></tr><tr>\n            <td> 74 65 78 74 2F 70 6C 61 69 6E<br> 3B 20 63 68 61 72 73 65 74 3D<br> 49 53 4F 2D 38 38 35 39 2D 31 \n            </td><td> <code>text/plain; charset=ISO-8859-1</code> \n           </td></tr><tr>\n            <td> 74 65 78 74 2F 70 6C 61 69 6E<br> 3B 20 63 68 61 72 73 65 74 3D<br> 69 73 6F 2D 38 38 35 39 2D 31 \n            </td><td> <code>text/plain; charset=iso-8859-1</code> \n           </td></tr><tr>\n            <td> 74 65 78 74 2F 70 6C 61 69 6E<br> 3B 20 63 68 61 72 73 65 74 3D<br> 55 54 46 2D 38 \n            </td><td> <code>text/plain; charset=UTF-8</code> \n         </td></tr></tbody></table>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource①③\">resource</a> is retrieved directly from the file system,\n   set <var>supplied-type</var> to the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type②⑥\">MIME type</a> provided by the\n   file system."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource①④\">resource</a> is retrieved via another protocol (such as\n   FTP), set <var>supplied-type</var> to the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type②⑦\">MIME type</a> as\n   determined by that protocol, if any. \n     <p><a data-link-type=\"biblio\" href=\"https://mimesniff.spec.whatwg.org/#biblio-ftp\" title=\"File Transfer Protocol\">[FTP]</a></p>"
+        },
+        {
+          "html": "If <var>supplied-type</var> is not a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type②⑧\">MIME type</a>, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type③\">supplied MIME type</a> is undefined. \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type④\">supplied MIME type</a> is <var>supplied-type</var>."
+        }
+      ]
+    },
+    {
+      "name": "read the resource header",
+      "href": "https://mimesniff.spec.whatwg.org/#read-the-resource-header",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-the-resource-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read the resource header</dfn>, perform the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>buffer</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②\">byte sequence</a>."
+        },
+        {
+          "html": "Read <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑦\">bytes</a> of the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource①⑥\">resource</a> into <var>buffer</var> until one of the following conditions is met: \n     <ul>\n      <li> the end of the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource①⑦\">resource</a> is reached. \n      </li><li> the number of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑧\">bytes</a> in <var>buffer</var> is\n     greater than or equal to 1445. \n      </li><li> a reasonable amount of time has elapsed, as determined by the user\n     agent. \n     </li></ul>\n     \n     <p>However, certain factors (such as a slow connection) may prevent the\n    user agent from reading 1445 <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte①⓪\">bytes</a> in a\n    reasonable amount of time.</p>"
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header\">resource header</a> is <var>buffer</var>."
+        }
+      ]
+    },
+    {
+      "name": "pattern matching algorithm",
+      "href": "https://mimesniff.spec.whatwg.org/#pattern-matching-algorithm",
+      "html": "To determine whether a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑤\">byte sequence</a> matches a particular <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#byte-pattern\" id=\"ref-for-byte-pattern①\">byte pattern</a>, use the\nfollowing <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pattern-matching-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pattern matching algorithm</dfn>. It is given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑥\">byte sequence</a> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#byte-pattern\" id=\"ref-for-byte-pattern②\">byte pattern</a> <var>pattern</var>, a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#pattern-mask\" id=\"ref-for-pattern-mask①\">pattern mask</a> <var>mask</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">set</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte①⑤\">bytes</a> to be ignored <var>ignored</var>, and returns true or false.",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p>Assert: <var>pattern</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length\">length</a> is equal to <var>mask</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length①\">length</a>. </p>"
+        },
+        {
+          "html": "<p>If <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length②\">length</a> is less than <var>pattern</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length③\">length</a>, return false. </p>"
+        },
+        {
+          "html": "<p>Let <var>s</var> be 0. </p>"
+        },
+        {
+          "html": "While <var>s</var> &lt; <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length④\">length</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>ignored</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>input</var>[<var>s</var>], <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break①\">break</a>. </p>"
+            },
+            {
+              "html": "<p>Set <var>s</var> to <var>s</var> + 1. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>p</var> be 0. </p>"
+        },
+        {
+          "html": "While <var>p</var> &lt; <var>pattern</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length⑤\">length</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>maskedData</var> be the result of applying the bitwise AND operator to <var>input</var>[<var>s</var>] and <var>mask</var>[<var>p</var>]. </p>"
+            },
+            {
+              "html": "<p>If <var>maskedData</var> is not equal to <var>pattern</var>[<var>p</var>], return false. </p>"
+            },
+            {
+              "html": "<p>Set <var>s</var> to <var>s</var> + 1. </p>"
+            },
+            {
+              "html": "<p>Set <var>p</var> to <var>p</var> + 1. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return true. </p>"
+        }
+      ]
+    },
+    {
+      "name": "image type pattern matching algorithm",
+      "href": "https://mimesniff.spec.whatwg.org/#image-type-pattern-matching-algorithm",
+      "html": "To determine which <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#image-mime-type\" id=\"ref-for-image-mime-type\">image MIME type</a> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#byte-pattern\" id=\"ref-for-byte-pattern③\">byte pattern</a> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑦\">byte sequence</a> <var>input</var> matches, if any, use the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"image-type-pattern-matching-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">image type pattern matching algorithm</dfn>:",
+      "rationale": "execute",
+      "steps": [
+        {
+          "html": "Execute the following steps for each row <var>row</var> in the following table:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>patternMatched</var> be the result of the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#pattern-matching-algorithm\" id=\"ref-for-pattern-matching-algorithm②\">pattern matching algorithm</a> given <var>input</var>, the value in the first column of <var>row</var>, the value in the second\n    column of <var>row</var>, and the value in the third column of <var>row</var>. </p>"
+            },
+            {
+              "html": "<p>If <var>patternMatched</var> is true, return the value in the fourth column of <var>row</var>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return undefined. </p>"
+        }
+      ]
+    },
+    {
+      "name": "audio or video type pattern matching algorithm",
+      "href": "https://mimesniff.spec.whatwg.org/#audio-or-video-type-pattern-matching-algorithm",
+      "html": "To determine which <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#audio-or-video-mime-type\" id=\"ref-for-audio-or-video-mime-type\">audio or video MIME type</a> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#byte-pattern\" id=\"ref-for-byte-pattern⑤\">byte pattern</a> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑧\">byte sequence</a> <var>input</var> matches, if any, use the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"audio or video type pattern matching algorithm\" id=\"audio-or-video-type-pattern-matching-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">audio or video type pattern matching\nalgorithm</dfn>:",
+      "rationale": "execute",
+      "steps": [
+        {
+          "html": "Execute the following steps for each row <var>row</var> in the following table:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>patternMatched</var> be the result of the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#pattern-matching-algorithm\" id=\"ref-for-pattern-matching-algorithm③\">pattern matching algorithm</a> given <var>input</var>, the value in the first column of <var>row</var>, the value in the second\n    column of <var>row</var>, and the value in the third column of <var>row</var>. </p>"
+            },
+            {
+              "html": "<p>If <var>patternMatched</var> is true, return the value in the fourth column of <var>row</var>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>input</var> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#matches-the-signature-for-mp4\" id=\"ref-for-matches-the-signature-for-mp4\">matches the signature for MP4</a>, return \"<code>video/mp4</code>\". </p>"
+        },
+        {
+          "html": "<p>If <var>input</var> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#matches-the-signature-for-webm\" id=\"ref-for-matches-the-signature-for-webm\">matches the signature for WebM</a>, return\n  \"<code>video/webm</code>\". </p>"
+        },
+        {
+          "html": "<p>If <var>input</var> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#matches-the-signature-for-mp3-without-id3\" id=\"ref-for-matches-the-signature-for-mp3-without-id3\">matches the signature for MP3 without ID3</a>, return\n  \"<code>audio/mpeg</code>\". </p>"
+        },
+        {
+          "html": "<p>Return undefined. </p>"
+        }
+      ]
+    },
+    {
+      "name": "matches the signature for MP4",
+      "href": "https://mimesniff.spec.whatwg.org/#matches-the-signature-for-mp4",
+      "html": "To determine whether a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑨\">byte sequence</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"matches the signature for MP4\" data-noexport=\"\" id=\"matches-the-signature-for-mp4\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches the signature\n for MP4</dfn>, use the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>sequence</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⓪\">byte sequence</a> to be matched,\n   where <var>sequence</var>[<var>s</var>] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte②⑤\">byte</a> <var>s</var> in <var>sequence</var> and <var>sequence</var>[0] is the first <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte②⑥\">byte</a> in <var>sequence</var>."
+        },
+        {
+          "html": "Let <var>length</var> be the number of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte②⑦\">bytes</a> in <var>sequence</var>."
+        },
+        {
+          "html": "If <var>length</var> is less than 12, return false."
+        },
+        {
+          "html": "Let <var>box-size</var> be the four <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte②⑧\">bytes</a> from <var>sequence</var>[0] to <var>sequence</var>[3], interpreted as a 32-bit\n   unsigned big-endian integer."
+        },
+        {
+          "html": "If <var>length</var> is less than <var>box-size</var> or if <var>box-size</var> modulo 4 is not equal to 0, return false."
+        },
+        {
+          "html": "If the four <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte②⑨\">bytes</a> from <var>sequence</var>[4] to <var>sequence</var>[7] are not equal to 0x66 0x74 0x79 0x70\n   (\"<code>ftyp</code>\"), return false."
+        },
+        {
+          "html": "If the three <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte③⓪\">bytes</a> from <var>sequence</var>[8] to <var>sequence</var>[10] are equal to 0x6D 0x70 0x34\n   (\"<code>mp4</code>\"), return true."
+        },
+        {
+          "html": "Let <var>bytes-read</var> be 16."
+        },
+        {
+          "html": "While <var>bytes-read</var> is less than <var>box-size</var>, continuously\n   loop through these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the three <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte③②\">bytes</a> from <var>sequence</var>[<var>bytes-read</var>] to <var>sequence</var>[<var>bytes-read</var> + 2] are equal to 0x6D 0x70\n     0x34 (\"<code>mp4</code>\"), return true."
+            },
+            {
+              "html": "Increment <var>bytes-read</var> by 4."
+            }
+          ]
+        },
+        {
+          "html": "Return false."
+        }
+      ]
+    },
+    {
+      "name": "matches the signature for WebM",
+      "href": "https://mimesniff.spec.whatwg.org/#matches-the-signature-for-webm",
+      "html": "To determine whether a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①①\">byte sequence</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"matches the signature for WebM\" data-noexport=\"\" id=\"matches-the-signature-for-webm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches the signature\n for WebM</dfn>, use the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>sequence</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①②\">byte sequence</a> to be matched,\n   where <var>sequence</var>[<var>s</var>] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte③③\">byte</a> <var>s</var> in <var>sequence</var> and <var>sequence</var>[0] is the first <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte③④\">byte</a> in <var>sequence</var>."
+        },
+        {
+          "html": "Let <var>length</var> be the number of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte③⑤\">bytes</a> in <var>sequence</var>."
+        },
+        {
+          "html": "If <var>length</var> is less than 4, return false."
+        },
+        {
+          "html": "If the four <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte③⑥\">bytes</a> from <var>sequence</var>[0] to <var>sequence</var>[3], are not equal to 0x1A\n   0x45 0xDF 0xA3, return false."
+        },
+        {
+          "html": "Let <var>iter</var> be 4."
+        },
+        {
+          "html": "While <var>iter</var> is less than <var>length</var> and <var>iter</var> is\n  less than 38, continuously loop through these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the two bytes from <var>sequence</var>[<var>iter</var>] to <var>sequence</var>[<var>iter</var> + 1] are equal to 0x42 0x82,",
+              "rationale": "increment",
+              "steps": [
+                {
+                  "html": "Increment <var>iter</var> by 2."
+                },
+                {
+                  "html": "If <var>iter</var> is greater or equal than <var>length</var>, abort\n      these steps."
+                },
+                {
+                  "html": "Let <var>number size</var> be the result\n      of <a href=\"https://mimesniff.spec.whatwg.org/#parse-a-vint\" id=\"ref-for-parse-a-vint\">parsing a <code>vint</code></a> starting at <var>sequence</var>[<var>iter</var>]."
+                },
+                {
+                  "html": "Increment <var>iter</var> by <var>number size</var>."
+                },
+                {
+                  "html": "If <var>iter</var> is greater than or equal to <var>length</var> - 4, abort these\n      steps."
+                },
+                {
+                  "html": "Let <var>matched</var> be the result of <a href=\"https://mimesniff.spec.whatwg.org/#matching-a-padded-sequence\" id=\"ref-for-matching-a-padded-sequence\">matching a padded\n        sequence</a> 0x77 0x65 0x62 0x6D\n      (\"<code>webm</code>\") on <var>sequence</var> at offset <var>iter</var>."
+                },
+                {
+                  "html": "If <var>matched</var> is true, abort these steps and return true."
+                }
+              ]
+            },
+            {
+              "html": "Increment <var>iter</var> by 1."
+            }
+          ]
+        },
+        {
+          "html": "Return false."
+        }
+      ]
+    },
+    {
+      "name": "parse a vint",
+      "href": "https://mimesniff.spec.whatwg.org/#parse-a-vint",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-vint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a <code>vint</code></dfn> on a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①③\">byte sequence</a> <var>sequence</var> of size <var>length</var>, starting at index <var>iter</var> use the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>mask</var> be 128."
+        },
+        {
+          "html": "Let <var>max vint length</var> be 8."
+        },
+        {
+          "html": "Let <var>number size</var> be 1."
+        },
+        {
+          "html": "While <var>number size</var> is less than <var>max vint length</var>, and less than <var>length</var>, continuously loop through these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <var>sequence</var>[<var>index</var>] &amp; <var>mask</var> is\n   not zero, abort these steps."
+            },
+            {
+              "html": "Let <var>mask</var> be the value of <var>mask</var> &gt;&gt; 1."
+            },
+            {
+              "html": "Increment <var>number size</var> by one."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>index</var> be 0."
+        },
+        {
+          "html": "Let <var>parsed number</var> be <var>sequence</var>[<var>index</var>] &amp; ~<var>mask</var>."
+        },
+        {
+          "html": "Increment <var>index</var> by one."
+        },
+        {
+          "html": "Let <var>bytes remaining</var> be the value of <var>number size</var> - 1."
+        },
+        {
+          "html": "While <var>bytes remaining</var> is not zero, execute there steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>parsed number</var> be <var>parsed number</var> &lt;&lt; 8."
+            },
+            {
+              "html": "Let <var>parsed number</var> be <var>parsed number</var> | <var>sequence</var>[<var>index</var>]."
+            },
+            {
+              "html": "Increment <var>index</var> by one."
+            },
+            {
+              "html": "If <var>index</var> is greater or equal than <var>length</var>, abort these steps."
+            },
+            {
+              "html": "Decrement <var>bytes remaining</var> by one."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>parsed number</var> and <var>number size</var>"
+        }
+      ]
+    },
+    {
+      "name": "matches the signature for MP3 without ID3",
+      "href": "https://mimesniff.spec.whatwg.org/#matches-the-signature-for-mp3-without-id3",
+      "html": "To determine whether a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①④\">byte sequence</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"matches the signature for MP3 without ID3\" data-noexport=\"\" id=\"matches-the-signature-for-mp3-without-id3\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches the signature\nfor MP3 without ID3</dfn>, use the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>sequence</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑤\">byte sequence</a> to be matched,\n  where <var>sequence</var>[<var>s</var>] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte③⑦\">byte</a> <var>s</var> in <var>sequence</var> and <var>sequence</var>[0] is the first <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte③⑧\">byte</a> in <var>sequence</var>."
+        },
+        {
+          "html": "Let <var>length</var> be the number of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte③⑨\">bytes</a> in <var>sequence</var>."
+        },
+        {
+          "html": "Initialize s to 0."
+        },
+        {
+          "html": "If the result of the operation <a href=\"https://mimesniff.spec.whatwg.org/#match-an-mp3-header\" id=\"ref-for-match-an-mp3-header\">match mp3\n  header</a> is false, return false."
+        },
+        {
+          "html": "<a href=\"https://mimesniff.spec.whatwg.org/#parse-an-mp3-frame\" id=\"ref-for-parse-an-mp3-frame\">Parse an mp3 frame</a> on <var>sequence</var> at offset <var>s</var>"
+        },
+        {
+          "html": "Let <var>skipped-bytes</var> the return value of the execution of <a href=\"https://mimesniff.spec.whatwg.org/#compute-an-mp3-frame-size\" id=\"ref-for-compute-an-mp3-frame-size\">mp3 framesize computation</a>"
+        },
+        {
+          "html": "If <var>skipped-bytes</var> is less than 4, or <var>skipped-bytes</var> is\n  greater than <var>s</var> - <var>length</var>, return false."
+        },
+        {
+          "html": "Increment s by <var>skipped-bytes</var>."
+        },
+        {
+          "html": "If the result of the operation <a href=\"https://mimesniff.spec.whatwg.org/#match-an-mp3-header\" id=\"ref-for-match-an-mp3-header①\">match mp3\n  header</a> operation is false, return false, else, return true."
+        }
+      ]
+    },
+    {
+      "name": "match an mp3 header",
+      "href": "https://mimesniff.spec.whatwg.org/#match-an-mp3-header",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"match-an-mp3-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">match an mp3 header</dfn>, using a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑥\">byte sequence</a> <var>sequence</var> of length <var>length</var> at offset <var>s</var> execute these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>length</var> is less than 4, return false."
+        },
+        {
+          "html": "If <var>sequence</var>[<var>s</var>] is not equal to 0xff and <var>sequence</var>[<var>s</var> + 1] &amp; 0xe0 is not equal to 0xe0, return\n  false."
+        },
+        {
+          "html": "Let <var>layer</var> be the result of <var>sequence</var>[<var>s</var> +\n  1] &amp; 0x06 &gt;&gt; 1."
+        },
+        {
+          "html": "If <var>layer</var> is 0, return false."
+        },
+        {
+          "html": "Let <var>bit-rate</var> be <var>sequence</var>[<var>s</var> + 2] &amp;\n  0xf0 &gt;&gt; 4."
+        },
+        {
+          "html": "If <var>bit-rate</var> is 15, return false."
+        },
+        {
+          "html": "Let <var>sample-rate</var> be <var>sequence</var>[<var>s</var> + 2] &amp;\n  0x0c &gt;&gt; 2."
+        },
+        {
+          "html": "If <var>sample-rate</var> is 3, return false."
+        },
+        {
+          "html": "Let <var>freq</var> be the value given by <var>sample-rate</var> in the table sample-rate."
+        },
+        {
+          "html": "Let <var>final-layer</var> be the result of 4 -\n  (<var>sequence</var>[<var>s</var> + 1])."
+        },
+        {
+          "html": "If <var>final-layer</var> &amp; 0x06 &gt;&gt; 1 is not 3, return\n  false."
+        },
+        {
+          "html": "Return true."
+        }
+      ]
+    },
+    {
+      "name": "compute an mp3 frame size",
+      "href": "https://mimesniff.spec.whatwg.org/#compute-an-mp3-frame-size",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-an-mp3-frame-size\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute an mp3 frame size</dfn>, execute these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>version</var> is 1, let <var>scale</var> be 72, else, let <var>scale</var> be 144."
+        },
+        {
+          "html": "Let <var>size</var> be <var>bitrate</var> * <var>scale</var> / <var>freq</var>."
+        },
+        {
+          "html": "If <var>pad</var> is not zero, increment <var>size</var> by 1."
+        },
+        {
+          "html": "Return <var>size</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse an mp3 frame",
+      "href": "https://mimesniff.spec.whatwg.org/#parse-an-mp3-frame",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-mp3-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an mp3 frame</dfn>, execute these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>version</var> be <var>sequence</var>[<var>s</var> + 1] &amp; 0x18 &gt;&gt; 3."
+        },
+        {
+          "html": "Let <var>bitrate-index</var> be sequence[s + 2] &amp; 0xf0 &gt;&gt; 4."
+        },
+        {
+          "html": "If the <var>version</var> &amp; 0x01 is non-zero, let <var>bitrate</var> be the value given by <var>bitrate-index</var> in the table mp2.5-rates"
+        },
+        {
+          "html": "If <var>version</var> &amp; 0x01 is zero, let <var>bitrate</var> be the value given by <var>bitrate-index</var> in the table mp3-rates"
+        },
+        {
+          "html": "Let <var>samplerate-index</var> be <var>sequence</var>[<var>s</var> + 2] &amp; 0x0c &gt;&gt; 2."
+        },
+        {
+          "html": "Let <var>samplerate</var> be the value given by <var>samplerate-index</var> in the <var>sample-rate</var> table."
+        },
+        {
+          "html": "Let <var>pad</var> be <var>sequence</var>[<var>s</var> + 2] &amp; 0x02 &gt;&gt; 1."
+        }
+      ]
+    },
+    {
+      "name": "font type pattern matching algorithm",
+      "href": "https://mimesniff.spec.whatwg.org/#font-type-pattern-matching-algorithm",
+      "html": "To determine which <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#font-mime-type\" id=\"ref-for-font-mime-type\">font MIME type</a> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#byte-pattern\" id=\"ref-for-byte-pattern⑦\">byte pattern</a> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑦\">byte sequence</a> <var>input</var> matches, if any, use the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"font-type-pattern-matching-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">font type pattern matching algorithm</dfn>:",
+      "rationale": "execute",
+      "steps": [
+        {
+          "html": "Execute the following steps for each row <var>row</var> in the following table:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>patternMatched</var> be the result of the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#pattern-matching-algorithm\" id=\"ref-for-pattern-matching-algorithm④\">pattern matching algorithm</a> given <var>input</var>, the value in the first column of <var>row</var>, the value in the second\n    column of <var>row</var>, and the value in the third column of <var>row</var>. </p>"
+            },
+            {
+              "html": "<p>If <var>patternMatched</var> is true, return the value in the fourth column of <var>row</var>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return undefined. </p>"
+        }
+      ]
+    },
+    {
+      "name": "archive type pattern matching algorithm",
+      "href": "https://mimesniff.spec.whatwg.org/#archive-type-pattern-matching-algorithm",
+      "html": "To determine which <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#archive-mime-type\" id=\"ref-for-archive-mime-type\">archive MIME type</a> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#byte-pattern\" id=\"ref-for-byte-pattern⑨\">byte pattern</a> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑧\">byte sequence</a> <var>input</var> matches, if any, use the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"archive type pattern matching algorithm\" data-noexport=\"\" id=\"archive-type-pattern-matching-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">archive type pattern matching\nalgorithm</dfn>:",
+      "rationale": "execute",
+      "steps": [
+        {
+          "html": "Execute the following steps for each row <var>row</var> in the following table:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>patternMatched</var> be the result of the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#pattern-matching-algorithm\" id=\"ref-for-pattern-matching-algorithm⑤\">pattern matching algorithm</a> given <var>input</var>, the value in the first column of <var>row</var>, the value in the second\n    column of <var>row</var>, and the value in the third column of <var>row</var>. </p>"
+            },
+            {
+              "html": "<p>If <var>patternMatched</var> is true, return the value in the fourth column of <var>row</var>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return undefined. </p>"
+        }
+      ]
+    },
+    {
+      "name": "MIME type sniffing algorithm",
+      "href": "https://mimesniff.spec.whatwg.org/#mime-type-sniffing-algorithm",
+      "html": "To determine the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type\">computed MIME type</a> of a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource①⑨\">resource</a>,\n user agents must use the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"mime-type-sniffing-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">MIME type sniffing algorithm</dfn>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type⑤\">supplied MIME type</a> is undefined or if the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type⑥\">supplied MIME type</a>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence①①\">essence</a> is\n   \"<code>unknown/unknown</code>\",\n   \"<code>application/unknown</code>\", or \"<code>*/*</code>\",\n   execute the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#rules-for-identifying-an-unknown-mime-type\" id=\"ref-for-rules-for-identifying-an-unknown-mime-type\">rules for identifying an unknown MIME type</a> with\n   the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#sniff-scriptable-flag\" id=\"ref-for-sniff-scriptable-flag\">sniff-scriptable flag</a> equal to the inverse of the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#no-sniff-flag\" id=\"ref-for-no-sniff-flag\">no-sniff flag</a> and abort these steps."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#no-sniff-flag\" id=\"ref-for-no-sniff-flag①\">no-sniff flag</a> is set, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type①\">computed MIME\n   type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type⑦\">supplied MIME type</a>. \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#check-for-apache-bug-flag\" id=\"ref-for-check-for-apache-bug-flag①\">check-for-apache-bug flag</a> is set, execute the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#rules-for-text-or-binary\" id=\"ref-for-rules-for-text-or-binary\">rules for distinguishing if a resource is text or binary</a> and\n   abort these steps."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type⑧\">supplied MIME type</a> is an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#xml-mime-type\" id=\"ref-for-xml-mime-type③\">XML MIME type</a>, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type②\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type⑨\">supplied MIME type</a>. \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type①⓪\">supplied MIME type</a>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence①②\">essence</a> is \"<code>text/html</code>\",\n   execute the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#rules-for-distinguishing-if-a-resource-is-a-feed-or-html\" id=\"ref-for-rules-for-distinguishing-if-a-resource-is-a-feed-or-html\">rules for distinguishing if a resource is a feed or HTML</a> and\n   abort these steps."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type①①\">supplied MIME type</a> is an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#image-mime-type\" id=\"ref-for-image-mime-type②\">image MIME type</a> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supported-by-the-user-agent\" id=\"ref-for-supported-by-the-user-agent①\">supported by the user agent</a>, let <var>matched-type</var> be\n   the result of executing the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#image-type-pattern-matching-algorithm\" id=\"ref-for-image-type-pattern-matching-algorithm\">image type pattern matching\n   algorithm</a> with the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header②\">resource header</a> as the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑨\">byte\n   sequence</a> to be matched."
+        },
+        {
+          "html": "If <var>matched-type</var> is not undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type③\">computed MIME\n   type</a> is <var>matched-type</var>. \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type①②\">supplied MIME type</a> is an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#audio-or-video-mime-type\" id=\"ref-for-audio-or-video-mime-type②\">audio or video MIME type</a> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supported-by-the-user-agent\" id=\"ref-for-supported-by-the-user-agent②\">supported by the user agent</a>, let <var>matched-type</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#audio-or-video-type-pattern-matching-algorithm\" id=\"ref-for-audio-or-video-type-pattern-matching-algorithm\">audio or video\n   type pattern matching algorithm</a> with the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header③\">resource\n   header</a> as the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②⓪\">byte sequence</a> to be matched."
+        },
+        {
+          "html": "If <var>matched-type</var> is not undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type④\">computed MIME\n   type</a> is <var>matched-type</var>. \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type⑤\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type①③\">supplied MIME\n   type</a>."
+        }
+      ]
+    },
+    {
+      "name": "rules for identifying an unknown MIME type",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-identifying-an-unknown-mime-type",
+      "html": "To determine the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type⑥\">computed MIME type</a> of a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource②⓪\">resource</a> <var>resource</var> with an\nunknown <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type②⑨\">MIME type</a>, execute the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"rules for identifying an unknown MIME type\" data-noexport=\"\" id=\"rules-for-identifying-an-unknown-mime-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">rules for identifying an unknown MIME\ntype</dfn>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#sniff-scriptable-flag\" id=\"ref-for-sniff-scriptable-flag③\">sniff-scriptable flag</a> is set, execute the following steps for each row <var>row</var> in the following table:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>patternMatched</var> be the result of the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#pattern-matching-algorithm\" id=\"ref-for-pattern-matching-algorithm⑥\">pattern matching algorithm</a> given <var>resource</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header④\">resource header</a>, the value in the first column of <var>row</var>, the value in the second column of <var>row</var>, and the value in the third\n    column of <var>row</var>. </p>"
+            },
+            {
+              "html": "<p>If <var>patternMatched</var> is true, return the value in the fourth column of <var>row</var>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "Execute the following steps for each row <var>row</var> in the following table:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>patternMatched</var> be the result of the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#pattern-matching-algorithm\" id=\"ref-for-pattern-matching-algorithm⑦\">pattern matching algorithm</a> given <var>resource</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header⑤\">resource header</a>, the value in the first column of <var>row</var>, the value in the second column of <var>row</var>, and the value in the third\n    column of <var>row</var>. </p>"
+            },
+            {
+              "html": "<p>If <var>patternMatched</var> is true, return the value in the fourth column of <var>row</var>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>matchedType</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#image-type-pattern-matching-algorithm\" id=\"ref-for-image-type-pattern-matching-algorithm①\">image type pattern matching algorithm</a> given <var>resource</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header⑥\">resource header</a>. </p>"
+        },
+        {
+          "html": "<p>If <var>matchedType</var> is not undefined, return <var>matchedType</var>. </p>"
+        },
+        {
+          "html": "<p>Set <var>matchedType</var> to the result of executing the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#audio-or-video-type-pattern-matching-algorithm\" id=\"ref-for-audio-or-video-type-pattern-matching-algorithm①\">audio or video type pattern matching algorithm</a> given <var>resource</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header⑦\">resource header</a>. </p>"
+        },
+        {
+          "html": "<p>If <var>matchedType</var> is not undefined, return <var>matchedType</var>. </p>"
+        },
+        {
+          "html": "<p>Set <var>matchedType</var> to the result of executing the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#archive-type-pattern-matching-algorithm\" id=\"ref-for-archive-type-pattern-matching-algorithm\">archive type pattern matching algorithm</a> given <var>resource</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header⑧\">resource header</a>. </p>"
+        },
+        {
+          "html": "<p>If <var>matchedType</var> is not undefined, return <var>matchedType</var>. </p>"
+        },
+        {
+          "html": "<p>If <var>resource</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header⑨\">resource header</a> contains no <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#binary-data-byte\" id=\"ref-for-binary-data-byte\">binary data bytes</a>,\n  return  \"<code>text/plain</code>\". </p>"
+        },
+        {
+          "html": "<p>Return \"<code>application/octet-stream</code>\". </p>"
+        }
+      ]
+    },
+    {
+      "name": "rules for distinguishing if a resource is text or binary",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-text-or-binary",
+      "html": "To determine whether a binary <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource②①\">resource</a> has been mislabeled as\n plain text, execute the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"rules for distinguishing if a resource is text or binary\" data-noexport=\"\" id=\"rules-for-text-or-binary\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">rules for\n distinguishing if a resource is text or binary</dfn>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>length</var> be the number of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte④⑥\">bytes</a> in the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header①⓪\">resource header</a>."
+        },
+        {
+          "html": "If <var>length</var> is greater than or equal to 2 and the first 2 bytes of\n  the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header①①\">resource header</a> are equal to 0xFE 0xFF (UTF-16BE BOM) or\n  0xFF 0xFE (UTF-16LE BOM), the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type①⓪\">computed MIME type</a> is\n  \"<code>text/plain</code>\". \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "If <var>length</var> is greater than or equal to 3 and the first 3 bytes of\n  the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header①②\">resource header</a> are equal to 0xEF 0xBB 0xBF (UTF-8 BOM),\n  the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type①①\">computed MIME type</a> is \"<code>text/plain</code>\". \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header①③\">resource header</a> contains no <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#binary-data-byte\" id=\"ref-for-binary-data-byte①\">binary data bytes</a>, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type①②\">computed\n  MIME type</a> is \"<code>text/plain</code>\". \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type①③\">computed MIME type</a> is\n  \"<code>application/octet-stream</code>\". \n     <p class=\"warning\"> It is critical that the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#rules-for-text-or-binary\" id=\"ref-for-rules-for-text-or-binary①\">rules for distinguishing if a resource is\n   text or binary</a> never determine the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type①④\">computed MIME type</a> to be a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#scriptable-mime-type\" id=\"ref-for-scriptable-mime-type①\">scriptable MIME type</a>, as this could allow a privilege\n   escalation attack. </p>"
+        }
+      ]
+    },
+    {
+      "name": "rules for distinguishing if a resource is a feed or HTML",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-distinguishing-if-a-resource-is-a-feed-or-html",
+      "html": "To determine whether a feed has been mislabeled as HTML, execute the\n following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"rules for distinguishing if a resource is a feed or HTML\" data-noexport=\"\" id=\"rules-for-distinguishing-if-a-resource-is-a-feed-or-html\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">rules for distinguishing if a resource is a feed or\n HTML</dfn>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>sequence</var> be the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header①④\">resource header</a>, where <var>sequence</var>[<var>s</var>] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte④⑦\">byte</a> <var>s</var> in <var>sequence</var> and <var>sequence</var>[0] is the first <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte④⑧\">byte</a> in <var>sequence</var>."
+        },
+        {
+          "html": "Let <var>length</var> be the number of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte④⑨\">bytes</a> in <var>sequence</var>."
+        },
+        {
+          "html": "Initialize <var>s</var> to 0."
+        },
+        {
+          "html": "If <var>length</var> is greater than or equal to 3 and the three <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤⓪\">bytes</a> from <var>sequence</var>[0] to <var>sequence</var>[2] are equal to 0xEF 0xBB 0xBF (UTF-8 BOM), increment <var>s</var> by 3."
+        },
+        {
+          "html": "While <var>s</var> is less than <var>length</var>, continuously loop\n   through these steps:",
+          "rationale": "abort these steps",
+          "steps": [
+            {
+              "html": "Enter loop <var>L</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>sequence</var>[<var>s</var>] is undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type①⑤\">computed\n       MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type①④\">supplied MIME type</a>. \n         <p>Abort these steps.</p>"
+                },
+                {
+                  "html": "If <var>sequence</var>[<var>s</var>] is equal to 0x3C\n       (\"<code>&lt;</code>\"), increment <var>s</var> by 1 and exit loop <var>L</var>."
+                },
+                {
+                  "html": "If <var>sequence</var>[<var>s</var>] is not a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#whitespace-byte\" id=\"ref-for-whitespace-byte①⑧\">whitespace\n       byte</a>, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type①⑥\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type①⑤\">supplied\n       MIME type</a>. \n         <p>Abort these steps.</p>"
+                },
+                {
+                  "html": "Increment <var>s</var> by 1."
+                }
+              ]
+            },
+            {
+              "html": "Enter loop <var>L</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>sequence</var>[<var>s</var>] is undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type①⑦\">computed\n       MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type①⑥\">supplied MIME type</a>. \n         <p>Abort these steps.</p>"
+                },
+                {
+                  "html": "If <var>length</var> is greater than or equal to <var>s</var> + 3 and\n       the three <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤①\">bytes</a> from <var>sequence</var>[<var>s</var>] to <var>sequence</var>[<var>s</var> + 2] are equal to 0x21 0x2D 0x2D\n       (\"<code>!--</code>\"), increment <var>s</var> by 3 and enter loop <var>M</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>sequence</var>[<var>s</var>] is undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type①⑧\">computed\n         MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type①⑦\">supplied MIME type</a>. \n           <p>Abort these steps.</p>"
+                    },
+                    {
+                      "html": "If <var>length</var> is greater than or equal to <var>s</var> + 3 and\n         the three <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤②\">bytes</a> from <var>sequence</var>[<var>s</var>] to <var>sequence</var>[<var>s</var> + 2] are equal to 0x2D 0x2D 0x3E\n         (\"<code>--&gt;</code>\"), increment <var>s</var> by 3 and exit\n         loops <var>M</var> and <var>L</var>."
+                    },
+                    {
+                      "html": "Increment <var>s</var> by 1."
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>length</var> is greater than or equal to <var>s</var> + 1 and <var>sequence</var>[<var>s</var>] is equal to 0x21\n       (\"<code>!</code>\"), increment <var>s</var> by 1 and enter loop <var>M</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>sequence</var>[<var>s</var>] is undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type①⑨\">computed\n         MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type①⑧\">supplied MIME type</a>. \n           <p>Abort these steps.</p>"
+                    },
+                    {
+                      "html": "If <var>length</var> is greater than or equal to <var>s</var> + 1 and <var>sequence</var>[<var>s</var>] is equal to 0x3E\n         (\"<code>&gt;</code>\"), increment <var>s</var> by 1 and exit loops <var>M</var> and <var>L</var>."
+                    },
+                    {
+                      "html": "Increment <var>s</var> by 1."
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>length</var> is greater than or equal to <var>s</var> + 1 and <var>sequence</var>[<var>s</var>] is equal to 0x3F\n       (\"<code>?</code>\"), increment <var>s</var> by 1 and enter loop <var>M</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>sequence</var>[<var>s</var>] is undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type②⓪\">computed\n         MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type①⑨\">supplied MIME type</a>. \n           <p>Abort these steps.</p>"
+                    },
+                    {
+                      "html": "If <var>length</var> is greater than or equal to <var>s</var> + 2 and\n         the two <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤③\">bytes</a> from <var>sequence</var>[<var>s</var>] to <var>sequence</var>[<var>s</var> + 1] are equal to 0x3F 0x3E\n         (\"<code>?&gt;</code>\"), increment <var>s</var> by 2 and exit loops <var>M</var> and <var>L</var>."
+                    },
+                    {
+                      "html": "Increment <var>s</var> by 1."
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>length</var> is greater than or equal to <var>s</var> + 3 and\n       the three <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤④\">bytes</a> from <var>sequence</var>[<var>s</var>] to <var>sequence</var>[<var>s</var> + 2] are equal to 0x72 0x73 0x73\n       (\"<code>rss</code>\"), the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type②①\">computed MIME type</a> is\n       \"<code>application/rss+xml</code>\". \n         <p>Abort these steps.</p>"
+                },
+                {
+                  "html": "If <var>length</var> is greater than or equal to <var>s</var> + 4 and\n       the four <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤⑤\">bytes</a> from <var>sequence</var>[<var>s</var>] to <var>sequence</var>[<var>s</var> + 3] are equal to 0x66 0x65 0x65 0x64\n       (\"<code>feed</code>\"), the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type②②\">computed MIME type</a> is\n       \"<code>application/atom+xml</code>\". \n         <p>Abort these steps.</p>"
+                },
+                {
+                  "html": "If <var>length</var> is greater than or equal to <var>s</var> + 7 and\n       the seven <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤⑥\">bytes</a> from <var>sequence</var>[<var>s</var>] to <var>sequence</var>[<var>s</var> + 6] are equal to 0x72 0x64 0x66 0x3A\n       0x52 0x44 0x46 (\"<code>rdf:RDF</code>\"), increment <var>s</var> by 7 and enter loop <var>M</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>sequence</var>[<var>s</var>] is undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type②③\">computed\n         MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type②⓪\">supplied MIME type</a>. \n           <p>Abort these steps.</p>"
+                    },
+                    {
+                      "html": "If <var>length</var> is greater than or equal to <var>s</var> + 24\n         and the twenty-four <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤⑦\">bytes</a> from <var>sequence</var>[<var>s</var>] to <var>sequence</var>[<var>s</var> + 23] are equal to 0x68 0x74 0x74\n         0x70 0x3A 0x2F 0x2F 0x70 0x75 0x72 0x6C 0x2E 0x6F 0x72 0x67 0x2F 0x72\n         0x73 0x73 0x2F 0x31 0x2E 0x30 0x2F\n         (\"<code>http://purl.org/rss/1.0/</code>\"), increment <var>s</var> by 24 and enter loop <var>N</var>:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "If <var>sequence</var>[<var>s</var>] is undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type②④\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type②①\">supplied MIME\n           type</a>. \n             <p>Abort these steps.</p>"
+                        },
+                        {
+                          "html": "If <var>length</var> is greater than or equal to <var>s</var> + 43\n           and the forty-three <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤⑧\">bytes</a> from <var>sequence</var>[<var>s</var>] to <var>sequence</var>[<var>s</var> + 42] are equal to 0x68 0x74 0x74\n           0x70 0x3A 0x2F 0x2F 0x77 0x77 0x77 0x2E 0x77 0x33 0x2E 0x6F 0x72\n           0x67 0x2F 0x31 0x39 0x39 0x39 0x2F 0x30 0x32 0x2F 0x32 0x32 0x2D\n           0x72 0x64 0x66 0x2D 0x73 0x79 0x6E 0x74 0x61 0x78 0x2D 0x6E 0x73\n           0x23\n           (\"<code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>\"),\n           the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type②⑤\">computed MIME type</a> is\n           \"<code>application/rss+xml</code>\". \n             <p>Abort these steps.</p>"
+                        },
+                        {
+                          "html": "Increment <var>s</var> by 1."
+                        }
+                      ]
+                    },
+                    {
+                      "html": "If <var>length</var> is greater than or equal to <var>s</var> + 24\n         and the twenty-four <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤⑨\">bytes</a> from <var>sequence</var>[<var>s</var>] to <var>sequence</var>[<var>s</var> + 23] are equal to 0x68 0x74 0x74\n         0x70 0x3A 0x2F 0x2F 0x77 0x77 0x77 0x2E 0x77 0x33 0x2E 0x6F 0x72 0x67\n         0x2F 0x31 0x39 0x39 0x39 0x2F 0x30 0x32 0x2F 0x32 0x32 0x2D 0x72 0x64\n         0x66 0x2D 0x73 0x79 0x6E 0x74 0x61 0x78 0x2D 0x6E 0x73 0x23\n         (\"<code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>\"),\n         increment <var>s</var> by 24 and enter loop <var>N</var>:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "If <var>sequence</var>[<var>s</var>] is undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type②⑥\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type②②\">supplied MIME\n           type</a>. \n             <p>Abort these steps.</p>"
+                        },
+                        {
+                          "html": "If <var>length</var> is greater than or equal to <var>s</var> + 43\n           and the forty-three <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑥⓪\">bytes</a> from <var>sequence</var>[<var>s</var>] to <var>sequence</var>[<var>s</var> + 42] are equal to 0x68 0x74 0x74\n           0x70 0x3A 0x2F 0x2F 0x70 0x75 0x72 0x6C 0x2E 0x6F 0x72 0x67 0x2F\n           0x72 0x73 0x73 0x2F 0x31 0x2E 0x30 0x2F\n           (\"<code>http://purl.org/rss/1.0/</code>\"), the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type②⑦\">computed\n           MIME type</a> is \"<code>application/rss+xml</code>\". \n             <p>Abort these steps.</p>"
+                        },
+                        {
+                          "html": "Increment <var>s</var> by 1."
+                        }
+                      ]
+                    },
+                    {
+                      "html": "Increment <var>s</var> by 1."
+                    }
+                  ]
+                },
+                {
+                  "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type②⑧\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type②③\">supplied MIME\n       type</a>. \n         <p>Abort these steps.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type②⑨\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type②④\">supplied MIME type</a>."
+        }
+      ]
+    },
+    {
+      "name": "rules for sniffing images specifically",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-sniffing-images-specifically",
+      "html": "To determine the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type③②\">computed MIME type</a> of a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource②⑥\">resource</a> with an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#image-mime-type\" id=\"ref-for-image-mime-type③\">image MIME type</a>, execute the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"rules for sniffing images specifically\" id=\"rules-for-sniffing-images-specifically\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">rules for\n sniffing images specifically</dfn>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type②⑤\">supplied MIME type</a> is an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#xml-mime-type\" id=\"ref-for-xml-mime-type④\">XML MIME type</a>, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type③③\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type②⑥\">supplied MIME type</a>. \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "Let <var>image-type-matched</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#image-type-pattern-matching-algorithm\" id=\"ref-for-image-type-pattern-matching-algorithm②\">image type pattern matching algorithm</a> with the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header①⑤\">resource\n   header</a> as the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②①\">byte sequence</a> to be matched."
+        },
+        {
+          "html": "If <var>image-type-matched</var> is not undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type③④\">computed MIME\n   type</a> is <var>image-type-matched</var>. \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type③⑤\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type②⑦\">supplied MIME\n   type</a>."
+        }
+      ]
+    },
+    {
+      "name": "rules for sniffing audio and video specifically",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-sniffing-audio-and-video-specifically",
+      "html": "To determine the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type③⑥\">computed MIME type</a> of a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource②⑦\">resource</a> with an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#audio-or-video-mime-type\" id=\"ref-for-audio-or-video-mime-type③\">audio or video MIME type</a>, execute the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"rules for sniffing audio and video specifically\" id=\"rules-for-sniffing-audio-and-video-specifically\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">rules\n for sniffing audio and video specifically</dfn>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type②⑧\">supplied MIME type</a> is an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#xml-mime-type\" id=\"ref-for-xml-mime-type⑤\">XML MIME type</a>, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type③⑦\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type②⑨\">supplied MIME type</a>. \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "Let <var>audio-or-video-type-matched</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#audio-or-video-type-pattern-matching-algorithm\" id=\"ref-for-audio-or-video-type-pattern-matching-algorithm②\">audio or video type pattern matching algorithm</a> with the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header①⑥\">resource header</a> as the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②②\">byte sequence</a> to be\n   matched."
+        },
+        {
+          "html": "If <var>audio-or-video-type-matched</var> is not undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type③⑧\">computed MIME type</a> is <var>audio-or-video-type-matched</var>. \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type③⑨\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type③⓪\">supplied MIME\n   type</a>."
+        }
+      ]
+    },
+    {
+      "name": "rules for sniffing in a plugin context",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-sniffing-in-a-plugin-context",
+      "html": "To determine the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type④⓪\">computed MIME type</a> of a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource②⑧\">resource</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">fetched</a> in a plugin context, execute\n the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"rules-for-sniffing-in-a-plugin-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">rules for sniffing in a plugin context</dfn>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type③①\">supplied MIME type</a> is undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type④①\">computed\n   MIME type</a> is \"<code>application/octet-stream</code>\"."
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type④②\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type③②\">supplied MIME type</a>."
+        }
+      ]
+    },
+    {
+      "name": "rules for sniffing in a style context",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-sniffing-in-a-style-context",
+      "html": "To determine the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type④③\">computed MIME type</a> of a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource②⑨\">resource</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch①\">fetched</a> in a style context, execute the\n following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"rules-for-sniffing-in-a-style-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">rules for sniffing in a style context</dfn>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type③③\">supplied MIME type</a> is undefined, …."
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type④④\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type③④\">supplied MIME type</a>."
+        }
+      ]
+    },
+    {
+      "name": "rules for sniffing in a script context",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-sniffing-in-a-script-context",
+      "html": "To determine the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type④⑤\">computed MIME type</a> of a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource③⓪\">resource</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch②\">fetched</a> in a script context, execute\n the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"rules-for-sniffing-in-a-script-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">rules for sniffing in a script context</dfn>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type③⑤\">supplied MIME type</a> is undefined, …."
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type④⑥\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type③⑥\">supplied MIME type</a>."
+        }
+      ]
+    },
+    {
+      "name": "rules for sniffing fonts specifically",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-sniffing-fonts-specifically",
+      "html": "To determine the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type④⑦\">computed MIME type</a> of a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource\" id=\"ref-for-resource③①\">resource</a> with a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#font-mime-type\" id=\"ref-for-font-mime-type②\">font MIME type</a>, execute the following <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"rules for sniffing fonts specifically\" id=\"rules-for-sniffing-fonts-specifically\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">rules for sniffing\n fonts specifically</dfn>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type③⑦\">supplied MIME type</a> is an <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#xml-mime-type\" id=\"ref-for-xml-mime-type⑥\">XML MIME type</a>, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type④⑧\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type③⑧\">supplied MIME type</a>. \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "Let <var>font-type-matched</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#font-type-pattern-matching-algorithm\" id=\"ref-for-font-type-pattern-matching-algorithm\">font\n   type pattern matching algorithm</a> with the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#resource-header\" id=\"ref-for-resource-header①⑦\">resource\n   header</a> as the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②③\">byte sequence</a> to be matched."
+        },
+        {
+          "html": "If <var>font-type-matched</var> is not undefined, the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type④⑨\">computed MIME\n   type</a> is <var>font-type-matched</var>. \n     <p>Abort these steps.</p>"
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#computed-mime-type\" id=\"ref-for-computed-mime-type⑤⓪\">computed MIME type</a> is the <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#supplied-mime-type\" id=\"ref-for-supplied-mime-type③⑨\">supplied MIME\n   type</a>."
+        }
+      ]
+    }
+  ]
+}

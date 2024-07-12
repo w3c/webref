@@ -1,0 +1,265 @@
+{
+  "spec": {
+    "title": "Web Bluetooth Scanning",
+    "url": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html"
+  },
+  "algorithms": [
+    {
+      "name": "Bluetooth/requestLEScan(options)",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-requestlescan",
+      "html": "The <code><dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Bluetooth\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestLEScan(options)|requestLEScan()\" id=\"dom-bluetooth-requestlescan\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestLEScan(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span></code> method,\n      when invoked, MUST return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is \n        not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature\">policy-controlled feature</a> named <code>\"bluetooth\"</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> and abort these steps."
+        },
+        {
+          "html": "If <code><var>options</var>.acceptAllAdvertisements</code> is <code>true</code>,\n        and <code><var>options</var>.filters</code> is present, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a></code> and abort these steps."
+        },
+        {
+          "html": "If <code><var>options</var>.acceptAllAdvertisements</code> is <code>false</code>,\n        and <code><var>options</var>.filters</code> is either absent or empty, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①\">TypeError</a></code> and abort these steps."
+        },
+        {
+          "html": "Let <var>filters</var> be <code><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-array.prototype.map\" id=\"ref-for-sec-array.prototype.map\">Array.prototype.map</a></code>.call(<var>options</var>.filters,\n          filter=&gt;new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-bluetoothlescanfilter\" id=\"ref-for-dom-bluetoothlescanfilter-bluetoothlescanfilter\">BluetoothLEScanFilter</a></code>(filter))</code> if <code><var>options</var>.filters</code> is present, or an empty <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-frozen-array\" id=\"ref-for-idl-frozen-array\">FrozenArray</a></code> otherwise.\n        If this throws an exception, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with that exception and abort these steps."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scanning-permission\"></a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">Request permission to use</a> \n<pre class=\"highlight\"><c- p=\"\">{</c->\n  name<c- o=\"\">:</c-> <a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-permissionname-bluetooth-le-scan\" id=\"ref-for-dom-permissionname-bluetooth-le-scan\"><c- u=\"\">\"bluetooth-le-scan\"</c-></a><c- p=\"\">,</c->\n  filters<c- o=\"\">:</c-> <var>options</var><c- p=\"\">.</c->filters<c- p=\"\">,</c->\n  keepRepeatedDevices<c- o=\"\">:</c-> <var>options</var><c- p=\"\">.</c->keepRepeatedDevices<c- p=\"\">,</c->\n  acceptAllAdvertisements<c- o=\"\">:</c-> <var>options</var><c- p=\"\">.</c->acceptAllAdvertisements<c- p=\"\">,</c->\n<c- p=\"\">}</c->\n</pre>"
+        },
+        {
+          "html": "If the result is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied\">denied</a></code>\",\n        reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code> and abort these steps."
+        },
+        {
+          "html": "Let <var>scan</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan\" id=\"ref-for-bluetoothlescan②\">BluetoothLEScan</a></code> instance\n        whose fields are initialized as in the following table: \n       <div class=\"overlarge\"><table class=\"data\">\n        <thead>\n         <tr>\n          <th>Field\n          </th><th>Initial value\n        </th></tr></thead><tbody>\n         <tr>\n          <td><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-filters\" id=\"ref-for-dom-bluetoothlescan-filters\">filters</a></code>\n          </td><td><var>filters</var>\n         </td></tr><tr>\n          <td><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-keeprepeateddevices\" id=\"ref-for-dom-bluetoothlescan-keeprepeateddevices\">keepRepeatedDevices</a></code>\n          </td><td><code><var>options</var>.keepRepeatedDevices</code>\n         </td></tr><tr>\n          <td><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-acceptalladvertisements\" id=\"ref-for-dom-bluetoothlescan-acceptalladvertisements\">acceptAllAdvertisements</a></code>\n          </td><td><code><var>options</var>.acceptAllAdvertisements</code>\n         </td></tr><tr>\n          <td><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-active\" id=\"ref-for-dom-bluetoothlescan-active\">active</a></code>\n          </td><td><code>true</code>\n       </td></tr></tbody></table></div>"
+        },
+        {
+          "html": "Add <var>scan</var> to <code>navigator.bluetooth.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-activescans-slot\" id=\"ref-for-dom-bluetooth-activescans-slot\">[[activeScans]]</a></code></code>."
+        },
+        {
+          "html": "Ensure the UA is scanning for BLE advertisements\n        in a mode that will receive at least\n        all advertisements <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan-match\" id=\"ref-for-bluetoothlescan-match\">matching</a> any scan\n        in any <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-activescans-slot\" id=\"ref-for-dom-bluetooth-activescans-slot①\">[[activeScans]]</a></code> set in the whole UA."
+        },
+        {
+          "html": "The <code><dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Bluetooth\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestLEScan(options)|requestLEScan()\" id=\"dom-bluetooth-requestlescan\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestLEScan(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span></code> method,\n      when invoked, MUST return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "The UA doesn’t support scanning for advertisements",
+                  "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code>"
+                },
+                {
+                  "case": "Bluetooth is turned off",
+                  "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>"
+                },
+                {
+                  "case": "Other reasons",
+                  "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#unknownerror\" id=\"ref-for-unknownerror\">UnknownError</a></code>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>promise</var> with <var>scan</var>."
+        }
+      ]
+    },
+    {
+      "name": "BluetoothLEScanFilter/BluetoothLEScanFilter(init)",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-bluetoothlescanfilter",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"BluetoothLEScanFilter\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"BluetoothLEScanFilter(init)|constructor(init)|BluetoothLEScanFilter()|constructor()\" id=\"dom-bluetoothlescanfilter-bluetoothlescanfilter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>BluetoothLEScanFilter(<var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor, when invoked MUST perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize all nullable fields to <code>null</code>."
+        },
+        {
+          "html": "If no member of <var>init</var> is present, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a></code>."
+        },
+        {
+          "html": "Initialize <code>this.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-manufacturerdata\" id=\"ref-for-dom-bluetoothlescanfilter-manufacturerdata\">manufacturerData</a></code></code> as <code>new BluetoothManufacturerDataFilter(<var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothlescanfilterinit-manufacturerdata\" id=\"ref-for-dom-bluetoothlescanfilterinit-manufacturerdata\">manufacturerData</a></code>)</code>."
+        },
+        {
+          "html": "Initialize <code>this.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-servicedata\" id=\"ref-for-dom-bluetoothlescanfilter-servicedata\">serviceData</a></code></code> as <code>new BluetoothServiceDataFilter(<var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothlescanfilterinit-servicedata\" id=\"ref-for-dom-bluetoothlescanfilterinit-servicedata\">serviceData</a></code>)</code>."
+        },
+        {
+          "html": "Initialize <code>this.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-services\" id=\"ref-for-dom-bluetoothlescanfilter-services\">services</a></code></code> as <code><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-array.prototype.map\" id=\"ref-for-sec-array.prototype.map①\">Array.prototype.map</a></code>.call(<var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothlescanfilterinit-services\" id=\"ref-for-dom-bluetoothlescanfilterinit-services\">services</a></code>,\n            service=&gt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-getservice\" id=\"ref-for-dom-bluetoothuuid-getservice\">BluetoothUUID.getService</a></code>(service))</code> if <code><var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothlescanfilterinit-services\" id=\"ref-for-dom-bluetoothlescanfilterinit-services①\">services</a></code></code> is present,\n          or an empty <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-frozen-array\" id=\"ref-for-idl-frozen-array③\">FrozenArray</a></code> otherwise."
+        },
+        {
+          "html": "For each other present member in <var>init</var>,\n          set <code>this</code>’s attribute with a matching identifier to the value of the member."
+        },
+        {
+          "html": "If any of the above calls threw an exception,\n          propagate that exception from this constructor."
+        }
+      ]
+    },
+    {
+      "name": "BluetoothLEScan/stop()",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-stop",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"BluetoothLEScan\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-bluetoothlescan-stop\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>stop()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked,\n        MUST perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <code>this.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-active\" id=\"ref-for-dom-bluetoothlescan-active①\">active</a></code></code> to <code>false</code>."
+        },
+        {
+          "html": "Remove <code>this</code> from <code>navigator.bluetooth.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-activescans-slot\" id=\"ref-for-dom-bluetooth-activescans-slot③\">[[activeScans]]</a></code></code>."
+        },
+        {
+          "html": "The UA SHOULD reconfigure or stop its BLE scan to save power\n          while still receiving any advertisements that <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan-match\" id=\"ref-for-bluetoothlescan-match①\">match</a> any scan\n          in any <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-activescans-slot\" id=\"ref-for-dom-bluetooth-activescans-slot④\">[[activeScans]]</a></code> set in the whole UA."
+        }
+      ]
+    },
+    {
+      "name": "BluetoothManufacturerDataFilter/BluetoothManufacturerDataFilter(init)",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothmanufacturerdatafilter-bluetoothmanufacturerdatafilter",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"BluetoothManufacturerDataFilter\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"BluetoothManufacturerDataFilter(init)|constructor(init)|BluetoothManufacturerDataFilter()|constructor()\" id=\"dom-bluetoothmanufacturerdatafilter-bluetoothmanufacturerdatafilter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>BluetoothManufacturerDataFilter(<var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor, when invoked, MUST perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>init</var> is not present\n          or <code><var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-ordinary-object-internal-methods-and-internal-slots-ownpropertykeys\" id=\"ref-for-sec-ordinary-object-internal-methods-and-internal-slots-ownpropertykeys\">[[OwnPropertyKeys]]</a></code>()</code> is empty,\n          then <code>this</code> has no <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-map-entries\" id=\"ref-for-dfn-map-entries\">map entries</a>.\n          Abort these steps."
+        },
+        {
+          "html": "Let <var>canonicalInit</var> be the <code>manufacturerData</code> field of the result of <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#bluetoothlescanfilterinit-canonicalizing\" id=\"ref-for-bluetoothlescanfilterinit-canonicalizing\">canonicalizing</a> <code>{manufacturerData: <var>init</var>}</code>.\n          If this throws an exception,\n          propagate that exception from this constructor and abort these steps."
+        },
+        {
+          "html": "<code>this</code>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-map-entries\" id=\"ref-for-dfn-map-entries①\">map entries</a> map from each <var>key</var> in <code><var>canonicalInit</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-ordinary-object-internal-methods-and-internal-slots-ownpropertykeys\" id=\"ref-for-sec-ordinary-object-internal-methods-and-internal-slots-ownpropertykeys①\">[[OwnPropertyKeys]]</a></code>()</code>,\n          parsed as a base-10 integer,\n          to its value of <code>new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothdatafilter\" id=\"ref-for-bluetoothdatafilter②\">BluetoothDataFilter</a></code>(<var>canonicalInit</var>[<var>key</var>])</code>."
+        }
+      ]
+    },
+    {
+      "name": "BluetoothServiceDataFilter/BluetoothServiceDataFilter(init)",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothservicedatafilter-bluetoothservicedatafilter",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"BluetoothServiceDataFilter\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"BluetoothServiceDataFilter(init)|constructor(init)|BluetoothServiceDataFilter()|constructor()\" id=\"dom-bluetoothservicedatafilter-bluetoothservicedatafilter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>BluetoothServiceDataFilter(<var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor, when invoked, MUST perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>init</var> is not present\n          or <code><var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-ordinary-object-internal-methods-and-internal-slots-ownpropertykeys\" id=\"ref-for-sec-ordinary-object-internal-methods-and-internal-slots-ownpropertykeys②\">[[OwnPropertyKeys]]</a></code>()</code> is empty,\n          then <code>this</code> has no <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-map-entries\" id=\"ref-for-dfn-map-entries②\">map entries</a>.\n          Abort these steps."
+        },
+        {
+          "html": "Let <var>canonicalInit</var> be the <code>serviceData</code> field of the result of <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#bluetoothlescanfilterinit-canonicalizing\" id=\"ref-for-bluetoothlescanfilterinit-canonicalizing①\">canonicalizing</a> <code>{serviceData: <var>init</var>}</code>.\n          If this throws an exception,\n          propagate that exception from this constructor and abort these steps."
+        },
+        {
+          "html": "<code>this</code>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-map-entries\" id=\"ref-for-dfn-map-entries③\">map entries</a> map from each <var>key</var> in <code><var>canonicalInit</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-ordinary-object-internal-methods-and-internal-slots-ownpropertykeys\" id=\"ref-for-sec-ordinary-object-internal-methods-and-internal-slots-ownpropertykeys③\">[[OwnPropertyKeys]]</a></code>()</code>,\n          to its value of <code>new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothdatafilter\" id=\"ref-for-bluetoothdatafilter③\">BluetoothDataFilter</a></code>(<var>canonicalInit</var>[<var>key</var>])</code>."
+        }
+      ]
+    },
+    {
+      "name": "BluetoothDataFilter/BluetoothDataFilter(init)",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdatafilter-bluetoothdatafilter",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"BluetoothDataFilter\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"BluetoothDataFilter(init)|constructor(init)|BluetoothDataFilter()|constructor()\" id=\"dom-bluetoothdatafilter-bluetoothdatafilter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>BluetoothDataFilter(<var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor, when invoked, MUST perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>canonicalInit</var> be\n          the result of <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdatafilterinit-canonicalizing\" id=\"ref-for-bluetoothdatafilterinit-canonicalizing\">canonicalizing</a> <var>init</var>.\n          If this throws an exception,\n          propagate that exception from this constructor and abort these steps."
+        },
+        {
+          "html": "Initialize <code>this.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdatafilter-dataprefix\" id=\"ref-for-dom-bluetoothdatafilter-dataprefix\">dataPrefix</a></code></code> as\n          a <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#read-only-arraybuffer\" id=\"ref-for-read-only-arraybuffer\">read only ArrayBuffer</a> whose contents are <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy\">a copy of the bytes held</a> by <code><var>canonicalInit</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdatafilterinit-dataprefix\" id=\"ref-for-dom-bluetoothdatafilterinit-dataprefix\">dataPrefix</a></code></code>."
+        },
+        {
+          "html": "Initialize <code>this.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdatafilter-mask\" id=\"ref-for-dom-bluetoothdatafilter-mask\">mask</a></code></code> as\n          a <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#read-only-arraybuffer\" id=\"ref-for-read-only-arraybuffer①\">read only ArrayBuffer</a> whose contents are <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy①\">a copy of the bytes held</a> by <code><var>canonicalInit</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdatafilterinit-mask\" id=\"ref-for-dom-bluetoothdatafilterinit-mask\">mask</a></code></code>."
+        }
+      ]
+    },
+    {
+      "name": "handle full activity loss",
+      "html": "When the user agent determines that a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated <code>Document</code></a> of\nthe <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object\">current settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a> is no longer <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active②\">fully active</a>, it must run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>activeScan</var> in <code> navigator.bluetooth.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-activescans-slot\" id=\"ref-for-dom-bluetooth-activescans-slot⑤\">[[activeScans]]</a></code></code>, perform the following\nsteps:",
+          "rationale": "call",
+          "steps": [
+            {
+              "html": "<p>Call <code><var>activeScan</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-stop\" id=\"ref-for-dom-bluetoothlescan-stop②\">stop()</a></code></code>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "permission-query",
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dictdef-bluetoothlescanpermissiondescriptor\" id=\"ref-for-dictdef-bluetoothlescanpermissiondescriptor\">BluetoothLEScanPermissionDescriptor</a></code> <var>descriptor</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescanpermissionresult\" id=\"ref-for-bluetoothlescanpermissionresult\">BluetoothLEScanPermissionResult</a></code> <var>result</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Update <code><var>result</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstatus-state\" id=\"ref-for-dom-permissionstatus-state\">state</a></code></code> to <var>descriptor</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-state\" id=\"ref-for-dfn-permission-state\">permission state</a>."
+        },
+        {
+          "html": "If <code><var>result</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstatus-state\" id=\"ref-for-dom-permissionstatus-state①\">state</a></code></code> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied①\">denied</a></code>\",\n            set <code><var>result</var>.scans</code> to an empty <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-frozen-array\" id=\"ref-for-idl-frozen-array⑤\">FrozenArray</a></code> and abort these steps."
+        },
+        {
+          "html": "Update <code><var>result</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanpermissionresult-scans\" id=\"ref-for-dom-bluetoothlescanpermissionresult-scans\">scans</a></code></code> to\n            a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-frozen-array\" id=\"ref-for-idl-frozen-array⑥\">FrozenArray</a></code> containing\n            the elements of <code>navigator.bluetooth.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-activescans-slot\" id=\"ref-for-dom-bluetooth-activescans-slot⑥\">[[activeScans]]</a></code></code>."
+        }
+      ]
+    },
+    {
+      "name": "permission-revocation",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "For each <var>activeScan</var> in <code>navigator.bluetooth.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-activescans-slot\" id=\"ref-for-dom-bluetooth-activescans-slot⑦\">[[activeScans]]</a></code></code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-state\" id=\"ref-for-dfn-permission-state①\">permission state</a> of \n<pre class=\"highlight\"><c- p=\"\">{</c->\n  name<c- o=\"\">:</c-> <c- u=\"\">\"bluetooth-le-scan\"</c-><c- p=\"\">,</c->\n  filters<c- o=\"\">:</c-> <var>activeScan</var><c- p=\"\">.</c->filters<c- p=\"\">,</c->\n  keepRepeatedDevices<c- o=\"\">:</c-> <var>activeScan</var><c- p=\"\">.</c->keepRepeatedDevices\n<c- p=\"\">}</c->\n</pre>\n           <p>is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted\">granted</a></code>\",\n                call <code><var>activeScan</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-stop\" id=\"ref-for-dom-bluetoothlescan-stop③\">stop()</a></code></code>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "receive-advertising-event",
+      "html": "When the UA receives an <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#advertising-event\" id=\"ref-for-advertising-event\">advertising event</a> <var>event</var> (consisting of an advertising packet and an optional scan response),\n        it MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>device</var> be the <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-device\" id=\"ref-for-bluetooth-device\">Bluetooth device</a> that sent the advertising event."
+        },
+        {
+          "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#bluetooth\" id=\"ref-for-bluetooth①\">Bluetooth</a></code> instance <var>bluetooth</var> in the UA, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">queue a task</a> on <var>bluetooth</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop\">responsible event loop</a> to do the following sub-steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>scans</var> be the set of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan\" id=\"ref-for-bluetoothlescan⑤\">BluetoothLEScan</a></code>s in <code><var>bluetooth</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-activescans-slot\" id=\"ref-for-dom-bluetooth-activescans-slot⑧\">[[activeScans]]</a></code></code> that <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan-match\" id=\"ref-for-bluetoothlescan-match②\">match</a> <var>event</var>."
+            },
+            {
+              "html": "If <var>scans</var> is empty, abort these sub-steps."
+            },
+            {
+              "html": "Note: the user’s <a href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scanning-permission\">permission to scan</a> likely indicates that\n              they intend newly-discovered devices to appear in <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#permissiondef-bluetooth\" id=\"ref-for-permissiondef-bluetooth\">\"bluetooth\"</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-extra-permission-data\" id=\"ref-for-dfn-extra-permission-data\">extra permission data</a>,\n              but possibly with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-allowedbluetoothdevice-mayusegatt\" id=\"ref-for-dom-allowedbluetoothdevice-mayusegatt\">mayUseGATT</a></code> set to <code>false</code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#get-the-bluetoothdevice-representing\" id=\"ref-for-get-the-bluetoothdevice-representing\">Get the <code>BluetoothDevice</code> representing</a> <var>device</var> inside <var>bluetooth</var>,\n              and let <var>deviceObj</var> be the result."
+            },
+            {
+              "html": "Add each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan\" id=\"ref-for-bluetoothlescan⑥\">BluetoothLEScan</a></code> in <var>scans</var> to <code><var>deviceObj</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdevice-returnedfromscans-slot\" id=\"ref-for-dom-bluetoothdevice-returnedfromscans-slot\">[[returnedFromScans]]</a></code></code>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#fire-an-advertisementreceived-event\" id=\"ref-for-fire-an-advertisementreceived-event\">Fire an <code>advertisementreceived</code> event</a> for <var>event</var> at <var>deviceObj</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bluetoothlescan-match",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan-match",
+      "html": "An advertising event <var>event</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"BluetoothLEScan\" data-dfn-type=\"dfn\" data-lt=\"match\" data-noexport=\"\" id=\"bluetoothlescan-match\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan\" id=\"ref-for-bluetoothlescan⑦\">BluetoothLEScan</a></code> <var>scan</var> if the following steps return <code>match</code>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<code><var>scan</var>.acceptAllAdvertisements</code> is <code>false</code> and <var>event</var> doesn’t <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescanfilter-match\" id=\"ref-for-bluetoothlescanfilter-match①\">match</a> any filter in <code><var>scan</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-filters\" id=\"ref-for-dom-bluetoothlescan-filters①\">filters</a></code></code>,\n          return <code>no match</code>."
+        },
+        {
+          "html": "If <code><var>scan</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-keeprepeateddevices\" id=\"ref-for-dom-bluetoothlescan-keeprepeateddevices①\">keepRepeatedDevices</a></code></code> is <code>false</code>,\n          there is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/index.html#bluetoothdevice\" id=\"ref-for-bluetoothdevice①\">BluetoothDevice</a></code> <var>device</var> that\n          represents the <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#same-bluetooth-device\" id=\"ref-for-same-bluetooth-device\">same Bluetooth device</a> as the one that sent <var>event</var>,\n          and <code><var>device</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdevice-returnedfromscans-slot\" id=\"ref-for-dom-bluetoothdevice-returnedfromscans-slot①\">[[returnedFromScans]]</a></code></code> includes <var>scan</var>,\n          the UA MAY return <code>no match</code>."
+        },
+        {
+          "html": "Return <code>match</code>."
+        }
+      ]
+    }
+  ]
+}

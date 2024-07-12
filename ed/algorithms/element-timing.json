@@ -1,0 +1,175 @@
+{
+  "spec": {
+    "title": "Element Timing API",
+    "url": "https://wicg.github.io/element-timing/"
+  },
+  "algorithms": [
+    {
+      "name": "PerformanceElementTiming element",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#element\" id=\"ref-for-element②\">element</a> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#exposed-for-paint-timing\" id=\"ref-for-exposed-for-paint-timing\">exposed for paint timing</a> given null, return null.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#element\" id=\"ref-for-element③\">element</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PerformanceElementTiming url",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#request\" id=\"ref-for-request\">request</a> is null, return the empty string.</p>"
+        },
+        {
+          "html": "<p>Let <var>urlString</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#request\" id=\"ref-for-request①\">request</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/images.html#img-req-url\" id=\"ref-for-img-req-url\">current URL</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>url</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">parsing</a> <var>urlString</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is \"`data`\", trim <var>urlString</var> to its first 100 characters.</p>"
+        },
+        {
+          "html": "<p>Return <var>urlString</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "report element timing",
+      "href": "https://wicg.github.io/element-timing/#report-element-timing",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"report-element-timing\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report element timing</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code> <var>doc</var>, a timestamp <var>now</var>, an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">ordered set</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record\" id=\"ref-for-pending-image-record\">pending image records</a> <var>paintedImages</var>, and an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">ordered set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#element\" id=\"ref-for-element⑥\">elements</a> <var>paintedTextNodes</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"report-element-timing\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report element timing</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code> <var>doc</var>, a timestamp <var>now</var>, an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">ordered set</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record\" id=\"ref-for-pending-image-record\">pending image records</a> <var>paintedImages</var>, and an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">ordered set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#element\" id=\"ref-for-element⑥\">elements</a> <var>paintedTextNodes</var>, perform the following steps:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#report-image-element-timing\" id=\"ref-for-report-image-element-timing①\">report image element timing</a> algorithm passing in <var>record</var>, <var>now</var>, and <var>doc</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"report-element-timing\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report element timing</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code> <var>doc</var>, a timestamp <var>now</var>, an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">ordered set</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record\" id=\"ref-for-pending-image-record\">pending image records</a> <var>paintedImages</var>, and an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">ordered set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#element\" id=\"ref-for-element⑥\">elements</a> <var>paintedTextNodes</var>, perform the following steps:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#report-text-element-timing\" id=\"ref-for-report-text-element-timing①\">report text element timing</a> given <var>element</var>, <var>now</var>, and <var>doc</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "report image element timing",
+      "href": "https://wicg.github.io/element-timing/#report-image-element-timing",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-image-element-timing\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report image element timing</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record\" id=\"ref-for-pending-image-record①\">pending image record</a> <var>record</var>, a DOMHighResTimestamp <var>renderTime</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code> <var>document</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-element\" id=\"ref-for-pending-image-record-element\">element</a>'s \"<code class=\"highlight\">elementtiming</code>\" content attribute is absent, then abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>intersectionRect</var> be the value returned by the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IntersectionObserver#calculate-intersection-rect-algo\" id=\"ref-for-calculate-intersection-rect-algo\">intersection rect algorithm</a> using <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-element\" id=\"ref-for-pending-image-record-element①\">element</a> as the target and viewport as the root.</p>"
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-image-element-timing\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report image element timing</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record\" id=\"ref-for-pending-image-record①\">pending image record</a> <var>record</var>, a DOMHighResTimestamp <var>renderTime</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code> <var>document</var>, perform the following steps:",
+          "rationale": "initialize",
+          "steps": [
+            {
+              "html": "<p>Initialize <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#request\" id=\"ref-for-request②\">request</a> to <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-request\" id=\"ref-for-pending-image-record-request\">request</a>.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#element\" id=\"ref-for-element⑧\">element</a> to <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-element\" id=\"ref-for-pending-image-record-element②\">element</a>.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-name\" id=\"ref-for-dom-performanceentry-name①\">name</a></code> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString⑤\">DOMString</a></code> \"image-paint\".</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-rendertime\" id=\"ref-for-dom-performanceelementtiming-rendertime②\">renderTime</a></code> to <var>renderTime</var>.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-loadtime\" id=\"ref-for-dom-performanceelementtiming-loadtime②\">loadTime</a></code> to <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-loadtime\" id=\"ref-for-pending-image-record-loadtime\">loadTime</a>.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-intersectionrect\" id=\"ref-for-dom-performanceelementtiming-intersectionrect①\">intersectionRect</a></code> to <var>intersectionRect</var>.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-identifier\" id=\"ref-for-dom-performanceelementtiming-identifier①\">identifier</a></code> to <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-element\" id=\"ref-for-pending-image-record-element③\">element</a>'s \"<code class=\"highlight\">elementtiming</code>\" content attribute.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-naturalwidth\" id=\"ref-for-dom-performanceelementtiming-naturalwidth①\">naturalWidth</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-naturalheight\" id=\"ref-for-dom-performanceelementtiming-naturalheight①\">naturalHeight</a></code> by running the same steps for an <code class=\"highlight\"><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\" id=\"ref-for-the-img-element\">img</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-naturalwidth\" id=\"ref-for-dom-img-naturalwidth\">naturalWidth</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-naturalheight\" id=\"ref-for-dom-img-naturalheight\">naturalHeight</a></code> attribute getters, but using <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-request\" id=\"ref-for-pending-image-record-request①\">request</a> as the image.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-id\" id=\"ref-for-dom-performanceelementtiming-id①\">id</a></code> to <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-element\" id=\"ref-for-pending-image-record-element④\">element</a>'s \"<code class=\"highlight\">id</code>\" content attribute.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry\">Queue the PerformanceEntry</a> <var>entry</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "report text element timing",
+      "href": "https://wicg.github.io/element-timing/#report-text-element-timing",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-text-element-timing\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report text element timing</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑨\">Element</a></code> <var>element</var>, a DOMHighResTimestamp <var>renderTime</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code> <var>document</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>element</var>’s \"<code class=\"highlight\">elementtiming</code>\" content attribute is absent, then abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>intersectionRect</var> be an empty rectangle.</p>"
+        },
+        {
+          "html": "<p>For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#boundary-point-node\" id=\"ref-for-boundary-point-node\">node</a> <var>text</var> in <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#set-of-owned-text-nodes\" id=\"ref-for-set-of-owned-text-nodes\">set of owned text nodes</a>:</p>",
+          "ignored": [
+            "Augment intersectionRect to be smallest rectangle containing the border box of text and intersectionRect."
+          ]
+        },
+        {
+          "html": "<p>Intersect <var>intersectionRect</var> with the visual viewport.</p>"
+        },
+        {
+          "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-text-element-timing\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report text element timing</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑨\">Element</a></code> <var>element</var>, a DOMHighResTimestamp <var>renderTime</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code> <var>document</var>, perform the following steps:",
+          "rationale": "initialize",
+          "steps": [
+            {
+              "html": "<p>Initialize <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#element\" id=\"ref-for-element①⓪\">element</a> to <var>element</var>.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-name\" id=\"ref-for-dom-performanceentry-name②\">name</a></code> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString⑥\">DOMString</a></code> \"text-paint\".</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-rendertime\" id=\"ref-for-dom-performanceelementtiming-rendertime③\">renderTime</a></code> to <var>renderTime</var>.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-loadtime\" id=\"ref-for-dom-performanceelementtiming-loadtime③\">loadTime</a></code> to 0.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-intersectionrect\" id=\"ref-for-dom-performanceelementtiming-intersectionrect②\">intersectionRect</a></code> to <var>intersectionRect</var>.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-identifier\" id=\"ref-for-dom-performanceelementtiming-identifier②\">identifier</a></code> to <var>element</var>’s \"<code class=\"highlight\">elementtiming</code>\" content attribute.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-naturalwidth\" id=\"ref-for-dom-performanceelementtiming-naturalwidth②\">naturalWidth</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-naturalheight\" id=\"ref-for-dom-performanceelementtiming-naturalheight②\">naturalHeight</a></code> to 0.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/element-timing/#dom-performanceelementtiming-id\" id=\"ref-for-dom-performanceelementtiming-id②\">id</a></code> to <var>element</var>’s \"<code class=\"highlight\">id</code>\" content attribute.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry①\">Queue the PerformanceEntry</a> <var>entry</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

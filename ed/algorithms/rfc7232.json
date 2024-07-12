@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "title": "RFC 7232 - Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests",
+    "url": "https://httpwg.org/specs/rfc7232.html"
+  },
+  "algorithms": [
+    {
+      "html": "A recipient cache or origin server <em class=\"bcp14\">MUST</em> evaluate the request preconditions defined by this specification in the following order:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "When recipient is the origin server and <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-match\" class=\"smpl\">If-Match</a> is present, evaluate the <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-match\" class=\"smpl\">If-Match</a> precondition: <ul><li>if true, continue to step <a href=\"https://httpwg.org/specs/rfc7232.html#precedence3\">3</a></li><li>if false, respond <a href=\"https://httpwg.org/specs/rfc7232.html#status.412\" class=\"smpl\">412 (Precondition Failed)</a> unless it can be determined that the state-changing request has already succeeded (see <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-match\" id=\"rfc.xref.header.if-match.1\" title=\"If-Match\">Section 3.1</a>)</li></ul>"
+        },
+        {
+          "html": "When recipient is the origin server, <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-match\" class=\"smpl\">If-Match</a> is not present, and <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-unmodified-since\" class=\"smpl\">If-Unmodified-Since</a> is present, evaluate the <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-unmodified-since\" class=\"smpl\">If-Unmodified-Since</a> precondition: <ul><li>if true, continue to step <a href=\"https://httpwg.org/specs/rfc7232.html#precedence3\">3</a></li><li>if false, respond <a href=\"https://httpwg.org/specs/rfc7232.html#status.412\" class=\"smpl\">412 (Precondition Failed)</a> unless it can be determined that the state-changing request has already succeeded (see <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-unmodified-since\" id=\"rfc.xref.header.if-unmodified-since.1\" title=\"If-Unmodified-Since\">Section 3.4</a>)</li></ul>"
+        },
+        {
+          "html": "When <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-none-match\" class=\"smpl\">If-None-Match</a> is present, evaluate the <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-none-match\" class=\"smpl\">If-None-Match</a> precondition: <ul><li>if true, continue to step <a href=\"https://httpwg.org/specs/rfc7232.html#precedence5\">5</a></li><li>if false for GET/HEAD, respond <a href=\"https://httpwg.org/specs/rfc7232.html#status.304\" class=\"smpl\">304 (Not Modified)</a></li><li>if false for other methods, respond <a href=\"https://httpwg.org/specs/rfc7232.html#status.412\" class=\"smpl\">412 (Precondition Failed)</a></li></ul>"
+        },
+        {
+          "html": "When the method is GET or HEAD, <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-none-match\" class=\"smpl\">If-None-Match</a> is not present, and <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-modified-since\" class=\"smpl\">If-Modified-Since</a> is present, evaluate the <a href=\"https://httpwg.org/specs/rfc7232.html#header.if-modified-since\" class=\"smpl\">If-Modified-Since</a> precondition: <ul><li>if true, continue to step <a href=\"https://httpwg.org/specs/rfc7232.html#precedence5\">5</a></li><li>if false, respond <a href=\"https://httpwg.org/specs/rfc7232.html#status.304\" class=\"smpl\">304 (Not Modified)</a></li></ul>"
+        },
+        {
+          "html": "When the method is GET and both <a href=\"https://httpwg.org/specs/rfc7233.html#header.range\" class=\"smpl\">Range</a> and <a href=\"https://httpwg.org/specs/rfc7233.html#header.if-range\" class=\"smpl\">If-Range</a> are present, evaluate the <a href=\"https://httpwg.org/specs/rfc7233.html#header.if-range\" class=\"smpl\">If-Range</a> precondition: <ul><li>if the validator matches and the Range specification is applicable to the selected representation, respond <a href=\"https://httpwg.org/specs/rfc7233.html#status.206\" class=\"smpl\">206 (Partial Content)</a> <a href=\"https://httpwg.org/specs/rfc7232.html#RFC7233\" id=\"rfc.xref.RFC7233.2\"><cite title=\"Hypertext Transfer Protocol (HTTP/1.1): Range Requests\">[RFC7233]</cite></a></li></ul>"
+        },
+        {
+          "html": "Otherwise, <ul><li>all conditions are met, so perform the requested action and respond according to its success or failure.</li></ul>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "spec": {
+    "title": "CSS Color Module Level 4",
+    "url": "https://drafts.csswg.org/css-color-4/"
+  },
+  "algorithms": [
+    {
+      "name": "parse a CSS <color> value",
+      "href": "https://drafts.csswg.org/css-color-4/#parse-a-css-color-value",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-css-color-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a CSS <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-4/#typedef-color\" id=\"ref-for-typedef-color①①\">&lt;color&gt;</a> value</dfn>,\n\tgiven a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>input</var>,\n\tand an optional context <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a> <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">Parse</a> <var>input</var> as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-4/#typedef-color\" id=\"ref-for-typedef-color①②\">&lt;color&gt;</a>.\nIf the result is failure,\nreturn failure;\notherwise, let <var>color</var> be the result.</p>"
+        },
+        {
+          "html": "<p>Let <var>used color</var> be the result of <a href=\"https://drafts.csswg.org/css-color-4/#resolving-color-values\">resolving</a> <var>color</var> to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#used-color\" id=\"ref-for-used-color\">used color</a>.\nIf the value of other properties\non the element a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-4/#typedef-color\" id=\"ref-for-typedef-color①③\">&lt;color&gt;</a> is on\nis required to do the resolution\n(such as resolving a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-currentcolor\" id=\"ref-for-valdef-color-currentcolor③\">currentcolor</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#css-system-colors\" id=\"ref-for-css-system-colors\">system color</a>),\nuse <var>element</var> if it was passed,\nor the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#initial-value\" id=\"ref-for-initial-value\">initial values</a> of the properties if not.</p>"
+        },
+        {
+          "html": "<p>Return <var>used color</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Conversion to the rectangular form is trivial:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If H is missing, a = b = 0"
+        },
+        {
+          "html": "Otherwise,",
+          "ignored": [
+            "a = C cos(H) b = C sin(H)"
+          ]
+        },
+        {
+          "html": "L is the same"
+        }
+      ]
+    },
+    {
+      "html": "For all predefined RGB color spaces,\n\tconversion to Lab requires several steps,\n\talthough in practice all but the first step are linear calculations and can be combined.",
+      "rationale": "convert",
+      "steps": [
+        {
+          "html": "Convert from gamma-encoded RGB to linear-light RGB (undo gamma encoding)"
+        },
+        {
+          "html": "Convert from linear RGB to CIE XYZ"
+        },
+        {
+          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#d65-whitepoint\" id=\"ref-for-d65-whitepoint①①\">D65</a> whitepoint\n\t\t\t(used by <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-srgb\" id=\"ref-for-valdef-color-srgb⑥\">sRGB</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-display-p3\" id=\"ref-for-valdef-color-display-p3⑥\">display-p3</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-a98-rgb\" id=\"ref-for-valdef-color-a98-rgb③\">a98-rgb</a> and <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-rec2020\" id=\"ref-for-valdef-color-rec2020④\">rec2020</a>)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#d50-whitepoint\" id=\"ref-for-d50-whitepoint④\">D50</a> whitepoint used in Lab,\n\t\t\twith the linear Bradford transform. <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb⑤\">prophoto-rgb</a> already has a <span id=\"ref-for-d50-whitepoint⑤\">D50</span> whitepoint."
+        },
+        {
+          "html": "Convert D50-adapted XYZ to Lab"
+        }
+      ]
+    },
+    {
+      "html": "Conversion to Oklab is similar,\n\tbut the chromatic adaptation step\n\tis only needed for <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb⑥\">prophoto-rgb</a>.",
+      "rationale": "convert",
+      "steps": [
+        {
+          "html": "Convert from gamma-encoded RGB to linear-light RGB (undo gamma encoding)"
+        },
+        {
+          "html": "Convert from linear RGB to CIE XYZ"
+        },
+        {
+          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#d50-whitepoint\" id=\"ref-for-d50-whitepoint⑥\">D50</a> whitepoint (used by <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb⑦\">prophoto-rgb</a>)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#d65-whitepoint\" id=\"ref-for-d65-whitepoint①②\">D65</a> whitepoint used in Oklab,\n\t\t\twith the linear Bradford transform."
+        },
+        {
+          "html": "Convert D65-adapted XYZ to Oklab"
+        }
+      ]
+    },
+    {
+      "html": "Conversion from Lab to predefined spaces like <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-display-p3\" id=\"ref-for-valdef-color-display-p3⑦\">display-p3</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-rec2020\" id=\"ref-for-valdef-color-rec2020⑤\">rec2020</a> also requires multiple steps,\n\tand again in practice all but the last step are linear calculations and can be combined.",
+      "rationale": "convert",
+      "steps": [
+        {
+          "html": "Convert Lab to (D50-adapted) XYZ"
+        },
+        {
+          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#d50-whitepoint\" id=\"ref-for-d50-whitepoint⑦\">D50</a> whitepoint (used by Lab)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#d65-whitepoint\" id=\"ref-for-d65-whitepoint①③\">D65</a> whitepoint used in sRGB and most other RGB spaces,\n\t\t\twith the linear Bradford transform. <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb⑧\">prophoto-rgb</a>' does not require this step."
+        },
+        {
+          "html": "Convert from (D65-adapted) CIE XYZ to linear RGB"
+        },
+        {
+          "html": "Convert from linear-light RGB to RGB (do gamma encoding)"
+        }
+      ]
+    },
+    {
+      "html": "Conversion from Oklab is similar,\n\tbut the chromatic adaptation step\n\tis only needed for <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb⑨\">prophoto-rgb</a>.",
+      "rationale": "convert",
+      "steps": [
+        {
+          "html": "Convert Oklab to (D65-adapted) XYZ"
+        },
+        {
+          "html": "If needed, convert from a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#d65-whitepoint\" id=\"ref-for-d65-whitepoint①④\">D65</a> whitepoint (used by Oklab)\n\t\t\tto the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#d50-whitepoint\" id=\"ref-for-d50-whitepoint⑧\">D50</a> whitepoint used in <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-color-prophoto-rgb\" id=\"ref-for-valdef-color-prophoto-rgb①⓪\">prophoto-rgb</a>,\n\t\t\twith the linear Bradford transform."
+        },
+        {
+          "html": "Convert from (D65-adapted) CIE XYZ to linear RGB"
+        },
+        {
+          "html": "Convert from linear-light RGB to RGB (do gamma encoding)"
+        }
+      ]
+    },
+    {
+      "html": "Conversion from one predefined RGB color space to another\n\trequires multiple steps,\n\tone of which is only needed when the whitepoints differ.\n\tTo convert from <em>src</em> to <em>dest</em>:",
+      "rationale": "convert",
+      "steps": [
+        {
+          "html": "Convert from gamma-encoded <em>src</em>RGB to linear-light <em>src</em>RGB (undo gamma encoding)"
+        },
+        {
+          "html": "Convert from linear <em>src</em>RGB to CIE XYZ"
+        },
+        {
+          "html": "If <em>src</em> and <em>dest</em> have different whitepoints,\n\t\t\tconvert the XYZ value from <em>src</em>White to <em>dest</em>White\n\t\t\twith the linear Bradford transform."
+        },
+        {
+          "html": "Convert from CIE XYZ to linear <em>dest</em>RGB"
+        },
+        {
+          "html": "Convert from linear-light <em>dest</em>RGB to <em>dest</em>RGB (do gamma encoding)"
+        }
+      ]
+    },
+    {
+      "html": "To convert a color <var>col1</var> in a source color space <var>src</var> with white point <var>src-white</var> to a color <var>col2</var> in destination color space <var>dest</var> with white point <var>dest-white</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-polrect\"></a>If <var>src</var> is in a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color①\">cylindrical polar color</a> representation,\n\tfirst convert <var>col1</var> to the corresponding <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color①\">rectangular orthogonal color</a> representation\n\tand let this be the new <var>col1</var>. Replace any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑦\">missing component</a> with zero."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-tolinear\"></a>If <var>src</var> is not a linear-light representation,\n\tconvert it to linear light (undo gamma-encoding)\n\tand let this be the new <var>col1</var>."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-toXYZ\"></a>Convert <var>col1</var> to CIE XYZ with a given whitepoint <var>src-white</var> and let this be <var>xyz</var>."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-CAT\"></a>If <var>dest-white</var> is not the same as <var>src-white</var>,\n\tchromatically adapt <var>xyz</var> to <var>dest-white</var> using a linear Bradford <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#chromatic-adaptation-transform\" id=\"ref-for-chromatic-adaptation-transform\">chromatic adaptation transform</a>,\n\tand let this be the new <var>xyz</var>."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-destpolar\"></a>If <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color②\">cylindrical polar color</a> representation,\n\tlet <var>dest-rect</var> be the corresponding <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color②\">rectangular orthogonal color</a> representation.\n\tOtherwise, let <var>dest-rect</var> be <var>dest</var>."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-fromXYZ\"></a>Convert <var>xyz</var> to <var>dest</var>,\n\tfollowed by applying any transfer function (gamma encoding),\n\tproducing <var>col2</var>."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-display\"></a>If <var>dest</var> is a physical output color space, such as a display,\n\tthen <var>col2</var> must be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#css-gamut-mapped\" id=\"ref-for-css-gamut-mapped③\">css gamut mapped</a> so that it <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#can-be-displayed\" id=\"ref-for-can-be-displayed\">can be displayed</a>."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#convert-rectpol\"></a>If <var>dest-rect</var> is not the same as <var>dest</var>,\n\tin other words <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color③\">cylindrical polar color</a> representation,\n\tconvert from <var>dest-rect</var> to <var>dest</var>, and let this be <var>col2</var>.\n\tThis may produce <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑧\">missing component</a>s."
+        }
+      ]
+    },
+    {
+      "name": "to CSS gamut map a color",
+      "href": "https://drafts.csswg.org/css-color-4/#css-gamut-map",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CSS gamut map</dfn> a color <var>origin</var> in color space <var>origin color space</var> to be in gamut of a destination color space <var>destination</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "if <var>destination</var> has no gamut limits (XYZ-D65, XYZ-D50, Lab, LCH, Oklab, Oklch) convert <var>origin</var> to <var>destination</var> and return it as the gamut mapped color"
+        },
+        {
+          "html": "let <var>origin_Oklch</var> be <var>origin</var> converted\n\t\tfrom <var>origin color space</var> to the Oklch color space"
+        },
+        {
+          "html": "if the Lightness of <var>origin_Oklch</var> is greater than or equal to 100%,\n\t\tconvert `oklab(1 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
+        },
+        {
+          "html": "if the Lightness of <var>origin_Oklch</var> is less than than or equal to 0%,\n\t\tconvert `oklab(0 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
+        },
+        {
+          "html": "let inGamut(<var>color</var>) be a function which returns true if, when passed a color,\n\t\tthat color is inside the gamut of <var>destination</var>.\n\t\tFor HSL and HWB, it returns true if the color is inside the gamut of sRGB."
+        },
+        {
+          "html": "if inGamut(<var>origin_Oklch</var>) is true, convert <var>origin_Oklch</var> to <var>destination</var> and return it as the gamut mapped color"
+        },
+        {
+          "html": "otherwise, let delta(<var>one</var>, <var>two</var>) be a function which returns the deltaEOK of color <var>one</var> compared to color <var>two</var>"
+        },
+        {
+          "html": "let <var>JND</var> be 0.02"
+        },
+        {
+          "html": "let <var>epsilon</var> be 0.0001"
+        },
+        {
+          "html": "let clip(<var>color</var>) be a function which converts <var>color</var> to <var>destination</var>,\n\t\tclamps each component to the bounds of the reference range for that component\n\t\tand returns the result"
+        },
+        {
+          "html": "set <var>current</var> to <var>origin_Oklch</var>"
+        },
+        {
+          "html": "set <var>clipped</var> to clip(<var>current</var>)"
+        },
+        {
+          "html": "set <var>E</var> to delta(<var>clipped</var>, <var>current</var>)"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CSS gamut map</dfn> a color <var>origin</var> in color space <var>origin color space</var> to be in gamut of a destination color space <var>destination</var>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "return <var>clipped</var> as the gamut mapped color"
+            }
+          ]
+        },
+        {
+          "html": "set <var>min</var> to zero"
+        },
+        {
+          "html": "set <var>max</var> to the Oklch chroma of <var>origin_Oklch</var>"
+        },
+        {
+          "html": "let <var>min_inGamut</var> be a boolean that represents when <var>min</var> is still in gamut, and set it to true"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CSS gamut map</dfn> a color <var>origin</var> in color space <var>origin color space</var> to be in gamut of a destination color space <var>destination</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "set <var>chroma</var> to (<var>min</var> + <var>max</var>) /2"
+            },
+            {
+              "html": "set the chroma component of <var>current</var> to <var>chroma</var>"
+            },
+            {
+              "html": "if <var>min_inGamut</var> is true and also if inGamut(<var>current</var>) is true, set <var>min</var> to <var>chroma</var> and continue to repeat these steps"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CSS gamut map</dfn> a color <var>origin</var> in color space <var>origin color space</var> to be in gamut of a destination color space <var>destination</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "set <var>clipped</var> to clip(<var>current</var>)"
+                },
+                {
+                  "html": "set <var>E</var> to delta(<var>clipped</var>, <var>current</var>)"
+                },
+                {
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CSS gamut map</dfn> a color <var>origin</var> in color space <var>origin color space</var> to be in gamut of a destination color space <var>destination</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "if (<var>JND</var> - <var>E</var> &lt; <var>epsilon</var>) return <var>clipped</var> as the gamut mapped color"
+                    },
+                    {
+                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CSS gamut map</dfn> a color <var>origin</var> in color space <var>origin color space</var> to be in gamut of a destination color space <var>destination</var>:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "set <var>min_inGamut</var> to false"
+                        },
+                        {
+                          "html": "set <var>min</var> to <var>chroma</var>"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "otherwise, set <var>max</var> to <var>chroma</var> and continue to repeat these steps"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "return <var>clipped</var> as the gamut mapped color"
+        }
+      ]
+    },
+    {
+      "html": "If the value is internally represented as an integer\n\tbetween 0 and 255 inclusive (i.e. 8-bit unsigned integer),\n\tfollow these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>alpha</var> be the given integer."
+        },
+        {
+          "html": "If there exists an integer between 0 and 100 inclusive that,\n\t\twhen multiplied with 2.55 and rounded to the closest integer\n\t\t(rounding up if two values are equally close), equals <var>alpha</var>,\n\t\tlet <var>rounded</var> be that integer divided by 100."
+        },
+        {
+          "html": "Otherwise, let <var>rounded</var> be <var>alpha</var> divided by 0.255 and rounded to the closest integer\n\t\t(rounding up if two values are equally close),\n\t\tdivided by 1000."
+        },
+        {
+          "html": "Return the result of serializing <var>rounded</var> as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value③③\">&lt;number&gt;</a>."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "spec": {
+    "title": "CSS Scoping Module Level 1",
+    "url": "https://drafts.csswg.org/css-scoping-1/"
+  },
+  "algorithms": [
+    {
+      "name": "flat tree",
+      "href": "https://drafts.csswg.org/css-scoping-1/#flat-tree",
+      "html": "While Selectors operates on the DOM tree as the host language presents it,\n\twith separate trees that are unreachable via the standard parent/<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child②\">child</a> relationship,\n\tthe rest of CSS needs a single unified tree structure to work with.\n\tThis is called the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"flat tree|flattened element tree\" id=\"flat-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">flattened element tree</dfn> (or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scoping-1/#flat-tree\" id=\"ref-for-flat-tree①\">flat tree</a>),\n\tand is constructed as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>pending nodes</var> be a list of DOM nodes with associated parents,\ninitially containing just the document’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root①\">root</a> element with no associated parent.</p>"
+        },
+        {
+          "html": "Repeatedly execute the following substeps until <var>pending nodes</var> is empty:",
+          "rationale": "pop",
+          "steps": [
+            {
+              "html": "<p>Pop the first element from <var>pending nodes</var>,\nand assign it to <var>pending node</var>.</p>"
+            },
+            {
+              "html": "<p>Insert <var>pending node</var> into the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scoping-1/#flat-tree\" id=\"ref-for-flat-tree②\">flat tree</a> as a child of its associated parent.\n(If it has no associated parent,\nit’s the document root—​just insert it into the <span id=\"ref-for-flat-tree③\">flat tree</span> as its root.)</p>"
+            },
+            {
+              "html": "Perform one of the following,\nwhichever is the first that matches:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "pending node is a shadow host",
+                      "html": "Append the child nodes of the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\" id=\"ref-for-concept-shadow-root⑥\">shadow root</a> of the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-tree\" id=\"ref-for-concept-shadow-tree③①\">shadow tree</a> it hosts\n\t\tto <var>pending nodes</var>,\n\t\twith <var>pending node</var> as their associated parent."
+                    },
+                    {
+                      "case": "pending node is a slot",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#find-slotables\" id=\"ref-for-find-slotables\">Find slottables</a> for <var>pending node</var>,\n\t\tand append them to <var>pending nodes</var>,\n\t\twith <var>pending node</var> as their associated parent. \n         <p>If no <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable\">slottables</a> were found for <var>pending node</var>,\n\t\tinstead append its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child③\">children</a> to <var>pending nodes</var>,\n\t\twith <var>pending node</var> as their associated parent.</p>"
+                    },
+                    {
+                      "case": "Otherwise,",
+                      "html": "Append the child nodes of <var>pending node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-light-tree\" id=\"ref-for-concept-light-tree③\">light tree</a> to <var>pending nodes</var>,\n\t\twith <var>pending node</var> as their associated parent."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

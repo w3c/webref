@@ -1,0 +1,93 @@
+{
+  "spec": {
+    "title": "The Capture-Handle Actions Mechanism",
+    "url": "https://w3c.github.io/mediacapture-handle/actions/"
+  },
+  "algorithms": [
+    {
+      "name": "MediaDevices/setSupportedCaptureActions()",
+      "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-mediadevices-setsupportedcaptureactions",
+      "html": "When this method is invoked, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a> is\n                  either not <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"fully-active\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a> or its <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"browsing-context\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\">browsing context</a> is not a\n                  <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-browsing-context\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\">top-level browsing context</a>, then throw <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"InvalidAccessError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"invalidaccesserror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>."
+        },
+        {
+          "html": "Let <var>actions</var> be the method's first argument."
+        },
+        {
+          "html": "If <var>actions</var> is non-empty, and this method was previously\n                  called with a non-empty array on <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MediaDevices\" data-cite=\"mediacapture-streams\" data-cite-path=\"/\" data-cite-frag=\"dom-mediadevices\" data-type=\"interface\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices\"><code>MediaDevices</code></a> object,\n                  then throw <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"invalidstateerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>.\n                <p></p>"
+        },
+        {
+          "html": "Remove from <var>actions</var> any value not found in <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"CaptureAction\" href=\"https://w3c.github.io/mediacapture-handle/actions/#dom-captureaction\" class=\"internalDFN\" id=\"ref-for-dom-captureaction-2\"><code>CaptureAction</code></a>."
+        },
+        {
+          "html": "Remove from <var>actions</var> any duplicates."
+        },
+        {
+          "html": "Set <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"[[RegisteredCaptureActions]]\" href=\"https://w3c.github.io/mediacapture-handle/actions/#dfn-registeredcaptureactions\" class=\"internalDFN\" id=\"ref-for-dfn-registeredcaptureactions-1\"><code>[[RegisteredCaptureActions]]</code></a> to <var>actions</var>."
+        },
+        {
+          "html": "return <code>undefined</code> and run the remaining step <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>."
+        },
+        {
+          "html": "If this document is currently being captured as part of a\n                  <a data-cite=\"SCREEN-CAPTURE#dfn-browser\" href=\"https://www.w3.org/TR/screen-capture/#dfn-browser\">browser</a>\n                  <a data-cite=\"SCREEN-CAPTURE#dfn-display-surface\" href=\"https://www.w3.org/TR/screen-capture/#dfn-display-surface\">display surface</a>,\n                  then for each capturer of that surface, queue a task on that capturer's\n                  task-list to set all associated video <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"/\" data-cite-frag=\"dom-mediastreamtrack\" data-type=\"interface\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a>s'\n                  <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"[[AvailableCaptureActions]]\" href=\"https://w3c.github.io/mediacapture-handle/actions/#dfn-availablecaptureactions\" class=\"internalDFN\" id=\"ref-for-dfn-availablecaptureactions-1\"><code>[[AvailableCaptureActions]]</code></a> to <var>actions</var>."
+        }
+      ]
+    },
+    {
+      "name": "MediaStreamTrack/sendCaptureAction()",
+      "href": "https://w3c.github.io/mediacapture-handle/actions/#dom-mediastreamtrack-sendcaptureaction",
+      "html": "When this method is invoked, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> does not have\n                  <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"transient-activation\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\">transient activation</a>, return a promise <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"reject\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">rejected</a> with\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"invalidstateerror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"consume-user-activation\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\">Consume user activation</a>."
+        },
+        {
+          "html": "Let <var>action</var> be the method's first argument."
+        },
+        {
+          "html": "If <var>action</var> is not in <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"this\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>' <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"[[AvailableCaptureActions]]\" href=\"https://w3c.github.io/mediacapture-handle/actions/#dfn-availablecaptureactions\" class=\"internalDFN\" id=\"ref-for-dfn-availablecaptureactions-3\"><code>[[AvailableCaptureActions]]</code></a>,\n                  return a promise <a data-link-type=\"dfn|abstract-op\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"reject\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">rejected</a> with <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NotFoundError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"notfounderror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notfounderror\"><code>NotFoundError</code></a>."
+        },
+        {
+          "html": "Let <var>p</var> be a new promise."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "Queue a task on the task-list of the captured\n                        <a data-cite=\"SCREEN-CAPTURE#dfn-browser\" href=\"https://www.w3.org/TR/screen-capture/#dfn-browser\">browser</a>\n                        <a data-cite=\"SCREEN-CAPTURE#dfn-display-surface\" href=\"https://www.w3.org/TR/screen-capture/#dfn-display-surface\">display surface</a>'s\n                        <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-browsing-context\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\">top-level browsing context</a>'s <a data-link-type=\"dfn|abstract-op\" class=\"respec-offending-element\" title=\"No matching definition found.\" id=\"respec-offender-no-matching-definition-found\">active document</a> to run the\n                        following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>target</var> be the the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s\n                          <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>'s\n                          associated navigator's <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MediaDevices\" data-cite=\"mediacapture-streams\" data-cite-path=\"/\" data-cite-frag=\"dom-mediadevices\" data-type=\"interface\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices\"><code>MediaDevices</code></a> object."
+                },
+                {
+                  "html": "If <var>action</var> is not in <var>target</var>'s\n                          <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"[[RegisteredCaptureActions]]\" href=\"https://w3c.github.io/mediacapture-handle/actions/#dfn-registeredcaptureactions\" class=\"internalDFN\" id=\"ref-for-dfn-registeredcaptureactions-2\"><code>[[RegisteredCaptureActions]]</code></a>, abort these steps."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"concept-event-fire\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <code>\"captureaction\"</code>, using a\n                          <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"CaptureActionEvent\" href=\"https://w3c.github.io/mediacapture-handle/actions/#dom-captureactionevent\" class=\"internalDFN\" id=\"ref-for-dom-captureactionevent-2\"><code>CaptureActionEvent</code></a> with <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"CaptureActionEventInit\" data-xref-for=\"CaptureActionEventInit\" href=\"https://w3c.github.io/mediacapture-handle/actions/#dom-captureactioneventinit-action\" class=\"internalDFN\" id=\"ref-for-dom-captureactioneventinit-action-2\"><code>action</code></a>\n                          set to <var>action</var>, at <var>target</var>."
+                }
+              ]
+            },
+            {
+              "html": "Wait for the event to have been fired."
+            },
+            {
+              "html": "Resolve <var>p</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>p</var>."
+        }
+      ]
+    }
+  ]
+}

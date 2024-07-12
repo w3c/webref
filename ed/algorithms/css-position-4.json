@@ -1,0 +1,313 @@
+{
+  "spec": {
+    "title": "CSS Positioned Layout Module Level 4",
+    "url": "https://drafts.csswg.org/css-position-4/"
+  },
+  "algorithms": [
+    {
+      "name": "paint a document",
+      "href": "https://drafts.csswg.org/css-position-4/#paint-a-document",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-document\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a document</dfn>,\n\tgiven a document <var>doc</var> and an infinite canvas <var>canvas</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-stacking-context\" id=\"ref-for-paint-a-stacking-context\">Paint a stacking context</a> given <var>doc</var>’s root element\n and <var>canvas</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-document\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a document</dfn>,\n\tgiven a document <var>doc</var> and an infinite canvas <var>canvas</var>:",
+          "rationale": "paint",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-stacking-context\" id=\"ref-for-paint-a-stacking-context①\">Paint a stacking context</a> given <var>el</var>’s <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-4/#selectordef-backdrop\" id=\"ref-for-selectordef-backdrop\">::backdrop</a> pseudo-element\nand <var>canvas</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-stacking-context\" id=\"ref-for-paint-a-stacking-context②\">Paint a stacking context</a> given <var>el</var> and <var>canvas</var>,\ntreating <var>el</var> as a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/visuren.html#x43\" id=\"ref-for-x43\">stacking context</a>,\nwith the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#initial-containing-block\" id=\"ref-for-initial-containing-block\">initial containing block</a> as its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block\">containing block</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "paint a stacking context",
+      "href": "https://drafts.csswg.org/css-position-4/#paint-a-stacking-context",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-stacking-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a stacking context</dfn> given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#pseudo-element\" id=\"ref-for-pseudo-element\">pseudo-element</a>, or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#box\" id=\"ref-for-box\">box</a> <var>root</var>,\n\tand an infinite canvas <var>canvas</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>root</var> is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element①\">element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-stacking-context\" id=\"ref-for-paint-a-stacking-context③\">paint a stacking context</a> given <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#principal-box\" id=\"ref-for-principal-box\">principal box</a> and <var>canvas</var>,\nthen return.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>root</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#box\" id=\"ref-for-box①\">box</a>,\nand generates a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/visuren.html#x43\" id=\"ref-for-x43①\">stacking context</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>root</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#root-element\" id=\"ref-for-root-element\">root element’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#principal-box\" id=\"ref-for-principal-box①\">principal box</a>,\npaint <var>root</var>’s background over the entire <var>canvas</var>,\nwith the origin of the background positioning area\nbeing the position on <var>canvas</var> that would be used if <var>root</var>’s background was being painted normally.</p>"
+        },
+        {
+          "html": "<p>If <var>root</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#block-level-box\" id=\"ref-for-block-level-box\">block-level box</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-blocks-decorations\" id=\"ref-for-paint-a-blocks-decorations\">paint a block’s decorations</a> given <var>root</var> and <var>canvas</var>.</p>"
+        },
+        {
+          "html": "<p>For each of <var>root</var>’s positioned descendants\nwith negative (non-zero) <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-z-index\" id=\"ref-for-propdef-z-index\">z-index</a> values,\nsort those descendants by <span class=\"property\" id=\"ref-for-propdef-z-index①\">z-index</span> order (most negative first)\nthen <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order①\">tree order</a>,\nand <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-stacking-context\" id=\"ref-for-paint-a-stacking-context④\">paint a stacking context</a> given each descendant and <var>canvas</var>.</p>"
+        },
+        {
+          "html": "<p>For each of <var>root</var>’s in-flow, non-positioned, block-level descendants,\nin <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order②\">tree order</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-blocks-decorations\" id=\"ref-for-paint-a-blocks-decorations①\">paint a block’s decorations</a> given the descendant and <var>canvas</var>.</p>"
+        },
+        {
+          "html": "<p>For each of <var>root</var>’s non-positioned floating descendants,\nin tree order, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-stacking-container\" id=\"ref-for-paint-a-stacking-container\">paint a stacking container</a> given the descendant and <var>canvas</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-stacking-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a stacking context</dfn> given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#pseudo-element\" id=\"ref-for-pseudo-element\">pseudo-element</a>, or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#box\" id=\"ref-for-box\">box</a> <var>root</var>,\n\tand an infinite canvas <var>canvas</var>:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If root is an inline-level box",
+                  "html": "<p>For each line box <var>root</var> is in, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-box-in-a-line-box\" id=\"ref-for-paint-a-box-in-a-line-box\">paint a box in a line box</a> given <var>root</var>,\nthe line box,\nand <var>canvas</var>.</p>"
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-stacking-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a stacking context</dfn> given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#pseudo-element\" id=\"ref-for-pseudo-element\">pseudo-element</a>, or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#box\" id=\"ref-for-box\">box</a> <var>root</var>,\n\tand an infinite canvas <var>canvas</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If the box is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#replaced-element\" id=\"ref-for-replaced-element\">replaced element</a>,\npaint the replaced content into <var>canvas</var>, atomically.</p>"
+                    },
+                    {
+                      "html": "<p>Otherwise, for each line box of the box, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-box-in-a-line-box\" id=\"ref-for-paint-a-box-in-a-line-box①\">paint a box in a line box</a> given the box,\nthe line box,\nand <var>canvas</var>.</p>"
+                    },
+                    {
+                      "html": "<p>If the UA uses <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#in-band-outline\" id=\"ref-for-in-band-outline\">in-band outlines</a>,\npaint the outlines of the box\ninto <var>canvas</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-stacking-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a stacking context</dfn> given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#pseudo-element\" id=\"ref-for-pseudo-element\">pseudo-element</a>, or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#box\" id=\"ref-for-box\">box</a> <var>root</var>,\n\tand an infinite canvas <var>canvas</var>:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "descendant has z-index: auto",
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-stacking-container\" id=\"ref-for-paint-a-stacking-container①\">Paint a stacking container</a> given the descendant and <var>canvas</var>.</p>"
+                },
+                {
+                  "case": "descendant has z-index: 0",
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-stacking-context\" id=\"ref-for-paint-a-stacking-context⑤\">Paint a stacking context</a> given the descendant and <var>canvas</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>For each of <var>root</var>’s positioned descendants\nwith positive (non-zero) <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-z-index\" id=\"ref-for-propdef-z-index⑥\">z-index</a> values,\nsort those descendants by <span class=\"property\" id=\"ref-for-propdef-z-index⑦\">z-index</span> order (smallest first)\nthen <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order⑤\">tree order</a>,\nand <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-stacking-context\" id=\"ref-for-paint-a-stacking-context⑥\">paint a stacking context</a> given each descendant and <var>canvas</var>.</p>"
+        },
+        {
+          "html": "<p>If the UA uses <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#out-of-band-outline\" id=\"ref-for-out-of-band-outline\">out-of-band outlines</a>,\ndraw all of <var>root</var>’s outlines\n(those that it skipped drawing\ndue to not using <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#in-band-outline\" id=\"ref-for-in-band-outline①\">in-band outlines</a> during the current invocation of this algorithm)\ninto <var>canvas</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "paint a block’s decorations",
+      "href": "https://drafts.csswg.org/css-position-4/#paint-a-blocks-decorations",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-blocks-decorations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a block’s decorations</dfn> given a block box <var>root</var> and a canvas <var>canvas</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-blocks-decorations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a block’s decorations</dfn> given a block box <var>root</var> and a canvas <var>canvas</var>:",
+          "rationale": "paint",
+          "steps": [
+            {
+              "html": "<p>Paint <var>root</var>’s background to <var>canvas</var> if it is not the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#root-element\" id=\"ref-for-root-element①\">root element’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#principal-box\" id=\"ref-for-principal-box②\">principal box</a>.</p>"
+            },
+            {
+              "html": "<p>Paint <var>root</var>’s border to <var>canvas</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-blocks-decorations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a block’s decorations</dfn> given a block box <var>root</var> and a canvas <var>canvas</var>:",
+          "rationale": "paint",
+          "steps": [
+            {
+              "html": "<p>Paint <var>root</var>’s background to <var>canvas</var> if it is not the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#root-element\" id=\"ref-for-root-element②\">root element’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#principal-box\" id=\"ref-for-principal-box③\">principal box</a>.</p>"
+            },
+            {
+              "html": "<p>For each column group of <var>root</var> in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order⑥\">tree order</a>,\npaint the column group’s background to <var>canvas</var>.</p>"
+            },
+            {
+              "html": "<p>For each column of <var>root</var> in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order⑦\">tree order</a>,\npaint the column’s background to <var>canvas</var>.</p>"
+            },
+            {
+              "html": "<p>For each row group of <var>root</var> in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order⑧\">tree order</a>,\npaint the row group’s background to <var>canvas</var>.</p>"
+            },
+            {
+              "html": "<p>For each row of <var>root</var> in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order⑨\">tree order</a>,\npaint the row’s background to <var>canvas</var>.</p>"
+            },
+            {
+              "html": "<p>For each cell of <var>root</var> in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order①⓪\">tree order</a>,\npaint the cell’s background to <var>canvas</var>.</p>"
+            },
+            {
+              "html": "<p>Paint the borders of all of the table elements of <var>root</var>.\nIf the borders are separated,\ndo so in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order①①\">tree order</a>;\nif connected,\ndo so as specified in <a data-link-type=\"biblio\" href=\"https://drafts.csswg.org/css-position-4/#biblio-css-tables-3\" title=\"CSS Table Module Level 3\">[css-tables-3]</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "paint a box in a line box",
+      "href": "https://drafts.csswg.org/css-position-4/#paint-a-box-in-a-line-box",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-box-in-a-line-box\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a box in a line box</dfn>,\n\tgiven a box <var>root</var>,\n\ta line box <var>line box</var>,\n\tand a canvas <var>canvas</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Paint the backgrounds\nof <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragment\" id=\"ref-for-fragment①\">fragments</a> that are in <var>line box</var> into <var>canvas</var>.</p>"
+        },
+        {
+          "html": "<p>Paint the borders\nof <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragment\" id=\"ref-for-fragment②\">fragments</a> that are in <var>line box</var> into <var>canvas</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-box-in-a-line-box\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a box in a line box</dfn>,\n\tgiven a box <var>root</var>,\n\ta line box <var>line box</var>,\n\tand a canvas <var>canvas</var>:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If root is an inline box",
+                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-box-in-a-line-box\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a box in a line box</dfn>,\n\tgiven a box <var>root</var>,\n\ta line box <var>line box</var>,\n\tand a canvas <var>canvas</var>:",
+                  "rationale": ".switch",
+                  "steps": [
+                    {
+                      "operation": "switch",
+                      "steps": [
+                        {
+                          "case": "If this child is a text sequence, then:",
+                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-box-in-a-line-box\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a box in a line box</dfn>,\n\tgiven a box <var>root</var>,\n\ta line box <var>line box</var>,\n\tand a canvas <var>canvas</var>:",
+                          "rationale": "paint",
+                          "steps": [
+                            {
+                              "html": "<p>Paint any underlining affecting the text,\nin tree order of the elements applying the underlining\n(such that the deepest element’s underlining, if any,\nis painted topmost\nand the root element’s underlining, if any,\nis drawn bottommost)\ninto <var>canvas</var>.</p>"
+                            },
+                            {
+                              "html": "<p>Paint any overlining affecting the text,\nin tree order of the elements applying the overlining\n(such that the deepest element’s overlining, if any,\nis painted topmost\nand the root element’s overlining, if any,\nis drawn bottommost)\ninto <var>canvas</var>.</p>"
+                            },
+                            {
+                              "html": "<p>Paint the text into <var>canvas</var>.</p>"
+                            },
+                            {
+                              "html": "<p>Paint any line-through affecting the text,\nin tree order of the elements applying the line-through\n(such that the deepest element’s line-through, if any,\nis painted topmost\nand the root element’s line-through, if any,\nis drawn bottommost)\ninto <var>canvas</var>.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "case": "If this child is a box:",
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-box-in-a-line-box\" id=\"ref-for-paint-a-box-in-a-line-box②\">Paint a box in a line box</a> given the child, <var>line box</var>,\nand <var>canvas</var>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "case": "If root is an inline-level block or table wrapper box",
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-stacking-container\" id=\"ref-for-paint-a-stacking-container②\">Paint a stacking container</a> given <var>root</var> and <var>canvas</var>.</p>"
+                },
+                {
+                  "case": "If root is an inline-level replaced element",
+                  "html": "<p>Paint the replaced content into <var>canvas</var>, atomically.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If the UA uses <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#in-band-outline\" id=\"ref-for-in-band-outline②\">in-band outlines</a>,\npaint the outlines\nof <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#fragment\" id=\"ref-for-fragment⑤\">fragments</a> that are in <var>line box</var> into <var>canvas</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "paint a stacking container",
+      "href": "https://drafts.csswg.org/css-position-4/#paint-a-stacking-container",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"paint-a-stacking-container\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paint a stacking container</dfn>,\n\tgiven a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#box\" id=\"ref-for-box③\">box</a> <var>root</var> and a canvas <var>canvas</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#paint-a-stacking-context\" id=\"ref-for-paint-a-stacking-context⑦\">Paint a stacking context</a> given <var>root</var> and <var>canvas</var>,\ntreating <var>root</var> as if it created a new stacking context,\nbut omitting any positioned descendants\nor descendants that actually create a stacking context\n(letting the parent stacking context paint them, instead).</p>"
+        }
+      ]
+    },
+    {
+      "name": "add an element to the top layer",
+      "href": "https://drafts.csswg.org/css-position-4/#add-an-element-to-the-top-layer",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"add an element to the top layer | add to the top layer\" id=\"add-an-element-to-the-top-layer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add an element to the top layer</dfn>,\n\tgiven an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code> <var>el</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>doc</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document③\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>el</var> is already <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contained</a> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#document-top-layer\" id=\"ref-for-document-top-layer①④\">top layer</a>:</p>\n      <ul>\n       <li data-md=\"\">\n        <p class=\"assertion\">Assert: <var>el</var> is also in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#pending-top-layer-removals\" id=\"ref-for-pending-top-layer-removals③\">pending top layer removals</a>.\n(Otherwise, this is a spec error.)</p>\n       </li><li data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> <var>el</var> from both <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#document-top-layer\" id=\"ref-for-document-top-layer①⑤\">top layer</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#pending-top-layer-removals\" id=\"ref-for-pending-top-layer-removals④\">pending top layer removals</a>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>el</var> to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#document-top-layer\" id=\"ref-for-document-top-layer①⑥\">top layer</a>.</p>"
+        },
+        {
+          "html": "<p>At the UA !important <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-6/#origin\" id=\"ref-for-origin\">cascade origin</a>,\nadd a rule targeting <var>el</var> containing an <a class=\"css\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-position-4/#propdef-overlay\" id=\"ref-for-propdef-overlay④\">overlay: auto</a> declaration.</p>"
+        }
+      ]
+    },
+    {
+      "name": "request an element to be removed from the top layer",
+      "href": "https://drafts.csswg.org/css-position-4/#request-an-element-to-be-removed-from-the-top-layer",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"request an element to be removed from the top layer | request removal from the top layer\" id=\"request-an-element-to-be-removed-from-the-top-layer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">request an element to be removed from the top layer</dfn>,\n\tgiven an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①\">Element</a></code> <var>el</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>doc</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>el</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contained</a> <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#document-top-layer\" id=\"ref-for-document-top-layer①⑦\">top layer</a>,\nor <var>el</var> <em>is</em> already <span id=\"ref-for-list-contain⑤\">contained</span> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#pending-top-layer-removals\" id=\"ref-for-pending-top-layer-removals⑤\">pending top layer removals</a>,\nreturn.</p>"
+        },
+        {
+          "html": "<p>Remove the UA !important <a class=\"css\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-position-4/#propdef-overlay\" id=\"ref-for-propdef-overlay⑤\">overlay: auto</a> rule targeting <var>el</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>el</var> to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#pending-top-layer-removals\" id=\"ref-for-pending-top-layer-removals⑥\">pending top layer removals</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "remove an element from the top layer immediately",
+      "href": "https://drafts.csswg.org/css-position-4/#remove-an-element-from-the-top-layer-immediately",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"remove an element from the top layer immediately | remove from the top layer immediately\" id=\"remove-an-element-from-the-top-layer-immediately\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove an element from the top layer immediately</dfn>,\n\tgiven an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element②\">Element</a></code> <var>el</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>doc</var> be <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑤\">node document</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">Remove</a> <var>el</var> from <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#document-top-layer\" id=\"ref-for-document-top-layer①⑧\">top layer</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#pending-top-layer-removals\" id=\"ref-for-pending-top-layer-removals⑦\">pending top layer removals</a>.</p>"
+        },
+        {
+          "html": "<p>Remove the UA !important <a class=\"css\" data-link-type=\"propdesc\" href=\"https://drafts.csswg.org/css-position-4/#propdef-overlay\" id=\"ref-for-propdef-overlay⑥\">overlay: auto</a> rule targeting <var>el</var>,\nif it exists.</p>"
+        }
+      ]
+    },
+    {
+      "name": "process top layer removals",
+      "href": "https://drafts.csswg.org/css-position-4/#process-top-layer-removals",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-top-layer-removals\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process top layer removals</dfn>,\n\tgiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code> <var>doc</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>For each element <var>el</var> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#pending-top-layer-removals\" id=\"ref-for-pending-top-layer-removals⑧\">pending top layer removals</a>:\nif <var>el</var>’s computed value of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-position-4/#propdef-overlay\" id=\"ref-for-propdef-overlay⑧\">overlay</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-position-4/#valdef-overlay-none\" id=\"ref-for-valdef-overlay-none\">none</a>,\nor <var>el</var> is <a data-link-type=\"dfn\">not rendered</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②\">remove</a> <var>el</var> from <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#document-top-layer\" id=\"ref-for-document-top-layer①⑨\">top layer</a> and <span id=\"ref-for-pending-top-layer-removals⑨\">pending top layer removals</span>.</p>"
+        }
+      ]
+    }
+  ]
+}

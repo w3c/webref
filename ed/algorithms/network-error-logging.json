@@ -1,0 +1,262 @@
+{
+  "spec": {
+    "title": "Network Error Logging",
+    "url": "https://w3c.github.io/network-error-logging/"
+  },
+  "algorithms": [
+    {
+      "name": "phase",
+      "href": "https://w3c.github.io/network-error-logging/#dfn-phase",
+      "html": "Regardless of which fetch algorithm and which underlying application and\n      transport protocols are used, servicing a <a href=\"https://w3c.github.io/network-error-logging/#dfn-network-requests\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-network-requests-7\">network request</a> consists\n      of the following <dfn data-lt=\"phase|phases\" id=\"dfn-phase\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">phases</dfn>:",
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "<dfn id=\"dfn-dns-resolution\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">DNS resolution</dfn>: The user agent uses the Domain Name System\n          [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/network-error-logging/#bib-rfc1034\" title=\"Domain names - concepts and facilities\">RFC1034</a></cite>] to resolve a domain name into an IP address of a\n          <a data-cite=\"!RFC7230#section-2.1\" data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc7230.html#section-2.1\">server</a> can that service HTTP requests to that domain."
+        },
+        {
+          "html": "<dfn id=\"dfn-secure-connection-establishment\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Secure connection establishment</dfn>: The user agent opens a\n          connection to the <a data-cite=\"!RFC7230#section-2.1\" data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc7230.html#section-2.1\">server</a>, and establishes a secure channel over\n          this connection."
+        },
+        {
+          "html": "<dfn id=\"dfn-transmission-of-request-and-response\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Transmission of request and response</dfn>: Once the secure\n          channel is established, the user agent can transmit the HTTP request,\n          and receive the response from the <a data-cite=\"!RFC7230#section-2.1\" data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc7230.html#section-2.1\">server</a>."
+        }
+      ]
+    },
+    {
+      "html": "Given a <a href=\"https://w3c.github.io/network-error-logging/#dfn-network-requests\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-network-requests-18\">network request</a> (<var>request</var>) and its corresponding\n      <a data-cite=\"!FETCH#concept-response\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\">response</a> (<var>response</var>), this algorithm extracts a <a href=\"https://w3c.github.io/network-error-logging/#dfn-nel-policies\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nel-policies-29\">NEL\n        policy</a> for <var>request</var>'s <a data-cite=\"!HTML#origin\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#origin\">origin</a>, and updates the\n      <a href=\"https://w3c.github.io/network-error-logging/#dfn-policy-cache\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-cache-2\">policy cache</a> accordingly.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Abort these steps if any of the following conditions are true:\n\n          <ul>\n            <li>\n              The result of executing the <a data-cite=\"!SECURE-CONTEXTS#is-origin-trustworthy\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy\">\"Is origin potentially\n                trustworthy?\"</a> algorithm on <var>request</var>'s\n              <a data-cite=\"!HTML#origin\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#origin\">origin</a> is <strong>not</strong> <code>Potentially\n                Trustworthy</code>.\n            </li>\n\n            <li>\n              <var>response</var> does not contain a <a data-cite=\"!RFC7231#section-7\" data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc7231.html#section-7\">response header</a>\n              whose name is <code>NEL</code>.\n            </li>\n          </ul>"
+        },
+        {
+          "html": "Let <var>origin</var> be <var>request</var>'s <a data-cite=\"!HTML#origin\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#origin\">origin</a>."
+        },
+        {
+          "html": "Let <var>key</var> be the result of calling <a data-cite=\"!FETCH#determine-the-network-partition-key\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#determine-the-network-partition-key\">determine the network\n          partition key</a>, given <var>request</var>."
+        },
+        {
+          "html": "Let <var>header</var> be the value of the <a data-cite=\"!RFC7231#section-7\" data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc7231.html#section-7\">response header</a> whose\n          name is <code>NEL</code>."
+        },
+        {
+          "html": "Let <var>list</var> be the result of executing the algorithm defined\n          in Section 4 of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/network-error-logging/#bib-http-jfv\" title=\"A JSON Encoding for HTTP Header Field Values\">HTTP-JFV</a></cite>] on <var>header</var>.  If that algorithm\n          results in an error, or if <var>list</var> is empty, abort these\n          steps."
+        },
+        {
+          "html": "Let <var>item</var> be the first element of <var>list</var>."
+        },
+        {
+          "html": "If <var>item</var> has no member named <a href=\"https://w3c.github.io/network-error-logging/#dfn-max_age\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-max_age-2\"><code>max_age</code></a>, or that\n          member's value is not a number, abort these steps."
+        },
+        {
+          "html": "If the value of <var>item</var>'s <a href=\"https://w3c.github.io/network-error-logging/#dfn-max_age\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-max_age-3\"><code>max_age</code></a> member is\n          <code>0</code>, then remove any <a href=\"https://w3c.github.io/network-error-logging/#dfn-nel-policies\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nel-policies-30\">NEL policy</a> from the <a href=\"https://w3c.github.io/network-error-logging/#dfn-policy-cache\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-cache-3\">policy\n            cache</a> whose <a data-lt=\"policy origin\" href=\"https://w3c.github.io/network-error-logging/#dfn-policy-origin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-origin-1\">origin</a> is\n          <var>origin</var>, and skip the remaining steps."
+        },
+        {
+          "html": "If <var>item</var> has no member named <a href=\"https://w3c.github.io/network-error-logging/#dfn-report_to\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-report_to-3\"><code>report_to</code></a>, or that\n          member's value is not a string, abort these steps."
+        },
+        {
+          "html": "If <var>item</var> has a member named <a href=\"https://w3c.github.io/network-error-logging/#dfn-success_fraction\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-success_fraction-1\"><code>success_fraction</code></a>, whose\n          value is not a number in the range 0.0 to 1.0, inclusive, abort these\n          steps."
+        },
+        {
+          "html": "If <var>item</var> has a member named <a href=\"https://w3c.github.io/network-error-logging/#dfn-failure_fraction\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-failure_fraction-1\"><code>failure_fraction</code></a>, whose\n          value is not a number in the range 0.0 to 1.0, inclusive, abort these\n          steps."
+        },
+        {
+          "html": "If <var>item</var> has a member named <a href=\"https://w3c.github.io/network-error-logging/#dfn-request_headers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-request_headers-1\"><code>request_headers</code></a>, whose\n          value is not a list, or if any element of that list is not a string,\n          abort these steps."
+        },
+        {
+          "html": "If <var>item</var> has a member named <a href=\"https://w3c.github.io/network-error-logging/#dfn-response_headers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-response_headers-1\"><code>response_headers</code></a>, whose\n          value is not a list, or if any element of that list is not a string,\n          abort these steps."
+        },
+        {
+          "html": "<p>\n          Let <var>policy</var> be a new <a href=\"https://w3c.github.io/network-error-logging/#dfn-nel-policies\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nel-policies-31\">NEL policy</a> whose properties are\n          set as follows:\n          </p>\n\n          <dl>\n            <dt><a href=\"https://w3c.github.io/network-error-logging/#dfn-received-ip-address\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-received-ip-address-1\">received IP address</a></dt>\n            <dd>\n            the IP address of the <a data-cite=\"!RFC7230#section-2.1\" data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc7230.html#section-2.1\">server</a> that the user agent received\n            <var>response</var> from\n\n            \n            </dd>\n\n            <dt><a data-cite=\"!HTML#origin\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#origin\">origin</a></dt>\n            <dd><var>origin</var></dd>\n\n            <dt><a href=\"https://w3c.github.io/network-error-logging/#dfn-subdomains\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-subdomains-1\">subdomains</a> flag</dt>\n            <dd>\n            <code>include</code> if <var>item</var> has a member named\n            <a href=\"https://w3c.github.io/network-error-logging/#dfn-include_subdomains\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-include_subdomains-1\"><code>include_subdomains</code></a> whose value is <code>true</code>,\n            <code>exclude</code> otherwise\n            </dd>\n\n            <dt><a data-lt=\"policy request headers\" href=\"https://w3c.github.io/network-error-logging/#dfn-policy-request-headers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-request-headers-2\">request headers</a></dt>\n            <dd>\n            the value of <var>item</var>'s <a href=\"https://w3c.github.io/network-error-logging/#dfn-request_headers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-request_headers-2\"><code>request_headers</code></a> member\n            </dd>\n\n            <dt><a data-lt=\"policy response headers\" href=\"https://w3c.github.io/network-error-logging/#dfn-policy-response-headers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-response-headers-2\">response headers</a></dt>\n            <dd>\n            the value of <var>item</var>'s <a href=\"https://w3c.github.io/network-error-logging/#dfn-response_headers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-response_headers-2\"><code>response_headers</code></a> member\n            </dd>\n\n            <dt><a href=\"https://w3c.github.io/network-error-logging/#dfn-reporting-group\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-reporting-group-1\">reporting group</a></dt>\n            <dd>the value of <var>item</var>'s <a href=\"https://w3c.github.io/network-error-logging/#dfn-report_to\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-report_to-4\"><code>report_to</code></a> member</dd>\n\n            <dt><a href=\"https://w3c.github.io/network-error-logging/#dfn-ttl\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ttl-2\">ttl</a></dt>\n            <dd>the value of <var>item</var>'s <a href=\"https://w3c.github.io/network-error-logging/#dfn-max_age\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-max_age-4\"><code>max_age</code></a> member</dd>\n\n            <dt><a href=\"https://w3c.github.io/network-error-logging/#dfn-creation\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-creation-3\">creation</a></dt>\n            <dd>the <a data-cite=\"!HR-TIME#dfn-current-wall-time\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-wall-time\">current wall time</a></dd>\n\n            <dt><a href=\"https://w3c.github.io/network-error-logging/#dfn-successful-sampling-rate\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-successful-sampling-rate-2\">successful sampling rate</a></dt>\n            <dd>\n            the value of <var>item</var>'s <a href=\"https://w3c.github.io/network-error-logging/#dfn-success_fraction\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-success_fraction-2\"><code>success_fraction</code></a> member, if\n            present; <code>0.0</code> otherwise\n            </dd>\n\n            <dt><a href=\"https://w3c.github.io/network-error-logging/#dfn-failure-sampling-rate\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-failure-sampling-rate-2\">failure sampling rate</a></dt>\n            <dd>\n            the value of <var>item</var>'s <a href=\"https://w3c.github.io/network-error-logging/#dfn-failure_fraction\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-failure_fraction-2\"><code>failure_fraction</code></a> member, if\n            present; <code>1.0</code> otherwise\n            </dd>\n          </dl>"
+        },
+        {
+          "html": "If there is already an entry in the <a href=\"https://w3c.github.io/network-error-logging/#dfn-policy-cache\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-cache-4\">policy cache</a> for\n          (<var>key</var>, <var>origin</var>), replace it with \n          <var>policy</var>; otherwise, insert <var>policy</var> into the\n          <a href=\"https://w3c.github.io/network-error-logging/#dfn-policy-cache\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-cache-5\">policy cache</a> for (<var>key</var>, <var>origin</var>)."
+        }
+      ]
+    },
+    {
+      "html": "Given a <a href=\"https://w3c.github.io/network-error-logging/#dfn-network-requests\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-network-requests-19\">network request</a> (<var>request</var>), this algorithm\n      determines which <a href=\"https://w3c.github.io/network-error-logging/#dfn-nel-policies\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nel-policies-32\">NEL policy</a> in the <a href=\"https://w3c.github.io/network-error-logging/#dfn-policy-cache\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-cache-6\">policy cache</a> should be\n      used to generate reports for that <a href=\"https://w3c.github.io/network-error-logging/#dfn-network-requests\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-network-requests-20\">network request</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>origin</var> be <var>request</var>'s <a data-cite=\"!HTML#origin\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#origin\">origin</a>."
+        },
+        {
+          "html": "Let <var>key</var> be the result of calling <a data-cite=\"!FETCH#determine-the-network-partition-key\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#determine-the-network-partition-key\">determine the network\n          partition key</a>, given <var>request</var>."
+        },
+        {
+          "html": "If there is an entry in the <a href=\"https://w3c.github.io/network-error-logging/#dfn-policy-cache\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-cache-7\">policy cache</a> for (<var>key</var>,\n          <var>origin</var>):",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>policy</var> be that entry."
+            },
+            {
+              "html": "If <var>policy</var> is not <a href=\"https://w3c.github.io/network-error-logging/#dfn-expired\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-expired-1\">expired</a>, return it."
+            }
+          ]
+        },
+        {
+          "html": "For each <var>parent origin</var> that is a <a data-cite=\"!RFC6797#section-8.2\" data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc6797#section-8.2\">superdomain match</a>\n          of <var>origin</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If there is an entry in the <a href=\"https://w3c.github.io/network-error-logging/#dfn-policy-cache\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-cache-8\">policy cache</a> for\n              (<var>key</var>, <var>parent origin</var>):",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>policy</var> be that entry."
+                },
+                {
+                  "html": "If <var>policy</var> is not <a href=\"https://w3c.github.io/network-error-logging/#dfn-expired\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-expired-2\">expired</a>, and its\n                  <a href=\"https://w3c.github.io/network-error-logging/#dfn-subdomains\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-subdomains-2\">subdomains</a> flag is <code>include</code>, return it."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <code>no policy</code>."
+        }
+      ]
+    },
+    {
+      "html": "Given a <a href=\"https://w3c.github.io/network-error-logging/#dfn-network-requests\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-network-requests-21\">network request</a> (<var>request</var>) and a <a href=\"https://w3c.github.io/network-error-logging/#dfn-nel-policies\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nel-policies-33\">NEL\n        policy</a> (<var>policy</var>), this algorithm extracts header values\n      from the request as instructed by the policy.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>headers</var> be a new empty ECMAScript object."
+        },
+        {
+          "html": "For each <var>header name</var> in <var>policy</var>'s <a data-lt=\"policy request headers\" href=\"https://w3c.github.io/network-error-logging/#dfn-policy-request-headers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-request-headers-3\">request headers</a> list:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>request</var>'s <a data-lt=\"request header list\" data-cite=\"!FETCH#concept-request-header-list\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\">header\n                list</a> does not <a data-lt=\"header list contains\" data-cite=\"!FETCH#header-list-contains\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\">contain</a>\n              <var>header name</var>, skip to the next <var>header name</var> in\n              the list."
+            },
+            {
+              "html": "Let <var>values</var> be an empty ECMAScript list."
+            },
+            {
+              "html": "For each <var>header</var> in <var>request</var>'s <a data-lt=\"request header list\" data-cite=\"!FETCH#concept-request-header-list\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\">header list</a> whose <a data-lt=\"header name\" data-cite=\"!FETCH#concept-header-name\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\">name</a> is <var>header name</var>, append\n              <var>header</var>'s <a data-lt=\"header value\" data-cite=\"!FETCH#concept-header-value\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-value\">value</a> to\n              <var>values</var>."
+            },
+            {
+              "html": "Add a new property to <var>headers</var> whose name is <var>header\n                name</var> and whose value is <var>values</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>headers</var>."
+        }
+      ]
+    },
+    {
+      "html": "Given a <a data-cite=\"!FETCH#concept-response\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\">response</a> (<var>response</var>) and a <a href=\"https://w3c.github.io/network-error-logging/#dfn-nel-policies\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nel-policies-34\">NEL policy</a>\n      (<var>policy</var>), this algorithm extracts header values from the\n      response as instructed by the policy.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>headers</var> be a new empty ECMAScript object."
+        },
+        {
+          "html": "For each <var>header name</var> in <var>policy</var>'s <a data-lt=\"policy response headers\" href=\"https://w3c.github.io/network-error-logging/#dfn-policy-response-headers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-response-headers-3\">response headers</a> list:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>response</var>'s <a data-lt=\"response header list\" data-cite=\"!FETCH#concept-response-header-list\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\">header\n              list</a> does not <a data-lt=\"header list contains\" data-cite=\"!FETCH#header-list-contains\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\">contain</a>\n              <var>header name</var>, skip to the next <var>header name</var> in\n              the list."
+            },
+            {
+              "html": "Let <var>values</var> be an empty ECMAScript list."
+            },
+            {
+              "html": "For each <var>header</var> in <var>response</var>'s <a data-lt=\"response header list\" data-cite=\"!FETCH#concept-response-header-list\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\">header list</a> whose <a data-lt=\"header name\" data-cite=\"!FETCH#concept-header-name\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\">name</a> is <var>header name</var>, append\n              <var>header</var>'s <a data-lt=\"header value\" data-cite=\"!FETCH#concept-header-value\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-value\">value</a> to\n              <var>values</var>."
+            },
+            {
+              "html": "Add a new property to <var>headers</var> whose name is <var>header\n                name</var> and whose value is <var>values</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>headers</var>."
+        }
+      ]
+    },
+    {
+      "html": "Given a <a href=\"https://w3c.github.io/network-error-logging/#dfn-network-requests\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-network-requests-22\">network request</a> (<var>request</var>) and its corresponding\n      <a data-cite=\"!FETCH#concept-response\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\">response</a> (<var>response</var>), this algorithm generates a report\n      about <var>request</var> if instructed to by any matching <a href=\"https://w3c.github.io/network-error-logging/#dfn-nel-policies\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nel-policies-35\">NEL\n        policy</a>, and returns the report and the NEL policy. Otherwise this\n      algorithm returns null.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the result of executing the <a data-cite=\"!SECURE-CONTEXTS#is-origin-trustworthy\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy\">\"Is origin potentially\n            trustworthy?\"</a> algorithm on <var>request</var>'s <a data-cite=\"!HTML#origin\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#origin\">origin</a> is\n          <strong>not</strong> <code>Potentially Trustworthy</code>, return\n          null."
+        },
+        {
+          "html": "Let <var>origin</var> be <var>request</var>'s <a data-cite=\"!HTML#origin\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#origin\">origin</a>."
+        },
+        {
+          "html": "Let <var>policy</var> be the result of executing <a href=\"https://w3c.github.io/network-error-logging/#choose-a-policy-for-a-request\" class=\"sec-ref\"><bdi class=\"secno\">5.1 </bdi>Choose a policy for a request</a> on <var>request</var>. If\n          <var>policy</var> is <code>no policy</code>, return null."
+        },
+        {
+          "html": "Determine the active sampling rate for this request:\n\n          <ul>\n            <li>\n              If <var>request</var> <a href=\"https://w3c.github.io/network-error-logging/#dfn-succeed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-succeed-5\">succeeded</a>, let <var>sampling rate</var>\n              be <var>policy</var>'s <a href=\"https://w3c.github.io/network-error-logging/#dfn-successful-sampling-rate\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-successful-sampling-rate-3\">successful sampling rate</a>.\n            </li>\n            <li>\n              If <var>request</var> <a href=\"https://w3c.github.io/network-error-logging/#dfn-fail\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-fail-6\">failed</a>, let <var>sampling rate</var>\n              be <var>policy</var>'s <a href=\"https://w3c.github.io/network-error-logging/#dfn-failure-sampling-rate\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-failure-sampling-rate-3\">failure sampling rate</a>.\n            </li>\n          </ul>"
+        },
+        {
+          "html": "Decide whether or not to report on this request.  Let <var>roll</var>\n          be a random number between 0.0 and 1.0, inclusive. If <var>roll</var>\n          ≥ <var>sampling rate</var>, return null."
+        },
+        {
+          "html": "Let <var>report body</var> be a new ECMAScript object with the\n          following properties: [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/network-error-logging/#bib-ecma-262\" title=\"ECMAScript Language Specification\">ECMA-262</a></cite>]\n\n          <dl>\n            <dt><code>sampling_fraction</code></dt>\n            <dd><var>sampling rate</var></dd>\n\n            <dt><code>elapsed_time</code></dt>\n            <dd>\n            The elapsed number of milliseconds between the start of the resource\n            fetch and when it was completed or aborted by the user agent.\n            </dd>\n\n            <dt><code>phase</code></dt>\n            <dd>\n            If <var>request</var> <a href=\"https://w3c.github.io/network-error-logging/#dfn-fail\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-fail-7\">failed</a>, the\n            <a data-lt=\"type-phase\" href=\"https://w3c.github.io/network-error-logging/#dfn-type-phase\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-type-phase-1\">phase</a> of its <a href=\"https://w3c.github.io/network-error-logging/#dfn-network-errors\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-network-errors-5\">network error</a>.  If\n            <var>request</var> <a href=\"https://w3c.github.io/network-error-logging/#dfn-succeed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-succeed-6\">succeeded</a>, <code>\"application\"</code>.\n            </dd>\n\n            <dt><code>type</code></dt>\n            <dd>\n            If <var>request</var> <a href=\"https://w3c.github.io/network-error-logging/#dfn-fail\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-fail-8\">failed</a>, the <a href=\"https://w3c.github.io/network-error-logging/#dfn-types\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-types-2\">type</a> of its\n            <a href=\"https://w3c.github.io/network-error-logging/#dfn-network-errors\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-network-errors-6\">network error</a>.  If <var>request</var> <a href=\"https://w3c.github.io/network-error-logging/#dfn-succeed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-succeed-7\">succeeded</a>,\n            <code>\"ok\"</code>.\n            </dd>\n          </dl>"
+        },
+        {
+          "html": "If <var>report body</var>'s <code>phase</code> property is not\n          <code>dns</code>, append the following properties to <var>report\n          body</var>:\n          <dl>\n            <dt><code>server_ip</code></dt>\n            <dd>The IP address of the <a data-cite=\"!RFC7230#section-2.1\" data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc7230.html#section-2.1\">server</a> to which the user agent sent\n              the request, if available. Otherwise, an empty string.\n              <ul>\n                <li>A host identified by an IPv4 address is represented in\n                  dotted-decimal notation (a sequence of four decimal numbers in\n                  the range 0 to 255, separated by \".\"). [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/network-error-logging/#bib-rfc1123\" title=\"Requirements for Internet Hosts - Application and Support\">RFC1123</a></cite>]</li>\n                <li>A host identified by an IPv6 address is represented as an\n                  ordered list of eight 16-bit pieces (a sequence of\n                  <code>x:x:x:x:x:x:x:x</code>, where the 'x's are one to four hexadecimal\n                  digits of the eight 16-bit pieces of the address). [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/network-error-logging/#bib-rfc4291\" title=\"IP Version 6 Addressing Architecture\">RFC4291</a></cite>]\n                </li>\n              </ul>\n            </dd>\n\n            <dt><code>protocol</code></dt>\n            <dd>\n            The <a data-cite=\"!RESOURCE-TIMING-2#dom-performanceresourcetiming-nexthopprotocol\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/resource-timing/#dom-performanceresourcetiming-nexthopprotocol\">network protocol</a>  used to fetch the resource as\n            identified by the ALPN Protocol ID, if available. Otherwise,\n            <code>\"\"</code>.\n            </dd>\n          </dl>"
+        },
+        {
+          "html": "If <var>report body</var>'s <code>phase</code> property is not\n          <code>dns</code> or <code>connection</code>, append the following\n          properties to <var>report body</var>:\n          <dl>\n            <dt><code>referrer</code></dt>\n            <dd>\n            <var>request</var>'s referrer, as determined by the <a data-cite=\"!REFERRER-POLICY#referrer-policy\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/referrer-policy/#referrer-policy\">referrer\n              policy</a> associated with its <a data-cite=\"!FETCH#concept-request-client\" data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\">client</a>.\n            </dd>\n\n            <dt><code>method</code></dt>\n            <dd><var>request</var>'s <a data-cite=\"!RFC7231#section-4\" data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc7231.html#section-4\">request method</a>.</dd>\n\n            <dt><code>request_headers</code></dt>\n            <dd>\n            The result of executing <a href=\"https://w3c.github.io/network-error-logging/#extract-request-headers\" class=\"sec-ref\"><bdi class=\"secno\">5.2 </bdi>Extract request headers</a> on\n            <var>request</var> and <var>policy</var>.\n            </dd>\n\n            <dt><code>response_headers</code></dt>\n            <dd>\n            The result of executing <a href=\"https://w3c.github.io/network-error-logging/#extract-response-headers\" class=\"sec-ref\"><bdi class=\"secno\">5.3 </bdi>Extract response headers</a> on\n            <var>response</var> and <var>policy</var>.\n            </dd>\n\n            <dt><code>status_code</code></dt>\n            <dd>\n            The <a data-cite=\"!RFC7231#section-6\" data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc7231.html#section-6\">status code</a> of the HTTP response, if available.\n            Otherwise, <code>0</code>.\n            </dd>\n          </dl>"
+        },
+        {
+          "html": "If <var>origin</var> is not equal to <var>policy</var>'s <a data-lt=\"policy origin\" href=\"https://w3c.github.io/network-error-logging/#dfn-policy-origin\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-origin-2\">origin</a>, <var>policy</var>'s\n          <a href=\"https://w3c.github.io/network-error-logging/#dfn-subdomains\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-subdomains-3\">subdomains</a> flag is <code>include</code>, and <var>report\n          body</var>'s <code>phase</code> property is not <code>dns</code>,\n          return null."
+        },
+        {
+          "html": "If <var>report body</var>'s <code>phase</code> property is not\n          <code>dns</code>, and <var>report body</var>'s <code>server_ip</code>\n          property is non-empty and not equal to <var>policy</var>'s <a href=\"https://w3c.github.io/network-error-logging/#dfn-received-ip-address\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-received-ip-address-2\">received\n          IP address</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>report body</var>'s <code>phase</code> to\n              <code>dns</code>."
+            },
+            {
+              "html": "Set <var>report body</var>'s <code>type</code> to\n              <code>dns.address_changed</code>."
+            },
+            {
+              "html": "Clear <var>report body</var>'s <code>request_headers</code>,\n              <code>response_headers</code>, <code>status_code</code>, and\n              <code>elapsed_time</code> properties."
+            },
+            {
+              "html": "Assert: All fields in <var>report body</var> that are derived from\n              information not available during <a href=\"https://w3c.github.io/network-error-logging/#dfn-dns-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-dns-resolution-4\">DNS resolution</a> have been\n              cleared."
+            }
+          ]
+        },
+        {
+          "html": "If <var>policy</var> is <a href=\"https://w3c.github.io/network-error-logging/#dfn-stale\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-stale-1\">stale</a>, then delete <var>policy</var>\n          from the <a href=\"https://w3c.github.io/network-error-logging/#dfn-policy-cache\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-policy-cache-9\">policy cache</a>."
+        },
+        {
+          "html": "Return <var>report body</var> and <var>policy</var>."
+        }
+      ]
+    },
+    {
+      "html": "Given a ECMAScript object (<var>report body</var>, usually returned from\n      <a href=\"https://w3c.github.io/network-error-logging/#generate-a-network-error-report\">Generate a network error\n        report</a> and then augmented by the calling specification) and its\n      matching <a href=\"https://w3c.github.io/network-error-logging/#dfn-nel-policies\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-nel-policies-39\">NEL policy</a> (<var>policy</var>) and <a href=\"https://w3c.github.io/network-error-logging/#dfn-network-requests\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-network-requests-23\">network request</a>\n      (<var>request</var>), this algorithm queues the report for delivery.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>url</var> be <var>request</var>'s URL.</p>"
+        },
+        {
+          "html": "<p>Clear <var>url</var>'s <a data-cite=\"!URL#concept-url-fragment\" data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\">fragment</a>.</p>"
+        },
+        {
+          "html": "If <var>report body</var>'s <code>phase</code> property is\n          <code>dns</code> or <code>connection</code>:",
+          "rationale": "clear",
+          "steps": [
+            {
+              "html": "<p>Clear <var>url</var>'s <a data-cite=\"!URL#concept-url-path\" data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\">path</a> and <a data-cite=\"!URL#concept-url-query\" data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\">query</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-cite=\"!NETWORK-REPORTING#generate-a-network-report\" data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#generate-a-network-report\">Generate a network report</a> given these parameters:</p>\n\n          <dl>\n            <dt>type</dt>\n            <dd><code>network-error</code></dd>\n            <dt>data</dt>\n            <dd><var>report body</var></dd>\n            <dt>endpoint group</dt>\n            <dd><var>policy</var>'s <a href=\"https://w3c.github.io/network-error-logging/#dfn-reporting-group\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-reporting-group-2\">reporting group</a></dd>\n            <dt>url</dt>\n            <dd>The result of running the <a data-cite=\"!URL#concept-url-serializer\" data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\">URL serializer</a> on\n              <var>url</var>.\n            </dd>\n          </dl>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1454 @@
+{
+  "spec": {
+    "title": "Geometry Interfaces Module Level 1",
+    "url": "https://drafts.fxtf.org/geometry-1/"
+  },
+  "algorithms": [
+    {
+      "name": "DOMPointReadOnly/DOMPointReadOnly(x, y, z, w)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-dompointreadonly",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMPointReadOnly\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"DOMPointReadOnly(x, y, z, w)|constructor(x, y, z, w)|DOMPointReadOnly(x, y, z)|constructor(x, y, z)|DOMPointReadOnly(x, y)|constructor(x, y)|DOMPointReadOnly(x)|constructor(x)|DOMPointReadOnly()|constructor()\" id=\"dom-dompointreadonly-dompointreadonly\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>DOMPointReadOnly(<var>x</var>, <var>y</var>, <var>z</var>, <var>w</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMPoint\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"DOMPoint(x, y, z, w)|constructor(x, y, z, w)|DOMPoint(x, y, z)|constructor(x, y, z)|DOMPoint(x, y)|constructor(x, y)|DOMPoint(x)|constructor(x)|DOMPoint()|constructor()\" id=\"dom-dompoint-dompoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>DOMPoint(<var>x</var>, <var>y</var>, <var>z</var>, <var>w</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructors, when invoked, must run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>point</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly⑤\">DOMPointReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint③\">DOMPoint</a></code> object as appropriate.</p>"
+        },
+        {
+          "html": "<p>Set <var>point</var>’s variables <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate\">x coordinate</a> to <var>x</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate\">y coordinate</a> to <var>y</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-z-coordinate\" id=\"ref-for-point-z-coordinate\">z coordinate</a> to <var>z</var> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-w-perspective\" id=\"ref-for-point-w-perspective\">w perspective</a> to <var>w</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>point</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a DOMPointReadOnly from the dictionary",
+      "href": "https://drafts.fxtf.org/geometry-1/#create-a-dompointreadonly-from-the-dictionary",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create a DOMPointReadOnly from the dictionary\" data-noexport=\"\" id=\"create-a-dompointreadonly-from-the-dictionary\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code>DOMPointReadOnly</code> from a dictionary</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> <var>other</var>, or to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create a DOMPoint from the\ndictionary\" data-noexport=\"\" id=\"create-a-dompoint-from-the-dictionary\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code>DOMPoint</code> from a dictionary</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> <var>other</var>, follow these\nsteps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>point</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly⑦\">DOMPointReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint⑤\">DOMPoint</a></code> as appropriate.</p>"
+        },
+        {
+          "html": "<p>Set <var>point</var>’s variables <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate①\">x coordinate</a> to <var>other</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dompointinit-x\" id=\"ref-for-dom-dompointinit-x\">x</a></code> dictionary member, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate①\">y coordinate</a> to <var>other</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dompointinit-y\" id=\"ref-for-dom-dompointinit-y\">y</a></code> dictionary member, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-z-coordinate\" id=\"ref-for-point-z-coordinate①\">z coordinate</a> to <var>other</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dompointinit-z\" id=\"ref-for-dom-dompointinit-z\">z</a></code> dictionary member and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-w-perspective\" id=\"ref-for-point-w-perspective①\">w perspective</a> to <var>other</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dompointinit-w\" id=\"ref-for-dom-dompointinit-w\">w</a></code> dictionary member. </p>"
+        },
+        {
+          "html": "<p>Return <var>point</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMPointReadOnly/matrixTransform(matrix)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-matrixtransform",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMPointReadOnly\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matrixTransform(matrix)|matrixTransform()\" id=\"dom-dompointreadonly-matrixtransform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>matrixTransform(<var>matrix</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>matrixObject</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-dommatrix-from-the-dictionary\" id=\"ref-for-create-a-dommatrix-from-the-dictionary\">create a <code>DOMMatrix</code> from the dictionary</a> <var>matrix</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#transform-a-point-with-a-matrix\" id=\"ref-for-transform-a-point-with-a-matrix\">transform a point with a matrix</a>, given the current\npoint and <var>matrixObject</var>. The current point does not get modified.</p>"
+        }
+      ]
+    },
+    {
+      "name": "transform a point with a matrix",
+      "href": "https://drafts.fxtf.org/geometry-1/#transform-a-point-with-a-matrix",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"transform-a-point-with-a-matrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">transform a <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point\" id=\"ref-for-point\">point</a> with a <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix\" id=\"ref-for-matrix\">matrix</a></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <var>point</var> and <var>matrix</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>x</var> be <var>point</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate⑥\">x coordinate</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>y</var> be <var>point</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate⑥\">y coordinate</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>z</var> be <var>point</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-z-coordinate\" id=\"ref-for-point-z-coordinate④\">z coordinate</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>w</var> be <var>point</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-w-perspective\" id=\"ref-for-point-w-perspective④\">w perspective</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>pointVector</var> be a new column vector with the elements being <var>x</var>, <var>y</var>, <var>z</var>, and <var>w</var>, respectively.</p>\n     <span class=\"MathJax_SVG\" id=\"MathJax-Element-1-Frame\" role=\"textbox\" aria-readonly=\"true\" style=\"display: inline-block;\"><svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 -2550 2386.1967279365654 4600\" style=\"width: 5.542ex; height: 10.684ex; vertical-align: -4.841ex; margin: 1px 0px;\"><g stroke=\"black\" fill=\"black\" stroke-thickness=\"0\" transform=\"matrix(1 0 0 -1 0 0)\"><g transform=\"translate(0,2550)\"><use xlink:href=\"#MJSZ4-23A1\" x=\"0\" y=\"-1164\"></use><g transform=\"translate(0,-2813.9260450160773) scale(1,1.707395498392283)\"><use xlink:href=\"#MJSZ4-23A2\"></use></g><use xlink:href=\"#MJSZ4-23A3\" x=\"0\" y=\"-3946\"></use></g><g transform=\"translate(672,0)\"><g transform=\"translate(167,0)\"><g transform=\"translate(-13,0)\"><use xlink:href=\"#MJMATHI-78\" x=\"72\" y=\"1750\"></use><use xlink:href=\"#MJMATHI-79\" x=\"109\" y=\"550\"></use><use xlink:href=\"#MJMATHI-7A\" x=\"124\" y=\"-650\"></use><use xlink:href=\"#MJMATHI-77\" x=\"0\" y=\"-1850\"></use></g></g></g><g transform=\"translate(1714,2550)\"><use xlink:href=\"#MJSZ4-23A4\" x=\"0\" y=\"-1164\"></use><g transform=\"translate(0,-2813.9260450160773) scale(1,1.707395498392283)\"><use xlink:href=\"#MJSZ4-23A5\"></use></g><use xlink:href=\"#MJSZ4-23A6\" x=\"0\" y=\"-3946\"></use></g></g></svg></span><script type=\"math/mml\" id=\"MathJax-Element-1\"><math display=\"inline\">\n      <mrow>\n       <mfenced close=\"]\" open=\"[\">\n        <mrow>\n         <mtable>\n          <mtr>\n           <mtd>\n            <mi>x</mi>\n           </mtd>\n          </mtr>\n          <mtr>\n           <mtd>\n            <mi>y</mi>\n           </mtd>\n          </mtr>\n          <mtr>\n           <mtd>\n            <mi>z</mi>\n           </mtd>\n          </mtr>\n          <mtr>\n           <mtd>\n            <mi>w</mi>\n           </mtd>\n          </mtr>\n         </mtable>\n        </mrow>\n       </mfenced>\n      </mrow>\n     </math></script>"
+        },
+        {
+          "html": "<p>Set <var>pointVector</var> to <var>pointVector</var> <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#pre-multiply\" id=\"ref-for-pre-multiply\">pre-multiplied</a> by <var>matrix</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>transformedPoint</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint①③\">DOMPoint</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Set <var>transformedPoint</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate⑦\">x coordinate</a> to <var>pointVector</var>’s\nfirst element.</p>"
+        },
+        {
+          "html": "<p>Set <var>transformedPoint</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate⑦\">y coordinate</a> to <var>pointVector</var>’s\nsecond element.</p>"
+        },
+        {
+          "html": "<p>Set <var>transformedPoint</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-z-coordinate\" id=\"ref-for-point-z-coordinate⑤\">z coordinate</a> to <var>pointVector</var>’s\nthird element.</p>"
+        },
+        {
+          "html": "<p>Set <var>transformedPoint</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-w-perspective\" id=\"ref-for-point-w-perspective⑤\">w perspective</a> to <var>pointVector</var>’s\nfourth element.</p>"
+        },
+        {
+          "html": "<p>Return <var>transformedPoint</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMRectReadOnly/DOMRectReadOnly(x, y, width, height)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-domrectreadonly",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMRectReadOnly\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"DOMRectReadOnly(x, y, width, height)|constructor(x, y, width, height)|DOMRectReadOnly(x, y, width)|constructor(x, y, width)|DOMRectReadOnly(x, y)|constructor(x, y)|DOMRectReadOnly(x)|constructor(x)|DOMRectReadOnly()|constructor()\" id=\"dom-domrectreadonly-domrectreadonly\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>DOMRectReadOnly(<var>x</var>, <var>y</var>, <var>width</var>, <var>height</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMRect\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"DOMRect(x, y, width, height)|constructor(x, y, width, height)|DOMRect(x, y, width)|constructor(x, y, width)|DOMRect(x, y)|constructor(x, y)|DOMRect(x)|constructor(x)|DOMRect()|constructor()\" id=\"dom-domrect-domrect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>DOMRect(<var>x</var>, <var>y</var>, <var>width</var>, <var>height</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructors, when invoked, must run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>rect</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly⑥\">DOMRectReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domrect\" id=\"ref-for-domrect②\">DOMRect</a></code> object as appropriate.</p>"
+        },
+        {
+          "html": "<p>Set <var>rect</var>’s variables <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①\">x coordinate</a> to <var>x</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①\">y coordinate</a> to <var>y</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension②\">width dimension</a> to <var>width</var> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension②\">height dimension</a> to <var>height</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>rect</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a DOMRectReadOnly from the dictionary",
+      "href": "https://drafts.fxtf.org/geometry-1/#create-a-domrectreadonly-from-the-dictionary",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create a DOMRectReadOnly from the dictionary\" data-noexport=\"\" id=\"create-a-domrectreadonly-from-the-dictionary\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code>DOMRectReadOnly</code> from a dictionary</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> <var>other</var>, or to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create a DOMRect from the\ndictionary\" data-noexport=\"\" id=\"create-a-domrect-from-the-dictionary\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code>DOMRect</code> from a dictionary</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> <var>other</var>, follow these\nsteps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>rect</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly⑧\">DOMRectReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domrect\" id=\"ref-for-domrect④\">DOMRect</a></code> as appropriate.</p>"
+        },
+        {
+          "html": "<p>Set <var>rect</var>’s variables <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate②\">x coordinate</a> to <var>other</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrectinit-x\" id=\"ref-for-dom-domrectinit-x\">x</a></code> dictionary member, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate②\">y coordinate</a> to <var>other</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrectinit-y\" id=\"ref-for-dom-domrectinit-y\">y</a></code> dictionary member, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension③\">width dimension</a> to <var>other</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrectinit-width\" id=\"ref-for-dom-domrectinit-width\">width</a></code> dictionary member and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension③\">height dimension</a> to <var>other</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrectinit-height\" id=\"ref-for-dom-domrectinit-height\">height</a></code> dictionary member.</p>"
+        },
+        {
+          "html": "<p>Return <var>rect</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMQuad/DOMQuad(p1, p2, p3, p4)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-domquad-domquad",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMQuad\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"DOMQuad(p1, p2, p3, p4)|constructor(p1, p2, p3, p4)|DOMQuad(p1, p2, p3)|constructor(p1, p2, p3)|DOMQuad(p1, p2)|constructor(p1, p2)|DOMQuad(p1)|constructor(p1)|DOMQuad()|constructor()\" id=\"dom-domquad-domquad\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>DOMQuad(<var>p1</var>, <var>p2</var>, <var>p3</var>, <var>p4</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor, when invoked, must run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>point1</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint②⓪\">DOMPoint</a></code> object with its attributes set to the values of\nthe namesake dictionary members in <var>p1</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>point2</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint②①\">DOMPoint</a></code> object with its attributes set to the values of\nthe namesake dictionary members in <var>p2</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>point3</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint②②\">DOMPoint</a></code> object with its attributes set to the values of\nthe namesake dictionary members in <var>p3</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>point4</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint②③\">DOMPoint</a></code> object with its attributes set to the values of\nthe namesake dictionary members in <var>p4</var>.</p>"
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domquad\" id=\"ref-for-domquad⑥\">DOMQuad</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-1\" id=\"ref-for-quadrilateral-point-1\">point 1</a> set to <var>point1</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-2\" id=\"ref-for-quadrilateral-point-2\">point 2</a> set to <var>point2</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-3\" id=\"ref-for-quadrilateral-point-3\">point 3</a> set to <var>point3</var> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-4\" id=\"ref-for-quadrilateral-point-4\">point 4</a> set to <var>point4</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a DOMQuad from the DOMRectInit dictionary",
+      "href": "https://drafts.fxtf.org/geometry-1/#create-a-domquad-from-the-domrectinit-dictionary",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create a DOMQuad from the DOMRectInit dictionary\" data-noexport=\"\" id=\"create-a-domquad-from-the-domrectinit-dictionary\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code>DOMQuad</code> from\na <code>DOMRectInit</code> dictionary</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> <var>other</var>, follow these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>x</var>, <var>y</var>, <var>width</var> and <var>height</var> be the value of <var>other</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrectinit-x\" id=\"ref-for-dom-domrectinit-x①\">x</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrectinit-y\" id=\"ref-for-dom-domrectinit-y①\">y</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrectinit-width\" id=\"ref-for-dom-domrectinit-width①\">width</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrectinit-height\" id=\"ref-for-dom-domrectinit-height①\">height</a></code> dictionary members, respectively. </p>"
+        },
+        {
+          "html": "<p>Let <var>point1</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint②⑤\">DOMPoint</a></code> object with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate⑧\">x coordinate</a> set to <var>x</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate⑧\">y coordinate</a> set to <var>y</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-z-coordinate\" id=\"ref-for-point-z-coordinate⑦\">z coordinate</a> set\nto <span class=\"css\">0</span> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-w-perspective\" id=\"ref-for-point-w-perspective⑦\">w perspective</a> set to <span class=\"css\">1</span>.</p>"
+        },
+        {
+          "html": "<p>Let <var>point2</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint②⑥\">DOMPoint</a></code> object with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate⑨\">x coordinate</a> set to <var>x</var> + <var>width</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate⑨\">y coordinate</a> set to <var>y</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-z-coordinate\" id=\"ref-for-point-z-coordinate⑧\">z\ncoordinate</a> set to <span class=\"css\">0</span> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-w-perspective\" id=\"ref-for-point-w-perspective⑧\">w perspective</a> set to <span class=\"css\">1</span>.</p>"
+        },
+        {
+          "html": "<p>Let <var>point3</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint②⑦\">DOMPoint</a></code> object with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate①⓪\">x coordinate</a> set to <var>x</var> + <var>width</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate①⓪\">y coordinate</a> set to <var>y</var> + <var>height</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-z-coordinate\" id=\"ref-for-point-z-coordinate⑨\">z coordinate</a> set to <span class=\"css\">0</span> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-w-perspective\" id=\"ref-for-point-w-perspective⑨\">w perspective</a> set to <span class=\"css\">1</span>.</p>"
+        },
+        {
+          "html": "<p>Let <var>point4</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint②⑧\">DOMPoint</a></code> object with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate①①\">x coordinate</a> set to <var>x</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate①①\">y coordinate</a> set to <var>y</var> + <var>height</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-z-coordinate\" id=\"ref-for-point-z-coordinate①⓪\">z\ncoordinate</a> set to <span class=\"css\">0</span> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-w-perspective\" id=\"ref-for-point-w-perspective①⓪\">w perspective</a> set to <span class=\"css\">1</span>.</p>"
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domquad\" id=\"ref-for-domquad⑧\">DOMQuad</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-1\" id=\"ref-for-quadrilateral-point-1①\">point 1</a> set to <var>point1</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-2\" id=\"ref-for-quadrilateral-point-2①\">point 2</a> set to <var>point2</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-3\" id=\"ref-for-quadrilateral-point-3①\">point 3</a> set to <var>point3</var> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-4\" id=\"ref-for-quadrilateral-point-4①\">point 4</a> set to <var>point4</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a DOMQuad from the DOMQuadInit dictionary",
+      "href": "https://drafts.fxtf.org/geometry-1/#create-a-domquad-from-the-domquadinit-dictionary",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create a DOMQuad from the DOMQuadInit dictionary\" data-noexport=\"\" id=\"create-a-domquad-from-the-domquadinit-dictionary\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code>DOMQuad</code> from\na <code>DOMQuadInit</code> dictionary</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> <var>other</var>, follow these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>point1</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-dompoint-from-the-dictionary\" id=\"ref-for-create-a-dompoint-from-the-dictionary①\">create a <code>DOMPoint</code> from the\ndictionary</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domquadinit-p1\" id=\"ref-for-dom-domquadinit-p1\">p1</a></code> dictionary member of <var>other</var>, if it exists.</p>"
+        },
+        {
+          "html": "<p>Let <var>point2</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-dompoint-from-the-dictionary\" id=\"ref-for-create-a-dompoint-from-the-dictionary②\">create a <code>DOMPoint</code> from the\ndictionary</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domquadinit-p2\" id=\"ref-for-dom-domquadinit-p2\">p2</a></code> dictionary member of <var>other</var>, if it exists.</p>"
+        },
+        {
+          "html": "<p>Let <var>point3</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-dompoint-from-the-dictionary\" id=\"ref-for-create-a-dompoint-from-the-dictionary③\">create a <code>DOMPoint</code> from the\ndictionary</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domquadinit-p3\" id=\"ref-for-dom-domquadinit-p3\">p3</a></code> dictionary member of <var>other</var>, if it exists.</p>"
+        },
+        {
+          "html": "<p>Let <var>point4</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-dompoint-from-the-dictionary\" id=\"ref-for-create-a-dompoint-from-the-dictionary④\">create a <code>DOMPoint</code> from the\ndictionary</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domquadinit-p4\" id=\"ref-for-dom-domquadinit-p4\">p4</a></code> dictionary member of <var>other</var>, if it exists.</p>"
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domquad\" id=\"ref-for-domquad①⓪\">DOMQuad</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-1\" id=\"ref-for-quadrilateral-point-1②\">point 1</a> set to <var>point1</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-2\" id=\"ref-for-quadrilateral-point-2②\">point 2</a> set to <var>point2</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-3\" id=\"ref-for-quadrilateral-point-3②\">point 3</a> set to <var>point3</var> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-4\" id=\"ref-for-quadrilateral-point-4②\">point 4</a> set to <var>point4</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMQuad/getBounds()",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-domquad-getbounds",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMQuad\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-domquad-getbounds\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getBounds()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run the following\nalgorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>bounds</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domrect\" id=\"ref-for-domrect①④\">DOMRect</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Let <var>left</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#nan-safe-minimum\" id=\"ref-for-nan-safe-minimum②\">NaN-safe minimum</a> of <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-1\" id=\"ref-for-quadrilateral-point-1④\">point 1</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate①②\">x coordinate</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-2\" id=\"ref-for-quadrilateral-point-2④\">point 2</a>’s <span id=\"ref-for-point-x-coordinate①③\">x coordinate</span>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-3\" id=\"ref-for-quadrilateral-point-3④\">point 3</a>’s <span id=\"ref-for-point-x-coordinate①④\">x coordinate</span> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-4\" id=\"ref-for-quadrilateral-point-4④\">point\n4</a>’s <span id=\"ref-for-point-x-coordinate①⑤\">x coordinate</span>.</p>"
+        },
+        {
+          "html": "<p>Let <var>top</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#nan-safe-minimum\" id=\"ref-for-nan-safe-minimum③\">NaN-safe minimum</a> of <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-1\" id=\"ref-for-quadrilateral-point-1⑤\">point 1</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate①②\">y coordinate</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-2\" id=\"ref-for-quadrilateral-point-2⑤\">point 2</a>’s <span id=\"ref-for-point-y-coordinate①③\">y coordinate</span>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-3\" id=\"ref-for-quadrilateral-point-3⑤\">point 3</a>’s <span id=\"ref-for-point-y-coordinate①④\">y coordinate</span> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-4\" id=\"ref-for-quadrilateral-point-4⑤\">point\n4</a>’s <span id=\"ref-for-point-y-coordinate①⑤\">y coordinate</span>.</p>"
+        },
+        {
+          "html": "<p>Let <var>right</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#nan-safe-maximum\" id=\"ref-for-nan-safe-maximum②\">NaN-safe maximum</a> of <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-1\" id=\"ref-for-quadrilateral-point-1⑥\">point 1</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate①⑥\">x coordinate</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-2\" id=\"ref-for-quadrilateral-point-2⑥\">point 2</a>’s <span id=\"ref-for-point-x-coordinate①⑦\">x coordinate</span>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-3\" id=\"ref-for-quadrilateral-point-3⑥\">point 3</a>’s <span id=\"ref-for-point-x-coordinate①⑧\">x coordinate</span> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-4\" id=\"ref-for-quadrilateral-point-4⑥\">point\n4</a>’s <span id=\"ref-for-point-x-coordinate①⑨\">x coordinate</span>.</p>"
+        },
+        {
+          "html": "<p>Let <var>bottom</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#nan-safe-maximum\" id=\"ref-for-nan-safe-maximum③\">NaN-safe maximum</a> of <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-1\" id=\"ref-for-quadrilateral-point-1⑦\">point 1</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate①⑥\">y coordinate</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-2\" id=\"ref-for-quadrilateral-point-2⑦\">point 2</a>’s <span id=\"ref-for-point-y-coordinate①⑦\">y coordinate</span>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-3\" id=\"ref-for-quadrilateral-point-3⑦\">point 3</a>’s <span id=\"ref-for-point-y-coordinate①⑧\">y coordinate</span> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-4\" id=\"ref-for-quadrilateral-point-4⑦\">point\n4</a>’s <span id=\"ref-for-point-y-coordinate①⑨\">y coordinate</span>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate⑨\">x coordinate</a> of <var>bounds</var> to <var>left</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate⑨\">y coordinate</a> of <var>bounds</var> to <var>top</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑧\">width\ndimension</a> of <var>bounds</var> to <var>right</var> - <var>left</var> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑧\">height dimension</a> of <var>bounds</var> to <var>bottom</var> - <var>top</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>bounds</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "matrix/validate and fixup (2D)",
+      "href": "https://drafts.fxtf.org/geometry-1/#matrix-validate-and-fixup-2d",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"matrix\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matrix-validate-and-fixup-2d\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">validate and fixup (2D)</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dictdef-dommatrix2dinit\" id=\"ref-for-dictdef-dommatrix2dinit①\">DOMMatrix2DInit</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dictdef-dommatrixinit\" id=\"ref-for-dictdef-dommatrixinit⑥\">DOMMatrixInit</a></code> dictionary <var>dict</var>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If if at least one of the following conditions are true for <var>dict</var>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code> exception and abort these steps.</p>\n     <ul>\n      <li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-a\" id=\"ref-for-dom-dommatrix2dinit-a\">a</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m11\" id=\"ref-for-dom-dommatrix2dinit-m11\">m11</a></code> are both present and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-samevaluezero\" id=\"ref-for-sec-samevaluezero\">SameValueZero</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-a\" id=\"ref-for-dom-dommatrix2dinit-a①\">a</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m11\" id=\"ref-for-dom-dommatrix2dinit-m11①\">m11</a></code>) is <code>false</code>.</p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-b\" id=\"ref-for-dom-dommatrix2dinit-b\">b</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m12\" id=\"ref-for-dom-dommatrix2dinit-m12\">m12</a></code> are both present and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-samevaluezero\" id=\"ref-for-sec-samevaluezero①\">SameValueZero</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-b\" id=\"ref-for-dom-dommatrix2dinit-b①\">b</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m12\" id=\"ref-for-dom-dommatrix2dinit-m12①\">m12</a></code>) is <code>false</code>.</p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-c\" id=\"ref-for-dom-dommatrix2dinit-c\">c</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m21\" id=\"ref-for-dom-dommatrix2dinit-m21\">m21</a></code> are both present and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-samevaluezero\" id=\"ref-for-sec-samevaluezero②\">SameValueZero</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-c\" id=\"ref-for-dom-dommatrix2dinit-c①\">c</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m21\" id=\"ref-for-dom-dommatrix2dinit-m21①\">m21</a></code>) is <code>false</code>.</p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-d\" id=\"ref-for-dom-dommatrix2dinit-d\">d</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m22\" id=\"ref-for-dom-dommatrix2dinit-m22\">m22</a></code> are both present and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-samevaluezero\" id=\"ref-for-sec-samevaluezero③\">SameValueZero</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-d\" id=\"ref-for-dom-dommatrix2dinit-d①\">d</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m22\" id=\"ref-for-dom-dommatrix2dinit-m22①\">m22</a></code>) is <code>false</code>.</p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-e\" id=\"ref-for-dom-dommatrix2dinit-e\">e</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m41\" id=\"ref-for-dom-dommatrix2dinit-m41\">m41</a></code> are both present and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-samevaluezero\" id=\"ref-for-sec-samevaluezero④\">SameValueZero</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-e\" id=\"ref-for-dom-dommatrix2dinit-e①\">e</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m41\" id=\"ref-for-dom-dommatrix2dinit-m41①\">m41</a></code>) is <code>false</code>.</p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-f\" id=\"ref-for-dom-dommatrix2dinit-f\">f</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m42\" id=\"ref-for-dom-dommatrix2dinit-m42\">m42</a></code> are both present and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-samevaluezero\" id=\"ref-for-sec-samevaluezero⑤\">SameValueZero</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-f\" id=\"ref-for-dom-dommatrix2dinit-f①\">f</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m42\" id=\"ref-for-dom-dommatrix2dinit-m42①\">m42</a></code>) is <code>false</code>.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m11\" id=\"ref-for-dom-dommatrix2dinit-m11②\">m11</a></code> is not present then set it to the value of member <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-a\" id=\"ref-for-dom-dommatrix2dinit-a②\">a</a></code>, or value <span class=\"css\">1</span> if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-a\" id=\"ref-for-dom-dommatrix2dinit-a③\">a</a></code> is also not present.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m12\" id=\"ref-for-dom-dommatrix2dinit-m12②\">m12</a></code> is not present then set it to the value of member <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-b\" id=\"ref-for-dom-dommatrix2dinit-b②\">b</a></code>, or value <span class=\"css\">0</span> if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-b\" id=\"ref-for-dom-dommatrix2dinit-b③\">b</a></code> is also not present.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m21\" id=\"ref-for-dom-dommatrix2dinit-m21②\">m21</a></code> is not present then set it to the value of member <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-c\" id=\"ref-for-dom-dommatrix2dinit-c②\">c</a></code>, or value <span class=\"css\">0</span> if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-c\" id=\"ref-for-dom-dommatrix2dinit-c③\">c</a></code> is also not present.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m22\" id=\"ref-for-dom-dommatrix2dinit-m22②\">m22</a></code> is not present then set it to the value of member <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-d\" id=\"ref-for-dom-dommatrix2dinit-d②\">d</a></code>, or value <span class=\"css\">1</span> if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-d\" id=\"ref-for-dom-dommatrix2dinit-d③\">d</a></code> is also not present.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m41\" id=\"ref-for-dom-dommatrix2dinit-m41②\">m41</a></code> is not present then set it to the value of member <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-e\" id=\"ref-for-dom-dommatrix2dinit-e②\">e</a></code>, or value <span class=\"css\">0</span> if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-e\" id=\"ref-for-dom-dommatrix2dinit-e③\">e</a></code> is also not present.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m42\" id=\"ref-for-dom-dommatrix2dinit-m42②\">m42</a></code> is not present then set it to the value of member <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-f\" id=\"ref-for-dom-dommatrix2dinit-f②\">f</a></code>, or value <span class=\"css\">0</span> if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-f\" id=\"ref-for-dom-dommatrix2dinit-f③\">f</a></code> is also not present.</p>"
+        }
+      ]
+    },
+    {
+      "name": "matrix/validate and fixup",
+      "href": "https://drafts.fxtf.org/geometry-1/#matrix-validate-and-fixup",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"matrix\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matrix-validate-and-fixup\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">validate and fixup</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dictdef-dommatrixinit\" id=\"ref-for-dictdef-dommatrixinit⑦\">DOMMatrixInit</a></code> dictionary <var>dict</var>,\nrun the following steps:",
+      "rationale": "validate",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-validate-and-fixup-2d\" id=\"ref-for-matrix-validate-and-fixup-2d\">Validate and fixup (2D)</a> <var>dict</var>.</p>\n     <p></p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-is2d\" id=\"ref-for-dom-dommatrixinit-is2d\">is2D</a></code> is <code>true</code> and: at least one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m13\" id=\"ref-for-dom-dommatrixinit-m13\">m13</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m14\" id=\"ref-for-dom-dommatrixinit-m14\">m14</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m23\" id=\"ref-for-dom-dommatrixinit-m23\">m23</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m24\" id=\"ref-for-dom-dommatrixinit-m24\">m24</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m31\" id=\"ref-for-dom-dommatrixinit-m31\">m31</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m32\" id=\"ref-for-dom-dommatrixinit-m32\">m32</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m34\" id=\"ref-for-dom-dommatrixinit-m34\">m34</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m43\" id=\"ref-for-dom-dommatrixinit-m43\">m43</a></code> are present with a value other\nthan <span class=\"css\">0</span> or <span class=\"css\">-0</span>, or at least one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m33\" id=\"ref-for-dom-dommatrixinit-m33\">m33</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m44\" id=\"ref-for-dom-dommatrixinit-m44\">m44</a></code> are present\nwith a value other than <span class=\"css\">1</span>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code> exception and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-is2d\" id=\"ref-for-dom-dommatrixinit-is2d①\">is2D</a></code> is not present and at least one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m13\" id=\"ref-for-dom-dommatrixinit-m13①\">m13</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m14\" id=\"ref-for-dom-dommatrixinit-m14①\">m14</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m23\" id=\"ref-for-dom-dommatrixinit-m23①\">m23</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m24\" id=\"ref-for-dom-dommatrixinit-m24①\">m24</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m31\" id=\"ref-for-dom-dommatrixinit-m31①\">m31</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m32\" id=\"ref-for-dom-dommatrixinit-m32①\">m32</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m34\" id=\"ref-for-dom-dommatrixinit-m34①\">m34</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m43\" id=\"ref-for-dom-dommatrixinit-m43①\">m43</a></code> are present with a value other\nthan <span class=\"css\">0</span> or <span class=\"css\">-0</span>, or at least one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m33\" id=\"ref-for-dom-dommatrixinit-m33①\">m33</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m44\" id=\"ref-for-dom-dommatrixinit-m44①\">m44</a></code> are present\nwith a value other than <span class=\"css\">1</span>, set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-is2d\" id=\"ref-for-dom-dommatrixinit-is2d②\">is2D</a></code> to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-is2d\" id=\"ref-for-dom-dommatrixinit-is2d③\">is2D</a></code> is still not present, set it to <code>true</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a string into an abstract matrix",
+      "href": "https://drafts.fxtf.org/geometry-1/#parse-a-string-into-an-abstract-matrix",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-string-into-an-abstract-matrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a string into an abstract matrix</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a string <var>transformList</var>,\nmeans to run the following steps. It will either return a <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#4x4-abstract-matrix\" id=\"ref-for-4x4-abstract-matrix\">4x4 abstract matrix</a> and a boolean <var>2dTransform</var>, or failure.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>transformList</var> is the empty string, set it to the string \"<code>matrix(1, 0, 0,\n1, 0, 0)</code>\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">Parse</a> <var>transformList</var> into <var>parsedValue</var> given the grammar\nfor the CSS <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-transforms-1/#propdef-transform\" id=\"ref-for-propdef-transform\">transform</a> property. The result will be a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-transforms-1/#typedef-transform-list\" id=\"ref-for-typedef-transform-list\">&lt;transform-list&gt;</a>, the keyword <span class=\"css\">none</span>, or failure. If <var>parsedValue</var> is failure, or any <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-transforms-2/#typedef-transform-function\" id=\"ref-for-typedef-transform-function\">&lt;transform-function&gt;</a> has <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#length-value\" id=\"ref-for-length-value\" title=\"Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | lvb | lvh | lvi | lvmax | lvmin | lvw | mm | pc | pt | px | q | rcap | rch | rem | rex | ric | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw\">&lt;length&gt;</a> values without <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#absolute-length\" id=\"ref-for-absolute-length\">absolute length</a> units, or any keyword other\nthan <span class=\"css\">none</span> is used, then return failure. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-syntax\" title=\"CSS Syntax Module Level 3\">[CSS3-SYNTAX]</a> <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p>If <var>parsedValue</var> is <span class=\"css\">none</span>, set <var>parsedValue</var> to a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-transforms-1/#typedef-transform-list\" id=\"ref-for-typedef-transform-list①\">&lt;transform-list&gt;</a> containing a single identity matrix.</p>"
+        },
+        {
+          "html": "Let <var>2dTransform</var> track the 2D/3D dimension status of <var>parsedValue</var>.",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If parsedValue consists of any three-dimensional transform functions",
+                  "html": "<p>Set <var>2dTransform</var> to <code>false</code>.</p>"
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "<p>Set <var>2dTransform</var> to <code>true</code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Transform all <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-transforms-2/#typedef-transform-function\" id=\"ref-for-typedef-transform-function①\">&lt;transform-function&gt;</a>s to <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#4x4-abstract-matrix\" id=\"ref-for-4x4-abstract-matrix①\">4x4 abstract\nmatrices</a> by following the “<a href=\"https://drafts.csswg.org/css-transforms-1/#mathematical-description\">Mathematical Description\nof Transform Functions</a>”. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p>Let <var>matrix</var> be a <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#4x4-abstract-matrix\" id=\"ref-for-4x4-abstract-matrix②\">4x4 abstract matrix</a> as shown in the initial\nfigure of this section. <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply\">Post-multiply</a> all matrices from left to right and set <var>matrix</var> to this product.</p>"
+        },
+        {
+          "html": "<p>Return <var>matrix</var> and <var>2dTransform</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a 2d matrix",
+      "href": "https://drafts.fxtf.org/geometry-1/#create-a-2d-matrix",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-2d-matrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a 2d matrix</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of type <var>type</var> being either <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly⑨\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix③②\">DOMMatrix</a></code>, with a sequence <var>init</var> of 6 elements, follow these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>matrix</var> be a new instance of <var>type</var>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m11-element\" id=\"ref-for-matrix-m11-element\">m11 element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m12-element\" id=\"ref-for-matrix-m12-element\">m12 element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m21-element\" id=\"ref-for-matrix-m21-element\">m21\nelement</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m22-element\" id=\"ref-for-matrix-m22-element\">m22 element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m41-element\" id=\"ref-for-matrix-m41-element\">m41 element</a> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m42-element\" id=\"ref-for-matrix-m42-element\">m42\nelement</a> to the values of <var>init</var> in order starting with the first value.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m13-element\" id=\"ref-for-matrix-m13-element\">m13 element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m14-element\" id=\"ref-for-matrix-m14-element\">m14 element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m23-element\" id=\"ref-for-matrix-m23-element\">m23\nelement</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m24-element\" id=\"ref-for-matrix-m24-element\">m24 element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m31-element\" id=\"ref-for-matrix-m31-element\">m31 element</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m32-element\" id=\"ref-for-matrix-m32-element\">m32\nelement</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m34-element\" id=\"ref-for-matrix-m34-element\">m34 element</a>, and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m43-element\" id=\"ref-for-matrix-m43-element\">m43 element</a> to <span class=\"css\">0</span>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m33-element\" id=\"ref-for-matrix-m33-element\">m33 element</a> and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m44-element\" id=\"ref-for-matrix-m44-element\">m44 element</a> to <span class=\"css\">1</span>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d②\">is 2D</a> to <code>true</code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>matrix</var></p>"
+        }
+      ]
+    },
+    {
+      "name": "create a 3d matrix",
+      "href": "https://drafts.fxtf.org/geometry-1/#create-a-3d-matrix",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-3d-matrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a 3d matrix</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with <var>type</var> being either <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①⓪\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix③③\">DOMMatrix</a></code>, with a sequence <var>init</var> of 16 elements, follow these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>matrix</var> be a new instance of <var>type</var>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m11-element\" id=\"ref-for-matrix-m11-element①\">m11 element</a> to <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m44-element\" id=\"ref-for-matrix-m44-element①\">m44 element</a> to the values of <var>init</var> in column-major order.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d③\">is 2D</a> to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>matrix</var></p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/DOMMatrixReadOnly(init)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-dommatrixreadonly",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMMatrixReadOnly\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"DOMMatrixReadOnly(init)|constructor(init)|DOMMatrixReadOnly()|constructor()\" id=\"dom-dommatrixreadonly-dommatrixreadonly\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>DOMMatrixReadOnly(<var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> and the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMMatrix\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"DOMMatrix(init)|constructor(init)|DOMMatrix()|constructor()\" id=\"dom-dommatrix-dommatrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>DOMMatrix(<var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructors\nmust follow these steps:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If init is omitted",
+              "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-2d-matrix\" id=\"ref-for-create-a-2d-matrix\">create a 2d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①①\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix③④\">DOMMatrix</a></code> as appropriate, with the sequence [<span class=\"css\">1</span>, <span class=\"css\">0</span>, <span class=\"css\">0</span>, <span class=\"css\">1</span>, <span class=\"css\">0</span>, <span class=\"css\">0</span>].</p>"
+            },
+            {
+              "case": "If init is a DOMString",
+              "html": "",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object\">current global object</a> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code> object, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code> exception.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#parse-a-string-into-an-abstract-matrix\" id=\"ref-for-parse-a-string-into-an-abstract-matrix\">Parse <var>init</var> into an abstract\nmatrix</a>, and let <var>matrix</var> and <var>2dTransform</var> be the result. If the result is\nfailure, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+                },
+                {
+                  "html": "<dl class=\"switch\">\n        <dt data-md=\"\">If <var>2dTransform</var> is <code>true</code>\n        </dt><dd data-md=\"\">\n         <p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-2d-matrix\" id=\"ref-for-create-a-2d-matrix①\">create a 2d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①②\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix③⑤\">DOMMatrix</a></code> as appropriate, with a sequence of numbers, the values being the elements <var>m11</var>, <var>m12</var>, <var>m21</var>, <var>m22</var>, <var>m41</var> and <var>m42</var> of <var>matrix</var>.</p>\n        </dd><dt data-md=\"\">Otherwise\n        </dt><dd data-md=\"\">\n         <p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-3d-matrix\" id=\"ref-for-create-a-3d-matrix\">create a 3d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①③\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix③⑥\">DOMMatrix</a></code> as appropriate, with a sequence of numbers, the values being the 16 elements of <var>matrix</var>.</p>\n       </dd></dl>",
+                  "rationale": ".switch",
+                  "steps": [
+                    {
+                      "operation": "switch",
+                      "steps": [
+                        {
+                          "case": "If 2dTransform is true",
+                          "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-2d-matrix\" id=\"ref-for-create-a-2d-matrix①\">create a 2d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①②\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix③⑤\">DOMMatrix</a></code> as appropriate, with a sequence of numbers, the values being the elements <var>m11</var>, <var>m12</var>, <var>m21</var>, <var>m22</var>, <var>m41</var> and <var>m42</var> of <var>matrix</var>.</p>"
+                        },
+                        {
+                          "case": "Otherwise",
+                          "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-3d-matrix\" id=\"ref-for-create-a-3d-matrix\">create a 3d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①③\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix③⑥\">DOMMatrix</a></code> as appropriate, with a sequence of numbers, the values being the 16 elements of <var>matrix</var>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "case": "If init is a sequence with 6 elements",
+              "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-2d-matrix\" id=\"ref-for-create-a-2d-matrix②\">create a 2d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①④\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix③⑦\">DOMMatrix</a></code> as appropriate, with the sequence <var>init</var>.</p>"
+            },
+            {
+              "case": "If init is a sequence with 16 elements",
+              "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-3d-matrix\" id=\"ref-for-create-a-3d-matrix①\">create a 3d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①⑤\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix③⑧\">DOMMatrix</a></code> as appropriate, with the sequence <var>init</var>.</p>"
+            },
+            {
+              "case": "Otherwise",
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code> exception.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "create a DOMMatrixReadOnly from the 2D dictionary",
+      "href": "https://drafts.fxtf.org/geometry-1/#create-a-dommatrixreadonly-from-the-2d-dictionary",
+      "html": "To <dfn data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create a DOMMatrixReadOnly from the 2D dictionary\" id=\"create-a-dommatrixreadonly-from-the-2d-dictionary\">create a <code>DOMMatrixReadOnly</code> from a 2D dictionary<a class=\"self-link\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-dommatrixreadonly-from-the-2d-dictionary\"></a></dfn> <var>other</var> or to <dfn data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create a\nDOMMatrix from the 2D dictionary\" id=\"create-a-dommatrix-from-the-2d-dictionary\">create a <code>DOMMatrix</code> from a 2D dictionary<a class=\"self-link\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-dommatrix-from-the-2d-dictionary\"></a></dfn> <var>other</var>, follow these steps:",
+      "rationale": "validate",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-validate-and-fixup-2d\" id=\"ref-for-matrix-validate-and-fixup-2d①\">Validate and fixup (2D)</a> <var>other</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-2d-matrix\" id=\"ref-for-create-a-2d-matrix③\">create a 2d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①⑦\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix④⓪\">DOMMatrix</a></code> as appropriate, with a sequence of numbers, the values being the 6 elements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m11\" id=\"ref-for-dom-dommatrix2dinit-m11③\">m11</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m12\" id=\"ref-for-dom-dommatrix2dinit-m12③\">m12</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m21\" id=\"ref-for-dom-dommatrix2dinit-m21③\">m21</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m22\" id=\"ref-for-dom-dommatrix2dinit-m22③\">m22</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m41\" id=\"ref-for-dom-dommatrix2dinit-m41③\">m41</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m42\" id=\"ref-for-dom-dommatrix2dinit-m42③\">m42</a></code> of <var>other</var> in the given order.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a DOMMatrixReadOnly from the dictionary",
+      "href": "https://drafts.fxtf.org/geometry-1/#create-a-dommatrixreadonly-from-the-dictionary",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create a DOMMatrixReadOnly from the dictionary\" id=\"create-a-dommatrixreadonly-from-the-dictionary\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code>DOMMatrixReadOnly</code> from a dictionary</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> <var>other</var> or to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create a\nDOMMatrix from the dictionary\" data-noexport=\"\" id=\"create-a-dommatrix-from-the-dictionary\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code>DOMMatrix</code> from a dictionary</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> <var>other</var>, follow these steps:",
+      "rationale": "validate",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-validate-and-fixup\" id=\"ref-for-matrix-validate-and-fixup\">Validate and fixup</a> <var>other</var>.</p>"
+        },
+        {
+          "html": "<dl class=\"switch\">\n      <dt data-md=\"\">If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-is2d\" id=\"ref-for-dom-dommatrixinit-is2d④\">is2D</a></code> dictionary member of <var>other</var> is <code>true</code>\n      </dt><dd data-md=\"\">\n       <p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-2d-matrix\" id=\"ref-for-create-a-2d-matrix④\">create a 2d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①⑧\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix④①\">DOMMatrix</a></code> as appropriate, with a sequence of numbers, the values being the 6 elements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m11\" id=\"ref-for-dom-dommatrix2dinit-m11④\">m11</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m12\" id=\"ref-for-dom-dommatrix2dinit-m12④\">m12</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m21\" id=\"ref-for-dom-dommatrix2dinit-m21④\">m21</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m22\" id=\"ref-for-dom-dommatrix2dinit-m22④\">m22</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m41\" id=\"ref-for-dom-dommatrix2dinit-m41④\">m41</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m42\" id=\"ref-for-dom-dommatrix2dinit-m42④\">m42</a></code> of <var>other</var> in the given order.</p>\n      </dd><dt data-md=\"\">Otherwise\n      </dt><dd data-md=\"\">\n       <p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-3d-matrix\" id=\"ref-for-create-a-3d-matrix②\">create a 3d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①⑨\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix④②\">DOMMatrix</a></code> as appropriate, with a sequence of numbers, the values being the 16 elements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m11\" id=\"ref-for-dom-dommatrix2dinit-m11⑤\">m11</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m12\" id=\"ref-for-dom-dommatrix2dinit-m12⑤\">m12</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m13\" id=\"ref-for-dom-dommatrixinit-m13②\">m13</a></code>, ..., <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m44\" id=\"ref-for-dom-dommatrixinit-m44②\">m44</a></code> of <var>other</var> in the given order.</p>\n     </dd></dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the is2D dictionary member of other is true",
+                  "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-2d-matrix\" id=\"ref-for-create-a-2d-matrix④\">create a 2d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①⑧\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix④①\">DOMMatrix</a></code> as appropriate, with a sequence of numbers, the values being the 6 elements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m11\" id=\"ref-for-dom-dommatrix2dinit-m11④\">m11</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m12\" id=\"ref-for-dom-dommatrix2dinit-m12④\">m12</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m21\" id=\"ref-for-dom-dommatrix2dinit-m21④\">m21</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m22\" id=\"ref-for-dom-dommatrix2dinit-m22④\">m22</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m41\" id=\"ref-for-dom-dommatrix2dinit-m41④\">m41</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m42\" id=\"ref-for-dom-dommatrix2dinit-m42④\">m42</a></code> of <var>other</var> in the given order.</p>"
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-3d-matrix\" id=\"ref-for-create-a-3d-matrix②\">create a 3d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly①⑨\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix④②\">DOMMatrix</a></code> as appropriate, with a sequence of numbers, the values being the 16 elements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m11\" id=\"ref-for-dom-dommatrix2dinit-m11⑤\">m11</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix2dinit-m12\" id=\"ref-for-dom-dommatrix2dinit-m12⑤\">m12</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m13\" id=\"ref-for-dom-dommatrixinit-m13②\">m13</a></code>, ..., <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixinit-m44\" id=\"ref-for-dom-dommatrixinit-m44②\">m44</a></code> of <var>other</var> in the given order.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/fromFloat32Array(array32)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-fromfloat32array",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMMatrixReadOnly\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-dommatrixreadonly-fromfloat32array\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fromFloat32Array(<var>array32</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> static method on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly②⓪\">DOMMatrixReadOnly</a></code> and the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMMatrix\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-dommatrix-fromfloat32array\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fromFloat32Array(<var>array32</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> static\nmethod on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix④③\">DOMMatrix</a></code> must follow these steps:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If array32 has 6 elements",
+              "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-2d-matrix\" id=\"ref-for-create-a-2d-matrix⑤\">create a 2d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly②①\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix④④\">DOMMatrix</a></code> as appropriate, with a sequence of numbers taking the values from <var>array32</var> in the provided order.</p>"
+            },
+            {
+              "case": "If array32 has 16 elements",
+              "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-3d-matrix\" id=\"ref-for-create-a-3d-matrix③\">create a 3d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly②②\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix④⑤\">DOMMatrix</a></code> as appropriate, with a sequence of numbers taking the values from <var>array32</var> in the provided order.</p>"
+            },
+            {
+              "case": "Otherwise",
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code> exception.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/fromFloat64Array(array64)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-fromfloat64array",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMMatrixReadOnly\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-dommatrixreadonly-fromfloat64array\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fromFloat64Array(<var>array64</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> static method on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly②③\">DOMMatrixReadOnly</a></code> and the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DOMMatrix\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-dommatrix-fromfloat64array\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fromFloat64Array(<var>array64</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> static\nmethod on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix④⑥\">DOMMatrix</a></code> must follow these steps:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If array64 has 6 elements",
+              "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-2d-matrix\" id=\"ref-for-create-a-2d-matrix⑥\">create a 2d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly②④\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix④⑦\">DOMMatrix</a></code> as appropriate, with a sequence of numbers taking the values from <var>array64</var> in the provided order.</p>"
+            },
+            {
+              "case": "If array32 has 16 elements",
+              "html": "<p>Return the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-3d-matrix\" id=\"ref-for-create-a-3d-matrix④\">create a 3d matrix</a> of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly②⑤\">DOMMatrixReadOnly</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix④⑧\">DOMMatrix</a></code> as appropriate, with a sequence of numbers taking the values from <var>array64</var> in the provided order.</p>"
+            },
+            {
+              "case": "Otherwise",
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code> exception.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/translate(tx, ty, tz)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-translate",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-translateself\" id=\"ref-for-dom-dommatrix-translateself①\">translateSelf()</a></code> transformation on <var>result</var> with the\narguments <var>tx</var>, <var>ty</var>, <var>tz</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale",
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>scaleY</var> is missing, set <var>scaleY</var> to the value of <var>scaleX</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself\" id=\"ref-for-dom-dommatrix-scaleself①\">scaleSelf()</a></code> transformation on <var>result</var> with the arguments <var>scaleX</var>, <var>scaleY</var>, <var>scaleZ</var>, <var>originX</var>, <var>originY</var>, <var>originZ</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/scaleNonUniform(scaleX, scaleY)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scalenonuniform",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself\" id=\"ref-for-dom-dommatrix-scaleself②\">scaleSelf()</a></code> transformation on <var>result</var> with the arguments <var>scaleX</var>, <var>scaleY</var>, <i>1</i>, <i>0</i>, <i>0</i>, <i>0</i>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/scale3d(scale, originX, originY, originZ)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-scale3d",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dself\" id=\"ref-for-dom-dommatrix-scale3dself①\">scale3dSelf()</a></code> transformation on <var>result</var> with the\narguments <var>scale</var>, <var>originX</var>, <var>originY</var>, <var>originZ</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/rotate(rotX, rotY, rotZ)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotate",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateself\" id=\"ref-for-dom-dommatrix-rotateself①\">rotateSelf()</a></code> transformation on <var>result</var> with the\narguments <var>rotX</var>, <var>rotY</var>, <var>rotZ</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/rotateFromVector(x, y)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotatefromvector",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotatefromvectorself\" id=\"ref-for-dom-dommatrix-rotatefromvectorself①\">rotateFromVectorSelf()</a></code> transformation on <var>result</var> with\nthe arguments <var>x</var>, <var>y</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/rotateAxisAngle(x, y, z, angle)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotateaxisangle",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateaxisangleself\" id=\"ref-for-dom-dommatrix-rotateaxisangleself①\">rotateAxisAngleSelf()</a></code> transformation on <var>result</var> with the\narguments <var>x</var>, <var>y</var>, <var>z</var>, <var>angle</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/skewX(sx)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-skewx",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-skewxself\" id=\"ref-for-dom-dommatrix-skewxself①\">skewXSelf()</a></code> transformation on <var>result</var> with the argument <var>sx</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/skewY(sy)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-skewy",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-skewyself\" id=\"ref-for-dom-dommatrix-skewyself①\">skewYSelf()</a></code> transformation on <var>result</var> with the argument <var>sy</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/multiply(other)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-multiply",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-multiplyself\" id=\"ref-for-dom-dommatrix-multiplyself①\">multiplySelf()</a></code> transformation on <var>result</var> with the\nargument <var>other</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/flipX()",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-flipx",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply①\">Post-multiply</a> <var>result</var> with <code>new DOMMatrix([-1, 0, 0, 1, 0,\n0])</code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/flipY()",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-flipy",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply②\">Post-multiply</a> <var>result</var> with <code>new DOMMatrix([1, 0, 0, -1, 0,\n0])</code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/inverse()",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-inverse",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be the resulting matrix initialized to the values of the current\nmatrix.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-invertself\" id=\"ref-for-dom-dommatrix-invertself①\">invertSelf()</a></code> transformation on <var>result</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrixReadOnly/stringificationbehavior",
+      "href": "https://drafts.fxtf.org/geometry-1/#dommatrixreadonly-stringification-behavior",
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If one or more of <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m11-element\" id=\"ref-for-matrix-m11-element⑤\">m11 element</a> through <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m44-element\" id=\"ref-for-matrix-m44-element⑤\">m44 element</a> are a\nnon-finite value, then throw an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>string</var> be the empty string.</p>"
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d①⑦\">is 2D</a> is <code>true</code>, then:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p>Append \"<code>matrix(</code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m11-element\" id=\"ref-for-matrix-m11-element⑥\">m11 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions①\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring①\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m12-element\" id=\"ref-for-matrix-m12-element④\">m12 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions②\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring②\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m21-element\" id=\"ref-for-matrix-m21-element④\">m21 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions③\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring③\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m22-element\" id=\"ref-for-matrix-m22-element④\">m22 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions④\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring④\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m41-element\" id=\"ref-for-matrix-m41-element④\">m41 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions⑤\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring⑤\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m42-element\" id=\"ref-for-matrix-m42-element④\">m42 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>)</code>\" to <var>string</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p>Append \"<code>matrix3d(</code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions⑥\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring⑥\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m11-element\" id=\"ref-for-matrix-m11-element⑦\">m11 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions⑦\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring⑦\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m12-element\" id=\"ref-for-matrix-m12-element⑤\">m12 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions⑧\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring⑧\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m13-element\" id=\"ref-for-matrix-m13-element④\">m13 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions⑨\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring⑨\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m14-element\" id=\"ref-for-matrix-m14-element④\">m14 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions①⓪\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring①⓪\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m21-element\" id=\"ref-for-matrix-m21-element⑤\">m21 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions①①\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring①①\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m22-element\" id=\"ref-for-matrix-m22-element⑤\">m22 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions①②\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring①②\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m23-element\" id=\"ref-for-matrix-m23-element④\">m23 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions①③\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring①③\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m24-element\" id=\"ref-for-matrix-m24-element④\">m24 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions①④\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring①④\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m41-element\" id=\"ref-for-matrix-m41-element⑤\">m41 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions①⑤\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring①⑤\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m42-element\" id=\"ref-for-matrix-m42-element⑤\">m42 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions①⑥\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring①⑥\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m43-element\" id=\"ref-for-matrix-m43-element④\">m43 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>, </code>\" to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-algorithm-conventions\" id=\"ref-for-sec-algorithm-conventions①⑦\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-tostring\" id=\"ref-for-sec-tostring①⑦\">ToString</a>(<a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m44-element\" id=\"ref-for-matrix-m44-element⑥\">m44 element</a>) to <var>string</var>.</p>"
+            },
+            {
+              "html": "<p>Append \"<code>)</code>\" to <var>string</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>string</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/multiplySelf(other)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-multiplyself",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>otherObject</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-dommatrix-from-the-dictionary\" id=\"ref-for-create-a-dommatrix-from-the-dictionary②\">create a <code>DOMMatrix</code> from the dictionary</a> <var>other</var>.</p>"
+        },
+        {
+          "html": "<p>The <var>otherObject</var> matrix gets post-multiplied to the current matrix.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d①⑧\">is 2D</a> of <var>otherObject</var> is <code>false</code>, set <span id=\"ref-for-matrix-is-2d①⑨\">is 2D</span> of the current matrix to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/preMultiplySelf(other)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-premultiplyself",
+      "html": "",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>otherObject</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#create-a-dommatrix-from-the-dictionary\" id=\"ref-for-create-a-dommatrix-from-the-dictionary③\">create a <code>DOMMatrix</code> from the dictionary</a> <var>other</var>.</p>"
+        },
+        {
+          "html": "<p>The <var>otherObject</var> matrix gets pre-multiplied to the current matrix.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d②⓪\">is 2D</a> of <var>otherObject</var> is <code>false</code>, set <span id=\"ref-for-matrix-is-2d②①\">is 2D</span> of the current matrix to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/translateSelf(tx, ty, tz)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-translateself",
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply③\">Post-multiply</a> a translation transformation on the current matrix. The 3D\ntranslation matrix is <a href=\"https://drafts.csswg.org/css-transforms-1/#TranslateDefined\">described</a> in CSS\nTransforms. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p>If <var>tz</var> is specified and not <span class=\"css\">0</span> or <span class=\"css\">-0</span>, set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d②②\">is 2D</a> of the\ncurrent matrix to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scaleself",
+      "html": "",
+      "rationale": "perform",
+      "steps": [
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-translateself\" id=\"ref-for-dom-dommatrix-translateself②\">translateSelf()</a></code> transformation on the current matrix with the\narguments <var>originX</var>, <var>originY</var>, <var>originZ</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>scaleY</var> is missing, set <var>scaleY</var> to the value of <var>scaleX</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply④\">Post-multiply</a> a non-uniform scale transformation on the current matrix. The 3D\nscale matrix is <a href=\"https://drafts.csswg.org/css-transforms-1/#ScaleDefined\">described</a> in CSS Transforms with <var>sx</var> = <var>scaleX</var>, <var>sy</var> = <var>scaleY</var> and <var>sz</var> = <var>scaleZ</var>. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p>Negate <var>originX</var>, <var>originY</var> and <var>originZ</var>.</p>"
+        },
+        {
+          "html": "<p>Perform a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-translateself\" id=\"ref-for-dom-dommatrix-translateself③\">translateSelf()</a></code> transformation on the current matrix with the\narguments <var>originX</var>, <var>originY</var>, <var>originZ</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>scaleZ</var> is not <span class=\"css\">1</span>, set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d②③\">is 2D</a> of the current matrix to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/scale3dSelf(scale, originX, originY, originZ)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-scale3dself",
+      "html": "",
+      "rationale": "apply",
+      "steps": [
+        {
+          "html": "<p>Apply a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-translateself\" id=\"ref-for-dom-dommatrix-translateself④\">translateSelf()</a></code> transformation to the current matrix with the\narguments <var>originX</var>, <var>originY</var>, <var>originZ</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply⑤\">Post-multiply</a> a uniform 3D scale transformation (<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m11\" id=\"ref-for-dom-dommatrixreadonly-m11⑦\">m11</a></code> = <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m22\" id=\"ref-for-dom-dommatrixreadonly-m22④\">m22</a></code> = <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-m33\" id=\"ref-for-dom-dommatrixreadonly-m33③\">m33</a></code> = <var>scale</var>) on the current matrix.\nThe 3D scale matrix is <a href=\"https://drafts.csswg.org/css-transforms-1/#ScaleDefined\">described</a> in CSS Transforms\nwith <var>sx</var> = <var>sy</var> = <var>sz</var> = <var>scale</var>. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p>Apply a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-dommatrix-translateself\" id=\"ref-for-dom-dommatrix-translateself⑤\">translateSelf()</a></code> transformation to the current matrix with the\narguments -<var>originX</var>, -<var>originY</var>, -<var>originZ</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>scale</var> is not <span class=\"css\">1</span>, set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d②④\">is 2D</a> of the current matrix to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/rotateSelf(rotX, rotY, rotZ)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateself",
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>rotY</var> and <var>rotZ</var> are both missing, set <var>rotZ</var> to the value\nof <var>rotX</var> and set <var>rotX</var> and <var>rotY</var> to <span class=\"css\">0</span>.</p>"
+        },
+        {
+          "html": "<p>If <var>rotY</var> is still missing, set <var>rotY</var> to <span class=\"css\">0</span>.</p>"
+        },
+        {
+          "html": "<p>If <var>rotZ</var> is still missing, set <var>rotZ</var> to <span class=\"css\">0</span>.</p>"
+        },
+        {
+          "html": "<p>If <var>rotX</var> or <var>rotY</var> are not <span class=\"css\">0</span> or <span class=\"css\">-0</span>, set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d②⑤\">is 2D</a> of the current matrix to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply⑥\">Post-multiply</a> a rotation transformation on the current matrix around the vector 0,\n0, 1 by the specified rotation <var>rotZ</var> in degrees. The 3D rotation matrix is <a href=\"https://drafts.csswg.org/css-transforms-1/#RotateDefined\">described</a> in CSS Transforms\nwith <var>alpha</var> = <var>rotZ</var> in degrees. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply⑦\">Post-multiply</a> a rotation transformation on the current matrix around the vector 0,\n1, 0 by the specified rotation <var>rotY</var> in degrees. The 3D rotation matrix is <a href=\"https://drafts.csswg.org/css-transforms-1/#RotateDefined\">described</a> in CSS Transforms\nwith <var>alpha</var> = <var>rotY</var> in degrees. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply⑧\">Post-multiply</a> a rotation transformation on the current matrix around the vector 1,\n0, 0 by the specified rotation <var>rotX</var> in degrees. The 3D rotation matrix is <a href=\"https://drafts.csswg.org/css-transforms-1/#RotateDefined\">described</a> in CSS Transforms\nwith <var>alpha</var> = <var>rotX</var> in degrees. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/rotateFromVectorSelf(x, y)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotatefromvectorself",
+      "html": "",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply⑨\">Post-multiply</a> a rotation transformation on the current matrix. The rotation angle\nis determined by the angle between the vector (1,0)<sup>T</sup> and\n(<var>x</var>,<var>y</var>)<sup>T</sup> in the clockwise direction. If <var>x</var> and <var>y</var> should both be <span class=\"css\">0</span> or <span class=\"css\">-0</span>, the angle is specified as <span class=\"css\">0</span>. The 2D rotation\nmatrix is <a href=\"https://drafts.csswg.org/css-transforms-1/#RotateDefined\">described</a> in CSS\nTransforms where <code>alpha</code> is the angle between the vector (1,0)<sup>T</sup> and\n(<var>x</var>,<var>y</var>)<sup>T</sup> in degrees. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/rotateAxisAngleSelf(x, y, z, angle)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateaxisangleself",
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply①⓪\">Post-multiply</a> a rotation transformation on the current matrix around the specified\nvector <var>x</var>, <var>y</var>, <var>z</var> by the specified rotation <var>angle</var> in\ndegrees. The 3D rotation matrix is <a href=\"https://drafts.csswg.org/css-transforms-1/#RotateDefined\">described</a> in CSS Transforms\nwith <var>alpha</var> = <var>angle</var> in degrees. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p>If <var>x</var> or <var>y</var> are not <span class=\"css\">0</span> or <span class=\"css\">-0</span>, set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d②⑥\">is 2D</a> of\nthe current matrix to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/skewXSelf(sx)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-skewxself",
+      "html": "",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply①①\">Post-multiply</a> a skewX transformation on the current matrix by the specified angle <var>sx</var> in degrees. The 2D skewX matrix is <a href=\"https://drafts.csswg.org/css-transforms-1/#SkewXDefined\">described</a> in CSS Transforms\nwith <var>alpha</var> = <var>sx</var> in degrees. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/skewYSelf(sy)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-skewyself",
+      "html": "",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#post-multiply\" id=\"ref-for-post-multiply①②\">Post-multiply</a> a skewX transformation on the current matrix by the specified angle <var>sy</var> in degrees. The 2D skewY matrix is <a href=\"https://drafts.csswg.org/css-transforms-1/#SkewYDefined\">described</a> in CSS Transforms\nwith <var>beta</var> = <var>sy</var> in degrees. <a data-link-type=\"biblio\" href=\"https://drafts.fxtf.org/geometry-1/#biblio-css3-transforms\" title=\"CSS Transforms Module Level 1\">[CSS3-TRANSFORMS]</a></p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/invertSelf()",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-invertself",
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Invert the current matrix.</p>"
+        },
+        {
+          "html": "<p>If the current matrix is not invertible set all attributes to <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-4/#valdef-calc-nan\" id=\"ref-for-valdef-calc-nan②\">NaN</a> and set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d②⑦\">is 2D</a> to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "name": "DOMMatrix/setMatrixValue(transformList)",
+      "href": "https://drafts.fxtf.org/geometry-1/#dom-dommatrix-setmatrixvalue",
+      "html": "",
+      "rationale": "parse",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#parse-a-string-into-an-abstract-matrix\" id=\"ref-for-parse-a-string-into-an-abstract-matrix①\">Parse <var>transformList</var> into an\nabstract matrix</a>, and let <var>matrix</var> and <var>2dTransform</var> be the result. If the\nresult is failure, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror①\">SyntaxError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d②⑧\">is 2D</a> to the value of <var>2dTransform</var>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m11-element\" id=\"ref-for-matrix-m11-element⑧\">m11 element</a> through <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m44-element\" id=\"ref-for-matrix-m44-element⑦\">m44 element</a> to the element\nvalues of <var>matrix</var> in column-major order.</p>"
+        },
+        {
+          "html": "<p>Return the current matrix.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps\">serialization steps</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly①⓪\">DOMPointReadOnly</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dompoint\" id=\"ref-for-dompoint③③\">DOMPoint</a></code>, given <var>value</var> and <var>serialized</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>serialized</var>.[[X]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate②⓪\">x coordinate</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[Y]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate②⓪\">y coordinate</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[Z]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-z-coordinate\" id=\"ref-for-point-z-coordinate①①\">z coordinate</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[W]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-w-perspective\" id=\"ref-for-point-w-perspective①①\">w perspective</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps\">deserialization steps</a>, given <var>serialized</var> and <var>value</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-x-coordinate\" id=\"ref-for-point-x-coordinate②①\">x coordinate</a> to <var>serialized</var>.[[X]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-y-coordinate\" id=\"ref-for-point-y-coordinate②①\">y coordinate</a> to <var>serialized</var>.[[Y]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-z-coordinate\" id=\"ref-for-point-z-coordinate①②\">z coordinate</a> to <var>serialized</var>.[[Z]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#point-w-perspective\" id=\"ref-for-point-w-perspective①②\">w perspective</a> to <var>serialized</var>.[[W]].</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps①\">serialization steps</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly①⓪\">DOMRectReadOnly</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domrect\" id=\"ref-for-domrect①⑥\">DOMRect</a></code>, given <var>value</var> and <var>serialized</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>serialized</var>.[[X]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①⓪\">x coordinate</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[Y]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①⓪\">y coordinate</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[Width]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑨\">width dimension</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[Height]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑨\">height dimension</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps①\">deserialization steps</a>, given <var>serialized</var> and <var>value</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①①\">x coordinate</a> to <var>serialized</var>.[[X]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①①\">y coordinate</a> to <var>serialized</var>.[[Y]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension①⓪\">width dimension</a> to <var>serialized</var>.[[Width]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension①⓪\">height dimension</a> to <var>serialized</var>.[[Height]].</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps②\">serialization steps</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#domquad\" id=\"ref-for-domquad①⑦\">DOMQuad</a></code>, given <var>value</var> and <var>serialized</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>serialized</var>.[[P1]] to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-serialization\" id=\"ref-for-sub-serialization\">sub-serialization</a> of <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-1\" id=\"ref-for-quadrilateral-point-1⑧\">point 1</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[P2]] to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-serialization\" id=\"ref-for-sub-serialization①\">sub-serialization</a> of <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-2\" id=\"ref-for-quadrilateral-point-2⑧\">point 2</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[P3]] to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-serialization\" id=\"ref-for-sub-serialization②\">sub-serialization</a> of <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-3\" id=\"ref-for-quadrilateral-point-3⑧\">point 3</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[P4]] to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-serialization\" id=\"ref-for-sub-serialization③\">sub-serialization</a> of <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-4\" id=\"ref-for-quadrilateral-point-4⑧\">point 4</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps②\">deserialization steps</a>, given <var>serialized</var> and <var>value</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-1\" id=\"ref-for-quadrilateral-point-1⑨\">point 1</a> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-deserialization\" id=\"ref-for-sub-deserialization\">sub-deserialization</a> of <var>serialized</var>.[[P1]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-2\" id=\"ref-for-quadrilateral-point-2⑨\">point 2</a> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-deserialization\" id=\"ref-for-sub-deserialization①\">sub-deserialization</a> of <var>serialized</var>.[[P2]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-3\" id=\"ref-for-quadrilateral-point-3⑨\">point 3</a> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-deserialization\" id=\"ref-for-sub-deserialization②\">sub-deserialization</a> of <var>serialized</var>.[[P3]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#quadrilateral-point-4\" id=\"ref-for-quadrilateral-point-4⑨\">point 4</a> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-deserialization\" id=\"ref-for-sub-deserialization③\">sub-deserialization</a> of <var>serialized</var>.[[P4]].</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps③\">serialization steps</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly②⑨\">DOMMatrixReadOnly</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix⑥⑨\">DOMMatrix</a></code>, given <var>value</var> and <var>serialized</var>, are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d②⑨\">is 2D</a> is <code>true</code>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>serialized</var>.[[M11]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m11-element\" id=\"ref-for-matrix-m11-element⑨\">m11 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M12]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m12-element\" id=\"ref-for-matrix-m12-element⑥\">m12 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M21]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m21-element\" id=\"ref-for-matrix-m21-element⑥\">m21 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M22]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m22-element\" id=\"ref-for-matrix-m22-element⑥\">m22 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M41]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m41-element\" id=\"ref-for-matrix-m41-element⑥\">m41 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M42]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m42-element\" id=\"ref-for-matrix-m42-element⑥\">m42 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[Is2D]] to <code>true</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>serialized</var>.[[M11]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m11-element\" id=\"ref-for-matrix-m11-element①⓪\">m11 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M12]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m12-element\" id=\"ref-for-matrix-m12-element⑦\">m12 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M13]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m13-element\" id=\"ref-for-matrix-m13-element⑥\">m13 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M14]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m14-element\" id=\"ref-for-matrix-m14-element⑤\">m14 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M21]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m21-element\" id=\"ref-for-matrix-m21-element⑦\">m21 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M22]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m22-element\" id=\"ref-for-matrix-m22-element⑦\">m22 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M23]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m23-element\" id=\"ref-for-matrix-m23-element⑤\">m23 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M24]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m24-element\" id=\"ref-for-matrix-m24-element⑤\">m24 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M31]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m31-element\" id=\"ref-for-matrix-m31-element④\">m31 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M32]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m32-element\" id=\"ref-for-matrix-m32-element④\">m32 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M33]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m33-element\" id=\"ref-for-matrix-m33-element④\">m33 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M34]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m34-element\" id=\"ref-for-matrix-m34-element④\">m34 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M41]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m41-element\" id=\"ref-for-matrix-m41-element⑦\">m41 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M42]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m42-element\" id=\"ref-for-matrix-m42-element⑦\">m42 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M43]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m43-element\" id=\"ref-for-matrix-m43-element⑤\">m43 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[M44]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m44-element\" id=\"ref-for-matrix-m44-element⑧\">m44 element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>serialized</var>.[[Is2D]] to <code>false</code>.</p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps③\">deserialization steps</a>, given <var>serialized</var> and <var>value</var>, are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>serialized</var>.[[Is2D]] is <code>true</code>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m11-element\" id=\"ref-for-matrix-m11-element①①\">m11 element</a> to <var>serialized</var>.[[M11]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m12-element\" id=\"ref-for-matrix-m12-element⑧\">m12 element</a> to <var>serialized</var>.[[M12]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m13-element\" id=\"ref-for-matrix-m13-element⑦\">m13 element</a> to <span class=\"css\">0</span>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m14-element\" id=\"ref-for-matrix-m14-element⑥\">m14 element</a> to <span class=\"css\">0</span>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m21-element\" id=\"ref-for-matrix-m21-element⑧\">m21 element</a> to <var>serialized</var>.[[M21]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m22-element\" id=\"ref-for-matrix-m22-element⑧\">m22 element</a> to <var>serialized</var>.[[M22]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m23-element\" id=\"ref-for-matrix-m23-element⑥\">m23 element</a> to <span class=\"css\">0</span>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m24-element\" id=\"ref-for-matrix-m24-element⑥\">m24 element</a> to <span class=\"css\">0</span>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m31-element\" id=\"ref-for-matrix-m31-element⑤\">m31 element</a> to <span class=\"css\">0</span>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m32-element\" id=\"ref-for-matrix-m32-element⑤\">m32 element</a> to <span class=\"css\">0</span>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m33-element\" id=\"ref-for-matrix-m33-element⑤\">m33 element</a> to <span class=\"css\">1</span>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m34-element\" id=\"ref-for-matrix-m34-element⑤\">m34 element</a> to <span class=\"css\">0</span>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m41-element\" id=\"ref-for-matrix-m41-element⑧\">m41 element</a> to <var>serialized</var>.[[M41]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m42-element\" id=\"ref-for-matrix-m42-element⑧\">m42 element</a> to <var>serialized</var>.[[M42]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m43-element\" id=\"ref-for-matrix-m43-element⑥\">m43 element</a> to <span class=\"css\">0</span>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m44-element\" id=\"ref-for-matrix-m44-element⑨\">m44 element</a> to <span class=\"css\">1</span>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d③⓪\">is 2D</a> to <code>true</code>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "Otherwise:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m11-element\" id=\"ref-for-matrix-m11-element①②\">m11 element</a> to <var>serialized</var>.[[M11]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m12-element\" id=\"ref-for-matrix-m12-element⑨\">m12 element</a> to <var>serialized</var>.[[M12]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m13-element\" id=\"ref-for-matrix-m13-element⑧\">m13 element</a> to <var>serialized</var>.[[M13]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m14-element\" id=\"ref-for-matrix-m14-element⑦\">m14 element</a> to <var>serialized</var>.[[M14]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m21-element\" id=\"ref-for-matrix-m21-element⑨\">m21 element</a> to <var>serialized</var>.[[M21]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m22-element\" id=\"ref-for-matrix-m22-element⑨\">m22 element</a> to <var>serialized</var>.[[M22]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m23-element\" id=\"ref-for-matrix-m23-element⑦\">m23 element</a> to <var>serialized</var>.[[M23]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m24-element\" id=\"ref-for-matrix-m24-element⑦\">m24 element</a> to <var>serialized</var>.[[M24]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m31-element\" id=\"ref-for-matrix-m31-element⑥\">m31 element</a> to <var>serialized</var>.[[M31]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m32-element\" id=\"ref-for-matrix-m32-element⑥\">m32 element</a> to <var>serialized</var>.[[M32]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m33-element\" id=\"ref-for-matrix-m33-element⑥\">m33 element</a> to <var>serialized</var>.[[M33]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m34-element\" id=\"ref-for-matrix-m34-element⑥\">m34 element</a> to <var>serialized</var>.[[M34]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m41-element\" id=\"ref-for-matrix-m41-element⑨\">m41 element</a> to <var>serialized</var>.[[M41]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m42-element\" id=\"ref-for-matrix-m42-element⑨\">m42 element</a> to <var>serialized</var>.[[M42]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m43-element\" id=\"ref-for-matrix-m43-element⑦\">m43 element</a> to <var>serialized</var>.[[M43]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-m44-element\" id=\"ref-for-matrix-m44-element①⓪\">m44 element</a> to <var>serialized</var>.[[M44]].</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#matrix-is-2d\" id=\"ref-for-matrix-is-2d③①\">is 2D</a> to <code>false</code>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

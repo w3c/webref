@@ -1,0 +1,781 @@
+{
+  "spec": {
+    "title": "CSS View Transitions Module Level 1",
+    "url": "https://drafts.csswg.org/css-view-transitions-1/"
+  },
+  "algorithms": [
+    {
+      "name": "document-scoped view transition name",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#document-scoped-view-transition-name",
+      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-scoped-view-transition-name\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">document-scoped view transition name</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element③\">Element</a></code> <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>scopedViewTransitionName</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name\" id=\"ref-for-propdef-view-transition-name⑤\">view-transition-name</a> for <var>element</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>scopedViewTransitionName</var> is associated with <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>, then return <var>scopedViewTransitionName</var>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-1/#valdef-view-transition-name-none\" id=\"ref-for-valdef-view-transition-name-none\">none</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Document/startViewTransition(updateCallback)",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#dom-document-startviewtransition",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps\">method steps</a> for <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"startViewTransition(updateCallback)|startViewTransition()\" id=\"dom-document-startviewtransition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>startViewTransition(<var>updateCallback</var>)</code></dfn> are as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>transition</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition③\">ViewTransition</a></code> object in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>updateCallback</var> is provided, set <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-update-callback\" id=\"ref-for-viewtransition-update-callback\">update callback</a> to <var>updateCallback</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#visibility-state\" id=\"ref-for-visibility-state\">visibility state</a> is \"<code>hidden</code>\",\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition\">skip</a> <var>transition</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>,\nand return <var>transition</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition②\">active view transition</a> is not null,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition①\">skip that view transition</a> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition④\">active view transition</a> to <var>transition</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>transition</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "dom-viewtransition-skipTransition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#dom-viewtransition-skiptransition",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps①\">method steps</a> for <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ViewTransition\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-viewtransition-skiptransition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>skipTransition()</code></dfn> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase①\">phase</a> is not \"<code>done</code>\",\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition③\">skip the view transition</a> for <span id=\"ref-for-this①⓪\">this</span> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror①\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "perform pending transition operations",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#perform-pending-transition-operations",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-pending-transition-operations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">perform pending transition operations</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> <var>document</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-pending-transition-operations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">perform pending transition operations</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> <var>document</var>, perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition⑦\">active view transition</a>'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase②\">phase</a> is \"<code>pending-capture</code>\",\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#setup-view-transition\" id=\"ref-for-setup-view-transition①\">setup view transition</a> for <var>document</var>’s <span id=\"ref-for-document-active-view-transition⑧\">active view transition</span>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition⑨\">active view transition</a>'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase③\">phase</a> is \"<code>animating</code>\",\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#handle-transition-frame\" id=\"ref-for-handle-transition-frame\">handle transition frame</a> for <var>document</var>’s <span id=\"ref-for-document-active-view-transition①⓪\">active view transition</span>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setup view transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#setup-view-transition",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"setup-view-transition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setup view transition</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①③\">ViewTransition</a></code> <var>transition</var>,\n\t\t\tperform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#capture-the-old-state\" id=\"ref-for-capture-the-old-state\">Capture the old state</a> for <var>transition</var>.</p>\n      <p>If failure is returned, then <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition④\">skip the view transition</a> for <var>transition</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> in <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑤\">relevant Realm</a>,\nand return.</p>"
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-rendering-suppression-for-view-transitions\" id=\"ref-for-document-rendering-suppression-for-view-transitions①\">rendering suppression for view transitions</a> to true.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"setup-view-transition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setup view transition</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①③\">ViewTransition</a></code> <var>transition</var>,\n\t\t\tperform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase④\">phase</a> is \"<code>done</code>\", then abort these steps.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#call-the-update-callback\" id=\"ref-for-call-the-update-callback\">call the update callback</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "activate view transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#activate-view-transition",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activate-view-transition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">activate view transition</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①④\">ViewTransition</a></code> <var>transition</var>,\n\t\t\tperform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase⑤\">phase</a> is \"<code>done</code>\", then return.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-rendering-suppression-for-view-transitions\" id=\"ref-for-document-rendering-suppression-for-view-transitions②\">rendering suppression for view transitions</a> to false.</p>"
+        },
+        {
+          "html": "<p>If <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-initial-snapshot-containing-block-size\" id=\"ref-for-viewtransition-initial-snapshot-containing-block-size\">initial snapshot containing block size</a> is not equal to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block-size\" id=\"ref-for-snapshot-containing-block-size①\">snapshot containing block size</a>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition⑦\">skip the view transition</a> for <var>transition</var>, and return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#capture-the-new-state\" id=\"ref-for-capture-the-new-state\">Capture the new state</a> for <var>transition</var>.</p>\n      <p>If failure is returned, then <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition⑧\">skip the view transition</a> for <var>transition</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> in <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥\">relevant Realm</a>,\nand return.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activate-view-transition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">activate view transition</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①④\">ViewTransition</a></code> <var>transition</var>,\n\t\t\tperform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element①\">new element</a> is not null,\nthen set <var>capturedElement</var>’s <span id=\"ref-for-captured-element-new-element②\">new element</span>'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-in-a-view-transition\" id=\"ref-for-captured-in-a-view-transition③\">captured in a view transition</a> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#setup-transition-pseudo-elements\" id=\"ref-for-setup-transition-pseudo-elements④\">Setup transition pseudo-elements</a> for <var>transition</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#update-pseudo-element-styles\" id=\"ref-for-update-pseudo-element-styles②\">Update pseudo-element styles</a> for <var>transition</var>.</p>\n      <p>If failure is returned, then <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition⑨\">skip the view transition</a> for <var>transition</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> in <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑦\">relevant Realm</a>,\nand return.</p>"
+        },
+        {
+          "html": "<p>Set <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase⑥\">phase</a> to \"<code>animating</code>\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-ready-promise\" id=\"ref-for-viewtransition-ready-promise②\">ready promise</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "capture the old state",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#capture-the-old-state",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"capture-the-old-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">capture the old state</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑤\">ViewTransition</a></code> <var>transition</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>namedElements</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-named-elements\" id=\"ref-for-viewtransition-named-elements①\">named elements</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>usedTransitionNames</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">set</a> of strings.</p>"
+        },
+        {
+          "html": "<p>Let <var>captureElements</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of elements.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window③\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block-size\" id=\"ref-for-snapshot-containing-block-size②\">snapshot containing block size</a> exceeds an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> maximum, then return failure.</p>"
+        },
+        {
+          "html": "<p>Set <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-initial-snapshot-containing-block-size\" id=\"ref-for-viewtransition-initial-snapshot-containing-block-size①\">initial snapshot containing block size</a> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block-size\" id=\"ref-for-snapshot-containing-block-size③\">snapshot containing block size</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"capture-the-old-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">capture the old state</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑤\">ViewTransition</a></code> <var>transition</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scoping-1/#flat-tree\" id=\"ref-for-flat-tree\">flat tree</a> ancestor of this <var>element</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents①\">skips its contents</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>element</var> has more than one <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#box-fragment\" id=\"ref-for-box-fragment\">box fragment</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>transitionName</var> be the <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-scoped-view-transition-name\" id=\"ref-for-document-scoped-view-transition-name\">document-scoped view transition name</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>transitionName</var> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-1/#valdef-view-transition-name-none\" id=\"ref-for-valdef-view-transition-name-none②\">none</a>,\nor <var>element</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#element-not-rendered\" id=\"ref-for-element-not-rendered①\">not rendered</a>,\nthen <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>usedTransitionNames</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> <var>transitionName</var>, then return failure.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>transitionName</var> to <var>usedTransitionNames</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-in-a-view-transition\" id=\"ref-for-captured-in-a-view-transition④\">captured in a view transition</a> to true.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>element</var> to <var>captureElements</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"capture-the-old-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">capture the old state</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑤\">ViewTransition</a></code> <var>transition</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>capture</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element\" id=\"ref-for-captured-element③\">captured element</a> struct.</p>"
+            },
+            {
+              "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-image\" id=\"ref-for-captured-element-old-image①\">old image</a> to the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#capture-the-image\" id=\"ref-for-capture-the-image④\">capturing the image</a> of <var>element</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>originalRect</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block\" id=\"ref-for-snapshot-containing-block①⓪\">snapshot containing block</a> if <var>element</var> is the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#document-element\" id=\"ref-for-document-element⑧\">document element</a>,\notherwise, the element|'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box②\">border box</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-width\" id=\"ref-for-captured-element-old-width\">old width</a> to <var>originalRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrect-width\" id=\"ref-for-dom-domrect-width\">width</a></code>.</p>"
+            },
+            {
+              "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-height\" id=\"ref-for-captured-element-old-height\">old height</a> to <var>originalRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrect-height\" id=\"ref-for-dom-domrect-height\">height</a></code>.</p>"
+            },
+            {
+              "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-transform\" id=\"ref-for-captured-element-old-transform\">old transform</a> to a <a class=\"css\" data-link-type=\"type\" data-xref-type=\"css-type\" href=\"https://drafts.csswg.org/css-transforms-2/#typedef-transform-function\" id=\"ref-for-typedef-transform-function①\">&lt;transform-function&gt;</a> that would map <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box③\">border box</a> from the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block-origin\" id=\"ref-for-snapshot-containing-block-origin\">snapshot containing block origin</a> to its\ncurrent visual position.</p>"
+            },
+            {
+              "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-writing-mode\" id=\"ref-for-captured-element-old-writing-mode\">old writing-mode</a> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode\" id=\"ref-for-propdef-writing-mode①\">writing-mode</a> on <var>element</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-direction\" id=\"ref-for-captured-element-old-direction\">old direction</a> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value③\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-writing-modes-3/#propdef-direction\" id=\"ref-for-propdef-direction①\">direction</a> on <var>element</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-text-orientation\" id=\"ref-for-captured-element-old-text-orientation\">old text-orientation</a> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value④\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-writing-modes-4/#propdef-text-orientation\" id=\"ref-for-propdef-text-orientation①\">text-orientation</a> on <var>element</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-mix-blend-mode\" id=\"ref-for-captured-element-old-mix-blend-mode\">old mix-blend-mode</a> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑤\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/compositing-2/#propdef-mix-blend-mode\" id=\"ref-for-propdef-mix-blend-mode②\">mix-blend-mode</a> on <var>element</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-backdrop-filter\" id=\"ref-for-captured-element-old-backdrop-filter\">old backdrop-filter</a> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑥\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/filter-effects-2/#propdef-backdrop-filter\" id=\"ref-for-propdef-backdrop-filter①\">backdrop-filter</a> on <var>element</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-color-scheme\" id=\"ref-for-captured-element-old-color-scheme\">old color-scheme</a> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑦\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-color-adjust-1/#propdef-color-scheme\" id=\"ref-for-propdef-color-scheme①\">color-scheme</a> on <var>element</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>transitionName</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑧\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name\" id=\"ref-for-propdef-view-transition-name①①\">view-transition-name</a> for <var>element</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>namedElements</var>[<var>transitionName</var>] to <var>capture</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"capture-the-old-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">capture the old state</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑤\">ViewTransition</a></code> <var>transition</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-in-a-view-transition\" id=\"ref-for-captured-in-a-view-transition⑥\">captured in a view transition</a> to false.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "capture the new state",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#capture-the-new-state",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"capture-the-new-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">capture the new state</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑥\">ViewTransition</a></code> <var>transition</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window④\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>namedElements</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-named-elements\" id=\"ref-for-viewtransition-named-elements②\">named elements</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>usedTransitionNames</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a> of strings.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"capture-the-new-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">capture the new state</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑥\">ViewTransition</a></code> <var>transition</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scoping-1/#flat-tree\" id=\"ref-for-flat-tree①\">flat tree</a> ancestor of this <var>element</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents②\">skips its contents</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>transitionName</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-scoped-view-transition-name\" id=\"ref-for-document-scoped-view-transition-name①\">document-scoped view transition name</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>transitionName</var> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-1/#valdef-view-transition-name-none\" id=\"ref-for-valdef-view-transition-name-none③\">none</a>,\nor <var>element</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#element-not-rendered\" id=\"ref-for-element-not-rendered②\">not rendered</a>,\nthen <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>usedTransitionNames</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> <var>transitionName</var>,\nthen return failure.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>transitionName</var> to <var>usedTransitionNames</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>namedElements</var>[<var>transitionName</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exist</a>,\nthen set <var>namedElements</var>[<var>transitionName</var>] to a new <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element\" id=\"ref-for-captured-element④\">captured element</a> struct.</p>"
+            },
+            {
+              "html": "<p>Set <var>namedElements</var>[<var>transitionName</var>]'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element③\">new element</a> to <var>element</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setup transition pseudo-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#setup-transition-pseudo-elements",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"setup-transition-pseudo-elements\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setup transition pseudo-elements</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑦\">ViewTransition</a></code> <var>transition</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑤\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-show-view-transition-tree\" id=\"ref-for-document-show-view-transition-tree\">show view transition tree</a> to true.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"setup-transition-pseudo-elements\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setup transition pseudo-elements</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑦\">ViewTransition</a></code> <var>transition</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>group</var> be a new <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-group\" id=\"ref-for-selectordef-view-transition-group①⑥\">::view-transition-group()</a>,\nwith its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#view-transition-name\" id=\"ref-for-view-transition-name①②\">view transition name</a> set to <var>transitionName</var>.</p>"
+            },
+            {
+              "html": "<p>Append <var>group</var> to <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-transition-root-pseudo-element\" id=\"ref-for-viewtransition-transition-root-pseudo-element④\">transition root pseudo-element</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>imagePair</var> be a new <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-image-pair\" id=\"ref-for-selectordef-view-transition-image-pair⑥\">::view-transition-image-pair()</a>,\nwith its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#view-transition-name\" id=\"ref-for-view-transition-name①③\">view transition name</a> set to <var>transitionName</var>.</p>"
+            },
+            {
+              "html": "<p>Append <var>imagePair</var> to <var>group</var>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"setup-transition-pseudo-elements\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setup transition pseudo-elements</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑦\">ViewTransition</a></code> <var>transition</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>old</var> be a new <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-old\" id=\"ref-for-selectordef-view-transition-old⑧\">::view-transition-old()</a>,\nwith its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#view-transition-name\" id=\"ref-for-view-transition-name①④\">view transition name</a> set to <var>transitionName</var>,\ndisplaying <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-image\" id=\"ref-for-captured-element-old-image③\">old image</a> as its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-3/#replaced-element\" id=\"ref-for-replaced-element②\">replaced</a> content.</p>"
+                },
+                {
+                  "html": "<p>Append <var>old</var> to <var>imagePair</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"setup-transition-pseudo-elements\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setup transition pseudo-elements</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑦\">ViewTransition</a></code> <var>transition</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>new</var> be a new <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-new\" id=\"ref-for-selectordef-view-transition-new⑧\">::view-transition-new()</a>,\nwith its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#view-transition-name\" id=\"ref-for-view-transition-name①⑤\">view transition name</a> set to <var>transitionName</var>.</p>"
+                },
+                {
+                  "html": "<p>Append <var>new</var> to <var>imagePair</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"setup-transition-pseudo-elements\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setup transition pseudo-elements</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑦\">ViewTransition</a></code> <var>transition</var>:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element⑤\">new element</a> is not null.</p>"
+                },
+                {
+                  "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-image-animation-name-rule\" id=\"ref-for-captured-element-image-animation-name-rule\">image animation name rule</a> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#cssstylerule\" id=\"ref-for-cssstylerule④\">CSSStyleRule</a></code> representing the following CSS,\nand append it to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-dynamic-view-transition-style-sheet\" id=\"ref-for-document-dynamic-view-transition-style-sheet⑤\">dynamic view transition style sheet</a>:</p>\n<pre class=\"highlight\">:root:<c- nf=\"\">:view-transition-new</c-><c- p=\"\">(</c-><var>transitionName</var><c- p=\"\">)</c-> <c- p=\"\">{</c->\n  <c- k=\"\">animation-name</c-><c- p=\"\">:</c-> -ua-view-transition-fade-in<c- p=\"\">;</c->\n<c- p=\"\">}</c->\n</pre>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"setup-transition-pseudo-elements\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setup transition pseudo-elements</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑦\">ViewTransition</a></code> <var>transition</var>:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-image\" id=\"ref-for-captured-element-old-image⑤\">old image</a> is not null.</p>"
+                },
+                {
+                  "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-image-animation-name-rule\" id=\"ref-for-captured-element-image-animation-name-rule①\">image animation name rule</a> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#cssstylerule\" id=\"ref-for-cssstylerule⑤\">CSSStyleRule</a></code> representing the following CSS,\nand append it to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-dynamic-view-transition-style-sheet\" id=\"ref-for-document-dynamic-view-transition-style-sheet⑥\">dynamic view transition style sheet</a>:</p>\n<pre class=\"highlight\">:root:<c- nf=\"\">:view-transition-old</c-><c- p=\"\">(</c-><var>transitionName</var><c- p=\"\">)</c-> <c- p=\"\">{</c->\n  <c- k=\"\">animation-name</c-><c- p=\"\">:</c-> -ua-view-transition-fade-out<c- p=\"\">;</c->\n<c- p=\"\">}</c->\n</pre>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"setup-transition-pseudo-elements\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setup transition pseudo-elements</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑦\">ViewTransition</a></code> <var>transition</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>transform</var> be <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-transform\" id=\"ref-for-captured-element-old-transform①\">old transform</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>width</var> be <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-width\" id=\"ref-for-captured-element-old-width①\">old width</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>height</var> be <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-height\" id=\"ref-for-captured-element-old-height①\">old height</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>backdropFilter</var> be <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-backdrop-filter\" id=\"ref-for-captured-element-old-backdrop-filter①\">old backdrop-filter</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-group-keyframes\" id=\"ref-for-captured-element-group-keyframes\">group keyframes</a> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-animations-1/#csskeyframesrule\" id=\"ref-for-csskeyframesrule①\">CSSKeyframesRule</a></code> representing the following CSS,\nand append it to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-dynamic-view-transition-style-sheet\" id=\"ref-for-document-dynamic-view-transition-style-sheet⑦\">dynamic view transition style sheet</a>:</p>\n<pre class=\"highlight\"><c- n=\"\">@keyframes</c-> -ua-view-transition-group-anim-<var>transitionName</var> <c- p=\"\">{</c->\n  from <c- p=\"\">{</c->\n    <c- k=\"\">transform</c-><c- p=\"\">:</c-> <var>transform</var><c- p=\"\">;</c->\n    <c- k=\"\">width</c-><c- p=\"\">:</c-> <var>width</var><c- p=\"\">;</c->\n    <c- k=\"\">height</c-><c- p=\"\">:</c-> <var>height</var><c- p=\"\">;</c->\n    <c- k=\"\">backdrop-filter</c-><c- p=\"\">:</c-> <var>backdropFilter</var><c- p=\"\">;</c->\n  <c- p=\"\">}</c->\n<c- p=\"\">}</c->\n</pre>"
+                },
+                {
+                  "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-group-animation-name-rule\" id=\"ref-for-captured-element-group-animation-name-rule\">group animation name rule</a> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#cssstylerule\" id=\"ref-for-cssstylerule⑥\">CSSStyleRule</a></code> representing the following CSS,\nand append it to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-dynamic-view-transition-style-sheet\" id=\"ref-for-document-dynamic-view-transition-style-sheet⑧\">dynamic view transition style sheet</a>:</p>\n<pre class=\"highlight\">:root:<c- nf=\"\">:view-transition-group</c-><c- p=\"\">(</c-><var>transitionName</var><c- p=\"\">)</c-> <c- p=\"\">{</c->\n  <c- k=\"\">animation-name</c-><c- p=\"\">:</c-> -ua-view-transition-group-anim-<var>transitionName</var><c- p=\"\">;</c->\n<c- p=\"\">}</c->\n</pre>"
+                },
+                {
+                  "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-image-pair-isolation-rule\" id=\"ref-for-captured-element-image-pair-isolation-rule\">image pair isolation rule</a> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#cssstylerule\" id=\"ref-for-cssstylerule⑦\">CSSStyleRule</a></code> representing the following CSS,\nand append it to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-dynamic-view-transition-style-sheet\" id=\"ref-for-document-dynamic-view-transition-style-sheet⑨\">dynamic view transition style sheet</a>:</p>\n<pre class=\"highlight\">:root:<c- nf=\"\">:view-transition-image-pair</c-><c- p=\"\">(</c-><var>transitionName</var><c- p=\"\">)</c-> <c- p=\"\">{</c->\n  <c- k=\"\">isolation</c-><c- p=\"\">:</c-> isolate<c- p=\"\">;</c->\n<c- p=\"\">}</c->\n</pre>"
+                },
+                {
+                  "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-image-animation-name-rule\" id=\"ref-for-captured-element-image-animation-name-rule②\">image animation name rule</a> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#cssstylerule\" id=\"ref-for-cssstylerule⑧\">CSSStyleRule</a></code> representing the following CSS,\nand append it to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-dynamic-view-transition-style-sheet\" id=\"ref-for-document-dynamic-view-transition-style-sheet①⓪\">dynamic view transition style sheet</a>:</p>\n<pre class=\"highlight\">:root:<c- nf=\"\">:view-transition-old</c-><c- p=\"\">(</c-><var>transitionName</var><c- p=\"\">)</c-> <c- p=\"\">{</c->\n  <c- k=\"\">animation-name</c-><c- p=\"\">:</c-> -ua-view-transition-fade-out<c- p=\"\">,</c-> -ua-mix-blend-mode-plus-lighter<c- p=\"\">;</c->\n<c- p=\"\">}</c->\n:root:<c- nf=\"\">:view-transition-new</c-><c- p=\"\">(</c-><var>transitionName</var><c- p=\"\">)</c-> <c- p=\"\">{</c->\n  <c- k=\"\">animation-name</c-><c- p=\"\">:</c-> -ua-view-transition-fade-in<c- p=\"\">,</c-> -ua-mix-blend-mode-plus-lighter<c- p=\"\">;</c->\n<c- p=\"\">}</c->\n</pre>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "call the update callback",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#call-the-update-callback",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"call-the-update-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call the update callback</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑧\">ViewTransition</a></code> <var>transition</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase⑦\">phase</a> is \"<code>done</code>\", or before \"<code>update-callback-called</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>callbackPromise</var> be null.</p>"
+        },
+        {
+          "html": "<p>If <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-update-callback\" id=\"ref-for-viewtransition-update-callback②\">update callback</a> is null,\nthen set <var>callbackPromise</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> undefined,\nin <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑧\">relevant Realm</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, set <var>callbackPromise</var> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">invoking</a> <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-update-callback\" id=\"ref-for-viewtransition-update-callback③\">update callback</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase⑧\">phase</a> is not \"<code>done</code>\", then set <var>transition</var>’s <span id=\"ref-for-viewtransition-phase⑨\">phase</span> to \"<code>update-callback-called</code>\".</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"call-the-update-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call the update callback</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑧\">ViewTransition</a></code> <var>transition</var>:",
+          "rationale": "resolve",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-update-callback-done-promise\" id=\"ref-for-viewtransition-update-callback-done-promise③\">update callback done promise</a> with undefined.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#activate-view-transition\" id=\"ref-for-activate-view-transition\">Activate</a> <var>transition</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"call-the-update-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call the update callback</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑧\">ViewTransition</a></code> <var>transition</var>:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-update-callback-done-promise\" id=\"ref-for-viewtransition-update-callback-done-promise④\">update callback done promise</a> with <var>reason</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase①⓪\">phase</a> is \"<code>done</code>\", then return.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#mark-a-promise-as-handled\" id=\"ref-for-mark-a-promise-as-handled③\">Mark as handled</a> <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-ready-promise\" id=\"ref-for-viewtransition-ready-promise③\">ready promise</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition①②\">Skip the view transition</a> <var>transition</var> with <var>reason</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\" id=\"ref-for-dfn-perform-steps-once-promise-is-settled\">React</a> to <var>callbackPromise</var> with <var>fulfillSteps</var> and <var>rejectSteps</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"call-the-update-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call the update callback</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑧\">ViewTransition</a></code> <var>transition</var>:",
+          "rationale": "wait",
+          "steps": [
+            {
+              "html": "<p>Wait for an implementation-defined <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration\">duration</a>.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"call-the-update-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call the update callback</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑧\">ViewTransition</a></code> <var>transition</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase①①\">phase</a> is \"<code>done</code>\", then return.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition①④\">Skip</a> <var>transition</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#timeouterror\" id=\"ref-for-timeouterror\">TimeoutError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "skip the view transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"skip-the-view-transition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">skip the view transition</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②⓪\">ViewTransition</a></code> <var>transition</var> with reason <var>reason</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑥\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase①②\">phase</a> is not \"<code>done</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase①③\">phase</a> is before \"<code>update-callback-called</code>\", then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source②\">DOM manipulation task source</a>,\ngiven <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑨\">relevant global object</a>, to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#call-the-update-callback\" id=\"ref-for-call-the-update-callback②\">call the update callback</a> of <var>transition</var>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-rendering-suppression-for-view-transitions\" id=\"ref-for-document-rendering-suppression-for-view-transitions③\">rendering suppression for view transitions</a> to false.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition①①\">active view transition</a> is <var>transition</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#clear-view-transition\" id=\"ref-for-clear-view-transition①\">Clear view transition</a> <var>transition</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase①④\">phase</a> to \"<code>done</code>\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">Reject</a> <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-ready-promise\" id=\"ref-for-viewtransition-ready-promise④\">ready promise</a> with <var>reason</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-finished-promise\" id=\"ref-for-viewtransition-finished-promise①\">finished promise</a> with the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\" id=\"ref-for-dfn-perform-steps-once-promise-is-settled①\">reacting</a> to <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-update-callback-done-promise\" id=\"ref-for-viewtransition-update-callback-done-promise⑥\">update callback done promise</a>:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>If the promise was fulfilled, then return undefined.</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "view transition page-visibility change steps",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-page-visibility-change-steps",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"view-transition-page-visibility-change-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">view transition page-visibility change steps</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code> <var>document</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"view-transition-page-visibility-change-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">view transition page-visibility change steps</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code> <var>document</var> are:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"view-transition-page-visibility-change-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">view transition page-visibility change steps</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code> <var>document</var> are:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition①②\">active view transition</a> is not null, then <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition①⑥\">skip</a> <var>document</var>’s <span id=\"ref-for-document-active-view-transition①③\">active view transition</span> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">assert</a>: <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition①④\">active view transition</a> is null.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "capture the image",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#capture-the-image",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"capture the image|capturing the image\" data-noexport=\"\" id=\"capture-the-image\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">capture the image</dfn> given an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#element\" id=\"ref-for-element①①\">element</a> <var>element</var>, perform the following steps.\n\t\tThey return an image.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"capture the image|capturing the image\" data-noexport=\"\" id=\"capture-the-image\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">capture the image</dfn> given an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#element\" id=\"ref-for-element①①\">element</a> <var>element</var>, perform the following steps.\n\t\tThey return an image.",
+          "rationale": "render",
+          "steps": [
+            {
+              "html": "<p>Render the region of document\n(including its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-backgrounds-3/#canvas-background\" id=\"ref-for-canvas-background\">canvas background</a> and any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-position-4/#document-top-layer\" id=\"ref-for-document-top-layer①\">top layer</a> content)\nthat intersects the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block\" id=\"ref-for-snapshot-containing-block①①\">snapshot containing block</a>,\non a transparent canvas the size of the <span id=\"ref-for-snapshot-containing-block①②\">snapshot containing block</span>,\nfollowing the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#capture-rendering-characteristics\" id=\"ref-for-capture-rendering-characteristics\">capture rendering characteristics</a>, and these additional characteristics:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>Areas outside <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box\">scrolling box</a> should be rendered as if they were scrolled to, without moving or resizing the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#layout-viewport\" id=\"ref-for-layout-viewport\">layout viewport</a>.\nThis must not trigger events related to scrolling or resizing, such as <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#intersectionobserver\" id=\"ref-for-intersectionobserver\">IntersectionObserver</a></code>s.</p>\n          <figure>\n            <img alt=\"A phone browser window, showing a URL bar, a fixed-position element directly beneath it, and some page content beneath that. A scroll bar indicates the page has been scrolled significantly.\" height=\"297\" src=\"https://drafts.csswg.org/css-view-transitions-1/diagrams/phone-browser-with-url.svg\" width=\"202\"> <img alt=\"The captured snapshot. It shows that content beneath the URL bar was included in the capture.\" height=\"297\" src=\"https://drafts.csswg.org/css-view-transitions-1/diagrams/phone-browser-without-url.svg\" width=\"202\"> \n           <figcaption> An example of what the user sees compared to the captured snapshot.\n\t\tThis example assumes the root is the only element with a transition name. </figcaption>\n          </figure>\n         </li><li data-md=\"\">\n          <p>Areas that cannot be scrolled to (i.e. they are out of scrolling bounds),\nshould render the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-backgrounds-3/#canvas-background\" id=\"ref-for-canvas-background①\">canvas background</a>.</p>\n          <figure>\n            <img alt=\"A phone browser window, showing a URL bar, and some content beneath. A scroll bar indicates the page is scrolled to the top.\" height=\"297\" src=\"https://drafts.csswg.org/css-view-transitions-1/diagrams/phone-browser-scrolled-to-top-with-url.svg\" width=\"202\"> <img alt=\"The captured snapshot. It shows the area underneath the URL bar as the same color as the rest of the document.\" height=\"297\" src=\"https://drafts.csswg.org/css-view-transitions-1/diagrams/phone-browser-scrolled-to-top-without-url.svg\" width=\"202\"> \n           <figcaption> An example of what the user sees compared to the captured snapshot.\n\t\tThis example assumes the root is the only element with a transition name. </figcaption>\n          </figure>\n        </li></ul>"
+            },
+            {
+              "html": "<p>Return this canvas as an image.\nThe natural size of the image is equal to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block\" id=\"ref-for-snapshot-containing-block①③\">snapshot containing block</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"capture the image|capturing the image\" data-noexport=\"\" id=\"capture-the-image\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">capture the image</dfn> given an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#element\" id=\"ref-for-element①①\">element</a> <var>element</var>, perform the following steps.\n\t\tThey return an image.",
+          "rationale": "render",
+          "steps": [
+            {
+              "html": "<p>Render <var>element</var> and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"ref-for-concept-tree-descendant②\">descendants</a>,\nat the same size it appears in its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document③\">node document</a>,\nover an infinite transparent canvas,\nfollowing the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#capture-rendering-characteristics\" id=\"ref-for-capture-rendering-characteristics①\">capture rendering characteristics</a>.</p>"
+            },
+            {
+              "html": "<p>Return the portion of this canvas that includes <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#ink-overflow-rectangle\" id=\"ref-for-ink-overflow-rectangle\">ink overflow rectangle</a> as an image.\nThe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-3/#natural-dimensions\" id=\"ref-for-natural-dimensions②\">natural dimensions</a> of this image must be those of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#principal-box\" id=\"ref-for-principal-box①\">principal</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box④\">border box</a>,\nand its origin must correspond to that <span id=\"ref-for-border-box⑤\">border box</span>'s origin,\nsuch that the image represents the contents of this <span id=\"ref-for-border-box⑥\">border box</span> and any captured <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#ink-overflow\" id=\"ref-for-ink-overflow\">ink overflow</a> is represented outside these bounds.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handle transition frame",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#handle-transition-frame",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-transition-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle transition frame</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②①\">ViewTransition</a></code> <var>transition</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①①\">relevant global object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑦\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>hasActiveAnimations</var> be a boolean, initially false.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-transition-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle transition frame</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②①\">ViewTransition</a></code> <var>transition</var>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p>For each <var>animation</var> whose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#timeline\" id=\"ref-for-timeline①\">timeline</a> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#document-timeline\" id=\"ref-for-document-timeline\">document timeline</a> associated with <var>document</var>,\nand contains at least one <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-associated-effect\" id=\"ref-for-animation-associated-effect\">associated effect</a> whose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#keyframe-effect-effect-target\" id=\"ref-for-keyframe-effect-effect-target\">effect target</a> is <var>element</var>,\nset <var>hasActiveAnimations</var> to true if any of the following conditions is true:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-play-state\" id=\"ref-for-animation-play-state\">play state</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#play-state-paused\" id=\"ref-for-play-state-paused\">paused</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#play-state-running\" id=\"ref-for-play-state-running\">running</a>.</p>\n         </li><li data-md=\"\">\n          <p><var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#pending-animation-event-queue\" id=\"ref-for-pending-animation-event-queue\">pending animation event queue</a> has any events associated with <var>animation</var>.</p>\n        </li></ul>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-transition-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle transition frame</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②①\">ViewTransition</a></code> <var>transition</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase①⑤\">phase</a> to \"<code>done</code>\".</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#clear-view-transition\" id=\"ref-for-clear-view-transition②\">Clear view transition</a> <var>transition</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">Resolve</a> <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-finished-promise\" id=\"ref-for-viewtransition-finished-promise③\">finished promise</a>.</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-initial-snapshot-containing-block-size\" id=\"ref-for-viewtransition-initial-snapshot-containing-block-size②\">initial snapshot containing block size</a> is not equal to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block-size\" id=\"ref-for-snapshot-containing-block-size④\">snapshot containing block size</a>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition①⑦\">skip the view transition</a> for <var>transition</var>, and return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#update-pseudo-element-styles\" id=\"ref-for-update-pseudo-element-styles④\">Update pseudo-element styles</a> for <var>transition</var>.</p>\n      <p>If failure is returned, then <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition\" id=\"ref-for-skip-the-view-transition①⑧\">skip the view transition</a> for <var>transition</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> in <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑨\">relevant Realm</a>,\nand return.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update pseudo-element styles",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#update-pseudo-element-styles",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-pseudo-element-styles\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update pseudo-element styles</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②②\">ViewTransition</a></code> <var>transition</var>: \n    \n    <p>This algorithm must be executed to update styles in <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua\" id=\"ref-for-cascade-origin-ua③\">user-agent origin</a> if its effects can be observed by a web API.</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-pseudo-element-styles\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update pseudo-element styles</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②②\">ViewTransition</a></code> <var>transition</var>: \n    \n    <p>This algorithm must be executed to update styles in <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua\" id=\"ref-for-cascade-origin-ua③\">user-agent origin</a> if its effects can be observed by a web API.</p>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>width</var>, <var>height</var>, <var>transform</var>, <var>writingMode</var>, <var>direction</var>, <var>textOrientation</var>, <var>mixBlendMode</var>, <var>backdropFilter</var> and <var>colorScheme</var> be null.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-pseudo-element-styles\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update pseudo-element styles</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②②\">ViewTransition</a></code> <var>transition</var>: \n    \n    <p>This algorithm must be executed to update styles in <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua\" id=\"ref-for-cascade-origin-ua③\">user-agent origin</a> if its effects can be observed by a web API.</p>",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>width</var> to <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-width\" id=\"ref-for-captured-element-old-width②\">old width</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>height</var> to <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-height\" id=\"ref-for-captured-element-old-height②\">old height</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>transform</var> to <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-transform\" id=\"ref-for-captured-element-old-transform②\">old transform</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>writingMode</var> to <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-writing-mode\" id=\"ref-for-captured-element-old-writing-mode①\">old writing-mode</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>direction</var> to <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-direction\" id=\"ref-for-captured-element-old-direction①\">old direction</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>textOrientation</var> to <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-text-orientation\" id=\"ref-for-captured-element-old-text-orientation①\">old text-orientation</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>mixBlendMode</var> to <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-mix-blend-mode\" id=\"ref-for-captured-element-old-mix-blend-mode①\">old mix-blend-mode</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>backdropFilter</var> to <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-backdrop-filter\" id=\"ref-for-captured-element-old-backdrop-filter②\">old backdrop-filter</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>colorScheme</var> to <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-color-scheme\" id=\"ref-for-captured-element-old-color-scheme①\">old color-scheme</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-pseudo-element-styles\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update pseudo-element styles</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②②\">ViewTransition</a></code> <var>transition</var>: \n    \n    <p>This algorithm must be executed to update styles in <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua\" id=\"ref-for-cascade-origin-ua③\">user-agent origin</a> if its effects can be observed by a web API.</p>",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>Return failure if any of the following conditions is true:</p>\n          <ul>\n           <li data-md=\"\">\n            <p><var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element⑨\">new element</a> has a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scoping-1/#flat-tree\" id=\"ref-for-flat-tree②\">flat tree</a> ancestor that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-contain-2/#skips-its-contents\" id=\"ref-for-skips-its-contents③\">skips its contents</a>.</p>\n           </li><li data-md=\"\">\n            <p><var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element①⓪\">new element</a> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#element-not-rendered\" id=\"ref-for-element-not-rendered③\">not rendered</a>.</p>\n           </li><li data-md=\"\">\n            <p><var>capturedElement</var> has more than one <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#box-fragment\" id=\"ref-for-box-fragment②\">box fragment</a>.</p>\n          </li></ul>"
+                },
+                {
+                  "html": "<p>Let <var>newRect</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block\" id=\"ref-for-snapshot-containing-block①⑤\">snapshot containing block</a> if <var>capturedElement</var> is the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#document-element\" id=\"ref-for-document-element①⓪\">document element</a>,\notherwise, <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box⑦\">border box</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>width</var> to the current width of <var>newRect</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>height</var> to the current height of <var>newRect</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>transform</var> to a transform that would map <var>newRect</var> from the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block-origin\" id=\"ref-for-snapshot-containing-block-origin①\">snapshot containing block origin</a> to its current visual position.</p>"
+                },
+                {
+                  "html": "<p>Set <var>writingMode</var> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑨\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode\" id=\"ref-for-propdef-writing-mode②\">writing-mode</a> on <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element①②\">new element</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>direction</var> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①⓪\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-writing-modes-3/#propdef-direction\" id=\"ref-for-propdef-direction②\">direction</a> on <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element①③\">new element</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>textOrientation</var> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①①\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-writing-modes-4/#propdef-text-orientation\" id=\"ref-for-propdef-text-orientation②\">text-orientation</a> on <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element①④\">new element</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>mixBlendMode</var> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①②\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/compositing-2/#propdef-mix-blend-mode\" id=\"ref-for-propdef-mix-blend-mode④\">mix-blend-mode</a> on <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element①⑤\">new element</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>backdropFilter</var> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①③\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/filter-effects-2/#propdef-backdrop-filter\" id=\"ref-for-propdef-backdrop-filter②\">backdrop-filter</a> on <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element①⑥\">new element</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>colorScheme</var> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①④\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-color-adjust-1/#propdef-color-scheme\" id=\"ref-for-propdef-color-scheme②\">color-scheme</a> on <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element①⑦\">new element</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-group-styles-rule\" id=\"ref-for-captured-element-group-styles-rule\">group styles rule</a> is null,\nthen set <var>capturedElement</var>’s <span id=\"ref-for-captured-element-group-styles-rule①\">group styles rule</span> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#cssstylerule\" id=\"ref-for-cssstylerule⑨\">CSSStyleRule</a></code> representing the following CSS,\nand append it to <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①②\">relevant global object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑧\">associated document</a>'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-dynamic-view-transition-style-sheet\" id=\"ref-for-document-dynamic-view-transition-style-sheet①①\">dynamic view transition style sheet</a>.</p>\n        <p>Otherwise, update <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-group-styles-rule\" id=\"ref-for-captured-element-group-styles-rule②\">group styles rule</a> to match the following CSS:</p>\n<pre class=\"highlight\">:root:<c- nf=\"\">:view-transition-group</c-><c- p=\"\">(</c-><var>transitionName</var><c- p=\"\">)</c-> <c- p=\"\">{</c->\n  <c- k=\"\">width</c-><c- p=\"\">:</c-> <var>width</var><c- p=\"\">;</c->\n  <c- k=\"\">height</c-><c- p=\"\">:</c-> <var>height</var><c- p=\"\">;</c->\n  <c- k=\"\">transform</c-><c- p=\"\">:</c-> <var>transform</var><c- p=\"\">;</c->\n  <c- k=\"\">writing-mode</c-><c- p=\"\">:</c-> <var>writingMode</var><c- p=\"\">;</c->\n  <c- k=\"\">direction</c-><c- p=\"\">:</c-> <var>direction</var><c- p=\"\">;</c->\n  <c- k=\"\">text-orientation</c-><c- p=\"\">:</c-> <var>textOrientation</var><c- p=\"\">;</c->\n  <c- k=\"\">mix-blend-mode</c-><c- p=\"\">:</c-> <var>mixBlendMode</var><c- p=\"\">;</c->\n  <c- k=\"\">backdrop-filter</c-><c- p=\"\">:</c-> <var>backdropFilter</var><c- p=\"\">;</c->\n  <c- k=\"\">color-scheme</c-><c- p=\"\">:</c-> <var>colorScheme</var><c- p=\"\">;</c->\n<c- p=\"\">}</c->\n</pre>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-pseudo-element-styles\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update pseudo-element styles</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②②\">ViewTransition</a></code> <var>transition</var>: \n    \n    <p>This algorithm must be executed to update styles in <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua\" id=\"ref-for-cascade-origin-ua③\">user-agent origin</a> if its effects can be observed by a web API.</p>",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>new</var> be the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-new\" id=\"ref-for-selectordef-view-transition-new⑨\">::view-transition-new()</a> with the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#view-transition-name\" id=\"ref-for-view-transition-name①⑥\">view transition name</a> <var>transitionName</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>new</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-3/#replaced-element\" id=\"ref-for-replaced-element④\">replaced element</a> content to the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#capture-the-image\" id=\"ref-for-capture-the-image⑥\">capturing the image</a> of <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element①⑨\">new element</a>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clear view transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#clear-view-transition",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-view-transition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear view transition</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②③\">ViewTransition</a></code> <var>transition</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①③\">relevant global object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑨\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition①⑤\">active view transition</a> is <var>transition</var>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-view-transition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear view transition</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②③\">ViewTransition</a></code> <var>transition</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element\" id=\"ref-for-captured-element-new-element②⓪\">new element</a> is not null,\nthen set <var>capturedElement</var>’s <span id=\"ref-for-captured-element-new-element②①\">new element</span>'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-in-a-view-transition\" id=\"ref-for-captured-in-a-view-transition⑨\">captured in a view transition</a> to false.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-view-transition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear view transition</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition②③\">ViewTransition</a></code> <var>transition</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>style</var> is not null,\nand <var>style</var> is in <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-dynamic-view-transition-style-sheet\" id=\"ref-for-document-dynamic-view-transition-style-sheet①②\">dynamic view transition style sheet</a>,\nthen remove <var>style</var> from <var>document</var>’s <span id=\"ref-for-document-dynamic-view-transition-style-sheet①③\">dynamic view transition style sheet</span>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-show-view-transition-tree\" id=\"ref-for-document-show-view-transition-tree①\">show view transition tree</a> to false.</p>"
+        },
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition①⑥\">active view transition</a> to null.</p>"
+        }
+      ]
+    }
+  ]
+}

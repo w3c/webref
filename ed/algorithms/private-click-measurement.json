@@ -1,0 +1,102 @@
+{
+  "spec": {
+    "title": "Private Click Measurement",
+    "url": "https://privacycg.github.io/private-click-measurement/"
+  },
+  "algorithms": [
+    {
+      "name": "triggering event",
+      "href": "https://privacycg.github.io/private-click-measurement/#triggering-event",
+      "html": "To generate a <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"triggering-event\">triggering event</dfn>, the top frame context of an <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/private-click-measurement/#attribution-destination-website\" id=\"ref-for-attribution-destination-website⑨\">attribution destination website</a> page needs to do the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>An HTTP GET request to the <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/private-click-measurement/#click-source-website\" id=\"ref-for-click-source-website④\">click source website</a>. This HTTP request may be the result of an HTTP redirect, such as <code>searchUK.example</code> HTTP 302 redirect to <code>search.example</code>. The use of HTTP GET is intentional in that existing “pixel requests” can be repurposed for this and in that the HTTP request should be idempotent.</p>"
+        },
+        {
+          "html": "<p>A secure HTTP GET redirect to the URL returned by <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/private-click-measurement/#generate-a-tiggering-event-url\" id=\"ref-for-generate-a-tiggering-event-url\">generating a triggering event URL</a> for <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/private-click-measurement/#click-source-website\" id=\"ref-for-click-source-website⑤\">click source website</a> with <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/private-click-measurement/#trigger-data\" id=\"ref-for-trigger-data②\">trigger data</a> and <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/private-click-measurement/#optional-trigger-priority\" id=\"ref-for-optional-trigger-priority\">optional trigger priority</a>. This mandatory redirect ensures that the <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/private-click-measurement/#click-source-website\" id=\"ref-for-click-source-website⑥\">click source website</a> is in control of who can trigger click attribution on its behalf and optionally what the priority is. If the user agent gets such an HTTP request, it will check its stored clicks, and if there’s a match for (<a data-link-type=\"dfn\" href=\"https://privacycg.github.io/private-click-measurement/#click-source-website\" id=\"ref-for-click-source-website⑦\">click source website</a>, <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/private-click-measurement/#attribution-destination-website\" id=\"ref-for-attribution-destination-website①⓪\">attribution destination website</a>), attribution has been triggered for that stored click.</p>"
+        }
+      ]
+    },
+    {
+      "name": "generate a tiggering event URL",
+      "href": "https://privacycg.github.io/private-click-measurement/#generate-a-tiggering-event-url",
+      "html": "Clients <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-a-tiggering-event-url\">generate a tiggering event URL</dfn> for <var>source site</var> with <var>trigger data</var> and <var>optional trigger priority</var> by following these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>url</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate\">concatenating</a> the strings « <code>\".well-known\"</code>, <code>\"private-click-measurement\"</code>, <code>\"trigger-attribution\"</code>, <var>trigger data</var>, <var>optional trigger priority</var> » using the separator U+002F (/).</p>"
+        },
+        {
+          "html": "<p>Return the result of calling <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#dom-url-url\" id=\"ref-for-dom-url-url\">URL(url, base)</a></code> with url <var>url</var> and base <var>source site</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "generate an attribution report URL",
+      "href": "https://privacycg.github.io/private-click-measurement/#generate-an-attribution-report-url",
+      "html": "User agents <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-an-attribution-report-url\">generate an attribution report URL</dfn> for <var>source site</var> by following these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>url</var> be <code>\".well-known/private-click-measurement/report-attribution/\"</code>.</p>"
+        },
+        {
+          "html": "<p>Return the result of calling <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#dom-url-url\" id=\"ref-for-dom-url-url①\">URL(url, base)</a></code> with url <var>url</var> and base <var>source site</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "extract a four-bit decimal value",
+      "href": "https://privacycg.github.io/private-click-measurement/#extract-a-four-bit-decimal-value",
+      "html": "Clients <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"extract-a-four-bit-decimal-value\" type=\"abstract-op\">extract a four-bit decimal value</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> <var>string</var> by running these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>string</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> is not 2, return failure.</p>"
+        },
+        {
+          "html": "<p>Let <var>tens</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit\">code unit</a> at position 0 within <var>string</var>, and <var>ones</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit①\">code unit</a> at position 1.</p>"
+        },
+        {
+          "html": "<p>If <var>tens</var> is less than U+0030 (0) or greater than U+0031 (1), return failure.</p>"
+        },
+        {
+          "html": "<p>If <var>ones</var> is less than U+0030 (0) or greater than U+0039 (9), return failure.</p>"
+        },
+        {
+          "html": "<p>If <var>tens</var> is U+0031 (1) and <var>ones</var> is greater than U+0035 (5), return failure.</p>"
+        },
+        {
+          "html": "<p>Return (<var>tens</var> - 30) * 10 + ones - 30.</p>"
+        }
+      ]
+    },
+    {
+      "name": "extract a six-bit decimal value",
+      "href": "https://privacycg.github.io/private-click-measurement/#extract-a-six-bit-decimal-value",
+      "html": "Clients <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"extract-a-six-bit-decimal-value\" type=\"abstract-op\">extract a six-bit decimal value</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>string</var> by running these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>string</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①\">length</a> is not 2, return failure.</p>"
+        },
+        {
+          "html": "<p>Let <var>tens</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit②\">code unit</a> at position 0 within <var>string</var>, and <var>ones</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit③\">code unit</a> at position 1.</p>"
+        },
+        {
+          "html": "<p>If <var>tens</var> is less than U+0030 (0) or greater than U+0036 (6), return failure.</p>"
+        },
+        {
+          "html": "<p>If <var>ones</var> is less than U+0030 (0) or greater than U+0039 (9), return failure.</p>"
+        },
+        {
+          "html": "<p>If <var>tens</var> is U+0036 (6) and <var>ones</var> is greater than U+0033 (3), return failure.</p>"
+        },
+        {
+          "html": "<p>Return (<var>tens</var> - 30) * 10 + ones - 30.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "title": "Client Hint Reliability",
+    "url": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html"
+  },
+  "algorithms": [
+    {
+      "html": "When a user agent receives an HTTP response containing a Critical-CH header, it\nfirst processes the Accept-CH header as described in Section 3.1 of\n<span>[<a href=\"https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#RFC8942\" class=\"xref\">RFC8942</a>]</span>. It then performs the following steps:<a href=\"https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-3-9\" class=\"pilcrow\">¶</a>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the request did not use a safe method (Section 4.2.1 of <span>[<a href=\"https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#RFC7231\" class=\"xref\">RFC7231</a>]</span>), ignore the Critical-CH header and continue processing the response as usual.<a href=\"https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-3-10.1\" class=\"pilcrow\">¶</a>"
+        },
+        {
+          "html": "If the response was already the result of a retry, ignore the Critical-CH header and continue processing the response as usual.<a href=\"https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-3-10.2\" class=\"pilcrow\">¶</a>"
+        },
+        {
+          "html": "Determine the Client Hints that would have been sent given the updated Accept-CH value, incorporating the user agent's local policy and user preferences. See also Section 2.1 of <span>[<a href=\"https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#RFC8942\" class=\"xref\">RFC8942</a>]</span>.<a href=\"https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-3-10.3\" class=\"pilcrow\">¶</a>"
+        },
+        {
+          "html": "Compare this result to the Client Hints which were sent. If any Client Hint listed in the Critical-CH header was not previously sent and would now have been sent, retry the request with the new preferences. Otherwise, continue processing the response as usual.<a href=\"https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-3-10.4\" class=\"pilcrow\">¶</a>"
+        }
+      ]
+    }
+  ]
+}

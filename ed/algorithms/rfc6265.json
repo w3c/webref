@@ -1,0 +1,236 @@
+{
+  "spec": {
+    "title": "RFC 6265 - HTTP State Management Mechanism",
+    "url": "https://httpwg.org/specs/rfc6265.html"
+  },
+  "algorithms": [
+    {
+      "html": "Prior to this document, there were at least three descriptions of cookies: the so-called \"Netscape cookie specification\" <a href=\"https://httpwg.org/specs/rfc6265.html#Netscape\"><cite title=\"Persistent Client State -- HTTP Cookies\">[Netscape]</cite></a>, RFC 2109 <a href=\"https://httpwg.org/specs/rfc6265.html#RFC2109\"><cite title=\"HTTP State Management Mechanism\">[RFC2109]</cite></a>, and RFC 2965 <a href=\"https://httpwg.org/specs/rfc6265.html#RFC2965\"><cite title=\"HTTP State Management Mechanism\">[RFC2965]</cite></a>. However, none of these documents describe how the Cookie and Set-Cookie headers are actually used on the Internet (see <a href=\"https://httpwg.org/specs/rfc6265.html#Kri2001\"><cite title=\"HTTP Cookies: Standards, Privacy, and Politics\">[Kri2001]</cite></a> for historical context). In relation to previous IETF specifications of HTTP state management mechanisms, this document requests the following actions:",
+      "rationale": "change",
+      "steps": [
+        {
+          "html": "Change the status of <a href=\"https://httpwg.org/specs/rfc6265.html#RFC2109\"><cite title=\"HTTP State Management Mechanism\">[RFC2109]</cite></a> to Historic (it has already been obsoleted by <a href=\"https://httpwg.org/specs/rfc6265.html#RFC2965\"><cite title=\"HTTP State Management Mechanism\">[RFC2965]</cite></a>)."
+        },
+        {
+          "html": "Change the status of <a href=\"https://httpwg.org/specs/rfc6265.html#RFC2965\"><cite title=\"HTTP State Management Mechanism\">[RFC2965]</cite></a> to Historic."
+        },
+        {
+          "html": "Indicate that <a href=\"https://httpwg.org/specs/rfc6265.html#RFC2965\"><cite title=\"HTTP State Management Mechanism\">[RFC2965]</cite></a> has been obsoleted by this document."
+        }
+      ]
+    },
+    {
+      "html": "The user agent <em class=\"bcp14\">MUST</em> use an algorithm equivalent to the following algorithm to parse a cookie-date. Note that the various boolean flags defined as a part of the algorithm (i.e., found-time, found-day-of-month, found-month, found-year) are initially \"not set\".",
+      "rationale": "process",
+      "steps": [
+        {
+          "html": "Using the grammar below, divide the cookie-date into date-tokens. <span id=\"rfc.figure.u.14\"><span><pre class=\"inline\">cookie-date     = *delimiter date-token-list *delimiter\ndate-token-list = date-token *( 1*delimiter date-token )\ndate-token      = 1*non-delimiter\n\ndelimiter       = %x09 / %x20-2F / %x3B-40 / %x5B-60 / %x7B-7E\nnon-delimiter   = %x00-08 / %x0A-1F / DIGIT / \":\" / ALPHA / %x7F-FF\nnon-digit       = %x00-2F / %x3A-FF\n\nday-of-month    = 1*2DIGIT ( non-digit *OCTET )\nmonth           = ( \"jan\" / \"feb\" / \"mar\" / \"apr\" /\n                    \"may\" / \"jun\" / \"jul\" / \"aug\" /\n                    \"sep\" / \"oct\" / \"nov\" / \"dec\" ) *OCTET\nyear            = 2*4DIGIT ( non-digit *OCTET )\ntime            = hms-time ( non-digit *OCTET )\nhms-time        = time-field \":\" time-field \":\" time-field\ntime-field      = 1*2DIGIT\n              </pre></span></span>"
+        },
+        {
+          "html": "Process each date-token sequentially in the order the date-tokens appear in the cookie-date:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the found-time flag is not set and the token matches the time production, set the found-time flag and set the hour-value, minute-value, and second-value to the numbers denoted by the digits in the date-token, respectively. Skip the remaining sub-steps and continue to the next date-token."
+            },
+            {
+              "html": "If the found-day-of-month flag is not set and the date-token matches the day-of-month production, set the found-day-of-month flag and set the day-of-month-value to the number denoted by the date-token. Skip the remaining sub-steps and continue to the next date-token."
+            },
+            {
+              "html": "If the found-month flag is not set and the date-token matches the month production, set the found-month flag and set the month-value to the month denoted by the date-token. Skip the remaining sub-steps and continue to the next date-token."
+            },
+            {
+              "html": "If the found-year flag is not set and the date-token matches the year production, set the found-year flag and set the year-value to the number denoted by the date-token. Skip the remaining sub-steps and continue to the next date-token."
+            }
+          ]
+        },
+        {
+          "html": "If the year-value is greater than or equal to 70 and less than or equal to 99, increment the year-value by 1900."
+        },
+        {
+          "html": "If the year-value is greater than or equal to 0 and less than or equal to 69, increment the year-value by 2000.",
+          "ignored": [
+            "NOTE: Some existing user agents interpret two-digit years differently."
+          ]
+        },
+        {
+          "html": "Abort these steps and fail to parse the cookie-date if: <ul><li>at least one of the found-day-of-month, found-month, found-year, or found-time flags is not set,</li><li>the day-of-month-value is less than 1 or greater than 31,</li><li>the year-value is less than 1601,</li><li>the hour-value is greater than 23,</li><li>the minute-value is greater than 59, or</li><li>the second-value is greater than 59.</li></ul> (Note that leap seconds cannot be represented in this syntax.)"
+        },
+        {
+          "html": "Let the parsed-cookie-date be the date whose day-of-month, month, year, hour, minute, and second (in UTC) are the day-of-month-value, the month-value, the year-value, the hour-value, the minute-value, and the second-value, respectively. If no such date exists, abort these steps and fail to parse the cookie-date."
+        },
+        {
+          "html": "Return the parsed-cookie-date as the result of this algorithm."
+        }
+      ]
+    },
+    {
+      "html": "A canonicalized host name is the string generated by the following algorithm:",
+      "rationale": "convert",
+      "steps": [
+        {
+          "html": "Convert the host name to a sequence of individual domain name labels."
+        },
+        {
+          "html": "Convert each label that is not a Non-Reserved LDH (NR-LDH) label, to an A-label (see <a href=\"https://www.rfc-editor.org/rfc/rfc5890.html#section-2.3.2.1\">Section 2.3.2.1</a> of <a href=\"https://httpwg.org/specs/rfc6265.html#RFC5890\"><cite title=\"Internationalized Domain Names for Applications (IDNA): Definitions and Document Framework\">[RFC5890]</cite></a> for the former and latter), or to a \"punycode label\" (a label resulting from the \"ToASCII\" conversion in <a href=\"https://www.rfc-editor.org/rfc/rfc3490.html#section-4\">Section 4</a> of <a href=\"https://httpwg.org/specs/rfc6265.html#RFC3490\"><cite title=\"Internationalizing Domain Names in Applications (IDNA)\">[RFC3490]</cite></a>), as appropriate (see <a href=\"https://httpwg.org/specs/rfc6265.html#idna-migration\" title=\"IDNA Dependency and Migration\">Section 6.3</a> of this specification)."
+        },
+        {
+          "html": "Concatenate the resulting labels, separated by a %x2E (\".\") character."
+        }
+      ]
+    },
+    {
+      "html": "The user agent <em class=\"bcp14\">MUST</em> use an algorithm equivalent to the following algorithm to compute the default-path of a cookie:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let uri-path be the path portion of the request-uri if such a portion exists (and empty otherwise). For example, if the request-uri contains just a path (and optional query string), then the uri-path is that path (without the %x3F (\"?\") character or query string), and if the request-uri contains a full absoluteURI, the uri-path is the path component of that URI."
+        },
+        {
+          "html": "If the uri-path is empty or if the first character of the uri-path is not a %x2F (\"/\") character, output %x2F (\"/\") and skip the remaining steps."
+        },
+        {
+          "html": "If the uri-path contains no more than one %x2F (\"/\") character, output %x2F (\"/\") and skip the remaining step."
+        },
+        {
+          "html": "Output the characters of the uri-path from the first character up to, but not including, the right-most %x2F (\"/\")."
+        }
+      ]
+    },
+    {
+      "html": "A user agent <em class=\"bcp14\">MUST</em> use an algorithm equivalent to the following algorithm to parse a \"set-cookie-string\":",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the set-cookie-string contains a %x3B (\";\") character: <ul class=\"empty\"><li>The name-value-pair string consists of the characters up to, but not including, the first %x3B (\";\"), and the unparsed-attributes consist of the remainder of the set-cookie-string (including the %x3B (\";\") in question).</li></ul> Otherwise: <ul class=\"empty\"><li>The name-value-pair string consists of all the characters contained in the set-cookie-string, and the unparsed-attributes is the empty string.</li></ul>"
+        },
+        {
+          "html": "If the name-value-pair string lacks a %x3D (\"=\") character, ignore the set-cookie-string entirely."
+        },
+        {
+          "html": "The (possibly empty) name string consists of the characters up to, but not including, the first %x3D (\"=\") character, and the (possibly empty) value string consists of the characters after the first %x3D (\"=\") character."
+        },
+        {
+          "html": "Remove any leading or trailing WSP characters from the name string and the value string."
+        },
+        {
+          "html": "If the name string is empty, ignore the set-cookie-string entirely."
+        },
+        {
+          "html": "The cookie-name is the name string, and the cookie-value is the value string."
+        }
+      ]
+    },
+    {
+      "html": "The user agent <em class=\"bcp14\">MUST</em> use an algorithm equivalent to the following algorithm to parse the unparsed-attributes:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the unparsed-attributes string is empty, skip the rest of these steps."
+        },
+        {
+          "html": "Discard the first character of the unparsed-attributes (which will be a %x3B (\";\") character)."
+        },
+        {
+          "html": "If the remaining unparsed-attributes contains a %x3B (\";\") character: <ul class=\"empty\"><li>Consume the characters of the unparsed-attributes up to, but not including, the first %x3B (\";\") character.</li></ul> Otherwise: <ul class=\"empty\"><li>Consume the remainder of the unparsed-attributes.</li></ul> Let the cookie-av string be the characters consumed in this step."
+        },
+        {
+          "html": "If the cookie-av string contains a %x3D (\"=\") character: <ul class=\"empty\"><li>The (possibly empty) attribute-name string consists of the characters up to, but not including, the first %x3D (\"=\") character, and the (possibly empty) attribute-value string consists of the characters after the first %x3D (\"=\") character.</li></ul> Otherwise: <ul class=\"empty\"><li>The attribute-name string consists of the entire cookie-av string, and the attribute-value string is empty.</li></ul>"
+        },
+        {
+          "html": "Remove any leading or trailing WSP characters from the attribute-name string and the attribute-value string."
+        },
+        {
+          "html": "Process the attribute-name and attribute-value according to the requirements in the following subsections. (Notice that attributes with unrecognized attribute-names are ignored.)"
+        },
+        {
+          "html": "Return to Step 1 of this algorithm."
+        }
+      ]
+    },
+    {
+      "html": "When the user agent \"receives a cookie\" from a request-uri with name cookie-name, value cookie-value, and attributes cookie-attribute-list, the user agent <em class=\"bcp14\">MUST</em> process the cookie as follows:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "A user agent <em class=\"bcp14\">MAY</em> ignore a received cookie in its entirety. For example, the user agent might wish to block receiving cookies from \"third-party\" responses or the user agent might not wish to store cookies that exceed some size."
+        },
+        {
+          "html": "Create a new cookie with name cookie-name, value cookie-value. Set the creation-time and the last-access-time to the current date and time."
+        },
+        {
+          "html": "If the cookie-attribute-list contains an attribute with an attribute-name of \"Max-Age\": <ul class=\"empty\"><li>Set the cookie's persistent-flag to true.</li><li>Set the cookie's expiry-time to attribute-value of the last attribute in the cookie-attribute-list with an attribute-name of \"Max-Age\".</li></ul> Otherwise, if the cookie-attribute-list contains an attribute with an attribute-name of \"Expires\" (and does not contain an attribute with an attribute-name of \"Max-Age\"): <ul class=\"empty\"><li>Set the cookie's persistent-flag to true.</li><li>Set the cookie's expiry-time to attribute-value of the last attribute in the cookie-attribute-list with an attribute-name of \"Expires\".</li></ul> Otherwise: <ul class=\"empty\"><li>Set the cookie's persistent-flag to false.</li><li>Set the cookie's expiry-time to the latest representable date.</li></ul>"
+        },
+        {
+          "html": "If the cookie-attribute-list contains an attribute with an attribute-name of \"Domain\": <ul class=\"empty\"><li>Let the domain-attribute be the attribute-value of the last attribute in the cookie-attribute-list with an attribute-name of \"Domain\".</li></ul> Otherwise: <ul class=\"empty\"><li>Let the domain-attribute be the empty string.</li></ul>"
+        },
+        {
+          "html": "If the user agent is configured to reject \"public suffixes\" and the domain-attribute is a public suffix: <ul class=\"empty\"><li>If the domain-attribute is identical to the canonicalized request-host: <ul class=\"empty\"><li>Let the domain-attribute be the empty string.</li></ul> Otherwise: <ul class=\"empty\"><li>Ignore the cookie entirely and abort these steps.</li></ul> </li><li>NOTE: A \"public suffix\" is a domain that is controlled by a public registry, such as \"com\", \"co.uk\", and \"pvt.k12.wy.us\". This step is essential for preventing attacker.com from disrupting the integrity of example.com by setting a cookie with a Domain attribute of \"com\". Unfortunately, the set of public suffixes (also known as \"registry controlled domains\") changes over time. If feasible, user agents <em class=\"bcp14\">SHOULD</em> use an up-to-date public suffix list, such as the one maintained by the Mozilla project at &lt;<a href=\"http://publicsuffix.org/\">http://publicsuffix.org/</a>&gt;.</li></ul>"
+        },
+        {
+          "html": "If the domain-attribute is non-empty: <ul class=\"empty\"><li>If the canonicalized request-host does not domain-match the domain-attribute: <ul class=\"empty\"><li>Ignore the cookie entirely and abort these steps.</li></ul> Otherwise: <ul class=\"empty\"><li>Set the cookie's host-only-flag to false.</li><li>Set the cookie's domain to the domain-attribute.</li></ul> </li></ul> Otherwise: <ul class=\"empty\"><li>Set the cookie's host-only-flag to true.</li><li>Set the cookie's domain to the canonicalized request-host.</li></ul>"
+        },
+        {
+          "html": "If the cookie-attribute-list contains an attribute with an attribute-name of \"Path\", set the cookie's path to attribute-value of the last attribute in the cookie-attribute-list with an attribute-name of \"Path\". Otherwise, set the cookie's path to the default-path of the request-uri."
+        },
+        {
+          "html": "If the cookie-attribute-list contains an attribute with an attribute-name of \"Secure\", set the cookie's secure-only-flag to true. Otherwise, set the cookie's secure-only-flag to false."
+        },
+        {
+          "html": "If the cookie-attribute-list contains an attribute with an attribute-name of \"HttpOnly\", set the cookie's http-only-flag to true. Otherwise, set the cookie's http-only-flag to false."
+        },
+        {
+          "html": "If the cookie was received from a \"non-HTTP\" API and the cookie's http-only-flag is set, abort these steps and ignore the cookie entirely."
+        },
+        {
+          "html": "If the cookie store contains a cookie with the same name, domain, and path as the newly created cookie:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let old-cookie be the existing cookie with the same name, domain, and path as the newly created cookie. (Notice that this algorithm maintains the invariant that there is at most one such cookie.)"
+            },
+            {
+              "html": "If the newly created cookie was received from a \"non-HTTP\" API and the old-cookie's http-only-flag is set, abort these steps and ignore the newly created cookie entirely."
+            },
+            {
+              "html": "Update the creation-time of the newly created cookie to match the creation-time of the old-cookie."
+            },
+            {
+              "html": "Remove the old-cookie from the cookie store."
+            }
+          ]
+        },
+        {
+          "html": "Insert the newly created cookie into the cookie store."
+        }
+      ]
+    },
+    {
+      "html": "The user agent <em class=\"bcp14\">MUST</em> use an algorithm equivalent to the following algorithm to compute the \"cookie-string\" from a cookie store and a request-uri:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let cookie-list be the set of cookies from the cookie store that meets all of the following requirements: <ul><li>Either: <ul class=\"empty\"><li>The cookie's host-only-flag is true and the canonicalized request-host is identical to the cookie's domain.</li></ul> Or: <ul class=\"empty\"><li>The cookie's host-only-flag is false and the canonicalized request-host domain-matches the cookie's domain.</li></ul> </li><li>The request-uri's path path-matches the cookie's path.</li><li>If the cookie's secure-only-flag is true, then the request-uri's scheme must denote a \"secure\" protocol (as defined by the user agent). <ul class=\"empty\"><li>NOTE: The notion of a \"secure\" protocol is not defined by this document. Typically, user agents consider a protocol secure if the protocol makes use of transport-layer security, such as SSL or TLS. For example, most user agents consider \"https\" to be a scheme that denotes a secure protocol.</li></ul> </li><li>If the cookie's http-only-flag is true, then exclude the cookie if the cookie-string is being generated for a \"non-HTTP\" API (as defined by the user agent).</li></ul>"
+        },
+        {
+          "html": "The user agent <em class=\"bcp14\">SHOULD</em> sort the cookie-list in the following order: <ul><li>Cookies with longer paths are listed before cookies with shorter paths.</li><li>Among cookies that have equal-length path fields, cookies with earlier creation-times are listed before cookies with later creation-times.</li></ul> NOTE: Not all user agents sort the cookie-list in this order, but this order reflects common practice when this document was written, and, historically, there have been servers that (erroneously) depended on this order."
+        },
+        {
+          "html": "Update the last-access-time of each cookie in the cookie-list to the current date and time."
+        },
+        {
+          "html": "Serialize the cookie-list into a cookie-string by processing each cookie in the cookie-list in order:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "Output the cookie's name, the %x3D (\"=\") character, and the cookie's value."
+            },
+            {
+              "html": "If there is an unprocessed cookie in the cookie-list, output the characters %x3B and %x20 (\"; \")."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

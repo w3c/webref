@@ -1452,11 +1452,17 @@
       "value": "<string> | <custom-ident>+"
     },
     {
-      "name": "<generic-family>",
-      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as a potential alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a fallback for when an author’s more specific font choices are not available. There are three types of generic family: Generics which apply to all Unicode characters and will always match a locally installed font. For example, monospaced. Generics which apply to all Unicode characters but may not match to a locally installed font on some systems. For example, ui-rounded. Generics which are writing-system specific, only apply to a subset of Unicode characters, and may not match to a locally installed font on some systems. For example, generic(fangsong). Authors are encouraged to append a generic font family as a last alternative for improved robustness, and to use a more specific generic font family, if applicable, to prefer a specific style even if the individual named font family is not available. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.5 Generic font families.",
-      "href": "https://drafts.csswg.org/css-fonts-4/#generic-family-value",
+      "name": "<system-family-name>",
+      "prose": "A locally installed system font, whose use is subject to certain constraints. In particular, it may not be used with the font-family property, but can be used with the font shorthand. The following values refer to system fonts:",
+      "href": "https://drafts.csswg.org/css-fonts-4/#system-family-name-value",
       "type": "type",
-      "value": "generic( <custom-ident>+ ) | <string> | <custom-ident>+",
+      "value": "caption | icon | menu | message-box | small-caption | status-bar"
+    },
+    {
+      "name": "<generic-family>",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-family",
+      "type": "type",
+      "value": "<generic-script-specific>| <generic-complete> | <generic-incomplete>`",
       "values": [
         {
           "name": "serif",
@@ -1556,11 +1562,22 @@
       ]
     },
     {
-      "name": "<system-family-name>",
-      "prose": "A locally installed system font, whose use is subject to certain constraints. In particular, it may not be used with the font-family property, but can be used with the font shorthand. The following values refer to system fonts:",
-      "href": "https://drafts.csswg.org/css-fonts-4/#system-family-name-value",
+      "name": "<generic-script-specific>",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-script-specific",
       "type": "type",
-      "value": "caption | icon | menu | message-box | small-caption | status-bar"
+      "value": "generic(kai) | generic(fangsong) | generic(nastaliq)"
+    },
+    {
+      "name": "<generic-complete>",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-complete",
+      "type": "type",
+      "value": "serif | sans-serif | system-ui | cursive | fantasy | math"
+    },
+    {
+      "name": "<generic-incomplete>",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-incomplete",
+      "type": "type",
+      "value": "ui-serif | ui-sans-serif | ui-monospace | ui-rounded"
     },
     {
       "name": "<font-weight-absolute>",

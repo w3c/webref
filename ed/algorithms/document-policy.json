@@ -1,0 +1,469 @@
+{
+  "spec": {
+    "title": "Document Policy",
+    "url": "https://wicg.github.io/document-policy/"
+  },
+  "algorithms": [
+    {
+      "html": "Add the following step after step 5:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>browsingContext</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#required-document-policy\" id=\"ref-for-required-document-policy③\">required document\npolicy</a> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#create-for-browsingcontext\" id=\"ref-for-create-for-browsingcontext\">creating a required policy for a\nbrowsing context</a> <var>browsingContext</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Change step 9 (renumbered now to 10) to read:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be a new <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">Document</a>, marked as\nan <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#html-document\" id=\"ref-for-html-document\">HTML document</a> in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\" id=\"ref-for-concept-document-quirks\">quirks mode</a>, whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-content-type\" id=\"ref-for-concept-document-content-type\">content\ntype</a> is <code>\"text/html\"</code>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a> is <var>origin</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#active-sandboxing-flag-set\" id=\"ref-for-active-sandboxing-flag-set\">active sandboxing flag set</a> is <var>sandboxFlags</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy\" id=\"ref-for-concept-document-permissions-policy\">permissions policy</a> is <var>permissions policy</var>,\ndocument policy is identical to <var>browsingContext</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#required-document-policy\" id=\"ref-for-required-document-policy④\">required document policy</a>, and which is both ready for\npost-load tasks and completely loaded immediately.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Add the following step after step 5:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#required-document-policy\" id=\"ref-for-required-document-policy⑤\">required document policy</a> to <var>browsingContext</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#required-document-policy\" id=\"ref-for-required-document-policy⑥\">required document policy</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Add the following steps after step 3:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>documentPolicy</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#create-document-policy\" id=\"ref-for-create-document-policy\">creating a document policy</a> for <var>browsingContext</var> from <var>response</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>nestedContextRequiredDocumentPolicy</var> be the\nresult of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#create-nested-context-required-document-policy\" id=\"ref-for-create-nested-context-required-document-policy\">creating a\nnested context document policy</a> for <var>browsingContext</var> from <var>response</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Change step 6 (renumbered now to 8) to read:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be a new Document, whose type is <var>type</var>, content type is <var>contentType</var>,\norigin is <var>origin</var>, permissions policy is <var>permissionsPolicy</var>, active sandboxing flag set is <var>finalSandboxFlags</var>, document policy is <var>documentPolicy</var>, and nested context required document\npolicy is <var>nestedContextRequiredDocumentPolicy</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "In <a href=\"https://fetch.spec.whatwg.org/#http-network-or-cache-fetch\"><cite>Fetch Standard</cite> § 4.6 HTTP-network-or-cache fetch</a>, after step 15, insert the\nfollowing:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>httpRequest</var> has a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#request-required-document-policy\" id=\"ref-for-request-required-document-policy\">required document policy</a>,\nthen",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>serializedRequiredPolicy</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#serialize-required-policy\" id=\"ref-for-serialize-required-policy\">Serialize\n Required Policy</a> on <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#request-required-document-policy\" id=\"ref-for-request-required-document-policy①\">required document\n policy</a>.</p>"
+            },
+            {
+              "html": "<p>Append <code>Sec-Required-Document-Policy</code>/<var>serializedRequiredPolicy</var> to <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "is-policy-compatible",
+      "html": "Given two <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#document-policy\" id=\"ref-for-document-policy⑨\">document policies</a>, <var>requiredPolicy</var> and <var>declaredPolicy</var>,\n    this algorithm returns true if <var>declaredPolicy</var> is compatible with <var>requiredPolicy</var>, or false otherwise.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "For each <var>configuration point</var> → <var>value</var> in <var>requiredPolicy</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>declaredPolicy</var>[<var>configuration point</var>] does not exist, then\n  return false.</p>"
+            },
+            {
+              "html": "<p>If <var>value</var> is stricter than <var>declaredPolicy</var>[<var>configuration point</var>],\n  then return false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse-document-policy",
+      "html": "Given a dictionary (<var>header</var>), this algorithm returns a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#document-policy\" id=\"ref-for-document-policy①⓪\">document\n    policy</a>, if it can be parsed as one, or else fails.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>header</var> is null, then return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>policy</var> be a new ordered map.</p>"
+        },
+        {
+          "html": "<p>Let <var>defaultEndpoint</var> be a new string, set to null.</p>"
+        },
+        {
+          "html": "For each <var>name</var>-&gt;(<var>value</var>,<var>parameters</var>) in <var>header</var>,",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>currentEndpoint</var> be a new string, set to null.</p>"
+            },
+            {
+              "html": "If <var>parameters</var>[\"report-to\"] exists, and is a string, then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>currentEndpoint</var> to the value of <var>parameters</var>[\"report-to\"].</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>name</var> is the string \"<code>*</code>\", then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>defaultEndpoint</var> to <var>currentEndpoint</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, if <var>name</var> is the name of a supported configuration point,\nthen:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>configuration point</var> be the supported configuration point\nwith name <var>name</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>policy</var>[<var>configuration point</var>] exists, then continue with the\nnext <var>element</var>.</p>"
+                },
+                {
+                  "html": "If <var>configuration point</var>’s type is boolean, then:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>value</var> is not a Boolean, then fail.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>policy</var>[<var>configuration point</var>] to a new boolean <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration\" id=\"ref-for-policy-configuration①\">policy configuration</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration-value\" id=\"ref-for-policy-configuration-value\">value</a> <var>value</var>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration-reporting-endpoint\" id=\"ref-for-policy-configuration-reporting-endpoint\">reporting endpoint</a> <var>currentEndpoint</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Continue with the next <var>element</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>configuration point</var>’s type is enum, then:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>value</var> is not a Token, then fail.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>value</var> is not the name of one of <var>configuration point</var>s\nallowed enum values, then fail.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>policy</var>[<var>configuration point</var>] to a new enum <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration\" id=\"ref-for-policy-configuration②\">policy\nconfiguration</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration-value\" id=\"ref-for-policy-configuration-value①\">value</a> <var>value</var>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration-reporting-endpoint\" id=\"ref-for-policy-configuration-reporting-endpoint①\">reporting endpoint</a> <var>currentEndpoint</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Continue with the next <var>element</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>configuration point</var>’s type is integer, then:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>value</var> is not an Integer, then fail.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>value</var> is not in <var>configuration point</var>’s range, then\nfail.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>policy</var>[<var>configuration point</var>] to a new integer <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration\" id=\"ref-for-policy-configuration③\">policy configuration</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration-value\" id=\"ref-for-policy-configuration-value②\">value</a> <var>value</var>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration-reporting-endpoint\" id=\"ref-for-policy-configuration-reporting-endpoint②\">reporting endpoint</a> <var>currentEndpoint</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Continue with the next <var>element</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>configuration point</var>’s type is float, then:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>value</var> is not a Decimal, then fail.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>value</var> is not in <var>configuration point</var>’s range, then\nfail.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>policy</var>[<var>configuration point</var>] to a new float <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration\" id=\"ref-for-policy-configuration④\">policy\nconfiguration</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration-value\" id=\"ref-for-policy-configuration-value③\">value</a> <var>value</var>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration-reporting-endpoint\" id=\"ref-for-policy-configuration-reporting-endpoint③\">reporting endpoint</a> <var>currentEndpoint</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Continue with the next <var>element</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "For each <var>configuration point</var> → <var>config</var> in <var>policy</var>,",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>config</var> does not have a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration-reporting-endpoint\" id=\"ref-for-policy-configuration-reporting-endpoint④\">reporting\nendpoint</a>, set <var>config</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration-reporting-endpoint\" id=\"ref-for-policy-configuration-reporting-endpoint⑤\">reporting endpoint</a> to <var>defaultEndpoint</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>policy</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize-required-policy",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#document-document-policy\" id=\"ref-for-document-document-policy\">document policy</a> (<var>requiredPolicy</var>), this algorithm returns a\n    string which represents the canonical serialization of the policy.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>dict</var> be a new ordered map.</p>"
+        },
+        {
+          "html": "<p>Let <var>features</var> be the keys of <var>requiredPolicy</var>.</p>"
+        },
+        {
+          "html": "<p>Sort <var>features</var> by the name of each element, in ASCII order.</p>"
+        },
+        {
+          "html": "For each <var>feature</var> in <var>features</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>value</var> be <var>requiredPolicy</var>[<var>feature</var>].</p>"
+            },
+            {
+              "html": "<p>Set <var>dict</var>[<var>feature</var>] to <var>value</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the serialization of <var>dict</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-for-browsingcontext",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\" id=\"ref-for-browsing-context②\">browsing context</a> (<var>browsingContext</var>), this algorithm returns\n    a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#document-document-policy\" id=\"ref-for-document-document-policy①\">Document Policy</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>browsingContext</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#nested-browsing-context\" id=\"ref-for-nested-browsing-context①\">nested browsing context</a>, then",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>requiredPolicy</var> be a clone of <var>browsingContext</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#bc-container-document\" id=\"ref-for-bc-container-document\">container document</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#nested-context-required-document-policy\" id=\"ref-for-nested-context-required-document-policy\">nested context required document\n  policy</a>.</p>"
+            },
+            {
+              "html": "If <var>browsingContext</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context-container\" id=\"ref-for-browsing-context-container\">browsing context container</a> has a\n  \"policy\" attribute, then",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>containerPolicy</var> be the result of parsing the attribute</p>"
+                },
+                {
+                  "html": "For each <var>feature</var> -&gt; <var>value</var> in <var>containerPolicy</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>requiredPolicy</var>[<var>feature</var>] does not exist, or if <var>value</var> is stricter than <var>requiredPolicy</var>[<var>feature</var>], then set <var>requiredPolicy</var>[<var>feature</var>] to <var>value</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Otherwise, let <var>requiredPolicy</var> be a new ordered map.</p>"
+        },
+        {
+          "html": "<p>return <var>requiredPolicy</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-document-policy",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\" id=\"ref-for-browsing-context③\">browsing context</a> (<var>browsingContext</var>) and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response②\">response</a> (<var>response</var>), this algorithm returns a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#document-policy\" id=\"ref-for-document-policy①①\">Document Policy</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>requiredPolicy</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#create-for-browsingcontext\" id=\"ref-for-create-for-browsingcontext①\">Create a required policy for a\n  browsing context</a> given <var>browsingContext</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">get a\n       structured field value</a> with header name <code>Document-Policy</code> and\n       type \"<code>dictionary</code>\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>declaredPolicy</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#parse-document-policy\" id=\"ref-for-parse-document-policy\">Parse document\n  policy</a> on <var>header</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>declaredPolicy</var> is <a href=\"https://wicg.github.io/document-policy/#is-policy-compatible\" id=\"ref-for-is-policy-compatible\">compatible</a> with <var>requiredPolicy</var>, then return <var>declaredPolicy</var>.</p>"
+        },
+        {
+          "html": "<p>Throw an exception.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-nested-context-required-document-policy",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\" id=\"ref-for-browsing-context④\">browsing context</a> (<var>browsingContext</var>) and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response③\">response</a> (<var>response</var>), this algorithm returns a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#document-policy\" id=\"ref-for-document-policy①②\">Document Policy</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>requiredPolicy</var> be a clone of <var>browsingContext</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#required-document-policy\" id=\"ref-for-required-document-policy⑦\">required document policy</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header①\">get a\n       structured field value</a> with header name <code>Required-Document-Policy</code> and\n       type \"<code>dictionary</code>\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>declaredNestedPolicy</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#parse-document-policy\" id=\"ref-for-parse-document-policy①\">Parse document\n  policy</a> on <var>header</var>.</p>"
+        },
+        {
+          "html": "For each <var>feature</var> -&gt; <var>value</var> in <var>declaredNestedPolicy</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>requiredPolicy</var>[<var>feature</var>] does not exist, or if <var>value</var> is stricter than <var>requiredPolicy</var>[<var>feature</var>], then set <var>requiredPolicy</var>[<var>feature</var>] to <var>value</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>requiredPolicy</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "should-response-to-request-be-blocked",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request①\">request</a> (<var>request</var>) and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response④\">response</a> (<var>response</var>) to\n       that request, this algorithm returns \"blocked\" if the response is not\n       compatible with the request’s required policy, or \"valid\" otherwise.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>request</var> has a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#request-required-document-policy\" id=\"ref-for-request-required-document-policy②\">required document\n policy</a>, then",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>documentPolicy</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header②\">get a\n structured field value</a> with header name <code>Document-Policy</code> and\n type \"<code>dictionary</code>\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list②\">header list</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>documentPolicy</var> is not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#is-policy-compatible\" id=\"ref-for-is-policy-compatible①\">compatible</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#request-required-document-policy\" id=\"ref-for-request-required-document-policy③\">required document\n policy</a>, return \"blocked\".</p>"
+            },
+            {
+              "html": "<p>Return \"valid\".</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "get-policy-value",
+      "html": "Given a feature (<var>feature</var>) and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code> object (<var>document</var>), this\n    algorithm returns the value for <var>feature</var> in <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#document-policy\" id=\"ref-for-document-policy①③\">document\n    policy</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>policy</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#document-policy\" id=\"ref-for-document-policy①④\">Document Policy</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>policy</var>[<var>feature</var>] exists, return its <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#policy-configuration-value\" id=\"ref-for-policy-configuration-value④\">value</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#configuration-point-default-value\" id=\"ref-for-configuration-point-default-value①\">default value</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "determine-compatibility",
+      "html": "Note that if the enforcing policy is stricter than the report-only policy,\n    then the report-only policy will not be checked.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>policy</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#document-document-policy\" id=\"ref-for-document-document-policy④\">Document Policy</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>policyConfig</var> be <var>policy</var>[<var>feature</var>], if it exists, or a tuple\nconsisting of <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#configuration-point-default-value\" id=\"ref-for-configuration-point-default-value②\">default value</a> and null, otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>policyValue</var> and <var>reporting endpoint</var> be the elements of <var>policyConfig</var></p>"
+        },
+        {
+          "html": "<p>If <var>policyValue</var> is stricter than <var>value</var>, then return a tuple\nconsisting of \"incompatible\" and <var>reporting endpoint</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>report-only policy</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#report-only-document-policy\" id=\"ref-for-report-only-document-policy②\">report-only document\npolicy</a>,</p>"
+        },
+        {
+          "html": "<p>Let <var>report-only policyConfig</var> be <var>report-only policy</var>[<var>feature</var>], if\nit exists, or a tuple consisting of <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#configuration-point-default-value\" id=\"ref-for-configuration-point-default-value③\">default value</a> and\nnull, otherwise.</p>"
+        },
+        {
+          "html": "<p>Set <var>policyValue</var> and <var>reporting endpoint</var> to the elements of <var>report-only policyConfig</var></p>"
+        },
+        {
+          "html": "<p>If <var>policyValue</var> is stricter than <var>value</var>, then return a tuple\nconsisting of \"compatible\" and <var>reporting endpoint</var>.</p>"
+        },
+        {
+          "html": "<p>Return (\"compatible\", null).</p>"
+        }
+      ]
+    },
+    {
+      "name": "is-value-compatible-or-report",
+      "html": "Given a value (<var>value</var>), a feature (<var>feature</var>) and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code> object\n    (<var>document</var>), this algorithm returns \"compatible\" if <var>value</var> is compatible\n    with <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#document-document-policy\" id=\"ref-for-document-document-policy⑤\">document policy</a>, or else \"incompatible\". It will\n    also queue a report if reporting has been configured.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let (<var>action</var>, <var>reporting endpoint</var>) be the result of calling <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#determine-compatibility\" id=\"ref-for-determine-compatibility\">determine-compatibility</a> with <var>value</var>, <var>feature</var> and <var>document</var>.</p>"
+        },
+        {
+          "html": "If <var>reporting endpoint</var> is not null,",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>body</var> be a new ECMAScript object with the following properties: <a data-link-type=\"biblio\" href=\"https://wicg.github.io/document-policy/#biblio-ecma-262\">[ECMA-262]</a></p>\n           <dl>\n            <dt data-md=\"\">featureId\n            </dt><dd data-md=\"\">\n             <p>feature’s string representation.</p>\n            </dd><dt data-md=\"\">sourceFile\n            </dt><dd data-md=\"\">\n             <p>null</p>\n            </dd><dt data-md=\"\">lineNumber\n            </dt><dd data-md=\"\">\n             <p>null</p>\n            </dd><dt data-md=\"\">columnNumber\n            </dt><dd data-md=\"\">\n             <p>null</p>\n            </dd><dt data-md=\"\">disposition\n            </dt><dd data-md=\"\">\n             <p>\"enforce\", if <var>action</var> is \"incompatible\", or else \"report\".</p>\n           </dd></dl>"
+            },
+            {
+              "html": "<p>If the user agent is currently executing script, and can extract the\nsource file’s URL, line number, and column number from settings, then\nset <var>body</var>’s sourceFile, lineNumber, and columnNumber accordingly.</p>"
+            },
+            {
+              "html": "<p>Let <var>settings</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a>.</p>"
+            },
+            {
+              "html": "<p>Execute <a href=\"https://w3c.github.io/reporting/#queue-report\"><cite>Reporting API</cite> § 2.3 Queue data as type for destination</a> with <var>body</var>, \"document-policy-violation\", <var>reporting endpoint</var> and <var>settings</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>action</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "is-value-compatible",
+      "html": "Given a value (<var>value</var>), a feature (<var>feature</var>) and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code> object\n    (<var>document</var>), this algorithm returns \"compatible\" if <var>value</var> is compatible\n    with <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#document-policy\" id=\"ref-for-document-policy①⑤\">document policy</a>, or else \"incompatible\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let (<var>action</var>, <var>reporting endpoint</var>) be the result of\ncalling <a data-link-type=\"dfn\" href=\"https://wicg.github.io/document-policy/#determine-compatibility\" id=\"ref-for-determine-compatibility①\">determine-compatibility</a> with <var>value</var>, <var>feature</var> and <var>document</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>action</var>.</p>"
+        }
+      ]
+    }
+  ]
+}
