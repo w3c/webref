@@ -1,0 +1,44 @@
+{
+  "spec": {
+    "title": "SPARQL 1.2 Entailment Regimes",
+    "url": "https://www.w3.org/TR/sparql12-entailment/"
+  },
+  "algorithms": [
+    {
+      "html": "SPARQL Query further defines <a href=\"https://www.w3.org/TR/sparql12-query/#sparqlBGPExtend\" id=\"ref-for-index-term-conditions-2\">a set of conditions</a> for extensions of the basic graph pattern matching. These conditions do\n        not cover the case of inconsistent graphs. An inconsistent graph is one for which no interpretation exists that satisfies all conditions of the semantics that is used. The issue is discussed\n        in more detail in <a href=\"https://www.w3.org/TR/sparql12-entailment/#inconsistencies\">Section 3.1</a>, which also provides an example for an RDFS-inconsistent graph. Since inconsistent graphs entail any triple, special care has to\n        be taken to address the situation. The effect of a query on an inconsistent graph is covered by the particular entailment regimes and, for each regime, the relevant details can be found in\n        the corresponding section for that entailment regime. The SPARQL Query conditions for using a logical entailment relation E, such as RDFS entailment, instead of subgraph matching for the case\n        of a consistent active graph are repeated below for clarity. An overview of how the different entailment regimes satisfy these conditions follows.",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<span class=\"doc-ref\" id=\"condition1\"></span>The <a href=\"https://www.w3.org/TR/sparql12-query/#BGPsparqlBNodes\" id=\"ref-for-index-term-scoping-graph-1\">scoping graph</a>, SG, corresponding to any E-consistent active graph AG is\n          uniquely specified up to <a href=\"https://www.w3.org/TR/rdf12-concepts/#section-graph-equality\" id=\"ref-for-index-term-rdf-graph-equivalence-1\">RDF graph equivalence</a> and is E-equivalent to AG."
+        },
+        {
+          "html": "<span class=\"doc-ref\" id=\"condition2\"></span>For any basic graph pattern BGP and pattern instance mapping P, P(BGP) is well-formed for E."
+        },
+        {
+          "html": "<span class=\"doc-ref\" id=\"condition3\"></span>For any <a href=\"https://www.w3.org/TR/sparql12-query/#BGPsparqlBNodes\" id=\"ref-for-index-term-scoping-graph-2\">scoping graph</a> SG and answer set {P<sub>1</sub> ... P<sub>n</sub>} for a\n            basic graph pattern BGP, and where {BGP<sub>1</sub> .... BGP<sub>n</sub>} is a set of basic graph patterns all equivalent to BGP, none of which share any blank nodes with any other or\n            with SG\n            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SG E-entails (SG ∪ P<sub>1</sub>(BGP<sub>1</sub>) ∪ ... ∪ P<sub>n</sub>(BGP<sub>n</sub>))</p>These conditions do not fully determine the set\n            of possible answers, since RDF allows unlimited amounts of redundancy. In addition, therefore, the following must hold."
+        },
+        {
+          "html": "<span class=\"doc-ref\" id=\"condition4\"></span>Each SPARQL extension <em class=\"rfc2119\">MUST</em> provide conditions on answer sets which guarantee that\n          the set of triples obtained by instantiating BGP with each solution μ is uniquely specified up to RDF graph equivalence,\n          and <em class=\"rfc2119\">SHOULD</em> provide further conditions to prevent trivial infinite answers as appropriate to the regime."
+        }
+      ]
+    },
+    {
+      "html": "The possible answers μ<sub>2</sub> to μ<sub>5</sub> are considered here in greater detail. Since all these solution mappings lead to (ground) axiomatic triples when instantiating the BGP,\n        (C1) is trivially satisfied.",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For the possible solution μ<sub>2</sub>, since μ<sub>2</sub>(x)=<code>rdf:type</code> occurs in SG (and also in rdfV-Minus), condition (C2) is also satisfied and this solution mapping\n          is a solution."
+        },
+        {
+          "html": "For the possible solution μ<sub>3</sub>, although μ<sub>3</sub>(x)=<code>rdf:subject</code> does not occur in SG, it occurs in rdfV-Minus and this possible solution mapping is,\n          therefore, also returned as an answer."
+        },
+        {
+          "html": "For the possible solution μ<sub>4</sub>, since μ<sub>4</sub>(x)=<code>rdf:_1</code> occurs in SG, this is a solution."
+        },
+        {
+          "html": "For the possible solution μ<sub>5</sub>, since μ<sub>5</sub>(x)=<code>rdf:_2</code> occurs neither in SG nor in rdfV-Minus, this solution mapping is not a solution."
+        }
+      ]
+    }
+  ]
+}

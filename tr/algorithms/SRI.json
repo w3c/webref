@@ -1,0 +1,152 @@
+{
+  "spec": {
+    "title": "Subresource Integrity",
+    "url": "https://www.w3.org/TR/SRI/"
+  },
+  "algorithms": [
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>result</var> be the result of <a href=\"https://www.w3.org/TR/SRI/#apply-algorithm-to-response\">applying <var>algorithm</var></a> to the <a href=\"https://tools.ietf.org/html/rfc7231#section-3\">representation data</a> without any content-codings applied, except when the user agent intends to consume the content with content-encodings applied. In the latter case, let <var>result</var> be the result of applying <var>algorithm</var> to the <a href=\"https://tools.ietf.org/html/rfc7231#section-3\">representation data</a>."
+        },
+        {
+          "html": "Let <var>encodedResult</var> be result of base64-encoding\n            <var>result</var>."
+        },
+        {
+          "html": "Return <var>encodedResult</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm details these restrictions:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>response</var> be the response that results from\n            <a href=\"https://fetch.spec.whatwg.org/#concept-fetch\">fetching</a> the <var>resource</var>."
+        },
+        {
+          "html": "If the <var>response</var> <a href=\"https://fetch.spec.whatwg.org/#concept-response-type\">type</a> is <code>basic</code>,\n            <code>cors</code> or <code>default</code>, return <code>true</code>."
+        },
+        {
+          "html": "Return <code>false</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm accepts a string, and returns either <code>no metadata</code>, or a set of valid hash expressions whose hash functions are understood by the user agent.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>result</var> be the empty set."
+        },
+        {
+          "html": "Let <var>empty</var> be equal to <code>true</code>."
+        },
+        {
+          "html": "For each <var>token</var> returned by <a href=\"https://www.w3.org/TR/html5/infrastructure.html#split-a-string-on-spaces\">splitting <var>metadata</var> on\nspaces</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>empty</var> to <code>false</code>."
+            },
+            {
+              "html": "If <var>token</var> is not a valid metadata, skip the remaining steps, and proceed to the next token."
+            },
+            {
+              "html": "Parse <var>token</var> per the grammar in <a href=\"https://www.w3.org/TR/SRI/#dfn-integrity-metadata\">integrity metadata</a>."
+            },
+            {
+              "html": "Let <var>algorithm</var> be the <var>alg</var> component of\n                <var>token</var>."
+            },
+            {
+              "html": "If <var>algorithm</var> is a hash function recognized by the user agent, add the parsed <var>token</var> to <var>result</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>no metadata</code> if <var>empty</var> is <code>true</code>, otherwise return\n            <var>result</var>."
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>result</var> be the empty set and <var>strongest</var> be the empty string."
+        },
+        {
+          "html": "For each <var>item</var> in <var>set</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>result</var> is the empty set, add <var>item</var> to\n                <var>result</var> and set <var>strongest</var> to <var>item</var>, skip to the next <var>item</var>."
+            },
+            {
+              "html": "Let <var>currentAlgorithm</var> be the <var>alg</var> component of\n                <var>strongest</var>."
+            },
+            {
+              "html": "Let <var>newAlgorithm</var> be the <var>alg</var> component of\n                <var>item</var>."
+            },
+            {
+              "html": "If the result of <a href=\"https://www.w3.org/TR/SRI/#dfn-getprioritizedhashfunction-a-b\"><code>getPrioritizedHashFunction(currentAlgorithm, newAlgorithm)</code></a> is the empty string, add <var>item</var> to <var>result</var>. If the result is <var>newAlgorithm</var>, set <var>strongest</var> to\n                <var>item</var>, set <var>result</var> to the empty set, and add\n                <var>item</var> to <var>result</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>parsedMetadata</var> be the result of\n            <a href=\"https://www.w3.org/TR/SRI/#parse-metadata\">parsing <var>metadataList</var></a>."
+        },
+        {
+          "html": "If <var>parsedMetadata</var> is <code>no metadata</code>, return <code>true</code>."
+        },
+        {
+          "html": "If <a href=\"https://www.w3.org/TR/SRI/#is-response-eligible-for-integrity-validation\"><var>response</var> is not eligible for integrity\nvalidation</a>, return <code>false</code>."
+        },
+        {
+          "html": "If <var>parsedMetadata</var> is the empty set, return <code>true</code>."
+        },
+        {
+          "html": "Let <var>metadata</var> be the result of <a href=\"https://www.w3.org/TR/SRI/#get-the-strongest-metadata-from-set\">getting the strongest\nmetadata from <var>parsedMetadata</var></a>."
+        },
+        {
+          "html": "For each <var>item</var> in <var>metadata</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>algorithm</var> be the <var>alg</var> component of\n                <var>item</var>."
+            },
+            {
+              "html": "Let <var>expectedValue</var> be the <var>val</var> component of\n                <var>item</var>."
+            },
+            {
+              "html": "Let <var>actualValue</var> be the result of <a href=\"https://www.w3.org/TR/SRI/#apply-algorithm-to-response\">applying\n<var>algorithm</var> to <var>response</var></a>."
+            },
+            {
+              "html": "If <var>actualValue</var> is a case-sensitive match for\n                <var>expectedValue</var>, return <code>true</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>false</code>."
+        }
+      ]
+    },
+    {
+      "html": "Replace step 14.1 of HTML5’s <a href=\"https://www.w3.org/TR/html5/scripting-1.html#prepare-a-script\">“prepare a script” algorithm</a> with:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>src</var> be the value of the element’s <code>src</code> attribute and the request’s associated <a href=\"https://www.w3.org/TR/SRI/#dfn-integrity-metadata\">integrity metadata</a> be the value of the element’s\n            <code>integrity</code> attribute."
+        }
+      ]
+    }
+  ]
+}

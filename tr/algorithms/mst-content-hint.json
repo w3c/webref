@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "title": "MediaStreamTrack Content Hints",
+    "url": "https://www.w3.org/TR/mst-content-hint/"
+  },
+  "algorithms": [
+    {
+      "html": "Valid values for the application-set content hint are dependent on the\n      <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind\"><code>kind</code></a> of <a data-link-type=\"idl\" data-lt=\"MediaStreamTrack\" data-type=\"interface\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a> contained. On setting\n      <a href=\"https://www.w3.org/TR/mst-content-hint/#dom-mediastreamtrack-contenthint\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-mediastreamtrack-contenthint-2\"><code>contentHint</code></a> to <i>value</i>,",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If this <a data-link-type=\"idl\" data-lt=\"MediaStreamTrack\" data-type=\"interface\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a>'s <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind\"><code>kind</code></a> attribute is\n        <code>\"audio\"</code>, and <i>value</i> is not one of <code>\"\"</code>,\n        <code>\"speech\"</code>, <code>\"speech-recognition\"</code>, or <code>\"music\"</code>, abort these steps."
+        },
+        {
+          "html": "If this <a data-link-type=\"idl\" data-lt=\"MediaStreamTrack\" data-type=\"interface\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a>'s <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind\"><code>kind</code></a> attribute is\n        <code>\"video\"</code>, and <i>value</i> is not one of <code>\"\"</code>,\n        <a href=\"https://www.w3.org/TR/mst-content-hint/#idl-def-VideoContentHint.motion\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-idl-def-VideoContentHint.motion-1\"><code>\"motion\"</code></a>, <a href=\"https://www.w3.org/TR/mst-content-hint/#idl-def-VideoContentHint.detail\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-idl-def-VideoContentHint.detail-1\"><code>\"detail\"</code></a> or <a href=\"https://www.w3.org/TR/mst-content-hint/#idl-def-VideoContentHint.text\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-idl-def-VideoContentHint.text-1\"><code>\"text\"</code></a>,\n        abort these steps."
+        },
+        {
+          "html": "Set this <a data-link-type=\"idl\" data-lt=\"MediaStreamTrack\" data-type=\"interface\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a>'s application-set content hint to\n        <i>value</i>."
+        },
+        {
+          "html": "The implementation should adapt its decision on how to handle the\n        content of this <a data-link-type=\"idl\" data-lt=\"MediaStreamTrack\" data-type=\"interface\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a> according to the new value of\n        its application-set content hint. This adaptation should happen as\n        quickly as reasonable, e.g. within the next couple of captured video\n        frames or audio buffers."
+        }
+      ]
+    },
+    {
+      "html": "On getting <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mst-content-hint/#dom-mediastreamtrack-contenthint\" class=\"internalDFN\" id=\"ref-for-dom-mediastreamtrack-contenthint-3\"><code>contentHint</code></a>,",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return this <a data-link-type=\"idl\" data-lt=\"MediaStreamTrack\" data-type=\"interface\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mst-content-hint/#dfn-application-set-content-hint\" class=\"internalDFN\" id=\"ref-for-dfn-application-set-content-hint-2\">application-set content hint</a>."
+        }
+      ]
+    }
+  ]
+}

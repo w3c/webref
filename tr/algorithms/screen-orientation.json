@@ -1,0 +1,290 @@
+{
+  "spec": {
+    "title": "Screen Orientation",
+    "url": "https://www.w3.org/TR/screen-orientation/"
+  },
+  "algorithms": [
+    {
+      "name": "pre-lock conditions",
+      "href": "https://www.w3.org/TR/screen-orientation/#dfn-pre-lock-conditions",
+      "html": "The <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-index-term-user-agent-2\">user agent</a> <em class=\"rfc2119\">MAY</em> require a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-index-term-document-1\">document</a> and its associated\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"ref-for-index-term-browsing-context-for-document-1\">browsing context</a> to meet one or more <dfn data-plurals=\"pre-lock condition\" id=\"dfn-pre-lock-conditions\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">pre-lock\n          conditions</dfn> in order to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-lock-the-screen-orientation\" class=\"internalDFN\" id=\"ref-for-dfn-lock-the-screen-orientation-3\">lock the screen orientation</a>. See\n          <a href=\"https://www.w3.org/TR/screen-orientation/#appmanifest-interaction\" data-matched-text=\"[[[#appmanifest-interaction]]]\" class=\"sec-ref\"><bdi class=\"secno\">10. </bdi>\n        Interaction with Web Application Manifest</a> and <a href=\"https://www.w3.org/TR/screen-orientation/#fullscreen-interaction\" data-matched-text=\"[[[#fullscreen-interaction]]]\" class=\"sec-ref\"><bdi class=\"secno\">9. </bdi>\n        Interaction with Fullscreen API</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Document\">document</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-1\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-1\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-index-term-associated-document-1\">associated <code>Document</code></a>."
+        },
+        {
+          "html": "Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-common-safety-checks\" class=\"internalDFN\" id=\"ref-for-dfn-common-safety-checks-1\">common safety checks</a> with <var data-type=\"Document\">document</var>. If an\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\" id=\"ref-for-index-term-exception-1\">exception</a> is <a data-link-type=\"dfn|abstract-op\" data-lt=\"throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-index-term-throw-for-exception-1\">thrown</a>, return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-index-term-a-promise-rejected-with-1\">a promise rejected with</a> that exception and abort these steps."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-index-term-user-agent-3\">user agent</a> does not support locking the screen\n          orientation to <var data-type=\"OrientationLockType\">orientation</var>, return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-index-term-a-promise-rejected-with-2\">a promise rejected with</a> a\n          \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-index-term-notsupportederror-exception-1\"><code>NotSupportedError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-index-term-domexception-interface-1\"><code>DOMException</code></a> and abort these steps."
+        },
+        {
+          "html": "If <var data-type=\"Document\">document</var>'s\n          <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-1\"><code>[[orientationPendingPromise]]</code></a> is not <code>null</code>, <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-reject-and-nullify-the-current-lock-promise\" class=\"internalDFN\" id=\"ref-for-dfn-reject-and-nullify-the-current-lock-promise-1\">reject and nullify the current lock promise</a> of <var data-type=\"Document\">document</var> with an\n          \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-index-term-aborterror-exception-1\"><code>AbortError</code></a>\"."
+        },
+        {
+          "html": "Set <var data-type=\"Document\">document</var>'s\n          <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-2\"><code>[[orientationPendingPromise]]</code></a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-index-term-a-new-promise-1\">a new promise</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-apply-orientation-lock\" class=\"internalDFN\" id=\"ref-for-dfn-apply-orientation-lock-1\">Apply orientation lock</a> <var data-type=\"OrientationLockType\">orientation</var> to <var data-type=\"Document\">document</var>."
+        },
+        {
+          "html": "Return <var data-type=\"Document\">document</var>'s <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-3\"><code>[[orientationPendingPromise]]</code></a>."
+        }
+      ]
+    },
+    {
+      "html": "When the <a data-link-type=\"idl\" data-lt=\"unlock()\" href=\"https://www.w3.org/TR/screen-orientation/#dom-screenorientation-unlock\" class=\"internalDFN\" id=\"ref-for-dom-screenorientation-unlock-1\"><code>unlock</code></a><code>()</code> method is invoked, the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-index-term-user-agent-4\">user agent</a> <em class=\"rfc2119\">MUST</em> run\n          the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Document\">document</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-2\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-2\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-index-term-associated-document-2\">associated <code>Document</code></a>."
+        },
+        {
+          "html": "Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-common-safety-checks\" class=\"internalDFN\" id=\"ref-for-dfn-common-safety-checks-2\">common safety checks</a> with <var data-type=\"Document\">document</var>. If an\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\" id=\"ref-for-index-term-exception-2\">exception</a> is <a data-link-type=\"dfn|abstract-op\" data-lt=\"throw\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-index-term-throw-for-exception-2\">thrown</a>, re-throw that exception\n          and abort these steps."
+        },
+        {
+          "html": "If screen's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-active-orientation-lock\" class=\"internalDFN\" id=\"ref-for-dfn-active-orientation-lock-2\">active orientation lock</a> is <code>null</code>, return\n          <code>undefined</code>."
+        },
+        {
+          "html": "If <var data-type=\"Document\">document</var>'s <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-4\"><code>[[orientationPendingPromise]]</code></a> is not\n          <code>null</code>, <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-reject-and-nullify-the-current-lock-promise\" class=\"internalDFN\" id=\"ref-for-dfn-reject-and-nullify-the-current-lock-promise-2\">reject and nullify the current lock promise</a> of <var data-type=\"Document\">document</var>\n          with an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-index-term-aborterror-exception-2\"><code>AbortError</code></a>\"."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-apply-orientation-lock\" class=\"internalDFN\" id=\"ref-for-dfn-apply-orientation-lock-2\">Apply orientation lock</a> <code>null</code> to <var data-type=\"Document\">document</var>."
+        }
+      ]
+    },
+    {
+      "name": "common safety checks",
+      "href": "https://www.w3.org/TR/screen-orientation/#dfn-common-safety-checks",
+      "html": "The <dfn id=\"dfn-common-safety-checks\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">common safety checks</dfn> for a <a data-link-type=\"idl\" data-lt=\"Document\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-2\"><code>Document</code></a>\n          <var data-type=\"Document\">document</var> are the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"Document\">document</var> is not\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-index-term-fully-active-for-document-1\">fully active</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-index-term-throw-for-exception-3\">throw</a> an\n          \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-index-term-invalidstateerror-exception-1\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-index-term-domexception-interface-2\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"Document\">document</var> has the\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#sandboxed-orientation-lock-browsing-context-flag\" id=\"ref-for-index-term-sandboxed-orientation-lock-browsing-context-flag-1\">sandboxed orientation lock browsing context flag</a> set,\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-index-term-throw-for-exception-4\">throw</a> \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-index-term-securityerror-exception-1\"><code>SecurityError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-index-term-domexception-interface-3\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"Document\">document</var>'s\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#visibility-state\" id=\"ref-for-index-term-visibility-state-for-document-1\">visibility state</a> is \"hidden\", <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-index-term-throw-for-exception-5\">throw</a>\n          \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-index-term-securityerror-exception-2\"><code>SecurityError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-index-term-domexception-interface-4\"><code>DOMException</code></a>."
+        }
+      ]
+    },
+    {
+      "html": "When a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\" id=\"ref-for-index-term-browsing-context-2\">browsing context</a> <var>context</var> is created, the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-index-term-user-agent-7\">user agent</a>\n          <em class=\"rfc2119\">MUST</em>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>screenOrientation</var> be <var>context</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-associated-screenorientation\" class=\"internalDFN\" id=\"ref-for-dfn-associated-screenorientation-1\">associated <code>ScreenOrientation</code></a>."
+        },
+        {
+          "html": "Initialize <var>screenOrientation</var>'s\n          <a data-link-type=\"attribute\" data-lt=\"[[initialType]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-initialtype\" class=\"internalDFN\" id=\"ref-for-dfn-initialtype-1\"><code>[[initialType]]</code></a> internal slot to the screen's\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-type\" class=\"internalDFN\" id=\"ref-for-dfn-current-orientation-type-4\">current orientation type</a>."
+        },
+        {
+          "html": "Initialize <var>screenOrientation</var>'s <a data-link-type=\"attribute\" data-lt=\"[[type]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-type\" class=\"internalDFN\" id=\"ref-for-dfn-type-2\"><code>[[type]]</code></a>\n          internal slot to the screen's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-type\" class=\"internalDFN\" id=\"ref-for-dfn-current-orientation-type-5\">current orientation type</a>."
+        },
+        {
+          "html": "Initialize <var>screenOrientation</var>'s <a data-link-type=\"attribute\" data-lt=\"[[angle]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-angle\" class=\"internalDFN\" id=\"ref-for-dfn-angle-2\"><code>[[angle]]</code></a>\n          internal slot to the screen's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-angle\" class=\"internalDFN\" id=\"ref-for-dfn-current-orientation-angle-2\">current orientation angle</a>."
+        }
+      ]
+    },
+    {
+      "name": "reject and nullify the current lock promise",
+      "href": "https://www.w3.org/TR/screen-orientation/#dfn-reject-and-nullify-the-current-lock-promise",
+      "html": "When steps require to <dfn id=\"dfn-reject-and-nullify-the-current-lock-promise\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">reject and nullify the current lock\n          promise</dfn> of <a data-link-type=\"idl\" data-lt=\"Document\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-3\"><code>Document</code></a> <var>document</var> with a <a data-link-type=\"idl\" data-lt=\"DOMString\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-index-term-domstring-interface-1\"><code>DOMString</code></a>\n          <var>exceptionName</var>, the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-index-term-user-agent-8\">user agent</a> <em class=\"rfc2119\">MUST</em>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-index-term-assert-1\">Assert</a>: <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-5\"><code>[[orientationPendingPromise]]</code></a> is not\n          <code>null</code>."
+        },
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <var>document</var>'s\n          <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-6\"><code>[[orientationPendingPromise]]</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-index-term-queue-a-global-task-1\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-index-term-dom-manipulation-task-source-1\">DOM manipulation task source</a>\n          with <var>document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-3\">relevant global object</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-index-term-reject-1\">reject</a> <var data-type=\"Promise\">promise</var>\n          with a new <var>exceptionName</var> <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-index-term-domexception-interface-5\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "Set <var>document</var>'s <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-7\"><code>[[orientationPendingPromise]]</code></a> to\n          <code>null</code>."
+        }
+      ]
+    },
+    {
+      "name": "apply orientation lock",
+      "href": "https://www.w3.org/TR/screen-orientation/#dfn-apply-orientation-lock",
+      "html": "When steps require to <dfn id=\"dfn-apply-orientation-lock\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">apply orientation lock</dfn> of\n        <a data-link-type=\"idl\" data-lt=\"OrientationLockType\" href=\"https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype\" class=\"internalDFN\" id=\"ref-for-dom-orientationlocktype-8\"><code>OrientationLockType?</code></a> <var>orientation</var> to <a data-link-type=\"idl\" data-lt=\"Document\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-4\"><code>Document</code></a> <var>document</var>, the\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-index-term-user-agent-9\">user agent</a> <em class=\"rfc2119\">MUST</em> perform do the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>document</var> stops being <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-index-term-fully-active-for-document-2\">fully active</a> while <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-index-term-in-parallel-1\">in parallel</a>, and <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-8\"><code>[[orientationPendingPromise]]</code></a> is not\n        <code>null</code>, <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-reject-and-nullify-the-current-lock-promise\" class=\"internalDFN\" id=\"ref-for-dfn-reject-and-nullify-the-current-lock-promise-3\">reject and nullify the current lock promise</a> of <var>document</var>\n        with an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-index-term-aborterror-exception-3\"><code>AbortError</code></a>\"."
+        },
+        {
+          "html": "Let <var>topDocument</var> be <var>document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-index-term-top-level-browsing-context-1\">top-level browsing context</a>'s\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-index-term-active-document-for-navigable-1\">active document</a>."
+        },
+        {
+          "html": "Let <var>descendantDocs</var> be an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-index-term-ordered-set-1\">ordered set</a> consisting of\n        <var>topDocument</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#descendant-navigables\" id=\"ref-for-index-term-descendant-navigables-for-document-1\">descendant navigables</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-index-term-active-document-for-navigable-2\">active documents</a>, if any, in tree order."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-1\">For each</a> <var data-type=\"Document\">doc</var> in <var>descendantDocs</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"Document\">doc</var> is <var>document</var>, continue."
+            },
+            {
+              "html": "If <var data-type=\"Document\">doc</var> <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-9\"><code>[[orientationPendingPromise]]</code></a> is <code>null</code>,\n            continue."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-reject-and-nullify-the-current-lock-promise\" class=\"internalDFN\" id=\"ref-for-dfn-reject-and-nullify-the-current-lock-promise-4\">Reject and nullify the current lock promise</a> of <var data-type=\"Document\">doc</var> with\n            an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-index-term-aborterror-exception-4\"><code>AbortError</code></a>\"."
+            }
+          ]
+        },
+        {
+          "html": "Run the following sub-steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-index-term-in-parallel-2\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>document</var> has stopped being <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-index-term-fully-active-for-document-3\">fully active</a>, and\n            if the <var>document</var>'s <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-10\"><code>[[orientationPendingPromise]]</code></a> is\n            not <code>null</code>, <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-reject-and-nullify-the-current-lock-promise\" class=\"internalDFN\" id=\"ref-for-dfn-reject-and-nullify-the-current-lock-promise-5\">reject and nullify the current lock promise</a> of\n            <var>document</var> with an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-index-term-aborterror-exception-5\"><code>AbortError</code></a>\" and abort these steps."
+            },
+            {
+              "html": "If <var>orientation</var> is <code>null</code>, <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-unlock-the-screen-orientation\" class=\"internalDFN\" id=\"ref-for-dfn-unlock-the-screen-orientation-3\">unlock the screen orientation</a>."
+            },
+            {
+              "html": "Otherwise, attempt to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-lock-the-screen-orientation\" class=\"internalDFN\" id=\"ref-for-dfn-lock-the-screen-orientation-5\">lock the screen orientation</a> to\n            <var>orientation</var>. Depending on platform conventions, change how the\n            viewport is drawn to match <var>orientation</var>."
+            },
+            {
+              "html": "If the attempt fails due to previously-established user\n            preference, or platform limitation, or any other reason:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set the screen's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-active-orientation-lock\" class=\"internalDFN\" id=\"ref-for-dfn-active-orientation-lock-3\">active orientation lock</a> to\n                <code>null</code>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-1\">Queue a task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-index-term-dom-manipulation-task-source-2\">DOM manipulation task source</a>\n                with <var>document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-4\">relevant global object</a> to:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If the <var>document</var>'s\n                    <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-11\"><code>[[orientationPendingPromise]]</code></a> is not <code>null</code>,\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-reject-and-nullify-the-current-lock-promise\" class=\"internalDFN\" id=\"ref-for-dfn-reject-and-nullify-the-current-lock-promise-6\">reject and nullify the current lock promise</a> of\n                    <var>document</var> with a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-index-term-notsupportederror-exception-2\"><code>NotSupportedError</code></a>\"."
+                    },
+                    {
+                      "html": "Abort these steps."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Set the screen's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-active-orientation-lock\" class=\"internalDFN\" id=\"ref-for-dfn-active-orientation-lock-4\">active orientation lock</a> to\n            <var>orientation</var> and update the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-type\" class=\"internalDFN\" id=\"ref-for-dfn-current-orientation-type-6\">current orientation type</a>\n            and <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-angle\" class=\"internalDFN\" id=\"ref-for-dfn-current-orientation-angle-3\">current orientation angle</a> to reflect any changes to\n            the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-screen-orientations\" class=\"internalDFN\" id=\"ref-for-dfn-screen-orientations-5\">screen orientation</a>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-index-term-queue-a-global-task-2\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-index-term-dom-manipulation-task-source-3\">DOM manipulation task source</a>\n        with <var>document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-5\">relevant global object</a> to:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"Promise?\">promise</var> be <var>document</var>'s\n            <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-12\"><code>[[orientationPendingPromise]]</code></a>."
+            },
+            {
+              "html": "Set <var>document</var>'s <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-13\"><code>[[orientationPendingPromise]]</code></a> to\n            <code>null</code>."
+            },
+            {
+              "html": "Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-screen-orientation-change-steps\" class=\"internalDFN\" id=\"ref-for-dfn-screen-orientation-change-steps-1\">screen orientation change steps</a> with <var>topDocument</var>."
+            },
+            {
+              "html": "If <var data-type=\"Promise?\">promise</var> is not <code>null</code>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-index-term-resolve-1\">resolve</a> <var data-type=\"Promise?\">promise</var> with\n            <code>undefined</code>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "screen orientation change steps",
+      "href": "https://www.w3.org/TR/screen-orientation/#dfn-screen-orientation-change-steps",
+      "html": "The <dfn class=\"export\" data-export=\"\" id=\"dfn-screen-orientation-change-steps\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">screen orientation change steps</dfn> for\n        <a data-link-type=\"idl\" data-lt=\"Document\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-5\"><code>Document</code></a> <var data-type=\"Document\">document</var> are as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#visibility-state\" id=\"ref-for-index-term-visibility-state-for-document-2\">visibility state</a> is \"hidden\", abort\n        these steps."
+        },
+        {
+          "html": "Let <var>type</var> and <var>angle</var> be the screen's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-type\" class=\"internalDFN\" id=\"ref-for-dfn-current-orientation-type-7\">current orientation type</a> and <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-angle\" class=\"internalDFN\" id=\"ref-for-dfn-current-orientation-angle-4\">current orientation angle</a>."
+        },
+        {
+          "html": "Let <var>screenOrientation</var> be <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-6\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-associated-screenorientation\" class=\"internalDFN\" id=\"ref-for-dfn-associated-screenorientation-2\">associated <code>ScreenOrientation</code></a>."
+        },
+        {
+          "html": "If <var>type</var> is equal to <var>screenOrientation</var>'s\n        <a data-link-type=\"attribute\" data-lt=\"[[type]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-type\" class=\"internalDFN\" id=\"ref-for-dfn-type-3\"><code>[[type]]</code></a> and <var>angle</var> is equal to\n        <var>screenOrientation</var>'s <a data-link-type=\"attribute\" data-lt=\"[[angle]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-angle\" class=\"internalDFN\" id=\"ref-for-dfn-angle-3\"><code>[[angle]]</code></a>, abort these\n        steps."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-index-term-queue-a-global-task-3\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-index-term-user-interaction-task-source-1\">user interaction task source</a>\n        with <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-7\">relevant global object</a> to perform the following\n        steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>screenOrientation</var>'s <a data-link-type=\"attribute\" data-lt=\"[[angle]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-angle\" class=\"internalDFN\" id=\"ref-for-dfn-angle-4\"><code>[[angle]]</code></a> to\n            <var>angle</var>."
+            },
+            {
+              "html": "Set <var>screenOrientation</var>'s <a data-link-type=\"attribute\" data-lt=\"[[type]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-type\" class=\"internalDFN\" id=\"ref-for-dfn-type-4\"><code>[[type]]</code></a> to\n            <var>type</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-index-term-fire-an-event-1\">Fire an event</a> named \"<a href=\"https://www.w3.org/TR/screen-orientation/#dfn-change\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-change-2\">change</a>\" at <var>screenOrientation</var>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>descendantDocs</var> be an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-index-term-ordered-set-2\">ordered set</a> consisting of\n        <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#descendant-navigables\" id=\"ref-for-index-term-descendant-navigables-for-document-2\">descendant navigables</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-index-term-active-document-for-navigable-4\">active documents</a>, if any, in tree order."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-2\">For each</a> <var data-type=\"Document\">doc</var> in <var>descendantDocs</var>, run the\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-screen-orientation-change-steps\" class=\"internalDFN\" id=\"ref-for-dfn-screen-orientation-change-steps-3\">screen orientation change steps</a> with <var data-type=\"Document\">doc</var>."
+        }
+      ]
+    },
+    {
+      "html": "Whenever the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-lifecycle.html#unloading-document-cleanup-steps\" id=\"ref-for-index-term-unloading-document-cleanup-steps-1\">unloading document cleanup steps</a> run with a\n        <var>document</var>, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>document</var> is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-index-term-top-level-browsing-context-5\">top-level browsing context</a>'s\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-index-term-active-document-for-navigable-5\">active document</a>, abort these steps."
+        },
+        {
+          "html": "Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-fully-unlock-the-screen-orientation-steps\" class=\"internalDFN\" id=\"ref-for-dfn-fully-unlock-the-screen-orientation-steps-1\">fully unlock the screen orientation steps</a> with\n        <var>document</var>."
+        }
+      ]
+    },
+    {
+      "name": "fully unlock the screen orientation steps",
+      "href": "https://www.w3.org/TR/screen-orientation/#dfn-fully-unlock-the-screen-orientation-steps",
+      "html": "The <dfn class=\"export\" data-export=\"\" id=\"dfn-fully-unlock-the-screen-orientation-steps\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">fully unlock the screen orientation steps</dfn>\n        for <a data-link-type=\"idl\" data-lt=\"Document\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-6\"><code>Document</code></a> <var data-type=\"Document\">document</var> are as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"Document\">document</var>'s <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-14\"><code>[[orientationPendingPromise]]</code></a> is not\n        <code>null</code>, <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-reject-and-nullify-the-current-lock-promise\" class=\"internalDFN\" id=\"ref-for-dfn-reject-and-nullify-the-current-lock-promise-7\">reject and nullify the current lock promise</a> of <var data-type=\"Document\">document</var>\n        with an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-index-term-aborterror-exception-6\"><code>AbortError</code></a>\"."
+        },
+        {
+          "html": "Let <var>topDocument</var> be <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-index-term-top-level-browsing-context-6\">top-level browsing context</a>'s\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-index-term-active-document-for-navigable-6\">active document</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-apply-orientation-lock\" class=\"internalDFN\" id=\"ref-for-dfn-apply-orientation-lock-3\">Apply orientation lock</a> <code>null</code> to <var>topDocument</var>."
+        }
+      ]
+    },
+    {
+      "html": "To resist fingerprinting (e.g., in private browsing), user agents <em class=\"rfc2119\">MAY</em>:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For the life of a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-index-term-top-level-browsing-context-7\">top-level browsing context</a>, behave as as if\n        screen's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-natural\" class=\"internalDFN\" id=\"ref-for-dfn-natural-8\">natural</a> orientation is\n        <a data-link-type=\"attribute\" data-lt=\"[[initialType]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-initialtype\" class=\"internalDFN\" id=\"ref-for-dfn-initialtype-2\"><code>[[initialType]]</code></a>."
+        },
+        {
+          "html": "Restrict the possible return values of the\n        <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/screen-orientation/#dom-screenorientation-type\" class=\"internalDFN\" id=\"ref-for-dom-screenorientation-type-2\"><code>type</code></a> getter to\n        \"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/screen-orientation/#dom-orientationtype-portrait-primary\" class=\"internalDFN\" id=\"ref-for-dom-orientationtype-portrait-primary-2\"><code>portrait-primary</code></a>\" or\n        \"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/screen-orientation/#dom-orientationtype-landscape-primary\" class=\"internalDFN\" id=\"ref-for-dom-orientationtype-landscape-primary-2\"><code>landscape-primary</code></a>\". The screen aspect ratio\n        determines which is returned."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-type\" class=\"internalDFN\" id=\"ref-for-dfn-current-orientation-type-9\">current orientation type</a> matches\n        <a data-link-type=\"attribute\" data-lt=\"[[initialType]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-initialtype\" class=\"internalDFN\" id=\"ref-for-dfn-initialtype-3\"><code>[[initialType]]</code></a>, return <code>0</code> for the\n        <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/screen-orientation/#dom-screenorientation-angle\" class=\"internalDFN\" id=\"ref-for-dom-screenorientation-angle-3\"><code>angle</code></a> getter. Otherwise, return <code>90</code>."
+        },
+        {
+          "html": "If the screen orientation changes, only fire the\n          <a href=\"https://www.w3.org/TR/screen-orientation/#dfn-change\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-change-3\">change</a> event when the\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-type\" class=\"internalDFN\" id=\"ref-for-dfn-current-orientation-type-10\">current orientation type</a> changes from <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-portrait\" class=\"internalDFN\" id=\"ref-for-dfn-portrait-5\">portrait</a> to\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-landscape\" class=\"internalDFN\" id=\"ref-for-dfn-landscape-6\">landscape</a>, or vice versa."
+        }
+      ]
+    }
+  ]
+}

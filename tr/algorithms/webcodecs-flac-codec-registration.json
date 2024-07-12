@@ -1,0 +1,23 @@
+{
+  "spec": {
+    "title": "FLAC WebCodecs Registration",
+    "url": "https://www.w3.org/TR/webcodecs-flac-codec-registration/"
+  },
+  "algorithms": [
+    {
+      "html": "To check if an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs-flac-codec-registration/#dictdef-flacencoderconfig\" id=\"ref-for-dictdef-flacencoderconfig②\">FlacEncoderConfig</a></code> is valid, run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs-flac-codec-registration/#dom-flacencoderconfig-blocksize\" id=\"ref-for-dom-flacencoderconfig-blocksize①\">blockSize</a></code> is not a valid block size,\nwhich is described section 5.1 of <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webcodecs-flac-codec-registration/#biblio-flac\" title=\"Free Lossless Audio Codec\">[FLAC]</a>, return <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs-flac-codec-registration/#dom-flacencoderconfig-compresslevel\" id=\"ref-for-dom-flacencoderconfig-compresslevel①\">compressLevel</a></code> is specified and not within the range of <code>0</code> (fastest, least compression) and <code>8</code> (slowest, most compression) inclusively, return <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Return <code>true</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "spec": {
+    "title": "Upgrade Insecure Requests",
+    "url": "https://www.w3.org/TR/upgrade-insecure-requests/"
+  },
+  "algorithms": [
+    {
+      "html": "We recommend that authors who wish to ensure that user agents which support <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#upgrade-insecure-requests\">upgrade-insecure-requests</a> are as secure as possible do the following:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Redirect <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec/specs/mixedcontent/#a-priori-insecure-url\"><i lang=\"la\">a priori</i> insecure</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#safely-upgradable-requests\">safely upgradable\n      requests</a> from HTTP to HTTPS by responding with a <code>Location</code> header and a <code>307</code> status code."
+        },
+        {
+          "html": "Respond to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec/specs/mixedcontent/#potentially-secure-origin\">potentially secure</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#safely-upgradable-requests\">safely upgradable requests</a> with a <code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#upgrade-insecure-requests\">upgrade-insecure-requests</a></code> directive if\n      necessary for the resource being requested."
+        },
+        {
+          "html": "If the origin is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#hsts-safe-origin\">HSTS-safe</a>, then protect\n      against SSL-stripping man-in-the-middle attacks by sending a <code><a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6797#section-6.1\">Strict-Transport-Security</a></code> header with the <code>preload</code> directive, and ensure that insecure content is\n      never loaded by enabling Mixed Content’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec/specs/mixedcontent/#strict-mode\">strict mode</a>. \n      \n      <p>Additionally, work with user agent vendors to add the origin to\n      HSTS Preload Lists (for example, by submitting the origin to <a href=\"https://hstspreload.appspot.com/\">hstspreload.appspot.com</a>).</p>"
+        },
+        {
+          "html": "If the origin is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#conditionally-hsts-safe-origin\">conditionally HSTS-safe</a>, then opt-into HSTS only\n      in response to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#safely-upgradable-requests\">safely upgradable requests</a>."
+        }
+      ]
+    },
+    {
+      "html": "When <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP/#enforce\">enforcing</a> the <code>upgrade-insecure-requests</code> directive:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>settings</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP/#protected-resource\">protected resource</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/webappapis.html#incumbent-settings-object\">incumbent\n      settings object</a>."
+        },
+        {
+          "html": "Set <var>setting</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#insecure-requests-policy\">insecure requests policy</a> to <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-upgrade\">Upgrade</a>."
+        },
+        {
+          "html": "Let <var>tuple</var> be a tuple of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP/#protected-resource\">protected resource</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/url/#concept-url\">URL</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/url/#concept-url-host\">host</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/url/#concept-url-port\">port</a></code>."
+        },
+        {
+          "html": "Insert <var>tuple</var> into <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#upgrade-insecure-navigations-set\">upgrade insecure\n      navigations set</a>."
+        }
+      ]
+    },
+    {
+      "html": "If a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/dom/#interface-document\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/webappapis.html#incumbent-settings-object\">incumbent settings object</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#insecure-requests-policy\">insecure requests\n  policy</a> is set to <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-upgrade\">Upgrade</a>, the user agent MUST ensure that\n  all <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/browsers.html#nested-browsing-context\">nested browsing contexts</a> inherit the setting in the following ways:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/browsers.html#nested-browsing-context\">nested browsing context</a> <var>context</var> is created:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec/specs/mixedcontent/#embedding-document\">embedding document</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#insecure-requests-policy\">insecure\n          requests policy</a> is <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-upgrade\">Upgrade</a>, then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#insecure-requests-policy\">insecure requests policy</a> to <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-upgrade\">Upgrade</a>."
+                },
+                {
+                  "html": "For each <var>value</var> in <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec/specs/mixedcontent/#embedding-document\">embedding\n              document</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#upgrade-insecure-navigations-set\">upgrade insecure navigations set</a>, add <var>value</var> to <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#upgrade-insecure-navigations-set\">upgrade insecure\n              navigations set</a>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "When <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/browsers.html#create-a-document-object\">creating a new <code>Document</code> object</a> <var>document</var> in a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/browsers.html#browsing-context\">browsing context</a> <var>context</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#insecure-requests-policy\">insecure requests policy</a> is <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-upgrade\">Upgrade</a>, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>settings</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/webappapis.html#incumbent-settings-object\">incumbent\n              settings object</a>."
+                },
+                {
+                  "html": "Set <var>settings</var>' <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#insecure-requests-policy\">insecure requests policy</a> to <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-upgrade\">Upgrade</a>."
+                },
+                {
+                  "html": "For each <var>value</var> in <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#upgrade-insecure-navigations-set\">upgrade\n              insecure navigations set</a>, add <var>value</var> to <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#upgrade-insecure-navigations-set\">upgrade insecure navigations set</a>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Likewise, when spinning up a worker, the user agent MUST ensure that it\n  inherits the setting from the context that created it in the following ways:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "When executing the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/workers/#script-settings-for-workers\">set up a worker environment settings object</a> algorithm, perform the following steps after the current step #4:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>inherited responsible browsing context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#insecure-requests-policy\">insecure\n          requests policy</a> is <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-upgrade\">Upgrade</a>, then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var>settings object</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#insecure-requests-policy\">insecure requests policy</a> to <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-upgrade\">Upgrade</a>."
+                },
+                {
+                  "html": "For each <var>value</var> in <var>inherited responsible browsing\n              context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#upgrade-insecure-navigations-set\">upgrade insecure navigations set</a>, add <var>value</var> to <var>settings object</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#upgrade-insecure-navigations-set\">upgrade\n              insecure navigations set</a>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "We will not upgrade cross-origin <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#navigation-request\">navigation requests</a>, with the\n  exception of form submissions. Form submissions will be upgraded to mitigate\n  the risk of data leakage via plaintext submissions.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>request</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#navigation-request\">navigation request</a>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\">append</a> a\n      header named <code>Upgrade-Insecure-Requests</code> with a value of <code>1</code> to <var>request</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\">header-list</a> if any of the following\n      criteria are met:",
+          "ignored": [
+            "request’s url is a priori insecure request’s url’s host is not a preloadable HSTS host"
+          ]
+        },
+        {
+          "html": "If <var>request</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#navigation-request\">navigation request</a>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>request</var> is a form submission, skip the remaining\n          substeps, and continue upgrading <var>request</var>."
+            },
+            {
+              "html": "Let <var>tuple</var> be a tuple of <var>request</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\">url</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/url/#concept-url-host\">host</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/url/#concept-url-port\">port</a></code>."
+            },
+            {
+              "html": "If <var>tuple</var> is contained in <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\">client</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#upgrade-insecure-navigations-set\">upgrade insecure navigations set</a>, then skip the remaining\n          substeps, and continue upgrading <var>request</var>."
+            },
+            {
+              "html": "Return without further modifying <var>request</var>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>upgrade state</var> be the result of executing <a href=\"https://www.w3.org/TR/upgrade-insecure-requests/#should-upgrade-for-client\">§4.2 Should insecure requests be upgraded for client?</a> upon <var>request</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\">client</a>."
+        },
+        {
+          "html": "If <var>upgrade state</var> is <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-do-not-upgrade\">Do Not Upgrade</a>, return without\n      modifying <var>request</var>."
+        },
+        {
+          "html": "If <var>request</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\">url</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/url/#concept-url-scheme\">scheme</a></code> is <code>http</code>, set <var>request</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\">url</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/url/#concept-url-scheme\">scheme</a></code> to <code>https</code>, and return."
+        },
+        {
+          "html": "If <var>request</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\">url</a>s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/url/#concept-url-port\">port</a></code> is <code>80</code>, set <var>request</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\">url</a>s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/url/#concept-url-port\">port</a></code> to <code>443</code>."
+        }
+      ]
+    },
+    {
+      "html": "Given an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\">request</a>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\">client</a> <var>client</var> (an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/webappapis.html#settings-object\">environment settings object</a>), this algorithm\n  returns <code>Enforced Upgrade</code> if <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec/specs/mixedcontent/#a-priori-insecure-url\"><i lang=\"la\">a priori</i> insecure</a> requests associated with that client should be upgraded, or <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-do-not-upgrade\">Do Not Upgrade</a> otherwise. In short, this will check the client\n  and return the appropriate <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#insecure-requests-policy\">insecure requests policy</a> set on it or its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/browsers.html#browsing-context\">browsing context</a>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>client</var> has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/webappapis.html#responsible-document\">responsible document</a>, return the value\n      of its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#insecure-requests-policy\">insecure requests policy</a>."
+        },
+        {
+          "html": "If <var>client</var> has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/webappapis.html#responsible-browsing-context\">responsible browsing context</a>, return the\n      value of its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#insecure-requests-policy\">insecure requests policy</a>."
+        },
+        {
+          "html": "Return <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-do-not-upgrade\">Do Not Upgrade</a>."
+        }
+      ]
+    },
+    {
+      "html": "After the current step 1 (and before the new step #2 introduced in <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#biblio-mix\">[MIX]</a>), perform the following step:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>secure</var> is <strong>false</strong>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>upgrade state</var> be the result of executing <a href=\"https://www.w3.org/TR/upgrade-insecure-requests/#should-upgrade-for-client\">§4.2 Should insecure requests be upgraded for client?</a> upon the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/html5/webappapis.html#relevant-settings-object-for-a-script\">relevant settings\n              object</a> for <var>client</var>’s <var>entry script</var>."
+            },
+            {
+              "html": "If <var>upgrade state</var> is <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/upgrade-insecure-requests/#valdef-insecure-requests-policy-do-not-upgrade\">Do Not Upgrade</a>, skip\n              the remaining substeps."
+            },
+            {
+              "html": "Set <var>secure</var> to <code>true</code>."
+            },
+            {
+              "html": "If <var>port</var> is <code>80</code>, set <var>port</var> to <code>443</code>."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

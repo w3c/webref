@@ -1,0 +1,381 @@
+{
+  "spec": {
+    "title": "MediaStream Recording",
+    "url": "https://www.w3.org/TR/mediastream-recording/"
+  },
+  "algorithms": [
+    {
+      "name": "MediaRecorder/MediaRecorder(stream, options)",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-mediarecorder",
+      "html": "When the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-mediarecorder\" id=\"ref-for-dom-mediarecorder-mediarecorder①\">MediaRecorder()</a></code> constructor is invoked, the User Agent MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>stream</var> be the constructor’s first argument."
+        },
+        {
+          "html": "Let <var>options</var> be the constructor’s second argument."
+        },
+        {
+          "html": "If invoking <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/mediastream-recording/#abstract-opdef-is-type-supported\" id=\"ref-for-abstract-opdef-is-type-supported\">is type supported</a> with <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorderoptions-mimetype\" id=\"ref-for-dom-mediarecorderoptions-mimetype\">mimeType</a></code> member as its argument returns false,\n    throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and abort these steps."
+        },
+        {
+          "html": "Let <var>recorder</var> be a newly constructed <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#mediarecorder\" id=\"ref-for-mediarecorder①\">MediaRecorder</a></code> object."
+        },
+        {
+          "html": "Let <var>recorder</var> have a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"constrainedmimetype\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">[[ConstrainedMimeType]]</dfn><span style=\"position: relative; height: 0px;\"></span> internal slot,\n    initialized to the value of <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorderoptions-mimetype\" id=\"ref-for-dom-mediarecorderoptions-mimetype①\">mimeType</a></code> member."
+        },
+        {
+          "html": "Let <var>recorder</var> have a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"constrainedbitspersecond\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">[[ConstrainedBitsPerSecond]]</dfn><span style=\"position: relative; height: 0px;\"></span> internal\n    slot, initialized to the value of <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorderoptions-bitspersecond\" id=\"ref-for-dom-mediarecorderoptions-bitspersecond\">bitsPerSecond</a></code> member if it is present, otherwise <code>null</code>."
+        },
+        {
+          "html": "Let <var>recorder</var> have a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"videokeyframeintervalduration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">[[VideoKeyFrameIntervalDuration]]</dfn><span style=\"position: relative; height: 0px;\"></span> internal\n    slot, initialized to the value of <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorderoptions-videokeyframeintervalduration\" id=\"ref-for-dom-mediarecorderoptions-videokeyframeintervalduration\">videoKeyFrameIntervalDuration</a></code> member if it is present, otherwise <code>null</code>."
+        },
+        {
+          "html": "Let <var>recorder</var> have a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"videokeyframeintervalcount\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">[[VideoKeyFrameIntervalCount]]</dfn><span style=\"position: relative; height: 0px;\"></span> internal\n    slot, initialized to the value of <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorderoptions-videokeyframeintervalcount\" id=\"ref-for-dom-mediarecorderoptions-videokeyframeintervalcount\">videoKeyFrameIntervalCount</a></code> member if it is present, otherwise <code>null</code>."
+        },
+        {
+          "html": "Initialize <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-stream\" id=\"ref-for-dom-mediarecorder-stream①\">stream</a></code> attribute to <var>stream</var>."
+        },
+        {
+          "html": "Initialize <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-mimetype\" id=\"ref-for-dom-mediarecorder-mimetype①\">mimeType</a></code> attribute to the\n    value of <var>recorder</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#constrainedmimetype\" id=\"ref-for-constrainedmimetype\">[[ConstrainedMimeType]]</a> slot."
+        },
+        {
+          "html": "Initialize <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state①\">state</a></code> attribute to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-inactive\" id=\"ref-for-dom-recordingstate-inactive\">inactive</a></code>."
+        },
+        {
+          "html": "Initialize <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-videobitspersecond\" id=\"ref-for-dom-mediarecorder-videobitspersecond①\">videoBitsPerSecond</a></code> attribute to the value of <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorderoptions-videobitspersecond\" id=\"ref-for-dom-mediarecorderoptions-videobitspersecond\">videoBitsPerSecond</a></code> member, if it is\n    present. Otherwise, choose a target value the User Agent deems reasonable\n    for video."
+        },
+        {
+          "html": "Initialize <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitspersecond\" id=\"ref-for-dom-mediarecorder-audiobitspersecond①\">audioBitsPerSecond</a></code> attribute to the value of <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorderoptions-audiobitspersecond\" id=\"ref-for-dom-mediarecorderoptions-audiobitspersecond\">audioBitsPerSecond</a></code> member, if it is\n    present. Otherwise, choose a target value the User Agent deems reasonable\n    for audio."
+        },
+        {
+          "html": "If <var>recorder</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#constrainedbitspersecond\" id=\"ref-for-constrainedbitspersecond\">[[ConstrainedBitsPerSecond]]</a> slot is not <code>null</code>, set <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-videobitspersecond\" id=\"ref-for-dom-mediarecorder-videobitspersecond②\">videoBitsPerSecond</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitspersecond\" id=\"ref-for-dom-mediarecorder-audiobitspersecond②\">audioBitsPerSecond</a></code> attributes to values the User Agent deems reasonable\n    for the respective media types, such that the sum of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-videobitspersecond\" id=\"ref-for-dom-mediarecorder-videobitspersecond③\">videoBitsPerSecond</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitspersecond\" id=\"ref-for-dom-mediarecorder-audiobitspersecond③\">audioBitsPerSecond</a></code> is close to the value of <var>recorder</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#constrainedbitspersecond\" id=\"ref-for-constrainedbitspersecond①\">[[ConstrainedBitsPerSecond]]</a> slot."
+        },
+        {
+          "html": "If <var>recorder</var> supports the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#enumdef-bitratemode\" id=\"ref-for-enumdef-bitratemode①\">BitrateMode</a></code> specified by the value of <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorderoptions-audiobitratemode\" id=\"ref-for-dom-mediarecorderoptions-audiobitratemode\">audioBitrateMode</a></code> member,\n    then initialize <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitratemode\" id=\"ref-for-dom-mediarecorder-audiobitratemode①\">audioBitrateMode</a></code> attribute to the value of <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorderoptions-audiobitratemode\" id=\"ref-for-dom-mediarecorderoptions-audiobitratemode①\">audioBitrateMode</a></code> member,\n    else initialize <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitratemode\" id=\"ref-for-dom-mediarecorder-audiobitratemode②\">audioBitrateMode</a></code> attribute to the value\n    \"variable\"."
+        },
+        {
+          "html": "Return <var>recorder</var>."
+        }
+      ]
+    },
+    {
+      "name": "MediaRecorder/start(timeslice)",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-start",
+      "html": "When a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#mediarecorder\" id=\"ref-for-mediarecorder④\">MediaRecorder</a></code> object’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-start\" id=\"ref-for-dom-mediarecorder-start②\">start()</a></code> method is invoked, the UA\n  MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>recorder</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#mediarecorder\" id=\"ref-for-mediarecorder⑤\">MediaRecorder</a></code> object on which the method was\n    invoked."
+        },
+        {
+          "html": "Let <var>timeslice</var> be the method’s first argument, if provided,\n    or <code>undefined</code>."
+        },
+        {
+          "html": "Let <var>stream</var> be the value of <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-stream\" id=\"ref-for-dom-mediarecorder-stream②\">stream</a></code> attribute."
+        },
+        {
+          "html": "Let <var>tracks</var> be the set of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStreamTrackState.live\" id=\"ref-for-idl-def-MediaStreamTrackState.live\">live</a></code> tracks in <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-track-set\" id=\"ref-for-dfn-track-set\">track set</a>."
+        },
+        {
+          "html": "If the value of <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state③\">state</a></code> attribute is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-inactive\" id=\"ref-for-dom-recordingstate-inactive①\">inactive</a></code>,\n    throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> and abort these steps."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webrtc-identity/#isolated-media-streams\" id=\"ref-for-isolated-media-streams\">isolation properties</a> of <var>stream</var> disallow access from <var>recorder</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> and abort these\n    steps."
+        },
+        {
+          "html": "If <var>stream</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediacapture-streams/#stream-inactive\" id=\"ref-for-stream-inactive\">inactive</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①\">NotSupportedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> and abort these steps."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#constrainedmimetype\" id=\"ref-for-constrainedmimetype①\">[[ConstrainedMimeType]]</a> slot specifies a media type,\n    container, or codec, then constrain the configuration of <var>recorder</var> to the\n    media type, container, and codec specified in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#constrainedmimetype\" id=\"ref-for-constrainedmimetype②\">[[ConstrainedMimeType]]</a> slot."
+        },
+        {
+          "html": "If <var>recorder</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#constrainedbitspersecond\" id=\"ref-for-constrainedbitspersecond②\">[[ConstrainedBitsPerSecond]]</a> slot is not <code>null</code>, set <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-videobitspersecond\" id=\"ref-for-dom-mediarecorder-videobitspersecond④\">videoBitsPerSecond</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitspersecond\" id=\"ref-for-dom-mediarecorder-audiobitspersecond④\">audioBitsPerSecond</a></code> attributes to values the User Agent deems reasonable\n    for the respective media types, for recording all tracks in <var>tracks</var>, such\n    that the sum of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-videobitspersecond\" id=\"ref-for-dom-mediarecorder-videobitspersecond⑤\">videoBitsPerSecond</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitspersecond\" id=\"ref-for-dom-mediarecorder-audiobitspersecond⑤\">audioBitsPerSecond</a></code> is close\n    to the value of <var>recorder</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#constrainedbitspersecond\" id=\"ref-for-constrainedbitspersecond③\">[[ConstrainedBitsPerSecond]]</a> slot."
+        },
+        {
+          "html": "Let <var>videoBitrate</var> be the value of <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-videobitspersecond\" id=\"ref-for-dom-mediarecorder-videobitspersecond⑥\">videoBitsPerSecond</a></code> attribute, and constrain the configuration of <var>recorder</var> to target an\n    aggregate bitrate of <var>videoBitrate</var> bits per second for all video tracks <var>recorder</var> will be recording. <var>videoBitrate</var> is a hint for the encoder and\n    the value might be surpassed, not achieved, or only be achieved over a long\n    period of time."
+        },
+        {
+          "html": "Let <var>audioBitrate</var> be the value of <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitspersecond\" id=\"ref-for-dom-mediarecorder-audiobitspersecond⑥\">audioBitsPerSecond</a></code> attribute, and constrain the configuration of <var>recorder</var> to target an\n    aggregate bitrate of <var>audioBitrate</var> bits per second for all audio tracks <var>recorder</var> will be recording. <var>audioBitrate</var> is a hint for the encoder and\n    the value might be surpassed, not achieved, or only be achieved over a long\n    period of time."
+        },
+        {
+          "html": "Let <var>videoKeyFrameIntervalDuration</var> be <var>recorder</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#videokeyframeintervalduration\" id=\"ref-for-videokeyframeintervalduration\">[[VideoKeyFrameIntervalDuration]]</a>, and let <var>videoKeyFrameIntervalCount</var> be <var>recorder</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#videokeyframeintervalcount\" id=\"ref-for-videokeyframeintervalcount\">[[VideoKeyFrameIntervalCount]]</a>. The UA SHOULD constrain the\n    configuration of <var>recorder</var> so that the video encoder follows the below rules: \n       <ul>\n        <li>If <var>videoKeyFrameIntervalDuration</var> is not <code>null</code> and <var>videoKeyFrameIntervalCount</var> is <code>null</code>,\n    the video encoder produces a keyframe on the first frame arriving after <var>videoKeyFrameIntervalDuration</var> milliseconds elapsed since the last key frame.\n        </li><li>If <var>videoKeyFrameIntervalCount</var> is not <code>null</code> and <var>videoKeyFrameIntervalDuration</var> is <code>null</code>,\n    the video encoder produces a keyframe on the first frame arriving after <var>videoKeyFrameIntervalCount</var> frames passed since the last key frame.\n        </li><li>If both <var>videoKeyFrameIntervalDuration</var> and <var>videoKeyFrameIntervalCount</var> are not <code>null</code>,\n    then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror②\">NotSupportedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> and abort these steps.\n        </li><li>If both <var>videoKeyFrameIntervalDuration</var> and <var>videoKeyFrameIntervalCount</var> are <code>null</code>,\n    the User Agent may emit key frames as it deems fit.\n       </li></ul>\n       <p>Note that encoders will sometimes make independent decisions about when to\n    emit key frames.</p>\n      <p></p>"
+        },
+        {
+          "html": "Constrain the configuration of <var>recorder</var> to encode using the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#enumdef-bitratemode\" id=\"ref-for-enumdef-bitratemode④\">BitrateMode</a></code> specified by the value of <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitratemode\" id=\"ref-for-dom-mediarecorder-audiobitratemode③\">audioBitrateMode</a></code> attribute for all audio tracks <var>recorder</var> will be recording."
+        },
+        {
+          "html": "For each track in <var>tracks</var>, if the User Agent cannot record the track\n    using the current configuration, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③\">NotSupportedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> and abort these steps."
+        },
+        {
+          "html": "Set <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state④\">state</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-recording\" id=\"ref-for-dom-recordingstate-recording\">recording</a></code>, and run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the container and codecs to use for the recording have not yet been\n      fully specified, the User Agent specifies them in <var>recorder</var>’s current\n      configuration. The User Agent MAY take the sources of the tracks in <var>tracks</var> into account when deciding which container and codecs to\n      use."
+            },
+            {
+              "html": "Start recording all tracks in <var>tracks</var> using the <var>recorder</var>’s current\n      configuration and gather the data into a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob②\">Blob</a></code> <var>blob</var>. Queue a\n      task, using the DOM manipulation task source, to run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>extendedMimeType</var> be the value of <var>recorder</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#constrainedmimetype\" id=\"ref-for-constrainedmimetype③\">[[ConstrainedMimeType]]</a> slot."
+                },
+                {
+                  "html": "Modify <var>extendedMimeType</var> by adding media type, subtype and codecs\n        parameter reflecting the configuration used by the MediaRecorder to\n        record all tracks in <var>tracks</var>, if not already present. This MAY include\n        the profiles parameter <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/mediastream-recording/#biblio-rfc6381\" title=\"The 'Codecs' and 'Profiles' Parameters for &quot;Bucket&quot; Media Types\">[RFC6381]</a> or further codec-specific\n        parameters."
+                },
+                {
+                  "html": "Set <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-mimetype\" id=\"ref-for-dom-mediarecorder-mimetype③\">mimeType</a></code> attribute to <var>extendedMimeType</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-start\" id=\"ref-for-eventdef-mediarecorder-start①\">start</a> at <var>recorder</var>."
+                }
+              ]
+            },
+            {
+              "html": "If at any point <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webrtc-identity/#isolated-media-streams\" id=\"ref-for-isolated-media-streams①\">isolation properties</a> change so\n      that <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#mediarecorder\" id=\"ref-for-mediarecorder⑥\">MediaRecorder</a></code> is no longer allowed access to it, the UA MUST\n      stop gathering data, discard any data that it has gathered,\n      and queue a task, using the DOM manipulation task source, that runs the\n      following steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/mediastream-recording/#abstract-opdef-inactivate-the-recorder\" id=\"ref-for-abstract-opdef-inactivate-the-recorder\">Inactivate the recorder</a> with <var>recorder</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#fire-an-error-event\" id=\"ref-for-fire-an-error-event\">Fire an error event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①\">SecurityError</a></code> at <var>recorder</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#fire-a-blob-event\" id=\"ref-for-fire-a-blob-event\">Fire a blob event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-dataavailable\" id=\"ref-for-eventdef-mediarecorder-dataavailable①\">dataavailable</a> at <var>recorder</var> with <var>blob</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-stop\" id=\"ref-for-eventdef-mediarecorder-stop①\">stop</a> at <var>recorder</var>."
+                }
+              ]
+            },
+            {
+              "html": "If at any point, a track is added to or removed from <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-track-set\" id=\"ref-for-dfn-track-set①\">track set</a>, the UA MUST stop gathering data, and queue a task,\n      using the DOM manipulation task source, that runs the following steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/mediastream-recording/#abstract-opdef-inactivate-the-recorder\" id=\"ref-for-abstract-opdef-inactivate-the-recorder①\">Inactivate the recorder</a> with <var>recorder</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#fire-an-error-event\" id=\"ref-for-fire-an-error-event①\">Fire an error event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror\">InvalidModificationError</a></code> at <var>recorder</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#fire-a-blob-event\" id=\"ref-for-fire-a-blob-event①\">Fire a blob event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-dataavailable\" id=\"ref-for-eventdef-mediarecorder-dataavailable②\">dataavailable</a> at <var>recorder</var> with <var>blob</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire②\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-stop\" id=\"ref-for-eventdef-mediarecorder-stop②\">stop</a> at <var>recorder</var>."
+                }
+              ]
+            },
+            {
+              "html": "If the UA at any point is unable to continue gathering data for\n      reasons other than <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webrtc-identity/#isolated-media-streams\" id=\"ref-for-isolated-media-streams②\">isolation properties</a> or <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-track-set\" id=\"ref-for-dfn-track-set②\">track set</a>, it MUST stop gathering data, and queue a task, using the\n      DOM manipulation task source, that runs the following steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/mediastream-recording/#abstract-opdef-inactivate-the-recorder\" id=\"ref-for-abstract-opdef-inactivate-the-recorder②\">Inactivate the recorder</a> with <var>recorder</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#fire-an-error-event\" id=\"ref-for-fire-an-error-event②\">Fire an error event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#unknownerror\" id=\"ref-for-unknownerror\">UnknownError</a></code> at <var>recorder</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#fire-a-blob-event\" id=\"ref-for-fire-a-blob-event②\">Fire a blob event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-dataavailable\" id=\"ref-for-eventdef-mediarecorder-dataavailable③\">dataavailable</a> at <var>recorder</var> with <var>blob</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-stop\" id=\"ref-for-eventdef-mediarecorder-stop③\">stop</a> at <var>recorder</var>."
+                }
+              ]
+            },
+            {
+              "html": "If <var>timeslice</var> is not <code>undefined</code>, then once a\n      minimum of <var>timeslice</var> milliseconds of data have been collected,\n      or some minimum time slice imposed by the UA, whichever is greater, start\n      gathering data into a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob③\">Blob</a></code> <var>blob</var>, and queue a task,\n      using the DOM manipulation task source, that <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#fire-a-blob-event\" id=\"ref-for-fire-a-blob-event③\">fires a blob event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-dataavailable\" id=\"ref-for-eventdef-mediarecorder-dataavailable④\">dataavailable</a> at <var>recorder</var> with <var>blob</var>. \n         <p>Note that an <code>undefined</code> value of <var>timeslice</var> will\n      be understood as the largest <code>unsigned long</code> value.</p>\n        <p></p>"
+            },
+            {
+              "html": "If all recorded tracks become <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStreamTrackState.ended\" id=\"ref-for-idl-def-MediaStreamTrackState.ended\">ended</a></code>, then stop gathering data, and\n      queue a task, using the DOM manipulation task source, that runs the\n      following steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/mediastream-recording/#abstract-opdef-inactivate-the-recorder\" id=\"ref-for-abstract-opdef-inactivate-the-recorder③\">Inactivate the recorder</a> with <var>recorder</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#fire-a-blob-event\" id=\"ref-for-fire-a-blob-event④\">Fire a blob event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-dataavailable\" id=\"ref-for-eventdef-mediarecorder-dataavailable⑤\">dataavailable</a> at <var>recorder</var> with <var>blob</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire④\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-stop\" id=\"ref-for-eventdef-mediarecorder-stop④\">stop</a> at <var>recorder</var>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inactivate the recorder",
+      "href": "https://www.w3.org/TR/mediastream-recording/#abstract-opdef-inactivate-the-recorder",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-inactivate-the-recorder\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Inactivate the recorder</dfn><span style=\"position: relative; height: 0px;\"></span> algorithm given a <var>recorder</var>, is as follows:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-mimetype\" id=\"ref-for-dom-mediarecorder-mimetype④\">mimeType</a></code> attribute to the value of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#constrainedmimetype\" id=\"ref-for-constrainedmimetype④\">[[ConstrainedMimeType]]</a> slot."
+        },
+        {
+          "html": "Set <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state⑤\">state</a></code> attribute to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-inactive\" id=\"ref-for-dom-recordingstate-inactive②\">inactive</a></code>."
+        },
+        {
+          "html": "If <var>recorder</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#constrainedbitspersecond\" id=\"ref-for-constrainedbitspersecond④\">[[ConstrainedBitsPerSecond]]</a> slot is not <code>undefined</code>, set <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-videobitspersecond\" id=\"ref-for-dom-mediarecorder-videobitspersecond⑦\">videoBitsPerSecond</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitspersecond\" id=\"ref-for-dom-mediarecorder-audiobitspersecond⑦\">audioBitsPerSecond</a></code> attributes to values the User Agent deems reasonable\n    for the respective media types, such that the sum of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-videobitspersecond\" id=\"ref-for-dom-mediarecorder-videobitspersecond⑧\">videoBitsPerSecond</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitspersecond\" id=\"ref-for-dom-mediarecorder-audiobitspersecond⑧\">audioBitsPerSecond</a></code> is close to the value of <var>recorder</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#constrainedbitspersecond\" id=\"ref-for-constrainedbitspersecond⑤\">[[ConstrainedBitsPerSecond]]</a> slot."
+        }
+      ]
+    },
+    {
+      "name": "MediaRecorder/stop()",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-stop",
+      "html": "When a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#mediarecorder\" id=\"ref-for-mediarecorder⑦\">MediaRecorder</a></code> object’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-stop\" id=\"ref-for-dom-mediarecorder-stop③\">stop()</a></code> method is invoked, the UA\n  MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>recorder</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#mediarecorder\" id=\"ref-for-mediarecorder⑧\">MediaRecorder</a></code> object on which the method was\n    invoked."
+        },
+        {
+          "html": "If <var>recorder</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state⑥\">state</a></code> attribute is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-inactive\" id=\"ref-for-dom-recordingstate-inactive③\">inactive</a></code>, abort these\n    steps."
+        },
+        {
+          "html": "<a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/mediastream-recording/#abstract-opdef-inactivate-the-recorder\" id=\"ref-for-abstract-opdef-inactivate-the-recorder④\">Inactivate the recorder</a> with <var>recorder</var>."
+        },
+        {
+          "html": "Queue a task, using the DOM manipulation task source, that runs the\n    following steps:",
+          "rationale": "stop",
+          "steps": [
+            {
+              "html": "Stop gathering data."
+            },
+            {
+              "html": "Let <var>blob</var> be the Blob of collected data so far, then <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#fire-a-blob-event\" id=\"ref-for-fire-a-blob-event⑤\">fire a blob event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-dataavailable\" id=\"ref-for-eventdef-mediarecorder-dataavailable⑥\">dataavailable</a> at <var>recorder</var> with <var>blob</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑤\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-stop\" id=\"ref-for-eventdef-mediarecorder-stop⑤\">stop</a> at <var>recorder</var>."
+            }
+          ]
+        },
+        {
+          "html": "return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "name": "MediaRecorder/pause()",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-pause",
+      "html": "When a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#mediarecorder\" id=\"ref-for-mediarecorder⑨\">MediaRecorder</a></code> object’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-pause\" id=\"ref-for-dom-mediarecorder-pause②\">pause()</a></code> method is invoked, the UA\n  MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state⑦\">state</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-inactive\" id=\"ref-for-dom-recordingstate-inactive④\">inactive</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> and abort these steps."
+        },
+        {
+          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state⑧\">state</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-paused\" id=\"ref-for-dom-recordingstate-paused\">paused</a></code>, abort these steps."
+        },
+        {
+          "html": "Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state⑨\">state</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-paused\" id=\"ref-for-dom-recordingstate-paused①\">paused</a></code>, and queue a\n    task, using the DOM manipulation task source, that runs the following steps:",
+          "rationale": "stop",
+          "steps": [
+            {
+              "html": "Stop gathering data into <var>blob</var> (but keep it\n      available so that recording can be resumed in the future)."
+            },
+            {
+              "html": "Let <var>target</var> be the MediaRecorder context object. <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑥\">Fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-pause\" id=\"ref-for-eventdef-mediarecorder-pause①\">pause</a> at <var>target</var>."
+            }
+          ]
+        },
+        {
+          "html": "return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "name": "MediaRecorder/resume()",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-resume",
+      "html": "When a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#mediarecorder\" id=\"ref-for-mediarecorder①⓪\">MediaRecorder</a></code> object’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-resume\" id=\"ref-for-dom-mediarecorder-resume①\">resume()</a></code> method is invoked, the\n  UA MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state①⓪\">state</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-inactive\" id=\"ref-for-dom-recordingstate-inactive⑤\">inactive</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code> and abort these steps."
+        },
+        {
+          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state①①\">state</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-recording\" id=\"ref-for-dom-recordingstate-recording①\">recording</a></code>, abort these steps."
+        },
+        {
+          "html": "Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state①②\">state</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-recording\" id=\"ref-for-dom-recordingstate-recording②\">recording</a></code>, and queue a\n    task, using the DOM manipulation task source, that runs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Resume (or continue) gathering data into the current <var>blob</var>."
+            },
+            {
+              "html": "Let <var>target</var> be the MediaRecorder context object. <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑦\">Fire\n      an event</a> named <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch-resume\" id=\"ref-for-concept-fetch-resume\">resume</a> at <var>target</var>."
+            }
+          ]
+        },
+        {
+          "html": "return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "name": "MediaRecorder/requestData()",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-requestdata",
+      "html": "When a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#mediarecorder\" id=\"ref-for-mediarecorder①①\">MediaRecorder</a></code> object’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-requestdata\" id=\"ref-for-dom-mediarecorder-requestdata③\">requestData()</a></code> method is invoked,\n  the UA MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-state\" id=\"ref-for-dom-mediarecorder-state①③\">state</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-inactive\" id=\"ref-for-dom-recordingstate-inactive⑥\">inactive</a></code> throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> and terminate these steps. Otherwise the UA MUST queue a\n    task, using the DOM manipulation task source, that runs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>blob</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑤\">Blob</a></code> of collected data so far and\n      let <var>target</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediastream-recording/#mediarecorder\" id=\"ref-for-mediarecorder①②\">MediaRecorder</a></code> context object, then <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mediastream-recording/#fire-a-blob-event\" id=\"ref-for-fire-a-blob-event⑥\">fire a blob event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-dataavailable\" id=\"ref-for-eventdef-mediarecorder-dataavailable⑦\">dataavailable</a> at <var>target</var> with <var>blob</var>.\n      (Note that <var>blob</var> will be empty if no data has been gathered\n      yet.)"
+            },
+            {
+              "html": "Create a new Blob and gather subsequent data into it."
+            }
+          ]
+        },
+        {
+          "html": "return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "name": "is type supported",
+      "href": "https://www.w3.org/TR/mediastream-recording/#abstract-opdef-is-type-supported",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-is-type-supported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">is type supported</dfn><span style=\"position: relative; height: 0px;\"></span> algorithm consists of the following steps.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>type</var> be the algorithm’s argument."
+        },
+        {
+          "html": "If <var>type</var> is an empty string, then return true (note that this case is\n    essentially equivalent to leaving up to the UA the choice of both container\n    and codecs)."
+        },
+        {
+          "html": "If <var>type</var> does not contain a valid MIME type string, then return false."
+        },
+        {
+          "html": "If <var>type</var> contains a media type or media subtype that the MediaRecorder\n    does not support, then return false."
+        },
+        {
+          "html": "If <var>type</var> contains a media container that the MediaRecorder does not\n    support, then return false."
+        },
+        {
+          "html": "If <var>type</var> contains more than one audio codec, or more than one video\n    codec, then return false."
+        },
+        {
+          "html": "If <var>type</var> contains a codec that the MediaRecorder does not support, then\n    return false."
+        },
+        {
+          "html": "If the MediaRecorder does not support the specified combination of media\n    type/subtype, codecs and container then return false."
+        },
+        {
+          "html": "Return true."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "spec": {
+    "title": "WebAssembly Web API",
+    "url": "https://www.w3.org/TR/wasm-web-api-2/"
+  },
+  "algorithms": [
+    {
+      "name": "WebAssembly/instantiateStreaming(source, importObject)",
+      "href": "https://www.w3.org/TR/wasm-web-api-2/#dom-webassembly-instantiatestreaming",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebAssembly\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"instantiateStreaming(source, importObject)|instantiateStreaming(source)\" id=\"dom-webassembly-instantiatestreaming\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>instantiateStreaming(<var>source</var>, <var>importObject</var>)</code></dfn> method, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promiseOfModule</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-web-api-2/#compile-a-potential-webassembly-response\" id=\"ref-for-compile-a-potential-webassembly-response①\">compiling a potential WebAssembly response</a> with <var>source</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#instantiate-a-promise-of-a-module\" id=\"ref-for-instantiate-a-promise-of-a-module\">instantiating the promise of a module</a> <var>promiseOfModule</var> with imports <var>importObject</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "compile a potential WebAssembly response",
+      "href": "https://www.w3.org/TR/wasm-web-api-2/#compile-a-potential-webassembly-response",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-a-potential-webassembly-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile a potential WebAssembly response</dfn> with a promise of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\" id=\"ref-for-response②\">Response</a></code> <var>source</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>returnValue</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a></p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-a-potential-webassembly-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile a potential WebAssembly response</dfn> with a promise of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\" id=\"ref-for-response②\">Response</a></code> <var>source</var>, perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>response</var> be <var>unwrappedSource</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response\">response</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>mimeType</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get\">getting</a> <code>`Content-Type`</code> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>mimeType</var> is null, reject <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①\">TypeError</a></code> and abort these substeps.</p>"
+            },
+            {
+              "html": "<p>Remove all <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-tab-or-space-byte\" id=\"ref-for-http-tab-or-space-byte\">HTTP tab or space byte</a> from the start and end of <var>mimeType</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>mimeType</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-case-insensitive\" id=\"ref-for-byte-case-insensitive\">byte-case-insensitive</a> match for <code>`application/wasm`</code>, reject <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a></code> and abort these substeps.</p>"
+            },
+            {
+              "html": "<p>If <var>response</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#cors-same-origin\" id=\"ref-for-cors-same-origin①\">CORS-same-origin</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③\">TypeError</a></code> and abort these substeps.</p>"
+            },
+            {
+              "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status①\">ok status</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror④\">TypeError</a></code> and abort these substeps.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-consume-body\" id=\"ref-for-concept-body-consume-body\">Consume</a> <var>response</var>’s body as an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-arraybuffer-objects\" id=\"ref-for-sec-arraybuffer-objects\">ArrayBuffer</a></code>, and let <var>bodyPromise</var> be the result.</p>"
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-a-potential-webassembly-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile a potential WebAssembly response</dfn> with a promise of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\" id=\"ref-for-response②\">Response</a></code> <var>source</var>, perform the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>stableBytes</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy\">copy of the bytes held by the buffer</a> <var>bodyArrayBuffer</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#asynchronously-compile-a-webassembly-module\" id=\"ref-for-asynchronously-compile-a-webassembly-module\">Asynchronously compile the WebAssembly module</a> <var>stableBytes</var> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source\">networking task source</a> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>returnValue</var> with the result.</p>"
+                }
+              ]
+            },
+            {
+              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-a-potential-webassembly-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile a potential WebAssembly response</dfn> with a promise of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\" id=\"ref-for-response②\">Response</a></code> <var>source</var>, perform the following steps:",
+              "rationale": "reject",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">Reject</a> <var>returnValue</var> with <var>reason</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-a-potential-webassembly-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile a potential WebAssembly response</dfn> with a promise of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\" id=\"ref-for-response②\">Response</a></code> <var>source</var>, perform the following steps:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">Reject</a> <var>returnValue</var> with <var>reason</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>returnValue</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps\">serialization steps</a>, given <var>value</var>, <var>serialized</var>, and <var>forStorage</var>, are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>forStorage</var> is true, throw a \"<a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror\">DataCloneError</a>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[Bytes]] to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-serialization\" id=\"ref-for-sub-serialization\">sub-serialization</a> of <var>value</var>.[[Bytes]].</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[AgentCluster]] to the <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#current-realm\" id=\"ref-for-current-realm\">current Realm</a>'s corresponding <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-agent-clusters\" id=\"ref-for-sec-agent-clusters\">agent cluster</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#deserialization-steps\" id=\"ref-for-deserialization-steps\">deserialization steps</a>, given <var>serialized</var>, <var>value</var>, and <var>targetRealm</var> are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>bytes</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-deserialization\" id=\"ref-for-sub-deserialization\">sub-deserialization</a> of <var>serialized</var>.[[Bytes]].</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>.[[Bytes]] to <var>bytes</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>targetRealm</var>’s corresponding <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-agent-clusters\" id=\"ref-for-sec-agent-clusters①\">agent cluster</a> is not <var>serialized</var>.[[AgentCluster]], then throw a \"<a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror①\">DataCloneError</a>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#compile-a-webassembly-module\" id=\"ref-for-compile-a-webassembly-module\">Compile a WebAssembly module</a> from <var>bytes</var> and set <var>value</var>.[[Module]] to the result.</p>"
+        }
+      ]
+    }
+  ]
+}

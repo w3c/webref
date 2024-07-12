@@ -1,0 +1,204 @@
+{
+  "spec": {
+    "title": "Web Share API",
+    "url": "https://www.w3.org/TR/web-share/"
+  },
+  "algorithms": [
+    {
+      "html": "As with any user of <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>, implementors need to\n            carefully consider what information is revealed in the error\n            message when <a data-link-type=\"idl\" data-lt=\"share()\" href=\"https://www.w3.org/TR/web-share/#dom-navigator-share\" class=\"internalDFN\" id=\"ref-for-dom-navigator-share-7\"><code>share</code></a><code>()</code> is rejected. Even distinguishing\n            between the case where no <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/web-share/#dfn-share-target\" class=\"internalDFN\" id=\"ref-for-dfn-share-target-5\">share targets</a> are available and user\n            cancellation could reveal information about which share targets are\n            installed on the user's device.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Window\">global</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>."
+        },
+        {
+          "html": "Let <var data-type=\"Document\">document</var> be <var data-type=\"Window\">global</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"Document\">document</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>, return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n            <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"Document\">document</var> is not <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> <a href=\"https://www.w3.org/TR/web-share/#dfn-web-share\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-web-share-1\"><code>\"web-share\"</code></a>,\n            return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\"\n            <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[sharePromise]]\" href=\"https://www.w3.org/TR/web-share/#dfn-sharepromise\" class=\"internalDFN\" id=\"ref-for-dfn-sharepromise-2\"><code>[[sharePromise]]</code></a> is not <code>null</code>,\n            return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n            <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"Window\">global</var> does not have <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\">transient activation</a>, return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\">Consume user activation</a> of <var data-type=\"Window\">global</var>."
+        },
+        {
+          "html": "Let <var data-type=\"URL\">base</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\">relevant settings object</a>'s\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#api-base-url\">API base URL</a>."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/web-share/#dfn-validate-share-data\" class=\"internalDFN\" id=\"ref-for-dfn-validate-share-data-2\">validate share data</a> with <var data-type=\"ShareData\">data</var> and <var data-type=\"URL\">base</var> returns\n            false, then return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> a <a data-link-type=\"idl\" data-lt=\"TypeError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"ShareData\">data</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-url\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-url-2\"><code>url</code></a> member is present:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"URL\">url</var> be the result of running the <a data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL\n                parser</a> on <var data-type=\"ShareData\">data</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-url\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-url-3\"><code>url</code></a> with <var data-type=\"URL\">base</var>."
+            },
+            {
+              "html": "<a href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var data-type=\"URL\">url</var> is <a data-link-type=\"idl\" data-lt=\"URL\" data-type=\"interface\" href=\"https://url.spec.whatwg.org/#url\"><code>URL</code></a>."
+            },
+            {
+              "html": "Set <var data-type=\"ShareData\">data</var> to a copy of <var data-type=\"ShareData\">data</var>, with its <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-url\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-url-4\"><code>url</code></a>\n                member set to the result of running the <a data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\">URL serializer</a>\n                on <var data-type=\"URL\">url</var>."
+            }
+          ]
+        },
+        {
+          "html": "If a file type is being blocked due to security considerations,\n            return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\"\n            <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[sharePromise]]\" href=\"https://www.w3.org/TR/web-share/#dfn-sharepromise\" class=\"internalDFN\" id=\"ref-for-dfn-sharepromise-3\"><code>[[sharePromise]]</code></a> to be <a data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new\n            promise</a>."
+        },
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[sharePromise]]\" href=\"https://www.w3.org/TR/web-share/#dfn-sharepromise\" class=\"internalDFN\" id=\"ref-for-dfn-sharepromise-4\"><code>[[sharePromise]]</code></a> and <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in\n            parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If there are no <a href=\"https://www.w3.org/TR/web-share/#dfn-share-target\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-share-target-6\">share targets</a> available, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a> using\n                <var data-type=\"Window\">global</var> to:",
+              "rationale": "reject",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[sharePromise]]\" href=\"https://www.w3.org/TR/web-share/#dfn-sharepromise\" class=\"internalDFN\" id=\"ref-for-dfn-sharepromise-5\"><code>[[sharePromise]]</code></a> with\n                    an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                },
+                {
+                  "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[sharePromise]]\" href=\"https://www.w3.org/TR/web-share/#dfn-sharepromise\" class=\"internalDFN\" id=\"ref-for-dfn-sharepromise-6\"><code>[[sharePromise]]</code></a> to <code>null</code>."
+                },
+                {
+                  "html": "Terminate this algorithm."
+                }
+              ]
+            },
+            {
+              "html": "Present the user with a choice of one more <a href=\"https://www.w3.org/TR/web-share/#dfn-share-target\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-share-target-7\">share\n                targets</a> and the ability abort the operation. This UI\n                surface serves as a security confirmation, ensuring that\n                websites cannot silently send data to native applications. The\n                user agent <em class=\"rfc2119\">SHOULD</em> show intermediary UI through which the user\n                can verify the shared content (if the OS-level UI does not\n                provide this functionality)."
+            },
+            {
+              "html": "Wait for the user's choice."
+            },
+            {
+              "html": "If the user chose to abort the share operation, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a> using\n                <var data-type=\"Window\">global</var> to:",
+              "rationale": "reject",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[sharePromise]]\" href=\"https://www.w3.org/TR/web-share/#dfn-sharepromise\" class=\"internalDFN\" id=\"ref-for-dfn-sharepromise-7\"><code>[[sharePromise]]</code></a> with\n                    an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>,"
+                },
+                {
+                  "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[sharePromise]]\" href=\"https://www.w3.org/TR/web-share/#dfn-sharepromise\" class=\"internalDFN\" id=\"ref-for-dfn-sharepromise-8\"><code>[[sharePromise]]</code></a> to <code>null</code>."
+                },
+                {
+                  "html": "Terminate this algorithm."
+                }
+              ]
+            },
+            {
+              "html": "Activate the chosen <a href=\"https://www.w3.org/TR/web-share/#dfn-share-target\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-share-target-8\">share target</a>, <a href=\"https://www.w3.org/TR/web-share/#dfn-convert-data-to-a-format-suitable-for-ingestion-into-the-target\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-data-to-a-format-suitable-for-ingestion-into-the-target-1\">convert <var data-type=\"ShareData\">data</var>\n                to a format suitable for ingestion into the target</a>, and\n                transmit the converted data to the target."
+            },
+            {
+              "html": "If an error occurs starting the target or transmitting the\n                data, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a> using <var data-type=\"Window\">global</var> to:",
+              "rationale": "reject",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[sharePromise]]\" href=\"https://www.w3.org/TR/web-share/#dfn-sharepromise\" class=\"internalDFN\" id=\"ref-for-dfn-sharepromise-9\"><code>[[sharePromise]]</code></a> with\n                    an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                },
+                {
+                  "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[sharePromise]]\" href=\"https://www.w3.org/TR/web-share/#dfn-sharepromise\" class=\"internalDFN\" id=\"ref-for-dfn-sharepromise-10\"><code>[[sharePromise]]</code></a> to <code>null</code>."
+                },
+                {
+                  "html": "Terminate this algorithm."
+                }
+              ]
+            },
+            {
+              "html": "Once the data has either been successfully transmitted to\n                the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/web-share/#dfn-share-target\" class=\"internalDFN\" id=\"ref-for-dfn-share-target-9\">share target</a>, or successfully transmitted to the OS (if\n                the transmission to the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/web-share/#dfn-share-target\" class=\"internalDFN\" id=\"ref-for-dfn-share-target-10\">share target</a> cannot be confirmed),\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>\n                using <var data-type=\"Window\">global</var> to:",
+              "rationale": "resolve",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[sharePromise]]\" href=\"https://www.w3.org/TR/web-share/#dfn-sharepromise\" class=\"internalDFN\" id=\"ref-for-dfn-sharepromise-11\"><code>[[sharePromise]]</code></a>\n                    with <code>undefined</code>."
+                },
+                {
+                  "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[sharePromise]]\" href=\"https://www.w3.org/TR/web-share/#dfn-sharepromise\" class=\"internalDFN\" id=\"ref-for-dfn-sharepromise-12\"><code>[[sharePromise]]</code></a> to <code>null</code>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Navigator/canShare()",
+      "href": "https://www.w3.org/TR/web-share/#dom-navigator-canshare",
+      "html": "When the <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-navigator-canshare\" data-idl=\"operation\" data-title=\"canShare()\" data-dfn-for=\"Navigator\" data-type=\"boolean\" data-lt=\"canShare()|canShare(data)\" data-local-lt=\"Navigator.canShare|Navigator.canShare()|canShare\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>canShare()</code></dfn> method is called with argument\n            <a data-link-type=\"idl\" data-lt=\"ShareData\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-4\"><code>ShareData</code></a> <var data-type=\"ShareData\">data</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Document\">document</var> be the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"Document\">document</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>, return false."
+        },
+        {
+          "html": "If <var data-type=\"Document\">document</var> is not <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> <a href=\"https://www.w3.org/TR/web-share/#dfn-web-share\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-web-share-2\"><code>\"web-share\"</code></a>,\n            return false."
+        },
+        {
+          "html": "Return the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/web-share/#dfn-validate-share-data\" class=\"internalDFN\" id=\"ref-for-dfn-validate-share-data-3\">validate share data</a> with <var data-type=\"ShareData\">data</var> and\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#api-base-url\">API base URL</a>."
+        }
+      ]
+    },
+    {
+      "name": "validate share data",
+      "href": "https://www.w3.org/TR/web-share/#dfn-validate-share-data",
+      "html": "To <dfn id=\"dfn-validate-share-data\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">validate share data</dfn> with <var data-type=\"ShareData\">data</var> and\n            <var data-type=\"URL\">base</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If none of <var data-type=\"ShareData\">data</var>'s members <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-title\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-title-2\"><code>title</code></a>,\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-text\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-text-1\"><code>text</code></a>, or <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-url\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-url-5\"><code>url</code></a> or <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-files\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-files-2\"><code>files</code></a> are\n            present, return false."
+        },
+        {
+          "html": "Let <var data-type=\"boolean\">titleTextOrUrl</var> be true if any of\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-title\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-title-3\"><code>title</code></a>, or <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-text\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-text-2\"><code>text</code></a>, or <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-url\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-url-6\"><code>url</code></a> is\n            present."
+        },
+        {
+          "html": "If <var data-type=\"ShareData\">data</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-files\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-files-3\"><code>files</code></a> member is present:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"boolean\">titleTextOrUrl</var> is false and <var data-type=\"ShareData\">data</var>'s\n                <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-files\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-files-4\"><code>files</code></a> member is empty, return false."
+            },
+            {
+              "html": "If the implementation does not support file sharing, return\n                false."
+            },
+            {
+              "html": "If the user agent believes sharing any of the files in\n                <code>files</code> would result in a potentially hostile share (i.e., the\n                user agent determines a file is malicious in some way, because\n                of its contents, size, or other characteristic), return false."
+            }
+          ]
+        },
+        {
+          "html": "If <var data-type=\"ShareData\">data</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-url\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-url-7\"><code>url</code></a> member is present:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"URL\">url</var> be the result of running the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a>\n                on <var data-type=\"ShareData\">data</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata-url\" class=\"internalDFN\" id=\"ref-for-dom-sharedata-url-8\"><code>url</code></a> member, with <var data-type=\"URL\">base</var>, and no\n                encoding override."
+            },
+            {
+              "html": "If <var data-type=\"URL\">url</var> is failure, return false."
+            },
+            {
+              "html": "If the <var data-type=\"URL\">url</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\">scheme</a> is a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#local-scheme\">local scheme</a>, or\n                <code>file</code>, or <code>javascript</code>, or <code>ws</code>, or <code>wss</code>, return false."
+            },
+            {
+              "html": "If <var data-type=\"URL\">url</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\">scheme</a> is not a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/web-share/#dfn-sharable-scheme\" class=\"internalDFN\" id=\"ref-for-dfn-sharable-scheme-2\">sharable scheme</a>,\n                return false."
+            }
+          ]
+        },
+        {
+          "html": "Return true."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "spec": {
+    "title": "CSS Animations Level 2",
+    "url": "https://www.w3.org/TR/css-animations-2/"
+  },
+  "algorithms": [
+    {
+      "html": "Within the set of CSS Animations <em>with</em> an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-animations-2/#owning-element\" id=\"ref-for-owning-element⑦\">owning element</a>, two\nanimations <var>A</var> and <var>B</var> are sorted in composite order (first to\nlast) as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-animations-2/#owning-element\" id=\"ref-for-owning-element⑧\">owning element</a> of <var>A</var> and <var>B</var> differs, sort <var>A</var> and <var>B</var> by <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order\">tree order</a> of their corresponding <span id=\"ref-for-owning-element⑨\">owning elements</span>.\nWith regard to pseudo-elements, the sort order is as follows:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>element</p>\n      </li><li data-md=\"\">\n       <p>::marker</p>\n      </li><li data-md=\"\">\n       <p>::before</p>\n      </li><li data-md=\"\">\n       <p>any other pseudo-elements not mentioned specifically in this list,\nsorted in ascending order by the Unicode codepoints that make up each selector</p>\n      </li><li data-md=\"\">\n       <p>::after</p>\n      </li><li data-md=\"\">\n       <p>element children</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>Otherwise, sort <var>A</var> and <var>B</var> based on their position in the\ncomputed value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-animations-1/#propdef-animation-name\" id=\"ref-for-propdef-animation-name⑤\">animation-name</a> property of the (common) <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-animations-2/#owning-element\" id=\"ref-for-owning-element①⓪\">owning\nelement</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "For each animation effect defined by the <var>N</var>th item\nin the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#coordinated-value-list\" id=\"ref-for-coordinated-value-list\">coordinated value list</a> of the <a class=\"property css\" data-link-type=\"property\">animation-*</a> properties\non target (pseudo-)element <var>element</var>,\nits associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#keyframe\" id=\"ref-for-keyframe\">keyframes</a> are generated as follows:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p><strong>Set Defaults:</strong></p>\n     <ul>\n      <li data-md=\"\">\n       <p>Let <var>default timing function</var> be the corresponding <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-animations-1/#propdef-animation-timing-function\" id=\"ref-for-propdef-animation-timing-function①\">animation-timing-function</a> on <var>element</var>.</p>\n      </li><li data-md=\"\">\n       <p>Let <var>default composite</var> be the corresponding <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed value</a> of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-animations-2/#propdef-animation-composition\" id=\"ref-for-propdef-animation-composition\">animation-composition</a> on <var>element</var>.</p>\n      </li><li data-md=\"\">\n       <p>Let <var>keyframes</var> be an empty sequence of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#keyframe\" id=\"ref-for-keyframe①\">keyframe</a> objects,\neach possessing a <var>keyframe offset</var>, <var>keyframe timing function</var>, <var>keyframe composite</var>,\nand <var>keyframe values</var>.</p>\n      </li><li data-md=\"\">\n       <p>Let <var>animated properties</var> be an empty set of CSS property names.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<strong>Collect Declared Keyframes:</strong>",
+          "rationale": "find",
+          "steps": [
+            {
+              "html": "<p>Find the last <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-animations-1/#at-ruledef-keyframes\" id=\"ref-for-at-ruledef-keyframes⑤\">@keyframes</a> at-rule in document order\nwith <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-animations-1/#typedef-keyframes-name\" id=\"ref-for-typedef-keyframes-name\">&lt;keyframes-name&gt;</a> matching\nthe corresponding <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-animations-1/#propdef-animation-name\" id=\"ref-for-propdef-animation-name⑥\">animation-name</a> value <var>name</var>.</p>\n       <p>If there is no <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-animations-1/#at-ruledef-keyframes\" id=\"ref-for-at-ruledef-keyframes⑥\">@keyframes</a> at-rule\nwith <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-animations-1/#typedef-keyframes-name\" id=\"ref-for-typedef-keyframes-name①\">&lt;keyframes-name&gt;</a> matching <var>name</var> (or if <var>name</var> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-animations-1/#valdef-animation-name-none\" id=\"ref-for-valdef-animation-name-none\">none</a>),\nabort this procedure.\nIn this case no animation is generated,\nand any existing animation matching <var>name</var> is canceled.</p>"
+            },
+            {
+              "html": "<p>Group together all <a data-link-type=\"dfn\">keyframe blocks</a> that share the same <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#specified-value\" id=\"ref-for-specified-value\">specified</a> <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-animations-1/#typedef-keyframe-selector\" id=\"ref-for-typedef-keyframe-selector\">&lt;keyframe-selector&gt;</a> (treating <span class=\"css\">from</span> as <span class=\"css\">0%</span> and <span class=\"css\">to</span> as <span class=\"css\">100%</span>),\nlast declared <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-animations-1/#propdef-animation-timing-function\" id=\"ref-for-propdef-animation-timing-function②\">animation-timing-function</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②\">computed value</a> (defaulting to <var>default timing function</var> if there is no such declaration),\nand last declared <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-animations-2/#propdef-animation-composition\" id=\"ref-for-propdef-animation-composition①\">animation-composition</a> <span id=\"ref-for-computed-value③\">computed value</span> (defaulting to <var>default composite</var> if there is no such declaration).</p>"
+            },
+            {
+              "html": "For each such group of matching <a data-link-type=\"dfn\">keyframe blocks</a>,\nordered by their earliest <span>keyframe block</span> in the sorted order:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-6/#cascade\" id=\"ref-for-cascade\">Cascade</a> together all of its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/syndata.html#x14\" id=\"ref-for-x14\">declaration blocks</a> such that for each CSS property\n(except those that are “not animatable”, which must be ignored)\nthe last declaration among all its <a data-link-type=\"dfn\">keyframe blocks</a> takes precedence. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/css-animations-2/#biblio-css-cascade-4\" title=\"CSS Cascading and Inheritance Level 4\">[CSS-CASCADE-4]</a></p>"
+                },
+                {
+                  "html": "<p>Append to <var>keyframes</var> a new empty <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#keyframe\" id=\"ref-for-keyframe②\">keyframe</a> <var>keyframe</var> with the group’s <var>keyframe offset</var>, <var>keyframe timing function</var>,\nand <var>keyframe composite</var>.\nGive its <var>keyframe values</var> the set of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#declared-value\" id=\"ref-for-declared-value\">declared values</a> resulting from this cascade.</p>"
+                },
+                {
+                  "html": "<p>Add each property name that was added to its <var>keyframe properties</var> to <var>animated properties</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<strong>Generate Initial and Final Frames:</strong>",
+          "rationale": "find",
+          "steps": [
+            {
+              "html": "<p>Find or create the <var>initial keyframe</var>,\na <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#keyframe\" id=\"ref-for-keyframe③\">keyframe</a> with a <var>keyframe offset</var> of <span class=\"css\">0%</span>, <var>default timing function</var> as its <var>keyframe timing function</var>,\nand <var>default composite</var> as its <var>keyframe composite</var>.</p>"
+            },
+            {
+              "html": "<p>For any property in <var>animated properties</var> that is not otherwise present in a keyframe with an offset of <span class=\"css\">0%</span> or one that would be positioned earlier in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-animations-2/#used-keyframe-order\" id=\"ref-for-used-keyframe-order\">used keyframe order</a>,\nadd the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑤\">computed value</a> of that property on <var>element</var> to <var>initial keyframe</var>’s <var>keyframe values</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>initial keyframe</var>’s <var>keyframe values</var> is not empty,\nprepend <var>initial keyframe</var> to <var>keyframes</var>.</p>"
+            },
+            {
+              "html": "<p>Repeat for <var>final keyframe</var>,\nusing an offset of <span class=\"css\">100%</span>,\nconsidering keyframes positioned <em>later</em> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-animations-2/#used-keyframe-order\" id=\"ref-for-used-keyframe-order①\">used keyframe order</a>,\nand <em>appending</em> to <var>keyframes</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><strong>Sort Frames:</strong></p>\n     <ul>\n      <li data-md=\"\">\n       <p>The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"specified keyframe order\" data-noexport=\"\" id=\"specified-keyframe-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">specified order</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of <var>keyframes</var> is the order resulting from the steps above,\ni.e. document order with duplicate keyframes collapsed\nto the earliest position.</p>\n      </li><li data-md=\"\">\n       <p>The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"computed keyframe order\" data-noexport=\"\" id=\"computed-keyframe-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">computed order</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of <var>keyframes</var>—<wbr>which is the order returned by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-animations-1/#dom-keyframeeffect-getkeyframes\" id=\"ref-for-dom-keyframeeffect-getkeyframes\">getKeyframes()</a></code>—<wbr>is found by shifting any keyframes whose offset was specified as\na <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#percentage-value\" id=\"ref-for-percentage-value\">&lt;percentage&gt;</a>, <span class=\"css\">from</span> keyword, or <span class=\"css\">to</span> keyword\nto the front of the list (after the generated <var>initial keyframe</var>, if any),\nand performing a stable sort on these keyframes\nby their <var>keyframe offset</var>s.</p>\n      </li><li data-md=\"\">\n       <p>The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"used keyframe order\" data-noexport=\"\" id=\"used-keyframe-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">used order</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of <var>keyframes</var>—<wbr>which is the order used to interpolate and compute the actual animation frames—<wbr>is found by attaching the <var>keyframes</var> onto the animation effect’s timeline\nassuming an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#iteration-count\" id=\"ref-for-iteration-count\">iteration count</a> of 1\nand ordering them from earliest to latest,\nbreaking ties by using the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-animations-2/#computed-keyframe-order\" id=\"ref-for-computed-keyframe-order\">computed keyframe order</a>.</p>\n     </li></ul>"
+        }
+      ]
+    },
+    {
+      "html": "† The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-animations-2/#elapsed-time\" id=\"ref-for-elapsed-time\">elapsed time</a> for\nan <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-animations-1/#eventdef-globaleventhandlers-animationiteration\" id=\"ref-for-eventdef-globaleventhandlers-animationiteration①\">animationiteration</a></code> event is defined as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>previous current iteration</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#current-iteration\" id=\"ref-for-current-iteration②\">current iteration</a> from the previous animation frame.</p>"
+        },
+        {
+          "html": "<p>If <var>previous current iteration</var> is greater than <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#current-iteration\" id=\"ref-for-current-iteration③\">current\niteration</a>, let <var>iteration boundary</var> be <code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#current-iteration\" id=\"ref-for-current-iteration④\">current\niteration</a> + 1</code>, otherwise let it be <span id=\"ref-for-current-iteration⑤\">current iteration</span>.</p>"
+        },
+        {
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-animations-2/#elapsed-time\" id=\"ref-for-elapsed-time①\">elapsed time</a> is the result of evaluating <code>(<var>iteration boundary</var> - <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#iteration-start\" id=\"ref-for-iteration-start①\">iteration start</a>) × <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration②\">iteration duration</a>)</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "spec": {
+    "title": "Capture Handle - Bootstrapping Collaboration when Screensharing",
+    "url": "https://www.w3.org/TR/capture-handle-identity/"
+  },
+  "algorithms": [
+    {
+      "name": "MediaDevices/setCaptureHandleConfig()",
+      "href": "https://www.w3.org/TR/capture-handle-identity/#dom-mediadevices-setcapturehandleconfig",
+      "html": "The <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/capture-handle-identity/#dfn-observable\" class=\"internalDFN\" id=\"ref-for-dfn-observable-2\">observable</a> <a data-link-type=\"idl\" data-lt=\"CaptureHandle\" href=\"https://www.w3.org/TR/capture-handle-identity/#dom-capturehandle\" class=\"internalDFN\" id=\"ref-for-dom-capturehandle-5\"><code>CaptureHandle</code></a> is re-evaluated for all capturing applications.",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For every capturing application for which the new <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/capture-handle-identity/#dfn-observable\" class=\"internalDFN\" id=\"ref-for-dfn-observable-3\">observable</a> <a data-link-type=\"idl\" data-lt=\"CaptureHandle\" href=\"https://www.w3.org/TR/capture-handle-identity/#dom-capturehandle\" class=\"internalDFN\" id=\"ref-for-dom-capturehandle-6\"><code>CaptureHandle</code></a>\n                is different than prior to the call to <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/capture-handle-identity/#dom-mediadevices-setcapturehandleconfig\" class=\"internalDFN\" id=\"ref-for-dom-mediadevices-setcapturehandleconfig-9\"><code>setCaptureHandleConfig</code></a>,\n                the user agent <em class=\"rfc2119\">MUST</em> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/capture-handle-identity/#dfn-capturehandlechange\" class=\"internalDFN\" id=\"ref-for-dfn-capturehandlechange-1\"><code>capturehandlechange</code></a>."
+        },
+        {
+          "html": "The user agent <em class=\"rfc2119\">MUST</em> report the new <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/capture-handle-identity/#dfn-observable\" class=\"internalDFN\" id=\"ref-for-dfn-observable-4\">observable</a> <a data-link-type=\"idl\" data-lt=\"CaptureHandle\" href=\"https://www.w3.org/TR/capture-handle-identity/#dom-capturehandle\" class=\"internalDFN\" id=\"ref-for-dom-capturehandle-7\"><code>CaptureHandle</code></a> whenever\n                <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/capture-handle-identity/#dom-mediastreamtrack-getcapturehandle\" class=\"internalDFN\" id=\"ref-for-dom-mediastreamtrack-getcapturehandle-1\"><code>getCaptureHandle</code></a> is called."
+        }
+      ]
+    }
+  ]
+}

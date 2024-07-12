@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "title": "Opus WebCodecs Registration",
+    "url": "https://www.w3.org/TR/webcodecs-opus-codec-registration/"
+  },
+  "algorithms": [
+    {
+      "html": "To check if an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs-opus-codec-registration/#dictdef-opusencoderconfig\" id=\"ref-for-dictdef-opusencoderconfig②\">OpusEncoderConfig</a></code> is valid, run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs-opus-codec-registration/#dom-opusencoderconfig-frameduration\" id=\"ref-for-dom-opusencoderconfig-frameduration①\">frameDuration</a></code> is not a valid frame duration,\nwhich is described section 2.1.4 of <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webcodecs-opus-codec-registration/#biblio-rfc6716\" title=\"Definition of the Opus Audio Codec\">[RFC6716]</a>, return <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs-opus-codec-registration/#dom-opusencoderconfig-complexity\" id=\"ref-for-dom-opusencoderconfig-complexity①\">complexity</a></code> is specified and not within the range of <code>0</code> and <code>10</code> inclusively, return <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs-opus-codec-registration/#dom-opusencoderconfig-packetlossperc\" id=\"ref-for-dom-opusencoderconfig-packetlossperc①\">packetlossperc</a></code> is specified and not within the range of <code>0</code> and <code>100</code> inclusively, return <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Return <code>true</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

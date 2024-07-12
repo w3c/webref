@@ -1,0 +1,436 @@
+{
+  "spec": {
+    "title": "Reporting API",
+    "url": "https://www.w3.org/TR/reporting-1/"
+  },
+  "algorithms": [
+    {
+      "name": "generate a report",
+      "href": "https://www.w3.org/TR/reporting-1/#generate-a-report",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-a-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a report</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a\n  serializable object (<var>data</var>), a string (<var>type</var>), another string\n  (<var>destination</var>), an optional <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> (<var>settings</var>), and an optional <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a></code> (<var>url</var>):",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>report</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report\" id=\"ref-for-report①②\">report</a> object with its values initialized as\n  follows:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-body\" id=\"ref-for-report-body②\">body</a>\n       </dt><dd data-md=\"\">\n        <p><var>data</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-user-agent\" id=\"ref-for-report-user-agent①\">user agent</a>\n       </dt><dd data-md=\"\">\n        <p>The current value of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-useragent\" id=\"ref-for-dom-navigator-useragent\"><code>navigator.userAgent</code></a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-destination\" id=\"ref-for-report-destination\">destination</a>\n       </dt><dd data-md=\"\">\n        <p><var>destination</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-reporttype\" id=\"ref-for-report-reporttype①\">type</a>\n       </dt><dd data-md=\"\">\n        <p><var>type</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-timestamp\" id=\"ref-for-report-timestamp\">timestamp</a>\n       </dt><dd data-md=\"\">\n        <p>The current timestamp.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-attempts\" id=\"ref-for-report-attempts\">attempts</a>\n       </dt><dd data-md=\"\">\n        <p>0</p>\n      </dd></dl>"
+        },
+        {
+          "html": "<p>If <var>url</var> was not provided by the caller, let <var>url</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#creation-url\" id=\"ref-for-creation-url\">creation URL</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>url</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#concept-url-username\" id=\"ref-for-concept-url-username\">username</a></code> to the empty string, and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#concept-url-password\" id=\"ref-for-concept-url-password\">password</a></code> to <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-url\" id=\"ref-for-report-url\">url</a> to the result of executing the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer\">URL\n  serializer</a> on <var>url</var> with the <em>exclude fragment flag</em> set.</p>"
+        },
+        {
+          "html": "<p>Return <var>report</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a list of reports to JSON",
+      "href": "https://www.w3.org/TR/reporting-1/#serialize-a-list-of-reports-to-json",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"serialize-a-list-of-reports-to-json\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a list of <var>reports</var> to JSON</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>,",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>collection</var> be an empty list.</p>"
+        },
+        {
+          "html": "For each <var>report</var> in <var>reports</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>data</var> be a map with the following key/value pairs:</p>\n        <dl>\n         <dt data-md=\"\"><code>age</code>\n         </dt><dd data-md=\"\">\n          <p>The number of milliseconds between <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-timestamp\" id=\"ref-for-report-timestamp①\">timestamp</a> and the current time.</p>\n         </dd><dt data-md=\"\"><code>type</code>\n         </dt><dd data-md=\"\">\n          <p><var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-reporttype\" id=\"ref-for-report-reporttype②\">type</a></p>\n         </dd><dt data-md=\"\"><code>url</code>\n         </dt><dd data-md=\"\">\n          <p><var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-url\" id=\"ref-for-report-url①\">url</a></p>\n         </dd><dt data-md=\"\"><code>user_agent</code>\n         </dt><dd data-md=\"\">\n          <p><var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-user-agent\" id=\"ref-for-report-user-agent②\">user agent</a></p>\n         </dd><dt data-md=\"\"><code>body</code>\n         </dt><dd data-md=\"\">\n          <p><var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-body\" id=\"ref-for-report-body③\">body</a></p>\n        </dd></dl>"
+            },
+            {
+              "html": "<p>Increment <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-attempts\" id=\"ref-for-report-attempts①\">attempts</a>.</p>"
+            },
+            {
+              "html": "<p>Append <var>data</var> to <var>collection</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> resulting from executing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-json-bytes\" id=\"ref-for-serialize-an-infra-value-to-json-bytes\">serialize an Infra\n value to JSON bytes</a> on <var>collection</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "initialize a global’s endpoint list",
+      "href": "https://www.w3.org/TR/reporting-1/#initialize-a-globals-endpoint-list",
+      "html": "To <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"initialize-a-globals-endpoint-list\">initialize a global’s endpoint list<a class=\"self-link\" href=\"https://www.w3.org/TR/reporting-1/#initialize-a-globals-endpoint-list\"></a></dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope\" id=\"ref-for-windoworworkerglobalscope②\">WindowOrWorkerGlobalScope</a></code> (<var>scope</var>) and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> (<var>response</var>),\n  set <var>scope</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-endpoints\" id=\"ref-for-windoworworkerglobalscope-endpoints\">endpoints</a> to the result\n  of executing <a href=\"https://www.w3.org/TR/reporting-1/#process-header\">§ 3.3 Process reporting endpoints for response</a> given <var>response</var>.",
+      "rationale": "To <dfn>"
+    },
+    {
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a> (<var>response</var>), this algorithm extracts and returns a\n  list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#endpoint\" id=\"ref-for-endpoint⑨\">endpoints</a>.",
+      "rationale": "abort",
+      "steps": [
+        {
+          "html": "<p>Abort these steps if <var>response</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-response-https-state\" id=\"ref-for-concept-response-https-state\">HTTPS\n  state</a> is not \"<code>modern</code>\", and the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a> of <var>response</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">url</a> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#is-origin-trustworthy\" id=\"ref-for-is-origin-trustworthy①\">potentially\n  trustworthy</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>parsed header</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">get a structured field\n  value</a> given \"Reporting-Endpoints\" and \"dictionary\" from <var>response</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parsed header</var> is null, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>endpoints</var> be an empty list.</p>"
+        },
+        {
+          "html": "For each <var>name</var> → <var>value_and_parameters</var> of <var>parsed header</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>endpoint url string</var> be the first element of the tuple <var>value_and_parameters</var>. If <var>endpoint url string</var> is not a string,\n  then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>endpoint url</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> on <var>endpoint url string</var>, with <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url\">base URL</a> set to <var>response</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">url</a>. If <var>endpoint url</var> is\n  failure, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>endpoint url</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#origin\" id=\"ref-for-origin①\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#is-origin-trustworthy\" id=\"ref-for-is-origin-trustworthy②\">potentially\n  trustworthy</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>endpoint</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#endpoint\" id=\"ref-for-endpoint①⓪\">endpoint</a> whose properties are set\n      as follows:</p>\n        <dl>\n         <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-endpoint-name\" id=\"ref-for-dom-endpoint-name②\">name</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>name</var></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-endpoint-url\" id=\"ref-for-dom-endpoint-url\">url</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>endpoint url</var></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-endpoint-failures\" id=\"ref-for-dom-endpoint-failures\">failures</a></code>\n         </dt><dd data-md=\"\">\n          <p>0</p>\n        </dd></dl>"
+            },
+            {
+              "html": "<p>Add <var>endpoint</var> to <var>endpoints</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>endpoints</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "generate and queue a report",
+      "href": "https://www.w3.org/TR/reporting-1/#generate-and-queue-a-report",
+      "html": "When the user agent is to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-and-queue-a-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate and queue a report</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">Document</a> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope\">WorkerGlobalScope</a></code> object (<var>context</var>), given a string (<var>type</var>), another\n  string (<var>destination</var>), and a serializable object (<var>data</var>), it must run the\n  following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>settings</var> be <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>report</var> be the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#generate-a-report\" id=\"ref-for-generate-a-report\">generate a report</a> with <var>data</var>, <var>type</var>, <var>destination</var> and <var>settings</var>.</p>"
+        },
+        {
+          "html": "If <var>settings</var> is given, then",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>scope</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global\n  object</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>scope</var> is an object implementing <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope\" id=\"ref-for-windoworworkerglobalscope③\">WindowOrWorkerGlobalScope</a></code>,\n  then execute <a href=\"https://www.w3.org/TR/reporting-1/#notify-observers\">§ 4.2 Notify reporting observers on scope with report</a> with <var>scope</var> and <var>report</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Append <var>report</var> to <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-reports\" id=\"ref-for-windoworworkerglobalscope-reports②\">reports</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "A user agent sends a list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-reports\" id=\"ref-for-windoworworkerglobalscope-reports④\">reports</a> (<var>reports</var>) for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope\" id=\"ref-for-windoworworkerglobalscope④\">WindowOrWorkerGlobalScope</a></code> object (<var>context</var>) by executing the following\n  steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>endpoint map</var> be an empty map of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#endpoint\" id=\"ref-for-endpoint①①\">endpoint</a> objects to lists of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report\" id=\"ref-for-report①④\">report</a> objects.</p>"
+        },
+        {
+          "html": "For each <var>report</var> in <var>reports</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If there exists an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#endpoint\" id=\"ref-for-endpoint①②\">endpoint</a> (<var>endpoint</var>) in <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-endpoints\" id=\"ref-for-windoworworkerglobalscope-endpoints①\">endpoints</a> list whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-endpoint-name\" id=\"ref-for-dom-endpoint-name③\">name</a></code> is <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-destination\" id=\"ref-for-report-destination①\">destination</a>:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append <var>report</var> to <var>endpoint map</var>’s list of reports for <var>endpoint</var>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, remove <var>report</var> from <var>reports</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "For each (<var>endpoint</var>, <var>report list</var>) pair in <var>endpoint map</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>origin map</var> be an empty map of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#origin\" id=\"ref-for-origin②\">origins</a> to\n  lists of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report\" id=\"ref-for-report①⑤\">report</a> objects.</p>"
+            },
+            {
+              "html": "For each <var>report</var> in <var>report list</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>origin</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#origin\" id=\"ref-for-origin③\">origin</a> of <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-url\" id=\"ref-for-report-url②\">url</a>.</p>"
+                },
+                {
+                  "html": "<p>Append <var>report</var> to <var>origin map</var>’s list of reports for <var>origin</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "For each (<var>origin</var>, <var>per-origin reports</var>) pair in <var>origin map</var>,\n  execute the following steps asynchronously:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>result</var> be the result of executing <a href=\"https://www.w3.org/TR/reporting-1/#try-delivery\">§ 3.5.2 Attempt to deliver reports to endpoint</a> on <var>endpoint</var>, <var>origin</var>, and <var>per-origin reports</var>.</p>"
+                },
+                {
+                  "html": "If <var>result</var> is \"<code>Failure</code>\":",
+                  "rationale": "increment",
+                  "steps": [
+                    {
+                      "html": "<p>Increment <var>endpoint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-endpoint-failures\" id=\"ref-for-dom-endpoint-failures①\">failures</a></code>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>result</var> is \"<code>Remove Endpoint</code>\":",
+                  "rationale": "remove",
+                  "steps": [
+                    {
+                      "html": "<p>Remove <var>endpoint</var> from <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-endpoints\" id=\"ref-for-windoworworkerglobalscope-endpoints②\">endpoints</a> list.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Remove each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report\" id=\"ref-for-report①⑥\">report</a> from <var>reports</var>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Given an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#endpoint\" id=\"ref-for-endpoint①③\">endpoint</a> (<var>endpoint</var>), an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#origin\" id=\"ref-for-origin④\">origin</a> (<var>origin</var>), and a list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-reports\" id=\"ref-for-windoworworkerglobalscope-reports⑤\">reports</a> (<var>reports</var>), this algorithm will\n  construct a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a>, and attempt to deliver it to <var>endpoint</var>. It\n  returns \"<code>Success</code>\" if that delivery succeeds, \"<code>Remove Endpoint</code>\" if the\n  endpoint explicitly removes itself as a reporting endpoint by sending a 410\n  response, and \"<code>Failure</code>\" otherwise.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>body</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#serialize-a-list-of-reports-to-json\" id=\"ref-for-serialize-a-list-of-reports-to-json\">serialize a list of reports to\n  JSON</a> on <var>reports</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">request</a> with the following properties <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/reporting-1/#biblio-fetch\" title=\"Fetch Standard\">[FETCH]</a>:</p>\n      <dl>\n       <dt data-md=\"\"><code>method</code>\n       </dt><dd data-md=\"\">\n        <p>\"<code>POST</code>\"</p>\n       </dd><dt data-md=\"\"><code>url</code>\n       </dt><dd data-md=\"\">\n        <p><var>endpoint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-endpoint-url\" id=\"ref-for-dom-endpoint-url①\">url</a></code></p>\n       </dd><dt data-md=\"\"><code>origin</code>\n       </dt><dd data-md=\"\">\n        <p><var>origin</var></p>\n       </dd><dt data-md=\"\"><code>header list</code>\n       </dt><dd data-md=\"\">\n        <p>A new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list\">header list</a> containing a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header①\">header</a> named\n  `<code>Content-Type</code>` whose value is `<code>application/reports+json</code>`</p>\n       </dd><dt data-md=\"\"><code>client</code>\n       </dt><dd data-md=\"\">\n        <p><code>null</code></p>\n       </dd><dt data-md=\"\"><code>window</code>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-window</code>\"</p>\n       </dd><dt data-md=\"\"><code>service-workers mode</code>\n       </dt><dd data-md=\"\">\n        <p>\"<code>none</code>\"</p>\n       </dd><dt data-md=\"\"><code>initiator</code>\n       </dt><dd data-md=\"\">\n        <p>\"\"</p>\n       </dd><dt data-md=\"\"><code>destination</code>\n       </dt><dd data-md=\"\">\n        <p>\"<code>report</code>\"</p>\n       </dd><dt data-md=\"\"><code>mode</code>\n       </dt><dd data-md=\"\">\n        <p>\"<code>cors</code>\"</p>\n       </dd><dt data-md=\"\"><code>unsafe-request</code> flag\n       </dt><dd data-md=\"\">\n        <p>set</p>\n       </dd><dt data-md=\"\"><code>credentials</code>\n       </dt><dd data-md=\"\">\n        <p>\"<code>same-origin</code>\"</p>\n       </dd><dt data-md=\"\"><code>body</code>\n       </dt><dd data-md=\"\">\n        <p>A <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body\" id=\"ref-for-concept-body\">body</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-source\" id=\"ref-for-concept-body-source\">source</a> is <var>body</var>.</p>\n      </dd></dl>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">fetch</a> <var>request</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#wait-for-a-response\" id=\"ref-for-wait-for-a-response\">Wait for a response</a> (<var>response</var>).</p>"
+        },
+        {
+          "html": "<p>If <var>response</var>’s <code>status</code> is an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status\">OK status</a> (200-299), return\n  \"<code>Success</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>response</var>’s <code>status</code> is <code>410 Gone</code> <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/reporting-1/#biblio-rfc9110\" title=\"HTTP Semantics\">[RFC9110]</a>, return \"<code>Remove       Endpoint</code>\".</p>"
+        },
+        {
+          "html": "<p>Return \"<code>Failure</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "ReportingObserver/ReportingObserver(callback, options)",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserver-reportingobserver",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ReportingObserver\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"ReportingObserver(callback, options)|constructor(callback, options)|ReportingObserver(callback)|constructor(callback)\" id=\"dom-reportingobserver-reportingobserver\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code> ReportingObserver(<var>callback</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor, when\n  invoked, must run these steps:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver\" id=\"ref-for-reportingobserver④\">ReportingObserver</a></code> object <var>observer</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-callback\" id=\"ref-for-reportingobserver-callback\">callback</a> to <var>callback</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-options\" id=\"ref-for-reportingobserver-options\">options</a> to <var>options</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>observer</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ReportingObserver/observe()",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserver-observe",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ReportingObserver\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-reportingobserver-observe\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>observe()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>global</var> be the be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a> to the <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-registered-reporting-observer-list\" id=\"ref-for-windoworworkerglobalscope-registered-reporting-observer-list①\">registered reporting\n observer list</a>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-reportingobserveroptions-buffered\" id=\"ref-for-dom-reportingobserveroptions-buffered①\">buffered</a></code> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-options\" id=\"ref-for-reportingobserver-options①\">option</a> is false, return.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-reportingobserveroptions-buffered\" id=\"ref-for-dom-reportingobserveroptions-buffered②\">buffered</a></code> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-options\" id=\"ref-for-reportingobserver-options②\">option</a> to false.</p>"
+        },
+        {
+          "html": "<p>For each <var>report</var> in <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-report-buffer\" id=\"ref-for-windoworworkerglobalscope-report-buffer①\">report buffer</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">queue a task</a> to execute <a href=\"https://www.w3.org/TR/reporting-1/#add-report\">§ 4.3 Add report to observer</a> with <var>report</var> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ReportingObserver/disconnect()",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserver-disconnect",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ReportingObserver\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-reportingobserver-disconnect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>disconnect()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method,\n  when invoked, must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#registered\" id=\"ref-for-registered\">registered</a>, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>global</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Remove <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a> from <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-registered-reporting-observer-list\" id=\"ref-for-windoworworkerglobalscope-registered-reporting-observer-list②\">registered reporting\n observer list</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ReportingObserver/takeRecords()",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserver-takerecords",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ReportingObserver\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-reportingobserver-takerecords\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>takeRecords()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method,\n  when invoked, must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>reports</var> be a copy of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-report-queue\" id=\"ref-for-reportingobserver-report-queue\">report queue</a>.</p>"
+        },
+        {
+          "html": "<p>Empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-report-queue\" id=\"ref-for-reportingobserver-report-queue①\">report queue</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>reports</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "This algorithm makes <var>report</var>’s contents available to any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#registered\" id=\"ref-for-registered①\">registered</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reporting-observer\" id=\"ref-for-reporting-observer⑥\">reporting observers</a> on the provided <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope\" id=\"ref-for-windoworworkerglobalscope⑧\">WindowOrWorkerGlobalScope</a></code>.",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p>For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver\" id=\"ref-for-reportingobserver⑤\">ReportingObserver</a></code> <var>observer</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#registered\" id=\"ref-for-registered②\">registered</a> with <var>scope</var>,\n execute <a href=\"https://www.w3.org/TR/reporting-1/#add-report\">§ 4.3 Add report to observer</a> on <var>report</var> and <var>observer</var>.</p>"
+        },
+        {
+          "html": "<p>Append <var>report</var> to <var>scope</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-report-buffer\" id=\"ref-for-windoworworkerglobalscope-report-buffer②\">report buffer</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>type</var> be <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-reporttype\" id=\"ref-for-report-reporttype④\">type</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>scope</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-report-buffer\" id=\"ref-for-windoworworkerglobalscope-report-buffer③\">report buffer</a> now contains more than 100 reports with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-reporttype\" id=\"ref-for-report-reporttype⑤\">type</a> equal to <var>type</var>, remove the earliest item with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-reporttype\" id=\"ref-for-report-reporttype⑥\">type</a> equal to <var>type</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-report-buffer\" id=\"ref-for-windoworworkerglobalscope-report-buffer④\">report buffer</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report\" id=\"ref-for-report①⑧\">report</a> <var>report</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver\" id=\"ref-for-reportingobserver⑥\">ReportingObserver</a></code> <var>observer</var>, this\n  algorithm adds <var>report</var> to <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-report-queue\" id=\"ref-for-reportingobserver-report-queue②\">report queue</a>, so long as <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-reporttype\" id=\"ref-for-report-reporttype⑦\">type</a> is observable by <var>observer</var>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-reporttype\" id=\"ref-for-report-reporttype⑧\">type</a> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#visible-to-reportingobservers\" id=\"ref-for-visible-to-reportingobservers①\">visible to <code>ReportingObserver</code>s</a>, return.</p>"
+        },
+        {
+          "html": "<p>If <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-options\" id=\"ref-for-reportingobserver-options③\">options</a> has a non-empty <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-reportingobserveroptions-types\" id=\"ref-for-dom-reportingobserveroptions-types\">types</a></code> member which does not contain <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-reporttype\" id=\"ref-for-report-reporttype⑨\">type</a>, return.</p>"
+        },
+        {
+          "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-report\" id=\"ref-for-dom-report⑤\">Report</a></code> <var>r</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-report-type\" id=\"ref-for-dom-report-type①\">type</a></code> initialized to <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-reporttype\" id=\"ref-for-report-reporttype①⓪\">type</a>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-report-url\" id=\"ref-for-dom-report-url①\">url</a></code> initialized to <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-url\" id=\"ref-for-report-url④\">url</a>,\n and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-report-body\" id=\"ref-for-dom-report-body①\">body</a></code> initialized to <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-body\" id=\"ref-for-report-body⑤\">body</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report\" id=\"ref-for-report①⑧\">report</a> <var>report</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver\" id=\"ref-for-reportingobserver⑥\">ReportingObserver</a></code> <var>observer</var>, this\n  algorithm adds <var>report</var> to <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-report-queue\" id=\"ref-for-reportingobserver-report-queue②\">report queue</a>, so long as <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report-reporttype\" id=\"ref-for-report-reporttype⑦\">type</a> is observable by <var>observer</var>.",
+      "rationale": "append",
+      "steps": [
+        {
+          "html": "<p>Append <var>r</var> to <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-report-queue\" id=\"ref-for-reportingobserver-report-queue③\">report queue</a>.</p>"
+        },
+        {
+          "html": "If the size of <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-report-queue\" id=\"ref-for-reportingobserver-report-queue④\">report queue</a> is 1:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>global</var> be <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">Queue a task</a> to <a href=\"https://www.w3.org/TR/reporting-1/#invoke-observers\">§ 4.4 Invoke reporting observers with notify list</a> with a copy of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#windoworworkerglobalscope-registered-reporting-observer-list\" id=\"ref-for-windoworworkerglobalscope-registered-reporting-observer-list③\">registered reporting observer list</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "This algorithm invokes observer callback functions for reports of previously\n  observed behavior.",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver\" id=\"ref-for-reportingobserver⑦\">ReportingObserver</a></code> <var>observer</var> in <var>notify list</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-report-queue\" id=\"ref-for-reportingobserver-report-queue⑤\">report queue</a> is empty, then continue.</p>"
+            },
+            {
+              "html": "<p>Let <var>reports</var> be a copy of <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-report-queue\" id=\"ref-for-reportingobserver-report-queue⑥\">report queue</a></p>"
+            },
+            {
+              "html": "<p>Empty <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-report-queue\" id=\"ref-for-reportingobserver-report-queue⑦\">report queue</a></p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">Invoke</a> <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#reportingobserver-callback\" id=\"ref-for-reportingobserver-callback①\">callback</a> with a list of\n  arguments consisting of <var>reports</var> and <var>observer</var>, and <var>observer</var> as the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-this-value\" id=\"ref-for-dfn-callback-this-value\">callback this value</a>.  If this throws an exception, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\" id=\"ref-for-report-the-exception\">report the\n  exception</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>parameters</var> is not a JSON <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-url-entry-object\" id=\"ref-for-blob-url-entry-object\">Object</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error\">WebDriver\n error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>message</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try\">trying</a> to get <var>parameters</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-generatetestreportparameters-message\" id=\"ref-for-dom-generatetestreportparameters-message\">message</a></code> property.</p>"
+        },
+        {
+          "html": "<p>If <var>message</var> is not present, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context\">current browsing context</a> is no longer open, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-no-such-window\" id=\"ref-for-dfn-no-such-window\">no such\n window</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-handle-any-user-prompts\" id=\"ref-for-dfn-handle-any-user-prompts\">Handle any user prompts</a> and return its value if it is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error③\">WebDriver\n error</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>group</var> be <var>parameters</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/reporting-1/#dom-generatetestreportparameters-group\" id=\"ref-for-dom-generatetestreportparameters-group\">group</a></code> property.</p>"
+        },
+        {
+          "html": "<p>Let <var>body</var> be a new object that can be serialized into a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc8259#section-2\" id=\"ref-for-section-2①\">JSON text</a>,\n containing a single string field, <var>body_message</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>body_message</var> to <var>message</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object②\">environment settings object</a> of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context①\">current browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>.</p>"
+        },
+        {
+          "html": "<p>Execute <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#generate-and-queue-a-report\" id=\"ref-for-generate-and-queue-a-report\">generate and queue a report</a> with <var>body</var>, \"test\", <var>group</var>, and <var>settings</var>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success\">success</a> with data null.</p>"
+        }
+      ]
+    }
+  ]
+}

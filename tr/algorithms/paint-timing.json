@@ -1,0 +1,197 @@
+{
+  "spec": {
+    "title": "Paint Timing",
+    "url": "https://www.w3.org/TR/paint-timing/"
+  },
+  "algorithms": [
+    {
+      "name": "paintable bounding rect",
+      "href": "https://www.w3.org/TR/paint-timing/#paintable-bounding-rect",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"paintable-bounding-rect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paintable bounding rect</dfn> of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element②\">element</a> <var>target</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>boundingRect</var> be the result of running the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-getboundingclientrect\" id=\"ref-for-dom-element-getboundingclientrect\">getBoundingClientRect()</a></code> on <var>target</var>.</p>"
+        },
+        {
+          "html": "<p>Clip <var>boundingRect</var> with the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">document</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view#scrolling-area\" id=\"ref-for-scrolling-area\">scrolling area</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>boundingRect</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "image element loaded",
+      "href": "https://www.w3.org/TR/paint-timing/#process-an-image-that-finished-loading",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-an-image-that-finished-loading\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process an image that finished loading</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①②\">Element</a></code> <var>element</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/images.html#image-request\" id=\"ref-for-image-request⑨\">image request</a> <var>imageRequest</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>root</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root\">root</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>root</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code>, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>now</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time\">current high resolution time</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>record</var> be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#pending-image-record\" id=\"ref-for-pending-image-record①\">pending image record</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#pending-image-record-element\" id=\"ref-for-pending-image-record-element\">element</a> <var>element</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#pending-image-record-request\" id=\"ref-for-pending-image-record-request\">request</a> <var>imageRequest</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#pending-image-record-loadtime\" id=\"ref-for-pending-image-record-loadtime\">loadTime</a> <var>now</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>imageRequest</var> is a data URL <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/paint-timing/#biblio-rfc2397\" title=\"The &quot;data&quot; URL scheme\">[RFC2397]</a>, or the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-tao-check\" id=\"ref-for-concept-tao-check\">timing allow check</a> succeeds for <var>imageRequest</var>’s resource, add <var>record</var> to <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#images-pending-rendering\" id=\"ref-for-images-pending-rendering\">images pending rendering</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#report-element-timing\" id=\"ref-for-report-element-timing\">report element timing</a> given <var>root</var>, <var>now</var>, «<var>record</var>» and «».</p>"
+        }
+      ]
+    },
+    {
+      "name": "Should report first contentful paint",
+      "href": "https://www.w3.org/TR/paint-timing/#should-report-first-contentful-paint",
+      "html": "To know whether <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">Document</a> <var>document</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"should-report-first-contentful-paint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">should report first contentful paint</dfn>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#set-of-previously-reported-paints\" id=\"ref-for-set-of-previously-reported-paints\">set of previously reported paints</a> contains <code class=\"highlight\"><c- u=\"\">\"first-contentful-paint\"</c-></code>, then return false.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> contains at least one <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> that is both <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#paintable\" id=\"ref-for-paintable\">paintable</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#contentful\" id=\"ref-for-contentful\">contentful</a>, then return true.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Mark paint timing",
+      "html": "When asked to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#mark-paint-timing\" id=\"ref-for-mark-paint-timing①\">mark paint timing</a> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">Document</a> <var>document</var> as input, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"ref-for-concept-document-bc\">browsing context</a> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#paint-timing-eligible\" id=\"ref-for-paint-timing-eligible①\">paint-timing eligible</a>, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>paintTimestamp</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a> given <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>paintedImages</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">ordered set</a></p>"
+        },
+        {
+          "html": "<p>Let <var>paintedTextNodes</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④\">ordered set</a></p>"
+        },
+        {
+          "html": "For each <var>record</var> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#images-pending-rendering\" id=\"ref-for-images-pending-rendering①\">images pending rendering</a> list:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#pending-image-record-request\" id=\"ref-for-pending-image-record-request①\">request</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/images.html#img-available\" id=\"ref-for-img-available②\">available</a> and ready to be painted, then run the following steps:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append <var>record</var> to <var>paintedImages</var>.</p>"
+                },
+                {
+                  "html": "<p>Remove <var>record</var> from <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#images-pending-rendering\" id=\"ref-for-images-pending-rendering②\">images pending rendering</a> list.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①③\">Element</a></code> <var>element</var> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"ref-for-concept-tree-descendant\">descendants</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>element</var> is contained in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#set-of-elements-with-rendered-text\" id=\"ref-for-set-of-elements-with-rendered-text\">set of elements with rendered text</a>, continue.</p>"
+            },
+            {
+              "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#set-of-owned-text-nodes\" id=\"ref-for-set-of-owned-text-nodes①\">set of owned text nodes</a> is empty, continue.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>element</var> to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#set-of-elements-with-rendered-text\" id=\"ref-for-set-of-elements-with-rendered-text①\">set of elements with rendered text</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">Append</a> <var>element</var> to <var>paintedTextNodes</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>reportedPaints</var> be the <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#set-of-previously-reported-paints\" id=\"ref-for-set-of-previously-reported-paints①\">set of previously reported paints</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>reportedPaints</var> does not contain <code class=\"highlight\"><c- u=\"\">\"first-paint\"</c-></code>, and the user agent is configured to mark <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#first-paint\" id=\"ref-for-first-paint①\">first paint</a>, then invoke the <a href=\"https://www.w3.org/TR/paint-timing/#report-paint-timing\" id=\"ref-for-report-paint-timing\">§ 4.3.3 Report paint timing</a> algorithm with <var>document</var>, <code class=\"highlight\"><c- u=\"\">\"first-paint\"</c-></code>, and <var>paintTimestamp</var>.</p>"
+        },
+        {
+          "html": "If <var>document</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#should-report-first-contentful-paint\" id=\"ref-for-should-report-first-contentful-paint\">should report first contentful paint</a>, then:",
+          "rationale": "invoke",
+          "steps": [
+            {
+              "html": "<p>Invoke the <a href=\"https://www.w3.org/TR/paint-timing/#report-paint-timing\" id=\"ref-for-report-paint-timing①\">§ 4.3.3 Report paint timing</a> algorithm with <var>document</var>, <code class=\"highlight\"><c- u=\"\">\"first-contentful-paint\"</c-></code>, and <var>paintTimestamp</var> as arguments.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/largest-contentful-paint/#report-largest-contentful-paint\" id=\"ref-for-report-largest-contentful-paint\">Report largest contentful paint</a> given <var>document</var>, <var>paintTimestamp</var>, <var>paintedImages</var> and <var>paintedTextNodes</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#report-element-timing\" id=\"ref-for-report-element-timing①\">Report element timing</a> given <var>document</var>, <var>paintTimestamp</var>, <var>paintedImages</var> and <var>paintedTextNodes</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report paint timing",
+      "html": "When asked to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#report-paint-timing\" id=\"ref-for-report-paint-timing③\">report paint timing</a> given <var>document</var>, <var>paintType</var>, and <var>paintTimestamp</var> as arguments, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Create a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/paint-timing/#performancepainttiming\" id=\"ref-for-performancepainttiming③\">PerformancePaintTiming</a></code> object <var>newEntry</var> with <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a> and set its attributes as follows:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/performance-timeline/#dom-performanceentry-name\" id=\"ref-for-dom-performanceentry-name①\">name</a></code> attribute to <var>paintType</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype①\">entryType</a></code> attribute to <code class=\"highlight\"><c- u=\"\">\"paint\"</c-></code>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime①\">startTime</a></code> attribute to <var>paintTimestamp</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/performance-timeline/#dom-performanceentry-duration\" id=\"ref-for-dom-performanceentry-duration①\">duration</a></code> attribute to 0.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\">Add the PerformanceEntry</a> <var>newEntry</var> object.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>paintType</var> to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#set-of-previously-reported-paints\" id=\"ref-for-set-of-previously-reported-paints②\">set of previously reported paints</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Exposed for paint timing",
+      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑧\">Element</a> <var>element</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#exposed-for-paint-timing\" id=\"ref-for-exposed-for-paint-timing①\">exposed for paint timing</a>, given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑧\">Document</a> or null <var>document</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>element</var> is not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected\">connected</a>, return false.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is null, let <var>document</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, return false.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root①\">root</a> is not equal to <var>document</var>, return false.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "spec": {
+    "title": "Long Tasks API",
+    "url": "https://www.w3.org/TR/longtasks-1/"
+  },
+  "algorithms": [
+    {
+      "name": "Report long tasks",
+      "html": "Given <var>start time</var>, <var>end time</var>, <var>top-level browsing contexts</var>, and <var>task</var>, perform the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#record-task-end-time\" id=\"ref-for-record-task-end-time\">Record task end time</a> given <var>end time</var> and <var>task</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#concept-task-document\" id=\"ref-for-concept-task-document\">document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>end time</var> minus <var>start time</var> is less than the long tasks threshold of 50 ms, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>destinationRealms</var> be an empty set.</p>"
+        },
+        {
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a> <var>topmostBC</var> in <var>top-level browsing contexts</var>:",
+          "rationale": "add",
+          "steps": [
+            {
+              "html": "<p>Add <var>topmostBC</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a> to <var>destinationRealms</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>descendantBCs</var> be <var>topmostBC</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document②\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#list-of-the-descendant-browsing-contexts\" id=\"ref-for-list-of-the-descendant-browsing-contexts②\">list of the descendant browsing contexts</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>document</var> be <var>descendantBC</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document③\">active document</a>.</p>"
+            },
+            {
+              "html": "<p>For each <var>descendantBC</var> in <var>descendantBCs</var>, add (<var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant Realm</a>, <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-cross-origin-isolated-capability\" id=\"ref-for-concept-settings-object-cross-origin-isolated-capability\">cross-origin isolated capability</a>) to <var>destinationRealms</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>A user agent may remove some <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-code-realms\" id=\"ref-for-sec-code-realms①\">JavaScript Realms</a> from <var>destinationRealms</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Report long tasks",
+      "html": "Given <var>start time</var>, <var>end time</var>, <var>top-level browsing contexts</var>, and <var>task</var>, perform the following algorithm:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each (<var>destinationRealm</var>, <var>crossOriginIsolatedCapability</var>) in <var>destinationRealms</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>name</var> be the empty string. This will be used to report <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#minimal-culprit-attribution\" id=\"ref-for-minimal-culprit-attribution\">minimal culprit attribution</a>, below.</p>"
+            },
+            {
+              "html": "<p>Let <var>culpritSettings</var> be <code class=\"highlight\"><c- kc=\"\">null</c-></code>.</p>"
+            },
+            {
+              "html": "Process <var>task</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#script-evaluation-environment-settings-object-set\" id=\"ref-for-script-evaluation-environment-settings-object-set\">script evaluation environment settings object set</a> to determine <var>name</var> and <var>culpritSettings</var> as follows:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>task</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#script-evaluation-environment-settings-object-set\" id=\"ref-for-script-evaluation-environment-settings-object-set①\">script evaluation environment settings object set</a> is empty: set <var>name</var> to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#unknown\" id=\"ref-for-unknown①\">unknown</a></code>\" and <var>culpritSettings</var> to <code class=\"highlight\"><c- kc=\"\">null</c-></code>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, if <var>task</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#script-evaluation-environment-settings-object-set\" id=\"ref-for-script-evaluation-environment-settings-object-set②\">script evaluation environment settings object set</a>'s length is greater than one: set <var>name</var> to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#multiple-contexts\" id=\"ref-for-multiple-contexts①\">multiple<c- o=\"\">-</c->contexts</a></code>\" and <var>culpritSettings</var> to <code class=\"highlight\"><c- kc=\"\">null</c-></code>.</p>"
+                },
+                {
+                  "html": "Otherwise, i.e. if <var>task</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#script-evaluation-environment-settings-object-set\" id=\"ref-for-script-evaluation-environment-settings-object-set③\">script evaluation environment settings object set</a>'s length is one:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>culpritSettings</var> to the single item in <var>task</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#script-evaluation-environment-settings-object-set\" id=\"ref-for-script-evaluation-environment-settings-object-set④\">script evaluation environment settings object set</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>destinationSettings</var> be <var>destinationRealm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>destinationOrigin</var> be <var>destinationSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>destinationBC</var> be <var>destinationSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc\">browsing context</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>culpritBC</var> be <var>culpritSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc①\">browsing context</a>.</p>"
+                    },
+                    {
+                      "html": "<p class=\"assertion\">Assert: <var>culpritBC</var> is not <code class=\"highlight\"><c- kc=\"\">null</c-></code>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>culpritSettings</var> is the same as <var>destinationSettings</var>, set <var>name</var> to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#self\" id=\"ref-for-self①\">self</a></code>\".</p>"
+                    },
+                    {
+                      "html": "Otherwise, if <var>culpritSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a> and <var>destinationOrigin</var> are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin④\">same origin</a>:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "<p>If <var>destinationBC</var> is <code class=\"highlight\"><c- kc=\"\">null</c-></code>, set <var>name</var> to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#same-origin\" id=\"ref-for-same-origin⑤\">same<c- o=\"\">-</c->origin</a></code>\".</p>"
+                        },
+                        {
+                          "html": "<p>Otherwise, if <var>culpritBC</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#ancestor-browsing-context\" id=\"ref-for-ancestor-browsing-context\">ancestor</a> of <var>destinationBC</var>, set <var>name</var> to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#same-origin-ancestor\" id=\"ref-for-same-origin-ancestor①\">same<c- o=\"\">-</c->origin<c- o=\"\">-</c->ancestor</a></code>\".</p>"
+                        },
+                        {
+                          "html": "<p>Otherwise, if <var>destinationBC</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#ancestor-browsing-context\" id=\"ref-for-ancestor-browsing-context①\">ancestor</a> of <var>culpritBC</var>, set <var>name</var> to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#same-origin-descendant\" id=\"ref-for-same-origin-descendant①\">same<c- o=\"\">-</c->origin<c- o=\"\">-</c->descendant</a></code>\".</p>"
+                        },
+                        {
+                          "html": "<p>Otherwise, set <var>name</var> to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#same-origin\" id=\"ref-for-same-origin⑥\">same<c- o=\"\">-</c->origin</a></code>\".</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "Otherwise:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "<p>If <var>destinationBC</var> is <code class=\"highlight\"><c- kc=\"\">null</c-></code>, set <var>name</var> to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#cross-origin-unreachable\" id=\"ref-for-cross-origin-unreachable①\">cross<c- o=\"\">-</c->origin<c- o=\"\">-</c->unreachable</a></code>\".</p>"
+                        },
+                        {
+                          "html": "<p>Otherwise, if <var>culpritBC</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#ancestor-browsing-context\" id=\"ref-for-ancestor-browsing-context②\">ancestor</a> of <var>destinationBC</var>, set <var>name</var> to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#cross-origin-ancestor\" id=\"ref-for-cross-origin-ancestor①\">cross<c- o=\"\">-</c->origin<c- o=\"\">-</c->ancestor</a></code>\" and set <var>culpritSettings</var> to <code class=\"highlight\"><c- kc=\"\">null</c-></code>.</p>"
+                        },
+                        {
+                          "html": "<p>Otherwise, if <var>destinationBC</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#ancestor-browsing-context\" id=\"ref-for-ancestor-browsing-context③\">ancestor</a> of <var>culpritBC</var>, set <var>name</var> to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#cross-origin-descendant\" id=\"ref-for-cross-origin-descendant①\">cross<c- o=\"\">-</c->origin<c- o=\"\">-</c->descendant</a></code>\".</p>"
+                        },
+                        {
+                          "html": "<p>Otherwise, set <var>name</var> to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#cross-origin-unreachable\" id=\"ref-for-cross-origin-unreachable②\">cross<c- o=\"\">-</c->origin<c- o=\"\">-</c->unreachable</a></code>\".</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Let <var>attribution</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#taskattributiontiming\" id=\"ref-for-taskattributiontiming⑤\">TaskAttributionTiming</a></code> object with <var>destinationRealm</var> and set its attributes as follows:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-name\" id=\"ref-for-dom-performanceentry-name④\">name</a></code> attribute to \"<code class=\"highlight\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#unknown\" id=\"ref-for-unknown②\">unknown</a></code>\".</p>"
+                },
+                {
+                  "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype\">entryType</a></code> attribute to <code class=\"highlight\"><c- u=\"\">\"taskattribution\"</c-></code>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime\">startTime</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-duration\" id=\"ref-for-dom-performanceentry-duration\">duration</a></code> to 0.</p>"
+                },
+                {
+                  "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containertype\" id=\"ref-for-dom-taskattributiontiming-containertype①\">containerType</a></code> attribute to <code class=\"highlight\"><c- u=\"\">\"window\"</c-></code>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containername\" id=\"ref-for-dom-taskattributiontiming-containername①\">containerName</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containersrc\" id=\"ref-for-dom-taskattributiontiming-containersrc①\">containerSrc</a></code> attributes to the empty string.</p>"
+                },
+                {
+                  "html": "If <var>culpritSettings</var> is not <code class=\"highlight\"><c- kc=\"\">null</c-></code>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>culpritBC</var> be <var>culpritSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global②\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc②\">browsing context</a>.</p>"
+                    },
+                    {
+                      "html": "<p class=\"assertion\">Assert: <var>culpritBC</var> is not <code class=\"highlight\"><c- kc=\"\">null</c-></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>container</var> be <var>culpritBC</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/longtasks-1/#browsing-context-container\" id=\"ref-for-browsing-context-container①\">browsing context container</a>.</p>"
+                    },
+                    {
+                      "html": "<p class=\"assertion\">Assert: <var>container</var> is not <code class=\"highlight\"><c- kc=\"\">null</c-></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containerid\" id=\"ref-for-dom-taskattributiontiming-containerid①\">containerId</a></code> attribute to the value of <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"ref-for-concept-id\">ID</a>, or the empty string if the ID is unset.</p>"
+                    },
+                    {
+                      "html": "If <var>container</var> is an <code class=\"highlight\"><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element\" id=\"ref-for-the-iframe-element①\">iframe</a></code> element:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containertype\" id=\"ref-for-dom-taskattributiontiming-containertype②\">containerType</a></code> attribute to \"<code class=\"highlight\">iframe</code>\".</p>"
+                        },
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containername\" id=\"ref-for-dom-taskattributiontiming-containername②\">containerName</a></code> attribute to the value of <var>container</var>’s <code class=\"highlight\"><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-name\" id=\"ref-for-attr-iframe-name\">name</a></code> content attribute, or the empty string if the attribute is absent.</p>"
+                        },
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containersrc\" id=\"ref-for-dom-taskattributiontiming-containersrc②\">containerSrc</a></code> attribute to the value of <var>container</var>’s <code class=\"highlight\"><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src\" id=\"ref-for-attr-iframe-src\">src</a></code> content attribute, or the empty string if the attribute is absent.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "If <var>container</var> is a <code class=\"highlight\"><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/obsolete.html#frame\" id=\"ref-for-frame\">frame</a></code> element:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containertype\" id=\"ref-for-dom-taskattributiontiming-containertype③\">containerType</a></code> attribute to \"<code class=\"highlight\">frame</code>\".</p>"
+                        },
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containername\" id=\"ref-for-dom-taskattributiontiming-containername③\">containerName</a></code> attribute to the value of <var>container</var>’s <code class=\"highlight\">name</code> content attribute, or the empty string if the attribute is absent.</p>"
+                        },
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containersrc\" id=\"ref-for-dom-taskattributiontiming-containersrc③\">containerSrc</a></code> attribute to the value of <var>container</var>’s <code class=\"highlight\">src</code> content attribute, or the empty string if the attribute is absent.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "If <var>container</var> is an <code class=\"highlight\"><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element\" id=\"ref-for-the-object-element①\">object</a></code> element:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containertype\" id=\"ref-for-dom-taskattributiontiming-containertype④\">containerType</a></code> attribute to \"<code class=\"highlight\">object</code>\".</p>"
+                        },
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containername\" id=\"ref-for-dom-taskattributiontiming-containername④\">containerName</a></code> attribute to the value of <var>container</var>’s <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-name\">name</a> content attribute, or the empty string if the attribute is absent.</p>"
+                        },
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containersrc\" id=\"ref-for-dom-taskattributiontiming-containersrc④\">containerSrc</a></code> attribute to the value of <var>container</var>’s <code class=\"highlight\"><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-data\" id=\"ref-for-attr-object-data\">data</a></code> content attribute, or the empty string if the attribute is absent.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "If <var>container</var> is an <code class=\"highlight\"><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element\" id=\"ref-for-the-embed-element\">embed</a></code> element:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containertype\" id=\"ref-for-dom-taskattributiontiming-containertype⑤\">containerType</a></code> attribute to \"<code class=\"highlight\">embed</code>\".</p>"
+                        },
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containername\" id=\"ref-for-dom-taskattributiontiming-containername⑤\">containerName</a></code> attribute to the empty string.</p>"
+                        },
+                        {
+                          "html": "<p>Set <var>attribution</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containersrc\" id=\"ref-for-dom-taskattributiontiming-containersrc⑤\">containerSrc</a></code> attribute to the value of <var>container</var>’s <code class=\"highlight\"><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-src\" id=\"ref-for-attr-embed-src\">src</a></code> content attribute, or the empty string if the attribute is absent.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#performancelongtasktiming\" id=\"ref-for-performancelongtasktiming④\">PerformanceLongTaskTiming</a></code> object <var>newEntry</var> with <var>destinationRealm</var> and set its attributes as follows:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-name\" id=\"ref-for-dom-performanceentry-name⑥\">name</a></code> attribute to <var>name</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype①\">entryType</a></code> attribute to \"<code class=\"highlight\">longtask</code>\".</p>"
+                },
+                {
+                  "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime①\">startTime</a></code> attribute to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-coarsen-time\" id=\"ref-for-dfn-coarsen-time\">coarsening</a> <var>start time</var> given <var>crossOriginIsolatedCapability</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>dur</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-coarsen-time\" id=\"ref-for-dfn-coarsen-time①\">coarsening</a> <var>end time</var> given <var>crossOriginIsolatedCapability</var>, minus <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime②\">startTime</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-duration\" id=\"ref-for-dom-performanceentry-duration①\">duration</a></code> attribute to the integer part of <var>dur</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>attribution</var> is not <code class=\"highlight\"><c- kc=\"\">null</c-></code>, set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/longtasks-1/#dom-performancelongtasktiming-attribution\" id=\"ref-for-dom-performancelongtasktiming-attribution④\">attribution</a></code> attribute to a new frozen array containing the single value <var>attribution</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry\">Queue the PerformanceEntry</a> <var>newEntry</var>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

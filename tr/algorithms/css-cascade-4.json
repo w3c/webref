@@ -1,0 +1,52 @@
+{
+  "spec": {
+    "title": "CSS Cascading and Inheritance Level 4",
+    "url": "https://www.w3.org/TR/css-cascade-4/"
+  },
+  "algorithms": [
+    {
+      "name": "fetch an @import",
+      "href": "https://www.w3.org/TR/css-cascade-4/#fetch-an-import",
+      "html": "To <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-an-import\">fetch an @import<a class=\"self-link\" href=\"https://www.w3.org/TR/css-cascade-4/#fetch-an-import\"></a></dfn>, given an <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-cascade-4/#at-ruledef-import\" id=\"ref-for-at-ruledef-import①②\">@import</a> rule <var>rule</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>parentStylesheet</var> be <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#concept-css-rule-parent-css-style-sheet\" id=\"ref-for-concept-css-rule-parent-css-style-sheet\">parent CSS style sheet</a>. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/css-cascade-4/#biblio-cssom\">[CSSOM]</a></p>"
+        },
+        {
+          "html": "<p>If <var>rule</var> has a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css3-conditional/#typedef-supports-condition\" id=\"ref-for-typedef-supports-condition⑦\">&lt;supports-condition&gt;</a>,\nand that condition is not true,\nreturn.</p>"
+        },
+        {
+          "html": "<p>Let <var>parsedUrl</var> be the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> steps with <var>rule</var>’s URL and <var>parentStylesheet</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-location\" id=\"ref-for-concept-css-style-sheet-location\">location</a>.\nIf the algorithm returns an error,\nreturn. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/css-cascade-4/#biblio-cssom\">[CSSOM]</a></p>"
+        },
+        {
+          "html": "To <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-an-import\">fetch an @import<a class=\"self-link\" href=\"https://www.w3.org/TR/css-cascade-4/#fetch-an-import\"></a></dfn>, given an <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-cascade-4/#at-ruledef-import\" id=\"ref-for-at-ruledef-import①②\">@import</a> rule <var>rule</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>maybeByteStream</var> is not a byte stream, return.</p>"
+            },
+            {
+              "html": "<p>If <var>parentStylesheet</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\" id=\"ref-for-concept-document-quirks\">quirks mode</a> and <var>response</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-same-origin\" id=\"ref-for-cors-same-origin\">CORS-same-origin</a>,\nlet <var>content type</var> be <code>\"text/css\"</code>.\nOtherwise, let <var>content type</var> be the Content Type metadata of <var>response</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>content type</var> is not <code>\"text/css\"</code>,\nreturn.</p>"
+            },
+            {
+              "html": "<p>Let <var>importedStylesheet</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#parse-a-stylesheet\" id=\"ref-for-parse-a-stylesheet\">parsing</a> <var>byteStram</var> given <var>parsedUrl</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>importedStylesheet</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-origin-clean-flag\" id=\"ref-for-concept-css-style-sheet-origin-clean-flag\">origin-clean flag</a> to <var>parentStylesheet</var>’s <span id=\"ref-for-concept-css-style-sheet-origin-clean-flag①\">origin-clean flag</span>.</p>"
+            },
+            {
+              "html": "<p>If <var>response</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-same-origin\" id=\"ref-for-cors-same-origin①\">CORS-same-origin</a>, unset <var>importedStylesheet</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-origin-clean-flag\" id=\"ref-for-concept-css-style-sheet-origin-clean-flag②\">origin-clean flag</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>rule</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-1/#dom-cssimportrule-stylesheet\" id=\"ref-for-dom-cssimportrule-stylesheet\">styleSheet</a></code> to <var>importedStylesheet</var>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

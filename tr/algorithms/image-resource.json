@@ -1,0 +1,166 @@
+{
+  "spec": {
+    "title": "Image Resource",
+    "url": "https://www.w3.org/TR/image-resource/"
+  },
+  "algorithms": [
+    {
+      "name": "process an ImageResource from an API",
+      "href": "https://www.w3.org/TR/image-resource/#dfn-process-an-imageresource-from-an-api",
+      "html": "The steps to <dfn data-export=\"\" id=\"dfn-process-an-imageresource-from-an-api\" tabindex=\"0\" aria-haspopup=\"dialog\">process an <code>ImageResource</code> from an\n        API</dfn> are given by the following algorithm. The algorithm takes an\n        <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-resource/#dom-imageresource\" class=\"internalDFN\" id=\"ref-for-dom-imageresource-12\"><code>ImageResource</code></a> <var data-type=\"ImageResource\">input</var>. It returns an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-image-resource\" class=\"internalDFN\" id=\"ref-for-dfn-image-resource-5\">image\n        resource</a>.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>base URL</var> be the <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\">relevant settings object</a>’s <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#api-base-url\">api base url</a> from where this dictionary is being\n        used."
+        },
+        {
+          "html": "Let <var>image</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-image-resource\" class=\"internalDFN\" id=\"ref-for-dfn-image-resource-6\">image resource</a>."
+        },
+        {
+          "html": "Set <var>image</var>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-src\" class=\"internalDFN\" id=\"ref-for-dfn-src-1\">src</a> to the result of <a data-link-type=\"dfn\" data-lt=\"URL\n        parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parsing</a> <var data-type=\"ImageResource\">input</var>.<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-resource/#dom-imageresource-src\" class=\"internalDFN\" id=\"ref-for-dom-imageresource-src-5\"><code>src</code></a> and <var>base URL</var>. If\n        parsing the URL fails, throw a <a data-link-type=\"idl\" data-type=\"exception\" href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"ImageResource\">input</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-resource/#dom-imageresource-sizes\" class=\"internalDFN\" id=\"ref-for-dom-imageresource-sizes-5\"><code>sizes</code></a> member is present:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>image</var>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-sizes\" class=\"internalDFN\" id=\"ref-for-dfn-sizes-1\">sizes</a> to the\n            result of parsing <var data-type=\"ImageResource\">input</var>.<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-resource/#dom-imageresource-sizes\" class=\"internalDFN\" id=\"ref-for-dom-imageresource-sizes-6\"><code>sizes</code></a> as if it was a\n            <code><a data-type=\"element-attr\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-link-sizes\">sizes</a></code> attribute of a <code><a data-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-link-element\">link</a></code> element whose <code><a data-type=\"element-attr\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel\">rel</a></code>\n            attribute contains the token <code>icon</code>. If parsing fails, throw a\n            <a data-link-type=\"idl\" data-type=\"exception\" href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var data-type=\"ImageResource\">input</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-resource/#dom-imageresource-type\" class=\"internalDFN\" id=\"ref-for-dom-imageresource-type-5\"><code>type</code></a> member is present and not the\n        empty string:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-resource/#dom-imageresource-type\" class=\"internalDFN\" id=\"ref-for-dom-imageresource-type-6\"><code>type</code></a> is not an <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#image-mime-type\">image MIME Type</a>, throw\n            a <a data-link-type=\"idl\" data-type=\"exception\" href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+            },
+            {
+              "html": "Set <var>image</var>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-type\" class=\"internalDFN\" id=\"ref-for-dfn-type-1\">type</a> to\n            <var data-type=\"ImageResource\">input</var>.<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-resource/#dom-imageresource-type\" class=\"internalDFN\" id=\"ref-for-dom-imageresource-type-7\"><code>type</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "Set <var>image</var>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-label\" class=\"internalDFN\" id=\"ref-for-dfn-label-1\">label</a> to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-deriving-the-accessible-name\" class=\"internalDFN\" id=\"ref-for-dfn-deriving-the-accessible-name-2\">deriving\n        the accessible name</a>."
+        },
+        {
+          "html": "Return <var>image</var>."
+        }
+      ]
+    },
+    {
+      "name": "process an image resource from JSON",
+      "href": "https://www.w3.org/TR/image-resource/#dfn-process-an-image-resource-from-json",
+      "html": "To <dfn data-export=\"\" id=\"dfn-process-an-image-resource-from-json\" tabindex=\"0\" aria-haspopup=\"dialog\">process an image resource from JSON</dfn>, given\n        a JSON Object <var data-type=\"object\">input</var> and a <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">base</var>. It returns an\n        <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var data-type=\"object\">input</var> is not of type <a data-link-type=\"dfn\" data-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element\">object</a>, return failure."
+        },
+        {
+          "html": "If <var data-type=\"object\">input</var>[\"src\"] is not of type <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return failure."
+        },
+        {
+          "html": "Let <var data-type=\"URL\">src</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a>\n        <var data-type=\"object\">input</var>[\"src\"] with <var data-type=\"URL\">base</var> as the base URL."
+        },
+        {
+          "html": "If <var data-type=\"URL\">src</var> is failure, return failure."
+        },
+        {
+          "html": "Let <var>image</var> be an new <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
+        },
+        {
+          "html": "Set <var>image</var>[\"src\"] to <var data-type=\"URL\">src</var>."
+        },
+        {
+          "html": "If type of <var data-type=\"object\">input</var>[\"sizes\"] is a <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, and its length is\n        greater than zero:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var data-type=\"string\">sizes</var> to the result of parsing <var data-type=\"object\">input</var>[\"sizes\"] as\n            if it was a <code><a data-type=\"element-attr\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-link-sizes\">sizes</a></code> attribute of a <code><a data-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-link-element\">link</a></code> element whose\n            <code><a data-type=\"element-attr\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel\">rel</a></code> attribute contains the token <code>icon</code>."
+            },
+            {
+              "html": "If <var data-type=\"string\">sizes</var> is failure, return failure."
+            },
+            {
+              "html": "Set <var>image</var>[\"sizes\"] to <var data-type=\"string\">sizes</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var data-type=\"object\">input</var>[\"type\"] is a <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, and it has a length greater\n        than zero:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>mime</var> be the result of <a data-link-type=\"dfn\" data-lt=\"parse a mime type\" data-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parse-a-mime-type\">parsing</a>\n            <var data-type=\"object\">input</var>[\"type\"]."
+            },
+            {
+              "html": "If <var>mime</var> is failure, return failure."
+            },
+            {
+              "html": "Set <var>image</var>[\"type\"] to the <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\">essence</a> of <var>mime</var>."
+            }
+          ]
+        },
+        {
+          "html": "Set <var>image</var>[\"label\"] to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-deriving-the-accessible-name\" class=\"internalDFN\" id=\"ref-for-dfn-deriving-the-accessible-name-3\">deriving the accessible\n        name</a>."
+        },
+        {
+          "html": "Return <var>image</var>."
+        }
+      ]
+    },
+    {
+      "name": "fetching an image resource",
+      "href": "https://www.w3.org/TR/image-resource/#dfn-fetching-an-image-resource",
+      "html": "The steps for <dfn data-export=\"\" id=\"dfn-fetching-an-image-resource\" tabindex=\"0\" aria-haspopup=\"dialog\">fetching an image resource</dfn> are\n        given by the following algorithm. The algorithm takes an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-image-resource\" class=\"internalDFN\" id=\"ref-for-dfn-image-resource-7\">image\n        resource</a> <var>image</var>, and an optional <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\">Request</a> <var>request</var>. It returns a\n        <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\">Response</a>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>request</var> is <code>undefined</code>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>request</var> to a new <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\">Request</a>."
+            },
+            {
+              "html": "Set <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\">URL</a> to <var>image</var>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-src\" class=\"internalDFN\" id=\"ref-for-dfn-src-2\">src</a>."
+            },
+            {
+              "html": "Set <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\">Destination</a> to \"image\"."
+            },
+            {
+              "html": "Set <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\">Client</a> to the context object's <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\">relevant\n            settings object</a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>request</var>'s <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\">Client</a> is null, throw a <a data-link-type=\"idl\" data-type=\"exception\" href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Perform a <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\">fetch</a> using <var>request</var> and return the <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\">Response</a>."
+        }
+      ]
+    },
+    {
+      "name": "deriving the accessible name",
+      "href": "https://www.w3.org/TR/image-resource/#dfn-deriving-the-accessible-name",
+      "html": "The steps to <dfn data-lt=\"deriving the accessible name|derive the accessible name\" id=\"dfn-deriving-the-accessible-name\" tabindex=\"0\" aria-haspopup=\"dialog\">derive the\n        accessible name</dfn> for an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-image-resource\" class=\"internalDFN\" id=\"ref-for-dfn-image-resource-8\">image resource</a> <var>resource</var> are as\n        follows. It returns a <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>resource</var>[\"label\"] is a <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, return <var>input</var>[\"label\"]."
+        },
+        {
+          "html": "Otherwise, if <var>image</var> provides an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-embedded-accessible-name\" class=\"internalDFN\" id=\"ref-for-dfn-embedded-accessible-name-3\">embedded accessible name</a>,\n        return the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-embedded-accessible-name\" class=\"internalDFN\" id=\"ref-for-dfn-embedded-accessible-name-4\">embedded accessible name</a>."
+        },
+        {
+          "html": "Otherwise, if an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-external-label\" class=\"internalDFN\" id=\"ref-for-dfn-external-label-3\">external label</a> can be substituted, return the\n        relevant <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-external-label\" class=\"internalDFN\" id=\"ref-for-dfn-external-label-4\">external label</a>."
+        },
+        {
+          "html": "Return \"\"."
+        }
+      ]
+    }
+  ]
+}

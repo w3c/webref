@@ -1,0 +1,299 @@
+{
+  "spec": {
+    "title": "CSS Flexible Box Layout Module Level 1",
+    "url": "https://www.w3.org/TR/css-flexbox-1/"
+  },
+  "algorithms": [
+    {
+      "name": "main-axis baseline set",
+      "href": "https://www.w3.org/TR/css-flexbox-1/#main-axis-baseline",
+      "html": "When the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-axis\" id=\"ref-for-inline-axis①\">inline axis</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container③⑧\">flex container</a> matches its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-axis\" id=\"ref-for-main-axis①③\">main axis</a>,\n\t\t\tits baselines are determined as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item⑧⑨\">flex items</a> on the flex container’s startmost/endmost <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-line\" id=\"ref-for-flex-line③\">flex line</a> <a href=\"https://www.w3.org/TR/css-flexbox-1/#baseline-participation\" id=\"ref-for-baseline-participation①\">participate in baseline alignment</a>,\nthe flex container’s first/last <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-axis-baseline\" id=\"ref-for-main-axis-baseline\">main-axis baseline set</a> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#generate-baselines\" id=\"ref-for-generate-baselines\">generated</a> from\nthe shared <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#alignment-baseline\" id=\"ref-for-alignment-baseline\">alignment baseline</a> of those <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item⑨⓪\">flex items</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if the flex container has at least one <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item⑨①\">flex item</a>,\nthe flex container’s first/last <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-axis-baseline\" id=\"ref-for-main-axis-baseline①\">main-axis baseline set</a> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#generate-baselines\" id=\"ref-for-generate-baselines①\">generated</a> from\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#alignment-baseline\" id=\"ref-for-alignment-baseline①\">alignment baseline</a> of the startmost/endmost <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item⑨②\">flex item</a>.\n(If that item has no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#alignment-baseline\" id=\"ref-for-alignment-baseline②\">alignment baseline</a> parallel to the flex container’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-axis\" id=\"ref-for-main-axis①④\">main axis</a>,\nthen one is first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#synthesize-baseline\" id=\"ref-for-synthesize-baseline①\">synthesized</a> from its border edges.)</p>"
+        },
+        {
+          "html": "<p>Otherwise, the flex container has no first/last main-axis <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#baseline-set\" id=\"ref-for-baseline-set\">baseline set</a>,\nand one is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#synthesize-baseline\" id=\"ref-for-synthesize-baseline②\">synthesized</a> if needed\naccording to the rules of its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#shared-alignment-context\" id=\"ref-for-shared-alignment-context\">alignment context</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "cross-axis baseline set",
+      "href": "https://www.w3.org/TR/css-flexbox-1/#cross-axis-baseline",
+      "html": "When the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-axis\" id=\"ref-for-inline-axis②\">inline axis</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container③⑨\">flex container</a> matches its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-axis\" id=\"ref-for-cross-axis①③\">cross axis</a>,\n\t\t\tits baselines are determined as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the flex container has at least one <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item⑨③\">flex item</a>,\nthe flex container’s first/last <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-axis-baseline\" id=\"ref-for-cross-axis-baseline\">cross-axis baseline set</a> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#generate-baselines\" id=\"ref-for-generate-baselines②\">generated</a> from\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#alignment-baseline\" id=\"ref-for-alignment-baseline③\">alignment baseline</a> of the startmost/endmost <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item⑨④\">flex item</a>.\n(If that item has no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#alignment-baseline\" id=\"ref-for-alignment-baseline④\">alignment baseline</a> parallel to the flex container’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-axis\" id=\"ref-for-cross-axis①④\">cross axis</a>,\nthen one is first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#synthesize-baseline\" id=\"ref-for-synthesize-baseline③\">synthesized</a> from its border edges.)</p>"
+        },
+        {
+          "html": "<p>Otherwise, the flex container has no first/last cross-axis <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#baseline-set\" id=\"ref-for-baseline-set①\">baseline set</a>,\nand one is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#synthesize-baseline\" id=\"ref-for-synthesize-baseline④\">synthesized</a> if needed\naccording to the rules of its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#shared-alignment-context\" id=\"ref-for-shared-alignment-context①\">alignment context</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following sections define the algorithm for laying out a flex container and its contents.",
+      "rationale": "generate",
+      "steps": [
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-anon-box\"></a> <strong>Generate anonymous flex items</strong> as described in <a href=\"https://www.w3.org/TR/css-flexbox-1/#flex-items\">§4 Flex Items</a>."
+        }
+      ]
+    },
+    {
+      "html": "The following sections define the algorithm for laying out a flex container and its contents.",
+      "rationale": "determine",
+      "steps": [
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-available\"></a> <strong>Determine the available main and cross space for the flex items.</strong> For each dimension,\n\t\t\tif that dimension of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container④⓪\">flex container</a>’s content box is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#definite\" id=\"ref-for-definite⑧\">definite size</a>, use that;\n\t\t\tif that dimension of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container④①\">flex container</a> is being sized under a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#min-content-constraint\" id=\"ref-for-min-content-constraint\">min</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-constraint\" id=\"ref-for-max-content-constraint\">max-content constraint</a>,\n\t\t\tthe available space in that dimension is that constraint;\n\t\t\totherwise, subtract the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container④②\">flex container</a>’s margin, border, and padding\n\t\t\tfrom the space available to the flex container in that dimension\n\t\t\tand use that value."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-main-item\"></a> <strong>Determine the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"flex-base-size\">flex base size</dfn> and <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"hypothetical-main-size\">hypothetical main size</dfn> of each item:</strong>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the item has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#definite\" id=\"ref-for-definite⑨\">definite</a> used <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-basis\" id=\"ref-for-flex-flex-basis③\">flex basis</a>,\n\t\t\t\t\tthat’s the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size①\">flex base size</a>."
+            },
+            {
+              "html": "If the flex item has ...\n       <ul>\n        <li>an intrinsic aspect ratio,\n        </li><li>a used <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-basis\" id=\"ref-for-flex-flex-basis④\">flex basis</a> of <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-flexbox-1/#valdef-flex-basis-content\" id=\"ref-for-valdef-flex-basis-content⑥\">content</a>, and\n        </li><li>a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#definite\" id=\"ref-for-definite①⓪\">definite</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size⑦\">cross size</a>,\n       </li></ul>\n        then the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size②\">flex base size</a> is calculated from its inner <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size⑧\">cross size</a> and the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item⑨⑥\">flex item</a>’s intrinsic aspect ratio."
+            },
+            {
+              "html": "If the used <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-basis\" id=\"ref-for-flex-flex-basis⑤\">flex basis</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-flexbox-1/#valdef-flex-basis-content\" id=\"ref-for-valdef-flex-basis-content⑦\">content</a> or depends on its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#available\" id=\"ref-for-available①\">available space</a>,\n\t\t\t\t\tand the flex container is being sized under a min-content or max-content constraint\n\t\t\t\t\t(e.g. when performing <a href=\"https://www.w3.org/TR/CSS2/tables.html#auto-table-layout\">automatic table layout</a> <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/css-flexbox-1/#biblio-css21\">[CSS21]</a>),\n\t\t\t\t\tsize the item under that constraint.\n\t\t\t\t\tThe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size③\">flex base size</a> is the item’s resulting <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size⑥\">main size</a>."
+            },
+            {
+              "html": "Otherwise,\n\t\t\t\t\tif the used <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-basis\" id=\"ref-for-flex-flex-basis⑥\">flex basis</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-flexbox-1/#valdef-flex-basis-content\" id=\"ref-for-valdef-flex-basis-content⑧\">content</a> or depends on its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#available\" id=\"ref-for-available②\">available space</a>,\n\t\t\t\t\tthe available main size is infinite,\n\t\t\t\t\tand the flex item’s inline axis is parallel to the main axis,\n\t\t\t\t\tlay the item out using <a href=\"https://www.w3.org/TR/css3-writing-modes/#orthogonal-flows\">the rules for a box in an orthogonal flow</a> <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/css-flexbox-1/#biblio-css3-writing-modes\">[CSS3-WRITING-MODES]</a>.\n\t\t\t\t\tThe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size④\">flex base size</a> is the item’s max-content <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size⑦\">main size</a>."
+            },
+            {
+              "html": "Otherwise,\n\t\t\t\t\tsize the item into the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#available\" id=\"ref-for-available③\">available space</a> using its used <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-basis\" id=\"ref-for-flex-flex-basis⑦\">flex basis</a> in place of its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size⑧\">main size</a>,\n\t\t\t\t\ttreating a value of <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-flexbox-1/#valdef-flex-basis-content\" id=\"ref-for-valdef-flex-basis-content⑨\">content</a> as <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-sizing-3/#valdef-width-max-content\" id=\"ref-for-valdef-width-max-content①\">max-content</a>.\n\t\t\t\t\tIf a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size⑨\">cross size</a> is needed to determine the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size⑨\">main size</a> (e.g. when the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item⑨⑧\">flex item</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size①⓪\">main size</a> is in its block axis)\n\t\t\t\t\tand the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item⑨⑨\">flex item</a>’s cross size is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-flexbox-1/#valdef-flex-basis-auto\" id=\"ref-for-valdef-flex-basis-auto④\">auto</a> and not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#definite\" id=\"ref-for-definite①①\">definite</a>,\n\t\t\t\t\tin this calculation use <span class=\"css\">fit-content</span> as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⓪⓪\">flex item</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size①⓪\">cross size</a>.\n\t\t\t\t\tThe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size⑤\">flex base size</a> is the item’s resulting <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size①①\">main size</a>."
+            }
+          ]
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-main-container\"></a> <strong>Determine the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size①④\">main size</a> of the flex container</strong> using the rules of the formatting context in which it participates.\n\t\t\tFor this computation, <a class=\"css\" data-link-type=\"value\">auto</a> margins on flex items are treated as <span class=\"css\">0</span>."
+        }
+      ]
+    },
+    {
+      "html": "The following sections define the algorithm for laying out a flex container and its contents.",
+      "rationale": "collect",
+      "steps": [
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-line-break\"></a> <strong>Collect flex items into flex lines:</strong>\n     <ul>\n      <li> If the flex container is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#single-line-flex-container\" id=\"ref-for-single-line-flex-container⑥\">single-line</a>,\n\t\t\t\t\tcollect all the flex items into a single flex line.\n      </li><li>\n        Otherwise,\n\t\t\t\t\tstarting from the first uncollected item,\n\t\t\t\t\tcollect consecutive items one by one\n\t\t\t\t\tuntil the first time that the <em>next</em> collected item\n\t\t\t\t\twould not fit into the flex container’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#inner-size\" id=\"ref-for-inner-size\">inner</a> main size\n\t\t\t\t\t(or until a forced break is encountered,\n\t\t\t\t\tsee <a href=\"https://www.w3.org/TR/css-flexbox-1/#pagination\">§10 Fragmenting Flex Layout</a>).\n\t\t\t\t\tIf the very first uncollected item wouldn’t fit,\n\t\t\t\t\tcollect just it into the line.\n       <p> For this step,\n\t\t\t\t\t\tthe size of a flex item is its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#outer-size\" id=\"ref-for-outer-size\">outer</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#hypothetical-main-size\" id=\"ref-for-hypothetical-main-size①\">hypothetical main size</a>.  </p>\n       <p> Repeat until all flex items have been collected into flex lines. </p>\n       \n     </li></ul>"
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-flex\"></a> <strong><a href=\"https://www.w3.org/TR/css-flexbox-1/#resolve-flexible-lengths\">Resolve the flexible lengths</a></strong> of all the flex items\n\t\t\tto find their used <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size①⑤\">main size</a>. See <a href=\"https://www.w3.org/TR/css-flexbox-1/#resolve-flexible-lengths\">§9.7 Resolving Flexible Lengths</a>."
+        }
+      ]
+    },
+    {
+      "html": "The following sections define the algorithm for laying out a flex container and its contents.",
+      "rationale": "determine",
+      "steps": [
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-cross-item\"></a> <strong>Determine the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"hypothetical-cross-size\">hypothetical cross size</dfn> of each item</strong> by performing layout with the used <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size①⑥\">main size</a> and the available space,\n\t\t\ttreating <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto⑤\">auto</a> as <span class=\"css\">fit-content</span>."
+        },
+        {
+          "html": "Otherwise,\n\t\t\t\tfor each flex line:",
+          "rationale": "collect",
+          "steps": [
+            {
+              "html": "Collect all the flex items whose inline-axis is parallel to the main-axis,\n\t\t\t\t\twhose <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-flexbox-1/#propdef-align-self\" id=\"ref-for-propdef-align-self①⑤\">align-self</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-flexbox-1/#valdef-align-items-baseline\" id=\"ref-for-valdef-align-items-baseline\">baseline</a>,\n\t\t\t\t\tand whose cross-axis margins are both non-<a class=\"css\" data-link-type=\"value\">auto</a>.\n\t\t\t\t\tFind the largest of the distances between each item’s baseline and its hypothetical outer cross-start edge,\n\t\t\t\t\tand the largest of the distances between each item’s baseline and its hypothetical outer cross-end edge,\n\t\t\t\t\tand sum these two values."
+            },
+            {
+              "html": "Among all the items not collected by the previous step,\n\t\t\t\t\tfind the largest outer <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#hypothetical-cross-size\" id=\"ref-for-hypothetical-cross-size\">hypothetical cross size</a>."
+            },
+            {
+              "html": "The used cross-size of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-line\" id=\"ref-for-flex-line⑤\">flex line</a> is the largest of the numbers found in the previous two steps and zero.\n       <p>If the flex container is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#single-line-flex-container\" id=\"ref-for-single-line-flex-container⑧\">single-line</a>,\n\t\t\t\t\tthen clamp the line’s cross-size to be within\n\t\t\t\t\tthe container’s computed min and max <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size①④\">cross sizes</a>. </p>"
+            }
+          ]
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-line-stretch\"></a> <strong>Handle 'align-content: stretch'.</strong> If the flex container has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#definite\" id=\"ref-for-definite①③\">definite</a> cross size, <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-flexbox-1/#propdef-align-content\" id=\"ref-for-propdef-align-content⑥\">align-content</a> is <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/css-flexbox-1/#valdef-align-content-stretch\" id=\"ref-for-valdef-align-content-stretch\">stretch</a>,\n\t\t\tand the sum of the flex lines' cross sizes is less than the flex container’s inner cross size,\n\t\t\tincrease the cross size of each flex line by equal amounts\n\t\t\tsuch that the sum of their cross sizes exactly equals the flex container’s inner cross size."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-visibility\"></a> <strong>Collapse <span class=\"css\">visibility:collapse</span> items.</strong> If any flex items have <a class=\"css\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visufx.html#propdef-visibility\" id=\"ref-for-propdef-visibility③\">visibility: collapse</a>,\n\t\t\tnote the cross size of the line they’re in as the item’s <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"strut-size\">strut size<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#strut-size\"></a></dfn>,\n\t\t\tand restart layout from the beginning.\n     <p> In this second layout round,\n\t\t\t\twhen <a href=\"https://www.w3.org/TR/css-flexbox-1/#algo-line-break\">collecting items into lines</a>,\n\t\t\t\ttreat the collapsed items as having zero <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size①⑦\">main size</a>.\n\t\t\t\tFor the rest of the algorithm following that step,\n\t\t\t\tignore the collapsed items entirely\n\t\t\t\t(as if they were <span class=\"css\">display:none</span>)\n\t\t\t\texcept that after <a href=\"https://www.w3.org/TR/css-flexbox-1/#algo-cross-line\">calculating the cross size of the lines</a>,\n\t\t\t\tif any line’s cross size is less than\n\t\t\t\tthe largest <var>strut size</var> among all the collapsed items in the line,\n\t\t\t\tset its cross size to that <var>strut size</var>. </p>\n     <p> Skip this step in the second layout round. </p>"
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-stretch\"></a> <strong>Determine the used cross size of each flex item.</strong> If a flex item has <a class=\"css\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-flexbox-1/#propdef-align-self\" id=\"ref-for-propdef-align-self①⑥\">align-self: stretch</a>,\n\t\t\tits computed cross size property is <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto⑥\">auto</a>,\n\t\t\tand neither of its cross-axis margins are <a class=\"css\" data-link-type=\"value\">auto</a>,\n\t\t\tthe used outer cross size is the used cross size of its flex line,\n\t\t\tclamped according to the item’s used min and max <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size①⑤\">cross sizes</a>.\n\t\t\tOtherwise,\n\t\t\tthe used cross size is the item’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#hypothetical-cross-size\" id=\"ref-for-hypothetical-cross-size①\">hypothetical cross size</a>.\n     <p>If the flex item has <a class=\"css\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-flexbox-1/#propdef-align-self\" id=\"ref-for-propdef-align-self①⑦\">align-self: stretch</a>,\n\t\t\tredo layout for its contents,\n\t\t\ttreating this used size as its definite cross size\n\t\t\tso that percentage-sized children can be resolved.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following sections define the algorithm for laying out a flex container and its contents.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-main-align\"></a> <strong>Distribute any remaining free space.</strong> For each flex line:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the remaining free space is positive\n\t\t\t\t\tand at least one main-axis margin on this line is <a class=\"css\" data-link-type=\"value\">auto</a>,\n\t\t\t\t\tdistribute the free space equally among these margins.\n\t\t\t\t\tOtherwise, set all <a class=\"css\" data-link-type=\"value\">auto</a> margins to zero."
+            },
+            {
+              "html": "Align the items along the main-axis per <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-flexbox-1/#propdef-justify-content\" id=\"ref-for-propdef-justify-content⑧\">justify-content</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The following sections define the algorithm for laying out a flex container and its contents.",
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-cross-margins\"></a> <strong>Resolve cross-axis <a class=\"css\" data-link-type=\"value\">auto</a> margins.</strong> If a flex item has <a class=\"css\" data-link-type=\"value\">auto</a> cross-axis margins:\n     <ul>\n      <li> If its outer cross size\n\t\t\t\t\t(treating those <a class=\"css\" data-link-type=\"value\">auto</a> margins as zero)\n\t\t\t\t\tis less than the cross size of its flex line,\n\t\t\t\t\tdistribute the difference in those sizes equally\n\t\t\t\t\tto the <a class=\"css\" data-link-type=\"value\">auto</a> margins.\n      </li><li> Otherwise,\n\t\t\t\t\tif the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#block-start\" id=\"ref-for-block-start③\">block-start</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-start\" id=\"ref-for-inline-start③\">inline-start</a> margin (whichever is in the cross axis)\n\t\t\t\t\tis <a class=\"css\" data-link-type=\"value\">auto</a>, set it to zero.\n\t\t\t\t\tSet the opposite margin so that the outer cross size of the item\n\t\t\t\t\tequals the cross size of its flex line.\n     </li></ul>"
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-cross-align\"></a> <strong>Align all flex items along the cross-axis</strong> per <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-flexbox-1/#propdef-align-self\" id=\"ref-for-propdef-align-self①⑧\">align-self</a>,\n\t\t\tif neither of the item’s cross-axis margins are <a class=\"css\" data-link-type=\"value\">auto</a>."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-cross-container\"></a> <strong>Determine the flex container’s used cross size:</strong>\n     <ul>\n      <li> If the cross size property is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#definite\" id=\"ref-for-definite①④\">definite</a> size,\n\t\t\t\t\tuse that,\n\t\t\t\t\tclamped by the used min and max <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size①⑥\">cross sizes</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container④⑦\">flex container</a>.\n      </li><li> Otherwise,\n\t\t\t\t\tuse the sum of the flex lines' cross sizes,\n\t\t\t\t\tclamped by the used min and max <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size①⑦\">cross sizes</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container④⑧\">flex container</a>.\n     </li></ul>"
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-flexbox-1/#algo-line-align\"></a> <strong>Align all flex lines</strong> per <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-flexbox-1/#propdef-align-content\" id=\"ref-for-propdef-align-content⑦\">align-content</a>."
+        }
+      ]
+    },
+    {
+      "html": "To resolve the flexible lengths of the items within a flex line:",
+      "rationale": "determine",
+      "steps": [
+        {
+          "html": "<strong>Determine the used flex factor</strong>.\n\t\t\tSum the outer hypothetical main sizes of all items on the line.\n\t\t\tIf the sum is less than the flex container’s inner <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size①⑨\">main size</a>,\n\t\t\tuse the flex grow factor for the rest of this algorithm;\n\t\t\totherwise, use the flex shrink factor."
+        },
+        {
+          "html": "<strong>Size inflexible items.</strong> Freeze,\n\t\t\tsetting its <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"target-main-size\">target main size</dfn> to its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#hypothetical-main-size\" id=\"ref-for-hypothetical-main-size②\">hypothetical main size</a>…\n     <ul>\n      <li> any item that has a flex factor of zero\n      </li><li> if using the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-grow-factor\" id=\"ref-for-flex-flex-grow-factor③\">flex grow factor</a>:\n\t\t\t\t\tany item that has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size①⓪\">flex base size</a> greater than its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#hypothetical-main-size\" id=\"ref-for-hypothetical-main-size③\">hypothetical main size</a>\n      </li><li> if using the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-shrink-factor\" id=\"ref-for-flex-flex-shrink-factor④\">flex shrink factor</a>:\n\t\t\t\t\tany item that has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size①①\">flex base size</a> smaller than its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#hypothetical-main-size\" id=\"ref-for-hypothetical-main-size④\">hypothetical main size</a>\n     </li></ul>"
+        },
+        {
+          "html": "<strong>Calculate <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initial-free-space\">initial free space</dfn>.</strong> Sum the outer sizes of all items on the line,\n\t\t\tand subtract this from the flex container’s inner <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size②⓪\">main size</a>.\n\t\t\tFor frozen items, use their outer <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#target-main-size\" id=\"ref-for-target-main-size\">target main size</a>;\n\t\t\tfor other items, use their outer <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size①②\">flex base size</a>."
+        },
+        {
+          "html": "Loop:",
+          "rationale": "check",
+          "steps": [
+            {
+              "html": "<strong>Check for flexible items.</strong> If all the flex items on the line are frozen,\n\t\t\t\t\tfree space has been distributed;\n\t\t\t\t\texit this loop."
+            },
+            {
+              "html": "<strong>Calculate the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"remaining-free-space\">remaining free space</dfn></strong> as for <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#initial-free-space\" id=\"ref-for-initial-free-space\">initial free space</a>, above.\n\t\t\t\t\tIf the sum of the unfrozen flex items’ flex factors is less than one,\n\t\t\t\t\tmultiply the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#initial-free-space\" id=\"ref-for-initial-free-space①\">initial free space</a> by this sum.\n\t\t\t\t\tIf the magnitude of this value is less than the magnitude of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#remaining-free-space\" id=\"ref-for-remaining-free-space\">remaining free space</a>,\n\t\t\t\t\tuse this as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#remaining-free-space\" id=\"ref-for-remaining-free-space①\">remaining free space</a>."
+            },
+            {
+              "html": "<strong>Distribute free space proportional to the flex factors.</strong>\n       <dl>\n        <dt>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#remaining-free-space\" id=\"ref-for-remaining-free-space②\">remaining free space</a> is zero\n        </dt><dd> Do nothing.\n        </dd><dt>If using the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-grow-factor\" id=\"ref-for-flex-flex-grow-factor④\">flex grow factor</a>\n        </dt><dd> Find the ratio of the item’s flex grow factor\n\t\t\t\t\t\t\tto the sum of the flex grow factors of all unfrozen items on the line.\n\t\t\t\t\t\t\tSet the item’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#target-main-size\" id=\"ref-for-target-main-size①\">target main size</a> to its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size①③\">flex base size</a> plus a fraction of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#remaining-free-space\" id=\"ref-for-remaining-free-space③\">remaining free space</a> proportional to the ratio.\n        </dd><dt>If using the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-shrink-factor\" id=\"ref-for-flex-flex-shrink-factor⑤\">flex shrink factor</a>\n        </dt><dd> For every unfrozen item on the line,\n\t\t\t\t\t\t\tmultiply its flex shrink factor by its inner <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size①④\">flex base size</a>,\n\t\t\t\t\t\t\tand note this as its <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"scaled-flex-shrink-factor\">scaled flex shrink factor</dfn>.\n\t\t\t\t\t\t\tFind the ratio of the item’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#scaled-flex-shrink-factor\" id=\"ref-for-scaled-flex-shrink-factor\">scaled flex shrink factor</a> to the sum of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#scaled-flex-shrink-factor\" id=\"ref-for-scaled-flex-shrink-factor①\">scaled flex shrink factors</a> of all unfrozen items on the line.\n\t\t\t\t\t\t\tSet the item’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#target-main-size\" id=\"ref-for-target-main-size②\">target main size</a> to its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size①⑤\">flex base size</a> minus a fraction of the absolute value of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#remaining-free-space\" id=\"ref-for-remaining-free-space④\">remaining free space</a> proportional to the ratio. \n        </dd><dt>Otherwise\n        </dt><dd> Do nothing.\n       </dd></dl>"
+            },
+            {
+              "html": "<strong>Fix min/max violations.</strong> Clamp each non-frozen item’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#target-main-size\" id=\"ref-for-target-main-size③\">target main size</a> by\n\t\t\t\t\tits <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-4/#used-value\" id=\"ref-for-used-value①\">used</a> min and max <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size②②\">main sizes</a> and floor its content-box size at zero.\n\t\t\t\t\tIf the item’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#target-main-size\" id=\"ref-for-target-main-size④\">target main size</a> was made smaller by this,\n\t\t\t\t\tit’s a max violation.\n\t\t\t\t\tIf the item’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#target-main-size\" id=\"ref-for-target-main-size⑤\">target main size</a> was made larger by this,\n\t\t\t\t\tit’s a min violation."
+            },
+            {
+              "html": "<strong>Freeze over-flexed items.</strong> The total violation is the sum of the adjustments from the previous step <code>∑(clamped size - unclamped size)</code>.\n\t\t\t\t\tIf the total violation is:\n       <dl>\n        <dt>Zero\n        </dt><dd> Freeze all items.\n        </dd><dt>Positive\n        </dt><dd> Freeze all the items with min violations.\n        </dd><dt>Negative\n        </dt><dd> Freeze all the items with max violations.\n       </dd></dl>"
+            },
+            {
+              "html": "Return to the start of this loop."
+            }
+          ]
+        },
+        {
+          "html": "Set each item’s used <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size②③\">main size</a> to its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#target-main-size\" id=\"ref-for-target-main-size⑥\">target main size</a>."
+        }
+      ]
+    },
+    {
+      "name": "definite",
+      "href": "https://www.w3.org/TR/css-flexbox-1/#definite",
+      "html": "Although CSS Sizing <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/css-flexbox-1/#biblio-css-sizing-3\">[CSS-SIZING-3]</a> defines <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#definite\" id=\"ref-for-definite①⑤\">definite</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#indefinite\" id=\"ref-for-indefinite\">indefinite</a> lengths,\n\tFlexbox has several additional cases where a length can be considered <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"definite|definite size|indefinite|indefinite size\" data-noexport=\"\" id=\"definite\">definite</dfn>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#single-line-flex-container\" id=\"ref-for-single-line-flex-container⑨\">single-line</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container④⑨\">flex container</a> has a definite <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size①⑧\">cross size</a>,\n\t\t\tthe outer <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size①⑨\">cross size</a> of any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#stretched\" id=\"ref-for-stretched\">stretched</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⓪①\">flex items</a> is the flex container’s inner <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size②⓪\">cross size</a> (clamped to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⓪②\">flex item</a>’s min and max <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-size\" id=\"ref-for-cross-size②①\">cross size</a>)\n\t\t\tand is considered <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#definite\" id=\"ref-for-definite①⑥\">definite</a>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container⑤⓪\">flex container</a> has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#definite\" id=\"ref-for-definite①⑦\">definite</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size②④\">main size</a>,\n\t\t\ta <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⓪③\">flex item</a>’s post-flexing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size②⑤\">main size</a> is treated as <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#definite\" id=\"ref-for-definite①⑧\">definite</a>,\n\t\t\teven though it can rely on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#definite\" id=\"ref-for-definite①⑨\">indefinite</a> sizes\n\t\t\tof any flex items in the same line."
+        },
+        {
+          "html": "Once the cross size of a flex line has been determined,\n\t\t\titems in auto-sized flex containers are also considered\n\t\t\tdefinite for the purpose of layout; see <a href=\"https://www.w3.org/TR/css-flexbox-1/#algo-stretch\">step 11</a>."
+        }
+      ]
+    },
+    {
+      "html": "The <strong><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content\" id=\"ref-for-max-content②\">max-content</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size②⑥\">main size</a> of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container⑤②\">flex container</a></strong> is the smallest size the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container⑤③\">flex container</a> can take\n\twhile maintaining the <a href=\"https://www.w3.org/TR/css-flexbox-1/#intrinsic-item-contributions\">max-content contributions</a> of its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⓪④\">flex items</a>,\n\tinsofar as allowed by the items’ own flexibility:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⓪⑤\">flex item</a>,\n\t\t\tsubtract its outer <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size①⑥\">flex base size</a> from its <a href=\"https://www.w3.org/TR/css-flexbox-1/#intrinsic-item-contributions\">max-content contribution</a> size.\n\t\t\tIf that result is positive,\n\t\t\tdivide by its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-grow-factor\" id=\"ref-for-flex-flex-grow-factor⑤\">flex grow factor</a> floored at 1;\n\t\t\tif negative,\n\t\t\tdivide by its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#scaled-flex-shrink-factor\" id=\"ref-for-scaled-flex-shrink-factor②\">scaled flex shrink factor</a> having floored the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-shrink-factor\" id=\"ref-for-flex-flex-shrink-factor⑥\">flex shrink factor</a> at 1.\n\t\t\tThis is the item’s <var>max-content flex fraction</var>."
+        },
+        {
+          "html": "Place all <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⓪⑥\">flex items</a> into lines of infinite length."
+        },
+        {
+          "html": "Within each line,\n\t\t\tfind the largest <var>max-content flex fraction</var> among all the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⓪⑦\">flex items</a>.\n\t\t\tAdd each item’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size①⑦\">flex base size</a> to the product of its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-grow-factor\" id=\"ref-for-flex-flex-grow-factor⑥\">flex grow factor</a> (or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#scaled-flex-shrink-factor\" id=\"ref-for-scaled-flex-shrink-factor③\">scaled flex shrink factor</a>, if the chosen <var>max-content flex fraction</var> was negative)\n\t\t\tand the chosen <var>max-content flex fraction</var>,\n\t\t\tthen clamp that result by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#max-main-size\" id=\"ref-for-max-main-size\">max main size</a> floored by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#min-main-size\" id=\"ref-for-min-main-size\">min main size</a>."
+        },
+        {
+          "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container⑤④\">flex container</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content\" id=\"ref-for-max-content③\">max-content size</a> is the\n\t\t\tlargest sum of the afore-calculated sizes of all items within a single line."
+        }
+      ]
+    },
+    {
+      "html": "…",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If any of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①③⑥\">flex items</a> on the flex container’s\n        <del>first/last</del>\n        <ins>startmost/endmost</ins>\n         <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-line\" id=\"ref-for-flex-line⑦\">flex line</a> <a href=\"https://www.w3.org/TR/css-flexbox-1/#baseline-participation\" id=\"ref-for-baseline-participation②\">participate in baseline alignment</a>,\n\t\t\t\t\t\tthe flex container’s first/last <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-axis-baseline\" id=\"ref-for-main-axis-baseline②\">main-axis baseline set</a> …"
+        },
+        {
+          "html": "Otherwise, if the flex container has at least one <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①③⑦\">flex item</a>,\n\t\t\t\t\t\tthe flex container’s first/last <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-axis-baseline\" id=\"ref-for-main-axis-baseline③\">main-axis baseline set</a> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#generate-baselines\" id=\"ref-for-generate-baselines③\">generated</a> from\n\t\t\t\t\t\tthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#alignment-baseline\" id=\"ref-for-alignment-baseline⑤\">alignment baseline</a> of the\n        <del>first/last</del>\n        <ins>startmost/endmost</ins>\n         <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①③⑧\">flex item</a>.\n\t\t\t\t\t\t…"
+        },
+        {
+          "html": "Otherwise, the flex container has no first/last main-axis <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#baseline-set\" id=\"ref-for-baseline-set②\">baseline set</a>, …"
+        }
+      ]
+    },
+    {
+      "html": "…",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the flex container has at least one <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①③⑨\">flex item</a>,\n\t\t\t\t\t\tthe flex container’s first/last <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-axis-baseline\" id=\"ref-for-cross-axis-baseline②\">cross-axis baseline set</a> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#generate-baselines\" id=\"ref-for-generate-baselines④\">generated</a> from\n\t\t\t\t\t\tthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-align/#alignment-baseline\" id=\"ref-for-alignment-baseline⑥\">alignment baseline</a> of the\n        <del>first/last</del>\n        <ins>startmost/endmost</ins>\n         <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①④⓪\">flex item</a>.\n\t\t\t\t\t\t…"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content\" id=\"ref-for-max-content①②\">max-content</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-size\" id=\"ref-for-main-size③②\">main size</a> of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container⑦⑧\">flex container</a> is the smallest size the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container⑦⑨\">flex container</a> can take\n\t\t\t\twhile maintaining the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-contribution\" id=\"ref-for-max-content-contribution①⓪\">max-content contributions</a> of its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⑤⑦\">flex items</a>:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⑤⑧\">flex item</a>,\n\t\t\t\t\t\t\tsubtract its\n        <ins>outer</ins>\n         <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-base-size\" id=\"ref-for-flex-base-size③③\">flex base size</a> from its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#max-content-contribution\" id=\"ref-for-max-content-contribution①①\">max-content contribution</a> size\n        <del>,\n\t\t\t\t\t\t\tthen divide by its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-grow-factor\" id=\"ref-for-flex-flex-grow-factor⑧\">flex grow factor</a>, floored at 1,\n\t\t\t\t\t\t\tor by its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#scaled-flex-shrink-factor\" id=\"ref-for-scaled-flex-shrink-factor⑤\">scaled flex shrink factor</a> (if the result was negative,\n\t\t\t\t\t\t\tflooring the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-shrink-factor\" id=\"ref-for-flex-flex-shrink-factor⑦\">flex shrink factor</a> at 1 if necessary)</del>\n        .\n        <ins>If that result is not zero, divide it by (if the result was positive) its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-grow-factor\" id=\"ref-for-flex-flex-grow-factor⑨\">flex grow factor</a> floored at 1,\n\t\t\t\t\t\t\tor (if the result was negative) by its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#scaled-flex-shrink-factor\" id=\"ref-for-scaled-flex-shrink-factor⑥\">scaled flex shrink factor</a>, having floored the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-flex-shrink-factor\" id=\"ref-for-flex-flex-shrink-factor⑧\">flex shrink factor</a> at 1.</ins>\n         This is the item’s <var>max-content flex fraction</var>."
+        }
+      ]
+    },
+    {
+      "html": "In the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-axis\" id=\"ref-for-main-axis②⑤\">main axis</a>,",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If there is a subsequent in-flow <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⑧⑦\">flex item</a> on the same <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-line\" id=\"ref-for-flex-line①⑥\">flex line</a>,\n\t\t\t\t\t\t\tthe <a data-link-type=\"dfn\">static position</a> is the outer <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-start\" id=\"ref-for-main-start①③\">main-start</a> edge of that <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⑧⑧\">flex item</a>."
+        },
+        {
+          "html": "Otherwise, if there is a preceding in-flow <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⑧⑨\">flex item</a> on the same <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-line\" id=\"ref-for-flex-line①⑦\">flex line</a>,\n\t\t\t\t\t\t\tthe <a data-link-type=\"dfn\">static position</a> is the outer <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#main-end\" id=\"ref-for-main-end①①\">main-end</a> edge of that <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⑨⓪\">flex item</a>."
+        },
+        {
+          "html": "Otherwise, the <a data-link-type=\"dfn\">static position</a> is determined\n\t\t\t\t\t\t\tby the value of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-flexbox-1/#propdef-justify-content\" id=\"ref-for-propdef-justify-content①⓪\">justify-content</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-container\" id=\"ref-for-flex-container①⓪④\">flex container</a> as if the <a data-link-type=\"dfn\">static position</a> were represented by a zero-sized flex item."
+        }
+      ]
+    },
+    {
+      "html": "In the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-axis\" id=\"ref-for-cross-axis②⑥\">cross axis</a>,",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If there is a preceding in-flow <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-item\" id=\"ref-for-flex-item①⑨①\">flex item</a>,\n\t\t\t\t\t\t\tthe <a data-link-type=\"dfn\">static position</a> is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-start\" id=\"ref-for-cross-start①⑧\">cross-start</a> edge of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-line\" id=\"ref-for-flex-line①⑧\">flex line</a> that item is in."
+        },
+        {
+          "html": "Otherwise, the <a data-link-type=\"dfn\">static position</a> is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#cross-start\" id=\"ref-for-cross-start①⑨\">cross-start</a> edge\n\t\t\t\t\t\t\tof the first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-flexbox-1/#flex-line\" id=\"ref-for-flex-line①⑨\">flex line</a>."
+        }
+      ]
+    }
+  ]
+}

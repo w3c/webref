@@ -1,0 +1,267 @@
+{
+  "spec": {
+    "title": "Referrer Policy",
+    "url": "https://www.w3.org/TR/referrer-policy/"
+  },
+  "algorithms": [
+    {
+      "html": "The CSS Standard does not specify how it fetches resources referenced from\n  stylesheets. However, implementations should be sure to set the\n  referrer-related properties of any <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\">requests</a> initiated by stylesheets\n  as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-block\">CSS declaration block</a> is responsible for the request,\n       set the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\">referrer</a> to the block’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node\">owner node</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-url\">URL</a>, and the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\">referrer policy</a> to the block’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node\">owner node</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-referrer-policy\">referrer policy</a>."
+        },
+        {
+          "html": "If a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#css-style-sheet\">CSS style sheet</a> is responsible for the request,\n       and its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location\">location</a> is non-null,\n       set the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\">referrer</a> to its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location\">location</a>, and the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\">referrer\n       policy</a> to its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/referrer-policy/#cssstylesheet-referrer-policy\" id=\"ref-for-cssstylesheet-referrer-policy-1\">referrer policy</a>."
+        },
+        {
+          "html": "Otherwise, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#css-style-sheet\">CSS style sheet</a> with a null <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location\">location</a> is responsible\n      for the request: set the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\">referrer</a> to its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node\">owner node</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-url\">URL</a>, and the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\">referrer policy</a> to the block’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node\">owner node</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-referrer-policy\">referrer policy</a>."
+        }
+      ]
+    },
+    {
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\">Response</a></code> <var>response</var>, the following steps return a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/referrer-policy/#referrer-policy\" id=\"ref-for-referrer-policy-11\">referrer policy</a> according to <var>response</var>’s `<code>Referrer-Policy</code>` header:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>policy-tokens</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-parse\">parsing</a> `<code>Referrer-Policy</code>` in <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\">header list</a>."
+        },
+        {
+          "html": "Let <var>policy</var> be the empty string."
+        },
+        {
+          "html": "For each <var>token</var> in <var>policy-tokens</var>, if <var>token</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/referrer-policy/#referrer-policy\" id=\"ref-for-referrer-policy-12\">referrer\n      policy</a> and <var>token</var> is not the empty string, then set <var>policy</var> to <var>token</var>."
+        },
+        {
+          "html": "Return <var>policy</var>."
+        }
+      ]
+    },
+    {
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\">response</a> <var>actualResponse</var>,\n  this algorithm updates <var>request</var>’s associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\">referrer policy</a> according to the Referrer-Policy header (if any) in <var>actualResponse</var>.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>policy</var> be the result of executing <a href=\"https://www.w3.org/TR/referrer-policy/#parse-referrer-policy-from-header\">§8.1 Parse a referrer policy from a Referrer-Policy header</a> on <var>actualResponse</var>."
+        },
+        {
+          "html": "If <var>policy</var> is not the empty string, then set <var>request</var>’s\n    associated referrer policy to <var>policy</var>."
+        }
+      ]
+    },
+    {
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\">Request</a></code> <var>request</var>, we can determine the correct\n  referrer information to send by examining the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\">referrer policy</a> associated with it, as detailed in the following steps, which return\n  either <code>no referrer</code> or a URL:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>policy</var> be <var>request</var>’s associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\">referrer policy</a>."
+        },
+        {
+          "html": "Let <var>environment</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\">client</a>."
+        },
+        {
+          "html": "Switch on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\">referrer</a>:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "\"client\"",
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\">global\n              object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#window\">Window</a></code> object, then",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "Let <var>document</var> be\n                the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-document-window\">associated <code>Document</code></a> of <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\">global object</a>."
+                        },
+                        {
+                          "html": "If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6454#section-3.2\">origin</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\">opaque origin</a>,\n                return <code>no referrer</code>."
+                        },
+                        {
+                          "html": "While <var>document</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#an-iframe-srcdoc-document\">an <code>iframe srcdoc</code> document</a>, let <var>document</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-document-bc\">browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context-container\">browsing context\n                container</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+                        },
+                        {
+                          "html": "Let <var>referrerSource</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-url\">URL</a>."
+                        }
+                      ]
+                    },
+                    {
+                      "html": "Otherwise, let <var>referrerSource</var> be <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-creation-url\">creation\n            URL</a>."
+                    }
+                  ]
+                },
+                {
+                  "case": "a URL",
+                  "html": "Let <var>referrerSource</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\">referrer</a>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Let <var>referrerURL</var> be the result of <a href=\"https://www.w3.org/TR/referrer-policy/#strip-url\">stripping <var>referrerSource</var> for use as a referrer.</a>"
+        },
+        {
+          "html": "Let <var>referrerOrigin</var> be the result of <a href=\"https://www.w3.org/TR/referrer-policy/#strip-url\">stripping <var>referrerSource</var> for use as a\n      referrer</a>, with the <code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/referrer-policy/#origin-only-flag\" id=\"ref-for-origin-only-flag-1\">origin-only flag</a></code> set to <code>true</code>."
+        },
+        {
+          "html": "Execute the statements corresponding to the value of <var>policy</var>:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "\"no-referrer\"",
+                  "html": "Return <code>no referrer</code>"
+                },
+                {
+                  "case": "\"origin\"",
+                  "html": "Return <var>referrerOrigin</var>"
+                },
+                {
+                  "case": "\"unsafe-url\"",
+                  "html": "Return <var>referrerURL</var>."
+                },
+                {
+                  "case": "\"strict-origin\"",
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>environment</var> is not null:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "If <var>environment</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/2010/REC-wsc-ui-20100812/#typesoftls\">TLS-protected</a> <em>and</em> <var>request</var>’s <a href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\">current\n                  URL</a> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url\">potentially trustworthy\n                  URL</a>, then return <code>no referrer</code>."
+                        }
+                      ]
+                    },
+                    {
+                      "html": "Return <var>referrerOrigin</var>."
+                    }
+                  ]
+                },
+                {
+                  "case": "\"strict-origin-when-cross-origin\"",
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>request</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/referrer-policy/#same-origin-request\" id=\"ref-for-same-origin-request-7\">same-origin request</a>, then\n              return <var>referrerURL</var>."
+                    },
+                    {
+                      "html": "If <var>environment</var> is not null:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "If <var>environment</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/2010/REC-wsc-ui-20100812/#typesoftls\">TLS-protected</a> <em>and</em> <var>request</var>’s <a href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\">current\n                  URL</a> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url\">potentially trustworthy URL</a>",
+                          "rationale": "return",
+                          "steps": [
+                            {
+                              "html": "Return <code>no referrer</code>."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "html": "Return <var>referrerOrigin</var>."
+                    }
+                  ]
+                },
+                {
+                  "case": "\"same-origin\"",
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>request</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/referrer-policy/#same-origin-request\" id=\"ref-for-same-origin-request-8\">same-origin request</a>, then\n              return <var>referrerURL</var>."
+                    },
+                    {
+                      "html": "Otherwise, return <code>no referrer</code>."
+                    }
+                  ]
+                },
+                {
+                  "case": "\"origin-when-cross-origin\"",
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>request</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/referrer-policy/#cross-origin-request\" id=\"ref-for-cross-origin-request-7\">cross-origin request</a>, then\n              return <var>referrerOrigin</var>."
+                    },
+                    {
+                      "html": "Otherwise, return <var>referrerURL</var>."
+                    }
+                  ]
+                },
+                {
+                  "case": "\"no-referrer-when-downgrade\"",
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>environment</var> is not null:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "If <var>environment</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/2010/REC-wsc-ui-20100812/#typesoftls\">TLS-protected</a> <em>and</em> <var>request</var>’s <a href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\">current\n                  URL</a> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url\">potentially trustworthy\n                  URL</a>, then return <code>no referrer</code>."
+                        }
+                      ]
+                    },
+                    {
+                      "html": "Return <var>referrerURL</var>."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "origin-only flag",
+      "href": "https://www.w3.org/TR/referrer-policy/#origin-only-flag",
+      "html": "Certain portions of URLs MUST not be included when sending a URL as the value\n  of a `<code>Referer</code>` header: a URLs fragment, username, and password\n  components should be stripped from the URL before it’s sent out. This\n  algorithm accepts a <code><dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"origin-only-flag\">origin-only flag</dfn></code>, which defaults\n  to <code>false</code>. If set to <code>true</code>, the algorithm will\n  additionally remove the URL’s path and query components, leaving only the\n  scheme, host, and port.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>url</var> is <code>null</code>, return <code>no referrer</code>."
+        },
+        {
+          "html": "If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\">scheme</a> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#local-scheme\">local scheme</a>, then\n      return <code>no referrer</code>."
+        },
+        {
+          "html": "Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-username\">username</a> to the empty string."
+        },
+        {
+          "html": "Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-password\">password</a> to <code>null</code>."
+        },
+        {
+          "html": "Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#concept-url-fragment\">fragment</a> to <code>null</code>."
+        },
+        {
+          "html": "If the <code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/referrer-policy/#origin-only-flag\" id=\"ref-for-origin-only-flag-2\">origin-only flag</a></code> is <code>true</code>,\n      then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\">path</a> to <code>null</code>."
+            },
+            {
+              "html": "Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\">query</a> to <code>null</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>url</var>."
+        }
+      ]
+    }
+  ]
+}

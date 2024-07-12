@@ -1,0 +1,31 @@
+{
+  "spec": {
+    "title": "CSS Custom Highlight API Module Level 1",
+    "url": "https://www.w3.org/TR/css-highlight-api-1/"
+  },
+  "algorithms": [
+    {
+      "name": "to create a custom highlight",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlight-highlight",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Highlight\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Highlight(...initialRanges)|constructor(...initialRanges)|Highlight()|constructor()\" id=\"dom-highlight-highlight\"><code>Highlight(AbstractRange... initialRanges)</code></dfn> constructor is invoked,\n\t\trun the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>highlight</var> be the new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-highlight-api-1/#highlight\" id=\"ref-for-highlight③\">Highlight</a></code> object."
+        },
+        {
+          "html": "Set <var>highlight</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-highlight-api-1/#dom-highlight-priority\" id=\"ref-for-dom-highlight-priority①\">priority</a></code> to <code>0</code>."
+        },
+        {
+          "html": "Set <var>highlight</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-highlight-api-1/#dom-highlight-type\" id=\"ref-for-dom-highlight-type①\">type</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-highlight-api-1/#dom-highlighttype-highlight\" id=\"ref-for-dom-highlighttype-highlight\">highlight</a></code>."
+        },
+        {
+          "html": "For each <var>range</var> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-highlight-api-1/#dom-highlight-highlight-initialranges-initialranges\" id=\"ref-for-dom-highlight-highlight-initialranges-initialranges\">initialRanges</a></code>,\n\t\t\t\tlet <var>rangeArg</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-idl-to-ecmascript-value\" id=\"ref-for-dfn-convert-idl-to-ecmascript-value\">converting</a> <var>range</var> to an ECMAScript value,\n\t\t\t\tthen run <a href=\"https://webidl.spec.whatwg.org/#es-add-delete\">the steps for a built-in setlike add function</a>,\n\t\t\t\twith <var>highlight</var> as the <code>this</code> value,\n\t\t\t\tand <var>rangeArg</var> as the argument."
+        },
+        {
+          "html": "Return <var>highlight</var>."
+        }
+      ]
+    }
+  ]
+}

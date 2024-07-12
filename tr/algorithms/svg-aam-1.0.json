@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "title": "SVG Accessibility API Mappings",
+    "url": "https://www.w3.org/TR/svg-aam-1.0/"
+  },
+  "algorithms": [
+    {
+      "html": "When computing an <a class=\"termref internalDFN\" href=\"https://www.w3.org/TR/svg-aam-1.0/#dfn-accessible-name\" data-link-type=\"dfn\">accessible name</a> or\n        <a class=\"termref internalDFN\" href=\"https://www.w3.org/TR/svg-aam-1.0/#dfn-accessible-description\" data-link-type=\"dfn\">accessible description</a>,\n        <a class=\"termref internalDFN\" data-lt=\"user agent\" href=\"https://www.w3.org/TR/svg-aam-1.0/#dfn-user-agent\" data-link-type=\"dfn\">user agents</a> <em class=\"rfc2119\" title=\"MUST\">MUST</em> conform\n        to the section titled\n        <a class=\"accname\" href=\"https://w3c.github.io/accname/#mapping_additional_nd_te\">Text Alternative Computation</a> of the Accessible Name and Description specification [<cite><a class=\"bibref\" href=\"https://www.w3.org/TR/svg-aam-1.0/#bib-ACCNAME-AAM\">ACCNAME-AAM</a></cite>],\n        with the following modifications for the <abbr title=\"Scalable Vector Graphics\">SVG</abbr> host language:",
+      "rationale": "replace",
+      "steps": [
+        {
+          "html": "Replace <a class=\"accname\" href=\"https://w3c.github.io/accname/#step2A\">step 2A</a> with the following:\n          <blockquote>\n            If the current node traversal is <em>not</em>\n            a result of following a <code>aria-labelledby</code> or <code>aria-describedby</code> reference,\n            and the current node is not included in the accessibility tree\n            according to the rules in\n            <a href=\"https://www.w3.org/TR/svg-aam-1.0/#exclude_elements\">Excluding Elements from the Accessibility Tree</a>\n            and <a href=\"https://www.w3.org/TR/svg-aam-1.0/#include_elements\">Including Elements in the Accessibility Tree</a>,\n            return the empty string.\n          </blockquote>"
+        },
+        {
+          "html": "Replace <a class=\"accname\" href=\"https://w3c.github.io/accname/#step2D\">step 2D</a> with the following:\n          <blockquote>\n            <p>\n              Otherwise, if performing a text alternative computation for an accessible name:\n            </p>\n            <ul>\n              <li>\n                If the current node has at least one direct child <code>title</code> element,\n                select the appropriate title\n                based on the language rules for the <abbr title=\"Scalable Vector Graphics\">SVG</abbr> specification,\n                and return the title text alternative as a flat string.\n              </li>\n              <li>\n                If the current node is a link,\n                and there was no child <code>title</code> element,\n                but it has an <code>xlink:title</code> attribute,\n                return the value of that attribute.\n              </li>\n            </ul>\n            <p>\n              If performing a text alternative computation for an accessible description:\n            </p>\n            <ul>\n              <li>\n                If the current node has at least one direct child <code>desc</code> element,\n                select the appropriate description\n                based on the language rules for the <abbr title=\"Scalable Vector Graphics\">SVG</abbr> specification,\n                and return the concatenated text content of the description.\n              </li>\n            </ul>\n          </blockquote>"
+        },
+        {
+          "html": "In <a class=\"accname\" href=\"https://w3c.github.io/accname/#step2F\">step 2F</a>,\n          modify <a class=\"accname\" href=\"https://w3c.github.io/accname/#step2F.ii\">step iii</a>\n          by replacing:\n          <blockquote>\n            <p>For each child node of the current node:</p>\n          </blockquote>\n          with\n          <blockquote>\n            <p>If the element is a text container element,\n              for each child node of the current node:\n            </p>\n          </blockquote>"
+        },
+        {
+          "html": "Replace <a class=\"accname\" href=\"https://w3c.github.io/accname/#step2H\">step 2H</a> with the following:\n          <blockquote>\n            <p>\n              Otherwise, if performing a text alternative computation for an accessible description,\n              and the current node has at least one direct child <code>title</code> element,\n              but the title elements were <em>not</em> used\n              when generating the accessible name for the node,\n              then select the appropriate title\n              based on the language rules for the <abbr title=\"Scalable Vector Graphics\">SVG</abbr> specification,\n              and return the title text content as the description.\n            </p>\n            <p>\n              Otherwise, if the current node is a link,\n              and it has an <code>xlink:title</code> attribute that was not used for the accessible name,\n              return the value of that attribute.\n            </p>\n          </blockquote>"
+        }
+      ]
+    }
+  ]
+}

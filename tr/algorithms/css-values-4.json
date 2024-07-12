@@ -1,0 +1,468 @@
+{
+  "spec": {
+    "title": "CSS Values and Units Module Level 4",
+    "url": "https://www.w3.org/TR/css-values-4/"
+  },
+  "algorithms": [
+    {
+      "name": "fetch a style resource",
+      "href": "https://www.w3.org/TR/css-values-4/#fetch-a-style-resource",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-a-style-resource\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch a style resource</dfn> from a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">url</a> or <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#url-value\" id=\"ref-for-url-value①②\">&lt;url&gt;</a> <var>urlValue</var>,\n\t\tgiven a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-1/#cssstylesheet\" id=\"ref-for-cssstylesheet\">CSSStyleSheet</a></code> <var>sheet</var>,\n\t\ta string <var>destination</var> matching a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#requestdestination\" id=\"ref-for-requestdestination\">RequestDestination</a></code>,\n\t\ta \"no-cors\" or \"cors\" <var>corsMode</var>,\n\t\tand an algorithm <var>processResponse</var> accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> and a null, failure or byte stream:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>environmentSettings</var> be <var>sheet</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>base</var> be <var>sheet</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-stylesheet-base-url\" id=\"ref-for-concept-css-style-sheet-stylesheet-base-url\">stylesheet base URL</a> if it is not null,\notherwise <var>environmentSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#api-base-url\" id=\"ref-for-api-base-url\">API base URL</a>. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/css-values-4/#biblio-cssom\" title=\"CSS Object Model (CSSOM)\">[CSSOM]</a></p>"
+        },
+        {
+          "html": "<p>Let <var>parsedUrl</var> be the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> steps\nwith <var>urlValue</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">url</a> and <var>base</var>.\nIf the algorithm returns an error, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>req</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">url</a> is <var>parsedUrl</var>,\nwhose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is <var>destination</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is <var>corsMode</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a> is <var>environmentSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> is \"same-origin\", <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-use-url-credentials-flag\" id=\"ref-for-concept-request-use-url-credentials-flag\">use-url-credentials flag</a> is set, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is <var>environmentSettings</var>,\nand whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer\">referrer</a> is <var>environmentSettings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#api-base-url\" id=\"ref-for-api-base-url①\">API base URL</a>.</p>"
+        },
+        {
+          "html": "<p>Apply any <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"url-request-modifier-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">URL request modifier steps</dfn> that apply to this request.</p>"
+        },
+        {
+          "html": "<p>If <var>req</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode①\">mode</a> is \"cors\",\nset <var>req</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer①\">referrer</a> to <var>sheet</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-location\" id=\"ref-for-concept-css-style-sheet-location\">location</a>. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/css-values-4/#biblio-cssom\" title=\"CSS Object Model (CSSOM)\">[CSSOM]</a></p>"
+        },
+        {
+          "html": "<p>If <var>sheet</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-origin-clean-flag\" id=\"ref-for-concept-css-style-sheet-origin-clean-flag\">origin-clean flag</a> is set,\nset <var>req</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-initiator-type\" id=\"ref-for-request-initiator-type\">initiator type</a> to \"css\". <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/css-values-4/#biblio-cssom\" title=\"CSS Object Model (CSSOM)\">[CSSOM]</a></p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">Fetch</a> <var>req</var>,\nwith <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response-end-of-body\" id=\"ref-for-process-response-end-of-body\">processresponseconsumebody</a> set to <var>processResponse</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "snap a length as a border width",
+      "href": "https://www.w3.org/TR/css-values-4/#snap-a-length-as-a-border-width",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"snap a length as a border width | snap as a border width\" id=\"snap-a-length-as-a-border-width\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">snap a length as a border width</dfn> given a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#length-value\" id=\"ref-for-length-value①⑨\">&lt;length&gt;</a> <var>len</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <var>len</var> is non-negative.</p>"
+        },
+        {
+          "html": "<p>If <var>len</var> is an integer number of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#device-pixel\" id=\"ref-for-device-pixel\">device pixels</a>,\ndo nothing.</p>"
+        },
+        {
+          "html": "<p>If <var>len</var> is greater than zero, but less than 1 <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#device-pixel\" id=\"ref-for-device-pixel①\">device pixel</a>,\nround <var>len</var> up to 1 <span id=\"ref-for-device-pixel②\">device pixel</span>.</p>"
+        },
+        {
+          "html": "<p>If <var>len</var> is greater than 1 <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#device-pixel\" id=\"ref-for-device-pixel③\">device pixel</a>,\nround it down to the nearest integer number of <span id=\"ref-for-device-pixel④\">device pixels</span>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When serializing the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#specified-value\" id=\"ref-for-specified-value③\">specified value</a> of a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#typedef-position\" id=\"ref-for-typedef-position⑨\">&lt;position&gt;</a>:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If only one component is specified:",
+              "html": "<ul>\n      <li data-md=\"\">\n       <p>The implied <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/css-backgrounds-3/#valdef-background-position-center\" id=\"ref-for-valdef-background-position-center\">center</a> keyword is added,\nand a 2-component value is serialized.</p>\n     </li></ul>"
+            },
+            {
+              "case": "If two components are specified:",
+              "html": "<ul>\n      <li data-md=\"\">\n       <p>Keywords are serialized as keywords.</p>\n      </li><li data-md=\"\">\n       <p><a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#typedef-length-percentage\" id=\"ref-for-typedef-length-percentage⑥\">&lt;length-percentage&gt;</a>s are serialized as <span class=\"production\" id=\"ref-for-typedef-length-percentage⑦\">&lt;length-percentage&gt;</span>s.</p>\n      </li><li data-md=\"\">\n       <p>Components are serialized horizontal first, then vertical.</p>\n     </li></ul>"
+            },
+            {
+              "case": "If four components are specified:",
+              "html": "<ul>\n      <li data-md=\"\">\n       <p>Keywords and offsets are both serialized.</p>\n      </li><li data-md=\"\">\n       <p>Components are serialized horizontal first, then vertical.</p>\n     </li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "determine the type of a calculation",
+      "href": "https://www.w3.org/TR/css-values-4/#determine-the-type-of-a-calculation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-type-of-a-calculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the type of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation③⑧\">calculation</a></dfn>: \n    <ul>\n     <li data-md=\"\">\n      <p>At a <span class=\"css\">+</span> or <span class=\"css\">-</span> sub-expression,\nattempt to <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-add-two-types\" id=\"ref-for-cssnumericvalue-add-two-types\">add the types</a> of the left and right arguments.\nIf this returns failure,\nthe entire <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation③⑨\">calculation’s</a> type is failure.\nOtherwise, the sub-expression’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type⑤\">type</a> is the returned type.</p>\n     </li><li data-md=\"\">\n      <p>At a <span class=\"css\">*</span> sub-expression, <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-multiply-two-types\" id=\"ref-for-cssnumericvalue-multiply-two-types\">multiply the types</a> of the left and right arguments.\nThe sub-expression’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type⑥\">type</a> is the returned result.</p>\n     </li><li data-md=\"\">\n      <p>At a <span class=\"css\">/</span> sub-expression,\nlet <var>left type</var> be the result of finding the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type⑦\">types</a> of its left argument,\nand <var>right type</var> be the result of finding the <span id=\"ref-for-cssnumericvalue-type⑧\">types</span> of its right argument\nand then <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-invert-a-type\" id=\"ref-for-cssnumericvalue-invert-a-type\">inverting</a> it.</p>\n      <p>The sub-expression’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type⑨\">type</a> is the result of <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-multiply-two-types\" id=\"ref-for-cssnumericvalue-multiply-two-types①\">multiplying</a> the <var>left type</var> and <var>right type</var>.</p>\n     </li><li data-md=\"\">\n      <p>Anything else is a terminal value,\nwhose <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⓪\">type</a> is determined based on its CSS type.\n(Unless otherwise specified,\nthe type’s associated <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint\">percent hint</a> is null.)</p>\n      <dl class=\"switch\">\n       <dt data-md=\"\"><a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#number-value\" id=\"ref-for-number-value④②\">&lt;number&gt;</a>\n       </dt><dt data-md=\"\"><a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#integer-value\" id=\"ref-for-integer-value①③\">&lt;integer&gt;</a>\n       </dt><dd data-md=\"\">\n        <p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①①\">type</a> is «[ ]» (empty map)</p>\n       </dd><dt data-md=\"\"><a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#length-value\" id=\"ref-for-length-value③④\">&lt;length&gt;</a>\n       </dt><dd data-md=\"\">\n        <p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①②\">type</a> is «[ \"length\" → 1 ]»</p>\n       </dd><dt data-md=\"\"><a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#angle-value\" id=\"ref-for-angle-value①⑤\">&lt;angle&gt;</a>\n       </dt><dd data-md=\"\">\n        <p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①③\">type</a> is «[ \"angle\" → 1 ]»</p>\n       </dd><dt data-md=\"\"><a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#time-value\" id=\"ref-for-time-value⑨\">&lt;time&gt;</a>\n       </dt><dd data-md=\"\">\n        <p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①④\">type</a> is «[ \"time\" → 1 ]»</p>\n       </dd><dt data-md=\"\"><a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#frequency-value\" id=\"ref-for-frequency-value⑧\">&lt;frequency&gt;</a>\n       </dt><dd data-md=\"\">\n        <p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑤\">type</a> is «[ \"frequency\" → 1 ]»</p>\n       </dd><dt data-md=\"\"><a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#resolution-value\" id=\"ref-for-resolution-value⑦\">&lt;resolution&gt;</a>\n       </dt><dd data-md=\"\">\n        <p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑥\">type</a> is «[ \"resolution\" → 1 ]»</p>\n       </dd><dt data-md=\"\"><a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-grid-2/#typedef-flex\" id=\"ref-for-typedef-flex①\" title=\"Expands to: fr\">&lt;flex&gt;</a>\n       </dt><dd data-md=\"\">\n        <p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑦\">type</a> is «[ \"flex\" → 1 ]»</p>\n       </dd><dt data-md=\"\"><a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#typedef-calc-keyword\" id=\"ref-for-typedef-calc-keyword②\">&lt;calc-keyword&gt;</a>\n       </dt><dd data-md=\"\">\n        <p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑧\">type</a> is as defined by the keyword</p>\n       </dd><dt data-md=\"\"><a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#percentage-value\" id=\"ref-for-percentage-value③②\">&lt;percentage&gt;</a>\n       </dt><dd data-md=\"\">\n        <p>If, in the context in which the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#math-function\" id=\"ref-for-math-function①⑥\">math function</a> containing this <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④⓪\">calculation</a> is placed, <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#percentage-value\" id=\"ref-for-percentage-value③③\">&lt;percentage&gt;</a>s are resolved relative to another type of value\n(such as in <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width①⓪\">width</a>, where <span class=\"production\" id=\"ref-for-percentage-value③④\">&lt;percentage&gt;</span> is resolved against a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#length-value\" id=\"ref-for-length-value③⑤\">&lt;length&gt;</a>),\nand that other type is <em>not</em> <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#number-value\" id=\"ref-for-number-value④③\">&lt;number&gt;</a>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑨\">type</a> is determined as the other type,\nbut with a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint①\">percent hint</a> set to that other type.</p>\n        <p>Otherwise,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type②⓪\">type</a> is «[ \"percent\" → 1 ]».</p>\n       </dd><dt data-md=\"\">anything else\n       </dt><dd data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④①\">calculation’s</a> type is failure.</p>\n      </dd></dl>\n    </li></ul>",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "<number>",
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①①\">type</a> is «[ ]» (empty map)</p>"
+            },
+            {
+              "case": "<integer>",
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①①\">type</a> is «[ ]» (empty map)</p>"
+            },
+            {
+              "case": "<length>",
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①②\">type</a> is «[ \"length\" → 1 ]»</p>"
+            },
+            {
+              "case": "<angle>",
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①③\">type</a> is «[ \"angle\" → 1 ]»</p>"
+            },
+            {
+              "case": "<time>",
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①④\">type</a> is «[ \"time\" → 1 ]»</p>"
+            },
+            {
+              "case": "<frequency>",
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑤\">type</a> is «[ \"frequency\" → 1 ]»</p>"
+            },
+            {
+              "case": "<resolution>",
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑥\">type</a> is «[ \"resolution\" → 1 ]»</p>"
+            },
+            {
+              "case": "<flex>",
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑦\">type</a> is «[ \"flex\" → 1 ]»</p>"
+            },
+            {
+              "case": "<calc-keyword>",
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑧\">type</a> is as defined by the keyword</p>"
+            },
+            {
+              "case": "<percentage>",
+              "html": "<p>If, in the context in which the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#math-function\" id=\"ref-for-math-function①⑥\">math function</a> containing this <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④⓪\">calculation</a> is placed, <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#percentage-value\" id=\"ref-for-percentage-value③③\">&lt;percentage&gt;</a>s are resolved relative to another type of value\n(such as in <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width①⓪\">width</a>, where <span class=\"production\" id=\"ref-for-percentage-value③④\">&lt;percentage&gt;</span> is resolved against a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#length-value\" id=\"ref-for-length-value③⑤\">&lt;length&gt;</a>),\nand that other type is <em>not</em> <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#number-value\" id=\"ref-for-number-value④③\">&lt;number&gt;</a>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑨\">type</a> is determined as the other type,\nbut with a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint①\">percent hint</a> set to that other type.</p>\n        <p>Otherwise,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type②⓪\">type</a> is «[ \"percent\" → 1 ]».</p>"
+            },
+            {
+              "case": "anything else",
+              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④①\">calculation’s</a> type is failure.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CSS/make a type consistent",
+      "href": "https://www.w3.org/TR/css-values-4/#css-make-a-type-consistent",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"CSS\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"make a type consistent|make consistent|made consistent\" id=\"css-make-a-type-consistent\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">make a type <var>base</var> consistent</dfn> with another type <var>input</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If both <var>base</var> and <var>input</var> have different non-null <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint③\">percent hints</a>,\nthey can’t be made consistent.\nReturn failure.</p>"
+        },
+        {
+          "html": "<p>If <var>base</var> has a null <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint④\">percent hint</a> set <var>base</var>’s <span id=\"ref-for-cssnumericvalue-percent-hint⑤\">percent hint</span> to <var>input</var>’s <span id=\"ref-for-cssnumericvalue-percent-hint⑥\">percent hint</span>.</p>"
+        },
+        {
+          "html": "<p>Return <var>base</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#math-function\" id=\"ref-for-math-function③④\">Math functions</a> are turned into <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree\" id=\"ref-for-calculation-tree①\">calculation trees</a> depending on the function:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "calc()",
+              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#css-internal-representation\" id=\"ref-for-css-internal-representation①\">internal representation</a> of a <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-values-4/#funcdef-calc\" id=\"ref-for-funcdef-calc①⑦\">calc()</a> function\nis the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#parse-a-calculation\" id=\"ref-for-parse-a-calculation\">parsing a calculation</a> from its argument.</p>"
+            },
+            {
+              "case": "any other math function",
+              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#css-internal-representation\" id=\"ref-for-css-internal-representation②\">internal representation</a> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree-operator-nodes\" id=\"ref-for-calculation-tree-operator-nodes\">operator node</a> with the same name as the function,\nwhose children are the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#parse-a-calculation\" id=\"ref-for-parse-a-calculation①\">parsing a calculation</a> from each of the function’s arguments,\nin the order they appear.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "parse a calculation",
+      "href": "https://www.w3.org/TR/css-values-4/#parse-a-calculation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"parse a calculation|parsing a calculation\" id=\"parse-a-calculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a calculation</dfn>,\n\t\tgiven a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④⑥\">calculation</a> <var>values</var> represented as a list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#component-value\" id=\"ref-for-component-value②\">component values</a>,\n\t\tand returning a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree\" id=\"ref-for-calculation-tree②\">calculation tree</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Discard any <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token\">&lt;whitespace-token&gt;</a>s from <var>values</var>.</p>"
+        },
+        {
+          "html": "<p>An item in <var>values</var> is an “operator”\nif it’s a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-delim-token\" id=\"ref-for-typedef-delim-token\">&lt;delim-token&gt;</a> with the value \"+\", \"-\", \"*\", or \"/\".\nOtherwise, it’s a “value”.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"parse a calculation|parsing a calculation\" id=\"parse-a-calculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a calculation</dfn>,\n\t\tgiven a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④⑥\">calculation</a> <var>values</var> represented as a list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#component-value\" id=\"ref-for-component-value②\">component values</a>,\n\t\tand returning a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree\" id=\"ref-for-calculation-tree②\">calculation tree</a>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p>For each \"/\" operator in the run,\nreplace its right-hand value item <var>rhs</var> with an Invert node containing <var>rhs</var> as its child.</p>"
+            },
+            {
+              "html": "<p>Replace the entire run with a Product node\ncontaining the value items of the run as its children.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"parse a calculation|parsing a calculation\" id=\"parse-a-calculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a calculation</dfn>,\n\t\tgiven a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④⑥\">calculation</a> <var>values</var> represented as a list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#component-value\" id=\"ref-for-component-value②\">component values</a>,\n\t\tand returning a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree\" id=\"ref-for-calculation-tree②\">calculation tree</a>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p>For each \"-\" operator item in <var>values</var>,\nreplace its right-hand value item <var>rhs</var> with a Negate node containing <var>rhs</var> as its child.</p>"
+            },
+            {
+              "html": "<p>If <var>values</var> has only one item,\nand it is a Product node\nor a parenthesized <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#simple-block\" id=\"ref-for-simple-block\">simple block</a>,\nreplace <var>values</var> with that item.</p>\n        <p>Otherwise,\nreplace <var>values</var> with a Sum node\ncontaining the value items of <var>values</var> as its children.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"parse a calculation|parsing a calculation\" id=\"parse-a-calculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a calculation</dfn>,\n\t\tgiven a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④⑥\">calculation</a> <var>values</var> represented as a list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#component-value\" id=\"ref-for-component-value②\">component values</a>,\n\t\tand returning a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree\" id=\"ref-for-calculation-tree②\">calculation tree</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>leaf</var> is a parenthesized <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#simple-block\" id=\"ref-for-simple-block①\">simple block</a>,\nreplace <var>leaf</var> with the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#parse-a-calculation\" id=\"ref-for-parse-a-calculation②\">parsing a calculation</a> from <var>leaf</var>’s contents.</p>"
+            },
+            {
+              "html": "<p>If <var>leaf</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#math-function\" id=\"ref-for-math-function③⑥\">math function</a>,\nreplace <var>leaf</var> with the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#css-internal-representation\" id=\"ref-for-css-internal-representation③\">internal representation</a> of that math function.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#simplify-a-calculation-tree\" id=\"ref-for-simplify-a-calculation-tree\">simplifying a calculation tree</a> from <var>values</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "simplify a calculation tree",
+      "href": "https://www.w3.org/TR/css-values-4/#simplify-a-calculation-tree",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"simplify\" data-lt=\"simplify a calculation tree|simplifying a calculation tree\" id=\"simplify-a-calculation-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">simplify a calculation tree</dfn> <var>root</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"simplify\" data-lt=\"simplify a calculation tree|simplifying a calculation tree\" id=\"simplify-a-calculation-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">simplify a calculation tree</dfn> <var>root</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>root</var> is a percentage that will be resolved against another value,\nand there is enough information available to resolve it,\ndo so,\nand express the resulting numeric value\nin the appropriate <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#canonical-unit\" id=\"ref-for-canonical-unit⑨\">canonical unit</a>.\nReturn the value.</p>"
+            },
+            {
+              "html": "<p>If <var>root</var> is a dimension\nthat is not expressed in its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#canonical-unit\" id=\"ref-for-canonical-unit①⓪\">canonical unit</a>,\nand there is enough information available to convert it to the <span id=\"ref-for-canonical-unit①①\">canonical unit</span>,\ndo so,\nand return the value.</p>"
+            },
+            {
+              "html": "<p>If <var>root</var> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#typedef-calc-keyword\" id=\"ref-for-typedef-calc-keyword③\">&lt;calc-keyword&gt;</a> that can be resolved,\nreturn what it resolves to, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#simplify-a-calculation-tree\" id=\"ref-for-simplify-a-calculation-tree①\">simplified</a>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, return <var>root</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"simplify\" data-lt=\"simplify a calculation tree|simplifying a calculation tree\" id=\"simplify-a-calculation-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">simplify a calculation tree</dfn> <var>root</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If there is enough information available to determine its numeric value,\nreturn its value,\nexpressed in the value’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#canonical-unit\" id=\"ref-for-canonical-unit①②\">canonical unit</a>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, return <var>root</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>At this point, <var>root</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree-operator-nodes\" id=\"ref-for-calculation-tree-operator-nodes①\">operator node</a>. <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#simplify-a-calculation-tree\" id=\"ref-for-simplify-a-calculation-tree②\">Simplify</a> all the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④⑦\">calculation</a> children of <var>root</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>root</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree-operator-nodes\" id=\"ref-for-calculation-tree-operator-nodes②\">operator node</a> that’s not one of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree-calc-operator-nodes\" id=\"ref-for-calculation-tree-calc-operator-nodes\">calc-operator nodes</a>,\nand all of its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④⑧\">calculation</a> children are numeric values\nwith enough information to compute the operation <var>root</var> represents,\nreturn the result of running <var>root</var>’s operation\nusing its children,\nexpressed in the result’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#canonical-unit\" id=\"ref-for-canonical-unit①③\">canonical unit</a>.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"simplify\" data-lt=\"simplify a calculation tree|simplifying a calculation tree\" id=\"simplify-a-calculation-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">simplify a calculation tree</dfn> <var>root</var>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> node <var>child</var> of <var>root</var>’s children:</p>\n        <p>If <var>child</var> is a numeric value\nwith enough information to compare magnitudes with another child of the same unit\n(see note in previous step),\nand there are other children of <var>root</var> that are numeric values with the same unit,\ncombine all such children\nwith the appropriate operator per <var>root</var>,\nand replace <var>child</var> with the result,\nremoving all other child nodes involved.</p>"
+            },
+            {
+              "html": "<p>If <var>root</var> has only one child,\nreturn the child.</p>\n        <p>Otherwise, return <var>root</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"simplify\" data-lt=\"simplify a calculation tree|simplifying a calculation tree\" id=\"simplify-a-calculation-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">simplify a calculation tree</dfn> <var>root</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>root</var>’s child is a numeric value,\nreturn an equivalent numeric value,\nbut with the value negated\n(0 - value).</p>"
+            },
+            {
+              "html": "<p>If <var>root</var>’s child is a Negate node,\nreturn the child’s child.</p>"
+            },
+            {
+              "html": "<p>Return <var>root</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"simplify\" data-lt=\"simplify a calculation tree|simplifying a calculation tree\" id=\"simplify-a-calculation-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">simplify a calculation tree</dfn> <var>root</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>root</var>’s child is a number\n(not a percentage or dimension)\nreturn the reciprocal of the child’s value.</p>"
+            },
+            {
+              "html": "<p>If <var>root</var>’s child is an Invert node,\nreturn the child’s child.</p>"
+            },
+            {
+              "html": "<p>Return <var>root</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"simplify\" data-lt=\"simplify a calculation tree|simplifying a calculation tree\" id=\"simplify-a-calculation-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">simplify a calculation tree</dfn> <var>root</var>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p>For each of <var>root</var>’s children\nthat are Sum nodes,\nreplace them with their children.</p>"
+            },
+            {
+              "html": "<p>For each set of <var>root</var>’s children\nthat are numeric values with identical units,\nremove those children\nand replace them with a single numeric value\ncontaining the sum of the removed nodes,\nand with the same unit.</p>\n        <p>(E.g. combine numbers, combine percentages,\ncombine px values, etc.)</p>"
+            },
+            {
+              "html": "<p>If <var>root</var> has only a single child at this point,\nreturn the child.\nOtherwise, return <var>root</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"simplify\" data-lt=\"simplify a calculation tree|simplifying a calculation tree\" id=\"simplify-a-calculation-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">simplify a calculation tree</dfn> <var>root</var>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p>For each of <var>root</var>’s children\nthat are Product nodes,\nreplace them with their children.</p>"
+            },
+            {
+              "html": "<p>If <var>root</var> has multiple children that are numbers\n(not percentages or dimensions),\nremove them and replace them with a single number\ncontaining the product of the removed nodes.</p>"
+            },
+            {
+              "html": "<p>If <var>root</var> contains only two children,\none of which is a number\n(not a percentage or dimension)\nand the other of which is a Sum\nwhose children are all numeric values,\nmultiply all of the Sum’s children by the number,\nthen return the Sum.</p>"
+            },
+            {
+              "html": "<p>If <var>root</var> contains only numeric values\nand/or Invert nodes containing numeric values,\nand <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-multiply-two-types\" id=\"ref-for-cssnumericvalue-multiply-two-types②\">multiplying the types</a> of all the children\n(noting that the type of an Invert node\nis the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-invert-a-type\" id=\"ref-for-cssnumericvalue-invert-a-type①\">inverse</a> of its child’s type)\nresults in a type that <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-match\" id=\"ref-for-cssnumericvalue-match④\">matches</a> any of the types that a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#math-function\" id=\"ref-for-math-function③⑨\">math function</a> can resolve to,\nreturn the result of multiplying all the values of the children\n(noting that the value of an Invert node\nis the reciprocal of its child’s value),\nexpressed in the result’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#canonical-unit\" id=\"ref-for-canonical-unit①④\">canonical unit</a>.</p>"
+            },
+            {
+              "html": "<p>Return <var>root</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "serialize a math function",
+      "href": "https://www.w3.org/TR/css-values-4/#serialize-a-math-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-math-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a math function</dfn> <var>fn</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the root of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree\" id=\"ref-for-calculation-tree⑤\">calculation tree</a> <var>fn</var> represents\nis a numeric value\n(number, percentage, or dimension),\nand the serialization being produced is of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②⓪\">computed value</a> or later,\nthen clamp the value to the range allowed for its context\n(if necessary),\nthen serialize the value as normal\nand return the result.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-math-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a math function</dfn> <var>fn</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>s</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> \"calc(\".</p>"
+            },
+            {
+              "html": "<p>Serialize the keyword <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-values-4/#valdef-calc-infinity\" id=\"ref-for-valdef-calc-infinity③\">infinity</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-values-4/#valdef-calc--infinity\" id=\"ref-for-valdef-calc--infinity②\">-infinity</a>, or <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-values-4/#valdef-calc-nan\" id=\"ref-for-valdef-calc-nan③\">NaN</a>,\nas appropriate to represent the value,\nand append it to <var>s</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>fn</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type②⑥\">type</a> is anything other than «[ ]»\n(empty, representing a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#number-value\" id=\"ref-for-number-value⑤④\">&lt;number&gt;</a>),\nappend \" * \" to <var>s</var>.\nCreate a numeric value\nin the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#canonical-unit\" id=\"ref-for-canonical-unit①⑤\">canonical unit</a> for <var>fn</var>’s <span id=\"ref-for-cssnumericvalue-type②⑦\">type</span> (such as <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-values-4/#px\" id=\"ref-for-px①③\">px</a> for <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#length-value\" id=\"ref-for-length-value④①\">&lt;length&gt;</a>),\nwith a value of 1.\nSerialize this numeric value\nand append it to <var>s</var>.</p>"
+            },
+            {
+              "html": "<p>Return <var>s</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree\" id=\"ref-for-calculation-tree⑥\">calculation tree’s</a> root node is a numeric value,\nor a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree-calc-operator-nodes\" id=\"ref-for-calculation-tree-calc-operator-nodes①\">calc-operator node</a>,\nlet <var>s</var> be a string initially containing \"calc(\".</p>\n      <p>Otherwise,\nlet <var>s</var> be a string initially containing the name of the root node,\nlowercased\n(such as \"sin\" or \"max\"),\nfollowed by a \"(\" (open parenthesis).</p>"
+        },
+        {
+          "html": "<p>For each child of the root node, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree\">serialize the calculation tree</a>.\nIf a result of this serialization starts with a \"(\" (open parenthesis)\nand ends with a \")\" (close parenthesis),\nremove those characters from the result. <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate\">Concatenate</a> all of the results\nusing \", \" (comma followed by space),\nthen append the result to <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Append \")\" (close parenthesis) to <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>s</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a calculation tree",
+      "href": "https://www.w3.org/TR/css-values-4/#serialize-a-calculation-tree",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"serialize a calculation tree|serialize the calculation tree|serializing a calculation tree|serializing the calculation tree\" id=\"serialize-a-calculation-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a calculation tree</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>root</var> be the root node\nof the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calculation-tree\" id=\"ref-for-calculation-tree⑦\">calculation tree</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>root</var> is a numeric value,\nor a non-<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#math-function\" id=\"ref-for-math-function④⑦\">math function</a>,\nserialize <var>root</var> per the normal rules for it\nand return the result.</p>"
+        },
+        {
+          "html": "<p>If <var>root</var> is anything but\na Sum,\nNegate,\nProduct,\nor Invert node, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#serialize-a-math-function\" id=\"ref-for-serialize-a-math-function\">serialize a math function</a> for the function corresponding to the node type,\ntreating the node’s children as the function’s comma-separated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④⑨\">calculation</a> arguments,\nand return the result.</p>"
+        },
+        {
+          "html": "<p>If <var>root</var> is a Negate node,\nlet <var>s</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> initially containing \"(-1 * \".</p>\n      <p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree①\">Serialize</a> <var>root</var>’s child,\nand append it to <var>s</var>.</p>\n      <p>Append \")\" to <var>s</var>,\nthen return it.</p>"
+        },
+        {
+          "html": "<p>If <var>root</var> is an Invert node,\nlet <var>s</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> initially containing \"(1 / \".</p>\n      <p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree②\">Serialize</a> <var>root</var>’s child,\nand append it to <var>s</var>.</p>\n      <p>Append \")\" to <var>s</var>,\nthen return it.</p>"
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"serialize a calculation tree|serialize the calculation tree|serializing a calculation tree|serializing the calculation tree\" id=\"serialize-a-calculation-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a calculation tree</dfn>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>child</var> is a Negate node,\nappend \" - \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree④\">serialize</a> the Negate’s child\nand append the result to <var>s</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>child</var> is a negative numeric value,\nappend \" - \" to <var>s</var>,\nthen serialize the negation of <var>child</var> as normal\nand append the result to <var>s</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise,\nappend \" + \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree⑤\">serialize</a> <var>child</var> and append the result to <var>s</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"serialize a calculation tree|serialize the calculation tree|serializing a calculation tree|serializing the calculation tree\" id=\"serialize-a-calculation-tree\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a calculation tree</dfn>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>child</var> is an Invert node,\nappend \" / \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree⑦\">serialize</a> the Invert’s child\nand append the result to <var>s</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise,\nappend \" * \" to <var>s</var>,\nthen <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#serialize-a-calculation-tree\" id=\"ref-for-serialize-a-calculation-tree⑧\">serialize</a> <var>child</var> and append the result to <var>s</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sort a calculation’s children",
+      "href": "https://www.w3.org/TR/css-values-4/#sort-a-calculations-children",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sort-a-calculations-children\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sort a calculation’s children</dfn> <var>nodes</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>ret</var> be an empty list.</p>"
+        },
+        {
+          "html": "<p>If <var>nodes</var> contains a number,\nremove it from <var>nodes</var> and append it to <var>ret</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>nodes</var> contains a percentage,\nremove it from <var>nodes</var> and append it to <var>ret</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>nodes</var> contains any dimensions,\nremove them from <var>nodes</var>,\nsort them by their units,\nordered <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑦\">ASCII case-insensitively</a>,\nand append them to <var>ret</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>nodes</var> still contains any items,\nappend them to <var>ret</var> in the same order.</p>"
+        },
+        {
+          "html": "<p>Return <var>ret</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

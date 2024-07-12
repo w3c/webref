@@ -1,0 +1,310 @@
+{
+  "spec": {
+    "title": "Payment Method Manifest",
+    "url": "https://www.w3.org/TR/payment-method-manifest/"
+  },
+  "algorithms": [
+    {
+      "html": "This specification integrates with the rest of the Payment Request ecosystem by modifying the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/payment-request/#dfn-paymentrequest-paymentrequest\" id=\"ref-for-dfn-paymentrequest-paymentrequest\">PaymentRequest(methodData, details, options)</a></code> constructor. It adds the following\nsteps, before the algorithm completes and returns the newly-constructed <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest\">PaymentRequest</a></code> object.\nIn what follows, let <var>request</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest①\">PaymentRequest</a></code> instance being constructed. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/payment-method-manifest/#biblio-payment-request\">[PAYMENT-REQUEST]</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>identifiers</var> be a list consisting of the first <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\" id=\"ref-for-struct-item\">item</a> of each pair in <var>request</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-serializedmethoddata\" id=\"ref-for-dfn-serializedmethoddata\">[[serializedMethodData]]</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>client</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object\">current settings object</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-manifest/#ingest-payment-method-manifests\" id=\"ref-for-ingest-payment-method-manifests\">Ingest payment method manifests</a> given <var>identifiers</var> and <var>client</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ingest payment method manifests",
+      "href": "https://www.w3.org/TR/payment-method-manifest/#ingest-payment-method-manifests",
+      "html": "Given a list of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-method-id/#dfn-payment-method-identifiers\" id=\"ref-for-dfn-payment-method-identifiers④\">payment method identifiers</a> <var>identifiers</var>, as well as an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>client</var>, the user agent may run the following steps, to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"ingest-payment-method-manifests\">ingest payment method manifests</dfn>:",
+      "rationale": "fetch",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-manifest/#fetch-payment-method-manifests\" id=\"ref-for-fetch-payment-method-manifests\">Fetch payment method manifests</a>, given <var>identifiers</var> and <var>client</var>, and wait for this to\n asynchronously complete with <var>manifestsMap</var>. If the result is failure, return.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>identifier</var> → <var>manifest</var> of <var>manifestsMap</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>parsed</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-manifest/#validate-and-parse-the-payment-method-manifest\" id=\"ref-for-validate-and-parse-the-payment-method-manifest\">validating and parsing</a> <var>manifest</var>. If this\n returns failure, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>url</var> in <var>parsed</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-manifest/#parsed-payment-method-manifest-default-applications\" id=\"ref-for-parsed-payment-method-manifest-default-applications\">default applications</a>:",
+              "rationale": "fetch",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-manifest/#fetch-the-web-app-manifest-for-a-default-payment-app\" id=\"ref-for-fetch-the-web-app-manifest-for-a-default-payment-app\">Fetch the web app manifest</a> at <var>url</var> given <var>client</var>, and wait for it to asynchronously complete with <var>webAppManifestString</var>. If\n the result is failure, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>webAppManifest</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processing-a-manifest\" id=\"ref-for-dfn-processing-a-manifest\">steps for processing a web app manifest</a> given <var>webAppManifestString</var>.</p>"
+                },
+                {
+                  "html": "<p>In a user-agent-specific way, use the resulting <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processed-manifest\" id=\"ref-for-dfn-processed-manifest①\">processed web app manifest</a> <var>webAppManifest</var> to install any applicable <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-payment-apps\" id=\"ref-for-dfn-payment-apps⑦\">payment apps</a> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-payment-method\" id=\"ref-for-dfn-payment-method①①\">payment method</a> identified by <var>identifier</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Associate the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-manifest/#parsed-payment-method-manifest-supported-origins\" id=\"ref-for-parsed-payment-method-manifest-supported-origins\">supported origins</a> to <var>identifier</var> so that the\n user agent can use it in the future to determine what third-party <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-payment-apps\" id=\"ref-for-dfn-payment-apps⑨\">payment apps</a> can be\n displayed for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-payment-method\" id=\"ref-for-dfn-payment-method①②\">payment method</a> identified by <var>identifier</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fetch payment method manifests",
+      "href": "https://www.w3.org/TR/payment-method-manifest/#fetch-payment-method-manifests",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-payment-method-manifests\">fetch payment method manifests</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string\" id=\"ref-for-javascript-string\">JavaScript strings</a> <var>supportedMethods</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a> <var>client</var>, perform the following steps.\nThis algorithm will asynchronously complete with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> (possibly empty) from <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">URLs</a> to <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequences</a>, mapping <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-method-id/#dfn-payment-method-identifiers\" id=\"ref-for-dfn-payment-method-identifiers⑤\">payment method identifiers</a> to the contents of the corresponding\nmanifest.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>identifierURLs</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>string</var> of <var>supportedMethods</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>identifierURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser\">basic URL parsing</a> <var>string</var>. If the\n result is failure, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-method-id/#dfn-validate-a-url-based-payment-method-identifier\" id=\"ref-for-dfn-validate-a-url-based-payment-method-identifier\">validating</a> <var>identifierURL</var> returns false, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Optionally, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>identifierURL</var> to <var>identifierURLs</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>manifestsMap</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①\">map</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>identifierURL</var> of <var>identifierURLs</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>identifierRequest</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method\">method</a> is `<code>HEAD</code>`, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">url</a> is <var>identifierURL</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is <var>client</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is\n \"<code>cors</code>\", <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> is \"<code>omit</code>\", and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode\">redirect mode</a> is \"<code>error</code>\".</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">Fetch</a> <var>identifierRequest</var>. To <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response\" id=\"ref-for-process-response\">process response</a> with the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>identifierResponse</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>identifierResponse</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a> or <var>identifierResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status\">ok status</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>linkHeaders</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#extract-header-list-values\" id=\"ref-for-extract-header-list-values\">extracting header list values</a> given `<code>Link</code>` and <var>identifierResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>manifestURLString</var> be null.</p>"
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>linkHeader</var> of <var>linkHeaders</var>:",
+                  "rationale": "parse",
+                  "steps": [
+                    {
+                      "html": "<p>Parse <var>linkHeader</var> according to the <code>link-value</code> production. If it cannot be\n parsed, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/payment-method-manifest/#biblio-rfc8288\">[RFC8288]</a></p>"
+                    },
+                    {
+                      "html": "<p>If the parsed header contains a parameter whose name is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive\">ASCII case-insensitive</a> match\n for the string \"<code>rel</code>\" and whose value is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①\">ASCII case-insensitive</a> match\n for the string \"<code>payment-method-manifest</code>\", then set <var>manifestURLString</var> to the\n string given by the <code>URI-Reference</code> production in the parsed header, and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>manifestURLString</var> is not null, then:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>manifestURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①\">basic URL parsing</a> <var>manifestURLString</var> with base URL given by <var>identifierResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">url</a>. If the\n result is failure, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑦\">continue</a>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>manifestURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is not \"<code>https</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑧\">continue</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>manifestRequest</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">url</a> is <var>manifestURL</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a> is <var>client</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode①\">mode</a> is \"<code>cors</code>\", <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode①\">credentials mode</a> is \"<code>omit</code>\", and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode①\">redirect mode</a> is\n \"<code>error</code>\".</p>"
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch①\">Fetch</a> <var>manifestRequest</var>. To <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response-end-of-body\" id=\"ref-for-process-response-end-of-body\">process response end-of-body</a> with the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a> <var>manifestResponse</var>:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "<p>If <var>manifestResponse</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error①\">network error</a> or <var>manifestResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①\">status</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status①\">ok status</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑨\">continue</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Let <var>body</var> be <var>manifestResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body\">body</a>.</p>"
+                        },
+                        {
+                          "html": "<p>If <var>body</var> is null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⓪\">continue</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-get-reader\" id=\"ref-for-concept-get-reader\">getting a reader</a> from <var>body</var>.</p>"
+                        },
+                        {
+                          "html": "<p>Let <var>promise</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream\" id=\"ref-for-concept-read-all-bytes-from-readablestream\">reading all bytes</a> from <var>body</var> with <var>reader</var>.</p>"
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/2001/tag/doc/promises-guide/#upon-fulfillment\" id=\"ref-for-upon-fulfillment\">Upon fulfillment</a> of <var>promise</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a> <var>bytes</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a> <var>manifestsMap</var>[<var>identifierURL</var>] to <var>bytes</var>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Once all ongoing <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch②\">fetch</a> algorithms initiated by the above steps are complete, including the\n specified <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response\" id=\"ref-for-process-response①\">process response</a> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response-end-of-body\" id=\"ref-for-process-response-end-of-body①\">process response end-of-body</a> steps, asynchronously\n complete this algorithm with <var>manifestsMap</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "validate and parse the payment method manifest",
+      "href": "https://www.w3.org/TR/payment-method-manifest/#validate-and-parse-the-payment-method-manifest",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"validate and parse the payment method manifest\" id=\"validate-and-parse-the-payment-method-manifest\">validate and parse</dfn> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②\">byte sequence</a> <var>bytes</var> purporting to contain a payment method manifest, perform the following\nsteps. The result will either be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-manifest/#parsed-payment-method-manifest\" id=\"ref-for-parsed-payment-method-manifest\">parsed payment method manifest</a>, or failure.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>parsed</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#parse-json-from-bytes\" id=\"ref-for-parse-json-from-bytes\">parsing JSON from bytes</a> given <var>bytes</var>, in\n a user-agent defined <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#realm\" id=\"ref-for-realm\">JavaScript realm</a>. If this throws an exception, return failure.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values\">Type</a>(<var>parsed</var>) is not Object, return failure.</p>"
+        },
+        {
+          "html": "<p>Let <var>defaultApps</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">ordered set</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>defaultAppsValue</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>parsed</var>, \"default_applications\").</p>"
+        },
+        {
+          "html": "If <var>defaultAppsValue</var> is not undefined:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-isarray\" id=\"ref-for-sec-isarray\">IsArray</a>(<var>defaultAppsValue</var>) is false, return failure.</p>"
+            },
+            {
+              "html": "<p>Let <var>defaultAppsList</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-createlistfromarraylike\" id=\"ref-for-sec-createlistfromarraylike\">CreateListFromArrayLike</a>(<var>defaultAppsValue</var>,\n « String »). If this throws an exception, return failure.</p>"
+            },
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> of <var>defaultAppsList</var> is 0, return failure.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>defaultAppString</var> in <var>defaultAppsList</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>defaultAppURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser②\">basic URL parsing</a> <var>defaultAppString</var>. If the result is failure, return failure.</p>"
+                },
+                {
+                  "html": "<p>If <var>defaultAppURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a> is not \"<code>https</code>\", return failure.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>defaultAppURL</var> to <var>defaultApps</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>supportedOrigins</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">ordered set</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>supportedOriginsValue</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p①\">Get</a>(<var>parsed</var>, \"supported_origins\").</p>"
+        },
+        {
+          "html": "<p>If <var>supportedOriginsValue</var> is \"<code>*</code>\", set <var>supportedOrigins</var> to \"<code>*</code>\".</p>"
+        },
+        {
+          "html": "Otherwise, if <var>supportedOriginsValue</var> is not undefined:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-isarray\" id=\"ref-for-sec-isarray①\">IsArray</a>(<var>supportedOriginsValue</var>) is false, return failure.</p>"
+            },
+            {
+              "html": "<p>Let <var>supportedOriginsList</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-createlistfromarraylike\" id=\"ref-for-sec-createlistfromarraylike①\">CreateListFromArrayLike</a>(<var>supportedOriginsValue</var>, « String »). If this throws\n an exception, return failure.</p>"
+            },
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> of <var>supportedOriginsList</var> is 0, return failure.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>supportedOriginString</var> in <var>supportedOriginsList</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>supportedOriginURL</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser③\">basic URL parsing</a> <var>supportedOriginString</var>. If the result is failure, return failure.</p>"
+                },
+                {
+                  "html": "<p>If <var>supportedOriginURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme③\">scheme</a> is not \"<code>https</code>\", return failure.</p>"
+                },
+                {
+                  "html": "<p>If <var>supportedOriginURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-username\" id=\"ref-for-concept-url-username\">username</a> or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-password\" id=\"ref-for-concept-url-password\">password</a> are not the empty string,\n return failure.</p>"
+                },
+                {
+                  "html": "<p>If <var>supportedOriginURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path\">path</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> is not 0, return failure.</p>"
+                },
+                {
+                  "html": "<p>If <var>supportedOriginURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query\">query</a> or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment\">fragment</a> are not null, return failure.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>supportedOriginURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①\">origin</a> to <var>supportedOrigins</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-manifest/#parsed-payment-method-manifest\" id=\"ref-for-parsed-payment-method-manifest①\">parsed payment method manifest</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-manifest/#parsed-payment-method-manifest-default-applications\" id=\"ref-for-parsed-payment-method-manifest-default-applications①\">default applications</a> given by <var>defaultApps</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-manifest/#parsed-payment-method-manifest-supported-origins\" id=\"ref-for-parsed-payment-method-manifest-supported-origins①\">supported origins</a> given by <var>supportedOrigins</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "fetch the web app manifest for a default payment app",
+      "href": "https://www.w3.org/TR/payment-method-manifest/#fetch-the-web-app-manifest-for-a-default-payment-app",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-the-web-app-manifest-for-a-default-payment-app\">fetch the web app manifest for a default payment app</dfn>, given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>url</var> and\nan <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object②\">environment settings object</a> <var>client</var>, perform the following steps. This algorithm will\nasynchronously complete with either a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string\">scalar value string</a> or failure.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url②\">url</a> is <var>url</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a> is <var>client</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode②\">mode</a> is \"<code>cors</code>\", <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode②\">credentials mode</a> is\n \"<code>omit</code>\", and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode②\">redirect mode</a> is \"<code>error</code>\".</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch③\">Fetch</a> <var>request</var>. To <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response-end-of-body\" id=\"ref-for-process-response-end-of-body②\">process response end-of-body</a> with the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> <var>response</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>response</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error②\">network error</a> or <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status②\">status</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status②\">ok status</a>, asynchronously complete this algorithm with failure.</p>"
+            },
+            {
+              "html": "<p>Let <var>body</var> be <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body①\">body</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>body</var> is null, asynchronously complete this algorithm with failure.</p>"
+            },
+            {
+              "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-get-reader\" id=\"ref-for-concept-get-reader①\">getting a reader</a> from <var>body</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>promise</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream\" id=\"ref-for-concept-read-all-bytes-from-readablestream①\">reading all bytes</a> from <var>body</var> with <var>reader</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/2001/tag/doc/promises-guide/#upon-fulfillment\" id=\"ref-for-upon-fulfillment①\">Upon fulfillment</a> of <var>promise</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence③\">byte sequence</a> <var>bytes</var>, asynchronously complete\n  this algorithm with the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode\" id=\"ref-for-utf-8-decode\">UTF-8 decoding</a> <var>bytes</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/2001/tag/doc/promises-guide/#upon-rejection\" id=\"ref-for-upon-rejection\">Upon rejection</a> of <var>promise</var>, asynchronously complete this algorithm with failure.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

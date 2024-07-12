@@ -1,0 +1,265 @@
+{
+  "spec": {
+    "title": "Clear Site Data",
+    "url": "https://www.w3.org/TR/clear-site-data/"
+  },
+  "algorithms": [
+    {
+      "html": "If the <a data-link-type=\"http-header\" href=\"https://www.w3.org/TR/clear-site-data/#http-headerdef-clear-site-data\" id=\"ref-for-http-headerdef-clear-site-data①①\"><code>Clear-Site-Data</code></a> header is present in an HTTP <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④\">response</a> received from the network, then data MUST be cleared before rendering the\n  response to the user. That is, after step #14 in the current <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-http-network-fetch\" id=\"ref-for-concept-http-network-fetch\">HTTP-network fetch</a> algorithm, execute the following step:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>credentials flag</var> is set, and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a> contains a header named <a data-link-type=\"http-header\" href=\"https://www.w3.org/TR/clear-site-data/#http-headerdef-clear-site-data\" id=\"ref-for-http-headerdef-clear-site-data①②\"><code>Clear-Site-Data</code></a>, then\n   execute <a href=\"https://www.w3.org/TR/clear-site-data/#clear-response\">§4.2 Clear data for response</a> on <var>response</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse response’s Clear-Site-Data header",
+      "href": "https://www.w3.org/TR/clear-site-data/#abstract-opdef-parse-responses-clear-site-data-header",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤\">response</a>, the user agent can <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"parse response\" data-lt=\"parse response’s Clear-Site-Data header\" id=\"abstract-opdef-parse-responses-clear-site-data-header\">parse <var>response</var>’s <code>Clear-Site-Data</code> header</dfn>, returning a list of types, as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>types</var> be an empty list.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#extract-header-list-values\" id=\"ref-for-extract-header-list-values\">extracting header list values</a> given <code>Clear-Site-Data</code> and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>header</var> is <code>null</code> or failure, return an empty list.</p>"
+        },
+        {
+          "html": "<p>For each <var>type</var> in <var>header</var>, execute the first matching statement, if any, switching on <var>type</var>:</p>\n        <dl>\n         <dt data-md=\"\">`<code>\"cache\"</code>`\n         </dt><dd data-md=\"\">\n          <p>Append \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-cache\" id=\"ref-for-grammardef-cache⑤\">cache</a>\" to <var>types</var>.</p>\n         </dd><dt data-md=\"\">`<code>\"cookies\"</code>`\n         </dt><dd data-md=\"\">\n          <p>Append \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-cookies\" id=\"ref-for-grammardef-cookies⑥\">cookies</a>\" to <var>types</var>.</p>\n         </dd><dt data-md=\"\">`<code>\"storage\"</code>`\n         </dt><dd data-md=\"\">\n          <p>Append \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-storage\" id=\"ref-for-grammardef-storage⑤\">storage</a>\" to <var>types</var>.</p>\n         </dd><dt data-md=\"\">`<code>\"executionContexts\"</code>`\n         </dt><dd data-md=\"\">\n          <p>Append \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-executioncontexts\" id=\"ref-for-grammardef-executioncontexts⑤\">executionContexts</a>\" to <var>types</var>.</p>\n         </dd><dt data-md=\"\">`<code>\"*\"</code>`\n         </dt><dd data-md=\"\">\n          <p>Append \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-cache\" id=\"ref-for-grammardef-cache⑥\">cache</a>\", \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-cookies\" id=\"ref-for-grammardef-cookies⑦\">cookies</a>\", \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-storage\" id=\"ref-for-grammardef-storage⑥\">storage</a>\",\n  and \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-executioncontexts\" id=\"ref-for-grammardef-executioncontexts⑥\">executionContexts</a>\" to <var>types</var>.</p>\n        </dd></dl>"
+        },
+        {
+          "html": "<p>Return <var>types</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "clear site data for response",
+      "href": "https://www.w3.org/TR/clear-site-data/#abstract-opdef-clear-site-data-for-response",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑥\">response</a> (<var>response</var>), the user agent can <dfn data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"clear site data for response\" id=\"abstract-opdef-clear-site-data-for-response\">clear site data for <var>response</var><a class=\"self-link\" href=\"https://www.w3.org/TR/clear-site-data/#abstract-opdef-clear-site-data-for-response\"></a></dfn> as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url④\">url</a> is not an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/mixed-content/#a-priori-authenticated-url\" id=\"ref-for-a-priori-authenticated-url\"><i lang=\"la\">a priori</i> authenticated\n  URL</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>types</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/clear-site-data/#abstract-opdef-parse-responses-clear-site-data-header\" id=\"ref-for-abstract-opdef-parse-responses-clear-site-data-header\">parsing <var>response</var>’s <code>Clear-Site-Data</code> header</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url⑤\">url</a>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>browsing contexts</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/clear-site-data/#abstract-opdef-prepare-to-clear-origins-data\" id=\"ref-for-abstract-opdef-prepare-to-clear-origins-data\">preparing to clear\n  data</a> for <var>origin</var> and <var>types</var>.</p>"
+        },
+        {
+          "html": "For each <var>type</var> in <var>types</var>:",
+          "rationale": "execute",
+          "steps": [
+            {
+              "html": "<p>Execute the first matching statement, if any, switching on <var>type</var>:</p>\n          <dl>\n           <dt data-md=\"\">\"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-cache\" id=\"ref-for-grammardef-cache⑦\"><code>cache</code></a>\"\n           </dt><dd data-md=\"\">\n            <p><a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/clear-site-data/#abstract-opdef-clear-cache-for-origin\" id=\"ref-for-abstract-opdef-clear-cache-for-origin\">Clear cache for <var>origin</var></a>.</p>\n           </dd><dt data-md=\"\">\"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-cookies\" id=\"ref-for-grammardef-cookies⑧\"><code>cookies</code></a>\"\n           </dt><dd data-md=\"\">\n            <p><a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/clear-site-data/#abstract-opdef-clear-cookies-for-origin\" id=\"ref-for-abstract-opdef-clear-cookies-for-origin\">Clear cookies for <var>origin</var></a>.</p>\n           </dd><dt data-md=\"\">\"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-storage\" id=\"ref-for-grammardef-storage⑦\"><code>storage</code></a>\"\n           </dt><dd data-md=\"\">\n            <p><a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/clear-site-data/#abstract-opdef-clear-dom-accessible-storage-for-origin\" id=\"ref-for-abstract-opdef-clear-dom-accessible-storage-for-origin\">Clear DOM-accessible storage for <var>origin</var></a>.</p>\n          </dd></dl>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>types</var> contains \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-executioncontexts\" id=\"ref-for-grammardef-executioncontexts⑦\">executionContexts</a>\", then <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/clear-site-data/#abstract-opdef-reload-browsing-contexts\" id=\"ref-for-abstract-opdef-reload-browsing-contexts\">Reload <var>browsing contexts</var></a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "prepare to clear origin’s data",
+      "href": "https://www.w3.org/TR/clear-site-data/#abstract-opdef-prepare-to-clear-origins-data",
+      "html": "Given an <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6454#section-3.2\" id=\"ref-for-section-3.2④\">origin</a> (<var>origin</var>) and a list of types (<var>types</var>), the user agent can <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"prepare\" id=\"abstract-opdef-prepare-to-clear-origins-data\">prepare to clear <var>origin</var>’s data</dfn> by executing\n  the following steps. The algorithm returns a list of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\" id=\"ref-for-browsing-context\">browsing contexts</a> which have been\n  sandboxed in order to prevent them from recreating cleared data from in-memory JavaScript\n  variables.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>sandboxed</var> be an empty list.</p>"
+        },
+        {
+          "html": "<p>If <var>types</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/clear-site-data/#grammardef-executioncontexts\" id=\"ref-for-grammardef-executioncontexts⑧\"><code>executionContexts</code></a>\", return <var>sandboxed</var>.</p>"
+        },
+        {
+          "html": "For each <var>context</var> in the user agent’s set of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\" id=\"ref-for-browsing-context①\">browsing contexts</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>document</var> be <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\" id=\"ref-for-active-document\">active document</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a> is not <var>origin</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#parse-a-sandboxing-directive\" id=\"ref-for-parse-a-sandboxing-directive\">Parse a sandboxing directive</a> using the empty string as the input, and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#active-sandboxing-flag-set\" id=\"ref-for-active-sandboxing-flag-set\">active sandboxing flag set</a> as the output.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>context</var> to <var>sandboxed</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>sandboxed</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "reload browsing contexts",
+      "href": "https://www.w3.org/TR/clear-site-data/#abstract-opdef-reload-browsing-contexts",
+      "html": "Given a list of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\" id=\"ref-for-browsing-context②\">browsing contexts</a> (<var>contexts</var>), the user agent can <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"reload\" id=\"abstract-opdef-reload-browsing-contexts\">reload browsing contexts</dfn> as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "For each <var>context</var> in <var>contexts</var>:",
+          "rationale": "execute",
+          "steps": [
+            {
+              "html": "<p>Execute <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\" id=\"ref-for-active-document①\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/history.html#location\" id=\"ref-for-location\">Location</a></code> object’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/history.html#dom-location-reload\" id=\"ref-for-dom-location-reload\">reload()</a></code>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clear cache for origin",
+      "href": "https://www.w3.org/TR/clear-site-data/#abstract-opdef-clear-cache-for-origin",
+      "html": "Given an <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6454#section-3.2\" id=\"ref-for-section-3.2⑤\">origin</a> (<var>origin</var>), the user agent can <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"clear cache\" id=\"abstract-opdef-clear-cache-for-origin\">clear cache for <var>origin</var></dfn> as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>host</var> be <var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin-host\" id=\"ref-for-concept-origin-host\">host</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>cache list</var> be the set of entries from the <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc7234#section-2\" id=\"ref-for-section-2①\">network cache</a> whose <code>target URI</code> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host\">host</a> is identical to <var>host</var>.</p>"
+        },
+        {
+          "html": "For each <var>entry</var> in <var>cache list</var>:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<p>Remove <var>entry</var> from the <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc7234#section-2\" id=\"ref-for-section-2②\">network cache</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If a user agent implements caches beyond a pure <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc7234#section-2\" id=\"ref-for-section-2③\">network cache</a>, it MUST remove all\n  entries from those caches which match <var>origin</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "clear cookies for origin",
+      "href": "https://www.w3.org/TR/clear-site-data/#abstract-opdef-clear-cookies-for-origin",
+      "html": "Given an <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6454#section-3.2\" id=\"ref-for-section-3.2⑥\">origin</a> (<var>origin</var>), the user agent can <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"clear cookies\" id=\"abstract-opdef-clear-cookies-for-origin\">clear cookies for <var>origin</var></dfn> as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>registered</var> be the <a data-link-type=\"dfn\" href=\"https://publicsuffix.org/list/#\">registered domain</a> of <var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin-host\" id=\"ref-for-concept-origin-host①\">host</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>cookie list</var> be the set of cookies from the <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6265#section-5.3\" id=\"ref-for-section-5.3①\">cookie\n  store</a> whose <code>domain</code> attribute is a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6265#section-5.1.3\" id=\"ref-for-section-5.1.3\">domain-match</a> with <var>registered</var>.</p>"
+        },
+        {
+          "html": "For each <var>cookie</var> in <var>cookie list</var>:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<p>Remove <var>cookie</var> from the <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6265#section-5.3\" id=\"ref-for-section-5.3②\">cookie store</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If the user agent supports other forms of cookie-like storage, these MUST also be cleared\n  for <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6454#section-3.2\" id=\"ref-for-section-3.2⑦\">origins</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin-host\" id=\"ref-for-concept-origin-host②\">host</a>'s <a data-link-type=\"dfn\" href=\"https://publicsuffix.org/list/#\">registered domain</a> is <var>registered</var>.</p>"
+        },
+        {
+          "html": "<p>Clear any Channel IDs <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/clear-site-data/#biblio-channelid\">[CHANNELID]</a> and bound tokens <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/clear-site-data/#biblio-tokbind\">[TOKBIND]</a> associated with <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6454#section-3.2\" id=\"ref-for-section-3.2⑧\">origins</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin-host\" id=\"ref-for-concept-origin-host③\">host</a>'s <a data-link-type=\"dfn\" href=\"https://publicsuffix.org/list/#\">registered domain</a> is <var>registered</var>.</p>"
+        },
+        {
+          "html": "<p>Clear <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#authentication-entry\" id=\"ref-for-authentication-entry\">authentication entries</a> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#proxy-authentication-entry\" id=\"ref-for-proxy-authentication-entry\">proxy-authentication entries</a> associated with <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6454#section-3.2\" id=\"ref-for-section-3.2⑨\">origins</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin-host\" id=\"ref-for-concept-origin-host④\">host</a>'s <a data-link-type=\"dfn\" href=\"https://publicsuffix.org/list/#\">registered domain</a> is <var>registered</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "clear DOM-accessible storage for origin",
+      "href": "https://www.w3.org/TR/clear-site-data/#abstract-opdef-clear-dom-accessible-storage-for-origin",
+      "html": "Given an <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6454#section-3.2\" id=\"ref-for-section-3.2①⓪\">origin</a> (<var>origin</var>), the user agent can <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"clear storage\" id=\"abstract-opdef-clear-dom-accessible-storage-for-origin\">clear DOM-accessible storage for <var>origin</var></dfn> as\n  follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "For each <var>area</var> in the user agent’s set of <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://html.spec.whatwg.org/multipage/webstorage.html#dom-localstorage\" id=\"ref-for-dom-localstorage②\">local storage\n  areas</a> <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/clear-site-data/#biblio-html\">[HTML]</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>area</var>’s <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6454#section-3.2\" id=\"ref-for-section-3.2①①\">origin</a> is <var>origin</var>:",
+              "rationale": "execute",
+              "steps": [
+                {
+                  "html": "<p>Execute <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-clear\" id=\"ref-for-dom-storage-clear\">clear()</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/webstorage.html#storage-2\" id=\"ref-for-storage-2\">Storage</a></code> object associated\n  with <var>area</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "For each <var>area</var> in the user agent’s set of <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://html.spec.whatwg.org/multipage/webstorage.html#dom-sessionstorage\" id=\"ref-for-dom-sessionstorage②\">session storage\n  areas</a> <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/clear-site-data/#biblio-html\">[HTML]</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>area</var>’s <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6454#section-3.2\" id=\"ref-for-section-3.2①②\">origin</a> is <var>origin</var>:",
+              "rationale": "execute",
+              "steps": [
+                {
+                  "html": "<p>Execute <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-clear\" id=\"ref-for-dom-storage-clear①\">clear()</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/webstorage.html#storage-2\" id=\"ref-for-storage-2①\">Storage</a></code> object associated\n  with <var>area</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "For each <var>database</var> in the set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#database\" id=\"ref-for-database\">databases</a> for <var>origin</var> <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/clear-site-data/#biblio-indexeddb\">[INDEXEDDB]</a>:",
+          "rationale": "delete",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/IndexedDB/#delete-a-database\" id=\"ref-for-delete-a-database\">Delete</a> <var>database</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "For each <var>registration</var> in the user agent’s set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration\" id=\"ref-for-dfn-service-worker-registration①\">service worker registrations</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-url\" id=\"ref-for-dfn-scope-url\">scope URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①\">origin</a> is <var>origin</var>:",
+              "rationale": "execute",
+              "steps": [
+                {
+                  "html": "<p>Execute <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-unregister\" id=\"ref-for-dom-serviceworkerregistration-unregister\">unregister()</a></code> on <var>registration</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "For each <var>appcache</var> in the user agent’s set of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/offline.html#application-cache\" id=\"ref-for-application-cache\">application caches</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>appcache</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/offline.html#application-cache-group\" id=\"ref-for-application-cache-group\">application cache group</a> is identified by an URL whose <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin②\">origin</a> is <var>origin</var>:",
+              "rationale": "discard",
+              "steps": [
+                {
+                  "html": "<p>Discard <var>appcache</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>For any other script-accessible storage mechanism, the user agent MUST\n  delete any data associated with this origin. This includes (but is not\n  limited to) the following:</p>",
+          "ignored": [
+            "An origin’s WebSQL databases [WEBDATABASE]. An origin’s filesystems [file-system-api] Plugin data (e.g. Flash via NPP_ClearSiteData),"
+          ]
+        }
+      ]
+    }
+  ]
+}

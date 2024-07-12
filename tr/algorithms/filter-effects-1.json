@@ -1,0 +1,150 @@
+{
+  "spec": {
+    "title": "Filter Effects Module Level 1",
+    "url": "https://www.w3.org/TR/filter-effects-1/"
+  },
+  "algorithms": [
+    {
+      "html": "For interpolation of values in <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/filter-effects-1/#typedef-filter-function\" id=\"ref-for-typedef-filter-function④\">&lt;filter-function&gt;</a>s, the steps corresponding to the first matching condition in the following list must be run:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "<blur()>",
+              "html": "<p>Interpolate values as length <a href=\"https://drafts.csswg.org/web-animations-1/#by-computed-value\">by computed value</a>.</p>"
+            },
+            {
+              "case": "<brightness()>",
+              "html": "<p>Convert percentage values to numbers with 0% being relative to 0 and 100% relative to 1. Interpolate values as number <a href=\"https://drafts.csswg.org/web-animations-1/#by-computed-value\">by computed value</a> .</p>"
+            },
+            {
+              "case": "<contrast()>",
+              "html": "<p>Convert percentage values to numbers with 0% being relative to 0 and 100% relative to 1. Interpolate values as number <a href=\"https://drafts.csswg.org/web-animations-1/#by-computed-value\">by computed value</a> .</p>"
+            },
+            {
+              "case": "<grayscale()>",
+              "html": "<p>Convert percentage values to numbers with 0% being relative to 0 and 100% relative to 1. Interpolate values as number <a href=\"https://drafts.csswg.org/web-animations-1/#by-computed-value\">by computed value</a> .</p>"
+            },
+            {
+              "case": "<invert()>",
+              "html": "<p>Convert percentage values to numbers with 0% being relative to 0 and 100% relative to 1. Interpolate values as number <a href=\"https://drafts.csswg.org/web-animations-1/#by-computed-value\">by computed value</a> .</p>"
+            },
+            {
+              "case": "<opacity()>",
+              "html": "<p>Convert percentage values to numbers with 0% being relative to 0 and 100% relative to 1. Interpolate values as number <a href=\"https://drafts.csswg.org/web-animations-1/#by-computed-value\">by computed value</a> .</p>"
+            },
+            {
+              "case": "<saturate()>",
+              "html": "<p>Convert percentage values to numbers with 0% being relative to 0 and 100% relative to 1. Interpolate values as number <a href=\"https://drafts.csswg.org/web-animations-1/#by-computed-value\">by computed value</a> .</p>"
+            },
+            {
+              "case": "<sepia()>",
+              "html": "<p>Convert percentage values to numbers with 0% being relative to 0 and 100% relative to 1. Interpolate values as number <a href=\"https://drafts.csswg.org/web-animations-1/#by-computed-value\">by computed value</a> .</p>"
+            },
+            {
+              "case": "<hue-rotate()>",
+              "html": "<p>Interpolate values as number <a href=\"https://drafts.csswg.org/web-animations-1/#by-computed-value\">by computed value</a>.</p>"
+            },
+            {
+              "case": "<drop-shadow()>",
+              "html": "<p>Interpolate values as shadow list as <a href=\"https://drafts.csswg.org/web-animations-1/#repeatable-list\">repeatable list</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "feColorMatrix/values",
+      "href": "https://www.w3.org/TR/filter-effects-1/#element-attrdef-fecolormatrix-values",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://svgwg.org/svg2-draft/types.html#TermInitialValue\" id=\"ref-for-TermInitialValue②③\">initial value</a> for <a data-link-type=\"element-attr\" href=\"https://www.w3.org/TR/filter-effects-1/#element-attrdef-fecolormatrix-values\" id=\"ref-for-element-attrdef-fecolormatrix-values⑥\">values</a>",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "if type=\"matrix\"",
+              "html": "<p>defaults to the identity matrix</p>"
+            },
+            {
+              "case": "if type=\"saturate\"",
+              "html": "<p>defaults to the value <span class=\"css\">1</span></p>"
+            },
+            {
+              "case": "if type=\"hueRotate\"",
+              "html": "<p>defaults to the value <span class=\"css\">0</span> which results in the identity matrix.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The above divided into steps:",
+      "rationale": "take",
+      "steps": [
+        {
+          "html": "<p>Take the alpha channel of the input to the <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-fedropshadow\" id=\"ref-for-elementdef-fedropshadow④\">feDropShadow</a> filter primitive and the <a data-link-type=\"element-attr\" href=\"https://www.w3.org/TR/filter-effects-1/#element-attrdef-fedropshadow-stddeviation\" id=\"ref-for-element-attrdef-fedropshadow-stddeviation①\">stdDeviation</a> on the <span id=\"ref-for-elementdef-fedropshadow⑤\">feDropShadow</span> and do processing as if the following <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-fegaussianblur\" id=\"ref-for-elementdef-fegaussianblur⑧\">feGaussianBlur</a> was applied:</p>\n<pre><code class=\"highlight\"><c- p=\"\">&lt;</c-><c- f=\"\">feGaussianBlur</c-> <c- e=\"\">in</c-><c- o=\"\">=</c-><c- s=\"\">\"</c-><b><c- s=\"\">alpha-channel-of-feDropShadow-in</c-></b><c- s=\"\">\"</c-> <c- e=\"\">stdDeviation</c-><c- o=\"\">=</c-><c- s=\"\">\"</c-><b><c- s=\"\">stdDeviation-of-feDropShadow</c-></b><c- s=\"\">\"</c-><c- p=\"\">/&gt;</c->\n</code></pre>"
+        },
+        {
+          "html": "<p>Offset the result of step 1 by <a data-link-type=\"element-attr\" href=\"https://www.w3.org/TR/filter-effects-1/#element-attrdef-fedropshadow-dx\" id=\"ref-for-element-attrdef-fedropshadow-dx①\">dx</a> and <a data-link-type=\"element-attr\" href=\"https://www.w3.org/TR/filter-effects-1/#element-attrdef-fedropshadow-dy\" id=\"ref-for-element-attrdef-fedropshadow-dy①\">dy</a> as specified on the <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-fedropshadow\" id=\"ref-for-elementdef-fedropshadow⑥\">feDropShadow</a> element, equivalent to applying an <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-feoffset\" id=\"ref-for-elementdef-feoffset⑦\">feOffset</a> with these parameters:</p>\n<pre><code class=\"highlight\"><c- p=\"\">&lt;</c-><c- f=\"\">feOffset</c-> <c- e=\"\">dx</c-><c- o=\"\">=</c-><c- s=\"\">\"</c-><b><c- s=\"\">dx-of-feDropShadow</c-></b><c- s=\"\">\"</c-> <c- e=\"\">dy</c-><c- o=\"\">=</c-><c- s=\"\">\"</c-><b><c- s=\"\">dy-of-feDropShadow</c-></b><c- s=\"\">\"</c-> <c- e=\"\">result</c-><c- o=\"\">=</c-><c- s=\"\">\"offsetblur\"</c-><c- p=\"\">/&gt;</c->\n</code></pre>"
+        },
+        {
+          "html": "<p>Do processing as if an <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-feflood\" id=\"ref-for-elementdef-feflood④\">feFlood</a> element with <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/filter-effects-1/#propdef-flood-color\" id=\"ref-for-propdef-flood-color①⓪\">flood-color</a> and <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/filter-effects-1/#propdef-flood-opacity\" id=\"ref-for-propdef-flood-opacity①①\">flood-opacity</a> as specified on the <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-fedropshadow\" id=\"ref-for-elementdef-fedropshadow⑦\">feDropShadow</a> was applied:</p>\n<pre><code class=\"highlight\"><c- p=\"\">&lt;</c-><c- f=\"\">feFlood</c-> <c- e=\"\">flood-color</c-><c- o=\"\">=</c-><c- s=\"\">\"</c-><b><c- s=\"\">flood-color-of-feDropShadow</c-></b><c- s=\"\">\"</c-> <c- e=\"\">flood-opacity</c-><c- o=\"\">=</c-><c- s=\"\">\"</c-><b><c- s=\"\">flood-opacity-of-feDropShadow</c-></b><c- s=\"\">\"</c-><c- p=\"\">/&gt;</c->\n</code></pre>"
+        },
+        {
+          "html": "<p>Composite the result of the <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-feflood\" id=\"ref-for-elementdef-feflood⑤\">feFlood</a> in step 3 with the result of the <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-feoffset\" id=\"ref-for-elementdef-feoffset⑧\">feOffset</a> in step 2 as if an <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-fecomposite\" id=\"ref-for-elementdef-fecomposite⑨\">feComposite</a> filter primitive with <code>operator=\"in\"</code> was applied:</p>\n<pre><code class=\"highlight\"><c- p=\"\">&lt;</c-><c- f=\"\">feComposite</c-> <c- e=\"\">in2</c-><c- o=\"\">=</c-><c- s=\"\">\"offsetblur\"</c-> <c- e=\"\">operator</c-><c- o=\"\">=</c-><c- s=\"\">\"in\"</c-><c- p=\"\">/&gt;</c->\n</code></pre>"
+        },
+        {
+          "html": "<p>Finally merge the result of the previous step, doing processing as if the following <a data-link-type=\"element\" href=\"https://www.w3.org/TR/filter-effects-1/#elementdef-femerge\" id=\"ref-for-elementdef-femerge⑤\">feMerge</a> was performed:</p>\n<pre><code class=\"highlight\"><c- p=\"\">&lt;</c-><c- f=\"\">feMerge</c-><c- p=\"\">&gt;</c->\n  <c- p=\"\">&lt;</c-><c- f=\"\">feMergeNode</c-><c- p=\"\">/&gt;</c->\n  <c- p=\"\">&lt;</c-><c- f=\"\">feMergeNode</c-> <c- e=\"\">in</c-><c- o=\"\">=</c-><c- s=\"\">\"</c-><b><c- s=\"\">in-of-feDropShadow</c-></b><c- s=\"\">\"</c-><c- p=\"\">/&gt;</c->\n<c- p=\"\">&lt;/</c-><c- f=\"\">feMerge</c-><c- p=\"\">&gt;</c->\n</code></pre>"
+        }
+      ]
+    },
+    {
+      "html": "For interpolation between one filter and a second, the steps corresponding to the first matching condition in the following list must be run:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If both filters have a <filter-value-list> of same length without <url> and for each <filter-function> for which there is a corresponding item in each list",
+              "html": "Interpolate each <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/filter-effects-1/#typedef-filter-function\" id=\"ref-for-typedef-filter-function⑦\">&lt;filter-function&gt;</a> pair following the rules in section <a href=\"https://www.w3.org/TR/filter-effects-1/#interpolation-of-filter-functions\">Interpolation of Filter Functions</a>."
+            },
+            {
+              "case": "If both filters have a <filter-value-list> of different length without <url> and for each <filter-function> for which there is a corresponding item in each list",
+              "html": "",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Append the missing equivalent <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/filter-effects-1/#typedef-filter-function\" id=\"ref-for-typedef-filter-function⑨\">&lt;filter-function&gt;</a>s from the longer list to the end of the shorter list. The new added <span class=\"production\" id=\"ref-for-typedef-filter-function①⓪\">&lt;filter-function&gt;</span>s must be initialized to their initial values for interpolation."
+                },
+                {
+                  "html": "Interpolate each <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/filter-effects-1/#typedef-filter-function\" id=\"ref-for-typedef-filter-function①①\">&lt;filter-function&gt;</a> pair following the rules in section <a href=\"https://www.w3.org/TR/filter-effects-1/#interpolation-of-filter-functions\">Interpolation of Filter Functions</a>."
+                }
+              ]
+            },
+            {
+              "case": "If one filter is none and the other is a <filter-value-list> without <url>",
+              "html": "",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Replace <span class=\"css\">none</span> with the corresponding <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/filter-effects-1/#typedef-filter-value-list\" id=\"ref-for-typedef-filter-value-list⑥\">&lt;filter-value-list&gt;</a> of the other filter. The new <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/filter-effects-1/#typedef-filter-function\" id=\"ref-for-typedef-filter-function①②\">&lt;filter-function&gt;</a>s must be initialized to their initial values for interpolation."
+                },
+                {
+                  "html": "Interpolate each <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/filter-effects-1/#typedef-filter-function\" id=\"ref-for-typedef-filter-function①③\">&lt;filter-function&gt;</a> pair following the rules in section <a href=\"https://www.w3.org/TR/filter-effects-1/#interpolation-of-filter-functions\">Interpolation of Filter Functions</a>."
+                }
+              ]
+            },
+            {
+              "case": "Otherwise",
+              "html": "Use discrete interpolation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

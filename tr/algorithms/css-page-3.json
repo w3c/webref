@@ -1,0 +1,113 @@
+{
+  "spec": {
+    "title": "CSS Paged Media Module Level 3",
+    "url": "https://www.w3.org/TR/css-page-3/"
+  },
+  "algorithms": [
+    {
+      "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-page-3/#flex-fit\"></a> If A and C both have 'width: auto', distribute the space to each box as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the sum of the outer <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#max-content-width\" id=\"ref-for-max-content-width①\">max-content widths</a> is less than the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#available-width\" id=\"ref-for-available-width③\">available width</a>,\n\t\tcall that difference the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"flex-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">flex space</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>.\n\t\tCalculate each box’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"flex-factor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">flex factor</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> as proportional to\n\t\tits outer <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#max-content-width\" id=\"ref-for-max-content-width②\">max-content width</a>,\n\t\tand set its used outer width to: <code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#max-content-width\" id=\"ref-for-max-content-width③\">max-content width</a> + <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#flex-space\" id=\"ref-for-flex-space\">flex space</a> × <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#flex-factor\" id=\"ref-for-flex-factor\">flex factor</a> ÷ ∑<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#flex-factor\" id=\"ref-for-flex-factor①\">flex factors</a></code>"
+        },
+        {
+          "html": "Otherwise if the sum of the outer <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#min-content-width\" id=\"ref-for-min-content-width①\">min-content widths</a> is less than the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#available-width\" id=\"ref-for-available-width④\">available width</a>,\n\t\tcall that difference the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#flex-space\" id=\"ref-for-flex-space①\">flex space</a> calculate each box’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#flex-factor\" id=\"ref-for-flex-factor②\">flex factor</a> as proportional to\n\t\tits <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#max-content-width\" id=\"ref-for-max-content-width④\">max-content width</a> minus <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#min-content-width\" id=\"ref-for-min-content-width②\">min-content width</a>,\n\t\tand set its used outer width to: <code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#min-content-width\" id=\"ref-for-min-content-width③\">min-content width</a> + <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#flex-space\" id=\"ref-for-flex-space②\">flex space</a> × <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#flex-factor\" id=\"ref-for-flex-factor③\">flex factor</a> ÷ ∑<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#flex-factor\" id=\"ref-for-flex-factor④\">flex factors</a></code>"
+        },
+        {
+          "html": "Otherwise,\n\t\tcalculate its outer size as in the previous case,\n\t\tbut set each box’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#flex-factor\" id=\"ref-for-flex-factor⑤\">flex factor</a> as proportional to\n\t\tits outer <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#min-content-width\" id=\"ref-for-min-content-width④\">min-content width</a>."
+        }
+      ]
+    },
+    {
+      "html": "If the middle box (B) is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#generated\" id=\"ref-for-generated②\">generated</a>,\n\tdetermine the <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto③\">auto</a> widths of A, B, and C as follows:",
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "First, resolve any <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto④\">auto</a> width of the middle box (B):\n\t\t\tAssume there are two boxes, B and AC,\n\t\t\twhere each of AC’s dimensions is double the maximum of A and C.\n\t\t\t(This preserves B’s centering.)\n\t\t\tDistribute the space to these two boxes (B and the imaginary AC)\n\t\t\tas described for A and C <a href=\"https://www.w3.org/TR/css-page-3/#flex-fit\">above</a>."
+        },
+        {
+          "html": "Then, resolve any <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto⑤\">auto</a> widths of the side boxes (A and C)\n\t\t\tby setting that box’s outer width to <code>(<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#available-width\" id=\"ref-for-available-width⑤\">available width</a> − used <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#outer-width\" id=\"ref-for-outer-width④\">outer width</a>s of B) ÷ 2</code>"
+        }
+      ]
+    },
+    {
+      "html": "More precisely:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The tentative used widths are calculated\n\t\t(without <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-width\" id=\"ref-for-propdef-min-width⑤\">min-width</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-width\" id=\"ref-for-propdef-max-width③\">max-width</a>) following the rules under <a href=\"https://www.w3.org/TR/css-page-3/#variable-auto-sizing\">§ 5.3.2.2 Resolving auto widths</a>."
+        },
+        {
+          "html": "If the tentative used width of any of the three boxes\n\t\tis greater than <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-width\" id=\"ref-for-propdef-max-width④\">max-width</a>, the rules above are applied again,\n\t\tbut this time using the computed value of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-width\" id=\"ref-for-propdef-max-width⑤\">max-width</a> as the computed value for <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width④\">width</a>."
+        },
+        {
+          "html": "If the resulting width of any of the three boxes\n\t\tis smaller than <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-width\" id=\"ref-for-propdef-min-width⑥\">min-width</a>, the rules above are applied again,\n\t\tbut this time using the value of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-width\" id=\"ref-for-propdef-min-width⑦\">min-width</a> as the computed value for <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width⑤\">width</a>."
+        }
+      ]
+    },
+    {
+      "html": "The rules below are used to calculate the used values of each <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-page-3/#at-ruledef-top-left-corner\" id=\"ref-for-at-ruledef-top-left-corner③\">@top-left-corner</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-page-3/#at-ruledef-top-left\" id=\"ref-for-at-ruledef-top-left⑤\">@top-left</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-page-3/#at-ruledef-top-center\" id=\"ref-for-at-ruledef-top-center④\">@top-center</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-page-3/#at-ruledef-top-right\" id=\"ref-for-at-ruledef-top-right④\">@top-right</a>, and <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-page-3/#at-ruledef-top-right-corner\" id=\"ref-for-at-ruledef-top-right-corner②\">@top-right-corner</a> page-margin box’s <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height①\">height</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top\">margin-top</a>, and <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom\">margin-bottom</a> properties:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The following constraint must hold among the used values of the margin\n\t\tbox’s properties: \n     <p><a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top①\">margin-top</a> + <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top-width\" id=\"ref-for-propdef-border-top-width\">border-top-width</a> + <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-padding-top\" id=\"ref-for-propdef-padding-top\">padding-top</a> + <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height②\">height</a> + <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-padding-bottom\" id=\"ref-for-propdef-padding-bottom\">padding-bottom</a> + <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom-width\" id=\"ref-for-propdef-border-bottom-width\">border-bottom-width</a> + <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom①\">margin-bottom</a> = top page margin</p>"
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top-width\" id=\"ref-for-propdef-border-top-width①\">border-top-width</a> + <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-padding-top\" id=\"ref-for-propdef-padding-top①\">padding-top</a> + <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height③\">height</a> (if it is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto⑥\">auto</a>) + <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-padding-bottom\" id=\"ref-for-propdef-padding-bottom①\">padding-bottom</a> + <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom-width\" id=\"ref-for-propdef-border-bottom-width①\">border-bottom-width</a>,\n\t\tplus <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top②\">margin-top</a> and/or <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom②\">margin-bottom</a> if not <span class=\"css\">auto</span>,\n\t\tis larger than the height of the top page margin,\n\t\tthen any <span class=\"css\">auto</span> values for <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top③\">margin-top</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom③\">margin-bottom</a> are,\n\t\tfor the following rules,\n\t\ttreated as zero."
+        },
+        {
+          "html": "If at this point all of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height④\">height</a>, <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top④\">margin-top</a>, and <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom④\">margin-bottom</a> have a computed value other than <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto⑦\">auto</a>, the values are said to be\n\t\t\"over-constrained\". In this case, the specified value of <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top⑤\">margin-top</a> is\n\t\ttreated as <span class=\"css\">auto</span>."
+        },
+        {
+          "html": "If there is now exactly one value specified as <span class=\"css\">auto</span>, its used value\n\t\tfollows from the equality."
+        },
+        {
+          "html": "If <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height⑤\">height</a> is set to <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-sizing-3/#valdef-width-auto\" id=\"ref-for-valdef-width-auto⑧\">auto</a>, any other <span class=\"css\">auto</span> values become <span class=\"css\">0</span> and <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-sizing-3/#propdef-height\" id=\"ref-for-propdef-height⑥\">height</a> follows from the resulting equality"
+        },
+        {
+          "html": "If both <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-top\" id=\"ref-for-propdef-margin-top⑥\">margin-top</a> and <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-box-4/#propdef-margin-bottom\" id=\"ref-for-propdef-margin-bottom⑤\">margin-bottom</a> are <span class=\"css\">auto</span>,\n\t\ttheir used values are equal.\n\t\tThis vertically centers the page-margin box content\n\t\twithin the top page margin."
+        }
+      ]
+    },
+    {
+      "html": "If a page box does not match the target page sheet dimensions, the user agent\n\tshould do one of the following (in order of preference):",
+      "rationale": "render",
+      "steps": [
+        {
+          "html": "Render the page box at the indicated size on a larger page sheet."
+        },
+        {
+          "html": "Rotate the page box 90° if this will make the page box fit the page sheet."
+        },
+        {
+          "html": "Scale the page box to fit the page sheet. (The aspect ratio of the page box\n\t\tshould be preserved.)"
+        },
+        {
+          "html": "Graphically \"slice\" the page box onto multiple page sheets."
+        },
+        {
+          "html": "Clip overflowed content (least preferred)."
+        }
+      ]
+    },
+    {
+      "html": "The <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-page-3/#propdef-page\" id=\"ref-for-propdef-page⑦\">page</a> property works as follows:",
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "First, any <span class=\"css\">auto</span> values are resolved against non-<span class=\"css\">auto</span> ancestors\n\t\t\t(as specified above)."
+        },
+        {
+          "html": "Next,\n\t\t\ta <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"start-page-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-page-3/#propdef-page\" id=\"ref-for-propdef-page⑧\">page</a> value</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> and <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"end-page-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">end <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-page-3/#propdef-page\" id=\"ref-for-propdef-page⑨\">page</a> value</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> is determined for each box\n\t\t\tas the value (if any) propagated from\n\t\t\tits first or last child box (respectively),\n\t\t\telse the used value on the box itself.\n\t\t\tA child propagates its own <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#start-page-value\" id=\"ref-for-start-page-value\">start</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#end-page-value\" id=\"ref-for-end-page-value\">end page value</a> if and only if the <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-page-3/#propdef-page\" id=\"ref-for-propdef-page①⓪\">page</a> property applies to it."
+        },
+        {
+          "html": "The first printed page’s type is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#start-page-value\" id=\"ref-for-start-page-value①\">start page value</a> of the root."
+        },
+        {
+          "html": "If for any two boxes meeting at a <a href=\"https://www.w3.org/TR/css3-break/#btw-blocks\">class A</a> break point,\n\t\t\tthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#end-page-value\" id=\"ref-for-end-page-value①\">end page value</a> of the box preceding the break\n\t\t\tand <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-3/#start-page-value\" id=\"ref-for-start-page-value②\">start page value</a> of the box succeeding the break\n\t\t\tdo not match,\n\t\t\tthen a page break is forced between the two boxes,\n\t\t\tand content after the break resumes on a page box of the named type."
+        }
+      ]
+    }
+  ]
+}

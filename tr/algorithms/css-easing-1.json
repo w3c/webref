@@ -1,0 +1,77 @@
+{
+  "spec": {
+    "title": "CSS Easing Functions Level 1",
+    "url": "https://www.w3.org/TR/css-easing-1/"
+  },
+  "algorithms": [
+    {
+      "html": "For <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#input-progress-value\" id=\"ref-for-input-progress-value⑤\">input progress values</a> less than zero,",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <var>x</var> value of P1 is greater than zero, use\n a straight line that passes through P1 and P0 as the tangent.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if the <var>x</var> value of P2 is greater than\n zero, use a straight line that passes through P2 and P0 as the tangent.</p>"
+        },
+        {
+          "html": "<p>Otherwise, let the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#output-progress-value\" id=\"ref-for-output-progress-value④\">output progress value</a> be zero for all <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#input-progress-value\" id=\"ref-for-input-progress-value⑥\">input progress values</a> in the range [-∞, 0).</p>"
+        }
+      ]
+    },
+    {
+      "html": "For <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#input-progress-value\" id=\"ref-for-input-progress-value⑦\">input progress values</a> greater than one,",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <var>x</var> value of P2 is less than one, use\n a straight line that passes through P2 and P3 as the tangent.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if the <var>x</var> value of P1 is less than\n one, use a straight line that passes through P1 and P3 as the tangent.</p>"
+        },
+        {
+          "html": "<p>Otherwise, let the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#output-progress-value\" id=\"ref-for-output-progress-value⑤\">output progress value</a> be one for all <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#input-progress-value\" id=\"ref-for-input-progress-value⑧\">input progress values</a> in the range (1, ∞].</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#output-progress-value\" id=\"ref-for-output-progress-value⑧\">output progress value</a> is calculated from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#input-progress-value\" id=\"ref-for-input-progress-value①⑤\">input progress value</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#before-flag\" id=\"ref-for-before-flag④\">before flag</a> as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Calculate the <var>current step</var> as <code>floor(<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#input-progress-value\" id=\"ref-for-input-progress-value①⑥\">input progress value</a> × <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#steps\" id=\"ref-for-steps\">steps</a>)</code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#step-position\" id=\"ref-for-step-position③\">step position</a> property is one of:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/css-easing-1/#valdef-steps-jump-start\" id=\"ref-for-valdef-steps-jump-start④\">jump-start</a>,</p>\n      </li><li data-md=\"\">\n       <p><a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/css-easing-1/#valdef-steps-jump-both\" id=\"ref-for-valdef-steps-jump-both①\">jump-both</a>,</p>\n     </li></ul>\n     <p>increment <var>current step</var> by one.</p>"
+        },
+        {
+          "html": "<p>If <em>both</em> of the following conditions are true:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#before-flag\" id=\"ref-for-before-flag⑤\">before flag</a> is set, <em>and</em></p>\n      </li><li data-md=\"\">\n       <p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#input-progress-value\" id=\"ref-for-input-progress-value①⑦\">input progress value</a> × <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#steps\" id=\"ref-for-steps①\">steps</a> mod 1 equals zero\n (that is, if <span id=\"ref-for-input-progress-value①⑧\">input progress value</span> × <span id=\"ref-for-steps②\">steps</span> is\n integral), then</p>\n     </li></ul>\n     <p>decrement <var>current step</var> by one.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#input-progress-value\" id=\"ref-for-input-progress-value①⑨\">input progress value</a> ≥ 0 and <var>current step</var> &lt; 0,\n let <var>current step</var> be zero.</p>"
+        },
+        {
+          "html": "<p>Calculate <var>jumps</var> based on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#step-position\" id=\"ref-for-step-position④\">step position</a> as follows:</p>\n     <dl>\n      <dt data-md=\"\"><a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/css-easing-1/#valdef-steps-jump-start\" id=\"ref-for-valdef-steps-jump-start⑤\">jump-start</a> or <a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/css-easing-1/#valdef-steps-jump-end\" id=\"ref-for-valdef-steps-jump-end③\">jump-end</a>\n      </dt><dd data-md=\"\">\n       <p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#steps\" id=\"ref-for-steps③\">steps</a></p>\n      </dd><dt data-md=\"\"><a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/css-easing-1/#valdef-steps-jump-none\" id=\"ref-for-valdef-steps-jump-none②\">jump-none</a>\n      </dt><dd data-md=\"\">\n       <p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#steps\" id=\"ref-for-steps④\">steps</a> - 1</p>\n      </dd><dt data-md=\"\"><a class=\"css\" data-link-type=\"value\" href=\"https://www.w3.org/TR/css-easing-1/#valdef-steps-jump-both\" id=\"ref-for-valdef-steps-jump-both②\">jump-both</a>\n      </dt><dd data-md=\"\">\n       <p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#steps\" id=\"ref-for-steps⑤\">steps</a> + 1</p>\n     </dd></dl>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#input-progress-value\" id=\"ref-for-input-progress-value②⓪\">input progress value</a> ≤ 1 and <var>current step</var> &gt; <var>jumps</var>, let <var>current step</var> be <var>jumps</var>.</p>"
+        },
+        {
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#output-progress-value\" id=\"ref-for-output-progress-value①①\">output progress value</a> is <code><var>current step</var> / <var>jumps</var></code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Step easing functions, whether they are specified using the <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-easing-1/#funcdef-step-easing-function-steps\" id=\"ref-for-funcdef-step-easing-function-steps②\">steps()</a> function or either of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-easing-1/#valdef-step-easing-function-step-start\" id=\"ref-for-valdef-step-easing-function-step-start②\">step-start</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-easing-1/#valdef-step-easing-function-step-end\" id=\"ref-for-valdef-step-easing-function-step-end②\">step-end</a> keywords, are serialized as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-easing-1/#step-position\" id=\"ref-for-step-position⑦\">step position</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-easing-1/#valdef-steps-jump-end\" id=\"ref-for-valdef-steps-jump-end⑤\">jump-end</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-easing-1/#valdef-steps-end\" id=\"ref-for-valdef-steps-end④\">end</a>, serialize\n as <a class=\"css\" data-link-type=\"function\" href=\"https://www.w3.org/TR/css-easing-1/#funcdef-step-easing-function-steps\" id=\"ref-for-funcdef-step-easing-function-steps③\">steps(&lt;integer&gt;)</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, serialize as <a class=\"css\" data-link-type=\"function\" href=\"https://www.w3.org/TR/css-easing-1/#funcdef-step-easing-function-steps\" id=\"ref-for-funcdef-step-easing-function-steps④\">steps(&lt;integer&gt;, &lt;step-position&gt;)</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

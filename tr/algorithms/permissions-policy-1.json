@@ -1,0 +1,714 @@
+{
+  "spec": {
+    "title": "Permissions Policy",
+    "url": "https://www.w3.org/TR/permissions-policy-1/"
+  },
+  "algorithms": [
+    {
+      "name": "matches",
+      "href": "https://www.w3.org/TR/permissions-policy-1/#matches",
+      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist⑤\">allowlist</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> an origin <var>origin</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist⑥\">allowlist</a> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#the-special-value\" id=\"ref-for-the-special-value\">the special value <code>*</code></a>,\n then return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "matches",
+      "href": "https://www.w3.org/TR/permissions-policy-1/#matches",
+      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist⑤\">allowlist</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> an origin <var>origin</var>, run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist⑦\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#self-origin\" id=\"ref-for-self-origin\">self-origin</a> is not null and it is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin-domain\" id=\"ref-for-same-origin-domain\">same origin-domain</a> with <var>origin</var>, then return true.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist⑧\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#src-origin\" id=\"ref-for-src-origin\">src-origin</a> is not null and it is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin-domain\" id=\"ref-for-same-origin-domain①\">same origin-domain</a> with <var>origin</var>, then return true.</p>"
+        },
+        {
+          "html": "<p>If <var>origin</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>url</var> be the result of calling the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">url parser</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialization</a> of <var>origin</var>.</p>"
+        },
+        {
+          "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist⑤\">allowlist</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> an origin <var>origin</var>, run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#match-url-to-source-expression\" id=\"ref-for-match-url-to-source-expression\">Does url match expression in origin with redirect count?</a> on <var>url</var>, <var>item</var>, <var>origin</var>, and 0 is true then return true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions-policy-1/#dom-permissionspolicy-allowsfeature\" id=\"ref-for-dom-permissionspolicy-allowsfeature\">allowsFeature(feature, origin)</a></code> method must run the following\n    steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>origin</var> is omitted, set <var>origin</var> to this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicy\" id=\"ref-for-permissionspolicy①②\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#default-origin\" id=\"ref-for-default-origin②\">default origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>policy</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#observable-policy\" id=\"ref-for-observable-policy②\">observable policy</a> for this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicy\" id=\"ref-for-permissionspolicy①③\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#associated-node\" id=\"ref-for-associated-node⑥\">associated node</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>feature</var> is allowed by <var>policy</var> for <var>origin</var>, return true.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return false.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions-policy-1/#dom-permissionspolicy-features\" id=\"ref-for-dom-permissionspolicy-features\">features()</a></code> method must run the following steps:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>result</var> to an empty ordered set.</p>"
+        },
+        {
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#supported-features\" id=\"ref-for-supported-features③\">supported feature</a> <var>feature</var>:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p>Append <var>feature</var> to <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>return result</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions-policy-1/#dom-permissionspolicy-allowedfeatures\" id=\"ref-for-dom-permissionspolicy-allowedfeatures\">allowedFeatures()</a></code> method must run the following steps:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>result</var> to an empty ordered set.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicy\" id=\"ref-for-permissionspolicy①④\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#default-origin\" id=\"ref-for-default-origin③\">default\n  origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>policy</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#observable-policy\" id=\"ref-for-observable-policy③\">observable policy</a> for this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicy\" id=\"ref-for-permissionspolicy①⑤\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#associated-node\" id=\"ref-for-associated-node⑦\">associated node</a>.</p>"
+        },
+        {
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#supported-features\" id=\"ref-for-supported-features④\">supported feature</a> <var>feature</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>feature</var> is allowed by <var>policy</var> for <var>origin</var>, append <var>feature</var> to <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>return result</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions-policy-1/#dom-permissionspolicy-getallowlistforfeature\" id=\"ref-for-dom-permissionspolicy-getallowlistforfeature\">getAllowlistForFeature(feature)</a></code> method must run the following\n    steps:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>result</var> to an empty list.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicy\" id=\"ref-for-permissionspolicy①⑥\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#default-origin\" id=\"ref-for-default-origin④\">default\n origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>policy</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#observable-policy\" id=\"ref-for-observable-policy④\">observable policy</a> for this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicy\" id=\"ref-for-permissionspolicy①⑦\">PermissionsPolicy</a></code> object’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#associated-node\" id=\"ref-for-associated-node⑧\">associated node</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>feature</var> is not allowed in <var>policy</var> for <var>origin</var>, return <var>result</var></p>"
+        },
+        {
+          "html": "<p>Let <var>allowlist</var> be <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy\" id=\"ref-for-declared-policy①\">declared policy</a>[<var>feature</var>]'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations①\">declarations</a>.</p>"
+        },
+        {
+          "html": "If <var>allowlist</var> is the special value <code>*</code>:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p>Append \"<code>*</code>\" to <var>result</var></p>"
+            },
+            {
+              "html": "<p>Return <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist①⑥\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#self-origin\" id=\"ref-for-self-origin①\">self-origin</a> is not null,\n append the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin①\">serialization</a> of it to <var>result</var>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist①⑦\">allowlist</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#src-origin\" id=\"ref-for-src-origin①\">src-origin</a> is not null,\n append the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin②\">serialization</a> of it to <var>result</var>.</p>"
+        },
+        {
+          "html": "Otherwise, for each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-source-expression\" id=\"ref-for-permissions-source-expression④\">permissions-source-expression</a> <var>item</var> in <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#expressions\" id=\"ref-for-expressions①\">expressions</a>:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p>Append <var>item</var> to <var>result</var></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To get the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#observable-policy\" id=\"ref-for-observable-policy⑥\">observable policy</a> for an Element <var>node</var>, run the\n    following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>inherited policy</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤\">ordered map</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#supported-features\" id=\"ref-for-supported-features⑤\">supported feature</a> <var>feature</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>isInherited</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#define-inherited-policy-in-container\" id=\"ref-for-define-inherited-policy-in-container\">Define\n  an inherited policy for feature in container at origin</a> on <var>feature</var>, <var>node</var> and <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-origin\" id=\"ref-for-declared-origin①\">declared origin</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>inherited policy</var>[<var>feature</var>] to <var>isInherited</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy\" id=\"ref-for-permissions-policy⑦\">permissions policy</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-inherited-policy\" id=\"ref-for-permissions-policy-inherited-policy④\">inherited policy</a> <var>inherited policy</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy④\">declared policy</a> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct②\">struct</a> with both <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations②\">declarations</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration①\">reporting\n configuration</a> new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥\">ordered maps</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "declared origin",
+      "href": "https://www.w3.org/TR/permissions-policy-1/#declared-origin",
+      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"declared-origin\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">declared origin</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an Element <var>node</var>, run the\n    following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#sandboxed-origin-browsing-context-flag\" id=\"ref-for-sandboxed-origin-browsing-context-flag\">sandboxed origin browsing\n  context flag</a> is set, then return a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque①\">opaque origin</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>node</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox\" id=\"ref-for-attr-iframe-sandbox①\">sandbox</a></code> attribute is set, and does not contain\n  the <code>allow-same-origin</code> keyword, then return a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque②\">opaque origin</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>node</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc\" id=\"ref-for-attr-iframe-srcdoc\">srcdoc</a></code> attribute is set, then return <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a>’s origin.</p>"
+        },
+        {
+          "html": "If <var>node</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src\" id=\"ref-for-attr-iframe-src①\">src</a></code> attribute is set:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>url</var> be the result of parsing <var>node</var>’s src attribute,\n  relative to <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>url</var> is not failure, return <var>url</var>’s origin.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document③\">node document</a>’s origin.</p>"
+        }
+      ]
+    },
+    {
+      "name": "process-response-policy",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response②\">response</a> (<var>response</var>), an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑤\">origin</a> (<var>origin</var>), and a boolean\n    (<var>report-only</var>), this algorithm returns a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy\" id=\"ref-for-declared-policy②\">declared policy</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>header name</var> be \"<code>Permissions-Policy-Report-Only</code>\" if <var>report-only</var> is True, or \"<code>Permissions-Policy</code>\" otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>parsed header</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">get a structured\nfield value</a> given <var>header name</var> and \"dictionary\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parsed header</var> is null, return an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦\">ordered map</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>policy</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#construct-policy\" id=\"ref-for-construct-policy\">Construct policy from\ndictionary and origin</a> on <var>parsed header</var> and <var>origin</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>policy</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "construct-policy",
+      "html": "Given an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧\">ordered map</a> (<var>dictionary</var>) and an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑥\">origin</a> (<var>origin</var>), this\n    algorithm will return a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy\" id=\"ref-for-declared-policy③\">declared policy</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>declarations</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨\">ordered map</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reporting-config</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪\">ordered map</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>feature-name</var> → (<var>value</var>, <var>params</var>) of <var>dictionary</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>feature-name</var> does not identify any recognized <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①⑦\">policy-controlled feature</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>feature</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①⑧\">policy-controlled feature</a> identified by <var>feature-name</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>params</var>[\"report-to\"] exists, and is a string, then set <var>reporting-config</var>[<var>feature</var>] to <var>params</var>[\"report-to\"].</p>"
+            },
+            {
+              "html": "<p>Let <var>allowlist</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist①⑧\">allowlist</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>value</var> is the token <code>*</code>, or if <var>value</var> is a list which contains\nthe token <code>*</code>, set <var>allowlist</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#the-special-value\" id=\"ref-for-the-special-value①\">the special value <code>*</code></a>.</p>"
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>value</var> is the token <code>self</code>, let <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#self-origin\" id=\"ref-for-self-origin②\">self-origin</a> be <var>origin</var>.</p>"
+                },
+                {
+                  "html": "Otherwise if <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">for each</a> <var>element</var> in <var>value</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>element</var> is the token <code>self</code>, let <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#self-origin\" id=\"ref-for-self-origin③\">self-origin</a> be <var>origin</var>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>element</var> is a valid <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-source-expression\" id=\"ref-for-permissions-source-expression⑤\">permissions-source-expression</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>element</var> to <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#expressions\" id=\"ref-for-expressions②\">expressions</a>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Set <var>declarations</var>[<var>feature</var>] to <var>allowlist</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return «<var>declarations</var>, <var>reporting-config</var>».</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse-policy-directive",
+      "html": "Given a string (<var>value</var>), an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑦\">origin</a> (<var>container origin</var>), and an\n    optional <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑧\">origin</a> (<var>target origin</var>), this algorithm returns a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-directive\" id=\"ref-for-policy-directive⑦\">policy\n    directive</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>directive</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①\">ordered map</a>.</p>"
+        },
+        {
+          "html": "For each <var>serialized-declaration</var> returned by <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#strictly-split\" id=\"ref-for-strictly-split\">strictly splitting <var>value</var> on the delimiter\nU+003B (;)</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>tokens</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#split-on-ascii-whitespace\" id=\"ref-for-split-on-ascii-whitespace\">splitting <var>serialized-declaration</var> on\nASCII whitespace.</a></p>"
+            },
+            {
+              "html": "<p>If <var>tokens</var> is an empty list, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>feature-name</var> be the first element of <var>tokens</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>feature-name</var> does not identify any recognized <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①⑨\">policy-controlled feature</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>feature</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⓪\">policy-controlled feature</a> identified by <var>feature-name</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>targetlist</var> be the remaining elements, if any, of <var>tokens</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>allowlist</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist①⑨\">allowlist</a>.</p>"
+            },
+            {
+              "html": "<p>If any element of <var>targetlist</var> is the string \"<code>*</code>\", set <var>allowlist</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#the-special-value\" id=\"ref-for-the-special-value②\">the special value <code>*</code></a>.</p>"
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>targetlist</var> is empty and <var>target origin</var> is given,\n let <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#src-origin\" id=\"ref-for-src-origin②\">src-origin</a> be <var>target origin</var>.</p>"
+                },
+                {
+                  "html": "For each <var>element</var> in <var>targetlist</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>element</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive\">ASCII case-insensitive</a> match for\n\"<code>'self'</code>\":",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#self-origin\" id=\"ref-for-self-origin④\">self-origin</a> be <var>container origin</var>.</p>"
+                        },
+                        {
+                          "html": "<p>Continue to the next <var>element</var>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "If <var>target origin</var> is given, and <var>element</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①\">ASCII\ncase-insensitive</a> match for \"<code>'src'</code>\":",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#src-origin\" id=\"ref-for-src-origin③\">src-origin</a> be <var>target origin</var>.</p>"
+                        },
+                        {
+                          "html": "<p>Continue to the next <var>element</var>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Let <var>result</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser①\">URL parser</a> on <var>element</var>.</p>"
+                    },
+                    {
+                      "html": "If <var>result</var> is not failure:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>target</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑨\">origin</a> of <var>result</var>.</p>"
+                        },
+                        {
+                          "html": "<p>If <var>target</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque③\">opaque origin</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a> the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin③\">serialization</a> of <var>target</var> to <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#expressions\" id=\"ref-for-expressions③\">expressions</a>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Set <var>directive</var>[<var>feature</var>] to <var>allowlist</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>directive</var></p>"
+        }
+      ]
+    },
+    {
+      "name": "process-policy-attributes",
+      "html": "Given an element (<var>element</var>), this algorithm returns a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#container-policy\" id=\"ref-for-container-policy⑨\">container\n    policy</a>, which may be empty.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>element</var> is not an <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element\" id=\"ref-for-the-iframe-element①②\">iframe</a></code> element, then return an empty <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-directive\" id=\"ref-for-policy-directive⑧\">policy\n directive</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>container policy</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#parse-policy-directive\" id=\"ref-for-parse-policy-directive\">Parse policy\ndirective</a> given the value of <var>element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow\" id=\"ref-for-attr-iframe-allow⑥\">allow</a></code> attribute,\nthe <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin①\">origin</a> of <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④\">node document</a>, and <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-origin\" id=\"ref-for-declared-origin③\">declared origin</a>.</p>"
+        },
+        {
+          "html": "If <var>element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen\" id=\"ref-for-attr-iframe-allowfullscreen④\">allowfullscreen</a></code> attribute is specified, and <var>container policy</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contain</a> an entry for the <code>fullscreen</code> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②①\">feature</a>.",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>container policy</var>[<code>fullscreen</code>] = <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#the-special-value\" id=\"ref-for-the-special-value③\">the\n special value <code>*</code></a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>container policy</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-for-navigable",
+      "html": "Given null or an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">element</a> (<var>container</var>) and an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①⓪\">origin</a> (<var>origin</var>) this algorithm returns a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy\" id=\"ref-for-permissions-policy⑨\">Permissions Policy</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: If not null, <var>container</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable-container\" id=\"ref-for-navigable-container②\">navigable container</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inherited policy</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②\">ordered map</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>feature</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#supported-features\" id=\"ref-for-supported-features⑥\">supported</a>,",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>isInherited</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#define-inherited-policy-in-container\" id=\"ref-for-define-inherited-policy-in-container①\">Define an\ninherited policy for feature in container at origin</a> on <var>feature</var>, <var>container</var> and <var>origin</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>inherited policy</var>[<var>feature</var>] to <var>isInherited</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>policy</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy\" id=\"ref-for-permissions-policy①⓪\">permissions policy</a>, with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-inherited-policy\" id=\"ref-for-permissions-policy-inherited-policy⑤\">inherited policy</a> <var>inherited policy</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy⑤\">declared policy</a> «[], []».</p>"
+        },
+        {
+          "html": "<p>Return <var>policy</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-from-response",
+      "html": "Given null or a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable-container\" id=\"ref-for-navigable-container③\">navigable container</a> (<var>container</var>), an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①①\">origin</a> (<var>origin</var>), a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response③\">response</a> (<var>response</var>), and an optional boolean\n    (<var>report-only</var>), with a default value of False, this algorithm returns a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy\" id=\"ref-for-permissions-policy①①\">permissions policy</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>policy</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#create-for-navigable\" id=\"ref-for-create-for-navigable\">Create a Permissions\nPolicy for a navigable</a> given <var>container</var> and <var>origin</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>d</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#process-response-policy\" id=\"ref-for-process-response-policy\">Process response\npolicy</a> given <var>response</var>, <var>origin</var> and <var>report-only</var>.</p>"
+        },
+        {
+          "html": "For each <var>feature</var> → <var>allowlist</var> of <var>d</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations③\">declarations</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-inherited-policy\" id=\"ref-for-permissions-policy-inherited-policy⑥\">inherited\n policy</a>[<var>feature</var>] is true, then set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy⑥\">declared policy</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations④\">declarations</a>[<var>feature</var>] to <var>allowlist</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy⑦\">declared\n policy</a>[<var>feature</var>]'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration②\">reporting configuration</a> to <var>d</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration③\">reporting configuration</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>policy</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "define-inherited-policy-in-container",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②②\">feature</a> (<var>feature</var>), null or a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable-container\" id=\"ref-for-navigable-container④\">navigable container</a> (<var>container</var>), and an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin②\">origin</a> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑧\">Document</a></code> in\n    that container (<var>origin</var>), this algorithm returns the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#inherited-policy-for-a-feature\" id=\"ref-for-inherited-policy-for-a-feature\">inherited policy value</a> for <var>feature</var>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>container</var> is null, return \"<code>Enabled</code>\".</p>"
+        },
+        {
+          "html": "<p>If the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#get-feature-value-for-origin\" id=\"ref-for-get-feature-value-for-origin\">Get feature value for\norigin</a> on <var>feature</var>, <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑤\">node document</a>, and <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥\">node document</a>’s origin is\n\"<code>Disabled</code>\", return \"<code>Disabled</code>\".</p>"
+        },
+        {
+          "html": "<p>If the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#get-feature-value-for-origin\" id=\"ref-for-get-feature-value-for-origin①\">Get feature value for\norigin</a> on <var>feature</var>, <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑦\">node document</a>, and <var>origin</var> is \"<code>Disabled</code>\", return \"<code>Disabled</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>container policy</var> be the result of running <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#process-policy-attributes\" id=\"ref-for-process-policy-attributes\">Process\npermissions policy attributes</a> on <var>container</var>.</p>"
+        },
+        {
+          "html": "If <var>feature</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a> in <var>container policy</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist②⓪\">allowlist</a> for <var>feature</var> in <var>container policy</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#matches\" id=\"ref-for-matches\">matches</a> <var>origin</var>, return \"<code>Enabled</code>\".</p>"
+            },
+            {
+              "html": "<p>Otherwise return \"<code>Disabled</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature-default-allowlist\" id=\"ref-for-policy-controlled-feature-default-allowlist③\">default allowlist</a> is <code>*</code>, return\n\"<code>Enabled</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature-default-allowlist\" id=\"ref-for-policy-controlled-feature-default-allowlist④\">default allowlist</a> is <code>'self'</code>, and <var>origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin②\">same origin</a> with <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑧\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a>, return \"<code>Enabled</code>\".</p>"
+        },
+        {
+          "html": "<p>Otherwise return \"<code>Disabled</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "get-feature-value-for-origin",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②③\">feature</a> (<var>feature</var>), a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑨\">Document</a></code> object\n    (<var>document</var>), and an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①②\">origin</a> (<var>origin</var>), this algorithm\n    returns \"<code>Disabled</code>\" if <var>feature</var> should be considered\n    disabled, and \"<code>Enabled</code>\" otherwise.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>policy</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy\" id=\"ref-for-concept-document-permissions-policy\">permissions policy</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-inherited-policy\" id=\"ref-for-permissions-policy-inherited-policy⑦\">inherited policy</a> for <var>feature</var> is \"<code>Disabled</code>\", return \"<code>Disabled</code>\".</p>"
+        },
+        {
+          "html": "If <var>feature</var> is present in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy⑧\">declared\n policy</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy⑨\">declared\n policy</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations⑤\">declarations</a>[<var>feature</var>] <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#matches\" id=\"ref-for-matches①\">matches</a> <var>origin</var>, then return \"<code>Enabled</code>\".</p>"
+            },
+            {
+              "html": "<p>Otherwise return \"<code>Disabled</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Enabled</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "check-permissions-policy",
+      "html": "To check a permissions policy, given <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy\" id=\"ref-for-permissions-policy①②\">permissions policy</a> (<var>policy</var>), a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②④\">feature</a> (<var>feature</var>), an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①③\">origin</a> (<var>origin</var>) and another <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①④\">origin</a> (<var>document origin</var>), this algorithm returns \"<code>Disabled</code>\" if <var>feature</var> should be considered disabled, and \"<code>Enabled</code>\"\n    otherwise.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-inherited-policy\" id=\"ref-for-permissions-policy-inherited-policy⑧\">inherited policy</a> for <var>feature</var> is \"<code>Disabled</code>\", return \"<code>Disabled</code>\".</p>"
+        },
+        {
+          "html": "If <var>feature</var> is present in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy①⓪\">declared policy</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy①①\">declared\n policy</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy-declarations\" id=\"ref-for-declared-policy-declarations⑥\">declarations</a>[<var>feature</var>] <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#matches\" id=\"ref-for-matches②\">matches</a> <var>origin</var>, then return \"<code>Enabled</code>\".</p>"
+            },
+            {
+              "html": "<p>Otherwise return \"<code>Disabled</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature-default-allowlist\" id=\"ref-for-policy-controlled-feature-default-allowlist⑤\">default allowlist</a> is <code>*</code>, return\n\"<code>Enabled</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>feature</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature-default-allowlist\" id=\"ref-for-policy-controlled-feature-default-allowlist⑥\">default allowlist</a> is <code>'self'</code>, and <var>origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin③\">same origin</a> with <var>document origin</var>, return\n\"<code>Enabled</code>\".</p>"
+        },
+        {
+          "html": "<p>Return \"<code>Disabled</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "is-feature-enabled",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑤\">feature</a> (<var>feature</var>), a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②⓪\">Document</a></code> object\n    (<var>document</var>), an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①⑤\">origin</a> (<var>origin</var>), and an optional boolean (<var>report</var>),\n    with a default value of True, this algorithm returns \"<code>Disabled</code>\"\n    if <var>feature</var> should be considered disabled, and \"<code>Enabled</code>\"\n    otherwise. If <var>report</var> is True, then it will also <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#generate-and-queue-a-report\" id=\"ref-for-generate-and-queue-a-report\">generate and queue a\n    report</a> if the feature is not enabled in either <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy\" id=\"ref-for-concept-document-permissions-policy①\">permissions policy</a> or <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#document-report-only-permissions-policy\" id=\"ref-for-document-report-only-permissions-policy\">report-only\n    permissions policy</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>policy</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy\" id=\"ref-for-concept-document-permissions-policy②\">permissions policy</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>report-only policy</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#document-report-only-permissions-policy\" id=\"ref-for-document-report-only-permissions-policy①\">report-only\n permissions policy</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#check-permissions-policy\" id=\"ref-for-check-permissions-policy\">Check permissions\n policy</a>, given <var>policy</var>, <var>feature</var>, <var>origin</var>, and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin④\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>report-only result</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#check-permissions-policy\" id=\"ref-for-check-permissions-policy①\">Check\n permissions policy</a>, given <var>report-only policy</var>, <var>feature</var>, <var>origin</var>,\n and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin⑤\">origin</a>.</p>"
+        },
+        {
+          "html": "If <var>report</var> is True:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>settings</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a>.</p>"
+            },
+            {
+              "html": "If <var>result</var> is \"<code>Disabled</code>\":",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint\">Get the\n  reporting endpoint for a feature</a> given <var>feature</var> and <var>policy</var>.</p>"
+                },
+                {
+                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#report-permissions-policy-violation\" id=\"ref-for-report-permissions-policy-violation\">Generate report for violation of permissions\n  policy on settings</a> given <var>feature</var>, <var>settings</var>,\n  \"<code>Enforce</code>\", and <var>endpoint</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Else, if <var>report-only result</var> is \"<code>Disabled</code>\":",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>report-only endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint①\">Get the reporting endpoint for a feature</a> given <var>feature</var> and <var>report-only policy</var>.</p>"
+                },
+                {
+                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#report-permissions-policy-violation\" id=\"ref-for-report-permissions-policy-violation①\">Generate report for violation of permissions\n  policy on settings</a> given <var>feature</var>, <var>settings</var>,\n  \"<code>Report</code>\", and <var>report-only endpoint</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return result</p>"
+        }
+      ]
+    },
+    {
+      "name": "get-reporting-endpoint",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑥\">feature</a> (<var>feature</var>) and a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy\" id=\"ref-for-permissions-policy①③\">permissions policy</a> (<var>policy</var>),\n    this algorithm returns a string naming the endpoint to send violation\n    reports to, or null if no such endpoint has been declared in <var>policy</var>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>config</var> be <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-policy-declared-policy\" id=\"ref-for-permissions-policy-declared-policy①②\">declared policy</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#declared-policy-reporting-configuration\" id=\"ref-for-declared-policy-reporting-configuration④\">reporting configuration</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>config</var>[<var>feature</var>] exists, return <var>config</var>[<var>feature</var>].</p>"
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "report-permissions-policy-violation",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑦\">feature</a> (<var>feature</var>), an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a> (<var>settings</var>), a string (<var>disposition</var>), and a string-or-null (<var>endpoint</var>),\n    this algorithm generates a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#report\" id=\"ref-for-report\">report</a> about the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#violate\" id=\"ref-for-violate⑦\">violation</a> of the\n    policy for <var>feature</var>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>body</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicyviolationreportbody\" id=\"ref-for-permissionspolicyviolationreportbody①\">PermissionsPolicyViolationReportBody</a></code>, initialized\nas follows:</p>\n        <dl>\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicyviolationreportbody-featureid\" id=\"ref-for-permissionspolicyviolationreportbody-featureid\">featureId</a>\n         </dt><dd data-md=\"\">\n          <p><var>feature</var>’s string representation.</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicyviolationreportbody-sourcefile\" id=\"ref-for-permissionspolicyviolationreportbody-sourcefile②\">sourceFile</a>\n         </dt><dd data-md=\"\">\n          <p>null</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicyviolationreportbody-linenumber\" id=\"ref-for-permissionspolicyviolationreportbody-linenumber\">lineNumber</a>\n         </dt><dd data-md=\"\">\n          <p>null</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicyviolationreportbody-columnnumber\" id=\"ref-for-permissionspolicyviolationreportbody-columnnumber\">columnNumber</a>\n         </dt><dd data-md=\"\">\n          <p>null</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicyviolationreportbody-disposition\" id=\"ref-for-permissionspolicyviolationreportbody-disposition①\">disposition</a>\n         </dt><dd data-md=\"\">\n          <p><var>disposition</var></p>\n        </dd></dl>"
+        },
+        {
+          "html": "<p>If the user agent is currently executing script, and can extract the\nsource file’s URL, line number, and column number from <var>settings</var>, then\nset <var>body</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicyviolationreportbody-sourcefile\" id=\"ref-for-permissionspolicyviolationreportbody-sourcefile③\">sourceFile</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicyviolationreportbody-linenumber\" id=\"ref-for-permissionspolicyviolationreportbody-linenumber①\">lineNumber</a>, and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissionspolicyviolationreportbody-columnnumber\" id=\"ref-for-permissionspolicyviolationreportbody-columnnumber①\">columnNumber</a> accordingly.</p>"
+        },
+        {
+          "html": "<p>Execute <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/reporting-1/#generate-and-queue-a-report\" id=\"ref-for-generate-and-queue-a-report①\">generate and queue a report</a> with <var>body</var>,\n\"permissions-policy-violation\", <var>endpoint</var>, and <var>settings</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "should-request-be-allowed-to-use-feature",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②⑧\">feature</a> (<var>feature</var>) and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> (<var>request</var>),\n    this algorithm returns <code>true</code> if the request should be allowed to\n    use <var>feature</var>, and <code>false</code> otherwise.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>window</var> to <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window\">window</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>window</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code>, return <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>document</var> to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated <code>Document</code></a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#is-feature-enabled\" id=\"ref-for-is-feature-enabled\">Is feature\nenabled in document for origin?</a> on <var>feature</var>, <var>document</var>, and <var>origin</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>result</var> is \"<code>Enabled</code>\", return <code>true</code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <code>false</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "In <a href=\"https://html.spec.whatwg.org/#shared-document-creation-infrastructure\">7.5.1\n    Shared document creation infrastructure</a>, after step 3, insert the\n    following step:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>reportOnlyPermissionsPolicy</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/permissions-policy-1/#create-from-response\" id=\"ref-for-create-from-response\">Create a Permissions Policy for a navigable from\n response</a> given navigationParams’s navigable’s container,\n navigationParams’s origin, navigationParams’s response, and True.</p>"
+        }
+      ]
+    }
+  ]
+}

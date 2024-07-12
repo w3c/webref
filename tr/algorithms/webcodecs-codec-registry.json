@@ -1,0 +1,47 @@
+{
+  "spec": {
+    "title": "WebCodecs Codec Registry",
+    "url": "https://www.w3.org/TR/webcodecs-codec-registry/"
+  },
+  "algorithms": [
+    {
+      "html": "This registry maintains a mapping between codec strings and registration\nspecifications as described below.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Each entry must include a unique codec string, a common name string, and a\nlink to the codec’s specification.</p>"
+        },
+        {
+          "html": "The codec string must be crafted as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the codec string contains a fixed prefix with variable suffix values,\nthe suffix must be represented by an asterisk and the registration’s\npublic specification must describe how to fully qualify the variable\nportion of the string.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if the codec is recognized by multiple strings, a single\npreferred string should be listed and the registration’s specification\nmust list the other allowed strings.</p>"
+            },
+            {
+              "html": "<p>Otherwise, the codec is identified by a simple fixed string.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Each registration’s specification must include a sequence of sections\ndescribing:</p>",
+          "ignored": [
+            "Recognized codec strings EncodedAudioChunk or EncodedVideoChunk internal data AudioDecoderConfig or VideoDecoderConfig description bytes Expectations for EncodedAudioChunk or EncodedVideoChunk [[type]]"
+          ]
+        },
+        {
+          "html": "<p>Where applicable, a registration specification may include a section\ndescribing extensions to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dictdef-videoencoderconfig\" id=\"ref-for-dictdef-videoencoderconfig\">VideoEncoderConfig</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dictdef-audioencoderconfig\" id=\"ref-for-dictdef-audioencoderconfig\">AudioEncoderConfig</a></code> dictionaries.</p>"
+        },
+        {
+          "html": "<p>Candidate entries must be announced by filing an issue in the <a href=\"https://github.com/w3c/webcodecs/issues/\">WebCodecs GitHub issue tracker</a> so they can be discussed and evaluated for compliance before being added to\nthe registry. The Media Working Group may seek expertise from outside the\nWorking Group as part of its evaluation, e.g., from the codec specification\neditors or relevant standards group. If the codec specification is not\npublicly available, it must be made available to the Working Group for\nevaluation. If the Working Group reaches consensus to accept the candidate,\na pull request should be drafted (either by editors or by the party\nrequesting the candidate registration) to register the candidate.\nThe registry editors will review and merge the pull request.</p>"
+        },
+        {
+          "html": "<p>Existing entries cannot be deleted or deprecated. They may be changed after\nbeing published through the same process as candidate entries. Possible\nchanges include expansion of the codec string to better qualify the codec,\nadjustments to the codec name string, and modification of the link to the\ncodec’s specification.</p>"
+        }
+      ]
+    }
+  ]
+}

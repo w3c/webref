@@ -1,0 +1,86 @@
+{
+  "spec": {
+    "title": "CSS Images Module Level 3",
+    "url": "https://www.w3.org/TR/css-images-3/"
+  },
+  "algorithms": [
+    {
+      "name": "gradient-average-color",
+      "href": "https://www.w3.org/TR/css-images-3/#gradient-average-color",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"gradient-average-color\" data-noexport=\"\" id=\"gradient-average-color\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the average color of a gradient</dfn>,\n\trun these steps:",
+      "rationale": "define",
+      "steps": [
+        {
+          "html": "<p>Define <var>list</var> as an initially-empty list of premultiplied RGBA colors,\nand <var>total-length</var> as the distance between first and last color stops.</p>"
+        },
+        {
+          "html": "<p>For each adjacent pair of color-stops,\ndefine <var>weight</var> as half the distance between the two color-stops,\ndivided by <var>total-length</var>.\nAdd two entries to <var>list</var>,\nthe first obtained by representing the color of the first color-stop in premultiplied sRGBA\nand scaling all of the components by <var>weight</var>,\nand the second obtained in the same way with the second color-stop.</p>"
+        },
+        {
+          "html": "<p>Sum the entries of <var>list</var> component-wise to produce the average color,\nand return it.</p>"
+        }
+      ]
+    },
+    {
+      "name": "interpolate with a color hint",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Determine the location of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#color-transition-hint\" id=\"ref-for-color-transition-hint④\">transition hint</a> as a percentage of the distance between the two <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#color-stop\" id=\"ref-for-color-stop①⑥\">color stops</a>,\n\t\t\t\tdenoted as a number between 0 and 1,\n\t\t\t\twhere 0 indicates the hint is placed right on the first <span id=\"ref-for-color-stop①⑦\">color stop</span>,\n\t\t\t\tand 1 indicates the hint is placed right on the second <span id=\"ref-for-color-stop①⑧\">color stop</span>.\n\t\t\t\tLet this percentage be <var>H</var>."
+        },
+        {
+          "html": "For any given point between the two color stops,\n\t\t\t\tdetermine the point’s location as a percentage of the distance between the two <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#color-stop\" id=\"ref-for-color-stop①⑨\">color stops</a>,\n\t\t\t\tin the same way as the previous step.\n\t\t\t\tLet this percentage be <var>P</var>."
+        },
+        {
+          "html": "Let <var>C</var>, the color weighting at that point,\n\t\t\t\tbe equal to <code><var>P</var><sup>log<sub><var>H</var></sub>(.5)</sup></code>."
+        },
+        {
+          "html": "The color at that point is then a linear blend between the colors of the two <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#color-stop\" id=\"ref-for-color-stop②⓪\">color stops</a>,\n\t\t\t\tblending <code>(1 - <var>C</var>)</code> of the first stop and <var>C</var> of the second stop."
+        }
+      ]
+    },
+    {
+      "html": "When resolving the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#used-value\" id=\"ref-for-used-value\">used</a> positions of each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#color-stop\" id=\"ref-for-color-stop②②\">color stop</a>,\n\tthe following steps must be applied <em>in order</em>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#color-stop\" id=\"ref-for-color-stop②③\">color stop</a> does not have a position,\n\t\t\tset its position to 0%.\n\t\t\tIf the last <span id=\"ref-for-color-stop②④\">color stop</span> does not have a position,\n\t\t\tset its position to 100%."
+        },
+        {
+          "html": "If a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#color-stop\" id=\"ref-for-color-stop②⑤\">color stop</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#color-transition-hint\" id=\"ref-for-color-transition-hint⑥\">transition hint</a> has a position\n\t\t\tthat is less than the specified position\n\t\t\tof any <span id=\"ref-for-color-stop②⑥\">color stop</span> or <span id=\"ref-for-color-transition-hint⑦\">transition hint</span> before it in the list,\n\t\t\tset its position to be equal to the largest specified position\n\t\t\tof any <span id=\"ref-for-color-stop②⑦\">color stop</span> or <span id=\"ref-for-color-transition-hint⑧\">transition hint</span> before it."
+        },
+        {
+          "html": "If any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#color-stop\" id=\"ref-for-color-stop②⑧\">color stop</a> still does not have a position,\n\t\t\tthen, for each run of adjacent <span id=\"ref-for-color-stop②⑨\">color stops</span> without positions,\n\t\t\tset their positions so that they are evenly spaced\n\t\t\tbetween the preceding and following <span id=\"ref-for-color-stop③⓪\">color stops</span> with positions."
+        }
+      ]
+    },
+    {
+      "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#specified-size\" id=\"ref-for-specified-size⑤\">specified size</a> is only a width or height (but not both)\nthen the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#concrete-object-size\" id=\"ref-for-concrete-object-size①②\">concrete object size</a> is given that specified width or height.\nThe other dimension is calculated as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#objects\" id=\"ref-for-objects②①\">object</a> has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-aspect-ratio\" id=\"ref-for-natural-aspect-ratio④\">natural aspect ratio</a>,\nthe missing dimension of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#concrete-object-size\" id=\"ref-for-concrete-object-size①③\">concrete object size</a> is calculated using that aspect ratio and the present dimension.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if the missing dimension is present in the object’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-dimensions\" id=\"ref-for-natural-dimensions①⑤\">natural dimensions</a>,\nthe missing dimension is taken from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#objects\" id=\"ref-for-objects②②\">object’s</a> <span id=\"ref-for-natural-dimensions①⑥\">natural dimensions</span>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, the missing dimension of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#concrete-object-size\" id=\"ref-for-concrete-object-size①④\">concrete object size</a> is taken from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#default-object-size\" id=\"ref-for-default-object-size⑥\">default object size</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#specified-size\" id=\"ref-for-specified-size⑥\">specified size</a> has no constraints:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#objects\" id=\"ref-for-objects②③\">object</a> has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#natural-dimensions\" id=\"ref-for-natural-dimensions①⑦\">natural</a> height or width,\nits size is resolved as if its <span id=\"ref-for-natural-dimensions①⑧\">natural dimensions</span> were given as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#specified-size\" id=\"ref-for-specified-size⑦\">specified size</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, its size is resolved as a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#contain-constraint\" id=\"ref-for-contain-constraint①\">contain constraint</a> against the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#default-object-size\" id=\"ref-for-default-object-size⑦\">default object size</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

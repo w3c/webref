@@ -1,0 +1,65 @@
+{
+  "spec": {
+    "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+    "url": "https://www.w3.org/TR/css-ui-3/"
+  },
+  "algorithms": [
+    {
+      "html": "The <a href=\"https://www.w3.org/TR/CSS2/visudet.html\">Visual formatting model details</a> of <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/css-ui-3/#biblio-css2\">[CSS2]</a> are written assuming <a class=\"css\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-ui-3/#propdef-box-sizing\" id=\"ref-for-propdef-box-sizing⑤\">box-sizing: content-box</a>. The following disambiguations are made to clarify the behavior for all values of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-ui-3/#propdef-box-sizing\" id=\"ref-for-propdef-box-sizing⑥\">box-sizing</a>:",
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "In <a href=\"https://www.w3.org/TR/CSS2/visudet.html#blockwidth\">10.3.3</a>, the second <q>width</q> in the following phrase is to be interpreted as <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/box.html#content-width\" id=\"ref-for-content-width\">content width</a>: <q>If <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" id=\"ref-for-propdef-width②\">width</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/CSS2/visudet.html#the-width-property\" id=\"ref-for-the-width-property①\">auto</a> and <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/box.html#propdef-border-left-width\" id=\"ref-for-propdef-border-left-width②\">border-left-width</a> + <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/box.html#propdef-padding-left\" id=\"ref-for-propdef-padding-left②\">padding-left</a> + <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" id=\"ref-for-propdef-width③\">width</a> + [...]</q>"
+        },
+        {
+          "html": "In <a href=\"https://www.w3.org/TR/CSS2/visudet.html#abs-non-replaced-width\">10.3.7</a>, <q>width</q> is to be interpreted as <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/box.html#content-width\" id=\"ref-for-content-width①\">content width</a> in the following equation: <q><a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS2/visuren.html#position-props\" id=\"ref-for-position-props\">left</a> + <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-left\" id=\"ref-for-propdef-margin-left\">margin-left</a> + <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/box.html#propdef-border-left-width\" id=\"ref-for-propdef-border-left-width③\">border-left-width</a> + <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/box.html#propdef-padding-left\" id=\"ref-for-propdef-padding-left③\">padding-left</a> + <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" id=\"ref-for-propdef-width④\">width</a> + [...]</q>"
+        },
+        {
+          "html": "In <a href=\"https://www.w3.org/TR/CSS2/visudet.html#min-max-widths\">10.4</a>, <q>width</q>, <q>height</q>, <q>min-width</q>, <q>max-width</q>, <q>min-height</q> and <q>max-height</q> are respectively to be interpreted as <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/box.html#content-width\" id=\"ref-for-content-width②\">content width</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/box.html#content-height\" id=\"ref-for-content-height\">content height</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-ui-3/#min-inner-width\" id=\"ref-for-min-inner-width\">min inner width</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-ui-3/#max-inner-width\" id=\"ref-for-max-inner-width\">max inner width</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-ui-3/#min-inner-height\" id=\"ref-for-min-inner-height\">min inner height</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-ui-3/#max-inner-height\" id=\"ref-for-max-inner-height\">max inner height</a> in the following phrases:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<q>The tentative used width is calculated [...]</q>"
+            },
+            {
+              "html": "<q>If the tentative used width is greater than <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-width\" id=\"ref-for-propdef-max-width②\">max-width</a>, the rules above are applied again, but this time using the computed value of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-width\" id=\"ref-for-propdef-max-width③\">max-width</a> as the computed value for <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" id=\"ref-for-propdef-width⑤\">width</a>.</q>"
+            },
+            {
+              "html": "<q>If the resulting width is smaller than <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-width\" id=\"ref-for-propdef-min-width②\">min-width</a>, the rules above are applied again, but this time using the value of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-width\" id=\"ref-for-propdef-min-width③\">min-width</a> as the computed value for <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" id=\"ref-for-propdef-width⑥\">width</a>.</q>"
+            },
+            {
+              "html": "<q>Select from the table the resolved height and width values for the appropriate constraint violation. Take the max-width and max-height as max(min, max) so that min ≤ max holds true. In this table w and h stand for the results of the width and height computations [...]</q>"
+            },
+            {
+              "html": "All instances of these words in the table"
+            },
+            {
+              "html": "<q>Then apply the rules under \"Calculating widths and margins\" above, as if <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" id=\"ref-for-propdef-width⑦\">width</a> were computed as this value.</q>"
+            }
+          ]
+        },
+        {
+          "html": "In <a href=\"https://www.w3.org/TR/CSS2/visudet.html#abs-non-replaced-height\">10.6.4</a>, <q>height</q> is to be interpreted as <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/box.html#content-height\" id=\"ref-for-content-height①\">content height</a> in the following equation: <q><a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS2/visuren.html#position-props\" id=\"ref-for-position-props①\">top</a> + <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-top\" id=\"ref-for-propdef-margin-top\">margin-top</a> + <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/box.html#propdef-border-top-width\" id=\"ref-for-propdef-border-top-width②\">border-top-width</a> + <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/box.html#propdef-padding-top\" id=\"ref-for-propdef-padding-top②\">padding-top</a> + <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-height\" id=\"ref-for-propdef-height②\">height</a> + [...]</q>"
+        },
+        {
+          "html": "In <a href=\"https://www.w3.org/TR/CSS2/visudet.html#min-max-heights\">10.7</a>, <q>width</q>, <q>height</q>, <q>min-height</q> and <q>max-height</q> are respectively to be interpreted as <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/box.html#content-width\" id=\"ref-for-content-width③\">content width</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/box.html#content-height\" id=\"ref-for-content-height②\">content height</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-ui-3/#min-inner-height\" id=\"ref-for-min-inner-height①\">min inner height</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-ui-3/#max-inner-height\" id=\"ref-for-max-inner-height①\">max inner height</a> in the following phrases:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<q>The tentative used height is calculated [...]</q>"
+            },
+            {
+              "html": "<q>If this tentative height is greater than <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-height\" id=\"ref-for-propdef-max-height②\">max-height</a>, the rules above are applied again, but this time using the value of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-height\" id=\"ref-for-propdef-max-height③\">max-height</a> as the computed value for <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-height\" id=\"ref-for-propdef-height③\">height</a>.</q>"
+            },
+            {
+              "html": "<q>If the resulting height is smaller than <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-height\" id=\"ref-for-propdef-min-height②\">min-height</a>, the rules above are applied again, but this time using the value of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-height\" id=\"ref-for-propdef-min-height③\">min-height</a> as the computed value for <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-height\" id=\"ref-for-propdef-height④\">height</a>.</q>"
+            },
+            {
+              "html": "<q>[...] use the algorithm under Minimum and maximum widths above to find the used width and height. Then apply the rules under \"Computing heights and margins\" above, using the resulting width and height as if they were the computed values.</q>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

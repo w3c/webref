@@ -1,0 +1,559 @@
+{
+  "spec": {
+    "title": "Web Application Manifest",
+    "url": "https://www.w3.org/TR/appmanifest/"
+  },
+  "algorithms": [
+    {
+      "name": "process the dir member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-the-dir-member",
+      "html": "To <dfn id=\"dfn-process-the-dir-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>dir</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-1\">ordered map</a>\n          <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-2\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"dir\"] to \"auto\"."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"dir\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-1\">exist</a> or if <var data-type=\"ordered map\">json</var>[\"dir\"] is not\n          a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-1\">string</a>, return."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-text-direction-list\" class=\"internalDFN\" id=\"ref-for-dfn-text-direction-list-1\">text-direction list</a> doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-index-term-contain-for-list-1\">contain</a>\n          <var data-type=\"ordered map\">json</var>[\"dir\"], return."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"dir\"] to <var data-type=\"ordered map\">json</var>[\"dir\"]."
+        }
+      ]
+    },
+    {
+      "name": "process the lang member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-the-lang-member",
+      "html": "To <dfn id=\"dfn-process-the-lang-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>lang</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-3\">ordered map</a>\n          <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-4\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"lang\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-2\">exist</a> or if <var data-type=\"ordered map\">json</var>[\"lang\"] is\n          not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-4\">string</a>, return."
+        },
+        {
+          "html": "If calling <a href=\"https://tc39.es/ecma402/#sec-isstructurallyvalidlanguagetag\" id=\"ref-for-index-term-isstructurallyvalidlanguagetag-1\">IsStructurallyValidLanguageTag</a>\n          with <var data-type=\"ordered map\">json</var>[\"lang\"] returns <code>false</code>, return."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"lang\"] to the result of calling the\n            <a href=\"https://tc39.es/ecma402/#sec-canonicalizeunicodelocaleid\" id=\"ref-for-index-term-canonicalizeunicodelocaleid-1\">CanonicalizeUnicodeLocaleId</a>\n            abstract operation with <var data-type=\"ordered map\">json</var>[\"lang\"]."
+        }
+      ]
+    },
+    {
+      "name": "process the scope member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-the-scope-member",
+      "html": "To <dfn id=\"dfn-process-the-scope-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>scope</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-5\">ordered map</a>\n          <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-6\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"scope\"] to the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL Parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-1\">parsing</a>\n          \".\" with <var data-type=\"ordered map\">manifest</var>[\"start_url\"] as the base URL."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"scope\"] is the empty string, then return."
+        },
+        {
+          "html": "Let <var data-type=\"URL\">scope</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL Parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-2\">parsing</a>\n          <var data-type=\"ordered map\">json</var>[\"scope\"] with <var>manifest URL</var> as the base URL."
+        },
+        {
+          "html": "If <var data-type=\"URL\">scope</var> is failure, return."
+        },
+        {
+          "html": "Set <var data-type=\"URL\">scope</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-index-term-query-for-url-1\">query</a> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-index-term-fragment-for-url-1\">fragment</a> to null."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">manifest</var>[\"start_url\"] is not <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-within-scope\" class=\"internalDFN\" id=\"ref-for-dfn-within-scope-4\">within scope</a> of\n          <var data-type=\"URL\">scope</var>, return."
+        },
+        {
+          "html": "Otherwise, set <var data-type=\"ordered map\">manifest</var>[\"scope\"] to <var data-type=\"URL\">scope</var>."
+        }
+      ]
+    },
+    {
+      "name": "process the display member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-the-display-member",
+      "html": "To <dfn id=\"dfn-process-the-display-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>display</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-7\">ordered map</a>\n          <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-8\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"display\"] to \"browser\"."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"display\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-3\">exist</a> or <var data-type=\"ordered map\">json</var>[\"display\"]\n          is not a a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-8\">string</a>, return."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-display-modes-list\" class=\"internalDFN\" id=\"ref-for-dfn-display-modes-list-1\">display modes list</a> doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-index-term-contain-for-list-2\">contain</a>\n          <var data-type=\"ordered map\">json</var>[\"display\"], return."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"display\"] to <var data-type=\"ordered map\">json</var>[\"display\"]."
+        }
+      ]
+    },
+    {
+      "name": "process the orientation member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-the-orientation-member",
+      "html": "To <dfn id=\"dfn-process-the-orientation-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>orientation</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-9\">ordered map</a>\n          <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-10\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"orientation\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-4\">exist</a> or\n          <var data-type=\"ordered map\">json</var>[\"orientation\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-10\">string</a>, return."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"orientation\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-index-term-contain-for-list-3\">contain</a> any of the\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-orientation-values\" class=\"internalDFN\" id=\"ref-for-dfn-orientation-values-1\">orientation values</a>, return."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"orientation\"] to <var data-type=\"ordered map\">json</var>[\"orientation\"]."
+        }
+      ]
+    },
+    {
+      "name": "process the start_url member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-the-start_url-member",
+      "html": "To <dfn id=\"dfn-process-the-start_url-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>start_url</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-11\">ordered map</a>\n          <var data-type=\"ordered map\">json</var>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-12\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-index-term-url-2\">URL</a>\n          <var data-type=\"URL\">manifest URL</var>, and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-index-term-url-3\">URL</a> <var data-type=\"URL\">document URL</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"start_url\"] to <var data-type=\"URL\">document URL</var>."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"start_url\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-5\">exist</a> or\n          <var data-type=\"ordered map\">json</var>[\"start_url\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-12\">string</a>, return."
+        },
+        {
+          "html": "If the type of <var data-type=\"ordered map\">json</var>[\"start_url\"] is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-13\">string</a>, or if\n          <var data-type=\"ordered map\">json</var>[\"start_url\"] is the empty string, return."
+        },
+        {
+          "html": "Let <var data-type=\"URL\">start URL</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL Parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-3\">parsing</a>\n          <var data-type=\"ordered map\">json</var>[\"start_url\"], using <var data-type=\"URL\">manifest URL</var> as the base URL."
+        },
+        {
+          "html": "If <var data-type=\"URL\">start URL</var> is failure, return."
+        },
+        {
+          "html": "If <var data-type=\"URL\">start URL</var> is not <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-index-term-same-origin-1\">same origin</a> as <var data-type=\"URL\">document URL</var>,\n          return."
+        },
+        {
+          "html": "Otherwise, set <var data-type=\"ordered map\">manifest</var>[\"start_url\"] to <var data-type=\"URL\">start URL</var>."
+        }
+      ]
+    },
+    {
+      "name": "process the id member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-the-id-member",
+      "html": "To <dfn id=\"dfn-process-the-id-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>id</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-13\">ordered map</a>\n          <var data-type=\"JSON\">json</var>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-14\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"id\"] to <var data-type=\"ordered map\">manifest</var>[\"start_url\"]."
+        },
+        {
+          "html": "If the type of <var data-type=\"JSON\">json</var>[\"id\"] is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-15\">string</a>, return."
+        },
+        {
+          "html": "If <var data-type=\"JSON\">json</var>[\"id\"] is the empty string, return."
+        },
+        {
+          "html": "Let <var>base origin</var> be <var data-type=\"ordered map\">manifest</var>[\"start_url\"]'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-index-term-origin-for-url-1\">origin</a>."
+        },
+        {
+          "html": "Let <var data-type=\"URL\">id</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL Parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-5\">parsing</a> <var data-type=\"JSON\">json</var>[\"id\"]\n          with <var>base origin</var> as the base URL."
+        },
+        {
+          "html": "If <var data-type=\"URL\">id</var> is failure, return."
+        },
+        {
+          "html": "If <var data-type=\"URL\">id</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-index-term-same-origin-2\">same origin</a> as <var data-type=\"ordered map\">manifest</var>[\"start_url\"],\n          return."
+        },
+        {
+          "html": "Set <var data-type=\"URL\">id</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-index-term-fragment-for-url-5\">fragment</a> to null."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"id\"] to <var data-type=\"URL\">id</var>."
+        }
+      ]
+    },
+    {
+      "name": "process the related_applications member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-the-related_applications-member",
+      "html": "To <dfn id=\"dfn-process-the-related_applications-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>related_applications</code> member</dfn>, given\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-15\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-16\">ordered map</a>\n          <var data-type=\"ordered map\">manifest</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"list\">relatedApplications</var> be a new <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-index-term-list-2\">list</a>."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"related_applications\"] to <var data-type=\"list\">relatedApplications</var>."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"related_applications\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-6\">exist</a> or\n          <var data-type=\"ordered map\">json</var>[\"related_applications\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-index-term-list-3\">list</a>, return."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-1\">For each</a> <var>app</var> of\n          <var data-type=\"ordered map\">json</var>[\"related_applications\"]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If neither <var>app</var>[\"id\"] nor <var>app</var>[\"url\"] are\n              missing:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var>app</var>[\"url\"] to the result of running\n                  <a href=\"https://www.w3.org/TR/appmanifest/#dfn-process-the-url-member-of-an-application\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-url-member-of-an-application-1\">process the <code>url</code> member of an application</a> given <var>\n                    app</var>[\"url\"]."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-index-term-append-for-list-1\">append</a> <var>app</var> to\n                  <var data-type=\"list\">relatedApplications</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Set <var data-type=\"list\">relatedApplications</var>."
+        }
+      ]
+    },
+    {
+      "name": "process the shortcuts member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-the-shortcuts-member",
+      "html": "To <dfn id=\"dfn-process-the-shortcuts-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>shortcuts</code> member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-17\">ordered map</a>\n          <var data-type=\"ordered map\">json</var>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-18\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, and\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-index-term-url-6\">URL</a> <var data-type=\"URL\">manifest URL</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"list\">processedShortcuts</var> be a new <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-index-term-list-5\">list</a>."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"shortcuts\"] to <var data-type=\"list\">processedShortcuts</var>."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"shortcuts\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-7\">exist</a> or\n          <var data-type=\"ordered map\">json</var>[\"shortcuts\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-index-term-list-6\">list</a>, return."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-2\">For each</a> <var data-type=\"ordered map\">entry</var> of <var data-type=\"ordered map\">json</var>[\"shortcuts\"]:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"ordered map\">shortcut</var> be <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-a-shortcut\" class=\"internalDFN\" id=\"ref-for-dfn-process-a-shortcut-1\">process a shortcut</a> with\n              <var data-type=\"ordered map\">entry</var> and <var data-type=\"ordered map\">manifest</var>[\"scope\"]."
+            },
+            {
+              "html": "If <var data-type=\"ordered map\">shortcut</var> is failure, continue."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-index-term-append-for-list-2\">Append</a> <var data-type=\"ordered map\">shortcut</var> to <var data-type=\"list\">processedShortcuts</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Document/processed manifest",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-processed-manifest",
+      "html": "The steps for <dfn data-export=\"\" data-local-lt=\"processing\" data-lt=\"processing a manifest|processing\" id=\"dfn-processing-a-manifest\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">processing a manifest</dfn> are given by the following\n            algorithm. The algorithm takes a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-index-term-url-7\">URL</a> <var data-type=\"URL\">document URL</var>, a\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-index-term-url-8\">URL</a> <var data-type=\"URL\">manifest URL</var>, and a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-index-term-byte-sequence-1\">byte sequence</a> <var>bodyBytes</var>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>json</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#parse-json-bytes-to-an-infra-value\" id=\"ref-for-index-term-parse-json-bytes-to-an-infra-value-1\">parse JSON bytes to an Infra value</a> passing <var>bodyBytes</var>."
+        },
+        {
+          "html": "If the <var>json</var> is a parsing exception, or <var>json</var> is not an\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-19\">ordered map</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var data-type=\"ordered map\">json</var> to an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-20\">ordered map</a>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var data-type=\"ordered map\">manifest</var> be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-21\">ordered map</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-the-dir-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-dir-member-1\">Process the <code>dir</code> member</a> passing <var data-type=\"ordered map\">json</var> and <var data-type=\"ordered map\">manifest</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-the-lang-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-lang-member-1\">Process the <code>lang</code> member</a> passing <var data-type=\"ordered map\">json</var> and <var data-type=\"ordered map\">manifest</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-a-text-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-a-text-member-3\">Process a text member</a> passing <var data-type=\"ordered map\">json</var>, <var data-type=\"ordered map\">manifest</var>, and\n            \"name\"."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-a-text-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-a-text-member-4\">Process a text member</a> passing <var data-type=\"ordered map\">json</var>, <var data-type=\"ordered map\">manifest</var>, and\n            \"short_name\"."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-the-start_url-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-start_url-member-1\">Process the <code>start_url</code> member</a> passing <var data-type=\"ordered map\">json</var>, <var data-type=\"ordered map\">manifest</var>,\n            <var data-type=\"URL\">manifest URL</var>, and <var data-type=\"URL\">document URL</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-the-id-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-id-member-3\">Process the <code>id</code> member</a> passing <var data-type=\"ordered map\">json</var> and <var data-type=\"ordered map\">manifest</var>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-index-term-document-1\">document</a>'s <a data-link-type=\"dfn|abstract-op\" data-lt=\"document\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-index-term-document-2\">processed manifest</a> is not\n            null, and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-index-term-document-3\">document</a>'s <a data-link-type=\"dfn|abstract-op\" data-lt=\"document\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-index-term-document-4\">processed manifest</a>'s id is\n            not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-equals\" id=\"ref-for-index-term-equal-for-url-2\">equal</a> to <var data-type=\"ordered map\">manifest</var>[\"id\"], return."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-the-scope-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-scope-member-1\">Process the <code>scope</code> member</a> passing <var data-type=\"ordered map\">json</var>, <var data-type=\"ordered map\">manifest</var>, and\n            <var data-type=\"URL\">manifest URL</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-a-color-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-a-color-member-3\">Process a color member</a> passing <var data-type=\"ordered map\">json</var>, <var data-type=\"ordered map\">manifest</var>, and\n            \"theme_color\"."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-a-color-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-a-color-member-4\">Process a color member</a> passing <var data-type=\"ordered map\">json</var>, <var data-type=\"ordered map\">manifest</var>, and\n            \"background_color\"."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-the-display-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-display-member-1\">Process the <code>display</code> member</a> passing <var data-type=\"ordered map\">json</var> and <var data-type=\"ordered map\">manifest</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-image-resources\" class=\"internalDFN\" id=\"ref-for-dfn-process-image-resources-2\">Process image resources</a> passing <var data-type=\"ordered map\">json</var>[\"icons\"],\n            <var data-type=\"ordered map\">manifest</var>, <var data-type=\"URL\">manifest URL</var>, and \"icons\"."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-the-orientation-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-orientation-member-1\">Process the <code>orientation</code> member</a> passing <var data-type=\"ordered map\">json</var>,\n            <var data-type=\"ordered map\">manifest</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-the-related_applications-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-related_applications-member-1\">Process the <code>related_applications</code> member</a> passing <var data-type=\"ordered map\">json</var>\n            and <var data-type=\"ordered map\">manifest</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-the-shortcuts-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-shortcuts-member-1\">Process the <code>shortcuts</code> member</a> passing <var data-type=\"ordered map\">json</var>, <var data-type=\"ordered map\">manifest</var>,\n            and <var data-type=\"URL\">manifest URL</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processing-extension-point\" class=\"internalDFN\" id=\"ref-for-dfn-processing-extension-point-2\">Processing extension-point</a>: process\n            any proprietary and/or other supported members at this point in the\n            algorithm."
+        },
+        {
+          "html": "Let <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-index-term-document-5\">document</a>'s <dfn data-export=\"\" data-dfn-for=\"Document\" id=\"dfn-processed-manifest\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">\n              processed manifest</dfn> be <var data-type=\"ordered map\">manifest</var>."
+        }
+      ]
+    },
+    {
+      "name": "process a color member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-a-color-member",
+      "html": "To <dfn id=\"dfn-process-a-color-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process a color member</dfn>, using <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-22\">ordered map</a>\n            <var data-type=\"ordered map\">json</var>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-23\">ordered map</a> <var data-type=\"ordered map\">map</var>, and\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-16\">string</a> <var data-type=\"string\">member</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[member] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-8\">exist</a> or <var data-type=\"ordered map\">json</var>[member] is\n            not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-17\">string</a>, return."
+        },
+        {
+          "html": "Let <var>color</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-index-term-parsing-for-css-1\">parsing</a> the value of\n            <var data-type=\"ordered map\">json</var>[member] as a CSS color."
+        },
+        {
+          "html": "If <var>color</var> is failure, return."
+        },
+        {
+          "html": "If <var>color</var> can be converted to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#sRGB-space\" id=\"ref-for-index-term-srgb-4\">sRGB</a> using solely\n            information the user agent inherently knows, then convert <var>color</var>\n            to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#sRGB-space\" id=\"ref-for-index-term-srgb-5\">sRGB</a>."
+        },
+        {
+          "html": "If <var>color</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#sRGB-space\" id=\"ref-for-index-term-srgb-6\">sRGB</a> color, return."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">map</var>[member] to <var>color</var>."
+        }
+      ]
+    },
+    {
+      "name": "process a text member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-a-text-member",
+      "html": "To <dfn id=\"dfn-process-a-text-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process a text member</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-24\">ordered map</a>\n            <var data-type=\"ordered map\">json</var>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-25\">ordered map</a> <var data-type=\"ordered map\">map</var>, and\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-18\">string</a> <var data-type=\"string\">member</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[<var data-type=\"string\">member</var>] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-9\">exists</a> or <var data-type=\"ordered map\">json</var>[<var data-type=\"string\">member</var>]\n            is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-19\">string</a>, return."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">map</var>[member] to the value of <var data-type=\"ordered map\">json</var>[<var data-type=\"string\">member</var>]."
+        }
+      ]
+    },
+    {
+      "name": "determine the purpose of an image",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-determine-the-purpose-of-an-image",
+      "html": "To <dfn id=\"dfn-determine-the-purpose-of-an-image\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">determine the purpose of an image</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-26\">ordered map</a> <var data-type=\"image\">json</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"image\">json</var>[\"purpose\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-10\">exist</a> or if\n          <var data-type=\"image\">json</var>[\"purpose\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-20\">string</a>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "Return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-index-term-set-1\">set</a> « \"any\" »."
+            }
+          ]
+        },
+        {
+          "html": "Let <var data-type=\"list<string>\">keywords</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#split-on-ascii-whitespace\" id=\"ref-for-index-term-split-on-ascii-whitespace-1\">split on ASCII whitespace</a> <var data-type=\"image\">json</var>[\"purpose\"]."
+        },
+        {
+          "html": "Let <var data-type=\"set\">purposes</var> be new <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-index-term-set-2\">set</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-3\">For each</a> <var data-type=\"string\">keyword</var> of <var data-type=\"list<string>\">keywords</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-icon-purposes-list\" class=\"internalDFN\" id=\"ref-for-dfn-icon-purposes-list-1\">icon purposes list</a> doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-index-term-contain-for-list-4\">contain</a> <var data-type=\"string\">keyword</var>,\n              then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-index-term-continue-for-iteration-1\">continue</a>."
+            },
+            {
+              "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-index-term-append-for-set-1\">append</a> <var data-type=\"string\">keyword</var> to <var data-type=\"set\">purposes</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var data-type=\"set\">purposes</var> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-index-term-is-empty-for-list-1\">is empty</a>, then return failure."
+        },
+        {
+          "html": "Return <var data-type=\"set\">purposes</var>."
+        }
+      ]
+    },
+    {
+      "name": "process image resources",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-image-resources",
+      "html": "To <dfn id=\"dfn-process-image-resources\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process image resources</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-index-term-list-8\">list</a> <var data-type=\"list\">images</var>,\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-27\">ordered map</a> <var data-type=\"ordered map\">map</var>, <var data-type=\"URL\">manifest URL</var> and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-21\">string</a>\n          <var data-type=\"string\">member</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"List<Image&nbsp;Resources>\">imageResources</var> be a new\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-index-term-list-9\">list</a>."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">map</var>[member] to <var data-type=\"List<Image&nbsp;Resources>\">imageResources</var>."
+        },
+        {
+          "html": "If <var data-type=\"list\">images</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-index-term-list-10\">list</a>, return."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-4\">For each</a> <var data-type=\"Manifest image resource\">potential image</var> of\n          <var data-type=\"list\">images</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"ordered map\">image</var> be the result of running <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-process-an-image-resource-from-json\" id=\"ref-for-index-term-process-an-image-resource-from-json-1\">process an image resource from JSON</a> given <var data-type=\"Manifest image resource\">potential image</var> and <var>manifest\n              URL</var>."
+            },
+            {
+              "html": "If <var data-type=\"ordered map\">image</var> is failure, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-index-term-continue-for-iteration-2\">continue</a>."
+            },
+            {
+              "html": "Let <var data-type=\"set\">purposes</var> be <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-determine-the-purpose-of-an-image\" class=\"internalDFN\" id=\"ref-for-dfn-determine-the-purpose-of-an-image-1\">determine the purpose of an image</a>\n              passing <var data-type=\"Manifest image resource\">potential image</var>."
+            },
+            {
+              "html": "If <var data-type=\"set\">purposes</var> is failure, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-index-term-continue-for-iteration-3\">continue</a>."
+            },
+            {
+              "html": "Set <var data-type=\"ordered map\">image</var>[\"purpose\"] to <var data-type=\"set\">purposes</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-index-term-append-for-list-3\">Append</a> <var data-type=\"ordered map\">image</var> to <var data-type=\"List<Image&nbsp;Resources>\">imageResources</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "process a shortcut",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-a-shortcut",
+      "html": "To <dfn id=\"dfn-process-a-shortcut\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process a shortcut</dfn>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-29\">ordered map</a> <var data-type=\"ordered\n          map\">item</var> and <var data-type=\"URL\">scope</var>,:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Return failure if it's the case that:\n            <ul>\n              <li><var data-type=\"ordered\n          map\">item</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-30\">ordered map</a>.\n              </li>\n              <li><var data-type=\"ordered\n          map\">item</var>[\"name\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-11\">exist</a>.\n              </li>\n              <li><var data-type=\"ordered\n          map\">item</var>[\"name\"] is the empty string.\n              </li>\n              <li><var data-type=\"ordered\n          map\">item</var>[\"url\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-exist-for-map-12\">exist</a>.\n              </li>\n              <li><var data-type=\"ordered\n          map\">item</var>[\"url\"] is not a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-index-term-string-25\">string</a>.\n              </li>\n            </ul>"
+        },
+        {
+          "html": "Let <var data-type=\"URL\">url</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL Parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-6\">parsing</a>\n          <var data-type=\"ordered\n          map\">item</var>[\"url\"] with <var>manifest URL</var> as the base URL."
+        },
+        {
+          "html": "If <var data-type=\"URL\">url</var> is failure, return failure."
+        },
+        {
+          "html": "If <var data-type=\"URL\">url</var> is not <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-within-scope-0\" class=\"internalDFN\" id=\"ref-for-dfn-within-scope-0-3\">within scope</a> of <var data-type=\"URL\">scope</var>, return\n          failure."
+        },
+        {
+          "html": "Let <var data-type=\"ordered map\">shortcut</var> be <var>ordered map</var> «[ \"url\" → <var data-type=\"URL\">url</var>,\n          \"name\" → <var data-type=\"ordered\n          map\">item</var>[\"name\"] ]»."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-process-image-resources\" class=\"internalDFN\" id=\"ref-for-dfn-process-image-resources-3\">Process image resources</a> passing <var data-type=\"ordered\n          map\">item</var>[\"icons\"], <var data-type=\"ordered map\">shortcut</var>,\n          <var>manifest URL</var>, and \"icons\"."
+        },
+        {
+          "html": "Return <var data-type=\"ordered map\">shortcut</var>."
+        }
+      ]
+    },
+    {
+      "name": "process the url member of an application",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-process-the-url-member-of-an-application",
+      "html": "To <dfn id=\"dfn-process-the-url-member-of-an-application\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>url</code> member of an application</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>application URL</var> is missing, return null."
+        },
+        {
+          "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL Parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-7\">parse</a> <var>application URL</var> and if\n          the result is not failure, return the result. Otherwise return null."
+        }
+      ]
+    },
+    {
+      "html": "Other specifications <em class=\"rfc2119\">MAY</em> replace this algorithm's steps with their\n          own steps. This replacement will take effect for all invocations of\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-launching-a-web-application\" class=\"internalDFN\" id=\"ref-for-dfn-launching-a-web-application-4\">launch a web application</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Return the result of running the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-create-a-new-application-context\" class=\"internalDFN\" id=\"ref-for-dfn-create-a-new-application-context-2\">create a new application context</a> passing <var data-type=\"processed manifest\">manifest</var>, <var data-type=\"URL\">target URL</var> and <var>POST\n          resource</var>."
+        }
+      ]
+    },
+    {
+      "name": "create a new application context",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-create-a-new-application-context",
+      "html": "The steps to <dfn data-export=\"\" id=\"dfn-create-a-new-application-context\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">create a new application\n          context</dfn> is given by the following algorithm. The algorithm\n          takes a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processed-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-processed-manifest-6\">processed manifest</a> <var data-type=\"processed\n          manifest\">manifest</var>, an optional <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-index-term-url-11\">URL</a> <var data-type=\"URL\">target URL</var>, an optional <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#post-resource\" id=\"ref-for-index-term-post-resource-2\">POST resource</a> <var>POST resource</var> and returns an <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-application-context\" class=\"internalDFN\" id=\"ref-for-dfn-application-context-7\">application context</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"URL\">target URL</var> was not given, set <var data-type=\"URL\">target URL</var> to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-start-url\" class=\"internalDFN\" id=\"ref-for-dfn-start-url-9\">start URL</a>."
+        },
+        {
+          "html": "Let <var>traversable</var> be the result of running the steps to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#create-a-fresh-top-level-traversable\" id=\"ref-for-index-term-create-a-fresh-top-level-traversable-1\">create a fresh top-level traversable</a> with <var data-type=\"URL\">target URL</var> and <var>POST\n          resource</var>."
+        },
+        {
+          "html": "Let <var>browsing context</var> be the <var>traversable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/#nav-bc\" id=\"ref-for-index-term-active-browsing-context-1\">active browsing context</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-applied\" class=\"internalDFN\" id=\"ref-for-dfn-applied-9\">Apply</a> <var data-type=\"processed\n          manifest\">manifest</var> to <var>browsing context</var>."
+        },
+        {
+          "html": "Return <var>browsing context</var>."
+        }
+      ]
+    },
+    {
+      "name": "URL/within scope",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-within-scope",
+      "html": "A <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-index-term-url-12\">URL</a> <var data-type=\"URL\">target</var> is said to be <dfn data-dfn-for=\"URL\" data-export=\"\" id=\"dfn-within-scope\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">within scope</dfn> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-index-term-url-13\">URL</a> <var data-type=\"URL\">scope</var> if the\n        following algorithm returns <code>true</code>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"URL\">target</var> and <var data-type=\"URL\">scope</var> are not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-index-term-same-origin-5\">same origin</a>, return <code>false</code>."
+        },
+        {
+          "html": "Let <var data-type=\"string\">scopePath</var> be the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-index-term-concatenation-for-string-1\">concatenation</a> of\n        <var>scopes</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-index-term-path-for-url-1\">path</a> using U+002F (/) as the separator."
+        },
+        {
+          "html": "Let <var data-type=\"string\">targetPath</var> be the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-index-term-concatenation-for-string-2\">concatenation</a> of\n        <var data-type=\"URL\">target</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-index-term-path-for-url-2\">path</a> using U+002F (/) as the separator."
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-index-term-boolean-type-2\">boolean</a> indicating whether <var data-type=\"string\">targetPath</var> starts with\n        <var data-type=\"string\">scopePath</var>."
+        }
+      ]
+    },
+    {
+      "name": "steps for determining the web app's chosen display mode",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-steps-for-determining-the-web-app-s-chosen-display-mode",
+      "html": "The <dfn id=\"dfn-steps-for-determining-the-web-app-s-chosen-display-mode\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\" class=\"respec-offending-element\" title=\"Found definition for &quot;steps for determining the web app's chosen display mode&quot;, but nothing links to it. This is usually a spec bug!\">steps for determining the web app's chosen display mode</dfn>\n        is given by the following algorithm. The algorithm takes a\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processed-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-processed-manifest-11\">processed manifest</a> <var data-type=\"processed manifest\">manifest</var> and\n        returns a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-display-mode\" class=\"internalDFN\" id=\"ref-for-dfn-display-mode-15\">display mode</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processing-extension-point\" class=\"internalDFN\" id=\"ref-for-dfn-processing-extension-point-3\">processing extension-point</a>: process any\n        proprietary and/or other supported display modes at this point in the\n        algorithm."
+        },
+        {
+          "html": "If the user agent supports <var data-type=\"processed manifest\">manifest</var>[\"display\"], then return\n        <var data-type=\"processed manifest\">manifest</var>[\"display\"]."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-5\">For each</a> <var>fallback_mode</var> of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/appmanifest/#dfn-fallback-chain\" class=\"internalDFN\" id=\"ref-for-dfn-fallback-chain-2\">fallback chain</a> of\n        <var data-type=\"processed manifest\">manifest</var>[\"display\"]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the user agent supports the <var>fallback_mode</var>, then return\n            <var>fallback_mode</var>."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "spec": {
+    "title": "CSS Transforms Module Level 2",
+    "url": "https://www.w3.org/TR/css-transforms-2/"
+  },
+  "algorithms": [
+    {
+      "html": "A <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-transforms-1/#typedef-transform-list\" id=\"ref-for-typedef-transform-list①\">&lt;transform-list&gt;</a> for the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed value</a> is serialized to either one <a class=\"production css\" data-link-type=\"function\" href=\"https://www.w3.org/TR/css-transforms-1/#funcdef-transform-matrix\" id=\"ref-for-funcdef-transform-matrix\">&lt;matrix()&gt;</a> or one <a class=\"production css\" data-link-type=\"function\" href=\"https://www.w3.org/TR/css-transforms-2/#funcdef-matrix3d\" id=\"ref-for-funcdef-matrix3d\">&lt;matrix3d()&gt;</a> function by the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>transform</var> be a 4x4 matrix initialized to the identity matrix. The elements <var> m11</var>, <var>m22</var>, <var>m33</var> and <var>m44</var> of <var>transform</var> must be set to <span class=\"css\">1</span> all other elements of <var>transform</var> must be set to <span class=\"css\">0</span>.</p>"
+        },
+        {
+          "html": "<p>Post-multiply all <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-transforms-2/#typedef-transform-function\" id=\"ref-for-typedef-transform-function\">&lt;transform-function&gt;</a>s in <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-transforms-1/#typedef-transform-list\" id=\"ref-for-typedef-transform-list②\">&lt;transform-list&gt;</a> to <var>transform</var>.</p>"
+        },
+        {
+          "html": "Chose between <a class=\"production css\" data-link-type=\"function\" href=\"https://www.w3.org/TR/css-transforms-1/#funcdef-transform-matrix\" id=\"ref-for-funcdef-transform-matrix①\">&lt;matrix()&gt;</a> or <a class=\"production css\" data-link-type=\"function\" href=\"https://www.w3.org/TR/css-transforms-2/#funcdef-matrix3d\" id=\"ref-for-funcdef-matrix3d①\">&lt;matrix3d()&gt;</a> serialization:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If transform is a 2D matrix",
+                  "html": "Serialize <var>transform</var> to a <a class=\"production css\" data-link-type=\"function\" href=\"https://www.w3.org/TR/css-transforms-1/#funcdef-transform-matrix\" id=\"ref-for-funcdef-transform-matrix②\">&lt;matrix()&gt;</a> function."
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "Serialize <var>transform</var> to a <a class=\"production css\" data-link-type=\"function\" href=\"https://www.w3.org/TR/css-transforms-2/#funcdef-matrix3d\" id=\"ref-for-funcdef-matrix3d②\">&lt;matrix3d()&gt;</a> function."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "With 3D transforms, the Z component of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-1/#propdef-transform-origin\" id=\"ref-for-propdef-transform-origin①\">transform-origin</a> affects the result, so the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transforms-1/#transformation-matrix\" id=\"ref-for-transformation-matrix\">transformation matrix</a> is computed from the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-1/#propdef-transform\" id=\"ref-for-propdef-transform⑤\">transform</a> and <span class=\"property\" id=\"ref-for-propdef-transform-origin②\">transform-origin</span> properties as follows:",
+      "rationale": "start",
+      "steps": [
+        {
+          "html": "<p>Start with the identity matrix.</p>"
+        },
+        {
+          "html": "<p>Translate by the computed X, Y and Z of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-1/#propdef-transform-origin\" id=\"ref-for-propdef-transform-origin③\">transform-origin</a></p>"
+        },
+        {
+          "html": "<p>Multiply by each of the transform functions in <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-1/#propdef-transform\" id=\"ref-for-propdef-transform⑥\">transform</a> property from left to right</p>"
+        },
+        {
+          "html": "<p>Translate by the negated computed X, Y and Z values of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-1/#propdef-transform-origin\" id=\"ref-for-propdef-transform-origin④\">transform-origin</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transforms-2/#perspective-matrix\" id=\"ref-for-perspective-matrix\">perspective matrix</a> is computed as follows:",
+      "rationale": "start",
+      "steps": [
+        {
+          "html": "<p>Start with the identity matrix.</p>"
+        },
+        {
+          "html": "<p>Translate by the computed X and Y values of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-2/#propdef-perspective-origin\" id=\"ref-for-propdef-perspective-origin⑤\">perspective-origin</a></p>"
+        },
+        {
+          "html": "<p>Multiply by the matrix that would be obtained from the <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-transforms-2/#funcdef-perspective\" id=\"ref-for-funcdef-perspective①\">perspective()</a> transform function, where the length is provided by the value of the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-2/#propdef-perspective\" id=\"ref-for-propdef-perspective⑧\">perspective</a> property</p>"
+        },
+        {
+          "html": "<p>Translate by the negated computed X and Y values of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-2/#propdef-perspective-origin\" id=\"ref-for-propdef-perspective-origin⑥\">perspective-origin</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "The final value of the transform used to render an element in a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transforms-2/#3d-rendering-context\" id=\"ref-for-3d-rendering-context①⓪\">3D rendering context</a> is computed by accumulating an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transforms-2/#accumulated-3d-transformation-matrix\" id=\"ref-for-accumulated-3d-transformation-matrix②\">accumulated 3D transformation matrix</a> as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>transform</var> be the identity matrix.</p>"
+        },
+        {
+          "html": "<p>Let <var>current element</var> be the transformed element.</p>"
+        },
+        {
+          "html": "<p>Let <var>parent element</var> be the parent element of the transformed element.</p>"
+        },
+        {
+          "html": "While <var>current element</var> is an element in the transformed element’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transforms-2/#3d-rendering-context\" id=\"ref-for-3d-rendering-context①①\">3D rendering context</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>current element</var> has a value for <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-1/#propdef-transform\" id=\"ref-for-propdef-transform⑦\">transform</a> which is not <span class=\"css\">none</span>, pre-multiply <var>current element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transforms-1/#transformation-matrix\" id=\"ref-for-transformation-matrix①\">transformation matrix</a> with the <var>transform</var>.</p>"
+            },
+            {
+              "html": "<p>Compute a translation matrix which represents the offset (including the scroll offset) of <var>current element</var> from its <var>parent element</var>, and pre-multiply that matrix into the <var>transform</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>parent element</var> has a value for <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-2/#propdef-perspective\" id=\"ref-for-propdef-perspective⑨\">perspective</a> which is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-transforms-2/#valdef-perspective-none\" id=\"ref-for-valdef-perspective-none\">none</a>, pre-multiply the <var>parent element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transforms-2/#perspective-matrix\" id=\"ref-for-perspective-matrix①\">perspective matrix</a> into the <var>transform</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>current element</var> be the <var>parent element</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>parent element</var> be the <var>current element</var>’s parent.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The transformation matrix is computed from the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-1/#propdef-transform\" id=\"ref-for-propdef-transform⑨\">transform</a>, <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-1/#propdef-transform-origin\" id=\"ref-for-propdef-transform-origin⑤\">transform-origin</a>, <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-2/#propdef-translate\" id=\"ref-for-propdef-translate⑧\">translate</a>, <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-2/#propdef-rotate\" id=\"ref-for-propdef-rotate⑨\">rotate</a>, <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-2/#propdef-scale\" id=\"ref-for-propdef-scale⑧\">scale</a>, and <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/motion-1/#propdef-offset\" id=\"ref-for-propdef-offset\">offset</a> properties as follows:",
+      "rationale": "start",
+      "steps": [
+        {
+          "html": "<p>Start with the identity matrix.</p>"
+        },
+        {
+          "html": "<p>Translate by the computed X, Y, and Z values of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-1/#propdef-transform-origin\" id=\"ref-for-propdef-transform-origin⑥\">transform-origin</a>.</p>"
+        },
+        {
+          "html": "<p>Translate by the computed X, Y, and Z values of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-2/#propdef-translate\" id=\"ref-for-propdef-translate⑨\">translate</a>.</p>"
+        },
+        {
+          "html": "<p>Rotate by the computed <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#angle-value\" id=\"ref-for-angle-value⑤\" title=\"Expands to: deg | grad | rad | turn\">&lt;angle&gt;</a> about the specified axis of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-2/#propdef-rotate\" id=\"ref-for-propdef-rotate①⓪\">rotate</a>.</p>"
+        },
+        {
+          "html": "<p>Scale by the computed X, Y, and Z values of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-2/#propdef-scale\" id=\"ref-for-propdef-scale⑨\">scale</a>.</p>"
+        },
+        {
+          "html": "<p>Translate and rotate by the transform specified by <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/motion-1/#propdef-offset\" id=\"ref-for-propdef-offset①\">offset</a>.</p>"
+        },
+        {
+          "html": "<p>Multiply by each of the transform functions in <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-1/#propdef-transform\" id=\"ref-for-propdef-transform①⓪\">transform</a> from left to right.</p>"
+        },
+        {
+          "html": "<p>Translate by the negated computed X, Y and Z values of <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-1/#propdef-transform-origin\" id=\"ref-for-propdef-transform-origin⑦\">transform-origin</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The visibility of an element with <a class=\"css\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-transforms-2/#propdef-backface-visibility\" id=\"ref-for-propdef-backface-visibility⑥\">backface-visibility: hidden</a> is determined as follows:",
+      "rationale": "compute",
+      "steps": [
+        {
+          "html": "<p>Compute the element’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transforms-2/#accumulated-3d-transformation-matrix\" id=\"ref-for-accumulated-3d-transformation-matrix⑦\">accumulated 3D transformation matrix</a>.</p>"
+        },
+        {
+          "html": "<p>If the component of the matrix in row 3, column 3 is negative, then the element should be hidden. Otherwise it is visible.</p>"
+        }
+      ]
+    }
+  ]
+}

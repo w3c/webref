@@ -1,0 +1,544 @@
+{
+  "spec": {
+    "title": "CSS Syntax Module Level 3",
+    "url": "https://www.w3.org/TR/css-syntax-3/"
+  },
+  "algorithms": [
+    {
+      "name": "CSS/decode bytes",
+      "href": "https://www.w3.org/TR/css-syntax-3/#css-decode-bytes",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-for=\"CSS\" data-dfn-type=\"dfn\" data-lt=\"decode bytes\" data-noexport=\"\" id=\"css-decode-bytes\">decode</dfn> a <var>stylesheet</var>’s stream of bytes into a stream of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point①⓪\">code points</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#determine-the-fallback-encoding\" id=\"ref-for-determine-the-fallback-encoding\">Determine the fallback encoding</a> of <var>stylesheet</var>,\nand let <var>fallback</var> be the result.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decode\" id=\"ref-for-decode\">Decode</a> <var>stylesheet</var>’s stream of bytes\nwith fallback encoding <var>fallback</var>,\nand return the result.</p>"
+        }
+      ]
+    },
+    {
+      "name": "determine the fallback encoding",
+      "href": "https://www.w3.org/TR/css-syntax-3/#determine-the-fallback-encoding",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-fallback-encoding\">determine the fallback encoding</dfn> of a <var>stylesheet</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If HTTP or equivalent protocol provides an <var>encoding label</var> (e.g. via the charset parameter of the Content-Type header) for the <var>stylesheet</var>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-get\" id=\"ref-for-concept-encoding-get\">get an encoding</a> from <var>encoding label</var>.\n\t\t\t\tIf that does not return failure,\n\t\t\t\treturn it."
+        },
+        {
+          "html": "Otherwise, check <var>stylesheet</var>’s byte stream.\n\t\t\t\tIf the first 1024 bytes of the stream begin with the hex sequence \n<pre>40 63 68 61 72 73 65 74 20 22 XX* 22 3B</pre>\n      <p>where each <code>XX</code> byte is a value between 0<sub>16</sub> and 21<sub>16</sub> inclusive\n\t\t\t\tor a value between 23<sub>16</sub> and 7F<sub>16</sub> inclusive,\n\t\t\t\tthen <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-encoding-get\" id=\"ref-for-concept-encoding-get①\">get an encoding</a> from a string formed out of\n\t\t\t\tthe sequence of <code>XX</code> bytes,\n\t\t\t\tinterpreted as <code>ASCII</code>.</p>\n      \n      <p>If the return value was <code>utf-16be</code> or <code>utf-16le</code>,\n\t\t\t\treturn <code>utf-8</code>;\n\t\t\t\tif it was anything else except failure,\n\t\t\t\treturn it.</p>"
+        },
+        {
+          "html": "Otherwise, if an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#environment-encoding\" id=\"ref-for-environment-encoding\">environment encoding</a> is provided by the referring document,\n\t\t\t\treturn it."
+        },
+        {
+          "html": "Otherwise, return <code>utf-8</code>."
+        }
+      ]
+    },
+    {
+      "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-code-point\" id=\"ref-for-next-input-code-point③\">next input code point</a> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#ident-code-point\" id=\"ref-for-ident-code-point①\">ident code point</a> or the <span id=\"ref-for-next-input-code-point④\">next two input code points</span> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#check-if-two-code-points-are-a-valid-escape\" id=\"ref-for-check-if-two-code-points-are-a-valid-escape\">are a valid escape</a>,\n\t\t\tthen:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "Create a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-hash-token\" id=\"ref-for-typedef-hash-token③\">&lt;hash-token&gt;</a>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-code-point\" id=\"ref-for-next-input-code-point⑤\">next 3 input code points</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#check-if-three-code-points-would-start-an-ident-sequence\" id=\"ref-for-check-if-three-code-points-would-start-an-ident-sequence\">would start an ident sequence</a>,\n\t\t\t\t\tset the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-hash-token\" id=\"ref-for-typedef-hash-token④\">&lt;hash-token&gt;</a>’s type flag to \"id\"."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-an-ident-sequence\" id=\"ref-for-consume-an-ident-sequence\">Consume an ident sequence</a>,\n\t\t\t\t\tand set the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-hash-token\" id=\"ref-for-typedef-hash-token⑤\">&lt;hash-token&gt;</a>’s value to the returned string."
+        },
+        {
+          "html": "Return the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-hash-token\" id=\"ref-for-typedef-hash-token⑥\">&lt;hash-token&gt;</a>."
+        }
+      ]
+    },
+    {
+      "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-code-point\" id=\"ref-for-next-input-code-point①⓪\">next 3 input code points</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#check-if-three-code-points-would-start-an-ident-sequence\" id=\"ref-for-check-if-three-code-points-would-start-an-ident-sequence③\">would start an ident sequence</a>,\n\tthen:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "Create a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-dimension-token\" id=\"ref-for-typedef-dimension-token⑥\">&lt;dimension-token&gt;</a> with the same value and type flag as <var>number</var>,\n\t\t\tand a unit set initially to the empty string."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-an-ident-sequence\" id=\"ref-for-consume-an-ident-sequence②\">Consume an ident sequence</a>.\n\t\t\tSet the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-dimension-token\" id=\"ref-for-typedef-dimension-token⑦\">&lt;dimension-token&gt;</a>’s unit to the returned value."
+        },
+        {
+          "html": "Return the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-dimension-token\" id=\"ref-for-typedef-dimension-token⑧\">&lt;dimension-token&gt;</a>."
+        }
+      ]
+    },
+    {
+      "name": "consume a url token",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-a-url-token",
+      "html": "This section describes how to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consume-a-url-token\">consume a url token</dfn> from a stream of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point④③\">code points</a>.\n\tIt returns either a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-url-token\" id=\"ref-for-typedef-url-token③\">&lt;url-token&gt;</a> or a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-bad-url-token\" id=\"ref-for-typedef-bad-url-token①\">&lt;bad-url-token&gt;</a>.",
+      "rationale": "consume",
+      "steps": [
+        {
+          "html": "Initially create a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-url-token\" id=\"ref-for-typedef-url-token④\">&lt;url-token&gt;</a> with its value set to the empty string."
+        },
+        {
+          "html": "Consume as much <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#whitespace\" id=\"ref-for-whitespace⑤\">whitespace</a> as possible."
+        },
+        {
+          "html": "Repeatedly consume the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-code-point\" id=\"ref-for-next-input-code-point②⓪\">next input code point</a> from the stream: \n     <dl>\n      <dt>U+0029 RIGHT PARENTHESIS ()) \n      </dt><dd> Return the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-url-token\" id=\"ref-for-typedef-url-token⑤\">&lt;url-token&gt;</a>. \n      </dd><dt>EOF \n      </dt><dd> This is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#parse-error\" id=\"ref-for-parse-error④\">parse error</a>.\n\t\t\t\t\tReturn the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-url-token\" id=\"ref-for-typedef-url-token⑥\">&lt;url-token&gt;</a>. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#whitespace\" id=\"ref-for-whitespace⑥\">whitespace</a> \n      </dt><dd> Consume as much <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#whitespace\" id=\"ref-for-whitespace⑦\">whitespace</a> as possible.\n\t\t\t\t\tIf the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-code-point\" id=\"ref-for-next-input-code-point②①\">next input code point</a> is U+0029 RIGHT PARENTHESIS ()) or EOF,\n\t\t\t\t\tconsume it and return the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-url-token\" id=\"ref-for-typedef-url-token⑦\">&lt;url-token&gt;</a> (if EOF was encountered, this is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#parse-error\" id=\"ref-for-parse-error⑤\">parse error</a>);\n\t\t\t\t\totherwise, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-remnants-of-a-bad-url\" id=\"ref-for-consume-the-remnants-of-a-bad-url\">consume the remnants of a bad url</a>,\n\t\t\t\t\tcreate a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-bad-url-token\" id=\"ref-for-typedef-bad-url-token②\">&lt;bad-url-token&gt;</a>,\n\t\t\t\t\tand return it. \n      </dd><dt>U+0022 QUOTATION MARK (\") \n      </dt><dt>U+0027 APOSTROPHE (') \n      </dt><dt>U+0028 LEFT PARENTHESIS (() \n      </dt><dt><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#non-printable-code-point\" id=\"ref-for-non-printable-code-point\">non-printable code point</a> \n      </dt><dd> This is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#parse-error\" id=\"ref-for-parse-error⑥\">parse error</a>. <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-remnants-of-a-bad-url\" id=\"ref-for-consume-the-remnants-of-a-bad-url①\">Consume the remnants of a bad url</a>,\n\t\t\t\t\tcreate a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-bad-url-token\" id=\"ref-for-typedef-bad-url-token③\">&lt;bad-url-token&gt;</a>,\n\t\t\t\t\tand return it. \n      </dd><dt>U+005C REVERSE SOLIDUS (\\) \n      </dt><dd>\n        If the stream <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#check-if-two-code-points-are-a-valid-escape\" id=\"ref-for-check-if-two-code-points-are-a-valid-escape③\">starts with a valid escape</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-an-escaped-code-point\" id=\"ref-for-consume-an-escaped-code-point①\">consume an escaped code point</a> and append the returned <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point④④\">code point</a> to the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-url-token\" id=\"ref-for-typedef-url-token⑧\">&lt;url-token&gt;</a>’s value. \n       <p>Otherwise,\n\t\t\t\t\tthis is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#parse-error\" id=\"ref-for-parse-error⑦\">parse error</a>. <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-remnants-of-a-bad-url\" id=\"ref-for-consume-the-remnants-of-a-bad-url②\">Consume the remnants of a bad url</a>,\n\t\t\t\t\tcreate a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-bad-url-token\" id=\"ref-for-typedef-bad-url-token④\">&lt;bad-url-token&gt;</a>,\n\t\t\t\t\tand return it.</p>\n      </dd><dt>anything else \n      </dt><dd> Append the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#current-input-code-point\" id=\"ref-for-current-input-code-point①②\">current input code point</a> to the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-url-token\" id=\"ref-for-typedef-url-token⑨\">&lt;url-token&gt;</a>’s value. \n     </dd></dl>"
+        }
+      ]
+    },
+    {
+      "html": "Execute the following steps in order:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Initially set <var>type</var> to \"integer\".\n\t\t\tLet <var>repr</var> be the empty string."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-code-point\" id=\"ref-for-next-input-code-point②⑧\">next input code point</a> is U+002B PLUS SIGN (+) or U+002D HYPHEN-MINUS (-),\n\t\t\tconsume it and append it to <var>repr</var>."
+        },
+        {
+          "html": "While the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-code-point\" id=\"ref-for-next-input-code-point②⑨\">next input code point</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#digit\" id=\"ref-for-digit⑦\">digit</a>,\n\t\t\tconsume it and append it to <var>repr</var>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-code-point\" id=\"ref-for-next-input-code-point③⓪\">next 2 input code points</a> are\n\t\t\tU+002E FULL STOP (.) followed by a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#digit\" id=\"ref-for-digit⑧\">digit</a>,\n\t\t\tthen:",
+          "rationale": "consume",
+          "steps": [
+            {
+              "html": "Consume them."
+            },
+            {
+              "html": "Append them to <var>repr</var>."
+            },
+            {
+              "html": "Set <var>type</var> to \"number\"."
+            },
+            {
+              "html": "While the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-code-point\" id=\"ref-for-next-input-code-point③①\">next input code point</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#digit\" id=\"ref-for-digit⑨\">digit</a>, consume it and append it to <var>repr</var>."
+            }
+          ]
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-code-point\" id=\"ref-for-next-input-code-point③②\">next 2 or 3 input code points</a> are\n\t\t\tU+0045 LATIN CAPITAL LETTER E (E) or U+0065 LATIN SMALL LETTER E (e),\n\t\t\toptionally followed by U+002D HYPHEN-MINUS (-) or U+002B PLUS SIGN (+),\n\t\t\tfollowed by a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#digit\" id=\"ref-for-digit①⓪\">digit</a>,\n\t\t\tthen:",
+          "rationale": "consume",
+          "steps": [
+            {
+              "html": "Consume them."
+            },
+            {
+              "html": "Append them to <var>repr</var>."
+            },
+            {
+              "html": "Set <var>type</var> to \"number\"."
+            },
+            {
+              "html": "While the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-code-point\" id=\"ref-for-next-input-code-point③③\">next input code point</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#digit\" id=\"ref-for-digit①①\">digit</a>, consume it and append it to <var>repr</var>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#convert-a-string-to-a-number\" id=\"ref-for-convert-a-string-to-a-number\">Convert <var>repr</var> to a number</a>,\n\t\t\tand set the <var>value</var> to the returned value."
+        },
+        {
+          "html": "Return <var>value</var> and <var>type</var>."
+        }
+      ]
+    },
+    {
+      "name": "normalize into a list of tokens",
+      "href": "https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"normalize\" id=\"normalize-into-a-token-stream\">normalize into a token stream</dfn> a given <var>input</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>input</var> is a list of CSS tokens,\nreturn <var>input</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>input</var> is a list of CSS component values,\nreturn <var>input</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>input</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a>,\nthen <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-filter-code-points\" id=\"ref-for-css-filter-code-points①\">filter code points</a> from <var>input</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-tokenize\" id=\"ref-for-css-tokenize\">tokenize</a> the result,\nand return the final result.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: Only the preceding types should be passed as <var>input</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "CSS/parse something according to a CSS grammar",
+      "href": "https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-for=\"CSS\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"parse something according to a CSS grammar|parse\" id=\"css-parse-something-according-to-a-css-grammar\">parse something according to a CSS grammar</dfn> (aka simply <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parse</a>)\n\t\tgiven an <var>input</var> and a CSS <var>grammar</var> production:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#parse-a-list-of-component-values\" id=\"ref-for-parse-a-list-of-component-values①\">Parse a list of component values</a> from <var>input</var>,\n\t\t\t\tand let <var>result</var> be the return value."
+        },
+        {
+          "html": "Attempt to match <var>result</var> against <var>grammar</var>.\n\t\t\t\tIf this is successful,\n\t\t\t\treturn the matched result;\n\t\t\t\totherwise, return failure."
+        }
+      ]
+    },
+    {
+      "name": "CSS/parse a comma-separated list according to a CSS grammar",
+      "href": "https://www.w3.org/TR/css-syntax-3/#css-parse-a-comma-separated-list-according-to-a-css-grammar",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-for=\"CSS\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"parse a comma-separated list according to a CSS grammar|parse a list|parsing a list\" id=\"css-parse-a-comma-separated-list-according-to-a-css-grammar\">parse a comma-separated list according to a CSS grammar</dfn> (aka <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-a-comma-separated-list-according-to-a-css-grammar\" id=\"ref-for-css-parse-a-comma-separated-list-according-to-a-css-grammar①\">parse a list</a>)\n\t\tgiven an <var>input</var> and a CSS <var>grammar</var> production:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream①\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "If <var>input</var> contains only <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token②\">&lt;whitespace-token&gt;</a>s,\n\t\t\t\treturn an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#parse-a-comma-separated-list-of-component-values\" id=\"ref-for-parse-a-comma-separated-list-of-component-values\">Parse a comma-separated list of component values</a> from <var>input</var>,\n\t\t\t\tand let <var>list</var> be the return value."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>item</var> of <var>list</var>,\n\t\t\t\treplace <var>item</var> with the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar③\">parsing</a> <var>item</var> with <var>grammar</var>."
+        },
+        {
+          "html": "Return <var>list</var>."
+        }
+      ]
+    },
+    {
+      "name": "parse a stylesheet",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-stylesheet",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-stylesheet\">parse a stylesheet</dfn> from an <var>input</var> given an optional <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">url</a> <var>location</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>input</var> is a byte stream for stylesheet, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-decode-bytes\" id=\"ref-for-css-decode-bytes\">decode bytes</a> from <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream②\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "Create a new stylesheet, with its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-location\" id=\"ref-for-concept-css-style-sheet-location\">location</a> set to <var>location</var> (or null, if <var>location</var> was not passed)."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-a-list-of-rules\" id=\"ref-for-consume-a-list-of-rules\">Consume a list of rules</a> from <var>input</var>,\n\t\t\t\twith the <var>top-level flag</var> set,\n\t\t\t\tand set the stylesheet’s value to the result."
+        },
+        {
+          "html": "Return the stylesheet."
+        }
+      ]
+    },
+    {
+      "name": "parse a list of rules",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-list-of-rules",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-list-of-rules\">parse a list of rules</dfn> from <var>input</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream③\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-a-list-of-rules\" id=\"ref-for-consume-a-list-of-rules①\">Consume a list of rules</a> from the <var>input</var>,\n\t\t\t\twith the <var>top-level flag</var> unset."
+        },
+        {
+          "html": "Return the returned list."
+        }
+      ]
+    },
+    {
+      "name": "parse a rule",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-rule",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-rule\">parse a rule</dfn> from <var>input</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream④\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "While the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token④\">next input token</a> from <var>input</var> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token③\">&lt;whitespace-token&gt;</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-next-input-token\" id=\"ref-for-consume-the-next-input-token①\">consume the next input token</a> from <var>input</var>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token⑤\">next input token</a> from <var>input</var> is an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-eof-token\" id=\"ref-for-typedef-eof-token⑤\">&lt;EOF-token&gt;</a>,\n\t\t\t\treturn a syntax error. \n      <p>Otherwise,\n\t\t\t\tif the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token⑥\">next input token</a> from <var>input</var> is an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-at-keyword-token\" id=\"ref-for-typedef-at-keyword-token⑤\">&lt;at-keyword-token&gt;</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-an-at-rule\" id=\"ref-for-consume-an-at-rule\">consume an at-rule</a> from <var>input</var>,\n\t\t\t\tand let <var>rule</var> be the return value.</p>\n      <p>Otherwise, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-a-qualified-rule\" id=\"ref-for-consume-a-qualified-rule\">consume a qualified rule</a> from <var>input</var> and let <var>rule</var> be the return value.\n\t\t\t\tIf nothing was returned,\n\t\t\t\treturn a syntax error.</p>"
+        },
+        {
+          "html": "While the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token⑦\">next input token</a> from <var>input</var> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token④\">&lt;whitespace-token&gt;</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-next-input-token\" id=\"ref-for-consume-the-next-input-token②\">consume the next input token</a> from <var>input</var>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token⑧\">next input token</a> from <var>input</var> is an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-eof-token\" id=\"ref-for-typedef-eof-token⑥\">&lt;EOF-token&gt;</a>,\n\t\t\t\treturn <var>rule</var>.\n\t\t\t\tOtherwise, return a syntax error."
+        }
+      ]
+    },
+    {
+      "name": "parse a declaration",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-declaration",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-declaration\">parse a declaration</dfn> from <var>input</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑤\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "While the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token⑨\">next input token</a> from <var>input</var> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token⑤\">&lt;whitespace-token&gt;</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-next-input-token\" id=\"ref-for-consume-the-next-input-token③\">consume the next input token</a>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token①⓪\">next input token</a> from <var>input</var> is not an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-ident-token\" id=\"ref-for-typedef-ident-token⑥\">&lt;ident-token&gt;</a>,\n\t\t\t\treturn a syntax error."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-a-declaration\" id=\"ref-for-consume-a-declaration\">Consume a declaration</a> from <var>input</var>.\n\t\t\t\tIf anything was returned, return it.\n\t\t\t\tOtherwise, return a syntax error."
+        }
+      ]
+    },
+    {
+      "name": "parse a style block’s contents",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-style-blocks-contents",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-style-blocks-contents\">parse a style block’s contents</dfn> from <var>input</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑥\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-a-style-blocks-contents\" id=\"ref-for-consume-a-style-blocks-contents\">Consume a style block’s contents</a> from <var>input</var>,\n\t\t\t\tand return the result."
+        }
+      ]
+    },
+    {
+      "name": "parse a list of declarations",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-list-of-declarations",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-list-of-declarations\">parse a list of declarations</dfn> from <var>input</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑦\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-a-list-of-declarations\" id=\"ref-for-consume-a-list-of-declarations\">Consume a list of declarations</a> from <var>input</var>,\n\t\t\t\tand return the result."
+        }
+      ]
+    },
+    {
+      "name": "parse a component value",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-component-value",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-component-value\">parse a component value</dfn> from <var>input</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑧\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "While the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token①①\">next input token</a> from <var>input</var> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token⑥\">&lt;whitespace-token&gt;</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-next-input-token\" id=\"ref-for-consume-the-next-input-token④\">consume the next input token</a> from <var>input</var>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token①②\">next input token</a> from <var>input</var> is an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-eof-token\" id=\"ref-for-typedef-eof-token⑦\">&lt;EOF-token&gt;</a>,\n\t\t\t\treturn a syntax error."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-a-component-value\" id=\"ref-for-consume-a-component-value\">Consume a component value</a> from <var>input</var> and let <var>value</var> be the return value."
+        },
+        {
+          "html": "While the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token①③\">next input token</a> from <var>input</var> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token⑦\">&lt;whitespace-token&gt;</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-next-input-token\" id=\"ref-for-consume-the-next-input-token⑤\">consume the next input token</a>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token①④\">next input token</a> from <var>input</var> is an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-eof-token\" id=\"ref-for-typedef-eof-token⑧\">&lt;EOF-token&gt;</a>,\n\t\t\t\treturn <var>value</var>.\n\t\t\t\tOtherwise,\n\t\t\t\treturn a syntax error."
+        }
+      ]
+    },
+    {
+      "name": "parse a list of component values",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-list-of-component-values",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-list-of-component-values\">parse a list of component values</dfn> from <var>input</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑨\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "Repeatedly <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-a-component-value\" id=\"ref-for-consume-a-component-value①\">consume a component value</a> from <var>input</var> until an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-eof-token\" id=\"ref-for-typedef-eof-token⑨\">&lt;EOF-token&gt;</a> is returned,\n\t\t\t\tappending the returned values (except the final <span class=\"production\" id=\"ref-for-typedef-eof-token①⓪\">&lt;EOF-token&gt;</span>) into a list.\n\t\t\t\tReturn the list."
+        }
+      ]
+    },
+    {
+      "name": "parse a comma-separated list of component values",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-comma-separated-list-of-component-values",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-comma-separated-list-of-component-values\">parse a comma-separated list of component values</dfn> from <var>input</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream①⓪\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+        },
+        {
+          "html": "Let <var>list of cvls</var> be an initially empty list of component value lists."
+        },
+        {
+          "html": "Repeatedly <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-a-component-value\" id=\"ref-for-consume-a-component-value②\">consume a component value</a> from <var>input</var> until an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-eof-token\" id=\"ref-for-typedef-eof-token①①\">&lt;EOF-token&gt;</a> or <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-comma-token\" id=\"ref-for-typedef-comma-token①\">&lt;comma-token&gt;</a> is returned,\n\t\t\t\tappending the returned values (except the final <span class=\"production\" id=\"ref-for-typedef-eof-token①②\">&lt;EOF-token&gt;</span> or <span class=\"production\" id=\"ref-for-typedef-comma-token②\">&lt;comma-token&gt;</span>) into a list.\n\t\t\t\tAppend the list to <var>list of cvls</var>. \n      <p>If it was a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-comma-token\" id=\"ref-for-typedef-comma-token③\">&lt;comma-token&gt;</a> that was returned,\n\t\t\t\trepeat this step.</p>"
+        },
+        {
+          "html": "Return <var>list of cvls</var>."
+        }
+      ]
+    },
+    {
+      "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-next-input-token\" id=\"ref-for-consume-the-next-input-token⑦\">Consume the next input token</a>.\n\tCreate a new declaration\n\twith its name set to the value of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#current-input-token\" id=\"ref-for-current-input-token⑦\">current input token</a> and its value initially set to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a>.",
+      "rationale": "while",
+      "steps": [
+        {
+          "html": "While the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token②⑤\">next input token</a> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token①①\">&lt;whitespace-token&gt;</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-next-input-token\" id=\"ref-for-consume-the-next-input-token⑧\">consume the next input token</a>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token②⑥\">next input token</a> is anything other than a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-colon-token\" id=\"ref-for-typedef-colon-token①\">&lt;colon-token&gt;</a>,\n\t\t\tthis is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#parse-error\" id=\"ref-for-parse-error①③\">parse error</a>.\n\t\t\tReturn nothing. \n     <p>Otherwise, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-next-input-token\" id=\"ref-for-consume-the-next-input-token⑨\">consume the next input token</a>.</p>"
+        },
+        {
+          "html": "While the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token②⑦\">next input token</a> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token①②\">&lt;whitespace-token&gt;</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-the-next-input-token\" id=\"ref-for-consume-the-next-input-token①⓪\">consume the next input token</a>."
+        },
+        {
+          "html": "As long as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#next-input-token\" id=\"ref-for-next-input-token②⑧\">next input token</a> is anything other than an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-eof-token\" id=\"ref-for-typedef-eof-token②④\">&lt;EOF-token&gt;</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#consume-a-component-value\" id=\"ref-for-consume-a-component-value⑨\">consume a component value</a> and append it to the declaration’s value."
+        },
+        {
+          "html": "If the last two non-<a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token①③\">&lt;whitespace-token&gt;</a>s in the declaration’s value are\n\t\t\ta <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-delim-token\" id=\"ref-for-typedef-delim-token①⓪\">&lt;delim-token&gt;</a> with the value \"!\"\n\t\t\tfollowed by an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-ident-token\" id=\"ref-for-typedef-ident-token①⓪\">&lt;ident-token&gt;</a> with a value that is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①\">ASCII case-insensitive</a> match for \"important\",\n\t\t\tremove them from the declaration’s value\n\t\t\tand set the declaration’s <var>important</var> flag to true."
+        },
+        {
+          "html": "While the last token in the declaration’s value is a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token①④\">&lt;whitespace-token&gt;</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">remove</a> that token."
+        },
+        {
+          "html": "Return the declaration."
+        }
+      ]
+    },
+    {
+      "html": "The <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-urange\" id=\"ref-for-typedef-urange⑧\">&lt;urange&gt;</a> production represents a range of one or more contiguous unicode code points\n\tas a <var>start value</var> and an <var>end value</var>,\n\twhich are non-negative integers.\n\tTo interpret the production above into a range,\n\texecute the following steps in order:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Skipping the first <span class=\"css\">u</span> token,\nconcatenate the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#representation\" id=\"ref-for-representation⑤\">representations</a> of all the tokens in the production together.\nLet this be <var>text</var>.</p>"
+        },
+        {
+          "html": "<p>If the first character of <var>text</var> is U+002B PLUS SIGN,\nconsume it.\nOtherwise,\nthis is an invalid <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-urange\" id=\"ref-for-typedef-urange⑨\">&lt;urange&gt;</a>,\nand this algorithm must exit.</p>"
+        },
+        {
+          "html": "If any U+003F QUESTION MARK (?) <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑧①\">code points</a> were consumed, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If there are any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑧②\">code points</a> left in <var>text</var>,\nthis is an invalid <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-urange\" id=\"ref-for-typedef-urange①①\">&lt;urange&gt;</a>,\nand this algorithm must exit.</p>"
+            },
+            {
+              "html": "<p>Interpret the consumed <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑧③\">code points</a> as a hexadecimal number,\nwith the U+003F QUESTION MARK (?) <span id=\"ref-for-code-point⑧④\">code points</span> replaced by U+0030 DIGIT ZERO (0) <span id=\"ref-for-code-point⑧⑤\">code points</span>.\nThis is the <var>start value</var>.</p>"
+            },
+            {
+              "html": "<p>Interpret the consumed <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑧⑥\">code points</a> as a hexadecimal number again,\nwith the U+003F QUESTION MARK (?) <span id=\"ref-for-code-point⑧⑦\">code points</span> replaced by U+0046 LATIN CAPITAL LETTER F (F) <span id=\"ref-for-code-point⑧⑧\">code points</span>.\nThis is the <var>end value</var>.</p>"
+            },
+            {
+              "html": "<p>Exit this algorithm.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If there are no <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑨⓪\">code points</a> left in <var>text</var>,\nThe <var>end value</var> is the same as the <var>start value</var>.\nExit this algorithm.</p>"
+        },
+        {
+          "html": "<p>If the next <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑨①\">code point</a> in <var>text</var> is U+002D HYPHEN-MINUS (-),\nconsume it.\nOtherwise,\nthis is an invalid <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-urange\" id=\"ref-for-typedef-urange①②\">&lt;urange&gt;</a>,\nand this algorithm must exit.</p>"
+        },
+        {
+          "html": "<p>Consume as many <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#hex-digit\" id=\"ref-for-hex-digit⑦\">hex digits</a> as possible from <var>text</var>.</p>\n     <p>If zero <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#hex-digit\" id=\"ref-for-hex-digit⑧\">hex digits</a> were consumed,\nor more than 6 <span id=\"ref-for-hex-digit⑨\">hex digits</span> were consumed,\nthis is an invalid <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-urange\" id=\"ref-for-typedef-urange①③\">&lt;urange&gt;</a>,\nand this algorithm must exit.\nIf there are any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑨②\">code points</a> left in <var>text</var>,\nthis is an invalid <span class=\"production\" id=\"ref-for-typedef-urange①④\">&lt;urange&gt;</span>,\nand this algorithm must exit.</p>"
+        },
+        {
+          "html": "<p>Interpret the consumed <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑨③\">code points</a> as a hexadecimal number.\nThis is the <var>end value</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To determine what codepoints the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-urange\" id=\"ref-for-typedef-urange①⑤\">&lt;urange&gt;</a> represents:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>end value</var> is greater than the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#maximum-allowed-code-point\" id=\"ref-for-maximum-allowed-code-point①\">maximum allowed code point</a>,\nthe <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-urange\" id=\"ref-for-typedef-urange①⑥\">&lt;urange&gt;</a> is invalid and a syntax error.</p>"
+        },
+        {
+          "html": "<p>If <var>start value</var> is greater than <var>end value</var>,\nthe <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-urange\" id=\"ref-for-typedef-urange①⑦\">&lt;urange&gt;</a> is invalid and a syntax error.</p>"
+        },
+        {
+          "html": "<p>Otherwise, the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#typedef-urange\" id=\"ref-for-typedef-urange①⑧\">&lt;urange&gt;</a> represents a contiguous range of codepoints from <var>start value</var> to <var>end value</var>, inclusive.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a CSS stylesheet",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-css-stylesheet",
+      "html": "To <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-css-stylesheet\">parse a CSS stylesheet<a class=\"self-link\" href=\"https://www.w3.org/TR/css-syntax-3/#parse-a-css-stylesheet\"></a></dfn>,\n\tfirst <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#parse-a-stylesheet\" id=\"ref-for-parse-a-stylesheet②\">parse a stylesheet</a>.\n\tInterpret all of the resulting top-level <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#qualified-rule\" id=\"ref-for-qualified-rule⑥\">qualified rules</a> as <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#style-rule\" id=\"ref-for-style-rule⑦\">style rules</a>, defined below.",
+      "rationale": "To <dfn>"
+    },
+    {
+      "name": "serialize an <an+b> value",
+      "href": "https://www.w3.org/TR/css-syntax-3/#serialize-an-anb-value",
+      "html": "To <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-an-anb-value\">serialize an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#anb-production\" id=\"ref-for-anb-production\">&lt;an+b&gt;</a> value<a class=\"self-link\" href=\"https://www.w3.org/TR/css-syntax-3/#serialize-an-anb-value\"></a></dfn>,\n\t\twith integer values <var>A</var> and <var>B</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>A</var> is zero,\nreturn the serialization of <var>B</var>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, let <var>result</var> initially be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a>.</p>"
+        },
+        {
+          "html": "To <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-an-anb-value\">serialize an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#anb-production\" id=\"ref-for-anb-production\">&lt;an+b&gt;</a> value<a class=\"self-link\" href=\"https://www.w3.org/TR/css-syntax-3/#serialize-an-anb-value\"></a></dfn>,\n\t\twith integer values <var>A</var> and <var>B</var>:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "A is 1",
+                  "html": "<p>Append \"n\" to <var>result</var>.</p>"
+                },
+                {
+                  "case": "A is -1",
+                  "html": "<p>Append \"-n\" to <var>result</var>.</p>"
+                },
+                {
+                  "case": "A is non-zero",
+                  "html": "<p>Serialize <var>A</var> and append it to <var>result</var>,\nthen append \"n\" to <var>result</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "To <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-an-anb-value\">serialize an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#anb-production\" id=\"ref-for-anb-production\">&lt;an+b&gt;</a> value<a class=\"self-link\" href=\"https://www.w3.org/TR/css-syntax-3/#serialize-an-anb-value\"></a></dfn>,\n\t\twith integer values <var>A</var> and <var>B</var>:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "B is greater than zero",
+                  "html": "<p>Append \"+\" to <var>result</var>,\nthen append the serialization of <var>B</var> to <var>result</var>.</p>"
+                },
+                {
+                  "case": "B is less than zero",
+                  "html": "<p>Append the serialization of <var>B</var> to <var>result</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#parse-a-stylesheet\" id=\"ref-for-parse-a-stylesheet④\">parse a stylesheet</a> from an <var>input</var> \n       <ins>given an optional <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">url</a> <var>location</var></ins>\n       :",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "..."
+        },
+        {
+          "html": "Create a new stylesheet\n        <ins>, with its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#concept-css-style-sheet-location\" id=\"ref-for-concept-css-style-sheet-location①\">location</a> set to <var>location</var> (or null, if <var>location</var> was not passed).</ins>"
+        },
+        {
+          "html": "..."
+        }
+      ]
+    }
+  ]
+}

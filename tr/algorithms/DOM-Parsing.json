@@ -1,0 +1,853 @@
+{
+  "spec": {
+    "title": "DOM Parsing and Serialization",
+    "url": "https://www.w3.org/TR/DOM-Parsing/"
+  },
+  "algorithms": [
+    {
+      "name": "concept-parse-fragment",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-concept-parse-fragment",
+      "html": "The following steps form the\n            <dfn id=\"dfn-concept-parse-fragment\" data-dfn-type=\"dfn\" data-lt=\"concept-parse-fragment\">fragment parsing algorithm</dfn>, whose\n            arguments are a <var>markup</var> string and a\n            <var>context element</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <var>context element</var>'s\n                <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>\n                is an <a href=\"https://www.w3.org/TR/dom/#html-document\" title=\"html-document\" class=\"externalDFN\">HTML document</a>: let\n                <var>algorithm</var> be the\n                <a href=\"https://www.w3.org/TR/html5/single-page.html#html-fragment-parsing-algorithm\" title=\"html-fragment-parsing-algorithm\" class=\"externalDFN\">HTML\n                fragment parsing algorithm</a>.</p>\n\n                <p>If the <var>context element</var>'s\n                <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>\n                is an <a href=\"https://www.w3.org/TR/dom/#xml-document\" title=\"xml-document\" class=\"externalDFN\">XML document</a>: let\n                <var>algorithm</var> be the\n                <a href=\"https://www.w3.org/TR/html5/single-page.html#xml-fragment-parsing-algorithm\" title=\"xml-fragment-parsing-algorithm\" class=\"externalDFN\">XML\n                fragment parsing algorithm</a>.</p>"
+        },
+        {
+          "html": "Let <var>new children</var> be the result of invoking <var>algorithm</var> with <var>markup</var> as\n              the <var>input</var>, and <var>context element</var> as the\n              <var><a href=\"https://www.w3.org/TR/html5/single-page.html#concept-frag-parse-context\" title=\"concept-frag-parse-context\" class=\"externalDFN\">context</a></var>\n              element."
+        },
+        {
+          "html": "Let <var>fragment</var> be a new\n              <code><a href=\"https://www.w3.org/TR/dom/#documentfragment\" title=\"documentfragment\" class=\"externalDFN\">DocumentFragment</a></code> whose\n              <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>\n              is <var>context element</var>'s\n              <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>."
+        },
+        {
+          "html": "<a href=\"https://www.w3.org/TR/dom/#concept-node-append\" title=\"concept-node-append\" class=\"externalDFN\">Append</a>\n              each <a href=\"https://www.w3.org/TR/dom/#concept-node\" title=\"concept-node\" class=\"externalDFN\">node</a> in\n              <var>new children</var> to <var>fragment</var>\n              (in <a href=\"https://www.w3.org/TR/dom/#concept-tree-order\" title=\"concept-tree-order\" class=\"externalDFN\">tree order</a>)."
+        },
+        {
+          "html": "Return the value of <var>fragment</var>."
+        }
+      ]
+    },
+    {
+      "name": "concept-fragment-serializing-algorithm",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-concept-fragment-serializing-algorithm",
+      "html": "The following steps form the\n            <dfn id=\"dfn-concept-fragment-serializing-algorithm\" data-dfn-type=\"dfn\" data-lt=\"concept-fragment-serializing-algorithm\">fragment serializing algorithm</dfn>,\n            whose arguments are a <code><a href=\"https://www.w3.org/TR/dom/#node\" title=\"node\" class=\"externalDFN\">Node</a></code>\n            <var>node</var> and a flag <dfn id=\"dfn-concept-well-formed\" data-dfn-type=\"dfn\" data-lt=\"concept-well-formed\">require well-formed</dfn>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>context document</var> be the value of <var>node</var>'s\n                <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>."
+        },
+        {
+          "html": "If <var>context document</var> is an\n                <a href=\"https://www.w3.org/TR/dom/#html-document\" title=\"html-document\" class=\"externalDFN\">HTML document</a>,\n                return an <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-serialize-html\" title=\"concept-serialize-html\">HTML serialization</a> of <var>node</var>."
+        },
+        {
+          "html": "Otherwise, <var>context document</var> is an\n                <a href=\"https://www.w3.org/TR/dom/#xml-document\" title=\"xml-document\" class=\"externalDFN\">XML document</a>;\n                return an <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-serialize-xml\" title=\"concept-serialize-xml\">XML serialization</a> of <var>node</var>\n                passing the flag <var>require well-formed</var>."
+        }
+      ]
+    },
+    {
+      "name": "concept-serialize-xml",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-concept-serialize-xml",
+      "html": "To produce an <dfn id=\"dfn-concept-serialize-xml\" data-dfn-type=\"dfn\" data-lt=\"concept-serialize-xml\">XML serialization</dfn> of a\n            <code><a href=\"https://www.w3.org/TR/dom/#node\" title=\"node\" class=\"externalDFN\">Node</a></code> <var>node</var> given a\n            flag <var>require well-formed</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <dfn id=\"dfn-concept-context-namespace\" data-dfn-type=\"dfn\" data-lt=\"concept-context-namespace\">context namespace</dfn> be <code>null</code>.\n                The <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-context-namespace\" title=\"concept-context-namespace\">context namespace</a> is changed when a\n                <var>node</var> serializes a different default namespace definition from its parent. The\n                algorithm assumes no namespace to start."
+        },
+        {
+          "html": "Let <dfn id=\"dfn-concept-namespace-prefix-map\" data-dfn-type=\"dfn\" data-lt=\"concept-namespace-prefix-map\">namespace prefix map</dfn> be a new map\n                for associating <code>namespaceURI</code> and namespace <code>prefix</code> pairs, where\n                <code>namespaceURI</code> values are the map's keys, and <code>prefix</code> values are\n                the map's key values. The <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a>\n                will be populated by previously seen namespaceURIs and their most recent prefix associations\n                for a subtree."
+        },
+        {
+          "html": "Initialize the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a> with the\n                <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-xml-ns\" title=\"xml-ns\">XML namespace</a> key and string \"<code>xml</code>\" as the key value."
+        },
+        {
+          "html": "Let <dfn id=\"dfn-concept-generated-prefix\" data-dfn-type=\"dfn\" data-lt=\"concept-generated-prefix\">generated namespace prefix index</dfn> be an integer\n                with a value of <code>1</code>. The <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generated-prefix\" title=\"concept-generated-prefix\">generated namespace\n                prefix index</a> is used to generate a new unique prefix value when no suitable existing\n                namespace prefix is available to serialize a <var>node</var>'s namespaceURI (or the namespaceURI\n                of one of <var>node</var>'s attributes)."
+        },
+        {
+          "html": "Return the result of running the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-xml-serialization-algorithm\" title=\"concept-xml-serialization-algorithm\">XML serialization\n                algorithm</a> on <var>node</var> passing the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-context-namespace\" title=\"concept-context-namespace\">context\n                namespace</a>, <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a>,\n                <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generated-prefix\" title=\"concept-generated-prefix\">generated namespace prefix index</a> reference, and the\n                flag <var>require well-formed</var>. If an <dfn id=\"dfn-concept-algorithm-exception\" data-dfn-type=\"dfn\" data-lt=\"concept-algorithm-exception\">exception</dfn>\n                occurs during the execution of the algorithm, then catch that exception and throw a\n                <code><a href=\"https://www.w3.org/TR/dom/#dfn-DOMException\" title=\"domexception\" class=\"externalDFN\">DOMException</a></code> with\n                name \"<code><a href=\"https://www.w3.org/TR/dom/#invalidstateerror\" title=\"invalidstateerror\" class=\"externalDFN\">InvalidStateError</a></code>\"."
+        }
+      ]
+    },
+    {
+      "name": "concept-xml-serialization-algorithm",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-concept-xml-serialization-algorithm",
+      "html": "To run the <dfn id=\"dfn-concept-xml-serialization-algorithm\" data-dfn-type=\"dfn\" data-lt=\"concept-xml-serialization-algorithm\">XML serialization algorithm</dfn> on\n            a <var>node</var> given a <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-context-namespace\" title=\"concept-context-namespace\">context namespace</a>\n            <var>namespace</var>, a <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a>\n            <var>prefix map</var>, a <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generated-prefix\" title=\"concept-generated-prefix\">generated namespace prefix index</a>\n            <var>prefix index</var>, and a flag <var>require well-formed</var>, the user agent must run the\n            appropriate steps, depending on <var>node</var>'s interface:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "Element",
+              "html": "Run the following algorithm:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag is set (its value is\n                        <code>true</code>), and this <var>node</var>'s\n                        <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>\n                        attribute contains the character \"<code>:</code>\" (U+003A COLON) or does not match the\n                        XML <code>Name</code> production [<cite><a href=\"https://www.w3.org/TR/DOM-Parsing/#bib-XML10\" class=\"bibref\">XML10</a></cite>], then <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-algorithm-exception\" title=\"concept-algorithm-exception\">throw an\n                        exception</a>; the serialization of this <var>node</var> would not be a well-formed element."
+                },
+                {
+                  "html": "Let <var>markup</var> be the string \"<code>&lt;</code>\" (U+003C LESS-THAN SIGN)."
+                },
+                {
+                  "html": "Let <var>qualified name</var> be an empty string."
+                },
+                {
+                  "html": "Let a <var>skip end tag</var> flag have the value <code>false</code>."
+                },
+                {
+                  "html": "Let an <var>ignore namespace definition attribute</var> flag have the value <code>false</code>."
+                },
+                {
+                  "html": "Let <var>map</var> be a copy of the <var>prefix map</var>."
+                },
+                {
+                  "html": "Let <var>element prefixes list</var> be an empty list."
+                },
+                {
+                  "html": "Let <var>duplicate prefix definition</var> be <code>null</code>."
+                },
+                {
+                  "html": "Let <var>local default namespace</var> be the result of\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-record-namespace-info\" title=\"concept-record-namespace-info\">recording the namespace information</a> for\n                        <var>node</var> given <var>map</var>, <var>element prefixes list</var>, and\n                        <var>duplicate prefix definition</var>."
+                },
+                {
+                  "html": "Let <var>inherited ns</var> be a copy of <var>namespace</var>."
+                },
+                {
+                  "html": "Let <var>ns</var> be the value of <var>node</var>'s\n                        <code><a href=\"https://www.w3.org/TR/dom/#dom-element-namespaceuri\" title=\"dom-element-namespaceuri\" class=\"externalDFN\">namespaceURI</a></code>\n                        attribute."
+                },
+                {
+                  "html": "If <var>inherited ns</var> is equal to <var>ns</var>, then:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>local default namespace</var> is not <code>null</code>, then set <var>ignore\n                            namespace definition attribute</var> to <code>true</code>."
+                    },
+                    {
+                      "html": "If <var>ns</var> is the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-xml-ns\" title=\"xml-ns\">XML namespace</a>, then let <var>qualified name</var>\n                            be the concatenation of the string \"<code>xml:</code>\" and the value of <var>node</var>'s\n                            <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>."
+                    },
+                    {
+                      "html": "Otherwise, let <var>qualified name</var> be the value of <var>node</var>'s\n                            <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>."
+                    },
+                    {
+                      "html": "Append the value of <var>qualified name</var> to <var>markup</var>."
+                    }
+                  ]
+                },
+                {
+                  "html": "Otherwise, <var>inherited ns</var> is not equal to <var>ns</var> (the <var>node</var>'s\n                        own namespace is different from the context namespace of its parent). Run these sub-steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var>prefix</var> be the value of <var>node</var>'s\n                            <code><a href=\"https://www.w3.org/TR/dom/#dom-element-prefix\" title=\"dom-element-prefix\" class=\"externalDFN\">prefix</a></code>\n                            attribute."
+                    },
+                    {
+                      "html": "Let <var>candidate prefix</var> be a value from <var>map</var> where there exists a key in\n                            <var>map</var> that matches the value of <var>ns</var> or if there is no such key, then let\n                            <var>candidate prefix</var> be <code>null</code>."
+                    },
+                    {
+                      "html": "If <var>candidate prefix</var> is not <code>null</code> (a suitable namespace prefix is defined\n                            which maps to <var>ns</var>), then:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "Let <var>qualified name</var> be the concatenation of <var>candidate prefix</var>,\n                                \"<code>:</code>\" (U+003A COLON), and <var>node</var>'s <code>\n                                <a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>."
+                        },
+                        {
+                          "html": "If <var>local default namespace</var> is not <code>null</code> (there exists a locally-defined\n                                default namespace declaration attribute), then let <var>inherited ns</var> get the value of\n                                <var>ns</var>."
+                        },
+                        {
+                          "html": "Append the value of <var>qualified name</var> to <var>markup</var>."
+                        }
+                      ]
+                    },
+                    {
+                      "html": "Otherwise, if <var>prefix</var> is not <code>null</code> and <var>local default namespace</var> is\n                            <code>null</code>, then:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "If the <var>element prefixes list</var> contains the value of <var>prefix</var>, then\n                                let <var>prefix</var> be the result of\n                                <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generate-prefix\" title=\"concept-generate-prefix\">generating a prefix</a> providing as input the\n                                <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a> <var>map</var>,\n                                <var>node</var>'s <var>ns</var> string, and the <var>prefix index</var> integer."
+                        },
+                        {
+                          "html": "Otherwise, append to <var>map</var> a new key <var>ns</var> whose key value is\n                                <var>prefix</var>."
+                        },
+                        {
+                          "html": "Let <var>qualified name</var> be the concatenation\n                            of <var>prefix</var>, \"<code>:</code>\" (U+003A COLON), and <var>node</var>'s\n                            <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>."
+                        },
+                        {
+                          "html": "Append the value of <var>qualified name</var> to <var>markup</var>."
+                        },
+                        {
+                          "html": "Append the following to <var>markup</var>, in the order listed:",
+                          "ignored": [
+                            "\" \" (U+0020 SPACE); The string \"xmlns:\"; The value of prefix; \"=\"\" (U+003D EQUALS SIGN, U+0022 QUOTATION MARK); The result of serializing an attribute value given ns and the require well-formed flag as input; \"\"\" (U+0022 QUOTATION MARK)."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "html": "Otherwise, if <var>local default namespace</var> is <code>null</code>, or <var>local default\n                            namespace</var> is not <code>null</code> and its value is not equal to <var>ns</var>, then:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "Set the <var>ignore namespace definition attribute</var> flag to <code>true</code>."
+                        },
+                        {
+                          "html": "Let <var>qualified name</var> be the value of <var>node</var>'s <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>."
+                        },
+                        {
+                          "html": "Let the value of <var>inherited ns</var> be <var>ns</var>."
+                        },
+                        {
+                          "html": "Append the value of <var>qualified name</var> to <var>markup</var>."
+                        },
+                        {
+                          "html": "Append the following to <var>markup</var>, in the order listed:",
+                          "ignored": [
+                            "\" \" (U+0020 SPACE); The string \"xmlns\"; \"=\"\" (U+003D EQUALS SIGN, U+0022 QUOTATION MARK); The result of serializing an attribute value given ns and the require well-formed flag as input; \"\"\" (U+0022 QUOTATION MARK)."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "html": "Otherwise, the <var>node</var> has a <var>local default namespace</var> that matches\n                            <var>ns</var>. Let <var>qualified name</var> be the value of <var>node</var>'s\n                            <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>,\n                            let the value of <var>inherited ns</var> be <var>ns</var>, and append the value of\n                            <var>qualified name</var> to <var>markup</var>."
+                    }
+                  ]
+                },
+                {
+                  "html": "Append to <var>markup</var> the result of the\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-serialize-xml-attributes\" title=\"concept-serialize-xml-attributes\">XML serialization of <var>node</var>'s\n                        attributes</a> given the\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a> <var>map</var>,\n                        the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generated-prefix\" title=\"concept-generated-prefix\">generated prefix index</a> <var>prefix index</var>, the\n                        flag <var>ignore namespace definition attribute</var> and the value of <var>duplicate\n                        prefix definition</var>."
+                },
+                {
+                  "html": "If <var>ns</var> is the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-html-ns\" title=\"html-ns\">HTML namespace</a>,\n                        and the <var>node</var>'s list of\n                        <a href=\"https://www.w3.org/TR/dom/#concept-tree-child\" title=\"concept-tree-child\" class=\"externalDFN\">children</a>\n                        is empty, and the <var>node</var>'s\n                        <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>\n                        matches any one of the following\n                        <a href=\"https://www.w3.org/TR/html5/single-page.html#void-elements\" title=\"void-elements\" class=\"externalDFN\">void elements</a>:\n                        \"<code>area</code>\",\n                        \"<code>base</code>\",\n                        \"<code>basefont</code>\",\n                        \"<code>bgsound</code>\",\n                        \"<code>br</code>\",\n                        \"<code>col</code>\",\n                        \"<code>embed</code>\",\n                        \"<code>frame</code>\",\n                        \"<code>hr</code>\",\n                        \"<code>img</code>\",\n                        \"<code>input</code>\",\n                        \"<code>keygen</code>\",\n                        \"<code>link</code>\",\n                        \"<code>menuitem</code>\",\n                        \"<code>meta</code>\",\n                        \"<code>param</code>\",\n                        \"<code>source</code>\",\n                        \"<code>track</code>\",\n                        \"<code>wbr</code>\";\n                        then append the following to <var>markup</var>, in the order listed:\n                        \n                        and set the <var>skip end tag</var> flag to <code>true</code>.",
+                  "ignored": [
+                    "\" \" (U+0020 SPACE); \"/\" (U+002F SOLIDUS)."
+                  ]
+                },
+                {
+                  "html": "If <var>ns</var> is not the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-html-ns\" title=\"html-ns\">HTML namespace</a>,\n                        and the <var>node</var>'s list of\n                        <a href=\"https://www.w3.org/TR/dom/#concept-tree-child\" title=\"concept-tree-child\" class=\"externalDFN\">children</a>\n                        is empty, then append \"<code>/</code>\" (U+002F SOLIDUS) to <var>markup</var>\n                        and set the <var>skip end tag</var> flag to <code>true</code>."
+                },
+                {
+                  "html": "Append \"<code>&gt;</code>\" (U+003E GREATER-THAN SIGN) to <var>markup</var>."
+                },
+                {
+                  "html": "If the value of <var>skip end tag</var> is <code>true</code>, then return\n                        the value of <var>markup</var> and skip the remaining steps. The\n                        <var>node</var> is a leaf-node."
+                },
+                {
+                  "html": "If <var>ns</var> is the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-html-ns\" title=\"html-ns\">HTML namespace</a>, and the <var>node</var>'s\n                        <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>\n                        matches the string \"<code>template</code>\", then this is a\n                        <code><a href=\"https://www.w3.org/TR/html5/single-page.html#the-template-element\" title=\"the-template-element\" class=\"externalDFN\">template</a></code> element.\n                        Append to <var>markup</var> the result of running the\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-xml-serialization-algorithm\" title=\"concept-xml-serialization-algorithm\">XML serialization algorithm</a> on the\n                        <a href=\"https://www.w3.org/TR/html5/single-page.html#the-template-element\" title=\"the-template-element\" class=\"externalDFN\">template</a> element's\n                        <a href=\"https://www.w3.org/TR/html5/single-page.html#template-contents\" title=\"template-contents\" class=\"externalDFN\">template contents</a>\n                        (a <code><a href=\"https://www.w3.org/TR/dom/#interface-documentfragment\" title=\"interface-documentfragment\" class=\"externalDFN\">DocumentFragment</a></code>),\n                        providing the value of <var>inherited ns</var> for the\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-context-namespace\" title=\"concept-context-namespace\">context namespace</a>,\n                        <var>map</var> for the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a>,\n                        <var>prefix index</var> for the\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generated-prefix\" title=\"concept-generated-prefix\">generated namespace prefix index</a>, and the value\n                        of the <var>require well-formed</var> flag."
+                },
+                {
+                  "html": "Otherwise, append to <var>markup</var> the result of running the\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-xml-serialization-algorithm\" title=\"concept-xml-serialization-algorithm\">XML serialization algorithm</a> on each\n                        of <var>node</var>'s\n                        <a href=\"https://www.w3.org/TR/dom/#concept-tree-child\" title=\"concept-tree-child\" class=\"externalDFN\">children</a>,\n                        in <a href=\"https://www.w3.org/TR/dom/#concept-tree-order\" title=\"concept-tree-order\" class=\"externalDFN\">tree order</a>,\n                        providing the value of <var>inherited ns</var> for the\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-context-namespace\" title=\"concept-context-namespace\">context namespace</a>,\n                        <var>map</var> for the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a>,\n                        <var>prefix index</var> for the\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generated-prefix\" title=\"concept-generated-prefix\">generated namespace prefix index</a>, and the value\n                        of the <var>require well-formed</var> flag."
+                },
+                {
+                  "html": "Append the following to <var>markup</var>, in the order listed:",
+                  "ignored": [
+                    "\"</\" (U+003C LESS-THAN SIGN, U+002F SOLIDUS); The value of qualified name; \">\" (U+003E GREATER-THAN SIGN)."
+                  ]
+                },
+                {
+                  "html": "Return the value of <var>markup</var>."
+                }
+              ]
+            },
+            {
+              "case": "Document",
+              "html": "Otherwise, run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>serialized document</var> be an empty string."
+                },
+                {
+                  "html": "Append to <var>serialized document</var> the string produced by running the steps to\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-serialize-doctype\" title=\"concept-serialize-doctype\">produce a DocumentType serialization</a>\n                        of <var>node</var>'s\n                        <code><a href=\"https://www.w3.org/TR/dom/#dom-document-doctype\" title=\"dom-document-doctype\" class=\"externalDFN\">doctype</a></code>\n                        attribute provided the <var>require well-formed</var> flag if <var>node</var>'s\n                        <code><a href=\"https://www.w3.org/TR/dom/#dom-document-doctype\" title=\"dom-document-doctype\" class=\"externalDFN\">doctype</a></code>\n                        attribute is not <code>null</code>."
+                },
+                {
+                  "html": "For each <a href=\"https://www.w3.org/TR/dom/#concept-tree-child\" title=\"concept-tree-child\" class=\"externalDFN\">child</a>\n                        <var>child</var> of <var>node</var>, in\n                        <a href=\"https://www.w3.org/TR/dom/#concept-tree-order\" title=\"concept-tree-order\" class=\"externalDFN\">tree order</a>, run the\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-xml-serialization-algorithm\" title=\"concept-xml-serialization-algorithm\">XML serialization algorithm</a>\n                        on the <var>child</var> given a <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-context-namespace\" title=\"concept-context-namespace\">context namespace</a>\n                        <var>namespace</var>, a <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a>\n                        <var>prefix map</var>, a reference to a <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generated-prefix\" title=\"concept-generated-prefix\">generated\n                        namespace prefix index</a> <var>prefix index</var>, flag <var>require well-formed</var>, and\n                        append the result to <var>serialized document</var>."
+                },
+                {
+                  "html": "Return the value of <var>serialized document</var>."
+                }
+              ]
+            },
+            {
+              "case": "Comment",
+              "html": "<p>If the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag is set (its value is\n                    <code>true</code>), and <var>node</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-characterdata-data\" title=\"dom-characterdata-data\" class=\"externalDFN\">data</a></code>\n                    contains characters that are not matched by the XML <code>Char</code> production [<cite><a href=\"https://www.w3.org/TR/DOM-Parsing/#bib-XML10\" class=\"bibref\">XML10</a></cite>] or\n                    contains \"<code>--</code>\" (two adjacent U+002D HYPHEN-MINUS characters) or that ends with\n                    a \"<code>-</code>\" (U+002D HYPHEN-MINUS) character, then\n                    <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-algorithm-exception\" title=\"concept-algorithm-exception\">throw an exception</a>; the serialization of this\n                    <var>node</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-characterdata-data\" title=\"dom-characterdata-data\" class=\"externalDFN\">data</a></code>\n                    would not be well-formed.\n                </p><p>Return the concatenation of \"<code>&lt;!--</code>\", <var>node</var>'s\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-characterdata-data\" title=\"dom-characterdata-data\" class=\"externalDFN\">data</a></code>, and\n                \"<code>--&gt;</code>\".\n\n            \n\n            </p>"
+            },
+            {
+              "case": "Text",
+              "html": "",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag is set (its value is\n                    <code>true</code>), and <var>node</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-characterdata-data\" title=\"dom-characterdata-data\" class=\"externalDFN\">data</a></code>\n                    contains characters that are not matched by the XML <code>Char</code> production [<cite><a href=\"https://www.w3.org/TR/DOM-Parsing/#bib-XML10\" class=\"bibref\">XML10</a></cite>],\n                    then <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-algorithm-exception\" title=\"concept-algorithm-exception\">throw an exception</a>; the serialization of this\n                    <var>node</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-characterdata-data\" title=\"dom-characterdata-data\" class=\"externalDFN\">data</a></code>\n                    would not be well-formed."
+                },
+                {
+                  "html": "Let <var>markup</var> be the value of <var>node</var>'s\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-characterdata-data\" title=\"dom-characterdata-data\" class=\"externalDFN\">data</a></code>."
+                },
+                {
+                  "html": "Replace any occurrences of \"<code>&amp;</code>\" in <var>markup</var> by\n                \"<code>&amp;amp;</code>\"."
+                },
+                {
+                  "html": "Replace any occurrences of \"<code>&lt;</code>\" in <var>markup</var> by\n                \"<code>&amp;lt;</code>\"."
+                },
+                {
+                  "html": "Replace any occurrences of \"<code>&gt;</code>\" in <var>markup</var> by\n                \"<code>&amp;gt;</code>\"."
+                },
+                {
+                  "html": "Return the value of <var>markup</var>."
+                }
+              ]
+            },
+            {
+              "case": "DocumentFragment",
+              "html": "",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>markup</var> the empty string."
+                },
+                {
+                  "html": "For each <a href=\"https://www.w3.org/TR/dom/#concept-tree-child\" title=\"concept-tree-child\" class=\"externalDFN\">child</a>\n                    <var>child</var> of <var>node</var>, in\n                    <a href=\"https://www.w3.org/TR/dom/#concept-tree-order\" title=\"concept-tree-order\" class=\"externalDFN\">tree order</a>,\n                    run the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-xml-serialization-algorithm\" title=\"concept-xml-serialization-algorithm\">XML serialization algorithm</a>\n                    on the <var>child</var> given\n                    a <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-context-namespace\" title=\"concept-context-namespace\">context namespace</a> <var>namespace</var>, a\n                    <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a> <var>prefix map</var>,\n                    a reference to a <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generated-prefix\" title=\"concept-generated-prefix\">generated namespace prefix index</a>\n                    <var>prefix index</var>, and flag <var>require well-formed</var>. Concatenate the result\n                    to <var>markup</var>."
+                },
+                {
+                  "html": "Return the value of <var>markup</var>."
+                }
+              ]
+            },
+            {
+              "case": "DocumentType",
+              "html": "Run the steps to <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-serialize-doctype\" title=\"concept-serialize-doctype\">produce a DocumentType\n                serialization</a> of <var>node</var> given the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a>\n                flag, and return the string this produced."
+            },
+            {
+              "case": "ProcessingInstruction",
+              "html": "",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag is set (its value is\n                    <code>true</code>), and <var>node</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-processinginstruction-target\" title=\"dom-processinginstruction-target\" class=\"externalDFN\">target</a></code>\n                    contains a \"<code>:</code>\" (U+003A COLON) character or is an\n                    <a href=\"https://www.w3.org/TR/dom/#ascii-case-insensitive\" class=\"externalDFN\" title=\"ascii-case-insensitive\">ASCII case-insensitive</a>\n                    match for the string \"<code>xml</code>\", then <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-algorithm-exception\" title=\"concept-algorithm-exception\">throw an\n                    exception</a>; the serialization of this <var>node</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-processinginstruction-target\" title=\"dom-processinginstruction-target\" class=\"externalDFN\">target</a></code>\n                    would not be well-formed."
+                },
+                {
+                  "html": "If the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag is set (its value is\n                    <code>true</code>), and <var>node</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-characterdata-data\" title=\"dom-characterdata-data\" class=\"externalDFN\">data</a></code>\n                    contains characters that are not matched by the XML <code>Char</code> production [<cite><a href=\"https://www.w3.org/TR/DOM-Parsing/#bib-XML10\" class=\"bibref\">XML10</a></cite>] or\n                    contains the string \"<code>?&gt;</code>\" (U+003F QUESTION MARK, U+003E GREATER-THAN SIGN),\n                    then <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-algorithm-exception\" title=\"concept-algorithm-exception\">throw an exception</a>; the serialization of this\n                    <var>node</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-characterdata-data\" title=\"dom-characterdata-data\" class=\"externalDFN\">data</a></code>\n                    would not be well-formed."
+                },
+                {
+                  "html": "Let <var>markup</var> be the concatenation of the following, in the order listed:",
+                  "ignored": [
+                    "\"<?\" (U+003C LESS-THAN SIGN, U+003F QUESTION MARK); The value of node's target; \" \" (U+0020 SPACE); The value of node's data; \"?>\" (U+003F QUESTION MARK, U+003E GREATER-THAN SIGN)."
+                  ]
+                },
+                {
+                  "html": "Return the value of <var>markup</var>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "concept-serialize-doctype",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-concept-serialize-doctype",
+      "html": "To <dfn id=\"dfn-concept-serialize-doctype\" data-dfn-type=\"dfn\" data-lt=\"concept-serialize-doctype\">produce a DocumentType serialization</dfn> of a\n            <code><a href=\"https://www.w3.org/TR/dom/#node\" title=\"node\" class=\"externalDFN\">Node</a></code> <var>node</var>, given a\n            <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag, the user agent must return\n            the result of the following algorithm:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag is <code>true</code>\n                and the <var>node</var>'s\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-documenttype-publicid\" title=\"dom-documenttype-publicid\" class=\"externalDFN\">publicId</a></code>\n                attribute contains characters that are not matched by the XML <code>PubidChar</code> production\n                [<cite><a href=\"https://www.w3.org/TR/DOM-Parsing/#bib-XML10\" class=\"bibref\">XML10</a></cite>], then <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-algorithm-exception\" title=\"concept-algorithm-exception\">throw an exception</a>; the serialization\n                of this <var>node</var> would not be a well-formed document type declaration."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag is <code>true</code>\n                and the <var>node</var>'s\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-documenttype-systemid\" title=\"dom-documenttype-systemid\" class=\"externalDFN\">systemId</a></code>\n                attribute contains characters that are not matched by the XML <code>Char</code> production\n                [<cite><a href=\"https://www.w3.org/TR/DOM-Parsing/#bib-XML10\" class=\"bibref\">XML10</a></cite>] or that contains both a \"<code>\"</code>\" (U+0022 QUOTATION MARK) and a \"<code>'</code>\"\n                (U+0027 APOSTROPHE), then <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-algorithm-exception\" title=\"concept-algorithm-exception\">throw an exception</a>; the\n                serialization of this <var>node</var> would not be a well-formed document type declaration."
+        },
+        {
+          "html": "Let <var>markup</var> be an empty string."
+        },
+        {
+          "html": "Append the string \"<code>&lt;!DOCTYPE</code>\" to <var>markup</var>."
+        },
+        {
+          "html": "Append \"<code> </code>\" (U+0020 SPACE) to <var>markup</var>."
+        },
+        {
+          "html": "Append the value of the <var>node</var>'s\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-documenttype-name\" title=\"dom-documenttype-name\" class=\"externalDFN\">name</a></code>\n                attribute to <var>markup</var>. For a <var>node</var> belonging to an\n                <a href=\"https://www.w3.org/TR/dom/#html-document\" title=\"html-document\" class=\"externalDFN\">HTML document</a>,\n                the value will be all lowercase."
+        },
+        {
+          "html": "If the <var>node</var>'s\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-documenttype-publicid\" title=\"dom-documenttype-publicid\" class=\"externalDFN\">publicId</a></code>\n                is not the empty string then append the following, in the order listed, to <var>markup</var>:",
+          "ignored": [
+            "\" \" (U+0020 SPACE); The string \"PUBLIC\"; \" \" (U+0020 SPACE); \"\"\" (U+0022 QUOTATION MARK); The value of the node's publicId attribute; \"\"\" (U+0022 QUOTATION MARK)."
+          ]
+        },
+        {
+          "html": "If the <var>node</var>'s\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-documenttype-systemid\" title=\"dom-documenttype-systemid\" class=\"externalDFN\">systemId</a></code>\n                is not the empty string and the <var>node</var>'s\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-documenttype-publicid\" title=\"dom-documenttype-publicid\" class=\"externalDFN\">publicId</a></code>\n                is set to the empty string, then append the following, in the order listed, to <var>markup</var>:",
+          "ignored": [
+            "\" \" (U+0020 SPACE); The string \"SYSTEM\"."
+          ]
+        },
+        {
+          "html": "If the <var>node</var>'s\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-documenttype-systemid\" title=\"dom-documenttype-systemid\" class=\"externalDFN\">systemId</a></code>\n                is not the empty string then append the following, in the order listed, to <var>markup</var>:",
+          "ignored": [
+            "\" \" (U+0020 SPACE); \"\"\" (U+0022 QUOTATION MARK); The value of the node's systemId attribute; \"\"\" (U+0022 QUOTATION MARK)."
+          ]
+        },
+        {
+          "html": "Append \"<code>&gt;</code>\" (U+003E GREATER-THAN SIGN) to <var>markup</var>."
+        },
+        {
+          "html": "Return the value of <var>markup</var>."
+        }
+      ]
+    },
+    {
+      "name": "concept-record-namespace-info",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-concept-record-namespace-info",
+      "html": "To <dfn id=\"dfn-concept-record-namespace-info\" data-dfn-type=\"dfn\" data-lt=\"concept-record-namespace-info\">record the namespace information</dfn> for an\n            <code><a href=\"https://www.w3.org/TR/dom/#element\" title=\"element\" class=\"externalDFN\">Element</a></code> <var>element</var>, given a\n            <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a> <var>map</var>, an\n            <var>element prefixes list</var> (initially empty), and a <var>duplicate prefix\n            definition</var> reference, the user agent must run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>default namespace attr value</var> be <code>null</code>."
+        },
+        {
+          "html": "<dfn id=\"dfn-record-namespace-loop\" data-dfn-type=\"dfn\" data-lt=\"record-namespace-loop\">Main</dfn>: For each <a href=\"https://www.w3.org/TR/dom/#concept-attribute\" title=\"concept-attribute\" class=\"externalDFN\">attribute</a>\n                <var>attr</var> in <var>element</var>'s\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-element-attributes\" title=\"dom-element-attributes\" class=\"externalDFN\">attributes</a></code>,\n                in the order they are specified in the <var>element</var>'s\n                <a href=\"https://www.w3.org/TR/dom/#dom-element-attributes\" title=\"dom-element-attributes\" class=\"externalDFN\">attribute list</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>attribute namespace</var> be the value of <var>attr</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-namespaceuri\" title=\"dom-attr-namespaceuri\" class=\"externalDFN\">namespaceURI</a></code>\n                    value."
+            },
+            {
+              "html": "Let <var>attribute prefix</var> be the value of <var>attr</var>'s\n                        <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-prefix\" title=\"dom-attr-prefix\" class=\"externalDFN\">prefix</a></code>."
+            },
+            {
+              "html": "If the <var>attribute namespace</var> is the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-xmlns-ns\" title=\"xmlns-ns\">XMLNS namespace</a>, then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>attribute prefix</var> is <code>null</code>, then <var>attr</var> is a\n                        default namespace declaration. Set the <var>default namespace attr value</var> to\n                        <var>attr</var>'s <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-value\" title=\"dom-attr-value\" class=\"externalDFN\">value</a></code> and stop running these steps, returning to\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-record-namespace-loop\" title=\"record-namespace-loop\">Main</a> to visit the next attribute."
+                },
+                {
+                  "html": "Otherwise, the <var>attribute prefix</var> is not <code>null</code> and <var>attr</var>\n                        is a namespace prefix definition. Run the following steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var>prefix definition</var> be the value of <var>attr</var>'s\n                            <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-localname\" title=\"dom-attr-localname\" class=\"externalDFN\">localName</a></code>."
+                    },
+                    {
+                      "html": "Let <var>namespace definition</var> be the value of <var>attr</var>'s\n                            <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-value\" title=\"dom-attr-value\" class=\"externalDFN\">value</a></code>."
+                    },
+                    {
+                      "html": "If a key matching the value of <var>namespace definition</var> already exists in\n                            <var>map</var>, and the key's value matches <var>prefix definition</var>, then\n                            this is a duplicate namespace prefix definition. Set the value of <var>duplicate\n                            prefix definition</var> to <var>prefix definition</var>."
+                    },
+                    {
+                      "html": "Otherwise, if the key matching the value of <var>namespace definition</var> already\n                            exists in <var>map</var>, but the key's value does not match <var>prefix definition</var>,\n                            then update the key's value to be <var>prefix definition</var>."
+                    },
+                    {
+                      "html": "Otherwise, no key matching the value of <var>namespace definition</var> exists;\n                            append to <var>map</var> a new key <var>namespace definition</var>\n                            whose key value is the <var>prefix definition</var>."
+                    },
+                    {
+                      "html": "Append the value of <var>prefix definition</var> to <var>element prefixes list</var>."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return the value of <var>default namespace attr value</var>."
+        }
+      ]
+    },
+    {
+      "name": "concept-generate-prefix",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generate-prefix",
+      "html": "To <dfn id=\"dfn-concept-generate-prefix\" data-dfn-type=\"dfn\" data-lt=\"concept-generate-prefix\">generate a prefix</dfn> given a\n            <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix map</a> <var>map</var>, a\n            string <var>new namespace</var>, and a reference to a\n            <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generated-prefix\" title=\"concept-generated-prefix\">generated namespace prefix index</a> <var>prefix\n            index</var>, the user agent must run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>generated prefix</var> be the concatenation of the string \"<code>ns</code>\" and\n                the current numerical value of <var>prefix index</var>."
+        },
+        {
+          "html": "Let the value of <var>prefix index</var> be incremented by one."
+        },
+        {
+          "html": "Append to <var>map</var> a new key <var>new namespace</var> whose key value is the\n                <var>generated prefix</var>."
+        },
+        {
+          "html": "Return the value of <var>generated prefix</var>."
+        }
+      ]
+    },
+    {
+      "name": "concept-serialize-xml-attributes",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-concept-serialize-xml-attributes",
+      "html": "The <dfn id=\"dfn-concept-serialize-xml-attributes\" data-dfn-type=\"dfn\" data-lt=\"concept-serialize-xml-attributes\">XML serialization of the attributes</dfn>\n            of an <code><a href=\"https://www.w3.org/TR/dom/#concept-element\" title=\"concept-element\" class=\"externalDFN\">Element</a></code>\n            <var>element</var> together with a <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-namespace-prefix-map\" title=\"concept-namespace-prefix-map\">namespace prefix\n            map</a> <var>map</var>, a <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generated-prefix\" title=\"concept-generated-prefix\">generated prefix index</a>\n            <var>prefix index</var> reference, a flag <var>ignore namespace definition attribute</var>, a\n            <var>duplicate prefix definition</var> value, and a flag <var>require well-formed</var>,\n            is the result of the following algorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>result</var> be the empty string."
+        },
+        {
+          "html": "Let <var>localname set</var> be a new empty\n                <dfn id=\"dfn-concept-namespace-localname-set\" data-dfn-type=\"dfn\" data-lt=\"concept-namespace-localname-set\">namespace localname set</dfn>. This <var>localname\n                set</var> will contain tuples of unique attribute\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-namespaceuri\" title=\"dom-attr-namespaceuri\" class=\"externalDFN\">namespaceURI</a></code>\n                and <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>\n                pairs, and is populated as each <var>attr</var> is processed."
+        },
+        {
+          "html": "<dfn id=\"dfn-serialize-attributes-loop\" data-dfn-type=\"dfn\" data-lt=\"serialize-attributes-loop\">Main</dfn>: For each <a href=\"https://www.w3.org/TR/dom/#concept-attribute\" title=\"concept-attribute\" class=\"externalDFN\">attribute</a>\n                <var>attr</var> in <var>element</var>'s\n                <code><a href=\"https://www.w3.org/TR/dom/#dom-element-attributes\" title=\"dom-element-attributes\" class=\"externalDFN\">attributes</a></code>,\n                in the order they are specified in the <var>element</var>'s\n                <a href=\"https://www.w3.org/TR/dom/#dom-element-attributes\" title=\"dom-element-attributes\" class=\"externalDFN\">attribute list</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag is set (its value is\n                    <code>true</code>), and the <var>localname set</var> contains a tuple whose values match those\n                    of a new tuple consisting of <var>attr</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-namespaceuri\" title=\"dom-attr-namespaceuri\" class=\"externalDFN\">namespaceURI</a></code>\n                    attribute and <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>\n                    attribute, then <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-algorithm-exception\" title=\"concept-algorithm-exception\">throw an exception</a>; the serialization of this\n                    <var>attr</var> would fail to produce a well-formed element serialization."
+            },
+            {
+              "html": "Create a new tuple consisting of <var>attr</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-namespaceuri\" title=\"dom-attr-namespaceuri\" class=\"externalDFN\">namespaceURI</a></code>\n                    attribute and <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>\n                    attribute, and add it to the <var>localname set</var>."
+            },
+            {
+              "html": "Let <var>attribute namespace</var> be the value of <var>attr</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-namespaceuri\" title=\"dom-attr-namespaceuri\" class=\"externalDFN\">namespaceURI</a></code>\n                    value."
+            },
+            {
+              "html": "Let <var>candidate prefix</var> be <code>null</code>."
+            },
+            {
+              "html": "If <var>attribute namespace</var> is not <code>null</code>, then run these sub-steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If the value of <var>attribute namespace</var> is the\n                        <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-xmlns-ns\" title=\"xmlns-ns\">XMLNS namespace</a> and either the <var>attr</var>'s\n                        <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-prefix\" title=\"dom-attr-prefix\" class=\"externalDFN\">prefix</a></code>\n                        is <code>null</code> and the <var>ignore namespace definition\n                        attribute</var> flag is <code>true</code> or the <var>attr</var>'s\n                        <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-prefix\" title=\"dom-attr-prefix\" class=\"externalDFN\">prefix</a></code>\n                        is not <code>null</code> and the <var>attr</var>'s\n                        <code><a href=\"https://www.w3.org/TR/dom/#dom-attr-localname\" title=\"dom-attr-localname\" class=\"externalDFN\">localName</a></code>\n                        matches the value of <var>duplicate prefix definition</var>, then stop running\n                        these steps and goto <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-serialize-attributes-loop\" title=\"serialize-attributes-loop\">Main</a> to visit the next attribute."
+                },
+                {
+                  "html": "Otherwise, if there exists a key in <var>map</var> that matches the value of <var>attribute\n                        namespace</var>, then let <var>candidate prefix</var> be that key's value from the\n                        <var>map</var>."
+                },
+                {
+                  "html": "Otherwise, there is no key matching <var>attribute namespace</var> in <var>map</var> and\n                        the <var>attribute namespace</var> is not the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-xmlns-ns\" title=\"xmlns-ns\">XMLNS namespace</a>.\n                        Run these steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var>candidate prefix</var> be the result of\n                            <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-generate-prefix\" title=\"concept-generate-prefix\">generating a prefix</a> providing <var>map</var>,\n                            <var>attribute namespace</var>, and <var>prefix index</var> as input."
+                    },
+                    {
+                      "html": "Append the following to <var>result</var>, in the order listed:",
+                      "ignored": [
+                        "\" \" (U+0020 SPACE); The string \"xmlns:\"; The value of candidate prefix; \"=\"\" (U+003D EQUALS SIGN, U+0022 QUOTATION MARK); The result of serializing an attribute value given attribute namespace and the require well-formed flag as input; \"\"\" (U+0022 QUOTATION MARK)."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Append a \"<code> </code>\" (U+0020 SPACE) to <var>result</var>."
+            },
+            {
+              "html": "If <var>candidate prefix</var> is not <code>null</code>, then append to <var>result</var>\n                    the concatenation of <var>candidate prefix</var> with \"<code>:</code>\" (U+003A COLON)."
+            },
+            {
+              "html": "If the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag is set (its value is\n                    <code>true</code>), and this <var>attr</var>'s\n                    <code><a href=\"https://www.w3.org/TR/dom/#dom-element-localname\" title=\"dom-element-localname\" class=\"externalDFN\">localName</a></code>\n                    attribute contains the character \"<code>:</code>\" (U+003A COLON) or does not match the XML\n                    <code>Name</code> production [<cite><a href=\"https://www.w3.org/TR/DOM-Parsing/#bib-XML10\" class=\"bibref\">XML10</a></cite>] or equals \"<code>xmlns</code>\" and <var>attribute\n                    namespace</var> is <code>null</code>, then <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-algorithm-exception\" title=\"concept-algorithm-exception\">throw an\n                    exception</a>; the serialization of this <var>attr</var> would not be a well-formed attribute."
+            },
+            {
+              "html": "Append the following strings to <var>result</var>, in the order listed:",
+              "ignored": [
+                "The value of attr's localName; \"=\"\" (U+003D EQUALS SIGN, U+0022 QUOTATION MARK); The result of serializing an attribute value given attr's value attribute and the require well-formed flag as input; \"\"\" (U+0022 QUOTATION MARK)."
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return the value of <var>result</var>."
+        }
+      ]
+    },
+    {
+      "name": "concept-serialize-attr-value",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-concept-serialize-attr-value",
+      "html": "To <dfn id=\"dfn-concept-serialize-attr-value\" data-dfn-type=\"dfn\" data-lt=\"concept-serialize-attr-value\">serialize an attribute value</dfn> given an\n            <var>attribute value</var> and <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag,\n            the user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-well-formed\" title=\"concept-well-formed\">require well-formed</a> flag is set (its value is\n                <code>true</code>), and <var>attribute value</var> contains characters that are not matched\n                by the XML <code>Char</code> production [<cite><a href=\"https://www.w3.org/TR/DOM-Parsing/#bib-XML10\" class=\"bibref\">XML10</a></cite>], then\n                <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-algorithm-exception\" title=\"concept-algorithm-exception\">throw an exception</a>; the serialization of this\n                <var>attribute value</var> would fail to produce a well-formed element serialization."
+        },
+        {
+          "html": "If <var>attribute value</var> is <code>null</code>, then return the empty string."
+        },
+        {
+          "html": "Otherwise, <var>attribute value</var> is a string. Return the value of\n                <var>attribute value</var>, first replacing any occurrences of the following:",
+          "ignored": [
+            "\"\"\" with \"&quot;\" \"&\" with \"&amp;\" \"<\" with \"&lt;\" \">\" with \"&gt;\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dom-domparser-parsefromstring",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-dom-domparser-parsefromstring",
+      "html": "The\n            <dfn id=\"dfn-dom-domparser-parsefromstring\" data-dfn-type=\"dfn\" data-lt=\"dom-domparser-parsefromstring\"><code>parseFromString(<var>str</var>, <var>type</var>)</code></dfn>\n            method must run these steps, depending on <var>type</var>:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "\"text/html\"",
+              "html": "<p>Parse <var>str</var> with an\n                <code><a href=\"https://www.w3.org/TR/html5/single-page.html#html-parser\" title=\"html-parser\" class=\"externalDFN\">HTML parser</a></code>, and return the newly\n                created <a href=\"https://www.w3.org/TR/dom/#concept-document\" title=\"concept-document\" class=\"externalDFN\">document</a>.\n\n                </p><p>The <a href=\"https://www.w3.org/TR/html5/single-page.html#scripting-flag\" title=\"scripting-flag\" class=\"externalDFN\">scripting flag</a> must be set to\n                \"disabled\".\n\n                </p>"
+            },
+            {
+              "case": "\"text/xml\"",
+              "html": "",
+              "rationale": "parse",
+              "steps": [
+                {
+                  "html": "Parse <var>str</var> with a namespace-enabled\n                    <code><a href=\"https://www.w3.org/TR/html5/single-page.html#xml-parser\" title=\"xml-parser\" class=\"externalDFN\">XML parser</a></code>."
+                },
+                {
+                  "html": "If the previous step didn't return an error, return the newly\n                    created <a href=\"https://www.w3.org/TR/dom/#concept-document\" title=\"concept-document\" class=\"externalDFN\">document</a>."
+                },
+                {
+                  "html": "Let <var>document</var> be a newly-created\n                    <a href=\"https://www.w3.org/TR/dom/#xml-document\" title=\"xml-document\" class=\"externalDFN\">XML Document</a>."
+                },
+                {
+                  "html": "<p>Let <var>root</var> be a new\n                    <code><a href=\"https://www.w3.org/TR/dom/#element\" title=\"element\" class=\"externalDFN\">Element</a></code>, with its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-element-local-name\" title=\"concept-element-local-name\" class=\"externalDFN\">local name</a>\n                    set to \"<code>parsererror</code>\" and its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-element-namespace\" title=\"concept-element-namespace\" class=\"externalDFN\">namespace</a>\n                    set to\n                    \"<code>http://www.mozilla.org/newlayout/xml/parsererror.xml</code>\".\n                    \n                    </p><p>At this point user agents may\n                    <a href=\"https://www.w3.org/TR/dom/#concept-node-append\" title=\"concept-node-append\" class=\"externalDFN\">append</a> nodes\n                    to <var>root</var>, for example to describe the nature of the\n                    error.\n\n                    </p>"
+                },
+                {
+                  "html": "<a href=\"https://www.w3.org/TR/dom/#concept-node-append\" title=\"concept-node-append\" class=\"externalDFN\">Append</a>\n                    <var>root</var> to <var>document</var>."
+                },
+                {
+                  "html": "Return the value of <var>document</var>."
+                }
+              ]
+            },
+            {
+              "case": "\"application/xml\"",
+              "html": "",
+              "rationale": "parse",
+              "steps": [
+                {
+                  "html": "Parse <var>str</var> with a namespace-enabled\n                    <code><a href=\"https://www.w3.org/TR/html5/single-page.html#xml-parser\" title=\"xml-parser\" class=\"externalDFN\">XML parser</a></code>."
+                },
+                {
+                  "html": "If the previous step didn't return an error, return the newly\n                    created <a href=\"https://www.w3.org/TR/dom/#concept-document\" title=\"concept-document\" class=\"externalDFN\">document</a>."
+                },
+                {
+                  "html": "Let <var>document</var> be a newly-created\n                    <a href=\"https://www.w3.org/TR/dom/#xml-document\" title=\"xml-document\" class=\"externalDFN\">XML Document</a>."
+                },
+                {
+                  "html": "<p>Let <var>root</var> be a new\n                    <code><a href=\"https://www.w3.org/TR/dom/#element\" title=\"element\" class=\"externalDFN\">Element</a></code>, with its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-element-local-name\" title=\"concept-element-local-name\" class=\"externalDFN\">local name</a>\n                    set to \"<code>parsererror</code>\" and its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-element-namespace\" title=\"concept-element-namespace\" class=\"externalDFN\">namespace</a>\n                    set to\n                    \"<code>http://www.mozilla.org/newlayout/xml/parsererror.xml</code>\".\n                    \n                    </p><p>At this point user agents may\n                    <a href=\"https://www.w3.org/TR/dom/#concept-node-append\" title=\"concept-node-append\" class=\"externalDFN\">append</a> nodes\n                    to <var>root</var>, for example to describe the nature of the\n                    error.\n\n                    </p>"
+                },
+                {
+                  "html": "<a href=\"https://www.w3.org/TR/dom/#concept-node-append\" title=\"concept-node-append\" class=\"externalDFN\">Append</a>\n                    <var>root</var> to <var>document</var>."
+                },
+                {
+                  "html": "Return the value of <var>document</var>."
+                }
+              ]
+            },
+            {
+              "case": "\"application/xhtml+xml\"",
+              "html": "",
+              "rationale": "parse",
+              "steps": [
+                {
+                  "html": "Parse <var>str</var> with a namespace-enabled\n                    <code><a href=\"https://www.w3.org/TR/html5/single-page.html#xml-parser\" title=\"xml-parser\" class=\"externalDFN\">XML parser</a></code>."
+                },
+                {
+                  "html": "If the previous step didn't return an error, return the newly\n                    created <a href=\"https://www.w3.org/TR/dom/#concept-document\" title=\"concept-document\" class=\"externalDFN\">document</a>."
+                },
+                {
+                  "html": "Let <var>document</var> be a newly-created\n                    <a href=\"https://www.w3.org/TR/dom/#xml-document\" title=\"xml-document\" class=\"externalDFN\">XML Document</a>."
+                },
+                {
+                  "html": "<p>Let <var>root</var> be a new\n                    <code><a href=\"https://www.w3.org/TR/dom/#element\" title=\"element\" class=\"externalDFN\">Element</a></code>, with its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-element-local-name\" title=\"concept-element-local-name\" class=\"externalDFN\">local name</a>\n                    set to \"<code>parsererror</code>\" and its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-element-namespace\" title=\"concept-element-namespace\" class=\"externalDFN\">namespace</a>\n                    set to\n                    \"<code>http://www.mozilla.org/newlayout/xml/parsererror.xml</code>\".\n                    \n                    </p><p>At this point user agents may\n                    <a href=\"https://www.w3.org/TR/dom/#concept-node-append\" title=\"concept-node-append\" class=\"externalDFN\">append</a> nodes\n                    to <var>root</var>, for example to describe the nature of the\n                    error.\n\n                    </p>"
+                },
+                {
+                  "html": "<a href=\"https://www.w3.org/TR/dom/#concept-node-append\" title=\"concept-node-append\" class=\"externalDFN\">Append</a>\n                    <var>root</var> to <var>document</var>."
+                },
+                {
+                  "html": "Return the value of <var>document</var>."
+                }
+              ]
+            },
+            {
+              "case": "\"image/svg+xml\"",
+              "html": "",
+              "rationale": "parse",
+              "steps": [
+                {
+                  "html": "Parse <var>str</var> with a namespace-enabled\n                    <code><a href=\"https://www.w3.org/TR/html5/single-page.html#xml-parser\" title=\"xml-parser\" class=\"externalDFN\">XML parser</a></code>."
+                },
+                {
+                  "html": "If the previous step didn't return an error, return the newly\n                    created <a href=\"https://www.w3.org/TR/dom/#concept-document\" title=\"concept-document\" class=\"externalDFN\">document</a>."
+                },
+                {
+                  "html": "Let <var>document</var> be a newly-created\n                    <a href=\"https://www.w3.org/TR/dom/#xml-document\" title=\"xml-document\" class=\"externalDFN\">XML Document</a>."
+                },
+                {
+                  "html": "<p>Let <var>root</var> be a new\n                    <code><a href=\"https://www.w3.org/TR/dom/#element\" title=\"element\" class=\"externalDFN\">Element</a></code>, with its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-element-local-name\" title=\"concept-element-local-name\" class=\"externalDFN\">local name</a>\n                    set to \"<code>parsererror</code>\" and its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-element-namespace\" title=\"concept-element-namespace\" class=\"externalDFN\">namespace</a>\n                    set to\n                    \"<code>http://www.mozilla.org/newlayout/xml/parsererror.xml</code>\".\n                    \n                    </p><p>At this point user agents may\n                    <a href=\"https://www.w3.org/TR/dom/#concept-node-append\" title=\"concept-node-append\" class=\"externalDFN\">append</a> nodes\n                    to <var>root</var>, for example to describe the nature of the\n                    error.\n\n                    </p>"
+                },
+                {
+                  "html": "<a href=\"https://www.w3.org/TR/dom/#concept-node-append\" title=\"concept-node-append\" class=\"externalDFN\">Append</a>\n                    <var>root</var> to <var>document</var>."
+                },
+                {
+                  "html": "Return the value of <var>document</var>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "On setting, these steps must be run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>fragment</var> be the result of invoking the\n                <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-parse-fragment\" title=\"concept-parse-fragment\">fragment parsing algorithm</a> with\n                the new value as <var>markup</var>, and the\n                <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a> as the <var>context element</var>."
+        },
+        {
+          "html": "<a href=\"https://www.w3.org/TR/dom/#concept-node-replace-all\" title=\"concept-node-replace-all\" class=\"externalDFN\">Replace all</a>\n                with <var>fragment</var> within the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>."
+        }
+      ]
+    },
+    {
+      "html": "On setting, the following steps must be run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>parent</var> be the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>'s\n                <a href=\"https://www.w3.org/TR/dom/#concept-tree-parent\" title=\"concept-tree-parent\" class=\"externalDFN\">parent</a>."
+        },
+        {
+          "html": "If <var>parent</var> is null, terminate these steps. There would be no\n                way to obtain a reference to the nodes created even if the remaining steps\n                were run."
+        },
+        {
+          "html": "If <var>parent</var> is a\n                <code><a href=\"https://www.w3.org/TR/dom/#document\" title=\"document\" class=\"externalDFN\">Document</a></code>, throw a\n                <code><a href=\"https://www.w3.org/TR/dom/#dfn-DOMException\" title=\"domexception\" class=\"externalDFN\">DOMException</a></code> with name\n                \"<code><a href=\"https://www.w3.org/TR/dom/#nomodificationallowederror\" title=\"nomodificationallowederror\" class=\"externalDFN\">NoModificationAllowedError</a></code>\"\n                exception."
+        },
+        {
+          "html": "If <var>parent</var> is a\n                <code><a href=\"https://www.w3.org/TR/dom/#documentfragment\" title=\"documentfragment\" class=\"externalDFN\">DocumentFragment</a></code>, let\n                <var>parent</var> be a new\n                <code><a href=\"https://www.w3.org/TR/dom/#element\" title=\"element\" class=\"externalDFN\">Element</a></code> with\n\n                <ul>\n                    <li><code>body</code> as its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-element-local-name\" title=\"concept-element-local-name\" class=\"externalDFN\">local name</a>,\n\n                    </li><li>The <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-html-ns\" title=\"html-ns\">HTML namespace</a> as its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-element-namespace\" title=\"concept-element-namespace\" class=\"externalDFN\">namespace</a>, and\n                    </li><li>The <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>'s\n                    <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>\n                    as its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>.\n                </li></ul>"
+        },
+        {
+          "html": "Let <var>fragment</var> be the result of invoking the\n                <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-parse-fragment\" title=\"concept-parse-fragment\">fragment parsing algorithm</a> with\n                the new value as <var>markup</var>, and <var>parent</var> as\n                the <var>context element</var>."
+        },
+        {
+          "html": "<a href=\"https://www.w3.org/TR/dom/#concept-node-replace\" title=\"concept-node-replace\" class=\"externalDFN\">Replace</a>\n                the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a> with <var>fragment</var> within\n                the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>'s\n                <a href=\"https://www.w3.org/TR/dom/#concept-tree-parent\" title=\"concept-tree-parent\" class=\"externalDFN\">parent</a>."
+        }
+      ]
+    },
+    {
+      "name": "dom-element-insertadjacenthtml",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-dom-element-insertadjacenthtml",
+      "html": "The\n                <dfn id=\"dfn-dom-element-insertadjacenthtml\" data-dfn-type=\"dfn\" data-lt=\"dom-element-insertadjacenthtml\"><code>insertAdjacentHTML(<var>position</var>, <var>text</var>)</code></dfn>\n                method must run these steps:",
+      "rationale": "use",
+      "steps": [
+        {
+          "html": "Use the first matching item from this list:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If position is an ASCII case-insensitive match for the string \"beforebegin\"",
+                  "html": "<p>Let <var>context</var> be the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>'s\n                            <a href=\"https://www.w3.org/TR/dom/#concept-tree-parent\" title=\"concept-tree-parent\" class=\"externalDFN\">parent</a>.\n\n                            </p><p>If <var>context</var> is null or a\n                            <a href=\"https://www.w3.org/TR/dom/#concept-document\" class=\"externalDFN\" title=\"concept-document\">document</a>, throw\n                            a\n                            <code><a href=\"https://www.w3.org/TR/dom/#dfn-DOMException\" title=\"domexception\" class=\"externalDFN\">DOMException</a></code> with name\n                            \"<code><a href=\"https://www.w3.org/TR/dom/#nomodificationallowederror\" title=\"nomodificationallowederror\" class=\"externalDFN\">NoModificationAllowedError</a></code>\".\n\n                        </p>"
+                },
+                {
+                  "case": "If position is an ASCII case-insensitive match for the string \"afterend\"",
+                  "html": "<p>Let <var>context</var> be the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>'s\n                            <a href=\"https://www.w3.org/TR/dom/#concept-tree-parent\" title=\"concept-tree-parent\" class=\"externalDFN\">parent</a>.\n\n                            </p><p>If <var>context</var> is null or a\n                            <a href=\"https://www.w3.org/TR/dom/#concept-document\" class=\"externalDFN\" title=\"concept-document\">document</a>, throw\n                            a\n                            <code><a href=\"https://www.w3.org/TR/dom/#dfn-DOMException\" title=\"domexception\" class=\"externalDFN\">DOMException</a></code> with name\n                            \"<code><a href=\"https://www.w3.org/TR/dom/#nomodificationallowederror\" title=\"nomodificationallowederror\" class=\"externalDFN\">NoModificationAllowedError</a></code>\".\n\n                        </p>"
+                },
+                {
+                  "case": "If position is an ASCII case-insensitive match for the string \"afterbegin\"",
+                  "html": "Let <var>context</var> be the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>."
+                },
+                {
+                  "case": "If position is an ASCII case-insensitive match for the string \"beforeend\"",
+                  "html": "Let <var>context</var> be the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>."
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "<p>Throw a <code><a href=\"https://www.w3.org/TR/dom/#dfn-DOMException\" title=\"domexception\" class=\"externalDFN\">DOMException</a></code>\n                            with name \"<code><a href=\"https://www.w3.org/TR/dom/#syntaxerror\" title=\"syntaxerror\" class=\"externalDFN\">SyntaxError</a></code>\".\n                    </p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If <var>context</var> is not an\n                    <code><a href=\"https://www.w3.org/TR/dom/#element\" title=\"element\" class=\"externalDFN\">Element</a></code> or the following are all true:\n\n                    <ul>\n                      <li><var>context</var>'s\n                      <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>\n                      is an <a href=\"https://www.w3.org/TR/dom/#html-document\" title=\"html-document\" class=\"externalDFN\">HTML document</a>,\n\n                      </li><li><var>context</var>'s\n                      <a href=\"https://www.w3.org/TR/dom/#concept-element-local-name\" title=\"concept-element-local-name\" class=\"externalDFN\">local name</a>\n                      is \"<code>html</code>\", and\n\n                      </li><li><var>context</var>'s\n                      <a href=\"https://www.w3.org/TR/dom/#concept-element-namespace\" title=\"concept-element-namespace\" class=\"externalDFN\">namespace</a>\n                      is the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-html-ns\" title=\"html-ns\">HTML namespace</a>;\n                    </li></ul>\n\n                    <p>let <var>context</var> be a new\n                    <code><a href=\"https://www.w3.org/TR/dom/#element\" title=\"element\" class=\"externalDFN\">Element</a></code> with\n\n                    </p><ul>\n                      <li><code>body</code> as its\n                      <a href=\"https://www.w3.org/TR/dom/#concept-element-local-name\" title=\"concept-element-local-name\" class=\"externalDFN\">local name</a>,\n\n                      </li><li>The <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-html-ns\" title=\"html-ns\">HTML namespace</a> as its\n                      <a href=\"https://www.w3.org/TR/dom/#concept-element-namespace\" title=\"concept-element-namespace\" class=\"externalDFN\">namespace</a>, and\n\n                      </li><li>The <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>'s\n                      <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>\n                      as its\n                      <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>.\n                    </li></ul>"
+        },
+        {
+          "html": "Let <var>fragment</var> be the result of invoking the\n                <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-parse-fragment\" title=\"concept-parse-fragment\">fragment parsing algorithm</a> with <var>text</var> as\n                <var>markup</var>, and <var>context</var> as the <var>context element</var>."
+        },
+        {
+          "html": "Use the first matching item from this list:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If position is an ASCII case-insensitive match for the string \"beforebegin\"",
+                  "html": "<a href=\"https://www.w3.org/TR/dom/#concept-node-insert\" title=\"concept-node-insert\" class=\"externalDFN\">Insert</a>\n                    <var>fragment</var> into the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>'s\n                    <a href=\"https://www.w3.org/TR/dom/#concept-tree-parent\" title=\"concept-tree-parent\" class=\"externalDFN\">parent</a>\n                    before the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>."
+                },
+                {
+                  "case": "If position is an ASCII case-insensitive match for the string \"afterbegin\"",
+                  "html": "<a href=\"https://www.w3.org/TR/dom/#concept-node-insert\" title=\"concept-node-insert\" class=\"externalDFN\">Insert</a>\n                    <var>fragment</var> into the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>\n                    before its\n                    <a href=\"https://www.w3.org/TR/dom/#concept-tree-first-child\" title=\"concept-tree-first-child\" class=\"externalDFN\">first child</a>."
+                },
+                {
+                  "case": "If position is an ASCII case-insensitive match for the string \"beforeend\"",
+                  "html": "<a href=\"https://www.w3.org/TR/dom/#concept-node-append\" title=\"concept-node-append\" class=\"externalDFN\">Append</a>\n                    <var>fragment</var> to the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>."
+                },
+                {
+                  "case": "If position is an ASCII case-insensitive match for the string \"afterend\"",
+                  "html": "<a href=\"https://www.w3.org/TR/dom/#concept-node-insert\" title=\"concept-node-insert\" class=\"externalDFN\">Insert</a>\n                    <var>fragment</var> into the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>'s\n                    <a href=\"https://www.w3.org/TR/dom/#concept-tree-parent\" title=\"concept-tree-parent\" class=\"externalDFN\">parent</a>\n                    before the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>'s\n                    <a href=\"https://www.w3.org/TR/dom/#concept-tree-next-sibling\" title=\"concept-tree-next-sibling\" class=\"externalDFN\">next sibling</a>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dom-range-createcontextualfragment",
+      "href": "https://www.w3.org/TR/DOM-Parsing/#dfn-dom-range-createcontextualfragment",
+      "html": "The\n            <dfn id=\"dfn-dom-range-createcontextualfragment\" data-dfn-type=\"dfn\" data-lt=\"dom-range-createcontextualfragment\"><code>createContextualFragment(<var>fragment</var>)</code></dfn>\n            method must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>element</var> be as follows, depending on <var>node</var>'s interface:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "Document",
+                  "html": "null"
+                },
+                {
+                  "case": "DocumentFragment",
+                  "html": "null"
+                },
+                {
+                  "case": "Element",
+                  "html": "<var>node</var>"
+                },
+                {
+                  "case": "Text",
+                  "html": "<var>node</var>'s\n                    <a href=\"https://www.w3.org/TR/dom/#parent-element\" class=\"externalDFN\" title=\"parent-element\">parent element</a>"
+                },
+                {
+                  "case": "Comment",
+                  "html": "<var>node</var>'s\n                    <a href=\"https://www.w3.org/TR/dom/#parent-element\" class=\"externalDFN\" title=\"parent-element\">parent element</a>"
+                },
+                {
+                  "case": "DocumentType",
+                  "html": "[<cite><a href=\"https://www.w3.org/TR/DOM-Parsing/#bib-DOM4\" class=\"bibref\">DOM4</a></cite>] prevents this case."
+                },
+                {
+                  "case": "ProcessingInstruction",
+                  "html": "[<cite><a href=\"https://www.w3.org/TR/DOM-Parsing/#bib-DOM4\" class=\"bibref\">DOM4</a></cite>] prevents this case."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If either <var>element</var> is null or the following are all true:\n\n                    <ul>\n                      <li><var>element</var>'s\n                      <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>\n                      is an <a href=\"https://www.w3.org/TR/dom/#html-document\" title=\"html-document\" class=\"externalDFN\">HTML document</a>,\n\n                      </li><li><var>element</var>'s\n                      <a href=\"https://www.w3.org/TR/dom/#concept-element-local-name\" title=\"concept-element-local-name\" class=\"externalDFN\">local name</a>\n                      is \"<code>html</code>\", and\n\n                      </li><li><var>element</var>'s\n                      <a href=\"https://www.w3.org/TR/dom/#concept-element-namespace\" title=\"concept-element-namespace\" class=\"externalDFN\">namespace</a>\n                      is the <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-html-ns\" title=\"html-ns\">HTML namespace</a>;\n                    </li></ul>\n\n                    <p>let <var>element</var> be a new\n                    <a href=\"https://www.w3.org/TR/dom/#concept-element\" title=\"concept-element\" class=\"externalDFN\">element</a> with\n\n                    </p><ul>\n                      <li>\"<code>body</code>\" as its\n                      <a href=\"https://www.w3.org/TR/dom/#concept-element-local-name\" title=\"concept-element-local-name\" class=\"externalDFN\">local name</a>,\n\n                      </li><li>The <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-html-ns\" title=\"html-ns\">HTML namespace</a> as its\n                      <a href=\"https://www.w3.org/TR/dom/#concept-element-namespace\" title=\"concept-element-namespace\" class=\"externalDFN\">namespace</a>, and\n\n                      </li><li>The <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-context-object\" title=\"context object\">context object</a>'s\n                      <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>\n                      as its\n                      <a href=\"https://www.w3.org/TR/dom/#concept-node-document\" title=\"concept-node-document\" class=\"externalDFN\">node document</a>.\n                    </li></ul>"
+        },
+        {
+          "html": "Let <var>fragment node</var> be the result of invoking the\n                <a data-link-type=\"dfn\" class=\"internalDFN\" href=\"https://www.w3.org/TR/DOM-Parsing/#dfn-concept-parse-fragment\" title=\"concept-parse-fragment\">fragment parsing algorithm</a> with <var>fragment</var> as\n                <var>markup</var>, and <var>element</var> as the <var>context element</var>."
+        },
+        {
+          "html": "Unmark all scripts in <var>fragment node</var> as \"already started\"."
+        },
+        {
+          "html": "Return the value of <var>fragment node</var>."
+        }
+      ]
+    }
+  ]
+}

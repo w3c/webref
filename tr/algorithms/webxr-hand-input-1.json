@@ -1,0 +1,207 @@
+{
+  "spec": {
+    "title": "WebXR Hand Input Module - Level 1",
+    "url": "https://www.w3.org/TR/webxr-hand-input-1/"
+  },
+  "algorithms": [
+    {
+      "name": "index-joint-space",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-get-jointname",
+      "html": "The <dfn class=\"idl-code\" data-dfn-for=\"XRHand\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrhand-get-jointname\"><code>get(<var>jointName</var>)</code><a class=\"self-link\" href=\"https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-get-jointname\"></a></dfn> method when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hand-input-1/#xrhand\" id=\"ref-for-xrhand⑥\">XRHand</a></code> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a> MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>joints</var> be the value of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-joints-slot\" id=\"ref-for-dom-xrhand-joints-slot②\">[[joints]]</a></code> internal slot.</p>"
+        },
+        {
+          "html": "<p>Return <var>joints</var>[<var>jointName</var>]. (This implies returning <code>undefined</code> for unknown <var>jointName</var>.)</p>"
+        }
+      ]
+    },
+    {
+      "name": "get-joint-pose",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrframe-getjointpose",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getJointPose(joint, baseSpace)\" id=\"dom-xrframe-getjointpose\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getJointPose(XRJointSpace <var>joint</var>, XRSpace <var>baseSpace</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method provides the pose of <var>joint</var> relative to <var>baseSpace</var> as an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hand-input-1/#xrjointpose\" id=\"ref-for-xrjointpose①\">XRJointPose</a></code>, at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe\" id=\"ref-for-xrframe①\">XRFrame</a></code>'s <a data-link-type=\"dfn\">time</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>frame</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session\">session</a></code> object.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#extendableevent-active\" id=\"ref-for-extendableevent-active\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>baseSpace</var>’s <a data-link-type=\"dfn\">session</a> or <var>joint</var>’s <a data-link-type=\"dfn\">session</a> are different from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session①\">session</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>pose</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hand-input-1/#xrjointpose\" id=\"ref-for-xrjointpose②\">XRJointPose</a></code> object in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a> of <var>session</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\">Populate the pose</a> of <var>joint</var> in <var>baseSpace</var> at the time represented by <var>frame</var> into <var>pose</var>, with <code>force emulation</code> set to <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>pose</var> is <code>null</code> return <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>pose</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hand-input-1/#dom-xrjointpose-radius\" id=\"ref-for-dom-xrjointpose-radius\">radius</a></code> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hand-input-1/#skeleton-joint-radius\" id=\"ref-for-skeleton-joint-radius\">radius</a> of <var>joint</var>, emulating it if necessary.</p>"
+        },
+        {
+          "html": "<p>Return <var>pose</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "fill-joint-radii",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrframe-filljointradii",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillJointRadii(jointSpaces, radii)\" id=\"dom-xrframe-filljointradii\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillJointRadii(sequence&lt;XRJointSpace&gt; <var>jointSpaces</var>, Float32Array <var>radii</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>radii</var> with the radii of the <var>jointSpaces</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>frame</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session②\">session</a></code> object.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#extendableevent-active\" id=\"ref-for-extendableevent-active①\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillJointRadii(jointSpaces, radii)\" id=\"dom-xrframe-filljointradii\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillJointRadii(sequence&lt;XRJointSpace&gt; <var>jointSpaces</var>, Float32Array <var>radii</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>radii</var> with the radii of the <var>jointSpaces</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>joint</var>’s <a data-link-type=\"dfn\">session</a> is different from <var>session</var>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If the length of <var>jointSpaces</var> is larger than the number of elements in <var>radii</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>let <var>offset</var> be a new number with the initial value of <code>0</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>allValid</var> be <code>true</code>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillJointRadii(jointSpaces, radii)\" id=\"dom-xrframe-filljointradii\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillJointRadii(sequence&lt;XRJointSpace&gt; <var>jointSpaces</var>, Float32Array <var>radii</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>radii</var> with the radii of the <var>jointSpaces</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillJointRadii(jointSpaces, radii)\" id=\"dom-xrframe-filljointradii\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillJointRadii(sequence&lt;XRJointSpace&gt; <var>jointSpaces</var>, Float32Array <var>radii</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>radii</var> with the radii of the <var>jointSpaces</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "If the user agent can determine the poses of all the joints belonging to the joint’s hand:",
+                      "html": "Set the float value of <var>radii</var> at <var>offset</var> to that <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hand-input-1/#skeleton-joint-radius\" id=\"ref-for-skeleton-joint-radius①\">radius</a>."
+                    },
+                    {
+                      "case": "Otherwise",
+                      "html": "Set the float value of <var>radii</var> at <var>offset</var> to <code>NaN</code>."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Increase <var>offset</var> by <code>1</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>allValid</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "fill-poses",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrframe-fillposes",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillPoses(spaces, baseSpace, transforms)\" id=\"dom-xrframe-fillposes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillPoses(sequence&lt;XRSpace&gt; <var>spaces</var>, XRSpace <var>baseSpace</var>, Float32Array <var>transforms</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>transforms</var> with the matrices of the poses of the <var>spaces</var> relative to the <var>baseSpace</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>frame</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a></code> object.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#extendableevent-active\" id=\"ref-for-extendableevent-active②\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillPoses(spaces, baseSpace, transforms)\" id=\"dom-xrframe-fillposes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillPoses(sequence&lt;XRSpace&gt; <var>spaces</var>, XRSpace <var>baseSpace</var>, Float32Array <var>transforms</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>transforms</var> with the matrices of the poses of the <var>spaces</var> relative to the <var>baseSpace</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>space</var>’s <a data-link-type=\"dfn\">session</a> is different from <var>session</var>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code> and abort these steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>baseSpace</var>’s <a data-link-type=\"dfn\">session</a> is different from <var>session</var>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If the length of <var>spaces</var> multiplied by <code>16</code> is larger than the number of elements in <var>transforms</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>let <var>offset</var> be a new number with the initial value of <code>0</code>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillPoses(spaces, baseSpace, transforms)\" id=\"dom-xrframe-fillposes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillPoses(sequence&lt;XRSpace&gt; <var>spaces</var>, XRSpace <var>baseSpace</var>, Float32Array <var>transforms</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>transforms</var> with the matrices of the poses of the <var>spaces</var> relative to the <var>baseSpace</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If fillPoses() was called previously, the user agent MAY:",
+                  "html": "Let <var>pose</var> be the same object as used by an earlier call."
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "Let <var>pose</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrpose\" id=\"ref-for-xrpose\">XRPose</a></code> object in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a> of <var>session</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>allValid</var> be <code>true</code>.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillPoses(spaces, baseSpace, transforms)\" id=\"dom-xrframe-fillposes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillPoses(sequence&lt;XRSpace&gt; <var>spaces</var>, XRSpace <var>baseSpace</var>, Float32Array <var>transforms</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>transforms</var> with the matrices of the poses of the <var>spaces</var> relative to the <var>baseSpace</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+          "rationale": "populate",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\">Populate the pose</a> of <var>space</var> in <var>baseSpace</var> at the time represented by <var>frame</var> into <var>pose</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>pose</var> is <code>null</code>, perform the following steps:</p>"
+            },
+            {
+              "html": "<p>Set <code>16</code> consecutive elements of the <var>transforms</var> array starting at <var>offset</var> to <code>NaN</code>.</p>"
+            },
+            {
+              "html": "<p>Set <var>allValid</var> to <code>false</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>pose</var> is not <code>null</code>, copy all elements from <var>pose</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrigidtransform-matrix\" id=\"ref-for-dom-xrrigidtransform-matrix\">matrix</a></code> member to the <var>transforms</var> array starting at <var>offset</var>.</p>"
+            },
+            {
+              "html": "<p>Increase <var>offset</var> by <code>16</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>allValid</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

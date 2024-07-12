@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "title": "Media Capture from DOM Elements",
+    "url": "https://www.w3.org/TR/mediacapture-fromelement/"
+  },
+  "algorithms": [
+    {
+      "html": "A new frame is requested from the canvas when\n                <a data-link-type=\"attribute\" data-lt=\"[[frameCaptureRequested]]\" href=\"https://www.w3.org/TR/mediacapture-fromelement/#dfn-framecapturerequested\" class=\"internalDFN\" id=\"ref-for-dfn-framecapturerequested-3\"><code>[[frameCaptureRequested]]</code></a> is true and the canvas is painted. Each\n                time that the captured canvas is painted, the following steps are executed:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <var>track</var> capturing from the canvas execute the following\n                steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If new content has been drawn to the canvas since it was last painted, and\n                    if the <a data-link-type=\"attribute\" data-lt=\"[[frameCaptureRequested]]\" href=\"https://www.w3.org/TR/mediacapture-fromelement/#dfn-framecapturerequested\" class=\"internalDFN\" id=\"ref-for-dfn-framecapturerequested-4\"><code>[[frameCaptureRequested]]</code></a> internal slot of\n                    <var>track</var> is set, add a new frame to <var>track</var> containing what\n                    was painted to the canvas."
+            },
+            {
+              "html": "If a <var>frameRequestRate</var> value was specified, set the\n                    <a data-link-type=\"attribute\" data-lt=\"[[frameCaptureRequested]]\" href=\"https://www.w3.org/TR/mediacapture-fromelement/#dfn-framecapturerequested\" class=\"internalDFN\" id=\"ref-for-dfn-framecapturerequested-5\"><code>[[frameCaptureRequested]]</code></a> internal slot of <var>track</var>\n                    to <code>false</code>."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "spec": {
+    "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
+    "url": "https://www.w3.org/TR/wai-aria-1.2/"
+  },
+  "algorithms": [
+    {
+      "html": "User agents <em class=\"rfc2119\">MUST</em> use the first token in the sequence of tokens in the <code>role</code> <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-attribute\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-attribute-8\">attribute</a> value that matches the name of any non-abstract <abbr title=\"Accessible Internet Application\">WAI-ARIA</abbr> <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-role\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-role-8\">role</a>. The following steps will correctly identify the applicable <abbr title=\"Accessible Rich Internet Application\">WAI-ARIA</abbr> role:",
+      "rationale": "use",
+      "steps": [
+        {
+          "html": "Use the rules of the host language to detect that an element has a role attribute and to identify the attribute value string for it."
+        },
+        {
+          "html": "Separate the attribute value string for that attribute into a sequence of whitespace-free substrings by separating on whitespace."
+        },
+        {
+          "html": "Compare the substrings to all the names of the non-abstract <abbr title=\"Accessible Rich Internet Application\">WAI-ARIA</abbr> roles. Case-sensitivity of the comparison inherits from the case-sensitivity of the host language."
+        },
+        {
+          "html": "Use the first such substring in textual order that matches the name of a non-abstract <abbr title=\"Accessible Rich Internet Application\">WAI-ARIA</abbr> role."
+        }
+      ]
+    },
+    {
+      "html": "The user agent <em class=\"rfc2119\">MUST</em> do the following to implement <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a>:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "Implement the host language method for keyboard navigation so that widgets that support <code>aria-activedescendant</code> may be included in the tab order."
+        },
+        {
+          "html": "For platforms that expose <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-desktop-focus\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-desktop-focus-2\">desktop focus</a> or <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-accessibility-api\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-api-16\">accessibility <abbr title=\"Application Programing Interfaces\">API</abbr></a> focus separately from <abbr title=\"Document Object Model\">DOM</abbr> focus, do not expose the focused state in the accessibility <abbr title=\"application programming interface\">API</abbr> for any element when it has <abbr title=\"Document Object Model\">DOM</abbr> focus and also has <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a> which points to a valid <a href=\"https://www.w3.org/TR/wai-aria-1.2/#valuetype_idref\">ID reference</a>."
+        },
+        {
+          "html": "When the <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a> attribute changes on an element that currently has <abbr title=\"Document Object Model\">DOM</abbr> focus, remove the focused state from the previously focused object and fire an accessibility <abbr title=\"application programming interface\">API</abbr> <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-desktop-focus\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-desktop-focus-3\">desktop focus event</a> on the new element referenced by <code>aria-activedescendant</code>. If <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a> is cleared or does not point to an element in the current document, fire a desktop focus event for the <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-object\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-object-13\">object</a> that had the attribute change."
+        },
+        {
+          "html": "Apply the following accessibility <abbr title=\"Application Programming Interface\">API</abbr> states to any element with an ID attribute that can be referenced by an element with both an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a> attribute and has <abbr title=\"Document Object Model\">DOM</abbr> focus. There are two ways an element can be referenced by <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a>. One way is when it is <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-owned-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-owned-element-1\">owned</a> by an element with <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a> and the other is when it is <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-owned-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-owned-element-2\">owned</a> by an element that is controlled by an element with role of <a href=\"https://www.w3.org/TR/wai-aria-1.2/#combobox\" class=\"role-reference\"><code>combobox</code></a>, <a href=\"https://www.w3.org/TR/wai-aria-1.2/#textbox\" class=\"role-reference\"><code>textbox</code></a> or <a href=\"https://www.w3.org/TR/wai-aria-1.2/#searchbox\" class=\"role-reference\"><code>searchbox</code></a> with an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a> attribute:",
+          "ignored": [
+            "Focusable, if the element also has a WAI-ARIA . The element needs to be focusable because it could be referenced by the aria-activedescendant attribute. Native elements that have no attribute do not need to be checked; their native semantics determine the focusable state. Focused, whenever the element is the target of the aria-activedescendant attribute and the element with the aria-activedescendant attribute has DOM focus."
+          ]
+        }
+      ]
+    },
+    {
+      "html": "When an assistive technology uses its platform's accessibility <abbr title=\"Application Programming Interfaces\">API</abbr> to request a change of focus, user agents <em class=\"rfc2119\">MUST</em> do the following:",
+      "rationale": "remove",
+      "steps": [
+        {
+          "html": "Remove the platform's focused state from the previously focused object."
+        },
+        {
+          "html": "Set the <abbr title=\"Document Object Model\">DOM</abbr> focus:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the  can take <abbr title=\"Document Object Model\">DOM</abbr> focus, the  <em class=\"rfc2119\">MUST</em> set the <abbr title=\"Document Object Model\">DOM</abbr> focus to it."
+            },
+            {
+              "html": "Otherwise, if the current element has an ID and the ID is referenced by the <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a> attribute of an element that is focusable, the user agent <em class=\"rfc2119\">MUST</em> set <abbr title=\"Document Object Model\">DOM</abbr> focus to the element that has the <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a> attribute."
+            },
+            {
+              "html": "Otherwise, the user agent <em class=\"rfc2119\">MAY</em> attempt to set <abbr title=\"Document Object Model\">DOM</abbr> focus to the child element itself."
+            }
+          ]
+        },
+        {
+          "html": "If the current element has an ID and is <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-owned-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-owned-element-4\">owned</a> by either a container element with both an <code>aria-activedescendant</code> attribute and has <abbr title=\"Document Object Model\">DOM</abbr> focus, or by a container element that is controlled by an element with both an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a> attribute and has <abbr title=\"Document Object Model\">DOM</abbr> focus, the user agent <em class=\"rfc2119\">MUST</em> set the accessibility <abbr title=\"Application Programming Interface\">API</abbr> focused state and fire an accessibility <abbr title=\"Application Programming Interface\">API</abbr> focus <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-event\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-event-6\">event</a> on the element identified  by the value of <code>aria-activedescendant</code>."
+        }
+      ]
+    },
+    {
+      "html": "Because only the focusable elements contained in an <code>application</code> element are accessible to users of some assistive technologies, authors <em class=\"rfc2119\">MUST</em> use one of the following techniques to ensure all non-decorative static text or image content inside an application is accessible:",
+      "rationale": "place",
+      "steps": [
+        {
+          "html": "Associate the content with a focusable element using <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby\" class=\"property-reference\"><code>aria-labelledby</code></a> or <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-describedby\" class=\"property-reference\"><code>aria-describedby</code></a>."
+        },
+        {
+          "html": "Place the content in a focusable element that has role <a href=\"https://www.w3.org/TR/wai-aria-1.2/#document\" class=\"role-reference\"><code>document</code></a> or <a href=\"https://www.w3.org/TR/wai-aria-1.2/#article\" class=\"role-reference\"><code>article</code></a>."
+        },
+        {
+          "html": "Manage focus of <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-owned-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-owned-element-11\">owned</a> elements as described in <a href=\"https://www.w3.org/TR/wai-aria-1.2/#managingfocus\">Managing Focus</a>, updating the value of <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant\" class=\"property-reference\"><code>aria-activedescendant</code></a> to reference the <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-22\">element</a> containing the focused content."
+        }
+      ]
+    },
+    {
+      "html": "When the content of a <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-live-region\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-live-region-10\">live region</a> changes, user agents <em class=\"rfc2119\">SHOULD</em> examine the changed <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-76\">element</a> and traverse the ancestors to find the first element with <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-atomic\" class=\"property-reference\"><code>aria-atomic</code></a> set, and apply the appropriate behavior for the cases below.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If none of the ancestors have explicitly set <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-atomic\" class=\"property-reference\"><code>aria-atomic</code></a>, the default is that <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-atomic\" class=\"property-reference\"><code>aria-atomic</code></a> is <code>false</code>, and assistive technologies will only present the changed node to the user."
+        },
+        {
+          "html": "If <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-atomic\" class=\"property-reference\"><code>aria-atomic</code></a> is explicitly set to <code>false</code>, assistive technologies will stop searching up the ancestor chain and present only the changed node to the user."
+        },
+        {
+          "html": "If <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-atomic\" class=\"property-reference\"><code>aria-atomic</code></a> is explicitly set to <code>true</code>, assistive technologies will present the entire contents of the element, including the author-defined live region label if one exists."
+        }
+      ]
+    },
+    {
+      "html": "For every IDL attribute <var>idlAttribute</var> defined in <code>ARIAMixin</code>, on getting, it must perform the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>contentAttribute</var> be the ARIA content attribute determined by looking up <var>idlAttribute</var> in the ARIA Attribute Correspondence table.</p>"
+        },
+        {
+          "html": "<p>Return the result of running the <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-ariamixin-getter-steps\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ariamixin-getter-steps-1\"><code>ARIAMixin</code> getter steps</a>, given this, <var>idlAttribute</var>, and <var>contentAttribute</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Similarly, on setting, it must perform the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>contentAttribute</var> be the ARIA content attribute determined by looking up <var>idlAttribute</var> in the ARIA Attribute Correspondence table.</p>"
+        },
+        {
+          "html": "<p>Run the <a href=\"https://www.w3.org/TR/wai-aria-1.2/#dfn-ariamixin-setter-steps\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-ariamixin-setter-steps-1\"><code>ARIAMixin</code> setter steps</a>, given this, <var>idlAttribute</var>, <var>contentAttribute</var>, and the given value.</p>"
+        }
+      ]
+    }
+  ]
+}

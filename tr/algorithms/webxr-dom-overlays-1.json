@@ -1,0 +1,49 @@
+{
+  "spec": {
+    "title": "WebXR DOM Overlays Module",
+    "url": "https://www.w3.org/TR/webxr-dom-overlays-1/"
+  },
+  "algorithms": [
+    {
+      "name": "on-before-input-start",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the input source’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-targetrayspace\" id=\"ref-for-dom-xrinputsource-targetrayspace②\">targetRaySpace</a></code> intersects the DOM overlay at the time the input device’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑤\">primary action</a> is triggered:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-dom-overlays-1/#beforexrselect\" id=\"ref-for-beforexrselect④\">beforexrselect</a> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsessionevent\" id=\"ref-for-xrsessionevent②\">XRSessionEvent</a></code> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/uievents/#topmost-event-target\" id=\"ref-for-topmost-event-target①\">topmost event target</a> within the DOM overlay <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-dom-overlays-1/#dom-xrdomoverlayinit-root\" id=\"ref-for-dom-xrdomoverlayinit-root①\">root</a></code> being intersected by the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-targetrayspace\" id=\"ref-for-dom-xrinputsource-targetrayspace③\">targetRaySpace</a></code>, setting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-target\" id=\"ref-for-dom-event-target①\">target</a></code> to that element. This events bubbles, is cancelable, and is composed.</p>"
+            },
+            {
+              "html": "Check how XR input should be handled as follows:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "If the event was cancelled",
+                      "html": "",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "<p>If the input source is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources\">transient input source</a>, treat this as an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#auxiliary-action\" id=\"ref-for-auxiliary-action\">auxiliary action</a>. Otherwise, ignore this action for the purpose of generating XR input events.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "case": "Otherwise",
+                      "html": "Treat the action as a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑥\">primary action</a> as usual for the input source."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

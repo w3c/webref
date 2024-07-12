@@ -1,0 +1,142 @@
+{
+  "spec": {
+    "title": "CSS Shadow Parts",
+    "url": "https://www.w3.org/TR/css-shadow-parts-1/"
+  },
+  "algorithms": [
+    {
+      "html": "To calculate the part element map of a shadow root, <var>outerRoot</var>:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each element, <var>el</var> within <var>outerRoot</var>",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "For each <var>name</var> in <var>el</var>’s part name list,\n        add <var>el</var> to <var>outerRoot</var>’s part element map\n        under the key <var>name</var>."
+            },
+            {
+              "html": "If <var>el</var> is a shadow host itself\n      then let <var>innerRoot</var> be its shadow root:",
+              "rationale": "for",
+              "steps": [
+                {
+                  "html": "Calculate <var>innerRoot</var>’s part element map."
+                },
+                {
+                  "html": "For each key, <var>outerName</var>, in <var>el</var>’s part name map\n            and for each token <var>innerName</var> under that key\n            look up <var>innerName</var> in <var>innerRoot</var>’s shadow part element map\n            to get a (possibly empty) set of elements\n            and add these elements to <var>outerRoot</var>’s part element map under <var>outerName</var>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The exportparts attribute is parsed as a comma-separated list of part mappings.\nEach part mapping is one of:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "innerIdent : outerIdent",
+              "html": "<p>this adds «[ outerIdent → innerIdent ]» to el’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-shadow-parts-1/#element-part-name-map\" id=\"ref-for-element-part-name-map\">part name map</a>.</p>"
+            },
+            {
+              "case": "ident",
+              "html": "<p>Is shorthand for <code>ident : ident</code>.</p>"
+            },
+            {
+              "case": "anything else",
+              "html": "<p>Ignored for error-recovery / future compatibility.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The rules for parsing a part mapping are as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>input</var> be the string being parsed.</p>"
+        },
+        {
+          "html": "<p>Let <var>position</var> be a pointer into <var>input</var>, initially pointing at the start of the string.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points\">Collect a sequence of code points</a> that are space characters</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points①\">Collect a sequence of code points</a> that are not space characters or U+003A COLON characters,\nand let <var>first token</var> be the result.</p>"
+        },
+        {
+          "html": "<p>If <var>first token</var> is empty then return error.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points②\">Collect a sequence of code points</a> that are space characters.</p>"
+        },
+        {
+          "html": "<p>If the end of the <var>input</var> has been reached, return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#pair\" id=\"ref-for-pair①\">pair</a> <var>first token</var>/<var>first token</var></p>"
+        },
+        {
+          "html": "<p>If character at <var>position</var> is not a U+003A COLON character, return error.</p>"
+        },
+        {
+          "html": "<p>Consume the U+003A COLON character.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points③\">Collect a sequence of code points</a> that are space characters.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points④\">Collect a sequence of code points</a> that are not space characters or U+003A COLON characters.\nand let <var>second token</var> be the result.</p>"
+        },
+        {
+          "html": "<p>If <var>second token</var> is empty then return error.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points⑤\">Collect a sequence of code points</a> that are space characters.</p>"
+        },
+        {
+          "html": "<p>If <var>position</var> is past the end of <var>input</var> then return error.</p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#pair\" id=\"ref-for-pair②\">pair</a> <var>first token</var>/<var>second token</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The rules for parsing a list of part mappings are as follow:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>input</var> be the string being parsed.</p>"
+        },
+        {
+          "html": "<p><span data-x=\"split a string on commas\">Split the string <var>input</var> on\ncommas</span>. Let <var>unparsed mappings</var> be the resulting list of strings.</p>"
+        },
+        {
+          "html": "<p>Let <var>mappings</var> be an initially empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#pair\" id=\"ref-for-pair③\">pairs</a> of tokens.\nThis <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> will be the result of this algorithm.</p>"
+        },
+        {
+          "html": "For each string <var>unparsed mapping</var> in <var>unparsed mappings</var>,\nrun the following substeps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>unparsed mapping</var> is empty or contains only space characters,\ncontinue to the next iteration of the loop.</p>"
+            },
+            {
+              "html": "<p>Let <var>mapping</var> be the result of parsing <var>unparsed mapping</var> using the <span>rules for parsing part mappings</span>.</p>"
+            },
+            {
+              "html": "<p>If <var>mapping</var> is an error then continue to the next iteration of the loop.\nThis allows clients to skip over new syntax that is not understood.</p>"
+            },
+            {
+              "html": "<p>Append <var>mapping</var> to <var>mappings</var>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

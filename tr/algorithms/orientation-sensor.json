@@ -1,0 +1,294 @@
+{
+  "spec": {
+    "title": "Orientation Sensor",
+    "url": "https://www.w3.org/TR/orientation-sensor/"
+  },
+  "algorithms": [
+    {
+      "name": "populate rotation matrix",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/orientation-sensor/#dom-orientationsensor-populatematrix\" id=\"ref-for-dom-orientationsensor-populatematrix\">populateMatrix(targetMatrix)</a></code> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>targetMatrix</var> is of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Float32Array\" id=\"ref-for-idl-Float32Array①\">Float32Array</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Float64Array\" id=\"ref-for-idl-Float64Array①\">Float64Array</a></code> with a size less than sixteen, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a\n  \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>\" exception and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>quaternion</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#get-value-from-latest-reading\" id=\"ref-for-get-value-from-latest-reading①\">get value from latest reading</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> and \"quaternion\" as arguments.</p>"
+        },
+        {
+          "html": "<p>If <var>quaternion</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notreadableerror\" id=\"ref-for-notreadableerror\">NotReadableError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>rotationMatrix</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/orientation-sensor/#converting-a-quaternion-to-rotation-matrix\" id=\"ref-for-converting-a-quaternion-to-rotation-matrix\">converting a quaternion to rotation matrix</a> with <var>quaternion</var>[0], <var>quaternion</var>[1], <var>quaternion</var>[2], and <var>quaternion</var>[3].</p>"
+        },
+        {
+          "html": "If <var>targetMatrix</var> is of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Float32Array\" id=\"ref-for-idl-Float32Array②\">Float32Array</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Float64Array\" id=\"ref-for-idl-Float64Array②\">Float64Array</a></code> type, run these sub-steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>targetMatrix</var>[0] = <var>rotationMatrix</var>[0]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[1] = <var>rotationMatrix</var>[1]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[2] = <var>rotationMatrix</var>[2]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[3] = <var>rotationMatrix</var>[3]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[4] = <var>rotationMatrix</var>[4]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[5] = <var>rotationMatrix</var>[5]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[6] = <var>rotationMatrix</var>[6]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[7] = <var>rotationMatrix</var>[7]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[8] = <var>rotationMatrix</var>[8]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[9] = <var>rotationMatrix</var>[9]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[10] = <var>rotationMatrix</var>[10]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[11] = <var>rotationMatrix</var>[11]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[12] = <var>rotationMatrix</var>[12]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[13] = <var>rotationMatrix</var>[13]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[14] = <var>rotationMatrix</var>[14]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>[15] = <var>rotationMatrix</var>[15]</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>targetMatrix</var> is of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dommatrix\" id=\"ref-for-dommatrix①\">DOMMatrix</a></code> type, run these sub-steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m11 = <var>rotationMatrix</var>[0]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m12 = <var>rotationMatrix</var>[1]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m13 = <var>rotationMatrix</var>[2]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m14 = <var>rotationMatrix</var>[3]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m21 = <var>rotationMatrix</var>[4]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m22 = <var>rotationMatrix</var>[5]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m23 = <var>rotationMatrix</var>[6]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m24 = <var>rotationMatrix</var>[7]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m31 = <var>rotationMatrix</var>[8]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m32 = <var>rotationMatrix</var>[9]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m33 = <var>rotationMatrix</var>[10]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m34 = <var>rotationMatrix</var>[11]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m41 = <var>rotationMatrix</var>[12]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m42 = <var>rotationMatrix</var>[13]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m43 = <var>rotationMatrix</var>[14]</p>"
+            },
+            {
+              "html": "<p>Set <var>targetMatrix</var>.m44 = <var>rotationMatrix</var>[15]</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "construct an orientation sensor object",
+      "html": "<dl>\n     <dt data-md=\"\">input\n     </dt><dd data-md=\"\">\n      <p><var>orientation_interface</var>, an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface\">interface</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier\">identifier</a> whose <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-inherited-interfaces\" id=\"ref-for-dfn-inherited-interfaces\">inherited interfaces</a> contains <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/orientation-sensor/#orientationsensor\" id=\"ref-for-orientationsensor①⓪\">OrientationSensor</a></code>.</p>\n     </dd><dd data-md=\"\">\n      <p><var>options</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/orientation-sensor/#dictdef-orientationsensoroptions\" id=\"ref-for-dictdef-orientationsensoroptions②\">OrientationSensorOptions</a></code> object.</p>\n     </dd><dt data-md=\"\">output\n     </dt><dd data-md=\"\">\n      <p>An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/orientation-sensor/#orientationsensor\" id=\"ref-for-orientationsensor①①\">OrientationSensor</a></code> object.</p>\n    </dd></dl>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>allowed</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#check-sensor-policy-controlled-features\" id=\"ref-for-check-sensor-policy-controlled-features\">check sensor policy-controlled features</a> with the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①\">interface</a> identified by <var>orientation_interface</var>.</p>"
+        },
+        {
+          "html": "If <var>allowed</var> is false, then:",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">Throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>orientation</var> be a new instance of the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②\">interface</a> identified by <var>orientation_interface</var>.</p>"
+        },
+        {
+          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#initialize-a-sensor-object\" id=\"ref-for-initialize-a-sensor-object\">initialize a sensor object</a> with <var>orientation</var> and <var>options</var>.</p>"
+        },
+        {
+          "html": "If <var>options</var>.<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/orientation-sensor/#dom-orientationsensoroptions-referenceframe\" id=\"ref-for-dom-orientationsensoroptions-referenceframe\">referenceFrame</a></code> is \"screen\", then:",
+          "rationale": "define",
+          "steps": [
+            {
+              "html": "<p>Define <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#local-coordinate-system\" id=\"ref-for-local-coordinate-system⑤\">local coordinate system</a> for <var>orientation</var> as the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/accelerometer/#screen-coordinate-system\" id=\"ref-for-screen-coordinate-system②\">screen coordinate system</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Otherwise, define <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#local-coordinate-system\" id=\"ref-for-local-coordinate-system⑥\">local coordinate system</a> for <var>orientation</var> as the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/accelerometer/#device-coordinate-system\" id=\"ref-for-device-coordinate-system②\">device coordinate system</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>orientation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "converting a quaternion to rotation matrix",
+      "href": "https://www.w3.org/TR/orientation-sensor/#converting-a-quaternion-to-rotation-matrix",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"converting a quaternion to rotation matrix\" data-noexport=\"\" id=\"converting-a-quaternion-to-rotation-matrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert a quaternion to rotation matrix</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a number <var>x</var>, a number <var>y</var>, a number <var>z</var>, and a number <var>w</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>m11</var> be 1 - 2 * y * y - 2 * z * z</p>"
+        },
+        {
+          "html": "<p>Let <var>m12</var> be 2 * x * y - 2 * z * w</p>"
+        },
+        {
+          "html": "<p>Let <var>m13</var> be 2 * x * z + 2 * y * w</p>"
+        },
+        {
+          "html": "<p>Let <var>m14</var> be 0</p>"
+        },
+        {
+          "html": "<p>Let <var>m21</var> be 2 * x * y + 2 * z * w</p>"
+        },
+        {
+          "html": "<p>Let <var>m22</var> be 1 - 2 * x * x - 2 * z * z</p>"
+        },
+        {
+          "html": "<p>Let <var>m23</var> be 2 * y * z - 2 * x * w</p>"
+        },
+        {
+          "html": "<p>Let <var>m24</var> be 0</p>"
+        },
+        {
+          "html": "<p>Let <var>m31</var> be 2 * x * z - 2 * y * w</p>"
+        },
+        {
+          "html": "<p>Let <var>m32</var> be 2 * y * z + 2 * x * w</p>"
+        },
+        {
+          "html": "<p>Let <var>m33</var> be 1 - 2 * x * x - 2 * y * y</p>"
+        },
+        {
+          "html": "<p>Let <var>m34</var> be 0</p>"
+        },
+        {
+          "html": "<p>Let <var>m41</var> be 0</p>"
+        },
+        {
+          "html": "<p>Let <var>m42</var> be 0</p>"
+        },
+        {
+          "html": "<p>Let <var>m43</var> be 0</p>"
+        },
+        {
+          "html": "<p>Let <var>m44</var> be 1</p>"
+        },
+        {
+          "html": "<p>Return « <var>m11</var>, <var>m12</var>, <var>m13</var>, <var>m14</var>, <var>m21</var>, <var>m22</var>, <var>m23</var>, <var>m24</var>, <var>m31</var>, <var>m32</var>, <var>m33</var>, <var>m34</var>, <var>m41</var>, <var>m42</var>, <var>m43</var>, <var>m44</var> ».</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a quaternion from Euler angles",
+      "href": "https://www.w3.org/TR/orientation-sensor/#create-a-quaternion-from-euler-angles",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-quaternion-from-euler-angles\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a quaternion from Euler angles</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a number <var>alpha</var>, a number <var>beta</var> and a number <var>gamma</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>alphaInRadians</var> be <var>alpha</var> converted from degrees to radians.</p>"
+        },
+        {
+          "html": "<p>Let <var>betaInRadians</var> be <var>beta</var> converted from degrees to radians.</p>"
+        },
+        {
+          "html": "<p>Let <var>gammaInRadians</var> be <var>gamma</var> converted from degrees to radians.</p>"
+        },
+        {
+          "html": "<p>Let <var>cosZ</var> be the cosine of (0.5 * <var>alphaInRadians</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>sinZ</var> be the sine of (0.5 * <var>alphaInRadians</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>cosX</var> be the cosine of (0.5 * <var>betaInRadians</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>sinX</var> be the sine of (0.5 * <var>betaInRadians</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>cosY</var> be the cosine of (0.5 * <var>gammaInRadians</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>sinY</var> be the sine of (0.5 * <var>gammaInRadians</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>quaternionX</var> be (<var>sinX</var> * <var>cosY</var> * <var>cosZ</var> - <var>cosX</var> * <var>sinY</var> * <var>sinZ</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>quaternionY</var> be (<var>cosX</var> * <var>sinY</var> * <var>cosZ</var> + <var>sinX</var> * <var>cosY</var> * <var>sinZ</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>quaternionZ</var> be (<var>cosX</var> * <var>cosY</var> * <var>sinZ</var> + <var>sinX</var> * <var>sinY</var> * <var>cosZ</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>quaternionW</var> be (<var>cosX</var> * <var>cosY</var> * <var>cosZ</var> - <var>sinX</var> * <var>sinY</var> * <var>sinZ</var>).</p>"
+        },
+        {
+          "html": "<p>Return « <var>quaternionX</var>, <var>quaternionY</var>, <var>quaternionZ</var>, <var>quaternionW</var> ».</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse-orientation-data-reading-modifications",
+      "html": "Add the following steps after setting <var>reading</var>’s \"<code>alpha</code>\", \"<code>beta</code>\", and \"<code>gamma</code>\" keys and before returning <var>reading</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>reading</var>[\"<code>quaternion</code>\"] to the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/orientation-sensor/#create-a-quaternion-from-euler-angles\" id=\"ref-for-create-a-quaternion-from-euler-angles\">create a quaternion from Euler angles</a> with <var>reading</var>[\"<code>alpha</code>\"], <var>reading</var>[\"<code>beta</code>\"], and <var>reading</var>[\"<code>gamma</code>\"].</p>"
+        }
+      ]
+    }
+  ]
+}

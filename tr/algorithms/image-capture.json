@@ -1,0 +1,136 @@
+{
+  "spec": {
+    "title": "MediaStream Image Capture",
+    "url": "https://www.w3.org/TR/image-capture/"
+  },
+  "algorithms": [
+    {
+      "name": "ImageCapture/takePhoto(photoSettings)",
+      "href": "https://www.w3.org/TR/image-capture/#dom-imagecapture-takephoto",
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-takephoto\" id=\"ref-for-dom-imagecapture-takephoto④\">takePhoto()</a></code> produces the result of a single photographic exposure using the video capture device sourcing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-track\" id=\"ref-for-dom-imagecapture-track③\">track</a></code> and including any <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dictdef-photosettings\" id=\"ref-for-dictdef-photosettings③\">PhotoSettings</a></code> configured, returning an encoded image in the form of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob③\">Blob</a></code> if successful. When this method is invoked, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-readystate\" id=\"ref-for-dom-mediastreamtrack-readystate\">readyState</a></code> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-track\" id=\"ref-for-dom-imagecapture-track④\">track</a></code> provided in the constructor is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStreamTrackState.live\" id=\"ref-for-idl-def-MediaStreamTrackState.live\">live</a></code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>, and abort these steps."
+        },
+        {
+          "html": "Let <var>p</var> be a new promise."
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "gather",
+          "steps": [
+            {
+              "html": "Gather data from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-track\" id=\"ref-for-dom-imagecapture-track⑤\">track</a></code> underlying source with the defined <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-takephoto-photosettings-photosettings\" id=\"ref-for-dom-imagecapture-takephoto-photosettings-photosettings\">photoSettings</a></code> and into a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob④\">Blob</a></code> containing a single still image. The method of doing this will depend on the underlying device."
+            },
+            {
+              "html": "If the operation cannot be completed for any reason (for example, upon invocation of multiple <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-takephoto\" id=\"ref-for-dom-imagecapture-takephoto⑤\">takePhoto()</a></code> method calls in rapid succession), then reject <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#unknownerror\" id=\"ref-for-unknownerror\">UnknownError</a></code>, and abort these steps."
+            },
+            {
+              "html": "Resolve <var>p</var> with the Blob object."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>p</var>."
+        }
+      ]
+    },
+    {
+      "name": "ImageCapture/getPhotoCapabilities()",
+      "href": "https://www.w3.org/TR/image-capture/#dom-imagecapture-getphotocapabilities",
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-getphotocapabilities\" id=\"ref-for-dom-imagecapture-getphotocapabilities②\">getPhotoCapabilities()</a></code> is used to retrieve the ranges of available configuration options, if any. When this method is invoked, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-readystate\" id=\"ref-for-dom-mediastreamtrack-readystate①\">readyState</a></code> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-track\" id=\"ref-for-dom-imagecapture-track⑥\">track</a></code> provided in the constructor is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStreamTrackState.live\" id=\"ref-for-idl-def-MediaStreamTrackState.live①\">live</a></code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>, and abort these steps."
+        },
+        {
+          "html": "Let <var>p</var> be a new promise."
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "gather",
+          "steps": [
+            {
+              "html": "Gather data from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-track\" id=\"ref-for-dom-imagecapture-track⑦\">track</a></code> into a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dictdef-photocapabilities\" id=\"ref-for-dictdef-photocapabilities①\">PhotoCapabilities</a></code> dictionary containing the available capabilities of the device, including ranges where appropriate. The method of doing this will depend on the underlying device."
+            },
+            {
+              "html": "If the data cannot be gathered for any reason (for example, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack①⓪\">MediaStreamTrack</a></code> being ended asynchronously), then reject <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror\">OperationError</a></code>, and abort these steps."
+            },
+            {
+              "html": "Resolve <var>p</var> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dictdef-photocapabilities\" id=\"ref-for-dictdef-photocapabilities②\">PhotoCapabilities</a></code> dictionary."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>p</var>."
+        }
+      ]
+    },
+    {
+      "name": "ImageCapture/getPhotoSettings()",
+      "href": "https://www.w3.org/TR/image-capture/#dom-imagecapture-getphotosettings",
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-getphotosettings\" id=\"ref-for-dom-imagecapture-getphotosettings②\">getPhotoSettings()</a></code> is used to retrieve the current configuration settings values, if any. When this method is invoked, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-readystate\" id=\"ref-for-dom-mediastreamtrack-readystate②\">readyState</a></code> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-track\" id=\"ref-for-dom-imagecapture-track⑧\">track</a></code> provided in the constructor is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStreamTrackState.live\" id=\"ref-for-idl-def-MediaStreamTrackState.live②\">live</a></code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with②\">a promise rejected with</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>, and abort these steps."
+        },
+        {
+          "html": "Let <var>p</var> be a new promise."
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "gather",
+          "steps": [
+            {
+              "html": "Gather data from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-track\" id=\"ref-for-dom-imagecapture-track⑨\">track</a></code> into a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dictdef-photosettings\" id=\"ref-for-dictdef-photosettings⑥\">PhotoSettings</a></code> dictionary containing the current conditions in which the device is found. The method of doing this will depend on the underlying device."
+            },
+            {
+              "html": "If the data cannot be gathered for any reason (for example, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack①①\">MediaStreamTrack</a></code> being ended asynchronously), then reject <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror①\">OperationError</a></code>, and abort these steps."
+            },
+            {
+              "html": "Resolve <var>p</var> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dictdef-photosettings\" id=\"ref-for-dictdef-photosettings⑦\">PhotoSettings</a></code> dictionary."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>p</var>."
+        }
+      ]
+    },
+    {
+      "name": "ImageCapture/grabFrame()",
+      "href": "https://www.w3.org/TR/image-capture/#dom-imagecapture-grabframe",
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-grabframe\" id=\"ref-for-dom-imagecapture-grabframe③\">grabFrame()</a></code> takes a snapshot of the live video being held in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-track\" id=\"ref-for-dom-imagecapture-track①⓪\">track</a></code>, returning an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap\" id=\"ref-for-imagebitmap③\">ImageBitmap</a></code> if successful. <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-grabframe\" id=\"ref-for-dom-imagecapture-grabframe④\">grabFrame()</a></code> returns data only once upon being invoked. When this method is invoked, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-readystate\" id=\"ref-for-dom-mediastreamtrack-readystate③\">readyState</a></code> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-track\" id=\"ref-for-dom-imagecapture-track①①\">track</a></code> provided in the constructor is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStreamTrackState.live\" id=\"ref-for-idl-def-MediaStreamTrackState.live③\">live</a></code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>, and abort these steps."
+        },
+        {
+          "html": "Let <var>p</var> be a new promise."
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "gather",
+          "steps": [
+            {
+              "html": "Gather data from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-track\" id=\"ref-for-dom-imagecapture-track①②\">track</a></code> into an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap\" id=\"ref-for-imagebitmap④\">ImageBitmap</a></code> object. The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagebitmap-width\" id=\"ref-for-dom-imagebitmap-width\">width</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagebitmap-height\" id=\"ref-for-dom-imagebitmap-height\">height</a></code> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap\" id=\"ref-for-imagebitmap⑤\">ImageBitmap</a></code> object are derived from the constraints of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-track\" id=\"ref-for-dom-imagecapture-track①③\">track</a></code>."
+            },
+            {
+              "html": "If the operation cannot be completed for any reason (for example, upon invocation of multiple <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-grabframe\" id=\"ref-for-dom-imagecapture-grabframe⑤\">grabFrame()</a></code>/<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-capture/#dom-imagecapture-takephoto\" id=\"ref-for-dom-imagecapture-takephoto⑥\">takePhoto()</a></code> method calls in rapid succession), then reject <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#unknownerror\" id=\"ref-for-unknownerror①\">UnknownError</a></code>, and abort these steps."
+            },
+            {
+              "html": "Resolve <var>p</var> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap\" id=\"ref-for-imagebitmap⑥\">ImageBitmap</a></code> object."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>p</var>."
+        }
+      ]
+    }
+  ]
+}

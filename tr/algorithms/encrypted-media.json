@@ -1,0 +1,1872 @@
+{
+  "spec": {
+    "title": "Encrypted Media Extensions",
+    "url": "https://www.w3.org/TR/encrypted-media/"
+  },
+  "algorithms": [
+    {
+      "name": "navigator/requestmediakeysystemaccess()",
+      "href": "https://www.w3.org/TR/encrypted-media/#dom-navigator-requestmediakeysystemaccess",
+      "html": "When this method is invoked, the user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>keySystem</var> is the empty string, return a promise rejected with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>supportedConfigurations</var> is empty, return a promise rejected with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be the calling context's <a href=\"https://www.w3.org/TR/dom/#concept-document\">Document</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be the <a href=\"https://www.w3.org/TR/html51/browsers.html#concept-cross-origin\">origin</a> of <var>document</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>keySystem</var> is not one of the <a href=\"https://www.w3.org/TR/encrypted-media/#key-system\">Key Systems</a> supported by the user agent, reject <var>promise</var> with a <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-NotSupportedError\">NotSupportedError</a></code>.\n                                                String comparison is case-sensitive.</p>"
+            },
+            {
+              "html": "<p>Let <var>implementation</var> be the implementation of <var>keySystem</var>.</p>"
+            },
+            {
+              "html": "For each value in <code>supportedConfigurations</code>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>candidate configuration</var> be the value.</p>"
+                },
+                {
+                  "html": "<p>Let <var>supported configuration</var> be the result of executing the <a href=\"https://www.w3.org/TR/encrypted-media/#get-supported-configuration\">Get Supported Configuration</a> algorithm on <var>implementation</var>, <var>candidate configuration</var>,\n                                                        and <var>origin</var>.</p>"
+                },
+                {
+                  "html": "If <var>supported configuration</var> is not <code>NotSupported</code>, run the following steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var>access</var> be a new <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemaccess\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySystemAccess</code></a> object, and initialize it as follows:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemaccess-keysystem\">keySystem</a></code> attribute to <var>keySystem</var>.</p>"
+                        },
+                        {
+                          "html": "<p>Let the <var>configuration</var> value be <var>supported configuration</var>.</p>"
+                        },
+                        {
+                          "html": "<p>Let the <var>cdm implementation</var> value be <var>implementation</var>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Resolve <var>promise</var> with <var>access</var> and abort the parallel steps of this algorithm.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Reject <var>promise</var> with a <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-NotSupportedError\">NotSupportedError</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given a <a href=\"https://www.w3.org/TR/encrypted-media/#key-system\">Key Systems</a> implementation <var>implementation</var>, <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySystemConfiguration</code></a> <var>candidate configuration</var>,\n                        and <var>origin</var>, this algorithm returns a supported configuration or <code>NotSupported</code> as appropriate.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>supported configuration</var> be <code>ConsentDenied</code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>restrictions</var> to indicate that no configurations have had user consent denied.</p>"
+        },
+        {
+          "html": "Repeat the following step while <var>supported configuration</var> is <code>ConsentDenied</code>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>\n                                        Let <var>supported configuration</var> and, if provided, <var>restrictions</var> be the result of executing the\n                                        <a href=\"https://www.w3.org/TR/encrypted-media/#get-supported-configuration-and-consent\">Get Supported Configuration and Consent</a> algorithm with <var>implementation</var>, <var>candidate configuration</var>, <var>restrictions</var> and <var>origin</var>.\n                                    </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>supported configuration</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given a <a href=\"https://www.w3.org/TR/encrypted-media/#key-system\">Key Systems</a> implementation <var>implementation</var>, <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySystemConfiguration</code></a> <var>candidate configuration</var>,\n                        <var>restrictions</var> and <var>origin</var>, this algorithm returns a supported configuration, <code>NotSupported</code>, or <code>ConsentDenied</code> as appropriate and, in the <code>ConsentDenied</code> case, <var>restrictions</var>.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>accumulated configuration</var> be a new <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySystemConfiguration</code></a> dictionary.</p>"
+        },
+        {
+          "html": "<p>\n                                Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-label\">label</a></code> member of <var>accumulated configuration</var> to equal the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-label\">label</a></code> member\n                                of <var>candidate configuration</var>.\n                            </p>"
+        },
+        {
+          "html": "If the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-initdatatypes\">initDataTypes</a></code> member of <var>candidate configuration</var> is non-empty, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>supported types</var> be an empty sequence of DOMStrings.</p>"
+            },
+            {
+              "html": "For each value in <var>candidate configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-initdatatypes\">initDataTypes</a></code> member:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>initDataType</var> be the value.</p>"
+                },
+                {
+                  "html": "<p>If the <var>implementation</var> supports generating requests based on <var>initDataType</var>, add <var>initDataType</var> to <var>supported types</var>. String comparison is case-sensitive. The empty string\n                                                is never supported.\n                                            </p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>supported types</var> is empty, return <code>NotSupported</code>.</p>"
+            },
+            {
+              "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-initdatatypes\">initDataTypes</a></code> member of <var>accumulated configuration</var> to <var>supported types</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>\n                                Let <var>distinctive identifier requirement</var> be the value of <var>candidate configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\">distinctiveIdentifier</a></code> member.\n                            </p>"
+        },
+        {
+          "html": "<p>\n                                If <var>distinctive identifier requirement</var> is <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.optional\">\"optional\"</a></code> and\n                                <a href=\"https://www.w3.org/TR/encrypted-media/#distinctive-identifier\">Distinctive Identifiers</a> are not allowed according to <var>restrictions</var>, set <var>distinctive identifier requirement</var> to <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.not-allowed\">\"not-allowed\"</a></code>.\n                            </p>"
+        },
+        {
+          "html": "Follow the steps for <var>distinctive identifier requirement</var> from the following list:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "\"required\"",
+                  "html": "<p>If the <var>implementation</var> does not support <a href=\"https://www.w3.org/TR/encrypted-media/#uses-distinctive-identifiers\">use of Distinctive Identifier(s)</a> in combination with <var>accumulated configuration</var> and <var>restrictions</var>, return\n                                        <code>NotSupported</code>.</p>"
+                },
+                {
+                  "case": "\"optional\"",
+                  "html": "<p>Continue with the following steps.</p>"
+                },
+                {
+                  "case": "\"not-allowed\"",
+                  "html": "<p>If the <var>implementation</var> requires <a href=\"https://www.w3.org/TR/encrypted-media/#uses-distinctive-identifiers-or-distinctive-permanent-identifiers\">use Distinctive Identifier(s) or Distinctive Permanent Identifier(s)</a> in combination with <var>accumulated configuration</var>                                        and <var>restrictions</var>, return <code>NotSupported</code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>\n                                Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\">distinctiveIdentifier</a></code> member of <var>accumulated configuration</var> to equal <var>distinctive identifier requirement</var>.\n                            </p>"
+        },
+        {
+          "html": "<p>\n                                Let <var>persistent state requirement</var> be equal to the value of <var>candidate configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate\">persistentState</a></code> member.\n                            </p>"
+        },
+        {
+          "html": "<p>\n                                If <var>persistent state requirement</var> is <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.optional\">\"optional\"</a></code> and persisting state is not allowed according to\n                                <var>restrictions</var>, set <var>persistent state requirement</var> to <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.not-allowed\">\"not-allowed\"</a></code>.\n                            </p>"
+        },
+        {
+          "html": "Follow the steps for <var>persistent state requirement</var> from the following list:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "\"required\"",
+                  "html": "<p>If the <var>implementation</var> does not support persisting state in combination with <var>accumulated configuration</var> and <var>restrictions</var>, return <code>NotSupported</code>.</p>"
+                },
+                {
+                  "case": "\"optional\"",
+                  "html": "<p>\n                                        Continue with the following steps.\n                                    </p>"
+                },
+                {
+                  "case": "\"not-allowed\"",
+                  "html": "<p>If the <var>implementation</var> requires persisting state in combination with <var>accumulated configuration</var> and <var>restrictions</var>, return <code>NotSupported</code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>\n                                Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate\">persistentState</a></code> member of <var>accumulated configuration</var> to equal the value of <var>persistent state requirement</var>.\n                            </p>"
+        },
+        {
+          "html": "Follow the steps for the first matching condition from the following list:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the sessionTypes member is present [WebIDL] in candidate configuration",
+                  "html": "<p>Let <var>session types</var> be <var>candidate configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-sessiontypes\">sessionTypes</a></code> member.</p>"
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "<p>Let <var>session types</var> be <code>[ <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeySessionType.temporary\">\"temporary\"</a></code> ]</code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "For each value in <var>session types</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>session type</var> be the value.</p>"
+            },
+            {
+              "html": "<p>\n                                        If <var>accumulated configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate\">persistentState</a></code> value is <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.not-allowed\">\"not-allowed\"</a></code>                                        and the <a href=\"https://www.w3.org/TR/encrypted-media/#is-persistent-session-type\">Is persistent session type?</a> algorithm returns <code>true</code> for <var>session type</var> return <code>NotSupported</code>.\n                                    </p>"
+            },
+            {
+              "html": "<p>If the <var>implementation</var> does not support <var>session type</var> in combination with <var>accumulated configuration</var> and <var>restrictions</var> for other reasons, return <code>NotSupported</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>accumulated configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate\">persistentState</a></code> value is <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.optional\">\"optional\"</a></code>                                        and the result of running the <a href=\"https://www.w3.org/TR/encrypted-media/#is-persistent-session-type\">Is persistent session type?</a> algorithm on <var>session type</var> is <code>true</code>, change <var>accumulated configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate\">persistentState</a></code>                                        value to <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.required\">\"required\"</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-sessiontypes\">sessionTypes</a></code> member of <var>accumulated configuration</var> to <var>session types</var>.</p>"
+        },
+        {
+          "html": "<p>\n                                If the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-videocapabilities\">videoCapabilities</a></code> and <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities\">audioCapabilities</a></code> members in <var>candidate configuration</var>                                are both empty, return <code>NotSupported</code>.\n                            </p>"
+        },
+        {
+          "html": "<dl class=\"switch\">\n                                <dt>If the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-videocapabilities\">videoCapabilities</a></code> member in <var>candidate configuration</var> is non-empty:</dt>\n                                <dd>\n                                    \n                                </dd>\n                                <dt>Otherwise:</dt>\n                                <dd>\n                                    <p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-videocapabilities\">videoCapabilities</a></code> member of <var>accumulated configuration</var> to an empty sequence.</p>\n                                </dd>\n                            </dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the videoCapabilities member in candidate configuration is non-empty:",
+                  "html": "",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>video capabilities</var> be the result of executing the <a href=\"https://www.w3.org/TR/encrypted-media/#get-supported-capabilities-for-audio-video-type\">Get Supported Capabilities for Audio/Video Type</a> algorithm on Video, <var>candidate configuration</var>'s\n                                                <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-videocapabilities\">videoCapabilities</a></code> member, <var>accumulated configuration</var>, and <var>restrictions</var>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>video capabilities</var> is <code>null</code>, return <code>NotSupported</code>.</p>"
+                    },
+                    {
+                      "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-videocapabilities\">videoCapabilities</a></code> member of <var>accumulated configuration</var> to <var>video capabilities</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "Otherwise:",
+                  "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-videocapabilities\">videoCapabilities</a></code> member of <var>accumulated configuration</var> to an empty sequence.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<dl class=\"switch\">\n                                <dt>If the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities\">audioCapabilities</a></code> member in <var>candidate configuration</var> is non-empty:</dt>\n                                <dd>\n                                    \n                                </dd>\n                                <dt>Otherwise:</dt>\n                                <dd>\n                                    <p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities\">audioCapabilities</a></code> member of <var>accumulated configuration</var> to an empty sequence.</p>\n                                </dd>\n                            </dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the audioCapabilities member in candidate configuration is non-empty:",
+                  "html": "",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>audio capabilities</var> be the result of executing the <a href=\"https://www.w3.org/TR/encrypted-media/#get-supported-capabilities-for-audio-video-type\">Get Supported Capabilities for Audio/Video Type</a> algorithm on Audio, <var>candidate configuration</var>'s\n                                                <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities\">audioCapabilities</a></code> member, <var>accumulated configuration</var>, and <var>restrictions</var>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>audio capabilities</var> is <code>null</code>, return <code>NotSupported</code>.</p>"
+                    },
+                    {
+                      "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities\">audioCapabilities</a></code> member of <var>accumulated configuration</var> to <var>audio capabilities</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "Otherwise:",
+                  "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities\">audioCapabilities</a></code> member of <var>accumulated configuration</var> to an empty sequence.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If <var>accumulated configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\">distinctiveIdentifier</a></code> value is <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.optional\">\"optional\"</a></code>,\n                                follow the steps for the first matching condition from the following list:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the implementation requires use Distinctive Identifier(s) or Distinctive Permanent Identifier(s) for any of the combinations in accumulated configuration",
+                  "html": "<p>Change <var>accumulated configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\">distinctiveIdentifier</a></code> value to <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.required\">\"required\"</a></code>.</p>"
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "<p>Change <var>accumulated configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\">distinctiveIdentifier</a></code> value to <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.not-allowed\">\"not-allowed\"</a></code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "If <var>accumulated configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate\">persistentState</a></code> value is <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.optional\">\"optional\"</a></code>, follow\n                                the steps for the first matching condition from the following list:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the implementation requires persisting state for any of the combinations in accumulated configuration",
+                  "html": "<p>Change <var>accumulated configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate\">persistentState</a></code> value to <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.required\">\"required\"</a></code>.</p>"
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "<p>Change <var>accumulated configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate\">persistentState</a></code> value to <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.not-allowed\">\"not-allowed\"</a></code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>implementation</var> in the configuration specified by the combination of the values in <var>accumulated configuration</var> is not supported or not allowed in the <var>origin</var>, return <code>NotSupported</code>.</p>"
+        },
+        {
+          "html": "If <var>accumulated configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\">distinctiveIdentifier</a></code> value is <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.required\">\"required\"</a></code>                                and the <a href=\"https://www.w3.org/TR/encrypted-media/#distinctive-identifier\">Distinctive Identifier(s)</a> associated with <var>accumulated configuration</var> are not <a href=\"https://www.w3.org/TR/encrypted-media/#per-origin-per-profile-identifiers\">unique per origin and profile</a> and\n                                <a href=\"https://www.w3.org/TR/encrypted-media/#allow-identifiers-cleared\">clearable</a>:",
+          "rationale": "update",
+          "steps": [
+            {
+              "html": "<p>\n                                        Update <var>restrictions</var> to reflect that all configurations described by <var>accumulated configuration</var> do not have user consent.\n                                    </p>"
+            },
+            {
+              "html": "<p>Return <code>ConsentDenied</code> and <var>restrictions</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Let <var>consent status</var> and <var>updated restrictions</var> be the result of running the <a href=\"https://www.w3.org/TR/encrypted-media/#get-consent-status\">Get Consent Status</a> algorithm on <var>accumulated configuration</var>, <var>restrictions</var>                                and <var>origin</var> and follow the steps for the value of <var>consent status</var> from the following list:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "ConsentDenied:",
+                  "html": "<p>\n                                        Return <code>ConsentDenied</code> and <var>updated restrictions</var>.\n                                    </p>"
+                },
+                {
+                  "case": "InformUser:",
+                  "html": "<p>\n                                        Inform the user that <var>accumulated configuration</var> is in use in the <var>origin</var> including, specifically, the information that <a href=\"https://www.w3.org/TR/encrypted-media/#distinctive-identifier\">Distinctive Identifier(s)</a> and/or\n                                        <a href=\"https://www.w3.org/TR/encrypted-media/#distinctive-permanent-identifier\">Distinctive Permanent Identifier(s)</a> as appropriate will be used if the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\">distinctiveIdentifier</a></code> member of <var>accumulated configuration</var>                                            is <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.required\">\"required\"</a></code>. Continue to the next step.\n                                    </p>"
+                },
+                {
+                  "case": "Allowed:",
+                  "html": "<p>\n                                        Continue to the next step.\n                                    </p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>accumulated configuration</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given an <var>audio/video type</var>, <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySystemMediaCapability</code></a> sequence <var>requested media capabilities</var>, <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySystemConfiguration</code></a> <var>accumulated configuration</var>, and <var>restrictions</var>, this algorithm returns a sequence of supported <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySystemMediaCapability</code></a> values for this audio/video type or <code>null</code> as appropriate.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>local accumulated configuration</var> be a local copy of <var>accumulated configuration</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>supported media capabilities</var> be an empty sequence of <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySystemMediaCapability</code></a> dictionaries.</p>"
+        },
+        {
+          "html": "For each <var>requested media capability</var> in <var>requested media capabilities</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>content type</var> be <var>requested media capability</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-contenttype\">contentType</a></code> member.</p>"
+            },
+            {
+              "html": "<p>Let <var>robustness</var> be <var>requested media capability</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-robustness\">robustness</a></code> member.</p>"
+            },
+            {
+              "html": "<p>If <var>content type</var> is the empty string, return <code>null</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>content type</var> is not a <a href=\"https://www.w3.org/TR/encrypted-media/#valid-media-mime-type\">valid media MIME type</a> or is unrecognized, continue to the next iteration.</p>"
+            },
+            {
+              "html": "<p>Let <var>container</var> be the container type specified by <var>content type</var>.</p>"
+            },
+            {
+              "html": "<p>If the user agent does not support <var>container</var>, continue to the next iteration. The case-sensitivity of string comparisons is determined by the appropriate RFC.</p>"
+            },
+            {
+              "html": "<p>Let <var>parameters</var> be the RFC 6381 [<cite><a class=\"bibref\" href=\"https://www.w3.org/TR/encrypted-media/#bib-RFC6381\">RFC6381</a></cite>] parameters, if any, specified by <var>content type</var>.</p>"
+            },
+            {
+              "html": "<p>If the user agent does not recognize one or more <var>parameters</var>, continue to the next iteration.</p>"
+            },
+            {
+              "html": "<p>Let <var>media types</var> be the set of codecs and codec constraints specified by <var>parameters</var>. The case-sensitivity of string comparisons is determined by the appropriate RFC or other specification.</p>"
+            },
+            {
+              "html": "If <var>media types</var> is empty:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "If container normatively implies a specific set of codecs and codec constraints:",
+                      "html": "<p>\n                                                Let <var>parameters</var> be that set.\n                                            </p>"
+                    },
+                    {
+                      "case": "Otherwise:",
+                      "html": "<p>\n                                                Continue to the next iteration.\n                                            </p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>content type</var> is not strictly a <var>audio/video type</var>, continue to the next iteration.</p>"
+            },
+            {
+              "html": "<p>If <var>robustness</var> is not the empty string and contains an unrecognized value or a value not supported by <var>implementation</var>, continue to the next iteration. String comparison is case-sensitive.</p>"
+            },
+            {
+              "html": "If the user agent and <var>implementation</var> definitely support playback of encrypted <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#media-data\">media data</a> for the combination of <var>container</var>,\n                                        <var>media types</var>, <var>robustness</var> and <var>local accumulated configuration</var> in combination with <var>restrictions</var>:",
+              "rationale": "add",
+              "steps": [
+                {
+                  "html": "<p>\n                                                Add <var>requested media capability</var> to <var>supported media capabilities</var>.\n                                            </p>"
+                },
+                {
+                  "html": "<dl class=\"switch\">\n                                                <dt>If <var>audio/video type</var> is Video:</dt>\n                                                <dd>\n                                                    <p>\n                                                        Add <var>requested media capability</var> to the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-videocapabilities\">videoCapabilities</a></code> member of <var>local accumulated configuration</var>.\n                                                    </p>\n                                                </dd>\n                                                <dt>If <var>audio/video type</var> is Audio:</dt>\n                                                <dd>\n                                                    <p>\n                                                        Add <var>requested media capability</var> to the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities\">audioCapabilities</a></code> member of <var>local accumulated configuration</var>.\n                                                    </p>\n                                                </dd>\n                                            </dl>",
+                  "rationale": ".switch",
+                  "steps": [
+                    {
+                      "operation": "switch",
+                      "steps": [
+                        {
+                          "case": "If audio/video type is Video:",
+                          "html": "<p>\n                                                        Add <var>requested media capability</var> to the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-videocapabilities\">videoCapabilities</a></code> member of <var>local accumulated configuration</var>.\n                                                    </p>"
+                        },
+                        {
+                          "case": "If audio/video type is Audio:",
+                          "html": "<p>\n                                                        Add <var>requested media capability</var> to the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities\">audioCapabilities</a></code> member of <var>local accumulated configuration</var>.\n                                                    </p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>supported media capabilities</var> is empty, return <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>supported media capabilities</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given an <var>accumulated configuration</var>, <var>restrictions</var> and <var>origin</var>, this algorithm returns the consent status for\n                        <var>accumulated configuration</var> and <var>origin</var> as one of <code>ConsentDenied</code>, <code>InformUser</code> or <code>Allowed</code>, together with an updated value for <var>restrictions</var> in the <code>ConsentDenied</code>                        case.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If there is persisted denial for <var>origin</var> indicating that <var>accumulated configuration</var> is not allowed, run the following steps:",
+          "rationale": "update",
+          "steps": [
+            {
+              "html": "<p>Update <var>restrictions</var> to reflect the configurations for which consent has been denied.</p>"
+            },
+            {
+              "html": "<p>Return <code>ConsentDenied</code> and <var>restrictions</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>\n                                If there is persisted consent for <var>origin</var> indicating <var>accumulated configuration</var> is allowed, return <code>Allowed</code>.\n                            </p>"
+        },
+        {
+          "html": "then run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>\n                                        Request user consent to use <var>accumulated configuration</var> in the <var>origin</var> and wait for the user response.\n                                    </p>\n                                    <p>\n                                        The consent <em class=\"rfc2119\" title=\"MUST\">MUST</em> include consent to use a <a href=\"https://www.w3.org/TR/encrypted-media/#distinctive-identifier\">Distinctive Identifier(s)</a> and/or <a href=\"https://www.w3.org/TR/encrypted-media/#distinctive-permanent-identifier\">Distinctive Permanent Identifier(s)</a>                                        as appropriate if\n                                        <var>accumulated configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\">distinctiveIdentifier</a></code> member is <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.required\">\"required\"</a></code>.\n                                    </p>"
+            },
+            {
+              "html": "If consent was denied, run the following steps:",
+              "rationale": "update",
+              "steps": [
+                {
+                  "html": "<p>Update <var>restrictions</var> to reflect the configurations for which consent was denied.</p>"
+                },
+                {
+                  "html": "<p>Return <code>ConsentDenied</code> and <var>restrictions</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>\n                                If the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\">distinctiveIdentifier</a></code> member of <var>accumulated configuration</var> is not\n                                <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.not-allowed\">\"not-allowed\"</a></code>, return <code>InformUser</code>.\n                            </p>"
+        },
+        {
+          "html": "<p>\n                                If the user agent requires informing the user for the <var>accumulated configuration</var> for other reasons, return <code>InformUser</code>.\n                            </p>"
+        },
+        {
+          "html": "<p>Return <code>Allowed</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "mediakeysystemaccess/getconfiguration()",
+      "href": "https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemaccess-getconfiguration",
+      "html": "When this method is invoked, the user agent must run the following steps:",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p>\n                                    Return this object's <var>configuration</var> value.\n                                </p>"
+        }
+      ]
+    },
+    {
+      "name": "mediakeysystemaccess/createmediakeys()",
+      "href": "https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemaccess-createmediakeys",
+      "html": "When this method is invoked, the user agent must run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>configuration</var> be the value of this object's <var>configuration</var> value.</p>"
+            },
+            {
+              "html": "<p>\n                                            Let <var>use distinctive identifier</var> be <code>true</code> if the value of <var>configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\">distinctiveIdentifier</a></code>                                            member is <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.required\">\"required\"</a></code> and <code>false</code> otherwise.\n                                        </p>"
+            },
+            {
+              "html": "<p>\n                                            Let <var>persistent state allowed</var> be <code>true</code> if the value of <var>configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate\">persistentState</a></code> member is <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeysRequirement.required\">\"required\"</a></code>                                            and <code>false</code> otherwise.\n                                        </p>\n                                        <p>\n                                        </p>"
+            },
+            {
+              "html": "<p>Load and initialize the <a href=\"https://www.w3.org/TR/encrypted-media/#key-system\">Key System</a> implementation represented by this object's <var>cdm implementation</var> value if necessary.</p>"
+            },
+            {
+              "html": "<p>Let <var>instance</var> be a new instance of the <a href=\"https://www.w3.org/TR/encrypted-media/#key-system\">Key System</a> implementation represented by this object's <var>cdm implementation</var> value.</p>"
+            },
+            {
+              "html": "<p>Initialize <var>instance</var> to enable, disable and/or select <a href=\"https://www.w3.org/TR/encrypted-media/#key-system\">Key System</a> features using <var>configuration</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>use distinctive identifier</var> is <code>false</code>, prevent <var>instance</var> from <a href=\"https://www.w3.org/TR/encrypted-media/#uses-distinctive-identifiers-or-distinctive-permanent-identifiers\">using Distinctive Identifier(s) and Distinctive Permanent Identifier(s)</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>persistent state allowed</var> is <code>false</code>, prevent <var>instance</var> from persisting any state related to the application or <a href=\"https://www.w3.org/TR/html51/browsers.html#concept-cross-origin\">origin</a>                                            of this object's <a href=\"https://www.w3.org/TR/dom/#concept-document\">Document</a>.</p>"
+            },
+            {
+              "html": "<p>If any of the preceding steps failed, reject <var>promise</var> with a new <code><a href=\"https://www.w3.org/TR/WebIDL-1/#dfn-DOMException\">DOMException</a></code> whose name is the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#error-names\">error name</a>.</p>"
+            },
+            {
+              "html": "Let <var>media keys</var> be a new <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeys\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeys</code></a> object, and initialize it as follows:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let the <var>use distinctive identifier</var> value be <var>use distinctive identifier</var>.</p>"
+                },
+                {
+                  "html": "<p>Let the <var>persistent state allowed</var> value be <var>persistent state allowed</var>.</p>"
+                },
+                {
+                  "html": "<p>Let the <var>supported session types</var> value be be the value of <var>configuration</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-sessiontypes\">sessionTypes</a></code> member.</p>"
+                },
+                {
+                  "html": "<p>Let the <var>cdm implementation</var> value be this object's <var>cdm implementation</var> value.</p>"
+                },
+                {
+                  "html": "<p>Let the <var>cdm instance</var> value be <var>instance</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Resolve <var>promise</var> with <var>media keys</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "mediakeys/createsession()",
+      "href": "https://www.w3.org/TR/encrypted-media/#dom-mediakeys-createsession",
+      "html": "When this method is invoked, the user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If this object's <var>supported session types</var> value does not contain <var>sessionType</var>, <a href=\"https://www.w3.org/TR/WebIDL-1/#dfn-throw\">throw</a> [<cite><a class=\"bibref\" href=\"https://www.w3.org/TR/encrypted-media/#bib-WebIDL\">WebIDL</a></cite>]\n                                    a <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-NotSupportedError\">NotSupportedError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the implementation does not support <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> operations in the current state, <a href=\"https://www.w3.org/TR/WebIDL-1/#dfn-throw\">throw</a>                                    [<cite><a class=\"bibref\" href=\"https://www.w3.org/TR/encrypted-media/#bib-WebIDL\">WebIDL</a></cite>] an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "Let <var>session</var> be a new <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> object, and initialize it as follows:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-sessionid\">sessionId</a></code> attribute be the empty string.</p>"
+            },
+            {
+              "html": "<p>Let the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-expiration\">expiration</a></code> attribute be <code>NaN</code>.</p>"
+            },
+            {
+              "html": "<p>Let the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-closed\">closed</a></code> attribute be a new promise.</p>"
+            },
+            {
+              "html": "Let <var>key status</var> be a new empty <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeystatusmap\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyStatusMap</code></a> object, and initialize it as follows:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeystatusmap-size\">size</a></code> attribute be 0.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let the <var>session type</var> value be <var>sessionType</var>.</p>"
+            },
+            {
+              "html": "<p>Let the <var>uninitialized</var> value be true.</p>"
+            },
+            {
+              "html": "<p>Let the <var>callable</var> value be false.</p>"
+            },
+            {
+              "html": "<p>Let the <var>closing or closed</var> value be false.</p>"
+            },
+            {
+              "html": "<p>Let the <var>use distinctive identifier</var> value be this object's <var>use distinctive identifier</var> value.</p>"
+            },
+            {
+              "html": "<p>Let the <var>cdm implementation</var> value be this object's <var>cdm implementation</var>.</p>"
+            },
+            {
+              "html": "<p>Let the <var>cdm instance</var> value be this object's <var>cdm instance</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>session</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "mediakeys/setservercertificate()",
+      "href": "https://www.w3.org/TR/encrypted-media/#dom-mediakeys-setservercertificate",
+      "html": "When this method is invoked, the user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a href=\"https://www.w3.org/TR/encrypted-media/#key-system\">Key System</a> implementation represented by this object's <var>cdm implementation</var> value does not support server certificates, return a promise resolved with <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>serverCertificate</var> is an empty array, return a promise rejected with a new a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>certificate</var> be a copy of the contents of the <var>serverCertificate</var> parameter.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>sanitized certificate</var> be a validated and/or sanitized version of <var>certificate</var>.</p>"
+            },
+            {
+              "html": "<p>Use this object's <var>cdm instance</var> to process <var>sanitized certificate</var>.</p>"
+            },
+            {
+              "html": "<p>If the preceding step failed, resolve <var>promise</var> with a new <code><a href=\"https://www.w3.org/TR/WebIDL-1/#dfn-DOMException\">DOMException</a></code> whose name is the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#error-names\">error name</a>.</p>"
+            },
+            {
+              "html": "<p>Resolve <var>promise</var> with <code>true</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let the <var>session type</var> be the specified <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysessiontype\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySessionType</code></a> value.</p>"
+        },
+        {
+          "html": "Follow the steps for the value of <var>session type</var> from the following list:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "\"temporary\"",
+                  "html": "Return <code>false</code>."
+                },
+                {
+                  "case": "\"persistent-license\"",
+                  "html": "Return <code>true</code>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The following step is run:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p>For each <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> created by the <var>media keys</var> that is not <a href=\"https://www.w3.org/TR/encrypted-media/#media-key-session-closed\">closed</a>, <a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">queue a task</a>                            to run the <a href=\"https://www.w3.org/TR/encrypted-media/#session-closed\">Session Closed</a> algorithm on the session.</p>"
+        }
+      ]
+    },
+    {
+      "name": "mediakeysession/generaterequest()",
+      "href": "https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-generaterequest",
+      "html": "When this method is invoked, the user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If this object's <var>closing or closed</var> value is true, return a promise rejected with an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If this object's <var>uninitialized</var> value is false, return a promise rejected with an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let this object's <var>uninitialized</var> value be false.</p>"
+        },
+        {
+          "html": "<p>If <var>initDataType</var> is the empty string, return a promise rejected with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>initData</var> is an empty array, return a promise rejected with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a href=\"https://www.w3.org/TR/encrypted-media/#key-system\">Key System</a> implementation represented by this object's <var>cdm implementation</var> value does not support <var>initDataType</var> as an <a href=\"https://www.w3.org/TR/encrypted-media/#initialization-data-type\">Initialization Data Type</a>,\n                                    return a promise rejected with a <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-NotSupportedError\">NotSupportedError</a></code>. String comparison is case-sensitive.</p>"
+        },
+        {
+          "html": "<p>Let <var>init data</var> be a copy of the contents of the <var>initData</var> parameter.</p>"
+        },
+        {
+          "html": "<p>Let <var>session type</var> be this object's <var>session type</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <var>init data</var> is not valid for <var>initDataType</var>, reject <var>promise</var> with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>sanitized init data</var> be a validated and sanitized version of <var>init data</var>.</p>\n                                        <p>The user agent <em class=\"rfc2119\" title=\"MUST\">MUST</em> thoroughly validate the <a href=\"https://www.w3.org/TR/encrypted-media/#initialization-data\">Initialization Data</a> before passing it to the CDM. This includes verifying that the length and\n                                            values of fields are reasonable, verifying that values are within reasonable limits, and stripping irrelevant, unsupported, or unknown data or fields. It is <em class=\"rfc2119\" title=\"RECOMMENDED\">RECOMMENDED</em>                                            that user agents pre-parse, sanitize, and/or generate a fully sanitized version of the <a href=\"https://www.w3.org/TR/encrypted-media/#initialization-data\">Initialization Data</a>. If the <a href=\"https://www.w3.org/TR/encrypted-media/#initialization-data\">Initialization Data</a> format\n                                            specified by <var>initDataType</var> supports multiple entries, the user agent <em class=\"rfc2119\" title=\"SHOULD\">SHOULD</em> remove entries that are not needed by the CDM. The user agent <em class=\"rfc2119\" title=\"MUST NOT\">MUST NOT</em> re-order entries within the <a href=\"https://www.w3.org/TR/encrypted-media/#initialization-data\">Initialization Data</a>.\n                                        </p>"
+            },
+            {
+              "html": "<p>If the preceding step failed, reject <var>promise</var> with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>If <var>sanitized init data</var> is empty, reject <var>promise</var> with a <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-NotSupportedError\">NotSupportedError</a></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>session id</var> be the empty string.</p>"
+            },
+            {
+              "html": "<p>Let <var>message</var> be null.</p>"
+            },
+            {
+              "html": "<p>Let <var>message type</var> be null.</p>"
+            },
+            {
+              "html": "<p>Let <var>cdm</var> be the CDM instance represented by this object's <var>cdm instance</var> value.</p>"
+            },
+            {
+              "html": "Use the <var>cdm</var> to execute the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If the <var>sanitized init data</var> is not supported by the <var>cdm</var>, reject <var>promise</var> with a <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-NotSupportedError\">NotSupportedError</a></code>.</p>"
+                },
+                {
+                  "html": "Follow the steps for the value of <var>session type</var> from the following list:",
+                  "rationale": ".switch",
+                  "steps": [
+                    {
+                      "operation": "switch",
+                      "steps": [
+                        {
+                          "case": "\"temporary\"",
+                          "html": "<p>Let <var>requested license type</var> be a temporary non-persistable license.</p>"
+                        },
+                        {
+                          "case": "\"persistent-license\"",
+                          "html": "<p>Let <var>requested license type</var> be a persistable license.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>session id</var> be a unique <a href=\"https://www.w3.org/TR/encrypted-media/#session-id\">Session ID</a> string.</p>\n                                                <p>If the result of running the <a href=\"https://www.w3.org/TR/encrypted-media/#is-persistent-session-type\">Is persistent session type?</a> algorithm on <var>session type</var> is <code>true</code>, the ID <em class=\"rfc2119\" title=\"MUST\">MUST</em>                                                    be unique within the <a href=\"https://www.w3.org/TR/html51/browsers.html#concept-cross-origin\">origin</a> of this object's <a href=\"https://www.w3.org/TR/dom/#concept-document\">Document</a> over time,\n                                                    including across Documents and browsing sessions.</p>"
+                },
+                {
+                  "html": "<dl class=\"switch\">\n                                                    <dt>If a license request for the <var>requested license type</var> can be generated based on the <var>sanitized init data</var>:</dt>\n                                                    <dd>\n                                                        \n                                                    </dd>\n                                                    <dt>Otherwise:</dt>\n                                                    <dd>\n                                                        \n                                                    </dd>\n                                                </dl>",
+                  "rationale": ".switch",
+                  "steps": [
+                    {
+                      "operation": "switch",
+                      "steps": [
+                        {
+                          "case": "If a license request for the requested license type can be generated based on the sanitized init data:",
+                          "html": "",
+                          "rationale": "let",
+                          "steps": [
+                            {
+                              "html": "<p>\n                                                                    Let <var>message</var> be a license request for the <var>requested license type</var> generated based on the <var>sanitized init data</var> interpreted per <var>initDataType</var>.\n                                                                </p>\n                                                                <p>\n                                                                    The <var>cdm</var> <em class=\"rfc2119\" title=\"MUST NOT\">MUST NOT</em> use any stream-specific data, including <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#media-data\">media data</a>,\n                                                                    not provided via the\n                                                                    <var>sanitized init data</var>.\n                                                                </p>\n                                                                <p>The <var>cdm</var> <em class=\"rfc2119\" title=\"SHOULD NOT\">SHOULD NOT</em> store session data, including the session ID, at this point. See <a href=\"https://www.w3.org/TR/encrypted-media/#session-storage\">Session Storage and Persistence</a>.</p>"
+                            },
+                            {
+                              "html": "<p>\n                                                                    Let <var>message type</var> be <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeyMessageType.license-request\">\"license-request\"</a></code>.\n                                                                </p>"
+                            }
+                          ]
+                        },
+                        {
+                          "case": "Otherwise:",
+                          "html": "",
+                          "rationale": "let",
+                          "steps": [
+                            {
+                              "html": "<p>\n                                                                    Let <var>message</var> be the request that needs to be processed before a license request request for the <var>requested license type</var> can be generated based on the <var>sanitized init data</var>.\n                                                                </p>\n                                                                <p>\n                                                                    In a subsequent call to <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-update\">update()</a></code> the CDM <em class=\"rfc2119\" title=\"MUST\">MUST</em> generate a license request for the <var>requested license type</var>                                                                    based on the <var>sanitized init data</var>, which is interpreted per <var>initDataType</var>.\n                                                                </p>"
+                            },
+                            {
+                              "html": "<p>\n                                                                    Let <var>message type</var> reflect the type of <var>message</var>, either <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeyMessageType.license-request\">\"license-request\"</a></code> or <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeyMessageType.individualization-request\">\"individualization-request\"</a></code>.\n                                                                </p>"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">Queue a task</a> to run the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If any of the preceding steps failed, reject <var>promise</var> with a new <code><a href=\"https://www.w3.org/TR/WebIDL-1/#dfn-DOMException\">DOMException</a></code> whose name is the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#error-names\">error name</a>.</p>"
+                },
+                {
+                  "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-sessionid\">sessionId</a></code> attribute to <var>session id</var>.</p>"
+                },
+                {
+                  "html": "<p>Set this object's <var>callable</var> value to true.</p>"
+                },
+                {
+                  "html": "<p>Run the <a href=\"https://www.w3.org/TR/encrypted-media/#queue-message\">Queue a \"message\" Event</a> algorithm on the <var>session</var>, providing <var>message type</var> and <var>message</var>.</p>"
+                },
+                {
+                  "html": "<p>Resolve <var>promise</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "mediakeysession/load()",
+      "href": "https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-load",
+      "html": "When this method is invoked, the user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If this object's <var>closing or closed</var> value is true, return a promise rejected with an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If this object's <var>uninitialized</var> value is false, return a promise rejected with an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let this object's <var>uninitialized</var> value be false.</p>"
+        },
+        {
+          "html": "<p>If <var>sessionId</var> is the empty string, return a promise rejected with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the result of running the <a href=\"https://www.w3.org/TR/encrypted-media/#is-persistent-session-type\">Is persistent session type?</a> algorithm on this object's <var>session type</var> is <code>false</code>, return a promise rejected with a newly created\n                                    <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be the <a href=\"https://www.w3.org/TR/html51/browsers.html#concept-cross-origin\">origin</a> of this object's <a href=\"https://www.w3.org/TR/dom/#concept-document\">Document</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>sanitized session ID</var> be a validated and/or sanitized version of <var>sessionId</var>.</p>"
+            },
+            {
+              "html": "<p>If the preceding step failed, or if <var>sanitized session ID</var> is empty, reject <var>promise</var> with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>If there is a <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> object that is not <a href=\"https://www.w3.org/TR/encrypted-media/#media-key-session-closed\">closed</a> in this object's <a href=\"https://www.w3.org/TR/dom/#concept-document\">Document</a>                                            whose <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-sessionid\">sessionId</a></code> attribute is <var>sanitized session ID</var>, reject <var>promise</var> with a <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-QuotaExceededError\">QuotaExceededError</a></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>expiration time</var> be <code>NaN</code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>message</var> be null.</p>"
+            },
+            {
+              "html": "<p>Let <var>message type</var> be null.</p>"
+            },
+            {
+              "html": "<p>Let <var>cdm</var> be the CDM instance represented by this object's <var>cdm instance</var> value.</p>"
+            },
+            {
+              "html": "Use the <var>cdm</var> to execute the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If there is no data stored for the <var>sanitized session ID</var> in the <var>origin</var>, resolve <var>promise</var> with <code>false</code> and abort these steps.\n                                                    \n                                                </p>"
+                },
+                {
+                  "html": "<p>If the stored session's <var>session type</var> is not the same as the current <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> <var>session type</var>,\n                                                    reject <var>promise</var> with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>session data</var> be the data stored for the <var>sanitized session ID</var> in the <var>origin</var>. This <em class=\"rfc2119\" title=\"MUST NOT\">MUST NOT</em> include data from other origin(s)\n                                                    or that is not associated with an origin.</p>"
+                },
+                {
+                  "html": "<p>If there is a <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> object that is not <a href=\"https://www.w3.org/TR/encrypted-media/#media-key-session-closed\">closed</a> in any <a href=\"https://www.w3.org/TR/dom/#concept-document\">Document</a>                                                    and that represents the <var>session data</var>, reject <var>promise</var> with a <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-QuotaExceededError\">QuotaExceededError</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Load the <var>session data</var>.</p>"
+                },
+                {
+                  "html": "<p>If the <var>session data</var> indicates an <a href=\"https://www.w3.org/TR/encrypted-media/#expiration-time\">expiration time</a> for the session, let <var>expiration time</var> be that expiration time.</p>"
+                },
+                {
+                  "html": "If a message needs to be sent, execute the following steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>message</var> be a message generated based on the <var>session data</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>message type</var> be the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeymessagetype\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyMessageType</code></a> for the message.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">Queue a task</a> to run the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If any of the preceding steps failed, reject <var>promise</var> with a the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#error-names\">error name</a>.</p>"
+                },
+                {
+                  "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-sessionid\">sessionId</a></code> attribute to <var>sanitized session ID</var>.</p>"
+                },
+                {
+                  "html": "<p>Set this object's <var>callable</var> value to true.</p>"
+                },
+                {
+                  "html": "<p>\n                                                    If the loaded session contains information about any keys (there are <a href=\"https://www.w3.org/TR/encrypted-media/#known-key\">known keys</a>), run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-key-statuses\">Update Key Statuses</a> algorithm on the <var>session</var>,\n                                                    providing each key's <a href=\"https://www.w3.org/TR/encrypted-media/#decryption-key-id\">key ID</a> along with the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeystatus\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyStatus</code></a>.\n                                                </p>\n                                                <p>Should additional processing be necessary to determine with certainty the status of a key, use <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeyStatus.status-pending\">\"status-pending\"</a></code>. Once the additional processing\n                                                    for one or more keys has completed, run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-key-statuses\">Update Key Statuses</a> algorithm again with the actual status(es).\n                                                </p>"
+                },
+                {
+                  "html": "<p>Run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-expiration\">Update Expiration</a> algorithm on the <var>session</var>, providing <var>expiration time</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>message</var> is not null, run the <a href=\"https://www.w3.org/TR/encrypted-media/#queue-message\">Queue a \"message\" Event</a> algorithm on the <var>session</var>, providing <var>message type</var> and <var>message</var>.</p>"
+                },
+                {
+                  "html": "<p>Resolve <var>promise</var> with <code>true</code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "mediakeysession/update()",
+      "href": "https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-update",
+      "html": "When this method is invoked, the user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If this object's <var>closing or closed</var> value is true, return a promise rejected with an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If this object's <var>callable</var> value is false, return a promise rejected with an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>response</var> is an empty array, return a promise rejected with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>response copy</var> be a copy of the contents of the <var>response</var> parameter.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>sanitized response</var> be a validated and/or sanitized version of <var>response copy</var>.</p>"
+            },
+            {
+              "html": "<p>If the preceding step failed, or if <var>sanitized response</var> is empty, reject <var>promise</var> with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>message</var> be null.</p>"
+            },
+            {
+              "html": "<p>Let <var>message type</var> be null.</p>"
+            },
+            {
+              "html": "<p>Let <var>session closed</var> be false.</p>"
+            },
+            {
+              "html": "<p>Let <var>cdm</var> be the CDM instance represented by this object's <var>cdm instance</var> value.</p>"
+            },
+            {
+              "html": "Use the <var>cdm</var> to execute the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If the format of <var>sanitized response</var> is invalid in any way, reject <var>promise</var> with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+                },
+                {
+                  "html": "Process <var>sanitized response</var>, following the stipulation for the first matching condition from the following list:",
+                  "rationale": ".switch",
+                  "steps": [
+                    {
+                      "operation": "switch",
+                      "steps": [
+                        {
+                          "case": "If sanitized response contains a license or key(s)",
+                          "html": "Process <var>sanitized response</var>, following the stipulation for the first matching condition from the following list:",
+                          "rationale": ".switch",
+                          "steps": [
+                            {
+                              "operation": "switch",
+                              "steps": [
+                                {
+                                  "case": "If sessionType is \"temporary\" and sanitized response does not specify that session data, including any license, key(s), or similar session data it contains, should be stored",
+                                  "html": "Process <var>sanitized response</var>, not storing any session data."
+                                },
+                                {
+                                  "case": "If sessionType is \"persistent-license\" and sanitized response contains a persistable license",
+                                  "html": "Process <var>sanitized response</var>, storing the license/key(s) and related session data contained in <var>sanitized response</var>. Such data <em class=\"rfc2119\" title=\"MUST\">MUST</em> be\n                                                                stored such that only the <a href=\"https://www.w3.org/TR/html51/browsers.html#concept-cross-origin\">origin</a> of this object's <a href=\"https://www.w3.org/TR/dom/#concept-document\">Document</a>                                                                can access it."
+                                },
+                                {
+                                  "case": "Otherwise",
+                                  "html": "<p>Reject <var>promise</var> with a newly created <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-TypeError\">TypeError</a></code>.</p>"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "case": "If sanitized response contains a record of license destruction acknowledgement and sessionType is \"persistent-license\"",
+                          "html": "Run the following steps:",
+                          "rationale": "close",
+                          "steps": [
+                            {
+                              "html": "<p>\n                                                                    Close the <a href=\"https://www.w3.org/TR/encrypted-media/#key-session\">key session</a> and clear <em>all</em> stored session data associated with this object, including the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-sessionid\">sessionId</a></code>                                                                    and <a href=\"https://www.w3.org/TR/encrypted-media/#record-of-license-destruction\">record of license destruction</a>.\n                                                                </p>"
+                            },
+                            {
+                              "html": "<p>Set <var>session closed</var> to true.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "case": "Otherwise",
+                          "html": "Process <var>sanitized response</var>, not storing any session data."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "If a message needs to be sent, execute the following steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>message</var> be that message.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>message type</var> be the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeymessagetype\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyMessageType</code></a> for the message.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">Queue a task</a> to run the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<dl class=\"switch\">\n                                                    <dt>If <var>session closed</var> is true:</dt>\n                                                    <dd>\n                                                        <p>Run the <a href=\"https://www.w3.org/TR/encrypted-media/#session-closed\">Session Closed</a> algorithm on this object.</p>\n                                                    </dd>\n                                                    <dt>Otherwise:</dt>\n                                                    <dd>\n                                                        <p>Run the following steps:</p>\n                                                        \n                                                    </dd>\n                                                </dl>",
+                  "rationale": ".switch",
+                  "steps": [
+                    {
+                      "operation": "switch",
+                      "steps": [
+                        {
+                          "case": "If session closed is true:",
+                          "html": "<p>Run the <a href=\"https://www.w3.org/TR/encrypted-media/#session-closed\">Session Closed</a> algorithm on this object.</p>"
+                        },
+                        {
+                          "case": "Otherwise:",
+                          "html": "Run the following steps:",
+                          "rationale": "if",
+                          "steps": [
+                            {
+                              "html": "<p>\n                                                                    If the set of keys <a href=\"https://www.w3.org/TR/encrypted-media/#known-key\">known</a> to the CDM for this object changed or the status of any key(s) changed, run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-key-statuses\">Update Key Statuses</a>                                                                    algorithm on the <var>session</var>, providing each known key's <a href=\"https://www.w3.org/TR/encrypted-media/#decryption-key-id\">key ID</a> along with the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeystatus\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyStatus</code></a>.\n                                                                </p>\n                                                                <p>\n                                                                    Should additional processing be necessary to determine with certainty the status of a key, use <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeyStatus.status-pending\">\"status-pending\"</a></code>. Once\n                                                                    the additional processing for one or more keys has completed, run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-key-statuses\">Update Key Statuses</a> algorithm again with the actual status(es).\n                                                                </p>"
+                            },
+                            {
+                              "html": "<p>If the <a href=\"https://www.w3.org/TR/encrypted-media/#expiration-time\">expiration time</a> for the session changed, run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-expiration\">Update Expiration</a> algorithm on the <var>session</var>, providing the\n                                                                    new expiration time.</p>"
+                            },
+                            {
+                              "html": "<p>If any of the preceding steps failed, reject <var>promise</var> with a new <code><a href=\"https://www.w3.org/TR/WebIDL-1/#dfn-DOMException\">DOMException</a></code> whose name is the appropriate\n                                                                    <a href=\"https://www.w3.org/TR/encrypted-media/#error-names\">error name</a>.</p>"
+                            },
+                            {
+                              "html": "<p>If <var>message</var> is not null, run the <a href=\"https://www.w3.org/TR/encrypted-media/#queue-message\">Queue a \"message\" Event</a> algorithm on the <var>session</var>, providing <var>message type</var> and <var>message</var>.</p>"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Resolve <var>promise</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "mediakeysession/close()",
+      "href": "https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-close",
+      "html": "When this method is invoked, the user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If this object's <var>closing or closed</var> value is true, return a resolved promise.</p>"
+        },
+        {
+          "html": "<p>If this object's <var>callable</var> value is false, return a promise rejected with an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "<p>Set this object's <var>closing or closed</var> value to true.</p>"
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>cdm</var> be the CDM instance represented by this object's <var>cdm instance</var> value.</p>"
+            },
+            {
+              "html": "<p>Use <var>cdm</var> to close the <a href=\"https://www.w3.org/TR/encrypted-media/#key-session\">key session</a> associated with this object.</p>"
+            },
+            {
+              "html": "<a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">Queue a task</a> to run the following steps:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run the <a href=\"https://www.w3.org/TR/encrypted-media/#session-closed\">Session Closed</a> algorithm on this object.</p>"
+                },
+                {
+                  "html": "<p>Resolve <var>promise</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "mediakeysession/remove()",
+      "href": "https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-remove",
+      "html": "When this method is invoked, the user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If this object's <var>closing or closed</var> value is true, return a promise rejected with an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If this object's <var>callable</var> value is false, return a promise rejected with an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>cdm</var> be the CDM instance represented by this object's <var>cdm instance</var> value.</p>"
+            },
+            {
+              "html": "<p>Let <var>message</var> be null.</p>"
+            },
+            {
+              "html": "<p>Let <var>message type</var> be null.</p>"
+            },
+            {
+              "html": "Use the <var>cdm</var> to execute the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If any license(s) and/or key(s) are associated with the session:",
+                  "rationale": "destroy",
+                  "steps": [
+                    {
+                      "html": "<p>\n                                                            Destroy the license(s) and/or key(s) associated with the session.\n                                                        </p>"
+                    },
+                    {
+                      "html": "Follow the steps for the value of this object's <var>session type</var> from the following list:",
+                      "rationale": ".switch",
+                      "steps": [
+                        {
+                          "operation": "switch",
+                          "steps": [
+                            {
+                              "case": "\"temporary\"",
+                              "html": "<p>Continue with the following steps.</p>"
+                            },
+                            {
+                              "case": "\"persistent-license\"",
+                              "html": "",
+                              "rationale": "let",
+                              "steps": [
+                                {
+                                  "html": "<p>\n                                                                            Let <var>record of license destruction</var> be a <a href=\"https://www.w3.org/TR/encrypted-media/#record-of-license-destruction\">record of license destruction</a> for the license represented by this object.\n                                                                        </p>"
+                                },
+                                {
+                                  "html": "<p>\n                                                                            Store the <var>record of license destruction</var>.\n                                                                        </p>"
+                                },
+                                {
+                                  "html": "<p>\n                                                                            Let <var>message</var> be a message containing or reflecting the <var>record of license destruction</var>.\n                                                                        </p>"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">Queue a task</a> to run the following steps:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>\n                                                    Run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-key-statuses\">Update Key Statuses</a> algorithm on the <var>session</var>, providing all <a href=\"https://www.w3.org/TR/encrypted-media/#decryption-key-id\">key ID(s)</a> in the session along with the <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeyStatus.released\">\"released\"</a></code>                                                    <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeystatus\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyStatus</code></a> value for each.\n                                                </p>"
+                },
+                {
+                  "html": "<p>Run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-expiration\">Update Expiration</a> algorithm on the <var>session</var>, providing <code>NaN</code>.</p>"
+                },
+                {
+                  "html": "<p>If any of the preceding steps failed, reject <var>promise</var> with a new <code><a href=\"https://www.w3.org/TR/WebIDL-1/#dfn-DOMException\">DOMException</a></code> whose name is the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#error-names\">error name</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>message type</var> be <code><a href=\"https://www.w3.org/TR/encrypted-media/#idl-def-MediaKeyMessageType.license-release\">\"license-release\"</a></code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>message</var> is not <code>null</code>, run the <a href=\"https://www.w3.org/TR/encrypted-media/#queue-message\">Queue a \"message\" Event</a> algorithm on the <var>session</var>, providing <var>message type</var> and <var>message</var>.</p>"
+                },
+                {
+                  "html": "<p>Resolve <var>promise</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let the <var>session</var> be the specified <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> object.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">Queue a task</a> to create an event named <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-evt-message\">message</a></code> that does not bubble and is not cancellable using the <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeymessageevent\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyMessageEvent</code></a> interface with its <var>type</var> attribute set to <code>message</code> and its <var>isTrusted</var> attribute initialized to <code>true</code>,\n                            and dispatch it at the <var>session</var>.</p>\n                        <p>The event interface <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeymessageevent\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyMessageEvent</code></a> has:</p>\n                        <ul style=\"list-style-type:none\">\n                            <li>\n                                <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeymessageevent-messagetype\">messageType</a></code> = the specified <var>message type</var><br><br>\n                                <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeymessageevent-message\">message</a></code> = the specified <var>message</var>\n                            </li>\n                        </ul>"
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let the <var>session</var> be the associated <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> object.</p>"
+        },
+        {
+          "html": "<p>Let the <var>input statuses</var> be the sequence of pairs key ID and associated <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeystatus\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyStatus</code></a> pairs.</p>"
+        },
+        {
+          "html": "<p>Let the <var>statuses</var> be <var>session</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-keystatuses\">keyStatuses</a></code> attribute.</p>"
+        },
+        {
+          "html": "Run the following steps to replace the contents of <var>statuses</var>:",
+          "rationale": "empty",
+          "steps": [
+            {
+              "html": "<p>Empty <var>statuses</var>.</p>"
+            },
+            {
+              "html": "For each pair in <var>input statuses</var>.",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>pair</var> be the pair.</p>"
+                },
+                {
+                  "html": "<p>Insert an entry for <var>pair</var>'s key ID into <var>statuses</var> with the value of <var>pair</var>'s <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeystatus\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyStatus</code></a> value.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p><a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">Queue a task</a> to <a href=\"https://www.w3.org/TR/html51/webappapis.html#firing-a-simple-event-named-e\">fire a simple event</a> named <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-evt-keystatuseschange\">keystatuseschange</a></code>                            at the <var>session</var>.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">Queue a task</a> to run the <a href=\"https://www.w3.org/TR/encrypted-media/#resume-playback\">Attempt to Resume Playback If Necessary</a> algorithm on each of the media element(s) whose <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeys\">mediaKeys</a></code>                            attribute is the MediaKeys object that created the <var>session</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let the <var>session</var> be the associated <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> object.</p>"
+        },
+        {
+          "html": "<p>Let <var>expiration time</var> be <code>NaN</code>.</p>"
+        },
+        {
+          "html": "<p>If the new expiration time is not <code>NaN</code>, let <var>expiration time</var> be that expiration time.</p>"
+        },
+        {
+          "html": "<p>Set the <var>session</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-expiration\">expiration</a></code> attribute to <var>expiration time</var> expressed as <a href=\"https://www.w3.org/TR/encrypted-media/#time\">time</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>session</var> be the associated <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> object.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be the <var>session</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession-closed\">closed</a></code> attribute.</p>"
+        },
+        {
+          "html": "<p>If <var>promise</var> is resolved, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set the <var>session</var>'s <var>closing or closed</var> value to true.</p>"
+        },
+        {
+          "html": "<p>Run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-key-statuses\">Update Key Statuses</a> algorithm on the <var>session</var>, providing an empty sequence.</p>"
+        },
+        {
+          "html": "<p>Run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-expiration\">Update Expiration</a> algorithm on the <var>session</var>, providing <code>NaN</code>.</p>"
+        },
+        {
+          "html": "<p>Resolve <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\n                            Let <var>session</var> be the <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> object.\n                        </p>"
+        },
+        {
+          "html": "<p>Let <var>cdm</var> be the CDM instance represented by <var>session</var>'s <var>cdm instance</var> value.</p>"
+        },
+        {
+          "html": "If <var>cdm</var> has an outgoing message that has not yet been sent, <a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">queue a task</a> to execute the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>\n                                    Let <var>message type</var> and <var>message</var> be the message type and message, respectively.\n                                </p>"
+            },
+            {
+              "html": "<p>\n                                    Run the <a href=\"https://www.w3.org/TR/encrypted-media/#queue-message\">Queue a \"message\" Event</a> algorithm, passing <var>session</var>, <var>message type</var> and <var>message</var>.\n                                </p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>cdm</var> has changed the set of keys <a href=\"https://www.w3.org/TR/encrypted-media/#known-key\">known</a> to <var>session</var> or the status of one or more of the keys,\n                            <a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">queue a task</a> to execute the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>\n                                    Let <var>statuses</var> be a list of key ID and <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeystatus\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyStatus</code></a> value pairs containing one pair for each key\n                                    <a href=\"https://www.w3.org/TR/encrypted-media/#known-key\">known</a> to <var>session</var>.\n                                </p>"
+            },
+            {
+              "html": "<p>\n                                    Run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-key-statuses\">Update Key Statuses</a> algorithm, passing <var>session</var> and <var>statuses</var>.\n                                </p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>cdm</var> has changed the <a href=\"https://www.w3.org/TR/encrypted-media/#expiration-time\">expiration time</a> of <var>session</var>, <a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">queue a task</a> to execute the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>\n                                    Let <var>expiration time</var> be the new expiration time of <var>session</var>.\n                                </p>"
+            },
+            {
+              "html": "<p>\n                                    Run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-expiration\">Update Expiration</a> algorithm, passing <var>session</var> and <var>expiration time</var>.\n                                </p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>\n                            If <var>cdm</var> has closed <var>session</var>, <a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">queue a task</a> to run the <a href=\"https://www.w3.org/TR/encrypted-media/#session-closed\">Session Closed</a> algorithm on <var>session</var>.\n                        </p>"
+        },
+        {
+          "html": "<p>\n                            If <var>cdm</var> had become unavailable, <a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">queue a task</a> to run the <a href=\"https://www.w3.org/TR/encrypted-media/#session-closed\">Session Closed</a> algorithm on <var>session</var>.\n                        </p>"
+        }
+      ]
+    },
+    {
+      "name": "htmlmediaelement/setmediakeys()",
+      "href": "https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-setmediakeys",
+      "html": "When this method is invoked, the user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If this object's <var>attaching media keys</var> value is true, return a promise rejected with an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>mediaKeys</var> and the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeys\">mediaKeys</a></code> attribute are the same object, return a resolved promise.</p>"
+        },
+        {
+          "html": "<p>Let this object's <var>attaching media keys</var> value be true.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be a new promise.</p>"
+        },
+        {
+          "html": "Run the following steps in parallel:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If all the following conditions hold:</p>\n                                        <ul>\n                                            <li>\n                                                <p><var>mediaKeys</var> is not null,</p>\n                                            </li>\n                                            <li>\n                                                <p>the CDM instance represented by <var>mediaKeys</var> is already in use by another media element</p>\n                                            </li>\n                                            <li>\n                                                <p>the user agent is unable to use it with this element</p>\n                                            </li>\n                                        </ul>\n                                        <p>\n                                            then let this object's <var>attaching media keys</var> value be false and reject <var>promise</var> with a <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-QuotaExceededError\">QuotaExceededError</a></code>.\n                                        </p>"
+            },
+            {
+              "html": "If the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeys\">mediaKeys</a></code> attribute is not null, run the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If the user agent or CDM do not support removing the association, let this object's <var>attaching media keys</var> value be false and reject <var>promise</var> with a <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-NotSupportedError\">NotSupportedError</a></code>.</p>"
+                },
+                {
+                  "html": "<p>If the association cannot currently be removed, let this object's <var>attaching media keys</var> value be false and reject <var>promise</var> with an <code><a href=\"https://www.w3.org/TR/encrypted-media/#dfn-InvalidStateError\">InvalidStateError</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Stop using the CDM instance represented by the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeys\">mediaKeys</a></code> attribute to decrypt <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#media-data\">media data</a>                                                    and remove the association with the media element.</p>"
+                },
+                {
+                  "html": "<p>If the preceding step failed, let this object's <var>attaching media keys</var> value be false and reject <var>promise</var> with the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#error-names\">error name</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>mediaKeys</var> is not null, run the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>Associate the CDM instance represented by <var>mediaKeys</var> with the media element for decrypting <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#media-data\">media data</a>.</p>"
+                },
+                {
+                  "html": "If the preceding step failed, run the following steps:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeys\">mediaKeys</a></code> attribute to null.</p>"
+                    },
+                    {
+                      "html": "<p>Let this object's <var>attaching media keys</var> value be false.</p>"
+                    },
+                    {
+                      "html": "<p>Reject <var>promise</var> with a new <code><a href=\"https://www.w3.org/TR/WebIDL-1/#dfn-DOMException\">DOMException</a></code> whose name is the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#error-names\">error name</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p><a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">Queue a task</a> to run the <a href=\"https://www.w3.org/TR/encrypted-media/#resume-playback\">Attempt to Resume Playback If Necessary</a> algorithm on the media element.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeys\">mediaKeys</a></code> attribute to <var>mediaKeys</var>.</p>"
+            },
+            {
+              "html": "<p>Let this object's <var>attaching media keys</var> value be false.</p>"
+            },
+            {
+              "html": "<p>Resolve <var>promise</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let the <var>media element</var> be the specified <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#htmlmediaelement-htmlmediaelement\">HTMLMediaElement</a></code> object.</p>"
+        },
+        {
+          "html": "If the <var>media element</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeys\">mediaKeys</a></code> attribute is null and the implementation requires specification of a <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeys\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeys</code></a>                            object before decoding potentially-encrypted <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#media-data\">media data</a>, run the following steps:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "<p>Run the <a href=\"https://www.w3.org/TR/encrypted-media/#wait-for-key\">Wait for Key</a> algorithm on the <var>media element</var>.</p>"
+            },
+            {
+              "html": "<p>Wait for a signal to resume playback.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let the <var>media element</var> be the specified <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#htmlmediaelement-htmlmediaelement\">HTMLMediaElement</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Let <var>initDataType</var> be the empty string.</p>"
+        },
+        {
+          "html": "<p>Let <var>initData</var> be null.</p>"
+        },
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#media-data\">media data</a> is <a href=\"https://www.w3.org/TR/html51/browsers.html#same-origin\">CORS-same-origin</a> and <em>not</em> <a href=\"https://www.w3.org/TR/encrypted-media/#mixed-content\">mixed content</a>,\n                            run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>initDataType</var> be the string representing the <a href=\"https://www.w3.org/TR/encrypted-media/#initialization-data-type\">Initialization Data Type</a> of the Initialization Data.</p>"
+            },
+            {
+              "html": "<p>Let <var>initData</var> be the Initialization Data.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">Queue a task</a> to create an event named <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-evt-encrypted\">encrypted</a></code> that does not bubble and is not cancellable using the <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediaencryptedevent\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaEncryptedEvent</code></a> interface with its <var>type</var> attribute set to <code>encrypted</code> and its <var>isTrusted</var> attribute initialized to <code>true</code>,\n                            and dispatch it at the <var>media element</var>.</p>\n                        <p>The event interface <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediaencryptedevent\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaEncryptedEvent</code></a> has:</p>\n                        <ul style=\"list-style-type:none\">\n                            <li>\n                                <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediaencryptedevent-initdatatype\">initDataType</a></code> = <var>initDataType</var><br><br>\n                                <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediaencryptedevent-initdata\">initData</a></code> = <var>initData</var>\n                            </li>\n                        </ul>"
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let the <var>media element</var> be the specified <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#htmlmediaelement-htmlmediaelement\">HTMLMediaElement</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Let <var>block</var> be the block of encrypted media data.</p>"
+        },
+        {
+          "html": "<p>Add <var>block</var> to the end of the <var>media element</var>'s <var>encrypted block queue</var>.</p>"
+        },
+        {
+          "html": "<p>If the <var>media element</var>'s <var>decryption blocked waiting for key</var> value is <code>false</code>, run the <a href=\"https://www.w3.org/TR/encrypted-media/#attempt-to-decrypt\">Attempt to Decrypt</a> algorithm.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let the <var>media element</var> be the specified <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#htmlmediaelement-htmlmediaelement\">HTMLMediaElement</a></code> object.</p>"
+        },
+        {
+          "html": "<p>If the <var>media element</var>'s <var>encrypted block queue</var> is empty, abort these steps.</p>"
+        },
+        {
+          "html": "If the <var>media element</var>'s <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeys\">mediaKeys</a></code> attribute is not null, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>media keys</var> be the <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeys\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeys</code></a> object referenced by that attribute.</p>"
+            },
+            {
+              "html": "<p>Let <var>cdm</var> be the CDM instance represented by <var>media keys</var>'s <var>cdm instance</var> value.</p>"
+            },
+            {
+              "html": "If <var>cdm</var> is no longer usable for any reason, run the following steps:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>Run the <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#fatal-decode-error\">media data is corrupted</a> steps of the <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#resource-fetch-algorithm\">resource fetch algorithm</a>.</p>"
+                },
+                {
+                  "html": "<p>Run the <a href=\"https://www.w3.org/TR/encrypted-media/#cdm-unavailable\">CDM Unavailable</a> algorithm on <var>media keys</var>.</p>"
+                },
+                {
+                  "html": "<p>Abort these steps.</p>"
+                }
+              ]
+            },
+            {
+              "html": "If there is at least one <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> created by the <var>media keys</var> that is not <a href=\"https://www.w3.org/TR/encrypted-media/#media-key-session-closed\">closed</a>,\n                                    run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>block</var> be the first entry in the <var>media element</var>'s <var>encrypted block queue</var>.</p>"
+                },
+                {
+                  "html": "<p>Let the <var>block key ID</var> be the key ID of <var>block</var>.</p>"
+                },
+                {
+                  "html": "Use the <var>cdm</var> to execute the following steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>available keys</var> be the union of keys in sessions that were created by the <var>media keys</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>block key</var> be null.</p>"
+                    },
+                    {
+                      "html": "<p>If any of the <var>available keys</var> corresponds to the <var>block key ID</var> and is <a href=\"https://www.w3.org/TR/encrypted-media/#usable-for-decryption\">usable for decryption</a>, let <var>session</var> be a\n                                                    <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysession\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeySession</code></a> object containing that key and let <var>block key</var> be that key.</p>"
+                    },
+                    {
+                      "html": "<p>If the status of any of the <var>available keys</var> changed as the result of running the preceding step, <a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">queue a task</a> to run the <a href=\"https://www.w3.org/TR/encrypted-media/#update-key-statuses\">Update Key Statuses</a>                                                    algorithm on each affected <var>session</var>, providing all <a href=\"https://www.w3.org/TR/encrypted-media/#decryption-key-id\">key ID(s)</a> in the session along with the appropriate <a href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeystatus\" class=\"internalDFN\" data-link-type=\"dfn\"><code>MediaKeyStatus</code></a>                                                    value(s) for each.</p>"
+                    },
+                    {
+                      "html": "If <var>block key</var> is not null, run the following steps:",
+                      "rationale": "use",
+                      "steps": [
+                        {
+                          "html": "<p>Use the <var>cdm</var> to decrypt <var>block</var> using <var>block key</var>.</p>"
+                        },
+                        {
+                          "html": "Follow the steps for the first matching condition from the following list:",
+                          "rationale": ".switch",
+                          "steps": [
+                            {
+                              "operation": "switch",
+                              "steps": [
+                                {
+                                  "case": "If decryption fails",
+                                  "html": "",
+                                  "rationale": "run",
+                                  "steps": [
+                                    {
+                                      "html": "<p>Run the <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#fatal-decode-error\">media data is corrupted</a> steps of the <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#resource-fetch-algorithm\">resource fetch algorithm</a>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>If <var>cdm</var> is no longer usable for any reason then run the <a href=\"https://www.w3.org/TR/encrypted-media/#cdm-unavailable\">CDM Unavailable</a> algorithm on <var>media keys</var>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>Abort these steps.</p>"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "case": "Otherwise",
+                                  "html": "",
+                                  "rationale": "remove",
+                                  "steps": [
+                                    {
+                                      "html": "<p>Remove <var>block</var> from the front of the <var>media element</var>'s <var>encrypted block queue</var>.</p>"
+                                    },
+                                    {
+                                      "html": "<p>Process the decrypted block as normal.</p>"
+                                    },
+                                    {
+                                      "html": "<p>Return to the beginning of this algorithm.</p>"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Set the <var>media element</var>'s <var>decryption blocked waiting for key</var> value to <code>true</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let the <var>media element</var> be the specified <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#htmlmediaelement-htmlmediaelement\">HTMLMediaElement</a></code> object.</p>"
+        },
+        {
+          "html": "<p>If the <var>media element</var>'s <var>playback blocked waiting for key</var> value is <code>true</code>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set the <var>media element</var>'s <var>playback blocked waiting for key</var> value to <code>true</code>.</p>"
+        },
+        {
+          "html": "Follow the steps for the first matching condition from the following list:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If data for the immediate current playback position is available",
+                  "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#dom-htmlmediaelement-readystate\">readyState</a></code> of <var>media element</var> to <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#dom-htmlmediaelement-have_current_data\">HAVE_CURRENT_DATA</a></code>.</p>"
+                },
+                {
+                  "case": "Otherwise",
+                  "html": "<p>Set the <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#dom-htmlmediaelement-readystate\">readyState</a></code> of <var>media element</var> to <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#dom-htmlmediaelement-have_metadata\">HAVE_METADATA</a></code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p><a href=\"https://www.w3.org/TR/html51/webappapis.html#queuing\">Queue a task</a> to <a href=\"https://www.w3.org/TR/html51/webappapis.html#firing-a-simple-event-named-e\">fire a simple event</a> named <code><a href=\"https://www.w3.org/TR/encrypted-media/#dom-evt-waitingforkey\">waitingforkey</a></code>                            at the <var>media element</var>.</p>"
+        },
+        {
+          "html": "<p>Suspend playback.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The following steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let the <var>media element</var> be the specified <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#htmlmediaelement-htmlmediaelement\">HTMLMediaElement</a></code> object.</p>"
+        },
+        {
+          "html": "<p>If the <var>media element</var>'s <var>playback blocked waiting for key</var> is <code>false</code>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Run the <a href=\"https://www.w3.org/TR/encrypted-media/#attempt-to-decrypt\">Attempt to Decrypt</a> algorithm on the <var>media element</var>.</p>"
+        },
+        {
+          "html": "If the user agent can advance the <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#current-position\">current playback position</a> in the <a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#direction-of-playback\">direction of playback</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set the <var>media element</var>'s <var>decryption blocked waiting for key</var> value to <code>false</code>.</p>"
+            },
+            {
+              "html": "<p>Set the <var>media element</var>'s <var>playback blocked waiting for key</var> value to <code>false</code>.</p>"
+            },
+            {
+              "html": "<p>\n                                    Set the <var>media element</var>'s <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#dom-htmlmediaelement-readystate\">readyState</a></code> value to <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#dom-htmlmediaelement-have_current_data\">HAVE_CURRENT_DATA</a></code>,\n                                    <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#dom-htmlmediaelement-have_future_data\">HAVE_FUTURE_DATA</a></code> or\n                                    <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#dom-htmlmediaelement-have_enough_data\">HAVE_ENOUGH_DATA</a></code> as <code><a href=\"https://www.w3.org/TR/html51/semantics-embedded-content.html#ready-states\">appropriate</a></code>.\n                                </p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

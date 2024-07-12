@@ -1,0 +1,76 @@
+{
+  "spec": {
+    "title": "Motion Path Module Level 1",
+    "url": "https://www.w3.org/TR/motion-1/"
+  },
+  "algorithms": [
+    {
+      "name": "used offset distance",
+      "href": "https://www.w3.org/TR/motion-1/#used-offset-distance",
+      "html": "To determine the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"used-offset-distance\">used offset distance</dfn> for a given <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-path\" id=\"ref-for-offset-path①⑧\">offset path</a> and <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"offset-distance\">offset distance</dfn>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"total-length\">total length</dfn> be the total length of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-path\" id=\"ref-for-offset-path①⑨\">offset path</a> with all sub-paths.</p>"
+        },
+        {
+          "html": "<p>Convert <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-distance\" id=\"ref-for-offset-distance\">offset distance</a> to pixels, with 100% being converted to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#total-length\" id=\"ref-for-total-length\">total length</a>.</p>"
+        },
+        {
+          "html": "<dl class=\"switch\">\n      <dt data-md=\"\">If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-path\" id=\"ref-for-offset-path②⓪\">offset path</a> is an unbounded ray:\n      </dt><dd data-md=\"\">\n       <p>Let <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#used-offset-distance\" id=\"ref-for-used-offset-distance①\">used offset distance</a> be equal to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-distance\" id=\"ref-for-offset-distance①\">offset distance</a>.</p>\n      </dd><dt data-md=\"\">Otherwise if <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-path\" id=\"ref-for-offset-path②①\">offset path</a> is an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css3-values/#angle-value\" id=\"ref-for-angle-value①⓪\" title=\"Expands to: turn | rad | grad | deg\">&lt;angle&gt;</a> path with contain:\n      </dt><dd data-md=\"\">\n       <p>Let <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#used-offset-distance\" id=\"ref-for-used-offset-distance②\">used offset distance</a> be equal to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-distance\" id=\"ref-for-offset-distance②\">offset distance</a>, clamped so that the box lies entirely within the path.</p>\n      </dd><dt data-md=\"\">If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-path\" id=\"ref-for-offset-path②②\">offset path</a> is any other unclosed interval:\n      </dt><dd data-md=\"\">\n       <p>Let <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#used-offset-distance\" id=\"ref-for-used-offset-distance③\">used offset distance</a> be equal to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-distance\" id=\"ref-for-offset-distance③\">offset distance</a> clamped by 0 and the total length of the path.</p>\n      </dd><dt data-md=\"\">Otherwise <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-path\" id=\"ref-for-offset-path②③\">offset path</a> is a closed loop:\n      </dt><dd data-md=\"\">\n       <p>Let <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#used-offset-distance\" id=\"ref-for-used-offset-distance④\">used offset distance</a> be equal to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-distance\" id=\"ref-for-offset-distance④\">offset distance</a> modulus the total length of the path. If the total length of the path is 0, <span id=\"ref-for-used-offset-distance⑤\">used offset distance</span> is also 0.</p>\n     </dd></dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If offset path is an unbounded ray:",
+                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#used-offset-distance\" id=\"ref-for-used-offset-distance①\">used offset distance</a> be equal to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-distance\" id=\"ref-for-offset-distance①\">offset distance</a>.</p>"
+                },
+                {
+                  "case": "Otherwise if offset path is an <angle> path with contain:",
+                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#used-offset-distance\" id=\"ref-for-used-offset-distance②\">used offset distance</a> be equal to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-distance\" id=\"ref-for-offset-distance②\">offset distance</a>, clamped so that the box lies entirely within the path.</p>"
+                },
+                {
+                  "case": "If offset path is any other unclosed interval:",
+                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#used-offset-distance\" id=\"ref-for-used-offset-distance③\">used offset distance</a> be equal to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-distance\" id=\"ref-for-offset-distance③\">offset distance</a> clamped by 0 and the total length of the path.</p>"
+                },
+                {
+                  "case": "Otherwise offset path is a closed loop:",
+                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#used-offset-distance\" id=\"ref-for-used-offset-distance④\">used offset distance</a> be equal to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-distance\" id=\"ref-for-offset-distance④\">offset distance</a> modulus the total length of the path. If the total length of the path is 0, <span id=\"ref-for-used-offset-distance⑤\">used offset distance</span> is also 0.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "html": "<p>Create a supplemental transformation matrix <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"t1\">T1</dfn> for the local coordinate system of the box.</p>"
+        },
+        {
+          "html": "<p>Find the <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/motion-1/#valdef-offsetpath-initial-position\" id=\"ref-for-valdef-offsetpath-initial-position①⑦\">initial position</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-path\" id=\"ref-for-offset-path③②\">offset path</a> specified by <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/motion-1/#propdef-offset-position\" id=\"ref-for-propdef-offset-position①⑨\">offset-position</a> as <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"t2\">T2</dfn>.</p>"
+        },
+        {
+          "html": "<p>Let <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"p\">P</dfn> be the point at the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#used-offset-distance\" id=\"ref-for-used-offset-distance⑥\">used offset distance</a> along the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#offset-path\" id=\"ref-for-offset-path③③\">offset path</a>.</p>"
+        },
+        {
+          "html": "<p>Find the translation of the box such that its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#anchor-point\" id=\"ref-for-anchor-point①①\">anchor point</a> is placed at <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#p\" id=\"ref-for-p\">P</a>, and apply that to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#t2\" id=\"ref-for-t2\">T2</a>.</p>"
+        },
+        {
+          "html": "<p>Post-multiply <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#t2\" id=\"ref-for-t2①\">T2</a> by the rotation specified by <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/motion-1/#propdef-offset-rotate\" id=\"ref-for-propdef-offset-rotate⑨\">offset-rotate</a>.</p>"
+        },
+        {
+          "html": "<p>Post-multiply <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#t2\" id=\"ref-for-t2②\">T2</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#t1\" id=\"ref-for-t1\">T1</a>.</p>"
+        },
+        {
+          "html": "<p>Post-multiply <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/motion-1/#t1\" id=\"ref-for-t1①\">T1</a> to the local coordinate system of the box.</p>"
+        }
+      ]
+    }
+  ]
+}

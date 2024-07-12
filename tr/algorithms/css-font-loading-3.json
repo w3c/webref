@@ -1,0 +1,348 @@
+{
+  "spec": {
+    "title": "CSS Font Loading Module Level 3",
+    "url": "https://www.w3.org/TR/css-font-loading-3/"
+  },
+  "algorithms": [
+    {
+      "name": "FontFace/FontFace(family, source, descriptors)",
+      "href": "https://www.w3.org/TR/css-font-loading-3/#dom-fontface-fontface",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FontFace\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"FontFace(family, source, descriptors)|constructor(family, source, descriptors)|FontFace(family, source)|constructor(family, source)\" id=\"dom-fontface-fontface\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>FontFace(family, source, descriptors)</code></dfn><span style=\"position: relative; height: 0px;\"></span> method is called,\n\texecute these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>font face</var> be a fresh <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontface\" id=\"ref-for-fontface①①\">FontFace</a></code> object.\nSet <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-status\" id=\"ref-for-dom-fontface-status①\">status</a></code> attribute to <code>\"unloaded\"</code>,\nSet its internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-fontstatuspromise-slot\" id=\"ref-for-dom-fontface-fontstatuspromise-slot①\">[[FontStatusPromise]]</a></code> slot to a fresh pending <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③\">Promise</a></code> object.</p>\n     <p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar②\">Parse</a> the <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-fontface-family-source-descriptors-family\" id=\"ref-for-dom-fontface-fontface-family-source-descriptors-family\">family</a></code> argument,\nand the members of the <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-fontface-family-source-descriptors-descriptors\" id=\"ref-for-dom-fontface-fontface-family-source-descriptors-descriptors\">descriptors</a></code> argument,\naccording to the grammars of the corresponding descriptors of the CSS <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-fonts-5/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑦\">@font-face</a> rule.\nIf the <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-fontface-family-source-descriptors-source\" id=\"ref-for-dom-fontface-fontface-family-source-descriptors-source\">source</a></code> argument is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-1/#cssomstring\" id=\"ref-for-cssomstring③⑦\">CSSOMString</a></code>,\nparse it according to the grammar of the CSS <span class=\"css\">src</span> descriptor of the <span class=\"css\" id=\"ref-for-at-font-face-rule⑧\">@font-face</span> rule.\nIf any of them fail to parse correctly,\nreject <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-fontstatuspromise-slot\" id=\"ref-for-dom-fontface-fontstatuspromise-slot②\">[[FontStatusPromise]]</a></code> with a DOMException named \"SyntaxError\",\nset <var>font face’s</var> corresponding attributes to the empty string,\nand set <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-status\" id=\"ref-for-dom-fontface-status②\">status</a></code> attribute to \"error\".\nOtherwise, set <var>font face’s</var> corresponding attributes to the serialization of the parsed values.</p>\n     \n     \n     <p>Return <var>font face</var>.\nIf <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-status\" id=\"ref-for-dom-fontface-status③\">status</a></code> is \"error\",\nterminate this algorithm;\notherwise,\ncomplete the rest of these steps asynchronously.</p>"
+        },
+        {
+          "html": "<p>If the <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-fontface-family-source-descriptors-source\" id=\"ref-for-dom-fontface-fontface-family-source-descriptors-source①\">source</a></code> argument was a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-1/#cssomstring\" id=\"ref-for-cssomstring③⑧\">CSSOMString</a></code>,\nset <var>font face’s</var> internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-urls-slot\" id=\"ref-for-dom-fontface-urls-slot\">[[Urls]]</a></code> slot to the string.</p>\n     <p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-fontface-family-source-descriptors-source\" id=\"ref-for-dom-fontface-fontface-family-source-descriptors-source②\">source</a></code> argument was a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#typedefdef-binarydata\" id=\"ref-for-typedefdef-binarydata①\">BinaryData</a></code>,\nset <var>font face’s</var> internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-data-slot\" id=\"ref-for-dom-fontface-data-slot\">[[Data]]</a></code> slot to the passed argument.</p>"
+        },
+        {
+          "html": "If <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-data-slot\" id=\"ref-for-dom-fontface-data-slot①\">[[Data]]</a></code> slot is not <code>null</code>,\nqueue a task to run the following steps synchronously:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-status\" id=\"ref-for-dom-fontface-status④\">status</a></code> attribute to \"loading\".</p>"
+            },
+            {
+              "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset\">FontFaceSet</a></code> <var>font face</var> is in:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset①\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadingfonts-slot\" id=\"ref-for-dom-fontfaceset-loadingfonts-slot\">[[LoadingFonts]]</a></code> list is empty, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#switch-the-fontfaceset-to-loading\" id=\"ref-for-switch-the-fontfaceset-to-loading\">switch the FontFaceSet to loading</a>.</p>"
+                },
+                {
+                  "html": "<p>Append <var>font face</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset②\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadingfonts-slot\" id=\"ref-for-dom-fontfaceset-loadingfonts-slot①\">[[LoadingFonts]]</a></code> list.</p>"
+                }
+              ]
+            }
+          ],
+          "additional": [
+            {
+              "html": "Asynchronously, attempt to parse the data in it as a font.\nWhen this is completed,\nsuccessfully or not,\nqueue a task to run the following steps synchronously:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset③\">FontFaceSet</a></code> <var>font face</var> is in:",
+                  "rationale": "add",
+                  "steps": [
+                    {
+                      "html": "<p>Add <var>font face</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset④\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadedfonts-slot\" id=\"ref-for-dom-fontfaceset-loadedfonts-slot\">[[LoadedFonts]]</a></code> list.</p>"
+                    },
+                    {
+                      "html": "<p>Remove <var>font face</var> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset⑤\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadingfonts-slot\" id=\"ref-for-dom-fontfaceset-loadingfonts-slot②\">[[LoadingFonts]]</a></code> list.\nIf <var>font</var> was the last item in that list\n(and so the list is now empty), <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#switch-the-fontfaceset-to-loaded\" id=\"ref-for-switch-the-fontfaceset-to-loaded\">switch the FontFaceSet to loaded</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset⑥\">FontFaceSet</a></code> <var>font face</var> is in:",
+                  "rationale": "add",
+                  "steps": [
+                    {
+                      "html": "<p>Add <var>font face</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset⑦\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-failedfonts-slot\" id=\"ref-for-dom-fontfaceset-failedfonts-slot\">[[FailedFonts]]</a></code> list.</p>"
+                    },
+                    {
+                      "html": "<p>Remove <var>font face</var> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset⑧\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadingfonts-slot\" id=\"ref-for-dom-fontfaceset-loadingfonts-slot③\">[[LoadingFonts]]</a></code> list.\nIf <var>font</var> was the last item in that list\n(and so the list is now empty), <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#switch-the-fontfaceset-to-loaded\" id=\"ref-for-switch-the-fontfaceset-to-loaded①\">switch the FontFaceSet to loaded</a>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FontFace/load()",
+      "href": "https://www.w3.org/TR/css-font-loading-3/#dom-fontface-load",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FontFace\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fontface-load\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>load()</code></dfn><span style=\"position: relative; height: 0px;\"></span> method is called,\n\texecute these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>font face</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontface\" id=\"ref-for-fontface①③\">FontFace</a></code> object on which this method was called."
+        },
+        {
+          "html": "If <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-urls-slot\" id=\"ref-for-dom-fontface-urls-slot①\">[[Urls]]</a></code> slot is <code>null</code>,\n\t\t\tor its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-status\" id=\"ref-for-dom-fontface-status⑦\">status</a></code> attribute is anything other than <code>\"unloaded\"</code>,\n\t\t\treturn <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-fontstatuspromise-slot\" id=\"ref-for-dom-fontface-fontstatuspromise-slot⑤\">[[FontStatusPromise]]</a></code> and abort these steps."
+        },
+        {
+          "html": "Otherwise,\n\t\t\tset <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-status\" id=\"ref-for-dom-fontface-status⑧\">status</a></code> attribute to \"loading\",\n\t\t\treturn <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-fontstatuspromise-slot\" id=\"ref-for-dom-fontface-fontstatuspromise-slot⑥\">[[FontStatusPromise]]</a></code>,\n\t\t\tand continue executing the rest of this algorithm asynchronously."
+        },
+        {
+          "html": "Using the value of <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-urls-slot\" id=\"ref-for-dom-fontface-urls-slot②\">[[Urls]]</a></code> slot,\n\t\t\tattempt to load a font as defined in <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/css-font-loading-3/#biblio-css-fonts-3\" title=\"CSS Fonts Module Level 3\">[CSS-FONTS-3]</a>,\n\t\t\tas if it was the value of a <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-fonts-5/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑨\">@font-face</a> rule’s <a class=\"property css\" data-link-type=\"property\">src</a> descriptor."
+        },
+        {
+          "html": "When the load operation completes,\n\t\t\tsuccessfully or not,\n\t\t\tqueue a task to run the following steps synchronously:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset⑨\">FontFaceSet</a></code> <var>font face</var> is in:",
+              "rationale": "add",
+              "steps": [
+                {
+                  "html": "<p>Add <var>font face</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset①⓪\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-failedfonts-slot\" id=\"ref-for-dom-fontfaceset-failedfonts-slot①\">[[FailedFonts]]</a></code> list.</p>"
+                },
+                {
+                  "html": "<p>Remove <var>font face</var> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset①①\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadingfonts-slot\" id=\"ref-for-dom-fontfaceset-loadingfonts-slot④\">[[LoadingFonts]]</a></code> list.\nIf <var>font</var> was the last item in that list\n(and so the list is now empty), <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#switch-the-fontfaceset-to-loaded\" id=\"ref-for-switch-the-fontfaceset-to-loaded②\">switch the FontFaceSet to loaded</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset①②\">FontFaceSet</a></code> <var>font face</var> is in:",
+              "rationale": "add",
+              "steps": [
+                {
+                  "html": "<p>Add <var>font face</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset①③\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadedfonts-slot\" id=\"ref-for-dom-fontfaceset-loadedfonts-slot①\">[[LoadedFonts]]</a></code> list.</p>"
+                },
+                {
+                  "html": "<p>Remove <var>font face</var> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset①④\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadingfonts-slot\" id=\"ref-for-dom-fontfaceset-loadingfonts-slot⑤\">[[LoadingFonts]]</a></code> list.\nIf <var>font</var> was the last item in that list\n(and so the list is now empty), <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#switch-the-fontfaceset-to-loaded\" id=\"ref-for-switch-the-fontfaceset-to-loaded③\">switch the FontFaceSet to loaded</a>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FontFaceSet/add(font)",
+      "href": "https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-add",
+      "html": "When the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-add\" id=\"ref-for-dom-fontfaceset-add①\">add()</a></code> method is called,\nexecute the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>font</var> is already in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset②②\">FontFaceSet</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset-set-entries\" id=\"ref-for-fontfaceset-set-entries①\">set entries</a>,\nskip to the last step of this algorithm immediately.</p>"
+        },
+        {
+          "html": "<p>If <var>font</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#css-connected\" id=\"ref-for-css-connected⑥\">CSS-connected</a>,\nthrow an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror\">InvalidModificationError</a></code> exception\nand exit this algorithm immediately.</p>"
+        },
+        {
+          "html": "<p>Add the <var>font</var> argument to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset②③\">FontFaceSet</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset-set-entries\" id=\"ref-for-fontfaceset-set-entries②\">set entries</a>.</p>"
+        },
+        {
+          "html": "If <var>font</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-status\" id=\"ref-for-dom-fontface-status①①\">status</a></code> attribute is \"loading\":",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset②④\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadingfonts-slot\" id=\"ref-for-dom-fontfaceset-loadingfonts-slot⑥\">[[LoadingFonts]]</a></code> list is empty, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#switch-the-fontfaceset-to-loading\" id=\"ref-for-switch-the-fontfaceset-to-loading①\">switch the FontFaceSet to loading</a>.</p>"
+            },
+            {
+              "html": "<p>Append <var>font</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset②⑤\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadingfonts-slot\" id=\"ref-for-dom-fontfaceset-loadingfonts-slot⑦\">[[LoadingFonts]]</a></code> list.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset②⑥\">FontFaceSet</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FontFaceSet/delete(font)",
+      "href": "https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-delete",
+      "html": "When the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-delete\" id=\"ref-for-dom-fontfaceset-delete①\">delete()</a></code> method is called,\nexecute the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>font</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#css-connected\" id=\"ref-for-css-connected⑦\">CSS-connected</a>,\nreturn <code class=\"lang-javascript highlight\"><c- kc=\"\">false</c-></code> and exit this algorithm immediately.</p>"
+        },
+        {
+          "html": "<p>Let <var>deleted</var> be the result of removing <var>font</var> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset②⑦\">FontFaceSet</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset-set-entries\" id=\"ref-for-fontfaceset-set-entries③\">set entries</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>font</var> is present in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset②⑧\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadedfonts-slot\" id=\"ref-for-dom-fontfaceset-loadedfonts-slot②\">[[LoadedFonts]]</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-failedfonts-slot\" id=\"ref-for-dom-fontfaceset-failedfonts-slot②\">[[FailedFonts]]</a></code> lists,\nremove it.</p>"
+        },
+        {
+          "html": "<p>If <var>font</var> is present in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset②⑨\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadingfonts-slot\" id=\"ref-for-dom-fontfaceset-loadingfonts-slot⑧\">[[LoadingFonts]]</a></code> list,\nremove it.\nIf <var>font</var> was the last item in that list\n(and so the list is now empty), <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#switch-the-fontfaceset-to-loaded\" id=\"ref-for-switch-the-fontfaceset-to-loaded④\">switch the FontFaceSet to loaded</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>deleted</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "FontFaceSet/clear()",
+      "href": "https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-clear",
+      "html": "When the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-clear\" id=\"ref-for-dom-fontfaceset-clear①\">clear()</a></code> method is called,\nexecute the following steps:",
+      "rationale": "remove",
+      "steps": [
+        {
+          "html": "<p>Remove all non-<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#css-connected\" id=\"ref-for-css-connected⑧\">CSS-connected</a> items from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset③⓪\">FontFaceSet</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset-set-entries\" id=\"ref-for-fontfaceset-set-entries④\">set entries</a>,\nits <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadedfonts-slot\" id=\"ref-for-dom-fontfaceset-loadedfonts-slot③\">[[LoadedFonts]]</a></code> list,\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-failedfonts-slot\" id=\"ref-for-dom-fontfaceset-failedfonts-slot③\">[[FailedFonts]]</a></code> list.</p>"
+        },
+        {
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset③①\">FontFaceSet</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadingfonts-slot\" id=\"ref-for-dom-fontfaceset-loadingfonts-slot⑨\">[[LoadingFonts]]</a></code> list is non-empty,\nremove all items from it,\nthen <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#switch-the-fontfaceset-to-loaded\" id=\"ref-for-switch-the-fontfaceset-to-loaded⑤\">switch the FontFaceSet to loaded</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "switch the FontFaceSet to loading",
+      "href": "https://www.w3.org/TR/css-font-loading-3/#switch-the-fontfaceset-to-loading",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"switch-the-fontfaceset-to-loading\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">switch the FontFaceSet to loading</dfn><span style=\"position: relative; height: 0px;\"></span> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset③⑥\">FontFaceSet</a></code>,\n\tthe user agent must run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>font face set</var> be the given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset③⑦\">FontFaceSet</a></code>."
+        },
+        {
+          "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-status\" id=\"ref-for-dom-fontfaceset-status\">status</a></code> attribute of <var>font face set</var> to \"loading\"."
+        },
+        {
+          "html": "If <var>font face set’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-readypromise-slot\" id=\"ref-for-dom-fontfaceset-readypromise-slot①\">[[ReadyPromise]]</a></code> slot currently holds a fulfilled promise,\n\t\t\treplace it with a fresh pending promise."
+        },
+        {
+          "html": "Queue a task to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#fire-a-font-load-event\" id=\"ref-for-fire-a-font-load-event\">fire a font load event</a> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/css-font-loading-3/#eventdef-fontfaceset-loading\" id=\"ref-for-eventdef-fontfaceset-loading①\">loading</a></code> at <var>font face set</var>."
+        }
+      ]
+    },
+    {
+      "name": "switch the FontFaceSet to loaded",
+      "href": "https://www.w3.org/TR/css-font-loading-3/#switch-the-fontfaceset-to-loaded",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"switch-the-fontfaceset-to-loaded\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">switch the FontFaceSet to loaded</dfn><span style=\"position: relative; height: 0px;\"></span> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset③⑧\">FontFaceSet</a></code>,\n\tthe user agent must run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>font face set</var> be the given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset③⑨\">FontFaceSet</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>font face set</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset-pending-on-the-environment\" id=\"ref-for-fontfaceset-pending-on-the-environment①\">pending on the environment</a>,\nmark it as <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"FontFaceSet\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fontfaceset-stuck-on-the-environment\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">stuck on the environment</dfn><span style=\"position: relative; height: 0px;\"></span>,\nand exit this algorithm.</p>"
+        },
+        {
+          "html": "<p>Set <var>font face set’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-status\" id=\"ref-for-dom-fontfaceset-status①\">status</a></code> attribute to \"loaded\".</p>"
+        },
+        {
+          "html": "<p>Fulfill <var>font face set’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-readypromise-slot\" id=\"ref-for-dom-fontfaceset-readypromise-slot②\">[[ReadyPromise]]</a></code> attribute’s value with <var>font face set</var>.</p>"
+        },
+        {
+          "html": "Queue a task to perform the following steps synchronously:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>loaded fonts</var> be the (possibly empty) contents of <var>font face set’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadedfonts-slot\" id=\"ref-for-dom-fontfaceset-loadedfonts-slot④\">[[LoadedFonts]]</a></code> slot.</p>"
+            },
+            {
+              "html": "<p>Let <var>failed fonts</var> be the (possibly empty) contents of <var>font face set’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-failedfonts-slot\" id=\"ref-for-dom-fontfaceset-failedfonts-slot④\">[[FailedFonts]]</a></code> slot.</p>"
+            },
+            {
+              "html": "<p>Reset the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadedfonts-slot\" id=\"ref-for-dom-fontfaceset-loadedfonts-slot⑤\">[[LoadedFonts]]</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-failedfonts-slot\" id=\"ref-for-dom-fontfaceset-failedfonts-slot⑤\">[[FailedFonts]]</a></code> slots to empty lists.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#fire-a-font-load-event\" id=\"ref-for-fire-a-font-load-event①\">Fire a font load event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#eventdef-fontfaceset-loadingdone\" id=\"ref-for-eventdef-fontfaceset-loadingdone①\">loadingdone</a></code> at <var>font face set</var> with <var>loaded fonts</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>font face set’s</var> <var>failed fonts</var> is non-empty, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#fire-a-font-load-event\" id=\"ref-for-fire-a-font-load-event②\">fire a font load event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#eventdef-fontfaceset-loadingerror\" id=\"ref-for-eventdef-fontfaceset-loadingerror①\">loadingerror</a></code> at <var>font face set</var> with <var>failed fonts</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Whenever a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset④⓪\">FontFaceSet</a></code> goes from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset-pending-on-the-environment\" id=\"ref-for-fontfaceset-pending-on-the-environment②\">pending on the environment</a> to not <span id=\"ref-for-fontfaceset-pending-on-the-environment③\">pending on the environment</span>,\n\tthe user agent must run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset④①\">FontFaceSet</a></code> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset-stuck-on-the-environment\" id=\"ref-for-fontfaceset-stuck-on-the-environment\">stuck on the environment</a> and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-loadingfonts-slot\" id=\"ref-for-dom-fontfaceset-loadingfonts-slot①⓪\">[[LoadingFonts]]</a></code> list is empty, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#switch-the-fontfaceset-to-loaded\" id=\"ref-for-switch-the-fontfaceset-to-loaded⑥\">switch the FontFaceSet to loaded</a>.</p>"
+        },
+        {
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset④②\">FontFaceSet</a></code> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset-stuck-on-the-environment\" id=\"ref-for-fontfaceset-stuck-on-the-environment①\">stuck on the environment</a>,\nunmark it as such.</p>"
+        }
+      ]
+    },
+    {
+      "name": "find the matching font faces",
+      "href": "https://www.w3.org/TR/css-font-loading-3/#find-the-matching-font-faces",
+      "html": "If asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"find-the-matching-font-faces\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the matching font faces</dfn><span style=\"position: relative; height: 0px;\"></span> from a FontFaceSet <var>source</var>,\n\tfor a given font string <var>font</var> optionally some sample text <var>text</var>,\n\tand optionally an <var>allow system fonts</var> flag,\n\trun the following steps:",
+      "rationale": "parse",
+      "steps": [
+        {
+          "html": "Parse <var>font</var> using the CSS value syntax of the <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font\" id=\"ref-for-propdef-font\">font</a> property.\n\t\t\tIf a syntax error occurs,\n\t\t\treturn a syntax error. \n     <p>If the parsed value is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#css-wide-keywords\" id=\"ref-for-css-wide-keywords\">CSS-wide keyword</a>,\n\t\t\treturn a syntax error.</p>\n     <p>Absolutize all relative lengths against the initial values of the corresponding properties.\n\t\t\t(For example, a relative font weight like <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-fonts-4/#valdef-font-weight-bolder\" id=\"ref-for-valdef-font-weight-bolder\">bolder</a> is evaluated against the initial value <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-fonts-4/#valdef-font-weight-normal\" id=\"ref-for-valdef-font-weight-normal\">normal</a>.)</p>"
+        },
+        {
+          "html": "If <var>text</var> was not explicitly provided,\n\t\t\tlet it be a string containing a single space character (U+0020 SPACE)."
+        },
+        {
+          "html": "Let <var>font family list</var> be the list of font families parsed from <var>font</var>,\n\t\t\tand <var>font style</var> be the other font style attributes parsed from <var>font</var>."
+        },
+        {
+          "html": "Let <var>available font faces</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#available-font-faces\" id=\"ref-for-available-font-faces\">available font faces</a> within <var>source</var>.\n\t\t\tIf the <var>allow system fonts</var> flag is specified,\n\t\t\tadd all system fonts to <var>available font faces</var>."
+        },
+        {
+          "html": "Let <var>matched font faces</var> initially be an empty list."
+        },
+        {
+          "html": "For each family in <var>font family list</var>,\n\t\t\tuse the font matching rules to select the font faces from <var>available font faces</var> that match the <var>font style</var>,\n\t\t\tand add them to <var>matched font faces</var>.\n\t\t\tThe use of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-unicoderange\" id=\"ref-for-dom-fontface-unicoderange②\">unicodeRange</a></code> attribute means that this may be more than just a single font face."
+        },
+        {
+          "html": "If <var>matched font faces</var> is empty,\n\t\t\tset the <var>found faces</var> flag to false.\n\t\t\tOtherwise, set it to true."
+        },
+        {
+          "html": "For each font face in <var>matched font faces</var>,\n\t\t\tif its defined <a class=\"property css\" data-link-type=\"descriptor\" href=\"https://www.w3.org/TR/css-fonts-4/#descdef-font-face-unicode-range\" id=\"ref-for-descdef-font-face-unicode-range\">unicode-range</a> does not include the codepoint of at least one character in <var>text</var>,\n\t\t\tremove it from the list."
+        },
+        {
+          "html": "Return <var>matched font faces</var> and the <var>found faces</var> flag."
+        }
+      ]
+    },
+    {
+      "name": "FontFaceSet/load(font, text)",
+      "href": "https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-load",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FontFaceSet\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"load(font, text)|load(font)\" id=\"dom-fontfaceset-load\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>load</code></dfn><span style=\"position: relative; height: 0px;\"></span>( <span> <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FontFaceSet/load(font, text)\" data-dfn-type=\"argument\" data-export=\"\" id=\"dom-fontfaceset-load-font-text-font\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>font</code></dfn><span style=\"position: relative; height: 0px;\"></span>, <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FontFaceSet/load(font, text)\" data-dfn-type=\"argument\" data-export=\"\" id=\"dom-fontfaceset-load-font-text-text\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>text</code></dfn><span style=\"position: relative; height: 0px;\"></span> </span> ) method is called,\n\texecute these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>font face set</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset④④\">FontFaceSet</a></code> object this method was called on.\n\t\t\tLet <var>promise</var> be a newly-created promise object."
+        },
+        {
+          "html": "Return <var>promise</var>.\n\t\t\tComplete the rest of these steps asynchronously."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#find-the-matching-font-faces\" id=\"ref-for-find-the-matching-font-faces\">Find the matching font faces</a> from <var>font face set</var> using the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfacesetload-font\" id=\"ref-for-dom-fontfacesetload-font\">font</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfacesetload-text\" id=\"ref-for-dom-fontfacesetload-text\">text</a></code> arguments passed to the function,\n\t\t\tand let <var>font face list</var> be the return value\n\t\t\t(ignoring the <var>found faces</var> flag).\n\t\t\tIf a syntax error was returned,\n\t\t\treject <var>promise</var> with a SyntaxError exception\n\t\t\tand terminate these steps."
+        },
+        {
+          "html": "Queue a task to run the following steps synchronously:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "For all of the font faces in the <var>font face list</var>,\n\t\t\t\t\tcall their <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-load\" id=\"ref-for-dom-fontface-load④\">load()</a></code> method."
+            },
+            {
+              "html": "Resolve <var>promise</var> with the result of\n\t\t\t\t\twaiting for all of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-fontstatuspromise-slot\" id=\"ref-for-dom-fontface-fontstatuspromise-slot⑨\">[[FontStatusPromise]]</a></code>s of each font face in the <var>font face list</var>, in order."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FontFaceSet/check(font, text)",
+      "href": "https://www.w3.org/TR/css-font-loading-3/#dom-fontfaceset-check",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FontFaceSet\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"check(font, text)|check(font)\" id=\"dom-fontfaceset-check\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>check</code></dfn><span style=\"position: relative; height: 0px;\"></span>( <span><dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FontFaceSet/check(font, text)\" data-dfn-type=\"argument\" data-export=\"\" id=\"dom-fontfaceset-check-font-text-font\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>font</code></dfn><span style=\"position: relative; height: 0px;\"></span>, <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FontFaceSet/check(font, text)\" data-dfn-type=\"argument\" data-export=\"\" id=\"dom-fontfaceset-check-font-text-text\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>text</code></dfn><span style=\"position: relative; height: 0px;\"></span>)</span> method is called,\n\texecute these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>font face set</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset④⑥\">FontFaceSet</a></code> object this method was called on."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-font-loading-3/#find-the-matching-font-faces\" id=\"ref-for-find-the-matching-font-faces①\">Find the matching font faces</a> from <var>font face set</var> using the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfacesetcheck-font\" id=\"ref-for-dom-fontfacesetcheck-font\">font</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontfacesetcheck-text\" id=\"ref-for-dom-fontfacesetcheck-text\">text</a></code> arguments passed to the function,\n\t\t\tand including system fonts,\n\t\t\tand let <var>font face list</var> be the returned list of font faces,\n\t\t\tand <var>found faces</var> be the returned <var>found faces</var> flag.\n\t\t\tIf a syntax error was returned,\n\t\t\tthrow a SyntaxError exception\n\t\t\tand terminate these steps."
+        },
+        {
+          "html": "If <var>font face list</var> is empty,\n\t\t\tor all fonts in the <var>font face list</var> either have a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-font-loading-3/#dom-fontface-status\" id=\"ref-for-dom-fontface-status①②\">status</a></code> attribute of \"loaded\" or are system fonts,\n\t\t\treturn <code>true</code>.\n\t\t\tOtherwise, return <code>false</code>."
+        }
+      ]
+    }
+  ]
+}

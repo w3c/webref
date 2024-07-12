@@ -1,0 +1,140 @@
+{
+  "spec": {
+    "title": "Mathematical Markup Language (MathML) Version 4.0",
+    "url": "https://www.w3.org/TR/mathml4/"
+  },
+  "algorithms": [
+    {
+      "html": "The following algorithm specifies the height and depth of vertically stretched characters:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <code>maxheight</code> and <code>maxdepth</code> be the maximum height and depth of the\n     <em>non</em>-stretchy siblings within the same <code class=\"element\">mrow</code> or <code class=\"element\">mtr</code>.\n     Let axis be the height of the math axis above the baseline.</p>\n \n     <p>Note that even if a <code class=\"attribute\">minsize</code> or <code class=\"attribute\">maxsize</code> value is set on a stretchy operator,\n     it is <em>not</em> used in the initial calculation of the maximum height and depth of an <code class=\"element\">mrow</code>.</p>"
+        },
+        {
+          "html": "<p>\n      If <code class=\"attribute\">symmetric</code>=<code class=\"attributevalue\">true</code>, then the computed height\n      and depth of the stretchy operator are:\n     </p>\n \n      \n      <p>Otherwise the height and depth are:</p>"
+        },
+        {
+          "html": "<p>\n      If the total size = height+depth is less than minsize\n      or greater than maxsize, increase or decrease both\n      height and depth proportionately so that the effective\n      size meets the constraint.\n     </p>"
+        }
+      ]
+    },
+    {
+      "html": "A simple algorithm by which a MathML renderer can perform the\n alignment specified in this section is given here. Since the alignment\n specification is deterministic (except for the definition of the left\n and right edges of a character), any correct MathML alignment\n algorithm will have the same behavior as this one. Each\n <code class=\"element\">mtable</code> column (alignment scope) can be treated\n independently; the algorithm given here applies to one\n <code class=\"element\">mtable</code> column, and takes into account the\n alignment elements and the <code class=\"attribute\">columnalign</code> attribute described\n under <code class=\"element\">mtable</code> (<a href=\"https://www.w3.org/TR/mathml4/#presm_mtable\" class=\"sec-ref\"><bdi class=\"secno\">3.5.1 </bdi>Table or Matrix\n   <span><code class=\"defn starttag\">&lt;mtable&gt;</code></span></a>).\n In an RTL context, switch left and right edges in the algorithm.",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "A rendering is computed for the contents of each table cell\n    in the column, using zero width for all\n    <code class=\"element\">maligngroup</code> and <code class=\"element\">malignmark</code>\n    elements. The final rendering will be identical except for horizontal\n    shifts applied to each alignment group and/or table cell."
+        },
+        {
+          "html": "For each alignment group, the horizontal positions of the left\n    edge, alignment point (if specified by <code class=\"element\">malignmark</code>, otherwise the left edge),\n    and right edge are noted, allowing the width of\n    the group on each side of the alignment point (left and right) to be\n    determined. The sum of these two <q>side-widths</q>, i.e. the sum of the\n    widths to the left and right of the alignment point, will equal the\n    width of the alignment group."
+        },
+        {
+          "html": "Each column of alignment groups is\n    scanned. The <i class=\"var\">i</i>th scan covers the <i class=\"var\">i</i>th\n    alignment group in each table cell containing any alignment\n    groups. Table cells with no alignment groups, or with fewer than\n    <i class=\"var\">i</i> alignment groups, are ignored. Each scan computes two\n    maximums over the alignment groups scanned: the maximum width to the\n    left of the alignment point, and the maximum width to the right of the\n    alignment point, of any alignment group scanned."
+        },
+        {
+          "html": "The sum of all the maximum widths computed (two for each column of\n    alignment groups) gives one total width, which will be the width of\n    each table cell containing alignment groups. Call the maximum number\n    of alignment groups in one cell <i class=\"var\">n</i>; each such cell\n    is divided into 2<i class=\"var\">n</i> horizontally adjacent sections, called\n    L(<i class=\"var\">i</i>) and R(<i class=\"var\">i</i>) for <i class=\"var\">i</i> from 1 to\n    <i class=\"var\">n</i>, using the 2<i class=\"var\">n</i> maximum side-widths computed\n    above; for each <i class=\"var\">i</i>, the width of all sections called\n    L(<i class=\"var\">i</i>) is the maximum width of any cell's <i class=\"var\">i</i>th\n    alignment group to the left of its alignment point, and the width of\n    all sections called R(<i class=\"var\">i</i>) is the maximum width of any\n    cell's <i class=\"var\">i</i>th alignment group to the right of its alignment\n    point."
+        },
+        {
+          "html": "Each alignment group is then shifted horizontally as a block\n    to <span>a</span> unique position that places: in the section called L(<i class=\"var\">i</i>) that part\n    of the <i class=\"var\">i</i>th group to the left of its alignment point;\n    in the section called R(<i class=\"var\">i</i>) that part of the <i class=\"var\">i</i>th group\n    to the right of its alignment point. This results in the\n    alignment point of each <i class=\"var\">i</i>th group being on the boundary\n    between adjacent sections L(<i class=\"var\">i</i>) and R(<i class=\"var\">i</i>), so\n    that all alignment points of <i class=\"var\">i</i>th groups have the same\n    horizontal position."
+        }
+      ]
+    },
+    {
+      "html": "An application that transfers MathML markup <em class=\"rfc2119\">SHOULD</em> adhere to the following\n   conventions:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>An application that supports pure presentation markup and/or pure\n     content markup <em class=\"rfc2119\">SHOULD</em> offer as many of these flavors as it has available.\n     </p>"
+        },
+        {
+          "html": "<p>An application that only exports one MathML flavor <em class=\"rfc2119\">SHOULD</em> name it\n     <code>MathML</code> if it is unable to determine a more specific flavor.\n     </p>"
+        },
+        {
+          "html": "<p>\n      If an application is able to determine a more specific flavor, it <em class=\"rfc2119\">SHOULD</em>\n      offer both the generic and specific transfer flavors, but it <em class=\"rfc2119\">SHOULD</em> only\n      deliver the specific flavor if it knows that the recipient supports it.\n      For an HTTP GET transfer, for example, the specific transfer types for\n      content and presentation markup should only be returned if they are\n      included in the HTTP <code>Accept</code> header sent by the client.\n     </p>"
+        },
+        {
+          "html": "<p>\n      An application that exports the two specific transfer flavors <em class=\"rfc2119\">SHOULD</em>\n      export both the content and presentation transfer flavors, as well as\n      the generic flavor, which <em class=\"rfc2119\">SHOULD</em> combine the other two flavors using\n      a top-level MathML <code class=\"element\">semantics</code> element\n     (see <a href=\"https://www.w3.org/TR/mathml4/#mixing_top_level\" class=\"sec-ref\"><bdi class=\"secno\">5.2.9.1 </bdi>Top-level Parallel Markup</a>).</p>"
+        },
+        {
+          "html": "<p>\n      When an application exports a MathML fragment whose only child of the\n      root element is a <code class=\"element\">semantics</code> element, it <em class=\"rfc2119\">SHOULD</em> offer, after\n      the above flavors, a transfer flavor for each <code class=\"element\">annotation</code> or\n      <code class=\"element\">annotation-xml</code> element, provided the transfer flavor can be\n      recognized and named based on the <code class=\"attribute\">encoding</code> attribute value,\n      and provided the annotation key is (the default)\n      <a class=\"omsymbol\" href=\"https://openmath.org/cd/mathmlkeys#alternate-representation\">alternate-representation</a>.\n      The transfer content for each annotation should contain the character data\n      in the specified encoding (for an <code class=\"element\">annotation</code> element), or a\n      well-formed XML fragment (for an <code class=\"element\">annotation-xml</code> element), or\n      the data that results by requesting the URL given by the <code class=\"attribute\">src</code>\n     attribute (for an annotation reference).</p>"
+        },
+        {
+          "html": "<p>As a final fallback, an application <em class=\"rfc2119\">MAY</em> export a version of\n     the data in a plain-text flavor (such as <code>text/plain</code>,\n     <code>CF_UNICODETEXT</code>, <code>UnicodeText</code>, or\n     <code>NSStringPboardType</code>).  When an application has multiple\n     versions of an expression available, it may choose the version to\n     export as text at its discretion.  Since some older MathML processors\n     expect MathML instances transferred as plain text to begin with a\n     <code class=\"element\">math</code> element, the text version <em class=\"rfc2119\">SHOULD</em> generally omit the XML\n     declaration, DOCTYPE declaration, and other XML prolog material that\n     would appear before the <code class=\"element\">math</code> element.  The Unicode\n     text version of the data <em class=\"rfc2119\">SHOULD</em> always be the last flavor exported,\n     following the principle that exported flavors should be ordered with\n     the most specific flavor first and the least specific flavor last.\n     </p>"
+        }
+      ]
+    },
+    {
+      "html": "An application that needs to persist private data within a MathML\n  expression should generally attempt to do so without altering the\n  underlying content model, even in situations where it is feasible to\n  do so.  To support this requirement<span>, regardless of what may be allowed\n  by the content model of a particular compound document format</span>, MathML\n  permits the <span>storage</span>\n  of private data via the following strategies:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p><span>In a format that permits the use of XML Namespaces,\n    </span>for small amounts of data, attributes from other namespaces\n    are allowed on all MathML elements.</p>"
+        },
+        {
+          "html": "<p>For larger amounts of data, applications may use the\n    <code class=\"element\">semantics</code> element, as described in\n    <a href=\"https://www.w3.org/TR/mathml4/#mixing_annotation_elements\" class=\"sec-ref\"><bdi class=\"secno\">5.2 </bdi>Annotation Elements</a>.</p>"
+        },
+        {
+          "html": "<p>For authoring tools and other applications that need to\n    associate particular actions with presentation MathML subtrees,\n    e.g. to mark an incomplete expression to be filled in by an author,\n    the <code class=\"element\">maction</code> element may be used, as described in\n    <a href=\"https://www.w3.org/TR/mathml4/#presm_maction\" class=\"sec-ref\"><bdi class=\"secno\">3.7.1 </bdi>Bind Action to Sub-Expression</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To transform an arbitrary content MathML expression into\n   Strict Content MathML, apply each of the following rules in turn\n   to the input expression until all instances of the target\n   constructs have been eliminated:",
+      "rationale": "apply",
+      "steps": [
+        {
+          "html": "<p><em>Rewrite non-strict <code class=\"element\">bind</code> and eliminate deprecated elements</em>:\n     Change the outer <code class=\"element\">bind</code> tags\n     in binding expressions to <code class=\"element\">apply</code> if they have qualifiers or multiple\n     children. This simplifies the algorithm by allowing the subsequent rules to be applied\n     to non-strict binding expressions without case distinction. Note\n     that the <span>later</span>\n     rules will change the <code class=\"element\">apply</code> elements introduced in this step back to\n     <code class=\"element\">bind</code> elements.</p>"
+        },
+        {
+          "html": "<p><em>Apply special case rules for idiomatic uses of qualifiers</em>:\n     </p>",
+          "ignored": [
+            "Rewrite derivatives with rules Rewrite: diff, Rewrite: nthdiff, and Rewrite: partialdiffdegree to explicate the binding status of the variables involved. Rewrite integrals with the rules Rewrite: int, Rewrite: defint and Rewrite: defint limits to disambiguate the status of bound and free variables and of the orientation of the range of integration if it is given as a lowlimit/uplimit pair. Rewrite limits as described in Rewrite: tendsto and Rewrite: limits condition. Rewrite sums and products as described in 4.3.5.2 N-ary Sum <sum/> and 4.3.5.3 N-ary Product <product/>. Rewrite roots as described in F.2.5 Roots. Rewrite logarithms as described in F.2.6 Logarithms. Rewrite moments as described in F.2.7 Moments."
+          ]
+        },
+        {
+          "html": "<p><em>Rewrite Qualifiers to <code class=\"element\">domainofapplication</code></em>:\n     These rules rewrite all <code class=\"element\">apply</code> constructions using <code class=\"element\">bvar</code> and\n     qualifiers to those using only the general <code class=\"element\">domainofapplication</code> qualifier.\n     </p>",
+          "ignored": [
+            "Intervals: Rewrite qualifiers given as interval and lowlimit/uplimit to intervals of integers via Rewrite: interval qualifier. Multiple conditions: Rewrite multiple condition qualifiers to a single one by taking their conjunction. The resulting compound condition is then rewritten to domainofapplication according to rule Rewrite: condition. Multiple domainofapplications: Rewrite multiple domainofapplication qualifiers to a single one by taking the intersection of the specified domains."
+          ]
+        },
+        {
+          "html": "<p><em>Normalize Container Markup</em>:\n     </p>",
+          "ignored": [
+            "Rewrite sets and lists by the rule Rewrite: n-ary setlist domainofapplication. Rewrite interval, vectors, matrices, and matrix rows as described in F.3.1 Intervals, 4.3.5.8 N-ary Matrix Constructors: <vector/>, <matrix/>, <matrixrow/>. Note any qualifiers will have been rewritten to domainofapplication and will be further rewritten in Step 6. Rewrite lambda expressions by the rules Rewrite: lambda and Rewrite: lambda domainofapplication. Rewrite piecewise functions as described in 4.3.10.5 Piecewise declaration <piecewise>, <piece>, <otherwise>."
+          ]
+        },
+        {
+          "html": "<p><em>Apply Special Case Rules for Operators using <code class=\"element\">domainofapplication</code> Qualifiers</em>:\n     This step deals with the special cases for the operators introduced in\n     <a href=\"https://www.w3.org/TR/mathml4/#contm_structure_extended\" class=\"sec-ref\"><bdi class=\"secno\">4.3 </bdi>Content MathML for Specific Structures</a>. There are different classes of special cases to be taken into account:\n     </p>",
+          "ignored": [
+            "Rewrite min, max, mean and similar n-ary/unary operators by the rules Rewrite: n-ary unary set, Rewrite: n-ary unary domainofapplication and Rewrite: n-ary unary single. Rewrite the quantifiers forall and exists used with domainofapplication to expressions using implication and conjunction by the rule Rewrite: quantifier. Rewrite integrals used with a domainofapplication element (with or without a bvar) according to the rules Rewrite: int and Rewrite: defint. Rewrite sums and products used with a domainofapplication element (with or without a bvar) as described in 4.3.5.2 N-ary Sum <sum/> and 4.3.5.3 N-ary Product <product/>."
+          ]
+        },
+        {
+          "html": "<p><em>Eliminate <code class=\"element\">domainofapplication</code></em>: At this stage, any\n     <code class=\"element\">apply</code> has at most one <code class=\"element\">domainofapplication</code> child and special cases have been addressed. As\n     <code class=\"element\">domainofapplication</code> is not Strict Content MathML, it is rewritten\n     </p>",
+          "ignored": [
+            "into an application of a restricted function via the rule Rewrite: restriction if the apply does not contain a bvar child. into an application of the predicate_on_list symbol via the rules Rewrite: n-ary relations and Rewrite: n-ary relations bvar if used with a relation. into a construction with the apply_to_list symbol via the general rule Rewrite: n-ary domainofapplication for general n-ary operators. into a construction using the suchthat symbol from the set1 content dictionary in an apply with bound variables via the Rewrite: apply bvar domainofapplication rule."
+          ]
+        },
+        {
+          "html": "<p><em>Rewrite non-strict token elements</em>:\n     </p>",
+          "ignored": [
+            "Rewrite numbers represented as cn elements where the type attribute is one of e-notation, rational, complex-cartesian, complex-polar, constant as strict cn via rules Rewrite: cn sep, Rewrite: cn based_integer and Rewrite: cn constant. Rewrite any ci, csymbol or cn containing presentation MathML to semantics elements with rules Rewrite: cn presentation mathml and Rewrite: ci presentation mathml and the analogous rule for csymbol."
+          ]
+        },
+        {
+          "html": "<p><em>Rewrite operators</em>: Rewrite any remaining operator defined in <a href=\"https://www.w3.org/TR/mathml4/#contm_structure_extended\" class=\"sec-ref\"><bdi class=\"secno\">4.3 </bdi>Content MathML for Specific Structures</a>\n     to a <code class=\"element\">csymbol</code> referencing the symbol identified in the syntax table by the rule\n     <a href=\"https://www.w3.org/TR/mathml4/#dfn-rewrite-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-rewrite-element-3\">Rewrite: element</a>. <span>As noted in the descriptions of each\n     operator element, some require special case rules to determine the proper choice\n     of symbol.\n     Some cases of particular note are:</span>\n     </p>",
+          "ignored": [
+            "The order of the arguments for the selector operator must be rewritten, and the symbol depends on the type of the arguments. The choice of symbol for the minus operator depends on the number of the arguments, minus or minus. The choice of symbol for some set operators depends on the values of the type of the arguments. The choice of symbol for some statistical operators depends on the values of the types of the arguments."
+          ]
+        },
+        {
+          "html": "<p><em>Rewrite non-strict attributes</em>:\n     </p>",
+          "ignored": [
+            "Rewrite the type attribute: At this point, all elements that accept the type, other than ci and csymbol, should have been rewritten into Strict Content Markup equivalents without type attributes, where type information is reflected in the choice of operator symbol. Now rewrite remaining ci and csymbol elements with a type attribute to a strict expression with semantics according to rules Rewrite: ci type annotation and Rewrite: csymbol type annotation. Rewrite definitionURL and encoding attributes: If the definitionURL and encoding attributes on a csymbol element can be interpreted as a reference to a content dictionary (see 4.2.3.2 Non-Strict uses of <csymbol> for details), then rewrite to reference the content dictionary by the cd attribute instead. Rewrite attributes: Rewrite any element with attributes that are not allowed in strict markup to a semantics construction with the element without these attributes as the first child and the attributes in annotation elements by rule Rewrite: attributes."
+          ]
+        }
+      ]
+    }
+  ]
+}

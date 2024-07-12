@@ -1,0 +1,136 @@
+{
+  "spec": {
+    "title": "Content Security Policy: Embedded Enforcement",
+    "url": "https://www.w3.org/TR/csp-embedded-enforcement/"
+  },
+  "algorithms": [
+    {
+      "rationale": "add",
+      "steps": [
+        {
+          "html": "<p><code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-iframe-element\">iframe</a></code> elements have a <dfn class=\"dfn-paneled\" data-dfn-for=\"iframe\" data-dfn-type=\"element-attr\" data-export=\"\" id=\"element-attrdef-iframe-csp\">csp</dfn> attribute which specifies the policy that an embedded document must agree\n  to enforce upon itself. Valid attribute values match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp#grammardef-serialized-policy\">serialized-policy</a> grammar from <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/csp-embedded-enforcement/#biblio-csp3\">[CSP3]</a>.</p>\n<pre class=\"idl highlight def\"><span class=\"kt\">partial</span> <span class=\"kt\">interface</span> <a class=\"nv idl-code\" data-link-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#htmliframeelement\">HTMLIFrameElement</a> {\n  <span class=\"kt\">attribute</span> <span class=\"kt\">DOMString</span> <dfn class=\"nv dfn-paneled idl-code\" data-dfn-for=\"HTMLIFrameElement\" data-dfn-type=\"attribute\" data-export=\"\" data-type=\"DOMString\" id=\"dom-htmliframeelement-csp\">csp</dfn>;\n};\n</pre>\n      <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#htmliframeelement\">HTMLIFrameElement</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/csp-embedded-enforcement/#dom-htmliframeelement-csp\" id=\"ref-for-dom-htmliframeelement-csp-1\">csp</a></code> IDL attribute <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-reflect\">reflects</a> the value of the element’s <code><a data-link-type=\"element-sub\" href=\"https://www.w3.org/TR/csp-embedded-enforcement/#element-attrdef-iframe-csp\" id=\"ref-for-element-attrdef-iframe-csp-3\">csp</a></code> content attribute.</p>"
+        },
+        {
+          "html": "<p>A <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\">browsing context</a> has a <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"required-csp\">required CSP</dfn>, which is\n  either <code>null</code> or a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#serialized-csp\">serialized CSP</a>. For a given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\">browsing\n  context</a> (<var>context</var>), the value is the result of executing <a href=\"https://www.w3.org/TR/csp-embedded-enforcement/#required-csp-for-context\">§3.3 Obtain the required CSP for context.</a> on <var>context</var>.</p>"
+        },
+        {
+          "html": "<p>Add the following to the list of error conditions in step 1 of HTML’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#process-a-navigate-response\">process a navigate response</a> algorithm:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The <a href=\"https://www.w3.org/TR/csp-embedded-enforcement/#process-response\">§3.1 Is response blocked by context’s required CSP?</a> algorithm returns \"<code>Blocked</code>\" when executed\n  upon <code>response</code> and <code>browsingContext</code>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "Add the following after step 5 of HTML’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#process-a-navigate-fetch\">process a navigate fetch</a> algorithm:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <code>browsingContext</code>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/csp-embedded-enforcement/#required-csp\" id=\"ref-for-required-csp-1\">required CSP</a> is not <code>null</code>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\">append</a> a header whose name is\n  \"<a data-link-type=\"http-header\" href=\"https://www.w3.org/TR/csp-embedded-enforcement/#http-headerdef-embedding-csp\" id=\"ref-for-http-headerdef-embedding-csp-5\"><code>Embedding-CSP</code></a>\" and whose value is <code>browsingContext</code>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/csp-embedded-enforcement/#required-csp\" id=\"ref-for-required-csp-2\">required CSP</a> to <code>request</code>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\">header list</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\">response</a> (<var>response</var>) and a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\">browsing context</a> (<var>context</var>), this algorithm returns \"<code>Allowed</code>\" or \"<code>Blocked</code>\" as\n  appropriate:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return \"<code>Allowed</code>\" if either of the following is true:</p>",
+          "ignored": [
+            "context is not a nested browsing context. context’s required CSP is null."
+          ]
+        },
+        {
+          "html": "<p>Let <var>embedding policy</var> be the result of executing <a href=\"https://www.w3.org/TR/CSP3/#parse-serialized-policy\">Content Security Policy Level 3 §parse-serialized-policy</a> on <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/csp-embedded-enforcement/#required-csp\" id=\"ref-for-required-csp-4\">required CSP</a> and\n  \"<code>enforce</code>\".</p>"
+        },
+        {
+          "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\">scheme</a> is\n  a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#local-scheme\">local scheme</a>, or if <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\">origin</a> is the same as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-3/#origin\">origin</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context-nested-through\">through which</a> <var>context</var> is nested:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p>Append <var>embedding policy</var> to <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-policy-list\">CSP\n  list</a>.</p>"
+            },
+            {
+              "html": "<p>Return \"<code>Allowed</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>context</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#nested-browsing-context\">nested browsing context</a>, and <var>response</var> is\n  a cross-origin, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#network-scheme\">network schemed</a> resource.</p>"
+        },
+        {
+          "html": "<p>If the <a href=\"https://www.w3.org/TR/csp-embedded-enforcement/#subsume-policy\">§3.2 Is policy list subsumed under subsuming policy?</a> algorithm returns \"<code>Subsumed</code>\" when executed\n  upon <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-policy-list\">CSP list</a> and <var>embedding policy</var>,\n  return \"<code>Allowed</code>\".</p>"
+        },
+        {
+          "html": "<p>Return \"<code>Blocked</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given a list of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#policy\">policy</a> objects (<var>policy list</var>), this algorithm returns\n  \"<code>Subsumed</code>\" if that list enforces a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#policy\">policy</a> which is an exact match for\n  a given <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#policy\">policy</a> object (<var>subsuming policy</var>). It returns \"<code>Not Subsumed</code>\"\n  otherwise.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>subsuming policy</var> is <code>null</code>, return \"<code>Subsumed</code>\".</p>"
+        },
+        {
+          "html": "For each <var>policy</var> in <var>policy list</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#disposition\">disposition</a> is not\n  \"<code>enforce</code>\", set skip to the next <var>policy</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#directive-set\">directive set</a> is not the\n  same size as <var>subsuming policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#directive-set\">directive\n  set</a>, skip to the next <var>policy</var>.</p>"
+            },
+            {
+              "html": "For each <var>directive</var> in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#directive-set\">directive set</a>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>subsuming directive</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#directive\">directive</a> in <var>subsuming policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#directive-set\">directive\n  set</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#name\">name</a> matches <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#name\">name</a>, or <code>null</code> if no such <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#directive\">directive</a> is present.</p>"
+                },
+                {
+                  "html": "<p>If <var>subsuming directive</var> is <code>null</code>, skip to the next <var>policy</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>subsuming directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#value\">value</a> list is not the same size as <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#value\">value</a> list, skip to the next <var>policy</var>.</p>"
+                },
+                {
+                  "html": "For each <var>token</var> in <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#value\">value</a>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>token</var> is not present in <var>subsuming\n  directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp#value\">value</a>, skip to the\n  next <var>policy</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Return \"<code>Subsumed</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Not Subsumed</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\">browsing context</a> (<var>context</var>), the following algorithm returns\n  its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/csp-embedded-enforcement/#required-csp\" id=\"ref-for-required-csp-5\">required CSP</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>context</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#nested-browsing-context\">nested browsing context</a>.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#browsing-context-container\">browsing context container</a> has an <code><a data-link-type=\"element-sub\" href=\"https://www.w3.org/TR/csp-embedded-enforcement/#element-attrdef-iframe-csp\" id=\"ref-for-element-attrdef-iframe-csp-5\">csp</a></code> content attribute, return its value.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <code>null</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

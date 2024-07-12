@@ -1,0 +1,56 @@
+{
+  "spec": {
+    "title": "CSS Page Floats",
+    "url": "https://www.w3.org/TR/css-page-floats-3/"
+  },
+  "algorithms": [
+    {
+      "html": "The placement of a single page float is a process that has to be terminated\n  entirely before the placement of a subsequent page float can be initiated. The\n  placement process consists of the following steps:",
+      "rationale": "determine",
+      "steps": [
+        {
+          "html": "Determine the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-floats-3/#initial-float-reference\">initial float reference</a> by considering the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\">fragmentation container</a> in which the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-floats-3/#float-anchor\">float anchor</a> is placed and\n    the `float-defer` property of the page float. The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-floats-3/#float-reference\">float reference</a> is\n    initially set to be the same as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-floats-3/#initial-float-reference\">initial float reference</a>."
+        },
+        {
+          "html": "Determine if the given <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-floats-3/#float-reference\">float reference</a> has enough space or can be\n    expanded to host the page float, if the rules of <a href=\"https://www.w3.org/TR/css-page-floats-3/#float-stacking\"> float stacking</a> and <a href=\"https://www.w3.org/TR/css-page-floats-3/#float-reference-growth\">float reference\n    growth</a> are to be followed. If this is not the case, and the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-floats-3/#float-reference\">float\n    reference</a> is not the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\">fragmentation container</a> within the given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-context\">fragmentation context</a>, then make the following <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\">fragmentation\n    container</a> within the given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-context\">fragmentation context</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-floats-3/#float-reference\">float\n    reference</a>. Repeat this step until the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-floats-3/#float-reference\">float reference</a> can be\n    expanded enough to host the page float or it is the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\">fragmentation\n    container</a> within the given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-context\">fragmentation context</a>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-floats-3/#float-reference\">float reference</a> is the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\">fragmentation container</a> within\n    the given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-context\">fragmentation context</a>, and it has not enough space and cannot be\n    expanded to host the page float, then do the following:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-context\">fragmentation context</a> allows for the addition of another <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\">fragmentation container</a> and an additional <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\">fragmentation container</a> would have the needed size to host the page float, a new <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\">fragmentation\n      container</a> is added to the end of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-context\">fragmentation context</a>. The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-floats-3/#float-reference\">float reference</a> is set the newly created <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\">fragmentation\n      container</a>."
+            },
+            {
+              "html": "Otherwise, if the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\">fragmentation container</a> is a region, then the\n      'regionOverset` attribute of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-3/#fragmentation-container\">fragmentation container</a> is set to\n      `overset`."
+            }
+          ]
+        },
+        {
+          "html": "The page float is placed in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-page-floats-3/#float-reference\">float reference</a> according to the rules\n    of 'float stacking' and 'float reference growth'."
+        }
+      ]
+    },
+    {
+      "html": "When resolving over-constrained layouts, the order of importance for defined\n  goals are:",
+      "rationale": "display",
+      "steps": [
+        {
+          "html": "honor 'clear: top/bottom'"
+        },
+        {
+          "html": "honor <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-page-floats-3/#propdef-float-defer\">float-defer</a>"
+        },
+        {
+          "html": "honor 'float: top/bottom'"
+        },
+        {
+          "html": "display all content (as described by other CSS properties)"
+        },
+        {
+          "html": "keep the number of pages to a minimum"
+        }
+      ]
+    }
+  ]
+}

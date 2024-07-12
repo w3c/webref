@@ -1,0 +1,906 @@
+{
+  "spec": {
+    "title": "Compute Pressure Level 1",
+    "url": "https://www.w3.org/TR/compute-pressure/"
+  },
+  "algorithms": [
+    {
+      "name": "change in contributing factors is substantial",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-change-in-contributing-factors-is-substantial",
+      "html": "The <dfn id=\"dfn-change-in-contributing-factors-is-substantial\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">change in contributing factors is substantial</dfn> steps are as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-9\">implementation-defined</a> low-level hardware metrics that contribute to the\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-current-pressure-state\" class=\"internalDFN\" id=\"ref-for-dfn-current-pressure-state-3\">current pressure state</a> drop below or exceed an, per metric,\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-10\">implementation-defined</a> threshold\n        for the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-current-pressure-state\" class=\"internalDFN\" id=\"ref-for-dfn-current-pressure-state-4\">current pressure state</a>, return true."
+        },
+        {
+          "html": "Return false."
+        }
+      ]
+    },
+    {
+      "html": "The <code>new</code> <a data-link-type=\"idl\" data-lt=\"PressureObserver(callback)\" href=\"https://www.w3.org/TR/compute-pressure/#dom-pressureobserver\" class=\"internalDFN\" id=\"ref-for-dom-pressureobserver-12\"><code>PressureObserver</code></a><code>(<var>callback</var>)</code> constructor steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>this</var>.<a data-link-type=\"attribute\" data-lt=\"[[Callback]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-callback\" class=\"internalDFN\" id=\"ref-for-dfn-callback-1\"><code>[[Callback]]</code></a> to <var data-type=\"PressureUpdateCallback\">callback</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"observe(source, options)\" href=\"https://www.w3.org/TR/compute-pressure/#dom-pressureobserver-observe\" class=\"internalDFN\" id=\"ref-for-dom-pressureobserver-observe-3\"><code>observe</code></a><code>(<var>source</var>, <var>options</var>)</code> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>relevantGlobal</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-1\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-1\">relevant global object</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-1\">For each</a> <var data-type=\"Document\">document</var> in <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-owning-document-set\" class=\"internalDFN\" id=\"ref-for-dfn-owning-document-set-1\">owning document set</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var data-type=\"Document\">document</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-index-term-allowed-to-use-2\">allowed to use</a> the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-index-term-policy-controlled-feature-3\">policy-controlled feature</a> token \"compute-pressure\", return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-index-term-a-promise-rejected-with-1\">a promise rejected with</a> <a data-link-type=\"idl\" data-lt=\"NotAllowedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-index-term-notallowederror-exception-1\"><code>NotAllowedError</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-2\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[SampleIntervalMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-sampleintervalmap\" class=\"internalDFN\" id=\"ref-for-dfn-sampleintervalmap-1\"><code>[[SampleIntervalMap]]</code></a>[<var>source</var>] to <var data-type=\"PressureObserverOptions\">options</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/compute-pressure/#dom-pressureobserveroptions-sampleinterval\" class=\"internalDFN\" id=\"ref-for-dom-pressureobserveroptions-sampleinterval-1\"><code>sampleInterval</code></a>."
+        },
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-index-term-a-new-promise-1\">a new promise</a>."
+        },
+        {
+          "html": "Let <var>pendingPromiseTuple</var> be (<var>source</var>, <var data-type=\"Promise\">promise</var>)."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-index-term-append-for-list-1\">Append</a> <var>pendingPromiseTuple</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-3\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[PendingObservePromises]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pendingobservepromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingobservepromises-1\"><code>[[PendingObservePromises]]</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"Promise\">promise</var> was <a data-link-type=\"dfn|abstract-op\" data-lt=\"resolved\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-index-term-resolved-1\">fulfilled</a> or <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-index-term-rejected-1\">rejected</a>, then:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-index-term-remove-for-list-1\">Remove</a> <var>tuple</var> from <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-4\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[PendingObservePromises]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pendingobservepromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingobservepromises-2\"><code>[[PendingObservePromises]]</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-index-term-in-parallel-1\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>platformCollector</var> be null."
+            },
+            {
+              "html": "If <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-mapping-2\">platform collector mapping</a>\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-1\">contains</a> <var>source</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var>platformCollector</var> to <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-mapping-3\">platform collector mapping</a>[<var>source</var>]."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>newCollector</var> be a new <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-11\">platform collector</a> whose\n                  <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-associated-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-associated-pressure-source-1\">associated pressure source</a> is null."
+                },
+                {
+                  "html": "Let <var data-type=\"virtual pressure source or null\">virtualPressureSource</var>\n                  be the result of invoking <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-get-a-virtual-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-get-a-virtual-pressure-source-1\">get a virtual pressure source</a>\n                  with <var>source</var> and <var>relevantGlobal</var>."
+                },
+                {
+                  "html": "If <var data-type=\"virtual pressure source or null\">virtualPressureSource</var> is not null:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var data-type=\"virtual pressure source or null\">virtualPressureSource</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-can-provide-samples\" class=\"internalDFN\" id=\"ref-for-dfn-can-provide-samples-1\">can provide samples</a> is true:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "Set <var>newCollector</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-associated-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-associated-pressure-source-2\">associated pressure source</a> to <var data-type=\"virtual pressure source or null\">virtualPressureSource</var>."
+                        },
+                        {
+                          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-index-term-append-for-set-1\">Append</a> <var>newCollector</var> to\n                          <var data-type=\"virtual pressure source or null\">virtualPressureSource</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-connected-platform-collectors\" class=\"internalDFN\" id=\"ref-for-dfn-connected-platform-collectors-1\">connected platform collectors</a>."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "Otherwise:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var>realPressureSource</var> be an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-11\">implementation-defined</a>\n                      <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-pressure-source-7\">pressure source</a> that provides telemetry data about\n                      <var>source</var>, or null if none exists."
+                    },
+                    {
+                      "html": "Set <var>newCollector</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-associated-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-associated-pressure-source-3\">associated pressure source</a> to <var>realPressureSource</var>."
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>newCollector</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-associated-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-associated-pressure-source-4\">associated pressure source</a> is not null:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set <var>platformCollector</var> to <var>newCollector</var>."
+                    },
+                    {
+                      "html": "Set <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-mapping-4\">platform collector mapping</a>[<var>source</var>] to <var>platformCollector</var>."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If <var>platformCollector</var> is null, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-index-term-queue-a-global-task-1\">queue a global task</a> on the\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pressureobserver-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-pressureobserver-task-source-1\">PressureObserver task source</a> given <var>relevantGlobal</var> to reject\n              <var data-type=\"Promise\">promise</var> <a data-link-type=\"idl\" data-lt=\"NotSupportedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-index-term-notsupportederror-exception-2\"><code>NotSupportedError</code></a> and abort these steps."
+            },
+            {
+              "html": "Invoke <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-activate-data-collection\" class=\"internalDFN\" id=\"ref-for-dfn-activate-data-collection-1\">activate data collection</a> with <var>source</var> and\n              <var>relevantGlobal</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-index-term-queue-a-global-task-2\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pressureobserver-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-pressureobserver-task-source-2\">PressureObserver task source</a> given\n              <var>relevantGlobal</var> to run these steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var data-type=\"Promise\">promise</var> was rejected, run the following substeps:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-registered-observer-list\" class=\"internalDFN\" id=\"ref-for-dfn-registered-observer-list-1\">registered observer list</a> for <var>source</var> is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-index-term-empty-for-list-1\">empty</a>,\n                      invoke <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-deactivate-data-collection\" class=\"internalDFN\" id=\"ref-for-dfn-deactivate-data-collection-1\">deactivate data collection</a> with <var>source</var> and <var>relevantGlobal</var>."
+                    },
+                    {
+                      "html": "Return."
+                    }
+                  ]
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-index-term-append-for-list-2\">Append</a> a new <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-registered-observer\" class=\"internalDFN\" id=\"ref-for-dfn-registered-observer-1\">registered observer</a> whose <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-observer\" class=\"internalDFN\" id=\"ref-for-dfn-observer-1\">observer</a> is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-5\">this</a>\n                  to <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-registered-observer-list\" class=\"internalDFN\" id=\"ref-for-dfn-registered-observer-list-2\">registered observer list</a> for <var>source</var>."
+                },
+                {
+                  "html": "Resolve <var data-type=\"Promise\">promise</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"unobserve(source)\" href=\"https://www.w3.org/TR/compute-pressure/#dom-pressureobserver-unobserve\" class=\"internalDFN\" id=\"ref-for-dom-pressureobserver-unobserve-2\"><code>unobserve</code></a><code>(<var>source</var>)</code> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var data-type=\"PressureSource\">source</var> is not a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-supported-source-types\" class=\"internalDFN\" id=\"ref-for-dfn-supported-source-types-1\">supported source type</a>, throw \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-index-term-notsupportederror-exception-3\"><code>NotSupportedError</code></a>\"."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-index-term-remove-for-list-2\">Remove</a> from <var>this</var>.<a data-link-type=\"attribute\" data-lt=\"[[QueuedRecords]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-queuedrecords\" class=\"internalDFN\" id=\"ref-for-dfn-queuedrecords-1\"><code>[[QueuedRecords]]</code></a> all\n          <var>records</var> associated with <var data-type=\"PressureSource\">source</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-index-term-remove-for-map-1\">Remove</a> <var>this</var>.<a data-link-type=\"attribute\" data-lt=\"[[SampleIntervalMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-sampleintervalmap\" class=\"internalDFN\" id=\"ref-for-dfn-sampleintervalmap-2\"><code>[[SampleIntervalMap]]</code></a>[<var data-type=\"PressureSource\">source</var>]."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-index-term-remove-for-map-2\">Remove</a> <var>this</var>.<a data-link-type=\"attribute\" data-lt=\"[[LastRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-lastrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-lastrecordmap-1\"><code>[[LastRecordMap]]</code></a>[<var data-type=\"PressureSource\">source</var>]."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-index-term-remove-for-map-3\">Remove</a> <var>this</var>.<a data-link-type=\"attribute\" data-lt=\"[[AfterPenaltyRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-afterpenaltyrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-afterpenaltyrecordmap-1\"><code>[[AfterPenaltyRecordMap]]</code></a>[<var data-type=\"PressureSource\">source</var>]."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-2\">For each</a> (<var>promiseSource</var>, <var>pendingPromise</var>) of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-6\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[PendingObservePromises]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pendingobservepromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingobservepromises-3\"><code>[[PendingObservePromises]]</code></a>,\n          if <var data-type=\"PressureSource\">source</var> is equal to <var>promiseSource</var>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-index-term-rejected-2\">reject</a> <var>pendingPromise</var> with an <a data-link-type=\"idl\" data-lt=\"AbortError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-index-term-aborterror-exception-1\"><code>AbortError</code></a>."
+        },
+        {
+          "html": "Let <var>relevantGlobal</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-7\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-2\">relevant global object</a>."
+        },
+        {
+          "html": "Let <var>registeredObserverList</var> be <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-registered-observer-list\" class=\"internalDFN\" id=\"ref-for-dfn-registered-observer-list-3\">registered observer list</a> for <var data-type=\"PressureSource\">source</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-index-term-remove-for-list-3\">Remove</a> any <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-registered-observer\" class=\"internalDFN\" id=\"ref-for-dfn-registered-observer-2\">registered observer</a> from\n          <var>registeredObserverList</var> whose <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-observer\" class=\"internalDFN\" id=\"ref-for-dfn-observer-2\">observer</a> is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-8\">this</a>."
+        },
+        {
+          "html": "If <var>registeredObserverList</var> is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-index-term-empty-for-list-2\">empty</a>:",
+          "rationale": "invoke",
+          "steps": [
+            {
+              "html": "Invoke <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-deactivate-data-collection\" class=\"internalDFN\" id=\"ref-for-dfn-deactivate-data-collection-2\">deactivate data collection</a> with <var data-type=\"PressureSource\">source</var> and\n              <var>relevantGlobal</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-index-term-remove-for-map-4\">Remove</a> <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-mapping-5\">platform collector mapping</a>[<var data-type=\"PressureSource\">source</var>]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"disconnect()\" href=\"https://www.w3.org/TR/compute-pressure/#dom-pressureobserver-disconnect\" class=\"internalDFN\" id=\"ref-for-dom-pressureobserver-disconnect-2\"><code>disconnect</code></a><code>()</code> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-index-term-empty-for-list-3\">Empty</a> <var>observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[QueuedRecords]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-queuedrecords\" class=\"internalDFN\" id=\"ref-for-dfn-queuedrecords-2\"><code>[[QueuedRecords]]</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-clear\" id=\"ref-for-index-term-clear-for-map-1\">Clear</a> <var>this</var>.<a data-link-type=\"attribute\" data-lt=\"[[SampleIntervalMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-sampleintervalmap\" class=\"internalDFN\" id=\"ref-for-dfn-sampleintervalmap-3\"><code>[[SampleIntervalMap]]</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-clear\" id=\"ref-for-index-term-clear-for-map-2\">Clear</a> <var>this</var>.<a data-link-type=\"attribute\" data-lt=\"[[LastRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-lastrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-lastrecordmap-2\"><code>[[LastRecordMap]]</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-clear\" id=\"ref-for-index-term-clear-for-map-3\">Clear</a> <var>this</var>.<a data-link-type=\"attribute\" data-lt=\"[[AfterPenaltyRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-afterpenaltyrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-afterpenaltyrecordmap-2\"><code>[[AfterPenaltyRecordMap]]</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-3\">For each</a> (<var>promiseSource</var>, <var>pendingPromise</var>) of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-9\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[PendingObservePromises]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pendingobservepromises\" class=\"internalDFN\" id=\"ref-for-dfn-pendingobservepromises-4\"><code>[[PendingObservePromises]]</code></a>,\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-index-term-rejected-3\">reject</a> <var>pendingPromise</var> with an <a data-link-type=\"idl\" data-lt=\"AbortError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-index-term-aborterror-exception-2\"><code>AbortError</code></a>."
+        },
+        {
+          "html": "Let <var>relevantGlobal</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-10\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-3\">relevant global object</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-index-term-for-each-for-map-1\">For each</a> <var>source</var> → <var>registeredObserverList</var> of\n          <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-registered-observer-list\" class=\"internalDFN\" id=\"ref-for-dfn-registered-observer-list-4\">registered observer list</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-8\">ordered map</a>:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-index-term-remove-for-list-4\">Remove</a> any <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-registered-observer\" class=\"internalDFN\" id=\"ref-for-dfn-registered-observer-3\">registered observer</a> from\n              <var>registeredObserverList</var> whose <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-observer\" class=\"internalDFN\" id=\"ref-for-dfn-observer-3\">observer</a> is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-11\">this</a>."
+            },
+            {
+              "html": "If <var>registeredObserverList</var> is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-index-term-empty-for-list-4\">empty</a>:",
+              "rationale": "invoke",
+              "steps": [
+                {
+                  "html": "Invoke <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-deactivate-data-collection\" class=\"internalDFN\" id=\"ref-for-dfn-deactivate-data-collection-3\">deactivate data collection</a> with <var>source</var> and\n                  <var>relevantGlobal</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-index-term-remove-for-map-5\">Remove</a> <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-mapping-6\">platform collector mapping</a>[<var>source</var>]."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-lt=\"takeRecords()\" href=\"https://www.w3.org/TR/compute-pressure/#dom-pressureobserver-takerecords\" class=\"internalDFN\" id=\"ref-for-dom-pressureobserver-takerecords-2\"><code>takeRecords</code></a><code>()</code> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>records</var> be a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-index-term-clone-for-list-1\">clone</a> of <var>observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[QueuedRecords]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-queuedrecords\" class=\"internalDFN\" id=\"ref-for-dfn-queuedrecords-3\"><code>[[QueuedRecords]]</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-index-term-empty-for-list-5\">Empty</a> <var>observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[QueuedRecords]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-queuedrecords\" class=\"internalDFN\" id=\"ref-for-dfn-queuedrecords-4\"><code>[[QueuedRecords]]</code></a>."
+        },
+        {
+          "html": "Return <var>records</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/compute-pressure/#dom-pressureobserver-knownsources\" class=\"internalDFN\" id=\"ref-for-dom-pressureobserver-knownsources-3\"><code>knownSources</code></a> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-13\">user agent</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-supported-source-types\" class=\"internalDFN\" id=\"ref-for-dfn-supported-source-types-2\">supported source types</a> in alphabetical order."
+        }
+      ]
+    },
+    {
+      "name": "owning document set",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-owning-document-set",
+      "html": "To determine the <dfn id=\"dfn-owning-document-set\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">owning document set</dfn> for a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-4\">relevant global object</a> <var>relevantGlobal</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>owningDocumentSet</var> be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-index-term-set-1\">set</a>."
+        },
+        {
+          "html": "If <var>relevantGlobal</var> is <a data-link-type=\"idl\" data-lt=\"Window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-index-term-window-interface-1\"><code>Window</code></a>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-index-term-append-for-set-2\">append</a> <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-index-term-associated-document-1\">associated document</a> to <var>owningDocumentSet</var>."
+        },
+        {
+          "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-4\">for each</a> <var>owner</var> in <a data-link-type=\"idl\" data-lt=\"WorkerGlobalScope\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-index-term-workerglobalscope-interface-1\"><code>WorkerGlobalScope</code></a> <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#concept-WorkerGlobalScope-owner-set\" id=\"ref-for-index-term-owner-set-for-workerglobalscope-1\">owner set</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>owner</var> is a <a data-link-type=\"idl\" data-lt=\"Document\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-1\"><code>Document</code></a>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-index-term-append-for-set-3\">append</a> <var>owner</var> to <var>owningDocumentSet</var>."
+            },
+            {
+              "html": "If <var>owner</var> is a <a data-link-type=\"idl\" data-lt=\"WorkerGlobalScope\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-index-term-workerglobalscope-interface-2\"><code>WorkerGlobalScope</code></a>, set <var>owningDocumentSet</var> to the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-index-term-union-for-set-1\">union</a> of\n                <var>owningDocumentSet</var> and <var>owner</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-owning-document-set\" class=\"internalDFN\" id=\"ref-for-dfn-owning-document-set-2\">owning document set</a>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>owningDocumentSet</var>."
+        }
+      ]
+    },
+    {
+      "name": "document has implicit focus",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-document-has-implicit-focus",
+      "html": "The <dfn id=\"dfn-document-has-implicit-focus\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">document has implicit focus</dfn> steps given the argument <var data-type=\"Document\">document</var>, are as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var data-type=\"Document\">document</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-index-term-fully-active-for-document-2\">fully active</a>, return false."
+        },
+        {
+          "html": "Let <var>relevantGlobal</var> be <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-5\">relevant global object</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-5\">For each</a> <var>origin</var> in\n            <a href=\"https://w3c.github.io/picture-in-picture/#initiators-of-active-picture-in-picture-sessions\">\n              initiators of active Picture-in-Picture sessions</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-index-term-relevant-settings-object-1\">relevant settings object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-index-term-origin-2\">origin</a> is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-index-term-same-origin-3\">same origin</a> with <var>origin</var>, return true."
+            }
+          ]
+        },
+        {
+          "html": "If <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\" id=\"ref-for-index-term-browsing-context-1\">browsing context</a> is <a data-link-type=\"dfn|abstract-op\" data-lt=\"context is capturing\" data-type=\"dfn\" href=\"https://www.w3.org/TR/mediacapture-streams/#context-is-capturing\" id=\"ref-for-index-term-context-is-capturing-2\">capturing</a>, return true."
+        },
+        {
+          "html": "Let <var>topLevelBC</var> be <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\" id=\"ref-for-index-term-browsing-context-2\">browsing context</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-index-term-top-level-browsing-context-1\">top-level browsing context</a>."
+        },
+        {
+          "html": "If <var>topLevelBC</var> does not have <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#system-focus\" id=\"ref-for-index-term-system-focus-for-top-level-traversable-1\">system focus</a>, return false."
+        },
+        {
+          "html": "Let <var>focusedDocument</var> be the <var>topLevelBC</var>'s\n            <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#currently-focused-area-of-a-top-level-browsing-context\">\n              currently focused area</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-index-term-node-document-for-node-2\">node document</a>."
+        },
+        {
+          "html": "If <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-index-term-relevant-settings-object-2\">relevant settings object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-index-term-origin-3\">origin</a> is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-index-term-same-origin-4\">same origin</a> with\n            <var>focusedDocument</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-index-term-origin-4\">origin</a>, return true."
+        },
+        {
+          "html": "Otherwise, return false."
+        }
+      ]
+    },
+    {
+      "name": "may receive data",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-may-receive-data",
+      "html": "The <dfn id=\"dfn-may-receive-data\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">may receive data</dfn> steps given the argument <var data-type=\"PressureObserver\">observer</var> are as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>relevantGlobal</var> be <var data-type=\"PressureObserver\">observer</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-6\">relevant global object</a>."
+        },
+        {
+          "html": "If <var>relevantGlobal</var> is a <a data-link-type=\"idl\" data-lt=\"Window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-index-term-window-interface-2\"><code>Window</code></a> object:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "Return the result of running <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-document-has-implicit-focus\" class=\"internalDFN\" id=\"ref-for-dfn-document-has-implicit-focus-1\">document has implicit focus</a> with <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-index-term-associated-document-2\">associated Document</a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>relevantGlobal</var> is a <a data-link-type=\"idl\" data-lt=\"WorkerGlobalScope\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-index-term-workerglobalscope-interface-3\"><code>WorkerGlobalScope</code></a> object:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>owningDocuments</var> be <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-owning-document-set\" class=\"internalDFN\" id=\"ref-for-dfn-owning-document-set-3\">owning document set</a>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-6\">For each</a> <var data-type=\"Document\">document</var> in <var>owningDocuments</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If the result of running <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-document-has-implicit-focus\" class=\"internalDFN\" id=\"ref-for-dfn-document-has-implicit-focus-2\">document has implicit focus</a> with <var data-type=\"Document\">document</var> is true,\n                    return true."
+                },
+                {
+                  "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-index-term-continue-for-iteration-1\">continue</a>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return false."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[LastRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-lastrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-lastrecordmap-3\"><code>[[LastRecordMap]]</code></a>[<var data-type=\"PressureSource\">source</var>] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-2\">exist</a>, return true."
+        },
+        {
+          "html": "Let <var data-type=\"PressureRecord\">record</var> be <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[LastRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-lastrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-lastrecordmap-4\"><code>[[LastRecordMap]]</code></a>[<var data-type=\"PressureSource\">source</var>]."
+        },
+        {
+          "html": "Let <var>sampleInterval</var> be <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[SampleIntervalMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-sampleintervalmap\" class=\"internalDFN\" id=\"ref-for-dfn-sampleintervalmap-4\"><code>[[SampleIntervalMap]]</code></a>[<var data-type=\"PressureSource\">source</var>]."
+        },
+        {
+          "html": "Let <var data-type=\"DOMHighResTimeStamp\">timeDeltaMilliseconds</var> = <var data-type=\"DOMHighResTimeStamp\">timestamp</var> - <var data-type=\"PressureRecord\">record</var>.<a data-link-type=\"attribute\" data-lt=\"[[Time]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-time\" class=\"internalDFN\" id=\"ref-for-dfn-time-2\"><code>[[Time]]</code></a>."
+        },
+        {
+          "html": "If <var data-type=\"DOMHighResTimeStamp\">timeDeltaMilliseconds</var> ≥ <var>sampleInterval</var>, return true, otherwise return false."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[LastRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-lastrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-lastrecordmap-5\"><code>[[LastRecordMap]]</code></a>[<var data-type=\"PressureSource\">source</var>] does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-3\">exist</a>, return true."
+        },
+        {
+          "html": "Let <var data-type=\"PressureRecord\">record</var> be <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[LastRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-lastrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-lastrecordmap-6\"><code>[[LastRecordMap]]</code></a>[<var data-type=\"PressureSource\">source</var>]."
+        },
+        {
+          "html": "If <var data-type=\"PressureRecord\">record</var>.<a data-link-type=\"attribute\" data-lt=\"[[State]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-2\"><code>[[State]]</code></a> is not equal to <var data-type=\"PressureState\">state</var> and <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-change-in-contributing-factors-is-substantial\" class=\"internalDFN\" id=\"ref-for-dfn-change-in-contributing-factors-is-substantial-2\">change in contributing factors is substantial</a>\n          returns true, return true."
+        },
+        {
+          "html": "Return false."
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "increment",
+      "steps": [
+        {
+          "html": "Increment observer.<a data-link-type=\"attribute\" data-lt=\"[[ChangesCountMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-changescountmap\" class=\"internalDFN\" id=\"ref-for-dfn-changescountmap-2\"><code>[[ChangesCountMap]]</code></a>[<var data-type=\"PressureSource\">source</var>]."
+        },
+        {
+          "html": "Return observer.<a data-link-type=\"attribute\" data-lt=\"[[ChangesCountMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-changescountmap\" class=\"internalDFN\" id=\"ref-for-dfn-changescountmap-3\"><code>[[ChangesCountMap]]</code></a>[<var data-type=\"PressureSource\">source</var>]\n          ≤ observer.<a data-link-type=\"attribute\" data-lt=\"[[MaxChangesThreshold]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-maxchangesthreshold\" class=\"internalDFN\" id=\"ref-for-dfn-maxchangesthreshold-2\"><code>[[MaxChangesThreshold]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "get a virtual pressure source",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-get-a-virtual-pressure-source",
+      "html": "To <dfn id=\"dfn-get-a-virtual-pressure-source\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">get a virtual pressure source</dfn>, given a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-source-type\" class=\"internalDFN\" id=\"ref-for-dfn-source-type-12\">source type</a>\n      <var data-type=\"PressureSource\">source</var> and <var>relevantGlobal</var>, perform the following steps. They return a\n      <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-virtual-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-virtual-pressure-source-3\">virtual pressure source</a> or null.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>topLevelTraversable</var> be null."
+        },
+        {
+          "html": "If <var>relevantGlobal</var> is a <a data-link-type=\"idl\" data-lt=\"Window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-index-term-window-interface-3\"><code>Window</code></a> object:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>topLevelTraversable</var> to <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-index-term-navigable-for-window-1\">navigable</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-index-term-top-level-traversable-1\">top-level traversable</a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>relevantGlobal</var> is a <a data-link-type=\"idl\" data-lt=\"DedicatedWorkerGlobalScope\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope\" id=\"ref-for-index-term-dedicatedworkerglobalscope-interface-1\"><code>DedicatedWorkerGlobalScope</code></a> object:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>owningDocuments</var> be <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-owning-document-set\" class=\"internalDFN\" id=\"ref-for-dfn-owning-document-set-4\">owning document set</a>."
+            },
+            {
+              "html": "If <var>owningDocuments</var> is <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-index-term-empty-for-list-7\">empty</a>, return null."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-index-term-assert-1\">Assert</a>: <var>owningDocuments</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-index-term-size-for-list-1\">size</a> is 1."
+            },
+            {
+              "html": "Set <var>topLevelTraversable</var> to <var>owningDocuments</var>[0]'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-index-term-node-navigable-1\">node navigable</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-index-term-top-level-traversable-2\">top-level traversable</a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>topLevelTraversable</var> is null, return null."
+        },
+        {
+          "html": "Let <var>topLevelVirtualPressureSourceMapping</var> be the <var>topLevelTraversable</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-virtual-pressure-source-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-virtual-pressure-source-mapping-1\">virtual pressure source mapping</a>."
+        },
+        {
+          "html": "Let <var>virtualPressureSource</var> be null."
+        },
+        {
+          "html": "If <var>topLevelVirtualPressureSourceMapping</var> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-4\">contains</a> <var data-type=\"PressureSource\">source</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>virtualPressureSource</var> to <var>topLevelVirtualPressureSourceMapping</var>[<var data-type=\"PressureSource\">source</var>]."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>virtualPressureSource</var>."
+        }
+      ]
+    },
+    {
+      "name": "activate data collection",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-activate-data-collection",
+      "html": "To <dfn id=\"dfn-activate-data-collection\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">activate data collection</dfn> given a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-source-type\" class=\"internalDFN\" id=\"ref-for-dfn-source-type-13\">source type</a> <var>source</var>\n      and <var>relevantGlobal</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-mapping-7\">platform collector mapping</a> does not\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-5\">contain</a> <var>source</var>, abort these steps."
+        },
+        {
+          "html": "Let <var>platformCollector</var> be <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-mapping-8\">platform collector mapping</a>[<var>source</var>]."
+        },
+        {
+          "html": "If <var>platformCollector</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-activated\" class=\"internalDFN\" id=\"ref-for-dfn-activated-1\">activated</a> is true,\n        abort these steps."
+        },
+        {
+          "html": "Set <var>platformCollector</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-activated\" class=\"internalDFN\" id=\"ref-for-dfn-activated-2\">activated</a> to true."
+        },
+        {
+          "html": "In an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-18\">implementation-defined</a> manner, start running the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-data-collection\" class=\"internalDFN\" id=\"ref-for-dfn-data-collection-3\">data collection</a> steps with <var>relevantGlobal</var>, <var>source</var>, and\n        <var>platformCollector</var>."
+        }
+      ]
+    },
+    {
+      "name": "deactivate data collection",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-deactivate-data-collection",
+      "html": "To <dfn id=\"dfn-deactivate-data-collection\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">deactivate data collection</dfn> given a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-source-type\" class=\"internalDFN\" id=\"ref-for-dfn-source-type-14\">source type</a> <var>source</var>\n      and <var>relevantGlobal</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-mapping-9\">platform collector mapping</a> does not\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-6\">contain</a> <var>source</var>, abort these steps."
+        },
+        {
+          "html": "Let <var>platformCollector</var> be <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-mapping-10\">platform collector mapping</a>[<var>source</var>]."
+        },
+        {
+          "html": "If <var>platformCollector</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-activated\" class=\"internalDFN\" id=\"ref-for-dfn-activated-3\">activated</a> is false,\n        abort these steps."
+        },
+        {
+          "html": "In an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-19\">implementation-defined</a> manner, stop running the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-data-collection\" class=\"internalDFN\" id=\"ref-for-dfn-data-collection-4\">data collection</a> steps with <var>relevantGlobal</var>, <var>source</var>, and\n        <var>platformCollector</var>."
+        },
+        {
+          "html": "Set <var>platformCollector</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-activated\" class=\"internalDFN\" id=\"ref-for-dfn-activated-4\">activated</a> to false."
+        },
+        {
+          "html": "If <var>platformCollector</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-associated-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-associated-pressure-source-5\">associated pressure source</a> is a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-virtual-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-virtual-pressure-source-4\">virtual pressure source</a>:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-index-term-remove-for-list-5\">Remove</a> <var>platformCollector</var> from its <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-associated-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-associated-pressure-source-6\">associated pressure source</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-connected-platform-collectors\" class=\"internalDFN\" id=\"ref-for-dfn-connected-platform-collectors-2\">connected platform collectors</a>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, perform any <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-20\">implementation-defined</a> steps to signal to\n        <var>platformCollector</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-associated-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-associated-pressure-source-7\">associated pressure source</a>\n        to stop retrieving telemetry data."
+        }
+      ]
+    },
+    {
+      "name": "data collection",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-data-collection",
+      "html": "The <dfn id=\"dfn-data-collection\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">data collection</dfn> steps given <var>relevantGlobal</var>, <var>source</var> and\n      <var>platformCollector</var> are as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>pressureSource</var> be <var>platformCollector</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-associated-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-associated-pressure-source-8\">associated pressure source</a>."
+        },
+        {
+          "html": "If <var>pressureSource</var> is null, abort these steps."
+        },
+        {
+          "html": "Let <var>sample</var> be <var>pressureSource</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-latest-sample\" class=\"internalDFN\" id=\"ref-for-dfn-latest-sample-2\">latest sample</a>."
+        },
+        {
+          "html": "If <var>sample</var> is null, abort these steps."
+        },
+        {
+          "html": "Let <var data-type=\"PressureState\">state</var> be null."
+        },
+        {
+          "html": "If <var>pressureSource</var> is a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-virtual-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-virtual-pressure-source-5\">virtual pressure source</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var data-type=\"PressureState\">state</var> to <var>sample</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-data\" class=\"internalDFN\" id=\"ref-for-dfn-data-4\">data</a>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var data-type=\"PressureState\">state</var> to an <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-adjusted-pressure-state\" class=\"internalDFN\" id=\"ref-for-dfn-adjusted-pressure-state-2\">adjusted pressure state</a> calculated from\n              <var>source</var> and <var>sample</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-data\" class=\"internalDFN\" id=\"ref-for-dfn-data-5\">data</a>."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-index-term-assert-2\">Assert</a>: <var data-type=\"PressureState\">state</var> is not null."
+        },
+        {
+          "html": "Let <var>rawTimestamp</var> be <var>sample</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-timestamp\" class=\"internalDFN\" id=\"ref-for-dfn-timestamp-2\">timestamp</a>."
+        },
+        {
+          "html": "Let <var>timeValue</var> be the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-relative-high-resolution-time\" id=\"ref-for-index-term-relative-high-resolution-time-1\">relative high resolution time</a> based on\n          <var>rawTimestamp</var> and <var>relevantGlobal</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-7\">For each</a> <var data-type=\"PressureObserver\">observer</var> in <var>relevantGlobal</var>'s\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-registered-observer-list\" class=\"internalDFN\" id=\"ref-for-dfn-registered-observer-list-7\">registered observer list</a> for <var>source</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If running <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-may-receive-data\" class=\"internalDFN\" id=\"ref-for-dfn-may-receive-data-1\">may receive data</a> with <var data-type=\"PressureObserver\">observer</var>\n              returns false, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-index-term-continue-for-iteration-2\">continue</a>."
+            },
+            {
+              "html": "If running <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-passes-rate-test\" class=\"internalDFN\" id=\"ref-for-dfn-passes-rate-test-1\">passes rate test</a> with <var data-type=\"PressureObserver\">observer</var>, <var>source</var> and <var>timeValue</var>\n              returns false, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-index-term-continue-for-iteration-3\">continue</a>."
+            },
+            {
+              "html": "If running <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-has-change-in-data\" class=\"internalDFN\" id=\"ref-for-dfn-has-change-in-data-1\">has change in data</a> with <var data-type=\"PressureObserver\">observer</var>, <var>source</var> and <var data-type=\"PressureState\">state</var>\n              returns false, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-index-term-continue-for-iteration-4\">continue</a>."
+            },
+            {
+              "html": "Let <var data-type=\"PressureRecord\">record</var> be a new <a data-link-type=\"idl\" data-lt=\"PressureRecord\" href=\"https://www.w3.org/TR/compute-pressure/#dom-pressurerecord\" class=\"internalDFN\" id=\"ref-for-dom-pressurerecord-10\"><code>PressureRecord</code></a> object with its\n              <a data-link-type=\"attribute\" data-lt=\"[[Source]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-source\" class=\"internalDFN\" id=\"ref-for-dfn-source-2\"><code>[[Source]]</code></a> set to <var>source</var>,\n              <a data-link-type=\"attribute\" data-lt=\"[[State]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-3\"><code>[[State]]</code></a> set to <var data-type=\"PressureState\">state</var>\n              and <a data-link-type=\"attribute\" data-lt=\"[[Time]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-time\" class=\"internalDFN\" id=\"ref-for-dfn-time-3\"><code>[[Time]]</code></a> set to <var>timeValue</var>."
+            },
+            {
+              "html": "If <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[AfterPenaltyRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-afterpenaltyrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-afterpenaltyrecordmap-3\"><code>[[AfterPenaltyRecordMap]]</code></a>[source] <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-7\">exists</a>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[AfterPenaltyRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-afterpenaltyrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-afterpenaltyrecordmap-4\"><code>[[AfterPenaltyRecordMap]]</code></a>[<var>source</var>] to <var data-type=\"PressureRecord\">record</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-index-term-continue-for-iteration-5\">Continue</a>."
+                }
+              ]
+            },
+            {
+              "html": "If running <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-passes-rate-obfuscation-test\" class=\"internalDFN\" id=\"ref-for-dfn-passes-rate-obfuscation-test-1\">passes rate obfuscation test</a> with <var data-type=\"PressureObserver\">observer</var> and <var>source</var> returns false:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[AfterPenaltyRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-afterpenaltyrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-afterpenaltyrecordmap-5\"><code>[[AfterPenaltyRecordMap]]</code></a>[<var>source</var>] to <var data-type=\"PressureRecord\">record</var>."
+                },
+                {
+                  "html": "Set <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[ChangesCountMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-changescountmap\" class=\"internalDFN\" id=\"ref-for-dfn-changescountmap-4\"><code>[[ChangesCountMap]]</code></a>[<var>source</var>] to 0."
+                },
+                {
+                  "html": "Create timer of <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[PenaltyDuration]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-penaltyduration\" class=\"internalDFN\" id=\"ref-for-dfn-penaltyduration-2\"><code>[[PenaltyDuration]]</code></a> duration with the following callback:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[AfterPenaltyRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-afterpenaltyrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-afterpenaltyrecordmap-6\"><code>[[AfterPenaltyRecordMap]]</code></a>[source] <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-8\">exists</a>:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "Let <var data-type=\"PressureRecord\">record</var> be <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[AfterPenaltyRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-afterpenaltyrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-afterpenaltyrecordmap-7\"><code>[[AfterPenaltyRecordMap]]</code></a>[<var>source</var>]."
+                        },
+                        {
+                          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-index-term-remove-for-map-6\">Remove</a> <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[AfterPenaltyRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-afterpenaltyrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-afterpenaltyrecordmap-8\"><code>[[AfterPenaltyRecordMap]]</code></a>[<var>source</var>]."
+                        },
+                        {
+                          "html": "Run <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-queue-a-record\" class=\"internalDFN\" id=\"ref-for-dfn-queue-a-record-1\">queue a record</a> with <var data-type=\"PressureObserver\">observer</var>, <var>source</var>, <var data-type=\"PressureRecord\">record</var>."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-index-term-continue-for-iteration-6\">Continue</a>."
+                }
+              ]
+            },
+            {
+              "html": "Run <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-queue-a-record\" class=\"internalDFN\" id=\"ref-for-dfn-queue-a-record-2\">queue a record</a> with <var data-type=\"PressureObserver\">observer</var>, <var>source</var>, <var data-type=\"PressureRecord\">record</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "queue a record",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-queue-a-record",
+      "html": "To <dfn id=\"dfn-queue-a-record\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">queue a record</dfn> given the arguments <var data-type=\"PressureObserver\">observer</var>,\n      <var data-type=\"PressureSource\">source</var>, <var data-type=\"PressureRecord\">record</var>,\n      run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-index-term-size-for-list-2\">size</a> of <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[QueuedRecords]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-queuedrecords\" class=\"internalDFN\" id=\"ref-for-dfn-queuedrecords-5\"><code>[[QueuedRecords]]</code></a> is greater than\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-max-queued-records\" class=\"internalDFN\" id=\"ref-for-dfn-max-queued-records-1\">max queued records</a>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-index-term-remove-for-list-6\">remove</a> the first <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-index-term-item-for-list-1\">item</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-index-term-append-for-list-3\">Append</a> <var data-type=\"PressureRecord\">record</var> to <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[QueuedRecords]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-queuedrecords\" class=\"internalDFN\" id=\"ref-for-dfn-queuedrecords-6\"><code>[[QueuedRecords]]</code></a>."
+        },
+        {
+          "html": "Set <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[LastRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-lastrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-lastrecordmap-7\"><code>[[LastRecordMap]]</code></a>[<var data-type=\"PressureSource\">source</var>] to <var data-type=\"PressureRecord\">record</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-queue-a-pressure-observer-task\" class=\"internalDFN\" id=\"ref-for-dfn-queue-a-pressure-observer-task-1\">Queue a pressure observer task</a> with <var data-type=\"PressureObserver\">observer</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-7\">relevant global object</a>."
+        }
+      ]
+    },
+    {
+      "name": "queue a pressure observer task",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-queue-a-pressure-observer-task",
+      "html": "To <dfn id=\"dfn-queue-a-pressure-observer-task\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">queue a pressure observer task</dfn> given <var>relevantGlobal</var> as input, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pressure-observer-task-queued\" class=\"internalDFN\" id=\"ref-for-dfn-pressure-observer-task-queued-1\">pressure observer task queued</a> is true, then return."
+        },
+        {
+          "html": "Set the <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pressure-observer-task-queued\" class=\"internalDFN\" id=\"ref-for-dfn-pressure-observer-task-queued-2\">pressure observer task queued</a> to true."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-index-term-queue-a-global-task-3\">Queue a global task</a> on <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pressureobserver-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-pressureobserver-task-source-3\">PressureObserver task source</a> with <var>relevantGlobal</var> to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-notify-pressure-observers\" class=\"internalDFN\" id=\"ref-for-dfn-notify-pressure-observers-1\">notify pressure observers</a>."
+        }
+      ]
+    },
+    {
+      "name": "notify pressure observers",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-notify-pressure-observers",
+      "html": "To <dfn id=\"dfn-notify-pressure-observers\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">notify pressure observers</dfn> given <var>relevantGlobal</var> as input, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pressure-observer-task-queued\" class=\"internalDFN\" id=\"ref-for-dfn-pressure-observer-task-queued-3\">pressure observer task queued</a> to false."
+        },
+        {
+          "html": "Let <var>notifySet</var> be a new <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-index-term-set-2\">set</a> of all <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-observer\" class=\"internalDFN\" id=\"ref-for-dfn-observer-4\">observers</a> in\n        <var>relevantGlobal</var>’s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-registered-observer-list\" class=\"internalDFN\" id=\"ref-for-dfn-registered-observer-list-8\">registered observer lists</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-8\">For each</a> <var data-type=\"PressureObserver\">observer</var> of <var>notifySet</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>records</var> be a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-index-term-clone-for-list-2\">clone</a> of <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[QueuedRecords]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-queuedrecords\" class=\"internalDFN\" id=\"ref-for-dfn-queuedrecords-7\"><code>[[QueuedRecords]]</code></a>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-index-term-empty-for-list-8\">Empty</a> <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[QueuedRecords]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-queuedrecords\" class=\"internalDFN\" id=\"ref-for-dfn-queuedrecords-8\"><code>[[QueuedRecords]]</code></a>."
+            },
+            {
+              "html": "If <var>records</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-index-term-empty-for-list-9\">empty</a>, then invoke <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[Callback]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-callback\" class=\"internalDFN\" id=\"ref-for-dfn-callback-2\"><code>[[Callback]]</code></a>\n            with <var>records</var> and <var data-type=\"PressureObserver\">observer</var>. If this throws an exception, catch it, and <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\" id=\"ref-for-index-term-report-the-exception-1\">report the exception</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "This specification defines the following <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-lifecycle.html#unloading-document-cleanup-steps\" id=\"ref-for-index-term-unloading-document-cleanup-steps-1\">unloading document cleanup steps</a> given a <a data-link-type=\"idl\" data-lt=\"Document\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-2\"><code>Document</code></a> <var>document</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>relevantGlobal</var> be <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-8\">relevant global object</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-9\">For each</a> <var>source</var> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-index-term-keyed-for-map-3\">key</a> of <var>relevantGlobal</var>'s\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-registered-observer-list\" class=\"internalDFN\" id=\"ref-for-dfn-registered-observer-list-9\">registered observer list</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-9\">ordered map</a>:",
+          "rationale": "invoke",
+          "steps": [
+            {
+              "html": "Invoke <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-deactivate-data-collection\" class=\"internalDFN\" id=\"ref-for-dfn-deactivate-data-collection-4\">deactivate data collection</a> with <var>source</var> and\n            <var>relevantGlobal</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-index-term-remove-for-map-7\">Remove</a> <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-mapping-11\">platform collector mapping</a>[<var>source</var>]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "Whenever a <a data-link-type=\"idl\" data-lt=\"WorkerGlobalScope\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-index-term-workerglobalscope-interface-4\"><code>WorkerGlobalScope</code></a> <var>relevantGlobal</var>'s\n      <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-closing\" id=\"ref-for-index-term-closing-for-workerglobalscope-1\">closing</a> flag is set to true, perform the following\n      steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-10\">For each</a> <var>source</var> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-index-term-keyed-for-map-4\">key</a> of <var>relevantGlobal</var>'s\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-registered-observer-list\" class=\"internalDFN\" id=\"ref-for-dfn-registered-observer-list-10\">registered observer list</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-10\">ordered map</a>:",
+          "rationale": "invoke",
+          "steps": [
+            {
+              "html": "Invoke <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-deactivate-data-collection\" class=\"internalDFN\" id=\"ref-for-dfn-deactivate-data-collection-5\">deactivate data collection</a> with <var>source</var> and\n            <var>relevantGlobal</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-index-term-remove-for-map-8\">Remove</a> <var>relevantGlobal</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-platform-collector-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-platform-collector-mapping-12\">platform collector mapping</a>[<var>source</var>]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\" id=\"ref-for-index-term-remote-end-steps-1\">remote end steps</a>  given <var>session</var>, <var>URL variables</var> and <var>parameters</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>virtualPressureSourceType</var> be the result of invoking\n      <a href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\" id=\"ref-for-index-term-get-a-property-1\">get a property</a> \"type\" from <var>parameters</var>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-16\">user agent</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-supported-source-types\" class=\"internalDFN\" id=\"ref-for-dfn-supported-source-types-3\">supported source types</a> does not\n      <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-index-term-contain-for-list-1\">contain</a> <var>virtualPressureSourceType</var>, return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-index-term-error-1\">error</a> with\n      <a data-link-type=\"dfn|abstract-op\" data-lt=\"error code\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-index-term-error-code-1\">WebDriver error code</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-index-term-invalid-argument-1\">invalid argument</a>."
+        },
+        {
+          "html": "Let <var>topLevelTraversable</var> be the <a href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\" id=\"ref-for-index-term-current-browsing-context-1\">current browsing\n      context</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-index-term-top-level-traversable-for-browsing-context-1\">top-level traversable</a>."
+        },
+        {
+          "html": "Let <var>topLevelVirtualPressureSourceMapping</var> be the <var>topLevelTraversable</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-virtual-pressure-source-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-virtual-pressure-source-mapping-2\">virtual pressure source mapping</a>."
+        },
+        {
+          "html": "If <var>topLevelVirtualPressureSourceMapping</var> contains <var>virtualPressureSourceType</var>, return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-index-term-error-2\">error</a> with\n      <a data-link-type=\"dfn|abstract-op\" data-lt=\"error code\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-index-term-error-code-2\">WebDriver error code</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-index-term-invalid-argument-2\">invalid argument</a>."
+        },
+        {
+          "html": "Let <var>supported</var> be the result of invoking <a href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-the-property-with-default\" id=\"ref-for-index-term-get-a-property-with-default-1\">get a\n      property with default</a>\n      with \"supported\" and true from <var>parameters</var>."
+        },
+        {
+          "html": "Let <var>virtualPressureSource</var> be a new <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-virtual-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-virtual-pressure-source-15\">virtual pressure source</a>."
+        },
+        {
+          "html": "Set <var>virtualPressureSource</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-can-provide-samples\" class=\"internalDFN\" id=\"ref-for-dfn-can-provide-samples-2\">can provide samples</a> to <var>supported</var>."
+        },
+        {
+          "html": "Set <var>topLevelVirtualPressureSourceMapping</var>[<var>virtualPressureSourceType</var>] to <var>virtualPressureSource</var>."
+        },
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\" id=\"ref-for-index-term-success-1\">success</a> with data null."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\" id=\"ref-for-index-term-remote-end-steps-2\">remote end steps</a> given <var>session</var>, <var>URL variables</var> and <var>parameters</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>virtualPressureSourceType</var> be the value of the <var>URL variables</var>[\"type\"]."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-17\">user agent</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-supported-source-types\" class=\"internalDFN\" id=\"ref-for-dfn-supported-source-types-4\">supported source types</a> does not\n      <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-index-term-contain-for-list-2\">contain</a> <var>virtualPressureSourceType</var>, return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-index-term-error-3\">error</a> with\n      <a data-link-type=\"dfn|abstract-op\" data-lt=\"error code\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-index-term-error-code-3\">WebDriver error code</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-index-term-invalid-argument-3\">invalid argument</a>."
+        },
+        {
+          "html": "Let <var>topLevelTraversable</var> be the <a href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\" id=\"ref-for-index-term-current-browsing-context-2\">current browsing\n      context</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-index-term-top-level-traversable-for-browsing-context-2\">top-level traversable</a>."
+        },
+        {
+          "html": "Let <var>topLevelVirtualPressureSourceMapping</var> be the <var>topLevelTraversable</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-virtual-pressure-source-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-virtual-pressure-source-mapping-3\">virtual pressure source mapping</a>."
+        },
+        {
+          "html": "Let <var>pressureSource</var> be <var>topLevelVirtualPressureSourceMapping</var>[<var>virtualPressureSourceType</var>]."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-11\">For each</a> <var>platformCollector</var> of <var>pressureSource</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-connected-platform-collectors\" class=\"internalDFN\" id=\"ref-for-dfn-connected-platform-collectors-3\">connected platform collectors</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>platformCollector</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-associated-pressure-source\" class=\"internalDFN\" id=\"ref-for-dfn-associated-pressure-source-9\">associated pressure source</a> to null."
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-index-term-remove-for-map-9\">Remove</a> <var>topLevelVirtualPressureSourceMapping</var>[<var>virtualPressureSourceType</var>]."
+        },
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\" id=\"ref-for-index-term-success-2\">success</a> with data null."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps\" id=\"ref-for-index-term-remote-end-steps-3\">remote end steps</a> given <var>session</var>, <var>URL variables</var> and <var>parameters</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>virtualPressureSourceType</var> be the value of the <var>URL variables</var>[\"type\"]."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-18\">user agent</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-supported-source-types\" class=\"internalDFN\" id=\"ref-for-dfn-supported-source-types-5\">supported source types</a> does not\n      <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-index-term-contain-for-list-3\">contain</a> <var>virtualPressureSourceType</var>, return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-index-term-error-5\">error</a> with\n      <a data-link-type=\"dfn|abstract-op\" data-lt=\"error code\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-index-term-error-code-5\">WebDriver error code</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-index-term-invalid-argument-4\">invalid argument</a>."
+        },
+        {
+          "html": "Let <var>topLevelTraversable</var> be the <a href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\" id=\"ref-for-index-term-current-browsing-context-3\">current browsing\n      context</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-index-term-top-level-traversable-for-browsing-context-3\">top-level traversable</a>."
+        },
+        {
+          "html": "Let <var>topLevelVirtualPressureSourceMapping</var> be the <var>topLevelTraversable</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-virtual-pressure-source-mapping\" class=\"internalDFN\" id=\"ref-for-dfn-virtual-pressure-source-mapping-4\">virtual pressure source mapping</a>."
+        },
+        {
+          "html": "If <var>topLevelVirtualPressureSourceMapping</var> does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-9\">contain</a> <var>virtualPressureSource</var>,\n      return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-index-term-error-6\">error</a> with <a data-link-type=\"dfn|abstract-op\" data-lt=\"error code\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-index-term-error-code-6\">WebDriver error code</a>\n      <a href=\"https://www.w3.org/TR/webdriver2/#dfn-unsupported-operation\" id=\"ref-for-index-term-unsupported-operation-2\">unsupported operation</a>."
+        },
+        {
+          "html": "Let <var>virtualPressureSource</var> be <var>topLevelVirtualPressureSourceMapping</var>[<var>virtualPressureSourceType</var>]."
+        },
+        {
+          "html": "Let <var>sample</var> be the result of invoking\n      <a href=\"https://www.w3.org/TR/webdriver2/#dfn-getting-properties\" id=\"ref-for-index-term-get-a-property-2\">get a property</a> \"sample\" from <var>parameters</var>."
+        },
+        {
+          "html": "If <var>sample</var> is not of type <a data-link-type=\"idl\" data-lt=\"PressureState\" href=\"https://www.w3.org/TR/compute-pressure/#dom-pressurestate\" class=\"internalDFN\" id=\"ref-for-dom-pressurestate-7\"><code>PressureState</code></a>, return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" id=\"ref-for-index-term-error-7\">error</a> with <a data-link-type=\"dfn|abstract-op\" data-lt=\"error code\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" id=\"ref-for-index-term-error-code-7\">WebDriver error code</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" id=\"ref-for-index-term-invalid-argument-5\">invalid argument</a>."
+        },
+        {
+          "html": "Set <var>virtualPressureSource</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-latest-sample\" class=\"internalDFN\" id=\"ref-for-dfn-latest-sample-3\">latest sample</a> to a new\n      <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pressure-source-sample\" class=\"internalDFN\" id=\"ref-for-dfn-pressure-source-sample-6\">pressure source sample</a> whose <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-data\" class=\"internalDFN\" id=\"ref-for-dfn-data-8\">data</a> is\n      <var>sample</var> and <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-timestamp\" class=\"internalDFN\" id=\"ref-for-dfn-timestamp-3\">timestamp</a> is the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unsafe-shared-current-time\" id=\"ref-for-index-term-unsafe-shared-current-time-2\">unsafe shared current time</a>."
+        },
+        {
+          "html": "In an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-28\">implementation-defined</a> way, make <var>virtualPressureSource</var>'s\n      <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-latest-sample\" class=\"internalDFN\" id=\"ref-for-dfn-latest-sample-4\">latest sample</a> available to <var>virtualPressureSource</var>'s\n      <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-connected-platform-collectors\" class=\"internalDFN\" id=\"ref-for-dfn-connected-platform-collectors-4\">connected platform collectors</a>."
+        },
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver2/#dfn-success\" id=\"ref-for-index-term-success-3\">success</a> with data null."
+        }
+      ]
+    }
+  ]
+}

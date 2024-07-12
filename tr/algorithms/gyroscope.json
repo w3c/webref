@@ -1,0 +1,42 @@
+{
+  "spec": {
+    "title": "Gyroscope",
+    "url": "https://www.w3.org/TR/gyroscope/"
+  },
+  "algorithms": [
+    {
+      "name": "construct a gyroscope object",
+      "html": "<dl>\n     <dt data-md=\"\">input\n     </dt><dd data-md=\"\">\n      <p><var>object</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/gyroscope/#gyroscope\" id=\"ref-for-gyroscope⑥\">Gyroscope</a></code> object.</p>\n     </dd><dd data-md=\"\">\n      <p><var>options</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/gyroscope/#dictdef-gyroscopesensoroptions\" id=\"ref-for-dictdef-gyroscopesensoroptions①\">GyroscopeSensorOptions</a></code> object.</p>\n    </dd></dl>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>allowed</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#check-sensor-policy-controlled-features\" id=\"ref-for-check-sensor-policy-controlled-features\">check sensor policy-controlled features</a> with <var>object</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#sensor-type\" id=\"ref-for-sensor-type②\">sensor type</a>.</p>"
+        },
+        {
+          "html": "If <var>allowed</var> is false, then:",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">Throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#initialize-a-sensor-object\" id=\"ref-for-initialize-a-sensor-object\">initialize a sensor object</a> with <var>object</var> and <var>options</var>.</p>"
+        },
+        {
+          "html": "If <var>options</var>.<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/gyroscope/#dom-gyroscopesensoroptions-referenceframe\" id=\"ref-for-dom-gyroscopesensoroptions-referenceframe\">referenceFrame</a></code> is \"screen\", then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>object</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#local-coordinate-system\" id=\"ref-for-local-coordinate-system③\">local coordinate system</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/accelerometer/#screen-coordinate-system\" id=\"ref-for-screen-coordinate-system①\">screen coordinate system</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Otherwise, define <var>object</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#local-coordinate-system\" id=\"ref-for-local-coordinate-system④\">local coordinate system</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/accelerometer/#device-coordinate-system\" id=\"ref-for-device-coordinate-system①\">device coordinate system</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

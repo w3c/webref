@@ -1,0 +1,94 @@
+{
+  "spec": {
+    "title": "Proximity Sensor",
+    "url": "https://www.w3.org/TR/proximity/"
+  },
+  "algorithms": [
+    {
+      "name": "construct a proximity sensor object",
+      "html": "<dl>\n     <dt data-md=\"\">input\n     </dt><dd data-md=\"\">\n      <p><var>options</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/sensors/#dictdef-sensoroptions\" id=\"ref-for-dictdef-sensoroptions①\">SensorOptions</a></code> object.</p>\n     </dd><dt data-md=\"\">output\n     </dt><dd data-md=\"\">\n      <p>A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/proximity/#proximitysensor\" id=\"ref-for-proximitysensor⑤\">ProximitySensor</a></code> object.</p>\n    </dd></dl>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>allowed</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors#check-sensor-policy-controlled-features\" id=\"ref-for-check-sensor-policy-controlled-features\">check sensor policy-controlled features</a> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/proximity/#proximitysensor\" id=\"ref-for-proximitysensor⑥\">ProximitySensor</a></code>.</p>"
+        },
+        {
+          "html": "If <var>allowed</var> is false, then:",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">Throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>proximity_sensor</var> be the new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/proximity/#proximitysensor\" id=\"ref-for-proximitysensor⑦\">ProximitySensor</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors#initialize-a-sensor-object\" id=\"ref-for-initialize-a-sensor-object\">initialize a sensor object</a> with <var>proximity_sensor</var> and <var>options</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>proximity_sensor</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "proximity reading parsing algorithm",
+      "html": "<dl>\n     <dt data-md=\"\">input\n     </dt><dd data-md=\"\">\n      <p><var>parameters</var>, a JSON <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects\" id=\"ref-for-sec-object-objects\">Object</a></code></p>\n     </dd><dt data-md=\"\">output\n     </dt><dd data-md=\"\">\n      <p>A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#sensor-reading\" id=\"ref-for-sensor-reading①\">sensor reading</a> or <strong>undefined</strong></p>\n    </dd></dl>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>reading</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#sensor-reading\" id=\"ref-for-sensor-reading②\">sensor reading</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>keys</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> « \"<code>distance</code>\", \"<code>max</code>\" ».</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>key</var> of <var>keys</var>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>value</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#parse-single-value-number-reading\" id=\"ref-for-parse-single-value-number-reading\">parse single-value number reading</a> with <var>parameters</var> and <var>key</var>.",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>value</var> is <strong>undefined</strong>.",
+                  "rationale": "return",
+                  "steps": [
+                    {
+                      "html": "<p>Return <strong>undefined</strong>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>reading</var>[<var>key</var>] to <var>value</var>[<var>key</var>].</p>"
+            }
+          ]
+        },
+        {
+          "html": "Let <var>near</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties\">get a property</a> from <var>parameters</var> with \"<code>near</code>\".",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>near</var>’s type is not Boolean",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>Return <strong>undefined</strong>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> <var>reading</var>[\"<code>near</code>\"] to <var>near</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>reading</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "spec": {
+    "title": "CSS Exclusions Module Level 1",
+    "url": "https://www.w3.org/TR/css3-exclusions/"
+  },
+  "algorithms": [
+    {
+      "html": "In this step, each containing block is processed in turn. For each containing\n  block, we (conceptually) go through two phases:",
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "resolve the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-exclusions/#wrapping-context\" title=\"wrapping context\">wrapping context</a>: resolve the position and size of its\n  exclusions"
+        },
+        {
+          "html": "lay out the containing block"
+        }
+      ]
+    },
+    {
+      "html": "In our example, this breaks down to:",
+      "rationale": "resolve",
+      "steps": [
+        {
+          "html": "resolve the position and size of the exclusions belonging to WC-1:\n    RWC-1 (Resolved Wrapping Context 1)."
+        },
+        {
+          "html": "lay out the initial containing block (i.e., lay out its content):",
+          "rationale": "resolve",
+          "steps": [
+            {
+              "html": "resolve the html element’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-exclusions/#wrapping-context\" title=\"wrapping context\">wrapping context</a>: RWC-1"
+            },
+            {
+              "html": "lay out the html element:",
+              "rationale": "resolve",
+              "steps": [
+                {
+                  "html": "resolve the body element’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-exclusions/#wrapping-context\" title=\"wrapping context\">wrapping context</a>: RWC-1"
+                },
+                {
+                  "html": "lay out the body element:",
+                  "rationale": "resolve",
+                  "steps": [
+                    {
+                      "html": "resolve the <code class=\"idl\">d1</code> element’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-exclusions/#wrapping-context\" title=\"wrapping context\">wrapping\n              context</a>: RWC-2"
+                    },
+                    {
+                      "html": "lay out the <code class=\"idl\">d1</code> element"
+                    },
+                    {
+                      "html": "resolve the <code class=\"idl\">d2</code> element’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-exclusions/#wrapping-context\" title=\"wrapping context\">wrapping\n              context</a>: RWC-1"
+                    },
+                    {
+                      "html": "lay out the <code class=\"idl\">d2</code> element"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

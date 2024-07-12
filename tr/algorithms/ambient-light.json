@@ -1,0 +1,98 @@
+{
+  "spec": {
+    "title": "Ambient Light Sensor",
+    "url": "https://www.w3.org/TR/ambient-light/"
+  },
+  "algorithms": [
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/ambient-light/#dom-ambientlightsensor-illuminance\" id=\"ref-for-dom-ambientlightsensor-illuminance①\">illuminance</a></code> getter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>illuminance</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#get-value-from-latest-reading\" id=\"ref-for-get-value-from-latest-reading\">get value from latest\n reading</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> and \"illuminance\" as arguments.</p>"
+        },
+        {
+          "html": "<p>Return <var>illuminance</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "construct an ambient light sensor object",
+      "html": "<dl>\n     <dt data-md=\"\">input\n     </dt><dd data-md=\"\">\n      <p><var>options</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/sensors/#dictdef-sensoroptions\" id=\"ref-for-dictdef-sensoroptions①\">SensorOptions</a></code> object.</p>\n     </dd><dt data-md=\"\">output\n     </dt><dd data-md=\"\">\n      <p>An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/ambient-light/#ambientlightsensor\" id=\"ref-for-ambientlightsensor②\">AmbientLightSensor</a></code> object.</p>\n    </dd></dl>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>allowed</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#check-sensor-policy-controlled-features\" id=\"ref-for-check-sensor-policy-controlled-features\">check sensor policy-controlled features</a> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/ambient-light/#ambientlightsensor\" id=\"ref-for-ambientlightsensor③\">AmbientLightSensor</a></code>.</p>"
+        },
+        {
+          "html": "If <var>allowed</var> is false, then:",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">Throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>ambient_light_sensor</var> be the new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/ambient-light/#ambientlightsensor\" id=\"ref-for-ambientlightsensor④\">AmbientLightSensor</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#initialize-a-sensor-object\" id=\"ref-for-initialize-a-sensor-object\">initialize a sensor object</a> with <var>ambient_light_sensor</var> and <var>options</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>ambient_light_sensor</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ambient light threshold check",
+      "html": "<dl>\n     <dt data-md=\"\">input\n     </dt><dd data-md=\"\">\n      <p><var>newReading</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#sensor-reading\" id=\"ref-for-sensor-reading④\">sensor reading</a></p>\n     </dd><dd data-md=\"\">\n      <p><var>latestReading</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#sensor-reading\" id=\"ref-for-sensor-reading⑤\">sensor reading</a></p>\n     </dd><dt data-md=\"\">output\n     </dt><dd data-md=\"\">\n      <p>A <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean\">boolean</a> indicating whether the difference in readings is\n significant enough.</p>\n    </dd></dl>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>newReading</var>[\"illuminance\"] is null, return true.</p>"
+        },
+        {
+          "html": "<p>If <var>latestReading</var>[\"illuminance\"] is null, return true.</p>"
+        },
+        {
+          "html": "<p>Let <var>newIlluminance</var> be <var>newReading</var>[\"illuminance\"].</p>"
+        },
+        {
+          "html": "<p>Let <var>latestIlluminance</var> be <var>latestReading</var>[\"illuminance\"].</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#eqn-abs\" id=\"ref-for-eqn-abs\">abs</a>(<var>latestIlluminance</var> - <var>newIlluminance</var>) &lt; <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/ambient-light/#illuminance-threshold-value\" id=\"ref-for-illuminance-threshold-value③\">illuminance\n threshold value</a>, return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>roundedNewReading</var> be the result of invoking the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/ambient-light/#ambient-light-reading-quantization-algorithm\" id=\"ref-for-ambient-light-reading-quantization-algorithm①\">ambient light\n reading quantization algorithm</a> algorithm with <var>newIlluminance</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>roundedLatestReading</var> be the result of invoking the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/ambient-light/#ambient-light-reading-quantization-algorithm\" id=\"ref-for-ambient-light-reading-quantization-algorithm②\">ambient\n light reading quantization algorithm</a> algorithm with <var>latestIlluminance</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>roundedNewReading</var>[\"illuminance\"] and <var>roundedLatestIlluminance</var>[\"illuminance\"]\n are equal, return false.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ambient light reading quantization",
+      "html": "<dl>\n     <dt data-md=\"\">input\n     </dt><dd data-md=\"\">\n      <p><var>reading</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#sensor-reading\" id=\"ref-for-sensor-reading⑥\">sensor reading</a></p>\n     </dd><dt data-md=\"\">output\n     </dt><dd data-md=\"\">\n      <p>A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#sensor-reading\" id=\"ref-for-sensor-reading⑦\">sensor reading</a></p>\n    </dd></dl>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>quantizedReading</var> be <var>reading</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>quantizedReading</var>[\"illuminance\"] to the multiple of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/ambient-light/#illuminance-rounding-multiple\" id=\"ref-for-illuminance-rounding-multiple⑦\">illuminance\n rounding multiple</a> that <var>reading</var>[\"illuminance\"] is closest to.</p>"
+        },
+        {
+          "html": "<p>Return <var>quantizedReading</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

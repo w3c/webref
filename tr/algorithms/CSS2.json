@@ -1,0 +1,723 @@
+{
+  "spec": {
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
+    "url": "https://www.w3.org/TR/CSS21/"
+  },
+  "algorithms": [
+    {
+      "html": "In this model, a user agent processes a source\nby going through the following steps:",
+      "rationale": "parse",
+      "steps": [
+        {
+          "html": "Parse the source document and create a <a href=\"https://www.w3.org/TR/CSS21/conform.html#doctree\">document tree</a>."
+        },
+        {
+          "html": "Identify the target <a href=\"https://www.w3.org/TR/CSS21/media.html\">media type</a>."
+        },
+        {
+          "html": "Retrieve all style sheets associated with the document that are\nspecified for the target <a href=\"https://www.w3.org/TR/CSS21/media.html\">media type</a>."
+        },
+        {
+          "html": "Annotate every element of the document tree by assigning a single\nvalue to every <a href=\"https://www.w3.org/TR/CSS21/syndata.html#properties\">property</a> that is\napplicable to the target <a href=\"https://www.w3.org/TR/CSS21/media.html\">media type</a>.\nProperties are assigned values according to the mechanisms described\nin the section on <a href=\"https://www.w3.org/TR/CSS21/cascade.html\">cascading and\ninheritance</a>. \n\n<p>Part of the calculation of values depends on the formatting\nalgorithm appropriate for the target <a href=\"https://www.w3.org/TR/CSS21/media.html\">media\ntype</a>. For example, if the target medium is the screen, user agents\napply the <a href=\"https://www.w3.org/TR/CSS21/visuren.html\">visual formatting model</a>. \n\n</p>"
+        },
+        {
+          "html": "From the annotated document tree, generate a \n<span class=\"index-def\" title=\"formatting structure\">\n<a name=\"formatting-structure\"><dfn>formatting\nstructure</dfn></a></span>.  Often, the formatting structure closely\nresembles the document tree, but it may also differ significantly,\nnotably when authors make use of pseudo-elements and generated content.\nFirst, the formatting structure need not be \"tree-shaped\" at all -- the\nnature of the structure depends on the implementation.  Second, the\nformatting structure may contain more or less information than the\ndocument tree. For instance, if an element in the document tree has a\nvalue of 'none' for the <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-display\" class=\"noxref\"><span class=\"propinst-display\">'display'</span></a> property, that element will\ngenerate nothing in the formatting structure.  A list element, on the\nother hand, may generate more information in the formatting structure:\nthe list element's content and list style information (e.g., a bullet\nimage).\n\n<p>Note that the CSS user agent does not alter the document tree\nduring this phase. In particular, content generated due to style\nsheets is not fed back to the document language processor (e.g., for\nreparsing).\n\n</p>"
+        },
+        {
+          "html": "Transfer the formatting structure to the target medium (e.g., print\nthe results, display them on the screen, render them as speech,\netc.)."
+        }
+      ]
+    },
+    {
+      "html": "In general, the following points must be observed by a user agent\nclaiming conformance to this specification:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "It must recognize one or more of the CSS&nbsp;2.1 <a href=\"https://www.w3.org/TR/CSS21/media.html\">media types</a>."
+        },
+        {
+          "html": "For each source document, it must attempt to retrieve all\nassociated style sheets that are appropriate for the recognized media\ntypes. If it cannot retrieve all associated style sheets (for instance,\nbecause of network errors), it must display the document using those\nit can retrieve."
+        },
+        {
+          "html": "It must parse the style sheets according to this specification.\nIn particular, it must recognize all at-rules, blocks, declarations,\nand selectors (see the <a href=\"https://www.w3.org/TR/CSS21/grammar.html\">grammar of CSS&nbsp;2.1</a>).\nIf a user agent encounters a property that applies for a supported\nmedia type, the user agent must parse the value according to the property\ndefinition. This means that the user agent must accept all valid\nvalues and must\n<a name=\"x44\"><span class=\"index-inst\" title=\"ignore\">ignore</span></a> declarations with\ninvalid values. User\nagents must <a name=\"x45\"><span class=\"index-inst\" title=\"ignore\">ignore</span></a>\nrules that apply to unsupported <a href=\"https://www.w3.org/TR/CSS21/media.html\">media\ntypes</a>."
+        },
+        {
+          "html": "For each element in a <a href=\"https://www.w3.org/TR/CSS21/conform.html#doctree\">document tree</a>, it\nmust assign a value for every property according to the\nproperty's definition and the rules of <a href=\"https://www.w3.org/TR/CSS21/cascade.html\">cascading and inheritance</a>."
+        },
+        {
+          "html": "If the source document comes with alternate style sheet sets (such as\nwith the \"alternate\" keyword in HTML 4 <a href=\"https://www.w3.org/TR/CSS21/refs.html#ref-HTML4\" rel=\"biblioentry\" class=\"noxref\"><span class=\"informref\">[HTML4]</span></a>), the UA must\nallow the user to select which style sheet set the UA should apply."
+        },
+        {
+          "html": "The UA must allow the user to turn off the influence of author style sheets."
+        }
+      ]
+    },
+    {
+      "html": "User agents must first assign a specified value to each property based\non the following mechanisms (in order of precedence):",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/CSS21/cascade.html#cascade\">cascade</a> results in a value, use it."
+        },
+        {
+          "html": "Otherwise, if the property is <a href=\"https://www.w3.org/TR/CSS21/cascade.html#inheritance\">inherited</a> and the element is not the root of the <a>document tree</a>, use the computed value of the parent element."
+        },
+        {
+          "html": "Otherwise use the property's <a name=\"x1\"><span class=\"index-def\" title=\"initial value\">initial value</span></a>. The initial value of each property is indicated in the property's definition."
+        }
+      ]
+    },
+    {
+      "html": "To find the value for an element/property combination, user agents\nmust apply the following sorting order:",
+      "rationale": "find",
+      "steps": [
+        {
+          "html": "Find all declarations that apply to the element and property in\n      question, for the target <a href=\"https://www.w3.org/TR/CSS21/media.html\">media type</a>.\n      Declarations apply if the associated selector <a href=\"https://www.w3.org/TR/CSS21/selector.html\">matches</a> the element in question and the\n      target medium matches the media list on all @media rules\n      containing the declaration and on all links on the path through\n      which the style sheet was reached."
+        },
+        {
+          "html": "Sort  according to importance (normal or important)\nand origin (author, user, or user agent). In ascending order of\nprecedence:",
+          "ignored": [
+            "user agent declarations user normal declarations author normal declarations author important declarations user important declarations"
+          ]
+        },
+        {
+          "html": "Sort rules with the same importance and origin by <a href=\"https://www.w3.org/TR/CSS21/cascade.html#specificity\">specificity</a> \n      of selector: more specific\n      selectors will override more general ones.  Pseudo-elements and\n      pseudo-classes are counted as normal elements and classes,\n      respectively."
+        },
+        {
+          "html": "Finally, sort by order specified: if two declarations have the\n    same weight, origin and specificity, the latter specified wins.\n    Declarations in imported style sheets are considered to be before any\n    declarations in the style sheet itself."
+        }
+      ]
+    },
+    {
+      "html": "<span class=\"index-def\" title=\"float rules\"><a name=\"float-rules\">Here are the precise rules</a></span> that\ngovern the behavior of floats:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The left <a href=\"https://www.w3.org/TR/CSS21/box.html#outer-edge\">outer edge</a> of a\nleft-floating box may not be to the left of the left edge of its <a href=\"https://www.w3.org/TR/CSS21/visuren.html#containing-block\">containing block</a>. An\nanalogous rule holds for right-floating elements."
+        },
+        {
+          "html": "If the current box is left-floating, and there are any left-floating \nboxes generated by elements earlier in the source document,\nthen for each such earlier box, either the left <a href=\"https://www.w3.org/TR/CSS21/box.html#outer-edge\">outer edge</a> of the current box must be\nto the right of the right <a href=\"https://www.w3.org/TR/CSS21/box.html#outer-edge\">outer edge</a>\nof the earlier box, or its top must be lower than the bottom of the\nearlier box. Analogous rules hold for right-floating boxes."
+        },
+        {
+          "html": "The right <a href=\"https://www.w3.org/TR/CSS21/box.html#outer-edge\">outer edge</a> of a\nleft-floating box may not be to the right of the left <a href=\"https://www.w3.org/TR/CSS21/box.html#outer-edge\">outer edge</a> of any right-floating\nbox that is next to it. Analogous rules hold for\nright-floating elements."
+        },
+        {
+          "html": "A floating box's <a href=\"https://www.w3.org/TR/CSS21/box.html#outer-edge\">outer top</a>\nmay not be higher than the top of its <a href=\"https://www.w3.org/TR/CSS21/visuren.html#containing-block\">containing block</a>.\nWhen the float occurs between two collapsing margins, the\nfloat is positioned as if it had an otherwise empty <a href=\"https://www.w3.org/TR/CSS21/visuren.html#anonymous-block-level\">anonymous block parent</a> taking part in\nthe flow. The position of such a parent is defined by <a href=\"https://www.w3.org/TR/CSS21/box.html#collapsed-through\">the rules</a> in the section on margin\ncollapsing."
+        },
+        {
+          "html": "The <a href=\"https://www.w3.org/TR/CSS21/box.html#outer-edge\">outer top</a> of a floating box\nmay not be higher than the outer top of any <a href=\"https://www.w3.org/TR/CSS21/visuren.html#block-boxes\">block</a> or <a href=\"https://www.w3.org/TR/CSS21/visuren.html#floats\">floated</a> box generated by an element\nearlier in the source document."
+        },
+        {
+          "html": "The <a href=\"https://www.w3.org/TR/CSS21/box.html#outer-edge\">outer top</a> of an element's\nfloating box may not be higher than the top of any <span class=\"index-inst\" title=\"line-box\"><a name=\"x37\" href=\"https://www.w3.org/TR/CSS21/visuren.html#line-box\">line-box</a></span> containing a box\ngenerated by an element earlier in the source document."
+        },
+        {
+          "html": "A left-floating box that has another left-floating box to its left\nmay not have its right outer edge to the right of its containing\nblock's right edge. (Loosely: a left float may not stick out at the\nright edge, unless it is already as far to the left as possible.) An\nanalogous rule holds for right-floating elements."
+        },
+        {
+          "html": "A floating box must be placed as high as possible."
+        },
+        {
+          "html": "A left-floating box must be put as far to the left as\npossible, a right-floating box as far to the right as possible. A\nhigher position is preferred over one that is further to the\nleft/right."
+        }
+      ]
+    },
+    {
+      "html": "The three properties that affect box generation and layout — \n<a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-display\" class=\"noxref\"><span class=\"propinst-display\">'display'</span></a>, \n<a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-position\" class=\"noxref\"><span class=\"propinst-position\">'position'</span></a>, and \n<a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-float\" class=\"noxref\"><span class=\"propinst-float\">'float'</span></a> — interact as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-display\" class=\"noxref\"><span class=\"propinst-display\">'display'</span></a>\nhas the value 'none', then \n<a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-position\" class=\"noxref\"><span class=\"propinst-position\">'position'</span></a> and\n<a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-float\" class=\"noxref\"><span class=\"propinst-float\">'float'</span></a> do not apply. \nIn this case, the element generates no box."
+        },
+        {
+          "html": "Otherwise, if <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-position\" class=\"noxref\"><span class=\"propinst-position\">'position'</span></a>\nhas the value 'absolute' or 'fixed', the box is absolutely positioned, \nthe computed\nvalue of <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-float\" class=\"noxref\"><span class=\"propinst-float\">'float'</span></a> is 'none',  \nand display is set according to the table below.  \nThe position of the box will be determined by the <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-top\" class=\"noxref\"><span class=\"propinst-top\">'top'</span></a>, <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-right\" class=\"noxref\"><span class=\"propinst-right\">'right'</span></a>, <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-bottom\" class=\"noxref\"><span class=\"propinst-bottom\">'bottom'</span></a> and <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-left\" class=\"noxref\"><span class=\"propinst-left\">'left'</span></a> properties and the box's \ncontaining block."
+        },
+        {
+          "html": "Otherwise, if 'float' has a value other than 'none', the box is\nfloated and 'display' is set according to the table below."
+        },
+        {
+          "html": "Otherwise, if the element is the root element, \n'display' is set according to the table below, except that it is\nundefined in CSS&nbsp;2.1 whether a specified value of 'list-item'\nbecomes a computed value of 'block' or 'list-item'."
+        },
+        {
+          "html": "Otherwise, the remaining <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-display\" class=\"noxref\"><span class=\"propinst-display\">'display'</span></a> property values apply\nas specified."
+        }
+      ]
+    },
+    {
+      "name": "containing block",
+      "href": null,
+      "html": "The position and size of an element's box(es) are sometimes\ncalculated relative to a certain rectangle, called the <dfn><a name=\"x0\"><span class=\"index-def\" title=\"containing block\">containing\nblock</span></a></dfn> of the element. The containing block of an element\nis defined as follows:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "The containing block in which the <a href=\"https://www.w3.org/TR/CSS21/conform.html#root\">root\nelement</a> lives is a rectangle called the <dfn><a name=\"x1\"><span class=\"index-def\" title=\"initial containing block|containing\nblock::initial\">initial containing block</span></a></dfn>. For continuous\nmedia, it has the dimensions of the <a href=\"https://www.w3.org/TR/CSS21/visuren.html#viewport\">viewport</a> and is anchored at the\ncanvas origin; it is the <a href=\"https://www.w3.org/TR/CSS21/page.html#page-area\">page area</a>\nfor paged media. The 'direction' property of the initial\ncontaining block is the same as for the root element."
+        },
+        {
+          "html": "For other elements, if the element's position is 'relative' or 'static',\nthe containing block is formed by the content edge of the nearest\n<a href=\"https://www.w3.org/TR/CSS21/visuren.html#block-boxes\">block container</a> ancestor box."
+        },
+        {
+          "html": "If the element has 'position: fixed', the containing block is\nestablished by the <a href=\"https://www.w3.org/TR/CSS21/visuren.html#viewport\">viewport</a>\nin the case of continuous media or the page area in the case of paged media."
+        },
+        {
+          "html": "If the element has 'position: absolute', the containing block is\nestablished by the nearest ancestor with a <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-position\" class=\"noxref\"><span class=\"propinst-position\">'position'</span></a> of 'absolute', 'relative'\nor 'fixed', in the following way:",
+          "rationale": "/^otherwise(\\,| )/i",
+          "steps": [
+            {
+              "html": "In the case that the ancestor is an inline element, the containing\nblock is the bounding box around the padding boxes of the first and\nthe last inline boxes\ngenerated for that element. In CSS&nbsp;2.1, if the inline\nelement is split\nacross multiple lines, the containing block is undefined."
+            },
+            {
+              "html": "Otherwise, the containing block\nis formed by the <a href=\"https://www.w3.org/TR/CSS21/box.html#padding-edge\">padding edge</a> of\n\nthe ancestor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "In this case, <a href=\"https://www.w3.org/TR/CSS21/visudet.html#abs-non-replaced-width\">section 10.3.7</a>\napplies up through and including the constraint equation, but the rest\nof <a href=\"https://www.w3.org/TR/CSS21/visudet.html#abs-non-replaced-width\">section 10.3.7</a> is replaced by\nthe following rules:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The used value of <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" class=\"noxref\"><span class=\"propinst-width\">'width'</span></a> is\ndetermined as for <a href=\"https://www.w3.org/TR/CSS21/visudet.html#inline-replaced-width\">inline replaced\nelements</a>.\nIf <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-left\" class=\"noxref\"><span class=\"propinst-margin-left\">'margin-left'</span></a> or <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-right\" class=\"noxref\"><span class=\"propinst-margin-right\">'margin-right'</span></a> is specified as\n'auto' its used value is determined by the rules below."
+        },
+        {
+          "html": "If both <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-left\" class=\"noxref\"><span class=\"propinst-left\">'left'</span></a> and <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-right\" class=\"noxref\"><span class=\"propinst-right\">'right'</span></a> have the value 'auto', then if\nthe 'direction' property of the element establishing the\nstatic-position containing block is 'ltr', set <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-left\" class=\"noxref\"><span class=\"propinst-left\">'left'</span></a> to\nthe static position; else if 'direction' is 'rtl', set <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-right\" class=\"noxref\"><span class=\"propinst-right\">'right'</span></a> to the static position."
+        },
+        {
+          "html": "If <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-left\" class=\"noxref\"><span class=\"propinst-left\">'left'</span></a> or <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-right\" class=\"noxref\"><span class=\"propinst-right\">'right'</span></a> are 'auto', replace any 'auto'\non <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-left\" class=\"noxref\"><span class=\"propinst-margin-left\">'margin-left'</span></a> or <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-right\" class=\"noxref\"><span class=\"propinst-margin-right\">'margin-right'</span></a> with '0'."
+        },
+        {
+          "html": "If at this point both <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-left\" class=\"noxref\"><span class=\"propinst-margin-left\">'margin-left'</span></a> and <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-right\" class=\"noxref\"><span class=\"propinst-margin-right\">'margin-right'</span></a> are still 'auto',\nsolve the equation under the extra constraint that the two margins\nmust get equal values, unless this would make them negative, in which\ncase when the direction of the containing block is 'ltr' ('rtl'), set\n<a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-left\" class=\"noxref\"><span class=\"propinst-margin-left\">'margin-left'</span></a> (<a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-right\" class=\"noxref\"><span class=\"propinst-margin-right\">'margin-right'</span></a>) to zero and solve\nfor <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-right\" class=\"noxref\"><span class=\"propinst-margin-right\">'margin-right'</span></a> (<a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-left\" class=\"noxref\"><span class=\"propinst-margin-left\">'margin-left'</span></a>)."
+        },
+        {
+          "html": "If at this point there is an 'auto' left, solve the equation \nfor that value."
+        },
+        {
+          "html": "If at this point the values are over-constrained, ignore the value\nfor either <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-left\" class=\"noxref\"><span class=\"propinst-left\">'left'</span></a> (in case the\n<a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-direction\" class=\"noxref\"><span class=\"propinst-direction\">'direction'</span></a> property of the\ncontaining block is 'rtl') or <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-right\" class=\"noxref\"><span class=\"propinst-right\">'right'</span></a> (in case <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-direction\" class=\"noxref\"><span class=\"propinst-direction\">'direction'</span></a> is 'ltr') and solve for\nthat value."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm describes how the two properties influence\nthe <a href=\"https://www.w3.org/TR/CSS21/cascade.html#computed-value\">used value</a>\nof the <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" class=\"noxref\"><span class=\"propinst-width\">'width'</span></a> property:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The tentative used width is calculated (without <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-width\" class=\"noxref\"><span class=\"propinst-min-width\">'min-width'</span></a> and <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-width\" class=\"noxref\"><span class=\"propinst-max-width\">'max-width'</span></a>) following the rules\nunder <a href=\"https://www.w3.org/TR/CSS21/visudet.html#Computing_widths_and_margins\">\"Calculating widths and\nmargins\"</a> above."
+        },
+        {
+          "html": "If the tentative used width is greater than <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-width\" class=\"noxref\"><span class=\"propinst-max-width\">'max-width'</span></a>, the rules <a href=\"https://www.w3.org/TR/CSS21/visudet.html#Computing_widths_and_margins\">above</a> are applied again, but\nthis time using the computed value of <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-width\" class=\"noxref\"><span class=\"propinst-max-width\">'max-width'</span></a> as the computed value\nfor <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" class=\"noxref\"><span class=\"propinst-width\">'width'</span></a>."
+        },
+        {
+          "html": "If the resulting width is smaller than <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-width\" class=\"noxref\"><span class=\"propinst-min-width\">'min-width'</span></a>, the rules <a href=\"https://www.w3.org/TR/CSS21/visudet.html#Computing_widths_and_margins\">above</a> are applied again, but\nthis time using the value of <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-width\" class=\"noxref\"><span class=\"propinst-min-width\">'min-width'</span></a> as the computed value\nfor <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" class=\"noxref\"><span class=\"propinst-width\">'width'</span></a>."
+        }
+      ]
+    },
+    {
+      "html": "This situation is similar to the previous one, except that the\nelement has an <a href=\"https://www.w3.org/TR/CSS21/conform.html#intrinsic\">intrinsic</a> height. The\nsequence of substitutions is now:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The used value of <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-height\" class=\"noxref\"><span class=\"propinst-height\">'height'</span></a> is determined as for <a href=\"https://www.w3.org/TR/CSS21/visudet.html#inline-replaced-height\">inline replaced elements</a>.\nIf 'margin-top' or 'margin-bottom' is specified as 'auto' its used\nvalue is determined by the rules below."
+        },
+        {
+          "html": "If both <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-top\" class=\"noxref\"><span class=\"propinst-top\">'top'</span></a> and <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-bottom\" class=\"noxref\"><span class=\"propinst-bottom\">'bottom'</span></a> have the value 'auto', replace\n<a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-top\" class=\"noxref\"><span class=\"propinst-top\">'top'</span></a> with the element's <a href=\"https://www.w3.org/TR/CSS21/visudet.html#static-position\">static position</a>."
+        },
+        {
+          "html": "If <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-bottom\" class=\"noxref\"><span class=\"propinst-bottom\">'bottom'</span></a> is 'auto',\nreplace any 'auto' on <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-top\" class=\"noxref\"><span class=\"propinst-margin-top\">'margin-top'</span></a> or <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-bottom\" class=\"noxref\"><span class=\"propinst-margin-bottom\">'margin-bottom'</span></a> with '0'."
+        },
+        {
+          "html": "If at this point both <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-top\" class=\"noxref\"><span class=\"propinst-margin-top\">'margin-top'</span></a> and <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-margin-bottom\" class=\"noxref\"><span class=\"propinst-margin-bottom\">'margin-bottom'</span></a> are still\n'auto', solve the equation under the extra constraint that the two\nmargins must get equal values."
+        },
+        {
+          "html": "If at this point there is only one 'auto' left, solve the equation \nfor that value."
+        },
+        {
+          "html": "If at this point the values are over-constrained, ignore the value\nfor <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-bottom\" class=\"noxref\"><span class=\"propinst-bottom\">'bottom'</span></a> and solve for that\nvalue."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm describes how the two properties influence\nthe <a href=\"https://www.w3.org/TR/CSS21/cascade.html#computed-value\">used value</a>\nof the <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-height\" class=\"noxref\"><span class=\"propinst-height\">'height'</span></a> property:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The tentative used height is calculated (without <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-height\" class=\"noxref\"><span class=\"propinst-min-height\">'min-height'</span></a> and <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-height\" class=\"noxref\"><span class=\"propinst-max-height\">'max-height'</span></a>) following the rules\nunder <a href=\"https://www.w3.org/TR/CSS21/visudet.html#Computing_heights_and_margins\">\"Calculating heights and\nmargins\"</a> above."
+        },
+        {
+          "html": "If this tentative height is greater than <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-height\" class=\"noxref\"><span class=\"propinst-max-height\">'max-height'</span></a>, the rules <a href=\"https://www.w3.org/TR/CSS21/visudet.html#Computing_heights_and_margins\">above</a> are applied again, but\nthis time using the value of <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-max-height\" class=\"noxref\"><span class=\"propinst-max-height\">'max-height'</span></a> as the computed value\nfor <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-height\" class=\"noxref\"><span class=\"propinst-height\">'height'</span></a>."
+        },
+        {
+          "html": "If the resulting height is smaller than <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-height\" class=\"noxref\"><span class=\"propinst-min-height\">'min-height'</span></a>, the rules <a href=\"https://www.w3.org/TR/CSS21/visudet.html#Computing_heights_and_margins\">above</a> are applied again, but\nthis time using the value of <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-min-height\" class=\"noxref\"><span class=\"propinst-min-height\">'min-height'</span></a> as the computed value\nfor <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-height\" class=\"noxref\"><span class=\"propinst-height\">'height'</span></a>."
+        }
+      ]
+    },
+    {
+      "html": "The size of the image is calculated from the following rules:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the image has a intrinsic width and height, the used width and\nheight are the intrinsic width and height."
+        },
+        {
+          "html": "Otherwise, if the image has an intrinsic ratio and either an\nintrinsic width or an intrinsic height, the used width/height is the\nsame as the provided intrinsic width/height, and the used value of the\nmissing dimension is calculated from the provided dimension and the\nratio."
+        },
+        {
+          "html": "Otherwise, if the image has an intrinsic ratio, the used width is\n1em and the used height is calculated from this width and the\nintrinsic ratio. If this would produce a height larger than 1em, then\nthe used height is instead set to 1em and the used width is calculated\nfrom this height and the intrinsic ratio."
+        },
+        {
+          "html": "Otherwise, the image's used width is its intrinsic width if it has\none, or else 1em. The image's used height is its intrinsic height if\nit has one, or else 1em."
+        }
+      ]
+    },
+    {
+      "html": "Because there is no accepted, universal taxonomy of font\nproperties, matching of properties to font faces must be done\ncarefully. The properties are matched in a well-defined order to\ninsure that the results of this matching process are as consistent as\npossible across UAs (assuming that the same library of font faces is\npresented to each of them).",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The User Agent makes (or accesses) a database of relevant CSS&nbsp;2.1\nproperties of all the fonts of which the UA is aware.\nIf there are two fonts with exactly the same properties, the user\nagent selects one of them."
+        },
+        {
+          "html": "At a given element and for each character in that element, the UA\nassembles the font properties applicable to that element. Using the\ncomplete set of properties, the UA uses the 'font-family' property to\nchoose a tentative font family. The remaining properties are tested\nagainst the family according to the matching criteria described with\neach property. If there are matches for all the remaining properties,\nthen that is the matching font face for the given element or character."
+        },
+        {
+          "html": "If there is no matching font face within the 'font-family' being\nprocessed by step 2, and if there is a next alternative 'font-family'\nin the font set, then repeat step 2 with the next alternative\n'font-family'."
+        },
+        {
+          "html": "If there is a matching font face, but it does not contain a glyph\nfor the current character, and if there is a next alternative\n'font-family' in the font sets, then repeat step 2 with the next\nalternative 'font-family'."
+        },
+        {
+          "html": "If there is no font within the family selected in 2, then use a\n   UA-dependent default 'font-family' and repeat step 2, using the best\n   match that can be obtained within the default font. If a particular\n   character cannot be displayed using this font, then the UA may use other\n   means to determine a suitable font for that character. The UA should map\n   each character for which it has no suitable font to a visible symbol\n   chosen by the UA, preferably a \"missing character\" glyph from one of the\n   font faces available to the UA."
+        }
+      ]
+    },
+    {
+      "html": "For each inline element (including anonymous inline elements), the\nfollowing steps are performed, treating bidi formatting characters as if\nthey were not there:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Each tab (U+0009), carriage return (U+000D), or space (U+0020) \ncharacter surrounding a linefeed (U+000A) character is removed if \n'white-space' is set to 'normal', 'nowrap', or 'pre-line'."
+        },
+        {
+          "html": "If 'white-space' is set to 'pre' or 'pre-wrap', any sequence of\n     spaces (U+0020) unbroken by an element boundary is treated as a\n     sequence of non-breaking spaces. However, for 'pre-wrap', a line breaking\n     opportunity exists at the end of the sequence."
+        },
+        {
+          "html": "If 'white-space' is set to 'normal' or 'nowrap', linefeed\n     characters are transformed for rendering purpose into one of the\n     following characters: a space character, a zero width space\n     character (U+200B), or no character (i.e., not rendered),\n     according to UA-specific algorithms based on the content script."
+        },
+        {
+          "html": "If 'white-space' is set to 'normal', 'nowrap', or 'pre-line',",
+          "ignored": [
+            "every tab (U+0009) is converted to a space (U+0020) any space (U+0020) following another space (U+0020) — even a space before the inline, if that space also has 'white-space' set to 'normal', 'nowrap' or 'pre-line' — is removed."
+          ]
+        }
+      ]
+    },
+    {
+      "html": "As each line is laid out,",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If a space (U+0020) at the beginning of a line has 'white-space'\n     set to 'normal', 'nowrap', or 'pre-line', it is removed."
+        },
+        {
+          "html": "All tabs (U+0009) are rendered as a horizontal shift that lines\n     up the start edge of the next glyph with the next tab stop. Tab\n     stops occur at points that are multiples of 8 times the width of\n     a space (U+0020) rendered in the block's font from the block's\n     starting content edge."
+        },
+        {
+          "html": "If a space (U+0020) at the end of a line has 'white-space' set to\n     'normal', 'nowrap', or 'pre-line', it is also removed."
+        },
+        {
+          "html": "If spaces (U+0020) or tabs (U+0009) at the end of a line have\n     'white-space' set to 'pre-wrap', UAs may visually collapse them."
+        }
+      ]
+    },
+    {
+      "html": "The following steps are performed in three stages.",
+      "rationale": "remove",
+      "steps": [
+        {
+          "html": "Remove irrelevant boxes:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "All child boxes of a 'table-column' parent are treated as if\n          they had 'display: none'."
+            },
+            {
+              "html": "If a child <var>C</var> of a 'table-column-group' parent is\n          not a 'table-column' box, then it is treated as if it had\n          'display: none'."
+            },
+            {
+              "html": "If a child <var>C</var> of a tabular container <var>P</var>\n          is an anonymous inline box that contains only white space,\n          and its immediately preceding and following siblings, if\n          any, are proper table descendants of <var>P</var> and are\n          either 'table-caption' or internal table boxes, then it is\n          treated as if it had 'display: none'. A box <var>D</var> is\n          a proper table descendant of <var>A</var> if <var>D</var>\n          can be a descendant of <var>A</var> without causing the\n          generation of any intervening 'table' or 'inline-table'\n          boxes."
+            },
+            {
+              "html": "If a box <var>B</var> is an anonymous inline containing only\n          white space, and is between two immediate siblings each of\n          which is either an internal table box or a 'table-caption'\n          box then <var>B</var> is treated as if it had 'display:\n          none'."
+            }
+          ]
+        },
+        {
+          "html": "Generate missing child wrappers:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If a child <var>C</var> of a 'table' or 'inline-table' box\n          is not a proper table child, then generate an anonymous\n          'table-row' box around <var>C</var> and all consecutive\n          siblings of <var>C</var> that are not proper table children."
+            },
+            {
+              "html": "If a child <var>C</var> of a row group box is not a\n          'table-row' box, then generate an anonymous 'table-row' box\n          around <var>C</var> and all consecutive siblings\n          of <var>C</var> that are not 'table-row' boxes."
+            },
+            {
+              "html": "If a child <var>C</var> of a 'table-row' box is not a\n          'table-cell', then generate an anonymous 'table-cell' box\n          around <var>C</var> and all consecutive siblings\n          of <var>C</var> that are not 'table-cell' boxes."
+            }
+          ]
+        },
+        {
+          "html": "Generate missing parents:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "For each 'table-cell' box <var>C</var> in a sequence of\n           consecutive internal table and 'table-caption' siblings,\n           if <var>C</var>'s parent is not a 'table-row' then generate\n           an anonymous 'table-row' box around <var>C</var> and all\n           consecutive siblings of <var>C</var> that are 'table-cell'\n           boxes."
+            },
+            {
+              "html": "For each proper table child <var>C</var> in a sequence of\n           consecutive proper table children, if <var>C</var> is\n           misparented then generate an anonymous 'table' or\n           'inline-table' box <var>T</var> around <var>C</var> and all\n           consecutive siblings of <var>C</var> that are proper table\n           children. (If C's parent is an 'inline' box,\n           then <var>T</var> must be an 'inline-table' box; otherwise\n           it must be a 'table' box.)\n           <ul>\n             <li>A 'table-row' is misparented if its parent is neither\n               a row group box nor a 'table' or 'inline-table' box.\n             </li><li>A 'table-column' box is misparented if its parent is\n               neither a 'table-column-group' box nor a 'table' or\n               'inline-table' box.\n             </li><li>A row group box, 'table-column-group' box, or\n               'table-caption' box is misparented if its parent is\n               neither a 'table' box nor an 'inline-table' box.\n           </li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "In the fixed table layout algorithm, the width of each column is\ndetermined as follows:",
+      "rationale": "/^otherwise(\\,| )/i",
+      "steps": [
+        {
+          "html": "A column element with a value other than 'auto' for the <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" class=\"noxref\"><span class=\"propinst-width\">'width'</span></a> property sets the width for\n  that column."
+        },
+        {
+          "html": "Otherwise, a cell in the first row with a value other than\n  'auto' for the <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" class=\"noxref\"><span class=\"propinst-width\">'width'</span></a> property\n  determines the width for that column. If the cell spans more than\n  one column, the width is divided over the columns."
+        },
+        {
+          "html": "Any remaining columns equally divide the remaining horizontal\n  table space (minus borders or cell spacing)."
+        }
+      ]
+    },
+    {
+      "html": "Column widths are determined as follows:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p>Calculate the minimum content width (MCW) of each cell: the\n  formatted content may span any number of lines but may not overflow\n  the cell box. If the specified <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" class=\"noxref\"><span class=\"propinst-width\">'width'</span></a> (W) of the cell is greater\n  than MCW, W is the minimum cell width. A value of 'auto' means that\n  MCW is the minimum cell width.\n\n  </p><p>Also, calculate the \"maximum\" cell width of each cell: formatting\n  the content without breaking lines other than where explicit line\n  breaks occur.\n\n  </p>"
+        },
+        {
+          "html": "<p>For each column, determine a maximum and minimum column width\n  from the cells that span only that column. The minimum is that\n  required by the cell with the largest minimum cell width (or the\n  column <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" class=\"noxref\"><span class=\"propinst-width\">'width'</span></a>, whichever is\n  larger). The maximum is that required by the cell with the largest\n  maximum cell width (or the column <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" class=\"noxref\"><span class=\"propinst-width\">'width'</span></a>, whichever is larger).\n\n  </p>"
+        },
+        {
+          "html": "<p>For each cell that spans more than one column, increase the\n  minimum widths of the columns it spans so that together, they are at\n  least as wide as the cell. Do the same for the maximum widths. If\n  possible, widen all spanned columns by approximately the same\n  amount.\n\n  </p>"
+        },
+        {
+          "html": "<p>For each column group element with a 'width' other than\n  'auto', increase the minimum widths of the columns it spans, so that\n  together they are at least as wide as the column group's 'width'.\n\n</p>"
+        }
+      ]
+    },
+    {
+      "html": "Column and caption\nwidths influence the final table width as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the 'table' or 'inline-table' element's <a href=\"https://www.w3.org/TR/CSS21/visudet.html#propdef-width\" class=\"noxref\"><span class=\"propinst-width\">'width'</span></a> property has a computed value\n  (W) other than 'auto', the used width is\n  the greater of W, CAPMIN, and the minimum width required by all the\n  columns plus cell spacing or borders (MIN). If the used width is\n  greater than MIN, the\n  extra width should be distributed over the columns."
+        },
+        {
+          "html": "If the 'table' or 'inline-table' element has 'width: auto',\n  the used width is the greater of the table's containing block width,\n  CAPMIN, and MIN. However, if either CAPMIN or the maximum width\n  required by the columns plus cell spacing or borders (MAX) is less\n  than that of the containing block, use max(MAX, CAPMIN)."
+        }
+      ]
+    },
+    {
+      "html": "To avoid ambiguous situations, the alignment of cells proceeds in\nthe following order:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "First the cells that are aligned on their baseline are\n  positioned. This will establish the baseline of the row. Next the\n  cells with 'vertical-align: top' are positioned."
+        },
+        {
+          "html": "The row now has a top, possibly a baseline, and a provisional\n  height, which is the distance from the top to the lowest bottom of\n  the cells positioned so far. (See conditions on the cell padding\n  below.)"
+        },
+        {
+          "html": "If any of the remaining cells, those aligned at the bottom or\n  the middle, have a height that is larger than the current height of\n  the row, the height of the row will be increased to the maximum of\n  those cells, by lowering the bottom."
+        },
+        {
+          "html": "Finally the remaining cells are positioned."
+        }
+      ]
+    },
+    {
+      "html": "The following rules determine which border style \"wins\" in case of\na conflict:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Borders with the <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-border-style\" class=\"noxref\"><span class=\"propinst-border-style\">'border-style'</span></a> of 'hidden' take\n  precedence over all other conflicting borders. Any border with this\n  value suppresses all borders at this location."
+        },
+        {
+          "html": "Borders with a style of 'none' have the lowest priority. Only if\n  the border properties of all the elements meeting at this edge are\n  'none' will the border be omitted (but note that 'none' is the\n  default value for the border style.)"
+        },
+        {
+          "html": "If none of the styles are 'hidden' and at least one of them is\n  not 'none', then narrow borders are discarded in favor of wider\n  ones. If several have the same <a href=\"https://www.w3.org/TR/CSS21/box.html#propdef-border-width\" class=\"noxref\"><span class=\"propinst-border-width\">'border-width'</span></a> then styles are\n  preferred in this order: 'double', 'solid', 'dashed', 'dotted',\n  'ridge', 'outset', 'groove', and the lowest: 'inset'."
+        },
+        {
+          "html": "If border styles differ only in color, then a style set on a\n  cell wins over one on a row, which wins over a row group, column,\n  column group and, lastly, table. When two elements of the same type\n  conflict, then the one further to the left (if the table's\n  'direction' is 'ltr'; right, if it is 'rtl') and further to the top\n  wins."
+        }
+      ]
+    },
+    {
+      "name": "run-in box",
+      "href": null,
+      "html": "<del>A <dfn>run-in box</dfn> behaves as follows:</del>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<del>If the run-in box contains a block box, the run-in box\nbecomes a block box.</del>"
+        },
+        {
+          "html": "<del>If a sibling block box (that does not float and is not\nabsolutely positioned) follows the run-in box, the run-in box becomes\nthe first inline box of the block box.  A run-in cannot run in to a\nblock that already starts with a run-in or that itself is a\nrun-in.</del>"
+        },
+        {
+          "html": "<del>Otherwise, the run-in box becomes a block box.</del>"
+        }
+      ]
+    },
+    {
+      "name": "run-in element",
+      "href": null,
+      "html": "<ins>A <dfn>run-in element</dfn> (or pseudo-element) <var>A</var>\nbehaves as follows:</ins>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<ins>If <var>A</var> has any children that inhibit run-in\n  behavior (see below), then <var>A</var> is rendered as if it had\n  'display: block'.</ins>"
+        },
+        {
+          "html": "<ins>Let <var>B</var> be the first of <var>A</var>'s following\n  siblings that is neither floating nor absolutely positioned nor has\n  'display: none'. If <var>B</var> exists and has a specified value\n  for 'display' of 'block' or 'list-item' and is not replaced, then\n  <var>A</var> is rendered as an 'inline' element at the start of\n  <var>B</var>'s principal box. Note: <var>A</var> is rendered before\n  <var>B</var>'s ':before' pseudo-element, if any. See 12.1.</ins>"
+        },
+        {
+          "html": "<ins>Otherwise, <var>A</var> is rendered as if it had 'display:\n  block'.</ins>"
+        }
+      ]
+    },
+    {
+      "html": "<ins>Then the amount of clearance is</ins> set to the greater of:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The amount necessary to place the border edge of the block even\nwith the bottom outer edge of the lowest float that is to be cleared."
+        },
+        {
+          "html": "<del>The amount necessary to make the sum of the following equal\nto the distance to which these margins collapsed when the hypothetical\nposition was calculated:</del>\n\n<ul>\n<li><del>the margins collapsing above the clearance</del>\n</li><li><del>the clearance itself</del>\n</li><li><del>if the block's own margins collapse together: the block's top\nmargin</del>\n</li><li><del>if the block's own margins do not collapse together: the\nmargins collapsing below the clearance</del>\n</li></ul>\n\n<p><ins>The amount necessary to place the top border\nedge of the block at its hypothetical position.</ins>\n</p>"
+        }
+      ]
+    },
+    {
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "[…]"
+        },
+        {
+          "html": "For other elements, if the element's position is 'relative' or\n'static', the containing block is formed by the content edge of the\nnearest <del>block-level, table cell or inline-block</del> <ins>block\ncontainer</ins> ancestor box."
+        },
+        {
+          "html": "[…]"
+        },
+        {
+          "html": "[…]",
+          "ignored": [
+            "In the case that the ancestor is inline-level an inline box, the containing block depends on the 'direction' property of the ancestor:"
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The height of each inline box in the line box is calculated (see\n  \"Calculating heights and margins\" and the 'line-height' property)."
+        },
+        {
+          "html": "The inline boxes are aligned vertically according to their\n  'vertical-align' property. <ins>In case they are aligned 'top' or\n  'bottom', they must be aligned so as to minimize the line box\n  height. If such boxes are tall enough, there are multiple solutions\n  and CSS&nbsp;2.1 does not define the position of the line box's\n  baseline (i.e., the position of the strut, see below).</ins>"
+        },
+        {
+          "html": "The line box height is the distance between the uppermost box\n  top and the lowermost box bottom. <ins>(This includes the strut, as\n  explained under 'line-height' below.)</ins>"
+        },
+        {
+          "html": "<del>If the resulting height is smaller than the minimal height\n  of line boxes for this block, as specified by the 'line-height'\n  property, the height is increased to be that minimal height.</del>"
+        }
+      ]
+    },
+    {
+      "html": "Column <ins>and caption</ins>\nwidths influence the final table width as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the 'table' or 'inline-table' element's 'width' property has\n  a computed value (W) other than 'auto', the <del>property's value as\n  used for layout</del> <ins>used width</ins> is the greater of\n  W<ins>, CAPMIN,</ins> and the minimum width required by all the\n  columns plus cell spacing or borders (MIN). If <del>W</del> <ins>the\n  used width</ins>is greater than MIN, the extra width should be\n  distributed over the columns."
+        },
+        {
+          "html": "If the 'table' or 'inline-table' element has 'width: auto', the\n  <del>table width used for layout</del> <ins>used width</ins> is the\n  greater of the table's containing block width<ins>, CAPMIN,</ins>\n  and MIN. However, if <ins>either CAPMIN or</ins> the maximum width\n  required by the columns plus cell spacing or borders (MAX) is less\n  than that of the containing block, use <del>MAX</del> <ins>max(MAX,\n  CAPMIN)</ins>."
+        }
+      ]
+    },
+    {
+      "html": "4. If the element has 'position: absolute' [&amp;hellip] following way;",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "In the case that the ancestor is an <del>inline box</del>\n<ins>inline-level element</ins>, the containing block <del>depends on\nthe <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-direction\" class=\"noxref\"><span class=\"propinst-direction\">'direction'</span></a> property of\nthe ancestor:</del> <ins>is the bounding box around the padding boxes\nof the first and the\nlast inline boxes generated for that element. In CSS&nbsp;2.1, if the\ninline element is split across multiple lines, the containing\nblock is undefined.</ins>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<del>If the <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-direction\" class=\"noxref\"><span class=\"propinst-direction\">'direction'</span></a> is\n'ltr', the top and left of the containing block are the top and left\npadding edges of the first box generated by the ancestor, and the\nbottom and right are the bottom and right padding edges of the last\nbox of the ancestor.</del>"
+            },
+            {
+              "html": "<del>If the <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-direction\" class=\"noxref\"><span class=\"propinst-direction\">'direction'</span></a> is\n'rtl', the top and right are the top and right padding edges of the\nfirst box generated by the ancestor, and the bottom and left are the\nbottom and left padding edges of the last box of the ancestor.</del>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<del>If the image has an intrinsic width or height, then that\nintrinsic width/height becomes the image's used width/height.</del>\n<ins>If the image has a intrinsic width and height, the used width and\nheight are the intrinsic width and height.</ins>"
+        },
+        {
+          "html": "<del>If the image has no intrinsic ratio and a ratio cannot be\ncalculated from its width and height, then its intrinsic ratio is\nassumed to be 1:1.</del> <ins>Otherwise, if the image has an intrinsic\nratio and either an intrinsic width or an intrinsic height, the used\nwidth/height is the same as the provided intrinsic width/height, and\nthe used value of the missing dimension is calculated from the\nprovided dimension and the ratio.</ins>"
+        },
+        {
+          "html": "<del>If the image has a width but no height, its height is\ncalculated from the intrinsic ratio.</del> <ins>Otherwise, if the\nimage has an intrinsic ratio, the used width is 1em and the used\nheight is calculated from this width and the intrinsic ratio.  If this\nwould produce a height larger than 1em, then the used height is\ninstead set to 1em and the used width is calculated from this height\nand the intrinsic ratio.</ins>"
+        },
+        {
+          "html": "<del>If the image's height cannot be resolved from the rules\nabove, then the image's height is assumed to be 1em.</del>\n<ins>Otherwise, the image's used width is its intrinsic width if it\nhas one, or else 1em.  The image's used height is its intrinsic height\nif it has one, or else 1em.</ins>"
+        },
+        {
+          "html": "<del>If the image has no intrinsic width, then its width is\ncalculated from the resolved height and the intrinsic ratio.</del>"
+        }
+      ]
+    },
+    {
+      "html": "The painting order for the descendants of an element generating\n    a stacking context (see the <a href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-z-index\" class=\"noxref\"><span class=\"propinst-z-index\">'z-index'</span></a> property) is:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the element is a root element:\n\t</p>",
+          "ignored": [
+            "background color of element over the entire canvas. background image of element, over the entire canvas, anchored at the origin that would be used if it was painted for the root element."
+          ]
+        },
+        {
+          "html": "<p>If the element is a block, list-item, or other block\n\tequivalent:\n\t</p>\n\n\t<p>Otherwise, if the element is a block level table:\n\t</p>",
+          "ignored": [
+            "background color of element unless it is the root element. background image of element unless it is the root element. border of element.",
+            "table backgrounds (color then image) unless it is the root element. column group backgrounds (color then image). column backgrounds (color then image). row group backgrounds (color then image). row backgrounds (color then image). cell backgrounds (color then image). all table borders (in tree order for separated borders)."
+          ]
+        },
+        {
+          "html": "<p>Stacking contexts formed by positioned descendants with\n\tnegative z-indices (excluding 0) in z-index order (most\n\tnegative first) then tree order.\n\n      </p>"
+        },
+        {
+          "html": "<p>For all its in-flow, non-positioned, block-level\n\tdescendants in tree order: If the element is a block,\n\tlist-item, or other block equivalent:\n\t</p>\n\n\t<p>Otherwise, the element is a table:\n\t</p>",
+          "ignored": [
+            "background color of element. background image of element. border of element.",
+            "table backgrounds (color then image). column group backgrounds (color then image). column backgrounds (color then image). row group backgrounds (color then image). row backgrounds (color then image). cell backgrounds (color then image). all table borders (in tree order for separated borders)."
+          ]
+        },
+        {
+          "html": "<p>All non-positioned floating descendants, in tree order. For\n\teach one of these, treat the element as if it created a new\n\tstacking context, but any positioned descendants and\n\tdescendants which actually create a new stacking context\n\tshould be considered part of the parent stacking context, not\n\tthis new one.\n\n      </p>"
+        },
+        {
+          "html": "If the element is an inline element that generates a\n\tstacking context, then:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "For each line box that the element is in:",
+              "rationale": "jump",
+              "steps": [
+                {
+                  "html": "Jump to <a href=\"https://www.w3.org/TR/CSS21/zindex.html#each-box\">7.2.1</a> for the\n\t      box(es) of the element in that line box (in tree order)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Otherwise: first for the element, then for all its in-flow,\n\tnon-positioned, block-level descendants in tree order:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the element is a block-level replaced element, then:\n\t    the replaced content, atomically.\n\n\t  </p>"
+            },
+            {
+              "html": "Otherwise, for each line box of that element:",
+              "rationale": "for",
+              "steps": [
+                {
+                  "html": "For each box that is a child of that element, in\n\t\tthat line box, in tree order:",
+                  "rationale": "for",
+                  "steps": [
+                    {
+                      "html": "<p>background color of element.\n\t\t  </p>"
+                    },
+                    {
+                      "html": "<p>background image of element.\n\t\t  </p>"
+                    },
+                    {
+                      "html": "<p>border of element.\n\t\t  </p>"
+                    },
+                    {
+                      "html": "For inline elements:",
+                      "rationale": "for",
+                      "steps": [
+                        {
+                          "html": "For all the element's in-flow,\n\t\t\tnon-positioned, inline-level children that are\n\t\t\tin this line box, and all runs of text inside\n\t\t\tthe element that is on this line box, in tree\n\t\t\torder:",
+                          "rationale": "if",
+                          "steps": [
+                            {
+                              "html": "<p>If this is a run of text, then:\n\t\t\t    </p>",
+                              "ignored": [
+                                "any underlining affecting the text of the element, in tree order of the elements applying the underlining (such that the deepest element's underlining, if any, is painted topmost and the root element's underlining, if any, is drawn bottommost). any overlining affecting the text of the element, in tree order of the elements applying the overlining (such that the deepest element's overlining, if any, is painted topmost and the root element's overlining, if any, is drawn bottommost). the text. any line-through affecting the text of the element, in tree order of the elements applying the line-through (such that the deepest element's line-through, if any, is painted topmost and the root element's line-through, if any, is drawn bottommost)."
+                              ]
+                            },
+                            {
+                              "html": "<p>Otherwise, jump to <a href=\"https://www.w3.org/TR/CSS21/zindex.html#each-box\">7.2.1</a> for that\n\t\t\t    element.\n\t\t\t</p>"
+                            }
+                          ]
+                        }
+                      ],
+                      "additional": [
+                        {
+                          "html": "For inline-block and inline-table elements:",
+                          "rationale": "for",
+                          "steps": [
+                            {
+                              "html": "For each one of these, treat the element as\n\t\t      if it created a new stacking context, but any\n\t\t      positioned descendants and descendants which\n\t\t      actually create a new stacking context should be\n\t\t      considered part of the parent stacking context,\n\t\t      not this new one."
+                            }
+                          ]
+                        }
+                      ],
+                      "ignored": [
+                        "the replaced content, atomically."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Optionally, the outline of the element (see <a href=\"https://www.w3.org/TR/CSS21/zindex.html#outlines\">10 below</a>).\n\t    </p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Optionally, if the element is block-level, the outline\n\t    of the element (see <a href=\"https://www.w3.org/TR/CSS21/zindex.html#outlines\">10 below</a>).\n\t</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>All positioned descendants with 'z-index: auto' or\n\t'z-index: 0', in tree order. For those with 'z-index: auto',\n\ttreat the element as if it created a new stacking context, but\n\tany positioned descendants and descendants which actually\n\tcreate a new stacking context should be considered part of the\n\tparent stacking context, not this new one. For those with\n\t'z-index: 0', treat the stacking context generated atomically.\n\n      </p>"
+        },
+        {
+          "html": "<p>Stacking contexts formed by positioned descendants with\n\tz-indices greater than or equal to 1 in z-index order\n\t(smallest first) then tree order.\n\n      </p>"
+        },
+        {
+          "html": "<p>Finally, implementations that do not draw outlines in steps\n\tabove must draw outlines from this stacking context at this\n\tstage. (It is recommended to draw outlines in this step and\n\tnot in the steps above.)\n    </p>"
+        }
+      ]
+    }
+  ]
+}

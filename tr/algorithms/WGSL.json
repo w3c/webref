@@ -1,0 +1,178 @@
+{
+  "spec": {
+    "title": "WebGPU Shading Language",
+    "url": "https://www.w3.org/TR/WGSL/"
+  },
+  "algorithms": [
+    {
+      "html": "Triggered diagnostics <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#behavioral-requirements\" id=\"ref-for-behavioral-requirements③\">will</a> be processed as follows:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p>For each diagnostic <em>D</em>, find the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#diagnostic-filter\" id=\"ref-for-diagnostic-filter\">diagnostic filter</a> with the smallest <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#affected-range\" id=\"ref-for-affected-range\">affected range</a> that contains D’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#diagnostic-triggering-location\" id=\"ref-for-diagnostic-triggering-location①\">triggering location</a>, and which has the same <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#diagnostic-triggering-rule\" id=\"ref-for-diagnostic-triggering-rule②\">triggering rule</a>.</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If such a filter exists, apply it to <em>D</em>, updating <em>D</em>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#diagnostic-severity\" id=\"ref-for-diagnostic-severity①\">severity</a>.</p>\n      </li><li data-md=\"\">\n       <p>Otherwise <em>D</em> remains unchanged.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>Discard diagnostics that have severity <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#severity-off\" id=\"ref-for-severity-off\">off</a>.</p>"
+        },
+        {
+          "html": "<p>If at least one remaining diagnostic <em>DI</em> has severity <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#severity-info\" id=\"ref-for-severity-info\">info</a>, then:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Other <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#severity-info\" id=\"ref-for-severity-info①\">info</a> diagnostics with same triggering rule <em>may</em> be discarded, leaving only the original diagnostic <em>DI</em>.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>If at least one remaining diagnostic <em>DW</em> has severity <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#severity-warning\" id=\"ref-for-severity-warning\">warning</a>, then:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Other <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#severity-info\" id=\"ref-for-severity-info②\">info</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#severity-warning\" id=\"ref-for-severity-warning①\">warning</a> diagnostics with same triggering rule <em>may</em> be discarded, leaving only the original diagnostic <em>DW</em>.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>If at least one remaining diagnostic has <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#severity-error\" id=\"ref-for-severity-error\">error</a> severity, then:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Other diagnostics <em>may</em> be discarded, including other diagnostics with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#severity-error\" id=\"ref-for-severity-error①\">error</a> severity.</p>\n      </li><li data-md=\"\">\n       <p>A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#program-error\" id=\"ref-for-program-error\">program error</a> is generated.</p>\n       <ul>\n        <li data-md=\"\">\n         <p>The error is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#shader-creation-error\" id=\"ref-for-shader-creation-error②\">shader-creation error</a> if the diagnostic was triggered at <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#shader-module-creation\" id=\"ref-for-shader-module-creation③\">shader module creation</a> time.</p>\n        </li><li data-md=\"\">\n         <p>The error is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#pipeline-creation-error\" id=\"ref-for-pipeline-creation-error②\">pipeline-creation error</a> if the diagnostic was triggered at <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#pipeline-creation\" id=\"ref-for-pipeline-creation②\">pipeline creation</a> time.</p>\n       </li></ul>\n     </li></ul>"
+        },
+        {
+          "html": "<p>If processing during <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#shader-module-creation\" id=\"ref-for-shader-module-creation④\">shader module creation</a> time, the remaining diagnostics populate the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucompilationinfo-messages\" id=\"ref-for-dom-gpucompilationinfo-messages\">messages</a></code> member of the WebGPU <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#gpucompilationinfo\" id=\"ref-for-gpucompilationinfo\">GPUCompilationInfo</a></code> object.</p>"
+        },
+        {
+          "html": "<p>If processing during <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#pipeline-creation\" id=\"ref-for-pipeline-creation③\">pipeline creation</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#severity-error\" id=\"ref-for-severity-error②\">error</a> diagnostics\nresult in WebGPU validation failure when validating <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#gpuprogrammablestage\" id=\"ref-for-gpuprogrammablestage③\">GPUProgrammableStage</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "rationale": "remove",
+      "steps": [
+        {
+          "html": "<p>Remove <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#comment\" id=\"ref-for-comment①\">comments</a>:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Replace the first comment with a space code point (<code>U+0020</code>).</p>\n       </li><li data-md=\"\">\n        <p>Repeat until no comments remain.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Find <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#template-list\" id=\"ref-for-template-list\">template lists</a>, using the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#template-list-discovery\" id=\"ref-for-template-list-discovery\">algorithm</a> in <a href=\"https://www.w3.org/TR/WGSL/#template-lists-sec\">§ 3.9 Template Lists</a>.</p>"
+        },
+        {
+          "html": "<p>Parse the whole text, attempting to match the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#syntax-translation_unit\" id=\"ref-for-syntax-translation_unit\">translation_unit</a> grammar rule.\nParsing uses a LALR(1) parser (one token of lookahead) <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/WGSL/#biblio-deremer1969\" title=\"Practical Translators for LR(k) Languages\">[DeRemer1969]</a>, with the following customization:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Tokenization is interleaved with parsing, and is context-aware.\nWhen the parser requests the next token:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>Consume and ignore an initial sequence of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#blankspace\" id=\"ref-for-blankspace①\">blankspace</a> code points.</p>\n         </li><li data-md=\"\">\n          <p>If the next code point is the start of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#template-list\" id=\"ref-for-template-list①\">template list</a>, consume it and return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#syntax_sym-_template_args_start\" id=\"ref-for-syntax_sym-_template_args_start\">_template_args_start</a>.</p>\n         </li><li data-md=\"\">\n          <p>If the next code point is the end of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#template-list\" id=\"ref-for-template-list②\">template list</a>, consume it and return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#syntax_sym-_template_args_end\" id=\"ref-for-syntax_sym-_template_args_end\">_template_args_end</a>.</p>\n         </li><li data-md=\"\">\n          <p>Otherwise:</p>\n          <ul>\n           <li data-md=\"\">\n            <p>A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"token-candidate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">token candidate</dfn> is any WGSL <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#token\" id=\"ref-for-token①\">token</a> formed from the non-empty prefix of the remaining unconsumed code points.</p>\n           </li><li data-md=\"\">\n            <p>The token returned is the longest <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#token-candidate\" id=\"ref-for-token-candidate\">token candidate</a> that is also a valid lookahead token for the current parser state. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/WGSL/#biblio-vanwyk2007\" title=\"Context-Aware Scanning for Parsing Extensible Languages\">[VanWyk2007]</a></p>\n          </li></ul>\n        </li></ul>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "html": "Overload resolution for <var>P</var> proceeds as follows, with the goal of finding a single most <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#preferable-candidate\" id=\"ref-for-preferable-candidate\">preferable</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#overload-candidates\" id=\"ref-for-overload-candidates\">overload candidate</a>:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p>For each candidate <var>C</var>, enumerate conversion ranks for subexpressions in the syntactic phrase.\nThe candidate’s preconditions have been met, and so for the <var>i</var>’th subexpression in the <var>P</var>:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Its static type has been computed.</p>\n      </li><li data-md=\"\">\n       <p>There is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#feasible-automatic-conversion\" id=\"ref-for-feasible-automatic-conversion③\">feasible automatic conversion</a> from the expression’s static type to the type required by the corresponding type assertion in the preconditions.\nLet <var>C</var>.<var>R</var>(i) be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#conversionrank\" id=\"ref-for-conversionrank②\">ConversionRank</a> of that conversion.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>Eliminate any candidate where one of its subexpressions resolves to an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#type-abstract\" id=\"ref-for-type-abstract②\">abstract</a> type after <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#feasible-automatic-conversion\" id=\"ref-for-feasible-automatic-conversion④\">feasible automatic conversions</a>, but another\nof the candidate’s subexpressions is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#const-expressions\" id=\"ref-for-const-expressions③\">const-expression</a>.</p>"
+        },
+        {
+          "html": "<p>Rank candidates: Given two overload candidates <var>C1</var> and <var>C2</var>, <var>C1</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"preferable candidate\" data-noexport=\"\" id=\"preferable-candidate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">preferred</dfn> over <var>C2</var> if:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>For each expression position <var>i</var> in <var>P</var>, <var>C1</var>.<var>R</var>(i) ≤ <var>C2</var>.<var>R</var>(i).</p>\n       <ul>\n        <li data-md=\"\">\n         <p>That is, each expression conversion required to apply <var>C1</var> to <var>P</var> is at least as preferable as the corresponding expression conversion required to apply <var>C2</var> to <var>P</var>.</p>\n       </li></ul>\n      </li><li data-md=\"\">\n       <p>There is at least one expression position <var>i</var> where <var>C1</var>.<var>R</var>(i) &lt; <var>C2</var>.<var>R</var>(i).</p>\n       <ul>\n        <li data-md=\"\">\n         <p>That is, there is at least one expression conversion required to apply <var>C1</var> that is strictly more preferable than the corresponding conversion required to apply <var>C2</var>.</p>\n       </li></ul>\n     </li></ul>"
+        },
+        {
+          "html": "<p>If there is a single candidate <var>C</var> which is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#preferable-candidate\" id=\"ref-for-preferable-candidate①\">preferred</a> over all the others, then overload resolution succeeds, yielding the candidate type rule <var>C</var>.\n  Otherwise, overload resolution fails.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Each kind of value or variable declaration may place additional constraints on\nthe form of the initializer expression, if present, and on the\neffective-value-type.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Only <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#const-declaration\" id=\"ref-for-const-declaration①\">const-declarations</a> can be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#type-abstract\" id=\"ref-for-type-abstract④\">abstract</a> types, and only when\nthe type is not explicitly specified.</p>"
+        },
+        {
+          "html": "<p>The type of the expression must be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#feasible-automatic-conversion\" id=\"ref-for-feasible-automatic-conversion⑦\">feasibly\nconverted</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#effective-value-type\" id=\"ref-for-effective-value-type②\">effective-value-type</a>.</p>"
+        },
+        {
+          "html": "<p>If an initializer is not specified, a value must be provided at <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#pipeline-creation\" id=\"ref-for-pipeline-creation⑦\">pipeline-creation time</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#override-declaration\" id=\"ref-for-override-declaration②\">Override-declarations</a> are part of the shader interface, but are not\nbound resources.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#storage-buffer\" id=\"ref-for-storage-buffer①①\">Storage buffers</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#type-storage-texture\" id=\"ref-for-type-storage-texture④\">storage textures</a> with an access mode other\nthan <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#access-read\" id=\"ref-for-access-read④\">read</a> cannot be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#statically-accessed\" id=\"ref-for-statically-accessed③\">statically accessed</a> in a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#vertex-shader-stage\" id=\"ref-for-vertex-shader-stage\">vertex shader\nstage</a>.\nSee WebGPU <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudevice-createbindgrouplayout\" id=\"ref-for-dom-gpudevice-createbindgrouplayout\">createBindGroupLayout()</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#atomic-type\" id=\"ref-for-atomic-type⑦\">Atomic types</a> can only appear in mutable storage buffers or workgroup\nvariables.</p>"
+        },
+        {
+          "html": "<p>The data in <a href=\"https://www.w3.org/TR/WGSL/#texture-storage\">storage textures</a> with a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#access-write\" id=\"ref-for-access-write②\">write</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#access-read_write\" id=\"ref-for-access-read_write⑧\">read_write</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#access-mode\" id=\"ref-for-access-mode①②\">access mode</a> is mutable, but can only be\nmodified via <a href=\"https://www.w3.org/TR/WGSL/#texturestore\">textureStore</a> built-in function.\nThe variable itself cannot be modified.</p>"
+        },
+        {
+          "html": "<p>Variables in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#address-spaces-workgroup\" id=\"ref-for-address-spaces-workgroup①⓪\">workgroup</a> address space can only be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#statically-accessed\" id=\"ref-for-statically-accessed④\">statically accessed</a> in a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#compute-shader-stage\" id=\"ref-for-compute-shader-stage①\">compute shader stage</a>.</p>"
+        },
+        {
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#element-count\" id=\"ref-for-element-count②\">element count</a> of the outermost <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#array\" id=\"ref-for-array⑥\">array</a> may be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#override-expressions\" id=\"ref-for-override-expressions⑥\">override-expression</a>.</p>"
+        },
+        {
+          "html": "<p>If there is no initializer, the variable is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#default-initial-value\" id=\"ref-for-default-initial-value\">default\ninitialized</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "In detail, when a function call is executed the following steps occur:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Function call argument values are evaluated.\nThe relative order of evaluation is left-to-right.</p>"
+        },
+        {
+          "html": "<p>Execution of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#calling-function\" id=\"ref-for-calling-function④\">calling function</a> is suspended.\nAll <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#function-scope\" id=\"ref-for-function-scope⑨\">function scope</a> variables and constants maintain their current values.</p>"
+        },
+        {
+          "html": "<p>If the called function is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#user-defined-function\" id=\"ref-for-user-defined-function⑨\">user-defined</a>,\nmemory is allocated for each function scope variable in the called function.</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Initialization occurs as described in <a href=\"https://www.w3.org/TR/WGSL/#var-decls\">§ 7.3 var Declarations</a>.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>Values for the formal parameters of the called function are determined\nby matching the function call argument values by position.\nFor example, the first formal parameter of the called function will have\nthe value of the first argument at the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#call-site\" id=\"ref-for-call-site⑤\">call site</a>.</p>"
+        },
+        {
+          "html": "<p>Control is transferred to the called function.\nIf the called function is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#user-defined-function\" id=\"ref-for-user-defined-function①⓪\">user-defined</a>, execution\nproceeds starting from the first statement in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#function-body\" id=\"ref-for-function-body⑥\">body</a>.</p>"
+        },
+        {
+          "html": "<p>The called function is executed, until it <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#returns\" id=\"ref-for-returns①\">returns</a>.</p>"
+        },
+        {
+          "html": "<p>Control is transferred back to the calling function, and the called function’s execution is\nunsuspended.\nIf the called function <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#return-value\" id=\"ref-for-return-value②\">returns a value</a>, that value is supplied for the\nvalue of the function call expression.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Otherwise the conversion proceeds as follows:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>X</var> to the original value.</p>"
+        },
+        {
+          "html": "<p>If the source type is a floating point type with more mantissa bits than the destination type,\n the extra mantissa bits of the source value <em>may</em> be discarded (i.e. treated as if they are 0).\n Update <var>X</var> accordingly.</p>"
+        },
+        {
+          "html": "<p>If <var>X</var> is the most-positive or most-negative normal value of the destination type, then the result is <var>X</var>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, the result is the infinity value of the destination type, with the same sign as <var>X</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Each function performs the following steps atomically:",
+      "rationale": "load",
+      "steps": [
+        {
+          "html": "<p>Load the original value pointed to by <code>atomic_ptr</code>.</p>"
+        },
+        {
+          "html": "<p>Obtains a new value by performing the operation (e.g. max) from the function\nname with the value <var>v</var>.</p>"
+        },
+        {
+          "html": "<p>Store the new value using <code>atomic_ptr</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Performs the following steps atomically:",
+      "rationale": "load",
+      "steps": [
+        {
+          "html": "<p>Load the original value pointed to by <code>atomic_ptr</code>.</p>"
+        },
+        {
+          "html": "<p>Compare the original value to the value <code>cmp</code> using an equality operation.</p>"
+        },
+        {
+          "html": "<p>Store the value <code>v</code> <code>only if</code> the result of the equality comparison was <code>true</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

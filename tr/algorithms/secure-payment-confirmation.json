@@ -1,0 +1,287 @@
+{
+  "spec": {
+    "title": "Secure Payment Confirmation",
+    "url": "https://www.w3.org/TR/secure-payment-confirmation/"
+  },
+  "algorithms": [
+    {
+      "html": "In the steps for the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request-1.1/#dom-paymentrequest-constructor\" id=\"ref-for-dom-paymentrequest-constructor\">PaymentRequest object’s constructor</a></code>,\nadd a new step after step 4.3:",
+      "rationale": "process",
+      "steps": [
+        {
+          "html": "Process payment methods: <em>[substeps 1-3 elided]</em>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>seenPMIs</var> contains \"<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#secure-payment-confirmation\" id=\"ref-for-secure-payment-confirmation②\">secure-payment-confirmation</a>\" and the size\nof <var>seenPMIs</var> is greater than 1, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "In the steps for the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request-1.1/#dom-paymentrequest-show\" id=\"ref-for-dom-paymentrequest-show\">PaymentRequest.show()</a></code> method,\nmodify steps 2 and 3:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, the user agent MAY:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">\"SecurityError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation\">consume user activation</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-steps-to-validate-payment-method-data\" id=\"ref-for-dfn-steps-to-validate-payment-method-data\">steps to validate payment method data</a> for this payment method, for an\ninput <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dictdef-securepaymentconfirmationrequest\" id=\"ref-for-dictdef-securepaymentconfirmationrequest③\">SecurePaymentConfirmationRequest</a></code> <var>data</var>, are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-credentialids\" id=\"ref-for-dom-securepaymentconfirmationrequest-credentialids①\">credentialIds</a></code>\"] is empty,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "For each <var>id</var> in <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-credentialids\" id=\"ref-for-dom-securepaymentconfirmationrequest-credentialids②\">credentialIds</a></code>\"]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>id</var> is empty, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror②\">RangeError</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-challenge\" id=\"ref-for-dom-securepaymentconfirmationrequest-challenge①\">challenge</a></code>\"] is null or\nempty, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-instrument\" id=\"ref-for-dom-securepaymentconfirmationrequest-instrument①\">instrument</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-paymentcredentialinstrument-displayname\" id=\"ref-for-dom-paymentcredentialinstrument-displayname\">displayName</a></code>\"]\nis empty, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-instrument\" id=\"ref-for-dom-securepaymentconfirmationrequest-instrument②\">instrument</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-paymentcredentialinstrument-icon\" id=\"ref-for-dom-paymentcredentialinstrument-icon\">icon</a></code>\"]\nis empty, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Run the URL parser on data[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-instrument\" id=\"ref-for-dom-securepaymentconfirmationrequest-instrument③\">instrument</a></code>\"]\n[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-paymentcredentialinstrument-icon\" id=\"ref-for-dom-paymentcredentialinstrument-icon①\">icon</a></code>\"]. If this returns failure, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-rpid\" id=\"ref-for-dom-securepaymentconfirmationrequest-rpid①\">rpId</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#valid-domain\" id=\"ref-for-valid-domain\">valid domain</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If both <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeename\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeename②\">payeeName</a></code>\"] and <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeeorigin\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeeorigin②\">payeeOrigin</a></code>\"] are omitted,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If either of <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeename\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeename③\">payeeName</a></code>\"] or <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeeorigin\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeeorigin③\">payeeOrigin</a></code>\"] is present and\nempty, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑥\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeeorigin\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeeorigin④\">payeeOrigin</a></code>\"] is present:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>parsedURL</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> on <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeeorigin\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeeorigin⑤\">payeeOrigin</a></code>\"].</p>"
+            },
+            {
+              "html": "<p>If <var>parsedURL</var> is failure, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>If <var>parsedURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not \"<code>https</code>\", then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧\">TypeError</a></code>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-steps-to-check-if-a-payment-can-be-made\" id=\"ref-for-dfn-steps-to-check-if-a-payment-can-be-made\">steps to check if a payment can be made</a> for this payment method, for an\ninput <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dictdef-securepaymentconfirmationrequest\" id=\"ref-for-dictdef-securepaymentconfirmationrequest④\">SecurePaymentConfirmationRequest</a></code> <var>data</var>, are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeeorigin\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeeorigin⑥\">payeeOrigin</a></code>\"] is present:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>parsedURL</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser①\">URL parser</a> on <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeeorigin\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeeorigin⑦\">payeeOrigin</a></code>\"].</p>"
+            },
+            {
+              "html": "<p>Assert that <var>parsedURL</var> is not failure.</p>"
+            },
+            {
+              "html": "<p>Assert that <var>parsedURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is \"<code>https</code>\".</p>"
+            }
+          ],
+          "additional": [
+            {
+              "html": "If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeeorigin\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeeorigin⑥\">payeeOrigin</a></code>\"] is present:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeeorigin\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeeorigin⑧\">payeeOrigin</a></code>\"] to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialization of</a> <var>parsedURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/image-resource/#dfn-fetching-an-image-resource\" id=\"ref-for-dfn-fetching-an-image-resource\">Fetch the image resource</a> for the icon, passing «[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/image-resource/#dom-imageresource-src\" id=\"ref-for-dom-imageresource-src\">src</a></code>\" → <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-instrument\" id=\"ref-for-dom-securepaymentconfirmationrequest-instrument④\">instrument</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-paymentcredentialinstrument-icon\" id=\"ref-for-dom-paymentcredentialinstrument-icon②\">icon</a></code>\"]]»\nfor <em>image</em>. If this fails:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-instrument\" id=\"ref-for-dom-securepaymentconfirmationrequest-instrument⑤\">instrument</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-paymentcredentialinstrument-iconmustbeshown\" id=\"ref-for-dom-paymentcredentialinstrument-iconmustbeshown\">iconMustBeShown</a></code>\"]\nis <code>true</code>, then return <code>false</code>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, set <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-instrument\" id=\"ref-for-dom-securepaymentconfirmationrequest-instrument⑥\">instrument</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-paymentcredentialinstrument-icon\" id=\"ref-for-dom-paymentcredentialinstrument-icon③\">icon</a></code>\"]\nto an empty string.</p>"
+            }
+          ]
+        },
+        {
+          "html": "For each <var>id</var> in <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-credentialids\" id=\"ref-for-dom-securepaymentconfirmationrequest-credentialids③\">credentialIds</a></code>\"]:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#steps-to-silently-determine-if-a-credential-is-available-for-the-current-device\" id=\"ref-for-steps-to-silently-determine-if-a-credential-is-available-for-the-current-device\">steps to silently determine if a credential is available for\nthe current device</a> and the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#steps-to-silently-determine-if-a-credential-is-spc-enabled\" id=\"ref-for-steps-to-silently-determine-if-a-credential-is-spc-enabled\">steps to silently determine if a\ncredential is SPC-enabled</a>, passing in <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-rpid\" id=\"ref-for-dom-securepaymentconfirmationrequest-rpid②\">rpId</a></code>\"] and <var>id</var>. If the\nresult of either of these is <code>false</code>, remove <var>id</var> from <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-credentialids\" id=\"ref-for-dom-securepaymentconfirmationrequest-credentialids④\">credentialIds</a></code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-credentialids\" id=\"ref-for-dom-securepaymentconfirmationrequest-credentialids⑤\">credentialIds</a></code>\"] is now empty,\nreturn <code>false</code>. The user agent must maintain <a href=\"https://www.w3.org/TR/secure-payment-confirmation/#sctn-privacy-probing-credential-ids\">authentication ceremony privacy</a> and not leak this lack of matching credentials to the caller, by:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<p>Not allowing the caller to perform a timing attack on this outcome versus\nthe user declining to authenticate on the <a href=\"https://www.w3.org/TR/secure-payment-confirmation/#sctn-transaction-confirmation-ux\">transaction confirmation UX</a>, e.g.,\nby presenting an alternative interstitial that the user must interact\nwith.</p>"
+            },
+            {
+              "html": "<p>Rejecting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request-1.1/#dom-paymentrequest-show\" id=\"ref-for-dom-paymentrequest-show①\">show()</a></code> promise with a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <code>true</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-steps-to-respond-to-a-payment-request\" id=\"ref-for-dfn-steps-to-respond-to-a-payment-request\">steps to respond to a payment request</a> for this payment method, for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request-1.1/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest③\">PaymentRequest</a></code> <var>request</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dictdef-securepaymentconfirmationrequest\" id=\"ref-for-dictdef-securepaymentconfirmationrequest⑤\">SecurePaymentConfirmationRequest</a></code> <var>data</var>, are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>topOrigin</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin\">top-level origin</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a> of <var>request</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>payment</var> be a new a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dictdef-authenticationextensionspaymentinputs\" id=\"ref-for-dictdef-authenticationextensionspaymentinputs\">AuthenticationExtensionsPaymentInputs</a></code> dictionary,\nwhose fields are:</p>\n     <dl>\n      <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-ispayment\" id=\"ref-for-dom-authenticationextensionspaymentinputs-ispayment\">isPayment</a></code>\n      </dt><dd data-md=\"\">\n       <p>The boolean value <code>true</code>.</p>\n      </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-rpid\" id=\"ref-for-dom-authenticationextensionspaymentinputs-rpid\">rpId</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-rpid\" id=\"ref-for-dom-securepaymentconfirmationrequest-rpid④\">rpId</a></code>\"]</p>\n      </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-toporigin\" id=\"ref-for-dom-authenticationextensionspaymentinputs-toporigin\">topOrigin</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>topOrigin</var></p>\n      </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-payeename\" id=\"ref-for-dom-authenticationextensionspaymentinputs-payeename\">payeeName</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeename\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeename④\">payeeName</a></code>\"] if it is\npresent, otherwise omitted.</p>\n      </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-payeeorigin\" id=\"ref-for-dom-authenticationextensionspaymentinputs-payeeorigin\">payeeOrigin</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-payeeorigin\" id=\"ref-for-dom-securepaymentconfirmationrequest-payeeorigin⑨\">payeeOrigin</a></code>\"] if it is\npresent, otherwise omitted.</p>\n      </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-total\" id=\"ref-for-dom-authenticationextensionspaymentinputs-total\">total</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>request</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-details\" id=\"ref-for-dfn-details\">[[details]]</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request-1.1/#dom-paymentdetailsinit-total\" id=\"ref-for-dom-paymentdetailsinit-total\">total</a></code>\"]</p>\n      </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-authenticationextensionspaymentinputs-instrument\" id=\"ref-for-dom-authenticationextensionspaymentinputs-instrument\">instrument</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-instrument\" id=\"ref-for-dom-securepaymentconfirmationrequest-instrument⑦\">instrument</a></code>\"]</p>\n     </dd></dl>"
+        },
+        {
+          "html": "<p>Let <var>extensions</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dictdef-authenticationextensionsclientinputs\" id=\"ref-for-dictdef-authenticationextensionsclientinputs②\">AuthenticationExtensionsClientInputs</a></code> dictionary\nwhose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-authenticationextensionsclientinputs-payment\" id=\"ref-for-dom-authenticationextensionsclientinputs-payment①\">payment</a></code> member is set to <var>payment</var>, and whose other members are set from <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-extensions\" id=\"ref-for-dom-securepaymentconfirmationrequest-extensions①\">extensions</a></code>\"].</p>"
+        },
+        {
+          "html": "<p>Let <var>publicKeyOpts</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dictdef-publickeycredentialrequestoptions\" id=\"ref-for-dictdef-publickeycredentialrequestoptions\">PublicKeyCredentialRequestOptions</a></code> dictionary, whose fields are:</p>\n     <dl>\n      <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialrequestoptions-challenge\" id=\"ref-for-dom-publickeycredentialrequestoptions-challenge①\">challenge</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-challenge\" id=\"ref-for-dom-securepaymentconfirmationrequest-challenge②\">challenge</a></code>\"]</p>\n      </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialrequestoptions-timeout\" id=\"ref-for-dom-publickeycredentialrequestoptions-timeout\">timeout</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-timeout\" id=\"ref-for-dom-securepaymentconfirmationrequest-timeout①\">timeout</a></code>\"]</p>\n      </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialrequestoptions-rpid\" id=\"ref-for-dom-publickeycredentialrequestoptions-rpid\">rpId</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-rpid\" id=\"ref-for-dom-securepaymentconfirmationrequest-rpid⑤\">rpId</a></code>\"]</p>\n      </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialrequestoptions-userverification\" id=\"ref-for-dom-publickeycredentialrequestoptions-userverification\">userVerification</a></code>\n      </dt><dd data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-userverificationrequirement-required\" id=\"ref-for-dom-userverificationrequirement-required\">required</a></code></p>\n      </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialrequestoptions-extensions\" id=\"ref-for-dom-publickeycredentialrequestoptions-extensions\">extensions</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>extensions</var></p>\n     </dd></dl>"
+        },
+        {
+          "html": "For each <var>id</var> in <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-credentialids\" id=\"ref-for-dom-securepaymentconfirmationrequest-credentialids⑥\">credentialIds</a></code>\"]:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>descriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dictdef-publickeycredentialdescriptor\" id=\"ref-for-dictdef-publickeycredentialdescriptor\">PublicKeyCredentialDescriptor</a></code> dictionary,\nwhose fields are:</p>\n       <dl>\n        <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialdescriptor-type\" id=\"ref-for-dom-publickeycredentialdescriptor-type\">type</a></code>\n        </dt><dd data-md=\"\">\n         <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialtype-public-key\" id=\"ref-for-dom-publickeycredentialtype-public-key\">public-key</a></code></p>\n        </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialdescriptor-id\" id=\"ref-for-dom-publickeycredentialdescriptor-id\">id</a></code>\n        </dt><dd data-md=\"\">\n         <p><var>id</var></p>\n        </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialdescriptor-transports\" id=\"ref-for-dom-publickeycredentialdescriptor-transports\">transports</a></code>\n        </dt><dd data-md=\"\">\n         <p>A sequence of length 1 whose only member is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-authenticatortransport-internal\" id=\"ref-for-dom-authenticatortransport-internal\">internal</a></code>.</p>\n       </dd></dl>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>descriptor</var> to <var>publicKeyOpts</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialrequestoptions-allowcredentials\" id=\"ref-for-dom-publickeycredentialrequestoptions-allowcredentials\">allowCredentials</a></code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>outputCredential</var> be the result of running the algorithm to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-credential-management/#abstract-opdef-request-a-credential\" id=\"ref-for-abstract-opdef-request-a-credential\">Request a Credential</a>, passing «[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-credentialrequestoptions-publickey\" id=\"ref-for-dom-credentialrequestoptions-publickey\">publicKey</a></code>\"\n→ <var>publicKeyOpts</var>]».</p>"
+        },
+        {
+          "html": "<p>Return <var>outputCredential</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Client extension processing (registration)",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#client-extension-processing-registration",
+      "html": "When <a href=\"https://www.w3.org/TR/webauthn-3/#sctn-createCredential\">creating a new credential</a>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Modify step 2 (the check for <em>sameOriginWithAncestors</em>) as follows:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>If <em>sameOriginWithAncestors</em> is <code>false</code>:</p>\n         <ul>\n          <li data-md=\"\">\n           <p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>, as determined by the calling <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/credential-management-1/#dom-credentialscontainer-create\" id=\"ref-for-dom-credentialscontainer-create①\">create()</a></code> implementation, does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a>:</p>\n           <ul>\n            <li data-md=\"\">\n             <p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> whose name is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①\">SecurityError</a></code>\", and\nterminate this algorithm.</p>\n           </li></ul>\n          </li><li data-md=\"\">\n           <p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation①\">Consume user activation</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a>.</p>\n         </li></ul>\n         \n       </li></ul>"
+        },
+        {
+          "html": "<p>After step 3, insert the following step:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>If any of the following are true:</p>\n         <ul>\n          <li data-md=\"\">\n           <p><em>options</em>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialcreationoptions-authenticatorselection\" id=\"ref-for-dom-publickeycredentialcreationoptions-authenticatorselection\">authenticatorSelection</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-authenticatorselectioncriteria-authenticatorattachment\" id=\"ref-for-dom-authenticatorselectioncriteria-authenticatorattachment\">authenticatorAttachment</a></code>\"] is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-authenticatorattachment-platform\" id=\"ref-for-dom-authenticatorattachment-platform\">platform</a></code>\".</p>\n          </li><li data-md=\"\">\n           <p><em>options</em>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialcreationoptions-authenticatorselection\" id=\"ref-for-dom-publickeycredentialcreationoptions-authenticatorselection①\">authenticatorSelection</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-authenticatorselectioncriteria-residentkey\" id=\"ref-for-dom-authenticatorselectioncriteria-residentkey\">residentKey</a></code>\"] is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-residentkeyrequirement-required\" id=\"ref-for-dom-residentkeyrequirement-required\">required</a></code>\" or \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-residentkeyrequirement-preferred\" id=\"ref-for-dom-residentkeyrequirement-preferred\">preferred</a></code>\".</p>\n          </li><li data-md=\"\">\n           <p><em>options</em>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredentialcreationoptions-authenticatorselection\" id=\"ref-for-dom-publickeycredentialcreationoptions-authenticatorselection②\">authenticatorSelection</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-authenticatorselectioncriteria-userverification\" id=\"ref-for-dom-authenticatorselectioncriteria-userverification\">userVerification</a></code>\"] is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-userverificationrequirement-required\" id=\"ref-for-dom-userverificationrequirement-required①\">required</a></code>\".</p>\n         </li></ul>\n         <p>then return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑨\">TypeError</a></code>.</p>\n         \n         \n       </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "Client extension processing (authentication)",
+      "href": "https://www.w3.org/TR/secure-payment-confirmation/#client-extension-processing-authentication",
+      "html": "When <a href=\"https://www.w3.org/TR/webauthn-3/#sctn-getAssertion\">making an assertion</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dictdef-authenticationextensionspaymentinputs\" id=\"ref-for-dictdef-authenticationextensionspaymentinputs②\">AuthenticationExtensionsPaymentInputs</a></code> <var>extension_inputs</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If not in a \"<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#secure-payment-confirmation\" id=\"ref-for-secure-payment-confirmation④\">secure-payment-confirmation</a>\" payment handler, return a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "During <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-publickeycredential-discoverfromexternalsource-slot\" id=\"ref-for-dom-publickeycredential-discoverfromexternalsource-slot\">[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)</a></code>:",
+          "rationale": "skip",
+          "steps": [
+            {
+              "html": "<p>Skip step 6.1, which compares <em>options.rpId</em> to <em>effectiveDomain</em></p>"
+            }
+          ],
+          "ignored": [
+            "In step 9, instead of creating a CollectedClientData, instead create a CollectedClientPaymentData with: type set to \"payment.get\" payment set to a new CollectedClientAdditionalPaymentData whose fields are: rpId extension_inputs[\"rpId\"] topOrigin extension_inputs[\"topOrigin\"] payeeName extension_inputs[\"payeeName\"] if it is present, otherwise omitted. payeeOrigin extension_inputs[\"payeeOrigin\"] if it is present, otherwise omitted. total extension_inputs[\"total\"] instrument extension_inputs[\"instrument\"] All other fields set as per the original step 9."
+          ]
+        }
+      ]
+    },
+    {
+      "html": "In order to perform an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#authentication-ceremony\" id=\"ref-for-authentication-ceremony①\">authentication ceremony</a> for Secure Payment\nConfirmation, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②②\">Relying Party</a> MUST proceed as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>credential</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#publickeycredential\" id=\"ref-for-publickeycredential\">PublicKeyCredential</a></code> returned from a successful\ninvocation of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#secure-payment-confirmation-payment-handler\" id=\"ref-for-secure-payment-confirmation-payment-handler②\">Secure Payment Confirmation payment handler</a> by the <var>SPC caller</var>.</p>"
+        },
+        {
+          "html": "Perform steps 3-21 <a href=\"https://www.w3.org/TR/webauthn-3/#sctn-verifying-assertion\"> as specified in\nWebAuthn</a>, with the following changes:",
+          "rationale": "verify",
+          "steps": [
+            {
+              "html": "<p>In step 5, verify that <var>credential</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/credential-management-1/#dom-credential-id\" id=\"ref-for-dom-credential-id\">id</a></code> identifies one of\nthe public key credentials provided to the <var>SPC caller</var> by the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑤\">Relying Party</a>.</p>"
+            },
+            {
+              "html": "<p>In step 11, verify that the value of <var>C</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-collectedclientdata-type\" id=\"ref-for-dom-collectedclientdata-type①\">type</a></code>\"]\nis the string <code>payment.get</code>.</p>"
+            },
+            {
+              "html": "<p>In step 12, verify that the value of <var>C</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-collectedclientdata-challenge\" id=\"ref-for-dom-collectedclientdata-challenge\">challenge</a></code>\"]\nequals the base64url encoding of the challenge provided to the <var>SPC caller</var> by the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑥\">Relying Party</a>.</p>"
+            },
+            {
+              "html": "<p>In step 13, verify that the value of <var>C</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-3/#dom-collectedclientdata-origin\" id=\"ref-for-dom-collectedclientdata-origin\">origin</a></code>\"]\nmatches the origin that the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑦\">Relying Party</a> expects SPC to have been\ncalled from.</p>"
+            },
+            {
+              "html": "<p>After step 13, insert the following steps:</p>\n       <ul>\n        <li data-md=\"\">\n         <p>Verify that the value of <var>C</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientpaymentdata-payment\" id=\"ref-for-dom-collectedclientpaymentdata-payment②\">payment</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-rpid\" id=\"ref-for-dom-collectedclientadditionalpaymentdata-rpid②\">rpId</a></code>\"]\nmatches the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑧\">Relying Party</a>'s origin.</p>\n        </li><li data-md=\"\">\n         <p>Verify that the value of <var>C</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientpaymentdata-payment\" id=\"ref-for-dom-collectedclientpaymentdata-payment③\">payment</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-toporigin\" id=\"ref-for-dom-collectedclientadditionalpaymentdata-toporigin②\">topOrigin</a></code>\"]\nmatches the top-level origin that the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑨\">Relying Party</a> expects.</p>\n        </li><li data-md=\"\">\n         <p>Verify that the value of <var>C</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientpaymentdata-payment\" id=\"ref-for-dom-collectedclientpaymentdata-payment④\">payment</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-payeename\" id=\"ref-for-dom-collectedclientadditionalpaymentdata-payeename③\">payeeName</a></code>\"]\nmatches the name of the payee that should have been displayed to the user, if any.</p>\n        </li><li data-md=\"\">\n         <p>Verify that the value of <var>C</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientpaymentdata-payment\" id=\"ref-for-dom-collectedclientpaymentdata-payment⑤\">payment</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-payeeorigin\" id=\"ref-for-dom-collectedclientadditionalpaymentdata-payeeorigin③\">payeeOrigin</a></code>\"]\nmatches the origin of the payee that should have been displayed to the user, if any.</p>\n        </li><li data-md=\"\">\n         <p>Verify that the value of <var>C</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientpaymentdata-payment\" id=\"ref-for-dom-collectedclientpaymentdata-payment⑥\">payment</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-total\" id=\"ref-for-dom-collectedclientadditionalpaymentdata-total③\">total</a></code>\"]\nmatches the transaction amount that should have been displayed to the user.</p>\n        </li><li data-md=\"\">\n         <p>Verify that the value of <var>C</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientpaymentdata-payment\" id=\"ref-for-dom-collectedclientpaymentdata-payment⑦\">payment</a></code>\"][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-collectedclientadditionalpaymentdata-instrument\" id=\"ref-for-dom-collectedclientadditionalpaymentdata-instrument④\">instrument</a></code>\"]\nmatches the payment instrument details that should have been displayed to the user.</p>\n       </li></ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-end-steps\" id=\"ref-for-dfn-remote-end-steps\">remote end steps</a> are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>parameters</var> is not a JSON <a href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-json-object\">Object</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>mode</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties\">getting a property</a> named <code>\"mode\"</code> from <var>parameters</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>mode</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-undefined\" id=\"ref-for-dfn-undefined\">undefined</a> or is not one of \"<code>autoAccept</code>\", \"<code>autoReject</code>\",\nor \"<code>autoOptOut</code>\", return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①\">WebDriver error\ncode</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#current-transaction-automation-mode\" id=\"ref-for-current-transaction-automation-mode②\">current transaction automation mode</a> to <var>mode</var>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success\">success</a> with data <code>null</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

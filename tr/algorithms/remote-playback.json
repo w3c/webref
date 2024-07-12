@@ -1,0 +1,290 @@
+{
+  "spec": {
+    "title": "Remote Playback API",
+    "url": "https://www.w3.org/TR/remote-playback/"
+  },
+  "algorithms": [
+    {
+      "html": "When the <a data-link-type=\"idl\" data-lt=\"watchAvailability()\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback-watchavailability\" class=\"internalDFN\" id=\"ref-for-dom-remoteplayback-watchavailability-5\"><code>watchAvailability</code></a><code>()</code> method is\n              called, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be a new <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\"><code>Promise</code></a>."
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>, and run the following steps below:"
+        },
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/remote-playback/#dom-htmlmediaelement-disableremoteplayback\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-htmlmediaelement-disableremoteplayback-1\"><code>disableRemotePlayback</code></a>\n                attribute is present for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media element</a>, reject the <var data-type=\"Promise\">promise</var>\n                with <a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a> and abort all the remaining steps."
+        },
+        {
+          "html": "If the user agent is unable to <a href=\"https://www.w3.org/TR/remote-playback/#dfn-monitor-the-list-of-available-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-remote-playback-devices-9\">monitor the list of\n                available remote playback devices</a> for the entire lifetime of\n                the <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\">browsing context</a> (for instance, because the user has\n                disabled this feature), then run the following steps <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "Fulfill <var data-type=\"Promise\">promise</var>."
+            },
+            {
+              "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to invoke the <var data-type=\"RemotePlaybackAvailabilityCallback\">callback</var> with\n                    <code>false</code> as its argument."
+            },
+            {
+              "html": "Abort all remaining steps."
+            }
+          ]
+        },
+        {
+          "html": "If the user agent is unable to continuously <a href=\"https://www.w3.org/TR/remote-playback/#dfn-monitor-the-list-of-available-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-remote-playback-devices-10\">monitor the\n                list of available remote playback devices</a> but can do it for a\n                short period of time when <a data-lt=\"initiate remote playback\" href=\"https://www.w3.org/TR/remote-playback/#dfn-initiate-remote-playback\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-initiate-remote-playback-3\">\n                initiating remote playback</a>, then:",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "Reject <var data-type=\"Promise\">promise</var> with a <a data-link-type=\"idl\" data-lt=\"NotSupportedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a> exception."
+            },
+            {
+              "html": "Abort all remaining steps."
+            }
+          ]
+        },
+        {
+          "html": "Let <var data-type=\"long\">callbackId</var> be a positive integer unique among\n                all the <var>callbackIds</var> previously returned by these\n                steps in the <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\">browsing context</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media\n                element</a>."
+        },
+        {
+          "html": "Create a tuple <em>(<var data-type=\"long\">callbackId</var>, <var data-type=\"RemotePlaybackAvailabilityCallback\">callback</var>)</em> and\n                add it to the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-set-of-availability-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-availability-callbacks-6\">set of availability callbacks</a>\n                for this <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media element</a>."
+        },
+        {
+          "html": "Fulfill <var data-type=\"Promise\">promise</var> with the <var data-type=\"long\">callbackId</var> and\n                run the following steps <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to invoke the <var data-type=\"RemotePlaybackAvailabilityCallback\">callback</var> with\n                    the current <a href=\"https://www.w3.org/TR/remote-playback/#dfn-availability\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-availability-2\">availability</a> for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media\n                    element</a>."
+            },
+            {
+              "html": "If the user agent is not <a data-lt=\"monitor the list of available remote playback devices\" href=\"https://www.w3.org/TR/remote-playback/#dfn-monitor-the-list-of-available-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-remote-playback-devices-11\">monitoring\n                  the list of available remote playback devices</a>, run the\n                  algorithm to <a href=\"https://www.w3.org/TR/remote-playback/#dfn-monitor-the-list-of-available-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-remote-playback-devices-12\">monitor the list of available remote playback\n                  devices</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "monitor the list of available remote playback devices",
+      "href": "https://www.w3.org/TR/remote-playback/#dfn-monitor-the-list-of-available-remote-playback-devices",
+      "html": "If the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-set-of-availability-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-availability-callbacks-7\">set of availability callbacks</a> is non-empty, or\n              there is a pending request to <a data-lt=\"prompt\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback-prompt\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-remoteplayback-prompt-3\">\n              initiate remote playback</a>, the user agent\n              <em class=\"rfc2119\">MUST</em> <dfn id=\"dfn-monitor-the-list-of-available-remote-playback-devices\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">monitor the list of available remote playback\n              devices</dfn> by running the following steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "Retrieve available remote playback devices (using an\n                implementation specific mechanism) and let <var data-type=\"list\">newDevices</var>\n                be this list."
+        },
+        {
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media element</a> known to the <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\">browsing\n                context</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a href=\"https://www.w3.org/TR/remote-playback/#dom-htmlmediaelement-disableremoteplayback\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-htmlmediaelement-disableremoteplayback-2\"><code>disableRemotePlayback</code></a>\n                    attribute is present for <var data-type=\"HTMLMediaElement\">mediaElement</var>, abort all\n                    the remaining steps for this tuple and continue to the next one."
+            },
+            {
+              "html": "Set <var data-type=\"boolean\">newAvailabilityValue</var> to the value of\n                    <a href=\"https://www.w3.org/TR/remote-playback/#dfn-availability\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-availability-3\">availability</a> for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media element</a> calculated\n                    using the <var data-type=\"list\">newDevices</var> list instead of the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-list-of-available-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-available-remote-playback-devices-2\">list\n                    of available remote playback devices</a>."
+            },
+            {
+              "html": "If the current <a href=\"https://www.w3.org/TR/remote-playback/#dfn-availability\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-availability-4\">availability</a> is not equal to\n                    <var data-type=\"boolean\">newAvailabilityValue</var>, then for each <em>(<var data-type=\"long\">callbackId</var>,\n                    <var data-type=\"RemotePlaybackAvailabilityCallback\">callback</var>)</em>\n                    of the element's <a href=\"https://www.w3.org/TR/remote-playback/#dfn-set-of-availability-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-availability-callbacks-8\">set of availability callbacks</a>:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to invoke <var data-type=\"RemotePlaybackAvailabilityCallback\">callback</var> with\n                        <var data-type=\"boolean\">newAvailabilityValue</var> as its argument."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Set the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-list-of-available-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-available-remote-playback-devices-3\">list of available remote playback devices</a> to\n                the value of <var data-type=\"list\">newDevices</var>."
+        }
+      ]
+    },
+    {
+      "name": "RemotePlayback/cancelWatchAvailability()",
+      "href": "https://www.w3.org/TR/remote-playback/#dom-remoteplayback-cancelwatchavailability",
+      "html": "When a <dfn data-dfn-for=\"RemotePlayback\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-remoteplayback-cancelwatchavailability\" data-idl=\"operation\" data-title=\"cancelWatchAvailability()\" data-type=\"Promise\" data-lt=\"cancelWatchAvailability()|cancelWatchAvailability(id)\" data-local-lt=\"RemotePlayback.cancelWatchAvailability|RemotePlayback.cancelWatchAvailability()|cancelWatchAvailability\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>cancelWatchAvailability()</code></dfn>\n              method is called, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be a new <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\"><code>Promise</code></a>."
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>, and run the following steps below:"
+        },
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/remote-playback/#dom-htmlmediaelement-disableremoteplayback\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-htmlmediaelement-disableremoteplayback-3\"><code>disableRemotePlayback</code></a> attribute is present\n                for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media element</a>, reject <var data-type=\"Promise\">promise</var> with\n                <a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a> and abort all the remaining steps."
+        },
+        {
+          "html": "If the parameter <var data-type=\"long\">id</var> is <code>undefined</code>,\n                clear the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-set-of-availability-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-availability-callbacks-9\">set of availability callbacks</a>."
+        },
+        {
+          "html": "Otherwise, if <var data-type=\"long\">id</var> matches the <var data-type=\"long\">callbackId</var>\n                for any entry in the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-set-of-availability-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-availability-callbacks-10\">set of availability callbacks</a>, remove\n                the entry from the set."
+        },
+        {
+          "html": "Otherwise, reject <var data-type=\"Promise\">promise</var> with\n                <a data-link-type=\"idl\" data-lt=\"NotFoundError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notfounderror\"><code>NotFoundError</code></a> and abort all the remaining steps."
+        },
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-set-of-availability-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-availability-callbacks-11\">set of availability callbacks</a> is now empty and\n                there is no pending request to\n                <a data-lt=\"prompt\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback-prompt\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-remoteplayback-prompt-4\">initiate remote playback</a>, cancel any\n                pending task to <a href=\"https://www.w3.org/TR/remote-playback/#dfn-monitor-the-list-of-available-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-remote-playback-devices-13\">monitor the list of available remote\n                playback devices</a> for power saving purposes."
+        },
+        {
+          "html": "Fulfill <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "name": "RemotePlayback/prompt()",
+      "href": "https://www.w3.org/TR/remote-playback/#dom-remoteplayback-prompt",
+      "html": "When the <dfn data-dfn-for=\"RemotePlayback\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-remoteplayback-prompt\" data-idl=\"operation\" data-title=\"prompt()\" data-type=\"Promise\" data-lt=\"prompt()\" data-local-lt=\"RemotePlayback.prompt|RemotePlayback.prompt()|prompt\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>prompt()</code></dfn> method is\n            called, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be a new <a data-link-type=\"idl\" data-lt=\"Promise\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\"><code>Promise</code></a>."
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var> and continue running these steps\n              <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>."
+        },
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/remote-playback/#dom-htmlmediaelement-disableremoteplayback\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-htmlmediaelement-disableremoteplayback-4\"><code>disableRemotePlayback</code></a> attribute is present\n              for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media element</a>, reject the <var data-type=\"Promise\">promise</var> with\n              <a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a> and abort all the remaining steps."
+        },
+        {
+          "html": "If there is already an unsettled promise from a previous call to\n              <a data-link-type=\"idl\" data-lt=\"prompt()\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback-prompt\" class=\"internalDFN\" id=\"ref-for-dom-remoteplayback-prompt-5\"><code>prompt</code></a><code>()</code> for the same <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media element</a> or\n              even for the same <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\">browsing context</a>, the user agent <em class=\"rfc2119\">MAY</em> reject\n              <var data-type=\"Promise\">promise</var> with an <a data-link-type=\"idl\" data-lt=\"OperationError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a> exception and abort all\n              remaining steps."
+        },
+        {
+          "html": "If the document's <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\">active window</a> does not have\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\">transient activation</a>, reject <var data-type=\"Promise\">promise</var> with an\n              <a data-link-type=\"idl\" data-lt=\"InvalidAccessError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a> exception and abort these steps."
+        },
+        {
+          "html": "OPTIONALLY, if the user agent knows a priori that remote playback\n              of this particular <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media element</a> is not feasible (independent\n              of the current <a href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback-state\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-remoteplayback-state-3\"><code>state</code></a> or the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-list-of-available-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-available-remote-playback-devices-4\">list of available remote\n              playback devices</a>), reject <var data-type=\"Promise\">promise</var> with a <a data-link-type=\"idl\" data-lt=\"NotSupportedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\n              and abort all remaining steps."
+        },
+        {
+          "html": "If the user agent needs to show the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-list-of-available-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-available-remote-playback-devices-5\">list of available remote\n              playback devices</a> and is not <a data-lt=\"monitor the list of\n              available remote playback devices\" href=\"https://www.w3.org/TR/remote-playback/#dfn-monitor-the-list-of-available-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-remote-playback-devices-14\">monitoring the list of\n              available remote playback devices</a>, run the steps to\n              <a href=\"https://www.w3.org/TR/remote-playback/#dfn-monitor-the-list-of-available-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-monitor-the-list-of-available-remote-playback-devices-15\">monitor the list of available remote playback devices</a> <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in\n              parallel</a>."
+        },
+        {
+          "html": "If remote playback is <a href=\"https://www.w3.org/TR/remote-playback/#dfn-unavailable\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-unavailable-2\">unavailable</a> and will remain so\n              before the request for user permission is complete,\n              reject <var data-type=\"Promise\">promise</var> with a <a data-link-type=\"idl\" data-lt=\"NotFoundError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notfounderror\"><code>NotFoundError</code></a> exception and\n              abort all remaining steps."
+        },
+        {
+          "html": "Request user permission to <dfn id=\"dfn-change-remote-playback-state\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">change remote playback\n              state</dfn>."
+        },
+        {
+          "html": "If the user picked a <a href=\"https://www.w3.org/TR/remote-playback/#dfn-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-remote-playback-devices-32\">remote playback device</a> <var data-type=\"remote\n              playback device\">device</var> to <dfn id=\"dfn-initiate-remote-playback\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">initiate remote playback</dfn> with, the\n              user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the <a href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback-state\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-remoteplayback-state-4\"><code>state</code></a> of the <var data-type=\"RemotePlayback\">remote</var> object\n                  to <a href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplaybackstate-connecting\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-remoteplaybackstate-connecting-2\"><code>connecting</code></a>."
+            },
+            {
+              "html": "Fulfill <var data-type=\"Promise\">promise</var>."
+            },
+            {
+              "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to <a data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named\n                  <a href=\"https://www.w3.org/TR/remote-playback/#dfn-connecting\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-connecting-1\"><code>connecting</code></a> at the <a data-lt=\"RemotePlayback\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-remoteplayback-8\">remote</a> property of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media\n                  element</a>. The event must not bubble, must not be\n                  cancelable, and has no default action."
+            },
+            {
+              "html": "<a href=\"https://www.w3.org/TR/remote-playback/#dfn-establish-a-connection-with-the-remote-playback-device\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-establish-a-connection-with-the-remote-playback-device-1\">Establish a connection with the remote playback device</a>\n                  <var data-type=\"remote\n              playback device\">device</var> for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media element</a>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if the user chose to disconnect from the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-remote-playback-devices-34\">remote\n              playback device</a> <var data-type=\"remote\n              playback device\">device</var>, the user agent <em class=\"rfc2119\">MUST</em> run the\n              following steps:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "Fulfill <var data-type=\"Promise\">promise</var>."
+            },
+            {
+              "html": "Run the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-disconnect-from-a-remote-playback-device\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-disconnect-from-a-remote-playback-device-2\">disconnect from a remote playback device</a>\n                  algorithm for the <var data-type=\"remote\n              playback device\">device</var>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, the user is considered to <em>deny permission</em> to\n              use the device, so reject <var data-type=\"Promise\">promise</var> with <a data-link-type=\"idl\" data-lt=\"NotAllowedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\n              exception and hide the UI shown by the user agent."
+        }
+      ]
+    },
+    {
+      "name": "establish a connection with the remote playback device",
+      "href": "https://www.w3.org/TR/remote-playback/#dfn-establish-a-connection-with-the-remote-playback-device",
+      "html": "When the user agent is to <dfn id=\"dfn-establish-a-connection-with-the-remote-playback-device\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">establish a connection with\n            the remote playback device</dfn>, it <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback-state\" class=\"internalDFN\" id=\"ref-for-dom-remoteplayback-state-6\"><code>state</code></a> of <var data-type=\"RemotePlayback\">remote</var> is not equal\n              to \"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplaybackstate-connecting\" class=\"internalDFN\" id=\"ref-for-dom-remoteplaybackstate-connecting-3\"><code>connecting</code></a>\", abort all the remaining\n              steps."
+        },
+        {
+          "html": "Request connection of <var data-type=\"RemotePlayback\">remote</var> to <var data-type=\"remote playback device\">device</var>.  The implementation of\n              this step is specific to the user agent."
+        },
+        {
+          "html": "If connection completes successfully, <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queue a task</a> to\n              run the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback-state\" class=\"internalDFN\" id=\"ref-for-dom-remoteplayback-state-7\"><code>state</code></a> of <var data-type=\"RemotePlayback\">remote</var> to\n                 \"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplaybackstate-connected\" class=\"internalDFN\" id=\"ref-for-dom-remoteplaybackstate-connected-2\"><code>connected</code></a>\"."
+            },
+            {
+              "html": "<a data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a href=\"https://www.w3.org/TR/remote-playback/#dfn-connect\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-connect-1\"><code>connect</code></a> at <var data-type=\"RemotePlayback\">remote</var>."
+            },
+            {
+              "html": "Synchronize the current <a href=\"https://www.w3.org/TR/remote-playback/#dfn-media-element-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-media-element-state-7\">media element state</a> with the\n                 <a href=\"https://www.w3.org/TR/remote-playback/#dfn-remote-playback-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-remote-playback-state-3\">remote playback state</a>. The implementation of this step\n                 is specific to the user agent."
+            }
+          ]
+        },
+        {
+          "html": "If connection fails, <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queue a task</a> to run the following\n              steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the <a data-lt=\"state\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback-state\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-remoteplayback-state-8\">remote playback state</a> of\n                  <var data-type=\"RemotePlayback\">remote</var> to \"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplaybackstate-disconnected\" class=\"internalDFN\" id=\"ref-for-dom-remoteplaybackstate-disconnected-2\"><code>disconnected</code></a>\"."
+            },
+            {
+              "html": "<a data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/remote-playback/#dfn-disconnect\" class=\"internalDFN\" id=\"ref-for-dfn-disconnect-1\"><code><code>disconnect</code></code></a> at <var data-type=\"RemotePlayback\">remote</var>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disconnect from a remote playback device",
+      "href": "https://www.w3.org/TR/remote-playback/#dfn-disconnect-from-a-remote-playback-device",
+      "html": "When the user agent is to <dfn id=\"dfn-disconnect-from-a-remote-playback-device\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">disconnect from a remote\n            playback device</dfn>, it <em class=\"rfc2119\">MUST</em> do the following:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback-state\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-remoteplayback-state-12\"><code>state</code></a>\n              of <var data-type=\"RemotePlayback\">remote</var> is <code>disconnected</code>, abort all remaining steps."
+        },
+        {
+          "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to run the following steps:",
+          "rationale": "change",
+          "steps": [
+            {
+              "html": "Request disconnection of <var data-type=\"RemotePlayback\">remote</var> from <var data-type=\"remote playback device\">device</var>. The\n                  implementation of this step is specific to the user agent."
+            },
+            {
+              "html": "Change the <var data-type=\"RemotePlayback\">remote</var>'s <code>state</code> to <code>disconnected</code>."
+            },
+            {
+              "html": "<a data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/remote-playback/#dfn-disconnect\" class=\"internalDFN\" id=\"ref-for-dfn-disconnect-2\"><code><code>disconnect</code></code></a> at <var data-type=\"RemotePlayback\">remote</var>."
+            },
+            {
+              "html": "Synchronize the current <a href=\"https://www.w3.org/TR/remote-playback/#dfn-media-element-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-media-element-state-11\">media element state</a> with the\n                  <a href=\"https://www.w3.org/TR/remote-playback/#dfn-local-playback-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-playback-state-6\">local playback state</a>. The implementation of this step\n                  is specific to the user agent."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disable remote playback",
+      "href": "https://www.w3.org/TR/remote-playback/#dfn-disable-remote-playback",
+      "html": "When the <a href=\"https://www.w3.org/TR/remote-playback/#dom-htmlmediaelement-disableremoteplayback\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-htmlmediaelement-disableremoteplayback-9\"><code>disableRemotePlayback</code></a> attribute is added to\n            the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#media-element\">media element</a>, the user agent <em class=\"rfc2119\">MUST</em> run the steps\n            to <dfn id=\"dfn-disable-remote-playback\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">disable remote playback</dfn>:",
+      "rationale": "reject",
+      "steps": [
+        {
+          "html": "Reject any pending promises returned by the\n            <a data-link-type=\"idl\" data-lt=\"RemotePlayback\" href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback\" class=\"internalDFN\" id=\"ref-for-dom-remoteplayback-16\"><code>RemotePlayback</code></a> methods with <a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>."
+        },
+        {
+          "html": "Clear the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-set-of-availability-callbacks\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-of-availability-callbacks-13\">set of availability callbacks</a> for the media\n            element."
+        },
+        {
+          "html": "If its <a href=\"https://www.w3.org/TR/remote-playback/#dom-remoteplayback-state\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-remoteplayback-state-13\"><code>state</code></a> is not\n            <code>disconnected</code>, run the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-disconnect-from-a-remote-playback-device\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-disconnect-from-a-remote-playback-device-6\">disconnect from a remote\n            playback device</a> algorithm for the <a href=\"https://www.w3.org/TR/remote-playback/#dfn-remote-playback-devices\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-remote-playback-devices-51\">remote playback device</a>\n            the media element is connected or connecting to."
+        }
+      ]
+    }
+  ]
+}

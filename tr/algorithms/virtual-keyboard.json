@@ -1,0 +1,110 @@
+{
+  "spec": {
+    "title": "VirtualKeyboard API",
+    "url": "https://www.w3.org/TR/virtual-keyboard/"
+  },
+  "algorithms": [
+    {
+      "name": "VirtualKeyboard/show()",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard-show",
+      "html": "The method must follow these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>window</var> be <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>. Assert that <var>window</var> is a <a data-link-type=\"idl\" data-lt=\"Window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#window\"><code>Window</code></a> object."
+        },
+        {
+          "html": "If <var>window</var> does not have <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#sticky-activation\">sticky activation</a>, abort these steps."
+        },
+        {
+          "html": "If the focused element is not a form control (such as the value of the <a data-link-type=\"dfn\" data-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element\">textarea</a> element), or an <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#editing-host\">editing host</a>  (e.g., using <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#attr-contenteditable\">contenteditable</a>) then abort these steps."
+        },
+        {
+          "html": "If the <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/virtual-keyboard/#dom-elementcontenteditable-virtualkeyboardpolicy\" class=\"internalDFN\" id=\"ref-for-dom-elementcontenteditable-virtualkeyboardpolicy-1\"><code>virtualKeyboardPolicy</code></a> is not <a data-link-type=\"idl\" data-lt=\"manual\" href=\"https://www.w3.org/TR/virtual-keyboard/#dfn-manual\" class=\"internalDFN\" id=\"ref-for-dfn-manual-1\"><code>manual</code></a> or <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute\">inputMode's</a> attribute value is <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-none\">none</a> then abort these steps."
+        },
+        {
+          "html": "Call the system API to show the VK."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">In parallel</a>, follow these steps:",
+          "rationale": "wait",
+          "steps": [
+            {
+              "html": "Wait for the virtual keyboard to be shown by the system."
+            },
+            {
+              "html": "Call <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/virtual-keyboard/#dfn-set-the-virtual-keyboard-bounding-rect\" class=\"internalDFN\" id=\"ref-for-dfn-set-the-virtual-keyboard-bounding-rect-1\"><code>set the virtual keyboard bounding rect</code></a> with the keyboard's OS reported bounding rectangle and the <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\">document</a>'s <a href=\"https://drafts.csswg.org/css2/#viewport\">viewport</a> rectangle."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named \"geometrychange\" at <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VirtualKeyboard/hide()",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard-hide",
+      "html": "The method must follow these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>window</var> be <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>. Assert that <var>window</var> is a <a data-link-type=\"idl\" data-lt=\"Window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#window\"><code>Window</code></a> object."
+        },
+        {
+          "html": "If <var>window</var> does not have <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#sticky-activation\">sticky activation</a>, abort these steps."
+        },
+        {
+          "html": "If the focused element's <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/virtual-keyboard/#dom-elementcontenteditable-virtualkeyboardpolicy\" class=\"internalDFN\" id=\"ref-for-dom-elementcontenteditable-virtualkeyboardpolicy-2\"><code>virtualKeyboardPolicy</code></a> is not <a data-link-type=\"idl\" data-lt=\"manual\" href=\"https://www.w3.org/TR/virtual-keyboard/#dfn-manual\" class=\"internalDFN\" id=\"ref-for-dfn-manual-2\"><code>manual</code></a> or <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute\">inputMode's</a> attribute value is <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-none\">none</a> then abort these steps."
+        },
+        {
+          "html": "Call the system API to hide the VK."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">In parallel</a>, follow these steps:",
+          "rationale": "wait",
+          "steps": [
+            {
+              "html": "Wait for the virtual keyboard to be hidden by the system."
+            },
+            {
+              "html": "Call <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/virtual-keyboard/#dfn-set-the-virtual-keyboard-bounding-rect\" class=\"internalDFN\" id=\"ref-for-dfn-set-the-virtual-keyboard-bounding-rect-2\"><code>set the virtual keyboard bounding rect</code></a> with the keyboard's OS reported bounding rectangle (which has all 0 values) and the <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\">document</a>'s <a href=\"https://drafts.csswg.org/css2/#viewport\">viewport</a> rectangle."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named \"geometrychange\" at <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "set the virtual keyboard bounding rect",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-set-the-virtual-keyboard-bounding-rect",
+      "html": "<dfn id=\"dfn-set-the-virtual-keyboard-bounding-rect\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">set the virtual keyboard bounding rect</dfn>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>osk</var> be the on-screen keyboard rectangle that is the result of running the algorithm in <a data-link-type=\"idl\" data-lt=\"show()\" href=\"https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard-show\" class=\"internalDFN\" id=\"ref-for-dom-virtualkeyboard-show-4\"><code>show</code></a><code>()</code> or <a data-link-type=\"idl\" data-lt=\"hide()\" href=\"https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard-hide\" class=\"internalDFN\" id=\"ref-for-dom-virtualkeyboard-hide-4\"><code>hide</code></a><code>()</code> on <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+        },
+        {
+          "html": "Let <var>lv</var> be the <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\">document</a>'s <a href=\"https://drafts.csswg.org/css2/#viewport\">viewport</a> that is the result of running the algorithm in <a data-link-type=\"idl\" data-lt=\"show()\" href=\"https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard-show\" class=\"internalDFN\" id=\"ref-for-dom-virtualkeyboard-show-5\"><code>show</code></a><code>()</code> or <a data-link-type=\"idl\" data-lt=\"hide()\" href=\"https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard-hide\" class=\"internalDFN\" id=\"ref-for-dom-virtualkeyboard-hide-5\"><code>hide</code></a><code>()</code> on <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+        },
+        {
+          "html": "Map <var>osk</var> to the coordinate space of <var>lv</var>."
+        },
+        {
+          "html": "Let <var>bounds</var> be a <a data-link-type=\"idl\" data-lt=\"DOMRect\" data-type=\"interface\" href=\"https://www.w3.org/TR/geometry-1/#domrect\"><code>DOMRect</code></a> object."
+        },
+        {
+          "html": "Update <var>bounds</var> by intersecting <var>lv</var> with the <var>osk</var>."
+        },
+        {
+          "html": "Map <var>bounds</var> to the coordinate space of <var>lv</var>."
+        },
+        {
+          "html": "Return <var>bounds</var>."
+        }
+      ]
+    }
+  ]
+}

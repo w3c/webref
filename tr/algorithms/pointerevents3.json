@@ -1,0 +1,176 @@
+{
+  "spec": {
+    "title": "Pointer Events",
+    "url": "https://www.w3.org/TR/pointerevents3/"
+  },
+  "algorithms": [
+    {
+      "html": "The user agent <em class=\"rfc2119\">MUST</em> run the following steps when <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-implicitly-release-the-pointer-capture\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-implicitly-release-the-pointer-capture-1\">implicitly releasing pointer capture</a> as well as when firing Pointer Events that are not <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-gotpointercapture\" class=\"internalDFN\" id=\"ref-for-dfn-gotpointercapture-5\"><code>gotpointercapture</code></a> or <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-lostpointercapture\" class=\"internalDFN\" id=\"ref-for-dfn-lostpointercapture-5\"><code>lostpointercapture</code></a>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointer-capture-target-override\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pointer-capture-target-override-4\">pointer capture target override</a> for this pointer is set and is not equal to the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-pending-pointer-capture-target-override\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-pointer-capture-target-override-1\">pending pointer capture target override</a>, then fire a pointer event named <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-lostpointercapture\" class=\"internalDFN\" id=\"ref-for-dfn-lostpointercapture-6\"><code>lostpointercapture</code></a> at the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointer-capture-target-override\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pointer-capture-target-override-5\">pointer capture target override</a> node."
+        },
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-pending-pointer-capture-target-override\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-pointer-capture-target-override-2\">pending pointer capture target override</a> for this pointer is set and is not equal to the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointer-capture-target-override\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pointer-capture-target-override-6\">pointer capture target override</a>, then fire a pointer event named <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-gotpointercapture\" class=\"internalDFN\" id=\"ref-for-dfn-gotpointercapture-6\"><code>gotpointercapture</code></a> at the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-pending-pointer-capture-target-override\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-pointer-capture-target-override-3\">pending pointer capture target override</a>."
+        },
+        {
+          "html": "Set the <dfn id=\"dfn-pointer-capture-target-override\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">pointer capture target override</dfn> to the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-pending-pointer-capture-target-override\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-pointer-capture-target-override-4\">pending pointer capture target override</a>, if set. Otherwise, clear the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointer-capture-target-override\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pointer-capture-target-override-7\">pointer capture target override</a>."
+        }
+      ]
+    },
+    {
+      "html": "A <code>click</code>, <code>auxclick</code> or <code>contextmenu</code> event <em class=\"rfc2119\">MUST</em> follow the dispatch process defined in the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/pointerevents3/#bib-uievents\" title=\"UI Events\">UIEVENTS</a></cite>] spec except that the event target is overridden using the algorithm below:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>event</var> be the <code>click</code>, <code>auxclick</code> or <code>contextmenu</code> event being dispatched, and <var>userEvent</var> be the user interaction event that caused the firing of <var>event</var>.</p>"
+        },
+        {
+          "html": "If <var>userEvent</var> is not a <code>PointerEvent</code>, dispatch <var>event</var> following the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/pointerevents3/#bib-uievents\" title=\"UI Events\">UIEVENTS</a></cite>] spec without overriding <var>event</var> target and skip the remaining steps below."
+        },
+        {
+          "html": "<p>Define <var>target</var> as follows:</p>\n\n                            <p>If <var>event</var> is a <code>contextmenu</code> event, or <var>userEvent</var> was dispatched while the corresponding pointer was captured, then let <var>target</var> be the target of <var>userEvent</var>.</p>\n\n                            <p>Otherwise (<var>event</var> is a <code>click</code> or <code>auxclick</code> event for which <var>userEvent</var> is a <code>pointerup</code> event that was dispatched uncaptured) let <var>target</var> be the nearest common inclusive ancestor of the corresponding <code>pointerdown</code> and <code>pointerup</code> targets in the DOM at the moment <var>event</var> is being dispatched.</p>"
+        },
+        {
+          "html": "<p>Dispatch <var>event</var> to <var>target</var> following the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/pointerevents3/#bib-uievents\" title=\"UI Events\">UIEVENTS</a></cite>] spec.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Pointer capture is set on an <var>element</var> of type <a data-link-type=\"idl\" data-lt=\"Element\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#element\"><code>Element</code></a> by calling the <code>element.setPointerCapture(pointerId)</code> method.\n                When this method is invoked, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code>pointerId</code> provided as the method's argument does not match any of the <a data-lt=\"active pointer\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-active-pointer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-active-pointer-5\">active pointers</a>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notfounderror\"><code>NotFoundError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "Let the <var>pointer</var> be the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-active-pointer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-active-pointer-6\">active pointer</a> specified by the given <code>pointerId</code>."
+        },
+        {
+          "html": "If the <var>element</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\">connected</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/pointerevents3/#bib-dom\" title=\"DOM Standard\">DOM</a></cite>], <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If this method is invoked while the <var>element</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/pointerevents3/#bib-dom\" title=\"DOM Standard\">DOM</a></cite>] has a locked element ([<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/pointerevents3/#bib-pointerlock\" title=\"Pointer Lock\">PointerLock</a></cite>] <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/pointerlock/#dom-documentorshadowroot-pointerlockelement\"><code>pointerLockElement</code></a>),\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If the <var>pointer</var> is not in the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-active-buttons-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-active-buttons-state-5\">active buttons state</a> or\n                    the <var>element</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a> is not the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-active-document\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-active-document-2\">active document</a> of the <var>pointer</var>, then terminate these steps."
+        },
+        {
+          "html": "For the specified <code>pointerId</code>, set the <dfn id=\"dfn-pending-pointer-capture-target-override\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">pending pointer capture target override</dfn> to the <a data-link-type=\"idl\" data-lt=\"Element\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#element\"><code>Element</code></a> on which this method was invoked."
+        }
+      ]
+    },
+    {
+      "html": "Pointer capture is released on an element explicitly by calling the <code>element.releasePointerCapture(pointerId)</code> method. When this method is called, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code>pointerId</code> provided as the method's argument does not match any of the <a data-lt=\"active pointer\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-active-pointer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-active-pointer-7\">active pointers</a> and these steps are not being invoked as a result of the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-implicitly-release-the-pointer-capture\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-implicitly-release-the-pointer-capture-5\">implicit release of pointer capture</a>, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notfounderror\"><code>NotFoundError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If <a data-lt=\"Element.hasPointerCapture\" href=\"https://www.w3.org/TR/pointerevents3/#dom-element-haspointercapture\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-element-haspointercapture-2\"><code>hasPointerCapture</code></a> is false for the <a data-link-type=\"idl\" data-lt=\"Element\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#element\"><code>Element</code></a> with the specified <code>pointerId</code>, then terminate these steps."
+        },
+        {
+          "html": "For the specified <code>pointerId</code>, clear the <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-pending-pointer-capture-target-override\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-pending-pointer-capture-target-override-6\">pending pointer capture target override</a>, if set."
+        }
+      ]
+    },
+    {
+      "html": "When a trusted <a href=\"https://www.w3.org/TR/pointerevents3/#dom-pointerevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-pointerevent-15\"><code>PointerEvent</code></a> is created, user agents <em class=\"rfc2119\">SHOULD</em> run the following steps for each event in the\n            <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-coalesced-events-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-coalesced-events-list-6\">coalesced events list</a> and <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-predicted-events-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-predicted-events-list-6\">predicted events list</a>:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set the event's <code>pointerId</code>, <code> pointerType</code>,\n                <code>isPrimary</code> and <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\"><code>isTrusted</code></a> to match the respective properties of the \"parent\" pointer event."
+        },
+        {
+          "html": "Set the event's <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://dom.spec.whatwg.org/#dom-event-cancelable\"><code>cancelable</code></a> and <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\"><code>bubbles</code></a> to false (as these events will never\n                be dispatched in isolation)."
+        },
+        {
+          "html": "Set the event's <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-coalesced-events-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-coalesced-events-list-7\">coalesced events list</a> and <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-predicted-events-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-predicted-events-list-7\">predicted events list</a> to an empty list."
+        },
+        {
+          "html": "Initialize all other attributes to default <a data-link-type=\"idl\" data-lt=\"PointerEvent\" href=\"https://www.w3.org/TR/pointerevents3/#dom-pointerevent\" class=\"internalDFN\" id=\"ref-for-dom-pointerevent-16\"><code>PointerEvent</code></a> values."
+        }
+      ]
+    },
+    {
+      "html": "When a trusted <a href=\"https://www.w3.org/TR/pointerevents3/#dom-pointerevent\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-pointerevent-17\"><code>PointerEvent</code></a>'s <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://dom.spec.whatwg.org/#dom-event-target\"><code>target</code></a> is changed, user agents <em class=\"rfc2119\">SHOULD</em>, for each event in the\n                <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-coalesced-events-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-coalesced-events-list-8\">coalesced events list</a> and <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-predicted-events-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-predicted-events-list-8\">predicted events list</a>:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set the event's <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://dom.spec.whatwg.org/#dom-event-target\"><code>target</code></a> to match the <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://dom.spec.whatwg.org/#dom-event-target\"><code>target</code></a> of the \"parent\" pointer event."
+        }
+      ]
+    },
+    {
+      "html": "Right before firing a <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerdown\" class=\"internalDFN\" id=\"ref-for-dfn-pointerdown-31\"><code>pointerdown</code></a>, <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerup\" class=\"internalDFN\" id=\"ref-for-dfn-pointerup-28\"><code>pointerup</code></a> or <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointermove\" class=\"internalDFN\" id=\"ref-for-dfn-pointermove-31\"><code>pointermove</code></a> event, or a <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerleave\" class=\"internalDFN\" id=\"ref-for-dfn-pointerleave-9\"><code>pointerleave</code></a> event at the <code>window</code>, the user agent <em class=\"rfc2119\">SHOULD</em> run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>T</var> be the target of the <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerdown\" class=\"internalDFN\" id=\"ref-for-dfn-pointerdown-32\"><code>pointerdown</code></a>, <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerup\" class=\"internalDFN\" id=\"ref-for-dfn-pointerup-29\"><code>pointerup</code></a> or <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointermove\" class=\"internalDFN\" id=\"ref-for-dfn-pointermove-32\"><code>pointermove</code></a> event being dispatched. For the <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerleave\" class=\"internalDFN\" id=\"ref-for-dfn-pointerleave-10\"><code>pointerleave</code></a> event, unset <var>T</var>."
+        },
+        {
+          "html": "If <var>T</var> and current <a data-lt=\"effective position of the legacy mouse pointer\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-effective-position-of-the-legacy-mouse-pointer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-effective-position-of-the-legacy-mouse-pointer-1\">effective legacy mouse pointer position</a> are both unset or they are equal, terminate these steps."
+        },
+        {
+          "html": "Dispatch <code>mouseover</code>, <code>mouseout</code>, <code>mouseenter</code> and <code>mouseleave</code> events as per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/pointerevents3/#bib-uievents\" title=\"UI Events\">UIEVENTS</a></cite>] for a mouse moving from the current <a data-lt=\"effective position of the legacy mouse pointer\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-effective-position-of-the-legacy-mouse-pointer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-effective-position-of-the-legacy-mouse-pointer-2\">effective legacy mouse pointer position</a> to <var>T</var>. Consider an unset value of either current <a data-lt=\"effective position of the legacy mouse pointer\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-effective-position-of-the-legacy-mouse-pointer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-effective-position-of-the-legacy-mouse-pointer-3\">effective legacy mouse pointer position</a> or <var>T</var> as an out-of-window mouse position."
+        },
+        {
+          "html": "Set <a data-lt=\"effective position of the legacy mouse pointer\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-effective-position-of-the-legacy-mouse-pointer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-effective-position-of-the-legacy-mouse-pointer-4\">effective legacy mouse pointer position</a> to <var>T</var>."
+        }
+      ]
+    },
+    {
+      "html": "Whenever the user agent is to dispatch a pointer event for a device that supports hover, it <em class=\"rfc2119\">SHOULD</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code>isPrimary</code> property for the pointer event to be dispatched is <code>false</code> then dispatch the pointer event and terminate these steps."
+        },
+        {
+          "html": "If the pointer event to be dispatched is a <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerdown\" class=\"internalDFN\" id=\"ref-for-dfn-pointerdown-33\"><code>pointerdown</code></a>, <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerup\" class=\"internalDFN\" id=\"ref-for-dfn-pointerup-30\"><code>pointerup</code></a> or <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointermove\" class=\"internalDFN\" id=\"ref-for-dfn-pointermove-33\"><code>pointermove</code></a> event, or a <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerleave\" class=\"internalDFN\" id=\"ref-for-dfn-pointerleave-11\"><code>pointerleave</code></a> event at the <code>window</code>, dispatch compatibility mouse transition events as described in <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-tracking-the-effective-position-of-the-legacy-mouse-pointer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tracking-the-effective-position-of-the-legacy-mouse-pointer-1\">Tracking the effective position of the legacy mouse pointer</a>."
+        },
+        {
+          "html": "Dispatch the pointer event."
+        },
+        {
+          "html": "If the pointer event dispatched was <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerdown\" class=\"internalDFN\" id=\"ref-for-dfn-pointerdown-34\"><code>pointerdown</code></a> and the event was <a data-lt=\"canceled event\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-canceled-event\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-canceled-event-1\">canceled</a>, then set the <code>PREVENT MOUSE EVENT</code> flag for this <code>pointerType</code>."
+        },
+        {
+          "html": "If the <code>PREVENT MOUSE EVENT</code> flag is <strong>not</strong> set for this <code>pointerType</code> and the pointer event dispatched was:\n                    <ul>\n                        <li><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerdown\" class=\"internalDFN\" id=\"ref-for-dfn-pointerdown-35\"><code>pointerdown</code></a>, then fire a <code>mousedown</code> event.</li>\n                        <li><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointermove\" class=\"internalDFN\" id=\"ref-for-dfn-pointermove-34\"><code>pointermove</code></a>, then fire a <code>mousemove</code> event.</li>\n                        <li><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerup\" class=\"internalDFN\" id=\"ref-for-dfn-pointerup-31\"><code>pointerup</code></a>, then fire a <code>mouseup</code> event.</li>\n                        <li><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointercancel\" class=\"internalDFN\" id=\"ref-for-dfn-pointercancel-11\"><code>pointercancel</code></a>, then fire a <code>mouseup</code> event at the <code>window</code>.</li>\n                    </ul>"
+        },
+        {
+          "html": "If the pointer event dispatched was <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerup\" class=\"internalDFN\" id=\"ref-for-dfn-pointerup-32\"><code>pointerup</code></a> or <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointercancel\" class=\"internalDFN\" id=\"ref-for-dfn-pointercancel-12\"><code>pointercancel</code></a>, clear the <code>PREVENT MOUSE EVENT</code> flag for this <code>pointerType</code>."
+        }
+      ]
+    },
+    {
+      "html": "This requires that user agents provide a different mapping for these types of input devices. Whenever the user agent is to dispatch a pointer event for a device that <a href=\"https://www.w3.org/TR/pointerevents3/#mapping-for-devices-that-do-not-support-hover\">does not support hover</a>, it <em class=\"rfc2119\">SHOULD</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code>isPrimary</code> property for the pointer event to be dispatched is <code>false</code> then dispatch the pointer event and terminate these steps."
+        },
+        {
+          "html": "If the pointer event to be dispatched is <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerover\" class=\"internalDFN\" id=\"ref-for-dfn-pointerover-9\"><code>pointerover</code></a> and the <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerdown\" class=\"internalDFN\" id=\"ref-for-dfn-pointerdown-36\"><code>pointerdown</code></a> event has not yet been dispatched for this pointer, then fire a <code>mousemove</code> event (for compatibility with legacy mouse-specific code)."
+        },
+        {
+          "html": "If the pointer event to be dispatched is a <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerdown\" class=\"internalDFN\" id=\"ref-for-dfn-pointerdown-37\"><code>pointerdown</code></a>, <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerup\" class=\"internalDFN\" id=\"ref-for-dfn-pointerup-33\"><code>pointerup</code></a> or <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointermove\" class=\"internalDFN\" id=\"ref-for-dfn-pointermove-35\"><code>pointermove</code></a> event, or a <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerleave\" class=\"internalDFN\" id=\"ref-for-dfn-pointerleave-12\"><code>pointerleave</code></a> event at the <code>window</code>, dispatch compatibility mouse transition events as described in <a href=\"https://www.w3.org/TR/pointerevents3/#dfn-tracking-the-effective-position-of-the-legacy-mouse-pointer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-tracking-the-effective-position-of-the-legacy-mouse-pointer-2\">Tracking the effective position of the legacy mouse pointer</a>."
+        },
+        {
+          "html": "Dispatch the pointer event."
+        },
+        {
+          "html": "If the pointer event dispatched was <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerdown\" class=\"internalDFN\" id=\"ref-for-dfn-pointerdown-38\"><code>pointerdown</code></a> and the event was <a data-lt=\"canceled event\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-canceled-event\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-canceled-event-2\">canceled</a>, then set the <code>PREVENT MOUSE EVENT</code> flag for this <code>pointerType</code>."
+        },
+        {
+          "html": "If the <code>PREVENT MOUSE EVENT</code> flag is <strong>not</strong> set for this <code>pointerType</code> and the pointer event dispatched was:\n                    <ul>\n                        <li><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerdown\" class=\"internalDFN\" id=\"ref-for-dfn-pointerdown-39\"><code>pointerdown</code></a>, then fire a <code>mousedown</code> event.</li>\n                        <li><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointermove\" class=\"internalDFN\" id=\"ref-for-dfn-pointermove-36\"><code>pointermove</code></a>, then fire a <code>mousemove</code> event.</li>\n                        <li><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerup\" class=\"internalDFN\" id=\"ref-for-dfn-pointerup-34\"><code>pointerup</code></a>, then fire a <code>mouseup</code> event.</li>\n                        <li><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointercancel\" class=\"internalDFN\" id=\"ref-for-dfn-pointercancel-13\"><code>pointercancel</code></a>, then fire a <code>mouseup</code> event at the <code>window</code>.</li>\n                    </ul>"
+        },
+        {
+          "html": "If the pointer event dispatched was <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointerup\" class=\"internalDFN\" id=\"ref-for-dfn-pointerup-35\"><code>pointerup</code></a> or <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerevents3/#dfn-pointercancel\" class=\"internalDFN\" id=\"ref-for-dfn-pointercancel-14\"><code>pointercancel</code></a>, clear the <code>PREVENT MOUSE EVENT</code> flag for this <code>pointerType</code>."
+        }
+      ]
+    }
+  ]
+}

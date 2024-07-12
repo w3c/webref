@@ -1,0 +1,287 @@
+{
+  "spec": {
+    "title": "Media Capabilities",
+    "url": "https://www.w3.org/TR/media-capabilities/"
+  },
+  "algorithms": [
+    {
+      "name": "valid MediaDecodingConfiguration",
+      "href": "https://www.w3.org/TR/media-capabilities/#valid-mediadecodingconfiguration",
+      "html": "For a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediadecodingconfiguration\" id=\"ref-for-dictdef-mediadecodingconfiguration①\">MediaDecodingConfiguration</a></code> to be a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"valid MediaDecodingConfiguration\" data-noexport=\"\" id=\"valid-mediadecodingconfiguration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid\n        MediaDecodingConfiguration</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, all of the following conditions MUST\n        be true:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "It MUST be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#valid-mediaconfiguration\" id=\"ref-for-valid-mediaconfiguration\">valid MediaConfiguration</a>."
+        },
+        {
+          "html": "If <code>keySystemConfiguration</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "The <code>type</code> MUST be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediadecodingtype-media-source\" id=\"ref-for-dom-mediadecodingtype-media-source\">media-source</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediadecodingtype-file\" id=\"ref-for-dom-mediadecodingtype-file\">file</a></code>."
+            },
+            {
+              "html": "If <code>keySystemConfiguration.audio</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>, <code>audio</code> MUST also <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exist</a>."
+            },
+            {
+              "html": "If <code>keySystemConfiguration.video</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a>, <code>video</code> MUST also <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exist</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "valid video configuration",
+      "href": "https://www.w3.org/TR/media-capabilities/#valid-video-configuration",
+      "html": "To check if a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-videoconfiguration\" id=\"ref-for-dictdef-videoconfiguration①\">VideoConfiguration</a></code> <var>configuration</var> is a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"valid-video-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid video configuration</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, the following steps MUST be run:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>configuration</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-videoconfiguration-contenttype\" id=\"ref-for-dom-videoconfiguration-contenttype①\">contentType</a></code> is\n            not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#valid-video-mime-type\" id=\"ref-for-valid-video-mime-type\">valid video MIME type</a>, return <code>false</code> and\n            abort these steps."
+        },
+        {
+          "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-videoconfiguration-framerate\" id=\"ref-for-dom-videoconfiguration-framerate①\">framerate</a></code> is not finite or is not greater\n            than 0, return <code>false</code> and abort these steps."
+        },
+        {
+          "html": "If an optional member is specified for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#enumdef-mediadecodingtype\" id=\"ref-for-enumdef-mediadecodingtype①\">MediaDecodingType</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#enumdef-mediaencodingtype\" id=\"ref-for-enumdef-mediaencodingtype①\">MediaEncodingType</a></code> to which it’s not applicable, return <code>false</code> and abort these steps. See applicability rules\n            in the member definitions below."
+        },
+        {
+          "html": "Return <code>true</code>."
+        }
+      ]
+    },
+    {
+      "name": "valid audio configuration",
+      "href": "https://www.w3.org/TR/media-capabilities/#valid-audio-configuration",
+      "html": "To check if a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-audioconfiguration\" id=\"ref-for-dictdef-audioconfiguration①\">AudioConfiguration</a></code> <var>configuration</var> is a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"valid-audio-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid audio configuration</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, the following steps MUST be run:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>configuration</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-audioconfiguration-contenttype\" id=\"ref-for-dom-audioconfiguration-contenttype①\">contentType</a></code> is\n            not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#valid-audio-mime-type\" id=\"ref-for-valid-audio-mime-type\">valid audio MIME type</a>, return <code>false</code> and\n            abort these steps."
+        },
+        {
+          "html": "Return <code>true</code>."
+        }
+      ]
+    },
+    {
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediaencodingconfiguration\" id=\"ref-for-dictdef-mediaencodingconfiguration④\">MediaEncodingConfiguration</a></code> <var>configuration</var>, this\n          algorithm returns a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediacapabilitiesencodinginfo\" id=\"ref-for-dictdef-mediacapabilitiesencodinginfo②\">MediaCapabilitiesEncodingInfo</a></code>. The following\n          steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>info</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediacapabilitiesencodinginfo\" id=\"ref-for-dictdef-mediacapabilitiesencodinginfo③\">MediaCapabilitiesEncodingInfo</a></code> instance. Unless stated otherwise, reading and writing apply to <var>info</var> for the next steps."
+        },
+        {
+          "html": "Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesencodinginfo-configuration\" id=\"ref-for-dom-mediacapabilitiesencodinginfo-configuration①\">configuration</a></code> to be a\n              new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediaencodingconfiguration\" id=\"ref-for-dictdef-mediaencodingconfiguration⑤\">MediaEncodingConfiguration</a></code>. For every property in <var> configuration</var> create a new property with the same name and\n              value in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesencodinginfo-configuration\" id=\"ref-for-dom-mediacapabilitiesencodinginfo-configuration②\">configuration</a></code>."
+        },
+        {
+          "html": "If the user agent is able to encode the media represented by <var>configuration</var>, set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-supported\" id=\"ref-for-dom-mediacapabilitiesinfo-supported②\">supported</a></code> to <code>true</code>. Otherwise set it to <code>false</code>."
+        },
+        {
+          "html": "If the user agent is able to encode the media represented by <var>configuration</var> at the indicated framerate, set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-smooth\" id=\"ref-for-dom-mediacapabilitiesinfo-smooth①\">smooth</a></code> to <code>true</code>. Otherwise\n              set it to <code>false</code>."
+        },
+        {
+          "html": "If the user agent is able to encode the media represented by <var>configuration</var> in a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#power-efficient\" id=\"ref-for-power-efficient\">power efficient</a> manner, set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-powerefficient\" id=\"ref-for-dom-mediacapabilitiesinfo-powerefficient①\">powerEfficient</a></code> to <code>true</code>.\n              Otherwise set it to <code>false</code>."
+        },
+        {
+          "html": "Return <var>info</var>."
+        }
+      ]
+    },
+    {
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediadecodingconfiguration\" id=\"ref-for-dictdef-mediadecodingconfiguration①⓪\">MediaDecodingConfiguration</a></code> <var>configuration</var>, this\n          algorithm returns a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediacapabilitiesdecodinginfo\" id=\"ref-for-dictdef-mediacapabilitiesdecodinginfo③\">MediaCapabilitiesDecodingInfo</a></code>. The following\n          steps are run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>info</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediacapabilitiesdecodinginfo\" id=\"ref-for-dictdef-mediacapabilitiesdecodinginfo④\">MediaCapabilitiesDecodingInfo</a></code> instance. Unless stated otherwise, reading and writing apply to <var>info</var> for the next steps."
+        },
+        {
+          "html": "Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesdecodinginfo-configuration\" id=\"ref-for-dom-mediacapabilitiesdecodinginfo-configuration①\">configuration</a></code> to be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediadecodingconfiguration\" id=\"ref-for-dictdef-mediadecodingconfiguration①①\">MediaDecodingConfiguration</a></code>. For every property in <var> configuration</var> create a new property with the same name and\n              value in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesdecodinginfo-configuration\" id=\"ref-for-dom-mediacapabilitiesdecodinginfo-configuration②\">configuration</a></code>."
+        },
+        {
+          "html": "If <code>configuration.keySystemConfiguration</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">exists</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesdecodinginfo-keysystemaccess\" id=\"ref-for-dom-mediacapabilitiesdecodinginfo-keysystemaccess①\">keySystemAccess</a></code> to the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#check-encrypted-decoding-support\" id=\"ref-for-check-encrypted-decoding-support\">Check Encrypted Decoding\n                  Support</a> algorithm with <var>configuration</var>."
+            },
+            {
+              "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesdecodinginfo-keysystemaccess\" id=\"ref-for-dom-mediacapabilitiesdecodinginfo-keysystemaccess②\">keySystemAccess</a></code> is not <code>null</code> set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-supported\" id=\"ref-for-dom-mediacapabilitiesinfo-supported③\">supported</a></code> to <code>true</code>. Otherwise set it to <code>false</code>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, run the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesdecodinginfo-keysystemaccess\" id=\"ref-for-dom-mediacapabilitiesdecodinginfo-keysystemaccess③\">keySystemAccess</a></code> to <code>null</code>."
+            },
+            {
+              "html": "If the user agent is able to decode the media represented\n                  by <var>configuration</var>, set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-supported\" id=\"ref-for-dom-mediacapabilitiesinfo-supported④\">supported</a></code> to <code>true</code>."
+            },
+            {
+              "html": "Otherwise, set it to <code>false</code>."
+            }
+          ]
+        },
+        {
+          "html": "If the user agent is able to decode the media represented by <var>configuration</var> at the indicated framerate\n              without dropping frames, set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-smooth\" id=\"ref-for-dom-mediacapabilitiesinfo-smooth②\">smooth</a></code> to <code>true</code>. Otherwise set it to <code>false</code>."
+        },
+        {
+          "html": "If the user agent is able to decode the media represented by <var>configuration</var> in a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#power-efficient\" id=\"ref-for-power-efficient①\">power efficient</a> manner, set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-powerefficient\" id=\"ref-for-dom-mediacapabilitiesinfo-powerefficient②\">powerEfficient</a></code> to <code>true</code>. Otherwise set it to <code>false</code>."
+        },
+        {
+          "html": "Return <var>info</var>."
+        }
+      ]
+    },
+    {
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediadecodingconfiguration\" id=\"ref-for-dictdef-mediadecodingconfiguration①②\">MediaDecodingConfiguration</a></code> <var>config</var> where <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediadecodingconfiguration-keysystemconfiguration\" id=\"ref-for-dom-mediadecodingconfiguration-keysystemconfiguration①\">keySystemConfiguration</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exists</a>, this algorithm returns a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface\" id=\"ref-for-mediakeysystemaccess-interface②\">MediaKeySystemAccess</a></code> or <code>null</code> as appropriate. The\n          following steps are run:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitieskeysystemconfiguration-keysystem\" id=\"ref-for-dom-mediacapabilitieskeysystemconfiguration-keysystem①\">keySystem</a></code> member of <code>config.keySystemConfiguration</code> is not one of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/encrypted-media/#key-system\" id=\"ref-for-key-system\">Key Systems</a> supported by the user agent, return <code>null</code>. String comparison is case-sensitive."
+        },
+        {
+          "html": "Let <var>origin</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> of the calling context’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">Document</a>."
+        },
+        {
+          "html": "Let <var>implementation</var> be the implementation of <code>config.keySystemConfiguration.keySystem</code>"
+        },
+        {
+          "html": "Let <var>emeConfiguration</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#mediakeysystemconfiguration-dictionary\" id=\"ref-for-mediakeysystemconfiguration-dictionary\">MediaKeySystemConfiguration</a></code>, and initialize it as follows:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-initdatatypes\" id=\"ref-for-dom-mediakeysystemconfiguration-initdatatypes①\">initDataTypes</a></code> attribute to a sequence containing <code>config.keySystemConfiguration.initDataType</code>."
+            },
+            {
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\" id=\"ref-for-dom-mediakeysystemconfiguration-distinctiveidentifier①\">distinctiveIdentifier</a></code> attribute to <code>config.keySystemConfiguration.distinctiveIdentifier</code>."
+            },
+            {
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate\" id=\"ref-for-dom-mediakeysystemconfiguration-persistentstate①\">persistentState</a></code> attribute to <code>config.keySystemConfiguration.peristentState</code>."
+            },
+            {
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-sessiontypes\" id=\"ref-for-dom-mediakeysystemconfiguration-sessiontypes①\">sessionTypes</a></code> attribute to <code>config.keySystemConfiguration.sessionTypes</code>."
+            },
+            {
+              "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediaconfiguration-audio\" id=\"ref-for-dom-mediaconfiguration-audio\">audio</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a> in <var>config</var>, set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities\" id=\"ref-for-dom-mediakeysystemconfiguration-audiocapabilities\">audioCapabilities</a></code> attribute to a sequence containing a\n                single <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#mediakeysystemmediacapability-dictionary\" id=\"ref-for-mediakeysystemmediacapability-dictionary\">MediaKeySystemMediaCapability</a></code>, initialized as\n                follows:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-contenttype\" id=\"ref-for-dom-mediakeysystemmediacapability-contenttype\">contentType</a></code> attribute to <code>config.audio.contentType</code>."
+                },
+                {
+                  "html": "If <code>config.keySystemConfiguration.audio</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness①\">robustness</a></code> attribute to <code> config.keySystemConfiguration.audio.robustness</code>"
+                    },
+                    {
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme①\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.audio.encryptionScheme</code>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediaconfiguration-video\" id=\"ref-for-dom-mediaconfiguration-video\">video</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a> in <var>config</var>, set the\n                videoCapabilities attribute to a sequence containing a single <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#mediakeysystemmediacapability-dictionary\" id=\"ref-for-mediakeysystemmediacapability-dictionary①\">MediaKeySystemMediaCapability</a></code>, initialized as follows:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-contenttype\" id=\"ref-for-dom-mediakeysystemmediacapability-contenttype①\">contentType</a></code> attribute to <code>config.video.contentType</code>."
+                },
+                {
+                  "html": "If <code>config.keySystemConfiguration.video</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exists</a>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness②\">robustness</a></code> attribute to <code> config.keySystemConfiguration.video.robustness</code>."
+                    },
+                    {
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme②\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.video.encryptionScheme</code>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Let <var>supported configuration</var> be the result of\n              executing the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/encrypted-media/#get-supported-configuration\" id=\"ref-for-get-supported-configuration\">Get Supported Configuration</a> algorithm on <var>implementation</var>, <var>emeConfiguration</var>, and <var>origin</var>."
+        },
+        {
+          "html": "If <var>supported configuration</var> is <code>NotSupported</code>, return <code>null</code> and abort\n              these steps."
+        },
+        {
+          "html": "Let <var>access</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface\" id=\"ref-for-mediakeysystemaccess-interface③\">MediaKeySystemAccess</a></code> object, and initialize it as follows:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemaccess-keysystem\" id=\"ref-for-dom-mediakeysystemaccess-keysystem①\">keySystem</a></code> attribute to <code>emeConfiguration.keySystem</code>."
+            },
+            {
+              "html": "Let the <var>configuration</var> value be <var>supported configuration</var>."
+            },
+            {
+              "html": "Let the <var>cdm implementation</var> value be <var>implementation</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>access</var>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilities-decodinginfo\" id=\"ref-for-dom-mediacapabilities-decodinginfo\">decodingInfo()</a></code> method method MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>configuration</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#valid-mediadecodingconfiguration\" id=\"ref-for-valid-mediadecodingconfiguration\">valid\n          MediaDecodingConfiguration</a>, return a Promise rejected with a\n          newly created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>."
+        },
+        {
+          "html": "If <code>configuration.keySystemConfiguration</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exists</a>,\n          run the following substeps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object\">global object</a> is of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope\">WorkerGlobalScope</a></code>,\n              return a Promise rejected with a newly created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>."
+            },
+            {
+              "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①\">global object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context\" id=\"ref-for-non-secure-context\">non-secure context</a>, return a Promise rejected with a newly\n              created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>p</var> be a new promise."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">In parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#create-a-mediacapabilitiesdecodinginfo\" id=\"ref-for-create-a-mediacapabilitiesdecodinginfo\">Create a\n          MediaCapabilitiesDecodingInfo</a> algorithm with <var>configuration</var> and resolve <var>p</var> with its result."
+        },
+        {
+          "html": "Return <var>p</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilities-encodinginfo\" id=\"ref-for-dom-mediacapabilities-encodinginfo\">encodingInfo()</a></code> method MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>configuration</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#valid-mediaconfiguration\" id=\"ref-for-valid-mediaconfiguration①\">valid MediaConfiguration</a>,\n          return a Promise rejected with a newly created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>."
+        },
+        {
+          "html": "Let <var>p</var> be a new promise."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">In parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#create-a-mediacapabilitiesencodinginfo\" id=\"ref-for-create-a-mediacapabilitiesencodinginfo\">Create a MediaCapabilitiesEncodingInfo</a> algorithm with <var>configuration</var> and resolve <var>p</var> with its result."
+        },
+        {
+          "html": "Return <var>p</var>."
+        }
+      ]
+    }
+  ]
+}

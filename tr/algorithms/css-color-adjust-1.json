@@ -1,0 +1,28 @@
+{
+  "spec": {
+    "title": "CSS Color Adjustment Module Level 1",
+    "url": "https://www.w3.org/TR/css-color-adjust-1/"
+  },
+  "algorithms": [
+    {
+      "name": "determine the used color scheme",
+      "href": "https://www.w3.org/TR/css-color-adjust-1/#determine-the-used-color-scheme",
+      "html": "To <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-used-color-scheme\">determine the used color scheme<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-adjust-1/#determine-the-used-color-scheme\"></a></dfn> of an element:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the user’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-adjust-1/#preferred-color-scheme\" id=\"ref-for-preferred-color-scheme②\">preferred color scheme</a>,\nas indicated by the <a class=\"property css\" data-link-type=\"property\">prefers-color-scheme</a> media feature,\nis present among the listed <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-adjust-1/#color-scheme\" id=\"ref-for-color-scheme①①\">color schemes</a>,\nand is supported by the user agent,\nthat’s the element’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-adjust-1/#used-color-scheme\" id=\"ref-for-used-color-scheme\">used color scheme</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise,\nif the user has indicated an overriding preference for their chosen color scheme,\nand the <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-adjust-1/#valdef-color-scheme-only\" id=\"ref-for-valdef-color-scheme-only①\">only</a> keyword is not present in <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-color-adjust-1/#propdef-color-scheme\" id=\"ref-for-propdef-color-scheme⑥\">color-scheme</a> for the element,\nthe user agent must <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-adjust-1/#override-the-color-scheme\" id=\"ref-for-override-the-color-scheme①\">override the color scheme</a> with the user’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-adjust-1/#preferred-color-scheme\" id=\"ref-for-preferred-color-scheme③\">preferred color scheme</a>.\nSee <a href=\"https://www.w3.org/TR/css-color-adjust-1/#color-scheme-override\">§ 2.3 Overriding the Color Scheme</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise,\nif the user agent supports at least one of the listed <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-adjust-1/#color-scheme\" id=\"ref-for-color-scheme①②\">color schemes</a>,\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-adjust-1/#used-color-scheme\" id=\"ref-for-used-color-scheme①\">used color scheme</a> is\nthe first supported <span id=\"ref-for-color-scheme①③\">color scheme</span> in the list.</p>"
+        },
+        {
+          "html": "<p>Otherwise,\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-adjust-1/#used-color-scheme\" id=\"ref-for-used-color-scheme②\">used color scheme</a> is the browser default.\n(Same as <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-adjust-1/#valdef-color-scheme-normal\" id=\"ref-for-valdef-color-scheme-normal②\">normal</a>.)</p>"
+        }
+      ]
+    }
+  ]
+}

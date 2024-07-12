@@ -1,0 +1,138 @@
+{
+  "spec": {
+    "title": "Picture-in-Picture",
+    "url": "https://www.w3.org/TR/picture-in-picture/"
+  },
+  "algorithms": [
+    {
+      "name": "request Picture-in-Picture algorithm",
+      "href": "https://www.w3.org/TR/picture-in-picture/#request-picture-in-picture-algorithm",
+      "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"request-picture-in-picture-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">request Picture-in-Picture algorithm</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with <var>video</var> is invoked,\nthe user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/picture-in-picture/#picture-in-picture-support\" id=\"ref-for-picture-in-picture-support\">Picture-in-Picture support</a> is <code>false</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If the document is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature\">policy-controlled feature</a> named <code>\"picture-in-picture\"</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> and abort these\nsteps.</p>"
+        },
+        {
+          "html": "<p>If <var>video</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#dom-media-readystate\" id=\"ref-for-dom-media-readystate\">readyState</a></code> attribute is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#dom-media-have_nothing\" id=\"ref-for-dom-media-have_nothing\">HAVE_NOTHING</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>video</var> has no video track, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code> and abort\nthese steps.</p>"
+        },
+        {
+          "html": "<p>If <var>video</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-htmlvideoelement-disablepictureinpicture\" id=\"ref-for-dom-htmlvideoelement-disablepictureinpicture\">disablePictureInPicture</a></code> is true,\nthe user agent MAY throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement\">pictureInPictureElement</a></code> is <code>null</code> and the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>video</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement①\">pictureInPictureElement</a></code>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement②\">pictureInPictureElement</a></code> to <var>video</var>.</p>"
+        },
+        {
+          "html": "<p>Let <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"picture-in-picture-window\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Picture-in-Picture window</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be a new instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#pictureinpicturewindow\" id=\"ref-for-pictureinpicturewindow\">PictureInPictureWindow</a></code> associated with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement③\">pictureInPictureElement</a></code>.</p>"
+        },
+        {
+          "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin①\">origin</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/picture-in-picture/#initiators-of-active-picture-in-picture-sessions\" id=\"ref-for-initiators-of-active-picture-in-picture-sessions①\">initiators of active Picture-in-Picture sessions</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#eventdef-htmlvideoelement-enterpictureinpicture\" id=\"ref-for-eventdef-htmlvideoelement-enterpictureinpicture\">enterpictureinpicture</a></code> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#pictureinpictureevent\" id=\"ref-for-pictureinpictureevent\">PictureInPictureEvent</a></code> at the <var>video</var> with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles\">bubbles</a></code> attribute initialized to <code>true</code> and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-pictureinpictureevent-pictureinpicturewindow\" id=\"ref-for-dom-pictureinpictureevent-pictureinpicturewindow\">pictureInPictureWindow</a></code> attribute initialized to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/picture-in-picture/#picture-in-picture-window\" id=\"ref-for-picture-in-picture-window\">Picture-in-Picture window</a>.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement④\">pictureInPictureElement</a></code> is <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org#dom-document-fullscreenelement\" id=\"ref-for-dom-document-fullscreenelement\">fullscreenElement</a>, it is\nRECOMMENDED to <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org#fully-exit-fullscreen\" id=\"ref-for-fully-exit-fullscreen\">exit fullscreen</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "exit Picture-in-Picture algorithm",
+      "href": "https://www.w3.org/TR/picture-in-picture/#exit-picture-in-picture-algorithm",
+      "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"exit-picture-in-picture-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">exit Picture-in-Picture algorithm</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> is invoked,\nthe user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement⑤\">pictureInPictureElement</a></code> is <code>null</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and\nabort these steps.</p>"
+        },
+        {
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/picture-in-picture/#close-window-algorithm\" id=\"ref-for-close-window-algorithm\">close window algorithm</a> with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/picture-in-picture/#picture-in-picture-window\" id=\"ref-for-picture-in-picture-window①\">Picture-in-Picture\nwindow</a> associated with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement⑥\">pictureInPictureElement</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#eventdef-htmlvideoelement-leavepictureinpicture\" id=\"ref-for-eventdef-htmlvideoelement-leavepictureinpicture\">leavepictureinpicture</a></code> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#pictureinpictureevent\" id=\"ref-for-pictureinpictureevent①\">PictureInPictureEvent</a></code> at the <var>video</var> with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles①\">bubbles</a></code> attribute initialized to <code>true</code> and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-pictureinpictureevent-pictureinpicturewindow\" id=\"ref-for-dom-pictureinpictureevent-pictureinpicturewindow①\">pictureInPictureWindow</a></code> attribute initialized to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/picture-in-picture/#picture-in-picture-window\" id=\"ref-for-picture-in-picture-window②\">Picture-in-Picture window</a> associated with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement⑦\">pictureInPictureElement</a></code>.</p>"
+        },
+        {
+          "html": "<p>Unset <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement⑧\">pictureInPictureElement</a></code>.</p>"
+        },
+        {
+          "html": "<p>Remove one <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a> matching <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin②\">origin</a> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/picture-in-picture/#initiators-of-active-picture-in-picture-sessions\" id=\"ref-for-initiators-of-active-picture-in-picture-sessions②\">initiators of active Picture-in-Picture sessions</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-htmlvideoelement-disablepictureinpicture\" id=\"ref-for-dom-htmlvideoelement-disablepictureinpicture④\">disablePictureInPicture</a></code> attribute is added to a <var>video</var> element,\nthe user agent MAY run these steps:",
+      "rationale": "reject",
+      "steps": [
+        {
+          "html": "<p>Reject any pending promises returned by the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-htmlvideoelement-requestpictureinpicture\" id=\"ref-for-dom-htmlvideoelement-requestpictureinpicture\">requestPictureInPicture()</a></code> method with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>video</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement⑨\">pictureInPictureElement</a></code>, run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/picture-in-picture/#exit-picture-in-picture-algorithm\" id=\"ref-for-exit-picture-in-picture-algorithm②\">exit\nPicture-in-Picture algorithm</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-htmlvideoelement-requestpictureinpicture\" id=\"ref-for-dom-htmlvideoelement-requestpictureinpicture①\">requestPictureInPicture()</a></code> method, when invoked, MUST\nreturn <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in\nparallel</a>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>video</var> be the video element on which the method was invoked.</p>"
+        },
+        {
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/picture-in-picture/#request-picture-in-picture-algorithm\" id=\"ref-for-request-picture-in-picture-algorithm\">request Picture-in-Picture algorithm</a> with <var>video</var>.</p>"
+        },
+        {
+          "html": "<p>If the previous step threw an exception, reject <var>promise</var> with that\nexception and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var> with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/picture-in-picture/#picture-in-picture-window\" id=\"ref-for-picture-in-picture-window③\">Picture-in-Picture window</a> associated with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement①②\">pictureInPictureElement</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-document-exitpictureinpicture\" id=\"ref-for-dom-document-exitpictureinpicture\">exitPictureInPicture()</a></code> method, when invoked, MUST\nreturn <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> <var>promise</var> and run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in\nparallel</a>:",
+      "rationale": "run",
+      "steps": [
+        {
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/picture-in-picture/#exit-picture-in-picture-algorithm\" id=\"ref-for-exit-picture-in-picture-algorithm④\">exit Picture-in-Picture algorithm</a>.</p>"
+        },
+        {
+          "html": "<p>If the previous step threw an exception, reject <var>promise</var> with that\nexception and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement\" id=\"ref-for-dom-documentorshadowroot-pictureinpictureelement①③\">pictureInPictureElement</a></code> attribute’s getter must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\">context object</a> is not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected\">connected</a>, return <code>null</code> and abort\nthese steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>candidate</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#retarget\" id=\"ref-for-retarget\">retargeting</a> Picture-in-Picture\nelement against the <a data-link-type=\"dfn\">context object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>candidate</var> and the <a data-link-type=\"dfn\">context object</a> are in the same <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree\" id=\"ref-for-concept-tree\">tree</a>,\nreturn <var>candidate</var> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Return <code>null</code>.</p>"
+        }
+      ]
+    }
+  ]
+}

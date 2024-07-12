@@ -1,0 +1,54 @@
+{
+  "spec": {
+    "title": "CSS Scroll Anchoring Module Level 1",
+    "url": "https://www.w3.org/TR/css-scroll-anchoring-1/"
+  },
+  "algorithms": [
+    {
+      "name": "anchor node selection algorithm",
+      "href": "https://www.w3.org/TR/css-scroll-anchoring-1/#anchoring-algorithm",
+      "html": "The <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"anchoring-algorithm\">anchor node selection algorithm</dfn> for a scrolling box <var>S</var> is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>S</var> is associated with an element\nwhose computed value of the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-scroll-anchoring-1/#propdef-overflow-anchor\" id=\"ref-for-propdef-overflow-anchor\">overflow-anchor</a> property is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-scroll-anchoring-1/#valdef-overflow-anchor-none\" id=\"ref-for-valdef-overflow-anchor-none\">none</a>,\nthen do not select an anchor node for <var>S</var>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, for each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-anchoring-1/#anchor-priority-candidates\" id=\"ref-for-anchor-priority-candidates①\">priority candidate</a> <var>PC</var> in order specified,\ncheck if <var>PC</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-anchoring-1/#anchor-viable-candidate\" id=\"ref-for-anchor-viable-candidate\">viable candidate</a> in <var>S</var>. If so, select it as an\nanchor node and terminate.</p>"
+        },
+        {
+          "html": "<p>Otherwise, for each DOM child <var>N</var> of the element or document associated with <var>S</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination\">candidate examination algorithm</a> for <var>N</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
+        }
+      ]
+    },
+    {
+      "name": "candidate examination algorithm",
+      "href": "https://www.w3.org/TR/css-scroll-anchoring-1/#candidate-examination",
+      "html": "The <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"candidate-examination\">candidate examination algorithm</dfn> for a candidate DOM node <var>N</var> in a scrolling box <var>S</var> is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>N</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-anchoring-1/#excluded-subtree\" id=\"ref-for-excluded-subtree②\">excluded subtree</a>,\nor if <var>N</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-anchoring-1/#fully-clipped\" id=\"ref-for-fully-clipped\">fully clipped</a> in <var>S</var>,\nthen do nothing (<var>N</var> and its descendants are skipped).</p>"
+        },
+        {
+          "html": "<p>If <var>N</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-anchoring-1/#fully-visible\" id=\"ref-for-fully-visible①\">fully visible</a> in <var>S</var>,\nselect <var>N</var> as the anchor node.</p>"
+        },
+        {
+          "html": "The <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"candidate-examination\">candidate examination algorithm</dfn> for a candidate DOM node <var>N</var> in a scrolling box <var>S</var> is as follows:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p>For each DOM child <var>C</var> of <var>N</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination①\">candidate examination algorithm</a> for <var>C</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
+            },
+            {
+              "html": "<p>For each absolutely-positioned element <var>A</var> whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#containing-block\" id=\"ref-for-containing-block\">containing block</a> is <var>N</var>,\nbut whose DOM parent is not <var>N</var>,\nperform the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-anchoring-1/#candidate-examination\" id=\"ref-for-candidate-examination②\">candidate examination algorithm</a> for <var>A</var> in <var>S</var>,\nand terminate if it selects an anchor node.</p>"
+            },
+            {
+              "html": "<p>Select <var>N</var> as the anchor node.\n(If this step is reached,\nno suitable anchor node was found among <var>N</var>’s descendants.)</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1592 @@
+{
+  "spec": {
+    "title": "CSSOM View Module",
+    "url": "https://www.w3.org/TR/cssom-view-1/"
+  },
+  "algorithms": [
+    {
+      "name": "overflow directions",
+      "href": "https://www.w3.org/TR/cssom-view-1/#overflow-directions",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box-2\">scrolling box</a> of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-2\">viewport</a> or element has two <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"overflow directions\" data-noexport=\"\" id=\"overflow-directions\">overflow directions<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#overflow-directions\">#overflow-directions</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-1\">2. Terminology</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-2\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-3\">(3)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-4\">(4)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-5\">(5)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-6\">(6)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-7\">(7)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-8\">(8)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-9\">(9)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-10\">(10)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-11\">4. Extensions to the Window Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-12\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-13\">(3)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-14\">(4)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-15\">6.1. Element Scrolling Members</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-16\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-17\">(3)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-overflow-directions-18\">(4)</a></span></span></dfn>, depending on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-3\">viewport’s</a> or\nelement’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-3/#block-flow-direction\">block flow direction</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-3/#inline-base-direction\">inline base direction</a>, as follows:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If the block flow direction is top-to-bottom and the inline base direction is left-to-right",
+              "html": "Rightward and downward."
+            },
+            {
+              "case": "If the block flow direction is left-to-right and the inline base direction is left-to-right",
+              "html": "Rightward and downward."
+            },
+            {
+              "case": "If the block flow direction is top-to-bottom and the inline base direction is right-to-left",
+              "html": "Leftward and downward."
+            },
+            {
+              "case": "If the block flow direction is right-to-left and the inline base direction is left-to-right",
+              "html": "Leftward and downward."
+            },
+            {
+              "case": "If the block flow direction is right-to-left and the inline base direction is right-to-left",
+              "html": "Leftward and upward."
+            },
+            {
+              "case": "If the block flow direction is left-to-right and the inline base direction is right-to-left",
+              "html": "Rightward and upward."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beginning edges",
+      "href": "https://www.w3.org/TR/cssom-view-1/#beginning-edges",
+      "html": "The <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"beginning edges\" data-noexport=\"\" id=\"beginning-edges\">beginning edges<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#beginning-edges\">#beginning-edges</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-beginning-edges-1\">3.1. Scrolling</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-beginning-edges-2\">(2)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-beginning-edges-3\">6.1. Element Scrolling Members</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-beginning-edges-4\">(2)</a></span></span></dfn> of a particular set of edges of a box or element are the following edges:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If the overflow directions are rightward and downward",
+              "html": "The top and left edges."
+            },
+            {
+              "case": "If the overflow directions are leftward and downward",
+              "html": "The top and right edges."
+            },
+            {
+              "case": "If the overflow directions are leftward and upward",
+              "html": "The bottom and right edges."
+            },
+            {
+              "case": "If the overflow directions are rightward and upward",
+              "html": "The bottom and left edges."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ending edges",
+      "href": "https://www.w3.org/TR/cssom-view-1/#ending-edges",
+      "html": "The <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"ending edges\" data-noexport=\"\" id=\"ending-edges\">ending edges<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#ending-edges\">#ending-edges</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-ending-edges-1\">6.1. Element Scrolling Members</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-ending-edges-2\">(2)</a></span></span></dfn> of a particular set of edges of a box or element are the following edges:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If the overflow directions are rightward and downward",
+              "html": "The bottom and right edges."
+            },
+            {
+              "case": "If the overflow directions are leftward and downward",
+              "html": "The bottom and left edges."
+            },
+            {
+              "case": "If the overflow directions are leftward and upward",
+              "html": "The top and left edges."
+            },
+            {
+              "case": "If the overflow directions are rightward and upward",
+              "html": "The top and right edges."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "perform a scroll",
+      "href": "https://www.w3.org/TR/cssom-view-1/#perform-a-scroll",
+      "html": "When a user agent is to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"perform a scroll\" data-noexport=\"\" id=\"perform-a-scroll\">perform a scroll<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#perform-a-scroll\">#perform-a-scroll</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-perform-a-scroll-1\">3.1. Scrolling</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-perform-a-scroll-2\">4. Extensions to the Window Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-perform-a-scroll-3\">6.1. Element Scrolling Members</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-perform-a-scroll-4\">(2)</a></span></span></dfn> of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box-4\">scrolling box</a> <var>box</var>,\nto a given position <var>position</var>,\nan associated element <var>element</var> and optionally a scroll behavior <var>behavior</var> (which is <code>\"auto\"</code> if omitted),\nthe following steps must be run:",
+      "rationale": "abort",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#smooth-scroll-aborted\" id=\"ref-for-smooth-scroll-aborted-1\">Abort</a> any ongoing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll-1\">smooth scroll</a> for <var>box</var>."
+        },
+        {
+          "html": "If the user agent honors the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/cssom-view-1/#propdef-scroll-behavior\" id=\"ref-for-propdef-scroll-behavior-1\">scroll-behavior</a> property and one of the following are true: \n     <ul>\n      <li><var>behavior</var> is <code>\"auto\"</code> and <var>element</var> is not null and its computed value of the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/cssom-view-1/#propdef-scroll-behavior\" id=\"ref-for-propdef-scroll-behavior-2\">scroll-behavior</a> property is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/cssom-view-1/#valdef-scroll-behavior-smooth\" id=\"ref-for-valdef-scroll-behavior-smooth-1\">smooth</a> \n      </li><li><var>behavior</var> is <code>smooth</code> \n     </li></ul>\n      ...then perform a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll-2\">smooth scroll</a> of <var>box</var> to <var>position</var>.\n  Otherwise, perform an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#concept-instant-scroll\" id=\"ref-for-concept-instant-scroll-1\">instant scroll</a> of <var>box</var> to <var>position</var>."
+        }
+      ]
+    },
+    {
+      "name": "scroll to the beginning of the document",
+      "href": "https://www.w3.org/TR/cssom-view-1/#scroll-to-the-beginning-of-the-document",
+      "html": "To <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"scroll-to-the-beginning-of-the-document\">scroll to the beginning of the document<a class=\"self-link\" href=\"https://www.w3.org/TR/cssom-view-1/#scroll-to-the-beginning-of-the-document\"></a></dfn> for a document <var>document</var>, follow these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>viewport</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-16\">viewport</a> that is associated with <var>document</var>."
+        },
+        {
+          "html": "Let <var>position</var> be the the scroll position <var>viewport</var> would have by aligning the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#beginning-edges\" id=\"ref-for-beginning-edges-1\">beginning edges</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-3\">scrolling area</a> with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#beginning-edges\" id=\"ref-for-beginning-edges-2\">beginning edges</a> of <var>viewport</var>."
+        },
+        {
+          "html": "If <var>position</var> is the same as <var>viewport</var>’s current scroll position, and <var>viewport</var> does not have an ongoing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll-3\">smooth scroll</a>, abort these steps."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll-1\">Perform a scroll</a> of <var>viewport</var> to <var>position</var>,\n and <var>document</var>’s root element as the associated element, if there is one, or null otherwise."
+        }
+      ]
+    },
+    {
+      "name": "Window/matchMedia(query)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-window-matchmedia",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchMedia(query)\" id=\"dom-window-matchmedia\">matchMedia(<var>query</var>)<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-matchmedia\">#dom-window-matchmedia</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-matchmedia-1\">2.1. CSS pixels</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-matchmedia-2\">4. Extensions to the Window Interface</a></span></span></dfn> method is invoked these steps must be run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>parsed media query list</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom/#parse-a-media-query-list\">parsing</a> <var>query</var>."
+        },
+        {
+          "html": "Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#mediaquerylist\" id=\"ref-for-mediaquerylist-2\">MediaQueryList</a></code> object,\n with the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\">context object’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-document-window\">associated <code>Document</code></a> as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#mediaquerylist-document\" id=\"ref-for-mediaquerylist-document-1\">document</a>,\n with <var>parsed media query list</var> as its associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#media-query-list\" id=\"ref-for-media-query-list-1\">media query list</a>."
+        }
+      ]
+    },
+    {
+      "name": "Window/moveTo(x, y)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-window-moveto",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"moveTo(x, y)\" id=\"dom-window-moveto\">moveTo(<var>x</var>, <var>y</var>)<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-moveto\">#dom-window-moveto</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-moveto-1\">4. Extensions to the Window Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-moveto-2\">Changes From 4 August 2011 To 17 December 2013</a></span></span></dfn> method must follow these steps:",
+      "rationale": "terminate these steps",
+      "steps": [
+        {
+          "html": "<p>Optionally, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>target</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\">browsing context</a> of the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\">context object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>source</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-browsing-context\">responsible browsing context</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#incumbent-settings-object\">incumbent settings object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>source</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#allowed-to-resize-and-move\" id=\"ref-for-allowed-to-resize-and-move-1\">allowed to resize and move</a> <var>target</var>, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Optionally, clamp <var>x</var> and <var>y</var> in a user-agent-defined manner so that the window does not move outside the available space.</p>"
+        },
+        {
+          "html": "<p>Move <var>target</var>’s window such that the window’s top left corner is at coordinates (<var>x</var>, <var>y</var>) relative to the top left corner of the output device, measured in CSS pixels of <var>target</var>. The positive axes are rightward and downward.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Window/moveBy(x, y)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-window-moveby",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"moveBy(x, y)\" id=\"dom-window-moveby\">moveBy(<var>x</var>, <var>y</var>)<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-moveby\">#dom-window-moveby</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-moveby-1\">4. Extensions to the Window Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-moveby-2\">Changes From 4 August 2011 To 17 December 2013</a></span></span></dfn> method must follow these steps:",
+      "rationale": "terminate these steps",
+      "steps": [
+        {
+          "html": "<p>Optionally, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>target</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\">browsing context</a> of the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\">context object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>source</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-browsing-context\">responsible browsing context</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#incumbent-settings-object\">incumbent settings object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>source</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#allowed-to-resize-and-move\" id=\"ref-for-allowed-to-resize-and-move-2\">allowed to resize and move</a> <var>target</var>, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Optionally, clamp <var>x</var> and <var>y</var> in a user-agent-defined manner so that the window does not move outside the available space.</p>"
+        },
+        {
+          "html": "<p>Move <var>target</var>’s window <var>x</var> CSS pixels of <var>target</var> rightward and <var>y</var> CSS pixels of <var>target</var> downward.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Window/resizeTo(x, y)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-window-resizeto",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"resizeTo(x, y)\" id=\"dom-window-resizeto\">resizeTo(<var>x</var>, <var>y</var>)<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-resizeto\">#dom-window-resizeto</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-resizeto-1\">4. Extensions to the Window Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-resizeto-2\">Changes From 4 August 2011 To 17 December 2013</a></span></span></dfn> method must follow these steps:",
+      "rationale": "terminate these steps",
+      "steps": [
+        {
+          "html": "<p>Optionally, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>target</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\">browsing context</a> of the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\">context object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>source</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-browsing-context\">responsible browsing context</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#incumbent-settings-object\">incumbent settings object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>source</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#allowed-to-resize-and-move\" id=\"ref-for-allowed-to-resize-and-move-3\">allowed to resize and move</a> <var>target</var>, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Optionally, clamp <var>x</var> and <var>y</var> in a user-agent-defined manner so that the window does not get too small or bigger than the available space.</p>"
+        },
+        {
+          "html": "<p>Resize <var>target</var>’s window by moving its right and bottom edges such that the distance between the left and right edges of the viewport are <var>x</var> CSS pixels of <var>target</var> and the distance between the top and bottom edges of the viewport are <var>y</var> CSS pixels of <var>target</var>.</p>"
+        },
+        {
+          "html": "<p>Optionally, move <var>target</var>’s window in a user-agent-defined manner so that it does not grow outside the available space.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Window/resizeBy(x, y)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-window-resizeby",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"resizeBy(x, y)\" id=\"dom-window-resizeby\">resizeBy(<var>x</var>, <var>y</var>)<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-resizeby\">#dom-window-resizeby</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-resizeby-1\">4. Extensions to the Window Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-resizeby-2\">Changes From 4 August 2011 To 17 December 2013</a></span></span></dfn> method must follow these steps:",
+      "rationale": "terminate these steps",
+      "steps": [
+        {
+          "html": "<p>Optionally, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>target</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\">browsing context</a> of the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#context-object\">context object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>source</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-browsing-context\">responsible browsing context</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#incumbent-settings-object\">incumbent settings object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>source</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#allowed-to-resize-and-move\" id=\"ref-for-allowed-to-resize-and-move-4\">allowed to resize and move</a> <var>target</var>, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Optionally, clamp <var>x</var> and <var>y</var> in a user-agent-defined manner so that the window does not get too small or bigger than the available space.</p>"
+        },
+        {
+          "html": "<p>Resize <var>target</var>’s window by moving its right edge <var>x</var> CSS pixels of <var>target</var> rightward and its bottom edge <var>y</var> CSS pixels of <var>target</var> downward.</p>"
+        },
+        {
+          "html": "<p>Optionally, move <var>target</var>’s window in a user-agent-defined manner so that it does not grow outside the available space.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Window/scroll(options)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-window-scroll",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"scroll(options)|scroll(x, y)\" id=\"dom-window-scroll\">scroll()<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scroll\">#dom-window-scroll</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scroll-1\">4. Extensions to the Window Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scroll-2\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scroll-3\">(3)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scroll-4\">(4)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scroll-5\">6. Extensions to the Element Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scroll-6\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scroll-7\">(3)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scroll-8\">(4)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scroll-9\">(5)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scroll-10\">(6)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scroll-11\">Changes From 17 December 2013</a></span></span></dfn> method is invoked these\nsteps must be run:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If invoked with one argument, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>options</var> be the argument.</p>"
+            },
+            {
+              "html": "<p>Let <var>x</var> be the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-left\" id=\"ref-for-dom-scrolltooptions-left-1\">left</a></code> dictionary member of <var>options</var>, if present,\nor the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-25\">viewport’s</a> current scroll position on the x axis otherwise.</p>"
+            },
+            {
+              "html": "<p>Let <var>y</var> be the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top-1\">top</a></code> dictionary member of <var>options</var>, if present,\nor the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-26\">viewport’s</a> current scroll position on the y axis otherwise.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If invoked with two arguments, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>options</var> be null <a data-link-type=\"dfn\" href=\"http://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value\">converted</a> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dictdef-scrolltooptions\" id=\"ref-for-dictdef-scrolltooptions-4\">ScrollToOptions</a></code> dictionary. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/cssom-view-1/#biblio-webidl\">[WEBIDL]</a></p>"
+            },
+            {
+              "html": "<p>Let <var>x</var> and <var>y</var> be the arguments, respectively.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#normalize-non-finite-values\" id=\"ref-for-normalize-non-finite-values-1\">Normalize non-finite values</a> for <var>x</var> and <var>y</var>.</p>"
+        },
+        {
+          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-27\">viewport</a>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>viewport width</var> be the width of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-28\">viewport</a> excluding the width of the scroll bar, if any.</p>"
+        },
+        {
+          "html": "<p>Let <var>viewport height</var> be the height of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-29\">viewport</a> excluding the height of the scroll bar, if any.</p>"
+        },
+        {
+          "html": "<dl class=\"switch\">\n      <dt>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-30\">viewport</a> has rightward <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#overflow-directions\" id=\"ref-for-overflow-directions-11\">overflow direction</a> \n      </dt><dd>Let <var>x</var> be max(0, min(<var>x</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-31\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-4\">scrolling area</a> width - <var>viewport width</var>)). \n      </dd><dt>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-32\">viewport</a> has leftward <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#overflow-directions\" id=\"ref-for-overflow-directions-12\">overflow direction</a> \n      </dt><dd>Let <var>x</var> be min(0, max(<var>x</var>, <var>viewport width</var> - <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-33\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-5\">scrolling area</a> width)). \n     </dd></dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the viewport has rightward overflow direction",
+                  "html": "Let <var>x</var> be max(0, min(<var>x</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-31\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-4\">scrolling area</a> width - <var>viewport width</var>))."
+                },
+                {
+                  "case": "If the viewport has leftward overflow direction",
+                  "html": "Let <var>x</var> be min(0, max(<var>x</var>, <var>viewport width</var> - <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-33\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-5\">scrolling area</a> width))."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<dl class=\"switch\">\n      <dt>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-34\">viewport</a> has downward <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#overflow-directions\" id=\"ref-for-overflow-directions-13\">overflow direction</a> \n      </dt><dd>Let <var>y</var> be max(0, min(<var>y</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-35\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-6\">scrolling area</a> height - <var>viewport height</var>)). \n      </dd><dt>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-36\">viewport</a> has upward <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#overflow-directions\" id=\"ref-for-overflow-directions-14\">overflow direction</a> \n      </dt><dd>Let <var>y</var> be min(0, max(<var>y</var>, <var>viewport height</var> - <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-37\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-7\">scrolling area</a> height)). \n     </dd></dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the viewport has downward overflow direction",
+                  "html": "Let <var>y</var> be max(0, min(<var>y</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-35\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-6\">scrolling area</a> height - <var>viewport height</var>))."
+                },
+                {
+                  "case": "If the viewport has upward overflow direction",
+                  "html": "Let <var>y</var> be min(0, max(<var>y</var>, <var>viewport height</var> - <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-37\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-7\">scrolling area</a> height))."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>position</var> be the scroll position the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-38\">viewport</a> would have\nby aligning the x-coordinate <var>x</var> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-39\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-8\">scrolling area</a> with the left of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-40\">viewport</a> and aligning the y-coordinate <var>y</var> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-41\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-9\">scrolling area</a> with the top of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-42\">viewport</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>position</var> is the same as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-43\">viewport’s</a> current scroll position,\nand the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-44\">viewport</a> does not have an ongoing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll-4\">smooth scroll</a>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-45\">viewport’s</a> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll-2\">Perform a scroll</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-46\">viewport</a> to <var>position</var>, <var>document</var>’s root element as the associated element, if there is one, or null otherwise,\nand the scroll behavior being the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolloptions-behavior\" id=\"ref-for-dom-scrolloptions-behavior-1\">behavior</a></code> dictionary member of <var>options</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Window/scrollBy(options)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-window-scrollby",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"scrollBy(options)|scrollBy(x, y)\" id=\"dom-window-scrollby\">scrollBy()<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrollby\">#dom-window-scrollby</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scrollby-1\">4. Extensions to the Window Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scrollby-2\">(2)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-scrollby-3\">Changes From 17 December 2013</a></span></span></dfn> method is invoked, the\nuser agent must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If invoked with two arguments, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>options</var> be null <a data-link-type=\"dfn\" href=\"http://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value\">converted</a> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dictdef-scrolltooptions\" id=\"ref-for-dictdef-scrolltooptions-5\">ScrollToOptions</a></code> dictionary. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/cssom-view-1/#biblio-webidl\">[WEBIDL]</a></p>"
+            },
+            {
+              "html": "<p>Let <var>x</var> and <var>y</var> be the arguments, respectively.</p>"
+            },
+            {
+              "html": "<p>Let the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-left\" id=\"ref-for-dom-scrolltooptions-left-2\">left</a></code> dictionary member of <var>options</var> have the value <var>x</var>.</p>"
+            },
+            {
+              "html": "<p>Let the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top-2\">top</a></code> dictionary member of <var>options</var> have the value <var>y</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#normalize-non-finite-values\" id=\"ref-for-normalize-non-finite-values-2\">Normalize non-finite values</a> for the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-left\" id=\"ref-for-dom-scrolltooptions-left-3\">left</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top-3\">top</a></code> dictionary members of <var>options</var>.</p>"
+        },
+        {
+          "html": "<p>Add the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrollx\" id=\"ref-for-dom-window-scrollx-3\">scrollX</a></code> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-left\" id=\"ref-for-dom-scrolltooptions-left-4\">left</a></code> dictionary member.</p>"
+        },
+        {
+          "html": "<p>Add the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrolly\" id=\"ref-for-dom-window-scrolly-3\">scrollY</a></code> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top-4\">top</a></code> dictionary member.</p>"
+        },
+        {
+          "html": "<p>Act as if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll-4\">scroll()</a></code> method was invoked with <var>options</var> as the only argument.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Window/devicePixelRatio",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-window-devicepixelratio",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Window\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"devicePixelRatio\" id=\"dom-window-devicepixelratio\">devicePixelRatio<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-devicepixelratio\">#dom-window-devicepixelratio</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-devicepixelratio-1\">4. Extensions to the Window Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-window-devicepixelratio-2\">Changes From 4 August 2011 To 17 December 2013</a></span></span></dfn> attribute must return the result of the following algorithm:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If there is no output device, return 1 and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>CSS pixel size</var> be the size of a CSS pixel at the current <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#page-zoom\" id=\"ref-for-page-zoom-1\">page zoom</a> scale factor and at a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#pinch-zoom\" id=\"ref-for-pinch-zoom-1\">pinch zoom</a> scale factor of 1.0.</p>"
+        },
+        {
+          "html": "<p>Let <var>device pixel size</var> be the vertical size of a device pixel of the output device.</p>"
+        },
+        {
+          "html": "<p>Return the result of dividing <var>CSS pixel size</var> by <var>device pixel size</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "This specification defines the effect of the <var>features</var> argument for user agents that do not opt to ignore it, as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the method does not result in a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#auxiliary-browsing-context\">auxiliary browsing context</a> being created, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>target</var> be the new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#auxiliary-browsing-context\">auxiliary browsing context</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>tokens</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#split-a-string-on-commas\">splitting <var>features</var> on commas</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>parsed features</var> be a new empty dictionary.</p>"
+        },
+        {
+          "html": "<i>Token loop</i>: For each token <var>token</var> in <var>tokens</var>, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>input</var> be <var>token</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>position</var> point at the first character of <var>input</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#skip-whitespace\">Skip whitespace</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#collect-a-sequence-of-characters\">Collect a sequence of characters</a> that are not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#space-character\">space characters</a> nor \"<code>=</code>\" (U+003D).\nLet <var>name</var> be the collected characters, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#converted-to-ascii-lowercase\">converted to ASCII lowercase</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>name</var> is in <var>parsed features</var> or if <var>name</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#supported-open-feature-name\" id=\"ref-for-supported-open-feature-name-1\">supported <code>open()</code> feature name</a>,\ncontinue <i>token loop</i>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#skip-whitespace\">Skip whitespace</a>.</p>"
+            },
+            {
+              "html": "<p>If the character at <var>position</var> is not \"<code>=</code>\" (U+003D), continue <i>token loop</i>.</p>"
+            },
+            {
+              "html": "<p>Advance <var>position</var> by one.</p>"
+            },
+            {
+              "html": "<p>If <var>position</var> is past the end of <var>input</var>, continue <i>token loop</i>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#collect-a-sequence-of-characters\">Collect a sequence of characters</a> that are any characters. Let <var>raw value</var> be the collected characters.</p>"
+            },
+            {
+              "html": "<p>Let <var>value</var> be the result of invoking the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#rules-for-parsing-integers\">rules for parsing integers</a> on <var>raw value</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>value</var> is an error, continue <i>token loop</i>.</p>"
+            },
+            {
+              "html": "<p>Set <var>name</var> in <var>parsed features</var> to <var>value</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#supported-open-feature-name-left\" id=\"ref-for-supported-open-feature-name-left-1\">left</a> is present in <var>parsed features</var>, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>x</var> be the value of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#supported-open-feature-name-left\" id=\"ref-for-supported-open-feature-name-left-2\">left</a>.</p>"
+            },
+            {
+              "html": "<p>Optionally, clamp <var>x</var> in a user-agent-defined manner so that the window does not move outside the available space.</p>"
+            },
+            {
+              "html": "<p>Optionally, move <var>target</var>’s window such that the window’s left edge is at the horizontal coordinate <var>x</var> relative to the left edge of\nthe output device, measured in CSS pixels of <var>target</var>. The positive axis is rightward.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#supported-open-feature-name-top\" id=\"ref-for-supported-open-feature-name-top-1\">top</a> is present in <var>parsed features</var>, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>y</var> be the value of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#supported-open-feature-name-top\" id=\"ref-for-supported-open-feature-name-top-2\">top</a>.</p>"
+            },
+            {
+              "html": "<p>Optionally, clamp <var>y</var> in a user-agent-defined manner so that the window does not move outside the available space.</p>"
+            },
+            {
+              "html": "<p>Optionally, move <var>target</var>’s window such that the window’s top edge is at the vertical coordinate <var>y</var> relative to the top edge of\nthe output device, measured in CSS pixels of <var>target</var>. The positive axis is downward.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#supported-open-feature-name-width\" id=\"ref-for-supported-open-feature-name-width-1\">width</a> is present in <var>parsed features</var>, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>x</var> be the value of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#supported-open-feature-name-width\" id=\"ref-for-supported-open-feature-name-width-2\">width</a>.</p>"
+            },
+            {
+              "html": "<p>Optionally, clamp <var>x</var> in a user-agent-defined manner so that the window does not get too small or bigger than the available space.</p>"
+            },
+            {
+              "html": "<p>Optionally, size <var>target</var>’s window by moving its right edge such that the distance between the left and right edges of the viewport are <var>x</var> CSS pixels of <var>target</var>.</p>"
+            },
+            {
+              "html": "<p>Optionally, move <var>target</var>’s window in a user-agent-defined manner so that it does not grow outside the available space.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#supported-open-feature-name-height\" id=\"ref-for-supported-open-feature-name-height-1\">height</a> is present in <var>parsed features</var>, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>y</var> be the value of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#supported-open-feature-name-height\" id=\"ref-for-supported-open-feature-name-height-2\">height</a>.</p>"
+            },
+            {
+              "html": "<p>Optionally, clamp <var>y</var> in a user-agent-defined manner so that the window does not get too small or bigger than the available space.</p>"
+            },
+            {
+              "html": "<p>Optionally, size <var>target</var>’s window by moving its bottom edge such that the distance between the top and bottom edges of the viewport are <var>y</var> CSS pixels of <var>target</var>.</p>"
+            },
+            {
+              "html": "<p>Optionally, move <var>target</var>’s window in a user-agent-defined manner so that it does not grow outside the available space.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "evaluate media queries and report changes",
+      "href": "https://www.w3.org/TR/cssom-view-1/#evaluate-media-queries-and-report-changes",
+      "html": "When asked to <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"evaluate-media-queries-and-report-changes\">evaluate media queries and report changes<a class=\"self-link\" href=\"https://www.w3.org/TR/cssom-view-1/#evaluate-media-queries-and-report-changes\"></a></dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code> <var>doc</var>, run these steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#mediaquerylist\" id=\"ref-for-mediaquerylist-7\">MediaQueryList</a></code> object <var>target</var> that has <var>doc</var> as its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#mediaquerylist-document\" id=\"ref-for-mediaquerylist-document-3\">document</a>,\n  in the order they were created, oldest first, run these substeps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#mediaquerylist-matches-state\" id=\"ref-for-mediaquerylist-matches-state-1\">matches state</a> has changed since the last time these steps were run, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\">dispatch</a> a new <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event\">event</a> to <var>target</var> using the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#mediaquerylist\" id=\"ref-for-mediaquerylist-8\">MediaQueryList</a></code> interface,\n   with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\">type</a></code> attribute initialized to <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/cssom-view-1/#eventdef-mediaquerylist-change\" id=\"ref-for-eventdef-mediaquerylist-change-1\">change</a>,\n   its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\">isTrusted</a></code> attribute initialized to true,\n   its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-mediaquerylist-media\" id=\"ref-for-dom-mediaquerylist-media-1\">media</a></code> attribute initialized to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#mediaquerylist-media\" id=\"ref-for-mediaquerylist-media-1\">media</a>,\n   and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-mediaquerylistevent-matches\" id=\"ref-for-dom-mediaquerylistevent-matches-1\">matches</a></code> attribute initialized to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#mediaquerylist-matches-state\" id=\"ref-for-mediaquerylist-matches-state-2\">matches state</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MediaQueryList/addListener(listener)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-mediaquerylist-addlistener",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"MediaQueryList\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"addListener(listener)\" id=\"dom-mediaquerylist-addlistener\">addListener(<var>listener</var>)<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-mediaquerylist-addlistener\">#dom-mediaquerylist-addlistener</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mediaquerylist-addlistener-1\">4.2. The MediaQueryList Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mediaquerylist-addlistener-2\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mediaquerylist-addlistener-3\">(3)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mediaquerylist-addlistener-4\">Changes From 17 December 2013</a></span></span></dfn> method must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>listener</var> is null, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Append an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\">event listener</a> to the associated list of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\">event listeners</a> with <b>type</b> set to <code>change</code>, <b>callback</b> set to <var>listener</var>,\nand <b>capture</b> set to false,\nunless there already is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\">event listener</a> in that list\nwith the same <b>type</b>, <b>callback</b>, and <b>capture</b>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "MediaQueryList/removeListener(listener)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-mediaquerylist-removelistener",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"MediaQueryList\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"removeListener(listener)\" id=\"dom-mediaquerylist-removelistener\">removeListener(<var>listener</var>)<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-mediaquerylist-removelistener\">#dom-mediaquerylist-removelistener</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mediaquerylist-removelistener-1\">4.2. The MediaQueryList Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mediaquerylist-removelistener-2\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mediaquerylist-removelistener-3\">(3)</a></span></span></dfn> method must run these steps:",
+      "rationale": "remove",
+      "steps": [
+        {
+          "html": "<p>Remove an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\">event listener</a> from the associated list of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\">event listeners</a>,\nwhose <b>type</b> is <code>change</code>, <b>callback</b> is <var>listener</var>,\nand <b>capture</b> is false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Document/elementFromPoint(x, y)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-document-elementfrompoint",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"elementFromPoint(x, y)\" id=\"dom-document-elementfrompoint\">elementFromPoint(<var>x</var>, <var>y</var>)<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-document-elementfrompoint\">#dom-document-elementfrompoint</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-document-elementfrompoint-1\">5. Extensions to the Document Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-document-elementfrompoint-2\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-document-elementfrompoint-3\">(3)</a></span></span></dfn> method must follow these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If either argument is negative, <var>x</var> is greater than the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-47\">viewport</a> width excluding the size of a rendered scroll bar (if any), or <var>y</var> is greater than the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-48\">viewport</a> height excluding the size of a rendered scroll bar (if any), or there is no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-49\">viewport</a> associated with the document, return null and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#layout-box\" id=\"ref-for-layout-box-1\">layout box</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-50\">viewport</a> that would be a target for hit testing at coordinates <var>x</var>,<var>y</var>,\nwhen applying the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-1\">transforms</a> that apply to the descendants of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-51\">viewport</a>, return the associated element and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the document has a root element, return the root element and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Document/elementsFromPoint(x, y)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-document-elementsfrompoint",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"elementsFromPoint(x, y)\" id=\"dom-document-elementsfrompoint\">elementsFromPoint(<var>x</var>, <var>y</var>)<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-document-elementsfrompoint\">#dom-document-elementsfrompoint</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-document-elementsfrompoint-1\">5. Extensions to the Document Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-document-elementsfrompoint-2\">Changes From 4 August 2011 To 17 December 2013</a></span></span></dfn> method must follow these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>sequence</var> be a new empty sequence.</p>"
+        },
+        {
+          "html": "<p>If either argument is negative, <var>x</var> is greater than the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-52\">viewport</a> width excluding the size of a rendered scroll bar (if any), or <var>y</var> is greater than the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-53\">viewport</a> height excluding the size of a rendered scroll bar (if any), or there is no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-54\">viewport</a> associated with the document, return <var>sequence</var> and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#layout-box\" id=\"ref-for-layout-box-2\">layout box</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-55\">viewport</a>, in paint order, starting with the topmost box, that would be a target for hit testing at\ncoordinates <var>x</var>,<var>y</var> even if nothing would be overlapping it, when applying the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-2\">transforms</a> that apply to the descendants of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-56\">viewport</a>, append the associated element to <var>sequence</var>.</p>"
+        },
+        {
+          "html": "<p>If the document has a root element, and the last item in <var>sequence</var> is not the root element, append the root element to <var>sequence</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>sequence</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Document/caretPositionFromPoint(x, y)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-document-caretpositionfrompoint",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"caretPositionFromPoint(x, y)\" id=\"dom-document-caretpositionfrompoint\">caretPositionFromPoint(<var>x</var>, <var>y</var>)<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-document-caretpositionfrompoint\">#dom-document-caretpositionfrompoint</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-document-caretpositionfrompoint-1\">5. Extensions to the Document Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-document-caretpositionfrompoint-2\">(2)</a></span></span></dfn> method must return the\nresult of running these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-57\">viewport</a> associated with the document, return null.</p>"
+        },
+        {
+          "html": "<p>If either argument is negative, <var>x</var> is greater\nthan the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-58\">viewport</a> width excluding the size of a rendered\nscroll bar (if any), <var>y</var> is greater than the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-59\">viewport</a> height excluding the size of a rendered scroll bar\n(if any) return null.</p>"
+        },
+        {
+          "html": "<p>If at the coordinates <var>x</var>,<var>y</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-60\">viewport</a> no text insertion point indicator would have\nbeen inserted when applying the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-3\">transforms</a> that apply to the descendants of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-61\">viewport</a>, return null.</p>"
+        },
+        {
+          "html": "<p>If at the coordinates <var>x</var>,<var>y</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-62\">viewport</a> a text insertion point indicator would have\nbeen inserted in a text entry widget which is also a replaced element, when applying the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-4\">transforms</a> that apply to the descendants of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-63\">viewport</a>, return a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-position\" id=\"ref-for-caret-position-1\">caret position</a> with its properties set as follows:</p>\n     <dl>\n      <dt><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-node\" id=\"ref-for-caret-node-1\">caret node</a> \n      </dt><dd>The node corresponding to the text entry widget. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-offset\" id=\"ref-for-caret-offset-1\">caret offset</a> \n      </dt><dd>The amount of 16-bit units to the left of where the\n    text insertion point indicator would have inserted. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-range\" id=\"ref-for-caret-range-1\">caret range</a> \n      </dt><dd>null \n     </dd></dl>"
+        },
+        {
+          "html": "<p>Otherwise, return a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-position\" id=\"ref-for-caret-position-2\">caret position</a> where the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-range\" id=\"ref-for-caret-range-2\">caret range</a> is a collapsed <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#range\">Range</a></code> object for the position\nwhere the text insertion point indicator would have been inserted when applying the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-5\">transforms</a> that apply to the descendants of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-64\">viewport</a>, and the other properties are set as follows:</p>\n     <dl>\n      <dt><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-node\" id=\"ref-for-caret-node-2\">caret node</a> \n      </dt><dd>The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-range-startcontainer\">startContainer</a></code> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-range\" id=\"ref-for-caret-range-3\">caret range</a>. \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-offset\" id=\"ref-for-caret-offset-2\">caret offset</a> \n      </dt><dd>The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-range-startoffset\">startOffset</a></code> of\n        the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-range\" id=\"ref-for-caret-range-4\">caret range</a>. \n     </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "Document/scrollingElement",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-document-scrollingelement",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Document\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"scrollingElement\" id=\"dom-document-scrollingelement\">scrollingElement<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-document-scrollingelement\">#dom-document-scrollingelement</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-document-scrollingelement-1\">5. Extensions to the Document Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-document-scrollingelement-2\">(2)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-document-scrollingelement-3\">Changes From 17 December 2013</a></span></span></dfn> attribute, on getting, must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, follow these substeps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-2\">the HTML <code>body</code> element</a> exists, and it is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#potentially-scrollable\" id=\"ref-for-potentially-scrollable-2\">potentially scrollable</a>, return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-3\">the HTML <code>body</code> element</a> and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Return null and abort these steps.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If there is a root element, return the root element and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "CaretPosition/getClientRect()",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-caretposition-getclientrect",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CaretPosition\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getClientRect()\" id=\"dom-caretposition-getclientrect\">getClientRect()<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-caretposition-getclientrect\">#dom-caretposition-getclientrect</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-caretposition-getclientrect-1\">5.1. The CaretPosition Interface</a></span></span></dfn> method must follow these steps,\naborting on the first step that returns a value:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-range\" id=\"ref-for-caret-range-5\">caret range</a> is not null:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>list</var> be the result of invoking the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-range-getclientrects\" id=\"ref-for-dom-range-getclientrects-1\">getClientRects()</a></code> method on the range.</p>"
+            },
+            {
+              "html": "<p>If <var>list</var> is empty, return null.</p>"
+            },
+            {
+              "html": "<p>Return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect\">DOMRect</a></code> object in <var>list</var> at index 0.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-node\" id=\"ref-for-caret-node-4\">caret node</a> is a text entry widget that is a replaced element,\nand that is in the document,\nreturn a static <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect\">DOMRect</a></code> object for the caret in the widget\nas represented by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#caret-offset\" id=\"ref-for-caret-offset-4\">caret offset</a> value.\nThe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-6\">transforms</a> that apply to the element and its ancestors are applied.</p>"
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/getClientRects()",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-getclientrects",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getClientRects()\" id=\"dom-element-getclientrects\">getClientRects()<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-getclientrects\">#dom-element-getclientrects</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-getclientrects-1\">6. Extensions to the Element Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-getclientrects-2\">(2)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-getclientrects-3\">9. Extensions to the Range Interface</a></span></span></dfn> method, when invoked, must return the result of the following algorithm:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the element on which it was invoked does not have an associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#layout-box\" id=\"ref-for-layout-box-3\">layout box</a> return an empty sequence and stop this algorithm.</p>"
+        },
+        {
+          "html": "<p>If the element has an associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#svg-layout-box\" id=\"ref-for-svg-layout-box-3\">SVG layout box</a> return a sequence containing a single <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect\">DOMRect</a></code> object that describes the bounding box of the element as defined by the SVG specification, applying the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-7\">transforms</a> that apply to the element and its ancestors.</p>"
+        },
+        {
+          "html": "<p>Return a sequence containing static <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect\">DOMRect</a></code> objects in content order, one for each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css3-break/#box-fragment\">box fragment</a>, describing its border area (including those with a height or width of zero) with the following constraints:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Apply the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-8\">transforms</a> that apply to the element and its ancestors.</p>\n      </li><li data-md=\"\">\n       <p>If the element on which the method was invoked has a computed value for the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/CSS21/visuren.html#propdef-display\">display</a> property of <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-display-3/#valdef-display-table\">table</a> or <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-display-3/#valdef-display-inline-table\">inline-table</a> include both the table box and the caption box, if any, but not the anonymous container box.</p>\n      </li><li data-md=\"\">\n       <p>Replace each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/visuren.html#anonymous-block-level\">anonymous block box</a> with its child box(es) and repeat this until no anonymous block boxes are left in the final list.</p>\n     </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "Element/getBoundingClientRect()",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-getboundingclientrect",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getBoundingClientRect()\" id=\"dom-element-getboundingclientrect\">getBoundingClientRect()<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-getboundingclientrect\">#dom-element-getboundingclientrect</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-getboundingclientrect-1\">6. Extensions to the Element Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-getboundingclientrect-2\">6.1. Element Scrolling Members</a></span></span></dfn> method, when invoked, must return the result of the following\nalgorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>list</var> be the result of invoking <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-getclientrects\" id=\"ref-for-dom-element-getclientrects-2\">getClientRects()</a></code> on the same element this method was invoked on.</p>"
+        },
+        {
+          "html": "<p>If the <var>list</var> is empty return a static <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect\">DOMRect</a></code> object\nwhose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrect-x\">x</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrect-y\">y</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrect-width\">width</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrect-height\">height</a></code> members are zero.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return a static <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect\">DOMRect</a></code> object describing the smallest rectangle\nthat includes the first rectangle in <var>list</var> and all of the remaining rectangles of which the height or width is not zero.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/scrollIntoView(arg)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-scrollintoview",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"scrollIntoView(arg)\" id=\"dom-element-scrollintoview\">scrollIntoView(<var>arg</var>)<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrollintoview\">#dom-element-scrollintoview</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollintoview-1\">6. Extensions to the Element Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollintoview-2\">(2)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollintoview-3\">Changes From 17 December 2013</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollintoview-4\">(2)</a></span></span></dfn> method must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>options</var> be null.</p>"
+        },
+        {
+          "html": "<p>If <var>arg</var> is an object, let <var>options</var> be <var>arg</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"http://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value\">Convert</a> <var>options</var> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dictdef-scrollintoviewoptions\" id=\"ref-for-dictdef-scrollintoviewoptions-1\">ScrollIntoViewOptions</a></code> dictionary. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/cssom-view-1/#biblio-webidl\">[WEBIDL]</a></p>"
+        },
+        {
+          "html": "<p>If <var>arg</var> is not specified or is true, let the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrollintoviewoptions-block\" id=\"ref-for-dom-scrollintoviewoptions-block-1\">block</a></code> dictionary member of <var>options</var> have the value \"<code>start</code>\", and let the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrollintoviewoptions-inline\" id=\"ref-for-dom-scrollintoviewoptions-inline-1\">inline</a></code> dictionary member of <var>options</var> have the value \"<code>nearest</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>arg</var> is false, let the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrollintoviewoptions-block\" id=\"ref-for-dom-scrollintoviewoptions-block-2\">block</a></code> dictionary member of <var>options</var> have the value \"<code>end</code>\", and let the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrollintoviewoptions-inline\" id=\"ref-for-dom-scrollintoviewoptions-inline-2\">inline</a></code> dictionary member of <var>options</var> have the value \"<code>nearest</code>\".</p>"
+        },
+        {
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#layout-box\" id=\"ref-for-layout-box-4\">layout box</a> terminate these steps.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scroll-an-element-into-view\" id=\"ref-for-scroll-an-element-into-view-1\">Scroll the element into view</a> with the options <var>options</var>.</p>"
+        },
+        {
+          "html": "<p>Optionally perform some other action that brings the element to the user’s attention.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/scroll(options)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-scroll",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"scroll(options)|scroll(x, y)\" id=\"dom-element-scroll\">scroll()<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scroll\">#dom-element-scroll</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scroll-1\">6. Extensions to the Element Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scroll-2\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scroll-3\">(3)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scroll-4\">(4)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scroll-5\">Changes From 17 December 2013</a></span></span></dfn> method must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If invoked with one argument, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>options</var> be the argument.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#normalize-non-finite-values\" id=\"ref-for-normalize-non-finite-values-3\">Normalize non-finite values</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-left\" id=\"ref-for-dom-scrolltooptions-left-5\">left</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top-5\">top</a></code> dictionary members of <var>options</var>, if present.</p>"
+            },
+            {
+              "html": "<p>Let <var>x</var> be the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-left\" id=\"ref-for-dom-scrolltooptions-left-6\">left</a></code> dictionary member of <var>options</var>, if present, or the element’s current scroll position on the x axis otherwise.</p>"
+            },
+            {
+              "html": "<p>Let <var>y</var> be the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top-6\">top</a></code> dictionary member of <var>options</var>, if present, or the element’s current scroll position on the y axis otherwise.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If invoked with two arguments, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>options</var> be null <a data-link-type=\"dfn\" href=\"http://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value\">converted</a> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dictdef-scrolltooptions\" id=\"ref-for-dictdef-scrolltooptions-9\">ScrollToOptions</a></code> dictionary. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/cssom-view-1/#biblio-webidl\">[WEBIDL]</a></p>"
+            },
+            {
+              "html": "<p>Let <var>x</var> and <var>y</var> be the arguments, respectively.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#normalize-non-finite-values\" id=\"ref-for-normalize-non-finite-values-4\">Normalize non-finite values</a> for <var>x</var> and <var>y</var>.</p>"
+            },
+            {
+              "html": "<p>Let the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-left\" id=\"ref-for-dom-scrolltooptions-left-7\">left</a></code> dictionary member of <var>options</var> have the value <var>x</var>.</p>"
+            },
+            {
+              "html": "<p>Let the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top-7\">top</a></code> dictionary member of <var>options</var> have the value <var>y</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>document</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\">active document</a>, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>window</var> be the value of <var>document</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#dom-document-defaultview\">defaultView</a></code> attribute.</p>"
+        },
+        {
+          "html": "<p>If <var>window</var> is null, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element and <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element invoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll-5\">scroll()</a></code> on <var>window</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrollx\" id=\"ref-for-dom-window-scrollx-4\">scrollX</a></code> on <var>window</var> as first argument and <var>y</var> as second argument,\nand terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-6\">the HTML <code>body</code> element</a>, <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>,\nand the element is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#potentially-scrollable\" id=\"ref-for-potentially-scrollable-3\">potentially scrollable</a>,\ninvoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll-6\">scroll()</a></code> on <var>window</var> with <var>options</var> as the only argument,\nand terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-5\">CSS layout box</a>,\nthe element has no associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box-7\">scrolling box</a>,\nor the element has no overflow,\nterminate these steps.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scroll-an-element\" id=\"ref-for-scroll-an-element-1\">Scroll the element</a> to <var>x</var>,<var>y</var>,\nwith the scroll behavior being the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolloptions-behavior\" id=\"ref-for-dom-scrolloptions-behavior-2\">behavior</a></code> dictionary member of <var>options</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/scrollBy(options)",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-scrollby",
+      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"scrollBy(options)|scrollBy(x, y)\" id=\"dom-element-scrollby\">scrollBy()<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrollby\">#dom-element-scrollby</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollby-1\">6. Extensions to the Element Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollby-2\">(2)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollby-3\">Changes From 17 December 2013</a></span></span></dfn> method is invoked, the\nuser agent must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If invoked with one argument, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>options</var> be the argument.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#normalize-non-finite-values\" id=\"ref-for-normalize-non-finite-values-5\">Normalize non-finite values</a> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-left\" id=\"ref-for-dom-scrolltooptions-left-8\">left</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top-8\">top</a></code> dictionary members of <var>options</var>, if present.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If invoked with two arguments, follow these substeps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>options</var> be null <a data-link-type=\"dfn\" href=\"http://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value\">converted</a> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dictdef-scrolltooptions\" id=\"ref-for-dictdef-scrolltooptions-10\">ScrollToOptions</a></code> dictionary. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/cssom-view-1/#biblio-webidl\">[WEBIDL]</a></p>"
+            },
+            {
+              "html": "<p>Let <var>x</var> and <var>y</var> be the arguments, respectively.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#normalize-non-finite-values\" id=\"ref-for-normalize-non-finite-values-6\">Normalize non-finite values</a> for <var>x</var> and <var>y</var>.</p>"
+            },
+            {
+              "html": "<p>Let the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-left\" id=\"ref-for-dom-scrolltooptions-left-9\">left</a></code> dictionary member of <var>options</var> have the value <var>x</var>.</p>"
+            },
+            {
+              "html": "<p>Let the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top-9\">top</a></code> dictionary member of <var>options</var> have the value <var>y</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Add the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrollleft\" id=\"ref-for-dom-element-scrollleft-3\">scrollLeft</a></code> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-left\" id=\"ref-for-dom-scrolltooptions-left-10\">left</a></code> dictionary member.</p>"
+        },
+        {
+          "html": "<p>Add the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrolltop\" id=\"ref-for-dom-element-scrolltop-3\">scrollTop</a></code> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top-10\">top</a></code> dictionary member.</p>"
+        },
+        {
+          "html": "<p>Act as if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scroll\" id=\"ref-for-dom-element-scroll-4\">scroll()</a></code> method was invoked with <var>options</var> as the only argument.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/scrollTop",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-scrolltop",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"scrollTop\" id=\"dom-element-scrolltop\">scrollTop<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrolltop\">#dom-element-scrolltop</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrolltop-1\">5. Extensions to the Document Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrolltop-2\">6. Extensions to the Element Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrolltop-3\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrolltop-4\">(3)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrolltop-5\">(4)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrolltop-6\">Changes From 17 December 2013</a></span></span></dfn> attribute, on getting, must return the result of running these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\">active document</a>, return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>window</var> be the value of <var>document</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#dom-document-defaultview\">defaultView</a></code> attribute.</p>"
+        },
+        {
+          "html": "<p>If <var>window</var> is null, return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element and <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element return the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrolly\" id=\"ref-for-dom-window-scrolly-4\">scrollY</a></code> on <var>window</var>.</p>"
+        },
+        {
+          "html": "<p>If the element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-7\">the HTML <code>body</code> element</a>, <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, and the element is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#potentially-scrollable\" id=\"ref-for-potentially-scrollable-4\">potentially scrollable</a>, return the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrolly\" id=\"ref-for-dom-window-scrolly-5\">scrollY</a></code> on <var>window</var>.</p>"
+        },
+        {
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-6\">CSS layout box</a>, return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Return the y-coordinate of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-10\">scrolling area</a> at the alignment point with the top of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-17\">padding edge</a> of the element.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When setting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrolltop\" id=\"ref-for-dom-element-scrolltop-4\">scrollTop</a></code> attribute these steps must be run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>y</var> be the given value.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#normalize-non-finite-values\" id=\"ref-for-normalize-non-finite-values-7\">Normalize non-finite values</a> for <var>y</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\">active document</a>, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>window</var> be the value of <var>document</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#dom-document-defaultview\">defaultView</a></code> attribute.</p>"
+        },
+        {
+          "html": "<p>If <var>window</var> is null, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element and <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element invoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll-7\">scroll()</a></code> on <var>window</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrollx\" id=\"ref-for-dom-window-scrollx-5\">scrollX</a></code> on <var>window</var> as first argument and <var>y</var> as second argument, and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-8\">the HTML <code>body</code> element</a>, <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, and the element is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#potentially-scrollable\" id=\"ref-for-potentially-scrollable-5\">potentially scrollable</a>, invoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll-8\">scroll()</a></code> on <var>window</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrollx\" id=\"ref-for-dom-window-scrollx-6\">scrollX</a></code> as first argument and <var>y</var> as second argument, and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-7\">CSS layout box</a>, the element has no associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box-8\">scrolling box</a>, or the element has no overflow, terminate these steps.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scroll-an-element\" id=\"ref-for-scroll-an-element-2\">Scroll the element</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrollleft\" id=\"ref-for-dom-element-scrollleft-4\">scrollLeft</a></code>,<var>y</var>, with the scroll behavior being <code>\"auto\"</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/scrollLeft",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-scrollleft",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"scrollLeft\" id=\"dom-element-scrollleft\">scrollLeft<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrollleft\">#dom-element-scrollleft</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollleft-1\">5. Extensions to the Document Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollleft-2\">6. Extensions to the Element Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollleft-3\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollleft-4\">(3)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollleft-5\">(4)</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollleft-6\">Changes From 17 December 2013</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollleft-7\">(2)</a></span></span></dfn> attribute, on getting, must return the result of running these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\">active document</a>, return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>window</var> be the value of <var>document</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#dom-document-defaultview\">defaultView</a></code> attribute.</p>"
+        },
+        {
+          "html": "<p>If <var>window</var> is null, return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element and <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element return the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrollx\" id=\"ref-for-dom-window-scrollx-7\">scrollX</a></code> on <var>window</var>.</p>"
+        },
+        {
+          "html": "<p>If the element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-9\">the HTML <code>body</code> element</a>, <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, and the element is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#potentially-scrollable\" id=\"ref-for-potentially-scrollable-6\">potentially scrollable</a>, return the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrollx\" id=\"ref-for-dom-window-scrollx-8\">scrollX</a></code> on <var>window</var>.</p>"
+        },
+        {
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-8\">CSS layout box</a>, return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Return the x-coordinate of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-11\">scrolling area</a> at the alignment point with the left of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-18\">padding edge</a> of the element.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When setting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrollleft\" id=\"ref-for-dom-element-scrollleft-5\">scrollLeft</a></code> attribute these steps must be run:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>x</var> be the given value.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#normalize-non-finite-values\" id=\"ref-for-normalize-non-finite-values-8\">Normalize non-finite values</a> for <var>x</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\">active document</a>, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>window</var> be the value of <var>document</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#dom-document-defaultview\">defaultView</a></code> attribute.</p>"
+        },
+        {
+          "html": "<p>If <var>window</var> is null, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element and <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element invoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll-9\">scroll()</a></code> on <var>window</var> with <var>x</var> as first argument and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrolly\" id=\"ref-for-dom-window-scrolly-6\">scrollY</a></code> on <var>window</var> as second argument, and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-10\">the HTML <code>body</code> element</a>, <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, and the element is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#potentially-scrollable\" id=\"ref-for-potentially-scrollable-7\">potentially scrollable</a>, invoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll-10\">scroll()</a></code> on <var>window</var> with <var>x</var> as first argument and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrolly\" id=\"ref-for-dom-window-scrolly-7\">scrollY</a></code> on <var>window</var> as second argument, and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-9\">CSS layout box</a>, the element has no associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box-9\">scrolling box</a>, or the element has no overflow, terminate these steps.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scroll-an-element\" id=\"ref-for-scroll-an-element-3\">Scroll the element</a> to <var>x</var>,<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrolltop\" id=\"ref-for-dom-element-scrolltop-5\">scrollTop</a></code>, with the scroll behavior being <code>\"auto\"</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/scrollWidth",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-scrollwidth",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"scrollWidth\" id=\"dom-element-scrollwidth\">scrollWidth<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrollwidth\">#dom-element-scrollwidth</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollwidth-1\">6. Extensions to the Element Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollwidth-2\">Changes From 17 December 2013</a></span></span></dfn> attribute must return the result of running these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\">active document</a>, return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>viewport width</var> be the width of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-65\">viewport</a> excluding the width of the scroll bar, if any, or zero if there is no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-66\">viewport</a>.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element and <var>document</var> is not in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a> return max(<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-67\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-12\">scrolling area</a> width, <var>viewport width</var>).</p>"
+        },
+        {
+          "html": "<p>If the element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-11\">the HTML <code>body</code> element</a>, <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a> and the element is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#potentially-scrollable\" id=\"ref-for-potentially-scrollable-8\">potentially scrollable</a>, return max(<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-68\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-13\">scrolling area</a> width, <var>viewport width</var>).</p>"
+        },
+        {
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-10\">CSS layout box</a> return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Return the width of the element’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-14\">scrolling area</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/scrollHeight",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-scrollheight",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"scrollHeight\" id=\"dom-element-scrollheight\">scrollHeight<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-scrollheight\">#dom-element-scrollheight</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollheight-1\">6. Extensions to the Element Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-scrollheight-2\">Changes From 17 December 2013</a></span></span></dfn> attribute must return the result of running these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\">active document</a>, return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>viewport height</var> be the height of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-69\">viewport</a> excluding the height of the scroll bar, if any, or zero if there is no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-70\">viewport</a>.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element and <var>document</var> is not in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a> return max(<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-71\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-15\">scrolling area</a> height, <var>viewport height</var>).</p>"
+        },
+        {
+          "html": "<p>If the element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-12\">the HTML <code>body</code> element</a>, <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a> and the element is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#potentially-scrollable\" id=\"ref-for-potentially-scrollable-9\">potentially scrollable</a>, return max(<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-72\">viewport</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-16\">scrolling area</a> height, <var>viewport height</var>).</p>"
+        },
+        {
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-11\">CSS layout box</a> return zero and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Return the height of the element’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-17\">scrolling area</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/clientTop",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-clienttop",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"clientTop\" id=\"dom-element-clienttop\">clientTop<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-clienttop\">#dom-element-clienttop</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-clienttop-1\">6. Extensions to the Element Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-clienttop-2\">Changes From 17 December 2013</a></span></span></dfn> attribute must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the element has no associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-12\">CSS layout box</a> or if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-13\">CSS layout box</a> is inline, return zero.</p>"
+        },
+        {
+          "html": "<p>Return the computed value of the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css3-background/#border-top-width\">border-top-width</a> property plus the height of any scrollbar rendered between the top <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-19\">padding edge</a> and the top <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#border-edge\" id=\"ref-for-border-edge-1\">border edge</a>, ignoring any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-9\">transforms</a> that apply to the element and its ancestors.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/clientLeft",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-clientleft",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"clientLeft\" id=\"dom-element-clientleft\">clientLeft<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-clientleft\">#dom-element-clientleft</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-clientleft-1\">6. Extensions to the Element Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-clientleft-2\">Changes From 17 December 2013</a></span></span></dfn> attribute must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the element has no associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-14\">CSS layout box</a> or if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-15\">CSS layout box</a> is inline, return zero.</p>"
+        },
+        {
+          "html": "<p>Return the computed value of the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css3-background/#border-left-width\">border-left-width</a> property plus the width of any scrollbar rendered between the left <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-20\">padding edge</a> and the left <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#border-edge\" id=\"ref-for-border-edge-2\">border edge</a>, ignoring any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-10\">transforms</a> that apply to the element and its ancestors.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/clientWidth",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-clientwidth",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"clientWidth\" id=\"dom-element-clientwidth\">clientWidth<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-clientwidth\">#dom-element-clientwidth</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-clientwidth-1\">6. Extensions to the Element Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-clientwidth-2\">Changes From 17 December 2013</a></span></span></dfn> attribute must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the element has no associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-16\">CSS layout box</a> or if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-17\">CSS layout box</a> is inline, return zero.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element and the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a> is not in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, or if the element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-13\">the HTML <code>body</code> element</a> and the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a> <em>is</em> in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, return the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-73\">viewport</a> width excluding the size of a rendered scroll bar (if any).</p>"
+        },
+        {
+          "html": "<p>Return the width of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-21\">padding edge</a> excluding the width of any rendered scrollbar between the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-22\">padding edge</a> and the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#border-edge\" id=\"ref-for-border-edge-3\">border edge</a>, ignoring any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-11\">transforms</a> that apply to the element and its ancestors.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/clientHeight",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-element-clientheight",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"clientHeight\" id=\"dom-element-clientheight\">clientHeight<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-clientheight\">#dom-element-clientheight</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-clientheight-1\">6. Extensions to the Element Interface</a></span><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-element-clientheight-2\">Changes From 17 December 2013</a></span></span></dfn> attribute must run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the element has no associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-18\">CSS layout box</a> or if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-19\">CSS layout box</a> is inline, return zero.</p>"
+        },
+        {
+          "html": "<p>If the element is the root element and the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a> is not in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, or if the element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-14\">the HTML <code>body</code> element</a> and the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a> <em>is</em> in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\">quirks mode</a>, return the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-74\">viewport</a> height excluding the size of a rendered scroll bar (if any).</p>"
+        },
+        {
+          "html": "<p>Return the height of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-23\">padding edge</a> excluding the height of any rendered scrollbar between the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-24\">padding edge</a> and the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#border-edge\" id=\"ref-for-border-edge-4\">border edge</a>, ignoring any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-12\">transforms</a> that apply to the element and its ancestors.</p>"
+        }
+      ]
+    },
+    {
+      "name": "scroll an element into view",
+      "href": "https://www.w3.org/TR/cssom-view-1/#scroll-an-element-into-view",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"scroll an element into view\" data-noexport=\"\" id=\"scroll-an-element-into-view\">scroll an element into view<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#scroll-an-element-into-view\">#scroll-an-element-into-view</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-scroll-an-element-into-view-1\">6. Extensions to the Element Interface</a></span></span></dfn> <var>element</var>,\nwith a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dictdef-scrollintoviewoptions\" id=\"ref-for-dictdef-scrollintoviewoptions-2\">ScrollIntoViewOptions</a></code> dictionary <var>options</var>,\nmeans to run these steps for each ancestor element or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-75\">viewport</a> that establishes\na <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box-10\">scrolling box</a> <var>scrolling box</var>, in order of innermost to outermost <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box-11\">scrolling box</a>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code> associated with <var>element</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\">same origin</a> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code> associated with the element or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-76\">viewport</a> associated with <var>box</var>, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>element bounding border box</var> be the box that the return value of invoking <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-getboundingclientrect\" id=\"ref-for-dom-element-getboundingclientrect-2\">getBoundingClientRect()</a></code> on <var>element</var> represents.</p>"
+        },
+        {
+          "html": "<p>Let <var>scrolling box edge A</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#beginning-edges\" id=\"ref-for-beginning-edges-3\">beginning edge</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-3/#block-flow-direction\">block flow direction</a> of <var>scrolling box</var>, and let <var>element edge A</var> be <var>element bounding border box</var>’s edge on the same physical side as that of <var>scrolling box edge A</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>scrolling box edge B</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#ending-edges\" id=\"ref-for-ending-edges-1\">ending edge</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-3/#block-flow-direction\">block flow direction</a> of <var>scrolling box</var>, and let <var>element edge B</var> be <var>element bounding border box</var>’s edge on the same physical side as that of <var>scrolling box edge B</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>scrolling box edge C</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#beginning-edges\" id=\"ref-for-beginning-edges-4\">beginning edge</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-3/#inline-base-direction\">inline base direction</a> of <var>scrolling box</var>, and let <var>element edge C</var> be <var>element bounding border box</var>’s edge on the same physical side as that of <var>scrolling box edge C</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>scrolling box edge D</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#ending-edges\" id=\"ref-for-ending-edges-2\">ending edge</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-3/#inline-base-direction\">inline base direction</a> of <var>scrolling box</var>, and let <var>element edge D</var> be <var>element bounding border box</var>’s edge on the same physical side as that of <var>scrolling box edge D</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>element width</var> be the distance between <var>element edge C</var> and <var>element edge D</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>scrolling box width</var> be the distance between <var>scrolling box edge C</var> and <var>scrolling box edge D</var>.</p>"
+        },
+        {
+          "html": "Let <var>position</var> be the scroll position <var>scrolling box</var> would have by following these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrollintoviewoptions-block\" id=\"ref-for-dom-scrollintoviewoptions-block-3\">block</a></code> dictionary member of <var>options</var> is \"start\", align <var>element edge A</var> with <var>scrolling box edge A</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrollintoviewoptions-block\" id=\"ref-for-dom-scrollintoviewoptions-block-4\">block</a></code> dictionary member of <var>options</var> is \"end\"; align <var>element edge B</var> with <var>scrolling box edge B</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrollintoviewoptions-block\" id=\"ref-for-dom-scrollintoviewoptions-block-5\">block</a></code> dictionary member of <var>options</var> is \"center\"; align the center of <var>element bounding border box</var> with the center of <var>scrolling box</var> in <var>scrolling box</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-3/#block-flow-direction\">block flow direction</a>.</p>"
+            },
+            {
+              "html": "Otherwise, it is \"nearest\"; follow these steps:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "If element edge A and element edge B are both outside scrolling box edge A and scrolling box edge B",
+                      "html": "Do nothing."
+                    },
+                    {
+                      "case": "If element edge A is outside scrolling box edge A and element width is less than scrolling box width",
+                      "html": "Align <var>element edge A</var> with <var>scrolling box edge A</var>."
+                    },
+                    {
+                      "case": "If element edge B is outside scrolling box edge B and element width is greater than scrolling box width",
+                      "html": "Align <var>element edge A</var> with <var>scrolling box edge A</var>."
+                    },
+                    {
+                      "case": "If element edge A is outside scrolling box edge A and element width is greater than scrolling box width",
+                      "html": "Align <var>element edge B</var> with <var>scrolling box edge B</var>."
+                    },
+                    {
+                      "case": "If element edge B is outside scrolling box edge B and element width is less than scrolling box width",
+                      "html": "Align <var>element edge B</var> with <var>scrolling box edge B</var>."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrollintoviewoptions-inline\" id=\"ref-for-dom-scrollintoviewoptions-inline-3\">inline</a></code> dictionary member of <var>options</var> is \"start\", align <var>element edge C</var> with <var>scrolling box edge C</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrollintoviewoptions-inline\" id=\"ref-for-dom-scrollintoviewoptions-inline-4\">inline</a></code> dictionary member of <var>options</var> is \"end\"; align <var>element edge D</var> with <var>scrolling box edge D</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrollintoviewoptions-inline\" id=\"ref-for-dom-scrollintoviewoptions-inline-5\">inline</a></code> dictionary member of <var>options</var> is  \"center\", align the center of <var>element bounding border box</var> with the center of <var>scrolling box</var> in <var>scrolling box</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-3/#inline-base-direction\">inline base direction</a>.</p>"
+            },
+            {
+              "html": "Otherwise, it is \"nearest\"; follow these steps:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "If element edge C and element edge D are both outside scrolling box edge C and scrolling box edge D",
+                      "html": "Do nothing."
+                    },
+                    {
+                      "case": "If element edge C is outside scrolling box edge C and element width is less than scrolling box width",
+                      "html": "Align <var>element edge C</var> with <var>scrolling box edge C</var>."
+                    },
+                    {
+                      "case": "If element edge D is outside scrolling box edge D and element width is greater than scrolling box width",
+                      "html": "Align <var>element edge C</var> with <var>scrolling box edge C</var>."
+                    },
+                    {
+                      "case": "If element edge C is outside scrolling box edge C and element width is greater than scrolling box width",
+                      "html": "Align <var>element edge D</var> with <var>scrolling box edge D</var>."
+                    },
+                    {
+                      "case": "If element edge D is outside scrolling box edge D and element width is less than scrolling box width",
+                      "html": "Align <var>element edge D</var> with <var>scrolling box edge D</var>."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>position</var> is the same as <var>scrolling box</var>’s current scroll position, and <var>scrolling box</var> does not have an ongoing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll-5\">smooth scroll</a>, abort these steps.</p>"
+        },
+        {
+          "html": "<dl class=\"switch\">\n      <dt>If <var>scrolling box</var> is associated with an element \n      </dt><dd> Let <var>associated element</var> be the element. \n      </dd><dt>If <var>scrolling box</var> is associated with a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-77\">viewport</a> \n      </dt><dd> Let <var>document</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-78\">viewport’s</a> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code>.\n        Let <var>associated element</var> be <var>document</var>’s root element, if there is one, or null otherwise. \n     </dd></dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If scrolling box is associated with an element",
+                  "html": "Let <var>associated element</var> be the element."
+                },
+                {
+                  "case": "If scrolling box is associated with a viewport",
+                  "html": "Let <var>document</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-78\">viewport’s</a> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code>.\n        Let <var>associated element</var> be <var>document</var>’s root element, if there is one, or null otherwise."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>behavior</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-scrolloptions-behavior\" id=\"ref-for-dom-scrolloptions-behavior-3\">behavior</a></code> dictionary member of <var>options</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll-3\">Perform a scroll</a> of <var>scrolling box</var> to <var>position</var>, <var>associated element</var> as the associated element and <var>behavior</var> as the scroll behavior.</p>"
+        }
+      ]
+    },
+    {
+      "name": "scroll an element",
+      "href": "https://www.w3.org/TR/cssom-view-1/#scroll-an-element",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"scroll an element\" data-noexport=\"\" id=\"scroll-an-element\">scroll an element<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#scroll-an-element\">#scroll-an-element</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-scroll-an-element-1\">6. Extensions to the Element Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-scroll-an-element-2\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-scroll-an-element-3\">(3)</a></span></span></dfn> <var>element</var> to <var>x</var>,<var>y</var> optionally with a scroll behavior <var>behavior</var> (which is <code>\"auto\"</code> if omitted) means to:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>box</var> be <var>element</var>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box-12\">scrolling box</a>.</p>"
+        },
+        {
+          "html": "<dl class=\"switch\">\n      <dt>If <var>box</var> has rightward <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#overflow-directions\" id=\"ref-for-overflow-directions-15\">overflow direction</a> \n      </dt><dd>Let <var>x</var> be max(0, min(<var>x</var>, <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-18\">scrolling area</a> width - <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-25\">padding edge</a> width)). \n      </dd><dt>If <var>box</var> has leftward <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#overflow-directions\" id=\"ref-for-overflow-directions-16\">overflow direction</a> \n      </dt><dd>Let <var>x</var> be min(0, max(<var>x</var>, <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-26\">padding edge</a> width - <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-19\">scrolling area</a> width)). \n     </dd></dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If box has rightward overflow direction",
+                  "html": "Let <var>x</var> be max(0, min(<var>x</var>, <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-18\">scrolling area</a> width - <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-25\">padding edge</a> width))."
+                },
+                {
+                  "case": "If box has leftward overflow direction",
+                  "html": "Let <var>x</var> be min(0, max(<var>x</var>, <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-26\">padding edge</a> width - <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-19\">scrolling area</a> width))."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<dl class=\"switch\">\n      <dt>If <var>box</var> has downward <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#overflow-directions\" id=\"ref-for-overflow-directions-17\">overflow direction</a> \n      </dt><dd>Let <var>y</var> be max(0, min(<var>y</var>, <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-20\">scrolling area</a> height - <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-27\">padding edge</a> height)). \n      </dd><dt>If <var>box</var> has upward <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#overflow-directions\" id=\"ref-for-overflow-directions-18\">overflow direction</a> \n      </dt><dd>Let <var>y</var> be min(0, max(<var>y</var>, <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-28\">padding edge</a> height - <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-21\">scrolling area</a> height)). \n     </dd></dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If box has downward overflow direction",
+                  "html": "Let <var>y</var> be max(0, min(<var>y</var>, <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-20\">scrolling area</a> height - <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-27\">padding edge</a> height))."
+                },
+                {
+                  "case": "If box has upward overflow direction",
+                  "html": "Let <var>y</var> be min(0, max(<var>y</var>, <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-28\">padding edge</a> height - <var>element</var> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-21\">scrolling area</a> height))."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>position</var> be the scroll position <var>box</var> would have by aligning <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-22\">scrolling area</a> x-coordinate <var>x</var> with the left of <var>box</var> and aligning <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area-23\">scrolling area</a> y-coordinate <var>y</var> with the top of <var>box</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>position</var> is the same as <var>box</var>’s current scroll position, and <var>box</var> does not have an ongoing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll-6\">smooth scroll</a>, abort these steps.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll-4\">Perform a scroll</a> of <var>box</var> to <var>position</var>, <var>element</var> as the associated element and <var>behavior</var> as the scroll behavior.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLElement/offsetParent",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetparent",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"HTMLElement\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"offsetParent\" id=\"dom-htmlelement-offsetparent\">offsetParent<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetparent\">#dom-htmlelement-offsetparent</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-htmlelement-offsetparent-1\">7. Extensions to the HTMLElement Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-htmlelement-offsetparent-2\">(2)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-htmlelement-offsetparent-3\">(3)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-htmlelement-offsetparent-4\">(4)</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-htmlelement-offsetparent-5\">(5)</a></span></span></dfn> attribute must return the result of running these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If any of the following holds true return null and terminate this algorithm:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>The element does not have an associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-20\">CSS layout box</a>.</p>\n      </li><li data-md=\"\">\n       <p>The element is the root element.</p>\n      </li><li data-md=\"\">\n       <p>The element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-15\">the HTML <code>body</code> element</a>.</p>\n      </li><li data-md=\"\">\n       <p>The element’s computed value of the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css3-positioning/#propdef-position\">position</a> property is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css3-positioning/#valdef-position-positionfake-maybe-placeholderfixed-fake-maybe-placeholder\">fixed</a>.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>Return the nearest ancestor element of the element for which at least one of the following is true and terminate this algorithm if such an ancestor is found:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>The computed value of the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css3-positioning/#propdef-position\">position</a> property is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css3-positioning/#valdef-position-positionfake-maybe-placeholderstatic-fake-maybe-placeholder\">static</a>.</p>\n      </li><li data-md=\"\">\n       <p>It is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-16\">the HTML <code>body</code> element</a>.</p>\n      </li><li data-md=\"\">\n       <p>The computed value of the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css3-positioning/#propdef-position\">position</a> property of the element is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css3-positioning/#valdef-position-positionfake-maybe-placeholderstatic-fake-maybe-placeholder\">static</a> and the ancestor is one of the following <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-elements\">HTML elements</a>: <code>td</code>, <code>th</code>, or <code>table</code>.</p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLElement/offsetTop",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsettop",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"HTMLElement\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"offsetTop\" id=\"dom-htmlelement-offsettop\">offsetTop<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsettop\">#dom-htmlelement-offsettop</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-htmlelement-offsettop-1\">7. Extensions to the HTMLElement Interface</a></span></span></dfn> attribute must return the result of running these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-17\">the HTML <code>body</code> element</a> or does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-21\">CSS layout box</a> return zero and terminate this algorithm.</p>"
+        },
+        {
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetparent\" id=\"ref-for-dom-htmlelement-offsetparent-2\">offsetParent</a></code> of the element is null return the y-coordinate of the top <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#border-edge\" id=\"ref-for-border-edge-5\">border edge</a> of the first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-22\">CSS layout box</a> associated with the element, relative to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#initial-containing-block\">initial containing block</a> origin, ignoring any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-13\">transforms</a> that apply to the element and its ancestors, and terminate this algorithm.</p>"
+        },
+        {
+          "html": "<p>Return the result of subtracting the y-coordinate of the top <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-29\">padding edge</a> of the first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-23\">CSS layout box</a> associated with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetparent\" id=\"ref-for-dom-htmlelement-offsetparent-3\">offsetParent</a></code> of the element\nfrom the y-coordinate of the top <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#border-edge\" id=\"ref-for-border-edge-6\">border edge</a> of the first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-24\">CSS layout box</a> associated with the element,\nrelative to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#initial-containing-block\">initial containing block</a> origin,\nignoring any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-14\">transforms</a> that apply to the element and its ancestors.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLElement/offsetLeft",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetleft",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"HTMLElement\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"offsetLeft\" id=\"dom-htmlelement-offsetleft\">offsetLeft<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetleft\">#dom-htmlelement-offsetleft</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-htmlelement-offsetleft-1\">7. Extensions to the HTMLElement Interface</a></span></span></dfn> attribute must return the result of running these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the element is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#the-html-body-element\" id=\"ref-for-the-html-body-element-18\">the HTML <code>body</code> element</a> or does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-26\">CSS layout box</a> return zero and terminate this algorithm.</p>"
+        },
+        {
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetparent\" id=\"ref-for-dom-htmlelement-offsetparent-4\">offsetParent</a></code> of the element is null return the x-coordinate of the left <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#border-edge\" id=\"ref-for-border-edge-7\">border edge</a> of the first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-27\">CSS layout box</a> associated with the element, relative to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#initial-containing-block\">initial containing block</a> origin, , ignoring any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-15\">transforms</a> that apply to the element and its ancestors, and terminate this algorithm.</p>"
+        },
+        {
+          "html": "<p>Return the result of subtracting the x-coordinate of the left <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-30\">padding edge</a> of the first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-28\">CSS layout box</a> associated with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetparent\" id=\"ref-for-dom-htmlelement-offsetparent-5\">offsetParent</a></code> of the element from the x-coordinate of the left <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#border-edge\" id=\"ref-for-border-edge-8\">border edge</a> of the first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-29\">CSS layout box</a> associated with the element, relative to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#initial-containing-block\">initial containing block</a> origin, ignoring any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-16\">transforms</a> that apply to the element and its ancestors.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLElement/offsetWidth",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetwidth",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"HTMLElement\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"offsetWidth\" id=\"dom-htmlelement-offsetwidth\">offsetWidth<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetwidth\">#dom-htmlelement-offsetwidth</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-htmlelement-offsetwidth-1\">7. Extensions to the HTMLElement Interface</a></span></span></dfn> attribute must return the result of running these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-30\">CSS layout box</a> return zero and terminate this algorithm.</p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#border-edge\" id=\"ref-for-border-edge-9\">border edge</a> width of the first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-31\">CSS layout box</a> associated with the element, ignoring any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-17\">transforms</a> that apply to the element and its ancestors.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLElement/offsetHeight",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetheight",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"HTMLElement\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"offsetHeight\" id=\"dom-htmlelement-offsetheight\">offsetHeight<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-htmlelement-offsetheight\">#dom-htmlelement-offsetheight</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-htmlelement-offsetheight-1\">7. Extensions to the HTMLElement Interface</a></span></span></dfn> attribute must return the result of running these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-32\">CSS layout box</a> return zero and terminate this algorithm.</p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#border-edge\" id=\"ref-for-border-edge-10\">border edge</a> height of the first <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#css-layout-box\" id=\"ref-for-css-layout-box-33\">CSS layout box</a> associated with the element, ignoring any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-18\">transforms</a> that apply to the element and its ancestors.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Range/getBoundingClientRect()",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-range-getboundingclientrect",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Range\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getBoundingClientRect()\" id=\"dom-range-getboundingclientrect\">getBoundingClientRect()<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-range-getboundingclientrect\">#dom-range-getboundingclientrect</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-range-getboundingclientrect-1\">9. Extensions to the Range Interface</a></span></span></dfn> method, when invoked, must return the result of the following\nalgorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>list</var> be the result of invoking <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-range-getclientrects\" id=\"ref-for-dom-range-getclientrects-3\">getClientRects()</a></code> on the same range this method was invoked on.</p>"
+        },
+        {
+          "html": "<p>If <var>list</var> is empty return a static <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect\">DOMRect</a></code> object whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrect-x\">x</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrect-y\">y</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrect-width\">width</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.fxtf.org/geometry-1/#dom-domrect-height\">height</a></code> members are zero.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return a static <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect\">DOMRect</a></code> object describing the smallest rectangle that includes the first rectangle in <var>list</var> and all of the remaining rectangles of which the height or width is not zero.</p>"
+        }
+      ]
+    },
+    {
+      "name": "MouseEvent/pageX",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-pagex",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"MouseEvent\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"pageX\" id=\"dom-mouseevent-pagex\">pageX<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-pagex\">#dom-mouseevent-pagex</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mouseevent-pagex-1\">10. Extensions to the MouseEvent Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mouseevent-pagex-2\">(2)</a></span></span></dfn> attribute must follow these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the event’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#dispatch-flag\">dispatch flag</a> is set, return the horizontal coordinate of the position where the event occurred relative to the origin of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#initial-containing-block\">initial containing block</a> and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>offset</var> be the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrollx\" id=\"ref-for-dom-window-scrollx-9\">scrollX</a></code> attribute of the event’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#window\">Window</a></code> object, if there is one, or zero otherwise.</p>"
+        },
+        {
+          "html": "<p>Return the sum of <var>offset</var> and the value of the event’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-clientx\" id=\"ref-for-dom-mouseevent-clientx-2\">clientX</a></code> attribute.</p>"
+        }
+      ]
+    },
+    {
+      "name": "MouseEvent/pageY",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-pagey",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"MouseEvent\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"pageY\" id=\"dom-mouseevent-pagey\">pageY<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-pagey\">#dom-mouseevent-pagey</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mouseevent-pagey-1\">10. Extensions to the MouseEvent Interface</a> <a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mouseevent-pagey-2\">(2)</a></span></span></dfn> attribute must follow these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the event’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#dispatch-flag\">dispatch flag</a> is set, return the vertical coordinate of the position where the event occurred relative to the origin of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-3/#initial-containing-block\">initial containing block</a> and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>offset</var> be the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-scrolly\" id=\"ref-for-dom-window-scrolly-8\">scrollY</a></code> attribute of the event’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#window\">Window</a></code> object, if there is one, or zero otherwise.</p>"
+        },
+        {
+          "html": "<p>Return the sum of <var>offset</var> and the value of the event’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-clienty\" id=\"ref-for-dom-mouseevent-clienty-2\">clientY</a></code> attribute.</p>"
+        }
+      ]
+    },
+    {
+      "name": "MouseEvent/offsetX",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-offsetx",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"MouseEvent\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"offsetX\" id=\"dom-mouseevent-offsetx\">offsetX<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-offsetx\">#dom-mouseevent-offsetx</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mouseevent-offsetx-1\">10. Extensions to the MouseEvent Interface</a></span></span></dfn> attribute must follow these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the event’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#dispatch-flag\">dispatch flag</a> is set, return the x-coordinate of the position where the event occurred relative to the origin of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-31\">padding edge</a> of the target node, ignoring the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-22\">transforms</a> that apply to the element and its ancestors, and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Return the value of the event’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-pagex\" id=\"ref-for-dom-mouseevent-pagex-2\">pageX</a></code> attribute.</p>"
+        }
+      ]
+    },
+    {
+      "name": "MouseEvent/offsetY",
+      "href": "https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-offsety",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"MouseEvent\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"offsetY\" id=\"dom-mouseevent-offsety\">offsetY<span class=\"dfn-panel\" data-deco=\"\"><b><a href=\"https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-offsety\">#dom-mouseevent-offsety</a></b><b>Referenced in:</b><span><a href=\"https://www.w3.org/TR/cssom-view-1/#ref-for-dom-mouseevent-offsety-1\">10. Extensions to the MouseEvent Interface</a></span></span></dfn> attribute must follow these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the event’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#dispatch-flag\">dispatch flag</a> is set, return the y-coordinate of the position where the event occurred relative to the origin of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#padding-edge\" id=\"ref-for-padding-edge-32\">padding edge</a> of the target node, ignoring the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#transforms\" id=\"ref-for-transforms-23\">transforms</a> that apply to the element and its ancestors, and terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Return the value of the event’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-mouseevent-pagey\" id=\"ref-for-dom-mouseevent-pagey-2\">pageY</a></code> attribute.</p>"
+        }
+      ]
+    },
+    {
+      "name": "run the resize steps",
+      "href": "https://www.w3.org/TR/cssom-view-1/#run-the-resize-steps",
+      "html": "When asked to <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-the-resize-steps\">run the resize steps<a class=\"self-link\" href=\"https://www.w3.org/TR/cssom-view-1/#run-the-resize-steps\"></a></dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code> <var>doc</var>, run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-81\">viewport</a> has had its width or height changed\n(e.g. as a result of the user resizing the browser window,\nor changing the <span>page zoom</span> scale factor,\nor an <code>iframe</code> element’s dimensions are changed)\nsince the last time these steps were run, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/cssom-view-1/#eventdef-window-resize\" id=\"ref-for-eventdef-window-resize-1\">resize</a> at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#window\">Window</a></code> object associated with <var>doc</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-82\">viewport</a> gets scrolled (whether in response to user interaction or by an API), the user agent must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>doc</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#viewport\" id=\"ref-for-viewport-83\">viewport’s</a> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>doc</var> is already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#pending-scroll-event-targets\" id=\"ref-for-pending-scroll-event-targets-1\">pending scroll event targets</a>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Append <var>doc</var> to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#pending-scroll-event-targets\" id=\"ref-for-pending-scroll-event-targets-2\">pending scroll event targets</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Whenever an element gets scrolled (whether in response to user interaction or by an API), the user agent must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>doc</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If the element is already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#pending-scroll-event-targets\" id=\"ref-for-pending-scroll-event-targets-3\">pending scroll event targets</a>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Append the element to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#pending-scroll-event-targets\" id=\"ref-for-pending-scroll-event-targets-4\">pending scroll event targets</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "run the scroll steps",
+      "href": "https://www.w3.org/TR/cssom-view-1/#run-the-scroll-steps",
+      "html": "When asked to <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-the-scroll-steps\">run the scroll steps<a class=\"self-link\" href=\"https://www.w3.org/TR/cssom-view-1/#run-the-scroll-steps\"></a></dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code> <var>doc</var>, run these steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each item <var>target</var> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#pending-scroll-event-targets\" id=\"ref-for-pending-scroll-event-targets-5\">pending scroll event targets</a>,\nin the order they were added to the list, run these substeps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>target</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\">Document</a></code>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/cssom-view-1/#eventdef-document-scroll\" id=\"ref-for-eventdef-document-scroll-1\">scroll</a> that bubbles at <var>target</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/cssom-view-1/#eventdef-document-scroll\" id=\"ref-for-eventdef-document-scroll-2\">scroll</a> at <var>target</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Empty <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-view-1/#pending-scroll-event-targets\" id=\"ref-for-pending-scroll-event-targets-6\">pending scroll event targets</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

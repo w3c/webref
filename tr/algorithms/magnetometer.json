@@ -1,0 +1,91 @@
+{
+  "spec": {
+    "title": "Magnetometer",
+    "url": "https://www.w3.org/TR/magnetometer/"
+  },
+  "algorithms": [
+    {
+      "name": "construct a magnetometer object",
+      "html": "<dl>\n     <dt data-md=\"\">input\n     </dt><dd data-md=\"\">\n      <p><var>object</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/magnetometer/#magnetometer\" id=\"ref-for-magnetometer⑦\">Magnetometer</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/magnetometer/#uncalibratedmagnetometer\" id=\"ref-for-uncalibratedmagnetometer①⓪\">UncalibratedMagnetometer</a></code> object</p>\n     </dd><dd data-md=\"\">\n      <p><var>options</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/magnetometer/#dictdef-magnetometersensoroptions\" id=\"ref-for-dictdef-magnetometersensoroptions②\">MagnetometerSensorOptions</a></code> object.</p>\n    </dd></dl>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>allowed</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#check-sensor-policy-controlled-features\" id=\"ref-for-check-sensor-policy-controlled-features\">check sensor policy-controlled features</a> with <var>object</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#sensor-type\" id=\"ref-for-sensor-type④\">sensor type</a>.</p>"
+        },
+        {
+          "html": "If <var>allowed</var> is false, then:",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">Throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#initialize-a-sensor-object\" id=\"ref-for-initialize-a-sensor-object\">initialize a sensor object</a> with <var>object</var> and <var>options</var>.</p>"
+        },
+        {
+          "html": "If <var>options</var>.<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/magnetometer/#dom-magnetometersensoroptions-referenceframe\" id=\"ref-for-dom-magnetometersensoroptions-referenceframe\">referenceFrame</a></code> is \"screen\", then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>object</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#local-coordinate-system\" id=\"ref-for-local-coordinate-system②\">local coordinate system</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/accelerometer/#screen-coordinate-system\" id=\"ref-for-screen-coordinate-system①\">screen coordinate system</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Otherwise, define <var>object</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#local-coordinate-system\" id=\"ref-for-local-coordinate-system③\">local coordinate system</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/accelerometer/#device-coordinate-system\" id=\"ref-for-device-coordinate-system①\">device coordinate system</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "uncalibrated magnetometer reading parsing algorithm",
+      "html": "<dl>\n     <dt data-md=\"\">input\n     </dt><dd data-md=\"\">\n      <p><var>parameters</var>, a JSON <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects\" id=\"ref-for-sec-object-objects\">Object</a></code></p>\n     </dd><dt data-md=\"\">output\n     </dt><dd data-md=\"\">\n      <p>A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-reading\" id=\"ref-for-sensor-reading①\">sensor reading</a> or <strong>undefined</strong></p>\n    </dd></dl>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>reading</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#parse-xyz-reading\" id=\"ref-for-parse-xyz-reading①\">parse XYZ reading</a> with <var>parameters</var>.</p>"
+        },
+        {
+          "html": "If <var>reading</var> is <strong>undefined</strong>.",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <strong>undefined</strong>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>keys</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> « \"<code>xBias</code>\", \"<code>yBias</code>\", \"<code>zBias</code>\" ».</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>key</var> of <var>keys</var>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>value</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#parse-single-value-number-reading\" id=\"ref-for-parse-single-value-number-reading\">parse single-value number reading</a> with <var>parameters</var> and <var>key</var>.",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>value</var> is <strong>undefined</strong>.",
+                  "rationale": "return",
+                  "steps": [
+                    {
+                      "html": "<p>Return <strong>undefined</strong>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>reading</var>[<var>key</var>] to <var>value</var>[<var>key</var>].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>reading</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

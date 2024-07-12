@@ -1,0 +1,241 @@
+{
+  "spec": {
+    "title": "SVG Strokes",
+    "url": "https://www.w3.org/TR/svg-strokes/"
+  },
+  "algorithms": [
+    {
+      "html": "The target length that a dash pattern will be adjusted to depends\non the value of the ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeDashcornerProperty\"><code class=\"property\">stroke-dashcorner</code></a>’ property:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeDashcornerProperty\"><code class=\"property\">stroke-dashcorner</code></a>’ is <span class=\"prop-value\">none</span>,\n  then the dash pattern will be adjusted to fit within the length of\n  the subpath a whole number of times."
+        },
+        {
+          "html": "If ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeDashcornerProperty\"><code class=\"property\">stroke-dashcorner</code></a>’ has any other value, including a zero\n  length, then the dash pattern will be adjusted differently for each\n  segment of the subpath such that it fits between the two corner\n  dashes at the ends of the segment a whole number of times."
+        }
+      ]
+    },
+    {
+      "name": "stroke shape",
+      "href": "https://www.w3.org/TR/svg-strokes/#TermStrokeShape",
+      "html": "The <dfn id=\"TermStrokeShape\">stroke shape</dfn> of an element is the\nshape that is filled by the ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeProperty\"><code class=\"property\">stroke</code></a>’ property.  The following algorithm\ndescribes what the stroke shape of a <span class=\"element-name\">‘<a href=\"https://svgwg.org/svg2-draft/paths.html#PathElement\"><span>path</span></a>’</span> or <a href=\"https://svgwg.org/svg2-draft/shapes.html#TermBasicShapeElement\">basic shape</a> is,\ntaking into account the stroking properties above:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>shape</var> be an empty shape."
+        },
+        {
+          "html": "Let <var>path</var> be the <a href=\"https://svgwg.org/svg2-draft/paths.html#TermEquivalentPath\">equivalent path</a> of the element."
+        },
+        {
+          "html": "For each subpath of <var>path</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>positions</var> be the <a href=\"https://www.w3.org/TR/svg-strokes/#TermDashPositions\">dash positions</a> for the subpath."
+            },
+            {
+              "html": "For each pair &lt;<var>start</var>, <var>end</var>&gt; in <var>positions</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>dash</var> be the shape that includes, for all distances\n          between <var>start</var> and <var>end</var> along the subpath, all\n          points that lie on the line perpendicular to the subpath at that\n          distance and which are within distance ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeWidthProperty\"><code class=\"property\">stroke-width</code></a>’ of\n          the point on the subpath at that position."
+                },
+                {
+                  "html": "Set <var>dash</var> to be the union of <var>dash</var> and the\n          starting <a href=\"https://www.w3.org/TR/svg-strokes/#TermCapShape\">cap shape</a> for the subpath at position <var>start</var>."
+                },
+                {
+                  "html": "Set <var>dash</var> to be the union of <var>dash</var> and the\n          ending <a href=\"https://www.w3.org/TR/svg-strokes/#TermCapShape\">cap shape</a> for the subpath at position <var>end</var>."
+                },
+                {
+                  "html": "Let <var>index</var> and <var>last</var> be the indexes of the\n            path segments in the subpath at distance <var>start</var> and\n            <var>end</var> along the subpath."
+                },
+                {
+                  "html": "While <var>index</var> &lt; <var>last</var>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set <var>dash</var> to be the union of <var>dash</var> and the\n              <a href=\"https://www.w3.org/TR/svg-strokes/#TermLineJoinShape\">line join shape</a> for the subpath at segment index <var>index</var>."
+                    },
+                    {
+                      "html": "Set <var>index</var> to <var>index</var> + 1."
+                    }
+                  ]
+                },
+                {
+                  "html": "Set <var>shape</var> to be the union of <var>shape</var> and\n          <var>stroke</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var>shape</var>."
+        }
+      ]
+    },
+    {
+      "name": "dash positions",
+      "href": "https://www.w3.org/TR/svg-strokes/#TermDashPositions",
+      "html": "The <dfn id=\"TermDashPositions\">dash positions</dfn> for a given subpath of\nthe <a href=\"https://svgwg.org/svg2-draft/paths.html#TermEquivalentPath\">equivalent path</a> of a <span class=\"element-name\">‘<a href=\"https://svgwg.org/svg2-draft/paths.html#PathElement\"><span>path</span></a>’</span> or <a href=\"https://svgwg.org/svg2-draft/shapes.html#TermBasicShapeElement\">basic shape</a> is a\nsequence of pairs of values, which represent the starting and ending distance\nalong the subpath for each of the dashes that form the subpath's stroke.  It is\ndetermined as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>pathlength</var> be the length of the subpath."
+        },
+        {
+          "html": "Let <var>dashes</var> be the list of values of ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeDasharrayProperty\"><code class=\"property\">stroke-dasharray</code></a>’\n  on the element, converted to user units, repeated if necessary so that it has\n  an even number of elements; if the property has the value\n  <span class=\"prop-value\">none</span>, then the list has a single value 0."
+        },
+        {
+          "html": "Let <var>count</var> be the number of values in <var>dashes</var>."
+        },
+        {
+          "html": "Let <var>sum</var> be the sum of the values in <var>dashes</var>."
+        },
+        {
+          "html": "If <var>sum</var> = 0, then return a sequence with the single pair\n  &lt;0, <var>pathlength</var>&gt;."
+        },
+        {
+          "html": "Let <var>positions</var> be an empty sequence."
+        },
+        {
+          "html": "Let <var>offset</var> be the value of the ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeDashoffsetProperty\"><code class=\"property\">stroke-dashoffset</code></a>’\n  property on the element."
+        },
+        {
+          "html": "If <var>offset</var> is negative, then set <var>offset</var> to\n  <var>sum</var> − abs(<var>offset</var>)."
+        },
+        {
+          "html": "Set <var>offset</var> to <var>offset</var> mod <var>sum</var>."
+        },
+        {
+          "html": "Let <var>index</var> be the smallest integer such that\n  sum(<var>dashes<sub>i</sub></var>, 0 ≤ <var>i</var> ≤ <var>index</var>) ≥ <var>offset</var>."
+        },
+        {
+          "html": "Let <var>dashlength</var> be\n  min(sum(<var>dashes<sub>i</sub></var>, 0 ≤ <var>i</var> ≤ <var>index</var>) − <var>offset</var>, <var>pathlength</var>)."
+        },
+        {
+          "html": "If <var>index</var> mod 2 = 0, then append to <var>positions</var> the\n  pair &lt;0, <var>dashlength</var>&gt;."
+        },
+        {
+          "html": "Let <var>position</var> be <var>dashlength</var>."
+        },
+        {
+          "html": "While <var>position</var> &lt; <var>pathlength</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>index</var> to (<var>index</var> + 1) mod <var>count</var>."
+            },
+            {
+              "html": "Let <var>dashlength</var> be\n      min(<var>dashes</var><sub><var>index</var></sub>, <var>pathlength</var> − <var>position</var>)."
+            },
+            {
+              "html": "If <var>index</var> mod 2 = 0, then append to <var>positions</var> the\n      pair &lt;<var>position</var>, <var>position</var> + <var>dashlength</var>&gt;."
+            },
+            {
+              "html": "Set <var>position</var> to <var>position</var> + <var>dashlength</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>positions</var>."
+        }
+      ]
+    },
+    {
+      "name": "cap shapes",
+      "href": "https://www.w3.org/TR/svg-strokes/#TermCapShape",
+      "html": "The starting and ending <dfn id=\"TermCapShape\">cap shapes</dfn> at a given\n<var>position</var> along a subpath are determined as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeLinecapProperty\"><code class=\"property\">stroke-linecap</code></a>’ is <span class=\"prop-value\">butt</span>, then return an empty shape."
+        },
+        {
+          "html": "Otherwise, if ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeLinecapProperty\"><code class=\"property\">stroke-linecap</code></a>’ is <span class=\"prop-value\">round</span>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If this is a starting cap, then return a semicircle of radius ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeWidthProperty\"><code class=\"property\">stroke-width</code></a>’ positioned such that:\n        <ul>\n          <li>Its straight edge is parallel to the line perpendicular to the subpath at distance <var>position</var> along it.</li>\n          <li>The midpoint of its straight edge is at the point that is along the subpath at distance <var>position</var>.</li>\n          <li>The direction from the midpoint of its arc to the midpoint of its straight edge is the same as the direction of the subpath at distance <var>position</var> along it.</li>\n        </ul>"
+            },
+            {
+              "html": "Otherwise, this is an ending cap.  Return a semicircle of radius ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeWidthProperty\"><code class=\"property\">stroke-width</code></a>’ positioned such that:\n        <ul>\n          <li>Its straight edge is parallel to the line perpendicular to the subpath at distance <var>position</var> along it.</li>\n          <li>The midpoint of its straight edge is at the point that is along the subpath at distance <var>position</var>.</li>\n          <li>The direction from the midpoint of its straight edge to the midpoint of its arc is the same as the direction of the subpath at distance <var>position</var> along it.</li>\n        </ul>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeLinecapProperty\"><code class=\"property\">stroke-linecap</code></a>’ is <span class=\"prop-value\">square</span>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If this is a starting cap, then return a rectangle with side lengths ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeWidthProperty\"><code class=\"property\">stroke-width</code></a>’ and ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeWidthProperty\"><code class=\"property\">stroke-width</code></a>’ / 2 positioned such that:\n        <ul>\n          <li>Its longer edges, <var>A</var> and <var>B</var>, are parallel to the line perpendicular to the subpath at distance <var>position</var> along it.</li>\n          <li>The midpoint of <var>A</var> is at <var>start</var>.</li>\n          <li>The direction from the midpoint of <var>B</var> to the midpoint of <var>A</var> is the same as the direction of the subpath at distance <var>position</var> along it.</li>\n        </ul>"
+            },
+            {
+              "html": "Otherwise, this is an ending cap.  Return a rectangle with side lengths ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeWidthProperty\"><code class=\"property\">stroke-width</code></a>’ and ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeWidthProperty\"><code class=\"property\">stroke-width</code></a>’ / 2 positioned such that:\n        <ul>\n          <li>Its longer edges, <var>A</var> and <var>B</var>, are parallel to the line perpendicular to the subpath at distance <var>position</var> along it.</li>\n          <li>The midpoint of <var>A</var> is at <var>end</var>.</li>\n          <li>The direction from the midpoint of <var>A</var> to the midpoint of <var>B</var> is the same as the direction of the subpath at distance <var>position</var> along it.</li>\n        </ul>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "line join shape",
+      "href": "https://www.w3.org/TR/svg-strokes/#TermLineJoinShape",
+      "html": "The <dfn id=\"TermLineJoinShape\">line join shape</dfn> for a given segment of\na subpath is determined as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>P</var> be the point at the end of the segment."
+        },
+        {
+          "html": "Let <var>A</var> be the line parallel to the tangent at the end of the segment."
+        },
+        {
+          "html": "Let <var>B</var> be the line parallel to the tangent at the start of the following segment."
+        },
+        {
+          "html": "If <var>A</var> and <var>B</var> are the same line, then return an empty shape."
+        },
+        {
+          "html": "Let <var>A<sub>left</sub></var> and <var>A<sub>right</sub></var> be lines\n  parallel to <var>A</var> at a distance of ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeWidthProperty\"><code class=\"property\">stroke-width</code></a>’ / 2 to the\n  left and to the right of <var>A</var> relative to the subpath direction, respectively."
+        },
+        {
+          "html": "Let <var>B<sub>left</sub></var> and <var>B<sub>right</sub></var> be lines\n  parallel to <var>B</var> at a distance of ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeWidthProperty\"><code class=\"property\">stroke-width</code></a>’ / 2 to the\n  left and to the right of <var>B</var>, relative to the subpath direction, respectively."
+        },
+        {
+          "html": "Let <var>P</var><sub>1</sub>, <var>P</var><sub>2</sub> and\n    <var>P</var><sub>3</sub> be points determined as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the smaller angle between <var>A</var> and <var>B</var> is on the\n      right of these lines, considering the direction of the subpath, then\n      <var>P</var><sub>1</sub> and <var>P</var><sub>2</sub> are the points on\n      <var>A<sub>left</sub></var> and <var>B<sub>left</sub></var> closest to\n      <var>P</var>, and <var>P</var><sub>3</sub> is the intersection of\n      <var>A<sub>left</sub></var> and <var>B<sub>left</sub></var>."
+            },
+            {
+              "html": "Otherwise, <var>P</var><sub>1</sub> and <var>P</var><sub>2</sub> are\n      the points on <var>A<sub>right</sub></var> and <var>B<sub>right</sub></var>\n      closest to <var>P</var>, and <var>P</var><sub>3</sub> is the intersection\n      of <var>A<sub>right</sub></var> and <var>B<sub>right</sub></var>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>bevel</var> be the triangle formed from the three points\n  <var>P</var>, <var>P</var><sub>1</sub> and <var>P</var><sub>2</sub>."
+        },
+        {
+          "html": "If ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeLinejoinProperty\"><code class=\"property\">stroke-linejoin</code></a>’ is <span class=\"prop-value\">round</span>, then\n  return the union of <var>bevel</var> and a circular sector of radius\n  ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeWidthProperty\"><code class=\"property\">stroke-width</code></a>’, centered on <var>P</var>, and which has\n  <var>P</var><sub>1</sub> and <var>P</var><sub>2</sub> as the two endpoints of\n  the arc."
+        },
+        {
+          "html": "If ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeLinejoinProperty\"><code class=\"property\">stroke-linejoin</code></a>’ is <span class=\"prop-value\">arcs</span>,\n    then find the circles that are tangent to the stroke edges at\n    <var>P</var><sub>1</sub> and <var>P</var><sub>2</sub> with the\n    same curvature as the edges at those points (see below). If both\n    curvatures are zero fall through to <span class=\"prop-value\">miter-clip</span>.\n    Extend the stroke edges using these circles (or a line, in the case\n    of zero curvature). If the two circles (or circle and line) do not\n    intersect, fall through to <span class=\"prop-value\">miter-clip</span>.\n\n    If the two circles (or circle and line) intersect, the line join\n    region is defined by the lines that connect <var>P</var>\n    with <var>P</var><sub>1</sub> and <var>P</var><sub>2</sub> and the\n    arcs defined by the circles (or arc and line) between the closest\n    intersection point to <var>P</var>, and <var>P</var><sub>1</sub>\n    and <var>P</var><sub>2</sub>. \n\n    Next calculate the <em>miter limit</em> as defined in\n    the ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeMiterlimitProperty\"><code class=\"property\">stroke-miterlimit</code></a>’ section. Clip any part of the line\n    join region that extends past the miter limit. Return the\n    resulting region.\n\n    Note that the curvatures are calculated in user-space before any\n    transforms are applied."
+        },
+        {
+          "html": "If ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeLinejoinProperty\"><code class=\"property\">stroke-linejoin</code></a>’ is <span class=\"prop-value\">miter</span> or\n    <span class=\"prop-value\">miter-clip</span> then the line join\n    region is the union of <var>bevel</var> and the triangle formed\n    from the three points <var>P</var><sub>1</sub>,\n    <var>P</var><sub>2</sub> and <var>P</var><sub>3</sub>."
+        },
+        {
+          "html": "Let <var>θ</var> be the angle between <var>A</var> and <var>B</var>.\n    If 1 / sin(<var>θ</var> / 2) ≤ ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeMiterlimitProperty\"><code class=\"property\">stroke-miterlimit</code></a>’, then return\n    the line join region."
+        },
+        {
+          "html": "If ‘<a href=\"https://www.w3.org/TR/svg-strokes/#StrokeLinejoinProperty\"><code class=\"property\">stroke-linejoin</code></a>’ is <span class=\"prop-value\">miter-clip</span>,\n    then clip any part of the line join region that extends past the\n    miter limit and return this region."
+        },
+        {
+          "html": "Return <var>bevel</var>."
+        }
+      ]
+    }
+  ]
+}

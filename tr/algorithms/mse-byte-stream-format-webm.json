@@ -1,0 +1,23 @@
+{
+  "spec": {
+    "title": "WebM Byte Stream Format",
+    "url": "https://www.w3.org/TR/mse-byte-stream-format-webm/"
+  },
+  "algorithms": [
+    {
+      "html": "The user agent <em class=\"rfc2119\" title=\"MUST\">MUST</em> run the <a href=\"https://www.w3.org/TR/media-source/#sourcebuffer-append-error\">append error algorithm</a> if any of the following conditions are not met:",
+      "rationale": "block",
+      "steps": [
+        {
+          "html": "The Timecode element <em class=\"rfc2119\" title=\"MUST\">MUST</em> appear before any Block &amp; SimpleBlock elements in a <a href=\"http://www.webmproject.org/docs/container/#cluster\">Cluster</a>."
+        },
+        {
+          "html": "Block &amp; SimpleBlock elements are in time increasing order consistent with the <a href=\"http://www.webmproject.org/docs/container/#webm-guidelines\">WebM spec</a>."
+        },
+        {
+          "html": "If the most recent <a href=\"https://www.w3.org/TR/mse-byte-stream-format-webm/#webm-init-segments\">WebM initialization segment</a> describes multiple tracks, then blocks from all the tracks <em class=\"rfc2119\" title=\"MUST\">MUST</em> be interleaved in time increasing order. At least one block from all audio and video tracks <em class=\"rfc2119\" title=\"MUST\">MUST</em> be present."
+        }
+      ]
+    }
+  ]
+}

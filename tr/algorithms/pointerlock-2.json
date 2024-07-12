@@ -1,0 +1,240 @@
+{
+  "spec": {
+    "title": "Pointer Lock 2.0",
+    "url": "https://www.w3.org/TR/pointerlock-2/"
+  },
+  "algorithms": [
+    {
+      "html": "The process of exiting pointer lock, given an <var data-type=\"Element\">element</var>, is\n          as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "The system mouse cursor must be displayed again and positioned at\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-cursor-position\" class=\"internalDFN\" id=\"ref-for-dfn-cursor-position-1\">cursor position</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>\n          to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a data-link-type=\"idl\" data-lt=\"pointerlockchange\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointerlockchange\" class=\"internalDFN\" id=\"ref-for-dfn-pointerlockchange-2\"><code>pointerlockchange</code></a> at the given\n          <var data-type=\"Element\">element</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+        },
+        {
+          "html": "Exit the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-state\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-state-6\">pointer lock state</a> by setting <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-target\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-target-3\">pointer-lock target</a>, <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-options\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-options-2\">pointer-lock options</a>, and <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-cursor-position\" class=\"internalDFN\" id=\"ref-for-dfn-cursor-position-2\">cursor position</a> to null."
+        }
+      ]
+    },
+    {
+      "name": "lock requests queue",
+      "href": "https://www.w3.org/TR/pointerlock-2/#dfn-lock-requests-queue",
+      "html": "A <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#parallel-queue\">parallel queue</a> named as <dfn id=\"dfn-lock-requests-queue\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">lock requests queue</dfn> is\n            used for queuing all requests. When <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-element-requestpointerlock\" data-idl=\"operation\" data-title=\"requestPointerLock()\" data-dfn-for=\"Element\" data-type=\"Promise\" data-lt=\"requestPointerLock()|requestPointerLock(options)\" data-local-lt=\"Element.requestPointerLock|Element.requestPointerLock()|requestPointerLock\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>requestPointerLock()</code></dfn>\n            is invoked, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "When a <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window\"><code>window</code></a> is in <a data-link-type=\"dfn|abstract-op\" data-type=\"event\" href=\"https://html.spec.whatwg.org/multipage/indices.html#event-focus\">focus</a>, if the\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-root\">shadow-including root</a> is the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\">active document</a> of a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\">browsing context</a> (or has an\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-ancestor\">ancestor</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\">browsing context</a>) that is not in focus:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, to perform the following steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" data-lt=\"pointerlockerror\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointerlockerror\" class=\"internalDFN\" id=\"ref-for-dfn-pointerlockerror-1\"><code>pointerlockerror</code></a> at\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#wrongdocumenterror\"><code>WrongDocumentError</code></a>\"\n                    <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                }
+              ]
+            },
+            {
+              "html": "Return <var data-type=\"Promise\">promise</var>."
+            }
+          ]
+        },
+        {
+          "html": "If the 'relevant global object does not have <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\">transient activation</a> and the <a data-link-type=\"idl\" data-lt=\"Document\" data-type=\"interface\" href=\"https://dom.spec.whatwg.org/#document\"><code>Document</code></a> has not previously released a\n            successful pointer lock with <a data-link-type=\"idl\" data-lt=\"exitPointerLock()\" href=\"https://www.w3.org/TR/pointerlock-2/#dom-document-exitpointerlock\" class=\"internalDFN\" id=\"ref-for-dom-document-exitpointerlock-1\"><code>exitPointerLock</code></a><code>()</code>:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, to perform the following steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" data-lt=\"pointerlockerror\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointerlockerror\" class=\"internalDFN\" id=\"ref-for-dfn-pointerlockerror-2\"><code>pointerlockerror</code></a> at\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">promise</var> with a\n                    \"<a data-link-type=\"idl\" data-lt=\"NotAllowedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                }
+              ]
+            },
+            {
+              "html": "Return <var data-type=\"Promise\">promise</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-sandboxing-flag-set\">active sandboxing flag set</a> has the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#sandboxed-pointer-lock-browsing-context-flag\">sandboxed pointer lock browsing context flag</a> set:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, to perform the following steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" data-lt=\"pointerlockerror\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointerlockerror\" class=\"internalDFN\" id=\"ref-for-dfn-pointerlockerror-3\"><code>pointerlockerror</code></a> at\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">promise</var> with a\n                    \"<a data-link-type=\"idl\" data-lt=\"SecurityError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                }
+              ]
+            },
+            {
+              "html": "Return <var data-type=\"Promise\">promise</var>."
+            }
+          ]
+        },
+        {
+          "html": "If options[\"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerlock-2/#dom-pointerlockoptions-unadjustedmovement\" class=\"internalDFN\" id=\"ref-for-dom-pointerlockoptions-unadjustedmovement-4\"><code>unadjustedMovement</code></a>\"] is true\n            and the platform does not support\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/pointerlock-2/#dom-pointerlockoptions-unadjustedmovement\" class=\"internalDFN\" id=\"ref-for-dom-pointerlockoptions-unadjustedmovement-5\"><code>unadjustedMovement</code></a>:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, to perform the following steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" data-lt=\"pointerlockerror\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointerlockerror\" class=\"internalDFN\" id=\"ref-for-dfn-pointerlockerror-4\"><code>pointerlockerror</code></a> at\n                    <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">promise</var> with a\n                    \"<a data-link-type=\"idl\" data-lt=\"NotSupportedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                }
+              ]
+            },
+            {
+              "html": "Return <var data-type=\"Promise\">promise</var>."
+            }
+          ]
+        },
+        {
+          "html": "Enqueue the following steps to the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-lock-requests-queue\" class=\"internalDFN\" id=\"ref-for-dfn-lock-requests-queue-1\">lock requests queue</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If the user agent's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-target\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-target-4\">pointer-lock target</a> is an element\n                whose <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-root\">shadow-including root</a> is not equal to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-root\">shadow-including root</a>, then:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, to perform the following\n                    steps:",
+                  "rationale": "fire",
+                  "steps": [
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" data-lt=\"pointerlockerror\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointerlockerror\" class=\"internalDFN\" id=\"ref-for-dfn-pointerlockerror-5\"><code>pointerlockerror</code></a> at\n                        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">promise</var> with a\n                        \"<a data-link-type=\"idl\" data-lt=\"InvalidStateError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If the user agent's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-target\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-target-5\">pointer-lock target</a>'s\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-root\">shadow-including root</a> is equal to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-root\">shadow-including root</a> and options are equivalent to the\n                current <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-options\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-options-3\">pointer-lock options</a>, then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-target\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-target-6\">pointer-lock target</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, to perform the following\n                    steps:",
+                  "rationale": "fire",
+                  "steps": [
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" data-lt=\"pointerlockchange\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointerlockchange\" class=\"internalDFN\" id=\"ref-for-dfn-pointerlockchange-3\"><code>pointerlockchange</code></a> at\n                        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> the <var data-type=\"Promise\">promise</var>."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-target\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-target-7\">pointer-lock target</a> is null, or options is not\n                equivalent to the current <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-options\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-options-4\">pointer-lock options</a>, process the\n                lock request and handle response upon fulfillment:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If the lock request failed:",
+                  "rationale": "queue",
+                  "steps": [
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, to perform the following\n                        steps:",
+                      "rationale": "fire",
+                      "steps": [
+                        {
+                          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" data-lt=\"pointerlockerror\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointerlockerror\" class=\"internalDFN\" id=\"ref-for-dfn-pointerlockerror-6\"><code>pointerlockerror</code></a> at\n                            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+                        },
+                        {
+                          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">promise</var> with a\n                            \"<a data-link-type=\"idl\" data-lt=\"NotSupportedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "If the lock request succeed:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Enter <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-state\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-state-7\">pointer lock state</a> by performing the\n                        following:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "Set the user agent's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-target\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-target-8\">pointer-lock target</a> to\n                            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+                        },
+                        {
+                          "html": "Set the user agent's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-cursor-position\" class=\"internalDFN\" id=\"ref-for-dfn-cursor-position-3\">cursor position</a> to the\n                            current system mouse location."
+                        },
+                        {
+                          "html": "Set the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-options\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-options-5\">pointer-lock options</a> to options."
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>, given <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, to perform the following\n                        steps:",
+                      "rationale": "fire",
+                      "steps": [
+                        {
+                          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" data-lt=\"pointerlockchange\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointerlockchange\" class=\"internalDFN\" id=\"ref-for-dfn-pointerlockchange-4\"><code>pointerlockchange</code></a>\n                            at <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+                        },
+                        {
+                          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> the <var data-type=\"Promise\">promise</var>."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var data-type=\"Promise\">promise</var>."
+        }
+      ]
+    },
+    {
+      "name": "Document/exitPointerLock()",
+      "href": "https://www.w3.org/TR/pointerlock-2/#dom-document-exitpointerlock",
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the user agent's pointer-lock target is null, then return."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-target\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-target-9\">pointer-lock target</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-root\">shadow-including root</a>is not\n            equal to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>, return."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-exit-pointer-lock\" class=\"internalDFN\" id=\"ref-for-dfn-exit-pointer-lock-1\">Exit pointer lock</a> with the user agent's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/pointerlock-2/#dfn-pointer-lock-target\" class=\"internalDFN\" id=\"ref-for-dfn-pointer-lock-target-10\">pointer-lock target</a>."
+        }
+      ]
+    }
+  ]
+}

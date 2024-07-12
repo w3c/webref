@@ -1,0 +1,86 @@
+{
+  "spec": {
+    "title": "Scroll-driven Animations",
+    "url": "https://www.w3.org/TR/scroll-animations-1/"
+  },
+  "algorithms": [
+    {
+      "name": "ScrollTimeline/ScrollTimeline(options)",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#dom-scrolltimeline-scrolltimeline",
+      "html": "Creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/scroll-animations-1/#scrolltimeline\" id=\"ref-for-scrolltimeline④\">ScrollTimeline</a></code> object using the following procedure:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>timeline</var> be the new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/scroll-animations-1/#scrolltimeline\" id=\"ref-for-scrolltimeline⑤\">ScrollTimeline</a></code> object.</p>"
+        },
+        {
+          "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/scroll-animations-1/#dom-scrolltimeline-source\" id=\"ref-for-dom-scrolltimeline-source①\">source</a></code> of <var>timeline</var> to:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the source member of options is present and not null,",
+                  "html": "<p>The <code>source</code> member of <var>options</var>.</p>"
+                },
+                {
+                  "case": "Otherwise,",
+                  "html": "<p>The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-document-scrollingelement\" id=\"ref-for-dom-document-scrollingelement\">scrollingElement</a></code> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated</a> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code> that is the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object\">current global object</a>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/scroll-animations-1/#dom-scrolltimeline-axis\" id=\"ref-for-dom-scrolltimeline-axis①\">axis</a></code> property of <var>timeline</var> to the corresponding value from <var>options</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ViewTimeline/ViewTimeline(options)",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#dom-viewtimeline-viewtimeline",
+      "html": "Creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/scroll-animations-1/#viewtimeline\" id=\"ref-for-viewtimeline④\">ViewTimeline</a></code> object using the following procedure:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>timeline</var> be the new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/scroll-animations-1/#viewtimeline\" id=\"ref-for-viewtimeline⑤\">ViewTimeline</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/scroll-animations-1/#dom-viewtimeline-subject\" id=\"ref-for-dom-viewtimeline-subject②\">subject</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/scroll-animations-1/#dom-scrolltimeline-axis\" id=\"ref-for-dom-scrolltimeline-axis③\">axis</a></code> properties of <var>timeline</var> to the corresponding values from <var>options</var>.</p>"
+        },
+        {
+          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/scroll-animations-1/#dom-scrolltimeline-source\" id=\"ref-for-dom-scrolltimeline-source⑤\">source</a></code> of <var>timeline</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/scroll-animations-1/#dom-viewtimeline-subject\" id=\"ref-for-dom-viewtimeline-subject③\">subject</a></code>’s\nnearest ancestor <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container②⑦\">scroll container</a> element.</p>"
+        },
+        {
+          "html": "<p>If a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①\">DOMString</a></code> value is provided as an <var>inset</var>,\nparse it as a <a class=\"production css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/scroll-animations-1/#propdef-view-timeline-inset\" id=\"ref-for-propdef-view-timeline-inset③\">&lt;'view-timeline-inset'&gt;</a> value;\nif a sequence is provided,\nthe first value represents the start inset\nand the second value represents the end inset.\nIf the sequence has only one value,\nit is duplicated.\nIf it has zero values or more than two values,\nor if it contains a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-typed-om-1/#csskeywordvalue\" id=\"ref-for-csskeywordvalue①\">CSSKeywordValue</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-typed-om-1/#dom-csskeywordvalue-value\" id=\"ref-for-dom-csskeywordvalue-value\">value</a></code> is not \"auto\",\nthrow a <span class=\"exceptionname\">TypeError</span>.</p>\n       <p>These insets define the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/scroll-animations-1/#viewtimeline\" id=\"ref-for-viewtimeline⑥\">ViewTimeline</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/scroll-animations-1/#view-progress-visibility-range\" id=\"ref-for-view-progress-visibility-range①⑤\">view progress visibility range</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "AnimationTimeline/getCurrentTime(options)",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#dom-animationtimeline-getcurrenttime",
+      "html": "Returns a representation of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#timeline-current-time\" id=\"ref-for-timeline-current-time④\">current time</a> as follows:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If range is not provided:",
+              "html": "Returns the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-animations-1/#dom-animationtimeline-currenttime\" id=\"ref-for-dom-animationtimeline-currenttime⑤\">currentTime</a></code> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>,\n\t\t\t\t\tbut representing millisecond values\n\t\t\t\t\tas a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-typed-om-1/#cssunitvalue\" id=\"ref-for-cssunitvalue①\">CSSUnitValue</a></code> in <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-values-4/#ms\" id=\"ref-for-ms\">ms</a> units\n\t\t\t\t\trather than as a double."
+            },
+            {
+              "case": "If range is provided and is a valid named timeline range on this:",
+              "html": "Let <var>progress</var> be the current progress through that range,\n\t\t\t\t\texpressed as a percentage value. \n        <p>Create a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#create-a-cssunitvalue-from-a-pair\" id=\"ref-for-create-a-cssunitvalue-from-a-pair\">new unit value</a> from (<var>progress</var>, \"percent\")\n\t\t\t\t\tand return it.</p>\n        <p>If the start and end points of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/scroll-animations-1/#named-timeline-range\" id=\"ref-for-named-timeline-range①⑨\">named timeline range</a> coincide,\n\t\t\t\t\treturn negative infinity for time values earlier or equal to that point,\n\t\t\t\t\tand positive infinity for time values after it.</p>"
+            },
+            {
+              "case": "If range is provided but is not a valid named timeline range on this:",
+              "html": "Returns null."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

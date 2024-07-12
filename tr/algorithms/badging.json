@@ -1,0 +1,84 @@
+{
+  "spec": {
+    "title": "Badging API",
+    "url": "https://www.w3.org/TR/badging/"
+  },
+  "algorithms": [
+    {
+      "name": "set the application badge",
+      "href": "https://www.w3.org/TR/badging/#dfn-set-the-application-badge",
+      "html": "To <dfn id=\"dfn-set-the-application-badge\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">set the application badge</dfn> of platform object\n        <var data-type=\"platform object\">context</var> to an optional <a data-link-type=\"idl\" data-lt=\"unsigned long long\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long-long\"><code>unsigned long long</code></a>\n        <var data-type=\"unsigned long long\">contents</var> value:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>global</var> be <var data-type=\"platform object\">context</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>."
+        },
+        {
+          "html": "If <var>global</var> is a <a data-link-type=\"idl\" data-lt=\"Window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\"><code>Window</code></a> object, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>document</var> be <var>global</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>."
+            },
+            {
+              "html": "If <var>document</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>, return <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\">a promise rejected with</a> a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">In parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\">origin</a> is not\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\">same origin</a> with <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\">relevant settings object</a>'s\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\">top-level origin</a>, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\">DOM manipulation task source</a> given <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n            <var>promise</var> with a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" and terminate this algorithm."
+            },
+            {
+              "html": "If the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> requires <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-express-permission\">express permission</a> to\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/badging/#dfn-setting\" class=\"internalDFN\" id=\"ref-for-dfn-setting-11\">set</a> the application badge, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>permissionState</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-getting-the-current-permission-state\">getting the current permission state</a> with \"<a data-link-type=\"dfn|abstract-op\" data-type=\"permission\" href=\"https://notifications.spec.whatwg.org/#permissiondef-notifications\">notifications</a>\"."
+                },
+                {
+                  "html": "If <var>permissionState</var> is not \"<a data-link-type=\"idl\" data-type=\"enum-value\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-granted\"><code>granted</code></a>\",\n                <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>\n                given <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with a\n                <a data-link-type=\"idl\" data-lt=\"NotAllowedError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a> and terminate this algorithm."
+                }
+              ]
+            },
+            {
+              "html": "Switching on <var data-type=\"unsigned long long\">contents</var>, if it happens to be the case that:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "contents was not passed:",
+                      "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/badging/#dfn-setting\" class=\"internalDFN\" id=\"ref-for-dfn-setting-12\">Set</a> <var>badge</var> to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/badging/#dfn-flag\" class=\"internalDFN\" id=\"ref-for-dfn-flag-3\">\"flag\"</a>."
+                    },
+                    {
+                      "case": "contents is 0:",
+                      "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/badging/#dfn-setting\" class=\"internalDFN\" id=\"ref-for-dfn-setting-13\">Set</a> <var>badge</var> to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/badging/#dfn-nothing\" class=\"internalDFN\" id=\"ref-for-dfn-nothing-4\">\"nothing\"</a>."
+                    },
+                    {
+                      "case": "contents:",
+                      "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/badging/#dfn-setting\" class=\"internalDFN\" id=\"ref-for-dfn-setting-14\">Set</a> <var>badge</var> to <var data-type=\"unsigned long long\">contents</var>."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\">DOM manipulation task source</a>\n            given <var>global</var> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var>promise</var> with <code>undefined</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>promise</var>."
+        }
+      ]
+    }
+  ]
+}

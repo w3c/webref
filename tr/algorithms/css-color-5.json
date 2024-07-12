@@ -1,0 +1,80 @@
+{
+  "spec": {
+    "title": "CSS Color Module Level 5",
+    "url": "https://www.w3.org/TR/css-color-5/"
+  },
+  "algorithms": [
+    {
+      "html": "Percentages are required to be in the range 0% to 100%. Negative percentages are specifically disallowed. The percentages are normalized as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>p1</var> be the first percentage and <var>p2</var> the second one.</p>"
+        },
+        {
+          "html": "<p>If both percentages are omitted, they each default to 50%\n(an equal mix of the two colors).</p>"
+        },
+        {
+          "html": "<p>Otherwise, if <var>p2</var> is omitted, it becomes 100% - <var>p1</var></p>"
+        },
+        {
+          "html": "<p>Otherwise, if <var>p1</var> is omitted, it becomes 100% - <var>p2</var></p>"
+        },
+        {
+          "html": "<p>If the percentages sum to zero, the function is invalid.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if both are provided and add up to greater than 100%,\nthey are scaled accordingly so that they add up to 100%.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if both are provided and add up to less than 100%,\nthe sum is saved as an alpha multiplier.\nThey are then scaled accordingly so that they add up to 100%.</p>"
+        }
+      ]
+    },
+    {
+      "html": "After normalizing both percentages, the result is produced via the following algorithm:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>As described in <a href=\"https://www.w3.org/TR/css-color-4/#interpolation\"><cite>CSS Color 4</cite> §  12. Color Interpolation</a>,\nboth colors are converted to the specified interpolation <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-color-5/#typedef-color-space\" id=\"ref-for-typedef-color-space①\">&lt;color-space&gt;</a>,\ntaking into account any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#analogous-components\" id=\"ref-for-analogous-components\">analogous components</a>.</p>"
+        },
+        {
+          "html": "<p>Colors are then interpolated in the \tspecified color space,\nas described in <a href=\"https://www.w3.org/TR/css-color-4/#interpolation\"><cite>CSS Color 4</cite> §  12. Color Interpolation</a>.\nIf the specified color space is a <span class=\"css\">cylindrical-polar-color</span> space,\nthen the <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-color-5/#typedef-hue-interpolation-method\" id=\"ref-for-typedef-hue-interpolation-method\">&lt;hue-interpolation-method&gt;</a> controls the\ninterpolation of hue, as described in <a href=\"https://www.w3.org/TR/css-color-4/#hue-interpolation\"><cite>CSS Color 4</cite> § 12.4 Hue Interpolation</a>.\nIf no <span class=\"production\" id=\"ref-for-typedef-hue-interpolation-method①\">&lt;hue-interpolation-method&gt;</span> is specified, it is as if <span class=\"css\">shorter</span> had been specified.\nIf the specified color space is a <span class=\"css\">rectangular-orthogonal-color</span> space,\nthen specifying a <span class=\"production\" id=\"ref-for-typedef-hue-interpolation-method②\">&lt;hue-interpolation-method&gt;</span> is an error.</p>"
+        },
+        {
+          "html": "<p>If an alpha multiplier was produced during percentage normalization,\nthe alpha component of the interpolated result is multiplied\nby the alpha multiplier.</p>"
+        }
+      ]
+    },
+    {
+      "name": "fetch an external color profile",
+      "href": "https://www.w3.org/TR/css-color-5/#fetch-an-external-color-profile",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-an-external-color-profile\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch an external color profile</dfn>, given a <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-5/#at-ruledef-profile\" id=\"ref-for-at-ruledef-profile⑥\">@color-profile</a> rule <var>rule</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#fetch-a-style-resource\" id=\"ref-for-fetch-a-style-resource\">fetch a style resource</a> given <var>rule</var>’s URL,\n\t\t\twith stylesheet being <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#concept-css-rule-parent-css-style-sheet\" id=\"ref-for-concept-css-rule-parent-css-style-sheet\">parent CSS style sheet</a>,\n\t\t\tdestination \"color-profile\",\n\t\t\tCORS mode \"cors\",\n\t\t\tand processResponse being the following steps given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> |/res| and null, failure or\n\t\t\ta byte stream <var>byteStream</var>:\n\t\t\t\tIf <var>byteStream</var> is a byte stream,\n\t\t\t\tapply the color profile as parsed from |byteStream.",
+      "rationale": "To <dfn>"
+    },
+    {
+      "html": "As such, Device CMYK colors must be converted to an equivalent color.\n\t\tThis is not trivial, like the conversion from HSL or HWB to RGB;\n\t\tthe precise conversion depends on the precise characteristics of the output device.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the user, author, or user-agent stylesheet\n\t\t\t\thas an <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-5/#at-ruledef-profile\" id=\"ref-for-at-ruledef-profile①⓪\">@color-profile</a> definition for device-cmyk,\n\t\t\t\tand the resource specified by the src descriptor can be retrieved,\n\t\t\t\tand the resource is a valid CMYK ICC profile,\n\t\t\t\tand the user agent can process ICC profiles,\n\t\t\t\tthe computed value of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-5/#funcdef-device-cmyk\" id=\"ref-for-funcdef-device-cmyk⑥\">device-cmyk()</a> function\n\t\t\t\tmust be the Lab value of the CMYK color."
+        },
+        {
+          "html": "Otherwise,\n\t\t\t\tthe computed value of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-5/#funcdef-device-cmyk\" id=\"ref-for-funcdef-device-cmyk⑦\">device-cmyk()</a> function must be\n\t\t\t\tthe sRGB value of the CMYK color,\n\t\t\t\tas converted with the following naive conversion algorithm."
+        }
+      ]
+    },
+    {
+      "name": "naively convert from CMYK to RGBA",
+      "href": "https://www.w3.org/TR/css-color-5/#naively-convert-from-cmyk-to-rgba",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"naively convert from CMYK to RGBA | naively converted to RGBA\" id=\"naively-convert-from-cmyk-to-rgba\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">naively convert from CMYK to RGBA</dfn>:",
+      "rationale": "To <dfn>"
+    },
+    {
+      "name": "naively convert from RGBA to CMYK",
+      "href": "https://www.w3.org/TR/css-color-5/#naively-convert-from-rgba-to-cmyk",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"naively convert from RGBA to CMYK | naively converted to CMYK\" id=\"naively-convert-from-rgba-to-cmyk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">naively convert from RGBA to CMYK</dfn>:",
+      "rationale": "To <dfn>"
+    }
+  ]
+}

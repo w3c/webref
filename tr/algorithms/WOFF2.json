@@ -1,0 +1,29 @@
+{
+  "spec": {
+    "title": "WOFF File Format 2.0",
+    "url": "https://www.w3.org/TR/WOFF2/"
+  },
+  "algorithms": [
+    {
+      "html": "For a simple glyph (when nContour &gt; 0), the process continues as follows:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "Read numberOfContours 255UInt16 values from the nPoints stream. Each of\n      these is the number of points of that contour. Convert this into the\n      endPtsOfContours[] array by computing the cumulative sum, then subtracting\n      one. For example, if the values in the stream are [2, 4], then the\n      endPtsOfContours array is [1, 5]. Also, the sum of all the values in the\n      array is the total number of points in the glyph, nPoints. In the example\n      given, the value of nPoints is 6."
+        },
+        {
+          "html": "Read nPoints UInt8 values from the flags stream. Each corresponds to one\n      point in the reconstructed glyph outline. The interpretation of the flag\n      byte is described in details in <a href=\"https://www.w3.org/TR/WOFF2/#triplet_decoding\">subclause 5.2</a>."
+        },
+        {
+          "html": "For each point (i.e. nPoints times), read a number of point coordinate bytes\n      from the glyph stream. The number of point coordinate bytes is a function of the\n      flag byte read in the previous step: for (flag &lt; 0x7f) in the range 0 to 83\n      inclusive, it is one byte. In the range 84 to 119 inclusive, it is two bytes.\n      In the range 120 to 123 inclusive, it is three bytes, and in the range 124 to 127\n      inclusive, it is four bytes. Decode these bytes according to the procedure\n      specified in the <a href=\"https://www.w3.org/TR/WOFF2/#triplet_decoding\">subclause 5.2</a> to reconstruct\n      delta-x and delta-y values of the glyph point coordinates. Store these delta-x\n      and delta-y values in the reconstructed glyph using the standard TrueType glyph\n      encoding [<cite><a href=\"https://www.w3.org/TR/WOFF2/#ref-OFF\">OFF</a></cite>] subclause 5.3.3."
+        },
+        {
+          "html": "Read one 255UInt16 value from the glyph stream, which is\n      instructionLength, the number of instruction bytes."
+        },
+        {
+          "html": "Read instructionLength bytes from instructionStream, and store these in\n      the reconstituted glyph as instructions."
+        }
+      ]
+    }
+  ]
+}

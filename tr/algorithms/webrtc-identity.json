@@ -1,0 +1,126 @@
+{
+  "spec": {
+    "title": "Identity for WebRTC 1.0",
+    "url": "https://www.w3.org/TR/webrtc-identity/"
+  },
+  "algorithms": [
+    {
+      "html": "An IdP is used to generate an identity assertion as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <code>setIdentityProvider()</code> method has been called,\n          the IdP provided shall be used."
+        },
+        {
+          "html": "If the <code>setIdentityProvider()</code> method has not been\n          called, then the user agent <em class=\"rfc2119\" title=\"MAY\">MAY</em> use an IdP configured into the\n          browser."
+        }
+      ]
+    },
+    {
+      "html": "The identity assertion request process is triggered by a call to\n      <code>createOffer</code>, <code>createAnswer</code>, or\n      <code>getIdentityAssertion</code>. When these calls are invoked and an\n      identity provider has been set, the following steps are executed:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> instantiates an IdP as\n          described in <a href=\"https://www.w3.org/TR/webrtc-identity/#sec.identity-proxy-communications\">Identity\n          Provider Selection</a> and <a href=\"https://www.w3.org/TR/webrtc-identity/#sec.register-idp\">Registering an\n          IdP Proxy</a>. If the IdP cannot be loaded, instantiated, or the IdP\n          proxy is not registered, this process fails.</p>"
+        },
+        {
+          "html": "<p>If the <code>RTCPeerConnection</code> was not constructed with a set\n          of certificates, and one has not yet been generated, wait\n          for it to be generated.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> invokes the <code><a data-link-for=\"RTCIdentityProvider\" href=\"https://www.w3.org/TR/webrtc-identity/#dom-rtcidentityprovider-generateassertion\" class=\"internalDFN\" data-link-type=\"dfn\"><code>generateAssertion</code></a></code> method on the\n          <code><a href=\"https://www.w3.org/TR/webrtc-identity/#dom-rtcidentityprovider\" class=\"internalDFN\" data-link-type=\"dfn\"><code>RTCIdentityProvider</code></a></code> methods registered by the\n          IdP.</p>\n          <p>The <code>RTCPeerConnection</code> generates the\n          <var>contents</var> parameter to this method as described in\n          [<cite><a class=\"bibref\" href=\"https://www.w3.org/TR/webrtc-identity/#bib-RTCWEB-SECURITY-ARCH\">RTCWEB-SECURITY-ARCH</a></cite>]. The value of <var>contents</var> includes\n          the fingerprint of the certificate that was selected or generated\n          during the construction of the <code>RTCPeerConnection</code>. The\n          <var>origin</var> parameter contains the origin of the script that\n          calls the <code>RTCPeerConnection</code> method that triggers this\n          behavior. The <var>usernameHint</var> value is the same value that is\n          provided to <code>setIdentityProvider</code>, if any such value\n          was provided.</p>"
+        },
+        {
+          "html": "<p>The IdP proxy returns a Promise to the\n          <code>RTCPeerConnection</code>. The IdP proxy is expected to generate\n          the identity assertion asynchronously.</p>\n          <p>If the user has been authenticated by the IdP, and the IdP is able\n          to generate an identity assertion, the IdP <a href=\"https://www.w3.org/TR/webrtc-identity/#dfn-resolve\" class=\"internalDFN\" data-link-type=\"dfn\">resolves</a> the promise with\n          an identity assertion in the form of an\n          <code><a href=\"https://www.w3.org/TR/webrtc-identity/#dom-rtcidentityassertionresult\" class=\"internalDFN\" data-link-type=\"dfn\"><code>RTCIdentityAssertionResult</code></a></code>.</p>\n          <p>This step depends entirely on the IdP. The methods by which an IdP\n          authenticates users or generates assertions is not specified, though\n          they could involve interacting with the IdP server or other\n          servers.</p>"
+        },
+        {
+          "html": "<p>If the IdP proxy produces an error or returns a promise that does\n          not <a href=\"https://www.w3.org/TR/webrtc-identity/#dfn-resolve\" class=\"internalDFN\" data-link-type=\"dfn\">resolve</a> to a valid\n          <code><a href=\"https://www.w3.org/TR/webrtc-identity/#dom-rtcidentityassertionresult\" class=\"internalDFN\" data-link-type=\"dfn\"><code>RTCIdentityAssertionResult</code></a></code> (see <a href=\"https://www.w3.org/TR/webrtc-identity/#sec.idp-error-handling\" class=\"sec-ref\"><span class=\"secno\">8.</span> <span class=\"sec-title\">IdP Error Handling</span></a>), then assertion generation fails.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> <em class=\"rfc2119\" title=\"MAY\">MAY</em> store the identity\n          assertion for use with future offers or answers. If a fresh identity\n          assertion is needed for any reason, applications can create a new\n          <code>RTCPeerConnection</code>.</p>"
+        },
+        {
+          "html": "<p>If the identity request was triggered by a\n          <code>createOffer()</code> or <code>createAnswer()</code>, then the\n          assertion is converted to a JSON string, base64-encoded and inserted\n          into an <code>a=identity</code> attribute in the session\n          description.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The identity assertion request process involves the following\n      asynchronous steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> awaits any prior identity\n          validation. Only one identity validation can run at a time for an\n          <code>RTCPeerConnection</code>. This can happen because the\n          resolution of <code>setRemoteDescription</code> is not blocked by\n          identity validation unless there is a <a href=\"https://www.w3.org/TR/webrtc-identity/#dfn-target-peer-identity\" class=\"internalDFN\" data-link-type=\"dfn\">target peer\n          identity</a>.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> loads the identity assertion\n          from the session description and decodes the base64 value, then\n          parses the resulting JSON. The <var>idp</var> parameter of the\n          resulting dictionary contains a <var>domain</var> and an optional\n          <var>protocol</var> value that identifies the IdP, as described in\n          [<cite><a class=\"bibref\" href=\"https://www.w3.org/TR/webrtc-identity/#bib-RTCWEB-SECURITY-ARCH\">RTCWEB-SECURITY-ARCH</a></cite>].</p>"
+        },
+        {
+          "html": "<p>If the identity assertion is malformed, or if <var>protocol</var>\n          includes the character <code>'/'</code> or <code>'\\'</code>,\n          this process fails.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> instantiates the identified IdP\n          as described in <a href=\"https://www.w3.org/TR/webrtc-identity/#sec.identity-proxy-communications\" class=\"sec-ref\"><span class=\"secno\">4.1</span> <span class=\"sec-title\">Identity Provider\n        Selection</span></a> and\n          <a href=\"https://www.w3.org/TR/webrtc-identity/#sec.register-idp\" class=\"sec-ref\"><span class=\"secno\">5.</span> <span class=\"sec-title\">Registering an IdP Proxy</span></a>. If the IdP cannot be loaded,\n          instantiated or the IdP proxy is not registered, this process\n          fails.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> invokes the <code><a data-link-for=\"RTCIdentityProvider\" href=\"https://www.w3.org/TR/webrtc-identity/#dom-rtcidentityprovider-validateassertion\" class=\"internalDFN\" data-link-type=\"dfn\"><code>validateAssertion</code></a></code> method registered\n          by the IdP.</p>\n          <p>The <var>assertion</var> parameter is taken from the decoded\n          identity assertion. The <var>origin</var> parameter contains the\n          origin of the script that calls the <code>RTCPeerConnection</code>\n          method that triggers this behavior.</p>"
+        },
+        {
+          "html": "<p>The IdP proxy returns a promise and performs the validation\n          process asynchronously.</p>\n          <p>The IdP proxy verifies the identity assertion using whatever means\n          necessary. Depending on the authentication protocol this could\n          involve interacting with the IdP server.</p>"
+        },
+        {
+          "html": "<p>If the IdP proxy produces an error or returns a promise that does\n          not <a href=\"https://www.w3.org/TR/webrtc-identity/#dfn-resolve\" class=\"internalDFN\" data-link-type=\"dfn\">resolve</a> to a valid\n          <code><a href=\"https://www.w3.org/TR/webrtc-identity/#dom-rtcidentityvalidationresult\" class=\"internalDFN\" data-link-type=\"dfn\"><code>RTCIdentityValidationResult</code></a></code> (see <a href=\"https://www.w3.org/TR/webrtc-identity/#sec.idp-error-handling\" class=\"sec-ref\"><span class=\"secno\">8.</span> <span class=\"sec-title\">IdP Error Handling</span></a>), then identity validation fails.</p>"
+        },
+        {
+          "html": "<p>Once the assertion is successfully verified, the IdP proxy\n          <a href=\"https://www.w3.org/TR/webrtc-identity/#dfn-resolve\" class=\"internalDFN\" data-link-type=\"dfn\">resolves</a> the promise with an\n          <code><a href=\"https://www.w3.org/TR/webrtc-identity/#dom-rtcidentityvalidationresult\" class=\"internalDFN\" data-link-type=\"dfn\"><code>RTCIdentityValidationResult</code></a></code> containing the\n          validated identity and the original contents that are the payload of\n          the assertion.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> decodes the <code><a data-link-for=\"RTCIdentityValidationResult\" href=\"https://www.w3.org/TR/webrtc-identity/#dom-rtcidentityvalidationresult-contents\" class=\"internalDFN\" data-link-type=\"dfn\"><code>contents</code></a></code> and validates that\n          it contains a fingerprint value for every <code>a=fingerprint</code>\n          attribute in the session description. This ensures that the\n          certificate used by the remote peer for communications is covered by\n          the identity assertion.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> validates that the domain\n          portion of the identity matches the domain of the IdP as described in\n          [<cite><a class=\"bibref\" href=\"https://www.w3.org/TR/webrtc-identity/#bib-RTCWEB-SECURITY-ARCH\">RTCWEB-SECURITY-ARCH</a></cite>]. If this check fails then the identity\n          validation fails.</p>"
+        },
+        {
+          "html": "<p>The <code>RTCPeerConnection</code> resolves the <code><a data-link-for=\"RTCPeerConnection\" href=\"https://www.w3.org/TR/webrtc-identity/#dom-rtcpeerconnection-peeridentity\" class=\"internalDFN\" data-link-type=\"dfn\"><code>peerIdentity</code></a></code> attribute with a new\n          instance of <code>RTCIdentityAssertion</code> that includes the IdP\n          domain and peer identity.</p>"
+        },
+        {
+          "html": "<p>The <a href=\"https://www.w3.org/TR/webrtc-identity/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\">user agent</a> <em class=\"rfc2119\" title=\"MAY\">MAY</em> display identity information to a user\n          in its UI. Any user identity information that is displayed in this\n          fashion <em class=\"rfc2119\" title=\"MUST\">MUST</em> use a mechanism that cannot be spoofed by content.</p>"
+        }
+      ]
+    },
+    {
+      "name": "rtcpeerconnection/setIdentityProvider",
+      "href": "https://www.w3.org/TR/webrtc-identity/#dom-rtcpeerconnection-setidentityprovider",
+      "html": "When the <dfn data-idl=\"\" data-dfn-for=\"rtcpeerconnection\" data-dfn-type=\"dfn\" id=\"dom-rtcpeerconnection-setidentityprovider\" data-title=\"setIdentityProvider\" data-lt=\"setIdentityProvider|setidentityprovider()\"><code>setIdentityProvider</code></dfn> method is\n              invoked, the user agent <em class=\"rfc2119\" title=\"MUST\">MUST</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <code><a href=\"https://www.w3.org/TR/webrtc-identity/#dom-rtcpeerconnection\" class=\"internalDFN\" data-link-type=\"dfn\"><code>RTCPeerConnection</code></a></code> object's\n                  [[IsClosed]] slot is <code>true</code>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-throw\">throw</a> an\n                  <code>InvalidStateError</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>options.protocol</var> includes the the character\n                  <code>'/'</code> or <code>'\\'</code>, throw a\n                  <code>SyntaxError</code>.</p>"
+        },
+        {
+          "html": "<p>Set the current identity provider values to the tuple\n                  (<code>provider</code>, <code>options</code>).</p>"
+        },
+        {
+          "html": "<p>If any identity provider value has changed, discard any\n                  stored identity assertion.</p>"
+        }
+      ]
+    },
+    {
+      "name": "rtcpeerconnection/getIdentityAssertion",
+      "href": "https://www.w3.org/TR/webrtc-identity/#dom-rtcpeerconnection-getidentityassertion",
+      "html": "When <code>getIdentityAssertion</code> is invoked, queue a\n              task to run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <code><a href=\"https://www.w3.org/TR/webrtc-identity/#dom-rtcpeerconnection\" class=\"internalDFN\" data-link-type=\"dfn\"><code>RTCPeerConnection</code></a></code> object's\n                  [[IsClosed]] slot is <code>true</code>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-throw\">throw</a> an\n                  <code>InvalidStateError</code>.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://www.w3.org/TR/webrtc-identity/#sec.identity-proxy-assertion-request\">Request an\n                  identity assertion</a> from the IdP.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://www.w3.org/TR/webrtc-identity/#dfn-resolve\" class=\"internalDFN\" data-link-type=\"dfn\">Resolve</a> the promise with the base64 and JSON encoded\n                  assertion.</p>"
+        }
+      ]
+    }
+  ]
+}

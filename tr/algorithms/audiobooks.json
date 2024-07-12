@@ -1,0 +1,68 @@
+{
+  "spec": {
+    "title": "Audiobooks",
+    "url": "https://www.w3.org/TR/audiobooks/"
+  },
+  "algorithms": [
+    {
+      "html": "The following <a href=\"https://www.w3.org/TR/pub-manifest/#processing-extension\">extension\n\t\t\t\t\t\t\tsteps</a> are added for Audiobook manifests:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "(<a href=\"https://www.w3.org/TR/audiobooks/#audio-duration\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">5.6.2\n\t\t\t\t\t\t\t\t\t</bdi>Duration</a>) Check the duration of the publication as follows:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>resourceDuration</var> hold the total duration of individual\n\t\t\t\t\t\t\t\t\t\tresources.</p>"
+            },
+            {
+              "html": "<a href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a>\n\t\t\t\t\t\t\t\t\t\t<var>resource</var> of <var>data[\"readingOrder\"]</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>if <var>resource[\"duration\"]</var> is not defined, <a href=\"https://www.w3.org/TR/pub-manifest/#dfn-validation-errors\">validation error</a>.</p>"
+                },
+                {
+                  "html": "<p>otherwise, if <var>resource[\"duration\"]</var>, add\n\t\t\t\t\t\t\t\t\t\t\t\t\t<var>resource[\"duration\"]</var> to <var>resourceDuration</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If the values cannot be compared because <var>data[\"duration\"]</var> is not set,\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.w3.org/TR/pub-manifest/#dfn-validation-errors\">validation error</a>.</p>\n\t\t\t\t\t\t\t\t\t<p>Otherwise, if <var>resourceDuration</var> does not specify the same total\n\t\t\t\t\t\t\t\t\t\tduration as <var>data[\"duration\"]</var>, <a href=\"https://www.w3.org/TR/pub-manifest/#dfn-validation-errors\">validation\n\t\t\t\t\t\t\t\t\t\t\terror</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The following <a href=\"https://www.w3.org/TR/pub-manifest/#validate-extension\">extension\n\t\t\t\t\t\t\tsteps</a> are added for Audiobook manifests:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "(<a href=\"https://www.w3.org/TR/audiobooks/#audio-readingorder\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">5.7\n\t\t\t\t\t\t\t\t\t</bdi>Default Reading Order</a>) Check the reading order as follows:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>data[\"readingOrder\"]</var> is not set, <a href=\"https://www.w3.org/TR/pub-manifest/#dfn-fatal-errors\">fatal\n\t\t\t\t\t\t\t\t\t\terror</a>.</p>"
+            },
+            {
+              "html": "<p><a href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a>\n\t\t\t\t\t\t\t\t\t\t<var>resource</var> in <var>data[\"readingOrder\"]</var>, if <var>resource</var>\n\t\t\t\t\t\t\t\t\t\tis not an audio resource, <a href=\"https://www.w3.org/TR/pub-manifest/#dfn-validation-errors\">validation\n\t\t\t\t\t\t\t\t\t\t\terror</a>, <a href=\"https://infra.spec.whatwg.org/#list-remove\">remove</a>\n\t\t\t\t\t\t\t\t\t\t<var>resource</var> from <var>data[\"readingOrder\"]</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>data[\"readingOrder\"]</var> is an empty <a href=\"https://infra.spec.whatwg.org/#list\">list</a>, <a href=\"https://www.w3.org/TR/pub-manifest/#dfn-fatal-errors\">fatal\n\t\t\t\t\t\t\t\t\t\terror</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>(<a href=\"https://www.w3.org/TR/audiobooks/#audio-type\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">5.5 </bdi>Publication\n\t\t\t\t\t\t\t\t\tType</a>) If <var>data[\"type\"]</var> is not set or is an empty <a href=\"https://infra.spec.whatwg.org/#list\">list</a>, <a href=\"https://www.w3.org/TR/pub-manifest/#dfn-validation-errors\">validation\n\t\t\t\t\t\t\t\t\terror</a>, set to <code>«&nbsp;\"Audiobook\"&nbsp;»</code>.</p>\n\t\t\t\t\t\t\t<details>\n\t\t\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t\t\t<p>This step sets the default type of the publication to <code>Audiobook</code> when a\n\t\t\t\t\t\t\t\t\t\t<var>type</var> property has not been specified.</p>\n\t\t\t\t\t\t\t</details>"
+        },
+        {
+          "html": "<p>(<a href=\"https://www.w3.org/TR/audiobooks/#audio-requirements\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">5.2\n\t\t\t\t\t\t\t\t\t</bdi>Requirements</a>) Check that each of the following properties is set. If not,\n\t\t\t\t\t\t\t\tissue a <a href=\"https://www.w3.org/TR/pub-manifest/#dfn-validation-errors\">validation\n\t\t\t\t\t\t\t\t\terror</a> for each one.</p>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"abridged\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"accessMode\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"accessModeSufficient\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"accessibilityFeature\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"accessibilityHazard\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"accessibilitySummary\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"author\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"dateModified\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"datePublished\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"id\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"inLanguage\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"name\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"readBy\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"readingProgression\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"resources\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<var>data[\"url\"]</var>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<details>\n\t\t\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t\t\t<p>This step checks that all the recommended properties have been set. For more\n\t\t\t\t\t\t\t\t\tinformation about these, refer to <a href=\"https://www.w3.org/TR/audiobooks/#audio-requirements\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">5.2 </bdi>Requirements</a>.</p>\n\t\t\t\t\t\t\t</details>"
+        },
+        {
+          "html": "<p>(<a href=\"https://www.w3.org/TR/audiobooks/#audio-requirements\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">5.2\n\t\t\t\t\t\t\t\t\t</bdi>Requirements</a>) If no resource in <var>data[\"readingOrder\"]</var> or\n\t\t\t\t\t\t\t\t\t<var>data[\"resources\"]</var> has a <var>rel</var>\n\t\t\t\t\t\t\t\t<a href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a> that <a href=\"https://infra.spec.whatwg.org/#list-contain\">contains</a> the relation\n\t\t\t\t\t\t\t\t\t<code>cover</code>, <a href=\"https://www.w3.org/TR/pub-manifest/#dfn-validation-errors\">validation\n\t\t\t\t\t\t\t\t\terror</a>.</p>\n\t\t\t\t\t\t\t<details>\n\t\t\t\t\t\t\t\t<summary>Explanation</summary>\n\t\t\t\t\t\t\t\t<p>This step checks the reading order and resource list to verify that a cover has been\n\t\t\t\t\t\t\t\t\tspecified (i.e., an resource has the value <code>cover</code> in its\n\t\t\t\t\t\t\t\t\t\t<code>rel</code> property).</p>\n\t\t\t\t\t\t\t</details>"
+        }
+      ]
+    }
+  ]
+}

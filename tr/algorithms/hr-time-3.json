@@ -1,0 +1,121 @@
+{
+  "spec": {
+    "title": "High Resolution Time",
+    "url": "https://www.w3.org/TR/hr-time-3/"
+  },
+  "algorithms": [
+    {
+      "name": "duration from",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-duration-from",
+      "html": "The <dfn data-export=\"\" id=\"dfn-duration-from\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">duration from</dfn> <var data-type=\"moment\">a</var> to <var data-type=\"moment\">b</var>\n          is the result of the following algorithm:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var data-type=\"moment\">a</var> was created by the same <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-clock\" class=\"internalDFN\" id=\"ref-for-dfn-clock-7\">clock</a> as <var data-type=\"moment\">b</var>."
+        },
+        {
+          "html": "<a href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: Both <var data-type=\"moment\">a</var> and <var data-type=\"moment\">b</var> are <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" class=\"internalDFN\" id=\"ref-for-dfn-moment-10\">coarsened moments</a>."
+        },
+        {
+          "html": "Return the amount of time from <var data-type=\"moment\">a</var> to <var data-type=\"moment\">b</var> as a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" class=\"internalDFN\" id=\"ref-for-dfn-duration-7\">duration</a>. If\n          <var data-type=\"moment\">b</var> came before <var data-type=\"moment\">a</var>, this will be a negative <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" class=\"internalDFN\" id=\"ref-for-dfn-duration-8\">duration</a>."
+        }
+      ]
+    },
+    {
+      "name": "environment settings object/current monotonic time",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-current-monotonic-time",
+      "html": "For measuring time within a single UA execution when an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-index-term-environment-settings-object-3\">environment settings object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-time-origin\" id=\"ref-for-index-term-time-origins-for-environment-settings-object-3\">time origin</a> isn't\n        an appropriate base for comparison, create <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" class=\"internalDFN\" id=\"ref-for-dfn-moment-11\">moments</a> using an\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-index-term-environment-settings-object-4\">environment settings object</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-monotonic-time\" class=\"internalDFN\" id=\"ref-for-dfn-current-monotonic-time-2\">current monotonic time</a>. An <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-index-term-environment-settings-object-5\">environment settings object</a>\n        <var data-type=\"environment settings object\">settingsObject</var>'s <dfn data-export=\"\" data-dfn-for=\"environment settings object\" id=\"dfn-current-monotonic-time\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">current monotonic time</dfn>\n        is the result of the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"unsafe moment on the monotonic clock\">unsafeMonotonicTime</var> be\n        the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-monotonic-clock\" class=\"internalDFN\" id=\"ref-for-dfn-monotonic-clock-3\">monotonic clock</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#monotonic-clock-unsafe-current-time\" class=\"internalDFN\" id=\"ref-for-monotonic-clock-unsafe-current-time-1\">unsafe current time</a>."
+        },
+        {
+          "html": "Return the result of calling <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-coarsen-time\" class=\"internalDFN\" id=\"ref-for-dfn-coarsen-time-2\">coarsen time</a> with\n        <var data-type=\"unsafe moment on the monotonic clock\">unsafeMonotonicTime</var> and <var data-type=\"environment settings object\">settingsObject</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-cross-origin-isolated-capability\" id=\"ref-for-index-term-cross-origin-isolated-capability-for-environment-settings-object-1\">cross-origin isolated capability</a>."
+        }
+      ]
+    },
+    {
+      "name": "environment settings object/current wall time",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-eso-current-wall-time",
+      "html": "An <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-index-term-environment-settings-object-7\">environment settings object</a> <var data-type=\"environment settings\n        object\">settingsObject</var>'s <dfn data-export=\"\" data-dfn-for=\"environment settings object\" id=\"dfn-eso-current-wall-time\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">current\n        wall time</dfn> is the result of the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"unsafe moment on the wall clock\">unsafeWallTime</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-wall-clock\" class=\"internalDFN\" id=\"ref-for-dfn-wall-clock-4\">wall clock</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#wall-clock-unsafe-current-time\" class=\"internalDFN\" id=\"ref-for-wall-clock-unsafe-current-time-3\">unsafe current time</a>."
+        },
+        {
+          "html": "Return the result of calling <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-coarsen-time\" class=\"internalDFN\" id=\"ref-for-dfn-coarsen-time-4\">coarsen time</a> with <var data-type=\"unsafe moment on the wall clock\">unsafeWallTime</var>\n        and <var data-type=\"environment settings\n        object\">settingsObject</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-cross-origin-isolated-capability\" id=\"ref-for-index-term-cross-origin-isolated-capability-for-environment-settings-object-3\">cross-origin isolated capability</a>."
+        }
+      ]
+    },
+    {
+      "name": "estimated monotonic time of the Unix epoch",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-estimated-monotonic-time-of-the-unix-epoch",
+      "html": "Each group of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-index-term-environment-settings-object-8\">environment settings objects</a> that could possibly\n        communicate in any way has an <dfn id=\"dfn-estimated-monotonic-time-of-the-unix-epoch\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">estimated monotonic time of the Unix\n        epoch</dfn>, a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" class=\"internalDFN\" id=\"ref-for-dfn-moment-22\">moment</a> on the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-monotonic-clock\" class=\"internalDFN\" id=\"ref-for-dfn-monotonic-clock-6\">monotonic clock</a>, whose value is\n        initialized by the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"unsafe moment on the wall clock\">wall time</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-wall-clock\" class=\"internalDFN\" id=\"ref-for-dfn-wall-clock-8\">wall clock</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#wall-clock-unsafe-current-time\" class=\"internalDFN\" id=\"ref-for-wall-clock-unsafe-current-time-4\">unsafe current time</a>."
+        },
+        {
+          "html": "Let <var data-type=\"unsafe moment on the monotonic clock\">monotonic time</var> be the\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-monotonic-clock\" class=\"internalDFN\" id=\"ref-for-dfn-monotonic-clock-7\">monotonic clock</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#monotonic-clock-unsafe-current-time\" class=\"internalDFN\" id=\"ref-for-monotonic-clock-unsafe-current-time-2\">unsafe current time</a>."
+        },
+        {
+          "html": "Let <var data-type=\"unsafe moment on the monotonic clock\">epoch time</var> be\n        <code><var data-type=\"unsafe moment on the monotonic clock\">monotonic time</var> - (<var data-type=\"unsafe moment on the wall clock\">wall time</var> - <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unix-epoch\" class=\"internalDFN\" id=\"ref-for-dfn-unix-epoch-3\">Unix epoch</a>)</code>"
+        },
+        {
+          "html": "Initialize the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-estimated-monotonic-time-of-the-unix-epoch\" class=\"internalDFN\" id=\"ref-for-dfn-estimated-monotonic-time-of-the-unix-epoch-2\">estimated monotonic time of the Unix epoch</a> to\n        the result of calling <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-coarsen-time\" class=\"internalDFN\" id=\"ref-for-dfn-coarsen-time-5\">coarsen time</a> with <var data-type=\"unsafe moment on the monotonic clock\">epoch time</var>."
+        }
+      ]
+    },
+    {
+      "name": "get time origin timestamp",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-get-time-origin-timestamp",
+      "html": "To <dfn id=\"dfn-get-time-origin-timestamp\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">get time origin timestamp</dfn>, given a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-index-term-global-object-1\">global object</a>\n        <var data-type=\"global object\">global</var>, run the following steps, which return a\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" class=\"internalDFN\" id=\"ref-for-dfn-duration-14\">duration</a>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\n            Let <var data-type=\"moment on the monotonic clock\">timeOrigin</var> be <var data-type=\"global object\">global</var>'s\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-index-term-relevant-settings-object-3\">relevant settings object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-time-origin\" id=\"ref-for-index-term-time-origins-for-environment-settings-object-5\">time origin</a>.\n          </p>"
+        },
+        {
+          "html": "Return the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration-from\" class=\"internalDFN\" id=\"ref-for-dfn-duration-from-2\">duration from</a> the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-estimated-monotonic-time-of-the-unix-epoch\" class=\"internalDFN\" id=\"ref-for-dfn-estimated-monotonic-time-of-the-unix-epoch-3\">estimated monotonic time of the Unix epoch</a> to <var data-type=\"moment on the monotonic clock\">timeOrigin</var>."
+        }
+      ]
+    },
+    {
+      "name": "coarsen time",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-coarsen-time",
+      "html": "The <dfn data-export=\"\" id=\"dfn-coarsen-time\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">coarsen time</dfn> algorithm, given an <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unsafe-moment\" class=\"internalDFN\" id=\"ref-for-dfn-unsafe-moment-5\">unsafe moment</a> <var data-type=\"unsafe moment\">timestamp</var> on some <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-clock\" class=\"internalDFN\" id=\"ref-for-dfn-clock-8\">clock</a> and an optional\n        boolean <var data-type=\"boolean\">crossOriginIsolatedCapability</var> (default false), runs\n        the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"duration\">time resolution</var> be 100 microseconds, or a higher\n          <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-1\">implementation-defined</a> value."
+        },
+        {
+          "html": "If <var data-type=\"boolean\">crossOriginIsolatedCapability</var> is true, set <var data-type=\"duration\">time resolution</var>\n          to be 5 microseconds, or a higher <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-2\">implementation-defined</a>\n          value."
+        },
+        {
+          "html": "In an <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-3\">implementation-defined</a> manner, coarsen and\n          potentially jitter <var data-type=\"unsafe moment\">timestamp</var> such that its resolution will not\n          exceed <var data-type=\"duration\">time resolution</var>."
+        },
+        {
+          "html": "Return <var data-type=\"unsafe moment\">timestamp</var> as a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" class=\"internalDFN\" id=\"ref-for-dfn-moment-25\">moment</a>."
+        }
+      ]
+    },
+    {
+      "name": "relative high resolution time",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-relative-high-resolution-time",
+      "html": "The <dfn data-export=\"\" id=\"dfn-relative-high-resolution-time\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">relative high resolution time</dfn> given an\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unsafe-moment\" class=\"internalDFN\" id=\"ref-for-dfn-unsafe-moment-6\">unsafe moment</a> from the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-monotonic-clock\" class=\"internalDFN\" id=\"ref-for-dfn-monotonic-clock-9\">monotonic clock</a> <var data-type=\"unsafe moment on\n        the monotonic clock\">time</var> and a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-index-term-global-object-for-realm-1\">global object</a> <var data-type=\"global\n        object\">global</var>, is the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" class=\"internalDFN\" id=\"ref-for-dfn-duration-15\">duration</a> returned from the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"moment on the monotonic clock\">coarse time</var> be the result of\n          calling <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-coarsen-time\" class=\"internalDFN\" id=\"ref-for-dfn-coarsen-time-6\">coarsen time</a> with <var data-type=\"unsafe moment on\n        the monotonic clock\">time</var> and <var data-type=\"global\n        object\">global</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-index-term-relevant-settings-object-4\">relevant settings object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-cross-origin-isolated-capability\" id=\"ref-for-index-term-cross-origin-isolated-capability-for-environment-settings-object-4\">cross-origin isolated capability</a>."
+        },
+        {
+          "html": "Return the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-relative-high-resolution-coarse-time\" class=\"internalDFN\" id=\"ref-for-dfn-relative-high-resolution-coarse-time-1\">relative high resolution coarse time</a> for <var>coarse\n          time</var> and <var data-type=\"global\n        object\">global</var>."
+        }
+      ]
+    }
+  ]
+}
