@@ -103,7 +103,6 @@ interface MLGraphBuilder {
 dictionary MLArgMinMaxOptions {
   sequence<[EnforceRange] unsigned long> axes;
   boolean keepDimensions = false;
-  boolean selectLastIndex = false;
 };
 
 partial interface MLGraphBuilder {
