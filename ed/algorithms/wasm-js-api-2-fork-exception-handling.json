@@ -1759,7 +1759,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>method</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod\" id=\"ref-for-sec-getmethod\">GetMethod</a>(<var>ret</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols\">@@iterator</a></code>).</p>"
+              "html": "<p>Let <var>method</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod\" id=\"ref-for-sec-getmethod\">GetMethod</a>(<var>ret</var>, <code class=\"idl\"><a data-link-type=\"idl\">@@iterator</a></code>).</p>"
             },
             {
               "html": "<p>If <var>method</var> is undefined, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①①\">TypeError</a></code>.</p>"
@@ -2230,42 +2230,13 @@
       ]
     },
     {
-      "name": "Tag/type()",
-      "href": "https://webassembly.github.io/exception-handling/js-api/#dom-tag-type",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Tag\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-tag-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>type()</code></dfn> method steps are:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑤\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③①\">associated store</a>.</p>"
-        },
-        {
-          "html": "<p>Let [<var>parameters</var>] → [] be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/appendix/embedding.html#embed-tag-type\" id=\"ref-for-embed-tag-type\">tag_type</a>(<var>store</var>, <strong>this</strong>.[[Address]]).</p>"
-        },
-        {
-          "html": "<p>Let <var>idlParameters</var> be «».</p>"
-        },
-        {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Tag\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-tag-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>type()</code></dfn> method steps are:",
-          "rationale": "append",
-          "steps": [
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①③\">Append</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-types/js-api/#abstract-opdef-fromvaluetype\" id=\"ref-for-abstract-opdef-fromvaluetype\">FromValueType</a>(<var>type</var>) to <var>idlParameters</var>.</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>Return «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/exception-handling/js-api/#dom-tagtype-parameters\" id=\"ref-for-dom-tagtype-parameters\">parameters</a></code>\" → <var>idlParameters</var> ]».</p>"
-        }
-      ]
-    },
-    {
       "name": "initialize an Exception object",
       "href": "https://webassembly.github.io/exception-handling/js-api/#initialize-an-exception-object",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-an-exception-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize an Exception object</dfn> <var>exn</var> from an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/exec/runtime.html#syntax-exnaddr\" id=\"ref-for-syntax-exnaddr①\">Exception address</a> <var>exnAddress</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑥\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#exception-object-cache\" id=\"ref-for-exception-object-cache\">Exception object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑤\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#exception-object-cache\" id=\"ref-for-exception-object-cache\">Exception object cache</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>map</var>[<var>exnAddress</var>] doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exist</a>.</p>"
@@ -2277,7 +2248,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">Set</a> <var>map</var>[<var>exnAddress</var>] to <var>exn</var>.</p>"
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑦\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③②\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑥\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③①\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let (<var>tagaddr</var>, <var>payload</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/appendix/embedding.html#embed-exn-read\" id=\"ref-for-embed-exn-read①\">exn_read</a>(<var>store</var>, <var>exnAddress</var>).</p>"
@@ -2300,7 +2271,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑧\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#exception-object-cache\" id=\"ref-for-exception-object-cache①\">Exception object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑦\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#exception-object-cache\" id=\"ref-for-exception-object-cache①\">Exception object cache</a>.</p>"
         },
         {
           "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-exception-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an Exception object</dfn> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/exec/runtime.html#syntax-exnaddr\" id=\"ref-for-syntax-exnaddr②\">exception address</a> <var>exnAddress</var>, perform the following steps:",
@@ -2341,10 +2312,10 @@
           ]
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑨\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③③\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑧\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③②\">associated store</a>.</p>"
         },
         {
-          "html": "<p>Let [<var>types</var>] → [] be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/appendix/embedding.html#embed-tag-type\" id=\"ref-for-embed-tag-type①\">tag_type</a>(<var>store</var>, <var>exceptionTag</var>.[[Address]]).</p>"
+          "html": "<p>Let [<var>types</var>] → [] be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/appendix/embedding.html#embed-tag-type\" id=\"ref-for-embed-tag-type\">tag_type</a>(<var>store</var>, <var>exceptionTag</var>.[[Address]]).</p>"
         },
         {
           "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Exception\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Exception(exceptionTag, payload, options)|constructor(exceptionTag, payload, options)|Exception(exceptionTag, payload)|constructor(exceptionTag, payload)\" id=\"dom-exception-exception\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Exception(<var>exceptionTag</var>, <var>payload</var>, <var>options</var>)</code></dfn> constructor steps are:",
@@ -2372,7 +2343,7 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①④\">Append</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②①\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①①\">ToWebAssemblyValue</a>(<var>value</var>, <var>resultType</var>) to <var>wasmPayload</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①③\">Append</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②①\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①①\">ToWebAssemblyValue</a>(<var>value</var>, <var>resultType</var>) to <var>wasmPayload</var>.</p>"
             }
           ]
         },
@@ -2380,7 +2351,7 @@
           "html": "<p>Let (<var>store</var>, <var>exceptionAddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/appendix/embedding.html#embed-exn-alloc\" id=\"ref-for-embed-exn-alloc①\">exn_alloc</a>(<var>store</var>, <var>exceptionTag</var>.[[Address]], <var>wasmPayload</var>)</p>"
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⓪\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③④\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑨\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③③\">associated store</a> to <var>store</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#initialize-an-exception-object\" id=\"ref-for-initialize-an-exception-object①\">Initialize</a> <strong>this</strong> from <var>exceptionAddr</var>.</p>"
@@ -2403,7 +2374,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④①\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③⑤\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⓪\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③④\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let (<var>tagaddr</var>, <var>payload</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/appendix/embedding.html#embed-exn-read\" id=\"ref-for-embed-exn-read②\">exn_read</a>(<var>store</var>, <strong>this</strong>.[[Address]]).</p>"
@@ -2421,7 +2392,7 @@
           ]
         },
         {
-          "html": "<p>Let [<var>types</var>] → [] be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/appendix/embedding.html#embed-tag-type\" id=\"ref-for-embed-tag-type②\">tag_type</a>(<var>store</var>, <var>tagaddr</var>).</p>"
+          "html": "<p>Let [<var>types</var>] → [] be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/appendix/embedding.html#embed-tag-type\" id=\"ref-for-embed-tag-type①\">tag_type</a>(<var>store</var>, <var>tagaddr</var>).</p>"
         },
         {
           "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Exception\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-exception-getarg\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getArg(<var>index</var>)</code></dfn> method steps are:",
@@ -2479,18 +2450,18 @@
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>return the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④③\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag①\">JavaScript exception tag</a></p>"
+              "html": "<p>return the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④②\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag①\">JavaScript exception tag</a></p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④④\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③⑦\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④③\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③⑥\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let (<var>store</var>, <var>tagAddress</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/appendix/embedding.html#embed-tag-alloc\" id=\"ref-for-embed-tag-alloc①\">tag_alloc</a>(<var>store</var>, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype②②\">externref</a> » → « »).</p>"
         },
         {
-          "html": "<p>Set the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③⑧\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#associated-store\" id=\"ref-for-associated-store③⑦\">associated store</a> to <var>store</var>.</p>"
         },
         {
           "html": "<p>Set the current agent’s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/exception-handling/js-api/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag②\">JavaScript exception tag</a> to <var>tagAddress</var>.</p>"
@@ -2509,7 +2480,7 @@
           "html": "<p>Let <var>namespaceObject</var> be the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object①\">namespace object</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>error</var> of « \"CompileError\", \"LinkError\", \"RuntimeError\" »,",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>error</var> of « \"CompileError\", \"LinkError\", \"RuntimeError\" »,",
           "rationale": "let",
           "steps": [
             {
