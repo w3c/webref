@@ -24,6 +24,64 @@
       "definedIn": "pre"
     },
     {
+      "id": "enumdef-sharedstoragedataorigin",
+      "href": "https://wicg.github.io/shared-storage/#enumdef-sharedstoragedataorigin",
+      "linkingText": [
+        "SharedStorageDataOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstoragedataorigin-context-origin",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragedataorigin-context-origin",
+      "linkingText": [
+        "\"context-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SharedStorageDataOrigin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstoragedataorigin-script-origin",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragedataorigin-script-origin",
+      "linkingText": [
+        "\"script-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SharedStorageDataOrigin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "sharedstorageworklet",
       "href": "https://wicg.github.io/shared-storage/#sharedstorageworklet",
       "linkingText": [
@@ -167,10 +225,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "sharedstorageworklet-cross-origin-worklet-allowed",
-      "href": "https://wicg.github.io/shared-storage/#sharedstorageworklet-cross-origin-worklet-allowed",
+      "id": "sharedstorageworklet-data-origin",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworklet-data-origin",
       "linkingText": [
-        "cross-origin worklet allowed"
+        "data origin"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -187,10 +245,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "sharedstorageworklet-is-cross-origin-worklet",
-      "href": "https://wicg.github.io/shared-storage/#sharedstorageworklet-is-cross-origin-worklet",
+      "id": "sharedstorageworklet-has-cross-origin-data-origin",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworklet-has-cross-origin-data-origin",
       "linkingText": [
-        "is cross-origin worklet"
+        "has cross-origin data origin"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -339,6 +397,27 @@
         "number": "2.2.4"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "sharedstorage-data-partition-origin",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorage-data-partition-origin",
+      "linkingText": [
+        "data partition origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SharedStorage"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shared-storage-cross-origin-worklet-allowed",
+        "href": "https://wicg.github.io/shared-storage/#shared-storage-cross-origin-worklet-allowed",
+        "title": "The `Shared-Storage-Cross-Origin-Worklet-Allowed` HTTP response header",
+        "number": "2.2.4"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "callbackdef-runfunctionforsharedstorageselecturloperation",
@@ -2173,6 +2252,44 @@
       "type": "dict-member",
       "for": [
         "SharedStorageRunOperationMethodOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-sharedstorageworkletoptions",
+      "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstorageworkletoptions",
+      "linkingText": [
+        "SharedStorageWorkletOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageworkletoptions-dataorigin",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletoptions-dataorigin",
+      "linkingText": [
+        "dataOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedStorageWorkletOptions"
       ],
       "access": "public",
       "informative": false,
