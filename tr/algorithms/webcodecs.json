@@ -3130,7 +3130,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe④⑥\">VideoFrame</a></code>, constructed as follows:",
+          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe④⑧\">VideoFrame</a></code>, constructed as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -3411,7 +3411,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>clone</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe④⑦\">VideoFrame</a></code> initialized as follows:",
+          "html": "Let <var>clone</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe④⑨\">VideoFrame</a></code> initialized as follows:",
           "rationale": "let",
           "steps": [
             {
@@ -3738,7 +3738,7 @@
           "html": "<p>This algorithm <em class=\"rfc2119\">MUST</em> be called only if <var>format</var> is equal to one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-rgba\" id=\"ref-for-dom-videopixelformat-rgba②\">RGBA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-rgbx\" id=\"ref-for-dom-videopixelformat-rgbx②\">RGBX</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-bgra\" id=\"ref-for-dom-videopixelformat-bgra②\">BGRA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videopixelformat-bgrx\" id=\"ref-for-dom-videopixelformat-bgrx②\">BGRX</a></code>.</p>"
         },
         {
-          "html": "Let <var>convertedFrame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe④⑧\">VideoFrame</a></code>, constructed as follows:",
+          "html": "Let <var>convertedFrame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⓪\">VideoFrame</a></code>, constructed as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -3800,7 +3800,7 @@
           "html": "<p>If <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"ref-for-detached②⑧\">[[Detached]]</a></code> is <code>true</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror①③\">DataCloneError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④①\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>For all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤①\">VideoFrame</a></code> internal slots in <var>value</var>, assign the value of\neach internal slot to a field in <var>dataHolder</var> with the same name as the\ninternal slot.</p>"
+          "html": "<p>For all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤③\">VideoFrame</a></code> internal slots in <var>value</var>, assign the value of\neach internal slot to a field in <var>dataHolder</var> with the same name as the\ninternal slot.</p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#close-videoframe\" id=\"ref-for-close-videoframe①\">Close VideoFrame</a> algorithm with <var>value</var>.</p>"
@@ -3812,7 +3812,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>dataHolder</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤③\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>dataHolder</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑤\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
@@ -3836,7 +3836,7 @@
           "html": "<p>Assign <var>newReference</var> to <var>serialized</var>.[[resource reference]].</p>"
         },
         {
-          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑤\">VideoFrame</a></code> internal slots (excluding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①①\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
+          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑦\">VideoFrame</a></code> internal slots (excluding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①①\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
         }
       ]
     },
@@ -3845,7 +3845,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑦\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑨\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
@@ -4770,7 +4770,7 @@
           "html": "<p>If <var>data</var> is of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream③\">ReadableStream</a></code> and the ReadableStream is <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#is-readable-stream-disturbed\" id=\"ref-for-is-readable-stream-disturbed\">disturbed</a> or <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-locked\" id=\"ref-for-readablestream-locked\">locked</a>, return <code>false</code>.</p>"
         },
         {
-          "html": "If <var>data</var> is of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource①⑦\">BufferSource</a></code>:",
+          "html": "If <var>data</var> is of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource①⑥\">BufferSource</a></code>:",
           "rationale": "if",
           "steps": [
             {
