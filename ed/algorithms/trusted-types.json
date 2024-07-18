@@ -85,19 +85,7 @@
           "html": "<p>Set <var>policy</var>’s <code>name</code> property value to <var>policyName</var>.</p>"
         },
         {
-          "html": "<p>Let <var>policyOptions</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dictdef-trustedtypepolicyoptions\" id=\"ref-for-dictdef-trustedtypepolicyoptions⑤\">TrustedTypePolicyOptions</a></code> object.</p>"
-        },
-        {
-          "html": "<p>Set <var>policyOptions</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicy-createhtml\" id=\"ref-for-dom-trustedtypepolicy-createhtml②\">createHTML</a></code> property to <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyoptions-createhtml\" id=\"ref-for-dom-trustedtypepolicyoptions-createhtml\">createHTML</a></code> property value.</p>"
-        },
-        {
-          "html": "<p>Set <var>policyOptions</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicy-createscript\" id=\"ref-for-dom-trustedtypepolicy-createscript②\">createScript</a></code> property to <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyoptions-createscript\" id=\"ref-for-dom-trustedtypepolicyoptions-createscript\">createScript</a></code> property value.</p>"
-        },
-        {
-          "html": "<p>Set <var>policyOptions</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicy-createscripturl\" id=\"ref-for-dom-trustedtypepolicy-createscripturl②\">createScriptURL</a></code> property to <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyoptions-createscripturl\" id=\"ref-for-dom-trustedtypepolicyoptions-createscripturl\">createScriptURL</a></code> property value.</p>"
-        },
-        {
-          "html": "<p>Set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedtypepolicy-options\" id=\"ref-for-trustedtypepolicy-options\">options</a> value to <em>policyOptions</em>.</p>"
+          "html": "<p>Set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedtypepolicy-options\" id=\"ref-for-trustedtypepolicy-options\">options</a> value to «[\n  \"createHTML\" -&gt; <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyoptions-createhtml\" id=\"ref-for-dom-trustedtypepolicyoptions-createhtml\">createHTML</a></code>\",\n  \"createScript\" -&gt; <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyoptions-createscript\" id=\"ref-for-dom-trustedtypepolicyoptions-createscript\">createScript</a></code>\",\n  \"createScriptURL\" -&gt; <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-trustedtypepolicyoptions-createscripturl\" id=\"ref-for-dom-trustedtypepolicyoptions-createscripturl\">createScriptURL</a></code>\"\n]».</p>"
         },
         {
           "html": "<p>If the <var>policyName</var> is <code>default</code>, set the <var>factory</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedtypepolicyfactory-default-policy\" id=\"ref-for-trustedtypepolicyfactory-default-policy②\">default policy</a> value to <var>policy</var>.</p>"
@@ -139,7 +127,7 @@
           "html": "<p>Let <var>functionName</var> be a function name for the given <var>trustedTypeName</var>,\nbased on the following table:</p>\n     <table>\n      <tbody>\n       <tr>\n        <th>Function name\n        </th><th>Trusted Type name \n       </th></tr><tr>\n        <td>\"createHTML\"\n        </td><td>\"TrustedHTML\"\n       </td></tr><tr>\n        <td>\"createScript\"\n        </td><td>\"TrustedScript\"\n       </td></tr><tr>\n        <td>\"createScriptURL\"\n        </td><td>\"TrustedScriptURL\"\n     </td></tr></tbody></table>"
         },
         {
-          "html": "<p>Let <var>function</var> be the value of the property in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedtypepolicy-options\" id=\"ref-for-trustedtypepolicy-options①\">options</a> named <var>functionName</var>.</p>"
+          "html": "<p>Let <var>function</var> be <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedtypepolicy-options\" id=\"ref-for-trustedtypepolicy-options①\">options</a>[<var>functionName</var>].</p>"
         },
         {
           "html": "If <var>function</var> is <code>null</code>, then:",
