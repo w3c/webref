@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-07-18T18:45:08.874Z",
+  "date": "2024-07-19T01:31:11.956Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -655,7 +655,7 @@
   },
   "stats": {
     "crawled": 624,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-16.1.1",
   "results": [
@@ -2044,7 +2044,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-extensions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:20 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -2943,7 +2943,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:20 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
       },
       "generator": "bikeshed",
       "date": "27 February 2024",
@@ -3659,7 +3659,7 @@
       ],
       "crawled": "https://immersive-web.github.io/model-element/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 06:08:42 GMT"
+        "lastModified": "Thu, 18 Jul 2024 06:08:43 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -10138,7 +10138,8 @@
       "idl": "idl/webidl.idl",
       "dfns": "dfns/webidl.json",
       "headings": "headings/webidl.json",
-      "ids": "ids/webidl.json"
+      "ids": "ids/webidl.json",
+      "error": "Error: Loading https://webidl.spec.whatwg.org/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:349:22)\n    at async ThrottledQueue.runThrottled (/home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 179)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:370:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12502:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:480:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:6635:28)\n        at node:internal/deps/undici/undici:6587:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:6619:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://websockets.spec.whatwg.org/",
@@ -14669,9 +14670,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 21:31:09 GMT"
+        "lastModified": "Thu, 18 Jul 2024 23:32:00 GMT"
       },
-      "date": "12 July 2024",
+      "date": "18 July 2024",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -14714,9 +14715,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc4120",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 13 Jul 2024 06:54:09 GMT"
+        "lastModified": "Thu, 18 Jul 2024 22:54:59 GMT"
       },
-      "date": "13 July 2024",
+      "date": "18 July 2024",
       "links": "links/rfc4120.json",
       "ids": "ids/rfc4120.json"
     },
@@ -14905,9 +14906,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 23:04:43 GMT"
+        "lastModified": "Thu, 18 Jul 2024 22:44:33 GMT"
       },
-      "date": "12 July 2024",
+      "date": "18 July 2024",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -14950,9 +14951,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 23:02:07 GMT"
+        "lastModified": "Thu, 18 Jul 2024 22:49:32 GMT"
       },
-      "date": "12 July 2024",
+      "date": "18 July 2024",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -14995,9 +14996,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 13 Jul 2024 02:55:44 GMT"
+        "lastModified": "Fri, 19 Jul 2024 00:12:22 GMT"
       },
-      "date": "13 July 2024",
+      "date": "19 July 2024",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -15040,9 +15041,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 10 Jul 2024 23:11:34 GMT"
+        "lastModified": "Fri, 19 Jul 2024 01:22:08 GMT"
       },
-      "date": "10 July 2024",
+      "date": "19 July 2024",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -15085,9 +15086,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 13 Jul 2024 04:21:17 GMT"
+        "lastModified": "Thu, 18 Jul 2024 23:09:20 GMT"
       },
-      "date": "13 July 2024",
+      "date": "18 July 2024",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -15130,9 +15131,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 21:08:36 GMT"
+        "lastModified": "Thu, 18 Jul 2024 22:44:17 GMT"
       },
-      "date": "12 July 2024",
+      "date": "18 July 2024",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -15622,9 +15623,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8878",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 16 Jul 2024 06:35:15 GMT"
+        "lastModified": "Fri, 19 Jul 2024 01:20:24 GMT"
       },
-      "date": "16 July 2024",
+      "date": "19 July 2024",
       "links": "links/rfc8878.json",
       "refs": "refs/rfc8878.json",
       "headings": "headings/rfc8878.json",
@@ -15669,9 +15670,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 13 Jul 2024 02:10:06 GMT"
+        "lastModified": "Thu, 18 Jul 2024 23:08:15 GMT"
       },
-      "date": "13 July 2024",
+      "date": "18 July 2024",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -15971,9 +15972,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 10 Jul 2024 23:10:11 GMT"
+        "lastModified": "Thu, 18 Jul 2024 21:59:01 GMT"
       },
-      "date": "10 July 2024",
+      "date": "18 July 2024",
       "algorithms": "algorithms/rfc9163.json",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
@@ -17627,7 +17628,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2022/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "28 August 2023",
@@ -18223,7 +18224,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-box-4/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "11 June 2024",
@@ -18492,7 +18493,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-4/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "28 August 2023",
@@ -18762,7 +18763,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-4/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "22 June 2024",
@@ -19314,7 +19315,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-contain-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "20 June 2024",
@@ -19860,7 +19861,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-fonts-5/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "11 July 2024",
@@ -20334,7 +20335,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-inline-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:20 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -21060,7 +21061,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-overflow-4/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "14 June 2024",
@@ -22461,7 +22462,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-style-attr/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:20 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
       },
       "date": "10 April 2015",
       "links": "links/css-style-attr.json",
@@ -23746,7 +23747,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-viewport/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "12 July 2024",
@@ -23949,7 +23950,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-writing-modes-4/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "28 August 2023",
@@ -34872,7 +34873,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 06:00:22 GMT"
+        "lastModified": "Thu, 18 Jul 2024 21:04:14 GMT"
       },
       "generator": "bikeshed",
       "date": "18 July 2024",
@@ -36153,7 +36154,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 06:00:22 GMT"
+        "lastModified": "Thu, 18 Jul 2024 21:04:14 GMT"
       },
       "generator": "bikeshed",
       "date": "18 July 2024",
