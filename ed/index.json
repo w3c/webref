@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-07-19T01:31:11.956Z",
+  "date": "2024-07-19T06:40:33.235Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -655,7 +655,7 @@
   },
   "stats": {
     "crawled": 624,
-    "errors": 3
+    "errors": 2
   },
   "crawler": "reffy-16.1.1",
   "results": [
@@ -1700,7 +1700,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-6/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "25 February 2024",
@@ -1989,7 +1989,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-env-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "30 August 2021",
@@ -3550,9 +3550,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 05:49:17 GMT"
+        "lastModified": "Fri, 19 Jul 2024 02:34:19 GMT"
       },
-      "date": "18 July 2024",
+      "date": "19 July 2024",
       "algorithms": "algorithms/html.json",
       "links": "links/html.json",
       "refs": "refs/html.json",
@@ -10127,19 +10127,18 @@
       ],
       "crawled": "https://webidl.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 10 Jul 2024 07:00:13 GMT"
+        "lastModified": "Fri, 19 Jul 2024 02:35:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "10 July 2024",
-      "revision": "3fb6ab4dbc6a42517c84acf0909364ca5310ea59",
+      "date": "19 July 2024",
+      "revision": "d6927d59da4e1d2f9499dae1575c710ae50c3f18",
       "algorithms": "algorithms/webidl.json",
       "links": "links/webidl.json",
       "refs": "refs/webidl.json",
       "idl": "idl/webidl.idl",
       "dfns": "dfns/webidl.json",
       "headings": "headings/webidl.json",
-      "ids": "ids/webidl.json",
-      "error": "Error: Loading https://webidl.spec.whatwg.org/ triggered network error\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:349:22)\n    at async ThrottledQueue.runThrottled (/home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 179)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:370:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:12502:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:480:24)\n      at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22) {\n    [cause]: ConnectTimeoutError: Connect Timeout Error\n        at onConnectTimeout (node:internal/deps/undici/undici:6635:28)\n        at node:internal/deps/undici/undici:6587:50\n        at Immediate._onImmediate (node:internal/deps/undici/undici:6619:13)\n        at process.processImmediate (node:internal/timers:478:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "ids": "ids/webidl.json"
     },
     {
       "url": "https://websockets.spec.whatwg.org/",
@@ -17754,7 +17753,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-align-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "21 June 2024",
@@ -19792,7 +19791,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-fonts-4/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "18 July 2024",
@@ -19996,7 +19995,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-grid-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:20 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
       },
       "generator": "bikeshed",
       "date": "3 November 2023",
@@ -20065,7 +20064,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-grid-2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "3 November 2023",
@@ -20127,7 +20126,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-highlight-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "16 July 2024",
@@ -20799,7 +20798,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-namespaces-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -21392,7 +21391,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-position-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "29 May 2024",
@@ -22124,7 +22123,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "20 March 2024",
@@ -22262,7 +22261,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-sizing-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "29 February 2024",
@@ -23073,7 +23072,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transitions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "10 December 2023",
@@ -23345,7 +23344,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ui-4/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 18:07:21 GMT"
+        "lastModified": "Thu, 18 Jul 2024 18:07:22 GMT"
       },
       "generator": "bikeshed",
       "date": "17 June 2024",
@@ -34873,7 +34872,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jul 2024 21:04:14 GMT"
+        "lastModified": "Thu, 18 Jul 2024 21:04:15 GMT"
       },
       "generator": "bikeshed",
       "date": "18 July 2024",
