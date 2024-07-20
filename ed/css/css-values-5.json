@@ -262,7 +262,7 @@
       "name": "<mix()>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-mix",
       "type": "type",
-      "value": "mix( <progress> ';' <whole-value> ';' <whole-value> ) | mix( <progress> && of <'animation-name'> )"
+      "value": "mix( <progress> , <whole-value> , <whole-value> ) | mix( <progress> && of <'animation-name'> )"
     },
     {
       "name": "first-valid()",
@@ -274,7 +274,7 @@
       "name": "<first-valid()>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-first-valid",
       "type": "type",
-      "value": "first-valid( <declaration-value> [ ';' <declaration-value> ]* )"
+      "value": "first-valid( <declaration-value># )"
     },
     {
       "name": "toggle()",
@@ -286,7 +286,7 @@
       "name": "<toggle()>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-toggle",
       "type": "type",
-      "value": "toggle( <whole-value> [ ';' <whole-value> ]+ )"
+      "value": "toggle( <whole-value># )"
     },
     {
       "name": "attr()",
@@ -410,7 +410,7 @@
       "prose": "The random-item() function resolves to a random item from among its list of items.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-random-item",
       "type": "function",
-      "value": "random-item( <random-caching-options> ';' <declaration-value>? [ ';' <declaration-value>? ]* )"
+      "value": "random-item( <random-caching-options> , [ <declaration-value>? ]# )"
     },
     {
       "name": "sibling-count()",

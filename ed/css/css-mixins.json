@@ -65,20 +65,20 @@
       "type": "type"
     },
     {
-      "name": "<type-name>",
-      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-type-name",
+      "name": "<syntax-type>",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-type",
       "type": "type",
       "value": "angle | color | custom-ident | image | integer | length | length-percentage | number | percentage | resolution | string | time | url | transform-function"
     },
     {
-      "name": "<combinator>",
-      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-combinator",
+      "name": "<syntax-combinator>",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-combinator",
       "type": "type",
       "value": "'|'"
     },
     {
-      "name": "<multiplier>",
-      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-multiplier",
+      "name": "<syntax-multiplier>",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-multiplier",
       "type": "type",
       "value": "[ '#' | '+' ]"
     },
@@ -86,19 +86,19 @@
       "name": "<syntax-component-name>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-component-name",
       "type": "type",
-      "value": "'<' <type-name> '>' | <custom-ident>"
+      "value": "'<' <syntax-type> '>' | <custom-ident>"
     },
     {
       "name": "<syntax-component>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-component",
       "type": "type",
-      "value": "<syntax-component-name> <multiplier>? | '<' transform-list '>'"
+      "value": "<syntax-component-name> <syntax-multiplier>? | '<' transform-list '>'"
     },
     {
       "name": "<syntax>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax",
       "type": "type",
-      "value": "'*' | <syntax-component> [ <combinator> <syntax-component> ]+"
+      "value": "'*' | <syntax-component> [ <syntax-combinator> <syntax-component> ]+"
     }
   ]
 }

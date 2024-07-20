@@ -202,31 +202,6 @@
       ]
     },
     {
-      "name": "BufferSource/detachable",
-      "href": "https://webmachinelearning.github.io/webnn/#buffersource-detachable",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>jsArrayBuffer</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-idl-to-javascript-value\" id=\"ref-for-dfn-convert-idl-to-javascript-value\">converting</a> <var>bufferSource</var> to a JavaScript value.</p>"
-        },
-        {
-          "html": "<p>If <var>jsArrayBuffer</var> has a [[ViewedArrayBuffer]] internal slot, then set <var>jsArrayBuffer</var> to <var>jsArrayBuffer</var>.[[ViewedArrayBuffer]].</p>"
-        },
-        {
-          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-issharedarraybuffer\" id=\"ref-for-sec-issharedarraybuffer\">IsSharedArrayBuffer</a>(<var>jsArrayBuffer</var>) is true, then return false.</p>"
-        },
-        {
-          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-isdetachedbuffer\" id=\"ref-for-sec-isdetachedbuffer\">IsDetachedBuffer</a>(<var>jsArrayBuffer</var>) is true, return false.</p>"
-        },
-        {
-          "html": "<p>If <var>jsArrayBuffer</var>.[[ArrayBufferDetachKey]] is not undefined, return false.</p>"
-        },
-        {
-          "html": "<p>Return true.</p>"
-        }
-      ]
-    },
-    {
       "name": "MLNamedArrayBufferViews/transfer",
       "href": "https://webmachinelearning.github.io/webnn/#mlnamedarraybufferviews-transfer",
       "rationale": ".algorithm",
@@ -236,7 +211,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>view</var> is not <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#buffersource-detachable\" id=\"ref-for-buffersource-detachable\">detachable</a>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+              "html": "<p>If <var>view</var> is not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-transferable\" id=\"ref-for-buffersource-transferable\">transferable</a>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
             }
           ]
         },
