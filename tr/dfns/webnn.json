@@ -884,27 +884,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "buffersource-detachable",
-      "href": "https://www.w3.org/TR/webnn/#buffersource-detachable",
-      "linkingText": [
-        "detachable"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "BufferSource"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "mlnamedarraybufferviews-transfer-alg",
-        "href": "https://www.w3.org/TR/webnn/#mlnamedarraybufferviews-transfer-alg",
-        "title": "MLNamedArrayBufferViews transfer algorithm",
-        "number": "7.3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "mlnamedarraybufferviews-transfer",
       "href": "https://www.w3.org/TR/webnn/#mlnamedarraybufferviews-transfer",
       "linkingText": [
@@ -2306,27 +2285,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-mlargminmaxoptions-axes",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlargminmaxoptions-axes",
-      "linkingText": [
-        "axes"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLArgMinMaxOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlgraphbuilder-argminmax",
-        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
-        "title": "argMin/argMax operations",
-        "number": "7.8.5"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-mlargminmaxoptions-keepdimensions",
       "href": "https://www.w3.org/TR/webnn/#dom-mlargminmaxoptions-keepdimensions",
       "linkingText": [
@@ -2348,16 +2306,16 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-mlgraphbuilder-argmin-input-options-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-argmin-input-options-input",
+      "id": "dom-mlgraphbuilder-argmin-input-axis-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-argmin-input-axis-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/argMin(input, options)",
-        "MLGraphBuilder/argMax(input, options)"
+        "MLGraphBuilder/argMin(input, axis, options)",
+        "MLGraphBuilder/argMax(input, axis, options)"
       ],
       "access": "public",
       "informative": false,
@@ -2370,16 +2328,38 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-argmin-input-options-options",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-argmin-input-options-options",
+      "id": "dom-mlgraphbuilder-argmin-input-axis-options-axis",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-argmin-input-axis-options-axis",
+      "linkingText": [
+        "axis"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/argMin(input, axis, options)",
+        "MLGraphBuilder/argMax(input, axis, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-argminmax",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
+        "title": "argMin/argMax operations",
+        "number": "7.8.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-argmin-input-axis-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-argmin-input-axis-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/argMin(input, options)",
-        "MLGraphBuilder/argMax(input, options)"
+        "MLGraphBuilder/argMin(input, axis, options)",
+        "MLGraphBuilder/argMax(input, axis, options)"
       ],
       "access": "public",
       "informative": false,
@@ -2416,8 +2396,8 @@
       "id": "dom-mlgraphbuilder-argmin",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-argmin",
       "linkingText": [
-        "argMin(input, options)",
-        "argMin(input)"
+        "argMin(input, axis, options)",
+        "argMin(input, axis)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -2438,8 +2418,8 @@
       "id": "dom-mlgraphbuilder-argmax",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-argmax",
       "linkingText": [
-        "argMax(input, options)",
-        "argMax(input)"
+        "argMax(input, axis, options)",
+        "argMax(input, axis)"
       ],
       "localLinkingText": [],
       "type": "method",

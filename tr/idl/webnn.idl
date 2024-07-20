@@ -101,13 +101,14 @@ interface MLGraphBuilder {
 };
 
 dictionary MLArgMinMaxOptions {
-  sequence<[EnforceRange] unsigned long> axes;
   boolean keepDimensions = false;
 };
 
 partial interface MLGraphBuilder {
-  MLOperand argMin(MLOperand input, optional MLArgMinMaxOptions options = {});
-  MLOperand argMax(MLOperand input, optional MLArgMinMaxOptions options = {});
+  MLOperand argMin(MLOperand input, [EnforceRange] unsigned long axis,
+                   optional MLArgMinMaxOptions options = {});
+  MLOperand argMax(MLOperand input, [EnforceRange] unsigned long axis,
+                   optional MLArgMinMaxOptions options = {});
 };
 
 dictionary MLBatchNormalizationOptions {

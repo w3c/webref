@@ -7,7 +7,7 @@
     {
       "name": "valid MediaDecodingConfiguration",
       "href": "https://www.w3.org/TR/media-capabilities/#valid-mediadecodingconfiguration",
-      "html": "For a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediadecodingconfiguration\" id=\"ref-for-dictdef-mediadecodingconfiguration①\">MediaDecodingConfiguration</a></code> to be a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"valid MediaDecodingConfiguration\" data-noexport=\"\" id=\"valid-mediadecodingconfiguration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid\n        MediaDecodingConfiguration</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, all of the following conditions MUST\n        be true:",
+      "html": "For a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediadecodingconfiguration\" id=\"ref-for-dictdef-mediadecodingconfiguration①\">MediaDecodingConfiguration</a></code> to be a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"valid MediaDecodingConfiguration\" data-noexport=\"\" id=\"valid-mediadecodingconfiguration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid\n        MediaDecodingConfiguration</dfn>, all of the following conditions MUST\n        be true:",
       "rationale": "if",
       "steps": [
         {
@@ -33,7 +33,7 @@
     {
       "name": "valid video configuration",
       "href": "https://www.w3.org/TR/media-capabilities/#valid-video-configuration",
-      "html": "To check if a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-videoconfiguration\" id=\"ref-for-dictdef-videoconfiguration①\">VideoConfiguration</a></code> <var>configuration</var> is a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"valid-video-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid video configuration</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, the following steps MUST be run:",
+      "html": "To check if a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-videoconfiguration\" id=\"ref-for-dictdef-videoconfiguration①\">VideoConfiguration</a></code> <var>configuration</var> is a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"valid-video-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid video configuration</dfn>, the following steps MUST be run:",
       "rationale": "if",
       "steps": [
         {
@@ -53,7 +53,7 @@
     {
       "name": "valid audio configuration",
       "href": "https://www.w3.org/TR/media-capabilities/#valid-audio-configuration",
-      "html": "To check if a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-audioconfiguration\" id=\"ref-for-dictdef-audioconfiguration①\">AudioConfiguration</a></code> <var>configuration</var> is a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"valid-audio-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid audio configuration</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, the following steps MUST be run:",
+      "html": "To check if a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-audioconfiguration\" id=\"ref-for-dictdef-audioconfiguration①\">AudioConfiguration</a></code> <var>configuration</var> is a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"valid-audio-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid audio configuration</dfn>, the following steps MUST be run:",
       "rationale": "if",
       "steps": [
         {
@@ -147,7 +147,7 @@
           "html": "Let <var>origin</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> of the calling context’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">Document</a>."
         },
         {
-          "html": "Let <var>implementation</var> be the implementation of <code>config.keySystemConfiguration.keySystem</code>"
+          "html": "Let <var>implementation</var> be the implementation of <code>config.keySystemConfiguration.keySystem</code>."
         },
         {
           "html": "Let <var>emeConfiguration</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#mediakeysystemconfiguration-dictionary\" id=\"ref-for-mediakeysystemconfiguration-dictionary\">MediaKeySystemConfiguration</a></code>, and initialize it as follows:",
@@ -177,10 +177,10 @@
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness①\">robustness</a></code> attribute to <code> config.keySystemConfiguration.audio.robustness</code>"
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness①\">robustness</a></code> attribute to <code> config.keySystemConfiguration.audio.robustness</code>."
                     },
                     {
-                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme①\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.audio.encryptionScheme</code>"
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme①\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.audio.encryptionScheme</code>."
                     }
                   ]
                 }
@@ -201,7 +201,7 @@
                       "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness②\">robustness</a></code> attribute to <code> config.keySystemConfiguration.video.robustness</code>."
                     },
                     {
-                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme②\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.video.encryptionScheme</code>"
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme②\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.video.encryptionScheme</code>."
                     }
                   ]
                 }
@@ -231,7 +231,7 @@
           ]
         },
         {
-          "html": "Return <var>access</var>"
+          "html": "Return <var>access</var>."
         }
       ]
     },
