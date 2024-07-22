@@ -112,7 +112,6 @@
           "concept-header-extract-mime-type",
           "concept-header-list-get",
           "http-tab-or-space-byte",
-          "concept-header-list",
           "concept-request-url",
           "concept-request-header-list",
           "concept-request-client",
@@ -121,24 +120,25 @@
           "concept-request-credentials-mode",
           "concept-request-redirect-mode",
           "concept-fetch",
-          "fetch-useparallelqueue",
-          "process-response",
-          "fetch-controller-abort",
-          "concept-response-body",
-          "concept-body-stream",
           "process-response-end-of-body",
           "concept-request-origin",
+          "fetch-useparallelqueue",
           "requestinit",
           "dom-request",
           "concept-request-request",
           "concept-http-network-or-cache-fetch",
           "concept-header-list-set-structured-header",
+          "concept-header-list",
           "concept-http-fetch",
           "concept-status",
           "redirect-status",
           "concept-header-list-delete",
           "fetch-params-task-destination",
-          "concept-header-list-get-decode-split"
+          "concept-header-list-get-decode-split",
+          "process-response",
+          "fetch-controller-abort",
+          "concept-response-body",
+          "concept-body-stream"
         ]
       },
       "https://github.com/WICG/turtledove/blob/main/FLEDGE_k_anonymity_server.md": {
@@ -257,9 +257,9 @@
         "anchors": [
           "top",
           "boolean",
+          "integer",
           "list",
-          "string",
-          "integer"
+          "string"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -484,7 +484,6 @@
           "idl-unsigned-short",
           "upon-fulfillment",
           "idl-unsigned-long",
-          "dfn-exception",
           "dfn-convert-idl-to-javascript-value",
           "invoke-a-callback-function",
           "dfn-convert-ecmascript-to-idl-value",
@@ -496,7 +495,8 @@
           "SameObject",
           "idl-long-long",
           "idl-object",
-          "upon-rejection"
+          "upon-rejection",
+          "dfn-exception"
         ]
       },
       "https://wicg.github.io/attribution-reporting-api/": {
