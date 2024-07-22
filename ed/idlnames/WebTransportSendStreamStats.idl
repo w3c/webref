@@ -1,6 +1,6 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
 dictionary WebTransportSendStreamStats {
-  unsigned long long bytesWritten;
-  unsigned long long bytesSent;
-  unsigned long long bytesAcknowledged;
+  unsigned long long bytesWritten = 0;
+  unsigned long long bytesSent = 0;
+  unsigned long long bytesAcknowledged = 0;
 };

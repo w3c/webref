@@ -7,7 +7,7 @@ interface WindowSharedStorage : SharedStorage {
   Promise<any> run(DOMString name,
                    optional SharedStorageRunOperationMethodOptions options = {});
 
-  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional WorkletOptions options = {});
+  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional SharedStorageWorkletOptions options = {});
 
   readonly attribute SharedStorageWorklet worklet;
 };

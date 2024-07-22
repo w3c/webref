@@ -1,14 +1,14 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
 dictionary WebTransportConnectionStats {
-  unsigned long long bytesSent;
-  unsigned long long packetsSent;
-  unsigned long long bytesLost;
-  unsigned long long packetsLost;
-  unsigned long long bytesReceived;
-  unsigned long long packetsReceived;
-  DOMHighResTimeStamp smoothedRtt;
-  DOMHighResTimeStamp rttVariation;
-  DOMHighResTimeStamp minRtt;
-  WebTransportDatagramStats datagrams;
-  unsigned long long? estimatedSendRate;
+  unsigned long long bytesSent = 0;
+  unsigned long long packetsSent = 0;
+  unsigned long long bytesLost = 0;
+  unsigned long long packetsLost = 0;
+  unsigned long long bytesReceived = 0;
+  unsigned long long packetsReceived = 0;
+  required DOMHighResTimeStamp smoothedRtt;
+  required DOMHighResTimeStamp rttVariation;
+  required DOMHighResTimeStamp minRtt;
+  required WebTransportDatagramStats datagrams;
+  required unsigned long long? estimatedSendRate;
 };

@@ -1053,43 +1053,11 @@
         "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder"
       },
       "MLArgMinMaxOptions": {
-        "fragment": "dictionary MLArgMinMaxOptions {\n  sequence<[EnforceRange] unsigned long> axes;\n  boolean keepDimensions = false;\n};",
+        "fragment": "dictionary MLArgMinMaxOptions {\n  boolean keepDimensions = false;\n};",
         "type": "dictionary",
         "name": "MLArgMinMaxOptions",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "axes",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [
-                    {
-                      "type": "extended-attribute",
-                      "name": "EnforceRange",
-                      "rhs": null,
-                      "arguments": []
-                    }
-                  ],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                }
-              ]
-            },
-            "default": null,
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlargminmaxoptions-axes"
-          },
           {
             "type": "field",
             "name": "keepDimensions",
@@ -3477,7 +3445,7 @@
       ],
       "MLGraphBuilder": [
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand argMin(MLOperand input, optional MLArgMinMaxOptions options = {});\n  MLOperand argMax(MLOperand input, optional MLArgMinMaxOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand argMin(MLOperand input, [EnforceRange] unsigned long axis,\n                   optional MLArgMinMaxOptions options = {});\n  MLOperand argMax(MLOperand input, [EnforceRange] unsigned long axis,\n                   optional MLArgMinMaxOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -3505,6 +3473,29 @@
                     "nullable": false,
                     "union": false,
                     "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "axis",
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unsigned long"
                   },
                   "default": null,
                   "optional": false,
@@ -3556,6 +3547,29 @@
                     "nullable": false,
                     "union": false,
                     "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "axis",
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unsigned long"
                   },
                   "default": null,
                   "optional": false,
@@ -7947,7 +7961,7 @@
               "arguments": [],
               "extAttrs": [],
               "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softplus"
+              "href": "https://webmachinelearning.github.io/webnn/#softplus-noargs"
             }
           ],
           "extAttrs": [],

@@ -5444,7 +5444,7 @@
         "href": "https://w3c.github.io/webcodecs/#imagedecoder"
       },
       "ImageBufferSource": {
-        "fragment": "typedef (BufferSource or ReadableStream) ImageBufferSource;",
+        "fragment": "typedef (AllowSharedBufferSource or ReadableStream) ImageBufferSource;",
         "type": "typedef",
         "name": "ImageBufferSource",
         "idlType": {
@@ -5460,7 +5460,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "BufferSource"
+              "idlType": "AllowSharedBufferSource"
             },
             {
               "type": "typedef-type",

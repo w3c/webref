@@ -989,7 +989,7 @@
         "href": "https://w3c.github.io/webtransport/#dictdef-webtransportsendstreamoptions"
       },
       "WebTransportConnectionStats": {
-        "fragment": "dictionary WebTransportConnectionStats {\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long long bytesLost;\n  unsigned long long packetsLost;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp smoothedRtt;\n  DOMHighResTimeStamp rttVariation;\n  DOMHighResTimeStamp minRtt;\n  WebTransportDatagramStats datagrams;\n  unsigned long long? estimatedSendRate;\n};",
+        "fragment": "dictionary WebTransportConnectionStats {\n  unsigned long long bytesSent = 0;\n  unsigned long long packetsSent = 0;\n  unsigned long long bytesLost = 0;\n  unsigned long long packetsLost = 0;\n  unsigned long long bytesReceived = 0;\n  unsigned long long packetsReceived = 0;\n  required DOMHighResTimeStamp smoothedRtt;\n  required DOMHighResTimeStamp rttVariation;\n  required DOMHighResTimeStamp minRtt;\n  required WebTransportDatagramStats datagrams;\n  required unsigned long long? estimatedSendRate;\n};",
         "type": "dictionary",
         "name": "WebTransportConnectionStats",
         "inheritance": null,
@@ -1006,7 +1006,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-bytessent"
           },
@@ -1022,7 +1025,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-packetssent"
           },
@@ -1038,7 +1044,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-byteslost"
           },
@@ -1054,7 +1063,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-packetslost"
           },
@@ -1070,7 +1082,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-bytesreceived"
           },
@@ -1086,7 +1101,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-packetsreceived"
           },
@@ -1103,7 +1121,7 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-smoothedrtt"
           },
           {
@@ -1119,7 +1137,7 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-rttvariation"
           },
           {
@@ -1135,7 +1153,7 @@
               "idlType": "DOMHighResTimeStamp"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-minrtt"
           },
           {
@@ -1151,7 +1169,7 @@
               "idlType": "WebTransportDatagramStats"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-datagrams"
           },
           {
@@ -1167,7 +1185,7 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-estimatedsendrate"
           }
         ],
@@ -1176,7 +1194,7 @@
         "href": "https://w3c.github.io/webtransport/#dictdef-webtransportconnectionstats"
       },
       "WebTransportDatagramStats": {
-        "fragment": "dictionary WebTransportDatagramStats {\n  unsigned long long droppedIncoming;\n  unsigned long long expiredIncoming;\n  unsigned long long expiredOutgoing;\n  unsigned long long lostOutgoing;\n};",
+        "fragment": "dictionary WebTransportDatagramStats {\n  unsigned long long droppedIncoming = 0;\n  unsigned long long expiredIncoming = 0;\n  unsigned long long expiredOutgoing = 0;\n  unsigned long long lostOutgoing = 0;\n};",
         "type": "dictionary",
         "name": "WebTransportDatagramStats",
         "inheritance": null,
@@ -1193,7 +1211,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramstats-droppedincoming"
           },
@@ -1209,7 +1230,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramstats-expiredincoming"
           },
@@ -1225,7 +1249,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramstats-expiredoutgoing"
           },
@@ -1241,7 +1268,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramstats-lostoutgoing"
           }
@@ -1364,7 +1394,7 @@
         "href": "https://w3c.github.io/webtransport/#webtransportsendstream"
       },
       "WebTransportSendStreamStats": {
-        "fragment": "dictionary WebTransportSendStreamStats {\n  unsigned long long bytesWritten;\n  unsigned long long bytesSent;\n  unsigned long long bytesAcknowledged;\n};",
+        "fragment": "dictionary WebTransportSendStreamStats {\n  unsigned long long bytesWritten = 0;\n  unsigned long long bytesSent = 0;\n  unsigned long long bytesAcknowledged = 0;\n};",
         "type": "dictionary",
         "name": "WebTransportSendStreamStats",
         "inheritance": null,
@@ -1381,7 +1411,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportsendstreamstats-byteswritten"
           },
@@ -1397,7 +1430,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportsendstreamstats-bytessent"
           },
@@ -1413,7 +1449,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportsendstreamstats-bytesacknowledged"
           }
@@ -1547,7 +1586,7 @@
         "href": "https://w3c.github.io/webtransport/#webtransportreceivestream"
       },
       "WebTransportReceiveStreamStats": {
-        "fragment": "dictionary WebTransportReceiveStreamStats {\n  unsigned long long bytesReceived;\n  unsigned long long bytesRead;\n};",
+        "fragment": "dictionary WebTransportReceiveStreamStats {\n  unsigned long long bytesReceived = 0;\n  unsigned long long bytesRead = 0;\n};",
         "type": "dictionary",
         "name": "WebTransportReceiveStreamStats",
         "inheritance": null,
@@ -1564,7 +1603,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportreceivestreamstats-bytesreceived"
           },
@@ -1580,7 +1622,10 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportreceivestreamstats-bytesread"
           }

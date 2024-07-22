@@ -18605,7 +18605,7 @@
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawpath"
       },
       "CanvasUserInterface": {
-        "fragment": "interface mixin CanvasUserInterface {\n  undefined drawFocusIfNeeded(Element element);\n  undefined drawFocusIfNeeded(Path2D path, Element element);\n  undefined scrollPathIntoView();\n  undefined scrollPathIntoView(Path2D path);\n};",
+        "fragment": "interface mixin CanvasUserInterface {\n  undefined drawFocusIfNeeded(Element element);\n  undefined drawFocusIfNeeded(Path2D path, Element element);\n};",
         "type": "interface mixin",
         "name": "CanvasUserInterface",
         "inheritance": null,
@@ -18689,56 +18689,8 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "scrollPathIntoView",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
             "special": "",
-            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-scrollpathintoview"
-          },
-          {
-            "type": "operation",
-            "name": "scrollPathIntoView",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "path",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Path2D"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-scrollpathintoview"
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawfocusifneeded-path-element"
           }
         ],
         "extAttrs": [],

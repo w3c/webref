@@ -19,8 +19,10 @@ interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand argMin(MLOperand input, optional MLArgMinMaxOptions options = {});
-  MLOperand argMax(MLOperand input, optional MLArgMinMaxOptions options = {});
+  MLOperand argMin(MLOperand input, [EnforceRange] unsigned long axis,
+                   optional MLArgMinMaxOptions options = {});
+  MLOperand argMax(MLOperand input, [EnforceRange] unsigned long axis,
+                   optional MLArgMinMaxOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)

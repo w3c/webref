@@ -17,7 +17,7 @@
           "initial": "n/a (see prose)"
         }
       ],
-      "value": "@function <function-name> [ ( <parameter-list> ) ]? [ using ( <dependency-list> ) ]? [ returns <type> ]? { <declaration-rule-list> }"
+      "value": "@function <function-name> [ ( <function-parameter-list> ) ]? [ using ( <function-dependency-list> ) ]? [ returns <css-type> ]? { <declaration-rule-list> }"
     }
   ],
   "selectors": [],
@@ -29,28 +29,34 @@
       "value": "<dashed-ident>"
     },
     {
-      "name": "<parameter-list>",
-      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-parameter-list",
+      "name": "<function-parameter-list>",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter-list",
       "type": "type",
-      "value": "<parameter>#"
+      "value": "<function-parameter>#"
     },
     {
-      "name": "<dependency-list>",
-      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-dependency-list",
+      "name": "<function-dependency-list>",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-dependency-list",
       "type": "type",
-      "value": "<parameter>#"
+      "value": "<function-parameter>#"
     },
     {
-      "name": "<type>",
+      "name": "<function-parameter>",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter",
+      "type": "type",
+      "value": "<custom-property-name> <css-type>? [ : <declaration-value> ]?"
+    },
+    {
+      "name": "<css-type>",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-css-type",
+      "type": "type",
+      "value": "<syntax-component> | <type()>"
+    },
+    {
+      "name": "<type()>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-type",
       "type": "type",
-      "value": "<syntax-component> | type( <syntax> )"
-    },
-    {
-      "name": "<parameter>",
-      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-parameter",
-      "type": "type",
-      "value": "<custom-property-name> <type>? [ : <declaration-value> ]?"
+      "value": "type( <syntax> )"
     },
     {
       "name": "<dashed-function>",
@@ -59,20 +65,20 @@
       "type": "type"
     },
     {
-      "name": "<type-name>",
-      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-type-name",
+      "name": "<syntax-type>",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-type",
       "type": "type",
       "value": "angle | color | custom-ident | image | integer | length | length-percentage | number | percentage | resolution | string | time | url | transform-function"
     },
     {
-      "name": "<mixins-combinator>",
-      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-combinator",
+      "name": "<syntax-combinator>",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-combinator",
       "type": "type",
       "value": "'|'"
     },
     {
-      "name": "<multiplier>",
-      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-multiplier",
+      "name": "<syntax-multiplier>",
+      "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-multiplier",
       "type": "type",
       "value": "[ '#' | '+' ]"
     },
@@ -80,26 +86,19 @@
       "name": "<syntax-component-name>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-component-name",
       "type": "type",
-      "value": "'<' <type-name> '>' | <custom-ident>"
+      "value": "'<' <syntax-type> '>' | <custom-ident>"
     },
     {
       "name": "<syntax-component>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax-component",
       "type": "type",
-      "value": "<syntax-component-name> <multiplier>? | '<' transform-list '>'"
+      "value": "<syntax-component-name> <syntax-multiplier>? | '<' transform-list '>'"
     },
     {
       "name": "<syntax>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-syntax",
       "type": "type",
-      "value": "'*' | <syntax-component> [ <mixins-combinator> <syntax-component> ]+"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "--*()",
-      "value": "--*( <declaration-value># )"
+      "value": "'*' | <syntax-component> [ <syntax-combinator> <syntax-component> ]+"
     }
   ]
 }

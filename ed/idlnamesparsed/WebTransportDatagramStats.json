@@ -6,7 +6,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "dictionary WebTransportDatagramStats {\n  unsigned long long droppedIncoming;\n  unsigned long long expiredIncoming;\n  unsigned long long expiredOutgoing;\n  unsigned long long lostOutgoing;\n};",
+    "fragment": "dictionary WebTransportDatagramStats {\n  unsigned long long droppedIncoming = 0;\n  unsigned long long expiredIncoming = 0;\n  unsigned long long expiredOutgoing = 0;\n  unsigned long long lostOutgoing = 0;\n};",
     "href": "https://w3c.github.io/webtransport/#dictdef-webtransportdatagramstats"
   },
   "extended": [],

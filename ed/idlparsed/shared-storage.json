@@ -52,6 +52,25 @@
         "extAttrs": [],
         "href": "https://wicg.github.io/shared-storage/#typedefdef-sharedstorageresponse"
       },
+      "SharedStorageDataOrigin": {
+        "fragment": "enum SharedStorageDataOrigin { \"context-origin\", \"script-origin\" };",
+        "type": "enum",
+        "name": "SharedStorageDataOrigin",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "context-origin",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragedataorigin-context-origin"
+          },
+          {
+            "type": "enum-value",
+            "value": "script-origin",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragedataorigin-script-origin"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://wicg.github.io/shared-storage/#enumdef-sharedstoragedataorigin"
+      },
       "SharedStorageWorklet": {
         "fragment": "[Exposed=(Window)]\ninterface SharedStorageWorklet : Worklet {\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n};",
         "type": "interface",
@@ -687,7 +706,7 @@
         "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragesetmethodoptions"
       },
       "WindowSharedStorage": {
-        "fragment": "[Exposed=(Window)]\ninterface WindowSharedStorage : SharedStorage {\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n\n  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional WorkletOptions options = {});\n\n  readonly attribute SharedStorageWorklet worklet;\n};",
+        "fragment": "[Exposed=(Window)]\ninterface WindowSharedStorage : SharedStorage {\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n\n  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional SharedStorageWorkletOptions options = {});\n\n  readonly attribute SharedStorageWorklet worklet;\n};",
         "type": "interface",
         "name": "WindowSharedStorage",
         "inheritance": "SharedStorage",
@@ -884,7 +903,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "WorkletOptions"
+                  "idlType": "SharedStorageWorkletOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -996,6 +1015,36 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragerunoperationmethodoptions"
+      },
+      "SharedStorageWorkletOptions": {
+        "fragment": "dictionary SharedStorageWorkletOptions : WorkletOptions {\n  SharedStorageDataOrigin dataOrigin = \"context-origin\";\n};",
+        "type": "dictionary",
+        "name": "SharedStorageWorkletOptions",
+        "inheritance": "WorkletOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "dataOrigin",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SharedStorageDataOrigin"
+            },
+            "default": {
+              "type": "string",
+              "value": "context-origin"
+            },
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletoptions-dataorigin"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstorageworkletoptions"
       },
       "WorkletSharedStorage": {
         "fragment": "[Exposed=(SharedStorageWorklet)]\ninterface WorkletSharedStorage : SharedStorage {\n  Promise<DOMString> get(DOMString key);\n  Promise<unsigned long> length();\n  Promise<double> remainingBudget();\n\n  async iterable<DOMString, DOMString>;\n};",
@@ -1303,9 +1352,13 @@
         "SharedStorageUrlWithMetadata",
         "SharedStorageRunOperationMethodOptions",
         "SharedStorageWorklet",
-        "WorkletOptions"
+        "SharedStorageWorkletOptions"
       ],
       "SharedStorageRunOperationMethodOptions": [],
+      "SharedStorageWorkletOptions": [
+        "WorkletOptions",
+        "SharedStorageDataOrigin"
+      ],
       "Window": [
         "WindowSharedStorage"
       ],

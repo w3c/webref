@@ -44,7 +44,7 @@
         "href": "https://w3c.github.io/mediasession/#enumdef-mediasessionplaybackstate"
       },
       "MediaSessionAction": {
-        "fragment": "enum MediaSessionAction {\n  \"play\",\n  \"pause\",\n  \"seekbackward\",\n  \"seekforward\",\n  \"previoustrack\",\n  \"nexttrack\",\n  \"skipad\",\n  \"stop\",\n  \"seekto\",\n  \"togglemicrophone\",\n  \"togglecamera\",\n  \"togglescreenshare\",\n  \"hangup\",\n  \"previousslide\",\n  \"nextslide\",\n  \"enterpictureinpicture\"\n};",
+        "fragment": "enum MediaSessionAction {\n  \"play\",\n  \"pause\",\n  \"seekbackward\",\n  \"seekforward\",\n  \"previoustrack\",\n  \"nexttrack\",\n  \"skipad\",\n  \"stop\",\n  \"seekto\",\n  \"togglemicrophone\",\n  \"togglecamera\",\n  \"togglescreenshare\",\n  \"hangup\",\n  \"previousslide\",\n  \"nextslide\",\n  \"enterpictureinpicture\",\n  \"voiceactivity\"\n};",
         "type": "enum",
         "name": "MediaSessionAction",
         "values": [
@@ -127,6 +127,11 @@
             "type": "enum-value",
             "value": "enterpictureinpicture",
             "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-enterpictureinpicture"
+          },
+          {
+            "type": "enum-value",
+            "value": "voiceactivity",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-voiceactivity"
           }
         ],
         "extAttrs": [],

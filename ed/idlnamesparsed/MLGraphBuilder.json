@@ -15,7 +15,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand argMin(MLOperand input, optional MLArgMinMaxOptions options = {});\n  MLOperand argMax(MLOperand input, optional MLArgMinMaxOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand argMin(MLOperand input, [EnforceRange] unsigned long axis,\n                   optional MLArgMinMaxOptions options = {});\n  MLOperand argMax(MLOperand input, [EnforceRange] unsigned long axis,\n                   optional MLArgMinMaxOptions options = {});\n};"
     },
     {
       "spec": {
