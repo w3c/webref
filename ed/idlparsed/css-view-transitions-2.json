@@ -199,36 +199,6 @@
       }
     },
     "idlExtendedNames": {
-      "CSSRule": [
-        {
-          "fragment": "partial interface CSSRule {\n  const unsigned short VIEW_TRANSITION_RULE = 15;\n};",
-          "type": "interface",
-          "name": "CSSRule",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "const",
-              "name": "VIEW_TRANSITION_RULE",
-              "idlType": {
-                "type": "const-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned short"
-              },
-              "extAttrs": [],
-              "value": {
-                "type": "number",
-                "value": "15"
-              },
-              "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-cssrule-view_transition_rule"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
       "ViewTransition": [
         {
           "fragment": "[Exposed=Window]\npartial interface ViewTransition {\n  attribute ViewTransitionTypeSet types;\n};",
@@ -341,7 +311,6 @@
       ]
     },
     "dependencies": {
-      "CSSRule": [],
       "CSSViewTransitionRule": [
         "CSSRule",
         "ViewTransitionNavigation",
