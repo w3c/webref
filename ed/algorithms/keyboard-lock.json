@@ -14,7 +14,7 @@
           "html": "<p>Let <var>p</var> be a new <a data-link-type=\"dfn\" href=\"http://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects\">Promise</a>.</p>"
         },
         {
-          "html": "<h4 class=\"heading settled\" data-level=\"2.2.1\" id=\"h-keyboard-lock\"><span class=\"secno\">2.2.1. </span><span class=\"content\"><dfn data-dfn-for=\"Keyboard\" data-dfn-type=\"dfn\" data-export=\"\" id=\"keyboard-lock\">lock()<a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-lock\"></a></dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#h-keyboard-lock\"></a></h4>\n     <p>When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-lock\" id=\"ref-for-dom-keyboard-lock\">lock()</a></code> is called, the user agent must\n\t\t\trun the following steps:</p>\n     \n     <div></div>",
+          "html": "If not currently executing in the currently active <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a>, then",
           "rationale": "reject",
           "steps": [
             {
@@ -23,22 +23,22 @@
           ]
         },
         {
-          "html": "<h4 class=\"heading settled\" data-level=\"2.2.1\" id=\"h-keyboard-lock\"><span class=\"secno\">2.2.1. </span><span class=\"content\"><dfn data-dfn-for=\"Keyboard\" data-dfn-type=\"dfn\" data-export=\"\" id=\"keyboard-lock\">lock()<a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-lock\"></a></dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#h-keyboard-lock\"></a></h4>\n     <p>When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-lock\" id=\"ref-for-dom-keyboard-lock\">lock()</a></code> is called, the user agent must\n\t\t\trun the following steps:</p>\n     \n     <div></div>",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps\">Enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-keyboard-lock-task-queue\" id=\"ref-for-keyboard-keyboard-lock-task-queue\">keyboard lock task queue</a>:",
           "rationale": "reset",
           "steps": [
             {
               "html": "<p>Reset <a data-link-type=\"dfn\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-reserved-key-codes\" id=\"ref-for-keyboard-reserved-key-codes\">reserved key codes</a> to be an empty set.</p>"
             },
             {
-              "html": "<h4 class=\"heading settled\" data-level=\"2.2.1\" id=\"h-keyboard-lock\"><span class=\"secno\">2.2.1. </span><span class=\"content\"><dfn data-dfn-for=\"Keyboard\" data-dfn-type=\"dfn\" data-export=\"\" id=\"keyboard-lock\">lock()<a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-lock\"></a></dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#h-keyboard-lock\"></a></h4>\n     <p>When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-lock\" id=\"ref-for-dom-keyboard-lock\">lock()</a></code> is called, the user agent must\n\t\t\trun the following steps:</p>\n     \n     <div></div>",
+              "html": "If the optional <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-lock-keycodes-keycodes\" id=\"ref-for-dom-keyboard-lock-keycodes-keycodes\">keyCodes</a></code> argument is present, run the\nfollowing substeps:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "<h4 class=\"heading settled\" data-level=\"2.2.1\" id=\"h-keyboard-lock\"><span class=\"secno\">2.2.1. </span><span class=\"content\"><dfn data-dfn-for=\"Keyboard\" data-dfn-type=\"dfn\" data-export=\"\" id=\"keyboard-lock\">lock()<a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-lock\"></a></dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#h-keyboard-lock\"></a></h4>\n     <p>When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-lock\" id=\"ref-for-dom-keyboard-lock\">lock()</a></code> is called, the user agent must\n\t\t\trun the following steps:</p>\n     \n     <div></div>",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> string <var>key</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-lock-keycodes-keycodes\" id=\"ref-for-dom-keyboard-lock-keycodes-keycodes①\">keyCodes</a></code>:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<h4 class=\"heading settled\" data-level=\"2.2.1\" id=\"h-keyboard-lock\"><span class=\"secno\">2.2.1. </span><span class=\"content\"><dfn data-dfn-for=\"Keyboard\" data-dfn-type=\"dfn\" data-export=\"\" id=\"keyboard-lock\">lock()<a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-lock\"></a></dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#h-keyboard-lock\"></a></h4>\n     <p>When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-lock\" id=\"ref-for-dom-keyboard-lock\">lock()</a></code> is called, the user agent must\n\t\t\trun the following steps:</p>\n     \n     <div></div>",
+                      "html": "If <var>key</var> is not a valid <a data-link-type=\"dfn\" href=\"http://www.w3.org/TR/uievents-code/#key-code-attribute-value\" id=\"ref-for-key-code-attribute-value①\">key code attribute value</a>, then",
                       "rationale": "set",
                       "steps": [
                         {
@@ -57,7 +57,7 @@
               ]
             },
             {
-              "html": "<h4 class=\"heading settled\" data-level=\"2.2.1\" id=\"h-keyboard-lock\"><span class=\"secno\">2.2.1. </span><span class=\"content\"><dfn data-dfn-for=\"Keyboard\" data-dfn-type=\"dfn\" data-export=\"\" id=\"keyboard-lock\">lock()<a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-lock\"></a></dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#h-keyboard-lock\"></a></h4>\n     <p>When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-lock\" id=\"ref-for-dom-keyboard-lock\">lock()</a></code> is called, the user agent must\n\t\t\trun the following steps:</p>\n     \n     <div></div>",
+              "html": "If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-enable-keyboard-lock\" id=\"ref-for-keyboard-enable-keyboard-lock②\">enable keyboard lock</a> is currently false, run the following\nsubsteps:",
               "rationale": "set",
               "steps": [
                 {
@@ -69,7 +69,7 @@
               ]
             },
             {
-              "html": "<h4 class=\"heading settled\" data-level=\"2.2.1\" id=\"h-keyboard-lock\"><span class=\"secno\">2.2.1. </span><span class=\"content\"><dfn data-dfn-for=\"Keyboard\" data-dfn-type=\"dfn\" data-export=\"\" id=\"keyboard-lock\">lock()<a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-lock\"></a></dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#h-keyboard-lock\"></a></h4>\n     <p>When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-lock\" id=\"ref-for-dom-keyboard-lock\">lock()</a></code> is called, the user agent must\n\t\t\trun the following steps:</p>\n     \n     <div></div>",
+              "html": "If there is a pending <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-lock\" id=\"ref-for-dom-keyboard-lock①\">lock()</a></code> task in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-keyboard-lock-task-queue\" id=\"ref-for-keyboard-keyboard-lock-task-queue①\">keyboard lock task queue</a>, then",
               "rationale": "set",
               "steps": [
                 {
@@ -97,11 +97,11 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<h4 class=\"heading settled\" data-level=\"2.2.2\" id=\"h-keyboard-unlock\"><span class=\"secno\">2.2.2. </span><span class=\"content\"><dfn data-dfn-for=\"Keyboard\" data-dfn-type=\"dfn\" data-export=\"\" id=\"keyboard-unlock\">unlock()<a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-unlock\"></a></dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#h-keyboard-unlock\"></a></h4>\n     <p>When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-unlock\" id=\"ref-for-dom-keyboard-unlock①\">unlock()</a></code> is called, the user agent must\n\t\t\trun the following steps:</p>\n     \n     <div></div>",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps①\">Enqueue the following steps</a> to the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-keyboard-lock-task-queue\" id=\"ref-for-keyboard-keyboard-lock-task-queue②\">keyboard lock task queue</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<h4 class=\"heading settled\" data-level=\"2.2.2\" id=\"h-keyboard-unlock\"><span class=\"secno\">2.2.2. </span><span class=\"content\"><dfn data-dfn-for=\"Keyboard\" data-dfn-type=\"dfn\" data-export=\"\" id=\"keyboard-unlock\">unlock()<a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-unlock\"></a></dfn></span><a class=\"self-link\" href=\"https://wicg.github.io/keyboard-lock/#h-keyboard-unlock\"></a></h4>\n     <p>When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/keyboard-lock/#dom-keyboard-unlock\" id=\"ref-for-dom-keyboard-unlock①\">unlock()</a></code> is called, the user agent must\n\t\t\trun the following steps:</p>\n     \n     <div></div>",
+              "html": "If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/keyboard-lock/#keyboard-enable-keyboard-lock\" id=\"ref-for-keyboard-enable-keyboard-lock⑤\">enable keyboard lock</a> is true, then run the following substeps:",
               "rationale": "set",
               "steps": [
                 {

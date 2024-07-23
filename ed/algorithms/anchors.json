@@ -231,14 +231,14 @@
           "html": "<p>Let <var>device</var> be a <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②\">XR device</a>.</p>"
         },
         {
-          "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-anchors\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update anchors</dfn><span style=\"position: relative; height: 0px;\"></span> for <var>frame</var>, the user agent MUST run the following steps:",
+          "html": "For each <var>anchor</var> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors③\">set of tracked anchors</a>, run:",
           "rationale": "query",
           "steps": [
             {
               "html": "<p>Query the <var>device</var>’s tracking system for the <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-native-origin\" id=\"ref-for-xranchor-native-origin②\">native origin</a> information.</p>"
             },
             {
-              "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-anchors\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update anchors</dfn><span style=\"position: relative; height: 0px;\"></span> for <var>frame</var>, the user agent MUST run the following steps:",
+              "html": "If the <var>device</var>’s tracking system no longer <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#tracked\" id=\"ref-for-tracked\">tracks</a> the <var>anchor</var>, run the following steps:",
               "rationale": "remove",
               "steps": [
                 {

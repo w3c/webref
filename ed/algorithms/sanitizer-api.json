@@ -193,7 +193,7 @@
           "html": "<p class=\"assertion\">Assert: <var>options</var>[\"<code>sanitizer</code>\"] is either a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer\" id=\"ref-for-sanitizer②\">Sanitizer</a></code> instance\n or a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary②\">dictionary</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-get-a-sanitizer-config-from-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a sanitizer config from options</dfn> for\nan options dictionary <var>options</var> and a boolean <var>safe</var>, do:",
+          "html": "If <var>options</var>[\"<code>sanitizer</code>\"] is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer\" id=\"ref-for-sanitizer③\">Sanitizer</a></code> instance:",
           "rationale": "/^otherwise(\\,| )/i",
           "steps": [
             {
@@ -222,14 +222,14 @@
           "html": "<p>Let <var>current</var> be <var>node</var>.</p>"
         },
         {
-          "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>child</var> in <var>current</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child\">children</a>:",
           "rationale": "assert",
           "steps": [
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>child</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text\">Text</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#comment\" id=\"ref-for-comment\">Comment</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑧\">Element</a></code>.</p>"
             },
             {
-              "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+              "html": "If <var>child</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements①\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text①\">Text</a></code>:",
               "rationale": "continue",
               "steps": [
                 {
@@ -238,11 +238,11 @@
               ]
             },
             {
-              "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+              "html": "else if <var>child</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements②\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#comment\" id=\"ref-for-comment①\">Comment</a></code>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+                  "html": "If <var>config</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-comments\" id=\"ref-for-dom-sanitizerconfig-comments\">comments</a></code> is not true:",
                   "rationale": "remove",
                   "steps": [
                     {
@@ -253,14 +253,14 @@
               ]
             },
             {
-              "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+              "html": "else:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>elementName</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerelementnamespace\" id=\"ref-for-dictdef-sanitizerelementnamespace②\">SanitizerElementNamespace</a></code> with <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"ref-for-concept-element-local-name①\">local name</a> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"ref-for-concept-element-namespace①\">namespace</a>.</p>"
                 },
                 {
-                  "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+                  "html": "If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements\">elements</a></code>\"] exists and <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements①\">elements</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-contains\" id=\"ref-for-sanitizerconfig-contains\">contain</a> [<var>elementName</var>]:",
                   "rationale": "remove",
                   "steps": [
                     {
@@ -269,7 +269,7 @@
                   ]
                 },
                 {
-                  "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+                  "html": "else if <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements\" id=\"ref-for-dom-sanitizerconfig-removeelements\">removeElements</a></code>\"] exists and <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements\" id=\"ref-for-dom-sanitizerconfig-removeelements①\">removeElements</a></code>\"] <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-contains\" id=\"ref-for-sanitizerconfig-contains①\">contains</a> [<var>elementName</var>]:",
                   "rationale": "remove",
                   "steps": [
                     {
@@ -278,7 +278,7 @@
                   ]
                 },
                 {
-                  "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+                  "html": "If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-replacewithchildrenelements\" id=\"ref-for-dom-sanitizerconfig-replacewithchildrenelements\">replaceWithChildrenElements</a></code>\"] exists and <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-replacewithchildrenelements\" id=\"ref-for-dom-sanitizerconfig-replacewithchildrenelements①\">replaceWithChildrenElements</a></code>\"] <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-contains\" id=\"ref-for-sanitizerconfig-contains②\">contains</a> <var>elementName</var>:",
                   "rationale": "call",
                   "steps": [
                     {
@@ -302,18 +302,18 @@
                   ]
                 },
                 {
-                  "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>attr</var> in <var>current</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
                   "rationale": "let",
                   "steps": [
                     {
                       "html": "<p>Let <var>attrName</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerattributenamespace\" id=\"ref-for-dictdef-sanitizerattributenamespace①\">SanitizerAttributeNamespace</a></code> with <var>attr</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-local-name\" id=\"ref-for-concept-attribute-local-name\">local name</a> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-namespace\" id=\"ref-for-concept-attribute-namespace\">namespace</a>.</p>"
                     },
                     {
-                      "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+                      "html": "If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes\" id=\"ref-for-dom-sanitizerconfig-attributes\">attributes</a></code>\"] exists and <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes\" id=\"ref-for-dom-sanitizerconfig-attributes①\">attributes</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-contains\" id=\"ref-for-sanitizerconfig-contains③\">contain</a> <var>attrName</var>:",
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+                          "html": "If \"data-\" is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit-prefix\" id=\"ref-for-code-unit-prefix\">code unit prefix</a> of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-local-name\" id=\"ref-for-concept-attribute-local-name①\">local name</a> and\n  if <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-namespace\" id=\"ref-for-concept-attribute-namespace①\">namespace</a> is <code>null</code> and\n  if <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-dataattributes\" id=\"ref-for-dom-sanitizerconfig-dataattributes\">dataAttributes</a></code>\"] exists and is false:",
                           "rationale": "remove",
                           "steps": [
                             {
@@ -324,7 +324,7 @@
                       ]
                     },
                     {
-                      "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+                      "html": "else if <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes\" id=\"ref-for-dom-sanitizerconfig-removeattributes\">removeAttributes</a></code>\"] exists and <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes\" id=\"ref-for-dom-sanitizerconfig-removeattributes①\">removeAttributes</a></code>\"] <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-contains\" id=\"ref-for-sanitizerconfig-contains④\">contains</a> <var>attrName</var>:",
                       "rationale": "remove",
                       "steps": [
                         {
@@ -333,7 +333,7 @@
                       ]
                     },
                     {
-                      "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+                      "html": "If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements②\">elements</a></code>\"][<var>elementName</var>] exists,\n and if <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements③\">elements</a></code>\"][<var>elementName</var>][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-attributes\" id=\"ref-for-dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"]\n exists, and if <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements④\">elements</a></code>\"][<var>elementName</var>][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-attributes\" id=\"ref-for-dom-sanitizerelementnamespacewithattributes-attributes①\">attributes</a></code>\"]\n does not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-contains\" id=\"ref-for-sanitizerconfig-contains⑤\">contain</a> <var>attrName</var>:",
                       "rationale": "remove",
                       "steps": [
                         {
@@ -342,7 +342,7 @@
                       ]
                     },
                     {
-                      "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+                      "html": "If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements⑤\">elements</a></code>\"][<var>elementName</var>] exists,\n and if <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements⑥\">elements</a></code>\"][<var>elementName</var>][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-removeattributes\" id=\"ref-for-dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"]\n exists, and if <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements⑦\">elements</a></code>\"][<var>elementName</var>][\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-removeattributes\" id=\"ref-for-dom-sanitizerelementnamespacewithattributes-removeattributes①\">removeAttributes</a></code>\"] <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-contains\" id=\"ref-for-sanitizerconfig-contains⑥\">contains</a> <var>attrName</var>:",
                       "rationale": "remove",
                       "steps": [
                         {
@@ -362,7 +362,7 @@
                   ]
                 },
                 {
-                  "html": "For the main <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sanitize</dfn> operation, using a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#parentnode\" id=\"ref-for-parentnode\">ParentNode</a></code> <var>node</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-canonical\" id=\"ref-for-sanitizerconfig-canonical①\">canonical</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dictdef-sanitizerconfig\" id=\"ref-for-dictdef-sanitizerconfig④\">SanitizerConfig</a></code> <var>config</var>, run these steps:",
+                  "html": "else:",
                   "rationale": "remove",
                   "steps": [
                     {
@@ -398,7 +398,7 @@
           ]
         },
         {
-          "html": "A <var>config</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-valid\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid</dfn> if all these conditions are met:",
+          "html": "If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements①⓪\">elements</a></code>\"] exists, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">for any</a> <var>element</var> in <var>config</var>[<var>key</var>] that is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary④\">dictionary</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -408,14 +408,14 @@
               "html": "<p>If either <var>element</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-attributes\" id=\"ref-for-dom-sanitizerelementnamespacewithattributes-attributes③\">attributes</a></code>\"]\n  or <var>element</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-removeattributes\" id=\"ref-for-dom-sanitizerelementnamespacewithattributes-removeattributes③\">removeAttributes</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>, then it is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizernamelist-valid\" id=\"ref-for-sanitizernamelist-valid①\">valid</a>.</p>"
             },
             {
-              "html": "A <var>config</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-valid\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid</dfn> if all these conditions are met:",
+              "html": "Let <var>tmp</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary⑤\">dictionary</a>, and for any <var>key</var> «[\n  \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements①①\">elements</a></code>\",\n  \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements\" id=\"ref-for-dom-sanitizerconfig-removeelements④\">removeElements</a></code>\",\n  \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-replacewithchildrenelements\" id=\"ref-for-dom-sanitizerconfig-replacewithchildrenelements③\">replaceWithChildrenElements</a></code>\",\n  \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes\" id=\"ref-for-dom-sanitizerconfig-attributes④\">attributes</a></code>\",\n  \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes\" id=\"ref-for-dom-sanitizerconfig-removeattributes④\">removeAttributes</a></code>\"\n  ]» <var>tmp</var>[<var>key</var>] is set to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-element-list\" id=\"ref-for-canonicalize-a-sanitizer-element-list\">canonicalize a sanitizer\n  element list</a> called on <var>config</var>[<var>key</var>], and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#html-namespace\" id=\"ref-for-html-namespace②\">HTML namespace</a> as default\n  namespace for the element lists, and <code>null</code> as default namespace for the\n  attributes lists.",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>tmpattrs</var> be <var>tmp</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes\" id=\"ref-for-dom-sanitizerconfig-attributes⑥\">attributes</a></code>\"] if it exists,\n and otherwise <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#built-in-default-config\" id=\"ref-for-built-in-default-config\">built-in default config</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes\" id=\"ref-for-dom-sanitizerconfig-attributes⑦\">attributes</a></code>\"].</p>"
                 },
                 {
-                  "html": "A <var>config</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-valid\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid</dfn> if all these conditions are met:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For any</a> <var>item</var> in <var>tmp</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements①④\">elements</a></code>\"]:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -445,7 +445,7 @@
           "html": "<p><var>list</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
         },
         {
-          "html": "A <var>list</var> of names is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerNameList\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizernamelist-valid\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid</dfn> if all these\nconditions are met:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For all</a> of its members <var>name</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -492,7 +492,7 @@
           ]
         },
         {
-          "html": "A <var>config</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-canonical\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonical</dfn> if all these conditions are met:",
+          "html": "For any <var>key</var> of «[\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-comments\" id=\"ref-for-dom-sanitizerconfig-comments②\">comments</a></code>\",\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-dataattributes\" id=\"ref-for-dom-sanitizerconfig-dataattributes②\">dataAttributes</a></code>\"\n ]»:",
           "rationale": "if",
           "steps": [
             {
@@ -564,7 +564,7 @@
           "html": "<p>Let <var>result</var> be a new <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary①⓪\">dictionary</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+          "html": "For each <var>key</var> of «[\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements②⓪\">elements</a></code>\",\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements\" id=\"ref-for-dom-sanitizerconfig-removeelements①①\">removeElements</a></code>\",\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-replacewithchildrenelements\" id=\"ref-for-dom-sanitizerconfig-replacewithchildrenelements⑧\">replaceWithChildrenElements</a></code>\" ]»:",
           "rationale": "if",
           "steps": [
             {
@@ -573,7 +573,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+          "html": "For each <var>key</var> of «[\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes\" id=\"ref-for-dom-sanitizerconfig-attributes①②\">attributes</a></code>\",\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes\" id=\"ref-for-dom-sanitizerconfig-removeattributes①⓪\">removeAttributes</a></code>\" ]»:",
           "rationale": "if",
           "steps": [
             {
@@ -588,11 +588,11 @@
           "html": "<p>Let <var>default</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-configuration\" id=\"ref-for-canonicalize-a-configuration③\">canonicalizing a configuration</a> for the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#built-in-default-config\" id=\"ref-for-built-in-default-config⑤\">built-in default config</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+          "html": "If <var>safe</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+              "html": "If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements②①\">elements</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -604,7 +604,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+              "html": "If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements\" id=\"ref-for-dom-sanitizerconfig-removeelements①②\">removeElements</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exists</a>:",
               "rationale": "set",
               "steps": [
                 {
@@ -616,7 +616,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+              "html": "If neither <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements②⑦\">elements</a></code>\"] nor <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements\" id=\"ref-for-dom-sanitizerconfig-removeelements①⑤\">removeElements</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">exist</a>:",
               "rationale": "set",
               "steps": [
                 {
@@ -625,7 +625,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+              "html": "If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes\" id=\"ref-for-dom-sanitizerconfig-attributes①③\">attributes</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exists</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -637,7 +637,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+              "html": "If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes\" id=\"ref-for-dom-sanitizerconfig-removeattributes①①\">removeAttributes</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a>:",
               "rationale": "set",
               "steps": [
                 {
@@ -649,7 +649,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+              "html": "If neither <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes\" id=\"ref-for-dom-sanitizerconfig-attributes①⑨\">attributes</a></code>\"] nor <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes\" id=\"ref-for-dom-sanitizerconfig-removeattributes①④\">removeAttributes</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exist</a>:",
               "rationale": "set",
               "steps": [
                 {
@@ -660,11 +660,11 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+          "html": "Else (if not <var>safe</var>):",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+              "html": "If neither <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements③⓪\">elements</a></code>\"] nor <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements\" id=\"ref-for-dom-sanitizerconfig-removeelements①⑥\">removeElements</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exist</a>:",
               "rationale": "set",
               "steps": [
                 {
@@ -673,7 +673,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a configuration</dfn> <var>config</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a> <var>safe</var>:",
+              "html": "If neither <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes\" id=\"ref-for-dom-sanitizerconfig-attributes②②\">attributes</a></code>\"] nor <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes\" id=\"ref-for-dom-sanitizerconfig-removeattributes①⑤\">removeAttributes</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exist</a>:",
               "rationale": "set",
               "steps": [
                 {
@@ -741,7 +741,7 @@
           "html": "<p>Let <var>set</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">ordered set</a>.</p>"
         },
         {
-          "html": "Set difference (or set subtraction) is a clone of a set A, but with all members\nremoved that occur in a set B:\nTo compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"set\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-difference\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">difference</dfn> of two <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">ordered sets</a> <var>A</var> and <var>B</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>item</var> of <var>A</var>:",
           "rationale": "if",
           "steps": [
             {

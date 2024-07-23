@@ -17,14 +17,14 @@
           "html": "<p>Let <var>path</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/SVG2/paths.html#TermEquivalentPath\" id=\"ref-for-TermEquivalentPath①\">equivalent path</a> of the element.</p>"
         },
         {
-          "html": "The <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"stroke-shape\">stroke shape<a class=\"self-link\" href=\"https://drafts.fxtf.org/fill-stroke-3/#stroke-shape\"></a></dfn> of an element is the shape that is filled by the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke\" id=\"ref-for-propdef-stroke④\">stroke</a> property.\n\t\tThe following algorithm describes what the stroke shape of text, a <code><a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/paths.html#elementdef-path\" id=\"ref-for-elementdef-path④\">path</a></code>, or basic shape is,\n\t\ttaking into account the stroking properties above:",
+          "html": "For each <var>subpath</var> of <var>path</var>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>positions</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/fill-stroke-3/#dash-positions\" id=\"ref-for-dash-positions\">dash positions</a> for the <var>subpath</var>.</p>"
             },
             {
-              "html": "The <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"stroke-shape\">stroke shape<a class=\"self-link\" href=\"https://drafts.fxtf.org/fill-stroke-3/#stroke-shape\"></a></dfn> of an element is the shape that is filled by the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke\" id=\"ref-for-propdef-stroke④\">stroke</a> property.\n\t\tThe following algorithm describes what the stroke shape of text, a <code><a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/paths.html#elementdef-path\" id=\"ref-for-elementdef-path④\">path</a></code>, or basic shape is,\n\t\ttaking into account the stroking properties above:",
+              "html": "For each pair (<var>start</var>, <var>end</var>) in <var>positions</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -40,7 +40,7 @@
                   "html": "<p>Let <var>index</var> and <var>last</var> be the indexes of the path segments in the subpath at distance start and end along the subpath.</p>"
                 },
                 {
-                  "html": "The <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"stroke-shape\">stroke shape<a class=\"self-link\" href=\"https://drafts.fxtf.org/fill-stroke-3/#stroke-shape\"></a></dfn> of an element is the shape that is filled by the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke\" id=\"ref-for-propdef-stroke④\">stroke</a> property.\n\t\tThe following algorithm describes what the stroke shape of text, a <code><a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/paths.html#elementdef-path\" id=\"ref-for-elementdef-path④\">path</a></code>, or basic shape is,\n\t\ttaking into account the stroking properties above:",
+                  "html": "While <var>index</var> &lt; <var>last</var>:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -109,7 +109,7 @@
           "html": "<p>Let <var>position</var> be <var>dashlength</var>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dash-positions\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dash positions</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given subpath\n\t\tof the equivalent path of a <code><a data-link-type=\"element\" href=\"https://www.w3.org/TR/SVG2/paths.html#elementdef-path\" id=\"ref-for-elementdef-path⑤\">path</a></code> or basic shape\n\t\tis a sequence of pairs of values,\n\t\twhich represent the starting and ending distance along the subpath\n\t\tfor each of the dashes that form the subpath’s stroke.\n\t\tIt is determined as follows:",
+          "html": "While <var>position</var> &lt; <var>pathlength</var>:",
           "rationale": "set",
           "steps": [
             {
@@ -141,7 +141,7 @@
           "html": "<p>If <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke-linecap\" id=\"ref-for-propdef-stroke-linecap④\">stroke-linecap</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.fxtf.org/fill-stroke-3/#valdef-stroke-linecap-butt\" id=\"ref-for-valdef-stroke-linecap-butt①\">butt</a>, then return an empty shape.</p>"
         },
         {
-          "html": "The starting and ending <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"cap-shapes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cap shapes</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> at a given <var>position</var> along a subpath are determined as follows: \n    \n    <figure>\n      <img src=\"https://drafts.fxtf.org/fill-stroke-3/images/linecap-construction.svg\"> \n     <figcaption>\n       The three different stroke-linecap values used on paths with a single, non-zero length subpath.\n\t\t\t\tThe white line is the path itself\n\t\t\t\tand the thick gray area is the stroke. \n      <p>On the top row, the green lines indicate the perpendicular to the tangent at the path endpoints\n\t\t\t\tand the pink areas are the caps.\n\t\t\t\tThe bottom row shows the stroke without the perpendicular and cap highlighting.</p>\n     </figcaption>\n    </figure>",
+          "html": "Otherwise, if <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke-linecap\" id=\"ref-for-propdef-stroke-linecap⑤\">stroke-linecap</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.fxtf.org/fill-stroke-3/#valdef-stroke-linecap-round\" id=\"ref-for-valdef-stroke-linecap-round①\">round</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -153,7 +153,7 @@
           ]
         },
         {
-          "html": "The starting and ending <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"cap-shapes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cap shapes</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> at a given <var>position</var> along a subpath are determined as follows: \n    \n    <figure>\n      <img src=\"https://drafts.fxtf.org/fill-stroke-3/images/linecap-construction.svg\"> \n     <figcaption>\n       The three different stroke-linecap values used on paths with a single, non-zero length subpath.\n\t\t\t\tThe white line is the path itself\n\t\t\t\tand the thick gray area is the stroke. \n      <p>On the top row, the green lines indicate the perpendicular to the tangent at the path endpoints\n\t\t\t\tand the pink areas are the caps.\n\t\t\t\tThe bottom row shows the stroke without the perpendicular and cap highlighting.</p>\n     </figcaption>\n    </figure>",
+          "html": "Otherwise, <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke-linecap\" id=\"ref-for-propdef-stroke-linecap⑥\">stroke-linecap</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.fxtf.org/fill-stroke-3/#valdef-stroke-linecap-square\" id=\"ref-for-valdef-stroke-linecap-square①\">square</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -191,7 +191,7 @@
           "html": "<p>Let |B<sub>left</sub>| and |B<sub>right</sub>|\nbe lines parallel to <var>B</var> at a distance of <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke-width\" id=\"ref-for-propdef-stroke-width①①\">stroke-width</a> / 2\nto the left and to the right of <var>B</var> relative to the subpath direction,\nrespectively.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"line-join-shape\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">line join shape</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given segment of a subpath is determined as follows: \n    \n    <figure>\n      <img src=\"https://drafts.fxtf.org/fill-stroke-3/images/linejoin-construction.svg\"> \n     <figcaption> Construction of a round line join shape, shown in pink.\n\t\t\t\tThe white line is the original path,\n\t\t\t\twhich has two segments that come to a point,\n\t\t\t\tand the gray region is the stroke. </figcaption>\n    </figure>\n    <figure>\n      <img src=\"https://drafts.fxtf.org/fill-stroke-3/images/linejoin-construction-arcs.svg\"> \n     <figcaption> Construction of an arcs line join shape, shown in pink.\n\t\t\t\tThe white line is the original path,\n\t\t\t\twhich has two segments that come to a point,\n\t\t\t\tand the gray region is the stroke.\n\t\t\t\tThe dashed lines show circles that are tangent to\n\t\t\t\tand have the curvature of\n\t\t\t\tthe segments at the join.\n\t\t\t\tThe olive-green circles\n\t\t\t\t(concentric with the dashed circles)\n\t\t\t\tdefine the join shape. </figcaption>\n    </figure>",
+          "html": "Let |P<sub>1</sub>|, |P<sub>2</sub>| and |P<sub>3</sub>| be points determined as follows:",
           "rationale": "if",
           "steps": [
             {

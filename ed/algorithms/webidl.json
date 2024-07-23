@@ -17,7 +17,7 @@
           "html": "<p>Let <var>interface</var> be <var>I</var>.</p>"
         },
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"interface\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"interface-inclusive-inherited-interfaces\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">inclusive inherited interfaces</dfn> of an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface⑦\">interface</a> <var>I</var> is defined as follows:",
+          "html": "While <var>interface</var> is not null:",
           "rationale": "append",
           "steps": [
             {
@@ -43,7 +43,7 @@
           "html": "<p>Let <var>identifier</var> be the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier①⓪\">identifier</a> of <var>interface</var>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"qualified-name\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">qualified name</dfn> of an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①③\">interface</a> <var>interface</var> is defined as follows:",
+          "html": "If <var>interface</var> has a [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyNamespace\" id=\"ref-for-LegacyNamespace\">LegacyNamespace</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute④\">extended attribute</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -170,7 +170,7 @@
           "html": "<p>Let <var>S</var> be the sequence of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value\" id=\"ref-for-scalar-value⑤\">scalar values</a> matched by\nthe <emu-t class=\"regex\"><a href=\"https://webidl.spec.whatwg.org/#prod-string\">string</a></emu-t> token\nwith its leading and trailing U+0022 (\") <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value\" id=\"ref-for-scalar-value⑥\">scalar values</a> removed.</p>"
         },
         {
-          "html": "Optional argument default values can also be specified using a <emu-t class=\"regex\"><a href=\"https://webidl.spec.whatwg.org/#prod-string\">string</a></emu-t> token, whose <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"value of string literal tokens\" data-noexport=\"\" id=\"value-of-string-literal-tokens\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">value</dfn> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-string-type\" id=\"ref-for-dfn-string-type\">string type</a> determined as follows:",
+          "html": "Depending on the type of the argument:",
           "rationale": ".switch",
           "steps": [
             {
@@ -208,7 +208,7 @@
           "html": "<p>Let <var>S</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">ordered set</a>.</p>"
         },
         {
-          "html": "The algorithm below describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-effective-overload-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the effective overload set</dfn>.\n    The following input variables are used, if they are required: \n    <ul>\n     <li data-md=\"\">\n      <p>the identifier of the operation or legacy factory function is <var>A</var></p>\n     </li><li data-md=\"\">\n      <p>the argument count is <var>N</var></p>\n     </li><li data-md=\"\">\n      <p>the interface is <var>I</var></p>\n    </li></ul>\n    <p>Whenever an argument of an extended attribute is mentioned,\n    it is referring to an argument of the extended attribute’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-xattr-named-argument-list\" id=\"ref-for-dfn-xattr-named-argument-list\">named argument list</a>.</p>",
+          "html": "Let <var>F</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">ordered set</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①\">items</a> as follows,\naccording to the kind of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-effective-overload-set\" id=\"ref-for-dfn-effective-overload-set⑤\">effective overload set</a>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -241,7 +241,7 @@
           "html": "<p>Let <var>max</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#eqn-max\" id=\"ref-for-eqn-max\">max</a>(<var>maxarg</var>, <var>N</var>).</p>"
         },
         {
-          "html": "The algorithm below describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-effective-overload-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the effective overload set</dfn>.\n    The following input variables are used, if they are required: \n    <ul>\n     <li data-md=\"\">\n      <p>the identifier of the operation or legacy factory function is <var>A</var></p>\n     </li><li data-md=\"\">\n      <p>the argument count is <var>N</var></p>\n     </li><li data-md=\"\">\n      <p>the interface is <var>I</var></p>\n    </li></ul>\n    <p>Whenever an argument of an extended attribute is mentioned,\n    it is referring to an argument of the extended attribute’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-xattr-named-argument-list\" id=\"ref-for-dfn-xattr-named-argument-list\">named argument list</a>.</p>",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> operation or extended attribute <var>X</var> in <var>F</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -257,7 +257,7 @@
               "html": "<p>Let <var>optionalityValues</var> be an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#optionality-list\" id=\"ref-for-optionality-list①\">optionality list</a>.</p>"
             },
             {
-              "html": "The algorithm below describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-effective-overload-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the effective overload set</dfn>.\n    The following input variables are used, if they are required: \n    <ul>\n     <li data-md=\"\">\n      <p>the identifier of the operation or legacy factory function is <var>A</var></p>\n     </li><li data-md=\"\">\n      <p>the argument count is <var>N</var></p>\n     </li><li data-md=\"\">\n      <p>the interface is <var>I</var></p>\n    </li></ul>\n    <p>Whenever an argument of an extended attribute is mentioned,\n    it is referring to an argument of the extended attribute’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-xattr-named-argument-list\" id=\"ref-for-dfn-xattr-named-argument-list\">named argument list</a>.</p>",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>argument</var> in <var>arguments</var>:",
               "rationale": "append",
               "steps": [
                 {
@@ -272,11 +272,11 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple②\">tuple</a> (<var>X</var>, <var>types</var>, <var>optionalityValues</var>) to <var>S</var>.</p>"
             },
             {
-              "html": "The algorithm below describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-effective-overload-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the effective overload set</dfn>.\n    The following input variables are used, if they are required: \n    <ul>\n     <li data-md=\"\">\n      <p>the identifier of the operation or legacy factory function is <var>A</var></p>\n     </li><li data-md=\"\">\n      <p>the argument count is <var>N</var></p>\n     </li><li data-md=\"\">\n      <p>the interface is <var>I</var></p>\n    </li></ul>\n    <p>Whenever an argument of an extended attribute is mentioned,\n    it is referring to an argument of the extended attribute’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-xattr-named-argument-list\" id=\"ref-for-dfn-xattr-named-argument-list\">named argument list</a>.</p>",
+              "html": "If <var>X</var> is declared to be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-variadic\" id=\"ref-for-dfn-variadic⑧\">variadic</a>, then:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "The algorithm below describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-effective-overload-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the effective overload set</dfn>.\n    The following input variables are used, if they are required: \n    <ul>\n     <li data-md=\"\">\n      <p>the identifier of the operation or legacy factory function is <var>A</var></p>\n     </li><li data-md=\"\">\n      <p>the argument count is <var>N</var></p>\n     </li><li data-md=\"\">\n      <p>the interface is <var>I</var></p>\n    </li></ul>\n    <p>Whenever an argument of an extended attribute is mentioned,\n    it is referring to an argument of the extended attribute’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-xattr-named-argument-list\" id=\"ref-for-dfn-xattr-named-argument-list\">named argument list</a>.</p>",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the range</a> <var>n</var> to <var>max</var> − 1, inclusive:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -286,7 +286,7 @@
                       "html": "<p>Let <var>o</var> be an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#optionality-list\" id=\"ref-for-optionality-list②\">optionality list</a>.</p>"
                     },
                     {
-                      "html": "The algorithm below describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-effective-overload-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the effective overload set</dfn>.\n    The following input variables are used, if they are required: \n    <ul>\n     <li data-md=\"\">\n      <p>the identifier of the operation or legacy factory function is <var>A</var></p>\n     </li><li data-md=\"\">\n      <p>the argument count is <var>N</var></p>\n     </li><li data-md=\"\">\n      <p>the interface is <var>I</var></p>\n    </li></ul>\n    <p>Whenever an argument of an extended attribute is mentioned,\n    it is referring to an argument of the extended attribute’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-xattr-named-argument-list\" id=\"ref-for-dfn-xattr-named-argument-list\">named argument list</a>.</p>",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>j</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①\">the range</a> 0 to <var>n</var> − 1, inclusive:",
                       "rationale": "append",
                       "steps": [
                         {
@@ -298,7 +298,7 @@
                       ]
                     },
                     {
-                      "html": "The algorithm below describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-effective-overload-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the effective overload set</dfn>.\n    The following input variables are used, if they are required: \n    <ul>\n     <li data-md=\"\">\n      <p>the identifier of the operation or legacy factory function is <var>A</var></p>\n     </li><li data-md=\"\">\n      <p>the argument count is <var>N</var></p>\n     </li><li data-md=\"\">\n      <p>the interface is <var>I</var></p>\n    </li></ul>\n    <p>Whenever an argument of an extended attribute is mentioned,\n    it is referring to an argument of the extended attribute’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-xattr-named-argument-list\" id=\"ref-for-dfn-xattr-named-argument-list\">named argument list</a>.</p>",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>j</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range②\">the range</a> <var>n</var> to <var>i</var>, inclusive:",
                       "rationale": "append",
                       "steps": [
                         {
@@ -320,7 +320,7 @@
               "html": "<p>Let <var>i</var> be <var>n</var> − 1.</p>"
             },
             {
-              "html": "The algorithm below describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-effective-overload-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the effective overload set</dfn>.\n    The following input variables are used, if they are required: \n    <ul>\n     <li data-md=\"\">\n      <p>the identifier of the operation or legacy factory function is <var>A</var></p>\n     </li><li data-md=\"\">\n      <p>the argument count is <var>N</var></p>\n     </li><li data-md=\"\">\n      <p>the interface is <var>I</var></p>\n    </li></ul>\n    <p>Whenever an argument of an extended attribute is mentioned,\n    it is referring to an argument of the extended attribute’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-xattr-named-argument-list\" id=\"ref-for-dfn-xattr-named-argument-list\">named argument list</a>.</p>",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while\">While</a> <var>i</var> ≥ 0:",
               "rationale": "if",
               "steps": [
                 {
@@ -333,7 +333,7 @@
                   "html": "<p>Let <var>o</var> be an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#optionality-list\" id=\"ref-for-optionality-list③\">optionality list</a>.</p>"
                 },
                 {
-                  "html": "The algorithm below describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-effective-overload-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the effective overload set</dfn>.\n    The following input variables are used, if they are required: \n    <ul>\n     <li data-md=\"\">\n      <p>the identifier of the operation or legacy factory function is <var>A</var></p>\n     </li><li data-md=\"\">\n      <p>the argument count is <var>N</var></p>\n     </li><li data-md=\"\">\n      <p>the interface is <var>I</var></p>\n    </li></ul>\n    <p>Whenever an argument of an extended attribute is mentioned,\n    it is referring to an argument of the extended attribute’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-xattr-named-argument-list\" id=\"ref-for-dfn-xattr-named-argument-list\">named argument list</a>.</p>",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>j</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range③\">the range</a> 0 to <var>i</var> − 1, inclusive:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -395,7 +395,7 @@
           "html": "<p>Initialize <var>S</var> to ∅.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"union\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-flattened-union-member-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">flattened member types</dfn> of a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-union-type\" id=\"ref-for-dfn-union-type②③\">union type</a>, possibly <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#annotated-types\" id=\"ref-for-annotated-types②\">annotated</a>, is a set of types determined as\n    follows:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-union-member-type\" id=\"ref-for-dfn-union-member-type⑤\">member type</a> <var>U</var> of <var>T</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -430,11 +430,11 @@
           "html": "<p>Initialize <var>n</var> to 0.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-number-of-nullable-member-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">number of nullable member types</dfn> of a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-union-type\" id=\"ref-for-dfn-union-type②⑧\">union type</a> is an integer\n    determined as follows:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-union-member-type\" id=\"ref-for-dfn-union-member-type⑥\">member type</a> <var>U</var> of <var>T</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-number-of-nullable-member-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">number of nullable member types</dfn> of a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-union-type\" id=\"ref-for-dfn-union-type②⑧\">union type</a> is an integer\n    determined as follows:",
+              "html": "If <var>U</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-nullable-type\" id=\"ref-for-dfn-nullable-type①⑦\">nullable type</a>, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -446,7 +446,7 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-number-of-nullable-member-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">number of nullable member types</dfn> of a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-union-type\" id=\"ref-for-dfn-union-type②⑧\">union type</a> is an integer\n    determined as follows:",
+              "html": "If <var>U</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-union-type\" id=\"ref-for-dfn-union-type③⓪\">union type</a>, then:",
               "rationale": "let",
               "steps": [
                 {
@@ -675,7 +675,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"ConvertToInt\" id=\"abstract-opdef-converttoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ConvertToInt(<var>V</var>, <var>bitLength</var>, <var>signedness</var>)</dfn>:",
+          "html": "If <var>bitLength</var> is 64, then:",
           "rationale": "let",
           "steps": [
             {
@@ -690,7 +690,7 @@
           ]
         },
         {
-          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"ConvertToInt\" id=\"abstract-opdef-converttoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ConvertToInt(<var>V</var>, <var>bitLength</var>, <var>signedness</var>)</dfn>:",
+          "html": "Otherwise, if <var>signedness</var> is \"<code>unsigned</code>\", then:",
           "rationale": "let",
           "steps": [
             {
@@ -702,7 +702,7 @@
           ]
         },
         {
-          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"ConvertToInt\" id=\"abstract-opdef-converttoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ConvertToInt(<var>V</var>, <var>bitLength</var>, <var>signedness</var>)</dfn>:",
+          "html": "Otherwise:",
           "rationale": "let",
           "steps": [
             {
@@ -720,7 +720,7 @@
           "html": "<p>If <var>x</var> is −0, then set <var>x</var> to +0.</p>"
         },
         {
-          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"ConvertToInt\" id=\"abstract-opdef-converttoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ConvertToInt(<var>V</var>, <var>bitLength</var>, <var>signedness</var>)</dfn>:",
+          "html": "If the conversion is to an IDL type <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-type-extended-attribute-associated-with\" id=\"ref-for-idl-type-extended-attribute-associated-with④\">associated with</a> the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#EnforceRange\" id=\"ref-for-EnforceRange②\">EnforceRange</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute③④\">extended attribute</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -738,7 +738,7 @@
           ]
         },
         {
-          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"ConvertToInt\" id=\"abstract-opdef-converttoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ConvertToInt(<var>V</var>, <var>bitLength</var>, <var>signedness</var>)</dfn>:",
+          "html": "If <var>x</var> is not <emu-val>NaN</emu-val> and the conversion is to an IDL type <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-type-extended-attribute-associated-with\" id=\"ref-for-idl-type-extended-attribute-associated-with⑤\">associated with</a> the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Clamp\" id=\"ref-for-Clamp③\">Clamp</a></code>] extended attribute,\nthen:",
           "rationale": "set",
           "steps": [
             {
@@ -927,7 +927,7 @@
           "html": "<p>Let <var>x</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑤\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumeric\" id=\"ref-for-sec-tonumeric\">ToNumeric</a>(<var>V</var>).</p>"
         },
         {
-          "html": "A JavaScript value <var>V</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"converted to a numeric type or bigint\" data-noexport=\"\" id=\"converted-to-a-numeric-type-or-bigint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">converted</dfn> to an IDL <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-numeric-type\" id=\"ref-for-dfn-numeric-type⑨\">numeric type</a> <var>T</var> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-bigint\" id=\"ref-for-idl-bigint①①\">bigint</a></code> value by running the following algorithm:",
+          "html": "If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑥\">Type</a>(<var>x</var>) is BigInt, then",
           "rationale": "return",
           "steps": [
             {
@@ -1524,7 +1524,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"promise\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"react|reacting\" id=\"dfn-perform-steps-once-promise-is-settled\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">react</dfn> to a <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise⑧\">Promise</a>&lt;<var>T</var>&gt;</code> <var>promise</var>, given one or two sets of steps\n    to perform, covering when the promise is fulfilled, rejected, or both, perform the following\n    steps:",
+          "html": "Let <var>onFulfilledSteps</var> be the following steps given argument <var>V</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1542,7 +1542,7 @@
           "html": "<p>Let <var>onFulfilled</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction\">CreateBuiltinFunction</a>(<var>onFulfilledSteps</var>, « »):</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"promise\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"react|reacting\" id=\"dfn-perform-steps-once-promise-is-settled\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">react</dfn> to a <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise⑧\">Promise</a>&lt;<var>T</var>&gt;</code> <var>promise</var>, given one or two sets of steps\n    to perform, covering when the promise is fulfilled, rejected, or both, perform the following\n    steps:",
+          "html": "Let <var>onRejectedSteps</var> be the following steps given argument <var>R</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1577,7 +1577,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To perform some steps <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"upon-fulfillment\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">upon fulfillment</dfn> of a <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①②\">Promise</a>&lt;<var>T</var>&gt;</code> <var>promise</var> given some steps <var>steps</var> taking a\n    value of type <var>T</var>, perform the following steps:",
+          "html": "If <var>promise</var> was fulfilled with value <var>v</var>, then:",
           "rationale": "perform",
           "steps": [
             {
@@ -1594,7 +1594,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To perform some steps <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"upon-rejection\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">upon rejection</dfn> of a <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①③\">Promise</a>&lt;<var>T</var>&gt;</code> <var>promise</var> given some steps <var>steps</var> taking a JavaScript value, perform the following steps:",
+          "html": "If <var>promise</var> was rejected with reason <var>r</var>, then:",
           "rationale": "perform",
           "steps": [
             {
@@ -1617,7 +1617,7 @@
           "html": "<p>Let <var>rejected</var> be false.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"wait for all|waiting for all\" id=\"wait-for-all\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">wait for all</dfn> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a> of <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①④\">Promise</a>&lt;<var>T</var>&gt;</code> values <var>promises</var>, with success steps <var>successSteps</var> that take a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a> of <var>T</var> values and failure steps <var>failureSteps</var> that take a\n    rejection reason <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-any\" id=\"ref-for-idl-any①④\">any</a></code> value, perform the following steps:",
+          "html": "Let <var>rejectionHandlerSteps</var> be the following steps given <var>arg</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1638,7 +1638,7 @@
           "html": "<p>Let <var>total</var> be <var>promises</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③\">size</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"wait for all|waiting for all\" id=\"wait-for-all\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">wait for all</dfn> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a> of <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①④\">Promise</a>&lt;<var>T</var>&gt;</code> values <var>promises</var>, with success steps <var>successSteps</var> that take a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a> of <var>T</var> values and failure steps <var>failureSteps</var> that take a\n    rejection reason <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-any\" id=\"ref-for-idl-any①④\">any</a></code> value, perform the following steps:",
+          "html": "If <var>total</var> is 0, then:",
           "rationale": "queue",
           "steps": [
             {
@@ -1656,14 +1656,14 @@
           "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a> containing <var>total</var> null values.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"wait for all|waiting for all\" id=\"wait-for-all\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">wait for all</dfn> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a> of <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①④\">Promise</a>&lt;<var>T</var>&gt;</code> values <var>promises</var>, with success steps <var>successSteps</var> that take a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a> of <var>T</var> values and failure steps <var>failureSteps</var> that take a\n    rejection reason <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-any\" id=\"ref-for-idl-any①④\">any</a></code> value, perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>promise</var> of <var>promises</var>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>promiseIndex</var> be <var>index</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"wait for all|waiting for all\" id=\"wait-for-all\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">wait for all</dfn> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a> of <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①④\">Promise</a>&lt;<var>T</var>&gt;</code> values <var>promises</var>, with success steps <var>successSteps</var> that take a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a> of <var>T</var> values and failure steps <var>failureSteps</var> that take a\n    rejection reason <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-any\" id=\"ref-for-idl-any①④\">any</a></code> value, perform the following steps:",
+              "html": "Let <var>fulfillmentHandler</var> be the following steps given <var>arg</var>:",
               "rationale": "set",
               "steps": [
                 {
@@ -1700,7 +1700,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> of type <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①⑥\">Promise</a>&lt;<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#sequence-type\" id=\"ref-for-sequence-type①⑧\">sequence</a>&lt;<var>T</var>&gt;&gt;</code> in <var>realm</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"get a promise to wait for all|getting a promise to wait for all\" id=\"waiting-for-all-promise\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a promise for waiting for all</dfn> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①③\">list</a> of <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①⑤\">Promise</a>&lt;<var>T</var>&gt;</code> values <var>promises</var> and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm①①\">realm</a> <var>realm</var>, perform the following steps:",
+          "html": "Let <var>successSteps</var> be the following steps, given <var>results</var>:",
           "rationale": "resolve",
           "steps": [
             {
@@ -1709,7 +1709,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"get a promise to wait for all|getting a promise to wait for all\" id=\"waiting-for-all-promise\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a promise for waiting for all</dfn> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①③\">list</a> of <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①⑤\">Promise</a>&lt;<var>T</var>&gt;</code> values <var>promises</var> and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm①①\">realm</a> <var>realm</var>, perform the following steps:",
+          "html": "Let <var>failureSteps</var> be the following steps, given <var>reason</var>:",
           "rationale": "reject",
           "steps": [
             {
@@ -2075,7 +2075,7 @@
           "html": "<p>Let <var>length</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"get a copy of the buffer source|get a copy of the bytes held by the buffer source\" id=\"dfn-get-buffer-source-copy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a copy of the bytes held by the buffer source</dfn> given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-buffer-source-type\" id=\"ref-for-dfn-buffer-source-type③\">buffer source type</a> instance <var>bufferSource</var>:",
+          "html": "If <var>jsBufferSource</var> has a [[ViewedArrayBuffer]] <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots\" id=\"ref-for-sec-object-internal-methods-and-internal-slots⑨\">internal slot</a>, then:",
           "rationale": "set",
           "steps": [
             {
@@ -2090,7 +2090,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"get a copy of the buffer source|get a copy of the bytes held by the buffer source\" id=\"dfn-get-buffer-source-copy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a copy of the bytes held by the buffer source</dfn> given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-buffer-source-type\" id=\"ref-for-dfn-buffer-source-type③\">buffer source type</a> instance <var>bufferSource</var>:",
+          "html": "Otherwise:",
           "rationale": "assert",
           "steps": [
             {
@@ -2413,7 +2413,7 @@
           "html": "<p>Let <var>H</var> be <var>C</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#host-interfaces\" id=\"ref-for-host-interfaces①\">host interface</a> if <var>C</var> is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#interface-mixin-member\" id=\"ref-for-interface-mixin-member①④\">interface mixin member</a>, or null otherwise.</p>"
         },
         {
-          "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-exposure-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">exposure set</dfn> of a construct <var>C</var>,\n    run the following steps:",
+          "html": "If <var>C</var> is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-member\" id=\"ref-for-dfn-interface-member①③\">interface member</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#interface-mixin-member\" id=\"ref-for-interface-mixin-member①⑤\">interface mixin member</a>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-member\" id=\"ref-for-dfn-namespace-member①⓪\">namespace member</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -2425,7 +2425,7 @@
           ]
         },
         {
-          "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-exposure-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">exposure set</dfn> of a construct <var>C</var>,\n    run the following steps:",
+          "html": "If <var>C</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-partial-interface\" id=\"ref-for-dfn-partial-interface①④\">partial interface</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#partial-interface-mixin\" id=\"ref-for-partial-interface-mixin①①\">partial interface mixin</a>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-partial-namespace\" id=\"ref-for-dfn-partial-namespace⑦\">partial namespace</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -2437,7 +2437,7 @@
           ]
         },
         {
-          "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-exposure-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">exposure set</dfn> of a construct <var>C</var>,\n    run the following steps:",
+          "html": "If <var>C</var> is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#interface-mixin\" id=\"ref-for-interface-mixin③⑧\">interface mixin</a>, then:",
           "rationale": "assert",
           "steps": [
             {
@@ -2495,7 +2495,7 @@
           "html": "<p>Let <var>H</var> be <var>construct</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#host-interfaces\" id=\"ref-for-host-interfaces④\">host interface</a> if <var>construct</var> is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#interface-mixin-member\" id=\"ref-for-interface-mixin-member②③\">interface mixin member</a>,\nor null otherwise.</p>"
         },
         {
-          "html": "An <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①②⑧\">interface</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-interface\" id=\"ref-for-dfn-callback-interface③①\">callback interface</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace②①\">namespace</a>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-member\" id=\"ref-for-dfn-member①⑥\">member</a> <var>construct</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-conditionally-exposed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">conditionally exposed</dfn> on a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute⑦⑧\">extended attribute</a> <var>exposure condition</var> if the following steps return true:",
+          "html": "If <var>construct</var> is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-member\" id=\"ref-for-dfn-interface-member①⑦\">interface member</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#interface-mixin-member\" id=\"ref-for-interface-mixin-member②④\">interface mixin member</a>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-member\" id=\"ref-for-dfn-namespace-member①④\">namespace member</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -2507,7 +2507,7 @@
           ]
         },
         {
-          "html": "An <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①②⑧\">interface</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-interface\" id=\"ref-for-dfn-callback-interface③①\">callback interface</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace②①\">namespace</a>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-member\" id=\"ref-for-dfn-member①⑥\">member</a> <var>construct</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-conditionally-exposed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">conditionally exposed</dfn> on a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute⑦⑧\">extended attribute</a> <var>exposure condition</var> if the following steps return true:",
+          "html": "If <var>construct</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-partial-interface\" id=\"ref-for-dfn-partial-interface①⑨\">partial interface</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#partial-interface-mixin\" id=\"ref-for-partial-interface-mixin①⑧\">partial interface mixin</a>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-partial-namespace\" id=\"ref-for-dfn-partial-namespace①②\">partial namespace</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -2519,7 +2519,7 @@
           ]
         },
         {
-          "html": "An <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①②⑧\">interface</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-interface\" id=\"ref-for-dfn-callback-interface③①\">callback interface</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace②①\">namespace</a>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-member\" id=\"ref-for-dfn-member①⑥\">member</a> <var>construct</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-conditionally-exposed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">conditionally exposed</dfn> on a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute⑦⑧\">extended attribute</a> <var>exposure condition</var> if the following steps return true:",
+          "html": "If <var>construct</var> is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#interface-mixin\" id=\"ref-for-interface-mixin④⑦\">interface mixin</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -2599,7 +2599,7 @@
           "html": "<p>Initialize <var>i</var> to 0.</p>"
         },
         {
-          "html": "In order to define how function invocations are resolved, the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-overload-resolution-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">overload resolution algorithm</dfn> is defined.  Its input is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-effective-overload-set\" id=\"ref-for-dfn-effective-overload-set①②\">effective overload set</a>, <var>S</var>, and a list of JavaScript values, <var>args</var>.\n    Its output is a pair consisting of the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑤⑥\">operation</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①①⑨\">extended attribute</a> of one of <var>S</var>’s entries\n    and a list of IDL values or the special value “missing”.  The algorithm behaves as follows:",
+          "html": "While <var>i</var> &lt; <var>d</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -2612,7 +2612,7 @@
               "html": "<p>Let <var>optionality</var> be the value at index <var>i</var> in the list of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-optionality-value\" id=\"ref-for-dfn-optionality-value②\">optionality values</a> of any entry in <var>S</var>.</p>"
             },
             {
-              "html": "In order to define how function invocations are resolved, the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-overload-resolution-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">overload resolution algorithm</dfn> is defined.  Its input is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-effective-overload-set\" id=\"ref-for-dfn-effective-overload-set①②\">effective overload set</a>, <var>S</var>, and a list of JavaScript values, <var>args</var>.\n    Its output is a pair consisting of the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑤⑥\">operation</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①①⑨\">extended attribute</a> of one of <var>S</var>’s entries\n    and a list of IDL values or the special value “missing”.  The algorithm behaves as follows:",
+              "html": "If <var>optionality</var> is “optional” and <var>V</var> is <emu-val>undefined</emu-val>, then:",
               "rationale": "if",
               "steps": [
                 {
@@ -2632,7 +2632,7 @@
           ]
         },
         {
-          "html": "In order to define how function invocations are resolved, the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-overload-resolution-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">overload resolution algorithm</dfn> is defined.  Its input is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-effective-overload-set\" id=\"ref-for-dfn-effective-overload-set①②\">effective overload set</a>, <var>S</var>, and a list of JavaScript values, <var>args</var>.\n    Its output is a pair consisting of the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑤⑥\">operation</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①①⑨\">extended attribute</a> of one of <var>S</var>’s entries\n    and a list of IDL values or the special value “missing”.  The algorithm behaves as follows:",
+          "html": "If <var>i</var> = <var>d</var>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -2660,7 +2660,7 @@
               "html": "<p>Otherwise: if <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable⑥\">IsCallable</a>(<var>V</var>) is true,\nand there is an entry in <var>S</var> that has one of the following types at position <var>i</var> of its type list,</p>\n        <ul>\n         <li data-md=\"\">\n          <p>a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-function\" id=\"ref-for-dfn-callback-function③①\">callback function</a> type</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-object\" id=\"ref-for-idl-object②④\">object</a></code></p>\n         </li><li data-md=\"\">\n          <p>a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-nullable-type\" id=\"ref-for-dfn-nullable-type③⑨\">nullable</a> version of any of the above types</p>\n         </li><li data-md=\"\">\n          <p>an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#annotated-types\" id=\"ref-for-annotated-types①⑨\">annotated type</a> whose <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#annotated-types-inner-type\" id=\"ref-for-annotated-types-inner-type①①\">inner type</a> is one of the above types</p>\n         </li><li data-md=\"\">\n          <p>a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-union-type\" id=\"ref-for-dfn-union-type④⑦\">union type</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-nullable-type\" id=\"ref-for-dfn-nullable-type④⓪\">nullable</a> union type, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#annotated-types\" id=\"ref-for-annotated-types②⓪\">annotated</a> union type\nthat has one of the above types in its <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-flattened-union-member-types\" id=\"ref-for-dfn-flattened-union-member-types①⑦\">flattened member types</a></p>\n        </li></ul>\n        <p>then remove from <var>S</var> all other entries.</p>"
             },
             {
-              "html": "In order to define how function invocations are resolved, the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-overload-resolution-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">overload resolution algorithm</dfn> is defined.  Its input is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-effective-overload-set\" id=\"ref-for-dfn-effective-overload-set①②\">effective overload set</a>, <var>S</var>, and a list of JavaScript values, <var>args</var>.\n    Its output is a pair consisting of the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑤⑥\">operation</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①①⑨\">extended attribute</a> of one of <var>S</var>’s entries\n    and a list of IDL values or the special value “missing”.  The algorithm behaves as follows:",
+              "html": "and after performing the following steps,",
               "rationale": "let",
               "steps": [
                 {
@@ -2704,7 +2704,7 @@
           "html": "<p>Let <var>callable</var> be the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑤⑦\">operation</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①②⓪\">extended attribute</a> of the single entry in <var>S</var>.</p>"
         },
         {
-          "html": "In order to define how function invocations are resolved, the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-overload-resolution-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">overload resolution algorithm</dfn> is defined.  Its input is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-effective-overload-set\" id=\"ref-for-dfn-effective-overload-set①②\">effective overload set</a>, <var>S</var>, and a list of JavaScript values, <var>args</var>.\n    Its output is a pair consisting of the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑤⑥\">operation</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①①⑨\">extended attribute</a> of one of <var>S</var>’s entries\n    and a list of IDL values or the special value “missing”.  The algorithm behaves as follows:",
+          "html": "If <var>i</var> = <var>d</var> and <var>method</var> is not <emu-val>undefined</emu-val>, then",
           "rationale": "let",
           "steps": [
             {
@@ -2725,7 +2725,7 @@
           ]
         },
         {
-          "html": "In order to define how function invocations are resolved, the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-overload-resolution-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">overload resolution algorithm</dfn> is defined.  Its input is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-effective-overload-set\" id=\"ref-for-dfn-effective-overload-set①②\">effective overload set</a>, <var>S</var>, and a list of JavaScript values, <var>args</var>.\n    Its output is a pair consisting of the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑤⑥\">operation</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①①⑨\">extended attribute</a> of one of <var>S</var>’s entries\n    and a list of IDL values or the special value “missing”.  The algorithm behaves as follows:",
+          "html": "While <var>i</var> &lt; <var>argcount</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -2738,7 +2738,7 @@
               "html": "<p>Let <var>optionality</var> be the value at index <var>i</var> in the list of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-optionality-value\" id=\"ref-for-dfn-optionality-value④\">optionality values</a> of the remaining entry in <var>S</var>.</p>"
             },
             {
-              "html": "In order to define how function invocations are resolved, the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-overload-resolution-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">overload resolution algorithm</dfn> is defined.  Its input is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-effective-overload-set\" id=\"ref-for-dfn-effective-overload-set①②\">effective overload set</a>, <var>S</var>, and a list of JavaScript values, <var>args</var>.\n    Its output is a pair consisting of the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑤⑥\">operation</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①①⑨\">extended attribute</a> of one of <var>S</var>’s entries\n    and a list of IDL values or the special value “missing”.  The algorithm behaves as follows:",
+              "html": "If <var>optionality</var> is “optional” and <var>V</var> is <emu-val>undefined</emu-val>, then:",
               "rationale": "if",
               "steps": [
                 {
@@ -2758,7 +2758,7 @@
           ]
         },
         {
-          "html": "In order to define how function invocations are resolved, the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-overload-resolution-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">overload resolution algorithm</dfn> is defined.  Its input is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-effective-overload-set\" id=\"ref-for-dfn-effective-overload-set①②\">effective overload set</a>, <var>S</var>, and a list of JavaScript values, <var>args</var>.\n    Its output is a pair consisting of the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑤⑥\">operation</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①①⑨\">extended attribute</a> of one of <var>S</var>’s entries\n    and a list of IDL values or the special value “missing”.  The algorithm behaves as follows:",
+          "html": "While <var>i</var> is less than the number of arguments <var>callable</var> is declared to take:",
           "rationale": "if",
           "steps": [
             {
@@ -2804,7 +2804,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-object\" id=\"ref-for-dfn-interface-object①⑥\">interface object</a> for a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑥⑥\">interface</a> <var>I</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑥⑥\">identifier</a> <var>id</var> and in <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm②⑤\">realm</a> <var>realm</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create an interface object\" data-noexport=\"\" id=\"create-an-interface-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">created</dfn> as follows:",
+          "html": "Let <var>steps</var> be <var>I</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#overridden-constructor-steps\" id=\"ref-for-overridden-constructor-steps①\">overridden constructor steps</a> if they exist, or\nthe following steps otherwise:",
           "rationale": "if",
           "steps": [
             {
@@ -2876,7 +2876,7 @@
           "html": "<p>Let <var>length</var> be 0.</p>"
         },
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-object\" id=\"ref-for-dfn-interface-object①⑥\">interface object</a> for a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑥⑥\">interface</a> <var>I</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑥⑥\">identifier</a> <var>id</var> and in <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm②⑤\">realm</a> <var>realm</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create an interface object\" data-noexport=\"\" id=\"create-an-interface-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">created</dfn> as follows:",
+          "html": "If <var>I</var> was declared with a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-constructors\" id=\"ref-for-idl-constructors②④\">constructor operation</a>, then",
           "rationale": "compute",
           "steps": [
             {
@@ -2917,7 +2917,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-legacy-factory-function\" id=\"ref-for-dfn-legacy-factory-function③\">legacy factory function</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#legacyfactoryfunction-identifier\" id=\"ref-for-legacyfactoryfunction-identifier④\">identifier</a> <var>id</var> for a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑦③\">interface</a> <var>I</var> in <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm②⑥\">realm</a> <var>realm</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create a legacy factory function\" data-noexport=\"\" id=\"create-a-legacy-factory-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">created</dfn> as follows:",
+          "html": "Let <var>steps</var> be the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -3009,7 +3009,7 @@
           "html": "<p>Let <var>interfaceProtoObj</var> be null.</p>"
         },
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-prototype-object\" id=\"ref-for-dfn-interface-prototype-object①①\">interface prototype object</a> for a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑦⑧\">interface</a> <var>interface</var> and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm②⑦\">realm</a> <var>realm</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create an interface prototype object\" data-noexport=\"\" id=\"create-an-interface-prototype-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">created</dfn> as follows:",
+          "html": "If <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#realm-is-global-prototype-chain-mutable\" id=\"ref-for-realm-is-global-prototype-chain-mutable\">is global prototype chain mutable</a> is true, then:",
           "rationale": "set",
           "steps": [
             {
@@ -3018,7 +3018,7 @@
           ]
         },
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-prototype-object\" id=\"ref-for-dfn-interface-prototype-object①①\">interface prototype object</a> for a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑦⑧\">interface</a> <var>interface</var> and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm②⑦\">realm</a> <var>realm</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create an interface prototype object\" data-noexport=\"\" id=\"create-an-interface-prototype-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">created</dfn> as follows:",
+          "html": "Otherwise, if <var>interface</var> is declared with the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Global\" id=\"ref-for-Global①⑤\">Global</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①②⑤\">extended attribute</a>, or <var>interface</var> is in the set of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-inherited-interfaces\" id=\"ref-for-dfn-inherited-interfaces①⑨\">inherited interfaces</a> of an interface\nthat is declared with the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Global\" id=\"ref-for-Global①⑥\">Global</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①②⑥\">extended attribute</a>, then:",
           "rationale": "set",
           "steps": [
             {
@@ -3036,14 +3036,14 @@
           "html": "<p>Otherwise, set <var>interfaceProtoObj</var> to <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate④\">OrdinaryObjectCreate</a>(<var>proto</var>).</p>"
         },
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-prototype-object\" id=\"ref-for-dfn-interface-prototype-object①①\">interface prototype object</a> for a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑦⑧\">interface</a> <var>interface</var> and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm②⑦\">realm</a> <var>realm</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create an interface prototype object\" data-noexport=\"\" id=\"create-an-interface-prototype-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">created</dfn> as follows:",
+          "html": "If <var>interface</var> has any <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-member\" id=\"ref-for-dfn-member②①\">member</a> declared with the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Unscopable\" id=\"ref-for-Unscopable⑤\">Unscopable</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①②⑦\">extended attribute</a>,\nthen:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>unscopableObject</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate⑤\">OrdinaryObjectCreate</a>(<emu-val>null</emu-val>).</p>"
             },
             {
-              "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-prototype-object\" id=\"ref-for-dfn-interface-prototype-object①①\">interface prototype object</a> for a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑦⑧\">interface</a> <var>interface</var> and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm②⑦\">realm</a> <var>realm</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create an interface prototype object\" data-noexport=\"\" id=\"create-an-interface-prototype-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">created</dfn> as follows:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exposed\" id=\"ref-for-dfn-exposed⑧\">exposed</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-member\" id=\"ref-for-dfn-member②②\">member</a> <var>member</var> of <var>interface</var> that is declared with the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Unscopable\" id=\"ref-for-Unscopable⑥\">Unscopable</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①②⑧\">extended attribute</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -3063,7 +3063,7 @@
           ]
         },
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-prototype-object\" id=\"ref-for-dfn-interface-prototype-object①①\">interface prototype object</a> for a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑦⑧\">interface</a> <var>interface</var> and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm②⑦\">realm</a> <var>realm</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create an interface prototype object\" data-noexport=\"\" id=\"create-an-interface-prototype-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">created</dfn> as follows:",
+          "html": "If <var>interface</var> is not declared with the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Global\" id=\"ref-for-Global①⑦\">Global</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①②⑨\">extended attribute</a>, then:",
           "rationale": "define",
           "steps": [
             {
@@ -3084,7 +3084,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#define-the-constants\" id=\"ref-for-define-the-constants①\">Define the constants</a> of <var>interface</var> on <var>interfaceProtoObj</var> given <var>realm</var>.</p>"
         },
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-prototype-object\" id=\"ref-for-dfn-interface-prototype-object①①\">interface prototype object</a> for a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑦⑧\">interface</a> <var>interface</var> and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm②⑦\">realm</a> <var>realm</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create an interface prototype object\" data-noexport=\"\" id=\"create-an-interface-prototype-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">created</dfn> as follows:",
+          "html": "If the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyNoInterfaceObject\" id=\"ref-for-LegacyNoInterfaceObject①①\">LegacyNoInterfaceObject</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①③⓪\">extended attribute</a> was not specified on <var>interface</var>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -3246,7 +3246,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-constants\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the constants</dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑧⑥\">interface</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-interface\" id=\"ref-for-dfn-callback-interface③⑥\">callback interface</a>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace③⑧\">namespace</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm②⑨\">realm</a> <var>realm</var>, run the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-constant\" id=\"ref-for-dfn-constant③⑨\">constant</a> <var>const</var> that is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-member\" id=\"ref-for-dfn-member②③\">member</a> of <var>definition</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -3320,7 +3320,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-attributes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the attributes</dfn> <var>attributes</var> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨⓪\">interface</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④②\">namespace</a> <var>definition</var> on <var>target</var> given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③③\">realm</a> <var>realm</var>, run the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑤\">attribute</a> <var>attr</var> of <var>attributes</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -3358,18 +3358,18 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-getter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute getter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑥\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④③\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨①\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③④\">realm</a> <var>realm</var>:",
+          "html": "Let <var>steps</var> be the following series of steps:",
           "rationale": "try",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-getter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute getter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑥\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④③\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨①\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③④\">realm</a> <var>realm</var>:",
+              "html": "Try running the following steps:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>idlObject</var> be null.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-getter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute getter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑥\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④③\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨①\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③④\">realm</a> <var>realm</var>:",
+                  "html": "If <var>target</var> is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨②\">interface</a>, and <var>attribute</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-regular-attribute\" id=\"ref-for-dfn-regular-attribute②⑦\">regular attribute</a>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -3379,7 +3379,7 @@
                       "html": "<p>If <var>jsValue</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#is-a-platform-object\" id=\"ref-for-is-a-platform-object②\">is a platform object</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-a-security-check\" id=\"ref-for-dfn-perform-a-security-check①\">perform a security check</a>,\npassing <var>jsValue</var>, <var>attribute</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑦⑥\">identifier</a>, and \"getter\".</p>"
                     },
                     {
-                      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-getter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute getter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑥\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④③\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨①\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③④\">realm</a> <var>realm</var>:",
+                      "html": "If <var>jsValue</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements①⑨\">implement</a> <var>target</var>, then:",
                       "rationale": "if",
                       "steps": [
                         {
@@ -3409,7 +3409,7 @@
           ],
           "additional": [
             {
-              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-getter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute getter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑥\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④③\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨①\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③④\">realm</a> <var>realm</var>:",
+              "html": "And then, if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown\">an exception <var>E</var> was thrown</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -3446,7 +3446,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-setter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute setter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑦\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④④\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨③\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③⑤\">realm</a> <var>realm</var>:",
+          "html": "If <var>target</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④⑤\">namespace</a>:",
           "rationale": "assert",
           "steps": [
             {
@@ -3464,7 +3464,7 @@
           "html": "<p class=\"assertion\">Assert: <var>attribute</var>’s type is not a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-promise-type\" id=\"ref-for-dfn-promise-type①⓪\">promise type</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-setter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute setter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑦\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④④\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨③\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③⑤\">realm</a> <var>realm</var>:",
+          "html": "Let <var>steps</var> be the following series of steps:",
           "rationale": "if",
           "steps": [
             {
@@ -3480,7 +3480,7 @@
               "html": "<p>Let <var>idlObject</var> be null.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-setter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute setter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑦\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④④\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨③\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③⑤\">realm</a> <var>realm</var>:",
+              "html": "If <var>attribute</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-regular-attribute\" id=\"ref-for-dfn-regular-attribute②⑧\">regular attribute</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -3496,7 +3496,7 @@
                   "html": "<p>If <var>validThis</var> is false and <var>attribute</var> was not specified with the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyLenientThis\" id=\"ref-for-LegacyLenientThis⑨\">LegacyLenientThis</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①③⑧\">extended attribute</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#javascript-throw\" id=\"ref-for-javascript-throw③⑦\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③⑦\">TypeError</a></code>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-setter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute setter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑦\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④④\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨③\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③⑤\">realm</a> <var>realm</var>:",
+                  "html": "If <var>attribute</var> is declared with the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Replaceable\" id=\"ref-for-Replaceable①②\">Replaceable</a></code>] extended attribute, then:",
                   "rationale": "perform",
                   "steps": [
                     {
@@ -3514,7 +3514,7 @@
                   "html": "<p>If <var>attribute</var> is declared with a [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyLenientSetter\" id=\"ref-for-LegacyLenientSetter①②\">LegacyLenientSetter</a></code>] extended attribute, then\nreturn <emu-val>undefined</emu-val>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-setter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute setter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑦\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④④\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨③\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③⑤\">realm</a> <var>realm</var>:",
+                  "html": "If <var>attribute</var> is declared with a [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#PutForwards\" id=\"ref-for-PutForwards①⑥\">PutForwards</a></code>] extended attribute, then:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -3538,7 +3538,7 @@
                   "html": "<p>Set <var>idlObject</var> to the IDL <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-interface\" id=\"ref-for-idl-interface①⑦\">interface type</a> value that represents a reference\nto <var>jsValue</var>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-setter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute setter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑦\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④④\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨③\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③⑤\">realm</a> <var>realm</var>:",
+                  "html": "If <var>attribute</var>’s type is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-observable-array-type\" id=\"ref-for-dfn-observable-array-type⑥\">observable array type</a> with type argument <var>T</var>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -3554,7 +3554,7 @@
                       "html": "<p>Let <var>i</var> be 0.</p>"
                     },
                     {
-                      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-setter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute setter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑦\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④④\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨③\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③⑤\">realm</a> <var>realm</var>:",
+                      "html": "While <var>i</var> &lt; <var>newValues</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑦\">size</a>:",
                       "rationale": "perform",
                       "steps": [
                         {
@@ -3573,7 +3573,7 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-setter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute setter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑦\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④④\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨③\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③⑤\">realm</a> <var>realm</var>:",
+              "html": "Let <var>idlValue</var> be determined as follows:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -3581,7 +3581,7 @@
                   "steps": [
                     {
                       "case": "attribute’s type is an enumeration",
-                      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-attribute-setter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attribute setter</dfn> is created as follows, given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-attribute\" id=\"ref-for-dfn-attribute⑤⑦\">attribute</a> <var>attribute</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④④\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨③\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③⑤\">realm</a> <var>realm</var>:",
+                      "html": "",
                       "rationale": "let",
                       "steps": [
                         {
@@ -3680,7 +3680,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-operations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the operations</dfn> <var>operations</var> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨⑧\">interface</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace④⑨\">namespace</a> <var>definition</var> on <var>target</var>,\n    given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm③⑨\">realm</a> <var>realm</var>, run the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑥⓪\">operation</a> <var>op</var> of <var>operations</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -3715,18 +3715,18 @@
           "html": "<p>Let <var>id</var> be <var>op</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑧①\">identifier</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"creating an operation function\" data-noexport=\"\" id=\"dfn-create-operation-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an operation function</dfn>,\n    given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑥①\">operation</a> <var>op</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace⑤⓪\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨⑨\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⓪\">realm</a> <var>realm</var>:",
+          "html": "Let <var>steps</var> be the following series of steps, given function argument\nvalues <var>args</var>:",
           "rationale": "try",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"creating an operation function\" data-noexport=\"\" id=\"dfn-create-operation-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an operation function</dfn>,\n    given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑥①\">operation</a> <var>op</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace⑤⓪\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨⑨\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⓪\">realm</a> <var>realm</var>:",
+              "html": "Try running the following steps:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>idlObject</var> be null.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"creating an operation function\" data-noexport=\"\" id=\"dfn-create-operation-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an operation function</dfn>,\n    given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑥①\">operation</a> <var>op</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace⑤⓪\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨⑨\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⓪\">realm</a> <var>realm</var>:",
+                  "html": "If <var>target</var> is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②⓪⓪\">interface</a>, and <var>op</var> is not a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-static-operation\" id=\"ref-for-dfn-static-operation①⑦\">static operation</a>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -3756,7 +3756,7 @@
                   "html": "<p>Let <var>R</var> be <emu-val>null</emu-val>.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"creating an operation function\" data-noexport=\"\" id=\"dfn-create-operation-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an operation function</dfn>,\n    given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑥①\">operation</a> <var>op</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace⑤⓪\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨⑨\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⓪\">realm</a> <var>realm</var>:",
+                  "html": "If <var>operation</var> is declared with a [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Default\" id=\"ref-for-Default⑥\">Default</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①④⓪\">extended attribute</a>, then:",
                   "rationale": "assert",
                   "steps": [
                     {
@@ -3778,7 +3778,7 @@
           ],
           "additional": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"creating an operation function\" data-noexport=\"\" id=\"dfn-create-operation-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an operation function</dfn>,\n    given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-operation\" id=\"ref-for-dfn-operation⑥①\">operation</a> <var>op</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace⑤⓪\">namespace</a> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑨⑨\">interface</a> <var>target</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⓪\">realm</a> <var>realm</var>:",
+              "html": "And then, if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown①\">an exception <var>E</var> was thrown</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -3830,7 +3830,7 @@
           "html": "<p>Let <var>result</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate⑥\">OrdinaryObjectCreate</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-properties-of-the-object-prototype-object\" id=\"ref-for-sec-properties-of-the-object-prototype-object⑥\">%Object.prototype%</a></code>).</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"default-tojson-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">default toJSON steps</dfn> for an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②⓪①\">interface</a> <var>I</var> are:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate①\">For each</a> <var>key</var> → <var>value</var> of <var>map</var>,",
           "rationale": "let",
           "steps": [
             {
@@ -3873,7 +3873,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"collect-attribute-values\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">collect attribute values</dfn> given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object①⑨\">platform object</a> <var>object</var>, an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②⓪③\">interface</a> <var>I</var>, and an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①\">ordered map</a> <var>map</var>:",
+          "html": "If a <code>toJSON</code> operation with a [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Default\" id=\"ref-for-Default⑧\">Default</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①④②\">extended attribute</a> is declared\non <var>I</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">for each</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exposed\" id=\"ref-for-dfn-exposed①③\">exposed</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-regular-attribute\" id=\"ref-for-dfn-regular-attribute②⑨\">regular attribute</a> <var>attr</var> that is an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-member\" id=\"ref-for-dfn-interface-member②④\">interface member</a> of <var>I</var>, in order:",
           "rationale": "let",
           "steps": [
             {
@@ -3902,7 +3902,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-push\" id=\"ref-for-stack-push\">Push</a> <var>I</var> onto <var>stack</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-inheritance-stack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an inheritance stack</dfn> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②⓪④\">interface</a> <var>I</var>,\n    run the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while①\">While</a> <var>I</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-inherit\" id=\"ref-for-dfn-inherit①④\">inherits</a> from an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②⓪⑤\">interface</a>,",
           "rationale": "let",
           "steps": [
             {
@@ -3969,14 +3969,14 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+          "html": "If <var>definition</var> has an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-indexed-property-getter\" id=\"ref-for-dfn-indexed-property-getter⑦\">indexed property getter</a>, then:",
           "rationale": "perform",
           "steps": [
             {
               "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-definemethodproperty\" id=\"ref-for-sec-definemethodproperty\">DefineMethodProperty</a>(<var>target</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols①⑥\">%Symbol.iterator%</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-array.prototype.values\" id=\"ref-for-sec-array.prototype.values\">%Array.prototype.values%</a></code>, false).</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+              "html": "If <var>definition</var> has a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-value-iterator\" id=\"ref-for-dfn-value-iterator⑥\">value iterator</a>, then:",
               "rationale": "perform",
               "steps": [
                 {
@@ -3996,15 +3996,15 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+          "html": "Otherwise, if <var>definition</var> has a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-pair-iterator\" id=\"ref-for-dfn-pair-iterator③\">pair iterator</a>, then:",
           "rationale": "define",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+              "html": "Define the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols①⑦\">%Symbol.iterator%</a></code> and <code class=\"idl\">entries</code> methods:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+                  "html": "Let <var>steps</var> be the following series of steps:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -4039,11 +4039,11 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+              "html": "Define the <code class=\"idl\">keys</code> method:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+                  "html": "Let <var>steps</var> be the following series of steps:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -4075,11 +4075,11 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+              "html": "Define the <code class=\"idl\">values</code> method:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+                  "html": "Let <var>steps</var> be the following series of steps:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -4111,11 +4111,11 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+              "html": "Define the <code class=\"idl\">forEach</code> method:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+                  "html": "Let <var>steps</var> be the following series of steps, given function argument values <var>callback</var> and <var>thisArg</var>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -4140,7 +4140,7 @@
                       "html": "<p>Let <var>i</var> be 0.</p>"
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the iteration methods<span id=\"es-iterable-entries\"></span><span id=\"es-iterable-keys\"></span><span id=\"es-iterable-values\"></span></dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②①①\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④①\">realm</a> <var>realm</var>, run the following steps:",
+                      "html": "While <var>i</var> &lt; <var>pairs</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑨\">size</a>:",
                       "rationale": "let",
                       "steps": [
                         {
@@ -4184,7 +4184,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"iterator-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">iterator result</dfn> for a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#value-pair\" id=\"ref-for-value-pair⑥\">value pair</a> <var>pair</var> and a kind <var>kind</var> is given by the\n  following steps:",
+          "html": "Let <var>result</var> be a value determined by the value of <var>kind</var>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -4192,7 +4192,7 @@
               "steps": [
                 {
                   "case": "\"key\"",
-                  "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"iterator-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">iterator result</dfn> for a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#value-pair\" id=\"ref-for-value-pair⑥\">value pair</a> <var>pair</var> and a kind <var>kind</var> is given by the\n  following steps:",
+                  "html": "",
                   "rationale": "let",
                   "steps": [
                     {
@@ -4208,7 +4208,7 @@
                 },
                 {
                   "case": "\"value\"",
-                  "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"iterator-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">iterator result</dfn> for a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#value-pair\" id=\"ref-for-value-pair⑥\">value pair</a> <var>pair</var> and a kind <var>kind</var> is given by the\n  following steps:",
+                  "html": "",
                   "rationale": "let",
                   "steps": [
                     {
@@ -4224,7 +4224,7 @@
                 },
                 {
                   "case": "\"key+value\"",
-                  "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"iterator-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">iterator result</dfn> for a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#value-pair\" id=\"ref-for-value-pair⑥\">value pair</a> <var>pair</var> and a kind <var>kind</var> is given by the\n  following steps:",
+                  "html": "",
                   "rationale": "let",
                   "steps": [
                     {
@@ -4321,11 +4321,11 @@
           "html": "<p class=\"assertion\">Assert: <var>definition</var> does not have an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-indexed-property-getter\" id=\"ref-for-dfn-indexed-property-getter⑧\">indexed property getter</a> or an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-iterable-declaration\" id=\"ref-for-dfn-iterable-declaration①②\">iterable declaration</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-asynchronous-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the asynchronous iteration methods</dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②②⓪\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④②\">realm</a> <var>realm</var>, run the following steps:",
+          "html": "If <var>definition</var> has a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#pair-asynchronously-iterable-declaration\" id=\"ref-for-pair-asynchronously-iterable-declaration②\">pair asynchronously iterable declaration</a>, then define the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols①⑨\">%Symbol.asyncIterator%</a></code> and <code class=\"idl\">entries</code> methods:",
           "rationale": "let",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-asynchronous-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the asynchronous iteration methods</dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②②⓪\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④②\">realm</a> <var>realm</var>, run the following steps:",
+              "html": "Let <var>steps</var> be the following series of steps, given function argument values <var>args</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -4372,11 +4372,11 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-asynchronous-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the asynchronous iteration methods</dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②②⓪\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④②\">realm</a> <var>realm</var>, run the following steps:",
+          "html": "If <var>definition</var> has a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#pair-asynchronously-iterable-declaration\" id=\"ref-for-pair-asynchronously-iterable-declaration③\">pair asynchronously iterable declaration</a>, then define the <code class=\"idl\">keys</code> method:",
           "rationale": "let",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-asynchronous-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the asynchronous iteration methods</dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②②⓪\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④②\">realm</a> <var>realm</var>, run the following steps:",
+              "html": "Let <var>steps</var> be the following series of steps, given function argument values <var>args</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -4420,11 +4420,11 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-asynchronous-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the asynchronous iteration methods</dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②②⓪\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④②\">realm</a> <var>realm</var>, run the following steps:",
+          "html": "Define the <code class=\"idl\">values</code>, and possibly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols②①\">%Symbol.asyncIterator%</a></code>, methods:",
           "rationale": "let",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-asynchronous-iteration-methods\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the asynchronous iteration methods</dfn> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②②⓪\">interface</a> <var>definition</var> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④②\">realm</a> <var>realm</var>, run the following steps:",
+              "html": "Let <var>steps</var> be the following series of steps, given function argument values <var>args</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -4488,11 +4488,11 @@
           "html": "<p>Let <var>i</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"converting arguments for an asynchronous iterator method\" data-noexport=\"\" id=\"converting-arguments-for-an-asynchronous-iterator-method\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert arguments for an asynchronous iterator method</dfn>,\n    given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②②①\">interface</a> <var>definition</var> that has an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-async-iterable-declaration\" id=\"ref-for-dfn-async-iterable-declaration①⑥\">asynchronously iterable declaration</a> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②①\">list</a> of JavaScript values <var>args</var>:",
+          "html": "While <var>i</var> &lt; <var>argCount</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"converting arguments for an asynchronous iterator method\" data-noexport=\"\" id=\"converting-arguments-for-an-asynchronous-iterator-method\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert arguments for an asynchronous iterator method</dfn>,\n    given an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②②①\">interface</a> <var>definition</var> that has an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-async-iterable-declaration\" id=\"ref-for-dfn-async-iterable-declaration①⑥\">asynchronously iterable declaration</a> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②①\">list</a> of JavaScript values <var>args</var>:",
+              "html": "If <var>i</var> ≥ <var>args</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⓪\">size</a>, or if <var>args</var>[<var>i</var>] is <emu-val>undefined</emu-val>,\nthen:",
               "rationale": "if",
               "steps": [
                 {
@@ -4856,11 +4856,11 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-map-iterator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a map iterator</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②\">map</a> <var>map</var> and a <var>kind</var> which is either \"<code>key+value</code>\", \"<code>key</code>\", or \"<code>value</code>\":",
+          "html": "Let <var>closure</var> be a new <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-abstract-closure\" id=\"ref-for-sec-abstract-closure\">Abstract Closure</a> with no parameters\nthat captures <var>map</var> and <var>kind</var> and performs the following steps when called:",
           "rationale": "for",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-map-iterator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a map iterator</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②\">map</a> <var>map</var> and a <var>kind</var> which is either \"<code>key+value</code>\", \"<code>key</code>\", or \"<code>value</code>\":",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate②\">For each</a> <var>key</var> → <var>value</var> of <var>map</var>:",
               "rationale": "set",
               "steps": [
                 {
@@ -5144,11 +5144,11 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-set-iterator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a set iterator</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑦\">set</a> <var>set</var> and a <var>kind</var> which is either \"<code>key+value</code>\" or \"<code>value</code>\":",
+          "html": "Let <var>closure</var> be a new <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-abstract-closure\" id=\"ref-for-sec-abstract-closure①\">Abstract Closure</a> with no parameters\nthat captures <var>set</var> and <var>kind</var> and performs the following steps when called:",
           "rationale": "for",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-set-iterator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a set iterator</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑦\">set</a> <var>set</var> and a <var>kind</var> which is either \"<code>key+value</code>\" or \"<code>value</code>\":",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>entry</var> of <var>set</var>:",
               "rationale": "set",
               "steps": [
                 {
@@ -5377,7 +5377,7 @@
           "html": "<p class=\"assertion\">Assert: <var>interface</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exposed\" id=\"ref-for-dfn-exposed①⑤\">exposed</a> in <var>realm</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"internally-create-a-new-object-implementing-the-interface\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">internally create a new object implementing the interface</dfn> <var>interface</var>, with a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑤\">realm</a> <var>realm</var> and a JavaScript value <var>newTarget</var>, perform the following steps:",
+          "html": "If <var>newTarget</var> is <emu-val>undefined</emu-val>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -5386,7 +5386,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"internally-create-a-new-object-implementing-the-interface\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">internally create a new object implementing the interface</dfn> <var>interface</var>, with a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑤\">realm</a> <var>realm</var> and a JavaScript value <var>newTarget</var>, perform the following steps:",
+          "html": "Otherwise:",
           "rationale": "assert",
           "steps": [
             {
@@ -5396,7 +5396,7 @@
               "html": "<p>Let <var>prototype</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⓪⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p③\">Get</a>(<var>newTarget</var>, \"prototype\").</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"internally-create-a-new-object-implementing-the-interface\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">internally create a new object implementing the interface</dfn> <var>interface</var>, with a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑤\">realm</a> <var>realm</var> and a JavaScript value <var>newTarget</var>, perform the following steps:",
+              "html": "If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values③⑨\">Type</a>(<var>prototype</var>) is not Object, then:",
               "rationale": "let",
               "steps": [
                 {
@@ -5425,7 +5425,7 @@
           "html": "<p>Let <var>interfaces</var> be the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#interface-inclusive-inherited-interfaces\" id=\"ref-for-interface-inclusive-inherited-interfaces①\">inclusive inherited interfaces</a> of <var>interface</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"internally-create-a-new-object-implementing-the-interface\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">internally create a new object implementing the interface</dfn> <var>interface</var>, with a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑤\">realm</a> <var>realm</var> and a JavaScript value <var>newTarget</var>, perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For every</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②③⑤\">interface</a> <var>ancestor interface</var> in <var>interfaces</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -5435,7 +5435,7 @@
               "html": "<p>Let <var>keys</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①①⓪\">!</a> <var>unforgeables</var>.[[OwnPropertyKeys]]().</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"internally-create-a-new-object-implementing-the-interface\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">internally create a new object implementing the interface</dfn> <var>interface</var>, with a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑤\">realm</a> <var>realm</var> and a JavaScript value <var>newTarget</var>, perform the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②②\">For each</a> element <var>key</var> of <var>keys</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -5449,7 +5449,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"internally-create-a-new-object-implementing-the-interface\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">internally create a new object implementing the interface</dfn> <var>interface</var>, with a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑤\">realm</a> <var>realm</var> and a JavaScript value <var>newTarget</var>, perform the following steps:",
+          "html": "If <var>interface</var> is declared with the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Global\" id=\"ref-for-Global②③\">Global</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①④⑤\">extended attribute</a>, then:",
           "rationale": "define",
           "steps": [
             {
@@ -5473,7 +5473,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"internally-create-a-new-object-implementing-the-interface\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">internally create a new object implementing the interface</dfn> <var>interface</var>, with a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑤\">realm</a> <var>realm</var> and a JavaScript value <var>newTarget</var>, perform the following steps:",
+          "html": "Otherwise, if <var>interfaces</var> contains an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②③⑥\">interface</a> which <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-support-indexed-properties\" id=\"ref-for-dfn-support-indexed-properties①⓪\">supports indexed properties</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-support-named-properties\" id=\"ref-for-dfn-support-named-properties⑥\">named properties</a>, or both:",
           "rationale": "set",
           "steps": [
             {
@@ -5514,11 +5514,11 @@
           "html": "<p>Sort <var>interfaces</var> in such a way that if <var>A</var> and <var>B</var> are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑥\">items</a> of <var>interfaces</var>,\nand <var>A</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-inherit\" id=\"ref-for-dfn-inherit①⑤\">inherits</a> from <var>B</var>, <var>A</var> has a higher index in <var>interfaces</var> than <var>B</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-global-property-references\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the global property references</dfn> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑥\">realm</a> <var>realm</var>,\n  perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For every</a> <var>interface</var> of <var>interfaces</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-global-property-references\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the global property references</dfn> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑥\">realm</a> <var>realm</var>,\n  perform the following steps:",
+              "html": "If <var>interface</var> is not declared with the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyNoInterfaceObject\" id=\"ref-for-LegacyNoInterfaceObject①③\">LegacyNoInterfaceObject</a></code>] or\n[<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyNamespace\" id=\"ref-for-LegacyNamespace⑧\">LegacyNamespace</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①④⑥\">extended attributes</a>, then:",
               "rationale": "let",
               "steps": [
                 {
@@ -5531,11 +5531,11 @@
                   "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-definemethodproperty\" id=\"ref-for-sec-definemethodproperty④\">DefineMethodProperty</a>(<var>target</var>, <var>id</var>, <var>interfaceObject</var>, false).</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-global-property-references\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the global property references</dfn> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑥\">realm</a> <var>realm</var>,\n  perform the following steps:",
+                  "html": "If the <var>interface</var> is declared with a [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyWindowAlias\" id=\"ref-for-LegacyWindowAlias①④\">LegacyWindowAlias</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①④⑦\">extended attribute</a>,\nand <var>target</var> implements the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑥\">Window</a></code> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②③⑧\">interface</a>, then:",
                   "rationale": "for",
                   "steps": [
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-global-property-references\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the global property references</dfn> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑥\">realm</a> <var>realm</var>,\n  perform the following steps:",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For every</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#legacywindowalias-identifier\" id=\"ref-for-legacywindowalias-identifier⑤\">identifier</a> <var>id</var> in\n[<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyWindowAlias\" id=\"ref-for-LegacyWindowAlias①⑤\">LegacyWindowAlias</a></code>]'s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#legacywindowalias-identifier\" id=\"ref-for-legacywindowalias-identifier⑥\">identifiers</a>:",
                       "rationale": "perform",
                       "steps": [
                         {
@@ -5548,11 +5548,11 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-global-property-references\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the global property references</dfn> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑥\">realm</a> <var>realm</var>,\n  perform the following steps:",
+              "html": "If the <var>interface</var> is declared with a [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyFactoryFunction\" id=\"ref-for-LegacyFactoryFunction①⑨\">LegacyFactoryFunction</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①④⑧\">extended attribute</a>,\nthen:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-global-property-references\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the global property references</dfn> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑥\">realm</a> <var>realm</var>,\n  perform the following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For every</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#legacyfactoryfunction-identifier\" id=\"ref-for-legacyfactoryfunction-identifier⑤\">identifier</a> <var>id</var> in\n[<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyFactoryFunction\" id=\"ref-for-LegacyFactoryFunction②⓪\">LegacyFactoryFunction</a></code>]'s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#legacyfactoryfunction-identifier\" id=\"ref-for-legacyfactoryfunction-identifier⑥\">identifiers</a>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -5568,7 +5568,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-global-property-references\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the global property references</dfn> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑥\">realm</a> <var>realm</var>,\n  perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For every</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-interface\" id=\"ref-for-dfn-callback-interface③⑦\">callback interface</a> <var>interface</var> that is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exposed\" id=\"ref-for-dfn-exposed①⑦\">exposed</a> in <var>realm</var> and on which <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-constant\" id=\"ref-for-dfn-constant④⓪\">constants</a> are defined:",
           "rationale": "let",
           "steps": [
             {
@@ -5583,7 +5583,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"define-the-global-property-references\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">define the global property references</dfn> on <var>target</var>, given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm④⑥\">realm</a> <var>realm</var>,\n  perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For every</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace⑤①\">namespace</a> <var>namespace</var> that is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exposed\" id=\"ref-for-dfn-exposed①⑧\">exposed</a> in <var>realm</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -5891,7 +5891,7 @@
           "html": "<p>Let <var>prototype</var> be <var>O</var>.[[GetPrototypeOf]]().</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-named-property-visibility\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">named property visibility algorithm</dfn> is used to determine if a given named property is exposed on an object.\n    Some named properties are not exposed on an object depending on whether\n    the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyOverrideBuiltIns\" id=\"ref-for-LegacyOverrideBuiltIns⑨\">LegacyOverrideBuiltIns</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①⑤④\">extended attribute</a> was used.\n    The algorithm operates as follows, with property name <var>P</var> and object <var>O</var>:",
+          "html": "While <var>prototype</var> is not null:",
           "rationale": "if",
           "steps": [
             {
@@ -5929,7 +5929,7 @@
           "html": "<p>Let <var>value</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value⑧②\">converting</a> <var>V</var> to an IDL value of type <var>T</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"invoke the indexed property setter\" id=\"invoke-indexed-setter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke an indexed property setter<span id=\"invoking-indexed-setter\"></span></dfn> on a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object③①\">platform object</a> <var>O</var> with property name <var>P</var> and JavaScript value <var>V</var>, the following steps must be performed:",
+          "html": "If <var>operation</var> was defined without an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑨④\">identifier</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -5964,7 +5964,7 @@
           "html": "<p>Let <var>value</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value⑧③\">converting</a> <var>V</var> to an IDL value of type <var>T</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"invoke the named property setter\" id=\"invoke-named-setter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke a named property setter<span id=\"invoking-named-setter\"></span></dfn> on a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" id=\"ref-for-dfn-platform-object③②\">platform object</a> <var>O</var> with property name <var>P</var> and JavaScript value <var>V</var>, the following steps must be performed:",
+          "html": "If <var>operation</var> was defined without an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑨⑤\">identifier</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -5987,14 +5987,14 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"LegacyPlatformObjectGetOwnProperty\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">LegacyPlatformObjectGetOwnProperty<span id=\"getownproperty-guts\"></span></dfn> abstract operation performs the following steps when called with\n    an object <var>O</var>, a property name <var>P</var>, and a boolean <var>ignoreNamedProps</var> value:",
+          "html": "If <var>O</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-support-indexed-properties\" id=\"ref-for-dfn-support-indexed-properties①④\">supports indexed properties</a> and <var>P</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#is-an-array-index\" id=\"ref-for-is-an-array-index③\">is an array index</a>, then:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>index</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①②②\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint32\" id=\"ref-for-sec-touint32④\">ToUint32</a>(<var>P</var>).</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"LegacyPlatformObjectGetOwnProperty\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">LegacyPlatformObjectGetOwnProperty<span id=\"getownproperty-guts\"></span></dfn> abstract operation performs the following steps when called with\n    an object <var>O</var>, a property name <var>P</var>, and a boolean <var>ignoreNamedProps</var> value:",
+              "html": "If <var>index</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-supported-property-indices\" id=\"ref-for-dfn-supported-property-indices⑦\">supported property index</a>, then:",
               "rationale": "let",
               "steps": [
                 {
@@ -6032,11 +6032,11 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"LegacyPlatformObjectGetOwnProperty\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">LegacyPlatformObjectGetOwnProperty<span id=\"getownproperty-guts\"></span></dfn> abstract operation performs the following steps when called with\n    an object <var>O</var>, a property name <var>P</var>, and a boolean <var>ignoreNamedProps</var> value:",
+          "html": "If <var>O</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-support-named-properties\" id=\"ref-for-dfn-support-named-properties①⓪\">supports named properties</a> and <var>ignoreNamedProps</var> is false, then:",
           "rationale": "if",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"LegacyPlatformObjectGetOwnProperty\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">LegacyPlatformObjectGetOwnProperty<span id=\"getownproperty-guts\"></span></dfn> abstract operation performs the following steps when called with\n    an object <var>O</var>, a property name <var>P</var>, and a boolean <var>ignoreNamedProps</var> value:",
+              "html": "If the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-named-property-visibility\" id=\"ref-for-dfn-named-property-visibility③\">named property visibility algorithm</a> with\nproperty name <var>P</var> and object <var>O</var> is true, then:",
               "rationale": "let",
               "steps": [
                 {
@@ -6458,7 +6458,7 @@
           "html": "<p>Let <var>indexToDelete</var> be <var>oldLen</var> − 1.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"observable array exotic object\" data-dfn-type=\"dfn\" data-lt=\"set the length|setting the length\" data-noexport=\"\" id=\"observable-array-exotic-object-set-the-length\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the length</dfn> of an observable array exotic object given <var>handler</var> and <var>newLen</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while③\">While</a> <var>indexToDelete</var> ≥ <var>uint32Len</var>:",
           "rationale": "perform",
           "steps": [
             {
@@ -6496,7 +6496,7 @@
           "html": "<p>Let <var>idlValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value⑧④\">converting</a> <var>V</var> to the type given by <var>handler</var>.[[Type]].</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"observable array exotic object\" data-dfn-type=\"dfn\" data-lt=\"set the indexed value|setting the indexed value\" data-noexport=\"\" id=\"observable-array-exotic-object-set-the-indexed-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the indexed value</dfn> of an observable array exotic object given <var>handler</var>, <var>P</var>, and <var>V</var>:",
+          "html": "If <var>index</var> &lt; <var>oldLen</var>, then:",
           "rationale": "perform",
           "steps": [
             {
@@ -6534,14 +6534,14 @@
           "html": "<p>Let <var>count</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Web IDL arguments list\" data-dfn-type=\"dfn\" data-lt=\"converting\" data-noexport=\"\" id=\"web-idl-arguments-list-converting\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert a Web IDL arguments list to a\n    JavaScript arguments list</dfn>, given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list\" id=\"ref-for-web-idl-arguments-list\">Web IDL arguments list</a> <var>args</var>, perform the\n    following steps:",
+          "html": "While <var>i</var> &lt; <var>args</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②⓪\">size</a>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>args</var>[<var>i</var>] is the special value “missing”, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⑥\">append</a> <emu-val>undefined</emu-val> to <var>jsArgs</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Web IDL arguments list\" data-dfn-type=\"dfn\" data-lt=\"converting\" data-noexport=\"\" id=\"web-idl-arguments-list-converting\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert a Web IDL arguments list to a\n    JavaScript arguments list</dfn>, given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list\" id=\"ref-for-web-idl-arguments-list\">Web IDL arguments list</a> <var>args</var>, perform the\n    following steps:",
+              "html": "Otherwise, <var>args</var>[<var>i</var>] is an IDL value:",
               "rationale": "let",
               "steps": [
                 {
@@ -6602,7 +6602,7 @@
           "html": "<p>Let <var>X</var> be <var>O</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"call-a-user-objects-operation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call a user object’s operation</dfn>,\n    given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-callback-interface\" id=\"ref-for-idl-callback-interface①①\">callback interface type</a> value <var>value</var>,\n    operation name <var>opName</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list\" id=\"ref-for-web-idl-arguments-list①\">Web IDL arguments list</a> <var>args</var>, and optional <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-callback-this-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">callback this value</dfn> <var>thisArg</var>,\n    perform the following steps.\n    These steps will either return an IDL value or throw an exception.",
+          "html": "If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable①①\">IsCallable</a>(<var>O</var>) is false, then:",
           "rationale": "let",
           "steps": [
             {
@@ -6635,7 +6635,7 @@
           "html": "<p>Set <var>completion</var> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value⑧⑤\">converting</a> <var>callResult</var>.[[Value]] to an IDL value of the same type as the operation’s\nreturn type. If this throws an exception, set <var>completion</var> to the completion value\nrepresenting the thrown exception.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"call-a-user-objects-operation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call a user object’s operation</dfn>,\n    given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-callback-interface\" id=\"ref-for-idl-callback-interface①①\">callback interface type</a> value <var>value</var>,\n    operation name <var>opName</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list\" id=\"ref-for-web-idl-arguments-list①\">Web IDL arguments list</a> <var>args</var>, and optional <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-callback-this-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">callback this value</dfn> <var>thisArg</var>,\n    perform the following steps.\n    These steps will either return an IDL value or throw an exception.",
+          "html": "<i id=\"call-user-object-operation-return\">Return:</i> at this\npoint <var>completion</var> will be set to an IDL value or an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type⑦\">abrupt completion</a>.",
           "rationale": "clean",
           "steps": [
             {
@@ -6667,7 +6667,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-legacy-callback-interface-object\" id=\"ref-for-dfn-legacy-callback-interface-object⑤\">legacy callback interface object</a> for a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-interface\" id=\"ref-for-dfn-callback-interface④④\">callback interface</a> <var>interface</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier①⓪⓪\">identifier</a> <var>id</var> and in <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm⑤③\">realm</a> <var>realm</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create a legacy callback interface object\" data-noexport=\"\" id=\"create-a-legacy-callback-interface-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">created</dfn> as follows:",
+          "html": "Let <var>steps</var> be the following steps:",
           "rationale": "throw",
           "steps": [
             {
@@ -6708,7 +6708,7 @@
           "html": "<p>Let <var>F</var> be the JavaScript object corresponding to <var>callable</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"invoke-a-callback-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke</dfn> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-callback-function\" id=\"ref-for-idl-callback-function⑤\">callback function type</a> value <var>callable</var> with a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list\" id=\"ref-for-web-idl-arguments-list②\">Web IDL arguments list</a> <var>args</var> and an optional <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-this-value\" id=\"ref-for-dfn-callback-this-value①\">callback this value</a> <var>thisArg</var>,\n    perform the following steps.\n    These steps will either return an IDL value or throw an exception.",
+          "html": "If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable①④\">IsCallable</a>(<var>F</var>) is <emu-val>false</emu-val>:",
           "rationale": "return",
           "steps": [
             {
@@ -6747,7 +6747,7 @@
           "html": "<p>Set <var>completion</var> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value⑧⑧\">converting</a> <var>callResult</var>.[[Value]] to an IDL value of the same type as <var>callable</var>’s\nreturn type. If this throws an exception, set <var>completion</var> to the completion value\nrepresenting the thrown exception.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"invoke-a-callback-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke</dfn> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-callback-function\" id=\"ref-for-idl-callback-function⑤\">callback function type</a> value <var>callable</var> with a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list\" id=\"ref-for-web-idl-arguments-list②\">Web IDL arguments list</a> <var>args</var> and an optional <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-this-value\" id=\"ref-for-dfn-callback-this-value①\">callback this value</a> <var>thisArg</var>,\n    perform the following steps.\n    These steps will either return an IDL value or throw an exception.",
+          "html": "<i id=\"invoke-return\">Return:</i> at this\npoint <var>completion</var> will be set to an IDL value or an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type①①\">abrupt completion</a>.",
           "rationale": "clean",
           "steps": [
             {
@@ -6815,7 +6815,7 @@
           "html": "<p>Set <var>completion</var> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value⑨⓪\">converting</a> <var>callResult</var>.[[Value]] to an IDL value of the same type as <var>callable</var>’s\nreturn type. If this throws an exception, set <var>completion</var> to the completion value\nrepresenting the thrown exception.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"construct-a-callback-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct</dfn> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-callback-function\" id=\"ref-for-idl-callback-function⑥\">callback function type</a> value <var>callable</var> with a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list\" id=\"ref-for-web-idl-arguments-list③\">Web IDL arguments list</a> <var>args</var>,\n    perform the following steps.\n    These steps will either return an IDL value or throw an exception.",
+          "html": "<i id=\"construct-return\">Return:</i> at this\npoint <var>completion</var> will be set to an IDL value or an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type①⑤\">abrupt completion</a>.",
           "rationale": "clean",
           "steps": [
             {
@@ -6853,7 +6853,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#define-the-constants\" id=\"ref-for-define-the-constants③\">Define the constants</a> of <var>namespace</var> on <var>namespaceObject</var> given <var>realm</var>.</p>"
         },
         {
-          "html": "The namespace object for a given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace⑤③\">namespace</a> <var>namespace</var> and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm⑤⑥\">realm</a> <var>realm</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"create a namespace object\" data-noexport=\"\" id=\"create-a-namespace-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">created</dfn> as follows:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exposed\" id=\"ref-for-dfn-exposed②①\">exposed</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface②④⑨\">interface</a> <var>interface</var> which has the [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#LegacyNamespace\" id=\"ref-for-LegacyNamespace⑨\">LegacyNamespace</a></code>] extended\nattribute with the identifier of <var>namespace</var> as its argument,",
           "rationale": "let",
           "steps": [
             {

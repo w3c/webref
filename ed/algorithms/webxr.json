@@ -20,7 +20,7 @@
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#list-of-immersive-xr-devices\" id=\"ref-for-list-of-immersive-xr-devices⑦\">list of immersive XR devices</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is one, set the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device④\">immersive XR device</a> to the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#list-of-immersive-xr-devices\" id=\"ref-for-list-of-immersive-xr-devices⑧\">list of immersive XR devices</a>[0].</p>"
         },
         {
-          "html": "Each time the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#list-of-immersive-xr-devices\" id=\"ref-for-list-of-immersive-xr-devices⑤\">list of immersive XR devices</a> changes the user agent should <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"select-an-immersive-xr-device\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">select an immersive XR device</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+          "html": "Set the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device⑤\">immersive XR device</a> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -94,7 +94,7 @@
           "html": "<p>If the requesting document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> is not allowed to use the \"xr-spatial-tracking\" <a href=\"https://immersive-web.github.io/webxr/#permissions-policy\">permissions policy</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and return it.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSystem\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrsystem-issessionsupported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>isSessionSupported(<var>mode</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method queries if a given <var>mode</var> may be supported by the user agent and device capabilities. \n    <p>When this method is invoked, it MUST run the following steps:</p>",
+          "html": "Check whether the session <var>mode</var> is supported as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -110,7 +110,7 @@
                 },
                 {
                   "case": "Otherwise",
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSystem\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrsystem-issessionsupported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>isSessionSupported(<var>mode</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method queries if a given <var>mode</var> may be supported by the user agent and device capabilities. \n    <p>When this method is invoked, it MUST run the following steps:</p>",
+                  "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -155,7 +155,7 @@
           "html": "<p>Let <var>global object</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant Global object</a> for the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsystem\" id=\"ref-for-xrsystem⑦\">XRSystem</a></code> on which this method was invoked.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSystem\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestSession(mode, options)|requestSession(mode)\" id=\"dom-xrsystem-requestsession\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestSession(<var>mode</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method attempts to initialize an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦\">XRSession</a></code> for the given <var>mode</var> if possible, entering immersive mode if necessary.",
+          "html": "Check whether the session request is allowed as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -163,7 +163,7 @@
               "steps": [
                 {
                   "case": "If immersive is true:",
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSystem\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestSession(mode, options)|requestSession(mode)\" id=\"dom-xrsystem-requestsession\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestSession(<var>mode</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method attempts to initialize an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦\">XRSession</a></code> for the given <var>mode</var> if possible, entering immersive mode if necessary.",
+                  "html": "",
                   "rationale": "check",
                   "steps": [
                     {
@@ -186,7 +186,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSystem\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestSession(mode, options)|requestSession(mode)\" id=\"dom-xrsystem-requestsession\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestSession(<var>mode</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method attempts to initialize an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦\">XRSession</a></code> for the given <var>mode</var> if possible, entering immersive mode if necessary.",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -199,11 +199,11 @@
               "html": "<p>Set <var>device</var> to the result of <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#obtain-the-current-device\" id=\"ref-for-obtain-the-current-device\">obtaining the current device</a> for <var>mode</var>, <var>requiredFeatures</var>, and <var>optionalFeatures</var>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSystem\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestSession(mode, options)|requestSession(mode)\" id=\"dom-xrsystem-requestsession\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestSession(<var>mode</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method attempts to initialize an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦\">XRSession</a></code> for the given <var>mode</var> if possible, entering immersive mode if necessary.",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑥\">Queue a task</a> to perform the following steps:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSystem\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestSession(mode, options)|requestSession(mode)\" id=\"dom-xrsystem-requestsession\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestSession(<var>mode</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method attempts to initialize an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦\">XRSession</a></code> for the given <var>mode</var> if possible, entering immersive mode if necessary.",
+                  "html": "If <var>device</var> is <code>null</code> or <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#list-of-supported-modes\" id=\"ref-for-list-of-supported-modes④\">list of supported modes</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑤\">contain</a> <var>mode</var>, run the following steps:",
                   "rationale": "reject",
                   "steps": [
                     {
@@ -227,7 +227,7 @@
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#request-the-xr-permission\" id=\"ref-for-request-the-xr-permission\">Request the xr permission</a> with <var>descriptor</var> and <var>status</var>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSystem\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestSession(mode, options)|requestSession(mode)\" id=\"dom-xrsystem-requestsession\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestSession(<var>mode</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method attempts to initialize an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦\">XRSession</a></code> for the given <var>mode</var> if possible, entering immersive mode if necessary.",
+                  "html": "If <var>status</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstatus-state\" id=\"ref-for-dom-permissionstatus-state\">state</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied①\">\"denied\"</a></code> run the following steps:",
                   "rationale": "reject",
                   "steps": [
                     {
@@ -251,7 +251,7 @@
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#initialize-the-session\" id=\"ref-for-initialize-the-session\">Initialize the session</a> with <var>session</var>, <var>mode</var>, <var>granted</var>, and <var>device</var>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSystem\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestSession(mode, options)|requestSession(mode)\" id=\"dom-xrsystem-requestsession\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestSession(<var>mode</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method attempts to initialize an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦\">XRSession</a></code> for the given <var>mode</var> if possible, entering immersive mode if necessary.",
+                  "html": "Potentially set the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#active-immersive-session\" id=\"ref-for-active-immersive-session①\">active immersive session</a> as follows:",
                   "rationale": ".switch",
                   "steps": [
                     {
@@ -273,7 +273,7 @@
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑦\">Resolve</a> <var>promise</var> with <var>session</var>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSystem\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestSession(mode, options)|requestSession(mode)\" id=\"dom-xrsystem-requestsession\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestSession(<var>mode</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method attempts to initialize an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦\">XRSession</a></code> for the given <var>mode</var> if possible, entering immersive mode if necessary.",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑦\">Queue a task</a> to perform the following steps:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -283,7 +283,7 @@
                       "html": "<p>Let <var>sources</var> be any existing input sources attached to <var>session</var>.</p>"
                     },
                     {
-                      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSystem\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestSession(mode, options)|requestSession(mode)\" id=\"dom-xrsystem-requestsession\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestSession(<var>mode</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method attempts to initialize an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦\">XRSession</a></code> for the given <var>mode</var> if possible, entering immersive mode if necessary.",
+                      "html": "If <var>sources</var> is non-empty, perform the following steps:",
                       "rationale": "set",
                       "steps": [
                         {
@@ -312,7 +312,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-current-device\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the current device</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#enumdef-xrsessionmode\" id=\"ref-for-enumdef-xrsessionmode④\">XRSessionMode</a></code> <var>mode</var>, <var>requiredFeatures</var>, and <var>optionalFeatures</var> the user agent MUST run the following steps:",
+          "html": "Choose <var>device</var> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -403,7 +403,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#shut-down-the-session\" id=\"ref-for-shut-down-the-session②\">Shut down</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrsession-end\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>end()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method provides a way to manually shut down a session. When invoked, it MUST run the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑨\">Queue a task</a> to perform the following steps:",
           "rationale": "wait",
           "steps": [
             {
@@ -475,7 +475,7 @@
           "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-internal-target-framerate\" id=\"ref-for-xrsession-internal-target-framerate\">internal target framerate</a> to <var>rate</var>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrsession-updatetargetframerate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>updateTargetFrameRate(<var>rate</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method passes the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#target-frame-rate\" id=\"ref-for-target-frame-rate\">target frame rate</a> <var>rate</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession③⑦\">XRSession</a></code>.",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①⓪\">Queue a task</a> to perform the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -485,7 +485,7 @@
               "html": "<p>Let <var>newrate</var> be the new <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#nominal-frame-rate\" id=\"ref-for-nominal-frame-rate①\">nominal frame rate</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrsession-updatetargetframerate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>updateTargetFrameRate(<var>rate</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method passes the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#target-frame-rate\" id=\"ref-for-target-frame-rate\">target frame rate</a> <var>rate</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession③⑦\">XRSession</a></code>.",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①①\">Queue a task</a> to perform the following steps:",
               "rationale": "apply",
               "steps": [
                 {
@@ -572,7 +572,7 @@
           "html": "<p>Let <var>oldLayers</var> be <var>activeState</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#dom-xrrenderstate-layers\" id=\"ref-for-dom-xrrenderstate-layers\">layers</a></code>.</p>"
         },
         {
-          "html": "When requested, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession③⑨\">XRSession</a></code> <var>session</var> MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"apply-the-pending-render-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">apply the pending render state</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①②\">Queue a task</a> to perform the following steps:",
           "rationale": "set",
           "steps": [
             {
@@ -597,7 +597,7 @@
               "html": "<p>Let <var>baseLayer</var> be <var>activeState</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrrenderstate-baselayer\" id=\"ref-for-dom-xrrenderstate-baselayer③\">baseLayer</a></code>.</p>"
             },
             {
-              "html": "When requested, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession③⑨\">XRSession</a></code> <var>session</var> MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"apply-the-pending-render-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">apply the pending render state</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+              "html": "Set <var>activeState</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrrenderstate-composition-enabled\" id=\"ref-for-xrrenderstate-composition-enabled\">composition enabled</a> and <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrrenderstate-output-canvas\" id=\"ref-for-xrrenderstate-output-canvas\">output canvas</a> as follows:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -629,7 +629,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise④\">a new Promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑤\">relevant realm</a> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession④⓪\">XRSession</a></code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrsession-requestreferencespace\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestReferenceSpace(<var>type</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method constructs a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrreferencespace\" id=\"ref-for-xrreferencespace②\">XRReferenceSpace</a></code> of a given <var>type</var>, if possible. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -667,7 +667,7 @@
           "html": "<p>Let <var>added</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a>.</p>"
         },
         {
-          "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-lt=\"add input source\" data-noexport=\"\" id=\"xrsession-add-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">new <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-input-source\" id=\"ref-for-xr-input-source③\">XR input source</a>s become available</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession④⑤\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+          "html": "For each new <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-input-source\" id=\"ref-for-xr-input-source④\">XR input source</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -679,7 +679,7 @@
           ]
         },
         {
-          "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-lt=\"add input source\" data-noexport=\"\" id=\"xrsession-add-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">new <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-input-source\" id=\"ref-for-xr-input-source③\">XR input source</a>s become available</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession④⑤\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①⑤\">Queue a task</a> to perform the following steps:",
           "rationale": "extend",
           "steps": [
             {
@@ -705,7 +705,7 @@
           "html": "<p>Let <var>removed</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
         },
         {
-          "html": "When any previously added <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-lt=\"remove input source\" data-noexport=\"\" id=\"xrsession-remove-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑤\">XR input source</a>s are no longer available</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession④⑦\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑥\">XR input source</a> that is no longer available:",
           "rationale": "let",
           "steps": [
             {
@@ -717,7 +717,7 @@
           ]
         },
         {
-          "html": "When any previously added <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-lt=\"remove input source\" data-noexport=\"\" id=\"xrsession-remove-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑤\">XR input source</a>s are no longer available</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession④⑦\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①⑥\">Queue a task</a> to perform the following steps:",
           "rationale": "remove",
           "steps": [
             {
@@ -746,7 +746,7 @@
           "html": "<p>Let <var>removed</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a>.</p>"
         },
         {
-          "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"change input source\" id=\"xrsession-change-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrinputsource-handedness\" id=\"ref-for-dom-xrinputsource-handedness\">handedness</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrinputsource-targetraymode\" id=\"ref-for-dom-xrinputsource-targetraymode\">targetRayMode</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles\" id=\"ref-for-dom-xrinputsource-profiles\">profiles</a></code>, or presence of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrinputsource-gripspace\" id=\"ref-for-dom-xrinputsource-gripspace\">gripSpace</a></code> for any <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑧\">XR input source</a>s change</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession④⑧\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+          "html": "For each changed <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑨\">XR input source</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -764,7 +764,7 @@
           ]
         },
         {
-          "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"change input source\" id=\"xrsession-change-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrinputsource-handedness\" id=\"ref-for-dom-xrinputsource-handedness\">handedness</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrinputsource-targetraymode\" id=\"ref-for-dom-xrinputsource-targetraymode\">targetRayMode</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles\" id=\"ref-for-dom-xrinputsource-profiles\">profiles</a></code>, or presence of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrinputsource-gripspace\" id=\"ref-for-dom-xrinputsource-gripspace\">gripSpace</a></code> for any <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑧\">XR input source</a>s change</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession④⑧\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①⑦\">Queue a task</a> to perform the following steps:",
           "rationale": "remove",
           "steps": [
             {
@@ -796,7 +796,7 @@
           "html": "<p>Initialize <var>state</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrrenderstate-depthfar\" id=\"ref-for-dom-xrrenderstate-depthfar④\">depthFar</a></code> to <code>1000.0</code>.</p>"
         },
         {
-          "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrrenderstate\" id=\"ref-for-xrrenderstate⑨\">XRRenderState</a></code> object is created for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦③\">XRSession</a></code> <var>session</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-the-render-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize the render state</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+          "html": "Initialize <var>state</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrrenderstate-inlineverticalfieldofview\" id=\"ref-for-dom-xrrenderstate-inlineverticalfieldofview⑥\">inlineVerticalFieldOfView</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -897,7 +897,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦⑨\">XRSession</a></code> <var>session</var> receives updated <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#viewer\" id=\"ref-for-viewer⑤\">viewer</a> state for timestamp <var>frameTime</var> from the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①⑤\">XR device</a>, it runs an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xr-animation-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">XR animation frame</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, which MUST run the following steps regardless of if the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#list-of-animation-frame-callbacks\" id=\"ref-for-list-of-animation-frame-callbacks③\">list of animation frame callbacks</a> is empty or not:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①⑧\">Queue a task</a> to perform the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -922,7 +922,7 @@
               "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view-active\" id=\"ref-for-view-active①\">active</a> flag of any <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view\" id=\"ref-for-view⑤\">view</a> in the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views③\">list of views</a> has changed since the last <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-animation-frame\" id=\"ref-for-xr-animation-frame②\">XR animation frame</a>, <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#update-the-viewports\" id=\"ref-for-update-the-viewports①\">update the viewports</a>.</p>"
             },
             {
-              "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑦⑨\">XRSession</a></code> <var>session</var> receives updated <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#viewer\" id=\"ref-for-viewer⑤\">viewer</a> state for timestamp <var>frameTime</var> from the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①⑤\">XR device</a>, it runs an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xr-animation-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">XR animation frame</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, which MUST run the following steps regardless of if the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#list-of-animation-frame-callbacks\" id=\"ref-for-list-of-animation-frame-callbacks③\">list of animation frame callbacks</a> is empty or not:",
+              "html": "If the frame <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#should-be-rendered\" id=\"ref-for-should-be-rendered\">should be rendered</a> for <var>session</var>:",
               "rationale": "set",
               "steps": [
                 {
@@ -992,7 +992,7 @@
           "html": "<p>Let <var>xrviews</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-getviewerpose\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getViewerPose(<var>referenceSpace</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method provides the pose of the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#viewer\" id=\"ref-for-viewer⑥\">viewer</a> relative to <var>referenceSpace</var> as an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrviewerpose\" id=\"ref-for-xrviewerpose①\">XRViewerPose</a></code>, at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrframe\" id=\"ref-for-xrframe①⓪\">XRFrame</a></code>'s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrframe-time\" id=\"ref-for-xrframe-time②\">time</a>.",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view-active\" id=\"ref-for-view-active②\">active</a> <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view\" id=\"ref-for-view⑥\">view</a> <var>view</var> in the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views④\">list of views</a> on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a></code>, perform the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -1056,7 +1056,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrframe-apply-frame-updates\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">apply frame updates</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrframe\" id=\"ref-for-xrframe①④\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+          "html": "For each <var>frame update</var> in <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session④\">session</a></code>'s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-list-of-frame-updates\" id=\"ref-for-xrsession-list-of-frame-updates\">list of frame updates</a>, perform the following steps:",
           "rationale": "run",
           "steps": [
             {
@@ -1097,7 +1097,7 @@
           "html": "<p>Let <var>transform</var> be <var>pose</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrpose-transform\" id=\"ref-for-dom-xrpose-transform①\">transform</a></code>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"populate-the-pose\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">populate the pose</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrspace\" id=\"ref-for-xrspace①④\">XRSpace</a></code> <var>space</var> in an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrspace\" id=\"ref-for-xrspace①⑤\">XRSpace</a></code> <var>baseSpace</var> at the time represented by an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrframe\" id=\"ref-for-xrframe①⑧\">XRFrame</a></code> <var>frame</var> into an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrpose\" id=\"ref-for-xrpose④\">XRPose</a></code> <var>pose</var>, with an optional <var>force emulation</var> flag, the user agent MUST run the following steps:",
+          "html": "Query the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-device\" id=\"ref-for-xr-device①②\">XR device</a>'s tracking system for <var>space</var>’s pose relative to <var>baseSpace</var> at the <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrframe-time\" id=\"ref-for-xrframe-time③\">time</a>, then perform the following steps:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1132,7 +1132,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrreferencespace\" id=\"ref-for-xrreferencespace①⑨\">XRReferenceSpace</a></code> is requested with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#enumdef-xrreferencespacetype\" id=\"ref-for-enumdef-xrreferencespacetype④\">XRReferenceSpaceType</a></code> <var>type</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑨④\">XRSession</a></code> <var>session</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-reference-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a reference space</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+          "html": "Initialize <var>referenceSpace</var> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1200,7 +1200,7 @@
           "html": "<p>Let <var>base</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrreferencespace\" id=\"ref-for-xrreferencespace②①\">XRReferenceSpace</a></code> the method was called on.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRReferenceSpace\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrreferencespace-getoffsetreferencespace\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getOffsetReferenceSpace(<var>originOffset</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method MUST perform the following steps when invoked:",
+          "html": "Initialize <var>offsetSpace</var> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1276,7 +1276,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRView\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrview-obtain-the-projection-matrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the projection matrix</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrview\" id=\"ref-for-xrview①⓪\">XRView</a></code> <var>view</var>:",
+          "html": "If <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrview-internal-projection-matrix\" id=\"ref-for-xrview-internal-projection-matrix\">internal projection matrix</a> is not <code>null</code>, perform the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -1308,7 +1308,7 @@
           "html": "<p>Set <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#list-of-viewport-objects\" id=\"ref-for-list-of-viewport-objects\">list of viewport objects</a> to the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑤\">list</a>.</p>"
         },
         {
-          "html": "When the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view-active\" id=\"ref-for-view-active④\">active</a> flag of any <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view\" id=\"ref-for-view②⑥\">view</a> in the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑤\">list of views</a> changes, one can <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-viewports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the viewports</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑨⑨\">XRSession</a></code> <var>session</var> by performing the following steps:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view-active\" id=\"ref-for-view-active⑤\">active</a> <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view\" id=\"ref-for-view②⑦\">view</a> <var>view</var> in <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑥\">list of views</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -1439,7 +1439,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRRigidTransform\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrrigidtransform-obtain-the-matrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the matrix</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrrigidtransform\" id=\"ref-for-xrrigidtransform①②\">XRRigidTransform</a></code> <var>transform</var>:",
+          "html": "If <var>transform</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrrigidtransform-internal-matrix\" id=\"ref-for-xrrigidtransform-internal-matrix①\">internal matrix</a> is not <code>null</code>, perform the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -1686,7 +1686,7 @@
           "html": "<p>Initialize <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrwebgllayer-session\" id=\"ref-for-xrwebgllayer-session\">session</a> to <var>session</var>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLLayer\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"XRWebGLLayer(session, context, layerInit)|constructor(session, context, layerInit)|XRWebGLLayer(session, context)|constructor(session, context)\" id=\"dom-xrwebgllayer-xrwebgllayer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>XRWebGLLayer(<var>session</var>, <var>context</var>, <var>layerInit</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor MUST perform the following steps when invoked:",
+          "html": "Initialize <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrwebgllayer-ignoredepthvalues\" id=\"ref-for-dom-xrwebgllayer-ignoredepthvalues①\">ignoreDepthValues</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1705,7 +1705,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLLayer\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"XRWebGLLayer(session, context, layerInit)|constructor(session, context, layerInit)|XRWebGLLayer(session, context)|constructor(session, context)\" id=\"dom-xrwebgllayer-xrwebgllayer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>XRWebGLLayer(<var>session</var>, <var>context</var>, <var>layerInit</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor MUST perform the following steps when invoked:",
+          "html": "Initialize <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrwebgllayer-composition-enabled\" id=\"ref-for-xrwebgllayer-composition-enabled①\">composition enabled</a> boolean as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1724,7 +1724,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLLayer\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"XRWebGLLayer(session, context, layerInit)|constructor(session, context, layerInit)|XRWebGLLayer(session, context)|constructor(session, context)\" id=\"dom-xrwebgllayer-xrwebgllayer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>XRWebGLLayer(<var>session</var>, <var>context</var>, <var>layerInit</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor MUST perform the following steps when invoked:",
+          "html": "<dl class=\"switch\">\n       <dt data-md=\"\">If <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrwebgllayer-composition-enabled\" id=\"ref-for-xrwebgllayer-composition-enabled④\">composition enabled</a> boolean is <code>true</code>:\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">Otherwise:\n       </dt><dd data-md=\"\">\n        \n      </dd></dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -1732,7 +1732,7 @@
               "steps": [
                 {
                   "case": "If layer’s composition enabled boolean is true:",
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLLayer\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"XRWebGLLayer(session, context, layerInit)|constructor(session, context, layerInit)|XRWebGLLayer(session, context)|constructor(session, context)\" id=\"dom-xrwebgllayer-xrwebgllayer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>XRWebGLLayer(<var>session</var>, <var>context</var>, <var>layerInit</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor MUST perform the following steps when invoked:",
+                  "html": "",
                   "rationale": "initialize",
                   "steps": [
                     {
@@ -1760,7 +1760,7 @@
                 },
                 {
                   "case": "Otherwise:",
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLLayer\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"XRWebGLLayer(session, context, layerInit)|constructor(session, context, layerInit)|XRWebGLLayer(session, context)|constructor(session, context)\" id=\"dom-xrwebgllayer-xrwebgllayer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>XRWebGLLayer(<var>session</var>, <var>context</var>, <var>layerInit</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor MUST perform the following steps when invoked:",
+                  "html": "",
                   "rationale": "initialize",
                   "steps": [
                     {
@@ -1802,7 +1802,7 @@
           "html": "<p>If <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrview-frame\" id=\"ref-for-xrview-frame①\">frame</a> is not equal to <var>frame</var>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑧\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLLayer\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrwebgllayer-getviewport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getViewport(<var>view</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrwebgllayer\" id=\"ref-for-xrwebgllayer②⑦\">XRWebGLLayer</a></code> <var>layer</var>, MUST run the following steps:",
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view-viewport-modifiable\" id=\"ref-for-view-viewport-modifiable①\">viewport modifiable</a> flag is <code>true</code> and <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view-requested-viewport-scale\" id=\"ref-for-view-requested-viewport-scale③\">requested viewport scale</a> is not equal to <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view-current-viewport-scale\" id=\"ref-for-view-current-viewport-scale①\">current viewport scale</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -1870,14 +1870,14 @@
           "html": "<p>Let <var>context</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebGLRenderingContextBase\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webglrenderingcontextbase-makexrcompatible\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>makeXRCompatible()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method ensures the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#WebGLRenderingContextBase\" id=\"ref-for-WebGLRenderingContextBase⑥\">WebGLRenderingContextBase</a></code> is running on a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#compatible-graphics-adapter\" id=\"ref-for-compatible-graphics-adapter⑤\">compatible graphics adapter</a> for the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device③①\">immersive XR device</a>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑧\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>device</var> be the result of <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#ensure-an-immersive-xr-device-is-selected\" id=\"ref-for-ensure-an-immersive-xr-device-is-selected④\">ensuring an immersive XR device is selected</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebGLRenderingContextBase\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webglrenderingcontextbase-makexrcompatible\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>makeXRCompatible()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method ensures the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#WebGLRenderingContextBase\" id=\"ref-for-WebGLRenderingContextBase⑥\">WebGLRenderingContextBase</a></code> is running on a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#compatible-graphics-adapter\" id=\"ref-for-compatible-graphics-adapter⑤\">compatible graphics adapter</a> for the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device③①\">immersive XR device</a>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+              "html": "Set <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-compatible\" id=\"ref-for-xr-compatible⑦\">XR compatible</a> boolean as follows:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -1901,14 +1901,14 @@
                     },
                     {
                       "case": "Otherwise:",
-                      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebGLRenderingContextBase\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webglrenderingcontextbase-makexrcompatible\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>makeXRCompatible()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method ensures the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#WebGLRenderingContextBase\" id=\"ref-for-WebGLRenderingContextBase⑥\">WebGLRenderingContextBase</a></code> is running on a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#compatible-graphics-adapter\" id=\"ref-for-compatible-graphics-adapter⑤\">compatible graphics adapter</a> for the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device③①\">immersive XR device</a>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③②\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.15\" id=\"ref-for-5.15\">WebGL task source</a> to perform the following steps:",
                       "rationale": "handle",
                       "steps": [
                         {
                           "html": "<p>Force <var>context</var> to be lost.</p>"
                         },
                         {
-                          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebGLRenderingContextBase\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webglrenderingcontextbase-makexrcompatible\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>makeXRCompatible()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method ensures the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#WebGLRenderingContextBase\" id=\"ref-for-WebGLRenderingContextBase⑥\">WebGLRenderingContextBase</a></code> is running on a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#compatible-graphics-adapter\" id=\"ref-for-compatible-graphics-adapter⑤\">compatible graphics adapter</a> for the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device③①\">immersive XR device</a>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+                          "html": "<a data-link-type=\"dfn\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_LOST\" id=\"ref-for-CONTEXT_LOST\">Handle the context loss</a> as described by the WebGL specification:",
                           "rationale": "let",
                           "steps": [
                             {
@@ -1927,7 +1927,7 @@
                               "html": "<p>Disable all extensions except \"WEBGL_lose_context\".</p>"
                             },
                             {
-                              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebGLRenderingContextBase\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webglrenderingcontextbase-makexrcompatible\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>makeXRCompatible()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method ensures the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#WebGLRenderingContextBase\" id=\"ref-for-WebGLRenderingContextBase⑥\">WebGLRenderingContextBase</a></code> is running on a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#compatible-graphics-adapter\" id=\"ref-for-compatible-graphics-adapter⑤\">compatible graphics adapter</a> for the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device③①\">immersive XR device</a>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+                              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③③\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.15\" id=\"ref-for-5.15①\">WebGL task source</a> to perform the following steps:",
                               "rationale": "fire",
                               "steps": [
                                 {
@@ -1937,14 +1937,14 @@
                                   "html": "<p>If <var>e</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#canceled-flag\" id=\"ref-for-canceled-flag\">canceled flag</a> is not set, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①④\">reject</a> <var>promise</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror\">AbortError</a></code> and abort these steps.</p>"
                                 },
                                 {
-                                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebGLRenderingContextBase\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webglrenderingcontextbase-makexrcompatible\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>makeXRCompatible()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method ensures the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#WebGLRenderingContextBase\" id=\"ref-for-WebGLRenderingContextBase⑥\">WebGLRenderingContextBase</a></code> is running on a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#compatible-graphics-adapter\" id=\"ref-for-compatible-graphics-adapter⑤\">compatible graphics adapter</a> for the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device③①\">immersive XR device</a>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+                                  "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑨\">in parallel</a>.",
                                   "rationale": "queue",
                                   "steps": [
                                     {
                                       "html": "<p>Await a restorable drawing buffer on a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#compatible-graphics-adapter\" id=\"ref-for-compatible-graphics-adapter⑦\">compatible graphics adapter</a> for <var>device</var>.</p>"
                                     },
                                     {
-                                      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebGLRenderingContextBase\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webglrenderingcontextbase-makexrcompatible\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>makeXRCompatible()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method ensures the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#WebGLRenderingContextBase\" id=\"ref-for-WebGLRenderingContextBase⑥\">WebGLRenderingContextBase</a></code> is running on a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#compatible-graphics-adapter\" id=\"ref-for-compatible-graphics-adapter⑤\">compatible graphics adapter</a> for the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device③①\">immersive XR device</a>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+                                      "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③④\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.15\" id=\"ref-for-5.15②\">WebGL task source</a> to perform the following steps:",
                                       "rationale": "restore",
                                       "steps": [
                                         {
@@ -2057,7 +2057,7 @@
           "html": "<p>If <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrsession-visibilitystate\" id=\"ref-for-dom-xrsession-visibilitystate②\">visibilityState</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrvisibilitystate-hidden\" id=\"ref-for-dom-xrvisibilitystate-hidden①\">\"hidden\"</a></code>, return <code>false</code>.</p>"
         },
         {
-          "html": "To determine if <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"poses-may-be-reported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">poses may be reported</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession①⑤⓪\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+          "html": "Determine if the pose data can be returned as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -2167,7 +2167,7 @@
           "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#resolve-the-requested-features\" id=\"ref-for-resolve-the-requested-features②\">resolving the requested features</a> given <var>requiredFeatures</var>,<var>optionalFeatures</var>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrpermissiondescriptor-mode\" id=\"ref-for-dom-xrpermissiondescriptor-mode①\">mode</a></code>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"request the xr permission\" data-noexport=\"\" id=\"request-the-xr-permission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">request the \"xr\" permission</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dictdef-xrpermissiondescriptor\" id=\"ref-for-dictdef-xrpermissiondescriptor④\">XRPermissionDescriptor</a></code> <var>descriptor</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrpermissionstatus\" id=\"ref-for-xrpermissionstatus③\">XRPermissionStatus</a></code> <var>status</var>, the UA MUST run the following steps:",
+          "html": "If <var>result</var> is <code>null</code>, run the following steps:",
           "rationale": "set",
           "steps": [
             {
@@ -2185,7 +2185,7 @@
           "html": "<p>The user agent MAY at this point ask the user’s permission for the calling algorithm to use any of the features in <var>consentRequired</var> and <var>consentOptional</var>. The results of these prompts should be included when determining if there is a clear signal of <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#user-intent\" id=\"ref-for-user-intent①④\">user intent</a> for enabling these features.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"request the xr permission\" data-noexport=\"\" id=\"request-the-xr-permission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">request the \"xr\" permission</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dictdef-xrpermissiondescriptor\" id=\"ref-for-dictdef-xrpermissiondescriptor④\">XRPermissionDescriptor</a></code> <var>descriptor</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrpermissionstatus\" id=\"ref-for-xrpermissionstatus③\">XRPermissionStatus</a></code> <var>status</var>, the UA MUST run the following steps:",
+          "html": "For each <var>feature</var> in <var>consentRequired</var> perform the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -2200,7 +2200,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"request the xr permission\" data-noexport=\"\" id=\"request-the-xr-permission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">request the \"xr\" permission</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dictdef-xrpermissiondescriptor\" id=\"ref-for-dictdef-xrpermissiondescriptor④\">XRPermissionDescriptor</a></code> <var>descriptor</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrpermissionstatus\" id=\"ref-for-xrpermissionstatus③\">XRPermissionStatus</a></code> <var>status</var>, the UA MUST run the following steps:",
+          "html": "For each <var>feature</var> in <var>consentOptional</var> perform the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -2247,7 +2247,7 @@
           "html": "<p>Let <var>previouslyEnabled</var> be <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-device-set-of-granted-features\" id=\"ref-for-xr-device-set-of-granted-features①\">set of granted features</a> for <var>mode</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"resolve-the-requested-features\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">resolve the requested features</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>requiredFeatures</var> and <var>optionalFeatures</var> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#enumdef-xrsessionmode\" id=\"ref-for-enumdef-xrsessionmode①⑦\">XRSessionMode</a></code> <var>mode</var>, the user agent MUST run the following steps:",
+          "html": "If <var>device</var> is <code>null</code> or <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#list-of-supported-modes\" id=\"ref-for-list-of-supported-modes⑥\">list of supported modes</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑦\">contain</a> <var>mode</var>, run the following steps:",
           "rationale": "return",
           "steps": [
             {
@@ -2259,7 +2259,7 @@
           "html": "<p>Add every <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#feature-descriptor\" id=\"ref-for-feature-descriptor⑨\">feature descriptor</a> in the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#default-features\" id=\"ref-for-default-features①\">default features</a> table associated with <var>mode</var> to <var>granted</var> if it is not already present.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"resolve-the-requested-features\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">resolve the requested features</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>requiredFeatures</var> and <var>optionalFeatures</var> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#enumdef-xrsessionmode\" id=\"ref-for-enumdef-xrsessionmode①⑦\">XRSessionMode</a></code> <var>mode</var>, the user agent MUST run the following steps:",
+          "html": "For each <var>feature</var> in <var>requiredFeatures</var> perform the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -2286,7 +2286,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"resolve-the-requested-features\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">resolve the requested features</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>requiredFeatures</var> and <var>optionalFeatures</var> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#enumdef-xrsessionmode\" id=\"ref-for-enumdef-xrsessionmode①⑦\">XRSessionMode</a></code> <var>mode</var>, the user agent MUST run the following steps:",
+          "html": "For each <var>feature</var> in <var>optionalFeatures</var> perform the following steps:",
           "rationale": "if",
           "steps": [
             {

@@ -977,7 +977,7 @@
           "html": "If <var data-type=\"AbortSignal\">signal</var> is <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AbortSignal\" data-xref-for=\"AbortSignal\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"abortsignal-aborted\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\">aborted</a>, then reject <var data-type=\"Promise\">p</var>\n            with <var data-type=\"AbortSignal\">signal</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AbortSignal\" data-xref-for=\"AbortSignal\" data-cite=\"dom\" data-cite-path=\"/\" data-cite-frag=\"abortsignal-abort-reason\" data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\">abort reason</a> and return <var data-type=\"Promise\">p</var>."
         },
         {
-          "html": "When the <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-ndefreader-scan\" data-idl=\"operation\" data-title=\"NDEFReader.scan\" data-dfn-for=\"NDEFReader\" data-type=\"Promise\" data-lt=\"scan()|scan(options)\" data-local-lt=\"NDEFReader.scan|NDEFReader.scan()|scan\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>NDEFReader.scan</code></dfn> method is invoked, the UA\n        <em class=\"rfc2119\">MUST</em> run the following\n        <dfn id=\"steps-listen\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">NFC listen algorithm</dfn>:",
+          "html": "If <var data-type=\"AbortSignal\">signal</var> is not null, then\n            <a data-cite=\"dom#abortsignal-abort-algorithms\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-algorithms\">\n            add the following <dfn id=\"dfn-clean-up-the-pending-scan\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">clean up the pending scan</dfn> steps</a>\n            to <var data-type=\"AbortSignal\">signal</var>:",
           "rationale": "remove",
           "steps": [
             {
@@ -989,7 +989,7 @@
           ]
         },
         {
-          "html": "When the <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-ndefreader-scan\" data-idl=\"operation\" data-title=\"NDEFReader.scan\" data-dfn-for=\"NDEFReader\" data-type=\"Promise\" data-lt=\"scan()|scan(options)\" data-local-lt=\"NDEFReader.scan|NDEFReader.scan()|scan\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>NDEFReader.scan</code></dfn> method is invoked, the UA\n        <em class=\"rfc2119\">MUST</em> run the following\n        <dfn id=\"steps-listen\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">NFC listen algorithm</dfn>:",
+          "html": "Return <var data-type=\"Promise\">p</var> and run the following steps <a data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {

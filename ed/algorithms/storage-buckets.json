@@ -26,7 +26,7 @@
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucketManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"open(name, options)|open(name)\" id=\"dom-storagebucketmanager-open\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>open(<var>name</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps\">Enqueue the following steps</a> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/storage-buckets/#storagebucketmanager-storage-bucket-manager\" id=\"ref-for-storagebucketmanager-storage-bucket-manager\">storage bucket manager</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -55,7 +55,7 @@
           "html": "<p>Let <var>expires</var> be undefined.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"open-a-bucket\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">open a bucket</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a <var>shelf</var> given a bucket <var>name</var> and optional <var>options</var>, run the following steps:",
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/storage-buckets/#dom-storagebucketoptions-expires\" id=\"ref-for-dom-storagebucketoptions-expires\">expires</a></code>\"] exists, then:",
           "rationale": "set",
           "steps": [
             {
@@ -70,7 +70,7 @@
           "html": "<p>Let <var>quota</var> be undefined.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"open-a-bucket\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">open a bucket</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a <var>shelf</var> given a bucket <var>name</var> and optional <var>options</var>, run the following steps:",
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/storage-buckets/#dom-storagebucketoptions-quota\" id=\"ref-for-dom-storagebucketoptions-quota\">quota</a></code>\"] exists, then:",
           "rationale": "set",
           "steps": [
             {
@@ -85,7 +85,7 @@
           "html": "<p>Let <var>persisted</var> be false.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"open-a-bucket\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">open a bucket</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a <var>shelf</var> given a bucket <var>name</var> and optional <var>options</var>, run the following steps:",
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/storage-buckets/#dom-storagebucketoptions-persisted\" id=\"ref-for-dom-storagebucketoptions-persisted\">persisted</a></code>\"] is true, then:",
           "rationale": "let",
           "steps": [
             {
@@ -100,7 +100,7 @@
           "html": "<p>Let <var>bucket</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/storage-buckets/#get-or-expire-a-bucket\" id=\"ref-for-get-or-expire-a-bucket\">get or expire a bucket</a> with <var>shelf</var> and <var>name</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"open-a-bucket\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">open a bucket</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a <var>shelf</var> given a bucket <var>name</var> and optional <var>options</var>, run the following steps:",
+          "html": "If <var>bucket</var> is null, then:",
           "rationale": "set",
           "steps": [
             {
@@ -199,7 +199,7 @@
           "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/storage-buckets/#validate-a-bucket-name\" id=\"ref-for-validate-a-bucket-name①\">validate a bucket name</a> with <var>name</var> is failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidcharactererror\" id=\"ref-for-invalidcharactererror\">InvalidCharacterError</a></code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucketManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storagebucketmanager-delete\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>delete(<var>name</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps①\">enqueue the following steps</a> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/storage-buckets/#storagebucketmanager-storage-bucket-manager\" id=\"ref-for-storagebucketmanager-storage-bucket-manager①\">storage bucket manager</a>:",
           "rationale": "run",
           "steps": [
             {
@@ -254,11 +254,11 @@
           "html": "<p>Let <var>keys</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucketManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storagebucketmanager-keys\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>keys()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">Enqueue the following steps</a> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/storage-buckets/#storagebucketmanager-storage-bucket-manager\" id=\"ref-for-storagebucketmanager-storage-bucket-manager②\">storage bucket manager</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucketManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storagebucketmanager-keys\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>keys()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+              "html": "For each <var>key</var> in <var>shelf</var>’s <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#bucket-map\" id=\"ref-for-bucket-map④\">bucket map</a>, run the following steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -295,7 +295,7 @@
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucket\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storagebucket-persist\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>persist()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -305,7 +305,7 @@
               "html": "<p>Let <var>persisted</var> be true if <var>bucket</var>’s <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#bucket-mode\" id=\"ref-for-bucket-mode②\">bucket mode</a> is <code>\"persistent\"</code>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucket\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storagebucket-persist\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>persist()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+              "html": "Otherwise,",
               "rationale": "let",
               "steps": [
                 {
@@ -342,7 +342,7 @@
           "html": "<p>Let <var>bucket</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-bucket\" id=\"ref-for-storage-bucket⑦\">storage bucket</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucket\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storagebucket-persisted\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>persisted()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "Otherwise, run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -386,7 +386,7 @@
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑤\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucket\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storagebucket-estimate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>estimate()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "Otherwise, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -424,7 +424,7 @@
           "html": "<p>Let <var>bucket</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-bucket\" id=\"ref-for-storage-bucket①②\">storage bucket</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucket\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storagebucket-setexpires\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>setExpires(<var>expires</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "Otherwise, run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -456,7 +456,7 @@
           "html": "<p>Let <var>bucket</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-bucket\" id=\"ref-for-storage-bucket①③\">storage bucket</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucket\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-storagebucket-expires\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>expires()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "Otherwise, run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -482,7 +482,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/storage-buckets/#storagebucket\" id=\"ref-for-storagebucket⑤\">StorageBucket</a></code> has an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IndexedDB/#idbfactory\" id=\"ref-for-idbfactory②\">IDBFactory</a></code> object, initially null. The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucket\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-storagebucket-indexeddb\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>indexedDB</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> getter steps are:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/storage-buckets/#dom-storagebucket-indexeddb\" id=\"ref-for-dom-storagebucket-indexeddb①\">indexedDB</a></code> is null, run the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -514,7 +514,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/storage-buckets/#storagebucket\" id=\"ref-for-storagebucket⑥\">StorageBucket</a></code> has a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#cachestorage\" id=\"ref-for-cachestorage①\">CacheStorage</a></code> object, initially null. The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"StorageBucket\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-storagebucket-caches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>caches</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> getter steps are:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/storage-buckets/#dom-storagebucket-caches\" id=\"ref-for-dom-storagebucket-caches①\">caches</a></code> is null, run the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -560,7 +560,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-clear-site-data-header-with-buckets\">parse a Clear-Site-Data header with buckets<a class=\"self-link\" href=\"https://wicg.github.io/storage-buckets/#parse-a-clear-site-data-header-with-buckets\"></a></dfn>, execute the following steps:",
+          "html": "For each <var>type</var> in <var>header</var>, execute the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -595,7 +595,7 @@
           "html": "<p>If <var>shelf</var> is failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑥\">TypeError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "To <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-data-with-buckets\">clear data with buckets<a class=\"self-link\" href=\"https://wicg.github.io/storage-buckets/#clear-data-with-buckets\"></a></dfn> given a <var>bucket name</var>, execute the following steps:",
+          "html": "For each <var>type</var> in <var>types</var>, execute the following steps:",
           "rationale": "if",
           "steps": [
             {

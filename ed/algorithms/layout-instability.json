@@ -20,7 +20,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"report-the-layout-shift\">report the layout shift</dfn> for an active <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑧\">Document</a></code> <var>D</var>, run the following steps:",
+          "html": "If the current <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#layout-shift-value\" id=\"ref-for-layout-shift-value⑤\">layout shift value</a> of <var>D</var> is not 0:",
           "rationale": "create",
           "steps": [
             {
@@ -67,7 +67,7 @@
           "html": "<p>Let <var>C</var> be an empty <a href=\"https://infra.spec.whatwg.org/#list\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#node\" id=\"ref-for-node①⑧\">Node</a></code> objects.</p>"
         },
         {
-          "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-the-layout-shift-sources\">report the layout shift sources</dfn> for an active <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> <var>D</var>, run the following steps:",
+          "html": "For each member <var>N</var> of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/layout-instability/#unstable-node-set\" id=\"ref-for-unstable-node-set③\">unstable node set</a> of <var>D</var>, run these steps:",
           "rationale": "if",
           "steps": [
             {
@@ -80,7 +80,7 @@
               "html": "<p>Otherwise, if there are fewer than 5 members of <var>C</var>, then <a href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var>N</var> to <var>C</var>.</p>"
             },
             {
-              "html": "When asked to <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-the-layout-shift-sources\">report the layout shift sources</dfn> for an active <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> <var>D</var>, run the following steps:",
+              "html": "Otherwise, run these steps:",
               "rationale": "let",
               "steps": [
                 {

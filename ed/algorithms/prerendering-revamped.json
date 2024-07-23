@@ -17,7 +17,7 @@
           "html": "<p>Let <var>searchVariance</var> be <var>prerenderRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-prerendering-traversable\" id=\"ref-for-prerender-record-prerendering-traversable\">prerendering traversable</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-prerender-initial-response-search-variance\" id=\"ref-for-prerendering-traversable-prerender-initial-response-search-variance\">prerender initial response search variance</a>.</p>"
         },
         {
-          "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record\" id=\"ref-for-prerender-record①\">prerender record</a> <var>prerenderRecord</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerender record\" data-dfn-type=\"dfn\" data-export=\"\" id=\"prerender-record-matches-a-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches a URL</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a> <var>url</var> if the following algorithm returns true:",
+          "html": "If <var>searchVariance</var> is not null:",
           "rationale": "if",
           "steps": [
             {
@@ -40,7 +40,7 @@
           "html": "<p>If <var>prerenderRecord</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-matches-a-url\" id=\"ref-for-prerender-record-matches-a-url\">matches a URL</a> given <var>url</var>, return true.</p>"
         },
         {
-          "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record\" id=\"ref-for-prerender-record②\">prerender record</a> <var>prerenderRecord</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerender record\" data-dfn-type=\"dfn\" data-export=\"\" id=\"prerender-record-is-expected-to-match-a-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">is expected to match a URL</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">URL</a> <var>url</var> if the following algorithm returns true:",
+          "html": "If <var>prerenderRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-prerendering-traversable\" id=\"ref-for-prerender-record-prerendering-traversable①\">prerendering traversable</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-prerender-initial-response-search-variance\" id=\"ref-for-prerendering-traversable-prerender-initial-response-search-variance①\">prerender initial response search variance</a> is null:",
           "rationale": "let",
           "steps": [
             {
@@ -111,11 +111,11 @@
           "html": "<p>Let <var>record</var> be a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record\" id=\"ref-for-prerender-record③\">prerender record</a> with <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-starting-url\" id=\"ref-for-prerender-record-starting-url③\">starting URL</a> <var>startingURL</var> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-prerendering-traversable\" id=\"ref-for-prerender-record-prerendering-traversable②\">prerendering traversable</a> <var>prerenderingTraversable</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"start-user-agent-initiated-prerendering\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start user-agent initiated prerendering</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>startingURL</var>:",
+          "html": "When the user indicates they wish to commit a navigation to an <var>activationURL</var> which is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> such that <var>record</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-matches-a-url\" id=\"ref-for-prerender-record-matches-a-url①\">matches a URL</a> given <var>activationURL</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"start-user-agent-initiated-prerendering\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start user-agent initiated prerendering</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>startingURL</var>:",
+              "html": "If the user indicates they wish to create a new user-visible <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable①\">top-level traversable</a> while doing so (e.g., by pressing <kbd><kbd>Shift</kbd>+<kbd>Enter</kbd></kbd> after typing in the address bar):",
               "rationale": "update",
               "steps": [
                 {
@@ -130,7 +130,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"start-user-agent-initiated-prerendering\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start user-agent initiated prerendering</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>startingURL</var>:",
+              "html": "Alternately, if the user indicates they wish to commit the navigation into an existing <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable②\">top-level traversable</a> <var>predecessorTraversable</var> (e.g., by pressing <kbd>Enter</kbd> after typing in the address bar):",
               "rationale": "activate",
               "steps": [
                 {
@@ -199,7 +199,7 @@
           "html": "<p>Let <var>successorDocument</var> be <var>successorTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①\">active document</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-update-the-successor-for-activation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the successor for activation</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable③\">prerendering traversable</a> <var>successorTraversable</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑥\">URL</a> <var>startingURL</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑦\">URL</a> <var>activationURL</var>:",
+          "html": "If <var>startingURL</var> equals <var>successorDocument</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"ref-for-concept-document-url\">URL</a> and <var>startingURL</var> does not equal <var>activationURL</var>:",
           "rationale": "assert",
           "steps": [
             {
@@ -237,7 +237,7 @@
           "html": "<p>Set <var>predecessorTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#ongoing-navigation\" id=\"ref-for-ongoing-navigation\">ongoing navigation</a> to <var>navigationId</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-activate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">activate</dfn> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable④\">prerendering traversable</a> <var>successorTraversable</var> in place of a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑤\">top-level traversable</a> <var>predecessorTraversable</var> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#history-handling-behavior\" id=\"ref-for-history-handling-behavior\">history handling behavior</a> <var>historyHandling</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑧\">URL</a> <var>startingURL</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑨\">URL</a> <var>activationURL</var>, an optional <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-id\" id=\"ref-for-navigation-id\">navigation ID</a> <var>navigationId</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">In parallel</a>, run these steps:",
           "rationale": "let",
           "steps": [
             {
@@ -253,7 +253,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-update-the-successor-for-activation\" id=\"ref-for-prerendering-traversable-update-the-successor-for-activation①\">Update the successor for activation</a> given <var>successorTraversable</var>, <var>startingURL</var>, and <var>activationURL</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-activate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">activate</dfn> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable④\">prerendering traversable</a> <var>successorTraversable</var> in place of a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑤\">top-level traversable</a> <var>predecessorTraversable</var> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#history-handling-behavior\" id=\"ref-for-history-handling-behavior\">history handling behavior</a> <var>historyHandling</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑧\">URL</a> <var>startingURL</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑨\">URL</a> <var>activationURL</var>, an optional <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-id\" id=\"ref-for-navigation-id\">navigation ID</a> <var>navigationId</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#tn-append-session-history-traversal-steps\" id=\"ref-for-tn-append-session-history-traversal-steps\">Append session history traversal steps</a> to <var>predecessorTraversable</var> to perform the following steps:",
               "rationale": "assert",
               "steps": [
                 {
@@ -293,11 +293,11 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-finalize-activation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">finalize activation</dfn> of a top-level traversable <var>traversable</var> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> <var>origin</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>navigable</var> of <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑥\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#inclusive-descendant-navigables\" id=\"ref-for-inclusive-descendant-navigables①\">inclusive descendant navigables</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#navigation-and-traversal-task-source\" id=\"ref-for-navigation-and-traversal-task-source①\">navigation and traversal task source</a>, given <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a>, to perform the following steps:",
           "rationale": "for",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-finalize-activation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">finalize activation</dfn> of a top-level traversable <var>traversable</var> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> <var>origin</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>origin</var> → <var>hintSet</var> in <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable-prerender-scoped-accept-ch-cache\" id=\"ref-for-prerendering-navigable-prerender-scoped-accept-ch-cache\">prerender-scoped Accept-CH cache</a>:",
               "rationale": "set",
               "steps": [
                 {
@@ -318,7 +318,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#eventdef-document-prerenderingchange\" id=\"ref-for-eventdef-document-prerenderingchange\">prerenderingchange</a></code> at <var>doc</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-finalize-activation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">finalize activation</dfn> of a top-level traversable <var>traversable</var> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> <var>origin</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>steps</var> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-post-prerendering-activation-steps-list\" id=\"ref-for-document-post-prerendering-activation-steps-list②\">post-prerendering activation steps list</a>:",
               "rationale": "run",
               "steps": [
                 {
@@ -364,14 +364,14 @@
           "html": "<p>Let <var>recordToUse</var> be null.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-matching-complete-prerender-record\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a matching complete prerender record</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code> <var>predecessorDocument</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①⓪\">URL</a> <var>url</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>record</var> of <var>predecessorDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-prerender-records\" id=\"ref-for-document-prerender-records③\">prerender records</a>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-prerendering-traversable\" id=\"ref-for-prerender-record-prerendering-traversable④\">prerendering traversable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑧\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#is-initial-about%3Ablank\" id=\"ref-for-is-initial-about%3Ablank①\">is initial about:blank</a> is true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-matching-complete-prerender-record\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a matching complete prerender record</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code> <var>predecessorDocument</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①⓪\">URL</a> <var>url</var>:",
+              "html": "If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-starting-url\" id=\"ref-for-prerender-record-starting-url⑥\">starting URL</a> is equal to <var>url</var>:",
               "rationale": "set",
               "steps": [
                 {
@@ -383,7 +383,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-matching-complete-prerender-record\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a matching complete prerender record</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code> <var>predecessorDocument</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①⓪\">URL</a> <var>url</var>:",
+              "html": "If <var>recordToUse</var> is null and <var>record</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-matches-a-url\" id=\"ref-for-prerender-record-matches-a-url②\">matches a URL</a> given <var>url</var>:",
               "rationale": "set",
               "steps": [
                 {
@@ -394,7 +394,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-matching-complete-prerender-record\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a matching complete prerender record</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code> <var>predecessorDocument</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①⓪\">URL</a> <var>url</var>:",
+          "html": "If <var>recordToUse</var> is not null:",
           "rationale": "remove",
           "steps": [
             {
@@ -426,7 +426,7 @@
           "html": "<p>Let <var>cutoffTime</var> be null.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"wait-for-a-matching-prerendering-record\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">wait for a matching prerendering record</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable②\">navigable</a> <var>navigable</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①①\">URL</a> <var>url</var>, a string <var>cspNavigationType</var>, and a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#post-resource\" id=\"ref-for-post-resource\">POST resource</a>, string, or null <var>documentResource</var>:",
+          "html": "While true:",
           "rationale": "let",
           "steps": [
             {
@@ -439,7 +439,7 @@
               "html": "<p>Let <var>potentialRecords</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"wait-for-a-matching-prerendering-record\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">wait for a matching prerendering record</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable②\">navigable</a> <var>navigable</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①①\">URL</a> <var>url</var>, a string <var>cspNavigationType</var>, and a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#post-resource\" id=\"ref-for-post-resource\">POST resource</a>, string, or null <var>documentResource</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>record</var> of <var>predecessorDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-prerender-records\" id=\"ref-for-document-prerender-records⑤\">prerender records</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -759,11 +759,11 @@
     {
       "name": "Geolocation watchPosition patch",
       "href": "https://wicg.github.io/nav-speculation/prerendering.html#post-prerendering-activation-geolocation-watch-process-id",
-      "html": "Let <var>watchId</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long\">unsigned long</a></code>, and note it as a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"post-prerendering-activation-geolocation-watch-process-id\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">post-prerendering activation geolocation watch process ID</dfn>.",
+      "html": "Modify the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocation-watchposition\" id=\"ref-for-dom-geolocation-watchposition\">watchPosition()</a></code> method steps by prepending the following step:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>watchId</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long\">unsigned long</a></code>, and note it as a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"post-prerendering-activation-geolocation-watch-process-id\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">post-prerendering activation geolocation watch process ID</dfn>.",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑥\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②⑤\">prerendering navigable</a>, then:",
           "rationale": "let",
           "steps": [
             {

@@ -20,7 +20,7 @@
           "html": "<p>Let <var>installedApps</var> be <a data-link-type=\"dfn\" href=\"https://wicg.github.io/get-installed-related-apps/spec/#installed-apps\" id=\"ref-for-installed-apps①\">installed apps</a>[<var>platform</var>].</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"match-an-installed-app\">match an installed app</dfn> for <var>relatedApp</var> (an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource\" id=\"ref-for-dom-externalapplicationresource\">ExternalApplicationResource</a></code>) and <var>manifestURL</var> (a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url①\">URL</a></code>), run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>installedApp</var> in <var>installedApps</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -36,7 +36,7 @@
               "html": "<p>Let <var>fingerprints</var> be <var>relatedApp</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-fingerprints\" id=\"ref-for-dom-externalapplicationresource-fingerprints\">fingerprints</a></code> if present, otherwise an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"match-an-installed-app\">match an installed app</dfn> for <var>relatedApp</var> (an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource\" id=\"ref-for-dom-externalapplicationresource\">ExternalApplicationResource</a></code>) and <var>manifestURL</var> (a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url①\">URL</a></code>), run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>fingerprint</var> of <var>fingerprints</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -73,7 +73,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Navigator\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigator-getinstalledrelatedapps\"><code>getInstalledRelatedApps()</code></dfn> method, when invoked, runs these steps:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -83,7 +83,7 @@
               "html": "<p>Let <var>relatedApplications</var> be <var>manifest</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/appmanifest/#dom-webappmanifest-related_applications\" id=\"ref-for-dom-webappmanifest-related_applications\">related_applications</a></code>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Navigator\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigator-getinstalledrelatedapps\"><code>getInstalledRelatedApps()</code></dfn> method, when invoked, runs these steps:",
+              "html": "Optionally:",
               "rationale": "let",
               "steps": [
                 {
@@ -98,7 +98,7 @@
               "html": "<p>Let <var>installedApps</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Navigator\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-navigator-getinstalledrelatedapps\"><code>getInstalledRelatedApps()</code></dfn> method, when invoked, runs these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>relatedApplication</var> in <var>relatedApplications</var>:",
               "rationale": "let",
               "steps": [
                 {

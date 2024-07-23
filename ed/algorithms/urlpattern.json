@@ -177,7 +177,7 @@
           "html": "<p>Let <var>init</var> be null.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"URL pattern\" data-dfn-type=\"dfn\" data-export=\"\" id=\"url-pattern-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern②\">URL pattern</a> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterninput\" id=\"ref-for-typedefdef-urlpatterninput⑥\">URLPatternInput</a></code> <var>input</var>, string or null <var>baseURL</var>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatternoptions\" id=\"ref-for-dictdef-urlpatternoptions④\">URLPatternOptions</a></code> <var>options</var>:",
+          "html": "If <var>input</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string\">scalar value string</a> then:",
           "rationale": "set",
           "steps": [
             {
@@ -192,7 +192,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"URL pattern\" data-dfn-type=\"dfn\" data-export=\"\" id=\"url-pattern-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern②\">URL pattern</a> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterninput\" id=\"ref-for-typedefdef-urlpatterninput⑥\">URLPatternInput</a></code> <var>input</var>, string or null <var>baseURL</var>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatternoptions\" id=\"ref-for-dictdef-urlpatternoptions④\">URLPatternOptions</a></code> <var>options</var>:",
+          "html": "Otherwise:",
           "rationale": "assert",
           "steps": [
             {
@@ -210,7 +210,7 @@
           "html": "<p>Let <var>processedInit</var> be the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#process-a-urlpatterninit\" id=\"ref-for-process-a-urlpatterninit\">process a URLPatternInit</a> given <var>init</var>, \"<code>pattern</code>\", null, null, null, null, null, null, null, and null.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"URL pattern\" data-dfn-type=\"dfn\" data-export=\"\" id=\"url-pattern-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern②\">URL pattern</a> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterninput\" id=\"ref-for-typedefdef-urlpatterninput⑥\">URLPatternInput</a></code> <var>input</var>, string or null <var>baseURL</var>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatternoptions\" id=\"ref-for-dictdef-urlpatternoptions④\">URLPatternOptions</a></code> <var>options</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>componentName</var> of « \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-protocol\" id=\"ref-for-dom-urlpatterninit-protocol①\">protocol</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-username\" id=\"ref-for-dom-urlpatterninit-username\">username</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-password\" id=\"ref-for-dom-urlpatterninit-password\">password</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hostname\" id=\"ref-for-dom-urlpatterninit-hostname\">hostname</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-port\" id=\"ref-for-dom-urlpatterninit-port\">port</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname\">pathname</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-search\" id=\"ref-for-dom-urlpatterninit-search\">search</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hash\" id=\"ref-for-dom-urlpatterninit-hash\">hash</a></code>\" »:",
           "rationale": "if",
           "steps": [
             {
@@ -246,7 +246,7 @@
           "html": "<p>Let <var>compileOptions</var> be a copy of the <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#default-options\" id=\"ref-for-default-options④\">default options</a> with the <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options-ignore-case\" id=\"ref-for-options-ignore-case\">ignore case</a> property set to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternoptions-ignorecase\" id=\"ref-for-dom-urlpatternoptions-ignorecase①\">ignoreCase</a></code>\"].</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"URL pattern\" data-dfn-type=\"dfn\" data-export=\"\" id=\"url-pattern-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern②\">URL pattern</a> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterninput\" id=\"ref-for-typedefdef-urlpatterninput⑥\">URLPatternInput</a></code> <var>input</var>, string or null <var>baseURL</var>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatternoptions\" id=\"ref-for-dictdef-urlpatternoptions④\">URLPatternOptions</a></code> <var>options</var>:",
+          "html": "If the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#protocol-component-matches-a-special-scheme\" id=\"ref-for-protocol-component-matches-a-special-scheme\">protocol component matches a special scheme</a> given <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-protocol-component\" id=\"ref-for-url-pattern-protocol-component⑤\">protocol component</a> is true, then:",
           "rationale": "let",
           "steps": [
             {
@@ -308,7 +308,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>input</var> to <var>inputs</var>.</p>"
         },
         {
-          "html": "To perform a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"URL pattern\" data-dfn-type=\"dfn\" data-export=\"\" id=\"url-pattern-match\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">match</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern④\">URL pattern</a> <var>urlPattern</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterninput\" id=\"ref-for-typedefdef-urlpatterninput⑦\">URLPatternInput</a></code> or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a> <var>input</var>, and an optional string <var>baseURLString</var>:",
+          "html": "If <var>input</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit\" id=\"ref-for-dictdef-urlpatterninit②\">URLPatternInit</a></code> then:",
           "rationale": "if",
           "steps": [
             {
@@ -344,21 +344,21 @@
           ]
         },
         {
-          "html": "To perform a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"URL pattern\" data-dfn-type=\"dfn\" data-export=\"\" id=\"url-pattern-match\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">match</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern④\">URL pattern</a> <var>urlPattern</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterninput\" id=\"ref-for-typedefdef-urlpatterninput⑦\">URLPatternInput</a></code> or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a> <var>input</var>, and an optional string <var>baseURLString</var>:",
+          "html": "Otherwise:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>url</var> be <var>input</var>.</p>"
             },
             {
-              "html": "To perform a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"URL pattern\" data-dfn-type=\"dfn\" data-export=\"\" id=\"url-pattern-match\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">match</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern④\">URL pattern</a> <var>urlPattern</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterninput\" id=\"ref-for-typedefdef-urlpatterninput⑦\">URLPatternInput</a></code> or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a> <var>input</var>, and an optional string <var>baseURLString</var>:",
+              "html": "If <var>input</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString②④\">USVString</a></code>:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>baseURL</var> be null.</p>"
                 },
                 {
-                  "html": "To perform a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"URL pattern\" data-dfn-type=\"dfn\" data-export=\"\" id=\"url-pattern-match\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">match</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern④\">URL pattern</a> <var>urlPattern</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterninput\" id=\"ref-for-typedefdef-urlpatterninput⑦\">URLPatternInput</a></code> or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a> <var>input</var>, and an optional string <var>baseURLString</var>:",
+                  "html": "If <var>baseURLString</var> was given, then:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -537,7 +537,7 @@
           "html": "<p>Let <var>has regexp groups</var> be false.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-a-component\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile a component</dfn> given a string <var>input</var>, <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#encoding-callback\" id=\"ref-for-encoding-callback\">encoding callback</a> <var>encoding callback</var>, and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options\">options</a> <var>options</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>part</var> of <var>part list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -569,7 +569,7 @@
           "html": "<p>Let <var>index</var> be 1.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-component-match-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a component match result</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component\" id=\"ref-for-component①⓪\">component</a> <var>component</var>, a string <var>input</var>, and an array representing the output of <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpbuiltinexec\" id=\"ref-for-sec-regexpbuiltinexec⑧\">RegExpBuiltinExec</a> <var>execResult</var>:",
+          "html": "While <var>index</var> is less than <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>execResult</var>, \"<code>length</code>\"):",
           "rationale": "let",
           "steps": [
             {
@@ -604,7 +604,7 @@
           "html": "<p>Let <var>special scheme list</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> populated with all of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-scheme\" id=\"ref-for-special-scheme①\">special schemes</a>.</p>"
         },
         {
-          "html": "To determine if a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"protocol-component-matches-a-special-scheme\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">protocol component matches a special scheme</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component\" id=\"ref-for-component①①\">component</a> <var>protocol component</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>scheme</var> of <var>special scheme list</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -656,18 +656,18 @@
           "html": "<p>Let <var>parser</var> be a new <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser\" id=\"ref-for-constructor-string-parser①⓪\">constructor string parser</a> whose <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-input\" id=\"ref-for-constructor-string-parser-input\">input</a> is <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list\">token list</a> is the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize\" id=\"ref-for-tokenize\">tokenize</a> given <var>input</var> and \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy-lenient\" id=\"ref-for-tokenize-policy-lenient\"><code>lenient</code></a>\".</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while\">While</a> <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-index\" id=\"ref-for-constructor-string-parser-token-index\">token index</a> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list①\">token list</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a>:",
           "rationale": "set",
           "steps": [
             {
               "html": "<p>Set <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-increment\" id=\"ref-for-constructor-string-parser-token-increment\">token increment</a> to 1.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+              "html": "If <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list②\">token list</a>[<var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-index\" id=\"ref-for-constructor-string-parser-token-index②\">token index</a>]'s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-type\" id=\"ref-for-token-type\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-type-end\" id=\"ref-for-token-type-end\"><code>end</code></a>\" then:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                  "html": "If <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state\" id=\"ref-for-constructor-string-parser-state\">state</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-init\" id=\"ref-for-constructor-string-parser-state-init①\"><code>init</code></a>\":",
                   "rationale": "run",
                   "steps": [
                     {
@@ -677,7 +677,7 @@
                       "html": "<p>If the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#is-a-hash-prefix\" id=\"ref-for-is-a-hash-prefix\">is a hash prefix</a> given <var>parser</var> is true, then run <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#change-state\" id=\"ref-for-change-state\">change state</a> given <var>parser</var>, \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-hash\" id=\"ref-for-constructor-string-parser-state-hash\"><code>hash</code></a>\" and 1.</p>"
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "Otherwise if the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#is-a-search-prefix\" id=\"ref-for-is-a-search-prefix\">is a search prefix</a> given <var>parser</var> is true:",
                       "rationale": "run",
                       "steps": [
                         {
@@ -686,7 +686,7 @@
                       ]
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "Otherwise:",
                       "rationale": "run",
                       "steps": [
                         {
@@ -703,7 +703,7 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                  "html": "If <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state\" id=\"ref-for-constructor-string-parser-state②\">state</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-authority\" id=\"ref-for-constructor-string-parser-state-authority\"><code>authority</code></a>\":",
                   "rationale": "run",
                   "steps": [
                     {
@@ -726,7 +726,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+              "html": "If the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#is-a-group-open\" id=\"ref-for-is-a-group-open\">is a group open</a> given <var>parser</var> is true:",
               "rationale": "increment",
               "steps": [
                 {
@@ -741,14 +741,14 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+              "html": "If <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-group-depth\" id=\"ref-for-constructor-string-parser-group-depth①\">group depth</a> is greater than 0:",
               "rationale": "if",
               "steps": [
                 {
                   "html": "<p>If the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#is-a-group-close\" id=\"ref-for-is-a-group-close\">is a group close</a> given <var>parser</var> is true, then decrement <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-group-depth\" id=\"ref-for-constructor-string-parser-group-depth②\">group depth</a> by 1.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                  "html": "Otherwise:",
                   "rationale": "increment",
                   "steps": [
                     {
@@ -762,7 +762,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+              "html": "Switch on <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state\" id=\"ref-for-constructor-string-parser-state④\">state</a> and run the associated steps:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -770,11 +770,11 @@
                   "steps": [
                     {
                       "case": "\"init\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "",
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                          "html": "If the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#is-a-protocol-suffix\" id=\"ref-for-is-a-protocol-suffix\">is a protocol suffix</a> given <var>parser</var> is true:",
                           "rationale": "run",
                           "steps": [
                             {
@@ -786,11 +786,11 @@
                     },
                     {
                       "case": "\"protocol\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "",
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                          "html": "If the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#is-a-protocol-suffix\" id=\"ref-for-is-a-protocol-suffix①\">is a protocol suffix</a> given <var>parser</var> is true:",
                           "rationale": "run",
                           "steps": [
                             {
@@ -803,7 +803,7 @@
                               "html": "<p>Let <var>skip</var> be 1.</p>"
                             },
                             {
-                              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                              "html": "If the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#next-is-authority-slashes\" id=\"ref-for-next-is-authority-slashes\">next is authority slashes</a> given <var>parser</var> is true:",
                               "rationale": "set",
                               "steps": [
                                 {
@@ -826,7 +826,7 @@
                     },
                     {
                       "case": "\"authority\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "",
                       "rationale": "if",
                       "steps": [
                         {
@@ -839,7 +839,7 @@
                     },
                     {
                       "case": "\"username\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "",
                       "rationale": "if",
                       "steps": [
                         {
@@ -852,7 +852,7 @@
                     },
                     {
                       "case": "\"password\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "",
                       "rationale": "if",
                       "steps": [
                         {
@@ -862,7 +862,7 @@
                     },
                     {
                       "case": "\"hostname\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "",
                       "rationale": "if",
                       "steps": [
                         {
@@ -887,7 +887,7 @@
                     },
                     {
                       "case": "\"port\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "",
                       "rationale": "if",
                       "steps": [
                         {
@@ -903,7 +903,7 @@
                     },
                     {
                       "case": "\"pathname\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "",
                       "rationale": "if",
                       "steps": [
                         {
@@ -916,7 +916,7 @@
                     },
                     {
                       "case": "\"search\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "",
                       "rationale": "if",
                       "steps": [
                         {
@@ -926,7 +926,7 @@
                     },
                     {
                       "case": "\"hash\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "",
                       "rationale": "do",
                       "steps": [
                         {
@@ -936,7 +936,7 @@
                     },
                     {
                       "case": "\"done\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-constructor-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a constructor string</dfn> given a string <var>input</var>:",
+                      "html": "",
                       "rationale": "assert",
                       "steps": [
                         {
@@ -971,14 +971,14 @@
           "html": "<p>If <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state\" id=\"ref-for-constructor-string-parser-state⑥\">state</a> is not \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-init\" id=\"ref-for-constructor-string-parser-state-init④\"><code>init</code></a>\", not \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-authority\" id=\"ref-for-constructor-string-parser-state-authority⑤\"><code>authority</code></a>\", and not \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-done\" id=\"ref-for-constructor-string-parser-state-done②\"><code>done</code></a>\", then set <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-result\" id=\"ref-for-constructor-string-parser-result③\">result</a>[<var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state\" id=\"ref-for-constructor-string-parser-state⑦\">state</a>] to the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#make-a-component-string\" id=\"ref-for-make-a-component-string\">make a component string</a> given <var>parser</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"change-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">change state</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser\" id=\"ref-for-constructor-string-parser①①\">constructor string parser</a> <var>parser</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state\" id=\"ref-for-constructor-string-parser-state⑤\">state</a> <var>new state</var>, and a number <var>skip</var>:",
+          "html": "If <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state\" id=\"ref-for-constructor-string-parser-state⑧\">state</a> is not \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-init\" id=\"ref-for-constructor-string-parser-state-init⑤\"><code>init</code></a>\" and <var>new state</var> is not \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-done\" id=\"ref-for-constructor-string-parser-state-done③\"><code>done</code></a>\", then:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state\" id=\"ref-for-constructor-string-parser-state⑨\">state</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-protocol\" id=\"ref-for-constructor-string-parser-state-protocol②\"><code>protocol</code></a>\", \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-authority\" id=\"ref-for-constructor-string-parser-state-authority⑥\"><code>authority</code></a>\", \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-username\" id=\"ref-for-constructor-string-parser-state-username②\"><code>username</code></a>\", or \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-password\" id=\"ref-for-constructor-string-parser-state-password②\"><code>password</code></a>\"; <var>new state</var> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-port\" id=\"ref-for-constructor-string-parser-state-port②\"><code>port</code></a>\", \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-pathname\" id=\"ref-for-constructor-string-parser-state-pathname⑤\"><code>pathname</code></a>\", \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-search\" id=\"ref-for-constructor-string-parser-state-search⑤\"><code>search</code></a>\", or \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-hash\" id=\"ref-for-constructor-string-parser-state-hash⑥\"><code>hash</code></a>\"; and <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-result\" id=\"ref-for-constructor-string-parser-result④\">result</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hostname\" id=\"ref-for-dom-urlpatterninit-hostname⑥\">hostname</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exist</a>, then set <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-result\" id=\"ref-for-constructor-string-parser-result⑤\">result</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hostname\" id=\"ref-for-dom-urlpatterninit-hostname⑦\">hostname</a></code>\"] to the empty string.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"change-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">change state</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser\" id=\"ref-for-constructor-string-parser①①\">constructor string parser</a> <var>parser</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state\" id=\"ref-for-constructor-string-parser-state⑤\">state</a> <var>new state</var>, and a number <var>skip</var>:",
+              "html": "If <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state\" id=\"ref-for-constructor-string-parser-state①⓪\">state</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-protocol\" id=\"ref-for-constructor-string-parser-state-protocol③\"><code>protocol</code></a>\", \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-authority\" id=\"ref-for-constructor-string-parser-state-authority⑦\"><code>authority</code></a>\", \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-username\" id=\"ref-for-constructor-string-parser-state-username③\"><code>username</code></a>\", \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-password\" id=\"ref-for-constructor-string-parser-state-password③\"><code>password</code></a>\", \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-hostname\" id=\"ref-for-constructor-string-parser-state-hostname⑤\"><code>hostname</code></a>\", or \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-port\" id=\"ref-for-constructor-string-parser-state-port③\"><code>port</code></a>\"; <var>new state</var> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-search\" id=\"ref-for-constructor-string-parser-state-search⑥\"><code>search</code></a>\" or \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-state-hash\" id=\"ref-for-constructor-string-parser-state-hash⑦\"><code>hash</code></a>\"; and <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-result\" id=\"ref-for-constructor-string-parser-result⑥\">result</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname④\">pathname</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exist</a>, then:",
               "rationale": "if",
               "steps": [
                 {
@@ -1303,14 +1303,14 @@
           "html": "<p>Set <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-policy\" id=\"ref-for-tokenizer-policy\">policy</a> to <var>policy</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+          "html": "While <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-index\" id=\"ref-for-tokenizer-index\">index</a> is less than <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-input\" id=\"ref-for-tokenizer-input①\">input</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-code-point-length\" id=\"ref-for-string-code-point-length①\">code point length</a>:",
           "rationale": "run",
           "steps": [
             {
               "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#seek-and-get-the-next-code-point\" id=\"ref-for-seek-and-get-the-next-code-point\">seek and get the next code point</a> given <var>tokenizer</var> and <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-index\" id=\"ref-for-tokenizer-index①\">index</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+              "html": "If <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point\">code point</a> is U+002A (<code>*</code>):",
               "rationale": "run",
               "steps": [
                 {
@@ -1322,7 +1322,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+              "html": "If <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point①\">code point</a> is U+002B (<code>+</code>) or U+003F (<code>?</code>):",
               "rationale": "run",
               "steps": [
                 {
@@ -1334,11 +1334,11 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+              "html": "If <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point②\">code point</a> is U+005C (<code>\\</code>):",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                  "html": "If <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-index\" id=\"ref-for-tokenizer-index②\">index</a> is equal to <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-input\" id=\"ref-for-tokenizer-input②\">input</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-code-point-length\" id=\"ref-for-string-code-point-length②\">code point length</a> − 1:",
                   "rationale": "run",
                   "steps": [
                     {
@@ -1364,7 +1364,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+              "html": "If <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point③\">code point</a> is U+007B (<code>{</code>):",
               "rationale": "run",
               "steps": [
                 {
@@ -1376,7 +1376,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+              "html": "If <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point④\">code point</a> is U+007D (<code>}</code>):",
               "rationale": "run",
               "steps": [
                 {
@@ -1388,7 +1388,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+              "html": "If <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point⑤\">code point</a> is U+003A (<code>:</code>):",
               "rationale": "let",
               "steps": [
                 {
@@ -1398,7 +1398,7 @@
                   "html": "<p>Let <var>name start</var> be <var>name position</var>.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                  "html": "While <var>name position</var> is less than <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-input\" id=\"ref-for-tokenizer-input③\">input</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-code-point-length\" id=\"ref-for-string-code-point-length③\">code point length</a>:",
                   "rationale": "run",
                   "steps": [
                     {
@@ -1419,7 +1419,7 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                  "html": "If <var>name position</var> is less than or equal to <var>name start</var>:",
                   "rationale": "run",
                   "steps": [
                     {
@@ -1439,7 +1439,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+              "html": "If <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point⑦\">code point</a> is U+0028 (<code>(</code>):",
               "rationale": "let",
               "steps": [
                 {
@@ -1455,14 +1455,14 @@
                   "html": "<p>Let <var>error</var> be false.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                  "html": "While <var>regexp position</var> is less than <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-input\" id=\"ref-for-tokenizer-input④\">input</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-code-point-length\" id=\"ref-for-string-code-point-length④\">code point length</a>:",
                   "rationale": "run",
                   "steps": [
                     {
                       "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#seek-and-get-the-next-code-point\" id=\"ref-for-seek-and-get-the-next-code-point②\">seek and get the next code point</a> given <var>tokenizer</var> and <var>regexp position</var>.</p>"
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                      "html": "If the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#is-ascii\" id=\"ref-for-is-ascii\">is ASCII</a> given <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point⑧\">code point</a> is false:",
                       "rationale": "run",
                       "steps": [
                         {
@@ -1477,7 +1477,7 @@
                       ]
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                      "html": "If <var>regexp position</var> equals <var>regexp start</var> and <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point⑨\">code point</a> is U+003F (<code>?</code>):",
                       "rationale": "run",
                       "steps": [
                         {
@@ -1492,11 +1492,11 @@
                       ]
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                      "html": "If <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point①⓪\">code point</a> is U+005C (<code>\\</code>):",
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                          "html": "If <var>regexp position</var> equals <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-input\" id=\"ref-for-tokenizer-input⑤\">input</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-code-point-length\" id=\"ref-for-string-code-point-length⑤\">code point length</a> − 1:",
                           "rationale": "run",
                           "steps": [
                             {
@@ -1514,7 +1514,7 @@
                           "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#get-the-next-code-point\" id=\"ref-for-get-the-next-code-point①\">get the next code point</a> given <var>tokenizer</var>.</p>"
                         },
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                          "html": "If the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#is-ascii\" id=\"ref-for-is-ascii①\">is ASCII</a> given <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point①①\">code point</a> is false:",
                           "rationale": "run",
                           "steps": [
                             {
@@ -1537,14 +1537,14 @@
                       ]
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                      "html": "If <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point①②\">code point</a> is U+0029 (<code>)</code>):",
                       "rationale": "decrement",
                       "steps": [
                         {
                           "html": "<p>Decrement <var>depth</var> by 1.</p>"
                         },
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                          "html": "If <var>depth</var> is 0:",
                           "rationale": "set",
                           "steps": [
                             {
@@ -1558,14 +1558,14 @@
                       ]
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                      "html": "Otherwise if <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point①③\">code point</a> is U+0028 (<code>(</code>):",
                       "rationale": "increment",
                       "steps": [
                         {
                           "html": "<p>Increment <var>depth</var> by 1.</p>"
                         },
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                          "html": "If <var>regexp position</var> equals <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-input\" id=\"ref-for-tokenizer-input⑥\">input</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-code-point-length\" id=\"ref-for-string-code-point-length⑥\">code point length</a> − 1:",
                           "rationale": "run",
                           "steps": [
                             {
@@ -1586,7 +1586,7 @@
                           "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#get-the-next-code-point\" id=\"ref-for-get-the-next-code-point②\">get the next code point</a> given <var>tokenizer</var>.</p>"
                         },
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                          "html": "If <var>tokenizer</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenizer-code-point\" id=\"ref-for-tokenizer-code-point①④\">code point</a> is not U+003F (<code>?</code>):",
                           "rationale": "run",
                           "steps": [
                             {
@@ -1614,7 +1614,7 @@
                   "html": "<p>If <var>error</var> is true <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①③\">continue</a>.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                  "html": "If <var>depth</var> is not zero:",
                   "rationale": "run",
                   "steps": [
                     {
@@ -1629,7 +1629,7 @@
                   "html": "<p>Let <var>regexp length</var> be <var>regexp position</var> − <var>regexp start</var> − 1.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tokenize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tokenize</dfn> a given string <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy\" id=\"ref-for-tokenize-policy②\">tokenize policy</a> <var>policy</var>:",
+                  "html": "If <var>regexp length</var> is zero:",
                   "rationale": "run",
                   "steps": [
                     {
@@ -1798,7 +1798,7 @@
           "html": "<p>Set <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-token-list\" id=\"ref-for-pattern-parser-token-list\">token list</a> to the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize\" id=\"ref-for-tokenize②\">tokenize</a> given <var>input</var> and \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy-strict\" id=\"ref-for-tokenize-policy-strict②\"><code>strict</code></a>\".</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a pattern string</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①②\">pattern string</a> <var>input</var>, <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑦\">options</a> <var>options</var>, and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#encoding-callback\" id=\"ref-for-encoding-callback②\">encoding callback</a> <var>encoding callback</var>:",
+          "html": "While <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-index\" id=\"ref-for-pattern-parser-index\">index</a> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-token-list\" id=\"ref-for-pattern-parser-token-list①\">token list</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤\">size</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -1811,7 +1811,7 @@
               "html": "<p>Let <var>regexp or wildcard token</var> be the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#try-to-consume-a-regexp-or-wildcard-token\" id=\"ref-for-try-to-consume-a-regexp-or-wildcard-token\">try to consume a regexp or wildcard token</a> given <var>parser</var> and <var>name token</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a pattern string</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①②\">pattern string</a> <var>input</var>, <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑦\">options</a> <var>options</var>, and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#encoding-callback\" id=\"ref-for-encoding-callback②\">encoding callback</a> <var>encoding callback</var>:",
+              "html": "If <var>name token</var> is not null or <var>regexp or wildcard token</var> is not null:",
               "rationale": "let",
               "steps": [
                 {
@@ -1821,7 +1821,7 @@
                   "html": "<p>If <var>char token</var> is not null then set <var>prefix</var> to <var>char token</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-value\" id=\"ref-for-token-value③\">value</a>.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a pattern string</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①②\">pattern string</a> <var>input</var>, <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑦\">options</a> <var>options</var>, and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#encoding-callback\" id=\"ref-for-encoding-callback②\">encoding callback</a> <var>encoding callback</var>:",
+                  "html": "If <var>prefix</var> is not the empty string and not <var>options</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options-prefix-code-point\" id=\"ref-for-options-prefix-code-point④\">prefix code point</a>:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -1853,7 +1853,7 @@
               "html": "<p>If <var>fixed token</var> is null, then set <var>fixed token</var> to the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#try-to-consume-a-token\" id=\"ref-for-try-to-consume-a-token②\">try to consume a token</a> given <var>parser</var> and \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-type-escaped-char\" id=\"ref-for-token-type-escaped-char②\"><code>escaped-char</code></a>\".</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a pattern string</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①②\">pattern string</a> <var>input</var>, <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑦\">options</a> <var>options</var>, and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#encoding-callback\" id=\"ref-for-encoding-callback②\">encoding callback</a> <var>encoding callback</var>:",
+              "html": "If <var>fixed token</var> is not null:",
               "rationale": "append",
               "steps": [
                 {
@@ -1868,7 +1868,7 @@
               "html": "<p>Let <var>open token</var> be the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#try-to-consume-a-token\" id=\"ref-for-try-to-consume-a-token③\">try to consume a token</a> given <var>parser</var> and \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-type-open\" id=\"ref-for-token-type-open②\"><code>open</code></a>\".</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a pattern string</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①②\">pattern string</a> <var>input</var>, <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑦\">options</a> <var>options</var>, and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#encoding-callback\" id=\"ref-for-encoding-callback②\">encoding callback</a> <var>encoding callback</var>:",
+              "html": "If <var>open token</var> is not null:",
               "rationale": "set",
               "steps": [
                 {
@@ -2017,7 +2017,7 @@
           "html": "<p>Let <var>result</var> be the empty string.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"consume-text\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">consume text</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser\" id=\"ref-for-pattern-parser①②\">pattern parser</a> <var>parser</var>:",
+          "html": "While true:",
           "rationale": "let",
           "steps": [
             {
@@ -2072,7 +2072,7 @@
           "html": "<p>Let <var>modifier</var> be \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-none\" id=\"ref-for-part-modifier-none①\"><code>none</code></a>\".</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"add-a-part\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a part</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser\" id=\"ref-for-pattern-parser①④\">pattern parser</a> <var>parser</var>, a string <var>prefix</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③③\">token</a> <var>name token</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③④\">token</a> <var>regexp or wildcard token</var>, a string <var>suffix</var>, and a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③⑤\">token</a> <var>modifier token</var>:",
+          "html": "If <var>modifier token</var> is not null:",
           "rationale": "if",
           "steps": [
             {
@@ -2087,7 +2087,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"add-a-part\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a part</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser\" id=\"ref-for-pattern-parser①④\">pattern parser</a> <var>parser</var>, a string <var>prefix</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③③\">token</a> <var>name token</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③④\">token</a> <var>regexp or wildcard token</var>, a string <var>suffix</var>, and a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③⑤\">token</a> <var>modifier token</var>:",
+          "html": "If <var>name token</var> is null and <var>regexp or wildcard token</var> is null and <var>modifier</var> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-none\" id=\"ref-for-part-modifier-none②\"><code>none</code></a>\":",
           "rationale": "append",
           "steps": [
             {
@@ -2102,7 +2102,7 @@
           "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#maybe-add-a-part-from-the-pending-fixed-value\" id=\"ref-for-maybe-add-a-part-from-the-pending-fixed-value②\">maybe add a part from the pending fixed value</a> given <var>parser</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"add-a-part\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a part</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser\" id=\"ref-for-pattern-parser①④\">pattern parser</a> <var>parser</var>, a string <var>prefix</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③③\">token</a> <var>name token</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③④\">token</a> <var>regexp or wildcard token</var>, a string <var>suffix</var>, and a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③⑤\">token</a> <var>modifier token</var>:",
+          "html": "If <var>name token</var> is null and <var>regexp or wildcard token</var> is null:",
           "rationale": "assert",
           "steps": [
             {
@@ -2141,7 +2141,7 @@
           "html": "<p>Let <var>type</var> be \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-regexp\" id=\"ref-for-part-type-regexp①\"><code>regexp</code></a>\".</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"add-a-part\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a part</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser\" id=\"ref-for-pattern-parser①④\">pattern parser</a> <var>parser</var>, a string <var>prefix</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③③\">token</a> <var>name token</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③④\">token</a> <var>regexp or wildcard token</var>, a string <var>suffix</var>, and a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③⑤\">token</a> <var>modifier token</var>:",
+          "html": "If <var>regexp value</var> is <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-segment-wildcard-regexp\" id=\"ref-for-pattern-parser-segment-wildcard-regexp②\">segment wildcard regexp</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -2153,7 +2153,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"add-a-part\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a part</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser\" id=\"ref-for-pattern-parser①④\">pattern parser</a> <var>parser</var>, a string <var>prefix</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③③\">token</a> <var>name token</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③④\">token</a> <var>regexp or wildcard token</var>, a string <var>suffix</var>, and a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③⑤\">token</a> <var>modifier token</var>:",
+          "html": "Otherwise if <var>regexp value</var> is the <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#full-wildcard-regexp-value\" id=\"ref-for-full-wildcard-regexp-value①\">full wildcard regexp value</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -2171,7 +2171,7 @@
           "html": "<p>If <var>name token</var> is not null, then set <var>name</var> to <var>name token</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-value\" id=\"ref-for-token-value①⓪\">value</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"add-a-part\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a part</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser\" id=\"ref-for-pattern-parser①④\">pattern parser</a> <var>parser</var>, a string <var>prefix</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③③\">token</a> <var>name token</var>, a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③④\">token</a> <var>regexp or wildcard token</var>, a string <var>suffix</var>, and a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token\" id=\"ref-for-token③⑤\">token</a> <var>modifier token</var>:",
+          "html": "Otherwise if <var>regexp or wildcard token</var> is not null:",
           "rationale": "set",
           "steps": [
             {
@@ -2206,7 +2206,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To determine if a value <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"is-a-duplicate-name\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">is a duplicate name</dfn> given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser\" id=\"ref-for-pattern-parser①⑤\">pattern parser</a> <var>parser</var> and a string <var>name</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>part</var> of <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-part-list\" id=\"ref-for-pattern-parser-part-list④\">part list</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -2232,18 +2232,18 @@
           "html": "<p>Let <var>name list</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-regular-expression-and-name-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a regular expression and name list</dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list③\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑨\">options</a> <var>options</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>part</var> of <var>part list</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-regular-expression-and-name-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a regular expression and name list</dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list③\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑨\">options</a> <var>options</var>:",
+              "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type⑤\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-fixed-text\" id=\"ref-for-part-type-fixed-text③\"><code>fixed-text</code></a>\":",
               "rationale": "if",
               "steps": [
                 {
                   "html": "<p>If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier\" id=\"ref-for-part-modifier⑦\">modifier</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-none\" id=\"ref-for-part-modifier-none③\"><code>none</code></a>\", then append the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#escape-a-regexp-string\" id=\"ref-for-escape-a-regexp-string①\">escape a regexp string</a> given <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-value\" id=\"ref-for-part-value③\">value</a> to the end of <var>result</var>.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-regular-expression-and-name-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a regular expression and name list</dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list③\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑨\">options</a> <var>options</var>:",
+                  "html": "Otherwise:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -2281,11 +2281,11 @@
               "html": "<p>Otherwise if <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type⑦\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-full-wildcard\" id=\"ref-for-part-type-full-wildcard①\"><code>full-wildcard</code></a>\", then set <var>regexp value</var> to <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#full-wildcard-regexp-value\" id=\"ref-for-full-wildcard-regexp-value②\">full wildcard regexp value</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-regular-expression-and-name-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a regular expression and name list</dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list③\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑨\">options</a> <var>options</var>:",
+              "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-prefix\" id=\"ref-for-part-prefix①\">prefix</a> is the empty string and <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-suffix\" id=\"ref-for-part-suffix①\">suffix</a> is the empty string:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-regular-expression-and-name-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a regular expression and name list</dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list③\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑨\">options</a> <var>options</var>:",
+                  "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier\" id=\"ref-for-part-modifier⑨\">modifier</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-none\" id=\"ref-for-part-modifier-none④\"><code>none</code></a>\" or \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-optional\" id=\"ref-for-part-modifier-optional①\"><code>optional</code></a>\", then:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -2303,7 +2303,7 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-regular-expression-and-name-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a regular expression and name list</dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list③\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑨\">options</a> <var>options</var>:",
+                  "html": "Otherwise:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -2329,7 +2329,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-regular-expression-and-name-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a regular expression and name list</dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list③\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options⑨\">options</a> <var>options</var>:",
+              "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier\" id=\"ref-for-part-modifier①②\">modifier</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-none\" id=\"ref-for-part-modifier-none⑤\"><code>none</code></a>\" or \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-optional\" id=\"ref-for-part-modifier-optional②\"><code>optional</code></a>\":",
               "rationale": "append",
               "steps": [
                 {
@@ -2432,7 +2432,7 @@
           "html": "<p>Let <var>index</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"escape-a-regexp-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">escape a regexp string</dfn> given a string <var>input</var>:",
+          "html": "While <var>index</var> is less than <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -2467,7 +2467,7 @@
           "html": "<p>Let <var>index list</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices\">getting the indices</a> for <var>part list</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①③\">pattern string</a></dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list④\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options①⓪\">options</a> <var>options</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>index</var> of <var>index list</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -2480,11 +2480,11 @@
               "html": "<p>Let <var>next part</var> be <var>part list</var>[<var>index</var> + 1] if <var>index</var> is less than <var>index list</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑦\">size</a> - 1, otherwise let it be null.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①③\">pattern string</a></dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list④\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options①⓪\">options</a> <var>options</var>:",
+              "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type⑧\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-fixed-text\" id=\"ref-for-part-type-fixed-text⑤\"><code>fixed-text</code></a>\" then:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①③\">pattern string</a></dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list④\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options①⓪\">options</a> <var>options</var>:",
+                  "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier\" id=\"ref-for-part-modifier①⑥\">modifier</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-none\" id=\"ref-for-part-modifier-none⑥\"><code>none</code></a>\" then:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -2519,11 +2519,11 @@
               "html": "<p>Let <var>needs grouping</var> be true if at least one of the following are true, otherwise let it be false:</p>\n        <ul>\n         <li><var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-suffix\" id=\"ref-for-part-suffix①②\">suffix</a> is not the empty string.\n         </li><li><var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-prefix\" id=\"ref-for-part-prefix①③\">prefix</a> is not the empty string and is not <var>options</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options-prefix-code-point\" id=\"ref-for-options-prefix-code-point⑤\">prefix code point</a>.\n        </li></ul>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①③\">pattern string</a></dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list④\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options①⓪\">options</a> <var>options</var>:",
+              "html": "If all of the following are true:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①③\">pattern string</a></dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list④\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options①⓪\">options</a> <var>options</var>:",
+                  "html": "If <var>next part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type①⓪\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-fixed-text\" id=\"ref-for-part-type-fixed-text⑥\"><code>fixed-text</code></a>\":",
                   "rationale": "set",
                   "steps": [
                     {
@@ -2532,7 +2532,7 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①③\">pattern string</a></dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list④\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options①⓪\">options</a> <var>options</var>:",
+                  "html": "Otherwise:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -2555,7 +2555,7 @@
               "html": "<p>Append the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#escape-a-pattern-string\" id=\"ref-for-escape-a-pattern-string②\">escape a pattern string</a> given <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-prefix\" id=\"ref-for-part-prefix①⑥\">prefix</a> to the end of <var>result</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①③\">pattern string</a></dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list④\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options①⓪\">options</a> <var>options</var>:",
+              "html": "If <var>custom name</var> is true:",
               "rationale": "append",
               "steps": [
                 {
@@ -2567,7 +2567,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①③\">pattern string</a></dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list④\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options①⓪\">options</a> <var>options</var>:",
+              "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type①②\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-regexp\" id=\"ref-for-part-type-regexp②\"><code>regexp</code></a>\" then:",
               "rationale": "append",
               "steps": [
                 {
@@ -2582,7 +2582,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①③\">pattern string</a></dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list④\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options①⓪\">options</a> <var>options</var>:",
+              "html": "Otherwise if <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type①③\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-segment-wildcard\" id=\"ref-for-part-type-segment-wildcard③\"><code>segment-wildcard</code></a>\" and <var>custom name</var> is false:",
               "rationale": "append",
               "steps": [
                 {
@@ -2597,14 +2597,14 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①③\">pattern string</a></dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list④\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options①⓪\">options</a> <var>options</var>:",
+              "html": "Otherwise if <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type①④\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-full-wildcard\" id=\"ref-for-part-type-full-wildcard②\"><code>full-wildcard</code></a>\":",
               "rationale": "if",
               "steps": [
                 {
                   "html": "<p>If <var>custom name</var> is false and one of the following is true:</p>\n          <ul>\n           <li><var>previous part</var> is null; or\n           </li><li><var>previous part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type①⑤\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-fixed-text\" id=\"ref-for-part-type-fixed-text⑧\"><code>fixed-text</code></a>\"; or\n           </li><li><var>previous part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier\" id=\"ref-for-part-modifier①⑨\">modifier</a> is not \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-none\" id=\"ref-for-part-modifier-none⑧\"><code>none</code></a>\"; or\n           </li><li><var>needs grouping</var> is true; or\n           </li><li><var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-prefix\" id=\"ref-for-part-prefix①⑦\">prefix</a> is not the empty string\n          </li></ul>\n           then append \"<code>*</code>\" to the end of <var>result</var>."
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-string\" id=\"ref-for-pattern-string①③\">pattern string</a></dfn> from a given <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-list\" id=\"ref-for-part-list④\">part list</a> <var>part list</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options\" id=\"ref-for-options①⓪\">options</a> <var>options</var>:",
+                  "html": "Otherwise:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -2655,7 +2655,7 @@
           "html": "<p>Let <var>index</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"escape-a-pattern-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">escape a pattern string</dfn> given a string <var>input</var>:",
+          "html": "While <var>index</var> is less than <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①\">length</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -2793,7 +2793,7 @@
           "html": "<p>Let <var>result</var> be the empty string.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"canonicalize-an-ipv6-hostname\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize an IPv6 hostname</dfn> given a string <var>value</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>code point</var> in <var>value</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point④\">code points</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -2988,7 +2988,7 @@
           "html": "<p>Let <var>baseURL</var> be null.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-urlpatterninit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a URLPatternInit</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit\" id=\"ref-for-dictdef-urlpatterninit⑦\">URLPatternInit</a></code> <var>init</var>, a string <var>type</var>, a string or null <var>protocol</var>, a string or null <var>username</var>, a string or null <var>password</var>, a string or null <var>hostname</var>, a string or null <var>port</var>, a string or null <var>pathname</var>, a string or null <var>search</var>, and a string or null <var>hash</var>:",
+          "html": "If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-baseurl\" id=\"ref-for-dom-urlpatterninit-baseurl③\">baseURL</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -3007,7 +3007,7 @@
               "html": "<p>If <var>type</var> is not \"<code>pattern</code>\" and <var>init</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">contains</a> none of \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-protocol\" id=\"ref-for-dom-urlpatterninit-protocol⑨\">protocol</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hostname\" id=\"ref-for-dom-urlpatterninit-hostname①⓪\">hostname</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-port\" id=\"ref-for-dom-urlpatterninit-port⑨\">port</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-username\" id=\"ref-for-dom-urlpatterninit-username⑥\">username</a></code>\" and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-password\" id=\"ref-for-dom-urlpatterninit-password④\">password</a></code>\", then set <var>result</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-password\" id=\"ref-for-dom-urlpatterninit-password⑤\">password</a></code>\"] to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#process-a-base-url-string\" id=\"ref-for-process-a-base-url-string②\">processing a base URL string</a> given <var>baseURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-password\" id=\"ref-for-concept-url-password②\">password</a> and <var>type</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-urlpatterninit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a URLPatternInit</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit\" id=\"ref-for-dictdef-urlpatterninit⑦\">URLPatternInit</a></code> <var>init</var>, a string <var>type</var>, a string or null <var>protocol</var>, a string or null <var>username</var>, a string or null <var>password</var>, a string or null <var>hostname</var>, a string or null <var>port</var>, a string or null <var>pathname</var>, a string or null <var>search</var>, and a string or null <var>hash</var>:",
+              "html": "If <var>init</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">contains</a> neither \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-protocol\" id=\"ref-for-dom-urlpatterninit-protocol①⓪\">protocol</a></code>\" nor \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hostname\" id=\"ref-for-dom-urlpatterninit-hostname①①\">hostname</a></code>\", then:",
               "rationale": "let",
               "steps": [
                 {
@@ -3022,7 +3022,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-urlpatterninit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a URLPatternInit</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit\" id=\"ref-for-dictdef-urlpatterninit⑦\">URLPatternInit</a></code> <var>init</var>, a string <var>type</var>, a string or null <var>protocol</var>, a string or null <var>username</var>, a string or null <var>password</var>, a string or null <var>hostname</var>, a string or null <var>port</var>, a string or null <var>pathname</var>, a string or null <var>search</var>, and a string or null <var>hash</var>:",
+              "html": "If <var>init</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">contains</a> none of \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-protocol\" id=\"ref-for-dom-urlpatterninit-protocol①①\">protocol</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hostname\" id=\"ref-for-dom-urlpatterninit-hostname①③\">hostname</a></code>\", and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-port\" id=\"ref-for-dom-urlpatterninit-port①⓪\">port</a></code>\", then:",
               "rationale": "if",
               "steps": [
                 {
@@ -3037,7 +3037,7 @@
               "html": "<p>If <var>init</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">contains</a> none of \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-protocol\" id=\"ref-for-dom-urlpatterninit-protocol①②\">protocol</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hostname\" id=\"ref-for-dom-urlpatterninit-hostname①④\">hostname</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-port\" id=\"ref-for-dom-urlpatterninit-port①③\">port</a></code>\", and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname⑧\">pathname</a></code>\", then set <var>result</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname⑨\">pathname</a></code>\"] to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#process-a-base-url-string\" id=\"ref-for-process-a-base-url-string④\">processing a base URL string</a> given the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-path-serializer\" id=\"ref-for-url-path-serializer③\">URL path serializing</a> <var>baseURL</var> and <var>type</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-urlpatterninit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a URLPatternInit</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit\" id=\"ref-for-dictdef-urlpatterninit⑦\">URLPatternInit</a></code> <var>init</var>, a string <var>type</var>, a string or null <var>protocol</var>, a string or null <var>username</var>, a string or null <var>password</var>, a string or null <var>hostname</var>, a string or null <var>port</var>, a string or null <var>pathname</var>, a string or null <var>search</var>, and a string or null <var>hash</var>:",
+              "html": "If <var>init</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">contains</a> none of \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-protocol\" id=\"ref-for-dom-urlpatterninit-protocol①③\">protocol</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hostname\" id=\"ref-for-dom-urlpatterninit-hostname①⑤\">hostname</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-port\" id=\"ref-for-dom-urlpatterninit-port①④\">port</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname①⓪\">pathname</a></code>\", and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-search\" id=\"ref-for-dom-urlpatterninit-search⑥\">search</a></code>\", then:",
               "rationale": "let",
               "steps": [
                 {
@@ -3052,7 +3052,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-urlpatterninit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a URLPatternInit</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit\" id=\"ref-for-dictdef-urlpatterninit⑦\">URLPatternInit</a></code> <var>init</var>, a string <var>type</var>, a string or null <var>protocol</var>, a string or null <var>username</var>, a string or null <var>password</var>, a string or null <var>hostname</var>, a string or null <var>port</var>, a string or null <var>pathname</var>, a string or null <var>search</var>, and a string or null <var>hash</var>:",
+              "html": "If <var>init</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">contains</a> none of \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-protocol\" id=\"ref-for-dom-urlpatterninit-protocol①④\">protocol</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hostname\" id=\"ref-for-dom-urlpatterninit-hostname①⑥\">hostname</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-port\" id=\"ref-for-dom-urlpatterninit-port①⑤\">port</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname①①\">pathname</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-search\" id=\"ref-for-dom-urlpatterninit-search⑧\">search</a></code>\", and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-hash\" id=\"ref-for-dom-urlpatterninit-hash④\">hash</a></code>\", then:",
               "rationale": "let",
               "steps": [
                 {
@@ -3084,14 +3084,14 @@
           "html": "<p>If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-port\" id=\"ref-for-dom-urlpatterninit-port①⑥\">port</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑨\">exists</a>, then set <var>result</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-port\" id=\"ref-for-dom-urlpatterninit-port①⑦\">port</a></code>\"] to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#process-port-for-init\" id=\"ref-for-process-port-for-init\">process port for init</a> given <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-port\" id=\"ref-for-dom-urlpatterninit-port①⑧\">port</a></code>\"], <var>result</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-protocol\" id=\"ref-for-dom-urlpatterninit-protocol①⑧\">protocol</a></code>\"], and <var>type</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-urlpatterninit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a URLPatternInit</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit\" id=\"ref-for-dictdef-urlpatterninit⑦\">URLPatternInit</a></code> <var>init</var>, a string <var>type</var>, a string or null <var>protocol</var>, a string or null <var>username</var>, a string or null <var>password</var>, a string or null <var>hostname</var>, a string or null <var>port</var>, a string or null <var>pathname</var>, a string or null <var>search</var>, and a string or null <var>hash</var>:",
+          "html": "If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname①②\">pathname</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⓪\">exists</a>:",
           "rationale": "set",
           "steps": [
             {
               "html": "<p>Set <var>result</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname①③\">pathname</a></code>\"] to <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname①④\">pathname</a></code>\"].</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-urlpatterninit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a URLPatternInit</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit\" id=\"ref-for-dictdef-urlpatterninit⑦\">URLPatternInit</a></code> <var>init</var>, a string <var>type</var>, a string or null <var>protocol</var>, a string or null <var>username</var>, a string or null <var>password</var>, a string or null <var>hostname</var>, a string or null <var>port</var>, a string or null <var>pathname</var>, a string or null <var>search</var>, and a string or null <var>hash</var>:",
+              "html": "then:",
               "rationale": "let",
               "steps": [
                 {
@@ -3101,7 +3101,7 @@
                   "html": "<p>Let <var>slash index</var> be the index of the last U+002F (<code>/</code>) code point found in <var>baseURLPath</var>, interpreted as a sequence of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑥\">code points</a>, or null if there are no instances of the code point.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-urlpatterninit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a URLPatternInit</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit\" id=\"ref-for-dictdef-urlpatterninit⑦\">URLPatternInit</a></code> <var>init</var>, a string <var>type</var>, a string or null <var>protocol</var>, a string or null <var>username</var>, a string or null <var>password</var>, a string or null <var>hostname</var>, a string or null <var>port</var>, a string or null <var>pathname</var>, a string or null <var>search</var>, and a string or null <var>hash</var>:",
+                  "html": "If <var>slash index</var> is not null:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -3310,7 +3310,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"build-a-urlpattern-object-from-a-web-idl-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#urlpattern\" id=\"ref-for-urlpattern①③\">URLPattern</a></code> object from a Web IDL value</dfn> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterncompatible\" id=\"ref-for-typedefdef-urlpatterncompatible①\">URLPatternCompatible</a></code> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①③\">URL</a> <var>baseURL</var> and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm\">realm</a> <var>realm</var>, perform the following steps:",
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-specific-type\" id=\"ref-for-dfn-specific-type\">specific type</a> of <var>input</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#urlpattern\" id=\"ref-for-urlpattern①④\">URLPattern</a></code>:",
           "rationale": "return",
           "steps": [
             {
@@ -3319,7 +3319,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"build-a-urlpattern-object-from-a-web-idl-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#urlpattern\" id=\"ref-for-urlpattern①③\">URLPattern</a></code> object from a Web IDL value</dfn> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterncompatible\" id=\"ref-for-typedefdef-urlpatterncompatible①\">URLPatternCompatible</a></code> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①③\">URL</a> <var>baseURL</var> and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm\">realm</a> <var>realm</var>, perform the following steps:",
+          "html": "Otherwise:",
           "rationale": "let",
           "steps": [
             {
@@ -3342,7 +3342,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"build-a-url-pattern-from-a-web-idl-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern⑥\">URL pattern</a> from a Web IDL value</dfn> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterncompatible\" id=\"ref-for-typedefdef-urlpatterncompatible②\">URLPatternCompatible</a></code> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①④\">URL</a> <var>baseURL</var>, perform the following steps:",
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-specific-type\" id=\"ref-for-dfn-specific-type①\">specific type</a> of <var>input</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#urlpattern\" id=\"ref-for-urlpattern①⑥\">URLPattern</a></code>:",
           "rationale": "return",
           "steps": [
             {
@@ -3351,7 +3351,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"build-a-url-pattern-from-a-web-idl-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern⑥\">URL pattern</a> from a Web IDL value</dfn> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterncompatible\" id=\"ref-for-typedefdef-urlpatterncompatible②\">URLPatternCompatible</a></code> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①④\">URL</a> <var>baseURL</var>, perform the following steps:",
+          "html": "Otherwise, if the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-specific-type\" id=\"ref-for-dfn-specific-type②\">specific type</a> of <var>input</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit\" id=\"ref-for-dictdef-urlpatterninit①⓪\">URLPatternInit</a></code>:",
           "rationale": "let",
           "steps": [
             {
@@ -3366,7 +3366,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"build-a-url-pattern-from-a-web-idl-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern⑥\">URL pattern</a> from a Web IDL value</dfn> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#typedefdef-urlpatterncompatible\" id=\"ref-for-typedefdef-urlpatterncompatible②\">URLPatternCompatible</a></code> <var>input</var> given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①④\">URL</a> <var>baseURL</var>, perform the following steps:",
+          "html": "Otherwise:",
           "rationale": "assert",
           "steps": [
             {
@@ -3389,7 +3389,7 @@
           "html": "<p>Let <var>serializedBaseURL</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer②\">serialization</a> of <var>baseURL</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"build-a-url-pattern-from-an-infra-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern⑦\">URL pattern</a> from an Infra value</dfn> <var>rawPattern</var> given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①⑤\">URL</a> <var>baseURL</var>, perform the following steps.",
+          "html": "If <var>rawPattern</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a>, then:",
           "rationale": "return",
           "steps": [
             {
@@ -3398,14 +3398,14 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"build-a-url-pattern-from-an-infra-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern⑦\">URL pattern</a> from an Infra value</dfn> <var>rawPattern</var> given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①⑤\">URL</a> <var>baseURL</var>, perform the following steps.",
+          "html": "Otherwise, if <var>rawPattern</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a>, then:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>init</var> be «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-baseurl\" id=\"ref-for-dom-urlpatterninit-baseurl⑥\">baseURL</a></code>\" → <var>serializedBaseURL</var> ]», representing a dictionary of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterninit\" id=\"ref-for-dictdef-urlpatterninit①①\">URLPatternInit</a></code>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"build-a-url-pattern-from-an-infra-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern⑦\">URL pattern</a> from an Infra value</dfn> <var>rawPattern</var> given <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①⑤\">URL</a> <var>baseURL</var>, perform the following steps.",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>key</var> → <var>value</var> of <var>rawPattern</var>:",
               "rationale": "if",
               "steps": [
                 {

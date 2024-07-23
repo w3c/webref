@@ -17,7 +17,7 @@
           "html": "<p>Let <var>contentIndexEntries</var> be <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry-service-worker-registration\" id=\"ref-for-content-index-entry-service-worker-registration①\">service worker registration</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#service-worker-registration-content-index-entries\" id=\"ref-for-service-worker-registration-content-index-entries①\">content index entries</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"delete-a-content-index-entry\">delete a content index entry</dfn> for <var>entry</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry\" id=\"ref-for-content-index-entry④\">content index entry</a>), run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps\">Enqueue the following steps</a> to <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry-service-worker-registration\" id=\"ref-for-content-index-entry-service-worker-registration②\">service worker registration</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#service-worker-registration-entry-edit-queue\" id=\"ref-for-service-worker-registration-entry-edit-queue\">entry edit queue</a>:",
           "rationale": "undisplay",
           "steps": [
             {
@@ -49,7 +49,7 @@
           "html": "<p>Let <var>newContext</var> be a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activate-a-content-index-entry\">activate a content index entry</dfn> for <var>entry</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry\" id=\"ref-for-content-index-entry⑤\">content index entry</a>), run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> to run the following steps on <var>newContext</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#window\" id=\"ref-for-window\">Window</a></code> object’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop\">responsible event loop</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source\">user interaction task source</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -74,7 +74,7 @@
               "html": "<p>Let <var>serviceWorkerEventLoop</var> be <var>activeWorker</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-global-object\" id=\"ref-for-dfn-service-worker-global-object\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop\">event loop</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activate-a-content-index-entry\">activate a content index entry</dfn> for <var>entry</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#content-index-entry\" id=\"ref-for-content-index-entry⑤\">content index entry</a>), run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">Queue a task</a> to run the following steps on <var>serviceWorkerEventLoop</var> using the <a data-link-type=\"dfn\">DOM manipulation task source</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -120,7 +120,7 @@
           "html": "<p>Let <var>icons</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-add\"><code>add(<var>description</var>)</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and run\n    these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "html": "Optionally, the user agent MAY select icons to use from <var>description</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/content-index/spec/#dom-contentdescription-icons\" id=\"ref-for-dom-contentdescription-icons\">icons</a></code>. In which\ncase run the following steps <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">for each</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/image-resource/#image-resource\" id=\"ref-for-image-resource\">image resource</a> (<var>resource</var>) of <var>description</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/content-index/spec/#dom-contentdescription-icons\" id=\"ref-for-dom-contentdescription-icons①\">icons</a></code>'\nselected icons after successfully <a data-link-type=\"dfn\" href=\"https://w3c.github.io/image-resource/#processing-an-imageresource-from-an-api\" id=\"ref-for-processing-an-imageresource-from-an-api\">parsing</a> it:",
           "rationale": "let",
           "steps": [
             {
@@ -147,7 +147,7 @@
           "html": "<p>Let <var>contentIndexEntries</var> be <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#service-worker-registration-content-index-entries\" id=\"ref-for-service-worker-registration-content-index-entries②\">content index entries</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-add\"><code>add(<var>description</var>)</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> <var>promise</var> and run\n    these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps①\">Enqueue the following steps</a> to <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#service-worker-registration-entry-edit-queue\" id=\"ref-for-service-worker-registration-entry-edit-queue①\">entry edit queue</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -176,7 +176,7 @@
           "html": "<p>Let <var>contentIndexEntries</var> be <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#service-worker-registration-content-index-entries\" id=\"ref-for-service-worker-registration-content-index-entries③\">content index entries</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-delete\"><code>delete(<var>id</var>)</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> <var>promise</var> and run these\n    steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">Enqueue the following steps</a> to <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#service-worker-registration-entry-edit-queue\" id=\"ref-for-service-worker-registration-entry-edit-queue②\">entry edit queue</a>:",
           "rationale": "undisplay",
           "steps": [
             {
@@ -208,11 +208,11 @@
           "html": "<p>Let <var>descriptions</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-getall\"><code>getAll()</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> <var>promise</var> and run these\n    steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps③\">Enqueue the following steps</a> to <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/content-index/spec/#service-worker-registration-entry-edit-queue\" id=\"ref-for-service-worker-registration-entry-edit-queue③\">entry edit queue</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ContentIndex\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contentindex-getall\"><code>getAll()</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> <var>promise</var> and run these\n    steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> id → <var>entry</var> of <var>contentIndexEntries</var>:",
               "rationale": "append",
               "steps": [
                 {

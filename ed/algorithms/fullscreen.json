@@ -88,7 +88,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">Empty</a> <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#list-of-pending-fullscreen-events\" id=\"ref-for-list-of-pending-fullscreen-events①\">list of pending fullscreen events</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-the-fullscreen-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run the fullscreen steps</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">document</a> <var>document</var>, run these\nsteps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> (<var>type</var>, <var>element</var>) in <var>pendingEvents</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -135,7 +135,7 @@
           "html": "<p>If any of the following conditions are false, then set <var>error</var> to true: </p>\n      <ul>\n       <li>\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">This</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④\">node document</a> is <var>pendingDoc</var>. </p>\n       </li><li>\n        <p>The <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-element-ready-check\" id=\"ref-for-fullscreen-element-ready-check①\">fullscreen element ready check</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a> returns true. </p>\n      </li></ul>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestFullscreen(options)|requestFullscreen()\" id=\"dom-element-requestfullscreen\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestFullscreen(<var>options</var>)</code></dfn> method steps\nare:",
+          "html": "If <var>error</var> is true:",
           "rationale": "append",
           "steps": [
             {
@@ -150,7 +150,7 @@
           "html": "<p>Let <var>fullscreenElements</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">ordered set</a> initially consisting of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestFullscreen(options)|requestFullscreen()\" id=\"dom-element-requestfullscreen\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestFullscreen(<var>options</var>)</code></dfn> method steps\nare:",
+          "html": "While true:",
           "rationale": "let",
           "steps": [
             {
@@ -168,7 +168,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestFullscreen(options)|requestFullscreen()\" id=\"dom-element-requestfullscreen\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestFullscreen(<var>options</var>)</code></dfn> method steps\nare:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>element</var> in <var>fullscreenElements</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -223,7 +223,7 @@
           "html": "<p>Let <var>docs</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">ordered set</a> consisting of <var>doc</var>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"collect-documents-to-unfullscreen\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">collect documents to unfullscreen</dfn> given <var>doc</var>, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while\">While</a> true:",
           "rationale": "let",
           "steps": [
             {
@@ -279,7 +279,7 @@
           "html": "<p>If <var>topLevelDoc</var> is in <var>docs</var>, and it is a <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#simple-fullscreen-document\" id=\"ref-for-simple-fullscreen-document②\">simple fullscreen document</a>, then set <var>doc</var> to <var>topLevelDoc</var> and <var>resize</var> to true. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"exit-fullscreen\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">exit fullscreen</dfn> a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑧\">document</a> <var>doc</var>, run these steps:",
+          "html": "If <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-element\" id=\"ref-for-fullscreen-element①⑤\">fullscreen element</a> is not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected③\">connected</a>:",
           "rationale": "append",
           "steps": [
             {
@@ -306,7 +306,7 @@
           "html": "<p>Let <var>descendantDocs</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">ordered set</a> consisting of <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#descendant-navigables\" id=\"ref-for-descendant-navigables\">descendant navigables</a>' <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document②\">active documents</a> whose <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-element\" id=\"ref-for-fullscreen-element①⑧\">fullscreen element</a> is non-null, if any, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order①\">tree order</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"exit-fullscreen\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">exit fullscreen</dfn> a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑧\">document</a> <var>doc</var>, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>exitDoc</var> in <var>exitDocs</var>:",
           "rationale": "append",
           "steps": [
             {
@@ -321,7 +321,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"exit-fullscreen\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">exit fullscreen</dfn> a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑧\">document</a> <var>doc</var>, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>descendantDoc</var> in <var>descendantDocs</var>:",
           "rationale": "append",
           "steps": [
             {

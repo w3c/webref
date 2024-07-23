@@ -75,14 +75,14 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use①\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①\">policy-controlled feature</a> named \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/window-management/#dom-permissionpolicy-window-management\" id=\"ref-for-dom-permissionpolicy-window-management①\">window-management</a></code>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and abort these steps.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-window-getscreendetails\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getScreenDetails()</code></dfn> method steps are:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>permissionState</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">request permission to use</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/window-management/#permissiondef-window-management\" id=\"ref-for-permissiondef-window-management\">window-management</a></code>\".</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-window-getscreendetails\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getScreenDetails()</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a> using the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/window-management/#window-placement-task-source\" id=\"ref-for-window-placement-task-source①\">window placement task source</a> to run the following steps:",
               "rationale": "if",
               "steps": [
                 {
@@ -125,7 +125,7 @@
           "html": "<p>Let <var>screens</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ScreenDetails\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-screendetails-screens\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>screens</code></dfn> getter steps are:",
+          "html": "For each <var>screen</var> of the device’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/window-management/#screen\" id=\"ref-for-screen④⑤\">screens</a>:",
           "rationale": "let",
           "steps": [
             {

@@ -72,7 +72,7 @@
           "html": "<p>Set <var>video</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/video-rvfc/#list-of-video-frame-request-callbacks\" id=\"ref-for-list-of-video-frame-request-callbacks⑤\">list of video frame request callbacks</a> to be empty.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-the-video-frame-request-callbacks\">run the video frame request callbacks</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement\" id=\"ref-for-htmlvideoelement⑥\">HTMLVideoElement</a></code> <var>video</var> with a timestamp <var>now</var>, run the following steps:",
+          "html": "For each entry in <var>callbacks</var>",
           "rationale": "if",
           "steps": [
             {

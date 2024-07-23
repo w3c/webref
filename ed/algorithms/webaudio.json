@@ -91,11 +91,11 @@
           "html": "<p>If <var>can decode</var> is <em>true</em>, attempt to decode the encoded <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-decodeaudiodata-audiodata-successcallback-errorcallback-audiodata\" id=\"ref-for-dom-baseaudiocontext-decodeaudiodata-audiodata-successcallback-errorcallback-audiodata④\">audioData</a></code> into <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#linear-pcm\" id=\"ref-for-linear-pcm①\">linear PCM</a>. In case of\nfailure, set <var>can decode</var> to <em>false</em>.</p>\n        <div class=\"correction proposed\" id=\"c2375-1\">\n          <span class=\"marker\">Proposed Correction <a href=\"https://github.com/WebAudio/web-audio-api/issues/2375\">Issue\n            2375</a>. </span> Only decode the first audio track of a multi-track media file. \n         <div class=\"amendment-buttons\"></div>\n         <ins cite=\"#c2375\">\n           If the media byte-stream contains multiple audio tracks, only decode the\n        first track to <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#linear-pcm\" id=\"ref-for-linear-pcm②\">linear pcm</a>. \n          \n         </ins>\n        <div lang=\"en\" class=\"amendment-toggles\"><button value=\"diff\" disabled=\"\">Show Change</button><button value=\"old\">Show Current</button><button value=\"new\">Show Future</button></div></div>"
         },
         {
-          "html": "When queuing a decoding operation to be performed on another\n    thread, the following steps MUST happen on a thread that is not\n    the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-thread\" id=\"ref-for-control-thread\">control thread</a> nor the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread\">rendering thread</a>,\n    called the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"BaseAudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-baseaudiocontext-decoding-thread\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>decoding thread</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>.",
+          "html": "If <var>can decode</var> is <code>false</code>, <a href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"6d54a0c51\"> queue a media element task</a> to execute the following steps:",
           "rationale": "let",
           "steps": [
             {
-              "html": "When queuing a decoding operation to be performed on another\n    thread, the following steps MUST happen on a thread that is not\n    the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-thread\" id=\"ref-for-control-thread\">control thread</a> nor the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread\">rendering thread</a>,\n    called the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"BaseAudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-baseaudiocontext-decoding-thread\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>decoding thread</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>.",
+              "html": "Let <var>error</var> be a <code>DOMException</code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#encodingerror\" id=\"ref-for-encodingerror\">EncodingError</a></code>.",
               "rationale": "reject",
               "steps": [
                 {
@@ -109,14 +109,14 @@
           ]
         },
         {
-          "html": "When queuing a decoding operation to be performed on another\n    thread, the following steps MUST happen on a thread that is not\n    the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-thread\" id=\"ref-for-control-thread\">control thread</a> nor the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread\">rendering thread</a>,\n    called the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"BaseAudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-baseaudiocontext-decoding-thread\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>decoding thread</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>.",
+          "html": "Otherwise:",
           "rationale": "take",
           "steps": [
             {
               "html": "<p>Take the result, representing the decoded <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#linear-pcm\" id=\"ref-for-linear-pcm③\">linear PCM</a> audio data, and resample it to the sample-rate of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#BaseAudioContext\" id=\"ref-for-BaseAudioContext①②\">BaseAudioContext</a></code> if it is different from\nthe sample-rate of <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-decodeaudiodata-audiodata-successcallback-errorcallback-audiodata\" id=\"ref-for-dom-baseaudiocontext-decodeaudiodata-audiodata-successcallback-errorcallback-audiodata⑤\">audioData</a></code>.</p>"
             },
             {
-              "html": "When queuing a decoding operation to be performed on another\n    thread, the following steps MUST happen on a thread that is not\n    the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-thread\" id=\"ref-for-control-thread\">control thread</a> nor the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread\">rendering thread</a>,\n    called the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"BaseAudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-baseaudiocontext-decoding-thread\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>decoding thread</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>.",
+              "html": "<a href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"6d54a0c52\"> queue a media element task</a> to execute the following steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -829,7 +829,7 @@
           "html": "If a suspended context is resumed, continue to render the\n        buffer."
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"begin-offline-rendering\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">begin offline rendering</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, the following steps MUST\n    happen on a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread⑤\">rendering thread</a> that is created for the\n    occasion.",
+          "html": "Once the rendering is complete, <a href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"6d54a0c514\"> queue a media element task</a> to execute the following steps:",
           "rationale": "resolve",
           "steps": [
             {
@@ -981,7 +981,7 @@
           "html": "<p>Set its value for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audionode-numberofinputs\" id=\"ref-for-dom-audionode-numberofinputs①\">numberOfInputs</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audionode-numberofoutputs\" id=\"ref-for-dom-audionode-numberofoutputs①\">numberOfOutputs</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audionode-channelcount\" id=\"ref-for-dom-audionode-channelcount③\">channelCount</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audionode-channelcountmode\" id=\"ref-for-dom-audionode-channelcountmode①\">channelCountMode</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audionode-channelinterpretation\" id=\"ref-for-dom-audionode-channelinterpretation①\">channelInterpretation</a></code> to the\ndefault value for this\nspecific interface outlined in the section for each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioNode\" id=\"ref-for-AudioNode⑥⓪\">AudioNode</a></code>.</p>"
         },
         {
-          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"audionode-constructor-init\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Initializing</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> an object <var>o</var> that inherits from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioNode\" id=\"ref-for-AudioNode⑤⑨\">AudioNode</a></code> means executing the following\n    steps, given the arguments <var>context</var> and <var>dict</var> passed to\n    the constructor of this interface.",
+          "html": "For each member of <var>dict</var> passed in, execute these steps, with <var>k</var> the key of the member, and <var>v</var> its value. If any\nexceptions is thrown when executing these steps, abort the iteration and\npropagate the exception to the caller of the algorithm (constructor or\nfactory method).",
           "rationale": "if",
           "steps": [
             {
@@ -1413,18 +1413,18 @@
     {
       "name": "construct periodic wave",
       "href": "https://webaudio.github.io/web-audio-api/#dom-periodicwave-real-slot",
-      "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#PeriodicWave\" id=\"ref-for-PeriodicWave①⑦\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[real]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[imag]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Float32Array\" id=\"ref-for-idl-Float32Array③⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[normalize]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be an internal slot.",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#PeriodicWave\" id=\"ref-for-PeriodicWave①⑦\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[real]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[imag]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Float32Array\" id=\"ref-for-idl-Float32Array③⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[normalize]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be an internal slot.</p>"
         },
         {
-          "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#PeriodicWave\" id=\"ref-for-PeriodicWave①⑦\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[real]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[imag]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Float32Array\" id=\"ref-for-idl-Float32Array③⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[normalize]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be an internal slot.",
+          "html": "Process <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://webaudio.github.io/web-audio-api/#dom-periodicwave-periodicwave-context-options-options\" id=\"ref-for-dom-periodicwave-periodicwave-context-options-options\">options</a></code> according to one of the following cases:",
           "rationale": "if",
           "steps": [
             {
-              "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#PeriodicWave\" id=\"ref-for-PeriodicWave①⑦\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[real]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[imag]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Float32Array\" id=\"ref-for-idl-Float32Array③⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[normalize]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be an internal slot.",
+              "html": "If both <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-periodicwaveoptions-real\" id=\"ref-for-dom-periodicwaveoptions-real①\">options.real</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-periodicwaveoptions-imag\" id=\"ref-for-dom-periodicwaveoptions-imag①\">options.imag</a></code> are present",
               "rationale": "if",
               "steps": [
                 {
@@ -1439,7 +1439,7 @@
               ]
             },
             {
-              "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#PeriodicWave\" id=\"ref-for-PeriodicWave①⑦\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[real]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[imag]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Float32Array\" id=\"ref-for-idl-Float32Array③⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[normalize]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be an internal slot.",
+              "html": "If only <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-periodicwaveoptions-real\" id=\"ref-for-dom-periodicwaveoptions-real⑤\">options.real</a></code> is present",
               "rationale": "if",
               "steps": [
                 {
@@ -1454,7 +1454,7 @@
               ]
             },
             {
-              "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#PeriodicWave\" id=\"ref-for-PeriodicWave①⑦\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[real]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[imag]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Float32Array\" id=\"ref-for-idl-Float32Array③⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[normalize]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be an internal slot.",
+              "html": "If only <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-periodicwaveoptions-imag\" id=\"ref-for-dom-periodicwaveoptions-imag④\">options.imag</a></code> is present",
               "rationale": "if",
               "steps": [
                 {
@@ -1469,7 +1469,7 @@
               ]
             },
             {
-              "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#PeriodicWave\" id=\"ref-for-PeriodicWave①⑦\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[real]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> and <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[imag]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Float32Array\" id=\"ref-for-idl-Float32Array③⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[normalize]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be an internal slot.",
+              "html": "Otherwise",
               "rationale": "set",
               "steps": [
                 {
@@ -1891,7 +1891,7 @@
     {
       "name": "initialize rendering loop",
       "href": "https://webaudio.github.io/web-audio-api/#rendering-initialization",
-      "html": "Set the internal slot <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"BaseAudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-baseaudiocontext-current-frame-slot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>[[current frame]]</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#BaseAudioContext\" id=\"ref-for-BaseAudioContext①②④\">BaseAudioContext</a></code> to 0. Also set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-currenttime\" id=\"ref-for-dom-baseaudiocontext-currenttime④⑥\">currentTime</a></code> to 0.",
+      "html": "The following step MUST be performed once before the rendering loop starts.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1902,21 +1902,21 @@
     {
       "name": "rendering a graph",
       "href": "https://webaudio.github.io/web-audio-api/#rendering-a-graph",
-      "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+      "html": "The following steps MUST be performed when rendering a render quantum.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>render result</var> be <code>false</code>.</p>"
         },
         {
-          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+          "html": "Process the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message-queue\" id=\"ref-for-control-message-queue⑧\">control message queue</a>.",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>Q<sub>rendering</sub></var> be an empty <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message-queue\" id=\"ref-for-control-message-queue⑨\">control message\nqueue</a>. <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#atomically\" id=\"ref-for-atomically③\">Atomically</a> <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#swap\" id=\"ref-for-swap\">swap</a> <var>Q<sub>rendering</sub></var> with the current <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message-queue\" id=\"ref-for-control-message-queue①⓪\">control message queue</a>.</p>"
             },
             {
-              "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+              "html": "While there are messages in <var>Q<sub>rendering</sub></var>, execute the\nfollowing steps:",
               "rationale": "execute",
               "steps": [
                 {
@@ -1930,7 +1930,7 @@
           ]
         },
         {
-          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+          "html": "Process the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#BaseAudioContext\" id=\"ref-for-BaseAudioContext①②⑤\">BaseAudioContext</a></code>'s <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#baseaudiocontext-associated-task-queue\" id=\"ref-for-baseaudiocontext-associated-task-queue①\">associated task queue</a>.",
           "rationale": "let",
           "steps": [
             {
@@ -1940,7 +1940,7 @@
               "html": "<p>Let <var>task count</var> be the number of tasks in the in <var>task queue</var></p>"
             },
             {
-              "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+              "html": "While <var>task count</var> is not equal to 0, execute the following steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -1966,14 +1966,14 @@
           ]
         },
         {
-          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+          "html": "Process a render quantum.",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot①③\">[[rendering thread state]]</a></code> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#BaseAudioContext\" id=\"ref-for-BaseAudioContext①②⑦\">BaseAudioContext</a></code> is not <code>running</code>, return false.</p>"
             },
             {
-              "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+              "html": "Order the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioNode\" id=\"ref-for-AudioNode①⑧⑤\">AudioNode</a></code>s of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#BaseAudioContext\" id=\"ref-for-BaseAudioContext①②⑧\">BaseAudioContext</a></code> to be processed.",
               "rationale": "let",
               "steps": [
                 {
@@ -1989,7 +1989,7 @@
                   "html": "<p>Let <var>cycle breakers</var> be an empty set of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#DelayNode\" id=\"ref-for-DelayNode②⑤\">DelayNode</a></code>s. It will\ncontain all the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#DelayNode\" id=\"ref-for-DelayNode②⑥\">DelayNode</a></code>s that are part of a cycle.</p>"
                 },
                 {
-                  "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioNode\" id=\"ref-for-AudioNode①⑧⑧\">AudioNode</a></code> <var>node</var> in <var>nodes</var>:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1998,7 +1998,7 @@
                   ]
                 },
                 {
-                  "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#DelayNode\" id=\"ref-for-DelayNode②⑧\">DelayNode</a></code> <var>delay</var> in <var>cycle breakers</var>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -2035,11 +2035,11 @@
                           "html": "<p>If <var>node</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioNode\" id=\"ref-for-AudioNode①⑨⓪\">AudioNode</a></code>, <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#visit\" id=\"ref-for-visit①\">Visit</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioNode\" id=\"ref-for-AudioNode①⑨①\">AudioNode</a></code> connected to the input of <var>node</var>.</p>"
                         },
                         {
-                          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+                          "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioParam\" id=\"ref-for-AudioParam①⑥⑦\">AudioParam</a></code> <var>param</var> of <var>node</var>:",
                           "rationale": "for",
                           "steps": [
                             {
-                              "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+                              "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioNode\" id=\"ref-for-AudioNode①⑨②\">AudioNode</a></code> <var>param input node</var> connected to <var>param</var>:",
                               "rationale": "visit",
                               "steps": [
                                 {
@@ -2065,11 +2065,11 @@
               "html": "<p><a href=\"https://webaudio.github.io/web-audio-api/#computation-of-value\">Compute the value(s)</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioListener\" id=\"ref-for-AudioListener②④\">AudioListener</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioParam\" id=\"ref-for-AudioParam①⑥⑧\">AudioParam</a></code>s for this block.</p>"
             },
             {
-              "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+              "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioNode\" id=\"ref-for-AudioNode①⑨③\">AudioNode</a></code>, in <var>ordered node list</var>:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioParam\" id=\"ref-for-AudioParam①⑥⑨\">AudioParam</a></code> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioNode\" id=\"ref-for-AudioNode①⑨④\">AudioNode</a></code>, execute these steps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -2090,7 +2090,7 @@
                   "html": "<p>If this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioNode\" id=\"ref-for-AudioNode②⓪②\">AudioNode</a></code> is a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#source-node\" id=\"ref-for-source-node②\">source node</a>, <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#computing-a-block-of-audio\" id=\"ref-for-computing-a-block-of-audio\">compute a block of audio</a>, and <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#available-for-reading\" id=\"ref-for-available-for-reading②\">make it available for reading</a>.</p>"
                 },
                 {
-                  "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+                  "html": "If this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioNode\" id=\"ref-for-AudioNode②⓪③\">AudioNode</a></code> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioWorkletNode\" id=\"ref-for-AudioWorkletNode⑤④\">AudioWorkletNode</a></code>, execute these substeps:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -2121,7 +2121,7 @@
                       "html": "<p>Set <var>processCallback</var> to <var>getResult</var>.[[Value]].</p>"
                     },
                     {
-                      "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+                      "html": "If <a href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\">!</a> <a href=\"https://tc39.es/ecma262/#sec-iscallable\"> IsCallable</a>(<var>processCallback</var>) is <code>false</code>, then:",
                       "rationale": "set",
                       "steps": [
                         {
@@ -2136,7 +2136,7 @@
                       "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioworkletprocessor-callable-process-slot\" id=\"ref-for-dom-audioworkletprocessor-callable-process-slot②\">[[callable process]]</a></code> to <code>true</code>.</p>"
                     },
                     {
-                      "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+                      "html": "Perform the following substeps:",
                       "rationale": "let",
                       "steps": [
                         {
@@ -2157,7 +2157,7 @@
                       ]
                     },
                     {
-                      "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+                      "html": "<b id=\"audio-worklet-render-return\">Return:</b> at this point <var>completion</var> will be set to an ECMAScript <a href=\"https://tc39.es/ecma262/#sec-completion-record-type-specification-type\">completion</a> value.",
                       "rationale": "clean",
                       "steps": [
                         {
@@ -2167,7 +2167,7 @@
                           "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-script\" id=\"ref-for-clean-up-after-running-script\">Clean up after running script</a> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object⑦\">current settings object</a>.</p>"
                         },
                         {
-                          "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+                          "html": "If <var>completion</var> is an <a href=\"https://tc39.github.io/ecma262/#sec-completion-record-specification-type\"> abrupt completion</a>:",
                           "rationale": "set",
                           "steps": [
                             {
@@ -2197,7 +2197,7 @@
               ]
             },
             {
-              "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Visiting a node</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> means performing\n    the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#atomically\" id=\"ref-for-atomically④\">Atomically</a> perform the following steps:",
               "rationale": "increment",
               "steps": [
                 {

@@ -134,7 +134,7 @@
           "html": "<p>Advance <var>position</var> by 1. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"collect an HTTP quoted string|collecting an HTTP quoted string\" id=\"collect-an-http-quoted-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">collect an HTTP quoted string</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>input</var>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-position-variable\" id=\"ref-for-string-position-variable\">position variable</a> <var>position</var> and an optional boolean <var>extract-value</var> (default false):",
+          "html": "While true:",
           "rationale": "append",
           "steps": [
             {
@@ -150,7 +150,7 @@
               "html": "<p>Advance <var>position</var> by 1. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"collect an HTTP quoted string|collecting an HTTP quoted string\" id=\"collect-an-http-quoted-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">collect an HTTP quoted string</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>input</var>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-position-variable\" id=\"ref-for-string-position-variable\">position variable</a> <var>position</var> and an optional boolean <var>extract-value</var> (default false):",
+              "html": "If <var>quoteOrBackslash</var> is U+005C (\\), then:",
               "rationale": "if",
               "steps": [
                 {
@@ -165,7 +165,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"collect an HTTP quoted string|collecting an HTTP quoted string\" id=\"collect-an-http-quoted-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">collect an HTTP quoted string</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>input</var>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-position-variable\" id=\"ref-for-string-position-variable\">position variable</a> <var>position</var> and an optional boolean <var>extract-value</var> (default false):",
+              "html": "Otherwise:",
               "rationale": "assert",
               "steps": [
                 {
@@ -282,18 +282,18 @@
           "html": "<p>Let <var>temporaryValue</var> be the empty string. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"header value\" data-dfn-type=\"dfn\" data-lt=\"get, decode, and split|getting, decoding, and splitting\" data-noexport=\"\" id=\"header-value-get-decode-and-split\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get, decode, and split</dfn> a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value②\">header value</a> <var>value</var>, run these steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">strings</a>.",
+          "html": "While <var>position</var> is not past the end of <var>input</var>:",
           "rationale": "append",
           "steps": [
             {
               "html": "<p>Append the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points①\">collecting a sequence of code points</a> that are not U+0022 (\") or\n    U+002C (,) from <var>input</var>, given <var>position</var>, to <var>temporaryValue</var>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"header value\" data-dfn-type=\"dfn\" data-lt=\"get, decode, and split|getting, decoding, and splitting\" data-noexport=\"\" id=\"header-value-get-decode-and-split\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get, decode, and split</dfn> a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value②\">header value</a> <var>value</var>, run these steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">strings</a>.",
+              "html": "If <var>position</var> is not past the end of <var>input</var>, then:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"header value\" data-dfn-type=\"dfn\" data-lt=\"get, decode, and split|getting, decoding, and splitting\" data-noexport=\"\" id=\"header-value-get-decode-and-split\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get, decode, and split</dfn> a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value②\">header value</a> <var>value</var>, run these steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">strings</a>.",
+                  "html": "If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point④\">code point</a> at <var>position</var> within <var>input</var> is\n      U+0022 (\"), then:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -305,7 +305,7 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"header value\" data-dfn-type=\"dfn\" data-lt=\"get, decode, and split|getting, decoding, and splitting\" data-noexport=\"\" id=\"header-value-get-decode-and-split\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get, decode, and split</dfn> a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value②\">header value</a> <var>value</var>, run these steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">strings</a>.",
+                  "html": "Otherwise:",
                   "rationale": "assert",
                   "steps": [
                     {
@@ -412,18 +412,18 @@
           "html": "<p>Let <var>names</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#convert-header-names-to-a-sorted-lowercase-set\" id=\"ref-for-convert-header-names-to-a-sorted-lowercase-set\">convert header names to a sorted-lowercase set</a> with all the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name⑦\">names</a> of the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header①③\">headers</a> in <var>list</var>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"header list\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-header-list-sort-and-combine\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sort and combine</dfn> a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①②\">header list</a> <var>list</var>, run these steps. They return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①③\">header list</a>.",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>name</var> of <var>names</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"header list\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-header-list-sort-and-combine\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sort and combine</dfn> a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①②\">header list</a> <var>list</var>, run these steps. They return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①③\">header list</a>.",
+              "html": "If <var>name</var> is `<code>set-cookie</code>`, then:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>values</var> be a list of all <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-value\" id=\"ref-for-concept-header-value⑤\">values</a> of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header①④\">headers</a> in <var>list</var> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name⑧\">name</a> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-case-insensitive\" id=\"ref-for-byte-case-insensitive⑤\">byte-case-insensitive</a> match for <var>name</var>, in order. </p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"header list\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-header-list-sort-and-combine\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sort and combine</dfn> a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①②\">header list</a> <var>list</var>, run these steps. They return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①③\">header list</a>.",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>value</var> of <var>values</var>:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -434,7 +434,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"header list\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-header-list-sort-and-combine\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sort and combine</dfn> a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①②\">header list</a> <var>list</var>, run these steps. They return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①③\">header list</a>.",
+              "html": "Otherwise:",
               "rationale": "let",
               "steps": [
                 {
@@ -471,7 +471,7 @@
           "html": "<p>If <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length\">length</a> is greater than 128, then return\n false. </p>"
         },
         {
-          "html": "To determine whether a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header①⑤\">header</a> (<var>name</var>, <var>value</var>)\nis a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"cors-safelisted-request-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CORS-safelisted request-header</dfn>, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase①\">Byte-lowercase</a> <var>name</var> and switch on the result:",
           "rationale": ".switch",
           "steps": [
             {
@@ -491,7 +491,7 @@
                 },
                 {
                   "case": "`content-type`",
-                  "html": "To determine whether a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header①⑤\">header</a> (<var>name</var>, <var>value</var>)\nis a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"cors-safelisted-request-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CORS-safelisted request-header</dfn>, run these steps:",
+                  "html": "<p class=\"warning\">This intentionally does not use <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-extract-mime-type\" id=\"ref-for-concept-header-extract-mime-type\">extract a MIME type</a> as that algorithm is\n    rather forgiving and servers are not expected to implement it. </p>",
                   "rationale": "if",
                   "steps": [
                     {
@@ -510,7 +510,7 @@
                 },
                 {
                   "case": "`range`",
-                  "html": "To determine whether a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header①⑤\">header</a> (<var>name</var>, <var>value</var>)\nis a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"cors-safelisted-request-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CORS-safelisted request-header</dfn>, run these steps:",
+                  "html": "",
                   "rationale": "let",
                   "steps": [
                     {
@@ -553,7 +553,7 @@
           "html": "<p>Let <var>safelistValueSize</var> be 0. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"cors-unsafe-request-header-names\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CORS-unsafe request-header names</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①⑤\">header list</a> <var>headers</var>, are determined as follows:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>header</var> of <var>headers</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -599,7 +599,7 @@
           "html": "<p>If <var>name</var> when <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-lowercase\" id=\"ref-for-byte-lowercase②\">byte-lowercased</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-starts-with\" id=\"ref-for-byte-sequence-starts-with\">starts with</a> `<code>proxy-</code>` or `<code>sec-</code>`, then return true. </p>"
         },
         {
-          "html": "A <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header①⑦\">header</a> (<var>name</var>, <var>value</var>) is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"forbidden-request-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">forbidden request-header</dfn> if these steps return true:",
+          "html": "then:",
           "rationale": "let",
           "steps": [
             {
@@ -645,7 +645,7 @@
           "html": "<p>Let <var>values</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"extract header list values|extracting header list values\" id=\"extract-header-list-values\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">extract header list values</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-name\" id=\"ref-for-header-name①⑥\">header name</a> <var>name</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①⑥\">header list</a> <var>list</var>,\nrun these steps:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header②③\">header</a> <var>header</var> <var>list</var> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains⑥\">contains</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name①③\">name</a> is <var>name</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -799,7 +799,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"incrementally-read-loop\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">incrementally-read loop</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader\" id=\"ref-for-readablestreamdefaultreader\">ReadableStreamDefaultReader</a></code> object <var>reader</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#parallel-queue\" id=\"ref-for-parallel-queue④\">parallel queue</a> or <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object⑤\">global object</a> <var>taskDestination</var>, algorithm <var>processBodyChunk</var>, algorithm <var>processEndOfBody</var>, and algorithm <var>processBodyError</var>:",
+          "html": "<p>Let <var>readRequest</var> be the following <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#read-request\" id=\"ref-for-read-request\">read request</a>: </p>\n      <dl>\n       <dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#read-request-chunk-steps\" id=\"ref-for-read-request-chunk-steps\">chunk steps</a>, given <var>chunk</var> \n       </dt><dd>\n        \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#read-request-close-steps\" id=\"ref-for-read-request-close-steps\">close steps</a> \n       </dt><dd>\n        \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#read-request-error-steps\" id=\"ref-for-read-request-error-steps\">error steps</a>, given <var>e</var> \n       </dt><dd>\n        \n      </dd></dl>",
           "rationale": "let",
           "steps": [
             {
@@ -809,14 +809,14 @@
               "html": "<p>If <var>chunk</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array\">Uint8Array</a></code> object, then set <var>continueAlgorithm</var> to this step: run <var>processBodyError</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>. </p>"
             },
             {
-              "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"incrementally-read-loop\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">incrementally-read loop</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader\" id=\"ref-for-readablestreamdefaultreader\">ReadableStreamDefaultReader</a></code> object <var>reader</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#parallel-queue\" id=\"ref-for-parallel-queue④\">parallel queue</a> or <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object⑤\">global object</a> <var>taskDestination</var>, algorithm <var>processBodyChunk</var>, algorithm <var>processEndOfBody</var>, and algorithm <var>processBodyError</var>:",
+              "html": "Otherwise:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>bytes</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy\">copy of</a> <var>chunk</var>. </p>"
                 },
                 {
-                  "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"incrementally-read-loop\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">incrementally-read loop</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader\" id=\"ref-for-readablestreamdefaultreader\">ReadableStreamDefaultReader</a></code> object <var>reader</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#parallel-queue\" id=\"ref-for-parallel-queue④\">parallel queue</a> or <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object⑤\">global object</a> <var>taskDestination</var>, algorithm <var>processBodyChunk</var>, algorithm <var>processEndOfBody</var>, and algorithm <var>processBodyError</var>:",
+                  "html": "Set <var>continueAlgorithm</var> to these steps:",
                   "rationale": "run",
                   "steps": [
                     {
@@ -835,7 +835,7 @@
           ],
           "additional": [
             {
-              "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"incrementally-read-loop\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">incrementally-read loop</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader\" id=\"ref-for-readablestreamdefaultreader\">ReadableStreamDefaultReader</a></code> object <var>reader</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#parallel-queue\" id=\"ref-for-parallel-queue④\">parallel queue</a> or <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object⑤\">global object</a> <var>taskDestination</var>, algorithm <var>processBodyChunk</var>, algorithm <var>processEndOfBody</var>, and algorithm <var>processBodyError</var>:",
+              "html": "",
               "rationale": "queue",
               "steps": [
                 {
@@ -844,7 +844,7 @@
               ]
             },
             {
-              "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"incrementally-read-loop\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">incrementally-read loop</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestreamdefaultreader\" id=\"ref-for-readablestreamdefaultreader\">ReadableStreamDefaultReader</a></code> object <var>reader</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#parallel-queue\" id=\"ref-for-parallel-queue④\">parallel queue</a> or <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object⑤\">global object</a> <var>taskDestination</var>, algorithm <var>processBodyChunk</var>, algorithm <var>processEndOfBody</var>, and algorithm <var>processBodyError</var>:",
+              "html": "",
               "rationale": "queue",
               "steps": [
                 {
@@ -906,7 +906,7 @@
           "html": "<p>Let <var>lastURL</var> be null. </p>"
         },
         {
-          "html": "A <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑥⑨\">request</a> <var>request</var> has a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"request\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-request-tainted-origin\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">redirect-tainted origin</dfn> if these steps\nreturn true:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>url</var> of <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url-list\" id=\"ref-for-concept-request-url-list③\">URL list</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -1143,7 +1143,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-connection-obtain\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a connection</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#network-partition-key\" id=\"ref-for-network-partition-key②\">network partition key</a> <var>key</var>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①④\">URL</a> <var>url</var>, boolean <var>credentials</var>, an optional <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#new-connection-setting\" id=\"ref-for-new-connection-setting\">new connection setting</a> <var>new</var> (default\n\"<code>no</code>\"), and an optional boolean <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"obtain a connection\" data-dfn-type=\"dfn\" data-export=\"\" id=\"obtain-a-connection-requireunreliable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>requireUnreliable</var></dfn> (default false), run these\nsteps:",
+          "html": "If <var>new</var> is \"<code>no</code>\", then:",
           "rationale": "let",
           "steps": [
             {
@@ -1164,7 +1164,7 @@
           "html": "<p>Let <var>timingInfo</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#connection-timing-info\" id=\"ref-for-connection-timing-info⑤\">connection timing info</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-connection-obtain\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a connection</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#network-partition-key\" id=\"ref-for-network-partition-key②\">network partition key</a> <var>key</var>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①④\">URL</a> <var>url</var>, boolean <var>credentials</var>, an optional <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#new-connection-setting\" id=\"ref-for-new-connection-setting\">new connection setting</a> <var>new</var> (default\n\"<code>no</code>\"), and an optional boolean <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"obtain a connection\" data-dfn-type=\"dfn\" data-export=\"\" id=\"obtain-a-connection-requireunreliable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>requireUnreliable</var></dfn> (default false), run these\nsteps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>proxy</var> of <var>proxies</var>:",
           "rationale": "set",
           "steps": [
             {
@@ -1334,11 +1334,11 @@
           "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-response-tainting\" id=\"ref-for-concept-request-response-tainting③\">response tainting</a> is \"<code>cors</code>\" or <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode⑤\">mode</a> is \"<code>websocket</code>\", then <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-concept-header-list-append①\">append</a> (`<code>Origin</code>`, <var>serializedOrigin</var>) to <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list③\">header list</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"append-a-request-origin-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append a request `<code>Origin</code>` header</dfn>,\ngiven a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑧③\">request</a> <var>request</var>, run these steps:",
+          "html": "Otherwise, if <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method②\">method</a> is neither `<code>GET</code>` nor\n  `<code>HEAD</code>`, then:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"append-a-request-origin-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append a request `<code>Origin</code>` header</dfn>,\ngiven a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑧③\">request</a> <var>request</var>, run these steps:",
+              "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode⑥\">mode</a> is not \"<code>cors</code>\",\n    then switch on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\" id=\"ref-for-concept-request-referrer-policy\">referrer policy</a>:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -1395,7 +1395,7 @@
           "html": "<p>Let <var>candidateValue</var> be null. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"header list\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"extract a length|extracting a length\" id=\"header-list-extract-a-length\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">extract a length</dfn> from a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①⑨\">header list</a> <var>headers</var>, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>value</var> of <var>values</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1436,7 +1436,7 @@
           "html": "<p>If <var>values</var> is null, then return failure. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"header list\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"extract a MIME type|extracting a MIME type\" id=\"concept-header-extract-mime-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">extract a MIME type</dfn> from a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list②⓪\">header list</a> <var>headers</var>, run these steps. They return failure or a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type①\">MIME type</a>.",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>value</var> of <var>values</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1449,7 +1449,7 @@
               "html": "<p>Set <var>mimeType</var> to <var>temporaryMimeType</var>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"header list\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"extract a MIME type|extracting a MIME type\" id=\"concept-header-extract-mime-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">extract a MIME type</dfn> from a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list②⓪\">header list</a> <var>headers</var>, run these steps. They return failure or a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type①\">MIME type</a>.",
+              "html": "If <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence④\">essence</a> is not <var>essence</var>, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -1590,7 +1590,7 @@
           "html": "<p>If <var>policy</var> is neither `<code>same-origin</code>`, `<code>same-site</code>`, nor\n `<code>cross-origin</code>`, then set <var>policy</var> to null. </p>"
         },
         {
-          "html": "To perform a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"cross-origin-resource-policy-internal-check\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cross-origin resource policy internal check</dfn>, given an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①②\">origin</a> <var>origin</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#embedder-policy-value\" id=\"ref-for-embedder-policy-value\">embedder policy value</a> <var>embedderPolicyValue</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⓪\">response</a> <var>response</var>, and a boolean <var>forNavigation</var>, run these steps:",
+          "html": "If <var>policy</var> is null, then switch on <var>embedderPolicyValue</var>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1613,7 +1613,7 @@
           ]
         },
         {
-          "html": "To perform a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"cross-origin-resource-policy-internal-check\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cross-origin resource policy internal check</dfn>, given an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①②\">origin</a> <var>origin</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#embedder-policy-value\" id=\"ref-for-embedder-policy-value\">embedder policy value</a> <var>embedderPolicyValue</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⓪\">response</a> <var>response</var>, and a boolean <var>forNavigation</var>, run these steps:",
+          "html": "Switch on <var>policy</var>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1680,7 +1680,7 @@
           "html": "<p>Let <var>crossOriginIsolatedCapability</var> be false. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⓪⑤\">request</a> <var>request</var>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestBodyChunkLength</var></dfn>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestEndOfBody</var><span id=\"process-request-end-of-file\"></span></dfn>,\nan optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processearlyhintsresponse\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processEarlyHintsResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processresponseendofbody\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseEndOfBody</var></dfn>, an optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseConsumeBody</var><span id=\"process-response-end-of-file\"></span></dfn>,\nand an optional boolean <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-useparallelqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>useParallelQueue</var></dfn> (default false), run\nthe steps below. If given, <var>processRequestBodyChunkLength</var> must be an algorithm accepting\nan integer representing the number of bytes transmitted. If given, <var>processRequestEndOfBody</var> must be an algorithm accepting no arguments. If given, <var>processEarlyHintsResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④③\">response</a>. If\ngiven, <var>processResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④④\">response</a>. If given, <var>processResponseEndOfBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑤\">response</a>. If\ngiven, <var>processResponseConsumeBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑥\">response</a> and null, failure, or a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑤\">byte sequence</a>.",
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑥\">client</a> is non-null, then:",
           "rationale": "set",
           "steps": [
             {
@@ -1710,7 +1710,7 @@
           "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin⑦\">origin</a> is \"<code>client</code>\", then set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin⑧\">origin</a> to <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①①\">client</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⓪⑤\">request</a> <var>request</var>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestBodyChunkLength</var></dfn>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestEndOfBody</var><span id=\"process-request-end-of-file\"></span></dfn>,\nan optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processearlyhintsresponse\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processEarlyHintsResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processresponseendofbody\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseEndOfBody</var></dfn>, an optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseConsumeBody</var><span id=\"process-response-end-of-file\"></span></dfn>,\nand an optional boolean <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-useparallelqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>useParallelQueue</var></dfn> (default false), run\nthe steps below. If given, <var>processRequestBodyChunkLength</var> must be an algorithm accepting\nan integer representing the number of bytes transmitted. If given, <var>processRequestEndOfBody</var> must be an algorithm accepting no arguments. If given, <var>processEarlyHintsResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④③\">response</a>. If\ngiven, <var>processResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④④\">response</a>. If given, <var>processResponseEndOfBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑤\">response</a>. If\ngiven, <var>processResponseConsumeBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑥\">response</a> and null, failure, or a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑤\">byte sequence</a>.",
+          "html": "then:",
           "rationale": "assert",
           "steps": [
             {
@@ -1728,7 +1728,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⓪⑤\">request</a> <var>request</var>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestBodyChunkLength</var></dfn>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestEndOfBody</var><span id=\"process-request-end-of-file\"></span></dfn>,\nan optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processearlyhintsresponse\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processEarlyHintsResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processresponseendofbody\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseEndOfBody</var></dfn>, an optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseConsumeBody</var><span id=\"process-response-end-of-file\"></span></dfn>,\nand an optional boolean <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-useparallelqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>useParallelQueue</var></dfn> (default false), run\nthe steps below. If given, <var>processRequestBodyChunkLength</var> must be an algorithm accepting\nan integer representing the number of bytes transmitted. If given, <var>processRequestEndOfBody</var> must be an algorithm accepting no arguments. If given, <var>processEarlyHintsResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④③\">response</a>. If\ngiven, <var>processResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④④\">response</a>. If given, <var>processResponseEndOfBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑤\">response</a>. If\ngiven, <var>processResponseConsumeBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑥\">response</a> and null, failure, or a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑤\">byte sequence</a>.",
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container①\">policy container</a> is \"<code>client</code>\", then:",
           "rationale": "if",
           "steps": [
             {
@@ -1740,7 +1740,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⓪⑤\">request</a> <var>request</var>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestBodyChunkLength</var></dfn>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestEndOfBody</var><span id=\"process-request-end-of-file\"></span></dfn>,\nan optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processearlyhintsresponse\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processEarlyHintsResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processresponseendofbody\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseEndOfBody</var></dfn>, an optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseConsumeBody</var><span id=\"process-response-end-of-file\"></span></dfn>,\nand an optional boolean <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-useparallelqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>useParallelQueue</var></dfn> (default false), run\nthe steps below. If given, <var>processRequestBodyChunkLength</var> must be an algorithm accepting\nan integer representing the number of bytes transmitted. If given, <var>processRequestEndOfBody</var> must be an algorithm accepting no arguments. If given, <var>processEarlyHintsResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④③\">response</a>. If\ngiven, <var>processResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④④\">response</a>. If given, <var>processResponseEndOfBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑤\">response</a>. If\ngiven, <var>processResponseConsumeBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑥\">response</a> and null, failure, or a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑤\">byte sequence</a>.",
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list⑥\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains⑧\">does not contain</a> `<code>Accept</code>`, then:",
           "rationale": "let",
           "steps": [
             {
@@ -1750,7 +1750,7 @@
               "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"ref-for-concept-request-initiator③\">initiator</a> is \"<code>prefetch</code>\", then set <var>value</var> to the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#document-accept-header-value\" id=\"ref-for-document-accept-header-value\">document `<code>Accept</code>` header value</a>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⓪⑤\">request</a> <var>request</var>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestBodyChunkLength</var></dfn>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestEndOfBody</var><span id=\"process-request-end-of-file\"></span></dfn>,\nan optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processearlyhintsresponse\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processEarlyHintsResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processresponseendofbody\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseEndOfBody</var></dfn>, an optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseConsumeBody</var><span id=\"process-response-end-of-file\"></span></dfn>,\nand an optional boolean <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-useparallelqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>useParallelQueue</var></dfn> (default false), run\nthe steps below. If given, <var>processRequestBodyChunkLength</var> must be an algorithm accepting\nan integer representing the number of bytes transmitted. If given, <var>processRequestEndOfBody</var> must be an algorithm accepting no arguments. If given, <var>processEarlyHintsResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④③\">response</a>. If\ngiven, <var>processResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④④\">response</a>. If given, <var>processResponseEndOfBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑤\">response</a>. If\ngiven, <var>processResponseConsumeBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑥\">response</a> and null, failure, or a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑤\">byte sequence</a>.",
+              "html": "Otherwise, the user agent should set <var>value</var> to the first matching statement, if\n    any, switching on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination①③\">destination</a>:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -1796,7 +1796,7 @@
           "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-internal-priority\" id=\"ref-for-request-internal-priority\">internal priority</a> is null, then use <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-priority\" id=\"ref-for-request-priority\">priority</a>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"ref-for-concept-request-initiator④\">initiator</a>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination①④\">destination</a>, and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-render-blocking\" id=\"ref-for-request-render-blocking①\">render-blocking</a> in an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①①\">implementation-defined</a> manner to set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-internal-priority\" id=\"ref-for-request-internal-priority①\">internal priority</a> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①②\">implementation-defined</a> object. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⓪⑤\">request</a> <var>request</var>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestBodyChunkLength</var></dfn>, an\noptional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-request-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processRequestEndOfBody</var><span id=\"process-request-end-of-file\"></span></dfn>,\nan optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processearlyhintsresponse\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processEarlyHintsResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponse</var></dfn>, an optional\nalgorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-processresponseendofbody\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseEndOfBody</var></dfn>, an optional algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-response-end-of-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>processResponseConsumeBody</var><span id=\"process-response-end-of-file\"></span></dfn>,\nand an optional boolean <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"fetch\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-useparallelqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>useParallelQueue</var></dfn> (default false), run\nthe steps below. If given, <var>processRequestBodyChunkLength</var> must be an algorithm accepting\nan integer representing the number of bytes transmitted. If given, <var>processRequestEndOfBody</var> must be an algorithm accepting no arguments. If given, <var>processEarlyHintsResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④③\">response</a>. If\ngiven, <var>processResponse</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④④\">response</a>. If given, <var>processResponseEndOfBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑤\">response</a>. If\ngiven, <var>processResponseConsumeBody</var> must be an algorithm accepting a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑥\">response</a> and null, failure, or a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑤\">byte sequence</a>.",
+          "html": "If <var>request</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#subresource-request\" id=\"ref-for-subresource-request\">subresource request</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -1855,7 +1855,7 @@
           "html": "<p>If <var>recursive</var> is false, then run the remaining steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+          "html": "If <var>response</var> is null, then set <var>response</var> to the result of running the steps\n  corresponding to the first matching statement:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1863,7 +1863,7 @@
               "steps": [
                 {
                   "case": "fetchParams’s preloaded response candidate is non-null",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+                  "html": "",
                   "rationale": "wait",
                   "steps": [
                     {
@@ -1879,7 +1879,7 @@
                 },
                 {
                   "case": "request’s current URL’s origin is same origin with request’s origin, and request’s response tainting is \"basic\"",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+                  "html": "",
                   "rationale": "set",
                   "steps": [
                     {
@@ -1892,7 +1892,7 @@
                 },
                 {
                   "case": "request’s current URL’s scheme is \"data\"",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+                  "html": "",
                   "rationale": "set",
                   "steps": [
                     {
@@ -1905,7 +1905,7 @@
                 },
                 {
                   "case": "request’s mode is \"navigate\" or \"websocket\"",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+                  "html": "",
                   "rationale": "set",
                   "steps": [
                     {
@@ -1922,7 +1922,7 @@
                 },
                 {
                   "case": "request’s mode is \"no-cors\"",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+                  "html": "",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1942,7 +1942,7 @@
                 },
                 {
                   "case": "request’s use-CORS-preflight flag is set",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+                  "html": "",
                   "rationale": "set",
                   "steps": [
                     {
@@ -1961,7 +1961,7 @@
                 },
                 {
                   "case": "request’s unsafe-request flag is set and either request’s method is not a CORS-safelisted method or CORS-unsafe request-header names with request’s header list is not empty",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+                  "html": "",
                   "rationale": "set",
                   "steps": [
                     {
@@ -1980,7 +1980,7 @@
                 },
                 {
                   "case": "Otherwise",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+                  "html": "",
                   "rationale": "set",
                   "steps": [
                     {
@@ -1999,11 +1999,11 @@
           "html": "<p>If <var>recursive</var> is true, then return <var>response</var>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+          "html": "If <var>response</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error①④\">network error</a> and <var>response</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-filtered-response\" id=\"ref-for-concept-filtered-response①①\">filtered response</a>, then:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+              "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-response-tainting\" id=\"ref-for-concept-request-response-tainting⑨\">response tainting</a> is \"<code>cors</code>\", then:",
               "rationale": "let",
               "steps": [
                 {
@@ -2018,7 +2018,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+              "html": "Set <var>response</var> to the following <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-filtered-response\" id=\"ref-for-concept-filtered-response①②\">filtered response</a> with <var>response</var> as\n    its <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-internal-response\" id=\"ref-for-concept-internal-response①⓪\">internal response</a>, depending on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-response-tainting\" id=\"ref-for-concept-request-response-tainting①⓪\">response tainting</a>:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -2064,7 +2064,7 @@
           "html": "<p>If <var>response</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error①⑨\">network error</a> and\n  either <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method⑥\">method</a> is\n  `<code>HEAD</code>` or `<code>CONNECT</code>`, or <var>internalResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status⑥\">status</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#null-body-status\" id=\"ref-for-null-body-status\">null body status</a>,\n  set <var>internalResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body⑨\">body</a> to\n  null and disregard any enqueuing toward it (if any). </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-integrity-metadata\" id=\"ref-for-concept-request-integrity-metadata①\">integrity metadata</a> is not the empty string, then:",
           "rationale": "let",
           "steps": [
             {
@@ -2074,7 +2074,7 @@
               "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body①⓪\">body</a> is null, then run <var>processBodyError</var> and abort these steps. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-main-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">main fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params④\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these\nsteps:",
+              "html": "Let <var>processBody</var> given <var>bytes</var> be these steps:",
               "rationale": "if",
               "steps": [
                 {
@@ -2111,7 +2111,7 @@
           "html": "<p>If <var>response</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error②①\">network error</a> and <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request②\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①⑥\">client</a> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context\">secure context</a>, then set <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info-server-timing-headers\" id=\"ref-for-fetch-timing-info-server-timing-headers\">server-timing headers</a> to the\n  result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-decode-split\" id=\"ref-for-concept-header-list-get-decode-split⑤\">getting, decoding, and splitting</a> `<code>Server-Timing</code>`\n  from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-internal-response\" id=\"ref-for-concept-internal-response①②\">internal response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①④\">header list</a>. </p>\n      \n      <p>The user agent may decide to expose `<code>Server-Timing</code>` headers to non-secure contexts\n  requests as well. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-finale\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch response handover</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑤\">fetch params</a> <var>fetchParams</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤①\">response</a> <var>response</var>, run these steps:",
+          "html": "Let <var>processResponseEndOfBody</var> be the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -2121,7 +2121,7 @@
               "html": "<p>If <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request③\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination①⑤\">destination</a> is \"<code>document</code>\", then set <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-controller\" id=\"ref-for-fetch-params-controller④\">controller</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-full-timing-info\" id=\"ref-for-fetch-controller-full-timing-info②\">full timing info</a> to <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-timing-info\" id=\"ref-for-fetch-params-timing-info②\">timing info</a>. </p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-finale\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch response handover</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑤\">fetch params</a> <var>fetchParams</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤①\">response</a> <var>response</var>, run these steps:",
+              "html": "Set <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-controller\" id=\"ref-for-fetch-params-controller⑤\">controller</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-report-timing-steps\" id=\"ref-for-fetch-controller-report-timing-steps②\">report timing steps</a> to the following steps given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object⑦\">global object</a> <var>global</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -2143,7 +2143,7 @@
                   "html": "<p>Let <var>responseStatus</var> be 0. </p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-finale\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch response handover</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑤\">fetch params</a> <var>fetchParams</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤①\">response</a> <var>response</var>, run these steps:",
+                  "html": "If <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request⑤\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode①④\">mode</a> is\n      not \"<code>navigate</code>\" or <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-has-cross-origin-redirects\" id=\"ref-for-response-has-cross-origin-redirects①\">has-cross-origin-redirects</a> is false:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -2163,7 +2163,7 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-finale\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch response handover</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑤\">fetch params</a> <var>fetchParams</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤①\">response</a> <var>response</var>, run these steps:",
+              "html": "Let <var>processResponseEndOfBodyTask</var> be the following steps:",
               "rationale": "set",
               "steps": [
                 {
@@ -2192,7 +2192,7 @@
           "html": "<p>If <var>internalResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body①③\">body</a> is null, then run <var>processResponseEndOfBody</var>. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-finale\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch response handover</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑤\">fetch params</a> <var>fetchParams</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤①\">response</a> <var>response</var>, run these steps:",
+          "html": "Otherwise:",
           "rationale": "let",
           "steps": [
             {
@@ -2210,7 +2210,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-finale\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch response handover</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑤\">fetch params</a> <var>fetchParams</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤①\">response</a> <var>response</var>, run these steps:",
+          "html": "If <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-process-response-consume-body\" id=\"ref-for-fetch-params-process-response-consume-body①\">process response consume body</a> is\n  non-null, then:",
           "rationale": "let",
           "steps": [
             {
@@ -2242,7 +2242,7 @@
           "html": "<p>Let <var>request</var> be <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request①③\">request</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-scheme-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">scheme fetch<span id=\"concept-basic-fetch\"></span></dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑥\">fetch params</a> <var>fetchParams</var>:",
+          "html": "Switch on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url①⑥\">current URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①③\">scheme</a> and run\n  the associated steps:",
           "rationale": ".switch",
           "steps": [
             {
@@ -2254,7 +2254,7 @@
                 },
                 {
                   "case": "\"blob\"",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-scheme-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">scheme fetch<span id=\"concept-basic-fetch\"></span></dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑥\">fetch params</a> <var>fetchParams</var>:",
+                  "html": "",
                   "rationale": "let",
                   "steps": [
                     {
@@ -2279,7 +2279,7 @@
                       "html": "<p>Let <var>type</var> be <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type\">type</a></code>. </p>"
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-scheme-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">scheme fetch<span id=\"concept-basic-fetch\"></span></dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑥\">fetch params</a> <var>fetchParams</var>:",
+                      "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①②\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains①①\">does not contain</a> `<code>Range</code>`:",
                       "rationale": "let",
                       "steps": [
                         {
@@ -2297,7 +2297,7 @@
                       ]
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-scheme-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">scheme fetch<span id=\"concept-basic-fetch\"></span></dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑥\">fetch params</a> <var>fetchParams</var>:",
+                      "html": "Otherwise:",
                       "rationale": "set",
                       "steps": [
                         {
@@ -2316,7 +2316,7 @@
                           "html": "<p>Let (<var>rangeStart</var>, <var>rangeEnd</var>) be <var>rangeValue</var>. </p>"
                         },
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-scheme-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">scheme fetch<span id=\"concept-basic-fetch\"></span></dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑥\">fetch params</a> <var>fetchParams</var>:",
+                          "html": "If <var>rangeStart</var> is null:",
                           "rationale": "set",
                           "steps": [
                             {
@@ -2328,7 +2328,7 @@
                           ]
                         },
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-scheme-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">scheme fetch<span id=\"concept-basic-fetch\"></span></dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑥\">fetch params</a> <var>fetchParams</var>:",
+                          "html": "Otherwise:",
                           "rationale": "if",
                           "steps": [
                             {
@@ -2372,7 +2372,7 @@
                 },
                 {
                   "case": "\"data\"",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-scheme-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">scheme fetch<span id=\"concept-basic-fetch\"></span></dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑥\">fetch params</a> <var>fetchParams</var>:",
+                  "html": "",
                   "rationale": "let",
                   "steps": [
                     {
@@ -2419,21 +2419,21 @@
           "html": "<p>Let <var>response</var> and <var>internalResponse</var> be null. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑦\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>makeCORSPreflight</var> (default false), run\nthese steps:",
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-service-workers-mode\" id=\"ref-for-request-service-workers-mode\">service-workers mode</a> is \"<code>all</code>\", then:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>requestForServiceWorker</var> be a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-clone\" id=\"ref-for-concept-request-clone\">clone</a> of <var>request</var>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑦\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>makeCORSPreflight</var> (default false), run\nthese steps:",
+              "html": "If <var>requestForServiceWorker</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body\" id=\"ref-for-concept-body⑧\">body</a> is non-null, then:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>transformStream</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#transformstream\" id=\"ref-for-transformstream②\">TransformStream</a></code>. </p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑦\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>makeCORSPreflight</var> (default false), run\nthese steps:",
+                  "html": "Let <var>transformAlgorithm</var> given <var>chunk</var> be these steps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -2462,7 +2462,7 @@
               "html": "<p>Set <var>response</var> to the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#handle-fetch\" id=\"ref-for-handle-fetch①\">handle fetch</a> for <var>requestForServiceWorker</var>, with <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-controller\" id=\"ref-for-fetch-params-controller⑧\">controller</a> and <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-cross-origin-isolated-capability\" id=\"ref-for-fetch-params-cross-origin-isolated-capability②\">cross-origin isolated capability</a>. <a data-link-type=\"biblio\" href=\"https://fetch.spec.whatwg.org/#biblio-html\" title=\"HTML Standard\">[HTML]</a> <a data-link-type=\"biblio\" href=\"https://fetch.spec.whatwg.org/#biblio-sw\" title=\"Service Workers\">[SW]</a> </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑦\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>makeCORSPreflight</var> (default false), run\nthese steps:",
+              "html": "If <var>response</var> is non-null, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -2482,11 +2482,11 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑦\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>makeCORSPreflight</var> (default false), run\nthese steps:",
+          "html": "If <var>response</var> is null, then:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑦\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>makeCORSPreflight</var> (default false), run\nthese steps:",
+              "html": "Then:",
               "rationale": "let",
               "steps": [
                 {
@@ -2515,14 +2515,14 @@
           "html": "<p>If either <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-response-tainting\" id=\"ref-for-concept-request-response-tainting①②\">response tainting</a> or <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-type\" id=\"ref-for-concept-response-type①①\">type</a> is \"<code>opaque</code>\", and the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#cross-origin-resource-policy-check\" id=\"ref-for-cross-origin-resource-policy-check\">cross-origin resource policy check</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin①①\">origin</a>, <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①⑨\">client</a>, <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination①⑥\">destination</a>, and <var>internalResponse</var> returns <b>blocked</b>, then\n  return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error③④\">network error</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑦\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>makeCORSPreflight</var> (default false), run\nthese steps:",
+          "html": "If <var>internalResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①⓪\">status</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#redirect-status\" id=\"ref-for-redirect-status②\">redirect status</a>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>internalResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①①\">status</a> is not 303, <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body⑨\">body</a> is non-null, and the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection\" id=\"ref-for-concept-connection①①\">connection</a> uses HTTP/2, then user agents\n    may, and are even encouraged to, transmit an <code>RST_STREAM</code> frame. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑦\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>makeCORSPreflight</var> (default false), run\nthese steps:",
+              "html": "Switch on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode⑤\">redirect mode</a>:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -2530,7 +2530,7 @@
                   "steps": [
                     {
                       "case": "\"error\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑦\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>makeCORSPreflight</var> (default false), run\nthese steps:",
+                      "html": "",
                       "rationale": "set",
                       "steps": [
                         {
@@ -2540,7 +2540,7 @@
                     },
                     {
                       "case": "\"manual\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑦\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>makeCORSPreflight</var> (default false), run\nthese steps:",
+                      "html": "",
                       "rationale": "if",
                       "steps": [
                         {
@@ -2553,7 +2553,7 @@
                     },
                     {
                       "case": "\"follow\"",
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑦\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>makeCORSPreflight</var> (default false), run\nthese steps:",
+                      "html": "",
                       "rationale": "set",
                       "steps": [
                         {
@@ -2612,7 +2612,7 @@
           "html": "<p>If <var>internalResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①②\">status</a> is not 303, <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body①⓪\">body</a> is non-null, and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body①①\">body</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-source\" id=\"ref-for-concept-body-source①\">source</a> is null, then return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error④①\">network error</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-redirect-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-redirect fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑧\">fetch params</a> <var>fetchParams</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤⑦\">response</a> <var>response</var>,\nrun these steps:",
+          "html": "then:",
           "rationale": "set",
           "steps": [
             {
@@ -2648,7 +2648,7 @@
           "html": "<p>Let <var>recursive</var> be true. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-http-redirect-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-redirect fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑧\">fetch params</a> <var>fetchParams</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤⑦\">response</a> <var>response</var>,\nrun these steps:",
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode⑥\">redirect mode</a> is \"<code>manual</code>\", then:",
           "rationale": "assert",
           "steps": [
             {
@@ -2692,14 +2692,14 @@
           "html": "<p>Let the <var>revalidatingFlag</var> be unset. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+          "html": "Run these steps, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when\">abort when</a> <var>fetchParams</var> is <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-canceled\" id=\"ref-for-fetch-params-canceled③\">canceled</a>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window⑤\">window</a> is \"<code>no-window</code>\" and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode⑦\">redirect mode</a> is \"<code>error</code>\", then set <var>httpFetchParams</var> to <var>fetchParams</var> and <var>httpRequest</var> to <var>request</var>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+              "html": "Otherwise:",
               "rationale": "set",
               "steps": [
                 {
@@ -2735,7 +2735,7 @@
               "html": "<p>If <var>contentLengthHeaderValue</var> is non-null, then <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-concept-header-list-append⑤\">append</a> (`<code>Content-Length</code>`, <var>contentLengthHeaderValue</var>) to <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①⑦\">header list</a>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+              "html": "If <var>contentLength</var> is non-null and <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-keepalive-flag\" id=\"ref-for-request-keepalive-flag①\">keepalive</a> is true, then:",
               "rationale": "let",
               "steps": [
                 {
@@ -2748,7 +2748,7 @@
                   "html": "<p>Let <var>inflightRecords</var> be the set of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch-record\" id=\"ref-for-concept-fetch-record⑦\">fetch records</a> in <var>group</var> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch-record-request\" id=\"ref-for-concept-fetch-record-request②\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-keepalive-flag\" id=\"ref-for-request-keepalive-flag②\">keepalive</a> is true\n     and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#done-flag\" id=\"ref-for-done-flag③\">done flag</a> is unset. </p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>fetchRecord</var> of <var>inflightRecords</var>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -2765,7 +2765,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+              "html": "If <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer④\">referrer</a> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①⑨\">URL</a>, then:",
               "rationale": "let",
               "steps": [
                 {
@@ -2795,7 +2795,7 @@
               "html": "<p>If <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode③\">cache mode</a> is \"<code>no-cache</code>\", <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#no-cache-prevent-cache-control\" id=\"ref-for-no-cache-prevent-cache-control\">prevent no-cache cache-control header modification flag</a> is unset, and <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②③\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains①④\">does not contain</a> `<code>Cache-Control</code>`, then <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-concept-header-list-append⑧\">append</a> (`<code>Cache-Control</code>`, `<code>max-age=0</code>`) to <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②④\">header list</a>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+              "html": "If <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode④\">cache mode</a> is \"<code>no-store</code>\" or\n    \"<code>reload</code>\", then:",
               "rationale": "if",
               "steps": [
                 {
@@ -2813,11 +2813,11 @@
               "html": "<p>Modify <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list③①\">header list</a> per HTTP. Do not <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-concept-header-list-append①②\">append</a> a given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header⑤⓪\">header</a> if <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list③②\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains①⑧\">contains</a> that <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header⑤①\">header</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name②⓪\">name</a>. </p>\n        \n        <p>`<code>Accept</code>`,\n    `<code>Accept-Charset</code>`, and\n    `<code>Accept-Language</code>` must not be included at this point. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+              "html": "If <var>includeCredentials</var> is true, then:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+                  "html": "If the user agent is not configured to block cookies for <var>httpRequest</var> (see <a href=\"https://httpwg.org/specs/rfc6265.html#privacy-considerations\">section 7</a> of <a data-link-type=\"biblio\" href=\"https://fetch.spec.whatwg.org/#biblio-cookies\" title=\"HTTP State Management Mechanism\">[COOKIES]</a>), then:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -2829,7 +2829,7 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+                  "html": "If <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list③④\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains①⑨\">does not contain</a> `<code>Authorization</code>`, then:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -2858,18 +2858,18 @@
               "html": "<p>If <var>httpCache</var> is null, then set <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode⑤\">cache mode</a> to \"<code>no-store</code>\". </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+              "html": "If <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode⑥\">cache mode</a> is neither \"<code>no-store</code>\"\n    nor \"<code>reload</code>\", then:",
               "rationale": "set",
               "steps": [
                 {
                   "html": "<p>Set <var>storedResponse</var> to the result of selecting a response from the <var>httpCache</var>, possibly needing validation, as per the\n      \"<a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9111.html#constructing.responses.from.caches\" id=\"ref-for-constructing.responses.from.caches\">Constructing Responses from Caches</a>\" chapter of <cite>HTTP Caching</cite>, if any. <a data-link-type=\"biblio\" href=\"https://fetch.spec.whatwg.org/#biblio-http-caching\" title=\"HTTP Caching\">[HTTP-CACHING]</a> </p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+                  "html": "If <var>storedResponse</var> is non-null, then:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode⑦\">cache mode</a> is \"<code>default</code>\", <var>storedResponse</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-stale-while-revalidate-response\" id=\"ref-for-concept-stale-while-revalidate-response②\">stale-while-revalidate response</a>, and <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②②\">client</a> is non-null, then:",
                       "rationale": "set",
                       "steps": [
                         {
@@ -2896,14 +2896,14 @@
                       ]
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+                      "html": "Otherwise:",
                       "rationale": "if",
                       "steps": [
                         {
                           "html": "<p>If <var>storedResponse</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-stale-response\" id=\"ref-for-concept-stale-response①\">stale response</a>, then set the <var>revalidatingFlag</var>. </p>"
                         },
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+                          "html": "If the <var>revalidatingFlag</var> is set and <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode⑨\">cache mode</a> is neither \"<code>force-cache</code>\" nor\n          \"<code>only-if-cached</code>\", then:",
                           "rationale": "if",
                           "steps": [
                             {
@@ -2929,7 +2929,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#if-aborted\" id=\"ref-for-if-aborted\">If aborted</a>, then return the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#appropriate-network-error\" id=\"ref-for-appropriate-network-error①\">appropriate network error</a> for <var>fetchParams</var>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+          "html": "If <var>response</var> is null, then:",
           "rationale": "if",
           "steps": [
             {
@@ -2942,7 +2942,7 @@
               "html": "<p>If <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method①④\">method</a> is <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9110.html#rfc.section.9.2.1\" id=\"ref-for-rfc.section.9.2.1\">unsafe</a> and <var>forwardResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①⑤\">status</a> is in the range 200 to 399, inclusive,\n   invalidate appropriate stored responses in <var>httpCache</var>, as per the\n   \"<a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9111.html#invalidation\" id=\"ref-for-invalidation\">Invalidating Stored Responses</a>\" chapter of <cite>HTTP Caching</cite>, and set <var>storedResponse</var> to null. <a data-link-type=\"biblio\" href=\"https://fetch.spec.whatwg.org/#biblio-http-caching\" title=\"HTTP Caching\">[HTTP-CACHING]</a> </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+              "html": "If the <var>revalidatingFlag</var> is set and <var>forwardResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①⑥\">status</a> is 304, then:",
               "rationale": "update",
               "steps": [
                 {
@@ -2957,7 +2957,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+              "html": "If <var>response</var> is null, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -2980,14 +2980,14 @@
           "html": "<p>Set <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-request-includes-credentials\" id=\"ref-for-response-request-includes-credentials①\">request-includes-credentials</a> to <var>includeCredentials</var>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+          "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①⑦\">status</a> is 401, <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-response-tainting\" id=\"ref-for-concept-request-response-tainting①⑥\">response tainting</a> is not \"<code>cors</code>\", <var>includeCredentials</var> is\n  true, and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window⑥\">window</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①①\">environment settings object</a>,\n  then:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>Needs testing: multiple `<code>WWW-Authenticate</code>` headers, missing,\n   parsing issues. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+              "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body②④\">body</a> is non-null, then:",
               "rationale": "if",
               "steps": [
                 {
@@ -2999,7 +2999,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+              "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-use-url-credentials-flag\" id=\"ref-for-concept-request-use-url-credentials-flag①\">use-URL-credentials flag</a> is unset or <var>isAuthenticationFetch</var> is true, then:",
               "rationale": "if",
               "steps": [
                 {
@@ -3022,7 +3022,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+          "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①⑧\">status</a> is 407, then:",
           "rationale": "if",
           "steps": [
             {
@@ -3043,7 +3043,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-or-cache-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network-or-cache fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params⑨\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>isAuthenticationFetch</var> (default false), and an optional boolean <var>isNewConnectionFetch</var> (default false), run these steps:",
+          "html": "then:",
           "rationale": "if",
           "steps": [
             {
@@ -3087,7 +3087,7 @@
           "html": "<p>Switch on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode②⓪\">mode</a>: </p>\n      <dl>\n       <dt>\"<code>websocket</code>\" \n       </dt><dd>\n        <p>Let <var>connection</var> be the result of <a data-link-type=\"dfn\" href=\"https://websockets.spec.whatwg.org/#concept-websocket-connection-obtain\" id=\"ref-for-concept-websocket-connection-obtain\">obtaining a WebSocket connection</a>, given <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url②⑧\">current URL</a>. </p>\n       </dd><dt>Otherwise \n       </dt><dd>\n        <p>Let <var>connection</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection-obtain\" id=\"ref-for-concept-connection-obtain①\">obtaining a connection</a>, given <var>networkPartitionKey</var>, <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url②⑨\">current URL</a>, <var>includeCredentials</var>, and <var>newConnection</var>. </p>\n      </dd></dl>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+          "html": "Run these steps, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when①\">abort when</a> <var>fetchParams</var> is <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-canceled\" id=\"ref-for-fetch-params-canceled⑦\">canceled</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -3103,7 +3103,7 @@
               "html": "Set <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info-final-network-request-start-time\" id=\"ref-for-fetch-timing-info-final-network-request-start-time\">final network-request start time</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-coarsened-shared-current-time\" id=\"ref-for-dfn-coarsened-shared-current-time③\">coarsened shared current time</a> given <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-cross-origin-isolated-capability\" id=\"ref-for-fetch-params-cross-origin-isolated-capability⑤\">cross-origin isolated capability</a>."
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+              "html": "While true:",
               "rationale": "set",
               "steps": [
                 {
@@ -3116,7 +3116,7 @@
                   "html": "<p>Let <var>status</var> be the HTTP response’s status code. </p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+                  "html": "If <var>status</var> is in the range 100 to 199, inclusive:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -3139,7 +3139,7 @@
               ],
               "additional": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+                  "html": "If the HTTP request results in a TLS client certificate dialog, then:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -3151,18 +3151,18 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+                  "html": "To transmit <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body④②\">body</a> <var>body</var>, run these steps:",
                   "rationale": "if",
                   "steps": [
                     {
                       "html": "<p>If <var>body</var> is null and <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-process-request-end-of-body\" id=\"ref-for-fetch-params-process-request-end-of-body①\">process request end-of-body</a> is non-null, then <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#queue-a-fetch-task\" id=\"ref-for-queue-a-fetch-task⑨\">queue a fetch task</a> given <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-process-request-end-of-body\" id=\"ref-for-fetch-params-process-request-end-of-body②\">process request end-of-body</a> and <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-task-destination\" id=\"ref-for-fetch-params-task-destination⑥\">task destination</a>. </p>"
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+                      "html": "Otherwise, if <var>body</var> is non-null:",
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+                          "html": "Let <var>processBodyChunk</var> given <var>bytes</var> be these steps:",
                           "rationale": "if",
                           "steps": [
                             {
@@ -3177,7 +3177,7 @@
                           ]
                         },
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+                          "html": "Let <var>processEndOfBody</var> be these steps:",
                           "rationale": "if",
                           "steps": [
                             {
@@ -3189,7 +3189,7 @@
                           ]
                         },
                         {
-                          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+                          "html": "Let <var>processBodyError</var> given <var>e</var> be these steps:",
                           "rationale": "if",
                           "steps": [
                             {
@@ -3215,7 +3215,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#if-aborted\" id=\"ref-for-if-aborted①\">If aborted</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -3230,14 +3230,14 @@
           "html": "<p>Let <var>buffer</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①⑦\">byte sequence</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+          "html": "Let <var>pullAlgorithm</var> be the followings steps:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -3247,7 +3247,7 @@
                   "html": "<p>Wait until <var>buffer</var> is not empty. </p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#queue-a-fetch-task\" id=\"ref-for-queue-a-fetch-task①⓪\">Queue a fetch task</a> to run the following steps, with <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-task-destination\" id=\"ref-for-fetch-params-task-destination⑧\">task destination</a>.",
                   "rationale": "if",
                   "steps": [
                     {
@@ -3284,19 +3284,19 @@
           "html": "<p><a class=\"tracking-vector\" href=\"https://infra.spec.whatwg.org/#tracking-vector\"><img alt=\"(This is a tracking vector.)\" crossorigin=\"\" height=\"64\" src=\"https://resources.whatwg.org/tracking-vector.svg\" title=\"There is a tracking vector here.\" width=\"46\"></a> If <var>includeCredentials</var> is true and the user agent is not\n configured to block cookies for <var>request</var> (see <a href=\"https://httpwg.org/specs/rfc6265.html#privacy-considerations\">section 7</a> of <a data-link-type=\"biblio\" href=\"https://fetch.spec.whatwg.org/#biblio-cookies\" title=\"HTTP State Management Mechanism\">[COOKIES]</a>), then run the \"set-cookie-string\" parsing algorithm (see <a href=\"https://httpwg.org/specs/rfc6265.html#set-cookie\">section 5.2</a> of <a data-link-type=\"biblio\" href=\"https://fetch.spec.whatwg.org/#biblio-cookies\" title=\"HTTP State Management Mechanism\">[COOKIES]</a>) on the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-value\" id=\"ref-for-concept-header-value②⓪\">value</a> of each <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header⑤④\">header</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name②①\">name</a> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-case-insensitive\" id=\"ref-for-byte-case-insensitive①④\">byte-case-insensitive</a> match for `<code>Set-Cookie</code>` in <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list②④\">header list</a>, if any, and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url③⓪\">current URL</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in parallel</a>:",
           "rationale": "run",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+              "html": "Run these steps, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when②\">abort when</a> <var>fetchParams</var> is <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-canceled\" id=\"ref-for-fetch-params-canceled①①\">canceled</a>:",
               "rationale": "while",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+                  "html": "While true:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+                      "html": "If one or more bytes have been transmitted from <var>response</var>’s message body, then:",
                       "rationale": "let",
                       "steps": [
                         {
@@ -3333,11 +3333,11 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#if-aborted\" id=\"ref-for-if-aborted②\">If aborted</a>, then:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-http-network-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-network fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①①\">fetch params</a> <var>fetchParams</var>, an optional boolean <var>includeCredentials</var> (default false), and an\noptional boolean <var>forceNewConnection</var> (default false), run these steps:",
+                  "html": "If <var>fetchParams</var> is <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-aborted\" id=\"ref-for-fetch-params-aborted①\">aborted</a>, then:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -3385,7 +3385,7 @@
           "html": "<p>Let <var>headers</var> be the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#cors-unsafe-request-header-names\" id=\"ref-for-cors-unsafe-request-header-names②\">CORS-unsafe request-header names</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list④①\">header list</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"cors-preflight-fetch-0\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CORS-preflight fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⓪⑦\">request</a> <var>request</var>, run these steps:",
+          "html": "If <var>headers</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑤\">is not empty</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -3400,7 +3400,7 @@
           "html": "<p>Let <var>response</var> be the result of running <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch\" id=\"ref-for-concept-http-network-or-cache-fetch⑤\">HTTP-network-or-cache fetch</a> given\n a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params①②\">fetch params</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request②⓪\">request</a> is <var>preflight</var>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"cors-preflight-fetch-0\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CORS-preflight fetch</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⓪⑦\">request</a> <var>request</var>, run these steps:",
+          "html": "If a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-cors-check\" id=\"ref-for-concept-cors-check③\">CORS check</a> for <var>request</var> and <var>response</var> returns success and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status②⓪\">status</a> is an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status①\">ok status</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -3569,7 +3569,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#headers-validate\" id=\"ref-for-headers-validate\">validating</a> (<var>name</var>, <var>value</var>) for <var>headers</var> returns false, then return. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Headers\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-headers-append\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append</dfn> a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header⑤⑦\">header</a> (<var>name</var>, <var>value</var>) to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#headers\" id=\"ref-for-headers⑤\">Headers</a></code> object <var>headers</var>, run these steps:",
+          "html": "If <var>headers</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-headers-guard\" id=\"ref-for-concept-headers-guard③\">guard</a> is \"<code>request-no-cors</code>\":",
           "rationale": "let",
           "steps": [
             {
@@ -3601,7 +3601,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Headers\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-headers-fill\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fill</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#headers\" id=\"ref-for-headers⑥\">Headers</a></code> object <var>headers</var> with a given object <var>object</var>, run these steps:",
+          "html": "If <var>object</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence③\">sequence</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">for each</a> <var>header</var> of <var>object</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -3624,7 +3624,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Headers\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-headers-remove-privileged-no-cors-request-headers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove privileged no-CORS request-headers</dfn> from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#headers\" id=\"ref-for-headers⑦\">Headers</a></code> object (<var>headers</var>), run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>headerName</var> of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#privileged-no-cors-request-header-name\" id=\"ref-for-privileged-no-cors-request-header-name\">privileged no-CORS request-header names</a>:",
           "rationale": "delete",
           "steps": [
             {
@@ -3913,7 +3913,7 @@
           "html": "<p>Let <var>mimeType</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-mime-type\" id=\"ref-for-concept-body-mime-type①\">get the MIME type</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Body\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-body-formdata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>formData()</code></dfn> method steps are to return the result of\nrunning <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-consume-body\" id=\"ref-for-concept-body-consume-body③\">consume body</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a> and the following steps given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②⑨\">byte sequence</a> <var>bytes</var>:",
+          "html": "If <var>mimeType</var> is non-null, then switch on <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence⑧\">essence</a> and run the corresponding steps:",
           "rationale": ".switch",
           "steps": [
             {
@@ -3921,7 +3921,7 @@
               "steps": [
                 {
                   "case": "\"multipart/form-data\"",
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Body\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-body-formdata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>formData()</code></dfn> method steps are to return the result of\nrunning <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-consume-body\" id=\"ref-for-concept-body-consume-body③\">consume body</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a> and the following steps given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②⑨\">byte sequence</a> <var>bytes</var>:",
+                  "html": "<p class=\"XXX\">The above is a rough approximation of what is needed for\n    `<code>multipart/form-data</code>`, a more detailed parsing specification is to be written.\n    Volunteers welcome. </p>",
                   "rationale": "parse",
                   "steps": [
                     {
@@ -3937,7 +3937,7 @@
                 },
                 {
                   "case": "\"application/x-www-form-urlencoded\"",
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Body\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-body-formdata\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>formData()</code></dfn> method steps are to return the result of\nrunning <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-consume-body\" id=\"ref-for-concept-body-consume-body③\">consume body</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a> and the following steps given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②⑨\">byte sequence</a> <var>bytes</var>:",
+                  "html": "",
                   "rationale": "let",
                   "steps": [
                     {
@@ -4002,7 +4002,7 @@
           "html": "<p>Let <var>signal</var> be null. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+          "html": "If <var>input</var> is a string, then:",
           "rationale": "let",
           "steps": [
             {
@@ -4023,7 +4023,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+          "html": "Otherwise:",
           "rationale": "assert",
           "steps": [
             {
@@ -4056,7 +4056,7 @@
           "html": "<p>Set <var>request</var> to a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①①④\">request</a> with the following properties: </p>\n      <dl>\n       <dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url⑦\">URL</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url⑧\">URL</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method②⓪\">method</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method②①\">method</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list④⑦\">header list</a> \n       </dt><dd>A copy of <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list④⑧\">header list</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#unsafe-request-flag\" id=\"ref-for-unsafe-request-flag③\">unsafe-request flag</a> \n       </dt><dd>Set. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②③\">client</a> \n       </dt><dd><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">This</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window①④\">window</a> \n       </dt><dd><var>window</var>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-internal-priority\" id=\"ref-for-request-internal-priority②\">internal priority</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-internal-priority\" id=\"ref-for-request-internal-priority③\">internal priority</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin①⑦\">origin</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin①⑧\">origin</a>.  \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer⑨\">referrer</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer①⓪\">referrer</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\" id=\"ref-for-concept-request-referrer-policy⑥\">referrer policy</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\" id=\"ref-for-concept-request-referrer-policy⑦\">referrer policy</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode②⑤\">mode</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode②⑥\">mode</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode②①\">credentials mode</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode②②\">credentials mode</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode①②\">cache mode</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode①③\">cache mode</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode⑨\">redirect mode</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode①⓪\">redirect mode</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-integrity-metadata\" id=\"ref-for-concept-request-integrity-metadata③\">integrity metadata</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-integrity-metadata\" id=\"ref-for-concept-request-integrity-metadata④\">integrity metadata</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-keepalive-flag\" id=\"ref-for-request-keepalive-flag③\">keepalive</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-keepalive-flag\" id=\"ref-for-request-keepalive-flag④\">keepalive</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-reload-navigation-flag\" id=\"ref-for-concept-request-reload-navigation-flag\">reload-navigation flag</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-reload-navigation-flag\" id=\"ref-for-concept-request-reload-navigation-flag①\">reload-navigation flag</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-history-navigation-flag\" id=\"ref-for-concept-request-history-navigation-flag\">history-navigation flag</a> \n       </dt><dd><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-history-navigation-flag\" id=\"ref-for-concept-request-history-navigation-flag①\">history-navigation flag</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url-list\" id=\"ref-for-concept-request-url-list⑨\">URL list</a> \n       </dt><dd>A <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone③\">clone</a> of <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url-list\" id=\"ref-for-concept-request-url-list①⓪\">URL list</a>. \n       </dd><dt><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-initiator-type\" id=\"ref-for-request-initiator-type③\">initiator type</a> \n       </dt><dd>\"<code>fetch</code>\". \n      </dd></dl>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+          "html": "If <var>init</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-is-empty\" id=\"ref-for-map-is-empty\">is not empty</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -4086,7 +4086,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+          "html": "If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-requestinit-referrer\" id=\"ref-for-dom-requestinit-referrer①\">referrer</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exists</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -4096,7 +4096,7 @@
               "html": "<p>If <var>referrer</var> is the empty string, then set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer①②\">referrer</a> to \"<code>no-referrer</code>\". </p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+              "html": "Otherwise:",
               "rationale": "let",
               "steps": [
                 {
@@ -4146,7 +4146,7 @@
           "html": "<p>If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-requestinit-keepalive\" id=\"ref-for-dom-requestinit-keepalive①\">keepalive</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a>, then set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-keepalive-flag\" id=\"ref-for-request-keepalive-flag⑤\">keepalive</a> to it. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+          "html": "If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-requestinit-method\" id=\"ref-for-dom-requestinit-method①\">method</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -4167,7 +4167,7 @@
           "html": "<p>If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-requestinit-signal\" id=\"ref-for-dom-requestinit-signal①\">signal</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a>, then set <var>signal</var> to it. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+          "html": "If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-requestinit-priority\" id=\"ref-for-dom-requestinit-priority①\">priority</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exists</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -4191,7 +4191,7 @@
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-headers\" id=\"ref-for-request-headers①\">headers</a> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new④\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#headers\" id=\"ref-for-headers①③\">Headers</a></code> object with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③\">relevant realm</a>, whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-headers-header-list\" id=\"ref-for-concept-headers-header-list①②\">header list</a> is <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list④⑨\">header list</a> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-headers-guard\" id=\"ref-for-concept-headers-guard①①\">guard</a> is \"<code>request</code>\". </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request⑤\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode③⓪\">mode</a> is\n  \"<code>no-cors</code>\", then:",
           "rationale": "if",
           "steps": [
             {
@@ -4203,7 +4203,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+          "html": "If <var>init</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-is-empty\" id=\"ref-for-map-is-empty①\">is not empty</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -4233,7 +4233,7 @@
           "html": "<p>Let <var>initBody</var> be null. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+          "html": "If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-requestinit-body\" id=\"ref-for-dom-requestinit-body③\">body</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑧\">exists</a> and is non-null, then:",
           "rationale": "let",
           "steps": [
             {
@@ -4254,7 +4254,7 @@
           "html": "<p>Let <var>inputOrInitBody</var> be <var>initBody</var> if it is non-null; otherwise <var>inputBody</var>. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+          "html": "If <var>inputOrInitBody</var> is non-null and <var>inputOrInitBody</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-source\" id=\"ref-for-concept-body-source①④\">source</a> is null, then:",
           "rationale": "if",
           "steps": [
             {
@@ -4272,7 +4272,7 @@
           "html": "<p>Let <var>finalBody</var> be <var>inputOrInitBody</var>. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Request\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Request(input, init)|constructor(input, init)|Request(input)|constructor(input)\" id=\"dom-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new Request(<var>input</var>, <var>init</var>)</code></dfn> constructor steps are:",
+          "html": "If <var>initBody</var> is null and <var>inputBody</var> is non-null, then:",
           "rationale": "if",
           "steps": [
             {
@@ -4373,7 +4373,7 @@
           "html": "<p>If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-responseinit-headers\" id=\"ref-for-dom-responseinit-headers\">headers</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⓪\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-headers-fill\" id=\"ref-for-concept-headers-fill②\">fill</a> <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-headers\" id=\"ref-for-response-headers①\">headers</a> with <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#dom-responseinit-headers\" id=\"ref-for-dom-responseinit-headers①\">headers</a></code>\"]. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-a-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize a response</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\" id=\"ref-for-response①⑨\">Response</a></code> object <var>response</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#responseinit\" id=\"ref-for-responseinit②\">ResponseInit</a></code> <var>init</var>, and null or a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#body-with-type\" id=\"ref-for-body-with-type②\">body with type</a> <var>body</var>:",
+          "html": "If <var>body</var> is non-null, then:",
           "rationale": "if",
           "steps": [
             {
@@ -4500,7 +4500,7 @@
           "html": "<p>Let <var>request</var> be <var>requestObject</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request②⑦\">request</a>. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WindowOrWorkerGlobalScope\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fetch(input, init)|fetch(input)\" id=\"dom-global-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fetch(<var>input</var>, <var>init</var>)</code></dfn> method steps are:",
+          "html": "If <var>requestObject</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-signal\" id=\"ref-for-request-signal⑥\">signal</a> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>,\n  then:",
           "rationale": "abort",
           "steps": [
             {
@@ -4530,7 +4530,7 @@
           "html": "<p>Let <var>controller</var> be null. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WindowOrWorkerGlobalScope\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fetch(input, init)|fetch(input)\" id=\"dom-global-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fetch(<var>input</var>, <var>init</var>)</code></dfn> method steps are:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">Add the following abort steps</a> to <var>requestObject</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-signal\" id=\"ref-for-request-signal⑧\">signal</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -4548,14 +4548,14 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WindowOrWorkerGlobalScope\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fetch(input, init)|fetch(input)\" id=\"dom-global-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fetch(<var>input</var>, <var>init</var>)</code></dfn> method steps are:",
+          "html": "Set <var>controller</var> to the result of calling <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch②⑧\">fetch</a> given <var>request</var> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response\" id=\"ref-for-process-response①\"><i>processResponse</i></a> given <var>response</var> being\n  these steps:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>locallyAborted</var> is true, then abort these steps. </p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WindowOrWorkerGlobalScope\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fetch(input, init)|fetch(input)\" id=\"dom-global-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fetch(<var>input</var>, <var>init</var>)</code></dfn> method steps are:",
+              "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-aborted\" id=\"ref-for-concept-response-aborted②\">aborted flag</a> is set, then:",
               "rationale": "let",
               "steps": [
                 {
@@ -4645,7 +4645,7 @@
           "html": "<p>Let <var>body</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-decode\" id=\"ref-for-string-percent-decode\">percent-decoding</a> of <var>encodedBody</var>. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"data-url-processor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>data:</code> URL processor</dfn> takes a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②①\">URL</a> <var>dataURL</var> and then runs these steps:",
+          "html": "If <var>mimeType</var> ends with U+003B (;), followed by zero or more U+0020 SPACE, followed by\n  an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①\">ASCII case-insensitive</a> match for \"<code>base64</code>\", then:",
           "rationale": "let",
           "steps": [
             {

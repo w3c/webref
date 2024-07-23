@@ -14,7 +14,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-contactsmanager-getproperties\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getProperties()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "resolve",
           "steps": [
             {
@@ -55,7 +55,7 @@
           "html": "<p>If <var>properties</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>property</var> of <var>properties</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -70,15 +70,15 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+              "html": "Let <var>selectedContacts</var> be be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#contactsmanager-launching-a-contact-picker\" id=\"ref-for-contactsmanager-launching-a-contact-picker\">launching a contact picker</a> with <var>options</var>’ <code>multiple</code> member and <var>properties</var>. If this fails, then:",
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#queue-a-contact-picker-task\" id=\"ref-for-queue-a-contact-picker-task\">Queue a contact picker task</a> to run these steps:",
                   "rationale": "reject",
                   "steps": [
                     {
@@ -98,14 +98,14 @@
               "html": "<p>Unset <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#contact-picker-is-showing-flag\" id=\"ref-for-contact-picker-is-showing-flag③\">contact picker is showing flag</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/contact-picker/#queue-a-contact-picker-task\" id=\"ref-for-queue-a-contact-picker-task①\">Queue a contact picker task</a> to run these steps:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>contacts</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ContactsManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"select(properties, options)|select(properties)\" id=\"dom-contactsmanager-select\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>select(<var>properties</var>, <var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, runs these steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>selectedContact</var> in <var>selectedContacts</var>:",
                   "rationale": "let",
                   "steps": [
                     {

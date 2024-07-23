@@ -282,14 +282,14 @@
           "html": "<p>Let <var>target</var> be <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-currenttarget\" id=\"ref-for-dom-event-currenttarget\">currentTarget</a></code>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-event-listener\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for event listener</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event\">Event</a></code> <var>event</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#callbackdef-eventlistener\" id=\"ref-for-callbackdef-eventlistener\">EventListener</a></code> <var>listener</var>: <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#create-script-entry-point\" id=\"ref-for-create-script-entry-point②\">Create script entry point</a> given <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>, \"`event-listener`\",\n        and the following steps given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info⑤\">script timing info</a> <var>scriptTimingInfo</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info\" id=\"ref-for-frame-timing-info④\">frame timing info</a> <var>frameTimingInfo</var>:",
+          "html": "If <var>target</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#node\" id=\"ref-for-node\">Node</a></code>, then:",
           "rationale": "set",
           "steps": [
             {
               "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-invoker-name\" id=\"ref-for-script-timing-info-invoker-name⑥\">invoker name</a> to <var>target</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-node-nodename\" id=\"ref-for-dom-node-nodename\">nodeName</a></code>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-event-listener\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for event listener</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event\">Event</a></code> <var>event</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#callbackdef-eventlistener\" id=\"ref-for-callbackdef-eventlistener\">EventListener</a></code> <var>listener</var>: <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#create-script-entry-point\" id=\"ref-for-create-script-entry-point②\">Create script entry point</a> given <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>, \"`event-listener`\",\n        and the following steps given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info⑤\">script timing info</a> <var>scriptTimingInfo</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#frame-timing-info\" id=\"ref-for-frame-timing-info④\">frame timing info</a> <var>frameTimingInfo</var>:",
+              "html": "If <var>target</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element\">Element</a></code>, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -320,7 +320,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-promise-resolver\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for promise resolver</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise\">Promise</a></code> <var>promise</var> and a \"`resolve-promise`\" or \"`reject-promise`\" <var>type</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#create-script-entry-point\" id=\"ref-for-create-script-entry-point③\">Create script entry point</a> given <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②\">relevant realm</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object\">settings object</a>, <var>type</var>,\nand the following steps given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info\" id=\"ref-for-script-timing-info⑥\">script timing info</a> <var>scriptTimingInfo</var>:",
           "rationale": "set",
           "steps": [
             {
@@ -479,7 +479,7 @@
           "html": "<p>Set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-end-time\" id=\"ref-for-script-timing-info-end-time①\">end time</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-unsafe-shared-current-time\" id=\"ref-for-dfn-unsafe-shared-current-time③\">unsafe shared current time</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"record-timing-info-for-microtask-checkpoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">record timing info for microtask checkpoint</dfn>:",
+          "html": "If <var>script</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#classic-script\" id=\"ref-for-classic-script①\">classic script</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#muted-errors\" id=\"ref-for-muted-errors①\">muted errors</a> is true, then:",
           "rationale": "set",
           "steps": [
             {
