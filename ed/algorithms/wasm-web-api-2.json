@@ -28,7 +28,7 @@
           "html": "<p>Let <var>returnValue</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a></p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-a-potential-webassembly-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile a potential WebAssembly response</dfn> with a promise of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\" id=\"ref-for-response②\">Response</a></code> <var>source</var>, perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment\">Upon fulfillment</a> of <var>source</var> with value <var>unwrappedSource</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -56,7 +56,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-consume-body\" id=\"ref-for-concept-body-consume-body\">Consume</a> <var>response</var>’s body as an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-arraybuffer-objects\" id=\"ref-for-sec-arraybuffer-objects\">ArrayBuffer</a></code>, and let <var>bodyPromise</var> be the result.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-a-potential-webassembly-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile a potential WebAssembly response</dfn> with a promise of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\" id=\"ref-for-response②\">Response</a></code> <var>source</var>, perform the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment①\">Upon fulfillment</a> of <var>bodyPromise</var> with value <var>bodyArrayBuffer</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -68,7 +68,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-a-potential-webassembly-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile a potential WebAssembly response</dfn> with a promise of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\" id=\"ref-for-response②\">Response</a></code> <var>source</var>, perform the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-rejection\" id=\"ref-for-upon-rejection\">Upon rejection</a> of <var>bodyPromise</var> with reason <var>reason</var>:",
               "rationale": "reject",
               "steps": [
                 {
@@ -79,7 +79,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compile-a-potential-webassembly-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compile a potential WebAssembly response</dfn> with a promise of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\" id=\"ref-for-response②\">Response</a></code> <var>source</var>, perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-rejection\" id=\"ref-for-upon-rejection①\">Upon rejection</a> of <var>source</var> with reason <var>reason</var>:",
           "rationale": "reject",
           "steps": [
             {

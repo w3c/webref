@@ -20,7 +20,7 @@
           "html": "<p>Let <var>parsedUrl</var> be the result of the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> steps with <var>rule</var>’s URL and <var>parentStylesheet</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location\" id=\"ref-for-concept-css-style-sheet-location\">location</a>.\nIf the algorithm returns an error,\nreturn. <a data-link-type=\"biblio\" href=\"https://drafts.csswg.org/css-cascade-4/#biblio-cssom\" title=\"CSS Object Model (CSSOM)\">[CSSOM]</a></p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"fetch-an-import\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch an @import</dfn>, given an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-cascade-4/#at-ruledef-import\" id=\"ref-for-at-ruledef-import①②\">@import</a> rule <var>rule</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#fetch-a-style-resource\" id=\"ref-for-fetch-a-style-resource\">Fetch a style resource</a> from <var>parsedUrl</var>,\nwith stylesheet <var>parentStylesheet</var>,\ndestination \"style\",\nCORS mode \"no-cors\",\nand processResponse being the following steps given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var> and\nbyte stream, null or failure <var>byteStream</var>:",
           "rationale": "if",
           "steps": [
             {

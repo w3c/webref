@@ -128,7 +128,7 @@
           "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"queryPermission(descriptor)|queryPermission()\" id=\"dom-filesystemhandle-querypermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>queryPermission(<var>descriptor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -154,7 +154,7 @@
           "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FileSystemHandle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestPermission(descriptor)|requestPermission()\" id=\"dom-filesystemhandle-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission(<var>descriptor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run these steps:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -200,11 +200,11 @@
           "html": "<p>Let <var>accepts options</var> be a empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple\">tuples</a> consisting of a description and a filter.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-accept-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process accept types</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dictdef-filepickeroptions\" id=\"ref-for-dictdef-filepickeroptions③\">FilePickerOptions</a></code> <var>options</var>,\nrun these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>type</var> of <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dom-filepickeroptions-types\" id=\"ref-for-dom-filepickeroptions-types③\">types</a></code>\"]:",
           "rationale": "for",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-accept-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process accept types</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dictdef-filepickeroptions\" id=\"ref-for-dictdef-filepickeroptions③\">FilePickerOptions</a></code> <var>options</var>,\nrun these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>typeString</var> → <var>suffixes</var> of <var>type</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dom-filepickeraccepttype-accept\" id=\"ref-for-dom-filepickeraccepttype-accept③\">accept</a></code>\"]:",
               "rationale": "let",
               "steps": [
                 {
@@ -217,7 +217,7 @@
                   "html": "<p>If <var>parsedType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parameters\" id=\"ref-for-parameters\">parameters</a> are not empty, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-accept-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process accept types</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dictdef-filepickeroptions\" id=\"ref-for-dictdef-filepickeroptions③\">FilePickerOptions</a></code> <var>options</var>,\nrun these steps:",
+                  "html": "If <var>suffixes</var> is a string:",
                   "rationale": "validate",
                   "steps": [
                     {
@@ -226,7 +226,7 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-accept-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process accept types</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dictdef-filepickeroptions\" id=\"ref-for-dictdef-filepickeroptions③\">FilePickerOptions</a></code> <var>options</var>,\nrun these steps:",
+                  "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">for each</a> <var>suffix</var> of <var>suffixes</var>:",
                   "rationale": "validate",
                   "steps": [
                     {
@@ -237,18 +237,18 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-accept-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process accept types</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dictdef-filepickeroptions\" id=\"ref-for-dictdef-filepickeroptions③\">FilePickerOptions</a></code> <var>options</var>,\nrun these steps:",
+              "html": "Let <var>filter</var> be these steps, given a <var>filename</var> (a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a>) and a <var>type</var> (a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type\">MIME type</a>):",
               "rationale": "for",
               "steps": [
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate①\">For each</a> <var>typeString</var> → <var>suffixes</var> of <var>type</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dom-filepickeraccepttype-accept\" id=\"ref-for-dom-filepickeraccepttype-accept④\">accept</a></code>\"]:</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-accept-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process accept types</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dictdef-filepickeroptions\" id=\"ref-for-dictdef-filepickeroptions③\">FilePickerOptions</a></code> <var>options</var>,\nrun these steps:",
+                  "html": "Let <var>parsedType</var> be the result of <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#parse-a-mime-type\" id=\"ref-for-parse-a-mime-type①\">parse a MIME type</a> with <var>typeString</var>.",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-accept-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process accept types</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dictdef-filepickeroptions\" id=\"ref-for-dictdef-filepickeroptions③\">FilePickerOptions</a></code> <var>options</var>,\nrun these steps:",
+                      "html": "If <var>parsedType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#subtype\" id=\"ref-for-subtype\">subtype</a> is \"*\":",
                       "rationale": "if",
                       "steps": [
                         {
@@ -266,7 +266,7 @@
                       "html": "<p>If <var>suffixes</var> is a string, set <var>suffixes</var> to « <var>suffixes</var> ».</p>"
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-accept-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process accept types</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dictdef-filepickeroptions\" id=\"ref-for-dictdef-filepickeroptions③\">FilePickerOptions</a></code> <var>options</var>,\nrun these steps:",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>suffix</var> of <var>suffixes</var>:",
                       "rationale": "if",
                       "steps": [
                         {
@@ -293,11 +293,11 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-accept-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process accept types</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dictdef-filepickeroptions\" id=\"ref-for-dictdef-filepickeroptions③\">FilePickerOptions</a></code> <var>options</var>,\nrun these steps:",
+          "html": "If either <var>accepts options</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>,\nor <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dom-filepickeroptions-excludeacceptalloption\" id=\"ref-for-dom-filepickeroptions-excludeacceptalloption②\">excludeAcceptAllOption</a></code>\"] is <code>false</code>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-accept-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process accept types</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#dictdef-filepickeroptions\" id=\"ref-for-dictdef-filepickeroptions③\">FilePickerOptions</a></code> <var>options</var>,\nrun these steps:",
+              "html": "Let <var>description</var> be a user understandable string describing \"all files\".",
               "rationale": "let",
               "steps": [
                 {
@@ -354,7 +354,7 @@
           "html": "<p>Let <var>origin</var> be <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin③\">origin</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WellKnownDirectory\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"wellknowndirectory-determine-the-directory-the-picker-will-start-in\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the directory the picker will start in</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given an optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>id</var>,\nan optional <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#typedefdef-startindirectory\" id=\"ref-for-typedefdef-startindirectory②\">StartInDirectory</a></code> <var>startIn</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>environment</var>,\nrun the following steps:",
+          "html": "If <var>startIn</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemhandle\" id=\"ref-for-filesystemhandle⑥\">FileSystemHandle</a></code> and <var>startIn</var> is not <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-is-in-a-bucket-file-system\" id=\"ref-for-filesystemhandle-is-in-a-bucket-file-system\">in a bucket file system</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -369,11 +369,11 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WellKnownDirectory\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"wellknowndirectory-determine-the-directory-the-picker-will-start-in\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the directory the picker will start in</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given an optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>id</var>,\nan optional <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#typedefdef-startindirectory\" id=\"ref-for-typedefdef-startindirectory②\">StartInDirectory</a></code> <var>startIn</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>environment</var>,\nrun the following steps:",
+          "html": "If <var>id</var> is non-empty:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WellKnownDirectory\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"wellknowndirectory-determine-the-directory-the-picker-will-start-in\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the directory the picker will start in</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given an optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>id</var>,\nan optional <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#typedefdef-startindirectory\" id=\"ref-for-typedefdef-startindirectory②\">StartInDirectory</a></code> <var>startIn</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>environment</var>,\nrun the following steps:",
+              "html": "If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/file-system-access/#recently-picked-directory-map\" id=\"ref-for-recently-picked-directory-map\">recently picked directory map</a>[<var>origin</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -387,7 +387,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WellKnownDirectory\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"wellknowndirectory-determine-the-directory-the-picker-will-start-in\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the directory the picker will start in</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given an optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>id</var>,\nan optional <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#typedefdef-startindirectory\" id=\"ref-for-typedefdef-startindirectory②\">StartInDirectory</a></code> <var>startIn</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>environment</var>,\nrun the following steps:",
+          "html": "If <var>startIn</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#enumdef-wellknowndirectory\" id=\"ref-for-enumdef-wellknowndirectory⑤\">WellKnownDirectory</a></code>:",
           "rationale": "return",
           "steps": [
             {
@@ -396,11 +396,11 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WellKnownDirectory\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"wellknowndirectory-determine-the-directory-the-picker-will-start-in\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the directory the picker will start in</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given an optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>id</var>,\nan optional <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#typedefdef-startindirectory\" id=\"ref-for-typedefdef-startindirectory②\">StartInDirectory</a></code> <var>startIn</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>environment</var>,\nrun the following steps:",
+          "html": "If <var>id</var> is not specified, or is an empty string:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WellKnownDirectory\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"wellknowndirectory-determine-the-directory-the-picker-will-start-in\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the directory the picker will start in</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given an optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>id</var>,\nan optional <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/file-system-access/#typedefdef-startindirectory\" id=\"ref-for-typedefdef-startindirectory②\">StartInDirectory</a></code> <var>startIn</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>environment</var>,\nrun the following steps:",
+              "html": "If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/file-system-access/#recently-picked-directory-map\" id=\"ref-for-recently-picked-directory-map②\">recently picked directory map</a>[<var>origin</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -463,7 +463,7 @@
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"showOpenFilePicker(options)|showOpenFilePicker()\" id=\"dom-window-showopenfilepicker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>showOpenFilePicker(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run\nthese steps:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
           "rationale": "display",
           "steps": [
             {
@@ -485,11 +485,11 @@
               "html": "<p>Let <var>result</var> be a empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"showOpenFilePicker(options)|showOpenFilePicker()\" id=\"dom-window-showopenfilepicker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>showOpenFilePicker(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run\nthese steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>entry</var> of <var>entries</var>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"showOpenFilePicker(options)|showOpenFilePicker()\" id=\"dom-window-showopenfilepicker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>showOpenFilePicker(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run\nthese steps:",
+                  "html": "If <var>entry</var> is deemed <a data-link-type=\"dfn\" href=\"https://wicg.github.io/file-system-access/#wellknowndirectory-too-sensitive-or-dangerous\" id=\"ref-for-wellknowndirectory-too-sensitive-or-dangerous\">too sensitive or dangerous</a> to be exposed to this website by the user agent:",
                   "rationale": "in parallel",
                   "steps": [
                     {
@@ -546,7 +546,7 @@
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"showSaveFilePicker(options)|showSaveFilePicker()\" id=\"dom-window-showsavefilepicker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>showSaveFilePicker(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run\nthese steps:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>:",
           "rationale": "display",
           "steps": [
             {
@@ -565,7 +565,7 @@
               "html": "<p>Let <var>entry</var> be a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file②\">file entry</a> representing the selected file.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"showSaveFilePicker(options)|showSaveFilePicker()\" id=\"dom-window-showsavefilepicker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>showSaveFilePicker(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run\nthese steps:",
+              "html": "If <var>entry</var> is deemed <a data-link-type=\"dfn\" href=\"https://wicg.github.io/file-system-access/#wellknowndirectory-too-sensitive-or-dangerous\" id=\"ref-for-wellknowndirectory-too-sensitive-or-dangerous①\">too sensitive or dangerous</a> to be exposed to this website by the user agent:",
               "rationale": "in parallel",
               "steps": [
                 {
@@ -620,7 +620,7 @@
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise④\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"showDirectoryPicker(options)|showDirectoryPicker()\" id=\"dom-window-showdirectorypicker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>showDirectoryPicker(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run\nthese steps:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>:",
           "rationale": "display",
           "steps": [
             {
@@ -639,7 +639,7 @@
               "html": "<p>Let <var>entry</var> be a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory\" id=\"ref-for-directory①\">directory entry</a> representing the selected directory.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"showDirectoryPicker(options)|showDirectoryPicker()\" id=\"dom-window-showdirectorypicker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>showDirectoryPicker(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked, must run\nthese steps:",
+              "html": "If <var>entry</var> is deemed <a data-link-type=\"dfn\" href=\"https://wicg.github.io/file-system-access/#wellknowndirectory-too-sensitive-or-dangerous\" id=\"ref-for-wellknowndirectory-too-sensitive-or-dangerous②\">too sensitive or dangerous</a> to be exposed to this website by the user agent:",
               "rationale": "in parallel",
               "steps": [
                 {
@@ -712,14 +712,14 @@
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑤\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DataTransferItem\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-datatransferitem-getasfilesystemhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getAsFileSystemHandle()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑧\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>entry</var> be the <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#entry\" id=\"ref-for-entry②\">file system entry</a> representing the dragged file or directory.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DataTransferItem\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-datatransferitem-getasfilesystemhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getAsFileSystemHandle()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+              "html": "If <var>entry</var> is a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#file\" id=\"ref-for-file④\">file entry</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -728,7 +728,7 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DataTransferItem\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-datatransferitem-getasfilesystemhandle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getAsFileSystemHandle()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+              "html": "Else if <var>entry</var> is a <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#directory\" id=\"ref-for-directory③\">directory entry</a>:",
               "rationale": "let",
               "steps": [
                 {

@@ -128,7 +128,7 @@
           "html": "<p>Let <var>index</var> be <var>path</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> − 1. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Event\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-event-composedpath\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>composedPath()</code></dfn> method steps are:",
+          "html": "While <var>index</var> is greater than or equal to 0:",
           "rationale": "if",
           "steps": [
             {
@@ -152,7 +152,7 @@
           "html": "<p>Set <var>index</var> to <var>currentTargetIndex</var> − 1. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Event\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-event-composedpath\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>composedPath()</code></dfn> method steps are:",
+          "html": "While <var>index</var> is greater than or equal to 0:",
           "rationale": "if",
           "steps": [
             {
@@ -162,7 +162,7 @@
               "html": "<p>If <var>currentHiddenLevel</var> is less than or equal to <var>maxHiddenLevel</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-prepend\" id=\"ref-for-list-prepend\">prepend</a> <var>path</var>[<var>index</var>]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-invocation-target\" id=\"ref-for-event-path-invocation-target②\">invocation target</a> to <var>composedPath</var>. </p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Event\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-event-composedpath\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>composedPath()</code></dfn> method steps are:",
+              "html": "If <var>path</var>[<var>index</var>]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-slot-in-closed-tree\" id=\"ref-for-event-path-slot-in-closed-tree①\">slot-in-closed-tree</a> is true,\n    then:",
               "rationale": "decrease",
               "steps": [
                 {
@@ -185,7 +185,7 @@
           "html": "<p>Set <var>index</var> to <var>currentTargetIndex</var> + 1. </p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Event\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-event-composedpath\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>composedPath()</code></dfn> method steps are:",
+          "html": "While <var>index</var> is less than <var>path</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -195,7 +195,7 @@
               "html": "<p>If <var>currentHiddenLevel</var> is less than or equal to <var>maxHiddenLevel</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a> <var>path</var>[<var>index</var>]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-invocation-target\" id=\"ref-for-event-path-invocation-target③\">invocation target</a> to <var>composedPath</var>. </p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Event\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-event-composedpath\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>composedPath()</code></dfn> method steps are:",
+              "html": "If <var>path</var>[<var>index</var>]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-root-of-closed-tree\" id=\"ref-for-event-path-root-of-closed-tree②\">root-of-closed-tree</a> is true,\n    then:",
               "rationale": "decrease",
               "steps": [
                 {
@@ -372,7 +372,7 @@
           "html": "<p>Let <var>passive</var> and <var>signal</var> be null. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Event\" data-dfn-type=\"dfn\" data-export=\"\" id=\"event-flatten-more\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">flatten more</dfn> <var>options</var>, run these\nsteps:",
+          "html": "If <var>options</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\" id=\"ref-for-dfn-dictionary\">dictionary</a>, then:",
           "rationale": "set",
           "steps": [
             {
@@ -427,7 +427,7 @@
           "html": "<p>If <var>eventTarget</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-event-listener-list\" id=\"ref-for-eventtarget-event-listener-list②\">event listener list</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\" id=\"ref-for-concept-event-listener①⑦\">event listener</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-type\" id=\"ref-for-event-listener-type③\">type</a> is <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-type\" id=\"ref-for-event-listener-type④\">type</a>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback①①\">callback</a> is <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback①②\">callback</a>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-capture\" id=\"ref-for-event-listener-capture③\">capture</a> is <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-capture\" id=\"ref-for-event-listener-capture④\">capture</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">append</a> <var>listener</var> to <var>eventTarget</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-event-listener-list\" id=\"ref-for-eventtarget-event-listener-list③\">event listener list</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"add-an-event-listener\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add an event listener</dfn>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#eventtarget\" id=\"ref-for-eventtarget①⑨\">EventTarget</a></code> object <var>eventTarget</var> and an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\" id=\"ref-for-concept-event-listener①⑥\">event listener</a> <var>listener</var>, run these steps:",
+          "html": "If <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-signal\" id=\"ref-for-event-listener-signal①\">signal</a> is not null, then <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">add the following</a> abort steps to it:",
           "rationale": "remove",
           "steps": [
             {
@@ -512,7 +512,7 @@
           "html": "<p>Let <var>callbacks</var> be « ». </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"legacy-obtain-service-worker-fetch-event-listener-callbacks\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">legacy-obtain service worker fetch event listener callbacks</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope\" id=\"ref-for-serviceworkerglobalscope②\">ServiceWorkerGlobalScope</a></code> <var>global</var>, run these steps. They return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#callbackdef-eventlistener\" id=\"ref-for-callbackdef-eventlistener④\">EventListener</a></code> objects.",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>listener</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-event-listener-list\" id=\"ref-for-eventtarget-event-listener-list⑦\">event listener list</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -544,7 +544,7 @@
           "html": "<p>Let <var>relatedTarget</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#retarget\" id=\"ref-for-retarget\">retargeting</a> <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-relatedtarget\" id=\"ref-for-event-relatedtarget①\">relatedTarget</a> against <var>target</var>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch</dfn> an <var>event</var> to a <var>target</var>, with an optional <var>legacy target override flag</var> and an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+          "html": "If <var>target</var> is not <var>relatedTarget</var> or <var>target</var> is <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-relatedtarget\" id=\"ref-for-event-relatedtarget②\">relatedTarget</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -572,11 +572,11 @@
               "html": "<p>Let <var>parent</var> be the result of invoking <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#get-the-parent\" id=\"ref-for-get-the-parent③\">get the parent</a> with <var>event</var>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch</dfn> an <var>event</var> to a <var>target</var>, with an optional <var>legacy target override flag</var> and an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+              "html": "While <var>parent</var> is non-null:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch</dfn> an <var>event</var> to a <var>target</var>, with an optional <var>legacy target override flag</var> and an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+                  "html": "If <var>slottable</var> is non-null:",
                   "rationale": "assert",
                   "steps": [
                     {
@@ -603,7 +603,7 @@
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>touchTarget</var> of <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-touch-target-list\" id=\"ref-for-event-touch-target-list②\">touch target list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑤\">append</a> the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#retarget\" id=\"ref-for-retarget③\">retargeting</a> <var>touchTarget</var> against <var>parent</var> to <var>touchTargets</var>. </p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch</dfn> an <var>event</var> to a <var>target</var>, with an optional <var>legacy target override flag</var> and an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+                  "html": "If <var>parent</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑤\">Window</a></code> object, or <var>parent</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node⑥\">node</a> and <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root⑤\">root</a> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor\" id=\"ref-for-concept-shadow-including-inclusive-ancestor\">shadow-including inclusive ancestor</a> of <var>parent</var>, then:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -618,7 +618,7 @@
                   "html": "<p>Otherwise, if <var>parent</var> is <var>relatedTarget</var>, then set <var>parent</var> to null. </p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch</dfn> an <var>event</var> to a <var>target</var>, with an optional <var>legacy target override flag</var> and an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+                  "html": "Otherwise, set <var>target</var> to <var>parent</var> and then:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -647,7 +647,7 @@
               "html": "<p>If <var>activationTarget</var> is non-null and <var>activationTarget</var> has <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-legacy-pre-activation-behavior\" id=\"ref-for-eventtarget-legacy-pre-activation-behavior①\">legacy-pre-activation behavior</a>, then run <var>activationTarget</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-legacy-pre-activation-behavior\" id=\"ref-for-eventtarget-legacy-pre-activation-behavior②\">legacy-pre-activation behavior</a>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch</dfn> an <var>event</var> to a <var>target</var>, with an optional <var>legacy target override flag</var> and an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>struct</var> in <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path\" id=\"ref-for-event-path⑤\">path</a>, in\n    reverse order:",
               "rationale": "if",
               "steps": [
                 {
@@ -662,14 +662,14 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch</dfn> an <var>event</var> to a <var>target</var>, with an optional <var>legacy target override flag</var> and an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>struct</var> in <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path\" id=\"ref-for-event-path⑥\">path</a>:",
               "rationale": "if",
               "steps": [
                 {
                   "html": "<p>If <var>struct</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-path-shadow-adjusted-target\" id=\"ref-for-event-path-shadow-adjusted-target③\">shadow-adjusted target</a> is non-null, then\n     set <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-eventphase\" id=\"ref-for-dom-event-eventphase⑨\">eventPhase</a></code> attribute to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-at_target\" id=\"ref-for-dom-event-at_target⑤\">AT_TARGET</a></code>. </p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch</dfn> an <var>event</var> to a <var>target</var>, with an optional <var>legacy target override flag</var> and an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+                  "html": "Otherwise:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -700,7 +700,7 @@
           "html": "<p>Unset <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#dispatch-flag\" id=\"ref-for-dispatch-flag④\">dispatch flag</a>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#stop-propagation-flag\" id=\"ref-for-stop-propagation-flag⑤\">stop propagation flag</a>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#stop-immediate-propagation-flag\" id=\"ref-for-stop-immediate-propagation-flag②\">stop immediate propagation flag</a>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch</dfn> an <var>event</var> to a <var>target</var>, with an optional <var>legacy target override flag</var> and an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+          "html": "If <var>clearTargets</var>, then:",
           "rationale": "set",
           "steps": [
             {
@@ -715,7 +715,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch</dfn> an <var>event</var> to a <var>target</var>, with an optional <var>legacy target override flag</var> and an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+          "html": "If <var>activationTarget</var> is non-null, then:",
           "rationale": "if",
           "steps": [
             {
@@ -785,7 +785,7 @@
           "html": "<p>Let <var>found</var> be the result of running <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener-inner-invoke\" id=\"ref-for-concept-event-listener-inner-invoke\">inner invoke</a> with <var>event</var>, <var>listeners</var>, <var>phase</var>, <var>invocationTargetInShadowTree</var>, and <var>legacyOutputDidListenersThrowFlag</var> if given. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-event-listener-invoke\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">invoke</dfn>, given a <var>struct</var>, <var>event</var>, <var>phase</var>, and an optional <var>legacyOutputDidListenersThrowFlag</var>,\nrun these steps:",
+          "html": "If <var>found</var> is false and <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\" id=\"ref-for-dom-event-istrusted⑦\">isTrusted</a></code> attribute is true,\n  then:",
           "rationale": "let",
           "steps": [
             {
@@ -814,7 +814,7 @@
           "html": "<p>Let <var>found</var> be false. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-event-listener-inner-invoke\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">inner invoke</dfn>, given an <var>event</var>, <var>listeners</var>, <var>phase</var>, <var>invocationTargetInShadowTree</var>,\nand an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>listener</var> in <var>listeners</var>, whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-removed\" id=\"ref-for-event-listener-removed②\">removed</a> is false:",
           "rationale": "if",
           "steps": [
             {
@@ -839,7 +839,7 @@
               "html": "<p>Let <var>currentEvent</var> be undefined. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-event-listener-inner-invoke\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">inner invoke</dfn>, given an <var>event</var>, <var>listeners</var>, <var>phase</var>, <var>invocationTargetInShadowTree</var>,\nand an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+              "html": "If <var>global</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑥\">Window</a></code> object, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -857,7 +857,7 @@
               "html": "<p>If <var>global</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑦\">Window</a></code> object, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#record-timing-info-for-event-listener\" id=\"ref-for-record-timing-info-for-event-listener\">record timing info for event listener</a> given <var>event</var> and <var>listener</var>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-event-listener-inner-invoke\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">inner invoke</dfn>, given an <var>event</var>, <var>listeners</var>, <var>phase</var>, <var>invocationTargetInShadowTree</var>,\nand an optional <var>legacyOutputDidListenersThrowFlag</var>, run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#call-a-user-objects-operation\" id=\"ref-for-call-a-user-objects-operation\">Call a user object’s operation</a> with <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback①⑨\">callback</a>, \"<code>handleEvent</code>\", « <var>event</var> », and <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-currenttarget\" id=\"ref-for-dom-event-currenttarget⑨\">currentTarget</a></code> attribute value. If this throws an exception, then:",
               "rationale": "report",
               "steps": [
                 {
@@ -957,7 +957,7 @@
           "html": "<p>Let <var>global</var> be <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>. </p>"
         },
         {
-          "html": "The static <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AbortSignal\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-abortsignal-timeout\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>timeout(<var>milliseconds</var>)</code></dfn> method\nsteps are:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#run-steps-after-a-timeout\" id=\"ref-for-run-steps-after-a-timeout\">Run steps after a timeout</a> given <var>global</var>, \"<code>AbortSignal-timeout</code>\", <var>milliseconds</var>, and the following step:",
           "rationale": "queue",
           "steps": [
             {
@@ -1032,11 +1032,11 @@
           "html": "<p>Set <var>resultSignal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-dependent\" id=\"ref-for-abortsignal-dependent\">dependent</a> to true. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-dependent-abort-signal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a dependent abort signal</dfn> from a list of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④③\">AbortSignal</a></code> objects <var>signals</var>, using <var>signalInterface</var>, which must be either <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④④\">AbortSignal</a></code> or an\ninterface that inherits from it, and a <var>realm</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>signal</var> of <var>signals</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-dependent-abort-signal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a dependent abort signal</dfn> from a list of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④③\">AbortSignal</a></code> objects <var>signals</var>, using <var>signalInterface</var>, which must be either <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④④\">AbortSignal</a></code> or an\ninterface that inherits from it, and a <var>realm</var>:",
+              "html": "If <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-dependent\" id=\"ref-for-abortsignal-dependent①\">dependent</a> is false, then:",
               "rationale": "append",
               "steps": [
                 {
@@ -1048,7 +1048,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-dependent-abort-signal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a dependent abort signal</dfn> from a list of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④③\">AbortSignal</a></code> objects <var>signals</var>, using <var>signalInterface</var>, which must be either <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④④\">AbortSignal</a></code> or an\ninterface that inherits from it, and a <var>realm</var>:",
+              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">for each</a> <var>sourceSignal</var> of <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-source-signals\" id=\"ref-for-abortsignal-source-signals①\">source signals</a>:",
               "rationale": "assert",
               "steps": [
                 {
@@ -3845,7 +3845,7 @@
           "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"ref-for-concept-element-local-name①⑧\">local name</a> is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#valid-shadow-host-name\" id=\"ref-for-valid-shadow-host-name\">valid shadow host name</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤②\">throw</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①④\">NotSupportedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥④\">DOMException</a></code>. </p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-attach-a-shadow-root\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attach a shadow root</dfn>, given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element①⓪④\">element</a> <var>element</var>, a string <var>mode</var>, a boolean <var>clonable</var>,\na boolean <var>serializable</var>, a boolean <var>delegatesFocus</var>, and a string <var>slotAssignment</var>:",
+          "html": "If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"ref-for-concept-element-local-name①⑨\">local name</a> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name\" id=\"ref-for-valid-custom-element-name②\">valid custom element name</a>, or <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-is-value\" id=\"ref-for-concept-element-is-value⑥\"><code>is</code> value</a> is non-null, then:",
           "rationale": "let",
           "steps": [
             {
@@ -3857,7 +3857,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-attach-a-shadow-root\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attach a shadow root</dfn>, given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element①⓪④\">element</a> <var>element</var>, a string <var>mode</var>, a boolean <var>clonable</var>,\na boolean <var>serializable</var>, a boolean <var>delegatesFocus</var>, and a string <var>slotAssignment</var>:",
+          "html": "If <var>element</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#element-shadow-host\" id=\"ref-for-element-shadow-host④\">shadow host</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -3867,7 +3867,7 @@
               "html": "<p>If any of the following are true: </p>\n        <ul>\n         <li>\n          <p><var>currentShadowRoot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-declarative\" id=\"ref-for-shadowroot-declarative②\">declarative</a> is false; or </p>\n         </li><li>\n          <p><var>currentShadowRoot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-mode\" id=\"ref-for-shadowroot-mode⑧\">mode</a> is not <var>mode</var>, </p>\n        </li></ul>\n        <p>then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤④\">throw</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①⑥\">NotSupportedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥⑥\">DOMException</a></code>. </p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-attach-a-shadow-root\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attach a shadow root</dfn>, given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element①⓪④\">element</a> <var>element</var>, a string <var>mode</var>, a boolean <var>clonable</var>,\na boolean <var>serializable</var>, a boolean <var>delegatesFocus</var>, and a string <var>slotAssignment</var>:",
+              "html": "Otherwise:",
               "rationale": "remove",
               "steps": [
                 {

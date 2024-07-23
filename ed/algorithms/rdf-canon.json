@@ -155,15 +155,15 @@
           "html": "Get the <a data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-index-term-list-3\">list</a> of <a href=\"https://w3c.github.io/rdf-canon/spec/#dfn-quad\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-quad-11\">quads</a> <var>quads</var>\n          from the <a data-link-type=\"dfn|abstract-op\" data-link-for=\"map\" data-xref-for=\"map\" data-lt=\"entry\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"map-entry\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-index-term-entry-for-map-8\">map entry</a> for\n          <a href=\"https://w3c.github.io/rdf-canon/spec/#dfn-reference-blank-node-identifier\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-reference-blank-node-identifier-1\">reference blank node identifier</a> in the\n          <a href=\"https://w3c.github.io/rdf-canon/spec/#dfn-blank-node-to-quads-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-blank-node-to-quads-map-8\">blank node to quads map</a>."
         },
         {
-          "html": "This algorithm takes the <a href=\"https://w3c.github.io/rdf-canon/spec/#dfn-canonicalization-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-canonicalization-state-4\">canonicalization state</a> and a\n        <dfn id=\"dfn-reference-blank-node-identifier\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">reference blank node identifier</dfn> as inputs.",
+          "html": "For each <a href=\"https://w3c.github.io/rdf-canon/spec/#dfn-quad\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-quad-12\">quad</a> <var>quad</var> in <var>quads</var>:",
           "rationale": "serialize",
           "steps": [
             {
-              "html": "This algorithm takes the <a href=\"https://w3c.github.io/rdf-canon/spec/#dfn-canonicalization-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-canonicalization-state-4\">canonicalization state</a> and a\n        <dfn id=\"dfn-reference-blank-node-identifier\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">reference blank node identifier</dfn> as inputs.",
+              "html": "Serialize the <a href=\"https://w3c.github.io/rdf-canon/spec/#dfn-quad\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-quad-13\">quad</a> in <a href=\"https://w3c.github.io/rdf-canon/spec/#dfn-canonical-n-quads\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-canonical-n-quads-9\">canonical n-quads form</a> with the\n              following special rule:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "This algorithm takes the <a href=\"https://w3c.github.io/rdf-canon/spec/#dfn-canonicalization-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-canonicalization-state-4\">canonicalization state</a> and a\n        <dfn id=\"dfn-reference-blank-node-identifier\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">reference blank node identifier</dfn> as inputs.",
+                  "html": "If any component in <var>quad</var> is an\n                  <a data-cite=\"RDF11-CONCEPTS#dfn-blank-node\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/rdf11-concepts/#dfn-blank-node\" id=\"ref-for-index-term-blank-nodes-18\">blank node</a>, then serialize it using a\n                  special identifier as follows:",
                   "rationale": "if",
                   "steps": [
                     {

@@ -14,7 +14,7 @@
           "html": "<p>Let <var>total</var> be 0.</p>"
         },
         {
-          "html": "To get a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch②\">background fetch</a>'s (<var>bgFetch</var>) <dfn class=\"dfn-paneled\" data-dfn-for=\"background fetch\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"background-fetch-stored-body-bytes-total\">stored body bytes total</dfn>, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>record</var> of <var>bgFetch</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-records\" id=\"ref-for-background-fetch-records\">records</a>:",
           "rationale": "increment",
           "steps": [
             {
@@ -46,7 +46,7 @@
           "html": "<p>Let <var>failureReason</var> be the empty string.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-a-background-fetch\">perform a background fetch</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑤\">background fetch</a>), run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>record</var> in <var>bgFetch</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-records\" id=\"ref-for-background-fetch-records②\">records</a>, run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "complete",
           "steps": [
             {
@@ -56,7 +56,7 @@
               "html": "<p>Let <var>result</var> be <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record-response-data\" id=\"ref-for-background-fetch-record-response-data①\">response data</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-response-result\" id=\"ref-for-background-fetch-response-result①\">result</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-a-background-fetch\">perform a background fetch</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑤\">background fetch</a>), run these steps:",
+              "html": "If <var>failureReason</var> is not the empty string:",
               "rationale": "assert",
               "steps": [
                 {
@@ -82,7 +82,7 @@
           "html": "<p>If <var>immediateFailure</var> is true, set <var>bgFetch</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-abort-all-flag\" id=\"ref-for-background-fetch-abort-all-flag②\">abort all flag</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-a-background-fetch\">perform a background fetch</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑤\">background fetch</a>), run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps\">Enqueue the following steps</a> to <var>swRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#service-worker-registration-active-background-fetches-edit-queue\" id=\"ref-for-service-worker-registration-active-background-fetches-edit-queue\">active background fetches edit queue</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -98,7 +98,7 @@
               "html": "<p>Otherwise, set <var>failureReason</var> to <code>\"aborted\"</code>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-a-background-fetch\">perform a background fetch</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑤\">background fetch</a>), run these steps:",
+              "html": "If <var>failureReason</var> is not the empty string, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -122,7 +122,7 @@
               "html": "<p>Let <var>eventConstructor</var> be null.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-a-background-fetch\">perform a background fetch</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑤\">background fetch</a>), run these steps:",
+              "html": "If <var>failureReason</var> is <code>\"aborted\"</code>, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -134,7 +134,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-a-background-fetch\">perform a background fetch</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑤\">background fetch</a>), run these steps:",
+              "html": "Otherwise, if <var>failureReason</var> is not the empty string, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -146,7 +146,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-a-background-fetch\">perform a background fetch</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑤\">background fetch</a>), run these steps:",
+              "html": "Otherwise:",
               "rationale": "set",
               "steps": [
                 {
@@ -158,7 +158,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-a-background-fetch\">perform a background fetch</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑤\">background fetch</a>), run these steps:",
+              "html": "Then run these steps with <var>dispatchedEvent</var> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
               "rationale": "wait",
               "steps": [
                 {
@@ -213,7 +213,7 @@
           "html": "<p>Let <var>lastTransmittedSize</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+          "html": "To <a data-link-type=\"dfn\">process request body</a> for <var>request</var>, run these steps:",
           "rationale": "let",
           "steps": [
             {
@@ -231,11 +231,11 @@
           ],
           "additional": [
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+              "html": "To <a data-link-type=\"dfn\">process response</a> for <var>response</var>, run these steps:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+                  "html": "If <var>response</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>, then:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -250,11 +250,11 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+                  "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is <code>206</code>, then:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#validate-a-partial-response\" id=\"ref-for-validate-a-partial-response\">validate a partial response</a> for <var>rangeStart</var>, <var>response</var>, and <var>responseData</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-response-response\" id=\"ref-for-background-fetch-response-response①\">response</a> returns invalid, then:",
                       "rationale": "set",
                       "steps": [
                         {
@@ -271,7 +271,7 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+                  "html": "Otherwise:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -295,11 +295,11 @@
                   "html": "<p>Let <var>stream</var> be the <var>response</var> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body①\">body</a>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-stream\" id=\"ref-for-concept-body-stream\">stream</a>.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+                  "html": "Whenever one or more bytes are transmitted from <var>stream</var>, let <var>bytes</var> be the transmitted bytes and run these steps:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+                      "html": "If <var>bgFetch</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-stored-body-bytes-total\" id=\"ref-for-background-fetch-stored-body-bytes-total①\">stored body bytes total</a> plus the size of <var>bytes</var> is greater than <var>downloadTotal</var>, then:",
                       "rationale": "cancel",
                       "steps": [
                         {
@@ -322,11 +322,11 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+                  "html": "If at any point the bytes transmission for <var>stream</var> is done normally, then:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+                      "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status②\">status</a> is <code>206</code>, then:",
                       "rationale": "let",
                       "steps": [
                         {
@@ -349,7 +349,7 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+                  "html": "If at any point <var>stream</var> becomes <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-errored\" id=\"ref-for-readablestream-errored\">errored</a>, then:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -368,7 +368,7 @@
           "html": "<p>Let <var>result</var> be the empty string.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+          "html": "Run these steps, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when\">abort when</a> <var>bgFetch</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-paused-flag\" id=\"ref-for-background-fetch-paused-flag⑦\">paused flag</a> or <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-abort-all-flag\" id=\"ref-for-background-fetch-abort-all-flag③\">abort all flag</a> is set:",
           "rationale": "wait",
           "steps": [
             {
@@ -380,7 +380,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-record\">complete a record</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑥\">background fetch</a>) and <var>record</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record③\">background fetch record</a>), run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#if-aborted\" id=\"ref-for-if-aborted\">If aborted</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -424,7 +424,7 @@
           "html": "<p>Let <var>recordsAvailable</var> be true if <var>bgFetch</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-records-available-flag\" id=\"ref-for-background-fetch-records-available-flag①\">records available flag</a> is set, otherwise false.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-background-fetch-instances\">update background fetch instances</dfn> for <var>bgFetch</var> (a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch\" id=\"ref-for-background-fetch⑦\">background fetch</a>), <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps①\">enqueue the following steps</a> to <var>bgFetch</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-update-handling-queue\" id=\"ref-for-background-fetch-update-handling-queue\">update handling queue</a>:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a> <var>env</var> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a> is equal to <var>bgFetch</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-service-worker-registration\" id=\"ref-for-background-fetch-service-worker-registration②\">service worker registration</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-url\" id=\"ref-for-dfn-scope-url①\">scope URL</a>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①\">origin</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#queue-a-bgfetch-task\" id=\"ref-for-queue-a-bgfetch-task\">queue a bgfetch task</a> on <var>env</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop①\">responsible event loop</a> to run these steps:",
           "rationale": "let",
           "steps": [
             {
@@ -500,11 +500,11 @@
           "html": "<p>If <var>responseFirstBytePos</var> does not equal <var>expectedRangeStart</var>, then return invalid.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"validate-a-partial-response\">validate a partial response</dfn> for an <var>expectedRangeStart</var> (a number), a <var>partialResponse</var> (a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a>), and an optional <var>previousResponse</var> (a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> or null, null unless otherwise specified), run these steps:",
+          "html": "If <var>previousResponse</var> is not null, then:",
           "rationale": "for",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"validate-a-partial-response\">validate a partial response</dfn> for an <var>expectedRangeStart</var> (a number), a <var>partialResponse</var> (a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a>), and an optional <var>previousResponse</var> (a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> or null, null unless otherwise specified), run these steps:",
+              "html": "For <var>headerName</var> of « `<code>ETag</code>`, `<code>Last-Modified</code>` »:",
               "rationale": "if",
               "steps": [
                 {
@@ -513,7 +513,7 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"validate-a-partial-response\">validate a partial response</dfn> for an <var>expectedRangeStart</var> (a number), a <var>partialResponse</var> (a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a>), and an optional <var>previousResponse</var> (a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> or null, null unless otherwise specified), run these steps:",
+              "html": "If <var>previousResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status⑤\">status</a> is <code>206</code>, then:",
               "rationale": "let",
               "steps": [
                 {
@@ -573,7 +573,7 @@
           "html": "<p>Let <var>recordObjects</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"create record objects|creating record objects\" data-noexport=\"\" id=\"create-record-objects\">create record objects</dfn> from <var>records</var> (a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record⑤\">background fetch records</a>) in <var>realm</var> (a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#realm\" id=\"ref-for-realm①\">Realm</a>), run these steps: \n    <p>All platform objects must be created in <var>realm</var>.</p>",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>record</var> of <var>records</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -595,7 +595,7 @@
               "html": "<p>Let <var>transmittedBytes</var> be 0.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"create record objects|creating record objects\" data-noexport=\"\" id=\"create-record-objects\">create record objects</dfn> from <var>records</var> (a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record⑤\">background fetch records</a>) in <var>realm</var> (a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#realm\" id=\"ref-for-realm①\">Realm</a>), run these steps: \n    <p>All platform objects must be created in <var>realm</var>.</p>",
+              "html": "Let <var>stream</var> be <a data-link-type=\"dfn\">a new readable stream</a> with a pull action that returns <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> <var>promise</var> and runs these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
               "rationale": "wait",
               "steps": [
                 {
@@ -605,7 +605,7 @@
                   "html": "<p>Let <var>bytes</var> be null.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"create record objects|creating record objects\" data-noexport=\"\" id=\"create-record-objects\">create record objects</dfn> from <var>records</var> (a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record⑤\">background fetch records</a>) in <var>realm</var> (a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#realm\" id=\"ref-for-realm①\">Realm</a>), run these steps: \n    <p>All platform objects must be created in <var>realm</var>.</p>",
+                  "html": "If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length④\">length</a> of <var>responseData</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-response-bytes\" id=\"ref-for-background-fetch-response-bytes⑥\">bytes</a> is greater than <var>transmittedBytes</var> and <var>responseData</var> may be <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-response-exposed\" id=\"ref-for-background-fetch-response-exposed\">exposed</a>, then:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -617,11 +617,11 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"create record objects|creating record objects\" data-noexport=\"\" id=\"create-record-objects\">create record objects</dfn> from <var>records</var> (a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record⑤\">background fetch records</a>) in <var>realm</var> (a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#realm\" id=\"ref-for-realm①\">Realm</a>), run these steps: \n    <p>All platform objects must be created in <var>realm</var>.</p>",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">Queue a task</a> in <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop②\">responsible event loop</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source\">networking task source</a> to run these steps:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"create record objects|creating record objects\" data-noexport=\"\" id=\"create-record-objects\">create record objects</dfn> from <var>records</var> (a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record⑤\">background fetch records</a>) in <var>realm</var> (a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#realm\" id=\"ref-for-realm①\">Realm</a>), run these steps: \n    <p>All platform objects must be created in <var>realm</var>.</p>",
+                      "html": "If <var>bytes</var> is not null, then:",
                       "rationale": "let",
                       "steps": [
                         {
@@ -649,14 +649,14 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"create record objects|creating record objects\" data-noexport=\"\" id=\"create-record-objects\">create record objects</dfn> from <var>records</var> (a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record⑤\">background fetch records</a>) in <var>realm</var> (a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#realm\" id=\"ref-for-realm①\">Realm</a>), run these steps: \n    <p>All platform objects must be created in <var>realm</var>.</p>",
+              "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
               "rationale": "wait",
               "steps": [
                 {
                   "html": "<p>Wait for <var>responseData</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-response-response\" id=\"ref-for-background-fetch-response-response③\">response</a> to not be not-null.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"create record objects|creating record objects\" data-noexport=\"\" id=\"create-record-objects\">create record objects</dfn> from <var>records</var> (a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record⑤\">background fetch records</a>) in <var>realm</var> (a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#realm\" id=\"ref-for-realm①\">Realm</a>), run these steps: \n    <p>All platform objects must be created in <var>realm</var>.</p>",
+                  "html": "If <var>responseData</var> may be <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-response-exposed\" id=\"ref-for-background-fetch-response-exposed③\">exposed</a>, then:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -675,7 +675,7 @@
                       "html": "<p>Set <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body②\">body</a> to <var>body</var>.</p>"
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"create record objects|creating record objects\" data-noexport=\"\" id=\"create-record-objects\">create record objects</dfn> from <var>records</var> (a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-record\" id=\"ref-for-background-fetch-record⑤\">background fetch records</a>) in <var>realm</var> (a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#realm\" id=\"ref-for-realm①\">Realm</a>), run these steps: \n    <p>All platform objects must be created in <var>realm</var>.</p>",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">Queue a task</a> in <var>recordObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop③\">responsible event loop</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source①\">networking task source</a> to run these steps:",
                       "rationale": "let",
                       "steps": [
                         {
@@ -762,7 +762,7 @@
           "html": "<p>If <var>requests</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, then return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BackgroundFetchManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fetch(id, requests, options)|fetch(id, requests)\" id=\"dom-backgroundfetchmanager-fetch\"><code>fetch(<var>id</var>, <var>requests</var>, <var>options</var>)</code></dfn> method, when invoked, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>request</var> of <var>requests</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -789,7 +789,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BackgroundFetchManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fetch(id, requests, options)|fetch(id, requests)\" id=\"dom-backgroundfetchmanager-fetch\"><code>fetch(<var>id</var>, <var>requests</var>, <var>options</var>)</code></dfn> method, when invoked, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">Enqueue the following steps</a> to <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#service-worker-registration-active-background-fetches-edit-queue\" id=\"ref-for-service-worker-registration-active-background-fetches-edit-queue①\">active background fetches edit queue</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -814,7 +814,7 @@
               "html": "<p>Let <var>requestReadFailed</var> be false.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BackgroundFetchManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fetch(id, requests, options)|fetch(id, requests)\" id=\"dom-backgroundfetchmanager-fetch\"><code>fetch(<var>id</var>, <var>requests</var>, <var>options</var>)</code></dfn> method, when invoked, run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>request</var> of <var>requests</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -824,11 +824,11 @@
                   "html": "<p>Let <var>stream</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body③\">body</a>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-stream\" id=\"ref-for-concept-body-stream②\">stream</a>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BackgroundFetchManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fetch(id, requests, options)|fetch(id, requests)\" id=\"dom-backgroundfetchmanager-fetch\"><code>fetch(<var>id</var>, <var>requests</var>, <var>options</var>)</code></dfn> method, when invoked, run these steps:",
+                  "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>:",
                   "rationale": "run",
                   "steps": [
                     {
-                      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BackgroundFetchManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fetch(id, requests, options)|fetch(id, requests)\" id=\"dom-backgroundfetchmanager-fetch\"><code>fetch(<var>id</var>, <var>requests</var>, <var>options</var>)</code></dfn> method, when invoked, run these steps:",
+                      "html": "Run these steps but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when①\">abort when</a> <var>requestReadFailed</var> is true:",
                       "rationale": "wait",
                       "steps": [
                         {
@@ -868,7 +868,7 @@
               "html": "<p>Set <var>bgFetchMap</var>[<var>id</var>] to <var>bgFetch</var>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BackgroundFetchManager\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fetch(id, requests, options)|fetch(id, requests)\" id=\"dom-backgroundfetchmanager-fetch\"><code>fetch(<var>id</var>, <var>requests</var>, <var>options</var>)</code></dfn> method, when invoked, run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#queue-a-bgfetch-task\" id=\"ref-for-queue-a-bgfetch-task①\">Queue a bgfetch task</a> to run these steps:",
               "rationale": "resolve",
               "steps": [
                 {
@@ -905,11 +905,11 @@
           "html": "<p>If <var>bgFetch</var> is undefined, then <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#resolve\" id=\"ref-for-resolve③\">resolve</a> <var>promise</var> with undefined and abort these steps.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BackgroundFetchManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-backgroundfetchmanager-get\"><code>get(<var>id</var>)</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new promise</a> <var>promise</var> and run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑦\">in parallel</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps③\">Enqueue the following steps</a> to <var>bgFetch</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-update-handling-queue\" id=\"ref-for-background-fetch-update-handling-queue①\">update handling queue</a>:",
           "rationale": "queue",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BackgroundFetchManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-backgroundfetchmanager-get\"><code>get(<var>id</var>)</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new promise</a> <var>promise</var> and run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑦\">in parallel</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#queue-a-bgfetch-task\" id=\"ref-for-queue-a-bgfetch-task②\">Queue a bgfetch task</a> <var>task</var> to run these steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -954,7 +954,7 @@
           "html": "<p>Let <var>swRegistration</var> be <var>bgFetch</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-service-worker-registration\" id=\"ref-for-background-fetch-service-worker-registration⑤\">service worker registration</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BackgroundFetchRegistration\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-backgroundfetchregistration-abort\"><code>abort()</code></dfn> method, when invoked, must return <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise⑤\">a new promise</a> <var>promise</var> and run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑨\">in parallel</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps④\">Enqueue the following steps</a> to <var>swRegistration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#service-worker-registration-active-background-fetches-edit-queue\" id=\"ref-for-service-worker-registration-active-background-fetches-edit-queue②\">active background fetches edit queue</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -1006,14 +1006,14 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#a-new-promise\" id=\"ref-for-a-new-promise⑥\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BackgroundFetchRegistration\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-backgroundfetchregistration-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method, when invoked, must run these steps:",
+          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⓪\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>matchingRecords</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BackgroundFetchRegistration\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-backgroundfetchregistration-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method, when invoked, must run these steps:",
+              "html": "For each <var>record</var> of <a data-link-type=\"dfn\">context object</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#backgroundfetchregistration-background-fetch\" id=\"ref-for-backgroundfetchregistration-background-fetch①①\">background fetch</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/background-fetch/#background-fetch-records\" id=\"ref-for-background-fetch-records⑤\">records</a>:",
               "rationale": "if",
               "steps": [
                 {

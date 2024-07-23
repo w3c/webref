@@ -28,7 +28,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"collect-page-topics-calculation-input-data\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">collect page topics calculation input data</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document④\">Document</a></code> <var>document</var>:",
+          "html": "If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable\">prerendering navigable</a>, then append the following steps to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list\">post-prerendering activation steps list</a> and return. Else, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -72,7 +72,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"collect-topics-caller-domain\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">collect topics caller domain</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>document</var> and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain\" id=\"ref-for-concept-domain⑤\">domain</a> <var>callerDomain</var>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -110,7 +110,7 @@
           "html": "<p>Let <var>presumedNextCalculationDelay</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration\">duration</a> of 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"schedule-user-topics-calculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">schedule user topics calculation</dfn>, perform the following steps:",
+          "html": "If user agent’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#user-agent-user-topics-state\" id=\"ref-for-user-agent-user-topics-state①\">user topics state</a>'s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#user-topics-state-epochs\" id=\"ref-for-user-topics-state-epochs①\">epochs</a> is not empty:",
           "rationale": "let",
           "steps": [
             {
@@ -151,7 +151,7 @@
           "html": "<p>Let <var>fromUnixEpochTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration-from\" id=\"ref-for-dfn-duration-from②\">duration from</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch③\">Unix epoch</a> to <var>moment</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-user-topics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate user topics</dfn>, perform the following steps:",
+          "html": "If either user agent’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#user-agent-model\" id=\"ref-for-user-agent-model①\">model</a> or <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#user-agent-taxonomy\" id=\"ref-for-user-agent-taxonomy②\">taxonomy</a> isn’t available:",
           "rationale": "let",
           "steps": [
             {
@@ -187,7 +187,7 @@
           "html": "<p>Let <var>topicsCallerDataStartTime</var> be <var>fromUnixEpochTime</var> − (a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration⑧\">duration</a> of 21 days).</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-user-topics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate user topics</dfn>, perform the following steps:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-topics-history-entry\" id=\"ref-for-browsing-topics-types-topics-history-entry⑧\">topics history entry</a> <var>topicsHistoryEntry</var> in user agent’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#user-agent-topics-history-storage\" id=\"ref-for-user-agent-topics-history-storage⑤\">topics history storage</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -200,7 +200,7 @@
               "html": "<p>Let <var>topicIds</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#classify\" id=\"ref-for-classify①\">classifying</a> <var>topicsHistoryEntry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#topics-history-entry-topics-calculation-input-data\" id=\"ref-for-topics-history-entry-topics-calculation-input-data②\">topics calculation input data</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-user-topics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate user topics</dfn>, perform the following steps:",
+              "html": "If <var>visitTime</var> is greater than <var>userTopicsDataStartTime</var>:",
               "rationale": "append",
               "steps": [
                 {
@@ -209,11 +209,11 @@
               ]
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-user-topics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate user topics</dfn>, perform the following steps:",
+              "html": "For each <var>topicId</var> in <var>topicIds</var>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-user-topics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate user topics</dfn>, perform the following steps:",
+                  "html": "If <var>topicsCallers</var>[<var>topicId</var>] does not exist:",
                   "rationale": "initialize",
                   "steps": [
                     {
@@ -222,7 +222,7 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-user-topics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate user topics</dfn>, perform the following steps:",
+                  "html": "For each <var>callerDomain</var> in <var>topicsHistoryEntry</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#topics-history-entry-topics-caller-domains\" id=\"ref-for-topics-history-entry-topics-caller-domains①\">topics caller domains</a>:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -241,14 +241,14 @@
           "html": "<p>Let <var>top5TopicsWithCallerDomains</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-user-topics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate user topics</dfn>, perform the following steps:",
+          "html": "For each <var>topTopicId</var> in <var>top5Topics</var>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>topicWithCallerDomains</var> be a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-topic-with-caller-domains\" id=\"ref-for-browsing-topics-types-topic-with-caller-domains①\">topic with caller domains</a> struct with <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#topic-with-caller-domains-topic-id\" id=\"ref-for-topic-with-caller-domains-topic-id\">topic id</a> initially 0 and <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#topic-with-caller-domains-caller-domains\" id=\"ref-for-topic-with-caller-domains-caller-domains\">caller domains</a> initially empty.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-user-topics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate user topics</dfn>, perform the following steps:",
+              "html": "If <var>topTopicId</var> is allowed by user preference setting:",
               "rationale": "set",
               "steps": [
                 {
@@ -261,11 +261,11 @@
                   "html": "<p>Add <var>topTopicId</var> to <var>topicWithDescendantIds</var>.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-user-topics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate user topics</dfn>, perform the following steps:",
+                  "html": "For each <var>topicId</var> in <var>topicWithDescendantIds</var>:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-user-topics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate user topics</dfn>, perform the following steps:",
+                      "html": "If <var>topicId</var> is allowed by user preference setting:",
                       "rationale": "insert",
                       "steps": [
                         {
@@ -357,7 +357,7 @@
           "html": "<p>Let <var>endEpochIndex</var> be -1.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-the-epochs-for-caller\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate the epochs for caller</dfn>, given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-topics-caller-context\" id=\"ref-for-browsing-topics-types-topics-caller-context\">topics caller context</a> <var>callerContext</var>, perform the following steps. They return a list of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-epoch\" id=\"ref-for-browsing-topics-types-epoch③\">epoch</a>s.",
+          "html": "If <var>timestamp</var> ≤ <var>lastEpochTime</var> + <var>epochSwitchTimeDelayIntroduction</var>:",
           "rationale": "set",
           "steps": [
             {
@@ -369,7 +369,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-the-epochs-for-caller\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate the epochs for caller</dfn>, given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-topics-caller-context\" id=\"ref-for-browsing-topics-types-topics-caller-context\">topics caller context</a> <var>callerContext</var>, perform the following steps. They return a list of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-epoch\" id=\"ref-for-browsing-topics-types-epoch③\">epoch</a>s.",
+          "html": "Else:",
           "rationale": "set",
           "steps": [
             {
@@ -381,14 +381,14 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-the-epochs-for-caller\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate the epochs for caller</dfn>, given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-topics-caller-context\" id=\"ref-for-browsing-topics-types-topics-caller-context\">topics caller context</a> <var>callerContext</var>, perform the following steps. They return a list of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-epoch\" id=\"ref-for-browsing-topics-types-epoch③\">epoch</a>s.",
+          "html": "If <var>endEpochIndex</var> ≥ 0:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>i</var> be <var>startEpochIndex</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-the-epochs-for-caller\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate the epochs for caller</dfn>, given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-topics-caller-context\" id=\"ref-for-browsing-topics-types-topics-caller-context\">topics caller context</a> <var>callerContext</var>, perform the following steps. They return a list of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-epoch\" id=\"ref-for-browsing-topics-types-epoch③\">epoch</a>s.",
+              "html": "While <var>i</var> ≤ <var>endEpochIndex</var>:",
               "rationale": "append",
               "steps": [
                 {
@@ -419,7 +419,7 @@
           "html": "<p>Let <var>distinctVersions</var> be an empty set.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-number-of-distinct-versions-in-epochs\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the number of distinct versions in epochs</dfn>, given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-topics-caller-context\" id=\"ref-for-browsing-topics-types-topics-caller-context①\">topics caller context</a> <var>callerContext</var>, perform the following steps. They return an integer.",
+          "html": "For each <var>epoch</var> in <var>epochs</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -448,7 +448,7 @@
           "html": "<p>Let <var>result</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-the-topics-for-caller\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate the topics for caller</dfn>, given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-topics-caller-context\" id=\"ref-for-browsing-topics-types-topics-caller-context②\">topics caller context</a> <var>callerContext</var>, perform the following steps. They return a list of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/topics/#dictdef-browsingtopic\" id=\"ref-for-dictdef-browsingtopic④\">BrowsingTopic</a></code>s.",
+          "html": "For each <var>epoch</var> in <var>epochs</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -473,7 +473,7 @@
               "html": "<p>Let <var>topTopicWithCallerDomains</var> be <var>epoch</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#epoch-top-5-topics-with-caller-domains\" id=\"ref-for-epoch-top-5-topics-with-caller-domains②\">top 5 topics with caller domains</a>[<var>topTopicIndex</var>].</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-the-topics-for-caller\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate the topics for caller</dfn>, given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-topics-caller-context\" id=\"ref-for-browsing-topics-types-topics-caller-context②\">topics caller context</a> <var>callerContext</var>, perform the following steps. They return a list of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/topics/#dictdef-browsingtopic\" id=\"ref-for-dictdef-browsingtopic④\">BrowsingTopic</a></code>s.",
+              "html": "If <var>topTopicWithCallerDomains</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#topic-with-caller-domains-caller-domains\" id=\"ref-for-topic-with-caller-domains-caller-domains②\">caller domains</a> contains <var>callerContext</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#topics-caller-context-caller-domain\" id=\"ref-for-topics-caller-context-caller-domain\">caller domain</a>:",
               "rationale": "set",
               "steps": [
                 {
@@ -497,7 +497,7 @@
               "html": "<p>Let <var>randomOrTopTopicDecisionHash</var> be 64-bit truncation of <var>randomOrTopTopicDecisionHmacOutput</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-the-topics-for-caller\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate the topics for caller</dfn>, given a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-types-topics-caller-context\" id=\"ref-for-browsing-topics-types-topics-caller-context②\">topics caller context</a> <var>callerContext</var>, perform the following steps. They return a list of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/topics/#dictdef-browsingtopic\" id=\"ref-for-dictdef-browsingtopic④\">BrowsingTopic</a></code>s.",
+              "html": "If <var>randomOrTopTopicDecisionHash</var> % 100 &lt; 5:",
               "rationale": "let",
               "steps": [
                 {
@@ -585,7 +585,7 @@
           "html": "<p>Set <var>topicsCallerContext</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#topics-caller-context-timestamp\" id=\"ref-for-topics-caller-context-timestamp①\">timestamp</a> to <var>fromUnixEpochTime</var>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"browsingTopics(options)|browsingTopics()\" id=\"dom-document-browsingtopics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>browsingTopics(options)</code></dfn> method steps are:",
+          "html": "then:",
           "rationale": "queue",
           "steps": [
             {
@@ -597,21 +597,21 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"browsingTopics(options)|browsingTopics()\" id=\"dom-document-browsingtopics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>browsingTopics(options)</code></dfn> method steps are:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>topics</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"browsingTopics(options)|browsingTopics()\" id=\"dom-document-browsingtopics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>browsingTopics(options)</code></dfn> method steps are:",
+              "html": "If the user preference setting and other user agent-defined mechanisms like <a href=\"https://github.com/privacysandbox/attestation\">enrollment</a> allow access to topics from <var>topLevelDocument</var> given <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a>:",
               "rationale": "set",
               "steps": [
                 {
                   "html": "<p>Set <var>topics</var> to the result of running the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#calculate-the-topics-for-caller\" id=\"ref-for-calculate-the-topics-for-caller\">calculate the topics for caller</a> algorithm, with <var>topicsCallerContext</var> as input.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"browsingTopics(options)|browsingTopics()\" id=\"dom-document-browsingtopics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>browsingTopics(options)</code></dfn> method steps are:",
+                  "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/topics/#dom-browsingtopicsoptions-skipobservation\" id=\"ref-for-dom-browsingtopicsoptions-skipobservation\">skipObservation</a></code>\"] is false:",
                   "rationale": "run",
                   "steps": [
                     {
@@ -625,7 +625,7 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"browsingTopics(options)|browsingTopics()\" id=\"dom-document-browsingtopics\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>browsingTopics(options)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/topics/#browsing-topics-task-source\" id=\"ref-for-browsing-topics-task-source\">browsing topics task source</a> given <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> to perform the following steps:",
               "rationale": "resolve",
               "steps": [
                 {
@@ -697,7 +697,7 @@
           "html": "<p>If <var>initiatorWindow</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context①\">secure context</a>, then return.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"append-or-modify-a-request-sec-browsing-topics-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append or modify a request `<code>Sec-Browsing-Topics</code>` header</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> <var>request</var>, run these steps:",
+          "html": "For each feature <var>f</var> in « \"<code>browsing-topic</code>\", \"<code>interest-cohort</code>\" »:",
           "rationale": "run",
           "steps": [
             {
@@ -736,7 +736,7 @@
           "html": "<p>Let <var>numVersionsInEpochs</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"append-or-modify-a-request-sec-browsing-topics-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append or modify a request `<code>Sec-Browsing-Topics</code>` header</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> <var>request</var>, run these steps:",
+          "html": "If the user preference setting and other user agent-defined mechanisms like <a href=\"https://github.com/privacysandbox/attestation\">enrollment</a> allow access to topics from <var>topLevelDocument</var> given <var>requestOrigin</var>:",
           "rationale": "set",
           "steps": [
             {
@@ -751,7 +751,7 @@
           "html": "<p>Let <var>versionsToTopics</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">ordered map</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"append-or-modify-a-request-sec-browsing-topics-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append or modify a request `<code>Sec-Browsing-Topics</code>` header</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> <var>request</var>, run these steps:",
+          "html": "For each <var>topic</var> of <var>topics</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -772,7 +772,7 @@
           "html": "<p>Let <var>topicsStructuredFieldsList</var> be an empty <a href=\"https://www.rfc-editor.org/rfc/rfc8941.html#name-lists\">Structured Fields List</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"append-or-modify-a-request-sec-browsing-topics-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append or modify a request `<code>Sec-Browsing-Topics</code>` header</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> <var>request</var>, run these steps:",
+          "html": "For each <var>version</var> → <var>topicIntegers</var> of <var>versionsToTopics</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -820,7 +820,7 @@
           "html": "<p>Let <var>paddingLength</var> be <var>maxPaddingLength</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"append-or-modify-a-request-sec-browsing-topics-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append or modify a request `<code>Sec-Browsing-Topics</code>` header</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> <var>request</var>, run these steps:",
+          "html": "If <var>topicsStructuredFieldsList</var> is not empty:",
           "rationale": "let",
           "steps": [
             {
@@ -832,7 +832,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"append-or-modify-a-request-sec-browsing-topics-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append or modify a request `<code>Sec-Browsing-Topics</code>` header</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> <var>request</var>, run these steps:",
+          "html": "Else:",
           "rationale": "increment",
           "steps": [
             {
@@ -905,7 +905,7 @@
           "html": "<p>Let <var>observe</var> be the result of running <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">get a structured field value</a> algorithm given <span>`<code><a data-link-type=\"http-header\" href=\"https://patcg-individual-drafts.github.io/topics/#http-headerdef-observe-browsing-topics\" id=\"ref-for-http-headerdef-observe-browsing-topics\">Observe-Browsing-Topics</a></code>`</span>, \"item\", and <var>list</var> as input.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-topics-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle topics response</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response\">response</a> <var>response</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">request</a> request:",
+          "html": "If <var>observe</var> is true:",
           "rationale": "run",
           "steps": [
             {

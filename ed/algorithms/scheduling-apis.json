@@ -46,14 +46,14 @@
           "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#task-handle-queue\" id=\"ref-for-task-handle-queue\">queue</a> to null.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-task-handle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a task handle</dfn> given a promise <var>result</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal①②\">AbortSignal</a></code> or null <var>signal</var>:",
+          "html": "Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#task-handle-abort-steps\" id=\"ref-for-task-handle-abort-steps\">abort steps</a> to the following steps:",
           "rationale": "reject",
           "steps": [
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>result</var> with <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason②\">abort reason</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-task-handle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a task handle</dfn> given a promise <var>result</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal①②\">AbortSignal</a></code> or null <var>signal</var>:",
+              "html": "If <var>task</var> is not null, then",
               "rationale": "remove",
               "steps": [
                 {
@@ -67,7 +67,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-task-handle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a task handle</dfn> given a promise <var>result</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal①②\">AbortSignal</a></code> or null <var>signal</var>:",
+          "html": "Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#task-handle-task-complete-steps\" id=\"ref-for-task-handle-task-complete-steps\">task complete steps</a> to the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -140,14 +140,14 @@
           "html": "<p>If <var>signal</var> is not null, then <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">add</a> <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#task-handle-abort-steps\" id=\"ref-for-task-handle-abort-steps②\">abort steps</a> to <var>signal</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"schedule-a-posttask-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">schedule a postTask task</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑤\">Scheduler</a></code> <var>scheduler</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#callbackdef-schedulerposttaskcallback\" id=\"ref-for-callbackdef-schedulerposttaskcallback①\">SchedulerPostTaskCallback</a></code> <var>callback</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dictdef-schedulerposttaskoptions\" id=\"ref-for-dictdef-schedulerposttaskoptions①\">SchedulerPostTaskOptions</a></code> <var>options</var>:",
+          "html": "Let <var>enqueueSteps</var> be the following steps:",
           "rationale": "set",
           "steps": [
             {
               "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#task-handle-queue\" id=\"ref-for-task-handle-queue①\">queue</a> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#select-the-scheduler-task-queue\" id=\"ref-for-select-the-scheduler-task-queue\">selecting the scheduler task queue</a> for <var>scheduler</var> given <var>state</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#scheduling-state-priority-source\" id=\"ref-for-scheduling-state-priority-source\">priority source</a> and false.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"schedule-a-posttask-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">schedule a postTask task</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑤\">Scheduler</a></code> <var>scheduler</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#callbackdef-schedulerposttaskcallback\" id=\"ref-for-callbackdef-schedulerposttaskcallback①\">SchedulerPostTaskCallback</a></code> <var>callback</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dictdef-schedulerposttaskoptions\" id=\"ref-for-dictdef-schedulerposttaskoptions①\">SchedulerPostTaskOptions</a></code> <var>options</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#schedule-a-task-to-invoke-an-algorithm\" id=\"ref-for-schedule-a-task-to-invoke-an-algorithm\">Schedule a task to invoke an algorithm</a> for <var>scheduler</var> given <var>handle</var> and the following\n steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -170,7 +170,7 @@
           "html": "<p>Let <var>delay</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dom-schedulerposttaskoptions-delay\" id=\"ref-for-dom-schedulerposttaskoptions-delay②\">delay</a></code>\"].</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"schedule-a-posttask-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">schedule a postTask task</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑤\">Scheduler</a></code> <var>scheduler</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#callbackdef-schedulerposttaskcallback\" id=\"ref-for-callbackdef-schedulerposttaskcallback①\">SchedulerPostTaskCallback</a></code> <var>callback</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dictdef-schedulerposttaskoptions\" id=\"ref-for-dictdef-schedulerposttaskoptions①\">SchedulerPostTaskOptions</a></code> <var>options</var>:",
+          "html": "If <var>delay</var> is greater than 0, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#run-steps-after-a-timeout\" id=\"ref-for-run-steps-after-a-timeout\">run steps after a timeout</a> given <var>scheduler</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant\n global object</a>, \"<code>scheduler-postTask</code>\", <var>delay</var>, and the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -226,7 +226,7 @@
           "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#task-handle-queue\" id=\"ref-for-task-handle-queue②\">queue</a> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#select-the-scheduler-task-queue\" id=\"ref-for-select-the-scheduler-task-queue①\">selecting the scheduler task queue</a> for <var>scheduler</var> given <var>state</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#scheduling-state-priority-source\" id=\"ref-for-scheduling-state-priority-source①\">priority source</a> and true.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"schedule-a-yield-continuation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">schedule a yield continuation</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑥\">Scheduler</a></code> <var>scheduler</var> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dictdef-scheduleryieldoptions\" id=\"ref-for-dictdef-scheduleryieldoptions①\">SchedulerYieldOptions</a></code> <var>options</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#schedule-a-task-to-invoke-an-algorithm\" id=\"ref-for-schedule-a-task-to-invoke-an-algorithm①\">Schedule a task to invoke an algorithm</a> for <var>scheduler</var> given <var>handle</var> and the following\n steps:",
           "rationale": "resolve",
           "steps": [
             {
@@ -252,7 +252,7 @@
           "html": "<p>Let <var>inheritedState</var> be the <var>scheduler</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\" id=\"ref-for-relevant-agent①\">relevant agent</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop①\">event loop</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#event-loop-current-scheduling-state\" id=\"ref-for-event-loop-current-scheduling-state②\">current scheduling state</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-scheduling-state-from-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the scheduling state from options</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑦\">Scheduler</a></code> object <var>scheduler</var>,\n  an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal①③\">AbortSignal</a></code> object, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dom-schedulersignalinherit-inherit\" id=\"ref-for-dom-schedulersignalinherit-inherit⑧\">inherit</a></code>\", or null <var>signalOption</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#enumdef-taskpriority\" id=\"ref-for-enumdef-taskpriority①⓪\">TaskPriority</a></code>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dom-schedulersignalinherit-inherit\" id=\"ref-for-dom-schedulersignalinherit-inherit⑨\">inherit</a></code>\", or null <var>priorityOption</var>:",
+          "html": "If <var>signalOption</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dom-schedulersignalinherit-inherit\" id=\"ref-for-dom-schedulersignalinherit-inherit①⓪\">inherit</a></code>\", then:",
           "rationale": "if",
           "steps": [
             {
@@ -264,7 +264,7 @@
           "html": "<p>Otherwise, set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#scheduling-state-abort-source\" id=\"ref-for-scheduling-state-abort-source④\">abort source</a> to <var>signalOption</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-scheduling-state-from-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the scheduling state from options</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑦\">Scheduler</a></code> object <var>scheduler</var>,\n  an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal①③\">AbortSignal</a></code> object, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dom-schedulersignalinherit-inherit\" id=\"ref-for-dom-schedulersignalinherit-inherit⑧\">inherit</a></code>\", or null <var>signalOption</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#enumdef-taskpriority\" id=\"ref-for-enumdef-taskpriority①⓪\">TaskPriority</a></code>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dom-schedulersignalinherit-inherit\" id=\"ref-for-dom-schedulersignalinherit-inherit⑨\">inherit</a></code>\", or null <var>priorityOption</var>:",
+          "html": "If <var>priorityOption</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dom-schedulersignalinherit-inherit\" id=\"ref-for-dom-schedulersignalinherit-inherit①①\">inherit</a></code>\", then:",
           "rationale": "if",
           "steps": [
             {
@@ -293,15 +293,15 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"select-the-scheduler-task-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">select the scheduler task queue</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑧\">Scheduler</a></code> <var>scheduler</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal\" id=\"ref-for-tasksignal①③\">TaskSignal</a></code> object <var>signal</var> and a boolean <var>isContinuation</var>:",
+          "html": "If <var>signal</var> does not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal-has-fixed-priority\" id=\"ref-for-tasksignal-has-fixed-priority\">have fixed priority</a>, then",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"select-the-scheduler-task-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">select the scheduler task queue</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑧\">Scheduler</a></code> <var>scheduler</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal\" id=\"ref-for-tasksignal①③\">TaskSignal</a></code> object <var>signal</var> and a boolean <var>isContinuation</var>:",
+              "html": "If <var>scheduler</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#scheduler-dynamic-priority-task-queue-map\" id=\"ref-for-scheduler-dynamic-priority-task-queue-map①\">dynamic priority task queue map</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">contain</a> (<var>signal</var>, <var>isContinuation</var>), then",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"select-the-scheduler-task-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">select the scheduler task queue</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑧\">Scheduler</a></code> <var>scheduler</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal\" id=\"ref-for-tasksignal①③\">TaskSignal</a></code> object <var>signal</var> and a boolean <var>isContinuation</var>:",
+                  "html": "Let <var>queue</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#create-a-scheduler-task-queue\" id=\"ref-for-create-a-scheduler-task-queue\">creating a scheduler task queue</a> given <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal-priority\" id=\"ref-for-tasksignal-priority③\">priority</a>, <var>isContinuation</var>, and the following steps:",
                   "rationale": "remove",
                   "steps": [
                     {
@@ -313,7 +313,7 @@
                   "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#scheduler-dynamic-priority-task-queue-map\" id=\"ref-for-scheduler-dynamic-priority-task-queue-map③\">dynamic priority task queue map</a>[(<var>signal</var>, <var>isContinuation</var>)] to <var>queue</var>.</p>"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"select-the-scheduler-task-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">select the scheduler task queue</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑧\">Scheduler</a></code> <var>scheduler</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal\" id=\"ref-for-tasksignal①③\">TaskSignal</a></code> object <var>signal</var> and a boolean <var>isContinuation</var>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal-add-a-priority-change-algorithm\" id=\"ref-for-tasksignal-add-a-priority-change-algorithm\">Add a priority change algorithm</a> to <var>signal</var> that runs the following steps:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -329,18 +329,18 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"select-the-scheduler-task-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">select the scheduler task queue</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑧\">Scheduler</a></code> <var>scheduler</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal\" id=\"ref-for-tasksignal①③\">TaskSignal</a></code> object <var>signal</var> and a boolean <var>isContinuation</var>:",
+          "html": "Otherwise",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>priority</var> be <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal-priority\" id=\"ref-for-tasksignal-priority④\">priority</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"select-the-scheduler-task-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">select the scheduler task queue</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑧\">Scheduler</a></code> <var>scheduler</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal\" id=\"ref-for-tasksignal①③\">TaskSignal</a></code> object <var>signal</var> and a boolean <var>isContinuation</var>:",
+              "html": "If <var>scheduler</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#scheduler-static-priority-task-queue-map\" id=\"ref-for-scheduler-static-priority-task-queue-map①\">static priority task queue map</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">contain</a> (<var>priority</var>, <var>isContinuation</var>) , then",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"select-the-scheduler-task-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">select the scheduler task queue</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑧\">Scheduler</a></code> <var>scheduler</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal\" id=\"ref-for-tasksignal①③\">TaskSignal</a></code> object <var>signal</var> and a boolean <var>isContinuation</var>:",
+                  "html": "Let <var>queue</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#create-a-scheduler-task-queue\" id=\"ref-for-create-a-scheduler-task-queue①\">creating a scheduler task queue</a> given <var>priority</var>, <var>isContinuation</var>, and the following steps:",
                   "rationale": "remove",
                   "steps": [
                     {
@@ -382,7 +382,7 @@
           "html": "<p>Increment <var>event loop</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#event-loop-next-enqueue-order\" id=\"ref-for-event-loop-next-enqueue-order①\">next enqueue order</a> by 1.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"schedule-a-task-to-invoke-an-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">schedule a task to invoke an algorithm</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#scheduler\" id=\"ref-for-scheduler⑨\">Scheduler</a></code> <var>scheduler</var> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#task-handle\" id=\"ref-for-task-handle①\">task handle</a> <var>handle</var> and an algorithm <var>steps</var>:",
+          "html": "Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#task-handle-task\" id=\"ref-for-task-handle-task①\">task</a> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#queue-a-scheduler-task\" id=\"ref-for-queue-a-scheduler-task\">queuing a scheduler task</a> on <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#task-handle-queue\" id=\"ref-for-task-handle-queue③\">queue</a> given <var>enqueue order</var>, the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#posted-task-task-source\" id=\"ref-for-posted-task-task-source\">posted task task source</a>, and <var>document</var>,\n and that performs the following steps:",
           "rationale": "run",
           "steps": [
             {
@@ -474,7 +474,7 @@
           "html": "<p>Set <var>resultSignal</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal-dependent\" id=\"ref-for-tasksignal-dependent①\">dependent</a> to true.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-dependent-task-signal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a dependent task signal</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal①⑨\">AbortSignal</a></code> objects <var>signals</var>,\n  a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dictdef-tasksignalanyinit\" id=\"ref-for-dictdef-tasksignalanyinit①\">TaskSignalAnyInit</a></code> <var>init</var>, and a <var>realm</var>:",
+          "html": "If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dom-tasksignalanyinit-priority\" id=\"ref-for-dom-tasksignalanyinit-priority①\">priority</a></code>\"] is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#enumdef-taskpriority\" id=\"ref-for-enumdef-taskpriority②②\">TaskPriority</a></code>, then:",
           "rationale": "set",
           "steps": [
             {
@@ -483,7 +483,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-dependent-task-signal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a dependent task signal</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal①⑨\">AbortSignal</a></code> objects <var>signals</var>,\n  a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dictdef-tasksignalanyinit\" id=\"ref-for-dictdef-tasksignalanyinit①\">TaskSignalAnyInit</a></code> <var>init</var>, and a <var>realm</var>:",
+          "html": "Otherwise:",
           "rationale": "let",
           "steps": [
             {
@@ -493,7 +493,7 @@
               "html": "<p>Set <var>resultSignal</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal-priority\" id=\"ref-for-tasksignal-priority①③\">priority</a> to <var>sourceSignal</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal-priority\" id=\"ref-for-tasksignal-priority①④\">priority</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-dependent-task-signal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a dependent task signal</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal①⑨\">AbortSignal</a></code> objects <var>signals</var>,\n  a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/scheduling-apis/#dictdef-tasksignalanyinit\" id=\"ref-for-dictdef-tasksignalanyinit①\">TaskSignalAnyInit</a></code> <var>init</var>, and a <var>realm</var>:",
+              "html": "If <var>sourceSignal</var> does not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#tasksignal-has-fixed-priority\" id=\"ref-for-tasksignal-has-fixed-priority①\">have fixed priority</a>, then:",
               "rationale": "if",
               "steps": [
                 {

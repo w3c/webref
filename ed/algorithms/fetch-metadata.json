@@ -63,7 +63,7 @@
           "html": "<p>If <var>r</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#navigation-request\" id=\"ref-for-navigation-request\">navigation request</a> that was explicitly caused by a user’s interaction with\nthe user agent (by typing an address into the user agent directly, for example, or by\nclicking a bookmark, etc.), then set <var>header</var>’s value to <code>none</code>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"set-site\" id=\"abstract-opdef-set-site\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the <code>Sec-Fetch-Site</code> header</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑦\">request</a> <var>r</var>:",
+          "html": "If <var>header</var>’s value is not <code>none</code>, then for each <var>url</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url-list\" id=\"ref-for-concept-request-url-list\">url list</a>:",
           "rationale": "if",
           "steps": [
             {

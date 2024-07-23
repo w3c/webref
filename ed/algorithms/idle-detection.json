@@ -39,7 +39,7 @@
           "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"IdleDetector\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-idledetector-requestpermission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestPermission()</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">In parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -77,14 +77,14 @@
           "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"IdleDetector\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"start(options)|start()\" id=\"dom-idledetector-start\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>start(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/idle-detection/#dom-idleoptions-signal\" id=\"ref-for-dom-idleoptions-signal\">signal</a></code>\"] is present, then perform the following sub-steps:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/idle-detection/#dom-idleoptions-signal\" id=\"ref-for-dom-idleoptions-signal①\">signal</a></code>\"] is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>result</var> with <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/idle-detection/#dom-idleoptions-signal\" id=\"ref-for-dom-idleoptions-signal②\">signal</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason\">abort reason</a> and return <var>result</var>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"IdleDetector\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"start(options)|start()\" id=\"dom-idledetector-start\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>start(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">Add the following abort steps</a> to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/idle-detection/#dom-idleoptions-signal\" id=\"ref-for-dom-idleoptions-signal③\">signal</a></code>\"]:",
               "rationale": "set",
               "steps": [
                 {
@@ -98,14 +98,14 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"IdleDetector\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"start(options)|start()\" id=\"dom-idledetector-start\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>start(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">In parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>permissionState</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-state\" id=\"ref-for-dfn-permission-state\">permission state</a> of <code>\"idle-detection\"</code>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"IdleDetector\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"start(options)|start()\" id=\"dom-idledetector-start\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>start(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+              "html": "If <var>permissionState</var> is <code>\"denied\"</code>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/idle-detection/#idle-detection-task-source\" id=\"ref-for-idle-detection-task-source\">idle detection task source</a> to perform the following steps:",
               "rationale": "set",
               "steps": [
                 {
@@ -117,7 +117,7 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"IdleDetector\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"start(options)|start()\" id=\"dom-idledetector-start\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>start(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/idle-detection/#idle-detection-task-source\" id=\"ref-for-idle-detection-task-source①\">idle detection task source</a> to perform the\nfollowing steps, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when\">abort when</a> <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/idle-detection/#dom-idledetector-state-slot\" id=\"ref-for-dom-idledetector-state-slot④\">[[state]]</a></code> becomes <code>\"stopped\"</code>.",
               "rationale": "set",
               "steps": [
                 {

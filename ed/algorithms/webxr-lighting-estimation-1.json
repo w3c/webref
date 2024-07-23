@@ -17,7 +17,7 @@
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/lighting-estimation/#feature-descriptor-light-estimation\" id=\"ref-for-feature-descriptor-light-estimation①\">light-estimation</a> feature descriptor is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contained</a> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features\" id=\"ref-for-xrsession-list-of-enabled-features\">list of enabled features</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestLightProbe(options)|requestLightProbe()\" id=\"dom-xrsession-requestlightprobe\"><code>requestLightProbe(<var>options</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface⑤\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+          "html": "If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ended\" id=\"ref-for-ended\">ended</a> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and abort these steps.",
           "rationale": ".switch",
           "steps": [
             {
@@ -25,7 +25,7 @@
               "steps": [
                 {
                   "case": "If options’s reflectionFormat is \"srgba8\" or matches session’s preferredReflectionFormat:",
-                  "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestLightProbe(options)|requestLightProbe()\" id=\"dom-xrsession-requestlightprobe\"><code>requestLightProbe(<var>options</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface⑤\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+                  "html": "",
                   "rationale": "let",
                   "steps": [
                     {
@@ -44,7 +44,7 @@
                 },
                 {
                   "case": "else",
-                  "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestLightProbe(options)|requestLightProbe()\" id=\"dom-xrsession-requestlightprobe\"><code>requestLightProbe(<var>options</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface⑤\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+                  "html": "",
                   "rationale": "reject",
                   "steps": [
                     {
@@ -83,7 +83,7 @@
           "html": "<p>Let <var>estimate</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/lighting-estimation/#xrlightestimate\" id=\"ref-for-xrlightestimate⑤\">XRLightEstimate</a></code>.</p>"
         },
         {
-          "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-getlightestimate\"><code>getLightEstimate(<var>lightProbe</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑤\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+          "html": "Populate <var>estimate</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/lighting-estimation/#dom-xrlightestimate-sphericalharmonicscoefficients\" id=\"ref-for-dom-xrlightestimate-sphericalharmonicscoefficients③\">sphericalHarmonicsCoefficients</a></code>, with the coefficients provided by <var>device</var>.",
           "rationale": ".switch",
           "steps": [
             {
@@ -91,7 +91,7 @@
               "steps": [
                 {
                   "case": "If device has an estimated direction for the light source",
-                  "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-getlightestimate\"><code>getLightEstimate(<var>lightProbe</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑤\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+                  "html": "",
                   "rationale": "set",
                   "steps": [
                     {
@@ -101,7 +101,7 @@
                 },
                 {
                   "case": "else",
-                  "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-getlightestimate\"><code>getLightEstimate(<var>lightProbe</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑤\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+                  "html": "",
                   "rationale": "set",
                   "steps": [
                     {
@@ -114,7 +114,7 @@
           ],
           "additional": [
             {
-              "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-getlightestimate\"><code>getLightEstimate(<var>lightProbe</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑤\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+              "html": "Populate <var>estimate</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/lighting-estimation/#dom-xrlightestimate-sphericalharmonicscoefficients\" id=\"ref-for-dom-xrlightestimate-sphericalharmonicscoefficients③\">sphericalHarmonicsCoefficients</a></code>, with the coefficients provided by <var>device</var>.",
               "rationale": ".switch",
               "steps": [
                 {
@@ -122,7 +122,7 @@
                   "steps": [
                     {
                       "case": "If device has an estimated intensity for the light source",
-                      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-getlightestimate\"><code>getLightEstimate(<var>lightProbe</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑤\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+                      "html": "",
                       "rationale": "set",
                       "steps": [
                         {
@@ -132,7 +132,7 @@
                     },
                     {
                       "case": "else",
-                      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-getlightestimate\"><code>getLightEstimate(<var>lightProbe</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑤\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+                      "html": "",
                       "rationale": "set",
                       "steps": [
                         {

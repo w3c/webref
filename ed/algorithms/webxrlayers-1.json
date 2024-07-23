@@ -84,7 +84,7 @@
           "html": "<p>Let <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrquadlayer-space\" id=\"ref-for-dom-xrquadlayer-space③\">space</a></code> be the <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerinit-space\" id=\"ref-for-dom-xrlayerinit-space\">space</a></code>.</p>"
         },
         {
-          "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"initialize a quad layer\" data-noexport=\"\" id=\"initialize-a-quad-layer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initializing an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrquadlayer\" id=\"ref-for-xrquadlayer①\">XRQuadLayer</a></code> <var>layer</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dictdef-xrquadlayerinit\" id=\"ref-for-dictdef-xrquadlayerinit\">XRQuadLayerInit</a></code> <var>init</var></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, the user agent MUST run the following steps:",
+          "html": "Initialize <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrquadlayer-transform\" id=\"ref-for-dom-xrquadlayer-transform②\">transform</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -126,7 +126,7 @@
           "html": "<p>Let <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrcylinderlayer-space\" id=\"ref-for-dom-xrcylinderlayer-space③\">space</a></code> be the <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerinit-space\" id=\"ref-for-dom-xrlayerinit-space①\">space</a></code>.</p>"
         },
         {
-          "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"initialize a cylinder layer\" data-noexport=\"\" id=\"initialize-a-cylinder-layer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initializing an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrcylinderlayer\" id=\"ref-for-xrcylinderlayer①\">XRCylinderLayer</a></code> <var>layer</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dictdef-xrcylinderlayerinit\" id=\"ref-for-dictdef-xrcylinderlayerinit\">XRCylinderLayerInit</a></code> <var>init</var></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, the user agent MUST run the following steps:",
+          "html": "Initialize <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrcylinderlayer-transform\" id=\"ref-for-dom-xrcylinderlayer-transform②\">transform</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -187,7 +187,7 @@
           "html": "<p>Let <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrequirectlayer-space\" id=\"ref-for-dom-xrequirectlayer-space③\">space</a></code> be the <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerinit-space\" id=\"ref-for-dom-xrlayerinit-space④\">space</a></code>.</p>"
         },
         {
-          "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"initialize a equirect layer\" data-noexport=\"\" id=\"initialize-a-equirect-layer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initializing an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrequirectlayer\" id=\"ref-for-xrequirectlayer②\">XREquirectLayer</a></code> <var>layer</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dictdef-xrequirectlayerinit\" id=\"ref-for-dictdef-xrequirectlayerinit\">XREquirectLayerInit</a></code> <var>init</var></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, the user agent MUST run the following steps:",
+          "html": "Initialize <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrequirectlayer-transform\" id=\"ref-for-dom-xrequirectlayer-transform②\">transform</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -274,7 +274,7 @@
           "html": "<p>If <var>layout</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-mono\" id=\"ref-for-dom-xrlayerlayout-mono②\">\"mono\"</a></code>, return <var>layout</var> and abort these steps.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-layout-attribute\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the layout attribute</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype⑤\">XRTextureType</a></code> <var>textureType</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#typedefdef-xrwebglrenderingcontext\" id=\"ref-for-typedefdef-xrwebglrenderingcontext②\">XRWebGLRenderingContext</a></code> <var>context</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrlayerlayout\" id=\"ref-for-enumdef-xrlayerlayout④\">XRLayerLayout</a></code> <var>layout</var>, the user agent MUST run the following steps:",
+          "html": "If <var>layout</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-default\" id=\"ref-for-dom-xrlayerlayout-default③\">\"default\"</a></code>, run the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -286,7 +286,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-the-layout-attribute\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the layout attribute</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype⑤\">XRTextureType</a></code> <var>textureType</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#typedefdef-xrwebglrenderingcontext\" id=\"ref-for-typedefdef-xrwebglrenderingcontext②\">XRWebGLRenderingContext</a></code> <var>context</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrlayerlayout\" id=\"ref-for-enumdef-xrlayerlayout④\">XRLayerLayout</a></code> <var>layout</var>, the user agent MUST run the following steps:",
+          "html": "If <var>layout</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-default\" id=\"ref-for-dom-xrlayerlayout-default④\">\"default\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-stereo\" id=\"ref-for-dom-xrlayerlayout-stereo④\">\"stereo\"</a></code> and <var>textureType</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrtexturetype-texture\" id=\"ref-for-dom-xrtexturetype-texture①\">\"texture\"</a></code>, run the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -362,7 +362,7 @@
           "html": "<p>If <var>textureFormat</var> is not in the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#list-of-color-formats-for-projection-layers\" id=\"ref-for-list-of-color-formats-for-projection-layers\">list of color formats for projection layers</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①\">NotSupportedError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-color-textures-for-projection-layers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate color textures for projection layers</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer①⑤\">XRProjectionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype⑥\">XRTextureType</a></code> <var>textureType</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.1\" id=\"ref-for-5.1④\">GLenum</a></code> <var>textureFormat</var> and a float <var>scaleFactor</var>, the user agent MUST run the following steps:",
+          "html": "If <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrcompositionlayer-layout\" id=\"ref-for-dom-xrcompositionlayer-layout①\">layout</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-mono\" id=\"ref-for-dom-xrlayerlayout-mono④\">\"mono\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-default\" id=\"ref-for-dom-xrlayerlayout-default⑤\">\"default\"</a></code>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -374,7 +374,7 @@
                 },
                 {
                   "case": "Otherwise",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-color-textures-for-projection-layers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate color textures for projection layers</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer①⑤\">XRProjectionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype⑥\">XRTextureType</a></code> <var>textureType</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.1\" id=\"ref-for-5.1④\">GLenum</a></code> <var>textureFormat</var> and a float <var>scaleFactor</var>, the user agent MUST run the following steps:",
+                  "html": "For each <var>view</var> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑧\">list of views</a>:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -449,7 +449,7 @@
           "html": "<p>Let <var>height</var> be the height of <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#recommended-webgl-depth-texture-resolution\" id=\"ref-for-recommended-webgl-depth-texture-resolution①\">recommended WebGL depth texture resolution</a> multiplied by <var>scaleFactor</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-depth-textures-for-projection-layers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate depth textures for projection layers</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer①⑥\">XRProjectionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype⑦\">XRTextureType</a></code> <var>textureType</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.1\" id=\"ref-for-5.1⑤\">GLenum</a></code> <var>textureFormat</var> and a float <var>scaleFactor</var>, the user agent MUST run the following steps:",
+          "html": "If <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrcompositionlayer-layout\" id=\"ref-for-dom-xrcompositionlayer-layout④\">layout</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-mono\" id=\"ref-for-dom-xrlayerlayout-mono⑤\">\"mono\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-default\" id=\"ref-for-dom-xrlayerlayout-default⑥\">\"default\"</a></code>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -461,7 +461,7 @@
                 },
                 {
                   "case": "Otherwise",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-depth-textures-for-projection-layers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate depth textures for projection layers</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer①⑥\">XRProjectionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype⑦\">XRTextureType</a></code> <var>textureType</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.1\" id=\"ref-for-5.1⑤\">GLenum</a></code> <var>textureFormat</var> and a float <var>scaleFactor</var>, the user agent MUST run the following steps:",
+                  "html": "For each <var>view</var> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views①②\">list of views</a>:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -533,7 +533,7 @@
           "html": "<p>Let <var>height</var> be the height of <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#recommended-motion-vector-texture-resolution\" id=\"ref-for-recommended-motion-vector-texture-resolution①\">recommended motion vector texture resolution</a> multiplied by <var>scaleFactor</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-motion-vector-textures-for-projection-layers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate motion vector textures for projection layers</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer①⑦\">XRProjectionLayer</a></code> <var>layer</var>, the user agent MUST run the following steps:",
+          "html": "If <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrcompositionlayer-layout\" id=\"ref-for-dom-xrcompositionlayer-layout⑦\">layout</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-mono\" id=\"ref-for-dom-xrlayerlayout-mono⑥\">\"mono\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-default\" id=\"ref-for-dom-xrlayerlayout-default⑦\">\"default\"</a></code>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -545,7 +545,7 @@
                 },
                 {
                   "case": "Otherwise",
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-motion-vector-textures-for-projection-layers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate motion vector textures for projection layers</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer①⑦\">XRProjectionLayer</a></code> <var>layer</var>, the user agent MUST run the following steps:",
+                  "html": "For each <var>view</var> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views①⑥\">list of views</a>:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -602,7 +602,7 @@
           "html": "<p>If <var>textureFormat</var> is not in the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#list-of-color-formats-for-projection-layers\" id=\"ref-for-list-of-color-formats-for-projection-layers①\">list of color formats for projection layers</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑦\">NotSupportedError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-the-color-textures-for-the-secondary-views\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate the color textures for the secondary views</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer①⑧\">XRProjectionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype⑧\">XRTextureType</a></code> <var>textureType</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.1\" id=\"ref-for-5.1⑥\">GLenum</a></code> <var>textureFormat</var> and a float <var>scaleFactor</var>, the user agent MUST run the following steps:",
+          "html": "For each <var>view</var> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views①⑧\">list of views</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -615,7 +615,7 @@
               "html": "<p>Let <var>height</var> be the height of <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#recommended-webgl-color-texture-resolution\" id=\"ref-for-recommended-webgl-color-texture-resolution①①\">recommended WebGL color texture resolution</a> multiplied by <var>scaleFactor</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-the-color-textures-for-the-secondary-views\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate the color textures for the secondary views</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer①⑧\">XRProjectionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype⑧\">XRTextureType</a></code> <var>textureType</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.1\" id=\"ref-for-5.1⑥\">GLenum</a></code> <var>textureFormat</var> and a float <var>scaleFactor</var>, the user agent MUST run the following steps:",
+              "html": "Initialize <var>texture</var> as follows:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -668,7 +668,7 @@
           "html": "<p>Let <var>array</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new②⑤\">new</a> array in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②⑤\">relevant realm</a> of <var>context</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-the-depth-textures-for-the-secondary-views\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate the depth textures for the secondary views</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer①⑨\">XRProjectionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype⑨\">XRTextureType</a></code> <var>textureType</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.1\" id=\"ref-for-5.1⑦\">GLenum</a></code> <var>textureFormat</var> and a float <var>scaleFactor</var>, the user agent MUST run the following steps:",
+          "html": "For each <var>view</var> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views①⑨\">list of views</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -681,7 +681,7 @@
               "html": "<p>Let <var>height</var> be the height of <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#recommended-webgl-depth-texture-resolution\" id=\"ref-for-recommended-webgl-depth-texture-resolution⑤\">recommended WebGL depth texture resolution</a> multiplied by <var>scaleFactor</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-the-depth-textures-for-the-secondary-views\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate the depth textures for the secondary views</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer①⑨\">XRProjectionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype⑨\">XRTextureType</a></code> <var>textureType</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.1\" id=\"ref-for-5.1⑦\">GLenum</a></code> <var>textureFormat</var> and a float <var>scaleFactor</var>, the user agent MUST run the following steps:",
+              "html": "Initialize <var>texture</var> as follows:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -731,7 +731,7 @@
           "html": "<p>If <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerinit-miplevels\" id=\"ref-for-dom-xrlayerinit-miplevels⑥\">mipLevels</a></code> is larger than <code>1</code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerinit-viewpixelwidth\" id=\"ref-for-dom-xrlayerinit-viewpixelwidth①\">viewPixelWidth</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerinit-viewpixelheight\" id=\"ref-for-dom-xrlayerinit-viewpixelheight①\">viewPixelHeight</a></code> are not powers of <code>2</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code> and abort these steps</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-color-textures\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate color textures</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrcompositionlayer\" id=\"ref-for-xrcompositionlayer②②\">XRCompositionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype①⓪\">XRTextureType</a></code> <var>textureType</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dictdef-xrlayerinit\" id=\"ref-for-dictdef-xrlayerinit⑥\">XRLayerInit</a></code> <var>init</var>, the user agent MUST run the following steps:",
+          "html": "If <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrcompositionlayer-layout\" id=\"ref-for-dom-xrcompositionlayer-layout①⓪\">layout</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-mono\" id=\"ref-for-dom-xrlayerlayout-mono⑦\">\"mono\"</a></code>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -750,7 +750,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-color-textures\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate color textures</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrcompositionlayer\" id=\"ref-for-xrcompositionlayer②②\">XRCompositionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype①⓪\">XRTextureType</a></code> <var>textureType</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dictdef-xrlayerinit\" id=\"ref-for-dictdef-xrlayerinit⑥\">XRLayerInit</a></code> <var>init</var>, the user agent MUST run the following steps:",
+          "html": "If <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrcompositionlayer-layout\" id=\"ref-for-dom-xrcompositionlayer-layout①①\">layout</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-stereo\" id=\"ref-for-dom-xrlayerlayout-stereo⑤\">\"stereo\"</a></code>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -804,7 +804,7 @@
           "html": "<p>If <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerinit-miplevels\" id=\"ref-for-dom-xrlayerinit-miplevels①④\">mipLevels</a></code> is larger than <code>1</code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerinit-viewpixelwidth\" id=\"ref-for-dom-xrlayerinit-viewpixelwidth⑧\">viewPixelWidth</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerinit-viewpixelheight\" id=\"ref-for-dom-xrlayerinit-viewpixelheight⑧\">viewPixelHeight</a></code> are not powers of <code>2</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-depth-textures\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate depth textures</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrcompositionlayer\" id=\"ref-for-xrcompositionlayer②③\">XRCompositionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype①①\">XRTextureType</a></code> <var>textureType</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dictdef-xrlayerinit\" id=\"ref-for-dictdef-xrlayerinit⑦\">XRLayerInit</a></code> <var>init</var>, the user agent MUST run the following steps:",
+          "html": "If <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrcompositionlayer-layout\" id=\"ref-for-dom-xrcompositionlayer-layout①④\">layout</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-mono\" id=\"ref-for-dom-xrlayerlayout-mono⑧\">\"mono\"</a></code>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -823,7 +823,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allocate-depth-textures\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allocate depth textures</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> using an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrcompositionlayer\" id=\"ref-for-xrcompositionlayer②③\">XRCompositionLayer</a></code> <var>layer</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrtexturetype\" id=\"ref-for-enumdef-xrtexturetype①①\">XRTextureType</a></code> <var>textureType</var> and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dictdef-xrlayerinit\" id=\"ref-for-dictdef-xrlayerinit⑦\">XRLayerInit</a></code> <var>init</var>, the user agent MUST run the following steps:",
+          "html": "If <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrcompositionlayer-layout\" id=\"ref-for-dom-xrcompositionlayer-layout①⑤\">layout</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-stereo\" id=\"ref-for-dom-xrlayerlayout-stereo⑥\">\"stereo\"</a></code>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -880,7 +880,7 @@
           "html": "<p>Initialize <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#xrcompositionlayer-isstatic\" id=\"ref-for-xrcompositionlayer-isstatic④\">isStatic</a> to <code>false</code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"createProjectionLayer(init)|createProjectionLayer()\" id=\"dom-xrwebglbinding-createprojectionlayer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createProjectionLayer(optional XRProjectionLayerInit <var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer②⓪\">XRProjectionLayer</a></code> <var>layer</var>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+          "html": "Initialize <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrprojectionlayer-ignoredepthvalues\" id=\"ref-for-dom-xrprojectionlayer-ignoredepthvalues①\">ignoreDepthValues</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -926,7 +926,7 @@
           "html": "<p>let <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#motionvectortextures\" id=\"ref-for-motionvectortextures\">motionVectorTextures</a> be the result of <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#allocate-motion-vector-textures-for-projection-layers\" id=\"ref-for-allocate-motion-vector-textures-for-projection-layers\">allocating motion vector textures for projection layers</a> with <var>layer</var>, <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrprojectionlayerinit-depthformat\" id=\"ref-for-dom-xrprojectionlayerinit-depthformat④\">depthFormat</a></code> and <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrprojectionlayerinit-scalefactor\" id=\"ref-for-dom-xrprojectionlayerinit-scalefactor⑤\">scaleFactor</a></code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"createProjectionLayer(init)|createProjectionLayer()\" id=\"dom-xrwebglbinding-createprojectionlayer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createProjectionLayer(optional XRProjectionLayerInit <var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer②⓪\">XRProjectionLayer</a></code> <var>layer</var>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+          "html": "Initialize the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer-colortextures-for-secondary-views\" id=\"ref-for-xrprojectionlayer-colortextures-for-secondary-views\">colortextures for secondary views</a> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -945,7 +945,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"createProjectionLayer(init)|createProjectionLayer()\" id=\"dom-xrwebglbinding-createprojectionlayer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createProjectionLayer(optional XRProjectionLayerInit <var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer②⓪\">XRProjectionLayer</a></code> <var>layer</var>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+          "html": "Initialize the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer-depthstenciltextures-for-secondary-views\" id=\"ref-for-xrprojectionlayer-depthstenciltextures-for-secondary-views\">depthstenciltextures for secondary views</a> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1197,7 +1197,7 @@
           "html": "<p>Initialize <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#xrcompositionlayer-isstatic\" id=\"ref-for-xrcompositionlayer-isstatic⑤\">isStatic</a> to <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerinit-isstatic\" id=\"ref-for-dom-xrlayerinit-isstatic③\">isStatic</a></code></p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"createCubeLayer(init)|createCubeLayer()\" id=\"dom-xrwebglbinding-createcubelayer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createCubeLayer(XRCubeLayerInit <var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrcubelayer\" id=\"ref-for-xrcubelayer⑧\">XRCubeLayer</a></code> <var>layer</var>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+          "html": "Initialize <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrcubelayer-orientation\" id=\"ref-for-dom-xrcubelayer-orientation②\">orientation</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1228,7 +1228,7 @@
           "html": "<p>Let <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#colortextures\" id=\"ref-for-colortextures①①\">colorTextures</a> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑤①\">new</a> array in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑤①\">relevant realm</a> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrcubelayer\" id=\"ref-for-xrcubelayer①⓪\">XRCubeLayer</a></code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"createCubeLayer(init)|createCubeLayer()\" id=\"dom-xrwebglbinding-createcubelayer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createCubeLayer(XRCubeLayerInit <var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrcubelayer\" id=\"ref-for-xrcubelayer⑧\">XRCubeLayer</a></code> <var>layer</var>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+          "html": "Initialize <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#colortextures\" id=\"ref-for-colortextures①②\">colorTextures</a> as follows, based on the value of <var>layout</var>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1253,7 +1253,7 @@
           "html": "<p>Let <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#motionvectortextures\" id=\"ref-for-motionvectortextures④\">motionVectorTextures</a> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑤⑤\">new</a> array in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑤⑤\">relevant realm</a> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrcubelayer\" id=\"ref-for-xrcubelayer①④\">XRCubeLayer</a></code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"createCubeLayer(init)|createCubeLayer()\" id=\"dom-xrwebglbinding-createcubelayer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>createCubeLayer(XRCubeLayerInit <var>init</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrcubelayer\" id=\"ref-for-xrcubelayer⑧\">XRCubeLayer</a></code> <var>layer</var>. \n    <p>When this method is invoked, the user agent MUST run the following steps:</p>",
+          "html": "If <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerinit-depthformat\" id=\"ref-for-dom-xrlayerinit-depthformat①⓪\">depthFormat</a></code> is set, initialize <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#depthstenciltextures\" id=\"ref-for-depthstenciltextures⑥\">depthStencilTextures</a> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1334,7 +1334,7 @@
           "html": "<p>Set <var>viewport</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrviewport-height\" id=\"ref-for-dom-xrviewport-height\">height</a></code> to the pixelh eight of <var>texture</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-the-viewport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize the viewport</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrviewport\" id=\"ref-for-xrviewport②\">XRViewport</a></code> <var>viewport</var> with a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#opaque-texture\" id=\"ref-for-opaque-texture⑤⓪\">opaque texture</a> <var>texture</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#enumdef-xrlayerlayout\" id=\"ref-for-enumdef-xrlayerlayout⑥\">XRLayerLayout</a></code> <var>layout</var>, an integer <var>offset</var> and a integer <var>num</var>, the user agent MUST run the following steps:",
+          "html": "Update <var>viewport</var> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1361,7 +1361,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getSubImage(layer, frame, eye)|getSubImage(layer, frame)\" id=\"dom-xrwebglbinding-getsubimage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getSubImage(XRCompositionLayer <var>layer</var>, XRFrame <var>frame</var>, optional XREye <var>eye</var> = <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xreye-none\" id=\"ref-for-dom-xreye-none\">\"none\"</a></code>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglsubimage\" id=\"ref-for-xrwebglsubimage⑥\">XRWebGLSubImage</a></code>. \n    <p>When this method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding①⑧\">XRWebGLBinding</a></code> <var>binding</var>, it MUST run the following steps:</p>",
+          "html": "Initialize <var>subimage</var> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1395,7 +1395,7 @@
           "html": "<p>Let <var>index</var> be <code>0</code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getSubImage(layer, frame, eye)|getSubImage(layer, frame)\" id=\"dom-xrwebglbinding-getsubimage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getSubImage(XRCompositionLayer <var>layer</var>, XRFrame <var>frame</var>, optional XREye <var>eye</var> = <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xreye-none\" id=\"ref-for-dom-xreye-none\">\"none\"</a></code>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglsubimage\" id=\"ref-for-xrwebglsubimage⑥\">XRWebGLSubImage</a></code>. \n    <p>When this method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding①⑧\">XRWebGLBinding</a></code> <var>binding</var>, it MUST run the following steps:</p>",
+          "html": "If <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrcompositionlayer-layout\" id=\"ref-for-dom-xrcompositionlayer-layout②③\">layout</a></code> attribute is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrlayerlayout-stereo\" id=\"ref-for-dom-xrlayerlayout-stereo⑦\">\"stereo\"</a></code>:",
           "rationale": "if",
           "steps": [
             {
@@ -1410,7 +1410,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#validate-the-state-of-the-xrwebglsubimage-creation-function\" id=\"ref-for-validate-the-state-of-the-xrwebglsubimage-creation-function\">validate the state of the XRWebGLSubImage creation function</a> with <var>layer</var> and <var>frame</var> is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑨\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getSubImage(layer, frame, eye)|getSubImage(layer, frame)\" id=\"dom-xrwebglbinding-getsubimage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getSubImage(XRCompositionLayer <var>layer</var>, XRFrame <var>frame</var>, optional XREye <var>eye</var> = <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xreye-none\" id=\"ref-for-dom-xreye-none\">\"none\"</a></code>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglsubimage\" id=\"ref-for-xrwebglsubimage⑥\">XRWebGLSubImage</a></code>. \n    <p>When this method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding①⑧\">XRWebGLBinding</a></code> <var>binding</var>, it MUST run the following steps:</p>",
+          "html": "Initialize <var>subimage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrwebglsubimage-imageindex\" id=\"ref-for-dom-xrwebglsubimage-imageindex①\">imageIndex</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1429,7 +1429,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getSubImage(layer, frame, eye)|getSubImage(layer, frame)\" id=\"dom-xrwebglbinding-getsubimage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getSubImage(XRCompositionLayer <var>layer</var>, XRFrame <var>frame</var>, optional XREye <var>eye</var> = <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xreye-none\" id=\"ref-for-dom-xreye-none\">\"none\"</a></code>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglsubimage\" id=\"ref-for-xrwebglsubimage⑥\">XRWebGLSubImage</a></code>. \n    <p>When this method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding①⑧\">XRWebGLBinding</a></code> <var>binding</var>, it MUST run the following steps:</p>",
+          "html": "Initialize <var>subimage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrwebglsubimage-colortexture\" id=\"ref-for-dom-xrwebglsubimage-colortexture②\">colorTexture</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1448,7 +1448,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getSubImage(layer, frame, eye)|getSubImage(layer, frame)\" id=\"dom-xrwebglbinding-getsubimage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getSubImage(XRCompositionLayer <var>layer</var>, XRFrame <var>frame</var>, optional XREye <var>eye</var> = <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xreye-none\" id=\"ref-for-dom-xreye-none\">\"none\"</a></code>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglsubimage\" id=\"ref-for-xrwebglsubimage⑥\">XRWebGLSubImage</a></code>. \n    <p>When this method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding①⑧\">XRWebGLBinding</a></code> <var>binding</var>, it MUST run the following steps:</p>",
+          "html": "Initialize <var>subimage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrwebglsubimage-depthstenciltexture\" id=\"ref-for-dom-xrwebglsubimage-depthstenciltexture①\">depthStencilTexture</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1509,7 +1509,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getViewSubImage(layer, view)\" id=\"dom-xrwebglbinding-getviewsubimage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getViewSubImage(XRProjectionLayer <var>layer</var>, XRView <var>view</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglsubimage\" id=\"ref-for-xrwebglsubimage⑨\">XRWebGLSubImage</a></code>. \n    <p>When this method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding①⑨\">XRWebGLBinding</a></code> <var>binding</var>, it MUST run the following steps:</p>",
+          "html": "Initialize <var>subimage</var> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1543,7 +1543,7 @@
           "html": "<p>If <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#view-active\" id=\"ref-for-view-active\">active</a> flag is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②①\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getViewSubImage(layer, view)\" id=\"dom-xrwebglbinding-getviewsubimage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getViewSubImage(XRProjectionLayer <var>layer</var>, XRView <var>view</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglsubimage\" id=\"ref-for-xrwebglsubimage⑨\">XRWebGLSubImage</a></code>. \n    <p>When this method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding①⑨\">XRWebGLBinding</a></code> <var>binding</var>, it MUST run the following steps:</p>",
+          "html": "Initialize <var>index</var> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1562,7 +1562,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getViewSubImage(layer, view)\" id=\"dom-xrwebglbinding-getviewsubimage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getViewSubImage(XRProjectionLayer <var>layer</var>, XRView <var>view</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglsubimage\" id=\"ref-for-xrwebglsubimage⑨\">XRWebGLSubImage</a></code>. \n    <p>When this method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding①⑨\">XRWebGLBinding</a></code> <var>binding</var>, it MUST run the following steps:</p>",
+          "html": "Initialize <var>subimage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrwebglsubimage-imageindex\" id=\"ref-for-dom-xrwebglsubimage-imageindex④\">imageIndex</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1581,7 +1581,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getViewSubImage(layer, view)\" id=\"dom-xrwebglbinding-getviewsubimage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getViewSubImage(XRProjectionLayer <var>layer</var>, XRView <var>view</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglsubimage\" id=\"ref-for-xrwebglsubimage⑨\">XRWebGLSubImage</a></code>. \n    <p>When this method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding①⑨\">XRWebGLBinding</a></code> <var>binding</var>, it MUST run the following steps:</p>",
+          "html": "Initialize <var>subimage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrwebglsubimage-colortexture\" id=\"ref-for-dom-xrwebglsubimage-colortexture⑧\">colorTexture</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1604,7 +1604,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getViewSubImage(layer, view)\" id=\"dom-xrwebglbinding-getviewsubimage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getViewSubImage(XRProjectionLayer <var>layer</var>, XRView <var>view</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglsubimage\" id=\"ref-for-xrwebglsubimage⑨\">XRWebGLSubImage</a></code>. \n    <p>When this method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding①⑨\">XRWebGLBinding</a></code> <var>binding</var>, it MUST run the following steps:</p>",
+          "html": "Initialize <var>subimage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrwebglsubimage-depthstenciltexture\" id=\"ref-for-dom-xrwebglsubimage-depthstenciltexture⑨\">depthStencilTexture</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1631,7 +1631,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getViewSubImage(layer, view)\" id=\"dom-xrwebglbinding-getviewsubimage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getViewSubImage(XRProjectionLayer <var>layer</var>, XRView <var>view</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglsubimage\" id=\"ref-for-xrwebglsubimage⑨\">XRWebGLSubImage</a></code>. \n    <p>When this method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrwebglbinding\" id=\"ref-for-xrwebglbinding①⑨\">XRWebGLBinding</a></code> <var>binding</var>, it MUST run the following steps:</p>",
+          "html": "Initialize <var>subimage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#dom-xrwebglsubimage-motionvectortexture\" id=\"ref-for-dom-xrwebglsubimage-motionvectortexture②\">motionVectorTexture</a></code> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -1918,7 +1918,7 @@
           "html": "<p>Let <var>activeState</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#active-render-state\" id=\"ref-for-active-render-state\">active render state</a>.</p>"
         },
         {
-          "html": "This module replaces the steps given by \"<a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#layers-update-the-pending-layers-state\" id=\"ref-for-layers-update-the-pending-layers-state\">update the pending layers state</a>\" from the WebXR specification. Instead when the user agent will <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"layers\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"layers-update-the-pending-layers-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the pending layers state</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession①⑥\">XRSession</a></code> <var>session</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dictdef-xrrenderstateinit\" id=\"ref-for-dictdef-xrrenderstateinit②\">XRRenderStateInit</a></code> <var>newState</var>, it must run the following steps:",
+          "html": "If <var>newState</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-baselayer\" id=\"ref-for-dom-xrrenderstateinit-baselayer①\">baseLayer</a></code> is set:",
           "rationale": "if",
           "steps": [
             {
@@ -1930,7 +1930,7 @@
           ]
         },
         {
-          "html": "This module replaces the steps given by \"<a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#layers-update-the-pending-layers-state\" id=\"ref-for-layers-update-the-pending-layers-state\">update the pending layers state</a>\" from the WebXR specification. Instead when the user agent will <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"layers\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"layers-update-the-pending-layers-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the pending layers state</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession①⑥\">XRSession</a></code> <var>session</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dictdef-xrrenderstateinit\" id=\"ref-for-dictdef-xrrenderstateinit②\">XRRenderStateInit</a></code> <var>newState</var>, it must run the following steps:",
+          "html": "If <var>newState</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-layers\" id=\"ref-for-dom-xrrenderstateinit-layers⑤\">layers</a></code> is set:",
           "rationale": "if",
           "steps": [
             {
@@ -1943,7 +1943,7 @@
               "html": "<p>If <var>newState</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-layers\" id=\"ref-for-dom-xrrenderstateinit-layers⑦\">layers</a></code> contains duplicate instances, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②④\">TypeError</a></code> and abort these steps.</p>"
             },
             {
-              "html": "This module replaces the steps given by \"<a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#layers-update-the-pending-layers-state\" id=\"ref-for-layers-update-the-pending-layers-state\">update the pending layers state</a>\" from the WebXR specification. Instead when the user agent will <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"layers\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"layers-update-the-pending-layers-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the pending layers state</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession①⑥\">XRSession</a></code> <var>session</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dictdef-xrrenderstateinit\" id=\"ref-for-dictdef-xrrenderstateinit②\">XRRenderStateInit</a></code> <var>newState</var>, it must run the following steps:",
+              "html": "For each <var>layer</var> in <var>newState</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-layers\" id=\"ref-for-dom-xrrenderstateinit-layers⑧\">layers</a></code>:",
               "rationale": "if",
               "steps": [
                 {

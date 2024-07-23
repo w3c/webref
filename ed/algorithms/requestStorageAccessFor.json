@@ -47,7 +47,7 @@
           "html": "<p>Let <var>has activation</var> be true if <var>doc</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code> object has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, and false otherwise.</p>"
         },
         {
-          "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>doc</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString②\">USVString</a></code> <var>requestedOrigin</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-document-requeststorageaccessfor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestStorageAccessFor(requestedOrigin)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method must run these steps:",
+          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -60,7 +60,7 @@
               "html": "<p>Let <var>existing state</var> be <var>descriptor</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-state\" id=\"ref-for-dfn-permission-state\">permission state</a> with <var>settings</var>.</p>"
             },
             {
-              "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>doc</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString②\">USVString</a></code> <var>requestedOrigin</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-document-requeststorageaccessfor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestStorageAccessFor(requestedOrigin)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method must run these steps:",
+              "html": "If <var>existing state</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-granted\" id=\"ref-for-dfn-granted\">granted</a>:",
               "rationale": "queue",
               "steps": [
                 {
@@ -72,7 +72,7 @@
               ]
             },
             {
-              "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>doc</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString②\">USVString</a></code> <var>requestedOrigin</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-document-requeststorageaccessfor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestStorageAccessFor(requestedOrigin)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method must run these steps:",
+              "html": "If <var>existing state</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-denied\" id=\"ref-for-dfn-denied\">denied</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -90,7 +90,7 @@
               "html": "<p>Assert that <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①\">node navigable</a> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#traversable-navigable\" id=\"ref-for-traversable-navigable③\">traversable navigable</a>.</p>"
             },
             {
-              "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>doc</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString②\">USVString</a></code> <var>requestedOrigin</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-document-requeststorageaccessfor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestStorageAccessFor(requestedOrigin)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method must run these steps:",
+              "html": "If <var>has activation</var> is false:",
               "rationale": "queue",
               "steps": [
                 {
@@ -105,7 +105,7 @@
               "html": "<p>Let <var>permissionState</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">requesting permission to use</a> \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/requestStorageAccessFor/#permissiondef-top-level-storage-access\" id=\"ref-for-permissiondef-top-level-storage-access①\"><code>top-level-storage-access</code></a>\" with <var>descriptor</var>.</p>"
             },
             {
-              "html": "When invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>doc</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString②\">USVString</a></code> <var>requestedOrigin</var>, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-document-requeststorageaccessfor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestStorageAccessFor(requestedOrigin)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method must run these steps:",
+              "html": "If <var>permissionState</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-granted\" id=\"ref-for-dfn-granted①\">granted</a>:",
               "rationale": "queue",
               "steps": [
                 {

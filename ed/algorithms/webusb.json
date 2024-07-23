@@ -342,7 +342,7 @@
           "html": "<p>Let <var>configurationDescriptors</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty②\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-list-of-configuration-descriptors-for-the-connected-usb-device\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a list of configuration descriptors for the connected USB device</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>,\n    perform the following steps:",
+          "html": "While <var>configurationIndex</var> is less than <var>numConfigurations</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -383,7 +383,7 @@
           "html": "<p>Let <var>currAlternateInterface</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/webusb/#find-the-alternate-interface-for-the-current-alternate-setting\" id=\"ref-for-find-the-alternate-interface-for-the-current-alternate-setting\">finding the alternate interface for the current alternate setting</a> with <var>interface</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"abort-transfers-currently-scheduled-on-an-interface\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">abort transfers currently scheduled on an interface</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>interface</var> object,\n    perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>endpoint</var> of <var>currAlternateInterface</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbalternateinterface-endpoints-slot\" id=\"ref-for-dom-usbalternateinterface-endpoints-slot\">[[endpoints]]</a></code>:",
           "rationale": "abort",
           "steps": [
             {
@@ -403,7 +403,7 @@
           "html": "<p>Let <var>interfaceIndex</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-interface-index\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the interface index</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>interfaceNumber</var> and <var>configuration</var> object,\n    perform the following steps:",
+          "html": "While <var>interfaceIndex</var> is less than the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> of <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbconfiguration-interfaces-slot\" id=\"ref-for-dom-usbconfiguration-interfaces-slot\">[[interfaces]]</a></code>:",
           "rationale": "if",
           "steps": [
             {
@@ -429,7 +429,7 @@
           "html": "<p>Let <var>alternateIndex</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-alternate-index\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the alternate index</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>alternateSetting</var> and <var>interface</var> object,\n    perform the following steps:",
+          "html": "While <var>alternateIndex</var> is less than the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> of <var>interface</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbinterface-alternates-slot\" id=\"ref-for-dom-usbinterface-alternates-slot\">[[alternates]]</a></code>:",
           "rationale": "if",
           "steps": [
             {
@@ -452,7 +452,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-current-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the current configuration</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>device</var> object,\n    perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>configuration</var> of <var>device</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbdevice-configurations-slot\" id=\"ref-for-dom-usbdevice-configurations-slot\">[[configurations]]</a></code>:",
           "rationale": "if",
           "steps": [
             {
@@ -478,7 +478,7 @@
           "html": "<p>If <var>configuration</var> is <code>null</code>, return <code>null</code>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-endpoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the endpoint</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>endpointAddress</var> and <var>device</var> object,\n    perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>interface</var> of <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbconfiguration-interfaces-slot\" id=\"ref-for-dom-usbconfiguration-interfaces-slot②\">[[interfaces]]</a></code>:",
           "rationale": "if",
           "steps": [
             {
@@ -488,7 +488,7 @@
               "html": "<p>Let <var>alternate</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/webusb/#find-the-alternate-interface-for-the-current-alternate-setting\" id=\"ref-for-find-the-alternate-interface-for-the-current-alternate-setting①\">finding the alternate interface for the current alternate setting</a> with <var>interface</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-endpoint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the endpoint</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>endpointAddress</var> and <var>device</var> object,\n    perform the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>endpoint</var> of <var>alternate</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbalternateinterface-endpoints-slot\" id=\"ref-for-dom-usbalternateinterface-endpoints-slot①\">[[endpoints]]</a></code>:",
               "rationale": "if",
               "steps": [
                 {
@@ -664,7 +664,7 @@
           "html": "<p>Let <var>selectedConfiguration</var> be <code>null</code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"USBDevice\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-usbdevice-selectconfiguration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>selectConfiguration(<var>configurationValue</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method,\n    when invoked, MUST return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects⑥\">Promise</a></code> <var>promise</var> and run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in\n    parallel</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>configuration</var> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbdevice-configurations-slot\" id=\"ref-for-dom-usbdevice-configurations-slot③\">[[configurations]]</a></code>:",
           "rationale": "if",
           "steps": [
             {
@@ -682,11 +682,11 @@
           "html": "<p>Let <var>activeConfiguration</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/webusb/#find-the-current-configuration\" id=\"ref-for-find-the-current-configuration③\">finding the current configuration</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"USBDevice\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-usbdevice-selectconfiguration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>selectConfiguration(<var>configurationValue</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method,\n    when invoked, MUST return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects⑥\">Promise</a></code> <var>promise</var> and run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in\n    parallel</a>:",
+          "html": "If <var>activeConfiguration</var> is not <code>null</code>.",
           "rationale": "for",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"USBDevice\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-usbdevice-selectconfiguration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>selectConfiguration(<var>configurationValue</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method,\n    when invoked, MUST return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects⑥\">Promise</a></code> <var>promise</var> and run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in\n    parallel</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>interface</var> of <var>activeConfiguration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbconfiguration-interfaces-slot\" id=\"ref-for-dom-usbconfiguration-interfaces-slot④\">[[interfaces]]</a></code>:",
               "rationale": "abort",
               "steps": [
                 {
@@ -1075,7 +1075,7 @@
           "html": "<p>Enqueue an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/webusb/#isochronous-transfers\" id=\"ref-for-isochronous-transfers\">isochronous IN transfer</a> on <var>endpoint</var> that will write up to <var>length</var> bytes of data from the device\ninto <var>buffer</var>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"USBDevice\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-usbdevice-isochronoustransferin\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>isochronousTransferIn(<var>endpointNumber</var>, <var>packetLengths</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method,\n    when invoked, MUST return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑤\">Promise</a></code> <var>promise</var> and run the following\n    steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①④\">in parallel</a>:",
+          "html": "For each packet <var>i</var> from <code>0</code> to <code><var>packetLengths</var>.length -\n1</code>:",
           "rationale": "let",
           "steps": [
             {
@@ -1131,7 +1131,7 @@
           "html": "<p>Enqueue an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/webusb/#isochronous-transfers\" id=\"ref-for-isochronous-transfers①\">isochronous OUT transfer</a> on <var>endpoint</var> that will write <var>data</var> to the device, divided into <code><var>packetLength</var>.length</code> packets of <code><var>packetLength</var>[i]</code> bytes (for packets <var>i</var> from <code>0</code> to <code><var>packetLengths</var>.length - 1</code>).</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"USBDevice\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-usbdevice-isochronoustransferout\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>isochronousTransferOut(<var>endpointNumber</var>, <var>data</var>, <var>packetLengths</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method,\n    when invoked, MUST return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑥\">Promise</a></code> <var>promise</var> and run the\n    following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑤\">in parallel</a>:",
+          "html": "For each packet <var>i</var> from <code>0</code> to <code><var>packetLengths</var>.length -\n1</code> the host attempts to send to the device:",
           "rationale": "let",
           "steps": [
             {
@@ -1195,7 +1195,7 @@
           "html": "<p>If <var>configuration</var> is <code>null</code>, abort these steps.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-the-validity-of-the-control-transfer-parameters\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check the validity of the control transfer parameters</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>device</var>, perform the following steps:",
+          "html": "If <code><var>setup</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-recipient\" id=\"ref-for-dom-usbcontroltransferparameters-recipient②\">recipient</a></code></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbrecipient-interface\" id=\"ref-for-dom-usbrecipient-interface①\">\"interface\"</a></code>, perform the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -1216,7 +1216,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-the-validity-of-the-control-transfer-parameters\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check the validity of the control transfer parameters</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>device</var>, perform the following steps:",
+          "html": "If <code><var>setup</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-recipient\" id=\"ref-for-dom-usbcontroltransferparameters-recipient③\">recipient</a></code></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbrecipient-endpoint\" id=\"ref-for-dom-usbrecipient-endpoint\">\"endpoint\"</a></code>, run the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -1257,7 +1257,7 @@
           "html": "<p>Let <var>configurationIndex</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-list-of-descriptors-for-a-configuration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a list of descriptors for a configuration</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>configurationValue</var>,\n    perform the following steps:",
+          "html": "While <var>configurationIndex</var> is less than <var>numConfigurations</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1295,7 +1295,7 @@
           "html": "<p>Let <var>seen</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">ordered set</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"USBConfiguration\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"USBConfiguration(device, configurationValue)|constructor(device, configurationValue)\" id=\"dom-usbconfiguration-usbconfiguration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>USBConfiguration(<var>device</var>, <var>configurationValue</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor MUST, when called, perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>descriptor</var> of <var>descriptors</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1370,7 +1370,7 @@
           "html": "<p>Let <var>alternateIndex</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-alternate-interface-for-the-current-alternate-setting\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the alternate interface for the current alternate setting</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>interface</var>,\n    perform the following steps:",
+          "html": "If the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/webusb/#find-if-the-interface-is-claimed\" id=\"ref-for-find-if-the-interface-is-claimed④\">finding if the interface is claimed</a> with <var>interface</var> is <code>true</code>:",
           "rationale": "let",
           "steps": [
             {
@@ -1408,7 +1408,7 @@
           "html": "<p>Let <var>descriptors</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/webusb/#find-a-list-of-descriptors-for-a-configuration\" id=\"ref-for-find-a-list-of-descriptors-for-a-configuration①\">finding a list of descriptors for a configuration</a> with <code>configurationValue</code> set to <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbconfiguration-configurationvalue-slot\" id=\"ref-for-dom-usbconfiguration-configurationvalue-slot③\">[[configurationValue]]</a></code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"USBInterface\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"USBInterface(configuration, interfaceNumber)|constructor(configuration, interfaceNumber)\" id=\"dom-usbinterface-usbinterface\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>USBInterface(<var>configuration</var>, <var>interfaceNumber</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor MUST, when called, perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>descriptor</var> of <var>descriptors</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1490,7 +1490,7 @@
           "html": "<p>Let <var>index</var> be 0.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-list-of-endpoint-descriptors\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a list of endpoint descriptors</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>alternateSetting</var> , <var>interfaceNumber</var>, and <var>configurationValue</var>, perform the following steps:",
+          "html": "While <var>index</var> is less than the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④\">size</a> of <var>descriptors</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1518,7 +1518,7 @@
               "html": "<p>Let <var>offset</var> be <var>index</var> + 1</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-list-of-endpoint-descriptors\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a list of endpoint descriptors</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>alternateSetting</var> , <var>interfaceNumber</var>, and <var>configurationValue</var>, perform the following steps:",
+              "html": "While <var>indexEndpoints</var> is less than <var>numEndpoints</var>:",
               "rationale": "append",
               "steps": [
                 {
@@ -1552,7 +1552,7 @@
           "html": "<p>Let <var>descriptors</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/webusb/#find-a-list-of-endpoint-descriptors\" id=\"ref-for-find-a-list-of-endpoint-descriptors\">finding a list of endpoint descriptors</a> with <code>interfaceNumber</code> set to <var>deviceInterface</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbinterface-interfacenumber\" id=\"ref-for-dom-usbinterface-interfacenumber③\">interfaceNumber</a></code>, <code>alternateSetting</code> set to <var>alternateSetting</var>,\nand <code>configurationValue</code> set to <var>deviceInterface</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbinterface-configuration-slot\" id=\"ref-for-dom-usbinterface-configuration-slot④\">[[configuration]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbconfiguration-configurationvalue-slot\" id=\"ref-for-dom-usbconfiguration-configurationvalue-slot④\">[[configurationValue]]</a></code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"USBAlternateInterface\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"USBAlternateInterface(deviceInterface, alternateSetting)|constructor(deviceInterface, alternateSetting)\" id=\"dom-usbalternateinterface-usbalternateinterface\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>USBAlternateInterface(<var>deviceInterface</var>, <var>alternateSetting</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor MUST, when called, perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>descriptor</var> of <var>descriptors</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1604,7 +1604,7 @@
           "html": "<p>Let <var>endpointDescriptors</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/webusb/#find-a-list-of-endpoint-descriptors\" id=\"ref-for-find-a-list-of-endpoint-descriptors①\">finding a list of endpoint descriptors</a> with <code>alternateSetting</code> set to <var>alternateInterface</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbalternateinterface-alternatesetting\" id=\"ref-for-dom-usbalternateinterface-alternatesetting②\">alternateSetting</a></code>, <code>interfaceNumber</code> set to <var>interface</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbinterface-interfacenumber\" id=\"ref-for-dom-usbinterface-interfacenumber④\">interfaceNumber</a></code>, and <code>configurationValue</code> set to <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webusb/#dom-usbconfiguration-configurationvalue\" id=\"ref-for-dom-usbconfiguration-configurationvalue②\">configurationValue</a></code>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-endpoint-descriptor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the endpoint descriptor</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with the given <var>endpoint</var> object,\n    perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>endpointDescriptor</var> of <var>endpointDescriptors</var>:",
           "rationale": "if",
           "steps": [
             {

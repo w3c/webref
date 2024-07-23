@@ -44,7 +44,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a> the <var>animatorDefinitions</var>[<var>name</var>] to <var>definition</var>.</p>"
         },
         {
-          "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AnimationWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-animationworkletglobalscope-registeranimator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerAnimator(<var>name</var>, <var>animatorCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is called in a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope④\">AnimationWorkletGlobalScope</a></code>, the user agent <em>must</em> run the\nfollowing steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> to run the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -54,7 +54,7 @@
               "html": "<p>Let <var>documentDefinition</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#document-animator-definition\" id=\"ref-for-document-animator-definition\">document animator definition</a> with:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-definition-stateful-flag\" id=\"ref-for-animator-definition-stateful-flag②\">stateful flag</a> being <var>stateful</var></p>\n        </li></ul>"
             },
             {
-              "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AnimationWorkletGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-animationworkletglobalscope-registeranimator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>registerAnimator(<var>name</var>, <var>animatorCtor</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is called in a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope④\">AnimationWorkletGlobalScope</a></code>, the user agent <em>must</em> run the\nfollowing steps:",
+              "html": "If <var>documentAnimatorDefinitions</var>[<var>name</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, run the following steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -131,7 +131,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-animators\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run animators</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> in a given <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+          "html": "Iterate over all <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-instance\" id=\"ref-for-animator-instance⑥\">animator instance</a>s in the <var>workletGlobalScope</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-instance-set\" id=\"ref-for-animator-instance-set①\">animator instance\nset</a>. For each such <var>animator</var> the user agent <em>must</em> perform the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -143,7 +143,7 @@
           ],
           "additional": [
             {
-              "html": "When the user agent wants to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-animators\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run animators</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> in a given <var>workletGlobalScope</var>, it <em>must</em> run the following steps:",
+              "html": "If <var>definition</var> does not exist then abort the following steps.",
               "rationale": "if",
               "steps": [
                 {
@@ -191,7 +191,7 @@
           "html": "<p>Let <var>serializedState</var> be undefined.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"migrate-an-animator-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">migrate an animator instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from one <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope①②\">AnimationWorkletGlobalScope</a></code> to another,\ngiven <var>animator</var>, <var>sourceWorkletGlobalScope</var>, <var>destinationWorkletGlobalScope</var>, the user agent <em>must</em> run the following steps :",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">Queue a task</a> on <var>sourceWorkletGlobalScope</var> to run the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -224,7 +224,7 @@
           "html": "<p>Wait for the above task to complete. If the task is aborted, abort the following steps.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"migrate-an-animator-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">migrate an animator instance</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from one <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope①②\">AnimationWorkletGlobalScope</a></code> to another,\ngiven <var>animator</var>, <var>sourceWorkletGlobalScope</var>, <var>destinationWorkletGlobalScope</var>, the user agent <em>must</em> run the following steps :",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">Queue a task</a> on <var>destinationWorkletGlobalScope</var> to run the following steps:",
           "rationale": "run",
           "steps": [
             {
@@ -279,7 +279,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sync-local-times-to-document\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sync local times to document</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <var>workletGlobalScope</var> the user agent <em>must</em> perform the action that corresponds to the first matching condition from the\nfollowing:",
+          "html": "Iterate over all <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-instance\" id=\"ref-for-animator-instance①④\">animator instance</a>s in the animation worklet’s global scope <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animator-instance-set\" id=\"ref-for-animator-instance-set④\">animator instance set</a>. For each such <var>animator</var> perform the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -317,7 +317,7 @@
           "html": "<p>Let <var>workletGlobalScope</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope\" id=\"ref-for-animationworkletglobalscope①③\">AnimationWorkletGlobalScope</a></code> associated with <var>workletAnimation</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sync-animation-timings-to-worklet\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sync animation timings to worklet</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <var>workletAnimation</var> the user agent <em>must</em> perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④\">queue a task</a> to run the following steps:",
           "rationale": "set",
           "steps": [
             {

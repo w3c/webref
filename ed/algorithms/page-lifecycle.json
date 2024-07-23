@@ -26,7 +26,7 @@
           "html": "<p>Let <var>auto resume media</var> be false.</p>"
         },
         {
-          "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"update-document-frozenness-steps\">update document frozenness steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>document</var>:",
+          "html": "If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#execution-while-not-rendered\" id=\"ref-for-execution-while-not-rendered①\"><code>execution-while-not-rendered</code></a>\" feature, then:",
           "rationale": "if",
           "steps": [
             {
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"update-document-frozenness-steps\">update document frozenness steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤\">Document</a></code> <var>document</var>:",
+          "html": "Otherwise if <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use①\">allowed to use</a> the \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#execution-while-out-of-viewport\" id=\"ref-for-execution-while-out-of-viewport①\"><code>execution-while-out-of-viewport</code></a>\" feature, then:",
           "rationale": "if",
           "steps": [
             {
@@ -201,7 +201,7 @@
           "html": "<p>Let <var>descendants</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#list-of-the-descendant-browsing-contexts\" id=\"ref-for-list-of-the-descendant-browsing-contexts\">list of the descendant browsing contexts</a> of <var>doc</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"change-the-frozenness-of-a-top-level-document\">change the frozenness of a top-level document</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> <var>topLevelDoc</var> and boolean <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#document-frozenness\" id=\"ref-for-document-frozenness④\">frozenness</a> state <var>frozenness</var>:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\" id=\"ref-for-browsing-context\">browsing context</a> <var>b</var> in <var>descendants</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -244,11 +244,11 @@
           "html": "<p>Let <var>elements</var> be all <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#media-element\" id=\"ref-for-media-element\">media elements</a> that are <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-descendant\" id=\"ref-for-concept-shadow-including-descendant\">shadow-including descendants</a> of <var>doc</var>, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order\">shadow-including tree order</a>.</p>"
         },
         {
-          "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"freeze-steps\">freeze steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①①\">Document</a></code> <var>doc</var>, given a boolean <var>auto resume frozen media</var>:",
+          "html": "For each <var>element</var> in <var>elements</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"freeze-steps\">freeze steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①①\">Document</a></code> <var>doc</var>, given a boolean <var>auto resume frozen media</var>:",
+              "html": "If <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#dom-media-paused\" id=\"ref-for-dom-media-paused\">paused</a></code> is false, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -270,15 +270,15 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resume-steps\">resume steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①②\">Document</a></code> <var>doc</var>:",
+          "html": "Let <var>elements</var> be all <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#media-element\" id=\"ref-for-media-element①\">media elements</a> that are <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-descendant\" id=\"ref-for-concept-shadow-including-descendant①\">shadow-including descendants</a> of <var>doc</var>, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order①\">shadow-including tree order</a>.",
           "rationale": "for",
           "steps": [
             {
-              "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resume-steps\">resume steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①②\">Document</a></code> <var>doc</var>:",
+              "html": "For each <var>element</var> in <var>elements</var>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resume-steps\">resume steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①②\">Document</a></code> <var>doc</var>:",
+                  "html": "If <var>elements</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/page-lifecycle/#htmlmediaelement-resume-frozen-flag\" id=\"ref-for-htmlmediaelement-resume-frozen-flag①\">resume frozen flag</a> is true.",
                   "rationale": "set",
                   "steps": [
                     {

@@ -20,7 +20,7 @@
           "html": "<p>Let <var>trackedMeshs</var> be a result of calling into <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/real-world-meshing/#native-mesh-detection\" id=\"ref-for-native-mesh-detection①\">native mesh detection</a> capability to obtain tracked meshes at <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrframe-time\" id=\"ref-for-xrframe-time\">time</a>.</p>"
         },
         {
-          "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-meshes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update meshes</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <var>frame</var>, the user agent MUST run the following steps:",
+          "html": "For each <var>native mesh</var> in <var>trackedMeshs</var>, run:",
           "rationale": "if",
           "steps": [
             {
