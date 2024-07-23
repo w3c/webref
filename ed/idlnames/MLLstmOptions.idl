@@ -8,5 +8,5 @@ dictionary MLLstmOptions {
   boolean returnSequence = false;
   MLRecurrentNetworkDirection direction = "forward";
   MLLstmWeightLayout layout = "iofg";
-  sequence<MLActivation> activations;
+  sequence<MLRecurrentNetworkActivation> activations;
 };

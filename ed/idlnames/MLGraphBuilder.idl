@@ -100,7 +100,6 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand elu(MLOperand input, optional MLEluOptions options = {});
-  MLActivation elu(optional MLEluOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -118,7 +117,6 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand gelu(MLOperand input);
-  MLActivation gelu();
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -149,13 +147,11 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand hardSigmoid(MLOperand input, optional MLHardSigmoidOptions options = {});
-  MLActivation hardSigmoid(optional MLHardSigmoidOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand hardSwish(MLOperand input);
-  MLActivation hardSwish();
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -173,13 +169,11 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand leakyRelu(MLOperand input, optional MLLeakyReluOptions options = {});
-  MLActivation leakyRelu(optional MLLeakyReluOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand linear(MLOperand input, optional MLLinearOptions options = {});
-  MLActivation linear(optional MLLinearOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -245,7 +239,6 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand relu(MLOperand input);
-  MLActivation relu();
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -261,7 +254,6 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand sigmoid(MLOperand input);
-  MLActivation sigmoid();
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -279,13 +271,11 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand softplus(MLOperand input);
-  MLActivation softplus();
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand softsign(MLOperand input);
-  MLActivation softsign();
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -299,7 +289,6 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand tanh(MLOperand input);
-  MLActivation tanh();
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)

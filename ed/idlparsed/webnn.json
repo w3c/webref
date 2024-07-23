@@ -18,15 +18,13 @@
           "ML",
           "MLContext",
           "MLGraph",
-          "MLOperand",
-          "MLActivation"
+          "MLOperand"
         ],
         "DedicatedWorker": [
           "ML",
           "MLContext",
           "MLGraph",
-          "MLOperand",
-          "MLActivation"
+          "MLOperand"
         ]
       }
     },
@@ -740,39 +738,6 @@
         },
         "extAttrs": [],
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnumber"
-      },
-      "MLActivation": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLActivation {};",
-        "type": "interface",
-        "name": "MLActivation",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "DedicatedWorker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://webmachinelearning.github.io/webnn/#mlactivation"
       },
       "MLNamedOperands": {
         "fragment": "typedef record<USVString, MLOperand> MLNamedOperands;",
@@ -1893,6 +1858,30 @@
         "extAttrs": [],
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlgruweightlayout"
       },
+      "MLRecurrentNetworkActivation": {
+        "fragment": "enum MLRecurrentNetworkActivation {\n  \"relu\",\n  \"sigmoid\",\n  \"tanh\"\n};",
+        "type": "enum",
+        "name": "MLRecurrentNetworkActivation",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "relu",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlrecurrentnetworkactivation-relu"
+          },
+          {
+            "type": "enum-value",
+            "value": "sigmoid",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlrecurrentnetworkactivation-sigmoid"
+          },
+          {
+            "type": "enum-value",
+            "value": "tanh",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlrecurrentnetworkactivation-tanh"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlrecurrentnetworkactivation"
+      },
       "MLRecurrentNetworkDirection": {
         "fragment": "enum MLRecurrentNetworkDirection {\n  \"forward\",\n  \"backward\",\n  \"both\"\n};",
         "type": "enum",
@@ -1918,7 +1907,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlrecurrentnetworkdirection"
       },
       "MLGruOptions": {
-        "fragment": "dictionary MLGruOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand initialHiddenState;\n  boolean resetAfter = true;\n  boolean returnSequence = false;\n  MLRecurrentNetworkDirection direction = \"forward\";\n  MLGruWeightLayout layout = \"zrn\";\n  sequence<MLActivation> activations;\n};",
+        "fragment": "dictionary MLGruOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand initialHiddenState;\n  boolean resetAfter = true;\n  boolean returnSequence = false;\n  MLRecurrentNetworkDirection direction = \"forward\";\n  MLGruWeightLayout layout = \"zrn\";\n  sequence<MLRecurrentNetworkActivation> activations;\n};",
         "type": "dictionary",
         "name": "MLGruOptions",
         "inheritance": null,
@@ -2064,7 +2053,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "MLActivation"
+                  "idlType": "MLRecurrentNetworkActivation"
                 }
               ]
             },
@@ -2078,7 +2067,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgruoptions"
       },
       "MLGruCellOptions": {
-        "fragment": "dictionary MLGruCellOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  boolean resetAfter = true;\n  MLGruWeightLayout layout = \"zrn\";\n  sequence<MLActivation> activations;\n};",
+        "fragment": "dictionary MLGruCellOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  boolean resetAfter = true;\n  MLGruWeightLayout layout = \"zrn\";\n  sequence<MLRecurrentNetworkActivation> activations;\n};",
         "type": "dictionary",
         "name": "MLGruCellOptions",
         "inheritance": null,
@@ -2170,7 +2159,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "MLActivation"
+                  "idlType": "MLRecurrentNetworkActivation"
                 }
               ]
             },
@@ -2506,7 +2495,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mllstmweightlayout"
       },
       "MLLstmOptions": {
-        "fragment": "dictionary MLLstmOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand peepholeWeight;\n  MLOperand initialHiddenState;\n  MLOperand initialCellState;\n  boolean returnSequence = false;\n  MLRecurrentNetworkDirection direction = \"forward\";\n  MLLstmWeightLayout layout = \"iofg\";\n  sequence<MLActivation> activations;\n};",
+        "fragment": "dictionary MLLstmOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand peepholeWeight;\n  MLOperand initialHiddenState;\n  MLOperand initialCellState;\n  boolean returnSequence = false;\n  MLRecurrentNetworkDirection direction = \"forward\";\n  MLLstmWeightLayout layout = \"iofg\";\n  sequence<MLRecurrentNetworkActivation> activations;\n};",
         "type": "dictionary",
         "name": "MLLstmOptions",
         "inheritance": null,
@@ -2665,7 +2654,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "MLActivation"
+                  "idlType": "MLRecurrentNetworkActivation"
                 }
               ]
             },
@@ -2679,7 +2668,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmoptions"
       },
       "MLLstmCellOptions": {
-        "fragment": "dictionary MLLstmCellOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand peepholeWeight;\n  MLLstmWeightLayout layout = \"iofg\";\n  sequence<MLActivation> activations;\n};",
+        "fragment": "dictionary MLLstmCellOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand peepholeWeight;\n  MLLstmWeightLayout layout = \"iofg\";\n  sequence<MLRecurrentNetworkActivation> activations;\n};",
         "type": "dictionary",
         "name": "MLLstmCellOptions",
         "inheritance": null,
@@ -2768,7 +2757,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "MLActivation"
+                  "idlType": "MLRecurrentNetworkActivation"
                 }
               ]
             },
@@ -5125,7 +5114,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand elu(MLOperand input, optional MLEluOptions options = {});\n  MLActivation elu(optional MLEluOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand elu(MLOperand input, optional MLEluOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -5180,41 +5169,6 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-elu"
-            },
-            {
-              "type": "operation",
-              "name": "elu",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLEluOptions"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-elu-options"
             }
           ],
           "extAttrs": [],
@@ -5373,7 +5327,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gelu(MLOperand input);\n  MLActivation gelu();\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gelu(MLOperand input);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -5410,22 +5364,6 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-gelu"
-            },
-            {
-              "type": "operation",
-              "name": "gelu",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#gelu-noargs"
             }
           ],
           "extAttrs": [],
@@ -5789,7 +5727,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand hardSigmoid(MLOperand input, optional MLHardSigmoidOptions options = {});\n  MLActivation hardSigmoid(optional MLHardSigmoidOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand hardSigmoid(MLOperand input, optional MLHardSigmoidOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -5844,48 +5782,13 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-hardsigmoid"
-            },
-            {
-              "type": "operation",
-              "name": "hardSigmoid",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLHardSigmoidOptions"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-hardsigmoid-options"
             }
           ],
           "extAttrs": [],
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand hardSwish(MLOperand input);\n  MLActivation hardSwish();\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand hardSwish(MLOperand input);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -5922,22 +5825,6 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-hardswish"
-            },
-            {
-              "type": "operation",
-              "name": "hardSwish",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#hardswish-noargs"
             }
           ],
           "extAttrs": [],
@@ -6066,7 +5953,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand leakyRelu(MLOperand input, optional MLLeakyReluOptions options = {});\n  MLActivation leakyRelu(optional MLLeakyReluOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand leakyRelu(MLOperand input, optional MLLeakyReluOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -6121,48 +6008,13 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-leakyrelu"
-            },
-            {
-              "type": "operation",
-              "name": "leakyRelu",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLLeakyReluOptions"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-leakyrelu-options"
             }
           ],
           "extAttrs": [],
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand linear(MLOperand input, optional MLLinearOptions options = {});\n  MLActivation linear(optional MLLinearOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand linear(MLOperand input, optional MLLinearOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -6217,41 +6069,6 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-linear"
-            },
-            {
-              "type": "operation",
-              "name": "linear",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLLinearOptions"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-linear-options"
             }
           ],
           "extAttrs": [],
@@ -7489,7 +7306,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand relu(MLOperand input);\n  MLActivation relu();\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand relu(MLOperand input);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -7526,22 +7343,6 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-relu"
-            },
-            {
-              "type": "operation",
-              "name": "relu",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#relu-noargs"
             }
           ],
           "extAttrs": [],
@@ -7684,7 +7485,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand sigmoid(MLOperand input);\n  MLActivation sigmoid();\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand sigmoid(MLOperand input);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -7721,22 +7522,6 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-sigmoid"
-            },
-            {
-              "type": "operation",
-              "name": "sigmoid",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#sigmoid-noargs"
             }
           ],
           "extAttrs": [],
@@ -7909,7 +7694,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softplus(MLOperand input);\n  MLActivation softplus();\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softplus(MLOperand input);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -7946,29 +7731,13 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softplus"
-            },
-            {
-              "type": "operation",
-              "name": "softplus",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#softplus-noargs"
             }
           ],
           "extAttrs": [],
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softsign(MLOperand input);\n  MLActivation softsign();\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softsign(MLOperand input);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -8005,22 +7774,6 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softsign"
-            },
-            {
-              "type": "operation",
-              "name": "softsign",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#softsign-noargs"
             }
           ],
           "extAttrs": [],
@@ -8153,7 +7906,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand tanh(MLOperand input);\n  MLActivation tanh();\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand tanh(MLOperand input);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -8190,22 +7943,6 @@
               "extAttrs": [],
               "special": "",
               "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-tanh"
-            },
-            {
-              "type": "operation",
-              "name": "tanh",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLActivation"
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://webmachinelearning.github.io/webnn/#tanh-noargs"
             }
           ],
           "extAttrs": [],
@@ -8417,7 +8154,6 @@
         "MLContext",
         "MLGraph",
         "MLOperand",
-        "MLActivation",
         "MLGraphBuilder"
       ],
       "DedicatedWorker": [
@@ -8425,7 +8161,6 @@
         "MLContext",
         "MLGraph",
         "MLOperand",
-        "MLActivation",
         "MLGraphBuilder"
       ]
     },
@@ -8463,7 +8198,6 @@
       "MLOperand": [
         "MLOperandDataType"
       ],
-      "MLActivation": [],
       "MLGraphBuilder": [
         "MLContext",
         "MLOperand",
@@ -8479,7 +8213,6 @@
         "MLConv2dOptions",
         "MLConvTranspose2dOptions",
         "MLEluOptions",
-        "MLActivation",
         "MLGatherOptions",
         "MLGemmOptions",
         "MLGruOptions",
@@ -8525,12 +8258,12 @@
         "MLOperand",
         "MLRecurrentNetworkDirection",
         "MLGruWeightLayout",
-        "MLActivation"
+        "MLRecurrentNetworkActivation"
       ],
       "MLGruCellOptions": [
         "MLOperand",
         "MLGruWeightLayout",
-        "MLActivation"
+        "MLRecurrentNetworkActivation"
       ],
       "MLHardSigmoidOptions": [],
       "MLInstanceNormalizationOptions": [
@@ -8546,12 +8279,12 @@
         "MLOperand",
         "MLRecurrentNetworkDirection",
         "MLLstmWeightLayout",
-        "MLActivation"
+        "MLRecurrentNetworkActivation"
       ],
       "MLLstmCellOptions": [
         "MLOperand",
         "MLLstmWeightLayout",
-        "MLActivation"
+        "MLRecurrentNetworkActivation"
       ],
       "MLPadOptions": [
         "MLPaddingMode",

@@ -4,5 +4,5 @@ dictionary MLLstmCellOptions {
   MLOperand recurrentBias;
   MLOperand peepholeWeight;
   MLLstmWeightLayout layout = "iofg";
-  sequence<MLActivation> activations;
+  sequence<MLRecurrentNetworkActivation> activations;
 };

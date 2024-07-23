@@ -4,5 +4,5 @@ dictionary MLGruCellOptions {
   MLOperand recurrentBias;
   boolean resetAfter = true;
   MLGruWeightLayout layout = "zrn";
-  sequence<MLActivation> activations;
+  sequence<MLRecurrentNetworkActivation> activations;
 };

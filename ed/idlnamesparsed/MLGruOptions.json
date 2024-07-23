@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLGruOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand initialHiddenState;\n  boolean resetAfter = true;\n  boolean returnSequence = false;\n  MLRecurrentNetworkDirection direction = \"forward\";\n  MLGruWeightLayout layout = \"zrn\";\n  sequence<MLActivation> activations;\n};",
+    "fragment": "dictionary MLGruOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand initialHiddenState;\n  boolean resetAfter = true;\n  boolean returnSequence = false;\n  MLRecurrentNetworkDirection direction = \"forward\";\n  MLGruWeightLayout layout = \"zrn\";\n  sequence<MLRecurrentNetworkActivation> activations;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgruoptions"
   },
   "extended": [],
