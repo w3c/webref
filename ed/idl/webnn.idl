@@ -99,6 +99,7 @@ interface MLGraphBuilder {
 
 dictionary MLArgMinMaxOptions {
   boolean keepDimensions = false;
+  MLOperandDataType outputDataType = "int32";
 };
 
 partial interface MLGraphBuilder {
