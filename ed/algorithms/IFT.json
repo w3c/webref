@@ -207,6 +207,9 @@
       "rationale": "if",
       "steps": [
         {
+          "html": "<p>If <var>H</var> is greater than the \"Maximum Height\" in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IFT/Overview.html#branch-factor-encoding\" id=\"ref-for-branch-factor-encoding①\">Branch Factor Encoding</a> table in the row for <var>B</var> then,\n the encoding is invalid, return an error.</p>"
+        },
+        {
           "html": "<p>If <var>H</var> is equal to 0, then this is an empty set and no bytes of <var>treeData</var> are consumed. Return an empty set.</p>"
         },
         {
@@ -217,6 +220,9 @@
         },
         {
           "html": "<p><var>treeData</var> is interpreted as a string of bits where the least significant bit of <var>treeData</var>[0] is the first bit in\n the string, the most significant bit of <var>treeData</var>[0] is the 8th bit, and so on.</p>"
+        },
+        {
+          "html": "<p>If in the following steps a value is added to <var>S</var> which is larger than the maximum unicode code point value (0x10FFFF) then,\n ignore the value and do not add it to <var>S</var>.</p>"
         },
         {
           "html": "<p>If <var>Q</var> is empty return <var>S</var>.</p>"
@@ -234,7 +240,7 @@
           "html": "<p>For each <i>v<sub>i</sub></i> which is equal to 1 in <i>v<sub>1</sub></i> through <i>v<sub>B</sub></i>:\n If <var>depth</var> is equal to <var>H</var> add\n integer <var>start</var> + <i>i</i> - 1 to <var>S</var>. Otherwise, insert the tuple\n (<var>start</var> + (i - 1) * <var>B</var><sup><var>H</var> - <var>depth</var></sup>, <var>depth</var> + 1)\n into <var>Q</var>.</p>"
         },
         {
-          "html": "<p>Go to step 5.</p>"
+          "html": "<p>Go to step 7.</p>"
         }
       ]
     },
