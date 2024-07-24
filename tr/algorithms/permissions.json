@@ -152,7 +152,7 @@
           "html": "Let <var>feature</var> be <var data-type=\"PermissionDescriptor\">descriptor</var>'s <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor-name\" class=\"internalDFN\" id=\"ref-for-dom-permissiondescriptor-name-3\"><code>name</code></a>."
         },
         {
-          "html": "A <var data-type=\"PermissionDescriptor\">descriptor</var>'s <dfn class=\"export\" data-export=\"\" data-plurals=\"permission states\" id=\"dfn-permission-state\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">permission state</dfn>, given an optional\n            <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\">environment settings object</a> <var>settings</var> is the result of the following algorithm.\n            It returns a <a data-link-type=\"idl\" data-lt=\"PermissionState\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate\" class=\"internalDFN\" id=\"ref-for-dom-permissionstate-4\"><code>PermissionState</code></a> enum value:",
+          "html": "If there exists a <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\">policy-controlled feature</a> for <var>feature</var> and\n            <var>settings</var>' <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> has an <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a> run the\n            following step:",
           "rationale": "let",
           "steps": [
             {
@@ -219,7 +219,7 @@
           "html": "If <var data-type=\"PermissionDescriptor\">descriptor</var>'s <a href=\"https://www.w3.org/TR/permissions/#dfn-permission-state\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-permission-state-14\">permission state</a> is \"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-granted\" class=\"internalDFN\" id=\"ref-for-dom-permissionstate-granted-5\"><code>granted</code></a>\", the\n            user agent may return one (or more if <var data-type=\"boolean\">allowMultiple</var> is true) of <var>options</var> chosen by\n            the user and abort these steps. If the user agent returns without prompting, then\n            subsequent <a data-lt=\"prompt the user to choose\" href=\"https://www.w3.org/TR/permissions/#dfn-prompt-the-user-to-choose\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prompt-the-user-to-choose-1\">prompts for the user to choose</a>\n            from the same set of options with the same <var data-type=\"PermissionDescriptor\">descriptor</var> must return the same option(s),\n            unless the user agent receives <a href=\"https://www.w3.org/TR/permissions/#dfn-new-information-about-the-user-s-intent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-new-information-about-the-user-s-intent-3\">new information about the user's intent</a>."
         },
         {
-          "html": "To <dfn data-lt=\"prompt the user to choose|prompting the user to choose\" class=\"export\" data-export=\"\" id=\"dfn-prompt-the-user-to-choose\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">prompt the user to choose</dfn> one or more <var>options</var> associated with a given\n            <var data-type=\"PermissionDescriptor\">descriptor</var> and an optional <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\">boolean</a>\n            <var data-type=\"boolean\">allowMultiple</var> (default false), the user agent must perform the following\n            steps. This algorithm returns either \"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-denied\" class=\"internalDFN\" id=\"ref-for-dom-permissionstate-denied-8\"><code>denied</code></a>\" or the user's\n            selection.",
+          "html": "Ask the user to choose one or more <var>options</var> or deny permission, and wait for them\n            to choose:",
           "rationale": "if",
           "steps": [
             {
@@ -256,7 +256,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "When the <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-permissions-query\" data-idl=\"operation\" data-title=\"query()\" data-dfn-for=\"Permissions\" data-type=\"Promise\" data-lt=\"query()|query(permissionDesc)\" data-local-lt=\"Permissions.query|Permissions.query()|query\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>query()</code></dfn> method is invoked, the <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> <em class=\"rfc2119\">MUST</em> run the\n              following <dfn class=\"export\" data-export=\"\" id=\"dfn-query-a-permission\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">query a permission</dfn> algorithm, passing the\n              parameter <var>permissionDesc</var>:",
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> is a <a data-link-type=\"idl\" data-lt=\"Window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\"><code>Window</code></a> object, then:",
           "rationale": "if",
           "steps": [
             {
@@ -283,7 +283,7 @@
           "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
         },
         {
-          "html": "When the <dfn data-export=\"\" data-dfn-type=\"method\" id=\"dom-permissions-query\" data-idl=\"operation\" data-title=\"query()\" data-dfn-for=\"Permissions\" data-type=\"Promise\" data-lt=\"query()|query(permissionDesc)\" data-local-lt=\"Permissions.query|Permissions.query()|query\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>query()</code></dfn> method is invoked, the <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> <em class=\"rfc2119\">MUST</em> run the\n              following <dfn class=\"export\" data-export=\"\" id=\"dfn-query-a-permission\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">query a permission</dfn> algorithm, passing the\n              parameter <var>permissionDesc</var>:",
+          "html": "Return <var data-type=\"Promise\">promise</var> and continue <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -315,7 +315,7 @@
           "html": "Assert: The <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/permissions/#dfn-powerful-feature\" class=\"internalDFN\" id=\"ref-for-dfn-powerful-feature-28\">feature</a> identified by <var data-type=\"DOMString\">name</var> is supported by the user agent."
         },
         {
-          "html": "To <dfn class=\"export\" data-export=\"\" id=\"dfn-create-a-permissionstatus\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">create a <code>PermissionStatus</code></dfn> for a given\n              <a data-link-type=\"idl\" data-lt=\"PermissionDescriptor\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor\" class=\"internalDFN\" id=\"ref-for-dom-permissiondescriptor-18\"><code>PermissionDescriptor</code></a> <var data-type=\"PermissionDescriptor\">permissionDesc</var>:",
+          "html": "Let <var data-type=\"PermissionStatus\">status</var> be a new instance of the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-result-type\" class=\"internalDFN\" id=\"ref-for-dfn-permission-result-type-3\">permission result type</a> identified by <var data-type=\"DOMString\">name</var>:",
           "rationale": "initialize",
           "steps": [
             {
@@ -338,7 +338,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Whenever the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> is aware that the state of a <a data-link-type=\"idl\" data-lt=\"PermissionStatus\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstatus\" class=\"internalDFN\" id=\"ref-for-dom-permissionstatus-7\"><code>PermissionStatus</code></a>\n              instance <var>status</var> has changed, it asynchronously runs the <dfn id=\"dfn-permissionstatus-update-steps\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\"><code>PermissionStatus</code>\n              update steps</dfn>:",
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> is a <a data-link-type=\"idl\" data-lt=\"Window\" data-type=\"interface\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\"><code>Window</code></a> object, then:",
           "rationale": "let",
           "steps": [
             {
@@ -376,11 +376,11 @@
           "html": "Let <var>tasks</var> be an empty <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
         },
         {
-          "html": "To <dfn data-for=\"WebDriver\" id=\"dfn-set-a-permission\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">set a permission</dfn> given a <a data-link-type=\"idl\" data-lt=\"PermissionDescriptor\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor\" class=\"internalDFN\" id=\"ref-for-dom-permissiondescriptor-19\"><code>PermissionDescriptor</code></a>\n          <var data-type=\"PermissionDescriptor\">descriptor</var>, a <a data-link-type=\"idl\" data-lt=\"PermissionState\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate\" class=\"internalDFN\" id=\"ref-for-dom-permissionstate-9\"><code>PermissionState</code></a> <var data-type=\"PermissionState\">state</var>, an\n          optional <var>origin</var>, and an optional <var>user agent</var>:",
+          "html": "For each <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\">environment settings object</a> <var>target</var> in <var>targets</var>:",
           "rationale": "queue",
           "steps": [
             {
-              "html": "To <dfn data-for=\"WebDriver\" id=\"dfn-set-a-permission\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">set a permission</dfn> given a <a data-link-type=\"idl\" data-lt=\"PermissionDescriptor\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor\" class=\"internalDFN\" id=\"ref-for-dom-permissiondescriptor-19\"><code>PermissionDescriptor</code></a>\n          <var data-type=\"PermissionDescriptor\">descriptor</var>, a <a data-link-type=\"idl\" data-lt=\"PermissionState\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate\" class=\"internalDFN\" id=\"ref-for-dom-permissionstate-9\"><code>PermissionState</code></a> <var data-type=\"PermissionState\">state</var>, an\n          optional <var>origin</var>, and an optional <var>user agent</var>:",
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> <var>task</var> on the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/permissions/#dfn-permissions-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-permissions-task-source-4\">permissions task source</a> of <var>target</var>'s\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\">global object</a>'s\n              <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\">browsing context</a> to perform the following step:",
               "rationale": "interpret",
               "steps": [
                 {

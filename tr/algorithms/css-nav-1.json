@@ -68,14 +68,14 @@
           "html": "<p>If <var>eventTarget</var> is the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">Document</a> or the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#document-element\" id=\"ref-for-document-element\">document element</a>,\n    set <var>eventTarget</var> be <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#the-body-element-2\" id=\"ref-for-the-body-element-2②\">the body element</a> if it is not <code>null</code> or to the <span id=\"ref-for-document-element①\">document element</span> otherwise.</p>"
         },
         {
-          "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"spatial-navigation-steps\">spatial navigation steps</dfn> in <var>direction</var>, do the following:",
+          "html": "<span class=\"cssapi\">Else,</span> if <var>eventTarget</var> is either a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container⑥\">scroll container</a> or the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">document</a>",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>candidates</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-nav-1/#find-focusable-areas\" id=\"ref-for-find-focusable-areas②\">finding focusable areas</a> within <var>eventTarget</var> with the argument <var>visibleOnly</var> set to <code>false</code> <span class=\"cssapi\">if computed value of the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-nav-1/#propdef-spatial-navigation-action\" id=\"ref-for-propdef-spatial-navigation-action③\">spatial-navigation-action</a> property on <var>eventTarget</var> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-nav-1/#valdef-spatial-navigation-action-focus\" id=\"ref-for-valdef-spatial-navigation-action-focus\">focus</a> or to <code>true</code> otherwise. </span></p>"
             },
             {
-              "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"spatial-navigation-steps\">spatial navigation steps</dfn> in <var>direction</var>, do the following:",
+              "html": "<span class=\"cssapi\">Else </span>if <var>candidates</var> contains at least 1 item:",
               "rationale": "let",
               "steps": [
                 {
@@ -104,14 +104,14 @@
           "html": "If the computed value of the <a class=\"property\" data-link-type=\"propdesc\" href=\"https://www.w3.org/TR/css-nav-1/#propdef-spatial-navigation-action\" id=\"ref-for-propdef-spatial-navigation-action⑥\">spatial-navigation-action</a> property on <var>container</var> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-nav-1/#valdef-spatial-navigation-action-focus\" id=\"ref-for-valdef-spatial-navigation-action-focus③\">focus</a> and <var>container</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container⑦\">scroll container</a> that <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-nav-1/#can-be-manually-scrolled\" id=\"ref-for-can-be-manually-scrolled②\">can be manually scrolled</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-nav-1/#directionally-scroll-an-element\" id=\"ref-for-directionally-scroll-an-element②\">directionally scroll the element</a> <var>container</var> in <var>direction</var> and return."
         },
         {
-          "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"spatial-navigation-steps\">spatial navigation steps</dfn> in <var>direction</var>, do the following:",
+          "html": "Else,",
           "rationale": "if",
           "steps": [
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-nav-1/#dispatches-navnotarget-event\" id=\"ref-for-dispatches-navnotarget-event\">Dispatches navnotarget event</a> at <var>eventTarget</var> with <var>direction</var> and <var>container</var>.</p>"
             },
             {
-              "html": "To run the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"spatial-navigation-steps\">spatial navigation steps</dfn> in <var>direction</var>, do the following:",
+              "html": "Else, if <var>container</var> is the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#document-element\" id=\"ref-for-document-element③\">document element</a> of a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#nested-browsing-context\" id=\"ref-for-nested-browsing-context\">nested browsing context</a> then:",
               "rationale": "set",
               "steps": [
                 {
@@ -214,7 +214,7 @@
           "html": "<p>Let <var>insiders</var> be the subset of <var>candidates</var></p>\n      <ul>\n       <li data-md=\"\">\n        <p>whose boundary box fully overlaps with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-nav-1/#inside-area\" id=\"ref-for-inside-area②\">inside area</a> of <var>searchOrigin</var></p>\n       </li><li data-md=\"\">\n        <p>whose boundary box partially overlaps with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-nav-1/#inside-area\" id=\"ref-for-inside-area③\">inside area</a> of <var>searchOrigin</var> as</p>\n        <ul>\n         <li data-md=\"\">\n          <p>top edge is below the top edge of <var>searchOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-nav-1/#boundary-box\" id=\"ref-for-boundary-box④\">boundary box</a> if <var>dir</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-nav-1/#dom-spatialnavigationdirection-down\" id=\"ref-for-dom-spatialnavigationdirection-down\">down</a></code></p>\n         </li><li data-md=\"\">\n          <p>bottom edge is above the bottom edge of <var>searchOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-nav-1/#boundary-box\" id=\"ref-for-boundary-box⑤\">boundary box</a> if <var>dir</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-nav-1/#dom-spatialnavigationdirection-up\" id=\"ref-for-dom-spatialnavigationdirection-up\">up</a></code></p>\n         </li><li data-md=\"\">\n          <p>right edge is left of the right edge of <var>searchOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-nav-1/#boundary-box\" id=\"ref-for-boundary-box⑥\">boundary box</a> if <var>dir</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-nav-1/#dom-spatialnavigationdirection-left\" id=\"ref-for-dom-spatialnavigationdirection-left\">left</a></code></p>\n         </li><li data-md=\"\">\n          <p>left edge is right of the left edge of <var>searchOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-nav-1/#boundary-box\" id=\"ref-for-boundary-box⑦\">boundary box</a> if <var>dir</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-nav-1/#dom-spatialnavigationdirection-right\" id=\"ref-for-dom-spatialnavigationdirection-right\">right</a></code></p>\n        </li></ul>\n        \n      </li></ul>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"select the best candidate | selecting the best candidate\" data-noexport=\"\" id=\"select-the-best-candidate\">select the best candidate</dfn> within a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a> of <var>candidates</var> in a direction <var>dir</var>,\nstarting from <var>searchOrigin</var>,\nrun the following steps:",
+          "html": "If <var>insiders</var> is non empty,",
           "rationale": "let",
           "steps": [
             {
@@ -226,7 +226,7 @@
           ],
           "additional": [
             {
-              "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"select the best candidate | selecting the best candidate\" data-noexport=\"\" id=\"select-the-best-candidate\">select the best candidate</dfn> within a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a> of <var>candidates</var> in a direction <var>dir</var>,\nstarting from <var>searchOrigin</var>,\nrun the following steps:",
+              "html": "Else",
               "rationale": "set",
               "steps": [
                 {

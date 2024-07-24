@@ -354,14 +354,14 @@
           "html": "<p>If <var>duration</var> is null, then set <var>duration</var> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> value.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"senddatagrams\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sendDatagrams</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport④\">WebTransport</a></code> object <var>transport</var>, run these steps:",
+          "html": "While <var>queue</var> is not empty:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>bytes</var>, <var>timestamp</var> and <var>promise</var> be <var>queue</var>’s first element.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"senddatagrams\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sendDatagrams</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport④\">WebTransport</a></code> object <var>transport</var>, run these steps:",
+              "html": "If more than <var>duration</var> milliseconds have passed since <var>timestamp</var>, then:",
               "rationale": "remove",
               "steps": [
                 {
@@ -384,14 +384,14 @@
           "html": "<p>Let <var>maxSize</var> be <var>datagrams</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-outgoingmaxdatagramsize-slot\" id=\"ref-for-dom-webtransportdatagramduplexstream-outgoingmaxdatagramsize-slot④\">[[OutgoingMaxDatagramSize]]</a></code>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"senddatagrams\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sendDatagrams</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport④\">WebTransport</a></code> object <var>transport</var>, run these steps:",
+          "html": "While <var>queue</var> is not empty:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>bytes</var>, <var>timestamp</var> and <var>promise</var> be <var>queue</var>’s first element.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"senddatagrams\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sendDatagrams</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport④\">WebTransport</a></code> object <var>transport</var>, run these steps:",
+              "html": "If <var>bytes</var>’s length ≤ <var>maxSize</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -529,7 +529,7 @@
           "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#report-for-request\" id=\"ref-for-report-for-request\">report Content Security Policy violations for <var>request</var></a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-webtransport-over-http\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize WebTransport over HTTP</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①②\">WebTransport</a></code> object <var>transport</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL record</a> <var>url</var>, a boolean <var>dedicated</var>, a boolean <var>http3Only</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#enumdef-webtransportcongestioncontrol\" id=\"ref-for-enumdef-webtransportcongestioncontrol②\">WebTransportCongestionControl</a></code> <var>congestionControl</var>, and a\nsequence&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dictdef-webtransporthash\" id=\"ref-for-dictdef-webtransporthash\">WebTransportHash</a></code>&gt; <var>serverCertificateHashes</var>, run these steps.",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#should-block-request\" id=\"ref-for-should-block-request\">should request be blocked by Content Security Policy?</a> with <var>request</var> returns <b>\"Blocked\"</b>, or if <var>request</var> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#block-bad-port\" id=\"ref-for-block-bad-port\">should be blocked due to a bad port</a> returns <b>blocked</b>, then abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③\">queue a network task</a> with <var>transport</var> to run these steps:",
           "rationale": "if",
           "steps": [
             {
@@ -547,7 +547,7 @@
           "html": "<p>Let <var>networkPartitionKey</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#determine-the-network-partition-key\" id=\"ref-for-determine-the-network-partition-key\">determining the network partition key</a> with <var>transport</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-webtransport-over-http\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize WebTransport over HTTP</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①②\">WebTransport</a></code> object <var>transport</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL record</a> <var>url</var>, a boolean <var>dedicated</var>, a boolean <var>http3Only</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#enumdef-webtransportcongestioncontrol\" id=\"ref-for-enumdef-webtransportcongestioncontrol②\">WebTransportCongestionControl</a></code> <var>congestionControl</var>, and a\nsequence&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dictdef-webtransporthash\" id=\"ref-for-dictdef-webtransporthash\">WebTransportHash</a></code>&gt; <var>serverCertificateHashes</var>, run these steps.",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when\">abort when</a> <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot⑧\">[[State]]</a></code> becomes <code>\"closed\"</code> or <code>\"failed\"</code>:",
           "rationale": "let",
           "steps": [
             {
@@ -557,7 +557,7 @@
               "html": "<p>Let <var>connection</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection-obtain\" id=\"ref-for-concept-connection-obtain\">obtaining a connection</a> with <var>networkPartitionKey</var>, <var>url</var>, false, <var>newConnection</var>, and <var>http3Only</var>. If the user agent\n supports more than one congestion control algorithm, choose one appropriate for <var>congestionControl</var> for sending of data on this <var>connection</var>. When obtaining a connection, if <var>serverCertificateHashes</var> is specified, instead of using the default certificate verification\n algorithm, consider the certificate valid if it meets the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#custom-certificate-requirements\" id=\"ref-for-custom-certificate-requirements\">custom certificate\n requirements</a> and if <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#verify-a-certificate-hash\" id=\"ref-for-verify-a-certificate-hash\">verifying the certificate hash</a> against <var>serverCertificateHashes</var> returns true. If either condition is not met, let <var>connection</var> be\n failure.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-webtransport-over-http\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize WebTransport over HTTP</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①②\">WebTransport</a></code> object <var>transport</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL record</a> <var>url</var>, a boolean <var>dedicated</var>, a boolean <var>http3Only</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#enumdef-webtransportcongestioncontrol\" id=\"ref-for-enumdef-webtransportcongestioncontrol②\">WebTransportCongestionControl</a></code> <var>congestionControl</var>, and a\nsequence&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dictdef-webtransporthash\" id=\"ref-for-dictdef-webtransporthash\">WebTransportHash</a></code>&gt; <var>serverCertificateHashes</var>, run these steps.",
+              "html": "If <var>connection</var> is failure, then abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task④\">queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "if",
               "steps": [
                 {
@@ -575,7 +575,7 @@
               "html": "<p>Wait for <var>connection</var> to receive the first SETTINGS frame, and let <var>settings</var> be a dictionary that\n represents the SETTINGS frame.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-webtransport-over-http\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize WebTransport over HTTP</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①②\">WebTransport</a></code> object <var>transport</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL record</a> <var>url</var>, a boolean <var>dedicated</var>, a boolean <var>http3Only</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#enumdef-webtransportcongestioncontrol\" id=\"ref-for-enumdef-webtransportcongestioncontrol②\">WebTransportCongestionControl</a></code> <var>congestionControl</var>, and a\nsequence&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dictdef-webtransporthash\" id=\"ref-for-dictdef-webtransporthash\">WebTransportHash</a></code>&gt; <var>serverCertificateHashes</var>, run these steps.",
+              "html": "If <var>settings</var> doesn’t contain SETTINGS_ENABLE_WEBTRANPORT with a value of 1, or it doesn’t\n contain H3_DATAGRAM with a value of 1, then abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑤\">queue a network\n task</a> with <var>transport</var> to run these steps:",
               "rationale": "if",
               "steps": [
                 {
@@ -593,7 +593,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#session-establish\" id=\"ref-for-session-establish②\">Establish</a> a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#protocol-webtransport-session\" id=\"ref-for-protocol-webtransport-session①②\">WebTransport session</a> with <var>origin</var> on <var>connection</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-webtransport-over-http\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize WebTransport over HTTP</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①②\">WebTransport</a></code> object <var>transport</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL record</a> <var>url</var>, a boolean <var>dedicated</var>, a boolean <var>http3Only</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#enumdef-webtransportcongestioncontrol\" id=\"ref-for-enumdef-webtransportcongestioncontrol②\">WebTransportCongestionControl</a></code> <var>congestionControl</var>, and a\nsequence&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dictdef-webtransporthash\" id=\"ref-for-dictdef-webtransporthash\">WebTransportHash</a></code>&gt; <var>serverCertificateHashes</var>, run these steps.",
+              "html": "If the previous step fails, abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑥\">queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "if",
               "steps": [
                 {
@@ -614,11 +614,11 @@
               "html": "<p class=\"assertion\">Assert: <var>maxDatagramSize</var> is an integer.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-webtransport-over-http\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize WebTransport over HTTP</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①②\">WebTransport</a></code> object <var>transport</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL record</a> <var>url</var>, a boolean <var>dedicated</var>, a boolean <var>http3Only</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#enumdef-webtransportcongestioncontrol\" id=\"ref-for-enumdef-webtransportcongestioncontrol②\">WebTransportCongestionControl</a></code> <var>congestionControl</var>, and a\nsequence&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dictdef-webtransporthash\" id=\"ref-for-dictdef-webtransporthash\">WebTransportHash</a></code>&gt; <var>serverCertificateHashes</var>, run these steps.",
+              "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑦\">Queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-webtransport-over-http\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize WebTransport over HTTP</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①②\">WebTransport</a></code> object <var>transport</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL record</a> <var>url</var>, a boolean <var>dedicated</var>, a boolean <var>http3Only</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#enumdef-webtransportcongestioncontrol\" id=\"ref-for-enumdef-webtransportcongestioncontrol②\">WebTransportCongestionControl</a></code> <var>congestionControl</var>, and a\nsequence&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dictdef-webtransporthash\" id=\"ref-for-dictdef-webtransporthash\">WebTransportHash</a></code>&gt; <var>serverCertificateHashes</var>, run these steps.",
+                  "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①②\">[[State]]</a></code> is not <code>\"connecting\"</code>:",
                   "rationale": "in parallel",
                   "steps": [
                     {
@@ -657,7 +657,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pullbidirectionalstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pullBidirectionalStream</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①③\">WebTransport</a></code> object <var>transport</var>, run\nthese steps.",
+          "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①④\">[[State]]</a></code> is <code>\"connecting\"</code>, then return the result of performing the\n following steps <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment\">upon fulfillment</a> of <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-ready-slot\" id=\"ref-for-dom-webtransport-ready-slot②\">[[Ready]]</a></code>:",
           "rationale": "return",
           "steps": [
             {
@@ -675,7 +675,7 @@
           "html": "<p>Let <var>p</var> be a new promise.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pullbidirectionalstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pullBidirectionalStream</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①③\">WebTransport</a></code> object <var>transport</var>, run\nthese steps.",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
           "rationale": "wait",
           "steps": [
             {
@@ -685,7 +685,7 @@
               "html": "<p>Let <var>internalStream</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#session-receive-a-bidirectional-stream\" id=\"ref-for-session-receive-a-bidirectional-stream①\">receiving a bidirectional stream</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pullbidirectionalstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pullBidirectionalStream</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①③\">WebTransport</a></code> object <var>transport</var>, run\nthese steps.",
+              "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑧\">Queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -713,7 +713,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pullunidirectionalstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pullUnidirectionalStream</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①④\">WebTransport</a></code> object <var>transport</var>, run\nthese steps.",
+          "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑥\">[[State]]</a></code> is <code>\"connecting\"</code>, then return the result of performing the\n following steps <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment①\">upon fulfillment</a> of <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-ready-slot\" id=\"ref-for-dom-webtransport-ready-slot③\">[[Ready]]</a></code>:",
           "rationale": "return",
           "steps": [
             {
@@ -731,7 +731,7 @@
           "html": "<p>Let <var>p</var> be a new promise.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pullunidirectionalstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pullUnidirectionalStream</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①④\">WebTransport</a></code> object <var>transport</var>, run\nthese steps.",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
           "rationale": "wait",
           "steps": [
             {
@@ -741,7 +741,7 @@
               "html": "<p>Let <var>internalStream</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#session-receive-an-incoming-unidirectional-stream\" id=\"ref-for-session-receive-an-incoming-unidirectional-stream①\">receiving an incoming unidirectional stream</a>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pullunidirectionalstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pullUnidirectionalStream</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①④\">WebTransport</a></code> object <var>transport</var>, run\nthese steps.",
+              "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑨\">Queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -808,7 +808,7 @@
           "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑧\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, then abort these steps.</p>"
         },
         {
-          "html": "<dl>\n     <dt data-md=\"\"><dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebTransport\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"close(closeInfo)|close()\" id=\"dom-webtransport-close\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>close(closeInfo)</code></dfn>\n     </dt><dd data-md=\"\">\n      <p>Terminates the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#protocol-webtransport-session\" id=\"ref-for-protocol-webtransport-session①⑤\">WebTransport session</a> associated with the WebTransport object.</p>\n      <p>When close is called, the user agent MUST run the following steps:</p>\n      \n    </dd></dl>",
+          "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑨\">[[State]]</a></code> is <code>\"connecting\"</code>:",
           "rationale": "let",
           "steps": [
             {
@@ -1086,7 +1086,7 @@
           "html": "<p>If <var>closeInfo</var> is given, then set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③①\">[[State]]</a></code> to <code>\"closed\"</code>.\n Otherwise, set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③②\">[[State]]</a></code> to <code>\"failed\"</code>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransport\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransport-cleanup\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cleanup</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①⑥\">WebTransport</a></code> <var>transport</var> with <var>error</var> and\noptionally <var>closeInfo</var>, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>stream</var> in <var>sendStreams</var>, run the following steps:",
           "rationale": "if",
           "steps": [
             {
@@ -1101,7 +1101,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>stream</var> in <var>receiveStreams</var>, <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error\">error</a> <var>stream</var> with <var>error</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransport\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransport-cleanup\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cleanup</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①⑥\">WebTransport</a></code> <var>transport</var> with <var>error</var> and\noptionally <var>closeInfo</var>, run these steps:",
+          "html": "If <var>closeInfo</var> is given, then:",
           "rationale": "resolve",
           "steps": [
             {
@@ -1125,7 +1125,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransport\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransport-cleanup\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cleanup</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport①⑥\">WebTransport</a></code> <var>transport</var> with <var>error</var> and\noptionally <var>closeInfo</var>, run these steps:",
+          "html": "Otherwise:",
           "rationale": "reject",
           "steps": [
             {
@@ -1279,11 +1279,11 @@
           "html": "<p>Let <var>referenceHash</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#compute-a-certificate-hash\" id=\"ref-for-compute-a-certificate-hash\">computing a certificate hash</a> with <var>certificate</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"verify-a-certificate-hash\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">verify a certificate hash</dfn>, given a <var>certificate</var> and an array of hashes <var>hashes</var>,\nperform the following steps:",
+          "html": "For every hash <var>hash</var> in <var>hashes</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"verify-a-certificate-hash\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">verify a certificate hash</dfn>, given a <var>certificate</var> and an array of hashes <var>hashes</var>,\nperform the following steps:",
+              "html": "If <var>hash</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransporthash-value\" id=\"ref-for-dom-webtransporthash-value\">value</a></code> is not null and <var>hash</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransporthash-algorithm\" id=\"ref-for-dom-webtransporthash-algorithm①\">algorithm</a></code> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive\">ASCII case-insensitive</a> match with \"sha-256\":",
               "rationale": "let",
               "steps": [
                 {
@@ -1411,7 +1411,7 @@
           "html": "<p>Let <var>abortSignal</var> be <var>stream</var>’s [[controller]].[[abortController]].[[signal]].</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportSendStream\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create|creating\" id=\"webtransportsendstream-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①⑦\">WebTransportSendStream</a></code>, with an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#stream-outgoing-unidirectional\" id=\"ref-for-stream-outgoing-unidirectional⑤\">outgoing unidirectional</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#stream-bidirectional\" id=\"ref-for-stream-bidirectional①⓪\">bidirectional</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#protocol-webtransport-stream\" id=\"ref-for-protocol-webtransport-stream⑧\">WebTransport stream</a> <var>internalStream</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport②⑨\">WebTransport</a></code> <var>transport</var>, <var>sendGroup</var>, and a <var>sendOrder</var>, run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">Add</a> the following steps to <var>abortSignal</var>.",
           "rationale": "let",
           "steps": [
             {
@@ -1470,11 +1470,11 @@
           "html": "<p>Let <var>atomic</var> be true if <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-stream\" id=\"ref-for-concept-body-stream\">stream</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-atomicwriterequests-slot\" id=\"ref-for-dom-webtransportsendstream-atomicwriterequests-slot①\">[[AtomicWriteRequests]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> <var>inFlightWriteRequest</var>, otherwise false.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportSendStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportsendstream-write\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write</dfn> <var>chunk</var> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①⑨\">WebTransportSendStream</a></code> <var>stream</var>, run these steps:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⓪\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportSendStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportsendstream-write\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write</dfn> <var>chunk</var> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①⑨\">WebTransportSendStream</a></code> <var>stream</var>, run these steps:",
+              "html": "If <var>atomic</var> is true and the current <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#stream-signal-flow-control\" id=\"ref-for-stream-signal-flow-control\">flow control</a> window is too small for <var>bytes</var> to be sent\n in its entirety, then abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⑨\">queue a network task</a> with <var>transport</var> to run these sub-steps:",
               "rationale": "set",
               "steps": [
                 {
@@ -1492,7 +1492,7 @@
               "html": "<p>If the previous step failed due to a network error, abort the remaining steps.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportSendStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportsendstream-write\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write</dfn> <var>chunk</var> to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①⑨\">WebTransportSendStream</a></code> <var>stream</var>, run these steps:",
+              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⓪\">queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "set",
               "steps": [
                 {
@@ -1532,7 +1532,7 @@
           "html": "<p>Set <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-pendingoperation-slot\" id=\"ref-for-dom-webtransportsendstream-pendingoperation-slot⑨\">[[PendingOperation]]</a></code> to <var>promise</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportSendStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportsendstream-close\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">close</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream②②\">WebTransportSendStream</a></code> <var>stream</var>, run these steps:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①②\">in parallel</a>:",
           "rationale": "send",
           "steps": [
             {
@@ -1542,7 +1542,7 @@
               "html": "<p>Wait for <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot③\">[[InternalStream]]</a></code> to enter the \"Data Recvd\" state. <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webtransport/#biblio-quic\" title=\"QUIC: A UDP-Based Multiplexed and Secure Transport\">[QUIC]</a></p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportSendStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportsendstream-close\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">close</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream②②\">WebTransportSendStream</a></code> <var>stream</var>, run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②①\">Queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "set",
               "steps": [
                 {
@@ -1588,7 +1588,7 @@
           "html": "<p>If <var>code</var> &gt; 4294967295, then set <var>code</var> to 4294967295.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportSendStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportsendstream-abort\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">abort</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream②③\">WebTransportSendStream</a></code> <var>stream</var> with <var>reason</var>, run these steps:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①③\">in parallel</a>:",
           "rationale": "reset",
           "steps": [
             {
@@ -1796,7 +1796,7 @@
           "html": "<p>Let <var>buffer</var>, <var>offset</var>, and <var>maxBytes</var> be null.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportReceiveStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportreceivestream-pull-bytes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pull bytes</dfn> from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑦\">WebTransportReceiveStream</a></code> <var>stream</var>, run these steps.",
+          "html": "If <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\" id=\"ref-for-readablestream-current-byob-request-view②\">current BYOB request view</a> for <var>stream</var> is not null:",
           "rationale": "set",
           "steps": [
             {
@@ -1811,7 +1811,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportReceiveStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportreceivestream-pull-bytes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pull bytes</dfn> from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑦\">WebTransportReceiveStream</a></code> <var>stream</var>, run these steps.",
+          "html": "Otherwise:",
           "rationale": "set",
           "steps": [
             {
@@ -1826,7 +1826,7 @@
           ]
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportReceiveStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportreceivestream-pull-bytes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pull bytes</dfn> from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑦\">WebTransportReceiveStream</a></code> <var>stream</var>, run these steps.",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑦\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -1836,11 +1836,11 @@
               "html": "<p>If the previous step failed, abort the remaining steps.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportReceiveStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportreceivestream-pull-bytes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pull bytes</dfn> from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑦\">WebTransportReceiveStream</a></code> <var>stream</var>, run these steps.",
+              "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑥\">Queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportReceiveStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportreceivestream-pull-bytes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pull bytes</dfn> from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑦\">WebTransportReceiveStream</a></code> <var>stream</var>, run these steps.",
+                  "html": "If <var>read</var> &gt; 0:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -1852,7 +1852,7 @@
                   ]
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportReceiveStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportreceivestream-pull-bytes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pull bytes</dfn> from a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑦\">WebTransportReceiveStream</a></code> <var>stream</var>, run these steps.",
+                  "html": "If <var>hasReceivedFIN</var> is true:",
                   "rationale": "remove",
                   "steps": [
                     {
@@ -1906,14 +1906,14 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑤\">Remove</a> <var>stream</var> from <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-sendstreams-slot\" id=\"ref-for-dom-webtransport-sendstreams-slot⑧\">[[SendStreams]]</a></code>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportReceiveStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportreceivestream-cancel\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cancel</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑧\">WebTransportReceiveStream</a></code> <var>stream</var> with <var>reason</var>, run these\nsteps.",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑧\">in parallel</a>:",
           "rationale": "send",
           "steps": [
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#stream-send-stop_sending\" id=\"ref-for-stream-send-stop_sending①\">Send STOP_SENDING</a> with <var>internalStream</var> and <var>code</var>.</p>"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"WebTransportReceiveStream\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"webtransportreceivestream-cancel\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cancel</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①⑧\">WebTransportReceiveStream</a></code> <var>stream</var> with <var>reason</var>, run these\nsteps.",
+              "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑦\">Queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "remove",
               "steps": [
                 {

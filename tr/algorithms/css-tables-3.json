@@ -36,7 +36,7 @@
           "html": "<b>Determine the number of rows/columns the table requires.</b><br> This is done by executing the steps described in <a href=\"https://www.w3.org/TR/css-tables-3/#dimensioning-the-row-column-grid\">§ 3.3 Dimensioning the row/column grid</a>."
         },
         {
-          "html": "<b>[A] If the row/column grid has at least one <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-tables-3/#slot\" id=\"ref-for-slot①\">slot</a>:</b>",
+          "html": "<b>[B] Else, an <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"empty-table\">empty table</dfn> is laid out:</b>",
           "rationale": "ensure",
           "steps": [
             {
@@ -115,9 +115,9 @@
       ]
     },
     {
-      "name": "min-content width of a column based on cells of span up to N (N > 1)",
-      "href": "https://www.w3.org/TR/css-tables-3/#min-content-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
-      "html": "the largest of the min-content width of the column based on cells of span up to N-1 and the contributions\n\t\t\t\t\t\tof the cells in the column whose <a href=\"https://www.w3.org/TR/css-tables-3/#slot\" id=\"ref-for-slot①②\">colSpan</a> is N,\n\t\t\t\t\t\twhere the contribution of a cell is the result of taking the following steps:",
+      "name": "undistributable space",
+      "href": "https://www.w3.org/TR/css-tables-3/#undistributable-space",
+      "html": "The <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"undistributable-space\">undistributable space<a class=\"self-link\" href=\"https://www.w3.org/TR/css-tables-3/#undistributable-space\"></a></dfn> of the table is the sum of\n\t\t\t\tthe distances between the borders of consecutive table-cells\n\t\t\t\t(and between the border of the table-root and the table-cells).",
       "rationale": "define",
       "steps": [
         {
@@ -132,9 +132,9 @@
       ]
     },
     {
-      "name": "max-content width of a column based on cells of span up to N (N > 1)",
-      "href": "https://www.w3.org/TR/css-tables-3/#max-content-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
-      "html": "The largest of the max-content width\n\t\t\t\t\tbased on cells of span up to N-1 and the contributions of the cells in the column whose <a href=\"https://www.w3.org/TR/css-tables-3/#slot\" id=\"ref-for-slot①③\">colSpan</a> is N,\n\t\t\t\t\twhere the contribution of a cell is the result of taking the following steps:",
+      "name": "undistributable space",
+      "href": "https://www.w3.org/TR/css-tables-3/#undistributable-space",
+      "html": "The <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"undistributable-space\">undistributable space<a class=\"self-link\" href=\"https://www.w3.org/TR/css-tables-3/#undistributable-space\"></a></dfn> of the table is the sum of\n\t\t\t\tthe distances between the borders of consecutive table-cells\n\t\t\t\t(and between the border of the table-root and the table-cells).",
       "rationale": "define",
       "steps": [
         {
@@ -149,9 +149,9 @@
       ]
     },
     {
-      "name": "intrinsic percentage width of a column based on cells of span up to N (N > 1)",
-      "href": "https://www.w3.org/TR/css-tables-3/#intrinsic-percentage-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
-      "html": "If the intrinsic percentage width of a column based on cells of span up to N-1 is greater than 0%,\n\t\t\t\t\tthen the intrinsic percentage width of the column based on cells of span up to N is\n\t\t\t\t\tthe same as the intrinsic percentage width of the column based on cells of span up to N-1.<br> <br> Otherwise, it is the largest of the contributions of the cells in the column\n\t\t\t\t\twhose <a href=\"https://www.w3.org/TR/css-tables-3/#slot\" id=\"ref-for-slot①④\">colSpan</a> is N,\n\t\t\t\t\twhere the contribution of a cell is the result of taking the following steps:",
+      "name": "undistributable space",
+      "href": "https://www.w3.org/TR/css-tables-3/#undistributable-space",
+      "html": "The <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"undistributable-space\">undistributable space<a class=\"self-link\" href=\"https://www.w3.org/TR/css-tables-3/#undistributable-space\"></a></dfn> of the table is the sum of\n\t\t\t\tthe distances between the borders of consecutive table-cells\n\t\t\t\t(and between the border of the table-root and the table-cells).",
       "rationale": "start",
       "steps": [
         {
@@ -166,9 +166,9 @@
       ]
     },
     {
-      "name": "distributed width",
-      "href": "https://www.w3.org/TR/css-tables-3/#distributed-width",
-      "html": "The remainder of this section uses the term <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"distributed-width\">distributed width<a class=\"self-link\" href=\"https://www.w3.org/TR/css-tables-3/#distributed-width\"></a></dfn> to refer to the one of these widths that is being distributed,\n\t\tand the <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"excess-width\">excess width<a class=\"self-link\" href=\"https://www.w3.org/TR/css-tables-3/#excess-width\"></a></dfn> is used to refer to the amount by which the width being distributed\n\t\texceeds the sum of the distributed widths of the columns it is being distributed to.",
+      "name": "undistributable space",
+      "href": "https://www.w3.org/TR/css-tables-3/#undistributable-space",
+      "html": "The <dfn data-dfn-type=\"dfn\" data-noexport=\"\" id=\"undistributable-space\">undistributable space<a class=\"self-link\" href=\"https://www.w3.org/TR/css-tables-3/#undistributable-space\"></a></dfn> of the table is the sum of\n\t\t\t\tthe distances between the borders of consecutive table-cells\n\t\t\t\t(and between the border of the table-root and the table-cells).",
       "rationale": "if",
       "steps": [
         {

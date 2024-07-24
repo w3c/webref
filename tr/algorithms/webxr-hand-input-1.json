@@ -69,7 +69,7 @@
           "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#extendableevent-active\" id=\"ref-for-extendableevent-active①\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillJointRadii(jointSpaces, radii)\" id=\"dom-xrframe-filljointradii\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillJointRadii(sequence&lt;XRJointSpace&gt; <var>jointSpaces</var>, Float32Array <var>radii</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>radii</var> with the radii of the <var>jointSpaces</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+          "html": "For each <var>joint</var> in the <var>jointSpaces</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -87,11 +87,11 @@
           "html": "<p>Let <var>allValid</var> be <code>true</code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillJointRadii(jointSpaces, radii)\" id=\"dom-xrframe-filljointradii\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillJointRadii(sequence&lt;XRJointSpace&gt; <var>jointSpaces</var>, Float32Array <var>radii</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>radii</var> with the radii of the <var>jointSpaces</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+          "html": "For each <var>joint</var> in the <var>jointSpaces</var>:",
           "rationale": "set",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillJointRadii(jointSpaces, radii)\" id=\"dom-xrframe-filljointradii\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillJointRadii(sequence&lt;XRJointSpace&gt; <var>jointSpaces</var>, Float32Array <var>radii</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>radii</var> with the radii of the <var>jointSpaces</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+              "html": "Set the float value of <var>radii</var> at <var>offset</var> as follows:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -135,7 +135,7 @@
           "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#extendableevent-active\" id=\"ref-for-extendableevent-active②\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillPoses(spaces, baseSpace, transforms)\" id=\"dom-xrframe-fillposes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillPoses(sequence&lt;XRSpace&gt; <var>spaces</var>, XRSpace <var>baseSpace</var>, Float32Array <var>transforms</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>transforms</var> with the matrices of the poses of the <var>spaces</var> relative to the <var>baseSpace</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+          "html": "For each <var>space</var> in the <var>spaces</var> sequence:",
           "rationale": "if",
           "steps": [
             {
@@ -153,7 +153,7 @@
           "html": "<p>let <var>offset</var> be a new number with the initial value of <code>0</code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillPoses(spaces, baseSpace, transforms)\" id=\"dom-xrframe-fillposes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillPoses(sequence&lt;XRSpace&gt; <var>spaces</var>, XRSpace <var>baseSpace</var>, Float32Array <var>transforms</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>transforms</var> with the matrices of the poses of the <var>spaces</var> relative to the <var>baseSpace</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+          "html": "Initialize <var>pose</var> as follows:",
           "rationale": ".switch",
           "steps": [
             {
@@ -175,7 +175,7 @@
           "html": "<p>Let <var>allValid</var> be <code>true</code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"fillPoses(spaces, baseSpace, transforms)\" id=\"dom-xrframe-fillposes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fillPoses(sequence&lt;XRSpace&gt; <var>spaces</var>, XRSpace <var>baseSpace</var>, Float32Array <var>transforms</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method populates <var>transforms</var> with the matrices of the poses of the <var>spaces</var> relative to the <var>baseSpace</var>, and returns a boolean indicating whether all of the spaces have a valid pose.",
+          "html": "For each <var>space</var> in the <var>spaces</var> sequence:",
           "rationale": "populate",
           "steps": [
             {

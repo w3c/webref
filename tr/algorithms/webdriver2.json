@@ -5604,20 +5604,20 @@
           "html": "<p>Let <var>is string value</var> be false.\n\n </p>"
         },
         {
-          "html": "<p>If <var>value</var> is a <a href=\"https://www.w3.org/TR/webdriver2/#dfn-string\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-string-14\">string</a> set <var>value</var> to\n the <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-map-5\">map</a> «[\"<code>fallbackDefault</code>\"\n → <var>value</var>]» and set <var>is string value</var> to true.\n\n </p>"
+          "html": "<p>If <var>value</var> is a <a href=\"https://www.w3.org/TR/webdriver2/#dfn-string\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-string-14\">string</a> set <var>value</var> to\n the <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-map-6\">map</a> «[\"<code>fallbackDefault</code>\"\n → <var>value</var>]» and set <var>is string value</var> to true.\n\n </p>"
         },
         {
-          "html": "<p>If <var>value</var> is not a <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-map-6\">map</a> return\n <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-251\">error</a> with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-225\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invalid-argument-100\">invalid argument</a>.\n\n </p>"
+          "html": "<p>If <var>value</var> is not a <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-map-7\">map</a> return\n <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-251\">error</a> with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-225\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invalid-argument-100\">invalid argument</a>.\n\n </p>"
         },
         {
-          "html": "Let <var>user prompt handler</var> be an empty <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-map-7\">map</a>."
+          "html": "Let <var>user prompt handler</var> be an empty <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-map-8\">map</a>."
         },
         {
           "html": "For each <var>prompt type</var> → <var>handler</var> in <var>value</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>is string value</var> is false and <a href=\"https://www.w3.org/TR/webdriver2/#dfn-valid-prompt-types\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-valid-prompt-types-1\">valid prompt\n   types</a> does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-5\">contain</a> <var>prompt type</var>\n   return <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-252\">error</a> with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-226\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invalid-argument-101\">invalid argument</a>.\n\n   </p>"
+              "html": "<p>If <var>is string value</var> is false and <a href=\"https://www.w3.org/TR/webdriver2/#dfn-valid-prompt-types\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-valid-prompt-types-1\">valid prompt\n   types</a> does not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-6\">contain</a> <var>prompt type</var>\n   return <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-252\">error</a> with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-226\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invalid-argument-101\">invalid argument</a>.\n\n   </p>"
             },
             {
               "html": "<p>If <a href=\"https://www.w3.org/TR/webdriver2/#dfn-known-prompt-handlers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-known-prompt-handlers-1\">known prompt handlers</a> does not contain an entry\n   with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-handler-key\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-handler-key-1\">handler key</a> <var>handler</var> return <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-253\">error</a>\n   with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-227\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-argument\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invalid-argument-102\">invalid argument</a>.\n\n   </p>"
@@ -5661,7 +5661,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If the <a href=\"https://www.w3.org/TR/webdriver2/#dfn-user-prompt-handler\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-prompt-handler-6\">user prompt handler</a>\n   <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-6\">contains</a> <var>request prompt type</var>:",
+              "html": "If the <a href=\"https://www.w3.org/TR/webdriver2/#dfn-user-prompt-handler\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-prompt-handler-6\">user prompt handler</a>\n   <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-index-term-contains-for-map-7\">contains</a> <var>request prompt type</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -5709,7 +5709,7 @@
           "html": "<p>If the <a href=\"https://www.w3.org/TR/webdriver2/#dfn-user-prompt-handler\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-prompt-handler-12\">user prompt handler</a> has <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-size\" id=\"ref-for-index-term-size-for-map-1\">size</a> 1,\n and <a href=\"https://www.w3.org/TR/webdriver2/#dfn-user-prompt-handler\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-prompt-handler-13\">user prompt handler</a> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-index-term-contain-for-list-4\">contains</a>\n \"<code>fallbackDefault</code>\", return the result of <a href=\"https://www.w3.org/TR/webdriver2/#dfn-serialize-a-prompt-handler-configuration\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-serialize-a-prompt-handler-configuration-1\">serialize a prompt\n handler configuration</a> with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-user-prompt-handler\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-prompt-handler-14\">user prompt\n handler</a>[\"<code>fallbackDefault</code>\"].\n\n </p>"
         },
         {
-          "html": "<p>Let <var>serialized</var> be an empty <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-map-8\">map</a>.\n\n </p>"
+          "html": "<p>Let <var>serialized</var> be an empty <a data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-map-9\">map</a>.\n\n </p>"
         },
         {
           "html": "For each <var>key</var> → <code>value</code> of <a href=\"https://www.w3.org/TR/webdriver2/#dfn-user-prompt-handler\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-prompt-handler-15\">user prompt\n handler</a>:",
@@ -5744,7 +5744,7 @@
           "html": "<p>If <var>type</var> is \"<code>beforeUnload</code>\", return a\n   <a href=\"https://www.w3.org/TR/webdriver2/#dfn-prompt-handler-configuration\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prompt-handler-configuration-3\">prompt handler configuration</a> with <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/webdriver2/#dfn-handler\" class=\"internalDFN\" id=\"ref-for-dfn-handler-6\">handler</a> \"<code>accept</code>\"\n   and <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/webdriver2/#dfn-notify\" class=\"internalDFN\" id=\"ref-for-dfn-notify-5\">notify</a> false.\n\n </p>"
         },
         {
-          "html": "<p>If <var>handlers</var> contains \"<code>fallbackDefault</code>\"\n return <var>handlers</var>[\"<code>default</code>\"].\n\n </p>"
+          "html": "<p>If <var>handlers</var> contains \"<code>fallbackDefault</code>\"\n return <var>handlers</var>[\"<code>fallbackDefault</code>\"].\n\n </p>"
         },
         {
           "html": "<p>Return a <a href=\"https://www.w3.org/TR/webdriver2/#dfn-prompt-handler-configuration\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-prompt-handler-configuration-4\">prompt handler\n   configuration</a> with <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/webdriver2/#dfn-handler\" class=\"internalDFN\" id=\"ref-for-dfn-handler-7\">handler</a> \"<code>dismiss</code>\" and <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/webdriver2/#dfn-notify\" class=\"internalDFN\" id=\"ref-for-dfn-notify-6\">notify</a> true.\n</p>"

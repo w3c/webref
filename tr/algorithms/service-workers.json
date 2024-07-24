@@ -77,18 +77,18 @@
           "html": "<p>If the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#should-skip-event\" id=\"ref-for-should-skip-event\">Should Skip Event</a> algorithm with \"message\" and <var>serviceWorker</var> is true, then return.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ServiceWorker\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"postMessage(message, options)|postMessage(message)\" id=\"dom-serviceworker-postmessage-message-options\"><code>postMessage(<var>message</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "Run these substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#run-service-worker\" id=\"ref-for-run-service-worker\">Run Service Worker</a> algorithm with <var>serviceWorker</var> is <em>failure</em>, then return.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ServiceWorker\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"postMessage(message, options)|postMessage(message)\" id=\"dom-serviceworker-postmessage-message-options\"><code>postMessage(<var>message</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">Queue a task</a> on the <a data-link-type=\"dfn\">DOM manipulation task source</a> to run the following steps:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ServiceWorker\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"postMessage(message, options)|postMessage(message)\" id=\"dom-serviceworker-postmessage-message-options\"><code>postMessage(<var>message</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "Let <var>source</var> be determined by switching on the type of <var>incumbentGlobal</var>:",
                   "rationale": ".switch",
                   "steps": [
                     {
@@ -120,7 +120,7 @@
                   "html": "<p>Let <var>deserializeRecord</var> be <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserializewithtransfer\" id=\"ref-for-structureddeserializewithtransfer\">StructuredDeserializeWithTransfer</a>(<var>serializeWithTransferResult</var>, <var>destination</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\" id=\"ref-for-concept-global-object-realm\">Realm</a>).</p>\n            <p>If this throws an exception, let <var>e</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-create\" id=\"ref-for-concept-event-create\">creating an event</a> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/service-workers/#service-worker-container-messageerror-event\" id=\"ref-for-service-worker-container-messageerror-event\">messageerror</a></code>, using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#extendablemessageevent\" id=\"ref-for-extendablemessageevent\">ExtendableMessageEvent</a></code>, with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-extendablemessageevent-origin\" id=\"ref-for-dom-extendablemessageevent-origin\">origin</a></code> attribute initialized to <var>origin</var> and the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-extendablemessageevent-source\" id=\"ref-for-dom-extendablemessageevent-source\">source</a></code> attribute initialized to <var>source</var>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ServiceWorker\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"postMessage(message, options)|postMessage(message)\" id=\"dom-serviceworker-postmessage-message-options\"><code>postMessage(<var>message</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "Else:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -280,7 +280,7 @@
           "html": "<p>Let <var>readyPromise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#serviceworkercontainer-ready-promise\" id=\"ref-for-serviceworkercontainer-ready-promise②\">ready promise</a>.</p>"
         },
         {
-          "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ServiceWorkerContainer\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-serviceworkercontainer-ready\"><code>ready</code></dfn> attribute <em>must</em> run these steps:",
+          "html": "If <var>readyPromise</var> is pending, run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -359,7 +359,7 @@
           "html": "<p>Let <var>promise</var> be a new <a data-link-type=\"dfn\" href=\"http://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects④\">promise</a>.</p>"
         },
         {
-          "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ServiceWorkerContainer\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getRegistration(clientURL)|getRegistration()\" id=\"dom-serviceworkercontainer-getregistration\"><code>getRegistration(<var>clientURL</var>)</code></dfn> method steps are:",
+          "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -394,14 +394,14 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a>.</p>"
         },
         {
-          "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ServiceWorkerContainer\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-serviceworkercontainer-getregistrations\"><code>getRegistrations()</code></dfn> method steps are:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>registrations</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
             },
             {
-              "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ServiceWorkerContainer\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-serviceworkercontainer-getregistrations\"><code>getRegistrations()</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> (<var>storage key</var>, <var>scope</var>) → <var>registration</var> of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map②\">registration map</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -410,14 +410,14 @@
               ]
             },
             {
-              "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ServiceWorkerContainer\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-serviceworkercontainer-getregistrations\"><code>getRegistrations()</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④\">Queue a task</a> on <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①②\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop①\">responsible event loop</a>, using the <a data-link-type=\"dfn\">DOM manipulation task source</a>, to run the following steps:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>registrationObjects</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
                 },
                 {
-                  "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ServiceWorkerContainer\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-serviceworkercontainer-getregistrations\"><code>getRegistrations()</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>registration</var> of <var>registrations</var>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -569,7 +569,7 @@
           "html": "<p>Let <var>promise</var> be a new <a data-link-type=\"dfn\" href=\"http://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects⑤\">promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"ServiceWorkerGlobalScope\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-serviceworkerglobalscope-skipwaiting\"><code>skipWaiting()</code></dfn> method steps are:",
+          "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑧\">in parallel</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -653,14 +653,14 @@
           "html": "<p>Let <var>serializeWithTransferResult</var> be <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializewithtransfer\" id=\"ref-for-structuredserializewithtransfer①\">StructuredSerializeWithTransfer</a>(<var>message</var>, <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#dom-structuredserializeoptions-transfer\" id=\"ref-for-dom-structuredserializeoptions-transfer①\">transfer</a></code>\"]). Rethrow any exceptions.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Client\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"postMessage(message, options)|postMessage(message)\" id=\"dom-client-postmessage-message-options\"><code>postMessage(<var>message</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑨\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>targetClient</var> be null.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Client\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"postMessage(message, options)|postMessage(message)\" id=\"dom-client-postmessage-message-options\"><code>postMessage(<var>message</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-client\" id=\"ref-for-dfn-service-worker-client②⑦\">service worker client</a> <var>client</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -675,7 +675,7 @@
               "html": "<p>Let <var>destination</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#serviceworkercontainer\" id=\"ref-for-serviceworkercontainer①④\">ServiceWorkerContainer</a></code> object whose associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#serviceworkercontainer-service-worker-client\" id=\"ref-for-serviceworkercontainer-service-worker-client⑧\">service worker client</a> is <var>targetClient</var>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Client\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"postMessage(message, options)|postMessage(message)\" id=\"dom-client-postmessage-message-options\"><code>postMessage(<var>message</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "Add a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task③\">task</a> that runs the following steps to <var>destination</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-client-message-queue\" id=\"ref-for-dfn-client-message-queue⑤\">client message queue</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -718,7 +718,7 @@
           "html": "<p>Let <var>promise</var> be a new <a data-link-type=\"dfn\" href=\"http://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects⑦\">promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"WindowClient\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-windowclient-focus\"><code>focus()</code></dfn> method steps are:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">Queue a task</a> to run the following steps on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>'s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-client-service-worker-client\" id=\"ref-for-dfn-service-worker-client-service-worker-client⑤\">service worker client</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop②\">responsible event loop</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source\">user interaction task source</a>:",
           "rationale": "run",
           "steps": [
             {
@@ -737,7 +737,7 @@
               "html": "<p>Let <var>ancestorOriginsList</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-client-browsing-context\" id=\"ref-for-dfn-service-worker-client-browsing-context④\">browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\" id=\"ref-for-active-document③\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/history.html#location\" id=\"ref-for-location\">Location</a></code> object’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html\" id=\"ref-for-concept-location-ancestor-origins-list\">ancestor origins list</a>'s associated list.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"WindowClient\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-windowclient-focus\"><code>focus()</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑥\">Queue a task</a> to run the following steps on <var>serviceWorkerEventLoop</var> using the <a data-link-type=\"dfn\">DOM manipulation task source</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -783,7 +783,7 @@
           "html": "<p>Let <var>promise</var> be a new <a data-link-type=\"dfn\" href=\"http://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects①①\">promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"WindowClient\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-windowclient-navigate\"><code>navigate(url)</code></dfn> method steps are:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑦\">Queue a task</a> to run the following steps on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a>'s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-client-service-worker-client\" id=\"ref-for-dfn-service-worker-client-service-worker-client⑧\">service worker client</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop③\">responsible event loop</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source①\">user interaction task source</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -811,7 +811,7 @@
               "html": "<p>Let <var>ancestorOriginsList</var> be <var>browsingContext</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\" id=\"ref-for-active-document⑥\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/history.html#location\" id=\"ref-for-location①\">Location</a></code> object’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html\" id=\"ref-for-concept-location-ancestor-origins-list①\">ancestor origins list</a>'s associated list.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"WindowClient\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-windowclient-navigate\"><code>navigate(url)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①⓪\">Queue a task</a> to run the following steps on <var>serviceWorkerEventLoop</var> using the <a data-link-type=\"dfn\">DOM manipulation task source</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -842,11 +842,11 @@
           "html": "<p>Let <var>promise</var> be a new <a data-link-type=\"dfn\" href=\"http://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects①②\">promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-clients-get\"><code>get(<var>id</var>)</code></dfn> method steps are:",
+          "html": "Run these substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⓪\">in parallel</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-clients-get\"><code>get(<var>id</var>)</code></dfn> method steps are:",
+              "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-client\" id=\"ref-for-dfn-service-worker-client②⑧\">service worker client</a> <var>client</var> where the result of running <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#obtain-a-storage-key\" id=\"ref-for-obtain-a-storage-key③\">obtain a storage key</a> given <var>client</var> <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key-equal\" id=\"ref-for-storage-key-equal①\">equals</a> the associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#serviceworkerglobalscope-service-worker\" id=\"ref-for-serviceworkerglobalscope-service-worker⑨\">service worker</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-containing-service-worker-registration\" id=\"ref-for-dfn-containing-service-worker-registration⑥\">containing service worker registration</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key④\">storage key</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -880,14 +880,14 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑦\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(options)|matchAll()\" id=\"dom-clients-matchall\"><code>matchAll(<var>options</var>)</code></dfn> method steps are:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①①\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>targetClients</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(options)|matchAll()\" id=\"dom-clients-matchall\"><code>matchAll(<var>options</var>)</code></dfn> method steps are:",
+              "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-client\" id=\"ref-for-dfn-service-worker-client②⑨\">service worker client</a> <var>client</var> where the result of running <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#obtain-a-storage-key\" id=\"ref-for-obtain-a-storage-key④\">obtain a storage key</a> given <var>client</var> <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key-equal\" id=\"ref-for-storage-key-equal②\">equals</a> the associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#serviceworkerglobalscope-service-worker\" id=\"ref-for-serviceworkerglobalscope-service-worker①⓪\">service worker</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-containing-service-worker-registration\" id=\"ref-for-dfn-containing-service-worker-registration⑦\">containing service worker registration</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key⑤\">storage key</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -911,11 +911,11 @@
               "html": "<p>Let <var>matchedClients</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(options)|matchAll()\" id=\"dom-clients-matchall\"><code>matchAll(<var>options</var>)</code></dfn> method steps are:",
+              "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-client\" id=\"ref-for-dfn-service-worker-client③⓪\">service worker client</a> <var>client</var> in <var>targetClients</var>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(options)|matchAll()\" id=\"dom-clients-matchall\"><code>matchAll(<var>options</var>)</code></dfn> method steps are:",
+                  "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-clientqueryoptions-type\" id=\"ref-for-dom-clientqueryoptions-type\">type</a></code>\"] is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-clienttype-window\" id=\"ref-for-dom-clienttype-window②\">\"window\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-clienttype-all\" id=\"ref-for-dom-clienttype-all\">\"all\"</a></code>, and <var>client</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object⑧\">environment settings object</a> or is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-window-client\" id=\"ref-for-dfn-window-client①⓪\">window client</a>, then:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -934,7 +934,7 @@
                       "html": "<p>Else, set <var>browsingContext</var> to <var>client</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-target-browsing-context\" id=\"ref-for-concept-environment-target-browsing-context\">target browsing context</a>.</p>"
                     },
                     {
-                      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(options)|matchAll()\" id=\"dom-clients-matchall\"><code>matchAll(<var>options</var>)</code></dfn> method steps are:",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①①\">Queue a task</a> <var>task</var> to run the following substeps on <var>browsingContext</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-loop\" id=\"ref-for-event-loop⑦\">event loop</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source②\">user interaction task source</a>:",
                       "rationale": "if",
                       "steps": [
                         {
@@ -961,7 +961,7 @@
                       "html": "<p>Wait for <var>task</var> to have executed.</p>"
                     },
                     {
-                      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(options)|matchAll()\" id=\"dom-clients-matchall\"><code>matchAll(<var>options</var>)</code></dfn> method steps are:",
+                      "html": "If <var>isClientEnumerable</var> is true, then:",
                       "rationale": "add",
                       "steps": [
                         {
@@ -972,7 +972,7 @@
                   ]
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(options)|matchAll()\" id=\"dom-clients-matchall\"><code>matchAll(<var>options</var>)</code></dfn> method steps are:",
+                  "html": "Else if <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-clientqueryoptions-type\" id=\"ref-for-dom-clientqueryoptions-type①\">type</a></code>\"] is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-clienttype-worker\" id=\"ref-for-dom-clienttype-worker①\">\"worker\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-clienttype-all\" id=\"ref-for-dom-clienttype-all①\">\"all\"</a></code> and <var>client</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-dedicatedworker-client\" id=\"ref-for-dfn-dedicatedworker-client②\">dedicated worker client</a>, or <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-clientqueryoptions-type\" id=\"ref-for-dom-clientqueryoptions-type②\">type</a></code>\"] is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-clienttype-sharedworker\" id=\"ref-for-dom-clienttype-sharedworker①\">\"sharedworker\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-clienttype-all\" id=\"ref-for-dom-clienttype-all②\">\"all\"</a></code> and <var>client</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-sharedworker-client\" id=\"ref-for-dfn-sharedworker-client②\">shared worker client</a>, then:",
                   "rationale": "add",
                   "steps": [
                     {
@@ -983,14 +983,14 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(options)|matchAll()\" id=\"dom-clients-matchall\"><code>matchAll(<var>options</var>)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①②\">Queue a task</a> to run the following steps on <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①⑧\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop④\">responsible event loop</a> using the <a data-link-type=\"dfn\">DOM manipulation task source</a>:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>clientObjects</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(options)|matchAll()\" id=\"dom-clients-matchall\"><code>matchAll(<var>options</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>windowData</var> in <var>matchedWindowData</var>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -1002,7 +1002,7 @@
                   ]
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(options)|matchAll()\" id=\"dom-clients-matchall\"><code>matchAll(<var>options</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>client</var> in <var>matchedClients</var>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -1053,14 +1053,14 @@
           "html": "<p>Let <var>promise</var> be a new <a data-link-type=\"dfn\" href=\"http://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑥\">promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-clients-openwindow\"><code>openWindow(<var>url</var>)</code></dfn> method steps are:",
+          "html": "Run these substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①②\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>newContext</var> be a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-clients-openwindow\"><code>openWindow(<var>url</var>)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①③\">Queue a task</a> to run the following steps on <var>newContext</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#window\" id=\"ref-for-window④\">Window</a></code> object’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①⓪\">environment settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop⑤\">responsible event loop</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source③\">user interaction task source</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -1082,7 +1082,7 @@
                   "html": "<p>Let <var>ancestorOriginsList</var> be <var>newContext</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-document\" id=\"ref-for-active-document①③\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/history.html#location\" id=\"ref-for-location③\">Location</a></code> object’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html\" id=\"ref-for-concept-location-ancestor-origins-list③\">ancestor origins list</a>'s associated list.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-clients-openwindow\"><code>openWindow(<var>url</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①⑤\">Queue a task</a> to run the following steps on <var>serviceWorkerEventLoop</var> using the <a data-link-type=\"dfn\">DOM manipulation task source</a>:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1118,11 +1118,11 @@
           "html": "<p>Let <var>promise</var> be a new <a data-link-type=\"dfn\" href=\"http://tc39.github.io/ecma262/#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑧\">promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-clients-claim\"><code>claim()</code></dfn> method steps are:",
+          "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①③\">in parallel</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-clients-claim\"><code>claim()</code></dfn> method steps are:",
+              "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-service-worker-client\" id=\"ref-for-dfn-service-worker-client③①\">service worker client</a> <var>client</var> where the result of running <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#obtain-a-storage-key\" id=\"ref-for-obtain-a-storage-key⑥\">obtain a storage key</a> given <var>client</var> <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key-equal\" id=\"ref-for-storage-key-equal④\">equals</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#serviceworkerglobalscope-service-worker\" id=\"ref-for-serviceworkerglobalscope-service-worker①④\">service worker</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-containing-service-worker-registration\" id=\"ref-for-dfn-containing-service-worker-registration⑨\">containing service worker registration</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key⑦\">storage key</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -1141,7 +1141,7 @@
                   "html": "<p>If <var>registration</var> is not the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#serviceworkerglobalscope-service-worker\" id=\"ref-for-serviceworkerglobalscope-service-worker①⑤\">service worker</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-containing-service-worker-registration\" id=\"ref-for-dfn-containing-service-worker-registration①⓪\">containing service worker registration</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Clients\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-clients-claim\"><code>claim()</code></dfn> method steps are:",
+                  "html": "If <var>client</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-active-service-worker\" id=\"ref-for-concept-environment-active-service-worker②③\">active service worker</a> is not the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#serviceworkerglobalscope-service-worker\" id=\"ref-for-serviceworkerglobalscope-service-worker①⑦\">service worker</a>, then:",
                   "rationale": "invoke",
                   "steps": [
                     {
@@ -1241,7 +1241,7 @@
           "html": "<p>Let <var>targetRealm</var> be <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③\">relevant Realm</a>.</p>"
         },
         {
-          "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FetchEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fetchevent-respondwith\"><code>respondWith(<var>r</var>)</code></dfn> method steps are:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-rejection\" id=\"ref-for-upon-rejection①\">Upon rejection</a> of <var>r</var>:",
           "rationale": "set",
           "steps": [
             {
@@ -1253,14 +1253,14 @@
           ]
         },
         {
-          "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FetchEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fetchevent-respondwith\"><code>respondWith(<var>r</var>)</code></dfn> method steps are:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment①\">Upon fulfillment</a> of <var>r</var> with <var>response</var>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>response</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#response\" id=\"ref-for-response③\">Response</a></code> object, then set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#fetchevent-respond-with-error-flag\" id=\"ref-for-fetchevent-respond-with-error-flag①\">respond-with error flag</a>.</p>"
             },
             {
-              "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FetchEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fetchevent-respondwith\"><code>respondWith(<var>r</var>)</code></dfn> method steps are:",
+              "html": "Else:",
               "rationale": "let",
               "steps": [
                 {
@@ -1276,18 +1276,18 @@
                   "html": "<p>Let <var>potentialResponse</var> be a copy of <var>response</var>’s associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response\">response</a>, except for its <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body\">body</a>.</p>"
                 },
                 {
-                  "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FetchEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fetchevent-respondwith\"><code>respondWith(<var>r</var>)</code></dfn> method steps are:",
+                  "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body①\">body</a> is non-null, run these substeps:",
                   "rationale": "let",
                   "steps": [
                     {
                       "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader\">getting a reader</a> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body②\">body</a>'s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-stream\" id=\"ref-for-concept-body-stream\">stream</a>.</p>"
                     },
                     {
-                      "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FetchEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fetchevent-respondwith\"><code>respondWith(<var>r</var>)</code></dfn> method steps are:",
+                      "html": "Let <var>pullAlgorithm</var> be an action that runs these steps:",
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FetchEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fetchevent-respondwith\"><code>respondWith(<var>r</var>)</code></dfn> method steps are:",
+                          "html": "<p>Let <var>readRequest</var> be a new <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#read-request\" id=\"ref-for-read-request\">read request</a> with the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\" id=\"ref-for-struct-item①\">items</a>:</p>\n                <dl>\n                 <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#read-request-chunk-steps\" id=\"ref-for-read-request-chunk-steps\">chunk steps</a>, given <var>chunk</var>\n                 </dt><dd data-md=\"\">\n                  \n                 </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#read-request-close-steps\" id=\"ref-for-read-request-close-steps\">close steps</a>\n                 </dt><dd data-md=\"\">\n                  \n                 </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#read-request-error-steps\" id=\"ref-for-read-request-error-steps\">error steps</a>\n                 </dt><dd data-md=\"\">\n                  \n                </dd></dl>",
                           "rationale": "assert",
                           "steps": [
                             {
@@ -1302,7 +1302,7 @@
                           ],
                           "additional": [
                             {
-                              "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FetchEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fetchevent-respondwith\"><code>respondWith(<var>r</var>)</code></dfn> method steps are:",
+                              "html": "",
                               "rationale": "set",
                               "steps": [
                                 {
@@ -1311,7 +1311,7 @@
                               ]
                             },
                             {
-                              "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FetchEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fetchevent-respondwith\"><code>respondWith(<var>r</var>)</code></dfn> method steps are:",
+                              "html": "",
                               "rationale": "error",
                               "steps": [
                                 {
@@ -1342,7 +1342,7 @@
                       "html": "<p>Set <var>potentialResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body③\">body</a> to a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body\" id=\"ref-for-concept-body\">body</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-stream\" id=\"ref-for-concept-body-stream①\">stream</a> is <var>newStream</var>.</p>"
                     },
                     {
-                      "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FetchEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fetchevent-respondwith\"><code>respondWith(<var>r</var>)</code></dfn> method steps are:",
+                      "html": "Run these subsubsteps repeatedly <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①④\">in parallel</a> while <var>done</var> is false:",
                       "rationale": "if",
                       "steps": [
                         {
@@ -1352,7 +1352,7 @@
                           "html": "<p>Otherwise, if <var>bytes</var> is empty and <var>end-of-body</var> is true, then <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-close\" id=\"ref-for-readablestream-close\">close</a> <var>newStream</var> and set <var>done</var> to true.</p>"
                         },
                         {
-                          "html": "<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FetchEvent\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-fetchevent-respondwith\"><code>respondWith(<var>r</var>)</code></dfn> method steps are:",
+                          "html": "Otherwise, if <var>bytes</var> is not empty, run these subsubsubsteps:",
                           "rationale": "let",
                           "steps": [
                             {
@@ -1395,7 +1395,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑧\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cache-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "Run these substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑤\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -1405,7 +1405,7 @@
               "html": "<p>Wait until <var>p</var> settles.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cache-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "If <var>p</var> rejects with an exception, then:",
               "rationale": "reject",
               "steps": [
                 {
@@ -1414,11 +1414,11 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cache-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "Else if <var>p</var> resolves with an array, <var>responses</var>, then:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cache-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "If <var>responses</var> is an empty array, then:",
                   "rationale": "resolve",
                   "steps": [
                     {
@@ -1427,7 +1427,7 @@
                   ]
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cache-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "Else:",
                   "rationale": "resolve",
                   "steps": [
                     {
@@ -1454,11 +1454,11 @@
           "html": "<p>Let <var>r</var> be null.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-cache-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "If the optional argument <var>request</var> is not omitted, then:",
           "rationale": "if",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-cache-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "If <var>request</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request③\">Request</a></code> object, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -1470,7 +1470,7 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-cache-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "Else if <var>request</var> is a string, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -1487,18 +1487,18 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑨\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-cache-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "Run these substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑥\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>responses</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-cache-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "If the optional argument <var>request</var> is omitted, then:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-cache-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>requestResponse</var> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-relevant-request-response-list\" id=\"ref-for-dfn-relevant-request-response-list\">relevant request response list</a>:",
                   "rationale": "add",
                   "steps": [
                     {
@@ -1509,14 +1509,14 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-cache-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "Else:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>requestResponses</var> be the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#query-cache\" id=\"ref-for-query-cache\">Query Cache</a> with <var>r</var> and <var>options</var>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-cache-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>requestResponse</var> of <var>requestResponses</var>:",
                   "rationale": "add",
                   "steps": [
                     {
@@ -1527,7 +1527,7 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-cache-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>response</var> of <var>responses</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -1536,14 +1536,14 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-cache-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①⑥\">Queue a task</a>, on <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②②\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop⑥\">responsible event loop</a> using the <a data-link-type=\"dfn\">DOM manipulation task source</a>, to perform the following steps:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>responseList</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"matchAll(request, options)|matchAll(request)|matchAll()\" id=\"dom-cache-matchall\"><code>matchAll(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>response</var> of <var>responses</var>:",
                   "rationale": "add",
                   "steps": [
                     {
@@ -1593,7 +1593,7 @@
           "html": "<p>Let <var>requestList</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+          "html": "For each <var>request</var> whose type is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request⑤\">Request</a></code> in <var>requests</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1605,14 +1605,14 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+          "html": "For each <var>request</var> in <var>requests</var>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>r</var> be the associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request③\">request</a> of the result of invoking the initial value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request⑥\">Request</a></code> as constructor with <var>request</var> as its argument. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throws</a> an exception, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> that exception.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+              "html": "If <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url②\">url</a>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is not one of \"<code>http</code>\" and \"<code>https</code>\", then:",
               "rationale": "terminate",
               "steps": [
                 {
@@ -1636,25 +1636,25 @@
               "html": "<p>Let <var>responsePromise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①⓪\">a new promise</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+              "html": "To <a data-link-type=\"dfn\">process response</a> for <var>response</var>, run these substeps:",
               "rationale": "if",
               "steps": [
                 {
                   "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-type\" id=\"ref-for-concept-response-type①\">type</a> is \"<code>error</code>\", or <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status\">ok status</a> or is <code>206</code>, reject <var>responsePromise</var> with a <code>TypeError</code>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+                  "html": "Else if <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a> contains a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header\">header</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name\">named</a> `<code>Vary</code>`, then:",
                   "rationale": "let",
                   "steps": [
                     {
                       "html": "<p>Let <var>fieldValues</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a> containing the elements corresponding to the <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc7230#section-3.2\" id=\"ref-for-section-3.2\">field-values</a> of the <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc7231#section-7.1.4\" id=\"ref-for-section-7.1.4\">Vary</a> header.</p>"
                     },
                     {
-                      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>fieldValue</var> of <var>fieldValues</var>:",
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+                          "html": "If <var>fieldValue</var> matches \"<code>*</code>\", then:",
                           "rationale": "reject",
                           "steps": [
                             {
@@ -1675,7 +1675,7 @@
               ],
               "additional": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+                  "html": "To <a data-link-type=\"dfn\">process response end-of-body</a> for <var>response</var>, run these substeps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1697,7 +1697,7 @@
           "html": "<p>Let <var>p</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#waiting-for-all-promise\" id=\"ref-for-waiting-for-all-promise\">getting a promise to wait for all</a> of <var>responsePromises</var>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+          "html": "Return the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\" id=\"ref-for-dfn-perform-steps-once-promise-is-settled①\">reacting</a> to <var>p</var> with a fulfillment handler that, when called with argument <var>responses</var>, performs the following substeps:",
           "rationale": "let",
           "steps": [
             {
@@ -1707,7 +1707,7 @@
               "html": "<p>Let <var>index</var> be zero.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+              "html": "For each <var>response</var> in <var>responses</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -1737,7 +1737,7 @@
               "html": "<p>Let <var>cacheJobPromise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①①\">a new promise</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+              "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑧\">in parallel</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -1747,7 +1747,7 @@
                   "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#batch-cache-operations\" id=\"ref-for-batch-cache-operations\">Batch Cache Operations</a> with <var>operations</var>. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">throws</a> an exception, set <var>errorData</var> to the exception.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-addall\"><code>addAll(<var>requests</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①⑦\">Queue a task</a>, on <var>cacheJobPromise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②③\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop⑦\">responsible event loop</a> using the <a data-link-type=\"dfn\">DOM manipulation task source</a>, to perform the following substeps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1780,7 +1780,7 @@
           "html": "<p>If <var>request</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request⑦\">Request</a></code> object, then set <var>innerRequest</var> to <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request④\">request</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-put\"><code>put(<var>request</var>, <var>response</var>)</code></dfn> method steps are:",
+          "html": "Else:",
           "rationale": "let",
           "steps": [
             {
@@ -1801,14 +1801,14 @@
           "html": "<p>If <var>innerResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①\">status</a> is <code>206</code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> a <code>TypeError</code>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-put\"><code>put(<var>request</var>, <var>response</var>)</code></dfn> method steps are:",
+          "html": "If <var>innerResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a> contains a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header①\">header</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name①\">named</a> `<code>Vary</code>`, then:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>fieldValues</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a> containing the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑤\">items</a> corresponding to the <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc7231#section-7.1.4\" id=\"ref-for-section-7.1.4①\">Vary</a> header’s <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc7230#section-3.2\" id=\"ref-for-section-3.2①\">field-values</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-put\"><code>put(<var>request</var>, <var>response</var>)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>fieldValue</var> in <var>fieldValues</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -1828,7 +1828,7 @@
           "html": "<p>Let <var>bodyReadPromise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with②\">a promise resolved with</a> undefined.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-put\"><code>put(<var>request</var>, <var>response</var>)</code></dfn> method steps are:",
+          "html": "If <var>innerResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body⑥\">body</a> is non-null, run these substeps:",
           "rationale": "let",
           "steps": [
             {
@@ -1864,14 +1864,14 @@
           "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥\">relevant realm</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-put\"><code>put(<var>request</var>, <var>response</var>)</code></dfn> method steps are:",
+          "html": "Return the result of the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment②\">fulfillment</a> of <var>bodyReadPromise</var>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>cacheJobPromise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①②\">a new promise</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-put\"><code>put(<var>request</var>, <var>response</var>)</code></dfn> method steps are:",
+              "html": "Return <var>cacheJobPromise</var> and run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑨\">in parallel</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -1881,7 +1881,7 @@
                   "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#batch-cache-operations\" id=\"ref-for-batch-cache-operations①\">Batch Cache Operations</a> with <var>operations</var>. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪\">throws</a> an exception, set <var>errorData</var> to the exception.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cache-put\"><code>put(<var>request</var>, <var>response</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①⑧\">Queue a task</a>, on <var>cacheJobPromise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②④\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop⑧\">responsible event loop</a> using the <a data-link-type=\"dfn\">DOM manipulation task source</a>, to perform the following substeps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1908,7 +1908,7 @@
           "html": "<p>Let <var>r</var> be null.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"delete(request, options)|delete(request)\" id=\"dom-cache-delete\"><code>delete(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "If <var>request</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request⑨\">Request</a></code> object, then:",
           "rationale": "set",
           "steps": [
             {
@@ -1920,7 +1920,7 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"delete(request, options)|delete(request)\" id=\"dom-cache-delete\"><code>delete(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "Else if <var>request</var> is a string, then:",
           "rationale": "set",
           "steps": [
             {
@@ -1953,7 +1953,7 @@
           "html": "<p>Let <var>cacheJobPromise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①③\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"delete(request, options)|delete(request)\" id=\"dom-cache-delete\"><code>delete(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②⓪\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -1963,11 +1963,11 @@
               "html": "<p>Let <var>requestResponses</var> be the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#batch-cache-operations\" id=\"ref-for-batch-cache-operations②\">Batch Cache Operations</a> with <var>operations</var>. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①②\">throws</a> an exception, set <var>errorData</var> to the exception.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"delete(request, options)|delete(request)\" id=\"dom-cache-delete\"><code>delete(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①⑨\">Queue a task</a>, on <var>cacheJobPromise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②⑤\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop⑨\">responsible event loop</a> using the <a data-link-type=\"dfn\">DOM manipulation task source</a>, to perform the following substeps:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"delete(request, options)|delete(request)\" id=\"dom-cache-delete\"><code>delete(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "If <var>errorData</var> is null, then:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -2000,11 +2000,11 @@
           "html": "<p>Let <var>r</var> be null.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"keys(request, options)|keys(request)|keys()\" id=\"dom-cache-keys\"><code>keys(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "If the optional argument <var>request</var> is not omitted, then:",
           "rationale": "if",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"keys(request, options)|keys(request)|keys()\" id=\"dom-cache-keys\"><code>keys(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "If <var>request</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request①①\">Request</a></code> object, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -2016,7 +2016,7 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"keys(request, options)|keys(request)|keys()\" id=\"dom-cache-keys\"><code>keys(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "Else if <var>request</var> is a string, then:",
               "rationale": "set",
               "steps": [
                 {
@@ -2033,18 +2033,18 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①④\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"keys(request, options)|keys(request)|keys()\" id=\"dom-cache-keys\"><code>keys(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "Run these substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②①\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>requests</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"keys(request, options)|keys(request)|keys()\" id=\"dom-cache-keys\"><code>keys(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "If the optional argument <var>request</var> is omitted, then:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"keys(request, options)|keys(request)|keys()\" id=\"dom-cache-keys\"><code>keys(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>requestResponse</var> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-relevant-request-response-list\" id=\"ref-for-dfn-relevant-request-response-list①\">relevant request response list</a>:",
                   "rationale": "add",
                   "steps": [
                     {
@@ -2055,14 +2055,14 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"keys(request, options)|keys(request)|keys()\" id=\"dom-cache-keys\"><code>keys(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "Else:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>requestResponses</var> be the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#query-cache\" id=\"ref-for-query-cache①\">Query Cache</a> with <var>r</var> and <var>options</var>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"keys(request, options)|keys(request)|keys()\" id=\"dom-cache-keys\"><code>keys(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>requestResponse</var> of <var>requestResponses</var>:",
                   "rationale": "add",
                   "steps": [
                     {
@@ -2073,14 +2073,14 @@
               ]
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"keys(request, options)|keys(request)|keys()\" id=\"dom-cache-keys\"><code>keys(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②⓪\">Queue a task</a>, on <var>promise</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②⑥\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop①⓪\">responsible event loop</a> using the <a data-link-type=\"dfn\">DOM manipulation task source</a>, to perform the following steps:",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>requestList</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a>.</p>"
                 },
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Cache\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"keys(request, options)|keys(request)|keys()\" id=\"dom-cache-keys\"><code>keys(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>request</var> of <var>requests</var>:",
                   "rationale": "add",
                   "steps": [
                     {
@@ -2107,19 +2107,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cachestorage-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-multicachequeryoptions-cachename\" id=\"ref-for-dom-multicachequeryoptions-cachename\">cacheName</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>, then:",
           "rationale": "return",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cachestorage-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①⑤\">a new promise</a> <var>promise</var> and run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②②\">in parallel</a>:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cachestorage-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate①\">For each</a> <var>cacheName</var> → <var>cache</var> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-relevant-name-to-cache-map\" id=\"ref-for-dfn-relevant-name-to-cache-map\">relevant name to cache map</a>:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cachestorage-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                      "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-multicachequeryoptions-cachename\" id=\"ref-for-dom-multicachequeryoptions-cachename①\">cacheName</a></code>\"] matches <var>cacheName</var>, then:",
                       "rationale": "resolve",
                       "steps": [
                         {
@@ -2140,18 +2140,18 @@
           ]
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cachestorage-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+          "html": "Else:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with⑤\">a promise resolved with</a> undefined.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cachestorage-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate②\">For each</a> <var>cacheName</var> → <var>cache</var> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-relevant-name-to-cache-map\" id=\"ref-for-dfn-relevant-name-to-cache-map①\">relevant name to cache map</a>:",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"match(request, options)|match(request)\" id=\"dom-cachestorage-match\"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method steps are:",
+                  "html": "Set <var>promise</var> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\" id=\"ref-for-dfn-perform-steps-once-promise-is-settled②\">reacting</a> to itself with a fulfillment handler that, when called with argument <var>response</var>, performs the following substeps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -2181,11 +2181,11 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①⑥\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cachestorage-has\"><code>has(<var>cacheName</var>)</code></dfn> method steps are:",
+          "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②③\">in parallel</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cachestorage-has\"><code>has(<var>cacheName</var>)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate③\">For each</a> <var>key</var> → <var>value</var> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-relevant-name-to-cache-map\" id=\"ref-for-dfn-relevant-name-to-cache-map②\">relevant name to cache map</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -2213,15 +2213,15 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①⑦\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cachestorage-open\"><code>open(<var>cacheName</var>)</code></dfn> method steps are:",
+          "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②④\">in parallel</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cachestorage-open\"><code>open(<var>cacheName</var>)</code></dfn> method steps are:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate④\">For each</a> <var>key</var> → <var>value</var> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-relevant-name-to-cache-map\" id=\"ref-for-dfn-relevant-name-to-cache-map③\">relevant name to cache map</a>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cachestorage-open\"><code>open(<var>cacheName</var>)</code></dfn> method steps are:",
+                  "html": "If <var>cacheName</var> matches <var>key</var>, then:",
                   "rationale": "resolve",
                   "steps": [
                     {
@@ -2260,11 +2260,11 @@
           "html": "<p>Let <var>promise</var> be the result of running the algorithm specified in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-cachestorage-has\" id=\"ref-for-dom-cachestorage-has②\">has(cacheName)</a></code> method with <var>cacheName</var>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cachestorage-delete\"><code>delete(<var>cacheName</var>)</code></dfn> method steps are:",
+          "html": "Return the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\" id=\"ref-for-dfn-perform-steps-once-promise-is-settled③\">reacting</a> to <var>promise</var> with a fulfillment handler that, when called with argument <var>cacheExists</var>, performs the following substeps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cachestorage-delete\"><code>delete(<var>cacheName</var>)</code></dfn> method steps are:",
+              "html": "If <var>cacheExists</var> is false, then:",
               "rationale": "return",
               "steps": [
                 {
@@ -2276,7 +2276,7 @@
               "html": "<p>Let <var>cacheJobPromise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①⑧\">a new promise</a>.</p>"
             },
             {
-              "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cachestorage-delete\"><code>delete(<var>cacheName</var>)</code></dfn> method steps are:",
+              "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②⑤\">in parallel</a>:",
               "rationale": "remove",
               "steps": [
                 {
@@ -2304,7 +2304,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①⑨\">a new promise</a>.</p>"
         },
         {
-          "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"CacheStorage\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-cachestorage-keys\"><code>keys()</code></dfn> method steps are:",
+          "html": "Run the following substeps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②⑥\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {

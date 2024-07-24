@@ -479,7 +479,7 @@
           "html": "<p>Otherwise, let <var>result</var> initially be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a>.</p>"
         },
         {
-          "html": "To <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-an-anb-value\">serialize an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#anb-production\" id=\"ref-for-anb-production\">&lt;an+b&gt;</a> value<a class=\"self-link\" href=\"https://www.w3.org/TR/css-syntax-3/#serialize-an-anb-value\"></a></dfn>,\n\t\twith integer values <var>A</var> and <var>B</var>:",
+          "html": "<dl class=\"switch\">\n       <dt data-md=\"\"><var>A</var> is <code>1</code>\n       </dt><dd data-md=\"\">\n        <p>Append \"n\" to <var>result</var>.</p>\n       </dd><dt data-md=\"\"><var>A</var> is <code>-1</code>\n       </dt><dd data-md=\"\">\n        <p>Append \"-n\" to <var>result</var>.</p>\n       </dd><dt data-md=\"\"><var>A</var> is non-zero\n       </dt><dd data-md=\"\">\n        <p>Serialize <var>A</var> and append it to <var>result</var>,\nthen append \"n\" to <var>result</var>.</p>\n      </dd></dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -502,7 +502,7 @@
           ]
         },
         {
-          "html": "To <dfn data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-an-anb-value\">serialize an <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-syntax-3/#anb-production\" id=\"ref-for-anb-production\">&lt;an+b&gt;</a> value<a class=\"self-link\" href=\"https://www.w3.org/TR/css-syntax-3/#serialize-an-anb-value\"></a></dfn>,\n\t\twith integer values <var>A</var> and <var>B</var>:",
+          "html": "<dl class=\"switch\">\n       <dt data-md=\"\"><var>B</var> is greater than zero\n       </dt><dd data-md=\"\">\n        <p>Append \"+\" to <var>result</var>,\nthen append the serialization of <var>B</var> to <var>result</var>.</p>\n       </dd><dt data-md=\"\"><var>B</var> is less than zero\n       </dt><dd data-md=\"\">\n        <p>Append the serialization of <var>B</var> to <var>result</var>.</p>\n      </dd></dl>",
           "rationale": ".switch",
           "steps": [
             {

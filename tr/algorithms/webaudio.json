@@ -91,11 +91,11 @@
           "html": "<p>If <var>can decode</var> is <em>true</em>, attempt to decode the encoded <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-decodeaudiodata-audiodata-successcallback-errorcallback-audiodata\" id=\"ref-for-dom-baseaudiocontext-decodeaudiodata-audiodata-successcallback-errorcallback-audiodata③\">audioData</a></code> into <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#linear-pcm\" id=\"ref-for-linear-pcm①\">linear PCM</a>. In case of\nfailure, set <var>can decode</var> to <em>false</em>.</p>"
         },
         {
-          "html": "When queuing a decoding operation to be performed on another\n\tthread, the following steps MUST happen on a thread that is not\n\tthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#control-thread\" id=\"ref-for-control-thread\">control thread</a> nor the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#rendering-thread\" id=\"ref-for-rendering-thread\">rendering thread</a>,\n\tcalled the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BaseAudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-baseaudiocontext-decoding-thread\"><code>decoding thread</code></dfn>.",
+          "html": "If <var>can decode</var> is <code>false</code>, <a href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\"> queue a media element task</a> to execute the following steps:",
           "rationale": "let",
           "steps": [
             {
-              "html": "When queuing a decoding operation to be performed on another\n\tthread, the following steps MUST happen on a thread that is not\n\tthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#control-thread\" id=\"ref-for-control-thread\">control thread</a> nor the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#rendering-thread\" id=\"ref-for-rendering-thread\">rendering thread</a>,\n\tcalled the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BaseAudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-baseaudiocontext-decoding-thread\"><code>decoding thread</code></dfn>.",
+              "html": "Let <var>error</var> be a <code>DOMException</code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#encodingerror\" id=\"ref-for-encodingerror\">EncodingError</a></code>.",
               "rationale": "reject",
               "steps": [
                 {
@@ -109,14 +109,14 @@
           ]
         },
         {
-          "html": "When queuing a decoding operation to be performed on another\n\tthread, the following steps MUST happen on a thread that is not\n\tthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#control-thread\" id=\"ref-for-control-thread\">control thread</a> nor the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#rendering-thread\" id=\"ref-for-rendering-thread\">rendering thread</a>,\n\tcalled the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BaseAudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-baseaudiocontext-decoding-thread\"><code>decoding thread</code></dfn>.",
+          "html": "Otherwise:",
           "rationale": "take",
           "steps": [
             {
               "html": "<p>Take the result, representing the decoded <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#linear-pcm\" id=\"ref-for-linear-pcm②\">linear PCM</a> audio data, and resample it to the sample-rate of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#baseaudiocontext\" id=\"ref-for-baseaudiocontext①①\">BaseAudioContext</a></code> if it is different from\nthe sample-rate of <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-decodeaudiodata-audiodata-successcallback-errorcallback-audiodata\" id=\"ref-for-dom-baseaudiocontext-decodeaudiodata-audiodata-successcallback-errorcallback-audiodata④\">audioData</a></code>.</p>"
             },
             {
-              "html": "When queuing a decoding operation to be performed on another\n\tthread, the following steps MUST happen on a thread that is not\n\tthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#control-thread\" id=\"ref-for-control-thread\">control thread</a> nor the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#rendering-thread\" id=\"ref-for-rendering-thread\">rendering thread</a>,\n\tcalled the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BaseAudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-baseaudiocontext-decoding-thread\"><code>decoding thread</code></dfn>.",
+              "html": "<a href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\"> queue a media element task</a> to execute the following steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -137,7 +137,7 @@
     {
       "name": "AudioContext()",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-pending-resume-promises-slot",
-      "html": "Let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"AudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-audiocontext-pending-resume-promises-slot\"><code>[[pending resume promises]]</code></dfn> be a\nslot on this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audiocontext\" id=\"ref-for-audiocontext①⑨\">AudioContext</a></code>, that is an initially empty ordered list of\npromises.",
+      "html": "If the <a href=\"https://html.spec.whatwg.org/#concept-current-everything\">current\n\t\tsettings object</a>’s <a href=\"https://html.spec.whatwg.org/#responsible-document\">responsible\n\t\tdocument</a> is NOT <a href=\"https://html.spec.whatwg.org/multipage/browsers.html#fully-active\" id=\"termref-for-fully-active\"> fully active</a>, throw an <code>InvalidStateError</code> and\n\tabort these steps.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -150,7 +150,7 @@
           "html": "<p>Let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"AudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-audiocontext-pending-resume-promises-slot\"><code>[[pending resume promises]]</code></dfn> be a\nslot on this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audiocontext\" id=\"ref-for-audiocontext①⑨\">AudioContext</a></code>, that is an initially empty ordered list of\npromises.</p>"
         },
         {
-          "html": "Let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"AudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-audiocontext-pending-resume-promises-slot\"><code>[[pending resume promises]]</code></dfn> be a\nslot on this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audiocontext\" id=\"ref-for-audiocontext①⑨\">AudioContext</a></code>, that is an initially empty ordered list of\npromises.",
+          "html": "If <code>contextOptions</code> is given, apply the options:",
           "rationale": "set",
           "steps": [
             {
@@ -475,7 +475,7 @@
           "html": "If a suspended context is resumed, continue to render the\n\t\tbuffer."
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-for=\"\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"begin-offline-rendering\">begin offline rendering</dfn>, the following steps MUST\n\thappen on a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#rendering-thread\" id=\"ref-for-rendering-thread④\">rendering thread</a> that is created for the\n\toccasion.",
+          "html": "Once the rendering is complete, <a href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\"> queue a media element task</a> to execute the following steps:",
           "rationale": "resolve",
           "steps": [
             {
@@ -627,7 +627,7 @@
           "html": "<p>Set its value for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-audionode-numberofinputs\" id=\"ref-for-dom-audionode-numberofinputs①\">numberOfInputs</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-audionode-numberofoutputs\" id=\"ref-for-dom-audionode-numberofoutputs①\">numberOfOutputs</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-audionode-channelcount\" id=\"ref-for-dom-audionode-channelcount②\">channelCount</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-audionode-channelcountmode\" id=\"ref-for-dom-audionode-channelcountmode①\">channelCountMode</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-audionode-channelinterpretation\" id=\"ref-for-dom-audionode-channelinterpretation①\">channelInterpretation</a></code> to the\ndefault value for this\nspecific interface outlined in the section for each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audionode\" id=\"ref-for-audionode⑤⑨\">AudioNode</a></code>.</p>"
         },
         {
-          "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"audionode-constructor-init\">Initializing</dfn> an object <var>o</var> that inherits from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audionode\" id=\"ref-for-audionode⑤⑧\">AudioNode</a></code> means executing the following\n\tsteps, given the arguments <var>context</var> and <var>dict</var> passed to\n\tthe constructor of this interface.",
+          "html": "For each member of <var>dict</var> passed in, execute these steps, with <var>k</var> the key of the member, and <var>v</var> its value. If any\nexceptions is thrown when executing these steps, abort the iteration and\npropagate the exception to the caller of the algorithm (constructor or\nfactory method).",
           "rationale": "if",
           "steps": [
             {
@@ -1059,18 +1059,18 @@
     {
       "name": "construct periodic wave",
       "href": "https://www.w3.org/TR/webaudio/#dom-periodicwave-real-slot",
-      "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#periodicwave\" id=\"ref-for-periodicwave①⑤\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\"><code>[[real]]</code></dfn> and <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\"><code>[[imag]]</code></dfn> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-Float32Array\" id=\"ref-for-idl-Float32Array②⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\"><code>[[normalize]]</code></dfn> be an internal slot.",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#periodicwave\" id=\"ref-for-periodicwave①⑤\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\"><code>[[real]]</code></dfn> and <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\"><code>[[imag]]</code></dfn> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-Float32Array\" id=\"ref-for-idl-Float32Array②⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\"><code>[[normalize]]</code></dfn> be an internal slot.</p>"
         },
         {
-          "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#periodicwave\" id=\"ref-for-periodicwave①⑤\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\"><code>[[real]]</code></dfn> and <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\"><code>[[imag]]</code></dfn> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-Float32Array\" id=\"ref-for-idl-Float32Array②⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\"><code>[[normalize]]</code></dfn> be an internal slot.",
+          "html": "Process <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://www.w3.org/TR/webaudio/#dom-periodicwave-periodicwave-context-options-options\" id=\"ref-for-dom-periodicwave-periodicwave-context-options-options\">options</a></code> according to one of the following cases:",
           "rationale": "if",
           "steps": [
             {
-              "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#periodicwave\" id=\"ref-for-periodicwave①⑤\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\"><code>[[real]]</code></dfn> and <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\"><code>[[imag]]</code></dfn> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-Float32Array\" id=\"ref-for-idl-Float32Array②⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\"><code>[[normalize]]</code></dfn> be an internal slot.",
+              "html": "If both <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-periodicwaveoptions-real\" id=\"ref-for-dom-periodicwaveoptions-real①\">options.real</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-periodicwaveoptions-imag\" id=\"ref-for-dom-periodicwaveoptions-imag①\">options.imag</a></code> are present",
               "rationale": "if",
               "steps": [
                 {
@@ -1085,7 +1085,7 @@
               ]
             },
             {
-              "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#periodicwave\" id=\"ref-for-periodicwave①⑤\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\"><code>[[real]]</code></dfn> and <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\"><code>[[imag]]</code></dfn> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-Float32Array\" id=\"ref-for-idl-Float32Array②⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\"><code>[[normalize]]</code></dfn> be an internal slot.",
+              "html": "If only <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-periodicwaveoptions-real\" id=\"ref-for-dom-periodicwaveoptions-real⑤\">options.real</a></code> is present",
               "rationale": "if",
               "steps": [
                 {
@@ -1100,7 +1100,7 @@
               ]
             },
             {
-              "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#periodicwave\" id=\"ref-for-periodicwave①⑤\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\"><code>[[real]]</code></dfn> and <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\"><code>[[imag]]</code></dfn> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-Float32Array\" id=\"ref-for-idl-Float32Array②⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\"><code>[[normalize]]</code></dfn> be an internal slot.",
+              "html": "If only <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-periodicwaveoptions-imag\" id=\"ref-for-dom-periodicwaveoptions-imag④\">options.imag</a></code> is present",
               "rationale": "if",
               "steps": [
                 {
@@ -1115,7 +1115,7 @@
               ]
             },
             {
-              "html": "Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#periodicwave\" id=\"ref-for-periodicwave①⑤\">PeriodicWave</a></code> object. Let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-real-slot\"><code>[[real]]</code></dfn> and <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-imag-slot\"><code>[[imag]]</code></dfn> be two internal slots of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://heycam.github.io/webidl/#idl-Float32Array\" id=\"ref-for-idl-Float32Array②⓪\">Float32Array</a></code>, and let <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"PeriodicWave\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-periodicwave-normalize-slot\"><code>[[normalize]]</code></dfn> be an internal slot.",
+              "html": "Otherwise",
               "rationale": "set",
               "steps": [
                 {
@@ -1525,7 +1525,7 @@
     {
       "name": "initialize rendering loop",
       "href": "https://www.w3.org/TR/webaudio/#rendering-initialization",
-      "html": "Set the internal slot <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"BaseAudioContext\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-baseaudiocontext-current-frame-slot\"><code>[[current frame]]</code></dfn> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#baseaudiocontext\" id=\"ref-for-baseaudiocontext①⓪④\">BaseAudioContext</a></code> to 0. Also set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-currenttime\" id=\"ref-for-dom-baseaudiocontext-currenttime④⑤\">currentTime</a></code> to 0.",
+      "html": "The following step MUST be performed once before the rendering loop starts.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1536,21 +1536,21 @@
     {
       "name": "rendering a graph",
       "href": "https://www.w3.org/TR/webaudio/#rendering-a-graph",
-      "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+      "html": "The following steps MUST be performed when rendering a render quantum.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>render result</var> be <code>false</code>.</p>"
         },
         {
-          "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+          "html": "Process the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#control-message-queue\" id=\"ref-for-control-message-queue⑧\">control message queue</a>.",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>Q<sub>rendering</sub></var> be an empty <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#control-message-queue\" id=\"ref-for-control-message-queue⑨\">control message\nqueue</a>. <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#atomically\" id=\"ref-for-atomically③\">Atomically</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#swap\" id=\"ref-for-swap\">swap</a> <var>Q<sub>rendering</sub></var> with the current <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#control-message-queue\" id=\"ref-for-control-message-queue①⓪\">control message queue</a>.</p>"
             },
             {
-              "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+              "html": "While there are messages in <var>Q<sub>rendering</sub></var>, execute the\nfollowing steps:",
               "rationale": "execute",
               "steps": [
                 {
@@ -1564,7 +1564,7 @@
           ]
         },
         {
-          "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+          "html": "Process the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#baseaudiocontext\" id=\"ref-for-baseaudiocontext①⓪⑤\">BaseAudioContext</a></code>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#baseaudiocontext-associated-task-queue\" id=\"ref-for-baseaudiocontext-associated-task-queue①\">associated task queue</a>.",
           "rationale": "let",
           "steps": [
             {
@@ -1574,7 +1574,7 @@
               "html": "<p>Let <var>task count</var> be the number of tasks in the in <var>task queue</var></p>"
             },
             {
-              "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+              "html": "While <var>task count</var> is not equal to 0, execute the following steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -1600,14 +1600,14 @@
           ]
         },
         {
-          "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+          "html": "Process a render quantum.",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot⑦\">[[rendering thread state]]</a></code> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#baseaudiocontext\" id=\"ref-for-baseaudiocontext①⓪⑦\">BaseAudioContext</a></code> is not <code>running</code>, return false.</p>"
             },
             {
-              "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+              "html": "Order the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audionode\" id=\"ref-for-audionode①⑧④\">AudioNode</a></code>s of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#baseaudiocontext\" id=\"ref-for-baseaudiocontext①⓪⑧\">BaseAudioContext</a></code> to be processed.",
               "rationale": "let",
               "steps": [
                 {
@@ -1623,7 +1623,7 @@
                   "html": "<p>Let <var>cycle breakers</var> be an empty set of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#delaynode\" id=\"ref-for-delaynode②④\">DelayNode</a></code>s. It will\ncontain all the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#delaynode\" id=\"ref-for-delaynode②⑤\">DelayNode</a></code>s that are part of a cycle.</p>"
                 },
                 {
-                  "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audionode\" id=\"ref-for-audionode①⑧⑦\">AudioNode</a></code> <var>node</var> in <var>nodes</var>:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1632,7 +1632,7 @@
                   ]
                 },
                 {
-                  "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#delaynode\" id=\"ref-for-delaynode②⑦\">DelayNode</a></code> <var>delay</var> in <var>cycle breakers</var>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -1669,11 +1669,11 @@
                           "html": "<p>If <var>node</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audionode\" id=\"ref-for-audionode①⑧⑨\">AudioNode</a></code>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#visit\" id=\"ref-for-visit①\">Visit</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audionode\" id=\"ref-for-audionode①⑨⓪\">AudioNode</a></code> connected to the input of <var>node</var>.</p>"
                         },
                         {
-                          "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+                          "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audioparam\" id=\"ref-for-audioparam①⑥③\">AudioParam</a></code> <var>param</var> of <var>node</var>:",
                           "rationale": "for",
                           "steps": [
                             {
-                              "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+                              "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audionode\" id=\"ref-for-audionode①⑨①\">AudioNode</a></code> <var>param input node</var> connected to <var>param</var>:",
                               "rationale": "visit",
                               "steps": [
                                 {
@@ -1699,11 +1699,11 @@
               "html": "<p><a href=\"https://www.w3.org/TR/webaudio/#computation-of-value\">Compute the value(s)</a> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audiolistener\" id=\"ref-for-audiolistener②③\">AudioListener</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audioparam\" id=\"ref-for-audioparam①⑥④\">AudioParam</a></code>s for this block.</p>"
             },
             {
-              "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+              "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audionode\" id=\"ref-for-audionode①⑨②\">AudioNode</a></code>, in <var>ordered node list</var>:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audioparam\" id=\"ref-for-audioparam①⑥⑤\">AudioParam</a></code> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audionode\" id=\"ref-for-audionode①⑨③\">AudioNode</a></code>, execute these steps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1724,7 +1724,7 @@
                   "html": "<p>If this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audionode\" id=\"ref-for-audionode②⓪①\">AudioNode</a></code> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#source-node\" id=\"ref-for-source-node②\">source node</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#computing-a-block-of-audio\" id=\"ref-for-computing-a-block-of-audio\">compute a block of audio</a>, and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#available-for-reading\" id=\"ref-for-available-for-reading②\">make it available for reading</a>.</p>"
                 },
                 {
-                  "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+                  "html": "If this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audionode\" id=\"ref-for-audionode②⓪②\">AudioNode</a></code> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#audioworkletnode\" id=\"ref-for-audioworkletnode⑤③\">AudioWorkletNode</a></code>, execute these substeps:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -1755,7 +1755,7 @@
                       "html": "<p>Set <var>processCallback</var> to <var>getResult</var>.[[Value]].</p>"
                     },
                     {
-                      "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+                      "html": "If <a href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\">!</a> <a href=\"https://tc39.es/ecma262/#sec-iscallable\"> IsCallable</a>(<var>processCallback</var>) is <code>false</code>, then:",
                       "rationale": "set",
                       "steps": [
                         {
@@ -1770,7 +1770,7 @@
                       "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webaudio/#dom-audioworkletprocessor-callable-process-slot\" id=\"ref-for-dom-audioworkletprocessor-callable-process-slot②\">[[callable process]]</a></code> to <code>true</code>.</p>"
                     },
                     {
-                      "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+                      "html": "Perform the following substeps:",
                       "rationale": "let",
                       "steps": [
                         {
@@ -1791,7 +1791,7 @@
                       ]
                     },
                     {
-                      "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+                      "html": "<b id=\"audio-worklet-render-return\">Return:</b> at this point <var>completion</var> will be set to an ECMAScript <a href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\">completion</a> value.",
                       "rationale": "clean",
                       "steps": [
                         {
@@ -1801,7 +1801,7 @@
                           "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-script\" id=\"ref-for-clean-up-after-running-script\">Clean up after running script</a> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object③\">current settings object</a>.</p>"
                         },
                         {
-                          "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+                          "html": "If <var>completion</var> is an <a href=\"https://tc39.github.io/ecma262/#sec-completion-record-specification-type\"> abrupt completion</a>:",
                           "rationale": "set",
                           "steps": [
                             {
@@ -1831,7 +1831,7 @@
               ]
             },
             {
-              "html": "<dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-lt=\"Visit\" data-noexport=\"\" id=\"visit\">Visiting a node</dfn> means performing\n\tthe following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webaudio/#atomically\" id=\"ref-for-atomically④\">Atomically</a> perform the following steps:",
               "rationale": "increment",
               "steps": [
                 {

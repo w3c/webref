@@ -266,7 +266,7 @@
           "html": "<p>If <var>has pending ready promise</var> is false,\nlet <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#current-ready-promise\" id=\"ref-for-current-ready-promise⑤\">current ready promise</a> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant Realm</a> of <var>animation</var>.</p>"
         },
         {
-          "html": "Schedule a task to run as soon as <var>animation</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#ready\" id=\"ref-for-ready③\">ready</a>.\nThe task shall perform the following steps:",
+          "html": "So long as the above task is scheduled but has yet to run, <var>animation</var> is described as having a <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pending-play-task\">pending play task</dfn>.\nWhile the task is running, however, <var>animation</var> does <em>not</em> have\na <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#pending-play-task\" id=\"ref-for-pending-play-task⑤\">pending play task</a>.",
           "rationale": "assert",
           "steps": [
             {
@@ -363,7 +363,7 @@
           "html": "<p>If <var>has pending ready promise</var> is false,\nset <var>animation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#current-ready-promise\" id=\"ref-for-current-ready-promise⑨\">current ready promise</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②\">relevant Realm</a> of <var>animation</var>.</p>"
         },
         {
-          "html": "The task shall perform the following steps:",
+          "html": "So long as the above task is scheduled but has yet to run, <var>animation</var> is described as having a <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pending-pause-task\">pending pause task</dfn>.\nWhile the task is running, however, <var>animation</var> does <em>not</em> have a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#pending-pause-task\" id=\"ref-for-pending-pause-task⑧\">pending pause task</a>.",
           "rationale": "let",
           "steps": [
             {

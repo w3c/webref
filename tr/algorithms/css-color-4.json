@@ -208,7 +208,7 @@
           "html": "set <var>E</var> to delta(<var>clipped</var>, <var>current</var>)"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CSS gamut map</dfn> a color <var>origin</var> in color space <var>origin color space</var> to be in gamut of a destination color space <var>destination</var>:",
+          "html": "if <var>E</var> &lt; <var>JND</var>",
           "rationale": "return",
           "steps": [
             {
@@ -226,7 +226,7 @@
           "html": "let <var>min_inGamut</var> be a boolean that represents when <var>min</var> is still in gamut, and set it to true"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CSS gamut map</dfn> a color <var>origin</var> in color space <var>origin color space</var> to be in gamut of a destination color space <var>destination</var>:",
+          "html": "while (<var>max</var> - <var>min</var> is greater than <var>epsilon</var>) repeat the following steps",
           "rationale": "set",
           "steps": [
             {
@@ -239,7 +239,7 @@
               "html": "if <var>min_inGamut</var> is true and also if inGamut(<var>current</var>) is true, set <var>min</var> to <var>chroma</var> and continue to repeat these steps"
             },
             {
-              "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CSS gamut map</dfn> a color <var>origin</var> in color space <var>origin color space</var> to be in gamut of a destination color space <var>destination</var>:",
+              "html": "otherwise, if inGamut(<var>current</var>) is false carry out these steps:",
               "rationale": "set",
               "steps": [
                 {
@@ -249,14 +249,14 @@
                   "html": "set <var>E</var> to delta(<var>clipped</var>, <var>current</var>)"
                 },
                 {
-                  "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CSS gamut map</dfn> a color <var>origin</var> in color space <var>origin color space</var> to be in gamut of a destination color space <var>destination</var>:",
+                  "html": "if <var>E</var> &lt; <var>JND</var>",
                   "rationale": "if",
                   "steps": [
                     {
                       "html": "if (<var>JND</var> - <var>E</var> &lt; <var>epsilon</var>) return <var>clipped</var> as the gamut mapped color"
                     },
                     {
-                      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"css-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CSS gamut map</dfn> a color <var>origin</var> in color space <var>origin color space</var> to be in gamut of a destination color space <var>destination</var>:",
+                      "html": "otherwise,",
                       "rationale": "set",
                       "steps": [
                         {

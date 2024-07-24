@@ -118,7 +118,7 @@
           "html": "<p>Let <var>serializedState</var> be undefined.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"migrate-an-animator-instance\">migrate an animator instance</dfn> from one <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/worklets-1/#workletglobalscope\" id=\"ref-for-workletglobalscope③\">WorkletGlobalScope</a></code> to another, given <var>instance</var>, <var>sourceWorkletGlobalScope</var>, <var>destinationWorkletGlobalScope</var>, the user agent <em>must</em> run the following steps :",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> on <var>sourceWorkletGlobalScope</var> to run the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -151,7 +151,7 @@
           "html": "<p>Wait for the above task to complete. If the task is aborted, abort the following steps.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"migrate-an-animator-instance\">migrate an animator instance</dfn> from one <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/worklets-1/#workletglobalscope\" id=\"ref-for-workletglobalscope③\">WorkletGlobalScope</a></code> to another, given <var>instance</var>, <var>sourceWorkletGlobalScope</var>, <var>destinationWorkletGlobalScope</var>, the user agent <em>must</em> run the following steps :",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">Queue a task</a> on <var>destinationWorkletGlobalScope</var> to run the following steps:",
           "rationale": "run",
           "steps": [
             {

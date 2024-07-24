@@ -71,7 +71,7 @@
           "html": "<p>Otherwise, if <var>callbackOptions</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-view-transitions-2/#dictdef-startviewtransitionoptions\" id=\"ref-for-dictdef-startviewtransitionoptions①\">StartViewTransitionOptions</a></code>, then set <var>updateCallback</var> to <var>callbackOptions</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-view-transitions-2/#dom-startviewtransitionoptions-update\" id=\"ref-for-dom-startviewtransitionoptions-update\">update</a></code>.</p>"
         },
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#method-steps\" id=\"ref-for-method-steps\">method steps</a> for <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"startViewTransition(callbackOptions)|startViewTransition()\" id=\"dom-document-startviewtransition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>startViewTransition(<var>callbackOptions</var>)</code></dfn> are as follows:",
+          "html": "If <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition⑦\">active view transition</a> is not null and its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-view-transitions-2/#viewtransition-outbound-post-capture-steps\" id=\"ref-for-viewtransition-outbound-post-capture-steps\">outbound post-capture steps</a> is not null,\nthen:",
           "rationale": "let",
           "steps": [
             {
@@ -188,7 +188,7 @@
           "html": "<p>Set <var>outboundTransition</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-view-transitions-2/#viewtransition-active-types\" id=\"ref-for-viewtransition-active-types⑦\">active types</a> to <var>transitionTypesFromRule</var>.</p>"
         },
         {
-          "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"setup-cross-document-view-transition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setup cross-document view-transition</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑧\">Document</a></code> <var>oldDocument</var>,\n\ta <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑨\">Document</a></code> <var>newDocument</var>, and <var>proceedWithNavigation</var>, which is an algorithm accepting nothing:",
+          "html": "Set <var>outboundTransition</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-view-transitions-2/#viewtransition-outbound-post-capture-steps\" id=\"ref-for-viewtransition-outbound-post-capture-steps①\">outbound post-capture steps</a> to the following steps given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-view-transitions-2/#view-transition-params\" id=\"ref-for-view-transition-params②\">view transition params</a>-or-null <var>params</var>:",
           "rationale": "set",
           "steps": [
             {
