@@ -16,8 +16,7 @@ import util from 'node:util';
 import { fileURLToPath } from 'node:url';
 import { execFile as execFileCb } from 'node:child_process';
 import { loadJSON } from './utils.js';
-import reffy from 'reffy';
-const expandCrawlResult = reffy.expandCrawlResult;
+import { expandCrawlResult } from 'reffy';
 const execFile = util.promisify(execFileCb);
 
 
