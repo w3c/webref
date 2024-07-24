@@ -14,11 +14,12 @@
  */
 
 
-const fs = require('fs').promises;
-const path = require('path');
-const util = require('util');
-const execFile = util.promisify(require('child_process').execFile);
-const { loadJSON } = require('./utils');
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import util from 'node:util';
+import { execFile as execFileCb } from 'node:child_process';
+import { loadJSON } from './utils.js';
+const execFile = util.promisify(execFileCb);
 
 async function preparePackages(curatedFolder, packagesFolder) {
   console.log('Load crawl index file');

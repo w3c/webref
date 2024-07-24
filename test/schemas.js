@@ -4,19 +4,22 @@
  * The tests run against the curated view of the extracts.
  */
 
-const fs = require('fs');
-const path = require('path');
-const assert = require('assert').strict;
-const { getSchemaValidationFunction } = require('reffy');
+import { strict as assert } from 'node:assert';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import reffy from 'reffy';
+import { loadJSON } from '../tools/utils.js';
 
-const curatedFolder = path.join(__dirname, '..', 'curated');
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
+const curatedFolder = path.join(scriptPath, '..', 'curated');
 const files = fs.readdirSync(curatedFolder);
 for (const file of files) {
-  const validate = getSchemaValidationFunction(file);
+  const validate = reffy.getSchemaValidationFunction(file);
   if (file.endsWith('.json')) {
     describe(`The ${file} file`, function () {
-      it('contains valid data', function () {
-        const data = require(path.join(curatedFolder, file));
+      it('contains valid data', async function () {
+        const data = await loadJSON(path.join(curatedFolder, file));
         const errors = validate(data);
         assert.strictEqual(errors, null, JSON.stringify(errors, null, 2));
       });
@@ -29,8 +32,8 @@ for (const file of files) {
       const files = fs.readdirSync(folder);
       for (const file of files) {
         if (file.endsWith('.json')) {
-          it(`contains valid ${extractType} data in ${file}`, () => {
-            const data = require(path.join(folder, file));
+          it(`contains valid ${extractType} data in ${file}`, async () => {
+            const data = await loadJSON(path.join(folder, file));
             const errors = validate(data);
             assert.strictEqual(errors, null, JSON.stringify(errors, null, 2));
           });

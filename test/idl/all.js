@@ -7,11 +7,13 @@
  * data because that view is a strict subset of the curated view.
  */
 
-const assert = require('assert').strict;
-const path = require('path');
-const idl = require('@webref/idl');
+import { strict as assert } from 'node:assert';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import idl from '@webref/idl';
 
-const curatedFolder = path.join(__dirname, '..', '..', 'curated', 'idl');
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
+const curatedFolder = path.join(scriptPath, '..', '..', 'curated', 'idl');
 
 describe('The curated view of Web IDL extracts', function () {
   this.slow(5000);

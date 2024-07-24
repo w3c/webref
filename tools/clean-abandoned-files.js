@@ -1,7 +1,7 @@
-const fs = require("fs");
+import fs from "node:fs";
 
-const ed = require("../ed/index.json");
-const tr = require("../tr/index.json");
+import ed from "../ed/index.json" with { type: 'json' };
+import tr from "../tr/index.json" with { type: 'json' };
 
 const removeExtension = f => {
   const components = f.split(".");

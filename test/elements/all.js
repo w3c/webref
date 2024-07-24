@@ -7,11 +7,13 @@
  * the data because that view is a strict subset of the curated view.
  */
 
-const assert = require('assert').strict;
-const path = require('path');
-const elements = require('@webref/elements');
+import { strict as assert } from 'node:assert';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import elements from '@webref/elements';
 
-const curatedFolder = path.join(__dirname, '..', '..', 'curated', 'elements');
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
+const curatedFolder = path.join(scriptPath, '..', '..', 'curated', 'elements');
 
 describe('The curated view of elements extracts', function () {
   it('contains valid JSON and expected properties', async function () {

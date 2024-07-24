@@ -1,7 +1,7 @@
-const assert = require('assert').strict;
+import { strict as assert } from 'node:assert';
 
-const idlPackage = require('../../packages/idl/package.json');
-const rootPackage = require('../../package.json');
+import idlPackage from '../../packages/idl/package.json' with { type: 'json' };
+import rootPackage from '../../package.json' with { type: 'json' };
 
 describe('The @webref/idl package', () => {
   it('uses the same version of webidl2.js as main package', () => {

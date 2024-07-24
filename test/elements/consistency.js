@@ -6,19 +6,21 @@
  * view because of some missing IDL definition in that view.
  */
 
-const assert = require('assert').strict;
-const path = require('path');
-const elements = require('@webref/elements');
-const idl = require('@webref/idl');
+import { strict as assert } from 'node:assert';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import elements from '@webref/elements';
+import idl from '@webref/idl';
 
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 const views = [
   {
     name: 'curated',
-    folder: path.join(__dirname, '..', '..', 'curated')
+    folder: path.join(scriptPath, '..', '..', 'curated')
   },
   {
     name: '@webref/elements package',
-    folder: path.join(__dirname, '..', '..', 'packages')
+    folder: path.join(scriptPath, '..', '..', 'packages')
   }
 ];
 

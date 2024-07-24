@@ -12,12 +12,12 @@
  * otherwise)
  */
 
-const util = require('util');
-const path = require('path');
-const fs = require('fs').promises;
-const { rimraf } = require('rimraf');
-const { execSync } = require('child_process');
-const { copyFolder, createFolderIfNeeded } = require('./utils');
+import util from 'node:util';
+import path from 'node:path';
+import fs from 'node:fs/promises';
+import { execSync } from 'node:child_process';
+import { rimraf } from 'rimraf';
+import { copyFolder, createFolderIfNeeded } from './utils.js';
 
 
 /**

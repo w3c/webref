@@ -7,13 +7,15 @@
  * data because that view is a strict subset of the curated view.
  */
 
-const assert = require('assert').strict;
-const path = require('path');
-const css = require('@webref/css');
-const index = require('../../curated/index.json');
-const { definitionSyntax } = require('css-tree');
+import { strict as assert } from 'node:assert';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import css from '@webref/css';
+import index from '../../curated/index.json' with { type: 'json' };
+import { definitionSyntax } from 'css-tree';
 
-const curatedFolder = path.join(__dirname, '..', '..', 'curated', 'css');
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
+const curatedFolder = path.join(scriptPath, '..', '..', 'curated', 'css');
 
 // Expected content in CSS extracts
 const cssValues = [

@@ -13,14 +13,16 @@
  * means a minor bump is already pending release.
  */
 
-const fs = require('fs').promises;
-const path = require('path');
-const { loadJSON } = require('./utils');
-const { execSync } = require('child_process');
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { execSync } from 'node:child_process';
+import { loadJSON } from './utils.js';
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 
 async function checkPackage(type) {
   console.log(`Check ${type} package`);
-  const packageFile = path.resolve(__dirname, '..', 'packages', type, 'package.json');
+  const packageFile = path.resolve(scriptPath, '..', 'packages', type, 'package.json');
   const package = await loadJSON(packageFile);
   const version = package.version;
   console.log(`- Current version: ${version}`);
@@ -56,7 +58,7 @@ async function checkPackage(type) {
 
 
 async function checkPackages() {
-  const packagesFolder = path.resolve(__dirname, '..', 'packages');
+  const packagesFolder = path.resolve(scriptPath, '..', 'packages');
   const types = await fs.readdir(packagesFolder);
   for (const type of types) {
     const stat = await fs.lstat(path.join(packagesFolder, type));

@@ -2,12 +2,13 @@
  * Wrapper around Octokit to add throttling and avoid hitting rate limits
  */
 
-const { throttling } = require("@octokit/plugin-throttling");
-const Octokit = require("@octokit/rest").Octokit.plugin(throttling);
+import { throttling } from "@octokit/plugin-throttling";
+import { Octokit as rawOctokit } from "@octokit/rest";
+const Octokit = rawOctokit.plugin(throttling);
 
 const MAX_RETRIES = 3;
 
-module.exports = function (params) {
+export default function (params) {
   params = params || {};
 
   const octoParams = Object.assign({

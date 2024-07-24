@@ -2,8 +2,8 @@
  * Common functions for use in tools
  */
 
-const fs = require('fs').promises;
-const path = require('path');
+import fs from 'node:fs/promises';
+import path from 'node:path';
 
 async function createFolderIfNeeded(folder) {
   try {
@@ -68,7 +68,7 @@ async function copyFolder(source, target, { excludeRoot = false } = {}) {
 };
 
 
-module.exports = {
+export {
   createFolderIfNeeded,
   loadJSON,
   copyFolder

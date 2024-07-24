@@ -2,7 +2,7 @@
  * Request a review on a pending pre-release PR
  */
 
-const Octokit = require("./octokit");
+import Octokit from "./octokit.js";
 
 // Repository to process and PR reviewers
 const owner = "w3c";

@@ -17,9 +17,9 @@
  * remain subject to human review.
  */
 
-const fs = require("fs").promises;
-const path = require("path");
-const { loadJSON } = require('./utils');
+import fs from "node:fs/promises";
+import path from "node:path";
+import { loadJSON } from './utils.js';
 
 async function cleanExtractFolder(folder, crawlResults) {
   const dir = await fs.readdir(folder);

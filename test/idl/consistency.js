@@ -10,19 +10,22 @@
  * view because of some missing IDL definition in that view.
  */
 
-const assert = require('assert').strict;
-const path = require('path');
-const idl = require('@webref/idl');
-const { studyWebIdl } = require('strudy');
+import { strict as assert } from 'node:assert';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import idl from '@webref/idl';
+import strudy from 'strudy';
+const studyWebIdl = strudy.studyWebIdl;
 
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 const views = [
   {
     name: 'curated',
-    folder: path.join(__dirname, '..', '..', 'curated', 'idl')
+    folder: path.join(scriptPath, '..', '..', 'curated', 'idl')
   },
   {
     name: '@webref/idl package',
-    folder: path.join(__dirname, '..', '..', 'packages', 'idl')
+    folder: path.join(scriptPath, '..', '..', 'packages', 'idl')
   }
 ];
 
