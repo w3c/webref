@@ -3,13 +3,13 @@
  * PR is based.
  */
 
-const Octokit = require("./octokit");
-const fs = require("fs");
-const path = require("path");
-const os = require("os");
-const { execSync } = require("child_process");
-const { rimraf } = require("rimraf");
-const { npmPublish } = require("@jsdevtools/npm-publish");
+import Octokit from "./octokit";
+import fs from "node:fs";
+import path from "node:path";
+import os from "node:os";
+import { execSync } from "node:child_process";
+import { rimraf } from "rimraf";
+import { npmPublish } from "@jsdevtools/npm-publish";
 
 const owner = "w3c";
 const repo = "webref";

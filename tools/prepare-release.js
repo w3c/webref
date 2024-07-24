@@ -23,12 +23,12 @@
  * - Invalidate or re-request review when PR is updated?
  */
 
-const Octokit = require("./octokit");
-const fs = require("fs");
-const path = require("path");
-const os = require("os");
-const { execSync } = require("child_process");
-const { rimraf } = require("rimraf");
+import Octokit from "./octokit.js";
+import fs from "node:fs";
+import path from "node:path";
+import os from "node:os";
+import { execSync } from "node:child_process";
+import { rimraf } from "rimraf";
 
 // Repository to process
 const owner = "w3c";

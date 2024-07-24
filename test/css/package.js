@@ -1,7 +1,7 @@
-const assert = require('assert').strict;
+import { strict as assert } from 'node:assert';
 
-const cssPackage = require('../../packages/css/package.json');
-const rootPackage = require('../../package.json');
+import cssPackage from '../../packages/css/package.json' with { type: 'json' };
+import rootPackage from '../../package.json' with { type: 'json' };
 
 describe('The @webref/css package', () => {
   it('uses the same version of css-tree as main package', () => {

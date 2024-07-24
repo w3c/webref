@@ -17,17 +17,18 @@
  * node tools/prepare-curated.js [raw data folder] [curated folder]
  */
 
-const fs = require('fs').promises;
-const path = require('path');
-const { rimraf } = require('rimraf');
-const { crawlSpecs } = require('reffy');
-const {
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { rimraf } from 'rimraf';
+import {
   createFolderIfNeeded,
   loadJSON,
-  copyFolder } = require('./utils');
-const { applyPatches } = require('./apply-patches');
-const { dropCSSPropertyDuplicates } = require('./drop-css-property-duplicates');
-const { curateEvents } = require('./amend-event-data');
+  copyFolder } from './utils.js';
+import { applyPatches } from './apply-patches.js';
+import { dropCSSPropertyDuplicates } from './drop-css-property-duplicates.js';
+import { curateEvents } from './amend-event-data.js';
+import reffy from 'reffy';
+const crawlSpecs = reffy.crawlSpecs;
 
 
 /**

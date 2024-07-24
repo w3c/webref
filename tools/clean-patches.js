@@ -3,11 +3,12 @@
  * a pull request to drop patches that should no longer be needed.
  */
 
-const core = require('@actions/core');
-const Octokit = require("./octokit");
-const fs = require("fs");
-const path = require("path");
-
+import fs from "node:fs";
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import core from '@actions/core';
+import Octokit from "./octokit.js";
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 
 /**
  * Check GitHub issues and PR referenced by patch files and drop patch files
@@ -19,7 +20,7 @@ const path = require("path");
  *   empty string when there are no patches to drop.
  */
 async function dropPatchesWhenPossible() {
-  const rootDir = path.join(__dirname, "..", "ed");
+  const rootDir = path.join(scriptPath, "..", "ed");
 
   console.log("Gather patch files");
   let patches = [];

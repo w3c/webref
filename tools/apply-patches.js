@@ -14,11 +14,13 @@
  * (default is "all").
  */
 
-const fs = require('fs').promises;
-const path = require('path');
-const util = require('util');
-const execFile = util.promisify(require('child_process').execFile);
-const { createFolderIfNeeded } = require('./utils');
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import util from 'node:util';
+import { fileURLToPath } from 'node:url';
+import { execFile as execCb } from 'node:child_process';
+import { createFolderIfNeeded } from './utils.js';
+const execFile = util.promisify(execCb);
 
 async function applyPatches(rawFolder, outputFolder, type) {
   type = (type === 'all') ? ['css', 'elements', 'idl'] : [type];
@@ -93,13 +95,13 @@ async function applyPatches(rawFolder, outputFolder, type) {
 /**************************************************
 Export methods for use as module
 **************************************************/
-module.exports.applyPatches = applyPatches;
+export { applyPatches };
 
 
 /**************************************************
 Code run if the code is run as a stand-alone module
 **************************************************/
-if (require.main === module) {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const rawFolder = process.argv[2] ?? 'ed';
   const outputFolder = process.argv[3] ?? 'curated';
   const type = process.argv[4] ?? 'all';

@@ -1,6 +1,6 @@
 
 // Convert JSON on CVSS to Turtle for Css property namespace
-const cssData = require( '../ed/css/CSS.json')
+import cssData from '../ed/css/CSS.json' with { type: 'json' };
 
 // console.log(JSON.stringify(cssData).slice(0,100))
 

@@ -10,10 +10,12 @@
  * and update (default is "curated")
  */
 
-const fs = require('fs').promises;
-const path = require('path');
-const loadJSON = require('./utils').loadJSON;
-const expandCrawlResult = require('reffy').expandCrawlResult;
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { loadJSON } from './utils.js';
+import reffy from 'reffy';
+const expandCrawlResult = reffy.expandCrawlResult;
 
 const patches = {
   'IndexedDB-3': [
@@ -651,12 +653,12 @@ async function curateEvents(folder) {
 /**************************************************
 Export methods for use as module
 **************************************************/
-module.exports.curateEvents = curateEvents;
+export { curateEvents };
 
 /**************************************************
 Code run if the code is run as a stand-alone module
 **************************************************/
-if (require.main === module) {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const folder = process.argv[2] ?? 'curated';
 
   curateEvents(folder).catch(e => {

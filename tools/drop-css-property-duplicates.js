@@ -10,12 +10,15 @@
  * and update (default is "curated")
  */
 
-const fs = require('fs').promises;
-const path = require('path');
-const util = require('util');
-const execFile = util.promisify(require('child_process').execFile);
-const loadJSON = require('./utils').loadJSON;
-const expandCrawlResult = require('reffy').expandCrawlResult;
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import util from 'node:util';
+import { fileURLToPath } from 'node:url';
+import { execFile as execFileCb } from 'node:child_process';
+import { loadJSON } from './utils.js';
+import reffy from 'reffy';
+const expandCrawlResult = reffy.expandCrawlResult;
+const execFile = util.promisify(execFileCb);
 
 
 /**
@@ -263,13 +266,13 @@ async function dropCSSPropertyDuplicates(folder) {
 /**************************************************
 Export methods for use as module
 **************************************************/
-module.exports.dropCSSPropertyDuplicates = dropCSSPropertyDuplicates;
+export { dropCSSPropertyDuplicates };
 
 
 /**************************************************
 Code run if the code is run as a stand-alone module
 **************************************************/
-if (require.main === module) {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const folder = process.argv[2] ?? 'curated';
   
   dropCSSPropertyDuplicates(folder).catch(e => {

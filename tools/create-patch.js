@@ -7,11 +7,12 @@
  * node tools/create-patch.js
  */
 
-const fs = require('fs/promises');
-const util = require('util');
-const path = require('path');
-const exec = util.promisify(require('child_process').exec);
-const execFile = util.promisify(require('child_process').execFile);
+import fs from 'node:fs/promises';
+import util from 'node:util';
+import path from 'node:path';
+import { exec as execCb, execFile as execFileCb } from 'node:child_process';
+const exec = util.promisify(execCb);
+const execFile = util.promisify(execFileCb);
 
 async function main() {
   console.log('Check last commit touches one and only one CSS/Elements/IDL file...');

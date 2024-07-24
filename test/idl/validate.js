@@ -9,24 +9,26 @@
  * the package view, e.g. due to missing base interfaces.
  */
 
-const assert = require('assert').strict;
-const path = require('path');
-const WebIDL2 = require('webidl2');
-const idl = require('@webref/idl');
+import { strict as assert } from 'node:assert';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { validate as validateWebIdl } from 'webidl2';
+import idl from '@webref/idl';
 
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 const curatedView = {
   name: 'curated',
-  folder: path.join(__dirname, '..', '..', 'curated', 'idl')
+  folder: path.join(scriptPath, '..', '..', 'curated', 'idl')
 };
 const packageView = {
   name: '@webref/idl package',
-  folder: path.join(__dirname, '..', '..', 'packages', 'idl')
+  folder: path.join(scriptPath, '..', '..', 'packages', 'idl')
 };
 
 // Wrapper around the WebIDL2.js validation function to ignore
 // [LegacyNoInterfaceObject] "errors".
 function validate(ast) {
-  const validations = WebIDL2.validate(ast).filter(v => {
+  const validations = validateWebIdl(ast).filter(v => {
     return v.ruleName !== 'no-nointerfaceobject';
   });
   if (!validations.length) {

@@ -7,13 +7,16 @@
  * the data because that view is a strict subset of the curated view.
  */
 
-const assert = require('assert').strict;
-const path = require('path');
-const events = require('@webref/events');
-const idl = require('@webref/idl');
-const { getInterfaceTreeInfo } = require('reffy');
+import { strict as assert } from 'node:assert';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import events from '@webref/events';
+import idl from '@webref/idl';
+import reffy from 'reffy';
+const getInterfaceTreeInfo = reffy.getInterfaceTreeInfo;
 
-const curatedFolder = path.join(__dirname, '..', '..', 'curated');
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
+const curatedFolder = path.join(scriptPath, '..', '..', 'curated');
 
 let allEvents = null;
 const interfaces = new Set();
