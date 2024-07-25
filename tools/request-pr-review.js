@@ -3,6 +3,7 @@
  */
 
 import Octokit from "./octokit.js";
+import { loadJSON } from "./utils.js";
 
 // Repository to process and PR reviewers
 const owner = "w3c";
@@ -58,13 +59,8 @@ async function requestReview(type) {
 /*******************************************************************************
 Retrieve GH_TOKEN from environment, prepare Octokit and kick things off
 *******************************************************************************/
-const GH_TOKEN = (() => {
-  try {
-    return require("../config.json").GH_TOKEN;
-  } catch {
-    return process.env.GH_TOKEN;
-  }
-})();
+const config = await loadJSON("config.json");
+const GH_TOKEN = config?.GH_TOKEN ?? process.env.GH_TOKEN;
 if (!GH_TOKEN) {
   console.error("GH_TOKEN must be set to some personal access token as an env variable or in a config.json file");
   process.exit(1);
