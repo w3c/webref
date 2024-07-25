@@ -28,7 +28,10 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import { execSync } from "node:child_process";
+import { fileURLToPath } from 'node:url';
 import { rimraf } from "rimraf";
+import { loadJSON } from "./utils.js";
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 
 // Repository to process
 const owner = "w3c";
@@ -58,7 +61,7 @@ MissingPackageError.prototype = Error.prototype;
  * @return {String} The results of running the diff. An empty string if contents
  *   match.
  */
-function computeDiff(type) {
+async function computeDiff(type) {
   // Install @webref package in tmp folder
   const tmpFolder = fs.mkdtempSync(path.join(os.tmpdir(), "webref-"));
   try {
@@ -71,7 +74,7 @@ function computeDiff(type) {
   }
 
   // Extract released version (will be used in the body of the pre-release PR)
-  latestReleasedVersion = require(path.join(tmpFolder, "node_modules", "@webref", type, "package.json")).version;
+  latestReleasedVersion = (await loadJSON(path.join(tmpFolder, "node_modules", "@webref", type, "package.json"))).version;
 
   // Diff does not take the package.json file into account because "npm install"
   // adds properties that start with "_" to that file which do not exist in the
@@ -207,7 +210,7 @@ async function prepareRelease(type) {
 
   console.log();
   console.log("Compute diff between package and repo contents");
-  let diff = computeDiff(type);
+  let diff = await computeDiff(type);
   console.log(`- Diff length: ${diff?.length}`);
   if (!diff) {
     if (pendingPR) {
@@ -238,7 +241,8 @@ ${diff.substring(0, 60000)}`;
 
   console.log();
   console.log("Extract and bump version number");
-  const packageFile = require(`../packages/${type}/package.json`);
+  const packageFilename = path.resolve(scriptPath, '..', 'packages', type, 'package.json');
+  const packageFile = await loadJSON(packageFilename);
   const version = packageFile.version;
   const bumpedVersion = version
     .split(".")
@@ -365,13 +369,8 @@ ${diff}
 /*******************************************************************************
 Retrieve GH_TOKEN from environment, prepare Octokit and kick things off
 *******************************************************************************/
-const GH_TOKEN = (() => {
-  try {
-    return require("../config.json").GH_TOKEN;
-  } catch {
-    return process.env.GH_TOKEN;
-  }
-})();
+const config = await loadJSON("config.json");
+const GH_TOKEN = config?.GH_TOKEN ?? process.env.GH_TOKEN;
 if (!GH_TOKEN) {
   console.error("GH_TOKEN must be set to some personal access token as an env variable or in a config.json file");
   process.exit(1);

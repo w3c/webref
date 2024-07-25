@@ -3,13 +3,14 @@
  * PR is based.
  */
 
-import Octokit from "./octokit";
+import Octokit from "./octokit.js";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import { execSync } from "node:child_process";
 import { rimraf } from "rimraf";
 import { npmPublish } from "@jsdevtools/npm-publish";
+import { loadJSON } from "./utils.js";
 
 const owner = "w3c";
 const repo = "webref";
@@ -146,25 +147,14 @@ async function releasePackage(prNumber) {
 /*******************************************************************************
 Retrieve tokens from environment, prepare Octokit and kick things off
 *******************************************************************************/
-const GH_TOKEN = (() => {
-  try {
-    return require("../config.json").GH_TOKEN;
-  } catch {
-    return process.env.GH_TOKEN;
-  }
-})();
+const config = await loadJSON("config.json");
+const GH_TOKEN = config?.GH_TOKEN ?? process.env.GH_TOKEN;
 if (!GH_TOKEN) {
   console.error("GH_TOKEN must be set to some personal access token as an env variable or in a config.json file");
   process.exit(1);
 }
 
-const NPM_TOKEN = (() => {
-  try {
-    return require("../config.json").NPM_TOKEN;
-  } catch {
-    return process.env.NPM_TOKEN;
-  }
-})();
+const NPM_TOKEN = config?.NPM_TOKEN ?? process.env.NPM_TOKEN;
 if (!NPM_TOKEN) {
   console.error("NPM_TOKEN must be set to an npm token as an env variable or in a config.json file");
   process.exit(1);
