@@ -12,8 +12,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import events from '@webref/events';
 import idl from '@webref/idl';
-import reffy from 'reffy';
-const getInterfaceTreeInfo = reffy.getInterfaceTreeInfo;
+import { getInterfaceTreeInfo } from 'reffy';
 
 const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 const curatedFolder = path.join(scriptPath, '..', '..', 'curated');

@@ -27,8 +27,7 @@ import {
 import { applyPatches } from './apply-patches.js';
 import { dropCSSPropertyDuplicates } from './drop-css-property-duplicates.js';
 import { curateEvents } from './amend-event-data.js';
-import reffy from 'reffy';
-const crawlSpecs = reffy.crawlSpecs;
+import { crawlSpecs } from 'reffy';
 
 
 /**

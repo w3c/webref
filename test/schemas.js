@@ -8,14 +8,14 @@ import { strict as assert } from 'node:assert';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import reffy from 'reffy';
+import { getSchemaValidationFunction } from 'reffy';
 import { loadJSON } from '../tools/utils.js';
 
 const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 const curatedFolder = path.join(scriptPath, '..', 'curated');
 const files = fs.readdirSync(curatedFolder);
 for (const file of files) {
-  const validate = reffy.getSchemaValidationFunction(file);
+  const validate = await getSchemaValidationFunction(file);
   if (file.endsWith('.json')) {
     describe(`The ${file} file`, function () {
       it('contains valid data', async function () {

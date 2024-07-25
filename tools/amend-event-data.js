@@ -14,8 +14,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadJSON } from './utils.js';
-import reffy from 'reffy';
-const expandCrawlResult = reffy.expandCrawlResult;
+import { expandCrawlResult } from 'reffy';
 
 const patches = {
   'IndexedDB-3': [
