@@ -23,8 +23,8 @@ const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 async function checkPackage(type) {
   console.log(`Check ${type} package`);
   const packageFile = path.resolve(scriptPath, '..', 'packages', type, 'package.json');
-  const package = await loadJSON(packageFile);
-  const version = package.version;
+  const packageContents = await loadJSON(packageFile);
+  const version = packageContents.version;
   console.log(`- Current version: ${version}`);
 
   // Loosely adapted from semver:
@@ -47,8 +47,8 @@ async function checkPackage(type) {
   if (res) {
     console.log('- new/deleted files found');
     const newVersion = `${major}.${minor+1}.0`;
-    package.version = newVersion;
-    fs.writeFile(packageFile, JSON.stringify(package, null, 2), 'utf8');
+    packageContents.version = newVersion;
+    fs.writeFile(packageFile, JSON.stringify(packageContents, null, 2), 'utf8');
     console.log(`- Version bumped to ${newVersion}`);
   }
   else {
