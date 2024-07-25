@@ -1018,7 +1018,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#mlgraphbuilder"
       },
       "MLArgMinMaxOptions": {
-        "fragment": "dictionary MLArgMinMaxOptions {\n  boolean keepDimensions = false;\n};",
+        "fragment": "dictionary MLArgMinMaxOptions {\n  boolean keepDimensions = false;\n  MLOperandDataType outputDataType = \"int32\";\n};",
         "type": "dictionary",
         "name": "MLArgMinMaxOptions",
         "inheritance": null,
@@ -1041,6 +1041,25 @@
             },
             "required": false,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlargminmaxoptions-keepdimensions"
+          },
+          {
+            "type": "field",
+            "name": "outputDataType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOperandDataType"
+            },
+            "default": {
+              "type": "string",
+              "value": "int32"
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlargminmaxoptions-outputdatatype"
           }
         ],
         "extAttrs": [],
@@ -8232,7 +8251,9 @@
         "MLTransposeOptions",
         "MLTriangularOptions"
       ],
-      "MLArgMinMaxOptions": [],
+      "MLArgMinMaxOptions": [
+        "MLOperandDataType"
+      ],
       "MLBatchNormalizationOptions": [
         "MLOperand"
       ],

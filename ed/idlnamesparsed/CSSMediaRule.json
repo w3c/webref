@@ -6,7 +6,7 @@
       "title": "CSS Conditional Rules Module Level 3",
       "url": "https://www.w3.org/TR/css-conditional-3/"
     },
-    "fragment": "[Exposed=Window]\ninterface CSSMediaRule : CSSConditionRule {\n    [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n};",
+    "fragment": "[Exposed=Window]\ninterface CSSMediaRule : CSSConditionRule {\n    [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n    readonly attribute boolean matches;\n};",
     "href": "https://drafts.csswg.org/css-conditional-3/#cssmediarule"
   },
   "extended": [],

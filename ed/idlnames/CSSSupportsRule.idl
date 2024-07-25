@@ -1,4 +1,5 @@
 // Source: CSS Conditional Rules Module Level 3 (https://www.w3.org/TR/css-conditional-3/)
 [Exposed=Window]
 interface CSSSupportsRule : CSSConditionRule {
+  readonly attribute boolean matches;
 };
