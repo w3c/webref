@@ -324,6 +324,25 @@
       ]
     },
     {
+      "name": "create an MLOperandDescriptor",
+      "href": "https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>descriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor⑨\">MLOperandDescriptor</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype②\">dataType</a></code> to <var>dataType</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②\">dimensions</a></code> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone\">clone</a> of <var>dimensions</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>descriptor</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "MLOperandDescriptor/byte length",
       "href": "https://webmachinelearning.github.io/webnn/#mloperanddescriptor-byte-length",
       "rationale": ".algorithm",
@@ -332,7 +351,7 @@
           "html": "<p>Let <var>elementLength</var> be 1.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>dimension</var> of <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②\">dimensions</a></code>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>dimension</var> of <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions③\">dimensions</a></code>:",
           "rationale": "set",
           "steps": [
             {
@@ -341,7 +360,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>elementSize</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#table-the-typedarray-constructors\" id=\"ref-for-table-the-typedarray-constructors⑥\">element size</a> of one of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#ArrayBufferView\" id=\"ref-for-ArrayBufferView⑧\">ArrayBufferView</a></code> types that matches <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype②\">dataType</a></code> according to <a href=\"https://webmachinelearning.github.io/webnn/#appendices-mloperanddatatype-arraybufferview-compatibility\">this table</a>.</p>"
+          "html": "<p>Let <var>elementSize</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#table-the-typedarray-constructors\" id=\"ref-for-table-the-typedarray-constructors⑥\">element size</a> of one of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#ArrayBufferView\" id=\"ref-for-ArrayBufferView⑧\">ArrayBufferView</a></code> types that matches <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype③\">dataType</a></code> according to <a href=\"https://webmachinelearning.github.io/webnn/#appendices-mloperanddatatype-arraybufferview-compatibility\">this table</a>.</p>"
         },
         {
           "html": "<p>Return <var>elementLength</var> * <var>elementSize</var>.</p>"
@@ -354,10 +373,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If any element of <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions③\">dimensions</a></code> is not a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#valid-dimension\" id=\"ref-for-valid-dimension\">valid dimension</a>, return false.</p>"
+          "html": "<p>If any element of <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions④\">dimensions</a></code> is not a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#valid-dimension\" id=\"ref-for-valid-dimension\">valid dimension</a>, return false.</p>"
         },
         {
-          "html": "<p>If <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions④\">dimensions</a></code>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is too large to be supported by the implementation, return false.</p>"
+          "html": "<p>If <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑤\">dimensions</a></code>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is too large to be supported by the implementation, return false.</p>"
         },
         {
           "html": "<p>If <var>descriptor</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperanddescriptor-byte-length\" id=\"ref-for-mloperanddescriptor-byte-length②\">byte length</a> is not supported by the implementation, then return false.</p>"
@@ -527,16 +546,7 @@
           "html": "<p>Set <var>value</var> to the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#cast\" id=\"ref-for-cast①\">casting</a> <var>value</var> to <var>type</var>.</p>"
         },
         {
-          "html": "Let <var>descriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor①⑥\">MLOperandDescriptor</a></code>.",
-          "rationale": "set",
-          "steps": [
-            {
-              "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype④\">dataType</a></code> to <var>type</var>.</p>"
-            },
-            {
-              "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑥\">dimensions</a></code> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
-            }
-          ]
+          "html": "<p>Let <var>descriptor</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor\">creating an MLOperandDescriptor</a> given <var>type</var> and « ».</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -703,13 +713,7 @@
           "html": "<p>Let <var>outputShape</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mlgraphbuilder-calculate-reduction-output-sizes\" id=\"ref-for-mlgraphbuilder-calculate-reduction-output-sizes\">calculating reduction output sizes</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape③\">shape</a>, « <var>axis</var> », and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlargminmaxoptions-keepdimensions\" id=\"ref-for-dom-mlargminmaxoptions-keepdimensions①\">keepDimensions</a></code>. If that returns failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑨\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor①⑦\">MLOperandDescriptor</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑤\">dataType</a></code> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlargminmaxoptions-outputdatatype\" id=\"ref-for-dom-mlargminmaxoptions-outputdatatype③\">outputDataType</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑦\">dimensions</a></code> to <var>outputShape</var>.</p>"
+          "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor①\">creating an MLOperandDescriptor</a> given <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlargminmaxoptions-outputdatatype\" id=\"ref-for-dom-mlargminmaxoptions-outputdatatype③\">outputDataType</a></code> and <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -975,16 +979,10 @@
           "html": "<p>If <var>axis</var> is greater than or equal to <var>first</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank④\">rank</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑧\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③⑥\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor①⑧\">MLOperandDescriptor</a></code>.</p>"
+          "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor②\">creating an MLOperandDescriptor</a> given <var>first</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①⑤\">dataType</a> and <var>first</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①②\">shape</a>.</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑥\">dataType</a></code> to <var>first</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①⑤\">dataType</a>.</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑧\">dimensions</a></code> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone\">clone</a> of <var>first</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①②\">shape</a>.</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑨\">dimensions</a></code>[<var>axis</var>] to <var>first</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①③\">shape</a>[<var>axis</var>].</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑦\">dimensions</a></code>[<var>axis</var>] to <var>first</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①③\">shape</a>[<var>axis</var>].</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①\">the range</a> 1 to <var>inputs</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑦\">size</a>, exclusive:",
@@ -1011,13 +1009,13 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>size</var> be the sum of <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①⓪\">dimensions</a></code>[<var>axis</var>] and <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①⑥\">shape</a>[<var>dim</var>].</p>"
+                      "html": "<p>Let <var>size</var> be the sum of <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑧\">dimensions</a></code>[<var>axis</var>] and <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①⑥\">shape</a>[<var>dim</var>].</p>"
                     },
                     {
                       "html": "<p>If <var>size</var> is not a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#valid-dimension\" id=\"ref-for-valid-dimension①\">valid dimension</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④⓪\">TypeError</a></code>.</p>"
                     },
                     {
-                      "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①①\">dimensions</a></code>[<var>axis</var>] to <var>size</var>.</p>"
+                      "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑨\">dimensions</a></code>[<var>axis</var>] to <var>size</var>.</p>"
                     }
                   ]
                 }
@@ -1323,13 +1321,7 @@
               "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①\">item</a> in <var>outputShape</var> is not a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#valid-dimension\" id=\"ref-for-valid-dimension②\">valid dimension</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤⑥\">TypeError</a></code>.</p>"
             },
             {
-              "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor①⑨\">MLOperandDescriptor</a></code>.</p>"
-            },
-            {
-              "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑦\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype②③\">dataType</a>.</p>"
-            },
-            {
-              "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①②\">dimensions</a></code> to <var>outputShape</var>.</p>"
+              "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor③\">creating an MLOperandDescriptor</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype②③\">dataType</a> and <var>outputShape</var>.</p>"
             }
           ]
         },
@@ -1642,13 +1634,7 @@
               "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②\">item</a> in <var>outputShape</var> is not a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#valid-dimension\" id=\"ref-for-valid-dimension③\">valid dimension</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦⑧\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦④\">TypeError</a></code>.</p>"
             },
             {
-              "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor②⓪\">MLOperandDescriptor</a></code>.</p>"
-            },
-            {
-              "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑧\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype②⑨\">dataType</a>.</p>"
-            },
-            {
-              "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①③\">dimensions</a></code> to <var>outputShape</var>.</p>"
+              "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor④\">creating an MLOperandDescriptor</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype②⑨\">dataType</a> and <var>outputShape</var>.</p>"
             }
           ]
         },
@@ -1699,19 +1685,16 @@
           "html": "<p>If <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype③⓪\">dataType</a> is not equal to <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype③①\">dataType</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦⑥\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>descriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor②①\">MLOperandDescriptor</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑨\">dataType</a></code> to <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype③②\">dataType</a>.</p>"
-        },
-        {
-          "html": "Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①④\">dimensions</a></code> to the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#bidirectionally-broadcasting-the-shapes\" id=\"ref-for-bidirectionally-broadcasting-the-shapes\">bidirectionally broadcasting the shapes</a> <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape②③\">shape</a> and <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape②④\">shape</a>.",
+          "html": "Let <var>outputShape</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#bidirectionally-broadcasting-the-shapes\" id=\"ref-for-bidirectionally-broadcasting-the-shapes\">bidirectionally broadcasting the shapes</a> <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape②③\">shape</a> and <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape②④\">shape</a>.",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If that returns failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦⑦\">TypeError</a></code>.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Let <var>descriptor</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor⑤\">creating an MLOperandDescriptor</a> given <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype③②\">dataType</a> and <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -1921,13 +1904,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>descriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor②②\">MLOperandDescriptor</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype①⓪\">dataType</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-uint8\" id=\"ref-for-dom-mloperanddatatype-uint8⑥\">\"uint8\"</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①⑤\">dimensions</a></code> to <var>outputShape</var>.</p>"
+          "html": "<p>Let <var>descriptor</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor⑥\">creating an MLOperandDescriptor</a> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-uint8\" id=\"ref-for-dom-mloperanddatatype-uint8⑥\">\"uint8\"</a></code> and <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -2433,19 +2410,16 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mlgraphbuilder-validate-operand\" id=\"ref-for-mlgraphbuilder-validate-operand①③\">validating operand</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥②\">this</a> and <var>input</var> returns false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①④⑧\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧⑦\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>outputDescriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor②③\">MLOperandDescriptor</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>outputDescriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype①①\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype③⑨\">dataType</a>.</p>"
-        },
-        {
-          "html": "Set <var>outputDescriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①⑥\">dimensions</a></code> to the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#unidirectionally-broadcasting-the-shapes\" id=\"ref-for-unidirectionally-broadcasting-the-shapes\">unidirectionally broadcasting the shapes</a> <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape②⑧\">shape</a> and <var>newShape</var>.",
+          "html": "Let <var>outputShape</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#unidirectionally-broadcasting-the-shapes\" id=\"ref-for-unidirectionally-broadcasting-the-shapes\">unidirectionally broadcasting the shapes</a> <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape②⑧\">shape</a> and <var>newShape</var>.",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If that returns failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①④⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧⑧\">TypeError</a></code>.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Let <var>outputDescriptor</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor⑦\">creating an MLOperandDescriptor</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype③⑨\">dataType</a> and <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -2563,13 +2537,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor②④\">MLOperandDescriptor</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①⑦\">dimensions</a></code> to <var>shapeOutput</var>.</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype①②\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype④①\">dataType</a>.</p>"
+          "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor⑧\">creating an MLOperandDescriptor</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype④①\">dataType</a> and <var>shapeOutput</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -2691,13 +2659,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor②⑤\">MLOperandDescriptor</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①⑧\">dimensions</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a> « <var>shapeA</var>[0], <var>shapeB</var>[1] ».</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype①③\">dataType</a></code> to <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype⑤⓪\">dataType</a>.</p>"
+          "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor⑨\">creating an MLOperandDescriptor</a> given <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype⑤⓪\">dataType</a> and « <var>shapeA</var>[0], <var>shapeB</var>[1] ».</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -2831,26 +2793,14 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>desc0</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor②⑥\">MLOperandDescriptor</a></code>.</p>"
-            },
-            {
-              "html": "<p>Set <var>desc0</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①⑨\">dimensions</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑨\">list</a> « <var>numDirections</var>, <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
-            },
-            {
-              "html": "<p>Set <var>desc0</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype①④\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype⑥⓪\">dataType</a>.</p>"
+              "html": "<p>Let <var>desc0</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor①⓪\">creating an MLOperandDescriptor</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype⑥⓪\">dataType</a> and « <var>numDirections</var>, <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
             },
             {
               "html": "If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlgruoptions-returnsequence\" id=\"ref-for-dom-mlgruoptions-returnsequence②\">returnSequence</a></code> is true:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>desc1</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor②⑦\">MLOperandDescriptor</a></code>.</p>"
-                },
-                {
-                  "html": "<p>Set <var>desc1</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype①⑤\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype⑥①\">dataType</a>.</p>"
-                },
-                {
-                  "html": "<p>Set <var>desc1</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②⓪\">dimensions</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⓪\">list</a> « <var>steps</var>, <var>numDirections</var>, <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
+                  "html": "<p>Let <var>desc1</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor①①\">creating an MLOperandDescriptor</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype⑥①\">dataType</a> and « <var>steps</var>, <var>numDirections</var>, <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
                 }
               ]
             }
@@ -2874,7 +2824,7 @@
                   "html": "<p>Let <var>output1</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand①④\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦④\">this</a> and <var>desc1</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②①\">list</a> « <var>output0</var>, <var>output1</var> ».</p>"
+                  "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a> « <var>output0</var>, <var>output1</var> ».</p>"
                 },
                 {
                   "html": "<p>Set <var>output0</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot①⑦\">[[operator]]</a></code> and <var>output1</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot①⑧\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -2886,7 +2836,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②②\">list</a> « <var>output0</var> ».</p>"
+                  "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑨\">list</a> « <var>output0</var> ».</p>"
                 },
                 {
                   "html": "<p>Set <var>output0</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot①⑨\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3002,13 +2952,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor②⑧\">MLOperandDescriptor</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②①\">dimensions</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②③\">list</a> « <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype①⑥\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype⑥⑨\">dataType</a>.</p>"
+          "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor①②\">creating an MLOperandDescriptor</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype⑥⑨\">dataType</a> and « <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -3225,7 +3169,7 @@
           "html": "<p>If <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype⑧⓪\">dataType</a> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32②⑦\">\"float32\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16②⑤\">\"float16\"</a></code>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②①①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①④①\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mllayernormalizationoptions-axes\" id=\"ref-for-dom-mllayernormalizationoptions-axes①\">axes</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤③\">exist</a>, then set <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mllayernormalizationoptions-axes\" id=\"ref-for-dom-mllayernormalizationoptions-axes②\">axes</a></code> to a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②④\">list</a>, either equal to <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range③\">the range</a> from 1 to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank②⑥\">rank</a>, exclusive, if <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank②⑦\">rank</a> is greater than 1, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑤\">list</a> otherwise.</p>"
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mllayernormalizationoptions-axes\" id=\"ref-for-dom-mllayernormalizationoptions-axes①\">axes</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤③\">exist</a>, then set <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mllayernormalizationoptions-axes\" id=\"ref-for-dom-mllayernormalizationoptions-axes②\">axes</a></code> to a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⓪\">list</a>, either equal to <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range③\">the range</a> from 1 to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank②⑥\">rank</a>, exclusive, if <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank②⑦\">rank</a> is greater than 1, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②①\">list</a> otherwise.</p>"
         },
         {
           "html": "<p>Otherwise, if <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mllayernormalizationoptions-axes\" id=\"ref-for-dom-mllayernormalizationoptions-axes③\">axes</a></code> contains duplicate values, or if any of its elements is not in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range④\">the range</a> 0 to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank②⑧\">rank</a>, exclusive, then return failure.</p>"
@@ -3541,26 +3485,14 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor②⑨\">MLOperandDescriptor</a></code>.</p>"
-            },
-            {
-              "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②②\">dimensions</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑥\">list</a> « <var>numDirections</var>, <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
-            },
-            {
-              "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype①⑦\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①⓪⑥\">dataType</a>.</p>"
+              "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor①③\">creating an MLOperandDescriptor</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①⓪⑥\">dataType</a> and « <var>numDirections</var>, <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
             },
             {
               "html": "If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-returnsequence\" id=\"ref-for-dom-mllstmoptions-returnsequence②\">returnSequence</a></code> is true:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>desc2</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor③⓪\">MLOperandDescriptor</a></code>.</p>"
-                },
-                {
-                  "html": "<p>Set <var>desc2</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype①⑧\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①⓪⑦\">dataType</a>.</p>"
-                },
-                {
-                  "html": "<p>Set <var>desc2</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②③\">dimensions</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑦\">list</a> « <var>steps</var>, <var>numDirections</var>, <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
+                  "html": "<p>Let <var>desc2</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor①④\">creating an MLOperandDescriptor</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①⓪⑦\">dataType</a> and « <var>steps</var>, <var>numDirections</var>, <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
                 }
               ]
             }
@@ -3587,7 +3519,7 @@
                   "html": "<p>Let <var>output2</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand①⑧\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨④\">this</a> and <var>desc2</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑧\">list</a> « <var>output0</var>, <var>output1</var>, <var>output2</var> ».</p>"
+                  "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②②\">list</a> « <var>output0</var>, <var>output1</var>, <var>output2</var> ».</p>"
                 },
                 {
                   "html": "<p>Set <var>output0</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot②⑦\">[[operator]]</a></code>, <var>output1</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot②⑧\">[[operator]]</a></code> and <var>output2</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot②⑨\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3599,7 +3531,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑨\">list</a> « <var>output0</var>, <var>output1</var> ».</p>"
+                  "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②③\">list</a> « <var>output0</var>, <var>output1</var> ».</p>"
                 },
                 {
                   "html": "<p>Set <var>output0</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot③⓪\">[[operator]]</a></code> and <var>output1</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot③①\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3736,13 +3668,13 @@
           ]
         },
         {
-          "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor③①\">MLOperandDescriptor</a></code>.</p>"
+          "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor①⑧\">MLOperandDescriptor</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②④\">dimensions</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⓪\">list</a> « <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①⓪\">dimensions</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②④\">list</a> « <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype①⑨\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①①⑦\">dataType</a>.</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑤\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①①⑦\">dataType</a>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -3755,7 +3687,7 @@
               "html": "<p>Let <var>output1</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand②⓪\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨⑧\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③①\">list</a> « <var>output0</var>, <var>output1</var> ».</p>"
+              "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑤\">list</a> « <var>output0</var>, <var>output1</var> ».</p>"
             },
             {
               "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#operators\" id=\"ref-for-operators③②\">operator</a> for the \"lstmCell\" operation, given <var>weight</var>, <var>recurrentWeight</var>, <var>hiddenState</var>, <var>cellState</var>, <var>hiddenSize</var> and <var>options</var>.</p>"
@@ -3858,16 +3790,16 @@
           "html": "<p>If <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①①⑨\">dataType</a> is not equal to <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①②⓪\">dataType</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⑥⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑨④\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor③②\">MLOperandDescriptor</a></code>.</p>"
+          "html": "Let <var>outputShape</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mlgraphbuilder-calculate-matmul-output-sizes\" id=\"ref-for-mlgraphbuilder-calculate-matmul-output-sizes\">calculating matmul output sizes</a> given <var>a</var> and <var>b</var>.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If that throws an error, re-<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⑦⓪\">throw</a> the error.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②⑤\">dimensions</a></code> to the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mlgraphbuilder-calculate-matmul-output-sizes\" id=\"ref-for-mlgraphbuilder-calculate-matmul-output-sizes\">calculating matmul output sizes</a> given <var>a</var> and <var>b</var>.</p>"
-        },
-        {
-          "html": "<p>If that throws an error, re-<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⑦⓪\">throw</a> the error.</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype②⓪\">dataType</a></code> to <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①②①\">dataType</a>.</p>"
+          "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor①⑤\">creating an MLOperandDescriptor</a> given <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①②①\">dataType</a> and <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -3950,7 +3882,7 @@
           "html": "<p>Set <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpadoptions-value\" id=\"ref-for-dom-mlpadoptions-value①\">value</a></code> to the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#cast\" id=\"ref-for-cast①⑤\">casting</a> <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpadoptions-value\" id=\"ref-for-dom-mlpadoptions-value②\">value</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①②②\">dataType</a>.</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②⑥\">dimensions</a></code> to <var>outputShape</var>.</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①①\">dimensions</a></code> to <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -4144,13 +4076,13 @@
           "html": "<p>Otherwise, set <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-windowdimensions\" id=\"ref-for-dom-mlpool2doptions-windowdimensions②\">windowDimensions</a></code> to the height and width dimensions of the shape of <var>input</var>.</p>"
         },
         {
-          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-outputsizes\" id=\"ref-for-dom-mlpool2doptions-outputsizes①\">outputSizes</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑦\">exists</a>, or if <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-padding\" id=\"ref-for-dom-mlpool2doptions-padding①\">padding</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑧\">exist</a>, set <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-padding\" id=\"ref-for-dom-mlpool2doptions-padding②\">padding</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⓪\">list</a> « 0, 0, 0, 0 ».</p>"
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-outputsizes\" id=\"ref-for-dom-mlpool2doptions-outputsizes①\">outputSizes</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑦\">exists</a>, or if <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-padding\" id=\"ref-for-dom-mlpool2doptions-padding①\">padding</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑧\">exist</a>, set <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-padding\" id=\"ref-for-dom-mlpool2doptions-padding②\">padding</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③④\">list</a> « 0, 0, 0, 0 ».</p>"
         },
         {
           "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-padding\" id=\"ref-for-dom-mlpool2doptions-padding③\">padding</a></code>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⓪\">size</a> is not 4, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⑧①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⓪③\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-strides\" id=\"ref-for-dom-mlpool2doptions-strides①\">strides</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑨\">exist</a>, set <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-strides\" id=\"ref-for-dom-mlpool2doptions-strides②\">strides</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④①\">list</a> « 1, 1 ».</p>"
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-strides\" id=\"ref-for-dom-mlpool2doptions-strides①\">strides</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧⑨\">exist</a>, set <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-strides\" id=\"ref-for-dom-mlpool2doptions-strides②\">strides</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑤\">list</a> « 1, 1 ».</p>"
         },
         {
           "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-strides\" id=\"ref-for-dom-mlpool2doptions-strides③\">strides</a></code>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③①\">size</a> is not 2, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⑧②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⓪④\">TypeError</a></code>.</p>"
@@ -4171,7 +4103,7 @@
           ]
         },
         {
-          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-dilations\" id=\"ref-for-dom-mlpool2doptions-dilations①\">dilations</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨①\">exist</a>, set <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-dilations\" id=\"ref-for-dom-mlpool2doptions-dilations②\">dilations</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④②\">list</a> « 1, 1 ».</p>"
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-dilations\" id=\"ref-for-dom-mlpool2doptions-dilations①\">dilations</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨①\">exist</a>, set <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-dilations\" id=\"ref-for-dom-mlpool2doptions-dilations②\">dilations</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑥\">list</a> « 1, 1 ».</p>"
         },
         {
           "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-dilations\" id=\"ref-for-dom-mlpool2doptions-dilations③\">dilations</a></code>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③③\">size</a> is not 2, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⑧⑥\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⓪⑧\">TypeError</a></code>.</p>"
@@ -4189,7 +4121,7 @@
           "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item④\">item</a> in <var>outputShape</var> is not a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#valid-dimension\" id=\"ref-for-valid-dimension①③\">valid dimension</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⑧⑧\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②①⓪\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②⑦\">dimensions</a></code> to <var>outputShape</var>.</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①②\">dimensions</a></code> to <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -4295,19 +4227,16 @@
           "html": "<p>If <var>slope</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①②⑤\">dataType</a> is not equal to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①②⑥\">dataType</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⑨⑧\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②①③\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>descriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor③③\">MLOperandDescriptor</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype②①\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①②⑦\">dataType</a>.</p>"
-        },
-        {
-          "html": "Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②⑧\">dimensions</a></code> to the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#unidirectionally-broadcasting-the-shapes\" id=\"ref-for-unidirectionally-broadcasting-the-shapes①\">unidirectionally broadcasting the shapes</a> <var>slope</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑧⓪\">shape</a> and <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑧①\">shape</a>.",
+          "html": "Let <var>outputShape</var> be to the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#unidirectionally-broadcasting-the-shapes\" id=\"ref-for-unidirectionally-broadcasting-the-shapes①\">unidirectionally broadcasting the shapes</a> <var>slope</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑧⓪\">shape</a> and <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑧①\">shape</a>.",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If that returns failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⑨⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②①④\">TypeError</a></code>.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Let <var>descriptor</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor①⑥\">creating an MLOperandDescriptor</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①②⑦\">dataType</a> and <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -4372,7 +4301,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>outputShape</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑥\">list</a>.</p>"
+              "html": "<p>Let <var>outputShape</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⓪\">list</a>.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range⑨\">the range</a> 0 to <var>inputRank</var>, exclusive:",
@@ -4411,13 +4340,7 @@
           "html": "<p>Let <var>outputShape</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mlgraphbuilder-calculate-reduction-output-sizes\" id=\"ref-for-mlgraphbuilder-calculate-reduction-output-sizes①\">calculating reduction output sizes</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑧②\">shape</a>, <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlreduceoptions-axes\" id=\"ref-for-dom-mlreduceoptions-axes②\">axes</a></code> (if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨③\">exists</a>), and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlreduceoptions-keepdimensions\" id=\"ref-for-dom-mlreduceoptions-keepdimensions②\">keepDimensions</a></code>. If that returns failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⓪③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②①⑦\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor③④\">MLOperandDescriptor</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype②②\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①②⑨\">dataType</a>.</p>"
-        },
-        {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②⑨\">dimensions</a></code> to <var>outputShape</var>.</p>"
+          "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor①⑦\">creating an MLOperandDescriptor</a> given <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①②⑨\">dataType</a> and <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -4691,7 +4614,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-scales\" id=\"ref-for-dom-mlresample2doptions-scales②\">scales</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨④\">exist</a>, set it to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑧\">list</a> « 1.0, 1.0 ».</p>"
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-scales\" id=\"ref-for-dom-mlresample2doptions-scales②\">scales</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨④\">exist</a>, set it to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④②\">list</a> « 1.0, 1.0 ».</p>"
         },
         {
           "html": "<p>Otherwise, if any of its values is not greater than 0, or if its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑤\">size</a> is not 2, return false.</p>"
@@ -4700,7 +4623,7 @@
           "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-sizes\" id=\"ref-for-dom-mlresample2doptions-sizes①\">sizes</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑤\">exists</a>, and if its size is not 2, or if any of its values is not greater than 0, return false.</p>"
         },
         {
-          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes①\">axes</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑥\">exists</a>, set it to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑨\">list</a> « 2, 3 ».</p>"
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes①\">axes</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑥\">exists</a>, set it to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④③\">list</a> « 2, 3 ».</p>"
         },
         {
           "html": "<p>Otherwise, if its value is not one of « 0, 1», « 1, 2», « 2, 3 », return false.</p>"
@@ -4716,7 +4639,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor③⑤\">MLOperandDescriptor</a></code> initialized to <var>input</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperand-descriptor-slot\" id=\"ref-for-dom-mloperand-descriptor-slot①⓪\">[[descriptor]]</a></code>.</p>"
+          "html": "<p>Let <var>inputDescriptor</var> be <var>input</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperand-descriptor-slot\" id=\"ref-for-dom-mloperand-descriptor-slot①⓪\">[[descriptor]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>outputShape</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone①⑦\">clone</a> of <var>inputDescriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①③\">dimensions</a></code>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①⓪\">the range</a> 0 to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes②\">axes</a></code>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑥\">size</a>, exclusive:",
@@ -4732,12 +4658,12 @@
               "html": "<p>If <var>size</var> is not a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#valid-dimension\" id=\"ref-for-valid-dimension①④\">valid dimension</a>, then return failure.</p>"
             },
             {
-              "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions③⓪\">dimensions</a></code>[<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes④\">axes</a></code>[<var>index</var>]] to <var>size</var>.</p>"
+              "html": "<p>Set <var>outputShape</var>[<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes④\">axes</a></code>[<var>index</var>]] to <var>size</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return <var>desc</var>.</p>"
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor①⑧\">creating an MLOperandDescriptor</a> given <var>inputDescriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑥\">dataType</a></code> and <var>outputShape</var>.</p>"
         }
       ]
     },
@@ -4805,7 +4731,7 @@
           "html": "<p>Let <var>outputShape</var> be an empty array of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑤④\">unsigned long</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>newShape</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑦\">size</a> is 0, set <var>outputShape</var> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⓪\">list</a> for a scalar.</p>"
+          "html": "<p>If <var>newShape</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑦\">size</a> is 0, set <var>outputShape</var> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④④\">list</a> for a scalar.</p>"
         },
         {
           "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑤\">item</a> in <var>newShape</var> is not a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#valid-dimension\" id=\"ref-for-valid-dimension①⑤\">valid dimension</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③③⑤\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②②⑥\">TypeError</a></code>.</p>"
@@ -4820,7 +4746,7 @@
           "html": "<p>Let <var>desc</var> be a copy of <var>input</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperand-descriptor-slot\" id=\"ref-for-dom-mloperand-descriptor-slot①①\">[[descriptor]]</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions③①\">dimensions</a></code> to <var>newShape</var>.</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①④\">dimensions</a></code> to <var>newShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -5121,7 +5047,7 @@
               "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#operators\" id=\"ref-for-operators④⑥\">operator</a> for the \"split\" operation, given <var>splits</var> and <var>options</var>.</p>"
             },
             {
-              "html": "<p>Let <var>outputs</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤①\">list</a>.</p>"
+              "html": "<p>Let <var>outputs</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑤\">list</a>.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①②\">the range</a> 0 to <var>splitCount</var>, exclusive:",
@@ -5313,13 +5239,7 @@
           "html": "<p>If <var>trueValue</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①③⑧\">dataType</a> is not equal to <var>falseValue</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①③⑨\">dataType</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑦⑦\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑤⑧\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>descriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor③⑥\">MLOperandDescriptor</a></code>.</p>"
-        },
-        {
-          "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype②③\">dataType</a></code> to <var>trueValue</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①④⓪\">dataType</a>.</p>"
-        },
-        {
-          "html": "Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions③②\">dimensions</a></code> to the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#bidirectionally-broadcasting-the-shapes\" id=\"ref-for-bidirectionally-broadcasting-the-shapes③\">bidirectionally broadcasting the shapes</a> <var>trueValue</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑨②\">shape</a> and <var>falseValue</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑨③\">shape</a>.",
+          "html": "Let <var>outputShape</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#bidirectionally-broadcasting-the-shapes\" id=\"ref-for-bidirectionally-broadcasting-the-shapes③\">bidirectionally broadcasting the shapes</a> <var>trueValue</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑨②\">shape</a> and <var>falseValue</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑨③\">shape</a>.",
           "rationale": "if",
           "steps": [
             {
@@ -5328,7 +5248,16 @@
           ]
         },
         {
-          "html": "<p>If <var>condition</var> is not <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#bidirectionally-broadcastable\" id=\"ref-for-bidirectionally-broadcastable\">bidirectionally broadcastable</a> to <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions③③\">dimensions</a></code>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑦⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑥⓪\">TypeError</a></code>.</p>"
+          "html": "Set <var>outputShape</var> to the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#bidirectionally-broadcasting-the-shapes\" id=\"ref-for-bidirectionally-broadcasting-the-shapes④\">bidirectionally broadcasting the shapes</a> <var>condition</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑨④\">shape</a> and |outputShape].",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If that returns failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑦⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑥⓪\">TypeError</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>descriptor</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor①⑨\">creating an MLOperandDescriptor</a> given <var>trueValue</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①④⓪\">dataType</a> and <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -5371,13 +5300,13 @@
           "html": "<p>If <var>sizeFrom</var> &gt; <var>sizeTo</var>, then return failure.</p>"
         },
         {
-          "html": "<p>Let <var>paddedShapeFrom</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone①⑦\">clone</a> of <var>shapeFrom</var>.</p>"
+          "html": "<p>Let <var>paddedShapeFrom</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone①⑧\">clone</a> of <var>shapeFrom</var>.</p>"
         },
         {
           "html": "<p>While <var>paddedShapeFrom</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④⑦\">size</a> is less than <var>sizeTo</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-prepend\" id=\"ref-for-list-prepend\">prepend</a> 1 to <var>paddedShapeFrom</var>.</p>"
         },
         {
-          "html": "<p>Let <var>outputShape</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤④\">list</a>.</p>"
+          "html": "<p>Let <var>outputShape</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑧\">list</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①④\">the range</a> 0 to <var>sizeTo</var>, exclusive:",
@@ -5417,19 +5346,19 @@
           "html": "<p>Let <var>outputSize</var> be the maximum of <var>sizeA</var> and <var>sizeB</var>.</p>"
         },
         {
-          "html": "<p>Let <var>paddedA</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone①⑧\">clone</a> of <var>shapeA</var>.</p>"
+          "html": "<p>Let <var>paddedA</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone①⑨\">clone</a> of <var>shapeA</var>.</p>"
         },
         {
           "html": "<p>While <var>paddedA</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤⓪\">size</a> is less than <var>outputSize</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-prepend\" id=\"ref-for-list-prepend①\">prepend</a> 1 to <var>paddedA</var>.</p>"
         },
         {
-          "html": "<p>Let <var>paddedB</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone①⑨\">clone</a> of <var>shapeB</var>.</p>"
+          "html": "<p>Let <var>paddedB</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone②⓪\">clone</a> of <var>shapeB</var>.</p>"
         },
         {
           "html": "<p>While <var>paddedB</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤①\">size</a> is less than <var>outputSize</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-prepend\" id=\"ref-for-list-prepend②\">prepend</a> 1 to <var>paddedB</var>.</p>"
         },
         {
-          "html": "<p>Let <var>outputShape</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⑦\">list</a>.</p>"
+          "html": "<p>Let <var>outputShape</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤①\">list</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①⑤\">the range</a> 0 to <var>outputSize</var>, exclusive:",
