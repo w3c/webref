@@ -71,11 +71,11 @@
     {
       "name": "expire",
       "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-expire",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"expire|Expire|expires\" id=\"abstract-opdef-expire\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">expire</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#gpuadapter\" id=\"ref-for-gpuadapter④\">GPUAdapter</a></code> <var>adapter</var>, run the\n    following <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device-timeline\" id=\"ref-for-device-timeline①④\">device timeline</a> steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"expire|Expire|expires\" id=\"abstract-opdef-expire\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">expire</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#gpuadapter\" id=\"ref-for-gpuadapter③\">GPUAdapter</a></code> <var>adapter</var>, run the\n    following <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device-timeline\" id=\"ref-for-device-timeline①④\">device timeline</a> steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuadapter-adapter-slot\" id=\"ref-for-dom-gpuadapter-adapter-slot①\">[[adapter]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-adapter-expired-slot\" id=\"ref-for-dom-adapter-expired-slot①\">[[expired]]</a></code> to <code>true</code></p>"
+          "html": "<p>Set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuadapter-adapter-slot\" id=\"ref-for-dom-gpuadapter-adapter-slot\">[[adapter]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-adapter-state-slot\" id=\"ref-for-dom-adapter-state-slot①\">[[state]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-adapter-state-expired\" id=\"ref-for-dom-adapter-state-expired\">\"expired\"</a></code>.</p>"
         }
       ]
     },
@@ -298,7 +298,7 @@
           "rationale": "resolve",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#gpuadapter\" id=\"ref-for-gpuadapter⑨\">GPUAdapter</a></code> encapsulating <var>adapter</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#gpuadapter\" id=\"ref-for-gpuadapter⑧\">GPUAdapter</a></code> encapsulating <var>adapter</var>.</p>"
             }
           ]
         },
@@ -323,7 +323,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Return a <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-new-adapter-info\" id=\"ref-for-abstract-opdef-new-adapter-info\" data-timeline=\"content\">new adapter info</a> for <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuadapter-adapter-slot\" id=\"ref-for-dom-gpuadapter-adapter-slot④\">[[adapter]]</a></code>.</p>"
+          "html": "<p>Return a <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-new-adapter-info\" id=\"ref-for-abstract-opdef-new-adapter-info\" data-timeline=\"content\">new adapter info</a> for <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuadapter-adapter-slot\" id=\"ref-for-dom-gpuadapter-adapter-slot③\">[[adapter]]</a></code>.</p>"
         }
       ]
     },
@@ -340,7 +340,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
         },
         {
-          "html": "<p>Let <var>adapter</var> be <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuadapter-adapter-slot\" id=\"ref-for-dom-gpuadapter-adapter-slot⑥\">[[adapter]]</a></code>.</p>"
+          "html": "<p>Let <var>adapter</var> be <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuadapter-adapter-slot\" id=\"ref-for-dom-gpuadapter-adapter-slot⑤\">[[adapter]]</a></code>.</p>"
         },
         {
           "html": "<p>Issue the <var>initialization steps</var> to the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device-timeline\" id=\"ref-for-device-timeline②④\">Device timeline</a> of <var>this</var>.</p>"
@@ -375,14 +375,17 @@
           ]
         },
         {
-          "html": "If <var>adapter</var> is <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-expired\" id=\"ref-for-abstract-opdef-expired\" data-timeline=\"device\">expired</a>,\nor the user agent otherwise cannot fulfill the request:",
+          "html": "If <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-adapter-state-slot\" id=\"ref-for-dom-adapter-state-slot③\">[[state]]</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-adapter-state-expired\" id=\"ref-for-dom-adapter-state-expired①\">\"expired\"</a></code> or the user agent otherwise cannot fulfill the request:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>device</var> be a new <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device\" id=\"ref-for-device①⑤\">device</a>.</p>"
+              "html": "<p>Let <var>device</var> be a new <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device\" id=\"ref-for-device①④\">device</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#lose-the-device\" id=\"ref-for-lose-the-device③\" data-timeline=\"device\">Lose the device</a>(<var>device</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpudevicelostreason-unknown\" id=\"ref-for-dom-gpudevicelostreason-unknown①\">\"unknown\"</a></code>).</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a> <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-adapter-state-slot\" id=\"ref-for-dom-adapter-state-slot④\">[[state]]</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-adapter-state-expired\" id=\"ref-for-dom-adapter-state-expired②\">\"expired\"</a></code>.</p>"
             }
           ],
           "additional": [
@@ -394,7 +397,7 @@
                   "html": "<p>Let <var>device</var> be <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#a-new-device\" id=\"ref-for-a-new-device③\" data-timeline=\"device\">a new device</a> with the capabilities described by <var>descriptor</var>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-expire\" id=\"ref-for-abstract-opdef-expire⑦\" data-timeline=\"device\">Expire</a> <var>adapter</var>.</p>"
+                  "html": "<p>Set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-adapter-state-slot\" id=\"ref-for-dom-adapter-state-slot⑤\">[[state]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-adapter-state-consumed\" id=\"ref-for-dom-adapter-state-consumed③\">\"consumed\"</a></code>.</p>"
                 }
               ]
             }
@@ -697,7 +700,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a> <var>p</var> is rejected.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a> <var>p</var> is rejected.</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -705,10 +708,10 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a> <var>p</var> is pending.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a> <var>p</var> is pending.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a> <var>internalStateAtCompletion</var> is \"<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpubuffer-internal-state-unavailable\" id=\"ref-for-gpubuffer-internal-state-unavailable②\" data-timeline=\"device\">unavailable</a>\".</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a> <var>internalStateAtCompletion</var> is \"<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpubuffer-internal-state-unavailable\" id=\"ref-for-gpubuffer-internal-state-unavailable②\" data-timeline=\"device\">unavailable</a>\".</p>"
         },
         {
           "html": "If this allocation fails:",
@@ -744,7 +747,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a> <var>p</var> is already rejected.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a> <var>p</var> is already rejected.</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -752,7 +755,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a> <var>p</var> is still pending.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a> <var>p</var> is still pending.</p>"
         },
         {
           "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot⑨\" data-timeline=\"content\">[[pending_map]]</a></code> to <code>null</code>,\nand <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror②\">OperationError</a></code>.</p>"
@@ -858,7 +861,7 @@
           "html": "<p>If any of the following conditions are unsatisfied, return.</p>\n         <div class=\"validusage\">\n          <ul>\n           <li data-md=\"\">\n            <p><var>this</var> is <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-valid-to-use-with\" id=\"ref-for-abstract-opdef-valid-to-use-with①\" data-timeline=\"device\">valid to use with</a> <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuobjectbase-device-slot\" id=\"ref-for-dom-gpuobjectbase-device-slot①⑨\" data-timeline=\"const\">[[device]]</a></code>.</p>\n          </li></ul>\n         </div>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a> <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpubuffer-internal-state-slot\" id=\"ref-for-dom-gpubuffer-internal-state-slot⑥\" data-timeline=\"device\">[[internal state]]</a></code> is \"<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpubuffer-internal-state-unavailable\" id=\"ref-for-gpubuffer-internal-state-unavailable③\" data-timeline=\"device\">unavailable</a>\".</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⓪\">Assert</a> <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpubuffer-internal-state-slot\" id=\"ref-for-dom-gpubuffer-internal-state-slot⑥\" data-timeline=\"device\">[[internal state]]</a></code> is \"<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpubuffer-internal-state-unavailable\" id=\"ref-for-gpubuffer-internal-state-unavailable③\" data-timeline=\"device\">unavailable</a>\".</p>"
         },
         {
           "html": "If <var>bufferUpdate</var> is not <code>null</code>:",
@@ -1348,7 +1351,7 @@
     {
       "name": "Validate texture format required features",
       "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validate-texture-format-required-features",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-validate-texture-format-required-features\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Validate texture format required features</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#enumdef-gputextureformat\" id=\"ref-for-enumdef-gputextureformat②③\">GPUTextureFormat</a></code> <var>format</var><br> with logical <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device\" id=\"ref-for-device①⑨\">device</a> <var>device</var>, run the following <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#content-timeline\" id=\"ref-for-content-timeline④①\">content timeline</a> steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-validate-texture-format-required-features\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Validate texture format required features</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#enumdef-gputextureformat\" id=\"ref-for-enumdef-gputextureformat②③\">GPUTextureFormat</a></code> <var>format</var><br> with logical <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device\" id=\"ref-for-device①⑧\">device</a> <var>device</var>, run the following <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#content-timeline\" id=\"ref-for-content-timeline④①\">content timeline</a> steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1630,7 +1633,7 @@
               "html": "<p>Let <var>bound</var> be a copy of <var>bindGroupEntry</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpubindgroupentry-resource\" id=\"ref-for-dom-gpubindgroupentry-resource\">resource</a></code>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⓪\">Assert</a> <var>bound</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dictdef-gpubufferbinding\" id=\"ref-for-dictdef-gpubufferbinding⑧\">GPUBufferBinding</a></code>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①①\">Assert</a> <var>bound</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dictdef-gpubufferbinding\" id=\"ref-for-dictdef-gpubufferbinding⑧\">GPUBufferBinding</a></code>.</p>"
             },
             {
               "html": "If <var>bindGroupLayoutEntry</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-buffer\" id=\"ref-for-dom-gpubindgrouplayoutentry-buffer②⓪\">buffer</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpubufferbindinglayout-hasdynamicoffset\" id=\"ref-for-dom-gpubufferbindinglayout-hasdynamicoffset④\">hasDynamicOffset</a></code>:",
@@ -2080,7 +2083,7 @@
               "html": "<p>Let <var>shaderStage</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#typedefdef-gpushaderstageflags\" id=\"ref-for-typedefdef-gpushaderstageflags②\">GPUShaderStageFlags</a></code> for the shader stage\nat which <var>stageDesc</var> is used in <var>pipeline</var>.</p>"
             },
             {
-              "html": "<p>Let <var>entryPoint</var> be <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-get-the-entry-point\" id=\"ref-for-abstract-opdef-get-the-entry-point\" data-timeline=\"device\">get the entry point</a>(<var>shaderStage</var>, <var>stageDesc</var>). <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①①\">Assert</a> <var>entryPoint</var> is not <code>null</code>.</p>"
+              "html": "<p>Let <var>entryPoint</var> be <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-get-the-entry-point\" id=\"ref-for-abstract-opdef-get-the-entry-point\" data-timeline=\"device\">get the entry point</a>(<var>shaderStage</var>, <var>stageDesc</var>). <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①②\">Assert</a> <var>entryPoint</var> is not <code>null</code>.</p>"
             },
             {
               "html": "For each resource <var>resource</var> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#statically-used\" id=\"ref-for-statically-used\" data-timeline=\"const\">statically used</a> by <var>entryPoint</var>:",
@@ -2579,7 +2582,7 @@
               "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpuprogrammablestage\" id=\"ref-for-abstract-opdef-validating-gpuprogrammablestage\" data-timeline=\"device\">validating GPUProgrammableStage</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpushaderstage-compute\" id=\"ref-for-dom-gpushaderstage-compute②\">COMPUTE</a></code>, <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucomputepipelinedescriptor-compute\" id=\"ref-for-dom-gpucomputepipelinedescriptor-compute①\">compute</a></code>, <var>layout</var>, <var>this</var>) <var>must</var> succeed.</p>"
             },
             {
-              "html": "<p>Let <var>entryPoint</var> be <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-get-the-entry-point\" id=\"ref-for-abstract-opdef-get-the-entry-point③\" data-timeline=\"device\">get the entry point</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpushaderstage-compute\" id=\"ref-for-dom-gpushaderstage-compute③\">COMPUTE</a></code>, <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucomputepipelinedescriptor-compute\" id=\"ref-for-dom-gpucomputepipelinedescriptor-compute②\">compute</a></code>).</p>\n            <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①②\">Assert</a> <var>entryPoint</var> is not <code>null</code>.</p>"
+              "html": "<p>Let <var>entryPoint</var> be <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-get-the-entry-point\" id=\"ref-for-abstract-opdef-get-the-entry-point③\" data-timeline=\"device\">get the entry point</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpushaderstage-compute\" id=\"ref-for-dom-gpushaderstage-compute③\">COMPUTE</a></code>, <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucomputepipelinedescriptor-compute\" id=\"ref-for-dom-gpucomputepipelinedescriptor-compute②\">compute</a></code>).</p>\n            <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①③\">Assert</a> <var>entryPoint</var> is not <code>null</code>.</p>"
             },
             {
               "html": "<p>Let <var>workgroupStorageUsed</var> be the sum of <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#roundup\" id=\"ref-for-roundup\">roundUp</a>(16, <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#sizeof\" id=\"ref-for-sizeof①\">SizeOf</a>(<var>T</var>)) over each\ntype <var>T</var> of all variables with address space \"<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#address-spaces-workgroup\" id=\"ref-for-address-spaces-workgroup①\">workgroup</a>\" <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#statically-used\" id=\"ref-for-statically-used⑥\" data-timeline=\"const\">statically used</a> by <var>entryPoint</var>.</p>\n            <p><var>workgroupStorageUsed</var> <var>must</var> be ≤ <var>device</var>.limits.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxcomputeworkgroupstoragesize\" id=\"ref-for-dom-supported-limits-maxcomputeworkgroupstoragesize\">maxComputeWorkgroupStorageSize</a></code>.</p>"
@@ -2950,7 +2953,7 @@
               "html": "<p>Return <code>false</code> if any of the following requirements are unmet:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>There must be no more than <var>maxFragmentShaderInputComponents</var> scalar\ncomponents across all user-defined inputs for <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpipelinedescriptor-fragment\" id=\"ref-for-dom-gpurenderpipelinedescriptor-fragment①⑥\">fragment</a></code>.\nEach user-defined input of <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpipelinedescriptor-fragment\" id=\"ref-for-dom-gpurenderpipelinedescriptor-fragment①⑦\">fragment</a></code> consumes 4 scalar components.</p>\n         </li><li data-md=\"\">\n          <p>For each user-defined input of <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpipelinedescriptor-fragment\" id=\"ref-for-dom-gpurenderpipelinedescriptor-fragment①⑧\">fragment</a></code> there\nmust be a user-defined output of <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpipelinedescriptor-vertex\" id=\"ref-for-dom-gpurenderpipelinedescriptor-vertex⑦\">vertex</a></code> that <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#input-output-locations\" id=\"ref-for-input-output-locations①\">location</a>, type, and <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#interpolation\" id=\"ref-for-interpolation\">interpolation</a> of the input.</p>\n          \n        </li></ul>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①③\">Assert</a> that the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#input-output-locations\" id=\"ref-for-input-output-locations②\">location</a> of each user-defined input of <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpipelinedescriptor-fragment\" id=\"ref-for-dom-gpurenderpipelinedescriptor-fragment①⑨\">fragment</a></code> is less\nthan <var>device</var>.limits.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxinterstageshadervariables\" id=\"ref-for-dom-supported-limits-maxinterstageshadervariables①\">maxInterStageShaderVariables</a></code> (resulting from the above rules).</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①④\">Assert</a> that the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#input-output-locations\" id=\"ref-for-input-output-locations②\">location</a> of each user-defined input of <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpipelinedescriptor-fragment\" id=\"ref-for-dom-gpurenderpipelinedescriptor-fragment①⑨\">fragment</a></code> is less\nthan <var>device</var>.limits.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxinterstageshadervariables\" id=\"ref-for-dom-supported-limits-maxinterstageshadervariables①\">maxInterStageShaderVariables</a></code> (resulting from the above rules).</p>"
             }
           ]
         },
@@ -3186,7 +3189,7 @@
                   "rationale": "assert",
                   "steps": [
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑤\">Assert</a> <var>index</var> is <code>0</code></p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑥\">Assert</a> <var>index</var> is <code>0</code></p>"
                     },
                     {
                       "html": "<p>Let <var>depthSliceOrLayer</var> be <var>texture</var></p>"
@@ -3335,7 +3338,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>widthInBlocks</var> be <var>copyExtent</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-width\" id=\"ref-for-gpuextent3d-width①⑨\">width</a> ÷ the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block-width\" id=\"ref-for-texel-block-width⑦\">texel block width</a> of <var>format</var>. <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑥\">Assert</a> this is an integer.</p>\n       </li><li data-md=\"\">\n        <p><var>heightInBlocks</var> be <var>copyExtent</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-height\" id=\"ref-for-gpuextent3d-height①⑥\">height</a> ÷ the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block-height\" id=\"ref-for-texel-block-height⑥\">texel block height</a> of <var>format</var>. <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑦\">Assert</a> this is an integer.</p>\n       </li><li data-md=\"\">\n        <p><var>bytesInLastRow</var> be <var>widthInBlocks</var> × the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block-copy-footprint\" id=\"ref-for-texel-block-copy-footprint②\">texel block copy footprint</a> of <var>format</var>.</p>\n      </li></ul>"
+          "html": "<p>Let:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>widthInBlocks</var> be <var>copyExtent</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-width\" id=\"ref-for-gpuextent3d-width①⑨\">width</a> ÷ the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block-width\" id=\"ref-for-texel-block-width⑦\">texel block width</a> of <var>format</var>. <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑦\">Assert</a> this is an integer.</p>\n       </li><li data-md=\"\">\n        <p><var>heightInBlocks</var> be <var>copyExtent</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-height\" id=\"ref-for-gpuextent3d-height①⑥\">height</a> ÷ the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block-height\" id=\"ref-for-texel-block-height⑥\">texel block height</a> of <var>format</var>. <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑧\">Assert</a> this is an integer.</p>\n       </li><li data-md=\"\">\n        <p><var>bytesInLastRow</var> be <var>widthInBlocks</var> × the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block-copy-footprint\" id=\"ref-for-texel-block-copy-footprint②\">texel block copy footprint</a> of <var>format</var>.</p>\n      </li></ul>"
         },
         {
           "html": "<p>Fail if the following input validation requirements are not met:</p>\n      <div class=\"validusage\">\n       <ul>\n        <li data-md=\"\">\n         <p>If <var>heightInBlocks</var> &gt; 1, <var>layout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuimagedatalayout-bytesperrow\" id=\"ref-for-dom-gpuimagedatalayout-bytesperrow⑤\">bytesPerRow</a></code> must be specified.</p>\n        </li><li data-md=\"\">\n         <p>If <var>copyExtent</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-depthorarraylayers\" id=\"ref-for-gpuextent3d-depthorarraylayers①④\">depthOrArrayLayers</a> &gt; 1, <var>layout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuimagedatalayout-bytesperrow\" id=\"ref-for-dom-gpuimagedatalayout-bytesperrow⑥\">bytesPerRow</a></code> and <var>layout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuimagedatalayout-rowsperimage\" id=\"ref-for-dom-gpuimagedatalayout-rowsperimage③\">rowsPerImage</a></code> must be specified.</p>\n        </li><li data-md=\"\">\n         <p>If specified, <var>layout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuimagedatalayout-bytesperrow\" id=\"ref-for-dom-gpuimagedatalayout-bytesperrow⑦\">bytesPerRow</a></code> must be ≥ <var>bytesInLastRow</var>.</p>\n        </li><li data-md=\"\">\n         <p>If specified, <var>layout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuimagedatalayout-rowsperimage\" id=\"ref-for-dom-gpuimagedatalayout-rowsperimage④\">rowsPerImage</a></code> must be ≥ <var>heightInBlocks</var>.</p>\n       </li></ul>\n      </div>"
@@ -3673,7 +3676,7 @@
                   "steps": [
                     {
                       "case": "Not provided",
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑧\">Assert</a> that <var>depthStencilAttachment</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-depthreadonly\" id=\"ref-for-dom-gpurenderpassdepthstencilattachment-depthreadonly②\">depthReadOnly</a></code> is <code>true</code> and ensure the contents of the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#aspect-depth\" id=\"ref-for-aspect-depth④\">depth</a> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gputextureview-subresources\" id=\"ref-for-gputextureview-subresources②\">subresource</a> of <var>depthStencilView</var> are loaded into the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#framebuffer-memory\" id=\"ref-for-framebuffer-memory②\">framebuffer memory</a> associated with <var>depthStencilView</var>.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑨\">Assert</a> that <var>depthStencilAttachment</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-depthreadonly\" id=\"ref-for-dom-gpurenderpassdepthstencilattachment-depthreadonly②\">depthReadOnly</a></code> is <code>true</code> and ensure the contents of the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#aspect-depth\" id=\"ref-for-aspect-depth④\">depth</a> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gputextureview-subresources\" id=\"ref-for-gputextureview-subresources②\">subresource</a> of <var>depthStencilView</var> are loaded into the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#framebuffer-memory\" id=\"ref-for-framebuffer-memory②\">framebuffer memory</a> associated with <var>depthStencilView</var>.</p>"
                     },
                     {
                       "case": "\"load\"",
@@ -3696,7 +3699,7 @@
                   "steps": [
                     {
                       "case": "Not provided",
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑨\">Assert</a> that <var>depthStencilAttachment</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-stencilreadonly\" id=\"ref-for-dom-gpurenderpassdepthstencilattachment-stencilreadonly②\">stencilReadOnly</a></code> is <code>true</code> and ensure the contents of the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#aspect-stencil\" id=\"ref-for-aspect-stencil③\">stencil</a> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gputextureview-subresources\" id=\"ref-for-gputextureview-subresources⑤\">subresource</a> of <var>depthStencilView</var> are loaded into the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#framebuffer-memory\" id=\"ref-for-framebuffer-memory⑤\">framebuffer memory</a> associated with <var>depthStencilView</var>.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⓪\">Assert</a> that <var>depthStencilAttachment</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-stencilreadonly\" id=\"ref-for-dom-gpurenderpassdepthstencilattachment-stencilreadonly②\">stencilReadOnly</a></code> is <code>true</code> and ensure the contents of the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#aspect-stencil\" id=\"ref-for-aspect-stencil③\">stencil</a> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gputextureview-subresources\" id=\"ref-for-gputextureview-subresources⑤\">subresource</a> of <var>depthStencilView</var> are loaded into the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#framebuffer-memory\" id=\"ref-for-framebuffer-memory⑤\">framebuffer memory</a> associated with <var>depthStencilView</var>.</p>"
                     },
                     {
                       "case": "\"load\"",
@@ -3918,7 +3921,7 @@
           "html": "<p>Let <var>blockRows</var> be (<var>copySize</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-height\" id=\"ref-for-gpuextent3d-height②⓪\">height</a> ÷ <var>blockHeight</var>).</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⓪\">Assert</a> that <var>dstBlockOriginX</var>, <var>dstBlockOriginY</var>, <var>blockColumns</var>, and <var>blockRows</var> are integers.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②①\">Assert</a> that <var>dstBlockOriginX</var>, <var>dstBlockOriginY</var>, <var>blockColumns</var>, and <var>blockRows</var> are integers.</p>"
         },
         {
           "html": "For each <var>z</var> in the range [0, <var>copySize</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-depthorarraylayers\" id=\"ref-for-gpuextent3d-depthorarraylayers②⓪\">depthOrArrayLayers</a> − 1]:",
@@ -4017,7 +4020,7 @@
           "html": "<p>Let <var>blockRows</var> be (<var>copySize</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-height\" id=\"ref-for-gpuextent3d-height②①\">height</a> ÷ <var>blockHeight</var>).</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②①\">Assert</a> that <var>srcBlockOriginX</var>, <var>srcBlockOriginY</var>, <var>blockColumns</var>, and <var>blockRows</var> are integers.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②②\">Assert</a> that <var>srcBlockOriginX</var>, <var>srcBlockOriginY</var>, <var>blockColumns</var>, and <var>blockRows</var> are integers.</p>"
         },
         {
           "html": "For each <var>z</var> in the range [0, <var>copySize</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-depthorarraylayers\" id=\"ref-for-gpuextent3d-depthorarraylayers②①\">depthOrArrayLayers</a> − 1]:",
@@ -4122,7 +4125,7 @@
           "html": "<p>Let <var>blockRows</var> be (<var>copySize</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-height\" id=\"ref-for-gpuextent3d-height②②\">height</a> ÷ <var>blockHeight</var>).</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②②\">Assert</a> that <var>srcBlockOriginX</var>, <var>srcBlockOriginY</var>, <var>dstBlockOriginX</var>, <var>dstBlockOriginY</var>, <var>blockColumns</var>, and <var>blockRows</var> are integers.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②③\">Assert</a> that <var>srcBlockOriginX</var>, <var>srcBlockOriginY</var>, <var>dstBlockOriginX</var>, <var>dstBlockOriginY</var>, <var>blockColumns</var>, and <var>blockRows</var> are integers.</p>"
         },
         {
           "html": "For each <var>z</var> in the range [0, <var>copySize</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-depthorarraylayers\" id=\"ref-for-gpuextent3d-depthorarraylayers②②\">depthOrArrayLayers</a> − 1]:",
@@ -4855,7 +4858,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②③\">Assert</a>: <var>format</var> is a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#color-renderable-format\" id=\"ref-for-color-renderable-format①\">color renderable format</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②④\">Assert</a>: <var>format</var> is a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#color-renderable-format\" id=\"ref-for-color-renderable-format①\">color renderable format</a>.</p>"
             },
             {
               "html": "<p>Let <var>renderTargetPixelByteCost</var> be the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#render-target-pixel-byte-cost\" id=\"ref-for-render-target-pixel-byte-cost\">render target pixel byte cost</a> of <var>format</var>.</p>"
@@ -5100,7 +5103,7 @@
                   "steps": [
                     {
                       "case": "Not provided",
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②④\">Assert</a> that <var>depthStencilAttachment</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-depthreadonly\" id=\"ref-for-dom-gpurenderpassdepthstencilattachment-depthreadonly⑤\">depthReadOnly</a></code> is <code>true</code> and leave the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#aspect-depth\" id=\"ref-for-aspect-depth⑦\">depth</a> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gputextureview-subresources\" id=\"ref-for-gputextureview-subresources⑧\">subresource</a> of <var>depthStencilView</var> unchanged.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑤\">Assert</a> that <var>depthStencilAttachment</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-depthreadonly\" id=\"ref-for-dom-gpurenderpassdepthstencilattachment-depthreadonly⑤\">depthReadOnly</a></code> is <code>true</code> and leave the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#aspect-depth\" id=\"ref-for-aspect-depth⑦\">depth</a> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gputextureview-subresources\" id=\"ref-for-gputextureview-subresources⑧\">subresource</a> of <var>depthStencilView</var> unchanged.</p>"
                     },
                     {
                       "case": "\"store\"",
@@ -5123,7 +5126,7 @@
                   "steps": [
                     {
                       "case": "Not provided",
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑤\">Assert</a> that <var>depthStencilAttachment</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-stencilreadonly\" id=\"ref-for-dom-gpurenderpassdepthstencilattachment-stencilreadonly⑤\">stencilReadOnly</a></code> is <code>true</code> and leave the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#aspect-stencil\" id=\"ref-for-aspect-stencil⑥\">stencil</a> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gputextureview-subresources\" id=\"ref-for-gputextureview-subresources①①\">subresource</a> of <var>depthStencilView</var> unchanged.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑥\">Assert</a> that <var>depthStencilAttachment</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-stencilreadonly\" id=\"ref-for-dom-gpurenderpassdepthstencilattachment-stencilreadonly⑤\">stencilReadOnly</a></code> is <code>true</code> and leave the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#aspect-stencil\" id=\"ref-for-aspect-stencil⑥\">stencil</a> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gputextureview-subresources\" id=\"ref-for-gputextureview-subresources①①\">subresource</a> of <var>depthStencilView</var> unchanged.</p>"
                     },
                     {
                       "case": "\"store\"",
@@ -6102,7 +6105,7 @@
           "html": "<p>Let <var>blockRows</var> be (<var>copySize</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-height\" id=\"ref-for-gpuextent3d-height②③\">height</a> ÷ <var>blockHeight</var>).</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑥\">Assert</a> that <var>dstBlockOriginX</var>, <var>dstBlockOriginY</var>, <var>blockColumns</var>, and <var>blockRows</var> are integers.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑦\">Assert</a> that <var>dstBlockOriginX</var>, <var>dstBlockOriginY</var>, <var>blockColumns</var>, and <var>blockRows</var> are integers.</p>"
         },
         {
           "html": "For each <var>z</var> in the range [0, <var>copySize</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-depthorarraylayers\" id=\"ref-for-gpuextent3d-depthorarraylayers②④\">depthOrArrayLayers</a> − 1]:",
@@ -6189,7 +6192,7 @@
       "rationale": "assert",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑦\">Assert</a> that the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block-width\" id=\"ref-for-texel-block-width①③\">texel block width</a> of <var>destination</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuimagecopytexture-texture\" id=\"ref-for-dom-gpuimagecopytexture-texture③⓪\">texture</a></code> is 1,\nthe <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block-height\" id=\"ref-for-texel-block-height①②\">texel block height</a> of <var>destination</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuimagecopytexture-texture\" id=\"ref-for-dom-gpuimagecopytexture-texture③①\">texture</a></code> is 1, and that <var>copySize</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-depthorarraylayers\" id=\"ref-for-gpuextent3d-depthorarraylayers②⑦\">depthOrArrayLayers</a> is 1.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑧\">Assert</a> that the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block-width\" id=\"ref-for-texel-block-width①③\">texel block width</a> of <var>destination</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuimagecopytexture-texture\" id=\"ref-for-dom-gpuimagecopytexture-texture③⓪\">texture</a></code> is 1,\nthe <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block-height\" id=\"ref-for-texel-block-height①②\">texel block height</a> of <var>destination</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuimagecopytexture-texture\" id=\"ref-for-dom-gpuimagecopytexture-texture③①\">texture</a></code> is 1, and that <var>copySize</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-depthorarraylayers\" id=\"ref-for-gpuextent3d-depthorarraylayers②⑦\">depthOrArrayLayers</a> is 1.</p>"
         },
         {
           "html": "<p>Let <var>srcOrigin</var> be <var>source</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuimagecopyexternalimage-origin\" id=\"ref-for-dom-gpuimagecopyexternalimage-origin③\">origin</a></code>.</p>"
@@ -6482,7 +6485,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑧\">Assert</a> <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-texturedescriptor-slot\" id=\"ref-for-dom-gpucanvascontext-texturedescriptor-slot②\">[[textureDescriptor]]</a></code> is not <code>null</code>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑨\">Assert</a> <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-texturedescriptor-slot\" id=\"ref-for-dom-gpucanvascontext-texturedescriptor-slot②\">[[textureDescriptor]]</a></code> is not <code>null</code>.</p>"
         },
         {
           "html": "<p>Let <var>device</var> be <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑤\">[[configuration]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-device\" id=\"ref-for-dom-gpucanvasconfiguration-device①\">device</a></code>.</p>"
@@ -6965,7 +6968,7 @@
           ]
         },
         {
-          "html": "For every <var>invocation</var> in <var>computeInvocations</var>, in any order the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device\" id=\"ref-for-device②①\">device</a> chooses, including in parallel:",
+          "html": "For every <var>invocation</var> in <var>computeInvocations</var>, in any order the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device\" id=\"ref-for-device②⓪\">device</a> chooses, including in parallel:",
           "rationale": "set",
           "steps": [
             {
@@ -7217,7 +7220,7 @@
           "html": "<p>Set the shader <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values④\">builtins</a>:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Set the <code>vertex_index</code> builtin, if any, to <var>vertexIndex</var>.</p>\n       </li><li data-md=\"\">\n        <p>Set the <code>instance_index</code> builtin, if any, to <var>instanceIndex</var>.</p>\n      </li></ul>"
         },
         {
-          "html": "<p>Invoke the vertex shader entry point described by <var>desc</var>.</p>\n      \n      <p>The <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device\" id=\"ref-for-device②③\">device</a> may become <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#lose-the-device\" id=\"ref-for-lose-the-device⑦\" data-timeline=\"device\">lost</a> if <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#shader-execution-end\" id=\"ref-for-shader-execution-end①\">shader execution does not end</a> in a reasonable amount of time, as determined by the user agent.</p>"
+          "html": "<p>Invoke the vertex shader entry point described by <var>desc</var>.</p>\n      \n      <p>The <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device\" id=\"ref-for-device②②\">device</a> may become <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#lose-the-device\" id=\"ref-for-lose-the-device⑦\" data-timeline=\"device\">lost</a> if <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#shader-execution-end\" id=\"ref-for-shader-execution-end①\">shader execution does not end</a> in a reasonable amount of time, as determined by the user agent.</p>"
         }
       ]
     },
@@ -7512,7 +7515,7 @@
               ]
             },
             {
-              "html": "<p>Invoke the fragment shader entry point described by <var>desc</var>.</p>\n        <p>The <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device\" id=\"ref-for-device②④\">device</a> may become <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#lose-the-device\" id=\"ref-for-lose-the-device⑧\" data-timeline=\"device\">lost</a> if <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#shader-execution-end\" id=\"ref-for-shader-execution-end②\">shader execution does not end</a> in a reasonable amount of time, as determined by the user agent.</p>"
+              "html": "<p>Invoke the fragment shader entry point described by <var>desc</var>.</p>\n        <p>The <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device\" id=\"ref-for-device②③\">device</a> may become <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#lose-the-device\" id=\"ref-for-lose-the-device⑧\" data-timeline=\"device\">lost</a> if <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#shader-execution-end\" id=\"ref-for-shader-execution-end②\">shader execution does not end</a> in a reasonable amount of time, as determined by the user agent.</p>"
             },
             {
               "html": "<p>If the fragment issued <code>discard</code>, return <code>null</code>.</p>"
