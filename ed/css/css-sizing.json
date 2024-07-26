@@ -7,7 +7,7 @@
     {
       "name": "width",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-width",
-      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>",
       "initial": "auto",
       "appliesTo": "all elements except non-replaced inlines",
       "inherited": "no",
@@ -49,6 +49,12 @@
           "name": "fit-content()",
           "value": "fit-content(<length-percentage [0,∞]>)",
           "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
+          "type": "function"
+        },
+        {
+          "name": "calc-size()",
+          "prose": "See <calc-size()>.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
           "type": "function"
         }
       ],
@@ -59,7 +65,7 @@
     {
       "name": "height",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-height",
-      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>",
       "initial": "auto",
       "appliesTo": "all elements except non-replaced inlines",
       "inherited": "no",
@@ -102,6 +108,12 @@
           "value": "fit-content(<length-percentage [0,∞]>)",
           "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
           "type": "function"
+        },
+        {
+          "name": "calc-size()",
+          "prose": "See <calc-size()>.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
+          "type": "function"
         }
       ],
       "styleDeclaration": [
@@ -111,7 +123,7 @@
     {
       "name": "min-width",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-width",
-      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>",
       "initial": "auto",
       "appliesTo": "all elements that accept width or height",
       "inherited": "no",
@@ -153,6 +165,12 @@
           "name": "fit-content()",
           "value": "fit-content(<length-percentage [0,∞]>)",
           "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
+          "type": "function"
+        },
+        {
+          "name": "calc-size()",
+          "prose": "See <calc-size()>.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
           "type": "function"
         }
       ],
@@ -164,7 +182,7 @@
     {
       "name": "min-height",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-height",
-      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>",
       "initial": "auto",
       "appliesTo": "all elements that accept width or height",
       "inherited": "no",
@@ -207,6 +225,12 @@
           "value": "fit-content(<length-percentage [0,∞]>)",
           "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
           "type": "function"
+        },
+        {
+          "name": "calc-size()",
+          "prose": "See <calc-size()>.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
+          "type": "function"
         }
       ],
       "styleDeclaration": [
@@ -217,7 +241,7 @@
     {
       "name": "max-width",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-width",
-      "value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+      "value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>",
       "initial": "none",
       "appliesTo": "all elements that accept width or height",
       "inherited": "no",
@@ -260,6 +284,12 @@
           "value": "fit-content(<length-percentage [0,∞]>)",
           "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
           "type": "function"
+        },
+        {
+          "name": "calc-size()",
+          "prose": "See <calc-size()>.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
+          "type": "function"
         }
       ],
       "styleDeclaration": [
@@ -270,7 +300,7 @@
     {
       "name": "max-height",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-height",
-      "value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+      "value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>",
       "initial": "none",
       "appliesTo": "all elements that accept width or height",
       "inherited": "no",
@@ -312,6 +342,12 @@
           "name": "fit-content()",
           "value": "fit-content(<length-percentage [0,∞]>)",
           "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
+          "type": "function"
+        },
+        {
+          "name": "calc-size()",
+          "prose": "See <calc-size()>.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
           "type": "function"
         }
       ],

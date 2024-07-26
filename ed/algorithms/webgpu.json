@@ -7132,6 +7132,9 @@
               ]
             },
             {
+              "html": "<p>Let <var>drawCallOutOfBounds</var> be <code>false</code>.</p>"
+            },
+            {
               "html": "For each <var>attributeDesc</var> in <var>vertexBufferLayout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuvertexbufferlayout-attributes\" id=\"ref-for-dom-gpuvertexbufferlayout-attributes⑧\">attributes</a></code>:",
               "rationale": "let",
               "steps": [
@@ -7139,10 +7142,45 @@
                   "html": "<p>Let <var>attributeOffset</var> be <var>vertexBufferOffset</var> + <var>vertexElementIndex</var> * <var>vertexBufferLayout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuvertexbufferlayout-arraystride\" id=\"ref-for-dom-gpuvertexbufferlayout-arraystride①①\">arrayStride</a></code> + <var>attributeDesc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuvertexattribute-offset\" id=\"ref-for-dom-gpuvertexattribute-offset⑦\">offset</a></code>.</p>"
                 },
                 {
-                  "html": "<p>Load the attribute <var>data</var> of format <var>attributeDesc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuvertexattribute-format\" id=\"ref-for-dom-gpuvertexattribute-format⑧\">format</a></code> from <var>vertexBuffer</var> starting at offset <var>attributeOffset</var>.\nThe components are loaded in the order <code>x</code>, <code>y</code>, <code>z</code>, <code>w</code> from buffer memory.</p>\n          <p>If this results in an out-of-bounds access, the resulting value is determined\naccording to WGSL’s <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#invalid-memory-reference\" id=\"ref-for-invalid-memory-reference①\">invalid memory reference</a> behavior.</p>"
-                },
+                  "html": "If <var>attributeOffset</var> + sizeof(<var>attributeDesc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuvertexattribute-format\" id=\"ref-for-dom-gpuvertexattribute-format⑧\">format</a></code>) &gt; <var>vertexBufferOffset</var> + <var>vertexBufferBindingSize</var>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>drawCallOutOfBounds</var> to <code>true</code>.</p>"
+                    },
+                    {
+                      "html": "<p><strong>Optionally (implementation-defined)</strong>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty②\">empty</a> <var>vertexIndexList</var> and stop, cancelling the draw call.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "For each <var>attributeDesc</var> in <var>vertexBufferLayout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuvertexbufferlayout-attributes\" id=\"ref-for-dom-gpuvertexbufferlayout-attributes⑨\">attributes</a></code>:",
+              "rationale": "if",
+              "steps": [
                 {
-                  "html": "<p><strong>Optionally (implementation-defined):</strong> If <var>attributeOffset</var> + sizeof(<var>attributeDesc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuvertexattribute-format\" id=\"ref-for-dom-gpuvertexattribute-format⑨\">format</a></code>) &gt; <var>vertexBufferOffset</var> + <var>vertexBufferBindingSize</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty②\">empty</a> <var>vertexIndexList</var> and stop, cancelling the draw call.</p>"
+                  "html": "If <var>drawCallOutOfBounds</var> is <code>true</code>:",
+                  "rationale": "load",
+                  "steps": [
+                    {
+                      "html": "<p>Load the attribute <var>data</var> according to WGSL’s <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#invalid-memory-reference\" id=\"ref-for-invalid-memory-reference②\">invalid memory reference</a> behavior, from <var>vertexBuffer</var>.</p>"
+                    }
+                  ],
+                  "additional": [
+                    {
+                      "html": "Otherwise:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>attributeOffset</var> be <var>vertexBufferOffset</var> + <var>vertexElementIndex</var> * <var>vertexBufferLayout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuvertexbufferlayout-arraystride\" id=\"ref-for-dom-gpuvertexbufferlayout-arraystride①②\">arrayStride</a></code> + <var>attributeDesc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuvertexattribute-offset\" id=\"ref-for-dom-gpuvertexattribute-offset⑧\">offset</a></code>.</p>"
+                        },
+                        {
+                          "html": "<p>Load the attribute <var>data</var> of format <var>attributeDesc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuvertexattribute-format\" id=\"ref-for-dom-gpuvertexattribute-format⑨\">format</a></code> from <var>vertexBuffer</var> starting at offset <var>attributeOffset</var>.\nThe components are loaded in the order <code>x</code>, <code>y</code>, <code>z</code>, <code>w</code> from buffer memory.</p>"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "html": "<p>Convert the <var>data</var> into a shader-visible format, according to <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#channel-formats\" id=\"ref-for-channel-formats\">channel formats</a> rules.</p>"
