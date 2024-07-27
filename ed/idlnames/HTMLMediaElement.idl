@@ -65,7 +65,7 @@ partial interface HTMLMediaElement {
   [SecureContext] Promise<undefined> setSinkId (DOMString sinkId);
 };
 
-// Source: Encrypted Media Extensions (https://www.w3.org/TR/encrypted-media/)
+// Source: Encrypted Media Extensions (https://www.w3.org/TR/encrypted-media-2/)
 [Exposed=Window] partial interface HTMLMediaElement {
   [SecureContext] readonly        attribute MediaKeys?   mediaKeys;
                                   attribute EventHandler onencrypted;

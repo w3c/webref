@@ -54,7 +54,7 @@
       {
         "spec": {
           "title": "Encrypted Media Extensions",
-          "url": "https://www.w3.org/TR/encrypted-media/"
+          "url": "https://www.w3.org/TR/encrypted-media-2/"
         },
         "fragment": "[Exposed=Window] partial interface HTMLMediaElement {\n  [SecureContext] readonly        attribute MediaKeys?   mediaKeys;\n                                  attribute EventHandler onencrypted;\n                                  attribute EventHandler onwaitingforkey;\n  [SecureContext] Promise<undefined> setMediaKeys (MediaKeys? mediaKeys);\n};"
       },
@@ -434,17 +434,17 @@
           "extended": [
             {
               "spec": {
-                "title": "CSS Scroll Snap Module Level 2",
-                "url": "https://drafts.csswg.org/css-scroll-snap-2/"
-              },
-              "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onsnapchanged;\n  attribute EventHandler onsnapchanging;\n};"
-            },
-            {
-              "spec": {
                 "title": "CSS Animations Level 1",
                 "url": "https://www.w3.org/TR/css-animations-1/"
               },
               "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
+            },
+            {
+              "spec": {
+                "title": "CSS Scroll Snap Module Level 2",
+                "url": "https://www.w3.org/TR/css-scroll-snap-2/"
+              },
+              "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onsnapchanged;\n  attribute EventHandler onsnapchanging;\n};"
             },
             {
               "spec": {

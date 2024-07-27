@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Encrypted Media Extensions",
-      "url": "https://www.w3.org/TR/encrypted-media/"
+      "url": "https://www.w3.org/TR/encrypted-media-2/"
     },
     "fragment": "[Exposed=Window, SecureContext] interface MediaKeySession : EventTarget {\n  readonly        attribute DOMString                            sessionId;\n  readonly        attribute unrestricted double                  expiration;\n  readonly        attribute Promise<MediaKeySessionClosedReason> closed;\n  readonly        attribute MediaKeyStatusMap                    keyStatuses;\n                  attribute EventHandler                         onkeystatuseschange;\n                  attribute EventHandler                         onmessage;\n  Promise<undefined>    generateRequest (DOMString initDataType, BufferSource initData);\n  Promise<boolean> load (DOMString sessionId);\n  Promise<undefined>    update (BufferSource response);\n  Promise<undefined>    close ();\n  Promise<undefined>    remove ();\n};",
     "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession"
