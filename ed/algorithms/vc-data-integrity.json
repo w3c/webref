@@ -5,6 +5,42 @@
   },
   "algorithms": [
     {
+      "html": "The processing model used by a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-conforming-processor\" class=\"internalDFN\" id=\"ref-for-dfn-conforming-processor-2\">conforming processor</a> and its\napplication-specific software is described in this section. When software\nis to ensure information is tamper-evident, it performs the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The software arranges the information into a document, such as a JSON or\nJSON-LD document."
+        },
+        {
+          "html": "If the document is a JSON-LD document, the software selects one or more\nJSON-LD Contexts and expresses them using the <code>@context</code> property."
+        },
+        {
+          "html": "The software selects one or more cryptography suites that meet the needs of\nthe use case, such as one that provides full, selective, or unlinkable\ndisclosure, using acceptable cryptographic key material."
+        },
+        {
+          "html": "The software uses the applicable algorithms in either Section <a href=\"https://w3c.github.io/vc-data-integrity/#add-proof\" data-matched-text=\"[[[#add-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2 </bdi>Add Proof</a>\nor Section <a href=\"https://w3c.github.io/vc-data-integrity/#add-proof-set-chain\" data-matched-text=\"[[[#add-proof-set-chain]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.3 </bdi>Add Proof Set/Chain</a> to add one or more proofs."
+        }
+      ]
+    },
+    {
+      "html": "When software needs to use information that was transmitted to it using\na mechanism described by this specification, it performs the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The software transforms the incoming data into a document that can be understood\nby the applicable algorithm provided in Section <a href=\"https://w3c.github.io/vc-data-integrity/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4 </bdi>Verify Proof</a> or Section\n<a href=\"https://w3c.github.io/vc-data-integrity/#verify-proof-sets-and-chains\" data-matched-text=\"[[[#verify-proof-sets-and-chains]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5 </bdi>Verify Proof Sets and Chains</a>."
+        },
+        {
+          "html": "The software uses JSON Schema or equivalent mechanism to validate that the\nincoming document follows an expected schema used by the application."
+        },
+        {
+          "html": "The software uses the applicable algorithms provided in Section <a href=\"https://w3c.github.io/vc-data-integrity/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4 </bdi>Verify Proof</a>\nor Section <a href=\"https://w3c.github.io/vc-data-integrity/#verify-proof-sets-and-chains\" data-matched-text=\"[[[#verify-proof-sets-and-chains]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5 </bdi>Verify Proof Sets and Chains</a> to verify the integrity of the\nincoming document."
+        },
+        {
+          "html": "If the document is a JSON-LD document, the software uses the algorithm provided\nin Section <a href=\"https://w3c.github.io/vc-data-integrity/#context-validation\" data-matched-text=\"[[[#context-validation]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6 </bdi>Context Validation</a>, or one providing equivalent protections,\nto validate all JSON-LD Context values used in the document."
+        }
+      ]
+    },
+    {
       "html": "The following algorithm specifies how a digital proof can be added to an\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-unsecured-data-document\" class=\"internalDFN\" id=\"ref-for-dfn-unsecured-data-document-2\">unsecured data document</a>, and can then be used to verify the output\ndocument's authenticity and integrity. Required inputs are an <a href=\"https://w3c.github.io/vc-data-integrity/#dfn-unsecured-data-document\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-unsecured-data-document-3\">unsecured data\ndocument</a> (<a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>unsecuredDocument</var>), a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-data-integrity-cryptographic-suite-instance\" class=\"internalDFN\" id=\"ref-for-dfn-data-integrity-cryptographic-suite-instance-3\">cryptosuite instance</a>\n(<a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"struct\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a> <var>cryptosuite</var>), and a set of options (<a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). Output is\na <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-secured-data-document\" class=\"internalDFN\" id=\"ref-for-dfn-secured-data-document-3\">secured data document</a> (<a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>) or an error. Whenever this algorithm\nencodes strings, it <em class=\"rfc2119\">MUST</em> use UTF-8 encoding.",
       "rationale": ".algorithm",
       "steps": [
@@ -54,7 +90,7 @@
           "html": "Set <var>unsecuredDocument</var>.<var>proof</var> to <var>matchingProofs</var>."
         },
         {
-          "html": "Run steps 1 through 6 of the algorithm in section <a href=\"https://w3c.github.io/vc-data-integrity/#add-proof\" data-matched-text=\"[[[#add-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.1 </bdi>Add Proof</a>, passing\n<var>unsecuredDocument</var>, <var data-type=\"cryptosuite instance\">suite</var>, and <var>options</var>. If no exceptions are raised, append\nthe generated <var>proof</var> value to the <var>allProofs</var>; otherwise, raise the exception."
+          "html": "Run steps 1 through 6 of the algorithm in section <a href=\"https://w3c.github.io/vc-data-integrity/#add-proof\" data-matched-text=\"[[[#add-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2 </bdi>Add Proof</a>, passing\n<var>unsecuredDocument</var>, <var data-type=\"cryptosuite instance\">suite</var>, and <var>options</var>. If no exceptions are raised, append\nthe generated <var>proof</var> value to the <var>allProofs</var>; otherwise, raise the exception."
         },
         {
           "html": "Set <var>output</var>.<var>proof</var> to the value of <var>allProofs</var>."
@@ -121,7 +157,7 @@
               "html": "Let <var>unsecuredDocument</var> be a copy of <var>securedDocument</var> with the proof value\nremoved and then set <var>unsecuredDocument</var>.<var>proof</var> to <var>matchingProofs</var>."
             },
             {
-              "html": "Run steps 4 through 8 of the algorithm in section <a href=\"https://w3c.github.io/vc-data-integrity/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.3 </bdi>Verify Proof</a> on\n<var>unsecuredDocument</var>; if no exceptions are raised, append <var>cryptosuiteVerificationResult</var>\nto <var>verificationResults</var>."
+              "html": "Run steps 4 through 8 of the algorithm in section <a href=\"https://w3c.github.io/vc-data-integrity/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4 </bdi>Verify Proof</a> on\n<var>unsecuredDocument</var>; if no exceptions are raised, append <var>cryptosuiteVerificationResult</var>\nto <var>verificationResults</var>."
             }
           ]
         },
@@ -148,6 +184,36 @@
         },
         {
           "html": "Return <var>combinedVerificationResult</var>, <var>successfulVerificationResults</var>."
+        }
+      ]
+    },
+    {
+      "html": "The context validation algorithm is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>result</var>.<var>status</var> to <code>false</code>, <var>result</var>.<var>warnings</var> to an empty list,\n<var>result</var>.<var>errors</var> to an empty list, <var>compactionContext</var> to an empty list;\nand clone <var>inputDocument</var> to <var>result</var>.<var>document</var>."
+        },
+        {
+          "html": "Let <var>contextValue</var> be the value of the <code>@context</code> property of <var>result</var>.<var>document</var>,\nwhich might be undefined."
+        },
+        {
+          "html": "If <var>contextValue</var> does not deeply equal <var>expectedContext</var>, then if any subtree in\n<var>result</var>.<var>document</var> contains an <code>@context</code> property or any URI in\n<var>contextValue</var> dereferences to a JSON-LD Context file that does not match a\nknown good value or cryptographic hash, then perform the applicable action:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>recompact</var> is <code>true</code>, set <var>result</var>.<var>document</var> to the result\nof running the <a data-cite=\"JSON-LD11-API#compaction-algorithm\" href=\"https://www.w3.org/TR/json-ld11-api/#compaction-algorithm\">\nJSON-LD Compaction Algorithm</a> with the <var>inputDocument</var> and\n<var>expectedContext</var> as inputs. If the compaction fails, add at least one error\nto <var>result</var>.<var>errors</var>."
+            },
+            {
+              "html": "If <var>recompact</var> is not <code>true</code>, add at least one error to <var>result</var>.<var>errors</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>result</var>.<var>errors</var> is empty, set <var>result</var>.<var>status</var> to <code>true</code>; otherwise, set\n<var>result</var>.<var>status</var> to <code>false</code>, and remove the <var>document</var> property from <var>result</var>."
+        },
+        {
+          "html": "Return the value of <var>result</var>."
         }
       ]
     }
