@@ -1,0 +1,20 @@
+{
+  "spec": {
+    "title": "\"cenc\" Initialization Data Format",
+    "url": "https://w3c.github.io/encrypted-media/format-registry/initdata/cenc.html"
+  },
+  "algorithms": [
+    {
+      "html": "When such Initialization Data is provided by the application, an implementation (the user agent and/or CDM) <em class=\"rfc2119\">MUST</em>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Examine the series of 'pssh' boxes to find the <em>first</em> 'pssh' box that the CDM instance supports. This includes checking the SystemID, box version, and system-specific values.</p>"
+        },
+        {
+          "html": "<p>If no such supported box is found, the provided data <em class=\"rfc2119\">SHALL</em> be considered \"not supported by the CDM.\"</p>"
+        }
+      ]
+    }
+  ]
+}

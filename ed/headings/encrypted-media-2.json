@@ -1,0 +1,974 @@
+{
+  "spec": {
+    "title": "Encrypted Media Extensions",
+    "url": "https://w3c.github.io/encrypted-media/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/encrypted-media/#title",
+      "level": 1,
+      "title": "Encrypted Media Extensions"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/encrypted-media/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/encrypted-media/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "definitions",
+      "href": "https://w3c.github.io/encrypted-media/#definitions",
+      "level": 2,
+      "title": "Definitions",
+      "number": "2"
+    },
+    {
+      "id": "obtaining-access-to-key-systems",
+      "href": "https://w3c.github.io/encrypted-media/#obtaining-access-to-key-systems",
+      "level": 2,
+      "title": "Obtaining Access to Key Systems",
+      "number": "3"
+    },
+    {
+      "id": "permissions-policy-integration",
+      "href": "https://w3c.github.io/encrypted-media/#permissions-policy-integration",
+      "level": 3,
+      "title": "Permissions Policy Integration",
+      "number": "3.1"
+    },
+    {
+      "id": "navigator-extension-requestmediakeysystemaccess",
+      "href": "https://w3c.github.io/encrypted-media/#navigator-extension-requestmediakeysystemaccess",
+      "level": 3,
+      "title": "Navigator Extension: requestMediaKeySystemAccess()",
+      "number": "3.2"
+    },
+    {
+      "id": "methods",
+      "href": "https://w3c.github.io/encrypted-media/#methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "3.2.1"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://w3c.github.io/encrypted-media/#algorithms",
+      "level": 4,
+      "title": "Algorithms",
+      "number": "3.2.2"
+    },
+    {
+      "id": "get-supported-configuration",
+      "href": "https://w3c.github.io/encrypted-media/#get-supported-configuration",
+      "level": 5,
+      "title": "Get Supported Configuration",
+      "number": "3.2.2.1"
+    },
+    {
+      "id": "get-supported-configuration-and-consent",
+      "href": "https://w3c.github.io/encrypted-media/#get-supported-configuration-and-consent",
+      "level": 5,
+      "title": "Get Supported Configuration and Consent",
+      "number": "3.2.2.2"
+    },
+    {
+      "id": "get-supported-capabilities-for-audio-video-type",
+      "href": "https://w3c.github.io/encrypted-media/#get-supported-capabilities-for-audio-video-type",
+      "level": 5,
+      "title": "Get Supported Capabilities for Audio/Video Type",
+      "number": "3.2.2.3"
+    },
+    {
+      "id": "get-consent-status",
+      "href": "https://w3c.github.io/encrypted-media/#get-consent-status",
+      "level": 5,
+      "title": "Get Consent Status",
+      "number": "3.2.2.4"
+    },
+    {
+      "id": "mediakeysystemconfiguration-dictionary",
+      "href": "https://w3c.github.io/encrypted-media/#mediakeysystemconfiguration-dictionary",
+      "level": 3,
+      "title": "MediaKeySystemConfiguration dictionary",
+      "number": "3.3"
+    },
+    {
+      "id": "mediakeysystemmediacapability-dictionary",
+      "href": "https://w3c.github.io/encrypted-media/#mediakeysystemmediacapability-dictionary",
+      "level": 3,
+      "title": "MediaKeySystemMediaCapability dictionary",
+      "number": "3.4"
+    },
+    {
+      "id": "dictionary-mediakeysystemmediacapability-members",
+      "href": "https://w3c.github.io/encrypted-media/#dictionary-mediakeysystemmediacapability-members",
+      "level": 4,
+      "title": "Dictionary MediaKeySystemMediaCapability Members",
+      "number": "3.4.1"
+    },
+    {
+      "id": "mediakeysystemaccess-interface",
+      "href": "https://w3c.github.io/encrypted-media/#mediakeysystemaccess-interface",
+      "level": 2,
+      "title": "MediaKeySystemAccess Interface",
+      "number": "4"
+    },
+    {
+      "id": "attributes",
+      "href": "https://w3c.github.io/encrypted-media/#attributes",
+      "level": 3,
+      "title": "Attributes",
+      "number": "4.1"
+    },
+    {
+      "id": "methods-0",
+      "href": "https://w3c.github.io/encrypted-media/#methods-0",
+      "level": 3,
+      "title": "Methods",
+      "number": "4.2"
+    },
+    {
+      "id": "mediakeys-interface",
+      "href": "https://w3c.github.io/encrypted-media/#mediakeys-interface",
+      "level": 2,
+      "title": "MediaKeys Interface",
+      "number": "5"
+    },
+    {
+      "id": "methods-1",
+      "href": "https://w3c.github.io/encrypted-media/#methods-1",
+      "level": 3,
+      "title": "Methods",
+      "number": "5.1"
+    },
+    {
+      "id": "algorithms-0",
+      "href": "https://w3c.github.io/encrypted-media/#algorithms-0",
+      "level": 3,
+      "title": "Algorithms",
+      "number": "5.2"
+    },
+    {
+      "id": "is-persistent-session-type",
+      "href": "https://w3c.github.io/encrypted-media/#is-persistent-session-type",
+      "level": 4,
+      "title": "Is persistent session type?",
+      "number": "5.2.1"
+    },
+    {
+      "id": "cdm-unavailable",
+      "href": "https://w3c.github.io/encrypted-media/#cdm-unavailable",
+      "level": 4,
+      "title": "CDM Unavailable",
+      "number": "5.2.2"
+    },
+    {
+      "id": "media-keys-storage",
+      "href": "https://w3c.github.io/encrypted-media/#media-keys-storage",
+      "level": 3,
+      "title": "Storage and Persistence",
+      "number": "5.3"
+    },
+    {
+      "id": "mediakeysession-interface",
+      "href": "https://w3c.github.io/encrypted-media/#mediakeysession-interface",
+      "level": 2,
+      "title": "MediaKeySession Interface",
+      "number": "6"
+    },
+    {
+      "id": "attributes-0",
+      "href": "https://w3c.github.io/encrypted-media/#attributes-0",
+      "level": 3,
+      "title": "Attributes",
+      "number": "6.1"
+    },
+    {
+      "id": "methods-2",
+      "href": "https://w3c.github.io/encrypted-media/#methods-2",
+      "level": 3,
+      "title": "Methods",
+      "number": "6.2"
+    },
+    {
+      "id": "mediakeystatusmap-interface",
+      "href": "https://w3c.github.io/encrypted-media/#mediakeystatusmap-interface",
+      "level": 3,
+      "title": "MediaKeyStatusMap Interface",
+      "number": "6.3"
+    },
+    {
+      "id": "attributes-1",
+      "href": "https://w3c.github.io/encrypted-media/#attributes-1",
+      "level": 4,
+      "title": "Attributes",
+      "number": "6.3.1"
+    },
+    {
+      "id": "methods-3",
+      "href": "https://w3c.github.io/encrypted-media/#methods-3",
+      "level": 4,
+      "title": "Methods",
+      "number": "6.3.2"
+    },
+    {
+      "id": "mediakeymessageevent",
+      "href": "https://w3c.github.io/encrypted-media/#mediakeymessageevent",
+      "level": 3,
+      "title": "MediaKeyMessageEvent",
+      "number": "6.4"
+    },
+    {
+      "id": "attributes-2",
+      "href": "https://w3c.github.io/encrypted-media/#attributes-2",
+      "level": 4,
+      "title": "Attributes",
+      "number": "6.4.1"
+    },
+    {
+      "id": "mediakeymessageeventinit",
+      "href": "https://w3c.github.io/encrypted-media/#mediakeymessageeventinit",
+      "level": 4,
+      "title": "MediaKeyMessageEventInit",
+      "number": "6.4.2"
+    },
+    {
+      "id": "dictionary-mediakeymessageeventinit-members",
+      "href": "https://w3c.github.io/encrypted-media/#dictionary-mediakeymessageeventinit-members",
+      "level": 5,
+      "title": "Dictionary MediaKeyMessageEventInit Members",
+      "number": "6.4.2.1"
+    },
+    {
+      "id": "mediakeysession-events",
+      "href": "https://w3c.github.io/encrypted-media/#mediakeysession-events",
+      "level": 3,
+      "title": "Event Summary",
+      "number": "6.5"
+    },
+    {
+      "id": "mediakeysession-algorithms",
+      "href": "https://w3c.github.io/encrypted-media/#mediakeysession-algorithms",
+      "level": 3,
+      "title": "Algorithms",
+      "number": "6.6"
+    },
+    {
+      "id": "queue-message",
+      "href": "https://w3c.github.io/encrypted-media/#queue-message",
+      "level": 4,
+      "title": "Queue a \"message\" Event",
+      "number": "6.6.1"
+    },
+    {
+      "id": "update-key-statuses",
+      "href": "https://w3c.github.io/encrypted-media/#update-key-statuses",
+      "level": 4,
+      "title": "Update Key Statuses",
+      "number": "6.6.2"
+    },
+    {
+      "id": "update-expiration",
+      "href": "https://w3c.github.io/encrypted-media/#update-expiration",
+      "level": 4,
+      "title": "Update Expiration",
+      "number": "6.6.3"
+    },
+    {
+      "id": "session-closed",
+      "href": "https://w3c.github.io/encrypted-media/#session-closed",
+      "level": 4,
+      "title": "Session Closed",
+      "number": "6.6.4"
+    },
+    {
+      "id": "monitor-cdm",
+      "href": "https://w3c.github.io/encrypted-media/#monitor-cdm",
+      "level": 4,
+      "title": "Monitor for CDM State Changes",
+      "number": "6.6.5"
+    },
+    {
+      "id": "exceptions",
+      "href": "https://w3c.github.io/encrypted-media/#exceptions",
+      "level": 3,
+      "title": "Exceptions",
+      "number": "6.7"
+    },
+    {
+      "id": "session-storage",
+      "href": "https://w3c.github.io/encrypted-media/#session-storage",
+      "level": 3,
+      "title": "Session Storage and Persistence",
+      "number": "6.8"
+    },
+    {
+      "id": "htmlmediaelement-extensions",
+      "href": "https://w3c.github.io/encrypted-media/#htmlmediaelement-extensions",
+      "level": 2,
+      "title": "HTMLMediaElement Extensions",
+      "number": "7"
+    },
+    {
+      "id": "attributes-3",
+      "href": "https://w3c.github.io/encrypted-media/#attributes-3",
+      "level": 3,
+      "title": "Attributes",
+      "number": "7.1"
+    },
+    {
+      "id": "methods-4",
+      "href": "https://w3c.github.io/encrypted-media/#methods-4",
+      "level": 3,
+      "title": "Methods",
+      "number": "7.2"
+    },
+    {
+      "id": "mediaencryptedevent",
+      "href": "https://w3c.github.io/encrypted-media/#mediaencryptedevent",
+      "level": 3,
+      "title": "MediaEncryptedEvent",
+      "number": "7.3"
+    },
+    {
+      "id": "attributes-4",
+      "href": "https://w3c.github.io/encrypted-media/#attributes-4",
+      "level": 4,
+      "title": "Attributes",
+      "number": "7.3.1"
+    },
+    {
+      "id": "mediaencryptedeventinit",
+      "href": "https://w3c.github.io/encrypted-media/#mediaencryptedeventinit",
+      "level": 4,
+      "title": "MediaEncryptedEventInit",
+      "number": "7.3.2"
+    },
+    {
+      "id": "dictionary-mediaencryptedeventinit-members",
+      "href": "https://w3c.github.io/encrypted-media/#dictionary-mediaencryptedeventinit-members",
+      "level": 5,
+      "title": "Dictionary MediaEncryptedEventInit Members",
+      "number": "7.3.2.1"
+    },
+    {
+      "id": "htmlmediaelement-events",
+      "href": "https://w3c.github.io/encrypted-media/#htmlmediaelement-events",
+      "level": 3,
+      "title": "Event Summary",
+      "number": "7.4"
+    },
+    {
+      "id": "htmlmediaelement-algorithms",
+      "href": "https://w3c.github.io/encrypted-media/#htmlmediaelement-algorithms",
+      "level": 3,
+      "title": "Algorithms",
+      "number": "7.5"
+    },
+    {
+      "id": "media-may-contain-encrypted-blocks",
+      "href": "https://w3c.github.io/encrypted-media/#media-may-contain-encrypted-blocks",
+      "level": 4,
+      "title": "Media Data May Contain Encrypted Blocks",
+      "number": "7.5.1"
+    },
+    {
+      "id": "initdata-encountered",
+      "href": "https://w3c.github.io/encrypted-media/#initdata-encountered",
+      "level": 4,
+      "title": "Initialization Data Encountered",
+      "number": "7.5.2"
+    },
+    {
+      "id": "encrypted-block-encountered",
+      "href": "https://w3c.github.io/encrypted-media/#encrypted-block-encountered",
+      "level": 4,
+      "title": "Encrypted Block Encountered",
+      "number": "7.5.3"
+    },
+    {
+      "id": "attempt-to-decrypt",
+      "href": "https://w3c.github.io/encrypted-media/#attempt-to-decrypt",
+      "level": 4,
+      "title": "Attempt to Decrypt",
+      "number": "7.5.4"
+    },
+    {
+      "id": "wait-for-key",
+      "href": "https://w3c.github.io/encrypted-media/#wait-for-key",
+      "level": 4,
+      "title": "Wait for Key",
+      "number": "7.5.5"
+    },
+    {
+      "id": "resume-playback",
+      "href": "https://w3c.github.io/encrypted-media/#resume-playback",
+      "level": 4,
+      "title": "Attempt to Resume Playback If Necessary",
+      "number": "7.5.6"
+    },
+    {
+      "id": "media-element-restrictions",
+      "href": "https://w3c.github.io/encrypted-media/#media-element-restrictions",
+      "level": 3,
+      "title": "Media Element Restrictions",
+      "number": "7.6"
+    },
+    {
+      "id": "implementation-requirements",
+      "href": "https://w3c.github.io/encrypted-media/#implementation-requirements",
+      "level": 2,
+      "title": "Implementation Requirements",
+      "number": "8"
+    },
+    {
+      "id": "cdm-constraint-requirements",
+      "href": "https://w3c.github.io/encrypted-media/#cdm-constraint-requirements",
+      "level": 3,
+      "title": "CDM Constraints",
+      "number": "8.1"
+    },
+    {
+      "id": "messaging-requirements",
+      "href": "https://w3c.github.io/encrypted-media/#messaging-requirements",
+      "level": 3,
+      "title": "Messages and Communication",
+      "number": "8.2"
+    },
+    {
+      "id": "persistent-state-requirements",
+      "href": "https://w3c.github.io/encrypted-media/#persistent-state-requirements",
+      "level": 3,
+      "title": "Persistent Data",
+      "number": "8.3"
+    },
+    {
+      "id": "use-origin-specific-key-system-storage",
+      "href": "https://w3c.github.io/encrypted-media/#use-origin-specific-key-system-storage",
+      "level": 4,
+      "title": "Use origin-specific and browsing profile-specific Key System storage",
+      "number": "8.3.1"
+    },
+    {
+      "id": "allow-persistent-data-cleared",
+      "href": "https://w3c.github.io/encrypted-media/#allow-persistent-data-cleared",
+      "level": 4,
+      "title": "Allow Persistent Data to Be Cleared",
+      "number": "8.3.2"
+    },
+    {
+      "id": "encrypt-or-obfuscate-persistent-data",
+      "href": "https://w3c.github.io/encrypted-media/#encrypt-or-obfuscate-persistent-data",
+      "level": 4,
+      "title": "Encrypt or obfuscate Persistent Data",
+      "number": "8.3.3"
+    },
+    {
+      "id": "exposed-value-requirements",
+      "href": "https://w3c.github.io/encrypted-media/#exposed-value-requirements",
+      "level": 3,
+      "title": "Values Exposed to the Application",
+      "number": "8.4"
+    },
+    {
+      "id": "per-origin-per-profile-values",
+      "href": "https://w3c.github.io/encrypted-media/#per-origin-per-profile-values",
+      "level": 4,
+      "title": "Use Per-Origin Per-Profile Values",
+      "number": "8.4.1"
+    },
+    {
+      "id": "allow-values-to-be-cleared",
+      "href": "https://w3c.github.io/encrypted-media/#allow-values-to-be-cleared",
+      "level": 4,
+      "title": "Allow Values to Be Cleared",
+      "number": "8.4.2"
+    },
+    {
+      "id": "identifier-requirements",
+      "href": "https://w3c.github.io/encrypted-media/#identifier-requirements",
+      "level": 3,
+      "title": "Identifiers",
+      "number": "8.5"
+    },
+    {
+      "id": "limit-or-avoid-use-of-distinctive-identifiers-and-permanent-identifiers",
+      "href": "https://w3c.github.io/encrypted-media/#limit-or-avoid-use-of-distinctive-identifiers-and-permanent-identifiers",
+      "level": 4,
+      "title": "Limit or Avoid use of Distinctive Identifiers and Permanent Identifiers",
+      "number": "8.5.1"
+    },
+    {
+      "id": "encrypt-identifiers",
+      "href": "https://w3c.github.io/encrypted-media/#encrypt-identifiers",
+      "level": 4,
+      "title": "Encrypt Identifiers",
+      "number": "8.5.2"
+    },
+    {
+      "id": "per-origin-per-profile-identifiers",
+      "href": "https://w3c.github.io/encrypted-media/#per-origin-per-profile-identifiers",
+      "level": 4,
+      "title": "Use Per-Origin Per-Profile Identifiers",
+      "number": "8.5.3"
+    },
+    {
+      "id": "non-associable-identifiers",
+      "href": "https://w3c.github.io/encrypted-media/#non-associable-identifiers",
+      "level": 4,
+      "title": "Use Non-Associable Identifiers",
+      "number": "8.5.4"
+    },
+    {
+      "id": "allow-identifiers-cleared",
+      "href": "https://w3c.github.io/encrypted-media/#allow-identifiers-cleared",
+      "level": 4,
+      "title": "Allow Identifiers to Be Cleared",
+      "number": "8.5.5"
+    },
+    {
+      "id": "individualization",
+      "href": "https://w3c.github.io/encrypted-media/#individualization",
+      "level": 3,
+      "title": "Individualization",
+      "number": "8.6"
+    },
+    {
+      "id": "direct-individualization",
+      "href": "https://w3c.github.io/encrypted-media/#direct-individualization",
+      "level": 4,
+      "title": "Direct Individualization",
+      "number": "8.6.1"
+    },
+    {
+      "id": "app-assisted-individualization",
+      "href": "https://w3c.github.io/encrypted-media/#app-assisted-individualization",
+      "level": 4,
+      "title": "App-Assisted Individualization",
+      "number": "8.6.2"
+    },
+    {
+      "id": "support-multiple-keys",
+      "href": "https://w3c.github.io/encrypted-media/#support-multiple-keys",
+      "level": 3,
+      "title": "Support Multiple Keys",
+      "number": "8.7"
+    },
+    {
+      "id": "initialization-data-type-support-requirements",
+      "href": "https://w3c.github.io/encrypted-media/#initialization-data-type-support-requirements",
+      "level": 3,
+      "title": "Initialization Data Type Support",
+      "number": "8.8"
+    },
+    {
+      "id": "licenses-generated-are-independent-of-content-type",
+      "href": "https://w3c.github.io/encrypted-media/#licenses-generated-are-independent-of-content-type",
+      "level": 4,
+      "title": "Licenses Generated are Independent of Content Type",
+      "number": "8.8.1"
+    },
+    {
+      "id": "support-extraction-from-media-data",
+      "href": "https://w3c.github.io/encrypted-media/#support-extraction-from-media-data",
+      "level": 4,
+      "title": "Support Extraction From Media Data",
+      "number": "8.8.2"
+    },
+    {
+      "id": "media-requirements",
+      "href": "https://w3c.github.io/encrypted-media/#media-requirements",
+      "level": 3,
+      "title": "Supported Media",
+      "number": "8.9"
+    },
+    {
+      "id": "unencrypted-container",
+      "href": "https://w3c.github.io/encrypted-media/#unencrypted-container",
+      "level": 4,
+      "title": "Unencrypted Container",
+      "number": "8.9.1"
+    },
+    {
+      "id": "interoperably-encrypted",
+      "href": "https://w3c.github.io/encrypted-media/#interoperably-encrypted",
+      "level": 4,
+      "title": "Interoperably Encrypted",
+      "number": "8.9.2"
+    },
+    {
+      "id": "unencrypted-in-band-support-content",
+      "href": "https://w3c.github.io/encrypted-media/#unencrypted-in-band-support-content",
+      "level": 4,
+      "title": "Unencrypted In-band Support Content",
+      "number": "8.9.3"
+    },
+    {
+      "id": "common-key-systems",
+      "href": "https://w3c.github.io/encrypted-media/#common-key-systems",
+      "level": 2,
+      "title": "Common Key Systems",
+      "number": "9"
+    },
+    {
+      "id": "clear-key",
+      "href": "https://w3c.github.io/encrypted-media/#clear-key",
+      "level": 3,
+      "title": "Clear Key",
+      "number": "9.1"
+    },
+    {
+      "id": "clear-key-capabilities",
+      "href": "https://w3c.github.io/encrypted-media/#clear-key-capabilities",
+      "level": 4,
+      "title": "Capabilities",
+      "number": "9.1.1"
+    },
+    {
+      "id": "clear-key-behavior",
+      "href": "https://w3c.github.io/encrypted-media/#clear-key-behavior",
+      "level": 4,
+      "title": "Behavior",
+      "number": "9.1.2"
+    },
+    {
+      "id": "clear-key-request-format",
+      "href": "https://w3c.github.io/encrypted-media/#clear-key-request-format",
+      "level": 4,
+      "title": "License Request Format",
+      "number": "9.1.3"
+    },
+    {
+      "id": "clear-key-request-format-example",
+      "href": "https://w3c.github.io/encrypted-media/#clear-key-request-format-example",
+      "level": 5,
+      "title": "Example",
+      "number": "9.1.3.1"
+    },
+    {
+      "id": "clear-key-license-format",
+      "href": "https://w3c.github.io/encrypted-media/#clear-key-license-format",
+      "level": 4,
+      "title": "License Format",
+      "number": "9.1.4"
+    },
+    {
+      "id": "clear-key-license-format-example",
+      "href": "https://w3c.github.io/encrypted-media/#clear-key-license-format-example",
+      "level": 5,
+      "title": "Example",
+      "number": "9.1.4.1"
+    },
+    {
+      "id": "clear-key-release-format",
+      "href": "https://w3c.github.io/encrypted-media/#clear-key-release-format",
+      "level": 4,
+      "title": "License Release Format",
+      "number": "9.1.5"
+    },
+    {
+      "id": "clear-key-release-format-example-1",
+      "href": "https://w3c.github.io/encrypted-media/#clear-key-release-format-example-1",
+      "level": 5,
+      "title": "Example message reflecting a record of license destruction",
+      "number": "9.1.5.1"
+    },
+    {
+      "id": "clear-key-release-ack-format",
+      "href": "https://w3c.github.io/encrypted-media/#clear-key-release-ack-format",
+      "level": 4,
+      "title": "License Release Acknowledgement Format",
+      "number": "9.1.6"
+    },
+    {
+      "id": "clear-key-release-ack-format-example",
+      "href": "https://w3c.github.io/encrypted-media/#clear-key-release-ack-format-example",
+      "level": 5,
+      "title": "Example",
+      "number": "9.1.6.1"
+    },
+    {
+      "id": "using-base64url",
+      "href": "https://w3c.github.io/encrypted-media/#using-base64url",
+      "level": 4,
+      "title": "Using base64url",
+      "number": "9.1.7"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/encrypted-media/#security",
+      "level": 2,
+      "title": "10. Security"
+    },
+    {
+      "id": "input-data-security",
+      "href": "https://w3c.github.io/encrypted-media/#input-data-security",
+      "level": 3,
+      "title": "Input Data Attacks and Vulnerabilities",
+      "number": "10.1"
+    },
+    {
+      "id": "cdm-security",
+      "href": "https://w3c.github.io/encrypted-media/#cdm-security",
+      "level": 3,
+      "title": "CDM Attacks and Vulnerabilities",
+      "number": "10.2"
+    },
+    {
+      "id": "network-attacks",
+      "href": "https://w3c.github.io/encrypted-media/#network-attacks",
+      "level": 3,
+      "title": "Network Attacks",
+      "number": "10.3"
+    },
+    {
+      "id": "potential-attacks",
+      "href": "https://w3c.github.io/encrypted-media/#potential-attacks",
+      "level": 4,
+      "title": "Potential Attacks",
+      "number": "10.3.1"
+    },
+    {
+      "id": "mitigations",
+      "href": "https://w3c.github.io/encrypted-media/#mitigations",
+      "level": 4,
+      "title": "Mitigations",
+      "number": "10.3.2"
+    },
+    {
+      "id": "iframe-attacks",
+      "href": "https://w3c.github.io/encrypted-media/#iframe-attacks",
+      "level": 3,
+      "title": "iframe Attacks",
+      "number": "10.4"
+    },
+    {
+      "id": "potential-attacks-0",
+      "href": "https://w3c.github.io/encrypted-media/#potential-attacks-0",
+      "level": 4,
+      "title": "Potential Attacks",
+      "number": "10.4.1"
+    },
+    {
+      "id": "mitigations-0",
+      "href": "https://w3c.github.io/encrypted-media/#mitigations-0",
+      "level": 4,
+      "title": "Mitigations",
+      "number": "10.4.2"
+    },
+    {
+      "id": "cross-directory-attacks",
+      "href": "https://w3c.github.io/encrypted-media/#cross-directory-attacks",
+      "level": 3,
+      "title": "Cross-Directory Attacks",
+      "number": "10.5"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/encrypted-media/#privacy",
+      "level": 2,
+      "title": "11. Privacy"
+    },
+    {
+      "id": "privacy-disclosure",
+      "href": "https://w3c.github.io/encrypted-media/#privacy-disclosure",
+      "level": 3,
+      "title": "Information Disclosed by EME and Key Systems",
+      "number": "11.1"
+    },
+    {
+      "id": "privacy-fingerprinting",
+      "href": "https://w3c.github.io/encrypted-media/#privacy-fingerprinting",
+      "level": 3,
+      "title": "Fingerprinting",
+      "number": "11.2"
+    },
+    {
+      "id": "privacy-leakage",
+      "href": "https://w3c.github.io/encrypted-media/#privacy-leakage",
+      "level": 3,
+      "title": "Information Leakage",
+      "number": "11.3"
+    },
+    {
+      "id": "concerns",
+      "href": "https://w3c.github.io/encrypted-media/#concerns",
+      "level": 4,
+      "title": "Concerns",
+      "number": "11.3.1"
+    },
+    {
+      "id": "mitigations-1",
+      "href": "https://w3c.github.io/encrypted-media/#mitigations-1",
+      "level": 4,
+      "title": "Mitigations",
+      "number": "11.3.2"
+    },
+    {
+      "id": "user-tracking",
+      "href": "https://w3c.github.io/encrypted-media/#user-tracking",
+      "level": 3,
+      "title": "User Tracking",
+      "number": "11.4"
+    },
+    {
+      "id": "concerns-0",
+      "href": "https://w3c.github.io/encrypted-media/#concerns-0",
+      "level": 4,
+      "title": "Concerns",
+      "number": "11.4.1"
+    },
+    {
+      "id": "mitigations-2",
+      "href": "https://w3c.github.io/encrypted-media/#mitigations-2",
+      "level": 4,
+      "title": "Mitigations",
+      "number": "11.4.2"
+    },
+    {
+      "id": "privacy-storedinfo",
+      "href": "https://w3c.github.io/encrypted-media/#privacy-storedinfo",
+      "level": 3,
+      "title": "Information Stored on User Devices",
+      "number": "11.5"
+    },
+    {
+      "id": "concerns-1",
+      "href": "https://w3c.github.io/encrypted-media/#concerns-1",
+      "level": 4,
+      "title": "Concerns",
+      "number": "11.5.1"
+    },
+    {
+      "id": "mitigations-3",
+      "href": "https://w3c.github.io/encrypted-media/#mitigations-3",
+      "level": 4,
+      "title": "Mitigations",
+      "number": "11.5.2"
+    },
+    {
+      "id": "incomplete-clearing",
+      "href": "https://w3c.github.io/encrypted-media/#incomplete-clearing",
+      "level": 3,
+      "title": "Incomplete Clearing of Data",
+      "number": "11.6"
+    },
+    {
+      "id": "concerns-2",
+      "href": "https://w3c.github.io/encrypted-media/#concerns-2",
+      "level": 4,
+      "title": "Concerns",
+      "number": "11.6.1"
+    },
+    {
+      "id": "mitigations-4",
+      "href": "https://w3c.github.io/encrypted-media/#mitigations-4",
+      "level": 4,
+      "title": "Mitigations",
+      "number": "11.6.2"
+    },
+    {
+      "id": "private-browsing",
+      "href": "https://w3c.github.io/encrypted-media/#private-browsing",
+      "level": 3,
+      "title": "Private Browsing Modes",
+      "number": "11.7"
+    },
+    {
+      "id": "privacy-secureorigin",
+      "href": "https://w3c.github.io/encrypted-media/#privacy-secureorigin",
+      "level": 3,
+      "title": "Secure Origin and Transport",
+      "number": "11.8"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/encrypted-media/#conformance",
+      "level": 2,
+      "title": "12. Conformance"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/encrypted-media/#examples",
+      "level": 2,
+      "title": "13. Examples"
+    },
+    {
+      "id": "example-source-and-key-known",
+      "href": "https://w3c.github.io/encrypted-media/#example-source-and-key-known",
+      "level": 3,
+      "title": "Source and Key Known at Page Load (Clear Key)",
+      "number": "13.1"
+    },
+    {
+      "id": "example-selecting-key-system",
+      "href": "https://w3c.github.io/encrypted-media/#example-selecting-key-system",
+      "level": 3,
+      "title": "Selecting a Supported Key System and Using Initialization Data from the \"encrypted\" Event",
+      "number": "13.2"
+    },
+    {
+      "id": "example-mediakeys-before-source",
+      "href": "https://w3c.github.io/encrypted-media/#example-mediakeys-before-source",
+      "level": 3,
+      "title": "Create MediaKeys Before Loading Media",
+      "number": "13.3"
+    },
+    {
+      "id": "example-using-all-events",
+      "href": "https://w3c.github.io/encrypted-media/#example-using-all-events",
+      "level": 3,
+      "title": "Using All Events",
+      "number": "13.4"
+    },
+    {
+      "id": "example-stored-license",
+      "href": "https://w3c.github.io/encrypted-media/#example-stored-license",
+      "level": 3,
+      "title": "Stored License",
+      "number": "13.5"
+    },
+    {
+      "id": "example-getStatusForPolicy",
+      "href": "https://w3c.github.io/encrypted-media/#example-getStatusForPolicy",
+      "level": 3,
+      "title": "Pre-fetch Media With HDCP Policy",
+      "number": "13.6"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/encrypted-media/#acknowledgements",
+      "level": 2,
+      "title": "14. Acknowledgments"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/encrypted-media/#references",
+      "level": 2,
+      "title": "References",
+      "number": "A"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/encrypted-media/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "A.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/encrypted-media/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "A.2"
+    }
+  ]
+}

@@ -959,10 +959,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "usage-scopes",
-      "href": "https://gpuweb.github.io/gpuweb/#usage-scopes",
+      "id": "usage-scope-storage-exception",
+      "href": "https://gpuweb.github.io/gpuweb/#usage-scope-storage-exception",
       "linkingText": [
-        "usage scopes"
+        "usage scope storage exception"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -978,6 +978,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "read-only-depth-stencil",
+      "href": "https://gpuweb.github.io/gpuweb/#read-only-depth-stencil",
+      "linkingText": [
+        "read-only depth-stencil"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "programming-model-resource-usages",
+        "href": "https://gpuweb.github.io/gpuweb/#programming-model-resource-usages",
+        "title": "Resource Usages",
+        "number": "3.4.3"
+      },
+      "definedIn": "example"
+    },
+    {
+      "id": "usage-scope",
+      "href": "https://gpuweb.github.io/gpuweb/#usage-scope",
+      "linkingText": [
+        "usage scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "programming-model-synchronization",
+        "href": "https://gpuweb.github.io/gpuweb/#programming-model-synchronization",
+        "title": "Synchronization",
+        "number": "3.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "usage-scope-validation",
       "href": "https://gpuweb.github.io/gpuweb/#usage-scope-validation",
       "linkingText": [
@@ -987,6 +1025,50 @@
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "programming-model-synchronization",
+        "href": "https://gpuweb.github.io/gpuweb/#programming-model-synchronization",
+        "title": "Synchronization",
+        "number": "3.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-usage-scope-add",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-usage-scope-add",
+      "linkingText": [
+        "add",
+        "Add"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "usage scope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "programming-model-synchronization",
+        "href": "https://gpuweb.github.io/gpuweb/#programming-model-synchronization",
+        "title": "Synchronization",
+        "number": "3.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-usage-scope-merge",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-usage-scope-merge",
+      "linkingText": [
+        "merge",
+        "Merge"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "usage scope"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "programming-model-synchronization",
@@ -1401,10 +1483,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "optional-api-surfaces",
-      "href": "https://gpuweb.github.io/gpuweb/#optional-api-surfaces",
+      "id": "optional-api-surface",
+      "href": "https://gpuweb.github.io/gpuweb/#optional-api-surface",
       "linkingText": [
-        "optional API surfaces"
+        "optional API surface"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -20403,6 +20485,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpurendercommandsmixin-usage-scope-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-usage-scope-slot",
+      "linkingText": [
+        "[[usage scope]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderCommandsMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpurendercommandsmixin",
+        "href": "https://gpuweb.github.io/gpuweb/#gpurendercommandsmixin",
+        "title": "GPURenderCommandsMixin",
+        "number": "17.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-gpurendercommandsmixin-pipeline-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-pipeline-slot",
       "linkingText": [
@@ -21769,6 +21872,27 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundle-command_list-slot",
       "linkingText": [
         "[[command_list]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderBundle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpurenderbundle",
+        "href": "https://gpuweb.github.io/gpuweb/#gpurenderbundle",
+        "title": "GPURenderBundle",
+        "number": "18.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderbundle-usage-scope-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundle-usage-scope-slot",
+      "linkingText": [
+        "[[usage scope]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
