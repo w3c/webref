@@ -959,10 +959,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "usage-scopes",
-      "href": "https://www.w3.org/TR/webgpu/#usage-scopes",
+      "id": "usage-scope-storage-exception",
+      "href": "https://www.w3.org/TR/webgpu/#usage-scope-storage-exception",
       "linkingText": [
-        "usage scopes"
+        "usage scope storage exception"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -978,6 +978,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "read-only-depth-stencil",
+      "href": "https://www.w3.org/TR/webgpu/#read-only-depth-stencil",
+      "linkingText": [
+        "read-only depth-stencil"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "programming-model-resource-usages",
+        "href": "https://www.w3.org/TR/webgpu/#programming-model-resource-usages",
+        "title": "Resource Usages",
+        "number": "3.4.3"
+      },
+      "definedIn": "example"
+    },
+    {
+      "id": "usage-scope",
+      "href": "https://www.w3.org/TR/webgpu/#usage-scope",
+      "linkingText": [
+        "usage scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "programming-model-synchronization",
+        "href": "https://www.w3.org/TR/webgpu/#programming-model-synchronization",
+        "title": "Synchronization",
+        "number": "3.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "usage-scope-validation",
       "href": "https://www.w3.org/TR/webgpu/#usage-scope-validation",
       "linkingText": [
@@ -987,6 +1025,50 @@
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "programming-model-synchronization",
+        "href": "https://www.w3.org/TR/webgpu/#programming-model-synchronization",
+        "title": "Synchronization",
+        "number": "3.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-usage-scope-add",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-usage-scope-add",
+      "linkingText": [
+        "add",
+        "Add"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "usage scope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "programming-model-synchronization",
+        "href": "https://www.w3.org/TR/webgpu/#programming-model-synchronization",
+        "title": "Synchronization",
+        "number": "3.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-usage-scope-merge",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-usage-scope-merge",
+      "linkingText": [
+        "merge",
+        "Merge"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "usage scope"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "programming-model-synchronization",
@@ -1035,15 +1117,78 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-adapter-expired-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-expired-slot",
+      "id": "dom-adapter-state-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-state-slot",
       "linkingText": [
-        "[[expired]]"
+        "[[state]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
         "adapter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "href": "https://www.w3.org/TR/webgpu/#adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-adapter-state-valid",
+      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-state-valid",
+      "linkingText": [
+        "\"valid\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "adapter/[[state]]"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "href": "https://www.w3.org/TR/webgpu/#adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-adapter-state-consumed",
+      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-state-consumed",
+      "linkingText": [
+        "\"consumed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "adapter/[[state]]"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "href": "https://www.w3.org/TR/webgpu/#adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-adapter-state-expired",
+      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-state-expired",
+      "linkingText": [
+        "\"expired\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "adapter/[[state]]"
       ],
       "access": "public",
       "informative": false,
@@ -1117,25 +1262,6 @@
         "number": "3.5.1"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "abstract-opdef-expired",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-expired",
-      "linkingText": [
-        "expired"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "adapters",
-        "href": "https://www.w3.org/TR/webgpu/#adapters",
-        "title": "Adapters",
-        "number": "3.5.1"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "abstract-opdef-expire",
@@ -1357,10 +1483,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "optional-api-surfaces",
-      "href": "https://www.w3.org/TR/webgpu/#optional-api-surfaces",
+      "id": "optional-api-surface",
+      "href": "https://www.w3.org/TR/webgpu/#optional-api-surface",
       "linkingText": [
-        "optional API surfaces"
+        "optional API surface"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -20359,6 +20485,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpurendercommandsmixin-usage-scope-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurendercommandsmixin-usage-scope-slot",
+      "linkingText": [
+        "[[usage scope]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderCommandsMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpurendercommandsmixin",
+        "href": "https://www.w3.org/TR/webgpu/#gpurendercommandsmixin",
+        "title": "GPURenderCommandsMixin",
+        "number": "17.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-gpurendercommandsmixin-pipeline-slot",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpurendercommandsmixin-pipeline-slot",
       "linkingText": [
@@ -21725,6 +21872,27 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderbundle-command_list-slot",
       "linkingText": [
         "[[command_list]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderBundle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpurenderbundle",
+        "href": "https://www.w3.org/TR/webgpu/#gpurenderbundle",
+        "title": "GPURenderBundle",
+        "number": "18.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderbundle-usage-scope-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderbundle-usage-scope-slot",
+      "linkingText": [
+        "[[usage scope]]"
       ],
       "localLinkingText": [],
       "type": "attribute",

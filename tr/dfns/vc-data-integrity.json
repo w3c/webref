@@ -214,79 +214,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-authenticated",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-authenticated",
+      "id": "dfn-controller-document",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-controller-document",
       "linkingText": [
-        "authenticated",
-        "authenticate",
-        "authentication"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "htmlProse": "A process by which an entity can prove to a verifier that it has a specific\nattribute or controls a specific secret."
-    },
-    {
-      "id": "dfn-challenge",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-challenge",
-      "linkingText": [
-        "challenge"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "htmlProse": "A random or pseudo-random value used by some authentication protocols to\nmitigate replay attacks."
-    },
-    {
-      "id": "dfn-controller-s",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-controller-s",
-      "linkingText": [
-        "controller(s)",
-        "controller"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "htmlProse": "An entity that has the capability to make changes to a\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-controller-documents\">controller document</a>."
-    },
-    {
-      "id": "dfn-controller-documents",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-controller-documents",
-      "linkingText": [
-        "controller documents",
         "controller document"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": true,
       "heading": {
         "id": "terminology",
@@ -295,7 +231,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
-      "htmlProse": "A set of data that specifies one or more relationships between a\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-controller-s\">controller</a> and a set of data, such as a set of public cryptographic keys."
+      "htmlProse": "A document that contains public cryptographic material as defined in the\n<cite><a href=\"https://www.w3.org/TR/controller-document/\">Controller Documents 1.0</a></cite> specification."
     },
     {
       "id": "dfn-cryptosuite",
@@ -336,47 +272,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
-      "htmlProse": "A set of attributes that represent a digital proof and the parameters required\nto verify it."
-    },
-    {
-      "id": "dfn-domain",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-domain",
-      "linkingText": [
-        "domain"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "htmlProse": "A string value that specifies the operational domain of a digital proof.\nThis could be an Internet domain name like <code>example.com</code>, an\nad-hoc value such as <code>mycorp-level3-access</code>, or a very\nspecific transaction value like <code>8zF6T8J34qP3mqP</code>. A signer could\ninclude a <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-domain\">domain</a> in its digital proof to restrict its use\nto particular target, identified by the specified <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-domain\">domain</a>."
-    },
-    {
-      "id": "dfn-private-key",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-private-key",
-      "linkingText": [
-        "private key"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "htmlProse": "Cryptographic material that can be used to generate digital proofs."
+      "htmlProse": "A set of attributes that represent a digital proof and the parameters required\nto verify it. A <strong>digital signature</strong> is a type of data integrity\nproof."
     },
     {
       "id": "dfn-proof-purpose",
@@ -399,26 +295,6 @@
       "htmlProse": "The specific intent for the proof; the reason why an entity created it. The\nprotected declaration acts as a safeguard to prevent the proof from being\nmisused for a purpose other than the one it was intended for."
     },
     {
-      "id": "dfn-proof-type",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proof-type",
-      "linkingText": [
-        "proof type"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
-        "title": "Terminology",
-        "number": "1.4"
-      },
-      "definedIn": "dt",
-      "htmlProse": "A specified set of cryptographic primitives bundled together into a\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">cryptographic suite</a> for the purposes of safety and convenience, by\ncryptographers for developers (see the section on\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#cryptographic-suites\">cryptographic suites</a>)."
-    },
-    {
       "id": "dfn-public-key",
       "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-public-key",
       "linkingText": [
@@ -436,14 +312,13 @@
         "number": "1.4"
       },
       "definedIn": "dt",
-      "htmlProse": "Cryptographic material that can be used to verify digital proofs created with a\ncorresponding <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-private-key\">private key</a>."
+      "htmlProse": "Cryptographic material that can be used to verify digital proofs created with a\ncorresponding <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-secret-key\">secret key</a>."
     },
     {
-      "id": "dfn-subjects",
-      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-subjects",
+      "id": "dfn-secret-key",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-secret-key",
       "linkingText": [
-        "subjects",
-        "subject"
+        "secret key"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -457,7 +332,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
-      "htmlProse": "The entity identified by the <code>id</code> property in a <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-controller-documents\">controller document</a>.\nAnything can be a subject: person, group, organization, physical thing, digital\nthing, logical thing, etc."
+      "htmlProse": "Cryptographic material, sometimes referred to as a\n<strong>private key</strong>, that is not to be shared with anyone, and is used\nto generate digital proofs and/or digital signatures."
     },
     {
       "id": "dfn-verification-method",
@@ -477,7 +352,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
-      "htmlProse": "<p>\nA set of parameters that can be used together with a process to independently\nverify a proof. For example, a cryptographic public key can be used as a\nverification method with respect to a digital signature; in such usage, it\nverifies that the signer possessed the associated cryptographic private key.\n            </p>\n            <p>\n\"Verification\" and \"proof\" in this definition are intended to apply broadly. For\nexample, a cryptographic public key might be used during Diffie-Hellman key\nexchange to negotiate a shared symmetric key for encryption. This guarantees the\nintegrity of the key agreement process. It is thus another type of verification\nmethod, even though descriptions of the process might not use the words\n\"verification\" or \"proof.\"\n            </p>"
+      "htmlProse": "<p>\nA set of parameters that can be used together with a process to independently\nverify a proof. For example, a cryptographic <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-public-key\">public key</a> can be used as a\nverification method with respect to a digital signature; in such usage, it\nverifies that the signer possessed the associated cryptographic <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-secret-key\">secret key</a>.\n            </p>\n            <p>\n\"Verification\" and \"proof\" in this definition are intended to apply broadly. For\nexample, a cryptographic public key might be used during Diffie-Hellman key\nexchange to negotiate a shared symmetric key for encryption. This guarantees the\nintegrity of the key agreement process. It is thus another type of verification\nmethod, even though descriptions of the process might not use the words\n\"verification\" or \"proof.\"\n            </p>"
     },
     {
       "id": "dfn-verifier",
@@ -499,7 +374,7 @@
         "number": "1.4"
       },
       "definedIn": "dt",
-      "htmlProse": "A role an entity performs by receiving data containing one or more\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proofs</a> and then determining whether or not the proof\nis valid."
+      "htmlProse": "A role an entity performs by receiving data containing one or more\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proofs</a> and then determining whether or not the proof\nis legitimate."
     },
     {
       "id": "dfn-proof",
@@ -544,6 +419,25 @@
       "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-created",
       "linkingText": [
         "created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "proofs",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#proofs",
+        "title": "Proofs",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-challenge",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-challenge",
+      "linkingText": [
+        "challenge"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -709,6 +603,25 @@
         "number": "2.1.3"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "dfn-authentication",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-authentication",
+      "linkingText": [
+        "authentication"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "proof-purposes",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#proof-purposes",
+        "title": "Proof Purposes",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dfn-digestmultibase",
@@ -886,6 +799,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-input-document",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-input-document",
+      "linkingText": [
+        "input document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#algorithms",
+        "title": "Algorithms",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-secured-data-document",
       "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-secured-data-document",
       "linkingText": [
@@ -919,7 +851,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "prose"
     },
@@ -940,7 +872,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "dt"
     },
@@ -961,7 +893,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "dt"
     },
@@ -982,7 +914,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "dt"
     },
@@ -1003,7 +935,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "dt"
     },
@@ -1024,7 +956,7 @@
         "id": "verify-proof",
         "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
         "title": "Verify Proof",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "dt"
     },

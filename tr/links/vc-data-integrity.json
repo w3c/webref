@@ -71,7 +71,11 @@
       },
       "https://www.w3.org/TR/did-core/": {},
       "https://www.w3.org/TR/html-rdfa/": {},
-      "https://www.w3.org/TR/json-ld-api/": {},
+      "https://www.w3.org/TR/json-ld11-api/": {
+        "anchors": [
+          "compaction-algorithm"
+        ]
+      },
       "https://www.w3.org/TR/json-ld11/": {},
       "https://www.w3.org/TR/ltli/": {
         "anchors": [
@@ -86,15 +90,11 @@
       },
       "https://www.w3.org/TR/rdf-concepts/": {},
       "https://www.w3.org/TR/turtle/": {},
-      "https://www.w3.org/TR/vc-data-integrity/": {
-        "anchors": [
-          "cryptographic-suites"
-        ]
-      },
       "https://www.w3.org/TR/vc-data-model-2.0/": {
         "anchors": [
           "representing-time",
           "base-context",
+          "vocabularies",
           "issuer",
           "dfn-verifiable-credential",
           "dfn-holders",
@@ -104,7 +104,6 @@
           "defn-validFrom",
           "defn-validUntil",
           "validation",
-          "vocabularies",
           "dfn-problemdetails",
           "security-considerations",
           "privacy-considerations"
@@ -146,7 +145,6 @@
           "struct",
           "struct-item",
           "boolean",
-          "map-key",
           "string",
           "ordered-set",
           "list",
@@ -158,6 +156,11 @@
         "anchors": [
           "mime-type",
           "parameters"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-domain"
         ]
       },
       "https://www.w3.org/TR/vc-data-model-2.0/": {

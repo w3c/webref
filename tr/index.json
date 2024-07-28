@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-07-26T01:47:23.167Z",
+  "date": "2024-07-28T01:48:43.036Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -43,7 +43,6 @@
       "css-overflow-5",
       "css-page-4",
       "css-position-4",
-      "css-scroll-snap-2",
       "css-shapes-2",
       "css-size-adjust-1",
       "css-values-5",
@@ -173,6 +172,7 @@
       "webrtc-ice",
       "wasm-core-2-fork-branch-hinting",
       "wasm-js-api-2-fork-content-security-policy",
+      "wasm-js-api-2-fork-esm-integration",
       "wasm-js-api-2-fork-exception-handling",
       "wasm-core-2-fork-extended-const",
       "wasm-core-2-fork-function-references",
@@ -393,6 +393,7 @@
       "css-scoping-1",
       "css-scroll-anchoring-1",
       "css-scroll-snap-1",
+      "css-scroll-snap-2",
       "css-scrollbars-1",
       "css-shadow-parts-1",
       "css-shapes-1",
@@ -433,7 +434,15 @@
       "dpub-aam-1.1",
       "dpub-aria-1.1",
       "edit-context",
-      "encrypted-media",
+      "eme-hdcp-version-registry",
+      "eme-initdata-cenc",
+      "eme-initdata-keyids",
+      "eme-initdata-registry",
+      "eme-initdata-webm",
+      "eme-stream-mp4",
+      "eme-stream-registry",
+      "eme-stream-webm",
+      "encrypted-media-2",
       "epub-33",
       "epub-rs-33",
       "event-timing",
@@ -591,6 +600,7 @@
       "webcodecs-opus-codec-registration",
       "webcodecs-pcm-codec-registration",
       "webcodecs-ulaw-codec-registration",
+      "webcodecs-video-frame-metadata-registry",
       "webcodecs-vorbis-codec-registration",
       "webcodecs-vp8-codec-registration",
       "webcodecs-vp9-codec-registration",
@@ -646,10 +656,10 @@
     ]
   },
   "stats": {
-    "crawled": 316,
+    "crawled": 326,
     "errors": 0
   },
-  "crawler": "reffy-17.0.1",
+  "crawler": "reffy-17.1.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -695,7 +705,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "26 July 2024",
+      "date": "28 July 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -1863,11 +1873,11 @@
       ],
       "crawled": "https://www.w3.org/TR/credential-management-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Jul 2024 16:35:20 GMT"
+        "lastModified": "Fri, 26 Jul 2024 19:34:09 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 July 2024",
-      "revision": "ee91210eeafd66cc5fe67fc80b68b6cbc64b6e86",
+      "date": "26 July 2024",
+      "revision": "991c1ecef9f4e0e51803df0dd91a89b110e7e052",
       "algorithms": "algorithms/credential-management-1.json",
       "links": "links/credential-management-1.json",
       "refs": "refs/credential-management-1.json",
@@ -3502,7 +3512,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-conditional-5/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -6417,6 +6427,76 @@
       "ids": "ids/css-scroll-snap-1.json"
     },
     {
+      "url": "https://www.w3.org/TR/css-scroll-snap-2/",
+      "seriesComposition": "delta",
+      "shortname": "css-scroll-snap-2",
+      "series": {
+        "shortname": "css-scroll-snap",
+        "currentSpecification": "css-scroll-snap-1",
+        "title": "CSS Scroll Snap",
+        "shortTitle": "CSS Scroll Snap",
+        "releaseUrl": "https://www.w3.org/TR/css-scroll-snap/",
+        "nightlyUrl": "https://drafts.csswg.org/css-scroll-snap/"
+      },
+      "seriesVersion": "2",
+      "seriesPrevious": "css-scroll-snap-1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-scroll-snap-2/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-scroll-snap-2/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-scroll-snap-2/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-scroll-snap-2/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Scroll Snap Module Level 2",
+      "source": "w3c",
+      "shortTitle": "CSS Scroll Snap 2",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-scroll-snap"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-scroll-snap-2/",
+        "https://drafts.csswg.org/css-scroll-snap-2/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-scroll-snap-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 19 Jul 2024 17:14:13 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "23 July 2024",
+      "revision": "4a3945a7743e29b714eba53aae74d56d008d4d1c",
+      "algorithms": "algorithms/css-scroll-snap-2.json",
+      "links": "links/css-scroll-snap-2.json",
+      "refs": "refs/css-scroll-snap-2.json",
+      "events": "events/css-scroll-snap-2.json",
+      "idl": "idl/css-scroll-snap-2.idl",
+      "css": "css/css-scroll-snap-2.json",
+      "dfns": "dfns/css-scroll-snap-2.json",
+      "headings": "headings/css-scroll-snap-2.json",
+      "ids": "ids/css-scroll-snap-2.json"
+    },
+    {
       "url": "https://www.w3.org/TR/css-scrollbars-1/",
       "seriesComposition": "full",
       "shortname": "css-scrollbars-1",
@@ -9154,17 +9234,452 @@
       "ids": "ids/edit-context.json"
     },
     {
-      "url": "https://www.w3.org/TR/encrypted-media/",
+      "url": "https://www.w3.org/TR/eme-hdcp-version-registry/",
       "seriesComposition": "full",
-      "shortname": "encrypted-media",
+      "shortname": "eme-hdcp-version-registry",
+      "series": {
+        "shortname": "eme-hdcp-version-registry",
+        "currentSpecification": "eme-hdcp-version-registry",
+        "title": "Encrypted Media Extensions HDCP Version Registry",
+        "shortTitle": "Encrypted Media Extensions HDCP Version Registry",
+        "releaseUrl": "https://www.w3.org/TR/eme-hdcp-version-registry/",
+        "nightlyUrl": "https://w3c.github.io/encrypted-media/hdcp-version-registry.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/encrypted-media/hdcp-version-registry.html",
+        "status": "Editor's Draft",
+        "sourcePath": "hdcp-version-registry-respec.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/encrypted-media",
+        "filename": "hdcp-version-registry.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/eme-hdcp-version-registry/",
+        "status": "Draft Registry",
+        "filename": "Overview.html"
+      },
+      "title": "Encrypted Media Extensions HDCP Version Registry",
+      "source": "w3c",
+      "shortTitle": "Encrypted Media Extensions HDCP Version Registry",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/eme-hdcp-version-registry/",
+        "https://w3c.github.io/encrypted-media/hdcp-version-registry.html"
+      ],
+      "crawled": "https://www.w3.org/TR/eme-hdcp-version-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 12 Jul 2024 12:32:32 GMT"
+      },
+      "generator": "respec",
+      "date": "18 July 2024",
+      "links": "links/eme-hdcp-version-registry.json",
+      "refs": "refs/eme-hdcp-version-registry.json",
+      "headings": "headings/eme-hdcp-version-registry.json",
+      "ids": "ids/eme-hdcp-version-registry.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/eme-initdata-cenc/",
+      "seriesComposition": "full",
+      "shortname": "eme-initdata-cenc",
+      "series": {
+        "shortname": "eme-initdata-cenc",
+        "currentSpecification": "eme-initdata-cenc",
+        "title": "\"cenc\" Initialization Data Format",
+        "shortTitle": "\"cenc\" Initialization Data Format",
+        "releaseUrl": "https://www.w3.org/TR/eme-initdata-cenc/",
+        "nightlyUrl": "https://w3c.github.io/encrypted-media/format-registry/initdata/cenc.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/encrypted-media/format-registry/initdata/cenc.html",
+        "status": "Editor's Draft",
+        "sourcePath": "format-registry/initdata/cenc-respec.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/encrypted-media",
+        "filename": "cenc.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/eme-initdata-cenc/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "\"cenc\" Initialization Data Format",
+      "source": "w3c",
+      "shortTitle": "\"cenc\" Initialization Data Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/eme-initdata-cenc/",
+        "https://w3c.github.io/encrypted-media/format-registry/initdata/cenc.html"
+      ],
+      "crawled": "https://www.w3.org/TR/eme-initdata-cenc/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+      },
+      "generator": "respec",
+      "date": "18 July 2024",
+      "algorithms": "algorithms/eme-initdata-cenc.json",
+      "links": "links/eme-initdata-cenc.json",
+      "refs": "refs/eme-initdata-cenc.json",
+      "headings": "headings/eme-initdata-cenc.json",
+      "ids": "ids/eme-initdata-cenc.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/eme-initdata-keyids/",
+      "seriesComposition": "full",
+      "shortname": "eme-initdata-keyids",
+      "series": {
+        "shortname": "eme-initdata-keyids",
+        "currentSpecification": "eme-initdata-keyids",
+        "title": "\"keyids\" Initialization Data Format",
+        "shortTitle": "\"keyids\" Initialization Data Format",
+        "releaseUrl": "https://www.w3.org/TR/eme-initdata-keyids/",
+        "nightlyUrl": "https://w3c.github.io/encrypted-media/format-registry/initdata/keyids.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/encrypted-media/format-registry/initdata/keyids.html",
+        "status": "Editor's Draft",
+        "sourcePath": "format-registry/initdata/keyids-respec.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/encrypted-media",
+        "filename": "keyids.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/eme-initdata-keyids/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "\"keyids\" Initialization Data Format",
+      "source": "w3c",
+      "shortTitle": "\"keyids\" Initialization Data Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/eme-initdata-keyids/",
+        "https://w3c.github.io/encrypted-media/format-registry/initdata/keyids.html"
+      ],
+      "crawled": "https://www.w3.org/TR/eme-initdata-keyids/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+      },
+      "generator": "respec",
+      "date": "18 July 2024",
+      "links": "links/eme-initdata-keyids.json",
+      "refs": "refs/eme-initdata-keyids.json",
+      "headings": "headings/eme-initdata-keyids.json",
+      "ids": "ids/eme-initdata-keyids.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/eme-initdata-registry/",
+      "seriesComposition": "full",
+      "shortname": "eme-initdata-registry",
+      "series": {
+        "shortname": "eme-initdata-registry",
+        "currentSpecification": "eme-initdata-registry",
+        "title": "Encrypted Media Extensions Initialization Data Format Registry",
+        "shortTitle": "Encrypted Media Extensions Initialization Data Format Registry",
+        "releaseUrl": "https://www.w3.org/TR/eme-initdata-registry/",
+        "nightlyUrl": "https://w3c.github.io/encrypted-media/format-registry/initdata/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/encrypted-media/format-registry/initdata/",
+        "status": "Editor's Draft",
+        "sourcePath": "format-registry/initdata/index-respec.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/encrypted-media",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/eme-initdata-registry/",
+        "status": "Draft Registry",
+        "filename": "Overview.html"
+      },
+      "title": "Encrypted Media Extensions Initialization Data Format Registry",
+      "source": "w3c",
+      "shortTitle": "Encrypted Media Extensions Initialization Data Format Registry",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/eme-initdata-registry/",
+        "https://w3c.github.io/encrypted-media/format-registry/initdata/"
+      ],
+      "crawled": "https://www.w3.org/TR/eme-initdata-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 12 Jul 2024 12:26:24 GMT"
+      },
+      "generator": "respec",
+      "date": "18 July 2024",
+      "links": "links/eme-initdata-registry.json",
+      "refs": "refs/eme-initdata-registry.json",
+      "headings": "headings/eme-initdata-registry.json",
+      "ids": "ids/eme-initdata-registry.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/eme-initdata-webm/",
+      "seriesComposition": "full",
+      "shortname": "eme-initdata-webm",
+      "series": {
+        "shortname": "eme-initdata-webm",
+        "currentSpecification": "eme-initdata-webm",
+        "title": "\"webm\" Initialization Data Format",
+        "shortTitle": "\"webm\" Initialization Data Format",
+        "releaseUrl": "https://www.w3.org/TR/eme-initdata-webm/",
+        "nightlyUrl": "https://w3c.github.io/encrypted-media/format-registry/initdata/webm.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/encrypted-media/format-registry/initdata/webm.html",
+        "status": "Editor's Draft",
+        "sourcePath": "format-registry/initdata/webm-respec.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/encrypted-media",
+        "filename": "webm.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/eme-initdata-webm/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "\"webm\" Initialization Data Format",
+      "source": "w3c",
+      "shortTitle": "\"webm\" Initialization Data Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/eme-initdata-webm/",
+        "https://w3c.github.io/encrypted-media/format-registry/initdata/webm.html"
+      ],
+      "crawled": "https://www.w3.org/TR/eme-initdata-webm/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+      },
+      "generator": "respec",
+      "date": "18 July 2024",
+      "links": "links/eme-initdata-webm.json",
+      "refs": "refs/eme-initdata-webm.json",
+      "headings": "headings/eme-initdata-webm.json",
+      "ids": "ids/eme-initdata-webm.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/eme-stream-mp4/",
+      "seriesComposition": "full",
+      "shortname": "eme-stream-mp4",
+      "series": {
+        "shortname": "eme-stream-mp4",
+        "currentSpecification": "eme-stream-mp4",
+        "title": "ISO Common Encryption Protection Scheme for ISO Base Media File Format Stream Format",
+        "shortTitle": "ISO Common Encryption Protection Scheme for ISO Base Media File Format Stream Format",
+        "releaseUrl": "https://www.w3.org/TR/eme-stream-mp4/",
+        "nightlyUrl": "https://w3c.github.io/encrypted-media/format-registry/stream/mp4.html"
+      },
+      "seriesVersion": "4",
+      "nightly": {
+        "url": "https://w3c.github.io/encrypted-media/format-registry/stream/mp4.html",
+        "status": "Editor's Draft",
+        "sourcePath": "format-registry/stream/mp4-respec.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/encrypted-media",
+        "filename": "mp4.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/eme-stream-mp4/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "ISO Common Encryption Protection Scheme for ISO Base Media File Format Stream Format",
+      "source": "w3c",
+      "shortTitle": "ISO Common Encryption Protection Scheme for ISO Base Media File Format Stream Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/eme-stream-mp4/",
+        "https://w3c.github.io/encrypted-media/format-registry/stream/mp4.html"
+      ],
+      "crawled": "https://www.w3.org/TR/eme-stream-mp4/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 12 Jul 2024 12:26:25 GMT"
+      },
+      "generator": "respec",
+      "date": "18 July 2024",
+      "links": "links/eme-stream-mp4.json",
+      "refs": "refs/eme-stream-mp4.json",
+      "headings": "headings/eme-stream-mp4.json",
+      "ids": "ids/eme-stream-mp4.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/eme-stream-registry/",
+      "seriesComposition": "full",
+      "shortname": "eme-stream-registry",
+      "series": {
+        "shortname": "eme-stream-registry",
+        "currentSpecification": "eme-stream-registry",
+        "title": "Encrypted Media Extensions Stream Format Registry",
+        "shortTitle": "Encrypted Media Extensions Stream Format Registry",
+        "releaseUrl": "https://www.w3.org/TR/eme-stream-registry/",
+        "nightlyUrl": "https://w3c.github.io/encrypted-media/format-registry/stream/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/encrypted-media/format-registry/stream/",
+        "status": "Editor's Draft",
+        "sourcePath": "format-registry/stream/index-respec.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/encrypted-media",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/eme-stream-registry/",
+        "status": "Draft Registry",
+        "filename": "Overview.html"
+      },
+      "title": "Encrypted Media Extensions Stream Format Registry",
+      "source": "w3c",
+      "shortTitle": "Encrypted Media Extensions Stream Format Registry",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/eme-stream-registry/",
+        "https://w3c.github.io/encrypted-media/format-registry/stream/"
+      ],
+      "crawled": "https://www.w3.org/TR/eme-stream-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 12 Jul 2024 12:26:24 GMT"
+      },
+      "generator": "respec",
+      "date": "18 July 2024",
+      "links": "links/eme-stream-registry.json",
+      "refs": "refs/eme-stream-registry.json",
+      "headings": "headings/eme-stream-registry.json",
+      "ids": "ids/eme-stream-registry.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/eme-stream-webm/",
+      "seriesComposition": "full",
+      "shortname": "eme-stream-webm",
+      "series": {
+        "shortname": "eme-stream-webm",
+        "currentSpecification": "eme-stream-webm",
+        "title": "WebM Stream Format",
+        "shortTitle": "WebM Stream Format",
+        "releaseUrl": "https://www.w3.org/TR/eme-stream-webm/",
+        "nightlyUrl": "https://w3c.github.io/encrypted-media/format-registry/stream/webm.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/encrypted-media/format-registry/stream/webm.html",
+        "status": "Editor's Draft",
+        "sourcePath": "format-registry/stream/webm-respec.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/encrypted-media",
+        "filename": "webm.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/eme-stream-webm/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "WebM Stream Format",
+      "source": "w3c",
+      "shortTitle": "WebM Stream Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/eme-stream-webm/",
+        "https://w3c.github.io/encrypted-media/format-registry/stream/webm.html"
+      ],
+      "crawled": "https://www.w3.org/TR/eme-stream-webm/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+      },
+      "generator": "respec",
+      "date": "18 July 2024",
+      "links": "links/eme-stream-webm.json",
+      "refs": "refs/eme-stream-webm.json",
+      "headings": "headings/eme-stream-webm.json",
+      "ids": "ids/eme-stream-webm.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/encrypted-media-2/",
+      "seriesComposition": "full",
+      "shortname": "encrypted-media-2",
       "series": {
         "shortname": "encrypted-media",
-        "currentSpecification": "encrypted-media",
+        "currentSpecification": "encrypted-media-2",
         "title": "Encrypted Media Extensions",
         "shortTitle": "Encrypted Media Extensions",
         "releaseUrl": "https://www.w3.org/TR/encrypted-media/",
         "nightlyUrl": "https://w3c.github.io/encrypted-media/"
       },
+      "seriesVersion": "2",
       "nightly": {
         "url": "https://w3c.github.io/encrypted-media/",
         "status": "Editor's Draft",
@@ -9173,16 +9688,19 @@
         "repository": "https://github.com/w3c/encrypted-media",
         "filename": "index.html"
       },
+      "formerNames": [
+        "encrypted-media"
+      ],
       "organization": "W3C",
       "groups": [
         {
-          "name": "HTML Media Extensions Working Group",
-          "url": "https://www.w3.org/html/wg/"
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/encrypted-media/",
-        "status": "Recommendation",
+        "url": "https://www.w3.org/TR/encrypted-media-2/",
+        "status": "First Public Working Draft",
         "filename": "Overview.html"
       },
       "title": "Encrypted Media Extensions",
@@ -9199,23 +9717,23 @@
         ]
       },
       "versions": [
-        "https://www.w3.org/TR/encrypted-media/",
+        "https://www.w3.org/TR/encrypted-media-2/",
         "https://w3c.github.io/encrypted-media/"
       ],
-      "crawled": "https://www.w3.org/TR/encrypted-media/",
+      "crawled": "https://www.w3.org/TR/encrypted-media-2/",
       "crawlCacheInfo": {
         "lastModified": "Fri, 12 Jul 2024 12:14:06 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
-      "algorithms": "algorithms/encrypted-media.json",
-      "links": "links/encrypted-media.json",
-      "refs": "refs/encrypted-media.json",
-      "events": "events/encrypted-media.json",
+      "algorithms": "algorithms/encrypted-media-2.json",
+      "links": "links/encrypted-media-2.json",
+      "refs": "refs/encrypted-media-2.json",
+      "events": "events/encrypted-media-2.json",
       "idl": "idl/encrypted-media.idl",
-      "dfns": "dfns/encrypted-media.json",
-      "headings": "headings/encrypted-media.json",
-      "ids": "ids/encrypted-media.json"
+      "dfns": "dfns/encrypted-media-2.json",
+      "headings": "headings/encrypted-media-2.json",
+      "ids": "ids/encrypted-media-2.json"
     },
     {
       "url": "https://www.w3.org/TR/epub-33/",
@@ -12500,8 +13018,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "HTML Media Extensions Working Group",
-          "url": "https://www.w3.org/html/wg/"
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
         }
       ],
       "release": {
@@ -12556,8 +13074,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "HTML Media Extensions Working Group",
-          "url": "https://www.w3.org/html/wg/"
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
         }
       ],
       "release": {
@@ -12612,8 +13130,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "HTML Media Extensions Working Group",
-          "url": "https://www.w3.org/html/wg/"
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
         }
       ],
       "release": {
@@ -12668,13 +13186,13 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "HTML Media Extensions Working Group",
-          "url": "https://www.w3.org/html/wg/"
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
         }
       ],
       "release": {
         "url": "https://www.w3.org/TR/mse-byte-stream-format-registry/",
-        "status": "Note",
+        "status": "Draft Registry",
         "filename": "Overview.html"
       },
       "title": "Media Source Extensions Byte Stream Format Registry",
@@ -12723,8 +13241,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "HTML Media Extensions Working Group",
-          "url": "https://www.w3.org/html/wg/"
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
         }
       ],
       "release": {
@@ -13059,8 +13577,8 @@
       "shortname": "orientation-event",
       "series": {
         "shortname": "orientation-event",
-        "title": "Device Orientation and Motion",
         "currentSpecification": "orientation-event",
+        "title": "Device Orientation and Motion",
         "shortTitle": "Device Orientation and Motion",
         "releaseUrl": "https://www.w3.org/TR/orientation-event/",
         "nightlyUrl": "https://w3c.github.io/deviceorientation/"
@@ -15093,8 +15611,8 @@
       "shortname": "screen-orientation",
       "series": {
         "shortname": "screen-orientation",
-        "title": "Screen Orientation",
         "currentSpecification": "screen-orientation",
+        "title": "Screen Orientation",
         "shortTitle": "Screen Orientation",
         "releaseUrl": "https://www.w3.org/TR/screen-orientation/",
         "nightlyUrl": "https://w3c.github.io/screen-orientation/"
@@ -15226,8 +15744,8 @@
       "shortname": "scroll-animations-1",
       "series": {
         "shortname": "scroll-animations",
-        "title": "Scroll-driven Animations",
         "currentSpecification": "scroll-animations-1",
+        "title": "Scroll-driven Animations",
         "shortTitle": "Scroll-driven Animations",
         "releaseUrl": "https://www.w3.org/TR/scroll-animations/",
         "nightlyUrl": "https://drafts.csswg.org/scroll-animations/"
@@ -17371,11 +17889,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-data-integrity/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Jul 2024 19:57:25 GMT"
+        "lastModified": "Sat, 27 Jul 2024 22:22:01 GMT"
       },
       "generator": "respec",
-      "date": "25 July 2024",
-      "revision": "64de16ddf99930099d1dea50055be2911fb56dc4",
+      "date": "27 July 2024",
+      "revision": "a065cfcd40540a1179ed14a76aee40c3ddb97c60",
       "algorithms": "algorithms/vc-data-integrity.json",
       "links": "links/vc-data-integrity.json",
       "refs": "refs/vc-data-integrity.json",
@@ -17427,11 +17945,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-data-model-2.0/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Jul 2024 20:56:45 GMT"
+        "lastModified": "Sat, 27 Jul 2024 21:28:39 GMT"
       },
       "generator": "respec",
-      "date": "24 July 2024",
-      "revision": "93a0b98cb40a851f3916afba8fd444f1e395f9a4",
+      "date": "27 July 2024",
+      "revision": "47bd6a9c36af3c8070257b8d291d423345180de2",
       "algorithms": "algorithms/vc-data-model-2.0.json",
       "links": "links/vc-data-model-2.0.json",
       "refs": "refs/vc-data-model-2.0.json",
@@ -17778,6 +18296,7 @@
       "seriesVersion": "2",
       "forks": [
         "wasm-js-api-2-fork-content-security-policy",
+        "wasm-js-api-2-fork-esm-integration",
         "wasm-js-api-2-fork-exception-handling",
         "wasm-js-api-2-fork-js-promise-integration",
         "wasm-js-api-2-fork-js-types",
@@ -18915,6 +19434,61 @@
       "ids": "ids/webcodecs-ulaw-codec-registration.json"
     },
     {
+      "url": "https://www.w3.org/TR/webcodecs-video-frame-metadata-registry/",
+      "seriesComposition": "full",
+      "shortname": "webcodecs-video-frame-metadata-registry",
+      "series": {
+        "shortname": "webcodecs-video-frame-metadata-registry",
+        "currentSpecification": "webcodecs-video-frame-metadata-registry",
+        "title": "WebCodecs VideoFrame Metadata Registry",
+        "shortTitle": "WebCodecs VideoFrame Metadata Registry",
+        "releaseUrl": "https://www.w3.org/TR/webcodecs-video-frame-metadata-registry/",
+        "nightlyUrl": "https://w3c.github.io/webcodecs/video_frame_metadata_registry.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/webcodecs/video_frame_metadata_registry.html",
+        "status": "Editor's Draft",
+        "sourcePath": "video_frame_metadata_registry.src.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/webcodecs",
+        "filename": "video_frame_metadata_registry.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/webcodecs-video-frame-metadata-registry/",
+        "status": "Draft Registry",
+        "filename": "Overview.html"
+      },
+      "title": "WebCodecs VideoFrame Metadata Registry",
+      "source": "w3c",
+      "shortTitle": "WebCodecs VideoFrame Metadata Registry",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/webcodecs-video-frame-metadata-registry/",
+        "https://w3c.github.io/webcodecs/video_frame_metadata_registry.html"
+      ],
+      "crawled": "https://www.w3.org/TR/webcodecs-video-frame-metadata-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 26 Jul 2024 12:02:28 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "26 July 2024",
+      "revision": "00de0532b07081dff4e47e03e621105ecda055a7",
+      "links": "links/webcodecs-video-frame-metadata-registry.json",
+      "refs": "refs/webcodecs-video-frame-metadata-registry.json",
+      "headings": "headings/webcodecs-video-frame-metadata-registry.json",
+      "ids": "ids/webcodecs-video-frame-metadata-registry.json"
+    },
+    {
       "url": "https://www.w3.org/TR/webcodecs-vorbis-codec-registration/",
       "seriesComposition": "full",
       "shortname": "webcodecs-vorbis-codec-registration",
@@ -19324,11 +19898,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Jul 2024 22:00:05 GMT"
+        "lastModified": "Sat, 27 Jul 2024 06:45:06 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 July 2024",
-      "revision": "177c640fa32d420b2a912a4dadef8e9729dd9131",
+      "date": "27 July 2024",
+      "revision": "c9ad3073dcb3c169df4bbdb70a1c41f65ad2bd7c",
       "algorithms": "algorithms/webgpu.json",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
@@ -19442,23 +20016,17 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "webnn"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/webnn/",
         "https://webmachinelearning.github.io/webnn/"
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Jul 2024 20:29:18 GMT"
+        "lastModified": "Sat, 27 Jul 2024 09:00:57 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 July 2024",
-      "revision": "bd5da6b72995dfb1404acb21a7c9531aeb8d6e4c",
+      "date": "27 July 2024",
+      "revision": "ef7882645f90b7836a8a87fa3e8d8b0edd3cfe2e",
       "algorithms": "algorithms/webnn.json",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
