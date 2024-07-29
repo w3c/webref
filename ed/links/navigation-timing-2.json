@@ -19,6 +19,7 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/type": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/unloadEventEnd": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/unloadEventStart": {},
+      "https://dom.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-fetch",
@@ -52,6 +53,12 @@
         "anchors": [
           "current-document-readiness",
           "document"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window",
+          "create-a-notrestoredreasons-object"
         ]
       },
       "https://html.spec.whatwg.org/multipage/origin.html": {
@@ -108,7 +115,8 @@
       "https://www.w3.org/TR/performance-timeline/": {
         "anchors": [
           "supportedentrytypes-attribute",
-          "dfn-performance-entry-buffer"
+          "dfn-performance-entry-buffer",
+          "dfn-queue-a-navigation-performanceentry"
         ]
       },
       "https://www.w3.org/TR/resource-hints/": {
@@ -144,10 +152,105 @@
       "https://www.w3.org/policies/process/20231103/": {}
     },
     "autolinks": {
-      "https://webidl.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document",
+          "document",
+          "dom-document-url"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "fetch-timing-info",
+          "response-body-info"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "navigable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "document-load-timing-info",
+          "document-unload-timing-info",
+          "unload-event-start-time",
+          "unload-event-end-time",
+          "dom-interactive-time",
+          "dom-content-loaded-event-start-time",
+          "dom-content-loaded-event-end-time",
+          "dom-complete-time",
+          "load-event-start-time",
+          "load-event-end-time",
+          "load-timing-info"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/indices.html": {
+        "anchors": [
+          "event-load"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "notrestoredreasons"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-settings-object-time-origin",
+          "relevant-settings-object",
+          "concept-relevant-global",
+          "concept-global-object-realm"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString",
+          "this",
+          "Exposed",
+          "idl-unsigned-short",
+          "Default",
+          "idl-object",
+          "default-tojson-steps",
+          "dfn-enumeration",
+          "idl-unsigned-long-long",
+          "SameObject"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "anchors": [
+          "dom-domhighrestimestamp",
+          "dom-performance-timeorigin"
+        ]
+      },
+      "https://www.w3.org/TR/performance-timeline/": {
+        "anchors": [
+          "dom-performanceentry",
+          "dom-performanceentry-starttime",
+          "dom-performanceentry-duration"
+        ]
+      },
       "https://www.w3.org/TR/resource-timing/": {
         "anchors": [
+          "dom-performanceresourcetiming-redirectstart",
+          "dom-performanceresourcetiming-redirectend",
+          "dom-performanceresourcetiming-workerstart",
+          "dom-performanceresourcetiming-fetchstart",
           "dom-performanceresourcetiming"
+        ]
+      },
+      "https://www.w3.org/TR/service-workers/": {
+        "anchors": [
+          "service-worker-timing-info-start-time",
+          "service-worker-timing-info-fetch-event-dispatch-time",
+          "dfn-service-worker",
+          "fetchevent",
+          "service-worker-timing-info"
         ]
       }
     }

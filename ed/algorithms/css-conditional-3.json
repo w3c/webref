@@ -10,10 +10,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>property</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive\">ASCII case-insensitive</a> match\nfor any defined CSS property that the UA supports,\nand <var>value</var> successfully <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parses</a> according to that property’s grammar,\nreturn <code class=\"highlight\">true</code>.</p>"
-        },
-        {
-          "html": "<p>Otherwise, if <var>property</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#custom-property-name-string\" id=\"ref-for-custom-property-name-string\">custom property name string</a>,\nreturn <code class=\"highlight\">true</code>.</p>"
+          "html": "<p>If <var>property</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive\">ASCII case-insensitive</a> match\nfor any defined CSS property that the UA supports,\nor is a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#custom-property-name-string\" id=\"ref-for-custom-property-name-string\">custom property name string</a>,\nand <var>value</var> successfully <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parses</a> according to that property’s grammar,\nreturn <code class=\"highlight\">true</code>.</p>"
         },
         {
           "html": "<p>Otherwise, return <code class=\"highlight\">false</code>.</p>"
