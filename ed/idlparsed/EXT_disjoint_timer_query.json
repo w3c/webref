@@ -65,7 +65,7 @@
         "partial": false
       },
       "EXT_disjoint_timer_query": {
-        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_disjoint_timer_query {\n  const GLenum QUERY_COUNTER_BITS_EXT      = 0x8864;\n  const GLenum CURRENT_QUERY_EXT           = 0x8865;\n  const GLenum QUERY_RESULT_EXT            = 0x8866;\n  const GLenum QUERY_RESULT_AVAILABLE_EXT  = 0x8867;\n  const GLenum TIME_ELAPSED_EXT            = 0x88BF;\n  const GLenum TIMESTAMP_EXT               = 0x8E28;\n  const GLenum GPU_DISJOINT_EXT            = 0x8FBB;\n\n  WebGLTimerQueryEXT? createQueryEXT();\n  undefined deleteQueryEXT(WebGLTimerQueryEXT? query);\n  [WebGLHandlesContextLoss] boolean isQueryEXT(WebGLTimerQueryEXT? query);\n  undefined beginQueryEXT(GLenum target, WebGLTimerQueryEXT query);\n  undefined endQueryEXT(GLenum target);\n  undefined queryCounterEXT(WebGLTimerQueryEXT query, GLenum target);\n  any getQueryEXT(GLenum target, GLenum pname);\n  any getQueryObjectEXT(WebGLTimerQueryEXT query, GLenum pname);\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_disjoint_timer_query {\n  const GLenum QUERY_COUNTER_BITS_EXT      = 0x8864;\n  const GLenum CURRENT_QUERY_EXT           = 0x8865;\n  const GLenum QUERY_RESULT_EXT            = 0x8866;\n  const GLenum QUERY_RESULT_AVAILABLE_EXT  = 0x8867;\n  const GLenum TIME_ELAPSED_EXT            = 0x88BF;\n  const GLenum TIMESTAMP_EXT               = 0x8E28;\n  const GLenum GPU_DISJOINT_EXT            = 0x8FBB;\n\n  WebGLTimerQueryEXT createQueryEXT();\n  undefined deleteQueryEXT(WebGLTimerQueryEXT? query);\n  [WebGLHandlesContextLoss] boolean isQueryEXT(WebGLTimerQueryEXT? query);\n  undefined beginQueryEXT(GLenum target, WebGLTimerQueryEXT query);\n  undefined endQueryEXT(GLenum target);\n  undefined queryCounterEXT(WebGLTimerQueryEXT query, GLenum target);\n  any getQueryEXT(GLenum target, GLenum pname);\n  any getQueryObjectEXT(WebGLTimerQueryEXT query, GLenum pname);\n};",
         "type": "interface",
         "name": "EXT_disjoint_timer_query",
         "inheritance": null,
@@ -196,7 +196,7 @@
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "WebGLTimerQueryEXT"
             },

@@ -51,7 +51,7 @@
         "partial": false
       },
       "OES_vertex_array_object": {
-        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface OES_vertex_array_object {\n    const GLenum VERTEX_ARRAY_BINDING_OES = 0x85B5;\n\n    WebGLVertexArrayObjectOES? createVertexArrayOES();\n    undefined deleteVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n    [WebGLHandlesContextLoss] GLboolean isVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n    undefined bindVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface OES_vertex_array_object {\n    const GLenum VERTEX_ARRAY_BINDING_OES = 0x85B5;\n\n    WebGLVertexArrayObjectOES createVertexArrayOES();\n    undefined deleteVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n    [WebGLHandlesContextLoss] GLboolean isVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n    undefined bindVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n};",
         "type": "interface",
         "name": "OES_vertex_array_object",
         "inheritance": null,
@@ -80,7 +80,7 @@
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "WebGLVertexArrayObjectOES"
             },
