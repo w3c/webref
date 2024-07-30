@@ -5,31 +5,31 @@
   },
   "algorithms": [
     {
-      "html": "The <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-redirectstart\"><code>redirectStart</code></a> getter steps are to perform the following steps:",
+      "html": "The <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing/#dom-performanceresourcetiming-redirectstart\"><code>redirectStart</code></a> getter steps are to perform the following steps:",
       "rationale": "if",
       "steps": [
         {
           "html": "If <var>this</var>'s [=PerformanceNavigationTiming/redirect count] is 0, return 0."
         },
         {
-          "html": "Otherwise return <var>this</var>'s <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-redirectstart\"><code>redirectStart</code></a>."
+          "html": "Otherwise return <var>this</var>'s <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing/#dom-performanceresourcetiming-redirectstart\"><code>redirectStart</code></a>."
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-redirectend\"><code>redirectEnd</code></a> getter steps are to perform the following steps:",
+      "html": "The <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing/#dom-performanceresourcetiming-redirectend\"><code>redirectEnd</code></a> getter steps are to perform the following steps:",
       "rationale": "if",
       "steps": [
         {
           "html": "If <var>this</var>'s [=PerformanceNavigationTiming/redirect count] is 0, return 0."
         },
         {
-          "html": "Otherwise return <var>this</var>'s <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-redirectend\"><code>redirectEnd</code></a>."
+          "html": "Otherwise return <var>this</var>'s <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing/#dom-performanceresourcetiming-redirectend\"><code>redirectEnd</code></a>."
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-workerstart\"><code>workerStart</code></a> getter steps are to perform the following steps:",
+      "html": "The <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing/#dom-performanceresourcetiming-workerstart\"><code>workerStart</code></a> getter steps are to perform the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-fetchstart\"><code>fetchStart</code></a> getter steps are to perform the following steps:",
+      "html": "The <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://www.w3.org/TR/resource-timing/#dom-performanceresourcetiming-fetchstart\"><code>fetchStart</code></a> getter steps are to perform the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -71,7 +71,7 @@
           "html": "Let <var>navigationTimingEntry</var> be a new <a data-link-type=\"idl\" data-lt=\"PerformanceNavigationTiming\" href=\"https://www.w3.org/TR/navigation-timing-2/#dom-performancenavigationtiming\" class=\"internalDFN\" id=\"ref-for-dom-performancenavigationtiming-18\"><code>PerformanceNavigationTiming</code></a> object in <var>global</var>'s\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\">realm</a>."
         },
         {
-          "html": "<a href=\"https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry\">Setup the resource\n        timing entry</a> for <var>navigationTimingEntry</var> given \"<code>navigation</code>\", <var>document</var>'s\n        <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://dom.spec.whatwg.org/#dom-document-url\"><code>URL</code></a>, <var>fetchTiming</var>, <var>cacheMode</var>, and <var>bodyInfo</var>."
+          "html": "<a href=\"https://www.w3.org/TR/resource-timing/#dfn-setup-the-resource-timing-entry\">Setup the resource\n        timing entry</a> for <var>navigationTimingEntry</var> given \"<code>navigation</code>\", <var>document</var>'s\n        <a data-link-type=\"idl\" data-type=\"attribute\" href=\"https://dom.spec.whatwg.org/#dom-document-url\"><code>URL</code></a>, <var>fetchTiming</var>, <var>cacheMode</var>, and <var>bodyInfo</var>."
         },
         {
           "html": "Set <var>navigationTimingEntry</var>'s <a data-for=\"PerformanceNavigationTiming\" href=\"https://www.w3.org/TR/navigation-timing-2/#dfn-document-load-timing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-document-load-timing-8\">document load\n        timing</a> to <var>document</var>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#load-timing-info\">load timing info</a>"
