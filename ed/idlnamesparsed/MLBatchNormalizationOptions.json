@@ -6,10 +6,24 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLBatchNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  [EnforceRange] unsigned long axis = 1;\n  double epsilon = 1e-5;\n};",
+    "fragment": "dictionary MLBatchNormalizationOptions : MLOperatorOptions {\n  MLOperand scale;\n  MLOperand bias;\n  [EnforceRange] unsigned long axis = 1;\n  double epsilon = 1e-5;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlbatchnormalizationoptions"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "MLOperatorOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "dictionary MLOperatorOptions {\n  USVString label = \"\";\n};",
+      "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperatoroptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }

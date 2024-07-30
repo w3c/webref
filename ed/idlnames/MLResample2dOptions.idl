@@ -1,5 +1,5 @@
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
-dictionary MLResample2dOptions {
+dictionary MLResample2dOptions : MLOperatorOptions {
   MLInterpolationMode mode = "nearest-neighbor";
   sequence<float> scales;
   sequence<[EnforceRange] unsigned long> sizes;

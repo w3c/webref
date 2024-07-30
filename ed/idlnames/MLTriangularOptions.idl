@@ -1,5 +1,5 @@
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
-dictionary MLTriangularOptions {
+dictionary MLTriangularOptions : MLOperatorOptions {
   boolean upper = true;
   [EnforceRange] long diagonal = 0;
 };

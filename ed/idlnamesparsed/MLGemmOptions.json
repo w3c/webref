@@ -6,10 +6,24 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLGemmOptions {\n  MLOperand c;\n  double alpha = 1.0;\n  double beta = 1.0;\n  boolean aTranspose = false;\n  boolean bTranspose = false;\n};",
+    "fragment": "dictionary MLGemmOptions : MLOperatorOptions {\n  MLOperand c;\n  double alpha = 1.0;\n  double beta = 1.0;\n  boolean aTranspose = false;\n  boolean bTranspose = false;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgemmoptions"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "MLOperatorOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "dictionary MLOperatorOptions {\n  USVString label = \"\";\n};",
+      "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperatoroptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }

@@ -6,10 +6,24 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLPool2dOptions {\n  sequence<[EnforceRange] unsigned long> windowDimensions;\n  sequence<[EnforceRange] unsigned long> padding;\n  sequence<[EnforceRange] unsigned long> strides;\n  sequence<[EnforceRange] unsigned long> dilations;\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<[EnforceRange] unsigned long> outputSizes;\n};",
+    "fragment": "dictionary MLPool2dOptions : MLOperatorOptions {\n  sequence<[EnforceRange] unsigned long> windowDimensions;\n  sequence<[EnforceRange] unsigned long> padding;\n  sequence<[EnforceRange] unsigned long> strides;\n  sequence<[EnforceRange] unsigned long> dilations;\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<[EnforceRange] unsigned long> outputSizes;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlpool2doptions"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "MLOperatorOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "dictionary MLOperatorOptions {\n  USVString label = \"\";\n};",
+      "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperatoroptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }

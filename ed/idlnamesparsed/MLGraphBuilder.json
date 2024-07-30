@@ -29,7 +29,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand cast(MLOperand input, MLOperandDataType type);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand cast(MLOperand input,\n                 MLOperandDataType type,\n                 optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -43,7 +43,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand concat(sequence<MLOperand> inputs, [EnforceRange] unsigned long axis);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand concat(sequence<MLOperand> inputs,\n                   [EnforceRange] unsigned long axis,\n                   optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -64,21 +64,21 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand add(MLOperand a, MLOperand b);\n  MLOperand sub(MLOperand a, MLOperand b);\n  MLOperand mul(MLOperand a, MLOperand b);\n  MLOperand div(MLOperand a, MLOperand b);\n  MLOperand max(MLOperand a, MLOperand b);\n  MLOperand min(MLOperand a, MLOperand b);\n  MLOperand pow(MLOperand a, MLOperand b);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand add(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand sub(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand mul(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand div(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand max(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand min(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n  MLOperand pow(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand equal(MLOperand a, MLOperand b);\n  MLOperand greater(MLOperand a, MLOperand b);\n  MLOperand greaterOrEqual(MLOperand a, MLOperand b);\n  MLOperand lesser(MLOperand a, MLOperand b);\n  MLOperand lesserOrEqual(MLOperand a, MLOperand b);\n  MLOperand logicalNot(MLOperand a);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand equal(MLOperand a,\n                  MLOperand b,\n                  optional MLOperatorOptions options = {});\n  MLOperand greater(MLOperand a,\n                    MLOperand b,\n                    optional MLOperatorOptions options = {});\n  MLOperand greaterOrEqual(MLOperand a,\n                           MLOperand b,\n                           optional MLOperatorOptions options = {});\n  MLOperand lesser(MLOperand a,\n                   MLOperand b,\n                   optional MLOperatorOptions options = {});\n  MLOperand lesserOrEqual(MLOperand a,\n                          MLOperand b,\n                          optional MLOperatorOptions options = {});\n  MLOperand logicalNot(MLOperand a, optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand abs(MLOperand input);\n  MLOperand ceil(MLOperand input);\n  MLOperand cos(MLOperand input);\n  MLOperand erf(MLOperand input);\n  MLOperand exp(MLOperand input);\n  MLOperand floor(MLOperand input);\n  MLOperand identity(MLOperand input);\n  MLOperand log(MLOperand input);\n  MLOperand neg(MLOperand input);\n  MLOperand reciprocal(MLOperand input);\n  MLOperand sin(MLOperand input);\n  MLOperand sqrt(MLOperand input);\n  MLOperand tan(MLOperand input);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand abs(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand ceil(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand cos(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand erf(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand exp(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand floor(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand identity(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand log(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand neg(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand reciprocal(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sin(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand sqrt(MLOperand input, optional MLOperatorOptions options = {});\n  MLOperand tan(MLOperand input, optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -92,7 +92,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand expand(MLOperand input, sequence<[EnforceRange] unsigned long> newShape);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand expand(MLOperand input,\n                   sequence<[EnforceRange] unsigned long> newShape,\n                   optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -106,7 +106,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand gelu(MLOperand input);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand gelu(MLOperand input, optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -141,7 +141,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand hardSwish(MLOperand input);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand hardSwish(MLOperand input, optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -190,7 +190,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand matmul(MLOperand a, MLOperand b);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand matmul(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -211,7 +211,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand prelu(MLOperand input, MLOperand slope);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand prelu(MLOperand input,\n                  MLOperand slope,\n                  optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -225,7 +225,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand relu(MLOperand input);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand relu(MLOperand input, optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -239,42 +239,42 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand reshape(MLOperand input, sequence<[EnforceRange] unsigned long> newShape);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand reshape(MLOperand input,\n                    sequence<[EnforceRange] unsigned long> newShape,\n                    optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand sigmoid(MLOperand input);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand sigmoid(MLOperand input, optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input,\n                  sequence<[EnforceRange] unsigned long> starts,\n                  sequence<[EnforceRange] unsigned long> sizes);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input,\n                  sequence<[EnforceRange] unsigned long> starts,\n                  sequence<[EnforceRange] unsigned long> sizes,\n                  optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand softmax(MLOperand input, unsigned long axis);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand softmax(MLOperand input,\n                    unsigned long axis,\n                    optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand softplus(MLOperand input);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand softplus(MLOperand input, optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand softsign(MLOperand input);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand softsign(MLOperand input, optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -288,7 +288,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand tanh(MLOperand input);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand tanh(MLOperand input, optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {
@@ -309,7 +309,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand where(MLOperand condition, MLOperand trueValue, MLOperand falseValue);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand where(MLOperand condition,\n                  MLOperand trueValue,\n                  MLOperand falseValue,\n                  optional MLOperatorOptions options = {});\n};"
     }
   ],
   "inheritance": null,

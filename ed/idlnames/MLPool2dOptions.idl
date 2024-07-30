@@ -1,5 +1,5 @@
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
-dictionary MLPool2dOptions {
+dictionary MLPool2dOptions : MLOperatorOptions {
   sequence<[EnforceRange] unsigned long> windowDimensions;
   sequence<[EnforceRange] unsigned long> padding;
   sequence<[EnforceRange] unsigned long> strides;

@@ -6,10 +6,24 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLTransposeOptions {\n  sequence<[EnforceRange] unsigned long> permutation;\n};",
+    "fragment": "dictionary MLTransposeOptions : MLOperatorOptions {\n  sequence<[EnforceRange] unsigned long> permutation;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltransposeoptions"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "MLOperatorOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "dictionary MLOperatorOptions {\n  USVString label = \"\";\n};",
+      "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperatoroptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }

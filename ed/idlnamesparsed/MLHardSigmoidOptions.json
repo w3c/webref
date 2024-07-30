@@ -6,10 +6,24 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLHardSigmoidOptions {\n  double alpha = 0.2;\n  double beta = 0.5;\n};",
+    "fragment": "dictionary MLHardSigmoidOptions : MLOperatorOptions {\n  double alpha = 0.2;\n  double beta = 0.5;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlhardsigmoidoptions"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "MLOperatorOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "dictionary MLOperatorOptions {\n  USVString label = \"\";\n};",
+      "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperatoroptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }

@@ -33,7 +33,9 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand cast(MLOperand input, MLOperandDataType type);
+  MLOperand cast(MLOperand input,
+                 MLOperandDataType type,
+                 optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -43,7 +45,9 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand concat(sequence<MLOperand> inputs, [EnforceRange] unsigned long axis);
+  MLOperand concat(sequence<MLOperand> inputs,
+                   [EnforceRange] unsigned long axis,
+                   optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -61,40 +65,50 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand add(MLOperand a, MLOperand b);
-  MLOperand sub(MLOperand a, MLOperand b);
-  MLOperand mul(MLOperand a, MLOperand b);
-  MLOperand div(MLOperand a, MLOperand b);
-  MLOperand max(MLOperand a, MLOperand b);
-  MLOperand min(MLOperand a, MLOperand b);
-  MLOperand pow(MLOperand a, MLOperand b);
+  MLOperand add(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});
+  MLOperand sub(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});
+  MLOperand mul(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});
+  MLOperand div(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});
+  MLOperand max(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});
+  MLOperand min(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});
+  MLOperand pow(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand equal(MLOperand a, MLOperand b);
-  MLOperand greater(MLOperand a, MLOperand b);
-  MLOperand greaterOrEqual(MLOperand a, MLOperand b);
-  MLOperand lesser(MLOperand a, MLOperand b);
-  MLOperand lesserOrEqual(MLOperand a, MLOperand b);
-  MLOperand logicalNot(MLOperand a);
+  MLOperand equal(MLOperand a,
+                  MLOperand b,
+                  optional MLOperatorOptions options = {});
+  MLOperand greater(MLOperand a,
+                    MLOperand b,
+                    optional MLOperatorOptions options = {});
+  MLOperand greaterOrEqual(MLOperand a,
+                           MLOperand b,
+                           optional MLOperatorOptions options = {});
+  MLOperand lesser(MLOperand a,
+                   MLOperand b,
+                   optional MLOperatorOptions options = {});
+  MLOperand lesserOrEqual(MLOperand a,
+                          MLOperand b,
+                          optional MLOperatorOptions options = {});
+  MLOperand logicalNot(MLOperand a, optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand abs(MLOperand input);
-  MLOperand ceil(MLOperand input);
-  MLOperand cos(MLOperand input);
-  MLOperand erf(MLOperand input);
-  MLOperand exp(MLOperand input);
-  MLOperand floor(MLOperand input);
-  MLOperand identity(MLOperand input);
-  MLOperand log(MLOperand input);
-  MLOperand neg(MLOperand input);
-  MLOperand reciprocal(MLOperand input);
-  MLOperand sin(MLOperand input);
-  MLOperand sqrt(MLOperand input);
-  MLOperand tan(MLOperand input);
+  MLOperand abs(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand ceil(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand cos(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand erf(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand exp(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand floor(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand identity(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand log(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand neg(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand reciprocal(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand sin(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand sqrt(MLOperand input, optional MLOperatorOptions options = {});
+  MLOperand tan(MLOperand input, optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -104,7 +118,9 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand expand(MLOperand input, sequence<[EnforceRange] unsigned long> newShape);
+  MLOperand expand(MLOperand input,
+                   sequence<[EnforceRange] unsigned long> newShape,
+                   optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -116,7 +132,7 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand gelu(MLOperand input);
+  MLOperand gelu(MLOperand input, optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -151,7 +167,7 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand hardSwish(MLOperand input);
+  MLOperand hardSwish(MLOperand input, optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -199,7 +215,7 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand matmul(MLOperand a, MLOperand b);
+  MLOperand matmul(MLOperand a, MLOperand b, optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -219,7 +235,9 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand prelu(MLOperand input, MLOperand slope);
+  MLOperand prelu(MLOperand input,
+                  MLOperand slope,
+                  optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -238,7 +256,7 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand relu(MLOperand input);
+  MLOperand relu(MLOperand input, optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -248,34 +266,39 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand reshape(MLOperand input, sequence<[EnforceRange] unsigned long> newShape);
+  MLOperand reshape(MLOperand input,
+                    sequence<[EnforceRange] unsigned long> newShape,
+                    optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand sigmoid(MLOperand input);
+  MLOperand sigmoid(MLOperand input, optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand slice(MLOperand input,
                   sequence<[EnforceRange] unsigned long> starts,
-                  sequence<[EnforceRange] unsigned long> sizes);
+                  sequence<[EnforceRange] unsigned long> sizes,
+                  optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand softmax(MLOperand input, unsigned long axis);
+  MLOperand softmax(MLOperand input,
+                    unsigned long axis,
+                    optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand softplus(MLOperand input);
+  MLOperand softplus(MLOperand input, optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand softsign(MLOperand input);
+  MLOperand softsign(MLOperand input, optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -288,7 +311,7 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand tanh(MLOperand input);
+  MLOperand tanh(MLOperand input, optional MLOperatorOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -303,5 +326,8 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand where(MLOperand condition, MLOperand trueValue, MLOperand falseValue);
+  MLOperand where(MLOperand condition,
+                  MLOperand trueValue,
+                  MLOperand falseValue,
+                  optional MLOperatorOptions options = {});
 };

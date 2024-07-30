@@ -6,10 +6,24 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLGruOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand initialHiddenState;\n  boolean resetAfter = true;\n  boolean returnSequence = false;\n  MLRecurrentNetworkDirection direction = \"forward\";\n  MLGruWeightLayout layout = \"zrn\";\n  sequence<MLRecurrentNetworkActivation> activations;\n};",
+    "fragment": "dictionary MLGruOptions : MLOperatorOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand initialHiddenState;\n  boolean resetAfter = true;\n  boolean returnSequence = false;\n  MLRecurrentNetworkDirection direction = \"forward\";\n  MLGruWeightLayout layout = \"zrn\";\n  sequence<MLRecurrentNetworkActivation> activations;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgruoptions"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "MLOperatorOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "dictionary MLOperatorOptions {\n  USVString label = \"\";\n};",
+      "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperatoroptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }
