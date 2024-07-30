@@ -5,7 +5,7 @@
   },
   "algorithms": [
     {
-      "html": "The processing model used by a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-conforming-processor\" class=\"internalDFN\" id=\"ref-for-dfn-conforming-processor-2\">conforming processor</a> and its\napplication-specific software is described in this section. When software\nis to ensure information is tamper-evident, it performs the following steps:",
+      "html": "The processing model used by a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-conforming-processor\" class=\"internalDFN\" id=\"ref-for-dfn-conforming-processor-4\">conforming processor</a> and its\napplication-specific software is described in this section. When software\nis to ensure information is tamper-evident, it performs the following steps:",
       "rationale": "if",
       "steps": [
         {
@@ -198,7 +198,7 @@
           "html": "Let <var>contextValue</var> be the value of the <code>@context</code> property of <var>result</var>.<var>document</var>,\nwhich might be undefined."
         },
         {
-          "html": "If <var>contextValue</var> does not deeply equal <var>expectedContext</var>, then if any subtree in\n<var>result</var>.<var>document</var> contains an <code>@context</code> property or any URI in\n<var>contextValue</var> dereferences to a JSON-LD Context file that does not match a\nknown good value or cryptographic hash, then perform the applicable action:",
+          "html": "If <var>contextValue</var> does not deeply equal <var>expectedContext</var>, any subtree in\n<var>result</var>.<var>document</var> contains an <code>@context</code> property, or any URI in\n<var>contextValue</var> dereferences to a JSON-LD Context file that does not match a\nknown good value or cryptographic hash, then perform the applicable action:",
           "rationale": ".algorithm",
           "steps": [
             {
