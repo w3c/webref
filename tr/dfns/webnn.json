@@ -170,6 +170,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "operator-label",
+      "href": "https://www.w3.org/TR/webnn/#operator-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "operator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "programming-model-overview",
+        "href": "https://www.w3.org/TR/webnn/#programming-model-overview",
+        "title": "Overview",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "ml-task-source",
       "href": "https://www.w3.org/TR/webnn/#ml-task-source",
       "linkingText": [
@@ -1500,6 +1521,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "dictdef-mloperatoroptions",
+      "href": "https://www.w3.org/TR/webnn/#dictdef-mloperatoroptions",
+      "linkingText": [
+        "MLOperatorOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mloperand",
+        "href": "https://www.w3.org/TR/webnn/#api-mloperand",
+        "title": "MLOperand interface",
+        "number": "7.6"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-mloperand-builder-slot",
       "href": "https://www.w3.org/TR/webnn/#dom-mloperand-builder-slot",
       "linkingText": [
@@ -1645,6 +1685,27 @@
         "number": "7.6"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "dom-mloperatoroptions-label",
+      "href": "https://www.w3.org/TR/webnn/#dom-mloperatoroptions-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLOperatorOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mloperand",
+        "href": "https://www.w3.org/TR/webnn/#api-mloperand",
+        "title": "MLOperand interface",
+        "number": "7.6"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "create-an-mloperand",
@@ -2522,15 +2583,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-cast-input-type-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cast-input-type-input",
+      "id": "dom-mlgraphbuilder-cast-input-type-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cast-input-type-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/cast(input, type)"
+        "MLGraphBuilder/cast(input, type, options)"
       ],
       "access": "public",
       "informative": false,
@@ -2543,15 +2604,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-cast-input-type-type",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cast-input-type-type",
+      "id": "dom-mlgraphbuilder-cast-input-type-options-type",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cast-input-type-options-type",
       "linkingText": [
         "type"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/cast(input, type)"
+        "MLGraphBuilder/cast(input, type, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-cast",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-cast",
+        "title": "cast",
+        "number": "7.7.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-cast-input-type-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cast-input-type-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/cast(input, type, options)"
       ],
       "access": "public",
       "informative": false,
@@ -2567,6 +2649,7 @@
       "id": "dom-mlgraphbuilder-cast",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cast",
       "linkingText": [
+        "cast(input, type, options)",
         "cast(input, type)"
       ],
       "localLinkingText": [],
@@ -2710,15 +2793,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-concat-inputs-axis-inputs",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-concat-inputs-axis-inputs",
+      "id": "dom-mlgraphbuilder-concat-inputs-axis-options-inputs",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-concat-inputs-axis-options-inputs",
       "linkingText": [
         "inputs"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/concat(inputs, axis)"
+        "MLGraphBuilder/concat(inputs, axis, options)"
       ],
       "access": "public",
       "informative": false,
@@ -2731,15 +2814,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-concat-inputs-axis-axis",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-concat-inputs-axis-axis",
+      "id": "dom-mlgraphbuilder-concat-inputs-axis-options-axis",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-concat-inputs-axis-options-axis",
       "linkingText": [
         "axis"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/concat(inputs, axis)"
+        "MLGraphBuilder/concat(inputs, axis, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-concat",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-concat",
+        "title": "concat",
+        "number": "7.7.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-concat-inputs-axis-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-concat-inputs-axis-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/concat(inputs, axis, options)"
       ],
       "access": "public",
       "informative": false,
@@ -2755,6 +2859,7 @@
       "id": "dom-mlgraphbuilder-concat",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-concat",
       "linkingText": [
+        "concat(inputs, axis, options)",
         "concat(inputs, axis)"
       ],
       "localLinkingText": [],
@@ -3586,21 +3691,21 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-add-a-b-a",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-add-a-b-a",
+      "id": "dom-mlgraphbuilder-add-a-b-options-a",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-add-a-b-options-a",
       "linkingText": [
         "a"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/add(a, b)",
-        "MLGraphBuilder/sub(a, b)",
-        "MLGraphBuilder/mul(a, b)",
-        "MLGraphBuilder/div(a, b)",
-        "MLGraphBuilder/max(a, b)",
-        "MLGraphBuilder/min(a, b)",
-        "MLGraphBuilder/pow(a, b)"
+        "MLGraphBuilder/add(a, b, options)",
+        "MLGraphBuilder/sub(a, b, options)",
+        "MLGraphBuilder/mul(a, b, options)",
+        "MLGraphBuilder/div(a, b, options)",
+        "MLGraphBuilder/max(a, b, options)",
+        "MLGraphBuilder/min(a, b, options)",
+        "MLGraphBuilder/pow(a, b, options)"
       ],
       "access": "public",
       "informative": false,
@@ -3613,21 +3718,48 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-add-a-b-b",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-add-a-b-b",
+      "id": "dom-mlgraphbuilder-add-a-b-options-b",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-add-a-b-options-b",
       "linkingText": [
         "b"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/add(a, b)",
-        "MLGraphBuilder/sub(a, b)",
-        "MLGraphBuilder/mul(a, b)",
-        "MLGraphBuilder/div(a, b)",
-        "MLGraphBuilder/max(a, b)",
-        "MLGraphBuilder/min(a, b)",
-        "MLGraphBuilder/pow(a, b)"
+        "MLGraphBuilder/add(a, b, options)",
+        "MLGraphBuilder/sub(a, b, options)",
+        "MLGraphBuilder/mul(a, b, options)",
+        "MLGraphBuilder/div(a, b, options)",
+        "MLGraphBuilder/max(a, b, options)",
+        "MLGraphBuilder/min(a, b, options)",
+        "MLGraphBuilder/pow(a, b, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-binary",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary",
+        "title": "Element-wise binary operations",
+        "number": "7.7.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-add-a-b-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-add-a-b-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/add(a, b, options)",
+        "MLGraphBuilder/sub(a, b, options)",
+        "MLGraphBuilder/mul(a, b, options)",
+        "MLGraphBuilder/div(a, b, options)",
+        "MLGraphBuilder/max(a, b, options)",
+        "MLGraphBuilder/min(a, b, options)",
+        "MLGraphBuilder/pow(a, b, options)"
       ],
       "access": "public",
       "informative": false,
@@ -3664,6 +3796,7 @@
       "id": "dom-mlgraphbuilder-add",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-add",
       "linkingText": [
+        "add(a, b, options)",
         "add(a, b)"
       ],
       "localLinkingText": [],
@@ -3685,6 +3818,7 @@
       "id": "dom-mlgraphbuilder-sub",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sub",
       "linkingText": [
+        "sub(a, b, options)",
         "sub(a, b)"
       ],
       "localLinkingText": [],
@@ -3706,6 +3840,7 @@
       "id": "dom-mlgraphbuilder-mul",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-mul",
       "linkingText": [
+        "mul(a, b, options)",
         "mul(a, b)"
       ],
       "localLinkingText": [],
@@ -3727,6 +3862,7 @@
       "id": "dom-mlgraphbuilder-div",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-div",
       "linkingText": [
+        "div(a, b, options)",
         "div(a, b)"
       ],
       "localLinkingText": [],
@@ -3748,6 +3884,7 @@
       "id": "dom-mlgraphbuilder-max",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-max",
       "linkingText": [
+        "max(a, b, options)",
         "max(a, b)"
       ],
       "localLinkingText": [],
@@ -3769,6 +3906,7 @@
       "id": "dom-mlgraphbuilder-min",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-min",
       "linkingText": [
+        "min(a, b, options)",
         "min(a, b)"
       ],
       "localLinkingText": [],
@@ -3790,6 +3928,7 @@
       "id": "dom-mlgraphbuilder-pow",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-pow",
       "linkingText": [
+        "pow(a, b, options)",
         "pow(a, b)"
       ],
       "localLinkingText": [],
@@ -3808,20 +3947,20 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-equal-a-b-a",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-equal-a-b-a",
+      "id": "dom-mlgraphbuilder-equal-a-b-options-a",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-equal-a-b-options-a",
       "linkingText": [
         "a"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/equal(a, b)",
-        "MLGraphBuilder/greater(a, b)",
-        "MLGraphBuilder/greaterOrEqual(a, b)",
-        "MLGraphBuilder/lesser(a, b)",
-        "MLGraphBuilder/lesserOrEqual(a, b)",
-        "MLGraphBuilder/logicalNot(a)"
+        "MLGraphBuilder/equal(a, b, options)",
+        "MLGraphBuilder/greater(a, b, options)",
+        "MLGraphBuilder/greaterOrEqual(a, b, options)",
+        "MLGraphBuilder/lesser(a, b, options)",
+        "MLGraphBuilder/lesserOrEqual(a, b, options)",
+        "MLGraphBuilder/logicalNot(a, options)"
       ],
       "access": "public",
       "informative": false,
@@ -3834,20 +3973,46 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-equal-a-b-b",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-equal-a-b-b",
+      "id": "dom-mlgraphbuilder-equal-a-b-options-b",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-equal-a-b-options-b",
       "linkingText": [
         "b"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/equal(a, b)",
-        "MLGraphBuilder/greater(a, b)",
-        "MLGraphBuilder/greaterOrEqual(a, b)",
-        "MLGraphBuilder/lesser(a, b)",
-        "MLGraphBuilder/lesserOrEqual(a, b)",
-        "MLGraphBuilder/logicalNot(a)"
+        "MLGraphBuilder/equal(a, b, options)",
+        "MLGraphBuilder/greater(a, b, options)",
+        "MLGraphBuilder/greaterOrEqual(a, b, options)",
+        "MLGraphBuilder/lesser(a, b, options)",
+        "MLGraphBuilder/lesserOrEqual(a, b, options)",
+        "MLGraphBuilder/logicalNot(a, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-logical",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-logical",
+        "title": "Element-wise logical operations",
+        "number": "7.7.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-equal-a-b-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-equal-a-b-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/equal(a, b, options)",
+        "MLGraphBuilder/greater(a, b, options)",
+        "MLGraphBuilder/greaterOrEqual(a, b, options)",
+        "MLGraphBuilder/lesser(a, b, options)",
+        "MLGraphBuilder/lesserOrEqual(a, b, options)",
+        "MLGraphBuilder/logicalNot(a, options)"
       ],
       "access": "public",
       "informative": false,
@@ -3884,6 +4049,7 @@
       "id": "dom-mlgraphbuilder-equal",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-equal",
       "linkingText": [
+        "equal(a, b, options)",
         "equal(a, b)"
       ],
       "localLinkingText": [],
@@ -3905,6 +4071,7 @@
       "id": "dom-mlgraphbuilder-greater",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-greater",
       "linkingText": [
+        "greater(a, b, options)",
         "greater(a, b)"
       ],
       "localLinkingText": [],
@@ -3926,6 +4093,7 @@
       "id": "dom-mlgraphbuilder-greaterorequal",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-greaterorequal",
       "linkingText": [
+        "greaterOrEqual(a, b, options)",
         "greaterOrEqual(a, b)"
       ],
       "localLinkingText": [],
@@ -3947,6 +4115,7 @@
       "id": "dom-mlgraphbuilder-lesser",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-lesser",
       "linkingText": [
+        "lesser(a, b, options)",
         "lesser(a, b)"
       ],
       "localLinkingText": [],
@@ -3968,6 +4137,7 @@
       "id": "dom-mlgraphbuilder-lesserorequal",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-lesserorequal",
       "linkingText": [
+        "lesserOrEqual(a, b, options)",
         "lesserOrEqual(a, b)"
       ],
       "localLinkingText": [],
@@ -3989,6 +4159,7 @@
       "id": "dom-mlgraphbuilder-logicalnot",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-logicalnot",
       "linkingText": [
+        "logicalNot(a, options)",
         "logicalNot(a)"
       ],
       "localLinkingText": [],
@@ -4007,27 +4178,60 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-abs-input-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-abs-input-input",
+      "id": "dom-mlgraphbuilder-abs-input-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-abs-input-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/abs(input)",
-        "MLGraphBuilder/ceil(input)",
-        "MLGraphBuilder/cos(input)",
-        "MLGraphBuilder/erf(input)",
-        "MLGraphBuilder/exp(input)",
-        "MLGraphBuilder/floor(input)",
-        "MLGraphBuilder/identity(input)",
-        "MLGraphBuilder/log(input)",
-        "MLGraphBuilder/neg(input)",
-        "MLGraphBuilder/reciprocal(input)",
-        "MLGraphBuilder/sin(input)",
-        "MLGraphBuilder/sqrt(input)",
-        "MLGraphBuilder/tan(input)"
+        "MLGraphBuilder/abs(input, options)",
+        "MLGraphBuilder/ceil(input, options)",
+        "MLGraphBuilder/cos(input, options)",
+        "MLGraphBuilder/erf(input, options)",
+        "MLGraphBuilder/exp(input, options)",
+        "MLGraphBuilder/floor(input, options)",
+        "MLGraphBuilder/identity(input, options)",
+        "MLGraphBuilder/log(input, options)",
+        "MLGraphBuilder/neg(input, options)",
+        "MLGraphBuilder/reciprocal(input, options)",
+        "MLGraphBuilder/sin(input, options)",
+        "MLGraphBuilder/sqrt(input, options)",
+        "MLGraphBuilder/tan(input, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-unary",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-unary",
+        "title": "Element-wise unary operations",
+        "number": "7.7.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-abs-input-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-abs-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/abs(input, options)",
+        "MLGraphBuilder/ceil(input, options)",
+        "MLGraphBuilder/cos(input, options)",
+        "MLGraphBuilder/erf(input, options)",
+        "MLGraphBuilder/exp(input, options)",
+        "MLGraphBuilder/floor(input, options)",
+        "MLGraphBuilder/identity(input, options)",
+        "MLGraphBuilder/log(input, options)",
+        "MLGraphBuilder/neg(input, options)",
+        "MLGraphBuilder/reciprocal(input, options)",
+        "MLGraphBuilder/sin(input, options)",
+        "MLGraphBuilder/sqrt(input, options)",
+        "MLGraphBuilder/tan(input, options)"
       ],
       "access": "public",
       "informative": false,
@@ -4064,6 +4268,7 @@
       "id": "dom-mlgraphbuilder-abs",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-abs",
       "linkingText": [
+        "abs(input, options)",
         "abs(input)"
       ],
       "localLinkingText": [],
@@ -4085,6 +4290,7 @@
       "id": "dom-mlgraphbuilder-ceil",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-ceil",
       "linkingText": [
+        "ceil(input, options)",
         "ceil(input)"
       ],
       "localLinkingText": [],
@@ -4106,6 +4312,7 @@
       "id": "dom-mlgraphbuilder-cos",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cos",
       "linkingText": [
+        "cos(input, options)",
         "cos(input)"
       ],
       "localLinkingText": [],
@@ -4127,6 +4334,7 @@
       "id": "dom-mlgraphbuilder-erf",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-erf",
       "linkingText": [
+        "erf(input, options)",
         "erf(input)"
       ],
       "localLinkingText": [],
@@ -4148,6 +4356,7 @@
       "id": "dom-mlgraphbuilder-exp",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-exp",
       "linkingText": [
+        "exp(input, options)",
         "exp(input)"
       ],
       "localLinkingText": [],
@@ -4169,6 +4378,7 @@
       "id": "dom-mlgraphbuilder-floor",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-floor",
       "linkingText": [
+        "floor(input, options)",
         "floor(input)"
       ],
       "localLinkingText": [],
@@ -4190,6 +4400,7 @@
       "id": "dom-mlgraphbuilder-identity",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-identity",
       "linkingText": [
+        "identity(input, options)",
         "identity(input)"
       ],
       "localLinkingText": [],
@@ -4211,6 +4422,7 @@
       "id": "dom-mlgraphbuilder-log",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-log",
       "linkingText": [
+        "log(input, options)",
         "log(input)"
       ],
       "localLinkingText": [],
@@ -4232,6 +4444,7 @@
       "id": "dom-mlgraphbuilder-neg",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-neg",
       "linkingText": [
+        "neg(input, options)",
         "neg(input)"
       ],
       "localLinkingText": [],
@@ -4253,6 +4466,7 @@
       "id": "dom-mlgraphbuilder-reciprocal",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reciprocal",
       "linkingText": [
+        "reciprocal(input, options)",
         "reciprocal(input)"
       ],
       "localLinkingText": [],
@@ -4274,6 +4488,7 @@
       "id": "dom-mlgraphbuilder-sin",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sin",
       "linkingText": [
+        "sin(input, options)",
         "sin(input)"
       ],
       "localLinkingText": [],
@@ -4295,6 +4510,7 @@
       "id": "dom-mlgraphbuilder-sqrt",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sqrt",
       "linkingText": [
+        "sqrt(input, options)",
         "sqrt(input)"
       ],
       "localLinkingText": [],
@@ -4316,6 +4532,7 @@
       "id": "dom-mlgraphbuilder-tan",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-tan",
       "linkingText": [
+        "tan(input, options)",
         "tan(input)"
       ],
       "localLinkingText": [],
@@ -4438,15 +4655,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-expand-input-newshape-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-expand-input-newshape-input",
+      "id": "dom-mlgraphbuilder-expand-input-newshape-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-expand-input-newshape-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/expand(input, newShape)"
+        "MLGraphBuilder/expand(input, newShape, options)"
       ],
       "access": "public",
       "informative": false,
@@ -4459,15 +4676,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-expand-input-newshape-newshape",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-expand-input-newshape-newshape",
+      "id": "dom-mlgraphbuilder-expand-input-newshape-options-newshape",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-expand-input-newshape-options-newshape",
       "linkingText": [
         "newShape"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/expand(input, newShape)"
+        "MLGraphBuilder/expand(input, newShape, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-expand",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-expand",
+        "title": "expand",
+        "number": "7.7.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-expand-input-newshape-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-expand-input-newshape-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/expand(input, newShape, options)"
       ],
       "access": "public",
       "informative": false,
@@ -4483,6 +4721,7 @@
       "id": "dom-mlgraphbuilder-expand",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-expand",
       "linkingText": [
+        "expand(input, newShape, options)",
         "expand(input, newShape)"
       ],
       "localLinkingText": [],
@@ -4626,15 +4865,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-gelu-input-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-gelu-input-input",
+      "id": "dom-mlgraphbuilder-gelu-input-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-gelu-input-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/gelu(input)"
+        "MLGraphBuilder/gelu(input, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-gelu-method",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gelu-method",
+        "title": "gelu",
+        "number": "7.7.18"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-gelu-input-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-gelu-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/gelu(input, options)"
       ],
       "access": "public",
       "informative": false,
@@ -4650,6 +4910,7 @@
       "id": "dom-mlgraphbuilder-gelu",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-gelu",
       "linkingText": [
+        "gelu(input, options)",
         "gelu(input)"
       ],
       "localLinkingText": [],
@@ -5834,15 +6095,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-hardswish-input-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-hardswish-input-input",
+      "id": "dom-mlgraphbuilder-hardswish-input-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-hardswish-input-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/hardSwish(input)"
+        "MLGraphBuilder/hardSwish(input, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-hard-swish",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-swish",
+        "title": "hardSwish",
+        "number": "7.7.23"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-hardswish-input-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-hardswish-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/hardSwish(input, options)"
       ],
       "access": "public",
       "informative": false,
@@ -5858,6 +6140,7 @@
       "id": "dom-mlgraphbuilder-hardswish",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-hardswish",
       "linkingText": [
+        "hardSwish(input, options)",
         "hardSwish(input)"
       ],
       "localLinkingText": [],
@@ -7149,15 +7432,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-matmul-a-b-a",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-matmul-a-b-a",
+      "id": "dom-mlgraphbuilder-matmul-a-b-options-a",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-matmul-a-b-options-a",
       "linkingText": [
         "a"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/matmul(a, b)"
+        "MLGraphBuilder/matmul(a, b, options)"
       ],
       "access": "public",
       "informative": false,
@@ -7170,15 +7453,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-matmul-a-b-b",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-matmul-a-b-b",
+      "id": "dom-mlgraphbuilder-matmul-a-b-options-b",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-matmul-a-b-options-b",
       "linkingText": [
         "b"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/matmul(a, b)"
+        "MLGraphBuilder/matmul(a, b, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-matmul",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-matmul",
+        "title": "matmul",
+        "number": "7.7.30"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-matmul-a-b-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-matmul-a-b-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/matmul(a, b, options)"
       ],
       "access": "public",
       "informative": false,
@@ -7215,6 +7519,7 @@
       "id": "dom-mlgraphbuilder-matmul",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-matmul",
       "linkingText": [
+        "matmul(a, b, options)",
         "matmul(a, b)"
       ],
       "localLinkingText": [],
@@ -7905,15 +8210,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-prelu-input-slope-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-prelu-input-slope-input",
+      "id": "dom-mlgraphbuilder-prelu-input-slope-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-prelu-input-slope-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/prelu(input, slope)"
+        "MLGraphBuilder/prelu(input, slope, options)"
       ],
       "access": "public",
       "informative": false,
@@ -7926,15 +8231,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-prelu-input-slope-slope",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-prelu-input-slope-slope",
+      "id": "dom-mlgraphbuilder-prelu-input-slope-options-slope",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-prelu-input-slope-options-slope",
       "linkingText": [
         "slope"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/prelu(input, slope)"
+        "MLGraphBuilder/prelu(input, slope, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-prelu",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu",
+        "title": "prelu",
+        "number": "7.7.33"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-prelu-input-slope-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-prelu-input-slope-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/prelu(input, slope, options)"
       ],
       "access": "public",
       "informative": false,
@@ -7950,6 +8276,7 @@
       "id": "dom-mlgraphbuilder-prelu",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-prelu",
       "linkingText": [
+        "prelu(input, slope, options)",
         "prelu(input, slope)"
       ],
       "localLinkingText": [],
@@ -8110,10 +8437,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "mlgraphbuilder-reduce-op",
-      "href": "https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op",
+      "id": "mlgraphbuilder-create-reduction-operation",
+      "href": "https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation",
       "linkingText": [
-        "reduce-op"
+        "create reduction operation"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8351,15 +8678,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-relu-input-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-relu-input-input",
+      "id": "dom-mlgraphbuilder-relu-input-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-relu-input-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/relu(input)"
+        "MLGraphBuilder/relu(input, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-relu-method",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-relu-method",
+        "title": "relu",
+        "number": "7.7.35"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-relu-input-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-relu-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/relu(input, options)"
       ],
       "access": "public",
       "informative": false,
@@ -8375,6 +8723,7 @@
       "id": "dom-mlgraphbuilder-relu",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-relu",
       "linkingText": [
+        "relu(input, options)",
         "relu(input)"
       ],
       "localLinkingText": [],
@@ -8663,15 +9012,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-reshape-input-newshape-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reshape-input-newshape-input",
+      "id": "dom-mlgraphbuilder-reshape-input-newshape-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reshape-input-newshape-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/reshape(input, newShape)"
+        "MLGraphBuilder/reshape(input, newShape, options)"
       ],
       "access": "public",
       "informative": false,
@@ -8684,15 +9033,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-reshape-input-newshape-newshape",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reshape-input-newshape-newshape",
+      "id": "dom-mlgraphbuilder-reshape-input-newshape-options-newshape",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reshape-input-newshape-options-newshape",
       "linkingText": [
         "newShape"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/reshape(input, newShape)"
+        "MLGraphBuilder/reshape(input, newShape, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-reshape-method",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reshape-method",
+        "title": "reshape",
+        "number": "7.7.37"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-reshape-input-newshape-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reshape-input-newshape-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/reshape(input, newShape, options)"
       ],
       "access": "public",
       "informative": false,
@@ -8708,6 +9078,7 @@
       "id": "dom-mlgraphbuilder-reshape",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reshape",
       "linkingText": [
+        "reshape(input, newShape, options)",
         "reshape(input, newShape)"
       ],
       "localLinkingText": [],
@@ -8726,15 +9097,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-sigmoid-input-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sigmoid-input-input",
+      "id": "dom-mlgraphbuilder-sigmoid-input-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sigmoid-input-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/sigmoid(input)"
+        "MLGraphBuilder/sigmoid(input, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-sigmoid-method",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-sigmoid-method",
+        "title": "sigmoid",
+        "number": "7.7.38"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-sigmoid-input-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sigmoid-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/sigmoid(input, options)"
       ],
       "access": "public",
       "informative": false,
@@ -8750,6 +9142,7 @@
       "id": "dom-mlgraphbuilder-sigmoid",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sigmoid",
       "linkingText": [
+        "sigmoid(input, options)",
         "sigmoid(input)"
       ],
       "localLinkingText": [],
@@ -8768,15 +9161,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-input",
+      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/slice(input, starts, sizes)"
+        "MLGraphBuilder/slice(input, starts, sizes, options)"
       ],
       "access": "public",
       "informative": false,
@@ -8789,15 +9182,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-starts",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-starts",
+      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-options-starts",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-options-starts",
       "linkingText": [
         "starts"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/slice(input, starts, sizes)"
+        "MLGraphBuilder/slice(input, starts, sizes, options)"
       ],
       "access": "public",
       "informative": false,
@@ -8810,15 +9203,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-sizes",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-sizes",
+      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-options-sizes",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-options-sizes",
       "linkingText": [
         "sizes"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/slice(input, starts, sizes)"
+        "MLGraphBuilder/slice(input, starts, sizes, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-slice",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-slice",
+        "title": "slice",
+        "number": "7.7.39"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/slice(input, starts, sizes, options)"
       ],
       "access": "public",
       "informative": false,
@@ -8834,6 +9248,7 @@
       "id": "dom-mlgraphbuilder-slice",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-slice",
       "linkingText": [
+        "slice(input, starts, sizes, options)",
         "slice(input, starts, sizes)"
       ],
       "localLinkingText": [],
@@ -8852,15 +9267,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-softmax-input-axis-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax-input-axis-input",
+      "id": "dom-mlgraphbuilder-softmax-input-axis-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax-input-axis-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/softmax(input, axis)"
+        "MLGraphBuilder/softmax(input, axis, options)"
       ],
       "access": "public",
       "informative": false,
@@ -8873,15 +9288,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-softmax-input-axis-axis",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax-input-axis-axis",
+      "id": "dom-mlgraphbuilder-softmax-input-axis-options-axis",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax-input-axis-options-axis",
       "linkingText": [
         "axis"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/softmax(input, axis)"
+        "MLGraphBuilder/softmax(input, axis, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-softmax-method",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-method",
+        "title": "softmax",
+        "number": "7.7.40"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-softmax-input-axis-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax-input-axis-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/softmax(input, axis, options)"
       ],
       "access": "public",
       "informative": false,
@@ -8897,6 +9333,7 @@
       "id": "dom-mlgraphbuilder-softmax",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax",
       "linkingText": [
+        "softmax(input, axis, options)",
         "softmax(input, axis)"
       ],
       "localLinkingText": [],
@@ -8915,15 +9352,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-softplus-input-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softplus-input-input",
+      "id": "dom-mlgraphbuilder-softplus-input-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softplus-input-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/softplus(input)"
+        "MLGraphBuilder/softplus(input, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-softplus-method",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softplus-method",
+        "title": "softplus",
+        "number": "7.7.41"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-softplus-input-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softplus-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/softplus(input, options)"
       ],
       "access": "public",
       "informative": false,
@@ -8939,6 +9397,7 @@
       "id": "dom-mlgraphbuilder-softplus",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softplus",
       "linkingText": [
+        "softplus(input, options)",
         "softplus(input)"
       ],
       "localLinkingText": [],
@@ -8957,15 +9416,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-softsign-input-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softsign-input-input",
+      "id": "dom-mlgraphbuilder-softsign-input-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softsign-input-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/softsign(input)"
+        "MLGraphBuilder/softsign(input, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-softsign-method",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softsign-method",
+        "title": "softsign",
+        "number": "7.7.42"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-softsign-input-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softsign-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/softsign(input, options)"
       ],
       "access": "public",
       "informative": false,
@@ -8981,6 +9461,7 @@
       "id": "dom-mlgraphbuilder-softsign",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softsign",
       "linkingText": [
+        "softsign(input, options)",
         "softsign(input)"
       ],
       "localLinkingText": [],
@@ -9124,15 +9605,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-tanh-input-input",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-tanh-input-input",
+      "id": "dom-mlgraphbuilder-tanh-input-options-input",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-tanh-input-options-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/tanh(input)"
+        "MLGraphBuilder/tanh(input, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-tanh-method",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-tanh-method",
+        "title": "tanh",
+        "number": "7.7.44"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-tanh-input-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-tanh-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/tanh(input, options)"
       ],
       "access": "public",
       "informative": false,
@@ -9148,6 +9650,7 @@
       "id": "dom-mlgraphbuilder-tanh",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-tanh",
       "linkingText": [
+        "tanh(input, options)",
         "tanh(input)"
       ],
       "localLinkingText": [],
@@ -9395,15 +9898,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-where-condition-truevalue-falsevalue-condition",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-where-condition-truevalue-falsevalue-condition",
+      "id": "dom-mlgraphbuilder-where-condition-truevalue-falsevalue-options-condition",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-where-condition-truevalue-falsevalue-options-condition",
       "linkingText": [
         "condition"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/where(condition, trueValue, falseValue)"
+        "MLGraphBuilder/where(condition, trueValue, falseValue, options)"
       ],
       "access": "public",
       "informative": false,
@@ -9416,15 +9919,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-where-condition-truevalue-falsevalue-truevalue",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-where-condition-truevalue-falsevalue-truevalue",
+      "id": "dom-mlgraphbuilder-where-condition-truevalue-falsevalue-options-truevalue",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-where-condition-truevalue-falsevalue-options-truevalue",
       "linkingText": [
         "trueValue"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/where(condition, trueValue, falseValue)"
+        "MLGraphBuilder/where(condition, trueValue, falseValue, options)"
       ],
       "access": "public",
       "informative": false,
@@ -9437,15 +9940,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mlgraphbuilder-where-condition-truevalue-falsevalue-falsevalue",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-where-condition-truevalue-falsevalue-falsevalue",
+      "id": "dom-mlgraphbuilder-where-condition-truevalue-falsevalue-options-falsevalue",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-where-condition-truevalue-falsevalue-options-falsevalue",
       "linkingText": [
         "falseValue"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/where(condition, trueValue, falseValue)"
+        "MLGraphBuilder/where(condition, trueValue, falseValue, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-where",
+        "href": "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
+        "title": "where",
+        "number": "7.7.47"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mlgraphbuilder-where-condition-truevalue-falsevalue-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-where-condition-truevalue-falsevalue-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/where(condition, trueValue, falseValue, options)"
       ],
       "access": "public",
       "informative": false,
@@ -9461,6 +9985,7 @@
       "id": "dom-mlgraphbuilder-where",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-where",
       "linkingText": [
+        "where(condition, trueValue, falseValue, options)",
         "where(condition, trueValue, falseValue)"
       ],
       "localLinkingText": [],

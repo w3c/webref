@@ -392,7 +392,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>operand</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#mloperand\" id=\"ref-for-mloperand③⓪\">MLOperand</a></code>.</p>"
+          "html": "<p>Let <var>operand</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#mloperand\" id=\"ref-for-mloperand③①\">MLOperand</a></code>.</p>"
         },
         {
           "html": "<p>Set <var>operand</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-builder-slot\" id=\"ref-for-dom-mloperand-builder-slot①\">[[builder]]</a></code> to <var>builder</var>.</p>"
@@ -411,7 +411,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#mloperand\" id=\"ref-for-mloperand③②\">MLOperand</a></code>.</p>"
+          "html": "<p>Let <var>result</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#mloperand\" id=\"ref-for-mloperand③③\">MLOperand</a></code>.</p>"
         },
         {
           "html": "<p>Set <var>result</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-builder-slot\" id=\"ref-for-dom-mloperand-builder-slot②\">[[builder]]</a></code> to <var>operand</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-builder-slot\" id=\"ref-for-dom-mloperand-builder-slot③\">[[builder]]</a></code>.</p>"
@@ -475,7 +475,7 @@
           "html": "<p>If <var>name</var> is empty, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If any <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#mloperand\" id=\"ref-for-mloperand④④\">MLOperand</a></code>s in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-graph\" id=\"ref-for-mlgraphbuilder-graph\">graph</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#computational-graph-input\" id=\"ref-for-computational-graph-input\">inputs</a> have a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-name-slot\" id=\"ref-for-dom-mloperand-name-slot③\">[[name]]</a></code> equal to <var>name</var>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑨\">TypeError</a></code>.</p>"
+          "html": "<p>If any <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#mloperand\" id=\"ref-for-mloperand④⑤\">MLOperand</a></code>s in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-graph\" id=\"ref-for-mlgraphbuilder-graph\">graph</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#computational-graph-input\" id=\"ref-for-computational-graph-input\">inputs</a> have a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-name-slot\" id=\"ref-for-dom-mloperand-name-slot③\">[[name]]</a></code> equal to <var>name</var>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑨\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperanddescriptor-check-dimensions\" id=\"ref-for-mloperanddescriptor-check-dimensions\">checking dimensions</a> given <var>descriptor</var> returns false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⓪\">TypeError</a></code>.</p>"
@@ -668,7 +668,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>graphImpl</var> be the result of converting <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-graph\" id=\"ref-for-mlgraphbuilder-graph⑦\">graph</a> with <var>operands</var>, <var>operators</var>, <var>inputs</var>, and <var>outputs</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values①\">values</a> into an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> format which can be interpreted by the underlying platform.",
+              "html": "Let <var>graphImpl</var> be the result of converting <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-graph\" id=\"ref-for-mlgraphbuilder-graph⑦\">graph</a> with <var>operands</var>, <var>operators</var>, <var>inputs</var>, and <var>outputs</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values①\">values</a> into an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> format which can be interpreted by the underlying platform.",
               "rationale": "if",
               "steps": [
                 {
@@ -720,7 +720,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators⑧\">operator</a> for the <var>op</var> operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①②\">operator</a> for the <var>op</var> operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand③\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a> and <var>desc</var>.</p>"
@@ -842,7 +842,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators⑨\">operator</a> for the \"batchNormalization\" operation, given <var>input</var>, <var>mean</var>, <var>variance</var> and <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①③\">operator</a> for the \"batchNormalization\" operation, given <var>input</var>, <var>mean</var>, <var>variance</var> and <var>options</var>.</p>"
             },
             {
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand④\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a> and <var>input</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-descriptor-slot\" id=\"ref-for-dom-mloperand-descriptor-slot⑦\">[[descriptor]]</a></code>.</p>"
@@ -870,7 +870,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/cast(input, type)",
+      "name": "MLGraphBuilder/cast(input, type, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cast",
       "rationale": ".algorithm",
       "steps": [
@@ -885,7 +885,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⓪\">operator</a> for the \"cast\" operation, given <var>type</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①④\">operator</a> for the \"cast\" operation, given <var>type</var> and <var>options</var>.</p>"
             },
             {
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand\">copying an MLOperand</a> given <var>input</var>.</p>"
@@ -940,7 +940,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand①\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①①\">operator</a> for the \"clamp\" operation, given <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlclampoptions-minvalue\" id=\"ref-for-dom-mlclampoptions-minvalue④\">minValue</a></code> and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlclampoptions-maxvalue\" id=\"ref-for-dom-mlclampoptions-maxvalue④\">maxValue</a></code>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑤\">operator</a> for the \"clamp\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot⑤\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -959,7 +959,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/concat(inputs, axis)",
+      "name": "MLGraphBuilder/concat(inputs, axis, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-concat",
       "rationale": ".algorithm",
       "steps": [
@@ -1031,7 +1031,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand⑤\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④③\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①②\">operator</a> for the \"concat\" operation, given <var>inputs</var> and <var>axis</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑥\">operator</a> for the \"concat\" operation, given <var>inputs</var>, <var>axis</var>, and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot⑥\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -1333,7 +1333,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand⑥\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①③\">operator</a> for the \"conv2d\" operation, given <var>options</var> and <var>filter</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑦\">operator</a> for the \"conv2d\" operation, given <var>options</var> and <var>filter</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot⑦\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -1646,7 +1646,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand⑦\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑨\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①④\">operator</a> for the \"convTranspose2d\" operation, given <var>options</var> and <var>filter</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑧\">operator</a> for the \"convTranspose2d\" operation, given <var>options</var> and <var>filter</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot⑧\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -1704,7 +1704,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand⑧\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤②\">this</a> and <var>descriptor</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑤\">operator</a> for the <var>op</var> operation, given <var>a</var> and <var>b</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑨\">operator</a> for the <var>op</var> operation, given <var>a</var>, <var>b</var>, and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot⑨\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -1723,13 +1723,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/add(a, b)",
+      "name": "MLGraphBuilder/add(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-add",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-add\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>add(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"add(a, b, options)|add(a, b)\" id=\"dom-mlgraphbuilder-add\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>add(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op①\"> create element-wise binary operation</a> given \"add\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op①\"> create element-wise binary operation</a> given \"add\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -1743,13 +1743,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/sub(a, b)",
+      "name": "MLGraphBuilder/sub(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sub",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-sub\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>sub(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"sub(a, b, options)|sub(a, b)\" id=\"dom-mlgraphbuilder-sub\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>sub(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op②\"> create element-wise binary operation</a> given \"sub\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op②\"> create element-wise binary operation</a> given \"sub\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -1763,13 +1763,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/mul(a, b)",
+      "name": "MLGraphBuilder/mul(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-mul",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-mul\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>mul(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"mul(a, b, options)|mul(a, b)\" id=\"dom-mlgraphbuilder-mul\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>mul(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op③\"> create element-wise binary operation</a> given \"mul\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op③\"> create element-wise binary operation</a> given \"mul\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -1783,13 +1783,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/div(a, b)",
+      "name": "MLGraphBuilder/div(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-div",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-div\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>div(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"div(a, b, options)|div(a, b)\" id=\"dom-mlgraphbuilder-div\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>div(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op④\"> create element-wise binary operation</a> given \"div\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op④\"> create element-wise binary operation</a> given \"div\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -1803,13 +1803,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/max(a, b)",
+      "name": "MLGraphBuilder/max(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-max",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-max\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>max(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"max(a, b, options)|max(a, b)\" id=\"dom-mlgraphbuilder-max\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>max(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op⑤\"> create element-wise binary operation</a> given \"max\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op⑤\"> create element-wise binary operation</a> given \"max\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -1823,13 +1823,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/min(a, b)",
+      "name": "MLGraphBuilder/min(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-min",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-min\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>min(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"min(a, b, options)|min(a, b)\" id=\"dom-mlgraphbuilder-min\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>min(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op⑥\"> create element-wise binary operation</a> given \"min\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op⑥\"> create element-wise binary operation</a> given \"min\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -1843,13 +1843,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/pow(a, b)",
+      "name": "MLGraphBuilder/pow(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-pow",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-pow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>pow(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"pow(a, b, options)|pow(a, b)\" id=\"dom-mlgraphbuilder-pow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>pow(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op⑦\"> create element-wise binary operation</a> given \"pow\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-binary-op\" id=\"ref-for-mlgraphbuilder-element-wise-binary-op⑦\"> create element-wise binary operation</a> given \"pow\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -1914,7 +1914,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand⑨\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑥\">this</a> and <var>descriptor</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑥\">operator</a> for the <var>op</var> operation, given <var>a</var> and (if <var>op</var> is not \"logicalNot\") <var>b</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⓪\">operator</a> for the <var>op</var> operation, given <var>a</var> and (if <var>op</var> is not \"logicalNot\") <var>b</var>, and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot①⓪\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -1933,13 +1933,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/equal(a, b)",
+      "name": "MLGraphBuilder/equal(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-equal",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-equal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>equal(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"equal(a, b, options)|equal(a, b)\" id=\"dom-mlgraphbuilder-equal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>equal(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op①\"> create element-wise logical operation</a> given \"equal\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op①\"> create element-wise logical operation</a> given \"equal\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -1953,13 +1953,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/greater(a, b)",
+      "name": "MLGraphBuilder/greater(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-greater",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-greater\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>greater(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"greater(a, b, options)|greater(a, b)\" id=\"dom-mlgraphbuilder-greater\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>greater(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op②\"> create element-wise logical operation</a> given \"greater\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op②\"> create element-wise logical operation</a> given \"greater\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -1973,13 +1973,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/greaterOrEqual(a, b)",
+      "name": "MLGraphBuilder/greaterOrEqual(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-greaterorequal",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-greaterorequal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>greaterOrEqual(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"greaterOrEqual(a, b, options)|greaterOrEqual(a, b)\" id=\"dom-mlgraphbuilder-greaterorequal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>greaterOrEqual(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op③\"> create element-wise logical operation</a> given \"greaterOrEqual\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op③\"> create element-wise logical operation</a> given \"greaterOrEqual\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -1993,13 +1993,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/lesser(a, b)",
+      "name": "MLGraphBuilder/lesser(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-lesser",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-lesser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>lesser(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"lesser(a, b, options)|lesser(a, b)\" id=\"dom-mlgraphbuilder-lesser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>lesser(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op④\"> create element-wise logical operation</a> given \"lesser\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op④\"> create element-wise logical operation</a> given \"lesser\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2013,13 +2013,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/lesserOrEqual(a, b)",
+      "name": "MLGraphBuilder/lesserOrEqual(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-lesserorequal",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-lesserorequal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>lesserOrEqual(<var>a</var>, <var>b</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"lesserOrEqual(a, b, options)|lesserOrEqual(a, b)\" id=\"dom-mlgraphbuilder-lesserorequal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>lesserOrEqual(<var>a</var>, <var>b</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op⑤\"> create element-wise logical operation</a> given \"lesserOrEqual\", <var>a</var> and <var>b</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op⑤\"> create element-wise logical operation</a> given \"lesserOrEqual\", <var>a</var>, <var>b</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2033,13 +2033,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/logicalNot(a)",
+      "name": "MLGraphBuilder/logicalNot(a, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-logicalnot",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-logicalnot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>logicalNot(<var>a</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"logicalNot(a, options)|logicalNot(a)\" id=\"dom-mlgraphbuilder-logicalnot\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>logicalNot(<var>a</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op⑥\"> create element-wise logical operation</a> given \"logicalNot\" and <var>a</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-logical-op\" id=\"ref-for-mlgraphbuilder-element-wise-logical-op⑥\"> create element-wise logical operation</a> given \"logicalNot\", <var>a</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2077,7 +2077,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand②\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑦\">operator</a> for the <var>op</var> operation.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②①\">operator</a> for the <var>op</var> operation given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot①①\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -2096,13 +2096,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/abs(input)",
+      "name": "MLGraphBuilder/abs(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-abs",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-abs\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>abs(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"abs(input, options)|abs(input)\" id=\"dom-mlgraphbuilder-abs\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>abs(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op①\"> create element-wise unary operation</a> given \"abs\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32⑦\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16⑤\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32②\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int8\" id=\"ref-for-dom-mloperanddatatype-int8④\">\"int8\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op①\"> create element-wise unary operation</a> given \"abs\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32⑦\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16⑤\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32②\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int8\" id=\"ref-for-dom-mloperanddatatype-int8④\">\"int8\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2116,13 +2116,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/ceil(input)",
+      "name": "MLGraphBuilder/ceil(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-ceil",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-ceil\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>ceil(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"ceil(input, options)|ceil(input)\" id=\"dom-mlgraphbuilder-ceil\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>ceil(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op②\"> create element-wise unary operation</a> given \"ceil\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32⑧\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16⑥\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op②\"> create element-wise unary operation</a> given \"ceil\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32⑧\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16⑥\">\"float16\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2136,13 +2136,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/cos(input)",
+      "name": "MLGraphBuilder/cos(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cos",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-cos\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>cos(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"cos(input, options)|cos(input)\" id=\"dom-mlgraphbuilder-cos\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>cos(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op③\"> create element-wise unary operation</a> given \"cos\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32⑨\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16⑦\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op③\"> create element-wise unary operation</a> given \"cos\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32⑨\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16⑦\">\"float16\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2156,13 +2156,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/erf(input)",
+      "name": "MLGraphBuilder/erf(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-erf",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-erf\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>erf(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"erf(input, options)|erf(input)\" id=\"dom-mlgraphbuilder-erf\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>erf(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op④\"> create element-wise unary operation</a> given \"erf\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①⓪\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16⑧\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op④\"> create element-wise unary operation</a> given \"erf\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①⓪\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16⑧\">\"float16\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2176,13 +2176,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/exp(input)",
+      "name": "MLGraphBuilder/exp(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-exp",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-exp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>exp(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"exp(input, options)|exp(input)\" id=\"dom-mlgraphbuilder-exp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>exp(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op⑤\"> create element-wise unary operation</a> given \"exp\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①①\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16⑨\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op⑤\"> create element-wise unary operation</a> given \"exp\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①①\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16⑨\">\"float16\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2196,13 +2196,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/floor(input)",
+      "name": "MLGraphBuilder/floor(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-floor",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-floor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>floor(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"floor(input, options)|floor(input)\" id=\"dom-mlgraphbuilder-floor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>floor(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op⑥\"> create element-wise unary operation</a> given \"floor\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①②\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①⓪\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op⑥\"> create element-wise unary operation</a> given \"floor\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①②\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①⓪\">\"float16\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2216,13 +2216,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/identity(input)",
+      "name": "MLGraphBuilder/identity(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-identity",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-identity\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>identity(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"identity(input, options)|identity(input)\" id=\"dom-mlgraphbuilder-identity\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>identity(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op⑦\"> create element-wise unary operation</a> given \"identity\" and <var>input</var>.",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op⑦\"> create element-wise unary operation</a> given \"identity\" <var>input</var>, and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2236,13 +2236,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/log(input)",
+      "name": "MLGraphBuilder/log(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-log",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-log\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>log(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"log(input, options)|log(input)\" id=\"dom-mlgraphbuilder-log\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>log(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op⑧\"> create element-wise unary operation</a> given \"log\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①③\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①①\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op⑧\"> create element-wise unary operation</a> given \"log\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①③\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①①\">\"float16\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2256,13 +2256,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/neg(input)",
+      "name": "MLGraphBuilder/neg(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-neg",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-neg\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>neg(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"neg(input, options)|neg(input)\" id=\"dom-mlgraphbuilder-neg\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>neg(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op⑨\"> create element-wise unary operation</a> given \"neg\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①④\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①②\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32③\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int8\" id=\"ref-for-dom-mloperanddatatype-int8⑤\">\"int8\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op⑨\"> create element-wise unary operation</a> given \"neg\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①④\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①②\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32③\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int8\" id=\"ref-for-dom-mloperanddatatype-int8⑤\">\"int8\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2276,13 +2276,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/reciprocal(input)",
+      "name": "MLGraphBuilder/reciprocal(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reciprocal",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-reciprocal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>reciprocal(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"reciprocal(input, options)|reciprocal(input)\" id=\"dom-mlgraphbuilder-reciprocal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>reciprocal(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op①⓪\"> create element-wise unary operation</a> given \"reciprocal\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①⑤\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①③\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op①⓪\"> create element-wise unary operation</a> given \"reciprocal\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①⑤\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①③\">\"float16\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2296,13 +2296,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/sin(input)",
+      "name": "MLGraphBuilder/sin(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sin",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-sin\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>sin(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"sin(input, options)|sin(input)\" id=\"dom-mlgraphbuilder-sin\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>sin(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op①①\"> create element-wise unary operation</a> given \"sin\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①⑥\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①④\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op①①\"> create element-wise unary operation</a> given \"sin\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①⑥\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①④\">\"float16\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2316,13 +2316,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/sqrt(input)",
+      "name": "MLGraphBuilder/sqrt(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sqrt",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-sqrt\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>sqrt(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"sqrt(input, options)|sqrt(input)\" id=\"dom-mlgraphbuilder-sqrt\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>sqrt(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op①②\"> create element-wise unary operation</a> given \"sqrt\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①⑦\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①⑤\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op①②\"> create element-wise unary operation</a> given \"sqrt\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①⑦\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①⑤\">\"float16\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2336,13 +2336,13 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/tan(input)",
+      "name": "MLGraphBuilder/tan(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-tan",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mlgraphbuilder-tan\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>tan(<var>input</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MLGraphBuilder\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"tan(input, options)|tan(input)\" id=\"dom-mlgraphbuilder-tan\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>tan(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op①③\"> create element-wise unary operation</a> given \"tan\", <var>input</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①⑧\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①⑥\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-element-wise-unary-op\" id=\"ref-for-mlgraphbuilder-element-wise-unary-op①③\"> create element-wise unary operation</a> given \"tan\", <var>input</var>, « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32①⑧\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16①⑥\">\"float16\"</a></code> », and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -2380,7 +2380,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand③\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑧\">operator</a> for the \"elu\" operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②②\">operator</a> for the \"elu\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot①②\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -2399,7 +2399,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/expand(input, newShape)",
+      "name": "MLGraphBuilder/expand(input, newShape, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-expand",
       "rationale": ".algorithm",
       "steps": [
@@ -2429,7 +2429,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand①⓪\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥③\">this</a> and <var>outputDescriptor</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑨\">operator</a> for the \"expand\" operation, given <var>input</var> and <var>newShape</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②③\">operator</a> for the \"expand\" operation, given <var>input</var>, <var>newShape</var>, and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot①③\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -2547,7 +2547,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand①①\">creating an MLOperand</a> given <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⓪\">operator</a> for the \"gather\" operation, given <var>input</var>, <var>indices</var>, and <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②④\">operator</a> for the \"gather\" operation, given <var>input</var>, <var>indices</var>, and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot①④\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -2566,7 +2566,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/gelu(input)",
+      "name": "MLGraphBuilder/gelu(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-gelu",
       "rationale": ".algorithm",
       "steps": [
@@ -2587,7 +2587,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand④\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②①\">operator</a> for the \"gelu\" operation.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⑤\">operator</a> for the \"gelu\" operation given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot①⑤\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -2669,7 +2669,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand①②\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⓪\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②②\">operator</a> for the \"gemm\" operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⑥\">operator</a> for the \"gemm\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot①⑥\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -2811,7 +2811,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②③\">operator</a> for the \"gru\" operation, given <var>weight</var>, <var>recurrentWeight</var>, <var>steps</var>, <var>hiddenSize</var> and <var>options</var> as parameters.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⑦\">operator</a> for the \"gru\" operation, given <var>weight</var>, <var>recurrentWeight</var>, <var>steps</var>, <var>hiddenSize</var> and <var>options</var>.</p>"
             },
             {
               "html": "<p>Let <var>output0</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand①③\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦③\">this</a> and <var>desc0</var>.</p>"
@@ -2962,7 +2962,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand①⑤\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⑦\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②④\">operator</a> for the \"gruCell\" operation, given <var>weight</var>, <var>recurrentWeight</var>, <var>hiddenState</var>, <var>hiddenSize</var> and <var>options</var> as parameters.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⑧\">operator</a> for the \"gruCell\" operation, given <var>weight</var>, <var>recurrentWeight</var>, <var>hiddenState</var>, <var>hiddenSize</var> and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot②⓪\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3017,7 +3017,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand⑤\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⑤\">operator</a> for the \"hardSigmoid\" operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⑨\">operator</a> for the \"hardSigmoid\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot②①\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3036,7 +3036,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/hardSwish(input)",
+      "name": "MLGraphBuilder/hardSwish(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-hardswish",
       "rationale": ".algorithm",
       "steps": [
@@ -3057,7 +3057,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand⑥\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⑥\">operator</a> for the \"hardSwish\" operation.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⓪\">operator</a> for the \"hardSwish\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot②②\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3130,7 +3130,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand⑦\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⑦\">operator</a> for the \"instanceNormalization\" operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③①\">operator</a> for the \"instanceNormalization\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot②③\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3242,7 +3242,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand⑧\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⑧\">operator</a> for the \"layerNormalization\" operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③②\">operator</a> for the \"layerNormalization\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot②④\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3291,7 +3291,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand⑨\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators②⑨\">operator</a> for the \"leakyRelu\" operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③③\">operator</a> for the \"leakyRelu\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot②⑤\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3337,7 +3337,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand①⓪\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⓪\">operator</a> for the \"linear\" operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③④\">operator</a> for the \"linear\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot②⑥\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3503,7 +3503,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③①\">operator</a> for the \"lstm\" operation, given <var>weight</var>, <var>recurrentWeight</var>, <var>steps</var>, <var>hiddenSize</var> and <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⑤\">operator</a> for the \"lstm\" operation, given <var>weight</var>, <var>recurrentWeight</var>, <var>steps</var>, <var>hiddenSize</var> and <var>options</var>.</p>"
             },
             {
               "html": "<p>Let <var>output0</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand①⑥\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨②\">this</a> and <var>desc</var>.</p>"
@@ -3690,7 +3690,7 @@
               "html": "<p>Let <var>output</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑤\">list</a> « <var>output0</var>, <var>output1</var> ».</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③②\">operator</a> for the \"lstmCell\" operation, given <var>weight</var>, <var>recurrentWeight</var>, <var>hiddenState</var>, <var>cellState</var>, <var>hiddenSize</var> and <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⑥\">operator</a> for the \"lstmCell\" operation, given <var>weight</var>, <var>recurrentWeight</var>, <var>hiddenState</var>, <var>cellState</var>, <var>hiddenSize</var> and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output0</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot③②\">[[operator]]</a></code> and <var>output1</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot③③\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3773,7 +3773,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/matmul(a, b)",
+      "name": "MLGraphBuilder/matmul(a, b, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-matmul",
       "rationale": ".algorithm",
       "steps": [
@@ -3809,7 +3809,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand②①\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪①\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③③\">operator</a> for the \"matmul\" operation.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⑦\">operator</a> for the \"matmul\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot③④\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -3892,7 +3892,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand②②\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪④\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③④\">operator</a> for the \"padding\" operation, given <var>beginningPadding</var>, <var>endingPadding</var> and <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⑧\">operator</a> for the \"padding\" operation, given <var>beginningPadding</var>, <var>endingPadding</var> and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot③⑤\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -4131,7 +4131,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand②③\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪⑦\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⑤\">operator</a> for the <var>op</var> operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⑨\">operator</a> for the <var>op</var> operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot③⑥\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -4210,7 +4210,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/prelu(input, slope)",
+      "name": "MLGraphBuilder/prelu(input, slope, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-prelu",
       "rationale": ".algorithm",
       "steps": [
@@ -4246,7 +4246,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand②④\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①⓪\">this</a> and <var>descriptor</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⑥\">operator</a> for the \"prelu\" operation, given <var>slope</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⓪\">operator</a> for the \"prelu\" operation, given <var>slope</var> and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot③⑦\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -4320,8 +4320,8 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/reduce-op",
-      "href": "https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op",
+      "name": "MLGraphBuilder/create reduction operation",
+      "href": "https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -4350,7 +4350,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand②⑤\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①③\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⑦\">operator</a> for the <var>op</var> operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④①\">operator</a> for the <var>op</var> operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot③⑧\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -4375,7 +4375,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op\" id=\"ref-for-mlgraphbuilder-reduce-op\"> create reduce operation</a> given \"reduceL1\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32③⑥\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③④\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32⑦\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-uint32\" id=\"ref-for-dom-mloperanddatatype-uint32⑤\">\"uint32\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation\" id=\"ref-for-mlgraphbuilder-create-reduction-operation\">creating reduction operation</a> given \"reduceL1\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32③⑥\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③④\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32⑦\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-uint32\" id=\"ref-for-dom-mloperanddatatype-uint32⑤\">\"uint32\"</a></code> ».",
           "rationale": "if",
           "steps": [
             {
@@ -4395,7 +4395,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op\" id=\"ref-for-mlgraphbuilder-reduce-op①\"> create reduce operation</a> given \"reduceL2\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32③⑦\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③⑤\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation\" id=\"ref-for-mlgraphbuilder-create-reduction-operation①\">creating reduction operation</a> given \"reduceL2\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32③⑦\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③⑤\">\"float16\"</a></code> ».",
           "rationale": "if",
           "steps": [
             {
@@ -4415,7 +4415,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op\" id=\"ref-for-mlgraphbuilder-reduce-op②\"> create reduce operation</a> given \"reduceLogSum\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32③⑧\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③⑥\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation\" id=\"ref-for-mlgraphbuilder-create-reduction-operation②\">creating reduction operation</a> given \"reduceLogSum\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32③⑧\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③⑥\">\"float16\"</a></code> ».",
           "rationale": "if",
           "steps": [
             {
@@ -4435,7 +4435,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op\" id=\"ref-for-mlgraphbuilder-reduce-op③\"> create reduce operation</a> given \"reduceLogSumExp\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32③⑨\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③⑦\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation\" id=\"ref-for-mlgraphbuilder-create-reduction-operation③\">creating reduction operation</a> given \"reduceLogSumExp\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32③⑨\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③⑦\">\"float16\"</a></code> ».",
           "rationale": "if",
           "steps": [
             {
@@ -4455,7 +4455,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op\" id=\"ref-for-mlgraphbuilder-reduce-op④\"> create reduce operation</a> given \"reduceMax\", <var>input</var> and <var>options</var>.",
+          "html": "Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation\" id=\"ref-for-mlgraphbuilder-create-reduction-operation④\">creating reduction operation</a> given \"reduceMax\", <var>input</var> and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -4475,7 +4475,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op\" id=\"ref-for-mlgraphbuilder-reduce-op⑤\"> create reduce operation</a> given \"reduceMean\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32④⓪\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③⑧\">\"float16\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation\" id=\"ref-for-mlgraphbuilder-create-reduction-operation⑤\">creating reduction operation</a> given \"reduceMean\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32④⓪\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③⑧\">\"float16\"</a></code> ».",
           "rationale": "if",
           "steps": [
             {
@@ -4495,7 +4495,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op\" id=\"ref-for-mlgraphbuilder-reduce-op⑥\"> create reduce operation</a> given \"reduceMin\", <var>input</var> and <var>options</var>.",
+          "html": "Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation\" id=\"ref-for-mlgraphbuilder-create-reduction-operation⑥\">creating reduction operation</a> given \"reduceMin\", <var>input</var> and <var>options</var>.",
           "rationale": "if",
           "steps": [
             {
@@ -4515,7 +4515,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op\" id=\"ref-for-mlgraphbuilder-reduce-op⑦\"> create reduce operation</a> given \"reduceProduct\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32④①\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③⑨\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32⑧\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-uint32\" id=\"ref-for-dom-mloperanddatatype-uint32⑥\">\"uint32\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation\" id=\"ref-for-mlgraphbuilder-create-reduction-operation⑦\">creating reduction operation</a> given \"reduceProduct\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32④①\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16③⑨\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32⑧\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-uint32\" id=\"ref-for-dom-mloperanddatatype-uint32⑥\">\"uint32\"</a></code> ».",
           "rationale": "if",
           "steps": [
             {
@@ -4535,7 +4535,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op\" id=\"ref-for-mlgraphbuilder-reduce-op⑧\"> create reduce operation</a> given \"reduceSum\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32④②\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16④⓪\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32⑨\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-uint32\" id=\"ref-for-dom-mloperanddatatype-uint32⑦\">\"uint32\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation\" id=\"ref-for-mlgraphbuilder-create-reduction-operation⑧\">creating reduction operation</a> given \"reduceSum\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32④②\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16④⓪\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32⑨\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-uint32\" id=\"ref-for-dom-mloperanddatatype-uint32⑦\">\"uint32\"</a></code> ».",
           "rationale": "if",
           "steps": [
             {
@@ -4555,7 +4555,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>output</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-reduce-op\" id=\"ref-for-mlgraphbuilder-reduce-op⑨\"> create reduce operation</a> given \"reduceSumSquare\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32④③\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16④①\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32①⓪\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-uint32\" id=\"ref-for-dom-mloperanddatatype-uint32⑧\">\"uint32\"</a></code> ».",
+          "html": "Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-create-reduction-operation\" id=\"ref-for-mlgraphbuilder-create-reduction-operation⑨\">creating reduction operation</a> given \"reduceSumSquare\", <var>input</var>, <var>options</var>, and « <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32④③\">\"float32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16④①\">\"float16\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-int32\" id=\"ref-for-dom-mloperanddatatype-int32①⓪\">\"int32\"</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-uint32\" id=\"ref-for-dom-mloperanddatatype-uint32⑧\">\"uint32\"</a></code> ».",
           "rationale": "if",
           "steps": [
             {
@@ -4569,7 +4569,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/relu(input)",
+      "name": "MLGraphBuilder/relu(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-relu",
       "rationale": ".algorithm",
       "steps": [
@@ -4590,7 +4590,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand①①\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⑧\">operator</a> for the \"relu\" operation.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④②\">operator</a> for the \"relu\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot③⑨\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -4698,7 +4698,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand②⑥\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①⑧\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators③⑨\">operator</a> for the \"resample2d\" operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④③\">operator</a> for the \"resample2d\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot④⓪\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -4717,7 +4717,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/reshape(input, newShape)",
+      "name": "MLGraphBuilder/reshape(input, newShape, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reshape",
       "rationale": ".algorithm",
       "steps": [
@@ -4756,7 +4756,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand②⑦\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②①\">this</a> and <var>desc</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⓪\">operator</a> for the \"reshape\" operation.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④④\">operator</a> for the \"reshape\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot④①\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -4775,7 +4775,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/sigmoid(input)",
+      "name": "MLGraphBuilder/sigmoid(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sigmoid",
       "rationale": ".algorithm",
       "steps": [
@@ -4796,7 +4796,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand①②\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④①\">operator</a> for the \"sigmoid\" operation.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⑤\">operator</a> for the \"sigmoid\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot④②\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -4815,7 +4815,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/slice(input, starts, sizes)",
+      "name": "MLGraphBuilder/slice(input, starts, sizes, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-slice",
       "rationale": ".algorithm",
       "steps": [
@@ -4854,7 +4854,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand①③\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④②\">operator</a> for the \"slice\" operation, given <var>starts</var> and <var>sizes</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⑥\">operator</a> for the \"slice\" operation, given <var>starts</var>, <var>sizes</var>, and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot④③\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -4873,7 +4873,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/softmax(input, axis)",
+      "name": "MLGraphBuilder/softmax(input, axis, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softmax",
       "rationale": ".algorithm",
       "steps": [
@@ -4897,7 +4897,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand①④\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④③\">operator</a> for the \"softmax\" operation, given <var>axis</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⑦\">operator</a> for the \"softmax\" operation, given <var>axis</var> and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot④④\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -4916,7 +4916,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/softplus(input)",
+      "name": "MLGraphBuilder/softplus(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softplus",
       "rationale": ".algorithm",
       "steps": [
@@ -4937,7 +4937,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand①⑤\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④④\">operator</a> for the \"softplus\" operation.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⑧\">operator</a> for the \"softplus\" operation and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot④⑤\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -4956,7 +4956,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/softsign(input)",
+      "name": "MLGraphBuilder/softsign(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-softsign",
       "rationale": ".algorithm",
       "steps": [
@@ -4977,7 +4977,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand①⑥\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⑤\">operator</a> for the \"softsign\" operation.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⑨\">operator</a> for the \"softsign\" operation and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot④⑥\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -5044,7 +5044,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⑥\">operator</a> for the \"split\" operation, given <var>splits</var> and <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators⑤⓪\">operator</a> for the \"split\" operation, given <var>splits</var> and <var>options</var>.</p>"
             },
             {
               "html": "<p>Let <var>outputs</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑤\">list</a>.</p>"
@@ -5087,7 +5087,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/tanh(input)",
+      "name": "MLGraphBuilder/tanh(input, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-tanh",
       "rationale": ".algorithm",
       "steps": [
@@ -5108,7 +5108,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand①⑧\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⑦\">operator</a> for the \"tanh\" operation.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators⑤①\">operator</a> for the \"tanh\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot④⑧\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -5163,7 +5163,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand①⑨\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⑧\">operator</a> for the \"transpose\" operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators⑤②\">operator</a> for the \"transpose\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot④⑨\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -5203,7 +5203,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand②⓪\">copying an MLOperand</a> given <var>input</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators④⑨\">operator</a> for the \"triangular\" operation, given <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators⑤③\">operator</a> for the \"triangular\" operation, given <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot⑤⓪\">[[operator]]</a></code> to <var>operator</var>.</p>"
@@ -5222,7 +5222,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/where(condition, trueValue, falseValue)",
+      "name": "MLGraphBuilder/where(condition, trueValue, falseValue, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-where",
       "rationale": ".algorithm",
       "steps": [
@@ -5267,7 +5267,7 @@
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperand\" id=\"ref-for-create-an-mloperand②⑧\">creating an MLOperand</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④②\">this</a> and <var>descriptor</var>.</p>"
             },
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators⑤⓪\">operator</a> for the \"where\" operation, given <var>condition</var>, <var>trueValue</var> and <var>falseValue</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators⑤④\">operator</a> for the \"where\" operation, given <var>condition</var>, <var>trueValue</var>, <var>falseValue</var>, and <var>options</var>.</p>"
             },
             {
               "html": "<p>Set <var>output</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-operator-slot\" id=\"ref-for-dom-mloperand-operator-slot⑤①\">[[operator]]</a></code> to <var>operator</var>.</p>"
