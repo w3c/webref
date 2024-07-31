@@ -168,39 +168,39 @@
         },
         {
           "name": "<curve-command>",
-          "value": "curve <by-to> <coordinate-pair> via <coordinate-pair>{1,2}",
+          "value": "curve [<by-to> <coordinate-pair> using <coordinate-pair>{1,2}]",
           "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command",
           "type": "type"
         },
         {
           "name": "curve",
-          "prose": "<curve-command> = curve <by-to> <coordinate-pair> via <coordinate-pair>{1,2}",
+          "prose": "<curve-command> = curve [[<by-to> <coordinate-pair>] || [using <coordinate-pair>{1,2}]]",
           "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-curve",
           "type": "value",
           "value": "curve"
         },
         {
           "name": "<smooth-command>",
-          "value": "smooth <by-to> <coordinate-pair> [via <coordinate-pair>]?",
+          "value": "smooth [[<by-to> <coordinate-pair>] || [using <coordinate-pair>]?]",
           "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command",
           "type": "type"
         },
         {
           "name": "smooth",
-          "prose": "<smooth-command> = smooth <by-to> <coordinate-pair> [via <coordinate-pair>]?",
+          "prose": "<smooth-command> = smooth [[<by-to> <coordinate-pair>] || [using <coordinate-pair>]?]",
           "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-smooth",
           "type": "value",
           "value": "smooth"
         },
         {
           "name": "<arc-command>",
-          "value": "arc <by-to> <coordinate-pair> of <length-percentage>{1,2} [ <arc-sweep> || <arc-size> || rotate <angle> ]?",
+          "value": "arc [[<by-to> <coordinate-pair>] || [of <length-percentage>{1,2}] || <arc-sweep>? || <arc-size>? || [rotate <angle>]?]",
           "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command",
           "type": "type"
         },
         {
           "name": "arc",
-          "prose": "<arc-command> = arc <by-to> <coordinate-pair> of <length-percentage>{1,2} [ <arc-sweep> || <arc-size> || rotate <angle> ]",
+          "prose": "<arc-command> = arc [[<by-to> <coordinate-pair>] || [of <length-percentage>{1,2}] || <arc-sweep>? || <arc-size>?|| rotate <angle>? ]",
           "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-arc",
           "type": "value",
           "value": "arc",
