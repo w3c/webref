@@ -209,14 +209,14 @@
           ]
         },
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc8941#dictionary\" id=\"ref-for-dictionary①\">dictionary</a> containing <var>entries</var>.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc8941#dictionary\" id=\"ref-for-dictionary②\">dictionary</a> containing <var>entries</var>.</p>"
         }
       ]
     },
     {
       "name": "set Attribution Reporting headers",
       "href": "https://wicg.github.io/attribution-reporting-api/#set-attribution-reporting-headers",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-attribution-reporting-headers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set Attribution Reporting headers</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">request</a> <var>request</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-attribution-reporting-headers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set Attribution Reporting headers</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③\">request</a> <var>request</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -269,13 +269,22 @@
           ]
         },
         {
-          "html": "<p>Let <var>dict</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-a-dictionary-structured-header-value\" id=\"ref-for-obtain-a-dictionary-structured-header-value\">obtaining a dictionary structured header value</a> with <var>keys</var> and the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a> containing all the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#eligible-key\" id=\"ref-for-eligible-key\">eligible keys</a>.</p>"
+          "html": "<p>Let <var>supportedRegistrars</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#get-supported-registrars\" id=\"ref-for-get-supported-registrars\">getting supported registrars</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">Set a structured field value</a> given\n(\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-reporting-eligible\" id=\"ref-for-attribution-reporting-eligible①\">Attribution-Reporting-Eligible</a></code>\", <var>dict</var>) in <var>headers</var>.</p>"
+          "html": "<p>If <var>supportedRegistrars</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">clear</a> <var>keys</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#set-an-os-support-header\" id=\"ref-for-set-an-os-support-header\">Set an OS-support header</a> in <var>headers</var>.</p>"
+          "html": "<p>Let <var>eligibleDict</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-a-dictionary-structured-header-value\" id=\"ref-for-obtain-a-dictionary-structured-header-value\">obtaining a dictionary structured header value</a> with <var>keys</var> and the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a> containing all the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#eligible-key\" id=\"ref-for-eligible-key\">eligible keys</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">Set a structured field value</a> given\n(\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-reporting-eligible\" id=\"ref-for-attribution-reporting-eligible①\">Attribution-Reporting-Eligible</a></code>\", <var>eligibleDict</var>) in <var>headers</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>supportDict</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-a-dictionary-structured-header-value\" id=\"ref-for-obtain-a-dictionary-structured-header-value①\">obtaining a dictionary structured header value</a> with <var>supportedRegistrars</var> and the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a> containing all the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#registrar\" id=\"ref-for-registrar①\">registrars</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header①\">Set a structured field value</a> given\n(\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-reporting-support\" id=\"ref-for-attribution-reporting-support①\">Attribution-Reporting-Support</a></code>\", <var>supportDict</var>) in <var>headers</var>.</p>"
         }
       ]
     },
@@ -480,7 +489,7 @@
       "rationale": "assert",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>destinations</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">empty</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>destinations</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">empty</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>destinations</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order\">sorted</a> in\nascending order, with <var>a</var> being less than <var>b</var> if <var>a</var>, <a href=\"https://html.spec.whatwg.org/multipage/origin.html#serialization-of-a-site\">serialized</a>,\nis less than <var>b</var>, <a href=\"https://html.spec.whatwg.org/multipage/origin.html#serialization-of-a-site\">serialized</a>.</p>"
@@ -562,7 +571,7 @@
               "html": "<p>If <var>data</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑤\">list</a>, return null.</p>"
             },
             {
-              "html": "<p>Let <var>set</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①⑧\">set</a>.</p>"
+              "html": "<p>Let <var>set</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①⑨\">set</a>.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>d</var> of <var>data</var>:",
@@ -773,7 +782,7 @@
     {
       "name": "parse aggregatable debug reporting data",
       "href": "https://wicg.github.io/attribution-reporting-api/#parse-aggregatable-debug-reporting-data",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-aggregatable-debug-reporting-data\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse aggregatable debug reporting data</dfn> given a <var>dataList</var>, a\npositive integer <var>maxValue</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①⑨\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#debug-data-type\" id=\"ref-for-debug-data-type⑥\">debug data types</a> <var>supportedTypes</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-aggregatable-debug-reporting-data\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse aggregatable debug reporting data</dfn> given a <var>dataList</var>, a\npositive integer <var>maxValue</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⓪\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#debug-data-type\" id=\"ref-for-debug-data-type⑥\">debug data types</a> <var>supportedTypes</var>:",
       "rationale": "assert",
       "steps": [
         {
@@ -786,7 +795,7 @@
           "html": "<p>Let <var>debugDataMap</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑦\">map</a>.</p>"
         },
         {
-          "html": "<p>Let <var>unknownTypes</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⓪\">set</a>.</p>"
+          "html": "<p>Let <var>unknownTypes</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②①\">set</a>.</p>"
         },
         {
           "html": "<p>Let <var>unspecifiedContribution</var> be null.</p>"
@@ -826,7 +835,7 @@
               "html": "<p>Let <var>dataTypes</var> be <var>data</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-debug-reporting-json-key-types\" id=\"ref-for-aggregatable-debug-reporting-json-key-types①\">types</a></code>\"].</p>"
             },
             {
-              "html": "<p>If <var>dataTypes</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③①\">list</a> or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">is empty</a>, return null.</p>"
+              "html": "<p>If <var>dataTypes</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③①\">list</a> or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②\">is empty</a>, return null.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>type</var> of <var>dataTypes</var>:",
@@ -898,7 +907,7 @@
     {
       "name": "parse an aggregatable debug reporting config",
       "href": "https://wicg.github.io/attribution-reporting-api/#parse-an-aggregatable-debug-reporting-config",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-aggregatable-debug-reporting-config\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an aggregatable debug reporting config</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑨\">map</a> <var>map</var>, a\npositive integer <var>maxValue</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②①\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#debug-data-type\" id=\"ref-for-debug-data-type⑦\">debug data types</a> <var>supportedTypes</var>,\nand an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-debug-reporting-config\" id=\"ref-for-aggregatable-debug-reporting-config②\">aggregatable debug reporting config</a> <var>default</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-aggregatable-debug-reporting-config\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an aggregatable debug reporting config</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑨\">map</a> <var>map</var>, a\npositive integer <var>maxValue</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②②\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#debug-data-type\" id=\"ref-for-debug-data-type⑦\">debug data types</a> <var>supportedTypes</var>,\nand an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-debug-reporting-config\" id=\"ref-for-aggregatable-debug-reporting-config②\">aggregatable debug reporting config</a> <var>default</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -977,7 +986,7 @@
               "html": "<p>Let <var>preferredPlatformValue</var> be <var>map</var>[\"<code>preferred-platform</code>\"][0].</p>"
             },
             {
-              "html": "<p>If <var>preferredPlatformValue</var> is not a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#registrar\" id=\"ref-for-registrar①\">registrar</a>, return an error.</p>"
+              "html": "<p>If <var>preferredPlatformValue</var> is not a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#registrar\" id=\"ref-for-registrar③\">registrar</a>, return an error.</p>"
             },
             {
               "html": "<p>Set <var>preferredPlatform</var> to <var>preferredPlatformValue</var>.</p>"
@@ -1066,7 +1075,7 @@
     {
       "name": "obtain a randomized response",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-a-randomized-response",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-randomized-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a randomized response</dfn> given <var>trueValue</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②②\">set</a> <var>possibleValues</var>, and a\ndouble <var>randomPickRate</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-randomized-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a randomized response</dfn> given <var>trueValue</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②③\">set</a> <var>possibleValues</var>, and a\ndouble <var>randomPickRate</var>:",
       "rationale": "assert",
       "steps": [
         {
@@ -1135,7 +1144,7 @@
           "html": "<p>Let <var>matchingRateLimitRecords</var> be all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record\" id=\"ref-for-attribution-rate-limit-record②\">attribution rate-limit records</a> <var>record</var> in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-cache\" id=\"ref-for-attribution-rate-limit-cache①\">attribution rate-limit cache</a> where all of the following are true:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>scopeSet</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contains</a> <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-scope\" id=\"ref-for-attribution-rate-limit-record-scope①\">scope</a></p>\n      </li><li data-md=\"\">\n       <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-source-site\" id=\"ref-for-attribution-rate-limit-record-source-site④\">source site</a> and <var>newRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-source-site\" id=\"ref-for-attribution-rate-limit-record-source-site⑤\">source site</a> are equal</p>\n      </li><li data-md=\"\">\n       <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-attribution-destination\" id=\"ref-for-attribution-rate-limit-record-attribution-destination③\">attribution destination</a> and <var>newRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-attribution-destination\" id=\"ref-for-attribution-rate-limit-record-attribution-destination④\">attribution destination</a> are equal</p>\n      </li><li data-md=\"\">\n       <p>The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration-from\" id=\"ref-for-dfn-duration-from①\">duration from</a> <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-time\" id=\"ref-for-attribution-rate-limit-record-time\">time</a> and <var>newRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-time\" id=\"ref-for-attribution-rate-limit-record-time①\">time</a> is &lt;= <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-window\" id=\"ref-for-attribution-rate-limit-window③\">attribution rate-limit window</a></p>\n     </li></ul>"
         },
         {
-          "html": "<p>Let <var>distinctReportingOrigins</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②③\">set</a> of all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-reporting-origin\" id=\"ref-for-attribution-rate-limit-record-reporting-origin②\">reporting origin</a> in <var>matchingRateLimitRecords</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union\">unioned</a> with «<var>newRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-reporting-origin\" id=\"ref-for-attribution-rate-limit-record-reporting-origin③\">reporting origin</a>».</p>"
+          "html": "<p>Let <var>distinctReportingOrigins</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②④\">set</a> of all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-reporting-origin\" id=\"ref-for-attribution-rate-limit-record-reporting-origin②\">reporting origin</a> in <var>matchingRateLimitRecords</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union\">unioned</a> with «<var>newRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-reporting-origin\" id=\"ref-for-attribution-rate-limit-record-reporting-origin③\">reporting origin</a>».</p>"
         },
         {
           "html": "<p>If <var>distinctReportingOrigins</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⓪\">size</a> is greater than <var>max</var>, return <strong>blocked</strong>.</p>"
@@ -1216,13 +1225,13 @@
           "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the \"<code><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/attribution-reporting-api/#dom-permissionpolicy-attribution-reporting\" id=\"ref-for-dom-permissionpolicy-attribution-reporting\">attribution-reporting</a></code></code>\" feature, return.</p>"
         },
         {
-          "html": "<p>Let <var>supportedRegistrars</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#get-supported-registrars\" id=\"ref-for-get-supported-registrars\">getting supported registrars</a>.</p>"
+          "html": "<p>Let <var>supportedRegistrars</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#get-supported-registrars\" id=\"ref-for-get-supported-registrars①\">getting supported registrars</a>.</p>"
         },
         {
-          "html": "<p>If <var>supportedRegistrars</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②\">is empty</a>, return.</p>"
+          "html": "<p>If <var>supportedRegistrars</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③\">is empty</a>, return.</p>"
         },
         {
-          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤\">request</a> with the following properties:</p>\n     <dl>\n      <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method\">method</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>GET</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a>\n      </dt><dd data-md=\"\">\n       <p><var>url</var></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-keepalive-flag\" id=\"ref-for-request-keepalive-flag\">keepalive</a>\n      </dt><dd data-md=\"\">\n       <p>true</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#request-attribution-reporting-eligibility\" id=\"ref-for-request-attribution-reporting-eligibility⑧\">Attribution Reporting eligibility</a>\n      </dt><dd data-md=\"\">\n       <p><var>eligibility</var></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\" id=\"ref-for-concept-request-referrer-policy\">referrer policy</a>\n      </dt><dd data-md=\"\">\n       <p><var>referrerPolicy</var></p>\n     </dd></dl>"
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑥\">request</a> with the following properties:</p>\n     <dl>\n      <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method\">method</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>GET</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a>\n      </dt><dd data-md=\"\">\n       <p><var>url</var></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-keepalive-flag\" id=\"ref-for-request-keepalive-flag\">keepalive</a>\n      </dt><dd data-md=\"\">\n       <p>true</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#request-attribution-reporting-eligibility\" id=\"ref-for-request-attribution-reporting-eligibility⑧\">Attribution Reporting eligibility</a>\n      </dt><dd data-md=\"\">\n       <p><var>eligibility</var></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\" id=\"ref-for-concept-request-referrer-policy\">referrer policy</a>\n      </dt><dd data-md=\"\">\n       <p><var>referrerPolicy</var></p>\n     </dd></dl>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch①\">Fetch</a> <var>request</var> with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response\" id=\"ref-for-process-response\">processResponse</a> being <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#process-an-attributionsrc-response\" id=\"ref-for-process-an-attributionsrc-response\">process an attributionsrc response</a> with <var>contextOrigin</var>, <var>eligibility</var>,\nand <var>fenced</var>.</p>"
@@ -1261,7 +1270,7 @@
     {
       "name": "process an attributionsrc response",
       "href": "https://wicg.github.io/attribution-reporting-api/#process-an-attributionsrc-response",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-an-attributionsrc-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process an attributionsrc response</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#suitable-origin\" id=\"ref-for-suitable-origin⑨\">suitable origin</a> <var>contextOrigin</var>,\nan <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#eligibility\" id=\"ref-for-eligibility⑥\">eligibility</a> <var>eligibility</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①②\">boolean</a> <var>fenced</var>, and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a> <var>response</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-an-attributionsrc-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process an attributionsrc response</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#suitable-origin\" id=\"ref-for-suitable-origin⑨\">suitable origin</a> <var>contextOrigin</var>,\nan <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#eligibility\" id=\"ref-for-eligibility⑥\">eligibility</a> <var>eligibility</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①②\">boolean</a> <var>fenced</var>, and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> <var>response</var>:",
       "rationale": "validate",
       "steps": [
         {
@@ -1275,7 +1284,7 @@
     {
       "name": "get the registration platform",
       "href": "https://wicg.github.io/attribution-reporting-api/#get-the-registration-platform",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-registration-platform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the registration platform</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value\">header value</a> or null <var>webHeader</var>,\na <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value①\">header value</a> or null <var>osHeader</var>, and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#registrar\" id=\"ref-for-registrar②\">registrar</a> or null <var>preferredPlatform</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-registration-platform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the registration platform</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value\">header value</a> or null <var>webHeader</var>,\na <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value①\">header value</a> or null <var>osHeader</var>, and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#registrar\" id=\"ref-for-registrar④\">registrar</a> or null <var>preferredPlatform</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -1434,7 +1443,7 @@
     {
       "name": "process an attribution trigger response",
       "href": "https://wicg.github.io/attribution-reporting-api/#process-an-attribution-trigger-response",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-an-attribution-trigger-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process an attribution trigger response</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#suitable-origin\" id=\"ref-for-suitable-origin①②\">suitable origin</a> <var>contextOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#suitable-origin\" id=\"ref-for-suitable-origin①③\">suitable origin</a> <var>reportingOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> <var>response</var>,\na <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value④\">header value</a> or null <var>webTriggerHeader</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value⑤\">header value</a> or null <var>osTriggerHeader</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#registration-info\" id=\"ref-for-registration-info②\">registration info</a> <var>registrationInfo</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①④\">boolean</a> <var>fenced</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-an-attribution-trigger-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process an attribution trigger response</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#suitable-origin\" id=\"ref-for-suitable-origin①②\">suitable origin</a> <var>contextOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#suitable-origin\" id=\"ref-for-suitable-origin①③\">suitable origin</a> <var>reportingOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response③\">response</a> <var>response</var>,\na <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value④\">header value</a> or null <var>webTriggerHeader</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value⑤\">header value</a> or null <var>osTriggerHeader</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#registration-info\" id=\"ref-for-registration-info②\">registration info</a> <var>registrationInfo</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①④\">boolean</a> <var>fenced</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1518,7 +1527,7 @@
     {
       "name": "process an attribution eligible response",
       "href": "https://wicg.github.io/attribution-reporting-api/#process-an-attribution-eligible-response",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-an-attribution-eligible-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process an attribution eligible response</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#suitable-origin\" id=\"ref-for-suitable-origin①④\">suitable origin</a> <var>contextOrigin</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#eligibility\" id=\"ref-for-eligibility⑦\">eligibility</a> <var>eligibility</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①⑤\">boolean</a> <var>fenced</var>,\nand a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response③\">response</a> <var>response</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-an-attribution-eligible-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process an attribution eligible response</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#suitable-origin\" id=\"ref-for-suitable-origin①④\">suitable origin</a> <var>contextOrigin</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#eligibility\" id=\"ref-for-eligibility⑦\">eligibility</a> <var>eligibility</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①⑤\">boolean</a> <var>fenced</var>,\nand a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④\">response</a> <var>response</var>:",
       "rationale": "queue",
       "steps": [
         {
@@ -1752,7 +1761,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>contributions</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③\">is empty</a>:",
+          "html": "If <var>contributions</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty④\">is empty</a>:",
           "rationale": "run",
           "steps": [
             {
@@ -1853,7 +1862,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>possibleTriggerStates</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②④\">set</a>.</p>"
+          "html": "<p>Let <var>possibleTriggerStates</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑤\">set</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate②\">For each</a> <var>triggerData</var> → <var>spec</var> of <var>config</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#randomized-response-output-configuration-trigger-specs\" id=\"ref-for-randomized-response-output-configuration-trigger-specs\">trigger specs</a>:",
@@ -1874,7 +1883,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>possibleValues</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑤\">set</a>.</p>"
+          "html": "<p>Let <var>possibleValues</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑥\">set</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> integer <var>attributions</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①\">the range</a> 0 to <var>config</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#randomized-response-output-configuration-max-attributions-per-source\" id=\"ref-for-randomized-response-output-configuration-max-attributions-per-source\">max attributions per source</a>, inclusive:",
@@ -1989,7 +1998,7 @@
           "html": "<p>If <var>val</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑤\">list</a>, return null.</p>"
         },
         {
-          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑥\">set</a>.</p>"
+          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑦\">set</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>value</var> of <var>val</var>:",
@@ -2010,7 +2019,7 @@
           ]
         },
         {
-          "html": "<p>If <var>result</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty④\">is empty</a> or its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①③\">size</a> is greater than the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#max-destinations-per-source\" id=\"ref-for-max-destinations-per-source\">max destinations per source</a>, return null.</p>"
+          "html": "<p>If <var>result</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑤\">is empty</a> or its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①③\">size</a> is greater than the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#max-destinations-per-source\" id=\"ref-for-max-destinations-per-source\">max destinations per source</a>, return null.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order①\">Sort</a> <var>result</var> in ascending order, with <var>a</var> being less than <var>b</var> if <var>a</var>, <a href=\"https://html.spec.whatwg.org/multipage/origin.html#serialization-of-a-site\">serialized</a>,\nis less than <var>b</var>, <a href=\"https://html.spec.whatwg.org/multipage/origin.html#serialization-of-a-site\">serialized</a>.</p>"
@@ -2218,7 +2227,7 @@
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①④\">size</a> of <var>endDurations</var> is greater than <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#max-settable-event-level-report-windows\" id=\"ref-for-max-settable-event-level-report-windows\">max settable event-level report windows</a>, return an error.</p>"
         },
         {
-          "html": "<p>If <var>endDurations</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑤\">is empty</a>, return an error.</p>"
+          "html": "<p>If <var>endDurations</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑥\">is empty</a>, return an error.</p>"
         },
         {
           "html": "<p>Let <var>windows</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑦\">list</a>.</p>"
@@ -2301,7 +2310,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-registration-json-key-summary_buckets\" id=\"ref-for-source-registration-json-key-summary_buckets①\">summary_buckets</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑧\">list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑥\">is empty</a>, or\nits <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⑤\">size</a> is greater than <var>maxEventLevelReports</var>, return an\nerror.</p>"
+              "html": "<p>If <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-registration-json-key-summary_buckets\" id=\"ref-for-source-registration-json-key-summary_buckets①\">summary_buckets</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑧\">list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑦\">is empty</a>, or\nits <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⑤\">size</a> is greater than <var>maxEventLevelReports</var>, return an\nerror.</p>"
             },
             {
               "html": "<p>Set <var>values</var> to <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-registration-json-key-summary_buckets\" id=\"ref-for-source-registration-json-key-summary_buckets②\">summary_buckets</a></code>\"].</p>"
@@ -2347,7 +2356,7 @@
           "html": "<p>If <var>triggerDataList</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⓪\">list</a> or its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⑥\">size</a> is greater than <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#max-distinct-trigger-data-per-source\" id=\"ref-for-max-distinct-trigger-data-per-source\">max distinct trigger data per source</a>, return false.</p>"
         },
         {
-          "html": "<p>If <var>allowEmpty</var> is false and <var>triggerDataList</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑦\">is empty</a>, return\nfalse.</p>"
+          "html": "<p>If <var>allowEmpty</var> is false and <var>triggerDataList</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑧\">is empty</a>, return\nfalse.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>triggerData</var> of <var>triggerDataList</var>:",
@@ -2556,7 +2565,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑦\">set</a>.</p>"
+          "html": "<p>Let <var>result</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑧\">set</a>.</p>"
         },
         {
           "html": "<p>If <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-registration-json-key-attribution_scopes\" id=\"ref-for-source-registration-json-key-attribution_scopes\">attribution_scopes</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③⑨\">exist</a>, return <var>result</var>.</p>"
@@ -2587,7 +2596,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>result</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑧\">empty</a>, return an error.</p>"
+              "html": "<p>If <var>result</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑨\">empty</a>, return an error.</p>"
             },
             {
               "html": "<p>Return <var>result</var>.</p>"
@@ -2595,7 +2604,7 @@
           ]
         },
         {
-          "html": "<p>If <var>result</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑨\">is empty</a>, return an error.</p>"
+          "html": "<p>If <var>result</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⓪\">is empty</a>, return an error.</p>"
         },
         {
           "html": "<p>If <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⑧\">size</a> is greater than <var>attributionScopeLimit</var>, return an error.</p>"
@@ -2833,10 +2842,10 @@
           "html": "<p>Let <var>matchingSameReportingSources</var> be all the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record\" id=\"ref-for-attribution-rate-limit-record⑥\">records</a> in <var>matchingSources</var> whose associated <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-reporting-origin\" id=\"ref-for-attribution-rate-limit-record-reporting-origin④\">reporting origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site\">same site</a> with <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-reporting-origin\" id=\"ref-for-attribution-source-reporting-origin⑨\">reporting origin</a>.</p>"
         },
         {
-          "html": "<p>Let <var>destinations</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑧\">set</a> of every <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-attribution-destination\" id=\"ref-for-attribution-rate-limit-record-attribution-destination⑤\">attribution destination</a> in <var>matchingSources</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union①\">unioned</a> with <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-attribution-destinations\" id=\"ref-for-attribution-source-attribution-destinations⑨\">attribution destinations</a>.</p>"
+          "html": "<p>Let <var>destinations</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑨\">set</a> of every <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-attribution-destination\" id=\"ref-for-attribution-rate-limit-record-attribution-destination⑤\">attribution destination</a> in <var>matchingSources</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union①\">unioned</a> with <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-attribution-destinations\" id=\"ref-for-attribution-source-attribution-destinations⑨\">attribution destinations</a>.</p>"
         },
         {
-          "html": "<p>Let <var>sameReportingDestinations</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②⑨\">set</a> of every <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-attribution-destination\" id=\"ref-for-attribution-rate-limit-record-attribution-destination⑥\">attribution destination</a> in <var>matchingSameReportingSources</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union②\">unioned</a> with <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-attribution-destinations\" id=\"ref-for-attribution-source-attribution-destinations①⓪\">attribution destinations</a>.</p>"
+          "html": "<p>Let <var>sameReportingDestinations</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⓪\">set</a> of every <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-attribution-destination\" id=\"ref-for-attribution-rate-limit-record-attribution-destination⑥\">attribution destination</a> in <var>matchingSameReportingSources</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union②\">unioned</a> with <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-attribution-destinations\" id=\"ref-for-attribution-source-attribution-destinations①⓪\">attribution destinations</a>.</p>"
         },
         {
           "html": "<p>Let <var>hitRateLimit</var> be whether <var>destinations</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②⓪\">size</a> is greater than <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#max-destinations-per-rate-limit-window\" id=\"ref-for-max-destinations-per-rate-limit-window\">max destinations per rate-limit window</a>[0].</p>"
@@ -2883,7 +2892,7 @@
           "html": "<p>Let <var>matchingSources</var> be all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record\" id=\"ref-for-attribution-rate-limit-record⑦\">attribution rate-limit records</a> <var>record</var> in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-cache\" id=\"ref-for-attribution-rate-limit-cache③\">attribution rate-limit cache</a> where all of the following are true:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-scope\" id=\"ref-for-attribution-rate-limit-record-scope④\">scope</a> is \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#rate-limit-scope-source\" id=\"ref-for-rate-limit-scope-source②\">source</a></code>\"</p>\n      </li><li data-md=\"\">\n       <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-source-site\" id=\"ref-for-attribution-rate-limit-record-source-site⑦\">source site</a> and <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-site\" id=\"ref-for-attribution-source-source-site⑤\">source site</a> are equal</p>\n      </li><li data-md=\"\">\n       <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-reporting-origin\" id=\"ref-for-attribution-rate-limit-record-reporting-origin⑤\">reporting origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site①\">same site</a> with <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-reporting-origin\" id=\"ref-for-attribution-source-reporting-origin①⓪\">reporting origin</a></p>\n      </li><li data-md=\"\">\n       <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-expiry-time\" id=\"ref-for-attribution-rate-limit-record-expiry-time②\">expiry time</a> is greater than <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-time\" id=\"ref-for-attribution-source-source-time⑤\">source time</a></p>\n      </li><li data-md=\"\">\n       <p>The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration-from\" id=\"ref-for-dfn-duration-from⑥\">duration from</a> <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-time\" id=\"ref-for-attribution-rate-limit-record-time③\">time</a> and <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-time\" id=\"ref-for-attribution-source-source-time⑥\">source time</a> is less than 1 day</p>\n     </li></ul>"
         },
         {
-          "html": "<p>Let <var>destinations</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⓪\">set</a> of all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-attribution-destination\" id=\"ref-for-attribution-rate-limit-record-attribution-destination⑦\">attribution destination</a> in <var>matchingSources</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union③\">unioned</a> with <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-attribution-destinations\" id=\"ref-for-attribution-source-attribution-destinations①①\">attribution destinations</a>.</p>"
+          "html": "<p>Let <var>destinations</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③①\">set</a> of all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-attribution-destination\" id=\"ref-for-attribution-rate-limit-record-attribution-destination⑦\">attribution destination</a> in <var>matchingSources</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union③\">unioned</a> with <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-attribution-destinations\" id=\"ref-for-attribution-source-attribution-destinations①①\">attribution destinations</a>.</p>"
         },
         {
           "html": "<p>Return whether <var>destinations</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②②\">size</a> is greater than <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#max-destinations-per-source-reporting-site-per-day\" id=\"ref-for-max-destinations-per-source-reporting-site-per-day\">max destinations per source reporting site per day</a>.</p>"
@@ -2893,11 +2902,11 @@
     {
       "name": "delete sources for unexpired destination limit",
       "href": "https://wicg.github.io/attribution-reporting-api/#delete-sources-for-unexpired-destination-limit",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"delete-sources-for-unexpired-destination-limit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">delete sources for unexpired destination limit</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③①\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-identifier\" id=\"ref-for-attribution-source-source-identifier②\">source identifiers</a> <var>sourcesToDelete</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment①⑧\">moment</a> <var>now</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"delete-sources-for-unexpired-destination-limit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">delete sources for unexpired destination limit</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③②\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-identifier\" id=\"ref-for-attribution-source-source-identifier②\">source identifiers</a> <var>sourcesToDelete</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment①⑧\">moment</a> <var>now</var>:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>sourcesToDelete</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⓪\">is empty</a>, return.</p>"
+          "html": "<p>If <var>sourcesToDelete</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①①\">is empty</a>, return.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑤①\">attribution source</a> <var>source</var> of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-cache\" id=\"ref-for-attribution-source-cache③\">attribution source cache</a>:",
@@ -2909,7 +2918,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>deletedEventLevelReports</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③②\">set</a>.</p>"
+          "html": "<p>Let <var>deletedEventLevelReports</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③③\">set</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#event-level-report\" id=\"ref-for-event-level-report⑧\">event-level report</a> <var>report</var> of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#event-level-report-cache\" id=\"ref-for-event-level-report-cache③\">event-level report cache</a>:",
@@ -2930,7 +2939,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>deletedAggregatableReports</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③③\">set</a>.</p>"
+          "html": "<p>Let <var>deletedAggregatableReports</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③④\">set</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report\" id=\"ref-for-aggregatable-attribution-report①⓪\">aggregatable attribution report</a> <var>report</var> of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-cache\" id=\"ref-for-aggregatable-attribution-report-cache③\">aggregatable attribution report cache</a>:",
@@ -3060,10 +3069,10 @@
           ]
         },
         {
-          "html": "<p>Let <var>sourcesToDelete</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③④\">set</a>.</p>"
+          "html": "<p>Let <var>sourcesToDelete</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑤\">set</a>.</p>"
         },
         {
-          "html": "<p>Let <var>newDestinations</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑤\">set</a>.</p>"
+          "html": "<p>Let <var>newDestinations</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑥\">set</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③②\">For each</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#destination-limit-record\" id=\"ref-for-destination-limit-record②\">destination limit record</a> <var>record</var> of <var>destinationRecords</var>:",
@@ -3101,7 +3110,7 @@
           "html": "<p>Let <var>matchingRateLimitRecords</var> be all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record\" id=\"ref-for-attribution-rate-limit-record①⓪\">attribution rate-limit records</a> <var>record</var> in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-cache\" id=\"ref-for-attribution-rate-limit-cache⑧\">attribution rate-limit cache</a> where all of the following are true:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-scope\" id=\"ref-for-attribution-rate-limit-record-scope⑦\">scope</a> is \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#rate-limit-scope-source\" id=\"ref-for-rate-limit-scope-source⑤\">source</a></code>\"</p>\n      </li><li data-md=\"\">\n       <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-source-site\" id=\"ref-for-attribution-rate-limit-record-source-site⑨\">source site</a> and <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-site\" id=\"ref-for-attribution-source-source-site⑦\">source site</a> are equal</p>\n      </li><li data-md=\"\">\n       <p>The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration-from\" id=\"ref-for-dfn-duration-from⑦\">duration from</a> <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-time\" id=\"ref-for-attribution-rate-limit-record-time⑤\">time</a> and <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-time\" id=\"ref-for-attribution-source-source-time⑨\">source time</a> is &lt;= <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#origin-rate-limit-window\" id=\"ref-for-origin-rate-limit-window①\">origin rate-limit window</a></p>\n     </li></ul>"
         },
         {
-          "html": "<p>Let <var>distinctReportingOrigins</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑥\">set</a> of all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-reporting-origin\" id=\"ref-for-attribution-rate-limit-record-reporting-origin⑦\">reporting origin</a> in <var>matchingRateLimitRecords</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union④\">unioned</a> with «<var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-reporting-origin\" id=\"ref-for-attribution-source-reporting-origin①②\">reporting origin</a>».</p>"
+          "html": "<p>Let <var>distinctReportingOrigins</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑦\">set</a> of all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-reporting-origin\" id=\"ref-for-attribution-rate-limit-record-reporting-origin⑦\">reporting origin</a> in <var>matchingRateLimitRecords</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union④\">unioned</a> with «<var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-reporting-origin\" id=\"ref-for-attribution-source-reporting-origin①②\">reporting origin</a>».</p>"
         },
         {
           "html": "<p>If <var>distinctReportingOrigins</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②④\">size</a> is greater than <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#max-source-reporting-origins-per-source-reporting-site\" id=\"ref-for-max-source-reporting-origins-per-source-reporting-site①\">max source reporting origins per source reporting site</a>, return <strong>blocked</strong>.</p>"
@@ -3174,7 +3183,7 @@
     {
       "name": "obtain and deliver a verbose debug report on source registration",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-a-verbose-debug-report-on-source-registration",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-a-verbose-debug-report-on-source-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver a verbose debug report on source registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑦\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type\" id=\"ref-for-source-debug-data-type②\">source debug data types</a> <var>dataTypes</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑤⑦\">attribution source</a> <var>source</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②⓪\">boolean</a> <var>isNoised</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-a-verbose-debug-report-on-source-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver a verbose debug report on source registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑧\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type\" id=\"ref-for-source-debug-data-type②\">source debug data types</a> <var>dataTypes</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑤⑦\">attribution source</a> <var>source</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②⓪\">boolean</a> <var>isNoised</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -3301,7 +3310,7 @@
     {
       "name": "obtain and deliver an aggregatable debug report on source registration",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-an-aggregatable-debug-report-on-source-registration",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-an-aggregatable-debug-report-on-source-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver an aggregatable debug report on source registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑧\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type\" id=\"ref-for-source-debug-data-type③\">source debug data types</a> <var>dataTypes</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑤⑧\">attribution source</a> <var>source</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②①\">boolean</a> <var>isNoised</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-an-aggregatable-debug-report-on-source-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver an aggregatable debug report on source registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑨\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type\" id=\"ref-for-source-debug-data-type③\">source debug data types</a> <var>dataTypes</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑤⑧\">attribution source</a> <var>source</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②①\">boolean</a> <var>isNoised</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -3351,7 +3360,7 @@
     {
       "name": "obtain and deliver debug reports on source registration",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-source-registration",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-debug-reports-on-source-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver debug reports on source registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③⑨\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type\" id=\"ref-for-source-debug-data-type④\">source debug data types</a> <var>dataTypes</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑤⑨\">attribution source</a> <var>source</var>,\nand an optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②②\">boolean</a> <var>isNoised</var> (default false):",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-debug-reports-on-source-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver debug reports on source registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⓪\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type\" id=\"ref-for-source-debug-data-type④\">source debug data types</a> <var>dataTypes</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑤⑨\">attribution source</a> <var>source</var>,\nand an optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②②\">boolean</a> <var>isNoised</var> (default false):",
       "rationale": "run",
       "steps": [
         {
@@ -3434,7 +3443,7 @@
           "html": "<p>Set <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-number-of-event-level-reports\" id=\"ref-for-attribution-source-number-of-event-level-reports①\">number of event-level reports</a> to 0 if <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-randomized-response\" id=\"ref-for-attribution-source-randomized-response②\">randomized response</a> is null, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-randomized-response\" id=\"ref-for-attribution-source-randomized-response③\">randomized response</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②⑤\">size</a> otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>pendingSourcesForSourceOrigin</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⓪\">set</a> of all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑥①\">attribution sources</a> <var>pendingSource</var> of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-cache\" id=\"ref-for-attribution-source-cache⑦\">attribution source cache</a> where <var>pendingSource</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-origin\" id=\"ref-for-attribution-source-source-origin③\">source origin</a> and <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-origin\" id=\"ref-for-attribution-source-source-origin④\">source origin</a> are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin③\">same origin</a>.</p>"
+          "html": "<p>Let <var>pendingSourcesForSourceOrigin</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④①\">set</a> of all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑥①\">attribution sources</a> <var>pendingSource</var> of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-cache\" id=\"ref-for-attribution-source-cache⑦\">attribution source cache</a> where <var>pendingSource</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-origin\" id=\"ref-for-attribution-source-source-origin③\">source origin</a> and <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-origin\" id=\"ref-for-attribution-source-source-origin④\">source origin</a> are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin③\">same origin</a>.</p>"
         },
         {
           "html": "If <var>pendingSourcesForSourceOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②⑥\">size</a> is greater than or equal\nto the user agent’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#max-pending-sources-per-source-origin\" id=\"ref-for-max-pending-sources-per-source-origin①\">max pending sources per source origin</a>:",
@@ -3491,10 +3500,10 @@
           ]
         },
         {
-          "html": "<p>Let <var>debugDataTypes</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④①\">set</a>.</p>"
+          "html": "<p>Let <var>debugDataTypes</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④②\">set</a>.</p>"
         },
         {
-          "html": "<p>If <var>sourcesToDeleteForDestinationLimit</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①①\">empty</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①①\">append</a> \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-destination-limit-replaced\" id=\"ref-for-source-debug-data-type-source-destination-limit-replaced②\">source-destination-limit-replaced</a></code>\"\nto <var>debugDataTypes</var>.</p>"
+          "html": "<p>If <var>sourcesToDeleteForDestinationLimit</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①②\">empty</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①①\">append</a> \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-destination-limit-replaced\" id=\"ref-for-source-debug-data-type-source-destination-limit-replaced②\">source-destination-limit-replaced</a></code>\"\nto <var>debugDataTypes</var>.</p>"
         },
         {
           "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#delete-sources-for-unexpired-destination-limit\" id=\"ref-for-delete-sources-for-unexpired-destination-limit\">delete sources for unexpired destination limit</a> with <var>sourcesToDeleteForDestinationLimit</var> and <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-time\" id=\"ref-for-attribution-source-source-time①②\">source time</a>.</p>"
@@ -3518,7 +3527,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>newRateLimitRecords</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④②\">set</a>.</p>"
+          "html": "<p>Let <var>newRateLimitRecords</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④③\">set</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑥\">For each</a> <var>destination</var> in <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-attribution-destinations\" id=\"ref-for-attribution-source-attribution-destinations①⑤\">attribution destinations</a>:",
@@ -3570,7 +3579,7 @@
               ]
             },
             {
-              "html": "<p>If <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-randomized-response\" id=\"ref-for-attribution-source-randomized-response⑦\">randomized response</a> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①②\">empty</a>,\nthen set <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-event-level-attributable\" id=\"ref-for-attribution-source-event-level-attributable\">event-level attributable</a> value to false.</p>"
+              "html": "<p>If <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-randomized-response\" id=\"ref-for-attribution-source-randomized-response⑦\">randomized response</a> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①③\">empty</a>,\nthen set <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-event-level-attributable\" id=\"ref-for-attribution-source-event-level-attributable\">event-level attributable</a> value to false.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate⑤\">For each</a> <var>destination</var> in <var>source</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-attribution-destinations\" id=\"ref-for-attribution-source-attribution-destinations①⑥\">attribution destinations</a>:",
@@ -3624,7 +3633,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>eventTriggers</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④③\">set</a>.</p>"
+          "html": "<p>Let <var>eventTriggers</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④④\">set</a>.</p>"
         },
         {
           "html": "<p>If <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-event_trigger_data\" id=\"ref-for-trigger-registration-json-key-event_trigger_data\">event_trigger_data</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤⓪\">exist</a>, return <var>eventTriggers</var>.</p>"
@@ -3720,7 +3729,7 @@
               "html": "<p>If <var>keyPiece</var> is an error, return null.</p>"
             },
             {
-              "html": "<p>Let <var>sourceKeys</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④④\">set</a>.</p>"
+              "html": "<p>Let <var>sourceKeys</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑤\">set</a>.</p>"
             },
             {
               "html": "If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-source_keys\" id=\"ref-for-trigger-registration-json-key-source_keys\">source_keys</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤③\">exists</a>:",
@@ -4013,7 +4022,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑤\">set</a>.</p>"
+          "html": "<p>Let <var>result</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑥\">set</a>.</p>"
         },
         {
           "html": "<p>If <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-attribution_scopes\" id=\"ref-for-trigger-registration-json-key-attribution_scopes\">attribution_scopes</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥⓪\">exist</a>, return <var>result</var>.</p>"
@@ -4163,7 +4172,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>supportedTypes</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑥\">set</a> of all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type\" id=\"ref-for-trigger-debug-data-type①\">trigger debug data types</a>.</p>"
+              "html": "<p>Let <var>supportedTypes</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑦\">set</a> of all <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type\" id=\"ref-for-trigger-debug-data-type①\">trigger debug data types</a>.</p>"
             },
             {
               "html": "<p>Set <var>aggregatableDebugReportingConfig</var> to the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#parse-an-aggregatable-debug-reporting-config\" id=\"ref-for-parse-an-aggregatable-debug-reporting-config①\">parse an aggregatable debug reporting config</a> with <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-aggregatable_debug_reporting\" id=\"ref-for-trigger-registration-json-key-aggregatable_debug_reporting①\">aggregatable_debug_reporting</a></code>\"], <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#allowed-aggregatable-budget-per-source\" id=\"ref-for-allowed-aggregatable-budget-per-source⑤\">allowed aggregatable budget per source</a>, <var>supportedTypes</var>, and <var>aggregatableDebugReportingConfig</var>.</p>"
@@ -4194,11 +4203,11 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>b</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①③\">is empty</a>, then:",
+          "html": "If <var>b</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①④\">is empty</a>, then:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>a</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①④\">is empty</a>, then return true.</p>"
+              "html": "<p>If <var>a</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑤\">is empty</a>, then return true.</p>"
             },
             {
               "html": "<p>Otherwise, return false.</p>"
@@ -4209,7 +4218,7 @@
           "html": "<p>Let <var>i</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-intersection\" id=\"ref-for-set-intersection\">intersection</a> of <var>a</var> and <var>b</var>.</p>"
         },
         {
-          "html": "<p>If <var>i</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑤\">is empty</a>, then return false.</p>"
+          "html": "<p>If <var>i</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑥\">is empty</a>, then return false.</p>"
         },
         {
           "html": "<p>Return true.</p>"
@@ -4223,11 +4232,11 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>b</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑥\">is empty</a>, then:",
+          "html": "If <var>b</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑦\">is empty</a>, then:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>a</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑦\">empty</a>, then return true.</p>"
+              "html": "<p>If <var>a</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑧\">empty</a>, then return true.</p>"
             },
             {
               "html": "<p>Otherwise, return false.</p>"
@@ -4238,7 +4247,7 @@
           "html": "<p>Let <var>i</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-intersection\" id=\"ref-for-set-intersection①\">intersection</a> of <var>a</var> and <var>b</var>.</p>"
         },
         {
-          "html": "<p>If <var>i</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑧\">empty</a>, then return false.</p>"
+          "html": "<p>If <var>i</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑨\">empty</a>, then return false.</p>"
         },
         {
           "html": "<p>Return true.</p>"
@@ -4321,7 +4330,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>filters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑨\">is empty</a>, return true.</p>"
+          "html": "<p>If <var>filters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⓪\">is empty</a>, return true.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⑤\">For each</a> <var>filter</var> of <var>filters</var>:",
@@ -4664,7 +4673,7 @@
           "html": "<p>Let <var>matchingReports</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥①\">list</a> whose elements are all the elements in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#event-level-report-cache\" id=\"ref-for-event-level-report-cache⑥\">event-level report cache</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report-report-time\" id=\"ref-for-attribution-report-report-time②\">report time</a> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#event-level-report-source-identifier\" id=\"ref-for-event-level-report-source-identifier①\">source identifier</a> are equal to <var>report</var>’s, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order②\">sorted in ascending order</a> using <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#event-level-report-is-lower-priority-than\" id=\"ref-for-event-level-report-is-lower-priority-than①\">is lower-priority than</a>.</p>"
         },
         {
-          "html": "If <var>matchingReports</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⓪\">is empty</a>:",
+          "html": "If <var>matchingReports</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②①\">is empty</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -4711,10 +4720,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-event-level-trigger-configurations\" id=\"ref-for-attribution-trigger-event-level-trigger-configurations①\">event-level trigger configurations</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②①\">is empty</a>, return the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#triggering-result\" id=\"ref-for-triggering-result②\">triggering result</a> (\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#triggering-status-dropped\" id=\"ref-for-triggering-status-dropped②\">dropped</a></code>\", null).</p>"
+          "html": "<p>If <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-event-level-trigger-configurations\" id=\"ref-for-attribution-trigger-event-level-trigger-configurations①\">event-level trigger configurations</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②②\">is empty</a>, return the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#triggering-result\" id=\"ref-for-triggering-result②\">triggering result</a> (\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#triggering-status-dropped\" id=\"ref-for-triggering-status-dropped②\">dropped</a></code>\", null).</p>"
         },
         {
-          "html": "If <var>sourceToAttribute</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-randomized-response\" id=\"ref-for-attribution-source-randomized-response⑧\">randomized response</a> is not null and is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②②\">empty</a>:",
+          "html": "If <var>sourceToAttribute</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-randomized-response\" id=\"ref-for-attribution-source-randomized-response⑧\">randomized response</a> is not null and is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②③\">empty</a>:",
           "rationale": "assert",
           "steps": [
             {
@@ -4986,7 +4995,7 @@
           "html": "<p>Let <var>report</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-an-aggregatable-attribution-report\" id=\"ref-for-obtain-an-aggregatable-attribution-report\">obtain an aggregatable attribution report</a> with <var>sourceToAttribute</var> and <var>trigger</var>.</p>"
         },
         {
-          "html": "If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-report-contributions\" id=\"ref-for-aggregatable-report-contributions②\">contributions</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②③\">is empty</a>:",
+          "html": "If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-report-contributions\" id=\"ref-for-aggregatable-report-contributions②\">contributions</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②④\">is empty</a>:",
           "rationale": "return",
           "steps": [
             {
@@ -5059,7 +5068,7 @@
     {
       "name": "obtain and deliver a verbose debug report on trigger registration",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-a-verbose-debug-report-on-trigger-registration",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-a-verbose-debug-report-on-trigger-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver a verbose debug report on trigger registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑦\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-debug-data\" id=\"ref-for-trigger-debug-data①\">trigger debug data</a> <var>dataSet</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger②①\">attribution trigger</a> <var>trigger</var>,\nand an optional <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑦⑤\">attribution source</a> <var>sourceToAttribute</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-a-verbose-debug-report-on-trigger-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver a verbose debug report on trigger registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑧\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-debug-data\" id=\"ref-for-trigger-debug-data①\">trigger debug data</a> <var>dataSet</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger②①\">attribution trigger</a> <var>trigger</var>,\nand an optional <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑦⑤\">attribution source</a> <var>sourceToAttribute</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -5078,7 +5087,7 @@
           ]
         },
         {
-          "html": "<p>If <var>debugDataList</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②④\">is empty</a>, return.</p>"
+          "html": "<p>If <var>debugDataList</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑤\">is empty</a>, return.</p>"
         },
         {
           "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-a-verbose-debug-report\" id=\"ref-for-obtain-and-deliver-a-verbose-debug-report②\">obtain and deliver a verbose debug report</a> with <var>debugDataList</var>, <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-reporting-origin\" id=\"ref-for-attribution-trigger-reporting-origin④\">reporting origin</a>,\nand <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-fenced\" id=\"ref-for-attribution-trigger-fenced①\">fenced</a>.</p>"
@@ -5088,7 +5097,7 @@
     {
       "name": "obtain and deliver an aggregatable debug report on trigger registration",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-an-aggregatable-debug-report-on-trigger-registration",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-an-aggregatable-debug-report-on-trigger-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver an aggregatable debug report on trigger registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑧\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-debug-data\" id=\"ref-for-trigger-debug-data②\">trigger debug data</a> <var>dataSet</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger②②\">attribution trigger</a> <var>trigger</var>,\nand an optional <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑦⑥\">attribution source</a> <var>sourceToAttribute</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-an-aggregatable-debug-report-on-trigger-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver an aggregatable debug report on trigger registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑨\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-debug-data\" id=\"ref-for-trigger-debug-data②\">trigger debug data</a> <var>dataSet</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger②②\">attribution trigger</a> <var>trigger</var>,\nand an optional <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑦⑥\">attribution source</a> <var>sourceToAttribute</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -5147,7 +5156,7 @@
     {
       "name": "obtain and deliver debug reports on trigger registration",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-trigger-registration",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-debug-reports-on-trigger-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver debug reports on trigger registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④⑨\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-debug-data\" id=\"ref-for-trigger-debug-data③\">trigger debug data</a> <var>dataSet</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger②③\">attribution trigger</a> <var>trigger</var>,\nand an optional <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑦⑦\">attribution source</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"obtain and deliver debug reports on trigger registration\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-debug-reports-on-trigger-registration-sourcetoattribute\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>sourceToAttribute</var></dfn>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-debug-reports-on-trigger-registration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver debug reports on trigger registration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤⓪\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-debug-data\" id=\"ref-for-trigger-debug-data③\">trigger debug data</a> <var>dataSet</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger②③\">attribution trigger</a> <var>trigger</var>,\nand an optional <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑦⑦\">attribution source</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"obtain and deliver debug reports on trigger registration\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-debug-reports-on-trigger-registration-sourcetoattribute\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>sourceToAttribute</var></dfn>:",
       "rationale": "run",
       "steps": [
         {
@@ -5200,10 +5209,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-aggregatable-trigger-data\" id=\"ref-for-attribution-trigger-aggregatable-trigger-data②\">aggregatable trigger data</a> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑤\">empty</a>, return true.</p>"
+          "html": "<p>If <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-aggregatable-trigger-data\" id=\"ref-for-attribution-trigger-aggregatable-trigger-data②\">aggregatable trigger data</a> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑥\">empty</a>, return true.</p>"
         },
         {
-          "html": "<p>If any of <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-aggregatable-values-configurations\" id=\"ref-for-attribution-trigger-aggregatable-values-configurations③\">aggregatable values configurations</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-values-configuration-values\" id=\"ref-for-aggregatable-values-configuration-values⑤\">values</a> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑥\">empty</a>, return true.</p>"
+          "html": "<p>If any of <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-aggregatable-values-configurations\" id=\"ref-for-attribution-trigger-aggregatable-values-configurations③\">aggregatable values configurations</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-values-configuration-values\" id=\"ref-for-aggregatable-values-configuration-values⑤\">values</a> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑦\">empty</a>, return true.</p>"
         },
         {
           "html": "<p>Return false.</p>"
@@ -5220,13 +5229,13 @@
           "html": "<p>Let <var>hasAggregatableData</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-trigger-contains-aggregatable-data\" id=\"ref-for-check-if-an-attribution-trigger-contains-aggregatable-data①\">checking if an attribution trigger contains aggregatable data</a> with <var>trigger</var>.</p>"
         },
         {
-          "html": "<p>If <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-event-level-trigger-configurations\" id=\"ref-for-attribution-trigger-event-level-trigger-configurations③\">event-level trigger configurations</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑦\">is empty</a> and <var>hasAggregatableData</var> is false, return.</p>"
+          "html": "<p>If <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-event-level-trigger-configurations\" id=\"ref-for-attribution-trigger-event-level-trigger-configurations③\">event-level trigger configurations</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑧\">is empty</a> and <var>hasAggregatableData</var> is false, return.</p>"
         },
         {
           "html": "<p>Let <var>matchingSources</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#find-matching-sources\" id=\"ref-for-find-matching-sources\">find matching sources</a> with <var>trigger</var>.</p>"
         },
         {
-          "html": "If <var>matchingSources</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑧\">is empty</a>:",
+          "html": "If <var>matchingSources</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑨\">is empty</a>:",
           "rationale": "run",
           "steps": [
             {
@@ -5277,7 +5286,7 @@
           "html": "<p>Let <var>aggregatableResult</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-aggregatable-attribution\" id=\"ref-for-trigger-aggregatable-attribution①\">trigger aggregatable attribution</a> with <var>trigger</var> and <var>sourceToAttribute</var>.</p>"
         },
         {
-          "html": "<p>Let <var>debugDataSet</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤⓪\">set</a>.</p>"
+          "html": "<p>Let <var>debugDataSet</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤①\">set</a>.</p>"
         },
         {
           "html": "<p>If <var>eventLevelResult</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#triggering-result-debug-data\" id=\"ref-for-triggering-result-debug-data\">debug data</a> is not null,\nthen <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②⑧\">append</a> <var>eventLevelResult</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#triggering-result-debug-data\" id=\"ref-for-triggering-result-debug-data①\">debug data</a> to <var>debugDataSet</var>.</p>"
@@ -5551,7 +5560,7 @@
     {
       "name": "queue reports for delivery",
       "href": "https://wicg.github.io/attribution-reporting-api/#queue-reports-for-delivery",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"queue-reports-for-delivery\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">queue reports for delivery</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤①\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report⑦\">attribution reports</a> <var>cache</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"queue-reports-for-delivery\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">queue reports for delivery</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤②\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report⑦\">attribution reports</a> <var>cache</var>, run the following steps:",
       "rationale": "for",
       "steps": [
         {
@@ -6089,7 +6098,7 @@
           "html": "<p>Let <var>headers</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list①\">header list</a> containing a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header\">header</a> named\n\"<code>Content-Type</code>\" whose value is \"<code>application/json</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑥\">request</a> with the following properties:</p>\n     <dl>\n      <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method①\">method</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>POST</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">URL</a>\n      </dt><dd data-md=\"\">\n       <p><var>url</var></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②\">header list</a>\n      </dt><dd data-md=\"\">\n       <p><var>headers</var></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body\">body</a>\n      </dt><dd data-md=\"\">\n       <p>A <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body\" id=\"ref-for-concept-body\">body</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-source\" id=\"ref-for-concept-body-source\">source</a> is <var>body</var>.</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer\">referrer</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>no-referrer</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>\n      </dt><dd data-md=\"\">\n       <p><code>null</code></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a>\n      </dt><dd data-md=\"\">\n       <p><var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑥\">origin</a></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window\">window</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>no-window</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-service-workers-mode\" id=\"ref-for-request-service-workers-mode\">service-workers mode</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>none</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"ref-for-concept-request-initiator\">initiator</a>\n      </dt><dd data-md=\"\">\n       <p>\"\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>same-origin</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#unsafe-request-flag\" id=\"ref-for-unsafe-request-flag\">unsafe-request flag</a>\n      </dt><dd data-md=\"\">\n       <p>set</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>omit</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode\">cache mode</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>no-store</code>\"</p>\n     </dd></dl>"
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑦\">request</a> with the following properties:</p>\n     <dl>\n      <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method①\">method</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>POST</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">URL</a>\n      </dt><dd data-md=\"\">\n       <p><var>url</var></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②\">header list</a>\n      </dt><dd data-md=\"\">\n       <p><var>headers</var></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body\">body</a>\n      </dt><dd data-md=\"\">\n       <p>A <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body\" id=\"ref-for-concept-body\">body</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-source\" id=\"ref-for-concept-body-source\">source</a> is <var>body</var>.</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer\">referrer</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>no-referrer</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>\n      </dt><dd data-md=\"\">\n       <p><code>null</code></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a>\n      </dt><dd data-md=\"\">\n       <p><var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑥\">origin</a></p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-window\" id=\"ref-for-concept-request-window\">window</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>no-window</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-service-workers-mode\" id=\"ref-for-request-service-workers-mode\">service-workers mode</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>none</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"ref-for-concept-request-initiator\">initiator</a>\n      </dt><dd data-md=\"\">\n       <p>\"\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>same-origin</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#unsafe-request-flag\" id=\"ref-for-unsafe-request-flag\">unsafe-request flag</a>\n      </dt><dd data-md=\"\">\n       <p>set</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>omit</code>\"</p>\n      </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode\">cache mode</a>\n      </dt><dd data-md=\"\">\n       <p>\"<code>no-store</code>\"</p>\n     </dd></dl>"
         },
         {
           "html": "<p>Return <var>request</var>.</p>"
@@ -6243,7 +6252,7 @@
           ]
         },
         {
-          "html": "<p>If <var>registrations</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑨\">is empty</a>, return null.</p>"
+          "html": "<p>If <var>registrations</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③⓪\">is empty</a>, return null.</p>"
         },
         {
           "html": "<p>Return <var>registrations</var>.</p>"
@@ -6271,30 +6280,13 @@
       ]
     },
     {
-      "name": "set an OS-support header",
-      "href": "https://wicg.github.io/attribution-reporting-api/#set-an-os-support-header",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-an-os-support-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set an OS-support header</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list②\">header list</a> <var>headers</var>:",
-      "rationale": "let",
-      "steps": [
-        {
-          "html": "<p>Let <var>supportedRegistrars</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#get-supported-registrars\" id=\"ref-for-get-supported-registrars①\">getting supported registrars</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>dict</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-a-dictionary-structured-header-value\" id=\"ref-for-obtain-a-dictionary-structured-header-value①\">obtaining a dictionary structured header value</a> with <var>supportedRegistrars</var> and the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤②\">set</a> containing all the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#registrar\" id=\"ref-for-registrar④\">registrars</a>.</p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header①\">Set a structured field value</a> given\n(\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-reporting-support\" id=\"ref-for-attribution-reporting-support①\">Attribution-Reporting-Support</a></code>\", <var>dict</var>) in <var>headers</var>.</p>"
-        }
-      ]
-    },
-    {
       "name": "obtain and deliver debug reports on OS registrations",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-debug-reports-on-os-registrations",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-and-deliver-debug-reports-on-os-registrations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain and deliver debug reports on OS registrations</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#os-debug-data-type\" id=\"ref-for-os-debug-data-type\">OS debug data type</a> <var>dataType</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦⑤\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#os-registration\" id=\"ref-for-os-registration②\">OS registrations</a> <var>registrations</var>,\nan <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑥\">origin</a> <var>contextOrigin</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean③⓪\">boolean</a> <var>fenced</var>:",
       "rationale": "assert",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③②\">Assert</a>: <var>registrations</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③⓪\">empty</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③②\">Assert</a>: <var>registrations</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③①\">empty</a>.</p>"
         },
         {
           "html": "<p>Let <var>contextSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑥\">obtaining a site</a> from <var>contextOrigin</var>.</p>"
