@@ -12,6 +12,7 @@
         ],
         "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": [
           "ForDebuggingOnly",
+          "RealTimeReporting",
           "InterestGroupBiddingAndScoringScriptRunnerGlobalScope"
         ],
         "InterestGroupBiddingScriptRunnerGlobalScope": [
@@ -613,8 +614,35 @@
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionadinterestgroupkey"
       },
+      "AuctionRealTimeReportingConfig": {
+        "fragment": "dictionary AuctionRealTimeReportingConfig {\n  required DOMString type;\n};",
+        "type": "dictionary",
+        "name": "AuctionRealTimeReportingConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionrealtimereportingconfig-type"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-auctionrealtimereportingconfig"
+      },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerMultiBidLimits;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<DOMString> requiredSellerCapabilities;\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerMultiBidLimits;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<DOMString> requiredSellerCapabilities;\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AuctionRealTimeReportingConfig sellerRealTimeReportingConfig;\n  record<USVString, AuctionRealTimeReportingConfig> perBuyerRealTimeReportingConfig;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -1349,6 +1377,55 @@
           },
           {
             "type": "field",
+            "name": "sellerRealTimeReportingConfig",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AuctionRealTimeReportingConfig"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-sellerrealtimereportingconfig"
+          },
+          {
+            "type": "field",
+            "name": "perBuyerRealTimeReportingConfig",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AuctionRealTimeReportingConfig"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyerrealtimereportingconfig"
+          },
+          {
+            "type": "field",
             "name": "componentAuctions",
             "extAttrs": [],
             "idlType": {
@@ -1528,8 +1605,121 @@
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#fordebuggingonly"
       },
+      "RealTimeReporting": {
+        "fragment": "[Exposed=InterestGroupBiddingAndScoringScriptRunnerGlobalScope]\ninterface RealTimeReporting {\n  undefined contributeToHistogram(RealTimeContribution contribution);\n};",
+        "type": "interface",
+        "name": "RealTimeReporting",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "contributeToHistogram",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "contribution",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RealTimeContribution"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/turtledove/#dom-realtimereporting-contributetohistogram"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "InterestGroupBiddingAndScoringScriptRunnerGlobalScope"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#realtimereporting"
+      },
+      "RealTimeContribution": {
+        "fragment": "dictionary RealTimeContribution {\n  required long bucket;\n  required double priorityWeight;\n  long latencyThreshold;\n};",
+        "type": "dictionary",
+        "name": "RealTimeContribution",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "bucket",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-realtimecontribution-bucket"
+          },
+          {
+            "type": "field",
+            "name": "priorityWeight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-realtimecontribution-priorityweight"
+          },
+          {
+            "type": "field",
+            "name": "latencyThreshold",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-realtimecontribution-latencythreshold"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-realtimecontribution"
+      },
       "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": {
-        "fragment": "[Exposed=InterestGroupBiddingAndScoringScriptRunnerGlobalScope,\n Global=InterestGroupBiddingAndScoringScriptRunnerGlobalScope]\ninterface InterestGroupBiddingAndScoringScriptRunnerGlobalScope : InterestGroupScriptRunnerGlobalScope {\n\n  readonly attribute ForDebuggingOnly forDebuggingOnly;\n};",
+        "fragment": "[Exposed=InterestGroupBiddingAndScoringScriptRunnerGlobalScope,\n Global=InterestGroupBiddingAndScoringScriptRunnerGlobalScope]\ninterface InterestGroupBiddingAndScoringScriptRunnerGlobalScope : InterestGroupScriptRunnerGlobalScope {\n  readonly attribute ForDebuggingOnly forDebuggingOnly;\n  readonly attribute RealTimeReporting realTimeReporting;\n};",
         "type": "interface",
         "name": "InterestGroupBiddingAndScoringScriptRunnerGlobalScope",
         "inheritance": "InterestGroupScriptRunnerGlobalScope",
@@ -1549,6 +1739,22 @@
             "special": "",
             "readonly": true,
             "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingandscoringscriptrunnerglobalscope-fordebuggingonly"
+          },
+          {
+            "type": "attribute",
+            "name": "realTimeReporting",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RealTimeReporting"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingandscoringscriptrunnerglobalscope-realtimereporting"
           }
         ],
         "extAttrs": [
@@ -3951,6 +4157,7 @@
       ],
       "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": [
         "ForDebuggingOnly",
+        "RealTimeReporting",
         "InterestGroupBiddingAndScoringScriptRunnerGlobalScope"
       ],
       "InterestGroupBiddingScriptRunnerGlobalScope": [
@@ -3982,15 +4189,22 @@
         "GenerateBidInterestGroup"
       ],
       "AuctionAdInterestGroupKey": [],
+      "AuctionRealTimeReportingConfig": [],
       "AuctionAdConfig": [
+        "AuctionRealTimeReportingConfig",
         "AuctionAdConfig",
         "AbortSignal"
       ],
       "InterestGroupScriptRunnerGlobalScope": [],
       "ForDebuggingOnly": [],
+      "RealTimeReporting": [
+        "RealTimeContribution"
+      ],
+      "RealTimeContribution": [],
       "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": [
         "InterestGroupScriptRunnerGlobalScope",
-        "ForDebuggingOnly"
+        "ForDebuggingOnly",
+        "RealTimeReporting"
       ],
       "InterestGroupBiddingScriptRunnerGlobalScope": [
         "InterestGroupBiddingAndScoringScriptRunnerGlobalScope",

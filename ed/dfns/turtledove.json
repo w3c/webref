@@ -994,6 +994,46 @@
       "definedIn": "pre"
     },
     {
+      "id": "dictdef-auctionrealtimereportingconfig",
+      "href": "https://wicg.github.io/turtledove/#dictdef-auctionrealtimereportingconfig",
+      "linkingText": [
+        "AuctionRealTimeReportingConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-auctionrealtimereportingconfig-type",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionrealtimereportingconfig-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionRealTimeReportingConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-auctionadconfig",
       "href": "https://wicg.github.io/turtledove/#dictdef-auctionadconfig",
       "linkingText": [
@@ -1542,6 +1582,48 @@
       "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-auctionnonce",
       "linkingText": [
         "auctionNonce"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAdConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-auctionadconfig-sellerrealtimereportingconfig",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-sellerrealtimereportingconfig",
+      "linkingText": [
+        "sellerRealTimeReportingConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAdConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-auctionadconfig-perbuyerrealtimereportingconfig",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-perbuyerrealtimereportingconfig",
+      "linkingText": [
+        "perBuyerRealTimeReportingConfig"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2633,6 +2715,291 @@
       "definedIn": "prose"
     },
     {
+      "id": "number-of-user-buckets",
+      "href": "https://wicg.github.io/turtledove/#number-of-user-buckets",
+      "linkingText": [
+        "number of user buckets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "real-time-reporting-header",
+        "href": "https://wicg.github.io/turtledove/#real-time-reporting-header",
+        "title": "realTimeReporting",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "number-of-platform-buckets",
+      "href": "https://wicg.github.io/turtledove/#number-of-platform-buckets",
+      "linkingText": [
+        "number of platform buckets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "real-time-reporting-header",
+        "href": "https://wicg.github.io/turtledove/#real-time-reporting-header",
+        "title": "realTimeReporting",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sample-real-time-contributions",
+      "href": "https://wicg.github.io/turtledove/#sample-real-time-contributions",
+      "linkingText": [
+        "sample real time contributions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "real-time-reporting-header",
+        "href": "https://wicg.github.io/turtledove/#real-time-reporting-header",
+        "title": "realTimeReporting",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bit-pack",
+      "href": "https://wicg.github.io/turtledove/#bit-pack",
+      "linkingText": [
+        "bit pack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "real-time-reporting-header",
+        "href": "https://wicg.github.io/turtledove/#real-time-reporting-header",
+        "title": "realTimeReporting",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "send-a-real-time-report",
+      "href": "https://wicg.github.io/turtledove/#send-a-real-time-report",
+      "linkingText": [
+        "send a real time report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "real-time-reporting-header",
+        "href": "https://wicg.github.io/turtledove/#real-time-reporting-header",
+        "title": "realTimeReporting",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "send-real-time-reports",
+      "href": "https://wicg.github.io/turtledove/#send-real-time-reports",
+      "linkingText": [
+        "send real time reports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "real-time-reporting-header",
+        "href": "https://wicg.github.io/turtledove/#real-time-reporting-header",
+        "title": "realTimeReporting",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "platform-contribution-buckets",
+      "href": "https://wicg.github.io/turtledove/#platform-contribution-buckets",
+      "linkingText": [
+        "platform contribution buckets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform-contribution-header",
+        "href": "https://wicg.github.io/turtledove/#platform-contribution-header",
+        "title": "Platform contribution",
+        "number": "5.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bidding-script-failure-bucket",
+      "href": "https://wicg.github.io/turtledove/#bidding-script-failure-bucket",
+      "linkingText": [
+        "bidding script failure bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform-contribution-header",
+        "href": "https://wicg.github.io/turtledove/#platform-contribution-header",
+        "title": "Platform contribution",
+        "number": "5.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scoring-script-failure-bucket",
+      "href": "https://wicg.github.io/turtledove/#scoring-script-failure-bucket",
+      "linkingText": [
+        "scoring script failure bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform-contribution-header",
+        "href": "https://wicg.github.io/turtledove/#platform-contribution-header",
+        "title": "Platform contribution",
+        "number": "5.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trusted-bidding-signals-failure-bucket",
+      "href": "https://wicg.github.io/turtledove/#trusted-bidding-signals-failure-bucket",
+      "linkingText": [
+        "trusted bidding signals failure bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform-contribution-header",
+        "href": "https://wicg.github.io/turtledove/#platform-contribution-header",
+        "title": "Platform contribution",
+        "number": "5.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trusted-scoring-signals-failure-bucket",
+      "href": "https://wicg.github.io/turtledove/#trusted-scoring-signals-failure-bucket",
+      "linkingText": [
+        "trusted scoring signals failure bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform-contribution-header",
+        "href": "https://wicg.github.io/turtledove/#platform-contribution-header",
+        "title": "Platform contribution",
+        "number": "5.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "platform-contribution-priority-weight",
+      "href": "https://wicg.github.io/turtledove/#platform-contribution-priority-weight",
+      "linkingText": [
+        "platform contribution priority weight"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform-contribution-header",
+        "href": "https://wicg.github.io/turtledove/#platform-contribution-header",
+        "title": "Platform contribution",
+        "number": "5.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "add-a-platform-contribution",
+      "href": "https://wicg.github.io/turtledove/#add-a-platform-contribution",
+      "linkingText": [
+        "add a platform contribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "platform-contribution-header",
+        "href": "https://wicg.github.io/turtledove/#platform-contribution-header",
+        "title": "Platform contribution",
+        "number": "5.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "epsilon",
+      "href": "https://wicg.github.io/turtledove/#epsilon",
+      "linkingText": [
+        "epsilon"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rappor-header",
+        "href": "https://wicg.github.io/turtledove/#rappor-header",
+        "title": "Apply noise (RAPPOR)",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "apply-rappor-noise",
+      "href": "https://wicg.github.io/turtledove/#apply-rappor-noise",
+      "linkingText": [
+        "apply RAPPOR noise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rappor-header",
+        "href": "https://wicg.github.io/turtledove/#rappor-header",
+        "title": "Apply noise (RAPPOR)",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "auction-nonce",
       "href": "https://wicg.github.io/turtledove/#auction-nonce",
       "linkingText": [
@@ -3468,6 +3835,128 @@
       "definedIn": "pre"
     },
     {
+      "id": "realtimereporting",
+      "href": "https://wicg.github.io/turtledove/#realtimereporting",
+      "linkingText": [
+        "RealTimeReporting"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-realtimereporting-contributetohistogram-contribution-contribution",
+      "href": "https://wicg.github.io/turtledove/#dom-realtimereporting-contributetohistogram-contribution-contribution",
+      "linkingText": [
+        "contribution"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "RealTimeReporting/contributeToHistogram(contribution)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-realtimecontribution",
+      "href": "https://wicg.github.io/turtledove/#dictdef-realtimecontribution",
+      "linkingText": [
+        "RealTimeContribution"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-realtimecontribution-bucket",
+      "href": "https://wicg.github.io/turtledove/#dom-realtimecontribution-bucket",
+      "linkingText": [
+        "bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RealTimeContribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-realtimecontribution-priorityweight",
+      "href": "https://wicg.github.io/turtledove/#dom-realtimecontribution-priorityweight",
+      "linkingText": [
+        "priorityWeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RealTimeContribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-realtimecontribution-latencythreshold",
+      "href": "https://wicg.github.io/turtledove/#dom-realtimecontribution-latencythreshold",
+      "linkingText": [
+        "latencyThreshold"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RealTimeContribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "interestgroupbiddingandscoringscriptrunnerglobalscope",
       "href": "https://wicg.github.io/turtledove/#interestgroupbiddingandscoringscriptrunnerglobalscope",
       "linkingText": [
@@ -3491,6 +3980,27 @@
       "href": "https://wicg.github.io/turtledove/#interestgroupbiddingandscoringscriptrunnerglobalscope-fordebuggingonly",
       "linkingText": [
         "forDebuggingOnly"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InterestGroupBiddingAndScoringScriptRunnerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interestgroupbiddingandscoringscriptrunnerglobalscope-realtimereporting",
+      "href": "https://wicg.github.io/turtledove/#interestgroupbiddingandscoringscriptrunnerglobalscope-realtimereporting",
+      "linkingText": [
+        "realTimeReporting"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3601,6 +4111,69 @@
       "type": "method",
       "for": [
         "ForDebuggingOnly"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-interestgroupbiddingandscoringscriptrunnerglobalscope-realtimereporting",
+      "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingandscoringscriptrunnerglobalscope-realtimereporting",
+      "linkingText": [
+        "realTimeReporting"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InterestGroupBiddingAndScoringScriptRunnerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interestgroupbiddingandscoringscriptrunnerglobalscope-real-time-reporting-contributions",
+      "href": "https://wicg.github.io/turtledove/#interestgroupbiddingandscoringscriptrunnerglobalscope-real-time-reporting-contributions",
+      "linkingText": [
+        "real time reporting contributions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InterestGroupBiddingAndScoringScriptRunnerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "global-scopes",
+        "href": "https://wicg.github.io/turtledove/#global-scopes",
+        "title": "Global scopes",
+        "number": "8.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-realtimereporting-contributetohistogram",
+      "href": "https://wicg.github.io/turtledove/#dom-realtimereporting-contributetohistogram",
+      "linkingText": [
+        "contributeToHistogram(contribution)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "RealTimeReporting"
       ],
       "access": "public",
       "informative": false,
@@ -4875,6 +5448,24 @@
       "href": "https://wicg.github.io/turtledove/#get-uuid-from-string",
       "linkingText": [
         "get uuid from string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "common-algorithms",
+        "href": "https://wicg.github.io/turtledove/#common-algorithms",
+        "title": "11. Common Algorithms"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "insert-entries-to-map",
+      "href": "https://wicg.github.io/turtledove/#insert-entries-to-map",
+      "linkingText": [
+        "insert entries to map"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8158,6 +8749,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "auction-config-seller-real-time-reporting-config",
+      "href": "https://wicg.github.io/turtledove/#auction-config-seller-real-time-reporting-config",
+      "linkingText": [
+        "seller real time reporting config"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "auction config"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auction-config-header",
+        "href": "https://wicg.github.io/turtledove/#auction-config-header",
+        "title": "Auction config",
+        "number": "14.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "auction-config-per-buyer-real-time-reporting-config",
+      "href": "https://wicg.github.io/turtledove/#auction-config-per-buyer-real-time-reporting-config",
+      "linkingText": [
+        "per buyer real time reporting config"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "auction config"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auction-config-header",
+        "href": "https://wicg.github.io/turtledove/#auction-config-header",
+        "title": "Auction config",
+        "number": "14.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "wait-until-configuration-input-promises-resolve",
       "href": "https://wicg.github.io/turtledove/#wait-until-configuration-input-promises-resolve",
       "linkingText": [
@@ -10531,6 +11164,128 @@
       "type": "dfn",
       "for": [
         "auction report info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "leading-bid-info-header",
+        "href": "https://wicg.github.io/turtledove/#leading-bid-info-header",
+        "title": "Leading bid info",
+        "number": "14.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "auction-report-info-real-time-reporting-contributions-map",
+      "href": "https://wicg.github.io/turtledove/#auction-report-info-real-time-reporting-contributions-map",
+      "linkingText": [
+        "real time reporting contributions map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "auction report info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "leading-bid-info-header",
+        "href": "https://wicg.github.io/turtledove/#leading-bid-info-header",
+        "title": "Leading bid info",
+        "number": "14.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "real-time-reporting-contributions-map",
+      "href": "https://wicg.github.io/turtledove/#real-time-reporting-contributions-map",
+      "linkingText": [
+        "real time reporting contributions map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "leading-bid-info-header",
+        "href": "https://wicg.github.io/turtledove/#leading-bid-info-header",
+        "title": "Leading bid info",
+        "number": "14.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "real-time-reporting-contribution",
+      "href": "https://wicg.github.io/turtledove/#real-time-reporting-contribution",
+      "linkingText": [
+        "real time reporting contribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "leading-bid-info-header",
+        "href": "https://wicg.github.io/turtledove/#leading-bid-info-header",
+        "title": "Leading bid info",
+        "number": "14.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "real-time-reporting-contribution-bucket",
+      "href": "https://wicg.github.io/turtledove/#real-time-reporting-contribution-bucket",
+      "linkingText": [
+        "bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "real time reporting contribution"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "leading-bid-info-header",
+        "href": "https://wicg.github.io/turtledove/#leading-bid-info-header",
+        "title": "Leading bid info",
+        "number": "14.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "real-time-reporting-contribution-priority-weight",
+      "href": "https://wicg.github.io/turtledove/#real-time-reporting-contribution-priority-weight",
+      "linkingText": [
+        "priority weight"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "real time reporting contribution"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "leading-bid-info-header",
+        "href": "https://wicg.github.io/turtledove/#leading-bid-info-header",
+        "title": "Leading bid info",
+        "number": "14.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "real-time-reporting-contribution-latency-threshold",
+      "href": "https://wicg.github.io/turtledove/#real-time-reporting-contribution-latency-threshold",
+      "linkingText": [
+        "latency threshold"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "real time reporting contribution"
       ],
       "access": "private",
       "informative": false,

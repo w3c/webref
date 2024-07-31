@@ -27,6 +27,8 @@ dictionary AuctionAdConfig {
   sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;
   Promise<undefined> additionalBids;
   DOMString auctionNonce;
+  AuctionRealTimeReportingConfig sellerRealTimeReportingConfig;
+  record<USVString, AuctionRealTimeReportingConfig> perBuyerRealTimeReportingConfig;
   sequence<AuctionAdConfig> componentAuctions = [];
   AbortSignal? signal;
   Promise<boolean> resolveToConfig;
