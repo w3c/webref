@@ -8350,7 +8350,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softmax(MLOperand input,\n                    unsigned long axis,\n                    optional MLOperatorOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand softmax(MLOperand input,\n                    [EnforceRange] unsigned long axis,\n                    optional MLOperatorOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -8386,7 +8386,14 @@
                 {
                   "type": "argument",
                   "name": "axis",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "idlType": {
                     "type": "argument-type",
                     "extAttrs": [],

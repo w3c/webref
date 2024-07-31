@@ -260,7 +260,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand softmax(MLOperand input,\n                    unsigned long axis,\n                    optional MLOperatorOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand softmax(MLOperand input,\n                    [EnforceRange] unsigned long axis,\n                    optional MLOperatorOptions options = {});\n};"
     },
     {
       "spec": {

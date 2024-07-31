@@ -536,7 +536,7 @@ partial interface MLGraphBuilder {
 
 partial interface MLGraphBuilder {
   MLOperand softmax(MLOperand input,
-                    unsigned long axis,
+                    [EnforceRange] unsigned long axis,
                     optional MLOperatorOptions options = {});
 };
 
