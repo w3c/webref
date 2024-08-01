@@ -1,225 +1,225 @@
 {
   "spec": {
     "title": "Source Map",
-    "url": "https://tc39.es/source-map"
+    "url": "https://tc39.es/source-map/"
   },
   "headings": [
     {
       "id": "title",
-      "href": "https://tc39.es/source-map#title",
+      "href": "https://tc39.es/source-map/#title",
       "level": 1,
       "title": "Source Map"
     },
     {
       "id": "profile-and-date",
-      "href": "https://tc39.es/source-map#profile-and-date",
+      "href": "https://tc39.es/source-map/#profile-and-date",
       "level": 2,
       "title": "Stage 0: Strawman, 22 July 2024"
     },
     {
       "id": "abstract",
-      "href": "https://tc39.es/source-map#abstract",
+      "href": "https://tc39.es/source-map/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
       "id": "toc",
-      "href": "https://tc39.es/source-map#toc",
+      "href": "https://tc39.es/source-map/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "license",
-      "href": "https://tc39.es/source-map#license",
+      "href": "https://tc39.es/source-map/#license",
       "level": 3,
       "title": "License"
     },
     {
       "id": "introduction",
-      "href": "https://tc39.es/source-map#introduction",
+      "href": "https://tc39.es/source-map/#introduction",
       "level": 3,
       "title": "Introduction"
     },
     {
       "id": "background",
-      "href": "https://tc39.es/source-map#background",
+      "href": "https://tc39.es/source-map/#background",
       "level": 2,
       "title": "Background",
       "number": "1"
     },
     {
       "id": "terminology",
-      "href": "https://tc39.es/source-map#terminology",
+      "href": "https://tc39.es/source-map/#terminology",
       "level": 2,
       "title": "Terminology",
       "number": "2"
     },
     {
       "id": "general-goals",
-      "href": "https://tc39.es/source-map#general-goals",
+      "href": "https://tc39.es/source-map/#general-goals",
       "level": 2,
       "title": "General Goals",
       "number": "3"
     },
     {
       "id": "source-map-format",
-      "href": "https://tc39.es/source-map#source-map-format",
+      "href": "https://tc39.es/source-map/#source-map-format",
       "level": 2,
       "title": "Source Map Format",
       "number": "4"
     },
     {
       "id": "mappings-structure",
-      "href": "https://tc39.es/source-map#mappings-structure",
+      "href": "https://tc39.es/source-map/#mappings-structure",
       "level": 3,
       "title": "Mappings Structure",
       "number": "4.1"
     },
     {
       "id": "resolving-sources",
-      "href": "https://tc39.es/source-map#resolving-sources",
+      "href": "https://tc39.es/source-map/#resolving-sources",
       "level": 3,
       "title": "Resolving Sources",
       "number": "4.2"
     },
     {
       "id": "extensions",
-      "href": "https://tc39.es/source-map#extensions",
+      "href": "https://tc39.es/source-map/#extensions",
       "level": 3,
       "title": "Extensions",
       "number": "4.3"
     },
     {
       "id": "index-map",
-      "href": "https://tc39.es/source-map#index-map",
+      "href": "https://tc39.es/source-map/#index-map",
       "level": 2,
       "title": "Index Map",
       "number": "5"
     },
     {
       "id": "section",
-      "href": "https://tc39.es/source-map#section",
+      "href": "https://tc39.es/source-map/#section",
       "level": 3,
       "title": "Section",
       "number": "5.1"
     },
     {
       "id": "conventions",
-      "href": "https://tc39.es/source-map#conventions",
+      "href": "https://tc39.es/source-map/#conventions",
       "level": 2,
       "title": "Conventions",
       "number": "6"
     },
     {
       "id": "source-map-naming",
-      "href": "https://tc39.es/source-map#source-map-naming",
+      "href": "https://tc39.es/source-map/#source-map-naming",
       "level": 3,
       "title": "Source Map Naming",
       "number": "6.1"
     },
     {
       "id": "linking-generated-code",
-      "href": "https://tc39.es/source-map#linking-generated-code",
+      "href": "https://tc39.es/source-map/#linking-generated-code",
       "level": 3,
       "title": "Linking generated code to source maps",
       "number": "6.2"
     },
     {
       "id": "linking-through-http-headers",
-      "href": "https://tc39.es/source-map#linking-through-http-headers",
+      "href": "https://tc39.es/source-map/#linking-through-http-headers",
       "level": 4,
       "title": "Linking through HTTP headers",
       "number": "6.2.1"
     },
     {
       "id": "linking-through-inline-annotations",
-      "href": "https://tc39.es/source-map#linking-through-inline-annotations",
+      "href": "https://tc39.es/source-map/#linking-through-inline-annotations",
       "level": 4,
       "title": "Linking through inline annotations",
       "number": "6.2.2"
     },
     {
       "id": "extraction-methods-for-javascript-sources",
-      "href": "https://tc39.es/source-map#extraction-methods-for-javascript-sources",
+      "href": "https://tc39.es/source-map/#extraction-methods-for-javascript-sources",
       "level": 5,
       "title": "Extraction methods for JavaScript sources",
       "number": "6.2.2.1"
     },
     {
       "id": "extraction-methods-for-css-sources",
-      "href": "https://tc39.es/source-map#extraction-methods-for-css-sources",
+      "href": "https://tc39.es/source-map/#extraction-methods-for-css-sources",
       "level": 5,
       "title": "Extraction methods for CSS sources",
       "number": "6.2.2.2"
     },
     {
       "id": "extraction-methods-for-webassembly-binaries",
-      "href": "https://tc39.es/source-map#extraction-methods-for-webassembly-binaries",
+      "href": "https://tc39.es/source-map/#extraction-methods-for-webassembly-binaries",
       "level": 5,
       "title": "Extraction methods for WebAssembly binaries",
       "number": "6.2.2.3"
     },
     {
       "id": "linking-evald-code-to-named-generated-code",
-      "href": "https://tc39.es/source-map#linking-evald-code-to-named-generated-code",
+      "href": "https://tc39.es/source-map/#linking-evald-code-to-named-generated-code",
       "level": 3,
       "title": "Linking eval’d code to named generated code",
       "number": "6.3"
     },
     {
       "id": "language-neutral-stack-mapping-notes",
-      "href": "https://tc39.es/source-map#language-neutral-stack-mapping-notes",
+      "href": "https://tc39.es/source-map/#language-neutral-stack-mapping-notes",
       "level": 2,
       "title": "Language Neutral Stack Mapping Notes",
       "number": "7"
     },
     {
       "id": "multi-level-mapping-notes",
-      "href": "https://tc39.es/source-map#multi-level-mapping-notes",
+      "href": "https://tc39.es/source-map/#multi-level-mapping-notes",
       "level": 2,
       "title": "Multi-level Mapping Notes",
       "number": "8"
     },
     {
       "id": "fetching-source-maps",
-      "href": "https://tc39.es/source-map#fetching-source-maps",
+      "href": "https://tc39.es/source-map/#fetching-source-maps",
       "level": 2,
       "title": "Fetching Source Maps",
       "number": "9"
     },
     {
       "id": "index",
-      "href": "https://tc39.es/source-map#index",
+      "href": "https://tc39.es/source-map/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "href": "https://tc39.es/source-map#index-defined-here",
+      "href": "https://tc39.es/source-map/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "href": "https://tc39.es/source-map#index-defined-elsewhere",
+      "href": "https://tc39.es/source-map/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "href": "https://tc39.es/source-map#references",
+      "href": "https://tc39.es/source-map/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "href": "https://tc39.es/source-map#normative",
+      "href": "https://tc39.es/source-map/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "href": "https://tc39.es/source-map#informative",
+      "href": "https://tc39.es/source-map/#informative",
       "level": 3,
       "title": "Informative References"
     }
