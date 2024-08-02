@@ -475,9 +475,9 @@
       ]
     },
     {
-      "name": "text-box-edge",
-      "href": "https://drafts.csswg.org/css-inline-3/#propdef-text-box-edge",
-      "value": "leading | [ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?",
+      "name": "line-fit-edge",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-line-fit-edge",
+      "value": "leading | <text-edge>",
       "initial": "leading",
       "appliesTo": "inline boxes",
       "inherited": "yes",
@@ -489,56 +489,72 @@
         {
           "name": "leading",
           "prose": "Use the ascent/descent plus any positive half-leading. Margin/padding/border is ignored for the purpose of sizing the line box.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-edge-leading",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-leading",
           "type": "value",
           "value": "leading"
         },
         {
           "name": "text",
           "prose": "Use the text-over baseline/text-under baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-edge-text",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-text",
           "type": "value",
           "value": "text"
         },
         {
           "name": "cap",
           "prose": "Use the cap-height baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-edge-cap",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-cap",
           "type": "value",
           "value": "cap"
         },
         {
           "name": "ex",
           "prose": "Use the x-height baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-edge-ex",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-ex",
           "type": "value",
           "value": "ex"
         },
         {
           "name": "ideographic",
           "prose": "Use the ideographic-over baseline/ideographic-under baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-edge-ideographic",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-ideographic",
           "type": "value",
           "value": "ideographic"
         },
         {
           "name": "ideographic-ink",
           "prose": "Use the ideographic-ink-over baseline/ideographic-ink-under baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-edge-ideographic-ink",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-ideographic-ink",
           "type": "value",
           "value": "ideographic-ink"
         },
         {
           "name": "alphabetic",
           "prose": "Use the alphabetic baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-edge-alphabetic",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-alphabetic",
           "type": "value",
           "value": "alphabetic"
         }
       ],
       "styleDeclaration": [
-        "text-box-edge",
-        "textBoxEdge"
+        "line-fit-edge",
+        "lineFitEdge"
+      ]
+    },
+    {
+      "name": "text-box",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-text-box",
+      "value": "normal | [ start | end | both ] || [ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?",
+      "initial": "normal",
+      "appliesTo": "block containers and inline boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-box",
+        "textBox"
       ]
     },
     {
@@ -585,6 +601,22 @@
       "styleDeclaration": [
         "text-box-trim",
         "textBoxTrim"
+      ]
+    },
+    {
+      "name": "text-box-edge",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-text-box-edge",
+      "value": "auto | <text-edge>",
+      "initial": "auto",
+      "appliesTo": "block containers and inline boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-box-edge",
+        "textBoxEdge"
       ]
     },
     {
@@ -788,5 +820,64 @@
   ],
   "atrules": [],
   "selectors": [],
-  "values": []
+  "values": [
+    {
+      "name": "<text-edge>",
+      "prose": "The <text-edge> value, which identifies specific font metrics, expands to",
+      "href": "https://drafts.csswg.org/css-inline-3/#typedef-text-edge",
+      "type": "type",
+      "value": "[ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?",
+      "values": [
+        {
+          "name": "leading",
+          "prose": "Use the ascent/descent plus any positive half-leading. Margin/padding/border is ignored for the purpose of sizing the line box.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-leading",
+          "type": "value",
+          "value": "leading"
+        },
+        {
+          "name": "text",
+          "prose": "Use the text-over baseline/text-under baseline.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-text",
+          "type": "value",
+          "value": "text"
+        },
+        {
+          "name": "cap",
+          "prose": "Use the cap-height baseline.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-cap",
+          "type": "value",
+          "value": "cap"
+        },
+        {
+          "name": "ex",
+          "prose": "Use the x-height baseline.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-ex",
+          "type": "value",
+          "value": "ex"
+        },
+        {
+          "name": "ideographic",
+          "prose": "Use the ideographic-over baseline/ideographic-under baseline.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-ideographic",
+          "type": "value",
+          "value": "ideographic"
+        },
+        {
+          "name": "ideographic-ink",
+          "prose": "Use the ideographic-ink-over baseline/ideographic-ink-under baseline.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-ideographic-ink",
+          "type": "value",
+          "value": "ideographic-ink"
+        },
+        {
+          "name": "alphabetic",
+          "prose": "Use the alphabetic baseline.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-alphabetic",
+          "type": "value",
+          "value": "alphabetic"
+        }
+      ]
+    }
+  ]
 }
