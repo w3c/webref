@@ -1,0 +1,1320 @@
+{
+  "spec": {
+    "title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+    "url": "https://www.w3.org/TR/png-3/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-byte",
+      "href": "https://www.w3.org/TR/png-3/#dfn-byte",
+      "linkingText": [
+        "byte"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-byte-order",
+      "href": "https://www.w3.org/TR/png-3/#dfn-byte-order",
+      "linkingText": [
+        "byte order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-chromaticity",
+      "href": "https://www.w3.org/TR/png-3/#dfn-chromaticity",
+      "linkingText": [
+        "chromaticity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-composited",
+      "href": "https://www.w3.org/TR/png-3/#dfn-composited",
+      "linkingText": [
+        "composited",
+        "composite",
+        "composite (verb)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-datastream",
+      "href": "https://www.w3.org/TR/png-3/#dfn-datastream",
+      "linkingText": [
+        "datastream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-deflate",
+      "href": "https://www.w3.org/TR/png-3/#dfn-deflate",
+      "linkingText": [
+        "deflate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-frame",
+      "href": "https://www.w3.org/TR/png-3/#dfn-frame",
+      "linkingText": [
+        "frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-frame-buffer",
+      "href": "https://www.w3.org/TR/png-3/#dfn-frame-buffer",
+      "linkingText": [
+        "frame buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-fully-transparent-black",
+      "href": "https://www.w3.org/TR/png-3/#dfn-fully-transparent-black",
+      "linkingText": [
+        "fully transparent black"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-gamma-value",
+      "href": "https://www.w3.org/TR/png-3/#dfn-gamma-value",
+      "linkingText": [
+        "gamma value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-gamma",
+      "href": "https://www.w3.org/TR/png-3/#dfn-gamma",
+      "linkingText": [
+        "gamma"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-hdr",
+      "href": "https://www.w3.org/TR/png-3/#dfn-hdr",
+      "linkingText": [
+        "HDR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-hlg",
+      "href": "https://www.w3.org/TR/png-3/#dfn-hlg",
+      "linkingText": [
+        "HLG"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-full-range-image",
+      "href": "https://www.w3.org/TR/png-3/#dfn-full-range-image",
+      "linkingText": [
+        "full-range image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-image-data",
+      "href": "https://www.w3.org/TR/png-3/#dfn-image-data",
+      "linkingText": [
+        "image data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-interlaced-png-image",
+      "href": "https://www.w3.org/TR/png-3/#dfn-interlaced-png-image",
+      "linkingText": [
+        "interlaced PNG image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-lossless",
+      "href": "https://www.w3.org/TR/png-3/#dfn-lossless",
+      "linkingText": [
+        "lossless"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-luminance",
+      "href": "https://www.w3.org/TR/png-3/#dfn-luminance",
+      "linkingText": [
+        "luminance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "3LZ77",
+      "href": "https://www.w3.org/TR/png-3/#3LZ77",
+      "linkingText": [
+        "LZ77"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-narrow-range-image",
+      "href": "https://www.w3.org/TR/png-3/#dfn-narrow-range-image",
+      "linkingText": [
+        "narrow-range image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-network-byte-order",
+      "href": "https://www.w3.org/TR/png-3/#dfn-network-byte-order",
+      "linkingText": [
+        "network byte order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-pq",
+      "href": "https://www.w3.org/TR/png-3/#dfn-pq",
+      "linkingText": [
+        "PQ"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-png-editor",
+      "href": "https://www.w3.org/TR/png-3/#dfn-png-editor",
+      "linkingText": [
+        "PNG editor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-png-four-byte-unsigned-integer",
+      "href": "https://www.w3.org/TR/png-3/#dfn-png-four-byte-unsigned-integer",
+      "linkingText": [
+        "PNG four-byte unsigned integer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-png-two-byte-unsigned-integer",
+      "href": "https://www.w3.org/TR/png-3/#dfn-png-two-byte-unsigned-integer",
+      "linkingText": [
+        "PNG two-byte unsigned integer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-sample",
+      "href": "https://www.w3.org/TR/png-3/#dfn-sample",
+      "linkingText": [
+        "sample"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-scanline",
+      "href": "https://www.w3.org/TR/png-3/#dfn-scanline",
+      "linkingText": [
+        "scanline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-sdr",
+      "href": "https://www.w3.org/TR/png-3/#dfn-sdr",
+      "linkingText": [
+        "SDR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-stop",
+      "href": "https://www.w3.org/TR/png-3/#dfn-stop",
+      "linkingText": [
+        "stop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-transfer-function",
+      "href": "https://www.w3.org/TR/png-3/#dfn-transfer-function",
+      "linkingText": [
+        "transfer function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-white-point",
+      "href": "https://www.w3.org/TR/png-3/#dfn-white-point",
+      "linkingText": [
+        "white point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-zlib",
+      "href": "https://www.w3.org/TR/png-3/#dfn-zlib",
+      "linkingText": [
+        "zlib"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-eotf",
+      "href": "https://www.w3.org/TR/png-3/#dfn-eotf",
+      "linkingText": [
+        "EOTF"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-oetf",
+      "href": "https://www.w3.org/TR/png-3/#dfn-oetf",
+      "linkingText": [
+        "OETF"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-definitions-and-abbreviated-terms",
+        "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+        "title": "Terms, definitions, and abbreviated terms",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-static-image",
+      "href": "https://www.w3.org/TR/png-3/#dfn-static-image",
+      "linkingText": [
+        "static image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "static-and-animated-images",
+        "href": "https://www.w3.org/TR/png-3/#static-and-animated-images",
+        "title": "Static and Animated images",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-animated-png",
+      "href": "https://www.w3.org/TR/png-3/#dfn-animated-png",
+      "linkingText": [
+        "Animated PNG"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "static-and-animated-images",
+        "href": "https://www.w3.org/TR/png-3/#static-and-animated-images",
+        "title": "Static and Animated images",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-animated-image",
+      "href": "https://www.w3.org/TR/png-3/#dfn-animated-image",
+      "linkingText": [
+        "animated image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "static-and-animated-images",
+        "href": "https://www.w3.org/TR/png-3/#static-and-animated-images",
+        "title": "Static and Animated images",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3sourceImage",
+      "href": "https://www.w3.org/TR/png-3/#3sourceImage",
+      "linkingText": [
+        "Source image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "images",
+        "href": "https://www.w3.org/TR/png-3/#images",
+        "title": "Images",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "3referenceImage",
+      "href": "https://www.w3.org/TR/png-3/#3referenceImage",
+      "linkingText": [
+        "Reference image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "images",
+        "href": "https://www.w3.org/TR/png-3/#images",
+        "title": "Images",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "3pixel",
+      "href": "https://www.w3.org/TR/png-3/#3pixel",
+      "linkingText": [
+        "pixels"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "images",
+        "href": "https://www.w3.org/TR/png-3/#images",
+        "title": "Images",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3channel",
+      "href": "https://www.w3.org/TR/png-3/#3channel",
+      "linkingText": [
+        "channel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "images",
+        "href": "https://www.w3.org/TR/png-3/#images",
+        "title": "Images",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3alpha",
+      "href": "https://www.w3.org/TR/png-3/#3alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "images",
+        "href": "https://www.w3.org/TR/png-3/#images",
+        "title": "Images",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3PNGimage",
+      "href": "https://www.w3.org/TR/png-3/#3PNGimage",
+      "linkingText": [
+        "PNG image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "images",
+        "href": "https://www.w3.org/TR/png-3/#images",
+        "title": "Images",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "3deliveredImage",
+      "href": "https://www.w3.org/TR/png-3/#3deliveredImage",
+      "linkingText": [
+        "Delivered image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "images",
+        "href": "https://www.w3.org/TR/png-3/#images",
+        "title": "Images",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "3alphaSeparation",
+      "href": "https://www.w3.org/TR/png-3/#3alphaSeparation",
+      "linkingText": [
+        "Alpha separation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.Implied-alpha",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.Implied-alpha",
+        "title": "Alpha separation",
+        "number": "4.4.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "3indexing",
+      "href": "https://www.w3.org/TR/png-3/#3indexing",
+      "linkingText": [
+        "indexing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.Indexing",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.Indexing",
+        "title": "Indexing",
+        "number": "4.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3indexedColour",
+      "href": "https://www.w3.org/TR/png-3/#3indexedColour",
+      "linkingText": [
+        "indexed-color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.Indexing",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.Indexing",
+        "title": "Indexing",
+        "number": "4.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3palette",
+      "href": "https://www.w3.org/TR/png-3/#3palette",
+      "linkingText": [
+        "palette"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.Indexing",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.Indexing",
+        "title": "Indexing",
+        "number": "4.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3alphaTable",
+      "href": "https://www.w3.org/TR/png-3/#3alphaTable",
+      "linkingText": [
+        "alpha table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.Indexing",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.Indexing",
+        "title": "Indexing",
+        "number": "4.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3RGBmerging",
+      "href": "https://www.w3.org/TR/png-3/#3RGBmerging",
+      "linkingText": [
+        "RGB merging"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.RGBMerging",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.RGBMerging",
+        "title": "RGB merging",
+        "number": "4.4.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "3alphaCompaction",
+      "href": "https://www.w3.org/TR/png-3/#3alphaCompaction",
+      "linkingText": [
+        "Alpha compaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.Alpha-indexing",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.Alpha-indexing",
+        "title": "Alpha compaction",
+        "number": "4.4.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "3sampleDepthScaling",
+      "href": "https://www.w3.org/TR/png-3/#3sampleDepthScaling",
+      "linkingText": [
+        "Sample depth scaling"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.Scaling",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.Scaling",
+        "title": "Sample depth scaling",
+        "number": "4.4.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-truecolor-with-alpha",
+      "href": "https://www.w3.org/TR/png-3/#dfn-truecolor-with-alpha",
+      "linkingText": [
+        "Truecolor with alpha"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.PNGImage",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.PNGImage",
+        "title": "PNG image",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-greyscale-with-alpha",
+      "href": "https://www.w3.org/TR/png-3/#dfn-greyscale-with-alpha",
+      "linkingText": [
+        "Greyscale with alpha"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.PNGImage",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.PNGImage",
+        "title": "PNG image",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "3truecolour",
+      "href": "https://www.w3.org/TR/png-3/#3truecolour",
+      "linkingText": [
+        "Truecolor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.PNGImage",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.PNGImage",
+        "title": "PNG image",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-greyscale",
+      "href": "https://www.w3.org/TR/png-3/#dfn-greyscale",
+      "linkingText": [
+        "Greyscale"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.PNGImage",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.PNGImage",
+        "title": "PNG image",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "3greyscale",
+      "href": "https://www.w3.org/TR/png-3/#3greyscale",
+      "linkingText": [
+        "grey sample"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.PNGImage",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.PNGImage",
+        "title": "PNG image",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3passExtraction",
+      "href": "https://www.w3.org/TR/png-3/#3passExtraction",
+      "linkingText": [
+        "Pass extraction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.EncodingPassAbs",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.EncodingPassAbs",
+        "title": "Pass extraction",
+        "number": "4.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3reducedImage",
+      "href": "https://www.w3.org/TR/png-3/#3reducedImage",
+      "linkingText": [
+        "reduced images"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.EncodingPassAbs",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.EncodingPassAbs",
+        "title": "Pass extraction",
+        "number": "4.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3ancillaryChunk",
+      "href": "https://www.w3.org/TR/png-3/#3ancillaryChunk",
+      "linkingText": [
+        "ancillary chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "4Concepts.FormatTypes",
+        "href": "https://www.w3.org/TR/png-3/#4Concepts.FormatTypes",
+        "title": "Chunk types",
+        "number": "4.8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-output-buffer",
+      "href": "https://www.w3.org/TR/png-3/#dfn-output-buffer",
+      "linkingText": [
+        "output buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "apng-output-buffer",
+        "href": "https://www.w3.org/TR/png-3/#apng-output-buffer",
+        "title": "Output buffer",
+        "number": "4.9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-canvas",
+      "href": "https://www.w3.org/TR/png-3/#dfn-canvas",
+      "linkingText": [
+        "canvas"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "apng-canvas",
+        "href": "https://www.w3.org/TR/png-3/#apng-canvas",
+        "title": "Canvas",
+        "number": "4.9.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3PNGdatastream",
+      "href": "https://www.w3.org/TR/png-3/#3PNGdatastream",
+      "linkingText": [
+        "PNG datastream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "5Introduction",
+        "href": "https://www.w3.org/TR/png-3/#5Introduction",
+        "title": "PNG datastream",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3chunk",
+      "href": "https://www.w3.org/TR/png-3/#3chunk",
+      "linkingText": [
+        "chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "5Chunk-layout",
+        "href": "https://www.w3.org/TR/png-3/#5Chunk-layout",
+        "title": "Chunk layout",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-private-field-values",
+      "href": "https://www.w3.org/TR/png-3/#dfn-private-field-values",
+      "linkingText": [
+        "private field values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-field-value-extensibility",
+        "href": "https://www.w3.org/TR/png-3/#sec-field-value-extensibility",
+        "title": "Private field values",
+        "number": "5.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3colourType",
+      "href": "https://www.w3.org/TR/png-3/#3colourType",
+      "linkingText": [
+        "color type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "6Colour-values",
+        "href": "https://www.w3.org/TR/png-3/#6Colour-values",
+        "title": "Color types and values",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3filter",
+      "href": "https://www.w3.org/TR/png-3/#3filter",
+      "linkingText": [
+        "filter method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "7Filtering",
+        "href": "https://www.w3.org/TR/png-3/#7Filtering",
+        "title": "Filtering",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "3criticalChunk",
+      "href": "https://www.w3.org/TR/png-3/#3criticalChunk",
+      "linkingText": [
+        "critical chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "11CcGen",
+        "href": "https://www.w3.org/TR/png-3/#11CcGen",
+        "title": "Introduction"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-gamma-encoding",
+      "href": "https://www.w3.org/TR/png-3/#dfn-gamma-encoding",
+      "linkingText": [
+        "gamma encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "12Encoder-gamma-handling",
+        "href": "https://www.w3.org/TR/png-3/#12Encoder-gamma-handling",
+        "title": "Encoder gamma handling",
+        "number": "12.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

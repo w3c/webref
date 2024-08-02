@@ -1,0 +1,65 @@
+{
+  "spec": {
+    "title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+    "url": "https://www.w3.org/TR/png-3/"
+  },
+  "algorithms": [
+    {
+      "html": "Variations:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If output is to another PNG datastream instead of a <a href=\"https://www.w3.org/TR/png-3/#dfn-frame-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-frame-buffer-9\">frame buffer</a>, lines 21, 22, 33, and 34 should be changed\n        along the following lines\n\n          <pre aria-busy=\"false\"><code class=\"hljs javascript\"><span class=\"hljs-comment\">/*\n * Gamma encode for storage in output datastream.\n * Convert to integer sample value.\n */</span>\ngamout = pow(comppix, outfile_gamma);\noutpix[i] = (int) (gamout * out_maxsample + <span class=\"hljs-number\">0.5</span>);</code></pre>Also, it becomes necessary to process background pixels when alpha is zero, rather than just skipping pixels. Thus, line 15\nwill need to be replaced by copies of lines 17-23, but processing background instead of foreground pixel values."
+        },
+        {
+          "html": "If the sample depths of the output file, foreground file, and background file are all the same, and the three <a href=\"https://www.w3.org/TR/png-3/#dfn-gamma-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-gamma-value-26\">gamma\n        values</a> also match, then the no-compositing code in lines 14-23 reduces to copying pixel values from the input file to\n        the output file if alpha is one, or copying pixel values from background to output file if alpha is zero. Since alpha is\n        typically either zero or one for the vast majority of pixels in an image, this is a significant saving. No <a href=\"https://www.w3.org/TR/png-3/#dfn-gamma\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-gamma-22\">gamma</a>\n        computations are needed for most pixels."
+        },
+        {
+          "html": "When the sample depths and <a href=\"https://www.w3.org/TR/png-3/#dfn-gamma-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-gamma-value-27\">gamma values</a> all match, it may appear attractive to skip the <a href=\"https://www.w3.org/TR/png-3/#dfn-gamma\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-gamma-23\">gamma</a> decoding\n        and encoding (lines 28-31, 33-34) and just perform line 32 using <a href=\"https://www.w3.org/TR/png-3/#dfn-gamma\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-gamma-24\">gamma</a>-encoded sample values. Although this does not\n        have too bad an effect on image quality, the time savings are small if alpha values of zero and one are treated as special\n        cases as recommended here."
+        },
+        {
+          "html": "If the original pixel values of the background image are no longer available, only processed <a href=\"https://www.w3.org/TR/png-3/#dfn-frame-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-frame-buffer-10\">frame buffer</a> pixels\n        left by display of the background image, then lines 30 and 31 need to extract intensity from the <a href=\"https://www.w3.org/TR/png-3/#dfn-frame-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-frame-buffer-11\">frame buffer</a> pixel\n        values using code such as\n\n          <pre aria-busy=\"false\"><code class=\"hljs javascript\"><span class=\"hljs-comment\">/*\n * Convert frame buffer value into intensity sample.\n */</span>\ngcvideo = (float) fbpix[i] / fb_maxsample;\nlinbg = pow(gcvideo, display_exponent);</code></pre>However, some roundoff error can result, so it is better to have the original background pixels available if at all possible."
+        },
+        {
+          "html": "Note that lines 18-22 are performing exactly the same <a href=\"https://www.w3.org/TR/png-3/#dfn-gamma\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-gamma-25\">gamma</a> computation that is done when no alpha channel is\n        present. If the no-alpha case is handled with a lookup table, the same lookup table can be used here. Lines 28-31 and 33-34\n        can also be done with (different) lookup tables."
+        },
+        {
+          "html": "Integer arithmetic can be used instead of floating point, providing care is taken to maintain sufficient precision\n        throughout."
+        }
+      ]
+    },
+    {
+      "html": "To prevent this type of problem while allowing for future extension, constraints are placed on both the behavior of\n      <a href=\"https://www.w3.org/TR/png-3/#dfn-png-editor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-png-editor-11\">PNG editors</a> and the allowed ordering requirements for chunks. The safe-to-copy bit defines the proper handling of\n      unrecognized chunks in a datastream that is being modified.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If a chunk's safe-to-copy bit is 1, the chunk may be copied to a modified PNG datastream whether or not the <a href=\"https://www.w3.org/TR/png-3/#dfn-png-editor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-png-editor-12\">PNG\n        editor</a> recognizes the chunk type, and regardless of the extent of the datastream modifications."
+        },
+        {
+          "html": "If a chunk's safe-to-copy bit is 0, it indicates that the chunk depends on the <a href=\"https://www.w3.org/TR/png-3/#dfn-image-data\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-image-data-34\">image data</a>. If the program has\n        made <strong>any</strong> changes to <strong>critical</strong> chunks, including addition, modification, deletion, or\n        reordering of critical chunks, then unrecognized unsafe chunks shall <strong>not</strong> be copied to the output PNG\n        datastream. (Of course, if the program <strong>does</strong> recognize the chunk, it can choose to output an appropriately\n        modified version.)"
+        },
+        {
+          "html": "A <a href=\"https://www.w3.org/TR/png-3/#dfn-png-editor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-png-editor-13\">PNG editor</a> is always allowed to copy all unrecognized ancillary chunks if it has only added, deleted,\n        modified, or reordered <strong>ancillary</strong> chunks. This implies that it is not permissible for ancillary chunks to\n        depend on other ancillary chunks."
+        },
+        {
+          "html": "<a href=\"https://www.w3.org/TR/png-3/#dfn-png-editor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-png-editor-14\">PNG editors</a> shall terminate on encountering an unrecognized critical chunk type, because there is no way to be\n          certain that a valid datastream will result from modifying a datastream containing such a chunk. (Simply discarding the\n          chunk is not good enough, because it might have unknown implications for the interpretation of other chunks.) The\n          safe/unsafe mechanism is intended for use with ancillary chunks. The safe-to-copy bit will always be 0 for critical\n          chunks."
+        }
+      ]
+    },
+    {
+      "html": "This registration updates the earlier one:",
+      "rationale": "change",
+      "steps": [
+        {
+          "html": "The old one points to an expired Internet Draft. This updated registration points to a <abbr title=\"World Wide Web Consortium\">W3C</abbr> Recommendation."
+        },
+        {
+          "html": "The old contact person is sadly deceased. The new contact email is a publicly archived <abbr title=\"World Wide Web Consortium\">W3C</abbr> mailing list for the PNG\n            Working Group."
+        },
+        {
+          "html": "Change controller is <abbr title=\"World Wide Web Consortium\">W3C</abbr>"
+        }
+      ]
+    }
+  ]
+}

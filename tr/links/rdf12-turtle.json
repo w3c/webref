@@ -38,18 +38,6 @@
       "https://www.w3.org/2001/sw/Europe/": {},
       "https://www.w3.org/2001/tag/2002/0129-mime": {},
       "https://www.w3.org/2002/06/registering-mediatype": {},
-      "https://www.w3.org/2023/Process-20231103/": {
-        "anchors": [
-          "recs-and-notes",
-          "allow-new-features"
-        ]
-      },
-      "https://www.w3.org/Consortium/Patent-Policy/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/html5/": {},
       "https://www.w3.org/TR/i18n-glossary/": {
@@ -57,26 +45,32 @@
           "dfn-code-point"
         ]
       },
+      "https://www.w3.org/TR/rdf-mt/": {
+        "anchors": [
+          "Reif"
+        ]
+      },
       "https://www.w3.org/TR/rdf11-concepts/": {},
       "https://www.w3.org/TR/rdf12-concepts/": {
         "anchors": [
           "dfn-rdf-graph",
+          "dfn-triple-term",
           "dfn-rdf-term",
-          "dfn-subject",
           "dfn-object",
           "dfn-rdf-triple",
           "dfn-dir-lang-string",
           "dfn-iri",
           "dfn-literal",
           "dfn-blank-node",
-          "dfn-quoted-triple",
           "dfn-relative-iri",
           "dfn-language-tag",
           "dfn-base-direction",
           "dfn-datatype-iri",
           "dfn-lexical-form",
           "dfn-blank-node-identifier",
-          "dfn-asserted-triple",
+          "dfn-reified-triple",
+          "dfn-subject",
+          "dfn-reifier",
           "dfn-rdf-string"
         ]
       },
@@ -85,7 +79,8 @@
       "https://www.w3.org/TR/rdf12-schema/": {},
       "https://www.w3.org/TR/rdf12-semantics/": {
         "anchors": [
-          "rdf-collections"
+          "rdf-collections",
+          "Reif"
         ]
       },
       "https://www.w3.org/TR/rdf12-trig/": {},
@@ -128,13 +123,25 @@
         ]
       },
       "https://www.w3.org/groups/wg/rdf-star": {},
-      "https://www.w3.org/groups/wg/rdf-star/ipr": {}
+      "https://www.w3.org/groups/wg/rdf-star/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20231103/": {
+        "anchors": [
+          "recs-and-notes",
+          "allow-new-features"
+        ]
+      }
     },
     "autolinks": {
       "https://www.w3.org/TR/rdf12-concepts/": {
         "anchors": [
-          "dfn-quoted-triple",
-          "dfn-asserted-triple"
+          "dfn-reified-triple",
+          "dfn-reifier"
         ]
       }
     }

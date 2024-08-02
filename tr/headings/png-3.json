@@ -1,0 +1,1243 @@
+{
+  "spec": {
+    "title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+    "url": "https://www.w3.org/TR/png-3/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/png-3/#title",
+      "level": 1,
+      "title": "Portable Network Graphics (PNG) Specification (Third Edition)"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/png-3/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/png-3/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "scope",
+      "href": "https://www.w3.org/TR/png-3/#scope",
+      "level": 2,
+      "title": "Scope",
+      "number": "2"
+    },
+    {
+      "id": "terms-definitions-and-abbreviated-terms",
+      "href": "https://www.w3.org/TR/png-3/#terms-definitions-and-abbreviated-terms",
+      "level": 2,
+      "title": "Terms, definitions, and abbreviated terms",
+      "number": "3"
+    },
+    {
+      "id": "concepts",
+      "href": "https://www.w3.org/TR/png-3/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "4"
+    },
+    {
+      "id": "static-and-animated-images",
+      "href": "https://www.w3.org/TR/png-3/#static-and-animated-images",
+      "level": 3,
+      "title": "Static and Animated images",
+      "number": "4.1"
+    },
+    {
+      "id": "images",
+      "href": "https://www.w3.org/TR/png-3/#images",
+      "level": 3,
+      "title": "Images",
+      "number": "4.2"
+    },
+    {
+      "id": "4Concepts.ColourSpaces",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.ColourSpaces",
+      "level": 3,
+      "title": "Color spaces",
+      "number": "4.3"
+    },
+    {
+      "id": "4Concepts.PNGImageTransformation",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.PNGImageTransformation",
+      "level": 3,
+      "title": "Reference image to PNG image transformation",
+      "number": "4.4"
+    },
+    {
+      "id": "4Concepts.Introduction",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.Introduction",
+      "level": 3,
+      "title": "Introduction"
+    },
+    {
+      "id": "4Concepts.Implied-alpha",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.Implied-alpha",
+      "level": 4,
+      "title": "Alpha separation",
+      "number": "4.4.1"
+    },
+    {
+      "id": "4Concepts.Indexing",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.Indexing",
+      "level": 4,
+      "title": "Indexing",
+      "number": "4.4.2"
+    },
+    {
+      "id": "4Concepts.RGBMerging",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.RGBMerging",
+      "level": 4,
+      "title": "RGB merging",
+      "number": "4.4.3"
+    },
+    {
+      "id": "4Concepts.Alpha-indexing",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.Alpha-indexing",
+      "level": 4,
+      "title": "Alpha compaction",
+      "number": "4.4.4"
+    },
+    {
+      "id": "4Concepts.Scaling",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.Scaling",
+      "level": 4,
+      "title": "Sample depth scaling",
+      "number": "4.4.5"
+    },
+    {
+      "id": "4Concepts.PNGImage",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.PNGImage",
+      "level": 3,
+      "title": "PNG image",
+      "number": "4.5"
+    },
+    {
+      "id": "4Concepts.Encoding",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.Encoding",
+      "level": 3,
+      "title": "Encoding the PNG image",
+      "number": "4.6"
+    },
+    {
+      "id": "4Concepts.EncodingIntro",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.EncodingIntro",
+      "level": 3,
+      "title": "Introduction"
+    },
+    {
+      "id": "4Concepts.EncodingPassAbs",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.EncodingPassAbs",
+      "level": 4,
+      "title": "Pass extraction",
+      "number": "4.6.1"
+    },
+    {
+      "id": "4Concepts.EncodingScanlineAbs",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.EncodingScanlineAbs",
+      "level": 4,
+      "title": "Scanline serialization",
+      "number": "4.6.2"
+    },
+    {
+      "id": "4Concepts.EncodingFiltering",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.EncodingFiltering",
+      "level": 4,
+      "title": "Filtering",
+      "number": "4.6.3"
+    },
+    {
+      "id": "4Concepts.EncodingCompression",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.EncodingCompression",
+      "level": 4,
+      "title": "Compression",
+      "number": "4.6.4"
+    },
+    {
+      "id": "4Concepts.EncodingChunking",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.EncodingChunking",
+      "level": 4,
+      "title": "Chunking",
+      "number": "4.6.5"
+    },
+    {
+      "id": "4Concepts.AncillInfo",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.AncillInfo",
+      "level": 3,
+      "title": "Additional information",
+      "number": "4.7"
+    },
+    {
+      "id": "4Concepts.Format",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.Format",
+      "level": 3,
+      "title": "PNG datastream",
+      "number": "4.8"
+    },
+    {
+      "id": "4Concepts.FormatChunks",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.FormatChunks",
+      "level": 4,
+      "title": "Chunks",
+      "number": "4.8.1"
+    },
+    {
+      "id": "4Concepts.FormatTypes",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.FormatTypes",
+      "level": 4,
+      "title": "Chunk types",
+      "number": "4.8.2"
+    },
+    {
+      "id": "apng-frame-based-animation",
+      "href": "https://www.w3.org/TR/png-3/#apng-frame-based-animation",
+      "level": 3,
+      "title": "APNG: frame-based animation",
+      "number": "4.9"
+    },
+    {
+      "id": "introduction-0",
+      "href": "https://www.w3.org/TR/png-3/#introduction-0",
+      "level": 3,
+      "title": "Introduction"
+    },
+    {
+      "id": "structure",
+      "href": "https://www.w3.org/TR/png-3/#structure",
+      "level": 4,
+      "title": "Structure",
+      "number": "4.9.1"
+    },
+    {
+      "id": "4Concepts.APNGSequence",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.APNGSequence",
+      "level": 4,
+      "title": "Sequence numbers",
+      "number": "4.9.2"
+    },
+    {
+      "id": "apng-output-buffer",
+      "href": "https://www.w3.org/TR/png-3/#apng-output-buffer",
+      "level": 4,
+      "title": "Output buffer",
+      "number": "4.9.3"
+    },
+    {
+      "id": "apng-canvas",
+      "href": "https://www.w3.org/TR/png-3/#apng-canvas",
+      "level": 4,
+      "title": "Canvas",
+      "number": "4.9.4"
+    },
+    {
+      "id": "4Concepts.Errors",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.Errors",
+      "level": 3,
+      "title": "Error handling",
+      "number": "4.10"
+    },
+    {
+      "id": "4Concepts.Registration",
+      "href": "https://www.w3.org/TR/png-3/#4Concepts.Registration",
+      "level": 3,
+      "title": "Extensions",
+      "number": "4.11"
+    },
+    {
+      "id": "5DataRep",
+      "href": "https://www.w3.org/TR/png-3/#5DataRep",
+      "level": 2,
+      "title": "Datastream structure",
+      "number": "5"
+    },
+    {
+      "id": "5Introduction",
+      "href": "https://www.w3.org/TR/png-3/#5Introduction",
+      "level": 3,
+      "title": "PNG datastream",
+      "number": "5.1"
+    },
+    {
+      "id": "5PNG-file-signature",
+      "href": "https://www.w3.org/TR/png-3/#5PNG-file-signature",
+      "level": 3,
+      "title": "PNG signature",
+      "number": "5.2"
+    },
+    {
+      "id": "5Chunk-layout",
+      "href": "https://www.w3.org/TR/png-3/#5Chunk-layout",
+      "level": 3,
+      "title": "Chunk layout",
+      "number": "5.3"
+    },
+    {
+      "id": "5Chunk-naming-conventions",
+      "href": "https://www.w3.org/TR/png-3/#5Chunk-naming-conventions",
+      "level": 3,
+      "title": "Chunk naming conventions",
+      "number": "5.4"
+    },
+    {
+      "id": "5CRC-algorithm",
+      "href": "https://www.w3.org/TR/png-3/#5CRC-algorithm",
+      "level": 3,
+      "title": "CRC algorithm",
+      "number": "5.5"
+    },
+    {
+      "id": "5ChunkOrdering",
+      "href": "https://www.w3.org/TR/png-3/#5ChunkOrdering",
+      "level": 3,
+      "title": "Chunk ordering",
+      "number": "5.6"
+    },
+    {
+      "id": "sec-defining-new-chunks",
+      "href": "https://www.w3.org/TR/png-3/#sec-defining-new-chunks",
+      "level": 3,
+      "title": "Defining chunks",
+      "number": "5.7"
+    },
+    {
+      "id": "sec-defining-public-chunks-general",
+      "href": "https://www.w3.org/TR/png-3/#sec-defining-public-chunks-general",
+      "level": 4,
+      "title": "General",
+      "number": "5.7.1"
+    },
+    {
+      "id": "sec-defining-public-chunks",
+      "href": "https://www.w3.org/TR/png-3/#sec-defining-public-chunks",
+      "level": 4,
+      "title": "Defining public chunks",
+      "number": "5.7.2"
+    },
+    {
+      "id": "sec-defining-private-chunks",
+      "href": "https://www.w3.org/TR/png-3/#sec-defining-private-chunks",
+      "level": 4,
+      "title": "Defining private chunks",
+      "number": "5.7.3"
+    },
+    {
+      "id": "sec-field-value-extensibility",
+      "href": "https://www.w3.org/TR/png-3/#sec-field-value-extensibility",
+      "level": 3,
+      "title": "Private field values",
+      "number": "5.8"
+    },
+    {
+      "id": "6Transformation",
+      "href": "https://www.w3.org/TR/png-3/#6Transformation",
+      "level": 2,
+      "title": "Reference image to PNG image transformation",
+      "number": "6"
+    },
+    {
+      "id": "6Colour-values",
+      "href": "https://www.w3.org/TR/png-3/#6Colour-values",
+      "level": 3,
+      "title": "Color types and values",
+      "number": "6.1"
+    },
+    {
+      "id": "6AlphaRepresentation",
+      "href": "https://www.w3.org/TR/png-3/#6AlphaRepresentation",
+      "level": 3,
+      "title": "Alpha representation",
+      "number": "6.2"
+    },
+    {
+      "id": "7Transformation",
+      "href": "https://www.w3.org/TR/png-3/#7Transformation",
+      "level": 2,
+      "title": "Encoding the PNG image as a PNG datastream",
+      "number": "7"
+    },
+    {
+      "id": "7Integers-and-byte-order",
+      "href": "https://www.w3.org/TR/png-3/#7Integers-and-byte-order",
+      "level": 3,
+      "title": "Integers and byte order",
+      "number": "7.1"
+    },
+    {
+      "id": "7Scanline",
+      "href": "https://www.w3.org/TR/png-3/#7Scanline",
+      "level": 3,
+      "title": "Scanlines",
+      "number": "7.2"
+    },
+    {
+      "id": "7Filtering",
+      "href": "https://www.w3.org/TR/png-3/#7Filtering",
+      "level": 3,
+      "title": "Filtering",
+      "number": "7.3"
+    },
+    {
+      "id": "8Interlace",
+      "href": "https://www.w3.org/TR/png-3/#8Interlace",
+      "level": 2,
+      "title": "Interlacing and pass extraction",
+      "number": "8"
+    },
+    {
+      "id": "8InterlaceIntro",
+      "href": "https://www.w3.org/TR/png-3/#8InterlaceIntro",
+      "level": 3,
+      "title": "Introduction"
+    },
+    {
+      "id": "8InterlaceMethods",
+      "href": "https://www.w3.org/TR/png-3/#8InterlaceMethods",
+      "level": 3,
+      "title": "Interlace methods",
+      "number": "8.1"
+    },
+    {
+      "id": "9Filters",
+      "href": "https://www.w3.org/TR/png-3/#9Filters",
+      "level": 2,
+      "title": "Filtering",
+      "number": "9"
+    },
+    {
+      "id": "9FtIntro",
+      "href": "https://www.w3.org/TR/png-3/#9FtIntro",
+      "level": 3,
+      "title": "Filter methods and filter types",
+      "number": "9.1"
+    },
+    {
+      "id": "9Filter-types",
+      "href": "https://www.w3.org/TR/png-3/#9Filter-types",
+      "level": 3,
+      "title": "Filter types for filter method 0",
+      "number": "9.2"
+    },
+    {
+      "id": "9Filter-type-3-Average",
+      "href": "https://www.w3.org/TR/png-3/#9Filter-type-3-Average",
+      "level": 3,
+      "title": "Filter type 3: Average",
+      "number": "9.3"
+    },
+    {
+      "id": "9Filter-type-4-Paeth",
+      "href": "https://www.w3.org/TR/png-3/#9Filter-type-4-Paeth",
+      "level": 3,
+      "title": "Filter type 4: Paeth",
+      "number": "9.4"
+    },
+    {
+      "id": "10Compression",
+      "href": "https://www.w3.org/TR/png-3/#10Compression",
+      "level": 2,
+      "title": "10. Compression"
+    },
+    {
+      "id": "10CompressionCM0",
+      "href": "https://www.w3.org/TR/png-3/#10CompressionCM0",
+      "level": 3,
+      "title": "Compression method 0",
+      "number": "10.1"
+    },
+    {
+      "id": "10CompressionFSL",
+      "href": "https://www.w3.org/TR/png-3/#10CompressionFSL",
+      "level": 3,
+      "title": "Compression of the sequence of filtered scanlines",
+      "number": "10.2"
+    },
+    {
+      "id": "10CompressionOtherUses",
+      "href": "https://www.w3.org/TR/png-3/#10CompressionOtherUses",
+      "level": 3,
+      "title": "Other uses of compression",
+      "number": "10.3"
+    },
+    {
+      "id": "11Chunks",
+      "href": "https://www.w3.org/TR/png-3/#11Chunks",
+      "level": 2,
+      "title": "11. Chunk specifications"
+    },
+    {
+      "id": "11Introduction",
+      "href": "https://www.w3.org/TR/png-3/#11Introduction",
+      "level": 3,
+      "title": "General",
+      "number": "11.1"
+    },
+    {
+      "id": "11Critical-chunks",
+      "href": "https://www.w3.org/TR/png-3/#11Critical-chunks",
+      "level": 3,
+      "title": "Critical chunks",
+      "number": "11.2"
+    },
+    {
+      "id": "11CcGen",
+      "href": "https://www.w3.org/TR/png-3/#11CcGen",
+      "level": 3,
+      "title": "Introduction"
+    },
+    {
+      "id": "11IHDR",
+      "href": "https://www.w3.org/TR/png-3/#11IHDR",
+      "level": 4,
+      "title": "IHDR Image header",
+      "number": "11.2.1"
+    },
+    {
+      "id": "11PLTE",
+      "href": "https://www.w3.org/TR/png-3/#11PLTE",
+      "level": 4,
+      "title": "PLTE Palette",
+      "number": "11.2.2"
+    },
+    {
+      "id": "11IDAT",
+      "href": "https://www.w3.org/TR/png-3/#11IDAT",
+      "level": 4,
+      "title": "IDAT Image data",
+      "number": "11.2.3"
+    },
+    {
+      "id": "11IEND",
+      "href": "https://www.w3.org/TR/png-3/#11IEND",
+      "level": 4,
+      "title": "IEND Image trailer",
+      "number": "11.2.4"
+    },
+    {
+      "id": "11Ancillary-chunks",
+      "href": "https://www.w3.org/TR/png-3/#11Ancillary-chunks",
+      "level": 3,
+      "title": "Ancillary chunks",
+      "number": "11.3"
+    },
+    {
+      "id": "11AcGen",
+      "href": "https://www.w3.org/TR/png-3/#11AcGen",
+      "level": 3,
+      "title": "Introduction"
+    },
+    {
+      "id": "11transinfo",
+      "href": "https://www.w3.org/TR/png-3/#11transinfo",
+      "level": 4,
+      "title": "Transparency information",
+      "number": "11.3.1"
+    },
+    {
+      "id": "11tRNS",
+      "href": "https://www.w3.org/TR/png-3/#11tRNS",
+      "level": 5,
+      "title": "tRNS Transparency",
+      "number": "11.3.1.1"
+    },
+    {
+      "id": "11addnlcolinfo",
+      "href": "https://www.w3.org/TR/png-3/#11addnlcolinfo",
+      "level": 4,
+      "title": "Color space information",
+      "number": "11.3.2"
+    },
+    {
+      "id": "11cHRM",
+      "href": "https://www.w3.org/TR/png-3/#11cHRM",
+      "level": 5,
+      "title": "cHRM Primary chromaticities and white point",
+      "number": "11.3.2.1"
+    },
+    {
+      "id": "11gAMA",
+      "href": "https://www.w3.org/TR/png-3/#11gAMA",
+      "level": 5,
+      "title": "gAMA Image gamma",
+      "number": "11.3.2.2"
+    },
+    {
+      "id": "11iCCP",
+      "href": "https://www.w3.org/TR/png-3/#11iCCP",
+      "level": 5,
+      "title": "iCCP Embedded ICC profile",
+      "number": "11.3.2.3"
+    },
+    {
+      "id": "11sBIT",
+      "href": "https://www.w3.org/TR/png-3/#11sBIT",
+      "level": 5,
+      "title": "sBIT Significant bits",
+      "number": "11.3.2.4"
+    },
+    {
+      "id": "11sRGB",
+      "href": "https://www.w3.org/TR/png-3/#11sRGB",
+      "level": 5,
+      "title": "sRGB Standard RGB color space",
+      "number": "11.3.2.5"
+    },
+    {
+      "id": "cICP-chunk",
+      "href": "https://www.w3.org/TR/png-3/#cICP-chunk",
+      "level": 5,
+      "title": "cICP Coding-independent code points for video signal type identification",
+      "number": "11.3.2.6"
+    },
+    {
+      "id": "mDCv-chunk",
+      "href": "https://www.w3.org/TR/png-3/#mDCv-chunk",
+      "level": 5,
+      "title": "mDCv Mastering Display Color Volume",
+      "number": "11.3.2.7"
+    },
+    {
+      "id": "cLLi-chunk",
+      "href": "https://www.w3.org/TR/png-3/#cLLi-chunk",
+      "level": 5,
+      "title": "cLLi Content Light Level Information",
+      "number": "11.3.2.8"
+    },
+    {
+      "id": "11textinfo",
+      "href": "https://www.w3.org/TR/png-3/#11textinfo",
+      "level": 4,
+      "title": "Textual information",
+      "number": "11.3.3"
+    },
+    {
+      "id": "11textIntro",
+      "href": "https://www.w3.org/TR/png-3/#11textIntro",
+      "level": 3,
+      "title": "Introduction"
+    },
+    {
+      "id": "11keywords",
+      "href": "https://www.w3.org/TR/png-3/#11keywords",
+      "level": 5,
+      "title": "Keywords and text strings",
+      "number": "11.3.3.1"
+    },
+    {
+      "id": "11tEXt",
+      "href": "https://www.w3.org/TR/png-3/#11tEXt",
+      "level": 5,
+      "title": "tEXt Textual data",
+      "number": "11.3.3.2"
+    },
+    {
+      "id": "11zTXt",
+      "href": "https://www.w3.org/TR/png-3/#11zTXt",
+      "level": 5,
+      "title": "zTXt Compressed textual data",
+      "number": "11.3.3.3"
+    },
+    {
+      "id": "11iTXt",
+      "href": "https://www.w3.org/TR/png-3/#11iTXt",
+      "level": 5,
+      "title": "iTXt International textual data",
+      "number": "11.3.3.4"
+    },
+    {
+      "id": "11addnlsiinfo",
+      "href": "https://www.w3.org/TR/png-3/#11addnlsiinfo",
+      "level": 4,
+      "title": "Miscellaneous information",
+      "number": "11.3.4"
+    },
+    {
+      "id": "11bKGD",
+      "href": "https://www.w3.org/TR/png-3/#11bKGD",
+      "level": 5,
+      "title": "bKGD Background color",
+      "number": "11.3.4.1"
+    },
+    {
+      "id": "11hIST",
+      "href": "https://www.w3.org/TR/png-3/#11hIST",
+      "level": 5,
+      "title": "hIST Image histogram",
+      "number": "11.3.4.2"
+    },
+    {
+      "id": "11pHYs",
+      "href": "https://www.w3.org/TR/png-3/#11pHYs",
+      "level": 5,
+      "title": "pHYs Physical pixel dimensions",
+      "number": "11.3.4.3"
+    },
+    {
+      "id": "11sPLT",
+      "href": "https://www.w3.org/TR/png-3/#11sPLT",
+      "level": 5,
+      "title": "sPLT Suggested palette",
+      "number": "11.3.4.4"
+    },
+    {
+      "id": "eXIf",
+      "href": "https://www.w3.org/TR/png-3/#eXIf",
+      "level": 5,
+      "title": "eXIf Exchangeable Image File (Exif) Profile",
+      "number": "11.3.4.5"
+    },
+    {
+      "id": "exif-general-recommendations",
+      "href": "https://www.w3.org/TR/png-3/#exif-general-recommendations",
+      "level": 6,
+      "title": "eXIf General Recommendations",
+      "number": "11.3.4.5.1"
+    },
+    {
+      "id": "exif-recommendations-for-decoders",
+      "href": "https://www.w3.org/TR/png-3/#exif-recommendations-for-decoders",
+      "level": 6,
+      "title": "eXIf Recommendations for Decoders",
+      "number": "11.3.4.5.2"
+    },
+    {
+      "id": "exif-recommendations-for-encoders",
+      "href": "https://www.w3.org/TR/png-3/#exif-recommendations-for-encoders",
+      "level": 6,
+      "title": "eXIf Recommendations for Encoders",
+      "number": "11.3.4.5.3"
+    },
+    {
+      "id": "11timestampinfo",
+      "href": "https://www.w3.org/TR/png-3/#11timestampinfo",
+      "level": 4,
+      "title": "Time stamp information",
+      "number": "11.3.5"
+    },
+    {
+      "id": "11tIME",
+      "href": "https://www.w3.org/TR/png-3/#11tIME",
+      "level": 5,
+      "title": "tIME Image last-modification time",
+      "number": "11.3.5.1"
+    },
+    {
+      "id": "animation-information",
+      "href": "https://www.w3.org/TR/png-3/#animation-information",
+      "level": 4,
+      "title": "Animation information",
+      "number": "11.3.6"
+    },
+    {
+      "id": "acTL-chunk",
+      "href": "https://www.w3.org/TR/png-3/#acTL-chunk",
+      "level": 5,
+      "title": "acTL Animation Control Chunk",
+      "number": "11.3.6.1"
+    },
+    {
+      "id": "fcTL-chunk",
+      "href": "https://www.w3.org/TR/png-3/#fcTL-chunk",
+      "level": 5,
+      "title": "fcTL Frame Control Chunk",
+      "number": "11.3.6.2"
+    },
+    {
+      "id": "fdAT-chunk",
+      "href": "https://www.w3.org/TR/png-3/#fdAT-chunk",
+      "level": 5,
+      "title": "fdAT Frame Data Chunk",
+      "number": "11.3.6.3"
+    },
+    {
+      "id": "12Encoders",
+      "href": "https://www.w3.org/TR/png-3/#12Encoders",
+      "level": 2,
+      "title": "12. PNG Encoders"
+    },
+    {
+      "id": "12Introduction",
+      "href": "https://www.w3.org/TR/png-3/#12Introduction",
+      "level": 3,
+      "title": "Introduction"
+    },
+    {
+      "id": "12Encoder-gamma-handling",
+      "href": "https://www.w3.org/TR/png-3/#12Encoder-gamma-handling",
+      "level": 3,
+      "title": "Encoder gamma handling",
+      "number": "12.1"
+    },
+    {
+      "id": "12Encoder-colour-handling",
+      "href": "https://www.w3.org/TR/png-3/#12Encoder-colour-handling",
+      "level": 3,
+      "title": "Encoder color handling",
+      "number": "12.2"
+    },
+    {
+      "id": "12Alpha-channel-creation",
+      "href": "https://www.w3.org/TR/png-3/#12Alpha-channel-creation",
+      "level": 3,
+      "title": "Alpha channel creation",
+      "number": "12.3"
+    },
+    {
+      "id": "12Sample-depth-scaling",
+      "href": "https://www.w3.org/TR/png-3/#12Sample-depth-scaling",
+      "level": 3,
+      "title": "Sample depth scaling",
+      "number": "12.4"
+    },
+    {
+      "id": "12Suggested-palettes",
+      "href": "https://www.w3.org/TR/png-3/#12Suggested-palettes",
+      "level": 3,
+      "title": "Suggested palettes",
+      "number": "12.5"
+    },
+    {
+      "id": "12Interlacing",
+      "href": "https://www.w3.org/TR/png-3/#12Interlacing",
+      "level": 3,
+      "title": "Interlacing",
+      "number": "12.6"
+    },
+    {
+      "id": "12Filter-selection",
+      "href": "https://www.w3.org/TR/png-3/#12Filter-selection",
+      "level": 3,
+      "title": "Filter selection",
+      "number": "12.7"
+    },
+    {
+      "id": "12Compression",
+      "href": "https://www.w3.org/TR/png-3/#12Compression",
+      "level": 3,
+      "title": "Compression",
+      "number": "12.8"
+    },
+    {
+      "id": "12Text-chunk-processing",
+      "href": "https://www.w3.org/TR/png-3/#12Text-chunk-processing",
+      "level": 3,
+      "title": "Text chunk processing",
+      "number": "12.9"
+    },
+    {
+      "id": "12Chunk-processing",
+      "href": "https://www.w3.org/TR/png-3/#12Chunk-processing",
+      "level": 3,
+      "title": "Chunking",
+      "number": "12.10"
+    },
+    {
+      "id": "12Use-of-private-chunks",
+      "href": "https://www.w3.org/TR/png-3/#12Use-of-private-chunks",
+      "level": 4,
+      "title": "Use of private chunks",
+      "number": "12.10.1"
+    },
+    {
+      "id": "12Private-type-and-method-codes",
+      "href": "https://www.w3.org/TR/png-3/#12Private-type-and-method-codes",
+      "level": 4,
+      "title": "Use of non-reserved field values",
+      "number": "12.10.2"
+    },
+    {
+      "id": "12Ancillary",
+      "href": "https://www.w3.org/TR/png-3/#12Ancillary",
+      "level": 4,
+      "title": "Ancillary chunks",
+      "number": "12.10.3"
+    },
+    {
+      "id": "13Decoders",
+      "href": "https://www.w3.org/TR/png-3/#13Decoders",
+      "level": 2,
+      "title": "13. PNG decoders and viewers"
+    },
+    {
+      "id": "13Introduction",
+      "href": "https://www.w3.org/TR/png-3/#13Introduction",
+      "level": 2,
+      "title": "Introduction"
+    },
+    {
+      "id": "error-handling",
+      "href": "https://www.w3.org/TR/png-3/#error-handling",
+      "level": 3,
+      "title": "Error handling",
+      "number": "13.1"
+    },
+    {
+      "id": "13Error-checking",
+      "href": "https://www.w3.org/TR/png-3/#13Error-checking",
+      "level": 3,
+      "title": "Error checking",
+      "number": "13.2"
+    },
+    {
+      "id": "13Security-considerations",
+      "href": "https://www.w3.org/TR/png-3/#13Security-considerations",
+      "level": 3,
+      "title": "Security considerations",
+      "number": "13.3"
+    },
+    {
+      "id": "Privacy-considerations",
+      "href": "https://www.w3.org/TR/png-3/#Privacy-considerations",
+      "level": 3,
+      "title": "Privacy considerations",
+      "number": "13.4"
+    },
+    {
+      "id": "13Chunking",
+      "href": "https://www.w3.org/TR/png-3/#13Chunking",
+      "level": 3,
+      "title": "Chunking",
+      "number": "13.5"
+    },
+    {
+      "id": "13Pixel-dimensions",
+      "href": "https://www.w3.org/TR/png-3/#13Pixel-dimensions",
+      "level": 3,
+      "title": "Pixel dimensions",
+      "number": "13.6"
+    },
+    {
+      "id": "13Text-chunk-processing",
+      "href": "https://www.w3.org/TR/png-3/#13Text-chunk-processing",
+      "level": 3,
+      "title": "Text chunk processing",
+      "number": "13.7"
+    },
+    {
+      "id": "13Decompression",
+      "href": "https://www.w3.org/TR/png-3/#13Decompression",
+      "level": 3,
+      "title": "Decompression",
+      "number": "13.8"
+    },
+    {
+      "id": "13Filtering",
+      "href": "https://www.w3.org/TR/png-3/#13Filtering",
+      "level": 3,
+      "title": "Filtering",
+      "number": "13.9"
+    },
+    {
+      "id": "13Progressive-display",
+      "href": "https://www.w3.org/TR/png-3/#13Progressive-display",
+      "level": 3,
+      "title": "Interlacing and progressive display",
+      "number": "13.10"
+    },
+    {
+      "id": "13Truecolour-image-handling",
+      "href": "https://www.w3.org/TR/png-3/#13Truecolour-image-handling",
+      "level": 3,
+      "title": "Truecolor image handling",
+      "number": "13.11"
+    },
+    {
+      "id": "13Sample-depth-rescaling",
+      "href": "https://www.w3.org/TR/png-3/#13Sample-depth-rescaling",
+      "level": 3,
+      "title": "Sample depth rescaling",
+      "number": "13.12"
+    },
+    {
+      "id": "13Decoder-gamma-handling",
+      "href": "https://www.w3.org/TR/png-3/#13Decoder-gamma-handling",
+      "level": 3,
+      "title": "Decoder gamma handling",
+      "number": "13.13"
+    },
+    {
+      "id": "13Decoder-colour-handling",
+      "href": "https://www.w3.org/TR/png-3/#13Decoder-colour-handling",
+      "level": 3,
+      "title": "Decoder color handling",
+      "number": "13.14"
+    },
+    {
+      "id": "13Background-colour",
+      "href": "https://www.w3.org/TR/png-3/#13Background-colour",
+      "level": 3,
+      "title": "Background color",
+      "number": "13.15"
+    },
+    {
+      "id": "13Alpha-channel-processing",
+      "href": "https://www.w3.org/TR/png-3/#13Alpha-channel-processing",
+      "level": 3,
+      "title": "Alpha channel processing",
+      "number": "13.16"
+    },
+    {
+      "id": "13Histogram-and-suggested-palette-usage",
+      "href": "https://www.w3.org/TR/png-3/#13Histogram-and-suggested-palette-usage",
+      "level": 3,
+      "title": "Histogram and suggested palette usage",
+      "number": "13.17"
+    },
+    {
+      "id": "14EditorsExt",
+      "href": "https://www.w3.org/TR/png-3/#14EditorsExt",
+      "level": 2,
+      "title": "14. Editors"
+    },
+    {
+      "id": "14Additional-chunk-types",
+      "href": "https://www.w3.org/TR/png-3/#14Additional-chunk-types",
+      "level": 3,
+      "title": "Additional chunk types",
+      "number": "14.1"
+    },
+    {
+      "id": "14Ordering",
+      "href": "https://www.w3.org/TR/png-3/#14Ordering",
+      "level": 3,
+      "title": "Behavior of PNG editors",
+      "number": "14.2"
+    },
+    {
+      "id": "14Ordering-of-chunks",
+      "href": "https://www.w3.org/TR/png-3/#14Ordering-of-chunks",
+      "level": 3,
+      "title": "Ordering of chunks",
+      "number": "14.3"
+    },
+    {
+      "id": "14Ordering-of-critical-chunks",
+      "href": "https://www.w3.org/TR/png-3/#14Ordering-of-critical-chunks",
+      "level": 4,
+      "title": "Ordering of critical chunks",
+      "number": "14.3.1"
+    },
+    {
+      "id": "14Ordering-of-ancillary-chunks",
+      "href": "https://www.w3.org/TR/png-3/#14Ordering-of-ancillary-chunks",
+      "level": 4,
+      "title": "Ordering of ancillary chunks",
+      "number": "14.3.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/png-3/#conformance",
+      "level": 2,
+      "title": "15. Conformance"
+    },
+    {
+      "id": "conformance-0",
+      "href": "https://www.w3.org/TR/png-3/#conformance-0",
+      "level": 3,
+      "title": "Conformance",
+      "number": "15.1"
+    },
+    {
+      "id": "15ConfIntro",
+      "href": "https://www.w3.org/TR/png-3/#15ConfIntro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "15.2"
+    },
+    {
+      "id": "15ConfObjectives",
+      "href": "https://www.w3.org/TR/png-3/#15ConfObjectives",
+      "level": 4,
+      "title": "Objectives",
+      "number": "15.2.1"
+    },
+    {
+      "id": "15ConfScope",
+      "href": "https://www.w3.org/TR/png-3/#15ConfScope",
+      "level": 4,
+      "title": "Scope",
+      "number": "15.2.2"
+    },
+    {
+      "id": "15ConformanceConf",
+      "href": "https://www.w3.org/TR/png-3/#15ConformanceConf",
+      "level": 3,
+      "title": "Conformance conditions",
+      "number": "15.3"
+    },
+    {
+      "id": "15FileConformance",
+      "href": "https://www.w3.org/TR/png-3/#15FileConformance",
+      "level": 4,
+      "title": "Conformance of PNG datastreams",
+      "number": "15.3.1"
+    },
+    {
+      "id": "15ConformanceEncoder",
+      "href": "https://www.w3.org/TR/png-3/#15ConformanceEncoder",
+      "level": 4,
+      "title": "Conformance of PNG encoders",
+      "number": "15.3.2"
+    },
+    {
+      "id": "15ConformanceDecoder",
+      "href": "https://www.w3.org/TR/png-3/#15ConformanceDecoder",
+      "level": 4,
+      "title": "Conformance of PNG decoders",
+      "number": "15.3.3"
+    },
+    {
+      "id": "15ConformanceEditor",
+      "href": "https://www.w3.org/TR/png-3/#15ConformanceEditor",
+      "level": 4,
+      "title": "Conformance of PNG editors",
+      "number": "15.3.4"
+    },
+    {
+      "id": "A-Conventions",
+      "href": "https://www.w3.org/TR/png-3/#A-Conventions",
+      "level": 2,
+      "title": "Internet Media Types",
+      "number": "A"
+    },
+    {
+      "id": "image-png",
+      "href": "https://www.w3.org/TR/png-3/#image-png",
+      "level": 3,
+      "title": "image/png",
+      "number": "A.1"
+    },
+    {
+      "id": "image-apng",
+      "href": "https://www.w3.org/TR/png-3/#image-apng",
+      "level": 3,
+      "title": "image/apng",
+      "number": "A.2"
+    },
+    {
+      "id": "B-NewChunksAppendix",
+      "href": "https://www.w3.org/TR/png-3/#B-NewChunksAppendix",
+      "level": 2,
+      "title": "Guidelines for private chunk types",
+      "number": "B"
+    },
+    {
+      "id": "C-GammaAppendix",
+      "href": "https://www.w3.org/TR/png-3/#C-GammaAppendix",
+      "level": 2,
+      "title": "Gamma and chromaticity",
+      "number": "C"
+    },
+    {
+      "id": "D-CRCAppendix",
+      "href": "https://www.w3.org/TR/png-3/#D-CRCAppendix",
+      "level": 2,
+      "title": "Sample CRC implementation",
+      "number": "D"
+    },
+    {
+      "id": "E-Resources",
+      "href": "https://www.w3.org/TR/png-3/#E-Resources",
+      "level": 2,
+      "title": "Online resources",
+      "number": "E"
+    },
+    {
+      "id": "E-Intro",
+      "href": "https://www.w3.org/TR/png-3/#E-Intro",
+      "level": 3,
+      "title": "Introduction"
+    },
+    {
+      "id": "E-icc-profile-specs",
+      "href": "https://www.w3.org/TR/png-3/#E-icc-profile-specs",
+      "level": 3,
+      "title": "ICC profile specifications",
+      "number": "E.1"
+    },
+    {
+      "id": "E-PNG-home-page",
+      "href": "https://www.w3.org/TR/png-3/#E-PNG-home-page",
+      "level": 3,
+      "title": "PNG web site",
+      "number": "E.2"
+    },
+    {
+      "id": "E-Sample-implementation",
+      "href": "https://www.w3.org/TR/png-3/#E-Sample-implementation",
+      "level": 3,
+      "title": "Sample implementation and test images",
+      "number": "E.3"
+    },
+    {
+      "id": "F-ChangeList",
+      "href": "https://www.w3.org/TR/png-3/#F-ChangeList",
+      "level": 2,
+      "title": "Changes",
+      "number": "F"
+    },
+    {
+      "id": "changes-since-the-candidate-recommendation-snapshot-of-21-september-2023-third-edition",
+      "href": "https://www.w3.org/TR/png-3/#changes-since-the-candidate-recommendation-snapshot-of-21-september-2023-third-edition",
+      "level": 3,
+      "title": "Changes since the Candidate Recommendation Snapshot of 21 September 2023 (Third Edition)",
+      "number": "F.1"
+    },
+    {
+      "id": "changes-since-the-working-draft-of-20-july-2023-third-edition",
+      "href": "https://www.w3.org/TR/png-3/#changes-since-the-working-draft-of-20-july-2023-third-edition",
+      "level": 3,
+      "title": "Changes since the Working Draft of 20 July 2023 (Third Edition)",
+      "number": "F.2"
+    },
+    {
+      "id": "changes-since-the-first-public-working-draft-of-25-october-2022-third-edition",
+      "href": "https://www.w3.org/TR/png-3/#changes-since-the-first-public-working-draft-of-25-october-2022-third-edition",
+      "level": 3,
+      "title": "Changes since the First Public Working Draft of 25 October 2022 (Third Edition)",
+      "number": "F.3"
+    },
+    {
+      "id": "changes-since-the-w3c-recommendation-of-10-november-2003-png-second-edition",
+      "href": "https://www.w3.org/TR/png-3/#changes-since-the-w3c-recommendation-of-10-november-2003-png-second-edition",
+      "level": 3,
+      "title": "Changes since the W3C Recommendation of 10 November 2003 (PNG Second Edition)",
+      "number": "F.4"
+    },
+    {
+      "id": "changes-between-first-and-second-editions",
+      "href": "https://www.w3.org/TR/png-3/#changes-between-first-and-second-editions",
+      "level": 3,
+      "title": "Changes between First and Second Editions",
+      "number": "F.5"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/png-3/#references",
+      "level": 2,
+      "title": "References",
+      "number": "G"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/png-3/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "G.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/png-3/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "G.2"
+    }
+  ]
+}

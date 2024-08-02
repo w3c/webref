@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-08-01T01:34:35.313Z",
+  "date": "2024-08-02T01:47:33.410Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -162,7 +162,6 @@
       "mediacapture-automation",
       "mediacapture-handle-actions",
       "permissions-registry",
-      "PNG-spec",
       "network-reporting",
       "sparql12-concepts",
       "web-nfc",
@@ -517,6 +516,7 @@
       "permissions-policy-1",
       "permissions",
       "picture-in-picture",
+      "png-3",
       "pointerevents3",
       "pointerlock-2",
       "presentation-api",
@@ -656,10 +656,10 @@
     ]
   },
   "stats": {
-    "crawled": 326,
-    "errors": 1
+    "crawled": 327,
+    "errors": 0
   },
-  "crawler": "reffy-17.1.1",
+  "crawler": "reffy-17.1.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -705,7 +705,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "1 August 2024",
+      "date": "2 August 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -9332,7 +9332,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-initdata-cenc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:25 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -9550,7 +9550,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-stream-mp4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:25 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -9722,10 +9722,11 @@
       ],
       "crawled": "https://www.w3.org/TR/encrypted-media-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:14:06 GMT"
+        "lastModified": "Thu, 01 Aug 2024 17:23:28 GMT"
       },
       "generator": "respec",
-      "date": "18 July 2024",
+      "date": "01 August 2024",
+      "revision": "cefbd73c13c8b69ad8e01b7dd75aea3788a7dc8b",
       "algorithms": "algorithms/encrypted-media-2.json",
       "links": "links/encrypted-media-2.json",
       "refs": "refs/encrypted-media-2.json",
@@ -13325,10 +13326,11 @@
       ],
       "crawled": "https://www.w3.org/TR/mst-content-hint/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 22 Jul 2021 01:29:07 GMT"
+        "lastModified": "Thu, 01 Aug 2024 14:15:46 GMT"
       },
       "generator": "respec",
-      "date": "22 July 2021",
+      "date": "01 August 2024",
+      "revision": "b2a6cfc345690424c7c00077ae8ca1e893252236",
       "algorithms": "algorithms/mst-content-hint.json",
       "links": "links/mst-content-hint.json",
       "refs": "refs/mst-content-hint.json",
@@ -14277,6 +14279,66 @@
       "ids": "ids/picture-in-picture.json"
     },
     {
+      "url": "https://www.w3.org/TR/png-3/",
+      "seriesComposition": "full",
+      "shortname": "png-3",
+      "series": {
+        "shortname": "png",
+        "currentSpecification": "png-3",
+        "title": "Portable Network Graphics (PNG)",
+        "shortTitle": "PNG",
+        "releaseUrl": "https://www.w3.org/TR/png/",
+        "nightlyUrl": "https://w3c.github.io/png/"
+      },
+      "seriesVersion": "3",
+      "formerNames": [
+        "PNG-spec"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Portable Network Graphics (PNG) Working Group",
+          "url": "https://www.w3.org/groups/wg/png/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/png-3/",
+        "status": "Candidate Recommendation Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/png/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/png",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+      "source": "w3c",
+      "shortTitle": "PNG",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/png-3/",
+        "https://w3c.github.io/png/"
+      ],
+      "crawled": "https://www.w3.org/TR/png-3/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 17 Jul 2024 18:36:41 GMT"
+      },
+      "generator": "respec",
+      "date": "18 July 2024",
+      "algorithms": "algorithms/png-3.json",
+      "links": "links/png-3.json",
+      "refs": "refs/png-3.json",
+      "dfns": "dfns/png-3.json",
+      "headings": "headings/png-3.json",
+      "ids": "ids/png-3.json"
+    },
+    {
       "url": "https://www.w3.org/TR/pointerevents3/",
       "seriesComposition": "full",
       "shortname": "pointerevents3",
@@ -14755,11 +14817,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-concepts/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 04 Jul 2024 21:43:32 GMT"
+        "lastModified": "Thu, 01 Aug 2024 22:30:13 GMT"
       },
       "generator": "respec",
-      "date": "04 July 2024",
-      "revision": "8a1700c7bb424fb9dba8255b972b354487c4be0c",
+      "date": "01 August 2024",
+      "revision": "6b7ea76dccfa4ec0d5c9b94cdce7d22dcc0536e5",
       "algorithms": "algorithms/rdf12-concepts.json",
       "links": "links/rdf12-concepts.json",
       "refs": "refs/rdf12-concepts.json",
@@ -15085,11 +15147,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-turtle/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Jun 2024 17:01:51 GMT"
+        "lastModified": "Thu, 01 Aug 2024 19:59:09 GMT"
       },
       "generator": "respec",
-      "date": "13 June 2024",
-      "revision": "ffc0f802255941d932bccf453e6f73dc04ecb5d8",
+      "date": "01 August 2024",
+      "revision": "ad74b945d4afdc205009a0cf96ebdc8ee26285c7",
       "links": "links/rdf12-turtle.json",
       "refs": "refs/rdf12-turtle.json",
       "dfns": "dfns/rdf12-turtle.json",
@@ -20863,8 +20925,7 @@
       "idl": "idl/webxr-hand-input.idl",
       "dfns": "dfns/webxr-hand-input-1.json",
       "headings": "headings/webxr-hand-input-1.json",
-      "ids": "ids/webxr-hand-input-1.json",
-      "error": "Error: Loading https://www.w3.org/TR/webxr-hand-input-1/ triggered HTTP status 520\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 317)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)"
+      "ids": "ids/webxr-hand-input-1.json"
     },
     {
       "url": "https://www.w3.org/TR/webxr-hit-test-1/",
