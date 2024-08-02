@@ -3,7 +3,11 @@
 // (https://github.com/w3c/webref)
 // Source: Direct Sockets API (https://wicg.github.io/direct-sockets/)
 
-[Exposed=(Window,Worker), SecureContext]
+[
+  Exposed=(Window,DedicatedWorker),
+  SecureContext,
+  IsolatedContext
+]
 interface TCPSocket {
   constructor(DOMString remoteAddress,
               unsigned short remotePort,
@@ -41,7 +45,11 @@ dictionary TCPSocketOpenInfo {
   unsigned short localPort;
 };
 
-[Exposed=(Window,Worker), SecureContext]
+[
+  Exposed=(Window,DedicatedWorker),
+  SecureContext,
+  IsolatedContext
+]
 interface UDPSocket {
   constructor(optional UDPSocketOptions options = {});
 
@@ -83,7 +91,11 @@ dictionary UDPSocketOpenInfo {
   unsigned short localPort;
 };
 
-[Exposed=(Window,Worker), SecureContext]
+[
+  Exposed=(Window,DedicatedWorker),
+  SecureContext,
+  IsolatedContext
+]
 interface TCPServerSocket {
   constructor(DOMString localAddress,
               optional TCPServerSocketOptions options = {});
