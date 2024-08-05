@@ -379,7 +379,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "The assurance that a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claim</a> from a specific <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> satisfies the\nbusiness requirements of a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a> for a particular use. This\nspecification defines how verifiers verify <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> and\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentations</a>.<br>\nIt also specifies that <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifiers</a> validate claims in <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> before relying on them. However, the means for such validation\nvary widely and are outside the scope of this specification. <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">Verifiers</a>\ntrust certain <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuers</a> for certain claims and apply their own rules to\ndetermine which claims in which <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential\">credentials</a> are suitable for use by their\nsystems."
+      "htmlProse": "The assurance that a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claim</a> from a specific <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> satisfies the business\nrequirements of a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a> for a particular use. This specification defines\nhow verifiers verify <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> and <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentations</a>. It also specifies that <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifiers</a> validate claims in\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> before relying on them. However, the means for such\nvalidation vary widely and are outside the scope of this specification.\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">Verifiers</a> trust certain <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuers</a> for certain claims and apply their own\nrules to determine which claims in which <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential\">credentials</a> are suitable for use by\ntheir systems."
     },
     {
       "id": "dfn-verifiable-credential",
@@ -399,7 +399,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A verifiable credential is a tamper-evident credential that has authorship that\ncan be cryptographically verified. Verifiable credentials can be used to build\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentations</a>, which can also be cryptographically verified."
+      "htmlProse": "A tamper-evident <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential\">credential</a> that has authorship that can be\ncryptographically verified. Verifiable credentials can be used to build\n<a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentations</a>, which can also be cryptographically verified."
     },
     {
       "id": "dfn-verifiable-data-registries",
@@ -440,7 +440,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A verifiable presentation is a tamper-evident presentation encoded in such a way\nthat authorship of the data can be trusted after a process of cryptographic\nverification. Certain types of verifiable presentations might contain data that\nis synthesized from, but do not contain, the original <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> (for example, zero-knowledge proofs)."
+      "htmlProse": "A tamper-evident presentation of information encoded in such a way that\nauthorship of the data can be trusted after a process of cryptographic\nverification. Certain types of verifiable presentations might contain data that\nis synthesized from, but do not contain, the original <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a>\n(for example, zero-knowledge proofs)."
     },
     {
       "id": "dfn-verify",
@@ -465,7 +465,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "The evaluation of whether a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> or <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentation</a> is an authentic and current statement of the issuer or\npresenter, respectively. This includes checking that: the credential (or\npresentation) conforms to the specification; the proof method is satisfied; and,\nif present, the status check succeeds. Verification of a credential does not\nimply evaluation of the truth of <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claims</a> encoded in the credential."
+      "htmlProse": "The evaluation of whether a <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> or <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentation</a> is an authentic and current statement of the issuer or presenter,\nrespectively. This includes checking that: the credential or presentation\nconforms to the specification; the securing mechanism is satisfied; and, if\npresent, the status check succeeds. Verification of a credential does not imply\nevaluation of the truth of <a href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims\">claims</a> encoded in the credential."
     },
     {
       "id": "dfn-verifier",
@@ -550,7 +550,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A Uniform Resource Locator, as defined by [<cite><a href=\"https://www.w3.org/TR/vc-data-model-2.0/#bib-url\" title=\"URL Standard\">URL</a></cite>]. URLs can be dereferenced such\nthat they result in a resource, such as a document. The rules for dereferencing,\nor fetching, a URL are defined by the URL <a href=\"https://url.spec.whatwg.org/#concept-url-scheme\">scheme</a>. This specification\ndoes not use the term URI or IRI because those terms have been deemed to be\nconfusing to Web developers."
+      "htmlProse": "A Uniform Resource Locator, as defined by the <cite><a href=\"https://url.spec.whatwg.org/\">URL Standard</a></cite>. URLs can be\ndereferenced such that they result in a resource, such as a document. The rules\nfor dereferencing, or fetching, a URL are defined by the URL <a href=\"https://url.spec.whatwg.org/#concept-url-scheme\">scheme</a>.\nThis specification does not use the term URI or IRI because those terms have\nbeen deemed to be confusing to Web developers."
     },
     {
       "id": "dfn-property",
@@ -644,7 +644,7 @@
         "id": "contexts",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#contexts",
         "title": "Contexts",
-        "number": "4.2"
+        "number": "4.3"
       },
       "definedIn": "dt"
     },
@@ -663,7 +663,7 @@
         "id": "identifiers",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#identifiers",
         "title": "Identifiers",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "dt"
     },
@@ -683,7 +683,7 @@
         "id": "types",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#types",
         "title": "Types",
-        "number": "4.4"
+        "number": "4.5"
       },
       "definedIn": "dt"
     },
@@ -702,7 +702,7 @@
         "id": "names-and-descriptions",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#names-and-descriptions",
         "title": "Names and Descriptions",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "dt"
     },
@@ -721,7 +721,7 @@
         "id": "names-and-descriptions",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#names-and-descriptions",
         "title": "Names and Descriptions",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "dt"
     },
@@ -740,7 +740,7 @@
         "id": "credential-subject",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#credential-subject",
         "title": "Credential Subject",
-        "number": "4.6"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -760,7 +760,7 @@
         "id": "securing-mechanisms",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#securing-mechanisms",
         "title": "Securing Mechanisms",
-        "number": "4.9"
+        "number": "4.12"
       },
       "definedIn": "prose"
     },
@@ -779,7 +779,7 @@
         "id": "securing-mechanisms",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#securing-mechanisms",
         "title": "Securing Mechanisms",
-        "number": "4.9"
+        "number": "4.12"
       },
       "definedIn": "prose"
     },
@@ -798,7 +798,7 @@
         "id": "securing-mechanisms",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#securing-mechanisms",
         "title": "Securing Mechanisms",
-        "number": "4.9"
+        "number": "4.12"
       },
       "definedIn": "prose"
     },
@@ -817,7 +817,7 @@
         "id": "verifiable-presentations",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#verifiable-presentations",
         "title": "Verifiable Presentations",
-        "number": "4.12"
+        "number": "4.13"
       },
       "definedIn": "prose"
     },
@@ -855,7 +855,7 @@
         "id": "verifiable-credential-graphs",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#verifiable-credential-graphs",
         "title": "Verifiable Credential Graphs",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "prose"
     },
@@ -874,7 +874,7 @@
         "id": "verifiable-credential-graphs",
         "href": "https://www.w3.org/TR/vc-data-model-2.0/#verifiable-credential-graphs",
         "title": "Verifiable Credential Graphs",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "prose"
     },
