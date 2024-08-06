@@ -1,7 +1,7 @@
 // Source: CSS Font Loading Module Level 3 (https://www.w3.org/TR/css-font-loading-3/)
 [Exposed=(Window,Worker)]
 interface FontFace {
-  constructor(CSSOMString family, (CSSOMString or BinaryData) source,
+  constructor(CSSOMString family, (CSSOMString or BufferSource) source,
                 optional FontFaceDescriptors descriptors = {});
   attribute CSSOMString family;
   attribute CSSOMString style;

@@ -35,38 +35,6 @@
       }
     },
     "idlNames": {
-      "BinaryData": {
-        "fragment": "typedef (ArrayBuffer or ArrayBufferView) BinaryData;",
-        "type": "typedef",
-        "name": "BinaryData",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": true,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ArrayBuffer"
-            },
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ArrayBufferView"
-            }
-          ]
-        },
-        "extAttrs": [],
-        "href": "https://drafts.csswg.org/css-font-loading-3/#typedefdef-binarydata"
-      },
       "FontFaceDescriptors": {
         "fragment": "dictionary FontFaceDescriptors {\n  CSSOMString style = \"normal\";\n  CSSOMString weight = \"normal\";\n  CSSOMString stretch = \"normal\";\n  CSSOMString unicodeRange = \"U+0-10FFFF\";\n  CSSOMString featureSettings = \"normal\";\n  CSSOMString variationSettings = \"normal\";\n  CSSOMString display = \"auto\";\n  CSSOMString ascentOverride = \"normal\";\n  CSSOMString descentOverride = \"normal\";\n  CSSOMString lineGapOverride = \"normal\";\n};",
         "type": "dictionary",
@@ -298,7 +266,7 @@
         "href": "https://drafts.csswg.org/css-font-loading-3/#enumdef-fontfaceloadstatus"
       },
       "FontFace": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFace {\n  constructor(CSSOMString family, (CSSOMString or BinaryData) source,\n                optional FontFaceDescriptors descriptors = {});\n  attribute CSSOMString family;\n  attribute CSSOMString style;\n  attribute CSSOMString weight;\n  attribute CSSOMString stretch;\n  attribute CSSOMString unicodeRange;\n  attribute CSSOMString featureSettings;\n  attribute CSSOMString variationSettings;\n  attribute CSSOMString display;\n  attribute CSSOMString ascentOverride;\n  attribute CSSOMString descentOverride;\n  attribute CSSOMString lineGapOverride;\n\n  readonly attribute FontFaceLoadStatus status;\n\n  Promise<FontFace> load();\n  readonly attribute Promise<FontFace> loaded;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFace {\n  constructor(CSSOMString family, (CSSOMString or BufferSource) source,\n                optional FontFaceDescriptors descriptors = {});\n  attribute CSSOMString family;\n  attribute CSSOMString style;\n  attribute CSSOMString weight;\n  attribute CSSOMString stretch;\n  attribute CSSOMString unicodeRange;\n  attribute CSSOMString featureSettings;\n  attribute CSSOMString variationSettings;\n  attribute CSSOMString display;\n  attribute CSSOMString ascentOverride;\n  attribute CSSOMString descentOverride;\n  attribute CSSOMString lineGapOverride;\n\n  readonly attribute FontFaceLoadStatus status;\n\n  Promise<FontFace> load();\n  readonly attribute Promise<FontFace> loaded;\n};",
         "type": "interface",
         "name": "FontFace",
         "inheritance": null,
@@ -347,7 +315,7 @@
                       "generic": "",
                       "nullable": false,
                       "union": false,
-                      "idlType": "BinaryData"
+                      "idlType": "BufferSource"
                     }
                   ]
                 },
@@ -1673,7 +1641,7 @@
       ],
       "FontFace": [
         "CSSOMString",
-        "BinaryData",
+        "BufferSource",
         "FontFaceDescriptors",
         "FontFaceLoadStatus",
         "FontFace",
@@ -1719,9 +1687,8 @@
       ]
     },
     "externalDependencies": [
-      "ArrayBuffer",
-      "ArrayBufferView",
       "CSSOMString",
+      "BufferSource",
       "EventInit",
       "Event",
       "EventTarget",

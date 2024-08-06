@@ -6,7 +6,7 @@
       "title": "CSS Font Loading Module Level 3",
       "url": "https://www.w3.org/TR/css-font-loading-3/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface FontFace {\n  constructor(CSSOMString family, (CSSOMString or BinaryData) source,\n                optional FontFaceDescriptors descriptors = {});\n  attribute CSSOMString family;\n  attribute CSSOMString style;\n  attribute CSSOMString weight;\n  attribute CSSOMString stretch;\n  attribute CSSOMString unicodeRange;\n  attribute CSSOMString featureSettings;\n  attribute CSSOMString variationSettings;\n  attribute CSSOMString display;\n  attribute CSSOMString ascentOverride;\n  attribute CSSOMString descentOverride;\n  attribute CSSOMString lineGapOverride;\n\n  readonly attribute FontFaceLoadStatus status;\n\n  Promise<FontFace> load();\n  readonly attribute Promise<FontFace> loaded;\n};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface FontFace {\n  constructor(CSSOMString family, (CSSOMString or BufferSource) source,\n                optional FontFaceDescriptors descriptors = {});\n  attribute CSSOMString family;\n  attribute CSSOMString style;\n  attribute CSSOMString weight;\n  attribute CSSOMString stretch;\n  attribute CSSOMString unicodeRange;\n  attribute CSSOMString featureSettings;\n  attribute CSSOMString variationSettings;\n  attribute CSSOMString display;\n  attribute CSSOMString ascentOverride;\n  attribute CSSOMString descentOverride;\n  attribute CSSOMString lineGapOverride;\n\n  readonly attribute FontFaceLoadStatus status;\n\n  Promise<FontFace> load();\n  readonly attribute Promise<FontFace> loaded;\n};",
     "href": "https://drafts.csswg.org/css-font-loading-3/#fontface"
   },
   "extended": [
