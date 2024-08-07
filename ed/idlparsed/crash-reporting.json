@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "CrashReportBody": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface CrashReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString? reason;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface CrashReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString? reason;\n  readonly attribute DOMString? stack;\n};",
         "type": "interface",
         "name": "CrashReportBody",
         "inheritance": "ReportBody",
@@ -47,6 +47,21 @@
           {
             "type": "attribute",
             "name": "reason",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "stack",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
