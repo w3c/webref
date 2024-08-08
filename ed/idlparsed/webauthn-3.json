@@ -934,27 +934,11 @@
         "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialuserentityjson"
       },
       "PublicKeyCredentialDescriptorJSON": {
-        "fragment": "dictionary PublicKeyCredentialDescriptorJSON {\n    required Base64URLString        id;\n    required DOMString              type;\n    sequence<DOMString>             transports;\n};",
+        "fragment": "dictionary PublicKeyCredentialDescriptorJSON {\n    required DOMString              type;\n    required Base64URLString        id;\n    sequence<DOMString>             transports;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialDescriptorJSON",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "id",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "Base64URLString"
-            },
-            "default": null,
-            "required": true,
-            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptorjson-id"
-          },
           {
             "type": "field",
             "name": "type",
@@ -970,6 +954,22 @@
             "default": null,
             "required": true,
             "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptorjson-type"
+          },
+          {
+            "type": "field",
+            "name": "id",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Base64URLString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptorjson-id"
           },
           {
             "type": "field",
@@ -1959,7 +1959,7 @@
         "href": "https://w3c.github.io/webauthn/#enumdef-attestationconveyancepreference"
       },
       "PublicKeyCredentialRequestOptions": {
-        "fragment": "dictionary PublicKeyCredentialRequestOptions {\n    required BufferSource                challenge;\n    unsigned long                        timeout;\n    USVString                            rpId;\n    sequence<PublicKeyCredentialDescriptor> allowCredentials = [];\n    DOMString                            userVerification = \"preferred\";\n    sequence<DOMString>                  hints = [];\n    AuthenticationExtensionsClientInputs extensions;\n};",
+        "fragment": "dictionary PublicKeyCredentialRequestOptions {\n    required BufferSource                challenge;\n    unsigned long                        timeout;\n    DOMString                            rpId;\n    sequence<PublicKeyCredentialDescriptor> allowCredentials = [];\n    DOMString                            userVerification = \"preferred\";\n    sequence<DOMString>                  hints = [];\n    AuthenticationExtensionsClientInputs extensions;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialRequestOptions",
         "inheritance": null,
@@ -2006,7 +2006,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "USVString"
+              "idlType": "DOMString"
             },
             "default": null,
             "required": false,
@@ -2829,125 +2829,6 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionslargebloboutputs"
-      },
-      "AuthenticationExtensionsSupplementalPubKeysInputs": {
-        "fragment": "dictionary AuthenticationExtensionsSupplementalPubKeysInputs {\n    required sequence<DOMString> scopes;\n    DOMString attestation = \"indirect\";\n    sequence<DOMString> attestationFormats = [];\n};",
-        "type": "dictionary",
-        "name": "AuthenticationExtensionsSupplementalPubKeysInputs",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "scopes",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                }
-              ]
-            },
-            "default": null,
-            "required": true,
-            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-scopes"
-          },
-          {
-            "type": "field",
-            "name": "attestation",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": {
-              "type": "string",
-              "value": "indirect"
-            },
-            "required": false,
-            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-attestation"
-          },
-          {
-            "type": "field",
-            "name": "attestationFormats",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                }
-              ]
-            },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
-            "required": false,
-            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-attestationformats"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionssupplementalpubkeysinputs"
-      },
-      "AuthenticationExtensionsSupplementalPubKeysOutputs": {
-        "fragment": "dictionary AuthenticationExtensionsSupplementalPubKeysOutputs {\n    required sequence<ArrayBuffer> signatures;\n};",
-        "type": "dictionary",
-        "name": "AuthenticationExtensionsSupplementalPubKeysOutputs",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "signatures",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ArrayBuffer"
-                }
-              ]
-            },
-            "default": null,
-            "required": true,
-            "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysoutputs-signatures"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionssupplementalpubkeysoutputs"
       }
     },
     "idlExtendedNames": {
@@ -3295,32 +3176,6 @@
           ],
           "extAttrs": [],
           "partial": true
-        },
-        {
-          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    AuthenticationExtensionsSupplementalPubKeysInputs supplementalPubKeys;\n};",
-          "type": "dictionary",
-          "name": "AuthenticationExtensionsClientInputs",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "supplementalPubKeys",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "AuthenticationExtensionsSupplementalPubKeysInputs"
-              },
-              "default": null,
-              "required": false,
-              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-supplementalpubkeys"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
         }
       ],
       "AuthenticationExtensionsClientOutputs": [
@@ -3453,32 +3308,6 @@
           ],
           "extAttrs": [],
           "partial": true
-        },
-        {
-          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    AuthenticationExtensionsSupplementalPubKeysOutputs supplementalPubKeys;\n};",
-          "type": "dictionary",
-          "name": "AuthenticationExtensionsClientOutputs",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "supplementalPubKeys",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "AuthenticationExtensionsSupplementalPubKeysOutputs"
-              },
-              "default": null,
-              "required": false,
-              "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-supplementalpubkeys"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
         }
       ]
     },
@@ -3589,14 +3418,12 @@
       ],
       "AuthenticationExtensionsClientInputs": [
         "AuthenticationExtensionsPRFInputs",
-        "AuthenticationExtensionsLargeBlobInputs",
-        "AuthenticationExtensionsSupplementalPubKeysInputs"
+        "AuthenticationExtensionsLargeBlobInputs"
       ],
       "AuthenticationExtensionsClientOutputs": [
         "CredentialPropertiesOutput",
         "AuthenticationExtensionsPRFOutputs",
-        "AuthenticationExtensionsLargeBlobOutputs",
-        "AuthenticationExtensionsSupplementalPubKeysOutputs"
+        "AuthenticationExtensionsLargeBlobOutputs"
       ],
       "CollectedClientData": [],
       "TokenBinding": [],
@@ -3617,10 +3444,6 @@
         "BufferSource"
       ],
       "AuthenticationExtensionsLargeBlobOutputs": [
-        "ArrayBuffer"
-      ],
-      "AuthenticationExtensionsSupplementalPubKeysInputs": [],
-      "AuthenticationExtensionsSupplementalPubKeysOutputs": [
         "ArrayBuffer"
       ]
     },
