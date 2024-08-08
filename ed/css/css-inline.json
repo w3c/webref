@@ -544,7 +544,7 @@
     {
       "name": "text-box",
       "href": "https://drafts.csswg.org/css-inline-3/#propdef-text-box",
-      "value": "normal | [ start | end | both ] || [ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?",
+      "value": "normal | <'text-box-trim'> || <'text-box-edge'>",
       "initial": "normal",
       "appliesTo": "block containers and inline boxes",
       "inherited": "no",
@@ -552,6 +552,15 @@
       "computedValue": "the specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "If the single keyword normal is specified, it sets text-box-trim to none and text-box-edge to auto. Otherwise, omitting the text-box-trim value sets it to both (not the initial value), while omitting the text-box-edge value sets it to auto (the initial value).",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-normal",
+          "type": "value",
+          "value": "normal"
+        }
+      ],
       "styleDeclaration": [
         "text-box",
         "textBox"
@@ -560,7 +569,7 @@
     {
       "name": "text-box-trim",
       "href": "https://drafts.csswg.org/css-inline-3/#propdef-text-box-trim",
-      "value": "none | start | end | both",
+      "value": "none | trim-start | trim-end | trim-both",
       "initial": "none",
       "appliesTo": "block containers and inline boxes",
       "inherited": "no",
@@ -577,25 +586,25 @@
           "value": "none"
         },
         {
-          "name": "start",
+          "name": "trim-start",
           "prose": "For block containers: trim the block-start side of the first formatted line to the corresponding text-box-edge metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-start side of the box to match its content edge to the metric specified by text-box-edge (treating leading as text).",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-trim-start",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-trim-trim-start",
           "type": "value",
-          "value": "start"
+          "value": "trim-start"
         },
         {
-          "name": "end",
+          "name": "trim-end",
           "prose": "For block containers: trim the block-end side of the last formatted line to the corresponding text-box-edge metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-end side of the box to match its content edge to the metric specified by text-box-edge (treating leading as text).",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-trim-end",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-trim-trim-end",
           "type": "value",
-          "value": "end"
+          "value": "trim-end"
         },
         {
-          "name": "both",
-          "prose": "Specifies the behavior of start and end simultaneously.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-trim-both",
+          "name": "trim-both",
+          "prose": "Specifies the behavior of trim-start and trim-end simultaneously.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-trim-trim-both",
           "type": "value",
-          "value": "both"
+          "value": "trim-both"
         }
       ],
       "styleDeclaration": [
@@ -614,6 +623,15 @@
       "computedValue": "the specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "This property specifies the metrics to use for text-box-trim effects. Values have the same meanings as for line-fit-edge; the auto keyword computes to the value of line-fit-edge, interpreting leading (the initial value) as text.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-edge-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "text-box-edge",
         "textBoxEdge"
