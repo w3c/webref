@@ -431,7 +431,7 @@
     {
       "name": "line-height",
       "href": "https://www.w3.org/TR/css-inline-3/#propdef-line-height",
-      "value": "normal | <number> | <length-percentage>",
+      "value": "normal | <number [0,∞]> | <length-percentage [0,∞]>",
       "initial": "normal",
       "appliesTo": "non-replaced inline boxes and SVG text content elements",
       "inherited": "yes",
@@ -448,25 +448,25 @@
           "value": "normal"
         },
         {
-          "name": "<length>",
+          "name": "<length [0,∞]>",
           "prose": "The specified length is used as the preferred line height. Negative values are illegal.",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-height-length",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-height-length-0",
           "type": "value",
-          "value": "<length>"
+          "value": "<length [0,∞]>"
         },
         {
-          "name": "<number>",
+          "name": "<number [0,∞]>",
           "prose": "The preferred line height is this number multiplied by the element’s computed font-size. Negative values are illegal. The computed value is the same as the specified value.",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-height-number",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-height-number-0",
           "type": "value",
-          "value": "<number>"
+          "value": "<number [0,∞]>"
         },
         {
-          "name": "<percentage>",
+          "name": "<percentage [0,∞]>",
           "prose": "The preferred line height and computed value of the property is this percentage of the element’s computed font-size. Negative values are illegal.",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-height-percentage",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-height-percentage-0",
           "type": "value",
-          "value": "<percentage>"
+          "value": "<percentage [0,∞]>"
         }
       ],
       "styleDeclaration": [
@@ -475,9 +475,9 @@
       ]
     },
     {
-      "name": "text-box-edge",
-      "href": "https://www.w3.org/TR/css-inline-3/#propdef-text-box-edge",
-      "value": "leading | [ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?",
+      "name": "line-fit-edge",
+      "href": "https://www.w3.org/TR/css-inline-3/#propdef-line-fit-edge",
+      "value": "leading | <text-edge>",
       "initial": "leading",
       "appliesTo": "inline boxes",
       "inherited": "yes",
@@ -489,62 +489,87 @@
         {
           "name": "leading",
           "prose": "Use the ascent/descent plus any positive half-leading. Margin/padding/border is ignored for the purpose of sizing the line box.",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-edge-leading",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-leading",
           "type": "value",
           "value": "leading"
         },
         {
           "name": "text",
           "prose": "Use the text-over baseline/text-under baseline.",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-edge-text",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-text",
           "type": "value",
           "value": "text"
         },
         {
           "name": "cap",
           "prose": "Use the cap-height baseline.",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-edge-cap",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-cap",
           "type": "value",
           "value": "cap"
         },
         {
           "name": "ex",
           "prose": "Use the x-height baseline.",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-edge-ex",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-ex",
           "type": "value",
           "value": "ex"
         },
         {
           "name": "ideographic",
           "prose": "Use the ideographic-over baseline/ideographic-under baseline.",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-edge-ideographic",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-ideographic",
           "type": "value",
           "value": "ideographic"
         },
         {
           "name": "ideographic-ink",
           "prose": "Use the ideographic-ink-over baseline/ideographic-ink-under baseline.",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-edge-ideographic-ink",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-ideographic-ink",
           "type": "value",
           "value": "ideographic-ink"
         },
         {
           "name": "alphabetic",
           "prose": "Use the alphabetic baseline.",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-edge-alphabetic",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-alphabetic",
           "type": "value",
           "value": "alphabetic"
         }
       ],
       "styleDeclaration": [
-        "text-box-edge",
-        "textBoxEdge"
+        "line-fit-edge",
+        "lineFitEdge"
+      ]
+    },
+    {
+      "name": "text-box",
+      "href": "https://www.w3.org/TR/css-inline-3/#propdef-text-box",
+      "value": "normal | <'text-box-trim'> || <'text-box-edge'>",
+      "initial": "normal",
+      "appliesTo": "block containers and inline boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "If the single keyword normal is specified, it sets text-box-trim to none and text-box-edge to auto. Otherwise, omitting the text-box-trim value sets it to both (not the initial value), while omitting the text-box-edge value sets it to auto (the initial value).",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-normal",
+          "type": "value",
+          "value": "normal"
+        }
+      ],
+      "styleDeclaration": [
+        "text-box",
+        "textBox"
       ]
     },
     {
       "name": "text-box-trim",
       "href": "https://www.w3.org/TR/css-inline-3/#propdef-text-box-trim",
-      "value": "none | start | end | both",
+      "value": "none | trim-start | trim-end | trim-both",
       "initial": "none",
       "appliesTo": "block containers and inline boxes",
       "inherited": "no",
@@ -561,30 +586,55 @@
           "value": "none"
         },
         {
-          "name": "start",
+          "name": "trim-start",
           "prose": "For block containers: trim the block-start side of the first formatted line to the corresponding text-box-edge metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-start side of the box to match its content edge to the metric specified by text-box-edge (treating leading as text).",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-trim-start",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-trim-trim-start",
           "type": "value",
-          "value": "start"
+          "value": "trim-start"
         },
         {
-          "name": "end",
+          "name": "trim-end",
           "prose": "For block containers: trim the block-end side of the last formatted line to the corresponding text-box-edge metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-end side of the box to match its content edge to the metric specified by text-box-edge (treating leading as text).",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-trim-end",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-trim-trim-end",
           "type": "value",
-          "value": "end"
+          "value": "trim-end"
         },
         {
-          "name": "both",
-          "prose": "Specifies the behavior of start and end simultaneously.",
-          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-trim-both",
+          "name": "trim-both",
+          "prose": "Specifies the behavior of trim-start and trim-end simultaneously.",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-trim-trim-both",
           "type": "value",
-          "value": "both"
+          "value": "trim-both"
         }
       ],
       "styleDeclaration": [
         "text-box-trim",
         "textBoxTrim"
+      ]
+    },
+    {
+      "name": "text-box-edge",
+      "href": "https://www.w3.org/TR/css-inline-3/#propdef-text-box-edge",
+      "value": "auto | <text-edge>",
+      "initial": "auto",
+      "appliesTo": "block containers and inline boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "This property specifies the metrics to use for text-box-trim effects. Values have the same meanings as for line-fit-edge; the auto keyword computes to the value of line-fit-edge, interpreting leading (the initial value) as text.",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-text-box-edge-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "text-box-edge",
+        "textBoxEdge"
       ]
     },
     {
@@ -788,5 +838,64 @@
   ],
   "atrules": [],
   "selectors": [],
-  "values": []
+  "values": [
+    {
+      "name": "<text-edge>",
+      "prose": "The <text-edge> value, which identifies specific font metrics, expands to",
+      "href": "https://www.w3.org/TR/css-inline-3/#typedef-text-edge",
+      "type": "type",
+      "value": "[ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?",
+      "values": [
+        {
+          "name": "leading",
+          "prose": "Use the ascent/descent plus any positive half-leading. Margin/padding/border is ignored for the purpose of sizing the line box.",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-leading",
+          "type": "value",
+          "value": "leading"
+        },
+        {
+          "name": "text",
+          "prose": "Use the text-over baseline/text-under baseline.",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-text",
+          "type": "value",
+          "value": "text"
+        },
+        {
+          "name": "cap",
+          "prose": "Use the cap-height baseline.",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-cap",
+          "type": "value",
+          "value": "cap"
+        },
+        {
+          "name": "ex",
+          "prose": "Use the x-height baseline.",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-ex",
+          "type": "value",
+          "value": "ex"
+        },
+        {
+          "name": "ideographic",
+          "prose": "Use the ideographic-over baseline/ideographic-under baseline.",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-ideographic",
+          "type": "value",
+          "value": "ideographic"
+        },
+        {
+          "name": "ideographic-ink",
+          "prose": "Use the ideographic-ink-over baseline/ideographic-ink-under baseline.",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-ideographic-ink",
+          "type": "value",
+          "value": "ideographic-ink"
+        },
+        {
+          "name": "alphabetic",
+          "prose": "Use the alphabetic baseline.",
+          "href": "https://www.w3.org/TR/css-inline-3/#valdef-line-fit-edge-alphabetic",
+          "type": "value",
+          "value": "alphabetic"
+        }
+      ]
+    }
+  ]
 }

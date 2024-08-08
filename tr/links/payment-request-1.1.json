@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Payment Request API 1.1",
+    "title": "Payment Request API",
     "url": "https://www.w3.org/TR/payment-request-1.1/"
   },
   "links": {
@@ -31,6 +31,7 @@
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/payment": {},
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "potential-event-target",
           "concept-document",
           "concept-event-fire",
           "concept-event-create",
@@ -77,6 +78,7 @@
       "https://github.com/w3c/payment-request/commit/876a9cc": {},
       "https://github.com/w3c/payment-request/commit/898412b": {},
       "https://github.com/w3c/payment-request/commit/8c45522": {},
+      "https://github.com/w3c/payment-request/commit/91d3530": {},
       "https://github.com/w3c/payment-request/commit/944f512": {},
       "https://github.com/w3c/payment-request/commit/974d879": {},
       "https://github.com/w3c/payment-request/commit/9a3c6d9": {},
@@ -102,12 +104,11 @@
       "https://github.com/w3c/payment-request/commit/f697360": {},
       "https://github.com/w3c/payment-request/commit/f810dc0": {},
       "https://github.com/w3c/payment-request/commit/ff5e725": {},
-      "https://github.com/w3c/payment-request/commits/gh-pages": {},
-      "https://github.com/w3c/payment-request/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20-label%3A%22Priority%3A%20Postponed%22%20": {},
       "https://github.com/w3c/payment-request/pull/1001": {},
       "https://github.com/w3c/payment-request/pull/1005": {},
       "https://github.com/w3c/payment-request/pull/1007": {},
       "https://github.com/w3c/payment-request/pull/1009": {},
+      "https://github.com/w3c/payment-request/pull/1026": {},
       "https://github.com/w3c/payment-request/pull/654": {},
       "https://github.com/w3c/payment-request/pull/656": {},
       "https://github.com/w3c/payment-request/pull/666": {},
@@ -203,6 +204,7 @@
           "assert"
         ]
       },
+      "https://lists.w3.org/Archives/Public/public-payments-wg/2021Jun/0000.html": {},
       "https://tc39.es/ecma262/multipage/": {
         "anchors": [
           "sec-json.parse",
@@ -215,6 +217,7 @@
         ]
       },
       "https://url.spec.whatwg.org/": {},
+      "https://w3c.github.io/contact-picker/": {},
       "https://w3c.github.io/test-results/payment-request/all.html": {},
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -233,6 +236,7 @@
         ]
       },
       "https://wpt.live/payment-request/": {},
+      "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-E.164-201011-I!!PDF-E&type=items": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc4122": {},
       "https://www.rfc-editor.org/rfc/rfc6454": {
@@ -241,22 +245,13 @@
         ]
       },
       "https://www.rfc-editor.org/rfc/rfc8174": {},
-      "https://www.w3.org/2022/03/prapi-fo-report.html": {},
-      "https://www.w3.org/2023/Process-20231103/": {
-        "anchors": [
-          "recs-and-notes",
-          "allow-new-features"
-        ]
-      },
-      "https://www.w3.org/Consortium/Patent-Policy/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
-      "https://www.w3.org/Payments/WG/charter-201912.html": {},
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/2021/PR-payment-request-20210930/": {},
+      "https://www.w3.org/TR/2022/REC-payment-request-20220908/": {},
+      "https://www.w3.org/TR/contact-picker/": {
+        "anchors": [
+          "physical-address"
+        ]
+      },
       "https://www.w3.org/TR/payment-handler/": {},
       "https://www.w3.org/TR/payment-method-id/": {
         "anchors": [
@@ -270,7 +265,19 @@
       "https://www.w3.org/TR/secure-contexts/": {},
       "https://www.w3.org/community/wicg/": {},
       "https://www.w3.org/groups/wg/payments": {},
-      "https://www.w3.org/groups/wg/payments/ipr": {}
+      "https://www.w3.org/groups/wg/payments/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20231103/": {
+        "anchors": [
+          "recs-and-notes",
+          "allow-new-features"
+        ]
+      }
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
@@ -387,6 +394,32 @@
           "notsupportederror",
           "dfn-exception",
           "notallowederror"
+        ]
+      },
+      "https://www.w3.org/TR/contact-picker/": {
+        "anchors": [
+          "contactaddress",
+          "physical-address",
+          "physical-address-address-line",
+          "dom-contactaddress-addressline",
+          "physical-address-city",
+          "dom-contactaddress-city",
+          "physical-address-country",
+          "dom-contactaddress-country",
+          "physical-address-dependent-locality",
+          "dom-contactaddress-dependentlocality",
+          "physical-address-organization",
+          "dom-contactaddress-organization",
+          "physical-address-phone-number",
+          "dom-contactaddress-phone",
+          "physical-address-postal-code",
+          "dom-contactaddress-postalcode",
+          "physical-address-recipient",
+          "physical-address-region",
+          "dom-contactaddress-region",
+          "physical-address-sorting-code",
+          "dom-contactaddress-sortingcode",
+          "contactsmanager-create-a-contactaddress-from-user-provided-input"
         ]
       },
       "https://www.w3.org/TR/payment-method-id/": {

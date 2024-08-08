@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Payment Request API 1.1",
+    "title": "Payment Request API",
     "url": "https://www.w3.org/TR/payment-request-1.1/"
   },
   "events": [
@@ -15,6 +15,33 @@
         "PaymentRequest"
       ],
       "interface": "PaymentMethodChangeEvent"
+    },
+    {
+      "type": "shippingaddresschange",
+      "targets": [
+        "PaymentRequest"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
+    },
+    {
+      "type": "shippingoptionchange",
+      "targets": [
+        "PaymentRequest"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
+    },
+    {
+      "type": "payerdetailchange",
+      "targets": [
+        "PaymentResponse"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
     }
   ]
 }
