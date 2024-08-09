@@ -710,19 +710,22 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>doc</var> be the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\">current global object</a>'s <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>."
+          "html": "Let <var data-type=\"Document?\">doc</var> be the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\">current global object</a>'s\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated <code>Document</code></a>."
         },
         {
-          "html": "If <var>doc</var> is <code>null</code> or <var>doc</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>,\n          then return an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+          "html": "If <var data-type=\"Document?\">doc</var> is <code>null</code> or <var data-type=\"Document?\">doc</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>,\n          then return an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
         },
         {
-          "html": "If <var>doc</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> the <code>\"gamepad\"</code> permission,\n          then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and\n          abort these steps."
+          "html": "If <var data-type=\"Document?\">doc</var> is not <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> the <code>\"gamepad\"</code> permission,\n          then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and\n          abort these steps."
         },
         {
           "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[hasGamepadGesture]]\" href=\"https://www.w3.org/TR/gamepad/#dfn-hasgamepadgesture\" class=\"internalDFN\" id=\"ref-for-dfn-hasgamepadgesture-3\"><code>[[hasGamepadGesture]]</code></a> is <code>false</code>, then\n          return an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
         },
         {
           "html": "Let <var data-type=\"DOMHighResTimeStamp\">now</var> be the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\">current high resolution time</a>."
+        },
+        {
+          "html": "Let <var data-type=\"sequence<Gamepad?>\">gamepads</var> be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
         },
         {
           "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"Gamepad\">gamepad</var> of\n          <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[gamepads]]\" href=\"https://www.w3.org/TR/gamepad/#dfn-gamepads\" class=\"internalDFN\" id=\"ref-for-dfn-gamepads-6\"><code>[[gamepads]]</code></a>:",
@@ -739,11 +742,14 @@
                   "html": "Set <var data-type=\"Gamepad\">gamepad</var>.<a data-link-type=\"attribute\" data-lt=\"[[timestamp]]\" href=\"https://www.w3.org/TR/gamepad/#dfn-timestamp\" class=\"internalDFN\" id=\"ref-for-dfn-timestamp-5\"><code>[[timestamp]]</code></a> to <var data-type=\"DOMHighResTimeStamp\">now</var>."
                 }
               ]
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"Gamepad\">gamepad</var> to <var data-type=\"sequence<Gamepad?>\">gamepads</var>."
             }
           ]
         },
         {
-          "html": "Return <var>gamepads</var>."
+          "html": "Return <var data-type=\"sequence<Gamepad?>\">gamepads</var>."
         }
       ]
     },

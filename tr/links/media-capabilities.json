@@ -33,6 +33,7 @@
       },
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/encrypted-media-1/": {},
+      "https://www.w3.org/TR/encrypted-media-2/": {},
       "https://www.w3.org/TR/media-source-2/": {},
       "https://www.w3.org/TR/mediastream-recording/": {},
       "https://www.w3.org/TR/webrtc-svc/": {},
@@ -94,11 +95,6 @@
           "valid-mime-type"
         ]
       },
-      "https://w3c.github.io/encrypted-media/": {
-        "anchors": [
-          "dom-mediakeysystemmediacapability-encryptionscheme"
-        ]
-      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-DOMString",
@@ -117,23 +113,25 @@
           "securityerror"
         ]
       },
-      "https://www.w3.org/TR/encrypted-media/": {
+      "https://www.w3.org/TR/encrypted-media-2/": {
         "anchors": [
-          "navigator-extension:-requestmediakeysystemaccess()",
+          "dom-mediakeysrequirement",
+          "dom-navigator-requestmediakeysystemaccess",
           "dom-mediakeysystemaccess-keysystem",
           "dom-mediakeysystemconfiguration-initdatatypes",
           "dom-mediakeysystemconfiguration-distinctiveidentifier",
           "dom-mediakeysystemconfiguration-persistentstate",
           "dom-mediakeysystemconfiguration-sessiontypes",
           "dom-mediakeysystemmediacapability-robustness",
-          "mediakeysystemaccess-interface",
-          "mediakeys-interface",
-          "key-system",
-          "mediakeysystemconfiguration-dictionary",
+          "dom-mediakeysystemmediacapability-encryptionscheme",
+          "dom-mediakeysystemaccess",
+          "dom-mediakeys",
+          "dfn-key-system",
+          "dom-mediakeysystemconfiguration",
           "dom-mediakeysystemconfiguration-audiocapabilities",
-          "mediakeysystemmediacapability-dictionary",
+          "dom-mediakeysystemmediacapability",
           "dom-mediakeysystemmediacapability-contenttype",
-          "get-supported-configuration"
+          "dfn-get-supported-configuration"
         ]
       },
       "https://www.w3.org/TR/media-source/": {

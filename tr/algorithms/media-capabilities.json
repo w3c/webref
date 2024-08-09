@@ -137,11 +137,11 @@
       ]
     },
     {
-      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediadecodingconfiguration\" id=\"ref-for-dictdef-mediadecodingconfiguration①②\">MediaDecodingConfiguration</a></code> <var>config</var> where <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediadecodingconfiguration-keysystemconfiguration\" id=\"ref-for-dom-mediadecodingconfiguration-keysystemconfiguration①\">keySystemConfiguration</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exists</a>, this algorithm returns a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface\" id=\"ref-for-mediakeysystemaccess-interface②\">MediaKeySystemAccess</a></code> or <code>null</code> as appropriate. The\n          following steps are run:",
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dictdef-mediadecodingconfiguration\" id=\"ref-for-dictdef-mediadecodingconfiguration①②\">MediaDecodingConfiguration</a></code> <var>config</var> where <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediadecodingconfiguration-keysystemconfiguration\" id=\"ref-for-dom-mediadecodingconfiguration-keysystemconfiguration①\">keySystemConfiguration</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exists</a>, this algorithm returns a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemaccess\" id=\"ref-for-dom-mediakeysystemaccess③\">MediaKeySystemAccess</a></code> or <code>null</code> as appropriate. The\n          following steps are run:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitieskeysystemconfiguration-keysystem\" id=\"ref-for-dom-mediacapabilitieskeysystemconfiguration-keysystem①\">keySystem</a></code> member of <code>config.keySystemConfiguration</code> is not one of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/encrypted-media/#key-system\" id=\"ref-for-key-system\">Key Systems</a> supported by the user agent, return <code>null</code>. String comparison is case-sensitive."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitieskeysystemconfiguration-keysystem\" id=\"ref-for-dom-mediacapabilitieskeysystemconfiguration-keysystem①\">keySystem</a></code> member of <code>config.keySystemConfiguration</code> is not one of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-key-system\" id=\"ref-for-dfn-key-system\">Key Systems</a> supported by the user agent, return <code>null</code>. String comparison is case-sensitive."
         },
         {
           "html": "Let <var>origin</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> of the calling context’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">Document</a>."
@@ -150,58 +150,58 @@
           "html": "Let <var>implementation</var> be the implementation of <code>config.keySystemConfiguration.keySystem</code>."
         },
         {
-          "html": "Let <var>emeConfiguration</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#mediakeysystemconfiguration-dictionary\" id=\"ref-for-mediakeysystemconfiguration-dictionary\">MediaKeySystemConfiguration</a></code>, and initialize it as follows:",
+          "html": "Let <var>emeConfiguration</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemconfiguration\" id=\"ref-for-dom-mediakeysystemconfiguration\">MediaKeySystemConfiguration</a></code>, and initialize it as follows:",
           "rationale": "set",
           "steps": [
             {
-              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-initdatatypes\" id=\"ref-for-dom-mediakeysystemconfiguration-initdatatypes①\">initDataTypes</a></code> attribute to a sequence containing <code>config.keySystemConfiguration.initDataType</code>."
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemconfiguration-initdatatypes\" id=\"ref-for-dom-mediakeysystemconfiguration-initdatatypes①\">initDataTypes</a></code> attribute to a sequence containing <code>config.keySystemConfiguration.initDataType</code>."
             },
             {
-              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier\" id=\"ref-for-dom-mediakeysystemconfiguration-distinctiveidentifier①\">distinctiveIdentifier</a></code> attribute to <code>config.keySystemConfiguration.distinctiveIdentifier</code>."
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemconfiguration-distinctiveidentifier\" id=\"ref-for-dom-mediakeysystemconfiguration-distinctiveidentifier①\">distinctiveIdentifier</a></code> attribute to <code>config.keySystemConfiguration.distinctiveIdentifier</code>."
             },
             {
-              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate\" id=\"ref-for-dom-mediakeysystemconfiguration-persistentstate①\">persistentState</a></code> attribute to <code>config.keySystemConfiguration.peristentState</code>."
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemconfiguration-persistentstate\" id=\"ref-for-dom-mediakeysystemconfiguration-persistentstate①\">persistentState</a></code> attribute to <code>config.keySystemConfiguration.peristentState</code>."
             },
             {
-              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-sessiontypes\" id=\"ref-for-dom-mediakeysystemconfiguration-sessiontypes①\">sessionTypes</a></code> attribute to <code>config.keySystemConfiguration.sessionTypes</code>."
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemconfiguration-sessiontypes\" id=\"ref-for-dom-mediakeysystemconfiguration-sessiontypes①\">sessionTypes</a></code> attribute to <code>config.keySystemConfiguration.sessionTypes</code>."
             },
             {
-              "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediaconfiguration-audio\" id=\"ref-for-dom-mediaconfiguration-audio\">audio</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a> in <var>config</var>, set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities\" id=\"ref-for-dom-mediakeysystemconfiguration-audiocapabilities\">audioCapabilities</a></code> attribute to a sequence containing a\n                single <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#mediakeysystemmediacapability-dictionary\" id=\"ref-for-mediakeysystemmediacapability-dictionary\">MediaKeySystemMediaCapability</a></code>, initialized as\n                follows:",
+              "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediaconfiguration-audio\" id=\"ref-for-dom-mediaconfiguration-audio\">audio</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a> in <var>config</var>, set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemconfiguration-audiocapabilities\" id=\"ref-for-dom-mediakeysystemconfiguration-audiocapabilities\">audioCapabilities</a></code> attribute to a sequence containing a\n                single <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability\" id=\"ref-for-dom-mediakeysystemmediacapability\">MediaKeySystemMediaCapability</a></code>, initialized as\n                follows:",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-contenttype\" id=\"ref-for-dom-mediakeysystemmediacapability-contenttype\">contentType</a></code> attribute to <code>config.audio.contentType</code>."
+                  "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-contenttype\" id=\"ref-for-dom-mediakeysystemmediacapability-contenttype\">contentType</a></code> attribute to <code>config.audio.contentType</code>."
                 },
                 {
                   "html": "If <code>config.keySystemConfiguration.audio</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>:",
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness①\">robustness</a></code> attribute to <code> config.keySystemConfiguration.audio.robustness</code>."
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness①\">robustness</a></code> attribute to <code> config.keySystemConfiguration.audio.robustness</code>."
                     },
                     {
-                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme①\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.audio.encryptionScheme</code>."
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme①\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.audio.encryptionScheme</code>."
                     }
                   ]
                 }
               ]
             },
             {
-              "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediaconfiguration-video\" id=\"ref-for-dom-mediaconfiguration-video\">video</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a> in <var>config</var>, set the\n                videoCapabilities attribute to a sequence containing a single <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#mediakeysystemmediacapability-dictionary\" id=\"ref-for-mediakeysystemmediacapability-dictionary①\">MediaKeySystemMediaCapability</a></code>, initialized as follows:",
+              "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediaconfiguration-video\" id=\"ref-for-dom-mediaconfiguration-video\">video</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a> in <var>config</var>, set the\n                videoCapabilities attribute to a sequence containing a single <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability\" id=\"ref-for-dom-mediakeysystemmediacapability①\">MediaKeySystemMediaCapability</a></code>, initialized as follows:",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-contenttype\" id=\"ref-for-dom-mediakeysystemmediacapability-contenttype①\">contentType</a></code> attribute to <code>config.video.contentType</code>."
+                  "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-contenttype\" id=\"ref-for-dom-mediakeysystemmediacapability-contenttype①\">contentType</a></code> attribute to <code>config.video.contentType</code>."
                 },
                 {
                   "html": "If <code>config.keySystemConfiguration.video</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exists</a>:",
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness②\">robustness</a></code> attribute to <code> config.keySystemConfiguration.video.robustness</code>."
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-robustness\" id=\"ref-for-dom-mediakeysystemmediacapability-robustness②\">robustness</a></code> attribute to <code> config.keySystemConfiguration.video.robustness</code>."
                     },
                     {
-                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme②\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.video.encryptionScheme</code>."
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemmediacapability-encryptionscheme\" id=\"ref-for-dom-mediakeysystemmediacapability-encryptionscheme②\">encryptionScheme</a></code> attribute to <code> config.keySystemConfiguration.video.encryptionScheme</code>."
                     }
                   ]
                 }
@@ -210,17 +210,17 @@
           ]
         },
         {
-          "html": "Let <var>supported configuration</var> be the result of\n              executing the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/encrypted-media/#get-supported-configuration\" id=\"ref-for-get-supported-configuration\">Get Supported Configuration</a> algorithm on <var>implementation</var>, <var>emeConfiguration</var>, and <var>origin</var>."
+          "html": "Let <var>supported configuration</var> be the result of\n              executing the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-get-supported-configuration\" id=\"ref-for-dfn-get-supported-configuration\">Get Supported Configuration</a> algorithm on <var>implementation</var>, <var>emeConfiguration</var>, and <var>origin</var>."
         },
         {
           "html": "If <var>supported configuration</var> is <code>NotSupported</code>, return <code>null</code> and abort\n              these steps."
         },
         {
-          "html": "Let <var>access</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface\" id=\"ref-for-mediakeysystemaccess-interface③\">MediaKeySystemAccess</a></code> object, and initialize it as follows:",
+          "html": "Let <var>access</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemaccess\" id=\"ref-for-dom-mediakeysystemaccess④\">MediaKeySystemAccess</a></code> object, and initialize it as follows:",
           "rationale": "set",
           "steps": [
             {
-              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemaccess-keysystem\" id=\"ref-for-dom-mediakeysystemaccess-keysystem①\">keySystem</a></code> attribute to <code>emeConfiguration.keySystem</code>."
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysystemaccess-keysystem\" id=\"ref-for-dom-mediakeysystemaccess-keysystem①\">keySystem</a></code> attribute to <code>emeConfiguration.keySystem</code>."
             },
             {
               "html": "Let the <var>configuration</var> value be <var>supported configuration</var>."
