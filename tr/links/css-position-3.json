@@ -6,19 +6,21 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
       "https://drafts.csswg.org/css-logical-1/": {
         "anchors": [
           "logical-property-group"
         ]
       },
+      "https://drafts.csswg.org/css-position-4/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/10316": {},
       "https://github.com/w3c/csswg-drafts/issues/1053": {},
       "https://github.com/w3c/csswg-drafts/issues/5077": {},
       "https://github.com/w3c/csswg-drafts/issues/5151": {},
       "https://github.com/w3c/csswg-drafts/issues/5327": {},
       "https://github.com/w3c/csswg-drafts/issues/5374": {},
       "https://github.com/w3c/csswg-drafts/issues/609": {},
+      "https://github.com/w3c/csswg-drafts/issues/6453": {},
       "https://github.com/w3c/csswg-drafts/issues/6607": {},
       "https://github.com/w3c/csswg-drafts/issues/6789": {},
       "https://github.com/w3c/csswg-drafts/issues/6846": {},
@@ -28,20 +30,10 @@
       "https://github.com/w3c/csswg-drafts/issues/7917": {},
       "https://github.com/w3c/csswg-drafts/issues/7930": {},
       "https://github.com/w3c/csswg-drafts/issues/8284": {},
+      "https://github.com/w3c/csswg-drafts/issues/9939": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
-      "https://www.w3.org/2021/Process-20211102/": {
-        "anchors": [
-          "recs-and-notes"
-        ]
-      },
-      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
       "https://www.w3.org/Style/CSS/Test/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2016/WD-css-position-3-20160517/": {},
@@ -49,6 +41,7 @@
       "https://www.w3.org/TR/2021/WD-css-position-3-20211216/": {},
       "https://www.w3.org/TR/2022/WD-css-position-3-20220901/": {},
       "https://www.w3.org/TR/2023/WD-css-position-3-20230217/": {},
+      "https://www.w3.org/TR/2023/WD-css-position-3-20230403/": {},
       "https://www.w3.org/TR/CSS/": {
         "anchors": [
           "future-proofing",
@@ -105,6 +98,11 @@
       },
       "https://www.w3.org/TR/CSS22/": {},
       "https://www.w3.org/TR/css-align-3/": {},
+      "https://www.w3.org/TR/css-anchor-position-1/": {
+        "anchors": [
+          "inset-area"
+        ]
+      },
       "https://www.w3.org/TR/css-backgrounds-3/": {
         "anchors": [
           "background-attachment"
@@ -173,6 +171,7 @@
       },
       "https://www.w3.org/TR/css-writing-modes-4/": {},
       "https://www.w3.org/TR/cssom-1/": {},
+      "https://www.w3.org/TR/cssom-view-1/": {},
       "https://www.w3.org/TR/cssom/": {
         "anchors": [
           "serializing-css-values"
@@ -185,17 +184,23 @@
         ]
       },
       "https://www.w3.org/groups/wg/css": {},
-      "https://www.w3.org/groups/wg/css/ipr": {}
-    },
-    "autolinks": {
-      "https://dom.spec.whatwg.org/": {
+      "https://www.w3.org/groups/wg/css/ipr": {},
+      "https://www.w3.org/policies/patent-policy/20200915/": {
         "anchors": [
-          "concept-range-start"
+          "def-essential",
+          "sec-Disclosure"
         ]
       },
-      "https://drafts.csswg.org/css-overflow-3/": {
+      "https://www.w3.org/policies/process/20231103/": {
         "anchors": [
-          "initial-scroll-position"
+          "recs-and-notes"
+        ]
+      }
+    },
+    "autolinks": {
+      "https://drafts.csswg.org/css-position-4/": {
+        "anchors": [
+          "document-top-layer"
         ]
       },
       "https://drafts.csswg.org/css2/": {
@@ -203,6 +208,11 @@
           "propdef-float",
           "valdef-z-index-auto",
           "propdef-clear"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "layout-viewport"
         ]
       },
       "https://www.w3.org/TR/CSS2/visuren.html": {
@@ -235,7 +245,16 @@
           "valdef-align-self-stretch",
           "alignment-container",
           "box-alignment-properties",
+          "valdef-overflow-position-safe",
+          "valdef-overflow-position-unsafe",
           "self-align"
+        ]
+      },
+      "https://www.w3.org/TR/css-anchor-position-1/": {
+        "anchors": [
+          "propdef-inset-area",
+          "propdef-position-try",
+          "inset-area-grid"
         ]
       },
       "https://www.w3.org/TR/css-backgrounds-3/": {
@@ -327,9 +346,9 @@
       },
       "https://www.w3.org/TR/css-grid-2/": {
         "anchors": [
+          "grid-placement-property",
           "grid-container",
-          "grid-area",
-          "grid-placement-property"
+          "grid-area"
         ]
       },
       "https://www.w3.org/TR/css-inline-3/": {
@@ -342,7 +361,8 @@
           "scrollable-overflow-region",
           "scroll-container",
           "scrollport",
-          "nearest-scrollport"
+          "nearest-scrollport",
+          "initial-scroll-position"
         ]
       },
       "https://www.w3.org/TR/css-page-3/": {
@@ -387,6 +407,7 @@
         "anchors": [
           "css-wide-keywords",
           "comb-one",
+          "dynamic-viewport-size",
           "typedef-length-percentage",
           "mult-num-range"
         ]
@@ -404,10 +425,10 @@
       "https://www.w3.org/TR/css-writing-modes-4/": {
         "anchors": [
           "writing-mode",
+          "start",
           "end",
           "physical",
           "flow-relative",
-          "start",
           "block-start",
           "inline-start",
           "line-over",

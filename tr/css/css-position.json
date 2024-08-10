@@ -25,7 +25,7 @@
         },
         {
           "name": "relative",
-          "prose": "The box is laid out as for static, then offset from the resulting position. This offsetting is a purely visual effect, and does not affect the size or position of any other box, except insofar as it increases the scrollable overflow area of its ancestors. This positioning scheme is called relative positioning.",
+          "prose": "The box is laid out as for static, then offset from the resulting position. This offsetting is a purely visual effect, and, unless otherwise specified, does not affect the size or position of any other non-descendant box except insofar as it increases the scrollable overflow area of its ancestors. This positioning scheme is called relative positioning.",
           "href": "https://www.w3.org/TR/css-position-3/#valdef-position-relative",
           "type": "value",
           "value": "relative"
@@ -375,7 +375,7 @@
     {
       "name": "inset-block",
       "href": "https://www.w3.org/TR/css-position-3/#propdef-inset-block",
-      "value": "<top>{1,2}",
+      "value": "<'top'>{1,2}",
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
@@ -414,7 +414,7 @@
     {
       "name": "inset-inline",
       "href": "https://www.w3.org/TR/css-position-3/#propdef-inset-inline",
-      "value": "<top>{1,2}",
+      "value": "<'top'>{1,2}",
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
@@ -453,7 +453,7 @@
     {
       "name": "inset",
       "href": "https://www.w3.org/TR/css-position-3/#propdef-inset",
-      "value": "<top>{1,4}",
+      "value": "<'top'>{1,4}",
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
