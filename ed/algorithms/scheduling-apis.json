@@ -169,7 +169,7 @@
                   "html": "<p>Set <var>event loop</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#event-loop-current-scheduling-state\" id=\"ref-for-event-loop-current-scheduling-state\">current scheduling state</a> to <var>state</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>callbackResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">invoking</a> <var>callback</var>. If that threw an exception,\n then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>result</var> with that, otherwise resolve <var>result</var> with <var>callbackResult</var>.</p>"
+                  "html": "<p>Let <var>callbackResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">invoking</a> <var>callback</var> with « » and \"<code>rethrow</code>\".\n If that threw an exception, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>result</var> with that. Otherwise, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>result</var> with <var>callbackResult</var>.</p>"
                 },
                 {
                   "html": "<p>Set <var>event loop</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/scheduling-apis/#event-loop-current-scheduling-state\" id=\"ref-for-event-loop-current-scheduling-state①\">current scheduling state</a> to null.</p>"
