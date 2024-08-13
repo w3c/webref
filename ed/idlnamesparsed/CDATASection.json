@@ -117,7 +117,7 @@
               "title": "DOM Standard",
               "url": "https://dom.spec.whatwg.org/"
             },
-            "fragment": "interface mixin ChildNode {\n  [CEReactions, Unscopable] undefined before((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined after((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceWith((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined remove();\n};",
+            "fragment": "interface mixin ChildNode {\n  [CEReactions, Unscopable] undefined before((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined after((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceWith((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined remove();\n};",
             "href": "https://dom.spec.whatwg.org/#childnode"
           },
           "extended": [],

@@ -1549,7 +1549,7 @@
         "href": "https://dom.spec.whatwg.org/#documentorshadowroot"
       },
       "ParentNode": {
-        "fragment": "interface mixin ParentNode {\n  [SameObject] readonly attribute HTMLCollection children;\n  readonly attribute Element? firstElementChild;\n  readonly attribute Element? lastElementChild;\n  readonly attribute unsigned long childElementCount;\n\n  [CEReactions, Unscopable] undefined prepend((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined append((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceChildren((Node or TrustedScript or DOMString)... nodes);\n\n  Element? querySelector(DOMString selectors);\n  [NewObject] NodeList querySelectorAll(DOMString selectors);\n};",
+        "fragment": "interface mixin ParentNode {\n  [SameObject] readonly attribute HTMLCollection children;\n  readonly attribute Element? firstElementChild;\n  readonly attribute Element? lastElementChild;\n  readonly attribute unsigned long childElementCount;\n\n  [CEReactions, Unscopable] undefined prepend((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined append((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceChildren((Node or DOMString)... nodes);\n\n  Element? querySelector(DOMString selectors);\n  [NewObject] NodeList querySelectorAll(DOMString selectors);\n};",
         "type": "interface mixin",
         "name": "ParentNode",
         "inheritance": null,
@@ -1662,14 +1662,6 @@
                       "generic": "",
                       "nullable": false,
                       "union": false,
-                      "idlType": "TrustedScript"
-                    },
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
                       "idlType": "DOMString"
                     }
                   ]
@@ -1733,14 +1725,6 @@
                       "generic": "",
                       "nullable": false,
                       "union": false,
-                      "idlType": "TrustedScript"
-                    },
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
                       "idlType": "DOMString"
                     }
                   ]
@@ -1797,14 +1781,6 @@
                       "nullable": false,
                       "union": false,
                       "idlType": "Node"
-                    },
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "TrustedScript"
                     },
                     {
                       "type": "argument-type",
@@ -1960,7 +1936,7 @@
         "href": "https://dom.spec.whatwg.org/#nondocumenttypechildnode"
       },
       "ChildNode": {
-        "fragment": "interface mixin ChildNode {\n  [CEReactions, Unscopable] undefined before((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined after((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceWith((Node or TrustedScript or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined remove();\n};",
+        "fragment": "interface mixin ChildNode {\n  [CEReactions, Unscopable] undefined before((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined after((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceWith((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined remove();\n};",
         "type": "interface mixin",
         "name": "ChildNode",
         "inheritance": null,
@@ -1995,14 +1971,6 @@
                       "nullable": false,
                       "union": false,
                       "idlType": "Node"
-                    },
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "TrustedScript"
                     },
                     {
                       "type": "argument-type",
@@ -2073,14 +2041,6 @@
                       "generic": "",
                       "nullable": false,
                       "union": false,
-                      "idlType": "TrustedScript"
-                    },
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
                       "idlType": "DOMString"
                     }
                   ]
@@ -2137,14 +2097,6 @@
                       "nullable": false,
                       "union": false,
                       "idlType": "Node"
-                    },
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "TrustedScript"
                     },
                     {
                       "type": "argument-type",
@@ -11653,7 +11605,6 @@
         "HTMLCollection",
         "Element",
         "Node",
-        "TrustedScript",
         "NodeList"
       ],
       "Element": [
@@ -11679,8 +11630,7 @@
         "Node"
       ],
       "ChildNode": [
-        "Node",
-        "TrustedScript"
+        "Node"
       ],
       "DocumentType": [
         "ChildNode",
@@ -11804,7 +11754,6 @@
       "DOMHighResTimeStamp",
       "Window",
       "EventHandler",
-      "TrustedScript",
       "HTMLSlotElement"
     ],
     "hasObsoleteIdl": false

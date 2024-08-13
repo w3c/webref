@@ -35,6 +35,52 @@
         "view-transition-class",
         "viewTransitionClass"
       ]
+    },
+    {
+      "name": "view-transition-group",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-group",
+      "value": "normal | contain | nearest | <custom-ident>",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "The used value is the element’s nearest containing group name.",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-normal",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "nearest",
+          "prose": "The used value is the view-transition-name computed value of the nearest ancestor whose view-transition-name computed value is not none.",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-nearest",
+          "type": "value",
+          "value": "nearest"
+        },
+        {
+          "name": "contain",
+          "prose": "The used value is the element’s nearest containing group name.",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-contain",
+          "type": "value",
+          "value": "contain"
+        },
+        {
+          "name": "<custom-ident>",
+          "prose": "The used value is the given <custom-ident> if the element has an ancestor whose view-transition-name computed value is that <custom-ident>, otherwise the element’s nearest containing group name",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-custom-ident",
+          "type": "value",
+          "value": "<custom-ident>"
+        }
+      ],
+      "styleDeclaration": [
+        "view-transition-group",
+        "viewTransitionGroup"
+      ]
     }
   ],
   "atrules": [
