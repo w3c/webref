@@ -24,22 +24,35 @@
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Document/startViewTransition": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-borders-4/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
+      "https://drafts.csswg.org/css-color-4/": {},
       "https://drafts.csswg.org/css-conditional-3/": {},
+      "https://drafts.csswg.org/css-overflow-3/": {},
       "https://drafts.csswg.org/css-scoping/": {},
       "https://drafts.csswg.org/css-syntax/": {},
+      "https://drafts.csswg.org/css-transforms-2/": {},
+      "https://drafts.csswg.org/css-transforms/": {},
       "https://drafts.csswg.org/css-values-4/": {},
       "https://drafts.csswg.org/css-view-transitions-1/": {
         "anchors": [
-          "examples"
+          "examples",
+          "capture-old-state-algorithm",
+          "capture-new-state-algorithm",
+          "setup-transition-pseudo-elements-algorithm",
+          "style-transition-pseudo-elements-algorithm"
         ]
       },
       "https://drafts.csswg.org/css2/": {},
       "https://drafts.csswg.org/cssom/": {},
       "https://drafts.csswg.org/selectors-3/": {},
       "https://drafts.csswg.org/selectors/": {},
+      "https://drafts.fxtf.org/css-masking-1/": {},
+      "https://drafts.fxtf.org/filter-effects-1/": {},
+      "https://drafts.fxtf.org/geometry/": {},
       "https://github.com/WICG/view-transitions/issues/200": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/10631": {},
       "https://github.com/w3c/csswg-drafts/issues/8684": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -91,12 +104,24 @@
           "document-element",
           "concept-node-document",
           "concept-class",
-          "concept-document-origin"
+          "concept-document-origin",
+          "element"
+        ]
+      },
+      "https://drafts.csswg.org/css-borders-4/": {
+        "anchors": [
+          "propdef-border-radius"
         ]
       },
       "https://drafts.csswg.org/css-cascade-5/": {
         "anchors": [
+          "used-value",
           "computed-value"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "propdef-opacity"
         ]
       },
       "https://drafts.csswg.org/css-conditional-3/": {
@@ -104,6 +129,11 @@
           "conditional-group-rule",
           "at-ruledef-media",
           "at-ruledef-supports"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "propdef-overflow"
         ]
       },
       "https://drafts.csswg.org/css-scoping-1/": {
@@ -114,6 +144,17 @@
       "https://drafts.csswg.org/css-syntax-3/": {
         "anchors": [
           "typedef-declaration-list"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "propdef-transform"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms-2/": {
+        "anchors": [
+          "propdef-transform-style",
+          "propdef-perspective"
         ]
       },
       "https://drafts.csswg.org/css-values-4/": {
@@ -149,11 +190,18 @@
           "viewtransition-update-callback",
           "skip-the-view-transition",
           "dom-document-startviewtransition",
+          "view-transition-tree",
+          "selectordef-view-transition",
+          "snapshot-containing-block",
+          "valdef-view-transition-name-none",
           "perform-pending-transition-operations",
           "viewtransition-phase",
           "document-rendering-suppression-for-view-transitions",
           "viewtransition-initial-snapshot-containing-block-size",
-          "viewtransition-update-callback-done-promise"
+          "viewtransition-update-callback-done-promise",
+          "view-transition-name",
+          "captured-element-old-transform",
+          "captured-element-group-styles-rule"
         ]
       },
       "https://drafts.csswg.org/css2/": {
@@ -178,6 +226,23 @@
           "class-selector",
           "selector",
           "type-selector"
+        ]
+      },
+      "https://drafts.fxtf.org/css-masking-1/": {
+        "anchors": [
+          "propdef-clip-path",
+          "propdef-mask-image"
+        ]
+      },
+      "https://drafts.fxtf.org/filter-effects-1/": {
+        "anchors": [
+          "propdef-filter"
+        ]
+      },
+      "https://drafts.fxtf.org/geometry-1/": {
+        "anchors": [
+          "matrix",
+          "multiply"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {

@@ -112,19 +112,19 @@
           "html": "<p>If <var>matchingRule</var> is not found, then return \"<code>skip transition</code>\".</p>"
         },
         {
-          "html": "<p>If <var>matchingRule</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#view-transition-navigation\" id=\"ref-for-view-transition-navigation②\">navigation</a> descriptor’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed value</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-navigation-none\" id=\"ref-for-valdef-view-transition-navigation-none\">none</a>, then return \"<code>skip transition</code>\".</p>"
+          "html": "<p>If <var>matchingRule</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#view-transition-navigation\" id=\"ref-for-view-transition-navigation②\">navigation</a> descriptor’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value④\">computed value</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-navigation-none\" id=\"ref-for-valdef-view-transition-navigation-none\">none</a>, then return \"<code>skip transition</code>\".</p>"
         },
         {
-          "html": "<p class=\"assertion\">Assert: <var>matchingRule</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#view-transition-navigation\" id=\"ref-for-view-transition-navigation③\">navigation</a> descriptor’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed value</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-navigation-auto\" id=\"ref-for-valdef-view-transition-navigation-auto①\">auto</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>matchingRule</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#view-transition-navigation\" id=\"ref-for-view-transition-navigation③\">navigation</a> descriptor’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑤\">computed value</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-navigation-auto\" id=\"ref-for-valdef-view-transition-navigation-auto①\">auto</a>.</p>"
         },
         {
           "html": "<p>Let <var>typesDescriptor</var> be <var>matchingRule</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#view-transition-types\" id=\"ref-for-view-transition-types④\">types</a> descriptor.</p>"
         },
         {
-          "html": "<p>If <var>typesDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②\">computed value</a> is <span class=\"css\">none</span>, then return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a> « ».</p>"
+          "html": "<p>If <var>typesDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑥\">computed value</a> is <span class=\"css\">none</span>, then return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a> « ».</p>"
         },
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">set</a> of strings corresponding to <var>typesDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value③\">computed value</a>.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">set</a> of strings corresponding to <var>typesDescriptor</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑦\">computed value</a>.</p>"
         }
       ]
     },
@@ -203,7 +203,7 @@
           "html": "<p>Set <var>oldDocument</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition①⓪\">active view transition</a> to <var>outboundTransition</var>.</p>"
         },
         {
-          "html": "<p>The user agent should display the currently displayed frame until either:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/indices.html#event-pagereveal\" id=\"ref-for-event-pagereveal⑤\">pagereveal</a></code> event is fired.</p>\n       </li><li data-md=\"\">\n        <p>its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition①①\">active view transition</a>'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase\">phase</a> is \"<code>done</code>\".</p>\n      </li></ul>"
+          "html": "<p>The user agent should display the currently displayed frame until either:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/indices.html#event-pagereveal\" id=\"ref-for-event-pagereveal⑤\">pagereveal</a></code> event is fired.</p>\n      </li><li data-md=\"\">\n       <p>its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition①①\">active view transition</a>'s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase\">phase</a> is \"<code>done</code>\".</p>\n     </li></ul>"
         },
         {
           "html": "<p>Return <var>outboundTransition</var>.</p>"
@@ -330,7 +330,97 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-class-list\" id=\"ref-for-captured-element-class-list①\">class list</a> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value④\">computed value</a> of <var>element</var>’s <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-class\" id=\"ref-for-propdef-view-transition-class⑧\">view-transition-class</a>, if it is associated with <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a>.</p>"
+          "html": "<p>Set <var>capture</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-class-list\" id=\"ref-for-captured-element-class-list①\">class list</a> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑧\">computed value</a> of <var>element</var>’s <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-class\" id=\"ref-for-propdef-view-transition-class⑧\">view-transition-class</a>, if it is associated with <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "nearest containing group name",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#nearest-containing-group-name",
+      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"nearest-containing-group-name\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">nearest containing group name</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①\">Element</a></code> <var>element</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>nearestAncestorWithContain</var> be <var>element</var>’s nearest ancestor whose <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name\" id=\"ref-for-propdef-view-transition-name①③\">view-transition-name</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑨\">computed value</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-1/#valdef-view-transition-name-none\" id=\"ref-for-valdef-view-transition-name-none④\">none</a> and whose <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-group\" id=\"ref-for-propdef-view-transition-group⑦\">view-transition-group</a> <span id=\"ref-for-computed-value①⓪\">computed value</span> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-contain\" id=\"ref-for-valdef-view-transition-group-contain\">contain</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>nearestAncestorWithContain</var> is null, return <span class=\"css\">none</span>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <var>nearestAncestorWithContain</var>’s <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name\" id=\"ref-for-propdef-view-transition-name①④\">view-transition-name</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①①\">computed value</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "additional old capture steps (group)",
+      "html": "When <a href=\"https://drafts.csswg.org/css-view-transitions-1/#capture-old-state-algorithm\">capturing the old state for an element</a>, perform the following steps given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element\" id=\"ref-for-captured-element④\">captured element</a> <var>capturedElement</var>, and an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#element\" id=\"ref-for-element②\">element</a> <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-containing-group-name\" id=\"ref-for-captured-element-containing-group-name\">containing group name</a> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value⑥\">used value</a> of <var>element</var>’s <span class=\"css\">view-transition-group</span>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "additional new capture steps (group)",
+      "html": "When <a href=\"https://drafts.csswg.org/css-view-transitions-1/#capture-new-state-algorithm\">capturing the new state for an element</a>, perform the following steps given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element\" id=\"ref-for-captured-element⑤\">captured element</a> <var>capturedElement</var> and an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#element\" id=\"ref-for-element③\">element</a> <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-containing-group-name\" id=\"ref-for-captured-element-containing-group-name①\">containing group name</a> to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value⑦\">used value</a> of <var>element</var>’s <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-group\" id=\"ref-for-propdef-view-transition-group①⓪\">view-transition-group</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "additional pseudo-element setup steps (group)",
+      "html": "When <a href=\"https://drafts.csswg.org/css-view-transitions-1/#setup-transition-pseudo-elements-algorithm\">setting up the transition pseudo-element</a> for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element\" id=\"ref-for-captured-element⑥\">captured element</a> <var>capturedElement</var>, given a <var>transitionName</var> and a <var>transition</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>containingGroupName</var> be <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-containing-group-name\" id=\"ref-for-captured-element-containing-group-name②\">containing group name</a>.</p>"
+        },
+        {
+          "html": "If <var>containingGroupName</var> is not null, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>groupContainerElement</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-named-elements\" id=\"ref-for-viewtransition-named-elements③\">named elements</a>[<var>containingGroupName</var>].</p>"
+            },
+            {
+              "html": "<p>Let <var>group</var> be the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-group\" id=\"ref-for-selectordef-view-transition-group⑥\">::view-transition-group()</a>,\nwhose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#view-transition-name\" id=\"ref-for-view-transition-name\">view transition name</a> is set to <var>transitionName</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>parentGroup</var> be the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-group\" id=\"ref-for-selectordef-view-transition-group⑦\">::view-transition-group()</a>,\nwhose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#view-transition-name\" id=\"ref-for-view-transition-name①\">view transition name</a> is set to <var>containingGroupName</var>.</p>"
+            },
+            {
+              "html": "<p>Append <var>group</var> to <var>parentGroup</var>.</p>"
+            },
+            {
+              "html": "<p>When setting the animation keyframes given <var>transform</var>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#multiply\" id=\"ref-for-multiply\">multiply</a> <var>transform</var> by the inverse matrix of <var>groupContainerElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-transform\" id=\"ref-for-captured-element-old-transform\">old transform</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "additional pseudo-element style update steps (group)",
+      "html": "When <a href=\"https://drafts.csswg.org/css-view-transitions-1/#style-transition-pseudo-elements-algorithm\">updating the style of the transition pseudo-element</a>, perform the following steps before setting the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element-group-styles-rule\" id=\"ref-for-captured-element-group-styles-rule\">group styles rule</a>, given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#captured-element\" id=\"ref-for-captured-element⑦\">captured element</a> <var>capturedElement</var>, given a <var>transform</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition\" id=\"ref-for-viewtransition①⑨\">ViewTransition</a></code> <var>transition</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-transform-from-snapshot-containing-block\" id=\"ref-for-captured-element-transform-from-snapshot-containing-block\">transform from snapshot containing block</a> to <var>transform</var>.</p>"
+        },
+        {
+          "html": "If <var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-containing-group-name\" id=\"ref-for-captured-element-containing-group-name③\">containing group name</a> is not null, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>groupContainerElement</var> be <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-named-elements\" id=\"ref-for-viewtransition-named-elements④\">named elements</a>[<var>capturedElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-containing-group-name\" id=\"ref-for-captured-element-containing-group-name④\">containing group name</a>].</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry-1/#multiply\" id=\"ref-for-multiply①\">Multiply</a> <var>transform</var> by the inverse matrix of <var>groupContainerElement</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#captured-element-transform-from-snapshot-containing-block\" id=\"ref-for-captured-element-transform-from-snapshot-containing-block①\">transform from snapshot containing block</a>.</p>"
+            }
+          ]
         }
       ]
     }
