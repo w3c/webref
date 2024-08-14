@@ -52,32 +52,60 @@
       "number": "2.2"
     },
     {
+      "id": "adding-shipping-options",
+      "href": "https://w3c.github.io/payment-request/#adding-shipping-options",
+      "level": 3,
+      "title": "Adding shipping options",
+      "number": "2.3"
+    },
+    {
       "id": "conditional-modifications-to-payment-request",
       "href": "https://w3c.github.io/payment-request/#conditional-modifications-to-payment-request",
       "level": 3,
       "title": "Conditional modifications to payment request",
-      "number": "2.3"
+      "number": "2.4"
+    },
+    {
+      "id": "requesting-specific-information-from-the-end-user",
+      "href": "https://w3c.github.io/payment-request/#requesting-specific-information-from-the-end-user",
+      "level": 3,
+      "title": "Requesting specific information from the end user",
+      "number": "2.5"
     },
     {
       "id": "constructing-a-paymentrequest",
       "href": "https://w3c.github.io/payment-request/#constructing-a-paymentrequest",
       "level": 3,
       "title": "Constructing a PaymentRequest",
-      "number": "2.4"
+      "number": "2.6"
+    },
+    {
+      "id": "handling-events-and-updating-the-payment-request",
+      "href": "https://w3c.github.io/payment-request/#handling-events-and-updating-the-payment-request",
+      "level": 3,
+      "title": "Handling events and updating the payment request",
+      "number": "2.7"
+    },
+    {
+      "id": "fine-grained-error-reporting",
+      "href": "https://w3c.github.io/payment-request/#fine-grained-error-reporting",
+      "level": 3,
+      "title": "Fine-grained error reporting",
+      "number": "2.8"
     },
     {
       "id": "posting-payment-response-back-to-a-server",
       "href": "https://w3c.github.io/payment-request/#posting-payment-response-back-to-a-server",
       "level": 3,
       "title": "POSTing payment response back to a server",
-      "number": "2.5"
+      "number": "2.9"
     },
     {
       "id": "using-with-cross-origin-iframes",
       "href": "https://w3c.github.io/payment-request/#using-with-cross-origin-iframes",
       "level": 3,
       "title": "Using with cross-origin iframes",
-      "number": "2.6"
+      "number": "2.10"
     },
     {
       "id": "paymentrequest-interface",
@@ -122,18 +150,53 @@
       "number": "3.5"
     },
     {
+      "id": "shippingaddress-attribute",
+      "href": "https://w3c.github.io/payment-request/#shippingaddress-attribute",
+      "level": 3,
+      "title": "shippingAddress attribute",
+      "number": "3.6"
+    },
+    {
+      "id": "shippingtype-attribute",
+      "href": "https://w3c.github.io/payment-request/#shippingtype-attribute",
+      "level": 3,
+      "title": "shippingType attribute",
+      "number": "3.7"
+    },
+    {
+      "id": "onshippingaddresschange-attribute",
+      "href": "https://w3c.github.io/payment-request/#onshippingaddresschange-attribute",
+      "level": 3,
+      "title": "onshippingaddresschange attribute",
+      "number": "3.8"
+    },
+    {
+      "id": "shippingoption-attribute",
+      "href": "https://w3c.github.io/payment-request/#shippingoption-attribute",
+      "level": 3,
+      "title": "shippingOption attribute",
+      "number": "3.9"
+    },
+    {
+      "id": "onshippingoptionchange-attribute",
+      "href": "https://w3c.github.io/payment-request/#onshippingoptionchange-attribute",
+      "level": 3,
+      "title": "onshippingoptionchange attribute",
+      "number": "3.10"
+    },
+    {
       "id": "onpaymentmethodchange-attribute",
       "href": "https://w3c.github.io/payment-request/#onpaymentmethodchange-attribute",
       "level": 3,
       "title": "onpaymentmethodchange attribute",
-      "number": "3.6"
+      "number": "3.11"
     },
     {
       "id": "internal-slots",
       "href": "https://w3c.github.io/payment-request/#internal-slots",
       "level": 3,
       "title": "Internal Slots",
-      "number": "3.7"
+      "number": "3.12"
     },
     {
       "id": "paymentmethoddata-dictionary",
@@ -192,296 +255,397 @@
       "number": "7"
     },
     {
+      "id": "paymentshippingtype-enum",
+      "href": "https://w3c.github.io/payment-request/#paymentshippingtype-enum",
+      "level": 2,
+      "title": "PaymentShippingType enum",
+      "number": "8"
+    },
+    {
+      "id": "paymentoptions-dictionary",
+      "href": "https://w3c.github.io/payment-request/#paymentoptions-dictionary",
+      "level": 2,
+      "title": "PaymentOptions dictionary",
+      "number": "9"
+    },
+    {
       "id": "paymentitem-dictionary",
       "href": "https://w3c.github.io/payment-request/#paymentitem-dictionary",
       "level": 2,
-      "title": "PaymentItem dictionary",
-      "number": "8"
+      "title": "10. PaymentItem dictionary"
     },
     {
       "id": "paymentcompletedetails-dictionary",
       "href": "https://w3c.github.io/payment-request/#paymentcompletedetails-dictionary",
       "level": 2,
-      "title": "PaymentCompleteDetails dictionary",
-      "number": "9"
+      "title": "11. PaymentCompleteDetails dictionary"
     },
     {
       "id": "paymentcomplete-enum",
       "href": "https://w3c.github.io/payment-request/#paymentcomplete-enum",
       "level": 2,
-      "title": "10. PaymentComplete enum"
+      "title": "12. PaymentComplete enum"
+    },
+    {
+      "id": "paymentshippingoption-dictionary",
+      "href": "https://w3c.github.io/payment-request/#paymentshippingoption-dictionary",
+      "level": 2,
+      "title": "13. PaymentShippingOption dictionary"
     },
     {
       "id": "paymentresponse-interface",
       "href": "https://w3c.github.io/payment-request/#paymentresponse-interface",
       "level": 2,
-      "title": "11. PaymentResponse interface"
+      "title": "14. PaymentResponse interface"
     },
     {
       "id": "retry-method",
       "href": "https://w3c.github.io/payment-request/#retry-method",
       "level": 3,
       "title": "retry() method",
-      "number": "11.1"
+      "number": "14.1"
     },
     {
       "id": "paymentvalidationerrors-dictionary",
       "href": "https://w3c.github.io/payment-request/#paymentvalidationerrors-dictionary",
       "level": 4,
       "title": "PaymentValidationErrors dictionary",
-      "number": "11.1.1"
+      "number": "14.1.1"
+    },
+    {
+      "id": "payererrors-dictionary",
+      "href": "https://w3c.github.io/payment-request/#payererrors-dictionary",
+      "level": 4,
+      "title": "PayerErrors dictionary",
+      "number": "14.1.2"
     },
     {
       "id": "methodname-attribute",
       "href": "https://w3c.github.io/payment-request/#methodname-attribute",
       "level": 3,
       "title": "methodName attribute",
-      "number": "11.2"
+      "number": "14.2"
     },
     {
       "id": "details-attribute",
       "href": "https://w3c.github.io/payment-request/#details-attribute",
       "level": 3,
       "title": "details attribute",
-      "number": "11.3"
+      "number": "14.3"
+    },
+    {
+      "id": "shippingaddress-attribute-0",
+      "href": "https://w3c.github.io/payment-request/#shippingaddress-attribute-0",
+      "level": 3,
+      "title": "shippingAddress attribute",
+      "number": "14.4"
+    },
+    {
+      "id": "shippingoption-attribute-0",
+      "href": "https://w3c.github.io/payment-request/#shippingoption-attribute-0",
+      "level": 3,
+      "title": "shippingOption attribute",
+      "number": "14.5"
+    },
+    {
+      "id": "payername-attribute",
+      "href": "https://w3c.github.io/payment-request/#payername-attribute",
+      "level": 3,
+      "title": "payerName attribute",
+      "number": "14.6"
+    },
+    {
+      "id": "payeremail-attribute",
+      "href": "https://w3c.github.io/payment-request/#payeremail-attribute",
+      "level": 3,
+      "title": "payerEmail attribute",
+      "number": "14.7"
+    },
+    {
+      "id": "payerphone-attribute",
+      "href": "https://w3c.github.io/payment-request/#payerphone-attribute",
+      "level": 3,
+      "title": "payerPhone attribute",
+      "number": "14.8"
     },
     {
       "id": "requestid-attribute",
       "href": "https://w3c.github.io/payment-request/#requestid-attribute",
       "level": 3,
       "title": "requestId attribute",
-      "number": "11.4"
+      "number": "14.9"
     },
     {
       "id": "complete-method",
       "href": "https://w3c.github.io/payment-request/#complete-method",
       "level": 3,
       "title": "complete() method",
-      "number": "11.5"
+      "number": "14.10"
+    },
+    {
+      "id": "onpayerdetailchange-attribute",
+      "href": "https://w3c.github.io/payment-request/#onpayerdetailchange-attribute",
+      "level": 3,
+      "title": "onpayerdetailchange attribute",
+      "number": "14.11"
     },
     {
       "id": "internal-slots-0",
       "href": "https://w3c.github.io/payment-request/#internal-slots-0",
       "level": 3,
       "title": "Internal Slots",
-      "number": "11.6"
+      "number": "14.12"
+    },
+    {
+      "id": "shipping-and-billing-addresses",
+      "href": "https://w3c.github.io/payment-request/#shipping-and-billing-addresses",
+      "level": 2,
+      "title": "15. Shipping and billing addresses"
+    },
+    {
+      "id": "addresserrors-dictionary",
+      "href": "https://w3c.github.io/payment-request/#addresserrors-dictionary",
+      "level": 3,
+      "title": "AddressErrors dictionary",
+      "number": "15.1"
     },
     {
       "id": "permissions-policy",
       "href": "https://w3c.github.io/payment-request/#permissions-policy",
       "level": 2,
-      "title": "12. Permissions Policy integration"
+      "title": "16. Permissions Policy integration"
     },
     {
       "id": "events",
       "href": "https://w3c.github.io/payment-request/#events",
       "level": 2,
-      "title": "13. Events"
+      "title": "17. Events"
     },
     {
       "id": "summary",
       "href": "https://w3c.github.io/payment-request/#summary",
       "level": 3,
       "title": "Summary",
-      "number": "13.1"
+      "number": "17.1"
     },
     {
       "id": "paymentmethodchangeevent-interface",
       "href": "https://w3c.github.io/payment-request/#paymentmethodchangeevent-interface",
       "level": 3,
       "title": "PaymentMethodChangeEvent interface",
-      "number": "13.2"
+      "number": "17.2"
     },
     {
       "id": "methoddetails-attribute",
       "href": "https://w3c.github.io/payment-request/#methoddetails-attribute",
       "level": 4,
       "title": "methodDetails attribute",
-      "number": "13.2.1"
+      "number": "17.2.1"
     },
     {
       "id": "methodname-attribute-0",
       "href": "https://w3c.github.io/payment-request/#methodname-attribute-0",
       "level": 4,
       "title": "methodName attribute",
-      "number": "13.2.2"
+      "number": "17.2.2"
     },
     {
       "id": "paymentmethodchangeeventinit-dictionary",
       "href": "https://w3c.github.io/payment-request/#paymentmethodchangeeventinit-dictionary",
       "level": 4,
       "title": "PaymentMethodChangeEventInit dictionary",
-      "number": "13.2.3"
+      "number": "17.2.3"
     },
     {
       "id": "paymentrequestupdateevent-interface",
       "href": "https://w3c.github.io/payment-request/#paymentrequestupdateevent-interface",
       "level": 3,
       "title": "PaymentRequestUpdateEvent interface",
-      "number": "13.3"
+      "number": "17.3"
     },
     {
       "id": "constructor-0",
       "href": "https://w3c.github.io/payment-request/#constructor-0",
       "level": 4,
       "title": "Constructor",
-      "number": "13.3.1"
+      "number": "17.3.1"
     },
     {
       "id": "updatewith-method",
       "href": "https://w3c.github.io/payment-request/#updatewith-method",
       "level": 4,
       "title": "updateWith() method",
-      "number": "13.3.2"
+      "number": "17.3.2"
     },
     {
       "id": "internal-slots-1",
       "href": "https://w3c.github.io/payment-request/#internal-slots-1",
       "level": 4,
       "title": "Internal Slots",
-      "number": "13.3.3"
+      "number": "17.3.3"
     },
     {
       "id": "paymentrequestupdateeventinit-dictionary",
       "href": "https://w3c.github.io/payment-request/#paymentrequestupdateeventinit-dictionary",
       "level": 4,
       "title": "PaymentRequestUpdateEventInit dictionary",
-      "number": "13.3.4"
+      "number": "17.3.4"
     },
     {
       "id": "algorithms",
       "href": "https://w3c.github.io/payment-request/#algorithms",
       "level": 2,
-      "title": "14. Algorithms"
+      "title": "18. Algorithms"
     },
     {
       "id": "can-make-payment-algorithm",
       "href": "https://w3c.github.io/payment-request/#can-make-payment-algorithm",
       "level": 3,
       "title": "Can make payment algorithm",
-      "number": "14.1"
+      "number": "18.1"
+    },
+    {
+      "id": "shipping-address-changed-algorithm",
+      "href": "https://w3c.github.io/payment-request/#shipping-address-changed-algorithm",
+      "level": 3,
+      "title": "Shipping address changed algorithm",
+      "number": "18.2"
+    },
+    {
+      "id": "shipping-option-changed-algorithm",
+      "href": "https://w3c.github.io/payment-request/#shipping-option-changed-algorithm",
+      "level": 3,
+      "title": "Shipping option changed algorithm",
+      "number": "18.3"
     },
     {
       "id": "payment-method-changed-algorithm",
       "href": "https://w3c.github.io/payment-request/#payment-method-changed-algorithm",
       "level": 3,
       "title": "Payment method changed algorithm",
-      "number": "14.2"
+      "number": "18.4"
     },
     {
       "id": "paymentrequest-updated-algorithm",
       "href": "https://w3c.github.io/payment-request/#paymentrequest-updated-algorithm",
       "level": 3,
       "title": "PaymentRequest updated algorithm",
-      "number": "14.3"
+      "number": "18.5"
+    },
+    {
+      "id": "payer-detail-changed-algorithm",
+      "href": "https://w3c.github.io/payment-request/#payer-detail-changed-algorithm",
+      "level": 3,
+      "title": "Payer detail changed algorithm",
+      "number": "18.6"
     },
     {
       "id": "user-accepts-the-payment-request-algorithm",
       "href": "https://w3c.github.io/payment-request/#user-accepts-the-payment-request-algorithm",
       "level": 3,
       "title": "User accepts the payment request algorithm",
-      "number": "14.4"
+      "number": "18.7"
     },
     {
       "id": "user-aborts-the-payment-request-algorithm",
       "href": "https://w3c.github.io/payment-request/#user-aborts-the-payment-request-algorithm",
       "level": 3,
       "title": "User aborts the payment request algorithm",
-      "number": "14.5"
+      "number": "18.8"
     },
     {
       "id": "update-a-paymentrequest-s-details-algorithm",
       "href": "https://w3c.github.io/payment-request/#update-a-paymentrequest-s-details-algorithm",
       "level": 3,
       "title": "Update a PaymentRequest's details algorithm",
-      "number": "14.6"
+      "number": "18.9"
     },
     {
       "id": "abort-the-update",
       "href": "https://w3c.github.io/payment-request/#abort-the-update",
       "level": 4,
       "title": "Abort the update",
-      "number": "14.6.1"
+      "number": "18.9.1"
     },
     {
       "id": "privacy",
       "href": "https://w3c.github.io/payment-request/#privacy",
       "level": 2,
-      "title": "15. Privacy and Security Considerations"
+      "title": "19. Privacy and Security Considerations"
     },
     {
       "id": "user-protections-with-show-method",
       "href": "https://w3c.github.io/payment-request/#user-protections-with-show-method",
       "level": 3,
       "title": "User protections with show() method",
-      "number": "15.1"
+      "number": "19.1"
     },
     {
       "id": "secure-contexts",
       "href": "https://w3c.github.io/payment-request/#secure-contexts",
       "level": 3,
       "title": "Secure contexts",
-      "number": "15.2"
+      "number": "19.2"
     },
     {
       "id": "cross-origin-payment-requests",
       "href": "https://w3c.github.io/payment-request/#cross-origin-payment-requests",
       "level": 3,
       "title": "Cross-origin payment requests",
-      "number": "15.3"
+      "number": "19.3"
     },
     {
       "id": "encryption-of-data-fields",
       "href": "https://w3c.github.io/payment-request/#encryption-of-data-fields",
       "level": 3,
       "title": "Encryption of data fields",
-      "number": "15.4"
+      "number": "19.4"
     },
     {
       "id": "how-user-agents-match-payment-handlers",
       "href": "https://w3c.github.io/payment-request/#how-user-agents-match-payment-handlers",
       "level": 3,
       "title": "How user agents match payment handlers",
-      "number": "15.5"
+      "number": "19.5"
     },
     {
       "id": "data-usage-0",
       "href": "https://w3c.github.io/payment-request/#data-usage-0",
       "level": 3,
       "title": "Data usage",
-      "number": "15.6"
+      "number": "19.6"
     },
     {
       "id": "exposing-user-information",
       "href": "https://w3c.github.io/payment-request/#exposing-user-information",
       "level": 3,
       "title": "Exposing user information",
-      "number": "15.7"
+      "number": "19.7"
     },
     {
       "id": "canmakepayment-protections-0",
       "href": "https://w3c.github.io/payment-request/#canmakepayment-protections-0",
       "level": 3,
       "title": "canMakePayment() protections",
-      "number": "15.8"
+      "number": "19.8"
     },
     {
       "id": "accessibility-considerations",
       "href": "https://w3c.github.io/payment-request/#accessibility-considerations",
       "level": 2,
-      "title": "16. Accessibility Considerations"
+      "title": "20. Accessibility Considerations"
     },
     {
       "id": "dependencies",
       "href": "https://w3c.github.io/payment-request/#dependencies",
       "level": 2,
-      "title": "17. Dependencies"
+      "title": "21. Dependencies"
     },
     {
       "id": "conformance",
       "href": "https://w3c.github.io/payment-request/#conformance",
       "level": 2,
-      "title": "18. Conformance"
+      "title": "22. Conformance"
     },
     {
       "id": "idl-index",

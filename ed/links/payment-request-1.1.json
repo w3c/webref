@@ -31,6 +31,7 @@
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/payment": {},
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "potential-event-target",
           "concept-document",
           "concept-event-fire",
           "concept-event-create",
@@ -232,8 +233,18 @@
       "https://wpt.live/payment-request/": {},
       "https://wpt.live/payment-request/PaymentRequestUpdateEvent/constructor.http.html": {},
       "https://wpt.live/payment-request/PaymentRequestUpdateEvent/constructor.https.html": {},
+      "https://wpt.live/payment-request/PaymentRequestUpdateEvent/updateWith-duplicate-shipping-options-manual.https.html": {},
+      "https://wpt.live/payment-request/PaymentRequestUpdateEvent/updateWith-incremental-update-manual.https.html": {},
       "https://wpt.live/payment-request/PaymentRequestUpdateEvent/updatewith-method.https.html": {},
       "https://wpt.live/payment-request/PaymentValidationErrors/retry-shows-error-member-manual.https.html": {},
+      "https://wpt.live/payment-request/algorithms-manual.https.html": {
+        "anchors": [
+          "shipping-address-changed-algo",
+          "shipping-option-changed-algo"
+        ]
+      },
+      "https://wpt.live/payment-request/change-shipping-option-manual.https.html": {},
+      "https://wpt.live/payment-request/change-shipping-option-select-last-manual.https.html": {},
       "https://wpt.live/payment-request/payment-request-abort-method.https.html": {},
       "https://wpt.live/payment-request/payment-request-canmakepayment-method.https.html": {},
       "https://wpt.live/payment-request/payment-request-constructor.https.sub.html": {},
@@ -241,16 +252,30 @@
       "https://wpt.live/payment-request/payment-request-ctor-pmi-handling.https.sub.html": {},
       "https://wpt.live/payment-request/payment-request-id-attribute.https.html": {},
       "https://wpt.live/payment-request/payment-request-insecure.http.html": {},
+      "https://wpt.live/payment-request/payment-request-onshippingaddresschange-attribute.https.html": {},
+      "https://wpt.live/payment-request/payment-request-onshippingoptionchange-attribute.https.html": {},
+      "https://wpt.live/payment-request/payment-request-shippingOption-attribute.https.html": {},
+      "https://wpt.live/payment-request/payment-request-shippingType-attribute.https.html": {},
       "https://wpt.live/payment-request/payment-request-show-method.https.html": {},
       "https://wpt.live/payment-request/payment-response/complete-method-manual.https.html": {},
       "https://wpt.live/payment-request/payment-response/methodName-attribute-manual.https.html": {},
+      "https://wpt.live/payment-request/payment-response/payerEmail-attribute-manual.https.html": {},
+      "https://wpt.live/payment-request/payment-response/payerName-attribute-manual.https.html": {},
+      "https://wpt.live/payment-request/payment-response/payerPhone-attribute-manual.https.html": {},
       "https://wpt.live/payment-request/payment-response/rejects_if_not_active-manual.https.html": {},
       "https://wpt.live/payment-request/payment-response/requestId-attribute-manual.https.html": {},
+      "https://wpt.live/payment-request/payment-response/retry-method-manual.https.html": {},
+      "https://wpt.live/payment-request/payment-response/shippingAddress-attribute-manual.https.html": {},
+      "https://wpt.live/payment-request/payment-response/shippingOption-attribute-manual.https.html": {},
       "https://wpt.live/payment-request/rejects_if_not_active.https.html": {},
+      "https://wpt.live/payment-request/shipping-address-changed-manual.https.html": {},
       "https://wpt.live/payment-request/show-consume-activation.https.html": {},
       "https://wpt.live/payment-request/show-method-optional-promise-rejects.https.html": {},
       "https://wpt.live/payment-request/show-method-postmessage-manual.https.html": {},
+      "https://wpt.live/payment-request/updateWith-method-pmi-handling-manual.https.html": {},
       "https://wpt.live/payment-request/user-abort-algorithm-manual.https.html": {},
+      "https://wpt.live/payment-request/user-accepts-payment-request-algo-manual.https.html": {},
+      "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-E.164-201011-I!!PDF-E&type=items": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc4122": {},
       "https://www.rfc-editor.org/rfc/rfc6454": {
@@ -261,6 +286,11 @@
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2022/REC-payment-request-20220908/": {},
+      "https://www.w3.org/TR/contact-picker/": {
+        "anchors": [
+          "physical-address"
+        ]
+      },
       "https://www.w3.org/TR/payment-handler/": {},
       "https://www.w3.org/TR/payment-method-id/": {
         "anchors": [
@@ -407,6 +437,32 @@
           "Default",
           "dfn-exception",
           "notallowederror"
+        ]
+      },
+      "https://www.w3.org/TR/contact-picker/": {
+        "anchors": [
+          "contactaddress",
+          "physical-address",
+          "physical-address-address-line",
+          "dom-contactaddress-addressline",
+          "physical-address-city",
+          "dom-contactaddress-city",
+          "physical-address-country",
+          "dom-contactaddress-country",
+          "physical-address-dependent-locality",
+          "dom-contactaddress-dependentlocality",
+          "physical-address-organization",
+          "dom-contactaddress-organization",
+          "physical-address-phone-number",
+          "dom-contactaddress-phone",
+          "physical-address-postal-code",
+          "dom-contactaddress-postalcode",
+          "physical-address-recipient",
+          "physical-address-region",
+          "dom-contactaddress-region",
+          "physical-address-sorting-code",
+          "dom-contactaddress-sortingcode",
+          "contactsmanager-create-a-contactaddress-from-user-provided-input"
         ]
       },
       "https://www.w3.org/TR/payment-method-id/": {

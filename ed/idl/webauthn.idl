@@ -19,7 +19,7 @@ typedef DOMString Base64URLString;
 typedef object PublicKeyCredentialJSON;
 
 dictionary RegistrationResponseJSON {
-    required Base64URLString id;
+    required DOMString id;
     required Base64URLString rawId;
     required AuthenticatorAttestationResponseJSON response;
     DOMString authenticatorAttachment;
@@ -45,7 +45,7 @@ dictionary AuthenticatorAttestationResponseJSON {
 };
 
 dictionary AuthenticationResponseJSON {
-    required Base64URLString id;
+    required DOMString id;
     required Base64URLString rawId;
     required AuthenticatorAssertionResponseJSON response;
     DOMString authenticatorAttachment;

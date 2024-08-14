@@ -15,6 +15,33 @@
         "PaymentRequest"
       ],
       "interface": "PaymentMethodChangeEvent"
+    },
+    {
+      "type": "shippingaddresschange",
+      "targets": [
+        "PaymentRequest"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
+    },
+    {
+      "type": "shippingoptionchange",
+      "targets": [
+        "PaymentRequest"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
+    },
+    {
+      "type": "payerdetailchange",
+      "targets": [
+        "PaymentResponse"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
     }
   ]
 }
