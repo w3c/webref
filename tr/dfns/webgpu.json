@@ -214,6 +214,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "queue-timeline-property",
+      "href": "https://www.w3.org/TR/webgpu/#queue-timeline-property",
+      "linkingText": [
+        "queue timeline property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webgpu-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-objects",
+        "title": "WebGPU Objects",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "abstract-opdef-create-a-new-webgpu-object",
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-create-a-new-webgpu-object",
       "linkingText": [
@@ -1136,6 +1155,69 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-adapter-features-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-features-slot",
+      "linkingText": [
+        "[[features]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "adapter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "href": "https://www.w3.org/TR/webgpu/#adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-adapter-limits-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-limits-slot",
+      "linkingText": [
+        "[[limits]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "adapter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "href": "https://www.w3.org/TR/webgpu/#adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-adapter-fallback-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-fallback-slot",
+      "linkingText": [
+        "[[fallback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "adapter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "href": "https://www.w3.org/TR/webgpu/#adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-adapter-state-slot",
       "href": "https://www.w3.org/TR/webgpu/#dom-adapter-state-slot",
       "linkingText": [
@@ -1208,69 +1290,6 @@
       "type": "enum-value",
       "for": [
         "adapter/[[state]]"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "adapters",
-        "href": "https://www.w3.org/TR/webgpu/#adapters",
-        "title": "Adapters",
-        "number": "3.5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-adapter-features-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-features-slot",
-      "linkingText": [
-        "[[features]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "adapter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "adapters",
-        "href": "https://www.w3.org/TR/webgpu/#adapters",
-        "title": "Adapters",
-        "number": "3.5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-adapter-limits-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-limits-slot",
-      "linkingText": [
-        "[[limits]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "adapter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "adapters",
-        "href": "https://www.w3.org/TR/webgpu/#adapters",
-        "title": "Adapters",
-        "number": "3.5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-adapter-fallback-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-fallback-slot",
-      "linkingText": [
-        "[[fallback]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "adapter"
       ],
       "access": "public",
       "informative": false,
@@ -5490,27 +5509,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gputexture-size-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-size-slot",
-      "linkingText": [
-        "[[size]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUTexture"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "gputexture",
-        "href": "https://www.w3.org/TR/webgpu/#gputexture",
-        "title": "GPUTexture",
-        "number": "6.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-gputexture-viewformats-slot",
       "href": "https://www.w3.org/TR/webgpu/#dom-gputexture-viewformats-slot",
       "linkingText": [
@@ -9021,10 +9019,10 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-gpuexternaltexture-expired-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuexternaltexture-expired-slot",
+      "id": "dom-gpuexternaltexture-descriptor-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuexternaltexture-descriptor-slot",
       "linkingText": [
-        "[[expired]]"
+        "[[descriptor]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -9042,10 +9040,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpuexternaltexture-descriptor-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuexternaltexture-descriptor-slot",
+      "id": "dom-gpuexternaltexture-expired-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuexternaltexture-expired-slot",
       "linkingText": [
-        "[[descriptor]]"
+        "[[expired]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -18733,10 +18731,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucomputepassencoder-pipeline-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-pipeline-slot",
+      "id": "dom-gpucomputepassencoder-endtimestampwrite-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-endtimestampwrite-slot",
       "linkingText": [
-        "[[pipeline]]"
+        "[[endTimestampWrite]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -18754,10 +18752,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucomputepassencoder-endtimestampwrite-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-endtimestampwrite-slot",
+      "id": "dom-gpucomputepassencoder-pipeline-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-pipeline-slot",
       "linkingText": [
-        "[[endTimestampWrite]]"
+        "[[pipeline]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -19210,27 +19208,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpurenderpassencoder-occlusion_query_active-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpassencoder-occlusion_query_active-slot",
-      "linkingText": [
-        "[[occlusion_query_active]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "gpurenderpassencoder",
-        "href": "https://www.w3.org/TR/webgpu/#gpurenderpassencoder",
-        "title": "GPURenderPassEncoder",
-        "number": "17.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-gpurenderpassencoder-endtimestampwrite-slot",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpassencoder-endtimestampwrite-slot",
       "linkingText": [
@@ -19256,6 +19233,27 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpassencoder-maxdrawcount-slot",
       "linkingText": [
         "[[maxDrawCount]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpurenderpassencoder",
+        "href": "https://www.w3.org/TR/webgpu/#gpurenderpassencoder",
+        "title": "GPURenderPassEncoder",
+        "number": "17.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderpassencoder-occlusion_query_active-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpassencoder-occlusion_query_active-slot",
+      "linkingText": [
+        "[[occlusion_query_active]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -22676,10 +22674,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpuqueryset-state-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuqueryset-state-slot",
+      "id": "dom-gpuqueryset-destroyed-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuqueryset-destroyed-slot",
       "linkingText": [
-        "[[state]]"
+        "[[destroyed]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -22687,67 +22685,6 @@
         "GPUQuerySet"
       ],
       "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "gpuqueryset",
-        "href": "https://www.w3.org/TR/webgpu/#gpuqueryset",
-        "title": "GPUQuerySet",
-        "number": "20.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "query-set-state",
-      "href": "https://www.w3.org/TR/webgpu/#query-set-state",
-      "linkingText": [
-        "query set state"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "gpuqueryset",
-        "href": "https://www.w3.org/TR/webgpu/#gpuqueryset",
-        "title": "GPUQuerySet",
-        "number": "20.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "query-set-state-available",
-      "href": "https://www.w3.org/TR/webgpu/#query-set-state-available",
-      "linkingText": [
-        "available"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "query set state"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "gpuqueryset",
-        "href": "https://www.w3.org/TR/webgpu/#gpuqueryset",
-        "title": "GPUQuerySet",
-        "number": "20.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "query-set-state-destroyed",
-      "href": "https://www.w3.org/TR/webgpu/#query-set-state-destroyed",
-      "linkingText": [
-        "destroyed"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "query set state"
-      ],
-      "access": "private",
       "informative": false,
       "heading": {
         "id": "gpuqueryset",
@@ -22876,7 +22813,7 @@
       "heading": {
         "id": "queryset-destruction",
         "href": "https://www.w3.org/TR/webgpu/#queryset-destruction",
-        "title": "QuerySet Destruction",
+        "title": "Query Set Destruction",
         "number": "20.1.2"
       },
       "definedIn": "dt"
