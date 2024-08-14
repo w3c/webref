@@ -131,7 +131,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionad"
       },
       "GenerateBidInterestGroup": {
-        "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n  required double lifetimeMs;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  record<USVString, sequence<DOMString>> sellerCapabilities;\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  DOMString trustedBiddingSignalsSlotSizeMode = \"none\";\n  long maxTrustedBiddingSignalsURLLength;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
+        "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  record<USVString, sequence<DOMString>> sellerCapabilities;\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  DOMString trustedBiddingSignalsSlotSizeMode = \"none\";\n  long maxTrustedBiddingSignalsURLLength;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
         "type": "dictionary",
         "name": "GenerateBidInterestGroup",
         "inheritance": null,
@@ -167,22 +167,6 @@
             "default": null,
             "required": true,
             "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-name"
-          },
-          {
-            "type": "field",
-            "name": "lifetimeMs",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": true,
-            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-lifetimems"
           },
           {
             "type": "field",
@@ -493,7 +477,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-generatebidinterestgroup"
       },
       "AuctionAdInterestGroup": {
-        "fragment": "dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {\n  double priority = 0.0;\n  record<DOMString, double> prioritySignalsOverrides;\n  DOMString additionalBidKey;\n};",
+        "fragment": "dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {\n  double priority = 0.0;\n  record<DOMString, double> prioritySignalsOverrides;\n  required double lifetimeMs;\n  DOMString additionalBidKey;\n};",
         "type": "dictionary",
         "name": "AuctionAdInterestGroup",
         "inheritance": "GenerateBidInterestGroup",
@@ -549,6 +533,22 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-auctionadinterestgroup-prioritysignalsoverrides"
+          },
+          {
+            "type": "field",
+            "name": "lifetimeMs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadinterestgroup-lifetimems"
           },
           {
             "type": "field",

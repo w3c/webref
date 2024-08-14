@@ -2,7 +2,6 @@
 dictionary GenerateBidInterestGroup {
   required USVString owner;
   required USVString name;
-  required double lifetimeMs;
 
   boolean enableBiddingSignalsPrioritization = false;
   record<DOMString, double> priorityVector;
