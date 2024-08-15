@@ -857,11 +857,11 @@
               "html": "<p>If <var>global</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑦\">Window</a></code> object, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#record-timing-info-for-event-listener\" id=\"ref-for-record-timing-info-for-event-listener\">record timing info for event listener</a> given <var>event</var> and <var>listener</var>. </p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#call-a-user-objects-operation\" id=\"ref-for-call-a-user-objects-operation\">Call a user object’s operation</a> with <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback①⑨\">callback</a>, \"<code>handleEvent</code>\", « <var>event</var> », and <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-currenttarget\" id=\"ref-for-dom-event-currenttarget⑨\">currentTarget</a></code> attribute value. If this throws an exception, then:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#call-a-user-objects-operation\" id=\"ref-for-call-a-user-objects-operation\">Call a user object’s operation</a> with <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback①⑨\">callback</a>, \"<code>handleEvent</code>\", « <var>event</var> », and <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-currenttarget\" id=\"ref-for-dom-event-currenttarget⑨\">currentTarget</a></code> attribute value. If this throws an exception <var>exception</var>, then:",
               "rationale": "report",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\" id=\"ref-for-report-the-exception\">Report the exception</a>. </p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-an-exception\" id=\"ref-for-report-an-exception\">Report</a> <var>exception</var> for <var>listener</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback②⓪\">callback</a>’s corresponding JavaScript object’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-associated-realm\" id=\"ref-for-dfn-associated-realm①\">associated realm</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global①\">global object</a>. </p>"
                 },
                 {
                   "html": "<p>Set <var>legacyOutputDidListenersThrowFlag</var> if given. </p>"
@@ -3336,11 +3336,11 @@
               ],
               "additional": [
                 {
-                  "html": "If this step threw an exception, then:",
+                  "html": "If this step threw an exception <var>exception</var>:",
                   "rationale": "report",
                   "steps": [
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\" id=\"ref-for-report-the-exception①\">Report the exception</a>. </p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-an-exception\" id=\"ref-for-report-an-exception①\">Report</a> <var>exception</var> for <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor\" id=\"ref-for-concept-custom-element-definition-constructor\">constructor</a>’s corresponding JavaScript object’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-associated-realm\" id=\"ref-for-dfn-associated-realm②\">associated realm</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global②\">global object</a>. </p>"
                     },
                     {
                       "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom-element-state\" id=\"ref-for-concept-element-custom-element-state④\">custom element state</a> to\n     \"<code>failed</code>\". </p>"
@@ -3355,7 +3355,7 @@
           ]
         },
         {
-          "html": "Otherwise, if <var>definition</var> is non-null, then:",
+          "html": "Otherwise, if <var>definition</var> is non-null:",
           "rationale": "if",
           "steps": [
             {
@@ -3363,7 +3363,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>C</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor\" id=\"ref-for-concept-custom-element-definition-constructor\">constructor</a>. </p>"
+                  "html": "<p>Let <var>C</var> be <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor\" id=\"ref-for-concept-custom-element-definition-constructor①\">constructor</a>. </p>"
                 },
                 {
                   "html": "<p>Set <var>result</var> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#construct-a-callback-function\" id=\"ref-for-construct-a-callback-function\">constructing</a> <var>C</var>, with no\n     arguments. </p>"
@@ -3398,11 +3398,11 @@
               ],
               "additional": [
                 {
-                  "html": "If any of these steps threw an exception, then:",
+                  "html": "If any of these steps threw an exception <var>exception</var>:",
                   "rationale": "report",
                   "steps": [
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\" id=\"ref-for-report-the-exception②\">Report the exception</a>. </p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-an-exception\" id=\"ref-for-report-an-exception②\">Report</a> <var>exception</var> for <var>definition</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor\" id=\"ref-for-concept-custom-element-definition-constructor②\">constructor</a>’s corresponding JavaScript object’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-associated-realm\" id=\"ref-for-dfn-associated-realm③\">associated realm</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global③\">global object</a>. </p>"
                     },
                     {
                       "html": "<p>Set <var>result</var> to a new <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑧②\">element</a> that implements the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/dom.html#htmlunknownelement\" id=\"ref-for-htmlunknownelement\">HTMLUnknownElement</a></code> interface, with no attributes, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"ref-for-concept-element-namespace①⑥\">namespace</a> set to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#html-namespace\" id=\"ref-for-html-namespace②①\">HTML namespace</a>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-namespace-prefix\" id=\"ref-for-concept-element-namespace-prefix①④\">namespace prefix</a> set to <var>prefix</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"ref-for-concept-element-local-name①③\">local name</a> set to <var>localName</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom-element-state\" id=\"ref-for-concept-element-custom-element-state⑥\">custom element state</a> set to \"<code>failed</code>\", <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom-element-definition\" id=\"ref-for-concept-element-custom-element-definition②\">custom element definition</a> set to null, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-is-value\" id=\"ref-for-concept-element-is-value③\"><code>is</code> value</a> set to null, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④⑦\">node document</a> set to <var>document</var>. </p>"
