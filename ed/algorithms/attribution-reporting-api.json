@@ -5938,29 +5938,7 @@
           "html": "<p>If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-report-debug-mode\" id=\"ref-for-aggregatable-report-debug-mode\">debug mode</a> is <strong>enabled</strong>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③⑦\">set</a> <var>sharedInfo</var>[\"<code>debug_mode</code>\"] to \"<code>enabled</code>\".</p>"
         },
         {
-          "html": "If <var>report</var> is an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report\" id=\"ref-for-aggregatable-attribution-report①⑦\">aggregatable attribution report</a>:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-source-registration-time-configuration\" id=\"ref-for-aggregatable-attribution-report-source-registration-time-configuration②\">source registration time configuration</a> is:",
-              "rationale": ".switch",
-              "steps": [
-                {
-                  "operation": "switch",
-                  "steps": [
-                    {
-                      "case": "\"include\"",
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③⑧\">Set</a> <var>sharedInfo</var>[\"<code>source_registration_time</code>\"] to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-rounded-source-time\" id=\"ref-for-obtain-rounded-source-time②\">obtaining rounded source time</a> with <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-source-time\" id=\"ref-for-aggregatable-attribution-report-source-time③\">source time</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#serialize-an-integer\" id=\"ref-for-serialize-an-integer②⓪\">serialized</a>.</p>"
-                    },
-                    {
-                      "case": "\"exclude\"",
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③⑨\">Set</a> <var>sharedInfo</var>[\"<code>source_registration_time</code>\"] to \"<code>0</code>\".</p>"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "html": "<p>If <var>report</var> is an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report\" id=\"ref-for-aggregatable-attribution-report①⑦\">aggregatable attribution report</a> and <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-source-registration-time-configuration\" id=\"ref-for-aggregatable-attribution-report-source-registration-time-configuration②\">source registration time configuration</a> is \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-source-registration-time-configuration-include\" id=\"ref-for-aggregatable-source-registration-time-configuration-include①\">include</a></code>\": <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③⑧\">set</a> <var>sharedInfo</var>[\"<code>source_registration_time</code>\"] to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-rounded-source-time\" id=\"ref-for-obtain-rounded-source-time②\">obtaining rounded source time</a> with <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-source-time\" id=\"ref-for-aggregatable-attribution-report-source-time③\">source time</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#serialize-an-integer\" id=\"ref-for-serialize-an-integer②⓪\">serialized</a>.</p>"
         },
         {
           "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑥\">string</a> resulting from executing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-a-json-string\" id=\"ref-for-serialize-an-infra-value-to-a-json-string\">serialize an infra value to a json string</a> on <var>sharedInfo</var>.</p>"
@@ -6110,7 +6088,7 @@
           "html": "<p>Let <var>aggregationServicePayload</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥⑥\">map</a> of the following key/value pairs:</p>\n     <dl>\n      <dt data-md=\"\">\"<code>payload</code>\"\n      </dt><dd data-md=\"\">\n       <p><var>encryptedPayload</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode\">base64 encoded</a></p>\n      </dd><dt data-md=\"\">\"<code>key_id</code>\"\n      </dt><dd data-md=\"\">\n       <p>A <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑦\">string</a> identifying <var>pkR</var></p>\n     </dd></dl>"
         },
         {
-          "html": "<p>If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-report-debug-mode\" id=\"ref-for-aggregatable-report-debug-mode①\">debug mode</a> is <strong>enabled</strong>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④⓪\">set</a> <var>aggregationServicePayload</var>[\"<code>debug_cleartext_payload</code>\"] to <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-report-plaintext-payload\" id=\"ref-for-aggregatable-report-plaintext-payload①\">plaintext payload</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode①\">base64 encoded</a>.</p>"
+          "html": "<p>If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-report-debug-mode\" id=\"ref-for-aggregatable-report-debug-mode①\">debug mode</a> is <strong>enabled</strong>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③⑨\">set</a> <var>aggregationServicePayload</var>[\"<code>debug_cleartext_payload</code>\"] to <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-report-plaintext-payload\" id=\"ref-for-aggregatable-report-plaintext-payload①\">plaintext payload</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode①\">base64 encoded</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③④\">Append</a> <var>aggregationServicePayload</var> to <var>aggregationServicePayloads</var>.</p>"
@@ -6187,7 +6165,7 @@
           "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#serialize-an-attribution-debug-info\" id=\"ref-for-serialize-an-attribution-debug-info①\">serialize an attribution debug info</a> with <var>data</var> and <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-attribution-debug-info\" id=\"ref-for-aggregatable-attribution-report-attribution-debug-info④\">attribution debug info</a>.</p>"
         },
         {
-          "html": "<p>If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-trigger-context-id\" id=\"ref-for-aggregatable-attribution-report-trigger-context-id②\">trigger context ID</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④①\">set</a> <var>data</var>[\"<code>trigger_context_id</code>\"] to <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-trigger-context-id\" id=\"ref-for-aggregatable-attribution-report-trigger-context-id③\">trigger context ID</a>.</p>"
+          "html": "<p>If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-trigger-context-id\" id=\"ref-for-aggregatable-attribution-report-trigger-context-id②\">trigger context ID</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④⓪\">set</a> <var>data</var>[\"<code>trigger_context_id</code>\"] to <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-trigger-context-id\" id=\"ref-for-aggregatable-attribution-report-trigger-context-id③\">trigger context ID</a>.</p>"
         },
         {
           "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑥\">byte sequence</a> resulting from executing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-json-bytes\" id=\"ref-for-serialize-an-infra-value-to-json-bytes①\">serialize an infra value to JSON bytes</a> on <var>data</var>.</p>"
