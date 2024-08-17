@@ -124,7 +124,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A portable URL-based identifier, also known as a <strong><em>DID</em></strong>,\nassociated with an <a href=\"https://w3c.github.io/vc-data-model/#dfn-entities\">entity</a>. These identifiers are most often used in a\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credential</a> and are associated with <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a> such that a\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credential</a> itself can be easily ported from one\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-credential-repositories\">credential repository</a> to another without the need to reissue the <a href=\"https://w3c.github.io/vc-data-model/#dfn-credential\">credential</a>.\nAn example of a DID is <code>did:example:123456abcdef</code>."
+      "htmlProse": "A portable URL-based identifier, also known as a <strong><em>DID</em></strong>,\nis associated with an <a href=\"https://w3c.github.io/vc-data-model/#dfn-entities\">entity</a>. These identifiers are most often used in a\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credential</a> and are associated with <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a> such that a\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credential</a> can be easily ported from one\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-credential-repositories\">credential repository</a> to another without reissuing the <a href=\"https://w3c.github.io/vc-data-model/#dfn-credential\">credential</a>.\nAn example of a DID is <code>did:example:123456abcdef</code>."
     },
     {
       "id": "dfn-default-graph",
@@ -166,7 +166,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "Anything that can be referenced in statements as an abstract or concrete noun.\nEntities include but are not limited to people, organizations, physical things,\ndocuments, abstract concepts, fictional characters, and arbitrary text. Any\nentity might perform roles in the ecosystem, if it is capable of doing so. Note\nthat some entities fundamentally cannot take actions, e.g., the string \"abc\"\ncannot issue credentials."
+      "htmlProse": "Anything that can be referenced in statements as an abstract or concrete noun.\nEntities include but are not limited to people, organizations, physical things,\ndocuments, abstract concepts, fictional characters, and arbitrary text. Any\nentity might perform roles in the ecosystem, if it can do so. Note\nthat some entities fundamentally cannot take actions, e.g., the string \"abc\"\ncannot issue credentials."
     },
     {
       "id": "dfn-graphs",
@@ -187,7 +187,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A set of claims, forming a network of information composed of <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a>\nand their relationship to other <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a> or data. Each <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claim</a> is\npart of a graph; this is either explicit in the case of <a href=\"https://w3c.github.io/vc-data-model/#dfn-named-graphs\">named graphs</a>, or\nimplicit for the <a href=\"https://w3c.github.io/vc-data-model/#dfn-default-graph\">default graph</a>."
+      "htmlProse": "A set of claims, forming a network of information composed of <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a>\nand their relationship to other <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a> or data. Each <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claim</a> is\npart of a graph; either explicit in the case of <a href=\"https://w3c.github.io/vc-data-model/#dfn-named-graphs\">named graphs</a>, or\nimplicit for the <a href=\"https://w3c.github.io/vc-data-model/#dfn-default-graph\">default graph</a>."
     },
     {
       "id": "dfn-holders",
@@ -274,7 +274,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "Data derived from one or more <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credentials</a>, issued by one or\nmore <a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuers</a>, that is shared with a specific <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">verifier</a>."
+      "htmlProse": "Data derived from one or more <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credentials</a> issued by one or\nmore <a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuers</a> that is shared with a specific <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">verifier</a>."
     },
     {
       "id": "dfn-credential-repositories",
@@ -399,7 +399,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A tamper-evident <a href=\"https://w3c.github.io/vc-data-model/#dfn-credential\">credential</a> that has authorship that can be\ncryptographically verified. Verifiable credentials can be used to build\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-presentation\">verifiable presentations</a>, which can also be cryptographically verified."
+      "htmlProse": "A tamper-evident <a href=\"https://w3c.github.io/vc-data-model/#dfn-credential\">credential</a> whose authorship can be cryptographically\nverified. Verifiable credentials can be used to build\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-presentation\">verifiable presentations</a>, which can also be cryptographically verifiable."
     },
     {
       "id": "dfn-verifiable-data-registries",
@@ -420,7 +420,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A role a system might perform by mediating the creation and <a href=\"https://w3c.github.io/vc-data-model/#dfn-verify\">verification</a>\nof identifiers, <a href=\"https://w3c.github.io/vc-data-model/#dfn-verification-material\">verification material</a>, and other relevant data, such as\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credential</a> schemas, revocation registries,\nand so on, which might be required to use <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credentials</a>. Some\nconfigurations might require correlatable identifiers for <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a>. Some\nregistries, such as ones for UUIDs and <a href=\"https://w3c.github.io/vc-data-model/#dfn-verification-material\">verification material</a>, might just act\nas namespaces for identifiers."
+      "htmlProse": "A role a system might perform by mediating the creation and <a href=\"https://w3c.github.io/vc-data-model/#dfn-verify\">verification</a>\nof identifiers, <a href=\"https://w3c.github.io/vc-data-model/#dfn-verification-material\">verification material</a>, and other relevant data, such as\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credential</a> schemas, revocation registries,\nand so on, which might require using <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credentials</a>. Some\nconfigurations might require correlatable identifiers for <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a>. Some\nregistries, such as ones for UUIDs and <a href=\"https://w3c.github.io/vc-data-model/#dfn-verification-material\">verification material</a>, might act\nas namespaces for identifiers."
     },
     {
       "id": "dfn-verifiable-presentation",
@@ -440,7 +440,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A tamper-evident presentation of information encoded in such a way that\nauthorship of the data can be trusted after a process of cryptographic\nverification. Certain types of verifiable presentations might contain data that\nis synthesized from, but do not contain, the original <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credentials</a>\n(for example, zero-knowledge proofs)."
+      "htmlProse": "A tamper-evident presentation of information encoded in such a way that\nauthorship of the data can be trusted after a process of cryptographic\nverification. Certain types of verifiable presentations might contain data that\nis synthesized from, but does not contain, the original <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credentials</a>\n(for example, zero-knowledge proofs)."
     },
     {
       "id": "dfn-verify",
@@ -465,7 +465,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "The evaluation of whether a <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credential</a> or <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-presentation\">verifiable presentation</a> is an authentic and current statement of the issuer or presenter,\nrespectively. This includes checking that: the credential or presentation\nconforms to the specification; the securing mechanism is satisfied; and, if\npresent, the status check succeeds. Verification of a credential does not imply\nevaluation of the truth of <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claims</a> encoded in the credential."
+      "htmlProse": "The evaluation of whether a <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credential</a> or <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-presentation\">verifiable presentation</a> is an authentic and current statement of the issuer or presenter,\nrespectively. This includes checking that the credential or presentation\nconforms to the specification, the securing mechanism is satisfied, and, if\npresent, the status check succeeds. Verification of a credential does not imply\nevaluation of the truth of <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claims</a> encoded in the credential."
     },
     {
       "id": "dfn-verifier",
@@ -529,7 +529,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "Information that is used to verify the security of cryptographically\nprotected information. For example, a cryptographic public key used to verify\na digital signature associated with a <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credential</a>."
+      "htmlProse": "Information that is used to verify the security of cryptographically\nprotected information. For example, a cryptographic public key is used to verify\na digital signature associated with a <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifiable-credential\">verifiable credential</a>."
     },
     {
       "id": "dfn-url",
@@ -550,7 +550,7 @@
         "number": "2"
       },
       "definedIn": "dt",
-      "htmlProse": "A Uniform Resource Locator, as defined by the <cite><a href=\"https://url.spec.whatwg.org/\">URL Standard</a></cite>. URLs can be\ndereferenced such that they result in a resource, such as a document. The rules\nfor dereferencing, or fetching, a URL are defined by the URL <a href=\"https://url.spec.whatwg.org/#concept-url-scheme\">scheme</a>.\nThis specification does not use the term URI or IRI because those terms have\nbeen deemed to be confusing to Web developers."
+      "htmlProse": "A Uniform Resource Locator, as defined by the <cite><a href=\"https://url.spec.whatwg.org/\">URL Standard</a></cite>. URLs can be\ndereferenced to result in a resource, such as a document. The rules\nfor dereferencing, or fetching, a URL are defined by the URL <a href=\"https://url.spec.whatwg.org/#concept-url-scheme\">scheme</a>.\nThis specification does not use the term URI or IRI because those terms have\nbeen deemed to be confusing to Web developers."
     },
     {
       "id": "dfn-property",
