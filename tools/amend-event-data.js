@@ -286,6 +286,18 @@ const patches = {
       change: { interface: 'DeviceOrientationEvent' }
     }
   ],
+  'payment-request-1.1': [
+    // Spec uses an indirect algo to fire events:
+    // https://www.w3.org/TR/payment-request/#dfn-paymentrequest-updated-algorithm
+    // That said, extraction could perhaps process the informative events
+    // summary table to extract the interface name at some point:
+    // https://www.w3.org/TR/payment-request/#summary
+    {
+      pattern: { type: /^(shipping|payer).*change$/ },
+      matched: 3,
+      change: { interface: "PaymentRequestUpdateEvent" }
+    }
+  ],
   // TODO: to-be-idenfied bug in reffy, see https://github.com/w3c/webref/commit/348b90a37475563d924f4da8156c290ca27d77e2#diff-3877beb696dd5561959ba0c9b8c1485e9c78fbed53b1ec6723ae68621940e0c7
   'periodic-background-sync': [
     {
