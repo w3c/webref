@@ -134,8 +134,7 @@ before(async () => {
         eventInterfaces.filter(iface => !usedEventInterfaces.has(iface)),
         [
           'SnapEvent', // pending https://github.com/w3c/csswg-drafts/issues/7442
-          'CustomEvent', // not used by any spec
-          'PaymentRequestUpdateEvent' // pending https://github.com/w3c/payment-request/issues/991
+          'CustomEvent' // not used by any spec
         ],
         "Event interfaces are defined in the platform but not referenced from extracted events"
       );
