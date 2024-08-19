@@ -6,7 +6,7 @@
       "title": "Pointer Events",
       "url": "https://www.w3.org/TR/pointerevents3/"
     },
-    "fragment": "dictionary PointerEventInit : MouseEventInit {\n    long        pointerId = 0;\n    double      width = 1;\n    double      height = 1;\n    float       pressure = 0;\n    float       tangentialPressure = 0;\n    long        tiltX;\n    long        tiltY;\n    long        twist = 0;\n    double      altitudeAngle;\n    double      azimuthAngle;\n    DOMString   pointerType = \"\";\n    boolean     isPrimary = false;\n    sequence<PointerEvent> coalescedEvents = [];\n    sequence<PointerEvent> predictedEvents = [];\n};",
+    "fragment": "dictionary PointerEventInit : MouseEventInit {\n    long        pointerId = 0;\n    double      width = 1;\n    double      height = 1;\n    float       pressure = 0;\n    float       tangentialPressure = 0;\n    long        tiltX;\n    long        tiltY;\n    long        twist = 0;\n    double      altitudeAngle;\n    double      azimuthAngle;\n    DOMString   pointerType = \"\";\n    boolean     isPrimary = false;\n    long        persistentDeviceId = 0;\n    sequence<PointerEvent> coalescedEvents = [];\n    sequence<PointerEvent> predictedEvents = [];\n};",
     "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit"
   },
   "extended": [],

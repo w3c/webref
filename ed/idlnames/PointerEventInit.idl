@@ -12,6 +12,7 @@ dictionary PointerEventInit : MouseEventInit {
     double      azimuthAngle;
     DOMString   pointerType = "";
     boolean     isPrimary = false;
+    long        persistentDeviceId = 0;
     sequence<PointerEvent> coalescedEvents = [];
     sequence<PointerEvent> predictedEvents = [];
 };

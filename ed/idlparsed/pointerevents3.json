@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "PointerEventInit": {
-        "fragment": "dictionary PointerEventInit : MouseEventInit {\n    long        pointerId = 0;\n    double      width = 1;\n    double      height = 1;\n    float       pressure = 0;\n    float       tangentialPressure = 0;\n    long        tiltX;\n    long        tiltY;\n    long        twist = 0;\n    double      altitudeAngle;\n    double      azimuthAngle;\n    DOMString   pointerType = \"\";\n    boolean     isPrimary = false;\n    sequence<PointerEvent> coalescedEvents = [];\n    sequence<PointerEvent> predictedEvents = [];\n};",
+        "fragment": "dictionary PointerEventInit : MouseEventInit {\n    long        pointerId = 0;\n    double      width = 1;\n    double      height = 1;\n    float       pressure = 0;\n    float       tangentialPressure = 0;\n    long        tiltX;\n    long        tiltY;\n    long        twist = 0;\n    double      altitudeAngle;\n    double      azimuthAngle;\n    DOMString   pointerType = \"\";\n    boolean     isPrimary = false;\n    long        persistentDeviceId = 0;\n    sequence<PointerEvent> coalescedEvents = [];\n    sequence<PointerEvent> predictedEvents = [];\n};",
         "type": "dictionary",
         "name": "PointerEventInit",
         "inheritance": "MouseEventInit",
@@ -237,6 +237,25 @@
           },
           {
             "type": "field",
+            "name": "persistentDeviceId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-persistentdeviceid"
+          },
+          {
+            "type": "field",
             "name": "coalescedEvents",
             "extAttrs": [],
             "idlType": {
@@ -297,7 +316,7 @@
         "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit"
       },
       "PointerEvent": {
-        "fragment": "[Exposed=Window]\ninterface PointerEvent : MouseEvent {\n    constructor(DOMString type, optional PointerEventInit eventInitDict = {});\n    readonly        attribute long        pointerId;\n    readonly        attribute double      width;\n    readonly        attribute double      height;\n    readonly        attribute float       pressure;\n    readonly        attribute float       tangentialPressure;\n    readonly        attribute long        tiltX;\n    readonly        attribute long        tiltY;\n    readonly        attribute long        twist;\n    readonly        attribute double      altitudeAngle;\n    readonly        attribute double      azimuthAngle;\n    readonly        attribute DOMString   pointerType;\n    readonly        attribute boolean     isPrimary;\n    [SecureContext] sequence<PointerEvent> getCoalescedEvents();\n    sequence<PointerEvent> getPredictedEvents();\n};",
+        "fragment": "[Exposed=Window]\ninterface PointerEvent : MouseEvent {\n    constructor(DOMString type, optional PointerEventInit eventInitDict = {});\n    readonly        attribute long        pointerId;\n    readonly        attribute double      width;\n    readonly        attribute double      height;\n    readonly        attribute float       pressure;\n    readonly        attribute float       tangentialPressure;\n    readonly        attribute long        tiltX;\n    readonly        attribute long        tiltY;\n    readonly        attribute long        twist;\n    readonly        attribute double      altitudeAngle;\n    readonly        attribute double      azimuthAngle;\n    readonly        attribute DOMString   pointerType;\n    readonly        attribute boolean     isPrimary;\n    readonly        attribute long        persistentDeviceId;\n    [SecureContext] sequence<PointerEvent> getCoalescedEvents();\n    sequence<PointerEvent> getPredictedEvents();\n};",
         "type": "interface",
         "name": "PointerEvent",
         "inheritance": "MouseEvent",
@@ -534,6 +553,22 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-isprimary"
+          },
+          {
+            "type": "attribute",
+            "name": "persistentDeviceId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-persistentdeviceid"
           },
           {
             "type": "operation",

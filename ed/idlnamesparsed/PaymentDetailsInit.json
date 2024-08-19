@@ -18,7 +18,7 @@
         "title": "Payment Request API",
         "url": "https://www.w3.org/TR/payment-request-1.1/"
       },
-      "fragment": "dictionary PaymentDetailsBase {\n  sequence<PaymentItem> displayItems;\n  sequence<PaymentDetailsModifier> modifiers;\n};",
+      "fragment": "dictionary PaymentDetailsBase {\n  sequence<PaymentItem> displayItems;\n  sequence<PaymentShippingOption> shippingOptions;\n  sequence<PaymentDetailsModifier> modifiers;\n};",
       "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsbase"
     },
     "extended": [],

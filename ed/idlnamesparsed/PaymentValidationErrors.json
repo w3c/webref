@@ -6,7 +6,7 @@
       "title": "Payment Request API",
       "url": "https://www.w3.org/TR/payment-request-1.1/"
     },
-    "fragment": "dictionary PaymentValidationErrors {\n  DOMString error;\n  object paymentMethod;\n};",
+    "fragment": "dictionary PaymentValidationErrors {\n  PayerErrors payer;\n  AddressErrors shippingAddress;\n  DOMString error;\n  object paymentMethod;\n};",
     "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors"
   },
   "extended": [],

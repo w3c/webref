@@ -20,7 +20,7 @@
     },
     "idlNames": {
       "PaymentRequest": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentRequest : EventTarget {\n  constructor(\n    sequence<PaymentMethodData> methodData,\n    PaymentDetailsInit details\n  );\n  [NewObject]\n  Promise<PaymentResponse> show(optional Promise<PaymentDetailsUpdate> detailsPromise);\n  [NewObject]\n  Promise<undefined> abort();\n  [NewObject]\n  Promise<boolean> canMakePayment();\n\n  readonly attribute DOMString id;\n\n  attribute EventHandler onpaymentmethodchange;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentRequest : EventTarget {\n  constructor(\n    sequence<PaymentMethodData> methodData,\n    PaymentDetailsInit details,\n    optional PaymentOptions options = {}\n  );\n  [NewObject]\n  Promise<PaymentResponse> show(optional Promise<PaymentDetailsUpdate> detailsPromise);\n  [NewObject]\n  Promise<undefined> abort();\n  [NewObject]\n  Promise<boolean> canMakePayment();\n\n  readonly attribute DOMString id;\n  readonly attribute ContactAddress? shippingAddress;\n  readonly attribute DOMString? shippingOption;\n  readonly attribute PaymentShippingType? shippingType;\n\n  attribute EventHandler onshippingaddresschange;\n  attribute EventHandler onshippingoptionchange;\n  attribute EventHandler onpaymentmethodchange;\n};",
         "type": "interface",
         "name": "PaymentRequest",
         "inheritance": "EventTarget",
@@ -67,6 +67,24 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PaymentOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -213,6 +231,86 @@
           },
           {
             "type": "attribute",
+            "name": "shippingAddress",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "ContactAddress"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-shippingaddress"
+          },
+          {
+            "type": "attribute",
+            "name": "shippingOption",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-shippingoption"
+          },
+          {
+            "type": "attribute",
+            "name": "shippingType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "PaymentShippingType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-shippingtype"
+          },
+          {
+            "type": "attribute",
+            "name": "onshippingaddresschange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-onshippingaddresschange"
+          },
+          {
+            "type": "attribute",
+            "name": "onshippingoptionchange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-onshippingoptionchange"
+          },
+          {
+            "type": "attribute",
             "name": "onpaymentmethodchange",
             "idlType": {
               "type": "attribute-type",
@@ -335,7 +433,7 @@
         "href": "https://w3c.github.io/payment-request/#dom-paymentcurrencyamount"
       },
       "PaymentDetailsBase": {
-        "fragment": "dictionary PaymentDetailsBase {\n  sequence<PaymentItem> displayItems;\n  sequence<PaymentDetailsModifier> modifiers;\n};",
+        "fragment": "dictionary PaymentDetailsBase {\n  sequence<PaymentItem> displayItems;\n  sequence<PaymentShippingOption> shippingOptions;\n  sequence<PaymentDetailsModifier> modifiers;\n};",
         "type": "dictionary",
         "name": "PaymentDetailsBase",
         "inheritance": null,
@@ -364,6 +462,31 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsbase-displayitems"
+          },
+          {
+            "type": "field",
+            "name": "shippingOptions",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PaymentShippingOption"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsbase-shippingoptions"
           },
           {
             "type": "field",
@@ -439,11 +562,27 @@
         "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsinit"
       },
       "PaymentDetailsUpdate": {
-        "fragment": "dictionary PaymentDetailsUpdate : PaymentDetailsBase {\n  PaymentItem total;\n  object paymentMethodErrors;\n};",
+        "fragment": "dictionary PaymentDetailsUpdate : PaymentDetailsBase {\n  DOMString error;\n  PaymentItem total;\n  AddressErrors shippingAddressErrors;\n  PayerErrors payerErrors;\n  object paymentMethodErrors;\n};",
         "type": "dictionary",
         "name": "PaymentDetailsUpdate",
         "inheritance": "PaymentDetailsBase",
         "members": [
+          {
+            "type": "field",
+            "name": "error",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate-error"
+          },
           {
             "type": "field",
             "name": "total",
@@ -459,6 +598,38 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate-total"
+          },
+          {
+            "type": "field",
+            "name": "shippingAddressErrors",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AddressErrors"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate-shippingaddresserrors"
+          },
+          {
+            "type": "field",
+            "name": "payerErrors",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PayerErrors"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate-payererrors"
           },
           {
             "type": "field",
@@ -564,6 +735,155 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsmodifier"
+      },
+      "PaymentShippingType": {
+        "fragment": "enum PaymentShippingType {\n  \"shipping\",\n  \"delivery\",\n  \"pickup\"\n};",
+        "type": "enum",
+        "name": "PaymentShippingType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "shipping",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentshippingtype-shipping"
+          },
+          {
+            "type": "enum-value",
+            "value": "delivery",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentshippingtype-delivery"
+          },
+          {
+            "type": "enum-value",
+            "value": "pickup",
+            "href": "https://w3c.github.io/payment-request/#dom-paymentshippingtype-pickup"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/payment-request/#dom-paymentshippingtype"
+      },
+      "PaymentOptions": {
+        "fragment": "dictionary PaymentOptions {\n  boolean requestPayerName = false;\n  boolean requestBillingAddress = false;\n  boolean requestPayerEmail = false;\n  boolean requestPayerPhone = false;\n  boolean requestShipping = false;\n  PaymentShippingType shippingType = \"shipping\";\n};",
+        "type": "dictionary",
+        "name": "PaymentOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "requestPayerName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-requestpayername"
+          },
+          {
+            "type": "field",
+            "name": "requestBillingAddress",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-requestbillingaddress"
+          },
+          {
+            "type": "field",
+            "name": "requestPayerEmail",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-requestpayeremail"
+          },
+          {
+            "type": "field",
+            "name": "requestPayerPhone",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-requestpayerphone"
+          },
+          {
+            "type": "field",
+            "name": "requestShipping",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-requestshipping"
+          },
+          {
+            "type": "field",
+            "name": "shippingType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PaymentShippingType"
+            },
+            "default": {
+              "type": "string",
+              "value": "shipping"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-shippingtype"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentoptions"
       },
       "PaymentItem": {
         "fragment": "dictionary PaymentItem {\n  required DOMString label;\n  required PaymentCurrencyAmount amount;\n  boolean pending = false;\n};",
@@ -680,8 +1000,86 @@
         "extAttrs": [],
         "href": "https://w3c.github.io/payment-request/#dom-paymentcomplete"
       },
+      "PaymentShippingOption": {
+        "fragment": "dictionary PaymentShippingOption {\n  required DOMString id;\n  required DOMString label;\n  required PaymentCurrencyAmount amount;\n  boolean selected = false;\n};",
+        "type": "dictionary",
+        "name": "PaymentShippingOption",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "id",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentshippingoption-id"
+          },
+          {
+            "type": "field",
+            "name": "label",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentshippingoption-label"
+          },
+          {
+            "type": "field",
+            "name": "amount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PaymentCurrencyAmount"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentshippingoption-amount"
+          },
+          {
+            "type": "field",
+            "name": "selected",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentshippingoption-selected"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-paymentshippingoption"
+      },
       "PaymentResponse": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentResponse : EventTarget  {\n  [Default] object toJSON();\n\n  readonly attribute DOMString requestId;\n  readonly attribute DOMString methodName;\n  readonly attribute object details;\n\n  [NewObject]\n  Promise<undefined> complete(\n    optional PaymentComplete result = \"unknown\",\n    optional PaymentCompleteDetails details = {}\n  );\n  [NewObject]\n  Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentResponse : EventTarget  {\n  [Default] object toJSON();\n\n  readonly attribute DOMString requestId;\n  readonly attribute DOMString methodName;\n  readonly attribute object details;\n  readonly attribute ContactAddress? shippingAddress;\n  readonly attribute DOMString? shippingOption;\n  readonly attribute DOMString? payerName;\n  readonly attribute DOMString? payerEmail;\n  readonly attribute DOMString? payerPhone;\n\n  [NewObject]\n  Promise<undefined> complete(\n    optional PaymentComplete result = \"unknown\",\n    optional PaymentCompleteDetails details = {}\n  );\n  [NewObject]\n  Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});\n\n  attribute EventHandler onpayerdetailchange;\n};",
         "type": "interface",
         "name": "PaymentResponse",
         "inheritance": "EventTarget",
@@ -755,6 +1153,86 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-details"
+          },
+          {
+            "type": "attribute",
+            "name": "shippingAddress",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "ContactAddress"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-shippingaddress"
+          },
+          {
+            "type": "attribute",
+            "name": "shippingOption",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-shippingoption"
+          },
+          {
+            "type": "attribute",
+            "name": "payerName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-payername"
+          },
+          {
+            "type": "attribute",
+            "name": "payerEmail",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-payeremail"
+          },
+          {
+            "type": "attribute",
+            "name": "payerPhone",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-payerphone"
           },
           {
             "type": "operation",
@@ -876,6 +1354,22 @@
             ],
             "special": "",
             "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-retry"
+          },
+          {
+            "type": "attribute",
+            "name": "onpayerdetailchange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-onpayerdetailchange"
           }
         ],
         "extAttrs": [
@@ -899,11 +1393,43 @@
         "href": "https://w3c.github.io/payment-request/#dom-paymentresponse"
       },
       "PaymentValidationErrors": {
-        "fragment": "dictionary PaymentValidationErrors {\n  DOMString error;\n  object paymentMethod;\n};",
+        "fragment": "dictionary PaymentValidationErrors {\n  PayerErrors payer;\n  AddressErrors shippingAddress;\n  DOMString error;\n  object paymentMethod;\n};",
         "type": "dictionary",
         "name": "PaymentValidationErrors",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "payer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PayerErrors"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors-payer"
+          },
+          {
+            "type": "field",
+            "name": "shippingAddress",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AddressErrors"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors-shippingaddress"
+          },
           {
             "type": "field",
             "name": "error",
@@ -940,6 +1466,236 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors"
+      },
+      "PayerErrors": {
+        "fragment": "dictionary PayerErrors {\n  DOMString email;\n  DOMString name;\n  DOMString phone;\n};",
+        "type": "dictionary",
+        "name": "PayerErrors",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "email",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-payererrors-email"
+          },
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-payererrors-name"
+          },
+          {
+            "type": "field",
+            "name": "phone",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-payererrors-phone"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-payererrors"
+      },
+      "AddressErrors": {
+        "fragment": "dictionary AddressErrors {\n  DOMString addressLine;\n  DOMString city;\n  DOMString country;\n  DOMString dependentLocality;\n  DOMString organization;\n  DOMString phone;\n  DOMString postalCode;\n  DOMString recipient;\n  DOMString region;\n  DOMString sortingCode;\n};",
+        "type": "dictionary",
+        "name": "AddressErrors",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "addressLine",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-addresserrors-addressline"
+          },
+          {
+            "type": "field",
+            "name": "city",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-addresserrors-city"
+          },
+          {
+            "type": "field",
+            "name": "country",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-addresserrors-country"
+          },
+          {
+            "type": "field",
+            "name": "dependentLocality",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-addresserrors-dependentlocality"
+          },
+          {
+            "type": "field",
+            "name": "organization",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-addresserrors-organization"
+          },
+          {
+            "type": "field",
+            "name": "phone",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-addresserrors-phone"
+          },
+          {
+            "type": "field",
+            "name": "postalCode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-addresserrors-postalcode"
+          },
+          {
+            "type": "field",
+            "name": "recipient",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-addresserrors-recipient"
+          },
+          {
+            "type": "field",
+            "name": "region",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-addresserrors-region"
+          },
+          {
+            "type": "field",
+            "name": "sortingCode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/payment-request/#dom-addresserrors-sortingcode"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/payment-request/#dom-addresserrors"
       },
       "PaymentMethodChangeEvent": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentMethodChangeEvent : PaymentRequestUpdateEvent {\n  constructor(DOMString type, optional PaymentMethodChangeEventInit eventInitDict = {});\n  readonly attribute DOMString methodName;\n  readonly attribute object? methodDetails;\n};",
@@ -1225,14 +1981,18 @@
         "EventTarget",
         "PaymentMethodData",
         "PaymentDetailsInit",
+        "PaymentOptions",
         "PaymentResponse",
         "PaymentDetailsUpdate",
+        "ContactAddress",
+        "PaymentShippingType",
         "EventHandler"
       ],
       "PaymentMethodData": [],
       "PaymentCurrencyAmount": [],
       "PaymentDetailsBase": [
         "PaymentItem",
+        "PaymentShippingOption",
         "PaymentDetailsModifier"
       ],
       "PaymentDetailsInit": [
@@ -1241,22 +2001,37 @@
       ],
       "PaymentDetailsUpdate": [
         "PaymentDetailsBase",
-        "PaymentItem"
+        "PaymentItem",
+        "AddressErrors",
+        "PayerErrors"
       ],
       "PaymentDetailsModifier": [
         "PaymentItem"
+      ],
+      "PaymentOptions": [
+        "PaymentShippingType"
       ],
       "PaymentItem": [
         "PaymentCurrencyAmount"
       ],
       "PaymentCompleteDetails": [],
+      "PaymentShippingOption": [
+        "PaymentCurrencyAmount"
+      ],
       "PaymentResponse": [
         "EventTarget",
+        "ContactAddress",
         "PaymentComplete",
         "PaymentCompleteDetails",
-        "PaymentValidationErrors"
+        "PaymentValidationErrors",
+        "EventHandler"
       ],
-      "PaymentValidationErrors": [],
+      "PaymentValidationErrors": [
+        "PayerErrors",
+        "AddressErrors"
+      ],
+      "PayerErrors": [],
+      "AddressErrors": [],
       "PaymentMethodChangeEvent": [
         "PaymentRequestUpdateEvent",
         "PaymentMethodChangeEventInit"
@@ -1275,6 +2050,7 @@
     },
     "externalDependencies": [
       "EventTarget",
+      "ContactAddress",
       "EventHandler",
       "Event",
       "EventInit"

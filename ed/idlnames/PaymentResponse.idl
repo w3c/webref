@@ -6,6 +6,11 @@ interface PaymentResponse : EventTarget  {
   readonly attribute DOMString requestId;
   readonly attribute DOMString methodName;
   readonly attribute object details;
+  readonly attribute ContactAddress? shippingAddress;
+  readonly attribute DOMString? shippingOption;
+  readonly attribute DOMString? payerName;
+  readonly attribute DOMString? payerEmail;
+  readonly attribute DOMString? payerPhone;
 
   [NewObject]
   Promise<undefined> complete(
@@ -14,4 +19,6 @@ interface PaymentResponse : EventTarget  {
   );
   [NewObject]
   Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});
+
+  attribute EventHandler onpayerdetailchange;
 };

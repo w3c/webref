@@ -193,7 +193,7 @@
         "href": "https://w3c.github.io/webauthn/#typedefdef-publickeycredentialjson"
       },
       "RegistrationResponseJSON": {
-        "fragment": "dictionary RegistrationResponseJSON {\n    required Base64URLString id;\n    required Base64URLString rawId;\n    required AuthenticatorAttestationResponseJSON response;\n    DOMString authenticatorAttachment;\n    required AuthenticationExtensionsClientOutputsJSON clientExtensionResults;\n    required DOMString type;\n};",
+        "fragment": "dictionary RegistrationResponseJSON {\n    required DOMString id;\n    required Base64URLString rawId;\n    required AuthenticatorAttestationResponseJSON response;\n    DOMString authenticatorAttachment;\n    required AuthenticationExtensionsClientOutputsJSON clientExtensionResults;\n    required DOMString type;\n};",
         "type": "dictionary",
         "name": "RegistrationResponseJSON",
         "inheritance": null,
@@ -208,7 +208,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "Base64URLString"
+              "idlType": "DOMString"
             },
             "default": null,
             "required": true,
@@ -416,7 +416,7 @@
         "href": "https://w3c.github.io/webauthn/#dictdef-authenticatorattestationresponsejson"
       },
       "AuthenticationResponseJSON": {
-        "fragment": "dictionary AuthenticationResponseJSON {\n    required Base64URLString id;\n    required Base64URLString rawId;\n    required AuthenticatorAssertionResponseJSON response;\n    DOMString authenticatorAttachment;\n    required AuthenticationExtensionsClientOutputsJSON clientExtensionResults;\n    required DOMString type;\n};",
+        "fragment": "dictionary AuthenticationResponseJSON {\n    required DOMString id;\n    required Base64URLString rawId;\n    required AuthenticatorAssertionResponseJSON response;\n    DOMString authenticatorAttachment;\n    required AuthenticationExtensionsClientOutputsJSON clientExtensionResults;\n    required DOMString type;\n};",
         "type": "dictionary",
         "name": "AuthenticationResponseJSON",
         "inheritance": null,
@@ -431,7 +431,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "Base64URLString"
+              "idlType": "DOMString"
             },
             "default": null,
             "required": true,
@@ -2129,7 +2129,7 @@
         "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientoutputs"
       },
       "CollectedClientData": {
-        "fragment": "dictionary CollectedClientData {\n    required DOMString           type;\n    required DOMString           challenge;\n    required DOMString           origin;\n    DOMString                    topOrigin;\n    boolean                      crossOrigin;\n};",
+        "fragment": "dictionary CollectedClientData {\n    required DOMString           type;\n    required DOMString           challenge;\n    required DOMString           origin;\n    boolean                      crossOrigin;\n    DOMString                    topOrigin;\n};",
         "type": "dictionary",
         "name": "CollectedClientData",
         "inheritance": null,
@@ -2184,22 +2184,6 @@
           },
           {
             "type": "field",
-            "name": "topOrigin",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-toporigin"
-          },
-          {
-            "type": "field",
             "name": "crossOrigin",
             "extAttrs": [],
             "idlType": {
@@ -2213,6 +2197,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-crossorigin"
+          },
+          {
+            "type": "field",
+            "name": "topOrigin",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-toporigin"
           }
         ],
         "extAttrs": [],

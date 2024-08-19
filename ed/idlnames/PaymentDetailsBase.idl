@@ -1,5 +1,6 @@
 // Source: Payment Request API (https://www.w3.org/TR/payment-request-1.1/)
 dictionary PaymentDetailsBase {
   sequence<PaymentItem> displayItems;
+  sequence<PaymentShippingOption> shippingOptions;
   sequence<PaymentDetailsModifier> modifiers;
 };

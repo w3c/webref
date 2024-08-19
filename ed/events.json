@@ -5026,6 +5026,18 @@
     "interface": "SpeechSynthesisEvent"
   },
   {
+    "type": "payerdetailchange",
+    "targets": [
+      {
+        "target": "PaymentResponse"
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "PaymentRequestUpdateEvent"
+  },
+  {
     "src": {
       "format": "fire an event phrasing",
       "href": "https://w3c.github.io/payment-request/#payment-method-changed-algorithm"
@@ -6376,6 +6388,30 @@
       }
     ],
     "interface": "Event"
+  },
+  {
+    "type": "shippingaddresschange",
+    "targets": [
+      {
+        "target": "PaymentRequest"
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "PaymentRequestUpdateEvent"
+  },
+  {
+    "type": "shippingoptionchange",
+    "targets": [
+      {
+        "target": "PaymentRequest"
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "PaymentRequestUpdateEvent"
   },
   {
     "src": {

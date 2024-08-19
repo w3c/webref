@@ -1,5 +1,8 @@
 // Source: Payment Request API (https://www.w3.org/TR/payment-request-1.1/)
 dictionary PaymentDetailsUpdate : PaymentDetailsBase {
+  DOMString error;
   PaymentItem total;
+  AddressErrors shippingAddressErrors;
+  PayerErrors payerErrors;
   object paymentMethodErrors;
 };

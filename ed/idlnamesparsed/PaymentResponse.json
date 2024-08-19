@@ -6,7 +6,7 @@
       "title": "Payment Request API",
       "url": "https://www.w3.org/TR/payment-request-1.1/"
     },
-    "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentResponse : EventTarget  {\n  [Default] object toJSON();\n\n  readonly attribute DOMString requestId;\n  readonly attribute DOMString methodName;\n  readonly attribute object details;\n\n  [NewObject]\n  Promise<undefined> complete(\n    optional PaymentComplete result = \"unknown\",\n    optional PaymentCompleteDetails details = {}\n  );\n  [NewObject]\n  Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});\n};",
+    "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentResponse : EventTarget  {\n  [Default] object toJSON();\n\n  readonly attribute DOMString requestId;\n  readonly attribute DOMString methodName;\n  readonly attribute object details;\n  readonly attribute ContactAddress? shippingAddress;\n  readonly attribute DOMString? shippingOption;\n  readonly attribute DOMString? payerName;\n  readonly attribute DOMString? payerEmail;\n  readonly attribute DOMString? payerPhone;\n\n  [NewObject]\n  Promise<undefined> complete(\n    optional PaymentComplete result = \"unknown\",\n    optional PaymentCompleteDetails details = {}\n  );\n  [NewObject]\n  Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});\n\n  attribute EventHandler onpayerdetailchange;\n};",
     "href": "https://w3c.github.io/payment-request/#dom-paymentresponse"
   },
   "extended": [],

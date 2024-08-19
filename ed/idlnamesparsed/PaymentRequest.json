@@ -6,7 +6,7 @@
       "title": "Payment Request API",
       "url": "https://www.w3.org/TR/payment-request-1.1/"
     },
-    "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentRequest : EventTarget {\n  constructor(\n    sequence<PaymentMethodData> methodData,\n    PaymentDetailsInit details\n  );\n  [NewObject]\n  Promise<PaymentResponse> show(optional Promise<PaymentDetailsUpdate> detailsPromise);\n  [NewObject]\n  Promise<undefined> abort();\n  [NewObject]\n  Promise<boolean> canMakePayment();\n\n  readonly attribute DOMString id;\n\n  attribute EventHandler onpaymentmethodchange;\n};",
+    "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentRequest : EventTarget {\n  constructor(\n    sequence<PaymentMethodData> methodData,\n    PaymentDetailsInit details,\n    optional PaymentOptions options = {}\n  );\n  [NewObject]\n  Promise<PaymentResponse> show(optional Promise<PaymentDetailsUpdate> detailsPromise);\n  [NewObject]\n  Promise<undefined> abort();\n  [NewObject]\n  Promise<boolean> canMakePayment();\n\n  readonly attribute DOMString id;\n  readonly attribute ContactAddress? shippingAddress;\n  readonly attribute DOMString? shippingOption;\n  readonly attribute PaymentShippingType? shippingType;\n\n  attribute EventHandler onshippingaddresschange;\n  attribute EventHandler onshippingoptionchange;\n  attribute EventHandler onpaymentmethodchange;\n};",
     "href": "https://w3c.github.io/payment-request/#dom-paymentrequest"
   },
   "extended": [
