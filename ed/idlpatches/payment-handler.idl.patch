@@ -1,24 +1,21 @@
-From a651ec2cd18532034bfdd512aafa8cfb2d160e6a Mon Sep 17 00:00:00 2001
+From e6179dbe95efd530dbeca7ccc474aafc249a340b Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Fri, 13 Jan 2023 15:07:47 +0100
-Subject: [PATCH] Add missing Payment Request IDL dfns
+Date: Mon, 19 Aug 2024 10:45:38 +0200
+Subject: [PATCH] Add missing AddressInit dictionary
 
-Payment Handler re-introduced billing address support, expecting Payment Request
-to do the same, but Payment Request has not yet been updated. This patch adds
-missing dictionary definitions to Payment Handler.
-
-Tests will fail once Payment Request gets updated, signaling it is time to drop
-the patch:
-https://github.com/w3c/payment-request/pull/996
+Payment Request re-introduced most of the missing interfaces, except the
+`AddressInit` dictionary. This patch adds it pending proper resolution of the
+underlying problem, see:
+https://github.com/w3c/payment-handler/issues/412
 ---
- ed/idl/payment-handler.idl | 48 ++++++++++++++++++++++++++++++++++++++
- 1 file changed, 48 insertions(+)
+ ed/idl/payment-handler.idl | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
 
 diff --git a/ed/idl/payment-handler.idl b/ed/idl/payment-handler.idl
-index e039dd809..d0e5bd9fd 100644
+index 1f6eaae2b..8aa55e9e9 100644
 --- a/ed/idl/payment-handler.idl
 +++ b/ed/idl/payment-handler.idl
-@@ -104,3 +104,51 @@ DOMString? payerPhone;
+@@ -81,3 +81,16 @@ DOMString? payerPhone;
  AddressInit shippingAddress;
  DOMString? shippingOption;
  };
@@ -35,41 +32,6 @@ index e039dd809..d0e5bd9fd 100644
 +  DOMString recipient = "";
 +  DOMString phone = "";
 +};
-+
-+dictionary PaymentOptions {
-+  boolean requestPayerName = false;
-+  boolean requestBillingAddress = false;
-+  boolean requestPayerEmail = false;
-+  boolean requestPayerPhone = false;
-+  boolean requestShipping = false;
-+  PaymentShippingType shippingType = "shipping";
-+};
-+
-+dictionary PaymentShippingOption {
-+  required DOMString id;
-+  required DOMString label;
-+  required PaymentCurrencyAmount amount;
-+  boolean selected = false;
-+};
-+
-+enum PaymentShippingType {
-+  "shipping",
-+  "delivery",
-+  "pickup"
-+};
-+
-+dictionary AddressErrors {
-+  DOMString addressLine;
-+  DOMString city;
-+  DOMString country;
-+  DOMString dependentLocality;
-+  DOMString organization;
-+  DOMString phone;
-+  DOMString postalCode;
-+  DOMString recipient;
-+  DOMString region;
-+  DOMString sortingCode;
-+};
 -- 
-2.39.0.windows.2
+2.37.1.windows.1
 
