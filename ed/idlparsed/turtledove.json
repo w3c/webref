@@ -31,7 +31,7 @@
     },
     "idlNames": {
       "AuctionAd": {
-        "fragment": "dictionary AuctionAd {\n  required USVString renderURL;\n  any metadata;\n\n  USVString buyerReportingId;\n  USVString buyerAndSellerReportingId;\n  sequence<USVString> allowedReportingOrigins;\n};",
+        "fragment": "dictionary AuctionAd {\n  required USVString renderURL;\n  USVString sizeGroup;\n  any metadata;\n\n  USVString buyerReportingId;\n  USVString buyerAndSellerReportingId;\n  sequence<USVString> allowedReportingOrigins;\n};",
         "type": "dictionary",
         "name": "AuctionAd",
         "inheritance": null,
@@ -51,6 +51,22 @@
             "default": null,
             "required": true,
             "href": "https://wicg.github.io/turtledove/#dom-auctionad-renderurl"
+          },
+          {
+            "type": "field",
+            "name": "sizeGroup",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionad-sizegroup"
           },
           {
             "type": "field",
@@ -130,8 +146,51 @@
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionad"
       },
+      "AuctionAdInterestGroupSize": {
+        "fragment": "dictionary AuctionAdInterestGroupSize {\n  required USVString width;\n  required USVString height;\n};",
+        "type": "dictionary",
+        "name": "AuctionAdInterestGroupSize",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "width",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadinterestgroupsize-width"
+          },
+          {
+            "type": "field",
+            "name": "height",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadinterestgroupsize-height"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-auctionadinterestgroupsize"
+      },
       "GenerateBidInterestGroup": {
-        "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  record<USVString, sequence<DOMString>> sellerCapabilities;\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  DOMString trustedBiddingSignalsSlotSizeMode = \"none\";\n  long maxTrustedBiddingSignalsURLLength;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
+        "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  record<USVString, sequence<DOMString>> sellerCapabilities;\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  DOMString trustedBiddingSignalsSlotSizeMode = \"none\";\n  long maxTrustedBiddingSignalsURLLength;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n  record<DOMString, AuctionAdInterestGroupSize> adSizes;\n  record<DOMString, sequence<DOMString>> sizeGroups;\n};",
         "type": "dictionary",
         "name": "GenerateBidInterestGroup",
         "inheritance": null,
@@ -470,6 +529,81 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-adcomponents"
+          },
+          {
+            "type": "field",
+            "name": "adSizes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AuctionAdInterestGroupSize"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-adsizes"
+          },
+          {
+            "type": "field",
+            "name": "sizeGroups",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "dictionary-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    }
+                  ]
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-sizegroups"
           }
         ],
         "extAttrs": [],
@@ -4182,8 +4316,10 @@
         "ProtectedAudience"
       ],
       "AuctionAd": [],
+      "AuctionAdInterestGroupSize": [],
       "GenerateBidInterestGroup": [
-        "AuctionAd"
+        "AuctionAd",
+        "AuctionAdInterestGroupSize"
       ],
       "AuctionAdInterestGroup": [
         "GenerateBidInterestGroup"

@@ -129,7 +129,7 @@
         "href": "https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture"
       },
       "DocumentPictureInPictureOptions": {
-        "fragment": "dictionary DocumentPictureInPictureOptions {\n  [EnforceRange] unsigned long long width = 0;\n  [EnforceRange] unsigned long long height = 0;\n  boolean disallowReturnToOpener = false;\n};",
+        "fragment": "dictionary DocumentPictureInPictureOptions {\n  [EnforceRange] unsigned long long width = 0;\n  [EnforceRange] unsigned long long height = 0;\n  boolean disallowReturnToOpener = false;\n  boolean preferInitialWindowPlacement = false;\n};",
         "type": "dictionary",
         "name": "DocumentPictureInPictureOptions",
         "inheritance": null,
@@ -204,6 +204,25 @@
             },
             "required": false,
             "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-disallowreturntoopener"
+          },
+          {
+            "type": "field",
+            "name": "preferInitialWindowPlacement",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-preferinitialwindowplacement"
           }
         ],
         "extAttrs": [],

@@ -18,4 +18,6 @@ dictionary GenerateBidInterestGroup {
   any userBiddingSignals;
   sequence<AuctionAd> ads;
   sequence<AuctionAd> adComponents;
+  record<DOMString, AuctionAdInterestGroupSize> adSizes;
+  record<DOMString, sequence<DOMString>> sizeGroups;
 };

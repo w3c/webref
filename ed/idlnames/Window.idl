@@ -169,6 +169,11 @@ partial interface Window {
     undefined navigate(SpatialNavigationDirection dir);
 };
 
+// Source: CSS Viewport Module Level 1 (https://www.w3.org/TR/css-viewport-1/)
+partial interface Window {
+[SameObject, Replaceable] readonly attribute Viewport viewport;
+};
+
 // Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
 partial interface Window {
   [NewObject] CSSStyleDeclaration getComputedStyle(Element elt, optional CSSOMString? pseudoElt);

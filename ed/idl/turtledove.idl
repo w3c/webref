@@ -10,11 +10,17 @@ partial interface Navigator {
 
 dictionary AuctionAd {
   required USVString renderURL;
+  USVString sizeGroup;
   any metadata;
 
   USVString buyerReportingId;
   USVString buyerAndSellerReportingId;
   sequence<USVString> allowedReportingOrigins;
+};
+
+dictionary AuctionAdInterestGroupSize {
+  required USVString width;
+  required USVString height;
 };
 
 dictionary GenerateBidInterestGroup {
@@ -36,6 +42,8 @@ dictionary GenerateBidInterestGroup {
   any userBiddingSignals;
   sequence<AuctionAd> ads;
   sequence<AuctionAd> adComponents;
+  record<DOMString, AuctionAdInterestGroupSize> adSizes;
+  record<DOMString, sequence<DOMString>> sizeGroups;
 };
 
 dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {
