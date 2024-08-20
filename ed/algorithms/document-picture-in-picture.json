@@ -35,7 +35,7 @@
     {
       "name": "DocumentPictureInPicture/requestWindow(options)",
       "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-requestwindow",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentPictureInPicture\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestWindow(options)|requestWindow()\" id=\"dom-documentpictureinpicture-requestwindow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestWindow(options)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentPictureInPicture\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestWindow(options)|requestWindow()\" id=\"dom-documentpictureinpicture-requestwindow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestWindow(options)</code></dfn> method steps are: \n    \n    \n    \n    <p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-preferinitialwindowplacement\" id=\"ref-for-dom-documentpictureinpictureoptions-preferinitialwindowplacement\">preferInitialWindowPlacement</a></code>\"]\nexists and is true, then the user agent may use this hint to prefer behavior\nthat is similar that is similar to steps 12 and 13, rather than considering any\nprevious position or size of any previously closed <var>pip traversable</var> window.</p>",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -73,7 +73,7 @@
     {
       "name": "DocumentPictureInPicture/requestWindow(options)",
       "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-requestwindow",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentPictureInPicture\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestWindow(options)|requestWindow()\" id=\"dom-documentpictureinpicture-requestwindow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestWindow(options)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentPictureInPicture\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestWindow(options)|requestWindow()\" id=\"dom-documentpictureinpicture-requestwindow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestWindow(options)</code></dfn> method steps are: \n    \n    \n    \n    <p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-preferinitialwindowplacement\" id=\"ref-for-dom-documentpictureinpictureoptions-preferinitialwindowplacement\">preferInitialWindowPlacement</a></code>\"]\nexists and is true, then the user agent may use this hint to prefer behavior\nthat is similar that is similar to steps 12 and 13, rather than considering any\nprevious position or size of any previously closed <var>pip traversable</var> window.</p>",
       "rationale": "set",
       "steps": [
         {
@@ -90,7 +90,15 @@
           "ignored": [
             "Optionally, clamp or ignore options[\"height\"] if it is too large or too small in order to fit a user-friendly window size. Optionally, size pip traversable’s active browsing context’s window such that the distance between the top and bottom edges of the viewport are options[\"height\"] pixels."
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "DocumentPictureInPicture/requestWindow(options)",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-requestwindow",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentPictureInPicture\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestWindow(options)|requestWindow()\" id=\"dom-documentpictureinpicture-requestwindow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestWindow(options)</code></dfn> method steps are: \n    \n    \n    \n    <p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-preferinitialwindowplacement\" id=\"ref-for-dom-documentpictureinpictureoptions-preferinitialwindowplacement\">preferInitialWindowPlacement</a></code>\"]\nexists and is true, then the user agent may use this hint to prefer behavior\nthat is similar that is similar to steps 12 and 13, rather than considering any\nprevious position or size of any previously closed <var>pip traversable</var> window.</p>",
+      "rationale": "if",
+      "steps": [
         {
           "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-disallowreturntoopener\" id=\"ref-for-dom-documentpictureinpictureoptions-disallowreturntoopener\">disallowReturnToOpener</a></code>\"] exists\nand is <code>true</code>, the user agent should not display UI affordances\non the picture-in-picture window that allow the user to return to the\nopener window.</p>"
         }
@@ -99,7 +107,7 @@
     {
       "name": "DocumentPictureInPicture/requestWindow(options)",
       "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-requestwindow",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentPictureInPicture\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestWindow(options)|requestWindow()\" id=\"dom-documentpictureinpicture-requestwindow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestWindow(options)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentPictureInPicture\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestWindow(options)|requestWindow()\" id=\"dom-documentpictureinpicture-requestwindow\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestWindow(options)</code></dfn> method steps are: \n    \n    \n    \n    <p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-preferinitialwindowplacement\" id=\"ref-for-dom-documentpictureinpictureoptions-preferinitialwindowplacement\">preferInitialWindowPlacement</a></code>\"]\nexists and is true, then the user agent may use this hint to prefer behavior\nthat is similar that is similar to steps 12 and 13, rather than considering any\nprevious position or size of any previously closed <var>pip traversable</var> window.</p>",
       "rationale": "set",
       "steps": [
         {
