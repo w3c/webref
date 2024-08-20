@@ -15,7 +15,6 @@ dictionary InkPresenterParam {
 [Exposed=Window]
 interface InkPresenter {
     readonly attribute Element? presentationArea;
-    readonly attribute unsigned long expectedImprovement;
 
     undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);
 };

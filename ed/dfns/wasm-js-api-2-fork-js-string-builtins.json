@@ -1,0 +1,3902 @@
+{
+  "spec": {
+    "title": "WebAssembly JavaScript Interface",
+    "url": "https://webassembly.github.io/js-string-builtins/js-api/"
+  },
+  "dfns": [
+    {
+      "id": "associated-store",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#associated-store",
+      "linkingText": [
+        "associated store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "store",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#store",
+        "title": "Interaction of the WebAssembly Store with JavaScript",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "identified-with",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#identified-with",
+      "linkingText": [
+        "identified with"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "store",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#store",
+        "title": "Interaction of the WebAssembly Store with JavaScript",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "memory-object-cache",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#memory-object-cache",
+      "linkingText": [
+        "Memory object cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "table-object-cache",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#table-object-cache",
+      "linkingText": [
+        "Table object cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exported-function-cache",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-function-cache",
+      "linkingText": [
+        "Exported Function cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exported-gc-object-cache",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-gc-object-cache",
+      "linkingText": [
+        "Exported GC Object cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "global-object-cache",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#global-object-cache",
+      "linkingText": [
+        "Global object cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tag-object-cache",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#tag-object-cache",
+      "linkingText": [
+        "Tag object cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exception-object-cache",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#exception-object-cache",
+      "linkingText": [
+        "Exception object cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "host-value-cache",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#host-value-cache",
+      "linkingText": [
+        "Host value cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-webassemblyinstantiatedsource",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dictdef-webassemblyinstantiatedsource",
+      "linkingText": [
+        "WebAssemblyInstantiatedSource"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassemblyinstantiatedsource-module",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassemblyinstantiatedsource-module",
+      "linkingText": [
+        "module"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebAssemblyInstantiatedSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassemblyinstantiatedsource-instance",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassemblyinstantiatedsource-instance",
+      "linkingText": [
+        "instance"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebAssemblyInstantiatedSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-webassemblycompileoptions",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dictdef-webassemblycompileoptions",
+      "linkingText": [
+        "WebAssemblyCompileOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassemblycompileoptions-importedstringconstants",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassemblycompileoptions-importedstringconstants",
+      "linkingText": [
+        "importedStringConstants"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebAssemblyCompileOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassemblycompileoptions-builtins",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassemblycompileoptions-builtins",
+      "linkingText": [
+        "builtins"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebAssemblyCompileOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "namespacedef-webassembly",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#namespacedef-webassembly",
+      "linkingText": [
+        "WebAssembly"
+      ],
+      "localLinkingText": [],
+      "type": "namespace",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassembly-validate-bytes-options-bytes",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-validate-bytes-options-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebAssembly/validate(bytes, options)",
+        "WebAssembly/validate(bytes)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassembly-validate-bytes-options-options",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-validate-bytes-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebAssembly/validate(bytes, options)",
+        "WebAssembly/validate(bytes)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassembly-compile-bytes-options-bytes",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-compile-bytes-options-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebAssembly/compile(bytes, options)",
+        "WebAssembly/compile(bytes)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassembly-compile-bytes-options-options",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-compile-bytes-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebAssembly/compile(bytes, options)",
+        "WebAssembly/compile(bytes)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassembly-instantiate-bytes-importobject-options-bytes",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-instantiate-bytes-importobject-options-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebAssembly/instantiate(bytes, importObject, options)",
+        "WebAssembly/instantiate(bytes, importObject)",
+        "WebAssembly/instantiate(bytes)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassembly-instantiate-bytes-importobject-options-importobject",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-instantiate-bytes-importobject-options-importobject",
+      "linkingText": [
+        "importObject"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebAssembly/instantiate(bytes, importObject, options)",
+        "WebAssembly/instantiate(bytes, importObject)",
+        "WebAssembly/instantiate(bytes)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassembly-instantiate-bytes-importobject-options-options",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-instantiate-bytes-importobject-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebAssembly/instantiate(bytes, importObject, options)",
+        "WebAssembly/instantiate(bytes, importObject)",
+        "WebAssembly/instantiate(bytes)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassembly-instantiate-moduleobject-importobject-moduleobject",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-instantiate-moduleobject-importobject-moduleobject",
+      "linkingText": [
+        "moduleObject"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebAssembly/instantiate(moduleObject, importObject)",
+        "WebAssembly/instantiate(moduleObject)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassembly-instantiate-moduleobject-importobject-importobject",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-instantiate-moduleobject-importobject-importobject",
+      "linkingText": [
+        "importObject"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebAssembly/instantiate(moduleObject, importObject)",
+        "WebAssembly/instantiate(moduleObject)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "compile-a-webassembly-module",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#compile-a-webassembly-module",
+      "linkingText": [
+        "compile a WebAssembly module"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "validate-builtins-and-imported-string-for-a-webassembly-module",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#validate-builtins-and-imported-string-for-a-webassembly-module",
+      "linkingText": [
+        "validate builtins and imported string for a WebAssembly module"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webassembly-validate",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-validate",
+      "linkingText": [
+        "validate(bytes, options)",
+        "validate(bytes)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WebAssembly"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "construct-a-webassembly-module-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#construct-a-webassembly-module-object",
+      "linkingText": [
+        "construct a WebAssembly module object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "asynchronously-compile-a-webassembly-module",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#asynchronously-compile-a-webassembly-module",
+      "linkingText": [
+        "asynchronously compile a WebAssembly module"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webassembly-compile",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-compile",
+      "linkingText": [
+        "compile(bytes, options)",
+        "compile(bytes)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WebAssembly"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "instantiate-imported-strings",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#instantiate-imported-strings",
+      "linkingText": [
+        "instantiate imported strings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "read-the-imports",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#read-the-imports",
+      "linkingText": [
+        "read the imports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-of-the-host-function",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#index-of-the-host-function",
+      "linkingText": [
+        "index of the host function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-an-exports-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#create-an-exports-object",
+      "linkingText": [
+        "create an exports object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-an-instance-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#initialize-an-instance-object",
+      "linkingText": [
+        "initialize an instance object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "instantiate-the-core-of-a-webassembly-module",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#instantiate-the-core-of-a-webassembly-module",
+      "linkingText": [
+        "instantiate the core of a WebAssembly module"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "asynchronously-instantiate-a-webassembly-module",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#asynchronously-instantiate-a-webassembly-module",
+      "linkingText": [
+        "asynchronously instantiate a WebAssembly module"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "instantiate-a-promise-of-a-module",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#instantiate-a-promise-of-a-module",
+      "linkingText": [
+        "instantiate a promise of a module"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webassembly-instantiate",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-instantiate",
+      "linkingText": [
+        "instantiate(bytes, importObject, options)",
+        "instantiate(bytes, importObject)",
+        "instantiate(bytes)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WebAssembly"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webassembly-instantiate-moduleobject-importobject",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-instantiate-moduleobject-importobject",
+      "linkingText": [
+        "instantiate(moduleObject, importObject)",
+        "instantiate(moduleObject)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WebAssembly"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webassembly-jstag",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-webassembly-jstag",
+      "linkingText": [
+        "JSTag"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebAssembly"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-importexportkind",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#enumdef-importexportkind",
+      "linkingText": [
+        "ImportExportKind"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-importexportkind-function",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-importexportkind-function",
+      "linkingText": [
+        "\"function\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ImportExportKind"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-importexportkind-table",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-importexportkind-table",
+      "linkingText": [
+        "\"table\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ImportExportKind"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-importexportkind-memory",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-importexportkind-memory",
+      "linkingText": [
+        "\"memory\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ImportExportKind"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-importexportkind-global",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-importexportkind-global",
+      "linkingText": [
+        "\"global\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ImportExportKind"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-importexportkind-tag",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-importexportkind-tag",
+      "linkingText": [
+        "\"tag\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ImportExportKind"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-moduleexportdescriptor",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dictdef-moduleexportdescriptor",
+      "linkingText": [
+        "ModuleExportDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-moduleexportdescriptor-name",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-moduleexportdescriptor-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ModuleExportDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-moduleexportdescriptor-kind",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-moduleexportdescriptor-kind",
+      "linkingText": [
+        "kind"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ModuleExportDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-moduleimportdescriptor",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dictdef-moduleimportdescriptor",
+      "linkingText": [
+        "ModuleImportDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-moduleimportdescriptor-module",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-moduleimportdescriptor-module",
+      "linkingText": [
+        "module"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ModuleImportDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-moduleimportdescriptor-name",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-moduleimportdescriptor-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ModuleImportDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-moduleimportdescriptor-kind",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-moduleimportdescriptor-kind",
+      "linkingText": [
+        "kind"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ModuleImportDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "module",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#module",
+      "linkingText": [
+        "Module"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-module-module-bytes-options-bytes",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-module-module-bytes-options-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Module/Module(bytes, options)",
+        "Module/constructor(bytes, options)",
+        "Module/Module(bytes)",
+        "Module/constructor(bytes)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-module-module-bytes-options-options",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-module-module-bytes-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Module/Module(bytes, options)",
+        "Module/constructor(bytes, options)",
+        "Module/Module(bytes)",
+        "Module/constructor(bytes)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-module-exports-moduleobject-moduleobject",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-module-exports-moduleobject-moduleobject",
+      "linkingText": [
+        "moduleObject"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Module/exports(moduleObject)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-module-imports-moduleobject-moduleobject",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-module-imports-moduleobject-moduleobject",
+      "linkingText": [
+        "moduleObject"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Module/imports(moduleObject)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-module-customsections-moduleobject-sectionname-moduleobject",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-module-customsections-moduleobject-sectionname-moduleobject",
+      "linkingText": [
+        "moduleObject"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Module/customSections(moduleObject, sectionName)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-module-customsections-moduleobject-sectionname-sectionname",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-module-customsections-moduleobject-sectionname-sectionname",
+      "linkingText": [
+        "sectionName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Module/customSections(moduleObject, sectionName)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "string-value-of-the-extern-type",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#string-value-of-the-extern-type",
+      "linkingText": [
+        "string value of the extern type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-module-exports",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-module-exports",
+      "linkingText": [
+        "exports(moduleObject)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Module"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-module-imports",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-module-imports",
+      "linkingText": [
+        "imports(moduleObject)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Module"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-module-customsections",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-module-customsections",
+      "linkingText": [
+        "customSections(moduleObject, sectionName)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Module"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-module-module",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-module-module",
+      "linkingText": [
+        "Module(bytes, options)",
+        "constructor(bytes, options)",
+        "Module(bytes)",
+        "constructor(bytes)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Module"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "instance",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#instance",
+      "linkingText": [
+        "Instance"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "instances",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#instances",
+        "title": "Instances",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-instance-instance-module-importobject-module",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-instance-instance-module-importobject-module",
+      "linkingText": [
+        "module"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Instance/Instance(module, importObject)",
+        "Instance/constructor(module, importObject)",
+        "Instance/Instance(module)",
+        "Instance/constructor(module)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "instances",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#instances",
+        "title": "Instances",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-instance-instance-module-importobject-importobject",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-instance-instance-module-importobject-importobject",
+      "linkingText": [
+        "importObject"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Instance/Instance(module, importObject)",
+        "Instance/constructor(module, importObject)",
+        "Instance/Instance(module)",
+        "Instance/constructor(module)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "instances",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#instances",
+        "title": "Instances",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-instance-instance",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-instance-instance",
+      "linkingText": [
+        "Instance(module, importObject)",
+        "constructor(module, importObject)",
+        "Instance(module)",
+        "constructor(module)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Instance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "instances",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#instances",
+        "title": "Instances",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-instance-exports",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-instance-exports",
+      "linkingText": [
+        "exports"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Instance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "instances",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#instances",
+        "title": "Instances",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-memorydescriptor",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dictdef-memorydescriptor",
+      "linkingText": [
+        "MemoryDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memorydescriptor-initial",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-memorydescriptor-initial",
+      "linkingText": [
+        "initial"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memorydescriptor-maximum",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-memorydescriptor-maximum",
+      "linkingText": [
+        "maximum"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "memory",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#memory",
+      "linkingText": [
+        "Memory"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memory-memory-descriptor-descriptor",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-memory-memory-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Memory/Memory(descriptor)",
+        "Memory/constructor(descriptor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memory-grow-delta-delta",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-memory-grow-delta-delta",
+      "linkingText": [
+        "delta"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Memory/grow(delta)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "create-a-fixed-length-memory-buffer",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#create-a-fixed-length-memory-buffer",
+      "linkingText": [
+        "create a fixed length memory buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-resizable-memory-buffer",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#create-a-resizable-memory-buffer",
+      "linkingText": [
+        "create a resizable memory buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-a-memory-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#initialize-a-memory-object",
+      "linkingText": [
+        "initialize a memory object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-memory-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#create-a-memory-object",
+      "linkingText": [
+        "create a memory object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-memory-memory",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-memory-memory",
+      "linkingText": [
+        "Memory(descriptor)",
+        "constructor(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Memory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "refresh-the-memory-buffer",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#refresh-the-memory-buffer",
+      "linkingText": [
+        "refresh the Memory buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grow-the-memory-buffer",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#grow-the-memory-buffer",
+      "linkingText": [
+        "grow the memory buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-memory-grow",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-memory-grow",
+      "linkingText": [
+        "grow(delta)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Memory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-memory-tofixedlengthbuffer",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-memory-tofixedlengthbuffer",
+      "linkingText": [
+        "toFixedLengthBuffer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Memory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-memory-toresizablebuffer",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-memory-toresizablebuffer",
+      "linkingText": [
+        "toResizableBuffer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Memory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "HostResizeArrayBuffer",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#HostResizeArrayBuffer",
+      "linkingText": [
+        "abstract operation HostResizeArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-memory-buffer",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-memory-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Memory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-tablekind",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#enumdef-tablekind",
+      "linkingText": [
+        "TableKind"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tablekind-externref",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-tablekind-externref",
+      "linkingText": [
+        "\"externref\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TableKind"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tablekind-anyfunc",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-tablekind-anyfunc",
+      "linkingText": [
+        "\"anyfunc\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TableKind"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-tabledescriptor",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dictdef-tabledescriptor",
+      "linkingText": [
+        "TableDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tabledescriptor-element",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-tabledescriptor-element",
+      "linkingText": [
+        "element"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TableDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tabledescriptor-initial",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-tabledescriptor-initial",
+      "linkingText": [
+        "initial"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TableDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tabledescriptor-maximum",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-tabledescriptor-maximum",
+      "linkingText": [
+        "maximum"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TableDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "table",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#table",
+      "linkingText": [
+        "Table"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-table-table-descriptor-value-descriptor",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-table-descriptor-value-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Table/Table(descriptor, value)",
+        "Table/constructor(descriptor, value)",
+        "Table/Table(descriptor)",
+        "Table/constructor(descriptor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-table-table-descriptor-value-value",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-table-descriptor-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Table/Table(descriptor, value)",
+        "Table/constructor(descriptor, value)",
+        "Table/Table(descriptor)",
+        "Table/constructor(descriptor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-table-grow-delta-value-delta",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-grow-delta-value-delta",
+      "linkingText": [
+        "delta"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Table/grow(delta, value)",
+        "Table/grow(delta)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-table-grow-delta-value-value",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-grow-delta-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Table/grow(delta, value)",
+        "Table/grow(delta)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-table-get-index-index",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-get-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Table/get(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-table-set-index-value-index",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-set-index-value-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Table/set(index, value)",
+        "Table/set(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-table-set-index-value-value",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-set-index-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Table/set(index, value)",
+        "Table/set(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "initialize-a-table-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#initialize-a-table-object",
+      "linkingText": [
+        "initialize a table object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-table-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#create-a-table-object",
+      "linkingText": [
+        "create a table object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-table-table",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-table",
+      "linkingText": [
+        "Table(descriptor, value)",
+        "constructor(descriptor, value)",
+        "Table(descriptor)",
+        "constructor(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Table"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-table-grow",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-grow",
+      "linkingText": [
+        "grow(delta, value)",
+        "grow(delta)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Table"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-table-length",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Table"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-table-get",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-get",
+      "linkingText": [
+        "get(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Table"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-table-set",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-table-set",
+      "linkingText": [
+        "set(index, value)",
+        "set(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Table"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tables",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tables",
+        "title": "Tables",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-valuetype",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#enumdef-valuetype",
+      "linkingText": [
+        "ValueType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-valuetype-i32",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-valuetype-i32",
+      "linkingText": [
+        "\"i32\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ValueType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-valuetype-i64",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-valuetype-i64",
+      "linkingText": [
+        "\"i64\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ValueType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-valuetype-f32",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-valuetype-f32",
+      "linkingText": [
+        "\"f32\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ValueType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-valuetype-f64",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-valuetype-f64",
+      "linkingText": [
+        "\"f64\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ValueType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-valuetype-v128",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-valuetype-v128",
+      "linkingText": [
+        "\"v128\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ValueType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-valuetype-externref",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-valuetype-externref",
+      "linkingText": [
+        "\"externref\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ValueType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-valuetype-anyfunc",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-valuetype-anyfunc",
+      "linkingText": [
+        "\"anyfunc\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ValueType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-globaldescriptor",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dictdef-globaldescriptor",
+      "linkingText": [
+        "GlobalDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-globaldescriptor-value",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-globaldescriptor-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GlobalDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-globaldescriptor-mutable",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-globaldescriptor-mutable",
+      "linkingText": [
+        "mutable"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GlobalDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "global",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#global",
+      "linkingText": [
+        "Global"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-global-global-descriptor-v-descriptor",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-global-global-descriptor-v-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Global/Global(descriptor, v)",
+        "Global/constructor(descriptor, v)",
+        "Global/Global(descriptor)",
+        "Global/constructor(descriptor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-global-global-descriptor-v-v",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-global-global-descriptor-v-v",
+      "linkingText": [
+        "v"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Global/Global(descriptor, v)",
+        "Global/constructor(descriptor, v)",
+        "Global/Global(descriptor)",
+        "Global/constructor(descriptor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "initialize-a-global-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#initialize-a-global-object",
+      "linkingText": [
+        "initialize a global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-global-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#create-a-global-object",
+      "linkingText": [
+        "create a global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tovaluetype",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#tovaluetype",
+      "linkingText": [
+        "ToValueType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "defaultvalue",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#defaultvalue",
+      "linkingText": [
+        "DefaultValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-global-global",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-global-global",
+      "linkingText": [
+        "Global(descriptor, v)",
+        "constructor(descriptor, v)",
+        "Global(descriptor)",
+        "constructor(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Global"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "getglobalvalue",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#getglobalvalue",
+      "linkingText": [
+        "GetGlobalValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-global-value",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-global-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Global"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-global-valueof",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-global-valueof",
+      "linkingText": [
+        "valueOf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Global"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "globals",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#globals",
+        "title": "Globals",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exported-function",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-function",
+      "linkingText": [
+        "Exported Function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "name-of-the-webassembly-function",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#name-of-the-webassembly-function",
+      "linkingText": [
+        "name of the WebAssembly function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "a-new-exported-function",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#a-new-exported-function",
+      "linkingText": [
+        "a new Exported Function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "call-an-exported-function",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#call-an-exported-function",
+      "linkingText": [
+        "call an Exported Function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "run-a-host-function",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#run-a-host-function",
+      "linkingText": [
+        "run a host function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-host-function",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#create-a-host-function",
+      "linkingText": [
+        "create a host function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tojsvalue",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#tojsvalue",
+      "linkingText": [
+        "ToJSValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieving-a-host-value",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#retrieving-a-host-value",
+      "linkingText": [
+        "retrieving a host value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "towebassemblyvalue",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#towebassemblyvalue",
+      "linkingText": [
+        "ToWebAssemblyValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tag_alloc",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#tag_alloc",
+      "linkingText": [
+        "tag_alloc"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "tags",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tags",
+        "title": "Tags",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-tagtype",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dictdef-tagtype",
+      "linkingText": [
+        "TagType"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tagtype-parameters",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-tagtype-parameters",
+      "linkingText": [
+        "parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TagType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "tag",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#tag",
+      "linkingText": [
+        "Tag"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tag-tag-type-type",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-tag-tag-type-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Tag/Tag(type)",
+        "Tag/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "initialize-a-tag-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#initialize-a-tag-object",
+      "linkingText": [
+        "initialize a Tag object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-tag-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#create-a-tag-object",
+      "linkingText": [
+        "create a Tag object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-tag-tag",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-tag-tag",
+      "linkingText": [
+        "Tag(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Tag"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#exported-gc-object",
+      "linkingText": [
+        "Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "getprototypeof-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#getprototypeof-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[GetPrototypeOf]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "setprototypeof-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#setprototypeof-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[SetPrototypeOf]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "isextensible-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#isextensible-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[IsExtensible]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "preventextensions-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#preventextensions-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[PreventExtensions]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "getownproperty-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#getownproperty-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[GetOwnProperty]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "defineownproperty-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#defineownproperty-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[DefineOwnProperty]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "hasproperty-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#hasproperty-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[HasProperty]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#get-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[Get]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#set-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[Set]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "delete-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#delete-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[Delete]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ownpropertykeys-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#ownpropertykeys-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[OwnPropertyKeys]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "a-new-exported-gc-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#a-new-exported-gc-object",
+      "linkingText": [
+        "a new Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-exceptionoptions",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dictdef-exceptionoptions",
+      "linkingText": [
+        "ExceptionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exceptionoptions-tracestack",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-exceptionoptions-tracestack",
+      "linkingText": [
+        "traceStack"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ExceptionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "exception",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#exception",
+      "linkingText": [
+        "Exception"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exception-exception-exceptiontag-payload-options-exceptiontag",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-exception-exception-exceptiontag-payload-options-exceptiontag",
+      "linkingText": [
+        "exceptionTag"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Exception/Exception(exceptionTag, payload, options)",
+        "Exception/constructor(exceptionTag, payload, options)",
+        "Exception/Exception(exceptionTag, payload)",
+        "Exception/constructor(exceptionTag, payload)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exception-exception-exceptiontag-payload-options-payload",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-exception-exception-exceptiontag-payload-options-payload",
+      "linkingText": [
+        "payload"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Exception/Exception(exceptionTag, payload, options)",
+        "Exception/constructor(exceptionTag, payload, options)",
+        "Exception/Exception(exceptionTag, payload)",
+        "Exception/constructor(exceptionTag, payload)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exception-exception-exceptiontag-payload-options-options",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-exception-exception-exceptiontag-payload-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Exception/Exception(exceptionTag, payload, options)",
+        "Exception/constructor(exceptionTag, payload, options)",
+        "Exception/Exception(exceptionTag, payload)",
+        "Exception/constructor(exceptionTag, payload)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exception-getarg-index-index",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-exception-getarg-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Exception/getArg(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exception-is-exceptiontag-exceptiontag",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-exception-is-exceptiontag-exceptiontag",
+      "linkingText": [
+        "exceptionTag"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Exception/is(exceptionTag)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "initialize-an-exception-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#initialize-an-exception-object",
+      "linkingText": [
+        "initialize an Exception object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-an-exception-object",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#create-an-exception-object",
+      "linkingText": [
+        "create an Exception object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-exception-exception",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-exception-exception",
+      "linkingText": [
+        "Exception(exceptionTag, payload, options)",
+        "constructor(exceptionTag, payload, options)",
+        "Exception(exceptionTag, payload)",
+        "constructor(exceptionTag, payload)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Exception"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-exception-getarg",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-exception-getarg",
+      "linkingText": [
+        "getArg(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Exception"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-exception-is",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-exception-is",
+      "linkingText": [
+        "is(exceptionTag)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Exception"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-exception-stack",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#dom-exception-stack",
+      "linkingText": [
+        "stack"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Exception"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "javascript-exception-tag",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#javascript-exception-tag",
+      "linkingText": [
+        "JavaScript exception tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "js-exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#js-exceptions",
+        "title": "JavaScript exceptions",
+        "number": "4.9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-javascript-exception-tag",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#get-the-javascript-exception-tag",
+      "linkingText": [
+        "get the JavaScript exception tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "js-exceptions",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#js-exceptions",
+        "title": "JavaScript exceptions",
+        "number": "4.9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exceptiondef-compileerror",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-compileerror",
+      "linkingText": [
+        "CompileError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#error-objects",
+        "title": "Error Objects",
+        "number": "4.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exceptiondef-linkerror",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-linkerror",
+      "linkingText": [
+        "LinkError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#error-objects",
+        "title": "Error Objects",
+        "number": "4.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exceptiondef-runtimeerror",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror",
+      "linkingText": [
+        "RuntimeError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-objects",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#error-objects",
+        "title": "Error Objects",
+        "number": "4.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-builtins-for-a-builtin-set",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#get-the-builtins-for-a-builtin-set",
+      "linkingText": [
+        "get the builtins for a builtin set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtins",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#builtins",
+        "title": "Builtins",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "find-a-builtin",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#find-a-builtin",
+      "linkingText": [
+        "find a builtin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtins",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#builtins",
+        "title": "Builtins",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "validate-builtin-set-names",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#validate-builtin-set-names",
+      "linkingText": [
+        "validate builtin set names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtins",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#builtins",
+        "title": "Builtins",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-builtin-function",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#create-a-builtin-function",
+      "linkingText": [
+        "create a builtin function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtins",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#builtins",
+        "title": "Builtins",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "instantiate-a-builtin-set",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#instantiate-a-builtin-set",
+      "linkingText": [
+        "instantiate a builtin set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtins",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#builtins",
+        "title": "Builtins",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "validate-an-import-for-builtins",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#validate-an-import-for-builtins",
+      "linkingText": [
+        "validate an import for builtins"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtins",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#builtins",
+        "title": "Builtins",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "unwrapstring-v",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#unwrapstring-v",
+      "linkingText": [
+        "unwrapString(v)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtins-js-string",
+        "href": "https://webassembly.github.io/js-string-builtins/js-api/#builtins-js-string",
+        "title": "String Builtins",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
