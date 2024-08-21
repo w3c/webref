@@ -81,10 +81,10 @@
           "html": "<p>If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error④\">error</a>, return false.</p>"
         },
         {
-          "html": "<p>Let <var>builtinSetNames</var> be options[\"builtins\"]</p>"
+          "html": "<p>Let <var>builtinSetNames</var> be <var>options</var>[\"builtins\"]</p>"
         },
         {
-          "html": "<p>Let <var>importedStringModule</var> be options[\"importedStringConstants\"]</p>"
+          "html": "<p>Let <var>importedStringModule</var> be <var>options</var>[\"importedStringConstants\"]</p>"
         },
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#validate-builtins-and-imported-string-for-a-webassembly-module\" id=\"ref-for-validate-builtins-and-imported-string-for-a-webassembly-module\">validating builtins and imported strings</a> for <var>module</var> with <var>builtinSetNames</var> and <var>importedStringModule</var> returns false, return false.</p>"
@@ -144,10 +144,10 @@
                   "html": "<p>If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑤\">error</a>, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror\">CompileError</a></code> exception.</p>"
                 },
                 {
-                  "html": "<p>Let <var>builtinSetNames</var> be options[\"builtins\"]</p>"
+                  "html": "<p>Let <var>builtinSetNames</var> be <var>options</var>[\"builtins\"]</p>"
                 },
                 {
-                  "html": "<p>Let <var>importedStringModule</var> be options[\"importedStringConstants\"]</p>"
+                  "html": "<p>Let <var>importedStringModule</var> be <var>options</var>[\"importedStringConstants\"]</p>"
                 },
                 {
                   "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#validate-builtins-and-imported-string-for-a-webassembly-module\" id=\"ref-for-validate-builtins-and-imported-string-for-a-webassembly-module①\">validating builtins and imported strings</a> for <var>module</var> with <var>builtinSetNames</var> and <var>importedStringModule</var> is false, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror①\">CompileError</a></code> exception.</p>"
@@ -251,7 +251,10 @@
               "html": "<p>Let <var>exportsObject</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#instantiate-a-builtin-set\" id=\"ref-for-instantiate-a-builtin-set\">instantiate a builtin set</a> with <var>builtinSetName</var></p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>builtinOrStringImports</var>[<var>builtinSetName</var>] to <var>exportsObject</var></p>"
+              "html": "<p>Let <var>builtinSetQualifiedName</var> be <var>builtinSetName</var> prefixed with \"wasm:\"</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>builtinOrStringImports</var>[<var>builtinSetQualifiedName</var>] to <var>exportsObject</var></p>"
             }
           ]
         },
@@ -910,10 +913,10 @@
           "html": "<p>If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑧\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror②\">CompileError</a></code> exception.</p>"
         },
         {
-          "html": "<p>Let <var>builtinSetNames</var> be options[\"builtins\"]</p>"
+          "html": "<p>Let <var>builtinSetNames</var> be <var>options</var>[\"builtins\"]</p>"
         },
         {
-          "html": "<p>Let <var>importedStringModule</var> be options[\"importedStringConstants\"]</p>"
+          "html": "<p>Let <var>importedStringModule</var> be <var>options</var>[\"importedStringConstants\"]</p>"
         },
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#validate-builtins-and-imported-string-for-a-webassembly-module\" id=\"ref-for-validate-builtins-and-imported-string-for-a-webassembly-module②\">validating builtins and imported strings</a> for <var>module</var> with <var>builtinSetNames</var> and <var>importedStringModule</var> returns false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror③\">CompileError</a></code> exception.</p>"
@@ -3205,10 +3208,13 @@
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>builtinSetName</var> of <var>builtinSetNames</var>,",
-          "rationale": "if",
+          "rationale": "let",
           "steps": [
             {
-              "html": "If <var>importModuleName</var> equals <var>builtinSetName</var>",
+              "html": "<p>Let <var>builtinSetQualifiedName</var> be <var>builtinSetName</var> prefixed with \"wasm:\"</p>"
+            },
+            {
+              "html": "If <var>importModuleName</var> equals <var>builtinSetQualifiedName</var>",
               "rationale": "let",
               "steps": [
                 {
@@ -3261,7 +3267,7 @@
     {
       "name": "create a builtin function",
       "href": "https://webassembly.github.io/js-string-builtins/js-api/#create-a-builtin-function",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-builtin-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a builtin function</dfn> from type <var>functype</var> and execution steps <var>steps</var>, perform the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-builtin-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a builtin function</dfn> from type <var>funcType</var> and execution steps <var>steps</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3300,11 +3306,11 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> (<var>name</var>, <var>funcType</var>, <var>algorithm</var>) of <var>builtins</var>,",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> (<var>name</var>, <var>funcType</var>, <var>steps</var>) of <var>builtins</var>,",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>funcaddr</var> be the result fo <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#create-a-builtin-function\" id=\"ref-for-create-a-builtin-function\">create a builtin function</a> with <var>funcType</var> and <var>algorithm</var></p>"
+              "html": "<p>Let <var>funcaddr</var> be the result fo <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#create-a-builtin-function\" id=\"ref-for-create-a-builtin-function\">create a builtin function</a> with <var>funcType</var> and <var>steps</var></p>"
             },
             {
               "html": "<p>Let <var>func</var> be the result of creating <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#a-new-exported-function\" id=\"ref-for-a-new-exported-function②\">a new Exported Function</a> from <var>funcaddr</var>.</p>"
@@ -3355,17 +3361,17 @@
       ]
     },
     {
-      "name": "js-string-unwrapString",
-      "href": "https://webassembly.github.io/js-string-builtins/js-api/#unwrapstring-v",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"unwrapstring-v\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">unwrapString(<var>v</var>)</dfn> method, when invoked, performs the following steps:",
+      "name": "UnwrapString",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-unwrapstring",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"UnwrapString\" id=\"abstract-opdef-unwrapstring\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">UnwrapString(<var>v</var>)</dfn> abstract operation, when invoked, performs the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values③\">Type</a>(<var>v</var>) is not String",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values③\">Type</a>(<var>v</var>) is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">String</a>",
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror③\">RuntimeError</a></code> exception. TODO: this needs to not be catchable, like a trap.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror③\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap\">trap</a> was executed.</p>"
             }
           ]
         },
@@ -3375,15 +3381,373 @@
       ]
     },
     {
-      "name": "js-string-charCodeAt",
-      "html": "When this builtin is invoked, the following steps must be run:",
+      "name": "FromCharCode",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-fromcharcode",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"FromCharCode\" id=\"abstract-opdef-fromcharcode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">FromCharCode(<var>v</var>)</dfn> abstract operation, when invoked, performs the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"abstract-op\">unwrapString</a>(param0)</p>"
+          "html": "<p class=\"assertion\">Assert: <var>v</var> is of type <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①②\">i32</a>.</p>"
         },
         {
-          "html": "<p>TODO</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③②\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call①\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-string.fromcharcode\" id=\"ref-for-sec-string.fromcharcode\">String.fromCharCode</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑦\">ToJSValue</a>(<var>v</var>) »).</p>"
+        }
+      ]
+    },
+    {
+      "name": "CharCodeAt",
+      "href": "https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-charcodeat",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"CharCodeAt \" id=\"abstract-opdef-charcodeat\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">CharCodeAt(<var>string</var>, <var>index</var>)</dfn> abstract operation, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <var>index</var> is of type <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①③\">i32</a>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③③\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call②\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-string.prototype.charcodeat\" id=\"ref-for-sec-string.prototype.charcodeat\">String.prototype.charCodeAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑧\">ToJSValue</a>(<var>index</var>) »).</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-cast",
+      "html": "When this builtin is invoked with parameter <var>v</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring\">UnwrapString</a>(<var>v</var>)</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-test",
+      "html": "When this builtin is invoked with parameter <var>v</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values④\">Type</a>(<var>v</var>) is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">String</a>",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return 0</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return 1</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-fromCharCodeArray",
+      "html": "When this builtin is invoked with parameters <var>array</var>, <var>start</var>, and <var>end</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>array</var> is null",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror④\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap①\">trap</a> was executed.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>length</var> be the number of elements in <var>array</var>.</p>"
+        },
+        {
+          "html": "If <var>start</var> &gt; <var>end</var> or <var>end</var> &gt; <var>length</var>",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑤\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap②\">trap</a> was executed.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>result</var> be the empty string.</p>"
+        },
+        {
+          "html": "<p>Let <var>i</var> be <var>start</var>.</p>"
+        },
+        {
+          "html": "While <var>i</var> &lt; <var>end</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>charCode</var> be the value of the element stored at index <var>i</var> in <var>array</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>charCodeString</var> be <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-fromcharcode\" id=\"ref-for-abstract-opdef-fromcharcode\">FromCharCode</a>(<var>charCode</var>).</p>"
+            },
+            {
+              "html": "<p>Let <var>result</var> be the concatenation of <var>result</var> and <var>charCodeString</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>i</var> to <var>i</var> + 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-intoCharCodeArray",
+      "html": "When this builtin is invoked with parameters <var>string</var>, <var>array</var>, and <var>start</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>array</var> is null",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑥\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap③\">trap</a> was executed.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑤\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring①\">UnwrapString</a>(<var>string</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>stringLength</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> of <var>string</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>arrayLength</var> be the number of elements in <var>array</var>.</p>"
+        },
+        {
+          "html": "If <var>start</var> + <var>stringLength</var> &gt; <var>arrayLength</var>",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑦\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap④\">trap</a> was executed.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>i</var> be 0.</p>"
+        },
+        {
+          "html": "While <var>i</var> &lt; <var>stringLength</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>charCode</var> be <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-charcodeat\" id=\"ref-for-abstract-opdef-charcodeat\">CharCodeAt</a>(<var>string</var>, <var>i</var>).</p>"
+            },
+            {
+              "html": "<p>Set the element at index <var>start</var> + <var>i</var> in <var>array</var> to <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①③\">ToWebAssemblyValue</a>(<var>charCode</var>).</p>"
+            },
+            {
+              "html": "<p>Set <var>i</var> to <var>i</var> + 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>stringLength</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-fromCharCode",
+      "html": "When this builtin is invoked with parameter <var>v</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-fromcharcode\" id=\"ref-for-abstract-opdef-fromcharcode①\">FromCharCode</a>(<var>v</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-fromCodePoint",
+      "html": "When this builtin is invoked with parameter <var>v</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>v</var> &gt; 0x10ffff",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑧\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap⑤\">trap</a> was executed.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call③\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-string.fromcodepoint\" id=\"ref-for-sec-string.fromcodepoint\">String.fromCodePoint</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑨\">ToJSValue</a>(<var>v</var>) »).</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-charCodeAt",
+      "html": "When this builtin is invoked with parameters <var>string</var> and <var>index</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring②\">UnwrapString</a>(<var>string</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①\">length</a> of <var>string</var>.</p>"
+        },
+        {
+          "html": "If <var>index</var> &gt;= <var>length</var>",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑨\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap⑥\">trap</a> was executed.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-charcodeat\" id=\"ref-for-abstract-opdef-charcodeat①\">CharCodeAt</a>(<var>string</var>, <var>index</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-codePointAt",
+      "html": "When this builtin is invoked with parameters <var>string</var> and <var>index</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring③\">UnwrapString</a>(<var>string</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length②\">length</a> of <var>string</var>.</p>"
+        },
+        {
+          "html": "If <var>index</var> &gt;= <var>length</var>",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①⓪\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap⑦\">trap</a> was executed.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call④\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-string.prototype.codepointat\" id=\"ref-for-sec-string.prototype.codepointat\">String.prototype.codePointAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#tojsvalue\" id=\"ref-for-tojsvalue①⓪\">ToJSValue</a>(<var>index</var>) »).</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-length",
+      "html": "When this builtin is invoked with parameter <var>v</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring④\">UnwrapString</a>(<var>v</var>).</p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length③\">length</a> of <var>string</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-concat",
+      "html": "When this builtin is invoked with parameters <var>first</var> and <var>second</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑤\">UnwrapString</a>(<var>first</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④②\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑥\">UnwrapString</a>(<var>second</var>).</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④③\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑤\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-string.prototype.concat\" id=\"ref-for-sec-string.prototype.concat\">String.prototype.concat</a>, <var>first</var>, « <var>second</var> »).</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-substring",
+      "html": "When this builtin is invoked with parameters <var>string</var>, <var>start</var>, and <var>end</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑦\">UnwrapString</a>(<var>string</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length④\">length</a> of <var>string</var>.</p>"
+        },
+        {
+          "html": "If <var>start</var> &gt; <var>end</var> or <var>start</var> &gt; <var>length</var>",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return the empty string.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑥\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-string.prototype.substring\" id=\"ref-for-sec-string.prototype.substring\">String.prototype.substring</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#tojsvalue\" id=\"ref-for-tojsvalue①①\">ToJSValue</a>(<var>start</var>), <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#tojsvalue\" id=\"ref-for-tojsvalue①②\">ToJSValue</a>(<var>end</var>) »).</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-equals",
+      "html": "When this builtin is invoked with parameters <var>first</var> and <var>second</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>first</var> is not null and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑤\">Type</a>(<var>first</var>) is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">String</a>",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①①\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap⑧\">trap</a> was executed.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>second</var> is not null and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑥\">Type</a>(<var>second</var>) is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑥\">String</a>",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①②\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap⑨\">trap</a> was executed.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑥\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-isstrictlyequal\" id=\"ref-for-sec-isstrictlyequal\">IsStrictlyEqual</a>(<var>first</var>, <var>second</var>) is true",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return 0.</p>"
+        }
+      ]
+    },
+    {
+      "name": "js-string-compare",
+      "html": "When this builtin is invoked with parameters <var>first</var> and <var>second</var>, the following steps must be run:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑧\">UnwrapString</a>(<var>first</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑨\">UnwrapString</a>(<var>second</var>).</p>"
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑨\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-isstrictlyequal\" id=\"ref-for-sec-isstrictlyequal①\">IsStrictlyEqual</a>(<var>first</var>, <var>second</var>) is true",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return 0.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⓪\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-islessthan\" id=\"ref-for-sec-islessthan\">IsLessThan</a>(<var>first</var>, <var>second</var>, true) is true",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return -1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return 1.</p>"
         }
       ]
     }
