@@ -6,7 +6,7 @@ interface XRInputSource {
   [SameObject] readonly attribute XRSpace targetRaySpace;
   [SameObject] readonly attribute XRSpace? gripSpace;
   [SameObject] readonly attribute FrozenArray<DOMString> profiles;
-  [SameObject] readonly attribute boolean skipRendering;
+  readonly attribute boolean skipRendering;
 };
 
 // Source: WebXR Gamepads Module - Level 1 (https://www.w3.org/TR/webxr-gamepads-module-1/)

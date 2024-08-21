@@ -2045,7 +2045,7 @@
         "href": "https://immersive-web.github.io/webxr/#enumdef-xrtargetraymode"
       },
       "XRInputSource": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSource {\n  readonly attribute XRHandedness handedness;\n  readonly attribute XRTargetRayMode targetRayMode;\n  [SameObject] readonly attribute XRSpace targetRaySpace;\n  [SameObject] readonly attribute XRSpace? gripSpace;\n  [SameObject] readonly attribute FrozenArray<DOMString> profiles;\n  [SameObject] readonly attribute boolean skipRendering;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSource {\n  readonly attribute XRHandedness handedness;\n  readonly attribute XRTargetRayMode targetRayMode;\n  [SameObject] readonly attribute XRSpace targetRaySpace;\n  [SameObject] readonly attribute XRSpace? gripSpace;\n  [SameObject] readonly attribute FrozenArray<DOMString> profiles;\n  readonly attribute boolean skipRendering;\n};",
         "type": "interface",
         "name": "XRInputSource",
         "inheritance": null,
@@ -2171,14 +2171,7 @@
               "union": false,
               "idlType": "boolean"
             },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "special": "",
             "readonly": true,
             "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-skiprendering"
