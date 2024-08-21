@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-08-20T01:33:52.107Z",
+  "date": "2024-08-21T01:48:01.815Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -47,6 +47,7 @@
       "css-size-adjust-1",
       "css-values-5",
       "css-variables-2",
+      "selectors-5",
       "compositing-2",
       "filter-effects-2",
       "encoding",
@@ -65,6 +66,7 @@
       "infra",
       "mimesniff",
       "notifications",
+      "private-aggregation-api",
       "topics",
       "gpc-spec",
       "nav-tracking-mitigations",
@@ -132,6 +134,7 @@
       "tc39-arraybuffer-base64",
       "tc39-arraybuffer-transfer",
       "tc39-async-explicit-resource-management",
+      "tc39-canonical-tz",
       "tc39-decorators",
       "tc39-dynamic-code-brand-checks",
       "tc39-explicit-resource-management",
@@ -144,6 +147,7 @@
       "tc39-json-parse-with-source",
       "tc39-promise-try",
       "tc39-promise-with-resolvers",
+      "tc39-regex-escaping",
       "tc39-regexp-modifiers",
       "tc39-set-methods",
       "tc39-shadowrealm",
@@ -177,6 +181,7 @@
       "wasm-core-2-fork-function-references",
       "wasm-core-2-fork-gc",
       "wasm-js-api-2-fork-js-promise-integration",
+      "wasm-js-api-2-fork-js-string-builtins",
       "wasm-js-api-2-fork-js-types",
       "wasm-core-2-fork-memory64",
       "wasm-core-2-fork-multi-memory",
@@ -511,7 +516,7 @@
       "payment-handler",
       "payment-method-id",
       "payment-method-manifest",
-      "payment-request-1.1",
+      "payment-request",
       "performance-timeline",
       "permissions-policy-1",
       "permissions",
@@ -659,7 +664,7 @@
     "crawled": 327,
     "errors": 0
   },
-  "crawler": "reffy-17.1.2",
+  "crawler": "reffy-17.2.0",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -705,7 +710,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "20 August 2024",
+      "date": "21 August 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -3374,7 +3379,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-conditional-3/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -8203,7 +8208,7 @@
           "https://w3c.github.io/csswg-drafts/css-viewport/"
         ],
         "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-viewport/Overview.bs",
+        "sourcePath": "css-viewport-1/Overview.bs",
         "filename": "index.html"
       },
       "formerNames": [
@@ -9387,10 +9392,11 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-initdata-keyids/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+        "lastModified": "Tue, 20 Aug 2024 15:43:03 GMT"
       },
       "generator": "respec",
-      "date": "18 July 2024",
+      "date": "20 August 2024",
+      "revision": "81ab0edaf64a9dce1e794bf9a8b1a41559983ff2",
       "links": "links/eme-initdata-keyids.json",
       "refs": "refs/eme-initdata-keyids.json",
       "headings": "headings/eme-initdata-keyids.json",
@@ -9604,7 +9610,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-stream-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:46:58 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:24 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -9700,7 +9706,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/encrypted-media-2/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "title": "Encrypted Media Extensions",
@@ -13954,18 +13960,20 @@
       "ids": "ids/payment-method-manifest.json"
     },
     {
-      "url": "https://www.w3.org/TR/payment-request-1.1/",
+      "url": "https://www.w3.org/TR/payment-request/",
       "seriesComposition": "full",
-      "shortname": "payment-request-1.1",
+      "shortname": "payment-request",
       "series": {
         "shortname": "payment-request",
-        "currentSpecification": "payment-request-1.1",
+        "currentSpecification": "payment-request",
         "title": "Payment Request API",
         "shortTitle": "Payment Request API",
         "releaseUrl": "https://www.w3.org/TR/payment-request/",
         "nightlyUrl": "https://w3c.github.io/payment-request/"
       },
-      "seriesVersion": "1.1",
+      "formerNames": [
+        "payment-request-1.1"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -13974,8 +13982,8 @@
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/payment-request-1.1/",
-        "status": "Working Draft",
+        "url": "https://www.w3.org/TR/payment-request/",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -13988,7 +13996,7 @@
       },
       "title": "Payment Request API",
       "source": "w3c",
-      "shortTitle": "Payment Request API 1.1",
+      "shortTitle": "Payment Request API",
       "categories": [
         "browser"
       ],
@@ -14000,24 +14008,24 @@
         ]
       },
       "versions": [
-        "https://www.w3.org/TR/payment-request-1.1/",
+        "https://www.w3.org/TR/payment-request/",
         "https://w3c.github.io/payment-request/"
       ],
-      "crawled": "https://www.w3.org/TR/payment-request-1.1/",
+      "crawled": "https://www.w3.org/TR/payment-request/",
       "crawlCacheInfo": {
         "lastModified": "Wed, 14 Aug 2024 13:38:59 GMT"
       },
       "generator": "respec",
       "date": "14 August 2024",
       "revision": "0a5afe29c87a8b303148839d5a474dbef5e33697",
-      "algorithms": "algorithms/payment-request-1.1.json",
-      "links": "links/payment-request-1.1.json",
-      "refs": "refs/payment-request-1.1.json",
-      "events": "events/payment-request-1.1.json",
+      "algorithms": "algorithms/payment-request.json",
+      "links": "links/payment-request.json",
+      "refs": "refs/payment-request.json",
+      "events": "events/payment-request.json",
       "idl": "idl/payment-request.idl",
-      "dfns": "dfns/payment-request-1.1.json",
-      "headings": "headings/payment-request-1.1.json",
-      "ids": "ids/payment-request-1.1.json"
+      "dfns": "dfns/payment-request.json",
+      "headings": "headings/payment-request.json",
+      "ids": "ids/payment-request.json"
     },
     {
       "url": "https://www.w3.org/TR/performance-timeline/",
@@ -16138,6 +16146,7 @@
       },
       "seriesVersion": "4",
       "seriesPrevious": "selectors-3",
+      "seriesNext": "selectors-5",
       "organization": "W3C",
       "groups": [
         {
@@ -18361,6 +18370,7 @@
         "wasm-js-api-2-fork-esm-integration",
         "wasm-js-api-2-fork-exception-handling",
         "wasm-js-api-2-fork-js-promise-integration",
+        "wasm-js-api-2-fork-js-string-builtins",
         "wasm-js-api-2-fork-js-types",
         "wasm-js-api-2-fork-threads"
       ],
@@ -19931,7 +19941,7 @@
       "groups": [
         {
           "name": "GPU for the Web Working Group",
-          "url": "https://www.w3.org/2020/gpu/"
+          "url": "https://www.w3.org/groups/wg/gpu/"
         }
       ],
       "release": {
@@ -21216,7 +21226,7 @@
       "groups": [
         {
           "name": "GPU for the Web Working Group",
-          "url": "https://www.w3.org/2020/gpu/"
+          "url": "https://www.w3.org/groups/wg/gpu/"
         }
       ],
       "release": {
@@ -21237,11 +21247,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 19 Aug 2024 17:40:38 GMT"
+        "lastModified": "Tue, 20 Aug 2024 14:31:02 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 August 2024",
-      "revision": "0f098a93b6470c2395d650d798231fe4d4e9bdb9",
+      "date": "20 August 2024",
+      "revision": "c1990f4f6a8ad55ad593462c585483dcbab7850e",
       "algorithms": "algorithms/WGSL.json",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
