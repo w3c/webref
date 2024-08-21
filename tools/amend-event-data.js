@@ -286,7 +286,7 @@ const patches = {
       change: { interface: 'DeviceOrientationEvent' }
     }
   ],
-  'payment-request-1.1': [
+  'payment-request': [
     // Spec uses an indirect algo to fire events:
     // https://www.w3.org/TR/payment-request/#dfn-paymentrequest-updated-algorithm
     // That said, extraction could perhaps process the informative events
