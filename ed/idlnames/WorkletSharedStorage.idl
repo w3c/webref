@@ -1,9 +1,0 @@
-// Source: Shared Storage API (https://wicg.github.io/shared-storage/)
-[Exposed=(SharedStorageWorklet)]
-interface WorkletSharedStorage : SharedStorage {
-  Promise<DOMString> get(DOMString key);
-  Promise<unsigned long> length();
-  Promise<double> remainingBudget();
-
-  async iterable<DOMString, DOMString>;
-};

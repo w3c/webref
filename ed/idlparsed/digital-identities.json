@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "DigitalCredentialRequestOptions": {
-        "fragment": "dictionary DigitalCredentialRequestOptions {\n  sequence<IdentityRequestProvider> providers;\n};",
+        "fragment": "dictionary DigitalCredentialRequestOptions {\n  sequence<DigitalCredentialsProvider> providers;\n};",
         "type": "dictionary",
         "name": "DigitalCredentialRequestOptions",
         "inheritance": null,
@@ -36,7 +36,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "IdentityRequestProvider"
+                  "idlType": "DigitalCredentialsProvider"
                 }
               ]
             },
@@ -49,10 +49,10 @@
         "partial": false,
         "href": "https://wicg.github.io/digital-credentials#dom-digitalcredentialrequestoptions"
       },
-      "IdentityRequestProvider": {
-        "fragment": "dictionary IdentityRequestProvider {\n  required DOMString protocol;\n  required object request;\n};",
+      "DigitalCredentialsProvider": {
+        "fragment": "dictionary DigitalCredentialsProvider {\n  required DOMString protocol;\n  required object request;\n};",
         "type": "dictionary",
-        "name": "IdentityRequestProvider",
+        "name": "DigitalCredentialsProvider",
         "inheritance": null,
         "members": [
           {
@@ -69,7 +69,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/digital-credentials#dom-identityrequestprovider-protocol"
+            "href": "https://wicg.github.io/digital-credentials#dom-digitalcredentialsprovider-protocol"
           },
           {
             "type": "field",
@@ -85,15 +85,15 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/digital-credentials#dom-identityrequestprovider-request"
+            "href": "https://wicg.github.io/digital-credentials#dom-digitalcredentialsprovider-request"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/digital-credentials#dom-identityrequestprovider"
+        "href": "https://wicg.github.io/digital-credentials#dom-digitalcredentialsprovider"
       },
       "DigitalCredential": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface DigitalCredential : Credential {\n  readonly attribute DOMString protocol;\n  readonly attribute any data;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DigitalCredential : Credential {\n  readonly attribute DOMString protocol;\n  readonly attribute object data;\n};",
         "type": "interface",
         "name": "DigitalCredential",
         "inheritance": "Credential",
@@ -123,7 +123,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "any"
+              "idlType": "object"
             },
             "extAttrs": [],
             "special": "",
@@ -237,9 +237,9 @@
         "DigitalCredentialRequestOptions"
       ],
       "DigitalCredentialRequestOptions": [
-        "IdentityRequestProvider"
+        "DigitalCredentialsProvider"
       ],
-      "IdentityRequestProvider": [],
+      "DigitalCredentialsProvider": [],
       "DigitalCredential": [
         "Credential"
       ]

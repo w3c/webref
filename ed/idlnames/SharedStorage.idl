@@ -8,4 +8,31 @@ interface SharedStorage {
                       DOMString value);
   Promise<any> delete(DOMString key);
   Promise<any> clear();
+
+  [Exposed=Window]
+  Promise<SharedStorageResponse> selectURL(DOMString name,
+                               sequence<SharedStorageUrlWithMetadata> urls,
+                               optional SharedStorageRunOperationMethodOptions options = {});
+
+  [Exposed=Window]
+  Promise<any> run(DOMString name,
+                   optional SharedStorageRunOperationMethodOptions options = {});
+
+  [Exposed=Window]
+  Promise<SharedStorageWorklet> createWorklet(USVString moduleURL, optional SharedStorageWorkletOptions options = {});
+
+  [Exposed=Window]
+  readonly attribute SharedStorageWorklet worklet;
+
+  [Exposed=SharedStorageWorklet]
+  Promise<DOMString> get(DOMString key);
+
+  [Exposed=SharedStorageWorklet]
+  Promise<unsigned long> length();
+
+  [Exposed=SharedStorageWorklet]
+  Promise<double> remainingBudget();
+
+  [Exposed=SharedStorageWorklet]
+  async iterable<DOMString, DOMString>;
 };

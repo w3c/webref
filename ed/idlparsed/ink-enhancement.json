@@ -110,7 +110,7 @@
         "href": "https://wicg.github.io/ink-enhancement/#dictdef-inkpresenterparam"
       },
       "InkPresenter": {
-        "fragment": "[Exposed=Window]\ninterface InkPresenter {\n    readonly attribute Element? presentationArea;\n    readonly attribute unsigned long expectedImprovement;\n\n    undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);\n};",
+        "fragment": "[Exposed=Window]\ninterface InkPresenter {\n    readonly attribute Element? presentationArea;\n\n    undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);\n};",
         "type": "interface",
         "name": "InkPresenter",
         "inheritance": null,
@@ -130,22 +130,6 @@
             "special": "",
             "readonly": true,
             "href": "https://wicg.github.io/ink-enhancement/#dom-inkpresenter-presentationarea"
-          },
-          {
-            "type": "attribute",
-            "name": "expectedImprovement",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://wicg.github.io/ink-enhancement/#dom-inkpresenter-expectedimprovement"
           },
           {
             "type": "operation",

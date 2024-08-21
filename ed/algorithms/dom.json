@@ -1003,36 +1003,68 @@
           "html": "<p>Set <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①③\">abort reason</a> to <var>reason</var> if it is given;\n otherwise to a new \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror③\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①②\">DOMException</a></code>. </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>algorithm</var> of <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-algorithms\" id=\"ref-for-abortsignal-abort-algorithms③\">abort algorithms</a>: run <var>algorithm</var>. </p>"
+          "html": "<p>Let <var>dependentSignalsToAbort</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a>. </p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>dependentSignal</var> of <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-dependent-signals\" id=\"ref-for-abortsignal-dependent-signals\">dependent signals</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>dependentSignal</var> is not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted⑧\">aborted</a>, then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>dependentSignal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①④\">abort reason</a> to <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑤\">abort reason</a>. </p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">Append</a> <var>dependentSignal</var> to <var>dependentSignalsToAbort</var>. </p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#run-the-abort-steps\" id=\"ref-for-run-the-abort-steps\">Run the abort steps</a> for <var>signal</var>. </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>dependentSignal</var> of <var>dependentSignalsToAbort</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#run-the-abort-steps\" id=\"ref-for-run-the-abort-steps①\">run the abort steps</a> for <var>dependentSignal</var>. </p>"
+        }
+      ]
+    },
+    {
+      "name": "run the abort steps",
+      "href": "https://dom.spec.whatwg.org/#run-the-abort-steps",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-the-abort-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run the abort steps</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④③\">AbortSignal</a></code> <var>signal</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>algorithm</var> of <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-algorithms\" id=\"ref-for-abortsignal-abort-algorithms③\">abort algorithms</a>: run <var>algorithm</var>. </p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">Empty</a> <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-algorithms\" id=\"ref-for-abortsignal-abort-algorithms④\">abort algorithms</a>. </p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑤\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#eventdef-abortsignal-abort\" id=\"ref-for-eventdef-abortsignal-abort①\">abort</a></code> at <var>signal</var>. </p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>dependentSignal</var> of <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-dependent-signals\" id=\"ref-for-abortsignal-dependent-signals\">dependent signals</a>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-signal-abort\" id=\"ref-for-abortsignal-signal-abort②\">signal abort</a> on <var>dependentSignal</var> with <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①④\">abort reason</a>. </p>"
         }
       ]
     },
     {
       "name": "create a dependent abort signal",
       "href": "https://dom.spec.whatwg.org/#create-a-dependent-abort-signal",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-dependent-abort-signal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a dependent abort signal</dfn> from a list of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④③\">AbortSignal</a></code> objects <var>signals</var>, using <var>signalInterface</var>, which must be either <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④④\">AbortSignal</a></code> or an\ninterface that inherits from it, and a <var>realm</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-dependent-abort-signal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a dependent abort signal</dfn> from a list of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④④\">AbortSignal</a></code> objects <var>signals</var>, using <var>signalInterface</var>, which must be either <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④⑤\">AbortSignal</a></code> or an\ninterface that inherits from it, and a <var>realm</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>resultSignal</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> object implementing <var>signalInterface</var> using <var>realm</var>. </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>signal</var> of <var>signals</var>: if <var>signal</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted⑧\">aborted</a>, then set <var>resultSignal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑤\">abort reason</a> to <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑥\">abort reason</a> and return <var>resultSignal</var>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>signal</var> of <var>signals</var>: if <var>signal</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted⑨\">aborted</a>, then set <var>resultSignal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑥\">abort reason</a> to <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①⑦\">abort reason</a> and return <var>resultSignal</var>. </p>"
         },
         {
           "html": "<p>Set <var>resultSignal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-dependent\" id=\"ref-for-abortsignal-dependent\">dependent</a> to true. </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>signal</var> of <var>signals</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>signal</var> of <var>signals</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1048,11 +1080,11 @@
               ]
             },
             {
-              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">for each</a> <var>sourceSignal</var> of <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-source-signals\" id=\"ref-for-abortsignal-source-signals①\">source signals</a>:",
+              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">for each</a> <var>sourceSignal</var> of <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-source-signals\" id=\"ref-for-abortsignal-source-signals①\">source signals</a>:",
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p>Assert: <var>sourceSignal</var> is not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted⑨\">aborted</a> and not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-dependent\" id=\"ref-for-abortsignal-dependent②\">dependent</a>. </p>"
+                  "html": "<p>Assert: <var>sourceSignal</var> is not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①⓪\">aborted</a> and not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-dependent\" id=\"ref-for-abortsignal-dependent②\">dependent</a>. </p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append④\">Append</a> <var>sourceSignal</var> to <var>resultSignal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-source-signals\" id=\"ref-for-abortsignal-source-signals②\">source signals</a>. </p>"
@@ -1201,7 +1233,7 @@
               "html": "<p>Let <var>result</var> be « ». </p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable①①\">slottable</a> <var>slottable</var> of <var>slot</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#manually-assigned-nodes\" id=\"ref-for-manually-assigned-nodes①\">manually assigned nodes</a>, if <var>slottable</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑨\">parent</a> is <var>host</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">append</a> <var>slottable</var> to <var>result</var>. </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-slotable\" id=\"ref-for-concept-slotable①①\">slottable</a> <var>slottable</var> of <var>slot</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#manually-assigned-nodes\" id=\"ref-for-manually-assigned-nodes①\">manually assigned nodes</a>, if <var>slottable</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑨\">parent</a> is <var>host</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">append</a> <var>slottable</var> to <var>result</var>. </p>"
             }
           ]
         },
@@ -1213,7 +1245,7 @@
               "html": "<p>Let <var>foundSlot</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#find-a-slot\" id=\"ref-for-find-a-slot\">finding a slot</a> given <var>slottable</var>. </p>"
             },
             {
-              "html": "<p>If <var>foundSlot</var> is <var>slot</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">append</a> <var>slottable</var> to <var>result</var>. </p>"
+              "html": "<p>If <var>foundSlot</var> is <var>slot</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">append</a> <var>slottable</var> to <var>result</var>. </p>"
             }
           ]
         },
@@ -1477,19 +1509,19 @@
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-children-changed-ext\" id=\"ref-for-concept-node-children-changed-ext\">children changed steps</a> for <var>parent</var>. </p>"
         },
         {
-          "html": "<p>Let <var>staticNodeList</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a> of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node④②\">nodes</a>, initially « ».</p>"
+          "html": "<p>Let <var>staticNodeList</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a> of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node④②\">nodes</a>, initially « ».</p>"
         },
         {
           "html": "For each <var>node</var> of <var>nodes</var>, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order①②\">tree order</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<p>For each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-descendant\" id=\"ref-for-concept-shadow-including-inclusive-descendant①\">shadow-including inclusive descendant</a> <var>inclusiveDescendant</var> of <var>node</var>, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order①\">shadow-including tree order</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">append</a> <var>inclusiveDescendant</var> to <var>staticNodeList</var>. </p>"
+              "html": "<p>For each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-descendant\" id=\"ref-for-concept-shadow-including-inclusive-descendant①\">shadow-including inclusive descendant</a> <var>inclusiveDescendant</var> of <var>node</var>, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order①\">shadow-including tree order</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⓪\">append</a> <var>inclusiveDescendant</var> to <var>staticNodeList</var>. </p>"
             }
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>node</var> of <var>staticNodeList</var>, if <var>node</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected①\">connected</a>, then run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-post-connection-ext\" id=\"ref-for-concept-node-post-connection-ext⑥\">post-connection steps</a> with <var>node</var>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>node</var> of <var>staticNodeList</var>, if <var>node</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected①\">connected</a>, then run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-post-connection-ext\" id=\"ref-for-concept-node-post-connection-ext⑥\">post-connection steps</a> with <var>node</var>. </p>"
         }
       ]
     },
@@ -1706,7 +1738,7 @@
           ]
         },
         {
-          "html": "<p>For each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor\" id=\"ref-for-concept-tree-inclusive-ancestor②\">inclusive ancestor</a> <var>inclusiveAncestor</var> of <var>parent</var>, and then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">for each</a> <var>registered</var> of <var>inclusiveAncestor</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list\">registered observer list</a>, if <var>registered</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options\">options</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree\" id=\"ref-for-dom-mutationobserverinit-subtree\">subtree</a></code>\"] is true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⓪\">append</a> a new <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer\" id=\"ref-for-transient-registered-observer\">transient registered observer</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer\">observer</a> is <var>registered</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer①\">observer</a>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options①\">options</a> is <var>registered</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options②\">options</a>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer-source\" id=\"ref-for-transient-registered-observer-source\">source</a> is <var>registered</var> to <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list①\">registered observer list</a>. </p>"
+          "html": "<p>For each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor\" id=\"ref-for-concept-tree-inclusive-ancestor②\">inclusive ancestor</a> <var>inclusiveAncestor</var> of <var>parent</var>, and then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">for each</a> <var>registered</var> of <var>inclusiveAncestor</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list\">registered observer list</a>, if <var>registered</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options\">options</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree\" id=\"ref-for-dom-mutationobserverinit-subtree\">subtree</a></code>\"] is true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①①\">append</a> a new <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer\" id=\"ref-for-transient-registered-observer\">transient registered observer</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer\">observer</a> is <var>registered</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer①\">observer</a>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options①\">options</a> is <var>registered</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options②\">options</a>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer-source\" id=\"ref-for-transient-registered-observer-source\">source</a> is <var>registered</var> to <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list①\">registered observer list</a>. </p>"
         },
         {
           "html": "<p>If <i>suppress observers flag</i> is unset, then <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#queue-a-tree-mutation-record\" id=\"ref-for-queue-a-tree-mutation-record④\">queue a tree mutation record</a> for <var>parent</var> with « », « <var>node</var> », <var>oldPreviousSibling</var>, and <var>oldNextSibling</var>. </p>"
@@ -1950,7 +1982,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty②\">Empty</a> the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#surrounding-agent\" id=\"ref-for-surrounding-agent⑥\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#signal-slot-list\" id=\"ref-for-signal-slot-list②\">signal slots</a>. </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>mo</var> of <var>notifySet</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>mo</var> of <var>notifySet</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1960,7 +1992,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty③\">Empty</a> <var>mo</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-mo-queue\" id=\"ref-for-concept-mo-queue①\">record queue</a>. </p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>node</var> of <var>mo</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#mutationobserver-node-list\" id=\"ref-for-mutationobserver-node-list\">node list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove④\">remove</a> all <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer\" id=\"ref-for-transient-registered-observer①\">transient registered observers</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer②\">observer</a> is <var>mo</var> from <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list②\">registered observer list</a>. </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>node</var> of <var>mo</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#mutationobserver-node-list\" id=\"ref-for-mutationobserver-node-list\">node list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove④\">remove</a> all <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer\" id=\"ref-for-transient-registered-observer①\">transient registered observers</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer②\">observer</a> is <var>mo</var> from <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list②\">registered observer list</a>. </p>"
             },
             {
               "html": "<p>If <var>records</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②\">is not empty</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">invoke</a> <var>mo</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-mo-callback\" id=\"ref-for-concept-mo-callback\">callback</a> with « <var>records</var>, <var>mo</var> »\n   and \"<code>report</code>\", and with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-this-value\" id=\"ref-for-dfn-callback-this-value\">callback this value</a> <var>mo</var>. </p>"
@@ -1968,7 +2000,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>slot</var> of <var>signalSet</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑦\">fire an event</a> named <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"HTMLSlotElement\" data-dfn-type=\"event\" data-export=\"\" id=\"eventdef-htmlslotelement-slotchange\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>slotchange</code></dfn>, with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles⑧\">bubbles</a></code> attribute set to true,\n at <var>slot</var>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>slot</var> of <var>signalSet</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑦\">fire an event</a> named <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"HTMLSlotElement\" data-dfn-type=\"event\" data-export=\"\" id=\"eventdef-htmlslotelement-slotchange\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>slotchange</code></dfn>, with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles⑧\">bubbles</a></code> attribute set to true,\n at <var>slot</var>. </p>"
         }
       ]
     },
@@ -1997,11 +2029,11 @@
           "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdataoldvalue\" id=\"ref-for-dom-mutationobserverinit-characterdataoldvalue③\">characterDataOldValue</a></code>\"] is true and <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata\" id=\"ref-for-dom-mutationobserverinit-characterdata⑤\">characterData</a></code>\"] is false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⑨\">throw</a> a <code>TypeError</code>. </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>registered</var> of <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list③\">registered observer list</a>, if <var>registered</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer③\">observer</a> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥①\">this</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>registered</var> of <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list③\">registered observer list</a>, if <var>registered</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer③\">observer</a> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥①\">this</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>node</var> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#mutationobserver-node-list\" id=\"ref-for-mutationobserver-node-list①\">node list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑤\">remove</a> all <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer\" id=\"ref-for-transient-registered-observer③\">transient registered observers</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer-source\" id=\"ref-for-transient-registered-observer-source①\">source</a> is <var>registered</var> from <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list④\">registered observer list</a>. </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>node</var> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#mutationobserver-node-list\" id=\"ref-for-mutationobserver-node-list①\">node list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑤\">remove</a> all <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer\" id=\"ref-for-transient-registered-observer③\">transient registered observers</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer-source\" id=\"ref-for-transient-registered-observer-source①\">source</a> is <var>registered</var> from <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list④\">registered observer list</a>. </p>"
             },
             {
               "html": "<p>Set <var>registered</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options③\">options</a> to <var>options</var>. </p>"
@@ -2013,10 +2045,10 @@
           "rationale": "append",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①①\">Append</a> a new <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer\" id=\"ref-for-registered-observer③\">registered observer</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer④\">observer</a> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥③\">this</a> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options④\">options</a> is <var>options</var> to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list⑤\">registered observer list</a>. </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①②\">Append</a> a new <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer\" id=\"ref-for-registered-observer③\">registered observer</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer④\">observer</a> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥③\">this</a> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options④\">options</a> is <var>options</var> to <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list⑤\">registered observer list</a>. </p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①②\">Append</a> a weak reference to <var>target</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#mutationobserver-node-list\" id=\"ref-for-mutationobserver-node-list②\">node list</a>. </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①③\">Append</a> a weak reference to <var>target</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#mutationobserver-node-list\" id=\"ref-for-mutationobserver-node-list②\">node list</a>. </p>"
             }
           ]
         }
@@ -2029,7 +2061,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>node</var> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#mutationobserver-node-list\" id=\"ref-for-mutationobserver-node-list③\">node list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑥\">remove</a> any <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer\" id=\"ref-for-registered-observer④\">registered observer</a> from <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list⑥\">registered observer list</a> for which <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑥\">this</a> is the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer⑤\">observer</a>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>node</var> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#mutationobserver-node-list\" id=\"ref-for-mutationobserver-node-list③\">node list</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑥\">remove</a> any <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer\" id=\"ref-for-registered-observer④\">registered observer</a> from <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list⑥\">registered observer list</a> for which <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑥\">this</a> is the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer⑤\">observer</a>. </p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty④\">Empty</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-mo-queue\" id=\"ref-for-concept-mo-queue③\">record queue</a>. </p>"
@@ -2066,7 +2098,7 @@
           "html": "<p>Let <var>nodes</var> be the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor\" id=\"ref-for-concept-tree-inclusive-ancestor③\">inclusive ancestors</a> of <var>target</var>. </p>"
         },
         {
-          "html": "For each <var>node</var> in <var>nodes</var>, and then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">for each</a> <var>registered</var> of <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list⑦\">registered observer list</a>:",
+          "html": "For each <var>node</var> in <var>nodes</var>, and then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">for each</a> <var>registered</var> of <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list⑦\">registered observer list</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -2419,7 +2451,7 @@
               "html": "<p>Let <var>copy</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-create-element\" id=\"ref-for-concept-create-element\">creating an element</a>, given <var>document</var>, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"ref-for-concept-element-local-name\">local name</a>, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"ref-for-concept-element-namespace\">namespace</a>, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-namespace-prefix\" id=\"ref-for-concept-element-namespace-prefix\">namespace prefix</a>, and <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-is-value\" id=\"ref-for-concept-element-is-value\"><code>is</code> value</a>, with the <var>synchronous custom elements\n   flag</var> unset. </p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>attribute</var> in <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>attribute</var> in <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -2586,7 +2618,7 @@
               "rationale": "for",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>attr</var> in <var>node2</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute④\">attribute list</a>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>attr</var> in <var>node2</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute④\">attribute list</a>:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -3486,7 +3518,7 @@
       "rationale": "append",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①③\">Append</a> <var>attribute</var> to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute⑨\">attribute list</a>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①④\">Append</a> <var>attribute</var> to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute⑨\">attribute list</a>. </p>"
         },
         {
           "html": "<p>Set <var>attribute</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-element\" id=\"ref-for-concept-attribute-element⑦\">element</a> to <var>element</var>. </p>"
@@ -4038,7 +4070,7 @@
           "html": "<p>Let <var>names</var> be the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-qualified-name\" id=\"ref-for-concept-attribute-qualified-name①②\">qualified names</a> of the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute⑤⑨\">attributes</a> in this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#namednodemap\" id=\"ref-for-namednodemap⑧\">NamedNodeMap</a></code> object’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-namednodemap-attribute\" id=\"ref-for-concept-namednodemap-attribute⑤\">attribute list</a>, with duplicates omitted, in\n order. </p>"
         },
         {
-          "html": "If this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#namednodemap\" id=\"ref-for-namednodemap⑨\">NamedNodeMap</a></code> object’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-namednodemap-element\" id=\"ref-for-concept-namednodemap-element①\">element</a> is in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#html-namespace\" id=\"ref-for-html-namespace②⑨\">HTML namespace</a> and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥⑤\">node document</a> is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#html-document\" id=\"ref-for-html-document①⑥\">HTML document</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">for each</a> <var>name</var> in <var>names</var>:",
+          "html": "If this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#namednodemap\" id=\"ref-for-namednodemap⑨\">NamedNodeMap</a></code> object’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-namednodemap-element\" id=\"ref-for-concept-namednodemap-element①\">element</a> is in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#html-namespace\" id=\"ref-for-html-namespace②⑨\">HTML namespace</a> and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥⑤\">node document</a> is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#html-document\" id=\"ref-for-html-document①⑥\">HTML document</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">for each</a> <var>name</var> in <var>names</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -5522,7 +5554,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> <var>token</var> in <var>tokens</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>token</var> in <var>tokens</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -5534,7 +5566,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>token</var> in <var>tokens</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑨\">append</a> <var>token</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①①\">token set</a>. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>token</var> in <var>tokens</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑨\">append</a> <var>token</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①①\">token set</a>. </p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-update\" id=\"ref-for-concept-dtl-update\">update steps</a>. </p>"
@@ -5548,7 +5580,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>token</var> in <var>tokens</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>token</var> in <var>tokens</var>:",
           "rationale": "if",
           "steps": [
             {

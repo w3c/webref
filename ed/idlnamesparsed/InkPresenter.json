@@ -6,7 +6,7 @@
       "title": "Ink API",
       "url": "https://wicg.github.io/ink-enhancement/"
     },
-    "fragment": "[Exposed=Window]\ninterface InkPresenter {\n    readonly attribute Element? presentationArea;\n    readonly attribute unsigned long expectedImprovement;\n\n    undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);\n};",
+    "fragment": "[Exposed=Window]\ninterface InkPresenter {\n    readonly attribute Element? presentationArea;\n\n    undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);\n};",
     "href": "https://wicg.github.io/ink-enhancement/#inkpresenter"
   },
   "extended": [],
