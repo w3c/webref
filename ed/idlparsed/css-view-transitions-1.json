@@ -13,10 +13,10 @@
       }
     },
     "idlNames": {
-      "UpdateCallback": {
-        "fragment": "callback UpdateCallback = Promise<any> ();",
+      "ViewTransitionUpdateCallback": {
+        "fragment": "callback ViewTransitionUpdateCallback = Promise<any> ();",
         "type": "callback",
-        "name": "UpdateCallback",
+        "name": "ViewTransitionUpdateCallback",
         "idlType": {
           "type": "return-type",
           "extAttrs": [],
@@ -36,7 +36,7 @@
         },
         "arguments": [],
         "extAttrs": [],
-        "href": "https://drafts.csswg.org/css-view-transitions-1/#callbackdef-updatecallback"
+        "href": "https://drafts.csswg.org/css-view-transitions-1/#callbackdef-viewtransitionupdatecallback"
       },
       "ViewTransition": {
         "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  readonly attribute Promise<undefined> updateCallbackDone;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> finished;\n  undefined skipTransition();\n};",

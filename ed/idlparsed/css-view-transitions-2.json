@@ -123,7 +123,7 @@
         "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransitiontypeset"
       },
       "StartViewTransitionOptions": {
-        "fragment": "dictionary StartViewTransitionOptions {\n  UpdateCallback? update = null;\n  sequence<DOMString>? types = null;\n};",
+        "fragment": "dictionary StartViewTransitionOptions {\n  ViewTransitionUpdateCallback? update = null;\n  sequence<DOMString>? types = null;\n};",
         "type": "dictionary",
         "name": "StartViewTransitionOptions",
         "inheritance": null,
@@ -138,7 +138,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "UpdateCallback"
+              "idlType": "ViewTransitionUpdateCallback"
             },
             "default": {
               "type": "null"
@@ -220,7 +220,7 @@
       ],
       "Document": [
         {
-          "fragment": "partial interface Document {\n\n  ViewTransition startViewTransition(optional (UpdateCallback or StartViewTransitionOptions) callbackOptions = {});\n};",
+          "fragment": "partial interface Document {\n  ViewTransition startViewTransition(optional (ViewTransitionUpdateCallback or StartViewTransitionOptions) callbackOptions = {});\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -254,7 +254,7 @@
                         "generic": "",
                         "nullable": false,
                         "union": false,
-                        "idlType": "UpdateCallback"
+                        "idlType": "ViewTransitionUpdateCallback"
                       },
                       {
                         "type": "argument-type",
@@ -301,11 +301,11 @@
         "ViewTransitionTypeSet"
       ],
       "StartViewTransitionOptions": [
-        "UpdateCallback"
+        "ViewTransitionUpdateCallback"
       ],
       "Document": [
         "ViewTransition",
-        "UpdateCallback",
+        "ViewTransitionUpdateCallback",
         "StartViewTransitionOptions"
       ]
     },
@@ -313,7 +313,7 @@
       "CSSRule",
       "CSSOMString",
       "ViewTransition",
-      "UpdateCallback",
+      "ViewTransitionUpdateCallback",
       "Document"
     ],
     "hasObsoleteIdl": false

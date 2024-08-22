@@ -3318,7 +3318,7 @@
         "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcodingparameters"
       },
       "RTCRtpEncodingParameters": {
-        "fragment": "dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {\n  boolean active = true;\n  unsigned long maxBitrate;\n  double maxFramerate;\n  double scaleResolutionDownBy;\n};",
+        "fragment": "dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {\n  boolean active = true;\n  RTCRtpCodec codec;\n  unsigned long maxBitrate;\n  double maxFramerate;\n  double scaleResolutionDownBy;\n};",
         "type": "dictionary",
         "name": "RTCRtpEncodingParameters",
         "inheritance": "RTCRtpCodingParameters",
@@ -3341,6 +3341,22 @@
             },
             "required": false,
             "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-active"
+          },
+          {
+            "type": "field",
+            "name": "codec",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RTCRtpCodec"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-codec"
           },
           {
             "type": "field",
@@ -7275,7 +7291,8 @@
       ],
       "RTCRtpCodingParameters": [],
       "RTCRtpEncodingParameters": [
-        "RTCRtpCodingParameters"
+        "RTCRtpCodingParameters",
+        "RTCRtpCodec"
       ],
       "RTCRtcpParameters": [],
       "RTCRtpHeaderExtensionParameters": [],

@@ -1,6 +1,7 @@
 // Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
 dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {
   boolean active = true;
+  RTCRtpCodec codec;
   unsigned long maxBitrate;
   double maxFramerate;
   double scaleResolutionDownBy;

@@ -1828,6 +1828,48 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-auctionadconfig-serverresponse",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-serverresponse",
+      "linkingText": [
+        "serverResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAdConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-auctionadconfig-requestid",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-requestid",
+      "linkingText": [
+        "requestId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAdConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-navigator-runadauction",
       "href": "https://wicg.github.io/turtledove/#dom-navigator-runadauction",
       "linkingText": [
@@ -2571,6 +2613,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "parse-and-validate-server-response",
+      "href": "https://wicg.github.io/turtledove/#parse-and-validate-server-response",
+      "linkingText": [
+        "parse and validate server response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-navigator-canloadadauctionfencedframe",
       "href": "https://wicg.github.io/turtledove/#dom-navigator-canloadadauctionfencedframe",
       "linkingText": [
@@ -2588,6 +2649,540 @@
         "href": "https://wicg.github.io/turtledove/#canloadadauctionfencedframe",
         "title": "canLoadAdAuctionFencedFrame()",
         "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-navigator-getinterestgroupadauctiondata-config-config",
+      "href": "https://wicg.github.io/turtledove/#dom-navigator-getinterestgroupadauctiondata-config-config",
+      "linkingText": [
+        "config"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Navigator/getInterestGroupAdAuctionData(config)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-adauctiondataconfig",
+      "href": "https://wicg.github.io/turtledove/#dictdef-adauctiondataconfig",
+      "linkingText": [
+        "AdAuctionDataConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-adauctiondataconfig-seller",
+      "href": "https://wicg.github.io/turtledove/#dom-adauctiondataconfig-seller",
+      "linkingText": [
+        "seller"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AdAuctionDataConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-adauctiondataconfig-coordinatororigin",
+      "href": "https://wicg.github.io/turtledove/#dom-adauctiondataconfig-coordinatororigin",
+      "linkingText": [
+        "coordinatorOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AdAuctionDataConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-adauctiondata",
+      "href": "https://wicg.github.io/turtledove/#dictdef-adauctiondata",
+      "linkingText": [
+        "AdAuctionData"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-adauctiondata-request",
+      "href": "https://wicg.github.io/turtledove/#dom-adauctiondata-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AdAuctionData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-adauctiondata-requestid",
+      "href": "https://wicg.github.io/turtledove/#dom-adauctiondata-requestid",
+      "linkingText": [
+        "requestId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AdAuctionData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "server-auction-interest-group",
+      "href": "https://wicg.github.io/turtledove/#server-auction-interest-group",
+      "linkingText": [
+        "server auction interest group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "server-auction-interest-group-name",
+      "href": "https://wicg.github.io/turtledove/#server-auction-interest-group-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction interest group"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-interest-group-bidding-signals-keys",
+      "href": "https://wicg.github.io/turtledove/#server-auction-interest-group-bidding-signals-keys",
+      "linkingText": [
+        "bidding signals keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction interest group"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-interest-group-user-bidding-signals",
+      "href": "https://wicg.github.io/turtledove/#server-auction-interest-group-user-bidding-signals",
+      "linkingText": [
+        "user bidding signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction interest group"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-interest-group-ads",
+      "href": "https://wicg.github.io/turtledove/#server-auction-interest-group-ads",
+      "linkingText": [
+        "ads"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction interest group"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-interest-group-components",
+      "href": "https://wicg.github.io/turtledove/#server-auction-interest-group-components",
+      "linkingText": [
+        "components"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction interest group"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-interest-group-browser-signals",
+      "href": "https://wicg.github.io/turtledove/#server-auction-interest-group-browser-signals",
+      "linkingText": [
+        "browser signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction interest group"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-browser-signals",
+      "href": "https://wicg.github.io/turtledove/#server-auction-browser-signals",
+      "linkingText": [
+        "server auction browser signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "server-auction-browser-signals-bid-count",
+      "href": "https://wicg.github.io/turtledove/#server-auction-browser-signals-bid-count",
+      "linkingText": [
+        "bid count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction browser signals"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-browser-signals-join-count",
+      "href": "https://wicg.github.io/turtledove/#server-auction-browser-signals-join-count",
+      "linkingText": [
+        "join count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction browser signals"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-browser-signals-recency-ms",
+      "href": "https://wicg.github.io/turtledove/#server-auction-browser-signals-recency-ms",
+      "linkingText": [
+        "recency ms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction browser signals"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-browser-signals-previous-wins",
+      "href": "https://wicg.github.io/turtledove/#server-auction-browser-signals-previous-wins",
+      "linkingText": [
+        "previous wins"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction browser signals"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-previous-win",
+      "href": "https://wicg.github.io/turtledove/#server-auction-previous-win",
+      "linkingText": [
+        "server auction previous win"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "server-auction-previous-win-time-delta",
+      "href": "https://wicg.github.io/turtledove/#server-auction-previous-win-time-delta",
+      "linkingText": [
+        "time delta"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction previous win"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-previous-win-ad-render-id",
+      "href": "https://wicg.github.io/turtledove/#server-auction-previous-win-ad-render-id",
+      "linkingText": [
+        "ad render ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction previous win"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-request-context",
+      "href": "https://wicg.github.io/turtledove/#server-auction-request-context",
+      "linkingText": [
+        "server auction request context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "server-auction-request-context-request-id",
+      "href": "https://wicg.github.io/turtledove/#server-auction-request-context-request-id",
+      "linkingText": [
+        "request ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction request context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "server-auction-request-context-request-context",
+      "href": "https://wicg.github.io/turtledove/#server-auction-request-context-request-context",
+      "linkingText": [
+        "request context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "server auction request context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-navigator-getinterestgroupadauctiondata",
+      "href": "https://wicg.github.io/turtledove/#dom-navigator-getinterestgroupadauctiondata",
+      "linkingText": [
+        "getInterestGroupAdAuctionData(config)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getInterestGroupAdAuctionData",
+        "href": "https://wicg.github.io/turtledove/#getInterestGroupAdAuctionData",
+        "title": "getInterestGroupAdAuctionData()",
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -5698,6 +6293,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "traversable-navigable-saved-bidding-and-auction-request-context",
+      "href": "https://wicg.github.io/turtledove/#traversable-navigable-saved-bidding-and-auction-request-context",
+      "linkingText": [
+        "saved Bidding and Auction request context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "traversable navigable"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-patch-for-auction-headers",
+        "href": "https://wicg.github.io/turtledove/#fetch-patch-for-auction-headers",
+        "title": "13. Fetch Patch for Auction Headers"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "request-capture-ad-auction-headers",
       "href": "https://wicg.github.io/turtledove/#request-capture-ad-auction-headers",
       "linkingText": [
@@ -8005,6 +8620,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "interest-group-ad-ad-render-id",
+      "href": "https://wicg.github.io/turtledove/#interest-group-ad-ad-render-id",
+      "linkingText": [
+        "ad render ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "interest group ad"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interest-group-header",
+        "href": "https://wicg.github.io/turtledove/#interest-group-header",
+        "title": "Interest group",
+        "number": "14.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "previous-win",
       "href": "https://wicg.github.io/turtledove/#previous-win",
       "linkingText": [
@@ -8961,6 +9597,48 @@
       "href": "https://wicg.github.io/turtledove/#auction-config-per-buyer-real-time-reporting-config",
       "linkingText": [
         "per buyer real time reporting config"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "auction config"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auction-config-header",
+        "href": "https://wicg.github.io/turtledove/#auction-config-header",
+        "title": "Auction config",
+        "number": "14.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "auction-config-server-response",
+      "href": "https://wicg.github.io/turtledove/#auction-config-server-response",
+      "linkingText": [
+        "server response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "auction config"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auction-config-header",
+        "href": "https://wicg.github.io/turtledove/#auction-config-header",
+        "title": "Auction config",
+        "number": "14.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "auction-config-server-response-id",
+      "href": "https://wicg.github.io/turtledove/#auction-config-server-response-id",
+      "linkingText": [
+        "server response id"
       ],
       "localLinkingText": [],
       "type": "dfn",

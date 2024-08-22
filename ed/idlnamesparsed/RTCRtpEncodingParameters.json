@@ -6,7 +6,7 @@
       "title": "WebRTC: Real-Time Communication in Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
-    "fragment": "dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {\n  boolean active = true;\n  unsigned long maxBitrate;\n  double maxFramerate;\n  double scaleResolutionDownBy;\n};",
+    "fragment": "dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {\n  boolean active = true;\n  RTCRtpCodec codec;\n  unsigned long maxBitrate;\n  double maxFramerate;\n  double scaleResolutionDownBy;\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters"
   },
   "extended": [

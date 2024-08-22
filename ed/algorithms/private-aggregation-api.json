@@ -817,13 +817,19 @@
           "html": "<p>Let (<var>kem_id</var>, <var>kdf_id</var>, <var>aead_id</var>) be (0x0020, 0x0001, 0x0003).</p>"
         },
         {
-          "html": "<p>Let <var>hpkeContext</var> be the result of setting up an <a data-link-type=\"biblio\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#biblio-rfc9180\" title=\"Hybrid Public Key Encryption\">HPKE</a> <a href=\"https://www.rfc-editor.org/rfc/rfc9180#name-encryption-to-a-public-key\">sender’s context</a> with <var>pkR</var>, <var>info</var>, <var>kem_id</var>, <var>kdf_id</var> and <var>aead_id</var>.</p>"
+          "html": "<p>Let (<var>enc</var>, <var>hpkeContext</var>) be the result of setting up an <a data-link-type=\"biblio\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#biblio-rfc9180\" title=\"Hybrid Public Key Encryption\">HPKE</a> <a href=\"https://www.rfc-editor.org/rfc/rfc9180#name-encryption-to-a-public-key\">sender’s context</a> by calling <code>SetupBaseS()</code> with a public key <var>pkR</var>, application-supplied information <var>info</var>, KEM <var>kem_id</var>, KDF <var>kdf_id</var>, and AEAD <var>aead_id</var>. If this operation\nfails, return an error.</p>"
         },
         {
           "html": "<p>Let <var>aad</var> be `` (an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑦\">byte sequence</a>).</p>"
         },
         {
-          "html": "<p>Let <var>encryptedPayload</var> be the result of <a href=\"https://www.rfc-editor.org/rfc/rfc9180#name-encryption-and-decryption\">encrypting</a> <var>plaintextPayload</var> with <var>hpkeContext</var> and <var>aad</var>.</p>"
+          "html": "<p>Let <var>ciphertext</var> be the result of <a href=\"https://www.rfc-editor.org/rfc/rfc9180#name-encryption-and-decryption\">sealing</a> the payload by calling <code>ContextS.Seal()</code> on the <var>hpkeContext</var> object with additional authenticated\ndata <var>aad</var> and plaintext <var>plaintextPayload</var>. If this operation fails, return\nan error.</p>"
+        },
+        {
+          "html": "<p>Let <var>encryptedPayload</var> be the concatenation of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑧\">byte sequences</a> « <var>enc</var>, <var>ciphertext</var> ».</p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑨\">byte sequence</a> <var>encryptedPayload</var>.</p>"
         }
       ]
     },

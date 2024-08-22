@@ -32,4 +32,7 @@ dictionary AuctionAdConfig {
   sequence<AuctionAdConfig> componentAuctions = [];
   AbortSignal? signal;
   Promise<boolean> resolveToConfig;
+
+  Promise<Uint8Array> serverResponse;
+  USVString requestId;
 };

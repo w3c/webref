@@ -112,11 +112,29 @@ dictionary AuctionAdConfig {
   sequence<AuctionAdConfig> componentAuctions = [];
   AbortSignal? signal;
   Promise<boolean> resolveToConfig;
+
+  Promise<Uint8Array> serverResponse;
+  USVString requestId;
 };
 
 [SecureContext]
 partial interface Navigator {
   boolean canLoadAdAuctionFencedFrame();
+};
+
+[SecureContext]
+partial interface Navigator {
+  Promise<AdAuctionData> getInterestGroupAdAuctionData(AdAuctionDataConfig config);
+};
+
+dictionary AdAuctionDataConfig {
+  required USVString seller;
+  required USVString coordinatorOrigin;
+};
+
+dictionary AdAuctionData {
+  required Uint8Array request;
+  required USVString requestId;
 };
 
 [SecureContext]

@@ -776,7 +776,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionrealtimereportingconfig"
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerMultiBidLimits;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<DOMString> requiredSellerCapabilities;\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AuctionRealTimeReportingConfig sellerRealTimeReportingConfig;\n  record<USVString, AuctionRealTimeReportingConfig> perBuyerRealTimeReportingConfig;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerMultiBidLimits;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<DOMString> requiredSellerCapabilities;\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AuctionRealTimeReportingConfig sellerRealTimeReportingConfig;\n  record<USVString, AuctionRealTimeReportingConfig> perBuyerRealTimeReportingConfig;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n\n  Promise<Uint8Array> serverResponse;\n  USVString requestId;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -1626,11 +1626,138 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-resolvetoconfig"
+          },
+          {
+            "type": "field",
+            "name": "serverResponse",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Uint8Array"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-serverresponse"
+          },
+          {
+            "type": "field",
+            "name": "requestId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-requestid"
           }
         ],
         "extAttrs": [],
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionadconfig"
+      },
+      "AdAuctionDataConfig": {
+        "fragment": "dictionary AdAuctionDataConfig {\n  required USVString seller;\n  required USVString coordinatorOrigin;\n};",
+        "type": "dictionary",
+        "name": "AdAuctionDataConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "seller",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-adauctiondataconfig-seller"
+          },
+          {
+            "type": "field",
+            "name": "coordinatorOrigin",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-adauctiondataconfig-coordinatororigin"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-adauctiondataconfig"
+      },
+      "AdAuctionData": {
+        "fragment": "dictionary AdAuctionData {\n  required Uint8Array request;\n  required USVString requestId;\n};",
+        "type": "dictionary",
+        "name": "AdAuctionData",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "request",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Uint8Array"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-adauctiondata-request"
+          },
+          {
+            "type": "field",
+            "name": "requestId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-adauctiondata-requestid"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-adauctiondata"
       },
       "InterestGroupScriptRunnerGlobalScope": {
         "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\ninterface InterestGroupScriptRunnerGlobalScope {\n};",
@@ -4087,6 +4214,65 @@
           "partial": true
         },
         {
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<AdAuctionData> getInterestGroupAdAuctionData(AdAuctionDataConfig config);\n};",
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "getInterestGroupAdAuctionData",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AdAuctionData"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "config",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AdAuctionDataConfig"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://wicg.github.io/turtledove/#dom-navigator-getinterestgroupadauctiondata"
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
+          "partial": true
+        },
+        {
           "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<DOMString> createAuctionNonce();\n};",
           "type": "interface",
           "name": "Navigator",
@@ -4313,6 +4499,8 @@
         "AuctionAdInterestGroupKey",
         "FencedFrameConfig",
         "AuctionAdConfig",
+        "AdAuctionData",
+        "AdAuctionDataConfig",
         "ProtectedAudience"
       ],
       "AuctionAd": [],
@@ -4329,7 +4517,12 @@
       "AuctionAdConfig": [
         "AuctionRealTimeReportingConfig",
         "AuctionAdConfig",
-        "AbortSignal"
+        "AbortSignal",
+        "Uint8Array"
+      ],
+      "AdAuctionDataConfig": [],
+      "AdAuctionData": [
+        "Uint8Array"
       ],
       "InterestGroupScriptRunnerGlobalScope": [],
       "ForDebuggingOnly": [],
@@ -4380,6 +4573,7 @@
       "Navigator",
       "FencedFrameConfig",
       "AbortSignal",
+      "Uint8Array",
       "RequestInit",
       "HTMLIFrameElement"
     ],

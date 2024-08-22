@@ -198,8 +198,7 @@ partial interface Document {
 
 // Source: CSS View Transitions Module Level 2 (https://www.w3.org/TR/css-view-transitions-2/)
 partial interface Document {
-
-  ViewTransition startViewTransition(optional (UpdateCallback or StartViewTransitionOptions) callbackOptions = {});
+  ViewTransition startViewTransition(optional (ViewTransitionUpdateCallback or StartViewTransitionOptions) callbackOptions = {});
 };
 
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
