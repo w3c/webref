@@ -15,27 +15,8 @@
       }
     },
     "idlNames": {
-      "ViewTransitionNavigation": {
-        "fragment": "enum ViewTransitionNavigation { \"auto\", \"none\" };",
-        "type": "enum",
-        "name": "ViewTransitionNavigation",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "auto",
-            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransitionnavigation-auto"
-          },
-          {
-            "type": "enum-value",
-            "value": "none",
-            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransitionnavigation-none"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#enumdef-viewtransitionnavigation"
-      },
       "CSSViewTransitionRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  readonly attribute ViewTransitionNavigation navigation;\n  [SameObject] readonly attribute FrozenArray<CSSOMString> types;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  readonly attribute CSSOMString navigation;\n  [SameObject] readonly attribute FrozenArray<CSSOMString> types;\n};",
         "type": "interface",
         "name": "CSSViewTransitionRule",
         "inheritance": "CSSRule",
@@ -49,7 +30,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ViewTransitionNavigation"
+              "idlType": "CSSOMString"
             },
             "extAttrs": [],
             "special": "",
@@ -313,7 +294,6 @@
     "dependencies": {
       "CSSViewTransitionRule": [
         "CSSRule",
-        "ViewTransitionNavigation",
         "CSSOMString"
       ],
       "ViewTransitionTypeSet": [],
