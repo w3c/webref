@@ -4,10 +4,10 @@
 // Source: CSS View Transitions Module Level 1 (https://drafts.csswg.org/css-view-transitions-1/)
 
 partial interface Document {
-  ViewTransition startViewTransition(optional UpdateCallback updateCallback);
+  ViewTransition startViewTransition(optional ViewTransitionUpdateCallback updateCallback);
 };
 
-callback UpdateCallback = Promise<any> ();
+callback ViewTransitionUpdateCallback = Promise<any> ();
 
 [Exposed=Window]
 interface ViewTransition {
