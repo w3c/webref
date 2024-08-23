@@ -4623,10 +4623,10 @@
           "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-sizes\" id=\"ref-for-dom-mlresample2doptions-sizes①\">sizes</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑤\">exists</a>, and if its size is not 2, or if any of its values is not greater than 0, return false.</p>"
         },
         {
-          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes①\">axes</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑥\">exists</a>, set it to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④③\">list</a> « 2, 3 ».</p>"
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes③\">axes</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑥\">exists</a>, set it to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④③\">list</a> « 2, 3 ».</p>"
         },
         {
-          "html": "<p>Otherwise, if its value is not one of « 0, 1», « 1, 2», « 2, 3 », return false.</p>"
+          "html": "<p>Otherwise, if <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes④\">axes</a></code> contains duplicate values, or if any of its elements is not in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①⓪\">the range</a> 0 to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank④⑥\">rank</a>, exclusive, then return false.</p>"
         },
         {
           "html": "<p>Return true.</p>"
@@ -4645,20 +4645,20 @@
           "html": "<p>Let <var>outputShape</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone①⑦\">clone</a> of <var>inputDescriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①③\">dimensions</a></code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①⓪\">the range</a> 0 to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes②\">axes</a></code>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑥\">size</a>, exclusive:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①①\">the range</a> 0 to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes⑤\">axes</a></code>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑥\">size</a>, exclusive:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-sizes\" id=\"ref-for-dom-mlresample2doptions-sizes②\">sizes</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨⑦\">exists</a>, then let <var>size</var> be <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-sizes\" id=\"ref-for-dom-mlresample2doptions-sizes③\">sizes</a></code>[<var>index</var>].</p>"
             },
             {
-              "html": "<p>Otherwise, let <var>size</var> be floor(<var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑧③\">shape</a>[<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes③\">axes</a></code>[<var>index</var>]] * <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-scales\" id=\"ref-for-dom-mlresample2doptions-scales③\">scales</a></code>[<var>index</var>]).</p>"
+              "html": "<p>Otherwise, let <var>size</var> be floor(<var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑧③\">shape</a>[<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes⑥\">axes</a></code>[<var>index</var>]] * <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-scales\" id=\"ref-for-dom-mlresample2doptions-scales③\">scales</a></code>[<var>index</var>]).</p>"
             },
             {
               "html": "<p>If <var>size</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#valid-dimension\" id=\"ref-for-valid-dimension①④\">valid dimension</a>, then return failure.</p>"
             },
             {
-              "html": "<p>Set <var>outputShape</var>[<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes④\">axes</a></code>[<var>index</var>]] to <var>size</var>.</p>"
+              "html": "<p>Set <var>outputShape</var>[<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes⑦\">axes</a></code>[<var>index</var>]] to <var>size</var>.</p>"
             }
           ]
         },
@@ -4682,10 +4682,10 @@
           "html": "<p>If <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①③①\">dataType</a> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32④⑤\">\"float32\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16④③\">\"float16\"</a></code>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③②⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②②①\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank④⑥\">rank</a> is not 4, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③③⓪\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②②②\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank④⑦\">rank</a> is not 4, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③③⓪\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②②②\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-check-resample-options\" id=\"ref-for-mlgraphbuilder-check-resample-options\">checking resample options</a> given <var>options</var> returns false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③③①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②②③\">TypeError</a></code>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-check-resample-options\" id=\"ref-for-mlgraphbuilder-check-resample-options\">checking resample options</a> given <var>options</var> and <var>input</var> returns false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③③①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②②③\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-calculate-resample-output-sizes\" id=\"ref-for-mlgraphbuilder-calculate-resample-output-sizes\">calculating resample output sizes</a> given <var>input</var> and <var>options</var>. If that returns failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③③②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②②④\">TypeError</a></code>.</p>"
@@ -4829,10 +4829,10 @@
           "html": "<p>If any of <var>sizes</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑥\">items</a> are 0, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③④②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②③①\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>starts</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑧\">size</a> and <var>sizes</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑨\">size</a> are not both equal to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank④⑨\">rank</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③④③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②③②\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>starts</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑧\">size</a> and <var>sizes</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑨\">size</a> are not both equal to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤⓪\">rank</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③④③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②③②\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①①\">the range</a> 0 to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤⓪\">rank</a>, exclusive:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①②\">the range</a> 0 to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤①\">rank</a>, exclusive:",
           "rationale": "if",
           "steps": [
             {
@@ -4887,7 +4887,7 @@
           "html": "<p>If <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①③③\">dataType</a> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float32\" id=\"ref-for-dom-mloperanddatatype-float32④⑦\">\"float32\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddatatype-float16\" id=\"ref-for-dom-mloperanddatatype-float16④⑤\">\"float16\"</a></code>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③④⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②③⑦\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>axis</var> is greater than or equal to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤①\">rank</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑤⓪\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②③⑧\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>axis</var> is greater than or equal to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤②\">rank</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑤⓪\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②③⑧\">TypeError</a></code>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -5010,7 +5010,7 @@
           "html": "<p>Let <var>axis</var> be <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlsplitoptions-axis\" id=\"ref-for-dom-mlsplitoptions-axis①\">axis</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>axis</var> is greater than or equal to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤③\">rank</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑤⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②④④\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>axis</var> is greater than or equal to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤④\">rank</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑤⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②④④\">TypeError</a></code>.</p>"
         },
         {
           "html": "If <var>splits</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑦①\">unsigned long</a></code>:",
@@ -5050,7 +5050,7 @@
               "html": "<p>Let <var>outputs</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑤\">list</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①②\">the range</a> 0 to <var>splitCount</var>, exclusive:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①③\">the range</a> 0 to <var>splitCount</var>, exclusive:",
               "rationale": "let",
               "steps": [
                 {
@@ -5145,10 +5145,10 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④④\">size</a> is not equal to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤⑥\">rank</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑥⑧\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑤①\">TypeError</a></code>.</p>"
+              "html": "<p>If its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④④\">size</a> is not equal to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤⑦\">rank</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑥⑧\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑤①\">TypeError</a></code>.</p>"
             },
             {
-              "html": "<p>If its values are not in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①③\">the range</a> 0 to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤⑦\">rank</a> exclusive, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑥⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑤②\">TypeError</a></code>.</p>"
+              "html": "<p>If its values are not in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①④\">the range</a> 0 to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤⑧\">rank</a> exclusive, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑥⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑤②\">TypeError</a></code>.</p>"
             },
             {
               "html": "<p>If it contains duplicate values, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑦⓪\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑤③\">TypeError</a></code>.</p>"
@@ -5193,7 +5193,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-validate-operand\" id=\"ref-for-mlgraphbuilder-validate-operand④③\">validating operand</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③⑨\">this</a> and <var>input</var> returns false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑦②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑤④\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤⑧\">rank</a> is less than 2, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑦③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑤⑤\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤⑨\">rank</a> is less than 2, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑦③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑤⑤\">TypeError</a></code>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -5309,7 +5309,7 @@
           "html": "<p>Let <var>outputShape</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑧\">list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①④\">the range</a> 0 to <var>sizeTo</var>, exclusive:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①⑤\">the range</a> 0 to <var>sizeTo</var>, exclusive:",
           "rationale": "let",
           "steps": [
             {
@@ -5361,7 +5361,7 @@
           "html": "<p>Let <var>outputShape</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤①\">list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①⑤\">the range</a> 0 to <var>outputSize</var>, exclusive:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①⑥\">the range</a> 0 to <var>outputSize</var>, exclusive:",
           "rationale": "let",
           "steps": [
             {
