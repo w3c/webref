@@ -248,6 +248,9 @@
               "html": "<p class=\"assertion\">Assert: <var>builtinOrStringImports</var> does not contain <var>builtinSetName</var></p>"
             },
             {
+              "html": "<p>If <var>builtinSetName</var> does not refer to a builtin set, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
               "html": "<p>Let <var>exportsObject</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#instantiate-a-builtin-set\" id=\"ref-for-instantiate-a-builtin-set\">instantiate a builtin set</a> with <var>builtinSetName</var></p>"
             },
             {
@@ -838,10 +841,10 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#find-a-builtin\" id=\"ref-for-find-a-builtin\">find a builtin</a> for (<var>moduleName</var>, <var>name</var>, <var>type</var>) and <var>builtinSetNames</var> is not null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a></p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#find-a-builtin\" id=\"ref-for-find-a-builtin\">find a builtin</a> for (<var>moduleName</var>, <var>name</var>, <var>type</var>) and <var>builtinSetNames</var> is not null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a></p>"
             },
             {
-              "html": "<p>If <var>importedStringModule</var> is not null and <var>moduleName</var> equals <var>importedStringModule</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a></p>"
+              "html": "<p>If <var>importedStringModule</var> is not null and <var>moduleName</var> equals <var>importedStringModule</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a></p>"
             },
             {
               "html": "<p>Let <var>kind</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-string-builtins/js-api/#string-value-of-the-extern-type\" id=\"ref-for-string-value-of-the-extern-type①\">string value of the extern type</a> <var>type</var>.</p>"
@@ -3208,8 +3211,11 @@
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>builtinSetName</var> of <var>builtinSetNames</var>,",
-          "rationale": "let",
+          "rationale": "if",
           "steps": [
+            {
+              "html": "<p>If <var>builtinSetName</var> does not refer to a builtin set, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+            },
             {
               "html": "<p>Let <var>builtinSetQualifiedName</var> be <var>builtinSetName</var> prefixed with \"wasm:\"</p>"
             },
@@ -3249,15 +3255,6 @@
       "steps": [
         {
           "html": "<p>If <var>builtinSetNames</var> contains any duplicates, return false.</p>"
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>builtinSetName</var> of <var>builtinSetNames</var>,",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>builtinSetName</var> does not equal the name of one of the builtin sets defined in this section, return false.</p>"
-            }
-          ]
         },
         {
           "html": "<p>Return false.</p>"
@@ -3306,7 +3303,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> (<var>name</var>, <var>funcType</var>, <var>steps</var>) of <var>builtins</var>,",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> (<var>name</var>, <var>funcType</var>, <var>steps</var>) of <var>builtins</var>,",
           "rationale": "let",
           "steps": [
             {

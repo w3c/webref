@@ -604,16 +604,34 @@
       "definedIn": "prose"
     },
     {
-      "id": "create-a-notification",
-      "href": "https://notifications.spec.whatwg.org/#create-a-notification",
+      "id": "create-a-notification-with-a-settings-object",
+      "href": "https://notifications.spec.whatwg.org/#create-a-notification-with-a-settings-object",
       "linkingText": [
-        "create a notification",
-        "creating a notification"
+        "create a notification with a settings object"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "notifications",
+        "href": "https://notifications.spec.whatwg.org/#notifications",
+        "title": "Notifications",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-notification",
+      "href": "https://notifications.spec.whatwg.org/#create-a-notification",
+      "linkingText": [
+        "create a notification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "notifications",
@@ -700,15 +718,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "show-steps",
-      "href": "https://notifications.spec.whatwg.org/#show-steps",
+      "id": "notification-show-steps",
+      "href": "https://notifications.spec.whatwg.org/#notification-show-steps",
       "linkingText": [
-        "show steps"
+        "notification show steps"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "showing-a-notification",
@@ -2163,48 +2181,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-notificationevent-notification",
-      "href": "https://notifications.spec.whatwg.org/#dom-notificationevent-notification",
-      "linkingText": [
-        "notification"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "NotificationEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "service-worker-api",
-        "href": "https://notifications.spec.whatwg.org/#service-worker-api",
-        "title": "Service worker API",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-notificationevent-action",
-      "href": "https://notifications.spec.whatwg.org/#dom-notificationevent-action",
-      "linkingText": [
-        "action"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "NotificationEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "service-worker-api",
-        "href": "https://notifications.spec.whatwg.org/#service-worker-api",
-        "title": "Service worker API",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dictdef-notificationeventinit",
       "href": "https://notifications.spec.whatwg.org/#dictdef-notificationeventinit",
       "linkingText": [
@@ -2319,6 +2295,48 @@
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-api",
+        "href": "https://notifications.spec.whatwg.org/#service-worker-api",
+        "title": "Service worker API",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-notificationevent-notification",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationevent-notification",
+      "linkingText": [
+        "notification"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NotificationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-api",
+        "href": "https://notifications.spec.whatwg.org/#service-worker-api",
+        "title": "Service worker API",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-notificationevent-action",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationevent-action",
+      "linkingText": [
+        "action"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NotificationEvent"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "service-worker-api",

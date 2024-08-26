@@ -50,7 +50,11 @@
           "update-the-image-data"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "tracking-vector"
+        ]
+      },
       "https://opensource.org/licenses/BSD-3-Clause": {},
       "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/ServiceWorker/": {},
@@ -83,6 +87,7 @@
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
+          "concept-origin",
           "same-origin"
         ]
       },
@@ -128,17 +133,18 @@
         "anchors": [
           "list",
           "implementation-defined",
-          "list-empty",
           "map-exists",
           "list-replace",
           "list-remove",
           "list-append",
           "list-contain",
+          "list-empty",
           "list-iterate"
         ]
       },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
+          "sec-list-and-record-specification-type",
           "sec-object.freeze"
         ]
       },
@@ -151,8 +157,9 @@
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
-          "serviceworkerregistration",
+          "dfn-service-worker-registration",
           "serviceworkerglobalscope",
+          "serviceworkerregistration",
           "extendableevent",
           "dictdef-extendableeventinit",
           "dfn-active-worker",
