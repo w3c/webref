@@ -14,8 +14,7 @@ import { strict as assert } from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import idl from '@webref/idl';
-import strudy from 'strudy';
-const studyWebIdl = strudy.studyWebIdl;
+import { study } from 'strudy';
 
 const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 const views = [
@@ -40,6 +39,7 @@ const ignorableAnomalies = [
 
 function writeAnomalies(report) {
   function writeAnomaly(anomaly) {
+    return anomaly.content;
     return `- ${anomaly.name} in ${anomaly.specs.map(s => s.shortname).join(', ')}: ${anomaly.message}`;
   }
 
@@ -53,11 +53,13 @@ views.forEach(({ name, folder }) => {
       const all = await idl.listAll({ folder });
       const crawl = [];
       for (const [shortname, value] of Object.entries(all)) {
-        crawl.push({ shortname, idl: await value.text() });
+        crawl.push({ shortname, title: shortname, crawled: '', idl: await value.text() });
       }
-      const report = studyWebIdl(crawl, [])
+      const studyOptions = { what: ['webidl'], structure: 'flat' };
+      const report = await study(crawl, studyOptions);
+      const results = report.results
         .filter(anomaly => !ignorableAnomalies.includes(anomaly.name));
-      assert.equal(report.length, 0, writeAnomalies(report));
+      assert.equal(results.length, 0, writeAnomalies(results));
     });
   });
 });
