@@ -192,17 +192,17 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Set <var>result</var>.<var>status</var> to <code>false</code>, <var>result</var>.<var>warnings</var> to an empty list,\n<var>result</var>.<var>errors</var> to an empty list, <var>compactionContext</var> to an empty list;\nand clone <var>inputDocument</var> to <var>result</var>.<var>document</var>."
+          "html": "Set <var>result</var>.<var>validated</var> to <code>false</code>, <var>result</var>.<var>warnings</var> to an empty list,\n<var>result</var>.<var>errors</var> to an empty list, <var>compactionContext</var> to an empty list;\nand clone <var>inputDocument</var> to <var>result</var>.<var>validatedDocument</var>."
         },
         {
-          "html": "Let <var>contextValue</var> be the value of the <code>@context</code> property of <var>result</var>.<var>document</var>,\nwhich might be undefined."
+          "html": "Let <var>contextValue</var> be the value of the <code>@context</code> property of <var>result</var>.<var>validatedDocument</var>,\nwhich might be undefined."
         },
         {
-          "html": "If <var>contextValue</var> does not deeply equal <var>knownContext</var>, any subtree in\n<var>result</var>.<var>document</var> contains an <code>@context</code> property, or any URI in\n<var>contextValue</var> dereferences to a JSON-LD Context file that does not match a\nknown good value or cryptographic hash, then perform the applicable action:",
+          "html": "If <var>contextValue</var> does not deeply equal <var>knownContext</var>, any subtree in\n<var>result</var>.<var>validatedDocument</var> contains an <code>@context</code> property, or any URI in\n<var>contextValue</var> dereferences to a JSON-LD Context file that does not match a\nknown good value or cryptographic hash, then perform the applicable action:",
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "If <var>recompact</var> is <code>true</code>, set <var>result</var>.<var>document</var> to the result\nof running the <a data-cite=\"JSON-LD11-API#compaction-algorithm\" href=\"https://www.w3.org/TR/json-ld11-api/#compaction-algorithm\">\nJSON-LD Compaction Algorithm</a> with the <var>inputDocument</var> and\n<var>knownContext</var> as inputs. If the compaction fails, add at least one error\nto <var>result</var>.<var>errors</var>."
+              "html": "If <var>recompact</var> is <code>true</code>, set <var>result</var>.<var>validatedDocument</var> to the result\nof running the <a data-cite=\"JSON-LD11-API#compaction-algorithm\" href=\"https://www.w3.org/TR/json-ld11-api/#compaction-algorithm\">\nJSON-LD Compaction Algorithm</a> with the <var>inputDocument</var> and\n<var>knownContext</var> as inputs. If the compaction fails, add at least one error\nto <var>result</var>.<var>errors</var>."
             },
             {
               "html": "If <var>recompact</var> is not <code>true</code>, add at least one error to <var>result</var>.<var>errors</var>."
@@ -210,7 +210,7 @@
           ]
         },
         {
-          "html": "If <var>result</var>.<var>errors</var> is empty, set <var>result</var>.<var>status</var> to <code>true</code>; otherwise, set\n<var>result</var>.<var>status</var> to <code>false</code>, and remove the <var>document</var> property from <var>result</var>."
+          "html": "If <var>result</var>.<var>errors</var> is empty, set <var>result</var>.<var>validated</var> to <code>true</code>; otherwise, set\n<var>result</var>.<var>validated</var> to <code>false</code>, and remove the <var>document</var> property from <var>result</var>."
         },
         {
           "html": "Return the value of <var>result</var>."
