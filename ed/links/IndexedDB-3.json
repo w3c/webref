@@ -109,19 +109,19 @@
         "anchors": [
           "constructing-events",
           "document",
+          "get-the-parent",
+          "concept-event",
+          "concept-event-dispatch",
+          "eventtarget",
           "event",
           "dictdef-eventinit",
-          "eventtarget",
+          "concept-event-create",
+          "dom-event-type",
           "dom-event-bubbles",
           "dom-event-cancelable",
-          "canceled-flag",
-          "concept-event-create",
-          "concept-event-dispatch",
-          "concept-event",
           "concept-event-fire",
-          "get-the-parent",
-          "dom-event-preventdefault",
-          "dom-event-type"
+          "canceled-flag",
+          "dom-event-preventdefault"
         ]
       },
       "https://github.com/tabatkins/bikeshed": {},
@@ -169,61 +169,61 @@
       },
       "https://html.spec.whatwg.org/multipage/structured-data.html": {
         "anchors": [
-          "structureddeserialize",
+          "serializable-objects",
           "structuredserializeforstorage",
-          "serializable-objects"
+          "structureddeserialize"
         ]
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
-          "task-queue",
-          "eventhandler",
-          "windoworworkerglobalscope",
-          "event-handler-event-type",
-          "event-handler-idl-attributes",
           "event-loop",
           "queue-a-task",
+          "task-queue",
+          "event-handler-idl-attributes",
+          "eventhandler",
+          "event-handler-event-type",
+          "windoworworkerglobalscope",
           "relevant-settings-object"
         ]
       },
       "https://httpwg.org/specs/rfc6265.html": {},
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "byte-sequence-length",
-          "list-append",
-          "set-append",
-          "assert",
-          "byte",
-          "byte-less-than",
-          "byte-sequence",
-          "code-unit-less-than",
-          "list-contain",
-          "list-iterate",
-          "list-item",
+          "string",
           "list",
-          "ordered-set",
-          "list-size",
           "list-sort-in-ascending-order",
+          "code-unit-less-than",
+          "byte-sequence",
+          "list-item",
+          "assert",
+          "byte-less-than",
+          "list-size",
+          "byte",
+          "ordered-set",
+          "list-iterate",
+          "list-append",
           "strictly-split",
-          "string"
+          "byte-sequence-length",
+          "list-contain",
+          "set-append"
         ]
       },
       "https://lists.w3.org/Archives/Public/public-webapps/": {},
       "https://storage.spec.whatwg.org/": {
         "anchors": [
-          "obtain-a-storage-key",
+          "storage-key",
           "storage-bucket",
-          "storage-key"
+          "obtain-a-storage-key"
         ]
       },
       "https://tc39.es/ecma262/multipage/": {},
       "https://tc39.es/ecma262/multipage/abstract-operations.html": {
         "anchors": [
+          "sec-tostring",
           "sec-createdataproperty",
-          "sec-get-o-p",
-          "sec-hasownproperty",
           "sec-tolength",
-          "sec-tostring"
+          "sec-get-o-p",
+          "sec-hasownproperty"
         ]
       },
       "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
@@ -244,8 +244,8 @@
       },
       "https://tc39.es/ecma262/multipage/indexed-collections.html": {
         "anchors": [
-          "sec-array-objects",
-          "sec-array.prototype.sort"
+          "sec-array.prototype.sort",
+          "sec-array-objects"
         ]
       },
       "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
@@ -261,76 +261,76 @@
       },
       "https://tc39.es/ecma262/multipage/text-processing.html": {
         "anchors": [
-          "sec-regexp-regular-expression-objects",
-          "sec-string-objects"
+          "sec-string-objects",
+          "sec-regexp-regular-expression-objects"
         ]
       },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
-          "sec-algorithm-conventions",
           "prod-IdentifierName",
-          "sec-returnifabrupt",
-          "sec-ecmascript-data-types-and-values"
+          "sec-algorithm-conventions",
+          "sec-ecmascript-data-types-and-values",
+          "sec-returnifabrupt"
         ]
       },
       "https://w3c.github.io/FileAPI/": {
         "anchors": [
-          "dfn-Blob",
           "dfn-file",
-          "dfn-lastModified",
-          "dfn-name",
+          "dfn-Blob",
           "dfn-size",
-          "dfn-type"
+          "dfn-type",
+          "dfn-name",
+          "dfn-lastModified"
         ]
       },
       "https://w3c.github.io/charmod-norm/": {},
       "https://w3c.github.io/webstorage/": {},
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "idl-short",
-          "aborterror",
-          "idl-ArrayBuffer",
-          "constrainterror",
-          "idl-DOMException",
           "idl-DOMString",
-          "datacloneerror",
+          "idl-record",
+          "idl-unrestricted-double",
+          "idl-ArrayBuffer",
+          "idl-Uint8Array",
+          "idl-byte",
+          "dfn-throw",
           "dataerror",
-          "EnforceRange",
-          "Exposed",
+          "idl-DOMException",
+          "constrainterror",
+          "aborterror",
+          "datacloneerror",
           "invalidaccesserror",
           "invalidstateerror",
-          "NewObject",
           "notfounderror",
-          "idl-promise",
           "quotaexceedederror",
-          "readonlyerror",
-          "SameObject",
-          "securityerror",
           "syntaxerror",
+          "readonlyerror",
           "transactioninactiveerror",
-          "exceptiondef-typeerror",
-          "idl-Uint8Array",
           "unknownerror",
           "versionerror",
-          "a-new-promise",
-          "a-promise-rejected-with",
+          "Exposed",
           "idl-any",
-          "idl-boolean",
-          "dfn-buffer-source-type",
-          "idl-byte",
-          "dfn-create-exception",
-          "dfn-get-buffer-source-copy",
-          "idl-record",
+          "this",
+          "idl-unsigned-long-long",
+          "SameObject",
+          "NewObject",
+          "EnforceRange",
+          "idl-promise",
+          "idl-sequence",
+          "idl-short",
+          "exceptiondef-typeerror",
+          "securityerror",
+          "a-promise-rejected-with",
+          "a-new-promise",
           "reject",
           "resolve",
-          "idl-sequence",
-          "the-given-value",
-          "this",
-          "dfn-throw",
           "idl-undefined",
-          "idl-unrestricted-double",
+          "idl-boolean",
           "idl-unsigned-long",
-          "idl-unsigned-long-long"
+          "the-given-value",
+          "dfn-create-exception",
+          "dfn-buffer-source-type",
+          "dfn-get-buffer-source-copy"
         ]
       },
       "https://www.w3.org/2004/01/pp-impl/114929/status": {},

@@ -199,11 +199,14 @@
       ]
     },
     {
-      "name": "show steps",
-      "href": "https://notifications.spec.whatwg.org/#show-steps",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"show-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">show steps</dfn> for a given <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③③\">notification</a> <var>notification</var> are:",
+      "name": "notification show steps",
+      "href": "https://notifications.spec.whatwg.org/#notification-show-steps",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"notification-show-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">notification show steps</dfn> for a given <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③③\">notification</a> <var>notification</var> are:",
       "rationale": ".algorithm",
       "steps": [
+        {
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#fetch-steps\" id=\"ref-for-fetch-steps\">fetch steps</a> for <var>notification</var>. </p>"
+        },
         {
           "html": "<p>Wait for any <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch④\">fetches</a> to complete and <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-resource\" id=\"ref-for-image-resource⑤\">image resource</a>, <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-resource\" id=\"ref-for-icon-resource⑥\">icon resource</a>, and <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-resource\" id=\"ref-for-badge-resource⑤\">badge resource</a> to be set (if any), as well as the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#action-icon-resource\" id=\"ref-for-action-icon-resource③\">icon resources</a> for the <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#actions\" id=\"ref-for-actions⑦\">actions</a> (if any). </p>"
         },
@@ -359,10 +362,7 @@
               "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#get-the-notifications-permission-state\" id=\"ref-for-get-the-notifications-permission-state\">getting the notifications permission state</a> is not\n   \"<code>granted</code>\", then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">queue a task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">fire an event</a> named <code>error</code> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>, and abort these steps. </p>"
             },
             {
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#fetch-steps\" id=\"ref-for-fetch-steps\">fetch steps</a> for <var>notification</var>. </p>"
-            },
-            {
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#show-steps\" id=\"ref-for-show-steps①\">show steps</a> for <var>notification</var>. </p>"
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-show-steps\" id=\"ref-for-notification-show-steps①\">notification show steps</a> for <var>notification</var>. </p>"
             }
           ]
         }
@@ -515,10 +515,7 @@
               "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#get-the-notifications-permission-state\" id=\"ref-for-get-the-notifications-permission-state②\">getting the notifications permission state</a> is not\n   \"<code>granted</code>\", then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source①\">DOM manipulation task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code>, and abort these steps. </p>"
             },
             {
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#fetch-steps\" id=\"ref-for-fetch-steps①\">fetch steps</a> for <var>notification</var>. </p>"
-            },
-            {
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#show-steps\" id=\"ref-for-show-steps②\">show steps</a> for <var>notification</var>. </p>"
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-show-steps\" id=\"ref-for-notification-show-steps②\">notification show steps</a> for <var>notification</var>. </p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source②\">DOM manipulation task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>promise</var> with undefined. </p>"
