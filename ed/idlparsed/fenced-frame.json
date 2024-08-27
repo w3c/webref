@@ -19,7 +19,7 @@
     },
     "idlNames": {
       "HTMLFencedFrameElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLFencedFrameElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute FencedFrameConfig? config;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n  [CEReactions] attribute DOMString allow;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLFencedFrameElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute FencedFrameConfig? config;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sandbox;\n  [CEReactions] attribute DOMString allow;\n};",
         "type": "interface",
         "name": "HTMLFencedFrameElement",
         "inheritance": "HTMLElement",
@@ -105,6 +105,38 @@
             "special": "",
             "readonly": false,
             "href": "https://wicg.github.io/fenced-frame/#dom-htmlfencedframeelement-height"
+          },
+          {
+            "type": "attribute",
+            "name": "sandbox",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMTokenList"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "PutForwards",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "value"
+                },
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/fenced-frame/#dom-htmlfencedframeelement-sandbox"
           },
           {
             "type": "attribute",
@@ -920,7 +952,8 @@
     "dependencies": {
       "HTMLFencedFrameElement": [
         "HTMLElement",
-        "FencedFrameConfig"
+        "FencedFrameConfig",
+        "DOMTokenList"
       ],
       "FencedFrameConfig": [
         "FencedFrameConfigSize"
@@ -942,6 +975,7 @@
     },
     "externalDependencies": [
       "HTMLElement",
+      "DOMTokenList",
       "Navigator",
       "Window"
     ],

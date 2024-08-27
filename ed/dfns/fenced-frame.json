@@ -86,6 +86,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "fencedframe-fencedframe-sandboxing-flag-set",
+      "href": "https://wicg.github.io/fenced-frame/#fencedframe-fencedframe-sandboxing-flag-set",
+      "linkingText": [
+        "fencedframe sandboxing flag set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fencedframe"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/fenced-frame/#title",
+        "title": "Fenced Frame"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-htmlfencedframeelement-config",
       "href": "https://wicg.github.io/fenced-frame/#dom-htmlfencedframeelement-config",
       "linkingText": [
@@ -126,10 +146,50 @@
       "definedIn": "prose"
     },
     {
+      "id": "element-attrdef-fencedframe-sandbox",
+      "href": "https://wicg.github.io/fenced-frame/#element-attrdef-fencedframe-sandbox",
+      "linkingText": [
+        "sandbox"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "fencedframe"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/fenced-frame/#title",
+        "title": "Fenced Frame"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-htmlfencedframeelement-allow",
       "href": "https://wicg.github.io/fenced-frame/#dom-htmlfencedframeelement-allow",
       "linkingText": [
         "allow"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLFencedFrameElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/fenced-frame/#title",
+        "title": "Fenced Frame"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-htmlfencedframeelement-sandbox",
+      "href": "https://wicg.github.io/fenced-frame/#dom-htmlfencedframeelement-sandbox",
+      "linkingText": [
+        "sandbox"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -607,26 +667,6 @@
         "title": "Fenced Frame"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "fencedframetype-exhaustive-set-of-sandbox-flags",
-      "href": "https://wicg.github.io/fenced-frame/#fencedframetype-exhaustive-set-of-sandbox-flags",
-      "linkingText": [
-        "exhaustive set of sandbox flags"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "fencedframetype"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/fenced-frame/#title",
-        "title": "Fenced Frame"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "fencedframetype-pending-event",
@@ -1677,10 +1717,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "fenced-frame-config-effective-sandbox-flags",
-      "href": "https://wicg.github.io/fenced-frame/#fenced-frame-config-effective-sandbox-flags",
+      "id": "fenced-frame-config-effective-sandboxing-flags",
+      "href": "https://wicg.github.io/fenced-frame/#fenced-frame-config-effective-sandboxing-flags",
       "linkingText": [
-        "effective sandbox flags"
+        "effective sandboxing flags"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1697,15 +1737,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "effective-sandbox-flags-value",
-      "href": "https://wicg.github.io/fenced-frame/#effective-sandbox-flags-value",
+      "id": "effective-sandboxing-flags-value",
+      "href": "https://wicg.github.io/fenced-frame/#effective-sandboxing-flags-value",
       "linkingText": [
         "value"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "effective sandbox flags"
+        "effective sandboxing flags"
       ],
       "access": "public",
       "informative": false,
@@ -1717,15 +1757,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "effective-sandbox-flags-visibility",
-      "href": "https://wicg.github.io/fenced-frame/#effective-sandbox-flags-visibility",
+      "id": "effective-sandboxing-flags-visibility",
+      "href": "https://wicg.github.io/fenced-frame/#effective-sandboxing-flags-visibility",
       "linkingText": [
         "visibility"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "effective sandbox flags"
+        "effective sandboxing flags"
       ],
       "access": "public",
       "informative": false,
@@ -2156,10 +2196,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "fenced-frame-config-instance-effective-sandbox-flags",
-      "href": "https://wicg.github.io/fenced-frame/#fenced-frame-config-instance-effective-sandbox-flags",
+      "id": "fenced-frame-config-instance-effective-sandboxing-flags",
+      "href": "https://wicg.github.io/fenced-frame/#fenced-frame-config-instance-effective-sandboxing-flags",
       "linkingText": [
-        "effective sandbox flags"
+        "effective sandboxing flags"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4059,6 +4099,24 @@
       "href": "https://wicg.github.io/fenced-frame/#should-navigation-response-to-navigation-request-be-blocked-by-permissions-policy",
       "linkingText": [
         "should navigation response to navigation request be blocked by Permissions Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/fenced-frame/#title",
+        "title": "Fenced Frame"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "should-navigation-response-to-navigation-request-be-blocked-by-sandboxing-flags",
+      "href": "https://wicg.github.io/fenced-frame/#should-navigation-response-to-navigation-request-be-blocked-by-sandboxing-flags",
+      "linkingText": [
+        "Should navigation response to navigation request be blocked by sandboxing flags?"
       ],
       "localLinkingText": [],
       "type": "dfn",

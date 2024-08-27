@@ -364,8 +364,11 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "document",
+          "dom-domtokenlist-value",
+          "domtokenlist",
           "connected",
           "concept-node-document",
+          "concept-element-attributes-change-ext",
           "concept-document-origin",
           "concept-node-append",
           "concept-shadow-including-descendant",
@@ -425,8 +428,24 @@
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
-          "concept-origin",
           "sandboxing-flag-set",
+          "determining-the-creation-sandboxing-flags",
+          "iframe-sandboxing-flag-set",
+          "parse-a-sandboxing-directive",
+          "attr-iframe-sandbox-allow-downloads",
+          "attr-iframe-sandbox-allow-forms",
+          "attr-iframe-sandbox-allow-modals",
+          "attr-iframe-sandbox-allow-orientation-lock",
+          "attr-iframe-sandbox-allow-pointer-lock",
+          "attr-iframe-sandbox-allow-popups",
+          "attr-iframe-sandbox-allow-popups-to-escape-sandbox",
+          "attr-iframe-sandbox-allow-presentation",
+          "attr-iframe-sandbox-allow-same-origin",
+          "attr-iframe-sandbox-allow-scripts",
+          "attr-iframe-sandbox-allow-top-navigation",
+          "attr-iframe-sandbox-allow-top-navigation-by-user-activation",
+          "attr-iframe-sandbox-allow-top-navigation-to-custom-protocols",
+          "concept-origin",
           "site",
           "same-origin",
           "determining-navigation-params-policy-container",
@@ -465,12 +484,18 @@
           "initialise-the-document-object",
           "source-snapshot-params-client",
           "navigation-params-coop-enforcement-result",
-          "navigation-params-origin"
+          "navigation-params-origin",
+          "navigation-params-sandboxing"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
         "anchors": [
           "reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
+        "anchors": [
+          "unordered-set-of-unique-space-separated-tokens"
         ]
       },
       "https://html.spec.whatwg.org/multipage/custom-elements.html": {
@@ -647,6 +672,9 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "assert",
+          "ascii-case-insensitive",
+          "html-namespace",
+          "list-empty",
           "ordered-map",
           "map-getting-the-keys",
           "map-getting-the-values",
@@ -671,7 +699,9 @@
           "set-append",
           "iteration-while",
           "list-extend",
-          "iteration-continue"
+          "iteration-continue",
+          "set-union",
+          "set-subset"
         ]
       },
       "https://url.spec.whatwg.org/": {
@@ -746,6 +776,8 @@
         "anchors": [
           "Exposed",
           "idl-DOMString",
+          "SameObject",
+          "PutForwards",
           "this",
           "idl-unsigned-long",
           "idl-USVString",
