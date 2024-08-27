@@ -38,13 +38,8 @@ const ignorableAnomalies = [
 
 
 function writeAnomalies(report) {
-  function writeAnomaly(anomaly) {
-    return anomaly.content;
-    return `- ${anomaly.name} in ${anomaly.specs.map(s => s.shortname).join(', ')}: ${anomaly.message}`;
-  }
-
   return 'Web IDL anomalies found:\n' +
-    report.map(writeAnomaly).join('\n');
+    report.map(anomaly => anomaly.content).join('\n');
 }
 
 views.forEach(({ name, folder }) => {
