@@ -107,10 +107,12 @@ The following projects are known to use webref data:
 * [Webdex](https://dontcallmedom.github.io/webdex/)
 
 Using webref data in a project that is not yet in the list? Let us know!
+
 ## Potential spec anomalies
 
-This repository used to contain analyses of potential spec anomalies, such as missing references and invalid Web IDL definitions. These analyses are now published in the companion [w3c/webref-analysis](https://github.com/w3c/webref-analysis) repository.
+Webref extracts are analyzed with [Strudy](https://github.com/w3c/strudy#strudy) to detect potential spec content anomalies such as broken links or invalid constructs, and report them as issues in the repository that hosts the spec.
 
+Global analyses used to be published in the [w3c/webref-analysis](https://github.com/w3c/webref-analysis) repository. That repository was archived in August 2024.
 
 ## How to suggest changes or report an error
 
