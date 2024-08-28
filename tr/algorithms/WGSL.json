@@ -86,7 +86,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#atomic-type\" id=\"ref-for-atomic-type⑦\">Atomic types</a> can only appear in mutable storage buffers or workgroup\nvariables.</p>"
         },
         {
-          "html": "<p>The data in <a href=\"https://www.w3.org/TR/WGSL/#texture-storage\">storage textures</a> with a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#access-write\" id=\"ref-for-access-write②\">write</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#access-read_write\" id=\"ref-for-access-read_write⑧\">read_write</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#access-mode\" id=\"ref-for-access-mode①②\">access mode</a> is mutable, but can only be\nmodified via <a href=\"https://www.w3.org/TR/WGSL/#texturestore\">textureStore</a> built-in function.\nThe variable itself cannot be modified.</p>"
+          "html": "<p>The data in <a href=\"https://www.w3.org/TR/WGSL/#texture-storage\">storage textures</a> with a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#access-write\" id=\"ref-for-access-write②\">write</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#access-read_write\" id=\"ref-for-access-read_write⑧\">read_write</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#access-mode\" id=\"ref-for-access-mode①③\">access mode</a> is mutable, but can only be\nmodified via <a href=\"https://www.w3.org/TR/WGSL/#texturestore\">textureStore</a> built-in function.\nThe variable itself cannot be modified.</p>"
         },
         {
           "html": "<p>Variables in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#address-spaces-workgroup\" id=\"ref-for-address-spaces-workgroup①⓪\">workgroup</a> address space can only be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#statically-accessed\" id=\"ref-for-statically-accessed④\">statically accessed</a> in a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#compute-shader-stage\" id=\"ref-for-compute-shader-stage①\">compute shader stage</a>.</p>"
@@ -134,7 +134,7 @@
           "html": "<p>Set <var>X</var> to the original value.</p>"
         },
         {
-          "html": "<p>If the source type is a floating point type with more mantissa bits than the destination type,\n the extra mantissa bits of the source value <em>may</em> be discarded (i.e. treated as if they are 0).\n Update <var>X</var> accordingly.</p>"
+          "html": "<p>If the source type is a floating point type with more significand bits than the destination type,\n the extra significand bits of the source value <em>may</em> be discarded (i.e. treated as if they are 0).\n Update <var>X</var> accordingly.</p>"
         },
         {
           "html": "<p>If <var>X</var> is the most-positive or most-negative normal value of the destination type, then the result is <var>X</var>.</p>"

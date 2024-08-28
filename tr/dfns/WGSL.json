@@ -138,6 +138,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "positive-infinity",
+      "href": "https://www.w3.org/TR/WGSL/#positive-infinity",
+      "linkingText": [
+        "Positive infinity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-and-notation",
+        "href": "https://www.w3.org/TR/WGSL/#terms-and-notation",
+        "title": "Mathematical Terms and Notation",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "negative-infinity",
+      "href": "https://www.w3.org/TR/WGSL/#negative-infinity",
+      "linkingText": [
+        "Negative infinity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms-and-notation",
+        "href": "https://www.w3.org/TR/WGSL/#terms-and-notation",
+        "title": "Mathematical Terms and Notation",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "extended-real",
       "href": "https://www.w3.org/TR/WGSL/#extended-real",
       "linkingText": [
@@ -1162,15 +1200,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "mantissa-significant",
-      "href": "https://www.w3.org/TR/WGSL/#mantissa-significant",
+      "id": "significand-significant",
+      "href": "https://www.w3.org/TR/WGSL/#significand-significant",
       "linkingText": [
         "significant"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "mantissa"
+        "significand"
       ],
       "access": "private",
       "informative": false,
@@ -12304,6 +12342,475 @@
       "definedIn": "prose"
     },
     {
+      "id": "nan",
+      "href": "https://www.w3.org/TR/WGSL/#nan",
+      "linkingText": [
+        "NaN"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-sign-field",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-sign-field",
+      "linkingText": [
+        "sign field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-exponent-field",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-exponent-field",
+      "linkingText": [
+        "exponent field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-trailing-significand-field",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-trailing-significand-field",
+      "linkingText": [
+        "trailing significand field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-exponent-bias",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-exponent-bias",
+      "linkingText": [
+        "exponent bias"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-binary16",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-binary16",
+      "linkingText": [
+        "binary16"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-binary32",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-binary32",
+      "linkingText": [
+        "binary32"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-binary64",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-binary64",
+      "linkingText": [
+        "binary64"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "floating-point-interpretation-of-bits",
+      "href": "https://www.w3.org/TR/WGSL/#floating-point-interpretation-of-bits",
+      "linkingText": [
+        "Floating point interpretation of bits"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "negative-zero",
+      "href": "https://www.w3.org/TR/WGSL/#negative-zero",
+      "linkingText": [
+        "negative zero"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-subnormal",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-subnormal",
+      "linkingText": [
+        "subnormal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "denormalized",
+      "href": "https://www.w3.org/TR/WGSL/#denormalized",
+      "linkingText": [
+        "Denormalized"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-normal",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "domain",
+      "href": "https://www.w3.org/TR/WGSL/#domain",
+      "linkingText": [
+        "domain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "intermediate-result",
+      "href": "https://www.w3.org/TR/WGSL/#intermediate-result",
+      "linkingText": [
+        "intermediate result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rounding",
+      "href": "https://www.w3.org/TR/WGSL/#rounding",
+      "linkingText": [
+        "Rounding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-rounding-mode",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-rounding-mode",
+      "linkingText": [
+        "rounding mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-exceptions",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-exceptions",
+      "linkingText": [
+        "exceptions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-invalid-operation",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-invalid-operation",
+      "linkingText": [
+        "Invalid operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-division-by-zero",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-division-by-zero",
+      "linkingText": [
+        "Division by zero"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-overflow",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-overflow",
+      "linkingText": [
+        "Overflow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-underflow",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-underflow",
+      "linkingText": [
+        "Underflow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ieee754-inexact",
+      "href": "https://www.w3.org/TR/WGSL/#ieee754-inexact",
+      "linkingText": [
+        "Inexact"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ieee754"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overview-of-ieee-754",
+        "href": "https://www.w3.org/TR/WGSL/#overview-of-ieee-754",
+        "title": "Overview of IEEE-754",
+        "number": "14.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "flush-to-zero",
       "href": "https://www.w3.org/TR/WGSL/#flush-to-zero",
       "linkingText": [
@@ -12315,10 +12822,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "floating-point-evaluation",
-        "href": "https://www.w3.org/TR/WGSL/#floating-point-evaluation",
-        "title": "Floating Point Evaluation",
-        "number": "14.6"
+        "id": "differences-from-ieee754",
+        "href": "https://www.w3.org/TR/WGSL/#differences-from-ieee754",
+        "title": "Differences from IEEE-754",
+        "number": "14.6.2"
       },
       "definedIn": "prose"
     },
@@ -12337,7 +12844,7 @@
         "id": "floating-point-accuracy",
         "href": "https://www.w3.org/TR/WGSL/#floating-point-accuracy",
         "title": "Floating Point Accuracy",
-        "number": "14.6.2"
+        "number": "14.6.4"
       },
       "definedIn": "prose"
     },
@@ -12356,7 +12863,7 @@
         "id": "floating-point-accuracy",
         "href": "https://www.w3.org/TR/WGSL/#floating-point-accuracy",
         "title": "Floating Point Accuracy",
-        "number": "14.6.2"
+        "number": "14.6.4"
       },
       "definedIn": "prose"
     },
@@ -12375,7 +12882,7 @@
         "id": "floating-point-accuracy",
         "href": "https://www.w3.org/TR/WGSL/#floating-point-accuracy",
         "title": "Floating Point Accuracy",
-        "number": "14.6.2"
+        "number": "14.6.4"
       },
       "definedIn": "prose"
     },
@@ -12394,7 +12901,7 @@
         "id": "reassociation-and-fusion",
         "href": "https://www.w3.org/TR/WGSL/#reassociation-and-fusion",
         "title": "Reassociation and Fusion",
-        "number": "14.6.3"
+        "number": "14.6.5"
       },
       "definedIn": "prose"
     },
@@ -12413,7 +12920,7 @@
         "id": "floating-point-conversion",
         "href": "https://www.w3.org/TR/WGSL/#floating-point-conversion",
         "title": "Floating Point Conversion",
-        "number": "14.6.4"
+        "number": "14.6.6"
       },
       "definedIn": "prose"
     },
@@ -12432,7 +12939,26 @@
         "id": "floating-point-conversion",
         "href": "https://www.w3.org/TR/WGSL/#floating-point-conversion",
         "title": "Floating Point Conversion",
-        "number": "14.6.4"
+        "number": "14.6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "implied-from-linear-terms",
+      "href": "https://www.w3.org/TR/WGSL/#implied-from-linear-terms",
+      "linkingText": [
+        "implied from linear terms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "domains-of-floating-point-expressions-and-builtins",
+        "href": "https://www.w3.org/TR/WGSL/#domains-of-floating-point-expressions-and-builtins",
+        "title": "Domains of Floating Point Expressions and Built-in Functions",
+        "number": "14.6.7"
       },
       "definedIn": "prose"
     },
