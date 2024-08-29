@@ -103,7 +103,7 @@
           ]
         },
         {
-          "html": "Let request’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"referrerurl\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">referrerURL</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> be the result of <a href=\"https://w3c.github.io/webappsec-referrer-policy/#strip-url\">stripping <var>referrerSource</var> for use as a referrer.</a>"
+          "html": "Let request’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"referrerurl\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">referrerURL</dfn> be the result of <a href=\"https://w3c.github.io/webappsec-referrer-policy/#strip-url\">stripping <var>referrerSource</var> for use as a referrer.</a>"
         },
         {
           "html": "Let <var>referrerOrigin</var> be the result of <a href=\"https://w3c.github.io/webappsec-referrer-policy/#strip-url\">stripping <var>referrerSource</var> for use as a\n      referrer</a>, with the <code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-referrer-policy/#origin-only-flag\" id=\"ref-for-origin-only-flag\">origin-only flag</a></code> set to <code>true</code>."
@@ -210,7 +210,7 @@
     {
       "name": "origin-only flag",
       "href": "https://w3c.github.io/webappsec-referrer-policy/#origin-only-flag",
-      "html": "Certain portions of URLs must not be included when sending a URL as the value\n  of a `<code>Referer</code>` header: a URLs fragment, username, and password\n  components must be stripped from the URL before it’s sent out. This\n  algorithm accepts a <code><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"origin-only-flag\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">origin-only flag</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span></code>, which defaults\n  to <code>false</code>. If set to <code>true</code>, the algorithm will\n  additionally remove the URL’s path and query components, leaving only the\n  scheme, host, and port.",
+      "html": "Certain portions of URLs must not be included when sending a URL as the value\n  of a `<code>Referer</code>` header: a URLs fragment, username, and password\n  components must be stripped from the URL before it’s sent out. This\n  algorithm accepts a <code><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"origin-only-flag\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">origin-only flag</dfn></code>, which defaults\n  to <code>false</code>. If set to <code>true</code>, the algorithm will\n  additionally remove the URL’s path and query components, leaving only the\n  scheme, host, and port.",
       "rationale": "assert",
       "steps": [
         {
