@@ -4111,6 +4111,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "k-anonymity-cache",
+      "href": "https://wicg.github.io/turtledove/#k-anonymity-cache",
+      "linkingText": [
+        "k-anonymity cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "k-anonymity",
+        "href": "https://wicg.github.io/turtledove/#k-anonymity",
+        "title": "K-anonymity",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "query-k-anonymity-count",
       "href": "https://wicg.github.io/turtledove/#query-k-anonymity-count",
       "linkingText": [
@@ -4130,10 +4149,29 @@
       "definedIn": "prose"
     },
     {
-      "id": "query-ad-k-anonymity-count",
-      "href": "https://wicg.github.io/turtledove/#query-ad-k-anonymity-count",
+      "id": "query-k-anonymity-cache",
+      "href": "https://wicg.github.io/turtledove/#query-k-anonymity-cache",
       "linkingText": [
-        "query ad k-anonymity count"
+        "query k-anonymity cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "k-anonymity",
+        "href": "https://wicg.github.io/turtledove/#k-anonymity",
+        "title": "K-anonymity",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-the-key-hash-of-ad",
+      "href": "https://wicg.github.io/turtledove/#compute-the-key-hash-of-ad",
+      "linkingText": [
+        "compute the key hash of ad"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4168,10 +4206,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "query-component-ad-k-anonymity-count",
-      "href": "https://wicg.github.io/turtledove/#query-component-ad-k-anonymity-count",
+      "id": "compute-the-key-hash-of-component-ad",
+      "href": "https://wicg.github.io/turtledove/#compute-the-key-hash-of-component-ad",
       "linkingText": [
-        "query component ad k-anonymity count"
+        "compute the key hash of component ad"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4210,6 +4248,44 @@
       "href": "https://wicg.github.io/turtledove/#query-reporting-id-k-anonymity-count",
       "linkingText": [
         "query reporting ID k-anonymity count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "k-anonymity",
+        "href": "https://wicg.github.io/turtledove/#k-anonymity",
+        "title": "K-anonymity",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-k-anonymity-cache-for-key",
+      "href": "https://wicg.github.io/turtledove/#update-k-anonymity-cache-for-key",
+      "linkingText": [
+        "update k-anonymity cache for key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "k-anonymity",
+        "href": "https://wicg.github.io/turtledove/#k-anonymity",
+        "title": "K-anonymity",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-k-anonymity-cache-for-interest-group",
+      "href": "https://wicg.github.io/turtledove/#update-k-anonymity-cache-for-interest-group",
+      "linkingText": [
+        "update k-anonymity cache for interest group"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -12159,6 +12235,86 @@
         "href": "https://wicg.github.io/turtledove/#leading-bid-info-header",
         "title": "Leading bid info",
         "number": "14.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "k-anonymity-key",
+      "href": "https://wicg.github.io/turtledove/#k-anonymity-key",
+      "linkingText": [
+        "k-anonymity key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "k-anonymity-records",
+        "href": "https://wicg.github.io/turtledove/#k-anonymity-records",
+        "title": "K-Anonymity Records",
+        "number": "14.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "k-anonymity-record",
+      "href": "https://wicg.github.io/turtledove/#k-anonymity-record",
+      "linkingText": [
+        "k-anonymity record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "k-anonymity-records",
+        "href": "https://wicg.github.io/turtledove/#k-anonymity-records",
+        "title": "K-Anonymity Records",
+        "number": "14.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "k-anonymity-record-is-k-anonymous",
+      "href": "https://wicg.github.io/turtledove/#k-anonymity-record-is-k-anonymous",
+      "linkingText": [
+        "is k-anonymous"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "k-anonymity record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "k-anonymity-records",
+        "href": "https://wicg.github.io/turtledove/#k-anonymity-records",
+        "title": "K-Anonymity Records",
+        "number": "14.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "k-anonymity-record-timestamp",
+      "href": "https://wicg.github.io/turtledove/#k-anonymity-record-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "k-anonymity record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "k-anonymity-records",
+        "href": "https://wicg.github.io/turtledove/#k-anonymity-records",
+        "title": "K-Anonymity Records",
+        "number": "14.11"
       },
       "definedIn": "dt"
     }

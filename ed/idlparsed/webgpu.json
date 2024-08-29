@@ -5444,7 +5444,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpushadermodule"
       },
       "GPUShaderModuleDescriptor": {
-        "fragment": "dictionary GPUShaderModuleDescriptor\n         : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n    sequence<GPUShaderModuleCompilationHint> compilationHints = [];\n};",
+        "fragment": "dictionary GPUShaderModuleDescriptor\n         : GPUObjectDescriptorBase {\n    required USVString code;\n    sequence<GPUShaderModuleCompilationHint> compilationHints = [];\n};",
         "type": "dictionary",
         "name": "GPUShaderModuleDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -5464,22 +5464,6 @@
             "default": null,
             "required": true,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpushadermoduledescriptor-code"
-          },
-          {
-            "type": "field",
-            "name": "sourceMap",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "object"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpushadermoduledescriptor-sourcemap"
           },
           {
             "type": "field",
