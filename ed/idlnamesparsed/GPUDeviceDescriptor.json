@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUDeviceDescriptor\n         : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> requiredFeatures = [];\n    record<DOMString, GPUSize64> requiredLimits = {};\n    GPUQueueDescriptor defaultQueue = {};\n};",
+    "fragment": "dictionary GPUDeviceDescriptor\n         : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> requiredFeatures = [];\n    record<DOMString, (GPUSize64 or undefined)> requiredLimits = {};\n    GPUQueueDescriptor defaultQueue = {};\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpudevicedescriptor"
   },
   "extended": [],

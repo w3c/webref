@@ -1161,6 +1161,192 @@
         "partial": false,
         "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialrequestoptionsjson"
       },
+      "UnknownCredentialOptions": {
+        "fragment": "dictionary UnknownCredentialOptions {\n    required DOMString                     rpId;\n    required Base64URLString               credentialId;\n};",
+        "type": "dictionary",
+        "name": "UnknownCredentialOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "rpId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-unknowncredentialoptions-rpid"
+          },
+          {
+            "type": "field",
+            "name": "credentialId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Base64URLString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-unknowncredentialoptions-credentialid"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-unknowncredentialoptions"
+      },
+      "AllAcceptedCredentialsOptions": {
+        "fragment": "dictionary AllAcceptedCredentialsOptions {\n    required DOMString                     rpId;\n    required Base64URLString               userId;\n    required sequence<Base64URLString>     allAcceptedCredentialIds;\n};",
+        "type": "dictionary",
+        "name": "AllAcceptedCredentialsOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "rpId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-allacceptedcredentialsoptions-rpid"
+          },
+          {
+            "type": "field",
+            "name": "userId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Base64URLString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-allacceptedcredentialsoptions-userid"
+          },
+          {
+            "type": "field",
+            "name": "allAcceptedCredentialIds",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Base64URLString"
+                }
+              ]
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-allacceptedcredentialsoptions-allacceptedcredentialids"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-allacceptedcredentialsoptions"
+      },
+      "CurrentUserDetailsOptions": {
+        "fragment": "dictionary CurrentUserDetailsOptions {\n    required DOMString                     rpId;\n    required Base64URLString               userId;\n    required DOMString                     name;\n    required DOMString                     displayName;\n};",
+        "type": "dictionary",
+        "name": "CurrentUserDetailsOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "rpId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-currentuserdetailsoptions-rpid"
+          },
+          {
+            "type": "field",
+            "name": "userId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Base64URLString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-currentuserdetailsoptions-userid"
+          },
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-currentuserdetailsoptions-name"
+          },
+          {
+            "type": "field",
+            "name": "displayName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webauthn/#dom-currentuserdetailsoptions-displayname"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webauthn/#dictdef-currentuserdetailsoptions"
+      },
       "AuthenticatorResponse": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      clientDataJSON;\n};",
         "type": "interface",
@@ -2442,7 +2628,7 @@
         "href": "https://w3c.github.io/webauthn/#enumdef-userverificationrequirement"
       },
       "ClientCapability": {
-        "fragment": "enum ClientCapability {\n    \"conditionalCreate\",\n    \"conditionalGet\",\n    \"hybridTransport\",\n    \"passkeyPlatformAuthenticator\",\n    \"userVerifyingPlatformAuthenticator\",\n    \"relatedOrigins\"\n};",
+        "fragment": "enum ClientCapability {\n    \"conditionalCreate\",\n    \"conditionalGet\",\n    \"hybridTransport\",\n    \"passkeyPlatformAuthenticator\",\n    \"userVerifyingPlatformAuthenticator\",\n    \"relatedOrigins\",\n    \"signalAllAcceptedCredentials\",\n    \"signalCurrentUserDetails\",\n    \"signalUnknownCredential\"\n};",
         "type": "enum",
         "name": "ClientCapability",
         "values": [
@@ -2475,6 +2661,21 @@
             "type": "enum-value",
             "value": "relatedOrigins",
             "href": "https://w3c.github.io/webauthn/#dom-clientcapability-relatedorigins"
+          },
+          {
+            "type": "enum-value",
+            "value": "signalAllAcceptedCredentials",
+            "href": "https://w3c.github.io/webauthn/#dom-clientcapability-signalallacceptedcredentials"
+          },
+          {
+            "type": "enum-value",
+            "value": "signalCurrentUserDetails",
+            "href": "https://w3c.github.io/webauthn/#dom-clientcapability-signalcurrentuserdetails"
+          },
+          {
+            "type": "enum-value",
+            "value": "signalUnknownCredential",
+            "href": "https://w3c.github.io/webauthn/#dom-clientcapability-signalunknowncredential"
           }
         ],
         "extAttrs": [],
@@ -3044,6 +3245,142 @@
           ],
           "extAttrs": [],
           "partial": true
+        },
+        {
+          "fragment": "partial interface PublicKeyCredential {\n    static Promise<undefined> signalUnknownCredential(UnknownCredentialOptions options);\n    static Promise<undefined> signalAllAcceptedCredentials(AllAcceptedCredentialsOptions options);\n    static Promise<undefined> signalCurrentUserDetails(CurrentUserDetailsOptions options);\n};",
+          "type": "interface",
+          "name": "PublicKeyCredential",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "signalUnknownCredential",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "UnknownCredentialOptions"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "static",
+              "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-signalunknowncredential"
+            },
+            {
+              "type": "operation",
+              "name": "signalAllAcceptedCredentials",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AllAcceptedCredentialsOptions"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "static",
+              "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-signalallacceptedcredentials"
+            },
+            {
+              "type": "operation",
+              "name": "signalCurrentUserDetails",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "CurrentUserDetailsOptions"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "static",
+              "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-signalcurrentuserdetails"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
         }
       ],
       "AuthenticationExtensionsClientInputs": [
@@ -3331,7 +3668,10 @@
         "PublicKeyCredentialCreationOptions",
         "PublicKeyCredentialCreationOptionsJSON",
         "PublicKeyCredentialRequestOptions",
-        "PublicKeyCredentialRequestOptionsJSON"
+        "PublicKeyCredentialRequestOptionsJSON",
+        "UnknownCredentialOptions",
+        "AllAcceptedCredentialsOptions",
+        "CurrentUserDetailsOptions"
       ],
       "RegistrationResponseJSON": [
         "Base64URLString",
@@ -3377,6 +3717,15 @@
         "Base64URLString",
         "PublicKeyCredentialDescriptorJSON",
         "AuthenticationExtensionsClientInputsJSON"
+      ],
+      "UnknownCredentialOptions": [
+        "Base64URLString"
+      ],
+      "AllAcceptedCredentialsOptions": [
+        "Base64URLString"
+      ],
+      "CurrentUserDetailsOptions": [
+        "Base64URLString"
       ],
       "AuthenticatorResponse": [
         "ArrayBuffer"
