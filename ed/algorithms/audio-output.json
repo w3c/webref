@@ -125,14 +125,20 @@
               "html": "<p>If there is no audio output device, reject <var>p</var>\n                    with a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"idl-DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> whose <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"DOMException\" data-xref-for=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"dom-domexception-name\" data-type=\"attribute\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-name\"><code>name</code></a>\n                    attribute has the value <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NotFoundError\" data-cite=\"webidl\" data-cite-path=\"/\" data-cite-frag=\"notfounderror\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notfounderror\"><code>NotFoundError</code></a> and abort\n                    these steps.</p>"
             },
             {
-              "html": "If <var>deviceId</var> is not\n                    <code>\"\"</code> and matches an id previously exposed by\n                    <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" href=\"https://w3c.github.io/mediacapture-output/#dom-mediadevices-selectaudiooutput\" class=\"internalDFN\" id=\"ref-for-dom-mediadevices-selectaudiooutput-3\"><code>selectAudioOutput</code></a> in an earlier browsing\n                    session, the user agent <em class=\"rfc2119\">MAY</em> decide, based on its previous\n                    decision of whether to persist this id or not for this set\n                    of origins, to run the following sub steps:",
-              "rationale": "let",
+              "html": "If <var>deviceId</var> is not <code>\"\"</code>\n                    run the following sub steps:",
+              "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>Let <var>device</var> be the device identified by\n                        <var>deviceId</var>, if available.</p>"
-                },
-                {
-                  "html": "<p>If <var>device</var> is available, resolve\n                      <var>p</var> with either <var>deviceId</var> or a freshly\n                      rotated device id for <var>device</var>, and abort the\n                      in-parallel steps.</p>"
+                  "html": "If <var>deviceId</var> matches a\n                        a device id previously exposed by\n                        <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" href=\"https://w3c.github.io/mediacapture-output/#dom-mediadevices-selectaudiooutput\" class=\"internalDFN\" id=\"ref-for-dom-mediadevices-selectaudiooutput-3\"><code>selectAudioOutput</code></a> in this or an earlier browsing\n                        session, or matches a device id of an audio output device\n                        with the same groupId as an audio input device previously\n                        exposed by <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"/\" data-cite-frag=\"dom-mediadevices-getusermedia\" data-type=\"method\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code> in this or an earlier browsing\n                        session, the user agent <em class=\"rfc2119\">MAY</em> decide, based on its previous\n                        decision of whether to persist this id or not for this set\n                        of origins, to run the following sub steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>device</var> be the device identified by\n                            <var>deviceId</var>, if available.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>device</var> is available, resolve\n                          <var>p</var> with either <var>deviceId</var> or a freshly\n                          rotated device id for <var>device</var>, and abort the\n                          in-parallel steps.</p>"
+                    }
+                  ]
                 }
               ]
             },

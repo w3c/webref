@@ -63,6 +63,7 @@
       },
       "https://wicg.github.io/attribution-reporting-api/": {},
       "https://wicg.github.io/fenced-frame/": {},
+      "https://wicg.github.io/private-network-access/": {},
       "https://www.rfc-editor.org/rfc/rfc6234": {},
       "https://www.rfc-editor.org/rfc/rfc8949": {
         "anchors": [
@@ -133,11 +134,13 @@
           "concept-request-referrer",
           "concept-request-credentials-mode",
           "concept-request-redirect-mode",
+          "concept-request-policy-container",
           "concept-fetch",
           "process-response-end-of-body",
           "fetch-useparallelqueue",
           "concept-request-method",
           "concept-request-body",
+          "request-service-workers-mode",
           "requestinit",
           "dom-request",
           "concept-request-request",
@@ -178,6 +181,7 @@
           "same-origin",
           "ascii-serialisation-of-an-origin",
           "concept-origin-host",
+          "policy-container",
           "policy-container-csp-list",
           "active-sandboxing-flag-set",
           "sandboxing-flag-set",
@@ -253,8 +257,9 @@
           "queue-a-global-task",
           "dom-manipulation-task-source",
           "concept-environment-top-level-origin",
-          "global-object",
           "concept-settings-object-policy-container",
+          "environment-settings-object",
+          "global-object",
           "module-script",
           "classic-script",
           "concept-script",
@@ -570,6 +575,11 @@
           "dom-fencereportingdestination-component-seller",
           "elementdef-fencedframe",
           "fencedframetype-automatic-beacon-event-type"
+        ]
+      },
+      "https://wicg.github.io/private-network-access/": {
+        "anchors": [
+          "policy-container-ip-address-space"
         ]
       },
       "https://wicg.github.io/shared-storage": {

@@ -99,7 +99,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#urlpattern-associated-url-pattern\" id=\"ref-for-urlpattern-associated-url-pattern⑥\">associated URL pattern</a>'s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component③\">pathname component</a>'s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-pattern-string\" id=\"ref-for-component-pattern-string⑤\">pattern string</a>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#urlpattern-associated-url-pattern\" id=\"ref-for-urlpattern-associated-url-pattern⑥\">associated URL pattern</a>'s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component④\">pathname component</a>'s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-pattern-string\" id=\"ref-for-component-pattern-string⑤\">pattern string</a>.</p>"
         }
       ]
     },
@@ -253,12 +253,12 @@
               "html": "<p>Let <var>pathCompileOptions</var> be copy of the <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pathname-options\" id=\"ref-for-pathname-options\">pathname options</a> with the <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#options-ignore-case\" id=\"ref-for-options-ignore-case①\">ignore case</a> property set to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternoptions-ignorecase\" id=\"ref-for-dom-urlpatternoptions-ignorecase②\">ignoreCase</a></code>\"].</p>"
             },
             {
-              "html": "<p>Set <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component④\">pathname component</a> to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#compile-a-component\" id=\"ref-for-compile-a-component⑥\">compiling a component</a> given <var>processedInit</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname①\">pathname</a></code>\"], <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#canonicalize-a-pathname\" id=\"ref-for-canonicalize-a-pathname\">canonicalize a pathname</a>, and <var>pathCompileOptions</var>.</p>"
+              "html": "<p>Set <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component⑤\">pathname component</a> to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#compile-a-component\" id=\"ref-for-compile-a-component⑥\">compiling a component</a> given <var>processedInit</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname①\">pathname</a></code>\"], <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#canonicalize-a-pathname\" id=\"ref-for-canonicalize-a-pathname\">canonicalize a pathname</a>, and <var>pathCompileOptions</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Otherwise set <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component⑤\">pathname component</a> to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#compile-a-component\" id=\"ref-for-compile-a-component⑦\">compiling a component</a> given <var>processedInit</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname②\">pathname</a></code>\"], <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#canonicalize-an-opaque-pathname\" id=\"ref-for-canonicalize-an-opaque-pathname\">canonicalize an opaque pathname</a>, and <var>compileOptions</var>.</p>"
+          "html": "<p>Otherwise set <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component⑥\">pathname component</a> to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#compile-a-component\" id=\"ref-for-compile-a-component⑦\">compiling a component</a> given <var>processedInit</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-pathname\" id=\"ref-for-dom-urlpatterninit-pathname②\">pathname</a></code>\"], <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#canonicalize-an-opaque-pathname\" id=\"ref-for-canonicalize-an-opaque-pathname\">canonicalize an opaque pathname</a>, and <var>compileOptions</var>.</p>"
         },
         {
           "html": "<p>Set <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-search-component\" id=\"ref-for-url-pattern-search-component④\">search component</a> to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#compile-a-component\" id=\"ref-for-compile-a-component⑧\">compiling a component</a> given <var>processedInit</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterninit-search\" id=\"ref-for-dom-urlpatterninit-search①\">search</a></code>\"], <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#canonicalize-a-search\" id=\"ref-for-canonicalize-a-search\">canonicalize a search</a>, and <var>compileOptions</var>.</p>"
@@ -425,7 +425,7 @@
           "html": "<p>Let <var>portExecResult</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpbuiltinexec\" id=\"ref-for-sec-regexpbuiltinexec④\">RegExpBuiltinExec</a>(<var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-port-component\" id=\"ref-for-url-pattern-port-component⑤\">port component</a>'s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-regular-expression\" id=\"ref-for-component-regular-expression④\">regular expression</a>, <var>port</var>).</p>"
         },
         {
-          "html": "<p>Let <var>pathnameExecResult</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpbuiltinexec\" id=\"ref-for-sec-regexpbuiltinexec⑤\">RegExpBuiltinExec</a>(<var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component⑥\">pathname component</a>'s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-regular-expression\" id=\"ref-for-component-regular-expression⑤\">regular expression</a>, <var>pathname</var>).</p>"
+          "html": "<p>Let <var>pathnameExecResult</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpbuiltinexec\" id=\"ref-for-sec-regexpbuiltinexec⑤\">RegExpBuiltinExec</a>(<var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component⑦\">pathname component</a>'s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-regular-expression\" id=\"ref-for-component-regular-expression⑤\">regular expression</a>, <var>pathname</var>).</p>"
         },
         {
           "html": "<p>Let <var>searchExecResult</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpbuiltinexec\" id=\"ref-for-sec-regexpbuiltinexec⑥\">RegExpBuiltinExec</a>(<var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-search-component\" id=\"ref-for-url-pattern-search-component⑤\">search component</a>'s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-regular-expression\" id=\"ref-for-component-regular-expression⑥\">regular expression</a>, <var>search</var>).</p>"
@@ -458,7 +458,7 @@
           "html": "<p>Set <var>result</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-port\" id=\"ref-for-dom-urlpatternresult-port\">port</a></code>\"] to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#create-a-component-match-result\" id=\"ref-for-create-a-component-match-result④\">creating a component match result</a> given <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-port-component\" id=\"ref-for-url-pattern-port-component⑥\">port component</a>, <var>port</var>, and <var>portExecResult</var>.</p>"
         },
         {
-          "html": "<p>Set <var>result</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-pathname\" id=\"ref-for-dom-urlpatternresult-pathname\">pathname</a></code>\"] to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#create-a-component-match-result\" id=\"ref-for-create-a-component-match-result⑤\">creating a component match result</a> given <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component⑦\">pathname component</a>, <var>pathname</var>, and <var>pathnameExecResult</var>.</p>"
+          "html": "<p>Set <var>result</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-pathname\" id=\"ref-for-dom-urlpatternresult-pathname\">pathname</a></code>\"] to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#create-a-component-match-result\" id=\"ref-for-create-a-component-match-result⑤\">creating a component match result</a> given <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component⑧\">pathname component</a>, <var>pathname</var>, and <var>pathnameExecResult</var>.</p>"
         },
         {
           "html": "<p>Set <var>result</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-search\" id=\"ref-for-dom-urlpatternresult-search\">search</a></code>\"] to the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#create-a-component-match-result\" id=\"ref-for-create-a-component-match-result⑥\">creating a component match result</a> given <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-search-component\" id=\"ref-for-url-pattern-search-component⑥\">search component</a>, <var>search</var>, and <var>searchExecResult</var>.</p>"
@@ -493,7 +493,7 @@
           "html": "<p>If <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-port-component\" id=\"ref-for-url-pattern-port-component⑦\">port component</a> <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-has-regexp-groups\" id=\"ref-for-component-has-regexp-groups④\">has regexp groups</a> is true, then return true.</p>"
         },
         {
-          "html": "<p>If <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component⑧\">pathname component</a> <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-has-regexp-groups\" id=\"ref-for-component-has-regexp-groups⑤\">has regexp groups</a> is true, then return true.</p>"
+          "html": "<p>If <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-pathname-component\" id=\"ref-for-url-pattern-pathname-component⑨\">pathname component</a> <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-has-regexp-groups\" id=\"ref-for-component-has-regexp-groups⑤\">has regexp groups</a> is true, then return true.</p>"
         },
         {
           "html": "<p>If <var>urlPattern</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-search-component\" id=\"ref-for-url-pattern-search-component⑦\">search component</a> <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-has-regexp-groups\" id=\"ref-for-component-has-regexp-groups⑥\">has regexp groups</a> is true, then return true.</p>"
@@ -541,7 +541,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-regexp\" id=\"ref-for-part-type-regexp\"><code>regexp</code></a>\", then set <var>has regexp groups</var> to true.</p>"
+              "html": "<p>If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-regexp\" id=\"ref-for-part-type-regexp①\"><code>regexp</code></a>\", then set <var>has regexp groups</var> to true.</p>"
             }
           ]
         },
@@ -2076,7 +2076,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>modifier token</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-value\" id=\"ref-for-token-value⑥\">value</a> is \"<code>?</code>\" then set <var>modifier</var> to \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-optional\" id=\"ref-for-part-modifier-optional\"><code>optional</code></a>\".</p>"
+              "html": "<p>If <var>modifier token</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-value\" id=\"ref-for-token-value⑥\">value</a> is \"<code>?</code>\" then set <var>modifier</var> to \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-optional\" id=\"ref-for-part-modifier-optional①\"><code>optional</code></a>\".</p>"
             },
             {
               "html": "<p>Otherwise if <var>modifier token</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-value\" id=\"ref-for-token-value⑦\">value</a> is \"<code>*</code>\" then set <var>modifier</var> to \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-zero-or-more\" id=\"ref-for-part-modifier-zero-or-more\"><code>zero-or-more</code></a>\".</p>"
@@ -2138,7 +2138,7 @@
           "html": "<p>Otherwise set <var>regexp value</var> to <var>regexp or wildcard token</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#token-value\" id=\"ref-for-token-value⑨\">value</a>.</p>"
         },
         {
-          "html": "<p>Let <var>type</var> be \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-regexp\" id=\"ref-for-part-type-regexp①\"><code>regexp</code></a>\".</p>"
+          "html": "<p>Let <var>type</var> be \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-regexp\" id=\"ref-for-part-type-regexp②\"><code>regexp</code></a>\".</p>"
         },
         {
           "html": "If <var>regexp value</var> is <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-segment-wildcard-regexp\" id=\"ref-for-pattern-parser-segment-wildcard-regexp②\">segment wildcard regexp</a>:",
@@ -2285,7 +2285,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier\" id=\"ref-for-part-modifier⑨\">modifier</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-none\" id=\"ref-for-part-modifier-none④\"><code>none</code></a>\" or \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-optional\" id=\"ref-for-part-modifier-optional①\"><code>optional</code></a>\", then:",
+                  "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier\" id=\"ref-for-part-modifier⑨\">modifier</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-none\" id=\"ref-for-part-modifier-none④\"><code>none</code></a>\" or \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-optional\" id=\"ref-for-part-modifier-optional②\"><code>optional</code></a>\", then:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -2329,7 +2329,7 @@
               ]
             },
             {
-              "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier\" id=\"ref-for-part-modifier①②\">modifier</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-none\" id=\"ref-for-part-modifier-none⑤\"><code>none</code></a>\" or \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-optional\" id=\"ref-for-part-modifier-optional②\"><code>optional</code></a>\":",
+              "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier\" id=\"ref-for-part-modifier①②\">modifier</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-none\" id=\"ref-for-part-modifier-none⑤\"><code>none</code></a>\" or \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-optional\" id=\"ref-for-part-modifier-optional③\"><code>optional</code></a>\":",
               "rationale": "append",
               "steps": [
                 {
@@ -2567,7 +2567,7 @@
               ]
             },
             {
-              "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type①②\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-regexp\" id=\"ref-for-part-type-regexp②\"><code>regexp</code></a>\" then:",
+              "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type①②\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-regexp\" id=\"ref-for-part-type-regexp③\"><code>regexp</code></a>\" then:",
               "rationale": "append",
               "steps": [
                 {
@@ -2687,7 +2687,7 @@
           "html": "<p>If <var>modifier</var> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-zero-or-more\" id=\"ref-for-part-modifier-zero-or-more③\"><code>zero-or-more</code></a>\", then return \"<code>*</code>\".</p>"
         },
         {
-          "html": "<p>If <var>modifier</var> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-optional\" id=\"ref-for-part-modifier-optional③\"><code>optional</code></a>\", then return \"<code>?</code>\".</p>"
+          "html": "<p>If <var>modifier</var> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-optional\" id=\"ref-for-part-modifier-optional④\"><code>optional</code></a>\", then return \"<code>?</code>\".</p>"
         },
         {
           "html": "<p>If <var>modifier</var> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-modifier-one-or-more\" id=\"ref-for-part-modifier-one-or-more②\"><code>one-or-more</code></a>\", then return \"<code>+</code>\".</p>"
