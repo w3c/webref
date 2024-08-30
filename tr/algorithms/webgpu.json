@@ -685,7 +685,7 @@
           "html": "<p>Let <var data-timeline=\"content\">contentTimeline</var> be the current <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#content-timeline\" id=\"ref-for-content-timeline③④\">Content timeline</a>.</p>"
         },
         {
-          "html": "If <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot②\" data-timeline=\"content\">[[pending_map]]</a></code> is not <code>null</code>:",
+          "html": "If <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-mapstate\" id=\"ref-for-dom-gpubuffer-mapstate①\" data-timeline=\"content\">mapState</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffermapstate-unmapped\" id=\"ref-for-dom-gpubuffermapstate-unmapped②\" data-timeline=\"content\">\"unmapped\"</a></code>:",
           "rationale": "issue",
           "steps": [
             {
@@ -700,7 +700,7 @@
           "html": "<p>Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①④\">Promise</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot③\" data-timeline=\"content\">[[pending_map]]</a></code> to <var>p</var>.</p>"
+          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot②\" data-timeline=\"content\">[[pending_map]]</a></code> to <var>p</var>.</p>"
         },
         {
           "html": "<p>Issue the <var>validation steps</var> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#device-timeline\" id=\"ref-for-device-timeline③③\">Device timeline</a> of <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuobjectbase-device-slot\" id=\"ref-for-dom-gpuobjectbase-device-slot①⑤\" data-timeline=\"const\">[[device]]</a></code>.</p>"
@@ -817,7 +817,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot⑤\" data-timeline=\"content\">[[pending_map]]</a></code> != <var>p</var>:",
+          "html": "If <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot④\" data-timeline=\"content\">[[pending_map]]</a></code> != <var>p</var>:",
           "rationale": "assert",
           "steps": [
             {
@@ -839,7 +839,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot⑥\" data-timeline=\"content\">[[pending_map]]</a></code> to <code>null</code>,\nand <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror②\">RangeError</a></code>.</p>"
+              "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot⑤\" data-timeline=\"content\">[[pending_map]]</a></code> to <code>null</code>,\nand <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror②\">RangeError</a></code>.</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -853,7 +853,7 @@
           "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-mapping-slot\" id=\"ref-for-dom-gpubuffer-mapping-slot③\" data-timeline=\"content\">[[mapping]]</a></code> to <var>mapping</var>.</p>"
         },
         {
-          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot⑦\" data-timeline=\"content\">[[pending_map]]</a></code> to <code>null</code>,\nand <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve④\">resolve</a> <var>p</var>.</p>"
+          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot⑥\" data-timeline=\"content\">[[pending_map]]</a></code> to <code>null</code>,\nand <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve④\">resolve</a> <var>p</var>.</p>"
         }
       ]
     },
@@ -864,7 +864,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot⑧\" data-timeline=\"content\">[[pending_map]]</a></code> != <var>p</var>:",
+          "html": "If <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot⑦\" data-timeline=\"content\">[[pending_map]]</a></code> != <var>p</var>:",
           "rationale": "assert",
           "steps": [
             {
@@ -879,7 +879,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a> <var>p</var> is still pending.</p>"
         },
         {
-          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot⑨\" data-timeline=\"content\">[[pending_map]]</a></code> to <code>null</code>.</p>"
+          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot⑧\" data-timeline=\"content\">[[pending_map]]</a></code> to <code>null</code>.</p>"
         },
         {
           "html": "If <var>deviceLost</var>:",
@@ -944,14 +944,14 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot①⓪\" data-timeline=\"content\">[[pending_map]]</a></code> is not <code>null</code>:",
+          "html": "If <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot⑨\" data-timeline=\"content\">[[pending_map]]</a></code> is not <code>null</code>:",
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">Reject</a> <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot①①\" data-timeline=\"content\">[[pending_map]]</a></code> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror①\">AbortError</a></code>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">Reject</a> <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot①⓪\" data-timeline=\"content\">[[pending_map]]</a></code> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror①\">AbortError</a></code>.</p>"
             },
             {
-              "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot①②\" data-timeline=\"content\">[[pending_map]]</a></code> to <code>null</code>.</p>"
+              "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpubuffer-pending_map-slot\" id=\"ref-for-dom-gpubuffer-pending_map-slot①①\" data-timeline=\"content\">[[pending_map]]</a></code> to <code>null</code>.</p>"
             }
           ]
         },
