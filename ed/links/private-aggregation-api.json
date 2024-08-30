@@ -9,6 +9,7 @@
       "http://www.w3.org/community/about/agreements/cla/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-color-3/": {},
       "https://encoding.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://github.com/WICG/turtledove/issues/1040": {},
@@ -90,6 +91,11 @@
           "concept-document"
         ]
       },
+      "https://drafts.csswg.org/css-color-3/": {
+        "anchors": [
+          "window"
+        ]
+      },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-encode"
@@ -132,6 +138,11 @@
           "unique-internal-value"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "browsing-context"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
         "anchors": [
           "allowed-to-use"
@@ -144,6 +155,7 @@
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
+          "window-bc",
           "concept-document-window"
         ]
       },
@@ -284,14 +296,14 @@
           "EnforceRange",
           "idl-unsigned-long-long",
           "a-promise-rejected-with",
+          "exceptiondef-typeerror",
           "upon-fulfillment",
           "upon-rejection",
           "idl-DOMString",
           "idl-double",
           "idl-boolean",
           "idl-sequence",
-          "idl-record",
-          "exceptiondef-typeerror"
+          "idl-record"
         ]
       },
       "https://wicg.github.io/attribution-reporting-api/": {
@@ -301,6 +313,7 @@
       },
       "https://wicg.github.io/fenced-frame/": {
         "anchors": [
+          "browsing-context-fenced-frame-config-instance",
           "fencedframeconfig",
           "report-a-private-aggregation-event"
         ]
@@ -309,10 +322,9 @@
         "anchors": [
           "sharedstorageworkletglobalscope",
           "dictdef-sharedstoragerunoperationmethodoptions",
-          "sharedstorage",
-          "dom-sharedstorage-run",
-          "dom-sharedstorage-selecturl",
-          "sharedstorageworklet"
+          "sharedstorageworklet",
+          "dom-sharedstorageworklet-run",
+          "dom-sharedstorageworklet-selecturl"
         ]
       },
       "https://wicg.github.io/turtledove/": {
