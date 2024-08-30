@@ -1,0 +1,361 @@
+{
+  "spec": {
+    "title": "Isolated Contexts",
+    "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+  },
+  "algorithms": [
+    {
+      "html": "As few as possible. Any API that can only be exposed to Isolated Contexts very\nlikely violates at least one <a href=\"https://w3ctag.github.io/design-principles/#basic-principles\"> design principle</a> of the web, most commonly that <a href=\"https://w3ctag.github.io/design-principles/#safe-to-browse\"> it should be safe to visit a web page</a>. Before requiring an Isolated Context\nto use an API, consider the following questions:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Is a new Web Platform API the only way to address the problems this API is\ntrying to solve? Web Extensions and native applications have their place.</p>"
+        },
+        {
+          "html": "<p>If a capability cannot be communicated clearly to users, is there another\nway to solve the problem that would be more understandable to users, and\nallow them to make informed decisions about what content can access it?</p>"
+        },
+        {
+          "html": "<p>Can the scope of the API be reduced such that it no longer poses an\nunacceptable risk if exposed to an average web page?</p>"
+        }
+      ]
+    },
+    {
+      "name": "meaningfully mitigates injection",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-list-meaningfully-mitigate-injection-attacks",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list\" id=\"ref-for-csp-list①\">CSP list</a> <var>policies</var> is said to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"CSP list\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"mitigate-injection\" data-lt=\"meaningfully mitigate injection attacks\" id=\"csp-list-meaningfully-mitigate-injection-attacks\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">meaningfully\nmitigate injection attacks</dfn> if the following algorithm returns\n\"<code>Meaningful</code>\". Possible return values are \"<code>Meaningful</code>\" and\n\"<code>Not meaningful enough</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>meets object requirements</var>, <var>meets base requirements</var>, <var>meets script requirements</var>, <var>meets style requirements</var>, <var>meets subresource requirements</var>, and <var>meets trusted type requirements</var> be <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean\">booleans</a> whose values are <code>false</code>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>policy</var> in <var>policies</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition\">disposition</a> is not \"<code>enforce</code>\" or <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-source\" id=\"ref-for-policy-source\">source</a> is not \"<code>header</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>policy</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-plugins\" id=\"ref-for-policy-sufficiently-mitigates-plugins\">sufficiently mitigates plugins</a>, set <var>meets object requirements</var> to <code>true</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>policy</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-relative-url-manipulation\" id=\"ref-for-policy-sufficiently-mitigates-relative-url-manipulation\">sufficiently mitigates relative URL manipulation</a>, set <var>meets base requirements</var> to <code>true</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>policy</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-script-execution\" id=\"ref-for-policy-sufficiently-mitigates-script-execution\">sufficiently mitigates script execution</a>, set <var>meets script requirements</var> to <code>true</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>policy</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-style-evaluation\" id=\"ref-for-policy-sufficiently-mitigates-style-evaluation\">sufficiently mitigates style evaluation</a>, set <var>meets style requirements</var> to <code>true</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>policy</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-blocks-insecure-subresources\" id=\"ref-for-policy-sufficiently-blocks-insecure-subresources\">sufficiently blocks insecure subresources</a>, set <var>meets subresource requirements</var> to <code>true</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>policy</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-dom-sinks\" id=\"ref-for-policy-sufficiently-mitigates-dom-sinks\">sufficiently mitigates DOM sinks</a>, set <var>meets trusted type requirements</var> to <code>true</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Meaningful</code>\" if <var>meets object requirements</var>, <var>meets base requirements</var>, <var>meets script requirements</var>, <var>meets style requirements</var>, <var>meets subresource requirements</var>, and <var>meets trusted type requirements</var> are all <code>true</code>.</p>"
+        },
+        {
+          "html": "<p>Return \"<code>Not meaningful enough</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "get active directive",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#abstract-opdef-obtain-directive",
+      "html": "CSP defines a fallback chain for some directives which we need to account for\nwhen evaluating a given policy. To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"obtain-directive\" id=\"abstract-opdef-obtain-directive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain\nthe active directive</dfn> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy\">policy</a> <var>policy</var> and a <var>directive name</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>fallback chain</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-csp/#directive-fallback-list\" id=\"ref-for-directive-fallback-list\">Get fetch\ndirective fallback list</a> on <var>directive name</var>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>name</var> in <var>fallback chain</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set\">directive set</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives\">directive</a> <var>directive</var> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name\">name</a> is <var>name</var>,\nreturn <var>directive</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "object requirements",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-plugins",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy①\">policy</a> <var>policy</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"policy\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"policy-sufficiently-mitigates-plugins\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sufficiently mitigates plugins</dfn> if\nthe following algorithm returns \"<code>Sufficient</code>\". Possible return values are\n\"<code>Sufficient</code>\" and \"<code>Not sufficient</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#abstract-opdef-obtain-directive\" id=\"ref-for-abstract-opdef-obtain-directive\">Obtain</a> <var>active directive</var> from <var>policy</var>, given \"<code>object-src</code>\".</p>"
+        },
+        {
+          "html": "<p>Return \"<code>Sufficient</code>\" if all of the following are true:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>active directive</var> is not null</p>\n       </li><li data-md=\"\">\n        <p><var>active directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value\">value</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is 1</p>\n       </li><li data-md=\"\">\n        <p><var>active directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①\">value</a>[0] is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive\">ASCII case-insensitive</a> match for the string\n\"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-none\" id=\"ref-for-grammardef-none\"><code>'none'</code></a>\".</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Return \"<code>Not sufficient</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "base requirements",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-relative-url-manipulation",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy②\">policy</a> <var>policy</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"policy\" data-dfn-type=\"dfn\" data-lt=\"sufficiently mitigates relative URL manipulation\" data-noexport=\"\" id=\"policy-sufficiently-mitigates-relative-url-manipulation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sufficiently mitigates relative URL\nmanipulation</dfn> if the following algorithm returns \"<code>Sufficient</code>\".\nPossible return values are \"<code>Sufficient</code>\" and \"<code>Not sufficient</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>directive</var> in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set①\">directive set</a>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return \"<code>Sufficient</code>\" if all of the following are true:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name①\">name</a> is \"<code>base-uri</code>\".</p>\n         </li><li data-md=\"\">\n          <p><var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②\">value</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> is 1</p>\n         </li><li data-md=\"\">\n          <p><var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③\">value</a>[0] is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①\">ASCII case-insensitive</a> match for either the string\n\"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-none\" id=\"ref-for-grammardef-none①\"><code>'none'</code></a>\" or the string \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-self\" id=\"ref-for-grammardef-self\"><code>'self'</code></a>\".</p>\n        </li></ul>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Not sufficient</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "script requirements",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-script-execution",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy③\">policy</a> <var>policy</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"policy\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"policy-sufficiently-mitigates-script-execution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sufficiently mitigates script execution</dfn> if the following algorithm returns \"<code>Sufficient</code>\".\nPossible return values are \"<code>Sufficient</code>\" and \"<code>Not sufficient</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#abstract-opdef-obtain-directive\" id=\"ref-for-abstract-opdef-obtain-directive①\">Obtain</a> <var>active directive</var> from <var>policy</var>, given \"<code>script-src</code>\".</p>"
+        },
+        {
+          "html": "<p>Return \"<code>Sufficient</code>\" if all of the following are true:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>active directive</var> is not null</p>\n       </li><li data-md=\"\">\n        <p>All <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression\">source expressions</a> in <var>active directive</var> are an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②\">ASCII case-insensitive</a> match for the strings\n\"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-none\" id=\"ref-for-grammardef-none②\"><code>'none'</code></a>\", \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-self\" id=\"ref-for-grammardef-self①\"><code>'self'</code></a>\", or\n\"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-wasm-unsafe-eval\" id=\"ref-for-grammardef-wasm-unsafe-eval\"><code>'wasm-unsafe-eval'</code></a>\".</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Return \"<code>Not sufficient</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "style requirements",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-style-evaluation",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy④\">policy</a> <var>policy</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"policy\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"policy-sufficiently-mitigates-style-evaluation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sufficiently mitigates style evaluation</dfn> if\nthe following algorithm returns \"<code>Sufficient</code>\".\nPossible return values are \"<code>Sufficient</code>\" and \"<code>Not sufficient</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>directive</var> in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set②\">directive set</a>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#abstract-opdef-obtain-directive\" id=\"ref-for-abstract-opdef-obtain-directive②\">Obtain</a> <var>active directive</var> from <var>policy</var>, given \"<code>style-src</code>\".</p>"
+            },
+            {
+              "html": "<p>Return \"<code>Sufficient</code>\" if all of the following are true:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name②\">name</a> is \"<code>style-src</code>\".</p>\n         </li><li data-md=\"\">\n          <p>All <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression①\">source expressions</a> in <var>active directive</var> are an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive③\">ASCII case-insensitive</a> match for the strings\n\"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-none\" id=\"ref-for-grammardef-none③\"><code>'none'</code></a>\", \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-self\" id=\"ref-for-grammardef-self②\"><code>'self'</code></a>\", or\n\"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-unsafe-inline\" id=\"ref-for-grammardef-unsafe-inline\"><code>'unsafe-inline'</code></a>\".</p>\n        </li></ul>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Not sufficient</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "subresource requirements",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-blocks-insecure-subresources",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy⑤\">policy</a> <var>policy</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"policy\" data-dfn-type=\"dfn\" data-lt=\"sufficiently blocks insecure subresources\" data-noexport=\"\" id=\"policy-sufficiently-blocks-insecure-subresources\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sufficiently blocks insecure\nsubresources</dfn> if the following algorithm returns \"<code>Sufficient</code>\".\nPossible return values are \"<code>Sufficient</code>\" and \"<code>Not sufficient</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>directive name</var> in the set [<code>frame-src</code>, <code>connect-src</code>, <code>img-src</code>, <code>media-src</code>, <code>font-src</code>]:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#abstract-opdef-obtain-directive\" id=\"ref-for-abstract-opdef-obtain-directive③\">Obtain</a> <var>active directive</var> from <var>policy</var>, given <var>directive name</var>.</p>"
+            },
+            {
+              "html": "<p>Return \"<code>Not sufficient</code>\" if any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression②\">source expression</a> in <var>active directive</var> is <strong>not</strong> an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive④\">ASCII case-insensitive</a> match\nfor the strings \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-none\" id=\"ref-for-grammardef-none④\"><code>'none'</code></a>\", \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-self\" id=\"ref-for-grammardef-self③\"><code>'self'</code></a>\",\n\"<code>https:</code>\", \"<code>blob:</code>\", or \"<code>data:</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Sufficient</code>\"</p>"
+        }
+      ]
+    },
+    {
+      "name": "trusted type requirements",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-dom-sinks",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy⑥\">policy</a> <var>policy</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"policy\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"policy-sufficiently-mitigates-dom-sinks\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sufficiently mitigates DOM sinks</dfn> if the following algorithm returns \"<code>Sufficient</code>\".\nPossible return values are \"<code>Sufficient</code>\" and \"<code>Not sufficient</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>directive</var> in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set③\">directive set</a>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return \"<code>Sufficient</code>\" if all of the following are true:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name③\">name</a> is\n\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#require-trusted-types-for-directive\" id=\"ref-for-require-trusted-types-for-directive\">require-trusted-types-for</a></code>\". <a data-link-type=\"biblio\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#biblio-trusted-types\" title=\"Trusted Types\">[TRUSTED-TYPES]</a></p>\n         </li><li data-md=\"\">\n          <p><var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④\">value</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a>[0] an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑤\">ASCII case-insensitive</a> match for the string \"<code>'script'</code>\".</p>\n        </li></ul>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Not sufficient</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "meaningfully mitigates ui redressing",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-list-meaningfully-mitigate-ui-redressing-attacks",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list\" id=\"ref-for-csp-list②\">CSP list</a> <var>policies</var> is said to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"CSP list\" data-dfn-type=\"dfn\" data-export=\"\" data-local-lt=\"mitigate-ui-redressing\" data-lt=\"meaningfully mitigate UI Redressing attacks\" id=\"csp-list-meaningfully-mitigate-ui-redressing-attacks\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">meaningfully\nmitigate UI Redressing attacks</dfn> <a data-link-type=\"biblio\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#biblio-uisecurity\" title=\"User Interface Security and the Visibility API\">[UISECURITY]</a> if the following algorithm\nreturns \"<code>Meaningful</code>\".\nPossible return values are \"<code>Meaningful</code>\" and \"<code>Not meaningful enough</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>policy</var> in <var>policies</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①\">disposition</a> is not \"<code>enforce</code>\" or <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-source\" id=\"ref-for-policy-source①\">source</a> is not \"<code>header</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>directive</var> in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set④\">directive set</a>:",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>Return \"<code>Meaningful</code>\" if all of the following are true:</p>\n          <ul>\n           <li data-md=\"\">\n            <p><var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name④\">name</a> is \"<code>frame-ancestors</code>\".</p>\n           </li><li data-md=\"\">\n            <p><var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑤\">value</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> is 1</p>\n           </li><li data-md=\"\">\n            <p><var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥\">value</a>[0] is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑥\">ASCII case-insensitive</a> match for either the string\n\"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-none\" id=\"ref-for-grammardef-none⑤\"><code>'none'</code></a>\" or the string \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-self\" id=\"ref-for-grammardef-self④\"><code>'self'</code></a>\".</p>\n          </li></ul>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Not meaningful enough</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "environment settings object is an isolated context",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#isolated-context",
+      "html": "An <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object③\">environment settings object</a> <var>environment</var> is an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"isolated-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">isolated context</dfn> if the following algorithm returns <code>true</code>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>environment</var> does not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#environment-settings-object-meaningfully-mitigate-injection-attacks\" id=\"ref-for-environment-settings-object-meaningfully-mitigate-injection-attacks\">meaningfully\nmitigate injection attacks</a>, return <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-cross-origin-isolated-capability\" id=\"ref-for-concept-settings-object-cross-origin-isolated-capability②\">cross-origin isolated capability</a> is\nnot <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#cross-origin-isolation-concrete\" id=\"ref-for-cross-origin-isolation-concrete\">concrete</a>, return <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>environment</var> does not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#environment-settings-object-mitigate-ui-redressing-attacks\" id=\"ref-for-environment-settings-object-mitigate-ui-redressing-attacks\">mitigate UI\nRedressing attacks</a>, return <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent②\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#origin-integrity-verification-map\" id=\"ref-for-origin-integrity-verification-map①\">origin integrity verification map</a>[<var>origin</var>]\ndoes not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exist</a>, return <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Return <code>true</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "verify the integrity of a response",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#verify-the-integrity-of-a-response",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"verify-the-integrity-of-a-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">verify the integrity of a response</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request①\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a> <var>response</var>, run these steps. Possible return values are\n\"<code>not applicable</code>\", \"<code>invalid</code>\", or \"<code>valid</code>\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>client</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>."
+        },
+        {
+          "html": "If <var>client</var> is <code>null</code>, return \"<code>not applicable</code>\"."
+        },
+        {
+          "html": "Let <var>origin</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent③\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#origin-integrity-verification-map\" id=\"ref-for-origin-integrity-verification-map②\">origin integrity verification map</a>[<var>origin</var>]\n    does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exist</a>, return \"<code>not applicable</code>\"."
+        },
+        {
+          "html": "Let <var>integrity verification algorithm</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#origin-integrity-verification-map\" id=\"ref-for-origin-integrity-verification-map③\">origin integrity verification map</a>[<var>origin</var>]."
+        },
+        {
+          "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body\">body</a> is <code>null</code>, return \"<code>invalid</code>\"."
+        },
+        {
+          "html": "If the result of executing <var>integrity verification algorithm</var> given <var>request</var> and <var>response</var> is <code>false</code>, return \"<code>invalid</code>\"."
+        },
+        {
+          "html": "Return \"<code>valid</code>\"."
+        }
+      ]
+    },
+    {
+      "html": "To <strong id=\"monkey-main-fetch\">main fetch</strong>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params\">fetch params</a> <var>fetchParams</var> and an optional boolean <var>recursive</var> (default false), run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>request</var> be <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-request\" id=\"ref-for-fetch-params-request②\">request</a>."
+        },
+        {
+          "html": "Let <var>response</var> be <code>null</code>."
+        },
+        {
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-integrity-metadata\" id=\"ref-for-concept-request-integrity-metadata\">integrity metadata</a> is not the empty string, then:",
+          "ignored": [
+            "..."
+          ]
+        },
+        {
+          "html": "<ins> If the result of executing <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#verify-the-integrity-of-a-response\" id=\"ref-for-verify-the-integrity-of-a-response\">verify the integrity of a response</a> given <var>request</var> and <var>response</var> is \"<code>invalid</code>\", then run <a href=\"https://fetch.spec.whatwg.org/#fetch-finale\">fetch response\n    handover</a> given <var>fetchParams</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>. </ins>"
+        },
+        {
+          "html": "Otherwise, run <a href=\"https://fetch.spec.whatwg.org/#fetch-finale\">fetch\n    response handover</a> given <var>fetchParams</var> and <var>response</var>."
+        }
+      ]
+    },
+    {
+      "html": "An <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface③\">interface</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-interface\" id=\"ref-for-dfn-callback-interface①\">callback interface</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace\" id=\"ref-for-dfn-namespace②\">namespace</a>, or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-member\" id=\"ref-for-dfn-member②\">member</a> <var>construct</var> is <strong id=\"dfn-exposed\">exposed</strong> in a given <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm\">realm</a> <var>realm</var> if the following steps return true:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>construct</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exposure-set\" id=\"ref-for-dfn-exposure-set\">exposure set</a> is not <code>*</code>, and <var>realm</var>.[[GlobalObject]] does not implement an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface④\">interface</a> that is in <var>construct</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exposure-set\" id=\"ref-for-dfn-exposure-set①\">exposure set</a>, then return false."
+        },
+        {
+          "html": "If <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object\">settings object</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context②\">secure context</a>, and <var>construct</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-conditionally-exposed\" id=\"ref-for-dfn-conditionally-exposed\">conditionally exposed</a> on [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#SecureContext\" id=\"ref-for-SecureContext\">SecureContext</a></code>], then\n      return false."
+        },
+        {
+          "html": "If <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object①\">settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-cross-origin-isolated-capability\" id=\"ref-for-concept-settings-object-cross-origin-isolated-capability③\">cross-origin isolated capability</a> is false,\n      and <var>construct</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-conditionally-exposed\" id=\"ref-for-dfn-conditionally-exposed①\">conditionally exposed</a> on [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#CrossOriginIsolated\" id=\"ref-for-CrossOriginIsolated①\">CrossOriginIsolated</a></code>],\n      then return false."
+        },
+        {
+          "html": "<ins> If <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object②\">settings object</a> is not an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#isolated-context\" id=\"ref-for-isolated-context①\">isolated context</a>,\n        and <var>construct</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-conditionally-exposed\" id=\"ref-for-dfn-conditionally-exposed②\">conditionally exposed</a> on [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#IsolatedContext\" id=\"ref-for-IsolatedContext⑨\">IsolatedContext</a></code>],\n        then return <code>false</code>. </ins>"
+        },
+        {
+          "html": "Return true."
+        }
+      ]
+    },
+    {
+      "name": "obtain a storage key for non-storage purposes isolated context",
+      "html": "To obtain a storage key for non-storage purposes, given an <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment\"> environment</a> <var>environment</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>origin</var> be <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin②\">origin</a> if <var>environment</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object④\">environment settings object</a>; otherwise <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-creation-url\" id=\"ref-for-concept-environment-creation-url\">creation URL</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin③\">origin</a>."
+        },
+        {
+          "html": "<ins> Let <var>top-level origin</var> be <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin①\">top-level origin</a>. </ins>"
+        },
+        {
+          "html": "<ins> If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑥\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/isolated-web-apps/isolated-contexts.html#origin-integrity-verification-map\" id=\"ref-for-origin-integrity-verification-map④\">origin integrity verification map</a> [<var>top-level origin</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>, return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple\">tuple</a> consisting of <var>top-level origin</var> and <var>origin</var>. </ins>"
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①\">tuple</a> consisting of <var>origin</var>."
+        }
+      ]
+    }
+  ]
+}

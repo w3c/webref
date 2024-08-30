@@ -1,0 +1,355 @@
+{
+  "spec": {
+    "title": "Isolated Contexts",
+    "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+  },
+  "dfns": [
+    {
+      "id": "isolated-contexts",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#isolated-contexts",
+      "linkingText": [
+        "Isolated Contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "introduction",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csp-list-meaningfully-mitigate-injection-attacks",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-list-meaningfully-mitigate-injection-attacks",
+      "linkingText": [
+        "meaningfully mitigate injection attacks"
+      ],
+      "localLinkingText": [
+        "mitigate-injection"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSP list"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "csp-injection-mitigation",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-injection-mitigation",
+        "title": "Does a policy meaningfully mitigate injection attacks?",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-obtain-directive",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#abstract-opdef-obtain-directive",
+      "linkingText": [
+        "obtain-directive"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "csp-active-directive",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-active-directive",
+        "title": "Obtain the active directive for a type",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-sufficiently-mitigates-plugins",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-plugins",
+      "linkingText": [
+        "sufficiently mitigates plugins"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "csp-plugin-mitigation",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-plugin-mitigation",
+        "title": "Does a policy sufficiently mitigate plugins?",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-sufficiently-mitigates-relative-url-manipulation",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-relative-url-manipulation",
+      "linkingText": [
+        "sufficiently mitigates relative URL manipulation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "csp-relative-url",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-relative-url",
+        "title": "Does a policy sufficiently mitigate relative URL manipulation?",
+        "number": "3.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-sufficiently-mitigates-script-execution",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-script-execution",
+      "linkingText": [
+        "sufficiently mitigates script execution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "csp-script-mitigation",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-script-mitigation",
+        "title": "Does a policy sufficiently mitigate script execution?",
+        "number": "3.1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-sufficiently-mitigates-style-evaluation",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-style-evaluation",
+      "linkingText": [
+        "sufficiently mitigates style evaluation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "csp-style-mitigation",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-style-mitigation",
+        "title": "Does a policy sufficiently mitigate style evaluation?",
+        "number": "3.1.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-sufficiently-blocks-insecure-subresources",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-blocks-insecure-subresources",
+      "linkingText": [
+        "sufficiently blocks insecure subresources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "csp-subresources",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-subresources",
+        "title": "Does a policy sufficiently block insecure subresources?",
+        "number": "3.1.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-sufficiently-mitigates-dom-sinks",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#policy-sufficiently-mitigates-dom-sinks",
+      "linkingText": [
+        "sufficiently mitigates DOM sinks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "csp-sink-mitigation",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-sink-mitigation",
+        "title": "Does a policy sufficiently mitigate DOM sinks?",
+        "number": "3.1.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csp-list-meaningfully-mitigate-ui-redressing-attacks",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-list-meaningfully-mitigate-ui-redressing-attacks",
+      "linkingText": [
+        "meaningfully mitigate UI Redressing attacks"
+      ],
+      "localLinkingText": [
+        "mitigate-ui-redressing"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSP list"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "csp-ui-redressing-mitigation",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#csp-ui-redressing-mitigation",
+        "title": "Does a policy meaningfully mitigate UI Redressing attacks?",
+        "number": "3.1.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "integrity-verification-algorithm",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#integrity-verification-algorithm",
+      "linkingText": [
+        "integrity verification algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-integrity",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#html-integrity",
+        "title": "Integrity",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "origin-integrity-verification-map",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#origin-integrity-verification-map",
+      "linkingText": [
+        "origin integrity verification map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-integrity",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#html-integrity",
+        "title": "Integrity",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "environment-settings-object-meaningfully-mitigate-injection-attacks",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#environment-settings-object-meaningfully-mitigate-injection-attacks",
+      "linkingText": [
+        "meaningfully mitigate injection attacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment settings object"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-environment-properties",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#html-environment-properties",
+        "title": "Environment Settings Object properties",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "environment-settings-object-mitigate-ui-redressing-attacks",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#environment-settings-object-mitigate-ui-redressing-attacks",
+      "linkingText": [
+        "mitigate UI Redressing attacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment settings object"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-environment-properties",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#html-environment-properties",
+        "title": "Environment Settings Object properties",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "isolated-context",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#isolated-context",
+      "linkingText": [
+        "isolated context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-environment-properties",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#html-environment-properties",
+        "title": "Environment Settings Object properties",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "verify-the-integrity-of-a-response",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#verify-the-integrity-of-a-response",
+      "linkingText": [
+        "verify the integrity of a response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-verify-response",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#fetch-verify-response",
+        "title": "Verify the integrity of a response",
+        "number": "3.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "IsolatedContext",
+      "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#IsolatedContext",
+      "linkingText": [
+        "IsolatedContext"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "IsolatedContext",
+        "href": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html#IsolatedContext",
+        "title": "[IsolatedContext]",
+        "number": "3.4.1"
+      },
+      "definedIn": "heading"
+    }
+  ]
+}
