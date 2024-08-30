@@ -1,0 +1,353 @@
+{
+  "spec": {
+    "title": "execCommand",
+    "url": "https://w3c.github.io/editing/docs/execCommand/"
+  },
+  "links": {
+    "rawlinks": {
+      "http://dev.w3.org/2006/webapi/WebIDL/": {
+        "anchors": [
+          "dfn-code-unit"
+        ]
+      },
+      "http://dev.w3.org/csswg/cssom/": {
+        "anchors": [
+          "resolved-value"
+        ]
+      },
+      "http://dom.spec.whatwg.org/": {
+        "anchors": [
+          "ascii-case-insensitive",
+          "html-namespace",
+          "concept-node",
+          "context-object",
+          "dom-document-createelement",
+          "contained",
+          "dom-text-splittext",
+          "concept-attribute",
+          "dom-characterdata-deletedata",
+          "dom-node-clonenode",
+          "dom-characterdata-insertdata",
+          "dom-range-clonerange",
+          "converted-to-ascii-lowercase",
+          "dom-range-insertnode",
+          "dom-element-setattribute",
+          "dom-range-extractcontents",
+          "dom-node-appendchild",
+          "dom-node-lastchild",
+          "dom-document-createtextnode"
+        ]
+      },
+      "http://domparsing.spec.whatwg.org/": {
+        "anchors": [
+          "dom-range-createcontextualfragment"
+        ]
+      },
+      "http://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "ascii-whitespace"
+        ]
+      },
+      "http://es5.github.com/": {
+        "anchors": [
+          "x15.5.5.1"
+        ]
+      },
+      "http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2009-December/024627.html": {},
+      "http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2009-December/024628.html": {},
+      "http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2011-April/031147.html": {},
+      "http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2011-March/030714.html": {},
+      "http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2011-May/031577.html": {},
+      "http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2011-May/031765.html": {},
+      "http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2011-September/033235.html": {},
+      "http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2011-June/032187.html": {},
+      "http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2011-March/030730.html": {},
+      "http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2011-March/030751.html": {},
+      "http://software.hixie.ch/utilities/js/live-dom-viewer/saved/1018": {},
+      "http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html": {
+        "anchors": [
+          "rules-for-serializing-simple-color-values",
+          "simple-color",
+          "strip-leading-and-trailing-whitespace",
+          "valid-floating-point-number",
+          "rules-for-parsing-non-negative-integers"
+        ]
+      },
+      "http://www.whatwg.org/specs/web-apps/current-work/multipage/dom.html": {
+        "anchors": [
+          "the-body-element-0"
+        ]
+      },
+      "http://www.whatwg.org/specs/web-apps/current-work/multipage/editing.html": {
+        "anchors": [
+          "attr-contenteditable"
+        ]
+      },
+      "http://www.whatwg.org/specs/web-apps/current-work/multipage/elements.html": {
+        "anchors": [
+          "the-style-attribute",
+          "the-dir-attribute",
+          "the-directionality",
+          "the-id-attribute"
+        ]
+      },
+      "http://www.whatwg.org/specs/web-apps/current-work/multipage/grouping-content.html": {
+        "anchors": [
+          "attr-ol-reversed",
+          "attr-ol-start",
+          "attr-ol-type"
+        ]
+      },
+      "http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html": {
+        "anchors": [
+          "attr-hyperlink-href"
+        ]
+      },
+      "http://www.whatwg.org/specs/web-apps/current-work/multipage/obsolete.html": {
+        "anchors": [
+          "dom-font-color",
+          "dom-font-face",
+          "dom-font-size",
+          "center",
+          "attr-div-align"
+        ]
+      },
+      "http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html": {
+        "anchors": [
+          "presentational-hints"
+        ]
+      },
+      "http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html": {
+        "anchors": [
+          "valid-e-mail-address"
+        ]
+      },
+      "http://www.whatwg.org/specs/web-apps/current-work/multipage/the-map-element.html": {
+        "anchors": [
+          "svg",
+          "math"
+        ]
+      },
+      "http://www.whatwg.org/specs/web-apps/current-work/multipage/webappapis.html": {
+        "anchors": [
+          "dom-document-open"
+        ]
+      },
+      "https://bugs.webkit.org/show_bug.cgi?id=11089": {},
+      "https://bugs.webkit.org/show_bug.cgi?id=13490": {},
+      "https://bugs.webkit.org/show_bug.cgi?id=43017": {},
+      "https://bugs.webkit.org/show_bug.cgi?id=83993": {},
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=590640": {},
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=676401": {},
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=742240": {},
+      "https://dom.spec.whatwg.org/": {},
+      "https://github.com/WebKit/explainers/tree/main/UndoManager": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "editing-host"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "the-sub-and-sup-elements"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {},
+      "https://lists.w3.org/Archives/Public/www-style/2011Mar/0591.html": {},
+      "https://lists.w3.org/Archives/Public/www-style/2011Mar/0593.html": {},
+      "https://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2011-August/032809.html": {},
+      "https://tools.ietf.org/html/rfc3986": {
+        "anchors": [
+          "section-3.1"
+        ]
+      },
+      "https://w3c-test.org/editing/": {},
+      "https://w3c.github.io/clipboard-apis/": {
+        "anchors": [
+          "the-copy-action",
+          "the-cut-action",
+          "the-paste-action"
+        ]
+      },
+      "https://w3c.github.io/contentEditable/": {},
+      "https://w3c.github.io/edit-context/": {
+        "anchors": [
+          "dfn-editcontext-editing-host"
+        ]
+      },
+      "https://w3c.github.io/input-events/": {},
+      "https://w3c.github.io/trusted-types/dist/spec/": {
+        "anchors": [
+          "get-trusted-type-compliant-string-algorithm",
+          "trusted-html",
+          "trustedhtml"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "this",
+          "dfn-interface"
+        ]
+      },
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=12609": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13128": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13201": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13632": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13807": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13811": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13829": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13831": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13840": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13841": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13938": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13976": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=13996": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=14062": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=14067": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=14068": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=14119": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=14231": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=14251": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=15527": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=16094": {},
+      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=16207": {},
+      "https://www.w3.org/TR/clipboard-apis/": {
+        "anchors": [
+          "allowed-to-modify-the-clipboard"
+        ]
+      },
+      "https://www.w3.org/TR/trusted-types/": {}
+    },
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-range-start-node",
+          "concept-range-end-node",
+          "concept-tree-inclusive-ancestor",
+          "document",
+          "concept-tree-ancestor",
+          "concept-event-fire",
+          "dom-event-bubbles",
+          "dom-event-cancelable",
+          "dom-event-istrusted",
+          "element",
+          "concept-element-namespace",
+          "concept-element-local-name",
+          "concept-document",
+          "documentfragment",
+          "concept-tree-parent",
+          "text",
+          "dom-characterdata-data",
+          "concept-tree-descendant",
+          "concept-tree-order",
+          "concept-tree-child",
+          "concept-range",
+          "concept-range-bp",
+          "concept-node-insert",
+          "concept-node-remove",
+          "concept-tree-index",
+          "concept-range-bp-offset",
+          "dom-node-ownerdocument",
+          "dom-node-previoussibling",
+          "dom-node-lastchild",
+          "concept-tree-sibling",
+          "dom-node-nextsibling",
+          "documenttype",
+          "dom-range-collapsed",
+          "concept-node-length",
+          "concept-range-start-offset",
+          "concept-range-end-offset",
+          "concept-range-start",
+          "concept-range-end",
+          "concept-range-bp-after",
+          "dom-node-firstchild",
+          "concept-range-bp-before",
+          "dom-characterdata-length",
+          "concept-tree-preceding",
+          "concept-tree-following",
+          "concept-attribute-local-name",
+          "comment",
+          "dom-document-documentelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+        "anchors": [
+          "cereactions"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+        "anchors": [
+          "the-img-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/grouping-content.html": {
+        "anchors": [
+          "the-li-element",
+          "the-dt-element",
+          "the-dl-element",
+          "the-blockquote-element",
+          "the-div-element",
+          "the-p-element",
+          "the-dd-element",
+          "the-ol-element",
+          "the-ul-element",
+          "the-hr-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "editing-host"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/obsolete.html": {
+        "anchors": [
+          "strike",
+          "font"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/tables.html": {
+        "anchors": [
+          "the-td-element",
+          "the-th-element",
+          "the-thead-element",
+          "the-tbody-element",
+          "the-tfoot-element",
+          "the-tr-element",
+          "the-table-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-strong-element",
+          "the-em-element",
+          "the-br-element",
+          "the-a-element",
+          "the-b-element",
+          "the-i-element",
+          "the-s-element",
+          "the-span-element",
+          "the-u-element"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "ascii-case-insensitive"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-boolean",
+          "idl-DOMString",
+          "dfn-throw",
+          "securityerror"
+        ]
+      }
+    }
+  }
+}

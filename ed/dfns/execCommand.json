@@ -1,0 +1,2677 @@
+{
+  "spec": {
+    "title": "execCommand",
+    "url": "https://w3c.github.io/editing/docs/execCommand/"
+  },
+  "dfns": [
+    {
+      "id": "command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#command",
+      "linkingText": [
+        "commands"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "properties-of-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#properties-of-commands-0",
+        "title": "Properties of commands",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "action",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#action",
+      "linkingText": [
+        "Action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "properties-of-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#properties-of-commands-0",
+        "title": "Properties of commands",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "indeterminate",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#indeterminate",
+      "linkingText": [
+        "Indeterminate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "properties-of-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#properties-of-commands-0",
+        "title": "Properties of commands",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "state",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#state",
+      "linkingText": [
+        "State"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "properties-of-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#properties-of-commands-0",
+        "title": "Properties of commands",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "value",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#value",
+      "linkingText": [
+        "Value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "properties-of-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#properties-of-commands-0",
+        "title": "Properties of commands",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "relevant-css-property",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#relevant-css-property",
+      "linkingText": [
+        "Relevant CSS property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "properties-of-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#properties-of-commands-0",
+        "title": "Properties of commands",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "supported",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#supported",
+      "linkingText": [
+        "supported"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "supported-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#supported-commands-0",
+        "title": "Supported commands",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "vendor-specific-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#vendor-specific-command",
+      "linkingText": [
+        "vendor-specific commands"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "supported-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#supported-commands-0",
+        "title": "Supported commands",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enabled",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#enabled",
+      "linkingText": [
+        "enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "enabled-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#enabled-commands-0",
+        "title": "Enabled commands",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-document-execcommand",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dom-document-execcommand",
+      "linkingText": [
+        "execCommand()",
+        "execCommand(commandId)",
+        "execCommand(commandId, showUI)",
+        "execCommand(commandId, showUI, value)"
+      ],
+      "localLinkingText": [
+        "Document.execCommand",
+        "Document.execCommand()",
+        "execCommand"
+      ],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "methods-to-query-and-execute-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#methods-to-query-and-execute-commands-0",
+        "title": "Methods to query and execute commands",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "execcommand()",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#execcommand()",
+      "linkingText": [
+        "execCommand(command, show UI, value)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "methods-to-query-and-execute-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#methods-to-query-and-execute-commands-0",
+        "title": "Methods to query and execute commands",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-map-an-edit-command-to-input-type-value",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-map-an-edit-command-to-input-type-value",
+      "linkingText": [
+        "map an edit command to input type value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "methods-to-query-and-execute-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#methods-to-query-and-execute-commands-0",
+        "title": "Methods to query and execute commands",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "querycommandenabled()",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#querycommandenabled()",
+      "linkingText": [
+        "queryCommandEnabled(command)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "methods-to-query-and-execute-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#methods-to-query-and-execute-commands-0",
+        "title": "Methods to query and execute commands",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "querycommandindeterm()",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#querycommandindeterm()",
+      "linkingText": [
+        "queryCommandIndeterm(command)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "methods-to-query-and-execute-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#methods-to-query-and-execute-commands-0",
+        "title": "Methods to query and execute commands",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "querycommandstate()",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#querycommandstate()",
+      "linkingText": [
+        "queryCommandState(command)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "methods-to-query-and-execute-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#methods-to-query-and-execute-commands-0",
+        "title": "Methods to query and execute commands",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "querycommandsupported()",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#querycommandsupported()",
+      "linkingText": [
+        "queryCommandSupported(command)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "methods-to-query-and-execute-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#methods-to-query-and-execute-commands-0",
+        "title": "Methods to query and execute commands",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "querycommandvalue()",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#querycommandvalue()",
+      "linkingText": [
+        "queryCommandValue(command)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "methods-to-query-and-execute-commands-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#methods-to-query-and-execute-commands-0",
+        "title": "Methods to query and execute commands",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "html-element",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#html-element",
+      "linkingText": [
+        "HTML element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "prohibited-paragraph-child-name",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#prohibited-paragraph-child-name",
+      "linkingText": [
+        "prohibited paragraph child name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "prohibited-paragraph-child",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#prohibited-paragraph-child",
+      "linkingText": [
+        "prohibited paragraph child"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-node",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#block-node",
+      "linkingText": [
+        "block node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "inline-node",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#inline-node",
+      "linkingText": [
+        "inline node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "editable",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#editable",
+      "linkingText": [
+        "editable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "editing-host-of",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#editing-host-of",
+      "linkingText": [
+        "editing host of"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "in-the-same-editing-host",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#in-the-same-editing-host",
+      "linkingText": [
+        "in the same editing host"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "collapsed-line-break",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#collapsed-line-break",
+      "linkingText": [
+        "collapsed line break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extraneous-line-break",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#extraneous-line-break",
+      "linkingText": [
+        "extraneous line break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "whitespace-node",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#whitespace-node",
+      "linkingText": [
+        "whitespace node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "collapsed-whitespace-node",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#collapsed-whitespace-node",
+      "linkingText": [
+        "collapsed whitespace node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "visible",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#visible",
+      "linkingText": [
+        "visible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "invisible",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#invisible",
+      "linkingText": [
+        "invisible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "collapsed-block-prop",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#collapsed-block-prop",
+      "linkingText": [
+        "collapsed block prop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active-range",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#active-range",
+      "linkingText": [
+        "active range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "css-styling-flag",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#css-styling-flag",
+      "linkingText": [
+        "CSS styling flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "default-single-line-container-name",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#default-single-line-container-name",
+      "linkingText": [
+        "default single-line container name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "state-override",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#state-override",
+      "linkingText": [
+        "state override"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "value-override",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#value-override",
+      "linkingText": [
+        "value override"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "common-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#common-definitions-0",
+        "title": "Common definitions",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "preserving-ranges",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#preserving-ranges",
+      "linkingText": [
+        "preserving ranges"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-common-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-common-algorithms-0",
+        "title": "Assorted common algorithms",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-the-tag-name",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#set-the-tag-name",
+      "linkingText": [
+        "set the tag name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-common-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-common-algorithms-0",
+        "title": "Assorted common algorithms",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remove-extraneous-line-breaks-before",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#remove-extraneous-line-breaks-before",
+      "linkingText": [
+        "remove extraneous line breaks before"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-common-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-common-algorithms-0",
+        "title": "Assorted common algorithms",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remove-extraneous-line-breaks-at-the-end-of",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#remove-extraneous-line-breaks-at-the-end-of",
+      "linkingText": [
+        "remove extraneous line breaks at the end of"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-common-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-common-algorithms-0",
+        "title": "Assorted common algorithms",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remove-extraneous-line-breaks-from",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#remove-extraneous-line-breaks-from",
+      "linkingText": [
+        "remove extraneous line breaks from"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-common-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-common-algorithms-0",
+        "title": "Assorted common algorithms",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "wrap",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#wrap",
+      "linkingText": [
+        "wrap"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "wrapping-a-list-of-nodes-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#wrapping-a-list-of-nodes-0",
+        "title": "Wrapping a list of nodes",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "name-of-an-element-with-inline-contents",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#name-of-an-element-with-inline-contents",
+      "linkingText": [
+        "name of an element with inline contents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "allowed-children-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#allowed-children-0",
+        "title": "Allowed children",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "element-with-inline-contents",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#element-with-inline-contents",
+      "linkingText": [
+        "element with inline contents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "allowed-children-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#allowed-children-0",
+        "title": "Allowed children",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "allowed-child",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#allowed-child",
+      "linkingText": [
+        "allowed child"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "allowed-children-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#allowed-children-0",
+        "title": "Allowed children",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "effectively-contained",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#effectively-contained",
+      "linkingText": [
+        "effectively contained"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "inline-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#inline-formatting-command-definitions-0",
+        "title": "Inline formatting command definitions",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modifiable-element",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#modifiable-element",
+      "linkingText": [
+        "modifiable element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "inline-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#inline-formatting-command-definitions-0",
+        "title": "Inline formatting command definitions",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "simple-modifiable-element",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#simple-modifiable-element",
+      "linkingText": [
+        "simple modifiable element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "inline-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#inline-formatting-command-definitions-0",
+        "title": "Inline formatting command definitions",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "formattable-node",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#formattable-node",
+      "linkingText": [
+        "formattable node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "inline-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#inline-formatting-command-definitions-0",
+        "title": "Inline formatting command definitions",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "equivalent-values",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#equivalent-values",
+      "linkingText": [
+        "equivalent values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "inline-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#inline-formatting-command-definitions-0",
+        "title": "Inline formatting command definitions",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "loosely-equivalent-values",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#loosely-equivalent-values",
+      "linkingText": [
+        "loosely equivalent values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "inline-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#inline-formatting-command-definitions-0",
+        "title": "Inline formatting command definitions",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "inline-command-activated-values",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#inline-command-activated-values",
+      "linkingText": [
+        "inline command activated values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "inline-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#inline-formatting-command-definitions-0",
+        "title": "Inline formatting command definitions",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "standard-inline-value-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#standard-inline-value-command",
+      "linkingText": [
+        "standard inline value command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "inline-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#inline-formatting-command-definitions-0",
+        "title": "Inline formatting command definitions",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "effective-command-value",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#effective-command-value",
+      "linkingText": [
+        "effective command value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-inline-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-inline-formatting-command-algorithms-0",
+        "title": "Assorted inline formatting command algorithms",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "specified-command-value",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#specified-command-value",
+      "linkingText": [
+        "specified command value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-inline-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-inline-formatting-command-algorithms-0",
+        "title": "Assorted inline formatting command algorithms",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "record-the-values",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#record-the-values",
+      "linkingText": [
+        "record the values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-inline-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-inline-formatting-command-algorithms-0",
+        "title": "Assorted inline formatting command algorithms",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "restore-the-values",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#restore-the-values",
+      "linkingText": [
+        "restore the values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-inline-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-inline-formatting-command-algorithms-0",
+        "title": "Assorted inline formatting command algorithms",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clear-the-value",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#clear-the-value",
+      "linkingText": [
+        "clear the value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "clearing-an-element-s-value",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#clearing-an-element-s-value",
+        "title": "Clearing an element's value",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "push-down-values",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#push-down-values",
+      "linkingText": [
+        "push down values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "pushing-down-values-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#pushing-down-values-0",
+        "title": "Pushing down values",
+        "number": "8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "force-the-value",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#force-the-value",
+      "linkingText": [
+        "force the value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "forcing-the-value-of-a-node-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#forcing-the-value-of-a-node-0",
+        "title": "Forcing the value of a node",
+        "number": "8.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "reorder-modifiable-descendants",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#reorder-modifiable-descendants",
+      "linkingText": [
+        "reorder modifiable descendants"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "forcing-the-value-of-a-node-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#forcing-the-value-of-a-node-0",
+        "title": "Forcing the value of a node",
+        "number": "8.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-the-selection's-value",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#set-the-selection's-value",
+      "linkingText": [
+        "set the selection's value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "setting-the-selection-s-value",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#setting-the-selection-s-value",
+        "title": "Setting the selection's value",
+        "number": "8.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-the-backcolor-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-backcolor-command",
+      "linkingText": [
+        "The backColor command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-backcolor-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-backcolor-command-0",
+        "title": "The backColor command",
+        "number": "8.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-bold-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-bold-command",
+      "linkingText": [
+        "The bold command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-bold-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-bold-command-0",
+        "title": "The bold command",
+        "number": "8.8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-createlink-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-createlink-command",
+      "linkingText": [
+        "The createLink command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-createlink-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-createlink-command-0",
+        "title": "The createLink command",
+        "number": "8.9"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-fontname-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-fontname-command",
+      "linkingText": [
+        "The fontName command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-fontname-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-fontname-command-0",
+        "title": "The fontName command",
+        "number": "8.10"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-fontsize-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-fontsize-command",
+      "linkingText": [
+        "The fontSize command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-fontsize-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-fontsize-command-0",
+        "title": "The fontSize command",
+        "number": "8.11"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "legacy-font-size-for",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#legacy-font-size-for",
+      "linkingText": [
+        "legacy font size for"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-fontsize-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-fontsize-command-0",
+        "title": "The fontSize command",
+        "number": "8.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-the-forecolor-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-forecolor-command",
+      "linkingText": [
+        "The foreColor command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-forecolor-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-forecolor-command-0",
+        "title": "The foreColor command",
+        "number": "8.12"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-hilitecolor-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-hilitecolor-command",
+      "linkingText": [
+        "The hiliteColor command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-hilitecolor-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-hilitecolor-command-0",
+        "title": "The hiliteColor command",
+        "number": "8.12.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-italic-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-italic-command",
+      "linkingText": [
+        "The italic command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-italic-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-italic-command-0",
+        "title": "The italic command",
+        "number": "8.12.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-removeformat-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-removeformat-command",
+      "linkingText": [
+        "The removeFormat command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-removeformat-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-removeformat-command-0",
+        "title": "The removeFormat command",
+        "number": "8.12.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "removeformat-candidate",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#removeformat-candidate",
+      "linkingText": [
+        "removeFormat candidate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-removeformat-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-removeformat-command-0",
+        "title": "The removeFormat command",
+        "number": "8.12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-the-strikethrough-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-strikethrough-command",
+      "linkingText": [
+        "The strikethrough command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-strikethrough-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-strikethrough-command-0",
+        "title": "The strikethrough command",
+        "number": "8.13"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-subscript-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-subscript-command",
+      "linkingText": [
+        "The subscript command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-subscript-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-subscript-command-0",
+        "title": "The subscript command",
+        "number": "8.14"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-superscript-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-superscript-command",
+      "linkingText": [
+        "The superscript command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-superscript-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-superscript-command-0",
+        "title": "The superscript command",
+        "number": "8.15"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-underline-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-underline-command",
+      "linkingText": [
+        "The underline command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-underline-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-underline-command-0",
+        "title": "The underline command",
+        "number": "8.15.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-unlink-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-unlink-command",
+      "linkingText": [
+        "The unlink command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-unlink-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-unlink-command-0",
+        "title": "The unlink command",
+        "number": "8.16"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "indentation-element",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#indentation-element",
+      "linkingText": [
+        "indentation element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-formatting-command-definitions-0",
+        "title": "Block formatting command definitions",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "simple-indentation-element",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#simple-indentation-element",
+      "linkingText": [
+        "simple indentation element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-formatting-command-definitions-0",
+        "title": "Block formatting command definitions",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "non-list-single-line-container",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#non-list-single-line-container",
+      "linkingText": [
+        "non-list single-line container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-formatting-command-definitions-0",
+        "title": "Block formatting command definitions",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "single-line-container",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#single-line-container",
+      "linkingText": [
+        "single-line container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-formatting-command-definitions-0",
+        "title": "Block formatting command definitions",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-node-of",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#block-node-of",
+      "linkingText": [
+        "block node of"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-formatting-command-definitions-0",
+        "title": "Block formatting command definitions",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "preserves-overrides",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#preserves-overrides",
+      "linkingText": [
+        "preserves overrides"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-formatting-command-definitions-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-formatting-command-definitions-0",
+        "title": "Block formatting command definitions",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fix-disallowed-ancestors",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#fix-disallowed-ancestors",
+      "linkingText": [
+        "fix disallowed ancestors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-block-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-block-formatting-command-algorithms-0",
+        "title": "Assorted block formatting command algorithms",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "normalize-sublists",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#normalize-sublists",
+      "linkingText": [
+        "normalize sublists"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-block-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-block-formatting-command-algorithms-0",
+        "title": "Assorted block formatting command algorithms",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selection's-list-state",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#selection's-list-state",
+      "linkingText": [
+        "selection's list state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-block-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-block-formatting-command-algorithms-0",
+        "title": "Assorted block formatting command algorithms",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "alignment-value",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#alignment-value",
+      "linkingText": [
+        "alignment value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-block-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-block-formatting-command-algorithms-0",
+        "title": "Assorted block formatting command algorithms",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "next-equivalent-point",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#next-equivalent-point",
+      "linkingText": [
+        "next equivalent point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-block-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-block-formatting-command-algorithms-0",
+        "title": "Assorted block formatting command algorithms",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "previous-equivalent-point",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#previous-equivalent-point",
+      "linkingText": [
+        "previous equivalent point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-block-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-block-formatting-command-algorithms-0",
+        "title": "Assorted block formatting command algorithms",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "first-equivalent-point",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#first-equivalent-point",
+      "linkingText": [
+        "first equivalent point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-block-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-block-formatting-command-algorithms-0",
+        "title": "Assorted block formatting command algorithms",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "last-equivalent-point",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#last-equivalent-point",
+      "linkingText": [
+        "last equivalent point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "assorted-block-formatting-command-algorithms-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#assorted-block-formatting-command-algorithms-0",
+        "title": "Assorted block formatting command algorithms",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-start-point",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#block-start-point",
+      "linkingText": [
+        "block start point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-extending-a-range-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-extending-a-range-0",
+        "title": "Block-extending a range",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-end-point",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#block-end-point",
+      "linkingText": [
+        "block end point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-extending-a-range-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-extending-a-range-0",
+        "title": "Block-extending a range",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-boundary-point",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#block-boundary-point",
+      "linkingText": [
+        "block boundary point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-extending-a-range-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-extending-a-range-0",
+        "title": "Block-extending a range",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-extend",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#block-extend",
+      "linkingText": [
+        "block-extend"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-extending-a-range-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-extending-a-range-0",
+        "title": "Block-extending a range",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "follows-a-line-break",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#follows-a-line-break",
+      "linkingText": [
+        "follows a line break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-extending-a-range-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-extending-a-range-0",
+        "title": "Block-extending a range",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "precedes-a-line-break",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#precedes-a-line-break",
+      "linkingText": [
+        "precedes a line break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "block-extending-a-range-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#block-extending-a-range-0",
+        "title": "Block-extending a range",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "record-current-overrides",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#record-current-overrides",
+      "linkingText": [
+        "record current overrides"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "recording-and-restoring-overrides-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#recording-and-restoring-overrides-0",
+        "title": "Recording and restoring overrides",
+        "number": "9.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "record-current-states-and-values",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#record-current-states-and-values",
+      "linkingText": [
+        "record current states and values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "recording-and-restoring-overrides-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#recording-and-restoring-overrides-0",
+        "title": "Recording and restoring overrides",
+        "number": "9.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "restore-states-and-values",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#restore-states-and-values",
+      "linkingText": [
+        "restore states and values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "recording-and-restoring-overrides-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#recording-and-restoring-overrides-0",
+        "title": "Recording and restoring overrides",
+        "number": "9.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "delete-the-selection",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#delete-the-selection",
+      "linkingText": [
+        "delete the selection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "deleting-the-selection-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#deleting-the-selection-0",
+        "title": "Deleting the selection",
+        "number": "9.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "split-the-parent",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#split-the-parent",
+      "linkingText": [
+        "split the parent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "splitting-a-node-list-s-parent",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#splitting-a-node-list-s-parent",
+        "title": "Splitting a node list's parent",
+        "number": "9.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "preserving-its-descendants",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#preserving-its-descendants",
+      "linkingText": [
+        "preserving its descendants"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "splitting-a-node-list-s-parent",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#splitting-a-node-list-s-parent",
+        "title": "Splitting a node list's parent",
+        "number": "9.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "canonical-space-sequence",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#canonical-space-sequence",
+      "linkingText": [
+        "canonical space sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "canonical-space-sequences-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#canonical-space-sequences-0",
+        "title": "Canonical space sequences",
+        "number": "9.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "canonicalize-whitespace",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#canonicalize-whitespace",
+      "linkingText": [
+        "canonicalize whitespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "canonical-space-sequences-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#canonical-space-sequences-0",
+        "title": "Canonical space sequences",
+        "number": "9.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "indent",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#indent",
+      "linkingText": [
+        "indent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "indenting-and-outdenting-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#indenting-and-outdenting-0",
+        "title": "Indenting and outdenting",
+        "number": "9.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "outdent",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#outdent",
+      "linkingText": [
+        "outdent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "indenting-and-outdenting-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#indenting-and-outdenting-0",
+        "title": "Indenting and outdenting",
+        "number": "9.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "toggle-lists",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#toggle-lists",
+      "linkingText": [
+        "toggle lists"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "toggling-lists-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#toggling-lists-0",
+        "title": "Toggling lists",
+        "number": "9.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "justify-the-selection",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#justify-the-selection",
+      "linkingText": [
+        "justify the selection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "justifying-the-selection-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#justifying-the-selection-0",
+        "title": "Justifying the selection",
+        "number": "9.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "autolinkable-url",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#autolinkable-url",
+      "linkingText": [
+        "autolinkable URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "automatic-linking-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#automatic-linking-0",
+        "title": "Automatic linking",
+        "number": "9.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "autolink",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#autolink",
+      "linkingText": [
+        "autolink"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "automatic-linking-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#automatic-linking-0",
+        "title": "Automatic linking",
+        "number": "9.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-the-delete-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-delete-command",
+      "linkingText": [
+        "The delete command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-delete-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-delete-command-0",
+        "title": "The delete command",
+        "number": "9.12"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-formatblock-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-formatblock-command",
+      "linkingText": [
+        "The formatBlock command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-formatblock-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-formatblock-command-0",
+        "title": "The formatBlock command",
+        "number": "9.13"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "formattable-block-name",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#formattable-block-name",
+      "linkingText": [
+        "formattable block name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-formatblock-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-formatblock-command-0",
+        "title": "The formatBlock command",
+        "number": "9.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-the-forwarddelete-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-forwarddelete-command",
+      "linkingText": [
+        "The forwardDelete command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-forwarddelete-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-forwarddelete-command-0",
+        "title": "The forwardDelete command",
+        "number": "9.14"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-indent-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-indent-command",
+      "linkingText": [
+        "The indent command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-indent-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-indent-command-0",
+        "title": "The indent command",
+        "number": "9.15"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-inserthorizontalrule-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-inserthorizontalrule-command",
+      "linkingText": [
+        "The insertHorizontalRule command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-inserthorizontalrule-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-inserthorizontalrule-command-0",
+        "title": "The insertHorizontalRule command",
+        "number": "9.16"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-inserthtml-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-inserthtml-command",
+      "linkingText": [
+        "The insertHTML command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-inserthtml-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-inserthtml-command-0",
+        "title": "The insertHTML command",
+        "number": "9.17"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-insertimage-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-insertimage-command",
+      "linkingText": [
+        "The insertImage command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-insertimage-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-insertimage-command-0",
+        "title": "The insertImage command",
+        "number": "9.18"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-insertlinebreak-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-insertlinebreak-command",
+      "linkingText": [
+        "The insertLineBreak command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-insertlinebreak-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-insertlinebreak-command-0",
+        "title": "The insertLineBreak command",
+        "number": "9.19"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-insertorderedlist-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-insertorderedlist-command",
+      "linkingText": [
+        "The insertOrderedList command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-insertorderedlist-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-insertorderedlist-command-0",
+        "title": "The insertOrderedList command",
+        "number": "9.20"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-insertparagraph-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-insertparagraph-command",
+      "linkingText": [
+        "The insertParagraph command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-insertparagraph-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-insertparagraph-command-0",
+        "title": "The insertParagraph command",
+        "number": "9.21"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-inserttext-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-inserttext-command",
+      "linkingText": [
+        "The insertText command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-inserttext-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-inserttext-command-0",
+        "title": "The insertText command",
+        "number": "9.22"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-insertunorderedlist-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-insertunorderedlist-command",
+      "linkingText": [
+        "The insertUnorderedList command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-insertunorderedlist-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-insertunorderedlist-command-0",
+        "title": "The insertUnorderedList command",
+        "number": "9.23"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-justifycenter-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-justifycenter-command",
+      "linkingText": [
+        "The justifyCenter command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-justifycenter-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-justifycenter-command-0",
+        "title": "The justifyCenter command",
+        "number": "9.24"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-justifyfull-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-justifyfull-command",
+      "linkingText": [
+        "The justifyFull command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-justifyfull-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-justifyfull-command-0",
+        "title": "The justifyFull command",
+        "number": "9.25"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-justifyleft-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-justifyleft-command",
+      "linkingText": [
+        "The justifyLeft command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-justifyleft-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-justifyleft-command-0",
+        "title": "The justifyLeft command",
+        "number": "9.26"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-justifyright-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-justifyright-command",
+      "linkingText": [
+        "The justifyRight command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-justifyright-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-justifyright-command-0",
+        "title": "The justifyRight command",
+        "number": "9.27"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-outdent-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-outdent-command",
+      "linkingText": [
+        "The outdent command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-outdent-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-outdent-command-0",
+        "title": "The outdent command",
+        "number": "9.28"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-copy-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-copy-command",
+      "linkingText": [
+        "The copy command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-copy-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-copy-command-0",
+        "title": "The copy command",
+        "number": "10.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-cut-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-cut-command",
+      "linkingText": [
+        "The cut command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-cut-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-cut-command-0",
+        "title": "The cut command",
+        "number": "10.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-paste-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-paste-command",
+      "linkingText": [
+        "The paste command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-paste-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-paste-command-0",
+        "title": "The paste command",
+        "number": "10.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-defaultparagraphseparator-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-defaultparagraphseparator-command",
+      "linkingText": [
+        "The defaultParagraphSeparator command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-defaultparagraphseparator-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-defaultparagraphseparator-command-0",
+        "title": "The defaultParagraphSeparator command",
+        "number": "11.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-redo-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-redo-command",
+      "linkingText": [
+        "The redo command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-redo-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-redo-command-0",
+        "title": "The redo command",
+        "number": "11.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-selectall-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-selectall-command",
+      "linkingText": [
+        "The selectAll command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-selectall-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-selectall-command-0",
+        "title": "The selectAll command",
+        "number": "11.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-stylewithcss-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-stylewithcss-command",
+      "linkingText": [
+        "The styleWithCSS command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-stylewithcss-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-stylewithcss-command-0",
+        "title": "The styleWithCSS command",
+        "number": "11.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-undo-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-undo-command",
+      "linkingText": [
+        "The undo command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-undo-command-0",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-undo-command-0",
+        "title": "The undo command",
+        "number": "11.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-the-usecss-command",
+      "href": "https://w3c.github.io/editing/docs/execCommand/#dfn-the-usecss-command",
+      "linkingText": [
+        "The useCSS command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "the-usecss-command",
+        "href": "https://w3c.github.io/editing/docs/execCommand/#the-usecss-command",
+        "title": "The useCSS command",
+        "number": "11.6"
+      },
+      "definedIn": "heading"
+    }
+  ]
+}

@@ -11,6 +11,7 @@
           "abortcontroller-api-integration"
         ]
       },
+      "https://fetch.spec.whatwg.org/": {},
       "https://github.com/WICG/digital-credentials/blob/main/horizontal-reviews/security-privacy.md": {},
       "https://github.com/WICG/digital-credentials/issues/": {},
       "https://github.com/WICG/digital-credentials/issues/58": {},
@@ -69,6 +70,11 @@
       "https://www.w3.org/groups/cg/wicg": {}
     },
     "autolinks": {
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
           "fully-active-descendant-of-a-top-level-traversable-with-user-attention",
@@ -103,12 +109,12 @@
           "idl-sequence",
           "idl-DOMString",
           "idl-object",
+          "exceptiondef-typeerror",
           "Exposed",
           "this",
           "dfn-throw",
           "notallowederror",
           "idl-DOMException",
-          "exceptiondef-typeerror",
           "dfn-interface-object"
         ]
       },
@@ -121,11 +127,17 @@
         "anchors": [
           "credentialscontainer",
           "dictdef-credentialrequestoptions",
+          "user-mediated",
+          "dom-credentialmediationrequirement-required",
+          "abstract-opdef-request-a-credential",
+          "dom-credentialmediationrequirement-conditional",
+          "dom-credentialmediationrequirement-optional",
+          "dom-credentialmediationrequirement-silent",
+          "dom-credentialscontainer-get",
           "credential",
           "credential-origin-bound",
           "dom-credential-store-slot",
-          "dom-credential-create-slot",
-          "dom-credentialscontainer-get"
+          "dom-credential-create-slot"
         ]
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
