@@ -276,45 +276,27 @@
           "html": "<p>Let <var>position</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-position-variable\" id=\"ref-for-string-position-variable③\">position variable</a> for <var>input</var>,\n initially pointing at the start of <var>input</var>. </p>"
         },
         {
-          "html": "<p>Let <var>values</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">strings</a>, initially empty. </p>"
+          "html": "<p>Let <var>values</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">strings</a>, initially « ». </p>"
         },
         {
           "html": "<p>Let <var>temporaryValue</var> be the empty string. </p>"
         },
         {
-          "html": "While <var>position</var> is not past the end of <var>input</var>:",
+          "html": "While true:",
           "rationale": "append",
           "steps": [
             {
               "html": "<p>Append the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points\" id=\"ref-for-collect-a-sequence-of-code-points①\">collecting a sequence of code points</a> that are not U+0022 (\") or\n    U+002C (,) from <var>input</var>, given <var>position</var>, to <var>temporaryValue</var>. </p>"
             },
             {
-              "html": "If <var>position</var> is not past the end of <var>input</var>, then:",
-              "rationale": "if",
+              "html": "If <var>position</var> is not past the end of <var>input</var> and the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point④\">code point</a> at <var>position</var> within <var>input</var> is U+0022 (\"):",
+              "rationale": "append",
               "steps": [
                 {
-                  "html": "If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point④\">code point</a> at <var>position</var> within <var>input</var> is\n      U+0022 (\"), then:",
-                  "rationale": "append",
-                  "steps": [
-                    {
-                      "html": "<p>Append the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#collect-an-http-quoted-string\" id=\"ref-for-collect-an-http-quoted-string\">collecting an HTTP quoted string</a> from <var>input</var>,\n       given <var>position</var>, to <var>temporaryValue</var>. </p>"
-                    },
-                    {
-                      "html": "If <var>position</var> is not past the end of <var>input</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>."
-                    }
-                  ]
+                  "html": "<p>Append the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#collect-an-http-quoted-string\" id=\"ref-for-collect-an-http-quoted-string\">collecting an HTTP quoted string</a> from <var>input</var>,\n     given <var>position</var>, to <var>temporaryValue</var>. </p>"
                 },
                 {
-                  "html": "Otherwise:",
-                  "rationale": "assert",
-                  "steps": [
-                    {
-                      "html": "<p>Assert: the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑤\">code point</a> at <var>position</var> within <var>input</var> is\n       U+002C (,). </p>"
-                    },
-                    {
-                      "html": "<p>Advance <var>position</var> by 1. </p>"
-                    }
-                  ]
+                  "html": "If <var>position</var> is not past the end of <var>input</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>."
                 }
               ]
             },
@@ -326,11 +308,17 @@
             },
             {
               "html": "<p>Set <var>temporaryValue</var> to the empty string. </p>"
+            },
+            {
+              "html": "<p>If <var>position</var> is past the end of <var>input</var>, then return <var>values</var>. </p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑤\">code point</a> at <var>position</var> within <var>input</var> is U+002C (,). </p>"
+            },
+            {
+              "html": "<p>Advance <var>position</var> by 1. </p>"
             }
           ]
-        },
-        {
-          "html": "<p>Return <var>values</var>. </p>"
         }
       ]
     },
@@ -1105,7 +1093,7 @@
     {
       "name": "resolve an origin",
       "href": "https://fetch.spec.whatwg.org/#resolve-an-origin",
-      "html": "<a class=\"tracking-vector\" href=\"https://infra.spec.whatwg.org/#tracking-vector\"><img alt=\"(This is a tracking vector.)\" crossorigin=\"\" height=\"64\" src=\"https://resources.whatwg.org/tracking-vector.svg\" title=\"There is a tracking vector here.\" width=\"46\"></a> To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resolve-an-origin\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">resolve an origin<span id=\"resolve-a-domain\"></span></dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#network-partition-key\" id=\"ref-for-network-partition-key\">network partition key</a> <var>key</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>origin</var>:",
+      "html": "<a class=\"tracking-vector\" href=\"https://infra.spec.whatwg.org/#tracking-vector\" style=\"color: currentcolor\"><img alt=\"(This is a tracking vector.)\" class=\"darkmode-aware\" crossorigin=\"\" height=\"64\" src=\"https://resources.whatwg.org/tracking-vector.svg\" title=\"There is a tracking vector here.\" width=\"46\"></a> To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resolve-an-origin\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">resolve an origin<span id=\"resolve-a-domain\"></span></dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#network-partition-key\" id=\"ref-for-network-partition-key\">network partition key</a> <var>key</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>origin</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1671,7 +1659,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode⑧\">mode</a> is \"<code>navigate</code>\" or <var>processEarlyHintsResponse</var> is null. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode⑧\">mode</a> is \"<code>navigate</code>\" or <var>processEarlyHintsResponse</var> is null. </p>"
         },
         {
           "html": "<p>Let <var>taskDestination</var> be null. </p>"
@@ -1714,7 +1702,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin⑨\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin⑤\">same origin</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①②\">client</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>. </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin⑨\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin⑤\">same origin</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①②\">client</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>. </p>"
             },
             {
               "html": "<p>Let <var>onPreloadedResponseAvailable</var> be an algorithm that runs the following\n   step given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑧\">response</a> <var>response</var>: set <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-preloaded-response-candidate\" id=\"ref-for-fetch-params-preloaded-response-candidate\">preloaded response candidate</a> to <var>response</var>. </p>"
@@ -1870,7 +1858,7 @@
                       "html": "<p>Wait until <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-preloaded-response-candidate\" id=\"ref-for-fetch-params-preloaded-response-candidate④\">preloaded response candidate</a> is not \"<code>pending</code>\". </p>"
                     },
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-preloaded-response-candidate\" id=\"ref-for-fetch-params-preloaded-response-candidate⑤\">preloaded response candidate</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑨\">response</a>. </p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-preloaded-response-candidate\" id=\"ref-for-fetch-params-preloaded-response-candidate⑤\">preloaded response candidate</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④⑨\">response</a>. </p>"
                     },
                     {
                       "html": "<p>Return <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params-preloaded-response-candidate\" id=\"ref-for-fetch-params-preloaded-response-candidate⑥\">preloaded response candidate</a>. </p>"
@@ -3281,7 +3269,7 @@
           "html": "<p>Set <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body②④\">body</a> to a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body\" id=\"ref-for-concept-body①①\">body</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-stream\" id=\"ref-for-concept-body-stream①②\">stream</a> is <var>stream</var>. </p>"
         },
         {
-          "html": "<p><a class=\"tracking-vector\" href=\"https://infra.spec.whatwg.org/#tracking-vector\"><img alt=\"(This is a tracking vector.)\" crossorigin=\"\" height=\"64\" src=\"https://resources.whatwg.org/tracking-vector.svg\" title=\"There is a tracking vector here.\" width=\"46\"></a> If <var>includeCredentials</var> is true and the user agent is not\n configured to block cookies for <var>request</var> (see <a href=\"https://httpwg.org/specs/rfc6265.html#privacy-considerations\">section 7</a> of <a data-link-type=\"biblio\" href=\"https://fetch.spec.whatwg.org/#biblio-cookies\" title=\"HTTP State Management Mechanism\">[COOKIES]</a>), then run the \"set-cookie-string\" parsing algorithm (see <a href=\"https://httpwg.org/specs/rfc6265.html#set-cookie\">section 5.2</a> of <a data-link-type=\"biblio\" href=\"https://fetch.spec.whatwg.org/#biblio-cookies\" title=\"HTTP State Management Mechanism\">[COOKIES]</a>) on the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-value\" id=\"ref-for-concept-header-value②⓪\">value</a> of each <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header⑤④\">header</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name②①\">name</a> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-case-insensitive\" id=\"ref-for-byte-case-insensitive①④\">byte-case-insensitive</a> match for `<code>Set-Cookie</code>` in <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list②④\">header list</a>, if any, and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url③⓪\">current URL</a>. </p>"
+          "html": "<p><a class=\"tracking-vector\" href=\"https://infra.spec.whatwg.org/#tracking-vector\" style=\"color: currentcolor\"><img alt=\"(This is a tracking vector.)\" class=\"darkmode-aware\" crossorigin=\"\" height=\"64\" src=\"https://resources.whatwg.org/tracking-vector.svg\" title=\"There is a tracking vector here.\" width=\"46\"></a> If <var>includeCredentials</var> is true and the user agent is not\n configured to block cookies for <var>request</var> (see <a href=\"https://httpwg.org/specs/rfc6265.html#privacy-considerations\">section 7</a> of <a data-link-type=\"biblio\" href=\"https://fetch.spec.whatwg.org/#biblio-cookies\" title=\"HTTP State Management Mechanism\">[COOKIES]</a>), then run the \"set-cookie-string\" parsing algorithm (see <a href=\"https://httpwg.org/specs/rfc6265.html#set-cookie\">section 5.2</a> of <a data-link-type=\"biblio\" href=\"https://fetch.spec.whatwg.org/#biblio-cookies\" title=\"HTTP State Management Mechanism\">[COOKIES]</a>) on the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-value\" id=\"ref-for-concept-header-value②⓪\">value</a> of each <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header⑤④\">header</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name②①\">name</a> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-case-insensitive\" id=\"ref-for-byte-case-insensitive①④\">byte-case-insensitive</a> match for `<code>Set-Cookie</code>` in <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list②④\">header list</a>, if any, and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url③⓪\">current URL</a>. </p>"
         },
         {
           "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in parallel</a>:",
@@ -3775,7 +3763,7 @@
           "html": "<p>Otherwise, set <var>stream</var> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream⑦\">ReadableStream</a></code> object, and <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support\" id=\"ref-for-readablestream-set-up-with-byte-reading-support①\">set up</a> <var>stream</var> with byte reading\n support. </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>stream</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream⑧\">ReadableStream</a></code> object. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>stream</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream⑧\">ReadableStream</a></code> object. </p>"
         },
         {
           "html": "<p>Let <var>action</var> be null. </p>"
@@ -4318,7 +4306,7 @@
           "html": "<p>Let <var>clonedRequest</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-clone\" id=\"ref-for-concept-request-clone③\">cloning</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request②⑥\">request</a>. </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-signal\" id=\"ref-for-request-signal④\">signal</a> is non-null. </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-signal\" id=\"ref-for-request-signal④\">signal</a> is non-null. </p>"
         },
         {
           "html": "<p>Let <var>clonedSignal</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal①\">creating a dependent abort signal</a> from\n « <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-signal\" id=\"ref-for-request-signal⑤\">signal</a> », using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal⑦\">AbortSignal</a></code> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm④\">relevant realm</a>. </p>"
@@ -4537,7 +4525,7 @@
               "html": "<p>Set <var>locallyAborted</var> to true. </p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>controller</var> is non-null. </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: <var>controller</var> is non-null. </p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-abort\" id=\"ref-for-fetch-controller-abort②\">Abort</a> <var>controller</var> with <var>requestObject</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-signal\" id=\"ref-for-request-signal⑨\">signal</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①\">abort reason</a>. </p>"
