@@ -43,6 +43,7 @@
       "https://drafts.csswg.org/css-overflow-3/": {},
       "https://drafts.csswg.org/css-overflow-4/": {},
       "https://drafts.csswg.org/css-position-3/": {},
+      "https://drafts.csswg.org/css-position-4/": {},
       "https://drafts.csswg.org/css-scoping/": {},
       "https://drafts.csswg.org/css-shadow-parts/": {},
       "https://drafts.csswg.org/css-sizing-3/": {},
@@ -184,8 +185,8 @@
         "anchors": [
           "principal-box",
           "containing-block",
-          "initial-containing-block",
           "containing-block-chain",
+          "initial-containing-block",
           "propdef-visibility"
         ]
       },
@@ -197,6 +198,12 @@
       "https://drafts.csswg.org/css-logical-1/": {
         "anchors": [
           "inset-properties",
+          "propdef-inline-size",
+          "propdef-block-size",
+          "propdef-min-inline-size",
+          "propdef-min-block-size",
+          "propdef-max-inline-size",
+          "propdef-max-block-size",
           "propdef-margin-block-start",
           "propdef-margin-block-end",
           "propdef-margin-inline-start"
@@ -222,17 +229,28 @@
           "valdef-top-auto",
           "propdef-inset",
           "original-containing-block",
+          "propdef-top",
           "propdef-left",
           "propdef-right",
-          "inset-modified-containing-block",
-          "propdef-top",
-          "propdef-bottom"
+          "propdef-bottom",
+          "propdef-inset-block-start",
+          "propdef-inset-block-end",
+          "propdef-inset-inline-start",
+          "propdef-inset-inline-end",
+          "inset-modified-containing-block"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-4/": {
+        "anchors": [
+          "in-a-higher-top-layer",
+          "in-the-same-top-layer"
         ]
       },
       "https://drafts.csswg.org/css-scoping-1/": {
         "anchors": [
           "css-tree-scoped-name",
-          "css-tree-scoped-reference"
+          "css-tree-scoped-reference",
+          "flat-tree"
         ]
       },
       "https://drafts.csswg.org/css-shadow-parts-1/": {
@@ -245,7 +263,10 @@
           "propdef-max-height",
           "sizing-property",
           "propdef-width",
-          "propdef-height"
+          "propdef-height",
+          "propdef-min-width",
+          "propdef-min-height",
+          "propdef-max-width"
         ]
       },
       "https://drafts.csswg.org/css-sizing-4/": {
