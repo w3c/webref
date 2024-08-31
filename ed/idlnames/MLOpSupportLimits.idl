@@ -1,0 +1,257 @@
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+dictionary MLOpSupportLimits {
+  MLInputOperandLayout preferredInputLayout;
+  MLSupportLimits input;
+  MLSupportLimits constant;
+  MLSupportLimits output;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits argMin;
+  MLSingleInputSupportLimits argMax;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLBatchNormalizationSupportLimits batchNormalization;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits cast;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits clamp;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLConcatSupportLimits concat;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLConv2dSupportLimits conv2d;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLConv2dSupportLimits convTranspose2d;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLBinarySupportLimits add;
+  MLBinarySupportLimits sub;
+  MLBinarySupportLimits mul;
+  MLBinarySupportLimits div;
+  MLBinarySupportLimits max;
+  MLBinarySupportLimits min;
+  MLBinarySupportLimits pow;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLBinarySupportLimits equal;
+  MLBinarySupportLimits greater;
+  MLBinarySupportLimits greaterOrEqual;
+  MLBinarySupportLimits lesser;
+  MLBinarySupportLimits lesserOrEqual;
+  MLLogicalNotSupportLimits logicalNot;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits abs;
+  MLSingleInputSupportLimits ceil;
+  MLSingleInputSupportLimits cos;
+  MLSingleInputSupportLimits erf;
+  MLSingleInputSupportLimits exp;
+  MLSingleInputSupportLimits floor;
+  MLSingleInputSupportLimits identity;
+  MLSingleInputSupportLimits log;
+  MLSingleInputSupportLimits neg;
+  MLSingleInputSupportLimits reciprocal;
+  MLSingleInputSupportLimits sin;
+  MLSingleInputSupportLimits sqrt;
+  MLSingleInputSupportLimits tan;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits elu;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits expand;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLGatherSupportLimits gather;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits gelu;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLGemmSupportLimits gemm;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLGruSupportLimits gru;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLGruCellSupportLimits gruCell;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits hardSigmoid;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits hardSwish;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLNormalizationSupportLimits instanceNormalization;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLNormalizationSupportLimits layerNormalization;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits leakyRelu;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits linear;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLLstmSupportLimits lstm;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLLstmCellSupportLimits lstmCell;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLBinarySupportLimits matmul;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits pad;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits averagePool2d;
+  MLSingleInputSupportLimits l2Pool2d;
+  MLSingleInputSupportLimits maxPool2d;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLPreluSupportLimits prelu;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits reduceL1;
+  MLSingleInputSupportLimits reduceL2;
+  MLSingleInputSupportLimits reduceLogSum;
+  MLSingleInputSupportLimits reduceLogSumExp;
+  MLSingleInputSupportLimits reduceMax;
+  MLSingleInputSupportLimits reduceMean;
+  MLSingleInputSupportLimits reduceMin;
+  MLSingleInputSupportLimits reduceProduct;
+  MLSingleInputSupportLimits reduceSum;
+  MLSingleInputSupportLimits reduceSumSquare;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits relu;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits resample2d;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits reshape;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits sigmoid;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial  dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits slice;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits softmax;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits softplus;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits softsign;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits split;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits tanh;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits transpose;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLSingleInputSupportLimits triangular;
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial dictionary MLOpSupportLimits {
+  MLWhereSupportLimits where;
+};

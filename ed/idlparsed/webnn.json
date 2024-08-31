@@ -362,7 +362,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcomputeresult"
       },
       "MLContext": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLContext {\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n\n  MLOpSupportLimits opSupportLimits();\n};",
         "type": "interface",
         "name": "MLContext",
         "inheritance": null,
@@ -440,6 +440,22 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-compute"
+          },
+          {
+            "type": "operation",
+            "name": "opSupportLimits",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOpSupportLimits"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-opsupportlimits"
           }
         ],
         "extAttrs": [
@@ -468,6 +484,219 @@
         ],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#mlcontext"
+      },
+      "MLOpSupportLimits": {
+        "fragment": "dictionary MLOpSupportLimits {\n  MLInputOperandLayout preferredInputLayout;\n  MLSupportLimits input;\n  MLSupportLimits constant;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLOpSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "preferredInputLayout",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLInputOperandLayout"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-preferredinputlayout"
+          },
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "constant",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-constant"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlopsupportlimits"
+      },
+      "MLSupportLimits": {
+        "fragment": "dictionary MLSupportLimits {\n  sequence<MLOperandDataType> dataTypes;\n};",
+        "type": "dictionary",
+        "name": "MLSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "dataTypes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLOperandDataType"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlsupportlimits-datatypes"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsupportlimits"
+      },
+      "MLBinarySupportLimits": {
+        "fragment": "dictionary MLBinarySupportLimits {\n  MLSupportLimits a;\n  MLSupportLimits b;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLBinarySupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "a",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbinarysupportlimits-a"
+          },
+          {
+            "type": "field",
+            "name": "b",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbinarysupportlimits-b"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbinarysupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlbinarysupportlimits"
+      },
+      "MLSingleInputSupportLimits": {
+        "fragment": "dictionary MLSingleInputSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLSingleInputSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlsingleinputsupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlsingleinputsupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsingleinputsupportlimits"
       },
       "MLGraph": {
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraph {};",
@@ -1184,6 +1413,113 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlbatchnormalizationoptions"
       },
+      "MLBatchNormalizationSupportLimits": {
+        "fragment": "dictionary MLBatchNormalizationSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits mean;\n  MLSupportLimits variance;\n  MLSupportLimits scale;\n  MLSupportLimits bias;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLBatchNormalizationSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationsupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "mean",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationsupportlimits-mean"
+          },
+          {
+            "type": "field",
+            "name": "variance",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationsupportlimits-variance"
+          },
+          {
+            "type": "field",
+            "name": "scale",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationsupportlimits-scale"
+          },
+          {
+            "type": "field",
+            "name": "bias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationsupportlimits-bias"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlbatchnormalizationsupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlbatchnormalizationsupportlimits"
+      },
       "MLClampOptions": {
         "fragment": "dictionary MLClampOptions : MLOperatorOptions {\n  MLNumber minValue;\n  MLNumber maxValue;\n};",
         "type": "dictionary",
@@ -1226,6 +1562,49 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlclampoptions"
+      },
+      "MLConcatSupportLimits": {
+        "fragment": "dictionary MLConcatSupportLimits {\n  MLSupportLimits inputs;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLConcatSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "inputs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconcatsupportlimits-inputs"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconcatsupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconcatsupportlimits"
       },
       "MLConv2dFilterOperandLayout": {
         "fragment": "enum MLConv2dFilterOperandLayout {\n  \"oihw\",\n  \"hwio\",\n  \"ohwi\",\n  \"ihwo\"\n};",
@@ -1442,6 +1821,81 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconv2doptions"
+      },
+      "MLConv2dSupportLimits": {
+        "fragment": "dictionary MLConv2dSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits filter;\n  MLSupportLimits bias;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLConv2dSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2dsupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "filter",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2dsupportlimits-filter"
+          },
+          {
+            "type": "field",
+            "name": "bias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2dsupportlimits-bias"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlconv2dsupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconv2dsupportlimits"
       },
       "MLConvTranspose2dFilterOperandLayout": {
         "fragment": "enum MLConvTranspose2dFilterOperandLayout {\n  \"iohw\",\n  \"hwoi\",\n  \"ohwi\"\n};",
@@ -1718,6 +2172,49 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconvtranspose2doptions"
       },
+      "MLLogicalNotSupportLimits": {
+        "fragment": "dictionary MLLogicalNotSupportLimits {\n  MLSupportLimits a;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLLogicalNotSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "a",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllogicalnotsupportlimits-a"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllogicalnotsupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllogicalnotsupportlimits"
+      },
       "MLEluOptions": {
         "fragment": "dictionary MLEluOptions : MLOperatorOptions {\n  double alpha = 1;\n};",
         "type": "dictionary",
@@ -1784,6 +2281,65 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgatheroptions"
+      },
+      "MLGatherSupportLimits": {
+        "fragment": "dictionary MLGatherSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits indices;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLGatherSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgathersupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "indices",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgathersupportlimits-indices"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgathersupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgathersupportlimits"
       },
       "MLGemmOptions": {
         "fragment": "dictionary MLGemmOptions : MLOperatorOptions {\n  MLOperand c;\n  double alpha = 1.0;\n  double beta = 1.0;\n  boolean aTranspose = false;\n  boolean bTranspose = false;\n};",
@@ -1887,6 +2443,81 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgemmoptions"
+      },
+      "MLGemmSupportLimits": {
+        "fragment": "dictionary MLGemmSupportLimits {\n  MLSupportLimits a;\n  MLSupportLimits b;\n  MLSupportLimits c;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLGemmSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "a",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgemmsupportlimits-a"
+          },
+          {
+            "type": "field",
+            "name": "b",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgemmsupportlimits-b"
+          },
+          {
+            "type": "field",
+            "name": "c",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgemmsupportlimits-c"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgemmsupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgemmsupportlimits"
       },
       "MLGruWeightLayout": {
         "fragment": "enum MLGruWeightLayout {\n  \"zrn\",  // update-reset-new gate ordering\n  \"rzn\"   // reset-update-new gate ordering\n};",
@@ -2115,6 +2746,129 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgruoptions"
       },
+      "MLGruSupportLimits": {
+        "fragment": "dictionary MLGruSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits weight;\n  MLSupportLimits recurrentWeight;\n  MLSupportLimits bias;\n  MLSupportLimits recurrentBias;\n  MLSupportLimits initialHiddenState;\n  MLSupportLimits outputs;\n};",
+        "type": "dictionary",
+        "name": "MLGruSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrusupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "weight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrusupportlimits-weight"
+          },
+          {
+            "type": "field",
+            "name": "recurrentWeight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrusupportlimits-recurrentweight"
+          },
+          {
+            "type": "field",
+            "name": "bias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrusupportlimits-bias"
+          },
+          {
+            "type": "field",
+            "name": "recurrentBias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrusupportlimits-recurrentbias"
+          },
+          {
+            "type": "field",
+            "name": "initialHiddenState",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrusupportlimits-initialhiddenstate"
+          },
+          {
+            "type": "field",
+            "name": "outputs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrusupportlimits-outputs"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgrusupportlimits"
+      },
       "MLGruCellOptions": {
         "fragment": "dictionary MLGruCellOptions : MLOperatorOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  boolean resetAfter = true;\n  MLGruWeightLayout layout = \"zrn\";\n  sequence<MLRecurrentNetworkActivation> activations;\n};",
         "type": "dictionary",
@@ -2220,6 +2974,129 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgrucelloptions"
+      },
+      "MLGruCellSupportLimits": {
+        "fragment": "dictionary MLGruCellSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits weight;\n  MLSupportLimits recurrentWeight;\n  MLSupportLimits hiddenState;\n  MLSupportLimits bias;\n  MLSupportLimits recurrentBias;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLGruCellSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucellsupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "weight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucellsupportlimits-weight"
+          },
+          {
+            "type": "field",
+            "name": "recurrentWeight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucellsupportlimits-recurrentweight"
+          },
+          {
+            "type": "field",
+            "name": "hiddenState",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucellsupportlimits-hiddenstate"
+          },
+          {
+            "type": "field",
+            "name": "bias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucellsupportlimits-bias"
+          },
+          {
+            "type": "field",
+            "name": "recurrentBias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucellsupportlimits-recurrentbias"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgrucellsupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgrucellsupportlimits"
       },
       "MLHardSigmoidOptions": {
         "fragment": "dictionary MLHardSigmoidOptions : MLOperatorOptions {\n  double alpha = 0.2;\n  double beta = 0.5;\n};",
@@ -2350,6 +3227,81 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlinstancenormalizationoptions"
+      },
+      "MLNormalizationSupportLimits": {
+        "fragment": "dictionary MLNormalizationSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits scale;\n  MLSupportLimits bias;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLNormalizationSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlnormalizationsupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "scale",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlnormalizationsupportlimits-scale"
+          },
+          {
+            "type": "field",
+            "name": "bias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlnormalizationsupportlimits-bias"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlnormalizationsupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlnormalizationsupportlimits"
       },
       "MLLayerNormalizationOptions": {
         "fragment": "dictionary MLLayerNormalizationOptions : MLOperatorOptions {\n  MLOperand scale;\n  MLOperand bias;\n  sequence<[EnforceRange] unsigned long> axes;\n  double epsilon = 1e-5;\n};",
@@ -2716,6 +3668,161 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmoptions"
       },
+      "MLLstmSupportLimits": {
+        "fragment": "dictionary MLLstmSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits weight;\n  MLSupportLimits recurrentWeight;\n  MLSupportLimits bias;\n  MLSupportLimits recurrentBias;\n  MLSupportLimits peepholeWeight;\n  MLSupportLimits initialHiddenState;\n  MLSupportLimits initialCellState;\n  MLSupportLimits outputs;\n};",
+        "type": "dictionary",
+        "name": "MLLstmSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmsupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "weight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmsupportlimits-weight"
+          },
+          {
+            "type": "field",
+            "name": "recurrentWeight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmsupportlimits-recurrentweight"
+          },
+          {
+            "type": "field",
+            "name": "bias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmsupportlimits-bias"
+          },
+          {
+            "type": "field",
+            "name": "recurrentBias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmsupportlimits-recurrentbias"
+          },
+          {
+            "type": "field",
+            "name": "peepholeWeight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmsupportlimits-peepholeweight"
+          },
+          {
+            "type": "field",
+            "name": "initialHiddenState",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmsupportlimits-initialhiddenstate"
+          },
+          {
+            "type": "field",
+            "name": "initialCellState",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmsupportlimits-initialcellstate"
+          },
+          {
+            "type": "field",
+            "name": "outputs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmsupportlimits-outputs"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmsupportlimits"
+      },
       "MLLstmCellOptions": {
         "fragment": "dictionary MLLstmCellOptions : MLOperatorOptions {\n  MLOperand bias;\n  MLOperand recurrentBias;\n  MLOperand peepholeWeight;\n  MLLstmWeightLayout layout = \"iofg\";\n  sequence<MLRecurrentNetworkActivation> activations;\n};",
         "type": "dictionary",
@@ -2818,6 +3925,161 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmcelloptions"
+      },
+      "MLLstmCellSupportLimits": {
+        "fragment": "dictionary MLLstmCellSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits weight;\n  MLSupportLimits recurrentWeight;\n  MLSupportLimits hiddenState;\n  MLSupportLimits cellState;\n  MLSupportLimits bias;\n  MLSupportLimits recurrentBias;\n  MLSupportLimits peepholeWeight;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLLstmCellSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcellsupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "weight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcellsupportlimits-weight"
+          },
+          {
+            "type": "field",
+            "name": "recurrentWeight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcellsupportlimits-recurrentweight"
+          },
+          {
+            "type": "field",
+            "name": "hiddenState",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcellsupportlimits-hiddenstate"
+          },
+          {
+            "type": "field",
+            "name": "cellState",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcellsupportlimits-cellstate"
+          },
+          {
+            "type": "field",
+            "name": "bias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcellsupportlimits-bias"
+          },
+          {
+            "type": "field",
+            "name": "recurrentBias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcellsupportlimits-recurrentbias"
+          },
+          {
+            "type": "field",
+            "name": "peepholeWeight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcellsupportlimits-peepholeweight"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcellsupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmcellsupportlimits"
       },
       "MLPaddingMode": {
         "fragment": "enum MLPaddingMode {\n  \"constant\",\n  \"edge\",\n  \"reflection\",\n  \"symmetric\"\n};",
@@ -3125,6 +4387,65 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlpool2doptions"
       },
+      "MLPreluSupportLimits": {
+        "fragment": "dictionary MLPreluSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits slope;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLPreluSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlprelusupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "slope",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlprelusupportlimits-slope"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlprelusupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlprelusupportlimits"
+      },
       "MLReduceOptions": {
         "fragment": "dictionary MLReduceOptions : MLOperatorOptions {\n  sequence<[EnforceRange] unsigned long> axes;\n  boolean keepDimensions = false;\n};",
         "type": "dictionary",
@@ -3362,6 +4683,49 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsplitoptions"
       },
+      "MLSplitSupportLimits": {
+        "fragment": "dictionary MLSplitSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits outputs;\n};",
+        "type": "dictionary",
+        "name": "MLSplitSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "input",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlsplitsupportlimits-input"
+          },
+          {
+            "type": "field",
+            "name": "outputs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlsplitsupportlimits-outputs"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsplitsupportlimits"
+      },
       "MLTransposeOptions": {
         "fragment": "dictionary MLTransposeOptions : MLOperatorOptions {\n  sequence<[EnforceRange] unsigned long> permutation;\n};",
         "type": "dictionary",
@@ -3460,6 +4824,81 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mltriangularoptions"
+      },
+      "MLWhereSupportLimits": {
+        "fragment": "dictionary MLWhereSupportLimits {\n  MLSupportLimits condition;\n  MLSupportLimits trueValue;\n  MLSupportLimits falseValue;\n  MLSupportLimits output;\n};",
+        "type": "dictionary",
+        "name": "MLWhereSupportLimits",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "condition",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlwheresupportlimits-condition"
+          },
+          {
+            "type": "field",
+            "name": "trueValue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlwheresupportlimits-truevalue"
+          },
+          {
+            "type": "field",
+            "name": "falseValue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlwheresupportlimits-falsevalue"
+          },
+          {
+            "type": "field",
+            "name": "output",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLSupportLimits"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlwheresupportlimits-output"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlwheresupportlimits"
       }
     },
     "idlExtendedNames": {
@@ -8957,6 +10396,1686 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "MLOpSupportLimits": [
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits argMin;\n  MLSingleInputSupportLimits argMax;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "argMin",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-argmin"
+            },
+            {
+              "type": "field",
+              "name": "argMax",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-argmax"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLBatchNormalizationSupportLimits batchNormalization;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "batchNormalization",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBatchNormalizationSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-batchnormalization"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits cast;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "cast",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-cast"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits clamp;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "clamp",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-clamp"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLConcatSupportLimits concat;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "concat",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLConcatSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-concat"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLConv2dSupportLimits conv2d;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "conv2d",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLConv2dSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-conv2d"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLConv2dSupportLimits convTranspose2d;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "convTranspose2d",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLConv2dSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-convtranspose2d"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLBinarySupportLimits add;\n  MLBinarySupportLimits sub;\n  MLBinarySupportLimits mul;\n  MLBinarySupportLimits div;\n  MLBinarySupportLimits max;\n  MLBinarySupportLimits min;\n  MLBinarySupportLimits pow;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "add",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-add"
+            },
+            {
+              "type": "field",
+              "name": "sub",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-sub"
+            },
+            {
+              "type": "field",
+              "name": "mul",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-mul"
+            },
+            {
+              "type": "field",
+              "name": "div",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-div"
+            },
+            {
+              "type": "field",
+              "name": "max",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-max"
+            },
+            {
+              "type": "field",
+              "name": "min",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-min"
+            },
+            {
+              "type": "field",
+              "name": "pow",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-pow"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLBinarySupportLimits equal;\n  MLBinarySupportLimits greater;\n  MLBinarySupportLimits greaterOrEqual;\n  MLBinarySupportLimits lesser;\n  MLBinarySupportLimits lesserOrEqual;\n  MLLogicalNotSupportLimits logicalNot;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "equal",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-equal"
+            },
+            {
+              "type": "field",
+              "name": "greater",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-greater"
+            },
+            {
+              "type": "field",
+              "name": "greaterOrEqual",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-greaterorequal"
+            },
+            {
+              "type": "field",
+              "name": "lesser",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-lesser"
+            },
+            {
+              "type": "field",
+              "name": "lesserOrEqual",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-lesserorequal"
+            },
+            {
+              "type": "field",
+              "name": "logicalNot",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLLogicalNotSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-logicalnot"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits abs;\n  MLSingleInputSupportLimits ceil;\n  MLSingleInputSupportLimits cos;\n  MLSingleInputSupportLimits erf;\n  MLSingleInputSupportLimits exp;\n  MLSingleInputSupportLimits floor;\n  MLSingleInputSupportLimits identity;\n  MLSingleInputSupportLimits log;\n  MLSingleInputSupportLimits neg;\n  MLSingleInputSupportLimits reciprocal;\n  MLSingleInputSupportLimits sin;\n  MLSingleInputSupportLimits sqrt;\n  MLSingleInputSupportLimits tan;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "abs",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-abs"
+            },
+            {
+              "type": "field",
+              "name": "ceil",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-ceil"
+            },
+            {
+              "type": "field",
+              "name": "cos",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-cos"
+            },
+            {
+              "type": "field",
+              "name": "erf",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-erf"
+            },
+            {
+              "type": "field",
+              "name": "exp",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-exp"
+            },
+            {
+              "type": "field",
+              "name": "floor",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-floor"
+            },
+            {
+              "type": "field",
+              "name": "identity",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-identity"
+            },
+            {
+              "type": "field",
+              "name": "log",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-log"
+            },
+            {
+              "type": "field",
+              "name": "neg",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-neg"
+            },
+            {
+              "type": "field",
+              "name": "reciprocal",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reciprocal"
+            },
+            {
+              "type": "field",
+              "name": "sin",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-sin"
+            },
+            {
+              "type": "field",
+              "name": "sqrt",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-sqrt"
+            },
+            {
+              "type": "field",
+              "name": "tan",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-tan"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits elu;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "elu",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-elu"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits expand;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "expand",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-expand"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLGatherSupportLimits gather;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "gather",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLGatherSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-gather"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits gelu;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "gelu",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-gelu"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLGemmSupportLimits gemm;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "gemm",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLGemmSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-gemm"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLGruSupportLimits gru;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "gru",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLGruSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-gru"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLGruCellSupportLimits gruCell;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "gruCell",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLGruCellSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-grucell"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits hardSigmoid;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "hardSigmoid",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-hardsigmoid"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits hardSwish;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "hardSwish",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-hardswish"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLNormalizationSupportLimits instanceNormalization;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "instanceNormalization",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLNormalizationSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-instancenormalization"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLNormalizationSupportLimits layerNormalization;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "layerNormalization",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLNormalizationSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-layernormalization"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits leakyRelu;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "leakyRelu",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-leakyrelu"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits linear;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "linear",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-linear"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLLstmSupportLimits lstm;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "lstm",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLLstmSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-lstm"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLLstmCellSupportLimits lstmCell;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "lstmCell",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLLstmCellSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-lstmcell"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLBinarySupportLimits matmul;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "matmul",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLBinarySupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-matmul"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits pad;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "pad",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-pad"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits averagePool2d;\n  MLSingleInputSupportLimits l2Pool2d;\n  MLSingleInputSupportLimits maxPool2d;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "averagePool2d",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-averagepool2d"
+            },
+            {
+              "type": "field",
+              "name": "l2Pool2d",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-l2pool2d"
+            },
+            {
+              "type": "field",
+              "name": "maxPool2d",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-maxpool2d"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLPreluSupportLimits prelu;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "prelu",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLPreluSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-prelu"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits reduceL1;\n  MLSingleInputSupportLimits reduceL2;\n  MLSingleInputSupportLimits reduceLogSum;\n  MLSingleInputSupportLimits reduceLogSumExp;\n  MLSingleInputSupportLimits reduceMax;\n  MLSingleInputSupportLimits reduceMean;\n  MLSingleInputSupportLimits reduceMin;\n  MLSingleInputSupportLimits reduceProduct;\n  MLSingleInputSupportLimits reduceSum;\n  MLSingleInputSupportLimits reduceSumSquare;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "reduceL1",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reducel1"
+            },
+            {
+              "type": "field",
+              "name": "reduceL2",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reducel2"
+            },
+            {
+              "type": "field",
+              "name": "reduceLogSum",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reducelogsum"
+            },
+            {
+              "type": "field",
+              "name": "reduceLogSumExp",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reducelogsumexp"
+            },
+            {
+              "type": "field",
+              "name": "reduceMax",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reducemax"
+            },
+            {
+              "type": "field",
+              "name": "reduceMean",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reducemean"
+            },
+            {
+              "type": "field",
+              "name": "reduceMin",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reducemin"
+            },
+            {
+              "type": "field",
+              "name": "reduceProduct",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reduceproduct"
+            },
+            {
+              "type": "field",
+              "name": "reduceSum",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reducesum"
+            },
+            {
+              "type": "field",
+              "name": "reduceSumSquare",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reducesumsquare"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits relu;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "relu",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-relu"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits resample2d;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "resample2d",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-resample2d"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits reshape;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "reshape",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-reshape"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits sigmoid;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "sigmoid",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-sigmoid"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial  dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits slice;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "slice",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-slice"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits softmax;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "softmax",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-softmax"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits softplus;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "softplus",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-softplus"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits softsign;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "softsign",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-softsign"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits split;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "split",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-split"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits tanh;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "tanh",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-tanh"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits transpose;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "transpose",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-transpose"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits triangular;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "triangular",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLSingleInputSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-triangular"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLWhereSupportLimits where;\n};",
+          "type": "dictionary",
+          "name": "MLOpSupportLimits",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "where",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLWhereSupportLimits"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://webmachinelearning.github.io/webnn/#dom-mlopsupportlimits-where"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -9001,7 +12120,36 @@
       "MLContext": [
         "MLComputeResult",
         "MLGraph",
-        "MLNamedArrayBufferViews"
+        "MLNamedArrayBufferViews",
+        "MLOpSupportLimits"
+      ],
+      "MLOpSupportLimits": [
+        "MLInputOperandLayout",
+        "MLSupportLimits",
+        "MLSingleInputSupportLimits",
+        "MLBatchNormalizationSupportLimits",
+        "MLConcatSupportLimits",
+        "MLConv2dSupportLimits",
+        "MLBinarySupportLimits",
+        "MLLogicalNotSupportLimits",
+        "MLGatherSupportLimits",
+        "MLGemmSupportLimits",
+        "MLGruSupportLimits",
+        "MLGruCellSupportLimits",
+        "MLNormalizationSupportLimits",
+        "MLLstmSupportLimits",
+        "MLLstmCellSupportLimits",
+        "MLPreluSupportLimits",
+        "MLWhereSupportLimits"
+      ],
+      "MLSupportLimits": [
+        "MLOperandDataType"
+      ],
+      "MLBinarySupportLimits": [
+        "MLSupportLimits"
+      ],
+      "MLSingleInputSupportLimits": [
+        "MLSupportLimits"
       ],
       "MLGraph": [],
       "MLOperandDescriptor": [
@@ -9054,9 +12202,15 @@
         "MLOperatorOptions",
         "MLOperand"
       ],
+      "MLBatchNormalizationSupportLimits": [
+        "MLSupportLimits"
+      ],
       "MLClampOptions": [
         "MLOperatorOptions",
         "MLNumber"
+      ],
+      "MLConcatSupportLimits": [
+        "MLSupportLimits"
       ],
       "MLConv2dOptions": [
         "MLOperatorOptions",
@@ -9064,11 +12218,17 @@
         "MLConv2dFilterOperandLayout",
         "MLOperand"
       ],
+      "MLConv2dSupportLimits": [
+        "MLSupportLimits"
+      ],
       "MLConvTranspose2dOptions": [
         "MLOperatorOptions",
         "MLInputOperandLayout",
         "MLConvTranspose2dFilterOperandLayout",
         "MLOperand"
+      ],
+      "MLLogicalNotSupportLimits": [
+        "MLSupportLimits"
       ],
       "MLEluOptions": [
         "MLOperatorOptions"
@@ -9076,9 +12236,15 @@
       "MLGatherOptions": [
         "MLOperatorOptions"
       ],
+      "MLGatherSupportLimits": [
+        "MLSupportLimits"
+      ],
       "MLGemmOptions": [
         "MLOperatorOptions",
         "MLOperand"
+      ],
+      "MLGemmSupportLimits": [
+        "MLSupportLimits"
       ],
       "MLGruOptions": [
         "MLOperatorOptions",
@@ -9087,11 +12253,17 @@
         "MLGruWeightLayout",
         "MLRecurrentNetworkActivation"
       ],
+      "MLGruSupportLimits": [
+        "MLSupportLimits"
+      ],
       "MLGruCellOptions": [
         "MLOperatorOptions",
         "MLOperand",
         "MLGruWeightLayout",
         "MLRecurrentNetworkActivation"
+      ],
+      "MLGruCellSupportLimits": [
+        "MLSupportLimits"
       ],
       "MLHardSigmoidOptions": [
         "MLOperatorOptions"
@@ -9100,6 +12272,9 @@
         "MLOperatorOptions",
         "MLOperand",
         "MLInputOperandLayout"
+      ],
+      "MLNormalizationSupportLimits": [
+        "MLSupportLimits"
       ],
       "MLLayerNormalizationOptions": [
         "MLOperatorOptions",
@@ -9118,11 +12293,17 @@
         "MLLstmWeightLayout",
         "MLRecurrentNetworkActivation"
       ],
+      "MLLstmSupportLimits": [
+        "MLSupportLimits"
+      ],
       "MLLstmCellOptions": [
         "MLOperatorOptions",
         "MLOperand",
         "MLLstmWeightLayout",
         "MLRecurrentNetworkActivation"
+      ],
+      "MLLstmCellSupportLimits": [
+        "MLSupportLimits"
       ],
       "MLPadOptions": [
         "MLOperatorOptions",
@@ -9134,6 +12315,9 @@
         "MLInputOperandLayout",
         "MLRoundingType"
       ],
+      "MLPreluSupportLimits": [
+        "MLSupportLimits"
+      ],
       "MLReduceOptions": [
         "MLOperatorOptions"
       ],
@@ -9144,11 +12328,17 @@
       "MLSplitOptions": [
         "MLOperatorOptions"
       ],
+      "MLSplitSupportLimits": [
+        "MLSupportLimits"
+      ],
       "MLTransposeOptions": [
         "MLOperatorOptions"
       ],
       "MLTriangularOptions": [
         "MLOperatorOptions"
+      ],
+      "MLWhereSupportLimits": [
+        "MLSupportLimits"
       ]
     },
     "externalDependencies": [

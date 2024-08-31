@@ -3,4 +3,6 @@
 interface MLContext {
   Promise<MLComputeResult> compute(
       MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);
+
+  MLOpSupportLimits opSupportLimits();
 };
