@@ -5443,11 +5443,23 @@
       ]
     },
     {
-      "name": "find matching sources",
-      "href": "https://wicg.github.io/attribution-reporting-api/#find-matching-sources",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-matching-sources\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find matching sources</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger②⑥\">attribution trigger</a> <var>trigger</var>:",
-      "rationale": "let",
+      "name": "attribution source/is higher-priority than",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-is-higher-priority-than",
+      "html": "An <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑧⑦\">attribution source</a> <var>a</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"attribution source\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"attribution-source-is-higher-priority-than\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">is higher-priority than</dfn> an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑧⑧\">attribution source</a> <var>b</var> if the following steps return true:",
+      "rationale": "if",
       "steps": [
+        {
+          "html": "<p><var>a</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-priority\" id=\"ref-for-attribution-source-priority①\">priority</a> is greater than <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-priority\" id=\"ref-for-attribution-source-priority②\">priority</a>, return true.</p>"
+        },
+        {
+          "html": "<p><var>a</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-priority\" id=\"ref-for-attribution-source-priority③\">priority</a> is less than <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-priority\" id=\"ref-for-attribution-source-priority④\">priority</a>, return false.</p>"
+        },
+        {
+          "html": "<p>If <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-time\" id=\"ref-for-attribution-source-source-time②⑤\">source time</a> is greater than <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-time\" id=\"ref-for-attribution-source-source-time②⑥\">source time</a>, return true.</p>"
+        },
+        {
+          "html": "<p>Return false.</p>"
+        },
         {
           "html": "<p>Let <var>matchingSources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥⑥\">list</a>.</p>"
         },
@@ -5470,13 +5482,28 @@
           ]
         },
         {
-          "html": "<p>Set <var>matchingSources</var> to the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-descending-order\" id=\"ref-for-list-sort-in-descending-order①\">sorting</a> <var>matchingSources</var> in descending order, with <var>a</var> being less than <var>b</var> if any of the following are true:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>a</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-priority\" id=\"ref-for-attribution-source-priority①\">priority</a> is less than <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-priority\" id=\"ref-for-attribution-source-priority②\">priority</a>.</p>\n      </li><li data-md=\"\">\n       <p><var>a</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-priority\" id=\"ref-for-attribution-source-priority③\">priority</a> is equal to <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-priority\" id=\"ref-for-attribution-source-priority④\">priority</a> and <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-time\" id=\"ref-for-attribution-source-source-time②⑤\">source time</a> is less than <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-source-time\" id=\"ref-for-attribution-source-source-time②⑥\">source time</a>.</p>\n      </li><li data-md=\"\">\n       <p>the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-source-and-attribution-trigger-have-matching-attribution-scopes\" id=\"ref-for-check-if-an-attribution-source-and-attribution-trigger-have-matching-attribution-scopes\">check if an attribution source and attribution trigger have matching attribution scopes</a> with <var>a</var> and <var>trigger</var> is false\nand the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-source-and-attribution-trigger-have-matching-attribution-scopes\" id=\"ref-for-check-if-an-attribution-source-and-attribution-trigger-have-matching-attribution-scopes①\">check if an attribution source and attribution trigger have matching attribution scopes</a> with <var>b</var> and <var>trigger</var> is true</p>\n     </li></ul>"
+          "html": "<p>Let <var>sourceToAttribute</var> be null.</p>"
         },
         {
-          "html": "<p>If <var>matchingSources</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑦\">empty</a> and the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-source-and-attribution-trigger-have-matching-attribution-scopes\" id=\"ref-for-check-if-an-attribution-source-and-attribution-trigger-have-matching-attribution-scopes②\">check if an attribution source and attribution trigger have matching attribution scopes</a> with <var>matchingSources</var>[0] and <var>trigger</var> is false, return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥⑦\">list</a>.</p>"
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥②\">For each</a> <var>source</var> of <var>matchingSources</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-source-and-attribution-trigger-have-matching-attribution-scopes\" id=\"ref-for-check-if-an-attribution-source-and-attribution-trigger-have-matching-attribution-scopes\">checking if an attribution source and attribution trigger have matching attribution scopes</a> with <var>source</var> and <var>trigger</var> is false, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>sourceToAttribute</var> is null or <var>source</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source-is-higher-priority-than\" id=\"ref-for-attribution-source-is-higher-priority-than\">is higher-priority than</a> <var>sourceToAttribute</var>, set <var>sourceToAttribute</var> to <var>source</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Return <var>matchingSources</var>.</p>"
+          "html": "<p>If <var>sourceToAttribute</var> is null, return the tuple (null, an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⑦\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥⑦\">list</a>).</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①⑧\">Remove</a> <var>sourceToAttribute</var> from <var>matchingSources</var>.</p>"
+        },
+        {
+          "html": "<p>Return the tuple (<var>sourceToAttribute</var>, <var>matchingSources</var>).</p>"
         }
       ]
     },
@@ -5510,10 +5537,10 @@
           "html": "<p>If <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-event-level-trigger-configurations\" id=\"ref-for-attribution-trigger-event-level-trigger-configurations③\">event-level trigger configurations</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③⓪\">is empty</a> and <var>hasAggregatableData</var> is false, return.</p>"
         },
         {
-          "html": "<p>Let <var>matchingSources</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#find-matching-sources\" id=\"ref-for-find-matching-sources\">find matching sources</a> with <var>trigger</var>.</p>"
+          "html": "<p>Let (<var>sourceToAttribute</var>, <var>matchingSources</var>) be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#find-matching-sources\" id=\"ref-for-find-matching-sources\">find matching sources</a> with <var>trigger</var>.</p>"
         },
         {
-          "html": "If <var>matchingSources</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③①\">is empty</a>:",
+          "html": "If <var>sourceToAttribute</var> is null:",
           "rationale": "run",
           "steps": [
             {
@@ -5526,9 +5553,6 @@
               "html": "<p>Return.</p>"
             }
           ]
-        },
-        {
-          "html": "<p>Let <var>sourceToAttribute</var> be <var>matchingSources</var>[0].</p>"
         },
         {
           "html": "If the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#match-an-attribution-source-against-filters-and-negated-filters\" id=\"ref-for-match-an-attribution-source-against-filters-and-negated-filters④\">match an attribution source against filters and negated filters</a> with <var>sourceToAttribute</var>, <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-filters\" id=\"ref-for-attribution-trigger-filters①\">filters</a>, <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-negated-filters\" id=\"ref-for-attribution-trigger-negated-filters①\">negated filters</a>, and <var>trigger</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger-trigger-time\" id=\"ref-for-attribution-trigger-trigger-time①①\">trigger time</a> is false:",
@@ -5546,10 +5570,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①⑧\">Remove</a> <var>sourceToAttribute</var> from <var>matchingSources</var>.</p>"
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥②\">For each</a> <var>item</var> of <var>matchingSources</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥③\">For each</a> <var>item</var> of <var>matchingSources</var>:",
           "rationale": "remove",
           "steps": [
             {
@@ -5610,7 +5631,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#automation-local-testing-mode\" id=\"ref-for-automation-local-testing-mode④\">automation local testing mode</a> is true, return <var>triggerTime</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥③\">For each</a> <var>window</var> of <var>windows</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥④\">For each</a> <var>window</var> of <var>windows</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -5646,7 +5667,7 @@
     {
       "name": "obtain an event-level report",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-an-event-level-report",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-event-level-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain an event-level report</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑧⑦\">attribution source</a> <var>source</var>,\na <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment②⑨\">moment</a> <var>triggerTime</var>, an optional non-negative 64-bit integer <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"obtain an event-level report\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-event-level-report-triggerdebugkey\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>triggerDebugKey</var></dfn>,\na 64-bit integer priority <var>priority</var>, and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-spec-map\" id=\"ref-for-trigger-spec-map⑤\">trigger spec map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry③\">entry</a> <var>specEntry</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-event-level-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain an event-level report</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑧⑨\">attribution source</a> <var>source</var>,\na <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment②⑨\">moment</a> <var>triggerTime</var>, an optional non-negative 64-bit integer <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"obtain an event-level report\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-event-level-report-triggerdebugkey\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>triggerDebugKey</var></dfn>,\na 64-bit integer priority <var>priority</var>, and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-spec-map\" id=\"ref-for-trigger-spec-map⑤\">trigger spec map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry③\">entry</a> <var>specEntry</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -5663,7 +5684,7 @@
     {
       "name": "obtain an aggregatable attribution report",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-an-aggregatable-attribution-report",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-aggregatable-attribution-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain an aggregatable attribution report</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑧⑧\">attribution source</a> <var>source</var> and\nan <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger③①\">attribution trigger</a> <var>trigger</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-aggregatable-attribution-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain an aggregatable attribution report</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑨⓪\">attribution source</a> <var>source</var> and\nan <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger③①\">attribution trigger</a> <var>trigger</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -5770,7 +5791,7 @@
               "html": "<p>If <var>report</var> is not null, set <var>roundedAttributedSourceTime</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-rounded-source-time\" id=\"ref-for-obtain-rounded-source-time\">obtaining rounded source time</a> with <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-source-time\" id=\"ref-for-aggregatable-attribution-report-source-time②\">source time</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥④\">For each</a> integer <var>day</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range③\">the range</a> 0 to the number of days in <var>maxSourceExpiry</var>, inclusive:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑤\">For each</a> integer <var>day</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range③\">the range</a> 0 to the number of days in <var>maxSourceExpiry</var>, inclusive:",
               "rationale": "let",
               "steps": [
                 {
@@ -5781,7 +5802,7 @@
                   "rationale": "continue",
                   "steps": [
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③②\">Continue</a>.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③③\">Continue</a>.</p>"
                     }
                   ]
                 },
@@ -5838,18 +5859,18 @@
     {
       "name": "queue reports for delivery",
       "href": "https://wicg.github.io/attribution-reporting-api/#queue-reports-for-delivery",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"queue-reports-for-delivery\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">queue reports for delivery</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤①\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report⑦\">attribution reports</a> <var>cache</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"queue-reports-for-delivery\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">queue reports for delivery</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤①\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report⑧\">attribution reports</a> <var>cache</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>reportsToSend</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦①\">list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑤\">For each</a> <var>report</var> of <var>cache</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑥\">For each</a> <var>report</var> of <var>cache</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report-report-time\" id=\"ref-for-attribution-report-report-time⑥\">report time</a> is greater than the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-wall-time\" id=\"ref-for-dfn-current-wall-time②\">current wall time</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③③\">continue</a>.</p>"
+              "html": "<p>If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report-report-time\" id=\"ref-for-attribution-report-report-time⑥\">report time</a> is greater than the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-wall-time\" id=\"ref-for-dfn-current-wall-time②\">current wall time</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③④\">continue</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②①\">Remove</a> <var>report</var> from <var>cache</var>.</p>"
@@ -5863,7 +5884,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#shuffle-a-list\" id=\"ref-for-shuffle-a-list①\">Shuffle</a> <var>reportsToSend</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑥\">For each</a> <var>report</var> of <var>reportsToSend</var>, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑦\">For each</a> <var>report</var> of <var>reportsToSend</var>, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
           "rationale": "wait",
           "steps": [
             {
@@ -6036,7 +6057,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑦\">For each</a> <var>contribution</var> of <var>contributions</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑧\">For each</a> <var>contribution</var> of <var>contributions</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -6116,7 +6137,7 @@
     {
       "name": "obtain an event-level report body",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-an-event-level-report-body",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-event-level-report-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain an event-level report body</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report⑧\">attribution report</a> <var>report</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-event-level-report-body\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain an event-level report body</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report⑨\">attribution report</a> <var>report</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -6204,7 +6225,7 @@
     {
       "name": "serialize an attribution report",
       "href": "https://wicg.github.io/attribution-reporting-api/#serialize-an-attribution-report",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"serialize-an-attribution-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report⑨\">attribution report</a></dfn> <var>report</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"serialize-an-attribution-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report①⓪\">attribution report</a></dfn> <var>report</var>, run the following steps:",
       "rationale": "assert",
       "steps": [
         {
@@ -6241,7 +6262,7 @@
           "html": "<p>Let <var>collection</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦④\">list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑧\">For each</a> <var>debugData</var> of <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#verbose-debug-report-data\" id=\"ref-for-verbose-debug-report-data①\">data</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑨\">For each</a> <var>debugData</var> of <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#verbose-debug-report-data\" id=\"ref-for-verbose-debug-report-data①\">data</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -6292,7 +6313,7 @@
     {
       "name": "generate an attribution report URL",
       "href": "https://wicg.github.io/attribution-reporting-api/#generate-an-attribution-report-url",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-an-attribution-report-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate an attribution report URL</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report①⓪\">attribution report</a> <var>report</var> and an optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean③⓪\">boolean</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"generate an attribution report URL\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-an-attribution-report-url-isdebugreport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>isDebugReport</var></dfn> (default false):",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-an-attribution-report-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate an attribution report URL</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report①①\">attribution report</a> <var>report</var> and an optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean③⓪\">boolean</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"generate an attribution report URL\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-an-attribution-report-url-isdebugreport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>isDebugReport</var></dfn> (default false):",
       "rationale": "assert",
       "steps": [
         {
@@ -6376,7 +6397,7 @@
     {
       "name": "attempt to deliver a report",
       "href": "https://wicg.github.io/attribution-reporting-api/#attempt-to-deliver-a-report",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"attempt-to-deliver-a-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attempt to deliver a report</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report①①\">attribution report</a> <var>report</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"attempt-to-deliver-a-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attempt to deliver a report</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report①②\">attribution report</a> <var>report</var>, run the following steps:",
       "rationale": "assert",
       "steps": [
         {
@@ -6405,7 +6426,7 @@
     {
       "name": "attempt to deliver a debug report",
       "href": "https://wicg.github.io/attribution-reporting-api/#attempt-to-deliver-a-debug-report",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"attempt-to-deliver-a-debug-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attempt to deliver a debug report</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report①②\">attribution report</a> <var>report</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"attempt-to-deliver-a-debug-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">attempt to deliver a debug report</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-report\" id=\"ref-for-attribution-report①③\">attribution report</a> <var>report</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -6490,17 +6511,17 @@
           "html": "<p>Let <var>registrations</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦⑦\">list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑨\">For each</a> <var>value</var> of <var>values</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⓪\">For each</a> <var>value</var> of <var>values</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑨\">string</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③④\">continue</a>.</p>"
+              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑨\">string</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③⑤\">continue</a>.</p>"
             },
             {
               "html": "<p>Let <var>url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser②\">URL parser</a> on <var>value</var>.</p>"
             },
             {
-              "html": "<p>If <var>url</var> is failure or null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③⑤\">continue</a>.</p>"
+              "html": "<p>If <var>url</var> is failure or null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③⑥\">continue</a>.</p>"
             },
             {
               "html": "<p>Let <var>debugReporting</var> be false.</p>"
@@ -6520,7 +6541,7 @@
           ]
         },
         {
-          "html": "<p>If <var>registrations</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③②\">is empty</a>, return null.</p>"
+          "html": "<p>If <var>registrations</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③①\">is empty</a>, return null.</p>"
         },
         {
           "html": "<p>Return <var>registrations</var>.</p>"
@@ -6554,23 +6575,23 @@
       "rationale": "assert",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③③\">Assert</a>: <var>registrations</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③③\">empty</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③③\">Assert</a>: <var>registrations</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③②\">empty</a>.</p>"
         },
         {
           "html": "<p>Let <var>contextSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑥\">obtaining a site</a> from <var>contextOrigin</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⓪\">For each</a> <var>registration</var> of <var>registrations</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦①\">For each</a> <var>registration</var> of <var>registrations</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#os-registration-debug-reporting-enabled\" id=\"ref-for-os-registration-debug-reporting-enabled①\">debug reporting enabled</a> is false, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③⑥\">continue</a>.</p>"
+              "html": "<p>If <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#os-registration-debug-reporting-enabled\" id=\"ref-for-os-registration-debug-reporting-enabled①\">debug reporting enabled</a> is false, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③⑦\">continue</a>.</p>"
             },
             {
               "html": "<p>Let <var>origin</var> be <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#os-registration-url\" id=\"ref-for-os-registration-url①\">URL</a>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑦\">origin</a>.</p>"
             },
             {
-              "html": "<p>If <var>origin</var> is not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#check-if-an-origin-is-suitable\" id=\"ref-for-check-if-an-origin-is-suitable⑤\">suitable</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③⑦\">continue</a>.</p>"
+              "html": "<p>If <var>origin</var> is not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#check-if-an-origin-is-suitable\" id=\"ref-for-check-if-an-origin-is-suitable⑤\">suitable</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③⑧\">continue</a>.</p>"
             },
             {
               "html": "<p>Let <var>body</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⓪\">map</a> with the following key/value pairs:</p>\n       <dl>\n        <dt data-md=\"\">\"<code>context_site</code>\"\n        </dt><dd data-md=\"\">\n         <p><var>contextSite</var>, <a href=\"https://html.spec.whatwg.org/multipage/origin.html#serialization-of-a-site\">serialized</a>.</p>\n        </dd><dt data-md=\"\">\"<code>registration_url</code>\"\n        </dt><dd data-md=\"\">\n         <p><var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#os-registration-url\" id=\"ref-for-os-registration-url②\">URL</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer\">serialized</a>.</p>\n       </dd></dl>"
@@ -6611,11 +6632,11 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦①\">For each</a> <var>cache</var> of « <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#event-level-report-cache\" id=\"ref-for-event-level-report-cache①④\">event-level report cache</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-cache\" id=\"ref-for-aggregatable-attribution-report-cache①①\">aggregatable attribution report cache</a> »:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦②\">For each</a> <var>cache</var> of « <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#event-level-report-cache\" id=\"ref-for-event-level-report-cache①④\">event-level report cache</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-cache\" id=\"ref-for-aggregatable-attribution-report-cache①①\">aggregatable attribution report cache</a> »:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦②\">For each</a> <var>report</var> of <var>cache</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦③\">For each</a> <var>report</var> of <var>cache</var>:",
               "rationale": "remove",
               "steps": [
                 {
@@ -6638,7 +6659,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For a given <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger③⑤\">attribution trigger</a>, whether it is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-attribution\" id=\"ref-for-trigger-attribution③\">attributed</a> to a\nsource is subject to one-way noise via <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#generate-null-attribution-reports\" id=\"ref-for-generate-null-attribution-reports④\">generating null attribution reports</a> with\nsome probability. Note that because the noise does not drop true reports, this is only a partial\nmitigation, as if an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source①⓪②\">attribution source</a> never generates an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report\" id=\"ref-for-aggregatable-attribution-report②④\">aggregatable attribution report</a>, an\nadversary can learn with 100% certainty that an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source①⓪③\">attribution source</a> was never matched with\nan <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger③⑥\">attribution trigger</a>.</p>"
+          "html": "<p>For a given <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger③⑤\">attribution trigger</a>, whether it is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-attribution\" id=\"ref-for-trigger-attribution③\">attributed</a> to a\nsource is subject to one-way noise via <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#generate-null-attribution-reports\" id=\"ref-for-generate-null-attribution-reports④\">generating null attribution reports</a> with\nsome probability. Note that because the noise does not drop true reports, this is only a partial\nmitigation, as if an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source①⓪④\">attribution source</a> never generates an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report\" id=\"ref-for-aggregatable-attribution-report②④\">aggregatable attribution report</a>, an\nadversary can learn with 100% certainty that an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source①⓪⑤\">attribution source</a> was never matched with\nan <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-trigger\" id=\"ref-for-attribution-trigger③⑥\">attribution trigger</a>.</p>"
         },
         {
           "html": "<p>Cross-site information embedded in an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report\" id=\"ref-for-aggregatable-attribution-report②⑤\">aggregatable attribution report</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-report-contributions\" id=\"ref-for-aggregatable-report-contributions⑦\">contributions</a> is encrypted with a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-the-public-key-for-encryption\" id=\"ref-for-obtain-the-public-key-for-encryption①\">public key</a>, ensuring that individual\ncontributions cannot be accessed until an aggregation service subjects them to aggregation\nand an additive noise process.</p>"
