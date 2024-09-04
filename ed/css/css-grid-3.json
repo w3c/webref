@@ -31,6 +31,202 @@
         "grid-template-rows",
         "gridTemplateRows"
       ]
+    },
+    {
+      "name": "grid-auto-flow",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-grid-auto-flow",
+      "value": "[ row | column | row-reverse | column-reverse ] || dense || wrap-reverse",
+      "initial": "row",
+      "appliesTo": "grid containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "row-reverse",
+          "prose": "This specification extends the grid-auto-flow property to add row-reverse, column-reverse, and wrap-reverse, which reverse the directions of the auto-placement algorithm.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-grid-auto-flow-row-reverse",
+          "type": "value",
+          "value": "row-reverse"
+        },
+        {
+          "name": "column-reverse",
+          "prose": "This specification extends the grid-auto-flow property to add row-reverse, column-reverse, and wrap-reverse, which reverse the directions of the auto-placement algorithm.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-grid-auto-flow-column-reverse",
+          "type": "value",
+          "value": "column-reverse"
+        },
+        {
+          "name": "wrap-reverse",
+          "prose": "This specification extends the grid-auto-flow property to add row-reverse, column-reverse, and wrap-reverse, which reverse the directions of the auto-placement algorithm.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-grid-auto-flow-wrap-reverse",
+          "type": "value",
+          "value": "wrap-reverse"
+        }
+      ],
+      "styleDeclaration": [
+        "grid-auto-flow",
+        "gridAutoFlow"
+      ]
+    },
+    {
+      "name": "display",
+      "newValues": "masonry | inline-masonry",
+      "values": [
+        {
+          "name": "masonry",
+          "prose": "This value causes an element to generate a masonry container box that is block-level when placed in flow layout.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-display-masonry",
+          "type": "value",
+          "value": "masonry"
+        },
+        {
+          "name": "inline-masonry",
+          "prose": "This value causes an element to generate a masonry container box that is inline-level when placed in flow layout.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-display-inline-masonry",
+          "type": "value",
+          "value": "inline-masonry"
+        }
+      ],
+      "styleDeclaration": [
+        "display"
+      ]
+    },
+    {
+      "name": "masonry-direction",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-direction",
+      "value": "row | column | row-reverse | column-reverse",
+      "initial": "column",
+      "appliesTo": "masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "column",
+          "prose": "The masonry container’s masonry axis is its block axis, and masonry layout starts from its block-start edge.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-direction-column",
+          "type": "value",
+          "value": "column"
+        },
+        {
+          "name": "column-reverse",
+          "prose": "The masonry container’s masonry axis is its block axis, and masonry layout starts from its block-end edge.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-direction-column-reverse",
+          "type": "value",
+          "value": "column-reverse"
+        },
+        {
+          "name": "row",
+          "prose": "The masonry container’s masonry axis is its inline axis, and masonry layout starts from its inline-start edge.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-direction-row",
+          "type": "value",
+          "value": "row"
+        },
+        {
+          "name": "row-reverse",
+          "prose": "The masonry container’s masonry axis is its inline axis, and masonry layout starts from its inline-end edge.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-direction-row-reverse",
+          "type": "value",
+          "value": "row-reverse"
+        }
+      ],
+      "styleDeclaration": [
+        "masonry-direction",
+        "masonryDirection"
+      ]
+    },
+    {
+      "name": "masonry-fill",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-fill",
+      "value": "normal | reverse",
+      "initial": "normal",
+      "appliesTo": "masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "Ties are broken by filling the startmost track",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-fill-normal",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "reverse",
+          "prose": "Ties are broken by filling the endmost track.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-fill-reverse",
+          "type": "value",
+          "value": "reverse"
+        }
+      ],
+      "styleDeclaration": [
+        "masonry-fill",
+        "masonryFill"
+      ]
+    },
+    {
+      "name": "masonry-flow",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-flow",
+      "value": "<'masonry-direction'> || <'masonry-fill'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "masonry-flow",
+        "masonryFlow"
+      ]
+    },
+    {
+      "name": "masonry-template-tracks",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-template-tracks",
+      "styleDeclaration": [
+        "masonry-template-tracks",
+        "masonryTemplateTracks"
+      ]
+    },
+    {
+      "name": "masonry-template-areas",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-template-areas",
+      "styleDeclaration": [
+        "masonry-template-areas",
+        "masonryTemplateAreas"
+      ]
+    },
+    {
+      "name": "masonry-track-start",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-track-start",
+      "styleDeclaration": [
+        "masonry-track-start",
+        "masonryTrackStart"
+      ]
+    },
+    {
+      "name": "masonry-track-end",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-track-end",
+      "styleDeclaration": [
+        "masonry-track-end",
+        "masonryTrackEnd"
+      ]
+    },
+    {
+      "name": "masonry-track",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-track",
+      "styleDeclaration": [
+        "masonry-track",
+        "masonryTrack"
+      ]
     }
   ],
   "atrules": [],
