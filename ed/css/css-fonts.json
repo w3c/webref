@@ -270,7 +270,7 @@
     {
       "name": "font",
       "href": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
-      "value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | <system-family-name>",
+      "value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'># ] | <system-family-name>",
       "initial": "see individual properties",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -1589,13 +1589,13 @@
       "name": "<font-variant-css2>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-variant-css21-values",
       "type": "type",
-      "value": "[normal | small-caps]"
+      "value": "normal | small-caps"
     },
     {
       "name": "<font-width-css3>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-width-css3-values",
       "type": "type",
-      "value": "[normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]"
+      "value": "normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded"
     },
     {
       "name": "<font-src-list>",

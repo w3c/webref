@@ -2,11 +2,5 @@
 [Exposed=Window, Serializable]
 interface FencedFrameConfig {
   constructor(USVString url);
-
-  readonly attribute FencedFrameConfigSize? containerWidth;
-  readonly attribute FencedFrameConfigSize? containerHeight;
-  readonly attribute FencedFrameConfigSize? contentWidth;
-  readonly attribute FencedFrameConfigSize? contentHeight;
-
   undefined setSharedStorageContext(DOMString contextString);
 };

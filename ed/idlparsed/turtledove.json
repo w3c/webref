@@ -31,7 +31,7 @@
     },
     "idlNames": {
       "AuctionAd": {
-        "fragment": "dictionary AuctionAd {\n  required USVString renderURL;\n  USVString sizeGroup;\n  any metadata;\n\n  USVString buyerReportingId;\n  USVString buyerAndSellerReportingId;\n  sequence<USVString> allowedReportingOrigins;\n};",
+        "fragment": "dictionary AuctionAd {\n  required USVString renderURL;\n  USVString sizeGroup;\n  any metadata;\n\n  USVString buyerReportingId;\n  USVString buyerAndSellerReportingId;\n  sequence<USVString> allowedReportingOrigins;\n  DOMString adRenderId;\n};",
         "type": "dictionary",
         "name": "AuctionAd",
         "inheritance": null,
@@ -140,6 +140,22 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-auctionad-allowedreportingorigins"
+          },
+          {
+            "type": "field",
+            "name": "adRenderId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionad-adrenderid"
           }
         ],
         "extAttrs": [],
@@ -2769,48 +2785,61 @@
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#protectedaudience"
       },
-      "PreviousWin": {
-        "fragment": "dictionary PreviousWin {\n  required long long timeDelta;\n  required DOMString adJSON;\n};",
-        "type": "dictionary",
-        "name": "PreviousWin",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "timeDelta",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
+      "PreviousWinElement": {
+        "fragment": "typedef (long long or AuctionAd) PreviousWinElement;",
+        "type": "typedef",
+        "name": "PreviousWinElement",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "long long"
             },
-            "default": null,
-            "required": true,
-            "href": "https://wicg.github.io/turtledove/#dom-previouswin-timedelta"
-          },
-          {
-            "type": "field",
-            "name": "adJSON",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
+            {
+              "type": "typedef-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": true,
-            "href": "https://wicg.github.io/turtledove/#dom-previouswin-adjson"
-          }
-        ],
+              "idlType": "AuctionAd"
+            }
+          ]
+        },
         "extAttrs": [],
-        "partial": false,
-        "href": "https://wicg.github.io/turtledove/#dictdef-previouswin"
+        "href": "https://wicg.github.io/turtledove/#typedefdef-previouswinelement"
+      },
+      "PreviousWin": {
+        "fragment": "typedef sequence<PreviousWinElement> PreviousWin;",
+        "type": "typedef",
+        "name": "PreviousWin",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "sequence",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PreviousWinElement"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://wicg.github.io/turtledove/#typedefdef-previouswin"
       },
       "BiddingBrowserSignals": {
         "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n  required long recency;\n  required long adComponentsLimit;\n  required unsigned short multiBidLimit;\n\n  record<DOMString, DOMString> requestedSize;\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n  unsigned long crossOriginDataVersion;\n  boolean forDebuggingOnlyInCooldownOrLockout = false;\n};",
@@ -4552,7 +4581,6 @@
       "ProtectedAudience": [],
       "RequestInit": [],
       "HTMLIFrameElement": [],
-      "PreviousWin": [],
       "BiddingBrowserSignals": [
         "PreviousWin"
       ],
