@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUTextureViewDescriptor\n         : GPUObjectDescriptorBase {\n    GPUTextureFormat format;\n    GPUTextureViewDimension dimension;\n    GPUTextureAspect aspect = \"all\";\n    GPUIntegerCoordinate baseMipLevel = 0;\n    GPUIntegerCoordinate mipLevelCount;\n    GPUIntegerCoordinate baseArrayLayer = 0;\n    GPUIntegerCoordinate arrayLayerCount;\n};",
+    "fragment": "dictionary GPUTextureViewDescriptor\n         : GPUObjectDescriptorBase {\n    GPUTextureFormat format;\n    GPUTextureViewDimension dimension;\n    GPUTextureUsageFlags usage = 0;\n    GPUTextureAspect aspect = \"all\";\n    GPUIntegerCoordinate baseMipLevel = 0;\n    GPUIntegerCoordinate mipLevelCount;\n    GPUIntegerCoordinate baseArrayLayer = 0;\n    GPUIntegerCoordinate arrayLayerCount;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#dictdef-gputextureviewdescriptor"
   },
   "extended": [],

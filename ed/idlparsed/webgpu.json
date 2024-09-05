@@ -3305,7 +3305,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gputextureview"
       },
       "GPUTextureViewDescriptor": {
-        "fragment": "dictionary GPUTextureViewDescriptor\n         : GPUObjectDescriptorBase {\n    GPUTextureFormat format;\n    GPUTextureViewDimension dimension;\n    GPUTextureAspect aspect = \"all\";\n    GPUIntegerCoordinate baseMipLevel = 0;\n    GPUIntegerCoordinate mipLevelCount;\n    GPUIntegerCoordinate baseArrayLayer = 0;\n    GPUIntegerCoordinate arrayLayerCount;\n};",
+        "fragment": "dictionary GPUTextureViewDescriptor\n         : GPUObjectDescriptorBase {\n    GPUTextureFormat format;\n    GPUTextureViewDimension dimension;\n    GPUTextureUsageFlags usage = 0;\n    GPUTextureAspect aspect = \"all\";\n    GPUIntegerCoordinate baseMipLevel = 0;\n    GPUIntegerCoordinate mipLevelCount;\n    GPUIntegerCoordinate baseArrayLayer = 0;\n    GPUIntegerCoordinate arrayLayerCount;\n};",
         "type": "dictionary",
         "name": "GPUTextureViewDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -3341,6 +3341,25 @@
             "default": null,
             "required": false,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureviewdescriptor-dimension"
+          },
+          {
+            "type": "field",
+            "name": "usage",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureUsageFlags"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureviewdescriptor-usage"
           },
           {
             "type": "field",
@@ -13575,6 +13594,7 @@
         "GPUObjectDescriptorBase",
         "GPUTextureFormat",
         "GPUTextureViewDimension",
+        "GPUTextureUsageFlags",
         "GPUTextureAspect",
         "GPUIntegerCoordinate"
       ],
