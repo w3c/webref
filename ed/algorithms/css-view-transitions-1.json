@@ -431,6 +431,9 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase⑦\">phase</a> is \"<code>done</code>\", or before \"<code>update-callback-called</code>\".</p>"
         },
         {
+          "html": "<p>If <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase⑧\">phase</a> is not \"<code>done</code>\", then set <var>transition</var>’s <span id=\"ref-for-viewtransition-phase⑨\">phase</span> to \"<code>update-callback-called</code>\".</p>"
+        },
+        {
           "html": "<p>Let <var>callbackPromise</var> be null.</p>"
         },
         {
@@ -438,9 +441,6 @@
         },
         {
           "html": "<p>Otherwise, set <var>callbackPromise</var> to the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">invoking</a> <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-update-callback\" id=\"ref-for-viewtransition-update-callback③\">update callback</a>.</p>"
-        },
-        {
-          "html": "<p>If <var>transition</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase\" id=\"ref-for-viewtransition-phase⑧\">phase</a> is not \"<code>done</code>\", then set <var>transition</var>’s <span id=\"ref-for-viewtransition-phase⑨\">phase</span> to \"<code>update-callback-called</code>\".</p>"
         },
         {
           "html": "Let <var>fulfillSteps</var> be to following steps:",
