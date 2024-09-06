@@ -3927,7 +3927,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmcelloptions"
       },
       "MLLstmCellSupportLimits": {
-        "fragment": "dictionary MLLstmCellSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits weight;\n  MLSupportLimits recurrentWeight;\n  MLSupportLimits hiddenState;\n  MLSupportLimits cellState;\n  MLSupportLimits bias;\n  MLSupportLimits recurrentBias;\n  MLSupportLimits peepholeWeight;\n  MLSupportLimits output;\n};",
+        "fragment": "dictionary MLLstmCellSupportLimits {\n  MLSupportLimits input;\n  MLSupportLimits weight;\n  MLSupportLimits recurrentWeight;\n  MLSupportLimits hiddenState;\n  MLSupportLimits cellState;\n  MLSupportLimits bias;\n  MLSupportLimits recurrentBias;\n  MLSupportLimits peepholeWeight;\n  MLSupportLimits outputs;\n};",
         "type": "dictionary",
         "name": "MLLstmCellSupportLimits",
         "inheritance": null,
@@ -4062,7 +4062,7 @@
           },
           {
             "type": "field",
-            "name": "output",
+            "name": "outputs",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -4074,7 +4074,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcellsupportlimits-output"
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcellsupportlimits-outputs"
           }
         ],
         "extAttrs": [],
