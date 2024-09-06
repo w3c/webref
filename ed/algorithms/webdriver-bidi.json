@@ -5221,6 +5221,9 @@
                   "html": "<p>If <var>preload script</var>’s <code>sandbox</code> is not null, let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-or-create-a-sandbox-realm\" id=\"ref-for-get-or-create-a-sandbox-realm\">get\n or create a sandbox realm</a> with <var>preload script</var>’s <code>sandbox</code> and <var>navigable</var>. Otherwise let <var>realm</var> be <var>environment settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context①\">realm execution context</a>'s Realm component.</p>"
                 },
                 {
+                  "html": "<p>Let <var>exception reporting global</var> be be <var>environment settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context②\">realm execution context</a>'s Realm component’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global②\">global object</a>.</p>"
+                },
+                {
                   "html": "<p>Let <var>arguments</var> be <var>preload script</var>’s <code>arguments</code>.</p>"
                 },
                 {
@@ -5251,7 +5254,7 @@
                   "html": "<p>Let (<var>script</var>, <var>function body evaluation status</var>) be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#evaluate-function-body\" id=\"ref-for-evaluate-function-body\">evaluate function body</a> with <var>function declaration</var>, <var>environment settings</var>, <var>base URL</var>, and <var>options</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>function body evaluation status</var> is an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type\">abrupt completion</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\" id=\"ref-for-report-the-exception\">report the exception</a> given by <var>function body evaluation status</var>.[[Value]]\n for <var>script</var>.</p>"
+                  "html": "<p>If <var>function body evaluation status</var> is an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type\">abrupt completion</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-an-exception\" id=\"ref-for-report-an-exception\">report an exception</a> given by <var>function body evaluation status</var>.[[Value]]\n for <var>exception reporting global</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>function object</var> be <var>function body evaluation status</var>.[[Value]].</p>"
@@ -5264,7 +5267,7 @@
                       "html": "<p>Let <var>error</var> be a new <a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a> object in <var>realm</var>.</p>"
                     },
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\" id=\"ref-for-report-the-exception①\">Report the exception</a> <var>error</var>.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-an-exception\" id=\"ref-for-report-an-exception①\">Report an exception</a> <var>error</var> for <var>exception reporting global</var>.</p>"
                     }
                   ]
                 },
@@ -5278,7 +5281,7 @@
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-script\" id=\"ref-for-clean-up-after-running-script\">Clean up after running script</a> with <var>environment settings</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>evaluation status</var> is an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type①\">abrupt completion</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\" id=\"ref-for-report-the-exception②\">report the exception</a> given by <var>evaluation status</var>.[[Value]] for <var>script</var>.</p>"
+                  "html": "<p>If <var>evaluation status</var> is an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type①\">abrupt completion</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-an-exception\" id=\"ref-for-report-an-exception②\">report an exception</a> given by <var>evaluation status</var>.[[Value]] for <var>exception reporting global</var>.</p>"
                 }
               ]
             }
@@ -5649,7 +5652,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>global object</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global②\">global object</a> of the <var>realm</var>.</p>"
+          "html": "<p>Let <var>global object</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global③\">global object</a> of the <var>realm</var>.</p>"
         },
         {
           "html": "<p>Let <var>global object</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#unwrapped\" id=\"ref-for-unwrapped\">unwrapped</a> <var>global object</var>.</p>"
@@ -5707,7 +5710,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>realm</var> be <var>environment settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context②\">realm execution context</a>'s Realm component.</p>"
+          "html": "<p>Let <var>realm</var> be <var>environment settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context③\">realm execution context</a>'s Realm component.</p>"
         },
         {
           "html": "<p>Let <var>realm id</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#realm-id\" id=\"ref-for-realm-id③\">realm id</a> for <var>realm</var>.</p>"
@@ -5716,7 +5719,7 @@
           "html": "<p>Let <var>origin</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialization of an origin</a> given <var>environment settings</var>’s <var>origin</var>.</p>"
         },
         {
-          "html": "<p>Let <var>global object</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global③\">global object</a> specified by <var>environment settings</var></p>"
+          "html": "<p>Let <var>global object</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global④\">global object</a> specified by <var>environment settings</var></p>"
         },
         {
           "html": "<p>Run the steps under the first matching condition:</p>\n      <dl>\n       <dt><var>global object</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑧\">Window</a></code> object \n       </dt><dd>\n        \n       </dd><dt><var>global object</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webdriver-bidi/#sandboxwindowproxy\" id=\"ref-for-sandboxwindowproxy③\">SandboxWindowProxy</a></code> object \n       </dt><dd>\n         TODO: Unclear if this is the right formulation for handling sandboxes. \n        \n       </dd><dt><var>global object</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope\" id=\"ref-for-dedicatedworkerglobalscope\">DedicatedWorkerGlobalScope</a></code> object \n       </dt><dd>\n        \n       </dd><dt><var>global object</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#sharedworkerglobalscope\" id=\"ref-for-sharedworkerglobalscope\">SharedWorkerGlobalScope</a></code> object \n       </dt><dd>\n        \n       </dd><dt><var>global object</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope\" id=\"ref-for-serviceworkerglobalscope\">ServiceWorkerGlobalScope</a></code> object \n       </dt><dd>\n        \n       </dd><dt><var>global object</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope②\">WorkerGlobalScope</a></code> object \n       </dt><dd>\n        \n       </dd><dt><var>global object</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-paint-api-1/#paintworkletglobalscope\" id=\"ref-for-paintworkletglobalscope\">PaintWorkletGlobalScope</a></code> object \n       </dt><dd>\n        \n       </dd><dt><var>global object</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope\" id=\"ref-for-AudioWorkletGlobalScope\">AudioWorkletGlobalScope</a></code> object \n       </dt><dd>\n        \n       </dd><dt><var>global object</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope\" id=\"ref-for-workletglobalscope\">WorkletGlobalScope</a></code> object \n       </dt><dd>\n        \n       </dd><dt>Otherwise: \n       </dt><dd>\n        \n      </dd></dl>",
@@ -5913,13 +5916,13 @@
           "html": "<p>If <var>node</var> is <code>null</code>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-errors\" id=\"ref-for-dfn-errors⑦⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑦③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#errors-no-such-node\" id=\"ref-for-errors-no-such-node①\">no such node</a>.</p>"
         },
         {
-          "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object③\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context③\">realm execution context</a>'s Realm component is <var>realm</var>.</p>"
+          "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object③\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context④\">realm execution context</a>'s Realm component is <var>realm</var>.</p>"
         },
         {
           "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin-domain\" id=\"ref-for-same-origin-domain\">same origin\n domain</a> with <var>environment settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a> then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-errors\" id=\"ref-for-dfn-errors⑦⑨\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑦④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#errors-no-such-node\" id=\"ref-for-errors-no-such-node②\">no such node</a>.</p>"
         },
         {
-          "html": "<p>Let <var>realm global object</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global④\">global object</a> of the <var>realm</var>.</p>"
+          "html": "<p>Let <var>realm global object</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑤\">global object</a> of the <var>realm</var>.</p>"
         },
         {
           "html": "<p>If the <var>realm global object</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webdriver-bidi/#sandboxwindowproxy\" id=\"ref-for-sandboxwindowproxy④\">SandboxWindowProxy</a></code> object, set <var>node</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webdriver-bidi/#sandboxproxy\" id=\"ref-for-sandboxproxy⑤\">SandboxProxy</a></code> wrapping <var>node</var> in the <var>realm</var>.</p>"
@@ -6475,7 +6478,7 @@
           "html": "<p>Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#realm-id\" id=\"ref-for-realm-id④\">realm id</a> for <var>source realm</var>.</p>"
         },
         {
-          "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object④\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context④\">realm execution context</a>'s Realm component is <var>source realm</var>.</p>"
+          "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object④\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context⑤\">realm execution context</a>'s Realm component is <var>source realm</var>.</p>"
         },
         {
           "html": "If <var>environment settings</var> has a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑥\">associated <code>Document</code></a>:",
@@ -6520,7 +6523,7 @@
               "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object⑤\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑧\">associated <code>Document</code></a> is <var>document</var>.</p>"
             },
             {
-              "html": "<p>Let <var>realm</var> be <var>environment settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context⑤\">realm execution context</a>'s\n Realm component.</p>"
+              "html": "<p>Let <var>realm</var> be <var>environment settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context⑥\">realm execution context</a>'s\n Realm component.</p>"
             }
           ]
         },
@@ -6720,7 +6723,7 @@
           "html": "<p>Let <var>realm id</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#realm-id\" id=\"ref-for-realm-id⑤\">realm id</a>.</p>"
         },
         {
-          "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object⑥\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context⑥\">realm execution context</a>'s Realm component is <var>realm</var>.</p>"
+          "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object⑥\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context⑦\">realm execution context</a>'s Realm component is <var>realm</var>.</p>"
         },
         {
           "html": "<p>Let <var>command arguments</var> be the value of the <code>arguments</code> field\n of <var>command parameters</var>.</p>"
@@ -6841,7 +6844,7 @@
           "html": "<p>Let <var>realm id</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#realm-id\" id=\"ref-for-realm-id⑥\">realm id</a>.</p>"
         },
         {
-          "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object⑦\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context⑦\">realm execution context</a>'s Realm component is <var>realm</var>.</p>"
+          "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object⑦\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context⑧\">realm execution context</a>'s Realm component is <var>realm</var>.</p>"
         },
         {
           "html": "<p>Let <var>source</var> be the value of the <code>expression</code> field of <var>command\n parameters</var>.</p>"
@@ -6934,7 +6937,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If any of the following conditions hold:</p>\n          <ul>\n           <li data-md=\"\">\n            <p>The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑨\">associated <code>Document</code></a> of <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a> is <var>document</var></p>\n           </li><li data-md=\"\">\n            <p>The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑤\">global object</a> specified by <var>settings</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope④\">WorkerGlobalScope</a></code> with <var>document</var> in its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#concept-WorkerGlobalScope-owner-set\" id=\"ref-for-concept-WorkerGlobalScope-owner-set②\">owner set</a></p>\n          </li></ul>\n          <p>Append <var>settings</var> to <var>navigable environment settings</var>.</p>"
+                  "html": "<p>If any of the following conditions hold:</p>\n          <ul>\n           <li data-md=\"\">\n            <p>The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑨\">associated <code>Document</code></a> of <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a> is <var>document</var></p>\n           </li><li data-md=\"\">\n            <p>The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑥\">global object</a> specified by <var>settings</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope④\">WorkerGlobalScope</a></code> with <var>document</var> in its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#concept-WorkerGlobalScope-owner-set\" id=\"ref-for-concept-WorkerGlobalScope-owner-set②\">owner set</a></p>\n          </li></ul>\n          <p>Append <var>settings</var> to <var>navigable environment settings</var>.</p>"
                 }
               ]
             },
@@ -6998,7 +7001,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object⑨\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context⑧\">realm execution context</a>'s Realm component is <var>realm</var>.</p>"
+          "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object⑨\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context⑨\">realm execution context</a>'s Realm component is <var>realm</var>.</p>"
         },
         {
           "html": "<p>Let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables⑤\">get related navigables</a> given <var>environment settings</var>.</p>"
@@ -7163,7 +7166,7 @@
           "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①②\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑨\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①②\">associated <code>Document</code></a> is <var>document</var>.</p>"
         },
         {
-          "html": "<p>Let <var>realm</var> be <var>environment settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context⑨\">realm execution context</a>'s Realm component.</p>"
+          "html": "<p>Let <var>realm</var> be <var>environment settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context①⓪\">realm execution context</a>'s Realm component.</p>"
         },
         {
           "html": "<p>Let <var>realm id</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#realm-id\" id=\"ref-for-realm-id⑧\">realm id</a> for <var>realm</var>.</p>"
@@ -7748,7 +7751,7 @@
               "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①④\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⓪\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①③\">associated <code>Document</code></a> is <var>document</var>.</p>"
             },
             {
-              "html": "<p>Let <var>realm</var> be <var>environment settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context①⓪\">realm execution context</a>'s\n Realm component.</p>"
+              "html": "<p>Let <var>realm</var> be <var>environment settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context①①\">realm execution context</a>'s\n Realm component.</p>"
             },
             {
               "html": "<p>Let <var>element</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑥⑥\">trying</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#deserialize-remote-reference\" id=\"ref-for-deserialize-remote-reference②\">deserialize remote reference</a> with <var>reference</var>, <var>realm</var>, and <var>session</var>.</p>"
@@ -7843,7 +7846,7 @@
           "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①⑤\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①①\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①④\">associated <code>Document</code></a> is <var>document</var>.</p>"
         },
         {
-          "html": "<p>Let <var>realm</var> be <var>environment settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context①①\">realm execution context</a>'s\n Realm component.</p>"
+          "html": "<p>Let <var>realm</var> be <var>environment settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context①②\">realm execution context</a>'s\n Realm component.</p>"
         },
         {
           "html": "<p>Let <var>element</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦②\">trying</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#deserialize-remote-reference\" id=\"ref-for-deserialize-remote-reference③\">deserialize remote reference</a> with <var>command parameters</var>[\"<code>element</code>\"], <var>realm</var>, and <var>session</var>.</p>"
