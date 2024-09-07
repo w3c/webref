@@ -5952,7 +5952,7 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "<p>Set <var>renderState</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-renderstate-stencilreference-slot\" id=\"ref-for-dom-renderstate-stencilreference-slot②\" data-timeline=\"queue\">[[stencilReference]]</a></code> to <var>reference</var>.</p>"
+          "html": "<p>Set <var>renderState</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-renderstate-stencilreference-slot\" id=\"ref-for-dom-renderstate-stencilreference-slot③\" data-timeline=\"queue\">[[stencilReference]]</a></code> to <var>reference</var>.</p>"
         }
       ]
     },
@@ -7245,13 +7245,13 @@
           "html": "<p><strong>Rasterize</strong>. See <a href=\"https://www.w3.org/TR/webgpu/#rasterization\">§ 23.2.5 Rasterization</a>.</p>\n      <p>Let <var>rasterizationList</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-rasterize\" id=\"ref-for-abstract-opdef-rasterize\" data-timeline=\"queue\">rasterize</a>(<var>primitiveList</var>, <var>state</var>).</p>"
         },
         {
-          "html": "<p><strong>Process fragments</strong>. See <a href=\"https://www.w3.org/TR/webgpu/#fragment-processing\">§ 23.2.6 Fragment Processing</a>.</p>\n      <p>Gather a list of <var>fragments</var>, resulting from executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-process-fragment\" id=\"ref-for-abstract-opdef-process-fragment\" data-timeline=\"queue\">process fragment</a>(<var>rasterPoint</var>, <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipelinedescriptor-fragment\" id=\"ref-for-dom-gpurenderpipelinedescriptor-fragment①⑨\">fragment</a></code>, <var>state</var>)\nfor each <var>rasterPoint</var> in <var>rasterizationList</var>.</p>"
+          "html": "<p><strong>Process fragments</strong>. See <a href=\"https://www.w3.org/TR/webgpu/#fragment-processing\">§ 23.2.6 Fragment Processing</a>.</p>\n      <p>Gather a list of <var>fragments</var>, resulting from executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-process-fragment\" id=\"ref-for-abstract-opdef-process-fragment\" data-timeline=\"queue\">process fragment</a>(<var>rasterPoint</var>, <var>descriptor</var>, <var>state</var>)\nfor each <var>rasterPoint</var> in <var>rasterizationList</var>.</p>"
         },
         {
-          "html": "<p><strong>Process depth/stencil</strong>.</p>"
+          "html": "<p><strong>Process depth/stencil</strong>. See <a href=\"https://www.w3.org/TR/webgpu/#output-merging\">§ 23.2.7 Output Merging</a>.</p>\n      <p>Execute <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-process-depth-stencil\" id=\"ref-for-abstract-opdef-process-depth-stencil\" data-timeline=\"queue\">process depth stencil</a>(<var>fragment</var>, <var>descriptor</var>, <var>state</var>) For each non-null <var>fragment</var> of <var>fragments</var>.</p>"
         },
         {
-          "html": "<p><strong>Write pixels</strong>.</p>"
+          "html": "<p><strong>Write pixels</strong>. See <a href=\"https://www.w3.org/TR/webgpu/#output-merging\">§ 23.2.7 Output Merging</a>.</p>"
         }
       ]
     },
@@ -7698,14 +7698,23 @@
     {
       "name": "process fragment",
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-process-fragment",
-      "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-process-fragment\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process fragment</dfn>(rp, desc, state) \n    <p><strong>Arguments:</strong></p>\n    <ul>\n     <li data-md=\"\">\n      <p><var>rp</var>: The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#rasterizationpoint\" id=\"ref-for-rasterizationpoint④\">RasterizationPoint</a>, produced by <a href=\"https://www.w3.org/TR/webgpu/#rasterization\">§ 23.2.5 Rasterization</a>.</p>\n     </li><li data-md=\"\">\n      <p><var>desc</var>: The descriptor of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dictdef-gpufragmentstate\" id=\"ref-for-dictdef-gpufragmentstate④\">GPUFragmentState</a></code>.</p>\n     </li><li data-md=\"\">\n      <p><var>state</var>: The active <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#renderstate\" id=\"ref-for-renderstate⑥\">RenderState</a>.</p>\n    </li></ul>\n    <p><strong>Returns:</strong> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment\" id=\"ref-for-fragment②\">Fragment</a> or <code>null</code>.</p>",
+      "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-process-fragment\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process fragment</dfn>(rp, descriptor, state) \n    <p><strong>Arguments:</strong></p>\n    <ul>\n     <li data-md=\"\">\n      <p><var>rp</var>: The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#rasterizationpoint\" id=\"ref-for-rasterizationpoint④\">RasterizationPoint</a>, produced by <a href=\"https://www.w3.org/TR/webgpu/#rasterization\">§ 23.2.5 Rasterization</a>.</p>\n     </li><li data-md=\"\">\n      <p><var>descriptor</var>: The descriptor of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dictdef-gpurenderpipelinedescriptor\" id=\"ref-for-dictdef-gpurenderpipelinedescriptor①③\">GPURenderPipelineDescriptor</a></code>.</p>\n     </li><li data-md=\"\">\n      <p><var>state</var>: The active <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#renderstate\" id=\"ref-for-renderstate⑥\">RenderState</a>.</p>\n    </li></ul>\n    <p><strong>Returns:</strong> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment\" id=\"ref-for-fragment②\">Fragment</a> or <code>null</code>.</p>",
       "rationale": ".algorithm",
       "steps": [
+        {
+          "html": "<p>Let <var>fragmentDesc</var> be <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipelinedescriptor-fragment\" id=\"ref-for-dom-gpurenderpipelinedescriptor-fragment①⑨\">fragment</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>depthStencilDesc</var> be <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipelinedescriptor-depthstencil\" id=\"ref-for-dom-gpurenderpipelinedescriptor-depthstencil①①\">depthStencil</a></code>.</p>"
+        },
         {
           "html": "<p>Let <var>fragment</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment\" id=\"ref-for-fragment③\">Fragment</a> object.</p>"
         },
         {
           "html": "<p>Set <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-destination\" id=\"ref-for-fragment-destination\">destination</a> to <var>rp</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#rasterizationpoint-destination\" id=\"ref-for-rasterizationpoint-destination①\">destination</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-frontfacing\" id=\"ref-for-fragment-frontfacing\">frontFacing</a> to <var>rp</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#rasterizationpoint-frontfacing\" id=\"ref-for-rasterizationpoint-frontfacing\">frontFacing</a>.</p>"
         },
         {
           "html": "<p>Set <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-coveragemask\" id=\"ref-for-fragment-coveragemask\">coverageMask</a> to <var>rp</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#rasterizationpoint-coveragemask\" id=\"ref-for-rasterizationpoint-coveragemask\">coverageMask</a>.</p>"
@@ -7714,11 +7723,29 @@
           "html": "<p>Set <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depth\" id=\"ref-for-fragment-depth\">depth</a> to <var>rp</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#rasterizationpoint-depth\" id=\"ref-for-rasterizationpoint-depth①\">depth</a>.</p>"
         },
         {
-          "html": "If <var>desc</var> is not <code>null</code>:",
+          "html": "If <code>frag_depth</code> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values③\">builtin</a> is not produced by the shader:",
           "rationale": "set",
           "steps": [
             {
-              "html": "Set the shader input <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values③\">builtins</a>. For each non-composite argument of the entry point,\nannotated as a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values④\">builtin</a>, set its value based on the annotation:",
+              "html": "<p>Set <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depthpassed\" id=\"ref-for-fragment-depthpassed\">depthPassed</a> to the result of <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-compare-fragment\" id=\"ref-for-abstract-opdef-compare-fragment\" data-timeline=\"queue\">compare fragment</a>(<var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-destination\" id=\"ref-for-fragment-destination①\">destination</a>, <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depth\" id=\"ref-for-fragment-depth①\">depth</a>, depth, <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-renderstate-depthstencilattachment-slot\" id=\"ref-for-dom-renderstate-depthstencilattachment-slot②\" data-timeline=\"queue\">[[depthStencilAttachment]]</a></code>, <var>depthStencilDesc</var>?.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthcompare\" id=\"ref-for-dom-gpudepthstencilstate-depthcompare⑥\">depthCompare</a></code>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <var>stencilState</var> to <var>depthStencilDesc</var>?.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-stencilfront\" id=\"ref-for-dom-gpudepthstencilstate-stencilfront④\">stencilFront</a></code> if <var>rp</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#rasterizationpoint-frontfacing\" id=\"ref-for-rasterizationpoint-frontfacing①\">frontFacing</a> is <code>true</code> and <var>depthStencilDesc</var>?.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-stencilback\" id=\"ref-for-dom-gpudepthstencilstate-stencilback④\">stencilBack</a></code> otherwise.</p>"
+        },
+        {
+          "html": "<p>Set <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-stencilpassed\" id=\"ref-for-fragment-stencilpassed\">stencilPassed</a> to the result of <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-compare-fragment\" id=\"ref-for-abstract-opdef-compare-fragment①\" data-timeline=\"queue\">compare fragment</a>(<var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-destination\" id=\"ref-for-fragment-destination②\">destination</a>, <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-renderstate-stencilreference-slot\" id=\"ref-for-dom-renderstate-stencilreference-slot④\" data-timeline=\"queue\">[[stencilReference]]</a></code>, stencil, <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-renderstate-depthstencilattachment-slot\" id=\"ref-for-dom-renderstate-depthstencilattachment-slot③\" data-timeline=\"queue\">[[depthStencilAttachment]]</a></code>, <var>stencilState</var>?.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustencilfacestate-compare\" id=\"ref-for-dom-gpustencilfacestate-compare④\">compare</a></code>).</p>"
+        },
+        {
+          "html": "If <var>fragmentDesc</var> is not <code>null</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depthpassed\" id=\"ref-for-fragment-depthpassed①\">depthPassed</a> is <code>false</code> and the <code>frag_depth</code> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values④\">builtin</a> is not produced by the\nshader the following steps may be skipped.</p>"
+            },
+            {
+              "html": "Set the shader input <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values⑤\">builtins</a>. For each non-composite argument of the entry point,\nannotated as a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values⑥\">builtin</a>, set its value based on the annotation:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -7730,7 +7757,7 @@
                     },
                     {
                       "case": "front_facing",
-                      "html": "<p><var>rp</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#rasterizationpoint-frontfacing\" id=\"ref-for-rasterizationpoint-frontfacing\">frontFacing</a></p>"
+                      "html": "<p><var>rp</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#rasterizationpoint-frontfacing\" id=\"ref-for-rasterizationpoint-frontfacing②\">frontFacing</a></p>"
                     },
                     {
                       "case": "sample_index",
@@ -7757,7 +7784,7 @@
               ]
             },
             {
-              "html": "<p>Invoke the fragment shader entry point described by <var>desc</var>.</p>\n        <p>The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#device\" id=\"ref-for-device②⑧\">device</a> may become <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#lose-the-device\" id=\"ref-for-lose-the-device⑧\" data-timeline=\"device\">lost</a> if <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#shader-execution-end\" id=\"ref-for-shader-execution-end②\">shader execution does not end</a> in a reasonable amount of time, as determined by the user agent.</p>"
+              "html": "<p>Invoke the fragment shader entry point described by <var>fragmentDesc</var>.</p>\n        <p>The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#device\" id=\"ref-for-device②⑧\">device</a> may become <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#lose-the-device\" id=\"ref-for-lose-the-device⑧\" data-timeline=\"device\">lost</a> if <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#shader-execution-end\" id=\"ref-for-shader-execution-end②\">shader execution does not end</a> in a reasonable amount of time, as determined by the user agent.</p>"
             },
             {
               "html": "<p>If the fragment issued <code>discard</code>, return <code>null</code>.</p>"
@@ -7766,25 +7793,28 @@
               "html": "<p>Set <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-colors\" id=\"ref-for-fragment-colors\">colors</a> to the user-specified <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#shader-stage-output\" id=\"ref-for-shader-stage-output⑤\">shader stage output</a> values from the shader.</p>"
             },
             {
-              "html": "Take the shader output <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values⑤\">builtins</a>:",
+              "html": "Take the shader output <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values⑦\">builtins</a>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <code>frag_depth</code> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values⑥\">builtin</a> is produced by the shader as <var>value</var>:",
+                  "html": "If <code>frag_depth</code> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values⑧\">builtin</a> is produced by the shader as <var>value</var>:",
                   "rationale": "let",
                   "steps": [
                     {
                       "html": "<p>Let <var>vp</var> be <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-renderstate-viewport-slot\" id=\"ref-for-dom-renderstate-viewport-slot⑤\" data-timeline=\"queue\">[[viewport]]</a></code>.</p>"
                     },
                     {
-                      "html": "<p>Set <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depth\" id=\"ref-for-fragment-depth①\">depth</a> to clamp(<var>value</var>, <var>vp</var>.<code>minDepth</code>, <var>vp</var>.<code>maxDepth</code>).</p>"
+                      "html": "<p>Set <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depth\" id=\"ref-for-fragment-depth②\">depth</a> to clamp(<var>value</var>, <var>vp</var>.<code>minDepth</code>, <var>vp</var>.<code>maxDepth</code>).</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depthpassed\" id=\"ref-for-fragment-depthpassed②\">depthPassed</a> to the result of <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-compare-fragment\" id=\"ref-for-abstract-opdef-compare-fragment②\" data-timeline=\"queue\">compare fragment</a>(<var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-destination\" id=\"ref-for-fragment-destination③\">destination</a>, <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depth\" id=\"ref-for-fragment-depth③\">depth</a>, depth, <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-renderstate-depthstencilattachment-slot\" id=\"ref-for-dom-renderstate-depthstencilattachment-slot④\" data-timeline=\"queue\">[[depthStencilAttachment]]</a></code>, <var>depthStencilDesc</var>?.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthcompare\" id=\"ref-for-dom-gpudepthstencilstate-depthcompare⑦\">depthCompare</a></code>).</p>"
                     }
                   ]
                 }
               ]
             },
             {
-              "html": "If <code>sample_mask</code> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values⑦\">builtin</a> is produced by the shader as <var>value</var>:",
+              "html": "If <code>sample_mask</code> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values⑨\">builtin</a> is produced by the shader as <var>value</var>:",
               "rationale": "set",
               "steps": [
                 {
@@ -7796,6 +7826,41 @@
         },
         {
           "html": "<p>Return <var>fragment</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "process depth stencil",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-process-depth-stencil",
+      "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-process-depth-stencil\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process depth stencil</dfn>(fragment, descriptor, state) \n    <p><strong>Arguments:</strong></p>\n    <ul>\n     <li data-md=\"\">\n      <p><var>fragment</var>: The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment\" id=\"ref-for-fragment④\">Fragment</a>, produced by <a href=\"https://www.w3.org/TR/webgpu/#fragment-processing\">§ 23.2.6 Fragment Processing</a>.</p>\n     </li><li data-md=\"\">\n      <p><var>descriptor</var>: The descriptor of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dictdef-gpurenderpipelinedescriptor\" id=\"ref-for-dictdef-gpurenderpipelinedescriptor①④\">GPURenderPipelineDescriptor</a></code>.</p>\n     </li><li data-md=\"\">\n      <p><var>state</var>: The active <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#renderstate\" id=\"ref-for-renderstate⑦\">RenderState</a>.</p>\n    </li></ul>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>depthStencilDesc</var> be <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipelinedescriptor-depthstencil\" id=\"ref-for-dom-gpurenderpipelinedescriptor-depthstencil①②\">depthStencil</a></code>.</p>"
+        },
+        {
+          "html": "If <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipeline-writesdepth-slot\" id=\"ref-for-dom-gpurenderpipeline-writesdepth-slot③\" data-timeline=\"device\">[[writesDepth]]</a></code> is <code>true</code> and <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depthpassed\" id=\"ref-for-fragment-depthpassed③\">depthPassed</a> is <code>true</code>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set the value of the depth aspect of <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-renderstate-depthstencilattachment-slot\" id=\"ref-for-dom-renderstate-depthstencilattachment-slot⑤\" data-timeline=\"queue\">[[depthStencilAttachment]]</a></code> at <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-destination\" id=\"ref-for-fragment-destination④\">destination</a> to <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depth\" id=\"ref-for-fragment-depth④\">depth</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipeline-writesstencil-slot\" id=\"ref-for-dom-gpurenderpipeline-writesstencil-slot④\" data-timeline=\"device\">[[writesStencil]]</a></code> is true:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>stencilState</var> to <var>depthStencilDesc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-stencilfront\" id=\"ref-for-dom-gpudepthstencilstate-stencilfront⑤\">stencilFront</a></code> if <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-frontfacing\" id=\"ref-for-fragment-frontfacing①\">frontFacing</a> is <code>true</code> and <var>depthStencilDesc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-stencilback\" id=\"ref-for-dom-gpudepthstencilstate-stencilback⑤\">stencilBack</a></code> otherwise.</p>"
+            },
+            {
+              "html": "<p>If <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-stencilpassed\" id=\"ref-for-fragment-stencilpassed①\">stencilPassed</a> is <code>false</code>:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>Let <var>stencilOp</var> be <var>stencilState</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustencilfacestate-failop\" id=\"ref-for-dom-gpustencilfacestate-failop③\">failOp</a></code>.</p>\n        </li></ul>\n        <p>Else if <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depthpassed\" id=\"ref-for-fragment-depthpassed④\">depthPassed</a> is <code>false</code>:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>Let <var>stencilOp</var> be <var>stencilState</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustencilfacestate-depthfailop\" id=\"ref-for-dom-gpustencilfacestate-depthfailop⑤\">depthFailOp</a></code>.</p>\n        </li></ul>\n        <p>Else:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>Let <var>stencilOp</var> be <var>stencilState</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustencilfacestate-passop\" id=\"ref-for-dom-gpustencilfacestate-passop③\">passOp</a></code>.</p>\n        </li></ul>"
+            },
+            {
+              "html": "<p>Update the value of the stencil aspect of <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-renderstate-depthstencilattachment-slot\" id=\"ref-for-dom-renderstate-depthstencilattachment-slot⑥\" data-timeline=\"queue\">[[depthStencilAttachment]]</a></code> at <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-destination\" id=\"ref-for-fragment-destination⑤\">destination</a> by performing the operation described by <var>stencilOp</var>.</p>"
+            }
+          ]
         }
       ]
     },

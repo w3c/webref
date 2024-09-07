@@ -45,58 +45,23 @@
       "definedIn": "prose"
     },
     {
-      "id": "strong-scoping-proximity",
-      "href": "https://www.w3.org/TR/css-cascade-6/#strong-scoping-proximity",
-      "linkingText": [
-        "Strong Scoping Proximity"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/css-cascade-6/#title",
-        "title": "CSS Cascading and Inheritance Level 6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "weak-scoping-proximity",
-      "href": "https://www.w3.org/TR/css-cascade-6/#weak-scoping-proximity",
-      "linkingText": [
-        "Weak Scoping Proximity"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/css-cascade-6/#title",
-        "title": "CSS Cascading and Inheritance Level 6"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "scope-proximity",
       "href": "https://www.w3.org/TR/css-cascade-6/#scope-proximity",
       "linkingText": [
-        "scope proximity"
+        "Scope Proximity"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": true,
+      "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/css-cascade-6/#title",
-        "title": "CSS Cascading and Inheritance Level 6"
+        "id": "cascade-sort",
+        "href": "https://www.w3.org/TR/css-cascade-6/#cascade-sort",
+        "title": "Cascade Sorting Order",
+        "number": "2.1"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "output-of-the-cascade",
@@ -110,9 +75,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/css-cascade-6/#title",
-        "title": "CSS Cascading and Inheritance Level 6"
+        "id": "cascade-sort",
+        "href": "https://www.w3.org/TR/css-cascade-6/#cascade-sort",
+        "title": "Cascade Sorting Order",
+        "number": "2.1"
       },
       "definedIn": "prose"
     },
@@ -170,9 +136,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/css-cascade-6/#title",
-        "title": "CSS Cascading and Inheritance Level 6"
+        "id": "importance",
+        "href": "https://www.w3.org/TR/css-cascade-6/#importance",
+        "title": "Important Declarations: the !important annotation",
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
@@ -207,9 +174,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/css-cascade-6/#title",
-        "title": "CSS Cascading and Inheritance Level 6"
+        "id": "scoped-styles",
+        "href": "https://www.w3.org/TR/css-cascade-6/#scoped-styles",
+        "title": "Scoping Styles: the @scope rule",
+        "number": "2.5"
       },
       "definedIn": "prose"
     },
@@ -225,9 +193,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/css-cascade-6/#title",
-        "title": "CSS Cascading and Inheritance Level 6"
+        "id": "scoped-styles",
+        "href": "https://www.w3.org/TR/css-cascade-6/#scoped-styles",
+        "title": "Scoping Styles: the @scope rule",
+        "number": "2.5"
       },
       "definedIn": "prose"
     },
@@ -243,9 +212,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/css-cascade-6/#title",
-        "title": "CSS Cascading and Inheritance Level 6"
+        "id": "scoped-styles",
+        "href": "https://www.w3.org/TR/css-cascade-6/#scoped-styles",
+        "title": "Scoping Styles: the @scope rule",
+        "number": "2.5"
       },
       "definedIn": "prose"
     },
@@ -280,9 +250,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/css-cascade-6/#title",
-        "title": "CSS Cascading and Inheritance Level 6"
+        "id": "scope-syntax",
+        "href": "https://www.w3.org/TR/css-cascade-6/#scope-syntax",
+        "title": "Syntax of @scope",
+        "number": "2.5.2"
       },
       "definedIn": "prose"
     },
@@ -306,23 +277,65 @@
       "definedIn": "prose"
     },
     {
-      "id": "scoped-descendant-combinator",
-      "href": "https://www.w3.org/TR/css-cascade-6/#scoped-descendant-combinator",
+      "id": "cssscoperule",
+      "href": "https://www.w3.org/TR/css-cascade-6/#cssscoperule",
       "linkingText": [
-        "scoped descendant combinator"
+        "CSSScopeRule"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scope-combinator",
-        "href": "https://www.w3.org/TR/css-cascade-6/#scope-combinator",
-        "title": "Scoped Descendant Combinator",
-        "number": "2.6"
+        "id": "the-cssscoperule-interface",
+        "href": "https://www.w3.org/TR/css-cascade-6/#the-cssscoperule-interface",
+        "title": "The CSSScopeRule interface",
+        "number": "3.1"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssscoperule-start",
+      "href": "https://www.w3.org/TR/css-cascade-6/#dom-cssscoperule-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSScopeRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssscoperule-interface",
+        "href": "https://www.w3.org/TR/css-cascade-6/#the-cssscoperule-interface",
+        "title": "The CSSScopeRule interface",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssscoperule-end",
+      "href": "https://www.w3.org/TR/css-cascade-6/#dom-cssscoperule-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSScopeRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssscoperule-interface",
+        "href": "https://www.w3.org/TR/css-cascade-6/#the-cssscoperule-interface",
+        "title": "The CSSScopeRule interface",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
     }
   ]
 }
