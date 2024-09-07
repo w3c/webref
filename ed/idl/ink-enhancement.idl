@@ -4,7 +4,7 @@
 // Source: Ink API (https://wicg.github.io/ink-enhancement/)
 
 interface Ink {
-    Promise<InkPresenter> requestPresenter(
+    Promise<DelegatedInkTrailPresenter> requestPresenter(
         optional InkPresenterParam? param = null);
 };
 
@@ -13,7 +13,7 @@ dictionary InkPresenterParam {
 };
 
 [Exposed=Window]
-interface InkPresenter {
+interface DelegatedInkTrailPresenter {
     readonly attribute Element? presentationArea;
 
     undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);

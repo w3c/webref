@@ -380,6 +380,78 @@
       "definedIn": "prose"
     },
     {
+      "id": "obtain-the-aggregation-coordinator",
+      "href": "https://wicg.github.io/shared-storage/#obtain-the-aggregation-coordinator",
+      "linkingText": [
+        "obtain the aggregation coordinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-the-pre-specified-report-parameters",
+      "href": "https://wicg.github.io/shared-storage/#obtain-the-pre-specified-report-parameters",
+      "linkingText": [
+        "obtain the pre-specified report parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-up-the-private-aggregation-scopes",
+      "href": "https://wicg.github.io/shared-storage/#set-up-the-private-aggregation-scopes",
+      "linkingText": [
+        "set up the Private Aggregation scopes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deterministic-operation-timeout-duration",
+      "href": "https://wicg.github.io/shared-storage/#deterministic-operation-timeout-duration",
+      "linkingText": [
+        "deterministic operation timeout duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "http-headerdef-shared-storage-cross-origin-worklet-allowed",
       "href": "https://wicg.github.io/shared-storage/#http-headerdef-shared-storage-cross-origin-worklet-allowed",
       "linkingText": [
@@ -541,6 +613,26 @@
       "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-sharedstorage",
       "linkingText": [
         "sharedStorage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageworkletglobalscope-privateaggregation",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-privateaggregation",
+      "linkingText": [
+        "privateAggregation"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2146,6 +2238,84 @@
       "definedIn": "pre"
     },
     {
+      "id": "dictdef-sharedstorageprivateaggregationconfig",
+      "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstorageprivateaggregationconfig",
+      "linkingText": [
+        "SharedStoragePrivateAggregationConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageprivateaggregationconfig-aggregationcoordinatororigin",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageprivateaggregationconfig-aggregationcoordinatororigin",
+      "linkingText": [
+        "aggregationCoordinatorOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedStoragePrivateAggregationConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageprivateaggregationconfig-contextid",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageprivateaggregationconfig-contextid",
+      "linkingText": [
+        "contextId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedStoragePrivateAggregationConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageprivateaggregationconfig-filteringidmaxbytes",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageprivateaggregationconfig-filteringidmaxbytes",
+      "linkingText": [
+        "filteringIdMaxBytes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedStoragePrivateAggregationConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-sharedstoragerunoperationmethodoptions",
       "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragerunoperationmethodoptions",
       "linkingText": [
@@ -2208,6 +2378,26 @@
       "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-keepalive",
       "linkingText": [
         "keepAlive"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedStorageRunOperationMethodOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstoragerunoperationmethodoptions-privateaggregationconfig",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-privateaggregationconfig",
+      "linkingText": [
+        "privateAggregationConfig"
       ],
       "localLinkingText": [],
       "type": "dict-member",

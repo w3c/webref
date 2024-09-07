@@ -96,11 +96,6 @@
           "example-scenarios"
         ]
       },
-      "https://github.com/patcg-individual-drafts/private-aggregation-api/blob/main/README.md": {
-        "anchors": [
-          "private-aggregation"
-        ]
-      },
       "https://github.com/privacysandbox/attestation": {
         "anchors": [
           "enrolled"
@@ -144,10 +139,10 @@
           "nav-document",
           "node-navigable",
           "nav-traversable",
+          "browsing-context",
           "concept-document-bc",
           "navigable",
           "nav-parent",
-          "browsing-context",
           "nav-window",
           "nav-container"
         ]
@@ -165,6 +160,7 @@
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
         "anchors": [
+          "allowed-to-use",
           "htmliframeelement",
           "the-iframe-element"
         ]
@@ -176,6 +172,7 @@
       },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
         "anchors": [
+          "in-parallel",
           "starting-a-new-parallel-queue",
           "enqueue-the-following-steps"
         ]
@@ -209,6 +206,7 @@
           "concept-relevant-realm",
           "fetch-a-worklet-script-graph",
           "concept-settings-object-global",
+          "concept-relevant-global",
           "beginning-navigation",
           "ending-navigation",
           "nav-top",
@@ -261,6 +259,8 @@
           "list-append",
           "list-empty",
           "map-iterate",
+          "string-length",
+          "list-contain",
           "list-clone",
           "boolean",
           "ordered-map",
@@ -270,7 +270,6 @@
           "map-set",
           "map-getting-the-keys",
           "map-getting-the-values",
-          "list-contain",
           "user-agent",
           "struct",
           "struct-item",
@@ -282,13 +281,38 @@
           "map-get",
           "map-remove",
           "map-clear",
-          "string-length",
           "string-concatenate",
           "queue",
           "queue-enqueue",
           "queue-dequeue",
           "ascii-code-point",
           "ascii-string"
+        ]
+      },
+      "https://patcg-individual-drafts.github.io/private-aggregation-api/": {
+        "anchors": [
+          "pre-specified-report-parameters",
+          "aggregation-coordinator",
+          "determine-if-an-origin-is-an-aggregation-coordinator",
+          "default-filtering-id-max-bytes",
+          "valid-filtering-id-max-bytes-range",
+          "context-id",
+          "filtering-id-max-bytes",
+          "batching-scope",
+          "debug-scope",
+          "mark-a-debug-scope-complete",
+          "process-contributions-for-a-batching-scope",
+          "set-the-aggregation-coordinator-for-a-batching-scope",
+          "determine-if-a-report-should-be-sent-deterministically",
+          "set-the-pre-specified-report-parameters-for-a-batching-scope",
+          "allowed-to-use",
+          "private-aggregation",
+          "privateaggregation-scoping-details",
+          "scoping-details",
+          "get-batching-scope-steps",
+          "get-debug-scope-steps",
+          "privateaggregation",
+          "get-the-privateaggregation"
         ]
       },
       "https://privacycg.github.io/storage-partitioning/": {
@@ -352,11 +376,11 @@
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
+          "dfn-current-wall-time",
           "dfn-duration",
           "dom-domhighrestimestamp",
           "dfn-unix-epoch",
-          "dfn-eso-current-wall-time",
-          "dfn-current-wall-time"
+          "dfn-eso-current-wall-time"
         ]
       },
       "https://w3c.github.io/i18n-glossary/": {
@@ -386,6 +410,7 @@
           "invoke-a-callback-function",
           "dfn-perform-steps-once-promise-is-settled",
           "resolve",
+          "idl-DOMException",
           "upon-fulfillment",
           "upon-rejection",
           "Function",
@@ -393,12 +418,15 @@
           "Global",
           "idl-undefined",
           "construct-a-callback-function",
+          "getter-steps",
           "idl-object",
           "dfn-dictionary",
           "idl-double",
           "an-exception-was-thrown",
           "SecureContext",
           "idl-boolean",
+          "EnforceRange",
+          "idl-unsigned-long-long",
           "idl-async-iterable",
           "asynchronous-iterator-initialization-steps",
           "dfn-get-the-next-iteration-result",
@@ -416,13 +444,13 @@
           "fenced-frame-config-mapping-store-a-pending-config",
           "fenced-frame-config-mapped-url",
           "fenced-frame-config-mapping-finalize-a-pending-config",
+          "browsing-context-fenced-frame-config-instance",
           "dictdef-fenceevent",
           "dom-fenceevent-eventtype",
           "dom-fence-reportevent",
           "dom-fenceevent-destination",
           "dom-fenceevent-eventdata",
           "fencedframetype-fenced-frame-reporter",
-          "browsing-context-fenced-frame-config-instance",
           "source-snapshot-params-initiator-fenced-frame-config-instance"
         ]
       },
