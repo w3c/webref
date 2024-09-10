@@ -551,8 +551,80 @@
     },
     {
       "html": "Given a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262#realm\" id=\"ref-for-realm\">realm</a> <var>realm</var>, a list of strings <var>parameterStrings</var>, a string <var>bodyString</var>, a string <var>codeString</var>, an enum (<var>compilationType</var>),\n  a list of ECMAScript language values (<var>parameterArgs</var>), and an ECMAScript language value (<var>bodyArg</var>), this algorithm\n  returns normally if string compilation is allowed, and throws an \"<code>EvalError</code>\"\n  if not:",
-      "rationale": "let",
+      "rationale": "if",
       "steps": [
+        {
+          "html": "If <var>compilationType</var> is \"<code>TIMER</code>\", then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>sourceString</var> be <var>codeString</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Else:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>compilationSink</var> be \"Function\" if <var>compilationType</var> is \"<code>FUNCTION</code>\", and \"Eval\" otherwise.</p>"
+            },
+            {
+              "html": "<p>Let <var>isTrusted</var> be <code>true</code> if <var>bodyArg</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript\">TrustedScript</a></code>, and <code>false</code> otherwise.</p>"
+            },
+            {
+              "html": "If <var>isTrusted</var> is <code>true</code> then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>bodyString</var> is not equal to <var>bodyArg</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript-data\" id=\"ref-for-trustedscript-data\">data</a>, set <var>isTrusted</var> to <code>false</code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>isTrusted</var> is <code>true</code>, then:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<p class=\"assertion\">Assert: <var>parameterArgs</var>’ [list/size=] is equal to [parameterStrings]' <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a>.</p>"
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>index</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the range</a> 0 to |parameterArgs]' [list/size=]:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>arg</var> be <var>parameterArgs</var>[<var>index</var>].</p>"
+                    },
+                    {
+                      "html": "If <var>arg</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements①\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①\">TrustedScript</a></code>, then:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "<p>if <var>parameterStrings</var>[<var>index</var>] is not equal to <var>arg</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript-data\" id=\"ref-for-trustedscript-data①\">data</a>, set <var>isTrusted</var> to <code>false</code>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Otherwise, set <var>isTrusted</var> to <code>false</code>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>sourceToValidate</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript②\">TrustedScript</a></code> object created in <var>realm</var> whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript-data\" id=\"ref-for-trustedscript-data②\">data</a> is set to <var>codeString</var> if <var>isTrusted</var> is <code>true</code>, and <var>codeString</var> otherwise.</p>"
+            },
+            {
+              "html": "<p>Let <var>sourceString</var> be the result of executing the <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string\">Get Trusted Type compliant string</a> algorithm, with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript③\">TrustedScript</a></code>, <var>realm</var>, <var>sourceToValidate</var>, <var>compilationSink</var>, and <code>'script'</code>.</p>"
+            },
+            {
+              "html": "<p>If the algorithm throws an error, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-evalerror\" id=\"ref-for-exceptiondef-evalerror\">EvalError</a></code>.</p>"
+            },
+            {
+              "html": "<p>If <var>sourceString</var> is not equal to <var>codeString</var>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-evalerror\" id=\"ref-for-exceptiondef-evalerror①\">EvalError</a></code>.</p>"
+            }
+          ]
+        },
         {
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
@@ -560,7 +632,7 @@
           "html": "<p>Let <var>global</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑧\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑧\">CSP list</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -580,7 +652,7 @@
                   "html": "<p>Set <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-resource\" id=\"ref-for-violation-resource①①\">resource</a> to \"<code>eval</code>\".</p>"
                 },
                 {
-                  "html": "<p>If <var>source-list</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contains</a> the expression\n  \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/CSP3/#grammardef-report-sample\" id=\"ref-for-grammardef-report-sample②\"><code>'report-sample'</code></a>\", then set <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-sample\" id=\"ref-for-violation-sample③\">sample</a> to\n  the substring of <var>codeString</var> containing its first 40 characters.</p>"
+                  "html": "<p>If <var>source-list</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contains</a> the expression\n  \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/CSP3/#grammardef-report-sample\" id=\"ref-for-grammardef-report-sample②\"><code>'report-sample'</code></a>\", then set <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-sample\" id=\"ref-for-violation-sample③\">sample</a> to\n  the substring of <var>sourceString</var> containing its first 40 characters.</p>"
                 },
                 {
                   "html": "<p>Execute <a href=\"https://www.w3.org/TR/CSP3/#report-violation\">§ 5.5 Report a violation</a> on <var>violation</var>.</p>"
@@ -608,7 +680,7 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#global-object-csp-list\" id=\"ref-for-global-object-csp-list①⓪\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#global-object-csp-list\" id=\"ref-for-global-object-csp-list①⓪\">CSP list</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -738,7 +810,7 @@
               ]
             },
             {
-              "html": "<p>If <var>target</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#eventtarget\" id=\"ref-for-eventtarget\">EventTarget</a></code>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <dfn class=\"idl-code\" data-dfn-for=\"GlobalEventHandlers,WorkerGlobalScope\" data-dfn-type=\"event\" data-export=\"\" id=\"eventdef-globaleventhandlers-securitypolicyviolation\"><code>securitypolicyviolation</code><a class=\"self-link\" href=\"https://www.w3.org/TR/CSP3/#eventdef-globaleventhandlers-securitypolicyviolation\"></a></dfn> that uses the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#securitypolicyviolationevent\" id=\"ref-for-securitypolicyviolationevent②\">SecurityPolicyViolationEvent</a></code> interface at <var>target</var> with its attributes initialized as follows:</p>\n        <dl>\n         <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-documenturi\" id=\"ref-for-dom-securitypolicyviolationevent-documenturi\">documentURI</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://www.w3.org/TR/CSP3/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-url\" id=\"ref-for-violation-url①\">url</a>.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-referrer\" id=\"ref-for-dom-securitypolicyviolationevent-referrer\">referrer</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://www.w3.org/TR/CSP3/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-referrer\" id=\"ref-for-violation-referrer②\">referrer</a>.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-blockeduri\" id=\"ref-for-dom-securitypolicyviolationevent-blockeduri①\">blockedURI</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://www.w3.org/TR/CSP3/#obtain-violation-blocked-uri\">§ 5.2 Obtain the blockedURI of a violation’s resource</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-resource\" id=\"ref-for-violation-resource①⑤\">resource</a>.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-effectivedirective\" id=\"ref-for-dom-securitypolicyviolationevent-effectivedirective\">effectiveDirective</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-effective-directive\" id=\"ref-for-violation-effective-directive③\">effective directive</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-violateddirective\" id=\"ref-for-dom-securitypolicyviolationevent-violateddirective\">violatedDirective</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-effective-directive\" id=\"ref-for-violation-effective-directive④\">effective directive</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-originalpolicy\" id=\"ref-for-dom-securitypolicyviolationevent-originalpolicy\">originalPolicy</a></code>\n         </dt><dd data-md=\"\">\n          <p>The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#serialized-csp\" id=\"ref-for-serialized-csp⑥\">serialization</a> of <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-policy\" id=\"ref-for-violation-policy⑤\">policy</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-disposition\" id=\"ref-for-dom-securitypolicyviolationevent-disposition\">disposition</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-disposition\" id=\"ref-for-violation-disposition\">disposition</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-sourcefile\" id=\"ref-for-dom-securitypolicyviolationevent-sourcefile\">sourceFile</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://www.w3.org/TR/CSP3/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-source-file\" id=\"ref-for-violation-source-file④\">source file</a>, if <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-source-file\" id=\"ref-for-violation-source-file⑤\">source file</a> is not null, or null otherwise.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-statuscode\" id=\"ref-for-dom-securitypolicyviolationevent-statuscode\">statusCode</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-status\" id=\"ref-for-violation-status②\">status</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-linenumber\" id=\"ref-for-dom-securitypolicyviolationevent-linenumber\">lineNumber</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-line-number\" id=\"ref-for-violation-line-number②\">line number</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-columnnumber\" id=\"ref-for-dom-securitypolicyviolationevent-columnnumber\">columnNumber</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-column-number\" id=\"ref-for-violation-column-number②\">column number</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-sample\" id=\"ref-for-dom-securitypolicyviolationevent-sample①\">sample</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-sample\" id=\"ref-for-violation-sample⑤\">sample</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles\">bubbles</a></code>\n         </dt><dd data-md=\"\">\n          <p><code>true</code></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-composed\" id=\"ref-for-dom-event-composed\">composed</a></code>\n         </dt><dd data-md=\"\">\n          <p><code>true</code></p>\n        </dd></dl>"
+              "html": "<p>If <var>target</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements②\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#eventtarget\" id=\"ref-for-eventtarget\">EventTarget</a></code>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <dfn class=\"idl-code\" data-dfn-for=\"GlobalEventHandlers,WorkerGlobalScope\" data-dfn-type=\"event\" data-export=\"\" id=\"eventdef-globaleventhandlers-securitypolicyviolation\"><code>securitypolicyviolation</code><a class=\"self-link\" href=\"https://www.w3.org/TR/CSP3/#eventdef-globaleventhandlers-securitypolicyviolation\"></a></dfn> that uses the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#securitypolicyviolationevent\" id=\"ref-for-securitypolicyviolationevent②\">SecurityPolicyViolationEvent</a></code> interface at <var>target</var> with its attributes initialized as follows:</p>\n        <dl>\n         <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-documenturi\" id=\"ref-for-dom-securitypolicyviolationevent-documenturi\">documentURI</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://www.w3.org/TR/CSP3/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-url\" id=\"ref-for-violation-url①\">url</a>.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-referrer\" id=\"ref-for-dom-securitypolicyviolationevent-referrer\">referrer</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://www.w3.org/TR/CSP3/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-referrer\" id=\"ref-for-violation-referrer②\">referrer</a>.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-blockeduri\" id=\"ref-for-dom-securitypolicyviolationevent-blockeduri①\">blockedURI</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://www.w3.org/TR/CSP3/#obtain-violation-blocked-uri\">§ 5.2 Obtain the blockedURI of a violation’s resource</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-resource\" id=\"ref-for-violation-resource①⑤\">resource</a>.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-effectivedirective\" id=\"ref-for-dom-securitypolicyviolationevent-effectivedirective\">effectiveDirective</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-effective-directive\" id=\"ref-for-violation-effective-directive③\">effective directive</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-violateddirective\" id=\"ref-for-dom-securitypolicyviolationevent-violateddirective\">violatedDirective</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-effective-directive\" id=\"ref-for-violation-effective-directive④\">effective directive</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-originalpolicy\" id=\"ref-for-dom-securitypolicyviolationevent-originalpolicy\">originalPolicy</a></code>\n         </dt><dd data-md=\"\">\n          <p>The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#serialized-csp\" id=\"ref-for-serialized-csp⑥\">serialization</a> of <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-policy\" id=\"ref-for-violation-policy⑤\">policy</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-disposition\" id=\"ref-for-dom-securitypolicyviolationevent-disposition\">disposition</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-disposition\" id=\"ref-for-violation-disposition\">disposition</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-sourcefile\" id=\"ref-for-dom-securitypolicyviolationevent-sourcefile\">sourceFile</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://www.w3.org/TR/CSP3/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-source-file\" id=\"ref-for-violation-source-file④\">source file</a>, if <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-source-file\" id=\"ref-for-violation-source-file⑤\">source file</a> is not null, or null otherwise.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-statuscode\" id=\"ref-for-dom-securitypolicyviolationevent-statuscode\">statusCode</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-status\" id=\"ref-for-violation-status②\">status</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-linenumber\" id=\"ref-for-dom-securitypolicyviolationevent-linenumber\">lineNumber</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-line-number\" id=\"ref-for-violation-line-number②\">line number</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-columnnumber\" id=\"ref-for-dom-securitypolicyviolationevent-columnnumber\">columnNumber</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-column-number\" id=\"ref-for-violation-column-number②\">column number</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-sample\" id=\"ref-for-dom-securitypolicyviolationevent-sample①\">sample</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-sample\" id=\"ref-for-violation-sample⑤\">sample</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles\">bubbles</a></code>\n         </dt><dd data-md=\"\">\n          <p><code>true</code></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-composed\" id=\"ref-for-dom-event-composed\">composed</a></code>\n         </dt><dd data-md=\"\">\n          <p><code>true</code></p>\n        </dd></dl>"
             },
             {
               "html": "If <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-policy\" id=\"ref-for-violation-policy⑥\">policy</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#policy-directive-set\" id=\"ref-for-policy-directive-set⑦\">directive\n  set</a> contains a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directives\" id=\"ref-for-directives①④\">directive</a> named \"<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#report-uri\" id=\"ref-for-report-uri①\"><code>report-uri</code></a>\" <var>directive</var>:",
@@ -748,7 +820,7 @@
                   "html": "<p>If <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#violation-policy\" id=\"ref-for-violation-policy⑦\">policy</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#policy-directive-set\" id=\"ref-for-policy-directive-set⑧\">directive set</a> contains a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directives\" id=\"ref-for-directives①⑤\">directive</a> named\n  \"<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#report-to\" id=\"ref-for-report-to①\"><code>report-to</code></a>\", skip the remaining substeps.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>token</var> of <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-value\" id=\"ref-for-directive-value⑨\">value</a>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> <var>token</var> of <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-value\" id=\"ref-for-directive-value⑨\">value</a>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -1463,7 +1535,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> <var>policy</var> of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①①\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#global-object-csp-list\" id=\"ref-for-global-object-csp-list①①\">csp list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>policy</var> of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①①\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#global-object-csp-list\" id=\"ref-for-global-object-csp-list①①\">csp list</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -1661,7 +1733,7 @@
           "html": "<p>Let <var>violates</var> be \"<code>Does Not Violate</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>directive</var> of <var>policy</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>directive</var> of <var>policy</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1688,7 +1760,7 @@
           "html": "<p>If <var>defaultDirective</var> does not exist, return \"<code>Does Not Violate</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>directive</var> of <var>policy</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>directive</var> of <var>policy</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1715,7 +1787,7 @@
           "html": "<p>If <var>nonce</var> is the empty string, return \"<code>Does Not Match</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>expression</var> of <var>source list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⓪\">For each</a> <var>expression</var> of <var>source list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1748,7 +1820,7 @@
           "html": "<p>If <var>integrity sources</var> is \"<code>no metadata</code>\" or an empty set, return \"<code>Does       Not Match</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⓪\">For each</a> <var>source</var> of <var>integrity sources</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③①\">For each</a> <var>source</var> of <var>integrity sources</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1772,10 +1844,10 @@
           "html": "<p>If <var>source list</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">is empty</a>, return \"<code>Does Not Match</code>\".</p>"
         },
         {
-          "html": "<p>If <var>source list</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is 1, and <var>source list</var>[0] is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑦\">ASCII\n  case-insensitive</a> match for the string \"<code>'none'</code>\", return \"<code>Does Not       Match</code>\".</p>"
+          "html": "<p>If <var>source list</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> is 1, and <var>source list</var>[0] is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑦\">ASCII\n  case-insensitive</a> match for the string \"<code>'none'</code>\", return \"<code>Does Not       Match</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③①\">For each</a> <var>expression</var> of <var>source list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③②\">For each</a> <var>expression</var> of <var>source list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1977,7 +2049,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③②\">For each</a> <var>piece A</var> of <var>path list A</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③③\">For each</a> <var>piece A</var> of <var>path list A</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -2007,7 +2079,7 @@
           "html": "<p>If <var>element</var> does not have an attribute named \"<code>nonce</code>\", return \"<code>Not       Nonceable</code>\".</p>"
         },
         {
-          "html": "If <var>element</var> is a <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#script\" id=\"ref-for-script⑥\">script</a></code> element, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③③\">for each</a> <var>attribute</var> of <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
+          "html": "If <var>element</var> is a <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#script\" id=\"ref-for-script⑥\">script</a></code> element, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③④\">for each</a> <var>attribute</var> of <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -2034,7 +2106,7 @@
           "html": "<p>Let <var>allow all inline</var> be <code>false</code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③④\">For each</a> <var>expression</var> of <var>list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑤\">For each</a> <var>expression</var> of <var>list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -2065,7 +2137,7 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑤\">For each</a> <var>expression</var> of <var>list</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑥\">For each</a> <var>expression</var> of <var>list</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -2079,7 +2151,7 @@
           "html": "<p>Let <var>unsafe-hashes flag</var> be <code>false</code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑥\">For each</a> <var>expression</var> of <var>list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑦\">For each</a> <var>expression</var> of <var>list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -2095,7 +2167,7 @@
               "html": "<p>Set <var>source</var> to the result of executing <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encode</a> on the result of executing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert\">JavaScript string converting</a> on <var>source</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑦\">For each</a> <var>expression</var> of <var>list</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑧\">For each</a> <var>expression</var> of <var>list</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -2438,7 +2510,7 @@
           "html": "<p>Let <var>directive fallback list</var> be the result of executing <a href=\"https://www.w3.org/TR/CSP3/#directive-fallback-list\">§ 6.8.3 Get fetch directive fallback list</a> on <var>effective directive name</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑧\">For each</a> <var>fallback directive</var> of <var>directive fallback list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑨\">For each</a> <var>fallback directive</var> of <var>directive fallback list</var>:",
           "rationale": "if",
           "steps": [
             {
