@@ -1,0 +1,2370 @@
+{
+  "spec": {
+    "title": "Observable",
+    "url": "https://wicg.github.io/observable/"
+  },
+  "dfns": [
+    {
+      "id": "subscriber",
+      "href": "https://wicg.github.io/observable/#subscriber",
+      "linkingText": [
+        "Subscriber"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subscriber-api",
+        "href": "https://wicg.github.io/observable/#subscriber-api",
+        "title": "The Subscriber interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-subscriber-next-value-value",
+      "href": "https://wicg.github.io/observable/#dom-subscriber-next-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Subscriber/next(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-subscriber-error-error-error",
+      "href": "https://wicg.github.io/observable/#dom-subscriber-error-error-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Subscriber/error(error)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-subscriber-addteardown-teardown-teardown",
+      "href": "https://wicg.github.io/observable/#dom-subscriber-addteardown-teardown-teardown",
+      "linkingText": [
+        "teardown"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Subscriber/addTeardown(teardown)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "subscriber-next-algorithm",
+      "href": "https://wicg.github.io/observable/#subscriber-next-algorithm",
+      "linkingText": [
+        "next algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subscriber-error-algorithm",
+      "href": "https://wicg.github.io/observable/#subscriber-error-algorithm",
+      "linkingText": [
+        "error algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subscriber-complete-algorithm",
+      "href": "https://wicg.github.io/observable/#subscriber-complete-algorithm",
+      "linkingText": [
+        "complete algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subscriber-teardown-callbacks",
+      "href": "https://wicg.github.io/observable/#subscriber-teardown-callbacks",
+      "linkingText": [
+        "teardown callbacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subscriber-subscription-controller",
+      "href": "https://wicg.github.io/observable/#subscriber-subscription-controller",
+      "linkingText": [
+        "subscription controller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subscriber-active",
+      "href": "https://wicg.github.io/observable/#subscriber-active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-subscriber-active",
+      "href": "https://wicg.github.io/observable/#dom-subscriber-active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-subscriber-signal",
+      "href": "https://wicg.github.io/observable/#dom-subscriber-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-subscriber-next",
+      "href": "https://wicg.github.io/observable/#dom-subscriber-next",
+      "linkingText": [
+        "next(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-subscriber-error",
+      "href": "https://wicg.github.io/observable/#dom-subscriber-error",
+      "linkingText": [
+        "error(error)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-subscriber-complete",
+      "href": "https://wicg.github.io/observable/#dom-subscriber-complete",
+      "linkingText": [
+        "complete()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-subscriber-addteardown",
+      "href": "https://wicg.github.io/observable/#dom-subscriber-addteardown",
+      "linkingText": [
+        "addTeardown(teardown)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Subscriber"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-a-subscription",
+      "href": "https://wicg.github.io/observable/#close-a-subscription",
+      "linkingText": [
+        "close a subscription"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "callbackdef-subscribecallback",
+      "href": "https://wicg.github.io/observable/#callbackdef-subscribecallback",
+      "linkingText": [
+        "SubscribeCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "observable-api",
+        "href": "https://wicg.github.io/observable/#observable-api",
+        "title": "The Observable interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-subscribecallback-subscriber",
+      "href": "https://wicg.github.io/observable/#dom-subscribecallback-subscriber",
+      "linkingText": [
+        "subscriber"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SubscribeCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-observablesubscriptioncallback",
+      "href": "https://wicg.github.io/observable/#callbackdef-observablesubscriptioncallback",
+      "linkingText": [
+        "ObservableSubscriptionCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observablesubscriptioncallback-value",
+      "href": "https://wicg.github.io/observable/#dom-observablesubscriptioncallback-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ObservableSubscriptionCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-subscriptionobserver",
+      "href": "https://wicg.github.io/observable/#dictdef-subscriptionobserver",
+      "linkingText": [
+        "SubscriptionObserver"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-subscriptionobserver-next",
+      "href": "https://wicg.github.io/observable/#dom-subscriptionobserver-next",
+      "linkingText": [
+        "next"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SubscriptionObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-subscriptionobserver-error",
+      "href": "https://wicg.github.io/observable/#dom-subscriptionobserver-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SubscriptionObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-subscriptionobserver-complete",
+      "href": "https://wicg.github.io/observable/#dom-subscriptionobserver-complete",
+      "linkingText": [
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SubscriptionObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-observableinspectoraborthandler",
+      "href": "https://wicg.github.io/observable/#callbackdef-observableinspectoraborthandler",
+      "linkingText": [
+        "ObservableInspectorAbortHandler"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observableinspectoraborthandler-value",
+      "href": "https://wicg.github.io/observable/#dom-observableinspectoraborthandler-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ObservableInspectorAbortHandler"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-observableinspector",
+      "href": "https://wicg.github.io/observable/#dictdef-observableinspector",
+      "linkingText": [
+        "ObservableInspector"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observableinspector-next",
+      "href": "https://wicg.github.io/observable/#dom-observableinspector-next",
+      "linkingText": [
+        "next"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ObservableInspector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observableinspector-error",
+      "href": "https://wicg.github.io/observable/#dom-observableinspector-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ObservableInspector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observableinspector-complete",
+      "href": "https://wicg.github.io/observable/#dom-observableinspector-complete",
+      "linkingText": [
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ObservableInspector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observableinspector-subscribe",
+      "href": "https://wicg.github.io/observable/#dom-observableinspector-subscribe",
+      "linkingText": [
+        "subscribe"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ObservableInspector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observableinspector-abort",
+      "href": "https://wicg.github.io/observable/#dom-observableinspector-abort",
+      "linkingText": [
+        "abort"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ObservableInspector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedefdef-observerunion",
+      "href": "https://wicg.github.io/observable/#typedefdef-observerunion",
+      "linkingText": [
+        "ObserverUnion"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedefdef-observableinspectorunion",
+      "href": "https://wicg.github.io/observable/#typedefdef-observableinspectorunion",
+      "linkingText": [
+        "ObservableInspectorUnion"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-subscribeoptions",
+      "href": "https://wicg.github.io/observable/#dictdef-subscribeoptions",
+      "linkingText": [
+        "SubscribeOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-subscribeoptions-signal",
+      "href": "https://wicg.github.io/observable/#dom-subscribeoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SubscribeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-predicate",
+      "href": "https://wicg.github.io/observable/#callbackdef-predicate",
+      "linkingText": [
+        "Predicate"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-predicate-value",
+      "href": "https://wicg.github.io/observable/#dom-predicate-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Predicate"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-predicate-index",
+      "href": "https://wicg.github.io/observable/#dom-predicate-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Predicate"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-reducer",
+      "href": "https://wicg.github.io/observable/#callbackdef-reducer",
+      "linkingText": [
+        "Reducer"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reducer-accumulator",
+      "href": "https://wicg.github.io/observable/#dom-reducer-accumulator",
+      "linkingText": [
+        "accumulator"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Reducer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reducer-currentvalue",
+      "href": "https://wicg.github.io/observable/#dom-reducer-currentvalue",
+      "linkingText": [
+        "currentValue"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Reducer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reducer-index",
+      "href": "https://wicg.github.io/observable/#dom-reducer-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Reducer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-mapper",
+      "href": "https://wicg.github.io/observable/#callbackdef-mapper",
+      "linkingText": [
+        "Mapper"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mapper-value",
+      "href": "https://wicg.github.io/observable/#dom-mapper-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Mapper"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mapper-index",
+      "href": "https://wicg.github.io/observable/#dom-mapper-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Mapper"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-visitor",
+      "href": "https://wicg.github.io/observable/#callbackdef-visitor",
+      "linkingText": [
+        "Visitor"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-visitor-value",
+      "href": "https://wicg.github.io/observable/#dom-visitor-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Visitor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-visitor-index",
+      "href": "https://wicg.github.io/observable/#dom-visitor-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Visitor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-catchcallback",
+      "href": "https://wicg.github.io/observable/#callbackdef-catchcallback",
+      "linkingText": [
+        "CatchCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-catchcallback-value",
+      "href": "https://wicg.github.io/observable/#dom-catchcallback-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CatchCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "observable",
+      "href": "https://wicg.github.io/observable/#observable",
+      "linkingText": [
+        "Observable"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-observable-callback-callback",
+      "href": "https://wicg.github.io/observable/#dom-observable-observable-callback-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/Observable(callback)",
+        "Observable/constructor(callback)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-subscribe-observer-options-observer",
+      "href": "https://wicg.github.io/observable/#dom-observable-subscribe-observer-options-observer",
+      "linkingText": [
+        "observer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/subscribe(observer, options)",
+        "Observable/subscribe(observer)",
+        "Observable/subscribe()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-subscribe-observer-options-options",
+      "href": "https://wicg.github.io/observable/#dom-observable-subscribe-observer-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/subscribe(observer, options)",
+        "Observable/subscribe(observer)",
+        "Observable/subscribe()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-from",
+      "href": "https://wicg.github.io/observable/#dom-observable-from",
+      "linkingText": [
+        "from(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-from-value-value",
+      "href": "https://wicg.github.io/observable/#dom-observable-from-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/from(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-takeuntil-notifier-notifier",
+      "href": "https://wicg.github.io/observable/#dom-observable-takeuntil-notifier-notifier",
+      "linkingText": [
+        "notifier"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/takeUntil(notifier)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-map-mapper-mapper",
+      "href": "https://wicg.github.io/observable/#dom-observable-map-mapper-mapper",
+      "linkingText": [
+        "mapper"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/map(mapper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-filter-predicate-predicate",
+      "href": "https://wicg.github.io/observable/#dom-observable-filter-predicate-predicate",
+      "linkingText": [
+        "predicate"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/filter(predicate)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-take-amount-amount",
+      "href": "https://wicg.github.io/observable/#dom-observable-take-amount-amount",
+      "linkingText": [
+        "amount"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/take(amount)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-drop-amount-amount",
+      "href": "https://wicg.github.io/observable/#dom-observable-drop-amount-amount",
+      "linkingText": [
+        "amount"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/drop(amount)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-flatmap-mapper-mapper",
+      "href": "https://wicg.github.io/observable/#dom-observable-flatmap-mapper-mapper",
+      "linkingText": [
+        "mapper"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/flatMap(mapper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-switchmap-mapper-mapper",
+      "href": "https://wicg.github.io/observable/#dom-observable-switchmap-mapper-mapper",
+      "linkingText": [
+        "mapper"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/switchMap(mapper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-inspect-inspect_observer-inspect_observer",
+      "href": "https://wicg.github.io/observable/#dom-observable-inspect-inspect_observer-inspect_observer",
+      "linkingText": [
+        "inspect_observer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/inspect(inspect_observer)",
+        "Observable/inspect()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-catch-callback-callback",
+      "href": "https://wicg.github.io/observable/#dom-observable-catch-callback-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/catch(callback)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-finally-callback-callback",
+      "href": "https://wicg.github.io/observable/#dom-observable-finally-callback-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/finally(callback)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-toarray-options-options",
+      "href": "https://wicg.github.io/observable/#dom-observable-toarray-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/toArray(options)",
+        "Observable/toArray()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-foreach-callback-options-callback",
+      "href": "https://wicg.github.io/observable/#dom-observable-foreach-callback-options-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/forEach(callback, options)",
+        "Observable/forEach(callback)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-foreach-callback-options-options",
+      "href": "https://wicg.github.io/observable/#dom-observable-foreach-callback-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/forEach(callback, options)",
+        "Observable/forEach(callback)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-every-predicate-options-predicate",
+      "href": "https://wicg.github.io/observable/#dom-observable-every-predicate-options-predicate",
+      "linkingText": [
+        "predicate"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/every(predicate, options)",
+        "Observable/every(predicate)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-every-predicate-options-options",
+      "href": "https://wicg.github.io/observable/#dom-observable-every-predicate-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/every(predicate, options)",
+        "Observable/every(predicate)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-first-options-options",
+      "href": "https://wicg.github.io/observable/#dom-observable-first-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/first(options)",
+        "Observable/first()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-last-options-options",
+      "href": "https://wicg.github.io/observable/#dom-observable-last-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/last(options)",
+        "Observable/last()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-find-predicate-options-predicate",
+      "href": "https://wicg.github.io/observable/#dom-observable-find-predicate-options-predicate",
+      "linkingText": [
+        "predicate"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/find(predicate, options)",
+        "Observable/find(predicate)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-find-predicate-options-options",
+      "href": "https://wicg.github.io/observable/#dom-observable-find-predicate-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/find(predicate, options)",
+        "Observable/find(predicate)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-some-predicate-options-predicate",
+      "href": "https://wicg.github.io/observable/#dom-observable-some-predicate-options-predicate",
+      "linkingText": [
+        "predicate"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/some(predicate, options)",
+        "Observable/some(predicate)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-some-predicate-options-options",
+      "href": "https://wicg.github.io/observable/#dom-observable-some-predicate-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/some(predicate, options)",
+        "Observable/some(predicate)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-reduce-reducer-initialvalue-options-reducer",
+      "href": "https://wicg.github.io/observable/#dom-observable-reduce-reducer-initialvalue-options-reducer",
+      "linkingText": [
+        "reducer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/reduce(reducer, initialValue, options)",
+        "Observable/reduce(reducer, initialValue)",
+        "Observable/reduce(reducer)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-reduce-reducer-initialvalue-options-initialvalue",
+      "href": "https://wicg.github.io/observable/#dom-observable-reduce-reducer-initialvalue-options-initialvalue",
+      "linkingText": [
+        "initialValue"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/reduce(reducer, initialValue, options)",
+        "Observable/reduce(reducer, initialValue)",
+        "Observable/reduce(reducer)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observable-reduce-reducer-initialvalue-options-options",
+      "href": "https://wicg.github.io/observable/#dom-observable-reduce-reducer-initialvalue-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Observable/reduce(reducer, initialValue, options)",
+        "Observable/reduce(reducer, initialValue)",
+        "Observable/reduce(reducer)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "observable-subscribe-callback",
+      "href": "https://wicg.github.io/observable/#observable-subscribe-callback",
+      "linkingText": [
+        "subscribe callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Observable"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-observable",
+      "href": "https://wicg.github.io/observable/#dom-observable-observable",
+      "linkingText": [
+        "Observable(callback)",
+        "constructor(callback)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-subscribe",
+      "href": "https://wicg.github.io/observable/#dom-observable-subscribe",
+      "linkingText": [
+        "subscribe(observer, options)",
+        "subscribe(observer)",
+        "subscribe()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "default-error-algorithm",
+      "href": "https://wicg.github.io/observable/#default-error-algorithm",
+      "linkingText": [
+        "default error algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "observable-supporting-concepts",
+        "href": "https://wicg.github.io/observable/#observable-supporting-concepts",
+        "title": "Supporting concepts",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "internal-observer",
+      "href": "https://wicg.github.io/observable/#internal-observer",
+      "linkingText": [
+        "internal observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "internal-observer-next-steps",
+      "href": "https://wicg.github.io/observable/#internal-observer-next-steps",
+      "linkingText": [
+        "next steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal observer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "internal-observer-error-steps",
+      "href": "https://wicg.github.io/observable/#internal-observer-error-steps",
+      "linkingText": [
+        "error steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal observer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "internal-observer-complete-steps",
+      "href": "https://wicg.github.io/observable/#internal-observer-complete-steps",
+      "linkingText": [
+        "complete steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal observer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "observable-subscribe-to-an-observable",
+      "href": "https://wicg.github.io/observable/#observable-subscribe-to-an-observable",
+      "linkingText": [
+        "subscribe to an Observable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Observable"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-takeuntil",
+      "href": "https://wicg.github.io/observable/#dom-observable-takeuntil",
+      "linkingText": [
+        "takeUntil(notifier)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "observable-returning-operators",
+        "href": "https://wicg.github.io/observable/#observable-returning-operators",
+        "title": "Observable-returning operators",
+        "number": "2.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-map",
+      "href": "https://wicg.github.io/observable/#dom-observable-map",
+      "linkingText": [
+        "map(mapper)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-filter",
+      "href": "https://wicg.github.io/observable/#dom-observable-filter",
+      "linkingText": [
+        "filter(predicate)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-take",
+      "href": "https://wicg.github.io/observable/#dom-observable-take",
+      "linkingText": [
+        "take(amount)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-drop",
+      "href": "https://wicg.github.io/observable/#dom-observable-drop",
+      "linkingText": [
+        "drop(amount)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-flatmap",
+      "href": "https://wicg.github.io/observable/#dom-observable-flatmap",
+      "linkingText": [
+        "flatMap(mapper)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "flatmap-process-next-value-steps",
+      "href": "https://wicg.github.io/observable/#flatmap-process-next-value-steps",
+      "linkingText": [
+        "flatmap process next value steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-switchmap",
+      "href": "https://wicg.github.io/observable/#dom-observable-switchmap",
+      "linkingText": [
+        "switchMap(mapper)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "switchmap-process-next-value-steps",
+      "href": "https://wicg.github.io/observable/#switchmap-process-next-value-steps",
+      "linkingText": [
+        "switchmap process next value steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-inspect",
+      "href": "https://wicg.github.io/observable/#dom-observable-inspect",
+      "linkingText": [
+        "inspect(inspect_observer)",
+        "inspect()",
+        "inspect(inspector_union)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-catch",
+      "href": "https://wicg.github.io/observable/#dom-observable-catch",
+      "linkingText": [
+        "catch(callback)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-finally",
+      "href": "https://wicg.github.io/observable/#dom-observable-finally",
+      "linkingText": [
+        "finally(callback)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-toarray",
+      "href": "https://wicg.github.io/observable/#dom-observable-toarray",
+      "linkingText": [
+        "toArray(options)",
+        "toArray()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "promise-returning-operators",
+        "href": "https://wicg.github.io/observable/#promise-returning-operators",
+        "title": "Promise-returning operators",
+        "number": "2.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-foreach",
+      "href": "https://wicg.github.io/observable/#dom-observable-foreach",
+      "linkingText": [
+        "forEach(callback, options)",
+        "forEach(callback)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-every",
+      "href": "https://wicg.github.io/observable/#dom-observable-every",
+      "linkingText": [
+        "every(predicate, options)",
+        "every(predicate)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-first",
+      "href": "https://wicg.github.io/observable/#dom-observable-first",
+      "linkingText": [
+        "first(options)",
+        "first()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-last",
+      "href": "https://wicg.github.io/observable/#dom-observable-last",
+      "linkingText": [
+        "last(options)",
+        "last()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-find",
+      "href": "https://wicg.github.io/observable/#dom-observable-find",
+      "linkingText": [
+        "find(predicate, options)",
+        "find(predicate)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-some",
+      "href": "https://wicg.github.io/observable/#dom-observable-some",
+      "linkingText": [
+        "some(predicate, options)",
+        "some(predicate)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-observable-reduce",
+      "href": "https://wicg.github.io/observable/#dom-observable-reduce",
+      "linkingText": [
+        "reduce(reducer, initialValue, options)",
+        "reduce(reducer, initialValue)",
+        "reduce(reducer)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Observable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-observableeventlisteneroptions",
+      "href": "https://wicg.github.io/observable/#dictdef-observableeventlisteneroptions",
+      "linkingText": [
+        "ObservableEventListenerOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-target-integration",
+        "href": "https://wicg.github.io/observable/#event-target-integration",
+        "title": "EventTarget integration",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observableeventlisteneroptions-capture",
+      "href": "https://wicg.github.io/observable/#dom-observableeventlisteneroptions-capture",
+      "linkingText": [
+        "capture"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ObservableEventListenerOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-observableeventlisteneroptions-passive",
+      "href": "https://wicg.github.io/observable/#dom-observableeventlisteneroptions-passive",
+      "linkingText": [
+        "passive"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ObservableEventListenerOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-eventtarget-when-type-options-type",
+      "href": "https://wicg.github.io/observable/#dom-eventtarget-when-type-options-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EventTarget/when(type, options)",
+        "EventTarget/when(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-eventtarget-when-type-options-options",
+      "href": "https://wicg.github.io/observable/#dom-eventtarget-when-type-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EventTarget/when(type, options)",
+        "EventTarget/when(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-eventtarget-when",
+      "href": "https://wicg.github.io/observable/#dom-eventtarget-when",
+      "linkingText": [
+        "when(type, options)",
+        "when(type)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "EventTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "observable-event-listener-invoke-algorithm",
+      "href": "https://wicg.github.io/observable/#observable-event-listener-invoke-algorithm",
+      "linkingText": [
+        "observable event listener invoke algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/observable/#title",
+        "title": "Observable"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

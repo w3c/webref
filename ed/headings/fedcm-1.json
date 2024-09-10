@@ -1,481 +1,459 @@
 {
   "spec": {
     "title": "Federated Credential Management API",
-    "url": "https://fedidcg.github.io/FedCM/"
+    "url": "https://w3c-fedid.github.io/FedCM/"
   },
   "headings": [
     {
       "id": "title",
-      "href": "https://fedidcg.github.io/FedCM/#title",
+      "href": "https://w3c-fedid.github.io/FedCM/#title",
       "level": 1,
       "title": "Federated Credential Management API"
     },
     {
       "id": "abstract",
-      "href": "https://fedidcg.github.io/FedCM/#abstract",
+      "href": "https://w3c-fedid.github.io/FedCM/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://fedidcg.github.io/FedCM/#status",
+      "id": "sotd",
+      "href": "https://w3c-fedid.github.io/FedCM/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
     {
       "id": "toc",
-      "href": "https://fedidcg.github.io/FedCM/#toc",
+      "href": "https://w3c-fedid.github.io/FedCM/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "introduction",
-      "href": "https://fedidcg.github.io/FedCM/#introduction",
+      "href": "https://w3c-fedid.github.io/FedCM/#introduction",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
       "id": "browser-api",
-      "href": "https://fedidcg.github.io/FedCM/#browser-api",
+      "href": "https://w3c-fedid.github.io/FedCM/#browser-api",
       "level": 2,
       "title": "The Browser API",
       "number": "2"
     },
     {
-      "id": "browser-api-login-status",
-      "href": "https://fedidcg.github.io/FedCM/#browser-api-login-status",
+      "id": "browser-connected-accounts-set",
+      "href": "https://w3c-fedid.github.io/FedCM/#browser-connected-accounts-set",
       "level": 3,
-      "title": "The Login Status API",
+      "title": "The connected accounts set",
       "number": "2.1"
     },
     {
-      "id": "hdr-login-status-map",
-      "href": "https://fedidcg.github.io/FedCM/#hdr-login-status-map",
-      "level": 4,
-      "title": "Login Status Map",
-      "number": "2.1.1"
-    },
-    {
-      "id": "login-status-http",
-      "href": "https://fedidcg.github.io/FedCM/#login-status-http",
-      "level": 4,
-      "title": "HTTP header API",
-      "number": "2.1.2"
-    },
-    {
-      "id": "login-status-javascript",
-      "href": "https://fedidcg.github.io/FedCM/#login-status-javascript",
-      "level": 4,
-      "title": "JavaScript API",
-      "number": "2.1.3"
-    },
-    {
-      "id": "login-status-clear-data",
-      "href": "https://fedidcg.github.io/FedCM/#login-status-clear-data",
-      "level": 4,
-      "title": "Clearing the Login Status Map data",
-      "number": "2.1.4"
-    },
-    {
-      "id": "browser-connected-accounts-set",
-      "href": "https://fedidcg.github.io/FedCM/#browser-connected-accounts-set",
+      "id": "browser-api-identity-credential-interface",
+      "href": "https://w3c-fedid.github.io/FedCM/#browser-api-identity-credential-interface",
       "level": 3,
-      "title": "The connected accounts set",
+      "title": "The IdentityCredential Interface",
       "number": "2.2"
     },
     {
-      "id": "browser-api-identity-credential-interface",
-      "href": "https://fedidcg.github.io/FedCM/#browser-api-identity-credential-interface",
-      "level": 3,
-      "title": "The IdentityCredential Interface",
-      "number": "2.3"
-    },
-    {
       "id": "browser-api-identity-credential-disconnect",
-      "href": "https://fedidcg.github.io/FedCM/#browser-api-identity-credential-disconnect",
+      "href": "https://w3c-fedid.github.io/FedCM/#browser-api-identity-credential-disconnect",
       "level": 4,
       "title": "The disconnect method",
-      "number": "2.3.1"
+      "number": "2.2.1"
     },
     {
       "id": "disconnect-request",
-      "href": "https://fedidcg.github.io/FedCM/#disconnect-request",
+      "href": "https://w3c-fedid.github.io/FedCM/#disconnect-request",
       "level": 5,
       "title": "Disconnect request",
-      "number": "2.3.1.1"
+      "number": "2.2.1.1"
     },
     {
       "id": "browser-api-credential-request-options",
-      "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
+      "href": "https://w3c-fedid.github.io/FedCM/#browser-api-credential-request-options",
       "level": 4,
       "title": "The CredentialRequestOptions",
-      "number": "2.3.2"
+      "number": "2.2.2"
     },
     {
       "id": "browser-api-rp-sign-in",
-      "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
+      "href": "https://w3c-fedid.github.io/FedCM/#browser-api-rp-sign-in",
       "level": 4,
       "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
-      "number": "2.3.3"
+      "number": "2.2.3"
     },
     {
       "id": "create-identity-credential",
-      "href": "https://fedidcg.github.io/FedCM/#create-identity-credential",
+      "href": "https://w3c-fedid.github.io/FedCM/#create-identity-credential",
       "level": 4,
       "title": "Create an IdentityCredential",
-      "number": "2.3.4"
+      "number": "2.2.4"
     },
     {
       "id": "fetch-config-file",
-      "href": "https://fedidcg.github.io/FedCM/#fetch-config-file",
+      "href": "https://w3c-fedid.github.io/FedCM/#fetch-config-file",
       "level": 4,
       "title": "Fetch the config file",
-      "number": "2.3.5"
+      "number": "2.2.5"
     },
     {
       "id": "fetch-accounts",
-      "href": "https://fedidcg.github.io/FedCM/#fetch-accounts",
+      "href": "https://w3c-fedid.github.io/FedCM/#fetch-accounts",
       "level": 4,
       "title": "Fetch the accounts",
-      "number": "2.3.6"
+      "number": "2.2.6"
     },
     {
       "id": "fetch-identity-assertion",
-      "href": "https://fedidcg.github.io/FedCM/#fetch-identity-assertion",
+      "href": "https://w3c-fedid.github.io/FedCM/#fetch-identity-assertion",
       "level": 4,
       "title": "Fetch an identity assertion",
-      "number": "2.3.7"
+      "number": "2.2.7"
     },
     {
       "id": "request-permission-signup",
-      "href": "https://fedidcg.github.io/FedCM/#request-permission-signup",
+      "href": "https://w3c-fedid.github.io/FedCM/#request-permission-signup",
       "level": 4,
       "title": "Request permission to sign-up",
-      "number": "2.3.8"
+      "number": "2.2.8"
     },
     {
       "id": "helper-algorithms",
-      "href": "https://fedidcg.github.io/FedCM/#helper-algorithms",
+      "href": "https://w3c-fedid.github.io/FedCM/#helper-algorithms",
       "level": 4,
       "title": "Helper algorithms",
-      "number": "2.3.9"
+      "number": "2.2.9"
     },
     {
       "id": "browser-api-identity-provider-interface",
-      "href": "https://fedidcg.github.io/FedCM/#browser-api-identity-provider-interface",
+      "href": "https://w3c-fedid.github.io/FedCM/#browser-api-identity-provider-interface",
       "level": 3,
       "title": "The IdentityProvider Interface",
-      "number": "2.4"
+      "number": "2.3"
     },
     {
       "id": "idp-api",
-      "href": "https://fedidcg.github.io/FedCM/#idp-api",
+      "href": "https://w3c-fedid.github.io/FedCM/#idp-api",
       "level": 2,
       "title": "Identity Provider HTTP API",
       "number": "3"
     },
     {
       "id": "idp-api-well-known",
-      "href": "https://fedidcg.github.io/FedCM/#idp-api-well-known",
+      "href": "https://w3c-fedid.github.io/FedCM/#idp-api-well-known",
       "level": 3,
       "title": "The Well-Known File",
       "number": "3.1"
     },
     {
       "id": "idp-api-config-file",
-      "href": "https://fedidcg.github.io/FedCM/#idp-api-config-file",
+      "href": "https://w3c-fedid.github.io/FedCM/#idp-api-config-file",
       "level": 3,
       "title": "The config file",
       "number": "3.2"
     },
     {
       "id": "idp-api-accounts-endpoint",
-      "href": "https://fedidcg.github.io/FedCM/#idp-api-accounts-endpoint",
+      "href": "https://w3c-fedid.github.io/FedCM/#idp-api-accounts-endpoint",
       "level": 3,
       "title": "Accounts endpoint",
       "number": "3.3"
     },
     {
       "id": "idp-api-client-id-metadata-endpoint",
-      "href": "https://fedidcg.github.io/FedCM/#idp-api-client-id-metadata-endpoint",
+      "href": "https://w3c-fedid.github.io/FedCM/#idp-api-client-id-metadata-endpoint",
       "level": 3,
       "title": "Client Metadata",
       "number": "3.4"
     },
     {
       "id": "idp-api-id-assertion-endpoint",
-      "href": "https://fedidcg.github.io/FedCM/#idp-api-id-assertion-endpoint",
+      "href": "https://w3c-fedid.github.io/FedCM/#idp-api-id-assertion-endpoint",
       "level": 3,
       "title": "Identity assertion endpoint",
       "number": "3.5"
     },
     {
       "id": "idp-api-disconnect-endpoint",
-      "href": "https://fedidcg.github.io/FedCM/#idp-api-disconnect-endpoint",
+      "href": "https://w3c-fedid.github.io/FedCM/#idp-api-disconnect-endpoint",
       "level": 3,
       "title": "Disconnect endpoint",
       "number": "3.6"
     },
     {
       "id": "permissions-policy-integration",
-      "href": "https://fedidcg.github.io/FedCM/#permissions-policy-integration",
+      "href": "https://w3c-fedid.github.io/FedCM/#permissions-policy-integration",
       "level": 2,
       "title": "Permissions Policy Integration",
       "number": "4"
     },
     {
       "id": "automation",
-      "href": "https://fedidcg.github.io/FedCM/#automation",
+      "href": "https://w3c-fedid.github.io/FedCM/#automation",
       "level": 2,
       "title": "User Agent Automation",
       "number": "5"
     },
     {
       "id": "webdriver-capability",
-      "href": "https://fedidcg.github.io/FedCM/#webdriver-capability",
+      "href": "https://w3c-fedid.github.io/FedCM/#webdriver-capability",
       "level": 3,
       "title": "Extension capability",
       "number": "5.1"
     },
     {
       "id": "webdriver-canceldialog",
-      "href": "https://fedidcg.github.io/FedCM/#webdriver-canceldialog",
+      "href": "https://w3c-fedid.github.io/FedCM/#webdriver-canceldialog",
       "level": 3,
       "title": "Cancel dialog",
       "number": "5.2"
     },
     {
       "id": "webdriver-selectaccount",
-      "href": "https://fedidcg.github.io/FedCM/#webdriver-selectaccount",
+      "href": "https://w3c-fedid.github.io/FedCM/#webdriver-selectaccount",
       "level": 3,
       "title": "Select account",
       "number": "5.3"
     },
     {
       "id": "webdriver-clickdialogbutton",
-      "href": "https://fedidcg.github.io/FedCM/#webdriver-clickdialogbutton",
+      "href": "https://w3c-fedid.github.io/FedCM/#webdriver-clickdialogbutton",
       "level": 3,
       "title": "Click dialog button",
       "number": "5.4"
     },
     {
       "id": "webdriver-accountlist",
-      "href": "https://fedidcg.github.io/FedCM/#webdriver-accountlist",
+      "href": "https://w3c-fedid.github.io/FedCM/#webdriver-accountlist",
       "level": 3,
       "title": "Account list",
       "number": "5.5"
     },
     {
       "id": "webdriver-gettitle",
-      "href": "https://fedidcg.github.io/FedCM/#webdriver-gettitle",
+      "href": "https://w3c-fedid.github.io/FedCM/#webdriver-gettitle",
       "level": 3,
       "title": "Get title",
       "number": "5.6"
     },
     {
       "id": "webdriver-getdialogtype",
-      "href": "https://fedidcg.github.io/FedCM/#webdriver-getdialogtype",
+      "href": "https://w3c-fedid.github.io/FedCM/#webdriver-getdialogtype",
       "level": 3,
       "title": "Get dialog type",
       "number": "5.7"
     },
     {
       "id": "webdriver-setdelayenabled",
-      "href": "https://fedidcg.github.io/FedCM/#webdriver-setdelayenabled",
+      "href": "https://w3c-fedid.github.io/FedCM/#webdriver-setdelayenabled",
       "level": 3,
       "title": "Set delay enabled",
       "number": "5.8"
     },
     {
       "id": "webdriver-resetcooldown",
-      "href": "https://fedidcg.github.io/FedCM/#webdriver-resetcooldown",
+      "href": "https://w3c-fedid.github.io/FedCM/#webdriver-resetcooldown",
       "level": 3,
       "title": "Reset cooldown",
       "number": "5.9"
     },
     {
       "id": "security",
-      "href": "https://fedidcg.github.io/FedCM/#security",
+      "href": "https://w3c-fedid.github.io/FedCM/#security",
       "level": 2,
       "title": "Security",
       "number": "6"
     },
     {
       "id": "content-security-policy",
-      "href": "https://fedidcg.github.io/FedCM/#content-security-policy",
+      "href": "https://w3c-fedid.github.io/FedCM/#content-security-policy",
       "level": 3,
       "title": "Content Security Policy",
       "number": "6.1"
     },
     {
       "id": "sec-fetch-dest-header",
-      "href": "https://fedidcg.github.io/FedCM/#sec-fetch-dest-header",
+      "href": "https://w3c-fedid.github.io/FedCM/#sec-fetch-dest-header",
       "level": 3,
       "title": "Sec-Fetch-Dest Header",
       "number": "6.2"
     },
     {
-      "id": "browser-surface-impersonation",
-      "href": "https://fedidcg.github.io/FedCM/#browser-surface-impersonation",
+      "id": "sec-cors-header",
+      "href": "https://w3c-fedid.github.io/FedCM/#sec-cors-header",
       "level": 3,
-      "title": "Browser Surface Impersonation",
+      "title": "CORS Header",
       "number": "6.3"
     },
     {
+      "id": "browser-surface-impersonation",
+      "href": "https://w3c-fedid.github.io/FedCM/#browser-surface-impersonation",
+      "level": 3,
+      "title": "Browser Surface Impersonation",
+      "number": "6.4"
+    },
+    {
       "id": "privacy",
-      "href": "https://fedidcg.github.io/FedCM/#privacy",
+      "href": "https://w3c-fedid.github.io/FedCM/#privacy",
       "level": 2,
       "title": "Privacy",
       "number": "7"
     },
     {
       "id": "privacy-principals",
-      "href": "https://fedidcg.github.io/FedCM/#privacy-principals",
+      "href": "https://w3c-fedid.github.io/FedCM/#privacy-principals",
       "level": 3,
       "title": "Principals",
       "number": "7.1"
     },
     {
       "id": "network-requests",
-      "href": "https://fedidcg.github.io/FedCM/#network-requests",
+      "href": "https://w3c-fedid.github.io/FedCM/#network-requests",
       "level": 3,
       "title": "Network requests",
       "number": "7.2"
     },
     {
       "id": "attack-scenarios",
-      "href": "https://fedidcg.github.io/FedCM/#attack-scenarios",
+      "href": "https://w3c-fedid.github.io/FedCM/#attack-scenarios",
       "level": 3,
       "title": "Attack Scenarios",
       "number": "7.3"
     },
     {
       "id": "manifest-fingerprinting",
-      "href": "https://fedidcg.github.io/FedCM/#manifest-fingerprinting",
+      "href": "https://w3c-fedid.github.io/FedCM/#manifest-fingerprinting",
       "level": 4,
       "title": "Manifest Fingerprinting",
       "number": "7.3.1"
     },
     {
       "id": "timing-attacks",
-      "href": "https://fedidcg.github.io/FedCM/#timing-attacks",
+      "href": "https://w3c-fedid.github.io/FedCM/#timing-attacks",
       "level": 4,
       "title": "Timing Attacks",
       "number": "7.3.2"
     },
     {
       "id": "idp-intrusion",
-      "href": "https://fedidcg.github.io/FedCM/#idp-intrusion",
+      "href": "https://w3c-fedid.github.io/FedCM/#idp-intrusion",
       "level": 4,
       "title": "IDP Intrusion",
       "number": "7.3.3"
     },
     {
       "id": "attack-scenarios-by-rp-cross-site-correlation",
-      "href": "https://fedidcg.github.io/FedCM/#attack-scenarios-by-rp-cross-site-correlation",
+      "href": "https://w3c-fedid.github.io/FedCM/#attack-scenarios-by-rp-cross-site-correlation",
       "level": 4,
       "title": "Cross-Site Correlation",
       "number": "7.3.4"
     },
     {
       "id": "unauthorized-data-usage",
-      "href": "https://fedidcg.github.io/FedCM/#unauthorized-data-usage",
+      "href": "https://w3c-fedid.github.io/FedCM/#unauthorized-data-usage",
       "level": 4,
       "title": "Unauthorized Data Usage",
       "number": "7.3.5"
     },
     {
       "id": "rp-fingerprinting",
-      "href": "https://fedidcg.github.io/FedCM/#rp-fingerprinting",
+      "href": "https://w3c-fedid.github.io/FedCM/#rp-fingerprinting",
       "level": 4,
       "title": "RP Fingerprinting",
       "number": "7.3.6"
     },
     {
       "id": "secondary-use",
-      "href": "https://fedidcg.github.io/FedCM/#secondary-use",
+      "href": "https://w3c-fedid.github.io/FedCM/#secondary-use",
       "level": 4,
       "title": "Secondary Use",
       "number": "7.3.7"
     },
     {
       "id": "extensibility",
-      "href": "https://fedidcg.github.io/FedCM/#extensibility",
+      "href": "https://w3c-fedid.github.io/FedCM/#extensibility",
       "level": 2,
       "title": "Extensibility",
       "number": "8"
     },
     {
       "id": "acknowledgements",
-      "href": "https://fedidcg.github.io/FedCM/#acknowledgements",
+      "href": "https://w3c-fedid.github.io/FedCM/#acknowledgements",
       "level": 2,
       "title": "Acknowledgements",
       "number": "9"
     },
     {
       "id": "openissues",
-      "href": "https://fedidcg.github.io/FedCM/#openissues",
+      "href": "https://w3c-fedid.github.io/FedCM/#openissues",
       "level": 2,
       "title": "10. FPWD Issues"
     },
     {
       "id": "w3c-conformance",
-      "href": "https://fedidcg.github.io/FedCM/#w3c-conformance",
+      "href": "https://w3c-fedid.github.io/FedCM/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
       "id": "w3c-conventions",
-      "href": "https://fedidcg.github.io/FedCM/#w3c-conventions",
+      "href": "https://w3c-fedid.github.io/FedCM/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c-fedid.github.io/FedCM/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
       "id": "index",
-      "href": "https://fedidcg.github.io/FedCM/#index",
+      "href": "https://w3c-fedid.github.io/FedCM/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "href": "https://fedidcg.github.io/FedCM/#index-defined-here",
+      "href": "https://w3c-fedid.github.io/FedCM/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "href": "https://fedidcg.github.io/FedCM/#index-defined-elsewhere",
+      "href": "https://w3c-fedid.github.io/FedCM/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "href": "https://fedidcg.github.io/FedCM/#references",
+      "href": "https://w3c-fedid.github.io/FedCM/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "href": "https://fedidcg.github.io/FedCM/#normative",
+      "href": "https://w3c-fedid.github.io/FedCM/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "href": "https://fedidcg.github.io/FedCM/#informative",
+      "href": "https://w3c-fedid.github.io/FedCM/#informative",
       "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "href": "https://fedidcg.github.io/FedCM/#idl-index",
+      "href": "https://w3c-fedid.github.io/FedCM/#idl-index",
       "level": 2,
       "title": "IDL Index"
     },
     {
       "id": "issues-index",
-      "href": "https://fedidcg.github.io/FedCM/#issues-index",
+      "href": "https://w3c-fedid.github.io/FedCM/#issues-index",
       "level": 2,
       "title": "Issues Index"
     }
