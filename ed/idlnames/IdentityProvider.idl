@@ -1,4 +1,4 @@
-// Source: Federated Credential Management API (https://fedidcg.github.io/FedCM/)
+// Source: Federated Credential Management API (https://www.w3.org/TR/fedcm-1/)
 [Exposed=Window, SecureContext] interface IdentityProvider {
     static undefined close();
     static Promise<sequence<IdentityUserInfo>> getUserInfo(IdentityProviderConfig config);

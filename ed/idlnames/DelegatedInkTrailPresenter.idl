@@ -1,0 +1,7 @@
+// Source: Ink API (https://wicg.github.io/ink-enhancement/)
+[Exposed=Window]
+interface DelegatedInkTrailPresenter {
+    readonly attribute Element? presentationArea;
+
+    undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);
+};

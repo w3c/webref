@@ -69,7 +69,15 @@
         "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
         "href": "https://dom.spec.whatwg.org/#eventtarget"
       },
-      "extended": [],
+      "extended": [
+        {
+          "spec": {
+            "title": "Observable",
+            "url": "https://wicg.github.io/observable/"
+          },
+          "fragment": "partial interface EventTarget {\n  Observable when(DOMString type, optional ObservableEventListenerOptions options = {});\n};"
+        }
+      ],
       "inheritance": null,
       "includes": []
     },

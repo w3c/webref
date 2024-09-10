@@ -1,0 +1,15 @@
+{
+  "name": "Subscriber",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Observable",
+      "url": "https://wicg.github.io/observable/"
+    },
+    "fragment": "[Exposed=*]\ninterface Subscriber {\n  undefined next(any value);\n  undefined error(any error);\n  undefined complete();\n  undefined addTeardown(VoidFunction teardown);\n\n  // True after the Subscriber is created, up until either\n  // complete()/error() are invoked, or the subscriber unsubscribes. Inside\n  // complete()/error(), this attribute is true.\n  readonly attribute boolean active;\n\n  readonly attribute AbortSignal signal;\n};",
+    "href": "https://wicg.github.io/observable/#subscriber"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

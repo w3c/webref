@@ -6,7 +6,7 @@
       "title": "Shared Storage API",
       "url": "https://wicg.github.io/shared-storage/"
     },
-    "fragment": "[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]\ninterface SharedStorageWorkletGlobalScope : WorkletGlobalScope {\n  undefined register(DOMString name,\n                     Function operationCtor);\n\n  readonly attribute SharedStorage sharedStorage;\n};",
+    "fragment": "[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]\ninterface SharedStorageWorkletGlobalScope : WorkletGlobalScope {\n  undefined register(DOMString name,\n                     Function operationCtor);\n\n  readonly attribute SharedStorage sharedStorage;\n  readonly attribute PrivateAggregation privateAggregation;\n};",
     "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope"
   },
   "extended": [],

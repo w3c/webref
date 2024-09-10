@@ -309,6 +309,16 @@
     "parsed": "idlnamesparsed/AuctionRealTimeReportingConfig.json",
     "type": "dictionary"
   },
+  "AuctionReportBuyerDebugModeConfig": {
+    "fragment": "idlnames/AuctionReportBuyerDebugModeConfig.idl",
+    "parsed": "idlnamesparsed/AuctionReportBuyerDebugModeConfig.json",
+    "type": "dictionary"
+  },
+  "AuctionReportBuyersConfig": {
+    "fragment": "idlnames/AuctionReportBuyersConfig.idl",
+    "parsed": "idlnamesparsed/AuctionReportBuyersConfig.json",
+    "type": "dictionary"
+  },
   "AudioBuffer": {
     "fragment": "idlnames/AudioBuffer.idl",
     "parsed": "idlnamesparsed/AudioBuffer.json",
@@ -1859,6 +1869,11 @@
     "parsed": "idlnamesparsed/CaretPositionFromPointOptions.json",
     "type": "dictionary"
   },
+  "CatchCallback": {
+    "fragment": "idlnames/CatchCallback.idl",
+    "parsed": "idlnamesparsed/CatchCallback.json",
+    "type": "callback"
+  },
   "ChannelCountMode": {
     "fragment": "idlnames/ChannelCountMode.idl",
     "parsed": "idlnamesparsed/ChannelCountMode.json",
@@ -2583,6 +2598,11 @@
     "fragment": "idlnames/DelayOptions.idl",
     "parsed": "idlnamesparsed/DelayOptions.json",
     "type": "dictionary"
+  },
+  "DelegatedInkTrailPresenter": {
+    "fragment": "idlnames/DelegatedInkTrailPresenter.idl",
+    "parsed": "idlnamesparsed/DelegatedInkTrailPresenter.json",
+    "type": "interface"
   },
   "DeprecationReportBody": {
     "fragment": "idlnames/DeprecationReportBody.idl",
@@ -5639,11 +5659,6 @@
     "parsed": "idlnamesparsed/Ink.json",
     "type": "interface"
   },
-  "InkPresenter": {
-    "fragment": "idlnames/InkPresenter.idl",
-    "parsed": "idlnamesparsed/InkPresenter.json",
-    "type": "interface"
-  },
   "InkPresenterParam": {
     "fragment": "idlnames/InkPresenterParam.idl",
     "parsed": "idlnamesparsed/InkPresenterParam.json",
@@ -6074,11 +6089,6 @@
     "parsed": "idlnamesparsed/LockOptions.json",
     "type": "dictionary"
   },
-  "LoginStatus": {
-    "fragment": "idlnames/LoginStatus.idl",
-    "parsed": "idlnamesparsed/LoginStatus.json",
-    "type": "enum"
-  },
   "MIDIAccess": {
     "fragment": "idlnames/MIDIAccess.idl",
     "parsed": "idlnamesparsed/MIDIAccess.json",
@@ -6508,6 +6518,11 @@
     "fragment": "idlnames/ManagedSourceBuffer.idl",
     "parsed": "idlnamesparsed/ManagedSourceBuffer.json",
     "type": "interface"
+  },
+  "Mapper": {
+    "fragment": "idlnames/Mapper.idl",
+    "parsed": "idlnamesparsed/Mapper.json",
+    "type": "callback"
   },
   "MathMLElement": {
     "fragment": "idlnames/MathMLElement.idl",
@@ -7024,11 +7039,6 @@
     "parsed": "idlnamesparsed/MutationCallback.json",
     "type": "callback"
   },
-  "MutationEvent": {
-    "fragment": "idlnames/MutationEvent.idl",
-    "parsed": "idlnamesparsed/MutationEvent.json",
-    "type": "interface"
-  },
   "MutationObserver": {
     "fragment": "idlnames/MutationObserver.idl",
     "parsed": "idlnamesparsed/MutationObserver.json",
@@ -7299,11 +7309,6 @@
     "parsed": "idlnamesparsed/NavigatorLocks.json",
     "type": "interface mixin"
   },
-  "NavigatorLogin": {
-    "fragment": "idlnames/NavigatorLogin.idl",
-    "parsed": "idlnamesparsed/NavigatorLogin.json",
-    "type": "interface"
-  },
   "NavigatorML": {
     "fragment": "idlnames/NavigatorML.idl",
     "parsed": "idlnamesparsed/NavigatorML.json",
@@ -7509,6 +7514,41 @@
     "parsed": "idlnamesparsed/OVR_multiview2.json",
     "type": "interface"
   },
+  "Observable": {
+    "fragment": "idlnames/Observable.idl",
+    "parsed": "idlnamesparsed/Observable.json",
+    "type": "interface"
+  },
+  "ObservableEventListenerOptions": {
+    "fragment": "idlnames/ObservableEventListenerOptions.idl",
+    "parsed": "idlnamesparsed/ObservableEventListenerOptions.json",
+    "type": "dictionary"
+  },
+  "ObservableInspector": {
+    "fragment": "idlnames/ObservableInspector.idl",
+    "parsed": "idlnamesparsed/ObservableInspector.json",
+    "type": "dictionary"
+  },
+  "ObservableInspectorAbortHandler": {
+    "fragment": "idlnames/ObservableInspectorAbortHandler.idl",
+    "parsed": "idlnamesparsed/ObservableInspectorAbortHandler.json",
+    "type": "callback"
+  },
+  "ObservableInspectorUnion": {
+    "fragment": "idlnames/ObservableInspectorUnion.idl",
+    "parsed": "idlnamesparsed/ObservableInspectorUnion.json",
+    "type": "typedef"
+  },
+  "ObservableSubscriptionCallback": {
+    "fragment": "idlnames/ObservableSubscriptionCallback.idl",
+    "parsed": "idlnamesparsed/ObservableSubscriptionCallback.json",
+    "type": "callback"
+  },
+  "ObserverUnion": {
+    "fragment": "idlnames/ObserverUnion.idl",
+    "parsed": "idlnamesparsed/ObserverUnion.json",
+    "type": "typedef"
+  },
   "OfflineAudioCompletionEvent": {
     "fragment": "idlnames/OfflineAudioCompletionEvent.idl",
     "parsed": "idlnamesparsed/OfflineAudioCompletionEvent.json",
@@ -7658,6 +7698,26 @@
     "fragment": "idlnames/OverconstrainedError.idl",
     "parsed": "idlnamesparsed/OverconstrainedError.json",
     "type": "interface"
+  },
+  "PADebugModeOptions": {
+    "fragment": "idlnames/PADebugModeOptions.idl",
+    "parsed": "idlnamesparsed/PADebugModeOptions.json",
+    "type": "dictionary"
+  },
+  "PAExtendedHistogramContribution": {
+    "fragment": "idlnames/PAExtendedHistogramContribution.idl",
+    "parsed": "idlnamesparsed/PAExtendedHistogramContribution.json",
+    "type": "dictionary"
+  },
+  "PAHistogramContribution": {
+    "fragment": "idlnames/PAHistogramContribution.idl",
+    "parsed": "idlnamesparsed/PAHistogramContribution.json",
+    "type": "dictionary"
+  },
+  "PASignalValue": {
+    "fragment": "idlnames/PASignalValue.idl",
+    "parsed": "idlnamesparsed/PASignalValue.json",
+    "type": "dictionary"
   },
   "PageRevealEvent": {
     "fragment": "idlnames/PageRevealEvent.idl",
@@ -8199,6 +8259,11 @@
     "parsed": "idlnamesparsed/PredefinedColorSpace.json",
     "type": "enum"
   },
+  "Predicate": {
+    "fragment": "idlnames/Predicate.idl",
+    "parsed": "idlnamesparsed/Predicate.json",
+    "type": "callback"
+  },
   "PremultiplyAlpha": {
     "fragment": "idlnames/PremultiplyAlpha.idl",
     "parsed": "idlnamesparsed/PremultiplyAlpha.json",
@@ -8309,6 +8374,11 @@
     "parsed": "idlnamesparsed/PreviousWinElement.json",
     "type": "typedef"
   },
+  "PrivateAggregation": {
+    "fragment": "idlnames/PrivateAggregation.idl",
+    "parsed": "idlnamesparsed/PrivateAggregation.json",
+    "type": "interface"
+  },
   "PrivateNetworkAccessPermissionDescriptor": {
     "fragment": "idlnames/PrivateNetworkAccessPermissionDescriptor.idl",
     "parsed": "idlnamesparsed/PrivateNetworkAccessPermissionDescriptor.json",
@@ -8393,6 +8463,11 @@
     "fragment": "idlnames/ProtectedAudience.idl",
     "parsed": "idlnamesparsed/ProtectedAudience.json",
     "type": "interface"
+  },
+  "ProtectedAudiencePrivateAggregationConfig": {
+    "fragment": "idlnames/ProtectedAudiencePrivateAggregationConfig.idl",
+    "parsed": "idlnamesparsed/ProtectedAudiencePrivateAggregationConfig.json",
+    "type": "dictionary"
   },
   "ProximitySensor": {
     "fragment": "idlnames/ProximitySensor.idl",
@@ -9328,6 +9403,11 @@
     "fragment": "idlnames/RedEyeReduction.idl",
     "parsed": "idlnamesparsed/RedEyeReduction.json",
     "type": "enum"
+  },
+  "Reducer": {
+    "fragment": "idlnames/Reducer.idl",
+    "parsed": "idlnamesparsed/Reducer.json",
+    "type": "callback"
   },
   "ReferrerPolicy": {
     "fragment": "idlnames/ReferrerPolicy.idl",
@@ -10539,6 +10619,11 @@
     "parsed": "idlnamesparsed/SharedStorageDataOrigin.json",
     "type": "enum"
   },
+  "SharedStoragePrivateAggregationConfig": {
+    "fragment": "idlnames/SharedStoragePrivateAggregationConfig.idl",
+    "parsed": "idlnamesparsed/SharedStoragePrivateAggregationConfig.json",
+    "type": "dictionary"
+  },
   "SharedStorageResponse": {
     "fragment": "idlnames/SharedStorageResponse.idl",
     "parsed": "idlnamesparsed/SharedStorageResponse.json",
@@ -10847,6 +10932,26 @@
   "SubmitEventInit": {
     "fragment": "idlnames/SubmitEventInit.idl",
     "parsed": "idlnamesparsed/SubmitEventInit.json",
+    "type": "dictionary"
+  },
+  "SubscribeCallback": {
+    "fragment": "idlnames/SubscribeCallback.idl",
+    "parsed": "idlnamesparsed/SubscribeCallback.json",
+    "type": "callback"
+  },
+  "SubscribeOptions": {
+    "fragment": "idlnames/SubscribeOptions.idl",
+    "parsed": "idlnamesparsed/SubscribeOptions.json",
+    "type": "dictionary"
+  },
+  "Subscriber": {
+    "fragment": "idlnames/Subscriber.idl",
+    "parsed": "idlnamesparsed/Subscriber.json",
+    "type": "interface"
+  },
+  "SubscriptionObserver": {
+    "fragment": "idlnames/SubscriptionObserver.idl",
+    "parsed": "idlnamesparsed/SubscriptionObserver.json",
     "type": "dictionary"
   },
   "SubtleCrypto": {
@@ -11813,6 +11918,11 @@
     "fragment": "idlnames/VisibilityStateEntry.idl",
     "parsed": "idlnamesparsed/VisibilityStateEntry.json",
     "type": "interface"
+  },
+  "Visitor": {
+    "fragment": "idlnames/Visitor.idl",
+    "parsed": "idlnamesparsed/Visitor.json",
+    "type": "callback"
   },
   "VisualViewport": {
     "fragment": "idlnames/VisualViewport.idl",

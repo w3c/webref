@@ -5,3 +5,8 @@ dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {
   required double lifetimeMs;
   DOMString additionalBidKey;
 };
+
+// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
+partial dictionary AuctionAdInterestGroup {
+  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;
+};

@@ -1,0 +1,9 @@
+// Source: Observable (https://wicg.github.io/observable/)
+dictionary ObservableInspector {
+  ObservableSubscriptionCallback next;
+  ObservableSubscriptionCallback error;
+  VoidFunction complete;
+
+  VoidFunction subscribe;
+  ObservableInspectorAbortHandler abort;
+};

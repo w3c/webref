@@ -1,0 +1,6 @@
+// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
+dictionary PAExtendedHistogramContribution {
+  required (PASignalValue or bigint) bucket;
+  required (PASignalValue or long) value;
+  bigint filteringId = 0;
+};

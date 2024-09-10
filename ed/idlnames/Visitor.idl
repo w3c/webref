@@ -1,0 +1,4 @@
+// Source: Observable (https://wicg.github.io/observable/)
+// Differs from Mapper only in return type, since this callback is exclusively
+// used to visit each element in a sequence, not transform it.
+callback Visitor = undefined (any value, unsigned long long index);

@@ -36,3 +36,15 @@ dictionary AuctionAdConfig {
   Promise<Uint8Array> serverResponse;
   USVString requestId;
 };
+
+// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
+partial dictionary AuctionAdConfig {
+  sequence<bigint> auctionReportBuyerKeys;
+  record<DOMString, AuctionReportBuyersConfig> auctionReportBuyers;
+  AuctionReportBuyerDebugModeConfig auctionReportBuyerDebugModeConfig;
+};
+
+// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
+partial dictionary AuctionAdConfig {
+  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;
+};

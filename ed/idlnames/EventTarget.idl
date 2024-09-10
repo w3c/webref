@@ -7,3 +7,8 @@ interface EventTarget {
   undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});
   boolean dispatchEvent(Event event);
 };
+
+// Source: Observable (https://wicg.github.io/observable/)
+partial interface EventTarget {
+  Observable when(DOMString type, optional ObservableEventListenerOptions options = {});
+};

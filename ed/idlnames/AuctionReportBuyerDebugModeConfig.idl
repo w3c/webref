@@ -1,0 +1,7 @@
+// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
+dictionary AuctionReportBuyerDebugModeConfig {
+  boolean enabled = false;
+
+  // Must only be provided if `enabled` is true.
+  bigint? debugKey;
+};

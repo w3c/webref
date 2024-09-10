@@ -307,7 +307,7 @@
         "href": "https://wicg.github.io/shared-storage/#callbackdef-runfunctionforsharedstorageselecturloperation"
       },
       "SharedStorageWorkletGlobalScope": {
-        "fragment": "[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]\ninterface SharedStorageWorkletGlobalScope : WorkletGlobalScope {\n  undefined register(DOMString name,\n                     Function operationCtor);\n\n  readonly attribute SharedStorage sharedStorage;\n};",
+        "fragment": "[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]\ninterface SharedStorageWorkletGlobalScope : WorkletGlobalScope {\n  undefined register(DOMString name,\n                     Function operationCtor);\n\n  readonly attribute SharedStorage sharedStorage;\n  readonly attribute PrivateAggregation privateAggregation;\n};",
         "type": "interface",
         "name": "SharedStorageWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -376,6 +376,22 @@
             "special": "",
             "readonly": true,
             "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-sharedstorage"
+          },
+          {
+            "type": "attribute",
+            "name": "privateAggregation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PrivateAggregation"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-privateaggregation"
           }
         ],
         "extAttrs": [
@@ -1121,8 +1137,74 @@
         "partial": false,
         "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragesetmethodoptions"
       },
+      "SharedStoragePrivateAggregationConfig": {
+        "fragment": "dictionary SharedStoragePrivateAggregationConfig {\n  USVString aggregationCoordinatorOrigin;\n  USVString contextId;\n  [EnforceRange] unsigned long long filteringIdMaxBytes;\n};",
+        "type": "dictionary",
+        "name": "SharedStoragePrivateAggregationConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "aggregationCoordinatorOrigin",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageprivateaggregationconfig-aggregationcoordinatororigin"
+          },
+          {
+            "type": "field",
+            "name": "contextId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageprivateaggregationconfig-contextid"
+          },
+          {
+            "type": "field",
+            "name": "filteringIdMaxBytes",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageprivateaggregationconfig-filteringidmaxbytes"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstorageprivateaggregationconfig"
+      },
       "SharedStorageRunOperationMethodOptions": {
-        "fragment": "dictionary SharedStorageRunOperationMethodOptions {\n  object data;\n  boolean resolveToConfig = false;\n  boolean keepAlive = false;\n};",
+        "fragment": "dictionary SharedStorageRunOperationMethodOptions {\n  object data;\n  boolean resolveToConfig = false;\n  boolean keepAlive = false;\n  SharedStoragePrivateAggregationConfig privateAggregationConfig;\n};",
         "type": "dictionary",
         "name": "SharedStorageRunOperationMethodOptions",
         "inheritance": null,
@@ -1180,6 +1262,22 @@
             },
             "required": false,
             "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-keepalive"
+          },
+          {
+            "type": "field",
+            "name": "privateAggregationConfig",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SharedStoragePrivateAggregationConfig"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-privateaggregationconfig"
           }
         ],
         "extAttrs": [],
@@ -1365,7 +1463,8 @@
       "SharedStorageWorkletGlobalScope": [
         "WorkletGlobalScope",
         "Function",
-        "SharedStorage"
+        "SharedStorage",
+        "PrivateAggregation"
       ],
       "SharedStorageUrlWithMetadata": [],
       "Window": [
@@ -1380,7 +1479,10 @@
         "SharedStorageWorkletOptions"
       ],
       "SharedStorageSetMethodOptions": [],
-      "SharedStorageRunOperationMethodOptions": [],
+      "SharedStoragePrivateAggregationConfig": [],
+      "SharedStorageRunOperationMethodOptions": [
+        "SharedStoragePrivateAggregationConfig"
+      ],
       "SharedStorageWorkletOptions": [
         "WorkletOptions",
         "SharedStorageDataOrigin"
@@ -1399,6 +1501,7 @@
       "Worklet",
       "WorkletGlobalScope",
       "Function",
+      "PrivateAggregation",
       "Window",
       "WorkletOptions",
       "RequestInit"

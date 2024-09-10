@@ -189,6 +189,21 @@
       ]
     },
     {
+      "name": "masonry",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry",
+      "value": "<'masonry-template-areas'> || <'masonry-template-tracks'> || <'masonry-direction'> || <'masonry-fill'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "masonry"
+      ]
+    },
+    {
       "name": "masonry-template-tracks",
       "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-template-tracks",
       "value": "<'grid-template-columns'>",
@@ -237,6 +252,31 @@
       ]
     },
     {
+      "name": "masonry-slack",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-slack",
+      "value": "<length-percentage>",
+      "initial": "1em",
+      "appliesTo": "masonry containers",
+      "inherited": "no",
+      "percentages": "relative to the grid-axis content box size of the masonry container",
+      "computedValue": "a computed length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "<length>",
+          "prose": "Specifies the tie threshold for the masonry container. Placement positions are considered to be equally good (“tied”) if they are within the specified distance from the shortest position.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-slack-length",
+          "type": "value",
+          "value": "<length>"
+        }
+      ],
+      "styleDeclaration": [
+        "masonry-slack",
+        "masonrySlack"
+      ]
+    },
+    {
       "name": "masonry-track-start",
       "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-track-start",
       "styleDeclaration": [
@@ -263,5 +303,16 @@
   ],
   "atrules": [],
   "selectors": [],
-  "values": []
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "auto-areas",
+      "prose": "The new auto-areas value for the repeat() notation represents the number of repetitions necessary for the total number of explicit tracks to match the grid-template-areas / masonry-template-areas value in effect in the corresponding axis. If multiple tracks are listed for the repetition, the final repetition is truncated as necessary to produce the correct number of tracks.",
+      "href": "https://drafts.csswg.org/css-grid-3/#valdef-repeat-auto-areas",
+      "type": "value",
+      "value": "auto-areas",
+      "for": "repeat()"
+    }
+  ]
 }

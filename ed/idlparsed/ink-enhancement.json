@@ -9,14 +9,14 @@
       "functions": {
         "Window": [
           "Ink",
-          "InkPresenter",
+          "DelegatedInkTrailPresenter",
           "Navigator"
         ]
       }
     },
     "idlNames": {
       "Ink": {
-        "fragment": "[Exposed=Window]\ninterface Ink {\n    Promise<InkPresenter> requestPresenter(\n        optional InkPresenterParam param = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface Ink {\n    Promise<DelegatedInkTrailPresenter> requestPresenter(\n        optional InkPresenterParam param = {});\n};",
         "type": "interface",
         "name": "Ink",
         "inheritance": null,
@@ -37,7 +37,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "InkPresenter"
+                  "idlType": "DelegatedInkTrailPresenter"
                 }
               ]
             },
@@ -109,10 +109,10 @@
         "partial": false,
         "href": "https://wicg.github.io/ink-enhancement/#dictdef-inkpresenterparam"
       },
-      "InkPresenter": {
-        "fragment": "[Exposed=Window]\ninterface InkPresenter {\n    readonly attribute Element? presentationArea;\n\n    undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);\n};",
+      "DelegatedInkTrailPresenter": {
+        "fragment": "[Exposed=Window]\ninterface DelegatedInkTrailPresenter {\n    readonly attribute Element? presentationArea;\n\n    undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);\n};",
         "type": "interface",
-        "name": "InkPresenter",
+        "name": "DelegatedInkTrailPresenter",
         "inheritance": null,
         "members": [
           {
@@ -129,7 +129,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/ink-enhancement/#dom-inkpresenter-presentationarea"
+            "href": "https://wicg.github.io/ink-enhancement/#dom-delegatedinktrailpresenter-presentationarea"
           },
           {
             "type": "operation",
@@ -178,7 +178,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/ink-enhancement/#dom-inkpresenter-updateinktrailstartpoint"
+            "href": "https://wicg.github.io/ink-enhancement/#dom-delegatedinktrailpresenter-updateinktrailstartpoint"
           }
         ],
         "extAttrs": [
@@ -193,7 +193,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/ink-enhancement/#inkpresenter"
+        "href": "https://wicg.github.io/ink-enhancement/#delegatedinktrailpresenter"
       },
       "InkTrailStyle": {
         "fragment": "dictionary InkTrailStyle {\n    required DOMString color;\n    required unrestricted double diameter;\n};",
@@ -290,19 +290,19 @@
     "exposed": {
       "Window": [
         "Ink",
-        "InkPresenter",
+        "DelegatedInkTrailPresenter",
         "Navigator"
       ]
     },
     "dependencies": {
       "Ink": [
-        "InkPresenter",
+        "DelegatedInkTrailPresenter",
         "InkPresenterParam"
       ],
       "InkPresenterParam": [
         "Element"
       ],
-      "InkPresenter": [
+      "DelegatedInkTrailPresenter": [
         "Element",
         "PointerEvent",
         "InkTrailStyle"

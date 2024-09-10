@@ -9,7 +9,15 @@
     "fragment": "dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {\n  double priority = 0.0;\n  record<DOMString, double> prioritySignalsOverrides;\n  required double lifetimeMs;\n  DOMString additionalBidKey;\n};",
     "href": "https://wicg.github.io/turtledove/#dictdef-auctionadinterestgroup"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Private Aggregation API",
+        "url": "https://patcg-individual-drafts.github.io/private-aggregation-api/"
+      },
+      "fragment": "partial dictionary AuctionAdInterestGroup {\n  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;\n};"
+    }
+  ],
   "inheritance": {
     "name": "GenerateBidInterestGroup",
     "type": "dictionary",

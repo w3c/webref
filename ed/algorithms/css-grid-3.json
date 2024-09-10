@@ -5,35 +5,50 @@
   },
   "algorithms": [
     {
+      "html": "Track sizing can be optimized by aggregating items\n\tthat have the same span size and placement\n\tinto a single virtual item\n\tas follows:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "Separate all the <a data-link-type=\"dfn\">masonry items</a> into <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"item-groups\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">item groups</dfn>, according to the following properties: \n     <ul>\n      <li data-md=\"\">\n       <p>the span of the item</p>\n      </li><li data-md=\"\">\n       <p>the placement of the item,\ni.e. which tracks it is allowed to be placed in</p>\n      </li><li data-md=\"\">\n       <p>the item’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-align-3/#baseline-sharing-group\" id=\"ref-for-baseline-sharing-group\">baseline-sharing group</a></p>\n     </li></ul>"
+        },
+        {
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#item-groups\" id=\"ref-for-item-groups\">item group</a>, synthesize a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"virtual-masonry-item\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">virtual masonry item</dfn> that has the maximum of every intrinsic size contribution\n\t\t\tamong the items in that group. \n     <p>If the items apply <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-align-3/#baseline-alignment\" id=\"ref-for-baseline-alignment\">baseline alignment</a>,\n\t\t\tdetermine the baselines of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#virtual-masonry-item\" id=\"ref-for-virtual-masonry-item\">virtual masonry item</a> by placing all of its items into a single hypothetical grid track\n\t\t\tand finding their shared baseline(s) and shims.\n\t\t\tIncrease the group’s intrinsic size contributions accordingly.</p>"
+        },
+        {
+          "html": "Place hypothetical copies of each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#virtual-masonry-item\" id=\"ref-for-virtual-masonry-item①\">virtual masonry item</a> into the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis①②\">grid axis</a> tracks\n\t\t\tin every position that the item could potentially occupy,\n\t\t\tand run the <a href=\"https://drafts.csswg.org/css-grid-2/#algo-track-sizing\">track sizing algorithm</a> with those items.\n\t\t\tThe resulting track sizes are the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#masonry-container\" id=\"ref-for-masonry-container②⑤\">masonry container’s</a> track sizes."
+        }
+      ]
+    },
+    {
       "html": "For each item in <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#order-modified-document-order\" id=\"ref-for-order-modified-document-order\">order-modified document order</a>:",
       "rationale": "if",
       "steps": [
         {
-          "html": "Otherwise, resolve its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis①⑦\">grid axis</a> placement using these substeps:",
-          "rationale": "find",
+          "html": "Otherwise, resolve its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis①⑨\">grid axis</a> placement using these substeps:",
+          "rationale": "increment",
           "steps": [
             {
-              "html": "Starting at the first <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis①⑧\">grid axis</a> line in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-2/#implicit-grid\" id=\"ref-for-implicit-grid①\">implicit grid</a>."
-            },
-            {
-              "html": "Find the largest <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#running-position\" id=\"ref-for-running-position\">running position</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis①⑨\">grid axis</a> tracks\n\t\t\t\t\tthat the item would span if it were placed at this line,\n\t\t\t\t\tand call this position <var>max_pos</var>."
+              "html": "Starting at the first <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis②⓪\">grid axis</a> line in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-2/#implicit-grid\" id=\"ref-for-implicit-grid①\">implicit grid</a>,\n\t\t\t\t\tfind the largest <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#running-position\" id=\"ref-for-running-position\">running position</a> of the <span id=\"ref-for-grid-axis②①\">grid axis</span> tracks\n\t\t\t\t\tthat the item would span if it were placed at this line,\n\t\t\t\t\tand call this position <var>max_pos</var>."
             },
             {
               "html": "Increment the line number and repeat step 2\n\t\t\t\t\tuntil the item would no longer fit inside the grid."
             },
             {
-              "html": "Pick the line that resulted in the smallest <var>max_pos</var> as the item’s definite placement in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis②⓪\">grid axis</a>.\n\t\t\t\t\tIf multiple lines qualify,\n\t\t\t\t\tchoose the first one greater than or equal to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#auto-placement-cursor\" id=\"ref-for-auto-placement-cursor\">auto-placement cursor</a>,\n\t\t\t\t\tor if there are none such,\n\t\t\t\t\tchoose the first one."
+              "html": "Let <var>possible lines</var> be the line that resulted in the smallest <var>max_pos</var>,\n\t\t\t\t\tand all lines that result in a <var>max_pos</var> within the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#masonry-tie-threshold\" id=\"ref-for-masonry-tie-threshold\">tie threshold</a> of this <var>max_pos</var>."
             },
             {
-              "html": "Update the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#auto-placement-cursor\" id=\"ref-for-auto-placement-cursor①\">auto-placement cursor</a> to point to item’s last line;\n\t\t\t\t\thowever if this is the last line in the grid,\n\t\t\t\t\tswitch it to the first line."
+              "html": "Choose the first line in <var>possible lines</var> greater than or equal to the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#auto-placement-cursor\" id=\"ref-for-auto-placement-cursor\">auto-placement cursor</a> as the item’s position in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis②②\">grid axis</a>;\n\t\t\t\t\tor if there are none such, choose the first one."
+            },
+            {
+              "html": "Update the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#auto-placement-cursor\" id=\"ref-for-auto-placement-cursor①\">auto-placement cursor</a> to point to item’s last line."
             }
           ]
         },
         {
-          "html": "Place the item in its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis②①\">grid axis</a> tracks\n\t\t\tat the maximum of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#running-position\" id=\"ref-for-running-position①\">running position</a>s\n\t\t\tof the tracks it spans."
+          "html": "Place the item in its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis②③\">grid axis</a> tracks\n\t\t\tat the maximum of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#running-position\" id=\"ref-for-running-position①\">running position</a>s\n\t\t\tof the tracks it spans."
         },
         {
-          "html": "Calculate the size of the item’s <a href=\"https://drafts.csswg.org/css-grid-3/#containing-block\">containing block</a> and then layout the item.\n\t\t\tSet the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#running-position\" id=\"ref-for-running-position②\">running position</a> of the spanned <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis②②\">grid axis</a> tracks\n\t\t\tto <code><var>max_pos</var> + <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#outer-size\" id=\"ref-for-outer-size\">outer size</a> + <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-align-3/#propdef-grid-gap\" id=\"ref-for-propdef-grid-gap\">grid-gap</a></code>."
+          "html": "Calculate the size of the item’s <a href=\"https://drafts.csswg.org/css-grid-3/#containing-block\">containing block</a> and then layout the item.\n\t\t\tSet the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#running-position\" id=\"ref-for-running-position②\">running position</a> of the spanned <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis②④\">grid axis</a> tracks\n\t\t\tto <code><var>max_pos</var> + <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#outer-size\" id=\"ref-for-outer-size\">outer size</a> + <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-align-3/#propdef-grid-gap\" id=\"ref-for-propdef-grid-gap\">grid-gap</a></code>."
         }
       ]
     }

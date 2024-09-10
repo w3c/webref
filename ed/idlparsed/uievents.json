@@ -18,8 +18,7 @@
       },
       "functions": {
         "Window": [
-          "TextEvent",
-          "MutationEvent"
+          "TextEvent"
         ]
       }
     },
@@ -2109,326 +2108,6 @@
         ],
         "partial": false,
         "href": "https://w3c.github.io/uievents/#textevent"
-      },
-      "MutationEvent": {
-        "fragment": "[Exposed=Window]\ninterface MutationEvent : Event {\n  // attrChangeType\n  const unsigned short MODIFICATION = 1;\n  const unsigned short ADDITION = 2;\n  const unsigned short REMOVAL = 3;\n\n  readonly attribute Node? relatedNode;\n  readonly attribute DOMString prevValue;\n  readonly attribute DOMString newValue;\n  readonly attribute DOMString attrName;\n  readonly attribute unsigned short attrChange;\n\n  undefined initMutationEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Node? relatedNodeArg = null,\n    optional DOMString prevValueArg = \"\",\n    optional DOMString newValueArg = \"\",\n    optional DOMString attrNameArg = \"\",\n    optional unsigned short attrChangeArg = 0);\n};",
-        "type": "interface",
-        "name": "MutationEvent",
-        "inheritance": "Event",
-        "members": [
-          {
-            "type": "const",
-            "name": "MODIFICATION",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "1"
-            },
-            "href": "https://w3c.github.io/uievents/#dom-mutationevent-modification"
-          },
-          {
-            "type": "const",
-            "name": "ADDITION",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "2"
-            },
-            "href": "https://w3c.github.io/uievents/#dom-mutationevent-addition"
-          },
-          {
-            "type": "const",
-            "name": "REMOVAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "3"
-            },
-            "href": "https://w3c.github.io/uievents/#dom-mutationevent-removal"
-          },
-          {
-            "type": "attribute",
-            "name": "relatedNode",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "Node"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/uievents/#dom-mutationevent-relatednode"
-          },
-          {
-            "type": "attribute",
-            "name": "prevValue",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/uievents/#dom-mutationevent-prevvalue"
-          },
-          {
-            "type": "attribute",
-            "name": "newValue",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/uievents/#dom-mutationevent-newvalue"
-          },
-          {
-            "type": "attribute",
-            "name": "attrName",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/uievents/#dom-mutationevent-attrname"
-          },
-          {
-            "type": "attribute",
-            "name": "attrChange",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/uievents/#dom-mutationevent-attrchange"
-          },
-          {
-            "type": "operation",
-            "name": "initMutationEvent",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "typeArg",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "bubblesArg",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "boolean"
-                },
-                "default": {
-                  "type": "boolean",
-                  "value": false
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "cancelableArg",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "boolean"
-                },
-                "default": {
-                  "type": "boolean",
-                  "value": false
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "relatedNodeArg",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": true,
-                  "union": false,
-                  "idlType": "Node"
-                },
-                "default": {
-                  "type": "null"
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "prevValueArg",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": {
-                  "type": "string",
-                  "value": ""
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "newValueArg",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": {
-                  "type": "string",
-                  "value": ""
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "attrNameArg",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": {
-                  "type": "string",
-                  "value": ""
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "attrChangeArg",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned short"
-                },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://w3c.github.io/uievents/#dom-mutationevent-initmutationevent"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://w3c.github.io/uievents/#mutationevent"
       }
     },
     "idlExtendedNames": {
@@ -3356,8 +3035,7 @@
         "InputEvent",
         "KeyboardEvent",
         "CompositionEvent",
-        "TextEvent",
-        "MutationEvent"
+        "TextEvent"
       ]
     },
     "dependencies": {
@@ -3425,10 +3103,6 @@
       "TextEvent": [
         "UIEvent",
         "Window"
-      ],
-      "MutationEvent": [
-        "Event",
-        "Node"
       ]
     },
     "externalDependencies": [
@@ -3436,8 +3110,7 @@
       "Window",
       "EventInit",
       "EventTarget",
-      "WindowProxy",
-      "Node"
+      "WindowProxy"
     ],
     "hasObsoleteIdl": false
   }

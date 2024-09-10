@@ -33,7 +33,15 @@
         "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\ninterface InterestGroupScriptRunnerGlobalScope {\n};",
         "href": "https://wicg.github.io/turtledove/#interestgroupscriptrunnerglobalscope"
       },
-      "extended": [],
+      "extended": [
+        {
+          "spec": {
+            "title": "Private Aggregation API",
+            "url": "https://patcg-individual-drafts.github.io/private-aggregation-api/"
+          },
+          "fragment": "partial interface InterestGroupScriptRunnerGlobalScope {\n  readonly attribute PrivateAggregation privateAggregation;\n};"
+        }
+      ],
       "inheritance": null,
       "includes": []
     },

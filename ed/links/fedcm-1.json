@@ -1,0 +1,386 @@
+{
+  "spec": {
+    "title": "Federated Credential Management API",
+    "url": "https://w3c-fedid.github.io/FedCM/"
+  },
+  "links": {
+    "rawlinks": {
+      "https://blog.google/products/chrome/privacy-sustainability-and-the-importance-of-and/": {},
+      "https://blog.mozilla.org/blog/2019/09/03/todays-firefox-blocks-third-party-tracking-cookies-and-cryptomining-by-default/": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://datatracker.ietf.org/doc/html/rfc7258": {},
+      "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-color-4/": {},
+      "https://drafts.csswg.org/css-color-5/": {},
+      "https://drafts.csswg.org/cssom-view/": {},
+      "https://encoding.spec.whatwg.org/": {},
+      "https://fetch.spec.whatwg.org/": {},
+      "https://github.com/fedidcg/FedCM/issues/218": {},
+      "https://github.com/fedidcg/FedCM/issues/230": {
+        "anchors": [
+          "issuecomment-1089040953",
+          "issuecomment-1067029200"
+        ]
+      },
+      "https://github.com/fedidcg/FedCM/issues/314": {},
+      "https://github.com/fedidcg/FedCM/issues/319": {},
+      "https://github.com/fedidcg/FedCM/issues/333": {},
+      "https://github.com/fedidcg/FedCM/issues/336": {},
+      "https://github.com/fedidcg/FedCM/issues/442": {},
+      "https://github.com/fedidcg/FedCM/issues/476": {},
+      "https://github.com/michaelkleber/privacy-model": {},
+      "https://github.com/w3c-fedid/": {},
+      "https://github.com/w3c-fedid/FedCM/issues/240": {},
+      "https://github.com/w3c-fedid/FedCM/issues/317": {},
+      "https://github.com/w3c-fedid/FedCM/issues/319": {},
+      "https://github.com/w3c-fedid/FedCM/issues/320": {},
+      "https://github.com/w3c-fedid/FedCM/issues/352": {},
+      "https://github.com/w3c-fedid/FedCM/issues/407": {},
+      "https://github.com/w3c-fedid/FedCM/issues/428": {},
+      "https://github.com/w3c-fedid/FedCM/issues/441": {},
+      "https://github.com/w3c-fedid/FedCM/issues/442": {},
+      "https://github.com/w3c-fedid/FedCM/issues/467": {},
+      "https://github.com/w3c-fedid/FedCM/issues/488": {},
+      "https://github.com/w3c-fedid/FedCM/issues/511": {},
+      "https://github.com/w3c-fedid/FedCM/issues/517": {},
+      "https://github.com/w3c-fedid/FedCM/issues/537": {},
+      "https://github.com/w3c-fedid/FedCM/issues/552": {},
+      "https://github.com/w3c-fedid/FedCM/issues/553": {},
+      "https://github.com/w3c-fedid/FedCM/issues/555": {},
+      "https://github.com/w3c-fedid/FedCM/issues/556": {},
+      "https://github.com/w3c-fedid/FedCM/issues/559": {},
+      "https://github.com/w3c-fedid/FedCM/issues/578": {},
+      "https://github.com/w3c-fedid/FedCM/issues/585": {},
+      "https://github.com/w3c-fedid/FedCM/issues/587": {},
+      "https://github.com/w3c-fedid/FedCM/issues/599": {},
+      "https://github.com/w3c-fedid/FedCM/issues/609": {},
+      "https://github.com/w3c-fedid/FedCM/issues/616": {},
+      "https://github.com/w3c-fedid/FedCM/issues/618": {},
+      "https://github.com/w3c-fedid/FedCM/issues/620": {},
+      "https://github.com/w3c-fedid/FedCM/issues/625": {},
+      "https://github.com/w3c-fedid/FedCM/issues/626": {},
+      "https://github.com/w3c-fedid/FedCM/issues/627": {},
+      "https://github.com/w3c/webappsec-credential-management/issues/210": {},
+      "https://github.com/whatwg/fetch/pull/1533": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html": {
+        "anchors": [
+          "name-the-samesite-attribute-2"
+        ]
+      },
+      "https://httpwg.org/specs/rfc9110.html": {
+        "anchors": [
+          "field.referer",
+          "field.location"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {},
+      "https://lists.w3.org/Archives/Public/public-fedid-wg/": {},
+      "https://mimesniff.spec.whatwg.org/": {},
+      "https://openid.net/specs/openid-connect-account-porting-1_0.html": {},
+      "https://openid.net/specs/openid-connect-core-1_0.html": {
+        "anchors": [
+          "IDTokenValidation"
+        ]
+      },
+      "https://patcg-individual-drafts.github.io/private-aggregation-api/": {},
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/structured-data.html": {
+        "anchors": [
+          "sec-json-object"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {},
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "anchors": [
+          "algorithm-request"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "directive-connect-src"
+        ]
+      },
+      "https://w3c.github.io/webappsec-fetch-metadata/": {},
+      "https://w3c.github.io/webappsec-permissions-policy": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {},
+      "https://w3c.github.io/webappsec-secure-contexts/": {},
+      "https://w3c.github.io/webdriver/": {},
+      "https://w3cping.github.io/privacy-threat-model/": {
+        "anchors": [
+          "hl-intrusion"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {},
+      "https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/": {},
+      "https://wiki.mozilla.org/Identity/Persona_AAR": {},
+      "https://www.rfc-editor.org/rfc/rfc6973": {
+        "anchors": [
+          "section-5.1.3"
+        ]
+      },
+      "https://www.w3.org/Mail/Request": {},
+      "https://www.w3.org/TR/appmanifest/": {
+        "anchors": [
+          "icon-masks"
+        ]
+      },
+      "https://www.w3.org/groups/wg/fedid": {},
+      "https://www.w3.org/groups/wg/webappsec/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20231103/": {}
+    },
+    "autolinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://datatracker.ietf.org/doc/html/rfc7258": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document-origin",
+          "document"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "typedef-hex-color",
+          "funcdef-hsl",
+          "funcdef-rgb",
+          "typedef-named-color"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-5/": {
+        "anchors": [
+          "typedef-color"
+        ]
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "set-up-browsing-context-features"
+        ]
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "anchors": [
+          "utf-8-encode"
+        ]
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request",
+          "concept-request-url",
+          "concept-request-method",
+          "concept-request-body",
+          "concept-request-redirect-mode",
+          "concept-request-client",
+          "concept-request-window",
+          "request-service-workers-mode",
+          "concept-request-destination",
+          "concept-request-origin",
+          "concept-request-header-list",
+          "concept-header",
+          "concept-header-name",
+          "concept-header-value",
+          "concept-request-credentials-mode",
+          "concept-request-mode",
+          "concept-response",
+          "concept-request-referrer-policy",
+          "concept-fetch",
+          "process-response-end-of-body",
+          "concept-network-error",
+          "concept-response-status",
+          "ok-status",
+          "concept-header-extract-mime-type",
+          "concept-response-header-list",
+          "http-origin",
+          "forbidden-request-header"
+        ]
+      },
+      "https://github.com/michaelkleber/privacy-model": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin",
+          "concept-origin-opaque",
+          "concept-origin-scheme",
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "create-a-fresh-top-level-traversable",
+          "top-level-traversable",
+          "nav-top"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-document-permissions-policy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window",
+          "window-navigable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "current-global-object",
+          "relevant-settings-object",
+          "concept-settings-object-origin",
+          "environment-settings-object",
+          "queue-a-global-task",
+          "dom-manipulation-task-source",
+          "concept-global-object-realm",
+          "networking-task-source",
+          "current-settings-object"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "user-agent",
+          "ordered-set",
+          "list-item",
+          "list-remove",
+          "map-exists",
+          "list-contain",
+          "set-append",
+          "list",
+          "list-size",
+          "string-is",
+          "string",
+          "ordered-map",
+          "parse-json-bytes-to-a-javascript-value",
+          "list-append",
+          "list-empty",
+          "boolean"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "json-mime-type"
+        ]
+      },
+      "https://patcg-individual-drafts.github.io/private-aggregation-api/": {
+        "anchors": [
+          "remote-end-steps"
+        ]
+      },
+      "https://tc39.github.io/ecma262/": {
+        "anchors": [
+          "sec-ordinary-object-internal-methods-and-internal-slots"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-origin",
+          "concept-url",
+          "concept-urlencoded-serializer",
+          "concept-url-scheme",
+          "concept-url-host",
+          "host-registrable-domain",
+          "concept-url-path",
+          "concept-url-parser",
+          "concept-url-query"
+        ]
+      },
+      "https://w3c-fedid.github.io/login-status": {
+        "anchors": [
+          "get-the-login-status",
+          "unknown",
+          "logged-out",
+          "set-the-login-status",
+          "logged-in"
+        ]
+      },
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "anchors": [
+          "credential",
+          "dom-credential-id",
+          "dom-credential-type-slot",
+          "dom-credential-discovery-slot",
+          "dom-credential-discovery-remote",
+          "dictdef-credentialrequestoptions",
+          "dom-credential-discoverfromexternalsource-slot",
+          "dom-credentialscontainer-get",
+          "credentialscontainer",
+          "abstract-opdef-request-a-credential",
+          "same-origin-with-its-ancestors",
+          "dom-credentialrequestoptions-signal",
+          "origin-requires-user-mediation",
+          "dom-credentialrequestoptions-mediation",
+          "dom-credentialmediationrequirement-silent",
+          "dom-credentialmediationrequirement-required"
+        ]
+      },
+      "https://w3c.github.io/webappsec-csp/": {},
+      "https://w3c.github.io/webappsec-fetch-metadata/": {
+        "anchors": [
+          "http-headerdef-sec-fetch-dest"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist"
+        ]
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-origin",
+          "potentially-trustworthy-url"
+        ]
+      },
+      "https://w3c.github.io/webdriver/": {
+        "anchors": [
+          "dfn-extension-commands",
+          "dfn-extension-capability",
+          "dfn-endpoint-node",
+          "dfn-validate-capabilities",
+          "dfn-error",
+          "dfn-error-code",
+          "dfn-invalid-argument",
+          "dfn-matching-capabilities",
+          "dfn-no-such-alert",
+          "dfn-success",
+          "dfn-getting-properties"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-USVString",
+          "Exposed",
+          "SecureContext",
+          "idl-promise",
+          "idl-undefined",
+          "idl-boolean",
+          "notallowederror",
+          "idl-DOMException",
+          "reject",
+          "invalidstateerror",
+          "networkerror",
+          "resolve",
+          "dfn-convert-ecmascript-to-idl-value",
+          "idl-sequence",
+          "idl-DOMString",
+          "idl-unsigned-long",
+          "a-promise-rejected-with",
+          "dfn-dictionary"
+        ]
+      }
+    }
+  }
+}

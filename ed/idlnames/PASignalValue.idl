@@ -1,0 +1,6 @@
+// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
+dictionary PASignalValue {
+  required DOMString baseValue;
+  double scale;
+  (bigint or long) offset;
+};

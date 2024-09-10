@@ -6,7 +6,7 @@
       "title": "Ink API",
       "url": "https://wicg.github.io/ink-enhancement/"
     },
-    "fragment": "[Exposed=Window]\ninterface Ink {\n    Promise<InkPresenter> requestPresenter(\n        optional InkPresenterParam param = {});\n};",
+    "fragment": "[Exposed=Window]\ninterface Ink {\n    Promise<DelegatedInkTrailPresenter> requestPresenter(\n        optional InkPresenterParam param = {});\n};",
     "href": "https://wicg.github.io/ink-enhancement/#ink"
   },
   "extended": [],
