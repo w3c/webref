@@ -1,0 +1,39 @@
+From 58debc231be1cdfdeaae2416fac5cb8827ec987e Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Tue, 10 Sep 2024 11:11:22 +0200
+Subject: [PATCH] Drop IDL moved to Shared Storage API
+
+Pending removal from spec:
+https://github.com/patcg-individual-drafts/private-aggregation-api/pull/160
+---
+ ed/idl/private-aggregation-api.idl | 14 --------------
+ 1 file changed, 14 deletions(-)
+
+diff --git a/ed/idl/private-aggregation-api.idl b/ed/idl/private-aggregation-api.idl
+index 9c3ba12dc..cee17c63f 100644
+--- a/ed/idl/private-aggregation-api.idl
++++ b/ed/idl/private-aggregation-api.idl
+@@ -20,20 +20,6 @@ dictionary PADebugModeOptions {
+   required bigint debugKey;
+ };
+ 
+-partial interface SharedStorageWorkletGlobalScope {
+-  readonly attribute PrivateAggregation privateAggregation;
+-};
+-
+-dictionary SharedStoragePrivateAggregationConfig {
+-  USVString aggregationCoordinatorOrigin;
+-  USVString contextId;
+-  [EnforceRange] unsigned long long filteringIdMaxBytes;
+-};
+-
+-partial dictionary SharedStorageRunOperationMethodOptions {
+-  SharedStoragePrivateAggregationConfig privateAggregationConfig;
+-};
+-
+ partial interface InterestGroupScriptRunnerGlobalScope {
+   readonly attribute PrivateAggregation privateAggregation;
+ };
+-- 
+2.42.0.windows.2
+
