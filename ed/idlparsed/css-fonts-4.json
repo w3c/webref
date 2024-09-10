@@ -706,7 +706,7 @@
         "href": "https://drafts.csswg.org/css-fonts-4/#cssfontfacedescriptors"
       },
       "CSSFontFaceRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSFontFaceRule : CSSRule {\n  readonly attribute CSSFontFaceDescriptors style;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSFontFaceRule : CSSRule {\n  [SameObject, PutForwards=cssText] readonly attribute CSSFontFaceDescriptors style;\n};",
         "type": "interface",
         "name": "CSSFontFaceRule",
         "inheritance": "CSSRule",
@@ -722,7 +722,23 @@
               "union": false,
               "idlType": "CSSFontFaceDescriptors"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "PutForwards",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "cssText"
+                },
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true,
             "href": "https://drafts.csswg.org/css-fonts-4/#dom-cssfontfacerule-style"
