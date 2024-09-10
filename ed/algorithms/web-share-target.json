@@ -9,7 +9,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>json</var> and <var>manifest</var> be the corresponding variables from\n        <a data-link-type=\"dfn|abstract-op\" data-cite=\"appmanifest\" data-cite-path=\"/\" data-cite-frag=\"dfn-processing-a-manifest\" data-type=\"dfn\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processing-a-manifest\" id=\"ref-for-index-term-processing-a-manifest-1\">processing a manifest</a>."
+          "html": "Let <var>json</var> and <var>manifest</var> be the corresponding variables from\n        <a data-link-type=\"dfn|abstract-op\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-processing-a-manifest\" data-type=\"dfn\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processing-a-manifest\" id=\"ref-for-index-term-processing-a-manifest-1\">processing a manifest</a>."
         },
         {
           "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-share-target/#dfn-process-the-share_target-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-share_target-member-1\">Process the <code>share_target</code> member</a> with <var>json</var> and <var>manifest</var>."
@@ -19,7 +19,7 @@
     {
       "name": "process the share_target member",
       "href": "https://w3c.github.io/web-share-target/#dfn-process-the-share_target-member",
-      "html": "To <dfn id=\"dfn-process-the-share_target-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>share_target</code> member</dfn> given <a data-link-type=\"dfn|abstract-op\" data-cite=\"JSON#section-4\" href=\"https://www.rfc-editor.org/rfc/rfc8259#section-4\" id=\"ref-for-index-term-object-type-3\">object</a>\n          <var data-type=\"JSON\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-1\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-share_target-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>share_target</code> member</dfn> given <a data-link-type=\"dfn|abstract-op\" data-cite=\"JSON#section-4\" href=\"https://www.rfc-editor.org/rfc/rfc8259#section-4\" id=\"ref-for-index-term-object-type-3\">object</a>\n          <var data-type=\"JSON\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-1\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -36,13 +36,13 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var data-type=\"URL\">action</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL parser\" data-cite=\"url\" data-cite-path=\"/\" data-cite-frag=\"concept-url-parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-1\">parsing</a>\n              <var>share target</var>[\"action\"] relative to the <var>manifest URL</var> and with\n              no encoding override. If the result is failure, return."
+              "html": "Let <var data-type=\"URL\">action</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-1\">parsing</a>\n              <var>share target</var>[\"action\"] relative to the <var>manifest URL</var> and with\n              no encoding override. If the result is failure, return."
             },
             {
-              "html": "If <var data-type=\"URL\">action</var> is not <a data-link-type=\"dfn|abstract-op\" data-link-for=\"URL\" data-xref-for=\"URL\" data-cite=\"appmanifest\" data-cite-path=\"/\" data-cite-frag=\"dfn-within-scope\" data-type=\"dfn\" href=\"https://www.w3.org/TR/appmanifest/#dfn-within-scope\" id=\"ref-for-index-term-within-scope-for-url-1\">within scope</a> of the\n              <var data-type=\"ordered map\">manifest</var>[\"scope\"], return."
+              "html": "If <var data-type=\"URL\">action</var> is not <a data-link-type=\"dfn|abstract-op\" data-link-for=\"URL\" data-xref-for=\"URL\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-within-scope\" data-type=\"dfn\" href=\"https://www.w3.org/TR/appmanifest/#dfn-within-scope\" id=\"ref-for-index-term-within-scope-for-url-1\">within scope</a> of the\n              <var data-type=\"ordered map\">manifest</var>[\"scope\"], return."
             },
             {
-              "html": "If the <a data-link-type=\"dfn|abstract-op\" data-link-for=\"url\" data-xref-for=\"url\" data-cite=\"url\" data-cite-path=\"/\" data-cite-frag=\"concept-url-origin\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-index-term-origin-for-url-1\">origin</a> of <var data-type=\"URL\">action</var> is not a <a data-link-type=\"dfn|abstract-op\" data-cite=\"secure-contexts\" data-cite-path=\"/\" data-cite-frag=\"potentially-trustworthy-origin\" data-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-index-term-potentially-trustworthy-origin-1\">potentially trustworthy origin</a>, return."
+              "html": "If the <a data-link-type=\"dfn|abstract-op\" data-link-for=\"url\" data-xref-for=\"url\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-origin\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-index-term-origin-for-url-1\">origin</a> of <var data-type=\"URL\">action</var> is not a <a data-link-type=\"dfn|abstract-op\" data-cite=\"secure-contexts\" data-cite-path=\"\" data-cite-frag=\"potentially-trustworthy-origin\" data-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-index-term-potentially-trustworthy-origin-1\">potentially trustworthy origin</a>, return."
             }
           ]
         },
@@ -54,10 +54,10 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var data-type=\"object\">target</var>[\"method\"] is neither an <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ascii-case-insensitive\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-index-term-ascii-case-insensitive-1\">ASCII case-insensitive</a> match for the strings <code>\"GET\"</code> nor <code>\"POST\"</code>,\n              return."
+              "html": "If <var data-type=\"object\">target</var>[\"method\"] is neither an <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ascii-case-insensitive\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-index-term-ascii-case-insensitive-1\">ASCII case-insensitive</a> match for the strings <code>\"GET\"</code> nor <code>\"POST\"</code>,\n              return."
             },
             {
-              "html": "Set <var data-type=\"string\">method</var> to <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ascii-uppercase\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-uppercase\" id=\"ref-for-index-term-ascii-uppercase-1\">ASCII uppercase</a> <var data-type=\"object\">target</var>[\"method\"]."
+              "html": "Set <var data-type=\"string\">method</var> to <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ascii-uppercase\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-uppercase\" id=\"ref-for-index-term-ascii-uppercase-1\">ASCII uppercase</a> <var data-type=\"object\">target</var>[\"method\"]."
             }
           ]
         },
@@ -69,22 +69,22 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var data-type=\"object\">target</var>[\"enctype\"] is neither an <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ascii-case-insensitive\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-index-term-ascii-case-insensitive-2\">ASCII case-insensitive</a> match for the strings\n              <code>\"application/x-www-form-urlencoded\"</code> nor\n              <code>\"multipart/form-data\"</code>, return."
+              "html": "If <var data-type=\"object\">target</var>[\"enctype\"] is neither an <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ascii-case-insensitive\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-index-term-ascii-case-insensitive-2\">ASCII case-insensitive</a> match for the strings\n              <code>\"application/x-www-form-urlencoded\"</code> nor\n              <code>\"multipart/form-data\"</code>, return."
             },
             {
-              "html": "Set <var data-type=\"string\">enctype</var> to <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ascii-lowercase\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-index-term-ascii-lowercase-1\">ASCII lowercase</a> <var data-type=\"object\">target</var>[\"enctype\"]."
+              "html": "Set <var data-type=\"string\">enctype</var> to <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ascii-lowercase\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-index-term-ascii-lowercase-1\">ASCII lowercase</a> <var data-type=\"object\">target</var>[\"enctype\"]."
             }
           ]
         },
         {
-          "html": "Let <var data-type=\"ordered map\">params</var> be a new <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-2\">ordered map</a>."
+          "html": "Let <var data-type=\"ordered map\">params</var> be a new <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-2\">ordered map</a>."
         },
         {
           "html": "Process <a data-link-type=\"dfn|abstract-op\" data-link-for=\"ShareTarget\" data-xref-for=\"ShareTarget\" href=\"https://w3c.github.io/web-share-target/#dfn-params\" class=\"internalDFN\" id=\"ref-for-dfn-params-2\"><code>params</code></a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"List\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-1\">For each</a> <var data-type=\"string\">member</var> of « \"title\", \"text\", \"url\"\n              »:",
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"List\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-1\">For each</a> <var data-type=\"string\">member</var> of « \"title\", \"text\", \"url\"\n              »:",
               "rationale": "if",
               "steps": [
                 {
@@ -101,22 +101,22 @@
           ]
         },
         {
-          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"share_target\"] to <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-3\">ordered map</a> «[<br>\n            \"action\" → <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL serializer\" data-cite=\"url\" data-cite-path=\"/\" data-cite-frag=\"concept-url-serializer\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-index-term-url-serializer-1\">serialize</a> <var data-type=\"URL\">action</var>,<br>\n            \"enctype\" → <var data-type=\"string\">enctype</var>,<br>\n            \"method\" → <var data-type=\"string\">method</var>,<br>\n            \"params\" → <var data-type=\"ordered map\">params</var>,<br>\n            ]»."
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"share_target\"] to <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-3\">ordered map</a> «[<br>\n            \"action\" → <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL serializer\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-serializer\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-index-term-url-serializer-1\">serialize</a> <var data-type=\"URL\">action</var>,<br>\n            \"enctype\" → <var data-type=\"string\">enctype</var>,<br>\n            \"method\" → <var data-type=\"string\">method</var>,<br>\n            \"params\" → <var data-type=\"ordered map\">params</var>,<br>\n            ]»."
         }
       ]
     },
     {
-      "html": "When <a href=\"https://w3c.github.io/web-share-target/#dfn-web-share-target\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-web-share-target-11\">web share target</a> having <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-4\">ordered map</a> <var>manifest</var> is\n          <a href=\"https://w3c.github.io/web-share-target/#dfn-invoke\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invoke-3\">invoked</a> with <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"ShareData\" data-cite=\"web-share\" data-cite-path=\"/\" data-cite-frag=\"dom-sharedata\" data-type=\"dictionary\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata\" id=\"ref-for-index-term-sharedata-8\"><code>ShareData</code></a> <var>data</var>, run the following steps:",
+      "html": "When <a href=\"https://w3c.github.io/web-share-target/#dfn-web-share-target\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-web-share-target-11\">web share target</a> having <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-4\">ordered map</a> <var>manifest</var> is\n          <a href=\"https://w3c.github.io/web-share-target/#dfn-invoke\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invoke-3\">invoked</a> with <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"ShareData\" data-cite=\"web-share\" data-cite-path=\"\" data-cite-frag=\"dom-sharedata\" data-type=\"dictionary\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata\" id=\"ref-for-index-term-sharedata-8\"><code>ShareData</code></a> <var>data</var>, run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"URL\">url</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL parser\" data-cite=\"url\" data-cite-path=\"/\" data-cite-frag=\"concept-url-parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-2\">parsing</a>\n          <var>manifest</var>[\"share_target\"][\"action\"]."
+          "html": "Let <var data-type=\"URL\">url</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-index-term-url-parser-2\">parsing</a>\n          <var>manifest</var>[\"share_target\"][\"action\"]."
         },
         {
-          "html": "Let <var data-type=\"list\">entries</var> be a new empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-index-term-list-1\">list</a>."
+          "html": "Let <var data-type=\"list\">entries</var> be a new empty <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-index-term-list-1\">list</a>."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"List\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-2\">For each</a> <var data-type=\"string\">member</var> of « \"title\", \"text\", \"url\" »:",
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"List\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-2\">For each</a> <var data-type=\"string\">member</var> of « \"title\", \"text\", \"url\" »:",
           "rationale": "let",
           "steps": [
             {
@@ -132,12 +132,12 @@
               "html": "Let <var data-type=\"string\">value</var> be <a data-cite=\"ecma262#sec-tostring\" class=\"respec-offending-element\" title=\"Couldn't find a match for &quot;ecma262#sec-tostring&quot;\" id=\"respec-offender-couldn-t-find-a-match-for-ecma262-sec-tostring\">ToString</a>(<var>data</var>[<var data-type=\"string\">member</var>])."
             },
             {
-              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"List\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"list-append\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-index-term-append-for-list-1\">Append</a> <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"/\" data-cite-frag=\"tuple\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-index-term-tuple-1\">tuple</a> (<var data-type=\"string\">name</var>, <var data-type=\"string\">value</var>) to <var>entry list</var>."
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"List\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-index-term-append-for-list-1\">Append</a> <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"tuple\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-index-term-tuple-1\">tuple</a> (<var data-type=\"string\">name</var>, <var data-type=\"string\">value</var>) to <var>entry list</var>."
             }
           ]
         },
         {
-          "html": "Let <var>header list</var> be a newly created <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Headers\" data-xref-for=\"Headers\" data-cite=\"fetch\" data-cite-path=\"/\" data-cite-frag=\"concept-headers-header-list\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-headers-header-list\" id=\"ref-for-index-term-header-list-for-headers-1\">header list</a>."
+          "html": "Let <var>header list</var> be a newly created <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Headers\" data-xref-for=\"Headers\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-headers-header-list\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-headers-header-list\" id=\"ref-for-index-term-header-list-for-headers-1\">header list</a>."
         },
         {
           "html": "Let <var data-type=\"string\">method</var> be <var>manifest</var>[\"share_target\"][\"method\"]."
@@ -150,10 +150,10 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>query</var> be the result of running the <a data-link-type=\"dfn|abstract-op\" data-cite=\"url\" data-cite-path=\"/\" data-cite-frag=\"concept-urlencoded-serializer\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlencoded-serializer\" id=\"ref-for-index-term-urlencoded-serializer-1\">urlencoded serializer</a> with <var data-type=\"list\">entries</var> and no encoding override."
+              "html": "Let <var>query</var> be the result of running the <a data-link-type=\"dfn|abstract-op\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-urlencoded-serializer\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlencoded-serializer\" id=\"ref-for-index-term-urlencoded-serializer-1\">urlencoded serializer</a> with <var data-type=\"list\">entries</var> and no encoding override."
             },
             {
-              "html": "Set <var data-type=\"URL\">url</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"url\" data-xref-for=\"URL\" data-cite=\"url\" data-cite-path=\"/\" data-cite-frag=\"concept-url-query\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-index-term-query-for-url-1\">query</a> component to <var>query</var>."
+              "html": "Set <var data-type=\"URL\">url</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"url\" data-xref-for=\"URL\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-query\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-index-term-query-for-url-1\">query</a> component to <var>query</var>."
             },
             {
               "html": "Let <var>body</var> be null."
@@ -165,13 +165,13 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var data-type=\"string\">body</var> be the result of running the <a data-link-type=\"dfn|abstract-op\" data-cite=\"url\" data-cite-path=\"/\" data-cite-frag=\"concept-urlencoded-serializer\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlencoded-serializer\" id=\"ref-for-index-term-urlencoded-serializer-2\">urlencoded serializer</a> with <var data-type=\"list\">entries</var> and no encoding override."
+              "html": "Let <var data-type=\"string\">body</var> be the result of running the <a data-link-type=\"dfn|abstract-op\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-urlencoded-serializer\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlencoded-serializer\" id=\"ref-for-index-term-urlencoded-serializer-2\">urlencoded serializer</a> with <var data-type=\"list\">entries</var> and no encoding override."
             },
             {
-              "html": "Set <var data-type=\"string\">body</var> to the result of <a data-link-type=\"dfn|abstract-op\" data-cite=\"encoding\" data-cite-path=\"/\" data-cite-frag=\"utf-8-encode\" data-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-index-term-utf-8-encode-1\">UTF-8 encode</a> <var data-type=\"string\">body</var>."
+              "html": "Set <var data-type=\"string\">body</var> to the result of <a data-link-type=\"dfn|abstract-op\" data-cite=\"encoding\" data-cite-path=\"\" data-cite-frag=\"utf-8-encode\" data-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-index-term-utf-8-encode-1\">UTF-8 encode</a> <var data-type=\"string\">body</var>."
             },
             {
-              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"header list\" data-xref-for=\"header list\" data-cite=\"fetch\" data-cite-path=\"/\" data-cite-frag=\"concept-header-list-append\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-index-term-append-for-header-list-1\">Append</a>\n              <code>\"Content-Type\"</code>/<code>\"application/x-www-form-urlencoded\"</code> to <var>header\n              list</var>."
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"header list\" data-xref-for=\"header list\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-header-list-append\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-index-term-append-for-header-list-1\">Append</a>\n              <code>\"Content-Type\"</code>/<code>\"application/x-www-form-urlencoded\"</code> to <var>header\n              list</var>."
             }
           ]
         },
@@ -180,13 +180,13 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var data-type=\"string\">body</var> be the result of running the\n              <a data-cite=\"html\" data-cite-path=\"/form-control-infrastructure.html\" data-cite-frag=\"multipart%2Fform-data-encoding-algorithm\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#multipart%2Fform-data-encoding-algorithm\" id=\"ref-for-index-term-multipart-form-data-encoding-algorithm-1\">multipart/form-data encoding algorithm</a> with <var data-type=\"list\">entries</var> and\n              the <a data-link-type=\"dfn|abstract-op\" data-cite=\"encoding\" data-cite-path=\"/\" data-cite-frag=\"utf-8\" data-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-index-term-utf-8-1\">UTF-8</a> encoding."
+              "html": "Let <var data-type=\"string\">body</var> be the result of running the\n              <a data-cite=\"html\" data-cite-path=\"/form-control-infrastructure.html\" data-cite-frag=\"multipart%2Fform-data-encoding-algorithm\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#multipart%2Fform-data-encoding-algorithm\" id=\"ref-for-index-term-multipart-form-data-encoding-algorithm-1\">multipart/form-data encoding algorithm</a> with <var data-type=\"list\">entries</var> and\n              the <a data-link-type=\"dfn|abstract-op\" data-cite=\"encoding\" data-cite-path=\"\" data-cite-frag=\"utf-8\" data-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-index-term-utf-8-1\">UTF-8</a> encoding."
             },
             {
               "html": "Let <var data-type=\"string\">MIME type</var> be the concatenation of the string\n              <code>\"multipart/form-data;\"</code>, a U+0020 SPACE character, the string\n              <code>\"boundary=\"</code>, and the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/form-control-infrastructure.html\" data-cite-frag=\"multipart%2Fform-data-boundary-string\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#multipart%2Fform-data-boundary-string\" id=\"ref-for-index-term-multipart-form-data-boundary-string-1\"><code>multipart/form-data</code> boundary string</a>\n              generated by the <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/form-control-infrastructure.html\" data-cite-frag=\"multipart%2Fform-data-encoding-algorithm\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#multipart%2Fform-data-encoding-algorithm\" id=\"ref-for-index-term-multipart-form-data-encoding-algorithm-2\"><code>multipart/form-data</code> encoding algorithm</a>."
             },
             {
-              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"header list\" data-xref-for=\"header list\" data-cite=\"fetch\" data-cite-path=\"/\" data-cite-frag=\"concept-header-list-append\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-index-term-append-for-header-list-2\">Append</a> <code>\"Content-Type\"</code>/<var data-type=\"string\">MIME type</var> to\n              <var>header list</var>."
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"header list\" data-xref-for=\"header list\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-header-list-append\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-index-term-append-for-header-list-2\">Append</a> <code>\"Content-Type\"</code>/<var data-type=\"string\">MIME type</var> to\n              <var>header list</var>."
             }
           ]
         },
@@ -194,7 +194,7 @@
           "html": "Let <var>browsing context</var> be the result of creating a\n            <a data-cite=\"HTML#creating-a-new-browsing-context\" href=\"https://html.spec.whatwg.org/multipage/#creating-a-new-browsing-context\" id=\"ref-for-index-term-new-1\">new</a>\n            <a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-browsing-context\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-index-term-top-level-browsing-context-1\">top-level browsing context</a>."
         },
         {
-          "html": "Let <var data-type=\"Request\">request</var> be a new <a data-link-type=\"dfn|abstract-op\" data-cite=\"fetch\" data-cite-path=\"/\" data-cite-frag=\"concept-request\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-index-term-request-2\">Request</a> whose method is\n          <var data-type=\"string\">method</var>, url is <var data-type=\"URL\">url</var>, header list is <var>header list</var>, and body is\n          <var data-type=\"string\">body</var>."
+          "html": "Let <var data-type=\"Request\">request</var> be a new <a data-link-type=\"dfn|abstract-op\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-request\" data-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-index-term-request-2\">Request</a> whose method is\n          <var data-type=\"string\">method</var>, url is <var data-type=\"URL\">url</var>, header list is <var>header list</var>, and body is\n          <var data-type=\"string\">body</var>."
         },
         {
           "html": "<a data-link-type=\"dfn|abstract-op\" data-cite=\"html\" data-cite-path=\"/browsing-the-web.html\" data-cite-frag=\"navigate\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-index-term-navigate-1\">Navigate</a> <var>browsing context</var> to |request =|"
