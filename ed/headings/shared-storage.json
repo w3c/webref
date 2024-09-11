@@ -78,8 +78,8 @@
       "number": "2.2.3"
     },
     {
-      "id": "shared-storage-cross-origin-worklet-allowed",
-      "href": "https://wicg.github.io/shared-storage/#shared-storage-cross-origin-worklet-allowed",
+      "id": "worklet-allowed-header",
+      "href": "https://wicg.github.io/shared-storage/#worklet-allowed-header",
       "level": 4,
       "title": "The `Shared-Storage-Cross-Origin-Worklet-Allowed` HTTP response header",
       "number": "2.2.4"
@@ -141,11 +141,32 @@
       "number": "2.6.1"
     },
     {
-      "id": "report-budget",
-      "href": "https://wicg.github.io/shared-storage/#report-budget",
+      "id": "top-budgets",
+      "href": "https://wicg.github.io/shared-storage/#top-budgets",
       "level": 4,
-      "title": "Reporting Entropy Budget",
+      "title": "Top-Level Traversable Entropy Budgets",
       "number": "2.6.2"
+    },
+    {
+      "id": "patch-trav-nav",
+      "href": "https://wicg.github.io/shared-storage/#patch-trav-nav",
+      "level": 5,
+      "title": "Monkey patch for Traversable Navigables",
+      "number": "2.6.2.1"
+    },
+    {
+      "id": "patch-navigables",
+      "href": "https://wicg.github.io/shared-storage/#patch-navigables",
+      "level": 5,
+      "title": "Monkey patch for Navigables",
+      "number": "2.6.2.2"
+    },
+    {
+      "id": "charge-top-trav-budgets",
+      "href": "https://wicg.github.io/shared-storage/#charge-top-trav-budgets",
+      "level": 5,
+      "title": "Charging the Top-Level Traversable Entropy Budgets",
+      "number": "2.6.2.3"
     },
     {
       "id": "backend",
@@ -316,18 +337,32 @@
       "number": "8.3"
     },
     {
-      "id": "request-header",
-      "href": "https://wicg.github.io/shared-storage/#request-header",
+      "id": "data-origin-request-header",
+      "href": "https://wicg.github.io/shared-storage/#data-origin-request-header",
       "level": 4,
-      "title": "`Sec-Shared-Storage-Writable` Request Header",
+      "title": "`Sec-Shared-Storage-Data-Origin` Request Header",
       "number": "8.3.1"
     },
     {
-      "id": "response-header",
-      "href": "https://wicg.github.io/shared-storage/#response-header",
+      "id": "cross-origin-response-header",
+      "href": "https://wicg.github.io/shared-storage/#cross-origin-response-header",
+      "level": 4,
+      "title": "`Shared-Storage-Cross-Origin-Worklet-Allowed` Response Header",
+      "number": "8.3.2"
+    },
+    {
+      "id": "writable-request-header",
+      "href": "https://wicg.github.io/shared-storage/#writable-request-header",
+      "level": 4,
+      "title": "`Sec-Shared-Storage-Writable` Request Header",
+      "number": "8.3.3"
+    },
+    {
+      "id": "write-response-header",
+      "href": "https://wicg.github.io/shared-storage/#write-response-header",
       "level": 4,
       "title": "`Shared-Storage-Write` Response Header",
-      "number": "8.3.2"
+      "number": "8.3.4"
     },
     {
       "id": "ss-fetch-algo",

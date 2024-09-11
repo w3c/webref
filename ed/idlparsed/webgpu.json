@@ -6056,7 +6056,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpupipelinebase"
       },
       "GPUProgrammableStage": {
-        "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    USVString entryPoint;\n    record<USVString, GPUPipelineConstantValue> constants;\n};",
+        "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    USVString entryPoint;\n    record<USVString, GPUPipelineConstantValue> constants = {};\n};",
         "type": "dictionary",
         "name": "GPUProgrammableStage",
         "inheritance": null,
@@ -6122,7 +6122,9 @@
                 }
               ]
             },
-            "default": null,
+            "default": {
+              "type": "dictionary"
+            },
             "required": false,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablestage-constants"
           }

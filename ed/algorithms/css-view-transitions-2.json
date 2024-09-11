@@ -97,6 +97,16 @@
       ]
     },
     {
+      "name": "visibility change step additions",
+      "html": "The next steps are appended to the tasks <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#view-transition-page-visibility-change-steps\" id=\"ref-for-view-transition-page-visibility-change-steps\">view transition page-visibility change steps</a> given <var>document</var>, after the current steps in the queued task:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#document-inbound-view-transition-params\" id=\"ref-for-document-inbound-view-transition-params\">inbound view transition params</a> to null.</p>"
+        }
+      ]
+    },
+    {
       "name": "resolve @view-transition rule",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#resolve-view-transition-rule",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"resolve-view-transition-rule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">resolve @view-transition rule</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①④\">Document</a></code> <var>document</var>:",
@@ -192,7 +202,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>newDocument</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#document-inbound-view-transition-params\" id=\"ref-for-document-inbound-view-transition-params\">inbound view transition params</a> to <var>params</var>.</p>"
+              "html": "<p>Set <var>newDocument</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#document-inbound-view-transition-params\" id=\"ref-for-document-inbound-view-transition-params①\">inbound view transition params</a> to <var>params</var>.</p>"
             },
             {
               "html": "<p>Call <var>proceedWithNavigation</var>.</p>"
@@ -284,13 +294,13 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#update-the-opt-in-state-for-outbound-transitions\" id=\"ref-for-update-the-opt-in-state-for-outbound-transitions①\">Update the opt-in state for outbound transitions</a> for <var>document</var>.</p>"
         },
         {
-          "html": "<p>Let <var>inboundViewTransitionParams</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#document-inbound-view-transition-params\" id=\"ref-for-document-inbound-view-transition-params①\">inbound view transition params</a>.</p>"
+          "html": "<p>Let <var>inboundViewTransitionParams</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#document-inbound-view-transition-params\" id=\"ref-for-document-inbound-view-transition-params②\">inbound view transition params</a>.</p>"
         },
         {
           "html": "<p>If <var>inboundViewTransitionParams</var> is null, then return null.</p>"
         },
         {
-          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#document-inbound-view-transition-params\" id=\"ref-for-document-inbound-view-transition-params②\">inbound view transition params</a> to null.</p>"
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-2/#document-inbound-view-transition-params\" id=\"ref-for-document-inbound-view-transition-params③\">inbound view transition params</a> to null.</p>"
         },
         {
           "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition\" id=\"ref-for-document-active-view-transition①④\">active view transition</a> is not null, then return null.</p>"
