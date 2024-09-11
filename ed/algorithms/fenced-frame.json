@@ -1661,6 +1661,16 @@
       ]
     },
     {
+      "name": "declared-origin-patch",
+      "html": "Modify the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy#declared-origin\" id=\"ref-for-declared-origin\">declared origin</a> algorithm. Add a new step after step 3 that reads:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑧\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"ref-for-concept-document-bc③\">browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#browsing-context-fenced-frame-config-instance\" id=\"ref-for-browsing-context-fenced-frame-config-instance①⑧\">fenced\n frame config instance</a> is not null, then return <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑨\">node document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"ref-for-concept-document-bc④\">browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#browsing-context-fenced-frame-config-instance\" id=\"ref-for-browsing-context-fenced-frame-config-instance①⑨\">fenced frame config instance</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-config-instance-mapped-url\" id=\"ref-for-fenced-frame-config-instance-mapped-url⑧\">mapped url</a>.</p>"
+        }
+      ]
+    },
+    {
       "name": "scroll-target-into-view",
       "html": "Modify the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-a-target-into-view\" id=\"ref-for-scroll-a-target-into-view②\">scroll a target into view</a> algorithm to add a step at the end of the algorithm that\n  reads:",
       "rationale": ".algorithm",
