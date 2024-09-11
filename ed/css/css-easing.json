@@ -9,18 +9,15 @@
   "values": [
     {
       "name": "<easing-function>",
-      "value": "linear | <linear-easing-function> | <cubic-bezier-easing-function> | <step-easing-function>",
+      "value": "<linear-easing-function> | <cubic-bezier-easing-function> | <step-easing-function>",
       "href": "https://drafts.csswg.org/css-easing-2/#typedef-easing-function",
+      "type": "type"
+    },
+    {
+      "name": "<linear-easing-function>",
+      "href": "https://drafts.csswg.org/css-easing-2/#typedef-linear-easing-function",
       "type": "type",
-      "values": [
-        {
-          "name": "linear",
-          "prose": "The linear keyword produces an identity linear easing function whose output progress value is equal to the input progress value for all inputs.",
-          "href": "https://drafts.csswg.org/css-easing-2/#valdef-easing-function-linear",
-          "type": "value",
-          "value": "linear"
-        }
-      ]
+      "value": "linear | <linear()>"
     },
     {
       "name": "linear()",

@@ -100,6 +100,7 @@
       },
       "https://drafts.csswg.org/css-grid-2/": {
         "anchors": [
+          "order-accessibility",
           "track-sizing",
           "subgrids",
           "algo-track-sizing",
@@ -247,6 +248,11 @@
           "computed"
         ]
       },
+      "https://www.w3.org/TR/css-flexbox-1/": {
+        "anchors": [
+          "order-accessibility"
+        ]
+      },
       "https://www.w3.org/TR/css-grid-2/": {
         "anchors": [
           "grid-auto-flow-property",
@@ -318,6 +324,8 @@
         "anchors": [
           "propdef-display",
           "blockify",
+          "propdef-order",
+          "propdef-reading-flow",
           "block-level",
           "flow-layout",
           "inline-level",
@@ -335,13 +343,17 @@
           "grid-layout",
           "grid-item",
           "grid-container",
+          "grid-track",
+          "definite-grid-position",
           "propdef-grid-template-columns",
           "propdef-grid-template-rows",
           "valdef-grid-template-rows-none",
+          "grid-item-placement-algorithm",
           "explicit-grid",
           "implicit-grid",
           "propdef-grid-auto-rows",
           "propdef-grid-auto-columns",
+          "computed-track-list",
           "valdef-grid-template-columns-auto",
           "propdef-grid-template-areas",
           "subgrid",
@@ -351,7 +363,6 @@
           "valdef-grid-template-areas-none",
           "valdef-repeat-auto-fit",
           "automatic-grid-position",
-          "definite-grid-position",
           "grid-placement-property",
           "propdef-grid-column-start",
           "propdef-grid-column-end",
@@ -394,8 +405,12 @@
           "block-end",
           "inline-start",
           "inline-end",
-          "writing-mode",
-          "css-start"
+          "writing-mode"
+        ]
+      },
+      "https://www.w3.org/TR/css-grid-2/": {
+        "anchors": [
+          "collapsed-track"
         ]
       }
     }

@@ -7,104 +7,97 @@
     {
       "name": "linear() canonicalization",
       "href": "https://drafts.csswg.org/css-easing-2/#linear-canonicalization",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"linear() canonicalization|canonicalize a linear()\" id=\"linear-canonicalization\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a linear()</dfn> function’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-easing-function-control-point\" id=\"ref-for-linear-easing-function-control-point③\">control points</a>,\n  perform the following: \n    \n    <p>After canonicalization,\n  every <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-easing-function-control-point\" id=\"ref-for-linear-easing-function-control-point①②\">control point</a> has an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value①⑥\">input progress value</a>,\n  and the <span id=\"ref-for-input-progress-value①⑦\">input progress values</span> are monotonically non-decreasing\n  along the list.</p>",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"linear() canonicalization|canonicalize a linear()\" id=\"linear-canonicalization\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize a linear()</dfn> function’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point④\">control points</a>,\n  perform the following: \n    \n    <p>After canonicalization,\n  every <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point①③\">control point</a> has an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value①⑥\">input progress value</a>,\n  and the <span id=\"ref-for-input-progress-value①⑦\">input progress values</span> are monotonically non-decreasing\n  along the list.</p>",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If the first <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-easing-function-control-point\" id=\"ref-for-linear-easing-function-control-point④\">control point</a> lacks an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value⑤\">input progress value</a>,\nset its <span id=\"ref-for-input-progress-value⑥\">input progress value</span> to 0.</p>"
+          "html": "<p>If the first <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point⑤\">control point</a> lacks an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value⑤\">input progress value</a>,\nset its <span id=\"ref-for-input-progress-value⑥\">input progress value</span> to 0.</p>"
         },
         {
-          "html": "<p>If the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-easing-function-control-point\" id=\"ref-for-linear-easing-function-control-point⑤\">control point</a> lacks an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value⑦\">input progress value</a>,\nset its <span id=\"ref-for-input-progress-value⑧\">input progress value</span> to 1.</p>"
+          "html": "<p>If the last <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point⑥\">control point</a> lacks an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value⑦\">input progress value</a>,\nset its <span id=\"ref-for-input-progress-value⑧\">input progress value</span> to 1.</p>"
         },
         {
-          "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-easing-function-control-point\" id=\"ref-for-linear-easing-function-control-point⑥\">control point</a> has an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value⑨\">input progress value</a> that is less than the <span id=\"ref-for-input-progress-value①⓪\">input progress value</span> of any preceding <span id=\"ref-for-linear-easing-function-control-point⑦\">control point</span>,\nset its <span id=\"ref-for-input-progress-value①①\">input progress value</span> to the largest <span id=\"ref-for-input-progress-value①②\">input progress value</span> of any preceding <span id=\"ref-for-linear-easing-function-control-point⑧\">control point</span>.</p>"
+          "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point⑦\">control point</a> has an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value⑨\">input progress value</a> that is less than the <span id=\"ref-for-input-progress-value①⓪\">input progress value</span> of any preceding <span id=\"ref-for-linear-control-point⑧\">control point</span>,\nset its <span id=\"ref-for-input-progress-value①①\">input progress value</span> to the largest <span id=\"ref-for-input-progress-value①②\">input progress value</span> of any preceding <span id=\"ref-for-linear-control-point⑨\">control point</span>.</p>"
         },
         {
-          "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-easing-function-control-point\" id=\"ref-for-linear-easing-function-control-point⑨\">control point</a> still lacks an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value①③\">input progress value</a>,\nthen for each contiguous run of such <span id=\"ref-for-linear-easing-function-control-point①⓪\">control points</span>,\nset their <span id=\"ref-for-input-progress-value①④\">input progress values</span> so that they are evenly spaced\nbetween the preceding and following <span id=\"ref-for-linear-easing-function-control-point①①\">control points</span> with <span id=\"ref-for-input-progress-value①⑤\">input progress values</span>.</p>"
+          "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point①⓪\">control point</a> still lacks an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value①③\">input progress value</a>,\nthen for each contiguous run of such <span id=\"ref-for-linear-control-point①①\">control points</span>,\nset their <span id=\"ref-for-input-progress-value①④\">input progress values</span> so that they are evenly spaced\nbetween the preceding and following <span id=\"ref-for-linear-control-point①②\">control points</span> with <span id=\"ref-for-input-progress-value①⑤\">input progress values</span>.</p>"
         }
       ]
     },
     {
-      "name": "linear easing function",
-      "href": "https://drafts.csswg.org/css-easing-2/#linear-easing-function-serialized-computed-value",
-      "html": "To get a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-easing-function\" id=\"ref-for-linear-easing-function①\">linear easing function</a>'s (<var>linearEasingFunction</var>) <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"linear easing function\" data-dfn-type=\"dfn\" data-export=\"\" id=\"linear-easing-function-serialized-computed-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialized computed value</dfn>,\nperform the following.\nIt returns a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a>.",
+      "name": "serialize a linear() function",
+      "href": "https://drafts.csswg.org/css-easing-2/#serialize-a-linear-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-linear-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a linear() function</dfn>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>output</var> be \"<code>linear(</code>\".</p>"
+          "html": "<p>Let <var>s</var> be the string \"linear(\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>point</var> in <var>linearEasingFunction</var>’s <a data-link-type=\"dfn\">points</a>:",
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#serialize-a-linear-control-point\" id=\"ref-for-serialize-a-linear-control-point\">Serialize each control point</a> of the function, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate\">concatenate</a> the results using the separator \", \",\nand append the result to <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Append \")\" to <var>s</var>,\nand return it.</p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a linear() control point",
+      "href": "https://drafts.csswg.org/css-easing-2/#serialize-a-linear-control-point",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-linear-control-point\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a linear() control point</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>s</var> be the serialization,\nas a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value③\">&lt;number&gt;</a>,\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point①⑤\">control point’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value④\">output progress value</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point①⑥\">control point</a> originally lacked an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value①⑨\">input progress value</a>,\nreturn <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, append \" \" (U+0020 SPACE) to <var>s</var>,\nthen serialize the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point①⑦\">control point’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value⑤\">output progress value</a> as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#percentage-value\" id=\"ref-for-percentage-value⑤\">&lt;percentage&gt;</a> and append it to <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>s</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "calculate linear easing output progress",
+      "href": "https://drafts.csswg.org/css-easing-2/#calculate-linear-easing-output-progress",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"calculate-linear-easing-output-progress\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate linear easing output progress</dfn> for a given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-easing-function\" id=\"ref-for-linear-easing-function②\">linear easing function</a> <var>func</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value②②\">input progress value</a> <var>inputProgress</var>,\n  perform the following.\n  It returns an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value⑥\">output progress value</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>points</var> be <var>func</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point②⓪\">control points</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>points</var> holds only a single item,\nreturn the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value⑦\">output progress value</a> of that item.</p>"
+        },
+        {
+          "html": "<p>If at least one of <var>points</var> has an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value②③\">input progress value</a> matching <var>inputProgress</var>,\nreturn the largest <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value⑧\">output progress value</a> from among them.</p>"
+        },
+        {
+          "html": "Otherwise, find two <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point②①\">control points</a>, <var>A</var> and <var>B</var>,\nwhich will be used for interpolation:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>point</var> is not the first <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a> of <var>linearEasingFunction</var>’s <a data-link-type=\"dfn\">points</a>,\n    append \"<code>, </code>\" to <var>output</var>.</p>"
+              "html": "<p>If <var>inputProgress</var> is smaller\nthan any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value②④\">input progress value</a> in <var>points</var>,\nlet <var>A</var> and <var>B</var> be the first two items in <var>points</var>.\nIf <var>A</var> and <var>B</var> have the same <span id=\"ref-for-input-progress-value②⑤\">input progress value</span>,\nreturn <var>A</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value⑨\">output progress value</a>.</p>"
             },
             {
-              "html": "<p>Append the computed value of <var>point</var>’s <a data-link-type=\"dfn\">output</a>,\n    as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value③\">&lt;number&gt;</a>,\n    to <var>output</var>.</p>"
+              "html": "<p>Otherwise, if <var>inputProgress</var> is larger\nthan any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value②⑥\">input progress value</a> in <var>points</var>,\nlet <var>A</var> and <var>B</var> be the last two items in <var>points</var>.\nIf <var>A</var> and <var>B</var> have the same <span id=\"ref-for-input-progress-value②⑦\">input progress value</span>,\nreturn <var>B</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value①⓪\">output progress value</a>.</p>"
             },
             {
-              "html": "<p>Append \"<code> </code>\" to <var>output</var>.</p>"
-            },
-            {
-              "html": "<p>Append the computed value of <var>point</var>’s <a data-link-type=\"dfn\">input</a>,\n    as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#percentage-value\" id=\"ref-for-percentage-value④\">&lt;percentage&gt;</a>,\n    to <var>output</var>.</p>"
+              "html": "<p>Otherwise, let <var>A</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point②②\">control point</a> with the largest <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value①①\">output progress value</a> whose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value②⑧\">input progress value</a> is smaller than <var>inputProgress</var>,\nand let <var>B</var> be the <span id=\"ref-for-linear-control-point②③\">control point</span> with the smallest <span id=\"ref-for-output-progress-value①②\">output progress value</span> whose <span id=\"ref-for-input-progress-value②⑨\">input progress value</span> is larger than <var>inputProgress</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Append \"<code>)</code>\" to <var>output</var>.</p>"
-        },
-        {
-          "html": "<p>Return <var>output</var>.</p>"
+          "html": "<p>Linearly interpolate (or extrapolate) <var>inputProgress</var> along the line defined by <var>A</var> and <var>B</var>,\nand return the result.</p>"
         }
       ]
     },
     {
-      "name": "to calculate linear easing output progress",
-      "href": "https://drafts.csswg.org/css-easing-2/#calculate-linear-easing-output-progress",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"calculate-linear-easing-output-progress\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate linear easing output progress</dfn> for a given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-easing-function\" id=\"ref-for-linear-easing-function②\">linear easing function</a> <var>linearEasingFunction</var>,\nand an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value①⑧\">input progress value</a> <var>inputProgress</var>,\nperform the following.\nIt returns an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value④\">output progress value</a>.",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>points</var> be <var>linearEasingFunction</var>’s <a data-link-type=\"dfn\">points</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>pointAIndex</var> be index of the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①\">item</a> in <var>points</var> with an <a data-link-type=\"dfn\">input</a> less than or equal to <var>inputProgress</var>,\n   or 0 if there is no match.</p>"
-        },
-        {
-          "html": "<p>If <var>pointAIndex</var> is equal to <var>points</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> minus 1,\n   decrement <var>pointAIndex</var> by 1.</p>"
-        },
-        {
-          "html": "<p>Let <var>pointA</var> be <var>points</var>[pointAIndex].</p>"
-        },
-        {
-          "html": "<p>Let <var>pointB</var> be <var>points</var>[pointAIndex + 1].</p>"
-        },
-        {
-          "html": "<p>If <var>pointA</var>’s <a data-link-type=\"dfn\">input</a> is equal to <var>pointB</var>’s <span>input</span>,\n   return <var>pointB</var>’s <span>output</span>.</p>"
-        },
-        {
-          "html": "<p>Let <var>progressFromPointA</var> be <var>inputProgress</var> minus <var>pointA</var>’s <a data-link-type=\"dfn\">input</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>pointInputRange</var> be <var>pointB</var>’s <a data-link-type=\"dfn\">input</a> minus <var>pointA</var>’s <span>input</span>.</p>"
-        },
-        {
-          "html": "<p>Let <var>progressBetweenPoints</var> be <var>progressFromPointA</var> divided by <var>pointInputRange</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>pointOutputRange</var> be <var>pointB</var>’s <a data-link-type=\"dfn\">output</a> minus <var>pointA</var>’s <span>output</span>.</p>"
-        },
-        {
-          "html": "<p>Let <var>outputFromLastPoint</var> be <var>progressBetweenPoints</var> multiplied by <var>pointOutputRange</var>.</p>"
-        },
-        {
-          "html": "<p>Return <var>pointA</var>’s <a data-link-type=\"dfn\">output</a> plus <var>outputFromLastPoint</var>.</p>"
-        }
-      ]
-    },
-    {
-      "html": "For <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value②②\">input progress values</a> less than zero,",
+      "html": "For <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value③②\">input progress values</a> less than zero,",
       "rationale": "if",
       "steps": [
         {
@@ -114,12 +107,12 @@
           "html": "<p>Otherwise, if the <var>x</var> value of P2 is greater than\n   zero, use a straight line that passes through P2 and P0 as the tangent.</p>"
         },
         {
-          "html": "<p>Otherwise, let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value⑦\">output progress value</a> be zero for all <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value②③\">input progress values</a> in the range [-∞, 0).</p>"
+          "html": "<p>Otherwise, let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value①④\">output progress value</a> be zero for all <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value③③\">input progress values</a> in the range [-∞, 0).</p>"
         }
       ]
     },
     {
-      "html": "For <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value②④\">input progress values</a> greater than one,",
+      "html": "For <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value③④\">input progress values</a> greater than one,",
       "rationale": "if",
       "steps": [
         {
@@ -129,34 +122,34 @@
           "html": "<p>Otherwise, if the <var>x</var> value of P1 is less than\n   one, use a straight line that passes through P1 and P3 as the tangent.</p>"
         },
         {
-          "html": "<p>Otherwise, let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value⑧\">output progress value</a> be one for all <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value②⑤\">input progress values</a> in the range (1, ∞].</p>"
+          "html": "<p>Otherwise, let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value①⑤\">output progress value</a> be one for all <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value③⑤\">input progress values</a> in the range (1, ∞].</p>"
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value①①\">output progress value</a> is calculated from the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value③②\">input progress value</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#before-flag\" id=\"ref-for-before-flag④\">before flag</a> as follows:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value①⑧\">output progress value</a> is calculated from the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value④②\">input progress value</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#before-flag\" id=\"ref-for-before-flag④\">before flag</a> as follows:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>Calculate the <var>current step</var> as <code>floor(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value③③\">input progress value</a> × <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#steps\" id=\"ref-for-steps\">steps</a>)</code>.</p>"
+          "html": "<p>Calculate the <var>current step</var> as <code>floor(<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value④③\">input progress value</a> × <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#steps\" id=\"ref-for-steps\">steps</a>)</code>.</p>"
         },
         {
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#step-position\" id=\"ref-for-step-position③\">step position</a> property is one of:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><a class=\"css\" data-link-type=\"value\" href=\"https://drafts.csswg.org/css-easing-2/#valdef-steps-jump-start\" id=\"ref-for-valdef-steps-jump-start④\">jump-start</a>,</p>\n      </li><li data-md=\"\">\n       <p><a class=\"css\" data-link-type=\"value\" href=\"https://drafts.csswg.org/css-easing-2/#valdef-steps-jump-both\" id=\"ref-for-valdef-steps-jump-both①\">jump-both</a>,</p>\n     </li></ul>\n     <p>increment <var>current step</var> by one.</p>"
         },
         {
-          "html": "<p>If <em>both</em> of the following conditions are true:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#before-flag\" id=\"ref-for-before-flag⑤\">before flag</a> is set, <em>and</em></p>\n      </li><li data-md=\"\">\n       <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value③④\">input progress value</a> × <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#steps\" id=\"ref-for-steps①\">steps</a> mod 1 equals zero\n   (that is, if <span id=\"ref-for-input-progress-value③⑤\">input progress value</span> × <span id=\"ref-for-steps②\">steps</span> is\n   integral), then</p>\n     </li></ul>\n     <p>decrement <var>current step</var> by one.</p>"
+          "html": "<p>If <em>both</em> of the following conditions are true:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#before-flag\" id=\"ref-for-before-flag⑤\">before flag</a> is set, <em>and</em></p>\n      </li><li data-md=\"\">\n       <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value④④\">input progress value</a> × <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#steps\" id=\"ref-for-steps①\">steps</a> mod 1 equals zero\n   (that is, if <span id=\"ref-for-input-progress-value④⑤\">input progress value</span> × <span id=\"ref-for-steps②\">steps</span> is\n   integral), then</p>\n     </li></ul>\n     <p>decrement <var>current step</var> by one.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value③⑥\">input progress value</a> ≥ 0 and <var>current step</var> &lt; 0,\n   let <var>current step</var> be zero.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value④⑥\">input progress value</a> ≥ 0 and <var>current step</var> &lt; 0,\n   let <var>current step</var> be zero.</p>"
         },
         {
           "html": "<p>Calculate <var>jumps</var> based on the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#step-position\" id=\"ref-for-step-position④\">step position</a> as follows:</p>\n     <dl>\n      <dt data-md=\"\"><a class=\"css\" data-link-type=\"value\" href=\"https://drafts.csswg.org/css-easing-2/#valdef-steps-jump-start\" id=\"ref-for-valdef-steps-jump-start⑤\">jump-start</a> or <a class=\"css\" data-link-type=\"value\" href=\"https://drafts.csswg.org/css-easing-2/#valdef-steps-jump-end\" id=\"ref-for-valdef-steps-jump-end③\">jump-end</a>\n      </dt><dd data-md=\"\">\n       <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#steps\" id=\"ref-for-steps③\">steps</a></p>\n      </dd><dt data-md=\"\"><a class=\"css\" data-link-type=\"value\" href=\"https://drafts.csswg.org/css-easing-2/#valdef-steps-jump-none\" id=\"ref-for-valdef-steps-jump-none②\">jump-none</a>\n      </dt><dd data-md=\"\">\n       <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#steps\" id=\"ref-for-steps④\">steps</a> - 1</p>\n      </dd><dt data-md=\"\"><a class=\"css\" data-link-type=\"value\" href=\"https://drafts.csswg.org/css-easing-2/#valdef-steps-jump-both\" id=\"ref-for-valdef-steps-jump-both②\">jump-both</a>\n      </dt><dd data-md=\"\">\n       <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#steps\" id=\"ref-for-steps⑤\">steps</a> + 1</p>\n     </dd></dl>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value③⑦\">input progress value</a> ≤ 1 and <var>current step</var> &gt; <var>jumps</var>, let <var>current step</var> be <var>jumps</var>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#input-progress-value\" id=\"ref-for-input-progress-value④⑦\">input progress value</a> ≤ 1 and <var>current step</var> &gt; <var>jumps</var>, let <var>current step</var> be <var>jumps</var>.</p>"
         },
         {
-          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value①④\">output progress value</a> is <code><var>current step</var> / <var>jumps</var></code>.</p>"
+          "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#output-progress-value\" id=\"ref-for-output-progress-value②①\">output progress value</a> is <code><var>current step</var> / <var>jumps</var></code>.</p>"
         }
       ]
     },

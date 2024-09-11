@@ -452,25 +452,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "http-headerdef-shared-storage-cross-origin-worklet-allowed",
-      "href": "https://wicg.github.io/shared-storage/#http-headerdef-shared-storage-cross-origin-worklet-allowed",
-      "linkingText": [
-        "Shared-Storage-Cross-Origin-Worklet-Allowed"
-      ],
-      "localLinkingText": [],
-      "type": "http-header",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "shared-storage-cross-origin-worklet-allowed",
-        "href": "https://wicg.github.io/shared-storage/#shared-storage-cross-origin-worklet-allowed",
-        "title": "The `Shared-Storage-Cross-Origin-Worklet-Allowed` HTTP response header",
-        "number": "2.2.4"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "sharedstorage-data-partition-origin",
       "href": "https://wicg.github.io/shared-storage/#sharedstorage-data-partition-origin",
       "linkingText": [
@@ -484,8 +465,8 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "shared-storage-cross-origin-worklet-allowed",
-        "href": "https://wicg.github.io/shared-storage/#shared-storage-cross-origin-worklet-allowed",
+        "id": "worklet-allowed-header",
+        "href": "https://wicg.github.io/shared-storage/#worklet-allowed-header",
         "title": "The `Shared-Storage-Cross-Origin-Worklet-Allowed` HTTP response header",
         "number": "2.2.4"
       },
@@ -883,10 +864,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "calling-site",
-      "href": "https://wicg.github.io/shared-storage/#calling-site",
+      "id": "get-the-default-selecturl-index",
+      "href": "https://wicg.github.io/shared-storage/#get-the-default-selecturl-index",
       "linkingText": [
-        "calling site"
+        "get the default selectURL index"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -894,10 +875,28 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "nav-budget",
-        "href": "https://wicg.github.io/shared-storage/#nav-budget",
-        "title": "Navigation Entropy Budget",
-        "number": "2.6.1"
+        "id": "budgets",
+        "href": "https://wicg.github.io/shared-storage/#budgets",
+        "title": "Entropy Budgets",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "default-selecturl-index",
+      "href": "https://wicg.github.io/shared-storage/#default-selecturl-index",
+      "linkingText": [
+        "default selectURL index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
       },
       "definedIn": "prose"
     },
@@ -913,9 +912,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/shared-storage/#title",
-        "title": "Shared Storage API"
+        "id": "nav-budget",
+        "href": "https://wicg.github.io/shared-storage/#nav-budget",
+        "title": "Navigation Entropy Budget",
+        "number": "2.6.1"
       },
       "definedIn": "prose"
     },
@@ -1070,54 +1070,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "calling-site-remaining-navigation-budget",
-      "href": "https://wicg.github.io/shared-storage/#calling-site-remaining-navigation-budget",
+      "id": "site-remaining-navigation-budget",
+      "href": "https://wicg.github.io/shared-storage/#site-remaining-navigation-budget",
       "linkingText": [
         "remaining navigation budget"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "calling site"
+        "site"
       ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/shared-storage/#title",
-        "title": "Shared Storage API"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "selecturl-input-url-list",
-      "href": "https://wicg.github.io/shared-storage/#selecturl-input-url-list",
-      "linkingText": [
-        "input URL list"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "selectURL"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/shared-storage/#title",
-        "title": "Shared Storage API"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "default-index",
-      "href": "https://wicg.github.io/shared-storage/#default-index",
-      "linkingText": [
-        "default index"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1182,137 +1144,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "shared-storage-navigation-budget-charged",
-      "href": "https://wicg.github.io/shared-storage/#shared-storage-navigation-budget-charged",
-      "linkingText": [
-        "shared storage navigation budget charged"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/shared-storage/#title",
-        "title": "Shared Storage API"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "charge-shared-storage-navigation-budget",
       "href": "https://wicg.github.io/shared-storage/#charge-shared-storage-navigation-budget",
       "linkingText": [
         "charge shared storage navigation budget"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/shared-storage/#title",
-        "title": "Shared Storage API"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "page-load",
-      "href": "https://wicg.github.io/shared-storage/#page-load",
-      "linkingText": [
-        "page load"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "report-budget",
-        "href": "https://wicg.github.io/shared-storage/#report-budget",
-        "title": "Reporting Entropy Budget",
-        "number": "2.6.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "reporting-entropy-allowance",
-      "href": "https://wicg.github.io/shared-storage/#reporting-entropy-allowance",
-      "linkingText": [
-        "reporting entropy allowance"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/shared-storage/#title",
-        "title": "Shared Storage API"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "shared-storage-reporting-budget",
-      "href": "https://wicg.github.io/shared-storage/#shared-storage-reporting-budget",
-      "linkingText": [
-        "shared storage reporting budget"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/shared-storage/#title",
-        "title": "Shared Storage API"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "determine-reporting-budget-to-charge",
-      "href": "https://wicg.github.io/shared-storage/#determine-reporting-budget-to-charge",
-      "linkingText": [
-        "determine reporting budget to charge"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/shared-storage/#title",
-        "title": "Shared Storage API"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "shared-storage-reporting-budget-charged",
-      "href": "https://wicg.github.io/shared-storage/#shared-storage-reporting-budget-charged",
-      "linkingText": [
-        "shared storage reporting budget charged"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/shared-storage/#title",
-        "title": "Shared Storage API"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "charge-shared-storage-reporting-budget",
-      "href": "https://wicg.github.io/shared-storage/#charge-shared-storage-reporting-budget",
-      "linkingText": [
-        "charge shared storage reporting budget"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1341,6 +1176,143 @@
         "id": "title",
         "href": "https://wicg.github.io/shared-storage/#title",
         "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "overall-page-entropy-allowance",
+      "href": "https://wicg.github.io/shared-storage/#overall-page-entropy-allowance",
+      "linkingText": [
+        "overall page entropy allowance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "top-budgets",
+        "href": "https://wicg.github.io/shared-storage/#top-budgets",
+        "title": "Top-Level Traversable Entropy Budgets",
+        "number": "2.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "site-page-entropy-allowance",
+      "href": "https://wicg.github.io/shared-storage/#site-page-entropy-allowance",
+      "linkingText": [
+        "site page entropy allowance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "traversable-navigable-shared-storage-page-budget",
+      "href": "https://wicg.github.io/shared-storage/#traversable-navigable-shared-storage-page-budget",
+      "linkingText": [
+        "shared storage page budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "traversable navigable"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-page-budget-overall-budget",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-page-budget-overall-budget",
+      "linkingText": [
+        "overall budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage page budget"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "shared-storage-page-budget-site-budget-map",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-page-budget-site-budget-map",
+      "linkingText": [
+        "site budget map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage page budget"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "traversable-navigable-page-budget",
+      "href": "https://wicg.github.io/shared-storage/#traversable-navigable-page-budget",
+      "linkingText": [
+        "page budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "traversable navigable"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "patch-trav-nav",
+        "href": "https://wicg.github.io/shared-storage/#patch-trav-nav",
+        "title": "Monkey patch for Traversable Navigables",
+        "number": "2.6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "charge-shared-storage-top-level-traversable-budgets",
+      "href": "https://wicg.github.io/shared-storage/#charge-shared-storage-top-level-traversable-budgets",
+      "linkingText": [
+        "charge shared storage top-level traversable budgets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "charge-top-trav-budgets",
+        "href": "https://wicg.github.io/shared-storage/#charge-top-trav-budgets",
+        "title": "Charging the Top-Level Traversable Entropy Budgets",
+        "number": "2.6.2.3"
       },
       "definedIn": "prose"
     },
@@ -2861,6 +2833,44 @@
       "definedIn": "pre"
     },
     {
+      "id": "http-headerdef-sec-shared-storage-data-origin",
+      "href": "https://wicg.github.io/shared-storage/#http-headerdef-sec-shared-storage-data-origin",
+      "linkingText": [
+        "Sec-Shared-Storage-Data-Origin"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "data-origin-request-header",
+        "href": "https://wicg.github.io/shared-storage/#data-origin-request-header",
+        "title": "`Sec-Shared-Storage-Data-Origin` Request Header",
+        "number": "8.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-shared-storage-cross-origin-worklet-allowed",
+      "href": "https://wicg.github.io/shared-storage/#http-headerdef-shared-storage-cross-origin-worklet-allowed",
+      "linkingText": [
+        "Shared-Storage-Cross-Origin-Worklet-Allowed"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cross-origin-response-header",
+        "href": "https://wicg.github.io/shared-storage/#cross-origin-response-header",
+        "title": "`Shared-Storage-Cross-Origin-Worklet-Allowed` Response Header",
+        "number": "8.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "http-headerdef-sec-shared-storage-writable",
       "href": "https://wicg.github.io/shared-storage/#http-headerdef-sec-shared-storage-writable",
       "linkingText": [
@@ -2872,10 +2882,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "request-header",
-        "href": "https://wicg.github.io/shared-storage/#request-header",
+        "id": "writable-request-header",
+        "href": "https://wicg.github.io/shared-storage/#writable-request-header",
         "title": "`Sec-Shared-Storage-Writable` Request Header",
-        "number": "8.3.1"
+        "number": "8.3.3"
       },
       "definedIn": "prose"
     },
@@ -2891,10 +2901,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "response-header",
-        "href": "https://wicg.github.io/shared-storage/#response-header",
+        "id": "write-response-header",
+        "href": "https://wicg.github.io/shared-storage/#write-response-header",
         "title": "`Shared-Storage-Write` Response Header",
-        "number": "8.3.2"
+        "number": "8.3.4"
       },
       "definedIn": "prose"
     },
