@@ -1,0 +1,412 @@
+{
+  "spec": {
+    "title": "CSS Values and Units Module Level 5",
+    "url": "https://www.w3.org/TR/css-values-5/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/css-values-5/#title",
+      "level": 1,
+      "title": "CSS Values and Units Module Level 5"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/css-values-5/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-values-5/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/css-values-5/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/css-values-5/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "placement",
+      "href": "https://www.w3.org/TR/css-values-5/#placement",
+      "level": 3,
+      "title": "Module Interactions",
+      "number": "1.1"
+    },
+    {
+      "id": "textual-values",
+      "href": "https://www.w3.org/TR/css-values-5/#textual-values",
+      "level": 2,
+      "title": "Textual Data Types",
+      "number": "2"
+    },
+    {
+      "id": "value-defs",
+      "href": "https://www.w3.org/TR/css-values-5/#value-defs",
+      "level": 2,
+      "title": "Value Definition Syntax",
+      "number": "3"
+    },
+    {
+      "id": "component-functions",
+      "href": "https://www.w3.org/TR/css-values-5/#component-functions",
+      "level": 3,
+      "title": "Functional Notation Definitions",
+      "number": "3.1"
+    },
+    {
+      "id": "component-function-commas",
+      "href": "https://www.w3.org/TR/css-values-5/#component-function-commas",
+      "level": 4,
+      "title": "Commas and Semicolons in Functions",
+      "number": "3.1.1"
+    },
+    {
+      "id": "urls",
+      "href": "https://www.w3.org/TR/css-values-5/#urls",
+      "level": 3,
+      "title": "Resource Locators: the <url> type",
+      "number": "3.2"
+    },
+    {
+      "id": "request-url-modifiers",
+      "href": "https://www.w3.org/TR/css-values-5/#request-url-modifiers",
+      "level": 4,
+      "title": "Request URL Modifiers",
+      "number": "3.2.1"
+    },
+    {
+      "id": "progress",
+      "href": "https://www.w3.org/TR/css-values-5/#progress",
+      "level": 2,
+      "title": "Interpolation Progress Functional Notations",
+      "number": "4"
+    },
+    {
+      "id": "progress-func",
+      "href": "https://www.w3.org/TR/css-values-5/#progress-func",
+      "level": 3,
+      "title": "Calculated Progress Values: the progress() notation",
+      "number": "4.1"
+    },
+    {
+      "id": "media-progress-func",
+      "href": "https://www.w3.org/TR/css-values-5/#media-progress-func",
+      "level": 3,
+      "title": "Media Query Progress Values: the media-progress() notation",
+      "number": "4.2"
+    },
+    {
+      "id": "container-progress-func",
+      "href": "https://www.w3.org/TR/css-values-5/#container-progress-func",
+      "level": 3,
+      "title": "Container Query Progress Values: the container-progress() notation",
+      "number": "4.3"
+    },
+    {
+      "id": "mixing",
+      "href": "https://www.w3.org/TR/css-values-5/#mixing",
+      "level": 2,
+      "title": "Mixing and Interpolation Notations: the *-mix() family",
+      "number": "5"
+    },
+    {
+      "id": "progress-type",
+      "href": "https://www.w3.org/TR/css-values-5/#progress-type",
+      "level": 3,
+      "title": "Representing Interpolation Progress: the <progress> type",
+      "number": "5.1"
+    },
+    {
+      "id": "calc-mix",
+      "href": "https://www.w3.org/TR/css-values-5/#calc-mix",
+      "level": 3,
+      "title": "Interpolated Numeric and Dimensional Values: the calc-mix() notation",
+      "number": "5.2"
+    },
+    {
+      "id": "color-mix",
+      "href": "https://www.w3.org/TR/css-values-5/#color-mix",
+      "level": 3,
+      "title": "Interpolated Color Values: the color-mix() notation",
+      "number": "5.3"
+    },
+    {
+      "id": "cross-fade",
+      "href": "https://www.w3.org/TR/css-values-5/#cross-fade",
+      "level": 3,
+      "title": "Interpolated Image Values: the cross-fade() notation",
+      "number": "5.4"
+    },
+    {
+      "id": "transform-mix",
+      "href": "https://www.w3.org/TR/css-values-5/#transform-mix",
+      "level": 3,
+      "title": "Interpolated Transform Values: the transform-mix() notation",
+      "number": "5.5"
+    },
+    {
+      "id": "mix",
+      "href": "https://www.w3.org/TR/css-values-5/#mix",
+      "level": 3,
+      "title": "Interpolated Property Values: the mix() notation",
+      "number": "5.6"
+    },
+    {
+      "id": "value-insert",
+      "href": "https://www.w3.org/TR/css-values-5/#value-insert",
+      "level": 2,
+      "title": "Miscellaneous Value Substituting Functions",
+      "number": "6"
+    },
+    {
+      "id": "whole-value",
+      "href": "https://www.w3.org/TR/css-values-5/#whole-value",
+      "level": 3,
+      "title": "Representing An Entire Property Value: the <whole-value> type",
+      "number": "6.1"
+    },
+    {
+      "id": "first-valid",
+      "href": "https://www.w3.org/TR/css-values-5/#first-valid",
+      "level": 3,
+      "title": "Selecting the First Supported Value: the first-valid() notation",
+      "number": "6.2"
+    },
+    {
+      "id": "toggle-notation",
+      "href": "https://www.w3.org/TR/css-values-5/#toggle-notation",
+      "level": 3,
+      "title": "Toggling Between Values: toggle()",
+      "number": "6.3"
+    },
+    {
+      "id": "attr-notation",
+      "href": "https://www.w3.org/TR/css-values-5/#attr-notation",
+      "level": 3,
+      "title": "Attribute References: the attr() function",
+      "number": "6.4"
+    },
+    {
+      "id": "attr-types",
+      "href": "https://www.w3.org/TR/css-values-5/#attr-types",
+      "level": 4,
+      "title": "attr() Types",
+      "number": "6.4.1"
+    },
+    {
+      "id": "attr-substitution",
+      "href": "https://www.w3.org/TR/css-values-5/#attr-substitution",
+      "level": 4,
+      "title": "attr() Substitution",
+      "number": "6.4.2"
+    },
+    {
+      "id": "attr-security",
+      "href": "https://www.w3.org/TR/css-values-5/#attr-security",
+      "level": 4,
+      "title": "Security",
+      "number": "6.4.3"
+    },
+    {
+      "id": "randomness",
+      "href": "https://www.w3.org/TR/css-values-5/#randomness",
+      "level": 2,
+      "title": "Generating Random Values",
+      "number": "7"
+    },
+    {
+      "id": "random",
+      "href": "https://www.w3.org/TR/css-values-5/#random",
+      "level": 3,
+      "title": "Generating a Random Numeric Value: the random() function",
+      "number": "7.1"
+    },
+    {
+      "id": "random-infinities",
+      "href": "https://www.w3.org/TR/css-values-5/#random-infinities",
+      "level": 4,
+      "title": "Argument Ranges",
+      "number": "7.1.1"
+    },
+    {
+      "id": "random-item",
+      "href": "https://www.w3.org/TR/css-values-5/#random-item",
+      "level": 3,
+      "title": "Picking a Random Item From a List: the random-item() function",
+      "number": "7.2"
+    },
+    {
+      "id": "random-caching",
+      "href": "https://www.w3.org/TR/css-values-5/#random-caching",
+      "level": 3,
+      "title": "Generating/Caching Random Values: the <random-caching-options> value",
+      "number": "7.3"
+    },
+    {
+      "id": "tree-counting",
+      "href": "https://www.w3.org/TR/css-values-5/#tree-counting",
+      "level": 2,
+      "title": "Tree Counting Functions: the sibling-count() and sibling-index() notations",
+      "number": "8"
+    },
+    {
+      "id": "calc-size",
+      "href": "https://www.w3.org/TR/css-values-5/#calc-size",
+      "level": 2,
+      "title": "Calculating With Intrinsic Sizes: the calc-size() function",
+      "number": "9"
+    },
+    {
+      "id": "simplifying-calc-size",
+      "href": "https://www.w3.org/TR/css-values-5/#simplifying-calc-size",
+      "level": 3,
+      "title": "Simplifying calc-size()",
+      "number": "9.1"
+    },
+    {
+      "id": "resolving-calc-size",
+      "href": "https://www.w3.org/TR/css-values-5/#resolving-calc-size",
+      "level": 3,
+      "title": "Resolving calc-size()",
+      "number": "9.2"
+    },
+    {
+      "id": "interp-calc-size",
+      "href": "https://www.w3.org/TR/css-values-5/#interp-calc-size",
+      "level": 3,
+      "title": "Interpolating calc-size()",
+      "number": "9.3"
+    },
+    {
+      "id": "interpolate-size",
+      "href": "https://www.w3.org/TR/css-values-5/#interpolate-size",
+      "level": 3,
+      "title": "Interpolating sizing keywords: the interpolate-size property",
+      "number": "9.4"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://www.w3.org/TR/css-values-5/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/css-values-5/#changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "changes-recent",
+      "href": "https://www.w3.org/TR/css-values-5/#changes-recent",
+      "level": 3,
+      "title": "Recent Changes"
+    },
+    {
+      "id": "additions-L4",
+      "href": "https://www.w3.org/TR/css-values-5/#additions-L4",
+      "level": 3,
+      "title": "Additions Since Level 4"
+    },
+    {
+      "id": "sec-pri",
+      "href": "https://www.w3.org/TR/css-values-5/#sec-pri",
+      "level": 2,
+      "title": "Security and Privacy Considerations"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-values-5/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-values-5/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-values-5/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-values-5/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-values-5/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-values-5/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/css-values-5/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/css-values-5/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/css-values-5/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/css-values-5/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/css-values-5/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/css-values-5/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://www.w3.org/TR/css-values-5/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://www.w3.org/TR/css-values-5/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

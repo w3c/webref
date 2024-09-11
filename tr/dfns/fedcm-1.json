@@ -1,0 +1,2569 @@
+{
+  "spec": {
+    "title": "Federated Credential Management API",
+    "url": "https://www.w3.org/TR/fedcm-1/"
+  },
+  "dfns": [
+    {
+      "id": "rp",
+      "href": "https://www.w3.org/TR/fedcm-1/#rp",
+      "linkingText": [
+        "RP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "introduction",
+        "href": "https://www.w3.org/TR/fedcm-1/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idp",
+      "href": "https://www.w3.org/TR/fedcm-1/#idp",
+      "linkingText": [
+        "IDP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "login-status-map",
+      "href": "https://www.w3.org/TR/fedcm-1/#login-status-map",
+      "linkingText": [
+        "Login Status map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hdr-login-status-map",
+        "href": "https://www.w3.org/TR/fedcm-1/#hdr-login-status-map",
+        "title": "Login Status Map",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "unknown",
+      "href": "https://www.w3.org/TR/fedcm-1/#unknown",
+      "linkingText": [
+        "unknown"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "logged-in",
+      "href": "https://www.w3.org/TR/fedcm-1/#logged-in",
+      "linkingText": [
+        "logged-in"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "logged-out",
+      "href": "https://www.w3.org/TR/fedcm-1/#logged-out",
+      "linkingText": [
+        "logged-out"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-login-status",
+      "href": "https://www.w3.org/TR/fedcm-1/#get-the-login-status",
+      "linkingText": [
+        "get the login status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-the-login-status",
+      "href": "https://www.w3.org/TR/fedcm-1/#set-the-login-status",
+      "linkingText": [
+        "set the login status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "same-site-with-its-ancestors",
+      "href": "https://www.w3.org/TR/fedcm-1/#same-site-with-its-ancestors",
+      "linkingText": [
+        "same-site with its ancestors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infra-algorithm",
+        "href": "https://www.w3.org/TR/fedcm-1/#infra-algorithm",
+        "title": "Infrastructure algorithm",
+        "number": "2.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-login",
+      "href": "https://www.w3.org/TR/fedcm-1/#set-login",
+      "linkingText": [
+        "Set-Login"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "login-status-http",
+        "href": "https://www.w3.org/TR/fedcm-1/#login-status-http",
+        "title": "HTTP header API",
+        "number": "2.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-loginstatus",
+      "href": "https://www.w3.org/TR/fedcm-1/#enumdef-loginstatus",
+      "linkingText": [
+        "LoginStatus"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "login-status-javascript",
+        "href": "https://www.w3.org/TR/fedcm-1/#login-status-javascript",
+        "title": "JavaScript API",
+        "number": "2.1.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-loginstatus-logged-in",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-loginstatus-logged-in",
+      "linkingText": [
+        "\"logged-in\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LoginStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-loginstatus-logged-out",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-loginstatus-logged-out",
+      "linkingText": [
+        "\"logged-out\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LoginStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "navigatorlogin",
+      "href": "https://www.w3.org/TR/fedcm-1/#navigatorlogin",
+      "linkingText": [
+        "NavigatorLogin"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigatorlogin-setstatus",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-navigatorlogin-setstatus",
+      "linkingText": [
+        "setStatus(status)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NavigatorLogin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigatorlogin-setstatus-status-status",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-navigatorlogin-setstatus-status-status",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NavigatorLogin/setStatus(status)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigator-login",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-navigator-login",
+      "linkingText": [
+        "login"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "connected-accounts-set",
+      "href": "https://www.w3.org/TR/fedcm-1/#connected-accounts-set",
+      "linkingText": [
+        "connected accounts set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-connected-accounts-set",
+        "href": "https://www.w3.org/TR/fedcm-1/#browser-connected-accounts-set",
+        "title": "The connected accounts set",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-the-connected-account-key",
+      "href": "https://www.w3.org/TR/fedcm-1/#compute-the-connected-account-key",
+      "linkingText": [
+        "compute the connected account key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eligible-for-auto-reauthentication",
+      "href": "https://www.w3.org/TR/fedcm-1/#eligible-for-auto-reauthentication",
+      "linkingText": [
+        "eligible for auto reauthentication"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-the-connection-status",
+      "href": "https://www.w3.org/TR/fedcm-1/#compute-the-connection-status",
+      "linkingText": [
+        "compute the connection status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-the-connection-status-connected",
+      "href": "https://www.w3.org/TR/fedcm-1/#compute-the-connection-status-connected",
+      "linkingText": [
+        "connected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "compute the connection status"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-the-connection-status-disconnected",
+      "href": "https://www.w3.org/TR/fedcm-1/#compute-the-connection-status-disconnected",
+      "linkingText": [
+        "disconnected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "compute the connection status"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-connection-between-the-rp-and-the-idp-account",
+      "href": "https://www.w3.org/TR/fedcm-1/#create-a-connection-between-the-rp-and-the-idp-account",
+      "linkingText": [
+        "create a connection between the RP and the IdP account"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remove-a-connection",
+      "href": "https://www.w3.org/TR/fedcm-1/#remove-a-connection",
+      "linkingText": [
+        "remove a connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remove-all-connections",
+      "href": "https://www.w3.org/TR/fedcm-1/#remove-all-connections",
+      "linkingText": [
+        "remove all connections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-identitycredentialdisconnectoptions",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identitycredentialdisconnectoptions",
+      "linkingText": [
+        "IdentityCredentialDisconnectOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-credential-interface",
+        "href": "https://www.w3.org/TR/fedcm-1/#browser-api-identity-credential-interface",
+        "title": "The IdentityCredential Interface",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialdisconnectoptions-accounthint",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredentialdisconnectoptions-accounthint",
+      "linkingText": [
+        "accountHint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityCredentialDisconnectOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "identitycredential",
+      "href": "https://www.w3.org/TR/fedcm-1/#identitycredential",
+      "linkingText": [
+        "IdentityCredential"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredential-disconnect",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredential-disconnect",
+      "linkingText": [
+        "disconnect(options)",
+        "disconnect()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IdentityCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredential-disconnect-options-options",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredential-disconnect-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IdentityCredential/disconnect(options)",
+        "IdentityCredential/disconnect()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredential-token",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredential-token",
+      "linkingText": [
+        "token"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IdentityCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredential-isautoselected",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredential-isautoselected",
+      "linkingText": [
+        "isAutoSelected"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IdentityCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "attempt-to-disconnect",
+      "href": "https://www.w3.org/TR/fedcm-1/#attempt-to-disconnect",
+      "linkingText": [
+        "attempt to disconnect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-credential-disconnect",
+        "href": "https://www.w3.org/TR/fedcm-1/#browser-api-identity-credential-disconnect",
+        "title": "The disconnect method",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "send-a-disconnect-request",
+      "href": "https://www.w3.org/TR/fedcm-1/#send-a-disconnect-request",
+      "linkingText": [
+        "send a disconnect request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "disconnect-request",
+        "href": "https://www.w3.org/TR/fedcm-1/#disconnect-request",
+        "title": "Disconnect request",
+        "number": "2.3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-disconnectedaccount",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-disconnectedaccount",
+      "linkingText": [
+        "DisconnectedAccount"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-credentialrequestoptions-identity",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-credentialrequestoptions-identity",
+      "linkingText": [
+        "identity"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-credential-request-options",
+        "href": "https://www.w3.org/TR/fedcm-1/#browser-api-credential-request-options",
+        "title": "The CredentialRequestOptions",
+        "number": "2.3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-identitycredentialrequestoptionscontext",
+      "href": "https://www.w3.org/TR/fedcm-1/#enumdef-identitycredentialrequestoptionscontext",
+      "linkingText": [
+        "IdentityCredentialRequestOptionsContext"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptionscontext-signin",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredentialrequestoptionscontext-signin",
+      "linkingText": [
+        "\"signin\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IdentityCredentialRequestOptionsContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptionscontext-signup",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredentialrequestoptionscontext-signup",
+      "linkingText": [
+        "\"signup\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IdentityCredentialRequestOptionsContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptionscontext-use",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredentialrequestoptionscontext-use",
+      "linkingText": [
+        "\"use\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IdentityCredentialRequestOptionsContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptionscontext-continue",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredentialrequestoptionscontext-continue",
+      "linkingText": [
+        "\"continue\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IdentityCredentialRequestOptionsContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-identitycredentialrequestoptions",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identitycredentialrequestoptions",
+      "linkingText": [
+        "IdentityCredentialRequestOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptions-providers",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredentialrequestoptions-providers",
+      "linkingText": [
+        "providers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptions-context",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredentialrequestoptions-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-identityproviderconfig",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identityproviderconfig",
+      "linkingText": [
+        "IdentityProviderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityproviderconfig-configurl",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderconfig-configurl",
+      "linkingText": [
+        "configURL"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityproviderconfig-clientid",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderconfig-clientid",
+      "linkingText": [
+        "clientId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-identityproviderrequestoptions",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identityproviderrequestoptions",
+      "linkingText": [
+        "IdentityProviderRequestOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityproviderrequestoptions-nonce",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderrequestoptions-nonce",
+      "linkingText": [
+        "nonce"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityproviderrequestoptions-loginhint",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderrequestoptions-loginhint",
+      "linkingText": [
+        "loginHint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityproviderrequestoptions-domainhint",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderrequestoptions-domainhint",
+      "linkingText": [
+        "domainHint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IdentityCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://www.w3.org/TR/fedcm-1/#browser-api-rp-sign-in",
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IdentityCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://www.w3.org/TR/fedcm-1/#browser-api-rp-sign-in",
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "linkingText": [
+        "sameOriginWithAncestors"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IdentityCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://www.w3.org/TR/fedcm-1/#browser-api-rp-sign-in",
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identitycredential-discoverfromexternalsource-slot",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identitycredential-discoverfromexternalsource-slot",
+      "linkingText": [
+        "[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IdentityCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://www.w3.org/TR/fedcm-1/#browser-api-rp-sign-in",
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "2.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "promise-rejection-delay",
+      "href": "https://www.w3.org/TR/fedcm-1/#promise-rejection-delay",
+      "linkingText": [
+        "promise rejection delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-rp-sign-in",
+        "href": "https://www.w3.org/TR/fedcm-1/#browser-api-rp-sign-in",
+        "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
+        "number": "2.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-an-identitycredential",
+      "href": "https://www.w3.org/TR/fedcm-1/#create-an-identitycredential",
+      "linkingText": [
+        "create an IdentityCredential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "create-identity-credential",
+        "href": "https://www.w3.org/TR/fedcm-1/#create-identity-credential",
+        "title": "Create an IdentityCredential",
+        "number": "2.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-accounts-step",
+      "href": "https://www.w3.org/TR/fedcm-1/#fetch-accounts-step",
+      "linkingText": [
+        "Fetch accounts step"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mismatch-dialog-step",
+      "href": "https://www.w3.org/TR/fedcm-1/#mismatch-dialog-step",
+      "linkingText": [
+        "Mismatch dialog step"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "confirm-idp-login-dialog",
+      "href": "https://www.w3.org/TR/fedcm-1/#confirm-idp-login-dialog",
+      "linkingText": [
+        "confirm IDP login dialog"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "auto-reauthenticated",
+      "href": "https://www.w3.org/TR/fedcm-1/#auto-reauthenticated",
+      "linkingText": [
+        "auto-reauthenticated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-the-config-file",
+      "href": "https://www.w3.org/TR/fedcm-1/#fetch-the-config-file",
+      "linkingText": [
+        "fetch the config file"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-config-file",
+        "href": "https://www.w3.org/TR/fedcm-1/#fetch-config-file",
+        "title": "Fetch the config file",
+        "number": "2.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-identityproviderwellknown",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identityproviderwellknown",
+      "linkingText": [
+        "IdentityProviderWellKnown"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-identityprovidericon",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identityprovidericon",
+      "linkingText": [
+        "IdentityProviderIcon"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-identityproviderbranding",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identityproviderbranding",
+      "linkingText": [
+        "IdentityProviderBranding"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-identityproviderapiconfig",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identityproviderapiconfig",
+      "linkingText": [
+        "IdentityProviderAPIConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityproviderapiconfig-login_url",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderapiconfig-login_url",
+      "linkingText": [
+        "login_url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAPIConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fetch-the-accounts",
+      "href": "https://www.w3.org/TR/fedcm-1/#fetch-the-accounts",
+      "linkingText": [
+        "fetch the accounts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-accounts",
+        "href": "https://www.w3.org/TR/fedcm-1/#fetch-accounts",
+        "title": "Fetch the accounts",
+        "number": "2.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-identityprovideraccount",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identityprovideraccount",
+      "linkingText": [
+        "IdentityProviderAccount"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-identityprovideraccountlist",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identityprovideraccountlist",
+      "linkingText": [
+        "IdentityProviderAccountList"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovideraccountlist-accounts",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovideraccountlist-accounts",
+      "linkingText": [
+        "accounts"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAccountList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "fetch-the-account-picture",
+      "href": "https://www.w3.org/TR/fedcm-1/#fetch-the-account-picture",
+      "linkingText": [
+        "fetch the account picture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-an-identity-assertion",
+      "href": "https://www.w3.org/TR/fedcm-1/#fetch-an-identity-assertion",
+      "linkingText": [
+        "fetch an identity assertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-identity-assertion",
+        "href": "https://www.w3.org/TR/fedcm-1/#fetch-identity-assertion",
+        "title": "Fetch an identity assertion",
+        "number": "2.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-identityprovidertoken",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identityprovidertoken",
+      "linkingText": [
+        "IdentityProviderToken"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "select-an-account",
+      "href": "https://www.w3.org/TR/fedcm-1/#select-an-account",
+      "linkingText": [
+        "select an account"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-permission-signup",
+        "href": "https://www.w3.org/TR/fedcm-1/#request-permission-signup",
+        "title": "Request permission to sign-up",
+        "number": "2.3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-permission-to-sign-up",
+      "href": "https://www.w3.org/TR/fedcm-1/#request-permission-to-sign-up",
+      "linkingText": [
+        "request permission to sign-up"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-the-client-metadata",
+      "href": "https://www.w3.org/TR/fedcm-1/#fetch-the-client-metadata",
+      "linkingText": [
+        "fetch the client metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-identityproviderclientmetadata",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identityproviderclientmetadata",
+      "linkingText": [
+        "IdentityProviderClientMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "parse-url",
+      "href": "https://www.w3.org/TR/fedcm-1/#parse-url",
+      "linkingText": [
+        "parse url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "helper-algorithms",
+        "href": "https://www.w3.org/TR/fedcm-1/#helper-algorithms",
+        "title": "Helper algorithms",
+        "number": "2.3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-request",
+      "href": "https://www.w3.org/TR/fedcm-1/#fetch-request",
+      "linkingText": [
+        "fetch request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computing-the-manifest-url",
+      "href": "https://www.w3.org/TR/fedcm-1/#computing-the-manifest-url",
+      "linkingText": [
+        "computing the manifest URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-the-json-fetch-response",
+      "href": "https://www.w3.org/TR/fedcm-1/#extract-the-json-fetch-response",
+      "linkingText": [
+        "extract the JSON fetch response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "show-an-idp-login-dialog",
+      "href": "https://www.w3.org/TR/fedcm-1/#show-an-idp-login-dialog",
+      "linkingText": [
+        "show an IDP login dialog"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-identityuserinfo",
+      "href": "https://www.w3.org/TR/fedcm-1/#dictdef-identityuserinfo",
+      "linkingText": [
+        "IdentityUserInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-provider-interface",
+        "href": "https://www.w3.org/TR/fedcm-1/#browser-api-identity-provider-interface",
+        "title": "The IdentityProvider Interface",
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityuserinfo-email",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityuserinfo-email",
+      "linkingText": [
+        "email"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityUserInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityuserinfo-name",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityuserinfo-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityUserInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityuserinfo-givenname",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityuserinfo-givenname",
+      "linkingText": [
+        "givenName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityUserInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityuserinfo-picture",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityuserinfo-picture",
+      "linkingText": [
+        "picture"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityUserInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "identityprovider",
+      "href": "https://www.w3.org/TR/fedcm-1/#identityprovider",
+      "linkingText": [
+        "IdentityProvider"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovider-close",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovider-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovider-getuserinfo",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovider-getuserinfo",
+      "linkingText": [
+        "getUserInfo(config)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovider-getuserinfo-config-config",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovider-getuserinfo-config-config",
+      "linkingText": [
+        "config"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IdentityProvider/getUserInfo(config)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "well-known-file",
+      "href": "https://www.w3.org/TR/fedcm-1/#well-known-file",
+      "linkingText": [
+        "well-known file"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-well-known",
+        "href": "https://www.w3.org/TR/fedcm-1/#idp-api-well-known",
+        "title": "The Well-Known File",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-identityproviderwellknown-provider_urls",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderwellknown-provider_urls",
+      "linkingText": [
+        "provider_urls"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderWellKnown"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "config-file",
+      "href": "https://www.w3.org/TR/fedcm-1/#config-file",
+      "linkingText": [
+        "config file"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-config-file",
+        "href": "https://www.w3.org/TR/fedcm-1/#idp-api-config-file",
+        "title": "The config file",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-identityproviderapiconfig-accounts_endpoint",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderapiconfig-accounts_endpoint",
+      "linkingText": [
+        "accounts_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAPIConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderapiconfig-client_metadata_endpoint",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderapiconfig-client_metadata_endpoint",
+      "linkingText": [
+        "client_metadata_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAPIConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderapiconfig-id_assertion_endpoint",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderapiconfig-id_assertion_endpoint",
+      "linkingText": [
+        "id_assertion_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAPIConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderapiconfig-disconnect_endpoint",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderapiconfig-disconnect_endpoint",
+      "linkingText": [
+        "disconnect_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAPIConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderapiconfig-branding",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderapiconfig-branding",
+      "linkingText": [
+        "branding"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAPIConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderbranding-background_color",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderbranding-background_color",
+      "linkingText": [
+        "background_color"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderBranding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderbranding-color",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderbranding-color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderBranding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderbranding-icons",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderbranding-icons",
+      "linkingText": [
+        "icons"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderBranding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderbranding-name",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderbranding-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderBranding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovidericon-url",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovidericon-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderIcon"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovidericon-size",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovidericon-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderIcon"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "color",
+      "href": "https://www.w3.org/TR/fedcm-1/#color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "accounts-endpoint",
+      "href": "https://www.w3.org/TR/fedcm-1/#accounts-endpoint",
+      "linkingText": [
+        "accounts endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-accounts-endpoint",
+        "href": "https://www.w3.org/TR/fedcm-1/#idp-api-accounts-endpoint",
+        "title": "Accounts endpoint",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-identityprovideraccount-id",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovideraccount-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAccount"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovideraccount-name",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovideraccount-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAccount"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovideraccount-email",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovideraccount-email",
+      "linkingText": [
+        "email"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAccount"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovideraccount-given_name",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovideraccount-given_name",
+      "linkingText": [
+        "given_name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAccount"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovideraccount-picture",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovideraccount-picture",
+      "linkingText": [
+        "picture"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAccount"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovideraccount-approved_clients",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovideraccount-approved_clients",
+      "linkingText": [
+        "approved_clients"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAccount"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovideraccount-login_hints",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovideraccount-login_hints",
+      "linkingText": [
+        "login_hints"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAccount"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovideraccount-domain_hints",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovideraccount-domain_hints",
+      "linkingText": [
+        "domain_hints"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAccount"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "client-metadata-endpoint",
+      "href": "https://www.w3.org/TR/fedcm-1/#client-metadata-endpoint",
+      "linkingText": [
+        "client metadata endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-client-id-metadata-endpoint",
+        "href": "https://www.w3.org/TR/fedcm-1/#idp-api-client-id-metadata-endpoint",
+        "title": "Client Metadata",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-identityproviderclientmetadata-privacy_policy_url",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderclientmetadata-privacy_policy_url",
+      "linkingText": [
+        "privacy_policy_url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderClientMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderclientmetadata-terms_of_service_url",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityproviderclientmetadata-terms_of_service_url",
+      "linkingText": [
+        "terms_of_service_url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderClientMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "identity-assertion-endpoint",
+      "href": "https://www.w3.org/TR/fedcm-1/#identity-assertion-endpoint",
+      "linkingText": [
+        "identity assertion endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-id-assertion-endpoint",
+        "href": "https://www.w3.org/TR/fedcm-1/#idp-api-id-assertion-endpoint",
+        "title": "Identity assertion endpoint",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-id_assertion_endpoint_request-client_id",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-id_assertion_endpoint_request-client_id",
+      "linkingText": [
+        "client_id"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_assertion_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-id_assertion_endpoint_request-nonce",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-id_assertion_endpoint_request-nonce",
+      "linkingText": [
+        "nonce"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_assertion_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-id_assertion_endpoint_request-account_id",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-id_assertion_endpoint_request-account_id",
+      "linkingText": [
+        "account_id"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_assertion_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-id_assertion_endpoint_request-disclosure_text_shown",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-id_assertion_endpoint_request-disclosure_text_shown",
+      "linkingText": [
+        "disclosure_text_shown"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "id_assertion_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovidertoken-token",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-identityprovidertoken-token",
+      "linkingText": [
+        "token"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderToken"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "disconnect-endpoint",
+      "href": "https://www.w3.org/TR/fedcm-1/#disconnect-endpoint",
+      "linkingText": [
+        "disconnect endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-disconnect-endpoint",
+        "href": "https://www.w3.org/TR/fedcm-1/#idp-api-disconnect-endpoint",
+        "title": "Disconnect endpoint",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-disconnect_endpoint_request-client_id",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-disconnect_endpoint_request-client_id",
+      "linkingText": [
+        "client_id"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "disconnect_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-disconnect_endpoint_request-account_hint",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-disconnect_endpoint_request-account_hint",
+      "linkingText": [
+        "account_hint"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "disconnect_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-disconnectedaccount-account_id",
+      "href": "https://www.w3.org/TR/fedcm-1/#dom-disconnectedaccount-account_id",
+      "linkingText": [
+        "account_id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DisconnectedAccount"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/fedcm-1/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "identity-credentials-get",
+      "href": "https://www.w3.org/TR/fedcm-1/#identity-credentials-get",
+      "linkingText": [
+        "identity-credentials-get"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-policy-integration",
+        "href": "https://www.w3.org/TR/fedcm-1/#permissions-policy-integration",
+        "title": "Permissions Policy Integration",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "setdelayenabled",
+      "href": "https://www.w3.org/TR/fedcm-1/#setdelayenabled",
+      "linkingText": [
+        "setdelayenabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webdriver-setdelayenabled",
+        "href": "https://www.w3.org/TR/fedcm-1/#webdriver-setdelayenabled",
+        "title": "Set delay enabled",
+        "number": "5.8"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "tracker",
+      "href": "https://www.w3.org/TR/fedcm-1/#tracker",
+      "linkingText": [
+        "tracker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "privacy-principals",
+        "href": "https://www.w3.org/TR/fedcm-1/#privacy-principals",
+        "title": "Principals",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

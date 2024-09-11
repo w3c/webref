@@ -1,0 +1,242 @@
+{
+  "spec": {
+    "title": "CSS Easing Functions Level 2",
+    "url": "https://www.w3.org/TR/css-easing-2/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/css-easing-2/#title",
+      "level": 1,
+      "title": "CSS Easing Functions Level 2"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/css-easing-2/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-easing-2/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/css-easing-2/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/css-easing-2/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "values",
+      "href": "https://www.w3.org/TR/css-easing-2/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.1"
+    },
+    {
+      "id": "easing-functions",
+      "href": "https://www.w3.org/TR/css-easing-2/#easing-functions",
+      "level": 2,
+      "title": "Easing functions",
+      "number": "2"
+    },
+    {
+      "id": "the-linear-easing-function",
+      "href": "https://www.w3.org/TR/css-easing-2/#the-linear-easing-function",
+      "level": 3,
+      "title": "The linear easing function: linear()",
+      "number": "2.1"
+    },
+    {
+      "id": "linear-easing-function-syntax",
+      "href": "https://www.w3.org/TR/css-easing-2/#linear-easing-function-syntax",
+      "level": 4,
+      "title": "Syntax",
+      "number": "2.1.1"
+    },
+    {
+      "id": "linear-easing-function-parsing",
+      "href": "https://www.w3.org/TR/css-easing-2/#linear-easing-function-parsing",
+      "level": 4,
+      "title": "Parsing",
+      "number": "2.1.2"
+    },
+    {
+      "id": "linear-easing-function-serializing",
+      "href": "https://www.w3.org/TR/css-easing-2/#linear-easing-function-serializing",
+      "level": 4,
+      "title": "Serializing",
+      "number": "2.1.3"
+    },
+    {
+      "id": "linear-easing-function-output",
+      "href": "https://www.w3.org/TR/css-easing-2/#linear-easing-function-output",
+      "level": 4,
+      "title": "Output of a linear easing function",
+      "number": "2.1.4"
+    },
+    {
+      "id": "linear-easing-function-examples",
+      "href": "https://www.w3.org/TR/css-easing-2/#linear-easing-function-examples",
+      "level": 4,
+      "title": "Examples",
+      "number": "2.1.5"
+    },
+    {
+      "id": "the-linear-easing-keyword",
+      "href": "https://www.w3.org/TR/css-easing-2/#the-linear-easing-keyword",
+      "level": 3,
+      "title": "The linear easing keyword: linear",
+      "number": "2.2"
+    },
+    {
+      "id": "cubic-bezier-easing-functions",
+      "href": "https://www.w3.org/TR/css-easing-2/#cubic-bezier-easing-functions",
+      "level": 3,
+      "title": "Cubic Bézier easing functions: ease, ease-in, ease-out, ease-in-out, cubic-bezier()",
+      "number": "2.3"
+    },
+    {
+      "id": "cubic-bezier-algo",
+      "href": "https://www.w3.org/TR/css-easing-2/#cubic-bezier-algo",
+      "level": 4,
+      "title": "Output of a cubic bézier easing function",
+      "number": "2.3.1"
+    },
+    {
+      "id": "step-easing-functions",
+      "href": "https://www.w3.org/TR/css-easing-2/#step-easing-functions",
+      "level": 3,
+      "title": "Step easing functions: step-start, step-end, steps()",
+      "number": "2.4"
+    },
+    {
+      "id": "step-easing-algo",
+      "href": "https://www.w3.org/TR/css-easing-2/#step-easing-algo",
+      "level": 4,
+      "title": "Output of a step easing function",
+      "number": "2.4.1"
+    },
+    {
+      "id": "serialization",
+      "href": "https://www.w3.org/TR/css-easing-2/#serialization",
+      "level": 3,
+      "title": "Serialization",
+      "number": "2.5"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/css-easing-2/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/css-easing-2/#security",
+      "level": 2,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/css-easing-2/#changes",
+      "level": 2,
+      "title": "Changes",
+      "number": "3"
+    },
+    {
+      "id": "changes-L1",
+      "href": "https://www.w3.org/TR/css-easing-2/#changes-L1",
+      "level": 3,
+      "title": "Additions Since Level 1",
+      "number": "3.1"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/css-easing-2/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "4"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-easing-2/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-easing-2/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-easing-2/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-easing-2/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-easing-2/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-easing-2/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/css-easing-2/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/css-easing-2/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/css-easing-2/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/css-easing-2/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/css-easing-2/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/css-easing-2/#informative",
+      "level": 3,
+      "title": "Informative References"
+    }
+  ]
+}

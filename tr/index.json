@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-09-10T01:34:52.236Z",
+  "date": "2024-09-11T01:48:28.826Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -30,7 +30,6 @@
       "css-color-hdr",
       "css-conditional-values-1",
       "css-display-4",
-      "css-easing-2",
       "css-env-1",
       "css-extensions-1",
       "css-forms-1",
@@ -45,13 +44,11 @@
       "css-position-4",
       "css-shapes-2",
       "css-size-adjust-1",
-      "css-values-5",
       "css-variables-2",
       "selectors-5",
       "compositing-2",
       "filter-effects-2",
       "encoding",
-      "FedCM",
       "fetch",
       "fido-v2.1",
       "fs",
@@ -203,8 +200,8 @@
       "css-parser-api",
       "datacue",
       "deprecation-reporting",
+      "digital-credentials",
       "digital-goods",
-      "digital-identities",
       "direct-sockets",
       "document-picture-in-picture",
       "document-policy",
@@ -234,6 +231,7 @@
       "prerendering-revamped",
       "speculation-rules",
       "netinfo",
+      "observable",
       "overscroll-scrollend-events",
       "page-lifecycle",
       "performance-measure-memory",
@@ -360,6 +358,7 @@
       "css-counter-styles-3",
       "css-display-3",
       "css-easing-1",
+      "css-easing-2",
       "css-flexbox-1",
       "css-font-loading-3",
       "css-fonts-4",
@@ -419,6 +418,7 @@
       "css-ui-4",
       "css-values-3",
       "css-values-4",
+      "css-values-5",
       "css-variables-1",
       "css-view-transitions-1",
       "css-view-transitions-2",
@@ -449,6 +449,7 @@
       "epub-33",
       "epub-rs-33",
       "event-timing",
+      "fedcm-1",
       "fetch-metadata",
       "FileAPI",
       "fill-stroke-3",
@@ -466,6 +467,7 @@
       "html-aam-1.0",
       "html-aria",
       "html-media-capture",
+      "html-ruby-extensions",
       "i18n-glossary",
       "IFT",
       "image-capture",
@@ -660,10 +662,10 @@
     ]
   },
   "stats": {
-    "crawled": 327,
+    "crawled": 331,
     "errors": 0
   },
-  "crawler": "reffy-17.2.3",
+  "crawler": "reffy-17.2.5",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -709,7 +711,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "10 September 2024",
+      "date": "11 September 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -4037,10 +4039,77 @@
       "algorithms": "algorithms/css-easing-1.json",
       "links": "links/css-easing-1.json",
       "refs": "refs/css-easing-1.json",
-      "css": "css/css-easing.json",
       "dfns": "dfns/css-easing-1.json",
       "headings": "headings/css-easing-1.json",
       "ids": "ids/css-easing-1.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/css-easing-2/",
+      "seriesComposition": "full",
+      "shortname": "css-easing-2",
+      "series": {
+        "shortname": "css-easing",
+        "currentSpecification": "css-easing-1",
+        "title": "CSS Easing Functions",
+        "shortTitle": "CSS Easing Functions",
+        "releaseUrl": "https://www.w3.org/TR/css-easing/",
+        "nightlyUrl": "https://drafts.csswg.org/css-easing/"
+      },
+      "seriesVersion": "2",
+      "seriesPrevious": "css-easing-1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-easing-2/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-easing-2/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-easing-2/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-easing-2/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Easing Functions Level 2",
+      "source": "w3c",
+      "shortTitle": "CSS Easing Functions 2",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-easing"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-easing-2/",
+        "https://drafts.csswg.org/css-easing-2/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-easing-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 28 Aug 2024 15:46:16 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "29 August 2024",
+      "revision": "886d457cff28a9bd3856242c2dcf67707fae7e2f",
+      "algorithms": "algorithms/css-easing-2.json",
+      "links": "links/css-easing-2.json",
+      "refs": "refs/css-easing-2.json",
+      "css": "css/css-easing.json",
+      "dfns": "dfns/css-easing-2.json",
+      "headings": "headings/css-easing-2.json",
+      "ids": "ids/css-easing-2.json"
     },
     {
       "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -7993,6 +8062,74 @@
       "ids": "ids/css-values-4.json"
     },
     {
+      "url": "https://www.w3.org/TR/css-values-5/",
+      "seriesComposition": "delta",
+      "shortname": "css-values-5",
+      "series": {
+        "shortname": "css-values",
+        "currentSpecification": "css-values-4",
+        "title": "CSS Values and Units",
+        "shortTitle": "CSS Values",
+        "releaseUrl": "https://www.w3.org/TR/css-values/",
+        "nightlyUrl": "https://drafts.csswg.org/css-values/"
+      },
+      "seriesVersion": "5",
+      "shortTitle": "CSS Values 5",
+      "seriesPrevious": "css-values-4",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-values-5/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-values-5/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-values-5/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-values-5/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Values and Units Module Level 5",
+      "source": "w3c",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-values"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-values-5/",
+        "https://drafts.csswg.org/css-values-5/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-values-5/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 30 Aug 2024 17:09:32 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "3 September 2024",
+      "revision": "a7a5838c449627765504c1dc7195d49ea409a34c",
+      "algorithms": "algorithms/css-values-5.json",
+      "links": "links/css-values-5.json",
+      "refs": "refs/css-values-5.json",
+      "css": "css/css-values-5.json",
+      "dfns": "dfns/css-values-5.json",
+      "headings": "headings/css-values-5.json",
+      "ids": "ids/css-values-5.json"
+    },
+    {
       "url": "https://www.w3.org/TR/css-variables-1/",
       "seriesComposition": "full",
       "shortname": "css-variables-1",
@@ -9556,7 +9693,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-stream-mp4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:25 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -9610,7 +9747,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-stream-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:46:58 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:24 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -9911,6 +10048,68 @@
       "dfns": "dfns/event-timing.json",
       "headings": "headings/event-timing.json",
       "ids": "ids/event-timing.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/fedcm-1/",
+      "seriesComposition": "full",
+      "shortname": "fedcm-1",
+      "series": {
+        "shortname": "fedcm",
+        "currentSpecification": "fedcm-1",
+        "title": "Federated Credential Management API",
+        "shortTitle": "Federated Credential Management API",
+        "releaseUrl": "https://www.w3.org/TR/fedcm/",
+        "nightlyUrl": "https://w3c-fedid.github.io/FedCM/"
+      },
+      "seriesVersion": "1",
+      "formerNames": [
+        "fedCM"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Federated Identity Working Group",
+          "url": "https://www.w3.org/groups/wg/fedid/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/fedcm-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c-fedid.github.io/FedCM/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c-fedid/FedCM",
+        "sourcePath": "spec/index.bs",
+        "filename": "index.html"
+      },
+      "title": "Federated Credential Management API",
+      "source": "w3c",
+      "shortTitle": "Federated Credential Management API",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/fedcm-1/",
+        "https://w3c-fedid.github.io/FedCM/"
+      ],
+      "crawled": "https://www.w3.org/TR/fedcm-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 19 Aug 2024 15:35:40 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "20 August 2024",
+      "revision": "548e7b2a5fc990c7588ed2c9af46416c0f00be07",
+      "algorithms": "algorithms/fedcm-1.json",
+      "links": "links/fedcm-1.json",
+      "refs": "refs/fedcm-1.json",
+      "idl": "idl/fedcm.idl",
+      "dfns": "dfns/fedcm-1.json",
+      "headings": "headings/fedcm-1.json",
+      "ids": "ids/fedcm-1.json"
     },
     {
       "url": "https://www.w3.org/TR/fetch-metadata/",
@@ -10987,6 +11186,64 @@
       "dfns": "dfns/html-media-capture.json",
       "headings": "headings/html-media-capture.json",
       "ids": "ids/html-media-capture.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/html-ruby-extensions/",
+      "seriesComposition": "full",
+      "shortname": "html-ruby-extensions",
+      "series": {
+        "shortname": "html-ruby-extensions",
+        "currentSpecification": "html-ruby-extensions",
+        "title": "HTML Ruby Markup Extensions",
+        "shortTitle": "HTML Ruby Markup Extensions",
+        "releaseUrl": "https://www.w3.org/TR/html-ruby-extensions/",
+        "nightlyUrl": "https://w3c.github.io/html-ruby/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/html-ruby/",
+        "status": "Editor's Draft",
+        "sourcePath": "Overview.bs",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/html-ruby",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "HTML Working Group",
+          "url": "https://www.w3.org/groups/wg/htmlwg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/html-ruby-extensions/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "title": "HTML Ruby Markup Extensions",
+      "source": "w3c",
+      "shortTitle": "HTML Ruby Markup Extensions",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/html-ruby-extensions/",
+        "https://w3c.github.io/html-ruby/"
+      ],
+      "crawled": "https://www.w3.org/TR/html-ruby-extensions/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 27 Jun 2024 07:20:01 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "27 June 2024",
+      "revision": "657377b52fa245e77f44197288a4e35970f3ff2e",
+      "algorithms": "algorithms/html-ruby-extensions.json",
+      "links": "links/html-ruby-extensions.json",
+      "refs": "refs/html-ruby-extensions.json",
+      "dfns": "dfns/html-ruby-extensions.json",
+      "elements": "elements/html-ruby-extensions.json",
+      "headings": "headings/html-ruby-extensions.json",
+      "ids": "ids/html-ruby-extensions.json"
     },
     {
       "url": "https://www.w3.org/TR/i18n-glossary/",
@@ -17599,11 +17856,11 @@
       ],
       "crawled": "https://www.w3.org/TR/trusted-types/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 09 Sep 2024 15:10:53 GMT"
+        "lastModified": "Tue, 10 Sep 2024 13:50:24 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 September 2024",
-      "revision": "1c98273966a4834cee4cdf5a3ccdb2d0b9d2046d",
+      "date": "10 September 2024",
+      "revision": "3b74745ed73475d7ef6e144c4f3c62bbdaee54ac",
       "algorithms": "algorithms/trusted-types.json",
       "links": "links/trusted-types.json",
       "refs": "refs/trusted-types.json",
@@ -19970,11 +20227,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 09 Sep 2024 16:37:27 GMT"
+        "lastModified": "Wed, 11 Sep 2024 00:41:46 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 September 2024",
-      "revision": "eddc196297cd0f4b19544480528927b7e84c6625",
+      "date": "11 September 2024",
+      "revision": "9ca9ba2f9a5ee7a524247e61f95e8565e5feafeb",
       "algorithms": "algorithms/webgpu.json",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",

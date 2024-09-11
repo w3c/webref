@@ -1,7 +1,7 @@
 {
   "spec": {
-    "title": "CSS Easing Functions Level 1",
-    "url": "https://www.w3.org/TR/css-easing-1/"
+    "title": "CSS Easing Functions Level 2",
+    "url": "https://www.w3.org/TR/css-easing-2/"
   },
   "properties": [],
   "atrules": [],
@@ -9,117 +9,156 @@
   "values": [
     {
       "name": "<easing-function>",
-      "value": "linear | <cubic-bezier-easing-function> | <step-easing-function>",
-      "href": "https://www.w3.org/TR/css-easing-1/#typedef-easing-function",
-      "type": "type"
+      "value": "linear | <linear-easing-function> | <cubic-bezier-easing-function> | <step-easing-function>",
+      "href": "https://www.w3.org/TR/css-easing-2/#typedef-easing-function",
+      "type": "type",
+      "values": [
+        {
+          "name": "linear",
+          "prose": "The linear keyword produces an identity linear easing function whose output progress value is equal to the input progress value for all inputs.",
+          "href": "https://www.w3.org/TR/css-easing-2/#valdef-easing-function-linear",
+          "type": "value",
+          "value": "linear"
+        }
+      ]
+    },
+    {
+      "name": "<linear-easing-function>",
+      "href": "https://www.w3.org/TR/css-easing-2/#typedef-linear-easing-function",
+      "type": "type",
+      "value": "linear(<linear-stop-list>)"
+    },
+    {
+      "name": "linear()",
+      "value": "linear(<linear-stop-list>)",
+      "href": "https://www.w3.org/TR/css-easing-2/#funcdef-linear",
+      "type": "function"
+    },
+    {
+      "name": "<linear-stop-list>",
+      "href": "https://www.w3.org/TR/css-easing-2/#typedef-linear-stop-list",
+      "type": "type",
+      "value": "[ <linear-stop> ]#"
+    },
+    {
+      "name": "<linear-stop>",
+      "href": "https://www.w3.org/TR/css-easing-2/#typedef-linear-stop",
+      "type": "type",
+      "value": "<number> && <linear-stop-length>?"
+    },
+    {
+      "name": "<linear-stop-length>",
+      "href": "https://www.w3.org/TR/css-easing-2/#typedef-linear-stop-length",
+      "type": "type",
+      "value": "<percentage>{1,2}"
     },
     {
       "name": "<cubic-bezier-easing-function>",
       "value": "ease | ease-in | ease-out | ease-in-out | cubic-bezier(<number [0,1]>, <number>, <number [0,1]>, <number>)",
-      "href": "https://www.w3.org/TR/css-easing-1/#typedef-cubic-bezier-easing-function",
+      "href": "https://www.w3.org/TR/css-easing-2/#typedef-cubic-bezier-easing-function",
       "type": "type",
       "values": [
         {
           "name": "ease",
           "prose": "Equivalent to cubic-bezier(0.25, 0.1, 0.25, 1).",
-          "href": "https://www.w3.org/TR/css-easing-1/#valdef-cubic-bezier-easing-function-ease",
+          "href": "https://www.w3.org/TR/css-easing-2/#valdef-cubic-bezier-easing-function-ease",
           "type": "value",
           "value": "ease"
         },
         {
           "name": "ease-in",
           "prose": "Equivalent to cubic-bezier(0.42, 0, 1, 1).",
-          "href": "https://www.w3.org/TR/css-easing-1/#valdef-cubic-bezier-easing-function-ease-in",
+          "href": "https://www.w3.org/TR/css-easing-2/#valdef-cubic-bezier-easing-function-ease-in",
           "type": "value",
           "value": "ease-in"
         },
         {
           "name": "ease-out",
           "prose": "Equivalent to cubic-bezier(0, 0, 0.58, 1).",
-          "href": "https://www.w3.org/TR/css-easing-1/#valdef-cubic-bezier-easing-function-ease-out",
+          "href": "https://www.w3.org/TR/css-easing-2/#valdef-cubic-bezier-easing-function-ease-out",
           "type": "value",
           "value": "ease-out"
         },
         {
           "name": "ease-in-out",
           "prose": "Equivalent to cubic-bezier(0.42, 0, 0.58, 1).",
-          "href": "https://www.w3.org/TR/css-easing-1/#valdef-cubic-bezier-easing-function-ease-in-out",
+          "href": "https://www.w3.org/TR/css-easing-2/#valdef-cubic-bezier-easing-function-ease-in-out",
           "type": "value",
           "value": "ease-in-out"
         },
         {
           "name": "cubic-bezier()",
           "value": "cubic-bezier(<number [0,1]>, <number>, <number [0,1]>, <number>)",
-          "href": "https://www.w3.org/TR/css-easing-1/#funcdef-cubic-bezier-easing-function-cubic-bezier",
+          "href": "https://www.w3.org/TR/css-easing-2/#funcdef-cubic-bezier-easing-function-cubic-bezier",
           "type": "function"
         }
       ]
     },
     {
       "name": "<step-easing-function>",
-      "value": "step-start | step-end | steps(<integer>[, <step-position>]?)",
-      "href": "https://www.w3.org/TR/css-easing-1/#typedef-step-easing-function",
+      "value": "step-start | step-end | steps(<integer> , <step-position>?)",
+      "href": "https://www.w3.org/TR/css-easing-2/#typedef-step-easing-function",
       "type": "type",
       "values": [
         {
           "name": "step-start",
           "prose": "Computes to steps(1, start)",
-          "href": "https://www.w3.org/TR/css-easing-1/#valdef-step-easing-function-step-start",
+          "href": "https://www.w3.org/TR/css-easing-2/#valdef-step-easing-function-step-start",
           "type": "value",
           "value": "step-start"
         },
         {
           "name": "step-end",
           "prose": "Computes to steps(1, end) Example step easing function keyword values.",
-          "href": "https://www.w3.org/TR/css-easing-1/#valdef-step-easing-function-step-end",
+          "href": "https://www.w3.org/TR/css-easing-2/#valdef-step-easing-function-step-end",
           "type": "value",
           "value": "step-end"
         },
         {
           "name": "steps()",
-          "value": "steps(<integer>[, <step-position> ]?)",
-          "href": "https://www.w3.org/TR/css-easing-1/#funcdef-step-easing-function-steps",
+          "value": "steps(<integer>, <step-position>?)",
+          "href": "https://www.w3.org/TR/css-easing-2/#funcdef-step-easing-function-steps",
           "type": "function",
           "values": [
             {
               "name": "jump-start",
               "prose": "The first rise occurs at input progress value of 0.",
-              "href": "https://www.w3.org/TR/css-easing-1/#valdef-steps-jump-start",
+              "href": "https://www.w3.org/TR/css-easing-2/#valdef-steps-jump-start",
               "type": "value",
               "value": "jump-start"
             },
             {
               "name": "jump-end",
               "prose": "The last rise occurs at input progress value of 1.",
-              "href": "https://www.w3.org/TR/css-easing-1/#valdef-steps-jump-end",
+              "href": "https://www.w3.org/TR/css-easing-2/#valdef-steps-jump-end",
               "type": "value",
               "value": "jump-end"
             },
             {
               "name": "jump-none",
               "prose": "All rises occur within the range (0, 1).",
-              "href": "https://www.w3.org/TR/css-easing-1/#valdef-steps-jump-none",
+              "href": "https://www.w3.org/TR/css-easing-2/#valdef-steps-jump-none",
               "type": "value",
               "value": "jump-none"
             },
             {
               "name": "jump-both",
               "prose": "The first rise occurs at input progress value of 0 and the last rise occurs at input progress value of 1.",
-              "href": "https://www.w3.org/TR/css-easing-1/#valdef-steps-jump-both",
+              "href": "https://www.w3.org/TR/css-easing-2/#valdef-steps-jump-both",
               "type": "value",
               "value": "jump-both"
             },
             {
               "name": "start",
               "prose": "Behaves as jump-start.",
-              "href": "https://www.w3.org/TR/css-easing-1/#valdef-steps-start",
+              "href": "https://www.w3.org/TR/css-easing-2/#valdef-steps-start",
               "type": "value",
               "value": "start"
             },
             {
               "name": "end",
               "prose": "Behaves as jump-end.",
-              "href": "https://www.w3.org/TR/css-easing-1/#valdef-steps-end",
+              "href": "https://www.w3.org/TR/css-easing-2/#valdef-steps-end",
               "type": "value",
               "value": "end"
             }
@@ -130,19 +169,8 @@
     {
       "name": "<step-position>",
       "value": "jump-start | jump-end | jump-none | jump-both | start | end",
-      "href": "https://www.w3.org/TR/css-easing-1/#typedef-step-position",
+      "href": "https://www.w3.org/TR/css-easing-2/#typedef-step-position",
       "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Dangling value",
-      "name": "linear",
-      "prose": "The syntax for the linear easing function is simply the linear keyword.",
-      "href": "https://www.w3.org/TR/css-easing-1/#valdef-easing-function-linear",
-      "type": "value",
-      "value": "linear",
-      "for": "easing-function"
     }
   ]
 }
