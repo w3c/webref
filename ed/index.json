@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-09-11T01:08:18.998Z",
+  "date": "2024-09-11T06:41:52.072Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -671,7 +671,7 @@
   },
   "stats": {
     "crawled": 640,
-    "errors": 13
+    "errors": 16
   },
   "crawler": "reffy-17.2.5",
   "results": [
@@ -2904,7 +2904,8 @@
       "css": "css/compositing.json",
       "dfns": "dfns/compositing-2.json",
       "headings": "headings/compositing-2.json",
-      "ids": "ids/compositing-2.json"
+      "ids": "ids/compositing-2.json",
+      "error": "Error: Loading https://drafts.fxtf.org/compositing-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 39)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)"
     },
     {
       "url": "https://drafts.fxtf.org/filter-effects-2/",
@@ -11633,7 +11634,7 @@
       ],
       "crawled": "https://wicg.github.io/ink-enhancement/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 06 Sep 2024 19:56:08 GMT"
+        "lastModified": "Fri, 06 Sep 2024 19:56:09 GMT"
       },
       "generator": "bikeshed",
       "date": "13 July 2021",
@@ -17243,7 +17244,8 @@
       "refs": "refs/compositing-1.json",
       "dfns": "dfns/compositing-1.json",
       "headings": "headings/compositing-1.json",
-      "ids": "ids/compositing-1.json"
+      "ids": "ids/compositing-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/compositing-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 314)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)"
     },
     {
       "url": "https://www.w3.org/TR/compute-pressure/",
@@ -20790,7 +20792,8 @@
       "dfns": "dfns/css-masking-1.json",
       "elements": "elements/css-masking-1.json",
       "headings": "headings/css-masking-1.json",
-      "ids": "ids/css-masking-1.json"
+      "ids": "ids/css-masking-1.json",
+      "error": "Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 367)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -37089,7 +37092,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 11 Sep 2024 00:40:49 GMT"
+        "lastModified": "Wed, 11 Sep 2024 00:40:50 GMT"
       },
       "generator": "bikeshed",
       "date": "11 September 2024",
