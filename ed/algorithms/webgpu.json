@@ -340,13 +340,10 @@
       "name": "GPU.requestAdapter",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpu-requestadapter-options-options",
       "html": "<table class=\"argumentdef data\">\n        <caption>Arguments for the <a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpu-requestadapter\" id=\"ref-for-dom-gpu-requestadapter④\">GPU.requestAdapter(options)</a> method.</caption>\n        <thead>\n         <tr>\n          <th>Parameter \n          </th><th>Type \n          </th><th style=\"text-align:center\">Nullable \n          </th><th style=\"text-align:center\">Optional \n          </th><th>Description \n        </th></tr></thead><tbody>\n         <tr>\n          <td><dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"GPU/requestAdapter(options)\" data-dfn-type=\"argument\" data-export=\"\" id=\"dom-gpu-requestadapter-options-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><var>options</var></code></dfn> \n          </td><td> <code class=\"idl\"><a data-link-type=\"idl-name\" href=\"https://gpuweb.github.io/gpuweb/#dictdef-gpurequestadapteroptions\" id=\"ref-for-dictdef-gpurequestadapteroptions①\">GPURequestAdapterOptions</a></code>\n          </td><td style=\"text-align:center\"> <span class=\"no\">✘</span>\n          </td><td style=\"text-align:center\"> <span class=\"yes\">✔</span>\n          </td><td>Criteria used to select the adapter. \n       </td></tr></tbody></table>",
-      "rationale": "let",
+      "rationale": "set",
       "steps": [
         {
-          "html": "<p>Let <var>adapter</var> be <code>null</code>.</p>"
-        },
-        {
-          "html": "If the user agent chooses to return an adapter:",
+          "html": "If they are met <strong>and</strong> the user agent chooses to return an adapter:",
           "rationale": "set",
           "steps": [
             {
@@ -355,6 +352,20 @@
             {
               "html": "<p>If <var>adapter</var> meets the criteria of a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#fallback-adapter\" id=\"ref-for-fallback-adapter②\">fallback adapter</a> set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-adapter-fallback-slot\" id=\"ref-for-dom-adapter-fallback-slot\" data-timeline=\"device\">[[fallback]]</a></code> to <code>true</code>.</p>"
             }
+          ],
+          "additional": [
+            {
+              "html": "Otherwise:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>adapter</var> be <code>null</code>.</p>"
+                }
+              ]
+            }
+          ],
+          "ignored": [
+            "options.featureLevel must be undefined."
           ]
         },
         {
