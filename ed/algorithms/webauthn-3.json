@@ -1339,7 +1339,7 @@
         {
           "html": "<p>The inputs to the algorithm are:</p>",
           "ignored": [
-            "A bytestring, clientDataJSON, that contains clientDataJSON — the serialized CollectedClientData that is to be verified. A string, type, that contains the expected type. A byte string, challenge, that contains the challenge byte string that was given in the PublicKeyCredentialRequestOptions or PublicKeyCredentialCreationOptions. A string, origin, that contains the expected origin that issued the request to the user agent. A boolean, crossOrigin, that is true if, and only if, the request should have been performed within a cross-origin iframe."
+            "A bytestring, clientDataJSON, that contains clientDataJSON — the serialized CollectedClientData that is to be verified. A string, type, that contains the expected type. A byte string, challenge, that contains the challenge byte string that was given in the PublicKeyCredentialRequestOptions or PublicKeyCredentialCreationOptions. A string, origin, that contains the expected origin that issued the request to the user agent. An optional string, topOrigin, that contains the expected topOrigin that issued the request to the user agent, if available. A boolean, requireTopOrigin, that is true if, and only if, the verification should fail if topOrigin is defined and the topOrigin attribute is not present in clientDataJSON. This means that the verification algorithm is backwards compatible with the JSON-compatible serialization algorithm in Web Authentication Level 2 [webauthn-2-20210408] if, and only if, requireTopOrigin is false."
           ]
         },
         {
@@ -1370,16 +1370,28 @@
           "html": "<p>Append 0x2c2263726f73734f726967696e223a (<code>,\"crossOrigin\":</code>) to <var>expected</var>.</p>"
         },
         {
-          "html": "If <var>crossOrigin</var> is true:",
+          "html": "If <var>topOrigin</var> is defined:",
           "rationale": "append",
           "steps": [
             {
               "html": "<p>Append 0x74727565 (<code>true</code>) to <var>expected</var>.</p>"
+            },
+            {
+              "html": "If <var>requireTopOrigin</var> is true\nor if 0x2c22746f704f726967696e223a (<code>,\"topOrigin\":</code>) is a prefix\nof the substring of <var>clientDataJSON</var> beginning at the offset equal to the length of <var>expected</var>:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append 0x2c22746f704f726967696e223a (<code>,\"topOrigin\":</code>) to <var>expected</var>.</p>"
+                },
+                {
+                  "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#ccdtostring\" id=\"ref-for-ccdtostring⑦\">CCDToString</a>(<var>topOrigin</var>) to <var>expected</var>.</p>"
+                }
+              ]
             }
           ]
         },
         {
-          "html": "Otherwise, i.e. <var>crossOrigin</var> is false:",
+          "html": "Otherwise, i.e. <var>topOrigin</var> is not defined:",
           "rationale": "append",
           "steps": [
             {
@@ -1785,14 +1797,14 @@
           "html": "<a class=\"self-link\" href=\"https://w3c.github.io/webauthn/#rp-op-registering-a-new-credential-step-origin\"></a> Verify that the value of <code><var>C</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-collectedclientdata-origin\" id=\"ref-for-dom-collectedclientdata-origin⑦\">origin</a></code></code> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin①④\">origin</a> expected by the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②④⑨\">Relying Party</a>.\n  See <a href=\"https://w3c.github.io/webauthn/#sctn-validating-origin\">§ 13.4.9 Validating the origin of a credential</a> for guidance."
         },
         {
-          "html": "If <code><var>C</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-collectedclientdata-toporigin\" id=\"ref-for-dom-collectedclientdata-toporigin⑦\">topOrigin</a></code></code> is present:",
+          "html": "If <code><var>C</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-collectedclientdata-toporigin\" id=\"ref-for-dom-collectedclientdata-toporigin⑨\">topOrigin</a></code></code> is present:",
           "rationale": "verify",
           "steps": [
             {
               "html": "<p>Verify that the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑤⓪\">Relying Party</a> expects that this credential would have been created within an iframe that is\nnot <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors\" id=\"ref-for-same-origin-with-its-ancestors④\">same-origin with its ancestors</a>.</p>"
             },
             {
-              "html": "<p>Verify that the value of <code><var>C</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-collectedclientdata-toporigin\" id=\"ref-for-dom-collectedclientdata-toporigin⑧\">topOrigin</a></code></code> matches the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin①⑤\">origin</a> of a page\nthat the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑤①\">Relying Party</a> expects to be sub-framed within.\nSee <a href=\"https://w3c.github.io/webauthn/#sctn-validating-origin\">§ 13.4.9 Validating the origin of a credential</a> for guidance.</p>"
+              "html": "<p>Verify that the value of <code><var>C</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-collectedclientdata-toporigin\" id=\"ref-for-dom-collectedclientdata-toporigin①⓪\">topOrigin</a></code></code> matches the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin①⑤\">origin</a> of a page\nthat the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑤①\">Relying Party</a> expects to be sub-framed within.\nSee <a href=\"https://w3c.github.io/webauthn/#sctn-validating-origin\">§ 13.4.9 Validating the origin of a credential</a> for guidance.</p>"
             }
           ]
         },
@@ -1909,14 +1921,14 @@
           "html": "<a class=\"self-link\" href=\"https://w3c.github.io/webauthn/#rp-op-verifying-assertion-step-origin\"></a> Verify that the value of <code><var>C</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-collectedclientdata-origin\" id=\"ref-for-dom-collectedclientdata-origin⑧\">origin</a></code></code> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin①⑥\">origin</a> expected by the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑦⑤\">Relying Party</a>.\n  See <a href=\"https://w3c.github.io/webauthn/#sctn-validating-origin\">§ 13.4.9 Validating the origin of a credential</a> for guidance."
         },
         {
-          "html": "If <code><var>C</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-collectedclientdata-toporigin\" id=\"ref-for-dom-collectedclientdata-toporigin⑨\">topOrigin</a></code></code> is present:",
+          "html": "If <code><var>C</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-collectedclientdata-toporigin\" id=\"ref-for-dom-collectedclientdata-toporigin①①\">topOrigin</a></code></code> is present:",
           "rationale": "verify",
           "steps": [
             {
               "html": "<p>Verify that the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑦⑥\">Relying Party</a> expects this credential to be used within an iframe that is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors\" id=\"ref-for-same-origin-with-its-ancestors⑤\">same-origin with its ancestors</a>.</p>"
             },
             {
-              "html": "<p>Verify that the value of <code><var>C</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-collectedclientdata-toporigin\" id=\"ref-for-dom-collectedclientdata-toporigin①⓪\">topOrigin</a></code></code> matches the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin①⑦\">origin</a> of a page\nthat the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑦⑦\">Relying Party</a> expects to be sub-framed within.\nSee <a href=\"https://w3c.github.io/webauthn/#sctn-validating-origin\">§ 13.4.9 Validating the origin of a credential</a> for guidance.</p>"
+              "html": "<p>Verify that the value of <code><var>C</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webauthn/#dom-collectedclientdata-toporigin\" id=\"ref-for-dom-collectedclientdata-toporigin①②\">topOrigin</a></code></code> matches the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin①⑦\">origin</a> of a page\nthat the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#relying-party\" id=\"ref-for-relying-party②⑦⑦\">Relying Party</a> expects to be sub-framed within.\nSee <a href=\"https://w3c.github.io/webauthn/#sctn-validating-origin\">§ 13.4.9 Validating the origin of a credential</a> for guidance.</p>"
             }
           ]
         },
