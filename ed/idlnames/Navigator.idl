@@ -81,12 +81,6 @@ partial interface Navigator {
       createHandwritingRecognizer(HandwritingModelConstraint constraint);
 };
 
-// Source: Ink API (https://wicg.github.io/ink-enhancement/)
-[Exposed=Window]
-partial interface Navigator {
-    [SameObject] readonly attribute Ink ink;
-};
-
 // Source: Early detection of input events (https://wicg.github.io/is-input-pending/)
 partial interface Navigator {
   readonly attribute Scheduling scheduling;
