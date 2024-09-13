@@ -461,7 +461,7 @@
     {
       "name": "text-wrap-style",
       "href": "https://drafts.csswg.org/css-text-4/#propdef-text-wrap-style",
-      "value": "auto | balance | stable | pretty",
+      "value": "auto | balance | stable | pretty | avoid-orphans",
       "initial": "auto",
       "appliesTo": "block containers hat establish an inline formatting context",
       "inherited": "yes",
@@ -493,10 +493,17 @@
         },
         {
           "name": "pretty",
-          "prose": "Specifies the UA should bias for better layout over speed, and is expected to consider multiple lines, when making break decisions. Otherwise equivalent to auto,",
+          "prose": "Specifies the UA should bias for better layout over speed, and is expected to consider multiple lines when making break decisions. Otherwise equivalent to auto. The user agent may among other things attempt to avoid excessively short last lines, similarly to avoid-orphans, but it should also improve the layout in additional ways. The precise set of improvements is user agent dependent, and may include things such as: reducing the variation in length between lines; avoiding typographic rivers; prioritizing different classes of soft wrap opportunities, hyphenation opportunities, or justification opportunities; avoiding hyphenation on too many consecutive lines… The necessary computations may be expensive, especially when applied to large amounts of text. Authors are encouraged to assess the impact on performance when using text-wrap-style: pretty, and possibly use it selectively where it matters most.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-pretty",
           "type": "value",
           "value": "pretty"
+        },
+        {
+          "name": "avoid-orphans",
+          "prose": "Specifies the UA should avoid excessively short last lines, and is expected to consider more than one line when making break decisions (for example, to avoid \"fixing\" an orphan by making the previous line too short). The user agent may decide against improving the last line when it would make some prior line(s) substantially unbalanced. The user agent should not attempt to improve other aspects of the layout beyond what auto if those improvements come at a significant performance cost. For instance, with the given line length, the following test would be wrapped with a single word on the last line, which could be judged too short. ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν. Applying text-wrap-style: avoid-orphans could yield something like this instead, which is arguably more pleasing: ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν. However, the following fragment is more vexing: Circumnavigating the Mississippi river An attempt to make the last line less short by wrapping the previous line earlier would result in the following: Circumnavigating the Mississippi river While the last line would indeed no longer be short, the penultimate line would be unsightly. In such cases, user agents are expected to prefer the first rendering despite text-wrap-style: avoid-orphans being set.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-avoid-orphans",
+          "type": "value",
+          "value": "avoid-orphans"
         }
       ],
       "styleDeclaration": [
