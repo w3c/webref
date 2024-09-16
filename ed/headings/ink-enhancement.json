@@ -1,68 +1,150 @@
 {
   "spec": {
-    "title": "Web Ink Enhancement: Delegated Ink Trail Presentation Aided By The OS | ink-enhancement",
+    "title": "Ink API",
     "url": "https://wicg.github.io/ink-enhancement/"
   },
   "headings": [
     {
-      "id": "web-ink-enhancement-delegated-ink-trail-presentation-aided-by-the-os",
-      "href": "https://wicg.github.io/ink-enhancement/#web-ink-enhancement-delegated-ink-trail-presentation-aided-by-the-os",
+      "id": "title",
+      "href": "https://wicg.github.io/ink-enhancement/#title",
       "level": 1,
-      "title": "Web Ink Enhancement: Delegated Ink Trail Presentation Aided By The OS"
+      "title": "Ink API"
     },
     {
-      "id": "introduction",
-      "href": "https://wicg.github.io/ink-enhancement/#introduction",
+      "id": "abstract",
+      "href": "https://wicg.github.io/ink-enhancement/#abstract",
       "level": 2,
-      "title": "Introduction"
+      "title": "Abstract"
     },
     {
-      "id": "problem",
-      "href": "https://wicg.github.io/ink-enhancement/#problem",
+      "id": "status",
+      "href": "https://wicg.github.io/ink-enhancement/#status",
       "level": 2,
-      "title": "Problem"
+      "title": "Status of this document"
     },
     {
-      "id": "solution",
-      "href": "https://wicg.github.io/ink-enhancement/#solution",
+      "id": "toc",
+      "href": "https://wicg.github.io/ink-enhancement/#toc",
       "level": 2,
-      "title": "Solution"
+      "title": "Table of Contents"
     },
     {
-      "id": "sample-app-flow",
-      "href": "https://wicg.github.io/ink-enhancement/#sample-app-flow",
+      "id": "intro",
+      "href": "https://wicg.github.io/ink-enhancement/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "scope",
+      "href": "https://wicg.github.io/ink-enhancement/#scope",
+      "level": 2,
+      "title": "Scope",
+      "number": "2"
+    },
+    {
+      "id": "ink-api",
+      "href": "https://wicg.github.io/ink-enhancement/#ink-api",
+      "level": 2,
+      "title": "Ink API",
+      "number": "3"
+    },
+    {
+      "id": "ink-api-introduction",
+      "href": "https://wicg.github.io/ink-enhancement/#ink-api-introduction",
       "level": 3,
-      "title": "Sample app flow"
+      "title": "Introduction",
+      "number": "3.1"
     },
     {
-      "id": "goals",
-      "href": "https://wicg.github.io/ink-enhancement/#goals",
-      "level": 2,
-      "title": "Goals"
+      "id": "ink-interface",
+      "href": "https://wicg.github.io/ink-enhancement/#ink-interface",
+      "level": 3,
+      "title": "Ink interface",
+      "number": "3.2"
     },
     {
-      "id": "non-goals",
-      "href": "https://wicg.github.io/ink-enhancement/#non-goals",
-      "level": 2,
-      "title": "Non-goals"
+      "id": "ink-presenter-param",
+      "href": "https://wicg.github.io/ink-enhancement/#ink-presenter-param",
+      "level": 3,
+      "title": "InkPresenterParam dictionary",
+      "number": "3.3"
     },
     {
-      "id": "code-example",
-      "href": "https://wicg.github.io/ink-enhancement/#code-example",
-      "level": 2,
-      "title": "Code example"
+      "id": "ink-presenter",
+      "href": "https://wicg.github.io/ink-enhancement/#ink-presenter",
+      "level": 3,
+      "title": "DelegatedInkTrailPresenter interface",
+      "number": "3.4"
     },
     {
-      "id": "interface-details",
-      "href": "https://wicg.github.io/ink-enhancement/#interface-details",
-      "level": 2,
-      "title": "Interface Details"
+      "id": "ink-trail-style",
+      "href": "https://wicg.github.io/ink-enhancement/#ink-trail-style",
+      "level": 3,
+      "title": "InkTrailStyle dictionary",
+      "number": "3.5"
     },
     {
-      "id": "other-options",
-      "href": "https://wicg.github.io/ink-enhancement/#other-options",
+      "id": "navigator-interface-extensions",
+      "href": "https://wicg.github.io/ink-enhancement/#navigator-interface-extensions",
+      "level": 3,
+      "title": "Ink Navigator interface extension",
+      "number": "3.6"
+    },
+    {
+      "id": "usage-examples",
+      "href": "https://wicg.github.io/ink-enhancement/#usage-examples",
       "level": 2,
-      "title": "Other options"
+      "title": "Usage Examples",
+      "number": "4"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/ink-enhancement/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/ink-enhancement/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/ink-enhancement/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/ink-enhancement/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/ink-enhancement/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/ink-enhancement/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/ink-enhancement/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/ink-enhancement/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
     }
   ]
 }
