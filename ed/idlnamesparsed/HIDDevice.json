@@ -6,7 +6,7 @@
       "title": "WebHID API",
       "url": "https://wicg.github.io/webhid/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface HIDDevice : EventTarget {\n    attribute EventHandler oninputreport;\n    readonly attribute boolean opened;\n    readonly attribute unsigned short vendorId;\n    readonly attribute unsigned short productId;\n    readonly attribute DOMString productName;\n    readonly attribute FrozenArray<HIDCollectionInfo> collections;\n    Promise<undefined> open();\n    Promise<undefined> close();\n    Promise<undefined> forget();\n    Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<undefined> sendFeatureReport(\n        [EnforceRange] octet reportId,\n        BufferSource data);\n    Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);\n};",
+    "fragment": "[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]\ninterface HIDDevice : EventTarget {\n    attribute EventHandler oninputreport;\n    readonly attribute boolean opened;\n    readonly attribute unsigned short vendorId;\n    readonly attribute unsigned short productId;\n    readonly attribute DOMString productName;\n    readonly attribute FrozenArray<HIDCollectionInfo> collections;\n    Promise<undefined> open();\n    Promise<undefined> close();\n    Promise<undefined> forget();\n    Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<undefined> sendFeatureReport(\n        [EnforceRange] octet reportId,\n        BufferSource data);\n    Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);\n};",
     "href": "https://wicg.github.io/webhid/#dom-hiddevice"
   },
   "extended": [],

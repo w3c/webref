@@ -33,7 +33,7 @@ WorkerNavigator includes NavigatorStorageBuckets;
 WorkerNavigator includes NavigatorUA;
 
 // Source: WebHID API (https://wicg.github.io/webhid/)
-[Exposed=ServiceWorker, SecureContext]
+[Exposed=(DedicatedWorker,ServiceWorker), SecureContext]
 partial interface WorkerNavigator {
     [SameObject] readonly attribute HID hid;
 };

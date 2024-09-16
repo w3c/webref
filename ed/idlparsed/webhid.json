@@ -6,15 +6,29 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
+        "DedicatedWorker": [
+          "HIDConnectionEvent",
+          "HIDInputReportEvent"
+        ],
+        "ServiceWorker": [
+          "HIDConnectionEvent",
+          "HIDInputReportEvent"
+        ],
         "Window": [
           "HIDConnectionEvent",
           "HIDInputReportEvent"
         ]
       },
       "functions": {
+        "DedicatedWorker": [
+          "WorkerNavigator",
+          "HID",
+          "HIDDevice"
+        ],
         "ServiceWorker": [
           "WorkerNavigator",
-          "HID"
+          "HID",
+          "HIDDevice"
         ],
         "Window": [
           "HID",
@@ -24,7 +38,7 @@
     },
     "idlNames": {
       "HID": {
-        "fragment": "[Exposed=(Window,ServiceWorker), SecureContext]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    [Exposed=Window] Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
+        "fragment": "[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    [Exposed=Window] Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
         "type": "interface",
         "name": "HID",
         "inheritance": "EventTarget",
@@ -165,10 +179,13 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "Window"
+                  "value": "DedicatedWorker"
                 },
                 {
                   "value": "ServiceWorker"
+                },
+                {
+                  "value": "Window"
                 }
               ]
             },
@@ -321,7 +338,7 @@
         "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter"
       },
       "HIDDevice": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface HIDDevice : EventTarget {\n    attribute EventHandler oninputreport;\n    readonly attribute boolean opened;\n    readonly attribute unsigned short vendorId;\n    readonly attribute unsigned short productId;\n    readonly attribute DOMString productName;\n    readonly attribute FrozenArray<HIDCollectionInfo> collections;\n    Promise<undefined> open();\n    Promise<undefined> close();\n    Promise<undefined> forget();\n    Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<undefined> sendFeatureReport(\n        [EnforceRange] octet reportId,\n        BufferSource data);\n    Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);\n};",
+        "fragment": "[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]\ninterface HIDDevice : EventTarget {\n    attribute EventHandler oninputreport;\n    readonly attribute boolean opened;\n    readonly attribute unsigned short vendorId;\n    readonly attribute unsigned short productId;\n    readonly attribute DOMString productName;\n    readonly attribute FrozenArray<HIDCollectionInfo> collections;\n    Promise<undefined> open();\n    Promise<undefined> close();\n    Promise<undefined> forget();\n    Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<undefined> sendFeatureReport(\n        [EnforceRange] octet reportId,\n        BufferSource data);\n    Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);\n};",
         "type": "interface",
         "name": "HIDDevice",
         "inheritance": "EventTarget",
@@ -691,8 +708,18 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "ServiceWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
             },
             "arguments": []
           },
@@ -707,7 +734,7 @@
         "href": "https://wicg.github.io/webhid/#dom-hiddevice"
       },
       "HIDConnectionEvent": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface HIDConnectionEvent : Event {\n    constructor(DOMString type, HIDConnectionEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n};",
+        "fragment": "[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]\ninterface HIDConnectionEvent : Event {\n    constructor(DOMString type, HIDConnectionEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n};",
         "type": "interface",
         "name": "HIDConnectionEvent",
         "inheritance": "Event",
@@ -780,8 +807,18 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "ServiceWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
             },
             "arguments": []
           },
@@ -823,7 +860,7 @@
         "href": "https://wicg.github.io/webhid/#dom-hidconnectioneventinit"
       },
       "HIDInputReportEvent": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface HIDInputReportEvent : Event {\n    constructor(DOMString type, HIDInputReportEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n    readonly attribute octet reportId;\n    readonly attribute DataView data;\n};",
+        "fragment": "[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]\ninterface HIDInputReportEvent : Event {\n    constructor(DOMString type, HIDInputReportEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n    readonly attribute octet reportId;\n    readonly attribute DataView data;\n};",
         "type": "interface",
         "name": "HIDInputReportEvent",
         "inheritance": "Event",
@@ -928,8 +965,18 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "ServiceWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
             },
             "arguments": []
           },
@@ -1780,7 +1827,7 @@
       ],
       "WorkerNavigator": [
         {
-          "fragment": "[Exposed=ServiceWorker, SecureContext]\npartial interface WorkerNavigator {\n    [SameObject] readonly attribute HID hid;\n};",
+          "fragment": "[Exposed=(DedicatedWorker,ServiceWorker), SecureContext]\npartial interface WorkerNavigator {\n    [SameObject] readonly attribute HID hid;\n};",
           "type": "interface",
           "name": "WorkerNavigator",
           "inheritance": null,
@@ -1814,8 +1861,15 @@
               "type": "extended-attribute",
               "name": "Exposed",
               "rhs": {
-                "type": "identifier",
-                "value": "ServiceWorker"
+                "type": "identifier-list",
+                "value": [
+                  {
+                    "value": "DedicatedWorker"
+                  },
+                  {
+                    "value": "ServiceWorker"
+                  }
+                ]
               },
               "arguments": []
             },
@@ -1832,9 +1886,19 @@
     },
     "globals": {},
     "exposed": {
+      "DedicatedWorker": [
+        "WorkerNavigator",
+        "HID",
+        "HIDDevice",
+        "HIDConnectionEvent",
+        "HIDInputReportEvent"
+      ],
       "ServiceWorker": [
         "WorkerNavigator",
-        "HID"
+        "HID",
+        "HIDDevice",
+        "HIDConnectionEvent",
+        "HIDInputReportEvent"
       ],
       "Window": [
         "HID",

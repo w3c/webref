@@ -6,7 +6,7 @@
       "title": "WebHID API",
       "url": "https://wicg.github.io/webhid/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface HIDConnectionEvent : Event {\n    constructor(DOMString type, HIDConnectionEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n};",
+    "fragment": "[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]\ninterface HIDConnectionEvent : Event {\n    constructor(DOMString type, HIDConnectionEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n};",
     "href": "https://wicg.github.io/webhid/#dom-hidconnectionevent"
   },
   "extended": [],

@@ -1,5 +1,5 @@
 // Source: WebHID API (https://wicg.github.io/webhid/)
-[Exposed=Window, SecureContext]
+[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]
 interface HIDInputReportEvent : Event {
     constructor(DOMString type, HIDInputReportEventInit eventInitDict);
     [SameObject] readonly attribute HIDDevice device;

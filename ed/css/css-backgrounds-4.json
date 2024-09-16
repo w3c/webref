@@ -224,13 +224,13 @@
       "name": "background-position",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-position",
       "value": "<bg-position>#",
-      "initial": "see individual properties",
-      "appliesTo": "see individual properties",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
+      "initial": "0% 0%",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to size of background positioning area minus size of background image; see text",
+      "computedValue": "a list, each item a pair of offsets (horizontal and vertical) from the top left origin, each offset given as a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
+      "animationType": "repeatable list",
       "styleDeclaration": [
         "background-position",
         "backgroundPosition"
@@ -354,9 +354,16 @@
     },
     {
       "name": "<bg-position>",
+      "prose": "Its value is given as a comma-separated list of <bg-position> values, which are interpreted as <position> values with the resized background image as the alignment subject and the background positioning area as the alignment container.",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-position",
       "type": "type",
-      "value": "[ [ left | center | right | top | bottom | start | end | <length-percentage> ] | [ left | center | right | x-start | x-end | <length-percentage> ] [ top | center | bottom | y-start | y-end | <length-percentage> ] | [ center | [ left | right | x-start | x-end ] <length-percentage>? ] && [ center | [ top | bottom | y-start | y-end ] <length-percentage>? ] | [ center | [ start | end ] <length-percentage>? ] [ center | [ start | end ] <length-percentage>? ] ]"
+      "value": "<position> | <position-three>"
+    },
+    {
+      "name": "<position-three>",
+      "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-position-three",
+      "type": "type",
+      "value": "[ [ left | center | right ] && [ [ top | bottom ] <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ top | center | bottom ] ]"
     },
     {
       "name": "<bg-clip>",

@@ -11,7 +11,11 @@
       "https://encoding.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://github.com/tc39/source-map": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "algorithm-control-flow"
+        ]
+      },
       "https://tc39.es/ecma262/": {},
       "https://tc39.es/ecma262/multipage/": {},
       "https://url.spec.whatwg.org/": {},
@@ -43,11 +47,23 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
+          "struct",
           "string",
           "list",
+          "boolean",
+          "parse-a-json-string-to-an-infra-value",
+          "map-exists",
           "list-iterate",
+          "list-append",
+          "ascii-string",
+          "code-unit",
           "strictly-split",
+          "list-size",
           "string-position-variable",
+          "byte",
+          "byte-value",
+          "code-unit-substring",
+          "string-concatenate",
           "iteration-while",
           "collect-a-sequence-of-code-points",
           "iteration-break",
@@ -72,6 +88,7 @@
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url",
+          "concept-url-parser",
           "concept-url-scheme"
         ]
       },

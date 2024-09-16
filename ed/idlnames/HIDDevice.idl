@@ -1,5 +1,5 @@
 // Source: WebHID API (https://wicg.github.io/webhid/)
-[Exposed=Window, SecureContext]
+[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]
 interface HIDDevice : EventTarget {
     attribute EventHandler oninputreport;
     readonly attribute boolean opened;
