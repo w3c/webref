@@ -357,7 +357,13 @@
       "prose": "Its value is given as a comma-separated list of <bg-position> values, which are interpreted as <position> values with the resized background image as the alignment subject and the background positioning area as the alignment container.",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-position",
       "type": "type",
-      "value": "<position> |"
+      "value": "<position> | <position-three>"
+    },
+    {
+      "name": "<position-three>",
+      "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-position-three",
+      "type": "type",
+      "value": "[ [ left | center | right ] && [ [ top | bottom ] <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ top | center | bottom ] ]"
     },
     {
       "name": "<bg-clip>",
@@ -387,13 +393,6 @@
           "value": "border-area"
         }
       ]
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "<position-three>",
-      "value": "[ [ left | center | right ] && [ [ top | bottom ] <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ top | center | bottom ] ]"
     }
   ]
 }
