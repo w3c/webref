@@ -6,4 +6,5 @@ dictionary WebTransportOptions {
   WebTransportCongestionControl congestionControl = "default";
   [EnforceRange] unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams = null;
   [EnforceRange] unsigned short? anticipatedConcurrentIncomingBidirectionalStreams = null;
+  sequence<DOMString> protocols = [];
 };
