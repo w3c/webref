@@ -1,0 +1,12 @@
+// Source: Media Queries Level 5 (https://www.w3.org/TR/mediaqueries-5/)
+[Exposed=Window, SecureContext]
+interface PreferenceObject : EventTarget {
+  readonly attribute DOMString? override;
+  readonly attribute DOMString value;
+  readonly attribute FrozenArray<DOMString> validValues;
+
+  undefined clearOverride();
+  Promise<undefined> requestOverride(DOMString? value);
+
+  attribute EventHandler onchange;
+};

@@ -34,6 +34,7 @@
         ]
       },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
       "https://drafts.csswg.org/css-color-adjust-1/": {
         "anchors": [
@@ -47,6 +48,11 @@
       "https://drafts.csswg.org/css-values-4/": {},
       "https://drafts.csswg.org/css-writing-modes-4/": {},
       "https://drafts.csswg.org/css2/": {},
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "extensions-to-the-window-interface"
+        ]
+      },
       "https://drafts.csswg.org/cssom-view/": {},
       "https://drafts.csswg.org/mediaqueries-3/": {},
       "https://drafts.csswg.org/mediaqueries-4/": {
@@ -78,8 +84,22 @@
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://w3c.github.io/manifest/": {},
+      "https://webidl.spec.whatwg.org/": {},
       "https://webstore.iec.ch/publication/6169": {},
-      "https://wicg.github.io/savedata/": {},
+      "https://wicg.github.io/savedata/": {
+        "anchors": [
+          "save-data-request-header-field",
+          "savedata-attribute"
+        ]
+      },
+      "https://wicg.github.io/user-preference-media-features-headers/": {
+        "anchors": [
+          "sec-ch-prefers-color-scheme",
+          "sec-ch-prefers-contrast",
+          "sec-ch-prefers-reduced-motion",
+          "sec-ch-prefers-reduced-transparency"
+        ]
+      },
       "https://www.color.org/chardata/rgb/DisplayP3.xalter": {},
       "https://www.itu.int/rec/R-REC-BT.2020/en": {},
       "https://www.rfc-editor.org/rfc/rfc2879": {},
@@ -101,6 +121,13 @@
       "https://www.w3.org/policies/process/20231103/": {}
     },
     "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document-origin",
+          "eventtarget",
+          "concept-event-fire"
+        ]
+      },
       "https://drafts.csswg.org/css-cascade-5/": {
         "anchors": [
           "at-ruledef-import",
@@ -173,12 +200,34 @@
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
           "browsing-context",
-          "top-level-browsing-context"
+          "top-level-browsing-context",
+          "fully-active"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "navigator"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "event-handler-idl-attributes",
+          "event-handlers",
+          "event-handler-event-type",
+          "concept-relevant-global"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "ascii-case-insensitive"
+          "ascii-case-insensitive",
+          "user-agent"
         ]
       },
       "https://w3c.github.io/manifest/": {
@@ -191,6 +240,26 @@
           "dfn-minimal-ui",
           "dfn-browser",
           "dfn-display"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "SecureContext",
+          "SameObject",
+          "idl-sequence",
+          "idl-DOMString",
+          "idl-frozen-array",
+          "idl-undefined",
+          "idl-promise",
+          "this",
+          "a-new-promise",
+          "a-promise-rejected-with",
+          "notallowederror",
+          "idl-DOMException",
+          "resolve",
+          "reject",
+          "exceptiondef-typeerror"
         ]
       },
       "https://www.w3.org/TR/css-writing-modes-4/": {

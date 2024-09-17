@@ -270,6 +270,12 @@ partial interface Navigator {
   [SameObject, SecureContext] readonly attribute MediaDevices mediaDevices;
 };
 
+// Source: Media Queries Level 5 (https://www.w3.org/TR/mediaqueries-5/)
+[Exposed=Window, SecureContext]
+partial interface Navigator {
+  [SameObject] readonly attribute PreferenceManager preferences;
+};
+
 // Source: Media Session (https://www.w3.org/TR/mediasession/)
 [Exposed=Window]
 partial interface Navigator {
