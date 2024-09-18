@@ -79,7 +79,19 @@
       "name": "::details-content",
       "prose": "The ::details-content pseudo-element targets the additional information in a a details element that can be expanded or collapsed. It is a part-like pseudo-element.",
       "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-details-content"
+    },
+    {
+      "name": "::picker()",
+      "prose": "The ::picker() pseudo-element targets the popup picker of form control elements which have popup pickers, such as the select element. It is a part-like pseudo-element.",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-picker"
     }
   ],
-  "values": []
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "=",
+      "value": "::picker( <ident>+ )"
+    }
+  ]
 }

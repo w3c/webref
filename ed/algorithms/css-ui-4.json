@@ -1,0 +1,33 @@
+{
+  "spec": {
+    "title": "CSS Basic User Interface Module Level 4",
+    "url": "https://drafts.csswg.org/css-ui-4/"
+  },
+  "algorithms": [
+    {
+      "name": "appearance/base",
+      "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-base",
+      "html": "The effect of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-ui-4/#valdef-appearance-base\" id=\"ref-for-valdef-appearance-base①\">base</a> depends on the element it is applied to:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "elements other than widgets",
+              "html": "<p>Elements other than <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-ui-4/#widget\" id=\"ref-for-widget①①\">widgets</a> must be rendered as for <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-ui-4/#valdef-appearance-none\" id=\"ref-for-valdef-appearance-none③\">none</a>.</p>"
+            },
+            {
+              "case": "Widgets which support base appearance",
+              "html": "<p>Just like <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-ui-4/#valdef-appearance-none\" id=\"ref-for-valdef-appearance-none④\">none</a>, the element is rendered following the\nusual rules of CSS. <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-ui-4/#widget\" id=\"ref-for-widget①③\">Widgets</a> must not have their <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-ui-4/#native-appearance\" id=\"ref-for-native-appearance⑥\">native\nappearance</a>, and instead must have their <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-ui-4/#base-appearance\" id=\"ref-for-base-appearance①\">base appearance</a>.</p>"
+            },
+            {
+              "case": "Widgets which don’t support base appearance",
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-ui-4/#widget\" id=\"ref-for-widget①⑤\">Widgets</a> which don’t have a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-ui-4/#base-appearance\" id=\"ref-for-base-appearance③\">base appearance</a> must be\nrendered as for <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-ui-4/#valdef-appearance-auto\" id=\"ref-for-valdef-appearance-auto①\">auto</a>. The host language is responsible\nfor defining which <span id=\"ref-for-widget①⑥\">widgets</span> have a <span id=\"ref-for-base-appearance④\">base appearance</span>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
