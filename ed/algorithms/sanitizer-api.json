@@ -5,16 +5,16 @@
   },
   "algorithms": [
     {
-      "name": "DOM-Element-setHTMLUnsafe",
-      "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtmlunsafe%E2%91%A0",
-      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element④\">Element</a></code>'s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"DOM/Element\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dom-element-sethtmlunsafe①\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setHTMLUnsafe</dfn>(<var>html</var>, <var>options</var>) method steps are:",
+      "name": "Element/setHTMLUnsafe",
+      "href": "https://wicg.github.io/sanitizer-api/#element-sethtmlunsafe",
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element④\">Element</a></code>'s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Element\" data-dfn-type=\"dfn\" data-export=\"\" id=\"element-sethtmlunsafe\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setHTMLUnsafe</dfn>(<var>html</var>, <var>options</var>) method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>compliantHTML</var> be the result of invoking the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/trusted-types/dist/spec/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string\">Get Trusted Type compliant string</a> algorithm with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedhtml\" id=\"ref-for-trustedhtml①\">TrustedHTML</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>, <var>html</var>, \"Element setHTMLUnsafe\", and \"script\".</p>"
         },
         {
-          "html": "<p>Let <var>target</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#template-contents\" id=\"ref-for-template-contents\">template contents</a> if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#htmltemplateelement\" id=\"ref-for-htmltemplateelement\">template</a></code> element; otherwise <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>.</p>"
+          "html": "<p>Let <var>target</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\" id=\"ref-for-template-contents\">template contents</a> if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#htmltemplateelement\" id=\"ref-for-htmltemplateelement\">template</a></code> element; otherwise <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#set-and-filter-html\" id=\"ref-for-set-and-filter-html\">Set and filter HTML</a> given <var>target</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>, <var>compliantHTML</var>, <var>options</var>, and false.</p>"
@@ -22,13 +22,13 @@
       ]
     },
     {
-      "name": "DOM-Element-setHTML",
-      "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml%E2%91%A0",
-      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑤\">Element</a></code>'s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"DOM/Element\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dom-element-sethtml①\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setHTML</dfn>(<var>html</var>, <var>options</var>) method steps are:",
+      "name": "Element/setHTML",
+      "href": "https://wicg.github.io/sanitizer-api/#element-sethtml",
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑤\">Element</a></code>'s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Element\" data-dfn-type=\"dfn\" data-export=\"\" id=\"element-sethtml\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setHTML</dfn>(<var>html</var>, <var>options</var>) method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>target</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#template-contents\" id=\"ref-for-template-contents①\">template contents</a> if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#htmltemplateelement\" id=\"ref-for-htmltemplateelement①\">template</a></code>; otherwise <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.</p>"
+          "html": "<p>Let <var>target</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\" id=\"ref-for-template-contents①\">template contents</a> if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#htmltemplateelement\" id=\"ref-for-htmltemplateelement①\">template</a></code>; otherwise <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#set-and-filter-html\" id=\"ref-for-set-and-filter-html①\">Set and filter HTML</a> given <var>target</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>, <var>html</var>, <var>options</var>, and true.</p>"
@@ -36,9 +36,9 @@
       ]
     },
     {
-      "name": "ShadowRoot-setHTMLUnsafe",
-      "href": "https://wicg.github.io/sanitizer-api/#dom-shadowroot-sethtmlunsafe%E2%91%A0",
-      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#shadowroot\" id=\"ref-for-shadowroot③\">ShadowRoot</a></code>'s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"DOM/ShadowRoot\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dom-shadowroot-sethtmlunsafe①\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setHTMLUnsafe</dfn>(<var>html</var>, <var>options</var>) method steps are:",
+      "name": "ShadowRoot/setHTMLUnsafe",
+      "href": "https://wicg.github.io/sanitizer-api/#shadowroot-sethtmlunsafe",
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#shadowroot\" id=\"ref-for-shadowroot③\">ShadowRoot</a></code>'s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ShadowRoot\" data-dfn-type=\"dfn\" data-export=\"\" id=\"shadowroot-sethtmlunsafe\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setHTMLUnsafe</dfn>(<var>html</var>, <var>options</var>) method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -50,9 +50,9 @@
       ]
     },
     {
-      "name": "ShadowRoot-setHTML",
-      "href": "https://wicg.github.io/sanitizer-api/#dom-shadowroot-sethtml%E2%91%A0",
-      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#shadowroot\" id=\"ref-for-shadowroot④\">ShadowRoot</a></code>'s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"DOM/ShadowRoot\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dom-shadowroot-sethtml①\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setHTML</dfn>(<var>html</var>, <var>options</var>) method steps are:",
+      "name": "ShadowRoot/setHTML",
+      "href": "https://wicg.github.io/sanitizer-api/#shadowroot-sethtml",
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#shadowroot\" id=\"ref-for-shadowroot④\">ShadowRoot</a></code>'s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ShadowRoot\" data-dfn-type=\"dfn\" data-export=\"\" id=\"shadowroot-sethtml\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">setHTML</dfn>(<var>html</var>, <var>options</var>) method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -61,9 +61,9 @@
       ]
     },
     {
-      "name": "parseHTMLUnsafe",
-      "href": "https://wicg.github.io/sanitizer-api/#dom-document-parsehtmlunsafe%E2%91%A0",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"DOM/Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dom-document-parsehtmlunsafe①\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parseHTMLUnsafe</dfn>(<var>html</var>, <var>options</var>) method steps are:",
+      "name": "Document/parseHTMLUnsafe",
+      "href": "https://wicg.github.io/sanitizer-api/#document-parsehtmlunsafe",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-parsehtmlunsafe\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parseHTMLUnsafe</dfn>(<var>html</var>, <var>options</var>) method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -90,9 +90,9 @@
       ]
     },
     {
-      "name": "parseHTML",
-      "href": "https://wicg.github.io/sanitizer-api/#dom-document-parsehtml%E2%91%A0",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"DOM/Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dom-document-parsehtml①\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parseHTML</dfn>(<var>html</var>, <var>options</var>) method steps are:",
+      "name": "Document/parseHTML",
+      "href": "https://wicg.github.io/sanitizer-api/#document-parsehtml",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-parsehtml\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parseHTML</dfn>(<var>html</var>, <var>options</var>) method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
