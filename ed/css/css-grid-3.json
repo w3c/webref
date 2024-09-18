@@ -206,11 +206,11 @@
     {
       "name": "masonry-template-tracks",
       "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-template-tracks",
-      "value": "<'grid-template-columns'>",
+      "value": "none | <track-list> | <masonry-auto-track-list> | subgrid <line-name-list>?",
       "initial": "repeat(auto-areas, auto)",
       "appliesTo": "masonry containers",
       "inherited": "no",
-      "percentages": "refer to correspodning dimension of the content area",
+      "percentages": "refer to corresponding dimension of the content area",
       "computedValue": "by computed value type per item in the computed track list",
       "canonicalOrder": "per grammar",
       "animationType": "if list lengths match, by computed value type; otherwise, discrete",
@@ -242,7 +242,7 @@
       "initial": "auto",
       "appliesTo": "grid containers",
       "inherited": "no",
-      "percentages": "refer to correspodning dimension of the content area",
+      "percentages": "refer to corresponding dimension of the content area",
       "computedValue": "a computed track list",
       "canonicalOrder": "per grammar",
       "animationType": "if the list lengths match, by computed value type per item; discrete otherwise",
@@ -303,7 +303,14 @@
   ],
   "atrules": [],
   "selectors": [],
-  "values": [],
+  "values": [
+    {
+      "name": "<masonry-auto-track-list>",
+      "href": "https://drafts.csswg.org/css-grid-3/#typedef-masonry-auto-track-list",
+      "type": "type",
+      "value": "[ <line-names>? [ <track-size> | <track-repeat> ] ]* <line-names>? <auto-repeat> <line-names>? [ [ <track-size> | <track-repeat> ] <line-names>? ]*"
+    }
+  ],
   "warnings": [
     {
       "msg": "Dangling value",
