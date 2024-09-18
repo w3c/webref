@@ -25,7 +25,7 @@
         },
         {
           "name": "allow-keywords",
-          "prose": "Two values can be interpolated if one of them is an <intrinsic-size-keyword> and the other is a <length-percentage>. This is done by treating the <intrinsic-size-keyword> keyword as though it is calc-size(keyword, size) and applying the rules in § 9.3 Interpolating calc-size(). In other cases, an <intrinsic-size-keyword> still cannot be interpolated.",
+          "prose": "Two values can be interpolated if one of them is an <intrinsic-size-keyword> and the other is a <length-percentage>. This is done by treating the <intrinsic-size-keyword> keyword as though it is calc-size(keyword, size) and applying the rules in § 10.3 Interpolating calc-size(). In other cases, an <intrinsic-size-keyword> still cannot be interpolated.",
           "href": "https://www.w3.org/TR/css-values-5/#valdef-interpolate-size-allow-keywords",
           "type": "value",
           "value": "allow-keywords"
@@ -156,6 +156,131 @@
       ]
     },
     {
+      "name": "<position>",
+      "prose": "The <position> value specifies the position of an alignment subject (e.g. a background image) inside an alignment container (e.g. its background positioning area) as a pair of offsets between the specified edges (defaulting to the left and top). Its syntax is:",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-position",
+      "type": "type",
+      "value": "<position-one> | <position-two> | <position-four>",
+      "values": [
+        {
+          "name": "<length-percentage>",
+          "prose": "A <length-percentage> value specifies the size of the offset between the specified edges of the alignment subject and alignment container. For example, for background-position: 2cm 1cm, the top left corner of the background image is placed 2cm to the right and 1cm below the top left corner of the background positioning area. A <percentage> for the horizontal offset is relative to (width of alignment container - width of alignment subject). A <percentage> for the vertical offset is relative to (height of alignment container - height of alignment subject). For example, with a value pair of 0% 0%, the upper left corner of the alignment subject is aligned with the upper left corner of the alignment container A value pair of 100% 100% places the lower right corner of the alignment subject in the lower right corner of the alignment container. With a value pair of 75% 50%, the point 75% across and 50% down the alignment subject is to be placed at the point 75% across and 50% down the alignment container. Diagram of the meaning of background-position: 75% 50%.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-length-percentage",
+          "type": "value",
+          "value": "<length-percentage>"
+        },
+        {
+          "name": "top",
+          "prose": "Offsets the top/left/right/bottom edges (respectively) of the alignment subject and alignment container by the specified amount (defaulting to 0%) in the corresponding axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-top",
+          "type": "value",
+          "value": "top"
+        },
+        {
+          "name": "right",
+          "prose": "Offsets the top/left/right/bottom edges (respectively) of the alignment subject and alignment container by the specified amount (defaulting to 0%) in the corresponding axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-right",
+          "type": "value",
+          "value": "right"
+        },
+        {
+          "name": "bottom",
+          "prose": "Offsets the top/left/right/bottom edges (respectively) of the alignment subject and alignment container by the specified amount (defaulting to 0%) in the corresponding axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-bottom",
+          "type": "value",
+          "value": "bottom"
+        },
+        {
+          "name": "left",
+          "prose": "Offsets the top/left/right/bottom edges (respectively) of the alignment subject and alignment container by the specified amount (defaulting to 0%) in the corresponding axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-left",
+          "type": "value",
+          "value": "left"
+        },
+        {
+          "name": "y-start",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the [=y-axis|y/x axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-y-start",
+          "type": "value",
+          "value": "y-start"
+        },
+        {
+          "name": "y-end",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the [=y-axis|y/x axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-y-end",
+          "type": "value",
+          "value": "y-end"
+        },
+        {
+          "name": "x-start",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the [=y-axis|y/x axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-x-start",
+          "type": "value",
+          "value": "x-start"
+        },
+        {
+          "name": "x-end",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the [=y-axis|y/x axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-x-end",
+          "type": "value",
+          "value": "x-end"
+        },
+        {
+          "name": "block-start",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the block/inline axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-block-start",
+          "type": "value",
+          "value": "block-start"
+        },
+        {
+          "name": "block-end",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the block/inline axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-block-end",
+          "type": "value",
+          "value": "block-end"
+        },
+        {
+          "name": "inline-start",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the block/inline axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-inline-start",
+          "type": "value",
+          "value": "inline-start"
+        },
+        {
+          "name": "inline-end",
+          "prose": "Computes the same as the physical edge keyword corresponding to the start/end side in the block/inline axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-inline-end",
+          "type": "value",
+          "value": "inline-end"
+        },
+        {
+          "name": "center",
+          "prose": "Computes to a 50% offset in the corresponding axis.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-position-center",
+          "type": "value",
+          "value": "center"
+        }
+      ]
+    },
+    {
+      "name": "<position-one>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-position-one",
+      "type": "type",
+      "value": "[ left | center | right | top | bottom | x-start | x-end | y-start | y-end | block-start | block-end | inline-start | inline-end | <length-percentage> ]"
+    },
+    {
+      "name": "<position-two>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-position-two",
+      "type": "type",
+      "value": "[ [ left | center | right | x-start | x-end ] && [ top | center | bottom | y-start | y-end ] | [ left | center | right | x-start | x-end | <length-percentage> ] [ top | center | bottom | y-start | y-end | <length-percentage> ] | [ block-start | center | block-end ] && [ inline-start | center | inline-end ] | [ start | center | end ]{2} ]"
+    },
+    {
+      "name": "<position-four>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-position-four",
+      "type": "type",
+      "value": "[ [ [ left | right | x-start | x-end ] <length-percentage> ] && [ [ top | bottom | y-start | y-end ] <length-percentage> ] | [ [ block-start | block-end ] <length-percentage> ] && [ [ inline-start | inline-end ] <length-percentage> ] | [ [ start | end ] <length-percentage> ]{2} ]"
+    },
+    {
       "name": "progress()",
       "prose": "The progress() functional notation returns a <number> value representing the position of one calculation (the progress value) between two other calculations (the progress start value and progress end value). The argument calculations can resolve to any <number>, <dimension>, or <percentage>, but must have a consistent type or else the function is invalid. The result will be a <number>, made consistent with the consistent type of the arguments.",
       "href": "https://www.w3.org/TR/css-values-5/#funcdef-progress",
@@ -196,7 +321,7 @@
       "prose": "The <progress> value type represents the mix progress value in a mix notation, and ultimately resolves to a percentage. It can, however, draw that percentage value from sources such as media queries and animation timelines, and can also convert it through an easing function before using it for interpolation.",
       "href": "https://www.w3.org/TR/css-values-5/#typedef-progress",
       "type": "type",
-      "value": "[ <percentage> | <number> | <'animation-timeline'> ]? && by <easing-function>",
+      "value": "[ <percentage> | <number> | <'animation-timeline'> ] && [ by <easing-function> ]?",
       "values": [
         {
           "name": "<percentage-token>",
@@ -473,7 +598,7 @@
     {
       "msg": "Missing definition",
       "name": "<color-mix()>",
-      "value": "color-mix( <progress> && <color-interpolation-method>?, <color>, <color> ) | color-mix( <color-interpolation-method>, [<color> && <percentage [0,100]>?]#{2} )"
+      "value": "color-mix( [ <progress> && <color-interpolation-method>? ] , <color>, <color> ) | color-mix( <color-interpolation-method>, [<color> && <percentage [0,100]>?]#{2} )"
     },
     {
       "msg": "Missing definition",
