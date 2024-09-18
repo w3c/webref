@@ -180,9 +180,16 @@
           "name": "stuck",
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-stuck",
           "for": "@container",
-          "value": "top | right | bottom | left | block-start | inline-start | block-end | inline-end",
+          "value": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end",
           "type": "discrete",
           "values": [
+            {
+              "name": "none",
+              "prose": "The sticky container is not shifted in any direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-stuck-none",
+              "type": "value",
+              "value": "none"
+            },
             {
               "name": "top",
               "prose": "The sticky container is shifted to stay inside the top edge.",
@@ -245,26 +252,33 @@
           "name": "snapped",
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-snapped",
           "for": "@container",
-          "value": "x | y | block | inline",
+          "value": "none | x | y | block | inline",
           "type": "discrete",
           "values": [
             {
+              "name": "none",
+              "prose": "The query container is not a snap target.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-none",
+              "type": "value",
+              "value": "none"
+            },
+            {
               "name": "x",
-              "prose": "snapped container feature matches x if the query container is a horizontal snap target for its scroll container",
+              "prose": "snapped container feature matches x if the query container is a horizontal snap target for its scroll container.",
               "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-x",
               "type": "value",
               "value": "x"
             },
             {
               "name": "y",
-              "prose": "snapped container feature matches y if the query container is a vertical snap target for its scroll container",
+              "prose": "snapped container feature matches y if the query container is a vertical snap target for its scroll container.",
               "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-y",
               "type": "value",
               "value": "y"
             },
             {
               "name": "block",
-              "prose": "snapped container feature matches block if the query container is a snap target for its scroll container in the block direction of the snap container.",
+              "prose": "snapped container feature matches block if the query container is a snap target for its scroll container. in the block direction of the snap container.",
               "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-block",
               "type": "value",
               "value": "block"
@@ -282,9 +296,16 @@
           "name": "overflowing",
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-overflowing",
           "for": "@container",
-          "value": "top | right | bottom | left | block-start | inline-start | block-end | inline-end",
+          "value": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end",
           "type": "discrete",
           "values": [
+            {
+              "name": "none",
+              "prose": "The scroll container does not have scrollable overflow in any direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-overflowing-none",
+              "type": "value",
+              "value": "none"
+            },
             {
               "name": "top",
               "prose": "The scroll container has scrollable overflow past the top edge.",
