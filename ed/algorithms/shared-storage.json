@@ -230,19 +230,19 @@
           "html": "<p>Let <var>document</var> be <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-global-scopes\" id=\"ref-for-concept-worklet-global-scopes④\">global scopes</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> is 1.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-global-scopes\" id=\"ref-for-concept-worklet-global-scopes④\">global scopes</a> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, then return a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">promise rejected</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>globalScope</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-global-scopes\" id=\"ref-for-concept-worklet-global-scopes⑤\">global scopes</a>[0].</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-global-scopes\" id=\"ref-for-concept-worklet-global-scopes⑤\">global scopes</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> is 1.</p>"
+        },
+        {
+          "html": "<p>Let <var>globalScope</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-global-scopes\" id=\"ref-for-concept-worklet-global-scopes⑥\">global scopes</a>[0].</p>"
         },
         {
           "html": "<p>Let <var>workletDataOrigin</var> be <var>globalScope</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\" id=\"ref-for-concept-global-object-realm①\">realm</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object①\">settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑤\">origin</a>.</p>"
         },
         {
-          "html": "<p>If the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy/#algo-is-feature-enabled\" id=\"ref-for-algo-is-feature-enabled①\">Is feature enabled in document for origin?</a> on \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/shared-storage/#permissionspolicy-shared-storage-select-url\" id=\"ref-for-permissionspolicy-shared-storage-select-url\">shared-storage-select-url</a>\", <var>document</var>, and <var>workletDataOrigin</var> returns false, return a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">promise rejected</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦\">TypeError</a></code>.</p>"
-        },
-        {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-global-scopes\" id=\"ref-for-concept-worklet-global-scopes⑥\">global scopes</a> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, then return a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">promise rejected</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧\">TypeError</a></code>.</p>"
+          "html": "<p>If the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy/#algo-is-feature-enabled\" id=\"ref-for-algo-is-feature-enabled①\">Is feature enabled in document for origin?</a> on \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/shared-storage/#permissionspolicy-shared-storage-select-url\" id=\"ref-for-permissionspolicy-shared-storage-select-url\">shared-storage-select-url</a>\", <var>document</var>, and <var>workletDataOrigin</var> returns false, return a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">promise rejected</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>If the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope-check-whether-addmodule-is-finished\" id=\"ref-for-sharedstorageworkletglobalscope-check-whether-addmodule-is-finished\">check whether addModule is finished</a> for <var>globalScope</var> is false, return a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">promise rejected</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑨\">TypeError</a></code>.</p>"
@@ -753,7 +753,7 @@
       ]
     },
     {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#dom-worklet-addmodule\" id=\"ref-for-dom-worklet-addmodule⑦\">addModule()</a></code> method steps for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#worklet\" id=\"ref-for-worklet②\">Worklet</a></code> will need to include the following step before the step \"Let <var>promise</var> be a new promise\":",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#dom-worklet-addmodule\" id=\"ref-for-dom-worklet-addmodule⑧\">addModule()</a></code> method steps for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#worklet\" id=\"ref-for-worklet②\">Worklet</a></code> will need to include the following step before the step \"Let <var>promise</var> be a new promise\":",
       "rationale": "if",
       "steps": [
         {
@@ -1481,7 +1481,7 @@
           "html": "<p>Let <var>sharedStorage</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>.</p>"
         },
         {
-          "html": "<p>Return <var>sharedStorage</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/shared-storage/#dom-sharedstorage-worklet\" id=\"ref-for-dom-sharedstorage-worklet②\">worklet</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/shared-storage/#dom-sharedstorageworklet-run\" id=\"ref-for-dom-sharedstorageworklet-run⑥\">run</a></code>(<var>name</var>, <var>options</var>).</p>"
+          "html": "<p>Return <var>sharedStorage</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/shared-storage/#dom-sharedstorage-worklet\" id=\"ref-for-dom-sharedstorage-worklet②\">worklet</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/shared-storage/#dom-sharedstorageworklet-run\" id=\"ref-for-dom-sharedstorageworklet-run⑦\">run</a></code>(<var>name</var>, <var>options</var>).</p>"
         }
       ]
     },
@@ -1498,7 +1498,7 @@
           "html": "<p>If <var>options</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">contains</a> <var>dataOrigin</var>, set <var>sharedStorageWorklet</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/shared-storage/#sharedstorageworklet-data-origin\" id=\"ref-for-sharedstorageworklet-data-origin②\">data origin</a> to <var>options</var>[<var>dataOrigin</var>].</p>"
         },
         {
-          "html": "<p>Let <var>addModulePromise</var> be the result of invoking sharedStorageWorklet.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#dom-worklet-addmodule\" id=\"ref-for-dom-worklet-addmodule①⓪\">addModule</a></code>(<var>moduleURL</var>, <var>options</var>).</p>"
+          "html": "<p>Let <var>addModulePromise</var> be the result of invoking sharedStorageWorklet.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#dom-worklet-addmodule\" id=\"ref-for-dom-worklet-addmodule①①\">addModule</a></code>(<var>moduleURL</var>, <var>options</var>).</p>"
         },
         {
           "html": "<p>Let <var>resultPromise</var> be a new <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org#idl-promise\" id=\"ref-for-idl-promise①⑥\">promise</a>.</p>"
