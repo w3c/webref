@@ -100,6 +100,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "exported-gc-object-cache",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#exported-gc-object-cache",
+      "linkingText": [
+        "Exported GC Object cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "global-object-cache",
       "href": "https://webassembly.github.io/js-promise-integration/js-api/#global-object-cache",
       "linkingText": [
@@ -119,10 +138,48 @@
       "definedIn": "prose"
     },
     {
-      "id": "extern-value-cache",
-      "href": "https://webassembly.github.io/js-promise-integration/js-api/#extern-value-cache",
+      "id": "tag-object-cache",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-object-cache",
       "linkingText": [
-        "Extern value cache"
+        "Tag object cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exception-object-cache",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#exception-object-cache",
+      "linkingText": [
+        "Exception object cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-caches",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#object-caches",
+        "title": "WebAssembly JS Object Caches",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "host-value-cache",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#host-value-cache",
+      "linkingText": [
+        "Host value cache"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -624,6 +681,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-webassembly-jstag",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-webassembly-jstag",
+      "linkingText": [
+        "JSTag"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebAssembly"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webassembly-namespace",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#webassembly-namespace",
+        "title": "The WebAssembly Namespace",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "enumdef-importexportkind",
       "href": "https://webassembly.github.io/js-promise-integration/js-api/#enumdef-importexportkind",
       "linkingText": [
@@ -710,6 +788,27 @@
       "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-importexportkind-global",
       "linkingText": [
         "\"global\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ImportExportKind"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "modules",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#modules",
+        "title": "Modules",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-importexportkind-tag",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-importexportkind-tag",
+      "linkingText": [
+        "\"tag\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1334,10 +1433,29 @@
       "definedIn": "pre"
     },
     {
-      "id": "create-a-memory-buffer",
-      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-memory-buffer",
+      "id": "create-a-fixed-length-memory-buffer",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-fixed-length-memory-buffer",
       "linkingText": [
-        "create a memory buffer"
+        "create a fixed length memory buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-resizable-memory-buffer",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-resizable-memory-buffer",
+      "linkingText": [
+        "create a resizable memory buffer"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1413,10 +1531,29 @@
       "definedIn": "prose"
     },
     {
-      "id": "reset-the-memory-buffer",
-      "href": "https://webassembly.github.io/js-promise-integration/js-api/#reset-the-memory-buffer",
+      "id": "refresh-the-memory-buffer",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#refresh-the-memory-buffer",
       "linkingText": [
-        "reset the Memory buffer"
+        "refresh the Memory buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grow-the-memory-buffer",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#grow-the-memory-buffer",
+      "linkingText": [
+        "grow the memory buffer"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1442,6 +1579,67 @@
       "for": [
         "Memory"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-memory-tofixedlengthbuffer",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-memory-tofixedlengthbuffer",
+      "linkingText": [
+        "toFixedLengthBuffer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Memory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-memory-toresizablebuffer",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-memory-toresizablebuffer",
+      "linkingText": [
+        "toResizableBuffer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Memory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memories",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#memories",
+        "title": "Memories",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "HostResizeArrayBuffer",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#HostResizeArrayBuffer",
+      "linkingText": [
+        "abstract operation HostResizeArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2529,10 +2727,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "retrieving-an-extern-value",
-      "href": "https://webassembly.github.io/js-promise-integration/js-api/#retrieving-an-extern-value",
+      "id": "retrieving-a-host-value",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#retrieving-a-host-value",
       "linkingText": [
-        "retrieving an extern value"
+        "retrieving a host value"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2567,6 +2765,749 @@
       "definedIn": "prose"
     },
     {
+      "id": "tag_alloc",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag_alloc",
+      "linkingText": [
+        "tag_alloc"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "tags",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#tags",
+        "title": "Tags",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-tagtype",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dictdef-tagtype",
+      "linkingText": [
+        "TagType"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tagtype-parameters",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-tagtype-parameters",
+      "linkingText": [
+        "parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TagType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "tag",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag",
+      "linkingText": [
+        "Tag"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tag-tag-type-type",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-tag-tag-type-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Tag/Tag(type)",
+        "Tag/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "initialize-a-tag-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-tag-object",
+      "linkingText": [
+        "initialize a Tag object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-tag-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-tag-object",
+      "linkingText": [
+        "create a Tag object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-tag-tag",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-tag-tag",
+      "linkingText": [
+        "Tag(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Tag"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tag-types",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
+        "title": "Tag types",
+        "number": "4.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#exported-gc-object",
+      "linkingText": [
+        "Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "getprototypeof-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#getprototypeof-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[GetPrototypeOf]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "setprototypeof-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#setprototypeof-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[SetPrototypeOf]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "isextensible-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#isextensible-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[IsExtensible]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "preventextensions-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#preventextensions-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[PreventExtensions]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "getownproperty-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#getownproperty-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[GetOwnProperty]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "defineownproperty-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#defineownproperty-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[DefineOwnProperty]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "hasproperty-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#hasproperty-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[HasProperty]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#get-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[Get]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#set-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[Set]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "delete-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#delete-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[Delete]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ownpropertykeys-internal-method-of-an-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#ownpropertykeys-internal-method-of-an-exported-gc-object",
+      "linkingText": [
+        "[[OwnPropertyKeys]] internal method of an Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "a-new-exported-gc-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#a-new-exported-gc-object",
+      "linkingText": [
+        "a new Exported GC Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gc-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
+        "title": "Garbage Collected Objects",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-exceptionoptions",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dictdef-exceptionoptions",
+      "linkingText": [
+        "ExceptionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exceptionoptions-tracestack",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-exceptionoptions-tracestack",
+      "linkingText": [
+        "traceStack"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ExceptionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "exception",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#exception",
+      "linkingText": [
+        "Exception"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exception-exception-exceptiontag-payload-options-exceptiontag",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-exception-exception-exceptiontag-payload-options-exceptiontag",
+      "linkingText": [
+        "exceptionTag"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Exception/Exception(exceptionTag, payload, options)",
+        "Exception/constructor(exceptionTag, payload, options)",
+        "Exception/Exception(exceptionTag, payload)",
+        "Exception/constructor(exceptionTag, payload)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exception-exception-exceptiontag-payload-options-payload",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-exception-exception-exceptiontag-payload-options-payload",
+      "linkingText": [
+        "payload"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Exception/Exception(exceptionTag, payload, options)",
+        "Exception/constructor(exceptionTag, payload, options)",
+        "Exception/Exception(exceptionTag, payload)",
+        "Exception/constructor(exceptionTag, payload)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exception-exception-exceptiontag-payload-options-options",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-exception-exception-exceptiontag-payload-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Exception/Exception(exceptionTag, payload, options)",
+        "Exception/constructor(exceptionTag, payload, options)",
+        "Exception/Exception(exceptionTag, payload)",
+        "Exception/constructor(exceptionTag, payload)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exception-getarg-index-index",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-exception-getarg-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Exception/getArg(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exception-is-exceptiontag-exceptiontag",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-exception-is-exceptiontag-exceptiontag",
+      "linkingText": [
+        "exceptionTag"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Exception/is(exceptionTag)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "initialize-an-exception-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#initialize-an-exception-object",
+      "linkingText": [
+        "initialize an Exception object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-an-exception-object",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-an-exception-object",
+      "linkingText": [
+        "create an Exception object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-exception-exception",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-exception-exception",
+      "linkingText": [
+        "Exception(exceptionTag, payload, options)",
+        "constructor(exceptionTag, payload, options)",
+        "Exception(exceptionTag, payload)",
+        "constructor(exceptionTag, payload)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Exception"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-exception-getarg",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-exception-getarg",
+      "linkingText": [
+        "getArg(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Exception"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-exception-is",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-exception-is",
+      "linkingText": [
+        "is(exceptionTag)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Exception"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-exception-stack",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-exception-stack",
+      "linkingText": [
+        "stack"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Exception"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
+        "title": "Exceptions",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "javascript-exception-tag",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#javascript-exception-tag",
+      "linkingText": [
+        "JavaScript exception tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "js-exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#js-exceptions",
+        "title": "JavaScript exceptions",
+        "number": "4.9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-javascript-exception-tag",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#get-the-javascript-exception-tag",
+      "linkingText": [
+        "get the JavaScript exception tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "js-exceptions",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#js-exceptions",
+        "title": "JavaScript exceptions",
+        "number": "4.9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "exceptiondef-compileerror",
       "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-compileerror",
       "linkingText": [
@@ -2581,7 +3522,7 @@
         "id": "error-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#error-objects",
         "title": "Error Objects",
-        "number": "4.7"
+        "number": "4.10"
       },
       "definedIn": "prose"
     },
@@ -2600,7 +3541,7 @@
         "id": "error-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#error-objects",
         "title": "Error Objects",
-        "number": "4.7"
+        "number": "4.10"
       },
       "definedIn": "prose"
     },
@@ -2619,7 +3560,7 @@
         "id": "error-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#error-objects",
         "title": "Error Objects",
-        "number": "4.7"
+        "number": "4.10"
       },
       "definedIn": "prose"
     }

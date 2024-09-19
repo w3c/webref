@@ -1,5 +1,5 @@
 // Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
-[Exposed=Window]
+[Exposed=(Window,DedicatedWorker), Transferable]
 interface RTCDataChannel : EventTarget {
   readonly attribute USVString label;
   readonly attribute boolean ordered;
