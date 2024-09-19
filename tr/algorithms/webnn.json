@@ -154,7 +154,7 @@
                   "html": "<p>Set the data type of <var>inputTensor</var> to the one that matches <var>inputValue</var>’s <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#table-the-typedarray-constructors\" id=\"ref-for-table-the-typedarray-constructors①\">element type</a>.</p>"
                 },
                 {
-                  "html": "<p>Set the dimensions of <var>inputTensor</var> to <var>inputDescriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions\">dimensions</a></code>.</p>"
+                  "html": "<p>Set the shape of <var>inputTensor</var> to <var>inputDescriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape\">shape</a></code>.</p>"
                 },
                 {
                   "html": "<p>Set the values of elements in <var>inputTensor</var> to the values of elements in <var>inputValue</var>.</p>"
@@ -335,7 +335,7 @@
           "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype②\">dataType</a></code> to <var>dataType</var>.</p>"
         },
         {
-          "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions②\">dimensions</a></code> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone\">clone</a> of <var>dimensions</var>.</p>"
+          "html": "<p>Set <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape②\">shape</a></code> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone\">clone</a> of <var>shape</var>.</p>"
         },
         {
           "html": "<p>Return <var>descriptor</var>.</p>"
@@ -351,7 +351,7 @@
           "html": "<p>Let <var>elementLength</var> be 1.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>dimension</var> of <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions③\">dimensions</a></code>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>dimension</var> of <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape③\">shape</a></code>:",
           "rationale": "set",
           "steps": [
             {
@@ -373,10 +373,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If any element of <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions④\">dimensions</a></code> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#valid-dimension\" id=\"ref-for-valid-dimension\">valid dimension</a>, return false.</p>"
+          "html": "<p>If any element of <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape④\">shape</a></code> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#valid-dimension\" id=\"ref-for-valid-dimension\">valid dimension</a>, return false.</p>"
         },
         {
-          "html": "<p>If <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑤\">dimensions</a></code>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is too large to be supported by the implementation, return false.</p>"
+          "html": "<p>If <var>descriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape⑤\">shape</a></code>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is too large to be supported by the implementation, return false.</p>"
         },
         {
           "html": "<p>If <var>descriptor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperanddescriptor-byte-length\" id=\"ref-for-mloperanddescriptor-byte-length②\">byte length</a> is not supported by the implementation, then return false.</p>"
@@ -982,7 +982,7 @@
           "html": "<p>Let <var>desc</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor②\">creating an MLOperandDescriptor</a> given <var>first</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①⑤\">dataType</a> and <var>first</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①②\">shape</a>.</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑦\">dimensions</a></code>[<var>axis</var>] to <var>first</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①③\">shape</a>[<var>axis</var>].</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape⑦\">shape</a></code>[<var>axis</var>] to <var>first</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①③\">shape</a>[<var>axis</var>].</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①\">the range</a> 1 to <var>inputs</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑦\">size</a>, exclusive:",
@@ -1009,13 +1009,13 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>size</var> be the sum of <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑧\">dimensions</a></code>[<var>axis</var>] and <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①⑥\">shape</a>[<var>dim</var>].</p>"
+                      "html": "<p>Let <var>size</var> be the sum of <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape⑧\">shape</a></code>[<var>axis</var>] and <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①⑥\">shape</a>[<var>dim</var>].</p>"
                     },
                     {
                       "html": "<p>If <var>size</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#valid-dimension\" id=\"ref-for-valid-dimension①\">valid dimension</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④⓪\">TypeError</a></code>.</p>"
                     },
                     {
-                      "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions⑨\">dimensions</a></code>[<var>axis</var>] to <var>size</var>.</p>"
+                      "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape⑨\">shape</a></code>[<var>axis</var>] to <var>size</var>.</p>"
                     }
                   ]
                 }
@@ -3671,7 +3671,7 @@
           "html": "<p>Let <var>desc</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dictdef-mloperanddescriptor\" id=\"ref-for-dictdef-mloperanddescriptor①⑧\">MLOperandDescriptor</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①⓪\">dimensions</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②④\">list</a> « <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape①⓪\">shape</a></code> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②④\">list</a> « <var>batchSize</var>, <var>hiddenSize</var> ».</p>"
         },
         {
           "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-datatype\" id=\"ref-for-dom-mloperanddescriptor-datatype⑤\">dataType</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①①⑦\">dataType</a>.</p>"
@@ -3882,7 +3882,7 @@
           "html": "<p>Set <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlpadoptions-value\" id=\"ref-for-dom-mlpadoptions-value①\">value</a></code> to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#cast\" id=\"ref-for-cast①⑤\">casting</a> <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlpadoptions-value\" id=\"ref-for-dom-mlpadoptions-value②\">value</a></code> to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①②②\">dataType</a>.</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①①\">dimensions</a></code> to <var>outputShape</var>.</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape①①\">shape</a></code> to <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -4121,7 +4121,7 @@
           "html": "<p>If any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item④\">item</a> in <var>outputShape</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#valid-dimension\" id=\"ref-for-valid-dimension①③\">valid dimension</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②⑧⑧\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②①⓪\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①②\">dimensions</a></code> to <var>outputShape</var>.</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape①②\">shape</a></code> to <var>outputShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -4642,7 +4642,7 @@
           "html": "<p>Let <var>inputDescriptor</var> be <var>input</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-descriptor-slot\" id=\"ref-for-dom-mloperand-descriptor-slot①⓪\">[[descriptor]]</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>outputShape</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone①⑦\">clone</a> of <var>inputDescriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①③\">dimensions</a></code>.</p>"
+          "html": "<p>Let <var>outputShape</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone①⑦\">clone</a> of <var>inputDescriptor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape①③\">shape</a></code>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>index</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①①\">the range</a> 0 to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mlresample2doptions-axes\" id=\"ref-for-dom-mlresample2doptions-axes⑤\">axes</a></code>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑥\">size</a>, exclusive:",
@@ -4746,7 +4746,7 @@
           "html": "<p>Let <var>desc</var> be a copy of <var>input</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-descriptor-slot\" id=\"ref-for-dom-mloperand-descriptor-slot①①\">[[descriptor]]</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-dimensions\" id=\"ref-for-dom-mloperanddescriptor-dimensions①④\">dimensions</a></code> to <var>newShape</var>.</p>"
+          "html": "<p>Set <var>desc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperanddescriptor-shape\" id=\"ref-for-dom-mloperanddescriptor-shape①④\">shape</a></code> to <var>newShape</var>.</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
