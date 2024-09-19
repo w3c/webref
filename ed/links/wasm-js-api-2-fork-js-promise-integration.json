@@ -18,7 +18,6 @@
       "https://webassembly.github.io/spec/web-api/index.html": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/2004/01/pp-impl/101196/status": {},
-      "https://www.w3.org/2023/Process-20231103/": {},
       "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
         "anchors": [
           "def-essential",
@@ -28,7 +27,8 @@
       "https://www.w3.org/TR/wasm-core/": {},
       "https://www.w3.org/TR/wasm-js-api/": {},
       "https://www.w3.org/TR/wasm-web-api/": {},
-      "https://www.w3.org/groups/wg/wasm": {}
+      "https://www.w3.org/groups/wg/wasm": {},
+      "https://www.w3.org/policies/process/20231103/": {}
     },
     "autolinks": {
       "https://encoding.spec.whatwg.org/": {
@@ -67,6 +67,7 @@
           "list-append",
           "map-exists",
           "map-set",
+          "map-iterate",
           "list-size"
         ]
       },
@@ -103,13 +104,20 @@
       "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html": {
         "anchors": [
           "sec-ordinaryobjectcreate",
-          "sec-createbuiltinfunction"
+          "sec-createbuiltinfunction",
+          "sec-definemethodproperty"
         ]
       },
       "https://tc39.es/ecma262/multipage/structured-data.html": {
         "anchors": [
           "sec-detacharraybuffer",
           "sec-numerictorawbytes"
+        ]
+      },
+      "https://tc39.es/proposal-resizablearraybuffer/": {
+        "anchors": [
+          "sec-isfixedarraybuffer",
+          "sec-hostresizearraybuffer"
         ]
       },
       "https://tc39.github.io/ecma262/": {
@@ -119,10 +127,14 @@
           "sec-ecmascript-data-types-and-values",
           "sec-arraybuffer-objects",
           "sec-native-error-types-used-in-this-standard-rangeerror",
+          "sec-samevalue",
           "sec-built-in-function-objects",
           "current-realm",
           "%E2%84%A4",
           "%F0%9D%94%BD",
+          "sec-ecmascript-language-types-number-type",
+          "%E2%84%9D",
+          "sec-makebasicobject",
           "sec-nativeerror-object-structure"
         ]
       },
@@ -140,18 +152,26 @@
           "embed-mem-alloc",
           "embed-mem-size",
           "embed-mem-grow",
+          "embed-mem-type",
           "embed-table-alloc",
           "embed-table-size",
           "embed-table-type",
           "embed-table-grow",
           "embed-table-read",
           "embed-table-write",
+          "embed-val-default",
           "embed-global-type",
           "embed-global-read",
           "embed-global-write",
           "embed-func-type",
           "embed-func-invoke",
-          "embed-func-alloc"
+          "embed-exn-tag",
+          "embed-exn-read",
+          "embed-exn-alloc",
+          "embed-func-alloc",
+          "embed-match-valtype",
+          "embed-ref-type",
+          "embed-tag-type"
         ]
       },
       "https://webassembly.github.io/spec/core/binary/modules.html": {
@@ -168,7 +188,8 @@
       },
       "https://webassembly.github.io/spec/core/exec/instructions.html": {
         "anchors": [
-          "exec-memory-grow"
+          "exec-memory-grow",
+          "exec-throw-ref"
         ]
       },
       "https://webassembly.github.io/spec/core/exec/numerics.html": {
@@ -184,12 +205,17 @@
           "syntax-memaddr",
           "syntax-tableaddr",
           "syntax-funcaddr",
+          "syntax-structaddr",
+          "syntax-arrayaddr",
           "syntax-globaladdr",
-          "syntax-externaddr",
+          "syntax-tagaddr",
+          "syntax-exnaddr",
+          "syntax-hostaddr",
           "syntax-externval",
           "values",
           "syntax-frame",
           "syntax-moduleinst",
+          "page-size",
           "table-instances",
           "global-instances",
           "syntax-hostfunc"
@@ -212,8 +238,10 @@
           "syntax-numtype",
           "vector-types",
           "syntax-mut",
+          "syntax-tagtype",
           "syntax-reftype",
-          "syntax-tabletype"
+          "syntax-tabletype",
+          "heap-types"
         ]
       },
       "https://webassembly.github.io/spec/core/syntax/values.html": {
@@ -250,6 +278,7 @@
           "idl-undefined",
           "dfn-throw",
           "dfn-associated-realm",
+          "Exposed",
           "dfn-namespace-object"
         ]
       }
