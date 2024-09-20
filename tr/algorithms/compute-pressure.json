@@ -11,7 +11,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-9\">implementation-defined</a> low-level hardware metrics that contribute to the\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-current-pressure-state\" class=\"internalDFN\" id=\"ref-for-dfn-current-pressure-state-3\">current pressure state</a> drop below or exceed an, per metric,\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-10\">implementation-defined</a> threshold\n        for the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-current-pressure-state\" class=\"internalDFN\" id=\"ref-for-dfn-current-pressure-state-4\">current pressure state</a>, return true."
+          "html": "If <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-9\">implementation-defined</a> low-level hardware metrics that contribute to the\n        current <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pressure-states\" class=\"internalDFN\" id=\"ref-for-dfn-pressure-states-8\">pressure state</a> drop below or exceed an, per metric,\n        <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-index-term-implementation-defined-10\">implementation-defined</a> threshold\n        for the current <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-pressure-states\" class=\"internalDFN\" id=\"ref-for-dfn-pressure-states-9\">pressure state</a>, return true."
         },
         {
           "html": "Return false."
@@ -431,7 +431,7 @@
           "html": "Let <var data-type=\"PressureRecord\">record</var> be <var data-type=\"PressureObserver\">observer</var>.<a data-link-type=\"attribute\" data-lt=\"[[LastRecordMap]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-lastrecordmap\" class=\"internalDFN\" id=\"ref-for-dfn-lastrecordmap-6\"><code>[[LastRecordMap]]</code></a>[<var data-type=\"PressureSource\">source</var>]."
         },
         {
-          "html": "If <var data-type=\"PressureRecord\">record</var>.<a data-link-type=\"attribute\" data-lt=\"[[State]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-2\"><code>[[State]]</code></a> is not equal to <var data-type=\"PressureState\">state</var> and <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-change-in-contributing-factors-is-substantial\" class=\"internalDFN\" id=\"ref-for-dfn-change-in-contributing-factors-is-substantial-2\">change in contributing factors is substantial</a>\n          returns true, return true."
+          "html": "If <var data-type=\"PressureRecord\">record</var>.<a data-link-type=\"attribute\" data-lt=\"[[State]]\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-2\"><code>[[State]]</code></a> is not equal to <var data-type=\"PressureState\">state</var>, return true."
         },
         {
           "html": "Return false."
@@ -599,8 +599,11 @@
         },
         {
           "html": "Otherwise:",
-          "rationale": "set",
+          "rationale": "if",
           "steps": [
+            {
+              "html": "If <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-change-in-contributing-factors-is-substantial\" class=\"internalDFN\" id=\"ref-for-dfn-change-in-contributing-factors-is-substantial-2\">change in contributing factors is substantial</a> is false, abort these steps."
+            },
             {
               "html": "Set <var data-type=\"PressureState\">state</var> to an <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-adjusted-pressure-state\" class=\"internalDFN\" id=\"ref-for-dfn-adjusted-pressure-state-2\">adjusted pressure state</a> calculated from\n              <var>source</var> and <var>sample</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/compute-pressure/#dfn-data\" class=\"internalDFN\" id=\"ref-for-dfn-data-5\">data</a>."
             }
