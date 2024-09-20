@@ -1204,7 +1204,7 @@
         "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstorageprivateaggregationconfig"
       },
       "SharedStorageRunOperationMethodOptions": {
-        "fragment": "dictionary SharedStorageRunOperationMethodOptions {\n  object data;\n  boolean resolveToConfig = false;\n  boolean keepAlive = false;\n  SharedStoragePrivateAggregationConfig privateAggregationConfig;\n};",
+        "fragment": "dictionary SharedStorageRunOperationMethodOptions {\n  object data;\n  boolean resolveToConfig = false;\n  boolean keepAlive = false;\n  SharedStoragePrivateAggregationConfig privateAggregationConfig;\n  DOMString savedQuery;\n};",
         "type": "dictionary",
         "name": "SharedStorageRunOperationMethodOptions",
         "inheritance": null,
@@ -1278,6 +1278,22 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-privateaggregationconfig"
+          },
+          {
+            "type": "field",
+            "name": "savedQuery",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-savedquery"
           }
         ],
         "extAttrs": [],
