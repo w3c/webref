@@ -42,10 +42,9 @@ partial interface Navigator {
 
 [Exposed=Window, SecureContext]
 interface HandwritingRecognizer {
-  [RaisesException]
   HandwritingDrawing startDrawing(optional HandwritingHints hints = {});
 
-  [RaisesException] undefined finish();
+  undefined finish();
 };
 
 dictionary HandwritingHints {
