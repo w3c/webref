@@ -254,21 +254,28 @@
     {
       "name": "masonry-slack",
       "href": "https://drafts.csswg.org/css-grid-3/#propdef-masonry-slack",
-      "value": "<length-percentage>",
+      "value": "<length-percentage> | infinite",
       "initial": "1em",
       "appliesTo": "masonry containers",
       "inherited": "no",
       "percentages": "relative to the grid-axis content box size of the masonry container",
-      "computedValue": "a computed length",
+      "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete",
+      "animationType": "as length",
       "values": [
         {
-          "name": "<length>",
+          "name": "<length-percentage>",
           "prose": "Specifies the tie threshold for the masonry container. Placement positions are considered to be equally good (“tied”) if they are within the specified distance from the shortest position.",
-          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-slack-length",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-slack-length-percentage",
           "type": "value",
-          "value": "<length>"
+          "value": "<length-percentage>"
+        },
+        {
+          "name": "infinite",
+          "prose": "Specifies an infinite tie threshold. This makes items distribute themselves strictly in order, without considering the length of the tracks at all.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-masonry-slack-infinite",
+          "type": "value",
+          "value": "infinite"
         }
       ],
       "styleDeclaration": [
