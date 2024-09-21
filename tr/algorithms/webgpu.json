@@ -7816,7 +7816,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depthpassed\" id=\"ref-for-fragment-depthpassed①\">depthPassed</a> is <code>false</code> and the <code>frag_depth</code> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values④\">builtin</a> is not produced by the\nshader the following steps may be skipped.</p>"
+              "html": "<p>If <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depthpassed\" id=\"ref-for-fragment-depthpassed①\">depthPassed</a> is <code>false</code>, the <code>frag_depth</code> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values④\">builtin</a> is not produced by the\nshader entry point, and the shader entry point does not write to any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#internal-usage-storage\" id=\"ref-for-internal-usage-storage⑥\">storage</a> bindings,\nthe following steps may be skipped.</p>"
             },
             {
               "html": "Set the shader input <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values⑤\">builtins</a>. For each non-composite argument of the entry point,\nannotated as a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#built-in-values\" id=\"ref-for-built-in-values⑥\">builtin</a>, set its value based on the annotation:",
