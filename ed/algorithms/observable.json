@@ -698,9 +698,9 @@
       ]
     },
     {
-      "name": "Observable/inspect(inspector_union)",
+      "name": "Observable/inspect(inspectorUnion)",
       "href": "https://wicg.github.io/observable/#dom-observable-inspect",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Observable\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"inspect(inspect_observer)|inspect()|inspect(inspector_union)\" id=\"dom-observable-inspect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>inspect(<var>inspector_union</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Observable\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"inspect(inspectorUnion)|inspect()\" id=\"dom-observable-inspect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>inspect(<var>inspectorUnion</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -719,41 +719,41 @@
           "html": "<p>Let <var>abort callback</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#callbackdef-observableinspectoraborthandler\" id=\"ref-for-callbackdef-observableinspectoraborthandler①\">ObservableInspectorAbortHandler</a></code>-or-null, initially null.</p>"
         },
         {
-          "html": "Process <var>inspector_union</var> as follows:",
+          "html": "Process <var>inspectorUnion</var> as follows:",
           "rationale": ".switch",
           "steps": [
             {
               "operation": "switch",
               "steps": [
                 {
-                  "case": "If inspector_union is an ObservableSubscriptionCallback",
+                  "case": "If inspectorUnion is an ObservableSubscriptionCallback",
                   "html": "",
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p>Set <var>next callback</var> to <var>inspector_union</var>.</p>"
+                      "html": "<p>Set <var>next callback</var> to <var>inspectorUnion</var>.</p>"
                     }
                   ]
                 },
                 {
-                  "case": "If inspector_union is an ObservableInspector",
+                  "case": "If inspectorUnion is an ObservableInspector",
                   "html": "",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableinspector-subscribe\" id=\"ref-for-dom-observableinspector-subscribe\">subscribe</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a> in <var>inspector_union</var>, then set <var>subscribe callback</var> to it.</p>"
+                      "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableinspector-subscribe\" id=\"ref-for-dom-observableinspector-subscribe\">subscribe</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a> in <var>inspectorUnion</var>, then set <var>subscribe callback</var> to it.</p>"
                     },
                     {
-                      "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableinspector-next\" id=\"ref-for-dom-observableinspector-next\">next</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exists</a> in <var>inspector_union</var>, then set <var>next callback</var> to it.</p>"
+                      "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableinspector-next\" id=\"ref-for-dom-observableinspector-next\">next</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exists</a> in <var>inspectorUnion</var>, then set <var>next callback</var> to it.</p>"
                     },
                     {
-                      "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableinspector-error\" id=\"ref-for-dom-observableinspector-error\">error</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a> in <var>inspector_union</var>, then set <var>error callback</var> to it.</p>"
+                      "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableinspector-error\" id=\"ref-for-dom-observableinspector-error\">error</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a> in <var>inspectorUnion</var>, then set <var>error callback</var> to it.</p>"
                     },
                     {
-                      "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableinspector-complete\" id=\"ref-for-dom-observableinspector-complete\">complete</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exists</a> in <var>inspector_union</var>, then set <var>complete callback</var> to it.</p>"
+                      "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableinspector-complete\" id=\"ref-for-dom-observableinspector-complete\">complete</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exists</a> in <var>inspectorUnion</var>, then set <var>complete callback</var> to it.</p>"
                     },
                     {
-                      "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableinspector-abort\" id=\"ref-for-dom-observableinspector-abort\">abort</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a> in <var>inspector_union</var>, then set <var>abort callback</var> to it.</p>"
+                      "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observableinspector-abort\" id=\"ref-for-dom-observableinspector-abort\">abort</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a> in <var>inspectorUnion</var>, then set <var>abort callback</var> to it.</p>"
                     }
                   ]
                 }
@@ -781,7 +781,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>sourceObserver</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer①④\">internal observer</a>, initialized as follows:</p>\n        <dl>\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps①④\">next steps</a>\n         </dt><dd data-md=\"\">\n          \n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps①④\">error steps</a>\n         </dt><dd data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-remove\" id=\"ref-for-abortsignal-remove①\">Remove</a> <var>abort callback</var> from <var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller①⑤\">subscription\n controller</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal①⑤\">signal</a>, and run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②②\">error()</a></code> method, given the passed in <var>error</var>.</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①③\">complete steps</a>\n         </dt><dd data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-remove\" id=\"ref-for-abortsignal-remove②\">Remove</a> <var>abort callback</var> from <var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller①⑥\">subscription\n controller</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal①⑥\">signal</a>, and run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-complete\" id=\"ref-for-dom-subscriber-complete①⑦\">complete()</a></code> method.</p>\n        </dd></dl>",
+              "html": "<p>Let <var>sourceObserver</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer①④\">internal observer</a>, initialized as follows:</p>\n        <dl>\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps①④\">next steps</a>\n         </dt><dd data-md=\"\">\n          \n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps①④\">error steps</a>\n         </dt><dd data-md=\"\">\n          \n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①③\">complete steps</a>\n         </dt><dd data-md=\"\">\n          \n        </dd></dl>",
               "rationale": "if",
               "steps": [
                 {
@@ -792,12 +792,44 @@
                       "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-remove\" id=\"ref-for-abortsignal-remove\">Remove</a> <var>abort callback</var> from <var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller①④\">subscription controller</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal①④\">signal</a>.</p>"
                     },
                     {
-                      "html": "<p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②①\">error()</a></code> method, given <var>E</var>, and return.</p>"
+                      "html": "<p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②①\">error()</a></code> method, given <var>E</var>, and abort these\n steps.</p>"
                     }
                   ]
                 },
                 {
                   "html": "<p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-next\" id=\"ref-for-dom-subscriber-next①⓪\">next()</a></code> method with the passed in <var>value</var>.</p>"
+                }
+              ],
+              "additional": [
+                {
+                  "html": "",
+                  "rationale": "remove",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-remove\" id=\"ref-for-abortsignal-remove①\">Remove</a> <var>abort callback</var> from <var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller①⑤\">subscription controller</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal①⑤\">signal</a>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>error callback</var> is not null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function①⑥\">invoke</a> <var>error callback</var> given the passed\n  in <var>error</var>.</p>\n            <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown①⑨\">an exception <var>E</var> was thrown</a>,\n  then run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②②\">error()</a></code> method, given <var>E</var>, and abort these\n  steps.</p>"
+                    },
+                    {
+                      "html": "<p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②③\">error()</a></code> method, given the passed in <var>error</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "",
+                  "rationale": "remove",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-remove\" id=\"ref-for-abortsignal-remove②\">Remove</a> <var>abort callback</var> from <var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller①⑥\">subscription controller</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal①⑥\">signal</a>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>complete callback</var> is not null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function①⑦\">invoke</a> <var>complete callback</var>.</p>\n            <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②⓪\">an exception <var>E</var> was thrown</a>,\n  then run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②④\">error()</a></code> method, given <var>E</var>, and abort these\n  steps.</p>"
+                    },
+                    {
+                      "html": "<p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-complete\" id=\"ref-for-dom-subscriber-complete①⑦\">complete()</a></code> method.</p>"
+                    }
+                  ]
                 }
               ]
             },
@@ -832,13 +864,13 @@
               "rationale": "invoke",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function①⑥\">Invoke</a> <var>callback</var> with the passed in <var>error</var>. Let <var>result</var> be\n  the returned value.</p>\n            <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown①⑨\">an exception <var>E</var> was thrown</a>, then\n  run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②③\">error()</a></code> with <var>E</var>, and abort these steps.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function①⑧\">Invoke</a> <var>callback</var> with the passed in <var>error</var>. Let <var>result</var> be\n  the returned value.</p>\n            <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②①\">an exception <var>E</var> was thrown</a>, then\n  run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②⑤\">error()</a></code> with <var>E</var>, and abort these steps.</p>"
                 },
                 {
-                  "html": "<p>Let <var>innerObservable</var> be the result of calling <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observable-from\" id=\"ref-for-dom-observable-from⑤\">from()</a></code> with <var>result</var>.</p>\n            <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②⓪\">an exception <var>E</var> was thrown</a>, then\n  run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②④\">error()</a></code> method, given <var>E</var>, and abort these steps.</p>"
+                  "html": "<p>Let <var>innerObservable</var> be the result of calling <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-observable-from\" id=\"ref-for-dom-observable-from⑤\">from()</a></code> with <var>result</var>.</p>\n            <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②②\">an exception <var>E</var> was thrown</a>, then\n  run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②⑥\">error()</a></code> method, given <var>E</var>, and abort these steps.</p>"
                 },
                 {
-                  "html": "<p>Let <var>innerObserver</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer①⑥\">internal observer</a>, initialized as follows:</p>\n            <dl>\n             <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps①⑥\">next steps</a>\n             </dt><dd data-md=\"\">\n              <p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-next\" id=\"ref-for-dom-subscriber-next①②\">next()</a></code> method, given the passed in <var>value</var>.</p>\n             </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps①⑥\">error steps</a>\n             </dt><dd data-md=\"\">\n              <p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②⑤\">error()</a></code> method, given the passed in <var>error</var>.</p>\n             </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①④\">complete steps</a>\n             </dt><dd data-md=\"\">\n              <p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-complete\" id=\"ref-for-dom-subscriber-complete①⑧\">complete()</a></code> method.</p>\n            </dd></dl>"
+                  "html": "<p>Let <var>innerObserver</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer\" id=\"ref-for-internal-observer①⑥\">internal observer</a>, initialized as follows:</p>\n            <dl>\n             <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-next-steps\" id=\"ref-for-internal-observer-next-steps①⑥\">next steps</a>\n             </dt><dd data-md=\"\">\n              <p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-next\" id=\"ref-for-dom-subscriber-next①②\">next()</a></code> method, given the passed in <var>value</var>.</p>\n             </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-error-steps\" id=\"ref-for-internal-observer-error-steps①⑥\">error steps</a>\n             </dt><dd data-md=\"\">\n              <p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-error\" id=\"ref-for-dom-subscriber-error②⑦\">error()</a></code> method, given the passed in <var>error</var>.</p>\n             </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#internal-observer-complete-steps\" id=\"ref-for-internal-observer-complete-steps①④\">complete steps</a>\n             </dt><dd data-md=\"\">\n              <p>Run <var>subscriber</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscriber-complete\" id=\"ref-for-dom-subscriber-complete①⑧\">complete()</a></code> method.</p>\n            </dd></dl>"
                 },
                 {
                   "html": "<p>Let <var>innerOptions</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dictdef-subscribeoptions\" id=\"ref-for-dictdef-subscribeoptions②①\">SubscribeOptions</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-subscribeoptions-signal\" id=\"ref-for-dom-subscribeoptions-signal①⑥\">signal</a></code> is <var>subscriber</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/observable/#subscriber-subscription-controller\" id=\"ref-for-subscriber-subscription-controller①⑧\">subscription controller</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal①⑧\">signal</a>.</p>"
@@ -966,7 +998,7 @@
           "rationale": "invoke",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function①⑦\">Invoke</a> <var>callback</var> with the passed in <var>value</var>, and <var>idx</var>.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②①\">an exception <var>E</var> was thrown</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">reject</a> <var>p</var> with <var>E</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal-abort\" id=\"ref-for-abortcontroller-signal-abort②\">signal abort</a> <var>visitor callback\n   controller</var> with <var>E</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function①⑨\">Invoke</a> <var>callback</var> with the passed in <var>value</var>, and <var>idx</var>.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②③\">an exception <var>E</var> was thrown</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">reject</a> <var>p</var> with <var>E</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal-abort\" id=\"ref-for-abortcontroller-signal-abort②\">signal abort</a> <var>visitor callback\n   controller</var> with <var>E</var>.</p>"
             },
             {
               "html": "<p>Increment <var>idx</var>.</p>"
@@ -1025,7 +1057,7 @@
           "rationale": "invoke",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function①⑧\">Invoke</a> <var>predicate</var> with the passed in <var>value</var> and <var>idx</var>, and let <var>passed</var> be the returned value.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②②\">an exception <var>E</var> was thrown</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">reject</a> <var>p</var> with <var>E</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal-abort\" id=\"ref-for-abortcontroller-signal-abort③\">signal abort</a> <var>controller</var> with <var>E</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function②⓪\">Invoke</a> <var>predicate</var> with the passed in <var>value</var> and <var>idx</var>, and let <var>passed</var> be the returned value.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②④\">an exception <var>E</var> was thrown</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">reject</a> <var>p</var> with <var>E</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal-abort\" id=\"ref-for-abortcontroller-signal-abort③\">signal abort</a> <var>controller</var> with <var>E</var>.</p>"
             },
             {
               "html": "<p>Set <var>idx</var> to <var>idx</var> + 1.</p>"
@@ -1222,7 +1254,7 @@
           "rationale": "invoke",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function①⑨\">Invoke</a> <var>predicate</var> with the passed in <var>value</var> an <var>idx</var>, and let <var>passed</var> be the\n   returned value.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②③\">an exception <var>E</var> was thrown</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⓪\">reject</a> <var>p</var> with <var>E</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal-abort\" id=\"ref-for-abortcontroller-signal-abort⑥\">signal abort</a> <var>controller</var> with <var>E</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function②①\">Invoke</a> <var>predicate</var> with the passed in <var>value</var> an <var>idx</var>, and let <var>passed</var> be the\n   returned value.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②⑤\">an exception <var>E</var> was thrown</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⓪\">reject</a> <var>p</var> with <var>E</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal-abort\" id=\"ref-for-abortcontroller-signal-abort⑥\">signal abort</a> <var>controller</var> with <var>E</var>.</p>"
             },
             {
               "html": "<p>Set <var>idx</var> to <var>idx</var> + 1.</p>"
@@ -1284,7 +1316,7 @@
           "rationale": "invoke",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function②⓪\">Invoke</a> <var>predicate</var> with the passed in <var>value</var> and <var>idx</var>, and let <var>passed</var> be the returned value.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②④\">an exception <var>E</var> was thrown</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②④\">reject</a> <var>p</var> with <var>E</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal-abort\" id=\"ref-for-abortcontroller-signal-abort⑧\">signal abort</a> <var>controller</var> with <var>E</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function②②\">Invoke</a> <var>predicate</var> with the passed in <var>value</var> and <var>idx</var>, and let <var>passed</var> be the returned value.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②⑥\">an exception <var>E</var> was thrown</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②④\">reject</a> <var>p</var> with <var>E</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal-abort\" id=\"ref-for-abortcontroller-signal-abort⑧\">signal abort</a> <var>controller</var> with <var>E</var>.</p>"
             },
             {
               "html": "<p>Set <var>idx</var> to <var>idx</var> + 1.</p>"
@@ -1352,7 +1384,7 @@
               "html": "<p>If <var>accumulator</var> is uninitialized (meaning no <var>initialValue</var> was passed in), then set <var>accumulator</var> to the passed in <var>value</var>, set <var>idx</var> to <var>idx</var> + 1, and abort these steps.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function②①\">Invoke</a> <var>reducer</var> with <var>accumulator</var> as <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-reducer-accumulator\" id=\"ref-for-dom-reducer-accumulator①\">accumulator</a></code>, the passed in <var>value</var> as <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-reducer-currentvalue\" id=\"ref-for-dom-reducer-currentvalue②\">currentValue</a></code>, and <var>idx</var> as <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-reducer-index\" id=\"ref-for-dom-reducer-index\">index</a></code>. Let <var>result</var> be\n the returned value.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②⑤\">an exception <var>E</var> was thrown</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑧\">reject</a> <var>p</var> with <var>E</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal-abort\" id=\"ref-for-abortcontroller-signal-abort①⓪\">signal abort</a> <var>controller</var> with <var>E</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function②③\">Invoke</a> <var>reducer</var> with <var>accumulator</var> as <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-reducer-accumulator\" id=\"ref-for-dom-reducer-accumulator①\">accumulator</a></code>, the passed in <var>value</var> as <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-reducer-currentvalue\" id=\"ref-for-dom-reducer-currentvalue②\">currentValue</a></code>, and <var>idx</var> as <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/observable/#dom-reducer-index\" id=\"ref-for-dom-reducer-index\">index</a></code>. Let <var>result</var> be\n the returned value.</p>\n          <p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#an-exception-was-thrown\" id=\"ref-for-an-exception-was-thrown②⑦\">an exception <var>E</var> was thrown</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②⑧\">reject</a> <var>p</var> with <var>E</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal-abort\" id=\"ref-for-abortcontroller-signal-abort①⓪\">signal abort</a> <var>controller</var> with <var>E</var>.</p>"
             },
             {
               "html": "<p>Set <var>idx</var> to <var>idx</var> + 1.</p>"
