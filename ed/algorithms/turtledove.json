@@ -3968,9 +3968,6 @@
           "html": "<p>If <var>response</var> is failure, then return failure.</p>"
         },
         {
-          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#server-auction-response-is-chaff\" id=\"ref-for-server-auction-response-is-chaff\">is chaff</a> is true, return failure.</p>"
-        },
-        {
           "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#server-auction-response-top-level-seller\" id=\"ref-for-server-auction-response-top-level-seller\">top level seller</a> is not null:",
           "rationale": "if",
           "steps": [
@@ -4477,7 +4474,7 @@
     {
       "name": "bit pack",
       "href": "https://wicg.github.io/turtledove/#bit-pack",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"bit-pack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">bit pack</dfn> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑦\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑤\">booleans</a> <var>input</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"bit-pack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">bit pack</dfn> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑦\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean④\">booleans</a> <var>input</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -4548,7 +4545,7 @@
     {
       "name": "send a real time report",
       "href": "https://wicg.github.io/turtledove/#send-a-real-time-report",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"send-a-real-time-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">send a real time report</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑧\">URL</a> <var>url</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑨\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑥\">booleans</a> <var>histogram</var>, and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object⑥\">environment settings object</a> <var>settings</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"send-a-real-time-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">send a real time report</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑧\">URL</a> <var>url</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⑨\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑤\">booleans</a> <var>histogram</var>, and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object⑥\">environment settings object</a> <var>settings</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -4558,7 +4555,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑥\">Assert</a> <var>histogram</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①②\">size</a> is <var>totalBuckets</var>.</p>"
         },
         {
-          "html": "<p>Let <var>userHistogram</var> and <var>platformHistogram</var> be new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⓪\">lists</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑦\">booleans</a>.</p>"
+          "html": "<p>Let <var>userHistogram</var> and <var>platformHistogram</var> be new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⓪\">lists</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑥\">booleans</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⑥\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range③\">the range</a> 0 to <var>totalBuckets</var>, exclusive:",
@@ -4636,7 +4633,7 @@
           "html": "<p>Let <var>totalBuckets</var> be the sum of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#number-of-user-buckets\" id=\"ref-for-number-of-user-buckets⑦\">number of user buckets</a> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#number-of-platform-buckets\" id=\"ref-for-number-of-platform-buckets②\">number of platform buckets</a>.</p>"
         },
         {
-          "html": "<p>Let <var>histogram</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤①\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑧\">booleans</a>, whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①③\">size</a> is <var>totalBuckets</var>.</p>"
+          "html": "<p>Let <var>histogram</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤①\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑦\">booleans</a>, whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①③\">size</a> is <var>totalBuckets</var>.</p>"
         },
         {
           "html": "If <var>maybeBucket</var> is not null:",
@@ -5923,7 +5920,7 @@
     {
       "name": "convert one or many GenerateBidOutputs to a list of generated bids",
       "href": "https://wicg.github.io/turtledove/#convert-one-or-many-generatebidoutputs-to-a-list-of-generated-bids",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"convert-one-or-many-generatebidoutputs-to-a-list-of-generated-bids\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert one or many GenerateBidOutputs to a list of generated bids</dfn> given a (<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dictdef-generatebidoutput\" id=\"ref-for-dictdef-generatebidoutput④\">GenerateBidOutput</a></code> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence②⓪\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dictdef-generatebidoutput\" id=\"ref-for-dictdef-generatebidoutput⑤\">GenerateBidOutput</a></code>&gt;) <var>oneOrManyBids</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-short\" id=\"ref-for-idl-unsigned-short⑦\">unsigned short</a></code> <var>multiBidLimit</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group\" id=\"ref-for-interest-group④②\">interest group</a> <var>ig</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#currency-tag\" id=\"ref-for-currency-tag⑤\">currency tag</a> <var>expectedCurrency</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①①\">boolean</a> \n    <p><var>isComponentAuction</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①②\">boolean</a> <var>groupHasAdComponents</var>:</p>",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"convert-one-or-many-generatebidoutputs-to-a-list-of-generated-bids\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert one or many GenerateBidOutputs to a list of generated bids</dfn> given a (<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dictdef-generatebidoutput\" id=\"ref-for-dictdef-generatebidoutput④\">GenerateBidOutput</a></code> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence②⓪\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dictdef-generatebidoutput\" id=\"ref-for-dictdef-generatebidoutput⑤\">GenerateBidOutput</a></code>&gt;) <var>oneOrManyBids</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-short\" id=\"ref-for-idl-unsigned-short⑦\">unsigned short</a></code> <var>multiBidLimit</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group\" id=\"ref-for-interest-group④②\">interest group</a> <var>ig</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#currency-tag\" id=\"ref-for-currency-tag⑤\">currency tag</a> <var>expectedCurrency</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①⓪\">boolean</a> \n    <p><var>isComponentAuction</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①①\">boolean</a> <var>groupHasAdComponents</var>:</p>",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -5967,7 +5964,7 @@
     {
       "name": "convert GenerateBidOutput to generated bid",
       "href": "https://wicg.github.io/turtledove/#convert-generatebidoutput-to-generated-bid",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"convert-generatebidoutput-to-generated-bid\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert GenerateBidOutput to generated bid</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dictdef-generatebidoutput\" id=\"ref-for-dictdef-generatebidoutput⑧\">GenerateBidOutput</a></code> <var>generateBidOutput</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group\" id=\"ref-for-interest-group④③\">interest group</a> <var>ig</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#currency-tag\" id=\"ref-for-currency-tag⑥\">currency tag</a> <var>expectedCurrency</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①③\">boolean</a> <var>isComponentAuction</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①④\">boolean</a> <var>groupHasAdComponents</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"convert-generatebidoutput-to-generated-bid\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert GenerateBidOutput to generated bid</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dictdef-generatebidoutput\" id=\"ref-for-dictdef-generatebidoutput⑧\">GenerateBidOutput</a></code> <var>generateBidOutput</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group\" id=\"ref-for-interest-group④③\">interest group</a> <var>ig</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#currency-tag\" id=\"ref-for-currency-tag⑥\">currency tag</a> <var>expectedCurrency</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①②\">boolean</a> <var>isComponentAuction</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①③\">boolean</a> <var>groupHasAdComponents</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -6261,7 +6258,7 @@
     {
       "name": "find matching ad",
       "href": "https://wicg.github.io/turtledove/#find-matching-ad",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-matching-ad\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find matching ad</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#ad-descriptor\" id=\"ref-for-ad-descriptor①②\">ad descriptor</a> <var>adDescriptor</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group\" id=\"ref-for-interest-group④④\">interest group</a> <var>ig</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①⑤\">boolean</a> <var>isComponent</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-matching-ad\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find matching ad</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#ad-descriptor\" id=\"ref-for-ad-descriptor①②\">ad descriptor</a> <var>adDescriptor</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group\" id=\"ref-for-interest-group④④\">interest group</a> <var>ig</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①④\">boolean</a> <var>isComponent</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -7572,7 +7569,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①③\">request</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#request-capture-ad-auction-headers\" id=\"ref-for-request-capture-ad-auction-headers②\">capture-ad-auction-headers</a> is true, then <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">set a\nstructured field value</a> given «<span>`<code><a data-link-type=\"http-header\" href=\"https://wicg.github.io/turtledove/#http-headerdef-sec-ad-auction-fetch\" id=\"ref-for-http-headerdef-sec-ad-auction-fetch\">Sec-Ad-Auction-Fetch</a></code>`</span>, the <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc8941.html#boolean\" id=\"ref-for-boolean①⑥\">boolean</a> <code>?1</code>»\nin <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list\">header list</a>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①③\">request</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#request-capture-ad-auction-headers\" id=\"ref-for-request-capture-ad-auction-headers②\">capture-ad-auction-headers</a> is true, then <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">set a\nstructured field value</a> given «<span>`<code><a data-link-type=\"http-header\" href=\"https://wicg.github.io/turtledove/#http-headerdef-sec-ad-auction-fetch\" id=\"ref-for-http-headerdef-sec-ad-auction-fetch\">Sec-Ad-Auction-Fetch</a></code>`</span>, the <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc8941.html#boolean\" id=\"ref-for-boolean①⑤\">boolean</a> <code>?1</code>»\nin <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list\">header list</a>.</p>"
         }
       ]
     },
