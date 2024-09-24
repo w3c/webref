@@ -714,17 +714,23 @@
               "html": "<p>If <var>signal</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>p</var> with <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason\">abort reason</a> and return <var>p</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">Add the following abort steps</a> to <var>signal</var>:",
-              "rationale": "reject",
+              "html": "Otherwise <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">add the following abort steps</a> to <var>signal</var>:",
+              "rationale": "set",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">Reject</a> <var>p</var> with <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①\">abort reason</a>.</p>"
+                  "html": "<p>Set <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-aborted\" id=\"ref-for-auction-config-aborted\">aborted</a> to true.</p>"
                 },
                 {
-                  "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#update-bid-count\" id=\"ref-for-update-bid-count\">update bid counts</a> with <var>bidIgs</var>.</p>"
+                  "html": "<p>Set <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-abort-reason\" id=\"ref-for-auction-config-abort-reason\">abort reason</a> to <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①\">abort reason</a>.</p>"
                 },
                 {
-                  "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-update\" id=\"ref-for-interest-group-update\">interest group update</a> with <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-interest-group-buyers\" id=\"ref-for-auction-config-interest-group-buyers\">interest group buyers</a> and <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container\">policy container</a>.</p>"
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>auction</var> in <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions\">component auctions</a>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>auction</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-aborted\" id=\"ref-for-auction-config-aborted①\">aborted</a> to true.</p>"
+                    }
+                  ]
                 }
               ]
             }
@@ -780,17 +786,26 @@
               ]
             },
             {
-              "html": "<p>If <var>winnerInfo</var> is failure, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑦\">queue a global task</a> on <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source⑦\">DOM manipulation task source</a>,\ngiven <var>global</var>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②③\">TypeError</a></code>\".</p>"
+              "html": "If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-aborted\" id=\"ref-for-auction-config-aborted②\">aborted</a> is true:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑦\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source⑦\">DOM manipulation task source</a>, given <var>global</var>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>p</var> with <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-abort-reason\" id=\"ref-for-auction-config-abort-reason①\">abort reason</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise if <var>winnerInfo</var> is failure, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑧\">queue a global task</a> on <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source⑧\">DOM manipulation task source</a>,\ngiven <var>global</var>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">reject</a> <var>p</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②③\">TypeError</a></code>\".</p>"
             },
             {
               "html": "Otherwise if <var>winnerInfo</var> is null or <var>winnerInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-leading-bid\" id=\"ref-for-leading-bid-info-leading-bid\">leading bid</a> is null:",
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑧\">Queue a global task</a> on <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source⑧\">DOM manipulation task source</a>, given <var>global</var>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve④\">resolve</a> <var>p</var> with null.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑨\">Queue a global task</a> on <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source⑨\">DOM manipulation task source</a>, given <var>global</var>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve④\">resolve</a> <var>p</var> with null.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>reportUrl</var> of <var>auctionReportInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-report-info-debug-loss-report-urls\" id=\"ref-for-auction-report-info-debug-loss-report-urls\">debug loss report urls</a>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>reportUrl</var> of <var>auctionReportInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-report-info-debug-loss-report-urls\" id=\"ref-for-auction-report-info-debug-loss-report-urls\">debug loss report urls</a>:",
                   "rationale": "send",
                   "steps": [
                     {
@@ -826,18 +841,18 @@
                   "html": "<p>If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-resolve-to-config\" id=\"ref-for-auction-config-resolve-to-config①\">resolve to config</a> is false, then set <var>result</var> to <var>urn</var>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑨\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source⑨\">DOM manipulation task source</a>, given <var>global</var>, to\n resolve <var>p</var> with <var>result</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①⓪\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source①⓪\">DOM manipulation task source</a>, given <var>global</var>, to\n resolve <var>p</var> with <var>result</var>.</p>"
+                },
+                {
+                  "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#update-previous-wins\" id=\"ref-for-update-previous-wins\">update previous wins</a> with <var>winner</var>.</p>"
                 }
               ]
             },
             {
-              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-update\" id=\"ref-for-interest-group-update①\">interest group update</a> with <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-interest-group-buyers\" id=\"ref-for-auction-config-interest-group-buyers①\">interest group buyers</a> and <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container①\">policy container</a>.</p>"
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-update\" id=\"ref-for-interest-group-update\">interest group update</a> with <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-interest-group-buyers\" id=\"ref-for-auction-config-interest-group-buyers\">interest group buyers</a> and <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container\">policy container</a>.</p>"
             },
             {
-              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#update-bid-count\" id=\"ref-for-update-bid-count①\">update bid counts</a> with <var>bidIgs</var>.</p>"
-            },
-            {
-              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#update-previous-wins\" id=\"ref-for-update-previous-wins\">update previous wins</a> with <var>winner</var>.</p>"
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#update-bid-count\" id=\"ref-for-update-bid-count\">update bid counts</a> with <var>bidIgs</var>.</p>"
             }
           ]
         },
@@ -870,7 +885,7 @@
           "html": "<p>Let <var>replacements</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">ordered map</a> whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-keys\" id=\"ref-for-map-getting-the-keys⑤\">keys</a> are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">strings</a> and whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values⑥\">values</a> are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">strings</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>replacement</var> in <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-deprecated-render-url-replacements\" id=\"ref-for-auction-config-deprecated-render-url-replacements\">deprecated render url replacements</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>replacement</var> in <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-deprecated-render-url-replacements\" id=\"ref-for-auction-config-deprecated-render-url-replacements\">deprecated render url replacements</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -921,10 +936,10 @@
           "html": "<p>Let <var>fencedFrameReportingMap</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥\">map</a> «[ \"<code>buyer</code>\" → «», \"<code>seller</code>\" → «» ]».</p>"
         },
         {
-          "html": "<p>If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions\">component auctions</a> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑦\">set</a> <var>fencedFrameReportingMap</var>[\"<code>component-seller</code>\"] to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a> «».</p>"
+          "html": "<p>If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions①\">component auctions</a> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑦\">set</a> <var>fencedFrameReportingMap</var>[\"<code>component-seller</code>\"] to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a> «».</p>"
         },
         {
-          "html": "<p>Set <var>pendingConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-config-fenced-frame-reporting-metadata\" id=\"ref-for-fenced-frame-config-fenced-frame-reporting-metadata①\">fenced frame reporting metadata</a> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct⑧\">struct</a> with the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\" id=\"ref-for-struct-item⑨\">items</a>:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-reporting-metadata-value\" id=\"ref-for-fenced-frame-reporting-metadata-value\">value</a>\n       </dt><dd data-md=\"\">\n        <p>A <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct⑨\">struct</a> with the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\" id=\"ref-for-struct-item①⓪\">items</a>:</p>\n        <dl>\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-reporting-metadata-fenced-frame-reporting-map\" id=\"ref-for-fenced-frame-reporting-metadata-fenced-frame-reporting-map\">fenced frame reporting map</a>\n         </dt><dd data-md=\"\">\n          <p><var>fencedFrameReportingMap</var></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-reporting-metadata-direct-seller-is-seller\" id=\"ref-for-fenced-frame-reporting-metadata-direct-seller-is-seller\">direct seller is seller</a>\n         </dt><dd data-md=\"\">\n          <p>true if <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions①\">component auctions</a> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①\">empty</a>, false\n  otherwise</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-reporting-metadata-allowed-reporting-origins\" id=\"ref-for-fenced-frame-reporting-metadata-allowed-reporting-origins\">allowed reporting origins</a>\n         </dt><dd data-md=\"\">\n          <p><var>winningBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-bid-ad\" id=\"ref-for-generated-bid-bid-ad\">bid ad</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-allowed-reporting-origins\" id=\"ref-for-interest-group-ad-allowed-reporting-origins①\">allowed reporting origins</a></p>\n        </dd></dl>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-reporting-metadata-visibility\" id=\"ref-for-fenced-frame-reporting-metadata-visibility\">visibility</a>\n       </dt><dd data-md=\"\">\n        <p>\"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#visibility-opaque\" id=\"ref-for-visibility-opaque⑥\"><code>opaque</code></a>\"</p>\n      </dd></dl>"
+          "html": "<p>Set <var>pendingConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-config-fenced-frame-reporting-metadata\" id=\"ref-for-fenced-frame-config-fenced-frame-reporting-metadata①\">fenced frame reporting metadata</a> to a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct⑧\">struct</a> with the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\" id=\"ref-for-struct-item⑨\">items</a>:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-reporting-metadata-value\" id=\"ref-for-fenced-frame-reporting-metadata-value\">value</a>\n       </dt><dd data-md=\"\">\n        <p>A <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct⑨\">struct</a> with the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\" id=\"ref-for-struct-item①⓪\">items</a>:</p>\n        <dl>\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-reporting-metadata-fenced-frame-reporting-map\" id=\"ref-for-fenced-frame-reporting-metadata-fenced-frame-reporting-map\">fenced frame reporting map</a>\n         </dt><dd data-md=\"\">\n          <p><var>fencedFrameReportingMap</var></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-reporting-metadata-direct-seller-is-seller\" id=\"ref-for-fenced-frame-reporting-metadata-direct-seller-is-seller\">direct seller is seller</a>\n         </dt><dd data-md=\"\">\n          <p>true if <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions②\">component auctions</a> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①\">empty</a>, false\n  otherwise</p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-reporting-metadata-allowed-reporting-origins\" id=\"ref-for-fenced-frame-reporting-metadata-allowed-reporting-origins\">allowed reporting origins</a>\n         </dt><dd data-md=\"\">\n          <p><var>winningBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-bid-ad\" id=\"ref-for-generated-bid-bid-ad\">bid ad</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-allowed-reporting-origins\" id=\"ref-for-interest-group-ad-allowed-reporting-origins①\">allowed reporting origins</a></p>\n        </dd></dl>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-reporting-metadata-visibility\" id=\"ref-for-fenced-frame-reporting-metadata-visibility\">visibility</a>\n       </dt><dd data-md=\"\">\n        <p>\"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#visibility-opaque\" id=\"ref-for-visibility-opaque⑥\"><code>opaque</code></a>\"</p>\n      </dd></dl>"
         },
         {
           "html": "<p>Set <var>pendingConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-frame-config-on-navigate-callback\" id=\"ref-for-fenced-frame-config-on-navigate-callback①\">on navigate callback</a> to an algorithm with these\n steps:</p>",
@@ -940,7 +955,7 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>adComponentDescriptor</var> of <var>winningBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-component-descriptors\" id=\"ref-for-generated-bid-ad-component-descriptors①\">ad component descriptors</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>adComponentDescriptor</var> of <var>winningBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-component-descriptors\" id=\"ref-for-generated-bid-ad-component-descriptors①\">ad component descriptors</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -1064,7 +1079,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>reportUrl</var> of <var>auctionReportInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-report-info-debug-win-report-urls\" id=\"ref-for-auction-report-info-debug-win-report-urls\">debug win report urls</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>reportUrl</var> of <var>auctionReportInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-report-info-debug-win-report-urls\" id=\"ref-for-auction-report-info-debug-win-report-urls\">debug win report urls</a>:",
           "rationale": "send",
           "steps": [
             {
@@ -1073,7 +1088,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>reportUrl</var> of <var>auctionReportInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-report-info-debug-loss-report-urls\" id=\"ref-for-auction-report-info-debug-loss-report-urls①\">debug loss report urls</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>reportUrl</var> of <var>auctionReportInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-report-info-debug-loss-report-urls\" id=\"ref-for-auction-report-info-debug-loss-report-urls①\">debug loss report urls</a>:",
           "rationale": "send",
           "steps": [
             {
@@ -1105,7 +1120,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>adComponentDescriptor</var> of <var>adComponentDescriptors</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>adComponentDescriptor</var> of <var>adComponentDescriptors</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1216,7 +1231,7 @@
               "html": "<p>Let <var>buyers</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>buyerString</var> in <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dom-auctionadconfig-interestgroupbuyers\" id=\"ref-for-dom-auctionadconfig-interestgroupbuyers①\">interestGroupBuyers</a></code>\"]:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>buyerString</var> in <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dom-auctionadconfig-interestgroupbuyers\" id=\"ref-for-dom-auctionadconfig-interestgroupbuyers①\">interestGroupBuyers</a></code>\"]:",
               "rationale": "let",
               "steps": [
                 {
@@ -1231,7 +1246,7 @@
               ]
             },
             {
-              "html": "<p>Set <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-interest-group-buyers\" id=\"ref-for-auction-config-interest-group-buyers②\">interest group buyers</a> to <var>buyers</var>.</p>"
+              "html": "<p>Set <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-interest-group-buyers\" id=\"ref-for-auction-config-interest-group-buyers①\">interest group buyers</a> to <var>buyers</var>.</p>"
             }
           ]
         },
@@ -1273,7 +1288,7 @@
               "html": "<p>Set <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-all-slots-requested-sizes\" id=\"ref-for-auction-config-all-slots-requested-sizes\">all slots requested sizes</a> to a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>adSizeValue</var> in <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dom-auctionadconfig-allslotsrequestedsizes\" id=\"ref-for-dom-auctionadconfig-allslotsrequestedsizes②\">allSlotsRequestedSizes</a></code>\"]:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>adSizeValue</var> in <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dom-auctionadconfig-allslotsrequestedsizes\" id=\"ref-for-dom-auctionadconfig-allslotsrequestedsizes②\">allSlotsRequestedSizes</a></code>\"]:",
               "rationale": "let",
               "steps": [
                 {
@@ -1383,7 +1398,7 @@
                   "html": "<p>Let <var>renderUrlReplacements</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑤\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#ad-keyword-replacement\" id=\"ref-for-ad-keyword-replacement\">ad keyword replacement</a>s.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>replacement</var> in <var>result</var>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>replacement</var> in <var>result</var>:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1598,7 +1613,7 @@
               "html": "<p>Let <var>sellerCapabilities</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#seller-capability\" id=\"ref-for-seller-capability②\">seller capabilities</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>capabilityString</var> of <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dom-auctionadconfig-requiredsellercapabilities\" id=\"ref-for-dom-auctionadconfig-requiredsellercapabilities①\">requiredSellerCapabilities</a></code>\"]:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>capabilityString</var> of <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dom-auctionadconfig-requiredsellercapabilities\" id=\"ref-for-dom-auctionadconfig-requiredsellercapabilities①\">requiredSellerCapabilities</a></code>\"]:",
               "rationale": "if",
               "steps": [
                 {
@@ -1684,7 +1699,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>component</var> in <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dom-auctionadconfig-componentauctions\" id=\"ref-for-dom-auctionadconfig-componentauctions②\">componentAuctions</a></code>\"]:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>component</var> in <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dom-auctionadconfig-componentauctions\" id=\"ref-for-dom-auctionadconfig-componentauctions②\">componentAuctions</a></code>\"]:",
           "rationale": "if",
           "steps": [
             {
@@ -1697,7 +1712,7 @@
               "html": "<p>If <var>componentAuction</var> is failure, then return failure.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">Append</a> <var>componentAuction</var> to <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions②\">component auctions</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">Append</a> <var>componentAuction</var> to <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions③\">component auctions</a>.</p>"
             }
           ]
         },
@@ -1745,7 +1760,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>ig</var> in <var>igs</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>ig</var> in <var>igs</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1806,11 +1821,11 @@
           "html": "<p>Let <var>negativeTargetInfo</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#negative-target-info\" id=\"ref-for-negative-target-info\">negative target info</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>buyer</var> in <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-interest-group-buyers\" id=\"ref-for-auction-config-interest-group-buyers③\">interest group buyers</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>buyer</var> in <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-interest-group-buyers\" id=\"ref-for-auction-config-interest-group-buyers②\">interest group buyers</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>ig</var> of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent②⑤\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-set\" id=\"ref-for-interest-group-set②④\">interest group set</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-owner\" id=\"ref-for-interest-group-owner②⑨\">owner</a> is <var>buyer</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>ig</var> of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent②⑤\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-set\" id=\"ref-for-interest-group-set②④\">interest group set</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-owner\" id=\"ref-for-interest-group-owner②⑨\">owner</a> is <var>buyer</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -1987,7 +2002,7 @@
           "html": "<p>Let <var>prevWins</var> be a new <code><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①①\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#typedefdef-previouswin\" id=\"ref-for-typedefdef-previouswin\">PreviousWin</a></code>&gt;</code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>prevWin</var> of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-previous-wins\" id=\"ref-for-interest-group-previous-wins②\">previous wins</a> for all days within the\nthe last 30 days:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>prevWin</var> of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-previous-wins\" id=\"ref-for-interest-group-previous-wins②\">previous wins</a> for all days within the\nthe last 30 days:",
           "rationale": "let",
           "steps": [
             {
@@ -2048,7 +2063,7 @@
               "html": "<p>Set <var>trustedBiddingSignals</var> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑥\">ordered map</a> whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-keys\" id=\"ref-for-map-getting-the-keys①①\">keys</a> are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①⓪\">strings</a> and\nwhose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values①②\">values</a> are <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-any\" id=\"ref-for-idl-any⑤\">any</a></code>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>key</var> of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-trusted-bidding-signals-keys\" id=\"ref-for-interest-group-trusted-bidding-signals-keys②\">trusted bidding signals keys</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>key</var> of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-trusted-bidding-signals-keys\" id=\"ref-for-interest-group-trusted-bidding-signals-keys②\">trusted bidding signals keys</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -2124,6 +2139,9 @@
           "html": "<p>Let « <var>bidGenerators</var>, <var>negativeTargetInfo</var> » be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#build-bid-generators-map\" id=\"ref-for-build-bid-generators-map\">build bid generators map</a> with <var>auctionConfig</var>.</p>"
         },
         {
+          "html": "<p>If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-aborted\" id=\"ref-for-auction-config-aborted③\">aborted</a> is true, return failure.</p>"
+        },
+        {
           "html": "<p>Let <var>leadingBidInfo</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info\" id=\"ref-for-leading-bid-info②\">leading bid info</a>.</p>"
         },
         {
@@ -2133,14 +2151,14 @@
           "html": "<p>Let <var>capturedAuctionHeaders</var> be <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑤\">associated Document’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①\">node navigable’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#traversable-navigable\" id=\"ref-for-traversable-navigable\">traversable navigable’s</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#traversable-navigable-captured-ad-auction-signals-headers\" id=\"ref-for-traversable-navigable-captured-ad-auction-signals-headers\">captured ad auction signals headers</a>.</p>"
         },
         {
-          "html": "If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions③\">component auctions</a> are not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">empty</a>:",
+          "html": "If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions④\">component auctions</a> are not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">empty</a>:",
           "rationale": "assert",
           "steps": [
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a> <var>topLevelAuctionConfig</var> is null.</p>"
             },
             {
-              "html": "<p>Let <var>pendingComponentAuctions</var> be <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions④\">component auctions</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤\">size</a>.</p>"
+              "html": "<p>Let <var>pendingComponentAuctions</var> be <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions⑤\">component auctions</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤\">size</a>.</p>"
             },
             {
               "html": "<p>Let <var>topLevelDirectFromSellerSignalsForSeller</var> be null.</p>"
@@ -2149,7 +2167,7 @@
               "html": "<p>Let <var>topLevelDirectFromSellerSignalsRetrieved</var> be false.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>component</var> in <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions⑤\">component auctions</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">enqueue the following steps</a> to <var>queue</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> <var>component</var> in <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions⑥\">component auctions</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">enqueue the following steps</a> to <var>queue</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -2204,6 +2222,9 @@
             },
             {
               "html": "<p>Wait until <var>pendingComponentAuctions</var> is 0.</p>"
+            },
+            {
+              "html": "<p>If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-aborted\" id=\"ref-for-auction-config-aborted④\">aborted</a> is true, return failure.</p>"
             },
             {
               "html": "<p>If <var>leadingBidInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-leading-bid\" id=\"ref-for-leading-bid-info-leading-bid⑦\">leading bid</a> is null, return null.</p>"
@@ -2316,7 +2337,7 @@
           "html": "<p>Let <var>pendingAdditionalBids</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑥\">size</a> of <var>additionalBids</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> <var>additionalBid</var> of <var>additionalBids</var>, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in parallel</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>additionalBid</var> of <var>additionalBids</var>, run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in parallel</a>:",
           "rationale": "score",
           "steps": [
             {
@@ -2461,11 +2482,11 @@
                       "rationale": "for",
                       "steps": [
                         {
-                          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>ig</var> of <var>groups</var>:",
+                          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>ig</var> of <var>groups</var>:",
                           "rationale": "batch",
                           "steps": [
                             {
-                              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#batch-or-fetch-trusted-bidding-signals\" id=\"ref-for-batch-or-fetch-trusted-bidding-signals\">Batch or fetch trusted bidding signals</a> given <var>trustedBiddingSignalsBatcher</var>, <var>ig</var>, <var>signalsUrl</var>, <var>buyerExperimentGroupId</var>, <var>topLevelOrigin</var>, <var>slotSizeQueryParam</var>,\nand <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container②\">policy container</a>.</p>"
+                              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#batch-or-fetch-trusted-bidding-signals\" id=\"ref-for-batch-or-fetch-trusted-bidding-signals\">Batch or fetch trusted bidding signals</a> given <var>trustedBiddingSignalsBatcher</var>, <var>ig</var>, <var>signalsUrl</var>, <var>buyerExperimentGroupId</var>, <var>topLevelOrigin</var>, <var>slotSizeQueryParam</var>,\nand <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container①\">policy container</a>.</p>"
                             }
                           ]
                         },
@@ -2488,7 +2509,7 @@
                       "rationale": "for",
                       "steps": [
                         {
-                          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>ig</var> of <var>groups</var>:",
+                          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>ig</var> of <var>groups</var>:",
                           "rationale": "if",
                           "steps": [
                             {
@@ -2585,7 +2606,7 @@
                               "html": "<p>Let <var>foundKAnonBids</var> be false.</p>"
                             },
                             {
-                              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>generatedBid</var> of <var>bidsToScore</var>:",
+                              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⓪\">For each</a> <var>generatedBid</var> of <var>bidsToScore</var>:",
                               "rationale": "if",
                               "steps": [
                                 {
@@ -2608,7 +2629,7 @@
                                       "html": "<p>Set <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ads\" id=\"ref-for-interest-group-ads⑦\">ads</a> to a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad\" id=\"ref-for-interest-group-ad②\">interest group ad</a>.</p>"
                                     },
                                     {
-                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⓪\">For each</a> <var>ad</var> in <var>originalAds</var>:",
+                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③①\">For each</a> <var>ad</var> in <var>originalAds</var>:",
                                       "rationale": "compute",
                                       "steps": [
                                         {
@@ -2632,7 +2653,7 @@
                                       "html": "<p>Set <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-components\" id=\"ref-for-interest-group-ad-components②\">ad components</a> to a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②③\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad\" id=\"ref-for-interest-group-ad③\">interest group ad</a>.</p>"
                                     },
                                     {
-                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③①\">For each</a> <var>adComponent</var> in <var>originalAdComponents</var>:",
+                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③②\">For each</a> <var>adComponent</var> in <var>originalAdComponents</var>:",
                                       "rationale": "compute",
                                       "steps": [
                                         {
@@ -2670,7 +2691,7 @@
                                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a> that <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑦\">size</a> of <var>generatedBids</var> ≤ 1.</p>"
                                 },
                                 {
-                                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③②\">For each</a> <var>generatedBid</var> of <var>generatedBids</var>:",
+                                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③③\">For each</a> <var>generatedBid</var> of <var>generatedBids</var>:",
                                   "rationale": "assert",
                                   "steps": [
                                     {
@@ -2693,7 +2714,7 @@
                               "html": "<p>If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-real-time-reporting-config\" id=\"ref-for-auction-config-per-buyer-real-time-reporting-config②\">per buyer real time reporting config</a>[<var>buyer</var>]\nis \"<code>default-local-reporting</code>\", then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#insert-entries-to-map\" id=\"ref-for-insert-entries-to-map\">insert entries to map</a> given <var>realTimeContributionsMap</var>, <var>buyer</var>, and <var>realTimeContributions</var>.</p>"
                             },
                             {
-                              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③③\">For each</a> <var>bidToScore</var> of <var>bidsToScore</var>:",
+                              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③④\">For each</a> <var>bidToScore</var> of <var>bidsToScore</var>:",
                               "rationale": "if",
                               "steps": [
                                 {
@@ -2721,6 +2742,9 @@
           "html": "<p>Wait until both <var>pendingBuyers</var> and <var>pendingAdditionalBids</var> are 0.</p>"
         },
         {
+          "html": "<p>If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-aborted\" id=\"ref-for-auction-config-aborted⑤\">aborted</a> is true, return failure.</p>"
+        },
+        {
           "html": "<p>If <var>leadingBidInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-leading-bid\" id=\"ref-for-leading-bid-info-leading-bid⑨\">leading bid</a> is null, return null.</p>"
         },
         {
@@ -2743,7 +2767,7 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③④\">For each</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#ad-keyword-replacement\" id=\"ref-for-ad-keyword-replacement①\">ad keyword replacement</a>, <var>replacement</var>, within <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-deprecated-render-url-replacements\" id=\"ref-for-auction-config-deprecated-render-url-replacements⑤\">deprecated render url replacements</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑤\">For each</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#ad-keyword-replacement\" id=\"ref-for-ad-keyword-replacement①\">ad keyword replacement</a>, <var>replacement</var>, within <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-deprecated-render-url-replacements\" id=\"ref-for-auction-config-deprecated-render-url-replacements⑤\">deprecated render url replacements</a>:",
               "rationale": "let",
               "steps": [
                 {
@@ -2767,7 +2791,7 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑤\">For each</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-descriptor\" id=\"ref-for-generated-bid-ad-descriptor⑥\">ad descriptor</a>, <var>adDescriptor</var>, within <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-leading-bid\" id=\"ref-for-leading-bid-info-leading-bid①④\">leading bid</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-descriptor\" id=\"ref-for-generated-bid-ad-descriptor⑦\">ad descriptors</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑥\">For each</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-descriptor\" id=\"ref-for-generated-bid-ad-descriptor⑥\">ad descriptor</a>, <var>adDescriptor</var>, within <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-leading-bid\" id=\"ref-for-leading-bid-info-leading-bid①④\">leading bid</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-descriptor\" id=\"ref-for-generated-bid-ad-descriptor⑦\">ad descriptors</a>:",
               "rationale": "set",
               "steps": [
                 {
@@ -2809,7 +2833,7 @@
           "html": "<p>Let <var>adsIDL</var> be a new <code><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①③\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dictdef-auctionad\" id=\"ref-for-dictdef-auctionad③\">AuctionAd</a></code>&gt;</code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑥\">For each</a> <var>ad</var> of <var>ads</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑦\">For each</a> <var>ad</var> of <var>ads</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -2863,7 +2887,7 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑦\">For each</a> <var>adComponentDescriptor</var> in <var>generatedBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-component-descriptors\" id=\"ref-for-generated-bid-ad-component-descriptors④\">ad component\ndescriptors</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑧\">For each</a> <var>adComponentDescriptor</var> in <var>generatedBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-component-descriptors\" id=\"ref-for-generated-bid-ad-component-descriptors④\">ad component\ndescriptors</a>:",
               "rationale": "append",
               "steps": [
                 {
@@ -2913,7 +2937,7 @@
                       "html": "<p>Let <var>adComponentRenderURLsValue</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②②\">map</a>.</p>"
                     },
                     {
-                      "html": "If <var>allTrustedScoringSignals</var>[\"<code>adComponentRenderURLs</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑥\">exists</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑧\">for each</a> <var>adComponentRenderURL</var> in <var>adComponentRenderURLs</var>:",
+                      "html": "If <var>allTrustedScoringSignals</var>[\"<code>adComponentRenderURLs</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦⑥\">exists</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑨\">for each</a> <var>adComponentRenderURL</var> in <var>adComponentRenderURLs</var>:",
                       "rationale": "if",
                       "steps": [
                         {
@@ -3229,7 +3253,7 @@
           "html": "<p>Let <var>result</var> be a new <code><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①④\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString③⑨\">USVString</a></code>&gt;</code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑨\">For each</a> <var>component</var> of <var>adComponents</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⓪\">For each</a> <var>component</var> of <var>adComponents</var>:",
           "rationale": "append",
           "steps": [
             {
@@ -3368,7 +3392,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">request</a> with the following properties:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a>\n       </dt><dd data-md=\"\">\n        <p>«<code>Accept</code>: <code>application/wasm</code>»</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>\n       </dt><dd data-md=\"\">\n        <p><code>null</code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin④\">origin</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-cors</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer\">referrer</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-referrer</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>omit</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode\">redirect mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>error</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container\">policy container</a>\n       </dt><dd data-md=\"\">\n        <p>A new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container①\">policy container</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space\">IP address space</a> is <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container③\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space①\">IP address space</a></p>\n      </dd></dl>"
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">request</a> with the following properties:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a>\n       </dt><dd data-md=\"\">\n        <p>«<code>Accept</code>: <code>application/wasm</code>»</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>\n       </dt><dd data-md=\"\">\n        <p><code>null</code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin④\">origin</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-cors</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer\">referrer</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-referrer</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>omit</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode\">redirect mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>error</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container\">policy container</a>\n       </dt><dd data-md=\"\">\n        <p>A new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container①\">policy container</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space\">IP address space</a> is <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container②\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space①\">IP address space</a></p>\n      </dd></dl>"
         },
         {
           "html": "<p>Let <var>moduleObject</var> be null.</p>"
@@ -3612,7 +3636,7 @@
                       "html": "<p>Let <var>allSizesList</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑨\">list</a> or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①⑦\">strings</a>.</p>"
                     },
                     {
-                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⓪\">For each</a> <var>adSize</var> in <var>config</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-all-slots-requested-sizes\" id=\"ref-for-auction-config-all-slots-requested-sizes⑤\">all slots requested sizes</a>:",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④①\">For each</a> <var>adSize</var> in <var>config</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-all-slots-requested-sizes\" id=\"ref-for-auction-config-all-slots-requested-sizes⑤\">all slots requested sizes</a>:",
                       "rationale": "let",
                       "steps": [
                         {
@@ -3644,7 +3668,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④\">request</a> with the following properties:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url②\">URL</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a>\n       </dt><dd data-md=\"\">\n        <p><code>null</code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin②\">origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑤\">origin</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode②\">mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-cors</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer②\">referrer</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-referrer</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode②\">credentials mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>omit</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode②\">redirect mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>error</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container②\">policy container</a>\n       </dt><dd data-md=\"\">\n        <p>A new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container④\">policy container</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space④\">IP address space</a> is <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container④\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space⑤\">IP address space</a></p>\n      </dd></dl>"
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④\">request</a> with the following properties:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url②\">URL</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a>\n       </dt><dd data-md=\"\">\n        <p><code>null</code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin②\">origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑤\">origin</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode②\">mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-cors</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer②\">referrer</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-referrer</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode②\">credentials mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>omit</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode②\">redirect mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>error</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container②\">policy container</a>\n       </dt><dd data-md=\"\">\n        <p>A new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container④\">policy container</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space④\">IP address space</a> is <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container③\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space⑤\">IP address space</a></p>\n      </dd></dl>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch②\">Fetch</a> <var>request</var> with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-useparallelqueue\" id=\"ref-for-fetch-useparallelqueue①\">useParallelQueue</a> set to true.</p>"
@@ -3971,7 +3995,7 @@
           "html": "<p>Let <var>winningAd</var> be null.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④①\">For each</a> <var>ad</var> of <var>winningGroup</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ads\" id=\"ref-for-interest-group-ads①④\">ads</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④②\">For each</a> <var>ad</var> of <var>winningGroup</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ads\" id=\"ref-for-interest-group-ads①④\">ads</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -3989,7 +4013,7 @@
           "html": "<p>Let <var>winningAdComponents</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#ad-descriptor\" id=\"ref-for-ad-descriptor③\">ad descriptors</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④②\">For each</a> <var>componentAd</var> in <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#server-auction-response-ad-components\" id=\"ref-for-server-auction-response-ad-components\">ad components</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④③\">For each</a> <var>componentAd</var> in <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#server-auction-response-ad-components\" id=\"ref-for-server-auction-response-ad-components\">ad components</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -4019,7 +4043,7 @@
           "html": "<p>Let <var>winningBidInfo</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info\" id=\"ref-for-leading-bid-info⑧\">leading bid info</a> with the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\" id=\"ref-for-struct-item②⑥\">items</a>:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-top-score\" id=\"ref-for-leading-bid-info-top-score⑤\">top score</a>\n       </dt><dd data-md=\"\">\n        <p><var>topScore</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-top-non-k-anon-enforced-score\" id=\"ref-for-leading-bid-info-top-non-k-anon-enforced-score③\">top non-k-anon-enforced score</a>\n       </dt><dd data-md=\"\">\n        <p><var>topScore</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-top-bids-count\" id=\"ref-for-leading-bid-info-top-bids-count③\">top bids count</a>\n       </dt><dd data-md=\"\">\n        <p>1</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-top-non-k-anon-enforced-bids-count\" id=\"ref-for-leading-bid-info-top-non-k-anon-enforced-bids-count③\">top non-k-anon-enforced bids count</a>\n       </dt><dd data-md=\"\">\n        <p>1</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-leading-bid\" id=\"ref-for-leading-bid-info-leading-bid②④\">leading bid</a>\n       </dt><dd data-md=\"\">\n        <p><var>winningBid</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-leading-non-k-anon-enforced-bid\" id=\"ref-for-leading-bid-info-leading-non-k-anon-enforced-bid⑧\">leading non-k-anon-enforced bid</a>\n       </dt><dd data-md=\"\">\n        <p><var>winningBid</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-auction-config\" id=\"ref-for-leading-bid-info-auction-config⑨\">auction config</a>\n       </dt><dd data-md=\"\">\n        <p><var>auctionConfig</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-highest-scoring-other-bid\" id=\"ref-for-leading-bid-info-highest-scoring-other-bid④\">highest scoring other bid</a>\n       </dt><dd data-md=\"\">\n        <p>Null</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-top-level-seller\" id=\"ref-for-leading-bid-info-top-level-seller③\">top level seller</a>\n       </dt><dd data-md=\"\">\n        <p>Null if <var>topLevelAuctionConfig</var> is null, otherwise <var>topLevelAuctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-seller\" id=\"ref-for-auction-config-seller①⑤\">seller</a>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-top-level-seller-signals\" id=\"ref-for-leading-bid-info-top-level-seller-signals②\">top level seller signals</a>\n       </dt><dd data-md=\"\">\n        <p>Null</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-component-seller\" id=\"ref-for-leading-bid-info-component-seller⑦\">component seller</a>\n       </dt><dd data-md=\"\">\n        <p>Null if <var>topLevelAuctionConfig</var> is null, otherwise <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-seller\" id=\"ref-for-auction-config-seller①⑥\">seller</a>.</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-bidding-data-version\" id=\"ref-for-leading-bid-info-bidding-data-version②\">bidding data version</a>\n       </dt><dd data-md=\"\">\n        <p>Null</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-scoring-data-version\" id=\"ref-for-leading-bid-info-scoring-data-version②\">scoring data version</a>\n       </dt><dd data-md=\"\">\n        <p>Null</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-buyer-reporting-result\" id=\"ref-for-leading-bid-info-buyer-reporting-result⑥\">buyer reporting result</a>\n       </dt><dd data-md=\"\">\n        <p><var>buyerReportingResult</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-seller-reporting-result\" id=\"ref-for-leading-bid-info-seller-reporting-result⑤\">seller reporting result</a>\n       </dt><dd data-md=\"\">\n        <p><var>sellerReportingResult</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-component-seller-reporting-result\" id=\"ref-for-leading-bid-info-component-seller-reporting-result⑤\">component seller reporting result</a>\n       </dt><dd data-md=\"\">\n        <p><var>componentSellerReportingResult</var></p>\n      </dd></dl>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④③\">For each</a> <var>igPair</var> in <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#server-auction-response-bidding-groups\" id=\"ref-for-server-auction-response-bidding-groups\">bidding groups</a> field:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④④\">For each</a> <var>igPair</var> in <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#server-auction-response-bidding-groups\" id=\"ref-for-server-auction-response-bidding-groups\">bidding groups</a> field:",
           "rationale": "let",
           "steps": [
             {
@@ -4051,14 +4075,14 @@
           "html": "<p>If <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc①\">browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#browsing-context-required-csp\" id=\"ref-for-browsing-context-required-csp\">required CSP</a> is not null, then return false.</p>"
         },
         {
-          "html": "<p>Let <var>CSPList</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑧\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container⑤\">policy\n container</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list\">CSP list</a>.</p>"
+          "html": "<p>Let <var>CSPList</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑧\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container④\">policy\n container</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list\">CSP list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④④\">For each</a> <var>policy</var> of <var>CSPList</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⑤\">For each</a> <var>policy</var> of <var>CSPList</var>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⑤\">For each</a> <var>directive</var> of <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set\">directive set</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⑥\">For each</a> <var>directive</var> of <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set\">directive set</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -4108,7 +4132,7 @@
               "html": "<p>Let <var>startTime</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment②\">moment</a> equal to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-wall-time\" id=\"ref-for-dfn-current-wall-time①⓪\">current wall time</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⑥\">For each</a> <var>ig</var> of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent②⑧\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-set\" id=\"ref-for-interest-group-set②⑦\">interest group set</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⑦\">For each</a> <var>ig</var> of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent②⑧\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-set\" id=\"ref-for-interest-group-set②⑦\">interest group set</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -4124,19 +4148,19 @@
                   "html": "<p>Let <var>ads</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⓪\">list</a>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⑦\">For each</a> <var>ad</var> in <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ads\" id=\"ref-for-interest-group-ads①⑦\">ads</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②⑦\">append</a> <var>ad</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-ad-render-id\" id=\"ref-for-interest-group-ad-ad-render-id⑦\">ad render ID</a> to <var>ads</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⑧\">For each</a> <var>ad</var> in <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ads\" id=\"ref-for-interest-group-ads①⑦\">ads</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②⑦\">append</a> <var>ad</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-ad-render-id\" id=\"ref-for-interest-group-ad-ad-render-id⑦\">ad render ID</a> to <var>ads</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>components</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④①\">list</a>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⑧\">For each</a> <var>component</var> in <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-components\" id=\"ref-for-interest-group-ad-components⑧\">ad components</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②⑧\">append</a> <var>component</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-ad-render-id\" id=\"ref-for-interest-group-ad-ad-render-id⑧\">ad render ID</a> to <var>components</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⑨\">For each</a> <var>component</var> in <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-components\" id=\"ref-for-interest-group-ad-components⑧\">ad components</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②⑧\">append</a> <var>component</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-ad-render-id\" id=\"ref-for-interest-group-ad-ad-render-id⑧\">ad render ID</a> to <var>components</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>prevWins</var> be a new <code><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①⑥\">sequence</a>&lt;<a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#server-auction-previous-win\" id=\"ref-for-server-auction-previous-win①\">server auction previous win</a>&gt;</code>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⑨\">For each</a> <var>prevWin</var> of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-previous-wins\" id=\"ref-for-interest-group-previous-wins③\">previous wins</a> for all days within the\nthe last 30 days:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⓪\">For each</a> <var>prevWin</var> of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-previous-wins\" id=\"ref-for-interest-group-previous-wins③\">previous wins</a> for all days within the\nthe last 30 days:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -4177,7 +4201,7 @@
               "html": "<p>Let <var>context</var> be the result of serializing <var>igMap</var> using <var>config</var> into <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/turtledove/#dom-adauctiondata-request\" id=\"ref-for-dom-adauctiondata-request\">request</a></code> field.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①⓪\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source①⓪\">DOM manipulation task source</a>, given <var>global</var>, to\nresolve <var>p</var> with <var>result</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source①①\">DOM manipulation task source</a>, given <var>global</var>, to\nresolve <var>p</var> with <var>result</var>.</p>"
             },
             {
               "html": "<p>Let <var>requestContext</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#server-auction-request-context\" id=\"ref-for-server-auction-request-context\">server auction request context</a>.</p>"
@@ -4225,7 +4249,7 @@
           "html": "<p>Let <var>winningBid</var> be <var>winnerInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#leading-bid-info-leading-bid\" id=\"ref-for-leading-bid-info-leading-bid②⑥\">leading bid</a> if <var>winnerInfo</var> is\nnot null, null otherwise.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⓪\">For each</a> <var>bidDebugReportInfo</var> of <var>bidDebugReportInfoList</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤①\">For each</a> <var>bidDebugReportInfo</var> of <var>bidDebugReportInfoList</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -4314,7 +4338,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③②\">Append</a> <var>bidDebugReportInfo</var> to <var>bidDebugReportInfoList</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤①\">For each</a> <var>generatedBid</var> of <var>generatedBids</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤②\">For each</a> <var>generatedBid</var> of <var>generatedBids</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -4410,7 +4434,7 @@
           "html": "<p>Let <var>priorityWeightSum</var> be 0.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤②\">For each</a> <var>contribution</var> of <var>contributions</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤③\">For each</a> <var>contribution</var> of <var>contributions</var>:",
           "rationale": "increment",
           "steps": [
             {
@@ -4431,7 +4455,7 @@
           "html": "<p>Let <var>selectedBucket</var> be -1.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤③\">For each</a> <var>contribution</var> of <var>contributions</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤④\">For each</a> <var>contribution</var> of <var>contributions</var>:",
           "rationale": "increment",
           "steps": [
             {
@@ -4469,7 +4493,7 @@
           "html": "<p>Let <var>numBits</var> be 0.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤④\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range②\">the range</a> from 0 to <var>inputSize</var>, exclusive:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⑤\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range②\">the range</a> from 0 to <var>inputSize</var>, exclusive:",
           "rationale": "set",
           "steps": [
             {
@@ -4537,7 +4561,7 @@
           "html": "<p>Let <var>userHistogram</var> and <var>platformHistogram</var> be new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⓪\">lists</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑦\">booleans</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⑤\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range③\">the range</a> 0 to <var>totalBuckets</var>, exclusive:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⑥\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range③\">the range</a> 0 to <var>totalBuckets</var>, exclusive:",
           "rationale": "if",
           "steps": [
             {
@@ -4552,7 +4576,7 @@
           "html": "<p>Let <var>body</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③②\">ordered map</a> of the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry\">entries</a>:</p>\n      <dl>\n       <dt data-md=\"\">\"version\"\n       </dt><dd data-md=\"\">\n        <p>1</p>\n       </dd><dt data-md=\"\">\"histogram\"\n       </dt><dd data-md=\"\">\n        <p>a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③③\">ordered map</a> of the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry①\">entries</a>:</p>\n        <dl>\n         <dt data-md=\"\">\"buckets\"\n         </dt><dd data-md=\"\">\n          <p>the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#bit-pack\" id=\"ref-for-bit-pack\">bit packing</a> with <var>userHistogram</var></p>\n         </dd><dt data-md=\"\">\"length\"\n         </dt><dd data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#number-of-user-buckets\" id=\"ref-for-number-of-user-buckets①\">number of user buckets</a></p>\n        </dd></dl>\n       </dd><dt data-md=\"\">\"platformHistogram\"\n       </dt><dd data-md=\"\">\n        <p>a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③④\">ordered map</a> of the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry②\">entries</a>:</p>\n        <dl>\n         <dt data-md=\"\">\"buckets\"\n         </dt><dd data-md=\"\">\n          <p>the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#bit-pack\" id=\"ref-for-bit-pack①\">bit packing</a> with <var>platformHistogram</var></p>\n         </dd><dt data-md=\"\">\"length\"\n         </dt><dd data-md=\"\">\n          <p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#number-of-platform-buckets\" id=\"ref-for-number-of-platform-buckets①\">number of platform buckets</a></p>\n        </dd></dl>\n      </dd></dl>"
         },
         {
-          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤\">request</a> with the following properties:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url③\">URL</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②\">header list</a>\n       </dt><dd data-md=\"\">\n        <p>«<code>Content-Type</code>: <code>application/cbor</code>»</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method\">method</a>\n       </dt><dd data-md=\"\">\n        <p><code>POST</code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body\">body</a>\n       </dt><dd data-md=\"\">\n        <p>the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence④\">byte sequence</a> resulting from <a href=\"https://www.rfc-editor.org/rfc/rfc8949#name-specification-of-the-cbor-e\">CBOR encoding</a> <var>body</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client③\">client</a>\n       </dt><dd data-md=\"\">\n        <p><code>null</code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin③\">origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑥\">origin</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode③\">mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-cors</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer③\">referrer</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-referrer</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode③\">credentials mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>omit</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode③\">redirect mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>error</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container③\">policy container</a>\n       </dt><dd data-md=\"\">\n        <p>A new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container⑤\">policy container</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space⑥\">IP address space</a> is <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container⑥\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space⑦\">IP address space</a></p>\n      </dd></dl>"
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤\">request</a> with the following properties:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url③\">URL</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②\">header list</a>\n       </dt><dd data-md=\"\">\n        <p>«<code>Content-Type</code>: <code>application/cbor</code>»</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method\">method</a>\n       </dt><dd data-md=\"\">\n        <p><code>POST</code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body\">body</a>\n       </dt><dd data-md=\"\">\n        <p>the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence④\">byte sequence</a> resulting from <a href=\"https://www.rfc-editor.org/rfc/rfc8949#name-specification-of-the-cbor-e\">CBOR encoding</a> <var>body</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client③\">client</a>\n       </dt><dd data-md=\"\">\n        <p><code>null</code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin③\">origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑥\">origin</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode③\">mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-cors</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer③\">referrer</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-referrer</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode③\">credentials mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>omit</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode③\">redirect mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>error</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container③\">policy container</a>\n       </dt><dd data-md=\"\">\n        <p>A new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container⑤\">policy container</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space⑥\">IP address space</a> is <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container⑤\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space⑦\">IP address space</a></p>\n      </dd></dl>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch③\">Fetch</a> <var>request</var> with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-useparallelqueue\" id=\"ref-for-fetch-useparallelqueue②\">useParallelQueue</a> set to true.</p>"
@@ -4630,7 +4654,7 @@
           "html": "<p>Let <var>f</var> be <code><span class=\"math\">2.0/(1+e<sup><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#epsilon\" id=\"ref-for-epsilon①\">epsilon</a>/2.0</sup>)</span></code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⑥\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range④\">the range</a> from 0 to <var>totalBuckets</var>, exclusive:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⑦\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range④\">the range</a> from 0 to <var>totalBuckets</var>, exclusive:",
           "rationale": "let",
           "steps": [
             {
@@ -4678,7 +4702,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①①\">Queue a global task</a> on <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source①①\">DOM manipulation task source</a>, given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑤\">resolve</a> <var>p</var> with <var>nonce</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①②\">Queue a global task</a> on <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source①②\">DOM manipulation task source</a>, given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑤\">resolve</a> <var>p</var> with <var>nonce</var>.</p>"
                 }
               ]
             }
@@ -4711,7 +4735,7 @@
           "html": "<p>Let <var>additionalBids</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#decoded-additional-bid\" id=\"ref-for-decoded-additional-bid\">decoded additional bids</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⑦\">For each</a> <var>encodedSignedAdditionalBid</var> of <var>capturedAdditionalBidsHeaders</var>[<var>auctionNonce</var>]:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⑧\">For each</a> <var>encodedSignedAdditionalBid</var> of <var>capturedAdditionalBidsHeaders</var>[<var>auctionNonce</var>]:",
           "rationale": "let",
           "steps": [
             {
@@ -4755,7 +4779,7 @@
           "html": "<p>Let <var>decodeSignatureFailed</var> be false.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⑧\">For each</a> <var>sig</var> of <var>parsedSignedAdditionalBid</var>[\"signatures\"]:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⑨\">For each</a> <var>sig</var> of <var>parsedSignedAdditionalBid</var>[\"signatures\"]:",
           "rationale": "set",
           "steps": [
             {
@@ -4791,7 +4815,7 @@
           "html": "<p>Let <var>verifiedSignatureKeys</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤\">set</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑥\">byte sequences</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤⑨\">For each</a> <var>signature</var> of <var>signatures</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⓪\">For each</a> <var>signature</var> of <var>signatures</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -4874,7 +4898,7 @@
           "html": "<p>Let <var>igBiddingUrl</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser③\">url parser</a> on <var>igMap</var>[\"biddingLogicURL\"].</p>"
         },
         {
-          "html": "<p>Return failure if any of the following conditions hold:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>igOwner</var> is failure;</p>\n       </li><li data-md=\"\">\n        <p><var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-interest-group-buyers\" id=\"ref-for-auction-config-interest-group-buyers④\">interest group buyers</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contain</a> <var>igOwner</var>;</p>\n       </li><li data-md=\"\">\n        <p><var>igBiddingUrl</var> is failure;</p>\n       </li><li data-md=\"\">\n        <p><var>igOwner</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin⑨\">same origin</a> with <var>igBiddingUrl</var>.</p>\n      </li></ul>"
+          "html": "<p>Return failure if any of the following conditions hold:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>igOwner</var> is failure;</p>\n       </li><li data-md=\"\">\n        <p><var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-interest-group-buyers\" id=\"ref-for-auction-config-interest-group-buyers③\">interest group buyers</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contain</a> <var>igOwner</var>;</p>\n       </li><li data-md=\"\">\n        <p><var>igBiddingUrl</var> is failure;</p>\n       </li><li data-md=\"\">\n        <p><var>igOwner</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin⑨\">same origin</a> with <var>igBiddingUrl</var>.</p>\n      </li></ul>"
         },
         {
           "html": "<p>Let <var>ig</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group\" id=\"ref-for-interest-group③⓪\">interest group</a> with the following properties:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-owner\" id=\"ref-for-interest-group-owner④⑥\">owner</a>\n       </dt><dd data-md=\"\">\n        <p><var>igOwner</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-name\" id=\"ref-for-interest-group-name②③\">name</a>\n       </dt><dd data-md=\"\">\n        <p><var>igName</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-bidding-url\" id=\"ref-for-interest-group-bidding-url⑥\">bidding url</a>\n       </dt><dd data-md=\"\">\n        <p><var>igBiddingUrl</var></p>\n      </dd></dl>"
@@ -4974,7 +4998,7 @@
               "html": "<p>If <var>bidMap</var>[\"adComponents\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⑥\">list</a>, then return failure.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⓪\">For each</a> <var>component</var> of <var>bidMap</var>[\"adComponents\"]:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥①\">For each</a> <var>component</var> of <var>bidMap</var>[\"adComponents\"]:",
               "rationale": "if",
               "steps": [
                 {
@@ -5031,7 +5055,7 @@
               "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#decoded-additional-bid-negative-target-joining-origin\" id=\"ref-for-decoded-additional-bid-negative-target-joining-origin\">negative target joining origin</a> to <var>joiningOrigin</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥①\">For each</a> <var>igName</var> of <var>multipleNegativeIg</var>[\"interestGroupNames\"]:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥②\">For each</a> <var>igName</var> of <var>multipleNegativeIg</var>[\"interestGroupNames\"]:",
               "rationale": "if",
               "steps": [
                 {
@@ -5068,7 +5092,7 @@
           "html": "<p>Let <var>additionalBidBuyer</var> be <var>additionalBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#decoded-additional-bid-bid\" id=\"ref-for-decoded-additional-bid-bid②\">bid</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-interest-group\" id=\"ref-for-generated-bid-interest-group②⓪\">interest group</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-owner\" id=\"ref-for-interest-group-owner④⑦\">owner</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥②\">For each</a> <var>igName</var> of <var>additionalBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#decoded-additional-bid-negative-target-interest-group-names\" id=\"ref-for-decoded-additional-bid-negative-target-interest-group-names③\">negative target interest group names</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥③\">For each</a> <var>igName</var> of <var>additionalBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#decoded-additional-bid-negative-target-interest-group-names\" id=\"ref-for-decoded-additional-bid-negative-target-interest-group-names③\">negative target interest group names</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -5217,7 +5241,7 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥③\">For each</a> <var>adComponentDescriptor</var> in <var>bid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-component-descriptors\" id=\"ref-for-generated-bid-ad-component-descriptors①⓪\">ad component descriptors</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥④\">For each</a> <var>adComponentDescriptor</var> in <var>bid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-component-descriptors\" id=\"ref-for-generated-bid-ad-component-descriptors①⓪\">ad component descriptors</a>:",
               "rationale": "compute",
               "steps": [
                 {
@@ -5256,6 +5280,9 @@
       "rationale": ".algorithm",
       "steps": [
         {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②④\">Assert</a> that these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①②\">in parallel</a>.</p>"
+        },
+        {
           "html": "<p>Let <var>record</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#k-anonymity-record\" id=\"ref-for-k-anonymity-record①\">k-anonymity record</a>.</p>"
         },
         {
@@ -5276,7 +5303,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥④\">For each</a> <var>igAd</var> of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ads\" id=\"ref-for-interest-group-ads②①\">ads</a>:",
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑤\">Assert</a> that these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①③\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑤\">For each</a> <var>igAd</var> of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ads\" id=\"ref-for-interest-group-ads②①\">ads</a>:",
           "rationale": "compute",
           "steps": [
             {
@@ -5294,7 +5324,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑤\">For each</a> <var>componentAd</var> of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-components\" id=\"ref-for-interest-group-ad-components①①\">ad components</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑥\">For each</a> <var>componentAd</var> of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-components\" id=\"ref-for-interest-group-ad-components①①\">ad components</a>:",
           "rationale": "compute",
           "steps": [
             {
@@ -5389,7 +5419,7 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑥\">For each</a> <var>adComponentDescriptor</var> in <var>winner</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-component-descriptors\" id=\"ref-for-generated-bid-ad-component-descriptors①②\">ad component descriptors</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑦\">For each</a> <var>adComponentDescriptor</var> in <var>winner</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-component-descriptors\" id=\"ref-for-generated-bid-ad-component-descriptors①②\">ad component descriptors</a>:",
               "rationale": "increment",
               "steps": [
                 {
@@ -5448,7 +5478,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②④\">Assert</a> that these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①②\">in parallel</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑥\">Assert</a> that these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①④\">in parallel</a>.</p>"
         },
         {
           "html": "<p>Let <var>agent</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#obtain-a-script-runner-agent\" id=\"ref-for-obtain-a-script-runner-agent\">obtaining a script runner agent</a> given null, true, and false.\nRun the rest of these steps in <var>agent</var>.</p>"
@@ -5616,7 +5646,7 @@
               "html": "<p>Set <var>bidDebugReportInfo</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#bid-debug-reporting-info-bidder-debug-win-report-url\" id=\"ref-for-bid-debug-reporting-info-bidder-debug-win-report-url①\">bidder debug win report url</a> to <var>debugWinReportUrl</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑦\">For each</a> <var>generatedBid</var> in <var>generatedBids</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑧\">For each</a> <var>generatedBid</var> in <var>generatedBids</var>:",
               "rationale": "set",
               "steps": [
                 {
@@ -5630,7 +5660,7 @@
           "html": "<p>Let <var>realTimeContributions</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥④\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#real-time-reporting-contribution\" id=\"ref-for-real-time-reporting-contribution④\">real time reporting contributions</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑧\">For each</a> <var>contribution</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interestgroupbiddingandscoringscriptrunnerglobalscope-real-time-reporting-contributions\" id=\"ref-for-interestgroupbiddingandscoringscriptrunnerglobalscope-real-time-reporting-contributions\">real time reporting contributions</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑨\">For each</a> <var>contribution</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interestgroupbiddingandscoringscriptrunnerglobalscope-real-time-reporting-contributions\" id=\"ref-for-interestgroupbiddingandscoringscriptrunnerglobalscope-real-time-reporting-contributions\">real time reporting contributions</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -5689,7 +5719,7 @@
           "html": "<p>Let <var>realTimeContributions</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥⑤\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#real-time-reporting-contribution\" id=\"ref-for-real-time-reporting-contribution⑤\">real time reporting contributions</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥⑨\">For each</a> <var>contribution</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interestgroupbiddingandscoringscriptrunnerglobalscope-real-time-reporting-contributions\" id=\"ref-for-interestgroupbiddingandscoringscriptrunnerglobalscope-real-time-reporting-contributions①\">real time reporting contributions</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⓪\">For each</a> <var>contribution</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interestgroupbiddingandscoringscriptrunnerglobalscope-real-time-reporting-contributions\" id=\"ref-for-interestgroupbiddingandscoringscriptrunnerglobalscope-real-time-reporting-contributions①\">real time reporting contributions</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -5753,7 +5783,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑤\">Assert</a> that these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①③\">in parallel</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑦\">Assert</a> that these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑤\">in parallel</a>.</p>"
         },
         {
           "html": "<p>If <var>timeout</var> ≤ 0, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C#immediately\" id=\"ref-for-immediately\">immediately</a> interrupt the execution and set <var>finalCompletion</var> to a\nnew <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-completion-record-specification-type\" id=\"ref-for-sec-completion-record-specification-type⑤\">throw completion</a> given null.</p>"
@@ -5768,7 +5798,7 @@
           "html": "<p>If <var>result</var> is a list of errors, return\n Completion { [[Type]]: <code>throw</code>, [[Value]]: <var>result</var>, [[Target]]: <code>empty</code> }.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑥\">Assert</a>: <var>result</var> is a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#script-record\" id=\"ref-for-script-record①\">Script Record</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑧\">Assert</a>: <var>result</var> is a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#script-record\" id=\"ref-for-script-record①\">Script Record</a>.</p>"
         },
         {
           "html": "<p><em>Prepare to run script</em>: Push <var>realmExecutionContext</var> onto the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#execution-context-stack\" id=\"ref-for-execution-context-stack\">JavaScript execution context stack</a>; it is now the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#running-execution-context\" id=\"ref-for-running-execution-context\">running JavaScript execution context</a>.</p>"
@@ -5790,7 +5820,7 @@
           "rationale": "clean",
           "steps": [
             {
-              "html": "<p><em>Clean up after script</em>: <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑦\">Assert</a> <var>realmExecutionContext</var> is the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#running-execution-context\" id=\"ref-for-running-execution-context①\">running JavaScript execution context</a>, and remove it from the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#execution-context-stack\" id=\"ref-for-execution-context-stack①\">JavaScript execution context stack</a>.</p>"
+              "html": "<p><em>Clean up after script</em>: <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑨\">Assert</a> <var>realmExecutionContext</var> is the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#running-execution-context\" id=\"ref-for-running-execution-context①\">running JavaScript execution context</a>, and remove it from the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#execution-context-stack\" id=\"ref-for-execution-context-stack①\">JavaScript execution context stack</a>.</p>"
             },
             {
               "html": "<p>Return <var>finalCompletion</var>.</p>"
@@ -5912,7 +5942,7 @@
           "html": "<p>Let <var>bids</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦⓪\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid\" id=\"ref-for-generated-bid①⑤\">generated bids</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⓪\">for each</a> <var>bidOutput</var> of <var>bidSequence</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦①\">for each</a> <var>bidOutput</var> of <var>bidSequence</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -6247,7 +6277,7 @@
           "html": "<p>Let <var>adList</var> be <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-components\" id=\"ref-for-interest-group-ad-components①③\">ad components</a> if <var>isComponent</var>, otherwise <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ads\" id=\"ref-for-interest-group-ads②③\">ads</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦①\">For each</a> <var>ad</var> in <var>adList</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦②\">For each</a> <var>ad</var> in <var>adList</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -6260,7 +6290,7 @@
               "html": "<p>If <var>adSize</var> is null, return <var>ad</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦②\">For each</a> <var>igSize</var> in (<var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-size-groups\" id=\"ref-for-interest-group-size-groups①\">size groups</a>)[<var>ad</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-size-group\" id=\"ref-for-interest-group-ad-size-group④\">size group</a>]:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦③\">For each</a> <var>igSize</var> in (<var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-size-groups\" id=\"ref-for-interest-group-size-groups①\">size groups</a>)[<var>ad</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-size-group\" id=\"ref-for-interest-group-ad-size-group④\">size group</a>]:",
               "rationale": "if",
               "steps": [
                 {
@@ -6394,7 +6424,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦③\">For each</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit\">code unit</a> <var>c</var> in <var>name</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦④\">For each</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit\">code unit</a> <var>c</var> in <var>name</var>:",
           "rationale": "throw",
           "steps": [
             {
@@ -6403,7 +6433,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦④\">For each</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit①\">code unit</a> <var>c</var> in <var>value</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⑤\">For each</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit①\">code unit</a> <var>c</var> in <var>value</var>:",
           "rationale": "throw",
           "steps": [
             {
@@ -6426,7 +6456,7 @@
           "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑨\">relevant settings object</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①④\">In parallel</a>, run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-update\" id=\"ref-for-interest-group-update③\">interest group update</a> with « <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin④\">top-level origin</a> »,\nand <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container⑦\">policy container</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑥\">In parallel</a>, run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-update\" id=\"ref-for-interest-group-update②\">interest group update</a> with « <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin④\">top-level origin</a> »,\nand <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container⑥\">policy container</a>.</p>"
         }
       ]
     },
@@ -6437,11 +6467,11 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⑤\">For each</a> <var>owner</var> of <var>owners</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⑥\">For each</a> <var>owner</var> of <var>owners</var>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⑥\">For each</a> <var>originalInterestGroup</var> of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④⑨\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-set\" id=\"ref-for-interest-group-set③③\">interest group set</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-owner\" id=\"ref-for-interest-group-owner⑤⑥\">owner</a> is <var>owner</var> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-next-update-after\" id=\"ref-for-interest-group-next-update-after①\">next update after</a> is before\nthe <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-wall-time\" id=\"ref-for-dfn-current-wall-time①⑧\">current wall time</a> and whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-update-url\" id=\"ref-for-interest-group-update-url⑤\">update url</a> is not null:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⑦\">For each</a> <var>originalInterestGroup</var> of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④⑨\">user agent</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-set\" id=\"ref-for-interest-group-set③③\">interest group set</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-owner\" id=\"ref-for-interest-group-owner⑤⑥\">owner</a> is <var>owner</var> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-next-update-after\" id=\"ref-for-interest-group-next-update-after①\">next update after</a> is before\nthe <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-wall-time\" id=\"ref-for-dfn-current-wall-time①⑧\">current wall time</a> and whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-update-url\" id=\"ref-for-interest-group-update-url⑤\">update url</a> is not null:",
               "rationale": "let",
               "steps": [
                 {
@@ -6580,7 +6610,7 @@
                                       "html": "<p>Let <var>sellerCapabilities</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑦\">set</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#seller-capability\" id=\"ref-for-seller-capability③\">seller capabilities</a>.</p>"
                                     },
                                     {
-                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⑦\">For each</a> <var>capabilityString</var> of <var>capabilities</var>:",
+                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⑧\">For each</a> <var>capabilityString</var> of <var>capabilities</var>:",
                                       "rationale": "if",
                                       "steps": [
                                         {
@@ -6861,7 +6891,7 @@
                                       "html": "<p>If <var>sizeGroupName</var> is \"\", jump to the step labeled <i><a href=\"https://wicg.github.io/turtledove/#abort-update\">Abort update</a></i>.</p>"
                                     },
                                     {
-                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⑧\">For each</a> <var>sizeName</var> of <var>sizeList</var>:",
+                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⑨\">For each</a> <var>sizeName</var> of <var>sizeList</var>:",
                                       "rationale": "if",
                                       "steps": [
                                         {
@@ -6898,7 +6928,7 @@
                                       "html": "<p>Let <var>igAds</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦⑦\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad\" id=\"ref-for-interest-group-ad①④\">interest group ads</a>.</p>"
                                     },
                                     {
-                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⑨\">For each</a> <var>ad</var> of <var>value</var>:",
+                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⓪\">For each</a> <var>ad</var> of <var>value</var>:",
                                       "rationale": "let",
                                       "steps": [
                                         {
@@ -6980,7 +7010,7 @@
                                       "html": "<p>Let <var>igAds</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦⑦\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad\" id=\"ref-for-interest-group-ad①④\">interest group ads</a>.</p>"
                                     },
                                     {
-                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦⑨\">For each</a> <var>ad</var> of <var>value</var>:",
+                                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⓪\">For each</a> <var>ad</var> of <var>value</var>:",
                                       "rationale": "let",
                                       "steps": [
                                         {
@@ -7193,7 +7223,7 @@
           "html": "<p>4, which is the size of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-trusted-bidding-signals-slot-size-mode\" id=\"ref-for-interest-group-trusted-bidding-signals-slot-size-mode⑤\">trusted bidding signals slot size mode</a>.</p>"
         },
         {
-          "html": "<p>If <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-trusted-bidding-signals-keys\" id=\"ref-for-interest-group-trusted-bidding-signals-keys⑦\">trusted bidding signals keys</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⓪\">for each</a> <var>key</var> of it:</p>",
+          "html": "<p>If <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-trusted-bidding-signals-keys\" id=\"ref-for-interest-group-trusted-bidding-signals-keys⑦\">trusted bidding signals keys</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧①\">for each</a> <var>key</var> of it:</p>",
           "ignored": [
             "The length of key."
           ]
@@ -7208,7 +7238,7 @@
           "html": "<p>The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①①\">length</a> of <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-user-bidding-signals\" id=\"ref-for-interest-group-user-bidding-signals⑤\">user bidding signals</a>.</p>"
         },
         {
-          "html": "If <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ads\" id=\"ref-for-interest-group-ads②⑥\">ads</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧①\">for each</a> <var>ad</var> of it:",
+          "html": "If <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ads\" id=\"ref-for-interest-group-ads②⑥\">ads</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧②\">for each</a> <var>ad</var> of it:",
           "rationale": "if",
           "steps": [
             {
@@ -7227,7 +7257,7 @@
               "html": "<p>The <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①⑥\">length</a> of <var>ad</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-buyer-and-seller-reporting-id\" id=\"ref-for-interest-group-ad-buyer-and-seller-reporting-id⑨\">buyer and seller reporting ID</a> if the\nfield is not null.</p>"
             },
             {
-              "html": "<p>If <var>ad</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-allowed-reporting-origins\" id=\"ref-for-interest-group-ad-allowed-reporting-origins②\">allowed reporting origins</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧②\">for each</a> <var>origin</var> of it:</p>",
+              "html": "<p>If <var>ad</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-allowed-reporting-origins\" id=\"ref-for-interest-group-ad-allowed-reporting-origins②\">allowed reporting origins</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧③\">for each</a> <var>origin</var> of it:</p>",
               "ignored": [
                 "The length of the serialization of origin."
               ]
@@ -7235,7 +7265,7 @@
           ]
         },
         {
-          "html": "<p>If <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-components\" id=\"ref-for-interest-group-ad-components①⑤\">ad components</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧③\">for each</a> <var>ad</var> of it:</p>",
+          "html": "<p>If <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#interest-group-ad-components\" id=\"ref-for-interest-group-ad-components①⑤\">ad components</a> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧④\">for each</a> <var>ad</var> of it:</p>",
           "ignored": [
             "The length of the serialization of ad’s render url. The length of ad’s size group if the field is not null. The length of ad’s metadata if the field is not null."
           ]
@@ -7254,7 +7284,7 @@
               "html": "<p>The sum of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length②②\">length</a> of <var>sizeGroupName</var> and the following:</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧④\">For each</a> <var>sizeName</var> of <var>sizeList</var>:</p>",
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⑤\">For each</a> <var>sizeName</var> of <var>sizeList</var>:</p>",
               "ignored": [
                 "The length of sizeName."
               ]
@@ -7313,7 +7343,7 @@
           "html": "<p>Return failure if any of the following conditions hold:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>parsedUrl</var> is failure;</p>\n       </li><li data-md=\"\">\n        <p><var>parsedUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑦\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin①②\">same origin</a> with <var>igOwner</var>;</p>\n       </li><li data-md=\"\">\n        <p><var>parsedUrl</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#include-credentials\" id=\"ref-for-include-credentials②\">includes credentials</a>;</p>\n       </li><li data-md=\"\">\n        <p><var>parsedUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment\">fragment</a> is not null.</p>\n      </li></ul>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑧\">Assert</a>: <var>parsedUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①③\">scheme</a> is \"<code>https</code>\".</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③⓪\">Assert</a>: <var>parsedUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①③\">scheme</a> is \"<code>https</code>\".</p>"
         },
         {
           "html": "<p>Return <var>parsedUrl</var>.</p>"
@@ -7403,7 +7433,7 @@
           "html": "<p>Let <var>uuidStr</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑧⓪\">string</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⑤\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range⑤\">the range</a> from 1 to 36, inclusive:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⑥\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range⑤\">the range</a> from 1 to 36, inclusive:",
           "rationale": "let",
           "steps": [
             {
@@ -7610,7 +7640,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-delete\" id=\"ref-for-concept-header-list-delete③\">Delete</a> \"<span>`<code><a data-link-type=\"http-header\" href=\"https://wicg.github.io/turtledove/#http-headerdef-ad-auction-additional-bid\" id=\"ref-for-http-headerdef-ad-auction-additional-bid⑨\">Ad-Auction-Additional-Bid</a></code>`</span>\" from <var>responseHeaders</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⑥\">For each</a> <var>bid</var> of <var>additionalBids</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⑦\">For each</a> <var>bid</var> of <var>additionalBids</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -7636,7 +7666,7 @@
           "html": "<p>Let <var>adAuctionResults</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-decode-split\" id=\"ref-for-concept-header-list-get-decode-split①\">getting, decoding, and splitting</a> <span>`<code><a data-link-type=\"http-header\" href=\"https://wicg.github.io/turtledove/#http-headerdef-ad-auction-result\" id=\"ref-for-http-headerdef-ad-auction-result②\">Ad-Auction-Result</a></code>`</span> from <var>responseHeaders</var>.</p>"
         },
         {
-          "html": "If <var>adAuctionResults</var> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⑦\">for each</a> <var>result</var> of <var>adAuctionResults</var>:",
+          "html": "If <var>adAuctionResults</var> is not null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⑧\">for each</a> <var>result</var> of <var>adAuctionResults</var>:",
           "rationale": "strip",
           "steps": [
             {
@@ -7686,7 +7716,7 @@
           "html": "<p>Let <var>headerAdSlots</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑨\">ordered set</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⑧\">For each</a> <var>signal</var> of <var>parsedSignals</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⑨\">For each</a> <var>signal</var> of <var>parsedSignals</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -7872,10 +7902,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Wait until <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-pending-promise-count\" id=\"ref-for-auction-config-pending-promise-count\">pending promise count</a> is 0.</p>"
+          "html": "<p>Wait until either <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-pending-promise-count\" id=\"ref-for-auction-config-pending-promise-count\">pending promise count</a> is 0\n or <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-aborted\" id=\"ref-for-auction-config-aborted⑥\">aborted</a> is true.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②⑨\">Assert</a> <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-auction-signals\" id=\"ref-for-auction-config-auction-signals⑥\">auction signals</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-seller-signals\" id=\"ref-for-auction-config-seller-signals⑤\">seller signals</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-signals\" id=\"ref-for-auction-config-per-buyer-signals①⓪\">per buyer signals</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-currencies\" id=\"ref-for-auction-config-per-buyer-currencies⑦\">per buyer currencies</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-timeouts\" id=\"ref-for-auction-config-per-buyer-timeouts⑥\">per buyer timeouts</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-cumulative-timeouts\" id=\"ref-for-auction-config-per-buyer-cumulative-timeouts⑤\">per buyer cumulative timeouts</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-deprecated-render-url-replacements\" id=\"ref-for-auction-config-deprecated-render-url-replacements⑥\">deprecated render url replacements</a>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-direct-from-seller-signals-header-ad-slot\" id=\"ref-for-auction-config-direct-from-seller-signals-header-ad-slot⑥\">direct from seller signals header ad slot</a> are not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③①\">Promise</a></code>s, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-expects-additional-bids\" id=\"ref-for-auction-config-expects-additional-bids③\">expects additional bids</a> is false.</p>"
+          "html": "<p>If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-aborted\" id=\"ref-for-auction-config-aborted⑦\">aborted</a> is true, return failure.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③①\">Assert</a> <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-auction-signals\" id=\"ref-for-auction-config-auction-signals⑥\">auction signals</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-seller-signals\" id=\"ref-for-auction-config-seller-signals⑤\">seller signals</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-signals\" id=\"ref-for-auction-config-per-buyer-signals①⓪\">per buyer signals</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-currencies\" id=\"ref-for-auction-config-per-buyer-currencies⑦\">per buyer currencies</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-timeouts\" id=\"ref-for-auction-config-per-buyer-timeouts⑥\">per buyer timeouts</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-cumulative-timeouts\" id=\"ref-for-auction-config-per-buyer-cumulative-timeouts⑤\">per buyer cumulative timeouts</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-deprecated-render-url-replacements\" id=\"ref-for-auction-config-deprecated-render-url-replacements⑥\">deprecated render url replacements</a>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-direct-from-seller-signals-header-ad-slot\" id=\"ref-for-auction-config-direct-from-seller-signals-header-ad-slot⑥\">direct from seller signals header ad slot</a> are not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③①\">Promise</a></code>s, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-expects-additional-bids\" id=\"ref-for-auction-config-expects-additional-bids③\">expects additional bids</a> is false.</p>"
         },
         {
           "html": "<p>If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-auction-signals\" id=\"ref-for-auction-config-auction-signals⑦\">auction signals</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-seller-signals\" id=\"ref-for-auction-config-seller-signals⑥\">seller signals</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-signals\" id=\"ref-for-auction-config-per-buyer-signals①①\">per buyer signals</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-currencies\" id=\"ref-for-auction-config-per-buyer-currencies⑧\">per buyer currencies</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-timeouts\" id=\"ref-for-auction-config-per-buyer-timeouts⑦\">per buyer timeouts</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-cumulative-timeouts\" id=\"ref-for-auction-config-per-buyer-cumulative-timeouts⑥\">per buyer cumulative timeouts</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-deprecated-render-url-replacements\" id=\"ref-for-auction-config-deprecated-render-url-replacements⑦\">deprecated render url replacements</a>, or <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-direct-from-seller-signals-header-ad-slot\" id=\"ref-for-auction-config-direct-from-seller-signals-header-ad-slot⑦\">direct from seller signals header ad slot</a> is failure, return failure.</p>"
@@ -7892,7 +7925,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧⑨\">For each</a> <var>componentAuctionConfig</var> in <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions⑥\">component auctions</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨⓪\">For each</a> <var>componentAuctionConfig</var> in <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-component-auctions\" id=\"ref-for-auction-config-component-auctions⑦\">component auctions</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -7950,7 +7983,7 @@
           "html": "<p>Let <var>perBuyerCurrency</var> be <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-all-buyers-currency\" id=\"ref-for-auction-config-all-buyers-currency①\">all buyers currency</a></p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③⓪\">Assert</a> that <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-currencies\" id=\"ref-for-auction-config-per-buyer-currencies⑨\">per buyer currencies</a> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑥\">ordered map</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③②\">Assert</a> that <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-currencies\" id=\"ref-for-auction-config-per-buyer-currencies⑨\">per buyer currencies</a> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧⑥\">ordered map</a>.</p>"
         },
         {
           "html": "<p>If <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-currencies\" id=\"ref-for-auction-config-per-buyer-currencies①⓪\">per buyer currencies</a>[<var>buyer</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④⑦\">exists</a>, then set <var>perBuyerCurrency</var> to <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config-per-buyer-currencies\" id=\"ref-for-auction-config-per-buyer-currencies①①\">per buyer currencies</a>[<var>buyer</var>].</p>"
@@ -8050,7 +8083,7 @@
           "html": "<p>Let <var>result</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨⑤\">list</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑥⓪\">origins</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨⓪\">For each</a> <var>entry</var> in <var>parsedHeader</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨①\">For each</a> <var>entry</var> in <var>parsedHeader</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -8079,7 +8112,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⑤\">request</a> with the following properties:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url⑦\">URL</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list⑥\">header list</a>\n       </dt><dd data-md=\"\">\n        <p>«<code>Accept</code>: <code>text/javascript</code>»</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑥\">client</a>\n       </dt><dd data-md=\"\">\n        <p><code>null</code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin⑥\">origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑦\">origin</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode⑥\">mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-cors</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer⑥\">referrer</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-referrer</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode⑥\">credentials mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>omit</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode⑥\">redirect mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>error</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑥\">policy container</a>\n       </dt><dd data-md=\"\">\n        <p>A new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container⑧\">policy container</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space①⓪\">IP address space</a> is <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container⑧\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space①①\">IP address space</a></p>\n      </dd></dl>"
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⑤\">request</a> with the following properties:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url⑦\">URL</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list⑥\">header list</a>\n       </dt><dd data-md=\"\">\n        <p>«<code>Accept</code>: <code>text/javascript</code>»</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑥\">client</a>\n       </dt><dd data-md=\"\">\n        <p><code>null</code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin⑥\">origin</a>\n       </dt><dd data-md=\"\">\n        <p><var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑦\">origin</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode⑥\">mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-cors</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer⑥\">referrer</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-referrer</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode⑥\">credentials mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>omit</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode⑥\">redirect mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>error</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑥\">policy container</a>\n       </dt><dd data-md=\"\">\n        <p>A new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container⑧\">policy container</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space①⓪\">IP address space</a> is <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container⑦\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/private-network-access/#policy-container-ip-address-space\" id=\"ref-for-policy-container-ip-address-space①①\">IP address space</a></p>\n      </dd></dl>"
         },
         {
           "html": "Let <var>fetchController</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch⑥\">fetching</a> <var>request</var> with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-useparallelqueue\" id=\"ref-for-fetch-useparallelqueue⑤\">useParallelQueue</a> set to true, and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response\" id=\"ref-for-process-response\">processResponse</a> set to the following steps given\na <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①①\">response</a> <var>response</var>:",
@@ -8269,7 +8302,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate④⓪\">For each</a> <var>key</var> → <var>value</var> in <var>partialTrustedBiddingSignals</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑦①\">set</a> <var>trustedBiddingSignalsBatcher</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-bidding-signals-batcher-all-trusted-bidding-signals\" id=\"ref-for-trusted-bidding-signals-batcher-all-trusted-bidding-signals①\">all trusted bidding\nsignals</a>[<var>key</var>] to <var>value</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨①\">For each</a> <var>igName</var> of <var>trustedBiddingSignalsBatcher</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-bidding-signals-batcher-ig-names\" id=\"ref-for-trusted-bidding-signals-batcher-ig-names①\">ig names</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑦②\">set</a> <var>trustedBiddingSignalsBatcher</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-bidding-signals-batcher-data-versions\" id=\"ref-for-trusted-bidding-signals-batcher-data-versions①\">data versions</a>[<var>igName</var>] to <var>dataVersion</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨②\">For each</a> <var>igName</var> of <var>trustedBiddingSignalsBatcher</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-bidding-signals-batcher-ig-names\" id=\"ref-for-trusted-bidding-signals-batcher-ig-names①\">ig names</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑦②\">set</a> <var>trustedBiddingSignalsBatcher</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-bidding-signals-batcher-data-versions\" id=\"ref-for-trusted-bidding-signals-batcher-data-versions①\">data versions</a>[<var>igName</var>] to <var>dataVersion</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#append-to-a-bidding-signals-per-interest-group-data-map\" id=\"ref-for-append-to-a-bidding-signals-per-interest-group-data-map\">Append to a bidding signals per-interest group data map</a> with <var>partialPerInterestGroupData</var>, <var>trustedBiddingSignalsBatcher</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-bidding-signals-batcher-ig-names\" id=\"ref-for-trusted-bidding-signals-batcher-ig-names②\">ig names</a>, and <var>trustedBiddingSignalsBatcher</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-bidding-signals-batcher-all-per-interest-group-data\" id=\"ref-for-trusted-bidding-signals-batcher-all-per-interest-group-data①\">all per interest group data</a>.</p>"
@@ -8277,7 +8310,7 @@
           ]
         },
         {
-          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨②\">for each</a> <var>igName</var> of <var>trustedBiddingSignalsBatcher</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-bidding-signals-batcher-ig-names\" id=\"ref-for-trusted-bidding-signals-batcher-ig-names③\">ig names</a>:",
+          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨③\">for each</a> <var>igName</var> of <var>trustedBiddingSignalsBatcher</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-bidding-signals-batcher-ig-names\" id=\"ref-for-trusted-bidding-signals-batcher-ig-names③\">ig names</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -8491,23 +8524,23 @@
           "html": "<p>Let <var>adComponentRenderURLs</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②②\">ordered set</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①②⑦\">strings</a> <var>adComponentRenderURLs</var></p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨③\">For each</a> <var>entry</var> of <var>entriesToBatch</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨④\">For each</a> <var>entry</var> of <var>entriesToBatch</var>:",
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③①\">Assert</a> that <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-base-url\" id=\"ref-for-trusted-scoring-signals-request-base-url①\">base URL</a> is equal to <var>firstEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-base-url\" id=\"ref-for-trusted-scoring-signals-request-base-url②\">base URL</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③③\">Assert</a> that <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-base-url\" id=\"ref-for-trusted-scoring-signals-request-base-url①\">base URL</a> is equal to <var>firstEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-base-url\" id=\"ref-for-trusted-scoring-signals-request-base-url②\">base URL</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③②\">Assert</a> that <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-seller-experiment-group-id\" id=\"ref-for-trusted-scoring-signals-request-seller-experiment-group-id①\">seller experiment group id</a> is\nequal to <var>firstEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-seller-experiment-group-id\" id=\"ref-for-trusted-scoring-signals-request-seller-experiment-group-id②\">seller experiment group id</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③④\">Assert</a> that <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-seller-experiment-group-id\" id=\"ref-for-trusted-scoring-signals-request-seller-experiment-group-id①\">seller experiment group id</a> is\nequal to <var>firstEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-seller-experiment-group-id\" id=\"ref-for-trusted-scoring-signals-request-seller-experiment-group-id②\">seller experiment group id</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③③\">Assert</a> that <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-top-level-origin\" id=\"ref-for-trusted-scoring-signals-request-top-level-origin①\">top level origin</a> is equal to <var>firstEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-top-level-origin\" id=\"ref-for-trusted-scoring-signals-request-top-level-origin②\">top level origin</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③⑤\">Assert</a> that <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-top-level-origin\" id=\"ref-for-trusted-scoring-signals-request-top-level-origin①\">top level origin</a> is equal to <var>firstEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-top-level-origin\" id=\"ref-for-trusted-scoring-signals-request-top-level-origin②\">top level origin</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③④\">Assert</a> that <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-seller-script-fetcher\" id=\"ref-for-trusted-scoring-signals-request-seller-script-fetcher①\">seller script fetcher</a> is equal to <var>firstEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-seller-script-fetcher\" id=\"ref-for-trusted-scoring-signals-request-seller-script-fetcher②\">seller script fetcher</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③⑥\">Assert</a> that <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-seller-script-fetcher\" id=\"ref-for-trusted-scoring-signals-request-seller-script-fetcher①\">seller script fetcher</a> is equal to <var>firstEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-seller-script-fetcher\" id=\"ref-for-trusted-scoring-signals-request-seller-script-fetcher②\">seller script fetcher</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③⑤\">Assert</a> that <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-policy-container\" id=\"ref-for-trusted-scoring-signals-request-policy-container①\">policy container</a> is equal to <var>firstEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-policy-container\" id=\"ref-for-trusted-scoring-signals-request-policy-container②\">policy container</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③⑦\">Assert</a> that <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-policy-container\" id=\"ref-for-trusted-scoring-signals-request-policy-container①\">policy container</a> is equal to <var>firstEntry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-policy-container\" id=\"ref-for-trusted-scoring-signals-request-policy-container②\">policy container</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑦\">Append</a> <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#trusted-scoring-signals-request-render-url\" id=\"ref-for-trusted-scoring-signals-request-render-url①\">render URL</a> to <var>renderURLs</var>.</p>"
@@ -8546,7 +8579,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③⑥\">Assert</a> that these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑤\">in parallel</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③⑧\">Assert</a> that these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑦\">in parallel</a>.</p>"
         },
         {
           "html": "Until <var>batcher</var> is no longer needed:",
@@ -8568,7 +8601,7 @@
               ]
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨④\">For each</a> <var>request</var> in <var>incomingRequests</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨⑤\">For each</a> <var>request</var> in <var>incomingRequests</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -8644,7 +8677,7 @@
                   ]
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨⑤\">For each</a> <var>entry</var> in <var>entriesToBatch</var>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨⑥\">For each</a> <var>entry</var> in <var>entriesToBatch</var>:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -8668,7 +8701,7 @@
           "html": "<p>If <var>generatedBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-target-number-of-ad-components\" id=\"ref-for-generated-bid-target-number-of-ad-components②\">target number of ad components</a> is null, return.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③⑦\">Assert</a> that <var>generatedBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-component-descriptors\" id=\"ref-for-generated-bid-ad-component-descriptors①⑧\">ad component descriptors</a> is not null.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③⑨\">Assert</a> that <var>generatedBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-component-descriptors\" id=\"ref-for-generated-bid-ad-component-descriptors①⑧\">ad component descriptors</a> is not null.</p>"
         },
         {
           "html": "While <var>generatedBid</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-ad-component-descriptors\" id=\"ref-for-generated-bid-ad-component-descriptors①⑨\">ad component descriptors</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⑨\">size</a> &gt; <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid-target-number-of-ad-components\" id=\"ref-for-generated-bid-target-number-of-ad-components③\">target number of ad components</a>:",
@@ -8694,7 +8727,7 @@
           "html": "<p>Let <var>selectedComponents</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪⑨\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#ad-descriptor\" id=\"ref-for-ad-descriptor①⑤\">ad descriptors</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨⑥\">For each</a> <var>i</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices\">get the indices</a> of <var>generatedBid</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨⑦\">For each</a> <var>i</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices\">get the indices</a> of <var>generatedBid</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -8747,7 +8780,7 @@
           "html": "<p>Let <var>bidsToScore</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①①\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#generated-bid\" id=\"ref-for-generated-bid②①\">generated bids</a></p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨⑦\">For each</a> <var>generatedBid</var> of <var>bidsBatch</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨⑧\">For each</a> <var>generatedBid</var> of <var>bidsBatch</var>:",
           "rationale": "let",
           "steps": [
             {

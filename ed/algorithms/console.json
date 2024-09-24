@@ -99,7 +99,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>trace</var> be some implementation-specific, potentially-interactive representation of the\n callstack from where this function was called.</p>"
+          "html": "<p>Let <var>trace</var> be some <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a>, potentially-interactive representation of the\n callstack from where this function was called.</p>"
         },
         {
           "html": "<p>Optionally, let <var>formattedData</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#formatter\" id=\"ref-for-formatter\">Formatter</a>(<var>data</var>), and\n incorporate <var>formattedData</var> as a label for <var>trace</var>.</p>"
@@ -206,7 +206,7 @@
     {
       "name": "group",
       "href": "https://console.spec.whatwg.org/#concept-group",
-      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-group\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group</dfn> is an implementation-specific, potentially-interactive view\nfor output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer②\">Printer</a>, with one further level of indentation\nthan its parent. Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑤\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"group-stack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group stack</dfn>, which\nis a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\" id=\"ref-for-stack\">stack</a>, initially empty. Only the last <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group\">group</a> in a <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack①\">group stack</a> will host\noutput produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer③\">Printer</a>.",
+      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-group\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group</dfn> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a>, potentially-interactive\nview for output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer②\">Printer</a>, with one further level of\nindentation than its parent. Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑤\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"group stack\" data-noexport=\"\" id=\"group-stack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group\nstack</dfn>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\" id=\"ref-for-stack\">stack</a>, initially empty. Only the last <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group\">group</a> in a <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack①\">group\nstack</a> will host output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer③\">Printer</a>.",
       "rationale": "let",
       "steps": [
         {
@@ -232,7 +232,7 @@
     {
       "name": "group",
       "href": "https://console.spec.whatwg.org/#concept-group",
-      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-group\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group</dfn> is an implementation-specific, potentially-interactive view\nfor output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer②\">Printer</a>, with one further level of indentation\nthan its parent. Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑤\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"group-stack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group stack</dfn>, which\nis a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\" id=\"ref-for-stack\">stack</a>, initially empty. Only the last <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group\">group</a> in a <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack①\">group stack</a> will host\noutput produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer③\">Printer</a>.",
+      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-group\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group</dfn> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a>, potentially-interactive\nview for output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer②\">Printer</a>, with one further level of\nindentation than its parent. Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑤\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"group stack\" data-noexport=\"\" id=\"group-stack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group\nstack</dfn>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\" id=\"ref-for-stack\">stack</a>, initially empty. Only the last <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group\">group</a> in a <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack①\">group\nstack</a> will host output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer③\">Printer</a>.",
       "rationale": "let",
       "steps": [
         {
@@ -258,7 +258,7 @@
     {
       "name": "group",
       "href": "https://console.spec.whatwg.org/#concept-group",
-      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-group\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group</dfn> is an implementation-specific, potentially-interactive view\nfor output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer②\">Printer</a>, with one further level of indentation\nthan its parent. Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑤\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"group-stack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group stack</dfn>, which\nis a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\" id=\"ref-for-stack\">stack</a>, initially empty. Only the last <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group\">group</a> in a <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack①\">group stack</a> will host\noutput produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer③\">Printer</a>.",
+      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-group\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group</dfn> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a>, potentially-interactive\nview for output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer②\">Printer</a>, with one further level of\nindentation than its parent. Each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://console.spec.whatwg.org/#namespacedef-console\" id=\"ref-for-namespacedef-console⑤\">console</a></code> namespace object has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"group stack\" data-noexport=\"\" id=\"group-stack\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">group\nstack</dfn>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack\" id=\"ref-for-stack\">stack</a>, initially empty. Only the last <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#concept-group\" id=\"ref-for-concept-group\">group</a> in a <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#group-stack\" id=\"ref-for-group-stack①\">group\nstack</a> will host output produced by calls to <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer③\">Printer</a>.",
       "rationale": "pop",
       "steps": [
         {
@@ -293,7 +293,7 @@
           "html": "<p>Let <var>startTime</var> be <var>timerTable</var>[<var>label</var>].</p>"
         },
         {
-          "html": "<p>Let <var>duration</var> be a string representing the difference between the current time and <var>startTime</var>, in an implementation-defined format.</p>"
+          "html": "<p>Let <var>duration</var> be a string representing the difference between the current time and <var>startTime</var>, in an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> format.</p>"
         },
         {
           "html": "<p>Let <var>concat</var> be the concatenation of <var>label</var>, U+003A (:), U+0020 SPACE, and <var>duration</var>.</p>"
@@ -322,7 +322,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">Remove</a> <var>timerTable</var>[<var>label</var>].</p>"
         },
         {
-          "html": "<p>Let <var>duration</var> be a string representing the difference between the current time and <var>startTime</var>, in an implementation-defined format.</p>"
+          "html": "<p>Let <var>duration</var> be a string representing the difference between the current time and <var>startTime</var>, in an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> format.</p>"
         },
         {
           "html": "<p>Let <var>concat</var> be the concatenation of <var>label</var>, U+003A (:), U+0020 SPACE, and <var>duration</var>.</p>"
@@ -333,7 +333,7 @@
       ]
     },
     {
-      "html": "The logger operation accepts a log level and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of other arguments. Its main output is the\nimplementation-defined side effect of printing the result to the console. This specification\ndescribes how it processes format specifiers while doing so.",
+      "html": "The logger operation accepts a log level and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of other arguments. Its main output is the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a> side effect of printing the result to the console. This specification\ndescribes how it processes format specifiers while doing so.",
       "rationale": "if",
       "steps": [
         {
@@ -435,7 +435,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>warning</var> be an implementation-defined string derived from <var>description</var>.</p>"
+          "html": "<p>Let <var>warning</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①②\">implementation-defined</a> string derived from <var>description</var>.</p>"
         },
         {
           "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://console.spec.whatwg.org/#printer\" id=\"ref-for-printer①②\">Printer</a>(\"reportWarning\", « <var>warning</var> »).</p>"
