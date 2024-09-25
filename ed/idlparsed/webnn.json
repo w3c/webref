@@ -800,7 +800,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mloperanddatatype"
       },
       "MLOperandDescriptor": {
-        "fragment": "dictionary MLOperandDescriptor {\n  required MLOperandDataType dataType;\n  sequence<[EnforceRange] unsigned long> shape = [];\n};",
+        "fragment": "dictionary MLOperandDescriptor {\n  required MLOperandDataType dataType;\n  required sequence<[EnforceRange] unsigned long> shape;\n};",
         "type": "dictionary",
         "name": "MLOperandDescriptor",
         "inheritance": null,
@@ -849,11 +849,8 @@
                 }
               ]
             },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
-            "required": false,
+            "default": null,
+            "required": true,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mloperanddescriptor-shape"
           }
         ],
