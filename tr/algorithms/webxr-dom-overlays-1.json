@@ -10,7 +10,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the input source’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-targetrayspace\" id=\"ref-for-dom-xrinputsource-targetrayspace②\">targetRaySpace</a></code> intersects the DOM overlay at the time the input device’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑤\">primary action</a> is triggered:",
+          "html": "If the input source’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-targetrayspace\" id=\"ref-for-dom-xrinputsource-targetrayspace②\">targetRaySpace</a></code> intersects the DOM overlay at the time the input device’s <a data-link-type=\"dfn\">primary action</a> is triggered:",
           "rationale": "queue",
           "steps": [
             {
@@ -29,13 +29,13 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If the input source is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources\">transient input source</a>, treat this as an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#auxiliary-action\" id=\"ref-for-auxiliary-action\">auxiliary action</a>. Otherwise, ignore this action for the purpose of generating XR input events.</p>"
+                          "html": "<p>If the input source is a <a data-link-type=\"dfn\">transient input source</a>, treat this as an <a data-link-type=\"dfn\">auxiliary action</a>. Otherwise, ignore this action for the purpose of generating XR input events.</p>"
                         }
                       ]
                     },
                     {
                       "case": "Otherwise",
-                      "html": "Treat the action as a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑥\">primary action</a> as usual for the input source."
+                      "html": "Treat the action as a <a data-link-type=\"dfn\">primary action</a> as usual for the input source."
                     }
                   ]
                 }
