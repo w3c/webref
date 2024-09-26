@@ -1036,7 +1036,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpu"
       },
       "GPURequestAdapterOptions": {
-        "fragment": "dictionary GPURequestAdapterOptions {\n    any featureLevel;\n    GPUPowerPreference powerPreference;\n    boolean forceFallbackAdapter = false;\n};",
+        "fragment": "dictionary GPURequestAdapterOptions {\n    DOMString featureLevel;\n    GPUPowerPreference powerPreference;\n    boolean forceFallbackAdapter = false;\n};",
         "type": "dictionary",
         "name": "GPURequestAdapterOptions",
         "inheritance": null,
@@ -1051,7 +1051,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "any"
+              "idlType": "DOMString"
             },
             "default": null,
             "required": false,
