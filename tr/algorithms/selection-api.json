@@ -221,6 +221,37 @@
           "html": "Otherwise, set <a data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> <a href=\"https://www.w3.org/TR/selection-api/#dfn-selection\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-selection-30\">selection</a>'s <a href=\"https://www.w3.org/TR/selection-api/#dfn-focus\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-focus-18\">focus</a> and <a href=\"https://www.w3.org/TR/selection-api/#dfn-anchor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-anchor-15\">anchor</a> to the location\n              as if the user had requested to move selection by <var>granularity</var>."
         }
       ]
+    },
+    {
+      "name": "schedule a selectionchange event",
+      "href": "https://www.w3.org/TR/selection-api/#dfn-schedule-a-selectionchange-event",
+      "html": "To <dfn id=\"dfn-schedule-a-selectionchange-event\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">schedule a selectionchange event</dfn> on a node <var>target</var>, run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>target</var>'s <a href=\"https://www.w3.org/TR/selection-api/#dfn-has-scheduled-selectionchange-event\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-has-scheduled-selectionchange-event-1\">has scheduled selectionchange event</a> is true,\n              abort these steps."
+        },
+        {
+          "html": "<a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on the <a data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a> to\n              <a href=\"https://www.w3.org/TR/selection-api/#dfn-fire-a-selectionchange-event\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-fire-a-selectionchange-event-1\">fire a selectionchange event</a> on <var>target</var>."
+        }
+      ]
+    },
+    {
+      "name": "fire a selectionchange event",
+      "href": "https://www.w3.org/TR/selection-api/#dfn-fire-a-selectionchange-event",
+      "html": "To <dfn id=\"dfn-fire-a-selectionchange-event\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">fire a selectionchange event</dfn> on a node <var>target</var>, run these steps:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <var>target</var>'s <a href=\"https://www.w3.org/TR/selection-api/#dfn-has-scheduled-selectionchange-event\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-has-scheduled-selectionchange-event-2\">has scheduled selectionchange event</a> to false."
+        },
+        {
+          "html": "If <var>target</var> is an element, <a data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <code>selectionchange</code>,\n              which bubbles and not cancelable, at <var>target</var>."
+        },
+        {
+          "html": "Otherwise, if <var>target</var> is a document, <a data-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <code>selectionchange</code>,\n              which does not bubble and not cancelable, at <var>target</var>."
+        }
+      ]
     }
   ]
 }
