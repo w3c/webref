@@ -5,5 +5,5 @@
 
 partial interface MediaDevices {
   Promise<MediaStream> getViewportMedia(
-      optional DisplayMediaStreamConstraints constraints = {});
+      optional DisplayMediaStreamOptions options = {});
 };
