@@ -20,20 +20,6 @@ dictionary PADebugModeOptions {
   required bigint debugKey;
 };
 
-partial interface SharedStorageWorkletGlobalScope {
-  readonly attribute PrivateAggregation privateAggregation;
-};
-
-dictionary SharedStoragePrivateAggregationConfig {
-  USVString aggregationCoordinatorOrigin;
-  USVString contextId;
-  [EnforceRange] unsigned long long filteringIdMaxBytes;
-};
-
-partial dictionary SharedStorageRunOperationMethodOptions {
-  SharedStoragePrivateAggregationConfig privateAggregationConfig;
-};
-
 partial interface InterestGroupScriptRunnerGlobalScope {
   readonly attribute PrivateAggregation privateAggregation;
 };
