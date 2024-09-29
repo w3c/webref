@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-09-28T18:40:33.591Z",
+  "date": "2024-09-29T00:51:46.859Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -671,7 +671,7 @@
   },
   "stats": {
     "crawled": 640,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-17.2.5",
   "results": [
@@ -21700,7 +21700,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-regions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 27 Sep 2024 21:36:02 GMT"
+        "lastModified": "Fri, 27 Sep 2024 21:36:03 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -30202,7 +30202,8 @@
       "refs": "refs/png-3.json",
       "dfns": "dfns/png-3.json",
       "headings": "headings/png-3.json",
-      "ids": "ids/png-3.json"
+      "ids": "ids/png-3.json",
+      "error": "Error: Respec generation took too long\nisReady (pptr:evaluate;processSpecification%20(file%3A%2F%2F%2Fhome%2Frunner%2Fwork%2Fwebref%2Fwebref%2Fnode_modules%2Freffy%2Fsrc%2Flib%2Futil.js%3A590%3A20):25:31)\n    at isReady (evaluate at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:590:20), <anonymous>:24:30)\n    at #evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:383:19)\n    at async ExecutionContext.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:270:16)\n    at async IsolatedWorld.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/IsolatedWorld.js:96:16)\n    at async CdpFrame.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Frame.js:336:20)\n    at async CdpPage.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Page.js:801:20)\n    at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:590:9)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://www.w3.org/TR/pointerevents3/",
