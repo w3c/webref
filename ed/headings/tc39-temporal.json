@@ -1405,18 +1405,25 @@
       "number": "5.5.13"
     },
     {
+      "id": "sec-temporal-differenceplaindatetimewithtotal",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-differenceplaindatetimewithtotal",
+      "title": "DifferencePlainDateTimeWithTotal ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendar, unit )",
+      "level": 3,
+      "number": "5.5.14"
+    },
+    {
       "id": "sec-temporal-differencetemporalplaindatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-differencetemporalplaindatetime",
       "title": "DifferenceTemporalPlainDateTime ( operation, dateTime, other, options )",
       "level": 3,
-      "number": "5.5.14"
+      "number": "5.5.15"
     },
     {
       "id": "sec-temporal-adddurationtodatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adddurationtodatetime",
       "title": "AddDurationToDateTime ( operation, dateTime, temporalDurationLike, options )",
       "level": 3,
-      "number": "5.5.15"
+      "number": "5.5.16"
     },
     {
       "id": "sec-temporal-zoneddatetime-objects",
@@ -1888,18 +1895,25 @@
       "number": "6.5.7"
     },
     {
+      "id": "sec-temporal-differencezoneddatetimewithtotal",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-differencezoneddatetimewithtotal",
+      "title": "DifferenceZonedDateTimeWithTotal ( ns1, ns2, timeZone, calendar, unit )",
+      "level": 3,
+      "number": "6.5.8"
+    },
+    {
       "id": "sec-temporal-differencetemporalzoneddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-differencetemporalzoneddatetime",
       "title": "DifferenceTemporalZonedDateTime ( operation, zonedDateTime, other, options )",
       "level": 3,
-      "number": "6.5.8"
+      "number": "6.5.9"
     },
     {
       "id": "sec-temporal-adddurationtozoneddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adddurationtozoneddatetime",
       "title": "AddDurationToZonedDateTime ( operation, zonedDateTime, temporalDurationLike, options )",
       "level": 3,
-      "number": "6.5.9"
+      "number": "6.5.10"
     },
     {
       "id": "sec-temporal-duration-objects",
@@ -2399,60 +2413,74 @@
       "number": "7.5.36"
     },
     {
+      "id": "sec-temporal-totaltimeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totaltimeduration",
+      "title": "TotalTimeDuration ( norm, unit )",
+      "level": 3,
+      "number": "7.5.37"
+    },
+    {
       "id": "sec-temporal-duration-nudge-result-records",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-duration-nudge-result-records",
       "title": "Duration Nudge Result Records",
       "level": 3,
-      "number": "7.5.37"
+      "number": "7.5.38"
     },
     {
       "id": "sec-temporal-nudgetocalendarunit",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-nudgetocalendarunit",
       "title": "NudgeToCalendarUnit ( sign, duration, destEpochNs, dateTime, timeZone, calendar, increment, unit, roundingMode )",
       "level": 3,
-      "number": "7.5.38"
+      "number": "7.5.39"
     },
     {
       "id": "sec-temporal-nudgetozonedtime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-nudgetozonedtime",
       "title": "NudgeToZonedTime ( sign, duration, dateTime, timeZone, calendar, increment, unit, roundingMode )",
       "level": 3,
-      "number": "7.5.39"
+      "number": "7.5.40"
     },
     {
       "id": "sec-temporal-nudgetodayortime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-nudgetodayortime",
       "title": "NudgeToDayOrTime ( duration, destEpochNs, largestUnit, increment, smallestUnit, roundingMode )",
       "level": 3,
-      "number": "7.5.40"
+      "number": "7.5.41"
     },
     {
       "id": "sec-temporal-bubblerelativeduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-bubblerelativeduration",
       "title": "BubbleRelativeDuration ( sign, duration, nudgedEpochNs, dateTime, timeZone, calendar, largestUnit, smallestUnit )",
       "level": 3,
-      "number": "7.5.41"
+      "number": "7.5.42"
     },
     {
       "id": "sec-temporal-roundrelativeduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-roundrelativeduration",
       "title": "RoundRelativeDuration ( duration, destEpochNs, dateTime, timeZone, calendar, largestUnit, increment, smallestUnit, roundingMode )",
       "level": 3,
-      "number": "7.5.42"
+      "number": "7.5.43"
+    },
+    {
+      "id": "sec-temporal-totalrelativeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totalrelativeduration",
+      "title": "TotalRelativeDuration ( duration, destEpochNs, dateTime, timeZone, calendar, unit )",
+      "level": 3,
+      "number": "7.5.44"
     },
     {
       "id": "sec-temporal-temporaldurationtostring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-temporaldurationtostring",
       "title": "TemporalDurationToString ( duration, precision )",
       "level": 3,
-      "number": "7.5.43"
+      "number": "7.5.45"
     },
     {
       "id": "sec-temporal-adddurations",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adddurations",
       "title": "AddDurations ( operation, duration, other )",
       "level": 3,
-      "number": "7.5.44"
+      "number": "7.5.46"
     },
     {
       "id": "sec-temporal-instant-objects",
