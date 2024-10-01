@@ -2,4 +2,6 @@
 dictionary AdAuctionDataConfig {
   required USVString seller;
   required USVString coordinatorOrigin;
+  unsigned long requestSize;
+  record<USVString, AdAuctionDataBuyerConfig> perBuyerConfig;
 };

@@ -8,75 +8,12 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "Navigator",
-          "AudioSession"
+          "AudioSession",
+          "Navigator"
         ]
       }
     },
     "idlNames": {
-      "AudioSessionState": {
-        "fragment": "enum AudioSessionState {\n  \"inactive\",\n  \"active\",\n  \"interrupted\"\n};",
-        "type": "enum",
-        "name": "AudioSessionState",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "inactive",
-            "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-inactive"
-          },
-          {
-            "type": "enum-value",
-            "value": "active",
-            "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-active"
-          },
-          {
-            "type": "enum-value",
-            "value": "interrupted",
-            "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-interrupted"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://w3c.github.io/audio-session/#enumdef-audiosessionstate"
-      },
-      "AudioSessionType": {
-        "fragment": "enum AudioSessionType {\n  \"auto\",\n  \"playback\",\n  \"transient\",\n  \"transient-solo\",\n  \"ambient\",\n  \"play-and-record\"\n};",
-        "type": "enum",
-        "name": "AudioSessionType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "auto",
-            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-auto"
-          },
-          {
-            "type": "enum-value",
-            "value": "playback",
-            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-playback"
-          },
-          {
-            "type": "enum-value",
-            "value": "transient",
-            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-transient"
-          },
-          {
-            "type": "enum-value",
-            "value": "transient-solo",
-            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-transient-solo"
-          },
-          {
-            "type": "enum-value",
-            "value": "ambient",
-            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-ambient"
-          },
-          {
-            "type": "enum-value",
-            "value": "play-and-record",
-            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-play-and-record"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://w3c.github.io/audio-session/#enumdef-audiosessiontype"
-      },
       "AudioSession": {
         "fragment": "[Exposed=Window]\ninterface AudioSession : EventTarget {\n  attribute AudioSessionType type;\n\n  readonly attribute AudioSessionState state;\n  attribute EventHandler onstatechange;\n};",
         "type": "interface",
@@ -145,6 +82,69 @@
         ],
         "partial": false,
         "href": "https://w3c.github.io/audio-session/#audiosession"
+      },
+      "AudioSessionType": {
+        "fragment": "enum AudioSessionType {\n  \"auto\",\n  \"playback\",\n  \"transient\",\n  \"transient-solo\",\n  \"ambient\",\n  \"play-and-record\"\n};",
+        "type": "enum",
+        "name": "AudioSessionType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "auto",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-auto"
+          },
+          {
+            "type": "enum-value",
+            "value": "playback",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-playback"
+          },
+          {
+            "type": "enum-value",
+            "value": "transient",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-transient"
+          },
+          {
+            "type": "enum-value",
+            "value": "transient-solo",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-transient-solo"
+          },
+          {
+            "type": "enum-value",
+            "value": "ambient",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-ambient"
+          },
+          {
+            "type": "enum-value",
+            "value": "play-and-record",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-play-and-record"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/audio-session/#enumdef-audiosessiontype"
+      },
+      "AudioSessionState": {
+        "fragment": "enum AudioSessionState {\n  \"inactive\",\n  \"active\",\n  \"interrupted\"\n};",
+        "type": "enum",
+        "name": "AudioSessionState",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "inactive",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-inactive"
+          },
+          {
+            "type": "enum-value",
+            "value": "active",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-active"
+          },
+          {
+            "type": "enum-value",
+            "value": "interrupted",
+            "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-interrupted"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/audio-session/#enumdef-audiosessionstate"
       }
     },
     "idlExtendedNames": {
@@ -190,25 +190,25 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "Navigator",
-        "AudioSession"
+        "AudioSession",
+        "Navigator"
       ]
     },
     "dependencies": {
-      "Navigator": [
-        "AudioSession"
-      ],
       "AudioSession": [
         "EventTarget",
         "AudioSessionType",
         "AudioSessionState",
         "EventHandler"
+      ],
+      "Navigator": [
+        "AudioSession"
       ]
     },
     "externalDependencies": [
-      "Navigator",
       "EventTarget",
-      "EventHandler"
+      "EventHandler",
+      "Navigator"
     ],
     "hasObsoleteIdl": false
   }

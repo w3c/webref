@@ -8,6 +8,7 @@
       "constructors": {
         "ServiceWorker": [
           "ExtendableEvent",
+          "InstallEvent",
           "FetchEvent",
           "ExtendableMessageEvent"
         ]
@@ -33,8 +34,7 @@
           "ServiceWorkerGlobalScope",
           "Client",
           "WindowClient",
-          "Clients",
-          "InstallEvent"
+          "Clients"
         ]
       }
     },
@@ -2139,11 +2139,52 @@
         "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendableeventinit"
       },
       "InstallEvent": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface InstallEvent : ExtendableEvent {\n  Promise<undefined> addRoutes((RouterRule or sequence<RouterRule>) rules);\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface InstallEvent : ExtendableEvent {\n  constructor(DOMString type, optional ExtendableEventInit eventInitDict = {});\n  Promise<undefined> addRoutes((RouterRule or sequence<RouterRule>) rules);\n};",
         "type": "interface",
         "name": "InstallEvent",
         "inheritance": "ExtendableEvent",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ExtendableEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://w3c.github.io/ServiceWorker/#dom-installevent-installevent"
+          },
           {
             "type": "operation",
             "name": "addRoutes",
@@ -4339,6 +4380,7 @@
       ],
       "InstallEvent": [
         "ExtendableEvent",
+        "ExtendableEventInit",
         "RouterRule"
       ],
       "RouterRule": [

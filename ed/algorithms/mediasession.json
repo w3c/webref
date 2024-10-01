@@ -20,7 +20,7 @@
           "html": "Update the media metadata presented to the platform to match the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediasession/#dom-mediasession-metadata\" id=\"ref-for-dom-mediasession-metadata②\">metadata</a></code> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#active-media-session\" id=\"ref-for-active-media-session①②\">active media session</a>."
         },
         {
-          "html": "If the user agent wants to display an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images\">artwork image</a>, it is\n        RECOMMENDED to run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#fetch-image-algorithm\" id=\"ref-for-fetch-image-algorithm\">fetch image algorithm</a>."
+          "html": "If the user agent wants to display an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-artwork-images\" id=\"ref-for-mediametadata-artwork-images\">artwork image</a>,\n        it is RECOMMENDED to run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#fetch-image-algorithm\" id=\"ref-for-fetch-image-algorithm\">fetch image algorithm</a>."
         }
       ]
     },
@@ -221,7 +221,7 @@
     {
       "name": "MediaSession/setScreenshareActive(active)",
       "href": "https://w3c.github.io/mediasession/#dom-mediasession-setscreenshareactive",
-      "html": "Similarly, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MediaSession\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mediasession-setscreenshareactive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>setScreenshareActive(active)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method indicates to the user agent the screenshare capture state desired by the page.\n  When invoked, it MUST perform the following steps:",
+      "html": "Similarly, the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"MediaSession\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-mediasession-setscreenshareactive\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>setScreenshareActive(active)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method indicates to the user agent the screenshare capture state desired by\n  the page. When invoked, it MUST perform the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -279,7 +279,7 @@
               "html": "Update the user agent capture state UI according to <var>captureKind</var> and <var>active</var>."
             },
             {
-              "html": "Resolve <var>p</var> with <code>undefined</code>."
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">Queue a task</a> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source②\">user interaction task source</a> to resolve <var>p</var> with <code>undefined</code>."
             },
             {
               "html": "If <var>applyPausePolicy</var> is <code>true</code>, run the following\n          substeps:",
@@ -289,7 +289,7 @@
                   "html": "Let <var>newMutedState</var> be <code>true</code> if <var>active</var> is <code>false</code> and <code>false</code> otherwise."
                 },
                 {
-                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack⑤\">MediaStreamTrack</a></code> whose source is of type <var>captureKind</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">queue a task</a> to <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/mediacapture-main/#set-track-muted\" id=\"ref-for-set-track-muted①\">set a track’s muted state</a> to <var>newMutedState</var>."
+                  "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack⑤\">MediaStreamTrack</a></code> whose source is of type <var>captureKind</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④\">queue a task</a>using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-user-interaction-task-source③\">user interaction task source</a> to <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/mediacapture-main/#set-track-muted\" id=\"ref-for-set-track-muted①\">set a track’s muted state</a> to <var>newMutedState</var>."
                 }
               ]
             }
@@ -419,7 +419,7 @@
           "html": "If the instance has no associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediasession/#mediametadata-media-session\" id=\"ref-for-mediametadata-media-session③\">media session</a>, abort\n      these steps."
         },
         {
-          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④\">queue a task</a> to run the following substeps:",
+          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">queue a task</a> to run the following substeps:",
           "rationale": "if",
           "steps": [
             {

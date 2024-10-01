@@ -1689,49 +1689,6 @@
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionadconfig"
       },
-      "AdAuctionDataConfig": {
-        "fragment": "dictionary AdAuctionDataConfig {\n  required USVString seller;\n  required USVString coordinatorOrigin;\n};",
-        "type": "dictionary",
-        "name": "AdAuctionDataConfig",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "seller",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": true,
-            "href": "https://wicg.github.io/turtledove/#dom-adauctiondataconfig-seller"
-          },
-          {
-            "type": "field",
-            "name": "coordinatorOrigin",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": true,
-            "href": "https://wicg.github.io/turtledove/#dom-adauctiondataconfig-coordinatororigin"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://wicg.github.io/turtledove/#dictdef-adauctiondataconfig"
-      },
       "AdAuctionData": {
         "fragment": "dictionary AdAuctionData {\n  required Uint8Array request;\n  required USVString requestId;\n};",
         "type": "dictionary",
@@ -1774,6 +1731,125 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#dictdef-adauctiondata"
+      },
+      "AdAuctionDataConfig": {
+        "fragment": "dictionary AdAuctionDataConfig {\n  required USVString seller;\n  required USVString coordinatorOrigin;\n  unsigned long requestSize;\n  record<USVString, AdAuctionDataBuyerConfig> perBuyerConfig;\n};",
+        "type": "dictionary",
+        "name": "AdAuctionDataConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "seller",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-adauctiondataconfig-seller"
+          },
+          {
+            "type": "field",
+            "name": "coordinatorOrigin",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-adauctiondataconfig-coordinatororigin"
+          },
+          {
+            "type": "field",
+            "name": "requestSize",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-adauctiondataconfig-requestsize"
+          },
+          {
+            "type": "field",
+            "name": "perBuyerConfig",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AdAuctionDataBuyerConfig"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-adauctiondataconfig-perbuyerconfig"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-adauctiondataconfig"
+      },
+      "AdAuctionDataBuyerConfig": {
+        "fragment": "dictionary AdAuctionDataBuyerConfig {\n  unsigned long targetSize;\n};",
+        "type": "dictionary",
+        "name": "AdAuctionDataBuyerConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "targetSize",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-adauctiondatabuyerconfig-targetsize"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-adauctiondatabuyerconfig"
       },
       "InterestGroupScriptRunnerGlobalScope": {
         "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\ninterface InterestGroupScriptRunnerGlobalScope {\n};",
@@ -4549,10 +4625,13 @@
         "AbortSignal",
         "Uint8Array"
       ],
-      "AdAuctionDataConfig": [],
       "AdAuctionData": [
         "Uint8Array"
       ],
+      "AdAuctionDataConfig": [
+        "AdAuctionDataBuyerConfig"
+      ],
+      "AdAuctionDataBuyerConfig": [],
       "InterestGroupScriptRunnerGlobalScope": [],
       "ForDebuggingOnly": [],
       "RealTimeReporting": [

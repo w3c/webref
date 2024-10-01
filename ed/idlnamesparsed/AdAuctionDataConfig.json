@@ -6,7 +6,7 @@
       "title": "Protected Audience (formerly FLEDGE)",
       "url": "https://wicg.github.io/turtledove/"
     },
-    "fragment": "dictionary AdAuctionDataConfig {\n  required USVString seller;\n  required USVString coordinatorOrigin;\n};",
+    "fragment": "dictionary AdAuctionDataConfig {\n  required USVString seller;\n  required USVString coordinatorOrigin;\n  unsigned long requestSize;\n  record<USVString, AdAuctionDataBuyerConfig> perBuyerConfig;\n};",
     "href": "https://wicg.github.io/turtledove/#dictdef-adauctiondataconfig"
   },
   "extended": [],

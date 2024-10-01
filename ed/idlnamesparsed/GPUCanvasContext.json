@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTexture getCurrentTexture();\n};",
+    "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUCanvasConfiguration? getConfiguration();\n    GPUTexture getCurrentTexture();\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpucanvascontext"
   },
   "extended": [],

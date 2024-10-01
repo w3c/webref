@@ -5,252 +5,23 @@
   },
   "dfns": [
     {
-      "id": "enumdef-audiosessionstate",
-      "href": "https://w3c.github.io/audio-session/#enumdef-audiosessionstate",
+      "id": "audio-session",
+      "href": "https://w3c.github.io/audio-session/#audio-session",
       "linkingText": [
-        "AudioSessionState"
+        "audio session"
       ],
       "localLinkingText": [],
-      "type": "enum",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
+        "id": "audiosession-interface",
+        "href": "https://w3c.github.io/audio-session/#audiosession-interface",
         "title": "The AudioSession interface",
         "number": "2"
       },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-audiosessionstate-inactive",
-      "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-inactive",
-      "linkingText": [
-        "\"inactive\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSessionState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
-        "title": "The AudioSession interface",
-        "number": "2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-audiosessionstate-active",
-      "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-active",
-      "linkingText": [
-        "\"active\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSessionState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
-        "title": "The AudioSession interface",
-        "number": "2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-audiosessionstate-interrupted",
-      "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-interrupted",
-      "linkingText": [
-        "\"interrupted\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSessionState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
-        "title": "The AudioSession interface",
-        "number": "2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "enumdef-audiosessiontype",
-      "href": "https://w3c.github.io/audio-session/#enumdef-audiosessiontype",
-      "linkingText": [
-        "AudioSessionType"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
-        "title": "The AudioSession interface",
-        "number": "2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-audiosessiontype-auto",
-      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-auto",
-      "linkingText": [
-        "\"auto\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSessionType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
-        "title": "The AudioSession interface",
-        "number": "2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-audiosessiontype-playback",
-      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-playback",
-      "linkingText": [
-        "\"playback\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSessionType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
-        "title": "The AudioSession interface",
-        "number": "2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-audiosessiontype-transient",
-      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-transient",
-      "linkingText": [
-        "\"transient\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSessionType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
-        "title": "The AudioSession interface",
-        "number": "2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-audiosessiontype-transient-solo",
-      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-transient-solo",
-      "linkingText": [
-        "\"transient-solo\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSessionType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
-        "title": "The AudioSession interface",
-        "number": "2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-audiosessiontype-ambient",
-      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-ambient",
-      "linkingText": [
-        "\"ambient\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSessionType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
-        "title": "The AudioSession interface",
-        "number": "2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-audiosessiontype-play-and-record",
-      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-play-and-record",
-      "linkingText": [
-        "\"play-and-record\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSessionType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
-        "title": "The AudioSession interface",
-        "number": "2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-navigator-audiosession",
-      "href": "https://w3c.github.io/audio-session/#dom-navigator-audiosession",
-      "linkingText": [
-        "audioSession"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Navigator"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
-        "title": "The AudioSession interface",
-        "number": "2"
-      },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "audiosession",
@@ -264,8 +35,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
+        "id": "audiosession-interface",
+        "href": "https://w3c.github.io/audio-session/#audiosession-interface",
         "title": "The AudioSession interface",
         "number": "2"
       },
@@ -285,8 +56,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
+        "id": "audiosession-interface",
+        "href": "https://w3c.github.io/audio-session/#audiosession-interface",
         "title": "The AudioSession interface",
         "number": "2"
       },
@@ -306,8 +77,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
+        "id": "audiosession-interface",
+        "href": "https://w3c.github.io/audio-session/#audiosession-interface",
         "title": "The AudioSession interface",
         "number": "2"
       },
@@ -327,10 +98,309 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-session",
-        "href": "https://w3c.github.io/audio-session/#audio-session",
+        "id": "audiosession-interface",
+        "href": "https://w3c.github.io/audio-session/#audiosession-interface",
         "title": "The AudioSession interface",
         "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "audio-session-type",
+      "href": "https://w3c.github.io/audio-session/#audio-session-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "audio session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://w3c.github.io/audio-session/#audio-session-types",
+        "title": "Audio session states",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-audiosessiontype-playback",
+      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-playback",
+      "linkingText": [
+        "\"playback\"",
+        "playback"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://w3c.github.io/audio-session/#audio-session-types",
+        "title": "Audio session states",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessiontype-transient",
+      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-transient",
+      "linkingText": [
+        "\"transient\"",
+        "transient"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://w3c.github.io/audio-session/#audio-session-types",
+        "title": "Audio session states",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessiontype-transient-solo",
+      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-transient-solo",
+      "linkingText": [
+        "\"transient-solo\"",
+        "transient-solo"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://w3c.github.io/audio-session/#audio-session-types",
+        "title": "Audio session states",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessiontype-ambient",
+      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-ambient",
+      "linkingText": [
+        "\"ambient\"",
+        "ambient"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://w3c.github.io/audio-session/#audio-session-types",
+        "title": "Audio session states",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessiontype-play-and-record",
+      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-play-and-record",
+      "linkingText": [
+        "\"play-and-record\"",
+        "play-and-record"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://w3c.github.io/audio-session/#audio-session-types",
+        "title": "Audio session states",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessiontype-auto",
+      "href": "https://w3c.github.io/audio-session/#dom-audiosessiontype-auto",
+      "linkingText": [
+        "\"auto\"",
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://w3c.github.io/audio-session/#audio-session-types",
+        "title": "Audio session states",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-audiosessiontype",
+      "href": "https://w3c.github.io/audio-session/#enumdef-audiosessiontype",
+      "linkingText": [
+        "AudioSessionType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://w3c.github.io/audio-session/#audio-session-types",
+        "title": "Audio session states",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "audio-session-state",
+      "href": "https://w3c.github.io/audio-session/#audio-session-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "audio session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-states",
+        "href": "https://w3c.github.io/audio-session/#audio-session-states",
+        "title": "Audio session states",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-audiosessionstate-active",
+      "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-active",
+      "linkingText": [
+        "\"active\"",
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-states",
+        "href": "https://w3c.github.io/audio-session/#audio-session-states",
+        "title": "Audio session states",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessionstate-interrupted",
+      "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-interrupted",
+      "linkingText": [
+        "\"interrupted\"",
+        "interrupted"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-states",
+        "href": "https://w3c.github.io/audio-session/#audio-session-states",
+        "title": "Audio session states",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessionstate-inactive",
+      "href": "https://w3c.github.io/audio-session/#dom-audiosessionstate-inactive",
+      "linkingText": [
+        "\"inactive\"",
+        "inactive"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-states",
+        "href": "https://w3c.github.io/audio-session/#audio-session-states",
+        "title": "Audio session states",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-audiosessionstate",
+      "href": "https://w3c.github.io/audio-session/#enumdef-audiosessionstate",
+      "linkingText": [
+        "AudioSessionState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-states",
+        "href": "https://w3c.github.io/audio-session/#audio-session-states",
+        "title": "Audio session states",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigator-audiosession",
+      "href": "https://w3c.github.io/audio-session/#dom-navigator-audiosession",
+      "linkingText": [
+        "audioSession"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-navigator",
+        "href": "https://w3c.github.io/audio-session/#extensions-to-navigator",
+        "title": "Extensions to the Navigator interface",
+        "number": "3"
       },
       "definedIn": "pre"
     }

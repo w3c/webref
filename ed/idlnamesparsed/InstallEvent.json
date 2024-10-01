@@ -6,7 +6,7 @@
       "title": "Service Workers Nightly",
       "url": "https://www.w3.org/TR/service-workers/"
     },
-    "fragment": "[Exposed=ServiceWorker]\ninterface InstallEvent : ExtendableEvent {\n  Promise<undefined> addRoutes((RouterRule or sequence<RouterRule>) rules);\n};",
+    "fragment": "[Exposed=ServiceWorker]\ninterface InstallEvent : ExtendableEvent {\n  constructor(DOMString type, optional ExtendableEventInit eventInitDict = {});\n  Promise<undefined> addRoutes((RouterRule or sequence<RouterRule>) rules);\n};",
     "href": "https://w3c.github.io/ServiceWorker/#installevent"
   },
   "extended": [],

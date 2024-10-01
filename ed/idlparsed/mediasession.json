@@ -995,7 +995,7 @@
         "href": "https://w3c.github.io/mediasession/#dictdef-mediapositionstate"
       },
       "MediaSessionActionDetails": {
-        "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n};",
+        "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n  double seekOffset;\n  double seekTime;\n  boolean fastSeek;\n  boolean isActivating;\n};",
         "type": "dictionary",
         "name": "MediaSessionActionDetails",
         "inheritance": null,
@@ -1015,18 +1015,7 @@
             "default": null,
             "required": true,
             "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-action"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/mediasession/#dictdef-mediasessionactiondetails"
-      },
-      "MediaSessionSeekActionDetails": {
-        "fragment": "dictionary MediaSessionSeekActionDetails : MediaSessionActionDetails {\n  double seekOffset;\n};",
-        "type": "dictionary",
-        "name": "MediaSessionSeekActionDetails",
-        "inheritance": "MediaSessionActionDetails",
-        "members": [
+          },
           {
             "type": "field",
             "name": "seekOffset",
@@ -1041,19 +1030,8 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/mediasession/#dom-mediasessionseekactiondetails-seekoffset"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/mediasession/#dictdef-mediasessionseekactiondetails"
-      },
-      "MediaSessionSeekToActionDetails": {
-        "fragment": "dictionary MediaSessionSeekToActionDetails : MediaSessionActionDetails {\n  required double seekTime;\n  boolean fastSeek;\n};",
-        "type": "dictionary",
-        "name": "MediaSessionSeekToActionDetails",
-        "inheritance": "MediaSessionActionDetails",
-        "members": [
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-seekoffset"
+          },
           {
             "type": "field",
             "name": "seekTime",
@@ -1067,8 +1045,8 @@
               "idlType": "double"
             },
             "default": null,
-            "required": true,
-            "href": "https://w3c.github.io/mediasession/#dom-mediasessionseektoactiondetails-seektime"
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-seektime"
           },
           {
             "type": "field",
@@ -1084,19 +1062,8 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/mediasession/#dom-mediasessionseektoactiondetails-fastseek"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/mediasession/#dictdef-mediasessionseektoactiondetails"
-      },
-      "MediaSessionCaptureActionDetails": {
-        "fragment": "dictionary MediaSessionCaptureActionDetails : MediaSessionActionDetails {\n  boolean isActivating;\n};",
-        "type": "dictionary",
-        "name": "MediaSessionCaptureActionDetails",
-        "inheritance": "MediaSessionActionDetails",
-        "members": [
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-fastseek"
+          },
           {
             "type": "field",
             "name": "isActivating",
@@ -1111,12 +1078,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/mediasession/#dom-mediasessioncaptureactiondetails-isactivating"
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-isactivating"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/mediasession/#dictdef-mediasessioncaptureactiondetails"
+        "href": "https://w3c.github.io/mediasession/#dictdef-mediasessionactiondetails"
       }
     },
     "idlExtendedNames": {
@@ -1205,15 +1172,6 @@
       "MediaPositionState": [],
       "MediaSessionActionDetails": [
         "MediaSessionAction"
-      ],
-      "MediaSessionSeekActionDetails": [
-        "MediaSessionActionDetails"
-      ],
-      "MediaSessionSeekToActionDetails": [
-        "MediaSessionActionDetails"
-      ],
-      "MediaSessionCaptureActionDetails": [
-        "MediaSessionActionDetails"
       ]
     },
     "externalDependencies": [

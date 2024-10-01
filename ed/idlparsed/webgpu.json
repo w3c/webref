@@ -11481,7 +11481,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpuquerytype"
       },
       "GPUCanvasContext": {
-        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTexture getCurrentTexture();\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUCanvasConfiguration? getConfiguration();\n    GPUTexture getCurrentTexture();\n};",
         "type": "interface",
         "name": "GPUCanvasContext",
         "inheritance": null,
@@ -11567,6 +11567,22 @@
             "extAttrs": [],
             "special": "",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-unconfigure"
+          },
+          {
+            "type": "operation",
+            "name": "getConfiguration",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "GPUCanvasConfiguration"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-getconfiguration"
           },
           {
             "type": "operation",
