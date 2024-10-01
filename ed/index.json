@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-10-01T06:20:53.121Z",
+  "date": "2024-10-01T06:45:51.406Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -30,7 +30,7 @@
   },
   "stats": {
     "crawled": 640,
-    "errors": 1
+    "errors": 4
   },
   "crawler": "reffy-17.2.5",
   "results": [
@@ -681,9 +681,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 29 Sep 2024 00:59:23 GMT"
+        "lastModified": "Tue, 01 Oct 2024 01:03:17 GMT"
       },
-      "date": "29 September 2024",
+      "date": "1 October 2024",
       "algorithms": "algorithms/rfc6265bis.json",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
@@ -2265,7 +2265,8 @@
       "css": "css/compositing.json",
       "dfns": "dfns/compositing-2.json",
       "headings": "headings/compositing-2.json",
-      "ids": "ids/compositing-2.json"
+      "ids": "ids/compositing-2.json",
+      "error": "Error: Loading https://drafts.fxtf.org/compositing-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 39)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)"
     },
     {
       "url": "https://drafts.fxtf.org/filter-effects-2/",
@@ -2748,9 +2749,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 30 Sep 2024 10:14:50 GMT"
+        "lastModified": "Tue, 01 Oct 2024 01:18:16 GMT"
       },
-      "date": "30 September 2024",
+      "date": "1 October 2024",
       "algorithms": "algorithms/html.json",
       "links": "links/html.json",
       "refs": "refs/html.json",
@@ -14407,9 +14408,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6386",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 27 Sep 2024 18:36:29 GMT"
+        "lastModified": "Tue, 01 Oct 2024 06:37:58 GMT"
       },
-      "date": "27 September 2024",
+      "date": "1 October 2024",
       "links": "links/rfc6386.json",
       "ids": "ids/rfc6386.json"
     },
@@ -20982,6 +20983,7 @@
       "dfns": "dfns/css-paint-api-1.json",
       "headings": "headings/css-paint-api-1.json",
       "ids": "ids/css-paint-api-1.json",
+      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 377)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)",
       "idlparsed": "idlparsed/css-paint-api-1.json"
     },
     {
@@ -22945,6 +22947,7 @@
       "dfns": "dfns/css-typed-om-1.json",
       "headings": "headings/css-typed-om-1.json",
       "ids": "ids/css-typed-om-1.json",
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:481:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:107:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:352:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 406)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:373:21)",
       "idlparsed": "idlparsed/css-typed-om-1.json"
     },
     {
@@ -33471,10 +33474,10 @@
       ],
       "crawled": "https://w3c.github.io/vc-data-model/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 30 Sep 2024 18:26:31 GMT"
+        "lastModified": "Tue, 01 Oct 2024 04:50:32 GMT"
       },
       "generator": "respec",
-      "date": "30 September 2024",
+      "date": "01 October 2024",
       "algorithms": "algorithms/vc-data-model-2.0.json",
       "links": "links/vc-data-model-2.0.json",
       "refs": "refs/vc-data-model-2.0.json",
