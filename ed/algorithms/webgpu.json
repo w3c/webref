@@ -6752,7 +6752,7 @@
           "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-texturedescriptor-slot\" id=\"ref-for-dom-gpucanvascontext-texturedescriptor-slot\" data-timeline=\"content\">[[textureDescriptor]]</a></code> to <var>descriptor</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-replace-the-drawing-buffer\" id=\"ref-for-abstract-opdef-replace-the-drawing-buffer③\" data-timeline=\"content\">Replace the drawing buffer</a> of <var>this</var>, which resets <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot①\" data-timeline=\"content\">[[drawingBuffer]]</a></code> with a bitmap with the new format and tags.</p>"
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-replace-the-drawing-buffer\" id=\"ref-for-abstract-opdef-replace-the-drawing-buffer③\" data-timeline=\"content\">Replace the drawing buffer</a> of <var>this</var>.</p>"
         },
         {
           "html": "<p>Issue the subsequent steps on the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#device-timeline\" id=\"ref-for-device-timeline①⑨⑥\">Device timeline</a> of <var>device</var>.</p>"
@@ -6818,10 +6818,10 @@
           "rationale": "replace",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-replace-the-drawing-buffer\" id=\"ref-for-abstract-opdef-replace-the-drawing-buffer⑥\" data-timeline=\"content\">Replace the drawing buffer</a> of <var>this</var>.</p>"
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-replace-the-drawing-buffer\" id=\"ref-for-abstract-opdef-replace-the-drawing-buffer⑤\" data-timeline=\"content\">Replace the drawing buffer</a> of <var>this</var>.</p>"
             },
             {
-              "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-currenttexture-slot\" id=\"ref-for-dom-gpucanvascontext-currenttexture-slot⑤\" data-timeline=\"content\">[[currentTexture]]</a></code> to the result of calling <var>device</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpudevice-createtexture\" id=\"ref-for-dom-gpudevice-createtexture③\">createTexture()</a></code> with <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-texturedescriptor-slot\" id=\"ref-for-dom-gpucanvascontext-texturedescriptor-slot③\" data-timeline=\"content\">[[textureDescriptor]]</a></code>,\nexcept with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#gputexture\" id=\"ref-for-gputexture④⑥\">GPUTexture</a></code>'s underlying storage pointing to <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot②\" data-timeline=\"content\">[[drawingBuffer]]</a></code>.</p>"
+              "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-currenttexture-slot\" id=\"ref-for-dom-gpucanvascontext-currenttexture-slot⑤\" data-timeline=\"content\">[[currentTexture]]</a></code> to the result of calling <var>device</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpudevice-createtexture\" id=\"ref-for-dom-gpudevice-createtexture③\">createTexture()</a></code> with <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-texturedescriptor-slot\" id=\"ref-for-dom-gpucanvascontext-texturedescriptor-slot③\" data-timeline=\"content\">[[textureDescriptor]]</a></code>,\nexcept with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#gputexture\" id=\"ref-for-gputexture④⑥\">GPUTexture</a></code>'s underlying storage pointing to <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot①\" data-timeline=\"content\">[[drawingBuffer]]</a></code>.</p>"
             }
           ]
         },
@@ -6843,11 +6843,17 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑦\" data-timeline=\"content\">[[configuration]]</a></code> is <code>null</code>:",
+          "html": "<p>Let <var>snapshot</var> be a transparent black image of the same size as <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-canvas\" id=\"ref-for-dom-gpucanvascontext-canvas③\" data-timeline=\"content\">canvas</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>configuration</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑦\" data-timeline=\"content\">[[configuration]]</a></code>.</p>"
+        },
+        {
+          "html": "If <var>configuration</var> is <code>null</code>:",
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return a transparent black image of the same size as <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-canvas\" id=\"ref-for-dom-gpucanvascontext-canvas③\" data-timeline=\"content\">canvas</a></code>.</p>"
+              "html": "<p>Return <var>snapshot</var>.</p>"
             }
           ]
         },
@@ -6855,10 +6861,19 @@
           "html": "<p>Ensure that all submitted work items (e.g. queue submissions) have\ncompleted writing to the image (via <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-currenttexture-slot\" id=\"ref-for-dom-gpucanvascontext-currenttexture-slot⑦\" data-timeline=\"content\">[[currentTexture]]</a></code>).</p>"
         },
         {
-          "html": "<p>Let <var>snapshot</var> be a copy of <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot③\" data-timeline=\"content\">[[drawingBuffer]]</a></code>.</p>"
+          "html": "If <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-device\" id=\"ref-for-dom-gpucanvasconfiguration-device②\">device</a></code> is found to be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-valid\" id=\"ref-for-dfn-valid②\">valid</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>snapshot</var> to a copy of the <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot②\" data-timeline=\"content\">[[drawingBuffer]]</a></code>.</p>"
+            }
+          ],
+          "ignored": [
+            "Optionally, set snapshot to a copy of context.[[lastPresentedImage]]."
+          ]
         },
         {
-          "html": "<p>Let <var>alphaMode</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑨\" data-timeline=\"content\">[[configuration]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-alphamode\" id=\"ref-for-dom-gpucanvasconfiguration-alphamode②\">alphaMode</a></code>.</p>"
+          "html": "<p>Let <var>alphaMode</var> be <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-alphamode\" id=\"ref-for-dom-gpucanvasconfiguration-alphamode②\">alphaMode</a></code>.</p>"
         },
         {
           "html": "<dl class=\"switch\">\n       <dt data-md=\"\">If <var>alphaMode</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasalphamode-opaque\" id=\"ref-for-dom-gpucanvasalphamode-opaque①\">\"opaque\"</a></code>:\n       </dt><dd data-md=\"\">\n        \n        \n       </dd><dt data-md=\"\">Otherwise:\n       </dt><dd data-md=\"\">\n        <p>Tag <var>snapshot</var> with <var>alphaMode</var>.</p>\n      </dd></dl>",
@@ -6889,6 +6904,9 @@
           ]
         },
         {
+          "html": "<p>Tag <var>snapshot</var> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-colorspace\" id=\"ref-for-dom-gpucanvasconfiguration-colorspace\">colorSpace</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-tonemapping\" id=\"ref-for-dom-gpucanvasconfiguration-tonemapping①\">toneMapping</a></code> of <var>configuration</var>.</p>"
+        },
+        {
           "html": "<p>Return <var>snapshot</var>.</p>"
         }
       ]
@@ -6900,13 +6918,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-expire-the-current-texture\" id=\"ref-for-abstract-opdef-expire-the-current-texture③\" data-timeline=\"content\">Expire the current texture</a> of <var>context</var>.</p>"
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-expire-the-current-texture\" id=\"ref-for-abstract-opdef-expire-the-current-texture⑤\" data-timeline=\"content\">Expire the current texture</a> of <var>context</var>.</p>"
         },
         {
-          "html": "<p>Let <var>configuration</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot①⓪\" data-timeline=\"content\">[[configuration]]</a></code>.</p>"
+          "html": "<p>Let <var>configuration</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑧\" data-timeline=\"content\">[[configuration]]</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot④\" data-timeline=\"content\">[[drawingBuffer]]</a></code> to a transparent black image of the same\nsize as <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-canvas\" id=\"ref-for-dom-gpucanvascontext-canvas④\" data-timeline=\"content\">canvas</a></code>.</p>\n      <ul>\n       <li data-md=\"\">\n        <p>If <var>configuration</var> is null, the drawing buffer is tagged with the color space <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-srgb\" id=\"ref-for-dom-predefinedcolorspace-srgb\">\"srgb\"</a></code>.\nIn this case, the drawing buffer will remain blank until the context is configured.</p>\n       </li><li data-md=\"\">\n        <p>If not, the drawing buffer has the specified <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-format\" id=\"ref-for-dom-gpucanvasconfiguration-format③\">format</a></code> and is tagged with the specified <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-colorspace\" id=\"ref-for-dom-gpucanvasconfiguration-colorspace\">colorSpace</a></code>.</p>\n      </li></ul>"
+          "html": "<p>Set <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot③\" data-timeline=\"content\">[[drawingBuffer]]</a></code> to a transparent black image of the same\nsize as <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-canvas\" id=\"ref-for-dom-gpucanvascontext-canvas④\" data-timeline=\"content\">canvas</a></code>.</p>\n      <ul>\n       <li data-md=\"\">\n        <p>If <var>configuration</var> is null, the drawing buffer is tagged with the color space <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-srgb\" id=\"ref-for-dom-predefinedcolorspace-srgb\">\"srgb\"</a></code>.\nIn this case, the drawing buffer will remain blank until the context is configured.</p>\n       </li><li data-md=\"\">\n        <p>If not, the drawing buffer has the specified <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-format\" id=\"ref-for-dom-gpucanvasconfiguration-format③\">format</a></code> and is tagged with the specified <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-colorspace\" id=\"ref-for-dom-gpucanvasconfiguration-colorspace①\">colorSpace</a></code> and <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-tonemapping\" id=\"ref-for-dom-gpucanvasconfiguration-tonemapping②\">toneMapping</a></code>.</p>\n      </li></ul>"
         }
       ]
     },
@@ -6921,7 +6939,7 @@
           "rationale": "call",
           "steps": [
             {
-              "html": "<p>Call <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-currenttexture-slot\" id=\"ref-for-dom-gpucanvascontext-currenttexture-slot①⓪\" data-timeline=\"content\">[[currentTexture]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gputexture-destroy\" id=\"ref-for-dom-gputexture-destroy③\">destroy()</a></code> (without destroying <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot⑤\" data-timeline=\"content\">[[drawingBuffer]]</a></code>)\nto terminate write access to the image.</p>"
+              "html": "<p>Call <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-currenttexture-slot\" id=\"ref-for-dom-gpucanvascontext-currenttexture-slot①⓪\" data-timeline=\"content\">[[currentTexture]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gputexture-destroy\" id=\"ref-for-dom-gputexture-destroy③\">destroy()</a></code> (without destroying <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot④\" data-timeline=\"content\">[[drawingBuffer]]</a></code>)\nto terminate write access to the image.</p>"
             },
             {
               "html": "<p>Set <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-currenttexture-slot\" id=\"ref-for-dom-gpucanvascontext-currenttexture-slot①①\" data-timeline=\"content\">[[currentTexture]]</a></code> to <code>null</code>.</p>"
@@ -6936,28 +6954,32 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Return <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-get-a-copy-of-the-image-contents-of-a-context\" id=\"ref-for-abstract-opdef-get-a-copy-of-the-image-contents-of-a-context⑤\" data-timeline=\"content\">a copy of the image contents</a> of <var>context</var>.</p>"
+          "html": "<p>Return <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-get-a-copy-of-the-image-contents-of-a-context\" id=\"ref-for-abstract-opdef-get-a-copy-of-the-image-contents-of-a-context⑥\" data-timeline=\"content\">a copy of the image contents</a> of <var>context</var>.</p>"
         }
       ]
     },
     {
       "name": "updating the rendering of a WebGPU canvas",
       "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-updating-the-rendering-of-a-webgpu-canvas",
-      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-updating-the-rendering-of-a-webgpu-canvas\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">updating the rendering of a WebGPU canvas</dfn> (an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement\" id=\"ref-for-htmlcanvaselement①⓪\">HTMLCanvasElement</a></code> or an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvas\" id=\"ref-for-offscreencanvas⑧\">OffscreenCanvas</a></code> with a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvas-placeholder\" id=\"ref-for-offscreencanvas-placeholder①\">placeholder canvas element</a>)\n    with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#gpucanvascontext\" id=\"ref-for-gpucanvascontext①⑥\">GPUCanvasContext</a></code> <var>context</var>, which occurs in the following sub-steps of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model\" id=\"ref-for-event-loop-processing-model①\">event loop processing model</a>, run the following <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#content-timeline\" id=\"ref-for-content-timeline①②③\">content timeline</a> steps: \n    <ul>\n     <li data-md=\"\">\n      <p>\"update the rendering or user interface of that <code>Document</code>\"</p>\n     </li><li data-md=\"\">\n      <p>\"update the rendering of that dedicated worker\"</p>\n    </li></ul>\n    \n    <p>Run the following steps:</p>",
+      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-updating-the-rendering-of-a-webgpu-canvas\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">updating the rendering of a WebGPU canvas</dfn> (an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement\" id=\"ref-for-htmlcanvaselement①⓪\">HTMLCanvasElement</a></code> or an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvas\" id=\"ref-for-offscreencanvas⑧\">OffscreenCanvas</a></code> with a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvas-placeholder\" id=\"ref-for-offscreencanvas-placeholder①\">placeholder canvas element</a>)\n    with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#gpucanvascontext\" id=\"ref-for-gpucanvascontext①⑥\">GPUCanvasContext</a></code> <var>context</var>, which occurs before getting the canvas’s image contents,\n    in the following sub-steps of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model\" id=\"ref-for-event-loop-processing-model①\">event loop processing model</a>: \n    <ul>\n     <li data-md=\"\">\n      <p>\"update the rendering or user interface of that <code>Document</code>\"</p>\n     </li><li data-md=\"\">\n      <p>\"update the rendering of that dedicated worker\"</p>\n    </li></ul>\n    \n    <p>Run the following <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#content-timeline\" id=\"ref-for-content-timeline①②③\">content timeline</a> steps:</p>",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-expire-the-current-texture\" id=\"ref-for-abstract-opdef-expire-the-current-texture④\" data-timeline=\"content\">Expire the current texture</a> of <var>context</var>.</p>"
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-expire-the-current-texture\" id=\"ref-for-abstract-opdef-expire-the-current-texture⑥\" data-timeline=\"content\">Expire the current texture</a> of <var>context</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-lastpresentedimage-slot\" id=\"ref-for-dom-gpucanvascontext-lastpresentedimage-slot③\" data-timeline=\"content\">[[lastPresentedImage]]</a></code> to <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot⑤\" data-timeline=\"content\">[[drawingBuffer]]</a></code>.</p>"
         }
       ]
     },
     {
       "name": "transferToImageBitmap from WebGPU",
-      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-transfertoimagebitmap\" id=\"ref-for-dom-offscreencanvas-transfertoimagebitmap②\">transferToImageBitmap()</a></code> is called on a canvas with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#gpucanvascontext\" id=\"ref-for-gpucanvascontext①⑦\">GPUCanvasContext</a></code> <var>context</var>, after creating an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap\" id=\"ref-for-imagebitmap④\">ImageBitmap</a></code> from the canvas’s bitmap,\n    run the following <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#content-timeline\" id=\"ref-for-content-timeline①②④\">content timeline</a> steps:",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-transfertoimagebitmap-from-webgpu",
+      "html": "<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-transfertoimagebitmap-from-webgpu\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">transferToImageBitmap from WebGPU</dfn>: \n    <p>When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-transfertoimagebitmap\" id=\"ref-for-dom-offscreencanvas-transfertoimagebitmap②\">transferToImageBitmap()</a></code> is called on a canvas with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#gpucanvascontext\" id=\"ref-for-gpucanvascontext①⑦\">GPUCanvasContext</a></code> <var>context</var>, after creating an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap\" id=\"ref-for-imagebitmap④\">ImageBitmap</a></code> from the canvas’s bitmap,\n    run the following <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#content-timeline\" id=\"ref-for-content-timeline①②④\">content timeline</a> steps:</p>",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-replace-the-drawing-buffer\" id=\"ref-for-abstract-opdef-replace-the-drawing-buffer⑧\" data-timeline=\"content\">Replace the drawing buffer</a> of <var>context</var>.</p>"
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-replace-the-drawing-buffer\" id=\"ref-for-abstract-opdef-replace-the-drawing-buffer⑥\" data-timeline=\"content\">Replace the drawing buffer</a> of <var>context</var>.</p>"
         }
       ]
     },
@@ -6968,10 +6990,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-replace-the-drawing-buffer\" id=\"ref-for-abstract-opdef-replace-the-drawing-buffer①⓪\" data-timeline=\"content\">Replace the drawing buffer</a> of <var>context</var>.</p>"
+          "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-replace-the-drawing-buffer\" id=\"ref-for-abstract-opdef-replace-the-drawing-buffer⑧\" data-timeline=\"content\">Replace the drawing buffer</a> of <var>context</var>.</p>"
         },
         {
-          "html": "<p>Let <var>configuration</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot①①\" data-timeline=\"content\">[[configuration]]</a></code></p>"
+          "html": "<p>Let <var>configuration</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑨\" data-timeline=\"content\">[[configuration]]</a></code></p>"
         },
         {
           "html": "If <var>configuration</var> is not <code>null</code>:",
