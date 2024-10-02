@@ -179,7 +179,6 @@
       },
       "https://httpwg.org/specs/rfc8941.html": {},
       "https://infra.spec.whatwg.org/": {},
-      "https://source.chromium.org/chromium/chromium/src/+/refs/heads/main:content/browser/fenced_frame/fenced_frame_reporter.cc;l=384;drc=183dd920ea5d6aed92e007c40e226f1f840c0567": {},
       "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
@@ -405,6 +404,7 @@
           "request-service-workers-mode",
           "concept-request-origin",
           "concept-request-referrer",
+          "concept-request-referrer-policy",
           "concept-request-mode",
           "concept-request-credentials-mode",
           "concept-fetch",
@@ -451,6 +451,7 @@
           "concept-origin",
           "site",
           "same-origin",
+          "policy-container-referrer-policy",
           "determining-navigation-params-policy-container",
           "clone-a-policy-container",
           "policy-container",
@@ -471,12 +472,12 @@
           "navigation-referrer-policy",
           "source-snapshot-params",
           "source-snapshot-params-activation",
+          "source-snapshot-params-policy-container",
           "attempt-to-populate-the-history-entry's-document",
           "she-document-state",
           "document-state-initiator-origin",
           "create-navigation-params-by-fetching",
           "document-state-history-policy-container",
-          "source-snapshot-params-policy-container",
           "document-state-document",
           "she-step",
           "navigation-params-navigable",
@@ -559,8 +560,8 @@
           "htmlconstructor",
           "represents",
           "concept-document-permissions-policy",
-          "the-document's-referrer",
-          "concept-document-policy-container"
+          "concept-document-policy-container",
+          "the-document's-referrer"
         ]
       },
       "https://html.spec.whatwg.org/multipage/embedder-content-other.html": {
@@ -772,7 +773,8 @@
       },
       "https://w3c.github.io/webappsec-referrer-policy/": {
         "anchors": [
-          "referrer-policy-no-referrer"
+          "referrer-policy-no-referrer",
+          "referrer-policy"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
