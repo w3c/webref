@@ -98,14 +98,14 @@
       ]
     },
     {
-      "html": "<a data-link-type=\"biblio\" href=\"https://w3c.github.io/IFT/Overview.html#biblio-woff2\" title=\"WOFF File Format 2.0\">[WOFF2]</a> is a commonly used to encode fonts for transfer on the web. Incremental fonts can be encoded with WOFF2 as long as special care\nis taken. If an incremental font will be encoded by WOFF2 for transfer:",
+      "html": "For <a data-link-type=\"biblio\" href=\"https://w3c.github.io/IFT/Overview.html#biblio-woff2\" title=\"WOFF File Format 2.0\">[WOFF2]</a> special care must be taken. If an incremental font will be encoded by WOFF2 for transfer:",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If the WOFF2 encoding will include a transformed glyf and loca table (<a href=\"https://www.w3.org/TR/WOFF2/#glyf_table_format\"><cite>WOFF 2.0</cite> § 5.1 Transformed glyf table format</a>) then, the incremental\n font should not contain <a href=\"https://w3c.github.io/IFT/Overview.html#table-keyed\">§ 6.2 Table Keyed</a> patches which modify either the glyf or loca table. The WOFF2 format does not\n guarantee the specific bytes that result from decoding a transformed glyf and loca table. <a href=\"https://w3c.github.io/IFT/Overview.html#glyph-keyed\">§ 6.3 Glyph Keyed</a> patches may be used\n in conjunction with a transformed glyf and loca table.</p>"
         },
         {
-          "html": "<p>When utilizing a WOFF2 encoded IFT font, the client must first fully decode the WOFF2 font before <a href=\"https://w3c.github.io/IFT/Overview.html#extending-font-subset\">§ 4 Extending a Font Subset</a>.</p>"
+          "html": "<p>The 'IFT ' and 'IFTX' tables can be processed and brotli encoded by a WOFF2 encoder following the standard process defined in <a href=\"https://www.w3.org/TR/WOFF2/#table_format\"><cite>WOFF 2.0</cite> § 5 Compressed data format</a>.</p>"
         }
       ]
     },
