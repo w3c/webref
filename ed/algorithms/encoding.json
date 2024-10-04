@@ -874,17 +874,17 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate\">pending high surrogate</a> is non-null, then:",
+          "html": "If <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate\">leading surrogate</a> is non-null, then:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>high surrogate</var> be <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate①\">pending high surrogate</a>. </p>"
+              "html": "<p>Let <var>leadingSurrogate</var> be <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate①\">leading surrogate</a>. </p>"
             },
             {
-              "html": "<p>Set <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate②\">pending high surrogate</a> to null. </p>"
+              "html": "<p>Set <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate②\">leading surrogate</a> to null. </p>"
             },
             {
-              "html": "<p>If <var>item</var> is in the range U+DC00 to U+DFFF, inclusive, then return a scalar value\n   whose value is 0x10000 + ((<var>high surrogate</var> − 0xD800) &lt;&lt; 10) +\n   (<var>item</var> − 0xDC00). </p>"
+              "html": "<p>If <var>item</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#trailing-surrogate\" id=\"ref-for-trailing-surrogate①\">trailing surrogate</a>, then return a <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#scalar-value-from-surrogates\" id=\"ref-for-scalar-value-from-surrogates\">scalar value from surrogates</a> given <var>leadingSurrogate</var> and <var>item</var>. </p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#concept-stream-prepend\" id=\"ref-for-concept-stream-prepend②\">Restore</a> <var>item</var> to <var>input</var>. </p>"
@@ -895,10 +895,10 @@
           ]
         },
         {
-          "html": "<p>If <var>item</var> is in the range U+D800 to U+DBFF, inclusive, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate③\">pending high\n surrogate</a> to <var>item</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue③\">continue</a>. </p>"
+          "html": "<p>If <var>item</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#leading-surrogate\" id=\"ref-for-leading-surrogate②\">leading surrogate</a>, then set <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate③\">leading surrogate</a> to <var>item</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue③\">continue</a>. </p>"
         },
         {
-          "html": "<p>If <var>item</var> is in the range U+DC00 to U+DFFF, inclusive, then return U+FFFD. </p>"
+          "html": "<p>If <var>item</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#trailing-surrogate\" id=\"ref-for-trailing-surrogate②\">trailing surrogate</a>, then return U+FFFD. </p>"
         },
         {
           "html": "<p>Return <var>item</var>. </p>"
@@ -912,7 +912,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate④\">pending high surrogate</a> is non-null, then:",
+          "html": "If <var>encoder</var>’s <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate\" id=\"ref-for-textencoderstream-pending-high-surrogate④\">leading surrogate</a> is non-null, then:",
           "rationale": "let",
           "steps": [
             {
@@ -1255,6 +1255,9 @@
         },
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#gbk-flag\" id=\"ref-for-gbk-flag①\">is GBK</a> is true and <var>code point</var> is\n U+20AC, return byte 0x80. </p>"
+        },
+        {
+          "html": "<p>If there is a row in the table below whose first column is <var>code point</var>, then return\n  the two bytes on the same row listed in the second column: </p>\n     <table>\n      <tbody>\n       <tr>\n        <th>Code point \n        </th><th>Bytes \n       </th></tr><tr>\n        <td>U+E78D \n        </td><td>0xA6 0xD9 \n       </td></tr><tr>\n        <td>U+E78E \n        </td><td>0xA6 0xDA \n       </td></tr><tr>\n        <td>U+E78F \n        </td><td>0xA6 0xDB \n       </td></tr><tr>\n        <td>U+E790 \n        </td><td>0xA6 0xDC \n       </td></tr><tr>\n        <td>U+E791 \n        </td><td>0xA6 0xDD \n       </td></tr><tr>\n        <td>U+E792 \n        </td><td>0xA6 0xDE \n       </td></tr><tr>\n        <td>U+E793 \n        </td><td>0xA6 0xDF \n       </td></tr><tr>\n        <td>U+E794 \n        </td><td>0xA6 0xEC \n       </td></tr><tr>\n        <td>U+E795 \n        </td><td>0xA6 0xED \n       </td></tr><tr>\n        <td>U+E796 \n        </td><td>0xA6 0xF3 \n       </td></tr><tr>\n        <td>U+E81E \n        </td><td>0xFE 0x59 \n       </td></tr><tr>\n        <td>U+E826 \n        </td><td>0xFE 0x61 \n       </td></tr><tr>\n        <td>U+E82B \n        </td><td>0xFE 0x66 \n       </td></tr><tr>\n        <td>U+E82C \n        </td><td>0xFE 0x67 \n       </td></tr><tr>\n        <td>U+E832 \n        </td><td>0xFE 0x6D \n       </td></tr><tr>\n        <td>U+E843 \n        </td><td>0xFE 0x7E \n       </td></tr><tr>\n        <td>U+E854 \n        </td><td>0xFE 0x90 \n       </td></tr><tr>\n        <td>U+E864 \n        </td><td>0xFE 0xA0 \n     </td></tr></tbody></table>"
         },
         {
           "html": "<p>Let <var>pointer</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-pointer\" id=\"ref-for-index-pointer③\">index pointer</a> for <var>code point</var> in <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#index-gb18030\" id=\"ref-for-index-gb18030②\">index gb18030</a>. </p>"
@@ -1976,10 +1979,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥①\">end-of-queue</a> and either <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte\">UTF-16 lead byte</a> or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate\">UTF-16 lead surrogate</a> is non-null, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte①\">UTF-16 lead byte</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate①\">UTF-16 lead surrogate</a> to null, and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤⑨\">error</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥①\">end-of-queue</a> and either <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte\">UTF-16 lead byte</a> or <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate\">UTF-16 leading surrogate</a> is non-null, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte①\">UTF-16 lead byte</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate①\">UTF-16 leading surrogate</a> to null, and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑤⑨\">error</a>. </p>"
         },
         {
-          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥②\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte②\">UTF-16 lead byte</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate②\">UTF-16 lead surrogate</a> are null, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②⑥\">finished</a>. </p>"
+          "html": "<p>If <var>byte</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#end-of-stream\" id=\"ref-for-end-of-stream⑥②\">end-of-queue</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte②\">UTF-16 lead byte</a> and <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate②\">UTF-16 leading surrogate</a> are null, return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#finished\" id=\"ref-for-finished②⑥\">finished</a>. </p>"
         },
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte③\">UTF-16 lead byte</a> is null, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-byte\" id=\"ref-for-utf-16-lead-byte④\">UTF-16 lead byte</a> to <var>byte</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue②①\">continue</a>. </p>"
@@ -2004,11 +2007,17 @@
           ]
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate③\">UTF-16 lead surrogate</a> is non-null, let <var>lead surrogate</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate④\">UTF-16 lead surrogate</a>, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate⑤\">UTF-16 lead surrogate</a> to null, and then:",
-          "rationale": "if",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate③\">UTF-16 leading surrogate</a> is non-null:",
+          "rationale": "let",
           "steps": [
             {
-              "html": "<p>If <var>code unit</var> is in the range U+DC00 to U+DFFF, inclusive,\n   return a code point whose value is\n   0x10000 + ((<var>lead surrogate</var> − 0xD800) &lt;&lt; 10) + (<var>code unit</var> − 0xDC00). </p>"
+              "html": "<p>Let <var>leadingSurrogate</var> be <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate④\">UTF-16 leading surrogate</a>. </p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate⑤\">UTF-16 leading surrogate</a> to null. </p>"
+            },
+            {
+              "html": "<p>If <var>code unit</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#trailing-surrogate\" id=\"ref-for-trailing-surrogate③\">trailing surrogate</a>, then return a <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#scalar-value-from-surrogates\" id=\"ref-for-scalar-value-from-surrogates①\">scalar value from surrogates</a> given <var>leadingSurrogate</var> and <var>code unit</var>. </p>"
             },
             {
               "html": "<p>Let <var>byte1</var> be <var>code unit</var> &gt;&gt; 8. </p>"
@@ -2025,10 +2034,10 @@
           ]
         },
         {
-          "html": "<p>If <var>code unit</var> is in the range U+D800 to U+DBFF, inclusive, set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate⑥\">UTF-16 lead surrogate</a> to <var>code unit</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue②②\">continue</a>. </p>"
+          "html": "<p>If <var>code unit</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#leading-surrogate\" id=\"ref-for-leading-surrogate③\">leading surrogate</a>, then set <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-16-lead-surrogate\" id=\"ref-for-utf-16-lead-surrogate⑥\">UTF-16 leading surrogate</a> to <var>code unit</var> and return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#continue\" id=\"ref-for-continue②②\">continue</a>. </p>"
         },
         {
-          "html": "<p>If <var>code unit</var> is in the range U+DC00 to U+DFFF, inclusive,\n return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑥①\">error</a>. </p>"
+          "html": "<p>If <var>code unit</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#trailing-surrogate\" id=\"ref-for-trailing-surrogate④\">trailing surrogate</a>, then return <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#error\" id=\"ref-for-error⑥①\">error</a>. </p>"
         },
         {
           "html": "<p>Return code point <var>code unit</var>. </p>"
