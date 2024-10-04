@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Web Audio API",
+      "title": "Web Audio API 1.1",
       "url": "https://www.w3.org/TR/webaudio/"
     },
     "fragment": "[Exposed=Window]\ninterface AudioRenderCapacityEvent : Event {\n    constructor (DOMString type, optional AudioRenderCapacityEventInit eventInitDict = {});\n        readonly attribute double timestamp;\n        readonly attribute double averageLoad;\n        readonly attribute double peakLoad;\n        readonly attribute double underrunRatio;\n};",

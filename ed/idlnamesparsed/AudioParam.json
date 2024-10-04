@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Web Audio API",
+      "title": "Web Audio API 1.1",
       "url": "https://www.w3.org/TR/webaudio/"
     },
     "fragment": "[Exposed=Window]\ninterface AudioParam {\n    attribute float value;\n    attribute AutomationRate automationRate;\n    readonly attribute float defaultValue;\n    readonly attribute float minValue;\n    readonly attribute float maxValue;\n    AudioParam setValueAtTime (float value, double startTime);\n    AudioParam linearRampToValueAtTime (float value, double endTime);\n    AudioParam exponentialRampToValueAtTime (float value, double endTime);\n    AudioParam setTargetAtTime (float target, double startTime, float timeConstant);\n    AudioParam setValueCurveAtTime (sequence<float> values,\n                                    double startTime,\n                                    double duration);\n    AudioParam cancelScheduledValues (double cancelTime);\n    AudioParam cancelAndHoldAtTime (double cancelTime);\n};",

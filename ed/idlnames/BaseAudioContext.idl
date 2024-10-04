@@ -1,4 +1,4 @@
-// Source: Web Audio API (https://www.w3.org/TR/webaudio/)
+// Source: Web Audio API 1.1 (https://www.w3.org/TR/webaudio/)
 [Exposed=Window]
 interface BaseAudioContext : EventTarget {
     readonly attribute AudioDestinationNode destination;
@@ -14,8 +14,8 @@ interface BaseAudioContext : EventTarget {
     AnalyserNode createAnalyser ();
     BiquadFilterNode createBiquadFilter ();
     AudioBuffer createBuffer (unsigned long numberOfChannels,
-                              unsigned long length,
-                              float sampleRate);
+                                unsigned long length,
+                                float sampleRate);
     AudioBufferSourceNode createBufferSource ();
     ChannelMergerNode createChannelMerger (optional unsigned long numberOfInputs = 6);
     ChannelSplitterNode createChannelSplitter (
@@ -26,12 +26,12 @@ interface BaseAudioContext : EventTarget {
     DynamicsCompressorNode createDynamicsCompressor ();
     GainNode createGain ();
     IIRFilterNode createIIRFilter (sequence<double> feedforward,
-                                   sequence<double> feedback);
+                                    sequence<double> feedback);
     OscillatorNode createOscillator ();
     PannerNode createPanner ();
     PeriodicWave createPeriodicWave (sequence<float> real,
-                                     sequence<float> imag,
-                                     optional PeriodicWaveConstraints constraints = {});
+                                        sequence<float> imag,
+                                        optional PeriodicWaveConstraints constraints = {});
     ScriptProcessorNode createScriptProcessor(
         optional unsigned long bufferSize = 0,
         optional unsigned long numberOfInputChannels = 2,

@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Web Audio API",
+      "title": "Web Audio API 1.1",
       "url": "https://www.w3.org/TR/webaudio/"
     },
     "fragment": "[Global=(Worklet, AudioWorklet), Exposed=AudioWorklet]\ninterface AudioWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerProcessor (DOMString name,\n                                               AudioWorkletProcessorConstructor processorCtor);\n    readonly attribute unsigned long long currentFrame;\n    readonly attribute double currentTime;\n    readonly attribute float sampleRate;\n    readonly attribute unsigned long renderQuantumSize;\n    readonly attribute MessagePort port;\n};",

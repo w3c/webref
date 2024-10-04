@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Web Audio API",
+      "title": "Web Audio API 1.1",
       "url": "https://www.w3.org/TR/webaudio/"
     },
     "fragment": "[Exposed=Window]\ninterface PannerNode : AudioNode {\n    constructor (BaseAudioContext context, optional PannerOptions options = {});\n    attribute PanningModelType panningModel;\n    readonly attribute AudioParam positionX;\n    readonly attribute AudioParam positionY;\n    readonly attribute AudioParam positionZ;\n    readonly attribute AudioParam orientationX;\n    readonly attribute AudioParam orientationY;\n    readonly attribute AudioParam orientationZ;\n    attribute DistanceModelType distanceModel;\n    attribute double refDistance;\n    attribute double maxDistance;\n    attribute double rolloffFactor;\n    attribute double coneInnerAngle;\n    attribute double coneOuterAngle;\n    attribute double coneOuterGain;\n    undefined setPosition (float x, float y, float z);\n    undefined setOrientation (float x, float y, float z);\n};",
@@ -15,7 +15,7 @@
     "type": "interface",
     "defined": {
       "spec": {
-        "title": "Web Audio API",
+        "title": "Web Audio API 1.1",
         "url": "https://www.w3.org/TR/webaudio/"
       },
       "fragment": "[Exposed=Window]\ninterface AudioNode : EventTarget {\n    AudioNode connect (AudioNode destinationNode,\n                       optional unsigned long output = 0,\n                       optional unsigned long input = 0);\n    undefined connect (AudioParam destinationParam, optional unsigned long output = 0);\n    undefined disconnect ();\n    undefined disconnect (unsigned long output);\n    undefined disconnect (AudioNode destinationNode);\n    undefined disconnect (AudioNode destinationNode, unsigned long output);\n    undefined disconnect (AudioNode destinationNode,\n                          unsigned long output,\n                          unsigned long input);\n    undefined disconnect (AudioParam destinationParam);\n    undefined disconnect (AudioParam destinationParam, unsigned long output);\n    readonly attribute BaseAudioContext context;\n    readonly attribute unsigned long numberOfInputs;\n    readonly attribute unsigned long numberOfOutputs;\n    attribute unsigned long channelCount;\n    attribute ChannelCountMode channelCountMode;\n    attribute ChannelInterpretation channelInterpretation;\n};",

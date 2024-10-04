@@ -3,7 +3,7 @@
   "type": "dictionary",
   "defined": {
     "spec": {
-      "title": "Web Audio API",
+      "title": "Web Audio API 1.1",
       "url": "https://www.w3.org/TR/webaudio/"
     },
     "fragment": "dictionary PannerOptions : AudioNodeOptions {\n    PanningModelType panningModel = \"equalpower\";\n    DistanceModelType distanceModel = \"inverse\";\n    float positionX = 0;\n    float positionY = 0;\n    float positionZ = 0;\n    float orientationX = 1;\n    float orientationY = 0;\n    float orientationZ = 0;\n    double refDistance = 1;\n    double maxDistance = 10000;\n    double rolloffFactor = 1;\n    double coneInnerAngle = 360;\n    double coneOuterAngle = 360;\n    double coneOuterGain = 0;\n};",
@@ -15,7 +15,7 @@
     "type": "dictionary",
     "defined": {
       "spec": {
-        "title": "Web Audio API",
+        "title": "Web Audio API 1.1",
         "url": "https://www.w3.org/TR/webaudio/"
       },
       "fragment": "dictionary AudioNodeOptions {\n    unsigned long channelCount;\n    ChannelCountMode channelCountMode;\n    ChannelInterpretation channelInterpretation;\n};",

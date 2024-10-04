@@ -434,7 +434,7 @@
         "href": "https://w3c.github.io/mediasession/#mediasession"
       },
       "MediaMetadata": {
-        "fragment": "[Exposed=Window]\ninterface MediaMetadata {\n  constructor(optional MediaMetadataInit init = {});\n  attribute DOMString title;\n  attribute DOMString artist;\n  attribute DOMString album;\n  attribute FrozenArray<MediaImage> artwork;\n  [SameObject] readonly attribute FrozenArray<ChapterInformation> chapterInfo;\n};",
+        "fragment": "[Exposed=Window]\ninterface MediaMetadata {\n  constructor(optional MediaMetadataInit init = {});\n  attribute DOMString title;\n  attribute DOMString artist;\n  attribute DOMString album;\n  attribute FrozenArray<object> artwork;\n  [SameObject] readonly attribute FrozenArray<ChapterInformation> chapterInfo;\n};",
         "type": "interface",
         "name": "MediaMetadata",
         "inheritance": null,
@@ -528,7 +528,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "MediaImage"
+                  "idlType": "object"
                 }
               ]
             },
@@ -1155,7 +1155,6 @@
       ],
       "MediaMetadata": [
         "MediaMetadataInit",
-        "MediaImage",
         "ChapterInformation"
       ],
       "MediaMetadataInit": [

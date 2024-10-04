@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Web Audio API",
+      "title": "Web Audio API 1.1",
       "url": "https://www.w3.org/TR/webaudio/"
     },
     "fragment": "[Exposed=Window]\ninterface AudioBuffer {\n    constructor (AudioBufferOptions options);\n    readonly attribute float sampleRate;\n    readonly attribute unsigned long length;\n    readonly attribute double duration;\n    readonly attribute unsigned long numberOfChannels;\n    Float32Array getChannelData (unsigned long channel);\n    undefined copyFromChannel (Float32Array destination,\n                               unsigned long channelNumber,\n                               optional unsigned long bufferOffset = 0);\n    undefined copyToChannel (Float32Array source,\n                             unsigned long channelNumber,\n                             optional unsigned long bufferOffset = 0);\n};",
