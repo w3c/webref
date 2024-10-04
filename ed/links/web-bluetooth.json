@@ -99,6 +99,7 @@
       "https://w3c.github.io/webdriver-bidi/": {},
       "https://w3c.github.io/webdriver/": {},
       "https://webidl.spec.whatwg.org/": {},
+      "https://wicg.github.io/webhid/": {},
       "https://www.bluetooth.com/specifications/assigned-numbers/": {},
       "https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=286439": {},
       "https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=302735": {},
@@ -169,7 +170,11 @@
         "anchors": [
           "browsing-context",
           "navigable",
-          "fully-active"
+          "nav-top",
+          "fully-active",
+          "inclusive-descendant-navigables",
+          "nav-document",
+          "nav-window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -186,12 +191,14 @@
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
-          "concept-document-window"
+          "concept-document-window",
+          "window-navigable"
         ]
       },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
         "anchors": [
-          "navigator"
+          "navigator",
+          "associated-navigator"
         ]
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -208,24 +215,31 @@
           "perform-a-microtask-checkpoint",
           "environment-settings-object",
           "concept-settings-object-global",
-          "event-handler-idl-attributes"
+          "event-handler-idl-attributes",
+          "concept-relevant-realm"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "map-remove",
+          "list",
+          "map-getting-the-values",
           "abort-when",
           "if-aborted",
           "map-iterate",
           "string",
           "strictly-split",
           "ascii-lower-hex-digit",
+          "ordered-map",
           "tuple",
           "ordered-set",
-          "ordered-map",
           "map-exists",
-          "list",
           "list-append"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
+        "anchors": [
+          "sec-list-and-record-specification-type"
         ]
       },
       "https://tc39.es/ecma262/multipage/text-processing.html": {
@@ -285,6 +299,7 @@
       "https://w3c.github.io/webdriver-bidi/": {
         "anchors": [
           "navigable-id",
+          "get-a-navigable",
           "set-of-sessions-for-which-an-event-is-enabled",
           "emit-an-event"
         ]
@@ -296,7 +311,8 @@
           "dfn-success",
           "dfn-remote-end-steps",
           "dfn-try",
-          "dfn-local-ends"
+          "dfn-local-ends",
+          "dfn-invalid-argument"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -335,7 +351,13 @@
           "upon-fulfillment",
           "dfn-perform-steps-once-promise-is-settled",
           "invalidmodificationerror",
-          "idl-Uint8Array"
+          "idl-Uint8Array",
+          "idl-octet"
+        ]
+      },
+      "https://wicg.github.io/webhid/": {
+        "anchors": [
+          "dom-hidreportitem-strings"
         ]
       },
       "https://www.bluetooth.com/specifications/assigned-numbers/": {
