@@ -43,6 +43,7 @@
       "https://drafts.csswg.org/css-overflow-4/": {},
       "https://drafts.csswg.org/css-position-3/": {},
       "https://drafts.csswg.org/css-position-4/": {},
+      "https://drafts.csswg.org/css-pseudo-4/": {},
       "https://drafts.csswg.org/css-scoping/": {},
       "https://drafts.csswg.org/css-shadow-parts/": {},
       "https://drafts.csswg.org/css-sizing-3/": {},
@@ -140,6 +141,8 @@
       },
       "https://drafts.csswg.org/css-box-4/": {
         "anchors": [
+          "margin-edge",
+          "border-box",
           "propdef-margin-top",
           "propdef-margin-left",
           "propdef-margin-right",
@@ -150,20 +153,21 @@
       },
       "https://drafts.csswg.org/css-break-4/": {
         "anchors": [
-          "fragment"
+          "fragment",
+          "box-fragment"
         ]
       },
       "https://drafts.csswg.org/css-cascade-5/": {
         "anchors": [
           "reset-only-sub-property",
           "computed-value",
+          "used-value",
           "css-property",
           "cascade-origin-author",
           "cascade-origin-animation",
           "valdef-all-revert",
           "cascade-origin-user",
-          "valdef-all-revert-layer",
-          "used-value"
+          "valdef-all-revert-layer"
         ]
       },
       "https://drafts.csswg.org/css-cascade-6/": {
@@ -235,13 +239,12 @@
           "absolute-position",
           "propdef-position",
           "valdef-top-auto",
-          "propdef-inset",
+          "inset-modified-containing-block",
           "original-containing-block",
           "propdef-top",
           "propdef-left",
           "propdef-right",
           "propdef-bottom",
-          "inset-modified-containing-block",
           "propdef-inset-block-start",
           "propdef-inset-block-end"
         ]
@@ -252,11 +255,16 @@
           "in-the-same-top-layer"
         ]
       },
+      "https://drafts.csswg.org/css-pseudo-4/": {
+        "anchors": [
+          "tree-abiding"
+        ]
+      },
       "https://drafts.csswg.org/css-scoping-1/": {
         "anchors": [
+          "flat-tree",
           "css-tree-scoped-name",
-          "css-tree-scoped-reference",
-          "flat-tree"
+          "css-tree-scoped-reference"
         ]
       },
       "https://drafts.csswg.org/css-shadow-parts-1/": {
@@ -322,9 +330,9 @@
       },
       "https://drafts.csswg.org/css-writing-modes-4/": {
         "anchors": [
+          "writing-mode",
           "css-start",
           "css-end",
-          "writing-mode",
           "block-axis",
           "inline-axis",
           "block-start",

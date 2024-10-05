@@ -78,9 +78,9 @@
     {
       "name": "position-anchor",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-anchor",
-      "value": "auto | <anchor-element>",
+      "value": "auto | <anchor-name>",
       "initial": "auto",
-      "appliesTo": "absolutely positioned elements",
+      "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -89,10 +89,17 @@
       "values": [
         {
           "name": "auto",
-          "prose": "Its values are identical to the <anchor-element> term in anchor() and anchor-size(), except that the auto value is equivalent to omitting the <anchor-element> in anchor() (referring to the implicit anchor element, if one exists).",
+          "prose": "Use the implicit anchor element if it exists; otherwise the box has no default anchor element.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-anchor-auto",
           "type": "value",
           "value": "auto"
+        },
+        {
+          "name": "<anchor-name>",
+          "prose": "The target anchor element selected by the specified <anchor-name> is the box’s default anchor element.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-anchor-anchor-name",
+          "type": "value",
+          "value": "<anchor-name>"
         }
       ],
       "styleDeclaration": [
@@ -105,7 +112,7 @@
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-area",
       "value": "none | <position-area>",
       "initial": "none",
-      "appliesTo": "positioned elements with a default anchor element",
+      "appliesTo": "positioned boxes with a default anchor box",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -121,7 +128,7 @@
         },
         {
           "name": "<position-area>",
-          "prose": "If the element does not have a default anchor element, or is not an absolutely-positioned element, this value has no effect. Otherwise, it has the following effects: The property selects a region of the position-area grid, and makes that the element’s containing block. See § 3.1.1 Resolving <position-area>s for details. Note: This means that the inset properties specify offsets from the position-area, and some property values, like max-height: 100%, will be relative to the position-area as well. The normal value for the self-alignment properties behaves as either start, end, or anchor-center, depending on the positioning of the region, to give a good default alignment for the positioned element. Again, see § 3.1.1 Resolving <position-area>s for details. Any auto inset properties resolve to 0. The element is not considered to be in a legacy alignment mode in either axis.",
+          "prose": "If the box does not have a default anchor box, or is not an absolutely positioned box, this value has no effect. Otherwise, it has the following effects: The property selects a region of the position-area grid, and makes that the box’s containing block. See § 3.1.1 Resolving <position-area>s for details. Note: This means that the inset properties specify offsets from the position-area, and some property values, like max-height: 100%, will be relative to the position-area as well. The normal value for the self-alignment properties behaves as either start, end, or anchor-center, depending on the positioning of the region, to give a good default alignment for the positioned box. Again, see § 3.1.1 Resolving <position-area>s for details. Any auto inset properties resolve to 0. The box is not considered to be in a legacy alignment mode in either axis.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-position-area",
           "type": "value",
           "value": "<position-area>"
@@ -166,7 +173,7 @@
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned element has a default anchor element, then it is aligned so as to center itself over the default anchor element in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
@@ -183,7 +190,7 @@
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned element has a default anchor element, then it is aligned so as to center itself over the default anchor element in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
@@ -200,7 +207,7 @@
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned element has a default anchor element, then it is aligned so as to center itself over the default anchor element in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
@@ -217,7 +224,7 @@
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned element has a default anchor element, then it is aligned so as to center itself over the default anchor element in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
@@ -233,7 +240,7 @@
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-visibility",
       "value": "always | [ anchors-valid || anchors-visible || no-overflow ]",
       "initial": "anchors-visible",
-      "appliesTo": "absolutely-positioned elements",
+      "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -242,28 +249,28 @@
       "values": [
         {
           "name": "always",
-          "prose": "This property has no effect. (The element is displayed without regard for its anchors or its overflowing status.)",
+          "prose": "This property has no effect. (The box is displayed without regard for its anchors or its overflowing status.)",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-always",
           "type": "value",
           "value": "always"
         },
         {
           "name": "anchors-valid",
-          "prose": "If any of the element’s required anchor references do not resolve to a target anchor element, the element is strongly hidden. What is a required anchor reference? anchor() functions that don’t have a fallback value; the default anchor *sometimes*? Need more detail here. Any anchors are missing, or all anchors are missing? I can see use-cases for either, potentially. Do we want to make a decision here, or make it controllable somehow?",
+          "prose": "If any of the box’s required anchor references do not resolve to a target anchor element, the box is strongly hidden. What is a required anchor reference? anchor() functions that don’t have a fallback value; the default anchor *sometimes*? Need more detail here. Any anchors are missing, or all anchors are missing? I can see use-cases for either, potentially. Do we want to make a decision here, or make it controllable somehow?",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-valid",
           "type": "value",
           "value": "anchors-valid"
         },
         {
           "name": "anchors-visible",
-          "prose": "If the element has a default anchor element but the anchor element is clipped by intervening elements, this element is also strongly hidden.",
+          "prose": "If the box has a default anchor box but that anchor box is clipped by intervening boxes, this box is also strongly hidden.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-visible",
           "type": "value",
           "value": "anchors-visible"
         },
         {
           "name": "no-overflow",
-          "prose": "If the element overflows its inset-modified containing block, even after applying position-try, then the element is strongly hidden.",
+          "prose": "If the box overflows its inset-modified containing block even after applying position-try, then the box is strongly hidden.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-no-overflow",
           "type": "value",
           "value": "no-overflow"
@@ -357,7 +364,7 @@
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-fallbacks",
       "value": "none | [ [<dashed-ident> || <try-tactic>] | <'position-area'> ]#",
       "initial": "none",
-      "appliesTo": "absolutely-positioned elements",
+      "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -366,7 +373,7 @@
       "values": [
         {
           "name": "none",
-          "prose": "The property has no effect; the element’s position options list is empty.",
+          "prose": "The property has no effect; the box’s position options list is empty.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-none",
           "type": "value",
           "value": "none"
@@ -413,14 +420,14 @@
         },
         {
           "name": "<dashed-ident> || <try-tactic>",
-          "prose": "Combines the effects of the previous two options: if there is a @position-try rule with the given name, then applies its position option to the element’s base style, transforms it according to the specified <try-tactic>, and then adds the result to the element’s position options list. Otherwise, does nothing.",
+          "prose": "Combines the effects of the previous two options: if there is a @position-try rule with the given name, applies its position option to the base style, then transforms it according to the specified <try-tactic> and adds the result to the box’s position options list. Otherwise, does nothing.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-dashed-ident--try-tactic",
           "type": "value",
           "value": "<dashed-ident> || <try-tactic>"
         },
         {
           "name": "<'position-area'>",
-          "prose": "Automatically creates a position option composed solely of an position-area property with the given value.",
+          "prose": "Automatically creates a position option composed solely of a position-area property with the given value.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-position-area",
           "type": "value",
           "value": "<'position-area'>"
@@ -436,7 +443,7 @@
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-order",
       "value": "normal | <try-size>",
       "initial": "normal",
-      "appliesTo": "absolutely positioned elements",
+      "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -452,28 +459,28 @@
         },
         {
           "name": "most-width",
-          "prose": "For each entry in the position options list, apply a position option using that option to the element, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "prose": "For each entry in the position options list, apply that position option to the box, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-width",
           "type": "value",
           "value": "most-width"
         },
         {
           "name": "most-height",
-          "prose": "For each entry in the position options list, apply a position option using that option to the element, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "prose": "For each entry in the position options list, apply that position option to the box, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-height",
           "type": "value",
           "value": "most-height"
         },
         {
           "name": "most-block-size",
-          "prose": "For each entry in the position options list, apply a position option using that option to the element, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "prose": "For each entry in the position options list, apply that position option to the box, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-block-size",
           "type": "value",
           "value": "most-block-size"
         },
         {
           "name": "most-inline-size",
-          "prose": "For each entry in the position options list, apply a position option using that option to the element, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "prose": "For each entry in the position options list, apply that position option to the box, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-inline-size",
           "type": "value",
           "value": "most-inline-size"
@@ -504,7 +511,7 @@
   "atrules": [
     {
       "name": "@position-try",
-      "prose": "The @position-try rule defines a position option with a given name, specifying one or more sets of positioning properties that will be applied to an element via position-try-fallbacks,",
+      "prose": "The @position-try rule defines a position option with a given name, specifying one or more sets of positioning properties that can be applied to a box via position-try-fallbacks,",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#at-ruledef-position-try",
       "descriptors": [],
       "value": "@position-try <dashed-ident> { <declaration-list> }"
@@ -520,175 +527,175 @@
       "values": [
         {
           "name": "start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-start",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-end",
           "type": "value",
           "value": "end"
         },
         {
           "name": "self-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-start",
           "type": "value",
           "value": "self-start"
         },
         {
           "name": "self-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-end",
           "type": "value",
           "value": "self-end"
         },
         {
           "name": "top",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-top",
           "type": "value",
           "value": "top"
         },
         {
           "name": "bottom",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-bottom",
           "type": "value",
           "value": "bottom"
         },
         {
           "name": "left",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-left",
           "type": "value",
           "value": "left"
         },
         {
           "name": "right",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-right",
           "type": "value",
           "value": "right"
         },
         {
           "name": "y-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-y-start",
           "type": "value",
           "value": "y-start"
         },
         {
           "name": "y-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-y-end",
           "type": "value",
           "value": "y-end"
         },
         {
           "name": "y-self-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-y-self-start",
           "type": "value",
           "value": "y-self-start"
         },
         {
           "name": "y-self-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-y-self-end",
           "type": "value",
           "value": "y-self-end"
         },
         {
           "name": "x-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-x-start",
           "type": "value",
           "value": "x-start"
         },
         {
           "name": "x-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-x-end",
           "type": "value",
           "value": "x-end"
         },
         {
           "name": "x-self-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-x-self-start",
           "type": "value",
           "value": "x-self-start"
         },
         {
           "name": "x-self-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-x-self-end",
           "type": "value",
           "value": "x-self-end"
         },
         {
           "name": "block-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-block-start",
           "type": "value",
           "value": "block-start"
         },
         {
           "name": "block-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-block-end",
           "type": "value",
           "value": "block-end"
         },
         {
           "name": "block-self-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-block-self-start",
           "type": "value",
           "value": "block-self-start"
         },
         {
           "name": "block-self-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-block-self-end",
           "type": "value",
           "value": "block-self-end"
         },
         {
           "name": "inline-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-inline-start",
           "type": "value",
           "value": "inline-start"
         },
         {
           "name": "inline-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-inline-end",
           "type": "value",
           "value": "inline-end"
         },
         {
           "name": "inline-self-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-inline-self-start",
           "type": "value",
           "value": "inline-self-start"
         },
         {
           "name": "inline-self-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-inline-self-end",
           "type": "value",
           "value": "inline-self-end"
         },
         {
           "name": "center",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-center",
           "type": "value",
           "value": "center"
@@ -788,10 +795,10 @@
     },
     {
       "name": "anchor()",
-      "prose": "An absolutely-positioned element can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor elements. The anchor() function resolves to a <length>. It is only valid to be used in the inset properties.",
+      "prose": "An absolutely positioned box can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor boxes. The anchor() function resolves to a <length>. It is only valid to be used in the inset properties.",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor",
       "type": "function",
-      "value": "anchor( <anchor-element>? && <anchor-side>, <length-percentage>? )",
+      "value": "anchor( <anchor-name>? && <anchor-side>, <length-percentage>? )",
       "values": [
         {
           "name": "<dashed-ident>",
@@ -802,70 +809,70 @@
         },
         {
           "name": "inside",
-          "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. inside refers to the same side as the inset property (attaching the element to the \"inside\" of the anchor), while outside refers to the opposite.",
+          "prose": "Resolves to one of the anchor box’s sides, depending on which inset property it’s used in. inside refers to the same side as the inset property (attaching the positioned box to the \"inside\" of the anchor box), while outside refers to the opposite.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-inside",
           "type": "value",
           "value": "inside"
         },
         {
           "name": "outside",
-          "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. inside refers to the same side as the inset property (attaching the element to the \"inside\" of the anchor), while outside refers to the opposite.",
+          "prose": "Resolves to one of the anchor box’s sides, depending on which inset property it’s used in. inside refers to the same side as the inset property (attaching the positioned box to the \"inside\" of the anchor box), while outside refers to the opposite.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-outside",
           "type": "value",
           "value": "outside"
         },
         {
           "name": "top",
-          "prose": "Refers to the specified side of the anchor element.",
+          "prose": "Refers to the specified side of the anchor box.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-top",
           "type": "value",
           "value": "top"
         },
         {
           "name": "right",
-          "prose": "Refers to the specified side of the anchor element.",
+          "prose": "Refers to the specified side of the anchor box.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-right",
           "type": "value",
           "value": "right"
         },
         {
           "name": "bottom",
-          "prose": "Refers to the specified side of the anchor element.",
+          "prose": "Refers to the specified side of the anchor box.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-bottom",
           "type": "value",
           "value": "bottom"
         },
         {
           "name": "left",
-          "prose": "Refers to the specified side of the anchor element.",
+          "prose": "Refers to the specified side of the anchor box.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-left",
           "type": "value",
           "value": "left"
         },
         {
           "name": "start",
-          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "prose": "Refers to one of the sides of the anchor box in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned box (for self-start and self-end) or the positioned box’s containing block (for start and end).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-start",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
-          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "prose": "Refers to one of the sides of the anchor box in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned box (for self-start and self-end) or the positioned box’s containing block (for start and end).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-end",
           "type": "value",
           "value": "end"
         },
         {
           "name": "self-start",
-          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "prose": "Refers to one of the sides of the anchor box in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned box (for self-start and self-end) or the positioned box’s containing block (for start and end).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-self-start",
           "type": "value",
           "value": "self-start"
         },
         {
           "name": "self-end",
-          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "prose": "Refers to one of the sides of the anchor box in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned box (for self-start and self-end) or the positioned box’s containing block (for start and end).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-self-end",
           "type": "value",
           "value": "self-end"
@@ -887,8 +894,8 @@
       ]
     },
     {
-      "name": "<anchor-element>",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-element",
+      "name": "<anchor-name>",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-name",
       "type": "type",
       "value": "<dashed-ident>"
     },
@@ -900,10 +907,10 @@
     },
     {
       "name": "anchor-size()",
-      "prose": "An absolutely-positioned element can use the anchor-size() function in its sizing properties to refer to the size of one or more anchor elements. The anchor-size() function resolves to a <length>. It is only valid to be used in the sizing properties.",
+      "prose": "An absolutely positioned box can use the anchor-size() function in its sizing properties to refer to the size of one or more anchor boxes. The anchor-size() function resolves to a <length>. It is only valid to be used in the accepted @position-try properties.",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor-size",
       "type": "function",
-      "value": "anchor-size( [ <anchor-element> || <anchor-size> ]? , <length-percentage>? )",
+      "value": "anchor-size( [ <anchor-name> || <anchor-size> ]? , <length-percentage>? )",
       "values": [
         {
           "name": "width",
@@ -921,28 +928,28 @@
         },
         {
           "name": "block",
-          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-block",
           "type": "value",
           "value": "block"
         },
         {
           "name": "inline",
-          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-inline",
           "type": "value",
           "value": "inline"
         },
         {
           "name": "self-block",
-          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-self-block",
           "type": "value",
           "value": "self-block"
         },
         {
           "name": "self-inline",
-          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-self-inline",
           "type": "value",
           "value": "self-inline"

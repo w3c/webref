@@ -910,7 +910,7 @@
               "case": "CSSMediaRule",
               "html": "The result of concatenating the following:",
               "ignored": [
-                "The string \"@media\", followed by a single SPACE (U+0020). The result of performing serialize a media query list on rule’s media query list. A single SPACE (U+0020), followed by the string \"{\", i.e., LEFT CURLY BRACKET (U+007B), followed by a newline. The result of performing serialize a CSS rule on each rule in the rule’s cssRules list, separated by a newline and indented by two spaces. A newline, followed by the string \"}\", i.e., RIGHT CURLY BRACKET (U+007D)"
+                "The string \"@media\", followed by a single SPACE (U+0020). The result of performing serialize a media query list on rule’s media query list. A single SPACE (U+0020), followed by the string \"{\", i.e., LEFT CURLY BRACKET (U+007B), followed by a newline. The result of performing serialize a CSS rule on each rule in the rule’s cssRules list, filtering out empty strings, indenting each item with two spaces, all joined with newline. A newline, followed by the string \"}\", i.e., RIGHT CURLY BRACKET (U+007D)"
               ]
             },
             {

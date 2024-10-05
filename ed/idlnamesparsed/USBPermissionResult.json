@@ -6,7 +6,7 @@
       "title": "WebUSB API",
       "url": "https://wicg.github.io/webusb/"
     },
-    "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window)]\ninterface USBPermissionResult : PermissionStatus {\n  attribute FrozenArray<USBDevice> devices;\n};",
+    "fragment": "[Exposed=(Worker,Window)]\ninterface USBPermissionResult : PermissionStatus {\n  attribute FrozenArray<USBDevice> devices;\n};",
     "href": "https://wicg.github.io/webusb/#usbpermissionresult"
   },
   "extended": [],

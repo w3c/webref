@@ -6,7 +6,7 @@
       "title": "WebUSB API",
       "url": "https://wicg.github.io/webusb/"
     },
-    "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferPacket {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
+    "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferPacket {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
     "href": "https://wicg.github.io/webusb/#usbisochronousouttransferpacket"
   },
   "extended": [],

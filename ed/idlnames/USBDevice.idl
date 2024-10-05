@@ -1,5 +1,5 @@
 // Source: WebUSB API (https://wicg.github.io/webusb/)
-[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]
+[Exposed=(Worker,Window), SecureContext]
 interface USBDevice {
   readonly attribute octet usbVersionMajor;
   readonly attribute octet usbVersionMinor;

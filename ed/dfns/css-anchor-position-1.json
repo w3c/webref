@@ -67,6 +67,25 @@
       "linkingText": [
         "anchor element"
       ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "name",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#name",
+        "title": "Creating an Anchor: the anchor-name property",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "anchor-box",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-box",
+      "linkingText": [
+        "anchor box"
+      ],
       "localLinkingText": [
         "anchor"
       ],
@@ -300,25 +319,6 @@
       "definedIn": "table"
     },
     {
-      "id": "default-anchor-specifier",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#default-anchor-specifier",
-      "linkingText": [
-        "default anchor specifier"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "position-anchor",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#position-anchor",
-        "title": "Default Anchors: the position-anchor property",
-        "number": "2.4"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "default-anchor-element",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#default-anchor-element",
       "linkingText": [
@@ -349,6 +349,46 @@
         "position-anchor"
       ],
       "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-anchor",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#position-anchor",
+        "title": "Default Anchors: the position-anchor property",
+        "number": "2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-position-anchor-anchor-name",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-anchor-anchor-name",
+      "linkingText": [
+        "<anchor-name>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position-anchor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-anchor",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#position-anchor",
+        "title": "Default Anchors: the position-anchor property",
+        "number": "2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "default-anchor-box",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#default-anchor-box",
+      "linkingText": [
+        "default anchor box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "position-anchor",
@@ -1313,10 +1353,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "typedef-anchor-element",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-element",
+      "id": "typedef-anchor-name",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-name",
       "linkingText": [
-        "<anchor-element>"
+        "<anchor-name>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -1786,10 +1826,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "clipped-by-intervening-elements",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#clipped-by-intervening-elements",
+      "id": "clipped-by-intervening-boxes",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#clipped-by-intervening-boxes",
       "linkingText": [
-        "clipped by intervening elements"
+        "clipped by intervening boxes"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2490,10 +2530,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "determine-the-position-fallback-styles",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#determine-the-position-fallback-styles",
+      "id": "determine-position-fallback-styles",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#determine-position-fallback-styles",
       "linkingText": [
-        "determine the position fallback styles"
+        "determine position fallback styles"
       ],
       "localLinkingText": [],
       "type": "dfn",

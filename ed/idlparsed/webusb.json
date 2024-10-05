@@ -6,20 +6,7 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
-        "DedicatedWorker": [
-          "USBConnectionEvent",
-          "USBInTransferResult",
-          "USBOutTransferResult",
-          "USBIsochronousInTransferPacket",
-          "USBIsochronousInTransferResult",
-          "USBIsochronousOutTransferPacket",
-          "USBIsochronousOutTransferResult",
-          "USBConfiguration",
-          "USBInterface",
-          "USBAlternateInterface",
-          "USBEndpoint"
-        ],
-        "SharedWorker": [
+        "Worker": [
           "USBConnectionEvent",
           "USBInTransferResult",
           "USBOutTransferResult",
@@ -49,19 +36,13 @@
       "functions": {
         "Worker": [
           "USB",
-          "WorkerNavigator"
+          "WorkerNavigator",
+          "USBDevice",
+          "USBPermissionResult"
         ],
         "Window": [
           "USB",
           "Navigator",
-          "USBDevice",
-          "USBPermissionResult"
-        ],
-        "DedicatedWorker": [
-          "USBDevice",
-          "USBPermissionResult"
-        ],
-        "SharedWorker": [
           "USBDevice",
           "USBPermissionResult"
         ]
@@ -419,7 +400,7 @@
         "href": "https://wicg.github.io/webusb/#dictdef-usbconnectioneventinit"
       },
       "USBConnectionEvent": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBConnectionEvent : Event {\n  constructor(DOMString type, USBConnectionEventInit eventInitDict);\n  [SameObject] readonly attribute USBDevice device;\n};",
+        "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBConnectionEvent : Event {\n  constructor(DOMString type, USBConnectionEventInit eventInitDict);\n  [SameObject] readonly attribute USBDevice device;\n};",
         "type": "interface",
         "name": "USBConnectionEvent",
         "inheritance": "Event",
@@ -495,10 +476,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -542,7 +520,7 @@
         "href": "https://wicg.github.io/webusb/#enumdef-usbtransferstatus"
       },
       "USBInTransferResult": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBInTransferResult {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
+        "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBInTransferResult {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
         "type": "interface",
         "name": "USBInTransferResult",
         "inheritance": null,
@@ -627,10 +605,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -650,7 +625,7 @@
         "href": "https://wicg.github.io/webusb/#usbintransferresult"
       },
       "USBOutTransferResult": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBOutTransferResult {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
+        "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBOutTransferResult {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
         "type": "interface",
         "name": "USBOutTransferResult",
         "inheritance": null,
@@ -738,10 +713,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -761,7 +733,7 @@
         "href": "https://wicg.github.io/webusb/#usbouttransferresult"
       },
       "USBIsochronousInTransferPacket": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferPacket {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
+        "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferPacket {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
         "type": "interface",
         "name": "USBIsochronousInTransferPacket",
         "inheritance": null,
@@ -846,10 +818,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -869,7 +838,7 @@
         "href": "https://wicg.github.io/webusb/#usbisochronousintransferpacket"
       },
       "USBIsochronousInTransferResult": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferResult {\n  constructor(sequence<USBIsochronousInTransferPacket> packets, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute FrozenArray<USBIsochronousInTransferPacket> packets;\n};",
+        "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferResult {\n  constructor(sequence<USBIsochronousInTransferPacket> packets, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute FrozenArray<USBIsochronousInTransferPacket> packets;\n};",
         "type": "interface",
         "name": "USBIsochronousInTransferResult",
         "inheritance": null,
@@ -972,10 +941,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -995,7 +961,7 @@
         "href": "https://wicg.github.io/webusb/#usbisochronousintransferresult"
       },
       "USBIsochronousOutTransferPacket": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferPacket {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
+        "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferPacket {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
         "type": "interface",
         "name": "USBIsochronousOutTransferPacket",
         "inheritance": null,
@@ -1083,10 +1049,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -1106,7 +1069,7 @@
         "href": "https://wicg.github.io/webusb/#usbisochronousouttransferpacket"
       },
       "USBIsochronousOutTransferResult": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferResult {\n  constructor(sequence<USBIsochronousOutTransferPacket> packets);\n  readonly attribute FrozenArray<USBIsochronousOutTransferPacket> packets;\n};",
+        "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferResult {\n  constructor(sequence<USBIsochronousOutTransferPacket> packets);\n  readonly attribute FrozenArray<USBIsochronousOutTransferPacket> packets;\n};",
         "type": "interface",
         "name": "USBIsochronousOutTransferResult",
         "inheritance": null,
@@ -1177,10 +1140,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -1200,7 +1160,7 @@
         "href": "https://wicg.github.io/webusb/#usbisochronousouttransferresult"
       },
       "USBDevice": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface USBDevice {\n  readonly attribute octet usbVersionMajor;\n  readonly attribute octet usbVersionMinor;\n  readonly attribute octet usbVersionSubminor;\n  readonly attribute octet deviceClass;\n  readonly attribute octet deviceSubclass;\n  readonly attribute octet deviceProtocol;\n  readonly attribute unsigned short vendorId;\n  readonly attribute unsigned short productId;\n  readonly attribute octet deviceVersionMajor;\n  readonly attribute octet deviceVersionMinor;\n  readonly attribute octet deviceVersionSubminor;\n  readonly attribute DOMString? manufacturerName;\n  readonly attribute DOMString? productName;\n  readonly attribute DOMString? serialNumber;\n  readonly attribute USBConfiguration? configuration;\n  readonly attribute FrozenArray<USBConfiguration> configurations;\n  readonly attribute boolean opened;\n  Promise<undefined> open();\n  Promise<undefined> close();\n  Promise<undefined> forget();\n  Promise<undefined> selectConfiguration(octet configurationValue);\n  Promise<undefined> claimInterface(octet interfaceNumber);\n  Promise<undefined> releaseInterface(octet interfaceNumber);\n  Promise<undefined> selectAlternateInterface(octet interfaceNumber, octet alternateSetting);\n  Promise<USBInTransferResult> controlTransferIn(USBControlTransferParameters setup, unsigned short length);\n  Promise<USBOutTransferResult> controlTransferOut(USBControlTransferParameters setup, optional BufferSource data);\n  Promise<undefined> clearHalt(USBDirection direction, octet endpointNumber);\n  Promise<USBInTransferResult> transferIn(octet endpointNumber, unsigned long length);\n  Promise<USBOutTransferResult> transferOut(octet endpointNumber, BufferSource data);\n  Promise<USBIsochronousInTransferResult> isochronousTransferIn(octet endpointNumber, sequence<unsigned long> packetLengths);\n  Promise<USBIsochronousOutTransferResult> isochronousTransferOut(octet endpointNumber, BufferSource data, sequence<unsigned long> packetLengths);\n  Promise<undefined> reset();\n};",
+        "fragment": "[Exposed=(Worker,Window), SecureContext]\ninterface USBDevice {\n  readonly attribute octet usbVersionMajor;\n  readonly attribute octet usbVersionMinor;\n  readonly attribute octet usbVersionSubminor;\n  readonly attribute octet deviceClass;\n  readonly attribute octet deviceSubclass;\n  readonly attribute octet deviceProtocol;\n  readonly attribute unsigned short vendorId;\n  readonly attribute unsigned short productId;\n  readonly attribute octet deviceVersionMajor;\n  readonly attribute octet deviceVersionMinor;\n  readonly attribute octet deviceVersionSubminor;\n  readonly attribute DOMString? manufacturerName;\n  readonly attribute DOMString? productName;\n  readonly attribute DOMString? serialNumber;\n  readonly attribute USBConfiguration? configuration;\n  readonly attribute FrozenArray<USBConfiguration> configurations;\n  readonly attribute boolean opened;\n  Promise<undefined> open();\n  Promise<undefined> close();\n  Promise<undefined> forget();\n  Promise<undefined> selectConfiguration(octet configurationValue);\n  Promise<undefined> claimInterface(octet interfaceNumber);\n  Promise<undefined> releaseInterface(octet interfaceNumber);\n  Promise<undefined> selectAlternateInterface(octet interfaceNumber, octet alternateSetting);\n  Promise<USBInTransferResult> controlTransferIn(USBControlTransferParameters setup, unsigned short length);\n  Promise<USBOutTransferResult> controlTransferOut(USBControlTransferParameters setup, optional BufferSource data);\n  Promise<undefined> clearHalt(USBDirection direction, octet endpointNumber);\n  Promise<USBInTransferResult> transferIn(octet endpointNumber, unsigned long length);\n  Promise<USBOutTransferResult> transferOut(octet endpointNumber, BufferSource data);\n  Promise<USBIsochronousInTransferResult> isochronousTransferIn(octet endpointNumber, sequence<unsigned long> packetLengths);\n  Promise<USBIsochronousOutTransferResult> isochronousTransferOut(octet endpointNumber, BufferSource data, sequence<unsigned long> packetLengths);\n  Promise<undefined> reset();\n};",
         "type": "interface",
         "name": "USBDevice",
         "inheritance": null,
@@ -2219,10 +2179,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -2386,7 +2343,7 @@
         "href": "https://wicg.github.io/webusb/#dictdef-usbcontroltransferparameters"
       },
       "USBConfiguration": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBConfiguration {\n  constructor(USBDevice device, octet configurationValue);\n  readonly attribute octet configurationValue;\n  readonly attribute DOMString? configurationName;\n  readonly attribute FrozenArray<USBInterface> interfaces;\n};",
+        "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBConfiguration {\n  constructor(USBDevice device, octet configurationValue);\n  readonly attribute octet configurationValue;\n  readonly attribute DOMString? configurationName;\n  readonly attribute FrozenArray<USBInterface> interfaces;\n};",
         "type": "interface",
         "name": "USBConfiguration",
         "inheritance": null,
@@ -2496,10 +2453,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -2519,7 +2473,7 @@
         "href": "https://wicg.github.io/webusb/#usbconfiguration"
       },
       "USBInterface": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBInterface {\n  constructor(USBConfiguration configuration, octet interfaceNumber);\n  readonly attribute octet interfaceNumber;\n  readonly attribute USBAlternateInterface alternate;\n  readonly attribute FrozenArray<USBAlternateInterface> alternates;\n  readonly attribute boolean claimed;\n};",
+        "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBInterface {\n  constructor(USBConfiguration configuration, octet interfaceNumber);\n  readonly attribute octet interfaceNumber;\n  readonly attribute USBAlternateInterface alternate;\n  readonly attribute FrozenArray<USBAlternateInterface> alternates;\n  readonly attribute boolean claimed;\n};",
         "type": "interface",
         "name": "USBInterface",
         "inheritance": null,
@@ -2645,10 +2599,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -2668,7 +2619,7 @@
         "href": "https://wicg.github.io/webusb/#usbinterface"
       },
       "USBAlternateInterface": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBAlternateInterface {\n  constructor(USBInterface deviceInterface, octet alternateSetting);\n  readonly attribute octet alternateSetting;\n  readonly attribute octet interfaceClass;\n  readonly attribute octet interfaceSubclass;\n  readonly attribute octet interfaceProtocol;\n  readonly attribute DOMString? interfaceName;\n  readonly attribute FrozenArray<USBEndpoint> endpoints;\n};",
+        "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBAlternateInterface {\n  constructor(USBInterface deviceInterface, octet alternateSetting);\n  readonly attribute octet alternateSetting;\n  readonly attribute octet interfaceClass;\n  readonly attribute octet interfaceSubclass;\n  readonly attribute octet interfaceProtocol;\n  readonly attribute DOMString? interfaceName;\n  readonly attribute FrozenArray<USBEndpoint> endpoints;\n};",
         "type": "interface",
         "name": "USBAlternateInterface",
         "inheritance": null,
@@ -2826,10 +2777,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -2892,7 +2840,7 @@
         "href": "https://wicg.github.io/webusb/#enumdef-usbendpointtype"
       },
       "USBEndpoint": {
-        "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBEndpoint {\n  constructor(USBAlternateInterface alternate, octet endpointNumber, USBDirection direction);\n  readonly attribute octet endpointNumber;\n  readonly attribute USBDirection direction;\n  readonly attribute USBEndpointType type;\n  readonly attribute unsigned long packetSize;\n};",
+        "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBEndpoint {\n  constructor(USBAlternateInterface alternate, octet endpointNumber, USBDirection direction);\n  readonly attribute octet endpointNumber;\n  readonly attribute USBDirection direction;\n  readonly attribute USBEndpointType type;\n  readonly attribute unsigned long packetSize;\n};",
         "type": "interface",
         "name": "USBEndpoint",
         "inheritance": null,
@@ -3025,10 +2973,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -3266,7 +3211,7 @@
         "href": "https://wicg.github.io/webusb/#dictdef-usbpermissionstorage"
       },
       "USBPermissionResult": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window)]\ninterface USBPermissionResult : PermissionStatus {\n  attribute FrozenArray<USBDevice> devices;\n};",
+        "fragment": "[Exposed=(Worker,Window)]\ninterface USBPermissionResult : PermissionStatus {\n  attribute FrozenArray<USBDevice> devices;\n};",
         "type": "interface",
         "name": "USBPermissionResult",
         "inheritance": "PermissionStatus",
@@ -3305,10 +3250,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -3430,41 +3372,24 @@
     "exposed": {
       "Worker": [
         "USB",
-        "WorkerNavigator"
+        "WorkerNavigator",
+        "USBConnectionEvent",
+        "USBInTransferResult",
+        "USBOutTransferResult",
+        "USBIsochronousInTransferPacket",
+        "USBIsochronousInTransferResult",
+        "USBIsochronousOutTransferPacket",
+        "USBIsochronousOutTransferResult",
+        "USBDevice",
+        "USBConfiguration",
+        "USBInterface",
+        "USBAlternateInterface",
+        "USBEndpoint",
+        "USBPermissionResult"
       ],
       "Window": [
         "USB",
         "Navigator",
-        "USBConnectionEvent",
-        "USBInTransferResult",
-        "USBOutTransferResult",
-        "USBIsochronousInTransferPacket",
-        "USBIsochronousInTransferResult",
-        "USBIsochronousOutTransferPacket",
-        "USBIsochronousOutTransferResult",
-        "USBDevice",
-        "USBConfiguration",
-        "USBInterface",
-        "USBAlternateInterface",
-        "USBEndpoint",
-        "USBPermissionResult"
-      ],
-      "DedicatedWorker": [
-        "USBConnectionEvent",
-        "USBInTransferResult",
-        "USBOutTransferResult",
-        "USBIsochronousInTransferPacket",
-        "USBIsochronousInTransferResult",
-        "USBIsochronousOutTransferPacket",
-        "USBIsochronousOutTransferResult",
-        "USBDevice",
-        "USBConfiguration",
-        "USBInterface",
-        "USBAlternateInterface",
-        "USBEndpoint",
-        "USBPermissionResult"
-      ],
-      "SharedWorker": [
         "USBConnectionEvent",
         "USBInTransferResult",
         "USBOutTransferResult",
