@@ -1,0 +1,386 @@
+{
+  "spec": {
+    "title": "AT Driver",
+    "url": "https://w3c.github.io/at-driver/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/at-driver/#title",
+      "level": 1,
+      "title": "AT Driver"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/at-driver/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/at-driver/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/at-driver/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/at-driver/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "explainer",
+      "href": "https://w3c.github.io/at-driver/#explainer",
+      "level": 2,
+      "title": "Explainer",
+      "number": "2"
+    },
+    {
+      "id": "explainer-example",
+      "href": "https://w3c.github.io/at-driver/#explainer-example",
+      "level": 3,
+      "title": "Example",
+      "number": "2.1"
+    },
+    {
+      "id": "infra",
+      "href": "https://w3c.github.io/at-driver/#infra",
+      "level": 2,
+      "title": "Infrastructure",
+      "number": "3"
+    },
+    {
+      "id": "nodes",
+      "href": "https://w3c.github.io/at-driver/#nodes",
+      "level": 2,
+      "title": "Nodes",
+      "number": "4"
+    },
+    {
+      "id": "protocol",
+      "href": "https://w3c.github.io/at-driver/#protocol",
+      "level": 2,
+      "title": "Protocol",
+      "number": "5"
+    },
+    {
+      "id": "protocol-definition",
+      "href": "https://w3c.github.io/at-driver/#protocol-definition",
+      "level": 3,
+      "title": "Definition",
+      "number": "5.1"
+    },
+    {
+      "id": "protocol-capabilities",
+      "href": "https://w3c.github.io/at-driver/#protocol-capabilities",
+      "level": 3,
+      "title": "Capabilities",
+      "number": "5.2"
+    },
+    {
+      "id": "protocol-session",
+      "href": "https://w3c.github.io/at-driver/#protocol-session",
+      "level": 3,
+      "title": "Session",
+      "number": "5.3"
+    },
+    {
+      "id": "protocol-modules",
+      "href": "https://w3c.github.io/at-driver/#protocol-modules",
+      "level": 3,
+      "title": "Modules",
+      "number": "5.4"
+    },
+    {
+      "id": "protocol-commands",
+      "href": "https://w3c.github.io/at-driver/#protocol-commands",
+      "level": 3,
+      "title": "Commands",
+      "number": "5.5"
+    },
+    {
+      "id": "protocol-events",
+      "href": "https://w3c.github.io/at-driver/#protocol-events",
+      "level": 3,
+      "title": "Events",
+      "number": "5.6"
+    },
+    {
+      "id": "protocol-errors",
+      "href": "https://w3c.github.io/at-driver/#protocol-errors",
+      "level": 3,
+      "title": "Errors",
+      "number": "5.7"
+    },
+    {
+      "id": "security-checks",
+      "href": "https://w3c.github.io/at-driver/#security-checks",
+      "level": 3,
+      "title": "Security checks",
+      "number": "5.8"
+    },
+    {
+      "id": "transport",
+      "href": "https://w3c.github.io/at-driver/#transport",
+      "level": 2,
+      "title": "Transport",
+      "number": "6"
+    },
+    {
+      "id": "transport-establishing",
+      "href": "https://w3c.github.io/at-driver/#transport-establishing",
+      "level": 3,
+      "title": "Establishing a Connection",
+      "number": "6.1"
+    },
+    {
+      "id": "modules",
+      "href": "https://w3c.github.io/at-driver/#modules",
+      "level": 2,
+      "title": "Modules",
+      "number": "7"
+    },
+    {
+      "id": "module-session",
+      "href": "https://w3c.github.io/at-driver/#module-session",
+      "level": 3,
+      "title": "The session Module",
+      "number": "7.1"
+    },
+    {
+      "id": "module-session-definition",
+      "href": "https://w3c.github.io/at-driver/#module-session-definition",
+      "level": 4,
+      "title": "Definition",
+      "number": "7.1.1"
+    },
+    {
+      "id": "module-session-types",
+      "href": "https://w3c.github.io/at-driver/#module-session-types",
+      "level": 4,
+      "title": "Types",
+      "number": "7.1.2"
+    },
+    {
+      "id": "module-session-CapabilitiesRequest",
+      "href": "https://w3c.github.io/at-driver/#module-session-CapabilitiesRequest",
+      "level": 5,
+      "title": "The session.CapabilitiesRequest Type",
+      "number": "7.1.2.1"
+    },
+    {
+      "id": "module-session-commands",
+      "href": "https://w3c.github.io/at-driver/#module-session-commands",
+      "level": 4,
+      "title": "Commands",
+      "number": "7.1.3"
+    },
+    {
+      "id": "module-session-new",
+      "href": "https://w3c.github.io/at-driver/#module-session-new",
+      "level": 5,
+      "title": "The session.new Command",
+      "number": "7.1.3.1"
+    },
+    {
+      "id": "module-settings",
+      "href": "https://w3c.github.io/at-driver/#module-settings",
+      "level": 3,
+      "title": "The settings Module",
+      "number": "7.2"
+    },
+    {
+      "id": "module-settings-definition",
+      "href": "https://w3c.github.io/at-driver/#module-settings-definition",
+      "level": 4,
+      "title": "Definition",
+      "number": "7.2.1"
+    },
+    {
+      "id": "module-settings-types",
+      "href": "https://w3c.github.io/at-driver/#module-settings-types",
+      "level": 4,
+      "title": "Types",
+      "number": "7.2.2"
+    },
+    {
+      "id": "module-settings-get-settings-result",
+      "href": "https://w3c.github.io/at-driver/#module-settings-get-settings-result",
+      "level": 5,
+      "title": "The SettingsGetSettingsResult type",
+      "number": "7.2.2.1"
+    },
+    {
+      "id": "module-settings-commands",
+      "href": "https://w3c.github.io/at-driver/#module-settings-commands",
+      "level": 4,
+      "title": "Commands",
+      "number": "7.2.3"
+    },
+    {
+      "id": "command-settings-set-settings",
+      "href": "https://w3c.github.io/at-driver/#command-settings-set-settings",
+      "level": 5,
+      "title": "The settings.setSettings Command",
+      "number": "7.2.3.1"
+    },
+    {
+      "id": "command-settings-get-settings",
+      "href": "https://w3c.github.io/at-driver/#command-settings-get-settings",
+      "level": 5,
+      "title": "The settings.getSettings Command",
+      "number": "7.2.3.2"
+    },
+    {
+      "id": "command-settings-get-supported-settings",
+      "href": "https://w3c.github.io/at-driver/#command-settings-get-supported-settings",
+      "level": 5,
+      "title": "The settings.getSupportedSettings Command",
+      "number": "7.2.3.3"
+    },
+    {
+      "id": "module-settings-events",
+      "href": "https://w3c.github.io/at-driver/#module-settings-events",
+      "level": 4,
+      "title": "Events",
+      "number": "7.2.4"
+    },
+    {
+      "id": "module-interaction",
+      "href": "https://w3c.github.io/at-driver/#module-interaction",
+      "level": 3,
+      "title": "The Interaction Module",
+      "number": "7.3"
+    },
+    {
+      "id": "module-interaction-definition",
+      "href": "https://w3c.github.io/at-driver/#module-interaction-definition",
+      "level": 4,
+      "title": "Definition",
+      "number": "7.3.1"
+    },
+    {
+      "id": "module-interaction-types",
+      "href": "https://w3c.github.io/at-driver/#module-interaction-types",
+      "level": 4,
+      "title": "Types",
+      "number": "7.3.2"
+    },
+    {
+      "id": "module-interaction-commands",
+      "href": "https://w3c.github.io/at-driver/#module-interaction-commands",
+      "level": 4,
+      "title": "Commands",
+      "number": "7.3.3"
+    },
+    {
+      "id": "module-interaction-userintent",
+      "href": "https://w3c.github.io/at-driver/#module-interaction-userintent",
+      "level": 5,
+      "title": "The interaction.userIntent Command",
+      "number": "7.3.3.1"
+    },
+    {
+      "id": "module-interaction-events",
+      "href": "https://w3c.github.io/at-driver/#module-interaction-events",
+      "level": 4,
+      "title": "Events",
+      "number": "7.3.4"
+    },
+    {
+      "id": "event-interaction-capturedOutput",
+      "href": "https://w3c.github.io/at-driver/#event-interaction-capturedOutput",
+      "level": 5,
+      "title": "The interaction.capturedOutput Event",
+      "number": "7.3.4.1"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/at-driver/#privacy",
+      "level": 2,
+      "title": "Privacy",
+      "number": "8"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/at-driver/#security",
+      "level": 2,
+      "title": "Security",
+      "number": "9"
+    },
+    {
+      "id": "schemas",
+      "href": "https://w3c.github.io/at-driver/#schemas",
+      "level": 2,
+      "title": "Schemas",
+      "number": "A"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/at-driver/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/at-driver/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/at-driver/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/at-driver/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/at-driver/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/at-driver/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/at-driver/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/at-driver/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/at-driver/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/at-driver/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

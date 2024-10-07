@@ -1,0 +1,710 @@
+{
+  "spec": {
+    "title": "AT Driver",
+    "url": "https://w3c.github.io/at-driver/"
+  },
+  "algorithms": [
+    {
+      "name": "try",
+      "href": "https://w3c.github.io/at-driver/#try",
+      "html": "When calling a fallible algorithm, the construct \"Let <var>result</var> be the result of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"try|trying\" data-noexport=\"\" id=\"try\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">trying</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> to call <var>algorithm</var>\" is equivalent to:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>temp</var> be the result of calling <var>algorithm</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>temp</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error①\">error</a>, then return <var>temp</var>. Otherwise, let <var>result</var> be <var>temp</var>’s data field.</p>"
+        }
+      ]
+    },
+    {
+      "name": "process capabilities",
+      "href": "https://w3c.github.io/at-driver/#process-capabilities",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-capabilities\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process capabilities</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with argument <var>parameters</var>, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end\" id=\"ref-for-remote-end⑥\">remote end</a> must:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>parameters</var>[\"<code>capabilities</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a> and <var>parameters</var>[\"<code>capabilities</code>\"][\"<code>alwaysMatch</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>required capabilities</var> be <var>parameters</var>[\"<code>capabilities</code>\"][\"<code>alwaysMatch</code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>required capabilities</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#match-capabilities\" id=\"ref-for-match-capabilities\">match capabilities</a> given <var>required capabilities</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "match capabilities",
+      "href": "https://w3c.github.io/at-driver/#match-capabilities",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"match-capabilities\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">match capabilities</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>requested capabilities</var>, the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end\" id=\"ref-for-remote-end⑦\">remote end</a> must:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>matched capabilities</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①\">map</a> with the following entries:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>atName</code>\"\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase\">ASCII lowercase</a> name of the assistive technology as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a>.</p>\n       </dd><dt data-md=\"\">\"<code>atVersion</code>\"\n       </dt><dd data-md=\"\">\n        <p>The assistive technology version, as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">string</a>.</p>\n       </dd><dt data-md=\"\">\"<code>platformName</code>\"\n       </dt><dd data-md=\"\">\n        <p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase①\">ASCII lowercase</a> name of the current platform as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a>.</p>\n      </dd></dl>"
+        },
+        {
+          "html": "<p>Optionally add <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#extension-capabilities\" id=\"ref-for-extension-capabilities\">extension capabilities</a> as entries to <var>matched capabilities</var>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>key</var> → <var>value</var> of <var>requested capabilities</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>match value</var> be <var>value</var>.</p>"
+            },
+            {
+              "html": "<p>Switch on <var>key</var>:</p>\n        <dl>\n         <dt data-md=\"\">\"<code>atName</code>\"\n         </dt><dd data-md=\"\">\n          <p>If <var>value</var> is not equal to <var>matched capabilities</var>[\"<code>atName</code>\"], then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success①\">success</a> with data null.</p>\n         </dd><dt data-md=\"\">\"<code>atVersion</code>\"\n         </dt><dd data-md=\"\">\n          <p>Compare <var>value</var> to <var>matched capabilities</var>[\"<code>browserVersion</code>\"] using an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> comparison algorithm. The comparison is to accept a value that places constraints on the version using the \"<code>&lt;</code>\", \"<code>&lt;=</code>\", \"<code>&gt;</code>\", and \"<code>&gt;=</code>\" operators.</p>\n         </dd><dt data-md=\"\">\"<code>platformName</code>\"\n         </dt><dd data-md=\"\">\n          <p>If <var>value</var> is not equal to <var>matched capabilities</var>[\"<code>platformName</code>\"], then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success②\">success</a> with data null.</p>\n         </dd><dt data-md=\"\">Otherwise\n         </dt><dd data-md=\"\">\n          <p>If <var>key</var> is the key of an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#extension-capabilities\" id=\"ref-for-extension-capabilities①\">extension capability</a>, set <var>match value</var> to the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#try\" id=\"ref-for-try\">trying</a> implementation-specific steps to match on <var>key</var> with <var>value</var>. If the match is not successful, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success③\">success</a> with data null.</p>\n        </dd></dl>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>matched capabilities</var>[<var>key</var>] to <var>match value</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success④\">success</a> with data <var>matched capabilities</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "check that keyboard interaction can be simulated",
+      "href": "https://w3c.github.io/at-driver/#check-that-keyboard-interaction-can-be-simulated",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-that-keyboard-interaction-can-be-simulated\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check that keyboard interaction can be simulated</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the remote end cannot simulate keyboard interaction for any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> reason, then return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code\" id=\"ref-for-error-code①\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-cannot-simulate-keyboard-interaction\" id=\"ref-for-error-code-cannot-simulate-keyboard-interaction\">cannot simulate keyboard interaction</a>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success⑥\">success</a> with data null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "check that one of the expected applications has focus",
+      "href": "https://w3c.github.io/at-driver/#check-that-one-of-the-expected-applications-has-focus",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-that-one-of-the-expected-applications-has-focus\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check that one of the expected applications has focus</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the application that currently has OS focus (and so could act on simulated key presses from this API) is not one of the expected applications, then return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code\" id=\"ref-for-error-code②\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-invalid-os-focus-state\" id=\"ref-for-error-code-invalid-os-focus-state\">invalid OS focus state</a>. Which applications are expected is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success⑦\">success</a> with data null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "should be withheld",
+      "href": "https://w3c.github.io/at-driver/#should-be-withheld",
+      "html": "To determine whether a string <var>text</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"should-be-withheld\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">should be withheld</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end\" id=\"ref-for-remote-end①⑥\">remote end</a> determines that it is unsafe to expose <var>text</var> to an external process for any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> reason:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When a client <a href=\"https://tools.ietf.org/html/rfc6455#section-4.1\">establishes a WebSocket connection</a> <var>connection</var> by connecting to one of the set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-active-listeners\" id=\"ref-for-remote-end-active-listeners\">active listeners</a> <var>listener</var>, the implementation must proceed according to the <a href=\"https://tools.ietf.org/html/rfc6455#section-4.2\">WebSocket server-side requirements</a>, with the following steps run when deciding whether to accept the incoming connection:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>resource name</var> be the resource name from <a href=\"https://tools.ietf.org/html/rfc6455#section-4.2.1\">reading the client’s opening handshake</a>. If <var>resource name</var> is not \"<code>/session</code>\", then stop running these steps and act as if the requested service is not available.</p>"
+        },
+        {
+          "html": "<p>Run any other <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> steps to decide if the connection should be accepted, and if it is not stop running these steps and act as if the requested service is not available.</p>"
+        },
+        {
+          "html": "<p>Add the connection to the set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-websocket-connections-not-associated-with-a-session\" id=\"ref-for-remote-end-websocket-connections-not-associated-with-a-session\">WebSocket connections not associated with a session</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "start listening for a WebSocket connection",
+      "href": "https://w3c.github.io/at-driver/#start-listening-for-a-websocket-connection",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"start-listening-for-a-websocket-connection\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start listening for a WebSocket connection</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>listener</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#websocket-listener\" id=\"ref-for-websocket-listener③\">WebSocket listener</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#websocket-listener-host\" id=\"ref-for-websocket-listener-host\">host</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#websocket-listener-port\" id=\"ref-for-websocket-listener-port\">port</a>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#websocket-listener-secure-flag\" id=\"ref-for-websocket-listener-secure-flag①\">secure flag</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>listener</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end\" id=\"ref-for-remote-end②②\">remote end</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-active-listeners\" id=\"ref-for-remote-end-active-listeners①\">active listeners</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>listener</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "handle an incoming message",
+      "href": "https://w3c.github.io/at-driver/#handle-an-incoming-message",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-an-incoming-message\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle an incoming message</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#websocket-connection\" id=\"ref-for-websocket-connection④\">WebSocket connection</a> <var>connection</var>, type <var>type</var> and data <var>data</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>type</var> is not <a href=\"https://tools.ietf.org/html/rfc6455#section-5.2\">text</a>:",
+          "rationale": "send",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#send-an-error-response\" id=\"ref-for-send-an-error-response\">Send an error response</a> given <var>connection</var>, null, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-invalid-argument\" id=\"ref-for-error-code-invalid-argument\">invalid argument</a>.</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>data</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string\">scalar value string</a>, because the <a href=\"https://tools.ietf.org/html/rfc6455#section-8.1\">WebSocket handling errors in UTF-8-encoded data</a> would already have <a href=\"https://tools.ietf.org/html/rfc6455#section-7.1.7\">failed the WebSocket connection</a> otherwise.</p>"
+        },
+        {
+          "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session\" id=\"ref-for-session①②\">session</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session-associated-with-connection\" id=\"ref-for-session-associated-with-connection\">associated with connection</a> <var>connection</var>, let <var>session</var> be that session. Otherwise if <var>connection</var> is in the set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-websocket-connections-not-associated-with-a-session\" id=\"ref-for-remote-end-websocket-connections-not-associated-with-a-session①\">WebSocket connections not associated with a session</a>, let <var>session</var> be null. Otherwise, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>parsed</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#parse-a-json-string-to-an-infra-value\" id=\"ref-for-parse-a-json-string-to-an-infra-value\">parsing JSON into Infra values</a> given <var>data</var>. If this throws an exception, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#send-an-error-response\" id=\"ref-for-send-an-error-response①\">send an error response</a> given <var>connection</var>, null, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-invalid-argument\" id=\"ref-for-error-code-invalid-argument①\">invalid argument</a>, and finally return.</p>"
+        },
+        {
+          "html": "Match <var>parsed</var> against the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-definition\" id=\"ref-for-remote-end-definition④\">remote end definition</a>. If this results in a match:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>matched</var> be the map representing the matched data.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>matched</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">contains</a> \"<code>id</code>\", \"<code>method</code>\", and \"<code>params</code>\".</p>"
+            },
+            {
+              "html": "<p>Let <var>command id</var> be <var>matched</var>[\"<code>id</code>\"].</p>"
+            },
+            {
+              "html": "<p>Let <var>method</var> be <var>matched</var>[\"<code>method</code>\"].</p>"
+            },
+            {
+              "html": "<p>Let <var>command</var> be the command with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#command-name\" id=\"ref-for-command-name②\">command name</a> <var>method</var>.</p>"
+            },
+            {
+              "html": "If <var>session</var> is null and <var>command</var> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#static-command\" id=\"ref-for-static-command\">static command</a>:",
+              "rationale": "send",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#send-an-error-response\" id=\"ref-for-send-an-error-response②\">Send an error response</a> given <var>connection</var>, <var>command id</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-invalid-session-id\" id=\"ref-for-error-code-invalid-session-id\">invalid session id</a>.</p>"
+                },
+                {
+                  "html": "<p>Return.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>result</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-steps\" id=\"ref-for-remote-end-steps\">remote end steps</a> for <var>command</var> given <var>session</var> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#command-parameters\" id=\"ref-for-command-parameters①\">command parameters</a> <var>matched</var>[\"<code>params</code>\"].</p>"
+                },
+                {
+                  "html": "If <var>result</var> is an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error⑤\">error</a>:",
+                  "rationale": "send",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#send-an-error-response\" id=\"ref-for-send-an-error-response③\">Send an error response</a> given <var>connection</var>, <var>command id</var>, and <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code\" id=\"ref-for-error-code③\">error code</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Return.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>value</var> be <var>result</var>’s data.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>value</var> matches the definition for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#result-type\" id=\"ref-for-result-type①\">result type</a> corresponding to the command with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#command-name\" id=\"ref-for-command-name③\">command name</a> <var>method</var>.</p>"
+                },
+                {
+                  "html": "If <var>method</var> is \"<code>session.new</code>\":",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>session</var> be the entry in the list of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-active-sessions\" id=\"ref-for-remote-end-active-sessions①\">active sessions</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session-session-id\" id=\"ref-for-session-session-id\">session ID</a> is equal to the \"<code>sessionId</code>\" property of <var>value</var>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>connection</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session-session-websocket-connections\" id=\"ref-for-session-session-websocket-connections①\">session WebSocket connections</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Remove <var>connection</var> from the set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-websocket-connections-not-associated-with-a-session\" id=\"ref-for-remote-end-websocket-connections-not-associated-with-a-session②\">WebSocket connections not associated with a session</a>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>response</var> be a new map matching the <code>CommandResponse</code> production in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#local-end-definition\" id=\"ref-for-local-end-definition④\">local end definition</a> with the <code>id</code> field set to <var>command id</var> and the <code>value</code> field set to <var>value</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>serialized</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-json-bytes\" id=\"ref-for-serialize-an-infra-value-to-json-bytes\">serialize an infra value to JSON bytes</a> given <var>response</var>.</p>"
+                },
+                {
+                  "html": "<p><a href=\"https://tools.ietf.org/html/rfc6455#section-6.1\">Send a WebSocket message</a> comprised of <var>serialized</var> over <var>connection</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>command id</var> be null.</p>"
+            },
+            {
+              "html": "<p>If <var>parsed</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②\">map</a> and <var>parsed</var>[\"<code>id</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a> and is an integer greater than or equal to zero, set <var>command id</var> to that integer.</p>"
+            },
+            {
+              "html": "<p>Let <var>error code</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-invalid-argument\" id=\"ref-for-error-code-invalid-argument②\">invalid argument</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>parsed</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">map</a> and <var>parsed</var>[\"<code>method</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a> and is a string, but <var>parsed</var>[\"<code>method</code>\"] is not in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#set-of-all-command-names\" id=\"ref-for-set-of-all-command-names\">set of all command names</a>, set <var>error code</var> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-unknown-command\" id=\"ref-for-error-code-unknown-command\">unknown command</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#send-an-error-response\" id=\"ref-for-send-an-error-response④\">Send an error response</a> given <var>connection</var>, <var>command id</var>, and <var>error code</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "emit an event",
+      "href": "https://w3c.github.io/at-driver/#emit-an-event",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"emit-an-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">emit an event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>session</var>, and <var>body</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>body</var> has <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-size\" id=\"ref-for-map-size\">size</a> 2 and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">contains</a> \"<code>method</code>\" and \"<code>params</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>serialized</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-json-bytes\" id=\"ref-for-serialize-an-infra-value-to-json-bytes①\">serialize an infra value to JSON bytes</a> given <var>body</var>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>connection</var> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session-session-websocket-connections\" id=\"ref-for-session-session-websocket-connections②\">session WebSocket connections</a>:",
+          "rationale": "send",
+          "steps": [
+            {
+              "html": "<p><a href=\"https://tools.ietf.org/html/rfc6455#section-6.1\">Send a WebSocket message</a> comprised of <var>serialized</var> over <var>connection</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "send an error response",
+      "href": "https://w3c.github.io/at-driver/#send-an-error-response",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"send-an-error-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">send an error response</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#websocket-connection\" id=\"ref-for-websocket-connection⑤\">WebSocket connection</a> <var>connection</var>, <var>command id</var>, and <var>error code</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>error data</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">map</a> matching the <code>ErrorResponse</code> production in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#local-end-definition\" id=\"ref-for-local-end-definition⑤\">local end definition</a>, with the <code>id</code> field set to <var>command id</var>, the <code>error</code> field set to <var>error code</var>, the <code>message</code> field set to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> string containing a human-readable definition of the error that occurred and the <code>stacktrace</code> field optionally set to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑦\">implementation-defined</a> string containing a stack trace report of the active stack frames at the time when the error occurred.</p>"
+        },
+        {
+          "html": "<p>Let <var>response</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-json-bytes\" id=\"ref-for-serialize-an-infra-value-to-json-bytes②\">serialize an infra value to JSON bytes</a> given <var>error data</var>.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://tools.ietf.org/html/rfc6455#section-6.1\">Send a WebSocket message</a> comprised of <var>response</var> over <var>connection</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "handle a connection closing",
+      "href": "https://w3c.github.io/at-driver/#handle-a-connection-closing",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-a-connection-closing\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle a connection closing</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#websocket-connection\" id=\"ref-for-websocket-connection⑥\">WebSocket connection</a> <var>connection</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If there is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session\" id=\"ref-for-session①③\">session</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session-associated-with-connection\" id=\"ref-for-session-associated-with-connection①\">associated with connection</a> <var>connection</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>session</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session\" id=\"ref-for-session①④\">session</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session-associated-with-connection\" id=\"ref-for-session-associated-with-connection②\">associated with connection</a> <var>connection</var>.</p>"
+            },
+            {
+              "html": "<p>Remove <var>connection</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session-session-websocket-connections\" id=\"ref-for-session-session-websocket-connections③\">session WebSocket connections</a>.</p>"
+            },
+            {
+              "html": "If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session-session-websocket-connections\" id=\"ref-for-session-session-websocket-connections④\">session WebSocket connections</a> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a>:",
+              "rationale": "remove",
+              "steps": [
+                {
+                  "html": "<p>Remove <var>session</var> from <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-active-sessions\" id=\"ref-for-remote-end-active-sessions②\">active sessions</a>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Otherwise, if the set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-websocket-connections-not-associated-with-a-session\" id=\"ref-for-remote-end-websocket-connections-not-associated-with-a-session③\">WebSocket connections not associated with a session</a> contains <var>connection</var>, remove <var>connection</var> from that set.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The URL to the WebSocket server is communicated out-of-band. When an implementation is ready to accept requests to start an AT Driver session, it must:",
+      "rationale": "start",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#start-listening-for-a-websocket-connection\" id=\"ref-for-start-listening-for-a-websocket-connection\">Start listening for a WebSocket connection</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "remote end steps for session.new",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-steps\" id=\"ref-for-remote-end-steps①\">remote end steps</a> given <var>session</var> and <var>command parameters</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>session</var> is not null, return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error⑥\">error</a> with error code <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-session-not-created\" id=\"ref-for-error-code-session-not-created\">session not created</a>.</p>"
+        },
+        {
+          "html": "<p>If the list of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-active-sessions\" id=\"ref-for-remote-end-active-sessions③\">active sessions</a> is not empty, then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error⑦\">error</a> with error code <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-session-not-created\" id=\"ref-for-error-code-session-not-created①\">session not created</a>.</p>"
+        },
+        {
+          "html": "<p>If the implementation is unable to start a new session for any reason, return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error⑧\">error</a> with error code <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-session-not-created\" id=\"ref-for-error-code-session-not-created②\">session not created</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>capabilities</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#try\" id=\"ref-for-try①\">trying</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#process-capabilities\" id=\"ref-for-process-capabilities\">process capabilities</a> with <var>command parameters</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>capabilities</var> is null, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error⑨\">error</a> with error code <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-session-not-created\" id=\"ref-for-error-code-session-not-created③\">session not created</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>session id</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#generating-a-uuid\" id=\"ref-for-generating-a-uuid\">generating a UUID</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>session</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session\" id=\"ref-for-session①⑥\">session</a> with the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session-session-id\" id=\"ref-for-session-session-id①\">session ID</a> of <var>session id</var>.</p>"
+        },
+        {
+          "html": "<p>Append <var>session</var> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-active-sessions\" id=\"ref-for-remote-end-active-sessions④\">active sessions</a>.</p>"
+        },
+        {
+          "html": "<p>Start an instance of the appropriate assistive technology, given <var>capabilities</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>body</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤\">map</a> matching the <code>SessionNewResult</code> production, with the <code>sessionId</code> field set to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#session-session-id\" id=\"ref-for-session-session-id②\">session ID</a>, and the <code>capabilities</code> field set to <var>capabilities</var>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success⑧\">success</a> with data <var>body</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "validate setting name",
+      "href": "https://w3c.github.io/at-driver/#validate-setting-name",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"validate-setting-name\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">validate setting name</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given string <var>name</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-supported-settings\" id=\"ref-for-remote-end-supported-settings\">supported settings</a> is null:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <code>\"unknown\"</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-supported-settings\" id=\"ref-for-remote-end-supported-settings①\">supported settings</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> <var>name</var>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <code>\"valid\"</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <code>\"invalid\"</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get settings",
+      "href": "https://w3c.github.io/at-driver/#get-settings",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-settings\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get settings</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of strings <var>names</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>items</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>name</var> of <var>names</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#validate-setting-name\" id=\"ref-for-validate-setting-name\">validate setting name</a> given <var>name</var> is <code>\"invalid\"</code>:",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error①⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code\" id=\"ref-for-error-code④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-invalid-argument\" id=\"ref-for-error-code-invalid-argument③\">invalid argument</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>value</var> be the value of the setting named <var>name</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>item</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑥\">map</a> matching the <code>SettingsGetSettingsResultItem</code> production in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#local-end-definition\" id=\"ref-for-local-end-definition⑧\">local end definition</a> with the <code>name</code> field set to <var>name</var> and the <code>value</code> field set to <var>value</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>item</var> to <var>items</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>body</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦\">map</a> matching the <code>SettingsGetSettingsResult</code> production, with the <code>settings</code> field set to <var>items</var>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success⑨\">success</a> with data <var>body</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "modify setting",
+      "href": "https://w3c.github.io/at-driver/#modify-setting",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"modify-setting\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">modify setting</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given string <var>name</var> and <var>value</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#validate-setting-name\" id=\"ref-for-validate-setting-name①\">validate setting name</a> given <var>name</var> is <code>\"invalid\"</code>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error①①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code\" id=\"ref-for-error-code⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-invalid-argument\" id=\"ref-for-error-code-invalid-argument④\">invalid argument</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Take any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑧\">implementation-defined</a> steps to change the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end\" id=\"ref-for-remote-end②④\">remote end</a> setting named <var>name</var> to the value <var>value</var>.</p>"
+        },
+        {
+          "html": "If there is any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑨\">implementation-defined</a> indication that the setting named <var>name</var> does not hold the value <var>value</var>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error①②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code\" id=\"ref-for-error-code⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-invalid-argument\" id=\"ref-for-error-code-invalid-argument⑤\">invalid argument</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success①⓪\">success</a> with data null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "remote end steps for settings.setSettings",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-steps\" id=\"ref-for-remote-end-steps②\">remote end steps</a> given <var>session</var> and <var>command parameters</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>settings</var> be the value of the <code>settings</code> field of <var>command parameters</var>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>setting</var> of <var>settings</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>name</var> be the value of the <code>name</code> field of <var>setting</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>value</var> be the value of the <code>value</code> field of <var>setting</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#try\" id=\"ref-for-try②\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#modify-setting\" id=\"ref-for-modify-setting\">modify setting</a> with <var>name</var> and <var>value</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>body</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑧\">map</a>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success①②\">success</a> with data <var>body</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "remote end steps for settings.getSettings",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-steps\" id=\"ref-for-remote-end-steps③\">remote end steps</a> given <var>session</var> and <var>command parameters</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>names</var> be the value of the <code>settings</code> field of <var>command parameters</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#get-settings\" id=\"ref-for-get-settings\">get settings</a> with <var>names</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "remote end steps for settings.getSupportedSettings",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-steps\" id=\"ref-for-remote-end-steps④\">remote end steps</a> given <var>session</var> and <var>command parameters</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-supported-settings\" id=\"ref-for-remote-end-supported-settings②\">supported settings</a> is null:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>names</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>names</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-supported-settings\" id=\"ref-for-remote-end-supported-settings③\">supported settings</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#get-settings\" id=\"ref-for-get-settings①\">get settings</a> with <var>names</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>result</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success①③\">success</a> value.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "press keys",
+      "href": "https://w3c.github.io/at-driver/#press-keys",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"press-keys\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">press keys</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <var>command parameters</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#try\" id=\"ref-for-try③\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#check-that-keyboard-interaction-can-be-simulated\" id=\"ref-for-check-that-keyboard-interaction-can-be-simulated\">check that keyboard interaction can be simulated</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#try\" id=\"ref-for-try④\">Try</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#check-that-one-of-the-expected-applications-has-focus\" id=\"ref-for-check-that-one-of-the-expected-applications-has-focus\">check that one of the expected applications has focus</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>keys</var> be the value of the <code>keys</code> field of <var>command\nparameters</var>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>key</var> of <var>keys</var>:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①⓪\">implementation-defined</a> steps to simulate depressing <var>key</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>key</var> of <var>keys</var> in reverse <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">List</a> order:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①①\">implementation-defined</a> steps to simulate releasing <var>key</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>body</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑨\">map</a>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#success\" id=\"ref-for-success①④\">success</a> with data <var>body</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "remote end steps for interaction.userIntent",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-steps\" id=\"ref-for-remote-end-steps⑤\">remote end steps</a> given <var>session</var> and <var>command parameters</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>name</var> be the value of the <code>name</code> field of <var>command\nparameters</var>.</p>"
+        },
+        {
+          "html": "If there is an entry in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#table-of-standard-user-intents\" id=\"ref-for-table-of-standard-user-intents\">table of standard user intents</a> with name <var>name</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>algorithm</var> be the algorithm associated with user intent <var>name</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#table-of-standard-user-intents\" id=\"ref-for-table-of-standard-user-intents①\">table of standard user intents</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if there is an entry in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-table-of-extension-user-intents\" id=\"ref-for-remote-end-table-of-extension-user-intents\">table of extension user intents</a> with name <var>name</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>algorithm</var> be the algorithm associated with user intent <var>name</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-table-of-extension-user-intents\" id=\"ref-for-remote-end-table-of-extension-user-intents①\">table of extension user intents</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error\" id=\"ref-for-error①③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code\" id=\"ref-for-error-code⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#error-code-unknown-user-intent\" id=\"ref-for-error-code-unknown-user-intent\">unknown user intent</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the result of evaluating <var>algorithm</var> given <var>command parameters</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "remote end event trigger for interaction.capturedOutput",
+      "html": "When the assistive technology would send some text <var>data</var> (a string, without speech-specific markup or annotations) to the Text-To-Speech system, or equivalent for non-speech assistive technology software, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>data</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#should-be-withheld\" id=\"ref-for-should-be-withheld\">should be withheld</a>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪\">map</a> matching the <code>InteractionCapturedOutputParameters</code> production with the <code>data</code> field set to <var>data</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①\">map</a> matching the <code>InteractionCapturedOutputEvent</code> production with the <code>params</code> field set to <var>params</var>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>session</var> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#remote-end-active-sessions\" id=\"ref-for-remote-end-active-sessions⑤\">active sessions</a>:",
+          "rationale": "emit",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/at-driver/#emit-an-event\" id=\"ref-for-emit-an-event\">Emit an event</a> with <var>session</var> and <var>body</var>.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

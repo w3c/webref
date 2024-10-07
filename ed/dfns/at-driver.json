@@ -1,0 +1,1388 @@
+{
+  "spec": {
+    "title": "AT Driver",
+    "url": "https://w3c.github.io/at-driver/"
+  },
+  "dfns": [
+    {
+      "id": "uuid",
+      "href": "https://w3c.github.io/at-driver/#uuid",
+      "linkingText": [
+        "UUID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infra",
+        "href": "https://w3c.github.io/at-driver/#infra",
+        "title": "Infrastructure",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generating-a-uuid",
+      "href": "https://w3c.github.io/at-driver/#generating-a-uuid",
+      "linkingText": [
+        "Generating a UUID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "success",
+      "href": "https://w3c.github.io/at-driver/#success",
+      "linkingText": [
+        "success"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "error",
+      "href": "https://w3c.github.io/at-driver/#error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "try",
+      "href": "https://w3c.github.io/at-driver/#try",
+      "linkingText": [
+        "try",
+        "trying"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "local-end",
+      "href": "https://w3c.github.io/at-driver/#local-end",
+      "linkingText": [
+        "local end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "nodes",
+        "href": "https://w3c.github.io/at-driver/#nodes",
+        "title": "Nodes",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "remote-end",
+      "href": "https://w3c.github.io/at-driver/#remote-end",
+      "linkingText": [
+        "remote end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "remote-end-definition",
+      "href": "https://w3c.github.io/at-driver/#remote-end-definition",
+      "linkingText": [
+        "remote end definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol",
+        "href": "https://w3c.github.io/at-driver/#protocol",
+        "title": "Protocol",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "local-end-definition",
+      "href": "https://w3c.github.io/at-driver/#local-end-definition",
+      "linkingText": [
+        "local end definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "capabilities",
+      "href": "https://w3c.github.io/at-driver/#capabilities",
+      "linkingText": [
+        "Capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-capabilities",
+        "href": "https://w3c.github.io/at-driver/#protocol-capabilities",
+        "title": "Capabilities",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "standard-capabilities",
+      "href": "https://w3c.github.io/at-driver/#standard-capabilities",
+      "linkingText": [
+        "standard capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-capabilities",
+        "href": "https://w3c.github.io/at-driver/#protocol-capabilities",
+        "title": "Capabilities",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "standard-capabilities-at-name",
+      "href": "https://w3c.github.io/at-driver/#standard-capabilities-at-name",
+      "linkingText": [
+        "AT name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "standard capabilities"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-capabilities",
+        "href": "https://w3c.github.io/at-driver/#protocol-capabilities",
+        "title": "Capabilities",
+        "number": "5.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "standard-capabilities-at-version",
+      "href": "https://w3c.github.io/at-driver/#standard-capabilities-at-version",
+      "linkingText": [
+        "AT version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "standard capabilities"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-capabilities",
+        "href": "https://w3c.github.io/at-driver/#protocol-capabilities",
+        "title": "Capabilities",
+        "number": "5.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "standard-capabilities-platform",
+      "href": "https://w3c.github.io/at-driver/#standard-capabilities-platform",
+      "linkingText": [
+        "Platform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "standard capabilities"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-capabilities",
+        "href": "https://w3c.github.io/at-driver/#protocol-capabilities",
+        "title": "Capabilities",
+        "number": "5.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "extension-capabilities",
+      "href": "https://w3c.github.io/at-driver/#extension-capabilities",
+      "linkingText": [
+        "extension capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-capabilities",
+        "href": "https://w3c.github.io/at-driver/#protocol-capabilities",
+        "title": "Capabilities",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-capabilities",
+      "href": "https://w3c.github.io/at-driver/#process-capabilities",
+      "linkingText": [
+        "process capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "match-capabilities",
+      "href": "https://w3c.github.io/at-driver/#match-capabilities",
+      "linkingText": [
+        "match capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "session",
+      "href": "https://w3c.github.io/at-driver/#session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-session",
+        "href": "https://w3c.github.io/at-driver/#protocol-session",
+        "title": "Session",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remote-end-active-sessions",
+      "href": "https://w3c.github.io/at-driver/#remote-end-active-sessions",
+      "linkingText": [
+        "active sessions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remote end"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "session-session-id",
+      "href": "https://w3c.github.io/at-driver/#session-session-id",
+      "linkingText": [
+        "session ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "module",
+      "href": "https://w3c.github.io/at-driver/#module",
+      "linkingText": [
+        "module"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-modules",
+        "href": "https://w3c.github.io/at-driver/#protocol-modules",
+        "title": "Modules",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "module-name",
+      "href": "https://w3c.github.io/at-driver/#module-name",
+      "linkingText": [
+        "module name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extension-modules",
+      "href": "https://w3c.github.io/at-driver/#extension-modules",
+      "linkingText": [
+        "extension modules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "command",
+      "href": "https://w3c.github.io/at-driver/#command",
+      "linkingText": [
+        "command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-commands",
+        "href": "https://w3c.github.io/at-driver/#protocol-commands",
+        "title": "Commands",
+        "number": "5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "command-type",
+      "href": "https://w3c.github.io/at-driver/#command-type",
+      "linkingText": [
+        "command type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "command-name",
+      "href": "https://w3c.github.io/at-driver/#command-name",
+      "linkingText": [
+        "command name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "command-parameters",
+      "href": "https://w3c.github.io/at-driver/#command-parameters",
+      "linkingText": [
+        "command parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "result-type",
+      "href": "https://w3c.github.io/at-driver/#result-type",
+      "linkingText": [
+        "result type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remote-end-steps",
+      "href": "https://w3c.github.io/at-driver/#remote-end-steps",
+      "linkingText": [
+        "remote end steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "static-command",
+      "href": "https://w3c.github.io/at-driver/#static-command",
+      "linkingText": [
+        "static command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-of-all-command-names",
+      "href": "https://w3c.github.io/at-driver/#set-of-all-command-names",
+      "linkingText": [
+        "set of all command names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event",
+      "href": "https://w3c.github.io/at-driver/#event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-events",
+        "href": "https://w3c.github.io/at-driver/#protocol-events",
+        "title": "Events",
+        "number": "5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-type",
+      "href": "https://w3c.github.io/at-driver/#event-type",
+      "linkingText": [
+        "event type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-name",
+      "href": "https://w3c.github.io/at-driver/#event-name",
+      "linkingText": [
+        "event name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-parameters",
+      "href": "https://w3c.github.io/at-driver/#event-parameters",
+      "linkingText": [
+        "event parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remote-end-event-trigger",
+      "href": "https://w3c.github.io/at-driver/#remote-end-event-trigger",
+      "linkingText": [
+        "remote end event trigger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "error-code",
+      "href": "https://w3c.github.io/at-driver/#error-code",
+      "linkingText": [
+        "error code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-errors",
+        "href": "https://w3c.github.io/at-driver/#protocol-errors",
+        "title": "Errors",
+        "number": "5.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "error-code-invalid-argument",
+      "href": "https://w3c.github.io/at-driver/#error-code-invalid-argument",
+      "linkingText": [
+        "invalid argument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "error code"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "error-code-invalid-session-id",
+      "href": "https://w3c.github.io/at-driver/#error-code-invalid-session-id",
+      "linkingText": [
+        "invalid session id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "error code"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "error-code-unknown-command",
+      "href": "https://w3c.github.io/at-driver/#error-code-unknown-command",
+      "linkingText": [
+        "unknown command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "error code"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "error-code-session-not-created",
+      "href": "https://w3c.github.io/at-driver/#error-code-session-not-created",
+      "linkingText": [
+        "session not created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "error code"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "error-code-unknown-user-intent",
+      "href": "https://w3c.github.io/at-driver/#error-code-unknown-user-intent",
+      "linkingText": [
+        "unknown user intent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "error code"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "error-code-cannot-simulate-keyboard-interaction",
+      "href": "https://w3c.github.io/at-driver/#error-code-cannot-simulate-keyboard-interaction",
+      "linkingText": [
+        "cannot simulate keyboard interaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "error code"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "error-code-invalid-os-focus-state",
+      "href": "https://w3c.github.io/at-driver/#error-code-invalid-os-focus-state",
+      "linkingText": [
+        "invalid OS focus state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "error code"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "check-that-keyboard-interaction-can-be-simulated",
+      "href": "https://w3c.github.io/at-driver/#check-that-keyboard-interaction-can-be-simulated",
+      "linkingText": [
+        "check that keyboard interaction can be simulated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "security-checks",
+        "href": "https://w3c.github.io/at-driver/#security-checks",
+        "title": "Security checks",
+        "number": "5.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-that-one-of-the-expected-applications-has-focus",
+      "href": "https://w3c.github.io/at-driver/#check-that-one-of-the-expected-applications-has-focus",
+      "linkingText": [
+        "check that one of the expected applications has focus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "should-be-withheld",
+      "href": "https://w3c.github.io/at-driver/#should-be-withheld",
+      "linkingText": [
+        "should be withheld"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-listener",
+      "href": "https://w3c.github.io/at-driver/#websocket-listener",
+      "linkingText": [
+        "WebSocket listener"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "href": "https://w3c.github.io/at-driver/#transport",
+        "title": "Transport",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-listener-host",
+      "href": "https://w3c.github.io/at-driver/#websocket-listener-host",
+      "linkingText": [
+        "host"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebSocket listener"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-listener-port",
+      "href": "https://w3c.github.io/at-driver/#websocket-listener-port",
+      "linkingText": [
+        "port"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebSocket listener"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-listener-secure-flag",
+      "href": "https://w3c.github.io/at-driver/#websocket-listener-secure-flag",
+      "linkingText": [
+        "secure flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebSocket listener"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remote-end-active-listeners",
+      "href": "https://w3c.github.io/at-driver/#remote-end-active-listeners",
+      "linkingText": [
+        "active listeners"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remote end"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remote-end-websocket-connections-not-associated-with-a-session",
+      "href": "https://w3c.github.io/at-driver/#remote-end-websocket-connections-not-associated-with-a-session",
+      "linkingText": [
+        "WebSocket connections not associated with a session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remote end"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "websocket-connection",
+      "href": "https://w3c.github.io/at-driver/#websocket-connection",
+      "linkingText": [
+        "WebSocket connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "session-session-websocket-connections",
+      "href": "https://w3c.github.io/at-driver/#session-session-websocket-connections",
+      "linkingText": [
+        "session WebSocket connections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "session-associated-with-connection",
+      "href": "https://w3c.github.io/at-driver/#session-associated-with-connection",
+      "linkingText": [
+        "associated with connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "start-listening-for-a-websocket-connection",
+      "href": "https://w3c.github.io/at-driver/#start-listening-for-a-websocket-connection",
+      "linkingText": [
+        "start listening for a WebSocket connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handle-an-incoming-message",
+      "href": "https://w3c.github.io/at-driver/#handle-an-incoming-message",
+      "linkingText": [
+        "handle an incoming message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "emit-an-event",
+      "href": "https://w3c.github.io/at-driver/#emit-an-event",
+      "linkingText": [
+        "emit an event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "send-an-error-response",
+      "href": "https://w3c.github.io/at-driver/#send-an-error-response",
+      "linkingText": [
+        "send an error response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handle-a-connection-closing",
+      "href": "https://w3c.github.io/at-driver/#handle-a-connection-closing",
+      "linkingText": [
+        "handle a connection closing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sessionnew",
+      "href": "https://w3c.github.io/at-driver/#sessionnew",
+      "linkingText": [
+        "session.new"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-session-new",
+        "href": "https://w3c.github.io/at-driver/#module-session-new",
+        "title": "The session.new Command",
+        "number": "7.1.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remote-end-supported-settings",
+      "href": "https://w3c.github.io/at-driver/#remote-end-supported-settings",
+      "linkingText": [
+        "supported settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remote end"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-settings",
+        "href": "https://w3c.github.io/at-driver/#module-settings",
+        "title": "The settings Module",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "validate-setting-name",
+      "href": "https://w3c.github.io/at-driver/#validate-setting-name",
+      "linkingText": [
+        "validate setting name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-settings",
+      "href": "https://w3c.github.io/at-driver/#get-settings",
+      "linkingText": [
+        "get settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modify-setting",
+      "href": "https://w3c.github.io/at-driver/#modify-setting",
+      "linkingText": [
+        "modify setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "settingssetsettings",
+      "href": "https://w3c.github.io/at-driver/#settingssetsettings",
+      "linkingText": [
+        "settings.setSettings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-settings-set-settings",
+        "href": "https://w3c.github.io/at-driver/#command-settings-set-settings",
+        "title": "The settings.setSettings Command",
+        "number": "7.2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "settingsgetsettings-command",
+      "href": "https://w3c.github.io/at-driver/#settingsgetsettings-command",
+      "linkingText": [
+        "settings.getSettings command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-settings-get-settings",
+        "href": "https://w3c.github.io/at-driver/#command-settings-get-settings",
+        "title": "The settings.getSettings Command",
+        "number": "7.2.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "settingsgetsupportedsettings-command",
+      "href": "https://w3c.github.io/at-driver/#settingsgetsupportedsettings-command",
+      "linkingText": [
+        "settings.getSupportedSettings command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-settings-get-supported-settings",
+        "href": "https://w3c.github.io/at-driver/#command-settings-get-supported-settings",
+        "title": "The settings.getSupportedSettings Command",
+        "number": "7.2.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "table-of-standard-user-intents",
+      "href": "https://w3c.github.io/at-driver/#table-of-standard-user-intents",
+      "linkingText": [
+        "table of standard user intents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-interaction",
+        "href": "https://w3c.github.io/at-driver/#module-interaction",
+        "title": "The Interaction Module",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remote-end-table-of-extension-user-intents",
+      "href": "https://w3c.github.io/at-driver/#remote-end-table-of-extension-user-intents",
+      "linkingText": [
+        "table of extension user intents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remote end"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "press-keys",
+      "href": "https://w3c.github.io/at-driver/#press-keys",
+      "linkingText": [
+        "press keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/at-driver/#title",
+        "title": "AT Driver"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interactionuserintent",
+      "href": "https://w3c.github.io/at-driver/#interactionuserintent",
+      "linkingText": [
+        "interaction.userIntent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-interaction-userintent",
+        "href": "https://w3c.github.io/at-driver/#module-interaction-userintent",
+        "title": "The interaction.userIntent Command",
+        "number": "7.3.3.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

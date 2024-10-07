@@ -875,24 +875,13 @@
             },
             {
               "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②②\">[[State]]</a></code> is <code>\"failed\"</code>, <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⓪\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "WebTransport/getStats()",
-      "href": "https://w3c.github.io/webtransport/#dom-webtransport-getstats",
-      "html": "When getStats is called, the user agent MUST run the following steps:",
-      "rationale": "if",
-      "steps": [
-        {
-          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②③\">[[State]]</a></code> is <code>\"closed\"</code>, <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①①\">resolve</a> <var>p</var> with\n  the most recent stats available for the connection and abort these\n  steps. The exact point at which those stats are collected is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a>.</p>"
-        },
-        {
-          "html": "Gather the stats from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#underlying-connection\" id=\"ref-for-underlying-connection①\">underlying connection</a>, including stats on datagrams.",
-          "rationale": "queue",
-          "steps": [
+            },
+            {
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②③\">[[State]]</a></code> is <code>\"closed\"</code>, <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①①\">resolve</a> <var>p</var> with\n  the most recent stats available for the connection and abort these\n  steps. The exact point at which those stats are collected is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a>.</p>"
+            },
+            {
+              "html": "<p>Gather the stats from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#underlying-connection\" id=\"ref-for-underlying-connection①\">underlying connection</a>, including stats on datagrams.</p>"
+            },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⓪\">Queue a network task</a> with <var>transport</var> to run the following steps:",
               "rationale": "let",
@@ -905,18 +894,10 @@
                 }
               ]
             }
-          ],
-          "additional": [
-            {
-              "html": "Gather the stats from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#underlying-connection\" id=\"ref-for-underlying-connection①\">underlying connection</a>, including stats on datagrams.",
-              "rationale": "return",
-              "steps": [
-                {
-                  "html": "<p>Return <var>p</var>.</p>"
-                }
-              ]
-            }
           ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
         }
       ]
     },
