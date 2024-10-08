@@ -299,7 +299,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityproviderconfig"
       },
       "IdentityProviderRequestOptions": {
-        "fragment": "dictionary IdentityProviderRequestOptions : IdentityProviderConfig {\n  USVString nonce;\n  DOMString loginHint;\n  DOMString domainHint;\n};",
+        "fragment": "dictionary IdentityProviderRequestOptions : IdentityProviderConfig {\n  USVString nonce;\n  DOMString loginHint;\n  DOMString domainHint;\n  any params;\n};",
         "type": "dictionary",
         "name": "IdentityProviderRequestOptions",
         "inheritance": "IdentityProviderConfig",
@@ -351,6 +351,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-domainhint"
+          },
+          {
+            "type": "field",
+            "name": "params",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-params"
           }
         ],
         "extAttrs": [],
