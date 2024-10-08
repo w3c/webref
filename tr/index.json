@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-10-07T01:34:54.396Z",
+  "date": "2024-10-08T01:49:09.713Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -34,7 +34,6 @@
       "css-extensions-1",
       "css-forms-1",
       "css-gcpm-4",
-      "css-grid-3",
       "css-images-5",
       "css-link-params-1",
       "css-mixins-1",
@@ -151,6 +150,7 @@
       "testutils",
       "url",
       "urlpattern",
+      "at-driver",
       "audio-session",
       "contentEditable",
       "execCommand",
@@ -366,6 +366,7 @@
       "css-gcpm-3",
       "css-grid-1",
       "css-grid-2",
+      "css-grid-3",
       "css-highlight-api-1",
       "css-images-3",
       "css-images-4",
@@ -662,10 +663,10 @@
     ]
   },
   "stats": {
-    "crawled": 331,
+    "crawled": 332,
     "errors": 0
   },
-  "crawler": "reffy-17.2.5",
+  "crawler": "reffy-17.2.6",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -711,7 +712,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "7 October 2024",
+      "date": "8 October 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -4593,6 +4594,74 @@
       "ids": "ids/css-grid-2.json"
     },
     {
+      "url": "https://www.w3.org/TR/css-grid-3/",
+      "seriesComposition": "delta",
+      "shortname": "css-grid-3",
+      "series": {
+        "shortname": "css-grid",
+        "currentSpecification": "css-grid-2",
+        "title": "CSS Grid Layout",
+        "shortTitle": "CSS Grid Layout",
+        "releaseUrl": "https://www.w3.org/TR/css-grid/",
+        "nightlyUrl": "https://drafts.csswg.org/css-grid/"
+      },
+      "seriesVersion": "3",
+      "seriesPrevious": "css-grid-2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-grid-3/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-grid-3/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-grid-3/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-grid-3/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Grid Layout Module Level 3",
+      "source": "w3c",
+      "shortTitle": "CSS Grid Layout 3",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-grid"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-grid-3/",
+        "https://drafts.csswg.org/css-grid-3/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-grid-3/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 03 Oct 2024 21:00:47 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "3 October 2024",
+      "revision": "f6f87e8a658db9c9da864b228ddb5097e23c871a",
+      "algorithms": "algorithms/css-grid-3.json",
+      "links": "links/css-grid-3.json",
+      "refs": "refs/css-grid-3.json",
+      "css": "css/css-grid-3.json",
+      "dfns": "dfns/css-grid-3.json",
+      "headings": "headings/css-grid-3.json",
+      "ids": "ids/css-grid-3.json"
+    },
+    {
       "url": "https://www.w3.org/TR/css-highlight-api-1/",
       "seriesComposition": "full",
       "shortname": "css-highlight-api-1",
@@ -8085,7 +8154,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-values-5/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -9120,11 +9189,11 @@
       ],
       "crawled": "https://www.w3.org/TR/device-posture/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 20 Sep 2024 12:59:33 GMT"
+        "lastModified": "Mon, 07 Oct 2024 13:17:08 GMT"
       },
       "generator": "respec",
-      "date": "20 September 2024",
-      "revision": "4721f4d6720d90a33c11e558d4de46ec30b5d688",
+      "date": "07 October 2024",
+      "revision": "c53573dae3b7db55956c1828d6f336b8225b380e",
       "algorithms": "algorithms/device-posture.json",
       "links": "links/device-posture.json",
       "refs": "refs/device-posture.json",
@@ -9584,7 +9653,7 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-initdata-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Jul 2024 12:39:25 GMT"
+        "lastModified": "Fri, 12 Jul 2024 12:26:24 GMT"
       },
       "generator": "respec",
       "date": "18 July 2024",
@@ -12255,11 +12324,11 @@
       ],
       "crawled": "https://www.w3.org/TR/media-capabilities/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 26 Sep 2024 20:40:17 GMT"
+        "lastModified": "Mon, 07 Oct 2024 18:53:24 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 September 2024",
-      "revision": "6b47236f2ded6db89986fef4e03119ec1b614e02",
+      "date": "7 October 2024",
+      "revision": "e2c7d31f7da32c9f31452fbc4e40b683b1864210",
       "algorithms": "algorithms/media-capabilities.json",
       "links": "links/media-capabilities.json",
       "refs": "refs/media-capabilities.json",
@@ -13825,11 +13894,11 @@
       ],
       "crawled": "https://www.w3.org/TR/openscreenprotocol/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 23 Sep 2024 22:55:13 GMT"
+        "lastModified": "Mon, 07 Oct 2024 21:11:20 GMT"
       },
       "generator": "bikeshed",
-      "date": "23 September 2024",
-      "revision": "ace18959a1ab0791a6a5095b02cc2821c280f531",
+      "date": "7 October 2024",
+      "revision": "3426640ce02ad79a1e5203c43a4cf6c6f83e273a",
       "algorithms": "algorithms/openscreenprotocol.json",
       "links": "links/openscreenprotocol.json",
       "refs": "refs/openscreenprotocol.json",
@@ -18672,11 +18741,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-js-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 06 Oct 2024 00:11:55 GMT"
+        "lastModified": "Mon, 07 Oct 2024 20:41:10 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 October 2024",
-      "revision": "c0aeee7a255f1772214532170cdb49ff14578e2b",
+      "date": "7 October 2024",
+      "revision": "85a7ccb0307fb1284ea22f74cd77bd833ec25440",
       "algorithms": "algorithms/wasm-js-api-2.json",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
@@ -18737,11 +18806,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-web-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 06 Oct 2024 00:12:02 GMT"
+        "lastModified": "Mon, 07 Oct 2024 20:41:04 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 October 2024",
-      "revision": "c0aeee7a255f1772214532170cdb49ff14578e2b",
+      "date": "7 October 2024",
+      "revision": "85a7ccb0307fb1284ea22f74cd77bd833ec25440",
       "algorithms": "algorithms/wasm-web-api-2.json",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
@@ -20130,7 +20199,7 @@
       "groups": [
         {
           "name": "Browser Testing and Tools Working Group",
-          "url": "https://www.w3.org/testing/browser/"
+          "url": "https://www.w3.org/groups/wg/browser-tools-testing/"
         }
       ],
       "release": {
@@ -20229,11 +20298,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Oct 2024 04:35:27 GMT"
+        "lastModified": "Mon, 07 Oct 2024 17:08:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 October 2024",
-      "revision": "bbfbc77249d4adea79cf4b897e80c4e867b1c093",
+      "date": "7 October 2024",
+      "revision": "4e1cd5662908867fdbf6d127ce7813de26124826",
       "algorithms": "algorithms/webgpu.json",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
@@ -21507,11 +21576,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 25 Sep 2024 13:33:46 GMT"
+        "lastModified": "Mon, 07 Oct 2024 17:32:44 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 September 2024",
-      "revision": "a79f791f62eb52d844c093e12480c940d9c52ced",
+      "date": "7 October 2024",
+      "revision": "566f047a6b161c4ef2cb9d927cb710a9f3c3d578",
       "algorithms": "algorithms/WGSL.json",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",

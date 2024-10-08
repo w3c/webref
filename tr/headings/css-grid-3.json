@@ -1,0 +1,446 @@
+{
+  "spec": {
+    "title": "CSS Grid Layout Module Level 3",
+    "url": "https://www.w3.org/TR/css-grid-3/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/css-grid-3/#title",
+      "level": 1,
+      "title": "CSS Grid Layout Module Level 3"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/css-grid-3/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-grid-3/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/css-grid-3/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/css-grid-3/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "background",
+      "href": "https://www.w3.org/TR/css-grid-3/#background",
+      "level": 3,
+      "title": "Background and Motivation",
+      "number": "1.1"
+    },
+    {
+      "id": "waterfall",
+      "href": "https://www.w3.org/TR/css-grid-3/#waterfall",
+      "level": 4,
+      "title": "Waterfall Layout with Auto-placed Items",
+      "number": "1.1.1"
+    },
+    {
+      "id": "collapse",
+      "href": "https://www.w3.org/TR/css-grid-3/#collapse",
+      "level": 4,
+      "title": "One-dimensional Grid Layout",
+      "number": "1.1.2"
+    },
+    {
+      "id": "alternative-proposals",
+      "href": "https://www.w3.org/TR/css-grid-3/#alternative-proposals",
+      "level": 3,
+      "title": "Alternative Syntax Proposals",
+      "number": "1.2"
+    },
+    {
+      "id": "values",
+      "href": "https://www.w3.org/TR/css-grid-3/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.3"
+    },
+    {
+      "id": "masonry-model",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-model",
+      "level": 2,
+      "title": "Masonry Layout Model",
+      "number": "2"
+    },
+    {
+      "id": "order-accessibility",
+      "href": "https://www.w3.org/TR/css-grid-3/#order-accessibility",
+      "level": 3,
+      "title": "Reordering and Accessibility",
+      "number": "2.1"
+    },
+    {
+      "id": "masonry-model-grid-option",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-model-grid-option",
+      "level": 3,
+      "title": "Grid-integrated Option: Establishing Masonry Layout",
+      "number": "2.2"
+    },
+    {
+      "id": "grid-template-masonry",
+      "href": "https://www.w3.org/TR/css-grid-3/#grid-template-masonry",
+      "level": 4,
+      "title": "Indicating the stacking axis: the masonry keyword for grid-template-columns/grid-template-rows",
+      "number": "2.2.1"
+    },
+    {
+      "id": "grid-auto-flow",
+      "href": "https://www.w3.org/TR/css-grid-3/#grid-auto-flow",
+      "level": 4,
+      "title": "Auto Flow Directions: the grid-auto-flow property",
+      "number": "2.2.2"
+    },
+    {
+      "id": "masonry-model-masonry-option",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-model-masonry-option",
+      "level": 3,
+      "title": "Grid-independent Option: Establishing Masonry Layout",
+      "number": "2.3"
+    },
+    {
+      "id": "masonry-display",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-display",
+      "level": 4,
+      "title": "Establishing Masonry Containers: the masonry and inline-masonry display values",
+      "number": "2.3.1"
+    },
+    {
+      "id": "masonry-direction",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-direction",
+      "level": 4,
+      "title": "Masonry Track Direction: the masonry-direction property",
+      "number": "2.3.2"
+    },
+    {
+      "id": "masonry-fill",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-fill",
+      "level": 4,
+      "title": "Masonry Cross Direction: the masonry-fill property",
+      "number": "2.3.3"
+    },
+    {
+      "id": "masonry-flow",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-flow",
+      "level": 4,
+      "title": "Masonry Flow Directions: the masonry-flow shorthand",
+      "number": "2.3.4"
+    },
+    {
+      "id": "masonry-shorthand",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-shorthand",
+      "level": 4,
+      "title": "Masonry Definition Shorthand: the masonry property",
+      "number": "2.3.5"
+    },
+    {
+      "id": "masonry-track-templates",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-track-templates",
+      "level": 2,
+      "title": "Masonry Track Specification",
+      "number": "3"
+    },
+    {
+      "id": "masonry-track-grid-option",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-track-grid-option",
+      "level": 3,
+      "title": "Grid-integrated Option: Declaring Masonry Track Templates: the grid-template-* properties",
+      "number": "3.1"
+    },
+    {
+      "id": "masonry-track-masonry-option",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-track-masonry-option",
+      "level": 3,
+      "title": "Grid-independent Option: Declaring Masonry Track Templates: the masonry-template-* properties",
+      "number": "3.2"
+    },
+    {
+      "id": "subgrids",
+      "href": "https://www.w3.org/TR/css-grid-3/#subgrids",
+      "level": 3,
+      "title": "Subgrids",
+      "number": "3.3"
+    },
+    {
+      "id": "repeat-notation",
+      "href": "https://www.w3.org/TR/css-grid-3/#repeat-notation",
+      "level": 3,
+      "title": "Track Repetition: the repeat() notation",
+      "number": "3.4"
+    },
+    {
+      "id": "repeat-auto-areas",
+      "href": "https://www.w3.org/TR/css-grid-3/#repeat-auto-areas",
+      "level": 4,
+      "title": "repeat(auto-areas)",
+      "number": "3.4.1"
+    },
+    {
+      "id": "repeat-auto-fit",
+      "href": "https://www.w3.org/TR/css-grid-3/#repeat-auto-fit",
+      "level": 4,
+      "title": "repeat(auto-fit)",
+      "number": "3.4.2"
+    },
+    {
+      "id": "track-sizing",
+      "href": "https://www.w3.org/TR/css-grid-3/#track-sizing",
+      "level": 3,
+      "title": "Grid Axis Track Sizing",
+      "number": "3.5"
+    },
+    {
+      "id": "track-sizing-subgrid",
+      "href": "https://www.w3.org/TR/css-grid-3/#track-sizing-subgrid",
+      "level": 4,
+      "title": "Subgrid Item Contributions",
+      "number": "3.5.1"
+    },
+    {
+      "id": "track-sizing-performance",
+      "href": "https://www.w3.org/TR/css-grid-3/#track-sizing-performance",
+      "level": 4,
+      "title": "Optimized Track Sizing",
+      "number": "3.5.2"
+    },
+    {
+      "id": "masonry-track-placement",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-track-placement",
+      "level": 2,
+      "title": "Masonry Placement",
+      "number": "4"
+    },
+    {
+      "id": "masonry-placement-grid-option",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-placement-grid-option",
+      "level": 3,
+      "title": "Grid-integrated Option: Specifying Masonry Item Placement: the grid-column-* and grid-row-* properties",
+      "number": "4.1"
+    },
+    {
+      "id": "masonry-placement-masonry-option",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-placement-masonry-option",
+      "level": 3,
+      "title": "Grid-independent Option: Specifying Masonry Item Placement: the masonry-track-* properties",
+      "number": "4.2"
+    },
+    {
+      "id": "masonry-slack",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-slack",
+      "level": 3,
+      "title": "Placement Precision: the masonry-slack property",
+      "number": "4.3"
+    },
+    {
+      "id": "masonry-layout-algorithm",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-layout-algorithm",
+      "level": 3,
+      "title": "Masonry Layout and Placement Algorithm",
+      "number": "4.4"
+    },
+    {
+      "id": "containing-block",
+      "href": "https://www.w3.org/TR/css-grid-3/#containing-block",
+      "level": 4,
+      "title": "Containing Block",
+      "number": "4.4.1"
+    },
+    {
+      "id": "rtl-example",
+      "href": "https://www.w3.org/TR/css-grid-3/#rtl-example",
+      "level": 4,
+      "title": "Placement and Writing Modes",
+      "number": "4.4.2"
+    },
+    {
+      "id": "intrinsic-sizes",
+      "href": "https://www.w3.org/TR/css-grid-3/#intrinsic-sizes",
+      "level": 2,
+      "title": "Sizing Grid Containers",
+      "number": "5"
+    },
+    {
+      "id": "alignment",
+      "href": "https://www.w3.org/TR/css-grid-3/#alignment",
+      "level": 2,
+      "title": "Alignment and Spacing",
+      "number": "6"
+    },
+    {
+      "id": "masonry-axis-baseline-alignment",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-axis-baseline-alignment",
+      "level": 3,
+      "title": "Baseline Alignment in the stacking axis",
+      "number": "6.1"
+    },
+    {
+      "id": "pagination",
+      "href": "https://www.w3.org/TR/css-grid-3/#pagination",
+      "level": 2,
+      "title": "Fragmentation",
+      "number": "7"
+    },
+    {
+      "id": "masonry-axis-pagination",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-axis-pagination",
+      "level": 3,
+      "title": "Fragmentation in the stacking axis",
+      "number": "7.1"
+    },
+    {
+      "id": "grid-axis-pagination",
+      "href": "https://www.w3.org/TR/css-grid-3/#grid-axis-pagination",
+      "level": 3,
+      "title": "Fragmentation in the Grid Axis",
+      "number": "7.2"
+    },
+    {
+      "id": "abspos",
+      "href": "https://www.w3.org/TR/css-grid-3/#abspos",
+      "level": 2,
+      "title": "Absolute Positioning",
+      "number": "8"
+    },
+    {
+      "id": "graceful-degradation",
+      "href": "https://www.w3.org/TR/css-grid-3/#graceful-degradation",
+      "level": 2,
+      "title": "Graceful Degradation",
+      "number": "9"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/css-grid-3/#acknowledgements",
+      "level": 2,
+      "title": "10. Acknowledgements"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/css-grid-3/#security",
+      "level": 2,
+      "title": "11. Security Considerations"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/css-grid-3/#privacy",
+      "level": 2,
+      "title": "12. Privacy Considerations"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/css-grid-3/#changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "changes-3",
+      "href": "https://www.w3.org/TR/css-grid-3/#changes-3",
+      "level": 3,
+      "title": "Additions Since Level 2"
+    },
+    {
+      "id": "recent-changes",
+      "href": "https://www.w3.org/TR/css-grid-3/#recent-changes",
+      "level": 3,
+      "title": "Recent Changes"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-grid-3/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-grid-3/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-grid-3/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-grid-3/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-grid-3/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-grid-3/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/css-grid-3/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/css-grid-3/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/css-grid-3/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/css-grid-3/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/css-grid-3/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/css-grid-3/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://www.w3.org/TR/css-grid-3/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://www.w3.org/TR/css-grid-3/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -236,7 +236,7 @@
       ]
     },
     {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilities-decodinginfo\" id=\"ref-for-dom-mediacapabilities-decodinginfo\">decodingInfo()</a></code> method method MUST run the following steps:",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/media-capabilities/#dom-mediacapabilities-decodinginfo\" id=\"ref-for-dom-mediacapabilities-decodinginfo\">decodingInfo()</a></code> method MUST run the following steps:",
       "rationale": "if",
       "steps": [
         {
@@ -255,10 +255,19 @@
           ]
         },
         {
-          "html": "Let <var>p</var> be a new promise."
+          "html": "Let <var>p</var> be a new Promise."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">In parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#create-a-mediacapabilitiesdecodinginfo\" id=\"ref-for-create-a-mediacapabilitiesdecodinginfo\">Create a\n          MediaCapabilitiesDecodingInfo</a> algorithm with <var>configuration</var> and resolve <var>p</var> with its result."
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#create-a-mediacapabilitiesdecodinginfo\" id=\"ref-for-create-a-mediacapabilitiesdecodinginfo\">Create a MediaCapabilitiesDecodingInfo</a> algorithm\n              with <var>configuration</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#queue-a-media-capabilities-task\" id=\"ref-for-queue-a-media-capabilities-task\">Queue a Media Capabilities task</a> to resolve <var>p</var> with its result."
+            }
+          ]
         },
         {
           "html": "Return <var>p</var>."
@@ -273,10 +282,19 @@
           "html": "If <var>configuration</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#valid-mediaconfiguration\" id=\"ref-for-valid-mediaconfiguration①\">valid MediaConfiguration</a>,\n          return a Promise rejected with a newly created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>."
         },
         {
-          "html": "Let <var>p</var> be a new promise."
+          "html": "Let <var>p</var> be a new Promise."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">In parallel</a>, run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#create-a-mediacapabilitiesencodinginfo\" id=\"ref-for-create-a-mediacapabilitiesencodinginfo\">Create a MediaCapabilitiesEncodingInfo</a> algorithm with <var>configuration</var> and resolve <var>p</var> with its result."
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#create-a-mediacapabilitiesencodinginfo\" id=\"ref-for-create-a-mediacapabilitiesencodinginfo\">Create a MediaCapabilitiesEncodingInfo</a> algorithm with <var>configuration</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/media-capabilities/#queue-a-media-capabilities-task\" id=\"ref-for-queue-a-media-capabilities-task①\">Queue a Media Capabilities task</a> to resolve <var>p</var> with\n               its result."
+            }
+          ]
         },
         {
           "html": "Return <var>p</var>."

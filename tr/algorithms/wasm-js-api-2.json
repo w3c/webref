@@ -850,10 +850,10 @@
           "html": "<p>If <var>descriptor</var>[\"maximum\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>, let <var>maximum</var> be <var>descriptor</var>[\"maximum\"]; otherwise, let <var>maximum</var> be empty.</p>"
         },
         {
-          "html": "<p>If <var>maximum</var> is not empty and <var>maximum</var> &lt; <var>initial</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror①\">RangeError</a></code> exception.</p>"
+          "html": "<p>Let <var>memtype</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-memtype\" id=\"ref-for-syntax-memtype\">memory type</a> { <b><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-limits\" id=\"ref-for-syntax-limits\">min</a></b> <var>initial</var>, <b><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-limits\" id=\"ref-for-syntax-limits①\">max</a></b> <var>maximum</var> }.</p>"
         },
         {
-          "html": "<p>Let <var>memtype</var> be { min <var>initial</var>, max <var>maximum</var> }.</p>"
+          "html": "<p>If <var>memtype</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/types.html#valid-memtype\" id=\"ref-for-valid-memtype\">valid</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror①\">RangeError</a></code> exception.</p>"
         },
         {
           "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store④\">associated store</a>.</p>"
@@ -1202,7 +1202,10 @@
           "html": "<p>If <var>descriptor</var>[\"maximum\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a>, let <var>maximum</var> be <var>descriptor</var>[\"maximum\"]; otherwise, let <var>maximum</var> be empty.</p>"
         },
         {
-          "html": "<p>If <var>maximum</var> is not empty and <var>maximum</var> &lt; <var>initial</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑤\">RangeError</a></code> exception.</p>"
+          "html": "<p>Let <var>type</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tabletype\" id=\"ref-for-syntax-tabletype\">table type</a> { <b><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-limits\" id=\"ref-for-syntax-limits②\">min</a></b> <var>initial</var>, <b><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-limits\" id=\"ref-for-syntax-limits③\">max</a></b> <var>maximum</var> } <var>elementType</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>type</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/types.html#valid-tabletype\" id=\"ref-for-valid-tabletype\">valid</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑤\">RangeError</a></code> exception.</p>"
         },
         {
           "html": "If <var>value</var> is missing,",
@@ -1223,13 +1226,10 @@
           ]
         },
         {
-          "html": "<p>Let <var>type</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tabletype\" id=\"ref-for-syntax-tabletype\">table type</a> {<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tabletype\" id=\"ref-for-syntax-tabletype①\">min</a> <var>initial</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tabletype\" id=\"ref-for-syntax-tabletype②\">max</a> <var>maximum</var>} <var>elementType</var>.</p>"
-        },
-        {
           "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①⑤\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store⑨\">associated store</a>.</p>"
         },
         {
-          "html": "<p>Let (<var>store</var>, <var>tableaddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-alloc\" id=\"ref-for-embed-table-alloc\">table_alloc</a>(<var>store</var>, <var>type</var>, <var>ref</var>). </p>"
+          "html": "<p>Let (<var>store</var>, <var>tableaddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-alloc\" id=\"ref-for-embed-table-alloc\">table_alloc</a>(<var>store</var>, <var>type</var>, <var>ref</var>). If allocation fails, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑥\">RangeError</a></code> exception.</p>"
         },
         {
           "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①⑥\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store①⓪\">associated store</a> to <var>store</var>.</p>"
@@ -1279,7 +1279,7 @@
           "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-grow\" id=\"ref-for-embed-table-grow\">table_grow</a>(<var>store</var>, <var>tableaddr</var>, <var>delta</var>, <var>ref</var>).</p>"
         },
         {
-          "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⓪\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑥\">RangeError</a></code> exception.</p>"
+          "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⓪\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑦\">RangeError</a></code> exception.</p>"
         },
         {
           "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①⑧\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store①②\">associated store</a> to <var>result</var>.</p>"
@@ -1322,7 +1322,7 @@
           "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-read\" id=\"ref-for-embed-table-read\">table_read</a>(<var>store</var>, <var>tableaddr</var>, <var>index</var>).</p>"
         },
         {
-          "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①①\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑦\">RangeError</a></code> exception.</p>"
+          "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①①\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑧\">RangeError</a></code> exception.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue\">ToJSValue</a>(<var>result</var>).</p>"
@@ -1366,7 +1366,7 @@
           "html": "<p>Let <var>store</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-write\" id=\"ref-for-embed-table-write\">table_write</a>(<var>store</var>, <var>tableaddr</var>, <var>index</var>, <var>ref</var>).</p>"
         },
         {
-          "html": "<p>If <var>store</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①②\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑧\">RangeError</a></code> exception.</p>"
+          "html": "<p>If <var>store</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①②\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑨\">RangeError</a></code> exception.</p>"
         },
         {
           "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②②\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store①⑥\">associated store</a> to <var>store</var>.</p>"
@@ -1604,7 +1604,7 @@
           "html": "<p>Let <var>store</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-write\" id=\"ref-for-embed-global-write\">global_write</a>(<var>store</var>, <var>globaladdr</var>, <var>value</var>).</p>"
         },
         {
-          "html": "<p>If <var>store</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①③\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑨\">RangeError</a></code> exception.</p>"
+          "html": "<p>If <var>store</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①③\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror①⓪\">RangeError</a></code> exception.</p>"
         },
         {
           "html": "<p>Set the current agent’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store②①\">associated store</a> to <var>store</var>.</p>"

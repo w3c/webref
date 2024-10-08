@@ -1,0 +1,816 @@
+{
+  "spec": {
+    "title": "CSS Grid Layout Module Level 3",
+    "url": "https://www.w3.org/TR/css-grid-3/"
+  },
+  "dfns": [
+    {
+      "id": "grid-integrated-option",
+      "href": "https://www.w3.org/TR/css-grid-3/#grid-integrated-option",
+      "linkingText": [
+        "Grid-integrated Option"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "alternative-proposals",
+        "href": "https://www.w3.org/TR/css-grid-3/#alternative-proposals",
+        "title": "Alternative Syntax Proposals",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-independent-option",
+      "href": "https://www.w3.org/TR/css-grid-3/#grid-independent-option",
+      "linkingText": [
+        "Grid-independent Option"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "alternative-proposals",
+        "href": "https://www.w3.org/TR/css-grid-3/#alternative-proposals",
+        "title": "Alternative Syntax Proposals",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "masonry-layout",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-layout",
+      "linkingText": [
+        "Masonry layout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "masonry-model",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-model",
+        "title": "Masonry Layout Model",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-axis",
+      "href": "https://www.w3.org/TR/css-grid-3/#grid-axis",
+      "linkingText": [
+        "grid axis"
+      ],
+      "localLinkingText": [
+        "grid-axis"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "masonry-model",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-model",
+        "title": "Masonry Layout Model",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "stacking-axis",
+      "href": "https://www.w3.org/TR/css-grid-3/#stacking-axis",
+      "linkingText": [
+        "stacking axis"
+      ],
+      "localLinkingText": [
+        "stacking-axis"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "masonry-model",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-model",
+        "title": "Masonry Layout Model",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "masonry-item",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-item",
+      "linkingText": [
+        "masonry item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-model",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-model",
+        "title": "Masonry Layout Model",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "masonry-track",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-track",
+      "linkingText": [
+        "masonry track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-model",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-model",
+        "title": "Masonry Layout Model",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "masonry-container",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-container",
+      "linkingText": [
+        "masonry container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "masonry-model",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-model",
+        "title": "Masonry Layout Model",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "column-masonry-container",
+      "href": "https://www.w3.org/TR/css-grid-3/#column-masonry-container",
+      "linkingText": [
+        "column masonry container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-model",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-model",
+        "title": "Masonry Layout Model",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "row-masonry-container",
+      "href": "https://www.w3.org/TR/css-grid-3/#row-masonry-container",
+      "linkingText": [
+        "row masonry container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-model",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-model",
+        "title": "Masonry Layout Model",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-grid-auto-flow",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-grid-auto-flow",
+      "linkingText": [
+        "grid-auto-flow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-auto-flow",
+        "href": "https://www.w3.org/TR/css-grid-3/#grid-auto-flow",
+        "title": "Auto Flow Directions: the grid-auto-flow property",
+        "number": "2.2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-grid-auto-flow-row-reverse",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-grid-auto-flow-row-reverse",
+      "linkingText": [
+        "row-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-auto-flow"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-auto-flow",
+        "href": "https://www.w3.org/TR/css-grid-3/#grid-auto-flow",
+        "title": "Auto Flow Directions: the grid-auto-flow property",
+        "number": "2.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-grid-auto-flow-column-reverse",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-grid-auto-flow-column-reverse",
+      "linkingText": [
+        "column-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-auto-flow"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-auto-flow",
+        "href": "https://www.w3.org/TR/css-grid-3/#grid-auto-flow",
+        "title": "Auto Flow Directions: the grid-auto-flow property",
+        "number": "2.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-grid-auto-flow-wrap-reverse",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-grid-auto-flow-wrap-reverse",
+      "linkingText": [
+        "wrap-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-auto-flow"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-auto-flow",
+        "href": "https://www.w3.org/TR/css-grid-3/#grid-auto-flow",
+        "title": "Auto Flow Directions: the grid-auto-flow property",
+        "number": "2.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-display-masonry",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-display-masonry",
+      "linkingText": [
+        "masonry"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-display",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-display",
+        "title": "Establishing Masonry Containers: the masonry and inline-masonry display values",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-display-inline-masonry",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-display-inline-masonry",
+      "linkingText": [
+        "inline-masonry"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-display",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-display",
+        "title": "Establishing Masonry Containers: the masonry and inline-masonry display values",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-masonry-direction",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-direction",
+      "linkingText": [
+        "masonry-direction"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-direction",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-direction",
+        "title": "Masonry Track Direction: the masonry-direction property",
+        "number": "2.3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-masonry-direction-column",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-direction-column",
+      "linkingText": [
+        "column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "masonry-direction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-direction",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-direction",
+        "title": "Masonry Track Direction: the masonry-direction property",
+        "number": "2.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-masonry-direction-column-reverse",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-direction-column-reverse",
+      "linkingText": [
+        "column-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "masonry-direction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-direction",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-direction",
+        "title": "Masonry Track Direction: the masonry-direction property",
+        "number": "2.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-masonry-direction-row",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-direction-row",
+      "linkingText": [
+        "row"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "masonry-direction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-direction",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-direction",
+        "title": "Masonry Track Direction: the masonry-direction property",
+        "number": "2.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-masonry-direction-row-reverse",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-direction-row-reverse",
+      "linkingText": [
+        "row-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "masonry-direction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-direction",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-direction",
+        "title": "Masonry Track Direction: the masonry-direction property",
+        "number": "2.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-masonry-fill",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-fill",
+      "linkingText": [
+        "masonry-fill"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-fill",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-fill",
+        "title": "Masonry Cross Direction: the masonry-fill property",
+        "number": "2.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-masonry-fill-normal",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-fill-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "masonry-fill"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-fill",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-fill",
+        "title": "Masonry Cross Direction: the masonry-fill property",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-masonry-fill-reverse",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-fill-reverse",
+      "linkingText": [
+        "reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "masonry-fill"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-fill",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-fill",
+        "title": "Masonry Cross Direction: the masonry-fill property",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-masonry-flow",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-flow",
+      "linkingText": [
+        "masonry-flow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-flow",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-flow",
+        "title": "Masonry Flow Directions: the masonry-flow shorthand",
+        "number": "2.3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-masonry",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry",
+      "linkingText": [
+        "masonry"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-shorthand",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-shorthand",
+        "title": "Masonry Definition Shorthand: the masonry property",
+        "number": "2.3.5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-masonry-template-tracks",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-template-tracks",
+      "linkingText": [
+        "masonry-template-tracks"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-track-masonry-option",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-track-masonry-option",
+        "title": "Grid-independent Option: Declaring Masonry Track Templates: the masonry-template-* properties",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-masonry-template-areas",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-template-areas",
+      "linkingText": [
+        "masonry-template-areas"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-track-masonry-option",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-track-masonry-option",
+        "title": "Grid-independent Option: Declaring Masonry Track Templates: the masonry-template-* properties",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-masonry-auto-tracks",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-auto-tracks",
+      "linkingText": [
+        "masonry-auto-tracks"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-track-masonry-option",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-track-masonry-option",
+        "title": "Grid-independent Option: Declaring Masonry Track Templates: the masonry-template-* properties",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "submasonry",
+      "href": "https://www.w3.org/TR/css-grid-3/#submasonry",
+      "linkingText": [
+        "submasonry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/css-grid-3/#title",
+        "title": "CSS Grid Layout Module Level 3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-repeat-auto-areas",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-repeat-auto-areas",
+      "linkingText": [
+        "auto-areas"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "repeat()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "repeat-auto-areas",
+        "href": "https://www.w3.org/TR/css-grid-3/#repeat-auto-areas",
+        "title": "repeat(auto-areas)",
+        "number": "3.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "item-groups",
+      "href": "https://www.w3.org/TR/css-grid-3/#item-groups",
+      "linkingText": [
+        "item groups"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing-performance",
+        "href": "https://www.w3.org/TR/css-grid-3/#track-sizing-performance",
+        "title": "Optimized Track Sizing",
+        "number": "3.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "virtual-masonry-item",
+      "href": "https://www.w3.org/TR/css-grid-3/#virtual-masonry-item",
+      "linkingText": [
+        "virtual masonry item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing-performance",
+        "href": "https://www.w3.org/TR/css-grid-3/#track-sizing-performance",
+        "title": "Optimized Track Sizing",
+        "number": "3.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-masonry-track-start",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-track-start",
+      "linkingText": [
+        "masonry-track-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-placement-masonry-option",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-placement-masonry-option",
+        "title": "Grid-independent Option: Specifying Masonry Item Placement: the masonry-track-* properties",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-masonry-track-end",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-track-end",
+      "linkingText": [
+        "masonry-track-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-placement-masonry-option",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-placement-masonry-option",
+        "title": "Grid-independent Option: Specifying Masonry Item Placement: the masonry-track-* properties",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-masonry-track",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-track",
+      "linkingText": [
+        "masonry-track"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-placement-masonry-option",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-placement-masonry-option",
+        "title": "Grid-independent Option: Specifying Masonry Item Placement: the masonry-track-* properties",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-masonry-slack",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-slack",
+      "linkingText": [
+        "masonry-slack"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "masonry-slack",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-slack",
+        "title": "Placement Precision: the masonry-slack property",
+        "number": "4.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "masonry-tie-threshold",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-tie-threshold",
+      "linkingText": [
+        "tie threshold"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "masonry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "masonry-slack",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-slack",
+        "title": "Placement Precision: the masonry-slack property",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "running-position",
+      "href": "https://www.w3.org/TR/css-grid-3/#running-position",
+      "linkingText": [
+        "running position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "masonry-layout-algorithm",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-layout-algorithm",
+        "title": "Masonry Layout and Placement Algorithm",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "auto-placement-cursor",
+      "href": "https://www.w3.org/TR/css-grid-3/#auto-placement-cursor",
+      "linkingText": [
+        "auto-placement cursor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "masonry-layout-algorithm",
+        "href": "https://www.w3.org/TR/css-grid-3/#masonry-layout-algorithm",
+        "title": "Masonry Layout and Placement Algorithm",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "masonry-box",
+      "href": "https://www.w3.org/TR/css-grid-3/#masonry-box",
+      "linkingText": [
+        "masonry box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "alignment",
+        "href": "https://www.w3.org/TR/css-grid-3/#alignment",
+        "title": "Alignment and Spacing",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

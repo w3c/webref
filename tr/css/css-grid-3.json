@@ -1,0 +1,318 @@
+{
+  "spec": {
+    "title": "CSS Grid Layout Module Level 3",
+    "url": "https://www.w3.org/TR/css-grid-3/"
+  },
+  "properties": [
+    {
+      "name": "grid-template-columns",
+      "newValues": "masonry",
+      "initial": "none",
+      "appliesTo": "grid containers",
+      "inherited": "no",
+      "percentages": "refer to corresponding dimension of the content area",
+      "computedValue": "the keyword none or the keyword masonry or a [[computed track list]]",
+      "animationType": "see CSS Grid Level 2",
+      "styleDeclaration": [
+        "grid-template-columns",
+        "gridTemplateColumns"
+      ]
+    },
+    {
+      "name": "grid-template-rows",
+      "newValues": "masonry",
+      "initial": "none",
+      "appliesTo": "grid containers",
+      "inherited": "no",
+      "percentages": "refer to corresponding dimension of the content area",
+      "computedValue": "the keyword none or the keyword masonry or a [[computed track list]]",
+      "animationType": "see CSS Grid Level 2",
+      "styleDeclaration": [
+        "grid-template-rows",
+        "gridTemplateRows"
+      ]
+    },
+    {
+      "name": "grid-auto-flow",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-grid-auto-flow",
+      "value": "[ row | column | row-reverse | column-reverse ] || dense || wrap-reverse",
+      "initial": "row",
+      "appliesTo": "grid containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "row-reverse",
+          "prose": "This specification extends the grid-auto-flow property to add row-reverse, column-reverse, and wrap-reverse, which reverse the directions of the grid item placement algorithm.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-grid-auto-flow-row-reverse",
+          "type": "value",
+          "value": "row-reverse"
+        },
+        {
+          "name": "column-reverse",
+          "prose": "This specification extends the grid-auto-flow property to add row-reverse, column-reverse, and wrap-reverse, which reverse the directions of the grid item placement algorithm.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-grid-auto-flow-column-reverse",
+          "type": "value",
+          "value": "column-reverse"
+        },
+        {
+          "name": "wrap-reverse",
+          "prose": "This specification extends the grid-auto-flow property to add row-reverse, column-reverse, and wrap-reverse, which reverse the directions of the grid item placement algorithm.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-grid-auto-flow-wrap-reverse",
+          "type": "value",
+          "value": "wrap-reverse"
+        }
+      ],
+      "styleDeclaration": [
+        "grid-auto-flow",
+        "gridAutoFlow"
+      ]
+    },
+    {
+      "name": "display",
+      "newValues": "masonry | inline-masonry",
+      "values": [
+        {
+          "name": "masonry",
+          "prose": "This value causes an element to generate a masonry container box that is block-level when placed in flow layout.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-display-masonry",
+          "type": "value",
+          "value": "masonry"
+        },
+        {
+          "name": "inline-masonry",
+          "prose": "This value causes an element to generate a masonry container box that is inline-level when placed in flow layout.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-display-inline-masonry",
+          "type": "value",
+          "value": "inline-masonry"
+        }
+      ],
+      "styleDeclaration": [
+        "display"
+      ]
+    },
+    {
+      "name": "masonry-direction",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-direction",
+      "value": "row | column | row-reverse | column-reverse",
+      "initial": "column",
+      "appliesTo": "masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "column",
+          "prose": "The masonry container’s stacking axis is its block axis, and masonry layout starts from its block-start edge.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-direction-column",
+          "type": "value",
+          "value": "column"
+        },
+        {
+          "name": "column-reverse",
+          "prose": "The masonry container’s stacking axis is its block axis, and masonry layout starts from its block-end edge.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-direction-column-reverse",
+          "type": "value",
+          "value": "column-reverse"
+        },
+        {
+          "name": "row",
+          "prose": "The masonry container’s stacking axis is its inline axis, and masonry layout starts from its inline-start edge.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-direction-row",
+          "type": "value",
+          "value": "row"
+        },
+        {
+          "name": "row-reverse",
+          "prose": "The masonry container’s stacking axis is its inline axis, and masonry layout starts from its inline-end edge.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-direction-row-reverse",
+          "type": "value",
+          "value": "row-reverse"
+        }
+      ],
+      "styleDeclaration": [
+        "masonry-direction",
+        "masonryDirection"
+      ]
+    },
+    {
+      "name": "masonry-fill",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-fill",
+      "value": "normal | reverse",
+      "initial": "normal",
+      "appliesTo": "masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "Ties are broken by filling the startmost track",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-fill-normal",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "reverse",
+          "prose": "Ties are broken by filling the endmost track.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-fill-reverse",
+          "type": "value",
+          "value": "reverse"
+        }
+      ],
+      "styleDeclaration": [
+        "masonry-fill",
+        "masonryFill"
+      ]
+    },
+    {
+      "name": "masonry-flow",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-flow",
+      "value": "<'masonry-direction'> || <'masonry-fill'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "masonry-flow",
+        "masonryFlow"
+      ]
+    },
+    {
+      "name": "masonry",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry",
+      "value": "<'masonry-template-areas'> || <'masonry-template-tracks'> || <'masonry-direction'> || <'masonry-fill'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "masonry"
+      ]
+    },
+    {
+      "name": "masonry-template-tracks",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-template-tracks",
+      "value": "<'grid-template-columns'>",
+      "initial": "repeat(auto-areas, auto)",
+      "appliesTo": "masonry containers",
+      "inherited": "no",
+      "percentages": "refer to correspodning dimension of the content area",
+      "computedValue": "by computed value type per item in the computed track list",
+      "canonicalOrder": "per grammar",
+      "animationType": "if list lengths match, by computed value type; otherwise, discrete",
+      "styleDeclaration": [
+        "masonry-template-tracks",
+        "masonryTemplateTracks"
+      ]
+    },
+    {
+      "name": "masonry-template-areas",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-template-areas",
+      "value": "none | <string>",
+      "initial": "none",
+      "appliesTo": "masonry containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the keyword none or a string",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "masonry-template-areas",
+        "masonryTemplateAreas"
+      ]
+    },
+    {
+      "name": "masonry-auto-tracks",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-auto-tracks",
+      "value": "<'grid-auto-columns'>",
+      "initial": "auto",
+      "appliesTo": "grid containers",
+      "inherited": "no",
+      "percentages": "refer to correspodning dimension of the content area",
+      "computedValue": "a computed track list",
+      "canonicalOrder": "per grammar",
+      "animationType": "if the list lengths match, by computed value type per item; discrete otherwise",
+      "styleDeclaration": [
+        "masonry-auto-tracks",
+        "masonryAutoTracks"
+      ]
+    },
+    {
+      "name": "masonry-slack",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-slack",
+      "value": "<length-percentage>",
+      "initial": "1em",
+      "appliesTo": "masonry containers",
+      "inherited": "no",
+      "percentages": "relative to the grid-axis content box size of the masonry container",
+      "computedValue": "a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "as length",
+      "values": [
+        {
+          "name": "<length>",
+          "prose": "Specifies the tie threshold for the masonry container. Placement positions are considered to be equally good (“tied”) if they are within the specified distance from the shortest position.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-masonry-slack-length",
+          "type": "value",
+          "value": "<length>"
+        }
+      ],
+      "styleDeclaration": [
+        "masonry-slack",
+        "masonrySlack"
+      ]
+    },
+    {
+      "name": "masonry-track-start",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-track-start",
+      "styleDeclaration": [
+        "masonry-track-start",
+        "masonryTrackStart"
+      ]
+    },
+    {
+      "name": "masonry-track-end",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-track-end",
+      "styleDeclaration": [
+        "masonry-track-end",
+        "masonryTrackEnd"
+      ]
+    },
+    {
+      "name": "masonry-track",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-masonry-track",
+      "styleDeclaration": [
+        "masonry-track",
+        "masonryTrack"
+      ]
+    }
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "auto-areas",
+      "prose": "The new auto-areas value for the repeat() notation represents the number of repetitions necessary for the total number of explicit tracks to match the grid-template-areas / masonry-template-areas value in effect in the corresponding axis. If multiple tracks are listed for the repetition, the final repetition is truncated as necessary to produce the correct number of tracks.",
+      "href": "https://www.w3.org/TR/css-grid-3/#valdef-repeat-auto-areas",
+      "type": "value",
+      "value": "auto-areas",
+      "for": "repeat()"
+    }
+  ]
+}

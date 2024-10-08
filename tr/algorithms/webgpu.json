@@ -6749,9 +6749,6 @@
           "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot②\" data-timeline=\"content\">[[configuration]]</a></code> to <var>configuration</var>.</p>"
         },
         {
-          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot③\" data-timeline=\"content\">[[configuration]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-tonemapping\" id=\"ref-for-dom-gpucanvasconfiguration-tonemapping\">toneMapping</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvastonemapping-mode\" id=\"ref-for-dom-gpucanvastonemapping-mode\">mode</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvastonemappingmode-standard\" id=\"ref-for-dom-gpucanvastonemappingmode-standard\">\"standard\"</a></code> if either of the following conditions is true:</p>\n         <ul>\n          <li data-md=\"\">\n           <p>If <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-tonemapping\" id=\"ref-for-dom-gpucanvasconfiguration-tonemapping①\">toneMapping</a></code> is not provided.</p>\n          </li><li data-md=\"\">\n           <p>If <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-tonemapping\" id=\"ref-for-dom-gpucanvasconfiguration-tonemapping②\">toneMapping</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvastonemapping-mode\" id=\"ref-for-dom-gpucanvastonemapping-mode①\">mode</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvastonemappingmode-extended\" id=\"ref-for-dom-gpucanvastonemappingmode-extended\">\"extended\"</a></code> and the user agent does not\nsupport displaying color values in the extended dynamic range of the screen\nin a canvas.</p>\n         </li></ul>"
-        },
-        {
           "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-texturedescriptor-slot\" id=\"ref-for-dom-gpucanvascontext-texturedescriptor-slot\" data-timeline=\"content\">[[textureDescriptor]]</a></code> to <var>descriptor</var>.</p>"
         },
         {
@@ -6779,7 +6776,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot④\" data-timeline=\"content\">[[configuration]]</a></code> to <code>null</code>.</p>"
+          "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot③\" data-timeline=\"content\">[[configuration]]</a></code> to <code>null</code>.</p>"
         },
         {
           "html": "<p>Set <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-texturedescriptor-slot\" id=\"ref-for-dom-gpucanvascontext-texturedescriptor-slot①\" data-timeline=\"content\">[[textureDescriptor]]</a></code> to <code>null</code>.</p>"
@@ -6795,7 +6792,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>configuration</var> be a copy of <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑤\" data-timeline=\"content\">[[configuration]]</a></code>.</p>"
+          "html": "<p>Let <var>configuration</var> be a copy of <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot④\" data-timeline=\"content\">[[configuration]]</a></code>.</p>"
         },
         {
           "html": "<p>Return <var>configuration</var>.</p>"
@@ -6808,13 +6805,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑥\" data-timeline=\"content\">[[configuration]]</a></code> is <code>null</code>,\nthrow an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and return.</p>"
+          "html": "<p>If <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑤\" data-timeline=\"content\">[[configuration]]</a></code> is <code>null</code>,\nthrow an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and return.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③⓪\">Assert</a> <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-texturedescriptor-slot\" id=\"ref-for-dom-gpucanvascontext-texturedescriptor-slot②\" data-timeline=\"content\">[[textureDescriptor]]</a></code> is not <code>null</code>.</p>"
         },
         {
-          "html": "<p>Let <var>device</var> be <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑦\" data-timeline=\"content\">[[configuration]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-device\" id=\"ref-for-dom-gpucanvasconfiguration-device①\">device</a></code>.</p>"
+          "html": "<p>Let <var>device</var> be <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑥\" data-timeline=\"content\">[[configuration]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-device\" id=\"ref-for-dom-gpucanvasconfiguration-device①\">device</a></code>.</p>"
         },
         {
           "html": "If <var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-currenttexture-slot\" id=\"ref-for-dom-gpucanvascontext-currenttexture-slot④\" data-timeline=\"content\">[[currentTexture]]</a></code> is <code>null</code>:",
@@ -6849,7 +6846,7 @@
           "html": "<p>Let <var>snapshot</var> be a transparent black image of the same size as <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-canvas\" id=\"ref-for-dom-gpucanvascontext-canvas③\" data-timeline=\"content\">canvas</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>configuration</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑧\" data-timeline=\"content\">[[configuration]]</a></code>.</p>"
+          "html": "<p>Let <var>configuration</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑦\" data-timeline=\"content\">[[configuration]]</a></code>.</p>"
         },
         {
           "html": "If <var>configuration</var> is <code>null</code>:",
@@ -6907,7 +6904,7 @@
           ]
         },
         {
-          "html": "<p>Tag <var>snapshot</var> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-colorspace\" id=\"ref-for-dom-gpucanvasconfiguration-colorspace\">colorSpace</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-tonemapping\" id=\"ref-for-dom-gpucanvasconfiguration-tonemapping④\">toneMapping</a></code> of <var>configuration</var>.</p>"
+          "html": "<p>Tag <var>snapshot</var> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-colorspace\" id=\"ref-for-dom-gpucanvasconfiguration-colorspace\">colorSpace</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-tonemapping\" id=\"ref-for-dom-gpucanvasconfiguration-tonemapping①\">toneMapping</a></code> of <var>configuration</var>.</p>"
         },
         {
           "html": "<p>Return <var>snapshot</var>.</p>"
@@ -6924,10 +6921,10 @@
           "html": "<p><a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-expire-the-current-texture\" id=\"ref-for-abstract-opdef-expire-the-current-texture⑤\" data-timeline=\"content\">Expire the current texture</a> of <var>context</var>.</p>"
         },
         {
-          "html": "<p>Let <var>configuration</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑨\" data-timeline=\"content\">[[configuration]]</a></code>.</p>"
+          "html": "<p>Let <var>configuration</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑧\" data-timeline=\"content\">[[configuration]]</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot③\" data-timeline=\"content\">[[drawingBuffer]]</a></code> to a transparent black image of the same\nsize as <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-canvas\" id=\"ref-for-dom-gpucanvascontext-canvas④\" data-timeline=\"content\">canvas</a></code>.</p>\n      <ul>\n       <li data-md=\"\">\n        <p>If <var>configuration</var> is null, the drawing buffer is tagged with the color space <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-srgb\" id=\"ref-for-dom-predefinedcolorspace-srgb\">\"srgb\"</a></code>.\nIn this case, the drawing buffer will remain blank until the context is configured.</p>\n       </li><li data-md=\"\">\n        <p>If not, the drawing buffer has the specified <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-format\" id=\"ref-for-dom-gpucanvasconfiguration-format③\">format</a></code> and is tagged with the specified <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-colorspace\" id=\"ref-for-dom-gpucanvasconfiguration-colorspace①\">colorSpace</a></code> and <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-tonemapping\" id=\"ref-for-dom-gpucanvasconfiguration-tonemapping⑤\">toneMapping</a></code>.</p>\n      </li></ul>"
+          "html": "<p>Set <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-drawingbuffer-slot\" id=\"ref-for-dom-gpucanvascontext-drawingbuffer-slot③\" data-timeline=\"content\">[[drawingBuffer]]</a></code> to a transparent black image of the same\nsize as <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-canvas\" id=\"ref-for-dom-gpucanvascontext-canvas④\" data-timeline=\"content\">canvas</a></code>.</p>\n      <ul>\n       <li data-md=\"\">\n        <p>If <var>configuration</var> is null, the drawing buffer is tagged with the color space <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-srgb\" id=\"ref-for-dom-predefinedcolorspace-srgb\">\"srgb\"</a></code>.\nIn this case, the drawing buffer will remain blank until the context is configured.</p>\n       </li><li data-md=\"\">\n        <p>If not, the drawing buffer has the specified <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-format\" id=\"ref-for-dom-gpucanvasconfiguration-format③\">format</a></code> and is tagged with the specified <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-colorspace\" id=\"ref-for-dom-gpucanvasconfiguration-colorspace①\">colorSpace</a></code> and <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-tonemapping\" id=\"ref-for-dom-gpucanvasconfiguration-tonemapping②\">toneMapping</a></code>.</p>\n      </li></ul>"
         }
       ]
     },
@@ -6996,7 +6993,7 @@
           "html": "<p><a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-replace-the-drawing-buffer\" id=\"ref-for-abstract-opdef-replace-the-drawing-buffer⑧\" data-timeline=\"content\">Replace the drawing buffer</a> of <var>context</var>.</p>"
         },
         {
-          "html": "<p>Let <var>configuration</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot①⓪\" data-timeline=\"content\">[[configuration]]</a></code></p>"
+          "html": "<p>Let <var>configuration</var> be <var>context</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot\" id=\"ref-for-dom-gpucanvascontext-configuration-slot⑨\" data-timeline=\"content\">[[configuration]]</a></code></p>"
         },
         {
           "html": "If <var>configuration</var> is not <code>null</code>:",
