@@ -2250,6 +2250,11 @@
           "param"
         ]
       },
+      "https://immersive-web.github.io/webxr/": {
+        "anchors": [
+          "xrsystem"
+        ]
+      },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "ascii-whitespace",
@@ -2682,7 +2687,8 @@
       },
       "https://w3c.github.io/IndexedDB/": {
         "anchors": [
-          "cleanup-indexed-database-transactions"
+          "cleanup-indexed-database-transactions",
+          "idbversionchangeevent"
         ]
       },
       "https://w3c.github.io/IntersectionObserver/": {
@@ -3142,7 +3148,10 @@
       },
       "https://w3c.github.io/mediacapture-main/getusermedia.html": {
         "anchors": [
-          "idl-def-mediastream"
+          "idl-def-mediastream",
+          "mediastreamtrack",
+          "idl-def-MediaStreamTrackState.live",
+          "dom-mediadevices-getusermedia"
         ]
       },
       "https://w3c.github.io/navigation-timing/": {
@@ -3175,7 +3184,11 @@
           "queue-a-performanceentry"
         ]
       },
-      "https://w3c.github.io/picture-in-picture/": {},
+      "https://w3c.github.io/picture-in-picture/": {
+        "anchors": [
+          "pictureinpicturewindow"
+        ]
+      },
       "https://w3c.github.io/pointerevents/": {
         "anchors": [
           "pointerevent-interface",
@@ -3215,6 +3228,17 @@
         "anchors": [
           "dfn-selection",
           "selection-interface"
+        ]
+      },
+      "https://w3c.github.io/sensors/": {
+        "anchors": [
+          "request-sensor-access"
+        ]
+      },
+      "https://w3c.github.io/service-workers/": {
+        "anchors": [
+          "dfn-service-worker-registration",
+          "navigator-service-worker-unregister"
         ]
       },
       "https://w3c.github.io/touch-events/": {
@@ -3271,6 +3295,11 @@
         ]
       },
       "https://w3c.github.io/web-nfc/": {},
+      "https://w3c.github.io/web-share/": {
+        "anchors": [
+          "share-method"
+        ]
+      },
       "https://w3c.github.io/webappsec-credential-management/": {
         "anchors": [
           "dom-credentialmediationrequirement-conditional",
@@ -3401,7 +3430,12 @@
           "dfn-current-browsing-context"
         ]
       },
-      "https://w3c.github.io/webrtc-pc/": {},
+      "https://w3c.github.io/webrtc-pc/": {
+        "anchors": [
+          "dom-rtcdatachannel",
+          "dom-rtcpeerconnection"
+        ]
+      },
       "https://w3c.github.io/webtransport/": {
         "anchors": [
           "webtransport",
@@ -3432,6 +3466,11 @@
         ]
       },
       "https://webaudio.github.io/web-audio-api/": {},
+      "https://webaudio.github.io/web-midi-api/": {
+        "anchors": [
+          "dom-navigator-requestmidiaccess"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "this",
@@ -3536,10 +3575,55 @@
       "https://whatwg.org/validator/": {},
       "https://wicg.github.io/background-fetch/": {
         "anchors": [
-          "extract-content-range-values"
+          "extract-content-range-values",
+          "backgroundfetchmanager",
+          "dom-backgroundfetchmanager-fetch"
+        ]
+      },
+      "https://wicg.github.io/background-sync/spec/": {
+        "anchors": [
+          "syncmanager",
+          "dom-syncmanager-register"
+        ]
+      },
+      "https://wicg.github.io/idle-detection/": {
+        "anchors": [
+          "idledetector"
+        ]
+      },
+      "https://wicg.github.io/keyboard-lock/": {
+        "anchors": [
+          "keyboard",
+          "dom-keyboard-lock"
+        ]
+      },
+      "https://wicg.github.io/periodic-background-sync/": {
+        "anchors": [
+          "periodicsyncmanager",
+          "dom-periodicsyncmanager-register"
         ]
       },
       "https://wicg.github.io/private-network-access/": {},
+      "https://wicg.github.io/speech-api/": {
+        "anchors": [
+          "speechrecognition"
+        ]
+      },
+      "https://wicg.github.io/web-otp/": {
+        "anchors": [
+          "otpcredential"
+        ]
+      },
+      "https://wicg.github.io/web-smart-card/": {
+        "anchors": [
+          "dom-smartcardconnection"
+        ]
+      },
+      "https://wicg.github.io/webhid/": {
+        "anchors": [
+          "requestdevice-method"
+        ]
+      },
       "https://wiki.mozilla.org/APNG_Specification": {},
       "https://wiki.whatwg.org/": {},
       "https://wiki.whatwg.org/wiki/DOM_XSLTProcessor": {},
