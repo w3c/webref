@@ -2640,7 +2640,7 @@
           "html": "<p>Set <var>simulatedBluetoothDevice</var>’s address to <var>params</var>[<code>\"address\"</code>].</p>"
         },
         {
-          "html": "<p>Set <var>simulatedBluetoothDevice</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#manufacturer-specific-data\" id=\"ref-for-manufacturer-specific-data⑤\">manufacturer specific data</a> to <var>params</var>[<code>\"manufacturerData\"</code>].</p>"
+          "html": "<p>Set <var>simulatedBluetoothDevice</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#manufacturer-specific-data\" id=\"ref-for-manufacturer-specific-data⑤\">manufacturer specific data</a> to the output of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-decode\" id=\"ref-for-forgiving-base64-decode\">forgiving-base64 decode</a> performed on <var>params</var>[<code>\"manufacturerData\"</code>].</p>"
         },
         {
           "html": "<p>Set <var>simulatedBluetoothDevice</var>’s <a data-link-type=\"dfn\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#service-uuid-data-type\" id=\"ref-for-service-uuid-data-type⑨\">service UUIDs</a> to <var>params</var>[<code>\"knownServiceUuids\"</code>].</p>"
