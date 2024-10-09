@@ -37,6 +37,28 @@
           "html": "<p>Otherwise, define <var>object</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#local-coordinate-system\" id=\"ref-for-local-coordinate-system④\">local coordinate system</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/accelerometer/#device-coordinate-system\" id=\"ref-for-device-coordinate-system⑤\">device coordinate system</a>.</p>"
         }
       ]
+    },
+    {
+      "name": "accelerometer reading quantization",
+      "html": "<dl>\n     <dt data-md=\"\">input\n     </dt><dd data-md=\"\">\n      <p><var>reading</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#sensor-reading\" id=\"ref-for-sensor-reading③\">sensor reading</a></p>\n     </dd><dt data-md=\"\">output\n     </dt><dd data-md=\"\">\n      <p>A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/sensors/#sensor-reading\" id=\"ref-for-sensor-reading④\">sensor reading</a></p>\n    </dd></dl>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>quantizedReading</var> be <var>reading</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>quantizedReading</var>[\"x\"] is not null, set <var>quantizedReading</var>[\"x\"] to the nearest 0.1 m/s<sup>2</sup>.</p>"
+        },
+        {
+          "html": "<p>If <var>quantizedReading</var>[\"y\"] is not null, set <var>quantizedReading</var>[\"y\"] to the nearest 0.1 m/s<sup>2</sup>.</p>"
+        },
+        {
+          "html": "<p>If <var>quantizedReading</var>[\"z\"] is not null, set <var>quantizedReading</var>[\"z\"] to the nearest 0.1 m/s<sup>2</sup>.</p>"
+        },
+        {
+          "html": "<p>Return <var>quantizedReading</var>.</p>"
+        }
+      ]
     }
   ]
 }
