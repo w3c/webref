@@ -1033,7 +1033,7 @@
         "href": "https://w3c.github.io/webtransport/#dictdef-webtransportsendstreamoptions"
       },
       "WebTransportConnectionStats": {
-        "fragment": "dictionary WebTransportConnectionStats {\n  unsigned long long bytesSent = 0;\n  unsigned long long packetsSent = 0;\n  unsigned long long bytesLost = 0;\n  unsigned long long packetsLost = 0;\n  unsigned long long bytesReceived = 0;\n  unsigned long long packetsReceived = 0;\n  required DOMHighResTimeStamp smoothedRtt;\n  required DOMHighResTimeStamp rttVariation;\n  required DOMHighResTimeStamp minRtt;\n  required WebTransportDatagramStats datagrams;\n  required unsigned long long? estimatedSendRate;\n};",
+        "fragment": "dictionary WebTransportConnectionStats {\n  unsigned long long bytesSent = 0;\n  unsigned long long packetsSent = 0;\n  unsigned long long bytesLost = 0;\n  unsigned long long packetsLost = 0;\n  unsigned long long bytesReceived = 0;\n  unsigned long long packetsReceived = 0;\n  required DOMHighResTimeStamp smoothedRtt;\n  required DOMHighResTimeStamp rttVariation;\n  required DOMHighResTimeStamp minRtt;\n  required WebTransportDatagramStats datagrams;\n  unsigned long long? estimatedSendRate = null;\n  boolean atSendCapacity = false;\n};",
         "type": "dictionary",
         "name": "WebTransportConnectionStats",
         "inheritance": null,
@@ -1228,9 +1228,30 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": null,
-            "required": true,
+            "default": {
+              "type": "null"
+            },
+            "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-estimatedsendrate"
+          },
+          {
+            "type": "field",
+            "name": "atSendCapacity",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-atsendcapacity"
           }
         ],
         "extAttrs": [],

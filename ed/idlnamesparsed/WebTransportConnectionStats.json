@@ -6,7 +6,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "dictionary WebTransportConnectionStats {\n  unsigned long long bytesSent = 0;\n  unsigned long long packetsSent = 0;\n  unsigned long long bytesLost = 0;\n  unsigned long long packetsLost = 0;\n  unsigned long long bytesReceived = 0;\n  unsigned long long packetsReceived = 0;\n  required DOMHighResTimeStamp smoothedRtt;\n  required DOMHighResTimeStamp rttVariation;\n  required DOMHighResTimeStamp minRtt;\n  required WebTransportDatagramStats datagrams;\n  required unsigned long long? estimatedSendRate;\n};",
+    "fragment": "dictionary WebTransportConnectionStats {\n  unsigned long long bytesSent = 0;\n  unsigned long long packetsSent = 0;\n  unsigned long long bytesLost = 0;\n  unsigned long long packetsLost = 0;\n  unsigned long long bytesReceived = 0;\n  unsigned long long packetsReceived = 0;\n  required DOMHighResTimeStamp smoothedRtt;\n  required DOMHighResTimeStamp rttVariation;\n  required DOMHighResTimeStamp minRtt;\n  required WebTransportDatagramStats datagrams;\n  unsigned long long? estimatedSendRate = null;\n  boolean atSendCapacity = false;\n};",
     "href": "https://w3c.github.io/webtransport/#dictdef-webtransportconnectionstats"
   },
   "extended": [],

@@ -10,5 +10,6 @@ dictionary WebTransportConnectionStats {
   required DOMHighResTimeStamp rttVariation;
   required DOMHighResTimeStamp minRtt;
   required WebTransportDatagramStats datagrams;
-  required unsigned long long? estimatedSendRate;
+  unsigned long long? estimatedSendRate = null;
+  boolean atSendCapacity = false;
 };
