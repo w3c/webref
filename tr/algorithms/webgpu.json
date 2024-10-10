@@ -6740,7 +6740,10 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑨\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-validate-texture-format-required-features\" id=\"ref-for-abstract-opdef-validate-texture-format-required-features⑧\" data-timeline=\"content\">Validate texture format required features</a> of <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-format\" id=\"ref-for-dom-gpucanvasconfiguration-format①\">format</a></code> with <var>device</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuobjectbase-device-slot\" id=\"ref-for-dom-gpuobjectbase-device-slot⑧④\" data-timeline=\"const\">[[device]]</a></code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-validate-texture-format-required-features\" id=\"ref-for-abstract-opdef-validate-texture-format-required-features⑨\" data-timeline=\"content\">Validate texture format required features</a> of each element of <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputexturedescriptor-viewformats\" id=\"ref-for-dom-gputexturedescriptor-viewformats⑥\">viewFormats</a></code> with <var>device</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuobjectbase-device-slot\" id=\"ref-for-dom-gpuobjectbase-device-slot⑧⑤\" data-timeline=\"const\">[[device]]</a></code>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-validate-texture-format-required-features\" id=\"ref-for-abstract-opdef-validate-texture-format-required-features⑨\" data-timeline=\"content\">Validate texture format required features</a> of each element of <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-viewformats\" id=\"ref-for-dom-gpucanvasconfiguration-viewformats\">viewFormats</a></code> with <var>device</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuobjectbase-device-slot\" id=\"ref-for-dom-gpuobjectbase-device-slot⑧⑤\" data-timeline=\"const\">[[device]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#supported-context-formats\" id=\"ref-for-supported-context-formats\">Supported context formats</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contain</a> <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-format\" id=\"ref-for-dom-gpucanvasconfiguration-format②\">format</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①④\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>descriptor</var> be the <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-gputexturedescriptor-for-the-canvas-and-configuration\" id=\"ref-for-abstract-opdef-gputexturedescriptor-for-the-canvas-and-configuration\" data-timeline=\"content\">GPUTextureDescriptor for the canvas and configuration</a>(<var>this</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-canvas\" id=\"ref-for-dom-gpucanvascontext-canvas②\" data-timeline=\"content\">canvas</a></code>, <var>configuration</var>).</p>"
@@ -6766,7 +6769,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If any of the following requirements are unmet, <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-generate-a-validation-error\" id=\"ref-for-abstract-opdef-generate-a-validation-error③④\" data-timeline=\"device\">generate a validation error</a> and return.</p>\n         <div class=\"validusage\">\n          <ul>\n           <li data-md=\"\">\n            <p><a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-validating-gputexturedescriptor\" id=\"ref-for-abstract-opdef-validating-gputexturedescriptor①\" data-timeline=\"device\">validating GPUTextureDescriptor</a>(<var>device</var>, <var>descriptor</var>)\nmust return true.</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#supported-context-formats\" id=\"ref-for-supported-context-formats\">Supported context formats</a> must <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contain</a> <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-format\" id=\"ref-for-dom-gpucanvasconfiguration-format②\">format</a></code>.</p>\n          </li></ul>\n         </div>"
+          "html": "<p>If any of the following requirements are unmet, <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-generate-a-validation-error\" id=\"ref-for-abstract-opdef-generate-a-validation-error③④\" data-timeline=\"device\">generate a validation error</a> and return.</p>\n         <div class=\"validusage\">\n          <ul>\n           <li data-md=\"\">\n            <p><a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-validating-gputexturedescriptor\" id=\"ref-for-abstract-opdef-validating-gputexturedescriptor①\" data-timeline=\"device\">validating GPUTextureDescriptor</a>(<var>device</var>, <var>descriptor</var>)\nmust return true.</p>\n          </li></ul>\n         </div>"
         }
       ]
     },
@@ -8027,7 +8030,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①④\">TypeError</a></code> if <var>color</var> is a sequence and <var>color</var>.<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①④\">size</a> ≠ 4.</p>"
+          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑤\">TypeError</a></code> if <var>color</var> is a sequence and <var>color</var>.<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①④\">size</a> ≠ 4.</p>"
         }
       ]
     },
@@ -8038,7 +8041,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑤\">TypeError</a></code> if <var>origin</var> is a sequence and <var>origin</var>.<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⑤\">size</a> &gt; 2.</p>"
+          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑥\">TypeError</a></code> if <var>origin</var> is a sequence and <var>origin</var>.<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⑤\">size</a> &gt; 2.</p>"
         }
       ]
     },
@@ -8049,7 +8052,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑥\">TypeError</a></code> if <var>origin</var> is a sequence and <var>origin</var>.<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⑥\">size</a> &gt; 3.</p>"
+          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑦\">TypeError</a></code> if <var>origin</var> is a sequence and <var>origin</var>.<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⑥\">size</a> &gt; 3.</p>"
         }
       ]
     },
@@ -8060,7 +8063,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑦\">TypeError</a></code> if:</p>"
+          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⑧\">TypeError</a></code> if:</p>"
         }
       ]
     }
