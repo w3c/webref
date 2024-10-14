@@ -533,69 +533,6 @@
       "definedIn": "table"
     },
     {
-      "id": "valdef-view-transition-group-normal",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-normal",
-      "linkingText": [
-        "normal"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "view-transition-group"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "view-transition-group-prop",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-group-prop",
-        "title": "The view-transition-group property",
-        "number": "7.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-view-transition-group-nearest",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-nearest",
-      "linkingText": [
-        "nearest"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "view-transition-group"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "view-transition-group-prop",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-group-prop",
-        "title": "The view-transition-group property",
-        "number": "7.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-view-transition-group-contain",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-contain",
-      "linkingText": [
-        "contain"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "view-transition-group"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "view-transition-group-prop",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-group-prop",
-        "title": "The view-transition-group property",
-        "number": "7.3"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "document-inbound-view-transition-params",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#document-inbound-view-transition-params",
       "linkingText": [
@@ -899,6 +836,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "document-scoped-view-transition-group",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-scoped-view-transition-group",
+      "linkingText": [
+        "document-scoped view transition group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vt-group-value-resolve",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-value-resolve",
+        "title": "Resolving the view-transition-group value",
+        "number": "8.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "nearest-containing-group-name",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#nearest-containing-group-name",
       "linkingText": [
@@ -910,12 +866,94 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "vt-group-nearest-contain",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-nearest-contain",
-        "title": "Compute the nearest containing view-transition-group",
-        "number": "8.7.1"
+        "id": "vt-containing-group-name-resolve",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-containing-group-name-resolve",
+        "title": "Resolving the containing group name",
+        "number": "8.7.2"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "used-group-name",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#used-group-name",
+      "linkingText": [
+        "used group name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vt-group-name-resolve",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-name-resolve",
+        "title": "Resolving the group name",
+        "number": "8.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-view-transition-group-normal",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "view-transition-group"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "vt-group-name-resolve",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-name-resolve",
+        "title": "Resolving the group name",
+        "number": "8.7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-view-transition-group-contain",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-contain",
+      "linkingText": [
+        "contain"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "view-transition-group"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "vt-group-name-resolve",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-name-resolve",
+        "title": "Resolving the group name",
+        "number": "8.7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-view-transition-group-nearest",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-nearest",
+      "linkingText": [
+        "nearest"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "view-transition-group"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "vt-group-name-resolve",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-name-resolve",
+        "title": "Resolving the group name",
+        "number": "8.7.3"
+      },
+      "definedIn": "dt"
     }
   ]
 }
