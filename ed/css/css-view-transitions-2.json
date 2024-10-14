@@ -50,28 +50,28 @@
       "values": [
         {
           "name": "normal",
-          "prose": "The used value is the element’s nearest containing group name.",
+          "prose": "containingGroupName.",
           "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-normal",
           "type": "value",
           "value": "normal"
         },
         {
-          "name": "nearest",
-          "prose": "The used value is the view-transition-name computed value of the nearest ancestor whose view-transition-name computed value is not none.",
-          "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-nearest",
-          "type": "value",
-          "value": "nearest"
-        },
-        {
           "name": "contain",
-          "prose": "The used value is the element’s nearest containing group name.",
+          "prose": "containingGroupName.",
           "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-contain",
           "type": "value",
           "value": "contain"
         },
         {
+          "name": "nearest",
+          "prose": "The document-scoped view transition name of the element’s nearest flat tree ancestor which participates in the transition.",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-nearest",
+          "type": "value",
+          "value": "nearest"
+        },
+        {
           "name": "<custom-ident>",
-          "prose": "The used value is the given <custom-ident> if the element has an ancestor whose view-transition-name computed value is that <custom-ident>, otherwise the element’s nearest containing group name",
+          "prose": "group if the element has a flat tree ancestor whose document-scoped view transition name is group and participates in transition; Otherwise containingGroupName.",
           "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-group-custom-ident",
           "type": "value",
           "value": "<custom-ident>"
