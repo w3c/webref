@@ -7,13 +7,16 @@
     {
       "name": "parse a serialized CSP",
       "href": "https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-parse-a-serialized-csp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a serialized CSP</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>serialized</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-source\" id=\"ref-for-policy-source①\">source</a> <var>source</var>, and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition\">disposition</a> <var>disposition</var>, execute the\n  following steps.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-parse-a-serialized-csp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a serialized CSP</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>serialized</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-source\" id=\"ref-for-policy-source①\">source</a> <var>source</var>, and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition\">disposition</a> <var>disposition</var>, execute the following steps.",
       "rationale": "To <dfn>"
     },
     {
       "html": "This algorithm returns a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③\">Content Security Policy object</a>. If <var>serialized</var> could not be\n  parsed, the object’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set\">directive set</a> will be empty.",
       "rationale": ".algorithm",
       "steps": [
+        {
+          "html": "<p>If <var>serialized</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a>, then set <var>serialized</var> to be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-decode\" id=\"ref-for-isomorphic-decode\">isomorphic decoding</a> <var>serialized</var>.</p>"
+        },
         {
           "html": "<p>Let <var>policy</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④\">policy</a> with an empty <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set①\">directive set</a>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-source\" id=\"ref-for-policy-source②\">source</a> of <var>source</var>, and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①\">disposition</a> of <var>disposition</var>.</p>"
         },
@@ -53,55 +56,44 @@
       ]
     },
     {
-      "name": "parse a serialized CSP list",
-      "href": "https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp-list",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-parse-a-serialized-csp-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a serialized CSP list</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> <var>list</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-source\" id=\"ref-for-policy-source③\">source</a> <var>source</var>, and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition②\">disposition</a> <var>disposition</var>, execute\n  the following steps.",
+      "name": "parse a response’s Content Security Policies",
+      "href": "https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-responses-content-security-policies",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-parse-a-responses-content-security-policies\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a response’s Content Security Policies</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var>, execute the following steps.",
       "rationale": "To <dfn>"
     },
     {
-      "html": "This algorithm returns a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤\">Content Security Policy objects</a>. If <var>list</var> cannot be\n  parsed, the returned list will be empty.",
+      "html": "This algorithm returns a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤\">Content Security Policy objects</a>. If the policies cannot\n  be parsed, the returned list will be empty.",
       "rationale": ".algorithm",
       "steps": [
-        {
-          "html": "<p>If <var>list</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a>, then set <var>list</var> to be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-decode\" id=\"ref-for-isomorphic-decode\">isomorphic decoding</a> <var>list</var>.</p>"
-        },
         {
           "html": "<p>Let <var>policies</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>token</var> returned by <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#split-on-commas\" id=\"ref-for-split-on-commas\">splitting <var>list</var> on commas</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>token</var> returned by <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#extract-header-list-values\" id=\"ref-for-extract-header-list-values\">extracting header list values</a> given <code>Content-Security-Policy</code> and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>policy</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp\" id=\"ref-for-abstract-opdef-parse-a-serialized-csp\">parsing</a> <var>token</var>, with a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-source\" id=\"ref-for-policy-source④\">source</a> of <var>source</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition③\">disposition</a> of <var>disposition</var>.</p>"
+              "html": "<p>Let <var>policy</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/CSP3/#abstract-opdef-parse-a-serialized-csp-list\" id=\"ref-for-abstract-opdef-parse-a-serialized-csp-list\">parsing</a> <var>token</var>, with a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-source\" id=\"ref-for-policy-source③\">source</a> of \"<code>header</code>\", and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition②\">disposition</a> of \"<code>enforce</code>\".</p>"
             },
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set④\">directive set</a> is empty, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>policy</var> to <var>policies</var>.</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set④\">directive set</a> is not empty, append <var>policy</var> to <var>policies</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return <var>policies</var>.</p>"
-        }
-      ]
-    },
-    {
-      "name": "parse a response’s Content Security Policies",
-      "href": "https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-responses-content-security-policies",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-parse-a-responses-content-security-policies\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a response’s Content Security Policies</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>policies</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp-list\" id=\"ref-for-abstract-opdef-parse-a-serialized-csp-list\">parsing</a> the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#extract-header-list-values\" id=\"ref-for-extract-header-list-values\">extracting header list values</a> given <code>Content-Security-Policy</code> and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>, with a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-source\" id=\"ref-for-policy-source⑤\">source</a> of \"<code>header</code>\", and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition④\">disposition</a> of \"<code>enforce</code>\".</p>"
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>token</var> returned by <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#extract-header-list-values\" id=\"ref-for-extract-header-list-values①\">extracting header list values</a> given <code>Content-Security-Policy-Report-Only</code> and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>policy</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/CSP3/#abstract-opdef-parse-a-serialized-csp-list\" id=\"ref-for-abstract-opdef-parse-a-serialized-csp-list①\">parsing</a> <var>token</var>, with a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-source\" id=\"ref-for-policy-source④\">source</a> of \"<code>header</code>\", and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition③\">disposition</a> of \"<code>report</code>\".</p>"
+            },
+            {
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set⑤\">directive set</a> is not empty, append <var>policy</var> to <var>policies</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Append to <var>policies</var> the result of <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp-list\" id=\"ref-for-abstract-opdef-parse-a-serialized-csp-list①\">parsing</a> the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#extract-header-list-values\" id=\"ref-for-extract-header-list-values①\">extracting header list values</a> given <code>Content-Security-Policy-Report-Only</code> and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>, with a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-source\" id=\"ref-for-policy-source⑥\">source</a> of \"<code>header</code>\", and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition⑤\">disposition</a> of \"<code>report</code>\".</p>"
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>policy</var> of <var>policies</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>policy</var> of <var>policies</var>:",
           "rationale": "set",
           "steps": [
             {
@@ -115,7 +107,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object③\">global object</a> <var>global</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①⑧\">policy</a> <var>policy</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑥\">string</a> <var>directive</var>, the following algorithm creates a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation\" id=\"ref-for-violation①⑧\">violation</a> object, and populates it with an initial set of data:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object③\">global object</a> <var>global</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①⑧\">policy</a> <var>policy</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>directive</var>, the following algorithm creates a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation\" id=\"ref-for-violation①⑧\">violation</a> object, and populates it with an initial set of data:",
       "rationale": "let",
       "steps": [
         {
@@ -161,11 +153,11 @@
           "html": "<p>Let <var>CSP list</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container①\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①\">CSP list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>policy</var> of <var>CSP list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>policy</var> of <var>CSP list</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition⑦\">disposition</a> is \"<code>enforce</code>\",\n  then skip to the next <var>policy</var>.</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition⑤\">disposition</a> is \"<code>enforce</code>\",\n  then skip to the next <var>policy</var>.</p>"
             },
             {
               "html": "<p>Let <var>violates</var> be the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#does-request-violate-policy\">§ 6.7.2.1 Does request violate policy?</a> on <var>request</var> and <var>policy</var>.</p>"
@@ -188,11 +180,11 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>policy</var> of <var>CSP list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>policy</var> of <var>CSP list</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition⑧\">disposition</a> is \"<code>report</code>\",\n  then skip to the next <var>policy</var>.</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition⑥\">disposition</a> is \"<code>report</code>\",\n  then skip to the next <var>policy</var>.</p>"
             },
             {
               "html": "<p>Let <var>violates</var> be the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#does-request-violate-policy\">§ 6.7.2.1 Does request violate policy?</a> on <var>request</var> and <var>policy</var>.</p>"
@@ -227,11 +219,11 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>policy</var> of <var>CSP list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>policy</var> of <var>CSP list</var>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -242,7 +234,7 @@
                       "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">§ 5.5 Report a violation</a> on the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#create-violation-for-request\">§ 2.4.2 Create a violation object for request, and policy.</a> on <var>request</var>, and <var>policy</var>.</p>"
                     },
                     {
-                      "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition⑨\">disposition</a> is \"<code>enforce</code>\",\n  then set <var>result</var> to \"<code>Blocked</code>\".</p>"
+                      "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition⑦\">disposition</a> is \"<code>enforce</code>\",\n  then set <var>result</var> to \"<code>Blocked</code>\".</p>"
                     }
                   ]
                 }
@@ -260,11 +252,11 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>policy</var> of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-policy-container\" id=\"ref-for-concept-document-policy-container\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list⑦\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>policy</var> of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-policy-container\" id=\"ref-for-concept-document-policy-container\">policy container</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list⑦\">CSP list</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "execute",
               "steps": [
                 {
@@ -302,11 +294,11 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>policy</var> of <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object⑧\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list③\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>policy</var> of <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object⑧\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list③\">CSP list</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>directive</var> of <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set⑥\">directive set</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>directive</var> of <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set⑦\">directive set</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -331,7 +323,7 @@
                   "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">§ 5.5 Report a violation</a> on <var>violation</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①⓪\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
+                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition⑧\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
                 }
               ]
             }
@@ -350,11 +342,11 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>policy</var> of <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑥\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①⓪\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>policy</var> of <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑥\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①⓪\">CSP list</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -370,7 +362,7 @@
                   "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">§ 5.5 Report a violation</a> on <var>violation</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①①\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
+                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition⑨\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
                 }
               ]
             }
@@ -381,11 +373,11 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>policy</var> of <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global③\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list④\">CSP list</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>policy</var> of <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global③\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list④\">CSP list</a>:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>directive</var> of <var>policy</var>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>directive</var> of <var>policy</var>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -404,7 +396,7 @@
                       "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">§ 5.5 Report a violation</a> on <var>violation</var>.</p>"
                     },
                     {
-                      "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①②\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
+                      "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①⓪\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
                     }
                   ]
                 }
@@ -425,11 +417,11 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>policy</var> of <var>response CSP list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>policy</var> of <var>response CSP list</var>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -445,18 +437,18 @@
                   "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">§ 5.5 Report a violation</a> on <var>violation</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①③\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
+                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①①\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
                 }
               ]
             }
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>policy</var> of <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑦\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①①\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>policy</var> of <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑦\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①①\">CSP list</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -472,7 +464,7 @@
                   "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">§ 5.5 Report a violation</a> on <var>violation</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①④\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
+                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①②\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
                 }
               ]
             }
@@ -491,11 +483,11 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑤\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑤\">CSP list</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "execute",
               "steps": [
                 {
@@ -518,15 +510,15 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑥\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑥\">CSP list</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-webrtc-pre-connect-check\" id=\"ref-for-directive-webrtc-pre-connect-check\">webrtc pre-connect check</a> returns \"<code>Allowed</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+                  "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-webrtc-pre-connect-check\" id=\"ref-for-directive-webrtc-pre-connect-check\">webrtc pre-connect check</a> returns \"<code>Allowed</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
                 },
                 {
                   "html": "<p>Otherwise, let <var>violation</var> be the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#create-violation-for-global\">§ 2.4.1 Create a violation object for global, policy, and directive</a> on <var>global</var>, <var>policy</var>, and <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name⑥\">name</a>.</p>"
@@ -538,7 +530,7 @@
                   "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">§ 5.5 Report a violation</a> on <var>violation</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①⑤\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
+                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①③\">disposition</a> is \"<code>enforce</code>\", then\n  set <var>result</var> to \"<code>Blocked</code>\".</p>"
                 }
               ]
             }
@@ -589,7 +581,7 @@
                   "html": "<p class=\"assertion\">Assert: <var>parameterArgs</var>’ [list/size=] is equal to [parameterStrings]' <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>index</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the range</a> 0 to |parameterArgs]' [list/size=]:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>index</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the range</a> 0 to |parameterArgs]' [list/size=]:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -632,7 +624,7 @@
           "html": "<p>Let <var>global</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑧\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑧\">CSP list</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -658,7 +650,7 @@
                   "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">§ 5.5 Report a violation</a> on <var>violation</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①⑥\">disposition</a> is \"<code>enforce</code>\", then set <var>result</var> to\n  \"<code>Blocked</code>\".</p>"
+                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①④\">disposition</a> is \"<code>enforce</code>\", then set <var>result</var> to\n  \"<code>Blocked</code>\".</p>"
                 }
               ]
             }
@@ -680,7 +672,7 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list①⓪\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list①⓪\">CSP list</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -703,7 +695,7 @@
                   "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">§ 5.5 Report a violation</a> on <var>violation</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①⑦\">disposition</a> is \"<code>enforce</code>\", then set <var>result</var> to\n  \"<code>Blocked</code>\".</p>"
+                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①⑤\">disposition</a> is \"<code>enforce</code>\", then set <var>result</var> to\n  \"<code>Blocked</code>\".</p>"
                 }
               ]
             }
@@ -715,11 +707,11 @@
       ]
     },
     {
-      "html": "Given a violation’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-resource\" id=\"ref-for-violation-resource①③\">resource</a> <var>resource</var>, this algorithm returns a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦\">string</a>, to be used as the blocked URI field for violation reports.",
+      "html": "Given a violation’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-resource\" id=\"ref-for-violation-resource①③\">resource</a> <var>resource</var>, this algorithm returns a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑥\">string</a>, to be used as the blocked URI field for violation reports.",
       "rationale": "assert",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>resource</var> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a> or a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑧\">string</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>resource</var> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a> or a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦\">string</a>.</p>"
         },
         {
           "html": "<p>If <var>resource</var> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a>, return the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>resource</var>.</p>"
@@ -734,7 +726,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> with its keys initialized as\n  follows:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>document-uri</code>\"\n       </dt><dd data-md=\"\">\n        <p>The result of executing <a href=\"https://w3c.github.io/webappsec-csp/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-url\" id=\"ref-for-violation-url\">url</a>.</p>\n       </dd><dt data-md=\"\">\"<code>referrer</code>\"\n       </dt><dd data-md=\"\">\n        <p>The result of executing <a href=\"https://w3c.github.io/webappsec-csp/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-referrer\" id=\"ref-for-violation-referrer①\">referrer</a>.</p>\n       </dd><dt data-md=\"\">\"<code>blocked-uri</code>\"\n       </dt><dd data-md=\"\">\n        <p>The result of executing <a href=\"https://w3c.github.io/webappsec-csp/#obtain-violation-blocked-uri\">§ 5.2 Obtain the blockedURI of a violation’s resource</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-resource\" id=\"ref-for-violation-resource①④\">resource</a>.</p>\n       </dd><dt data-md=\"\">\"<code>effective-directive</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-effective-directive\" id=\"ref-for-violation-effective-directive①\">effective directive</a></p>\n       </dd><dt data-md=\"\">\"<code>violated-directive</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-effective-directive\" id=\"ref-for-violation-effective-directive②\">effective directive</a></p>\n       </dd><dt data-md=\"\">\"<code>original-policy</code>\"\n       </dt><dd data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp⑤\">serialization</a> of <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy①\">policy</a></p>\n       </dd><dt data-md=\"\">\"<code>disposition</code>\"\n       </dt><dd data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①⑧\">disposition</a> of <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy②\">policy</a></p>\n       </dd><dt data-md=\"\">\"<code>status-code</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-status\" id=\"ref-for-violation-status①\">status</a></p>\n       </dd><dt data-md=\"\">\"<code>script-sample</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-sample\" id=\"ref-for-violation-sample④\">sample</a></p>\n        \n      </dd></dl>"
+          "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> with its keys initialized as\n  follows:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>document-uri</code>\"\n       </dt><dd data-md=\"\">\n        <p>The result of executing <a href=\"https://w3c.github.io/webappsec-csp/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-url\" id=\"ref-for-violation-url\">url</a>.</p>\n       </dd><dt data-md=\"\">\"<code>referrer</code>\"\n       </dt><dd data-md=\"\">\n        <p>The result of executing <a href=\"https://w3c.github.io/webappsec-csp/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-referrer\" id=\"ref-for-violation-referrer①\">referrer</a>.</p>\n       </dd><dt data-md=\"\">\"<code>blocked-uri</code>\"\n       </dt><dd data-md=\"\">\n        <p>The result of executing <a href=\"https://w3c.github.io/webappsec-csp/#obtain-violation-blocked-uri\">§ 5.2 Obtain the blockedURI of a violation’s resource</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-resource\" id=\"ref-for-violation-resource①④\">resource</a>.</p>\n       </dd><dt data-md=\"\">\"<code>effective-directive</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-effective-directive\" id=\"ref-for-violation-effective-directive①\">effective directive</a></p>\n       </dd><dt data-md=\"\">\"<code>violated-directive</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-effective-directive\" id=\"ref-for-violation-effective-directive②\">effective directive</a></p>\n       </dd><dt data-md=\"\">\"<code>original-policy</code>\"\n       </dt><dd data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp⑤\">serialization</a> of <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy①\">policy</a></p>\n       </dd><dt data-md=\"\">\"<code>disposition</code>\"\n       </dt><dd data-md=\"\">\n        <p>The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①⑥\">disposition</a> of <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy②\">policy</a></p>\n       </dd><dt data-md=\"\">\"<code>status-code</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-status\" id=\"ref-for-violation-status①\">status</a></p>\n       </dd><dt data-md=\"\">\"<code>script-sample</code>\"\n       </dt><dd data-md=\"\">\n        <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-sample\" id=\"ref-for-violation-sample④\">sample</a></p>\n        \n      </dd></dl>"
         },
         {
           "html": "If <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-source-file\" id=\"ref-for-violation-source-file②\">source file</a> is not null:",
@@ -813,14 +805,14 @@
               "html": "<p>If <var>target</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements②\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#eventtarget\" id=\"ref-for-eventtarget\">EventTarget</a></code>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <dfn class=\"idl-code\" data-dfn-for=\"GlobalEventHandlers,WorkerGlobalScope\" data-dfn-type=\"event\" data-export=\"\" id=\"eventdef-globaleventhandlers-securitypolicyviolation\"><code>securitypolicyviolation</code><a class=\"self-link\" href=\"https://w3c.github.io/webappsec-csp/#eventdef-globaleventhandlers-securitypolicyviolation\"></a></dfn> that uses the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#securitypolicyviolationevent\" id=\"ref-for-securitypolicyviolationevent②\">SecurityPolicyViolationEvent</a></code> interface at <var>target</var> with its attributes initialized as follows:</p>\n        <dl>\n         <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-documenturi\" id=\"ref-for-dom-securitypolicyviolationevent-documenturi\">documentURI</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://w3c.github.io/webappsec-csp/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-url\" id=\"ref-for-violation-url①\">url</a>.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-referrer\" id=\"ref-for-dom-securitypolicyviolationevent-referrer\">referrer</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://w3c.github.io/webappsec-csp/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-referrer\" id=\"ref-for-violation-referrer②\">referrer</a>.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-blockeduri\" id=\"ref-for-dom-securitypolicyviolationevent-blockeduri①\">blockedURI</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://w3c.github.io/webappsec-csp/#obtain-violation-blocked-uri\">§ 5.2 Obtain the blockedURI of a violation’s resource</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-resource\" id=\"ref-for-violation-resource①⑤\">resource</a>.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-effectivedirective\" id=\"ref-for-dom-securitypolicyviolationevent-effectivedirective\">effectiveDirective</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-effective-directive\" id=\"ref-for-violation-effective-directive③\">effective directive</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-violateddirective\" id=\"ref-for-dom-securitypolicyviolationevent-violateddirective\">violatedDirective</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-effective-directive\" id=\"ref-for-violation-effective-directive④\">effective directive</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-originalpolicy\" id=\"ref-for-dom-securitypolicyviolationevent-originalpolicy\">originalPolicy</a></code>\n         </dt><dd data-md=\"\">\n          <p>The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp⑥\">serialization</a> of <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy⑤\">policy</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-disposition\" id=\"ref-for-dom-securitypolicyviolationevent-disposition\">disposition</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-disposition\" id=\"ref-for-violation-disposition\">disposition</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-sourcefile\" id=\"ref-for-dom-securitypolicyviolationevent-sourcefile\">sourceFile</a></code>\n         </dt><dd data-md=\"\">\n          <p>The result of executing <a href=\"https://w3c.github.io/webappsec-csp/#strip-url-for-use-in-reports\">§ 5.4 Strip URL for use in reports</a> on <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-source-file\" id=\"ref-for-violation-source-file④\">source file</a>, if <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-source-file\" id=\"ref-for-violation-source-file⑤\">source file</a> is not null, or null otherwise.</p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-statuscode\" id=\"ref-for-dom-securitypolicyviolationevent-statuscode\">statusCode</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-status\" id=\"ref-for-violation-status②\">status</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-linenumber\" id=\"ref-for-dom-securitypolicyviolationevent-linenumber\">lineNumber</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-line-number\" id=\"ref-for-violation-line-number②\">line number</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-columnnumber\" id=\"ref-for-dom-securitypolicyviolationevent-columnnumber\">columnNumber</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-column-number\" id=\"ref-for-violation-column-number②\">column number</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-sample\" id=\"ref-for-dom-securitypolicyviolationevent-sample①\">sample</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-sample\" id=\"ref-for-violation-sample⑤\">sample</a></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles\">bubbles</a></code>\n         </dt><dd data-md=\"\">\n          <p><code>true</code></p>\n         </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-composed\" id=\"ref-for-dom-event-composed\">composed</a></code>\n         </dt><dd data-md=\"\">\n          <p><code>true</code></p>\n        </dd></dl>"
             },
             {
-              "html": "If <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy⑥\">policy</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set⑦\">directive\n  set</a> contains a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives①④\">directive</a> named \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#report-uri\" id=\"ref-for-report-uri①\"><code>report-uri</code></a>\" <var>directive</var>:",
+              "html": "If <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy⑥\">policy</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set⑧\">directive\n  set</a> contains a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives①④\">directive</a> named \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#report-uri\" id=\"ref-for-report-uri①\"><code>report-uri</code></a>\" <var>directive</var>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy⑦\">policy</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set⑧\">directive set</a> contains a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives①⑤\">directive</a> named\n  \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#report-to\" id=\"ref-for-report-to①\"><code>report-to</code></a>\", skip the remaining substeps.</p>"
+                  "html": "<p>If <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy⑦\">policy</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set⑨\">directive set</a> contains a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives①⑤\">directive</a> named\n  \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#report-to\" id=\"ref-for-report-to①\"><code>report-to</code></a>\", skip the remaining substeps.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> <var>token</var> of <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑨\">value</a>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>token</var> of <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑨\">value</a>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -840,7 +832,7 @@
               ]
             },
             {
-              "html": "If <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy⑧\">policy</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set⑨\">directive\n  set</a> contains a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives①⑥\">directive</a> named \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#report-to\" id=\"ref-for-report-to②\"><code>report-to</code></a>\" <var>directive</var>:",
+              "html": "If <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy⑧\">policy</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set①⓪\">directive\n  set</a> contains a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives①⑥\">directive</a> named \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#report-to\" id=\"ref-for-report-to②\"><code>report-to</code></a>\" <var>directive</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -1535,14 +1527,14 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>policy</var> of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①①\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list①①\">csp list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>policy</var> of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①①\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list①①\">csp list</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>source list</var> be null.</p>"
             },
             {
-              "html": "<p>If a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②③\">directive</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name①⑥\">name</a> is\n  \"<code>base-uri</code>\" is present in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set①⓪\">directive\n  set</a>, set <var>source list</var> to that <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②④\">directive</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④⑧\">value</a>.</p>"
+              "html": "<p>If a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②③\">directive</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name①⑥\">name</a> is\n  \"<code>base-uri</code>\" is present in <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set①①\">directive\n  set</a>, set <var>source list</var> to that <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②④\">directive</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④⑧\">value</a>.</p>"
             },
             {
               "html": "<p>If <var>source list</var> is null, skip to the next <var>policy</var>.</p>"
@@ -1561,7 +1553,7 @@
                   "html": "<p>Execute <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">§ 5.5 Report a violation</a> on <var>violation</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①⑨\">disposition</a> is \"<code>enforce</code>\",\n  return \"<code>Blocked</code>\".</p>"
+                  "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①⑦\">disposition</a> is \"<code>enforce</code>\",\n  return \"<code>Blocked</code>\".</p>"
                 }
               ]
             }
@@ -1577,7 +1569,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition②⓪\">disposition</a> is not \"<code>enforce</code>\", or <var>context</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope②\">WorkerGlobalScope</a></code>, then abort this algorithm.</p>"
+          "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition①⑧\">disposition</a> is not \"<code>enforce</code>\", or <var>context</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope②\">WorkerGlobalScope</a></code>, then abort this algorithm.</p>"
         },
         {
           "html": "<p>Let <var>sandboxing flag set</var> be a new <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#sandboxing-flag-set\" id=\"ref-for-sandboxing-flag-set\">sandboxing flag set</a>.</p>"
@@ -1733,7 +1725,7 @@
           "html": "<p>Let <var>violates</var> be \"<code>Does Not Violate</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>directive</var> of <var>policy</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>directive</var> of <var>policy</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1760,7 +1752,7 @@
           "html": "<p>If <var>defaultDirective</var> does not exist, return \"<code>Does Not Violate</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>directive</var> of <var>policy</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⓪\">For each</a> <var>directive</var> of <var>policy</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -1787,7 +1779,7 @@
           "html": "<p>If <var>nonce</var> is the empty string, return \"<code>Does Not Match</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⓪\">For each</a> <var>expression</var> of <var>source list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③①\">For each</a> <var>expression</var> of <var>source list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1820,7 +1812,7 @@
           "html": "<p>If <var>integrity sources</var> is \"<code>no metadata</code>\" or an empty set, return \"<code>Does       Not Match</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③①\">For each</a> <var>source</var> of <var>integrity sources</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③②\">For each</a> <var>source</var> of <var>integrity sources</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1847,7 +1839,7 @@
           "html": "<p>If <var>source list</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> is 1, and <var>source list</var>[0] is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive⑦\">ASCII\n  case-insensitive</a> match for the string \"<code>'none'</code>\", return \"<code>Does Not       Match</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③②\">For each</a> <var>expression</var> of <var>source list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③③\">For each</a> <var>expression</var> of <var>source list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -2049,7 +2041,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③③\">For each</a> <var>piece A</var> of <var>path list A</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③④\">For each</a> <var>piece A</var> of <var>path list A</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -2079,7 +2071,7 @@
           "html": "<p>If <var>element</var> does not have an attribute named \"<code>nonce</code>\", return \"<code>Not       Nonceable</code>\".</p>"
         },
         {
-          "html": "If <var>element</var> is a <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#script\" id=\"ref-for-script⑥\">script</a></code> element, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③④\">for each</a> <var>attribute</var> of <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
+          "html": "If <var>element</var> is a <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#script\" id=\"ref-for-script⑥\">script</a></code> element, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑤\">for each</a> <var>attribute</var> of <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -2106,7 +2098,7 @@
           "html": "<p>Let <var>allow all inline</var> be <code>false</code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑤\">For each</a> <var>expression</var> of <var>list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑥\">For each</a> <var>expression</var> of <var>list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -2137,7 +2129,7 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑥\">For each</a> <var>expression</var> of <var>list</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑦\">For each</a> <var>expression</var> of <var>list</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -2151,7 +2143,7 @@
           "html": "<p>Let <var>unsafe-hashes flag</var> be <code>false</code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑦\">For each</a> <var>expression</var> of <var>list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑧\">For each</a> <var>expression</var> of <var>list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -2167,7 +2159,7 @@
               "html": "<p>Set <var>source</var> to the result of executing <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encode</a> on the result of executing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert\">JavaScript string converting</a> on <var>source</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑧\">For each</a> <var>expression</var> of <var>list</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑨\">For each</a> <var>expression</var> of <var>list</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -2228,17 +2220,23 @@
           "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"ref-for-concept-request-initiator②\">initiator</a> is \"<code>prefetch</code>\" or \"<code>prerender</code>\",\n  return <code>default-src</code>.</p>"
         },
         {
-          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"ref-for-concept-request-initiator③\">initiator</a> is \"<code>fetch</code>\" or its <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination⑥\">destination</a> is \"\", return <code>connect-src</code>.</p>"
-        },
-        {
-          "html": "<p>Switch on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination⑦\">destination</a>, and execute\n  the associated steps:</p>\n      <dl>\n       <dt data-md=\"\">\"<code>manifest</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>object</code>\"\n       </dt><dt data-md=\"\">\"<code>embed</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>frame</code>\"\n       </dt><dt data-md=\"\">\"<code>iframe</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>audio</code>\"\n       </dt><dt data-md=\"\">\"<code>track</code>\"\n       </dt><dt data-md=\"\">\"<code>video</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>font</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>image</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>style</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>script</code>\"\n       </dt><dt data-md=\"\">\"<code>xslt</code>\"\n       </dt><dt data-md=\"\">\"<code>audioworklet</code>\"\n       </dt><dt data-md=\"\">\"<code>paintworklet</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>serviceworker</code>\"\n       </dt><dt data-md=\"\">\"<code>sharedworker</code>\"\n       </dt><dt data-md=\"\">\"<code>worker</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>json</code>\"\n       </dt><dt data-md=\"\">\"<code>webidentity</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>report</code>\"\n       </dt><dd data-md=\"\">\n        \n      </dd></dl>",
+          "html": "<p>Switch on <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination⑥\">destination</a>, and execute\n  the associated steps:</p>\n      <dl>\n       <dt data-md=\"\">the empty string\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>manifest</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>object</code>\"\n       </dt><dt data-md=\"\">\"<code>embed</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>frame</code>\"\n       </dt><dt data-md=\"\">\"<code>iframe</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>audio</code>\"\n       </dt><dt data-md=\"\">\"<code>track</code>\"\n       </dt><dt data-md=\"\">\"<code>video</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>font</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>image</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>style</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>script</code>\"\n       </dt><dt data-md=\"\">\"<code>xslt</code>\"\n       </dt><dt data-md=\"\">\"<code>audioworklet</code>\"\n       </dt><dt data-md=\"\">\"<code>paintworklet</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>serviceworker</code>\"\n       </dt><dt data-md=\"\">\"<code>sharedworker</code>\"\n       </dt><dt data-md=\"\">\"<code>worker</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>json</code>\"\n       </dt><dt data-md=\"\">\"<code>webidentity</code>\"\n       </dt><dd data-md=\"\">\n        \n       </dd><dt data-md=\"\">\"<code>report</code>\"\n       </dt><dd data-md=\"\">\n        \n      </dd></dl>",
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return <code>manifest-src</code>.</p>"
+              "html": "<p>Return <code>connect-src</code>.</p>"
             }
           ],
           "additional": [
+            {
+              "html": "",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>Return <code>manifest-src</code>.</p>"
+                }
+              ]
+            },
             {
               "html": "",
               "rationale": "return",
@@ -2510,7 +2508,7 @@
           "html": "<p>Let <var>directive fallback list</var> be the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#directive-fallback-list\">§ 6.8.3 Get fetch directive fallback list</a> on <var>effective directive name</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑨\">For each</a> <var>fallback directive</var> of <var>directive fallback list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⓪\">For each</a> <var>fallback directive</var> of <var>directive fallback list</var>:",
           "rationale": "if",
           "steps": [
             {
