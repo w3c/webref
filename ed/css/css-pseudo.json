@@ -36,6 +36,11 @@
       "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-selection"
     },
     {
+      "name": "::search-text",
+      "prose": "The ::search-text pseudo-element represents text identified by the user agent’s find-in-page feature. Since not all UAs style matched text in ways expressible with the highlight pseudo-elements, this pseudo-element is optional to implement. How to identify the current match? [Issue #10527]",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-search-text"
+    },
+    {
       "name": "::target-text",
       "prose": "The ::target-text pseudo-element represents text directly targeted by the document URL’s fragment, if any.",
       "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-target-text"
@@ -49,6 +54,11 @@
       "name": "::grammar-error",
       "prose": "The ::grammar-error pseudo-element represents a portion of text that has been flagged by the user agent as grammatically incorrect.",
       "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-grammar-error"
+    },
+    {
+      "name": "::highlight()",
+      "value": "::highlight(<custom-ident>)",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-highlight-custom-ident"
     },
     {
       "name": "::before",
@@ -72,19 +82,13 @@
     },
     {
       "name": "::file-selector-button",
-      "prose": "The ::file-selector-button pseudo-element targets the <button> inside an <input> element with type=file, if the UA renders such a button. It is a part-like pseudo-element.",
+      "prose": "The ::file-selector-button pseudo-element targets the <button> inside an <input> element with type=file, if the UA renders such a button. It is an element-backed pseudo-element.",
       "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-file-selector-button"
     },
     {
       "name": "::details-content",
-      "prose": "The ::details-content pseudo-element targets the additional information in a a details element that can be expanded or collapsed. It is a part-like pseudo-element.",
+      "prose": "The ::details-content pseudo-element targets the additional information in a a details element that can be expanded or collapsed. It is an element-backed pseudo-element.",
       "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-details-content"
-    },
-    {
-      "name": "::picker()",
-      "prose": "The ::picker() pseudo-element targets the popup picker of form control elements which have popup pickers, such as the select element. It is a part-like pseudo-element.",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-picker",
-      "value": "::picker( <ident>+ )"
     }
   ],
   "values": []

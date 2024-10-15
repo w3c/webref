@@ -296,6 +296,7 @@
           "ignore"
         ]
       },
+      "https://compat.spec.whatwg.org/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSPseudoElement": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/CSSPseudoElement/element": {},
@@ -324,6 +325,7 @@
       "https://drafts.csswg.org/css-display-4/": {},
       "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-fonts-4/": {},
+      "https://drafts.csswg.org/css-highlight-api-1/": {},
       "https://drafts.csswg.org/css-inline-3/": {},
       "https://drafts.csswg.org/css-lists-3/": {
         "anchors": [
@@ -332,6 +334,7 @@
       },
       "https://drafts.csswg.org/css-multicol/": {},
       "https://drafts.csswg.org/css-ruby-1/": {},
+      "https://drafts.csswg.org/css-scoping/": {},
       "https://drafts.csswg.org/css-shadow-parts/": {},
       "https://drafts.csswg.org/css-syntax/": {},
       "https://drafts.csswg.org/css-tables-3/": {},
@@ -358,7 +361,9 @@
       "https://drafts.fxtf.org/fill-stroke/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/10083": {},
+      "https://github.com/w3c/csswg-drafts/issues/10527": {},
       "https://github.com/w3c/csswg-drafts/issues/1097": {},
+      "https://github.com/w3c/csswg-drafts/issues/11011": {},
       "https://github.com/w3c/csswg-drafts/issues/1384": {},
       "https://github.com/w3c/csswg-drafts/issues/1793": {},
       "https://github.com/w3c/csswg-drafts/issues/2040": {},
@@ -380,7 +385,6 @@
       "https://github.com/w3c/csswg-drafts/issues/5049": {},
       "https://github.com/w3c/csswg-drafts/issues/5099": {},
       "https://github.com/w3c/csswg-drafts/issues/5154": {},
-      "https://github.com/w3c/csswg-drafts/issues/5379": {},
       "https://github.com/w3c/csswg-drafts/issues/5395": {},
       "https://github.com/w3c/csswg-drafts/issues/5522": {},
       "https://github.com/w3c/csswg-drafts/issues/5830": {},
@@ -978,6 +982,11 @@
       "https://www.w3.org/policies/process/20231103/": {}
     },
     "autolinks": {
+      "https://compat.spec.whatwg.org/": {
+        "anchors": [
+          "propdef--webkit-text-fill-color"
+        ]
+      },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "eventtarget",
@@ -999,9 +1008,10 @@
         "anchors": [
           "css-inheritance",
           "inherited-property",
+          "computed-value",
+          "cascade-origin-author",
           "used-value",
           "cascaded-value",
-          "cascade-origin-author",
           "valdef-all-revert",
           "valdef-all-revert-layer",
           "valdef-all-inherit",
@@ -1030,7 +1040,8 @@
       "https://drafts.csswg.org/css-color-adjust-1/": {
         "anchors": [
           "propdef-forced-color-adjust",
-          "forced-colors-mode"
+          "forced-colors-mode",
+          "propdef-color-scheme"
         ]
       },
       "https://drafts.csswg.org/css-content-3/": {
@@ -1059,6 +1070,12 @@
           "valdef-display-list-item"
         ]
       },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "propdef-font-size",
+          "propdef-font-family"
+        ]
+      },
       "https://drafts.csswg.org/css-inline-3/": {
         "anchors": [
           "line-box",
@@ -1083,9 +1100,15 @@
           "propdef-ruby-position"
         ]
       },
+      "https://drafts.csswg.org/css-scoping-1/": {
+        "anchors": [
+          "selectordef-host",
+          "selectordef-host-function",
+          "selectordef-host-context"
+        ]
+      },
       "https://drafts.csswg.org/css-shadow-parts-1/": {
         "anchors": [
-          "element-attrdef-html-global-exportparts",
           "selectordef-part"
         ]
       },
@@ -1125,8 +1148,6 @@
       },
       "https://drafts.csswg.org/css-ui-4/": {
         "anchors": [
-          "base-appearance",
-          "propdef-appearance",
           "propdef-caret-color",
           "propdef-cursor",
           "propdef-outline"
@@ -1134,13 +1155,16 @@
       },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
-          "typedef-ident",
-          "mult-one-plus"
+          "identifier-value",
+          "em",
+          "font-relative-length",
+          "lh"
         ]
       },
       "https://drafts.csswg.org/css-variables-2/": {
         "anchors": [
-          "custom-property"
+          "custom-property",
+          "funcdef-var"
         ]
       },
       "https://drafts.csswg.org/css-writing-modes-3/": {
@@ -1183,8 +1207,12 @@
           "pseudo-element",
           "sub-pseudo-element",
           "target-pseudo",
+          "functional-pseudo-element",
           "root-pseudo",
           "placeholder-shown-pseudo",
+          "type-selector",
+          "has-pseudo",
+          "scope-pseudo",
           "ultimate-originating-element",
           "typedef-pseudo-element-selector"
         ]
@@ -1198,8 +1226,7 @@
       },
       "https://html.spec.whatwg.org/multipage/form-elements.html": {
         "anchors": [
-          "the-textarea-element",
-          "the-select-element"
+          "the-textarea-element"
         ]
       },
       "https://html.spec.whatwg.org/multipage/input.html": {
@@ -1226,7 +1253,8 @@
       },
       "https://www.w3.org/TR/CSS21/selector.html": {
         "anchors": [
-          "x22"
+          "x22",
+          "x23"
         ]
       }
     }
