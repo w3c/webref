@@ -30,7 +30,9 @@
       "https://mozilla.org/": {},
       "https://privacycg.github.io/storage-access/": {},
       "https://url.spec.whatwg.org/": {},
+      "https://w3c-fedid.github.io/FedCM/": {},
       "https://w3c.github.io/permissions/": {},
+      "https://w3c.github.io/webappsec-credential-management/": {},
       "https://w3c.github.io/webappsec-permissions-policy/": {},
       "https://w3c.github.io/webdriver/": {},
       "https://webidl.spec.whatwg.org/": {},
@@ -73,14 +75,15 @@
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
           "site",
-          "concept-site-same-site",
+          "same-site",
+          "concept-origin",
           "concept-origin-opaque",
           "obtain-a-site",
           "active-sandboxing-flag-set",
+          "concept-site-same-site",
           "same-origin",
           "sandboxing-flag-set",
-          "parse-a-sandboxing-directive",
-          "concept-origin"
+          "parse-a-sandboxing-directive"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -145,6 +148,8 @@
           "tuple",
           "assert",
           "boolean",
+          "list-iterate",
+          "user-agent",
           "string",
           "implementation-defined"
         ]
@@ -158,6 +163,11 @@
         "anchors": [
           "concept-url-origin",
           "concept-url-parser"
+        ]
+      },
+      "https://w3c-fedid.github.io/FedCM/": {
+        "anchors": [
+          "browser-connected-accounts-set"
         ]
       },
       "https://w3c.github.io/permissions/": {
@@ -178,6 +188,12 @@
           "dfn-permission-key",
           "dfn-permission-key-generation-algorithm",
           "dfn-permission-key-comparison-algorithm"
+        ]
+      },
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "anchors": [
+          "concept-credential-store",
+          "origin-prevent-silent-access-flag"
         ]
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
