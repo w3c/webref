@@ -41,6 +41,42 @@
   "selectors": [],
   "values": [
     {
+      "name": "<syntax>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-syntax",
+      "type": "type",
+      "value": "'*' | <syntax-component> [ <syntax-combinator> <syntax-component> ]+"
+    },
+    {
+      "name": "<syntax-component>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-syntax-component",
+      "type": "type",
+      "value": "<syntax-single-component> <syntax-multiplier>? | '<' transform-list '>'"
+    },
+    {
+      "name": "<syntax-single-component>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-syntax-single-component",
+      "type": "type",
+      "value": "'<' <syntax-type-name> '>' | <ident>"
+    },
+    {
+      "name": "<syntax-type-name>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-syntax-type-name",
+      "type": "type",
+      "value": "angle | color | custom-ident | image | integer | length | length-percentage | number | percentage | resolution | string | time | url | transform-function"
+    },
+    {
+      "name": "<syntax-combinator>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-syntax-combinator",
+      "type": "type",
+      "value": "'|'"
+    },
+    {
+      "name": "<syntax-multiplier>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-syntax-multiplier",
+      "type": "type",
+      "value": "[ '#' | '+' ]"
+    },
+    {
       "name": "<request-url-modifier>",
       "prose": "<request-url-modifier>s are <url-modifier>s that affect the <url>’s resource request by applying associated URL request modifier steps. See CSS Values 4 § 4.5.4 URL Processing Model.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier",
