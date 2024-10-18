@@ -317,13 +317,36 @@
       ]
     },
     {
+      "name": "obtain the Private Aggregation coordinator",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-private-aggregation-coordinator",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"obtain-the-private-aggregation-coordinator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the Private Aggregation coordinator</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString\">USVString</a></code> <var>originString</var>, perform the following steps. They return an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑤\">aggregation coordinator</a> or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> on <var>originString</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>url</var> is failure or null, return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> with name\n\"<code>SyntaxError</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-if-an-origin-is-an-aggregation-coordinator\" id=\"ref-for-determine-if-an-origin-is-an-aggregation-coordinator\">determining if an origin is an aggregation coordinator</a> given <var>origin</var> is false, return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> with name\n\"<code>DataError</code>\".</p>"
+        },
+        {
+          "html": "<p>Return <var>origin</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "set the aggregation coordinator for a batching scope",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#set-the-aggregation-coordinator-for-a-batching-scope",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-the-aggregation-coordinator-for-a-batching-scope\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the aggregation coordinator for a batching scope</dfn> given\nan <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑥\">origin</a> <var>origin</var> and a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#batching-scope\" id=\"ref-for-batching-scope⑥\">batching scope</a> <var>batchingScope</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>origin</var> is an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑤\">aggregation coordinator</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>origin</var> is an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑥\">aggregation coordinator</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">Set</a> <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator-map\" id=\"ref-for-aggregation-coordinator-map③\">aggregation coordinator map</a>[<var>batchingScope</var>] to <var>origin</var>.</p>"
@@ -356,7 +379,7 @@
     {
       "name": "report creation and scheduling steps",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#report-creation-and-scheduling-steps",
-      "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-creation-and-scheduling-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report creation and scheduling steps</dfn> with an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> <var>reportingOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type④\">context type</a> <var>api</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution⑥\">PAHistogramContribution</a></code>s <var>contributions</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details\" id=\"ref-for-debug-details①②\">debug details</a> <var>debugDetails</var>, an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑥\">aggregation coordinator</a> <var>aggregationCoordinator</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters④\">pre-specified report parameters</a> <var>preSpecifiedParams</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment③\">moment</a> or\nnull <var>timeout</var>:",
+      "html": "To perform the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"report-creation-and-scheduling-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report creation and scheduling steps</dfn> with an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> <var>reportingOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type④\">context type</a> <var>api</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution⑥\">PAHistogramContribution</a></code>s <var>contributions</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details\" id=\"ref-for-debug-details①②\">debug details</a> <var>debugDetails</var>, an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑦\">aggregation coordinator</a> <var>aggregationCoordinator</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters④\">pre-specified report parameters</a> <var>preSpecifiedParams</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment③\">moment</a> or\nnull <var>timeout</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -469,7 +492,7 @@
     {
       "name": "obtain an aggregatable report",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-an-aggregatable-report",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-aggregatable-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain an aggregatable report</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑨\">origin</a> <var>reportingOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type⑥\">context type</a> <var>api</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution⑦\">PAHistogramContribution</a></code>s <var>contributions</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details\" id=\"ref-for-debug-details①③\">debug details</a> <var>debugDetails</var>, an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑦\">aggregation coordinator</a> <var>aggregationCoordinator</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters⑤\">pre-specified report parameters</a> <var>preSpecifiedParams</var>, a [=moment] or null <var>timeout</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑤\">moment</a> <var>currentTime</var>,\nperform the following steps. They return an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report\" id=\"ref-for-aggregatable-report⑤\">aggregatable report</a>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-an-aggregatable-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain an aggregatable report</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑨\">origin</a> <var>reportingOrigin</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#context-type\" id=\"ref-for-context-type⑥\">context type</a> <var>api</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-pahistogramcontribution\" id=\"ref-for-dictdef-pahistogramcontribution⑦\">PAHistogramContribution</a></code>s <var>contributions</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#debug-details\" id=\"ref-for-debug-details①③\">debug details</a> <var>debugDetails</var>, an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑧\">aggregation coordinator</a> <var>aggregationCoordinator</var>, a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#pre-specified-report-parameters\" id=\"ref-for-pre-specified-report-parameters⑤\">pre-specified report parameters</a> <var>preSpecifiedParams</var>, a [=moment] or null <var>timeout</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-moment\" id=\"ref-for-dfn-moment⑤\">moment</a> <var>currentTime</var>,\nperform the following steps. They return an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregatable-report\" id=\"ref-for-aggregatable-report⑤\">aggregatable report</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -613,13 +636,13 @@
           "html": "<p>Let <var>path</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate\">concatenation</a> of\n«\"<code><a data-link-type=\"biblio\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#biblio-rfc8615\" title=\"Well-Known Uniform Resource Identifiers (URIs)\">.well-known</a>/private-aggregation/report-</code>\", <var>api</var>».</p>"
         },
         {
-          "html": "<p>Let <var>base</var> be the result on running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialization</a> of <var>reportingOrigin</var>.</p>"
+          "html": "<p>Let <var>base</var> be the result on running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser①\">URL parser</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialization</a> of <var>reportingOrigin</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①②\">Assert</a>: <var>base</var> is not failure.</p>"
         },
         {
-          "html": "<p>Let <var>result</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser①\">URL parser</a> on <var>path</var> with <var>base</var>.</p>"
+          "html": "<p>Let <var>result</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser②\">URL parser</a> on <var>path</var> with <var>base</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①③\">Assert</a>: <var>result</var> is not failure.</p>"
@@ -728,7 +751,7 @@
     {
       "name": "obtain the public key for encryption",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-public-key-for-encryption",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-public-key-for-encryption\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the public key for encryption</dfn> given an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑧\">aggregation\ncoordinator</a> <var>aggregationCoordinator</var>, perform the following steps. They return\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple\">tuple</a> consisting of a public key and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a>, or an error.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-public-key-for-encryption\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the public key for encryption</dfn> given an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator⑨\">aggregation\ncoordinator</a> <var>aggregationCoordinator</var>, perform the following steps. They return\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple\">tuple</a> consisting of a public key and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a>, or an error.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -972,10 +995,10 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>aggregationCoordinator</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-private-aggregation-coordinator\" id=\"ref-for-obtain-the-private-aggregation-coordinator\">obtaining the Private\nAggregation coordinator</a> given <var>group</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-auctionadinterestgroup-privateaggregationconfig\" id=\"ref-for-dom-auctionadinterestgroup-privateaggregationconfig①\">privateAggregationConfig</a></code>\"].</p>"
+              "html": "<p>Let <var>aggregationCoordinator</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-coordinator-from-a-private-aggregation-config\" id=\"ref-for-obtain-the-coordinator-from-a-private-aggregation-config\">obtaining the coordinator\nfrom a Private Aggregation config</a> given <var>group</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-auctionadinterestgroup-privateaggregationconfig\" id=\"ref-for-dom-auctionadinterestgroup-privateaggregationconfig①\">privateAggregationConfig</a></code>\"].</p>"
             },
             {
-              "html": "<p>If <var>aggregationCoordinator</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①④\">throw</a> <var>aggregationCoordinator</var>.</p>"
+              "html": "<p>If <var>aggregationCoordinator</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①④\">throw</a> <var>aggregationCoordinator</var>.</p>"
             },
             {
               "html": "<p>Set <var>interestGroup</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#interest-group-private-aggregation-coordinator\" id=\"ref-for-interest-group-private-aggregation-coordinator\">Private\nAggregation coordinator</a> to <var>aggregationCoordinator</var>.</p>"
@@ -1091,10 +1114,10 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>aggregationCoordinator</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-private-aggregation-coordinator\" id=\"ref-for-obtain-the-private-aggregation-coordinator①\">obtaining the Private\nAggregation coordinator</a> given <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-auctionadconfig-privateaggregationconfig\" id=\"ref-for-dom-auctionadconfig-privateaggregationconfig①\">privateAggregationConfig</a></code>\"].</p>"
+              "html": "<p>Let <var>aggregationCoordinator</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-coordinator-from-a-private-aggregation-config\" id=\"ref-for-obtain-the-coordinator-from-a-private-aggregation-config①\">obtaining the coordinator\nfrom a Private Aggregation config</a> given <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-auctionadconfig-privateaggregationconfig\" id=\"ref-for-dom-auctionadconfig-privateaggregationconfig①\">privateAggregationConfig</a></code>\"].</p>"
             },
             {
-              "html": "<p>If <var>aggregationCoordinator</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>, return failure.</p>"
+              "html": "<p>If <var>aggregationCoordinator</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code>, return failure.</p>"
             },
             {
               "html": "<p>Set <var>auctionConfig</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#auction-config-seller-private-aggregation-coordinator\" id=\"ref-for-auction-config-seller-private-aggregation-coordinator\">seller Private\nAggregation coordinator</a> to <var>aggregationCoordinator</var>.</p>"
@@ -1254,10 +1277,10 @@
                       "html": "<p>If <var>value</var>[\"<code>aggregationCoordinatorOrigin</code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①②\">string</a>,\njump to the step labeled Abort update.</p>"
                     },
                     {
-                      "html": "<p>Let <var>aggregationCoordinator</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-private-aggregation-coordinator-from-a-string\" id=\"ref-for-obtain-the-private-aggregation-coordinator-from-a-string\">obtaining the Private\nAggregation coordinator</a> given <var>value</var>[\"<code>aggregationCoordinatorOrigin</code>\"].</p>"
+                      "html": "<p>Let <var>aggregationCoordinator</var> be the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-private-aggregation-coordinator\" id=\"ref-for-obtain-the-private-aggregation-coordinator\">obtaining the Private\nAggregation coordinator</a> given <var>value</var>[\"<code>aggregationCoordinatorOrigin</code>\"].</p>"
                     },
                     {
-                      "html": "<p>If <var>aggregationCoordinator</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>, jump to the step\nlabeled Abort update.</p>"
+                      "html": "<p>If <var>aggregationCoordinator</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code>, jump to the step\nlabeled Abort update.</p>"
                     },
                     {
                       "html": "<p>Otherwise, set <var>ig</var>’s <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#interest-group-private-aggregation-coordinator\" id=\"ref-for-interest-group-private-aggregation-coordinator③\">Private\nAggregation coordinator</a> to <var>aggregationCoordinator</var>.</p>"
@@ -1441,7 +1464,7 @@
     {
       "name": "get or create a batching scope",
       "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#get-or-create-a-batching-scope",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-or-create-a-batching-scope\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get or create a batching scope</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①③\">origin</a> <var>origin</var>, an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator①②\">aggregation coordinator</a> <var>aggregationCoordinator</var> and an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config\" id=\"ref-for-auction-config⑦\">auction config</a> <var>auctionConfig</var>, perform the following\nsteps. They return a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#batching-scope\" id=\"ref-for-batching-scope①③\">batching scope</a>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-or-create-a-batching-scope\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get or create a batching scope</dfn> given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①③\">origin</a> <var>origin</var>, an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator①③\">aggregation coordinator</a> <var>aggregationCoordinator</var> and an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/turtledove/#auction-config\" id=\"ref-for-auction-config⑦\">auction config</a> <var>auctionConfig</var>, perform the following\nsteps. They return a <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#batching-scope\" id=\"ref-for-batching-scope①③\">batching scope</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1681,39 +1704,16 @@
       ]
     },
     {
-      "name": "obtain the Private Aggregation coordinator",
-      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-private-aggregation-coordinator",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-private-aggregation-coordinator\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the Private Aggregation coordinator</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-protectedaudienceprivateaggregationconfig\" id=\"ref-for-dictdef-protectedaudienceprivateaggregationconfig②\">ProtectedAudiencePrivateAggregationConfig</a></code> <var>config</var>, perform the following\nsteps. They return an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator①③\">aggregation coordinator</a>, null or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>.",
+      "name": "obtain the coordinator from a Private Aggregation config",
+      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-coordinator-from-a-private-aggregation-config",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-coordinator-from-a-private-aggregation-config\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the coordinator from a Private Aggregation config</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dictdef-protectedaudienceprivateaggregationconfig\" id=\"ref-for-dictdef-protectedaudienceprivateaggregationconfig②\">ProtectedAudiencePrivateAggregationConfig</a></code> <var>config</var>, perform the following\nsteps. They return an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator①④\">aggregation coordinator</a>, null or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪\">DOMException</a></code>.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-protectedaudienceprivateaggregationconfig-aggregationcoordinatororigin\" id=\"ref-for-dom-protectedaudienceprivateaggregationconfig-aggregationcoordinatororigin\">aggregationCoordinatorOrigin</a></code>\"]\ndoes not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑧\">exist</a>, return null.</p>"
         },
         {
-          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-private-aggregation-coordinator-from-a-string\" id=\"ref-for-obtain-the-private-aggregation-coordinator-from-a-string①\">obtaining the Private Aggregation coordinator</a> given <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-protectedaudienceprivateaggregationconfig-aggregationcoordinatororigin\" id=\"ref-for-dom-protectedaudienceprivateaggregationconfig-aggregationcoordinatororigin①\">aggregationCoordinatorOrigin</a></code>\"].</p>"
-        }
-      ]
-    },
-    {
-      "name": "obtain the Private Aggregation coordinator from a string",
-      "href": "https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-private-aggregation-coordinator-from-a-string",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"obtain the Private Aggregation coordinator from a string\" data-noexport=\"\" id=\"obtain-the-private-aggregation-coordinator-from-a-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the\nPrivate Aggregation coordinator</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-USVString\" id=\"ref-for-idl-USVString①\">USVString</a></code> <var>originString</var>,\nperform the following steps. They return an <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#aggregation-coordinator\" id=\"ref-for-aggregation-coordinator①④\">aggregation coordinator</a> or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code>.",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser②\">URL parser</a> on <var>originString</var>.</p>"
-        },
-        {
-          "html": "<p>If <var>url</var> is failure or null, return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code> with name\n\"<code>SyntaxError</code>\".</p>"
-        },
-        {
-          "html": "<p>Let <var>origin</var> be <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>.</p>"
-        },
-        {
-          "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#determine-if-an-origin-is-an-aggregation-coordinator\" id=\"ref-for-determine-if-an-origin-is-an-aggregation-coordinator\">determining if an origin is an aggregation coordinator</a> given <var>origin</var> is false, return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪\">DOMException</a></code> with name\n\"<code>DataError</code>\".</p>"
-        },
-        {
-          "html": "<p>Return <var>origin</var>.</p>"
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#obtain-the-private-aggregation-coordinator\" id=\"ref-for-obtain-the-private-aggregation-coordinator①\">obtaining the Private Aggregation coordinator</a> given <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://patcg-individual-drafts.github.io/private-aggregation-api/#dom-protectedaudienceprivateaggregationconfig-aggregationcoordinatororigin\" id=\"ref-for-dom-protectedaudienceprivateaggregationconfig-aggregationcoordinatororigin①\">aggregationCoordinatorOrigin</a></code>\"].</p>"
         }
       ]
     },
