@@ -15,6 +15,11 @@
       "https://daisy.org/info-help/document-archive/archived-publications/media-overlays-playback-requirements/": {},
       "https://datatracker.ietf.org/doc/html/bcp14": {},
       "https://datatracker.ietf.org/doc/html/rfc4839": {},
+      "https://datatracker.ietf.org/doc/html/rfc8141": {
+        "anchors": [
+          "section-2.1"
+        ]
+      },
       "https://developer.apple.com/fonts/TrueType-Reference-Manual/": {},
       "https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html": {
         "anchors": [
@@ -133,6 +138,9 @@
       "https://github.com/w3c/epub-specs/issues/2489": {},
       "https://github.com/w3c/epub-specs/issues/2516": {},
       "https://github.com/w3c/epub-specs/issues/2543": {},
+      "https://github.com/w3c/epub-specs/issues/2555": {},
+      "https://github.com/w3c/epub-specs/issues/2556": {},
+      "https://github.com/w3c/epub-specs/issues/2637": {},
       "https://github.com/w3c/epub-specs/issues/645": {},
       "https://github.com/w3c/epub-specs/issues/808": {},
       "https://github.com/w3c/epub-specs/issues/976": {},
@@ -170,7 +178,8 @@
           "dom-document-cookie",
           "webstorage",
           "link-type-alternate",
-          "the-meta-element"
+          "the-meta-element",
+          "dependencies"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -183,6 +192,7 @@
           "the-base-element"
         ]
       },
+      "https://httpwg.org/specs/rfc9110.html": {},
       "https://id.loc.gov/vocabulary/relators.html": {},
       "https://idpf.github.io/epub-registries/authorities/": {},
       "https://idpf.org/epub/20/spec/OCF_2.0.1_draft.doc": {},
@@ -225,7 +235,8 @@
           "string-concatenate",
           "strip-leading-and-trailing-ascii-whitespace",
           "strip-and-collapse-ascii-whitespace",
-          "html-namespace"
+          "html-namespace",
+          "ascii-whitespace"
         ]
       },
       "https://lists.w3.org/Archives/Public/public-epub-wg/2022Aug/0000.html": {},
@@ -269,41 +280,25 @@
       "https://www.rfc-editor.org/rfc/rfc7303": {},
       "https://www.rfc-editor.org/rfc/rfc7845": {},
       "https://www.rfc-editor.org/rfc/rfc8089": {},
+      "https://www.rfc-editor.org/rfc/rfc8141": {},
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt": {},
-      "https://www.unicode.org/reports/tr15/tr15-53.html": {},
-      "https://www.unicode.org/reports/tr44/tr44-30.html": {},
-      "https://www.unicode.org/reports/tr9/tr9-46.html": {
+      "https://www.unicode.org/reports/tr15/tr15-56.html": {},
+      "https://www.unicode.org/reports/tr44/tr44-34.html": {},
+      "https://www.unicode.org/reports/tr9/tr9-50.html": {
         "anchors": [
           "BD5"
         ]
       },
       "https://www.unicode.org/versions/latest/": {},
       "https://www.w3.org/": {},
-      "https://www.w3.org/2021/Process-20211102/": {
-        "anchors": [
-          "recs-and-notes",
-          "allow-new-features"
-        ]
-      },
-      "https://www.w3.org/Consortium/Patent-Policy/": {
-        "anchors": [
-          "sec-Requirements",
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
-      "https://www.w3.org/Consortium/Process/": {
-        "anchors": [
-          "adequate-implementation"
-        ]
-      },
       "https://www.w3.org/Graphics/GIF/spec-gif89a.txt": {},
       "https://www.w3.org/Graphics/JPEG/jfif3.pdf": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2013/NOTE-xmlsec-rngschema-20130411/": {},
       "https://www.w3.org/TR/2022/CR-epub-33-20220512/": {},
       "https://www.w3.org/TR/2023/CR-epub-33-20230221/": {},
+      "https://www.w3.org/TR/2023/REC-epub-33-20230525/": {},
       "https://www.w3.org/TR/CSP2/": {
         "anchors": [
           "content-security-policy-header-field"
@@ -337,6 +332,11 @@
         ]
       },
       "https://www.w3.org/TR/CSS21/": {},
+      "https://www.w3.org/TR/CSS21/syndata.html": {
+        "anchors": [
+          "numbers"
+        ]
+      },
       "https://www.w3.org/TR/MathML3/": {},
       "https://www.w3.org/TR/MathML3/chapter3.html": {},
       "https://www.w3.org/TR/MathML3/chapter4.html": {},
@@ -346,7 +346,6 @@
         ]
       },
       "https://www.w3.org/TR/NOTE-datetime": {},
-      "https://www.w3.org/TR/PNG/": {},
       "https://www.w3.org/TR/SMIL3/": {},
       "https://www.w3.org/TR/SMIL3/smil-timing.html": {
         "anchors": [
@@ -381,6 +380,11 @@
           "SVGFragmentIdentifiers"
         ]
       },
+      "https://www.w3.org/TR/SVG/struct.html": {
+        "anchors": [
+          "ForeignNamespaces"
+        ]
+      },
       "https://www.w3.org/TR/SVG/styling.html": {
         "anchors": [
           "PresentationAttributes"
@@ -391,15 +395,10 @@
           "DirectionProperty"
         ]
       },
-      "https://www.w3.org/TR/SVG11/intro.html": {
-        "anchors": [
-          "TermStructuralElement",
-          "TermShapeElement"
-        ]
-      },
       "https://www.w3.org/TR/SVG11/paths.html": {},
       "https://www.w3.org/TR/SVG11/shapes.html": {},
       "https://www.w3.org/TR/SVG11/text.html": {},
+      "https://www.w3.org/TR/SVG2/": {},
       "https://www.w3.org/TR/UAAG20/": {
         "anchors": [
           "gl-text-config"
@@ -472,9 +471,11 @@
       },
       "https://www.w3.org/TR/epub-ssv-11/": {
         "anchors": [
-          "pagebreak",
-          "bodymatter",
           "toc-1",
+          "page-list",
+          "pagebreak",
+          "landmarks",
+          "bodymatter",
           "footnote",
           "endnote",
           "table",
@@ -493,6 +494,7 @@
       },
       "https://www.w3.org/TR/json-ld11/": {},
       "https://www.w3.org/TR/mediaqueries-3/": {},
+      "https://www.w3.org/TR/png-3/": {},
       "https://www.w3.org/TR/push-api/": {},
       "https://www.w3.org/TR/rdfa-core/": {},
       "https://www.w3.org/TR/wai-aria/": {},
@@ -516,7 +518,8 @@
           "idref",
           "dt-pubid",
           "dt-sysid",
-          "AVNormalize"
+          "AVNormalize",
+          "NT-S"
         ]
       },
       "https://www.w3.org/TR/xmlbase/": {},
@@ -537,9 +540,27 @@
       },
       "https://www.w3.org/TR/xmlenc-decrypt/": {},
       "https://www.w3.org/TR/xmlschema-2/": {},
-      "https://www.w3.org/groups/wg/epub": {},
-      "https://www.w3.org/groups/wg/epub/ipr": {},
-      "https://www.w3.org/publishing/epub/epub-spec.html": {},
+      "https://www.w3.org/groups/wg/pm": {},
+      "https://www.w3.org/groups/wg/pm/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "anchors": [
+          "sec-Requirements",
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/": {
+        "anchors": [
+          "adequate-implementation"
+        ]
+      },
+      "https://www.w3.org/policies/process/20231103/": {
+        "anchors": [
+          "recs-and-notes",
+          "candidate-correction",
+          "allow-new-features"
+        ]
+      },
       "https://www.w3.org/publishing/epub32/": {},
       "https://www.w3.org/publishing/epub32/epub-packages.html": {
         "anchors": [
@@ -673,8 +694,7 @@
         "anchors": [
           "scalar-value-string",
           "list",
-          "list-prepend",
-          "ascii-whitespace"
+          "list-prepend"
         ]
       },
       "https://url.spec.whatwg.org/": {
@@ -694,8 +714,23 @@
       },
       "https://www.w3.org/TR/SVG/struct.html": {
         "anchors": [
-          "elementdef-title",
           "elementdef-svg"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/linking.html": {
+        "anchors": [
+          "elementdef-a"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/render.html": {
+        "anchors": [
+          "TermRenderableElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG2/struct.html": {
+        "anchors": [
+          "elementdef-svg",
+          "elementdef-title"
         ]
       }
     }
