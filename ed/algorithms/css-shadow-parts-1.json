@@ -25,13 +25,28 @@
             },
             {
               "html": "For each <var>innerName</var>/<var>outerName</var> in <var>el</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#element-forwarded-part-name-list\" id=\"ref-for-element-forwarded-part-name-list①\">forwarded part name list</a>:",
-              "rationale": "let",
+              "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>Let <var>innerParts</var> be <var>innerRoot</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map⑥\">part element map</a>[<var>innerName</var>]</p>"
+                  "html": "If <var>innerName</var> is an ident:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>innerParts</var> be <var>innerRoot</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map⑥\">part element map</a>[<var>innerName</var>]</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> the elements in <var>innerParts</var> to <var>outerRoot</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map⑦\">part element map</a>[<var>outerName</var>]</p>"
+                    }
+                  ]
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> the elements in <var>innerParts</var> to <var>outerRoot</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map⑦\">part element map</a>[<var>outerName</var>]</p>"
+                  "html": "If <var>innerName</var> is a pseudo-element name:",
+                  "rationale": "append",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>innerRoot</var>’s pseudo-element(s) with that name\nto <var>outerRoot</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#shadow-root-part-element-map\" id=\"ref-for-shadow-root-part-element-map⑧\">part element map</a>[<var>outerName</var>].</p>"
+                    }
+                  ]
                 }
               ]
             }
@@ -53,6 +68,10 @@
             {
               "case": "ident",
               "html": "<p>Adds <code>ident</code>/<code>ident</code> to el’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#element-forwarded-part-name-list\" id=\"ref-for-element-forwarded-part-name-list③\">forwarded part name list</a>.</p>"
+            },
+            {
+              "case": "::ident : outerIdent",
+              "html": "<p>If <code>::ident</code> is the name of a <a data-link-type=\"dfn\">part-like pseudo-element</a>,\nadds <code>::ident</code>/<code>outerIdent</code> to el’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-parts-1/#element-forwarded-part-name-list\" id=\"ref-for-element-forwarded-part-name-list④\">forward part name list</a>.\nOtherwise, does nothing.</p>"
             },
             {
               "case": "anything else",

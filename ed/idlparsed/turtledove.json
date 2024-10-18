@@ -31,7 +31,7 @@
     },
     "idlNames": {
       "AuctionAd": {
-        "fragment": "dictionary AuctionAd {\n  required USVString renderURL;\n  USVString sizeGroup;\n  any metadata;\n\n  USVString buyerReportingId;\n  USVString buyerAndSellerReportingId;\n  sequence<USVString> allowedReportingOrigins;\n  DOMString adRenderId;\n};",
+        "fragment": "dictionary AuctionAd {\n  required USVString renderURL;\n  USVString sizeGroup;\n  any metadata;\n\n  USVString buyerReportingId;\n  USVString buyerAndSellerReportingId;\n  sequence<USVString> selectableBuyerAndSellerReportingIds;\n  sequence<USVString> allowedReportingOrigins;\n  DOMString adRenderId;\n};",
         "type": "dictionary",
         "name": "AuctionAd",
         "inheritance": null,
@@ -115,6 +115,31 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-auctionad-buyerandsellerreportingid"
+          },
+          {
+            "type": "field",
+            "name": "selectableBuyerAndSellerReportingIds",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionad-selectablebuyerandsellerreportingids"
           },
           {
             "type": "field",
@@ -2374,7 +2399,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-adrender"
       },
       "GenerateBidOutput": {
-        "fragment": "dictionary GenerateBidOutput {\n  double bid = -1;\n  DOMString bidCurrency;\n  (DOMString or AdRender) render;\n  any ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  unrestricted double modelingSignals;\n  boolean allowComponentAuction = false;\n  unsigned long targetNumAdComponents;\n  unsigned long numMandatoryAdComponents = 0;\n};",
+        "fragment": "dictionary GenerateBidOutput {\n  double bid = -1;\n  DOMString bidCurrency;\n  (DOMString or AdRender) render;\n  any ad;\n  USVString selectedBuyerAndSellerReportingId;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  unrestricted double modelingSignals;\n  boolean allowComponentAuction = false;\n  unsigned long targetNumAdComponents;\n  unsigned long numMandatoryAdComponents = 0;\n};",
         "type": "dictionary",
         "name": "GenerateBidOutput",
         "inheritance": null,
@@ -2462,6 +2487,22 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-ad"
+          },
+          {
+            "type": "field",
+            "name": "selectedBuyerAndSellerReportingId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-generatebidoutput-selectedbuyerandsellerreportingid"
           },
           {
             "type": "field",
@@ -3382,7 +3423,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-scoringbrowsersignals"
       },
       "ReportingBrowserSignals": {
-        "fragment": "dictionary ReportingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required double bid;\n  required double highestScoringOtherBid;\n\n  DOMString bidCurrency;\n  DOMString highestScoringOtherBidCurrency;\n  USVString topLevelSeller;\n  USVString componentSeller;\n\n  USVString buyerAndSellerReportingId;\n};",
+        "fragment": "dictionary ReportingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required double bid;\n  required double highestScoringOtherBid;\n\n  DOMString bidCurrency;\n  DOMString highestScoringOtherBidCurrency;\n  USVString topLevelSeller;\n  USVString componentSeller;\n\n  USVString buyerAndSellerReportingId;\n  USVString selectedBuyerAndSellerReportingId;\n};",
         "type": "dictionary",
         "name": "ReportingBrowserSignals",
         "inheritance": null,
@@ -3546,6 +3587,22 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-buyerandsellerreportingid"
+          },
+          {
+            "type": "field",
+            "name": "selectedBuyerAndSellerReportingId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-selectedbuyerandsellerreportingid"
           }
         ],
         "extAttrs": [],

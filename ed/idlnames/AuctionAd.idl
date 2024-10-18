@@ -6,6 +6,7 @@ dictionary AuctionAd {
 
   USVString buyerReportingId;
   USVString buyerAndSellerReportingId;
+  sequence<USVString> selectableBuyerAndSellerReportingIds;
   sequence<USVString> allowedReportingOrigins;
   DOMString adRenderId;
 };

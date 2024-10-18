@@ -4,6 +4,7 @@ dictionary GenerateBidOutput {
   DOMString bidCurrency;
   (DOMString or AdRender) render;
   any ad;
+  USVString selectedBuyerAndSellerReportingId;
   sequence<(DOMString or AdRender)> adComponents;
   double adCost;
   unrestricted double modelingSignals;
