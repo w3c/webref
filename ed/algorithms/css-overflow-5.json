@@ -5,6 +5,77 @@
   },
   "algorithms": [
     {
+      "name": "scroll tracking",
+      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container①①\">scroll container</a> is scrolled, or layout changes the scroll position, the user agent must run these steps to determine the active marker:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>position</var> be the 'eventual scroll position' for the scrolling operation.</p>"
+        },
+        {
+          "html": "For each focusgroup <var>group</var> containing one or more <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-marker-control\" id=\"ref-for-scroll-marker-control\">scroll marker control</a> elements whose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-target\" id=\"ref-for-scroll-target④\">scroll target</a> is a descendant of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container①②\">scroll container</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>markers</var> be all of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-marker-control\" id=\"ref-for-scroll-marker-control①\">scroll marker control</a> elements which are a part of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-marker-group\" id=\"ref-for-scroll-marker-group③\">scroll marker group</a> for the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container①③\">scroll container</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>targets</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-target\" id=\"ref-for-scroll-target⑤\">scroll target</a>s of <var>markers</var>, associated with the item of <var>markers</var> they came from, and sorted in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order①\">tree order</a>.</p>"
+            },
+            {
+              "html": "<p>For each <var>target</var> in <var>targets</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#determine-the-scroll-into-view-position\" id=\"ref-for-determine-the-scroll-into-view-position\">determine the scroll-into-view position</a> of <var>target</var>, storing this as the associated <var>target position</var> of <var>target</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>selected target</var> be the largest-indexed item of <var>targets</var> whose associated <var>target position</var> is equal to or before <var>position</var> in both the block and inline axises in the current writing mode direction of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container①④\">scroll container</a>.</p>"
+            },
+            {
+              "html": "<dl>\n         <dt data-md=\"\">If there is no such item,\n         </dt><dd data-md=\"\">\n          <p>Set the active state of all <var>markers</var> in the <var>group</var> to false and return.</p>\n        </dd></dl>"
+            },
+            {
+              "html": "<p>Let <var>selected marker</var> be the marker associated with <var>selected target</var>.\nIf multiple items of <var>markers</var> are associated with <var>selected target</var>,\nset <var>selected marker</var> to be the marker that is earliest in tree order.</p>"
+            },
+            {
+              "html": "<p>Set the active state of <var>selected marker</var> to true.</p>"
+            },
+            {
+              "html": "<dl>\n         <dt data-md=\"\">\n          <p>If the active element was the <a href=\"https://open-ui.org/components/focusgroup.explainer/#last-focused-memory\">last-focused element</a> of the <var>group</var>,</p>\n          <dl>\n           <dd data-md=\"\">\n            <p>Focus <var>selected marker</var></p>\n          </dd></dl>\n        </dt></dl>"
+            },
+            {
+              "html": "<p>Set the <a href=\"https://open-ui.org/components/focusgroup.explainer/#last-focused-memory\">last-focused element</a> of the <var>group</var> to <var>selected marker</var>.</p>"
+            },
+            {
+              "html": "<p>Set the active state of all other <var>markers</var> in the <var>group</var> to false.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scrollTargetElement activation",
+      "html": "When a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-marker\" id=\"ref-for-scroll-marker⑦\">scroll marker</a> with a non-null <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-target\" id=\"ref-for-scroll-target⑥\">scroll target</a> is activated by explicit invocation or arrow key focus:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>element</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-target\" id=\"ref-for-scroll-target⑦\">scroll target</a> of the control.</p>"
+        },
+        {
+          "html": "<p>Let <var>block</var> be \"<code>start</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>inline</var> be \"<code>start</code>\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-a-target-into-view\" id=\"ref-for-scroll-a-target-into-view\">Scroll the element into view</a> with <var>behavior</var>, <var>block</var>, and <var>inline</var>.</p>"
+        },
+        {
+          "html": "<dl>\n       <dt data-md=\"\">If the activation was triggered by invocation\n       </dt><dd data-md=\"\">\n        \n        \n      </dd></dl>",
+          "ignored": [
+            "Follow the hyperlink updating the URL, however retain focus on the marker element."
+          ]
+        }
+      ]
+    },
+    {
       "html": "The computed value of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-overflow-4/#propdef-continue\" id=\"ref-for-propdef-continue⑥\">continue</a> for a given element or pseudo element is determined as follow:",
       "rationale": "/^otherwise(\\,| )/i",
       "steps": [
@@ -58,77 +129,6 @@
         },
         {
           "html": "for each removed <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-overflow-5/#selectordef-nth-fragment\" id=\"ref-for-selectordef-nth-fragment①⑤\">::nth-fragment()</a> pseudo-element,\n\t\t\tthe fragment lives within a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#fragment-box\" id=\"ref-for-fragment-box②⓪\">fragment box</a> of the element associated in that association\n\t\t\twith the selector that the pseudo-element was attached to,\n\t\t\tand whose index matches the pseudo-element."
-        }
-      ]
-    },
-    {
-      "name": "scrollTargetElement activation",
-      "html": "When a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-marker-control\" id=\"ref-for-scroll-marker-control②\">scroll marker control</a> is activated by explicit invocation or arrow key focus:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>element</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-overflow-5/#dom-htmllinkelement-scrolltargetelement\" id=\"ref-for-dom-htmllinkelement-scrolltargetelement④\">scrollTargetElement</a></code> of the control.</p>"
-        },
-        {
-          "html": "<p>Let <var>block</var> be \"<code>start</code>\".</p>"
-        },
-        {
-          "html": "<p>Let <var>inline</var> be \"<code>start</code>\".</p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-a-target-into-view\" id=\"ref-for-scroll-a-target-into-view\">Scroll the element into view</a> with <var>behavior</var>, <var>block</var>, and <var>inline</var>.</p>"
-        },
-        {
-          "html": "<dl>\n       <dt data-md=\"\">If the activation was triggered by invocation\n       </dt><dd data-md=\"\">\n        \n        \n      </dd></dl>",
-          "ignored": [
-            "Follow the hyperlink updating the URL, however retain focus on the marker element."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "scroll tracking",
-      "html": "Whenever a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container①⓪\">scroll container</a> is scrolled, or layout changes the scroll position, the user agent must run these steps to determine the active marker:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>position</var> be the 'eventual scroll position' for the scrolling operation.</p>"
-        },
-        {
-          "html": "For each focusgroup <var>group</var> containing one or more <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-marker-control\" id=\"ref-for-scroll-marker-control③\">scroll marker control</a> elements whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-overflow-5/#dom-htmllinkelement-scrolltargetelement\" id=\"ref-for-dom-htmllinkelement-scrolltargetelement⑤\">scrollTargetElement</a></code> is a descendant of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container①①\">scroll container</a>:",
-          "rationale": "let",
-          "steps": [
-            {
-              "html": "<p>Let <var>markers</var> be all of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-marker-control\" id=\"ref-for-scroll-marker-control④\">scroll marker control</a> elements which are a part of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-5/#scroll-marker-group%E2%91%A0\" id=\"ref-for-scroll-marker-group①①\">scroll marker group</a> for the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container①②\">scroll container</a>.</p>"
-            },
-            {
-              "html": "<p>Let <var>targets</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-overflow-5/#dom-htmllinkelement-scrolltargetelement\" id=\"ref-for-dom-htmllinkelement-scrolltargetelement⑥\">scrollTargetElement</a></code>s of <var>markers</var>, associated with the item of <var>markers</var> they came from, and sorted in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order①\">tree order</a>.</p>"
-            },
-            {
-              "html": "<p>For each <var>target</var> in <var>targets</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#determine-the-scroll-into-view-position\" id=\"ref-for-determine-the-scroll-into-view-position\">determine the scroll-into-view position</a> of <var>target</var>, storing this as the associated <var>target position</var> of <var>target</var>.</p>"
-            },
-            {
-              "html": "<p>Let <var>selected target</var> be the largest-indexed item of <var>targets</var> whose associated <var>target position</var> is equal to or before <var>position</var> in both the block and inline axises in the current writing mode direction of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-overflow-3/#scroll-container\" id=\"ref-for-scroll-container①③\">scroll container</a>.</p>"
-            },
-            {
-              "html": "<dl>\n         <dt data-md=\"\">If there is no such item,\n         </dt><dd data-md=\"\">\n          <p>Set the \"checked\" state of all <var>markers</var> in the <var>group</var> to false and return.</p>\n        </dd></dl>"
-            },
-            {
-              "html": "<p>Let <var>selected marker</var> be the marker associated with <var>selected target</var>.\nIf multiple items of <var>markers</var> are associated with <var>selected target</var>,\nset <var>selected marker</var> to be the marker that is earliest in tree order.</p>"
-            },
-            {
-              "html": "<p>Set the \"checked\" state of <var>selected marker</var> to true.</p>"
-            },
-            {
-              "html": "<dl>\n         <dt data-md=\"\">\n          <p>If the active element was the <a href=\"https://open-ui.org/components/focusgroup.explainer/#last-focused-memory\">last-focused element</a> of the <var>group</var>,</p>\n          <dl>\n           <dd data-md=\"\">\n            <p>Focus <var>selected marker</var></p>\n          </dd></dl>\n        </dt></dl>"
-            },
-            {
-              "html": "<p>Set the <a href=\"https://open-ui.org/components/focusgroup.explainer/#last-focused-memory\">last-focused element</a> of the <var>group</var> to <var>selected marker</var>.</p>"
-            },
-            {
-              "html": "<p>Set the \"checked\" state of all other <var>markers</var> in the <var>group</var> to false.</p>"
-            }
-          ]
         }
       ]
     }

@@ -1494,6 +1494,35 @@
       "name": "pause an animation",
       "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
       "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>Given the value <var>value</var>, perform the following steps:</p>"
+        },
+        {
+          "html": "If <var>value</var> is not <code>null</code> and is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector\">invalid</a> <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-pseudo-element-selector\" id=\"ref-for-typedef-pseudo-element-selector\">&lt;pseudo-element-selector&gt;</a>,",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①②\">Throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code> with error name \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code>\".</p>"
+            },
+            {
+              "html": "<p>Abort.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>value</var> is one of the legacy Selectors Level 2 single-colon selectors\n  (':before', ':after', ':first-letter', or ':first-line'), then\n  return the equivalent two-colon selector (e.g. '::before').</p>"
+        },
+        {
+          "html": "<p>Otherwise, return <var>value</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "pause an animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
+      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
       "rationale": "let",
       "steps": [
         {
@@ -1848,6 +1877,26 @@
         },
         {
           "html": "<p>Return <var>animation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "pause an animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
+      "html": "The procedure to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"pause-an-animation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">pause an animation</dfn>, <var>animation</var>,\n    is as follows:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>object</var> be the object on which this method was called.</p>"
+        },
+        {
+          "html": "<p>Let <var>pseudoElement</var> be the result of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-pseudo-element-parsing\" id=\"ref-for-dom-keyframeeffect-pseudo-element-parsing\">pseudo-element parsing</a></code> applied to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-getanimationsoptions-pseudoelement\" id=\"ref-for-dom-getanimationsoptions-pseudoelement①\">pseudoElement</a></code> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-animatable-getanimations-options-options\" id=\"ref-for-dom-animatable-getanimations-options-options①\">options</a></code>,\n  or <code>null</code> if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-animatable-getanimations-options-options\" id=\"ref-for-dom-animatable-getanimations-options-options②\">options</a></code> is not passed.</p>"
+        },
+        {
+          "html": "<p>If <var>pseudoElement</var> is not <code>null</code>,\n  then let <var>target</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#pseudo-element\" id=\"ref-for-pseudo-element⑦\">pseudo-element</a> identified by <var>pseudoElement</var> with <var>object</var> as the originating element.\n  Otherwise, let <var>target</var> be <var>object</var>.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-animatable-getanimations-options-options\" id=\"ref-for-dom-animatable-getanimations-options-options③\">options</a></code> is passed\n  with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-getanimationsoptions-subtree\" id=\"ref-for-dom-getanimationsoptions-subtree①\">subtree</a></code> set to true,\n  then return the set of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#relevant-animations-for-a-subtree\" id=\"ref-for-relevant-animations-for-a-subtree\">relevant animations for a subtree</a> of <var>target</var>.\n  Otherwise, return the set of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#relevant-animations\" id=\"ref-for-relevant-animations\">relevant animations</a> for <var>target</var>.</p>"
         }
       ]
     }

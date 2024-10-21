@@ -1840,7 +1840,7 @@
         "href": "https://drafts.csswg.org/web-animations-1/#dictdef-keyframeanimationoptions"
       },
       "GetAnimationsOptions": {
-        "fragment": "dictionary GetAnimationsOptions {\n    boolean subtree = false;\n};",
+        "fragment": "dictionary GetAnimationsOptions {\n    boolean subtree = false;\n    CSSOMString? pseudoElement = null;\n};",
         "type": "dictionary",
         "name": "GetAnimationsOptions",
         "inheritance": null,
@@ -1863,6 +1863,24 @@
             },
             "required": false,
             "href": "https://drafts.csswg.org/web-animations-1/#dom-getanimationsoptions-subtree"
+          },
+          {
+            "type": "field",
+            "name": "pseudoElement",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://drafts.csswg.org/web-animations-1/#dom-getanimationsoptions-pseudoelement"
           }
         ],
         "extAttrs": [],
@@ -2021,7 +2039,9 @@
         "KeyframeEffectOptions",
         "AnimationTimeline"
       ],
-      "GetAnimationsOptions": [],
+      "GetAnimationsOptions": [
+        "CSSOMString"
+      ],
       "Document": [
         "DocumentTimeline"
       ],
