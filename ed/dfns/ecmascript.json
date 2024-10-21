@@ -3709,6 +3709,26 @@
       "definedIn": "heading"
     },
     {
+      "id": "sec-SetterThatIgnoresPrototypeProperties",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-SetterThatIgnoresPrototypeProperties",
+      "linkingText": [
+        "SetterThatIgnoresPrototypeProperties",
+        "SetterThatIgnoresPrototypeProperties(thisValue, home, p, v)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-SetterThatIgnoresPrototypeProperties",
+        "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-SetterThatIgnoresPrototypeProperties",
+        "title": "SetterThatIgnoresPrototypeProperties ( thisValue, home, p, v )",
+        "number": "7.3.36"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "sec-iterator-records",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iterator-records",
       "linkingText": [
@@ -3731,6 +3751,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "sec-getiteratordirect",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratordirect",
+      "linkingText": [
+        "GetIteratorDirect",
+        "GetIteratorDirect(obj)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-getiteratordirect",
+        "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratordirect",
+        "title": "GetIteratorDirect ( obj )",
+        "number": "7.4.2"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "sec-getiteratorfrommethod",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorfrommethod",
       "linkingText": [
@@ -3746,7 +3786,7 @@
         "id": "sec-getiteratorfrommethod",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorfrommethod",
         "title": "GetIteratorFromMethod ( obj, method )",
-        "number": "7.4.2"
+        "number": "7.4.3"
       },
       "definedIn": "heading"
     },
@@ -3766,7 +3806,27 @@
         "id": "sec-getiterator",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiterator",
         "title": "GetIterator ( obj, kind )",
-        "number": "7.4.3"
+        "number": "7.4.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-getiteratorflattenable",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorflattenable",
+      "linkingText": [
+        "GetIteratorFlattenable",
+        "GetIteratorFlattenable(obj, primitiveHandling)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-getiteratorflattenable",
+        "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorflattenable",
+        "title": "GetIteratorFlattenable ( obj, primitiveHandling )",
+        "number": "7.4.5"
       },
       "definedIn": "heading"
     },
@@ -3786,7 +3846,7 @@
         "id": "sec-iteratornext",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratornext",
         "title": "IteratorNext ( iteratorRecord [ , value ] )",
-        "number": "7.4.4"
+        "number": "7.4.6"
       },
       "definedIn": "heading"
     },
@@ -3806,7 +3866,7 @@
         "id": "sec-iteratorcomplete",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorcomplete",
         "title": "IteratorComplete ( iteratorResult )",
-        "number": "7.4.5"
+        "number": "7.4.7"
       },
       "definedIn": "heading"
     },
@@ -3826,7 +3886,7 @@
         "id": "sec-iteratorvalue",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorvalue",
         "title": "IteratorValue ( iteratorResult )",
-        "number": "7.4.6"
+        "number": "7.4.8"
       },
       "definedIn": "heading"
     },
@@ -3846,7 +3906,7 @@
         "id": "sec-iteratorstep",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorstep",
         "title": "IteratorStep ( iteratorRecord )",
-        "number": "7.4.7"
+        "number": "7.4.9"
       },
       "definedIn": "heading"
     },
@@ -3866,7 +3926,7 @@
         "id": "sec-iteratorstepvalue",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorstepvalue",
         "title": "IteratorStepValue ( iteratorRecord )",
-        "number": "7.4.8"
+        "number": "7.4.10"
       },
       "definedIn": "heading"
     },
@@ -3886,7 +3946,7 @@
         "id": "sec-iteratorclose",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorclose",
         "title": "IteratorClose ( iteratorRecord, completion )",
-        "number": "7.4.9"
+        "number": "7.4.11"
       },
       "definedIn": "heading"
     },
@@ -3906,7 +3966,7 @@
         "id": "sec-ifabruptcloseiterator",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ifabruptcloseiterator",
         "title": "IfAbruptCloseIterator ( value, iteratorRecord )",
-        "number": "7.4.10"
+        "number": "7.4.12"
       },
       "definedIn": "heading"
     },
@@ -3926,7 +3986,7 @@
         "id": "sec-asynciteratorclose",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-asynciteratorclose",
         "title": "AsyncIteratorClose ( iteratorRecord, completion )",
-        "number": "7.4.11"
+        "number": "7.4.13"
       },
       "definedIn": "heading"
     },
@@ -3946,7 +4006,7 @@
         "id": "sec-createiterresultobject",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createiterresultobject",
         "title": "CreateIteratorResultObject ( value, done )",
-        "number": "7.4.12"
+        "number": "7.4.14"
       },
       "definedIn": "heading"
     },
@@ -3966,7 +4026,7 @@
         "id": "sec-createlistiteratorRecord",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createlistiteratorRecord",
         "title": "CreateListIteratorRecord ( list )",
-        "number": "7.4.13"
+        "number": "7.4.15"
       },
       "definedIn": "heading"
     },
@@ -3986,7 +4046,7 @@
         "id": "sec-iteratortolist",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist",
         "title": "IteratorToList ( iteratorRecord )",
-        "number": "7.4.14"
+        "number": "7.4.16"
       },
       "definedIn": "heading"
     },
@@ -24669,10 +24729,10 @@
       "definedIn": "heading"
     },
     {
-      "id": "sec-%iteratorprototype%-object",
-      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25iteratorprototype%25-object",
+      "id": "sec-%iteratorhelperprototype%-object",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25iteratorhelperprototype%25-object",
       "linkingText": [
-        "%IteratorPrototype%"
+        "%IteratorHelperPrototype%"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -24680,12 +24740,424 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-%iteratorprototype%-object",
-        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25iteratorprototype%25-object",
-        "title": "The %IteratorPrototype% Object",
-        "number": "27.1.2"
+        "id": "sec-%iteratorhelperprototype%-object",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25iteratorhelperprototype%25-object",
+        "title": "The %IteratorHelperPrototype% Object",
+        "number": "27.1.2.1"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "sec-iterator-objects",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-objects",
+      "linkingText": [
+        "Iterator"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator-objects",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-objects",
+        "title": "Iterator Objects",
+        "number": "27.1.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator-constructor",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-constructor",
+      "linkingText": [
+        "%Iterator%"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator-constructor",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-constructor",
+        "title": "The Iterator Constructor",
+        "number": "27.1.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-iterator",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator",
+      "linkingText": [
+        "Iterator()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator",
+        "title": "Iterator ( )",
+        "number": "27.1.3.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.from",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.from",
+      "linkingText": [
+        "from(O)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.from",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.from",
+        "title": "Iterator.from ( O )",
+        "number": "27.1.3.2.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-%wrapforvaliditeratorprototype%-object",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25wrapforvaliditeratorprototype%25-object",
+      "linkingText": [
+        "%WrapForValidIteratorPrototype%"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-%wrapforvaliditeratorprototype%-object",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25wrapforvaliditeratorprototype%25-object",
+        "title": "The %WrapForValidIteratorPrototype% Object",
+        "number": "27.1.3.2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-%iterator.prototype%-object",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25iterator.prototype%25-object",
+      "linkingText": [
+        "%Iterator.prototype%"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-%iterator.prototype%-object",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25iterator.prototype%25-object",
+        "title": "The %Iterator.prototype% Object",
+        "number": "27.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-iterator.prototype.drop",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.drop",
+      "linkingText": [
+        "drop(limit)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype.drop",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.drop",
+        "title": "Iterator.prototype.drop ( limit )",
+        "number": "27.1.4.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.prototype.every",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.every",
+      "linkingText": [
+        "every(predicate)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype.every",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.every",
+        "title": "Iterator.prototype.every ( predicate )",
+        "number": "27.1.4.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.prototype.filter",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.filter",
+      "linkingText": [
+        "filter(predicate)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype.filter",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.filter",
+        "title": "Iterator.prototype.filter ( predicate )",
+        "number": "27.1.4.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.prototype.find",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.find",
+      "linkingText": [
+        "find(predicate)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype.find",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.find",
+        "title": "Iterator.prototype.find ( predicate )",
+        "number": "27.1.4.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.prototype.flatmap",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.flatmap",
+      "linkingText": [
+        "flatMap(mapper)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype.flatmap",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.flatmap",
+        "title": "Iterator.prototype.flatMap ( mapper )",
+        "number": "27.1.4.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.prototype.foreach",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.foreach",
+      "linkingText": [
+        "forEach(procedure)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype.foreach",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.foreach",
+        "title": "Iterator.prototype.forEach ( procedure )",
+        "number": "27.1.4.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.prototype.map",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.map",
+      "linkingText": [
+        "map(mapper)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype.map",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.map",
+        "title": "Iterator.prototype.map ( mapper )",
+        "number": "27.1.4.8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.prototype.reduce",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.reduce",
+      "linkingText": [
+        "reduce(reducer, initialValue)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype.reduce",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.reduce",
+        "title": "Iterator.prototype.reduce ( reducer [ , initialValue ] )",
+        "number": "27.1.4.9"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.prototype.some",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.some",
+      "linkingText": [
+        "some(predicate)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype.some",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.some",
+        "title": "Iterator.prototype.some ( predicate )",
+        "number": "27.1.4.10"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.prototype.take",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.take",
+      "linkingText": [
+        "take(limit)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype.take",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.take",
+        "title": "Iterator.prototype.take ( limit )",
+        "number": "27.1.4.11"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.prototype.toarray",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.toarray",
+      "linkingText": [
+        "toArray()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype.toarray",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.toarray",
+        "title": "Iterator.prototype.toArray ( )",
+        "number": "27.1.4.12"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-iterator.prototype-%symbol.iterator%",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype-%25symbol.iterator%25",
+      "linkingText": [
+        "Iterator.prototype %Symbol.iterator% ()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Iterator.prototype [ %Symbol.iterator% ] ( )"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-iterator.prototype-%symbol.iterator%",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype-%25symbol.iterator%25",
+        "title": "Iterator.prototype [ %Symbol.iterator% ] ( )",
+        "number": "27.1.4.13"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-get-iterator.prototype-%symbol.tostringtag%",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-get-iterator.prototype-%25symbol.tostringtag%25",
+      "linkingText": [
+        "get Iterator.prototype [ %Symbol.toStringTag% ]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Iterator.prototype [ %Symbol.toStringTag% ]"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-get-iterator.prototype-%symbol.tostringtag%",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-get-iterator.prototype-%25symbol.tostringtag%25",
+        "title": "get Iterator.prototype [ %Symbol.toStringTag% ]",
+        "number": "27.1.4.14.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-set-iterator.prototype-%symbol.tostringtag%",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-set-iterator.prototype-%25symbol.tostringtag%25",
+      "linkingText": [
+        "set Iterator.prototype [ %Symbol.toStringTag% ]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Iterator.prototype [ %Symbol.toStringTag% ]"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-set-iterator.prototype-%symbol.tostringtag%",
+        "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-set-iterator.prototype-%25symbol.tostringtag%25",
+        "title": "set Iterator.prototype [ %Symbol.toStringTag% ]",
+        "number": "27.1.4.14.2"
+      },
+      "definedIn": "heading"
     },
     {
       "id": "sec-asynciteratorprototype",
@@ -24702,7 +25174,7 @@
         "id": "sec-asynciteratorprototype",
         "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asynciteratorprototype",
         "title": "The %AsyncIteratorPrototype% Object",
-        "number": "27.1.3"
+        "number": "27.1.5"
       },
       "definedIn": "prose"
     },
@@ -24722,7 +25194,7 @@
         "id": "sec-createasyncfromsynciterator",
         "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-createasyncfromsynciterator",
         "title": "CreateAsyncFromSyncIterator ( syncIteratorRecord )",
-        "number": "27.1.4.1"
+        "number": "27.1.6.1"
       },
       "definedIn": "heading"
     },
@@ -24741,7 +25213,7 @@
         "id": "sec-%asyncfromsynciteratorprototype%-object",
         "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25asyncfromsynciteratorprototype%25-object",
         "title": "The %AsyncFromSyncIteratorPrototype% Object",
-        "number": "27.1.4.2"
+        "number": "27.1.6.2"
       },
       "definedIn": "prose"
     },
@@ -24761,7 +25233,7 @@
         "id": "sec-asyncfromsynciteratorcontinuation",
         "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncfromsynciteratorcontinuation",
         "title": "AsyncFromSyncIteratorContinuation ( result, promiseCapability )",
-        "number": "27.1.4.4"
+        "number": "27.1.6.4"
       },
       "definedIn": "heading"
     },
@@ -25921,7 +26393,7 @@
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-createiteratorfromclosure",
       "linkingText": [
         "CreateIteratorFromClosure",
-        "CreateIteratorFromClosure(closure, generatorBrand, generatorPrototype)"
+        "CreateIteratorFromClosure(closure, generatorBrand, generatorPrototype, extraSlots)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -25931,7 +26403,7 @@
       "heading": {
         "id": "sec-createiteratorfromclosure",
         "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-createiteratorfromclosure",
-        "title": "CreateIteratorFromClosure ( closure, generatorBrand, generatorPrototype )",
+        "title": "CreateIteratorFromClosure ( closure, generatorBrand, generatorPrototype [ , extraSlots ] )",
         "number": "27.5.3.8"
       },
       "definedIn": "heading"
