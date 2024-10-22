@@ -29,13 +29,22 @@
           "html": "<p>Let <var>site</var> be the result of running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site\">obtain a site</a> given <var>origin</var>.</p>"
         },
         {
-          "html": "<p>Let <var>host</var> be <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①⓪\">host</a>.</p>"
+          "html": "<p>Let <var>host</var> be <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①①\">host</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">Remove</a> <var>host</var> from the <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#stateful-bounce-tracking-map\" id=\"ref-for-stateful-bounce-tracking-map②\">stateful bounce tracking map</a>.</p>"
         },
         {
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#user-activation-map\" id=\"ref-for-user-activation-map①\">user activation map</a>[<var>host</var>] to <var>topDocument</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-eso-current-wall-time\" id=\"ref-for-dfn-eso-current-wall-time\">current wall time</a>.</p>"
+        },
+        {
+          "html": "If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record\">bounce tracking record</a> is not null:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>host</var> to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-storage-access-set\" id=\"ref-for-bounce-tracking-record-storage-access-set\">storage access set</a>.</p>"
+            }
+          ]
         }
       ]
     },
@@ -79,7 +88,7 @@
           "html": "<p>Let <var>site</var> be the result of running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site①\">obtain a site</a> given <var>origin</var>.</p>"
         },
         {
-          "html": "<p>Let <var>host</var> be <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①①\">host</a>.</p>"
+          "html": "<p>Let <var>host</var> be <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①②\">host</a>.</p>"
         },
         {
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#user-activation-map\" id=\"ref-for-user-activation-map②\">user activation map</a>[<var>host</var>] to <var>topDocument</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-eso-current-wall-time\" id=\"ref-for-dfn-eso-current-wall-time①\">current wall time</a>.</p>"
@@ -121,16 +130,16 @@
               "html": "<p>Let <var>site</var> be the result of running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site②\">obtain a site</a> given <var>origin</var>.</p>"
             },
             {
-              "html": "<p>Set <var>initialHost</var> to <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①②\">host</a>.</p>"
+              "html": "<p>Set <var>initialHost</var> to <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①③\">host</a>.</p>"
             }
           ]
         },
         {
-          "html": "If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record\">bounce tracking record</a> is null:",
+          "html": "If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record②\">bounce tracking record</a> is null:",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①\">bounce tracking record</a> to a new <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record\" id=\"ref-for-bounce-tracking-record③\">bounce tracking record</a> with <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-initial-host\" id=\"ref-for-bounce-tracking-record-initial-host\">initial host</a> set to <var>initialHost</var>.</p>"
+              "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record③\">bounce tracking record</a> to a new <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record\" id=\"ref-for-bounce-tracking-record③\">bounce tracking record</a> with <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-initial-host\" id=\"ref-for-bounce-tracking-record-initial-host\">initial host</a> set to <var>initialHost</var>.</p>"
             }
           ]
         }
@@ -154,12 +163,15 @@
                   "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#record-stateful-bounces-for-bounce-tracking\" id=\"ref-for-record-stateful-bounces-for-bounce-tracking①\">record stateful bounces for bounce tracking</a> given <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
                 },
                 {
-                  "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record②\">bounce tracking record</a> to a new <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record\" id=\"ref-for-bounce-tracking-record⑤\">bounce tracking record</a> with <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-initial-host\" id=\"ref-for-bounce-tracking-record-initial-host③\">initial host</a> set to <var>initialHost</var>.</p>"
+                  "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record④\">bounce tracking record</a> to a new <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record\" id=\"ref-for-bounce-tracking-record⑤\">bounce tracking record</a> with <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-initial-host\" id=\"ref-for-bounce-tracking-record-initial-host③\">initial host</a> set to <var>initialHost</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>initialHost</var> to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record⑤\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-user-activation-set\" id=\"ref-for-bounce-tracking-record-user-activation-set\">user activation set</a>.</p>"
                 }
               ]
             },
             {
-              "html": "<p>Otherwise, add <var>initialHost</var> to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record③\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-bounce-set\" id=\"ref-for-bounce-tracking-record-bounce-set\">bounce set</a>.</p>"
+              "html": "<p>Otherwise, add <var>initialHost</var> to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record⑥\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-bounce-set\" id=\"ref-for-bounce-tracking-record-bounce-set\">bounce set</a>.</p>"
             }
           ]
         }
@@ -211,13 +223,13 @@
           ]
         },
         {
-          "html": "<p>If <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record④\">bounce tracking record</a> is null, abort these steps.</p>"
+          "html": "<p>If <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record⑦\">bounce tracking record</a> is null, abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>site</var> be the result of running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site③\">obtain a site</a> given <var>origin</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①③\">host</a> to <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record⑤\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-storage-access-set\" id=\"ref-for-bounce-tracking-record-storage-access-set\">storage access set</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">Append</a> <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①④\">host</a> to <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record⑧\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-storage-access-set\" id=\"ref-for-bounce-tracking-record-storage-access-set①\">storage access set</a>.</p>"
         }
       ]
     },
@@ -266,10 +278,10 @@
           "html": "<p>Let <var>global</var> be <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context\">realm execution context</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object\">global object</a>.</p>"
         },
         {
-          "html": "<p>Let <var>navigables</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable①\">navigables</a>.</p>"
+          "html": "<p>Let <var>navigables</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">set</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable①\">navigables</a>.</p>"
         },
         {
-          "html": "<p>If <var>global</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-3/#window\" id=\"ref-for-window\">Window</a> object, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">append</a> <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①\">node navigable</a> onto <var>navigables</var>.</p>"
+          "html": "<p>If <var>global</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-3/#window\" id=\"ref-for-window\">Window</a> object, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">append</a> <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①\">node navigable</a> onto <var>navigables</var>.</p>"
         },
         {
           "html": "Otherwise, if <var>global</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope\">WorkerGlobalScope</a></code> object,",
@@ -289,7 +301,7 @@
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue-dequeue\" id=\"ref-for-queue-dequeue\">Dequeue</a> <var>owner</var> from <var>ownerQueue</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>owner</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">document</a> object, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">append</a> <var>owner</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable②\">node navigable</a> onto <var>navigables</var>.</p>"
+                  "html": "<p>If <var>owner</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">document</a> object, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append④\">append</a> <var>owner</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable②\">node navigable</a> onto <var>navigables</var>.</p>"
                 },
                 {
                   "html": "<p>If <var>owner</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope②\">WorkerGlobalScope</a></code> object, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>owner</var> in <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#concept-WorkerGlobalScope-owner-set\" id=\"ref-for-concept-WorkerGlobalScope-owner-set\">owner set</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue-enqueue\" id=\"ref-for-queue-enqueue①\">enqueue</a> <var>owner</var> onto <var>ownerQueue</var>.</p>"
@@ -314,13 +326,13 @@
               "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑦\">top-level traversable</a>, then abort these steps.</p>"
             },
             {
-              "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record⑥\">bounce tracking record</a> is null, then abort these steps.</p>"
+              "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record⑨\">bounce tracking record</a> is null, then abort these steps.</p>"
             },
             {
               "html": "<p>Let <var>site</var> be the result of running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site④\">obtain a site</a> given <var>origin</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">Append</a> <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①④\">host</a> to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record⑦\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-storage-access-set\" id=\"ref-for-bounce-tracking-record-storage-access-set②\">storage access set</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑤\">Append</a> <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①⑤\">host</a> to <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①⓪\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-storage-access-set\" id=\"ref-for-bounce-tracking-record-storage-access-set③\">storage access set</a>.</p>"
             }
           ]
         }
@@ -345,7 +357,7 @@
           "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑧\">top-level traversable</a>, then abort these steps.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record⑧\">bounce tracking record</a> is not null.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①①\">bounce tracking record</a> is not null.</p>"
         },
         {
           "html": "<p>Let <var>global</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document②\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>.</p>"
@@ -361,10 +373,10 @@
               "html": "<p>Let <var>site</var> be the result of running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑤\">obtain a site</a> given <var>URL</var>.</p>"
             },
             {
-              "html": "<p>Let <var>host</var> be the <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①⑤\">host</a>.</p>"
+              "html": "<p>Let <var>host</var> be the <var>site</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①⑥\">host</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-insert\" id=\"ref-for-concept-node-insert\">Insert</a> <var>host</var> to the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record⑨\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-bounce-set\" id=\"ref-for-bounce-tracking-record-bounce-set②\">bounce set</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-insert\" id=\"ref-for-concept-node-insert\">Insert</a> <var>host</var> to the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①②\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-bounce-set\" id=\"ref-for-bounce-tracking-record-bounce-set②\">bounce set</a>.</p>"
             }
           ]
         }
@@ -389,7 +401,7 @@
           "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑨\">top-level traversable</a>, then abort these steps.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①⓪\">bounce tracking record</a> is not null.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①③\">bounce tracking record</a> is not null.</p>"
         },
         {
           "html": "<p>If <var>URLs</var> is empty, then abort these steps.</p>"
@@ -398,7 +410,7 @@
           "html": "<p>Let <var>finalSite</var> be the result of running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑥\">obtain a site</a> given the last entry in <var>URLs</var>.</p>"
         },
         {
-          "html": "<p>Set the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①①\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-final-host\" id=\"ref-for-bounce-tracking-record-final-host③\">final host</a> to the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①⑦\">host</a> of <var>finalSite</var>.</p>"
+          "html": "<p>Set the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①④\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-final-host\" id=\"ref-for-bounce-tracking-record-final-host③\">final host</a> to the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①⑧\">host</a> of <var>finalSite</var>.</p>"
         }
       ]
     },
@@ -431,7 +443,7 @@
               "html": "<p>If <var>bounceTime</var> + <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-grace-period\" id=\"ref-for-bounce-tracking-grace-period①\">bounce tracking grace period</a> is after <var>now</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable①⓪\">top-level traversable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document③\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑦\">site</a>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①⑧\">host</a> equals <var>host</var>,\nthen <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable①⓪\">top-level traversable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document③\">active document</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑦\">site</a>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①⑨\">host</a> equals <var>host</var>,\nthen <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove②\">Remove</a> <var>host</var> from <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#stateful-bounce-tracking-map\" id=\"ref-for-stateful-bounce-tracking-map⑤\">stateful bounce tracking map</a>.</p>"
@@ -468,17 +480,17 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>topDocument</var> is the same as <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated document</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①②\">bounce tracking record</a> is not null.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①⑤\">bounce tracking record</a> is not null.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>host</var> in <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①③\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-bounce-set\" id=\"ref-for-bounce-tracking-record-bounce-set③\">bounce set</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>host</var> in <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①⑥\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-bounce-set\" id=\"ref-for-bounce-tracking-record-bounce-set③\">bounce set</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>host</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-equals\" id=\"ref-for-concept-host-equals\">equals</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①④\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-initial-host\" id=\"ref-for-bounce-tracking-record-initial-host④\">initial host</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+              "html": "<p>If <var>host</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-equals\" id=\"ref-for-concept-host-equals\">equals</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①⑦\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-initial-host\" id=\"ref-for-bounce-tracking-record-initial-host④\">initial host</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
             },
             {
-              "html": "<p>If <var>host</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-equals\" id=\"ref-for-concept-host-equals①\">equals</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①⑤\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-final-host\" id=\"ref-for-bounce-tracking-record-final-host④\">final host</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+              "html": "<p>If <var>host</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-equals\" id=\"ref-for-concept-host-equals①\">equals</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①⑧\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-final-host\" id=\"ref-for-bounce-tracking-record-final-host④\">final host</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
             },
             {
               "html": "<p>If <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#user-activation-map\" id=\"ref-for-user-activation-map⑦\">user activation map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">contains</a> <var>host</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
@@ -487,7 +499,7 @@
               "html": "<p>If <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#stateful-bounce-tracking-map\" id=\"ref-for-stateful-bounce-tracking-map⑥\">stateful bounce tracking map</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">contains</a> <var>host</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>. (Only the first bounce time since the\nlast execution of the <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-timer\" id=\"ref-for-bounce-tracking-timer④\">bounce tracking timer</a> is tracked in the map.)</p>"
             },
             {
-              "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①⑥\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-storage-access-set\" id=\"ref-for-bounce-tracking-record-storage-access-set③\">storage access set</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>host</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
+              "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①⑨\">bounce tracking record</a>'s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-record-storage-access-set\" id=\"ref-for-bounce-tracking-record-storage-access-set④\">storage access set</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>host</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
             },
             {
               "html": "<p>Let <var>topDocument</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑤\">active document</a>.</p>"
@@ -498,14 +510,14 @@
           ]
         },
         {
-          "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record①⑦\">bounce tracking record</a> to null.</p>"
+          "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#top-level-traversable-bounce-tracking-record\" id=\"ref-for-top-level-traversable-bounce-tracking-record②⓪\">bounce tracking record</a> to null.</p>"
         }
       ]
     },
     {
       "name": "clear cookies for host",
       "href": "https://privacycg.github.io/nav-tracking-mitigations/#clear-cookies-for-host",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-cookies-for-host\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear cookies for host</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①⑨\">host</a> <var>host</var>, perform the\nfollowing steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-cookies-for-host\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear cookies for host</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host②⓪\">host</a> <var>host</var>, perform the\nfollowing steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -532,10 +544,10 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If the top-level <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①⓪\">site</a> in <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/draft-cutler-httpbis-partitioned-cookies#section-2.2\" id=\"ref-for-section-2.2\">partition key</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site\">same site</a> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①①\">site</a> (\"http\", <var>host</var>), add <var>cookie</var> to <var>cookieList</var>.</p>"
+                  "html": "<p>If the top-level <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①①\">site</a> in <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/draft-cutler-httpbis-partitioned-cookies#section-2.2\" id=\"ref-for-section-2.2\">partition key</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site\">same site</a> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①②\">site</a> (\"http\", <var>host</var>), add <var>cookie</var> to <var>cookieList</var>.</p>"
                 },
                 {
-                  "html": "<p>If the top-level <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①②\">site</a> in <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/draft-cutler-httpbis-partitioned-cookies#section-2.2\" id=\"ref-for-section-2.2①\">partition key</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site①\">same site</a> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①③\">site</a> (\"https\", <var>host</var>), add <var>cookie</var> to <var>cookieList</var>.</p>"
+                  "html": "<p>If the top-level <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①③\">site</a> in <var>cookie</var>’s <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/draft-cutler-httpbis-partitioned-cookies#section-2.2\" id=\"ref-for-section-2.2①\">partition key</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site①\">same site</a> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①④\">site</a> (\"https\", <var>host</var>), add <var>cookie</var> to <var>cookieList</var>.</p>"
                 },
                 {
                   "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑧\">continue</a>.</p>"
@@ -558,7 +570,7 @@
     {
       "name": "clear non-cookie storage for host",
       "href": "https://privacycg.github.io/nav-tracking-mitigations/#clear-non-cookie-storage-for-host",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-non-cookie-storage-for-host\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear non-cookie storage for host</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host②⓪\">host</a> <var>host</var>, perform\nthe following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-non-cookie-storage-for-host\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear non-cookie storage for host</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host②①\">host</a> <var>host</var>, perform\nthe following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -576,7 +588,7 @@
                   "html": "<p>If <var>topLevelSite</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque⑤\">opaque origin</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑨\">continue</a>.</p>"
                 },
                 {
-                  "html": "<p>If <var>topLevelSite</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host②①\">host</a> does not equal <var>host</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⓪\">continue</a>.</p>"
+                  "html": "<p>If <var>topLevelSite</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host②②\">host</a> does not equal <var>host</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⓪\">continue</a>.</p>"
                 },
                 {
                   "html": "<p>Delete all data stored in <var>storageShelf</var>.</p>"
@@ -593,18 +605,18 @@
     {
       "name": "clear cache for host",
       "href": "https://privacycg.github.io/nav-tracking-mitigations/#clear-cache-for-host",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-cache-for-host\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear cache for host</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host②②\">host</a> <var>host</var>, perform the\nfollowing steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-cache-for-host\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear cache for host</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host②③\">host</a> <var>host</var>, perform the\nfollowing steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>cacheList</var> be the set of entries from the <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc7234/#section-2\" id=\"ref-for-section-2\">network cache</a> whose\ntarget URI <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host②③\">host</a> equals <var>host</var>.</p>"
+          "html": "<p>Let <var>cacheList</var> be the set of entries from the <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc9111/#section-2\" id=\"ref-for-section-2\">network cache</a> whose\ntarget URI <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host②④\">host</a> equals <var>host</var>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>entry</var> in <var>cacheList</var>:",
           "rationale": "remove",
           "steps": [
             {
-              "html": "<p>Remove <var>entry</var> from the <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc7234/#section-2\" id=\"ref-for-section-2①\">network cache</a>.</p>"
+              "html": "<p>Remove <var>entry</var> from the <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc9111/#section-2\" id=\"ref-for-section-2①\">network cache</a>.</p>"
             }
           ]
         }
@@ -621,7 +633,7 @@
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#stateful-bounce-tracking-map\" id=\"ref-for-stateful-bounce-tracking-map⑧\">stateful bounce tracking map</a> contains a malformed host, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unknown-error\" id=\"ref-for-dfn-unknown-error\">unknown error</a>.</p>"
         },
         {
-          "html": "<p>Let <var>list</var> be a new list of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①④\">site</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host②④\">hosts</a> in the <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#stateful-bounce-tracking-map\" id=\"ref-for-stateful-bounce-tracking-map⑨\">stateful bounce tracking map</a>.</p>"
+          "html": "<p>Let <var>list</var> be a new list of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①⑤\">site</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host②⑤\">hosts</a> in the <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#stateful-bounce-tracking-map\" id=\"ref-for-stateful-bounce-tracking-map⑨\">stateful bounce tracking map</a>.</p>"
         },
         {
           "html": "<p>Let <var>temp</var> be <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-grace-period\" id=\"ref-for-bounce-tracking-grace-period②\">bounce tracking grace period</a>.</p>"
