@@ -657,24 +657,40 @@
     {
       "name": "on-input-source-added",
       "href": "https://www.w3.org/TR/webxr/#xrsession-add-input-source",
-      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-lt=\"add input source\" data-noexport=\"\" id=\"xrsession-add-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source③\">XR input source</a>s become available</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession④⑤\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+      "html": "When <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-lt=\"add input source\" data-noexport=\"\" id=\"xrsession-add-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source③\">XR input source</a>s become available</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession④⑥\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-promise-resolved\" id=\"ref-for-xrsession-promise-resolved①\">promise resolved</a> flag is not set, abort these steps.</p>"
         },
         {
-          "html": "<p>Let <var>added</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a>.</p>"
+          "html": "<p>Let <var>added primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>added tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a>.</p>"
         },
         {
           "html": "For each new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source④\">XR input source</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>inputSource</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource①\">XRInputSource</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥\">relevant realm</a> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession④⑥\">XRSession</a></code>.</p>"
-            },
-            {
-              "html": "<p>Add <var>inputSource</var> to <var>added</var>.</p>"
+              "html": "Let <var>inputSource</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource②\">XRInputSource</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥\">relevant realm</a> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession④⑦\">XRSession</a></code>, then perform the following step:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "If inputSource is a primary input source:",
+                      "html": "<p>Add <var>inputSource</var> to <var>added primary sources</var>.</p>"
+                    },
+                    {
+                      "case": "Otherwise:",
+                      "html": "<p>Add <var>inputSource</var> to <var>added tracked sources</var>.</p>"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -683,10 +699,16 @@
           "rationale": "extend",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend\">Extend</a> <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources②\">list of active XR input sources</a> with <var>added</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend\">Extend</a> <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources②\">list of active XR input sources</a> with <var>added primary sources</var>.</p>"
             },
             {
-              "html": "<p>Fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent①\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-inputsourceschange\" id=\"ref-for-eventdef-xrsession-inputsourceschange②\">inputsourceschange</a></code> on <var>session</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-added\" id=\"ref-for-dom-xrinputsourceschangeevent-added①\">added</a></code> set to <var>added</var>.</p>"
+              "html": "<p>If <var>added primary sources</var> is not empty, fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent①\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-inputsourceschange\" id=\"ref-for-eventdef-xrsession-inputsourceschange②\">inputsourceschange</a></code> on <var>session</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-added\" id=\"ref-for-dom-xrinputsourceschangeevent-added①\">added</a></code> set to <var>added primary sources</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend①\">Extend</a> <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-tracked-sources\" id=\"ref-for-list-of-active-xr-tracked-sources①\">list of active XR tracked sources</a> with <var>added tracked sources</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>added tracked sources</var> is not empty, fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent②\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-trackedsourceschange\" id=\"ref-for-eventdef-xrsession-trackedsourceschange\">trackedsourceschange</a></code> on <var>session</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-added\" id=\"ref-for-dom-xrinputsourceschangeevent-added②\">added</a></code> set to <var>added tracked sources</var>.</p>"
             }
           ]
         }
@@ -695,24 +717,40 @@
     {
       "name": "on-input-source-removed",
       "href": "https://www.w3.org/TR/webxr/#xrsession-remove-input-source",
-      "html": "When any previously added <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-lt=\"remove input source\" data-noexport=\"\" id=\"xrsession-remove-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑤\">XR input source</a>s are no longer available</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession④⑦\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+      "html": "When any previously added <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-lt=\"remove input source\" data-noexport=\"\" id=\"xrsession-remove-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑤\">XR input source</a>s are no longer available</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession④⑧\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-promise-resolved\" id=\"ref-for-xrsession-promise-resolved②\">promise resolved</a> flag is not set, abort these steps.</p>"
         },
         {
-          "html": "<p>Let <var>removed</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
+          "html": "<p>Let <var>removed primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>removed tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a>.</p>"
         },
         {
           "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑥\">XR input source</a> that is no longer available:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>inputSource</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource②\">XRInputSource</a></code> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources③\">list of active XR input sources</a> associated with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑦\">XR input source</a>.</p>"
-            },
-            {
-              "html": "<p>Add <var>inputSource</var> to <var>removed</var>.</p>"
+              "html": "Let <var>inputSource</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource③\">XRInputSource</a></code> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources③\">list of active XR input sources</a> associated with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑦\">XR input source</a>, then perform the following step:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "If inputSource is a primary input source:",
+                      "html": "<p>Add <var>inputSource</var> to <var>removed primary sources</var>.</p>"
+                    },
+                    {
+                      "case": "Otherwise:",
+                      "html": "<p>Add <var>inputSource</var> to <var>removed tracked sources</var>.</p>"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -721,10 +759,16 @@
           "rationale": "remove",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource③\">XRInputSource</a></code> in <var>removed</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources④\">list of active XR input sources</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource④\">XRInputSource</a></code> in <var>removed primary sources</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources④\">list of active XR input sources</a>.</p>"
             },
             {
-              "html": "<p>Fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent②\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-inputsourceschange\" id=\"ref-for-eventdef-xrsession-inputsourceschange③\">inputsourceschange</a></code> on <var>session</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-removed\" id=\"ref-for-dom-xrinputsourceschangeevent-removed\">removed</a></code> set to <var>removed</var>.</p>"
+              "html": "<p>If <var>removed primary sources</var> is not empty, fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent③\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-inputsourceschange\" id=\"ref-for-eventdef-xrsession-inputsourceschange③\">inputsourceschange</a></code> on <var>session</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-removed\" id=\"ref-for-dom-xrinputsourceschangeevent-removed\">removed</a></code> set to <var>removed primary sources</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">Remove</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑤\">XRInputSource</a></code> in <var>removed tracked sources</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-tracked-sources\" id=\"ref-for-list-of-active-xr-tracked-sources②\">list of active XR tracked sources</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>removed tracked sources</var> is not empty, fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent④\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-trackedsourceschange\" id=\"ref-for-eventdef-xrsession-trackedsourceschange①\">trackedsourceschange</a></code> on <var>session</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-removed\" id=\"ref-for-dom-xrinputsourceschangeevent-removed①\">removed</a></code> set to <var>removed tracked sources</var>.</p>"
             }
           ]
         }
@@ -733,33 +777,65 @@
     {
       "name": "on-input-source-change",
       "href": "https://www.w3.org/TR/webxr/#xrsession-change-input-source",
-      "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"change input source\" id=\"xrsession-change-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-handedness\" id=\"ref-for-dom-xrinputsource-handedness\">handedness</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-targetraymode\" id=\"ref-for-dom-xrinputsource-targetraymode\">targetRayMode</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-profiles\" id=\"ref-for-dom-xrinputsource-profiles\">profiles</a></code>, or presence of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-gripspace\" id=\"ref-for-dom-xrinputsource-gripspace\">gripSpace</a></code> for any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑧\">XR input source</a>s change</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession④⑧\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+      "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"change input source\" id=\"xrsession-change-input-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-handedness\" id=\"ref-for-dom-xrinputsource-handedness\">handedness</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-targetraymode\" id=\"ref-for-dom-xrinputsource-targetraymode\">targetRayMode</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-profiles\" id=\"ref-for-dom-xrinputsource-profiles\">profiles</a></code>, presence of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-gripspace\" id=\"ref-for-dom-xrinputsource-gripspace\">gripSpace</a></code> or the status as a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-input-source\" id=\"ref-for-primary-input-source②\">primary input source</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#tracked-input-source\" id=\"ref-for-tracked-input-source\">tracked input source</a> for any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑧\">XR input source</a>s change</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession④⑨\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-promise-resolved\" id=\"ref-for-xrsession-promise-resolved③\">promise resolved</a> flag is not set, abort these steps.</p>"
         },
         {
-          "html": "<p>Let <var>added</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a>.</p>"
+          "html": "<p>Let <var>added primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a>.</p>"
         },
         {
-          "html": "<p>Let <var>removed</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a>.</p>"
+          "html": "<p>Let <var>removed primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>added tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①③\">list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>removed tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a>.</p>"
         },
         {
           "html": "For each changed <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑨\">XR input source</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>oldInputSource</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource④\">XRInputSource</a></code> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources⑤\">list of active XR input sources</a> previously associated with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source①⓪\">XR input source</a>.</p>"
+              "html": "Let <var>oldInputSource</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑥\">XRInputSource</a></code> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources⑤\">list of active XR input sources</a> previously associated with the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source①⓪\">XR input source</a>, then perform the following step:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "If oldInputSource is a primary input source or its state changed from a primary input source to tracked input source a:",
+                      "html": "<p>Add <var>oldInputSource</var> to <var>removed primary sources</var>.</p>"
+                    },
+                    {
+                      "case": "Otherwise:",
+                      "html": "<p>Add <var>oldInputSource</var> to <var>removed tracked sources</var>.</p>"
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "html": "<p>Let <var>newInputSource</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new②\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑤\">XRInputSource</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑦\">relevant realm</a> of <var>session</var>.</p>"
-            },
-            {
-              "html": "<p>Add <var>oldInputSource</var> to <var>removed</var>.</p>"
-            },
-            {
-              "html": "<p>Add <var>newInputSource</var> to <var>added</var>.</p>"
+              "html": "Let <var>newInputSource</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new②\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑦\">XRInputSource</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑦\">relevant realm</a> of <var>session</var>, then perform the following step:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "If newInputSource is a primary input source or its state changed from a tracked input source to primary input source :",
+                      "html": "<p>Add <var>newInputSource</var> to <var>added primary sources</var>.</p>"
+                    },
+                    {
+                      "case": "Otherwise:",
+                      "html": "<p>Add <var>newInputSource</var> to <var>added tracked sources</var>.</p>"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -768,13 +844,22 @@
           "rationale": "remove",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">Remove</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑥\">XRInputSource</a></code> in <var>removed</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources⑥\">list of active XR input sources</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②\">Remove</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑧\">XRInputSource</a></code> in <var>removed primary sources</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources⑥\">list of active XR input sources</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend①\">Extend</a> <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources⑦\">list of active XR input sources</a> with <var>added</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend②\">Extend</a> <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources⑦\">list of active XR input sources</a> with <var>added primary sources</var>.</p>"
             },
             {
-              "html": "<p>Fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent③\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-inputsourceschange\" id=\"ref-for-eventdef-xrsession-inputsourceschange④\">inputsourceschange</a></code> on <var>session</var> with<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-added\" id=\"ref-for-dom-xrinputsourceschangeevent-added②\">added</a></code> set to <var>added</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-removed\" id=\"ref-for-dom-xrinputsourceschangeevent-removed①\">removed</a></code> set to <var>removed</var>.</p>"
+              "html": "<p>If <var>added primary sources</var> or <var>removed primary sources</var> are not empty, fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent⑤\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-inputsourceschange\" id=\"ref-for-eventdef-xrsession-inputsourceschange④\">inputsourceschange</a></code> on <var>session</var> with<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-added\" id=\"ref-for-dom-xrinputsourceschangeevent-added③\">added</a></code> set to <var>added primary sources</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-removed\" id=\"ref-for-dom-xrinputsourceschangeevent-removed②\">removed</a></code> set to <var>removed primary sources</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove③\">Remove</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑨\">XRInputSource</a></code> in <var>removed tracked sources</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-tracked-sources\" id=\"ref-for-list-of-active-xr-tracked-sources③\">list of active XR tracked sources</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend③\">Extend</a> <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources⑧\">list of active XR input sources</a> with <var>added tracked sources</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>added tracked sources</var> or <var>removed tracked sources</var> are not empty, fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent⑥\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-trackedsourceschange\" id=\"ref-for-eventdef-xrsession-trackedsourceschange②\">trackedsourceschange</a></code> on <var>session</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-added\" id=\"ref-for-dom-xrinputsourceschangeevent-added④\">added</a></code> set to <var>added tracked sources</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-removed\" id=\"ref-for-dom-xrinputsourceschangeevent-removed③\">removed</a></code> set to <var>removed tracked sources</var>.</p>"
             }
           ]
         }
@@ -783,7 +868,7 @@
     {
       "name": "initialize-renderstate",
       "href": "https://www.w3.org/TR/webxr/#initialize-the-render-state",
-      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate\" id=\"ref-for-xrrenderstate⑨\">XRRenderState</a></code> object is created for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑦③\">XRSession</a></code> <var>session</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-the-render-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize the render state</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate\" id=\"ref-for-xrrenderstate⑨\">XRRenderState</a></code> object is created for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑦④\">XRSession</a></code> <var>session</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-the-render-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize the render state</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -876,7 +961,7 @@
     {
       "name": "should-be-rendered",
       "href": "https://www.w3.org/TR/webxr/#should-be-rendered",
-      "html": "To determine if a frame <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"should-be-rendered\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">should be rendered</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑦⑧\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+      "html": "To determine if a frame <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"should-be-rendered\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">should be rendered</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑦⑨\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -893,7 +978,7 @@
     {
       "name": "run-animation-frames",
       "href": "https://www.w3.org/TR/webxr/#xr-animation-frame",
-      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑦⑨\">XRSession</a></code> <var>session</var> receives updated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#viewer\" id=\"ref-for-viewer⑤\">viewer</a> state for timestamp <var>frameTime</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①⑤\">XR device</a>, it runs an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xr-animation-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">XR animation frame</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, which MUST run the following steps regardless of if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-animation-frame-callbacks\" id=\"ref-for-list-of-animation-frame-callbacks③\">list of animation frame callbacks</a> is empty or not:",
+      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑧⓪\">XRSession</a></code> <var>session</var> receives updated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#viewer\" id=\"ref-for-viewer⑤\">viewer</a> state for timestamp <var>frameTime</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①⑤\">XR device</a>, it runs an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xr-animation-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">XR animation frame</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, which MUST run the following steps regardless of if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-animation-frame-callbacks\" id=\"ref-for-list-of-animation-frame-callbacks③\">list of animation frame callbacks</a> is empty or not:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -947,7 +1032,7 @@
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">Invoke</a> <var>entry</var> with « <var>now</var>, <var>frame</var> » and \"<code>report</code>\".</p>"
                 },
                 {
-                  "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-currently-running-animation-frame-callbacks\" id=\"ref-for-list-of-currently-running-animation-frame-callbacks③\">list of currently running animation frame callbacks</a> to the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a>.</p>"
+                  "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-currently-running-animation-frame-callbacks\" id=\"ref-for-list-of-currently-running-animation-frame-callbacks③\">list of currently running animation frame callbacks</a> to the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑥\">list</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active②\">active</a> boolean to <code>false</code>.</p>"
@@ -986,7 +1071,7 @@
           "html": "<p>If <var>pose</var> is <code>null</code> return <code>null</code>.</p>"
         },
         {
-          "html": "<p>Let <var>xrviews</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a>.</p>"
+          "html": "<p>Let <var>xrviews</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a>.</p>"
         },
         {
           "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active②\">active</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view⑥\">view</a> <var>view</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views④\">list of views</a> on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a></code>, perform the following steps:",
@@ -1085,7 +1170,7 @@
           "html": "<p>Check if <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#poses-may-be-reported\" id=\"ref-for-poses-may-be-reported\">poses may be reported</a> and, if not, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror③\">SecurityError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-visibilitystate\" id=\"ref-for-dom-xrsession-visibilitystate①\">visibilityState</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrvisibilitystate-visible-blurred\" id=\"ref-for-dom-xrvisibilitystate-visible-blurred③\">\"visible-blurred\"</a></code> and <var>space</var> or <var>baseSpace</var> is associated with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑦\">XRInputSource</a></code>, set <var>pose</var> to <code>null</code> and abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-visibilitystate\" id=\"ref-for-dom-xrsession-visibilitystate①\">visibilityState</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrvisibilitystate-visible-blurred\" id=\"ref-for-dom-xrvisibilitystate-visible-blurred③\">\"visible-blurred\"</a></code> and <var>space</var> or <var>baseSpace</var> is associated with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource①⓪\">XRInputSource</a></code>, set <var>pose</var> to <code>null</code> and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>limit</var> be the result of whether <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#poses-must-be-limited\" id=\"ref-for-poses-must-be-limited\">poses must be limited</a> between <var>space</var> and <var>baseSpace</var>.</p>"
@@ -1125,7 +1210,7 @@
     {
       "name": "create-reference-space",
       "href": "https://www.w3.org/TR/webxr/#create-a-reference-space",
-      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrreferencespace\" id=\"ref-for-xrreferencespace①⑨\">XRReferenceSpace</a></code> is requested with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#enumdef-xrreferencespacetype\" id=\"ref-for-enumdef-xrreferencespacetype④\">XRReferenceSpaceType</a></code> <var>type</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑨④\">XRSession</a></code> <var>session</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-reference-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a reference space</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrreferencespace\" id=\"ref-for-xrreferencespace①⑨\">XRReferenceSpace</a></code> is requested with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#enumdef-xrreferencespacetype\" id=\"ref-for-enumdef-xrreferencespacetype④\">XRReferenceSpaceType</a></code> <var>type</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑨⑤\">XRSession</a></code> <var>session</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-reference-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a reference space</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1161,7 +1246,7 @@
     {
       "name": "reference-space-supported",
       "href": "https://www.w3.org/TR/webxr/#reference-space-is-supported",
-      "html": "To check if a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"reference-space-is-supported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">reference space is supported</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given reference space type <var>type</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑨⑤\">XRSession</a></code> <var>session</var>, run the following steps:",
+      "html": "To check if a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"reference-space-is-supported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">reference space is supported</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given reference space type <var>type</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑨⑥\">XRSession</a></code> <var>session</var>, run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1292,7 +1377,7 @@
     {
       "name": "update-the-viewports",
       "href": "https://www.w3.org/TR/webxr/#update-the-viewports",
-      "html": "When the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active④\">active</a> flag of any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view②⑥\">view</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑤\">list of views</a> changes, one can <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-viewports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the viewports</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑨⑨\">XRSession</a></code> <var>session</var> by performing the following steps:",
+      "html": "When the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active④\">active</a> flag of any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view②⑥\">view</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑤\">list of views</a> changes, one can <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-viewports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the viewports</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⓪\">XRSession</a></code> <var>session</var> by performing the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1302,7 +1387,7 @@
           "html": "<p>If <var>layer</var> is <code>null</code> abort these steps.</p>"
         },
         {
-          "html": "<p>Set <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-viewport-objects\" id=\"ref-for-list-of-viewport-objects\">list of viewport objects</a> to the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑤\">list</a>.</p>"
+          "html": "<p>Set <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-viewport-objects\" id=\"ref-for-list-of-viewport-objects\">list of viewport objects</a> to the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⓪\">list</a>.</p>"
         },
         {
           "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active⑤\">active</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view②⑦\">view</a> <var>view</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑥\">list of views</a>:",
@@ -1321,7 +1406,7 @@
     {
       "name": "obtain-scaled-viewport",
       "href": "https://www.w3.org/TR/webxr/#xrview-obtain-a-scaled-viewport",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRView\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrview-obtain-a-scaled-viewport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a scaled viewport</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①①\">XRView</a></code> <var>view</var> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⓪\">XRSession</a></code> <var>session</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRView\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrview-obtain-a-scaled-viewport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a scaled viewport</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①①\">XRView</a></code> <var>view</var> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪①\">XRSession</a></code> <var>session</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1483,7 +1568,7 @@
     },
     {
       "name": "on-input-start",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source①⑦\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑥\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action④\">primary action</a> the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source①⑦\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑦\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑤\">primary action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1496,7 +1581,7 @@
     },
     {
       "name": "on-input-end",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source①⑧\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑦\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑤\">primary action</a> the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source①⑧\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑧\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑥\">primary action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1518,7 +1603,7 @@
     },
     {
       "name": "on-squeeze-start",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②⓪\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑧\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action④\">primary squeeze action</a> the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②⓪\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑨\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action④\">primary squeeze action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1531,7 +1616,7 @@
     },
     {
       "name": "on-squeeze-end",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②①\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑨\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action⑤\">primary squeeze action</a> the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②①\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①⓪\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action⑤\">primary squeeze action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1553,7 +1638,7 @@
     },
     {
       "name": "on-input-cancelled",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②③\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①⓪\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑧\">primary action</a> cancelled the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②③\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①①\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑨\">primary action</a> cancelled the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1566,7 +1651,7 @@
     },
     {
       "name": "on-squeeze-cancelled",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②④\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①①\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action⑧\">primary squeeze action</a> cancelled the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②④\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①②\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action⑧\">primary squeeze action</a> cancelled the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1579,7 +1664,7 @@
     },
     {
       "name": "on-transient-input-start",
-      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources③\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①③\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action②\">transient action</a> the UA MUST run the following steps:",
+      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources②\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①④\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action②\">transient action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1593,10 +1678,10 @@
               "html": "<p>Fire any <code>\"pointerdown\"</code> events produced by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②⑥\">XR input source</a>'s action, if necessary.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-add-input-source\" id=\"ref-for-xrsession-add-input-source①\">Add the XR input source</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources⑨\">list of active XR input sources</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-add-input-source\" id=\"ref-for-xrsession-add-input-source①\">Add the XR input source</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources①⓪\">list of active XR input sources</a>.</p>"
             },
             {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action③\">transient action</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action①③\">primary action</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#fire-an-input-source-event\" id=\"ref-for-fire-an-input-source-event⑧\">fire an input source event</a> with name <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-selectstart\" id=\"ref-for-eventdef-xrsession-selectstart③\">selectstart</a></code>, frame <var>frame</var>, and source <var>source</var>.</p>"
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action③\">transient action</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action①④\">primary action</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#fire-an-input-source-event\" id=\"ref-for-fire-an-input-source-event⑧\">fire an input source event</a> with name <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-selectstart\" id=\"ref-for-eventdef-xrsession-selectstart③\">selectstart</a></code>, frame <var>frame</var>, and source <var>source</var>.</p>"
             }
           ]
         }
@@ -1604,7 +1689,7 @@
     },
     {
       "name": "on-transient-input-end",
-      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources④\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①④\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action④\">transient action</a> the UA MUST run the following steps:",
+      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources③\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①⑤\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action④\">transient action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1615,16 +1700,16 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action⑤\">transient action</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action①④\">primary action</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#fire-an-input-source-event\" id=\"ref-for-fire-an-input-source-event⑨\">fire an input source event</a> with name <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-select\" id=\"ref-for-eventdef-xrsession-select④\">select</a></code>, frame <var>frame</var>, and source <var>source</var>.</p>"
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action⑤\">transient action</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action①⑤\">primary action</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#fire-an-input-source-event\" id=\"ref-for-fire-an-input-source-event⑨\">fire an input source event</a> with name <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-select\" id=\"ref-for-eventdef-xrsession-select④\">select</a></code>, frame <var>frame</var>, and source <var>source</var>.</p>"
             },
             {
               "html": "<p>Fire any <code>\"click\"</code> events produced by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②⑦\">XR input source</a>'s action, if necessary.</p>"
             },
             {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action⑥\">transient action</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action①⑤\">primary action</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#fire-an-input-source-event\" id=\"ref-for-fire-an-input-source-event①⓪\">fire an input source event</a> with name <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-selectend\" id=\"ref-for-eventdef-xrsession-selectend④\">selectend</a></code>, frame <var>frame</var>, and source <var>source</var>.</p>"
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action⑥\">transient action</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action①⑥\">primary action</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#fire-an-input-source-event\" id=\"ref-for-fire-an-input-source-event①⓪\">fire an input source event</a> with name <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-selectend\" id=\"ref-for-eventdef-xrsession-selectend④\">selectend</a></code>, frame <var>frame</var>, and source <var>source</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-remove-input-source\" id=\"ref-for-xrsession-remove-input-source①\">Remove the XR input source</a> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources①⓪\">list of active XR input sources</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-remove-input-source\" id=\"ref-for-xrsession-remove-input-source①\">Remove the XR input source</a> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources①①\">list of active XR input sources</a>.</p>"
             },
             {
               "html": "<p>Fire any <code>\"pointerup\"</code> events produced by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②⑧\">XR input source</a>'s action, if necessary.</p>"
@@ -1635,7 +1720,7 @@
     },
     {
       "name": "on-transient-input-cancelled",
-      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources⑤\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①⑤\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action⑦\">transient action</a> cancelled the UA MUST run the following steps:",
+      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources④\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①⑥\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action⑦\">transient action</a> cancelled the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1646,10 +1731,10 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action⑧\">transient action</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action①⑥\">primary action</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#fire-an-input-source-event\" id=\"ref-for-fire-an-input-source-event①①\">fire an input source event</a> with name <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-selectend\" id=\"ref-for-eventdef-xrsession-selectend⑤\">selectend</a></code>, frame <var>frame</var>, and source <var>source</var>.</p>"
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action⑧\">transient action</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action①⑦\">primary action</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#fire-an-input-source-event\" id=\"ref-for-fire-an-input-source-event①①\">fire an input source event</a> with name <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-selectend\" id=\"ref-for-eventdef-xrsession-selectend⑤\">selectend</a></code>, frame <var>frame</var>, and source <var>source</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-remove-input-source\" id=\"ref-for-xrsession-remove-input-source②\">Remove the XR input source</a> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources①①\">list of active XR input sources</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-remove-input-source\" id=\"ref-for-xrsession-remove-input-source②\">Remove the XR input source</a> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources①②\">list of active XR input sources</a>.</p>"
             },
             {
               "html": "<p>Fire any <code>\"pointerup\"</code> events produced by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②⑨\">XR input source</a>'s action, if necessary.</p>"
@@ -1823,7 +1908,7 @@
     },
     {
       "name": "native-webgl-framebuffer-resolution",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution\">native WebGL framebuffer resolution</a> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①②④\">XRSession</a></code> <var>session</var> is determined by running the following steps:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution\">native WebGL framebuffer resolution</a> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①②⑤\">XRSession</a></code> <var>session</var> is determined by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1987,7 +2072,7 @@
     {
       "name": "fire-input-source-event",
       "href": "https://www.w3.org/TR/webxr/#fire-an-input-source-event",
-      "html": "When the user agent has to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-input-source-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an input source event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with name <var>name</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe\" id=\"ref-for-xrframe③③\">XRFrame</a></code> <var>frame</var>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource②④\">XRInputSource</a></code> <var>source</var> it MUST run the following steps:",
+      "html": "When the user agent has to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-input-source-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an input source event</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with name <var>name</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe\" id=\"ref-for-xrframe③③\">XRFrame</a></code> <var>frame</var>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource②⑦\">XRInputSource</a></code> <var>source</var> it MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2044,7 +2129,7 @@
     {
       "name": "poses-allowed",
       "href": "https://www.w3.org/TR/webxr/#poses-may-be-reported",
-      "html": "To determine if <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"poses-may-be-reported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">poses may be reported</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⑤⓪\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+      "html": "To determine if <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"poses-may-be-reported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">poses may be reported</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⑤②\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2229,13 +2314,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>consentRequired</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②③\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①④\">DOMString</a></code>.</p>"
+          "html": "<p>Let <var>consentRequired</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑧\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①④\">DOMString</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>consentOptional</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②④\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑤\">DOMString</a></code>.</p>"
+          "html": "<p>Let <var>consentOptional</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑨\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑤\">DOMString</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>granted</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑤\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑥\">DOMString</a></code>.</p>"
+          "html": "<p>Let <var>granted</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⓪\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑥\">DOMString</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>device</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#obtain-the-current-device\" id=\"ref-for-obtain-the-current-device②\">obtaining the current device</a> for <var>mode</var>, <var>requiredFeatures</var>, and <var>optionalFeatures</var>.</p>"
