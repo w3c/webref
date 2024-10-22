@@ -48,11 +48,16 @@ dictionary GenerateBidInterestGroup {
   record<DOMString, sequence<DOMString>> sizeGroups;
 };
 
+dictionary ProtectedAudiencePrivateAggregationConfig {
+  USVString aggregationCoordinatorOrigin;
+};
+
 dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {
   double priority = 0.0;
   record<DOMString, double> prioritySignalsOverrides;
   required double lifetimeMs;
   DOMString additionalBidKey;
+  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;
 };
 
 [SecureContext]
@@ -75,6 +80,18 @@ partial interface Navigator {
 partial interface Navigator {
   Promise<(USVString or FencedFrameConfig)?> runAdAuction(AuctionAdConfig config);
   readonly attribute boolean deprecatedRunAdAuctionEnforcesKAnonymity;
+};
+
+dictionary AuctionReportBuyersConfig {
+  required bigint bucket;
+  required double scale;
+};
+
+dictionary AuctionReportBuyerDebugModeConfig {
+  boolean enabled = false;
+
+  // Must only be provided if `enabled` is true.
+  bigint? debugKey;
 };
 
 dictionary AuctionRealTimeReportingConfig {
@@ -104,7 +121,13 @@ dictionary AuctionAdConfig {
   record<USVString, unsigned short> perBuyerGroupLimits;
   record<USVString, unsigned short> perBuyerExperimentGroupIds;
   record<USVString, record<USVString, double>> perBuyerPrioritySignals;
+
+  sequence<bigint> auctionReportBuyerKeys;
+  record<DOMString, AuctionReportBuyersConfig> auctionReportBuyers;
+  AuctionReportBuyerDebugModeConfig auctionReportBuyerDebugModeConfig;
   sequence<DOMString> requiredSellerCapabilities;
+  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;
+
   record<DOMString, DOMString> requestedSize;
   sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;
   Promise<undefined> additionalBids;

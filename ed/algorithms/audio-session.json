@@ -1,0 +1,38 @@
+{
+  "spec": {
+    "title": "Audio Session",
+    "url": "https://w3c.github.io/audio-session/"
+  },
+  "algorithms": [
+    {
+      "html": "To create an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#audiosession\" id=\"ref-for-audiosession②\">AudioSession</a></code> object in <var>realm</var>, run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>audioSession</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#audiosession\" id=\"ref-for-audiosession③\">AudioSession</a></code> object in <var>realm</var>, initialized with the following internal slots:</p>",
+          "ignored": [
+            "[[type]] to store the audio session type, initialized to auto. [[state]] to store the audio session state, initialized to inactive. [[elements]] to store the audio session elements, initialized to an empty list. [[interruptedElements]] to store the audio session elements that where interrupted while being audible, initialized to an empty list. [[appliedType]] to store the type applied to the audio session, initialized to auto. [[isTypeBeingApplied]] flag to store whether the type is being applied to the audio session, initialized to false."
+          ]
+        },
+        {
+          "html": "<p>Return <var>audioSession</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "On setting, it MUST run the following steps with <var>newValue</var> being the new value being set on <var>audioSession</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-type\" id=\"ref-for-audiosession-type①\">[[type]]</a> is equal to <var>newValue</var>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-type\" id=\"ref-for-audiosession-type②\">[[type]]</a> to <var>newValue</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\">Update the type</a> of <var>audioSession</var>.</p>"
+        }
+      ]
+    }
+  ]
+}
