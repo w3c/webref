@@ -298,7 +298,7 @@
         "href": "https://immersive-web.github.io/webxr/#enumdef-xrvisibilitystate"
       },
       "XRSession": {
-        "fragment": "[SecureContext, Exposed=Window] interface XRSession : EventTarget {\n  // Attributes\n  readonly attribute XRVisibilityState visibilityState;\n  readonly attribute float? frameRate;\n  readonly attribute Float32Array? supportedFrameRates;\n  [SameObject] readonly attribute XRRenderState renderState;\n  [SameObject] readonly attribute XRInputSourceArray inputSources;\n  readonly attribute FrozenArray<DOMString> enabledFeatures;\n  readonly attribute boolean isSystemKeyboardSupported;\n\n  // Methods\n  undefined updateRenderState(optional XRRenderStateInit state = {});\n  Promise<undefined> updateTargetFrameRate(float rate);\n  [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);\n\n  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);\n  undefined cancelAnimationFrame(unsigned long handle);\n\n  Promise<undefined> end();\n\n  // Events\n  attribute EventHandler onend;\n  attribute EventHandler oninputsourceschange;\n  attribute EventHandler onselect;\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectend;\n  attribute EventHandler onsqueeze;\n  attribute EventHandler onsqueezestart;\n  attribute EventHandler onsqueezeend;\n  attribute EventHandler onvisibilitychange;\n  attribute EventHandler onframeratechange;\n};",
+        "fragment": "[SecureContext, Exposed=Window] interface XRSession : EventTarget {\n  // Attributes\n  readonly attribute XRVisibilityState visibilityState;\n  readonly attribute float? frameRate;\n  readonly attribute Float32Array? supportedFrameRates;\n  [SameObject] readonly attribute XRRenderState renderState;\n  [SameObject] readonly attribute XRInputSourceArray inputSources;\n  [SameObject] readonly attribute XRInputSourceArray trackedSources;\n  readonly attribute FrozenArray<DOMString> enabledFeatures;\n  readonly attribute boolean isSystemKeyboardSupported;\n\n  // Methods\n  undefined updateRenderState(optional XRRenderStateInit state = {});\n  Promise<undefined> updateTargetFrameRate(float rate);\n  [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);\n\n  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);\n  undefined cancelAnimationFrame(unsigned long handle);\n\n  Promise<undefined> end();\n\n  // Events\n  attribute EventHandler onend;\n  attribute EventHandler oninputsourceschange;\n  attribute EventHandler onselect;\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectend;\n  attribute EventHandler onsqueeze;\n  attribute EventHandler onsqueezestart;\n  attribute EventHandler onsqueezeend;\n  attribute EventHandler onvisibilitychange;\n  attribute EventHandler onframeratechange;\n};",
         "type": "interface",
         "name": "XRSession",
         "inheritance": "EventTarget",
@@ -396,6 +396,29 @@
             "special": "",
             "readonly": true,
             "href": "https://immersive-web.github.io/webxr/#dom-xrsession-inputsources"
+          },
+          {
+            "type": "attribute",
+            "name": "trackedSources",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRInputSourceArray"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrsession-trackedsources"
           },
           {
             "type": "attribute",
