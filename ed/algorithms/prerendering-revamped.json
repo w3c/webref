@@ -21,7 +21,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>prerenderRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-starting-url\" id=\"ref-for-prerender-record-starting-url①\">starting URL</a> and <var>url</var> are <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#equivalent-modulo-search-variance\" id=\"ref-for-equivalent-modulo-search-variance\">equivalent modulo search variance</a> given <var>searchVariance</var>, return true.</p>"
+              "html": "<p>If <var>prerenderRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-starting-url\" id=\"ref-for-prerender-record-starting-url①\">starting URL</a> and <var>url</var> are <a data-link-type=\"dfn\" href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#name-comparing\" id=\"ref-for-name-comparing\">equivalent modulo search variance</a> given <var>searchVariance</var>, return true.</p>"
             }
           ]
         },
@@ -47,7 +47,7 @@
               "html": "<p>Let <var>expectedSearchVariance</var> be <var>prerenderRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-no-vary-search-hint\" id=\"ref-for-prerender-record-no-vary-search-hint\">No-Vary-Search hint</a>.</p>"
             },
             {
-              "html": "<p>If <var>prerenderRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-starting-url\" id=\"ref-for-prerender-record-starting-url②\">starting URL</a> and <var>url</var> are <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#equivalent-modulo-search-variance\" id=\"ref-for-equivalent-modulo-search-variance①\">equivalent modulo search variance</a> given <var>expectedSearchVariance</var>, return true.</p>"
+              "html": "<p>If <var>prerenderRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-record-starting-url\" id=\"ref-for-prerender-record-starting-url②\">starting URL</a> and <var>url</var> are <a data-link-type=\"dfn\" href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#name-comparing\" id=\"ref-for-name-comparing①\">equivalent modulo search variance</a> given <var>expectedSearchVariance</var>, return true.</p>"
             }
           ]
         },
@@ -145,7 +145,7 @@
     {
       "name": "start referrer-initiated prerendering",
       "href": "https://wicg.github.io/nav-speculation/prerendering.html#start-referrer-initiated-prerendering",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"start-referrer-initiated-prerendering\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start referrer-initiated prerendering</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑤\">URL</a> <var>startingURL</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code> <var>referrerDoc</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-referrer-policy/#referrer-policy\" id=\"ref-for-referrer-policy\">referrer policy</a> <var>referrerPolicy</var>, and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#url-search-variance\" id=\"ref-for-url-search-variance②\">URL search variance</a> <var>nvsHint</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"start-referrer-initiated-prerendering\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start referrer-initiated prerendering</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑤\">URL</a> <var>startingURL</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code> <var>referrerDoc</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-referrer-policy/#referrer-policy\" id=\"ref-for-referrer-policy\">referrer policy</a> <var>referrerPolicy</var>, and a <a data-link-type=\"dfn\" href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#name-data-model\" id=\"ref-for-name-data-model②\">URL search variance</a> <var>nvsHint</var>:",
       "rationale": "assert",
       "steps": [
         {
@@ -558,7 +558,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-prerender-initial-response-search-variance\" id=\"ref-for-prerendering-traversable-prerender-initial-response-search-variance③\">prerender initial response search variance</a> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/no-vary-search.html#obtain-a-url-search-variance\" id=\"ref-for-obtain-a-url-search-variance\">obtaining a URL search variance</a> given <var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-response\" id=\"ref-for-navigation-params-response③\">response</a>.</p>"
+              "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-prerender-initial-response-search-variance\" id=\"ref-for-prerendering-traversable-prerender-initial-response-search-variance③\">prerender initial response search variance</a> to the result of <a data-link-type=\"dfn\" href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#name-obtain-a-url-search-varianc\" id=\"ref-for-name-obtain-a-url-search-varianc\">obtaining a URL search variance</a> given <var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-response\" id=\"ref-for-navigation-params-response③\">response</a>.</p>"
             }
           ]
         }
