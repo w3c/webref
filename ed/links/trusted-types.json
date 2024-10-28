@@ -126,11 +126,14 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/require-trusted-types-for": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-child-text-content"
+        ]
+      },
       "https://en.wikipedia.org/wiki/Object-capability_model": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://github.com/google/security-research-pocs/tree/master/script-gadgets": {},
-      "https://github.com/w3c/trusted-types/issues/507": {},
       "https://github.com/w3c/trusted-types/issues/520": {},
       "https://github.com/w3c/webappsec": {},
       "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/DOMParser-parseFromString-regression.html": {},
@@ -233,6 +236,7 @@
       "https://github.com/whatwg/dom/pull/1268": {},
       "https://html.spec.whatwg.org/": {
         "anchors": [
+          "prepare-the-script-element:~:text=When%20a%20script%20element%20el%20that%20is%20not%20parser%2Dinserted%20experiences",
           "already-started",
           "parser-document",
           "the-script-element",
@@ -271,9 +275,9 @@
           "security-inherit-csp"
         ]
       },
-      "https://w3c.github.io/webcomponents/spec/imports/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://wicg.github.io/origin-policy/": {},
+      "https://wicg.github.io/webcomponents/spec/imports/": {},
       "https://wpt.fyi/results/trusted-types/DOMParser-parseFromString-regression.html": {},
       "https://wpt.fyi/results/trusted-types/DOMParser-parseFromString.html": {},
       "https://wpt.fyi/results/trusted-types/DOMWindowTimers-setTimeout-setInterval.html": {},
@@ -391,15 +395,16 @@
           "element",
           "document",
           "concept-element-interface",
-          "concept-child-text-content",
           "attr",
           "concept-attribute-local-name",
           "concept-attribute-namespace",
           "concept-node-document",
+          "concept-child-text-content",
           "dom-node-textcontent",
           "set-text-content",
           "get-text-content",
-          "string-replace-all"
+          "string-replace-all",
+          "concept-node-children-changed-ext"
         ]
       },
       "https://fetch.spec.whatwg.org/": {
@@ -415,8 +420,6 @@
           "set-the-inner-text-steps",
           "get-the-text-steps",
           "attr-script-src",
-          "parsing-main-incdata",
-          "nestedParsing",
           "prepare-the-script-element"
         ]
       },
