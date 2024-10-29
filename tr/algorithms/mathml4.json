@@ -41,6 +41,17 @@
       ]
     },
     {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If an <code class=\"attribute\">intent</code>\n     attribute does not match the grammar <a href=\"https://www.w3.org/TR/mathml4/#mixing_intent_grammar\" class=\"sec-ref\"><bdi class=\"secno\">5.1 </bdi>The Grammar for <code class=\"attribue\">intent</code></a>,\n     then the processor should act as if the attribute were not\n     present.\n     Typically this will result in a suitable fallback text being\n     generated from the MathML element and its descendents. Note that\n     just the erroneous attribute is ignored, other <code class=\"attribute\">intent</code> attributes in the MathML\n     expression should be used."
+        },
+        {
+          "html": "If a <code>reference</code> such as <code>$x</code> does not correspond to an <code class=\"attribute\">arg</code> attribute with value <code>x</code> on a\n     descendent element, the processor should act as if the reference\n     were replaced by the literal <code>_dollar_x</code>."
+        }
+      ]
+    },
+    {
       "html": "An application that transfers MathML markup <em class=\"rfc2119\">SHOULD</em> adhere to the following\n   conventions:",
       "rationale": "if",
       "steps": [
@@ -54,7 +65,7 @@
           "html": "<p>\n      If an application is able to determine a more specific flavor, it <em class=\"rfc2119\">SHOULD</em>\n      offer both the generic and specific transfer flavors, but it <em class=\"rfc2119\">SHOULD</em> only\n      deliver the specific flavor if it knows that the recipient supports it.\n      For an HTTP GET transfer, for example, the specific transfer types for\n      content and presentation markup should only be returned if they are\n      included in the HTTP <code>Accept</code> header sent by the client.\n     </p>"
         },
         {
-          "html": "<p>\n      An application that exports the two specific transfer flavors <em class=\"rfc2119\">SHOULD</em>\n      export both the content and presentation transfer flavors, as well as\n      the generic flavor, which <em class=\"rfc2119\">SHOULD</em> combine the other two flavors using\n      a top-level MathML <code class=\"element\">semantics</code> element\n     (see <a href=\"https://www.w3.org/TR/mathml4/#mixing_top_level\" class=\"sec-ref\"><bdi class=\"secno\">5.2.9.1 </bdi>Top-level Parallel Markup</a>).</p>"
+          "html": "<p>\n      An application that exports the two specific transfer flavors <em class=\"rfc2119\">SHOULD</em>\n      export both the content and presentation transfer flavors, as well as\n      the generic flavor, which <em class=\"rfc2119\">SHOULD</em> combine the other two flavors using\n      a top-level MathML <code class=\"element\">semantics</code> element\n     (see <a href=\"https://www.w3.org/TR/mathml4/#mixing_top_level\" class=\"sec-ref\"><bdi class=\"secno\">6.9.1 </bdi>Top-level Parallel Markup</a>).</p>"
         },
         {
           "html": "<p>\n      When an application exports a MathML fragment whose only child of the\n      root element is a <code class=\"element\">semantics</code> element, it <em class=\"rfc2119\">SHOULD</em> offer, after\n      the above flavors, a transfer flavor for each <code class=\"element\">annotation</code> or\n      <code class=\"element\">annotation-xml</code> element, provided the transfer flavor can be\n      recognized and named based on the <code class=\"attribute\">encoding</code> attribute value,\n      and provided the annotation key is (the default)\n      <a class=\"omsymbol\" href=\"https://openmath.org/cd/mathmlkeys#alternate-representation\">alternate-representation</a>.\n      The transfer content for each annotation should contain the character data\n      in the specified encoding (for an <code class=\"element\">annotation</code> element), or a\n      well-formed XML fragment (for an <code class=\"element\">annotation-xml</code> element), or\n      the data that results by requesting the URL given by the <code class=\"attribute\">src</code>\n     attribute (for an annotation reference).</p>"
@@ -72,7 +83,7 @@
           "html": "<p><span>In a format that permits the use of XML Namespaces,\n    </span>for small amounts of data, attributes from other namespaces\n    are allowed on all MathML elements.</p>"
         },
         {
-          "html": "<p>For larger amounts of data, applications may use the\n    <code class=\"element\">semantics</code> element, as described in\n    <a href=\"https://www.w3.org/TR/mathml4/#mixing_annotation_elements\" class=\"sec-ref\"><bdi class=\"secno\">5.2 </bdi>Annotation Elements</a>.</p>"
+          "html": "<p>For larger amounts of data, applications may use the\n    <code class=\"element\">semantics</code> element, as described in\n    <a href=\"https://www.w3.org/TR/mathml4/#mixing\" class=\"sec-ref\"><bdi class=\"secno\">6. </bdi>Annotating MathML: semantics</a>.</p>"
         },
         {
           "html": "<p>For authoring tools and other applications that need to\n    associate particular actions with presentation MathML subtrees,\n    e.g. to mark an incomplete expression to be filled in by an author,\n    the <code class=\"element\">maction</code> element may be used, as described in\n    <a href=\"https://www.w3.org/TR/mathml4/#presm_maction\" class=\"sec-ref\"><bdi class=\"secno\">3.7.1 </bdi>Bind Action to Sub-Expression</a>.</p>"

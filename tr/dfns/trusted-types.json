@@ -1474,25 +1474,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "abstract-opdef-prepare-the-script-text",
-      "href": "https://www.w3.org/TR/trusted-types/#abstract-opdef-prepare-the-script-text",
-      "linkingText": [
-        "Prepare the script text"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "prepare-script-text",
-        "href": "https://www.w3.org/TR/trusted-types/#prepare-script-text",
-        "title": "Prepare the script text",
-        "number": "3.6"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "abstract-opdef-get-trusted-types-compliant-attribute-value",
       "href": "https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-types-compliant-attribute-value",
       "linkingText": [
@@ -1507,7 +1488,7 @@
         "id": "validate-attribute-mutation",
         "href": "https://www.w3.org/TR/trusted-types/#validate-attribute-mutation",
         "title": "Get Trusted Types-compliant attribute value",
-        "number": "3.7"
+        "number": "3.6"
       },
       "definedIn": "prose"
     },
@@ -1526,7 +1507,7 @@
         "id": "get-trusted-type-data-for-attribute",
         "href": "https://www.w3.org/TR/trusted-types/#get-trusted-type-data-for-attribute",
         "title": "Get Trusted Type data for attribute",
-        "number": "3.8"
+        "number": "3.7"
       },
       "definedIn": "prose"
     },
@@ -1592,15 +1573,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "htmlscriptelement-script-text",
-      "href": "https://www.w3.org/TR/trusted-types/#htmlscriptelement-script-text",
+      "id": "htmlscriptelement-is-trusted",
+      "href": "https://www.w3.org/TR/trusted-types/#htmlscriptelement-is-trusted",
       "linkingText": [
-        "script text"
+        "is trusted"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "HTMLScriptElement"
+        "HTMLScriptElement",
+        "SVGScriptElement"
       ],
       "access": "public",
       "informative": false,
@@ -1613,6 +1595,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "htmlscriptelement-changed-by-trusted-sink",
+      "href": "https://www.w3.org/TR/trusted-types/#htmlscriptelement-changed-by-trusted-sink",
+      "linkingText": [
+        "changed by trusted sink"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLScriptElement",
+        "SVGScriptElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/trusted-types/#title",
+        "title": "Trusted Types"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "require-trusted-types-for-directive",
       "href": "https://www.w3.org/TR/trusted-types/#require-trusted-types-for-directive",
       "linkingText": [
@@ -1621,7 +1624,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "require-trusted-types-for-csp-directive",
@@ -1659,7 +1662,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "trusted-types-csp-directive",
