@@ -1052,7 +1052,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values\">Type</a>(<var>iterResult</var>) is not Object, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②⑧\">TypeError</a></code>.</p>"
+                  "html": "<p>If <var>iterResult</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type\">is not an Object</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②⑧\">TypeError</a></code>.</p>"
                 },
                 {
                   "html": "<p>Let <var>done</var> be ? <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorcomplete\" id=\"ref-for-sec-iteratorcomplete\">IteratorComplete</a>(<var>iterResult</var>).</p>"
@@ -1112,7 +1112,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values①\">Type</a>(<var>iterResult</var>) is not Object, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②⑨\">TypeError</a></code>.</p>"
+                  "html": "<p>If <var>iterResult</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type①\">is not an Object</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②⑨\">TypeError</a></code>.</p>"
                 },
                 {
                   "html": "<p>Return undefined.</p>"
@@ -7186,7 +7186,7 @@
               "html": "<p>Let <var>data</var> be the data of the message.</p>"
             },
             {
-              "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values②\">Type</a>(<var>data</var>) is Object.</p>"
+              "html": "<p class=\"assertion\">Assert: <var>data</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type②\">is an Object</a>.</p>"
             },
             {
               "html": "<p>Let <var>type</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>data</var>, \"<code>type</code>\").</p>"
@@ -7195,7 +7195,7 @@
               "html": "<p>Let <var>value</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p①\">Get</a>(<var>data</var>, \"<code>value</code>\").</p>"
             },
             {
-              "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values③\">Type</a>(<var>type</var>) is String.</p>"
+              "html": "<p class=\"assertion\">Assert: <var>type</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-string-type\" id=\"ref-for-sec-ecmascript-language-types-string-type\">is a String</a>.</p>"
             },
             {
               "html": "If <var>type</var> is \"<code>chunk</code>\",",
@@ -7317,7 +7317,7 @@
               "html": "<p>Let <var>data</var> be the data of the message.</p>"
             },
             {
-              "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values④\">Type</a>(<var>data</var>) is Object.</p>"
+              "html": "<p class=\"assertion\">Assert: <var>data</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type③\">is an Object</a>.</p>"
             },
             {
               "html": "<p>Let <var>type</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p②\">Get</a>(<var>data</var>, \"<code>type</code>\").</p>"
@@ -7326,7 +7326,7 @@
               "html": "<p>Let <var>value</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p③\">Get</a>(<var>data</var>, \"<code>value</code>\").</p>"
             },
             {
-              "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑤\">Type</a>(<var>type</var>) is String.</p>"
+              "html": "<p class=\"assertion\">Assert: <var>type</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-string-type\" id=\"ref-for-sec-ecmascript-language-types-string-type①\">is a String</a>.</p>"
             },
             {
               "html": "If <var>type</var> is \"<code>pull</code>\",",
@@ -7477,7 +7477,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑥\">Type</a>(<var>O</var>) is Object.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>O</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type④\">is an Object</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>O</var> has an [[ArrayBufferData]] internal slot.</p>"
@@ -7500,7 +7500,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑦\">Type</a>(<var>v</var>) is not Number, return false.</p>"
+          "html": "<p>If <var>v</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-number-type\" id=\"ref-for-sec-ecmascript-language-types-number-type①\">is not a Number</a>, return false.</p>"
         },
         {
           "html": "<p>If <var>v</var> is NaN, return false.</p>"
@@ -7543,7 +7543,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑧\">Type</a>(<var>O</var>) is Object.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>O</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type⑤\">is an Object</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>O</var> has an [[ViewedArrayBuffer]] internal slot.</p>"
