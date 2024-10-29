@@ -332,7 +332,7 @@
       "name": "<progress()>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-progress-fn",
       "type": "type",
-      "value": "progress(<calc-sum> from <calc-sum> to <calc-sum>)"
+      "value": "progress(<calc-sum>, <calc-sum>, <calc-sum>)"
     },
     {
       "name": "media-progress()",
@@ -344,7 +344,7 @@
       "name": "<media-progress()>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-media-progress",
       "type": "type",
-      "value": "media-progress(<media-feature> from <calc-sum> to <calc-sum>)"
+      "value": "media-progress(<mf-name>, <calc-sum>, <calc-sum>)"
     },
     {
       "name": "container-progress()",
@@ -356,7 +356,7 @@
       "name": "<container-progress()>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-container-progress",
       "type": "type",
-      "value": "container-progress(<size-feature> [ of <container-name> ]? from <calc-sum> to <calc-sum>)"
+      "value": "container-progress(<size-feature> [ of <container-name> ]?, <calc-sum>, <calc-sum>)"
     },
     {
       "name": "<progress>",
@@ -468,7 +468,13 @@
       "name": "<if-condition>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-if-condition",
       "type": "type",
-      "value": "supports( [ <supports-condition> | <ident> : <declaration-value> ] ) | media( <media-query> ) | style( <style-query> ) | else"
+      "value": "<boolean[ <if-test> ]> | else"
+    },
+    {
+      "name": "<if-test>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-if-test",
+      "type": "type",
+      "value": "supports( [ <supports-condition> | <ident> : <declaration-value> ] ) | media( <media-query> ) | style( <style-query> )"
     },
     {
       "name": "toggle()",
@@ -481,6 +487,18 @@
       "href": "https://drafts.csswg.org/css-values-5/#typedef-toggle",
       "type": "type",
       "value": "toggle( <whole-value># )"
+    },
+    {
+      "name": "inherit()",
+      "prose": "Like the inherit keyword, the inherit() functional notation resolves to the computed value of a property on the parent. Rather than resolving to the value of the same property, however, it resolves to the tokenized computed value of the property specified as its first argument. Its second argument, if present, is used as a fallback in case the first argument resolves to the guaranteed-invalid value.",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-inherit",
+      "type": "function"
+    },
+    {
+      "name": "<inherit()>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-inherit",
+      "type": "type",
+      "value": "inherit( <custom-property-name>, <declaration-value>? )"
     },
     {
       "name": "attr()",
@@ -563,6 +581,16 @@
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "]>",
+      "value": "not <boolean-group> | <boolean-group> [ [ and <boolean-group> ]* | [ or <boolean-group> ]* ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "<boolean-group>",
+      "value": "<test> | ( <boolean> ) | <general-enclosed>"
+    },
     {
       "msg": "Missing definition",
       "name": "progress-function()",

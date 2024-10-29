@@ -143,6 +143,7 @@
       "https://drafts.csswg.org/css-variables/": {},
       "https://drafts.csswg.org/css-writing-modes-4/": {},
       "https://drafts.csswg.org/css2/": {},
+      "https://drafts.csswg.org/cssom/": {},
       "https://drafts.csswg.org/mediaqueries-4/": {},
       "https://drafts.csswg.org/mediaqueries-5/": {},
       "https://drafts.csswg.org/selectors-3/": {},
@@ -442,12 +443,14 @@
       },
       "https://drafts.csswg.org/css-conditional-3/": {
         "anchors": [
+          "at-ruledef-media",
           "at-ruledef-supports",
           "typedef-supports-condition"
         ]
       },
       "https://drafts.csswg.org/css-conditional-5/": {
         "anchors": [
+          "at-ruledef-container",
           "container-feature",
           "typedef-size-feature",
           "typedef-container-name",
@@ -499,10 +502,10 @@
       "https://drafts.csswg.org/css-sizing-3/": {
         "anchors": [
           "propdef-width",
+          "valdef-width-auto",
           "propdef-height",
           "definite",
           "intrinsic-size",
-          "valdef-width-auto",
           "valdef-width-min-content",
           "behave-as-auto",
           "valdef-width-max-content"
@@ -544,10 +547,12 @@
       },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
+          "typedef-boolean",
           "functional-notation",
-          "css-value-definition-syntax",
           "comb-one",
           "mult-zero-plus",
+          "typedef-general-enclosed",
+          "css-value-definition-syntax",
           "mult-opt",
           "typedef-ident",
           "string-value",
@@ -568,11 +573,11 @@
           "css-make-a-type-consistent",
           "calc-calculation",
           "typedef-calc-sum",
+          "comb-comma",
           "typedef-dimension",
           "css-consistent-type",
           "funcdef-calc",
           "small-viewport-size",
-          "comb-comma",
           "time-value",
           "mult-comma",
           "css-wide-keywords",
@@ -581,7 +586,8 @@
           "funcdef-round",
           "determine-the-type-of-a-calculation",
           "simplify-a-calculation-tree",
-          "integer-value"
+          "integer-value",
+          "top-level-calculation"
         ]
       },
       "https://drafts.csswg.org/css-variables-2/": {
@@ -589,6 +595,7 @@
           "funcdef-var",
           "guaranteed-invalid-value",
           "custom-property",
+          "typedef-custom-property-name",
           "substitute-a-var"
         ]
       },
@@ -611,11 +618,17 @@
           "propdef-background-position"
         ]
       },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "dom-window-getcomputedstyle"
+        ]
+      },
       "https://drafts.csswg.org/mediaqueries-5/": {
         "anchors": [
-          "media-feature",
           "media-query",
-          "typedef-media-feature",
+          "valdef-media-not",
+          "media-feature",
+          "typedef-mf-name",
           "typedef-media-query"
         ]
       },
