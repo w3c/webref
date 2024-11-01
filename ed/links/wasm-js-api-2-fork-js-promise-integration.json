@@ -5,7 +5,6 @@
   },
   "links": {
     "rawlinks": {
-      "http://ieeexplore.ieee.org/servlet/opac?punumber=4610933": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://encoding.spec.whatwg.org/": {},
       "https://github.com/WebAssembly/spec/issues": {},
@@ -79,13 +78,20 @@
           "sec-setintegritylevel",
           "sec-tostring",
           "sec-createarrayfromlist",
-          "sec-call",
           "sec-getmethod",
           "sec-iteratortolist",
           "sec-getiteratorfrommethod",
+          "sec-call",
           "sec-tobigint64",
           "sec-toint32",
           "sec-tonumber"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html": {
+        "anchors": [
+          "sec-async-functions-abstract-operations-async-function-start",
+          "sec-ispromise",
+          "await"
         ]
       },
       "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
@@ -98,7 +104,9 @@
         "anchors": [
           "agent",
           "sec-agent-clusters",
-          "surrounding-agent"
+          "sec-execution-contexts",
+          "surrounding-agent",
+          "running-execution-context"
         ]
       },
       "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html": {
@@ -134,6 +142,10 @@
           "%F0%9D%94%BD",
           "sec-ecmascript-language-types-number-type",
           "%E2%84%9D",
+          "sec-abstract-closure",
+          "sec-createbuiltinfunction",
+          "sec-promisecapability-records",
+          "execution-context-stack",
           "sec-makebasicobject",
           "sec-nativeerror-object-structure"
         ]
@@ -167,8 +179,8 @@
           "embed-func-invoke",
           "embed-exn-tag",
           "embed-exn-read",
-          "embed-exn-alloc",
           "embed-func-alloc",
+          "embed-exn-alloc",
           "embed-match-valtype",
           "embed-ref-type",
           "embed-tag-type"
@@ -234,14 +246,14 @@
       },
       "https://webassembly.github.io/spec/core/syntax/types.html": {
         "anchors": [
+          "heap-types",
           "external-types",
           "syntax-numtype",
           "vector-types",
           "syntax-mut",
           "syntax-tagtype",
           "syntax-reftype",
-          "syntax-tabletype",
-          "heap-types"
+          "syntax-tabletype"
         ]
       },
       "https://webassembly.github.io/spec/core/syntax/values.html": {
@@ -278,6 +290,7 @@
           "idl-undefined",
           "dfn-throw",
           "dfn-associated-realm",
+          "Function",
           "Exposed",
           "dfn-namespace-object"
         ]

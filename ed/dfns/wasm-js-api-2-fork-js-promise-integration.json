@@ -195,6 +195,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "execution-context-status-map",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#execution-context-status-map",
+      "linkingText": [
+        "Execution Context Status map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ec-status-map",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#ec-status-map",
+        "title": "Execution Context Status Map",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dictdef-webassemblyinstantiatedsource",
       "href": "https://webassembly.github.io/js-promise-integration/js-api/#dictdef-webassemblyinstantiatedsource",
       "linkingText": [
@@ -2651,6 +2670,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "coerce-javascript-arguments",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#coerce-javascript-arguments",
+      "linkingText": [
+        "coerce JavaScript arguments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "call-an-exported-function",
       "href": "https://webassembly.github.io/js-promise-integration/js-api/#call-an-exported-function",
       "linkingText": [
@@ -2670,10 +2708,48 @@
       "definedIn": "prose"
     },
     {
-      "id": "run-a-host-function",
-      "href": "https://webassembly.github.io/js-promise-integration/js-api/#run-a-host-function",
+      "id": "coerce-webassembly-arguments",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#coerce-webassembly-arguments",
       "linkingText": [
-        "run a host function"
+        "coerce WebAssembly arguments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coerce-a-javascript-return",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#coerce-a-javascript-return",
+      "linkingText": [
+        "coerce a JavaScript return"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coerce-a-javascript-exception",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#coerce-a-javascript-exception",
+      "linkingText": [
+        "coerce a JavaScript exception"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2693,6 +2769,25 @@
       "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-host-function",
       "linkingText": [
         "create a host function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exported-function-exotic-objects",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#exported-function-exotic-objects",
+        "title": "Exported Functions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "throw-a-javascript-exception",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#throw-a-javascript-exception",
+      "linkingText": [
+        "throw a JavaScript exception"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2765,6 +2860,225 @@
       "definedIn": "prose"
     },
     {
+      "id": "stack-status",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#stack-status",
+      "linkingText": [
+        "stack status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jspi",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#jspi",
+        "title": "JavaScript Promise Integration",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jspi",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#jspi",
+        "title": "JavaScript Promise Integration",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "paused",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#paused",
+      "linkingText": [
+        "paused"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jspi",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#jspi",
+        "title": "JavaScript Promise Integration",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webassembly-promising-wasmfunc-wasmfunc",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-webassembly-promising-wasmfunc-wasmfunc",
+      "linkingText": [
+        "wasmFunc"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebAssembly/promising(wasmFunc)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jspi",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#jspi",
+        "title": "JavaScript Promise Integration",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "suspending",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#suspending",
+      "linkingText": [
+        "Suspending"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jspi",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#jspi",
+        "title": "JavaScript Promise Integration",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-suspending-suspending-jsfun-jsfun",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-suspending-suspending-jsfun-jsfun",
+      "linkingText": [
+        "jsFun"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Suspending/Suspending(jsFun)",
+        "Suspending/constructor(jsFun)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jspi",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#jspi",
+        "title": "JavaScript Promise Integration",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webassembly-promising",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-webassembly-promising",
+      "linkingText": [
+        "promising(wasmFunc)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WebAssembly"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jspi",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#jspi",
+        "title": "JavaScript Promise Integration",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "run-a-promising-function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#run-a-promising-function",
+      "linkingText": [
+        "run a Promising function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jspi",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#jspi",
+        "title": "JavaScript Promise Integration",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "evaluate-a-promising-function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#evaluate-a-promising-function",
+      "linkingText": [
+        "evaluate a Promising function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jspi",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#jspi",
+        "title": "JavaScript Promise Integration",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-suspending-suspending",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-suspending-suspending",
+      "linkingText": [
+        "Suspending(jsFun)",
+        "constructor(jsFun)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Suspending"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jspi",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#jspi",
+        "title": "JavaScript Promise Integration",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-suspending-function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-suspending-function",
+      "linkingText": [
+        "create a suspending function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jspi",
+        "href": "https://webassembly.github.io/js-promise-integration/js-api/#jspi",
+        "title": "JavaScript Promise Integration",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "tag_alloc",
       "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag_alloc",
       "linkingText": [
@@ -2779,7 +3093,7 @@
         "id": "tags",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#tags",
         "title": "Tags",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -2798,7 +3112,7 @@
         "id": "tag-types",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
         "title": "Tag types",
-        "number": "4.7.1"
+        "number": "4.8.1"
       },
       "definedIn": "pre"
     },
@@ -2819,7 +3133,7 @@
         "id": "tag-types",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
         "title": "Tag types",
-        "number": "4.7.1"
+        "number": "4.8.1"
       },
       "definedIn": "pre"
     },
@@ -2838,7 +3152,7 @@
         "id": "tag-types",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
         "title": "Tag types",
-        "number": "4.7.1"
+        "number": "4.8.1"
       },
       "definedIn": "pre"
     },
@@ -2860,7 +3174,7 @@
         "id": "tag-types",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
         "title": "Tag types",
-        "number": "4.7.1"
+        "number": "4.8.1"
       },
       "definedIn": "pre"
     },
@@ -2879,7 +3193,7 @@
         "id": "tag-types",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
         "title": "Tag types",
-        "number": "4.7.1"
+        "number": "4.8.1"
       },
       "definedIn": "prose"
     },
@@ -2898,7 +3212,7 @@
         "id": "tag-types",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
         "title": "Tag types",
-        "number": "4.7.1"
+        "number": "4.8.1"
       },
       "definedIn": "prose"
     },
@@ -2920,7 +3234,7 @@
         "id": "tag-types",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#tag-types",
         "title": "Tag types",
-        "number": "4.7.1"
+        "number": "4.8.1"
       },
       "definedIn": "prose"
     },
@@ -2939,7 +3253,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -2958,7 +3272,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -2977,7 +3291,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -2996,7 +3310,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3015,7 +3329,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3034,7 +3348,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3053,7 +3367,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3072,7 +3386,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3091,7 +3405,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3110,7 +3424,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3129,7 +3443,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3148,7 +3462,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3167,7 +3481,7 @@
         "id": "gc-exotic-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#gc-exotic-objects",
         "title": "Garbage Collected Objects",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3186,7 +3500,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre"
     },
@@ -3207,7 +3521,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre"
     },
@@ -3226,7 +3540,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre"
     },
@@ -3250,7 +3564,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre"
     },
@@ -3274,7 +3588,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre"
     },
@@ -3298,7 +3612,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre"
     },
@@ -3319,7 +3633,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre"
     },
@@ -3340,7 +3654,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre"
     },
@@ -3359,7 +3673,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose"
     },
@@ -3378,7 +3692,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose"
     },
@@ -3402,7 +3716,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose"
     },
@@ -3423,7 +3737,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose"
     },
@@ -3444,7 +3758,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose"
     },
@@ -3465,7 +3779,7 @@
         "id": "exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#exceptions",
         "title": "Exceptions",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose"
     },
@@ -3484,7 +3798,7 @@
         "id": "js-exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#js-exceptions",
         "title": "JavaScript exceptions",
-        "number": "4.9.1"
+        "number": "4.10.1"
       },
       "definedIn": "prose"
     },
@@ -3503,7 +3817,7 @@
         "id": "js-exceptions",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#js-exceptions",
         "title": "JavaScript exceptions",
-        "number": "4.9.1"
+        "number": "4.10.1"
       },
       "definedIn": "prose"
     },
@@ -3522,7 +3836,7 @@
         "id": "error-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#error-objects",
         "title": "Error Objects",
-        "number": "4.10"
+        "number": "4.11"
       },
       "definedIn": "prose"
     },
@@ -3541,7 +3855,7 @@
         "id": "error-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#error-objects",
         "title": "Error Objects",
-        "number": "4.10"
+        "number": "4.11"
       },
       "definedIn": "prose"
     },
@@ -3560,7 +3874,7 @@
         "id": "error-objects",
         "href": "https://webassembly.github.io/js-promise-integration/js-api/#error-objects",
         "title": "Error Objects",
-        "number": "4.10"
+        "number": "4.11"
       },
       "definedIn": "prose"
     }

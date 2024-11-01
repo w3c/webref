@@ -40,6 +40,9 @@
         },
         {
           "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-process-the-file_handlers-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-file_handlers-member-1\">Process the <code>file_handlers</code> member</a>, passing <var data-type=\"ordered map\">json</var>, <var data-type=\"ordered map\">manifest</var>\n        and <var data-type=\"URL\">manifest URL</var>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-process-the-related_applications-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-related_applications-member-1\">Process the <code>related_applications</code> member</a>, passing <var data-type=\"ordered map\">json</var> and\n        <var data-type=\"ordered map\">manifest</var>."
         }
       ]
     },
@@ -491,6 +494,58 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "process the related_applications member",
+      "href": "https://wicg.github.io/manifest-incubations/#dfn-process-the-related_applications-member",
+      "html": "To <dfn id=\"dfn-process-the-related_applications-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>related_applications</code> member</dfn>, given\n        <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">json</var> and <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>\n        <var data-type=\"ordered map\">manifest</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"list\">relatedApplications</var> be a new <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"related_applications\"] to <var data-type=\"list\">relatedApplications</var>."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"related_applications\"] doesn't <a data-link-type=\"dfn|abstract-op\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or\n        <var data-type=\"ordered map\">json</var>[\"related_applications\"] is not a <a data-link-type=\"dfn|abstract-op\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, return."
+        },
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var>app</var> of <var data-type=\"ordered map\">json</var>[\"related_applications\"]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If neither <var>app</var>[\"id\"] nor <var>app</var>[\"url\"] are\n            missing:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var>app</var>[\"url\"] to the result of running\n                <a href=\"https://wicg.github.io/manifest-incubations/#dfn-process-the-url-member-of-an-application\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-process-the-url-member-of-an-application-1\">process the <code>url</code> member of an application</a> given\n                <var>app</var>[\"url\"]."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var>app</var> to\n                <var data-type=\"list\">relatedApplications</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Set <var data-type=\"list\">relatedApplications</var>."
+        }
+      ]
+    },
+    {
+      "name": "process the url member of an application",
+      "href": "https://wicg.github.io/manifest-incubations/#dfn-process-the-url-member-of-an-application",
+      "html": "To <dfn id=\"dfn-process-the-url-member-of-an-application\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>url</code> member of an application</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>application URL</var> is missing, return null."
+        },
+        {
+          "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parse</a> <var>application URL</var> and if\n          the result is not failure, return the result. Otherwise return null."
         }
       ]
     },
