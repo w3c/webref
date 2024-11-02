@@ -356,7 +356,7 @@
       "name": "<container-progress()>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-container-progress",
       "type": "type",
-      "value": "container-progress(<size-feature> [ of <container-name> ]?, <calc-sum>, <calc-sum>)"
+      "value": "container-progress(<mf-name> [ of <container-name> ]?, <calc-sum>, <calc-sum>)"
     },
     {
       "name": "<progress>",
@@ -429,7 +429,7 @@
       "name": "<mix()>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-mix",
       "type": "type",
-      "value": "mix( <progress> , <whole-value> , <whole-value> ) | mix( <progress> && of <'animation-name'> )"
+      "value": "mix( <progress> , <whole-value> , <whole-value> ) | mix( <progress> && of <keyframes-name> )"
     },
     {
       "name": "first-valid()",
@@ -589,7 +589,7 @@
     {
       "msg": "Missing definition",
       "name": "<boolean-group>",
-      "value": "<test> | ( <boolean> ) | <general-enclosed>"
+      "value": "<test> | ( <boolean[ <test> ]> ) | <general-enclosed>"
     },
     {
       "msg": "Missing definition",

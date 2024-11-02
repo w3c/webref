@@ -24,10 +24,13 @@
       "https://github.com/WICG/turtledove/issues/1215": {},
       "https://github.com/WICG/turtledove/issues/1250": {},
       "https://github.com/WICG/turtledove/issues/522": {},
+      "https://github.com/WICG/turtledove/issues/616": {},
+      "https://github.com/WICG/turtledove/issues/627": {},
       "https://github.com/WICG/turtledove/issues/632": {},
       "https://github.com/WICG/turtledove/issues/667": {},
       "https://github.com/WICG/turtledove/issues/676": {},
       "https://github.com/WICG/turtledove/issues/868": {},
+      "https://github.com/WICG/turtledove/issues/966": {},
       "https://github.com/WICG/turtledove/issues/986": {},
       "https://github.com/patcg-individual-drafts/private-aggregation-api": {},
       "https://github.com/privacysandbox/attestation": {},
@@ -69,6 +72,7 @@
       "https://wicg.github.io/attribution-reporting-api/": {},
       "https://wicg.github.io/fenced-frame/": {},
       "https://wicg.github.io/private-network-access/": {},
+      "https://wicg.github.io/turtledove/": {},
       "https://www.rfc-editor.org/rfc/rfc4648": {},
       "https://www.rfc-editor.org/rfc/rfc6234": {},
       "https://www.rfc-editor.org/rfc/rfc8949": {
@@ -388,12 +392,38 @@
           "debug-details-enabled",
           "debug-details-key",
           "aggregation-coordinator",
-          "default-aggregation-coordinator"
+          "batching-scope",
+          "debug-scope",
+          "privateaggregation",
+          "scoping-details",
+          "default-aggregation-coordinator",
+          "contribution-cache-entry",
+          "contribution-cache",
+          "default-filtering-id-max-bytes"
         ]
       },
       "https://patcg-individual-drafts.github.io/private-aggregation-api/": {
         "anchors": [
-          "obtain-the-private-aggregation-coordinator"
+          "obtain-the-private-aggregation-coordinator",
+          "dom-privateaggregation-contributetohistogram",
+          "privateaggregation-allowed-to-use",
+          "privateaggregation-scoping-details",
+          "scoping-details-get-batching-scope-steps",
+          "scoping-details-get-debug-scope-steps",
+          "get-a-debug-details",
+          "mark-a-debug-scope-complete",
+          "set-the-aggregation-coordinator-for-a-batching-scope",
+          "contribution-cache-entry-contribution",
+          "contribution-cache-entry-batching-scope",
+          "contribution-cache-entry-debug-scope",
+          "contribution-cache-entry-debug-details",
+          "append-an-entry-to-the-contribution-cache",
+          "dictdef-pahistogramcontribution",
+          "dom-pahistogramcontribution-bucket",
+          "dom-pahistogramcontribution-value",
+          "dom-pahistogramcontribution-filteringid",
+          "process-contributions-for-a-batching-scope",
+          "privateaggregation"
         ]
       },
       "https://streams.spec.whatwg.org/": {
@@ -543,6 +573,7 @@
           "dfn-convert-ecmascript-to-idl-value",
           "web-idl-arguments-list-converting",
           "Exposed",
+          "getter-steps",
           "Global",
           "idl-unrestricted-double",
           "dfn-specific-type",
@@ -603,6 +634,7 @@
           "dom-fencereportingdestination-seller",
           "dom-fencereportingdestination-component-seller",
           "elementdef-fencedframe",
+          "report-a-private-aggregation-event",
           "fencedframetype-automatic-beacon-event-type"
         ]
       },
@@ -615,6 +647,13 @@
         "anchors": [
           "permissionspolicy-shared-storage",
           "permissionspolicy-shared-storage-select-url"
+        ]
+      },
+      "https://wicg.github.io/turtledove/": {
+        "anchors": [
+          "interest-group-set",
+          "interest-group-owner",
+          "k-anonymity-threshold"
         ]
       },
       "https://www.ietf.org/rfc/rfc4122.txt": {
