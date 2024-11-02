@@ -1,0 +1,41 @@
+From 7c701a918b3d08e85a6cfa70a531d019882378dc Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Sat, 2 Nov 2024 10:59:54 +0100
+Subject: [PATCH] Amend syntax of `if()`, drop value of `<if-condition>`
+
+For `if()`, parsing fails on `;?`. That seems like a bug in the CSS parser,
+reported in:
+https://github.com/csstree/csstree/issues/303
+
+For `<if-condition>`, the problem is that the spec extends the Value Definition
+Syntax with a new construct that is not yet supported by the CSS parser. Not
+much that can be done in the meantime except dropping the value. Need to
+support the new construct raised in:
+https://github.com/csstree/csstree/issues/304
+---
+ ed/css/css-values-5.json | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+diff --git a/ed/css/css-values-5.json b/ed/css/css-values-5.json
+index 8aa66d177..7b6b54fb7 100644
+--- a/ed/css/css-values-5.json
++++ b/ed/css/css-values-5.json
+@@ -462,13 +462,12 @@
+       "name": "<if()>",
+       "href": "https://drafts.csswg.org/css-values-5/#typedef-if",
+       "type": "type",
+-      "value": "if( [ <if-condition> : <declaration-value>? ; ]* <if-condition> : <declaration-value>? ;? )"
++      "value": "if( [ <if-condition> : <declaration-value>? ; ]* <if-condition> : <declaration-value>? ';'? )"
+     },
+     {
+       "name": "<if-condition>",
+       "href": "https://drafts.csswg.org/css-values-5/#typedef-if-condition",
+-      "type": "type",
+-      "value": "<boolean[ <if-test> ]> | else"
++      "type": "type"
+     },
+     {
+       "name": "<if-test>",
+-- 
+2.37.1.windows.1
+
