@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "PerformanceResourceTiming": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceResourceTiming : PerformanceEntry {\n    readonly attribute DOMString initiatorType;\n    readonly attribute DOMString deliveryType;\n    readonly attribute ByteString nextHopProtocol;\n    readonly attribute DOMHighResTimeStamp workerStart;\n    readonly attribute DOMHighResTimeStamp redirectStart;\n    readonly attribute DOMHighResTimeStamp redirectEnd;\n    readonly attribute DOMHighResTimeStamp fetchStart;\n    readonly attribute DOMHighResTimeStamp domainLookupStart;\n    readonly attribute DOMHighResTimeStamp domainLookupEnd;\n    readonly attribute DOMHighResTimeStamp connectStart;\n    readonly attribute DOMHighResTimeStamp connectEnd;\n    readonly attribute DOMHighResTimeStamp secureConnectionStart;\n    readonly attribute DOMHighResTimeStamp requestStart;\n    readonly attribute DOMHighResTimeStamp firstInterimResponseStart;\n    readonly attribute DOMHighResTimeStamp responseStart;\n    readonly attribute DOMHighResTimeStamp responseEnd;\n    readonly attribute unsigned long long  transferSize;\n    readonly attribute unsigned long long  encodedBodySize;\n    readonly attribute unsigned long long  decodedBodySize;\n    readonly attribute unsigned short responseStatus;\n    readonly attribute RenderBlockingStatusType renderBlockingStatus;\n    readonly attribute DOMString contentType;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceResourceTiming : PerformanceEntry {\n    readonly attribute DOMString initiatorType;\n    readonly attribute DOMString deliveryType;\n    readonly attribute ByteString nextHopProtocol;\n    readonly attribute DOMHighResTimeStamp workerStart;\n    readonly attribute DOMHighResTimeStamp redirectStart;\n    readonly attribute DOMHighResTimeStamp redirectEnd;\n    readonly attribute DOMHighResTimeStamp fetchStart;\n    readonly attribute DOMHighResTimeStamp domainLookupStart;\n    readonly attribute DOMHighResTimeStamp domainLookupEnd;\n    readonly attribute DOMHighResTimeStamp connectStart;\n    readonly attribute DOMHighResTimeStamp connectEnd;\n    readonly attribute DOMHighResTimeStamp secureConnectionStart;\n    readonly attribute DOMHighResTimeStamp requestStart;\n    readonly attribute DOMHighResTimeStamp finalResponseHeadersStart;\n    readonly attribute DOMHighResTimeStamp firstInterimResponseStart;\n    readonly attribute DOMHighResTimeStamp responseStart;\n    readonly attribute DOMHighResTimeStamp responseEnd;\n    readonly attribute unsigned long long  transferSize;\n    readonly attribute unsigned long long  encodedBodySize;\n    readonly attribute unsigned long long  decodedBodySize;\n    readonly attribute unsigned short responseStatus;\n    readonly attribute RenderBlockingStatusType renderBlockingStatus;\n    readonly attribute DOMString contentType;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceResourceTiming",
         "inheritance": "PerformanceEntry",
@@ -229,6 +229,22 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-requeststart"
+          },
+          {
+            "type": "attribute",
+            "name": "finalResponseHeadersStart",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-finalresponseheadersstart"
           },
           {
             "type": "attribute",
