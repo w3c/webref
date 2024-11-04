@@ -1,9 +1,5 @@
 // Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 [Exposed=InterestGroupScriptRunnerGlobalScope]
 interface InterestGroupScriptRunnerGlobalScope {
-};
-
-// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
-partial interface InterestGroupScriptRunnerGlobalScope {
-  readonly attribute PrivateAggregation privateAggregation;
+  readonly attribute PrivateAggregation? privateAggregation;
 };

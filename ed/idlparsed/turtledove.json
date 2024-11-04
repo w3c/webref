@@ -8,7 +8,8 @@
       "constructors": {},
       "functions": {
         "InterestGroupScriptRunnerGlobalScope": [
-          "InterestGroupScriptRunnerGlobalScope"
+          "InterestGroupScriptRunnerGlobalScope",
+          "PrivateAggregation"
         ],
         "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": [
           "ForDebuggingOnly",
@@ -651,8 +652,35 @@
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#dictdef-generatebidinterestgroup"
       },
+      "ProtectedAudiencePrivateAggregationConfig": {
+        "fragment": "dictionary ProtectedAudiencePrivateAggregationConfig {\n  USVString aggregationCoordinatorOrigin;\n};",
+        "type": "dictionary",
+        "name": "ProtectedAudiencePrivateAggregationConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "aggregationCoordinatorOrigin",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-protectedaudienceprivateaggregationconfig-aggregationcoordinatororigin"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-protectedaudienceprivateaggregationconfig"
+      },
       "AuctionAdInterestGroup": {
-        "fragment": "dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {\n  double priority = 0.0;\n  record<DOMString, double> prioritySignalsOverrides;\n  required double lifetimeMs;\n  DOMString additionalBidKey;\n};",
+        "fragment": "dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {\n  double priority = 0.0;\n  record<DOMString, double> prioritySignalsOverrides;\n  required double lifetimeMs;\n  DOMString additionalBidKey;\n  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;\n};",
         "type": "dictionary",
         "name": "AuctionAdInterestGroup",
         "inheritance": "GenerateBidInterestGroup",
@@ -740,6 +768,22 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-auctionadinterestgroup-additionalbidkey"
+          },
+          {
+            "type": "field",
+            "name": "privateAggregationConfig",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ProtectedAudiencePrivateAggregationConfig"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadinterestgroup-privateaggregationconfig"
           }
         ],
         "extAttrs": [],
@@ -789,6 +833,95 @@
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionadinterestgroupkey"
       },
+      "AuctionReportBuyersConfig": {
+        "fragment": "dictionary AuctionReportBuyersConfig {\n  required bigint bucket;\n  required double scale;\n};",
+        "type": "dictionary",
+        "name": "AuctionReportBuyersConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "bucket",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bigint"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionreportbuyersconfig-bucket"
+          },
+          {
+            "type": "field",
+            "name": "scale",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionreportbuyersconfig-scale"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-auctionreportbuyersconfig"
+      },
+      "AuctionReportBuyerDebugModeConfig": {
+        "fragment": "dictionary AuctionReportBuyerDebugModeConfig {\n  boolean enabled = false;\n\n  // Must only be provided if `enabled` is true.\n  bigint? debugKey;\n};",
+        "type": "dictionary",
+        "name": "AuctionReportBuyerDebugModeConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "enabled",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionreportbuyerdebugmodeconfig-enabled"
+          },
+          {
+            "type": "field",
+            "name": "debugKey",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "bigint"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionreportbuyerdebugmodeconfig-debugkey"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-auctionreportbuyerdebugmodeconfig"
+      },
       "AuctionRealTimeReportingConfig": {
         "fragment": "dictionary AuctionRealTimeReportingConfig {\n  required DOMString type;\n};",
         "type": "dictionary",
@@ -817,7 +950,7 @@
         "href": "https://wicg.github.io/turtledove/#dictdef-auctionrealtimereportingconfig"
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString?> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>?> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>?> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>?> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>?> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>?> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerMultiBidLimits;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<DOMString> requiredSellerCapabilities;\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AuctionRealTimeReportingConfig sellerRealTimeReportingConfig;\n  record<USVString, AuctionRealTimeReportingConfig> perBuyerRealTimeReportingConfig;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n\n  Promise<Uint8Array> serverResponse;\n  USVString requestId;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n\n  USVString trustedScoringSignalsURL;\n  long maxTrustedScoringSignalsURLLength;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString?> directFromSellerSignalsHeaderAdSlot;\n  Promise<record<USVString, USVString>?> deprecatedRenderURLReplacements;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  Promise<record<USVString, any>?> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>?> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>?> perBuyerCumulativeTimeouts;\n  unsigned long long reportingTimeout;\n  USVString sellerCurrency;\n  Promise<record<USVString, USVString>?> perBuyerCurrencies;\n  record<USVString, unsigned short> perBuyerMultiBidLimits;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n\n  sequence<bigint> auctionReportBuyerKeys;\n  record<DOMString, AuctionReportBuyersConfig> auctionReportBuyers;\n  AuctionReportBuyerDebugModeConfig auctionReportBuyerDebugModeConfig;\n  sequence<DOMString> requiredSellerCapabilities;\n  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;\n\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AuctionRealTimeReportingConfig sellerRealTimeReportingConfig;\n  record<USVString, AuctionRealTimeReportingConfig> perBuyerRealTimeReportingConfig;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n\n  Promise<Uint8Array> serverResponse;\n  USVString requestId;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -1411,6 +1544,80 @@
           },
           {
             "type": "field",
+            "name": "auctionReportBuyerKeys",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "bigint"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-auctionreportbuyerkeys"
+          },
+          {
+            "type": "field",
+            "name": "auctionReportBuyers",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AuctionReportBuyersConfig"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-auctionreportbuyers"
+          },
+          {
+            "type": "field",
+            "name": "auctionReportBuyerDebugModeConfig",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AuctionReportBuyerDebugModeConfig"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-auctionreportbuyerdebugmodeconfig"
+          },
+          {
+            "type": "field",
             "name": "requiredSellerCapabilities",
             "extAttrs": [],
             "idlType": {
@@ -1433,6 +1640,22 @@
             "default": null,
             "required": false,
             "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-requiredsellercapabilities"
+          },
+          {
+            "type": "field",
+            "name": "privateAggregationConfig",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ProtectedAudiencePrivateAggregationConfig"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-privateaggregationconfig"
           },
           {
             "type": "field",
@@ -1876,12 +2099,193 @@
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#dictdef-adauctiondatabuyerconfig"
       },
+      "StorageInterestGroup": {
+        "fragment": "dictionary StorageInterestGroup : AuctionAdInterestGroup {\n  unsigned long long joinCount;\n  unsigned long long bidCount;\n  sequence<PreviousWin> prevWinsMs;\n  USVString joiningOrigin;\n  long long timeSinceGroupJoinedMs;\n  long long lifetimeRemainingMs;\n  long long timeSinceLastUpdateMs;\n  long long timeUntilNextUpdateMs;\n  unsigned long long estimatedSize;\n};",
+        "type": "dictionary",
+        "name": "StorageInterestGroup",
+        "inheritance": "AuctionAdInterestGroup",
+        "members": [
+          {
+            "type": "field",
+            "name": "joinCount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-storageinterestgroup-joincount"
+          },
+          {
+            "type": "field",
+            "name": "bidCount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-storageinterestgroup-bidcount"
+          },
+          {
+            "type": "field",
+            "name": "prevWinsMs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PreviousWin"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-storageinterestgroup-prevwinsms"
+          },
+          {
+            "type": "field",
+            "name": "joiningOrigin",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-storageinterestgroup-joiningorigin"
+          },
+          {
+            "type": "field",
+            "name": "timeSinceGroupJoinedMs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-storageinterestgroup-timesincegroupjoinedms"
+          },
+          {
+            "type": "field",
+            "name": "lifetimeRemainingMs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-storageinterestgroup-lifetimeremainingms"
+          },
+          {
+            "type": "field",
+            "name": "timeSinceLastUpdateMs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-storageinterestgroup-timesincelastupdatems"
+          },
+          {
+            "type": "field",
+            "name": "timeUntilNextUpdateMs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-storageinterestgroup-timeuntilnextupdatems"
+          },
+          {
+            "type": "field",
+            "name": "estimatedSize",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-storageinterestgroup-estimatedsize"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-storageinterestgroup"
+      },
       "InterestGroupScriptRunnerGlobalScope": {
-        "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\ninterface InterestGroupScriptRunnerGlobalScope {\n};",
+        "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\ninterface InterestGroupScriptRunnerGlobalScope {\n  readonly attribute PrivateAggregation? privateAggregation;\n};",
         "type": "interface",
         "name": "InterestGroupScriptRunnerGlobalScope",
         "inheritance": null,
-        "members": [],
+        "members": [
+          {
+            "type": "attribute",
+            "name": "privateAggregation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "PrivateAggregation"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/turtledove/#dom-interestgroupscriptrunnerglobalscope-privateaggregation"
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -1895,6 +2299,178 @@
         ],
         "partial": false,
         "href": "https://wicg.github.io/turtledove/#interestgroupscriptrunnerglobalscope"
+      },
+      "PASignalValue": {
+        "fragment": "dictionary PASignalValue {\n  required DOMString baseValue;\n  double scale;\n  (bigint or long) offset;\n};",
+        "type": "dictionary",
+        "name": "PASignalValue",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "baseValue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-pasignalvalue-basevalue"
+          },
+          {
+            "type": "field",
+            "name": "scale",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-pasignalvalue-scale"
+          },
+          {
+            "type": "field",
+            "name": "offset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "bigint"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "long"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-pasignalvalue-offset"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-pasignalvalue"
+      },
+      "PAExtendedHistogramContribution": {
+        "fragment": "dictionary PAExtendedHistogramContribution {\n  required (PASignalValue or bigint) bucket;\n  required (PASignalValue or long) value;\n  bigint filteringId = 0;\n};",
+        "type": "dictionary",
+        "name": "PAExtendedHistogramContribution",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "bucket",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PASignalValue"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "bigint"
+                }
+              ]
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-paextendedhistogramcontribution-bucket"
+          },
+          {
+            "type": "field",
+            "name": "value",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PASignalValue"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "long"
+                }
+              ]
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/turtledove/#dom-paextendedhistogramcontribution-value"
+          },
+          {
+            "type": "field",
+            "name": "filteringId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bigint"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://wicg.github.io/turtledove/#dom-paextendedhistogramcontribution-filteringid"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/turtledove/#dictdef-paextendedhistogramcontribution"
       },
       "ForDebuggingOnly": {
         "fragment": "[Exposed=InterestGroupBiddingAndScoringScriptRunnerGlobalScope]\ninterface ForDebuggingOnly {\n  undefined reportAdAuctionWin(USVString url);\n  undefined reportAdAuctionLoss(USVString url);\n};",
@@ -4550,6 +5126,77 @@
           "partial": true
         }
       ],
+      "PrivateAggregation": [
+        {
+          "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\npartial interface PrivateAggregation {\n  undefined contributeToHistogramOnEvent(\n      DOMString event, PAExtendedHistogramContribution contribution);\n};",
+          "type": "interface",
+          "name": "PrivateAggregation",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "contributeToHistogramOnEvent",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "event",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "contribution",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PAExtendedHistogramContribution"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://wicg.github.io/turtledove/#dom-privateaggregation-contributetohistogramonevent"
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "InterestGroupScriptRunnerGlobalScope"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ],
       "RequestInit": [
         {
           "fragment": "partial dictionary RequestInit {\n  boolean adAuctionHeaders;\n};",
@@ -4635,7 +5282,8 @@
     },
     "exposed": {
       "InterestGroupScriptRunnerGlobalScope": [
-        "InterestGroupScriptRunnerGlobalScope"
+        "InterestGroupScriptRunnerGlobalScope",
+        "PrivateAggregation"
       ],
       "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": [
         "ForDebuggingOnly",
@@ -4671,12 +5319,19 @@
         "AuctionAd",
         "AuctionAdInterestGroupSize"
       ],
+      "ProtectedAudiencePrivateAggregationConfig": [],
       "AuctionAdInterestGroup": [
-        "GenerateBidInterestGroup"
+        "GenerateBidInterestGroup",
+        "ProtectedAudiencePrivateAggregationConfig"
       ],
       "AuctionAdInterestGroupKey": [],
+      "AuctionReportBuyersConfig": [],
+      "AuctionReportBuyerDebugModeConfig": [],
       "AuctionRealTimeReportingConfig": [],
       "AuctionAdConfig": [
+        "AuctionReportBuyersConfig",
+        "AuctionReportBuyerDebugModeConfig",
+        "ProtectedAudiencePrivateAggregationConfig",
         "AuctionRealTimeReportingConfig",
         "AuctionAdConfig",
         "AbortSignal",
@@ -4689,7 +5344,20 @@
         "AdAuctionDataBuyerConfig"
       ],
       "AdAuctionDataBuyerConfig": [],
-      "InterestGroupScriptRunnerGlobalScope": [],
+      "StorageInterestGroup": [
+        "AuctionAdInterestGroup",
+        "PreviousWin"
+      ],
+      "InterestGroupScriptRunnerGlobalScope": [
+        "PrivateAggregation"
+      ],
+      "PASignalValue": [],
+      "PAExtendedHistogramContribution": [
+        "PASignalValue"
+      ],
+      "PrivateAggregation": [
+        "PAExtendedHistogramContribution"
+      ],
       "ForDebuggingOnly": [],
       "RealTimeReporting": [
         "RealTimeContribution"
@@ -4738,6 +5406,7 @@
       "FencedFrameConfig",
       "AbortSignal",
       "Uint8Array",
+      "PrivateAggregation",
       "RequestInit",
       "HTMLIFrameElement"
     ],

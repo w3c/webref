@@ -4,4 +4,5 @@ interface Fence {
     undefined reportEvent(optional ReportEventType event = {});
     undefined setReportEventDataForAutomaticBeacons(optional FenceEvent event = {});
     sequence<FencedFrameConfig> getNestedConfigs();
+    undefined notifyEvent(Event event);
 };

@@ -1931,6 +1931,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "mloperand-datatype",
+      "href": "https://webmachinelearning.github.io/webnn/#mloperand-datatype",
+      "linkingText": [
+        "dataType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLOperand"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-mloperand",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mloperand",
+        "title": "MLOperand interface",
+        "number": "7.6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "mloperand-shape",
       "href": "https://webmachinelearning.github.io/webnn/#mloperand-shape",
       "linkingText": [
@@ -1973,17 +1994,38 @@
       "definedIn": "prose"
     },
     {
-      "id": "mloperand-datatype",
-      "href": "https://webmachinelearning.github.io/webnn/#mloperand-datatype",
+      "id": "dom-mloperand-datatype",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-datatype",
       "linkingText": [
         "dataType"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attribute",
       "for": [
         "MLOperand"
       ],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mloperand",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mloperand",
+        "title": "MLOperand interface",
+        "number": "7.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mloperand-shape",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-shape",
+      "linkingText": [
+        "shape"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLOperand"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "api-mloperand",
@@ -2089,48 +2131,6 @@
         "href": "https://webmachinelearning.github.io/webnn/#api-mlnumber-typedef",
         "title": "MLNumber",
         "number": "7.6.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-mloperand-datatype",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-datatype",
-      "linkingText": [
-        "dataType()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "MLOperand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mloperand-datatype",
-        "href": "https://webmachinelearning.github.io/webnn/#api-mloperand-datatype",
-        "title": "dataType()",
-        "number": "7.6.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-mloperand-shape",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-shape",
-      "linkingText": [
-        "shape()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "MLOperand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mloperand-shape",
-        "href": "https://webmachinelearning.github.io/webnn/#api-mloperand-shape",
-        "title": "shape()",
-        "number": "7.6.3"
       },
       "definedIn": "prose"
     },

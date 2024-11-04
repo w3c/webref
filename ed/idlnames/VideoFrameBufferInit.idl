@@ -12,6 +12,9 @@ dictionary VideoFrameBufferInit {
   // Default visible rect is coded size positioned at (0,0)
   DOMRectInit visibleRect;
 
+  double rotation = 0;
+  boolean flip = false;
+
   // Default display dimensions match visibleRect.
   [EnforceRange] unsigned long displayWidth;
   [EnforceRange] unsigned long displayHeight;

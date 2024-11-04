@@ -1,6 +1,6 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
-dictionary GPUImageCopyExternalImage {
-    required GPUImageCopyExternalImageSource source;
+dictionary GPUCopyExternalImageSourceInfo {
+    required GPUCopyExternalImageSource source;
     GPUOrigin2D origin = {};
     boolean flipY = false;
 };

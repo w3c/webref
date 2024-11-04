@@ -3753,7 +3753,7 @@
         "href": "https://w3c.github.io/webcodecs/#enumdef-audiosampleformat"
       },
       "VideoFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor(AllowSharedBufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long timestamp;           // microseconds\n  readonly attribute VideoColorSpace colorSpace;\n\n  VideoFrameMetadata metadata();\n\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      AllowSharedBufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor(AllowSharedBufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute double rotation;\n  readonly attribute boolean flip;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long timestamp;           // microseconds\n  readonly attribute VideoColorSpace colorSpace;\n\n  VideoFrameMetadata metadata();\n\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      AllowSharedBufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -3917,6 +3917,38 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/webcodecs/#dom-videoframe-visiblerect"
+          },
+          {
+            "type": "attribute",
+            "name": "rotation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/webcodecs/#dom-videoframe-rotation"
+          },
+          {
+            "type": "attribute",
+            "name": "flip",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/webcodecs/#dom-videoframe-flip"
           },
           {
             "type": "attribute",
@@ -4185,7 +4217,7 @@
         "href": "https://w3c.github.io/webcodecs/#videoframe"
       },
       "VideoFrameInit": {
-        "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;  // microseconds\n  long long timestamp;          // microseconds\n  AlphaOption alpha = \"keep\";\n\n  // Default matches image. May be used to efficiently crop. Will trigger\n  // new computation of displayWidth and displayHeight using image's pixel\n  // aspect ratio unless an explicit displayWidth and displayHeight are given.\n  DOMRectInit visibleRect;\n\n  // Default matches image unless visibleRect is provided.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n\n  VideoFrameMetadata metadata;\n};",
+        "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;  // microseconds\n  long long timestamp;          // microseconds\n  AlphaOption alpha = \"keep\";\n\n  // Default matches image. May be used to efficiently crop. Will trigger\n  // new computation of displayWidth and displayHeight using image's pixel\n  // aspect ratio unless an explicit displayWidth and displayHeight are given.\n  DOMRectInit visibleRect;\n\n  double rotation = 0;\n  boolean flip = false;\n\n  // Default matches image unless visibleRect is provided.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n\n  VideoFrameMetadata metadata;\n};",
         "type": "dictionary",
         "name": "VideoFrameInit",
         "inheritance": null,
@@ -4259,6 +4291,44 @@
           },
           {
             "type": "field",
+            "name": "rotation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/#dom-videoframeinit-rotation"
+          },
+          {
+            "type": "field",
+            "name": "flip",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/#dom-videoframeinit-flip"
+          },
+          {
+            "type": "field",
             "name": "displayWidth",
             "extAttrs": [
               {
@@ -4325,7 +4395,7 @@
         "href": "https://w3c.github.io/webcodecs/#dictdef-videoframeinit"
       },
       "VideoFrameBufferInit": {
-        "fragment": "dictionary VideoFrameBufferInit {\n  required VideoPixelFormat format;\n  required [EnforceRange] unsigned long codedWidth;\n  required [EnforceRange] unsigned long codedHeight;\n  required [EnforceRange] long long timestamp;  // microseconds\n  [EnforceRange] unsigned long long duration;  // microseconds\n\n  // Default layout is tightly-packed.\n  sequence<PlaneLayout> layout;\n\n  // Default visible rect is coded size positioned at (0,0)\n  DOMRectInit visibleRect;\n\n  // Default display dimensions match visibleRect.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n\n  VideoColorSpaceInit colorSpace;\n\n  sequence<ArrayBuffer> transfer = [];\n\n  VideoFrameMetadata metadata;\n};",
+        "fragment": "dictionary VideoFrameBufferInit {\n  required VideoPixelFormat format;\n  required [EnforceRange] unsigned long codedWidth;\n  required [EnforceRange] unsigned long codedHeight;\n  required [EnforceRange] long long timestamp;  // microseconds\n  [EnforceRange] unsigned long long duration;  // microseconds\n\n  // Default layout is tightly-packed.\n  sequence<PlaneLayout> layout;\n\n  // Default visible rect is coded size positioned at (0,0)\n  DOMRectInit visibleRect;\n\n  double rotation = 0;\n  boolean flip = false;\n\n  // Default display dimensions match visibleRect.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n\n  VideoColorSpaceInit colorSpace;\n\n  sequence<ArrayBuffer> transfer = [];\n\n  VideoFrameMetadata metadata;\n};",
         "type": "dictionary",
         "name": "VideoFrameBufferInit",
         "inheritance": null,
@@ -4478,6 +4548,44 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-visiblerect"
+          },
+          {
+            "type": "field",
+            "name": "rotation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-rotation"
+          },
+          {
+            "type": "field",
+            "name": "flip",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-flip"
           },
           {
             "type": "field",

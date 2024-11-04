@@ -781,54 +781,6 @@
       "value": "e | pi | infinity | -infinity | NaN"
     },
     {
-      "name": "<boolean>",
-      "href": "https://drafts.csswg.org/css-values-4/#typedef-boolean",
-      "type": "type",
-      "value": "<bool-not> | <bool-in-parens> [ <bool-and>* | <bool-or>* ]"
-    },
-    {
-      "name": "<boolean-without-or>",
-      "href": "https://drafts.csswg.org/css-values-4/#typedef-boolean-without-or",
-      "type": "type",
-      "value": "<bool-not> | <bool-in-parens> <bool-and>*"
-    },
-    {
-      "name": "<bool-not>",
-      "href": "https://drafts.csswg.org/css-values-4/#typedef-bool-not",
-      "type": "type",
-      "value": "not <bool-in-parens>"
-    },
-    {
-      "name": "<bool-and>",
-      "href": "https://drafts.csswg.org/css-values-4/#typedef-bool-and",
-      "type": "type",
-      "value": "and <bool-in-parens>"
-    },
-    {
-      "name": "<bool-or>",
-      "href": "https://drafts.csswg.org/css-values-4/#typedef-bool-or",
-      "type": "type",
-      "value": "or <bool-in-parens>"
-    },
-    {
-      "name": "<bool-in-parens>",
-      "href": "https://drafts.csswg.org/css-values-4/#typedef-bool-in-parens",
-      "type": "type",
-      "value": "( <boolean> ) | <bool-test> | <general-enclosed>"
-    },
-    {
-      "name": "<general-enclosed>",
-      "href": "https://drafts.csswg.org/css-values-4/#typedef-general-enclosed",
-      "type": "type",
-      "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]"
-    },
-    {
-      "name": "<bool-test>",
-      "prose": "Each specification using <boolean> must define what things are valid as <bool-test> values in that context, and whether it uses 2-value or 3-value logic. As well, <bool-test> values should either be wrapped in parentheses or be functions; if a specification needs to express some conditions in a different way, please contact the CSSWG for review.",
-      "href": "https://drafts.csswg.org/css-values-4/#typedef-bool-test",
-      "type": "type"
-    },
-    {
       "name": "<quirky-length>",
       "prose": "When CSS is being parsed in quirks mode, <quirky-length> is a type of <length> that is only valid in certain properties:",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-quirky-length",

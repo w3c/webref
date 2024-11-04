@@ -6,7 +6,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;  // microseconds\n  long long timestamp;          // microseconds\n  AlphaOption alpha = \"keep\";\n\n  // Default matches image. May be used to efficiently crop. Will trigger\n  // new computation of displayWidth and displayHeight using image's pixel\n  // aspect ratio unless an explicit displayWidth and displayHeight are given.\n  DOMRectInit visibleRect;\n\n  // Default matches image unless visibleRect is provided.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n\n  VideoFrameMetadata metadata;\n};",
+    "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;  // microseconds\n  long long timestamp;          // microseconds\n  AlphaOption alpha = \"keep\";\n\n  // Default matches image. May be used to efficiently crop. Will trigger\n  // new computation of displayWidth and displayHeight using image's pixel\n  // aspect ratio unless an explicit displayWidth and displayHeight are given.\n  DOMRectInit visibleRect;\n\n  double rotation = 0;\n  boolean flip = false;\n\n  // Default matches image unless visibleRect is provided.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n\n  VideoFrameMetadata metadata;\n};",
     "href": "https://w3c.github.io/webcodecs/#dictdef-videoframeinit"
   },
   "extended": [],

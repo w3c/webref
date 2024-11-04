@@ -6,8 +6,8 @@ interface PrivateAggregation {
   undefined enableDebugMode(optional PADebugModeOptions options = {});
 };
 
-// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
-[Exposed=InterestGroupScriptRunnerGlobalScope, SecureContext]
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
+[Exposed=InterestGroupScriptRunnerGlobalScope]
 partial interface PrivateAggregation {
   undefined contributeToHistogramOnEvent(
       DOMString event, PAExtendedHistogramContribution contribution);

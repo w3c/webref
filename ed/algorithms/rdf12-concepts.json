@@ -5,57 +5,22 @@
   },
   "algorithms": [
     {
-      "name": "literal value",
-      "href": "https://w3c.github.io/rdf-concepts/spec/#dfn-literal-value",
-      "html": "The <dfn id=\"dfn-literal-value\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">literal value</dfn> associated with a <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-literal\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-literal-10\">literal</a> is:",
+      "name": "literal",
+      "href": "https://w3c.github.io/rdf-concepts/spec/#dfn-literal",
+      "html": "A <dfn data-local-lt=\"RDF literal\" data-lt=\"literal|RDF literal\" data-plurals=\"literals|rdf literals\" id=\"dfn-literal\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">literal</dfn> in an <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-rdf-graph\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-rdf-graph-24\">RDF graph</a> consists of\n      two, three, or four elements, as follow:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If the literal is a <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-language-tagged-string\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-language-tagged-string-4\">language-tagged string</a>,\n        then the literal value is a pair consisting of its <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-lexical-form-3\">lexical form</a>\n        and its <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-language-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-language-tag-3\">language tag</a>, in that order."
+          "html": "a <dfn data-plurals=\"lexical forms\" id=\"dfn-lexical-form\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">lexical form</dfn> consisting of a sequence of\n        <a data-cite=\"I18N-GLOSSARY#dfn-code-point\" class=\"lint-ignore\" href=\"https://www.w3.org/TR/i18n-glossary/#dfn-code-point\" id=\"ref-for-index-term-unicode-code-points-4\">Unicode code points</a> [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/rdf-concepts/spec/#bib-unicode\" title=\"The Unicode Standard\">UNICODE</a></cite>]\n        which are <a data-cite=\"I18N-GLOSSARY#dfn-scalar-value\" href=\"https://www.w3.org/TR/i18n-glossary/#dfn-scalar-value\" id=\"ref-for-index-term-unicode-scalar-values-2\">Unicode scalar values</a>,\n        and therefore do not contain\n        <a data-cite=\"I18N-GLOSSARY#dfn-surrogate\" class=\"lint-ignore\" href=\"https://www.w3.org/TR/i18n-glossary/#dfn-surrogate\" id=\"ref-for-index-term-surrogate-code-points-2\">Unicode surrogate code points</a>"
         },
         {
-          "html": "if the literal is a <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-dir-lang-string\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-dir-lang-string-4\">directional language-tagged string</a>, then the literal value is\n        a tuple of its <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-lexical-form-4\">lexical form</a>, its <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-language-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-language-tag-4\">language tag</a>, and its <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-base-direction\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-base-direction-4\">base direction</a>,\n        likewise in that order."
+          "html": "a <dfn data-plurals=\"datatype iris\" id=\"dfn-datatype-iri\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">datatype <abbr title=\"Internationalized Resource Identifier\">IRI</abbr></dfn>, being an <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-iri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-iri-27\"><abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a>\n        identifying a datatype that determines how the lexical form maps\n        to a <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-literal-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-literal-value-3\">literal value</a>"
         },
         {
-          "html": "If the literal's <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-datatype-iri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-datatype-iri-6\">datatype <abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a> is in the set of\n        <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-recognized-datatype-iri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-recognized-datatype-iri-1\">recognized datatype IRIs</a>, let <var>d</var> be the\n        <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-referent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-referent-5\">referent</a> of the datatype <abbr title=\"Internationalized Resource Identifier\">IRI</abbr>.",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "If the literal's <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-lexical-form-5\">lexical form</a> is in the <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-space\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-lexical-space-1\">lexical space</a>\n            of <var>d</var>, then the literal value is the result of applying\n            the <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-to-value-mapping\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-lexical-to-value-mapping-1\">lexical-to-value mapping</a> of <var>d</var> to the\n            <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-lexical-form-6\">lexical form</a>."
-            },
-            {
-              "html": "Otherwise, the literal is ill-typed and no literal value can be\n             associated with the literal. Such a case produces a semantic\n             inconsistency but is not <em>syntactically</em> ill-formed.\n             Implementations <em class=\"rfc2119\">MUST</em> accept ill-typed literals and produce RDF\n             graphs from them. Implementations <em class=\"rfc2119\">MAY</em> produce warnings when\n             encountering ill-typed literals."
-            }
-          ]
+          "html": "if and only if the <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-datatype-iri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-datatype-iri-1\">datatype <abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a> is\n        <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</code>, a\n        non-empty <dfn data-plurals=\"language tags\" id=\"dfn-language-tag\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">language tag</dfn> as defined by [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/rdf-concepts/spec/#bib-bcp47\" title=\"Tags for Identifying Languages\">BCP47</a></cite>]. The\n        language tag <em class=\"rfc2119\">MUST</em> be well-formed according to\n        <a data-cite=\"bcp47#section-2.2.9\" href=\"https://www.rfc-editor.org/rfc/rfc5646#section-2.2.9\" id=\"ref-for-index-term-section-2-2-9-1\">section 2.2.9</a>\n        of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/rdf-concepts/spec/#bib-bcp47\" title=\"Tags for Identifying Languages\">BCP47</a></cite>],\n        and <em class=\"rfc2119\">MUST</em> be treated consistently, that is, in a case insensitive manner.\n        Two language tags are the same if they only differ by case."
         },
         {
-          "html": "If the literal's <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-datatype-iri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-datatype-iri-7\">datatype <abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a> is <em>not</em> in the set of\n        <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-recognized-datatype-iri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-recognized-datatype-iri-2\">recognized datatype IRIs</a>, then the literal value is\n        not defined by this specification."
-        }
-      ]
-    },
-    {
-      "name": "dataset isomorphism",
-      "href": "https://w3c.github.io/rdf-concepts/spec/#dfn-dataset-isomorphism",
-      "html": "Two <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-rdf-dataset\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-rdf-dataset-10\">RDF datasets</a>\n      (the RDF dataset <var>D1</var> with default graph <var>DG1</var> and any named\n      graph <var>NG1</var> and the RDF dataset <var>D2</var> with default graph\n      <var>DG2</var> and any named graph <var>NG2</var>)\n      are <dfn data-lt=\"dataset isomorphism|dataset-isomorphic\" class=\"export\" data-export=\"\" id=\"dfn-dataset-isomorphism\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">dataset-isomorphic</dfn> if and only if\n      there is a bijection <var>M</var> between the nodes, triples and graphs in\n      <var>D1</var> and those in <var>D2</var> such that:",
-      "rationale": "for",
-      "steps": [
-        {
-          "html": "<var>M</var> maps <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-blank-node-11\">blank nodes</a> to blank nodes;"
-        },
-        {
-          "html": "<var>M</var> is the identity map on <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-literal\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-literal-14\">literals</a> and URIs;"
-        },
-        {
-          "html": "For every triple &lt;s p o&gt;, <var>M</var>(&lt;s, p, o&gt;)=\n        &lt;<var>M(s)</var>, <var>M(p)</var>, <var>M(o)</var>&gt;;"
-        },
-        {
-          "html": "For every graph <var>G</var>={t1, ..., tn},\n        <var>M(G)</var>={<var>M(t1)</var>, ..., <var>M(tn)</var>};"
-        },
-        {
-          "html": "<var>DG2</var> = <var>M(DG1)</var>; and"
-        },
-        {
-          "html": "&lt;n, G&gt; is in <var>NG1</var> if and only if\n        &lt;<var>M(n)</var>, <var>M(G)</var>&gt; is in <var>NG2</var>."
+          "html": "if and only if the <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-datatype-iri\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-datatype-iri-2\">datatype <abbr title=\"Internationalized Resource Identifier\">IRI</abbr></a> is\n        <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#dirLangString</code>,\n        a non-empty <a href=\"https://w3c.github.io/rdf-concepts/spec/#dfn-language-tag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-language-tag-1\">language tag</a>\n        that <em class=\"rfc2119\">MUST</em> be well-formed according to <a data-cite=\"bcp47#section-2.2.9\" href=\"https://www.rfc-editor.org/rfc/rfc5646#section-2.2.9\" id=\"ref-for-index-term-section-2-2-9-2\">section 2.2.9</a>\n        of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/rdf-concepts/spec/#bib-bcp47\" title=\"Tags for Identifying Languages\">BCP47</a></cite>],\n        and <em class=\"rfc2119\">MUST</em> be treated consistently, that is, in a case insensitive manner,\n        and a <dfn data-plurals=\"base directions\" id=\"dfn-base-direction\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">base direction</dfn> that <em class=\"rfc2119\">MUST</em> be either <code>ltr</code> or <code>rtl</code>."
         }
       ]
     }

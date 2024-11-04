@@ -12,10 +12,10 @@
   "extended": [
     {
       "spec": {
-        "title": "Private Aggregation API",
-        "url": "https://patcg-individual-drafts.github.io/private-aggregation-api/"
+        "title": "Protected Audience (formerly FLEDGE)",
+        "url": "https://wicg.github.io/turtledove/"
       },
-      "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope, SecureContext]\npartial interface PrivateAggregation {\n  undefined contributeToHistogramOnEvent(\n      DOMString event, PAExtendedHistogramContribution contribution);\n};"
+      "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\npartial interface PrivateAggregation {\n  undefined contributeToHistogramOnEvent(\n      DOMString event, PAExtendedHistogramContribution contribution);\n};"
     }
   ],
   "inheritance": null,

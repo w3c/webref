@@ -1,0 +1,29 @@
+{
+  "name": "GPUCopyExternalImageDestInfo",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPUCopyExternalImageDestInfo\n         : GPUTexelCopyTextureInfo {\n    PredefinedColorSpace colorSpace = \"srgb\";\n    boolean premultipliedAlpha = false;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpucopyexternalimagedestinfo"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GPUTexelCopyTextureInfo",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "dictionary GPUTexelCopyTextureInfo {\n    required GPUTexture texture;\n    GPUIntegerCoordinate mipLevel = 0;\n    GPUOrigin3D origin = {};\n    GPUTextureAspect aspect = \"all\";\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#gputexelcopytextureinfo"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

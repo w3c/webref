@@ -859,39 +859,39 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor"
       },
       "MLOperand": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLOperand {\n  MLOperandDataType dataType();\n  sequence<unsigned long> shape();\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLOperand {\n  readonly attribute MLOperandDataType dataType;\n  readonly attribute FrozenArray<unsigned long> shape;\n};",
         "type": "interface",
         "name": "MLOperand",
         "inheritance": null,
         "members": [
           {
-            "type": "operation",
+            "type": "attribute",
             "name": "dataType",
             "idlType": {
-              "type": "return-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "MLOperandDataType"
             },
-            "arguments": [],
             "extAttrs": [],
             "special": "",
+            "readonly": true,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-datatype"
           },
           {
-            "type": "operation",
+            "type": "attribute",
             "name": "shape",
             "idlType": {
-              "type": "return-type",
+              "type": "attribute-type",
               "extAttrs": [],
-              "generic": "sequence",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
               "idlType": [
                 {
-                  "type": "return-type",
+                  "type": "attribute-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
@@ -900,9 +900,9 @@
                 }
               ]
             },
-            "arguments": [],
             "extAttrs": [],
             "special": "",
+            "readonly": true,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mloperand-shape"
           }
         ],
@@ -11944,7 +11944,7 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSingleInputSupportLimits split;\n};",
+          "fragment": "partial dictionary MLOpSupportLimits {\n  MLSplitSupportLimits split;\n};",
           "type": "dictionary",
           "name": "MLOpSupportLimits",
           "inheritance": null,
@@ -11959,7 +11959,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "MLSingleInputSupportLimits"
+                "idlType": "MLSplitSupportLimits"
               },
               "default": null,
               "required": false,
@@ -12137,6 +12137,7 @@
         "MLLstmSupportLimits",
         "MLLstmCellSupportLimits",
         "MLPreluSupportLimits",
+        "MLSplitSupportLimits",
         "MLWhereSupportLimits"
       ],
       "MLSupportLimits": [

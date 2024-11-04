@@ -77,6 +77,11 @@ interface mixin GlobalEventHandlers {
   attribute EventHandler onwheel;
 };
 
+// Source: Fenced Frame (https://wicg.github.io/fenced-frame/)
+partial interface mixin GlobalEventHandlers {
+  attribute EventHandler onfencedtreeclick;
+};
+
 // Source: CSS Animations Level 1 (https://www.w3.org/TR/css-animations-1/)
 partial interface mixin GlobalEventHandlers {
   attribute EventHandler onanimationstart;

@@ -145,32 +145,53 @@
               "html": "<p>Let <var>v</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p①\">Get</a>(<var>o</var>, <var>componentName</var>).</p>"
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types\">func</a> <var>functype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types\">func</a> <var>functype</var>,",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable\">IsCallable</a>(<var>v</var>) is false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror\">LinkError</a></code> exception.</p>"
+                  "html": "If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable\">IsCallable</a>(<var>v</var>) is true,",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>v</var> has a [[FunctionAddress]] internal slot, and therefore is an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exported-function\" id=\"ref-for-exported-function①\">Exported Function</a>,",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>funcaddr</var> be the value of <var>v</var>’s [[FunctionAddress]] internal slot.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "Otherwise,",
+                      "rationale": "create",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#create-a-host-function\" id=\"ref-for-create-a-host-function\">Create a host function</a> from <var>v</var> and <var>functype</var>, and let <var>funcaddr</var> be the result.</p>"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "html": "If <var>v</var> has a [[FunctionAddress]] internal slot, and therefore is an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exported-function\" id=\"ref-for-exported-function①\">Exported Function</a>,",
+                  "html": "Otherwise, if <var>v</var> has a [[WrappedFunction]] internal slot,",
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>funcaddr</var> be the value of <var>v</var>’s [[FunctionAddress]] internal slot.</p>"
+                      "html": "<p>Let <var>func</var> be the value of <var>v</var>’s [[WrappedFunction]] internal slot.</p>"
+                    },
+                    {
+                      "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable①\">IsCallable</a>(<var>func</var>) is true.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#create-a-suspending-function\" id=\"ref-for-create-a-suspending-function\">create a suspending function</a> from <var>func</var> and <var>functype</var>, and let <var>funcaddr</var> be the result.</p>"
                     }
                   ]
                 },
                 {
-                  "html": "Otherwise,",
-                  "rationale": "create",
-                  "steps": [
-                    {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#create-a-host-function\" id=\"ref-for-create-a-host-function\">Create a host function</a> from <var>v</var> and <var>functype</var>, and let <var>funcaddr</var> be the result.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>index</var> be the number of external functions in <var>imports</var>. This value <var>index</var> is known as the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-of-the-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index of the host function</dfn> <var>funcaddr</var>.</p>"
-                    }
-                  ]
+                  "html": "<p>Otherwise, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror\">LinkError</a></code> exception.</p>"
+                },
+                {
+                  "html": "<p>Let <var>index</var> be the number of external functions in <var>imports</var>. This value <var>index</var> is known as the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-of-the-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index of the host function</dfn> <var>funcaddr</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>externfunc</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①\">func</a> <var>funcaddr</var>.</p>"
@@ -181,7 +202,7 @@
               ]
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types①\">global</a> <var>mut</var> <var>valtype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types\">global</a> <var>mut</var> <var>valtype</var>,",
               "rationale": "if",
               "steps": [
                 {
@@ -247,7 +268,7 @@
               ]
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types②\">mem</a> <var>memtype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types①\">mem</a> <var>memtype</var>,",
               "rationale": "if",
               "steps": [
                 {
@@ -262,7 +283,7 @@
               ]
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types③\">table</a> <var>tabletype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types②\">table</a> <var>tabletype</var>,",
               "rationale": "if",
               "steps": [
                 {
@@ -280,7 +301,7 @@
               ]
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types④\">tag</a> <var>attribute</var> <var>functype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types③\">tag</a> <var>attribute</var> <var>functype</var>,",
               "rationale": "assert",
               "steps": [
                 {
@@ -327,7 +348,7 @@
               "html": "<p class=\"assertion\">Assert: <var>externval</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑥\">error</a>.</p>"
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types⑤\">func</a> <var>functype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types④\">func</a> <var>functype</var>,",
               "rationale": "assert",
               "steps": [
                 {
@@ -345,7 +366,7 @@
               ]
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types⑥\">global</a> <var>mut</var> <var>globaltype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types⑤\">global</a> <var>mut</var> <var>globaltype</var>,",
               "rationale": "assert",
               "steps": [
                 {
@@ -363,7 +384,7 @@
               ]
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types⑦\">mem</a> <var>memtype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types⑥\">mem</a> <var>memtype</var>,",
               "rationale": "assert",
               "steps": [
                 {
@@ -381,7 +402,7 @@
               ]
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types⑧\">table</a> <var>tabletype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types⑦\">table</a> <var>tabletype</var>,",
               "rationale": "assert",
               "steps": [
                 {
@@ -399,7 +420,7 @@
               ]
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types⑨\">tag</a> <var>attribute</var> <var>functype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types⑧\">tag</a> <var>attribute</var> <var>functype</var>,",
               "rationale": "assert",
               "steps": [
                 {
@@ -1025,7 +1046,7 @@
               "html": "<p>Let <var>frame</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/conventions.html#exec-notation-textual\" id=\"ref-for-exec-notation-textual\">current frame</a>.</p>"
             },
             {
-              "html": "<p class=\"assertion\">Assert: due to validation, <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst\">memaddrs</a>[0] exists.</p>"
+              "html": "<p class=\"assertion\">Assert: Due to validation, <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst\">memaddrs</a>[0] exists.</p>"
             },
             {
               "html": "<p>Let <var>memaddr</var> be the memory address <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame①\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst①\">memaddrs</a>[0].</p>"
@@ -1710,7 +1731,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p class=\"assertion\">Assert: <var>hostfunc</var> is a JavaScript object and <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable①\">IsCallable</a>(<var>hostfunc</var>) is true.</p>"
+              "html": "<p class=\"assertion\">Assert: <var>hostfunc</var> is a JavaScript object and <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable②\">IsCallable</a>(<var>hostfunc</var>) is true.</p>"
             },
             {
               "html": "<p>Let <var>index</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#index-of-the-host-function\" id=\"ref-for-index-of-the-host-function\">index of the host function</a> <var>funcaddr</var>.</p>"
@@ -1756,7 +1777,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>steps</var> be \"<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#call-an-exported-function\" id=\"ref-for-call-an-exported-function\">call the Exported Function</a> <var>funcaddr</var> with arguments.\"</p>"
+          "html": "<p>Let <var>steps</var> be \"<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#call-an-exported-function\" id=\"ref-for-call-an-exported-function\">call the Exported Function</a> <var>funcaddr</var> with arguments.\".</p>"
         },
         {
           "html": "<p>Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#current-realm\" id=\"ref-for-current-realm\">current Realm</a>.</p>"
@@ -1791,22 +1812,16 @@
       ]
     },
     {
-      "name": "call an Exported Function",
-      "href": "https://webassembly.github.io/js-promise-integration/js-api/#call-an-exported-function",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"call-an-exported-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call an Exported Function</dfn> with <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-funcaddr\" id=\"ref-for-syntax-funcaddr③\">function address</a> <var>funcaddr</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of JavaScript arguments <var>argValues</var>, perform the following steps:",
+      "name": "coerce JavaScript arguments",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#coerce-javascript-arguments",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"coerce-javascript-arguments\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">coerce JavaScript arguments</dfn> from a <var>functype</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of JavaScript arguments <var>argValues</var>, perform the following steps",
       "rationale": ".algorithm",
       "steps": [
-        {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⓪\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②⑥\">associated store</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>functype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-type\" id=\"ref-for-embed-func-type①\">func_type</a>(<var>store</var>, <var>funcaddr</var>).</p>"
-        },
         {
           "html": "<p>Let [<var>parameters</var>] → [<var>results</var>] be <var>functype</var>.</p>"
         },
         {
-          "html": "<p>If <var>parameters</var> or <var>results</var> contain <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types⑤\">v128</a> or <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype⑨\">exnref</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①②\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>parameters</var> or <var>results</var> contain <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types⑤\">v128</a> or <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype⑨\">exnref</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①②\">TypeError</a></code>.\nNote: the above error is thrown each time the [[Call]] method is invoked.</p>"
         },
         {
           "html": "<p>Let <var>args</var> be « ».</p>"
@@ -1833,6 +1848,26 @@
           ]
         },
         {
+          "html": "<p>return <var>args</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "call an Exported Function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#call-an-exported-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"call-an-exported-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">call an Exported Function</dfn> with <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-funcaddr\" id=\"ref-for-syntax-funcaddr③\">function address</a> <var>funcaddr</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of JavaScript arguments <var>argValues</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⓪\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②⑥\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>functype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-type\" id=\"ref-for-embed-func-type①\">func_type</a>(<var>store</var>, <var>funcaddr</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>args</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#coerce-javascript-arguments\" id=\"ref-for-coerce-javascript-arguments\">coercing arguments</a> (<var>functype</var>,<var>argValues</var>).</p>"
+        },
+        {
           "html": "<p>Let (<var>store</var>, <var>ret</var>) be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-invoke\" id=\"ref-for-embed-func-invoke\">func_invoke</a>(<var>store</var>, <var>funcaddr</var>, <var>args</var>).</p>"
         },
         {
@@ -1842,7 +1877,7 @@
           "html": "<p>If <var>ret</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⑧\">error</a>, throw an exception. This exception should be a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①\">RuntimeError</a></code> exception, unless otherwise indicated by <a href=\"https://webassembly.github.io/js-promise-integration/js-api/#errors\">the WebAssembly error mapping</a>.</p>"
         },
         {
-          "html": "If <var>ret</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">THROW</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①\">ref.exn</a> <var>exnaddr</var>, then",
+          "html": "If <var>ret</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">THROW</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①\">ref.exn</a> <var>exnaddr</var>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -1910,16 +1945,13 @@
       ]
     },
     {
-      "name": "run a host function",
-      "href": "https://webassembly.github.io/js-promise-integration/js-api/#run-a-host-function",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-a-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run a host function</dfn> from the JavaScript object <var>func</var>, type <var>functype</var>, and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②\">WebAssembly values</a> <var>arguments</var>, perform the following steps:",
+      "name": "coerce WebAssembly arguments",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#coerce-webassembly-arguments",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"coerce-webassembly-arguments\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">coerce WebAssembly arguments</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of <var>parameterTypes</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a> of JavaScript arguments <var>arguments</var>, perform the following steps",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let [<var>parameters</var>] → [<var>results</var>] be <var>functype</var>.</p>"
-        },
-        {
-          "html": "<p>If <var>parameters</var> or <var>results</var> contain <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types⑥\">v128</a> or <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⓪\">exnref</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①③\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>parameterTypes</var> contain <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types⑥\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①③\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>jsArguments</var> be « ».</p>"
@@ -1934,8 +1966,16 @@
           ]
         },
         {
-          "html": "<p>Let <var>ret</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call\">Call</a>(<var>func</var>, undefined, <var>jsArguments</var>).</p>"
-        },
+          "html": "<p>Return <var>jsArguments</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "coerce a JavaScript return",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#coerce-a-javascript-return",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"coerce-a-javascript-return\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">coerce a JavaScript return</dfn> from a JavaScript <var>ret</var> and a list of <var>results</var> types, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
         {
           "html": "<p>Let <var>resultsSize</var> be <var>results</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③\">size</a>.</p>"
         },
@@ -1943,23 +1983,23 @@
           "html": "<p>If <var>resultsSize</var> is 0, return « ».</p>"
         },
         {
-          "html": "<p>Otherwise, if <var>resultsSize</var> is 1, return « <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑤\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑧\">ToWebAssemblyValue</a>(<var>ret</var>, <var>results</var>[0]) ».</p>"
+          "html": "<p>Otherwise, if <var>resultsSize</var> is 1, return « <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①④\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑧\">ToWebAssemblyValue</a>(<var>ret</var>, <var>results</var>[0]) ».</p>"
         },
         {
           "html": "Otherwise,",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>method</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑥\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod\" id=\"ref-for-sec-getmethod\">GetMethod</a>(<var>ret</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols\">%Symbol.iterator%</a></code>).</p>"
+              "html": "<p>Let <var>method</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑤\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod\" id=\"ref-for-sec-getmethod\">GetMethod</a>(<var>ret</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols\">%Symbol.iterator%</a></code>).</p>"
             },
             {
               "html": "<p>If <var>method</var> is undefined, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①④\">TypeError</a></code>.</p>"
             },
             {
-              "html": "<p>Let <var>values</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist\" id=\"ref-for-sec-iteratortolist\">IteratorToList</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorfrommethod\" id=\"ref-for-sec-getiteratorfrommethod\">GetIteratorFromMethod</a>(<var>ret</var>, <var>method</var>)).</p>"
+              "html": "<p>Let <var>values</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑥\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist\" id=\"ref-for-sec-iteratortolist\">IteratorToList</a>(<a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorfrommethod\" id=\"ref-for-sec-getiteratorfrommethod\">GetIteratorFromMethod</a>(<var>ret</var>, <var>method</var>)).</p>"
             },
             {
-              "html": "<p>Let <var>wasmValues</var> be a new, empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
+              "html": "<p>Let <var>wasmValues</var> be a new, empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a>.</p>"
             },
             {
               "html": "<p>If <var>values</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④\">size</a> is not <var>resultsSize</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⑤\">TypeError</a></code> exception.</p>"
@@ -1981,13 +2021,51 @@
       ]
     },
     {
+      "name": "coerce a JavaScript exception",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#coerce-a-javascript-exception",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"coerce-a-javascript-exception\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">coerce a JavaScript exception</dfn> from a JavaScript exception <var>v</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>v</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements④\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exception\" id=\"ref-for-exception①\">Exception</a></code>,",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>type</var> be <var>v</var>.[[Type]].</p>"
+            },
+            {
+              "html": "<p>Let <var>payload</var> be <var>v</var>.[[Payload]].</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise,",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>type</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag\">JavaScript exception tag</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>payload</var> be « ».</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>opaqueData</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①⓪\">ToWebAssemblyValue</a>(<var>v</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⓪\">externref</a>).</p>"
+        },
+        {
+          "html": "<p>Return the triple <var>type</var>, <var>payload</var> and <var>opaqueData</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "create a host function",
       "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-host-function",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a host function</dfn> from the JavaScript object <var>func</var> and type <var>functype</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable②\">IsCallable</a>(<var>func</var>).</p>"
+          "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable③\">IsCallable</a>(<var>func</var>).</p>"
         },
         {
           "html": "<p>Let <var>stored settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#incumbent-settings-object\" id=\"ref-for-incumbent-settings-object\">incumbent settings object</a>.</p>"
@@ -2009,7 +2087,13 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#prepare-to-run-a-callback\" id=\"ref-for-prepare-to-run-a-callback\">Prepare to run a callback</a> with <var>stored settings</var>.</p>"
             },
             {
-              "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#run-a-host-function\" id=\"ref-for-run-a-host-function\">running a host function</a> from <var>func</var>, <var>functype</var>, and <var>arguments</var>.</p>"
+              "html": "<p>Let [<var>parameters</var>] → [<var>resultTypes</var>] be <var>functype</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>jsArguments</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#coerce-webassembly-arguments\" id=\"ref-for-coerce-webassembly-arguments\">coerce WebAssembly arguments</a>(<var>parameters</var>,<var>arguments</var>).</p>"
+            },
+            {
+              "html": "<p>Let <var>result</var> be the result of Completion(<a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call\">Call</a>(<var>func</var>, undefined, <var>jsArguments</var>)).</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-a-callback\" id=\"ref-for-clean-up-after-running-a-callback\">Clean up after running a callback</a> with <var>stored settings</var>.</p>"
@@ -2024,46 +2108,22 @@
               "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③②\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②⑧\">associated store</a>.</p>"
             },
             {
-              "html": "If <var>result</var>.[[Type]] is <emu-const>throw</emu-const>, then:",
-              "rationale": "let",
+              "html": "If <var>result</var>.[[Type]] is <emu-const>normal</emu-const>, then:",
+              "rationale": "return",
               "steps": [
                 {
-                  "html": "<p>Let <var>v</var> be <var>result</var>.[[Value]].</p>"
-                },
-                {
-                  "html": "If <var>v</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements④\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exception\" id=\"ref-for-exception①\">Exception</a></code>,",
-                  "rationale": "let",
-                  "steps": [
-                    {
-                      "html": "<p>Let <var>address</var> be <var>v</var>.[[Address]].</p>"
-                    }
-                  ]
-                },
-                {
-                  "html": "Otherwise,",
-                  "rationale": "let",
-                  "steps": [
-                    {
-                      "html": "<p>Let <var>type</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#get-the-javascript-exception-tag\" id=\"ref-for-get-the-javascript-exception-tag②\">getting the JavaScript exception tag</a>.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>payload</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑨\">!</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①⓪\">ToWebAssemblyValue</a>(<var>v</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①①\">externref</a>).</p>"
-                    },
-                    {
-                      "html": "<p>Let (<var>store</var>, <var>address</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-exn-alloc\" id=\"ref-for-embed-exn-alloc\">exn_alloc</a>(<var>store</var>, <var>type</var>, « <var>payload</var> »).</p>"
-                    },
-                    {
-                      "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③③\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②⑨\">associated store</a> to <var>store</var>.</p>"
-                    }
-                  ]
-                },
-                {
-                  "html": "<p>Execute the WebAssembly instructions (<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values③\">ref.exn</a> <var>address</var>) (<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/instructions.html#exec-throw-ref\" id=\"ref-for-exec-throw-ref\">throw_ref</a>).</p>"
+                  "html": "<p>Return the result of performing <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#coerce-a-javascript-return\" id=\"ref-for-coerce-a-javascript-return\">coerce a JavaScript return</a> on <var>resultTypes</var> and <var>ret</var>.</p>"
                 }
               ]
             },
             {
-              "html": "<p>Otherwise, return <var>result</var>.[[Value]].</p>"
+              "html": "If <var>result</var>.[[Type]] is <emu-const>throw</emu-const>, then:",
+              "rationale": "perform",
+              "steps": [
+                {
+                  "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#throw-a-javascript-exception\" id=\"ref-for-throw-a-javascript-exception\">throw the JavaScript exception</a> on <var>result</var>.[[Value]].</p>"
+                }
+              ]
             }
           ]
         },
@@ -2071,7 +2131,7 @@
           "html": "<p>Let (<var>store</var>, <var>funcaddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-alloc\" id=\"ref-for-embed-func-alloc\">func_alloc</a>(<var>store</var>, <var>functype</var>, <var>hostfunc</var>).</p>"
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③④\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③⓪\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③③\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store②⑨\">associated store</a> to <var>store</var>.</p>"
         },
         {
           "html": "<p>Return <var>funcaddr</var>.</p>"
@@ -2079,19 +2139,57 @@
       ]
     },
     {
-      "name": "ToJSValue",
-      "href": "https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue",
-      "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tojsvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToJSValue</dfn>(<var>w</var>) coerces a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values④\">WebAssembly value</a> to a JavaScript value by performing the following steps:",
+      "name": "throw a JavaScript exception",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#throw-a-javascript-exception",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"throw-a-javascript-exception\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">throw a JavaScript exception</dfn> from the JavaScript object <var>v</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>w</var> is not of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑤\">v128.const</a> <var>v128</var>.</p>"
+          "html": "If <var>v</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements⑤\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exception\" id=\"ref-for-exception②\">Exception</a></code>,",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>address</var> be <var>v</var>.[[Address]].</p>"
+            }
+          ]
         },
         {
-          "html": "<p class=\"assertion\">Assert: <var>w</var> is not of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑥\">ref.exn</a> <var>exnaddr</var>.</p>"
+          "html": "Otherwise,",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>type</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#get-the-javascript-exception-tag\" id=\"ref-for-get-the-javascript-exception-tag②\">getting the JavaScript exception tag</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>payload</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑧\">!</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①①\">ToWebAssemblyValue</a>(<var>v</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①①\">externref</a>).</p>"
+            },
+            {
+              "html": "<p>Let (<var>store</var>, <var>address</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-exn-alloc\" id=\"ref-for-embed-exn-alloc\">exn_alloc</a>(<var>store</var>, <var>type</var>, « <var>payload</var> »).</p>"
+            },
+            {
+              "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③④\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③⓪\">associated store</a> to <var>store</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑦\">i64.const</a> <var>u64</var>,",
+          "html": "<p>Execute the WebAssembly instructions (<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②\">ref.exn</a> <var>address</var>) (<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/instructions.html#exec-throw-ref\" id=\"ref-for-exec-throw-ref\">throw_ref</a>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "ToJSValue",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue",
+      "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tojsvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToJSValue</dfn>(<var>w</var>) coerces a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values③\">WebAssembly value</a> to a JavaScript value by performing the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <var>w</var> is not of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values④\">v128.const</a> <var>v128</var>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>w</var> is not of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑤\">ref.exn</a> <var>exnaddr</var>.</p>"
+        },
+        {
+          "html": "If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑥\">i64.const</a> <var>u64</var>,",
           "rationale": "let",
           "steps": [
             {
@@ -2103,7 +2201,7 @@
           ]
         },
         {
-          "html": "If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑧\">i32.const</a> <var>i32</var>,",
+          "html": "If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑦\">i32.const</a> <var>i32</var>,",
           "rationale": "let",
           "steps": [
             {
@@ -2115,7 +2213,7 @@
           ]
         },
         {
-          "html": "If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑨\">f32.const</a> <var>f32</var>,",
+          "html": "If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑧\">f32.const</a> <var>f32</var>,",
           "rationale": "if",
           "steps": [
             {
@@ -2130,7 +2228,7 @@
           ]
         },
         {
-          "html": "If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⓪\">f64.const</a> <var>f64</var>,",
+          "html": "If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values⑨\">f64.const</a> <var>f64</var>,",
           "rationale": "if",
           "steps": [
             {
@@ -2145,10 +2243,10 @@
           ]
         },
         {
-          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①①\">ref.null</a> <var>t</var>, return null.</p>"
+          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⓪\">ref.null</a> <var>t</var>, return null.</p>"
         },
         {
-          "html": "If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①②\">ref.i31</a> <var>u31</var>,",
+          "html": "If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①①\">ref.i31</a> <var>u31</var>,",
           "rationale": "let",
           "steps": [
             {
@@ -2160,19 +2258,19 @@
           ]
         },
         {
-          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①③\">ref.struct</a> <var>structaddr</var>, return the result of creating <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#a-new-exported-gc-object\" id=\"ref-for-a-new-exported-gc-object\">a new Exported GC Object</a> from <var>structaddr</var> and \"struct\".</p>"
+          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①②\">ref.struct</a> <var>structaddr</var>, return the result of creating <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#a-new-exported-gc-object\" id=\"ref-for-a-new-exported-gc-object\">a new Exported GC Object</a> from <var>structaddr</var> and \"struct\".</p>"
         },
         {
-          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①④\">ref.array</a> <var>arrayaddr</var>, return the result of creating <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#a-new-exported-gc-object\" id=\"ref-for-a-new-exported-gc-object①\">a new Exported GC Object</a> from <var>arrayaddr</var> and \"array\".</p>"
+          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①③\">ref.array</a> <var>arrayaddr</var>, return the result of creating <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#a-new-exported-gc-object\" id=\"ref-for-a-new-exported-gc-object①\">a new Exported GC Object</a> from <var>arrayaddr</var> and \"array\".</p>"
         },
         {
-          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑤\">ref.func</a> <var>funcaddr</var>, return the result of creating <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#a-new-exported-function\" id=\"ref-for-a-new-exported-function①\">a new Exported Function</a> from <var>funcaddr</var>.</p>"
+          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①④\">ref.func</a> <var>funcaddr</var>, return the result of creating <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#a-new-exported-function\" id=\"ref-for-a-new-exported-function①\">a new Exported Function</a> from <var>funcaddr</var>.</p>"
         },
         {
-          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">ref.host</a> <var>hostaddr</var>, return the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#retrieving-a-host-value\" id=\"ref-for-retrieving-a-host-value①\">retrieving a host value</a> from <var>hostaddr</var>.</p>"
+          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑤\">ref.host</a> <var>hostaddr</var>, return the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#retrieving-a-host-value\" id=\"ref-for-retrieving-a-host-value①\">retrieving a host value</a> from <var>hostaddr</var>.</p>"
         },
         {
-          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑦\">ref.extern</a> <var>ref</var>, return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑤\">ToJSValue</a>(<var>ref</var>).</p>"
+          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑥\">ref.extern</a> <var>ref</var>, return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑤\">ToJSValue</a>(<var>ref</var>).</p>"
         }
       ]
     },
@@ -2196,7 +2294,7 @@
     {
       "name": "ToWebAssemblyValue",
       "href": "https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue",
-      "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑧\">WebAssembly value</a> by performing the following steps:",
+      "html": "The algorithm <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"towebassemblyvalue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">ToWebAssemblyValue</dfn>(<var>v</var>, <var>type</var>) coerces a JavaScript value to a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑦\">WebAssembly value</a> by performing the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2210,13 +2308,13 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>i64</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tobigint64\" id=\"ref-for-sec-tobigint64\">ToBigInt64</a>(<var>v</var>).</p>"
+              "html": "<p>Let <var>i64</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑨\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tobigint64\" id=\"ref-for-sec-tobigint64\">ToBigInt64</a>(<var>v</var>).</p>"
             },
             {
               "html": "<p>Let <var>u64</var> be the unsigned integer such that <var>i64</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/numerics.html#aux-signed\" id=\"ref-for-aux-signed③\">signed_64</a>(<var>u64</var>).</p>"
             },
             {
-              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑨\">i64.const</a> <var>u64</var>.</p>"
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑧\">i64.const</a> <var>u64</var>.</p>"
             }
           ]
         },
@@ -2225,13 +2323,13 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>i32</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32\">ToInt32</a>(<var>v</var>).</p>"
+              "html": "<p>Let <var>i32</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32\">ToInt32</a>(<var>v</var>).</p>"
             },
             {
               "html": "<p>Let <var>u32</var> be the unsigned integer such that <var>i32</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/numerics.html#aux-signed\" id=\"ref-for-aux-signed④\">signed_32</a>(<var>u32</var>).</p>"
             },
             {
-              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⓪\">i32.const</a> <var>u32</var>.</p>"
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①⑨\">i32.const</a> <var>u32</var>.</p>"
             }
           ]
         },
@@ -2240,7 +2338,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>number</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②②\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber\" id=\"ref-for-sec-tonumber\">ToNumber</a>(<var>v</var>).</p>"
+              "html": "<p>Let <var>number</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber\" id=\"ref-for-sec-tonumber\">ToNumber</a>(<var>v</var>).</p>"
             },
             {
               "html": "If <var>number</var> is <strong>NaN</strong>,",
@@ -2255,16 +2353,10 @@
               ]
             },
             {
-              "html": "Otherwise,",
-              "rationale": "let",
-              "steps": [
-                {
-                  "html": "<p>Let <var>f32</var> be <var>number</var> rounded to the nearest representable value using IEEE 754-2008 round to nearest, ties to even mode. <a data-link-type=\"biblio\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#biblio-ieee-754\" title=\"IEEE Standard for Floating-Point Arithmetic\">[IEEE-754]</a></p>"
-                }
-              ]
+              "html": "<p>Otherwise,\n\\1.</p>"
             },
             {
-              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②①\">f32.const</a> <var>f32</var>.</p>"
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⓪\">f32.const</a> <var>f32</var>.</p>"
             }
           ]
         },
@@ -2273,7 +2365,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>number</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②③\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber\" id=\"ref-for-sec-tonumber①\">ToNumber</a>(<var>v</var>).</p>"
+              "html": "<p>Let <var>number</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②②\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber\" id=\"ref-for-sec-tonumber①\">ToNumber</a>(<var>v</var>).</p>"
             },
             {
               "html": "If <var>number</var> is <strong>NaN</strong>,",
@@ -2297,7 +2389,7 @@
               ]
             },
             {
-              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②②\">f64.const</a> <var>f64</var>.</p>"
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②①\">f64.const</a> <var>f64</var>.</p>"
             }
           ]
         },
@@ -2310,46 +2402,46 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②③\">ref.null</a> <var>heaptype</var>.</p>"
+                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②②\">ref.null</a> <var>heaptype</var>.</p>"
                 }
               ]
             },
             {
-              "html": "Else if <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①④\">ref</a> <var>null</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types\">extern</a>),",
+              "html": "Else if <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①④\">ref</a> <var>null</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types①\">extern</a>),",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①①\">ToWebAssemblyValue</a>(<var>v</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⑤\">ref</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types①\">any</a>).</p>"
+                  "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①②\">ToWebAssemblyValue</a>(<var>v</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⑤\">ref</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types②\">any</a>).</p>"
                 },
                 {
-                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②④\">ref.extern</a> <var>ref</var>.</p>"
+                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②③\">ref.extern</a> <var>ref</var>.</p>"
                 }
               ]
             },
             {
-              "html": "Else if <var>v</var> is an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exported-function\" id=\"ref-for-exported-function②\">Exported Function</a> and <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype①\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⑥\">ref</a> <var>null</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types②\">func</a>),",
+              "html": "Else if <var>v</var> is an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exported-function\" id=\"ref-for-exported-function②\">Exported Function</a> and <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype①\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⑥\">ref</a> <var>null</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types③\">func</a>),",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>funcaddr</var> be the value of <var>v</var>’s [[FunctionAddress]] internal slot.</p>"
                 },
                 {
-                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑤\">ref.func</a> <var>funcaddr</var>.</p>"
+                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②④\">ref.func</a> <var>funcaddr</var>.</p>"
                 }
               ]
             },
             {
-              "html": "Else if <var>v</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-language-types-number-type\" id=\"ref-for-sec-ecmascript-language-types-number-type\">is a Number</a> and <var>v</var> is equal to <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32①\">ToInt32</a>(<var>v</var>) and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#ℝ\" id=\"ref-for-ℝ\">ℝ</a>(<var>v</var>) &lt; 2<sup>30</sup> and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#ℝ\" id=\"ref-for-ℝ①\">ℝ</a>(<var>v</var>) ⩾ -2<sup>30</sup>,",
+              "html": "Else if <var>v</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-language-types-number-type\" id=\"ref-for-sec-ecmascript-language-types-number-type\">is a Number</a> and <var>v</var> is equal to <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②③\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32①\">ToInt32</a>(<var>v</var>) and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#ℝ\" id=\"ref-for-ℝ\">ℝ</a>(<var>v</var>) &lt; 2<sup>30</sup> and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#ℝ\" id=\"ref-for-ℝ①\">ℝ</a>(<var>v</var>) ⩾ -2<sup>30</sup>,",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>i31</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑤\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32②\">ToInt32</a>(<var>v</var>).</p>"
+                  "html": "<p>Let <var>i31</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32②\">ToInt32</a>(<var>v</var>).</p>"
                 },
                 {
                   "html": "<p>Let <var>u31</var> be the unsigned integer such that <var>i31</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/numerics.html#aux-signed\" id=\"ref-for-aux-signed⑤\">signed_31</a>(<var>i31</var>).</p>"
                 },
                 {
-                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑥\">ref.i31</a> <var>u31</var>.</p>"
+                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑤\">ref.i31</a> <var>u31</var>.</p>"
                 }
               ]
             },
@@ -2368,7 +2460,7 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑦\">ref.array</a> <var>objectaddr</var>.</p>"
+                      "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑥\">ref.array</a> <var>objectaddr</var>.</p>"
                     }
                   ]
                 },
@@ -2377,7 +2469,7 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑧\">ref.struct</a> <var>objectaddr</var>.</p>"
+                      "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑦\">ref.struct</a> <var>objectaddr</var>.</p>"
                     }
                   ]
                 }
@@ -2395,7 +2487,7 @@
                   "rationale": "return",
                   "steps": [
                     {
-                      "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑨\">ref.host</a> <var>hostaddr</var>.</p>"
+                      "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑧\">ref.host</a> <var>hostaddr</var>.</p>"
                     }
                   ]
                 },
@@ -2406,7 +2498,7 @@
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">Set</a> <var>map</var>[<var>hostaddr</var>] to <var>v</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values③⓪\">ref.host</a> <var>hostaddr</var>.</p>"
+                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑨\">ref.host</a> <var>hostaddr</var>.</p>"
                 }
               ]
             },
@@ -2436,13 +2528,317 @@
       ]
     },
     {
+      "name": "WebAssembly/promising(wasmFunc)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-webassembly-promising",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebAssembly\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webassembly-promising\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>promising(<var>wasmFunc</var>)</code></dfn> function, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable④\">IsCallable</a>(<var>wasmFunc</var>) is false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⑦\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>wasmFunc</var> does not have a [[FunctionAddress]] internal slot, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⑧\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>builder</var> be a new <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-abstract-closure\" id=\"ref-for-sec-abstract-closure\">AbstractClosure</a> with no parameters that captures <var>wasmFunc</var> and performs <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#run-a-promising-function\" id=\"ref-for-run-a-promising-function\">run a Promising function</a> when called.</p>"
+        },
+        {
+          "html": "<p>Returns the result of <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①\">CreateBuiltinFunction</a>(<var>builder</var>,1,\"\", « »).</p>"
+        }
+      ]
+    },
+    {
+      "name": "run a Promising function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#run-a-promising-function",
+      "html": "The algorithm to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-a-promising-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run a Promising function</dfn> from the JavaScript object <var>wasmFunc</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a> of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values③⓪\">WebAssembly values</a> <var>arguments</var> consists of the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be a new <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-promisecapability-records\" id=\"ref-for-sec-promisecapability-records\">PromiseCapabilityRecord</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>funcaddr</var> be the value of <var>wasmFunc</var>’s [[FunctionAddress]] internal slot.</p>"
+        },
+        {
+          "html": "Let <var>runner</var> be a new <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-abstract-closure\" id=\"ref-for-sec-abstract-closure①\">AbstractClosure</a> with no parameters that captures <var>promise</var>, <var>funcaddr</var>, and <var>arguments</var> and performs the following steps when called:",
+          "rationale": "perform",
+          "steps": [
+            {
+              "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#evaluate-a-promising-function\" id=\"ref-for-evaluate-a-promising-function\">evaluate a Promising function</a>(<var>promise</var>,<var>funcaddr</var>,<var>arguments</var>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑤\">?</a><a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-functions-abstract-operations-async-function-start\" id=\"ref-for-sec-async-functions-abstract-operations-async-function-start\">AsyncFunctionStart</a>(<var>promise</var>,<var>runner</var>).</p>"
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "evaluate a Promising function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#evaluate-a-promising-function",
+      "html": "The algorithm to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"evaluate-a-promising-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">evaluate a Promising function</dfn>(<var>promise</var>, <var>funcaddr</var>, <var>arguments</var>) consists of the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑦\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③②\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>functype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-type\" id=\"ref-for-embed-func-type②\">func_type</a>(<var>store</var>, <var>funcaddr</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>args</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#coerce-javascript-arguments\" id=\"ref-for-coerce-javascript-arguments①\">coercing arguments</a> (<var>functype</var>,<var>arguments</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑧\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#execution-context-status-map\" id=\"ref-for-execution-context-status-map①\">Execution Context Status map</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>ec</var> be the currently executing <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-execution-contexts\" id=\"ref-for-sec-execution-contexts②\">execution context</a>, i.e., the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-execution-contexts\" id=\"ref-for-sec-execution-contexts③\">execution context</a> that is at the top of the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑨\">surrounding agent</a>'s current <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#execution-context-stack\" id=\"ref-for-execution-context-stack\">execution context stack</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>map</var> does not contain any entry for <var>ec</var>.</p>"
+        },
+        {
+          "html": "<p>Add an entry mapping <var>ec</var> to <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#active\" id=\"ref-for-active\">active</a> in <var>map</var>.</p>"
+        },
+        {
+          "html": "<p>Let (<var>store</var>, <var>result</var>) be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-invoke\" id=\"ref-for-embed-func-invoke①\">func_invoke</a>(<var>store</var>, <var>funcaddr</var>, <var>args</var>).</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: If control reaches here, we have done waiting for suspended imports.</p>"
+        },
+        {
+          "html": "<p>If the entry for <var>ec</var> in <var>map</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#active\" id=\"ref-for-active①\">active</a> then throw a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror②\">RuntimeError</a></code> exception. Otherwise, remove the entry for <var>ec</var> from <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②\">map</a>.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⓪\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③③\">associated store</a> to <var>store</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⑨\">error</a>, throw a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror③\">RuntimeError</a></code> exception, unless otherwise indicated by <a href=\"https://webassembly.github.io/js-promise-integration/js-api/#errors\">the WebAssembly error mapping</a>.</p>"
+        },
+        {
+          "html": "Otherwise, if <var>result</var> is of the form <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> exnaddr,",
+          "rationale": "reject",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">Reject</a> <var>promise</var> with <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise,",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<p class=\"assertion\">Assert: <var>result</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a> of WebAssembly values.</p>"
+            },
+            {
+              "html": "<p>Let <var>outArity</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤\">size</a> of <var>result</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>outArity</var> is 0, return undefined.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if <var>outArity</var> is 1, let <var>jsReturnValue</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑥\">ToJSValue</a>(<var>result</var>[0]).</p>"
+            },
+            {
+              "html": "Otherwise,",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>values</var> be « ».</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>r</var> of <var>result</var>,</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①②\">Append</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑦\">ToJSValue</a>(<var>r</var>) to <var>values</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>jsReturnValue</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createarrayfromlist\" id=\"ref-for-sec-createarrayfromlist①\">CreateArrayFromList</a>(<var>values</var>).</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">Resolve</a> <var>promise</var> with <var>jsReturnValue</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return UNUSED.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Suspending/Suspending(jsFun)",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#dom-suspending-suspending",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Suspending\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"Suspending(jsFun)|constructor(jsFun)\" id=\"dom-suspending-suspending\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>Suspending(<var>jsFun</var>)</code></dfn> constructor, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable⑤\">IsCallable</a>(<var>jsFun</var>) is false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⑨\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>suspendingProto</var> be \\[[%WebAssembly.Suspending.prototype%]].</p>"
+        },
+        {
+          "html": "<p>Let <var>susp</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate①\">OrdinaryObjectCreate</a>(<var>suspendingProto</var>,«[[WrappedFunction]]»).</p>"
+        },
+        {
+          "html": "<p>Set <var>susp</var>.[[WrappedFunction]] to <var>jsFun</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>susp</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a suspending function",
+      "href": "https://webassembly.github.io/js-promise-integration/js-api/#create-a-suspending-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-suspending-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a suspending function</dfn> from a JavaScript function <var>func</var>, with type <var>functype</var> perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable⑥\">IsCallable</a>(<var>func</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>stored settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#incumbent-settings-object\" id=\"ref-for-incumbent-settings-object①\">incumbent settings object</a>.</p>"
+        },
+        {
+          "html": "Let <var>hostfunc</var> be a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostfunc\" id=\"ref-for-syntax-hostfunc①\">host function</a> which performs the following steps when called with arguments <var>arguments</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>realm</var> be <var>func</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-associated-realm\" id=\"ref-for-dfn-associated-realm①\">associated Realm</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>relevant settings</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object①\">settings object</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>async_context</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④①\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#running-execution-context\" id=\"ref-for-running-execution-context\">running execution context</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④②\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#execution-context-status-map\" id=\"ref-for-execution-context-status-map②\">Execution Context Status map</a>.</p>"
+            },
+            {
+              "html": "If the entry for <var>async_context</var> in <var>map</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#active\" id=\"ref-for-active②\">active</a>, then:",
+              "rationale": "perform",
+              "steps": [
+                {
+                  "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#throw-a-javascript-exception\" id=\"ref-for-throw-a-javascript-exception①\">throw a JavaScript exception</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror④\">RuntimeError</a></code> exception.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#prepare-to-run-script\" id=\"ref-for-prepare-to-run-script①\">Prepare to run script</a> with <var>relevant settings</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#prepare-to-run-a-callback\" id=\"ref-for-prepare-to-run-a-callback①\">Prepare to run a callback</a> with <var>stored settings</var>.</p>"
+            },
+            {
+              "html": "<p>Let [<var>parameters</var>] → [<var>resultTypes</var>] be <var>functype</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>jsArguments</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#coerce-webassembly-arguments\" id=\"ref-for-coerce-webassembly-arguments①\">coerce WebAssembly arguments</a>(<var>parameters</var>,<var>arguments</var>).</p>"
+            },
+            {
+              "html": "<p>Let <var>ret</var> be <a data-link-type=\"abstract-op\">Completion</a>(<a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call①\">Call</a>(<var>func</var>, undefined, <var>jsArguments</var>)).</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-a-callback\" id=\"ref-for-clean-up-after-running-a-callback①\">Clean up after running a callback</a> with <var>stored settings</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-script\" id=\"ref-for-clean-up-after-running-script①\">Clean up after running script</a> with <var>relevant settings</var>.</p>"
+            },
+            {
+              "html": "<p class=\"assertion\">Assert: <var>ret</var>.[[Type]] is <emu-const>throw</emu-const> or <emu-const>normal</emu-const>.</p>"
+            },
+            {
+              "html": "If <var>ret</var>.[[Type]] is <emu-const>throw</emu-const>, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>type</var>, <var>payload</var> and <var>opaqueData</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#coerce-a-javascript-exception\" id=\"ref-for-coerce-a-javascript-exception\">coercing the JavaScript exception</a> <var>ret</var>.[[Value]].</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\">Throw</a> with <var>type</var>, <var>payload</var> and <var>opaqueData</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, if <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑥\">size</a> of <var>ret</var> is 1 and <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-ispromise\" id=\"ref-for-sec-ispromise\">IsPromise</a>(<var>ret</var>.[[Value]][0]):",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>promise</var> be <var>ret</var>.[[Value]][0].</p>"
+                },
+                {
+                  "html": "<p>Set the entry for <var>async_context</var> in <var>map</var> to <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#paused\" id=\"ref-for-paused②\">paused</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>awaitResult</var> be the result of performing <a data-link-type=\"abstract-op\">Completion</a>(<a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#await\" id=\"ref-for-await\">Await</a>(<var>promise</var>)).</p>"
+                },
+                {
+                  "html": ""
+                },
+                {
+                  "html": ""
+                },
+                {
+                  "html": "If the entry for <var>async_context</var> in <var>map</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#paused\" id=\"ref-for-paused③\">paused</a> then:",
+                  "rationale": "perform",
+                  "steps": [
+                    {
+                      "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#throw-a-javascript-exception\" id=\"ref-for-throw-a-javascript-exception②\">throw a JavaScript exception</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑤\">RuntimeError</a></code>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Otherwise, set the entry to <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#active\" id=\"ref-for-active③\">active</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>awaitResult</var>.[[Type]] is <emu-const>throw</emu-const>, then:</p>"
+                },
+                {
+                  "html": "<p>Let <var>type</var>, <var>payload</var> and <var>opaqueData</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#coerce-a-javascript-exception\" id=\"ref-for-coerce-a-javascript-exception①\">coercing the JavaScript exception</a> <var>ret</var>.[[Value]].</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\">Throw</a> with <var>type</var>, <var>payload</var> and <var>opaqueData</var>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, return the result of performing <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#coerce-a-javascript-return\" id=\"ref-for-coerce-a-javascript-return①\">coerce a JavaScript return</a> on <var>resultTypes</var> and <var>awaitResult</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, return the result of performing <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#coerce-a-javascript-return\" id=\"ref-for-coerce-a-javascript-return②\">coerce a JavaScript return</a> on <var>resultTypes</var> and <var>ret</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④③\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③④\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let (<var>store</var>, <var>funcaddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-alloc\" id=\"ref-for-embed-func-alloc①\">func_alloc</a>(<var>store</var>, <var>functype</var>, <var>hostfunc</var>).</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④④\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③⑤\">associated store</a> to <var>store</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>funcaddr</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "initialize a Tag object",
       "href": "https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-tag-object",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-a-tag-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize a Tag object</dfn> <var>tag</var> from a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-tagaddr\" id=\"ref-for-syntax-tagaddr③\">tag address</a> <var>tagAddress</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑦\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tag-object-cache\" id=\"ref-for-tag-object-cache\">Tag object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑤\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tag-object-cache\" id=\"ref-for-tag-object-cache\">Tag object cache</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>map</var>[<var>tagAddress</var>] doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exist</a>.</p>"
@@ -2462,7 +2858,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑧\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tag-object-cache\" id=\"ref-for-tag-object-cache①\">Tag object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑥\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tag-object-cache\" id=\"ref-for-tag-object-cache①\">Tag object cache</a>.</p>"
         },
         {
           "html": "If <var>map</var>[<var>tagAddress</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>,",
@@ -2497,22 +2893,22 @@
           "html": "<p>Let <var>wasmParameters</var> be «».</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>type</var> of <var>parameters</var>,",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>type</var> of <var>parameters</var>,",
           "rationale": "append",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①②\">Append</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tovaluetype\" id=\"ref-for-tovaluetype②\">ToValueType</a>(<var>type</var>) to <var>wasmParameters</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①③\">Append</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tovaluetype\" id=\"ref-for-tovaluetype②\">ToValueType</a>(<var>type</var>) to <var>wasmParameters</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>store</var> be the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③②\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③⑥\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let (<var>store</var>, <var>tagAddress</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tag_alloc\" id=\"ref-for-tag_alloc\">tag_alloc</a>(<var>store</var>, <var>wasmParameters</var>).</p>"
         },
         {
-          "html": "<p>Set the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③③\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③⑦\">associated store</a> to <var>store</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#initialize-a-tag-object\" id=\"ref-for-initialize-a-tag-object①\">Initialize</a> <strong>this</strong> from <var>tagAddress</var>.</p>"
@@ -2614,7 +3010,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⑦\">TypeError</a></code>.</p>"
+          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②⓪\">TypeError</a></code>.</p>"
         }
       ]
     },
@@ -2625,7 +3021,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⑧\">TypeError</a></code>.</p>"
+          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②①\">TypeError</a></code>.</p>"
         }
       ]
     },
@@ -2653,7 +3049,7 @@
           "html": "<p class=\"assertion\">Assert: <var>objectkind</var> is either \"array\" or \"struct\".</p>"
         },
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⓪\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exported-gc-object-cache\" id=\"ref-for-exported-gc-object-cache\">exported GC object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑧\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exported-gc-object-cache\" id=\"ref-for-exported-gc-object-cache\">exported GC object cache</a>.</p>"
         },
         {
           "html": "If <var>map</var>[<var>objectaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a>,",
@@ -2721,7 +3117,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④①\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exception-object-cache\" id=\"ref-for-exception-object-cache\">Exception object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑨\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exception-object-cache\" id=\"ref-for-exception-object-cache\">Exception object cache</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>map</var>[<var>exnAddress</var>] doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exist</a>.</p>"
@@ -2733,7 +3129,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑦\">Set</a> <var>map</var>[<var>exnAddress</var>] to <var>exn</var>.</p>"
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④②\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③⑤\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⓪\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③⑨\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let <var>tagaddr</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-exn-tag\" id=\"ref-for-embed-exn-tag①\">exn_tag</a>(<var>store</var>, <var>exnAddress</var>).</p>"
@@ -2759,7 +3155,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④③\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exception-object-cache\" id=\"ref-for-exception-object-cache①\">Exception object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤①\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exception-object-cache\" id=\"ref-for-exception-object-cache①\">Exception object cache</a>.</p>"
         },
         {
           "html": "If <var>map</var>[<var>exnAddress</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exists</a>,",
@@ -2771,7 +3167,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>exn</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑤\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exception\" id=\"ref-for-exception③\">Exception</a></code>.</p>"
+          "html": "<p>Let <var>exn</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑤\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#exception\" id=\"ref-for-exception④\">Exception</a></code>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#initialize-an-exception-object\" id=\"ref-for-initialize-an-exception-object\">Initialize</a> <var>exn</var> from <var>exnAddress</var>.</p>"
@@ -2795,22 +3191,22 @@
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⑨\">TypeError</a></code>.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②②\">TypeError</a></code>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④④\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③⑥\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤②\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store④⓪\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let [<var>types</var>] → [] be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-tag-type\" id=\"ref-for-embed-tag-type\">tag_type</a>(<var>store</var>, <var>exceptionTag</var>.[[Address]]).</p>"
         },
         {
-          "html": "If <var>types</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤\">size</a> is not <var>payload</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑥\">size</a>,",
+          "html": "If <var>types</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑦\">size</a> is not <var>payload</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑧\">size</a>,",
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②⓪\">TypeError</a></code>.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②③\">TypeError</a></code>.</p>"
             }
           ]
         },
@@ -2818,7 +3214,7 @@
           "html": "<p>Let <var>wasmPayload</var> be « ».</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>value</var> and <var>resultType</var> of <var>payload</var> and <var>types</var>, paired linearly,",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>value</var> and <var>resultType</var> of <var>payload</var> and <var>types</var>, paired linearly,",
           "rationale": "if",
           "steps": [
             {
@@ -2826,20 +3222,20 @@
               "rationale": "throw",
               "steps": [
                 {
-                  "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②①\">TypeError</a></code>.</p>"
+                  "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②④\">TypeError</a></code>.</p>"
                 }
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①③\">Append</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑥\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①②\">ToWebAssemblyValue</a>(<var>value</var>, <var>resultType</var>) to <var>wasmPayload</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①④\">Append</a> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑥\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①③\">ToWebAssemblyValue</a>(<var>value</var>, <var>resultType</var>) to <var>wasmPayload</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let (<var>store</var>, <var>exceptionAddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-exn-alloc\" id=\"ref-for-embed-exn-alloc①\">exn_alloc</a>(<var>store</var>, <var>exceptionTag</var>.[[Address]], <var>wasmPayload</var>)</p>"
+          "html": "<p>Let (<var>store</var>, <var>exceptionAddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-exn-alloc\" id=\"ref-for-embed-exn-alloc①\">exn_alloc</a>(<var>store</var>, <var>exceptionTag</var>.[[Address]], <var>wasmPayload</var>).</p>"
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑤\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③⑦\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤③\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store④①\">associated store</a> to <var>store</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#initialize-an-exception-object\" id=\"ref-for-initialize-an-exception-object①\">Initialize</a> <strong>this</strong> from <var>exceptionAddr</var>.</p>"
@@ -2862,7 +3258,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑥\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store③⑧\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤④\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store④②\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let <var>tagaddr</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-exn-tag\" id=\"ref-for-embed-exn-tag②\">exn_tag</a>(<var>store</var>, <strong>this</strong>.[[Address]]).</p>"
@@ -2874,7 +3270,7 @@
           "html": "<p class=\"assertion\">Assert: <var>tagaddr</var> is equal to <strong>this</strong>.[[Type]].</p>"
         },
         {
-          "html": "If <var>index</var> ≥ <var>payload</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑦\">size</a>,",
+          "html": "If <var>index</var> ≥ <var>payload</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑨\">size</a>,",
           "rationale": "throw",
           "steps": [
             {
@@ -2890,12 +3286,12 @@
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②②\">TypeError</a></code>.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②⑤\">TypeError</a></code>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑥\">ToJSValue</a>(<var>payload</var>[<var>index</var>]).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑧\">ToJSValue</a>(<var>payload</var>[<var>index</var>]).</p>"
         }
       ]
     },
@@ -2937,25 +3333,25 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑦\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag\">JavaScript exception tag</a> has been initialized,",
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑤\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag①\">JavaScript exception tag</a> has been initialized,",
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>return the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑧\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag①\">JavaScript exception tag</a></p>"
+              "html": "<p>return the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑥\">surrounding agent</a>'s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag②\">JavaScript exception tag</a>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑨\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store④⓪\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑦\">surrounding agent</a>'s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store④④\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let (<var>store</var>, <var>tagAddress</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#tag_alloc\" id=\"ref-for-tag_alloc①\">tag_alloc</a>(<var>store</var>, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype②⓪\">externref</a> » → « »).</p>"
         },
         {
-          "html": "<p>Set the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store④①\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the current agent’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#associated-store\" id=\"ref-for-associated-store④⑤\">associated store</a> to <var>store</var>.</p>"
         },
         {
-          "html": "<p>Set the current agent’s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag②\">JavaScript exception tag</a> to <var>tagAddress</var>.</p>"
+          "html": "<p>Set the current agent’s associated <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag③\">JavaScript exception tag</a> to <var>tagAddress</var>.</p>"
         },
         {
           "html": "<p>return <var>tagAddress</var>.</p>"
@@ -2964,14 +3360,14 @@
     },
     {
       "name": "create the WebAssembly namespace object",
-      "html": "When the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object\">namespace object</a> for the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#namespacedef-webassembly\" id=\"ref-for-namespacedef-webassembly⑧\">WebAssembly</a></code> namespace is <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#create-a-namespace-object\" id=\"ref-for-create-a-namespace-object\">created</a>, the following steps must be run:",
+      "html": "When the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object\">namespace object</a> for the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/js-promise-integration/js-api/#namespacedef-webassembly\" id=\"ref-for-namespacedef-webassembly①⓪\">WebAssembly</a></code> namespace is <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#create-a-namespace-object\" id=\"ref-for-create-a-namespace-object\">created</a>, the following steps must be run:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>namespaceObject</var> be the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-namespace-object\" id=\"ref-for-dfn-namespace-object①\">namespace object</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>error</var> of « \"CompileError\", \"LinkError\", \"RuntimeError\" »,",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>error</var> of « \"CompileError\", \"LinkError\", \"RuntimeError\" »,",
           "rationale": "let",
           "steps": [
             {

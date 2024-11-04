@@ -4,9 +4,5 @@ dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {
   record<DOMString, double> prioritySignalsOverrides;
   required double lifetimeMs;
   DOMString additionalBidKey;
-};
-
-// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
-partial dictionary AuctionAdInterestGroup {
   ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;
 };

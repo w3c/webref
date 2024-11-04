@@ -760,7 +760,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values\">Type</a>(<var>jsValue</var>) is Null, Boolean, String, or Number, then return <var>jsValue</var>. </p>"
+          "html": "<p>If <var>jsValue</var> is <emu-val>null</emu-val>, <var>jsValue</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-language-types-boolean-type\" id=\"ref-for-sec-ecmascript-language-types-boolean-type\">is a Boolean</a>, <var>jsValue</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-language-types-string-type\" id=\"ref-for-sec-ecmascript-language-types-string-type①\">is a String</a>, or <var>jsValue</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-language-types-number-type\" id=\"ref-for-sec-ecmascript-language-types-number-type\">is a Number</a>, then return <var>jsValue</var>. </p>"
         },
         {
           "html": "If <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-isarray\" id=\"ref-for-sec-isarray\">IsArray</a>(<var>jsValue</var>) is true, then:",

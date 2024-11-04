@@ -22,7 +22,13 @@ dictionary AuctionAdConfig {
   record<USVString, unsigned short> perBuyerGroupLimits;
   record<USVString, unsigned short> perBuyerExperimentGroupIds;
   record<USVString, record<USVString, double>> perBuyerPrioritySignals;
+
+  sequence<bigint> auctionReportBuyerKeys;
+  record<DOMString, AuctionReportBuyersConfig> auctionReportBuyers;
+  AuctionReportBuyerDebugModeConfig auctionReportBuyerDebugModeConfig;
   sequence<DOMString> requiredSellerCapabilities;
+  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;
+
   record<DOMString, DOMString> requestedSize;
   sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;
   Promise<undefined> additionalBids;
@@ -35,16 +41,4 @@ dictionary AuctionAdConfig {
 
   Promise<Uint8Array> serverResponse;
   USVString requestId;
-};
-
-// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
-partial dictionary AuctionAdConfig {
-  sequence<bigint> auctionReportBuyerKeys;
-  record<DOMString, AuctionReportBuyersConfig> auctionReportBuyers;
-  AuctionReportBuyerDebugModeConfig auctionReportBuyerDebugModeConfig;
-};
-
-// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
-partial dictionary AuctionAdConfig {
-  ProtectedAudiencePrivateAggregationConfig privateAggregationConfig;
 };

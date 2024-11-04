@@ -5394,7 +5394,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpupipelinelayout"
       },
       "GPUPipelineLayoutDescriptor": {
-        "fragment": "dictionary GPUPipelineLayoutDescriptor\n         : GPUObjectDescriptorBase {\n    required sequence<GPUBindGroupLayout> bindGroupLayouts;\n};",
+        "fragment": "dictionary GPUPipelineLayoutDescriptor\n         : GPUObjectDescriptorBase {\n    required sequence<GPUBindGroupLayout?> bindGroupLayouts;\n};",
         "type": "dictionary",
         "name": "GPUPipelineLayoutDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -5414,7 +5414,7 @@
                   "type": "dictionary-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "GPUBindGroupLayout"
                 }
@@ -7439,10 +7439,15 @@
         "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpuindexformat"
       },
       "GPUVertexFormat": {
-        "fragment": "enum GPUVertexFormat {\n    \"uint8x2\",\n    \"uint8x4\",\n    \"sint8x2\",\n    \"sint8x4\",\n    \"unorm8x2\",\n    \"unorm8x4\",\n    \"snorm8x2\",\n    \"snorm8x4\",\n    \"uint16x2\",\n    \"uint16x4\",\n    \"sint16x2\",\n    \"sint16x4\",\n    \"unorm16x2\",\n    \"unorm16x4\",\n    \"snorm16x2\",\n    \"snorm16x4\",\n    \"float16x2\",\n    \"float16x4\",\n    \"float32\",\n    \"float32x2\",\n    \"float32x3\",\n    \"float32x4\",\n    \"uint32\",\n    \"uint32x2\",\n    \"uint32x3\",\n    \"uint32x4\",\n    \"sint32\",\n    \"sint32x2\",\n    \"sint32x3\",\n    \"sint32x4\",\n    \"unorm10-10-10-2\",\n};",
+        "fragment": "enum GPUVertexFormat {\n    \"uint8\",\n    \"uint8x2\",\n    \"uint8x4\",\n    \"sint8\",\n    \"sint8x2\",\n    \"sint8x4\",\n    \"unorm8\",\n    \"unorm8x2\",\n    \"unorm8x4\",\n    \"snorm8\",\n    \"snorm8x2\",\n    \"snorm8x4\",\n    \"uint16\",\n    \"uint16x2\",\n    \"uint16x4\",\n    \"sint16\",\n    \"sint16x2\",\n    \"sint16x4\",\n    \"unorm16\",\n    \"unorm16x2\",\n    \"unorm16x4\",\n    \"snorm16\",\n    \"snorm16x2\",\n    \"snorm16x4\",\n    \"float16\",\n    \"float16x2\",\n    \"float16x4\",\n    \"float32\",\n    \"float32x2\",\n    \"float32x3\",\n    \"float32x4\",\n    \"uint32\",\n    \"uint32x2\",\n    \"uint32x3\",\n    \"uint32x4\",\n    \"sint32\",\n    \"sint32x2\",\n    \"sint32x3\",\n    \"sint32x4\",\n    \"unorm10-10-10-2\",\n    \"unorm8x4-bgra\",\n};",
         "type": "enum",
         "name": "GPUVertexFormat",
         "values": [
+          {
+            "type": "enum-value",
+            "value": "uint8",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-uint8"
+          },
           {
             "type": "enum-value",
             "value": "uint8x2",
@@ -7452,6 +7457,11 @@
             "type": "enum-value",
             "value": "uint8x4",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-uint8x4"
+          },
+          {
+            "type": "enum-value",
+            "value": "sint8",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-sint8"
           },
           {
             "type": "enum-value",
@@ -7465,6 +7475,11 @@
           },
           {
             "type": "enum-value",
+            "value": "unorm8",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-unorm8"
+          },
+          {
+            "type": "enum-value",
             "value": "unorm8x2",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-unorm8x2"
           },
@@ -7472,6 +7487,11 @@
             "type": "enum-value",
             "value": "unorm8x4",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-unorm8x4"
+          },
+          {
+            "type": "enum-value",
+            "value": "snorm8",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-snorm8"
           },
           {
             "type": "enum-value",
@@ -7485,6 +7505,11 @@
           },
           {
             "type": "enum-value",
+            "value": "uint16",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-uint16"
+          },
+          {
+            "type": "enum-value",
             "value": "uint16x2",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-uint16x2"
           },
@@ -7492,6 +7517,11 @@
             "type": "enum-value",
             "value": "uint16x4",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-uint16x4"
+          },
+          {
+            "type": "enum-value",
+            "value": "sint16",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-sint16"
           },
           {
             "type": "enum-value",
@@ -7505,6 +7535,11 @@
           },
           {
             "type": "enum-value",
+            "value": "unorm16",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-unorm16"
+          },
+          {
+            "type": "enum-value",
             "value": "unorm16x2",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-unorm16x2"
           },
@@ -7515,6 +7550,11 @@
           },
           {
             "type": "enum-value",
+            "value": "snorm16",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-snorm16"
+          },
+          {
+            "type": "enum-value",
             "value": "snorm16x2",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-snorm16x2"
           },
@@ -7522,6 +7562,11 @@
             "type": "enum-value",
             "value": "snorm16x4",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-snorm16x4"
+          },
+          {
+            "type": "enum-value",
+            "value": "float16",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-float16"
           },
           {
             "type": "enum-value",
@@ -7597,6 +7642,11 @@
             "type": "enum-value",
             "value": "unorm10-10-10-2",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-unorm10-10-10-2"
+          },
+          {
+            "type": "enum-value",
+            "value": "unorm8x4-bgra",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-unorm8x4-bgra"
           }
         ],
         "extAttrs": [],
@@ -7790,10 +7840,10 @@
         "partial": false,
         "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuvertexattribute"
       },
-      "GPUImageDataLayout": {
-        "fragment": "dictionary GPUImageDataLayout {\n    GPUSize64 offset = 0;\n    GPUSize32 bytesPerRow;\n    GPUSize32 rowsPerImage;\n};",
+      "GPUTexelCopyBufferLayout": {
+        "fragment": "dictionary GPUTexelCopyBufferLayout {\n    GPUSize64 offset = 0;\n    GPUSize32 bytesPerRow;\n    GPUSize32 rowsPerImage;\n};",
         "type": "dictionary",
-        "name": "GPUImageDataLayout",
+        "name": "GPUTexelCopyBufferLayout",
         "inheritance": null,
         "members": [
           {
@@ -7813,7 +7863,7 @@
               "value": "0"
             },
             "required": false,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagedatalayout-offset"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputexelcopybufferlayout-offset"
           },
           {
             "type": "field",
@@ -7829,7 +7879,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagedatalayout-bytesperrow"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputexelcopybufferlayout-bytesperrow"
           },
           {
             "type": "field",
@@ -7845,18 +7895,18 @@
             },
             "default": null,
             "required": false,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagedatalayout-rowsperimage"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputexelcopybufferlayout-rowsperimage"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://gpuweb.github.io/gpuweb/#gpuimagedatalayout"
+        "href": "https://gpuweb.github.io/gpuweb/#gputexelcopybufferlayout"
       },
-      "GPUImageCopyBuffer": {
-        "fragment": "dictionary GPUImageCopyBuffer\n         : GPUImageDataLayout {\n    required GPUBuffer buffer;\n};",
+      "GPUTexelCopyBufferInfo": {
+        "fragment": "dictionary GPUTexelCopyBufferInfo\n         : GPUTexelCopyBufferLayout {\n    required GPUBuffer buffer;\n};",
         "type": "dictionary",
-        "name": "GPUImageCopyBuffer",
-        "inheritance": "GPUImageDataLayout",
+        "name": "GPUTexelCopyBufferInfo",
+        "inheritance": "GPUTexelCopyBufferLayout",
         "members": [
           {
             "type": "field",
@@ -7872,17 +7922,17 @@
             },
             "default": null,
             "required": true,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagecopybuffer-buffer"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputexelcopybufferinfo-buffer"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://gpuweb.github.io/gpuweb/#gpuimagecopybuffer"
+        "href": "https://gpuweb.github.io/gpuweb/#gputexelcopybufferinfo"
       },
-      "GPUImageCopyTexture": {
-        "fragment": "dictionary GPUImageCopyTexture {\n    required GPUTexture texture;\n    GPUIntegerCoordinate mipLevel = 0;\n    GPUOrigin3D origin = {};\n    GPUTextureAspect aspect = \"all\";\n};",
+      "GPUTexelCopyTextureInfo": {
+        "fragment": "dictionary GPUTexelCopyTextureInfo {\n    required GPUTexture texture;\n    GPUIntegerCoordinate mipLevel = 0;\n    GPUOrigin3D origin = {};\n    GPUTextureAspect aspect = \"all\";\n};",
         "type": "dictionary",
-        "name": "GPUImageCopyTexture",
+        "name": "GPUTexelCopyTextureInfo",
         "inheritance": null,
         "members": [
           {
@@ -7899,7 +7949,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagecopytexture-texture"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputexelcopytextureinfo-texture"
           },
           {
             "type": "field",
@@ -7918,7 +7968,7 @@
               "value": "0"
             },
             "required": false,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagecopytexture-miplevel"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputexelcopytextureinfo-miplevel"
           },
           {
             "type": "field",
@@ -7936,7 +7986,7 @@
               "type": "dictionary"
             },
             "required": false,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagecopytexture-origin"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputexelcopytextureinfo-origin"
           },
           {
             "type": "field",
@@ -7955,18 +8005,18 @@
               "value": "all"
             },
             "required": false,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagecopytexture-aspect"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputexelcopytextureinfo-aspect"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://gpuweb.github.io/gpuweb/#gpuimagecopytexture"
+        "href": "https://gpuweb.github.io/gpuweb/#gputexelcopytextureinfo"
       },
-      "GPUImageCopyTextureTagged": {
-        "fragment": "dictionary GPUImageCopyTextureTagged\n         : GPUImageCopyTexture {\n    PredefinedColorSpace colorSpace = \"srgb\";\n    boolean premultipliedAlpha = false;\n};",
+      "GPUCopyExternalImageDestInfo": {
+        "fragment": "dictionary GPUCopyExternalImageDestInfo\n         : GPUTexelCopyTextureInfo {\n    PredefinedColorSpace colorSpace = \"srgb\";\n    boolean premultipliedAlpha = false;\n};",
         "type": "dictionary",
-        "name": "GPUImageCopyTextureTagged",
-        "inheritance": "GPUImageCopyTexture",
+        "name": "GPUCopyExternalImageDestInfo",
+        "inheritance": "GPUTexelCopyTextureInfo",
         "members": [
           {
             "type": "field",
@@ -7985,7 +8035,7 @@
               "value": "srgb"
             },
             "required": false,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagecopytexturetagged-colorspace"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucopyexternalimagedestinfo-colorspace"
           },
           {
             "type": "field",
@@ -8004,17 +8054,17 @@
               "value": false
             },
             "required": false,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagecopytexturetagged-premultipliedalpha"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucopyexternalimagedestinfo-premultipliedalpha"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://gpuweb.github.io/gpuweb/#gpuimagecopytexturetagged"
+        "href": "https://gpuweb.github.io/gpuweb/#gpucopyexternalimagedestinfo"
       },
-      "GPUImageCopyExternalImageSource": {
-        "fragment": "typedef (ImageBitmap or\n         ImageData or\n         HTMLImageElement or\n         HTMLVideoElement or\n         VideoFrame or\n         HTMLCanvasElement or\n         OffscreenCanvas) GPUImageCopyExternalImageSource;",
+      "GPUCopyExternalImageSource": {
+        "fragment": "typedef (ImageBitmap or\n         ImageData or\n         HTMLImageElement or\n         HTMLVideoElement or\n         VideoFrame or\n         HTMLCanvasElement or\n         OffscreenCanvas) GPUCopyExternalImageSource;",
         "type": "typedef",
-        "name": "GPUImageCopyExternalImageSource",
+        "name": "GPUCopyExternalImageSource",
         "idlType": {
           "type": "typedef-type",
           "extAttrs": [],
@@ -8081,12 +8131,12 @@
           ]
         },
         "extAttrs": [],
-        "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpuimagecopyexternalimagesource"
+        "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpucopyexternalimagesource"
       },
-      "GPUImageCopyExternalImage": {
-        "fragment": "dictionary GPUImageCopyExternalImage {\n    required GPUImageCopyExternalImageSource source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
+      "GPUCopyExternalImageSourceInfo": {
+        "fragment": "dictionary GPUCopyExternalImageSourceInfo {\n    required GPUCopyExternalImageSource source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
         "type": "dictionary",
-        "name": "GPUImageCopyExternalImage",
+        "name": "GPUCopyExternalImageSourceInfo",
         "inheritance": null,
         "members": [
           {
@@ -8099,11 +8149,11 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUImageCopyExternalImageSource"
+              "idlType": "GPUCopyExternalImageSource"
             },
             "default": null,
             "required": true,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagecopyexternalimage-source"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucopyexternalimagesourceinfo-source"
           },
           {
             "type": "field",
@@ -8121,7 +8171,7 @@
               "type": "dictionary"
             },
             "required": false,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagecopyexternalimage-origin"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucopyexternalimagesourceinfo-origin"
           },
           {
             "type": "field",
@@ -8140,12 +8190,12 @@
               "value": false
             },
             "required": false,
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpuimagecopyexternalimage-flipy"
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpucopyexternalimagesourceinfo-flipy"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://gpuweb.github.io/gpuweb/#gpuimagecopyexternalimage"
+        "href": "https://gpuweb.github.io/gpuweb/#gpucopyexternalimagesourceinfo"
       },
       "GPUCommandBuffer": {
         "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCommandBuffer {\n};",
@@ -8201,7 +8251,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpucommandsmixin"
       },
       "GPUCommandEncoder": {
-        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUTexelCopyBufferInfo source,\n        GPUTexelCopyTextureInfo destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUTexelCopyTextureInfo source,\n        GPUTexelCopyBufferInfo destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUTexelCopyTextureInfo source,\n        GPUTexelCopyTextureInfo destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUCommandEncoder",
         "inheritance": null,
@@ -8393,7 +8443,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageCopyBuffer"
+                  "idlType": "GPUTexelCopyBufferInfo"
                 },
                 "default": null,
                 "optional": false,
@@ -8409,7 +8459,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageCopyTexture"
+                  "idlType": "GPUTexelCopyTextureInfo"
                 },
                 "default": null,
                 "optional": false,
@@ -8458,7 +8508,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageCopyTexture"
+                  "idlType": "GPUTexelCopyTextureInfo"
                 },
                 "default": null,
                 "optional": false,
@@ -8474,7 +8524,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageCopyBuffer"
+                  "idlType": "GPUTexelCopyBufferInfo"
                 },
                 "default": null,
                 "optional": false,
@@ -8523,7 +8573,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageCopyTexture"
+                  "idlType": "GPUTexelCopyTextureInfo"
                 },
                 "default": null,
                 "optional": false,
@@ -8539,7 +8589,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageCopyTexture"
+                  "idlType": "GPUTexelCopyTextureInfo"
                 },
                 "default": null,
                 "optional": false,
@@ -10995,7 +11045,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpuqueuedescriptor"
       },
       "GPUQueue": {
-        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        AllowSharedBufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        AllowSharedBufferSource data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        AllowSharedBufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUTexelCopyTextureInfo destination,\n        AllowSharedBufferSource data,\n        GPUTexelCopyBufferLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUCopyExternalImageSourceInfo source,\n        GPUCopyExternalImageDestInfo destination,\n        GPUExtent3D copySize);\n};",
         "type": "interface",
         "name": "GPUQueue",
         "inheritance": null,
@@ -11189,7 +11239,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageCopyTexture"
+                  "idlType": "GPUTexelCopyTextureInfo"
                 },
                 "default": null,
                 "optional": false,
@@ -11221,7 +11271,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageDataLayout"
+                  "idlType": "GPUTexelCopyBufferLayout"
                 },
                 "default": null,
                 "optional": false,
@@ -11270,7 +11320,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageCopyExternalImage"
+                  "idlType": "GPUCopyExternalImageSourceInfo"
                 },
                 "default": null,
                 "optional": false,
@@ -11286,7 +11336,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageCopyTextureTagged"
+                  "idlType": "GPUCopyExternalImageDestInfo"
                 },
                 "default": null,
                 "optional": false,
@@ -13111,7 +13161,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface GPUDevice {\n    [Exposed=(Window, Worker)]\n    attribute EventHandler onuncapturederror;\n};",
+          "fragment": "partial interface GPUDevice {\n    attribute EventHandler onuncapturederror;\n};",
           "type": "interface",
           "name": "GPUDevice",
           "inheritance": null,
@@ -13127,24 +13177,7 @@
                 "union": false,
                 "idlType": "EventHandler"
               },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "Exposed",
-                  "rhs": {
-                    "type": "identifier-list",
-                    "value": [
-                      {
-                        "value": "Window"
-                      },
-                      {
-                        "value": "Worker"
-                      }
-                    ]
-                  },
-                  "arguments": []
-                }
-              ],
+              "extAttrs": [],
               "special": "",
               "readonly": false,
               "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-onuncapturederror"
@@ -13828,26 +13861,26 @@
         "GPUSize64",
         "GPUIndex32"
       ],
-      "GPUImageDataLayout": [
+      "GPUTexelCopyBufferLayout": [
         "GPUSize64",
         "GPUSize32"
       ],
-      "GPUImageCopyBuffer": [
-        "GPUImageDataLayout",
+      "GPUTexelCopyBufferInfo": [
+        "GPUTexelCopyBufferLayout",
         "GPUBuffer"
       ],
-      "GPUImageCopyTexture": [
+      "GPUTexelCopyTextureInfo": [
         "GPUTexture",
         "GPUIntegerCoordinate",
         "GPUOrigin3D",
         "GPUTextureAspect"
       ],
-      "GPUImageCopyTextureTagged": [
-        "GPUImageCopyTexture",
+      "GPUCopyExternalImageDestInfo": [
+        "GPUTexelCopyTextureInfo",
         "PredefinedColorSpace"
       ],
-      "GPUImageCopyExternalImage": [
-        "GPUImageCopyExternalImageSource",
+      "GPUCopyExternalImageSourceInfo": [
+        "GPUCopyExternalImageSource",
         "GPUOrigin2D"
       ],
       "GPUCommandBuffer": [
@@ -13864,8 +13897,8 @@
         "GPUComputePassDescriptor",
         "GPUBuffer",
         "GPUSize64",
-        "GPUImageCopyBuffer",
-        "GPUImageCopyTexture",
+        "GPUTexelCopyBufferInfo",
+        "GPUTexelCopyTextureInfo",
         "GPUExtent3D",
         "GPUQuerySet",
         "GPUSize32",
@@ -13982,11 +14015,11 @@
         "GPUBuffer",
         "GPUSize64",
         "AllowSharedBufferSource",
-        "GPUImageCopyTexture",
-        "GPUImageDataLayout",
+        "GPUTexelCopyTextureInfo",
+        "GPUTexelCopyBufferLayout",
         "GPUExtent3D",
-        "GPUImageCopyExternalImage",
-        "GPUImageCopyTextureTagged",
+        "GPUCopyExternalImageSourceInfo",
+        "GPUCopyExternalImageDestInfo",
         "GPUObjectBase"
       ],
       "GPUQuerySet": [

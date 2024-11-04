@@ -45,6 +45,5 @@ partial interface GPUDevice {
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
 partial interface GPUDevice {
-    [Exposed=(Window, Worker)]
     attribute EventHandler onuncapturederror;
 };

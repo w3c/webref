@@ -9,6 +9,9 @@ dictionary VideoFrameInit {
   // aspect ratio unless an explicit displayWidth and displayHeight are given.
   DOMRectInit visibleRect;
 
+  double rotation = 0;
+  boolean flip = false;
+
   // Default matches image unless visibleRect is provided.
   [EnforceRange] unsigned long displayWidth;
   [EnforceRange] unsigned long displayHeight;

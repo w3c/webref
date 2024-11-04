@@ -494,7 +494,7 @@
         "href": "https://wicg.github.io/fenced-frame/#typedefdef-reporteventtype"
       },
       "Fence": {
-        "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(optional ReportEventType event = {});\n    undefined setReportEventDataForAutomaticBeacons(optional FenceEvent event = {});\n    sequence<FencedFrameConfig> getNestedConfigs();\n};",
+        "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(optional ReportEventType event = {});\n    undefined setReportEventDataForAutomaticBeacons(optional FenceEvent event = {});\n    sequence<FencedFrameConfig> getNestedConfigs();\n    undefined notifyEvent(Event event);\n};",
         "type": "interface",
         "name": "Fence",
         "inheritance": null,
@@ -593,6 +593,39 @@
             "extAttrs": [],
             "special": "",
             "href": "https://wicg.github.io/fenced-frame/#dom-fence-getnestedconfigs"
+          },
+          {
+            "type": "operation",
+            "name": "notifyEvent",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "event",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Event"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/fenced-frame/#dom-fence-notifyevent"
           }
         ],
         "extAttrs": [
@@ -828,6 +861,34 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "GlobalEventHandlers": [
+        {
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onfencedtreeclick;\n};",
+          "type": "interface mixin",
+          "name": "GlobalEventHandlers",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "onfencedtreeclick",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false,
+              "href": "https://wicg.github.io/fenced-frame/#dom-globaleventhandlers-onfencedtreeclick"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -854,17 +915,24 @@
       "Fence": [
         "ReportEventType",
         "FenceEvent",
-        "FencedFrameConfig"
+        "FencedFrameConfig",
+        "Event"
       ],
       "Window": [
         "Fence"
+      ],
+      "GlobalEventHandlers": [
+        "EventHandler"
       ]
     },
     "externalDependencies": [
       "HTMLElement",
       "DOMTokenList",
       "Navigator",
-      "Window"
+      "Event",
+      "Window",
+      "GlobalEventHandlers",
+      "EventHandler"
     ],
     "hasObsoleteIdl": false
   }

@@ -1,0 +1,29 @@
+{
+  "name": "GPUTexelCopyBufferInfo",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPUTexelCopyBufferInfo\n         : GPUTexelCopyBufferLayout {\n    required GPUBuffer buffer;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gputexelcopybufferinfo"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GPUTexelCopyBufferLayout",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "dictionary GPUTexelCopyBufferLayout {\n    GPUSize64 offset = 0;\n    GPUSize32 bytesPerRow;\n    GPUSize32 rowsPerImage;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#gputexelcopybufferlayout"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}
