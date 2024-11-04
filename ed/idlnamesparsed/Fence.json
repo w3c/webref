@@ -6,7 +6,7 @@
       "title": "Fenced Frame",
       "url": "https://wicg.github.io/fenced-frame/"
     },
-    "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(optional ReportEventType event = {});\n    undefined setReportEventDataForAutomaticBeacons(optional FenceEvent event = {});\n    sequence<FencedFrameConfig> getNestedConfigs();\n    undefined notifyEvent(Event event);\n};",
+    "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(optional ReportEventType event = {});\n    undefined setReportEventDataForAutomaticBeacons(optional FenceEvent event = {});\n    sequence<FencedFrameConfig> getNestedConfigs();\n    Promise<undefined> disableUntrustedNetwork();\n    undefined notifyEvent(Event event);\n};",
     "href": "https://wicg.github.io/fenced-frame/#fence"
   },
   "extended": [],

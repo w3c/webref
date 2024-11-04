@@ -494,7 +494,7 @@
         "href": "https://wicg.github.io/fenced-frame/#typedefdef-reporteventtype"
       },
       "Fence": {
-        "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(optional ReportEventType event = {});\n    undefined setReportEventDataForAutomaticBeacons(optional FenceEvent event = {});\n    sequence<FencedFrameConfig> getNestedConfigs();\n    undefined notifyEvent(Event event);\n};",
+        "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(optional ReportEventType event = {});\n    undefined setReportEventDataForAutomaticBeacons(optional FenceEvent event = {});\n    sequence<FencedFrameConfig> getNestedConfigs();\n    Promise<undefined> disableUntrustedNetwork();\n    undefined notifyEvent(Event event);\n};",
         "type": "interface",
         "name": "Fence",
         "inheritance": null,
@@ -593,6 +593,31 @@
             "extAttrs": [],
             "special": "",
             "href": "https://wicg.github.io/fenced-frame/#dom-fence-getnestedconfigs"
+          },
+          {
+            "type": "operation",
+            "name": "disableUntrustedNetwork",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/fenced-frame/#dom-fence-disableuntrustednetwork"
           },
           {
             "type": "operation",

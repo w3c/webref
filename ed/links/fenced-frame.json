@@ -31,6 +31,9 @@
         ]
       },
       "https://github.com/WICG/fenced-frame/issues/116": {},
+      "https://github.com/WICG/fenced-frame/issues/151": {},
+      "https://github.com/WICG/fenced-frame/issues/191": {},
+      "https://github.com/WICG/fenced-frame/issues/192": {},
       "https://github.com/WICG/fenced-frame/issues/194": {},
       "https://github.com/WICG/fenced-frame/issues/new": {},
       "https://github.com/WICG/fenced-frame/pull/84": {
@@ -206,6 +209,7 @@
         ]
       },
       "https://w3c.github.io/webappsec-cspee/": {},
+      "https://w3c.github.io/webappsec-mixed-content/": {},
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
           "iframe-allow-attribute"
@@ -444,6 +448,10 @@
           "concept-fetch",
           "process-response",
           "fetch-useparallelqueue",
+          "concept-fetch-group-terminate",
+          "concept-fetch-group",
+          "block-bad-port",
+          "concept-network-error",
           "concept-request-destination",
           "navigation-request",
           "non-subresource-request",
@@ -452,7 +460,6 @@
           "is-local",
           "concept-response-url",
           "cross-origin-resource-policy-check",
-          "concept-network-error",
           "queue-a-cross-origin-embedder-policy-corp-violation-report",
           "concept-header-list-get-structured-header",
           "concept-response-header-list"
@@ -749,8 +756,9 @@
           "string-starts-with",
           "string-ends-with",
           "iteration-break",
-          "list-contain",
+          "ordered-set",
           "set-append",
+          "list-contain",
           "iteration-while",
           "list-extend",
           "iteration-continue",
@@ -769,6 +777,7 @@
       },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
+          "should-block-request",
           "source-expression",
           "grammardef-scheme-source",
           "grammardef-host-source",
@@ -791,6 +800,11 @@
         "anchors": [
           "browsing-context-required-csp",
           "process-response"
+        ]
+      },
+      "https://w3c.github.io/webappsec-mixed-content/": {
+        "anchors": [
+          "should-block-fetch"
         ]
       },
       "https://w3c.github.io/webappsec-permissions-policy": {
@@ -850,7 +864,8 @@
           "exceptiondef-typeerror",
           "a-new-promise",
           "resolve",
-          "securityerror"
+          "securityerror",
+          "reject"
         ]
       },
       "https://wicg.github.io/attribution-reporting-api/": {

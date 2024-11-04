@@ -40,10 +40,7 @@
           "html": "<p>Let <var>record</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record\" id=\"ref-for-pending-image-record①\">pending image record</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-element\" id=\"ref-for-pending-image-record-element\">element</a> <var>element</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-request\" id=\"ref-for-pending-image-record-request\">request</a> <var>imageRequest</var> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-loadtime\" id=\"ref-for-pending-image-record-loadtime\">loadTime</a> <var>now</var>.</p>"
         },
         {
-          "html": "<p>If <var>imageRequest</var> is a data URL <a data-link-type=\"biblio\" href=\"https://w3c.github.io/paint-timing/#biblio-rfc2397\" title=\"The &quot;data&quot; URL scheme\">[RFC2397]</a>, or the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-tao-check\" id=\"ref-for-concept-tao-check\">timing allow check</a> succeeds for <var>imageRequest</var>’s resource, add <var>record</var> to <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#images-pending-rendering\" id=\"ref-for-images-pending-rendering\">images pending rendering</a>.</p>"
-        },
-        {
-          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#report-element-timing\" id=\"ref-for-report-element-timing\">report element timing</a> given <var>root</var>, <var>now</var>, «<var>record</var>» and «».</p>"
+          "html": "<p>Add <var>record</var> to <var>root</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#images-pending-rendering\" id=\"ref-for-images-pending-rendering\">images pending rendering</a>.</p>"
         }
       ]
     },
@@ -136,7 +133,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/largest-contentful-paint/#report-largest-contentful-paint\" id=\"ref-for-report-largest-contentful-paint\">Report largest contentful paint</a> given <var>document</var>, <var>paintTimestamp</var>, <var>paintedImages</var> and <var>paintedTextNodes</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#report-element-timing\" id=\"ref-for-report-element-timing①\">Report element timing</a> given <var>document</var>, <var>paintTimestamp</var>, <var>paintedImages</var> and <var>paintedTextNodes</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#report-element-timing\" id=\"ref-for-report-element-timing\">Report element timing</a> given <var>document</var>, <var>paintTimestamp</var>, <var>paintedImages</var> and <var>paintedTextNodes</var>.</p>"
         }
       ]
     },
