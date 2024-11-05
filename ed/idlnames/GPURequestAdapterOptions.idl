@@ -1,6 +1,6 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
 dictionary GPURequestAdapterOptions {
-    DOMString featureLevel;
+    DOMString featureLevel = "core";
     GPUPowerPreference powerPreference;
     boolean forceFallbackAdapter = false;
 };

@@ -1426,27 +1426,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-device-destroy-started-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-device-destroy-started-slot",
-      "linkingText": [
-        "[[destroy started]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "device"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "devices",
-        "href": "https://gpuweb.github.io/gpuweb/#devices",
-        "title": "Devices",
-        "number": "3.5.2"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "a-new-device",
       "href": "https://gpuweb.github.io/gpuweb/#a-new-device",
       "linkingText": [
@@ -3574,6 +3553,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "enumdef-gpupowerpreference",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpupowerpreference",
+      "linkingText": [
+        "GPUPowerPreference"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapter-selection",
+        "href": "https://gpuweb.github.io/gpuweb/#adapter-selection",
+        "title": "Adapter Selection",
+        "number": "4.2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-gpurequestadapteroptions-featurelevel",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurequestadapteroptions-featurelevel",
       "linkingText": [
@@ -3592,18 +3590,18 @@
         "title": "Adapter Selection",
         "number": "4.2.2"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "enumdef-gpupowerpreference",
-      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpupowerpreference",
+      "id": "feature-level-string",
+      "href": "https://gpuweb.github.io/gpuweb/#feature-level-string",
       "linkingText": [
-        "GPUPowerPreference"
+        "feature level string"
       ],
       "localLinkingText": [],
-      "type": "enum",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "adapter-selection",
@@ -3611,7 +3609,49 @@
         "title": "Adapter Selection",
         "number": "4.2.2"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
+    },
+    {
+      "id": "feature-level-string-core",
+      "href": "https://gpuweb.github.io/gpuweb/#feature-level-string-core",
+      "linkingText": [
+        "\"core\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "feature level string"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "adapter-selection",
+        "href": "https://gpuweb.github.io/gpuweb/#adapter-selection",
+        "title": "Adapter Selection",
+        "number": "4.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "feature-level-string-compatibility",
+      "href": "https://gpuweb.github.io/gpuweb/#feature-level-string-compatibility",
+      "linkingText": [
+        "\"compatibility\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "feature level string"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "adapter-selection",
+        "href": "https://gpuweb.github.io/gpuweb/#adapter-selection",
+        "title": "Adapter Selection",
+        "number": "4.2.2"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpurequestadapteroptions-powerpreference",
@@ -4031,6 +4071,27 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-queue",
       "linkingText": [
         "queue"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpudevice",
+        "href": "https://gpuweb.github.io/gpuweb/#gpudevice",
+        "title": "GPUDevice",
+        "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpudevice-adapterinfo",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-adapterinfo",
+      "linkingText": [
+        "adapterInfo"
       ],
       "localLinkingText": [],
       "type": "attribute",
