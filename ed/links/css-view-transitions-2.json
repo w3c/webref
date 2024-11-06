@@ -24,16 +24,23 @@
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Document/startViewTransition": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-backgrounds/": {},
       "https://drafts.csswg.org/css-borders-4/": {},
+      "https://drafts.csswg.org/css-box-4/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
       "https://drafts.csswg.org/css-color-4/": {},
       "https://drafts.csswg.org/css-conditional-3/": {},
+      "https://drafts.csswg.org/css-contain-2/": {},
+      "https://drafts.csswg.org/css-images-3/": {},
       "https://drafts.csswg.org/css-overflow-3/": {},
+      "https://drafts.csswg.org/css-position-3/": {},
       "https://drafts.csswg.org/css-scoping/": {},
       "https://drafts.csswg.org/css-shadow-parts/": {},
+      "https://drafts.csswg.org/css-sizing-3/": {},
       "https://drafts.csswg.org/css-syntax/": {},
       "https://drafts.csswg.org/css-transforms-2/": {},
       "https://drafts.csswg.org/css-transforms/": {},
+      "https://drafts.csswg.org/css-ui-4/": {},
       "https://drafts.csswg.org/css-values-4/": {},
       "https://drafts.csswg.org/css-view-transitions-1/": {
         "anchors": [
@@ -54,6 +61,8 @@
       "https://github.com/WICG/view-transitions/issues/200": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/10631": {},
+      "https://github.com/w3c/csswg-drafts/issues/11078": {},
+      "https://github.com/w3c/csswg-drafts/issues/11079": {},
       "https://github.com/w3c/csswg-drafts/issues/8684": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -113,9 +122,30 @@
           "concept-tree-ancestor"
         ]
       },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-background",
+          "propdef-border-image",
+          "propdef-border"
+        ]
+      },
       "https://drafts.csswg.org/css-borders-4/": {
         "anchors": [
-          "propdef-border-radius"
+          "propdef-border-radius",
+          "propdef-box-shadow",
+          "propdef-border-left",
+          "propdef-border-top",
+          "propdef-border-bottom",
+          "propdef-border-right"
+        ]
+      },
+      "https://drafts.csswg.org/css-box-4/": {
+        "anchors": [
+          "propdef-padding",
+          "border-box",
+          "padding-box",
+          "content-box",
+          "padding-edge"
         ]
       },
       "https://drafts.csswg.org/css-cascade-5/": {
@@ -136,9 +166,24 @@
           "at-ruledef-supports"
         ]
       },
+      "https://drafts.csswg.org/css-contain-2/": {
+        "anchors": [
+          "element-contents"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "natural-dimensions"
+        ]
+      },
       "https://drafts.csswg.org/css-overflow-3/": {
         "anchors": [
           "propdef-overflow"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "valdef-position-relative"
         ]
       },
       "https://drafts.csswg.org/css-scoping-1/": {
@@ -152,6 +197,13 @@
           "selectordef-part"
         ]
       },
+      "https://drafts.csswg.org/css-sizing-3/": {
+        "anchors": [
+          "propdef-box-sizing",
+          "valdef-box-sizing-border-box",
+          "valdef-box-sizing-content-box"
+        ]
+      },
       "https://drafts.csswg.org/css-syntax-3/": {
         "anchors": [
           "typedef-declaration-list"
@@ -159,13 +211,19 @@
       },
       "https://drafts.csswg.org/css-transforms-1/": {
         "anchors": [
-          "propdef-transform"
+          "propdef-transform",
+          "identity-transform-function"
         ]
       },
       "https://drafts.csswg.org/css-transforms-2/": {
         "anchors": [
           "propdef-transform-style",
           "propdef-perspective"
+        ]
+      },
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "propdef-outline"
         ]
       },
       "https://drafts.csswg.org/css-values-4/": {
@@ -214,7 +272,10 @@
           "document-scoped-view-transition-name",
           "view-transition-name",
           "captured-element-old-transform",
-          "captured-element-group-styles-rule"
+          "captured-element-old-width",
+          "captured-element-old-height",
+          "captured-element-group-styles-rule",
+          "capture-the-image"
         ]
       },
       "https://drafts.csswg.org/css2/": {
@@ -244,7 +305,8 @@
       "https://drafts.fxtf.org/css-masking-1/": {
         "anchors": [
           "propdef-clip-path",
-          "propdef-mask-image"
+          "propdef-mask-image",
+          "propdef-mask"
         ]
       },
       "https://drafts.fxtf.org/filter-effects-1/": {
@@ -354,7 +416,9 @@
           "tuple",
           "implementation-defined",
           "assert",
-          "map-clone"
+          "map-clone",
+          "list-append",
+          "string-concatenate"
         ]
       },
       "https://w3c.github.io/hr-time/": {
