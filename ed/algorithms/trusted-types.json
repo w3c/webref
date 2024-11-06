@@ -154,7 +154,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>input</var> has type <var>expectedType</var>, return stringified <var>input</var> and abort these steps.</p>"
+          "html": "<p>If <var>input</var> is an instance of <var>expectedType</var>, return stringified <var>input</var> and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>requireTrustedTypes</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/trusted-types/dist/spec/#abstract-opdef-does-sink-type-require-trusted-types\" id=\"ref-for-abstract-opdef-does-sink-type-require-trusted-types\">Does sink type require trusted types?</a> algorithm,\npassing <var>global</var>, and <var>sinkGroup</var>.</p>"
@@ -184,7 +184,7 @@
           ]
         },
         {
-          "html": "<p class=\"assertion\">Assert: <var>convertedInput</var> has type <var>expectedType</var>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>convertedInput</var> is an instance of <var>expectedType</var>.</p>"
         },
         {
           "html": "<p>Return stringified <var>convertedInput</var>.</p>"
@@ -452,7 +452,7 @@
               "html": "<p>Let <var>directive</var> be the <var>policy</var>’s <var>directive set</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives④\">directive</a> whose name\nis <code>\"require-trusted-types-for\"</code></p>"
             },
             {
-              "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③\">value</a> does not contain a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-types-sink-group\" id=\"ref-for-trusted-types-sink-group④\">trusted-types-sink-group</a> which is a match\nfor <var>sinkGroup</var>, skip to the next <var>policy</var>.</p>"
+              "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③\">value</a> does not contain a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-types-sink-group\" id=\"ref-for-trusted-types-sink-group③\">trusted-types-sink-group</a> which is a match\nfor <var>sinkGroup</var>, skip to the next <var>policy</var>.</p>"
             },
             {
               "html": "<p>Set <var>result</var> to <code>true</code>.</p>"
@@ -503,7 +503,7 @@
               "html": "<p>Let <var>directive</var> be the <var>policy</var>’s <var>directive set</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives⑥\">directive</a> whose name\nis <code>\"require-trusted-types-for\"</code></p>"
             },
             {
-              "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④\">value</a> does not contain a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-types-sink-group\" id=\"ref-for-trusted-types-sink-group⑤\">trusted-types-sink-group</a> which is a match\nfor <var>sinkGroup</var>, skip to the next <var>policy</var>.</p>"
+              "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④\">value</a> does not contain a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-types-sink-group\" id=\"ref-for-trusted-types-sink-group④\">trusted-types-sink-group</a> which is a match\nfor <var>sinkGroup</var>, skip to the next <var>policy</var>.</p>"
             },
             {
               "html": "<p>Let <var>violation</var> be the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#create-violation-for-global\">Create a violation object for global, policy, and directive</a> on <var>global</var>, <var>policy</var> and <code>\"require-trusted-types-for\"</code></p>"
