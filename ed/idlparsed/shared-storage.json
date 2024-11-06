@@ -307,7 +307,7 @@
         "href": "https://wicg.github.io/shared-storage/#callbackdef-runfunctionforsharedstorageselecturloperation"
       },
       "SharedStorageWorkletGlobalScope": {
-        "fragment": "[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]\ninterface SharedStorageWorkletGlobalScope : WorkletGlobalScope {\n  undefined register(DOMString name,\n                     Function operationCtor);\n\n  readonly attribute SharedStorage sharedStorage;\n  readonly attribute PrivateAggregation privateAggregation;\n};",
+        "fragment": "[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]\ninterface SharedStorageWorkletGlobalScope : WorkletGlobalScope {\n  undefined register(DOMString name,\n                     Function operationCtor);\n\n  readonly attribute SharedStorage sharedStorage;\n  readonly attribute PrivateAggregation privateAggregation;\n\n  Promise<sequence<StorageInterestGroup>> interestGroups();\n};",
         "type": "interface",
         "name": "SharedStorageWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -392,6 +392,40 @@
             "special": "",
             "readonly": true,
             "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-privateaggregation"
+          },
+          {
+            "type": "operation",
+            "name": "interestGroups",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "StorageInterestGroup"
+                    }
+                  ]
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-interestgroups"
           }
         ],
         "extAttrs": [
@@ -1480,7 +1514,8 @@
         "WorkletGlobalScope",
         "Function",
         "SharedStorage",
-        "PrivateAggregation"
+        "PrivateAggregation",
+        "StorageInterestGroup"
       ],
       "SharedStorageUrlWithMetadata": [],
       "Window": [
@@ -1518,6 +1553,7 @@
       "WorkletGlobalScope",
       "Function",
       "PrivateAggregation",
+      "StorageInterestGroup",
       "Window",
       "WorkletOptions",
       "RequestInit"

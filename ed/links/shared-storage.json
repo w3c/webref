@@ -47,9 +47,9 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "document",
           "concept-document-origin",
-          "concept-node-document",
-          "document"
+          "concept-node-document"
         ]
       },
       "https://en.wikipedia.org/wiki/Entropy_(information_theory)": {
@@ -145,10 +145,10 @@
           "node-navigable",
           "nav-traversable",
           "browsing-context",
+          "nav-window",
           "concept-document-bc",
           "nav-parent",
           "initialize-the-navigable",
-          "nav-window",
           "nav-container"
         ]
       },
@@ -205,15 +205,18 @@
           "concept-realm-settings-object",
           "current-settings-object",
           "relevant-settings-object",
-          "obtain-a-worklet-agent",
           "queue-a-global-task",
           "dom-manipulation-task-source",
+          "queue-a-task",
+          "worklet-event-loop",
           "concept-relevant-realm",
+          "obtain-a-worklet-agent",
           "fetch-a-worklet-script-graph",
           "concept-settings-object-global",
           "concept-relevant-global",
           "beginning-navigation",
           "ending-navigation",
+          "concept-task",
           "nav-top",
           "environment",
           "concept-environment-target-browsing-context"
@@ -258,10 +261,12 @@
           "implementation-defined",
           "assert",
           "list",
+          "string",
+          "tuple",
+          "boolean",
           "list-size",
           "map-getting-the-keys",
           "map-size",
-          "string",
           "map-exists",
           "list-append",
           "list-empty",
@@ -270,7 +275,6 @@
           "string-length",
           "list-contain",
           "list-clone",
-          "boolean",
           "ordered-map",
           "map-entry",
           "map-key",
@@ -283,15 +287,15 @@
           "list-item",
           "iteration-continue",
           "list-remove",
-          "tuple",
+          "queue",
+          "queue-enqueue",
+          "iteration-while",
+          "queue-dequeue",
           "set-append",
           "map-get",
           "map-remove",
           "map-clear",
           "string-concatenate",
-          "queue",
-          "queue-enqueue",
-          "queue-dequeue",
           "ascii-code-point",
           "ascii-string"
         ]
@@ -329,8 +333,8 @@
       },
       "https://storage.spec.whatwg.org/": {
         "anchors": [
-          "model",
           "registered-storage-endpoints",
+          "model",
           "storage-endpoint",
           "storage-type",
           "storage-identifier",
@@ -413,9 +417,9 @@
           "idl-DOMString",
           "idl-sequence",
           "idl-any",
+          "idl-unsigned-long",
           "a-promise-rejected-with",
           "exceptiondef-typeerror",
-          "a-promise-resolved-with",
           "reject",
           "dfn-associated-realm",
           "this",
@@ -427,7 +431,6 @@
           "upon-fulfillment",
           "upon-rejection",
           "Function",
-          "idl-unsigned-long",
           "Global",
           "idl-undefined",
           "construct-a-callback-function",
@@ -435,6 +438,7 @@
           "idl-object",
           "dfn-dictionary",
           "idl-double",
+          "idl-long",
           "an-exception-was-thrown",
           "SecureContext",
           "idl-boolean",
@@ -454,9 +458,9 @@
           "fencedframeconfig",
           "traversable-navigable-fenced-frame-config-mapping",
           "fenced-frame-config",
-          "fenced-frame-config-mapping-store-a-pending-config",
           "fenced-frame-config-mapped-url",
           "fenced-frame-config-mapping-finalize-a-pending-config",
+          "fenced-frame-config-mapping-store-a-pending-config",
           "browsing-context-fenced-frame-config-instance",
           "dictdef-fenceevent",
           "dom-fenceevent-eventtype",
@@ -464,6 +468,14 @@
           "dom-fenceevent-destination",
           "dom-fenceevent-eventdata",
           "fencedframetype-fenced-frame-reporter"
+        ]
+      },
+      "https://wicg.github.io/turtledove/": {
+        "anchors": [
+          "dictdef-storageinterestgroup",
+          "run-ad-auction",
+          "join-ad-interest-group",
+          "get-storage-interest-groups-for-owner"
         ]
       },
       "https://www.ietf.org/rfc/rfc4122.txt": {
