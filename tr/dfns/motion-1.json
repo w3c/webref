@@ -5,6 +5,44 @@
   },
   "dfns": [
     {
+      "id": "offset-transform",
+      "href": "https://www.w3.org/TR/motion-1/#offset-transform",
+      "linkingText": [
+        "offset transform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intro",
+        "href": "https://www.w3.org/TR/motion-1/#intro",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "offset-position",
+      "href": "https://www.w3.org/TR/motion-1/#offset-position",
+      "linkingText": [
+        "offset position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intro",
+        "href": "https://www.w3.org/TR/motion-1/#intro",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "propdef-offset-path",
       "href": "https://www.w3.org/TR/motion-1/#propdef-offset-path",
       "linkingText": [
@@ -18,8 +56,8 @@
       "heading": {
         "id": "offset-path-property",
         "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
+        "title": "Defining A Path: the offset-path property",
+        "number": "2.1"
       },
       "definedIn": "table"
     },
@@ -32,55 +70,154 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "offset-path-property",
         "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
+        "title": "Defining A Path: the offset-path property",
+        "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "valdef-offsetpath-ray",
-      "href": "https://www.w3.org/TR/motion-1/#valdef-offsetpath-ray",
+      "id": "typedef-offset-path",
+      "href": "https://www.w3.org/TR/motion-1/#typedef-offset-path",
       "linkingText": [
-        "ray()"
+        "<offset-path>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "offset-path-property",
+        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
+        "title": "Defining A Path: the offset-path property",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-offset-path-none",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-offset-path-none",
+      "linkingText": [
+        "none"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "offsetpath"
+        "offset-path"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "offset-path-property",
         "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
+        "title": "Defining A Path: the offset-path property",
+        "number": "2.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "valdef-offsetpath-size",
-      "href": "https://www.w3.org/TR/motion-1/#valdef-offsetpath-size",
+      "id": "valdef-offset-path-offset-path--coord-box",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-offset-path-offset-path--coord-box",
       "linkingText": [
-        "<size>"
+        "<offset-path> || <coord-box>"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "offsetpath"
+        "offset-path"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "offset-path-property",
         "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
+        "title": "Defining A Path: the offset-path property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-offset-path-ray",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-offset-path-ray",
+      "linkingText": [
+        "<ray()>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "offset-path"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "offset-path-property",
+        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
+        "title": "Defining A Path: the offset-path property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-ray",
+      "href": "https://www.w3.org/TR/motion-1/#funcdef-ray",
+      "linkingText": [
+        "ray()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ray-function",
+        "href": "https://www.w3.org/TR/motion-1/#ray-function",
+        "title": "The ray() Function",
+        "number": "2.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-ray-size",
+      "href": "https://www.w3.org/TR/motion-1/#typedef-ray-size",
+      "linkingText": [
+        "<ray-size>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ray-function",
+        "href": "https://www.w3.org/TR/motion-1/#ray-function",
+        "title": "The ray() Function",
+        "number": "2.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-ray-ray-size",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-ray-ray-size",
+      "linkingText": [
+        "<ray-size>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ray()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ray-function",
+        "href": "https://www.w3.org/TR/motion-1/#ray-function",
+        "title": "The ray() Function",
+        "number": "2.1.1"
       },
       "definedIn": "dt"
     },
@@ -93,15 +230,15 @@
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "<size>"
+        "<ray-size>"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "offset-path-property",
-        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
+        "id": "ray-function",
+        "href": "https://www.w3.org/TR/motion-1/#ray-function",
+        "title": "The ray() Function",
+        "number": "2.1.1"
       },
       "definedIn": "dt"
     },
@@ -114,15 +251,15 @@
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "<size>"
+        "<ray-size>"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "offset-path-property",
-        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
+        "id": "ray-function",
+        "href": "https://www.w3.org/TR/motion-1/#ray-function",
+        "title": "The ray() Function",
+        "number": "2.1.1"
       },
       "definedIn": "dt"
     },
@@ -135,15 +272,15 @@
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "<size>"
+        "<ray-size>"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "offset-path-property",
-        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
+        "id": "ray-function",
+        "href": "https://www.w3.org/TR/motion-1/#ray-function",
+        "title": "The ray() Function",
+        "number": "2.1.1"
       },
       "definedIn": "dt"
     },
@@ -156,15 +293,15 @@
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "<size>"
+        "<ray-size>"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "offset-path-property",
-        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
+        "id": "ray-function",
+        "href": "https://www.w3.org/TR/motion-1/#ray-function",
+        "title": "The ray() Function",
+        "number": "2.1.1"
       },
       "definedIn": "dt"
     },
@@ -177,122 +314,80 @@
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "<size>"
+        "<ray-size>"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "offset-path-property",
-        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
+        "id": "ray-function",
+        "href": "https://www.w3.org/TR/motion-1/#ray-function",
+        "title": "The ray() Function",
+        "number": "2.1.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "valdef-offsetpath-contain",
-      "href": "https://www.w3.org/TR/motion-1/#valdef-offsetpath-contain",
+      "id": "valdef-ray-contain",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-ray-contain",
       "linkingText": [
         "contain"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "offsetpath"
+        "ray()"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "offset-path-property",
-        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
+        "id": "ray-function",
+        "href": "https://www.w3.org/TR/motion-1/#ray-function",
+        "title": "The ray() Function",
+        "number": "2.1.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "valdef-offsetpath-initial-position",
-      "href": "https://www.w3.org/TR/motion-1/#valdef-offsetpath-initial-position",
+      "id": "valdef-ray-at-position",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-ray-at-position",
       "linkingText": [
-        "initial position"
+        "at <position>"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "offsetpath"
+        "ray()"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "offset-path-property",
-        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
+        "id": "ray-function",
+        "href": "https://www.w3.org/TR/motion-1/#ray-function",
+        "title": "The ray() Function",
+        "number": "2.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "ray-origin",
+      "href": "https://www.w3.org/TR/motion-1/#ray-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ray()"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ray-function",
+        "href": "https://www.w3.org/TR/motion-1/#ray-function",
+        "title": "The ray() Function",
+        "number": "2.1.1"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "valdef-offsetpath-initial-direction",
-      "href": "https://www.w3.org/TR/motion-1/#valdef-offsetpath-initial-direction",
-      "linkingText": [
-        "initial direction"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "offsetpath"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "offset-path-property",
-        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "offsetpath-pathfunc",
-      "href": "https://www.w3.org/TR/motion-1/#offsetpath-pathfunc",
-      "linkingText": [
-        "path()"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "offsetpath"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "offset-path-property",
-        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "offsetpath-none",
-      "href": "https://www.w3.org/TR/motion-1/#offsetpath-none",
-      "linkingText": [
-        "none"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "offsetpath"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "offset-path-property",
-        "href": "https://www.w3.org/TR/motion-1/#offset-path-property",
-        "title": "Define a path: The offset-path property",
-        "number": "4.1"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "propdef-offset-distance",
@@ -308,8 +403,8 @@
       "heading": {
         "id": "offset-distance-property",
         "href": "https://www.w3.org/TR/motion-1/#offset-distance-property",
-        "title": "Position on the path: The offset-distance property",
-        "number": "4.2"
+        "title": "Position On The Path: the offset-distance property",
+        "number": "2.2"
       },
       "definedIn": "table"
     },
@@ -325,10 +420,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "calculating-the-computed-distance-along-a-path",
-        "href": "https://www.w3.org/TR/motion-1/#calculating-the-computed-distance-along-a-path",
+        "id": "path-distance",
+        "href": "https://www.w3.org/TR/motion-1/#path-distance",
         "title": "Calculating the computed distance along a path",
-        "number": "4.2.1"
+        "number": "2.2.1"
       },
       "definedIn": "prose"
     },
@@ -344,10 +439,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "calculating-the-computed-distance-along-a-path",
-        "href": "https://www.w3.org/TR/motion-1/#calculating-the-computed-distance-along-a-path",
+        "id": "path-distance",
+        "href": "https://www.w3.org/TR/motion-1/#path-distance",
         "title": "Calculating the computed distance along a path",
-        "number": "4.2.1"
+        "number": "2.2.1"
       },
       "definedIn": "prose"
     },
@@ -363,10 +458,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "calculating-the-computed-distance-along-a-path",
-        "href": "https://www.w3.org/TR/motion-1/#calculating-the-computed-distance-along-a-path",
+        "id": "path-distance",
+        "href": "https://www.w3.org/TR/motion-1/#path-distance",
         "title": "Calculating the computed distance along a path",
-        "number": "4.2.1"
+        "number": "2.2.1"
       },
       "definedIn": "prose"
     },
@@ -384,10 +479,71 @@
       "heading": {
         "id": "offset-position-property",
         "href": "https://www.w3.org/TR/motion-1/#offset-position-property",
-        "title": "Define the starting point of the path: The offset-position property",
-        "number": "4.3"
+        "title": "Starting Point Of The Path: the offset-position property",
+        "number": "2.3"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "offset-starting-position",
+      "href": "https://www.w3.org/TR/motion-1/#offset-starting-position",
+      "linkingText": [
+        "offset starting position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "offset-position-property",
+        "href": "https://www.w3.org/TR/motion-1/#offset-position-property",
+        "title": "Starting Point Of The Path: the offset-position property",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-offset-position-normal",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-offset-position-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "offset-position"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "offset-position-property",
+        "href": "https://www.w3.org/TR/motion-1/#offset-position-property",
+        "title": "Starting Point Of The Path: the offset-position property",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-offset-position-auto",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-offset-position-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "offset-position"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "offset-position-property",
+        "href": "https://www.w3.org/TR/motion-1/#offset-position-property",
+        "title": "Starting Point Of The Path: the offset-position property",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "propdef-offset-anchor",
@@ -403,29 +559,52 @@
       "heading": {
         "id": "offset-anchor-property",
         "href": "https://www.w3.org/TR/motion-1/#offset-anchor-property",
-        "title": "Define an anchor point: The offset-anchor property",
-        "number": "4.4"
+        "title": "The Element’s Anchor Point: the offset-anchor property",
+        "number": "2.4"
       },
       "definedIn": "table"
     },
     {
-      "id": "anchor-point",
-      "href": "https://www.w3.org/TR/motion-1/#anchor-point",
+      "id": "offset-anchor-point",
+      "href": "https://www.w3.org/TR/motion-1/#offset-anchor-point",
       "linkingText": [
+        "offset anchor point"
+      ],
+      "localLinkingText": [
         "anchor point"
       ],
-      "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "offset-anchor-property",
         "href": "https://www.w3.org/TR/motion-1/#offset-anchor-property",
-        "title": "Define an anchor point: The offset-anchor property",
-        "number": "4.4"
+        "title": "The Element’s Anchor Point: the offset-anchor property",
+        "number": "2.4"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "valdef-offset-anchor-auto",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-offset-anchor-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "offset-anchor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "offset-anchor-property",
+        "href": "https://www.w3.org/TR/motion-1/#offset-anchor-property",
+        "title": "The Element’s Anchor Point: the offset-anchor property",
+        "number": "2.4"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "propdef-offset-rotate",
@@ -441,8 +620,8 @@
       "heading": {
         "id": "offset-rotate-property",
         "href": "https://www.w3.org/TR/motion-1/#offset-rotate-property",
-        "title": "Rotation at point: The offset-rotate property",
-        "number": "4.5"
+        "title": "Rotating To Match The Path: the offset-rotate property",
+        "number": "2.5"
       },
       "definedIn": "table"
     },
@@ -462,8 +641,8 @@
       "heading": {
         "id": "offset-rotate-property",
         "href": "https://www.w3.org/TR/motion-1/#offset-rotate-property",
-        "title": "Rotation at point: The offset-rotate property",
-        "number": "4.5"
+        "title": "Rotating To Match The Path: the offset-rotate property",
+        "number": "2.5"
       },
       "definedIn": "dt"
     },
@@ -483,67 +662,10 @@
       "heading": {
         "id": "offset-rotate-property",
         "href": "https://www.w3.org/TR/motion-1/#offset-rotate-property",
-        "title": "Rotation at point: The offset-rotate property",
-        "number": "4.5"
+        "title": "Rotating To Match The Path: the offset-rotate property",
+        "number": "2.5"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "t1",
-      "href": "https://www.w3.org/TR/motion-1/#t1",
-      "linkingText": [
-        "T1"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "calculating-path-transform",
-        "href": "https://www.w3.org/TR/motion-1/#calculating-path-transform",
-        "title": "Calculating the path transform",
-        "number": "4.5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "t2",
-      "href": "https://www.w3.org/TR/motion-1/#t2",
-      "linkingText": [
-        "T2"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "calculating-path-transform",
-        "href": "https://www.w3.org/TR/motion-1/#calculating-path-transform",
-        "title": "Calculating the path transform",
-        "number": "4.5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "p",
-      "href": "https://www.w3.org/TR/motion-1/#p",
-      "linkingText": [
-        "P"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "calculating-path-transform",
-        "href": "https://www.w3.org/TR/motion-1/#calculating-path-transform",
-        "title": "Calculating the path transform",
-        "number": "4.5.1"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "propdef-offset",
@@ -559,10 +681,94 @@
       "heading": {
         "id": "offset-shorthand",
         "href": "https://www.w3.org/TR/motion-1/#offset-shorthand",
-        "title": "Offset shorthand: The offset property",
-        "number": "4.6"
+        "title": "The offset Shorthand",
+        "number": "2.6"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "basic-shape-equivalent-path",
+      "href": "https://www.w3.org/TR/motion-1/#basic-shape-equivalent-path",
+      "linkingText": [
+        "equivalent path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<basic-shape>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paths",
+        "href": "https://www.w3.org/TR/motion-1/#paths",
+        "title": "Equivalent Paths For <basic-shape>",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rect-equivalent-path",
+      "href": "https://www.w3.org/TR/motion-1/#rect-equivalent-path",
+      "linkingText": [
+        "equivalent path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rect()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paths",
+        "href": "https://www.w3.org/TR/motion-1/#paths",
+        "title": "Equivalent Paths For <basic-shape>",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "inset-equivalent-path",
+      "href": "https://www.w3.org/TR/motion-1/#inset-equivalent-path",
+      "linkingText": [
+        "equivalent path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "inset()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paths",
+        "href": "https://www.w3.org/TR/motion-1/#paths",
+        "title": "Equivalent Paths For <basic-shape>",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "xywh-equivalent-path",
+      "href": "https://www.w3.org/TR/motion-1/#xywh-equivalent-path",
+      "linkingText": [
+        "equivalent path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "xywh()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paths",
+        "href": "https://www.w3.org/TR/motion-1/#paths",
+        "title": "Equivalent Paths For <basic-shape>",
+        "number": "3"
+      },
+      "definedIn": "dt"
     }
   ]
 }

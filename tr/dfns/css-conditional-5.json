@@ -199,6 +199,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "query-container",
+      "href": "https://www.w3.org/TR/css-conditional-5/#query-container",
+      "linkingText": [
+        "query container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "container-queries",
+        "href": "https://www.w3.org/TR/css-conditional-5/#container-queries",
+        "title": "Container Queries",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "propdef-container-type",
       "href": "https://www.w3.org/TR/css-conditional-5/#propdef-container-type",
       "linkingText": [
@@ -216,25 +235,6 @@
         "number": "5.1"
       },
       "definedIn": "table"
-    },
-    {
-      "id": "query-container",
-      "href": "https://www.w3.org/TR/css-conditional-5/#query-container",
-      "linkingText": [
-        "query container"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "container-type",
-        "href": "https://www.w3.org/TR/css-conditional-5/#container-type",
-        "title": "Creating Query Containers: the container-type property",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "valdef-container-type-size",
@@ -262,6 +262,27 @@
       "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-type-inline-size",
       "linkingText": [
         "inline-size"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "container-type"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "container-type",
+        "href": "https://www.w3.org/TR/css-conditional-5/#container-type",
+        "title": "Creating Query Containers: the container-type property",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-type-scroll-state",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-type-scroll-state",
+      "linkingText": [
+        "scroll-state"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -530,6 +551,44 @@
       "definedIn": "pre"
     },
     {
+      "id": "typedef-scroll-state-query",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-scroll-state-query",
+      "linkingText": [
+        "<scroll-state-query>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "container-rule",
+        "href": "https://www.w3.org/TR/css-conditional-5/#container-rule",
+        "title": "Container Queries: the @container rule",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-scroll-state-in-parens",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-scroll-state-in-parens",
+      "linkingText": [
+        "<scroll-state-in-parens>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "container-rule",
+        "href": "https://www.w3.org/TR/css-conditional-5/#container-rule",
+        "title": "Container Queries: the @container rule",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "container-feature",
       "href": "https://www.w3.org/TR/css-conditional-5/#container-feature",
       "linkingText": [
@@ -576,7 +635,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "size-container",
@@ -829,6 +888,609 @@
         "number": "6.2"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "container-scroll-state-query",
+      "href": "https://www.w3.org/TR/css-conditional-5/#container-scroll-state-query",
+      "linkingText": [
+        "container scroll-state query"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-state-container",
+        "href": "https://www.w3.org/TR/css-conditional-5/#scroll-state-container",
+        "title": "Scroll State Container Features",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scroll-state-feature",
+      "href": "https://www.w3.org/TR/css-conditional-5/#scroll-state-feature",
+      "linkingText": [
+        "scroll-state feature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scroll-state-container",
+        "href": "https://www.w3.org/TR/css-conditional-5/#scroll-state-container",
+        "title": "Scroll State Container Features",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-scroll-state-feature",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-scroll-state-feature",
+      "linkingText": [
+        "<scroll-state-feature>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-state-container",
+        "href": "https://www.w3.org/TR/css-conditional-5/#scroll-state-container",
+        "title": "Scroll State Container Features",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "descdef-container-stuck",
+      "href": "https://www.w3.org/TR/css-conditional-5/#descdef-container-stuck",
+      "linkingText": [
+        "stuck"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@container"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stuck",
+        "href": "https://www.w3.org/TR/css-conditional-5/#stuck",
+        "title": "Sticky positioning: the stuck feature",
+        "number": "6.3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-container-stuck-none",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-stuck-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/stuck"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stuck",
+        "href": "https://www.w3.org/TR/css-conditional-5/#stuck",
+        "title": "Sticky positioning: the stuck feature",
+        "number": "6.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-stuck-top",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-stuck-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/stuck"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stuck",
+        "href": "https://www.w3.org/TR/css-conditional-5/#stuck",
+        "title": "Sticky positioning: the stuck feature",
+        "number": "6.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-stuck-right",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-stuck-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/stuck"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stuck",
+        "href": "https://www.w3.org/TR/css-conditional-5/#stuck",
+        "title": "Sticky positioning: the stuck feature",
+        "number": "6.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-stuck-bottom",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-stuck-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/stuck"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stuck",
+        "href": "https://www.w3.org/TR/css-conditional-5/#stuck",
+        "title": "Sticky positioning: the stuck feature",
+        "number": "6.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-stuck-left",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-stuck-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/stuck"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stuck",
+        "href": "https://www.w3.org/TR/css-conditional-5/#stuck",
+        "title": "Sticky positioning: the stuck feature",
+        "number": "6.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-stuck-block-start",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-stuck-block-start",
+      "linkingText": [
+        "block-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/stuck"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stuck",
+        "href": "https://www.w3.org/TR/css-conditional-5/#stuck",
+        "title": "Sticky positioning: the stuck feature",
+        "number": "6.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-stuck-inline-start",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-stuck-inline-start",
+      "linkingText": [
+        "inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/stuck"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stuck",
+        "href": "https://www.w3.org/TR/css-conditional-5/#stuck",
+        "title": "Sticky positioning: the stuck feature",
+        "number": "6.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-stuck-block-end",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-stuck-block-end",
+      "linkingText": [
+        "block-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/stuck"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stuck",
+        "href": "https://www.w3.org/TR/css-conditional-5/#stuck",
+        "title": "Sticky positioning: the stuck feature",
+        "number": "6.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-stuck-inline-end",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-stuck-inline-end",
+      "linkingText": [
+        "inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/stuck"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stuck",
+        "href": "https://www.w3.org/TR/css-conditional-5/#stuck",
+        "title": "Sticky positioning: the stuck feature",
+        "number": "6.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "descdef-container-snapped",
+      "href": "https://www.w3.org/TR/css-conditional-5/#descdef-container-snapped",
+      "linkingText": [
+        "snapped"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@container"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snapped",
+        "href": "https://www.w3.org/TR/css-conditional-5/#snapped",
+        "title": "Scroll snapping: the snapped feature",
+        "number": "6.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-container-snapped-none",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-snapped-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/snapped"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snapped",
+        "href": "https://www.w3.org/TR/css-conditional-5/#snapped",
+        "title": "Scroll snapping: the snapped feature",
+        "number": "6.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-snapped-x",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-snapped-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/snapped"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snapped",
+        "href": "https://www.w3.org/TR/css-conditional-5/#snapped",
+        "title": "Scroll snapping: the snapped feature",
+        "number": "6.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-snapped-y",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-snapped-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/snapped"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snapped",
+        "href": "https://www.w3.org/TR/css-conditional-5/#snapped",
+        "title": "Scroll snapping: the snapped feature",
+        "number": "6.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-snapped-block",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-snapped-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/snapped"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snapped",
+        "href": "https://www.w3.org/TR/css-conditional-5/#snapped",
+        "title": "Scroll snapping: the snapped feature",
+        "number": "6.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-snapped-inline",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-snapped-inline",
+      "linkingText": [
+        "inline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/snapped"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "snapped",
+        "href": "https://www.w3.org/TR/css-conditional-5/#snapped",
+        "title": "Scroll snapping: the snapped feature",
+        "number": "6.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "descdef-container-overflowing",
+      "href": "https://www.w3.org/TR/css-conditional-5/#descdef-container-overflowing",
+      "linkingText": [
+        "overflowing"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@container"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflowing",
+        "href": "https://www.w3.org/TR/css-conditional-5/#overflowing",
+        "title": "Overflowing: the overflowing feature",
+        "number": "6.3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-container-overflowing-none",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/overflowing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflowing",
+        "href": "https://www.w3.org/TR/css-conditional-5/#overflowing",
+        "title": "Overflowing: the overflowing feature",
+        "number": "6.3.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-overflowing-top",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/overflowing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflowing",
+        "href": "https://www.w3.org/TR/css-conditional-5/#overflowing",
+        "title": "Overflowing: the overflowing feature",
+        "number": "6.3.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-overflowing-right",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/overflowing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflowing",
+        "href": "https://www.w3.org/TR/css-conditional-5/#overflowing",
+        "title": "Overflowing: the overflowing feature",
+        "number": "6.3.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-overflowing-bottom",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/overflowing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflowing",
+        "href": "https://www.w3.org/TR/css-conditional-5/#overflowing",
+        "title": "Overflowing: the overflowing feature",
+        "number": "6.3.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-overflowing-left",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/overflowing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflowing",
+        "href": "https://www.w3.org/TR/css-conditional-5/#overflowing",
+        "title": "Overflowing: the overflowing feature",
+        "number": "6.3.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-overflowing-block-start",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-block-start",
+      "linkingText": [
+        "block-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/overflowing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflowing",
+        "href": "https://www.w3.org/TR/css-conditional-5/#overflowing",
+        "title": "Overflowing: the overflowing feature",
+        "number": "6.3.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-overflowing-inline-start",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-inline-start",
+      "linkingText": [
+        "inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/overflowing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflowing",
+        "href": "https://www.w3.org/TR/css-conditional-5/#overflowing",
+        "title": "Overflowing: the overflowing feature",
+        "number": "6.3.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-overflowing-block-end",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-block-end",
+      "linkingText": [
+        "block-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/overflowing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflowing",
+        "href": "https://www.w3.org/TR/css-conditional-5/#overflowing",
+        "title": "Overflowing: the overflowing feature",
+        "number": "6.3.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-container-overflowing-inline-end",
+      "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-inline-end",
+      "linkingText": [
+        "inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@container/overflowing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "overflowing",
+        "href": "https://www.w3.org/TR/css-conditional-5/#overflowing",
+        "title": "Overflowing: the overflowing feature",
+        "number": "6.3.4"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "container-query-length",

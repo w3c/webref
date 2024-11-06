@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Web Audio API",
+    "title": "Web Audio API 1.1",
     "url": "https://www.w3.org/TR/webaudio/"
   },
   "dfns": [
@@ -80,7 +80,7 @@
       "id": "BaseAudioContext",
       "href": "https://www.w3.org/TR/webaudio/#BaseAudioContext",
       "linkingText": [
-        "baseaudiocontext"
+        "BaseAudioContext"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -142,6 +142,27 @@
       "href": "https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-control-thread-state-slot",
       "linkingText": [
         "[[control thread state]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BaseAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "BaseAudioContext",
+        "href": "https://www.w3.org/TR/webaudio/#BaseAudioContext",
+        "title": "The BaseAudioContext Interface",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-baseaudiocontext-render-quantum-size-slot",
+      "href": "https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-render-quantum-size-slot",
+      "linkingText": [
+        "[[render quantum size]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -244,6 +265,69 @@
       "definedIn": "table"
     },
     {
+      "id": "enumdef-audiocontextrendersizecategory",
+      "href": "https://www.w3.org/TR/webaudio/#enumdef-audiocontextrendersizecategory",
+      "linkingText": [
+        "AudioContextRenderSizeCategory"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "BaseAudioContext",
+        "href": "https://www.w3.org/TR/webaudio/#BaseAudioContext",
+        "title": "The BaseAudioContext Interface",
+        "number": "1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiocontextrendersizecategory-default",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontextrendersizecategory-default",
+      "linkingText": [
+        "\"default\"",
+        "default"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioContextRenderSizeCategory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "BaseAudioContext",
+        "href": "https://www.w3.org/TR/webaudio/#BaseAudioContext",
+        "title": "The BaseAudioContext Interface",
+        "number": "1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-audiocontextrendersizecategory-hardware",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontextrendersizecategory-hardware",
+      "linkingText": [
+        "\"hardware\"",
+        "hardware"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioContextRenderSizeCategory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "BaseAudioContext",
+        "href": "https://www.w3.org/TR/webaudio/#BaseAudioContext",
+        "title": "The BaseAudioContext Interface",
+        "number": "1.1"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dom-decodeerrorcallback-error",
       "href": "https://www.w3.org/TR/webaudio/#dom-decodeerrorcallback-error",
       "linkingText": [
@@ -275,25 +359,6 @@
       "for": [
         "DecodeSuccessCallback"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "BaseAudioContext",
-        "href": "https://www.w3.org/TR/webaudio/#BaseAudioContext",
-        "title": "The BaseAudioContext Interface",
-        "number": "1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "baseaudiocontext",
-      "href": "https://www.w3.org/TR/webaudio/#baseaudiocontext",
-      "linkingText": [
-        "BaseAudioContext"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -650,6 +715,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "eventdef-baseaudiocontext-statechange",
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-baseaudiocontext-statechange",
+      "linkingText": [
+        "statechange"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "BaseAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "BaseAudioContext-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#BaseAudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-baseaudiocontext-samplerate",
       "href": "https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-samplerate",
       "linkingText": [
@@ -696,6 +782,27 @@
       "href": "https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-state",
       "linkingText": [
         "state"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BaseAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "BaseAudioContext-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#BaseAudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-baseaudiocontext-renderquantumsize",
+      "href": "https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-renderquantumsize",
+      "linkingText": [
+        "renderQuantumSize"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1580,7 +1687,7 @@
       "id": "AudioContext",
       "href": "https://www.w3.org/TR/webaudio/#AudioContext",
       "linkingText": [
-        "audiocontext"
+        "AudioContext"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -1681,14 +1788,78 @@
       "definedIn": "table"
     },
     {
-      "id": "audiocontext",
-      "href": "https://www.w3.org/TR/webaudio/#audiocontext",
+      "id": "enumdef-audiosinktype",
+      "href": "https://www.w3.org/TR/webaudio/#enumdef-audiosinktype",
       "linkingText": [
-        "AudioContext"
+        "AudioSinkType"
       ],
       "localLinkingText": [],
-      "type": "interface",
+      "type": "enum",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiosinktype-none",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiosinktype-none",
+      "linkingText": [
+        "\"none\"",
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSinkType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-audiocontext-setsinkid",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-setsinkid",
+      "linkingText": [
+        "setSinkId(sinkId)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiocontext-setsinkid-sinkid-sinkid",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-setsinkid-sinkid-sinkid",
+      "linkingText": [
+        "sinkId"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioContext/setSinkId(sinkId)"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1803,6 +1974,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-audiocontext-sink-id-slot",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-sink-id-slot",
+      "linkingText": [
+        "[[sink ID]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiocontext-pending-resume-promises-slot",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-pending-resume-promises-slot",
+      "linkingText": [
+        "[[pending resume promises]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-audiocontext-audiocontext",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-audiocontext",
       "linkingText": [
@@ -1825,27 +2038,6 @@
         "number": "1.2.1"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dom-audiocontext-pending-resume-promises-slot",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-pending-resume-promises-slot",
-      "linkingText": [
-        "[[pending resume promises]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AudioContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioContext-constructors",
-        "href": "https://www.w3.org/TR/webaudio/#AudioContext-constructors",
-        "title": "Constructors",
-        "number": "1.2.1"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dom-audiocontext-constructor-contextoptions-contextoptions",
@@ -1909,6 +2101,132 @@
         "number": "1.2.2"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiocontext-rendercapacity",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-rendercapacity",
+      "linkingText": [
+        "renderCapacity"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiocontext-sinkid",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-sinkid",
+      "linkingText": [
+        "sinkId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiocontext-onsinkchange",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-onsinkchange",
+      "linkingText": [
+        "onsinkchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-audiocontext-sinkchange",
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-audiocontext-sinkchange",
+      "linkingText": [
+        "sinkchange"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-audiocontext-onerror",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-audiocontext-error",
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-audiocontext-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.2.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-audiocontext-close",
@@ -2142,27 +2460,29 @@
       "definedIn": "dt"
     },
     {
-      "id": "AudioContextOptions",
-      "href": "https://www.w3.org/TR/webaudio/#AudioContextOptions",
+      "id": "dom-audiocontext-setsinkid-domstring-or-audiosinkoptions-sinkid",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-setsinkid-domstring-or-audiosinkoptions-sinkid",
       "linkingText": [
-        "audiocontextoptions"
+        "setSinkId((DOMString or AudioSinkOptions) sinkId)"
       ],
       "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
+      "type": "method",
+      "for": [
+        "AudioContext"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "AudioContextOptions",
-        "href": "https://www.w3.org/TR/webaudio/#AudioContextOptions",
-        "title": "AudioContextOptions",
-        "number": "1.2.4"
+        "id": "AudioContext-methods",
+        "href": "https://www.w3.org/TR/webaudio/#AudioContext-methods",
+        "title": "Methods",
+        "number": "1.2.3"
       },
-      "definedIn": "heading"
+      "definedIn": "dt"
     },
     {
-      "id": "dictdef-audiocontextoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-audiocontextoptions",
+      "id": "AudioContextOptions",
+      "href": "https://www.w3.org/TR/webaudio/#AudioContextOptions",
       "linkingText": [
         "AudioContextOptions"
       ],
@@ -2175,9 +2495,9 @@
         "id": "AudioContextOptions",
         "href": "https://www.w3.org/TR/webaudio/#AudioContextOptions",
         "title": "AudioContextOptions",
-        "number": "1.2.4"
+        "number": "1.2.5"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audiocontextoptions-latencyhint",
@@ -2196,7 +2516,7 @@
         "id": "dictionary-audiocontextoptions-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audiocontextoptions-members",
         "title": "Dictionary AudioContextOptions Members",
-        "number": "1.2.4.1"
+        "number": "1.2.5.1"
       },
       "definedIn": "dt"
     },
@@ -2217,15 +2537,57 @@
         "id": "dictionary-audiocontextoptions-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audiocontextoptions-members",
         "title": "Dictionary AudioContextOptions Members",
-        "number": "1.2.4.1"
+        "number": "1.2.5.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "AudioTimestamp",
-      "href": "https://www.w3.org/TR/webaudio/#AudioTimestamp",
+      "id": "dom-audiocontextoptions-sinkid",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontextoptions-sinkid",
       "linkingText": [
-        "audiotimestamp"
+        "sinkId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioContextOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-audiocontextoptions-members",
+        "href": "https://www.w3.org/TR/webaudio/#dictionary-audiocontextoptions-members",
+        "title": "Dictionary AudioContextOptions Members",
+        "number": "1.2.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiocontextoptions-rendersizehint",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontextoptions-rendersizehint",
+      "linkingText": [
+        "renderSizeHint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioContextOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-audiocontextoptions-members",
+        "href": "https://www.w3.org/TR/webaudio/#dictionary-audiocontextoptions-members",
+        "title": "Dictionary AudioContextOptions Members",
+        "number": "1.2.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "AudioSinkOptions",
+      "href": "https://www.w3.org/TR/webaudio/#AudioSinkOptions",
+      "linkingText": [
+        "AudioSinkOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -2233,16 +2595,77 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "AudioTimestamp",
-        "href": "https://www.w3.org/TR/webaudio/#AudioTimestamp",
-        "title": "AudioTimestamp",
-        "number": "1.2.5"
+        "id": "AudioSinkOptions",
+        "href": "https://www.w3.org/TR/webaudio/#AudioSinkOptions",
+        "title": "AudioSinkOptions",
+        "number": "1.2.6"
       },
       "definedIn": "heading"
     },
     {
-      "id": "dictdef-audiotimestamp",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-audiotimestamp",
+      "id": "dom-audiosinkoptions-type",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiosinkoptions-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioSinkOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-audiosinkoptions-members",
+        "href": "https://www.w3.org/TR/webaudio/#dictionary-audiosinkoptions-members",
+        "title": "Dictionary AudioSinkOptions Members",
+        "number": "1.2.6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "AudioSinkInfo",
+      "href": "https://www.w3.org/TR/webaudio/#AudioSinkInfo",
+      "linkingText": [
+        "AudioSinkInfo"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioSinkInfo",
+        "href": "https://www.w3.org/TR/webaudio/#AudioSinkInfo",
+        "title": "AudioSinkInfo",
+        "number": "1.2.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-audiosinkinfo-type",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiosinkinfo-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioSinkInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiosinkinfo-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#audiosinkinfo-attributes",
+        "title": "Attributes",
+        "number": "1.2.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "AudioTimestamp",
+      "href": "https://www.w3.org/TR/webaudio/#AudioTimestamp",
       "linkingText": [
         "AudioTimestamp"
       ],
@@ -2255,9 +2678,9 @@
         "id": "AudioTimestamp",
         "href": "https://www.w3.org/TR/webaudio/#AudioTimestamp",
         "title": "AudioTimestamp",
-        "number": "1.2.5"
+        "number": "1.2.8"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audiotimestamp-contexttime",
@@ -2276,7 +2699,7 @@
         "id": "dictionary-audiotimestamp-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audiotimestamp-members",
         "title": "Dictionary AudioTimestamp Members",
-        "number": "1.2.5.1"
+        "number": "1.2.8.1"
       },
       "definedIn": "dt"
     },
@@ -2297,15 +2720,15 @@
         "id": "dictionary-audiotimestamp-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audiotimestamp-members",
         "title": "Dictionary AudioTimestamp Members",
-        "number": "1.2.5.1"
+        "number": "1.2.8.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "OfflineAudioContext",
-      "href": "https://www.w3.org/TR/webaudio/#OfflineAudioContext",
+      "id": "AudioRenderCapacity",
+      "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacity",
       "linkingText": [
-        "offlineaudiocontext"
+        "audiorenderCapacity"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -2313,16 +2736,498 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "OfflineAudioContext",
-        "href": "https://www.w3.org/TR/webaudio/#OfflineAudioContext",
-        "title": "The OfflineAudioContext Interface",
-        "number": "1.3"
+        "id": "AudioRenderCapacity",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacity",
+        "title": "AudioRenderCapacity",
+        "number": "1.2.9"
       },
       "definedIn": "heading"
     },
     {
-      "id": "offlineaudiocontext",
-      "href": "https://www.w3.org/TR/webaudio/#offlineaudiocontext",
+      "id": "audiorendercapacity",
+      "href": "https://www.w3.org/TR/webaudio/#audiorendercapacity",
+      "linkingText": [
+        "AudioRenderCapacity"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacity",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacity",
+        "title": "AudioRenderCapacity",
+        "number": "1.2.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiorendercapacity-start-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacity-start-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioRenderCapacity/start(options)",
+        "AudioRenderCapacity/start()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacity",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacity",
+        "title": "AudioRenderCapacity",
+        "number": "1.2.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiorendercapacity-onupdate",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacity-onupdate",
+      "linkingText": [
+        "onupdate"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioRenderCapacity"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacity-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacity-attributes",
+        "title": "Attributes",
+        "number": "1.2.9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-audiorendercapacity-update",
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-audiorendercapacity-update",
+      "linkingText": [
+        "update"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "AudioRenderCapacity"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacity-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacity-attributes",
+        "title": "Attributes",
+        "number": "1.2.9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-audiorendercapacity-start",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacity-start",
+      "linkingText": [
+        "start(options)",
+        "start()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioRenderCapacity"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacity-methods",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacity-methods",
+        "title": "Methods",
+        "number": "1.2.9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiorendercapacity-stop",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacity-stop",
+      "linkingText": [
+        "stop()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioRenderCapacity"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacity-methods",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacity-methods",
+        "title": "Methods",
+        "number": "1.2.9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "AudioRenderCapacityOptions",
+      "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityOptions",
+      "linkingText": [
+        "audiorenderCapacityoptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityOptions",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityOptions",
+        "title": "AudioRenderCapacityOptions",
+        "number": "1.2.10"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dictdef-audiorendercapacityoptions",
+      "href": "https://www.w3.org/TR/webaudio/#dictdef-audiorendercapacityoptions",
+      "linkingText": [
+        "AudioRenderCapacityOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityOptions",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityOptions",
+        "title": "AudioRenderCapacityOptions",
+        "number": "1.2.10"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiorendercapacityoptions-updateinterval",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityoptions-updateinterval",
+      "linkingText": [
+        "updateInterval"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioRenderCapacityOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-AudioRenderCapacityOptions-members",
+        "href": "https://www.w3.org/TR/webaudio/#dictionary-AudioRenderCapacityOptions-members",
+        "title": "Dictionary AudioRenderCapacityOptions Members",
+        "number": "1.2.10.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "AudioRenderCapacityEvent",
+      "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent",
+      "linkingText": [
+        "audiorenderCapacityevent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent",
+        "title": "AudioRenderCapacityEvent",
+        "number": "1.2.11"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "audiorendercapacityevent",
+      "href": "https://www.w3.org/TR/webaudio/#audiorendercapacityevent",
+      "linkingText": [
+        "AudioRenderCapacityEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent",
+        "title": "AudioRenderCapacityEvent",
+        "number": "1.2.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiorendercapacityevent-audiorendercapacityevent",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityevent-audiorendercapacityevent",
+      "linkingText": [
+        "AudioRenderCapacityEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "AudioRenderCapacityEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "AudioRenderCapacityEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent",
+        "title": "AudioRenderCapacityEvent",
+        "number": "1.2.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiorendercapacityevent-audiorendercapacityevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityevent-audiorendercapacityevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type, eventInitDict)",
+        "AudioRenderCapacityEvent/constructor(type, eventInitDict)",
+        "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type)",
+        "AudioRenderCapacityEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent",
+        "title": "AudioRenderCapacityEvent",
+        "number": "1.2.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiorendercapacityevent-audiorendercapacityevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityevent-audiorendercapacityevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type, eventInitDict)",
+        "AudioRenderCapacityEvent/constructor(type, eventInitDict)",
+        "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type)",
+        "AudioRenderCapacityEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent",
+        "title": "AudioRenderCapacityEvent",
+        "number": "1.2.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-audiorendercapacityeventinit",
+      "href": "https://www.w3.org/TR/webaudio/#dictdef-audiorendercapacityeventinit",
+      "linkingText": [
+        "AudioRenderCapacityEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent",
+        "title": "AudioRenderCapacityEvent",
+        "number": "1.2.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiorendercapacityeventinit-timestamp",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityeventinit-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioRenderCapacityEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent",
+        "title": "AudioRenderCapacityEvent",
+        "number": "1.2.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiorendercapacityeventinit-averageload",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityeventinit-averageload",
+      "linkingText": [
+        "averageLoad"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioRenderCapacityEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent",
+        "title": "AudioRenderCapacityEvent",
+        "number": "1.2.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiorendercapacityeventinit-peakload",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityeventinit-peakload",
+      "linkingText": [
+        "peakLoad"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioRenderCapacityEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent",
+        "title": "AudioRenderCapacityEvent",
+        "number": "1.2.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiorendercapacityeventinit-underrunratio",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityeventinit-underrunratio",
+      "linkingText": [
+        "underrunRatio"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioRenderCapacityEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent",
+        "title": "AudioRenderCapacityEvent",
+        "number": "1.2.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiorendercapacityevent-timestamp",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityevent-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioRenderCapacityEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent-attributes",
+        "title": "Attributes",
+        "number": "1.2.11.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiorendercapacityevent-averageload",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityevent-averageload",
+      "linkingText": [
+        "averageLoad"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioRenderCapacityEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent-attributes",
+        "title": "Attributes",
+        "number": "1.2.11.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiorendercapacityevent-peakload",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityevent-peakload",
+      "linkingText": [
+        "peakLoad"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioRenderCapacityEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent-attributes",
+        "title": "Attributes",
+        "number": "1.2.11.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiorendercapacityevent-underrunratio",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiorendercapacityevent-underrunratio",
+      "linkingText": [
+        "underrunRatio"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioRenderCapacityEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioRenderCapacityEvent-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioRenderCapacityEvent-attributes",
+        "title": "Attributes",
+        "number": "1.2.11.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "OfflineAudioContext",
+      "href": "https://www.w3.org/TR/webaudio/#OfflineAudioContext",
       "linkingText": [
         "OfflineAudioContext"
       ],
@@ -2337,7 +3242,7 @@
         "title": "The OfflineAudioContext Interface",
         "number": "1.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-offlineaudiocontext-suspend-suspendtime-suspendtime",
@@ -2531,6 +3436,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "eventdef-offlineaudiocontext-complete",
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-offlineaudiocontext-complete",
+      "linkingText": [
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#OfflineAudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-offlineaudiocontext-startrendering",
       "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-startrendering",
       "linkingText": [
@@ -2679,25 +3605,6 @@
       "id": "OfflineAudioContextOptions",
       "href": "https://www.w3.org/TR/webaudio/#OfflineAudioContextOptions",
       "linkingText": [
-        "offlineaudiocontextoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "OfflineAudioContextOptions",
-        "href": "https://www.w3.org/TR/webaudio/#OfflineAudioContextOptions",
-        "title": "OfflineAudioContextOptions",
-        "number": "1.3.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-offlineaudiocontextoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-offlineaudiocontextoptions",
-      "linkingText": [
         "OfflineAudioContextOptions"
       ],
       "localLinkingText": [],
@@ -2711,7 +3618,7 @@
         "title": "OfflineAudioContextOptions",
         "number": "1.3.4"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-offlineaudiocontextoptions-length",
@@ -2777,27 +3684,29 @@
       "definedIn": "dt"
     },
     {
-      "id": "OfflineAudioCompletionEvent",
-      "href": "https://www.w3.org/TR/webaudio/#OfflineAudioCompletionEvent",
+      "id": "dom-offlineaudiocontextoptions-rendersizehint",
+      "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontextoptions-rendersizehint",
       "linkingText": [
-        "offlineaudiocompletionevent"
+        "renderSizeHint"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "OfflineAudioContextOptions"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "OfflineAudioCompletionEvent",
-        "href": "https://www.w3.org/TR/webaudio/#OfflineAudioCompletionEvent",
-        "title": "The OfflineAudioCompletionEvent Interface",
-        "number": "1.3.5"
+        "id": "dictionary-offlineaudiocontextoptions-members",
+        "href": "https://www.w3.org/TR/webaudio/#dictionary-offlineaudiocontextoptions-members",
+        "title": "Dictionary OfflineAudioContextOptions Members",
+        "number": "1.3.4.1"
       },
-      "definedIn": "heading"
+      "definedIn": "dt"
     },
     {
-      "id": "offlineaudiocompletionevent",
-      "href": "https://www.w3.org/TR/webaudio/#offlineaudiocompletionevent",
+      "id": "OfflineAudioCompletionEvent",
+      "href": "https://www.w3.org/TR/webaudio/#OfflineAudioCompletionEvent",
       "linkingText": [
         "OfflineAudioCompletionEvent"
       ],
@@ -2812,7 +3721,7 @@
         "title": "The OfflineAudioCompletionEvent Interface",
         "number": "1.3.5"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-offlineaudiocompletionevent-offlineaudiocompletionevent",
@@ -2905,25 +3814,6 @@
       "id": "OfflineAudioCompletionEventInit",
       "href": "https://www.w3.org/TR/webaudio/#OfflineAudioCompletionEventInit",
       "linkingText": [
-        "offlineaudiocompletioneventinit"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "OfflineAudioCompletionEventInit",
-        "href": "https://www.w3.org/TR/webaudio/#OfflineAudioCompletionEventInit",
-        "title": "OfflineAudioCompletionEventInit",
-        "number": "1.3.5.2"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-offlineaudiocompletioneventinit",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-offlineaudiocompletioneventinit",
-      "linkingText": [
         "OfflineAudioCompletionEventInit"
       ],
       "localLinkingText": [],
@@ -2937,7 +3827,7 @@
         "title": "OfflineAudioCompletionEventInit",
         "number": "1.3.5.2"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-offlineaudiocompletioneventinit-renderedbuffer",
@@ -2964,7 +3854,7 @@
       "id": "AudioBuffer",
       "href": "https://www.w3.org/TR/webaudio/#AudioBuffer",
       "linkingText": [
-        "audiobuffer"
+        "AudioBuffer"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -3062,25 +3952,6 @@
         "number": "1.4"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "audiobuffer",
-      "href": "https://www.w3.org/TR/webaudio/#audiobuffer",
-      "linkingText": [
-        "AudioBuffer"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioBuffer",
-        "href": "https://www.w3.org/TR/webaudio/#AudioBuffer",
-        "title": "The AudioBuffer Interface",
-        "number": "1.4"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-audiobuffer-audiobuffer-options-options",
@@ -3620,25 +4491,6 @@
       "id": "AudioBufferOptions",
       "href": "https://www.w3.org/TR/webaudio/#AudioBufferOptions",
       "linkingText": [
-        "audiobufferoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioBufferOptions",
-        "href": "https://www.w3.org/TR/webaudio/#AudioBufferOptions",
-        "title": "AudioBufferOptions",
-        "number": "1.4.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-audiobufferoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-audiobufferoptions",
-      "linkingText": [
         "AudioBufferOptions"
       ],
       "localLinkingText": [],
@@ -3652,7 +4504,7 @@
         "title": "AudioBufferOptions",
         "number": "1.4.4"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audiobufferoptions-length",
@@ -3721,7 +4573,7 @@
       "id": "AudioNode",
       "href": "https://www.w3.org/TR/webaudio/#AudioNode",
       "linkingText": [
-        "audionode"
+        "AudioNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -3773,25 +4625,6 @@
         "number": "1.5"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "audionode",
-      "href": "https://www.w3.org/TR/webaudio/#audionode",
-      "linkingText": [
-        "AudioNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioNode",
-        "href": "https://www.w3.org/TR/webaudio/#AudioNode",
-        "title": "The AudioNode Interface",
-        "number": "1.5"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "factory-method",
@@ -4833,25 +5666,6 @@
       "id": "AudioNodeOptions",
       "href": "https://www.w3.org/TR/webaudio/#AudioNodeOptions",
       "linkingText": [
-        "audionodeoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioNodeOptions",
-        "href": "https://www.w3.org/TR/webaudio/#AudioNodeOptions",
-        "title": "AudioNodeOptions",
-        "number": "1.5.6"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-audionodeoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-audionodeoptions",
-      "linkingText": [
         "AudioNodeOptions"
       ],
       "localLinkingText": [],
@@ -4865,7 +5679,7 @@
         "title": "AudioNodeOptions",
         "number": "1.5.6"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audionodeoptions-channelcount",
@@ -4934,7 +5748,7 @@
       "id": "AudioParam",
       "href": "https://www.w3.org/TR/webaudio/#AudioParam",
       "linkingText": [
-        "audioparam"
+        "AudioParam"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -5184,25 +5998,6 @@
         "number": "1.6"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "audioparam",
-      "href": "https://www.w3.org/TR/webaudio/#audioparam",
-      "linkingText": [
-        "AudioParam"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioParam",
-        "href": "https://www.w3.org/TR/webaudio/#AudioParam",
-        "title": "The AudioParam Interface",
-        "number": "1.6"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-audioparam-setvalueattime-value-starttime-value",
@@ -6145,7 +6940,7 @@
       "id": "AudioScheduledSourceNode",
       "href": "https://www.w3.org/TR/webaudio/#AudioScheduledSourceNode",
       "linkingText": [
-        "audioscheduledsourcenode"
+        "AudioScheduledSourceNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -6201,25 +6996,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "audioscheduledsourcenode",
-      "href": "https://www.w3.org/TR/webaudio/#audioscheduledsourcenode",
-      "linkingText": [
-        "AudioScheduledSourceNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioScheduledSourceNode",
-        "href": "https://www.w3.org/TR/webaudio/#AudioScheduledSourceNode",
-        "title": "The AudioScheduledSourceNode Interface",
-        "number": "1.7"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-audioscheduledsourcenode-onended",
       "href": "https://www.w3.org/TR/webaudio/#dom-audioscheduledsourcenode-onended",
       "linkingText": [
@@ -6239,6 +7015,27 @@
         "number": "1.7.1"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-audioscheduledsourcenode-ended",
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-audioscheduledsourcenode-ended",
+      "linkingText": [
+        "ended"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "AudioScheduledSourceNode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioScheduledSourceNode-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioScheduledSourceNode-attributes",
+        "title": "Attributes",
+        "number": "1.7.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-audioscheduledsourcenode-start",
@@ -6330,25 +7127,6 @@
       "id": "AnalyserNode",
       "href": "https://www.w3.org/TR/webaudio/#AnalyserNode",
       "linkingText": [
-        "analysernode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AnalyserNode",
-        "href": "https://www.w3.org/TR/webaudio/#AnalyserNode",
-        "title": "The AnalyserNode Interface",
-        "number": "1.8"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "analysernode",
-      "href": "https://www.w3.org/TR/webaudio/#analysernode",
-      "linkingText": [
         "AnalyserNode"
       ],
       "localLinkingText": [],
@@ -6362,7 +7140,7 @@
         "title": "The AnalyserNode Interface",
         "number": "1.8"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-analysernode-analysernode-context-options-context",
@@ -6839,25 +7617,6 @@
       "id": "AnalyserOptions",
       "href": "https://www.w3.org/TR/webaudio/#AnalyserOptions",
       "linkingText": [
-        "analyseroptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AnalyserOptions",
-        "href": "https://www.w3.org/TR/webaudio/#AnalyserOptions",
-        "title": "AnalyserOptions",
-        "number": "1.8.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-analyseroptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-analyseroptions",
-      "linkingText": [
         "AnalyserOptions"
       ],
       "localLinkingText": [],
@@ -6871,7 +7630,7 @@
         "title": "AnalyserOptions",
         "number": "1.8.4"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-analyseroptions-fftsize",
@@ -7094,7 +7853,7 @@
       "id": "AudioBufferSourceNode",
       "href": "https://www.w3.org/TR/webaudio/#AudioBufferSourceNode",
       "linkingText": [
-        "audiobuffersourcenode"
+        "AudioBufferSourceNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -7169,49 +7928,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "audiobuffersourcenode",
-      "href": "https://www.w3.org/TR/webaudio/#audiobuffersourcenode",
-      "linkingText": [
-        "AudioBufferSourceNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioBufferSourceNode",
-        "href": "https://www.w3.org/TR/webaudio/#AudioBufferSourceNode",
-        "title": "The AudioBufferSourceNode Interface",
-        "number": "1.9"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-audiobuffersourcenode-audiobuffersourcenode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-audiobuffersourcenode",
-      "linkingText": [
-        "AudioBufferSourceNode(context, options)",
-        "constructor(context, options)",
-        "AudioBufferSourceNode(context)",
-        "constructor(context)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "AudioBufferSourceNode"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioBufferSourceNode",
-        "href": "https://www.w3.org/TR/webaudio/#AudioBufferSourceNode",
-        "title": "The AudioBufferSourceNode Interface",
-        "number": "1.9"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-audiobuffersourcenode-audiobuffersourcenode-context-options-context",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-audiobuffersourcenode-context-options-context",
       "linkingText": [
@@ -7260,15 +7976,18 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-audiobuffersourcenode-constructor-audiobuffersourcenode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-constructor-audiobuffersourcenode",
+      "id": "dom-audiobuffersourcenode-audiobuffersourcenode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-audiobuffersourcenode",
       "linkingText": [
-        "AudioBufferSourceNode(context, options)"
+        "AudioBufferSourceNode(context, options)",
+        "constructor(context, options)",
+        "AudioBufferSourceNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
-      "type": "method",
+      "type": "constructor",
       "for": [
-        "AudioBufferSourceNode/constructor"
+        "AudioBufferSourceNode"
       ],
       "access": "public",
       "informative": false,
@@ -7539,25 +8258,6 @@
       "id": "AudioBufferSourceOptions",
       "href": "https://www.w3.org/TR/webaudio/#AudioBufferSourceOptions",
       "linkingText": [
-        "audiobuffersourceoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioBufferSourceOptions",
-        "href": "https://www.w3.org/TR/webaudio/#AudioBufferSourceOptions",
-        "title": "AudioBufferSourceOptions",
-        "number": "1.9.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-audiobuffersourceoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-audiobuffersourceoptions",
-      "linkingText": [
         "AudioBufferSourceOptions"
       ],
       "localLinkingText": [],
@@ -7571,7 +8271,7 @@
         "title": "AudioBufferSourceOptions",
         "number": "1.9.4"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audiobuffersourceoptions-buffer",
@@ -7703,25 +8403,6 @@
       "id": "AudioDestinationNode",
       "href": "https://www.w3.org/TR/webaudio/#AudioDestinationNode",
       "linkingText": [
-        "audiodestinationnode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioDestinationNode",
-        "href": "https://www.w3.org/TR/webaudio/#AudioDestinationNode",
-        "title": "The AudioDestinationNode Interface",
-        "number": "1.10"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "audiodestinationnode",
-      "href": "https://www.w3.org/TR/webaudio/#audiodestinationnode",
-      "linkingText": [
         "AudioDestinationNode"
       ],
       "localLinkingText": [],
@@ -7735,7 +8416,7 @@
         "title": "The AudioDestinationNode Interface",
         "number": "1.10"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audiodestinationnode-maxchannelcount",
@@ -7762,25 +8443,6 @@
       "id": "AudioListener",
       "href": "https://www.w3.org/TR/webaudio/#AudioListener",
       "linkingText": [
-        "audiolistener"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioListener",
-        "href": "https://www.w3.org/TR/webaudio/#AudioListener",
-        "title": "The AudioListener Interface",
-        "number": "1.11"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "audiolistener",
-      "href": "https://www.w3.org/TR/webaudio/#audiolistener",
-      "linkingText": [
         "AudioListener"
       ],
       "localLinkingText": [],
@@ -7794,7 +8456,7 @@
         "title": "The AudioListener Interface",
         "number": "1.11"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audiolistener-setposition-x-y-z-x",
@@ -8451,25 +9113,6 @@
       "id": "AudioProcessingEvent",
       "href": "https://www.w3.org/TR/webaudio/#AudioProcessingEvent",
       "linkingText": [
-        "audioprocessingevent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioProcessingEvent",
-        "href": "https://www.w3.org/TR/webaudio/#AudioProcessingEvent",
-        "title": "The AudioProcessingEvent Interface - DEPRECATED",
-        "number": "1.12"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "audioprocessingevent",
-      "href": "https://www.w3.org/TR/webaudio/#audioprocessingevent",
-      "linkingText": [
         "AudioProcessingEvent"
       ],
       "localLinkingText": [],
@@ -8483,7 +9126,7 @@
         "title": "The AudioProcessingEvent Interface - DEPRECATED",
         "number": "1.12"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audioprocessingevent-audioprocessingevent",
@@ -8618,25 +9261,6 @@
       "id": "AudioProcessingEventInit",
       "href": "https://www.w3.org/TR/webaudio/#AudioProcessingEventInit",
       "linkingText": [
-        "audioprocessingeventinit"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioProcessingEventInit",
-        "href": "https://www.w3.org/TR/webaudio/#AudioProcessingEventInit",
-        "title": "AudioProcessingEventInit",
-        "number": "1.12.2"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-audioprocessingeventinit",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-audioprocessingeventinit",
-      "linkingText": [
         "AudioProcessingEventInit"
       ],
       "localLinkingText": [],
@@ -8650,7 +9274,7 @@
         "title": "AudioProcessingEventInit",
         "number": "1.12.2"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audioprocessingeventinit-inputbuffer",
@@ -8719,7 +9343,7 @@
       "id": "BiquadFilterNode",
       "href": "https://www.w3.org/TR/webaudio/#BiquadFilterNode",
       "linkingText": [
-        "biquadfilternode"
+        "BiquadFilterNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -8947,25 +9571,6 @@
         "number": "1.13"
       },
       "definedIn": "table"
-    },
-    {
-      "id": "biquadfilternode",
-      "href": "https://www.w3.org/TR/webaudio/#biquadfilternode",
-      "linkingText": [
-        "BiquadFilterNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "BiquadFilterNode",
-        "href": "https://www.w3.org/TR/webaudio/#BiquadFilterNode",
-        "title": "The BiquadFilterNode Interface",
-        "number": "1.13"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-biquadfilternode-biquadfilternode",
@@ -9358,25 +9963,6 @@
       "id": "BiquadFilterOptions",
       "href": "https://www.w3.org/TR/webaudio/#BiquadFilterOptions",
       "linkingText": [
-        "biquadfilteroptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "BiquadFilterOptions",
-        "href": "https://www.w3.org/TR/webaudio/#BiquadFilterOptions",
-        "title": "BiquadFilterOptions",
-        "number": "1.13.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-biquadfilteroptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-biquadfilteroptions",
-      "linkingText": [
         "BiquadFilterOptions"
       ],
       "localLinkingText": [],
@@ -9390,7 +9976,7 @@
         "title": "BiquadFilterOptions",
         "number": "1.13.4"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-biquadfilteroptions-q",
@@ -9501,7 +10087,7 @@
       "id": "ChannelMergerNode",
       "href": "https://www.w3.org/TR/webaudio/#ChannelMergerNode",
       "linkingText": [
-        "channelmergernode"
+        "ChannelMergerNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -9515,49 +10101,6 @@
         "number": "1.14"
       },
       "definedIn": "heading"
-    },
-    {
-      "id": "channelmergernode",
-      "href": "https://www.w3.org/TR/webaudio/#channelmergernode",
-      "linkingText": [
-        "ChannelMergerNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ChannelMergerNode",
-        "href": "https://www.w3.org/TR/webaudio/#ChannelMergerNode",
-        "title": "The ChannelMergerNode Interface",
-        "number": "1.14"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-channelmergernode-channelmergernode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelmergernode-channelmergernode",
-      "linkingText": [
-        "ChannelMergerNode(context, options)",
-        "constructor(context, options)",
-        "ChannelMergerNode(context)",
-        "constructor(context)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "ChannelMergerNode"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ChannelMergerNode",
-        "href": "https://www.w3.org/TR/webaudio/#ChannelMergerNode",
-        "title": "The ChannelMergerNode Interface",
-        "number": "1.14"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-channelmergernode-channelmergernode-context-options-context",
@@ -9608,15 +10151,18 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-channelmergernode-constructor-channelmergernode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelmergernode-constructor-channelmergernode",
+      "id": "dom-channelmergernode-channelmergernode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-channelmergernode-channelmergernode",
       "linkingText": [
-        "ChannelMergerNode(context, options)"
+        "ChannelMergerNode(context, options)",
+        "constructor(context, options)",
+        "ChannelMergerNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
-      "type": "method",
+      "type": "constructor",
       "for": [
-        "ChannelMergerNode/constructor"
+        "ChannelMergerNode"
       ],
       "access": "public",
       "informative": false,
@@ -9674,25 +10220,6 @@
       "id": "ChannelMergerOptions",
       "href": "https://www.w3.org/TR/webaudio/#ChannelMergerOptions",
       "linkingText": [
-        "channelmergeroptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ChannelMergerOptions",
-        "href": "https://www.w3.org/TR/webaudio/#ChannelMergerOptions",
-        "title": "ChannelMergerOptions",
-        "number": "1.14.2"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-channelmergeroptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-channelmergeroptions",
-      "linkingText": [
         "ChannelMergerOptions"
       ],
       "localLinkingText": [],
@@ -9706,7 +10233,7 @@
         "title": "ChannelMergerOptions",
         "number": "1.14.2"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-channelmergeroptions-numberofinputs",
@@ -9733,7 +10260,7 @@
       "id": "ChannelSplitterNode",
       "href": "https://www.w3.org/TR/webaudio/#ChannelSplitterNode",
       "linkingText": [
-        "channelsplitternode"
+        "ChannelSplitterNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -9747,49 +10274,6 @@
         "number": "1.15"
       },
       "definedIn": "heading"
-    },
-    {
-      "id": "channelsplitternode",
-      "href": "https://www.w3.org/TR/webaudio/#channelsplitternode",
-      "linkingText": [
-        "ChannelSplitterNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ChannelSplitterNode",
-        "href": "https://www.w3.org/TR/webaudio/#ChannelSplitterNode",
-        "title": "The ChannelSplitterNode Interface",
-        "number": "1.15"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-channelsplitternode-channelsplitternode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelsplitternode-channelsplitternode",
-      "linkingText": [
-        "ChannelSplitterNode(context, options)",
-        "constructor(context, options)",
-        "ChannelSplitterNode(context)",
-        "constructor(context)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "ChannelSplitterNode"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ChannelSplitterNode",
-        "href": "https://www.w3.org/TR/webaudio/#ChannelSplitterNode",
-        "title": "The ChannelSplitterNode Interface",
-        "number": "1.15"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-channelsplitternode-channelsplitternode-context-options-context",
@@ -9840,15 +10324,18 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-channelsplitternode-constructor-channelsplitternode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelsplitternode-constructor-channelsplitternode",
+      "id": "dom-channelsplitternode-channelsplitternode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-channelsplitternode-channelsplitternode",
       "linkingText": [
-        "ChannelSplitterNode(context, options)"
+        "ChannelSplitterNode(context, options)",
+        "constructor(context, options)",
+        "ChannelSplitterNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
-        "ChannelSplitterNode/constructor()"
+        "ChannelSplitterNode"
       ],
       "access": "public",
       "informative": false,
@@ -9906,25 +10393,6 @@
       "id": "ChannelSplitterOptions",
       "href": "https://www.w3.org/TR/webaudio/#ChannelSplitterOptions",
       "linkingText": [
-        "channelsplitteroptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ChannelSplitterOptions",
-        "href": "https://www.w3.org/TR/webaudio/#ChannelSplitterOptions",
-        "title": "ChannelSplitterOptions",
-        "number": "1.15.2"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-channelsplitteroptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-channelsplitteroptions",
-      "linkingText": [
         "ChannelSplitterOptions"
       ],
       "localLinkingText": [],
@@ -9938,7 +10406,7 @@
         "title": "ChannelSplitterOptions",
         "number": "1.15.2"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-channelsplitteroptions-numberofoutputs",
@@ -9965,7 +10433,7 @@
       "id": "ConstantSourceNode",
       "href": "https://www.w3.org/TR/webaudio/#ConstantSourceNode",
       "linkingText": [
-        "constantsourcenode"
+        "ConstantSourceNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -9979,49 +10447,6 @@
         "number": "1.16"
       },
       "definedIn": "heading"
-    },
-    {
-      "id": "constantsourcenode",
-      "href": "https://www.w3.org/TR/webaudio/#constantsourcenode",
-      "linkingText": [
-        "ConstantSourceNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ConstantSourceNode",
-        "href": "https://www.w3.org/TR/webaudio/#ConstantSourceNode",
-        "title": "The ConstantSourceNode Interface",
-        "number": "1.16"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-constantsourcenode-constantsourcenode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-constantsourcenode-constantsourcenode",
-      "linkingText": [
-        "ConstantSourceNode(context, options)",
-        "constructor(context, options)",
-        "ConstantSourceNode(context)",
-        "constructor(context)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "ConstantSourceNode"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ConstantSourceNode",
-        "href": "https://www.w3.org/TR/webaudio/#ConstantSourceNode",
-        "title": "The ConstantSourceNode Interface",
-        "number": "1.16"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-constantsourcenode-constantsourcenode-context-options-context",
@@ -10072,15 +10497,18 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-constantsourcenode-constructor-constantsourcenode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-constantsourcenode-constructor-constantsourcenode",
+      "id": "dom-constantsourcenode-constantsourcenode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-constantsourcenode-constantsourcenode",
       "linkingText": [
-        "ConstantSourceNode(context, options)"
+        "ConstantSourceNode(context, options)",
+        "constructor(context, options)",
+        "ConstantSourceNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
-      "type": "method",
+      "type": "constructor",
       "for": [
-        "ConstantSourceNode/constructor()"
+        "ConstantSourceNode"
       ],
       "access": "public",
       "informative": false,
@@ -10159,25 +10587,6 @@
       "id": "ConstantSourceOptions",
       "href": "https://www.w3.org/TR/webaudio/#ConstantSourceOptions",
       "linkingText": [
-        "constantsourceoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ConstantSourceOptions",
-        "href": "https://www.w3.org/TR/webaudio/#ConstantSourceOptions",
-        "title": "ConstantSourceOptions",
-        "number": "1.16.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-constantsourceoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-constantsourceoptions",
-      "linkingText": [
         "ConstantSourceOptions"
       ],
       "localLinkingText": [],
@@ -10191,7 +10600,7 @@
         "title": "ConstantSourceOptions",
         "number": "1.16.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-constantsourceoptions-offset",
@@ -10218,7 +10627,7 @@
       "id": "ConvolverNode",
       "href": "https://www.w3.org/TR/webaudio/#ConvolverNode",
       "linkingText": [
-        "convolvernode"
+        "ConvolverNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -10232,49 +10641,6 @@
         "number": "1.17"
       },
       "definedIn": "heading"
-    },
-    {
-      "id": "convolvernode",
-      "href": "https://www.w3.org/TR/webaudio/#convolvernode",
-      "linkingText": [
-        "ConvolverNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ConvolverNode",
-        "href": "https://www.w3.org/TR/webaudio/#ConvolverNode",
-        "title": "The ConvolverNode Interface",
-        "number": "1.17"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-convolvernode-convolvernode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-convolvernode",
-      "linkingText": [
-        "ConvolverNode(context, options)",
-        "constructor(context, options)",
-        "ConvolverNode(context)",
-        "constructor(context)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "ConvolverNode"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ConvolverNode",
-        "href": "https://www.w3.org/TR/webaudio/#ConvolverNode",
-        "title": "The ConvolverNode Interface",
-        "number": "1.17"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-convolvernode-convolvernode-context-options-context",
@@ -10325,15 +10691,18 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-convolvernode-constructor-convolvernode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-constructor-convolvernode",
+      "id": "dom-convolvernode-convolvernode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-convolvernode",
       "linkingText": [
-        "ConvolverNode(context, options)"
+        "ConvolverNode(context, options)",
+        "constructor(context, options)",
+        "ConvolverNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
-        "ConvolverNode/constructor()"
+        "ConvolverNode"
       ],
       "access": "public",
       "informative": false,
@@ -10454,25 +10823,6 @@
       "id": "ConvolverOptions",
       "href": "https://www.w3.org/TR/webaudio/#ConvolverOptions",
       "linkingText": [
-        "convolveroptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ConvolverOptions",
-        "href": "https://www.w3.org/TR/webaudio/#ConvolverOptions",
-        "title": "ConvolverOptions",
-        "number": "1.17.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-convolveroptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-convolveroptions",
-      "linkingText": [
         "ConvolverOptions"
       ],
       "localLinkingText": [],
@@ -10486,7 +10836,7 @@
         "title": "ConvolverOptions",
         "number": "1.17.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-convolveroptions-buffer",
@@ -10534,7 +10884,7 @@
       "id": "DelayNode",
       "href": "https://www.w3.org/TR/webaudio/#DelayNode",
       "linkingText": [
-        "delaynode"
+        "DelayNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -10548,49 +10898,6 @@
         "number": "1.18"
       },
       "definedIn": "heading"
-    },
-    {
-      "id": "delaynode",
-      "href": "https://www.w3.org/TR/webaudio/#delaynode",
-      "linkingText": [
-        "DelayNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "DelayNode",
-        "href": "https://www.w3.org/TR/webaudio/#DelayNode",
-        "title": "The DelayNode Interface",
-        "number": "1.18"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-delaynode-delaynode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-delaynode-delaynode",
-      "linkingText": [
-        "DelayNode(context, options)",
-        "constructor(context, options)",
-        "DelayNode(context)",
-        "constructor(context)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "DelayNode"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "DelayNode",
-        "href": "https://www.w3.org/TR/webaudio/#DelayNode",
-        "title": "The DelayNode Interface",
-        "number": "1.18"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-delaynode-delaynode-context-options-context",
@@ -10641,15 +10948,18 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-delaynode-constructor-delaynode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-delaynode-constructor-delaynode",
+      "id": "dom-delaynode-delaynode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-delaynode-delaynode",
       "linkingText": [
-        "DelayNode(context, options)"
+        "DelayNode(context, options)",
+        "constructor(context, options)",
+        "DelayNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
-        "DelayNode/constructor()"
+        "DelayNode"
       ],
       "access": "public",
       "informative": false,
@@ -10728,25 +11038,6 @@
       "id": "DelayOptions",
       "href": "https://www.w3.org/TR/webaudio/#DelayOptions",
       "linkingText": [
-        "delayoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "DelayOptions",
-        "href": "https://www.w3.org/TR/webaudio/#DelayOptions",
-        "title": "DelayOptions",
-        "number": "1.18.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-delayoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-delayoptions",
-      "linkingText": [
         "DelayOptions"
       ],
       "localLinkingText": [],
@@ -10760,7 +11051,7 @@
         "title": "DelayOptions",
         "number": "1.18.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-delayoptions-delaytime",
@@ -10846,7 +11137,7 @@
       "id": "DynamicsCompressorNode",
       "href": "https://www.w3.org/TR/webaudio/#DynamicsCompressorNode",
       "linkingText": [
-        "dynamicscompressornode"
+        "DynamicsCompressorNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -10860,49 +11151,6 @@
         "number": "1.19"
       },
       "definedIn": "heading"
-    },
-    {
-      "id": "dynamicscompressornode",
-      "href": "https://www.w3.org/TR/webaudio/#dynamicscompressornode",
-      "linkingText": [
-        "DynamicsCompressorNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "DynamicsCompressorNode",
-        "href": "https://www.w3.org/TR/webaudio/#DynamicsCompressorNode",
-        "title": "The DynamicsCompressorNode Interface",
-        "number": "1.19"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-dynamicscompressornode-dynamicscompressornode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-dynamicscompressornode-dynamicscompressornode",
-      "linkingText": [
-        "DynamicsCompressorNode(context, options)",
-        "constructor(context, options)",
-        "DynamicsCompressorNode(context)",
-        "constructor(context)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "DynamicsCompressorNode"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "DynamicsCompressorNode",
-        "href": "https://www.w3.org/TR/webaudio/#DynamicsCompressorNode",
-        "title": "The DynamicsCompressorNode Interface",
-        "number": "1.19"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-dynamicscompressornode-dynamicscompressornode-context-options-context",
@@ -10953,15 +11201,18 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-dynamicscompressornode-constructor-dynamicscompressornode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-dynamicscompressornode-constructor-dynamicscompressornode",
+      "id": "dom-dynamicscompressornode-dynamicscompressornode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-dynamicscompressornode-dynamicscompressornode",
       "linkingText": [
-        "DynamicsCompressorNode(context, options)"
+        "DynamicsCompressorNode(context, options)",
+        "constructor(context, options)",
+        "DynamicsCompressorNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
-      "type": "method",
+      "type": "constructor",
       "for": [
-        "DynamicsCompressorNode/constructor()"
+        "DynamicsCompressorNode"
       ],
       "access": "public",
       "informative": false,
@@ -11166,25 +11417,6 @@
       "id": "DynamicsCompressorOptions",
       "href": "https://www.w3.org/TR/webaudio/#DynamicsCompressorOptions",
       "linkingText": [
-        "dynamicscompressoroptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "DynamicsCompressorOptions",
-        "href": "https://www.w3.org/TR/webaudio/#DynamicsCompressorOptions",
-        "title": "DynamicsCompressorOptions",
-        "number": "1.19.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-dynamicscompressoroptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-dynamicscompressoroptions",
-      "linkingText": [
         "DynamicsCompressorOptions"
       ],
       "localLinkingText": [],
@@ -11198,7 +11430,7 @@
         "title": "DynamicsCompressorOptions",
         "number": "1.19.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-dynamicscompressoroptions-attack",
@@ -11484,7 +11716,7 @@
       "id": "GainNode",
       "href": "https://www.w3.org/TR/webaudio/#GainNode",
       "linkingText": [
-        "gainnode"
+        "GainNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -11498,49 +11730,6 @@
         "number": "1.20"
       },
       "definedIn": "heading"
-    },
-    {
-      "id": "gainnode",
-      "href": "https://www.w3.org/TR/webaudio/#gainnode",
-      "linkingText": [
-        "GainNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "GainNode",
-        "href": "https://www.w3.org/TR/webaudio/#GainNode",
-        "title": "The GainNode Interface",
-        "number": "1.20"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gainnode-gainnode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-gainnode-gainnode",
-      "linkingText": [
-        "GainNode(context, options)",
-        "constructor(context, options)",
-        "GainNode(context)",
-        "constructor(context)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "GainNode"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "GainNode",
-        "href": "https://www.w3.org/TR/webaudio/#GainNode",
-        "title": "The GainNode Interface",
-        "number": "1.20"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-gainnode-gainnode-context-options-context",
@@ -11591,15 +11780,18 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gainnode-constructor-gainnode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-gainnode-constructor-gainnode",
+      "id": "dom-gainnode-gainnode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-gainnode-gainnode",
       "linkingText": [
-        "GainNode(context, options)"
+        "GainNode(context, options)",
+        "constructor(context, options)",
+        "GainNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
-      "type": "method",
+      "type": "constructor",
       "for": [
-        "GainNode/constructor()"
+        "GainNode"
       ],
       "access": "public",
       "informative": false,
@@ -11678,25 +11870,6 @@
       "id": "GainOptions",
       "href": "https://www.w3.org/TR/webaudio/#GainOptions",
       "linkingText": [
-        "gainoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "GainOptions",
-        "href": "https://www.w3.org/TR/webaudio/#GainOptions",
-        "title": "GainOptions",
-        "number": "1.20.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-gainoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-gainoptions",
-      "linkingText": [
         "GainOptions"
       ],
       "localLinkingText": [],
@@ -11710,7 +11883,7 @@
         "title": "GainOptions",
         "number": "1.20.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-gainoptions-gain",
@@ -11737,7 +11910,7 @@
       "id": "IIRFilterNode",
       "href": "https://www.w3.org/TR/webaudio/#IIRFilterNode",
       "linkingText": [
-        "iirfilternode"
+        "IIRFilterNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -11751,47 +11924,6 @@
         "number": "1.21"
       },
       "definedIn": "heading"
-    },
-    {
-      "id": "iirfilternode",
-      "href": "https://www.w3.org/TR/webaudio/#iirfilternode",
-      "linkingText": [
-        "IIRFilterNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "IIRFilterNode",
-        "href": "https://www.w3.org/TR/webaudio/#IIRFilterNode",
-        "title": "The IIRFilterNode Interface",
-        "number": "1.21"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-iirfilternode-iirfilternode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-iirfilternode",
-      "linkingText": [
-        "IIRFilterNode(context, options)",
-        "constructor(context, options)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "IIRFilterNode"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "IIRFilterNode",
-        "href": "https://www.w3.org/TR/webaudio/#IIRFilterNode",
-        "title": "The IIRFilterNode Interface",
-        "number": "1.21"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-iirfilternode-iirfilternode-context-options-context",
@@ -11901,15 +12033,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-iirfilternode-constructor-iirfilternode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-constructor-iirfilternode",
+      "id": "dom-iirfilternode-iirfilternode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-iirfilternode",
       "linkingText": [
-        "IIRFilterNode(context, options)"
+        "IIRFilterNode(context, options)",
+        "constructor(context, options)"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
-        "IIRFilterNode/constructor()"
+        "IIRFilterNode"
       ],
       "access": "public",
       "informative": false,
@@ -12051,25 +12184,6 @@
       "id": "IIRFilterOptions",
       "href": "https://www.w3.org/TR/webaudio/#IIRFilterOptions",
       "linkingText": [
-        "iirfilteroptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "IIRFilterOptions",
-        "href": "https://www.w3.org/TR/webaudio/#IIRFilterOptions",
-        "title": "IIRFilterOptions",
-        "number": "1.21.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-iirfilteroptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-iirfilteroptions",
-      "linkingText": [
         "IIRFilterOptions"
       ],
       "localLinkingText": [],
@@ -12083,7 +12197,7 @@
         "title": "IIRFilterOptions",
         "number": "1.21.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-iirfilteroptions-feedforward",
@@ -12131,25 +12245,6 @@
       "id": "MediaElementAudioSourceNode",
       "href": "https://www.w3.org/TR/webaudio/#MediaElementAudioSourceNode",
       "linkingText": [
-        "mediaelementaudiosourcenode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "MediaElementAudioSourceNode",
-        "href": "https://www.w3.org/TR/webaudio/#MediaElementAudioSourceNode",
-        "title": "The MediaElementAudioSourceNode Interface",
-        "number": "1.22"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "mediaelementaudiosourcenode",
-      "href": "https://www.w3.org/TR/webaudio/#mediaelementaudiosourcenode",
-      "linkingText": [
         "MediaElementAudioSourceNode"
       ],
       "localLinkingText": [],
@@ -12163,7 +12258,7 @@
         "title": "The MediaElementAudioSourceNode Interface",
         "number": "1.22"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode-context-options-context",
@@ -12298,25 +12393,6 @@
       "id": "MediaElementAudioSourceOptions",
       "href": "https://www.w3.org/TR/webaudio/#MediaElementAudioSourceOptions",
       "linkingText": [
-        "mediaelementaudiosourceoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "MediaElementAudioSourceOptions",
-        "href": "https://www.w3.org/TR/webaudio/#MediaElementAudioSourceOptions",
-        "title": "MediaElementAudioSourceOptions",
-        "number": "1.22.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-mediaelementaudiosourceoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-mediaelementaudiosourceoptions",
-      "linkingText": [
         "MediaElementAudioSourceOptions"
       ],
       "localLinkingText": [],
@@ -12330,7 +12406,7 @@
         "title": "MediaElementAudioSourceOptions",
         "number": "1.22.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-mediaelementaudiosourceoptions-mediaelement",
@@ -12357,25 +12433,6 @@
       "id": "MediaStreamAudioDestinationNode",
       "href": "https://www.w3.org/TR/webaudio/#MediaStreamAudioDestinationNode",
       "linkingText": [
-        "mediastreamaudiodestinationnode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "MediaStreamAudioDestinationNode",
-        "href": "https://www.w3.org/TR/webaudio/#MediaStreamAudioDestinationNode",
-        "title": "The MediaStreamAudioDestinationNode Interface",
-        "number": "1.23"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "mediastreamaudiodestinationnode",
-      "href": "https://www.w3.org/TR/webaudio/#mediastreamaudiodestinationnode",
-      "linkingText": [
         "MediaStreamAudioDestinationNode"
       ],
       "localLinkingText": [],
@@ -12389,7 +12446,7 @@
         "title": "The MediaStreamAudioDestinationNode Interface",
         "number": "1.23"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode-context-options-context",
@@ -12530,25 +12587,6 @@
       "id": "MediaStreamAudioSourceNode",
       "href": "https://www.w3.org/TR/webaudio/#MediaStreamAudioSourceNode",
       "linkingText": [
-        "mediastreamaudiosourcenode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "MediaStreamAudioSourceNode",
-        "href": "https://www.w3.org/TR/webaudio/#MediaStreamAudioSourceNode",
-        "title": "The MediaStreamAudioSourceNode Interface",
-        "number": "1.24"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "mediastreamaudiosourcenode",
-      "href": "https://www.w3.org/TR/webaudio/#mediastreamaudiosourcenode",
-      "linkingText": [
         "MediaStreamAudioSourceNode"
       ],
       "localLinkingText": [],
@@ -12562,7 +12600,7 @@
         "title": "The MediaStreamAudioSourceNode Interface",
         "number": "1.24"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode-context-options-context",
@@ -12718,25 +12756,6 @@
       "id": "MediaStreamAudioSourceOptions",
       "href": "https://www.w3.org/TR/webaudio/#MediaStreamAudioSourceOptions",
       "linkingText": [
-        "mediastreamaudiosourceoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "MediaStreamAudioSourceOptions",
-        "href": "https://www.w3.org/TR/webaudio/#MediaStreamAudioSourceOptions",
-        "title": "MediaStreamAudioSourceOptions",
-        "number": "1.24.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-mediastreamaudiosourceoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-mediastreamaudiosourceoptions",
-      "linkingText": [
         "MediaStreamAudioSourceOptions"
       ],
       "localLinkingText": [],
@@ -12750,7 +12769,7 @@
         "title": "MediaStreamAudioSourceOptions",
         "number": "1.24.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-mediastreamaudiosourceoptions-mediastream",
@@ -12777,25 +12796,6 @@
       "id": "MediaStreamTrackAudioSourceNode",
       "href": "https://www.w3.org/TR/webaudio/#MediaStreamTrackAudioSourceNode",
       "linkingText": [
-        "mediastreamtrackaudiosourcenode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "MediaStreamTrackAudioSourceNode",
-        "href": "https://www.w3.org/TR/webaudio/#MediaStreamTrackAudioSourceNode",
-        "title": "The MediaStreamTrackAudioSourceNode Interface",
-        "number": "1.25"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "mediastreamtrackaudiosourcenode",
-      "href": "https://www.w3.org/TR/webaudio/#mediastreamtrackaudiosourcenode",
-      "linkingText": [
         "MediaStreamTrackAudioSourceNode"
       ],
       "localLinkingText": [],
@@ -12809,7 +12809,7 @@
         "title": "The MediaStreamTrackAudioSourceNode Interface",
         "number": "1.25"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode-context-options-context",
@@ -12923,25 +12923,6 @@
       "id": "MediaStreamTrackAudioSourceOptions",
       "href": "https://www.w3.org/TR/webaudio/#MediaStreamTrackAudioSourceOptions",
       "linkingText": [
-        "mediastreamtrackaudiosourceoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "MediaStreamTrackAudioSourceOptions",
-        "href": "https://www.w3.org/TR/webaudio/#MediaStreamTrackAudioSourceOptions",
-        "title": "MediaStreamTrackAudioSourceOptions",
-        "number": "1.25.2"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-mediastreamtrackaudiosourceoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-mediastreamtrackaudiosourceoptions",
-      "linkingText": [
         "MediaStreamTrackAudioSourceOptions"
       ],
       "localLinkingText": [],
@@ -12955,7 +12936,7 @@
         "title": "MediaStreamTrackAudioSourceOptions",
         "number": "1.25.2"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-mediastreamtrackaudiosourceoptions-mediastreamtrack",
@@ -12982,7 +12963,7 @@
       "id": "OscillatorNode",
       "href": "https://www.w3.org/TR/webaudio/#OscillatorNode",
       "linkingText": [
-        "oscillatornode"
+        "OscillatorNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -13144,25 +13125,6 @@
         "number": "1.26"
       },
       "definedIn": "table"
-    },
-    {
-      "id": "oscillatornode",
-      "href": "https://www.w3.org/TR/webaudio/#oscillatornode",
-      "linkingText": [
-        "OscillatorNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "OscillatorNode",
-        "href": "https://www.w3.org/TR/webaudio/#OscillatorNode",
-        "title": "The OscillatorNode Interface",
-        "number": "1.26"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-oscillatornode-oscillatornode-context-options-context",
@@ -13408,25 +13370,6 @@
       "id": "OscillatorOptions",
       "href": "https://www.w3.org/TR/webaudio/#OscillatorOptions",
       "linkingText": [
-        "oscillatoroptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "OscillatorOptions",
-        "href": "https://www.w3.org/TR/webaudio/#OscillatorOptions",
-        "title": "OscillatorOptions",
-        "number": "1.26.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-oscillatoroptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-oscillatoroptions",
-      "linkingText": [
         "OscillatorOptions"
       ],
       "localLinkingText": [],
@@ -13440,7 +13383,7 @@
         "title": "OscillatorOptions",
         "number": "1.26.4"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-oscillatoroptions-detune",
@@ -13530,7 +13473,7 @@
       "id": "PannerNode",
       "href": "https://www.w3.org/TR/webaudio/#PannerNode",
       "linkingText": [
-        "pannernode"
+        "PannerNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -13711,25 +13654,6 @@
         "number": "1.27"
       },
       "definedIn": "table"
-    },
-    {
-      "id": "pannernode",
-      "href": "https://www.w3.org/TR/webaudio/#pannernode",
-      "linkingText": [
-        "PannerNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "PannerNode",
-        "href": "https://www.w3.org/TR/webaudio/#PannerNode",
-        "title": "The PannerNode Interface",
-        "number": "1.27"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-pannernode-pannernode-context-options-context",
@@ -14437,25 +14361,6 @@
       "id": "PannerOptions",
       "href": "https://www.w3.org/TR/webaudio/#PannerOptions",
       "linkingText": [
-        "panneroptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "PannerOptions",
-        "href": "https://www.w3.org/TR/webaudio/#PannerOptions",
-        "title": "PannerOptions",
-        "number": "1.27.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-panneroptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-panneroptions",
-      "linkingText": [
         "PannerOptions"
       ],
       "localLinkingText": [],
@@ -14469,7 +14374,7 @@
         "title": "PannerOptions",
         "number": "1.27.4"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-panneroptions-coneinnerangle",
@@ -14769,25 +14674,6 @@
       "id": "PeriodicWave",
       "href": "https://www.w3.org/TR/webaudio/#PeriodicWave",
       "linkingText": [
-        "periodicwave"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "PeriodicWave",
-        "href": "https://www.w3.org/TR/webaudio/#PeriodicWave",
-        "title": "The PeriodicWave Interface",
-        "number": "1.28"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "periodicwave",
-      "href": "https://www.w3.org/TR/webaudio/#periodicwave",
-      "linkingText": [
         "PeriodicWave"
       ],
       "localLinkingText": [],
@@ -14801,7 +14687,7 @@
         "title": "The PeriodicWave Interface",
         "number": "1.28"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-periodicwave-periodicwave-context-options-context",
@@ -14984,25 +14870,6 @@
       "id": "PeriodicWaveConstraints",
       "href": "https://www.w3.org/TR/webaudio/#PeriodicWaveConstraints",
       "linkingText": [
-        "periodicwaveconstraints"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "PeriodicWaveConstraints",
-        "href": "https://www.w3.org/TR/webaudio/#PeriodicWaveConstraints",
-        "title": "PeriodicWaveConstraints",
-        "number": "1.28.2"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-periodicwaveconstraints",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-periodicwaveconstraints",
-      "linkingText": [
         "PeriodicWaveConstraints"
       ],
       "localLinkingText": [],
@@ -15016,7 +14883,7 @@
         "title": "PeriodicWaveConstraints",
         "number": "1.28.2"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-periodicwaveconstraints-disablenormalization",
@@ -15043,25 +14910,6 @@
       "id": "PeriodicWaveOptions",
       "href": "https://www.w3.org/TR/webaudio/#PeriodicWaveOptions",
       "linkingText": [
-        "periodicwaveoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "PeriodicWaveOptions",
-        "href": "https://www.w3.org/TR/webaudio/#PeriodicWaveOptions",
-        "title": "PeriodicWaveOptions",
-        "number": "1.28.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-periodicwaveoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-periodicwaveoptions",
-      "linkingText": [
         "PeriodicWaveOptions"
       ],
       "localLinkingText": [],
@@ -15075,7 +14923,7 @@
         "title": "PeriodicWaveOptions",
         "number": "1.28.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-periodicwaveoptions-imag",
@@ -15123,25 +14971,6 @@
       "id": "ScriptProcessorNode",
       "href": "https://www.w3.org/TR/webaudio/#ScriptProcessorNode",
       "linkingText": [
-        "scriptprocessornode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ScriptProcessorNode",
-        "href": "https://www.w3.org/TR/webaudio/#ScriptProcessorNode",
-        "title": "The ScriptProcessorNode Interface - DEPRECATED",
-        "number": "1.29"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "scriptprocessornode",
-      "href": "https://www.w3.org/TR/webaudio/#scriptprocessornode",
-      "linkingText": [
         "ScriptProcessorNode"
       ],
       "localLinkingText": [],
@@ -15155,7 +14984,7 @@
         "title": "The ScriptProcessorNode Interface - DEPRECATED",
         "number": "1.29"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-scriptprocessornode-buffersize",
@@ -15200,23 +15029,25 @@
       "definedIn": "dt"
     },
     {
-      "id": "StereoPannerNode",
-      "href": "https://www.w3.org/TR/webaudio/#StereoPannerNode",
+      "id": "eventdef-scriptprocessornode-audioprocess",
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-scriptprocessornode-audioprocess",
       "linkingText": [
-        "stereopannernode"
+        "audioprocess"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "event",
+      "for": [
+        "ScriptProcessorNode"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "StereoPannerNode",
-        "href": "https://www.w3.org/TR/webaudio/#StereoPannerNode",
-        "title": "The StereoPannerNode Interface",
-        "number": "1.30"
+        "id": "ScriptProcessorNode-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#ScriptProcessorNode-attributes",
+        "title": "Attributes",
+        "number": "1.29.1"
       },
-      "definedIn": "heading"
+      "definedIn": "prose"
     },
     {
       "id": "stereopannernode",
@@ -15230,12 +15061,12 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "StereoPannerNode",
-        "href": "https://www.w3.org/TR/webaudio/#StereoPannerNode",
+        "id": "stereopannernode",
+        "href": "https://www.w3.org/TR/webaudio/#stereopannernode",
         "title": "The StereoPannerNode Interface",
         "number": "1.30"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-stereopannernode-stereopannernode-context-options-context",
@@ -15254,8 +15085,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "StereoPannerNode",
-        "href": "https://www.w3.org/TR/webaudio/#StereoPannerNode",
+        "id": "stereopannernode",
+        "href": "https://www.w3.org/TR/webaudio/#stereopannernode",
         "title": "The StereoPannerNode Interface",
         "number": "1.30"
       },
@@ -15278,8 +15109,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "StereoPannerNode",
-        "href": "https://www.w3.org/TR/webaudio/#StereoPannerNode",
+        "id": "stereopannernode",
+        "href": "https://www.w3.org/TR/webaudio/#stereopannernode",
         "title": "The StereoPannerNode Interface",
         "number": "1.30"
       },
@@ -15376,25 +15207,6 @@
       "id": "StereoPannerOptions",
       "href": "https://www.w3.org/TR/webaudio/#StereoPannerOptions",
       "linkingText": [
-        "stereopanneroptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "StereoPannerOptions",
-        "href": "https://www.w3.org/TR/webaudio/#StereoPannerOptions",
-        "title": "StereoPannerOptions",
-        "number": "1.30.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-stereopanneroptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-stereopanneroptions",
-      "linkingText": [
         "StereoPannerOptions"
       ],
       "localLinkingText": [],
@@ -15408,7 +15220,7 @@
         "title": "StereoPannerOptions",
         "number": "1.30.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-stereopanneroptions-pan",
@@ -15435,7 +15247,7 @@
       "id": "WaveShaperNode",
       "href": "https://www.w3.org/TR/webaudio/#WaveShaperNode",
       "linkingText": [
-        "waveshapernode"
+        "WaveShaperNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -15534,25 +15346,6 @@
         "number": "1.31"
       },
       "definedIn": "table"
-    },
-    {
-      "id": "waveshapernode",
-      "href": "https://www.w3.org/TR/webaudio/#waveshapernode",
-      "linkingText": [
-        "WaveShaperNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "WaveShaperNode",
-        "href": "https://www.w3.org/TR/webaudio/#WaveShaperNode",
-        "title": "The WaveShaperNode Interface",
-        "number": "1.31"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-waveshapernode-waveshapernode-context-options-context",
@@ -15735,25 +15528,6 @@
       "id": "WaveShaperOptions",
       "href": "https://www.w3.org/TR/webaudio/#WaveShaperOptions",
       "linkingText": [
-        "waveshaperoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "WaveShaperOptions",
-        "href": "https://www.w3.org/TR/webaudio/#WaveShaperOptions",
-        "title": "WaveShaperOptions",
-        "number": "1.31.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-waveshaperoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-waveshaperoptions",
-      "linkingText": [
         "WaveShaperOptions"
       ],
       "localLinkingText": [],
@@ -15767,7 +15541,7 @@
         "title": "WaveShaperOptions",
         "number": "1.31.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-waveshaperoptions-curve",
@@ -15815,7 +15589,7 @@
       "id": "AudioWorklet",
       "href": "https://www.w3.org/TR/webaudio/#AudioWorklet",
       "linkingText": [
-        "audioworklet"
+        "AudioWorklet"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -15831,23 +15605,25 @@
       "definedIn": "heading"
     },
     {
-      "id": "audioworklet",
-      "href": "https://www.w3.org/TR/webaudio/#audioworklet",
+      "id": "dom-audioworklet-port",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audioworklet-port",
       "linkingText": [
-        "AudioWorklet"
+        "port"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "AudioWorklet"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "AudioWorklet",
-        "href": "https://www.w3.org/TR/webaudio/#AudioWorklet",
-        "title": "The AudioWorklet Interface",
-        "number": "1.32"
+        "id": "AudioWorklet-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioWorklet-attributes",
+        "title": "Attributes",
+        "number": "1.32.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "node-name-to-parameter-descriptor-map",
@@ -15864,7 +15640,7 @@
         "id": "AudioWorklet-concepts",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorklet-concepts",
         "title": "Concepts",
-        "number": "1.32.1"
+        "number": "1.32.2"
       },
       "definedIn": "prose"
     },
@@ -15872,7 +15648,7 @@
       "id": "AudioWorkletGlobalScope",
       "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope",
       "linkingText": [
-        "audioworkletglobalscope"
+        "AudioWorkletGlobalScope"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -15883,7 +15659,7 @@
         "id": "AudioWorkletGlobalScope",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope",
         "title": "The AudioWorkletGlobalScope Interface",
-        "number": "1.32.2"
+        "number": "1.32.3"
       },
       "definedIn": "heading"
     },
@@ -15902,7 +15678,7 @@
         "id": "AudioWorkletGlobalScope",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope",
         "title": "The AudioWorkletGlobalScope Interface",
-        "number": "1.32.2"
+        "number": "1.32.3"
       },
       "definedIn": "prose"
     },
@@ -15921,7 +15697,7 @@
         "id": "AudioWorkletGlobalScope",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope",
         "title": "The AudioWorkletGlobalScope Interface",
-        "number": "1.32.2"
+        "number": "1.32.3"
       },
       "definedIn": "prose"
     },
@@ -15942,7 +15718,7 @@
         "id": "AudioWorkletGlobalScope",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope",
         "title": "The AudioWorkletGlobalScope Interface",
-        "number": "1.32.2"
+        "number": "1.32.3"
       },
       "definedIn": "prose"
     },
@@ -15963,7 +15739,7 @@
         "id": "AudioWorkletGlobalScope",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope",
         "title": "The AudioWorkletGlobalScope Interface",
-        "number": "1.32.2"
+        "number": "1.32.3"
       },
       "definedIn": "prose"
     },
@@ -15982,7 +15758,7 @@
         "id": "AudioWorkletGlobalScope",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope",
         "title": "The AudioWorkletGlobalScope Interface",
-        "number": "1.32.2"
+        "number": "1.32.3"
       },
       "definedIn": "pre"
     },
@@ -16003,26 +15779,7 @@
         "id": "AudioWorkletGlobalScope",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope",
         "title": "The AudioWorkletGlobalScope Interface",
-        "number": "1.32.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "audioworkletglobalscope",
-      "href": "https://www.w3.org/TR/webaudio/#audioworkletglobalscope",
-      "linkingText": [
-        "AudioWorkletGlobalScope"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioWorkletGlobalScope",
-        "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope",
-        "title": "The AudioWorkletGlobalScope Interface",
-        "number": "1.32.2"
+        "number": "1.32.3"
       },
       "definedIn": "pre"
     },
@@ -16043,7 +15800,7 @@
         "id": "AudioWorkletGlobalScope-attributes",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope-attributes",
         "title": "Attributes",
-        "number": "1.32.2.1"
+        "number": "1.32.3.1"
       },
       "definedIn": "dt"
     },
@@ -16064,7 +15821,7 @@
         "id": "AudioWorkletGlobalScope-attributes",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope-attributes",
         "title": "Attributes",
-        "number": "1.32.2.1"
+        "number": "1.32.3.1"
       },
       "definedIn": "dt"
     },
@@ -16085,7 +15842,49 @@
         "id": "AudioWorkletGlobalScope-attributes",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope-attributes",
         "title": "Attributes",
-        "number": "1.32.2.1"
+        "number": "1.32.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audioworkletglobalscope-renderquantumsize",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletglobalscope-renderquantumsize",
+      "linkingText": [
+        "renderQuantumSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioWorkletGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioWorkletGlobalScope-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope-attributes",
+        "title": "Attributes",
+        "number": "1.32.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audioworkletglobalscope-port",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletglobalscope-port",
+      "linkingText": [
+        "port"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioWorkletGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioWorkletGlobalScope-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope-attributes",
+        "title": "Attributes",
+        "number": "1.32.3.1"
       },
       "definedIn": "dt"
     },
@@ -16106,7 +15905,7 @@
         "id": "AudioWorkletGlobalScope-methods",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope-methods",
         "title": "Methods",
-        "number": "1.32.2.2"
+        "number": "1.32.3.2"
       },
       "definedIn": "dt"
     },
@@ -16127,7 +15926,7 @@
         "id": "AudioWorkletGlobalScope-methods",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope-methods",
         "title": "Methods",
-        "number": "1.32.2.2"
+        "number": "1.32.3.2"
       },
       "definedIn": "table"
     },
@@ -16148,7 +15947,7 @@
         "id": "AudioWorkletGlobalScope-methods",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletGlobalScope-methods",
         "title": "Methods",
-        "number": "1.32.2.2"
+        "number": "1.32.3.2"
       },
       "definedIn": "table"
     },
@@ -16167,7 +15966,7 @@
         "id": "AudioWorkletProcessor-instantiation",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor-instantiation",
         "title": "The instantiation of AudioWorkletProcessor",
-        "number": "1.32.2.3"
+        "number": "1.32.3.3"
       },
       "definedIn": "prose"
     },
@@ -16188,7 +15987,7 @@
         "id": "AudioWorkletProcessor-instantiation",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor-instantiation",
         "title": "The instantiation of AudioWorkletProcessor",
-        "number": "1.32.2.3"
+        "number": "1.32.3.3"
       },
       "definedIn": "prose"
     },
@@ -16209,7 +16008,7 @@
         "id": "AudioWorkletProcessor-instantiation",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor-instantiation",
         "title": "The instantiation of AudioWorkletProcessor",
-        "number": "1.32.2.3"
+        "number": "1.32.3.3"
       },
       "definedIn": "prose"
     },
@@ -16230,7 +16029,7 @@
         "id": "AudioWorkletProcessor-instantiation",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor-instantiation",
         "title": "The instantiation of AudioWorkletProcessor",
-        "number": "1.32.2.3"
+        "number": "1.32.3.3"
       },
       "definedIn": "prose"
     },
@@ -16251,7 +16050,7 @@
         "id": "AudioWorkletProcessor-instantiation",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor-instantiation",
         "title": "The instantiation of AudioWorkletProcessor",
-        "number": "1.32.2.3"
+        "number": "1.32.3.3"
       },
       "definedIn": "prose"
     },
@@ -16259,7 +16058,7 @@
       "id": "AudioWorkletNode",
       "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode",
       "linkingText": [
-        "audioworkletnode"
+        "AudioWorkletNode"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -16270,7 +16069,7 @@
         "id": "AudioWorkletNode",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode",
         "title": "The AudioWorkletNode Interface",
-        "number": "1.32.3"
+        "number": "1.32.4"
       },
       "definedIn": "heading"
     },
@@ -16289,7 +16088,7 @@
         "id": "AudioWorkletNode",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode",
         "title": "The AudioWorkletNode Interface",
-        "number": "1.32.3"
+        "number": "1.32.4"
       },
       "definedIn": "prose"
     },
@@ -16308,26 +16107,7 @@
         "id": "AudioWorkletNode",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode",
         "title": "The AudioWorkletNode Interface",
-        "number": "1.32.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "audioworkletnode",
-      "href": "https://www.w3.org/TR/webaudio/#audioworkletnode",
-      "linkingText": [
-        "AudioWorkletNode"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioWorkletNode",
-        "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode",
-        "title": "The AudioWorkletNode Interface",
-        "number": "1.32.3"
+        "number": "1.32.4"
       },
       "definedIn": "pre"
     },
@@ -16351,7 +16131,7 @@
         "id": "AudioWorkletNode",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode",
         "title": "The AudioWorkletNode Interface",
-        "number": "1.32.3"
+        "number": "1.32.4"
       },
       "definedIn": "pre"
     },
@@ -16375,7 +16155,7 @@
         "id": "AudioWorkletNode",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode",
         "title": "The AudioWorkletNode Interface",
-        "number": "1.32.3"
+        "number": "1.32.4"
       },
       "definedIn": "pre"
     },
@@ -16399,7 +16179,7 @@
         "id": "AudioWorkletNode",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode",
         "title": "The AudioWorkletNode Interface",
-        "number": "1.32.3"
+        "number": "1.32.4"
       },
       "definedIn": "pre"
     },
@@ -16423,7 +16203,7 @@
         "id": "AudioWorkletNode-constructors",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode-constructors",
         "title": "Constructors",
-        "number": "1.32.3.1"
+        "number": "1.32.4.1"
       },
       "definedIn": "dt"
     },
@@ -16444,7 +16224,7 @@
         "id": "AudioWorkletNode-constructors",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode-constructors",
         "title": "Constructors",
-        "number": "1.32.3.1"
+        "number": "1.32.4.1"
       },
       "definedIn": "table"
     },
@@ -16465,7 +16245,7 @@
         "id": "AudioWorkletNode-constructors",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode-constructors",
         "title": "Constructors",
-        "number": "1.32.3.1"
+        "number": "1.32.4.1"
       },
       "definedIn": "table"
     },
@@ -16486,7 +16266,7 @@
         "id": "AudioWorkletNode-constructors",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode-constructors",
         "title": "Constructors",
-        "number": "1.32.3.1"
+        "number": "1.32.4.1"
       },
       "definedIn": "table"
     },
@@ -16507,9 +16287,30 @@
         "id": "AudioWorkletNode-attributes",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode-attributes",
         "title": "Attributes",
-        "number": "1.32.3.2"
+        "number": "1.32.4.2"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-audioworkletnode-processorerror",
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-audioworkletnode-processorerror",
+      "linkingText": [
+        "processorerror"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "AudioWorkletNode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioWorkletNode-attributes",
+        "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode-attributes",
+        "title": "Attributes",
+        "number": "1.32.4.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-audioworkletnode-parameters",
@@ -16528,7 +16329,7 @@
         "id": "AudioWorkletNode-attributes",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode-attributes",
         "title": "Attributes",
-        "number": "1.32.3.2"
+        "number": "1.32.4.2"
       },
       "definedIn": "dt"
     },
@@ -16549,32 +16350,13 @@
         "id": "AudioWorkletNode-attributes",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNode-attributes",
         "title": "Attributes",
-        "number": "1.32.3.2"
+        "number": "1.32.4.2"
       },
       "definedIn": "dt"
     },
     {
       "id": "AudioWorkletNodeOptions",
       "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNodeOptions",
-      "linkingText": [
-        "audioworkletnodeoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioWorkletNodeOptions",
-        "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNodeOptions",
-        "title": "AudioWorkletNodeOptions",
-        "number": "1.32.3.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-audioworkletnodeoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-audioworkletnodeoptions",
       "linkingText": [
         "AudioWorkletNodeOptions"
       ],
@@ -16587,9 +16369,9 @@
         "id": "AudioWorkletNodeOptions",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletNodeOptions",
         "title": "AudioWorkletNodeOptions",
-        "number": "1.32.3.3"
+        "number": "1.32.4.3"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audioworkletnodeoptions-numberofinputs",
@@ -16608,7 +16390,7 @@
         "id": "dictionary-audioworkletnodeoptions-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audioworkletnodeoptions-members",
         "title": "Dictionary AudioWorkletNodeOptions Members",
-        "number": "1.32.3.3.1"
+        "number": "1.32.4.3.1"
       },
       "definedIn": "dt"
     },
@@ -16629,7 +16411,7 @@
         "id": "dictionary-audioworkletnodeoptions-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audioworkletnodeoptions-members",
         "title": "Dictionary AudioWorkletNodeOptions Members",
-        "number": "1.32.3.3.1"
+        "number": "1.32.4.3.1"
       },
       "definedIn": "dt"
     },
@@ -16650,7 +16432,7 @@
         "id": "dictionary-audioworkletnodeoptions-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audioworkletnodeoptions-members",
         "title": "Dictionary AudioWorkletNodeOptions Members",
-        "number": "1.32.3.3.1"
+        "number": "1.32.4.3.1"
       },
       "definedIn": "dt"
     },
@@ -16671,7 +16453,7 @@
         "id": "dictionary-audioworkletnodeoptions-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audioworkletnodeoptions-members",
         "title": "Dictionary AudioWorkletNodeOptions Members",
-        "number": "1.32.3.3.1"
+        "number": "1.32.4.3.1"
       },
       "definedIn": "dt"
     },
@@ -16692,32 +16474,13 @@
         "id": "dictionary-audioworkletnodeoptions-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audioworkletnodeoptions-members",
         "title": "Dictionary AudioWorkletNodeOptions Members",
-        "number": "1.32.3.3.1"
+        "number": "1.32.4.3.1"
       },
       "definedIn": "dt"
     },
     {
       "id": "AudioWorkletProcessor",
       "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor",
-      "linkingText": [
-        "audioworkletprocessor"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioWorkletProcessor",
-        "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor",
-        "title": "The AudioWorkletProcessor Interface",
-        "number": "1.32.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "audioworkletprocessor",
-      "href": "https://www.w3.org/TR/webaudio/#audioworkletprocessor",
       "linkingText": [
         "AudioWorkletProcessor"
       ],
@@ -16730,9 +16493,9 @@
         "id": "AudioWorkletProcessor",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor",
         "title": "The AudioWorkletProcessor Interface",
-        "number": "1.32.4"
+        "number": "1.32.5"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audioworkletprocesscallback-inputs",
@@ -16751,7 +16514,7 @@
         "id": "AudioWorkletProcessor",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor",
         "title": "The AudioWorkletProcessor Interface",
-        "number": "1.32.4"
+        "number": "1.32.5"
       },
       "definedIn": "pre"
     },
@@ -16772,7 +16535,7 @@
         "id": "AudioWorkletProcessor",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor",
         "title": "The AudioWorkletProcessor Interface",
-        "number": "1.32.4"
+        "number": "1.32.5"
       },
       "definedIn": "pre"
     },
@@ -16793,7 +16556,7 @@
         "id": "AudioWorkletProcessor",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor",
         "title": "The AudioWorkletProcessor Interface",
-        "number": "1.32.4"
+        "number": "1.32.5"
       },
       "definedIn": "pre"
     },
@@ -16814,7 +16577,7 @@
         "id": "AudioWorkletProcessor",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor",
         "title": "The AudioWorkletProcessor Interface",
-        "number": "1.32.4"
+        "number": "1.32.5"
       },
       "definedIn": "dt"
     },
@@ -16835,7 +16598,7 @@
         "id": "AudioWorkletProcessor",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor",
         "title": "The AudioWorkletProcessor Interface",
-        "number": "1.32.4"
+        "number": "1.32.5"
       },
       "definedIn": "dt"
     },
@@ -16857,7 +16620,7 @@
         "id": "AudioWorketProcessor-constructors",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorketProcessor-constructors",
         "title": "Constructors",
-        "number": "1.32.4.1"
+        "number": "1.32.5.1"
       },
       "definedIn": "dt"
     },
@@ -16878,7 +16641,7 @@
         "id": "AudioWorkletProcessor-attributes",
         "href": "https://www.w3.org/TR/webaudio/#AudioWorkletProcessor-attributes",
         "title": "Attributes",
-        "number": "1.32.4.2"
+        "number": "1.32.5.2"
       },
       "definedIn": "dt"
     },
@@ -16897,7 +16660,7 @@
         "id": "callback-audioworketprocess-callback",
         "href": "https://www.w3.org/TR/webaudio/#callback-audioworketprocess-callback",
         "title": "Callback AudioWorkletProcessCallback",
-        "number": "1.32.4.3"
+        "number": "1.32.5.3"
       },
       "definedIn": "prose"
     },
@@ -16916,7 +16679,7 @@
         "id": "callback-audioworketprocess-callback",
         "href": "https://www.w3.org/TR/webaudio/#callback-audioworketprocess-callback",
         "title": "Callback AudioWorkletProcessCallback",
-        "number": "1.32.4.3"
+        "number": "1.32.5.3"
       },
       "definedIn": "prose"
     },
@@ -16936,32 +16699,13 @@
         "id": "audioworkletprocess-callback-parameters",
         "href": "https://www.w3.org/TR/webaudio/#audioworkletprocess-callback-parameters",
         "title": "Callback AudioWorkletProcessCallback Parameters",
-        "number": "1.32.4.3.1"
+        "number": "1.32.5.3.1"
       },
       "definedIn": "heading"
     },
     {
       "id": "AudioParamDescriptor",
       "href": "https://www.w3.org/TR/webaudio/#AudioParamDescriptor",
-      "linkingText": [
-        "audioparamdescriptor"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioParamDescriptor",
-        "href": "https://www.w3.org/TR/webaudio/#AudioParamDescriptor",
-        "title": "AudioParamDescriptor",
-        "number": "1.32.4.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-audioparamdescriptor",
-      "href": "https://www.w3.org/TR/webaudio/#dictdef-audioparamdescriptor",
       "linkingText": [
         "AudioParamDescriptor"
       ],
@@ -16974,9 +16718,9 @@
         "id": "AudioParamDescriptor",
         "href": "https://www.w3.org/TR/webaudio/#AudioParamDescriptor",
         "title": "AudioParamDescriptor",
-        "number": "1.32.4.4"
+        "number": "1.32.5.4"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-audioparamdescriptor-automationrate",
@@ -16995,7 +16739,7 @@
         "id": "dictionary-audioparamdescriptor-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audioparamdescriptor-members",
         "title": "Dictionary AudioParamDescriptor Members",
-        "number": "1.32.4.4.1"
+        "number": "1.32.5.4.1"
       },
       "definedIn": "dt"
     },
@@ -17016,7 +16760,7 @@
         "id": "dictionary-audioparamdescriptor-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audioparamdescriptor-members",
         "title": "Dictionary AudioParamDescriptor Members",
-        "number": "1.32.4.4.1"
+        "number": "1.32.5.4.1"
       },
       "definedIn": "dt"
     },
@@ -17037,7 +16781,7 @@
         "id": "dictionary-audioparamdescriptor-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audioparamdescriptor-members",
         "title": "Dictionary AudioParamDescriptor Members",
-        "number": "1.32.4.4.1"
+        "number": "1.32.5.4.1"
       },
       "definedIn": "dt"
     },
@@ -17058,7 +16802,7 @@
         "id": "dictionary-audioparamdescriptor-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audioparamdescriptor-members",
         "title": "Dictionary AudioParamDescriptor Members",
-        "number": "1.32.4.4.1"
+        "number": "1.32.5.4.1"
       },
       "definedIn": "dt"
     },
@@ -17079,7 +16823,7 @@
         "id": "dictionary-audioparamdescriptor-members",
         "href": "https://www.w3.org/TR/webaudio/#dictionary-audioparamdescriptor-members",
         "title": "Dictionary AudioParamDescriptor Members",
-        "number": "1.32.4.4.1"
+        "number": "1.32.5.4.1"
       },
       "definedIn": "dt"
     },
@@ -17217,25 +16961,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "render-quantum",
-      "href": "https://www.w3.org/TR/webaudio/#render-quantum",
-      "linkingText": [
-        "render quantum"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "rendering-loop",
-        "href": "https://www.w3.org/TR/webaudio/#rendering-loop",
-        "title": "Rendering an Audio Graph",
-        "number": "2.4"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "render-quantum-size",
       "href": "https://www.w3.org/TR/webaudio/#render-quantum-size",
       "linkingText": [
@@ -17255,10 +16980,105 @@
       "definedIn": "prose"
     },
     {
+      "id": "render-quantum",
+      "href": "https://www.w3.org/TR/webaudio/#render-quantum",
+      "linkingText": [
+        "render quantum"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rendering-loop",
+        "href": "https://www.w3.org/TR/webaudio/#rendering-loop",
+        "title": "Rendering an Audio Graph",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "atomically",
       "href": "https://www.w3.org/TR/webaudio/#atomically",
       "linkingText": [
         "atomically"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rendering-loop",
+        "href": "https://www.w3.org/TR/webaudio/#rendering-loop",
+        "title": "Rendering an Audio Graph",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "system-level-audio-callback",
+      "href": "https://www.w3.org/TR/webaudio/#system-level-audio-callback",
+      "linkingText": [
+        "system-level audio callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rendering-loop",
+        "href": "https://www.w3.org/TR/webaudio/#rendering-loop",
+        "title": "Rendering an Audio Graph",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "system-level-audio-callback-buffer-size",
+      "href": "https://www.w3.org/TR/webaudio/#system-level-audio-callback-buffer-size",
+      "linkingText": [
+        "system-level audio callback buffer size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rendering-loop",
+        "href": "https://www.w3.org/TR/webaudio/#rendering-loop",
+        "title": "Rendering an Audio Graph",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "load-value",
+      "href": "https://www.w3.org/TR/webaudio/#load-value",
+      "linkingText": [
+        "load value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rendering-loop",
+        "href": "https://www.w3.org/TR/webaudio/#rendering-loop",
+        "title": "Rendering an Audio Graph",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audio-buffer-underrun",
+      "href": "https://www.w3.org/TR/webaudio/#audio-buffer-underrun",
+      "linkingText": [
+        "audio buffer underrun"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -17449,10 +17269,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "processing-input-buffer",
-      "href": "https://www.w3.org/TR/webaudio/#processing-input-buffer",
+      "id": "processing-an-input-buffer",
+      "href": "https://www.w3.org/TR/webaudio/#processing-an-input-buffer",
       "linkingText": [
-        "processing-input-buffer"
+        "Processing an input buffer"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -17540,42 +17360,6 @@
         "href": "https://www.w3.org/TR/webaudio/#audio-sample-format",
         "title": "Audio sample format",
         "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "conformant-user-agent",
-      "href": "https://www.w3.org/TR/webaudio/#conformant-user-agent",
-      "linkingText": [
-        "conformant user agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "conformance-classes",
-        "href": "https://www.w3.org/TR/webaudio/#conformance-classes",
-        "title": "Conformance Classes"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "conformant-server",
-      "href": "https://www.w3.org/TR/webaudio/#conformant-server",
-      "linkingText": [
-        "conformant server"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "conformance-classes",
-        "href": "https://www.w3.org/TR/webaudio/#conformance-classes",
-        "title": "Conformance Classes"
       },
       "definedIn": "prose"
     }

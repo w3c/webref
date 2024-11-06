@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Web Audio API",
+    "title": "Web Audio API 1.1",
     "url": "https://www.w3.org/TR/webaudio/"
   },
   "events": [
@@ -9,7 +9,19 @@
         "format": "fire an event phrasing",
         "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire"
       },
-      "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire",
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-audiocontext-error",
+      "type": "error",
+      "targets": [
+        "AudioContext"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A0"
+      },
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-baseaudiocontext-statechange",
       "type": "statechange",
       "targets": [
         "BaseAudioContext"
@@ -19,9 +31,33 @@
     {
       "src": {
         "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A3"
+        "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A5"
       },
-      "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A3",
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-audiocontext-sinkchange",
+      "type": "sinkchange",
+      "targets": [
+        "AudioContext"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A7"
+      },
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-audiorendercapacity-update",
+      "type": "update",
+      "targets": [
+        "AudioRenderCapacity"
+      ],
+      "interface": "AudioRenderCapacityEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A8"
+      },
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-offlineaudiocontext-complete",
       "type": "complete",
       "targets": [
         "OfflineAudioContext"
@@ -31,9 +67,9 @@
     {
       "src": {
         "format": "fire an event phrasing",
-        "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A5"
+        "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A0%E2%91%A0"
       },
-      "href": "https://www.w3.org/TR/webaudio/#ref-for-concept-event-fire%E2%91%A5",
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-audioworkletnode-processorerror",
       "type": "processorerror",
       "targets": [
         "AudioWorkletNode"
@@ -47,7 +83,8 @@
       ],
       "src": {
         "format": "IDL eventHandler"
-      }
+      },
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-audioscheduledsourcenode-ended"
     },
     {
       "type": "audioprocess",
@@ -56,7 +93,8 @@
       ],
       "src": {
         "format": "IDL eventHandler"
-      }
+      },
+      "href": "https://www.w3.org/TR/webaudio/#eventdef-scriptprocessornode-audioprocess"
     }
   ]
 }
