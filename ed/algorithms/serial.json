@@ -43,7 +43,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var data-type=\"list<SerialPort>\">allPorts</var> be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+              "html": "Let <var data-type=\"list&lt;SerialPort&gt;\">allPorts</var> be an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
             },
             {
               "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> Bluetooth device registered with the system:",
@@ -61,7 +61,7 @@
                           "html": "Let <var data-type=\"SerialPort\">port</var> be a <a data-link-type=\"idl\" data-lt=\"SerialPort\" href=\"https://wicg.github.io/serial/#dom-serialport\" class=\"internalDFN\" id=\"ref-for-dom-serialport-3\"><code>SerialPort</code></a>\n                              representing the service on the Bluetooth device."
                         },
                         {
-                          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"SerialPort\">port</var> to <var data-type=\"list<SerialPort>\">allPorts</var>."
+                          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"SerialPort\">port</var> to <var data-type=\"list&lt;SerialPort&gt;\">allPorts</var>."
                         }
                       ]
                     }
@@ -77,12 +77,12 @@
                   "html": "Let <var data-type=\"SerialPort\">port</var> be a <a data-link-type=\"idl\" data-lt=\"SerialPort\" href=\"https://wicg.github.io/serial/#dom-serialport\" class=\"internalDFN\" id=\"ref-for-dom-serialport-4\"><code>SerialPort</code></a> representing\n                  the port."
                 },
                 {
-                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"SerialPort\">port</var> to <var data-type=\"list<SerialPort>\">allPorts</var>."
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"SerialPort\">port</var> to <var data-type=\"list&lt;SerialPort&gt;\">allPorts</var>."
                 }
               ]
             },
             {
-              "html": "Prompt the user to grant the site access to a serial port by\n              presenting them with a list of ports in <var data-type=\"list<SerialPort>\">allPorts</var> that <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/serial/#dfn-match-any-filter\" class=\"internalDFN\" id=\"ref-for-dfn-match-any-filter-1\">match any filter</a> in <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/serial/#dom-serialportrequestoptions-filters\" class=\"internalDFN\" id=\"ref-for-dom-serialportrequestoptions-filters-3\"><code>filters</code></a>\"]\n              if present and <var data-type=\"list<SerialPort>\">allPorts</var> otherwise."
+              "html": "Prompt the user to grant the site access to a serial port by\n              presenting them with a list of ports in <var data-type=\"list&lt;SerialPort&gt;\">allPorts</var> that <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/serial/#dfn-match-any-filter\" class=\"internalDFN\" id=\"ref-for-dfn-match-any-filter-1\">match any filter</a> in <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/serial/#dom-serialportrequestoptions-filters\" class=\"internalDFN\" id=\"ref-for-dom-serialportrequestoptions-filters-3\"><code>filters</code></a>\"]\n              if present and <var data-type=\"list&lt;SerialPort&gt;\">allPorts</var> otherwise."
             },
             {
               "html": "If the user does not choose a port, <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a>\n              on the <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/serial/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-1\">serial port task source</a> to <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a\n              \"<a data-link-type=\"idl\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notfounderror\"><code>NotFoundError</code></a>\" <a data-link-type=\"idl\" data-lt=\"DOMException\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
@@ -843,10 +843,10 @@
           "html": "Let <var data-type=\"UUID\">uuid</var> be the result of calling\n        <a data-link-type=\"idl\" data-lt=\"BluetoothUUID\" data-type=\"interface\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#bluetoothuuid\"><code>BluetoothUUID</code></a>.<a data-link-type=\"idl\" data-lt=\"getService()\" data-type=\"method\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-getservice\"><code>getService</code></a><code>()</code> with <var data-type=\"BluetoothServiceUUID\">serviceUuid</var>."
         },
         {
-          "html": "Let <var data-type=\"list<BluetoothServiceUUID>\">blocklist</var> be the result of\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/serial/#dfn-parsing-the-bluetooth-service-class-id-blocklist\" class=\"internalDFN\" id=\"ref-for-dfn-parsing-the-bluetooth-service-class-id-blocklist-1\">parsing the Bluetooth service class ID blocklist</a> at <a href=\"https://github.com/WICG/serial/blob/main/blocklist.txt\">https://github.com/WICG/serial/blob/main/blocklist.txt</a>."
+          "html": "Let <var data-type=\"list&lt;BluetoothServiceUUID&gt;\">blocklist</var> be the result of\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/serial/#dfn-parsing-the-bluetooth-service-class-id-blocklist\" class=\"internalDFN\" id=\"ref-for-dfn-parsing-the-bluetooth-service-class-id-blocklist-1\">parsing the Bluetooth service class ID blocklist</a> at <a href=\"https://github.com/WICG/serial/blob/main/blocklist.txt\">https://github.com/WICG/serial/blob/main/blocklist.txt</a>."
         },
         {
-          "html": "If <var data-type=\"list<BluetoothServiceUUID>\">blocklist</var> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contains</a> <var data-type=\"UUID\">uuid</var>, return <code>true</code>."
+          "html": "If <var data-type=\"list&lt;BluetoothServiceUUID&gt;\">blocklist</var> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contains</a> <var data-type=\"UUID\">uuid</var>, return <code>true</code>."
         },
         {
           "html": "If <var data-type=\"UUID\">uuid</var> <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\">is</a> the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/serial/#dfn-serial-port-profile-service-class-id\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-profile-service-class-id-2\">Serial Port Profile service class ID</a>, return <code>false</code>."
