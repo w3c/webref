@@ -13,8 +13,6 @@
       "https://developer.mozilla.org/en-US/docs/Web/Manifest/id": {},
       "https://developer.mozilla.org/en-US/docs/Web/Manifest/name": {},
       "https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation": {},
-      "https://developer.mozilla.org/en-US/docs/Web/Manifest/prefer_related_applications": {},
-      "https://developer.mozilla.org/en-US/docs/Web/Manifest/related_applications": {},
       "https://developer.mozilla.org/en-US/docs/Web/Manifest/scope": {},
       "https://developer.mozilla.org/en-US/docs/Web/Manifest/short_name": {},
       "https://developer.mozilla.org/en-US/docs/Web/Manifest/shortcuts": {},
@@ -33,6 +31,7 @@
       "https://github.com/w3c/manifest/commit/100cd9a": {},
       "https://github.com/w3c/manifest/commit/10c255d": {},
       "https://github.com/w3c/manifest/commit/1860fe4": {},
+      "https://github.com/w3c/manifest/commit/1a06ac7": {},
       "https://github.com/w3c/manifest/commit/22a0b1e": {},
       "https://github.com/w3c/manifest/commit/2a8fc0a": {},
       "https://github.com/w3c/manifest/commit/2c55d86": {},
@@ -40,6 +39,7 @@
       "https://github.com/w3c/manifest/commit/32b497c": {},
       "https://github.com/w3c/manifest/commit/32ce484": {},
       "https://github.com/w3c/manifest/commit/3e1fd57": {},
+      "https://github.com/w3c/manifest/commit/40cf2c7": {},
       "https://github.com/w3c/manifest/commit/4ab46a2": {},
       "https://github.com/w3c/manifest/commit/4c24e73": {},
       "https://github.com/w3c/manifest/commit/54acb9e": {},
@@ -60,12 +60,11 @@
       "https://github.com/w3c/manifest/commit/bceb2ee": {},
       "https://github.com/w3c/manifest/commit/c3e18c8": {},
       "https://github.com/w3c/manifest/commit/d1699ec": {},
+      "https://github.com/w3c/manifest/commit/ec8a23b": {},
       "https://github.com/w3c/manifest/commit/f704809": {},
       "https://github.com/w3c/manifest/commit/f8f227e": {},
       "https://github.com/w3c/manifest/issues": {},
       "https://github.com/w3c/manifest/issues/646": {},
-      "https://github.com/w3c/manifest/issues/956": {},
-      "https://github.com/w3c/manifest/issues/957": {},
       "https://github.com/w3c/manifest/issues/97": {},
       "https://github.com/w3c/manifest/pull/1011": {},
       "https://github.com/w3c/manifest/pull/1022": {},
@@ -77,6 +76,7 @@
       "https://github.com/w3c/manifest/pull/1114": {},
       "https://github.com/w3c/manifest/pull/1120": {},
       "https://github.com/w3c/manifest/pull/1122": {},
+      "https://github.com/w3c/manifest/pull/1149": {},
       "https://github.com/w3c/manifest/pull/768": {},
       "https://github.com/w3c/manifest/pull/790": {},
       "https://github.com/w3c/manifest/pull/797": {},
@@ -96,7 +96,6 @@
       "https://github.com/w3c/manifest/pull/988": {},
       "https://github.com/w3c/manifest/pull/991": {},
       "https://github.com/w3c/manifest/wiki/Extensions-Registry": {},
-      "https://github.com/w3c/manifest/wiki/Platforms": {},
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
           "nav-bc"
@@ -172,11 +171,6 @@
       "https://www.unicode.org/reports/tr9/tr9-50.html": {},
       "https://www.unicode.org/versions/latest/": {},
       "https://www.w3.org/2019/webapps/": {},
-      "https://www.w3.org/2020/Process-20200915/": {
-        "anchors": [
-          "at-risk"
-        ]
-      },
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/CSP3/": {},
       "https://www.w3.org/TR/accname-1.2/": {
@@ -216,8 +210,8 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "concept-document",
-          "document",
-          "concept-document-url"
+          "concept-document-url",
+          "document"
         ]
       },
       "https://fetch.spec.whatwg.org/": {
@@ -243,6 +237,8 @@
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
+          "browsing-context",
+          "top-level-browsing-context",
           "create-a-fresh-top-level-traversable",
           "nav-document"
         ]
@@ -252,6 +248,7 @@
           "meta",
           "the-link-element",
           "attr-meta-name",
+          "meta-theme-color",
           "attr-link-rel",
           "attr-link-href",
           "attr-link-crossorigin"
@@ -269,11 +266,11 @@
           "map-exists",
           "string",
           "strip-leading-and-trailing-ascii-whitespace",
+          "ascii-lowercase",
           "list-contain",
           "map-set",
           "list-iterate",
           "list-append",
-          "boolean",
           "map-getting-the-keys",
           "iteration-continue",
           "byte-sequence",
@@ -283,6 +280,7 @@
           "set-append",
           "list-is-empty",
           "string-concatenate",
+          "boolean",
           "user-agent"
         ]
       },
