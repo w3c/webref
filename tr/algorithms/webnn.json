@@ -428,26 +428,6 @@
       ]
     },
     {
-      "name": "MLOperand/dataType()",
-      "href": "https://www.w3.org/TR/webnn/#dom-mloperand-datatype",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-datatype\" id=\"ref-for-mloperand-datatype①\">dataType</a>.</p>"
-        }
-      ]
-    },
-    {
-      "name": "MLOperand/shape()",
-      "href": "https://www.w3.org/TR/webnn/#dom-mloperand-shape",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape①\">shape</a>.</p>"
-        }
-      ]
-    },
-    {
       "name": "MLGraphBuilder/MLGraphBuilder(context)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-mlgraphbuilder",
       "rationale": ".algorithm",
@@ -475,7 +455,7 @@
           "html": "<p>If <var>name</var> is empty, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If any <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#mloperand\" id=\"ref-for-mloperand④⑧\">MLOperand</a></code>s in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-graph\" id=\"ref-for-mlgraphbuilder-graph\">graph</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#computational-graph-input\" id=\"ref-for-computational-graph-input\">inputs</a> have a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-name-slot\" id=\"ref-for-dom-mloperand-name-slot③\">[[name]]</a></code> equal to <var>name</var>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑨\">TypeError</a></code>.</p>"
+          "html": "<p>If any <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#mloperand\" id=\"ref-for-mloperand④⑥\">MLOperand</a></code>s in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-graph\" id=\"ref-for-mlgraphbuilder-graph\">graph</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#computational-graph-input\" id=\"ref-for-computational-graph-input\">inputs</a> have a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webnn/#dom-mloperand-name-slot\" id=\"ref-for-dom-mloperand-name-slot③\">[[name]]</a></code> equal to <var>name</var>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑨\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperanddescriptor-check-dimensions\" id=\"ref-for-mloperanddescriptor-check-dimensions\">checking dimensions</a> given <var>descriptor</var> returns false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⓪\">TypeError</a></code>.</p>"
@@ -4728,7 +4708,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-validate-operand\" id=\"ref-for-mlgraphbuilder-validate-operand③④\">validating operand</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②⓪\">this</a> and <var>input</var> returns false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③③④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②②⑤\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>outputShape</var> be an empty array of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑤④\">unsigned long</a></code>.</p>"
+          "html": "<p>Let <var>outputShape</var> be an empty array of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑤③\">unsigned long</a></code>.</p>"
         },
         {
           "html": "<p>If <var>newShape</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③⑦\">size</a> is 0, set <var>outputShape</var> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④④\">list</a> for a scalar.</p>"
@@ -5013,7 +4993,7 @@
           "html": "<p>If <var>axis</var> is greater than or equal to <var>input</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-rank\" id=\"ref-for-mloperand-rank⑤④\">rank</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③⑤⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②④④\">TypeError</a></code>.</p>"
         },
         {
-          "html": "If <var>splits</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑦①\">unsigned long</a></code>:",
+          "html": "If <var>splits</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑦⓪\">unsigned long</a></code>:",
           "rationale": "if",
           "steps": [
             {
@@ -5025,7 +5005,7 @@
           ]
         },
         {
-          "html": "If <var>splits</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑤②\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑦②\">unsigned long</a></code>&gt;:",
+          "html": "If <var>splits</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑤⓪\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑦①\">unsigned long</a></code>&gt;:",
           "rationale": "if",
           "steps": [
             {
@@ -5057,7 +5037,7 @@
                   "html": "<p>Let <var>operand</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand①⑦\">copying an MLOperand</a> given <var>input</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>splits</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑦③\">unsigned long</a></code>, then let <var>newDimension</var> be <var>operand</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑧⑨\">shape</a>[<var>axis</var>] / <var>splits</var>.</p>"
+                  "html": "<p>If <var>splits</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑦②\">unsigned long</a></code>, then let <var>newDimension</var> be <var>operand</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mloperand-shape\" id=\"ref-for-mloperand-shape⑧⑨\">shape</a>[<var>axis</var>] / <var>splits</var>.</p>"
                 },
                 {
                   "html": "<p>Otherwise, let <var>newDimension</var> be <var>splits</var>[<var>index</var>].</p>"

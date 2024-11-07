@@ -103,7 +103,11 @@
       "https://www.w3.org/TR/permissions-policy-1/": {},
       "https://www.w3.org/TR/secure-contexts/": {},
       "https://www.w3.org/TR/security-privacy-questionnaire/": {},
-      "https://www.w3.org/TR/webgpu/": {},
+      "https://www.w3.org/TR/webgpu/": {
+        "anchors": [
+          "security-dos"
+        ]
+      },
       "https://www.w3.org/TR/webmachinelearning-ethics/": {},
       "https://www.w3.org/groups/wg/webmachinelearning": {},
       "https://www.w3.org/groups/wg/webmachinelearning/ipr": {},
@@ -237,8 +241,10 @@
           "EnforceRange",
           "idl-unsigned-long",
           "idl-long",
+          "idl-frozen-array",
           "idl-bigint",
           "idl-unrestricted-double",
+          "getter-steps",
           "idl-double",
           "idl-long-long",
           "dfn-numeric-type",

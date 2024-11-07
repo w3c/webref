@@ -71,7 +71,7 @@
           "html": "<p>Only <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#const-declaration\" id=\"ref-for-const-declaration①\">const-declarations</a> can be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#type-abstract\" id=\"ref-for-type-abstract④\">abstract</a> types, and only when\nthe type is not explicitly specified.</p>"
         },
         {
-          "html": "<p>The type of the expression must be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#feasible-automatic-conversion\" id=\"ref-for-feasible-automatic-conversion⑦\">feasibly\nconverted</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#effective-value-type\" id=\"ref-for-effective-value-type②\">effective-value-type</a>.</p>"
+          "html": "<p>The type of the expression must be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#feasible-automatic-conversion\" id=\"ref-for-feasible-automatic-conversion⑧\">feasibly\nconverted</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#effective-value-type\" id=\"ref-for-effective-value-type②\">effective-value-type</a>.</p>"
         },
         {
           "html": "<p>If an initializer is not specified, a value must be provided at <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/WGSL/#pipeline-creation\" id=\"ref-for-pipeline-creation⑦\">pipeline-creation time</a>.</p>"
@@ -127,20 +127,21 @@
       ]
     },
     {
+      "name": "numeric conversion to floating point",
       "html": "Otherwise the conversion proceeds as follows:",
-      "rationale": "set",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Set <var>X</var> to the original value.</p>"
+          "html": "<p>Set <var>X'</var> to the original value <var>X</var>.</p>"
         },
         {
-          "html": "<p>If the source type is a floating point type with more significand bits than the destination type,\n the extra significand bits of the source value <em>may</em> be discarded (i.e. treated as if they are 0).\n Update <var>X</var> accordingly.</p>"
+          "html": "<p>If source type <var>S</var> is a floating point type with more significand bits than the destination type <var>T</var>,\n the extra significand bits of the source value <var>X</var> <em>may</em> be discarded (i.e. treated as if they are 0).\n Update <var>X'</var> accordingly.</p>"
         },
         {
-          "html": "<p>If <var>X</var> is the most-positive or most-negative normal value of the destination type, then the result is <var>X</var>.</p>"
+          "html": "<p>If <var>X'</var> is the most-positive or most-negative finite value of the destination type <var>T</var>, then set <var>XOut</var> = <var>X'</var>.</p>"
         },
         {
-          "html": "<p>Otherwise, the result is the infinity value of the destination type, with the same sign as <var>X</var>.</p>"
+          "html": "<p>Otherwise, set <var>XOut</var> to the infinity value of destination type <var>T</var>, with the same sign as <var>X'</var>.</p>"
         }
       ]
     },
