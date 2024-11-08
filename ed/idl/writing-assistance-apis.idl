@@ -1,0 +1,81 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content was automatically extracted by Reffy into webref
+// (https://github.com/w3c/webref)
+// Source: Writing Assistance APIs (https://wicg.github.io/writing-assistance-apis/)
+
+partial interface WindowOrWorkerGlobalScope {
+  [Replaceable, SecureContext] readonly attribute AI ai;
+};
+
+[Exposed=(Window,Worker), SecureContext]
+interface AI {};
+
+[Exposed=(Window,Worker), SecureContext]
+interface AICreateMonitor : EventTarget {
+  attribute EventHandler ondownloadprogress;
+};
+
+callback AICreateMonitorCallback = undefined (AICreateMonitor monitor);
+
+enum AICapabilityAvailability { "readily", "after-download", "no" };
+
+partial interface AI {
+  readonly attribute AISummarizerFactory summarizer;
+};
+
+[Exposed=(Window,Worker), SecureContext]
+interface AISummarizerFactory {
+  Promise<AISummarizer> create(optional AISummarizerCreateOptions options = {});
+  Promise<AISummarizerCapabilities> capabilities();
+};
+
+[Exposed=(Window,Worker), SecureContext]
+interface AISummarizer {
+  Promise<DOMString> summarize(
+    DOMString input,
+    optional AISummarizerSummarizeOptions options = {}
+  );
+  ReadableStream summarizeStreaming(
+    DOMString input,
+    optional AISummarizerSummarizeOptions options = {}
+  );
+
+  readonly attribute DOMString sharedContext;
+  readonly attribute AISummarizerType type;
+  readonly attribute AISummarizerFormat format;
+  readonly attribute AISummarizerLength length;
+
+  undefined destroy();
+};
+
+[Exposed=(Window,Worker), SecureContext]
+interface AISummarizerCapabilities {
+  readonly attribute AICapabilityAvailability available;
+
+  AICapabilityAvailability createOptionsAvailable(
+    optional AISummarizerCreateCoreOptions options = {}
+  );
+  AICapabilityAvailability languageAvailable(DOMString languageTag);
+};
+
+dictionary AISummarizerCreateCoreOptions {
+  AISummarizerType type = "key-points";
+  AISummarizerFormat format = "markdown";
+  AISummarizerLength length = "short";
+};
+
+dictionary AISummarizerCreateOptions : AISummarizerCreateCoreOptions {
+  AbortSignal signal;
+  AICreateMonitorCallback monitor;
+
+  DOMString sharedContext;
+};
+
+dictionary AISummarizerSummarizeOptions {
+  AbortSignal signal;
+  DOMString context;
+};
+
+enum AISummarizerType { "tl;dr", "key-points", "teaser", "headline" };
+enum AISummarizerFormat { "plain-text", "markdown" };
+enum AISummarizerLength { "short", "medium", "long" };

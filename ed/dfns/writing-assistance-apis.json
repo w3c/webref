@@ -1,0 +1,1473 @@
+{
+  "spec": {
+    "title": "Writing Assistance APIs",
+    "url": "https://wicg.github.io/writing-assistance-apis/"
+  },
+  "dfns": [
+    {
+      "id": "ai",
+      "href": "https://wicg.github.io/writing-assistance-apis/#ai",
+      "linkingText": [
+        "AI"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "aicreatemonitor",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aicreatemonitor",
+      "linkingText": [
+        "AICreateMonitor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-aicreatemonitorcallback",
+      "href": "https://wicg.github.io/writing-assistance-apis/#callbackdef-aicreatemonitorcallback",
+      "linkingText": [
+        "AICreateMonitorCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aicreatemonitorcallback-monitor",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aicreatemonitorcallback-monitor",
+      "linkingText": [
+        "monitor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AICreateMonitorCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-aicapabilityavailability",
+      "href": "https://wicg.github.io/writing-assistance-apis/#enumdef-aicapabilityavailability",
+      "linkingText": [
+        "AICapabilityAvailability"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aicapabilityavailability-readily",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-readily",
+      "linkingText": [
+        "\"readily\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AICapabilityAvailability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aicapabilityavailability-after-download",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-after-download",
+      "linkingText": [
+        "\"after-download\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AICapabilityAvailability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aicapabilityavailability-no",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aicapabilityavailability-no",
+      "linkingText": [
+        "\"no\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AICapabilityAvailability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "windoworworkerglobalscope-ai-namespace",
+      "href": "https://wicg.github.io/writing-assistance-apis/#windoworworkerglobalscope-ai-namespace",
+      "linkingText": [
+        "AI namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-windoworworkerglobalscope-ai",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-windoworworkerglobalscope-ai",
+      "linkingText": [
+        "ai"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ai-task-source",
+      "href": "https://wicg.github.io/writing-assistance-apis/#ai-task-source",
+      "linkingText": [
+        "AI task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-aicreatemonitor-ondownloadprogress",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aicreatemonitor-ondownloadprogress",
+      "linkingText": [
+        "ondownloadprogress"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AICreateMonitor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "eventdef-aicreatemonitor-downloadprogress",
+      "href": "https://wicg.github.io/writing-assistance-apis/#eventdef-aicreatemonitor-downloadprogress",
+      "linkingText": [
+        "downloadprogress"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "AICreateMonitor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-ai-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#shared-ai-api",
+        "title": "Shared AI APIs and infrastructure",
+        "number": "2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "aisummarizerfactory",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizerfactory",
+      "linkingText": [
+        "AISummarizerFactory"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizerfactory-create-options-options",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizerfactory-create-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AISummarizerFactory/create(options)",
+        "AISummarizerFactory/create()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "aisummarizer",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizer",
+      "linkingText": [
+        "AISummarizer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizer-summarize",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-summarize",
+      "linkingText": [
+        "summarize(input, options)",
+        "summarize(input)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizer-summarize-input-options-input",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-summarize-input-options-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AISummarizer/summarize(input, options)",
+        "AISummarizer/summarize(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizer-summarize-input-options-options",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-summarize-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AISummarizer/summarize(input, options)",
+        "AISummarizer/summarize(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizer-summarizestreaming",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-summarizestreaming",
+      "linkingText": [
+        "summarizeStreaming(input, options)",
+        "summarizeStreaming(input)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizer-summarizestreaming-input-options-input",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-summarizestreaming-input-options-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AISummarizer/summarizeStreaming(input, options)",
+        "AISummarizer/summarizeStreaming(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizer-summarizestreaming-input-options-options",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-summarizestreaming-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AISummarizer/summarizeStreaming(input, options)",
+        "AISummarizer/summarizeStreaming(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "aisummarizercapabilities",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities",
+      "linkingText": [
+        "AISummarizerCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizercapabilities-createoptionsavailable-options-options",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercapabilities-createoptionsavailable-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AISummarizerCapabilities/createOptionsAvailable(options)",
+        "AISummarizerCapabilities/createOptionsAvailable()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizercapabilities-languageavailable-languagetag-languagetag",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercapabilities-languageavailable-languagetag-languagetag",
+      "linkingText": [
+        "languageTag"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AISummarizerCapabilities/languageAvailable(languageTag)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-aisummarizercreatecoreoptions",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dictdef-aisummarizercreatecoreoptions",
+      "linkingText": [
+        "AISummarizerCreateCoreOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizercreatecoreoptions-type",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AISummarizerCreateCoreOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizercreatecoreoptions-format",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AISummarizerCreateCoreOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizercreatecoreoptions-length",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreatecoreoptions-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AISummarizerCreateCoreOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-aisummarizercreateoptions",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dictdef-aisummarizercreateoptions",
+      "linkingText": [
+        "AISummarizerCreateOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizercreateoptions-signal",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AISummarizerCreateOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizercreateoptions-monitor",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-monitor",
+      "linkingText": [
+        "monitor"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AISummarizerCreateOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizercreateoptions-sharedcontext",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercreateoptions-sharedcontext",
+      "linkingText": [
+        "sharedContext"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AISummarizerCreateOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-aisummarizersummarizeoptions",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dictdef-aisummarizersummarizeoptions",
+      "linkingText": [
+        "AISummarizerSummarizeOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizersummarizeoptions-signal",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AISummarizerSummarizeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizersummarizeoptions-context",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizersummarizeoptions-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AISummarizerSummarizeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-aisummarizertype",
+      "href": "https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizertype",
+      "linkingText": [
+        "AISummarizerType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizertype-tldr",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizertype-tldr",
+      "linkingText": [
+        "\"tl;dr\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AISummarizerType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizertype-key-points",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizertype-key-points",
+      "linkingText": [
+        "\"key-points\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AISummarizerType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizertype-teaser",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizertype-teaser",
+      "linkingText": [
+        "\"teaser\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AISummarizerType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizertype-headline",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizertype-headline",
+      "linkingText": [
+        "\"headline\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AISummarizerType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-aisummarizerformat",
+      "href": "https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizerformat",
+      "linkingText": [
+        "AISummarizerFormat"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizerformat-plain-text",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizerformat-plain-text",
+      "linkingText": [
+        "\"plain-text\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AISummarizerFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizerformat-markdown",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizerformat-markdown",
+      "linkingText": [
+        "\"markdown\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AISummarizerFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-aisummarizerlength",
+      "href": "https://wicg.github.io/writing-assistance-apis/#enumdef-aisummarizerlength",
+      "linkingText": [
+        "AISummarizerLength"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizerlength-short",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizerlength-short",
+      "linkingText": [
+        "\"short\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AISummarizerLength"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizerlength-medium",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizerlength-medium",
+      "linkingText": [
+        "\"medium\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AISummarizerLength"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-aisummarizerlength-long",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizerlength-long",
+      "linkingText": [
+        "\"long\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AISummarizerLength"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "ai-summarizer-factory",
+      "href": "https://wicg.github.io/writing-assistance-apis/#ai-summarizer-factory",
+      "linkingText": [
+        "summarizer factory"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AI"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-ai-summarizer",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-ai-summarizer",
+      "linkingText": [
+        "summarizer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AI"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-api",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-api",
+        "title": "The summarizer API",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-aisummarizerfactory-create",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizerfactory-create",
+      "linkingText": [
+        "create(options)",
+        "create()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AISummarizerFactory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-creation",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-creation",
+        "title": "Creation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-the-summarization-model",
+      "href": "https://wicg.github.io/writing-assistance-apis/#initialize-the-summarization-model",
+      "linkingText": [
+        "initialize the summarization model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-creation",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-creation",
+        "title": "Creation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "finalize-summarizer-creation",
+      "href": "https://wicg.github.io/writing-assistance-apis/#finalize-summarizer-creation",
+      "linkingText": [
+        "finalize summarizer creation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-creation",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-creation",
+        "title": "Creation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-aisummarizerfactory-capabilities",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizerfactory-capabilities",
+      "linkingText": [
+        "capabilities()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AISummarizerFactory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-capabilities",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-capabilities",
+        "title": "Capabilities",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aisummarizercapabilities-available-create-options",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-create-options",
+      "linkingText": [
+        "available create options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AISummarizerCapabilities"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-capabilities",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-capabilities",
+        "title": "Capabilities",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aisummarizercapabilities-available-languages",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizercapabilities-available-languages",
+      "linkingText": [
+        "available languages"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AISummarizerCapabilities"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-capabilities",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-capabilities",
+        "title": "Capabilities",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-aisummarizercapabilities-available",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercapabilities-available",
+      "linkingText": [
+        "available"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AISummarizerCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-capabilities",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-capabilities",
+        "title": "Capabilities",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-aisummarizercapabilities-createoptionsavailable",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercapabilities-createoptionsavailable",
+      "linkingText": [
+        "createOptionsAvailable(options)",
+        "createOptionsAvailable()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AISummarizerCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-capabilities",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-capabilities",
+        "title": "Capabilities",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-aisummarizercapabilities-languageavailable",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizercapabilities-languageavailable",
+      "linkingText": [
+        "languageAvailable(languageTag)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AISummarizerCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-capabilities",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-capabilities",
+        "title": "Capabilities",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "current-summarizer-create-options-availability",
+      "href": "https://wicg.github.io/writing-assistance-apis/#current-summarizer-create-options-availability",
+      "linkingText": [
+        "current summarizer create options availability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-capabilities",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-capabilities",
+        "title": "Capabilities",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "current-summarizer-language-availability-map",
+      "href": "https://wicg.github.io/writing-assistance-apis/#current-summarizer-language-availability-map",
+      "linkingText": [
+        "current summarizer language availability map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-capabilities",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-capabilities",
+        "title": "Capabilities",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aisummarizer-shared-context",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizer-shared-context",
+      "linkingText": [
+        "shared context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-object",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-object",
+        "title": "Summarization",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aisummarizer-summary-type",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-type",
+      "linkingText": [
+        "summary type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-object",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-object",
+        "title": "Summarization",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aisummarizer-summary-format",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-format",
+      "linkingText": [
+        "summary format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-object",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-object",
+        "title": "Summarization",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aisummarizer-summary-length",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizer-summary-length",
+      "linkingText": [
+        "summary length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-object",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-object",
+        "title": "Summarization",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-aisummarizer-sharedcontext",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-sharedcontext",
+      "linkingText": [
+        "sharedContext"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-object",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-object",
+        "title": "Summarization",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-aisummarizer-type",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-object",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-object",
+        "title": "Summarization",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-aisummarizer-format",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-object",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-object",
+        "title": "Summarization",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-aisummarizer-length",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-object",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-object",
+        "title": "Summarization",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-aisummarizer-destroy",
+      "href": "https://wicg.github.io/writing-assistance-apis/#dom-aisummarizer-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-object",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-object",
+        "title": "Summarization",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aisummarizer-destroy",
+      "href": "https://wicg.github.io/writing-assistance-apis/#aisummarizer-destroy",
+      "linkingText": [
+        "destroy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AISummarizer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "summarizer-object",
+        "href": "https://wicg.github.io/writing-assistance-apis/#summarizer-object",
+        "title": "Summarization",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
