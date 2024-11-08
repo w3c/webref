@@ -53,4 +53,7 @@ dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {
  unsigned long long   retransmittedBytesReceived;
  unsigned long        rtxSsrc;
  unsigned long        fecSsrc;
+ double               totalCorruptionProbability;
+ double               totalSquaredCorruptionProbability;
+ unsigned long long   corruptionMeasurements;
 };

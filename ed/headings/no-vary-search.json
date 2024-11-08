@@ -1,0 +1,194 @@
+{
+  "spec": {
+    "title": "No-Vary-Search",
+    "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#title",
+      "level": 1,
+      "title": "No-Vary-Search"
+    },
+    {
+      "id": "section-abstract",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "section-note.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-note.1",
+      "level": 2,
+      "title": "About This Document"
+    },
+    {
+      "id": "section-boilerplate.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-boilerplate.1",
+      "level": 2,
+      "title": "Status of This Memo"
+    },
+    {
+      "id": "section-boilerplate.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-boilerplate.2",
+      "level": 2,
+      "title": "Copyright Notice"
+    },
+    {
+      "id": "section-toc.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-toc.1",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "section-1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-1",
+      "level": 2,
+      "title": "Conventions and Definitions",
+      "number": "1"
+    },
+    {
+      "id": "section-2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-2",
+      "level": 2,
+      "title": "HTTP header field definition",
+      "number": "2"
+    },
+    {
+      "id": "section-3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-3",
+      "level": 2,
+      "title": "Data model",
+      "number": "3"
+    },
+    {
+      "id": "section-4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4",
+      "level": 2,
+      "title": "Parsing",
+      "number": "4"
+    },
+    {
+      "id": "section-4.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.1",
+      "level": 3,
+      "title": "Parse a URL search variance",
+      "number": "4.1"
+    },
+    {
+      "id": "section-4.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.2",
+      "level": 3,
+      "title": "Obtain a URL search variance",
+      "number": "4.2"
+    },
+    {
+      "id": "section-4.2.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.2.1",
+      "level": 4,
+      "title": "Examples",
+      "number": "4.2.1"
+    },
+    {
+      "id": "section-4.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.3",
+      "level": 3,
+      "title": "Parse a key",
+      "number": "4.3"
+    },
+    {
+      "id": "section-4.3.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-4.3.1",
+      "level": 4,
+      "title": "Examples",
+      "number": "4.3.1"
+    },
+    {
+      "id": "section-5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5",
+      "level": 2,
+      "title": "Comparing",
+      "number": "5"
+    },
+    {
+      "id": "section-5.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-5.1",
+      "level": 3,
+      "title": "Examples",
+      "number": "5.1"
+    },
+    {
+      "id": "section-6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-6",
+      "level": 2,
+      "title": "Caching",
+      "number": "6"
+    },
+    {
+      "id": "section-7",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-7",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "7"
+    },
+    {
+      "id": "section-8",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-8",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "8"
+    },
+    {
+      "id": "section-9",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-9",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "9"
+    },
+    {
+      "id": "section-9.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-9.1",
+      "level": 3,
+      "title": "HTTP Field Names",
+      "number": "9.1"
+    },
+    {
+      "id": "section-10",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-10",
+      "level": 2,
+      "title": "10. References"
+    },
+    {
+      "id": "section-10.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-10.1",
+      "level": 3,
+      "title": "Normative References",
+      "number": "10.1"
+    },
+    {
+      "id": "section-10.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-10.2",
+      "level": 3,
+      "title": "Informative References",
+      "number": "10.2"
+    },
+    {
+      "id": "appendix-A",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#appendix-A",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "appendix-B",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#appendix-B",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "appendix-C",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#appendix-C",
+      "level": 2,
+      "title": "Authors' Addresses"
+    }
+  ]
+}

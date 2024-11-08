@@ -156,7 +156,7 @@
           "html": "If\n            <var data-type=\"SmartCardGetStatusChangeOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardgetstatuschangeoptions-timeout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardgetstatuschangeoptions-timeout-1\"><code>timeout</code></a>\"]\n            <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, set <var data-type=\"DWORD\">pcscTimeout</var> to\n            <var data-type=\"SmartCardGetStatusChangeOptions\">options</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardgetstatuschangeoptions-timeout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardgetstatuschangeoptions-timeout-2\"><code>timeout</code></a>\"]."
         },
         {
-          "html": "Let <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n            <code>SCARD_READERSTATE[]</code> <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-1\">corresponding</a> to\n            <var data-type=\"sequence<SmartCardReaderStateIn>\">readerStates</var>."
+          "html": "Let <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var> be a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>]\n            <code>SCARD_READERSTATE[]</code> <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-1\">corresponding</a> to\n            <var data-type=\"sequence&lt;SmartCardReaderStateIn&gt;\">readerStates</var>."
         },
         {
           "html": "Set <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[operationInProgress]]\" href=\"https://wicg.github.io/web-smart-card/#dfn-operationinprogress\" class=\"internalDFN\" id=\"ref-for-dfn-operationinprogress-4\"><code>[[operationInProgress]]</code></a> to\n            <code>true</code>."
@@ -218,10 +218,10 @@
                   ]
                 },
                 {
-                  "html": "Let\n                    <var data-type=\"sequence<SmartCardReaderStateOut>\">readerStatesOut</var> be\n                    a sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateOut\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-2\"><code>SmartCardReaderStateOut</code></a>\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-1\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-1-1\">corresponding</a> to\n                    <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var>."
+                  "html": "Let\n                    <var data-type=\"sequence&lt;SmartCardReaderStateOut&gt;\">readerStatesOut</var> be\n                    a sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateOut\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-2\"><code>SmartCardReaderStateOut</code></a>\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-smart-card/#dfn-corresponding-1\" class=\"internalDFN\" id=\"ref-for-dfn-corresponding-1-1\">corresponding</a> to\n                    <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var>."
                 },
                 {
-                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">promise</var> with <var data-type=\"sequence<SmartCardReaderStateOut>\">readerStatesOut</var>."
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">promise</var> with <var data-type=\"sequence&lt;SmartCardReaderStateOut&gt;\">readerStatesOut</var>."
                 }
               ]
             }
@@ -235,14 +235,14 @@
     {
       "name": "SmartCardReaderStateIn/corresponding",
       "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding",
-      "html": "Given a sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateIn\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstatein\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstatein-3\"><code>SmartCardReaderStateIn</code></a> named\n          <var data-type=\"sequence<SmartCardReaderStateIn>\">readerStates</var>, a\n          <dfn data-dfn-for=\"SmartCardReaderStateIn\" id=\"dfn-corresponding\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding</dfn>\n          [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_READERSTATE[]</code> is created with the following\n          steps:",
+      "html": "Given a sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateIn\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstatein\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstatein-3\"><code>SmartCardReaderStateIn</code></a> named\n          <var data-type=\"sequence&lt;SmartCardReaderStateIn&gt;\">readerStates</var>, a\n          <dfn data-dfn-for=\"SmartCardReaderStateIn\" id=\"dfn-corresponding\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding</dfn>\n          [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>SCARD_READERSTATE[]</code> is created with the following\n          steps:",
       "rationale": "let",
       "steps": [
         {
           "html": "Let <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var> be an empty\n              <code>SCARD_READERSTATE[]</code>."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"SmartCardReaderStateIn\">stateIn</var> in <var data-type=\"sequence<SmartCardReaderStateIn>\">readerStates</var>:",
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"SmartCardReaderStateIn\">stateIn</var> in <var data-type=\"sequence&lt;SmartCardReaderStateIn&gt;\">readerStates</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -321,7 +321,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var data-type=\"sequence<SmartCardReaderStateOut>\">readerStatesOut</var> be\n              an empty sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateOut\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-5\"><code>SmartCardReaderStateOut</code></a>."
+          "html": "Let <var data-type=\"sequence&lt;SmartCardReaderStateOut&gt;\">readerStatesOut</var> be\n              an empty sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardReaderStateOut\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-5\"><code>SmartCardReaderStateOut</code></a>."
         },
         {
           "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"SCARD_READERSTATE\">pcscState</var> in\n              <var data-type=\"array of SCARD_READERSTATE\">pcscReaderStates</var>:",
@@ -343,12 +343,12 @@
               "html": "If the platform's <code>SCARD_READERSTATE</code> structure has a member\n                  containing the card's [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-iso7186-3\" title=\"Identification cards - Integrated circuit cards; Part 3: Cards with contacts - Electrical interface and transmission protocols\">ISO7186-3</a></cite>] Answer To Reset, set\n                  <var data-type=\"SmartCardReaderStateOut\">stateOut</var>[\"<a data-link-type=\"idl\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout-answertoreset\" class=\"internalDFN\" id=\"ref-for-dom-smartcardreaderstateout-answertoreset-2\"><code>answerToReset</code></a>\"] to\n                  that value."
             },
             {
-              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"SmartCardReaderStateOut\">stateOut</var> to <var data-type=\"sequence<SmartCardReaderStateOut>\">readerStatesOut</var>."
+              "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"SmartCardReaderStateOut\">stateOut</var> to <var data-type=\"sequence&lt;SmartCardReaderStateOut&gt;\">readerStatesOut</var>."
             }
           ]
         },
         {
-          "html": "Return <var data-type=\"sequence<SmartCardReaderStateOut>\">readerStatesOut</var>."
+          "html": "Return <var data-type=\"sequence&lt;SmartCardReaderStateOut&gt;\">readerStatesOut</var>."
         }
       ]
     },
@@ -492,14 +492,14 @@
     {
       "name": "SmartCardProtocol/corresponding flags",
       "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-flags",
-      "html": "Given a sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardProtocol\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardprotocol\" class=\"internalDFN\" id=\"ref-for-dom-smartcardprotocol-3\"><code>SmartCardProtocol</code></a> named\n          <var data-type=\"sequence<SmartCardProtocol>\">protocols</var>, a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code>\n          with the <dfn data-dfn-for=\"SmartCardProtocol\" id=\"dfn-corresponding-flags\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding\n          flags</dfn> is created with the following steps:",
+      "html": "Given a sequence of <a data-link-type=\"idl\" data-lt=\"SmartCardProtocol\" href=\"https://wicg.github.io/web-smart-card/#dom-smartcardprotocol\" class=\"internalDFN\" id=\"ref-for-dom-smartcardprotocol-3\"><code>SmartCardProtocol</code></a> named\n          <var data-type=\"sequence&lt;SmartCardProtocol&gt;\">protocols</var>, a [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/web-smart-card/#bib-pcsc5\" title=\"Interoperability Specification for ICCs and Personal Computer Systems; Part 5. ICC Resource Manager Definition\">PCSC5</a></cite>] <code>DWORD</code>\n          with the <dfn data-dfn-for=\"SmartCardProtocol\" id=\"dfn-corresponding-flags\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">corresponding\n          flags</dfn> is created with the following steps:",
       "rationale": "let",
       "steps": [
         {
           "html": "Let <var data-type=\"DWORD\">flags</var> be a <code>DWORD</code> set to <code>0</code>."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"SmartCardProtocol\">protocol</var> in <var data-type=\"sequence<SmartCardProtocol>\">protocols</var>,\n              <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-10\">add</a> the corresponding <code>DWORD</code> of <var data-type=\"SmartCardProtocol\">protocol</var> to <var data-type=\"DWORD\">flags</var>."
+          "html": "<a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"SmartCardProtocol\">protocol</var> in <var data-type=\"sequence&lt;SmartCardProtocol&gt;\">protocols</var>,\n              <a data-link-type=\"dfn|abstract-op\" data-lt=\"add a flag\" href=\"https://wicg.github.io/web-smart-card/#dfn-add-a-flag\" class=\"internalDFN\" id=\"ref-for-dfn-add-a-flag-10\">add</a> the corresponding <code>DWORD</code> of <var data-type=\"SmartCardProtocol\">protocol</var> to <var data-type=\"DWORD\">flags</var>."
         },
         {
           "html": "Return <var data-type=\"DWORD\">flags</var>."

@@ -1,12 +1,12 @@
 {
   "spec": {
     "title": "CSS Color HDR Module Level 1",
-    "url": "https://drafts.csswg.org/css-color-hdr/"
+    "url": "https://drafts.csswg.org/css-color-hdr-1/"
   },
   "properties": [
     {
       "name": "dynamic-range-limit",
-      "href": "https://drafts.csswg.org/css-color-hdr/#propdef-dynamic-range-limit",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#propdef-dynamic-range-limit",
       "value": "standard | high | constrained-high | <dynamic-range-limit-mix()>",
       "initial": "high",
       "appliesTo": "all elements",
@@ -19,21 +19,21 @@
         {
           "name": "standard",
           "prose": "The highest luminance color that is displayed is the same as media white, i.e. the CSS color white.",
-          "href": "https://drafts.csswg.org/css-color-hdr/#valdef-dynamic-range-limit-standard",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-dynamic-range-limit-standard",
           "type": "value",
           "value": "standard"
         },
         {
           "name": "high",
           "prose": "The highest peak luminance that is displayed is much greater than media white, i.e. the CSS color white; the precise level is not specified.",
-          "href": "https://drafts.csswg.org/css-color-hdr/#valdef-dynamic-range-limit-high",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-dynamic-range-limit-high",
           "type": "value",
           "value": "high"
         },
         {
           "name": "constrained-high",
           "prose": "The highest peak luminance that is displayed is somewhat greater than media white, i.e. the CSS color white, such that a mix of SDR and HDR content can be comfortably viewed together.",
-          "href": "https://drafts.csswg.org/css-color-hdr/#valdef-dynamic-range-limit-constrained-high",
+          "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-dynamic-range-limit-constrained-high",
           "type": "value",
           "value": "constrained-high"
         }
@@ -49,67 +49,67 @@
   "values": [
     {
       "name": "dynamic-range-limit-mix()",
-      "href": "https://drafts.csswg.org/css-color-hdr/#funcdef-dynamic-range-limit-mix",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-dynamic-range-limit-mix",
       "type": "function",
       "value": "dynamic-range-limit-mix( [ <ident> && <percentage [0,100]> ]+)"
     },
     {
       "name": "color()",
-      "href": "https://drafts.csswg.org/css-color-hdr/#funcdef-color",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-color",
       "type": "function",
       "value": "color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )"
     },
     {
       "name": "<colorspace-params>",
-      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-colorspace-params",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-colorspace-params",
       "type": "type",
       "value": "[<custom-params> | <predefined-rgb-params> | <predefined-polar-params> | <predefined-rectangular-params> | <xyz-params>]"
     },
     {
       "name": "<custom-params>",
-      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-custom-params",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-custom-params",
       "type": "type",
       "value": "<dashed-ident> [ <number> | <percentage> | none ]+"
     },
     {
       "name": "<predefined-rgb-params>",
-      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-predefined-rgb-params",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rgb-params",
       "type": "type",
       "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "<predefined-polar-params>",
-      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-predefined-polar-params",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-polar-params",
       "type": "type",
       "value": "jzczhz [ <number> | <percentage> | none ]{2} [ <hue> | none]"
     },
     {
       "name": "<predefined-rectangular-params>",
-      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-predefined-rectangular-params",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rectangular-params",
       "type": "type",
       "value": "<predefined-rectangular> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "<predefined-rgb>",
-      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-predefined-rgb",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rgb",
       "type": "type",
       "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear"
     },
     {
       "name": "<predefined-rectangular>",
-      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-predefined-rectangular",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rectangular",
       "type": "type",
       "value": "jzazbz | ictcp"
     },
     {
       "name": "<xyz-params>",
-      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-xyz-params",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-xyz-params",
       "type": "type",
       "value": "<xyz> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "<xyz>",
-      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-xyz",
+      "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-xyz",
       "type": "type",
       "value": "xyz | xyz-d50 | xyz-d65"
     }

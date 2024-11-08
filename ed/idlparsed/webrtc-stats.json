@@ -330,7 +330,7 @@
         "href": "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats"
       },
       "RTCInboundRtpStreamStats": {
-        "fragment": "dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n required DOMString   trackIdentifier;\n DOMString            mid;\n DOMString            remoteId;\n unsigned long        framesDecoded;\n unsigned long        keyFramesDecoded;\n unsigned long        framesRendered;\n unsigned long        framesDropped;\n unsigned long        frameWidth;\n unsigned long        frameHeight;\n double               framesPerSecond;\n unsigned long long   qpSum;\n double               totalDecodeTime;\n double               totalInterFrameDelay;\n double               totalSquaredInterFrameDelay;\n unsigned long        pauseCount;\n double               totalPausesDuration;\n unsigned long        freezeCount;\n double               totalFreezesDuration;\n DOMHighResTimeStamp  lastPacketReceivedTimestamp;\n unsigned long long   headerBytesReceived;\n unsigned long long   packetsDiscarded;\n unsigned long long   fecBytesReceived;\n unsigned long long   fecPacketsReceived;\n unsigned long long   fecPacketsDiscarded;\n unsigned long long   bytesReceived;\n unsigned long        nackCount;\n unsigned long        firCount;\n unsigned long        pliCount;\n double               totalProcessingDelay;\n DOMHighResTimeStamp  estimatedPlayoutTimestamp;\n double               jitterBufferDelay;\n double               jitterBufferTargetDelay;\n unsigned long long   jitterBufferEmittedCount;\n double               jitterBufferMinimumDelay;\n unsigned long long   totalSamplesReceived;\n unsigned long long   concealedSamples;\n unsigned long long   silentConcealedSamples;\n unsigned long long   concealmentEvents;\n unsigned long long   insertedSamplesForDeceleration;\n unsigned long long   removedSamplesForAcceleration;\n double               audioLevel;\n double               totalAudioEnergy;\n double               totalSamplesDuration;\n unsigned long        framesReceived;\n DOMString            decoderImplementation;\n DOMString            playoutId;\n boolean              powerEfficientDecoder;\n unsigned long        framesAssembledFromMultiplePackets;\n double               totalAssemblyTime;\n unsigned long long   retransmittedPacketsReceived;\n unsigned long long   retransmittedBytesReceived;\n unsigned long        rtxSsrc;\n unsigned long        fecSsrc;\n};",
+        "fragment": "dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n required DOMString   trackIdentifier;\n DOMString            mid;\n DOMString            remoteId;\n unsigned long        framesDecoded;\n unsigned long        keyFramesDecoded;\n unsigned long        framesRendered;\n unsigned long        framesDropped;\n unsigned long        frameWidth;\n unsigned long        frameHeight;\n double               framesPerSecond;\n unsigned long long   qpSum;\n double               totalDecodeTime;\n double               totalInterFrameDelay;\n double               totalSquaredInterFrameDelay;\n unsigned long        pauseCount;\n double               totalPausesDuration;\n unsigned long        freezeCount;\n double               totalFreezesDuration;\n DOMHighResTimeStamp  lastPacketReceivedTimestamp;\n unsigned long long   headerBytesReceived;\n unsigned long long   packetsDiscarded;\n unsigned long long   fecBytesReceived;\n unsigned long long   fecPacketsReceived;\n unsigned long long   fecPacketsDiscarded;\n unsigned long long   bytesReceived;\n unsigned long        nackCount;\n unsigned long        firCount;\n unsigned long        pliCount;\n double               totalProcessingDelay;\n DOMHighResTimeStamp  estimatedPlayoutTimestamp;\n double               jitterBufferDelay;\n double               jitterBufferTargetDelay;\n unsigned long long   jitterBufferEmittedCount;\n double               jitterBufferMinimumDelay;\n unsigned long long   totalSamplesReceived;\n unsigned long long   concealedSamples;\n unsigned long long   silentConcealedSamples;\n unsigned long long   concealmentEvents;\n unsigned long long   insertedSamplesForDeceleration;\n unsigned long long   removedSamplesForAcceleration;\n double               audioLevel;\n double               totalAudioEnergy;\n double               totalSamplesDuration;\n unsigned long        framesReceived;\n DOMString            decoderImplementation;\n DOMString            playoutId;\n boolean              powerEfficientDecoder;\n unsigned long        framesAssembledFromMultiplePackets;\n double               totalAssemblyTime;\n unsigned long long   retransmittedPacketsReceived;\n unsigned long long   retransmittedBytesReceived;\n unsigned long        rtxSsrc;\n unsigned long        fecSsrc;\n double               totalCorruptionProbability;\n double               totalSquaredCorruptionProbability;\n unsigned long long   corruptionMeasurements;\n};",
         "type": "dictionary",
         "name": "RTCInboundRtpStreamStats",
         "inheritance": "RTCReceivedRtpStreamStats",
@@ -1182,6 +1182,54 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-fecssrc"
+          },
+          {
+            "type": "field",
+            "name": "totalCorruptionProbability",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalcorruptionprobability"
+          },
+          {
+            "type": "field",
+            "name": "totalSquaredCorruptionProbability",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsquaredcorruptionprobability"
+          },
+          {
+            "type": "field",
+            "name": "corruptionMeasurements",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-corruptionmeasurements"
           }
         ],
         "extAttrs": [],
