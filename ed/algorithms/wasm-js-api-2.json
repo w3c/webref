@@ -139,7 +139,7 @@
               "html": "<p>Let <var>o</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>importObject</var>, <var>moduleName</var>).</p>"
             },
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values\">Type</a>(<var>o</var>) is not Object, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①\">TypeError</a></code> exception.</p>"
+              "html": "<p>If <var>o</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type\">is not an Object</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①\">TypeError</a></code> exception.</p>"
             },
             {
               "html": "<p>Let <var>v</var> be <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p①\">Get</a>(<var>o</var>, <var>componentName</var>).</p>"
@@ -185,11 +185,11 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values①\">Type</a>(<var>v</var>) is Number or BigInt,",
+                  "html": "If <var>v</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-language-types-number-type\" id=\"ref-for-sec-ecmascript-language-types-number-type\">is a Number</a> or <var>v</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-language-types-bigint-type\" id=\"ref-for-sec-ecmascript-language-types-bigint-type\">is a BigInt</a>,",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "If <var>valtype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype\">i64</a> and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values②\">Type</a>(<var>v</var>) is Number,",
+                      "html": "If <var>valtype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype\">i64</a> and <var>v</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-language-types-number-type\" id=\"ref-for-sec-ecmascript-language-types-number-type①\">is a Number</a>,",
                       "rationale": "throw",
                       "steps": [
                         {
@@ -198,7 +198,7 @@
                       ]
                     },
                     {
-                      "html": "If <var>valtype</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①\">i64</a> and <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values③\">Type</a>(<var>v</var>) is BigInt,",
+                      "html": "If <var>valtype</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①\">i64</a> and <var>v</var> <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-ecmascript-language-types-bigint-type\" id=\"ref-for-sec-ecmascript-language-types-bigint-type①\">is a BigInt</a>,",
                       "rationale": "throw",
                       "steps": [
                         {

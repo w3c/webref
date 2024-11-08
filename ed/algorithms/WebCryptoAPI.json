@@ -6257,7 +6257,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>\n                    If <var>length</var> is null or zero, or is not a multiple of 8, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"idl\" data-lt=\"OperationError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n                  </p>"
+          "html": "<p>\n                    If <var>length</var> is null or is not a multiple of 8, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"idl\" data-lt=\"OperationError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n                  </p>"
         },
         {
           "html": "<p>\n                    Let <var>keyDerivationKey</var> be the secret represented by <a data-link-type=\"attribute\" data-lt=\"[[handle]]\" href=\"https://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-handle\" class=\"internalDFN\" id=\"ref-for-dfn-CryptoKey-slot-handle-49\"><code>[[handle]]</code></a> internal slot of <var>key</var>.\n                  </p>"
@@ -6269,7 +6269,7 @@
           "html": "<p>\n                    If the key derivation operation fails,\n                    then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n                    <a data-link-type=\"idl\" data-lt=\"OperationError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n                  </p>"
         },
         {
-          "html": "<p>\n                    Return <var>result</var>.\n                  </p>"
+          "html": "<p>\n                    Return the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"create\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybuffer-create\">creating</a>\n                    an <a data-link-type=\"idl\" data-lt=\"ArrayBuffer\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> containing <var>result</var>.\n                  </p>"
         }
       ]
     },
@@ -6342,10 +6342,13 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>\n                    If <var>length</var> is null or zero, or is not a multiple of 8, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"idl\" data-lt=\"OperationError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n                  </p>"
+          "html": "<p>\n                    If <var>length</var> is null or is not a multiple of 8, then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"idl\" data-lt=\"OperationError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n                  </p>"
         },
         {
           "html": "<p>\n                    If the <a data-link-type=\"idl\" href=\"https://w3c.github.io/webcrypto/#dfn-Pbkdf2Params-iterations\" class=\"internalDFN\" id=\"ref-for-dfn-Pbkdf2Params-iterations-2\"><code>iterations</code></a> member of <var>normalizedAlgorithm</var> is zero,\n                    then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"idl\" data-lt=\"OperationError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n                  </p>"
+        },
+        {
+          "html": "<p>\n                    If <var>length</var> is zero, return the result of\n                    <a data-link-type=\"dfn|abstract-op\" data-lt=\"create\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybuffer-create\">creating</a> an <a data-link-type=\"idl\" data-lt=\"ArrayBuffer\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a>\n                    containing an empty <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a>.\n                  </p>"
         },
         {
           "html": "<p>\n                    Let <var>prf</var> be the MAC Generation function described in Section 4 of\n                    [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/webcrypto/#bib-fips-198-1\" title=\"The Keyed-Hash Message Authentication Code (HMAC)\">FIPS-198-1</a></cite>] using the hash function\n                    described by the <a data-link-type=\"idl\" href=\"https://w3c.github.io/webcrypto/#dfn-Pbkdf2Params-hash\" class=\"internalDFN\" id=\"ref-for-dfn-Pbkdf2Params-hash-2\"><code>hash</code></a> member of\n                    <var>normalizedAlgorithm</var>.\n                  </p>"
@@ -6357,7 +6360,7 @@
           "html": "<p>\n                    If the key derivation operation fails,\n                    then <a data-link-type=\"dfn|abstract-op\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n                    <a data-link-type=\"idl\" data-lt=\"OperationError\" data-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n                  </p>"
         },
         {
-          "html": "<p>\n                    Return <var>result</var>\n                  </p>"
+          "html": "<p>\n                    Return the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"create\" data-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybuffer-create\">creating</a>\n                    an <a data-link-type=\"idl\" data-lt=\"ArrayBuffer\" data-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> containing <var>result</var>.\n                  </p>"
         }
       ]
     },
