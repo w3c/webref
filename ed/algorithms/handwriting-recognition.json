@@ -286,31 +286,52 @@
       "rationale": ".algorithm",
       "steps": [
         {
+          "html": "<p>If <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-recognizer\" id=\"ref-for-handwritingdrawing-recognizer①\">recognizer</a>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingrecognizer-active\" id=\"ref-for-handwritingrecognizer-active⑧\">active</a> isn’t true, return a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">\"InvalidStateError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-strokes\" id=\"ref-for-handwritingdrawing-strokes⑤\">strokes</a> is empty, return a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format④\">Convert <code>this</code> drawing into a format suitable</a> for <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②⓪\">handwriting recognizer</a>.</p>"
+        },
+        {
           "html": "Let <var>p</var> be a new Promise, run the following step <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>",
-          "rationale": "if",
+          "rationale": "send",
           "steps": [
             {
-              "html": "<p>If <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-recognizer\" id=\"ref-for-handwritingdrawing-recognizer①\">recognizer</a>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingrecognizer-active\" id=\"ref-for-handwritingrecognizer-active⑧\">active</a> isn’t true, reject <var>p</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> whose name is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">\"InvalidStateError\"</a></code> and abort.</p>"
+              "html": "<p>Send the converted drawing to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②①\">handwriting recognizer</a>.</p>"
             },
             {
-              "html": "<p>If <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-strokes\" id=\"ref-for-handwritingdrawing-strokes⑤\">strokes</a> is empty, resolve <var>p</var> with a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
+              "html": "<p>Wait for <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②②\">handwriting recognizer</a> to return its predictions.</p>"
             },
             {
-              "html": "<p>Let <var>result</var> be a list.</p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format④\">Convert <code>this</code> drawing into a format suitable</a> for <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②⓪\">handwriting recognizer</a>.</p>"
-            },
-            {
-              "html": "<p>Send the converted drawing to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwriting-recognizer\" id=\"ref-for-handwriting-recognizer②①\">handwriting recognizer</a>, and retrieves its prediction.</p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format⑤\">Convert the retrieved predictions into </a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dictdef-handwritingprediction\" id=\"ref-for-dictdef-handwritingprediction①\">HandwritingPrediction</a></code>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">append</a> the converted predictions to <var>result</var>.</p>"
-            },
-            {
-              "html": "<p>Resolve <var>p</var> with <var>result</var>.</p>"
+              "html": "<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#queues-a-handwriting-recognition-api-task\" id=\"ref-for-queues-a-handwriting-recognition-api-task\">Queue a Handwriting Recognition API task</a> to perform the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>result</var> be a list.</p>"
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> returned prediction <var>pred</var>:",
+                  "rationale": "convert",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#convert-data-format\" id=\"ref-for-convert-data-format⑤\">Convert <var>pred</var> into</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/handwriting-recognition/#dictdef-handwritingprediction\" id=\"ref-for-dictdef-handwritingprediction①\">HandwritingPrediction</a></code> <var>idl_pred</var>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">Append</a> <var>idl_pred</var> to <var>result</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Resolve <var>p</var> with <var>result</var>.</p>"
+                }
+              ]
             }
           ]
+        },
+        {
+          "html": "<p>Return <var>p</var></p>"
         }
       ]
     }
