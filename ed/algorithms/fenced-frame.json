@@ -1924,6 +1924,19 @@
           "html": "<p>If <var>scrolling box</var>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①\">Element</a></code>'s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤⑤\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①⑥\">node\n navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\" id=\"ref-for-nav-traversable⑨\">traversable navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\" id=\"ref-for-fenced-navigable-container-fenced-navigable⑥③\">fenced\n navigable</a>, or if <var>scrolling box</var>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS21/visuren.html#viewport\" id=\"ref-for-viewport①\">viewport</a>'s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑤⑥\">Document</a></code>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①⑦\">node navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\" id=\"ref-for-nav-traversable①⓪\">traversable navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\" id=\"ref-for-fenced-navigable-container-fenced-navigable⑥④\">fenced navigable</a>, then let this be the last instance of this algorithm that stops\n any further recursive instances that would otherwise follow.</p>"
         }
       ]
+    },
+    {
+      "name": "webrtc-constructor",
+      "html": "Modify the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection\" id=\"ref-for-dom-rtcpeerconnection①\">RTCPeerConnection</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-peerconnection\" id=\"ref-for-dom-peerconnection\">constructor</a></code> algorithm to add new first and\n  second steps that read:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>navigable</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑤\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑤\">navigable</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#traversable-navigable\" id=\"ref-for-traversable-navigable①⑨\">traversable navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\" id=\"ref-for-fenced-navigable-container-fenced-navigable⑥⑤\">fenced\n navigable</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>.</p>"
+        }
+      ]
     }
   ]
 }
