@@ -41,6 +41,54 @@
   "selectors": [],
   "values": [
     {
+      "name": "<boolean-expr[]>",
+      "prose": "Several contexts (such as @media, @supports, if(), ...) specify conditions, and allow combining those conditions with boolean logic (and/or/not/grouping). Because they use the same non-trivial recursive syntax structure, the special <boolean-expr[]> production represents this pattern generically.",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-boolean-expr",
+      "type": "type"
+    },
+    {
+      "name": "<syntax>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-syntax",
+      "type": "type",
+      "value": "'*' | <syntax-component> [ <syntax-combinator> <syntax-component> ]* | <syntax-string>"
+    },
+    {
+      "name": "<syntax-component>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-syntax-component",
+      "type": "type",
+      "value": "<syntax-single-component> <syntax-multiplier>? | '<' transform-list '>'"
+    },
+    {
+      "name": "<syntax-single-component>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-syntax-single-component",
+      "type": "type",
+      "value": "'<' <syntax-type-name> '>' | <ident>"
+    },
+    {
+      "name": "<syntax-type-name>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-syntax-type-name",
+      "type": "type",
+      "value": "angle | color | custom-ident | image | integer | length | length-percentage | number | percentage | resolution | string | time | url | transform-function"
+    },
+    {
+      "name": "<syntax-combinator>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-syntax-combinator",
+      "type": "type",
+      "value": "'|'"
+    },
+    {
+      "name": "<syntax-multiplier>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-syntax-multiplier",
+      "type": "type",
+      "value": "[ '#' | '+' ]"
+    },
+    {
+      "name": "<syntax-string>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-syntax-string",
+      "type": "type",
+      "value": "<string>"
+    },
+    {
       "name": "<request-url-modifier>",
       "prose": "<request-url-modifier>s are <url-modifier>s that affect the <url>’s resource request by applying associated URL request modifier steps. See CSS Values 4 § 4.5.4 URL Processing Model.",
       "href": "https://www.w3.org/TR/css-values-5/#typedef-request-url-modifier",
@@ -282,7 +330,7 @@
     },
     {
       "name": "progress()",
-      "prose": "The progress() functional notation returns a <number> value representing the position of one calculation (the progress value) between two other calculations (the progress start value and progress end value). The argument calculations can resolve to any <number>, <dimension>, or <percentage>, but must have a consistent type or else the function is invalid. The result will be a <number>, made consistent with the consistent type of the arguments.",
+      "prose": "The progress() functional notation returns a <number> value representing the position of one calculation (the progress value) between two other calculations (the progress start value and progress end value). progress() is a math function.",
       "href": "https://www.w3.org/TR/css-values-5/#funcdef-progress",
       "type": "function"
     },
@@ -290,7 +338,7 @@
       "name": "<progress()>",
       "href": "https://www.w3.org/TR/css-values-5/#typedef-progress-fn",
       "type": "type",
-      "value": "progress(<calc-sum> from <calc-sum> to <calc-sum>)"
+      "value": "progress(<calc-sum>, <calc-sum>, <calc-sum>)"
     },
     {
       "name": "media-progress()",
@@ -302,7 +350,7 @@
       "name": "<media-progress()>",
       "href": "https://www.w3.org/TR/css-values-5/#typedef-media-progress",
       "type": "type",
-      "value": "media-progress(<media-feature> from <calc-sum> to <calc-sum>)"
+      "value": "media-progress(<mf-name>, <calc-sum>, <calc-sum>)"
     },
     {
       "name": "container-progress()",
@@ -314,7 +362,7 @@
       "name": "<container-progress()>",
       "href": "https://www.w3.org/TR/css-values-5/#typedef-container-progress",
       "type": "type",
-      "value": "container-progress(<size-feature> [ of <container-name> ]? from <calc-sum> to <calc-sum>)"
+      "value": "container-progress(<mf-name> [ of <container-name> ]?, <calc-sum>, <calc-sum>)"
     },
     {
       "name": "<progress>",
@@ -387,7 +435,7 @@
       "name": "<mix()>",
       "href": "https://www.w3.org/TR/css-values-5/#typedef-mix",
       "type": "type",
-      "value": "mix( <progress> , <whole-value> , <whole-value> ) | mix( <progress> && of <'animation-name'> )"
+      "value": "mix( <progress> , <whole-value> , <whole-value> ) | mix( <progress> && of <keyframes-name> )"
     },
     {
       "name": "first-valid()",
@@ -402,6 +450,39 @@
       "value": "first-valid( <declaration-value># )"
     },
     {
+      "name": "if()",
+      "prose": "The if() notation is an arbitrary substitution function that represents conditional values. Its argument consists of an ordered semi-colon–separated list of statements, each consisting of a condition followed by a colon followed by a value. An if() notation represents the value corresponding to the first condition in its argument list to be true; if no condition matches, then the if() notation represents an empty token stream.",
+      "href": "https://www.w3.org/TR/css-values-5/#funcdef-if",
+      "type": "function",
+      "values": [
+        {
+          "name": "else",
+          "prose": "The else keyword represents a condition that is always true.",
+          "href": "https://www.w3.org/TR/css-values-5/#valdef-if-else",
+          "type": "value",
+          "value": "else"
+        }
+      ]
+    },
+    {
+      "name": "<if()>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-if",
+      "type": "type",
+      "value": "if( [ <if-condition> : <declaration-value>? ; ]* <if-condition> : <declaration-value>? ;? )"
+    },
+    {
+      "name": "<if-condition>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-if-condition",
+      "type": "type",
+      "value": "<boolean-expr[ <if-test> ]> | else"
+    },
+    {
+      "name": "<if-test>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-if-test",
+      "type": "type",
+      "value": "supports( [ <supports-condition> | <ident> : <declaration-value> ] ) | media( <media-query> ) | style( <style-query> )"
+    },
+    {
       "name": "toggle()",
       "prose": "The toggle() expression allows descendant elements to cycle over a list of values instead of inheriting the same value.",
       "href": "https://www.w3.org/TR/css-values-5/#funcdef-toggle",
@@ -414,108 +495,29 @@
       "value": "toggle( <whole-value># )"
     },
     {
+      "name": "inherit()",
+      "prose": "Like the inherit keyword, the inherit() functional notation resolves to the computed value of a property on the parent. Rather than resolving to the value of the same property, however, it resolves to the tokenized computed value of the property specified as its first argument. Its second argument, if present, is used as a fallback in case the first argument resolves to the guaranteed-invalid value.",
+      "href": "https://www.w3.org/TR/css-values-5/#funcdef-inherit",
+      "type": "function"
+    },
+    {
+      "name": "<inherit()>",
+      "href": "https://www.w3.org/TR/css-values-5/#typedef-inherit",
+      "type": "type",
+      "value": "inherit( <custom-property-name>, <declaration-value>? )"
+    },
+    {
       "name": "attr()",
       "prose": "The attr() function substitutes the value of an attribute on an element into a property, similar to how the var() function substitutes a custom property value into a function.",
       "href": "https://www.w3.org/TR/css-values-5/#funcdef-attr",
       "type": "function",
-      "value": "attr( <attr-name> <attr-type>? , <declaration-value>?)",
-      "values": [
-        {
-          "name": "string",
-          "prose": "The substitution value is a CSS string, whose value is the literal value of the attribute. (No CSS parsing or \"cleanup\" of the value is performed.) No value triggers fallback.",
-          "href": "https://www.w3.org/TR/css-values-5/#valdef-attr-string",
-          "type": "value",
-          "value": "string"
-        },
-        {
-          "name": "ident",
-          "prose": "The substitution value is a CSS <custom-ident>, whose value is the literal value of the attribute, with leading and trailing ASCII whitespace stripped. (No CSS parsing of the value is performed.) If the attribute value, after trimming, is the empty string, there is instead no substitution value. If the <custom-ident>’s value is a CSS-wide keyword or default, there is instead no substitution value.",
-          "href": "https://www.w3.org/TR/css-values-5/#valdef-attr-ident",
-          "type": "value",
-          "value": "ident"
-        },
-        {
-          "name": "color",
-          "prose": "Parse a component value from the attribute’s value. If the result is a <hex-color> or a named color ident, the substitution value is that result as a <color>. Otherwise there is no substitution value.",
-          "href": "https://www.w3.org/TR/css-values-5/#valdef-attr-color",
-          "type": "value",
-          "value": "color"
-        },
-        {
-          "name": "number",
-          "prose": "Parse a component value from the attribute’s value. If the result is a <number-token>, the result is the substitution value. Otherwise, there is no substitution value.",
-          "href": "https://www.w3.org/TR/css-values-5/#valdef-attr-number",
-          "type": "value",
-          "value": "number"
-        },
-        {
-          "name": "percentage",
-          "prose": "Parse a component value from the attribute’s value. If the result is a <percentage-token>, the result is the substitution value. Otherwise, there is no substitution value.",
-          "href": "https://www.w3.org/TR/css-values-5/#valdef-attr-percentage",
-          "type": "value",
-          "value": "percentage"
-        },
-        {
-          "name": "length",
-          "prose": "Parse a component value from the attribute’s value. If the result is a <dimension-token> whose unit matches the given type, the result is the substitution value. Otherwise, there is no substitution value.",
-          "href": "https://www.w3.org/TR/css-values-5/#valdef-attr-length",
-          "type": "value",
-          "value": "length"
-        },
-        {
-          "name": "angle",
-          "prose": "Parse a component value from the attribute’s value. If the result is a <dimension-token> whose unit matches the given type, the result is the substitution value. Otherwise, there is no substitution value.",
-          "href": "https://www.w3.org/TR/css-values-5/#valdef-attr-angle",
-          "type": "value",
-          "value": "angle"
-        },
-        {
-          "name": "time",
-          "prose": "Parse a component value from the attribute’s value. If the result is a <dimension-token> whose unit matches the given type, the result is the substitution value. Otherwise, there is no substitution value.",
-          "href": "https://www.w3.org/TR/css-values-5/#valdef-attr-time",
-          "type": "value",
-          "value": "time"
-        },
-        {
-          "name": "frequency",
-          "prose": "Parse a component value from the attribute’s value. If the result is a <dimension-token> whose unit matches the given type, the result is the substitution value. Otherwise, there is no substitution value.",
-          "href": "https://www.w3.org/TR/css-values-5/#valdef-attr-frequency",
-          "type": "value",
-          "value": "frequency"
-        },
-        {
-          "name": "flex",
-          "prose": "Parse a component value from the attribute’s value. If the result is a <dimension-token> whose unit matches the given type, the result is the substitution value. Otherwise, there is no substitution value.",
-          "href": "https://www.w3.org/TR/css-values-5/#valdef-attr-flex",
-          "type": "value",
-          "value": "flex"
-        },
-        {
-          "name": "<dimension-unit>",
-          "prose": "Parse a component value from the attribute’s value. If the result is a <number-token>, the substitution value is a dimension with the result’s value, and the given unit. Otherwise, there is no substitution value.",
-          "href": "https://www.w3.org/TR/css-values-5/#valdef-attr-dimension-unit",
-          "type": "value",
-          "value": "<dimension-unit>"
-        }
-      ]
+      "value": "attr( <attr-name> <syntax>? , <declaration-value>?)"
     },
     {
       "name": "<attr-name>",
       "href": "https://www.w3.org/TR/css-values-5/#typedef-attr-name",
       "type": "type",
       "value": "[ <ident-token> '|' ]? <ident-token>"
-    },
-    {
-      "name": "<attr-type>",
-      "href": "https://www.w3.org/TR/css-values-5/#typedef-attr-type",
-      "type": "type",
-      "value": "string | ident | color | number | percentage | length | angle | time | frequency | flex | <dimension-unit>"
-    },
-    {
-      "name": "<dimension-unit>",
-      "prose": "The <dimension-unit> production matches a literal \"%\" character (that is, a <delim-token> with a value of \"%\") or an ident whose value is any of the CSS units for <length>, <angle>, <time>, <frequency>, or <flex> values (such as px or ms).",
-      "href": "https://www.w3.org/TR/css-values-5/#typedef-dimension-unit",
-      "type": "type"
     },
     {
       "name": "random()",
@@ -585,6 +587,16 @@
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "]>",
+      "value": "not <boolean-expr-group> | <boolean-expr-group> [ [ and <boolean-expr-group> ]* | [ or <boolean-expr-group> ]* ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "<boolean-expr-group>",
+      "value": "<test> | ( <boolean-expr[ <test> ]> ) | <general-enclosed>"
+    },
     {
       "msg": "Missing definition",
       "name": "progress-function()",
