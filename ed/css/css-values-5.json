@@ -41,6 +41,12 @@
   "selectors": [],
   "values": [
     {
+      "name": "<boolean-expr[]>",
+      "prose": "Several contexts (such as @media, @supports, if(), ...) specify conditions, and allow combining those conditions with boolean logic (and/or/not/grouping). Because they use the same non-trivial recursive syntax structure, the special <boolean-expr[]> production represents this pattern generically.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-boolean-expr",
+      "type": "type"
+    },
+    {
       "name": "<syntax>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-syntax",
       "type": "type",
@@ -468,7 +474,7 @@
       "name": "<if-condition>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-if-condition",
       "type": "type",
-      "value": "<boolean[ <if-test> ]> | else"
+      "value": "<boolean-expr[ <if-test> ]> | else"
     },
     {
       "name": "<if-test>",
@@ -584,12 +590,12 @@
     {
       "msg": "Missing definition",
       "name": "]>",
-      "value": "not <boolean-group> | <boolean-group> [ [ and <boolean-group> ]* | [ or <boolean-group> ]* ]"
+      "value": "not <boolean-expr-group> | <boolean-expr-group> [ [ and <boolean-expr-group> ]* | [ or <boolean-expr-group> ]* ]"
     },
     {
       "msg": "Missing definition",
-      "name": "<boolean-group>",
-      "value": "<test> | ( <boolean[ <test> ]> ) | <general-enclosed>"
+      "name": "<boolean-expr-group>",
+      "value": "<test> | ( <boolean-expr[ <test> ]> ) | <general-enclosed>"
     },
     {
       "msg": "Missing definition",
