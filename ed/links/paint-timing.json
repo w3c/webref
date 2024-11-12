@@ -24,11 +24,7 @@
       "https://svgwg.org/svg2-draft/": {},
       "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/performance-timeline/": {
-        "anchors": [
-          "dfn-queue-a-performanceentry"
-        ]
-      },
+      "https://w3c.github.io/performance-timeline/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://wicg.github.io/element-timing/": {},
       "https://www.w3.org/policies/process/20231103/": {}
@@ -128,6 +124,11 @@
           "img-all"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/input.html": {
         "anchors": [
           "the-input-element",
@@ -157,6 +158,8 @@
           "update-the-rendering",
           "concept-realm-global",
           "concept-relevant-global",
+          "concept-settings-object-cross-origin-isolated-capability",
+          "queue-a-global-task",
           "concept-relevant-realm",
           "relevant-settings-object"
         ]
@@ -201,13 +204,16 @@
           "dom-performanceentry-entrytype",
           "dom-performanceentry-starttime",
           "dom-performanceentry-duration",
-          "dom-performanceobserver-supportedentrytypes"
+          "dom-performanceobserver-supportedentrytypes",
+          "dfn-performance-timeline-task-source",
+          "dfn-queue-a-performanceentry"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-DOMString",
           "Exposed",
+          "this",
           "new"
         ]
       },
