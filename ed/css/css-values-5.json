@@ -511,13 +511,25 @@
       "prose": "The attr() function substitutes the value of an attribute on an element into a property, similar to how the var() function substitutes a custom property value into a function.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-attr",
       "type": "function",
-      "value": "attr( <attr-name> <syntax>? , <declaration-value>?)"
+      "value": "attr( <attr-name> <attr-type>? , <declaration-value>?)"
     },
     {
       "name": "<attr-name>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-name",
       "type": "type",
       "value": "[ <ident-token> '|' ]? <ident-token>"
+    },
+    {
+      "name": "<attr-type>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-type",
+      "type": "type",
+      "value": "type( <syntax> ) | string | <attr-unit>"
+    },
+    {
+      "name": "<attr-unit>",
+      "prose": "The <attr-unit> production matches any identifier that is an ASCII case-insensitive match for the name of a CSS dimension unit, such as px, or the <delim-token> %. It is not expanded literally here, as the set of units expands over time.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-unit",
+      "type": "type"
     },
     {
       "name": "random()",
