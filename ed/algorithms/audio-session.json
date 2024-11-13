@@ -30,7 +30,222 @@
           "html": "<p>Set <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-type\" id=\"ref-for-audiosession-type②\">[[type]]</a> to <var>newValue</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\">Update the type</a> of <var>audioSession</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#update-the-type\" id=\"ref-for-update-the-type\">Update the type</a> of <var>audioSession</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update the type",
+      "href": "https://w3c.github.io/audio-session/#update-the-type",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the type</dfn> of <var>audioSession</var>, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-istypebeingapplied\" id=\"ref-for-audiosession-istypebeingapplied\">[[isTypeBeingApplied]]</a> is <code>true</code>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-istypebeingapplied\" id=\"ref-for-audiosession-istypebeingapplied①\">[[isTypeBeingApplied]]</a> to <code>true</code>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> to run the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-istypebeingapplied\" id=\"ref-for-audiosession-istypebeingapplied②\">[[isTypeBeingApplied]]</a> to <code>false</code>.</p>"
+            },
+            {
+              "html": "<p>If <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-type\" id=\"ref-for-audiosession-type③\">[[type]]</a> is the same as <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-appliedtype\" id=\"ref-for-audiosession-appliedtype\">[[appliedType]]</a>, abort these steps.</p>"
+            },
+            {
+              "html": "<p>Set <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-appliedtype\" id=\"ref-for-audiosession-appliedtype①\">[[appliedType]]</a> to <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-type\" id=\"ref-for-audiosession-type④\">[[type]]</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#update-all-audiosession-states\" id=\"ref-for-update-all-audiosession-states\">Update all AudioSession states</a> of <var>audioSession</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context④\">top-level browsing context</a> with <var>audioSession</var>.</p>"
+            },
+            {
+              "html": "<p>For each <var>element</var> of <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-elements\" id=\"ref-for-audiosession-elements\">[[elements]]</a>, <a data-link-type=\"dfn\">update</a> <var>element</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>newType</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#compute-the-audio-session-type\" id=\"ref-for-compute-the-audio-session-type\">computing the type</a> of <var>audioSession</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">In parallel</a>, set the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session-type\" id=\"ref-for-audio-session-type⑥\">type</a> of <var>audioSession</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session①⑤\">audio session</a> to <var>newType</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "notify the state’s change",
+      "href": "https://w3c.github.io/audio-session/#notify-the-states-change",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"notify-the-states-change\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">notify the state’s change</dfn> with <var>audioSession</var> and <var>newState</var>, the user agent MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>isMutatingState</var> be <code>true</code> if <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-state\" id=\"ref-for-audiosession-state①\">[[state]]</a> is not <var>newState</var> and <code>false</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>Set <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-state\" id=\"ref-for-audiosession-state②\">[[state]]</a> to <var>newState</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>newState</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-inactive\" id=\"ref-for-dom-audiosessionstate-inactive③\">inactive</a></code>, set <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-interruptedelements\" id=\"ref-for-audiosession-interruptedelements\">[[interruptedElements]]</a> to an empty list.</p>"
+        },
+        {
+          "html": "<p>For each <var>element</var> of <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-elements\" id=\"ref-for-audiosession-elements①\">[[elements]]</a>, <a data-link-type=\"dfn\">update</a> <var>element</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>isMutatingState</var> is <code>false</code>, abort these steps.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#update-all-audiosession-states\" id=\"ref-for-update-all-audiosession-states①\">Update all AudioSession states</a> of <var>audioSession</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context⑥\">top-level browsing context</a> with <var>audioSession</var>.</p>"
+        },
+        {
+          "html": "<p>Fire an event named statechange at <var>audioSession</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "inactivate",
+      "href": "https://w3c.github.io/audio-session/#inactivate",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inactivate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">inactivate</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#audiosession\" id=\"ref-for-audiosession①⑥\">AudioSession</a></code> named <var>audioSession</var>, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-state\" id=\"ref-for-audiosession-state③\">[[state]]</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-inactive\" id=\"ref-for-dom-audiosessionstate-inactive④\">inactive</a></code>, abort these steps.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#set-the-state\" id=\"ref-for-set-the-state\">Set the state</a> of <var>audioSession</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session②②\">audio session</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-inactive\" id=\"ref-for-dom-audiosessionstate-inactive⑤\">inactive</a></code>.</p>"
+            },
+            {
+              "html": "<p>Assert that <var>audioSession</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session②③\">audio session</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session-state\" id=\"ref-for-audio-session-state⑥\">state</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-inactive\" id=\"ref-for-dom-audiosessionstate-inactive⑥\">inactive</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#notify-the-states-change\" id=\"ref-for-notify-the-states-change②\">notify the state’s change</a> with <var>audioSession</var> and with its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session②④\">audio session</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session-state\" id=\"ref-for-audio-session-state⑦\">state</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "try activating",
+      "href": "https://w3c.github.io/audio-session/#try-activating",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"try-activating\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">try activating</dfn> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#audiosession\" id=\"ref-for-audiosession①⑦\">AudioSession</a></code> named <var>audioSession</var>, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-state\" id=\"ref-for-audiosession-state④\">[[state]]</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-active\" id=\"ref-for-dom-audiosessionstate-active⑤\">active</a></code>, abort these steps.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#set-the-state\" id=\"ref-for-set-the-state①\">Set the state</a> of <var>audioSession</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session②⑤\">audio session</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-active\" id=\"ref-for-dom-audiosessionstate-active⑥\">active</a></code>. <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#set-the-state\" id=\"ref-for-set-the-state②\">Setting the state</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-active\" id=\"ref-for-dom-audiosessionstate-active⑦\">active</a></code> can fail, in which case the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session②⑥\">audio session</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session-state\" id=\"ref-for-audio-session-state⑧\">state</a> will either be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-inactive\" id=\"ref-for-dom-audiosessionstate-inactive⑦\">inactive</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-interrupted\" id=\"ref-for-dom-audiosessionstate-interrupted③\">interrupted</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#notify-the-states-change\" id=\"ref-for-notify-the-states-change③\">notify the state’s change</a> with <var>audioSession</var> and with its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session②⑦\">audio session</a>'s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session-state\" id=\"ref-for-audio-session-state⑨\">state</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "update the selected audio session",
+      "href": "https://w3c.github.io/audio-session/#update-the-selected-audio-session",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-selected-audio-session\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the selected audio session</dfn> of a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context⑦\">top-level browsing context</a> named <var>context</var>, the user agent MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>activeAudioSessions</var> be the list of all the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session②⑨\">audio sessions</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-tied-to\" id=\"ref-for-audiosession-tied-to①\">tied to</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#audiosession\" id=\"ref-for-audiosession①⑧\">AudioSession</a></code> objects of <var>context</var> and its children in a breadth-first order, that match both the following constraints:</p>",
+          "ignored": [
+            "Its state is active. The result of computing the type of the AudioSession object is an exclusive type."
+          ]
+        },
+        {
+          "html": "<p>If <var>activeAudioSessions</var> is empty, abort these steps.</p>"
+        },
+        {
+          "html": "<p>If there is only one <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session③⓪\">audio session</a> in <var>activeAudioSessions</var>, set the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#selected-audio-session\" id=\"ref-for-selected-audio-session②\">selected audio session</a> to this <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session③①\">audio session</a> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Assert that for any <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#audiosession\" id=\"ref-for-audiosession②⓪\">AudioSession</a></code> object <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-tied-to\" id=\"ref-for-audiosession-tied-to②\">tied to</a> an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session③②\">audio session</a> in <var>activeAudioSessions</var>’s named <var>audioSession</var>, <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-type\" id=\"ref-for-audiosession-type⑤\">[[type]]</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-auto\" id=\"ref-for-dom-audiosessiontype-auto⑤\">auto</a></code>.</p>"
+        },
+        {
+          "html": "<p>The user agent MAY apply specific heuristics to reorder <var>activeAudioSessions</var>.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#selected-audio-session\" id=\"ref-for-selected-audio-session③\">selected audio session</a> to the first <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session\" id=\"ref-for-audio-session③⑤\">audio session</a> in <var>activeAudioSessions</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update all AudioSession states",
+      "href": "https://w3c.github.io/audio-session/#update-all-audiosession-states",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-all-audiosession-states\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update all AudioSession states</dfn> of a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context⑧\">top-level browsing context</a> named <var>context</var> with <var>updatedAudioSession</var>, run the following steps:",
+      "rationale": "update",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#update-the-selected-audio-session\" id=\"ref-for-update-the-selected-audio-session\">Update the selected audio session</a> of <var>context</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>updatedType</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#compute-the-audio-session-type\" id=\"ref-for-compute-the-audio-session-type②\">computing the type</a> of <var>updatedAudioSession</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>updatedType</var> is not an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#exclusive-type\" id=\"ref-for-exclusive-type③\">exclusive type</a> or <var>updatedAudioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-state\" id=\"ref-for-audiosession-state⑤\">[[state]]</a> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-active\" id=\"ref-for-dom-audiosessionstate-active⑨\">active</a></code>, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>audioSessions</var> be the list of all the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#audiosession\" id=\"ref-for-audiosession②①\">AudioSession</a></code> objects of <var>context</var> and its children in a breadth-first order.</p>"
+        },
+        {
+          "html": "For each <var>audioSession</var> of <var>audioSessions</var> except for <var>updatedAudioSession</var>, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-state\" id=\"ref-for-audiosession-state⑥\">[[state]]</a> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-active\" id=\"ref-for-dom-audiosessionstate-active①⓪\">active</a></code>, abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>type</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#compute-the-audio-session-type\" id=\"ref-for-compute-the-audio-session-type③\">computing the type</a> of <var>audioSession</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>type</var> is not an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#exclusive-type\" id=\"ref-for-exclusive-type④\">exclusive type</a>, abort these steps.</p>"
+            },
+            {
+              "html": "<p>If <var>type</var> and <var>updatedType</var> are both <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-auto\" id=\"ref-for-dom-audiosessiontype-auto⑦\">auto</a></code>, abort these steps.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#inactivate\" id=\"ref-for-inactivate②\">Inactivate</a> <var>audioSession</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compute the audio session type",
+      "href": "https://w3c.github.io/audio-session/#compute-the-audio-session-type",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-audio-session-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the audio session type</dfn> of <var>audioSession</var>, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-type\" id=\"ref-for-audiosession-type⑦\">[[type]]</a> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-auto\" id=\"ref-for-dom-audiosessiontype-auto⑧\">auto</a></code>, return <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-type\" id=\"ref-for-audiosession-type⑧\">[[type]]</a>.</p>"
+        },
+        {
+          "html": "<p>If any <var>element</var> of <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-elements\" id=\"ref-for-audiosession-elements②\">[[elements]]</a> has a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session-default-type\" id=\"ref-for-audio-session-default-type\">default type</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-play-and-record\" id=\"ref-for-dom-audiosessiontype-play-and-record②\">play-and-record</a></code> and its <a data-link-type=\"dfn\">state</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-active\" id=\"ref-for-dom-audiosessionstate-active①①\">active</a></code>, return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-play-and-record\" id=\"ref-for-dom-audiosessiontype-play-and-record③\">play-and-record</a></code>.</p>"
+        },
+        {
+          "html": "<p>If any <var>element</var> of <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-elements\" id=\"ref-for-audiosession-elements③\">[[elements]]</a> has a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session-default-type\" id=\"ref-for-audio-session-default-type①\">default type</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-playback\" id=\"ref-for-dom-audiosessiontype-playback②\">playback</a></code> and its <a data-link-type=\"dfn\">state</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-active\" id=\"ref-for-dom-audiosessionstate-active①②\">active</a></code>, return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-playback\" id=\"ref-for-dom-audiosessiontype-playback③\">playback</a></code>.</p>"
+        },
+        {
+          "html": "<p>If any <var>element</var> of <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-elements\" id=\"ref-for-audiosession-elements④\">[[elements]]</a> has a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session-default-type\" id=\"ref-for-audio-session-default-type②\">default type</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-transient-solo\" id=\"ref-for-dom-audiosessiontype-transient-solo②\">transient-solo</a></code> and its <a data-link-type=\"dfn\">state</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-active\" id=\"ref-for-dom-audiosessionstate-active①③\">active</a></code>, return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-transient-solo\" id=\"ref-for-dom-audiosessiontype-transient-solo③\">transient-solo</a></code>.</p>"
+        },
+        {
+          "html": "<p>If any <var>element</var> of <var>audioSession</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audiosession-elements\" id=\"ref-for-audiosession-elements⑤\">[[elements]]</a> has a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/audio-session/#audio-session-default-type\" id=\"ref-for-audio-session-default-type③\">default type</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-transient\" id=\"ref-for-dom-audiosessiontype-transient①\">transient</a></code> and its <a data-link-type=\"dfn\">state</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessionstate-active\" id=\"ref-for-dom-audiosessionstate-active①④\">active</a></code>, return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-transient\" id=\"ref-for-dom-audiosessiontype-transient②\">transient</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/audio-session/#dom-audiosessiontype-ambient\" id=\"ref-for-dom-audiosessiontype-ambient①\">ambient</a></code>.</p>"
         }
       ]
     }
