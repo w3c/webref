@@ -23,8 +23,8 @@
     {
       "name": "block-step-insert",
       "href": "https://drafts.csswg.org/css-rhythm-1/#propdef-block-step-insert",
-      "value": "margin | padding",
-      "initial": "margin",
+      "value": "margin-box | padding-box | content-box",
+      "initial": "margin-box",
       "appliesTo": "block-level boxes",
       "inherited": "no",
       "percentages": "N/A",
@@ -33,18 +33,25 @@
       "animationType": "discrete",
       "values": [
         {
-          "name": "margin",
+          "name": "margin-box",
           "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted outside the box’s border, as extra margin.",
-          "href": "https://drafts.csswg.org/css-rhythm-1/#valdef-block-step-insert-margin",
+          "href": "https://drafts.csswg.org/css-rhythm-1/#valdef-block-step-insert-margin-box",
           "type": "value",
-          "value": "margin"
+          "value": "margin-box"
         },
         {
-          "name": "padding",
+          "name": "padding-box",
           "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted inside the box’s border, as extra padding.",
-          "href": "https://drafts.csswg.org/css-rhythm-1/#valdef-block-step-insert-padding",
+          "href": "https://drafts.csswg.org/css-rhythm-1/#valdef-block-step-insert-padding-box",
           "type": "value",
-          "value": "padding"
+          "value": "padding-box"
+        },
+        {
+          "name": "content-box",
+          "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted inside the box’s border by increasing the height of the content area.",
+          "href": "https://drafts.csswg.org/css-rhythm-1/#valdef-block-step-insert-content-box",
+          "type": "value",
+          "value": "content-box"
         }
       ],
       "styleDeclaration": [
@@ -155,7 +162,7 @@
       "name": "line-height-step",
       "href": "https://drafts.csswg.org/css-rhythm-1/#propdef-line-height-step",
       "value": "<length [0,∞]>",
-      "initial": "0px",
+      "initial": "0",
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "N/A",

@@ -5,8 +5,6 @@
 
 typedef (USVString or FencedFrameConfig) SharedStorageResponse;
 
-enum SharedStorageDataOrigin { "context-origin", "script-origin" };
-
 [Exposed=(Window)]
 interface SharedStorageWorklet : Worklet {
   Promise<SharedStorageResponse> selectURL(DOMString name,
@@ -95,7 +93,7 @@ dictionary SharedStorageRunOperationMethodOptions {
 };
 
 dictionary SharedStorageWorkletOptions : WorkletOptions {
-  SharedStorageDataOrigin dataOrigin = "context-origin";
+  USVString dataOrigin = "context-origin";
 };
 
 interface mixin HTMLSharedStorageWritableElementUtils {
