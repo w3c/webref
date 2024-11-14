@@ -25,7 +25,7 @@
         },
         {
           "name": "<custom-ident>+",
-          "prose": "All of the specified <custom-ident> values (apart from none) are applied when used in named view transition pseudo-element selectors. none is an invalid <custom-ident> for view-transition-class, even when combined with another <custom-ident>.",
+          "prose": "All of the specified <custom-ident> values (apart from none) are applied when used in named view transition pseudo-element selectors. none is an invalid <custom-ident> for view-transition-class, even when combined with another <custom-ident>. Each 'view transition class' is a tree-scoped name.",
           "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-class-custom-ident",
           "type": "value",
           "value": "<custom-ident>+"
@@ -34,6 +34,52 @@
       "styleDeclaration": [
         "view-transition-class",
         "viewTransitionClass"
+      ]
+    },
+    {
+      "name": "view-transition-group",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#propdef-view-transition-group",
+      "value": "normal | contain | nearest | <custom-ident>",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "containingGroupName.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-group-normal",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "contain",
+          "prose": "containingGroupName.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-group-contain",
+          "type": "value",
+          "value": "contain"
+        },
+        {
+          "name": "nearest",
+          "prose": "The document-scoped view transition name of the element’s nearest flat tree ancestor which participates in the transition.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-group-nearest",
+          "type": "value",
+          "value": "nearest"
+        },
+        {
+          "name": "<custom-ident>",
+          "prose": "group if the element has a flat tree ancestor whose document-scoped view transition name is group and participates in transition; Otherwise containingGroupName.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-group-custom-ident",
+          "type": "value",
+          "value": "<custom-ident>"
+        }
+      ],
+      "styleDeclaration": [
+        "view-transition-group",
+        "viewTransitionGroup"
       ]
     }
   ],
