@@ -1005,6 +1005,8 @@
       "for": [
         "string",
         "JavaScript string",
+        "ASCII string",
+        "isomorphic string",
         "scalar value string"
       ],
       "access": "public",
@@ -1028,8 +1030,48 @@
       "for": [
         "string",
         "JavaScript string",
+        "ASCII string",
+        "isomorphic string",
         "scalar value string"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "strings",
+        "href": "https://infra.spec.whatwg.org/#strings",
+        "title": "Strings",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ascii-string",
+      "href": "https://infra.spec.whatwg.org/#ascii-string",
+      "linkingText": [
+        "ASCII string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "strings",
+        "href": "https://infra.spec.whatwg.org/#strings",
+        "title": "Strings",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "isomorphic-string",
+      "href": "https://infra.spec.whatwg.org/#isomorphic-string",
+      "linkingText": [
+        "isomorphic string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1321,25 +1363,6 @@
       "href": "https://infra.spec.whatwg.org/#isomorphic-encode",
       "linkingText": [
         "isomorphic encode"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "strings",
-        "href": "https://infra.spec.whatwg.org/#strings",
-        "title": "Strings",
-        "number": "4.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "ascii-string",
-      "href": "https://infra.spec.whatwg.org/#ascii-string",
-      "linkingText": [
-        "ASCII string"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2865,8 +2888,7 @@
       "id": "parse-a-json-string-to-a-javascript-value",
       "href": "https://infra.spec.whatwg.org/#parse-a-json-string-to-a-javascript-value",
       "linkingText": [
-        "parse a JSON string to a JavaScript value",
-        "parsing a JSON string to a JavaScript value"
+        "parse a JSON string to a JavaScript value"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2885,9 +2907,7 @@
       "id": "parse-json-bytes-to-a-javascript-value",
       "href": "https://infra.spec.whatwg.org/#parse-json-bytes-to-a-javascript-value",
       "linkingText": [
-        "parse JSON bytes to a JavaScript value",
-        "parsing JSON bytes to a JavaScript value",
-        "parse JSON from bytes"
+        "parse JSON bytes to a JavaScript value"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2906,8 +2926,7 @@
       "id": "serialize-a-javascript-value-to-a-json-string",
       "href": "https://infra.spec.whatwg.org/#serialize-a-javascript-value-to-a-json-string",
       "linkingText": [
-        "serialize a JavaScript value to a JSON string",
-        "serializing a JavaScript value to a JSON string"
+        "serialize a JavaScript value to a JSON string"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2926,9 +2945,7 @@
       "id": "serialize-a-javascript-value-to-json-bytes",
       "href": "https://infra.spec.whatwg.org/#serialize-a-javascript-value-to-json-bytes",
       "linkingText": [
-        "serialize a JavaScript value to JSON bytes",
-        "serializing a JavaScript value to JSON bytes",
-        "serialize JSON to bytes"
+        "serialize a JavaScript value to JSON bytes"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2948,7 +2965,6 @@
       "href": "https://infra.spec.whatwg.org/#parse-a-json-string-to-an-infra-value",
       "linkingText": [
         "parse a JSON string to an Infra value",
-        "parsing a JSON string to an Infra value",
         "parse JSON into Infra values"
       ],
       "localLinkingText": [],
@@ -2968,8 +2984,7 @@
       "id": "parse-json-bytes-to-an-infra-value",
       "href": "https://infra.spec.whatwg.org/#parse-json-bytes-to-an-infra-value",
       "linkingText": [
-        "parse JSON bytes to an Infra value",
-        "parsing JSON bytes to an Infra value"
+        "parse JSON bytes to an Infra value"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2988,8 +3003,7 @@
       "id": "convert-a-json-derived-javascript-value-to-an-infra-value",
       "href": "https://infra.spec.whatwg.org/#convert-a-json-derived-javascript-value-to-an-infra-value",
       "linkingText": [
-        "convert a JSON-derived JavaScript value to an Infra value",
-        "converting a JSON-derived JavaScript value to an Infra value"
+        "convert a JSON-derived JavaScript value to an Infra value"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3008,8 +3022,7 @@
       "id": "serialize-an-infra-value-to-a-json-string",
       "href": "https://infra.spec.whatwg.org/#serialize-an-infra-value-to-a-json-string",
       "linkingText": [
-        "serialize an Infra value to a JSON string",
-        "serializing an Infra value to a JSON string"
+        "serialize an Infra value to a JSON string"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3028,8 +3041,7 @@
       "id": "serialize-an-infra-value-to-json-bytes",
       "href": "https://infra.spec.whatwg.org/#serialize-an-infra-value-to-json-bytes",
       "linkingText": [
-        "serialize an Infra value to JSON bytes",
-        "serializing an Infra value to JSON bytes"
+        "serialize an Infra value to JSON bytes"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3048,8 +3060,7 @@
       "id": "convert-an-infra-value-to-a-json-compatible-javascript-value",
       "href": "https://infra.spec.whatwg.org/#convert-an-infra-value-to-a-json-compatible-javascript-value",
       "linkingText": [
-        "convert an Infra value to a JSON-compatible JavaScript value",
-        "converting an Infra value to a JSON-compatible JavaScript value"
+        "convert an Infra value to a JSON-compatible JavaScript value"
       ],
       "localLinkingText": [],
       "type": "dfn",
