@@ -1,0 +1,100 @@
+{
+  "spec": {
+    "title": "Web Audio API 1.1",
+    "url": "https://webaudio.github.io/web-audio-api/"
+  },
+  "events": [
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire"
+      },
+      "href": "https://webaudio.github.io/web-audio-api/#eventdef-audiocontext-error",
+      "type": "error",
+      "targets": [
+        "AudioContext"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A0"
+      },
+      "href": "https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange",
+      "type": "statechange",
+      "targets": [
+        "BaseAudioContext"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A5"
+      },
+      "href": "https://webaudio.github.io/web-audio-api/#eventdef-audiocontext-sinkchange",
+      "type": "sinkchange",
+      "targets": [
+        "AudioContext"
+      ],
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A7"
+      },
+      "href": "https://webaudio.github.io/web-audio-api/#eventdef-audiorendercapacity-update",
+      "type": "update",
+      "targets": [
+        "AudioRenderCapacity"
+      ],
+      "interface": "AudioRenderCapacityEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A8"
+      },
+      "href": "https://webaudio.github.io/web-audio-api/#eventdef-offlineaudiocontext-complete",
+      "type": "complete",
+      "targets": [
+        "OfflineAudioContext"
+      ],
+      "interface": "OfflineAudioCompletionEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A0%E2%91%A0"
+      },
+      "href": "https://webaudio.github.io/web-audio-api/#eventdef-audioworkletnode-processorerror",
+      "type": "processorerror",
+      "targets": [
+        "AudioWorkletNode"
+      ],
+      "interface": "ErrorEvent"
+    },
+    {
+      "type": "ended",
+      "targets": [
+        "AudioScheduledSourceNode"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "href": "https://webaudio.github.io/web-audio-api/#eventdef-audioscheduledsourcenode-ended"
+    },
+    {
+      "type": "audioprocess",
+      "targets": [
+        "ScriptProcessorNode"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "href": "https://webaudio.github.io/web-audio-api/#eventdef-scriptprocessornode-audioprocess"
+    }
+  ]
+}

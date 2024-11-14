@@ -3884,10 +3884,16 @@
           ]
         },
         {
+          "html": "<p>Let <var>destination</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>initiator type</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-initiator-type\" id=\"ref-for-request-initiator-type①\">initiator type</a>.</p>"
+        },
+        {
           "html": "<p>Let <var>timings</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-the-fetch-timings\" id=\"ref-for-get-the-fetch-timings\">get the fetch timings</a> with <var>request</var>.</p>"
         },
         {
-          "html": "<p>Return a map matching the <code>network.RequestData</code> production, with\n the <code>request</code> field set to <var>request id</var>, <code>url</code> field\n set to <var>url</var>, the <code>method</code> field set to <var>method</var>, the <code>headers</code> field set to <var>headers</var>, the <var>cookies</var> field set to <var>cookies</var>, and the <code>headersSize</code> field set to <var>headers size</var>,\n the <code>bodySize</code> field set to <var>body size</var>, and the <code>timings</code> field set to <var>timings</var>.</p>"
+          "html": "<p>Return a map matching the <code>network.RequestData</code> production, with\n the <code>request</code> field set to <var>request id</var>, <code>url</code> field\n set to <var>url</var>, the <code>method</code> field set to <var>method</var>, the <code>headers</code> field set to <var>headers</var>, the <var>cookies</var> field set to <var>cookies</var>, the <code>headersSize</code> field set to <var>headers size</var>, the <code>bodySize</code> field set to <var>body size</var>, the <code>destination</code> field set to <var>destination</var>, the <code>initiatorType</code> field set to <var>initiator type</var>, and the <code>timings</code> field set to <var>timings</var>.</p>"
         }
       ]
     },
