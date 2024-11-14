@@ -2706,7 +2706,7 @@
         "href": "https://w3c.github.io/webauthn/#enumdef-publickeycredentialhint"
       },
       "CredentialPropertiesOutput": {
-        "fragment": "dictionary CredentialPropertiesOutput {\n    boolean rk;\n    DOMString authenticatorDisplayName;\n};",
+        "fragment": "dictionary CredentialPropertiesOutput {\n    boolean rk;\n};",
         "type": "dictionary",
         "name": "CredentialPropertiesOutput",
         "inheritance": null,
@@ -2726,22 +2726,6 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webauthn/#dom-credentialpropertiesoutput-rk"
-          },
-          {
-            "type": "field",
-            "name": "authenticatorDisplayName",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://w3c.github.io/webauthn/#dom-credentialpropertiesoutput-authenticatordisplayname"
           }
         ],
         "extAttrs": [],

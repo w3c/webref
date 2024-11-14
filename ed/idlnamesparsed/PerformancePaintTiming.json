@@ -9,7 +9,15 @@
     "fragment": "[Exposed=Window]\ninterface PerformancePaintTiming : PerformanceEntry {};",
     "href": "https://w3c.github.io/paint-timing/#performancepainttiming"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Paint Timing",
+        "url": "https://www.w3.org/TR/paint-timing/"
+      },
+      "fragment": "PerformancePaintTiming includes PaintTimingMixin;"
+    }
+  ],
   "inheritance": {
     "name": "PerformanceEntry",
     "type": "interface",
@@ -25,5 +33,21 @@
     "inheritance": null,
     "includes": []
   },
-  "includes": []
+  "includes": [
+    {
+      "name": "PaintTimingMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Paint Timing",
+          "url": "https://www.w3.org/TR/paint-timing/"
+        },
+        "fragment": "[Exposed=Window]\ninterface mixin PaintTimingMixin {\n    readonly attribute DOMHighResTimeStamp paintTime;\n    readonly attribute DOMHighResTimeStamp? presentationTime;\n};",
+        "href": "https://w3c.github.io/paint-timing/#painttimingmixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
 }

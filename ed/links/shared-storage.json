@@ -29,6 +29,7 @@
       },
       "https://httpwg.org/specs/rfc8941.html": {},
       "https://infra.spec.whatwg.org/": {},
+      "https://mimesniff.spec.whatwg.org/": {},
       "https://patcg-individual-drafts.github.io/private-aggregation-api/": {},
       "https://storage.spec.whatwg.org/": {},
       "https://tc39.es/ecma262/multipage/": {},
@@ -60,8 +61,8 @@
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
-          "utf-8-encode",
-          "utf-8-decode"
+          "utf-8-decode",
+          "utf-8-encode"
         ]
       },
       "https://fetch.spec.whatwg.org/": {
@@ -75,19 +76,26 @@
           "concept-header",
           "concept-request-header-list",
           "concept-http-fetch",
+          "concept-request",
+          "concept-request-mode",
+          "concept-request-referrer",
           "concept-request-destination",
+          "request-initiator-type",
+          "concept-request-client",
+          "process-response-end-of-body",
           "concept-response",
+          "concept-response-status",
+          "ok-status",
+          "concept-header-extract-mime-type",
+          "concept-response-header-list",
           "request-priority",
           "concept-request-request",
-          "concept-request",
           "requestinit",
           "dom-request",
           "concept-http-network-or-cache-fetch",
-          "concept-response-status",
           "redirect-status",
           "concept-header-list-get",
           "concept-request-origin",
-          "concept-response-header-list",
           "concept-header-list-get-structured-header",
           "concept-network-error",
           "concept-header-value",
@@ -213,6 +221,7 @@
           "obtain-a-worklet-agent",
           "fetch-a-worklet-script-graph",
           "concept-settings-object-global",
+          "networking-task-source",
           "concept-relevant-global",
           "beginning-navigation",
           "ending-navigation",
@@ -275,6 +284,8 @@
           "string-length",
           "list-contain",
           "list-clone",
+          "byte-sequence",
+          "parse-a-json-string-to-an-infra-value",
           "ordered-map",
           "map-entry",
           "map-key",
@@ -298,6 +309,11 @@
           "string-concatenate",
           "ascii-code-point",
           "ascii-string"
+        ]
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "json-mime-type"
         ]
       },
       "https://patcg-individual-drafts.github.io/private-aggregation-api/": {
@@ -372,6 +388,7 @@
           "concept-url-origin",
           "concept-url",
           "concept-url-parser",
+          "concept-url-path",
           "concept-url-serializer"
         ]
       },

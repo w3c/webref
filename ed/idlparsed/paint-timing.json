@@ -13,6 +13,59 @@
       }
     },
     "idlNames": {
+      "PaintTimingMixin": {
+        "fragment": "[Exposed=Window]\ninterface mixin PaintTimingMixin {\n    readonly attribute DOMHighResTimeStamp paintTime;\n    readonly attribute DOMHighResTimeStamp? presentationTime;\n};",
+        "type": "interface mixin",
+        "name": "PaintTimingMixin",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "paintTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/paint-timing/#dom-painttimingmixin-painttime"
+          },
+          {
+            "type": "attribute",
+            "name": "presentationTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/paint-timing/#dom-painttimingmixin-presentationtime"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/paint-timing/#painttimingmixin"
+      },
       "PerformancePaintTiming": {
         "fragment": "[Exposed=Window]\ninterface PerformancePaintTiming : PerformanceEntry {};",
         "type": "interface",
@@ -34,19 +87,35 @@
         "href": "https://w3c.github.io/paint-timing/#performancepainttiming"
       }
     },
-    "idlExtendedNames": {},
+    "idlExtendedNames": {
+      "PerformancePaintTiming": [
+        {
+          "fragment": "PerformancePaintTiming includes PaintTimingMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PerformancePaintTiming",
+          "includes": "PaintTimingMixin"
+        }
+      ]
+    },
     "globals": {},
     "exposed": {
       "Window": [
+        "PaintTimingMixin",
         "PerformancePaintTiming"
       ]
     },
     "dependencies": {
+      "PaintTimingMixin": [
+        "DOMHighResTimeStamp"
+      ],
       "PerformancePaintTiming": [
-        "PerformanceEntry"
+        "PerformanceEntry",
+        "PaintTimingMixin"
       ]
     },
     "externalDependencies": [
+      "DOMHighResTimeStamp",
       "PerformanceEntry"
     ],
     "hasObsoleteIdl": false

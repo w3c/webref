@@ -25,7 +25,7 @@
         },
         {
           "name": "allow-keywords",
-          "prose": "Two values can be interpolated if one of them is an <intrinsic-size-keyword> and the other is a <length-percentage>. This is done by treating the <intrinsic-size-keyword> keyword as though it is calc-size(keyword, size) and applying the rules in § 10.3 Interpolating calc-size(). In other cases, an <intrinsic-size-keyword> still cannot be interpolated.",
+          "prose": "Two values can also be interpolated if one of them is an <intrinsic-size-keyword> and the other is a <length-percentage>. This is done by treating the <intrinsic-size-keyword> keyword as though it is calc-size(keyword, size) and applying the rules in § 10.3 Interpolating calc-size(). In other cases, an <intrinsic-size-keyword> still cannot be interpolated.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-interpolate-size-allow-keywords",
           "type": "value",
           "value": "allow-keywords"
@@ -40,6 +40,12 @@
   "atrules": [],
   "selectors": [],
   "values": [
+    {
+      "name": "<boolean-expr[]>",
+      "prose": "Several contexts (such as @media, @supports, if(), ...) specify conditions, and allow combining those conditions with boolean logic (and/or/not/grouping). Because they use the same non-trivial recursive syntax structure, the special <boolean-expr[]> production represents this pattern generically.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-boolean-expr",
+      "type": "type"
+    },
     {
       "name": "<syntax>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-syntax",
@@ -504,13 +510,25 @@
       "prose": "The attr() function substitutes the value of an attribute on an element into a property, similar to how the var() function substitutes a custom property value into a function.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-attr",
       "type": "function",
-      "value": "attr( <attr-name> <syntax>? , <declaration-value>?)"
+      "value": "attr( <attr-name> <attr-type>? , <declaration-value>?)"
     },
     {
       "name": "<attr-name>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-name",
       "type": "type",
       "value": "[ <ident-token> '|' ]? <ident-token>"
+    },
+    {
+      "name": "<attr-type>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-type",
+      "type": "type",
+      "value": "type( <syntax> ) | string | <attr-unit>"
+    },
+    {
+      "name": "<attr-unit>",
+      "prose": "The <attr-unit> production matches any identifier that is an ASCII case-insensitive match for the name of a CSS dimension unit, such as px, or the <delim-token> %. It is not expanded literally here, as the set of units expands over time.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-unit",
+      "type": "type"
     },
     {
       "name": "random()",
@@ -583,12 +601,12 @@
     {
       "msg": "Missing definition",
       "name": "]>",
-      "value": "not <boolean-group> | <boolean-group> [ [ and <boolean-group> ]* | [ or <boolean-group> ]* ]"
+      "value": "not <boolean-expr-group> | <boolean-expr-group> [ [ and <boolean-expr-group> ]* | [ or <boolean-expr-group> ]* ]"
     },
     {
       "msg": "Missing definition",
-      "name": "<boolean-group>",
-      "value": "<test> | ( <boolean[ <test> ]> ) | <general-enclosed>"
+      "name": "<boolean-expr-group>",
+      "value": "<test> | ( <boolean-expr[ <test> ]> ) | <general-enclosed>"
     },
     {
       "msg": "Missing definition",

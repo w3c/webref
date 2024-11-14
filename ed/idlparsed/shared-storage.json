@@ -50,25 +50,6 @@
         "extAttrs": [],
         "href": "https://wicg.github.io/shared-storage/#typedefdef-sharedstorageresponse"
       },
-      "SharedStorageDataOrigin": {
-        "fragment": "enum SharedStorageDataOrigin { \"context-origin\", \"script-origin\" };",
-        "type": "enum",
-        "name": "SharedStorageDataOrigin",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "context-origin",
-            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragedataorigin-context-origin"
-          },
-          {
-            "type": "enum-value",
-            "value": "script-origin",
-            "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragedataorigin-script-origin"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://wicg.github.io/shared-storage/#enumdef-sharedstoragedataorigin"
-      },
       "SharedStorageWorklet": {
         "fragment": "[Exposed=(Window)]\ninterface SharedStorageWorklet : Worklet {\n  Promise<SharedStorageResponse> selectURL(DOMString name,\n                               sequence<SharedStorageUrlWithMetadata> urls,\n                               optional SharedStorageRunOperationMethodOptions options = {});\n  Promise<any> run(DOMString name,\n                   optional SharedStorageRunOperationMethodOptions options = {});\n};",
         "type": "interface",
@@ -1335,7 +1316,7 @@
         "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragerunoperationmethodoptions"
       },
       "SharedStorageWorkletOptions": {
-        "fragment": "dictionary SharedStorageWorkletOptions : WorkletOptions {\n  SharedStorageDataOrigin dataOrigin = \"context-origin\";\n};",
+        "fragment": "dictionary SharedStorageWorkletOptions : WorkletOptions {\n  USVString dataOrigin = \"context-origin\";\n};",
         "type": "dictionary",
         "name": "SharedStorageWorkletOptions",
         "inheritance": "WorkletOptions",
@@ -1350,7 +1331,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "SharedStorageDataOrigin"
+              "idlType": "USVString"
             },
             "default": {
               "type": "string",
@@ -1535,8 +1516,7 @@
         "SharedStoragePrivateAggregationConfig"
       ],
       "SharedStorageWorkletOptions": [
-        "WorkletOptions",
-        "SharedStorageDataOrigin"
+        "WorkletOptions"
       ],
       "HTMLSharedStorageWritableElementUtils": [],
       "HTMLIFrameElement": [
