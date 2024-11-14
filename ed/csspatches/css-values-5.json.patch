@@ -1,6 +1,6 @@
-From 7c701a918b3d08e85a6cfa70a531d019882378dc Mon Sep 17 00:00:00 2001
+From 8c563b373f70cd3fce87fdb457e429d88797aba0 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Sat, 2 Nov 2024 10:59:54 +0100
+Date: Wed, 13 Nov 2024 10:17:40 +0100
 Subject: [PATCH] Amend syntax of `if()`, drop value of `<if-condition>`
 
 For `if()`, parsing fails on `;?`.
@@ -9,19 +9,19 @@ For `<if-condition>`, the problem is that the spec extends the Value Definition
 Syntax with a new construct that is not yet supported by the CSS parser.
 
 Both problems have been fixed in CSSTree already, but a new version still needs
-to be released. See tracking issue in:
+to be released and the CSS WG changed the syntax of the boolean expression
+multiplier. See tracking issues in:
 https://github.com/w3c/webref/issues/1378
-
-
+https://github.com/csstree/csstree/issues/307
 ---
  ed/css/css-values-5.json | 5 ++---
  1 file changed, 2 insertions(+), 3 deletions(-)
 
 diff --git a/ed/css/css-values-5.json b/ed/css/css-values-5.json
-index 8aa66d177..7b6b54fb7 100644
+index 62386d10e..9f2b6c925 100644
 --- a/ed/css/css-values-5.json
 +++ b/ed/css/css-values-5.json
-@@ -462,13 +462,12 @@
+@@ -468,13 +468,12 @@
        "name": "<if()>",
        "href": "https://drafts.csswg.org/css-values-5/#typedef-if",
        "type": "type",
@@ -32,7 +32,7 @@ index 8aa66d177..7b6b54fb7 100644
        "name": "<if-condition>",
        "href": "https://drafts.csswg.org/css-values-5/#typedef-if-condition",
 -      "type": "type",
--      "value": "<boolean[ <if-test> ]> | else"
+-      "value": "<boolean-expr[ <if-test> ]> | else"
 +      "type": "type"
      },
      {
