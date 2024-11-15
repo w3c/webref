@@ -33,13 +33,6 @@ Navigator includes NavigatorConcurrentHardware;
 // Source: Storage Standard (https://storage.spec.whatwg.org/)
 Navigator includes NavigatorStorage;
 
-// Source: Audio Session (https://w3c.github.io/audio-session/)
-[Exposed=Window]
-partial interface Navigator {
-  // The default audio session that the user agent will use when media elements start/stop playing.
-  readonly attribute AudioSession audioSession;
-};
-
 // Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
 [SecureContext]
 partial interface Navigator {
@@ -186,6 +179,13 @@ partial interface Navigator {
 [SecureContext, Exposed=(Window)]
 partial interface Navigator {
   [SameObject] readonly attribute WindowControlsOverlay windowControlsOverlay;
+};
+
+// Source: Audio Session (https://www.w3.org/TR/audio-session/)
+[Exposed=Window]
+partial interface Navigator {
+  // The default audio session that the user agent will use when media elements start/stop playing.
+  readonly attribute AudioSession audioSession;
 };
 
 // Source: Autoplay Policy Detection (https://www.w3.org/TR/autoplay-detection/)

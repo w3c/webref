@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Web Audio API 1.1",
-      "url": "https://www.w3.org/TR/webaudio/"
+      "url": "https://www.w3.org/TR/webaudio-1.1/"
     },
     "fragment": "[Exposed=Window]\ninterface AudioBufferSourceNode : AudioScheduledSourceNode {\n    constructor (BaseAudioContext context,\n                 optional AudioBufferSourceOptions options = {});\n    attribute AudioBuffer? buffer;\n    readonly attribute AudioParam playbackRate;\n    readonly attribute AudioParam detune;\n    attribute boolean loop;\n    attribute double loopStart;\n    attribute double loopEnd;\n    undefined start (optional double when = 0,\n                     optional double offset,\n                     optional double duration);\n};",
     "href": "https://webaudio.github.io/web-audio-api/#AudioBufferSourceNode"
@@ -16,7 +16,7 @@
     "defined": {
       "spec": {
         "title": "Web Audio API 1.1",
-        "url": "https://www.w3.org/TR/webaudio/"
+        "url": "https://www.w3.org/TR/webaudio-1.1/"
       },
       "fragment": "[Exposed=Window]\ninterface AudioScheduledSourceNode : AudioNode {\n    attribute EventHandler onended;\n    undefined start(optional double when = 0);\n    undefined stop(optional double when = 0);\n};",
       "href": "https://webaudio.github.io/web-audio-api/#AudioScheduledSourceNode"
@@ -28,7 +28,7 @@
       "defined": {
         "spec": {
           "title": "Web Audio API 1.1",
-          "url": "https://www.w3.org/TR/webaudio/"
+          "url": "https://www.w3.org/TR/webaudio-1.1/"
         },
         "fragment": "[Exposed=Window]\ninterface AudioNode : EventTarget {\n    AudioNode connect (AudioNode destinationNode,\n                       optional unsigned long output = 0,\n                       optional unsigned long input = 0);\n    undefined connect (AudioParam destinationParam, optional unsigned long output = 0);\n    undefined disconnect ();\n    undefined disconnect (unsigned long output);\n    undefined disconnect (AudioNode destinationNode);\n    undefined disconnect (AudioNode destinationNode, unsigned long output);\n    undefined disconnect (AudioNode destinationNode,\n                          unsigned long output,\n                          unsigned long input);\n    undefined disconnect (AudioParam destinationParam);\n    undefined disconnect (AudioParam destinationParam, unsigned long output);\n    readonly attribute BaseAudioContext context;\n    readonly attribute unsigned long numberOfInputs;\n    readonly attribute unsigned long numberOfOutputs;\n    attribute unsigned long channelCount;\n    attribute ChannelCountMode channelCountMode;\n    attribute ChannelInterpretation channelInterpretation;\n};",
         "href": "https://webaudio.github.io/web-audio-api/#AudioNode"

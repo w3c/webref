@@ -918,7 +918,7 @@
         "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlorsvgscriptelement"
       },
       "HTMLElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLElement : Element {\n  [HTMLConstructor] constructor();\n\n  // metadata attributes\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString lang;\n  [CEReactions] attribute boolean translate;\n  [CEReactions] attribute DOMString dir;\n\n  // user interaction\n  [CEReactions] attribute (boolean or unrestricted double or DOMString)? hidden;\n  [CEReactions] attribute boolean inert;\n  undefined click();\n  [CEReactions] attribute DOMString accessKey;\n  readonly attribute DOMString accessKeyLabel;\n  [CEReactions] attribute boolean draggable;\n  [CEReactions] attribute boolean spellcheck;\n  [CEReactions] attribute DOMString writingSuggestions;\n  [CEReactions] attribute DOMString autocapitalize;\n  [CEReactions] attribute boolean autocorrect;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerText;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerText;\n\n  ElementInternals attachInternals();\n\n  // The popover API\n  undefined showPopover();\n  undefined hidePopover();\n  boolean togglePopover(optional boolean force);\n  [CEReactions] attribute DOMString? popover;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLElement : Element {\n  [HTMLConstructor] constructor();\n\n  // metadata attributes\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString lang;\n  [CEReactions] attribute boolean translate;\n  [CEReactions] attribute DOMString dir;\n\n  // user interaction\n  [CEReactions] attribute (boolean or unrestricted double or DOMString)? hidden;\n  [CEReactions] attribute boolean inert;\n  undefined click();\n  [CEReactions] attribute DOMString accessKey;\n  readonly attribute DOMString accessKeyLabel;\n  [CEReactions] attribute boolean draggable;\n  [CEReactions] attribute boolean spellcheck;\n  [CEReactions] attribute DOMString writingSuggestions;\n  [CEReactions] attribute DOMString autocapitalize;\n  [CEReactions] attribute boolean autocorrect;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerText;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerText;\n\n  ElementInternals attachInternals();\n\n  // The popover API\n  undefined showPopover(optional ShowPopoverOptions options = {});\n  undefined hidePopover();\n  boolean togglePopover(optional (TogglePopoverOptions or boolean) options = {});\n  [CEReactions] attribute DOMString? popover;\n};",
         "type": "interface",
         "name": "HTMLElement",
         "inheritance": "Element",
@@ -1354,7 +1354,26 @@
               "union": false,
               "idlType": "undefined"
             },
-            "arguments": [],
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ShowPopoverOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
             "extAttrs": [],
             "special": "",
             "href": "https://html.spec.whatwg.org/multipage/popover.html#dom-showpopover"
@@ -1389,17 +1408,36 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "force",
+                "name": "options",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "boolean"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "TogglePopoverOptions"
+                    },
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "boolean"
+                    }
+                  ]
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -1445,6 +1483,60 @@
         ],
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
+      },
+      "ShowPopoverOptions": {
+        "fragment": "dictionary ShowPopoverOptions {\n  HTMLElement source;\n};",
+        "type": "dictionary",
+        "name": "ShowPopoverOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "source",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HTMLElement"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dom.html#dom-showpopoveroptions-source"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dom.html#showpopoveroptions"
+      },
+      "TogglePopoverOptions": {
+        "fragment": "dictionary TogglePopoverOptions : ShowPopoverOptions {\n  boolean force;\n};",
+        "type": "dictionary",
+        "name": "TogglePopoverOptions",
+        "inheritance": "ShowPopoverOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "force",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dom.html#dom-togglepopoveroptions-force"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dom.html#togglepopoveroptions"
       },
       "HTMLUnknownElement": {
         "fragment": "[Exposed=Window]\ninterface HTMLUnknownElement : HTMLElement {\n  // Note: intentionally no [HTMLConstructor]\n};",
@@ -43536,9 +43628,17 @@
       "HTMLElement": [
         "Element",
         "ElementInternals",
+        "ShowPopoverOptions",
+        "TogglePopoverOptions",
         "GlobalEventHandlers",
         "ElementContentEditable",
         "HTMLOrSVGElement"
+      ],
+      "ShowPopoverOptions": [
+        "HTMLElement"
+      ],
+      "TogglePopoverOptions": [
+        "ShowPopoverOptions"
       ],
       "HTMLUnknownElement": [
         "HTMLElement"
