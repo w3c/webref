@@ -1,0 +1,966 @@
+{
+  "spec": {
+    "title": "Audio Session",
+    "url": "https://www.w3.org/TR/audio-session/"
+  },
+  "dfns": [
+    {
+      "id": "audio-session",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session",
+      "linkingText": [
+        "audio session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://www.w3.org/TR/audio-session/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audio-session-element",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-element",
+      "linkingText": [
+        "element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "audio session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://www.w3.org/TR/audio-session/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audio-session-default-type",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-default-type",
+      "linkingText": [
+        "default type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "audio session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://www.w3.org/TR/audio-session/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audible-flag",
+      "href": "https://www.w3.org/TR/audio-session/#audible-flag",
+      "linkingText": [
+        "audible flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://www.w3.org/TR/audio-session/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audible-element",
+      "href": "https://www.w3.org/TR/audio-session/#audible-element",
+      "linkingText": [
+        "audible element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://www.w3.org/TR/audio-session/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audio-session-element-update-steps",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-element-update-steps",
+      "linkingText": [
+        "element update steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "audio session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://www.w3.org/TR/audio-session/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audio-session-element-suspend-steps",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-element-suspend-steps",
+      "linkingText": [
+        "element suspend steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "audio session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://www.w3.org/TR/audio-session/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audio-session-element-resume-steps",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-element-resume-steps",
+      "linkingText": [
+        "element resume steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "audio session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://www.w3.org/TR/audio-session/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selected-audio-session",
+      "href": "https://www.w3.org/TR/audio-session/#selected-audio-session",
+      "linkingText": [
+        "selected audio session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://www.w3.org/TR/audio-session/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "top-level-browsing-context-audio-focus",
+      "href": "https://www.w3.org/TR/audio-session/#top-level-browsing-context-audio-focus",
+      "linkingText": [
+        "audio focus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "top-level browsing context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://www.w3.org/TR/audio-session/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audiosession",
+      "href": "https://www.w3.org/TR/audio-session/#audiosession",
+      "linkingText": [
+        "AudioSession"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiosession-interface",
+        "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+        "title": "The AudioSession interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiosession-type",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosession-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiosession-interface",
+        "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+        "title": "The AudioSession interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiosession-state",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosession-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiosession-interface",
+        "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+        "title": "The AudioSession interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiosession-onstatechange",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosession-onstatechange",
+      "linkingText": [
+        "onstatechange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiosession-interface",
+        "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+        "title": "The AudioSession interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "audiosession-type",
+      "href": "https://www.w3.org/TR/audio-session/#audiosession-type",
+      "linkingText": [
+        "[[type]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiosession-interface",
+        "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+        "title": "The AudioSession interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audiosession-state",
+      "href": "https://www.w3.org/TR/audio-session/#audiosession-state",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiosession-interface",
+        "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+        "title": "The AudioSession interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audiosession-elements",
+      "href": "https://www.w3.org/TR/audio-session/#audiosession-elements",
+      "linkingText": [
+        "[[elements]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiosession-interface",
+        "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+        "title": "The AudioSession interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audiosession-interruptedelements",
+      "href": "https://www.w3.org/TR/audio-session/#audiosession-interruptedelements",
+      "linkingText": [
+        "[[interruptedElements]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiosession-interface",
+        "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+        "title": "The AudioSession interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audiosession-appliedtype",
+      "href": "https://www.w3.org/TR/audio-session/#audiosession-appliedtype",
+      "linkingText": [
+        "[[appliedType]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiosession-interface",
+        "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+        "title": "The AudioSession interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audiosession-istypebeingapplied",
+      "href": "https://www.w3.org/TR/audio-session/#audiosession-istypebeingapplied",
+      "linkingText": [
+        "[[isTypeBeingApplied]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiosession-interface",
+        "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+        "title": "The AudioSession interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audiosession-tied-to",
+      "href": "https://www.w3.org/TR/audio-session/#audiosession-tied-to",
+      "linkingText": [
+        "tied to"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiosession-interface",
+        "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+        "title": "The AudioSession interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audio-session-type",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "audio session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-types",
+        "title": "Audio session types",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-audiosessiontype-playback",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosessiontype-playback",
+      "linkingText": [
+        "\"playback\"",
+        "playback"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-types",
+        "title": "Audio session types",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessiontype-transient",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosessiontype-transient",
+      "linkingText": [
+        "\"transient\"",
+        "transient"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-types",
+        "title": "Audio session types",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessiontype-transient-solo",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosessiontype-transient-solo",
+      "linkingText": [
+        "\"transient-solo\"",
+        "transient-solo"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-types",
+        "title": "Audio session types",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessiontype-ambient",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosessiontype-ambient",
+      "linkingText": [
+        "\"ambient\"",
+        "ambient"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-types",
+        "title": "Audio session types",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessiontype-play-and-record",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosessiontype-play-and-record",
+      "linkingText": [
+        "\"play-and-record\"",
+        "play-and-record"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-types",
+        "title": "Audio session types",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessiontype-auto",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosessiontype-auto",
+      "linkingText": [
+        "\"auto\"",
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-types",
+        "title": "Audio session types",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-audiosessiontype",
+      "href": "https://www.w3.org/TR/audio-session/#enumdef-audiosessiontype",
+      "linkingText": [
+        "AudioSessionType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-types",
+        "title": "Audio session types",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "exclusive-type",
+      "href": "https://www.w3.org/TR/audio-session/#exclusive-type",
+      "linkingText": [
+        "exclusive type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-types",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-types",
+        "title": "Audio session types",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audio-session-state",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "audio session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-states",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-states",
+        "title": "Audio session states",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-audiosessionstate-active",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosessionstate-active",
+      "linkingText": [
+        "\"active\"",
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-states",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-states",
+        "title": "Audio session states",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessionstate-interrupted",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosessionstate-interrupted",
+      "linkingText": [
+        "\"interrupted\"",
+        "interrupted"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-states",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-states",
+        "title": "Audio session states",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosessionstate-inactive",
+      "href": "https://www.w3.org/TR/audio-session/#dom-audiosessionstate-inactive",
+      "linkingText": [
+        "\"inactive\"",
+        "inactive"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSessionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-states",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-states",
+        "title": "Audio session states",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-audiosessionstate",
+      "href": "https://www.w3.org/TR/audio-session/#enumdef-audiosessionstate",
+      "linkingText": [
+        "AudioSessionState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-states",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-states",
+        "title": "Audio session states",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "associated-audiosession",
+      "href": "https://www.w3.org/TR/audio-session/#associated-audiosession",
+      "linkingText": [
+        "associated AudioSession"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-navigator",
+        "href": "https://www.w3.org/TR/audio-session/#extensions-to-navigator",
+        "title": "Extensions to the Navigator interface",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-navigator-audiosession",
+      "href": "https://www.w3.org/TR/audio-session/#dom-navigator-audiosession",
+      "linkingText": [
+        "audioSession"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-navigator",
+        "href": "https://www.w3.org/TR/audio-session/#extensions-to-navigator",
+        "title": "Extensions to the Navigator interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "update-the-type",
+      "href": "https://www.w3.org/TR/audio-session/#update-the-type",
+      "linkingText": [
+        "update the type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-update-type-algorithm",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-update-type-algorithm",
+        "title": "Update AudioSession’s type",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-the-state",
+      "href": "https://www.w3.org/TR/audio-session/#set-the-state",
+      "linkingText": [
+        "set the state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-update-state-algorithm",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-update-state-algorithm",
+        "title": "Update AudioSession’s state",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "notify-the-states-change",
+      "href": "https://www.w3.org/TR/audio-session/#notify-the-states-change",
+      "linkingText": [
+        "notify the state’s change"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-update-state-algorithm",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-update-state-algorithm",
+        "title": "Update AudioSession’s state",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "inactivate",
+      "href": "https://www.w3.org/TR/audio-session/#inactivate",
+      "linkingText": [
+        "inactivate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-update-state-algorithm",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-update-state-algorithm",
+        "title": "Update AudioSession’s state",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "try-activating",
+      "href": "https://www.w3.org/TR/audio-session/#try-activating",
+      "linkingText": [
+        "try activating"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-update-state-algorithm",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-update-state-algorithm",
+        "title": "Update AudioSession’s state",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-the-selected-audio-session",
+      "href": "https://www.w3.org/TR/audio-session/#update-the-selected-audio-session",
+      "linkingText": [
+        "update the selected audio session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-update-selected-audio-session-algorithm",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-update-selected-audio-session-algorithm",
+        "title": "Update the selected audio session",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-all-audiosession-states",
+      "href": "https://www.w3.org/TR/audio-session/#update-all-audiosession-states",
+      "linkingText": [
+        "update all AudioSession states"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-other-algorithms",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-other-algorithms",
+        "title": "Other algorithms",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-the-audio-session-type",
+      "href": "https://www.w3.org/TR/audio-session/#compute-the-audio-session-type",
+      "linkingText": [
+        "compute the audio session type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-session-other-algorithms",
+        "href": "https://www.w3.org/TR/audio-session/#audio-session-other-algorithms",
+        "title": "Other algorithms",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "element-state",
+      "href": "https://www.w3.org/TR/audio-session/#element-state",
+      "linkingText": [
+        "element state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "integration",
+        "href": "https://www.w3.org/TR/audio-session/#integration",
+        "title": "Audio source and sink integration",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-an-element",
+      "href": "https://www.w3.org/TR/audio-session/#update-an-element",
+      "linkingText": [
+        "update an element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "integration",
+        "href": "https://www.w3.org/TR/audio-session/#integration",
+        "title": "Audio source and sink integration",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

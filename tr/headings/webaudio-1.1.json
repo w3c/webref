@@ -1,0 +1,1884 @@
+{
+  "spec": {
+    "title": "Web Audio API 1.1",
+    "url": "https://www.w3.org/TR/webaudio-1.1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#title",
+      "level": 1,
+      "title": "Web Audio API 1.1"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introductory",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#introductory",
+      "level": 2,
+      "title": "Introduction"
+    },
+    {
+      "id": "Features",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#Features",
+      "level": 3,
+      "title": "Features"
+    },
+    {
+      "id": "ModularRouting",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ModularRouting",
+      "level": 4,
+      "title": "Modular Routing"
+    },
+    {
+      "id": "APIOverview",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#APIOverview",
+      "level": 3,
+      "title": "API Overview"
+    },
+    {
+      "id": "audioapi",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#audioapi",
+      "level": 2,
+      "title": "The Audio API",
+      "number": "1"
+    },
+    {
+      "id": "BaseAudioContext",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#BaseAudioContext",
+      "level": 3,
+      "title": "The BaseAudioContext Interface",
+      "number": "1.1"
+    },
+    {
+      "id": "BaseAudioContext-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#BaseAudioContext-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.1.1"
+    },
+    {
+      "id": "BaseAudioContent-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#BaseAudioContent-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.1.2"
+    },
+    {
+      "id": "callback-decodesuccesscallback-parameters",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#callback-decodesuccesscallback-parameters",
+      "level": 4,
+      "title": "Callback DecodeSuccessCallback() Parameters",
+      "number": "1.1.3"
+    },
+    {
+      "id": "callback-decodeerrorcallback-parameters",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#callback-decodeerrorcallback-parameters",
+      "level": 4,
+      "title": "Callback DecodeErrorCallback() Parameters",
+      "number": "1.1.4"
+    },
+    {
+      "id": "lifetime-AudioContext",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#lifetime-AudioContext",
+      "level": 4,
+      "title": "Lifetime",
+      "number": "1.1.5"
+    },
+    {
+      "id": "lack-of-introspection-or-serialization-primitives",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#lack-of-introspection-or-serialization-primitives",
+      "level": 4,
+      "title": "Lack of Introspection or Serialization Primitives",
+      "number": "1.1.6"
+    },
+    {
+      "id": "system-resources-associated-with-baseaudiocontext-subclasses",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#system-resources-associated-with-baseaudiocontext-subclasses",
+      "level": 4,
+      "title": "System Resources Associated with BaseAudioContext Subclasses",
+      "number": "1.1.7"
+    },
+    {
+      "id": "AudioContext",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioContext",
+      "level": 3,
+      "title": "The AudioContext Interface",
+      "number": "1.2"
+    },
+    {
+      "id": "AudioContext-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioContext-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.2.1"
+    },
+    {
+      "id": "AudioContext-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioContext-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.2.2"
+    },
+    {
+      "id": "AudioContext-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioContext-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.2.3"
+    },
+    {
+      "id": "validating-sink-identifier",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#validating-sink-identifier",
+      "level": 4,
+      "title": "Validating sinkId",
+      "number": "1.2.4"
+    },
+    {
+      "id": "AudioContextOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioContextOptions",
+      "level": 4,
+      "title": "AudioContextOptions",
+      "number": "1.2.5"
+    },
+    {
+      "id": "dictionary-audiocontextoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-audiocontextoptions-members",
+      "level": 5,
+      "title": "Dictionary AudioContextOptions Members",
+      "number": "1.2.5.1"
+    },
+    {
+      "id": "AudioSinkOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioSinkOptions",
+      "level": 4,
+      "title": "AudioSinkOptions",
+      "number": "1.2.6"
+    },
+    {
+      "id": "dictionary-audiosinkoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-audiosinkoptions-members",
+      "level": 5,
+      "title": "Dictionary AudioSinkOptions Members",
+      "number": "1.2.6.1"
+    },
+    {
+      "id": "AudioSinkInfo",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioSinkInfo",
+      "level": 4,
+      "title": "AudioSinkInfo",
+      "number": "1.2.7"
+    },
+    {
+      "id": "audiosinkinfo-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#audiosinkinfo-attributes",
+      "level": 5,
+      "title": "Attributes",
+      "number": "1.2.7.1"
+    },
+    {
+      "id": "AudioTimestamp",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioTimestamp",
+      "level": 4,
+      "title": "AudioTimestamp",
+      "number": "1.2.8"
+    },
+    {
+      "id": "dictionary-audiotimestamp-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-audiotimestamp-members",
+      "level": 5,
+      "title": "Dictionary AudioTimestamp Members",
+      "number": "1.2.8.1"
+    },
+    {
+      "id": "AudioRenderCapacity",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacity",
+      "level": 4,
+      "title": "AudioRenderCapacity",
+      "number": "1.2.9"
+    },
+    {
+      "id": "AudioRenderCapacity-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacity-attributes",
+      "level": 5,
+      "title": "Attributes",
+      "number": "1.2.9.1"
+    },
+    {
+      "id": "AudioRenderCapacity-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacity-methods",
+      "level": 5,
+      "title": "Methods",
+      "number": "1.2.9.2"
+    },
+    {
+      "id": "AudioRenderCapacityOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityOptions",
+      "level": 4,
+      "title": "AudioRenderCapacityOptions",
+      "number": "1.2.10"
+    },
+    {
+      "id": "dictionary-AudioRenderCapacityOptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-AudioRenderCapacityOptions-members",
+      "level": 5,
+      "title": "Dictionary AudioRenderCapacityOptions Members",
+      "number": "1.2.10.1"
+    },
+    {
+      "id": "AudioRenderCapacityEvent",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
+      "level": 4,
+      "title": "AudioRenderCapacityEvent",
+      "number": "1.2.11"
+    },
+    {
+      "id": "AudioRenderCapacityEvent-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent-attributes",
+      "level": 5,
+      "title": "Attributes",
+      "number": "1.2.11.1"
+    },
+    {
+      "id": "OfflineAudioContext",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext",
+      "level": 3,
+      "title": "The OfflineAudioContext Interface",
+      "number": "1.3"
+    },
+    {
+      "id": "OfflineAudioContext-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.3.1"
+    },
+    {
+      "id": "OfflineAudioContext-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.3.2"
+    },
+    {
+      "id": "OfflineAudioContext-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.3.3"
+    },
+    {
+      "id": "OfflineAudioContextOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContextOptions",
+      "level": 4,
+      "title": "OfflineAudioContextOptions",
+      "number": "1.3.4"
+    },
+    {
+      "id": "dictionary-offlineaudiocontextoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-offlineaudiocontextoptions-members",
+      "level": 5,
+      "title": "Dictionary OfflineAudioContextOptions Members",
+      "number": "1.3.4.1"
+    },
+    {
+      "id": "OfflineAudioCompletionEvent",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioCompletionEvent",
+      "level": 4,
+      "title": "The OfflineAudioCompletionEvent Interface",
+      "number": "1.3.5"
+    },
+    {
+      "id": "OfflineAudioCompletionEvent-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioCompletionEvent-attributes",
+      "level": 5,
+      "title": "Attributes",
+      "number": "1.3.5.1"
+    },
+    {
+      "id": "OfflineAudioCompletionEventInit",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioCompletionEventInit",
+      "level": 5,
+      "title": "OfflineAudioCompletionEventInit",
+      "number": "1.3.5.2"
+    },
+    {
+      "id": "dictionary-offlineaudiocompletioneventinit-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-offlineaudiocompletioneventinit-members",
+      "level": 6,
+      "title": "Dictionary OfflineAudioCompletionEventInit Members",
+      "number": "1.3.5.2.1"
+    },
+    {
+      "id": "AudioBuffer",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioBuffer",
+      "level": 3,
+      "title": "The AudioBuffer Interface",
+      "number": "1.4"
+    },
+    {
+      "id": "AudioBuffer-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioBuffer-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.4.1"
+    },
+    {
+      "id": "AudioBuffer-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioBuffer-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.4.2"
+    },
+    {
+      "id": "AudioBuffer-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioBuffer-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.4.3"
+    },
+    {
+      "id": "AudioBufferOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioBufferOptions",
+      "level": 4,
+      "title": "AudioBufferOptions",
+      "number": "1.4.4"
+    },
+    {
+      "id": "dictionary-audiobufferoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-audiobufferoptions-members",
+      "level": 5,
+      "title": "Dictionary AudioBufferOptions Members",
+      "number": "1.4.4.1"
+    },
+    {
+      "id": "AudioNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioNode",
+      "level": 3,
+      "title": "The AudioNode Interface",
+      "number": "1.5"
+    },
+    {
+      "id": "AudioNode-creation",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioNode-creation",
+      "level": 4,
+      "title": "AudioNode Creation",
+      "number": "1.5.1"
+    },
+    {
+      "id": "AudioNode-tail",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioNode-tail",
+      "level": 4,
+      "title": "AudioNode Tail-Time",
+      "number": "1.5.2"
+    },
+    {
+      "id": "AudioNode-actively-processing",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioNode-actively-processing",
+      "level": 4,
+      "title": "AudioNode Lifetime",
+      "number": "1.5.3"
+    },
+    {
+      "id": "AudioNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.5.4"
+    },
+    {
+      "id": "AudioNode-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioNode-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.5.5"
+    },
+    {
+      "id": "AudioNodeOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioNodeOptions",
+      "level": 4,
+      "title": "AudioNodeOptions",
+      "number": "1.5.6"
+    },
+    {
+      "id": "dictionary-audionodeoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-audionodeoptions-members",
+      "level": 5,
+      "title": "Dictionary AudioNodeOptions Members",
+      "number": "1.5.6.1"
+    },
+    {
+      "id": "AudioParam",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioParam",
+      "level": 3,
+      "title": "The AudioParam Interface",
+      "number": "1.6"
+    },
+    {
+      "id": "AudioParam-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioParam-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.6.1"
+    },
+    {
+      "id": "AudioParam-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioParam-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.6.2"
+    },
+    {
+      "id": "computation-of-value",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#computation-of-value",
+      "level": 4,
+      "title": "Computation of Value",
+      "number": "1.6.3"
+    },
+    {
+      "id": "example1-AudioParam",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#example1-AudioParam",
+      "level": 4,
+      "title": "AudioParam Automation Example",
+      "number": "1.6.4"
+    },
+    {
+      "id": "AudioScheduledSourceNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioScheduledSourceNode",
+      "level": 3,
+      "title": "The AudioScheduledSourceNode Interface",
+      "number": "1.7"
+    },
+    {
+      "id": "AudioScheduledSourceNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioScheduledSourceNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.7.1"
+    },
+    {
+      "id": "AudioScheduledSourceNode-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioScheduledSourceNode-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.7.2"
+    },
+    {
+      "id": "AnalyserNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AnalyserNode",
+      "level": 3,
+      "title": "The AnalyserNode Interface",
+      "number": "1.8"
+    },
+    {
+      "id": "AnalyserNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AnalyserNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.8.1"
+    },
+    {
+      "id": "AnalyserNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AnalyserNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.8.2"
+    },
+    {
+      "id": "AnalyserNode-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AnalyserNode-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.8.3"
+    },
+    {
+      "id": "AnalyserOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AnalyserOptions",
+      "level": 4,
+      "title": "AnalyserOptions",
+      "number": "1.8.4"
+    },
+    {
+      "id": "dictionary-analyseroptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-analyseroptions-members",
+      "level": 5,
+      "title": "Dictionary AnalyserOptions Members",
+      "number": "1.8.4.1"
+    },
+    {
+      "id": "time-domain-down-mixing",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#time-domain-down-mixing",
+      "level": 4,
+      "title": "Time-Domain Down-Mixing",
+      "number": "1.8.5"
+    },
+    {
+      "id": "fft-windowing-and-smoothing-over-time",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#fft-windowing-and-smoothing-over-time",
+      "level": 4,
+      "title": "FFT Windowing and Smoothing over Time",
+      "number": "1.8.6"
+    },
+    {
+      "id": "AudioBufferSourceNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioBufferSourceNode",
+      "level": 3,
+      "title": "The AudioBufferSourceNode Interface",
+      "number": "1.9"
+    },
+    {
+      "id": "AudioBufferSourceNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioBufferSourceNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.9.1"
+    },
+    {
+      "id": "AudioBufferSourceNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioBufferSourceNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.9.2"
+    },
+    {
+      "id": "AudioBufferSourceNode-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioBufferSourceNode-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.9.3"
+    },
+    {
+      "id": "AudioBufferSourceOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioBufferSourceOptions",
+      "level": 4,
+      "title": "AudioBufferSourceOptions",
+      "number": "1.9.4"
+    },
+    {
+      "id": "dictionary-audiobuffersourceoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-audiobuffersourceoptions-members",
+      "level": 5,
+      "title": "Dictionary AudioBufferSourceOptions Members",
+      "number": "1.9.4.1"
+    },
+    {
+      "id": "looping-AudioBufferSourceNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#looping-AudioBufferSourceNode",
+      "level": 4,
+      "title": "Looping",
+      "number": "1.9.5"
+    },
+    {
+      "id": "playback-AudioBufferSourceNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#playback-AudioBufferSourceNode",
+      "level": 4,
+      "title": "Playback of AudioBuffer Contents",
+      "number": "1.9.6"
+    },
+    {
+      "id": "AudioDestinationNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioDestinationNode",
+      "level": 3,
+      "title": "The AudioDestinationNode Interface",
+      "number": "1.10"
+    },
+    {
+      "id": "AudioDestinationNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioDestinationNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.10.1"
+    },
+    {
+      "id": "AudioListener",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioListener",
+      "level": 3,
+      "title": "The AudioListener Interface",
+      "number": "1.11"
+    },
+    {
+      "id": "AudioListener-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioListener-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.11.1"
+    },
+    {
+      "id": "AudioListener-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioListener-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.11.2"
+    },
+    {
+      "id": "listenerprocessing",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#listenerprocessing",
+      "level": 4,
+      "title": "Processing",
+      "number": "1.11.3"
+    },
+    {
+      "id": "AudioProcessingEvent",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioProcessingEvent",
+      "level": 3,
+      "title": "The AudioProcessingEvent Interface - DEPRECATED",
+      "number": "1.12"
+    },
+    {
+      "id": "AudioProcessingEvent-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioProcessingEvent-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.12.1"
+    },
+    {
+      "id": "AudioProcessingEventInit",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioProcessingEventInit",
+      "level": 4,
+      "title": "AudioProcessingEventInit",
+      "number": "1.12.2"
+    },
+    {
+      "id": "dictionary-audioprocessingeventinit-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-audioprocessingeventinit-members",
+      "level": 5,
+      "title": "Dictionary AudioProcessingEventInit Members",
+      "number": "1.12.2.1"
+    },
+    {
+      "id": "BiquadFilterNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#BiquadFilterNode",
+      "level": 3,
+      "title": "The BiquadFilterNode Interface",
+      "number": "1.13"
+    },
+    {
+      "id": "BiquadFilterNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#BiquadFilterNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.13.1"
+    },
+    {
+      "id": "BiquadFilterNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#BiquadFilterNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.13.2"
+    },
+    {
+      "id": "BiquadFilterNode-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#BiquadFilterNode-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.13.3"
+    },
+    {
+      "id": "BiquadFilterOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#BiquadFilterOptions",
+      "level": 4,
+      "title": "BiquadFilterOptions",
+      "number": "1.13.4"
+    },
+    {
+      "id": "dictionary-biquadfilteroptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-biquadfilteroptions-members",
+      "level": 5,
+      "title": "Dictionary BiquadFilterOptions Members",
+      "number": "1.13.4.1"
+    },
+    {
+      "id": "filters-characteristics",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#filters-characteristics",
+      "level": 4,
+      "title": "Filters Characteristics",
+      "number": "1.13.5"
+    },
+    {
+      "id": "ChannelMergerNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ChannelMergerNode",
+      "level": 3,
+      "title": "The ChannelMergerNode Interface",
+      "number": "1.14"
+    },
+    {
+      "id": "ChannelMergerNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ChannelMergerNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.14.1"
+    },
+    {
+      "id": "ChannelMergerOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ChannelMergerOptions",
+      "level": 4,
+      "title": "ChannelMergerOptions",
+      "number": "1.14.2"
+    },
+    {
+      "id": "dictionary-channelmergeroptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-channelmergeroptions-members",
+      "level": 5,
+      "title": "Dictionary ChannelMergerOptions Members",
+      "number": "1.14.2.1"
+    },
+    {
+      "id": "ChannelSplitterNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ChannelSplitterNode",
+      "level": 3,
+      "title": "The ChannelSplitterNode Interface",
+      "number": "1.15"
+    },
+    {
+      "id": "ChannelSplitterNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ChannelSplitterNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.15.1"
+    },
+    {
+      "id": "ChannelSplitterOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ChannelSplitterOptions",
+      "level": 4,
+      "title": "ChannelSplitterOptions",
+      "number": "1.15.2"
+    },
+    {
+      "id": "dictionary-channelsplitteroptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-channelsplitteroptions-members",
+      "level": 5,
+      "title": "Dictionary ChannelSplitterOptions Members",
+      "number": "1.15.2.1"
+    },
+    {
+      "id": "ConstantSourceNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ConstantSourceNode",
+      "level": 3,
+      "title": "The ConstantSourceNode Interface",
+      "number": "1.16"
+    },
+    {
+      "id": "ConstantSourceNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ConstantSourceNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.16.1"
+    },
+    {
+      "id": "ConstantSourceNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ConstantSourceNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.16.2"
+    },
+    {
+      "id": "ConstantSourceOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ConstantSourceOptions",
+      "level": 4,
+      "title": "ConstantSourceOptions",
+      "number": "1.16.3"
+    },
+    {
+      "id": "dictionary-constantsourceoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-constantsourceoptions-members",
+      "level": 5,
+      "title": "Dictionary ConstantSourceOptions Members",
+      "number": "1.16.3.1"
+    },
+    {
+      "id": "ConvolverNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ConvolverNode",
+      "level": 3,
+      "title": "The ConvolverNode Interface",
+      "number": "1.17"
+    },
+    {
+      "id": "ConvolverNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ConvolverNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.17.1"
+    },
+    {
+      "id": "ConvolverNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ConvolverNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.17.2"
+    },
+    {
+      "id": "ConvolverOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ConvolverOptions",
+      "level": 4,
+      "title": "ConvolverOptions",
+      "number": "1.17.3"
+    },
+    {
+      "id": "dictionary-convolveroptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-convolveroptions-members",
+      "level": 5,
+      "title": "Dictionary ConvolverOptions Members",
+      "number": "1.17.3.1"
+    },
+    {
+      "id": "Convolution-channel-configurations",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#Convolution-channel-configurations",
+      "level": 4,
+      "title": "Channel Configurations for Input, Impulse Response and Output",
+      "number": "1.17.4"
+    },
+    {
+      "id": "DelayNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#DelayNode",
+      "level": 3,
+      "title": "The DelayNode Interface",
+      "number": "1.18"
+    },
+    {
+      "id": "DelayNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#DelayNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.18.1"
+    },
+    {
+      "id": "DelayNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#DelayNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.18.2"
+    },
+    {
+      "id": "DelayOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#DelayOptions",
+      "level": 4,
+      "title": "DelayOptions",
+      "number": "1.18.3"
+    },
+    {
+      "id": "dictionary-delayoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-delayoptions-members",
+      "level": 5,
+      "title": "Dictionary DelayOptions Members",
+      "number": "1.18.3.1"
+    },
+    {
+      "id": "DelayNode-processing",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#DelayNode-processing",
+      "level": 4,
+      "title": "Processing",
+      "number": "1.18.4"
+    },
+    {
+      "id": "DynamicsCompressorNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#DynamicsCompressorNode",
+      "level": 3,
+      "title": "The DynamicsCompressorNode Interface",
+      "number": "1.19"
+    },
+    {
+      "id": "DynamicsCompressorNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#DynamicsCompressorNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.19.1"
+    },
+    {
+      "id": "DynamicsCompressorNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#DynamicsCompressorNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.19.2"
+    },
+    {
+      "id": "DynamicsCompressorOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#DynamicsCompressorOptions",
+      "level": 4,
+      "title": "DynamicsCompressorOptions",
+      "number": "1.19.3"
+    },
+    {
+      "id": "dictionary-dynamicscompressoroptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-dynamicscompressoroptions-members",
+      "level": 5,
+      "title": "Dictionary DynamicsCompressorOptions Members",
+      "number": "1.19.3.1"
+    },
+    {
+      "id": "DynamicsCompressorOptions-processing",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#DynamicsCompressorOptions-processing",
+      "level": 4,
+      "title": "Processing",
+      "number": "1.19.4"
+    },
+    {
+      "id": "GainNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#GainNode",
+      "level": 3,
+      "title": "The GainNode Interface",
+      "number": "1.20"
+    },
+    {
+      "id": "GainNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#GainNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.20.1"
+    },
+    {
+      "id": "GainNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#GainNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.20.2"
+    },
+    {
+      "id": "GainOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#GainOptions",
+      "level": 4,
+      "title": "GainOptions",
+      "number": "1.20.3"
+    },
+    {
+      "id": "dictionary-gainoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-gainoptions-members",
+      "level": 5,
+      "title": "Dictionary GainOptions Members",
+      "number": "1.20.3.1"
+    },
+    {
+      "id": "IIRFilterNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#IIRFilterNode",
+      "level": 3,
+      "title": "The IIRFilterNode Interface",
+      "number": "1.21"
+    },
+    {
+      "id": "IIRFilterNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#IIRFilterNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.21.1"
+    },
+    {
+      "id": "IIRFilterNode-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#IIRFilterNode-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.21.2"
+    },
+    {
+      "id": "IIRFilterOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#IIRFilterOptions",
+      "level": 4,
+      "title": "IIRFilterOptions",
+      "number": "1.21.3"
+    },
+    {
+      "id": "dictionary-iirfilteroptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-iirfilteroptions-members",
+      "level": 5,
+      "title": "Dictionary IIRFilterOptions Members",
+      "number": "1.21.3.1"
+    },
+    {
+      "id": "IIRFilterNode-filter-definition",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#IIRFilterNode-filter-definition",
+      "level": 4,
+      "title": "Filter Definition",
+      "number": "1.21.4"
+    },
+    {
+      "id": "MediaElementAudioSourceNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaElementAudioSourceNode",
+      "level": 3,
+      "title": "The MediaElementAudioSourceNode Interface",
+      "number": "1.22"
+    },
+    {
+      "id": "MediaElementAudioSourceNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaElementAudioSourceNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.22.1"
+    },
+    {
+      "id": "MediaElementAudioSourceNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaElementAudioSourceNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.22.2"
+    },
+    {
+      "id": "MediaElementAudioSourceOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaElementAudioSourceOptions",
+      "level": 4,
+      "title": "MediaElementAudioSourceOptions",
+      "number": "1.22.3"
+    },
+    {
+      "id": "dictionary-mediaelementaudiosourceoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-mediaelementaudiosourceoptions-members",
+      "level": 5,
+      "title": "Dictionary MediaElementAudioSourceOptions Members",
+      "number": "1.22.3.1"
+    },
+    {
+      "id": "MediaElementAudioSourceOptions-security",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaElementAudioSourceOptions-security",
+      "level": 4,
+      "title": "Security with MediaElementAudioSourceNode and Cross-Origin Resources",
+      "number": "1.22.4"
+    },
+    {
+      "id": "MediaStreamAudioDestinationNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaStreamAudioDestinationNode",
+      "level": 3,
+      "title": "The MediaStreamAudioDestinationNode Interface",
+      "number": "1.23"
+    },
+    {
+      "id": "MediaStreamAudioDestinationNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaStreamAudioDestinationNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.23.1"
+    },
+    {
+      "id": "MediaStreamAudioDestinationNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaStreamAudioDestinationNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.23.2"
+    },
+    {
+      "id": "MediaStreamAudioSourceNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaStreamAudioSourceNode",
+      "level": 3,
+      "title": "The MediaStreamAudioSourceNode Interface",
+      "number": "1.24"
+    },
+    {
+      "id": "MediaStreamAudioSourceNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaStreamAudioSourceNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.24.1"
+    },
+    {
+      "id": "MediaStreamAudioSourceNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaStreamAudioSourceNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.24.2"
+    },
+    {
+      "id": "MediaStreamAudioSourceOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaStreamAudioSourceOptions",
+      "level": 4,
+      "title": "MediaStreamAudioSourceOptions",
+      "number": "1.24.3"
+    },
+    {
+      "id": "dictionary-mediastreamaudiosourceoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-mediastreamaudiosourceoptions-members",
+      "level": 5,
+      "title": "Dictionary MediaStreamAudioSourceOptions Members",
+      "number": "1.24.3.1"
+    },
+    {
+      "id": "MediaStreamTrackAudioSourceNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaStreamTrackAudioSourceNode",
+      "level": 3,
+      "title": "The MediaStreamTrackAudioSourceNode Interface",
+      "number": "1.25"
+    },
+    {
+      "id": "MediaStreamTrackAudioSourceNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaStreamTrackAudioSourceNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.25.1"
+    },
+    {
+      "id": "MediaStreamTrackAudioSourceOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#MediaStreamTrackAudioSourceOptions",
+      "level": 4,
+      "title": "MediaStreamTrackAudioSourceOptions",
+      "number": "1.25.2"
+    },
+    {
+      "id": "dictionary-mediastreamtrackaudiosourceoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-mediastreamtrackaudiosourceoptions-members",
+      "level": 5,
+      "title": "Dictionary MediaStreamTrackAudioSourceOptions Members",
+      "number": "1.25.2.1"
+    },
+    {
+      "id": "OscillatorNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OscillatorNode",
+      "level": 3,
+      "title": "The OscillatorNode Interface",
+      "number": "1.26"
+    },
+    {
+      "id": "OscillatorNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OscillatorNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.26.1"
+    },
+    {
+      "id": "OscillatorNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OscillatorNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.26.2"
+    },
+    {
+      "id": "OscillatorNode-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OscillatorNode-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.26.3"
+    },
+    {
+      "id": "OscillatorOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#OscillatorOptions",
+      "level": 4,
+      "title": "OscillatorOptions",
+      "number": "1.26.4"
+    },
+    {
+      "id": "dictionary-oscillatoroptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-oscillatoroptions-members",
+      "level": 5,
+      "title": "Dictionary OscillatorOptions Members",
+      "number": "1.26.4.1"
+    },
+    {
+      "id": "basic-waveform-phase",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#basic-waveform-phase",
+      "level": 4,
+      "title": "Basic Waveform Phase",
+      "number": "1.26.5"
+    },
+    {
+      "id": "PannerNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#PannerNode",
+      "level": 3,
+      "title": "The PannerNode Interface",
+      "number": "1.27"
+    },
+    {
+      "id": "PannerNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#PannerNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.27.1"
+    },
+    {
+      "id": "PannerNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#PannerNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.27.2"
+    },
+    {
+      "id": "PannerNode-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#PannerNode-methods",
+      "level": 4,
+      "title": "Methods",
+      "number": "1.27.3"
+    },
+    {
+      "id": "PannerOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#PannerOptions",
+      "level": 4,
+      "title": "PannerOptions",
+      "number": "1.27.4"
+    },
+    {
+      "id": "dictionary-pannernode-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-pannernode-members",
+      "level": 5,
+      "title": "Dictionary PannerOptions Members",
+      "number": "1.27.4.1"
+    },
+    {
+      "id": "panner-channel-limitations",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#panner-channel-limitations",
+      "level": 4,
+      "title": "Channel Limitations",
+      "number": "1.27.5"
+    },
+    {
+      "id": "PeriodicWave",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#PeriodicWave",
+      "level": 3,
+      "title": "The PeriodicWave Interface",
+      "number": "1.28"
+    },
+    {
+      "id": "PeriodicWave-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#PeriodicWave-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.28.1"
+    },
+    {
+      "id": "PeriodicWaveConstraints",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#PeriodicWaveConstraints",
+      "level": 4,
+      "title": "PeriodicWaveConstraints",
+      "number": "1.28.2"
+    },
+    {
+      "id": "dictionary-periodicwaveconstraints-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-periodicwaveconstraints-members",
+      "level": 5,
+      "title": "Dictionary PeriodicWaveConstraints Members",
+      "number": "1.28.2.1"
+    },
+    {
+      "id": "PeriodicWaveOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#PeriodicWaveOptions",
+      "level": 4,
+      "title": "PeriodicWaveOptions",
+      "number": "1.28.3"
+    },
+    {
+      "id": "dictionary-periodicwaveoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-periodicwaveoptions-members",
+      "level": 5,
+      "title": "Dictionary PeriodicWaveOptions Members",
+      "number": "1.28.3.1"
+    },
+    {
+      "id": "waveform-generation",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#waveform-generation",
+      "level": 4,
+      "title": "Waveform Generation",
+      "number": "1.28.4"
+    },
+    {
+      "id": "waveform-normalization",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#waveform-normalization",
+      "level": 4,
+      "title": "Waveform Normalization",
+      "number": "1.28.5"
+    },
+    {
+      "id": "oscillator-coefficients",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#oscillator-coefficients",
+      "level": 4,
+      "title": "Oscillator Coefficients",
+      "number": "1.28.6"
+    },
+    {
+      "id": "ScriptProcessorNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ScriptProcessorNode",
+      "level": 3,
+      "title": "The ScriptProcessorNode Interface - DEPRECATED",
+      "number": "1.29"
+    },
+    {
+      "id": "ScriptProcessorNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ScriptProcessorNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.29.1"
+    },
+    {
+      "id": "stereopannernode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#stereopannernode",
+      "level": 3,
+      "title": "The StereoPannerNode Interface",
+      "number": "1.30"
+    },
+    {
+      "id": "StereoPannerNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#StereoPannerNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.30.1"
+    },
+    {
+      "id": "StereoPannerNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#StereoPannerNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.30.2"
+    },
+    {
+      "id": "StereoPannerOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#StereoPannerOptions",
+      "level": 4,
+      "title": "StereoPannerOptions",
+      "number": "1.30.3"
+    },
+    {
+      "id": "dictionary-stereopanneroptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-stereopanneroptions-members",
+      "level": 5,
+      "title": "Dictionary StereoPannerOptions Members",
+      "number": "1.30.3.1"
+    },
+    {
+      "id": "StereoPanner-channel-limitations",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#StereoPanner-channel-limitations",
+      "level": 4,
+      "title": "Channel Limitations",
+      "number": "1.30.4"
+    },
+    {
+      "id": "WaveShaperNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#WaveShaperNode",
+      "level": 3,
+      "title": "The WaveShaperNode Interface",
+      "number": "1.31"
+    },
+    {
+      "id": "WaveShaperNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#WaveShaperNode-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "1.31.1"
+    },
+    {
+      "id": "WaveShaperNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#WaveShaperNode-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.31.2"
+    },
+    {
+      "id": "WaveShaperOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#WaveShaperOptions",
+      "level": 4,
+      "title": "WaveShaperOptions",
+      "number": "1.31.3"
+    },
+    {
+      "id": "dictionary-waveshaperoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-waveshaperoptions-members",
+      "level": 5,
+      "title": "Dictionary WaveShaperOptions Members",
+      "number": "1.31.3.1"
+    },
+    {
+      "id": "AudioWorklet",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorklet",
+      "level": 3,
+      "title": "The AudioWorklet Interface",
+      "number": "1.32"
+    },
+    {
+      "id": "AudioWorklet-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorklet-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "1.32.1"
+    },
+    {
+      "id": "AudioWorklet-concepts",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorklet-concepts",
+      "level": 4,
+      "title": "Concepts",
+      "number": "1.32.2"
+    },
+    {
+      "id": "AudioWorkletGlobalScope",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorkletGlobalScope",
+      "level": 4,
+      "title": "The AudioWorkletGlobalScope Interface",
+      "number": "1.32.3"
+    },
+    {
+      "id": "AudioWorkletGlobalScope-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorkletGlobalScope-attributes",
+      "level": 5,
+      "title": "Attributes",
+      "number": "1.32.3.1"
+    },
+    {
+      "id": "AudioWorkletGlobalScope-methods",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorkletGlobalScope-methods",
+      "level": 5,
+      "title": "Methods",
+      "number": "1.32.3.2"
+    },
+    {
+      "id": "AudioWorkletProcessor-instantiation",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorkletProcessor-instantiation",
+      "level": 5,
+      "title": "The instantiation of AudioWorkletProcessor",
+      "number": "1.32.3.3"
+    },
+    {
+      "id": "AudioWorkletNode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorkletNode",
+      "level": 4,
+      "title": "The AudioWorkletNode Interface",
+      "number": "1.32.4"
+    },
+    {
+      "id": "AudioWorkletNode-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorkletNode-constructors",
+      "level": 5,
+      "title": "Constructors",
+      "number": "1.32.4.1"
+    },
+    {
+      "id": "AudioWorkletNode-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorkletNode-attributes",
+      "level": 5,
+      "title": "Attributes",
+      "number": "1.32.4.2"
+    },
+    {
+      "id": "AudioWorkletNodeOptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorkletNodeOptions",
+      "level": 5,
+      "title": "AudioWorkletNodeOptions",
+      "number": "1.32.4.3"
+    },
+    {
+      "id": "dictionary-audioworkletnodeoptions-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-audioworkletnodeoptions-members",
+      "level": 6,
+      "title": "Dictionary AudioWorkletNodeOptions Members",
+      "number": "1.32.4.3.1"
+    },
+    {
+      "id": "configuring-channels-with-audioworkletnodeoptions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#configuring-channels-with-audioworkletnodeoptions",
+      "level": 6,
+      "title": "Configuring Channels with AudioWorkletNodeOptions",
+      "number": "1.32.4.3.2"
+    },
+    {
+      "id": "AudioWorkletProcessor",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorkletProcessor",
+      "level": 4,
+      "title": "The AudioWorkletProcessor Interface",
+      "number": "1.32.5"
+    },
+    {
+      "id": "AudioWorketProcessor-constructors",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorketProcessor-constructors",
+      "level": 5,
+      "title": "Constructors",
+      "number": "1.32.5.1"
+    },
+    {
+      "id": "AudioWorkletProcessor-attributes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorkletProcessor-attributes",
+      "level": 5,
+      "title": "Attributes",
+      "number": "1.32.5.2"
+    },
+    {
+      "id": "callback-audioworketprocess-callback",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#callback-audioworketprocess-callback",
+      "level": 5,
+      "title": "Callback AudioWorkletProcessCallback",
+      "number": "1.32.5.3"
+    },
+    {
+      "id": "audioworkletprocess-callback-parameters",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#audioworkletprocess-callback-parameters",
+      "level": 6,
+      "title": "Callback AudioWorkletProcessCallback Parameters",
+      "number": "1.32.5.3.1"
+    },
+    {
+      "id": "AudioParamDescriptor",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioParamDescriptor",
+      "level": 5,
+      "title": "AudioParamDescriptor",
+      "number": "1.32.5.4"
+    },
+    {
+      "id": "dictionary-audioparamdescriptor-members",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-audioparamdescriptor-members",
+      "level": 6,
+      "title": "Dictionary AudioParamDescriptor Members",
+      "number": "1.32.5.4.1"
+    },
+    {
+      "id": "AudioWorklet-Sequence",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorklet-Sequence",
+      "level": 4,
+      "title": "AudioWorklet Sequence of Events",
+      "number": "1.32.6"
+    },
+    {
+      "id": "AudioWorklet-Examples",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioWorklet-Examples",
+      "level": 4,
+      "title": "AudioWorklet Examples",
+      "number": "1.32.7"
+    },
+    {
+      "id": "the-bitcrusher-node",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#the-bitcrusher-node",
+      "level": 5,
+      "title": "The BitCrusher Node",
+      "number": "1.32.7.1"
+    },
+    {
+      "id": "vu-meter-mode",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#vu-meter-mode",
+      "level": 5,
+      "title": "VU Meter Node",
+      "number": "1.32.7.2"
+    },
+    {
+      "id": "processing-model",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#processing-model",
+      "level": 2,
+      "title": "Processing model",
+      "number": "2"
+    },
+    {
+      "id": "processing-model-background",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#processing-model-background",
+      "level": 3,
+      "title": "Background",
+      "number": "2.1"
+    },
+    {
+      "id": "control-thread-and-rendering-thread",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#control-thread-and-rendering-thread",
+      "level": 3,
+      "title": "Control Thread and Rendering Thread",
+      "number": "2.2"
+    },
+    {
+      "id": "asynchronous-operations",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#asynchronous-operations",
+      "level": 3,
+      "title": "Asynchronous Operations",
+      "number": "2.3"
+    },
+    {
+      "id": "rendering-loop",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
+      "level": 3,
+      "title": "Rendering an Audio Graph",
+      "number": "2.4"
+    },
+    {
+      "id": "error-handling-on-a-running-audio-context",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#error-handling-on-a-running-audio-context",
+      "level": 3,
+      "title": "Handling an error from System Audio Resources on the AudioContext",
+      "number": "2.5"
+    },
+    {
+      "id": "unloading-a-document",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#unloading-a-document",
+      "level": 3,
+      "title": "Unloading a document",
+      "number": "2.6"
+    },
+    {
+      "id": "DynamicLifetime",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#DynamicLifetime",
+      "level": 2,
+      "title": "Dynamic Lifetime",
+      "number": "3"
+    },
+    {
+      "id": "dynamic-lifetime-background",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dynamic-lifetime-background",
+      "level": 3,
+      "title": "Background",
+      "number": "3.1"
+    },
+    {
+      "id": "dynamic-lifetime-example",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dynamic-lifetime-example",
+      "level": 3,
+      "title": "Example",
+      "number": "3.2"
+    },
+    {
+      "id": "channel-up-mixing-and-down-mixing",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#channel-up-mixing-and-down-mixing",
+      "level": 2,
+      "title": "Channel Up-Mixing and Down-Mixing",
+      "number": "4"
+    },
+    {
+      "id": "ChannelLayouts",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ChannelLayouts",
+      "level": 3,
+      "title": "Speaker Channel Layouts",
+      "number": "4.1"
+    },
+    {
+      "id": "ChannelOrdering",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ChannelOrdering",
+      "level": 3,
+      "title": "Channel Ordering",
+      "number": "4.2"
+    },
+    {
+      "id": "channels-tail-time",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#channels-tail-time",
+      "level": 3,
+      "title": "Implication of tail-time on input and output channel count",
+      "number": "4.3"
+    },
+    {
+      "id": "UpMix-sub",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#UpMix-sub",
+      "level": 3,
+      "title": "Up Mixing Speaker Layouts",
+      "number": "4.4"
+    },
+    {
+      "id": "down-mix",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#down-mix",
+      "level": 3,
+      "title": "Down Mixing Speaker Layouts",
+      "number": "4.5"
+    },
+    {
+      "id": "ChannelRules-section",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#ChannelRules-section",
+      "level": 3,
+      "title": "Channel Rules Examples",
+      "number": "4.6"
+    },
+    {
+      "id": "audio-signal-values",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#audio-signal-values",
+      "level": 2,
+      "title": "Audio Signal Values",
+      "number": "5"
+    },
+    {
+      "id": "audio-sample-format",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#audio-sample-format",
+      "level": 3,
+      "title": "Audio sample format",
+      "number": "5.1"
+    },
+    {
+      "id": "audio-values-rendering",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#audio-values-rendering",
+      "level": 3,
+      "title": "Rendering",
+      "number": "5.2"
+    },
+    {
+      "id": "Spatialization",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#Spatialization",
+      "level": 2,
+      "title": "Spatialization/Panning",
+      "number": "6"
+    },
+    {
+      "id": "Spatialization-background",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#Spatialization-background",
+      "level": 3,
+      "title": "Background",
+      "number": "6.1"
+    },
+    {
+      "id": "azimuth-elevation",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#azimuth-elevation",
+      "level": 3,
+      "title": "Azimuth and Elevation",
+      "number": "6.2"
+    },
+    {
+      "id": "Spatialization-panning-algorithm",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#Spatialization-panning-algorithm",
+      "level": 3,
+      "title": "Panning Algorithm",
+      "number": "6.3"
+    },
+    {
+      "id": "Spatialization-equal-power-panning",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#Spatialization-equal-power-panning",
+      "level": 4,
+      "title": "PannerNode \"equalpower\" Panning",
+      "number": "6.3.1"
+    },
+    {
+      "id": "Spatialization-hrtf-panning",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#Spatialization-hrtf-panning",
+      "level": 4,
+      "title": "PannerNode \"HRTF\" Panning (Stereo Only)",
+      "number": "6.3.2"
+    },
+    {
+      "id": "stereopanner-algorithm",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#stereopanner-algorithm",
+      "level": 4,
+      "title": "StereoPannerNode Panning",
+      "number": "6.3.3"
+    },
+    {
+      "id": "Spatialization-distance-effects",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#Spatialization-distance-effects",
+      "level": 3,
+      "title": "Distance Effects",
+      "number": "6.4"
+    },
+    {
+      "id": "Spatialization-sound-cones",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#Spatialization-sound-cones",
+      "level": 3,
+      "title": "Sound Cones",
+      "number": "6.5"
+    },
+    {
+      "id": "Performance",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#Performance",
+      "level": 2,
+      "title": "Performance Considerations",
+      "number": "7"
+    },
+    {
+      "id": "latency",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#latency",
+      "level": 3,
+      "title": "Latency",
+      "number": "7.1"
+    },
+    {
+      "id": "audio-buffer-copying",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#audio-buffer-copying",
+      "level": 3,
+      "title": "Audio Buffer Copying",
+      "number": "7.2"
+    },
+    {
+      "id": "audioparam-transitions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#audioparam-transitions",
+      "level": 3,
+      "title": "AudioParam Transitions",
+      "number": "7.3"
+    },
+    {
+      "id": "audio-glitching",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#audio-glitching",
+      "level": 3,
+      "title": "Audio Glitching",
+      "number": "7.4"
+    },
+    {
+      "id": "priv-sec",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#priv-sec",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "8"
+    },
+    {
+      "id": "requirements",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#requirements",
+      "level": 2,
+      "title": "Requirements and Use Cases",
+      "number": "9"
+    },
+    {
+      "id": "common-definitions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#common-definitions",
+      "level": 2,
+      "title": "10. Common Definitions for Specification Code"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#changes",
+      "level": 2,
+      "title": "11. Change Log"
+    },
+    {
+      "id": "acks",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#acks",
+      "level": 2,
+      "title": "12. Acknowledgements"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

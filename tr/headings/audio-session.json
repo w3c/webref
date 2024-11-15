@@ -1,0 +1,232 @@
+{
+  "spec": {
+    "title": "Audio Session",
+    "url": "https://www.w3.org/TR/audio-session/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/audio-session/#title",
+      "level": 1,
+      "title": "Audio Session"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/audio-session/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/audio-session/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/audio-session/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/audio-session/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "concepts",
+      "href": "https://www.w3.org/TR/audio-session/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "2"
+    },
+    {
+      "id": "audiosession-interface",
+      "href": "https://www.w3.org/TR/audio-session/#audiosession-interface",
+      "level": 2,
+      "title": "The AudioSession interface",
+      "number": "3"
+    },
+    {
+      "id": "audio-session-types",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-types",
+      "level": 3,
+      "title": "Audio session types",
+      "number": "3.1"
+    },
+    {
+      "id": "audio-session-states",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-states",
+      "level": 3,
+      "title": "Audio session states",
+      "number": "3.2"
+    },
+    {
+      "id": "extensions-to-navigator",
+      "href": "https://www.w3.org/TR/audio-session/#extensions-to-navigator",
+      "level": 2,
+      "title": "Extensions to the Navigator interface",
+      "number": "4"
+    },
+    {
+      "id": "audio-session-algorithms",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-algorithms",
+      "level": 2,
+      "title": "Audio session algorithms",
+      "number": "5"
+    },
+    {
+      "id": "audio-session-update-type-algorithm",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-update-type-algorithm",
+      "level": 3,
+      "title": "Update AudioSession’s type",
+      "number": "5.1"
+    },
+    {
+      "id": "audio-session-update-state-algorithm",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-update-state-algorithm",
+      "level": 3,
+      "title": "Update AudioSession’s state",
+      "number": "5.2"
+    },
+    {
+      "id": "audio-session-update-selected-audio-session-algorithm",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-update-selected-audio-session-algorithm",
+      "level": 3,
+      "title": "Update the selected audio session",
+      "number": "5.3"
+    },
+    {
+      "id": "audio-session-other-algorithms",
+      "href": "https://www.w3.org/TR/audio-session/#audio-session-other-algorithms",
+      "level": 3,
+      "title": "Other algorithms",
+      "number": "5.4"
+    },
+    {
+      "id": "integration",
+      "href": "https://www.w3.org/TR/audio-session/#integration",
+      "level": 2,
+      "title": "Audio source and sink integration",
+      "number": "6"
+    },
+    {
+      "id": "audiocontext-sink",
+      "href": "https://www.w3.org/TR/audio-session/#audiocontext-sink",
+      "level": 3,
+      "title": "AudioContext",
+      "number": "6.1"
+    },
+    {
+      "id": "media-element-sink",
+      "href": "https://www.w3.org/TR/audio-session/#media-element-sink",
+      "level": 3,
+      "title": "HTMLMediaElement",
+      "number": "6.2"
+    },
+    {
+      "id": "microphone-track-source",
+      "href": "https://www.w3.org/TR/audio-session/#microphone-track-source",
+      "level": 3,
+      "title": "Microphone MediaStreamtrack",
+      "number": "6.3"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/audio-session/#privacy",
+      "level": 2,
+      "title": "Privacy considerations",
+      "number": "7"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/audio-session/#security",
+      "level": 2,
+      "title": "Security considerations",
+      "number": "8"
+    },
+    {
+      "id": "examples",
+      "href": "https://www.w3.org/TR/audio-session/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "9"
+    },
+    {
+      "id": "proactive-play-and-record-example",
+      "href": "https://www.w3.org/TR/audio-session/#proactive-play-and-record-example",
+      "level": 3,
+      "title": "A site sets its audio session type proactively to \"play-and-record\"",
+      "number": "9.1"
+    },
+    {
+      "id": "interrutpion-handling-example",
+      "href": "https://www.w3.org/TR/audio-session/#interrutpion-handling-example",
+      "level": 3,
+      "title": "A site reacts upon interruption",
+      "number": "9.2"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/audio-session/#acknowledgements",
+      "level": 2,
+      "title": "10. Acknowledgements"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/audio-session/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/audio-session/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://www.w3.org/TR/audio-session/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/audio-session/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/audio-session/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/audio-session/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/audio-session/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/audio-session/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://www.w3.org/TR/audio-session/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

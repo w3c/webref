@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-11-14T01:34:55.438Z",
+  "date": "2024-11-15T01:50:39.733Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -153,7 +153,6 @@
       "url",
       "urlpattern",
       "at-driver",
-      "audio-session",
       "contentEditable",
       "execCommand",
       "gamepad-extensions",
@@ -314,6 +313,7 @@
       "ambient-light",
       "appmanifest",
       "audio-output",
+      "audio-session",
       "audiobooks",
       "autoplay-detection",
       "badging",
@@ -429,7 +429,7 @@
       "css-will-change-1",
       "css-writing-modes-3",
       "css-writing-modes-4",
-      "CSS2",
+      "CSS21",
       "CSS22",
       "css3-exclusions",
       "cssom-1",
@@ -510,7 +510,7 @@
       "mse-byte-stream-format-registry",
       "mse-byte-stream-format-webm",
       "mst-content-hint",
-      "n-quads",
+      "rdf11-n-quads",
       "navigation-timing-2",
       "network-error-logging",
       "openscreenprotocol",
@@ -596,7 +596,8 @@
       "web-animations-2",
       "web-locks",
       "web-share",
-      "webaudio",
+      "webaudio-1.0",
+      "webaudio-1.1",
       "webauthn-3",
       "webcodecs-aac-codec-registration",
       "webcodecs-alaw-codec-registration",
@@ -665,10 +666,10 @@
     ]
   },
   "stats": {
-    "crawled": 332,
+    "crawled": 334,
     "errors": 0
   },
-  "crawler": "reffy-17.2.9",
+  "crawler": "reffy-17.2.10",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -714,7 +715,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "14 November 2024",
+      "date": "15 November 2024",
       "links": "links/av1-spec.json"
     },
     {
@@ -1034,6 +1035,65 @@
       "dfns": "dfns/audio-output.json",
       "headings": "headings/audio-output.json",
       "ids": "ids/audio-output.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/audio-session/",
+      "seriesComposition": "full",
+      "shortname": "audio-session",
+      "series": {
+        "shortname": "audio-session",
+        "currentSpecification": "audio-session",
+        "title": "Audio Session",
+        "shortTitle": "Audio Session",
+        "releaseUrl": "https://www.w3.org/TR/audio-session/",
+        "nightlyUrl": "https://w3c.github.io/audio-session/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/audio-session/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/audio-session/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/audio-session",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Audio Session",
+      "source": "w3c",
+      "shortTitle": "Audio Session",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/audio-session/",
+        "https://w3c.github.io/audio-session/"
+      ],
+      "crawled": "https://www.w3.org/TR/audio-session/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 13 Nov 2024 10:57:39 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "13 November 2024",
+      "revision": "0a2b378127fd70bb92712883a82a2f63e05df852",
+      "algorithms": "algorithms/audio-session.json",
+      "links": "links/audio-session.json",
+      "refs": "refs/audio-session.json",
+      "events": "events/audio-session.json",
+      "idl": "idl/audio-session.idl",
+      "dfns": "dfns/audio-session.json",
+      "headings": "headings/audio-session.json",
+      "ids": "ids/audio-session.json"
     },
     {
       "url": "https://www.w3.org/TR/audiobooks/",
@@ -1819,11 +1879,11 @@
       ],
       "crawled": "https://www.w3.org/TR/core-aam-1.2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 15 Oct 2024 17:43:26 GMT"
+        "lastModified": "Thu, 14 Nov 2024 19:54:52 GMT"
       },
       "generator": "respec",
-      "date": "15 October 2024",
-      "revision": "b6e04920d08670848dfdd435db5575d92b603b61",
+      "date": "14 November 2024",
+      "revision": "83872bfd88adfe416fc07f850db2ba78629a97aa",
       "links": "links/core-aam-1.2.json",
       "refs": "refs/core-aam-1.2.json",
       "dfns": "dfns/core-aam-1.2.json",
@@ -8671,7 +8731,7 @@
     {
       "url": "https://www.w3.org/TR/CSS21/",
       "seriesComposition": "full",
-      "shortname": "CSS2",
+      "shortname": "CSS21",
       "series": {
         "shortname": "CSS",
         "currentSpecification": "CSS22",
@@ -8681,6 +8741,9 @@
         "nightlyUrl": "https://drafts.csswg.org/css2/"
       },
       "seriesVersion": "2.1",
+      "formerNames": [
+        "CSS2"
+      ],
       "nightly": {
         "url": "https://www.w3.org/TR/CSS21/",
         "status": "Editor's Draft",
@@ -8771,12 +8834,12 @@
         "lastModified": "Wed, 08 Dec 2021 07:36:41 GMT"
       },
       "date": "to correct markup.",
-      "algorithms": "algorithms/CSS2.json",
-      "links": "links/CSS2.json",
-      "refs": "refs/CSS2.json",
-      "dfns": "dfns/CSS2.json",
-      "headings": "headings/CSS2.json",
-      "ids": "ids/CSS2.json"
+      "algorithms": "algorithms/CSS21.json",
+      "links": "links/CSS21.json",
+      "refs": "refs/CSS21.json",
+      "dfns": "dfns/CSS21.json",
+      "headings": "headings/CSS21.json",
+      "ids": "ids/CSS21.json"
     },
     {
       "url": "https://www.w3.org/TR/CSS22/",
@@ -8801,7 +8864,7 @@
         "repository": "https://github.com/w3c/csswg-drafts",
         "filename": "index.html"
       },
-      "seriesPrevious": "CSS2",
+      "seriesPrevious": "CSS21",
       "organization": "W3C",
       "groups": [
         {
@@ -12265,11 +12328,11 @@
       ],
       "crawled": "https://www.w3.org/TR/mathml4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 08 Nov 2024 09:00:38 GMT"
+        "lastModified": "Thu, 14 Nov 2024 18:34:59 GMT"
       },
       "generator": "respec",
-      "date": "08 November 2024",
-      "revision": "a3887091d788a070519bd096aa716dcd6a69d8c8",
+      "date": "14 November 2024",
+      "revision": "0148352b67fe0437d2293e1a2f565aef24b3272a",
       "algorithms": "algorithms/mathml4.json",
       "links": "links/mathml4.json",
       "refs": "refs/mathml4.json",
@@ -13140,10 +13203,11 @@
       ],
       "crawled": "https://www.w3.org/TR/miniapp-manifest/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 30 May 2023 12:54:18 GMT"
+        "lastModified": "Thu, 14 Nov 2024 13:53:44 GMT"
       },
       "generator": "respec",
-      "date": "30 May 2023",
+      "date": "14 November 2024",
+      "revision": "d1ef0c467bdf88991fb0817216223746d835568b",
       "algorithms": "algorithms/miniapp-manifest.json",
       "links": "links/miniapp-manifest.json",
       "refs": "refs/miniapp-manifest.json",
@@ -13680,15 +13744,19 @@
     {
       "url": "https://www.w3.org/TR/n-quads/",
       "seriesComposition": "full",
-      "shortname": "n-quads",
+      "shortname": "rdf11-n-quads",
       "series": {
-        "shortname": "n-quads",
-        "currentSpecification": "n-quads",
+        "shortname": "rdf-n-quads",
+        "currentSpecification": "rdf11-n-quads",
         "title": "RDF N-Quads",
         "shortTitle": "RDF N-Quads",
         "releaseUrl": "https://www.w3.org/TR/n-quads/",
         "nightlyUrl": "https://www.w3.org/TR/n-quads/"
       },
+      "seriesVersion": "1.1",
+      "formerNames": [
+        "n-quads"
+      ],
       "nightly": {
         "url": "https://www.w3.org/TR/n-quads/",
         "status": "Editor's Draft",
@@ -13696,6 +13764,7 @@
         "filename": "Overview.html"
       },
       "categories": [],
+      "seriesNext": "rdf12-n-quads",
       "organization": "W3C",
       "groups": [
         {
@@ -13721,10 +13790,10 @@
       },
       "generator": "respec",
       "date": "25 February 2014",
-      "links": "links/n-quads.json",
-      "refs": "refs/n-quads.json",
-      "headings": "headings/n-quads.json",
-      "ids": "ids/n-quads.json"
+      "links": "links/rdf11-n-quads.json",
+      "refs": "refs/rdf11-n-quads.json",
+      "headings": "headings/rdf11-n-quads.json",
+      "ids": "ids/rdf11-n-quads.json"
     },
     {
       "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -15157,11 +15226,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-concepts/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 07 Nov 2024 19:18:18 GMT"
+        "lastModified": "Thu, 14 Nov 2024 21:20:31 GMT"
       },
       "generator": "respec",
-      "date": "07 November 2024",
-      "revision": "cc47f331d5aa7f8accffd110cdbf16f8712f5334",
+      "date": "14 November 2024",
+      "revision": "8fcd2b7e47a2032694808c2b0af43e56f96a3d84",
       "algorithms": "algorithms/rdf12-concepts.json",
       "links": "links/rdf12-concepts.json",
       "refs": "refs/rdf12-concepts.json",
@@ -15175,14 +15244,15 @@
       "shortname": "rdf12-n-quads",
       "series": {
         "shortname": "rdf-n-quads",
-        "currentSpecification": "rdf12-n-quads",
+        "currentSpecification": "rdf11-n-quads",
         "title": "RDF N-Quads",
         "shortTitle": "RDF N-Quads",
-        "releaseUrl": "https://www.w3.org/TR/rdf-n-quads/",
-        "nightlyUrl": "https://w3c.github.io/rdf-n-quads/spec/"
+        "releaseUrl": "https://www.w3.org/TR/n-quads/",
+        "nightlyUrl": "https://www.w3.org/TR/n-quads/"
       },
       "seriesVersion": "1.2",
       "categories": [],
+      "seriesPrevious": "rdf11-n-quads",
       "organization": "W3C",
       "groups": [
         {
@@ -19089,17 +19159,22 @@
       "ids": "ids/web-share.json"
     },
     {
-      "url": "https://www.w3.org/TR/webaudio/",
+      "url": "https://www.w3.org/TR/webaudio-1.0/",
       "seriesComposition": "full",
-      "shortname": "webaudio",
+      "shortname": "webaudio-1.0",
       "series": {
         "shortname": "webaudio",
-        "currentSpecification": "webaudio",
+        "currentSpecification": "webaudio-1.1",
         "title": "Web Audio API",
         "shortTitle": "Web Audio API",
         "releaseUrl": "https://www.w3.org/TR/webaudio/",
         "nightlyUrl": "https://webaudio.github.io/web-audio-api/"
       },
+      "seriesVersion": "1.0",
+      "formerNames": [
+        "webaudio"
+      ],
+      "seriesNext": "webaudio-1.1",
       "organization": "W3C",
       "groups": [
         {
@@ -19134,6 +19209,7 @@
         ]
       },
       "versions": [
+        "https://www.w3.org/TR/webaudio-1.0/",
         "https://www.w3.org/TR/webaudio/",
         "https://webaudio.github.io/web-audio-api/"
       ],
@@ -19144,14 +19220,80 @@
       "generator": "bikeshed",
       "date": "5 November 2024",
       "revision": "26962420c302c52605b3552531453b933801ef6a",
-      "algorithms": "algorithms/webaudio.json",
-      "links": "links/webaudio.json",
-      "refs": "refs/webaudio.json",
-      "events": "events/webaudio.json",
+      "algorithms": "algorithms/webaudio-1.0.json",
+      "links": "links/webaudio-1.0.json",
+      "refs": "refs/webaudio-1.0.json",
+      "events": "events/webaudio-1.0.json",
+      "dfns": "dfns/webaudio-1.0.json",
+      "headings": "headings/webaudio-1.0.json",
+      "ids": "ids/webaudio-1.0.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/webaudio-1.1/",
+      "seriesComposition": "full",
+      "shortname": "webaudio-1.1",
+      "series": {
+        "shortname": "webaudio",
+        "currentSpecification": "webaudio-1.1",
+        "title": "Web Audio API",
+        "shortTitle": "Web Audio API",
+        "releaseUrl": "https://www.w3.org/TR/webaudio/",
+        "nightlyUrl": "https://webaudio.github.io/web-audio-api/"
+      },
+      "seriesVersion": "1.1",
+      "seriesPrevious": "webaudio-1.0",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Audio Working Group",
+          "url": "https://www.w3.org/groups/wg/audio/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/webaudio-1.1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://webaudio.github.io/web-audio-api/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAudio/web-audio-api",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Web Audio API 1.1",
+      "source": "w3c",
+      "shortTitle": "Web Audio API 1.1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webaudio"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/webaudio-1.1/",
+        "https://webaudio.github.io/web-audio-api/"
+      ],
+      "crawled": "https://www.w3.org/TR/webaudio-1.1/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 01 Nov 2024 21:11:46 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "5 November 2024",
+      "revision": "26962420c302c52605b3552531453b933801ef6a",
+      "algorithms": "algorithms/webaudio-1.1.json",
+      "links": "links/webaudio-1.1.json",
+      "refs": "refs/webaudio-1.1.json",
+      "events": "events/webaudio-1.1.json",
       "idl": "idl/webaudio.idl",
-      "dfns": "dfns/webaudio.json",
-      "headings": "headings/webaudio.json",
-      "ids": "ids/webaudio.json"
+      "dfns": "dfns/webaudio-1.1.json",
+      "headings": "headings/webaudio-1.1.json",
+      "ids": "ids/webaudio-1.1.json"
     },
     {
       "url": "https://www.w3.org/TR/webauthn-3/",
