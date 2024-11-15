@@ -3801,15 +3801,6 @@
           "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#request-id\" id=\"ref-for-request-id①\">request id</a>.</p>"
         },
         {
-          "html": "<p>Let <var>type</var> be \"<code>other</code>\".</p>"
-        },
-        {
-          "html": "<p>If <var>request</var> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#cors-preflight-request\" id=\"ref-for-cors-preflight-request\">CORS-Preflight Request</a>, set <var>type</var> to\n \"<code>preflight</code>\".</p>"
-        },
-        {
-          "html": "<p>TODO: Get the <var>type</var>. It’s not quite clear how this ought to work; the CDP\n data depends on whether the navigation was kicked off by the parser or by\n script (so e.g. inserting an image from script causes the initiator to be\n \"<code>script</code>\"), but that doesn’t correspond to anything in Fetch.</p>"
-        },
-        {
           "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-initiator-type\" id=\"ref-for-request-initiator-type\">initiator type</a> is \"<code>fetch</code>\" or\n \"<code>xmlhttprequest</code>\":",
           "rationale": "let",
           "steps": [
@@ -3822,7 +3813,7 @@
           ]
         },
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⑥\">map</a> matching the <code>network.Initiator</code> production, with\n the <code>type</code> field set to <var>type</var>, the <code>columnNumber</code> field set to <var>column number</var> if it’s not null, or omitted otherwise, the <code>lineNumber</code> field set to <var>line number</var> if it’s not null, or\n omitted otherwise, the <code>stackTrace</code> field set to <var>stack trace</var> if\n it’s not null, or omitted otherwise, and the <code>request</code> field set\n to <var>request id</var>.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤⑥\">map</a> matching the <code>network.Initiator</code> production, the <code>columnNumber</code> field set to <var>column number</var> if it’s not null, or\n omitted otherwise, the <code>lineNumber</code> field set to <var>line number</var> if\n it’s not null, or omitted otherwise, the <code>stackTrace</code> field set to <var>stack trace</var> if it’s not null, or omitted otherwise, and the <code>request</code> field set to <var>request id</var>.</p>"
         }
       ]
     },
@@ -5261,10 +5252,10 @@
               "html": "<p>If <var>params</var> is null then continue.</p>"
             },
             {
-              "html": "<p>Let <var>initiator</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-the-initiator\" id=\"ref-for-get-the-initiator\">get the initiator</a> with <var>request</var>.</p>"
+              "html": "<p>Let <var>initiator</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-the-initiator\" id=\"ref-for-get-the-initiator①\">get the initiator</a> with <var>request</var>.</p>"
             },
             {
-              "html": "<p>Set the <code>initiator</code> field of <var>params</var> to <var>initiator</var>.</p>"
+              "html": "<p>If <var>initiator</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-is-empty\" id=\"ref-for-map-is-empty\">empty</a>, set the <code>initiator</code> field\n of <var>params</var> to <var>initiator</var>.</p>"
             },
             {
               "html": "<p class=\"assertion\">Assert: <var>params</var> matches the <code>network.BeforeRequestSentParameters</code> production.</p>"
