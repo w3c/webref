@@ -117,7 +117,7 @@
                   "html": "<p>Let <var>decodedSrc</var> be the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom\" id=\"ref-for-utf-8-decode-without-bom\">UTF-8 decode without BOM</a> of <var>decodedSrcBytes</var>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#parse-a-url\" id=\"ref-for-parse-a-url\">Parse</a> <var>decodedSrc</var> relative to\nthe <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#entry-settings-object\" id=\"ref-for-entry-settings-object\">entry settings object</a>,\nand set <var>urlRecord</var> to the resulting <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL record</a>, if any. If\nparsing failed, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#parse-a-url\" id=\"ref-for-parse-a-url\">Parse</a> <var>decodedSrc</var> relative to\nthe <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#entry-settings-object\" id=\"ref-for-entry-settings-object\">entry settings object</a>,\nand set <var>urlRecord</var> to the resulting <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL record</a>, if any. If\nparsing failed, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>urlRecord</var> to <var>attributionSrcUrls</var>.</p>"
@@ -172,7 +172,7 @@
     {
       "name": "obtain a dictionary structured header value",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-a-dictionary-structured-header-value",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-dictionary-structured-header-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a dictionary structured header value</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">strings</a> <var>keys</var> and\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">set</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">strings</a> <var>allowedKeys</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-dictionary-structured-header-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a dictionary structured header value</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">strings</a> <var>keys</var> and\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">set</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">strings</a> <var>allowedKeys</var>:",
       "rationale": "for",
       "steps": [
         {
@@ -192,7 +192,7 @@
               "html": "<p>Let <var>value</var> be true.</p>"
             },
             {
-              "html": "<p>Optionally, set <var>value</var> to a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc8941#token\" id=\"ref-for-token\">token</a> corresponding to one of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">strings</a> in <var>allowedKeys</var>.</p>"
+              "html": "<p>Optionally, set <var>value</var> to a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc8941#token\" id=\"ref-for-token\">token</a> corresponding to one of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑥\">strings</a> in <var>allowedKeys</var>.</p>"
             },
             {
               "html": "<p>Let <var>params</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a>.</p>"
@@ -430,14 +430,14 @@
     {
       "name": "parse an optional 64-bit signed integer",
       "href": "https://wicg.github.io/attribution-reporting-api/#parse-an-optional-64-bit-signed-integer",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-optional-64-bit-signed-integer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an optional 64-bit signed integer</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④\">map</a> <var>map</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②①\">string</a> <var>key</var>, and a possibly null 64-bit signed integer <var>default</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-optional-64-bit-signed-integer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an optional 64-bit signed integer</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④\">map</a> <var>map</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②②\">string</a> <var>key</var>, and a possibly null 64-bit signed integer <var>default</var>:",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If <var>map</var>[<var>key</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exist</a>, return <var>default</var>.</p>"
         },
         {
-          "html": "<p>If <var>map</var>[<var>key</var>] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②②\">string</a>, return an error.</p>"
+          "html": "<p>If <var>map</var>[<var>key</var>] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②③\">string</a>, return an error.</p>"
         },
         {
           "html": "<p>Let <var>value</var> be the result of applying the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#rules-for-parsing-integers\" id=\"ref-for-rules-for-parsing-integers\">rules for parsing integers</a> to <var>map</var>[<var>key</var>].</p>"
@@ -456,14 +456,14 @@
     {
       "name": "parse an optional 64-bit unsigned integer",
       "href": "https://wicg.github.io/attribution-reporting-api/#parse-an-optional-64-bit-unsigned-integer",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-optional-64-bit-unsigned-integer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an optional 64-bit unsigned integer</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑤\">map</a> <var>map</var>,\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②③\">string</a> <var>key</var>, and a possibly null 64-bit unsigned integer <var>default</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-optional-64-bit-unsigned-integer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an optional 64-bit unsigned integer</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑤\">map</a> <var>map</var>,\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②④\">string</a> <var>key</var>, and a possibly null 64-bit unsigned integer <var>default</var>:",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If <var>map</var>[<var>key</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exist</a>, return <var>default</var>.</p>"
         },
         {
-          "html": "<p>If <var>map</var>[<var>key</var>] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②④\">string</a>, return an error.</p>"
+          "html": "<p>If <var>map</var>[<var>key</var>] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②⑤\">string</a>, return an error.</p>"
         },
         {
           "html": "<p>Let <var>value</var> be the result of applying the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#rules-for-parsing-non-negative-integers\" id=\"ref-for-rules-for-parsing-non-negative-integers\">rules for parsing non-negative integers</a> to <var>map</var>[<var>key</var>].</p>"
@@ -517,7 +517,7 @@
     {
       "name": "check if a scheme is suitable",
       "href": "https://wicg.github.io/attribution-reporting-api/#check-if-a-scheme-is-suitable",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-if-a-scheme-is-suitable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check if a scheme is suitable</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②⑤\">string</a> <var>scheme</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-if-a-scheme-is-suitable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check if a scheme is suitable</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②⑥\">string</a> <var>scheme</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -575,7 +575,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>d</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②⑥\">string</a>, return an error.</p>"
+                  "html": "<p>If <var>d</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②⑦\">string</a>, return an error.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>d</var> to <var>set</var>.</p>"
@@ -760,7 +760,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②⑦\">string</a>, return an error.</p>"
+          "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②⑧\">string</a>, return an error.</p>"
         },
         {
           "html": "<p>Let <var>url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> on <var>value</var>.</p>"
@@ -808,7 +808,7 @@
               "html": "<p>If <var>data</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-debug-reporting-json-key-key_piece\" id=\"ref-for-aggregatable-debug-reporting-json-key-key_piece\">key_piece</a></code>\"]\ndoes not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">exist</a>, return an error.</p>"
             },
             {
-              "html": "<p>If <var>data</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-debug-reporting-json-key-key_piece\" id=\"ref-for-aggregatable-debug-reporting-json-key-key_piece①\">key_piece</a></code>\"]\nis not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②⑧\">string</a>, return an error.</p>"
+              "html": "<p>If <var>data</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-debug-reporting-json-key-key_piece\" id=\"ref-for-aggregatable-debug-reporting-json-key-key_piece①\">key_piece</a></code>\"]\nis not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②⑨\">string</a>, return an error.</p>"
             },
             {
               "html": "<p>Let <var>dataKeyPiece</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#parse-an-aggregation-key-piece\" id=\"ref-for-parse-an-aggregation-key-piece\">parse an aggregation key piece</a> with <var>data</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-debug-reporting-json-key-key_piece\" id=\"ref-for-aggregatable-debug-reporting-json-key-key_piece②\">key_piece</a></code>\"].</p>"
@@ -839,7 +839,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>type</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②⑨\">string</a>, return an error.</p>"
+                  "html": "<p>If <var>type</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⓪\">string</a>, return an error.</p>"
                 },
                 {
                   "html": "If <var>type</var> is \"<code>unspecified</code>\":",
@@ -911,7 +911,7 @@
           "html": "<p>If <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-debug-reporting-json-key-key_piece\" id=\"ref-for-aggregatable-debug-reporting-json-key-key_piece③\">key_piece</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exist</a>, return <var>default</var>.</p>"
         },
         {
-          "html": "<p>If <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-debug-reporting-json-key-key_piece\" id=\"ref-for-aggregatable-debug-reporting-json-key-key_piece④\">key_piece</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⓪\">string</a>, return <var>default</var>.</p>"
+          "html": "<p>If <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-debug-reporting-json-key-key_piece\" id=\"ref-for-aggregatable-debug-reporting-json-key-key_piece④\">key_piece</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③①\">string</a>, return <var>default</var>.</p>"
         },
         {
           "html": "<p>Let <var>keyPiece</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#parse-an-aggregation-key-piece\" id=\"ref-for-parse-an-aggregation-key-piece①\">parse an aggregation key piece</a> with <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-debug-reporting-json-key-key_piece\" id=\"ref-for-aggregatable-debug-reporting-json-key-key_piece⑤\">key_piece</a></code>\"].</p>"
@@ -1062,7 +1062,7 @@
     {
       "name": "parse an aggregation key piece",
       "href": "https://wicg.github.io/attribution-reporting-api/#parse-an-aggregation-key-piece",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-aggregation-key-piece\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an aggregation key piece</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③①\">string</a> <var>input</var>, perform the following steps.\nThis algorithm will return either a non-negative 128-bit integer or an error.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-aggregation-key-piece\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an aggregation key piece</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③②\">string</a> <var>input</var>, perform the following steps.\nThis algorithm will return either a non-negative 128-bit integer or an error.",
       "rationale": "if",
       "steps": [
         {
@@ -1170,7 +1170,7 @@
     {
       "name": "make a background attributionsrc request",
       "href": "https://wicg.github.io/attribution-reporting-api/#make-a-background-attributionsrc-request",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"make-a-background-attributionsrc-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">make a background attributionsrc request</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>url</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin④\">origin</a> <var>contextOrigin</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#eligibility\" id=\"ref-for-eligibility④\">eligibility</a> <var>eligibility</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①①\">boolean</a> <var>fenced</var>,\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-referrer-policy/#referrer-policy\" id=\"ref-for-referrer-policy\">referrer policy</a> <var>referrerPolicy</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"make-a-background-attributionsrc-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">make a background attributionsrc request</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑤\">URL</a> <var>url</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin④\">origin</a> <var>contextOrigin</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#eligibility\" id=\"ref-for-eligibility④\">eligibility</a> <var>eligibility</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①①\">boolean</a> <var>fenced</var>,\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code> <var>document</var>, and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-referrer-policy/#referrer-policy\" id=\"ref-for-referrer-policy\">referrer policy</a> <var>referrerPolicy</var>:",
       "rationale": "validate",
       "steps": [
         {
@@ -1208,7 +1208,7 @@
     {
       "name": "make background attributionsrc requests",
       "href": "https://wicg.github.io/attribution-reporting-api/#make-background-attributionsrc-requests",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"make-background-attributionsrc-requests\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">make background attributionsrc requests</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/attribution-reporting-api/#htmlattributionsrcelementutils\" id=\"ref-for-htmlattributionsrcelementutils③\">HTMLAttributionSrcElementUtils</a></code> <var>element</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#eligibility\" id=\"ref-for-eligibility⑤\">eligibility</a> <var>eligibility</var>,\nand a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-referrer-policy/#referrer-policy\" id=\"ref-for-referrer-policy①\">referrer policy</a> <var>referrerPolicy</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"make-background-attributionsrc-requests\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">make background attributionsrc requests</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/attribution-reporting-api/#htmlattributionsrcelementutils\" id=\"ref-for-htmlattributionsrcelementutils④\">HTMLAttributionSrcElementUtils</a></code> <var>element</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#eligibility\" id=\"ref-for-eligibility⑤\">eligibility</a> <var>eligibility</var>,\nand a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-referrer-policy/#referrer-policy\" id=\"ref-for-referrer-policy①\">referrer policy</a> <var>referrerPolicy</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1222,7 +1222,7 @@
           "rationale": "parse",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#parse-a-url\" id=\"ref-for-parse-a-url①\">Parse</a> <var>token</var>, relative to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>. If that is not successful, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>. Otherwise, let <var>url</var> be the resulting <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑤\">URL record</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#parse-a-url\" id=\"ref-for-parse-a-url①\">Parse</a> <var>token</var>, relative to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>. If that is not successful, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>. Otherwise, let <var>url</var> be the resulting <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑥\">URL record</a>.</p>"
             },
             {
               "html": "<p>Let <var>fenced</var> be true if <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①\">node navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\" id=\"ref-for-fenced-navigable-container-fenced-navigable\">fenced navigable</a>, false otherwise.</p>"
@@ -1937,7 +1937,7 @@
     {
       "name": "parse an attribution destination",
       "href": "https://wicg.github.io/attribution-reporting-api/#parse-an-attribution-destination",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-attribution-destination\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an attribution destination</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③②\">string</a> <var>str</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-an-attribution-destination\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse an attribution destination</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③③\">string</a> <var>str</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1967,7 +1967,7 @@
           "html": "<p>Let <var>val</var> be <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-registration-json-key-destination\" id=\"ref-for-source-registration-json-key-destination②\">destination</a></code>\"].</p>"
         },
         {
-          "html": "<p>If <var>val</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③③\">string</a>, set <var>val</var> to « <var>val</var> ».</p>"
+          "html": "<p>If <var>val</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③④\">string</a>, set <var>val</var> to « <var>val</var> ».</p>"
         },
         {
           "html": "<p>If <var>val</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑧\">list</a>, return an error.</p>"
@@ -1980,7 +1980,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③④\">string</a>, return an error.</p>"
+              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⑤\">string</a>, return an error.</p>"
             },
             {
               "html": "<p>Let <var>destination</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#parse-an-attribution-destination\" id=\"ref-for-parse-an-attribution-destination\">parse an attribution destination</a> with <var>value</var>.</p>"
@@ -2007,7 +2007,7 @@
     {
       "name": "parse a duration",
       "href": "https://wicg.github.io/attribution-reporting-api/#parse-a-duration",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-duration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a duration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑧\">map</a> <var>map</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⑤\">string</a> <var>key</var>, and a\ntuple of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration①⓪\">durations</a> (<var>clampStart</var>, <var>clampEnd</var>):",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-duration\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a duration</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑧\">map</a> <var>map</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⑥\">string</a> <var>key</var>, and a\ntuple of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-duration\" id=\"ref-for-dfn-duration①⓪\">durations</a> (<var>clampStart</var>, <var>clampEnd</var>):",
       "rationale": "assert",
       "steps": [
         {
@@ -2071,7 +2071,7 @@
               "html": "<p>If <var>key</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length⑦\">length</a> is greater than the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#max-length-per-aggregation-key-identifier\" id=\"ref-for-max-length-per-aggregation-key-identifier\">max length per aggregation key identifier</a>,\nreturn an error.</p>"
             },
             {
-              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⑥\">string</a>, return an error.</p>"
+              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⑦\">string</a>, return an error.</p>"
             },
             {
               "html": "<p>Let <var>keyPiece</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#parse-an-aggregation-key-piece\" id=\"ref-for-parse-an-aggregation-key-piece②\">parse an aggregation key piece</a> with <var>value</var>.</p>"
@@ -2297,7 +2297,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-registration-json-key-summary_operator\" id=\"ref-for-source-registration-json-key-summary_operator①\">summary_operator</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⑦\">string</a>, return an\nerror.</p>"
+              "html": "<p>If <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-registration-json-key-summary_operator\" id=\"ref-for-source-registration-json-key-summary_operator①\">summary_operator</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⑧\">string</a>, return an\nerror.</p>"
             },
             {
               "html": "<p>If <var>map</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-registration-json-key-summary_operator\" id=\"ref-for-source-registration-json-key-summary_operator②\">summary_operator</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#summary-operator\" id=\"ref-for-summary-operator\">summary operator</a>, return an error.</p>"
@@ -2641,7 +2641,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⑧\">string</a>, return an error.</p>"
+              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⑨\">string</a>, return an error.</p>"
             },
             {
               "html": "<p>If <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length⑨\">length</a> is greater than <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#max-length-of-attribution-scope-for-source\" id=\"ref-for-max-length-of-attribution-scope-for-source\">max length of attribution scope for source</a>, return an error.</p>"
@@ -2784,7 +2784,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-registration-json-key-trigger_data_matching\" id=\"ref-for-source-registration-json-key-trigger_data_matching①\">trigger_data_matching</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③⑨\">string</a>, return an error.</p>"
+              "html": "<p>If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-registration-json-key-trigger_data_matching\" id=\"ref-for-source-registration-json-key-trigger_data_matching①\">trigger_data_matching</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⓪\">string</a>, return an error.</p>"
             },
             {
               "html": "<p>If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#source-registration-json-key-trigger_data_matching\" id=\"ref-for-source-registration-json-key-trigger_data_matching②\">trigger_data_matching</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-data-matching-mode\" id=\"ref-for-trigger-data-matching-mode②\">trigger-data matching mode</a>, return an error.</p>"
@@ -3963,7 +3963,7 @@
               "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑤②\">map</a>, return an error.</p>"
             },
             {
-              "html": "<p>If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-key_piece\" id=\"ref-for-trigger-registration-json-key-key_piece\">key_piece</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤④\">exist</a> or is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⓪\">string</a>, return an error.</p>"
+              "html": "<p>If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-key_piece\" id=\"ref-for-trigger-registration-json-key-key_piece\">key_piece</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤④\">exist</a> or is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④①\">string</a>, return an error.</p>"
             },
             {
               "html": "<p>Let <var>keyPiece</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#parse-an-aggregation-key-piece\" id=\"ref-for-parse-an-aggregation-key-piece③\">parse an aggregation key piece</a> with <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-key_piece\" id=\"ref-for-trigger-registration-json-key-key_piece①\">key_piece</a></code>\"].</p>"
@@ -3986,7 +3986,7 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <var>sourceKey</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④①\">string</a>, return an error.</p>"
+                      "html": "<p>If <var>sourceKey</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④②\">string</a>, return an error.</p>"
                     },
                     {
                       "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②②\">Append</a> <var>sourceKey</var> to <var>sourceKeys</var>.</p>"
@@ -4288,7 +4288,7 @@
                   "html": "<p>Set <var>name</var> to <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-name\" id=\"ref-for-trigger-registration-json-key-name①\">name</a></code>\"].</p>"
                 },
                 {
-                  "html": "<p>If <var>name</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④②\">string</a>, return an error.</p>"
+                  "html": "<p>If <var>name</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④③\">string</a>, return an error.</p>"
                 }
               ]
             },
@@ -4334,7 +4334,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④③\">string</a>, return an error.</p>"
+              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④④\">string</a>, return an error.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②④\">Append</a> <var>value</var> to <var>result</var>.</p>"
@@ -4438,7 +4438,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-aggregatable_source_registration_time\" id=\"ref-for-trigger-registration-json-key-aggregatable_source_registration_time①\">aggregatable_source_registration_time</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④④\">string</a>, return an error.</p>"
+              "html": "<p>If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-aggregatable_source_registration_time\" id=\"ref-for-trigger-registration-json-key-aggregatable_source_registration_time①\">aggregatable_source_registration_time</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑤\">string</a>, return an error.</p>"
             },
             {
               "html": "<p>If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-aggregatable_source_registration_time\" id=\"ref-for-trigger-registration-json-key-aggregatable_source_registration_time②\">aggregatable_source_registration_time</a></code>\"] is not an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-source-registration-time-configuration\" id=\"ref-for-aggregatable-source-registration-time-configuration②\">aggregatable source registration time configuration</a>,\nreturn an error.</p>"
@@ -4456,7 +4456,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-trigger_context_id\" id=\"ref-for-trigger-registration-json-key-trigger_context_id①\">trigger_context_id</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑤\">string</a>, return an error.</p>"
+              "html": "<p>If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-trigger_context_id\" id=\"ref-for-trigger-registration-json-key-trigger_context_id①\">trigger_context_id</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑥\">string</a>, return an error.</p>"
             },
             {
               "html": "<p>If <var>value</var>[\"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#trigger-registration-json-key-trigger_context_id\" id=\"ref-for-trigger-registration-json-key-trigger_context_id②\">trigger_context_id</a></code>\"]'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①⓪\">length</a> is greater than the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#max-length-per-trigger-context-id\" id=\"ref-for-max-length-per-trigger-context-id\">max length per trigger context ID</a>,\nreturn an error.</p>"
@@ -4865,7 +4865,7 @@
     {
       "name": "check if an attribution source can create aggregatable contributions for matched budget name",
       "href": "https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-source-can-create-aggregatable-contributions-for-matched-budget-name",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-if-an-attribution-source-can-create-aggregatable-contributions-for-matched-budget-name\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check if an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑦⑧\">attribution source</a> can create <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-contribution\" id=\"ref-for-aggregatable-contribution⑨\">aggregatable contributions</a> for matched budget name</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report\" id=\"ref-for-aggregatable-attribution-report①②\">aggregatable attribution report</a> <var>report</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑦⑨\">attribution source</a> <var>sourceToAttribute</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑥\">string</a> <var>matchedBudgetName</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-if-an-attribution-source-can-create-aggregatable-contributions-for-matched-budget-name\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check if an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑦⑧\">attribution source</a> can create <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-contribution\" id=\"ref-for-aggregatable-contribution⑨\">aggregatable contributions</a> for matched budget name</dfn> given an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report\" id=\"ref-for-aggregatable-attribution-report①②\">aggregatable attribution report</a> <var>report</var>, an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#attribution-source\" id=\"ref-for-attribution-source⑦⑨\">attribution source</a> <var>sourceToAttribute</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑦\">string</a> <var>matchedBudgetName</var>, run the following steps:",
       "rationale": "if",
       "steps": [
         {
@@ -6112,7 +6112,7 @@
           "html": "<p>If <var>report</var> is an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report\" id=\"ref-for-aggregatable-attribution-report①⑧\">aggregatable attribution report</a> and <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-source-registration-time-configuration\" id=\"ref-for-aggregatable-attribution-report-source-registration-time-configuration②\">source registration time configuration</a> is \"<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-source-registration-time-configuration-include\" id=\"ref-for-aggregatable-source-registration-time-configuration-include①\">include</a></code>\": <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④①\">set</a> <var>sharedInfo</var>[\"<code>source_registration_time</code>\"] to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#obtain-rounded-source-time\" id=\"ref-for-obtain-rounded-source-time②\">obtaining rounded source time</a> with <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-attribution-report-source-time\" id=\"ref-for-aggregatable-attribution-report-source-time③\">source time</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#serialize-an-integer\" id=\"ref-for-serialize-an-integer②①\">serialized</a>.</p>"
         },
         {
-          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑦\">string</a> resulting from executing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-a-json-string\" id=\"ref-for-serialize-an-infra-value-to-a-json-string\">serialize an infra value to a json string</a> on <var>sharedInfo</var>.</p>"
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑧\">string</a> resulting from executing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-an-infra-value-to-a-json-string\" id=\"ref-for-serialize-an-infra-value-to-a-json-string\">serialize an infra value to a json string</a> on <var>sharedInfo</var>.</p>"
         }
       ]
     },
@@ -6123,7 +6123,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>url</var> be a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑥\">URL record</a>.</p>"
+          "html": "<p>Let <var>url</var> be a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑦\">URL record</a>.</p>"
         },
         {
           "html": "<p>Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> to <var>aggregationCoordinator</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme①\">scheme</a>.</p>"
@@ -6256,7 +6256,7 @@
           "html": "<p>Let <var>aggregationServicePayloads</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦⑧\">list</a>.</p>"
         },
         {
-          "html": "<p>Let <var>aggregationServicePayload</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦③\">map</a> of the following key/value pairs:</p>\n     <dl>\n      <dt data-md=\"\">\"<code>payload</code>\"\n      </dt><dd data-md=\"\">\n       <p><var>encryptedPayload</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode\">base64 encoded</a></p>\n      </dd><dt data-md=\"\">\"<code>key_id</code>\"\n      </dt><dd data-md=\"\">\n       <p>A <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑧\">string</a> identifying <var>pkR</var></p>\n     </dd></dl>"
+          "html": "<p>Let <var>aggregationServicePayload</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦③\">map</a> of the following key/value pairs:</p>\n     <dl>\n      <dt data-md=\"\">\"<code>payload</code>\"\n      </dt><dd data-md=\"\">\n       <p><var>encryptedPayload</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode\">base64 encoded</a></p>\n      </dd><dt data-md=\"\">\"<code>key_id</code>\"\n      </dt><dd data-md=\"\">\n       <p>A <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑨\">string</a> identifying <var>pkR</var></p>\n     </dd></dl>"
         },
         {
           "html": "<p>If <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-report-debug-mode\" id=\"ref-for-aggregatable-report-debug-mode①\">debug mode</a> is <strong>enabled</strong>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④②\">set</a> <var>aggregationServicePayload</var>[\"<code>debug_cleartext_payload</code>\"] to <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#aggregatable-report-plaintext-payload\" id=\"ref-for-aggregatable-report-plaintext-payload①\">plaintext payload</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#forgiving-base64-encode\" id=\"ref-for-forgiving-base64-encode①\">base64 encoded</a>.</p>"
@@ -6416,11 +6416,11 @@
     {
       "name": "generate a report URL",
       "href": "https://wicg.github.io/attribution-reporting-api/#generate-a-report-url",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-a-report-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a report URL</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#suitable-origin\" id=\"ref-for-suitable-origin②①\">suitable origin</a> <var>reportingOrigin</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧⓪\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④⑨\">strings</a> <var>path</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-a-report-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a report URL</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/attribution-reporting-api/#suitable-origin\" id=\"ref-for-suitable-origin②①\">suitable origin</a> <var>reportingOrigin</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧⓪\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤⓪\">strings</a> <var>path</var>:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>reportUrl</var> be a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑦\">URL</a> record.</p>"
+          "html": "<p>Let <var>reportUrl</var> be a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑧\">URL</a> record.</p>"
         },
         {
           "html": "<p>Set <var>reportUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> to <var>reportingOrigin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme②\">scheme</a>.</p>"
@@ -6515,7 +6515,7 @@
     {
       "name": "create a report request",
       "href": "https://wicg.github.io/attribution-reporting-api/#create-a-report-request",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-report-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a report request</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑧\">URL</a> <var>url</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑨\">byte sequence</a> <var>body</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-report-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a report request</dfn> given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑨\">URL</a> <var>url</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑨\">byte sequence</a> <var>body</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -6650,7 +6650,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤⓪\">string</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②⑦\">continue</a>.</p>"
+              "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤①\">string</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②⑦\">continue</a>.</p>"
             },
             {
               "html": "<p>Let <var>url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser②\">URL parser</a> on <var>value</var>.</p>"
