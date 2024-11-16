@@ -103,6 +103,15 @@
           "includes": "HTMLAttributionSrcElementUtils"
         }
       ],
+      "HTMLAreaElement": [
+        {
+          "fragment": "HTMLAreaElement includes HTMLAttributionSrcElementUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLAreaElement",
+          "includes": "HTMLAttributionSrcElementUtils"
+        }
+      ],
       "HTMLImageElement": [
         {
           "fragment": "HTMLImageElement includes HTMLAttributionSrcElementUtils;",
@@ -207,6 +216,9 @@
     "dependencies": {
       "HTMLAttributionSrcElementUtils": [],
       "HTMLAnchorElement": [
+        "HTMLAttributionSrcElementUtils"
+      ],
+      "HTMLAreaElement": [
         "HTMLAttributionSrcElementUtils"
       ],
       "HTMLImageElement": [
