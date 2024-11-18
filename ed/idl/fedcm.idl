@@ -29,9 +29,15 @@ enum IdentityCredentialRequestOptionsContext {
   "continue"
 };
 
+enum IdentityCredentialRequestOptionsMode {
+  "active",
+  "passive"
+};
+
 dictionary IdentityCredentialRequestOptions {
   required sequence<IdentityProviderRequestOptions> providers;
   IdentityCredentialRequestOptionsContext context = "signin";
+  IdentityCredentialRequestOptionsMode mode = "passive";
 };
 
 dictionary IdentityProviderConfig {
