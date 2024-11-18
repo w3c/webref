@@ -200,8 +200,27 @@
         "extAttrs": [],
         "href": "https://w3c-fedid.github.io/FedCM/#enumdef-identitycredentialrequestoptionscontext"
       },
+      "IdentityCredentialRequestOptionsMode": {
+        "fragment": "enum IdentityCredentialRequestOptionsMode {\n  \"active\",\n  \"passive\"\n};",
+        "type": "enum",
+        "name": "IdentityCredentialRequestOptionsMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "active",
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptionsmode-active"
+          },
+          {
+            "type": "enum-value",
+            "value": "passive",
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptionsmode-passive"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c-fedid.github.io/FedCM/#enumdef-identitycredentialrequestoptionsmode"
+      },
       "IdentityCredentialRequestOptions": {
-        "fragment": "dictionary IdentityCredentialRequestOptions {\n  required sequence<IdentityProviderRequestOptions> providers;\n  IdentityCredentialRequestOptionsContext context = \"signin\";\n};",
+        "fragment": "dictionary IdentityCredentialRequestOptions {\n  required sequence<IdentityProviderRequestOptions> providers;\n  IdentityCredentialRequestOptionsContext context = \"signin\";\n  IdentityCredentialRequestOptionsMode mode = \"passive\";\n};",
         "type": "dictionary",
         "name": "IdentityCredentialRequestOptions",
         "inheritance": null,
@@ -249,6 +268,25 @@
             },
             "required": false,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptions-context"
+          },
+          {
+            "type": "field",
+            "name": "mode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "IdentityCredentialRequestOptionsMode"
+            },
+            "default": {
+              "type": "string",
+              "value": "passive"
+            },
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptions-mode"
           }
         ],
         "extAttrs": [],
@@ -1136,7 +1174,8 @@
       ],
       "IdentityCredentialRequestOptions": [
         "IdentityProviderRequestOptions",
-        "IdentityCredentialRequestOptionsContext"
+        "IdentityCredentialRequestOptionsContext",
+        "IdentityCredentialRequestOptionsMode"
       ],
       "IdentityProviderConfig": [],
       "IdentityProviderRequestOptions": [
